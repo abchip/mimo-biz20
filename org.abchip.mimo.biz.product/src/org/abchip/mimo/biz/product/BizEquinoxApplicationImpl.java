@@ -41,7 +41,7 @@ public class BizEquinoxApplicationImpl extends E4EquinoxApplicationImpl {
 		Converters.loadContainedConverters(MiscConverters.class);
 		Converters.loadContainedConverters(NetConverters.class);
 		Converters.loadContainedConverters(NumberConverters.class);
-		
+
 		// System.out.println(System.getProperty("osgi.install.area"));
 		// System.out.println(System.getProperty("osgi.instance.area"));
 		try {
@@ -82,24 +82,7 @@ public class BizEquinoxApplicationImpl extends E4EquinoxApplicationImpl {
 		ClassLoader originalLoader = Thread.currentThread().getContextClassLoader();
 
 		try {
-			ClassLoader wrappedLoader = new ClassLoader(originalLoader) {
-				@Override
-				public Class<?> findClass(String name) throws ClassNotFoundException {
-					try {
-
-						return super.findClass(name);
-					} catch (ClassNotFoundException e) {
-						if (name.startsWith("org.abchip.mimo.biz"))
-							return application.getContext().loadClass(name);
-						else if (name.startsWith("org.apache.ofbiz"))
-							return application.getContext().loadClass(name);
-						else
-							throw e;
-					}
-				}
-			};
-
-			Thread.currentThread().setContextClassLoader(wrappedLoader);
+			Thread.currentThread().setContextClassLoader(new BizClassLoaderImpl(originalLoader, application.getContext()));
 
 			Start.main(new String[0]);
 		} finally {

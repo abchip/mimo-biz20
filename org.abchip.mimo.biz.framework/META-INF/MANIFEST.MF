@@ -230,6 +230,7 @@ Export-Package: com.ibm.icu.math,
  org.apache.sshd.client.subsystem.sftp,
  org.apache.sshd.common.future,
  org.apache.tika,
+ org.apache.xerces.jaxp,
  org.apache.xmlgraphics.util,
  org.jdom2,
  org.json
