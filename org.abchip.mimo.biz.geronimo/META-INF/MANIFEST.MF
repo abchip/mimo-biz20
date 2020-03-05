@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MIMO Biz Geronimo
+Bundle-SymbolicName: org.abchip.mimo.biz.geronimo
+Bundle-Version: 0.2.0.qualifier
+Bundle-Vendor: ABChip
+Automatic-Module-Name: org.abchip.mimo.biz.geronimo
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ClassPath: .,
+ lib/geronimo-activation_1.1_spec-1.1.jar,
+ lib/geronimo-j2ee-connector_1.6_spec-1.0.jar,
+ lib/geronimo-jaxrpc_1.1_spec-1.1.jar,
+ lib/geronimo-jms_1.1_spec-1.1.1.jar,
+ lib/geronimo-jta_1.1_spec-1.1.1.jar,
+ lib/geronimo-stax-api_1.0_spec-1.0.1.jar,
+ lib/geronimo-transaction-3.1.4.jar,
+ lib/geronimo-ws-metadata_2.0_spec-1.1.2.jar
+Export-Package: javax.jms,
+ javax.transaction,
+ org.apache.geronimo.transaction.log,
+ org.apache.geronimo.transaction.manager

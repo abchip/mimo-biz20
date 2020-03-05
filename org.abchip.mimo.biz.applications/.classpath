@@ -4,7 +4,7 @@
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="src" path="applications/workeffort/src/main/java"/>
 	<classpathentry kind="src" path="applications/securityext/src/main/java"/>
-	<classpathentry excluding="org/apache/ofbiz/shipment/thirdparty/usps/UspsServicesTests.java|org/apache/ofbiz/shipment/test/IssuanceTest.java|org/apache/ofbiz/product/test/InventoryItemTransferTest.java|org/apache/ofbiz/product/test/StockMovesTest.java|org/apache/ofbiz/product/spreadsheetimport/ImportProductServices.java" kind="src" path="applications/product/src/main/java"/>
+	<classpathentry excluding="org/apache/ofbiz/shipment/thirdparty/usps/UspsServicesTests.java|org/apache/ofbiz/shipment/test/IssuanceTest.java|org/apache/ofbiz/product/test/InventoryItemTransferTest.java|org/apache/ofbiz/product/test/StockMovesTest.java|org/apache/ofbiz/product/spreadsheetimport/ImportProductServices.java|org/apache/ofbiz/product/category/SeoControlServlet.java|org/apache/ofbiz/product/category/SeoCatalogUrlServlet.java|org/apache/ofbiz/product/category/SeoContentUrlFilter.java|org/apache/ofbiz/product/category/SeoContextFilter.java" kind="src" path="applications/product/src/main/java"/>
 	<classpathentry kind="src" path="applications/party/src/main/java"/>
 	<classpathentry excluding="org/apache/ofbiz/order/thirdparty/taxware/TaxwareServices.java|org/apache/ofbiz/order/thirdparty/taxware/TaxwareUTL.java|org/apache/ofbiz/order/test/FinAccountTest.java|org/apache/ofbiz/order/test/PurchaseOrderTest.java|org/apache/ofbiz/order/test/SalesOrderTest.java" kind="src" path="applications/order/src/main/java"/>
 	<classpathentry kind="src" path="applications/marketing/src/main/java"/>

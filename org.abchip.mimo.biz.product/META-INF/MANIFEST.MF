@@ -8,13 +8,13 @@ Automatic-Module-Name: org.abchip.mimo.biz.product
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: org.abchip.mimo.core.e4,
  org.eclipse.equinox.app,
- org.abchip.mimo.biz.base;bundle-version="0.2.0",
- org.abchip.mimo.biz.model;bundle-version="0.2.0",
+ org.abchip.mimo.biz.base,
+ org.abchip.mimo.biz.model,
  org.abchip.mimo.biz.framework,
- org.abchip.mimo.biz.applications;bundle-version="0.2.0",
- org.abchip.mimo.biz.plugins;bundle-version="0.2.0",
- org.abchip.mimo.biz.themes;bundle-version="0.2.0"
-Import-Package: org.osgi.framework,
- org.osgi.framework.wiring;version="1.2.0"
+ org.abchip.mimo.biz.applications,
+ org.abchip.mimo.biz.plugins,
+ org.abchip.mimo.biz.themes,
+ org.abchip.mimo.biz.tomcat
+Import-Package: org.osgi.framework
 Export-Package: org.abchip.mimo.biz.product
 Bundle-ActivationPolicy: lazy
