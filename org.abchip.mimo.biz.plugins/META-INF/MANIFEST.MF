@@ -22,6 +22,7 @@ Require-Bundle: org.abchip.mimo.core,
  org.abchip.mimo.edi,
  org.abchip.mimo.ui,
  org.abchip.mimo.language,
+ org.abchip.mimo.biz.commons,
  org.abchip.mimo.biz.framework,
  org.abchip.mimo.biz.applications,
  org.abchip.mimo.biz.geronimo

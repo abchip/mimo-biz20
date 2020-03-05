@@ -6,8 +6,9 @@ Bundle-Version: 0.2.0.qualifier
 Bundle-Vendor: ABChip
 Automatic-Module-Name: org.abchip.mimo.biz.asf.applications
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Require-Bundle: org.abchip.mimo.biz.framework,
- org.abchip.mimo.biz.geronimo
+Require-Bundle: org.abchip.mimo.biz.commons,
+ org.abchip.mimo.biz.geronimo,
+ org.abchip.mimo.biz.framework
 Export-Package: org.apache.ofbiz.accounting,
  org.apache.ofbiz.accounting.agreement,
  org.apache.ofbiz.accounting.finaccount,

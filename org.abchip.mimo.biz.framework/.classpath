@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry exported="true" kind="lib" path="lib/postgresql-42.2.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/xmlpull-1.1.3.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/xmlgraphics-commons-2.3.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/wsdl4j-1.6.3.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/ws-commons-util-1.0.2.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/xercesImpl-2.9.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/owasp-java-html-sanitizer-20180219.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/oro-2.0.8.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/activation-1.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/antlr-runtime-3.4.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/axiom-api-1.2.20.jar"/>
@@ -18,30 +10,6 @@
 	<classpathentry exported="true" kind="lib" path="lib/backport-util-concurrent-3.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/bctsp-jdk14-1.38.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/bsh-core-2.0b4.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-beanutils-1.9.3.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-beanutils-core-1.8.3.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-cli-1.4.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-codec-1.11.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-codec-1.12.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-collections-3.2.2.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-collections4-4.2.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-compress-1.18.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-configuration-1.10.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-csv-1.6.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-dbcp2-2.5.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-digester-1.8.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-exec-1.3.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-fileupload-1.3.3.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-httpclient-3.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-io-2.6.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-lang-2.6.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-lang3-3.8.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-logging-1.2.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-math3-3.6.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-net-3.6.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-pool2-2.6.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-text-1.6.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/commons-validator-1.6.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/concurrentlinkedhashmap-lru-1.4.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/core-3.3.3.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/dec-0.1.2.jar"/>
@@ -96,25 +64,24 @@
 	<classpathentry exported="true" kind="lib" path="lib/nekohtml-1.9.16.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/openjson-1.0.10.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/opennlp-tools-1.9.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/oro-2.0.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/owasp-java-html-sanitizer-20180219.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/postgresql-42.2.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/quartz-2.2.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/rome-1.12.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/rome-utils-1.12.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/sequence-library-1.0.3.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/serializer-2.7.2.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/shiro-cache-1.4.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/shiro-config-core-1.4.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/shiro-config-ogdl-1.4.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/shiro-core-1.4.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/shiro-crypto-cipher-1.4.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/shiro-crypto-core-1.4.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/shiro-crypto-hash-1.4.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/shiro-event-1.4.0.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/shiro-lang-1.4.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/slf4j-api-1.7.25.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/sshd-core-1.7.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/tagsoup-1.2.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/tika-core-1.20.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/tika-parsers-1.20.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/ws-commons-util-1.0.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/wsdl4j-1.6.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/xercesImpl-2.9.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/xmlgraphics-commons-2.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/xmlpull-1.1.3.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/xmlrpc-client-3.1.3.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/xmlrpc-common-3.1.3.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/xmlrpc-server-3.1.3.jar"/>
