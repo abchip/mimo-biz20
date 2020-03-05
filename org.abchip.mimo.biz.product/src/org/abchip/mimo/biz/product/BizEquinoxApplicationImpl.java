@@ -15,6 +15,14 @@ import java.net.URLStreamHandlerFactory;
 import org.abchip.mimo.application.Application;
 import org.abchip.mimo.core.e4.E4EquinoxApplicationImpl;
 import org.apache.catalina.webresources.TomcatURLStreamHandlerFactory;
+import org.apache.ofbiz.base.conversion.BooleanConverters;
+import org.apache.ofbiz.base.conversion.CollectionConverters;
+import org.apache.ofbiz.base.conversion.Converters;
+import org.apache.ofbiz.base.conversion.DateTimeConverters;
+import org.apache.ofbiz.base.conversion.JSONConverters;
+import org.apache.ofbiz.base.conversion.MiscConverters;
+import org.apache.ofbiz.base.conversion.NetConverters;
+import org.apache.ofbiz.base.conversion.NumberConverters;
 import org.apache.ofbiz.base.start.Start;
 import org.apache.ofbiz.entity.Delegator;
 import org.osgi.framework.Bundle;
@@ -25,6 +33,15 @@ public class BizEquinoxApplicationImpl extends E4EquinoxApplicationImpl {
 	@Override
 	protected void doStart(Application application) {
 
+		Converters.loadContainedConverters(org.apache.ofbiz.entity.util.Converters.class);
+		Converters.loadContainedConverters(BooleanConverters.class);
+		Converters.loadContainedConverters(CollectionConverters.class);
+		Converters.loadContainedConverters(DateTimeConverters.class);
+		Converters.loadContainedConverters(JSONConverters.class);
+		Converters.loadContainedConverters(MiscConverters.class);
+		Converters.loadContainedConverters(NetConverters.class);
+		Converters.loadContainedConverters(NumberConverters.class);
+		
 		// System.out.println(System.getProperty("osgi.install.area"));
 		// System.out.println(System.getProperty("osgi.instance.area"));
 		try {
@@ -72,7 +89,9 @@ public class BizEquinoxApplicationImpl extends E4EquinoxApplicationImpl {
 
 						return super.findClass(name);
 					} catch (ClassNotFoundException e) {
-						if (name.startsWith("org.abchip.mimo.biz.asf"))
+						if (name.startsWith("org.abchip.mimo.biz"))
+							return application.getContext().loadClass(name);
+						else if (name.startsWith("org.apache.ofbiz"))
 							return application.getContext().loadClass(name);
 						else
 							throw e;

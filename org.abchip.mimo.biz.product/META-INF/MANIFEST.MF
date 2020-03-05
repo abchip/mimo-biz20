@@ -6,10 +6,11 @@ Bundle-Version: 0.2.0.qualifier
 Bundle-Vendor: ABChip
 Automatic-Module-Name: org.abchip.mimo.biz.product
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Require-Bundle: org.abchip.mimo.core.e4,
- org.eclipse.equinox.app,
- org.abchip.mimo.biz.base,
+Require-Bundle: org.eclipse.equinox.app,
+ org.abchip.mimo.core,
+ org.abchip.mimo.core.e4,
  org.abchip.mimo.biz.model,
+ org.abchip.mimo.biz.base,
  org.abchip.mimo.biz.framework,
  org.abchip.mimo.biz.applications,
  org.abchip.mimo.biz.plugins,

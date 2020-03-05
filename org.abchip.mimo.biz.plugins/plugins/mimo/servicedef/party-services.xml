@@ -25,31 +25,31 @@ under the License.
     <version>1.0</version>
 
 	<service name="deleteParty" engine="java"
-		location="org.abchip.mimo.biz.asf.party.PartyServices" invoke="deleteParty">
+		location="org.abchip.mimo.biz.plugins.party.PartyServices" invoke="deleteParty">
 		<description>Delete party customer and relation</description>
         <attribute name="partyId" type="String" mode="IN" optional="false"/>
 	</service>	
 
 	<service name="deletePartyGroup" engine="java"
-		location="org.abchip.mimo.biz.asf.party.PartyServices" invoke="deletePartyGroup">
+		location="org.abchip.mimo.biz.plugins.party.PartyServices" invoke="deletePartyGroup">
 		<description>Delete party group and relation</description>
         <attribute name="partyId" type="String" mode="IN" optional="false"/>
 	</service>
 
 	<service name="importPartyClassificationFromExcel" engine="java"
-		location="org.abchip.mimo.biz.asf.party.PartyServices" invoke="importPartyClassification">
+		location="org.abchip.mimo.biz.plugins.party.PartyServices" invoke="importPartyClassification">
 		<description>Importation party classification from file excel</description>
         <attribute name="pathFile" type="String" mode="IN" optional="false"/>
 	</service>
 	
 	<service name="importPartyGroupFromExcel" engine="java"
-		location="org.abchip.mimo.biz.asf.party.PartyServices" invoke="importPartyGroup">
+		location="org.abchip.mimo.biz.plugins.party.PartyServices" invoke="importPartyGroup">
 		<description>Importation party group from file excel</description>
         <attribute name="pathFile" type="String" mode="IN" optional="false"/>
 	</service>
 
 	<service name="importPartyFromExcel" engine="java"
-		location="org.abchip.mimo.biz.asf.party.PartyServices" invoke="importParty">
+		location="org.abchip.mimo.biz.plugins.party.PartyServices" invoke="importParty">
 		<description>Importation party group from file excel</description>
 		<attribute name="roleTypeId" type="String" mode="IN" optional="false"/>
         <attribute name="pathFile" type="String" mode="IN" optional="false"/>

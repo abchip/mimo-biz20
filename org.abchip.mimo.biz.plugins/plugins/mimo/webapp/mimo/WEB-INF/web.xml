@@ -48,7 +48,7 @@
 <!--
 	<servlet>
 		<servlet-name>MIMOStartupServlet</servlet-name>
-		<servlet-class>org.abchip.mimo.biz.asf.application.MIMOStartupServlet</servlet-class>
+		<servlet-class>org.abchip.mimo.biz.plugins.application.MIMOStartupServlet</servlet-class>
 		<init-param>
 			<param-name>mimo.osgi.data</param-name>
 			<param-value>/mimo/osgi-data</param-value>
@@ -71,13 +71,13 @@
 
 	<servlet>
 		<servlet-name>EntityCheckLoginServlet</servlet-name>
-		<servlet-class>org.abchip.mimo.biz.asf.context.CheckLoginServlet
+		<servlet-class>org.abchip.mimo.biz.plugins.context.CheckLoginServlet
 		</servlet-class>
 	</servlet>
 
 	<servlet>
 		<servlet-name>EntityExternalCredentialServlet</servlet-name>
-		<servlet-class>org.abchip.mimo.biz.asf.ExternalCredentialServlet
+		<servlet-class>org.abchip.mimo.biz.plugins.ExternalCredentialServlet
 		</servlet-class>
 	</servlet>
 

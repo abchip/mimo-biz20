@@ -25,20 +25,20 @@ under the License.
     <version>1.0</version>
 
 	<service name="deleteProduct" engine="java"
-		location="org.abchip.mimo.biz.asf.product.ProductServices" invoke="deleteProduct">
+		location="org.abchip.mimo.biz.plugins.product.ProductServices" invoke="deleteProduct">
 		<description>Delete product custom and relation</description>
         <attribute name="productId" type="String" mode="IN" optional="false"/>
 	</service>
 
 	<service name="importProductFromExcel" engine="java"
-		location="org.abchip.mimo.biz.asf.product.ProductServices" invoke="importProduct">
+		location="org.abchip.mimo.biz.plugins.product.ProductServices" invoke="importProduct">
 		<description>Importation product from file excel</description>
         <attribute name="pathFileItem" type="String" mode="IN" optional="false"/>
         <attribute name="pathFilePrice" type="String" mode="IN" optional="false"/>
 	</service>
 
 	<service name="createSimpleProduct" engine="java"
-		location="org.abchip.mimo.biz.asf.product.ProductServices" invoke="createSimpleProduct">
+		location="org.abchip.mimo.biz.plugins.product.ProductServices" invoke="createSimpleProduct">
 		<description>Product creation, no default</description>
         <attribute name="productId" type="String" mode="IN" optional="false"/>
 	</service>

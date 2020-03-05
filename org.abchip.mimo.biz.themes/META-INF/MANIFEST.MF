@@ -4,5 +4,4 @@ Bundle-Name: MIMO Biz Themes
 Bundle-SymbolicName: org.abchip.mimo.biz.themes
 Bundle-Version: 0.2.0.qualifier
 Bundle-Vendor: ABChip
-Automatic-Module-Name: org.abchip.mimo.biz.asf.themes
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8

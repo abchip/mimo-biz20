@@ -4,7 +4,6 @@ Bundle-Name: MIMO Biz Plugins
 Bundle-SymbolicName: org.abchip.mimo.biz.plugins
 Bundle-Version: 0.2.0.qualifier
 Bundle-Vendor: ABChip
-Automatic-Module-Name: org.abchip.mimo.biz.asf.plugins
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ClassPath: .,
  lib/stripe-java-17.0.0.jar,
@@ -22,22 +21,20 @@ Require-Bundle: org.abchip.mimo.core,
  org.abchip.mimo.edi,
  org.abchip.mimo.ui,
  org.abchip.mimo.language,
- org.abchip.mimo.biz.commons,
- org.abchip.mimo.biz.framework,
  org.abchip.mimo.biz.applications,
- org.abchip.mimo.biz.geronimo
+ org.abchip.mimo.biz.tomcat
 Import-Package: org.eclipse.osgi.framework.console,
  org.eclipse.osgi.launch,
  org.osgi.framework,
  org.osgi.framework.launch
-Export-Package: org.abchip.mimo.biz.asf,
- org.abchip.mimo.biz.asf.application,
- org.abchip.mimo.biz.asf.command,
- org.abchip.mimo.biz.asf.context,
- org.abchip.mimo.biz.asf.driver,
- org.abchip.mimo.biz.asf.edi,
- org.abchip.mimo.biz.asf.entity,
- org.abchip.mimo.biz.asf.party,
- org.abchip.mimo.biz.asf.paymentGateway,
- org.abchip.mimo.biz.asf.product,
- org.abchip.mimo.biz.asf.seed
+Export-Package: org.abchip.mimo.biz.plugins,
+ org.abchip.mimo.biz.plugins.application,
+ org.abchip.mimo.biz.plugins.command,
+ org.abchip.mimo.biz.plugins.context,
+ org.abchip.mimo.biz.plugins.driver,
+ org.abchip.mimo.biz.plugins.edi,
+ org.abchip.mimo.biz.plugins.entity,
+ org.abchip.mimo.biz.plugins.party,
+ org.abchip.mimo.biz.plugins.paymentGateway,
+ org.abchip.mimo.biz.plugins.product,
+ org.abchip.mimo.biz.plugins.seed

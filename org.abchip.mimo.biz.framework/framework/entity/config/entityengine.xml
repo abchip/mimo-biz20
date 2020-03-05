@@ -51,7 +51,7 @@ access. For a detailed description see the core/docs/entityconfig.html file.
 
     <debug-xa-resources value="false" />  <!-- see https://issues.apache.org/jira/browse/OFBIZ-4282 for more -->
     
-    <delegator name="default" entity-model-reader="main" entity-group-reader="main" entity-eca-reader="main" distributed-cache-clear-enabled="false" entity-eca-handler-class-name="org.abchip.mimo.biz.asf.TenantDelegatorEcaHandler">
+    <delegator name="default" entity-model-reader="main" entity-group-reader="main" entity-eca-reader="main" distributed-cache-clear-enabled="false" entity-eca-handler-class-name="org.abchip.mimo.biz.plugins.TenantDelegatorEcaHandler">
         <group-map group-name="org.apache.ofbiz" datasource-name="localpostgres"/>
         <group-map group-name="org.apache.ofbiz.tenant" datasource-name="localpostgrestenant"/>
     </delegator>

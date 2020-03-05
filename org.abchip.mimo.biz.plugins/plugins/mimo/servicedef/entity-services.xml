@@ -25,14 +25,14 @@ under the License.
     <version>1.0</version>
 
 	<service name="exportEntities" engine="java"
-		location="org.abchip.mimo.biz.asf.entity.EntityServices" invoke="exportEntities">
+		location="org.abchip.mimo.biz.plugins.entity.EntityServices" invoke="exportEntities">
 		<description>Export OFBiz Entities</description>
 		<attribute name="entityModelPath" type="String" mode="OUT"
 			optional="true" />			
 	</service>    	
 
 	<service name="exportReaders" engine="java"
-		location="org.abchip.mimo.biz.asf.seed.SeedServices" invoke="exportReaders">
+		location="org.abchip.mimo.biz.plugins.seed.SeedServices" invoke="exportReaders">
 		<description>Export OFBiz Readers</description>
 	</service>    	
 

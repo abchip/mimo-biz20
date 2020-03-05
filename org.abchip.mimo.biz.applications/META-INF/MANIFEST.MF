@@ -4,11 +4,9 @@ Bundle-Name: MIMO Biz Applications
 Bundle-SymbolicName: org.abchip.mimo.biz.applications
 Bundle-Version: 0.2.0.qualifier
 Bundle-Vendor: ABChip
-Automatic-Module-Name: org.abchip.mimo.biz.asf.applications
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Require-Bundle: org.abchip.mimo.biz.commons,
- org.abchip.mimo.biz.geronimo,
- org.abchip.mimo.biz.framework
+Require-Bundle: org.abchip.mimo.biz.framework;visibility:=reexport,
+ org.abchip.mimo.biz.tomcat
 Export-Package: org.apache.ofbiz.accounting,
  org.apache.ofbiz.accounting.agreement,
  org.apache.ofbiz.accounting.finaccount,

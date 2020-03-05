@@ -52,7 +52,7 @@
 
 <!--
 	<container name="mimo-container" loaders="main"
-		class="org.abchip.mimo.biz.asf.application.MIMOContainer">
+		class="org.abchip.mimo.biz.plugins.application.MIMOContainer">
 		<property name="mimo.osgi.data" value="/mimo/osgi-data" />
 		<property name="mimo.application.config"
 			value="plugins/mimo/abchip-biz.xmi" />
