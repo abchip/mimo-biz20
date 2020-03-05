@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="abchip-biz-application" uid="ofbiz-application" id="org.abchip.mimo.biz.product.mimo-biz" application="org.abchip.mimo.biz.product.mimo-biz-application" version="0.2.0" useFeatures="true" includeLaunchers="true">
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-console
+-mimo.config ${container_loc}/abchip-biz.xmi
+      </programArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages/>
+
+   <launcher>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="org.abchip.eclipse.osgi.feature" version="0.2.0.qualifier"/>
+      <feature id="org.abchip.mimo.core.feature" version="0.2.0.qualifier"/>
+      <feature id="org.abchip.mimo.language.feature" version="0.2.0.qualifier"/>
+      <feature id="org.abchip.mimo.edi.feature" version="0.2.0.qualifier"/>
+      <feature id="org.abchip.mimo.biz.feature" version="0.2.0.qualifier"/>
+      <feature id="org.abchip.mimo.mining.feature" version="0.2.0.qualifier"/>
+      <feature id="org.abchip.mimo.jetty.feature" version="0.2.0.qualifier"/>
+      <feature id="org.abchip.mimo.ui.feature" version="0.2.0.qualifier"/>
+   </features>
+
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>

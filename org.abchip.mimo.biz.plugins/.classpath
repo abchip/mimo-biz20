@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="lib/poi-4.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/poi-ooxml-4.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/poi-scratchpad-4.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/org.eclipse.osgi_3.13.200.v20181130-2106.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/org.eclipse.osgi.services_3.7.100.v20180827-1536.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/stripe-java-17.0.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="plugins/passport/src/main/java"/>
+	<classpathentry kind="src" path="plugins/mimo/src/main/java"/>
+	<classpathentry kind="con" path="GROOVY_SUPPORT"/>
+	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
