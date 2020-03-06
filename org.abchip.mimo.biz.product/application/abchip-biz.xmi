@@ -170,6 +170,9 @@
       <services
           xsi:type="mimo-app:ServiceCommandProvider"
           className="org.abchip.mimo.biz.base.command.PartyCommandProviderImpl"/>
+      <services
+          xsi:type="mimo-app:ServiceCommandProvider"
+          className="org.abchip.mimo.biz.base.command.FiCCommandProviderImpl"/>
     </modules>
   </components>
   <components
