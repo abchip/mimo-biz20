@@ -10,7 +10,6 @@ package org.abchip.mimo.biz.accounting.ledger;
 import java.math.BigDecimal;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.accounting.budget.BudgetItemType;
 

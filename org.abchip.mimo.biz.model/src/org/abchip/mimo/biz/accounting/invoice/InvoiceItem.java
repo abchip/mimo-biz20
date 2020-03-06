@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.accounting.invoice;
 
 import java.math.BigDecimal;
-
 import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.accounting.tax.TaxAuthorityRateProduct;

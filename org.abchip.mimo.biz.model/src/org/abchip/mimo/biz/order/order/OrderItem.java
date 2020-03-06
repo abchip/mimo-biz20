@@ -10,7 +10,6 @@ package org.abchip.mimo.biz.order.order;
 import java.math.BigDecimal;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.common.status.StatusItem;

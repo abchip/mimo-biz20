@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.humanres.recruitment;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.common.enum_.Enumeration;
 import org.abchip.mimo.biz.party.party.Party;

@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.accounting.payment;
 
 import java.math.BigDecimal;
-
 import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.accounting.invoice.Invoice;
 import org.abchip.mimo.biz.accounting.ledger.GlAccount;

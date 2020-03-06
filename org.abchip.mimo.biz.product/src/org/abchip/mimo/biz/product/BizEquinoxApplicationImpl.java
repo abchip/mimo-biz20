@@ -82,7 +82,7 @@ public class BizEquinoxApplicationImpl extends E4EquinoxApplicationImpl {
 		ClassLoader originalLoader = Thread.currentThread().getContextClassLoader();
 
 		try {
-			Thread.currentThread().setContextClassLoader(new BizClassLoaderImpl(originalLoader, application.getContext()));
+			Thread.currentThread().setContextClassLoader(new BizClassLoaderImpl(originalLoader, application));
 
 			Start.main(new String[0]);
 		} finally {

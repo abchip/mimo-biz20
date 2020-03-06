@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.workeffort.timesheet;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.accounting.invoice.Invoice;
 import org.abchip.mimo.biz.accounting.rate.RateType;

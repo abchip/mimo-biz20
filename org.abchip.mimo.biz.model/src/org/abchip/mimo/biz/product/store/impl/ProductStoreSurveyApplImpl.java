@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.product.store.impl;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.content.survey.Survey;
 import org.abchip.mimo.biz.content.survey.SurveyApplType;
 import org.abchip.mimo.biz.impl.BizEntityImpl;

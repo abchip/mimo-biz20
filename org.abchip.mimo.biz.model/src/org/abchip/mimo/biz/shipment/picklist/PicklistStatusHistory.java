@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.shipment.picklist;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.common.status.StatusItem;
 import org.abchip.mimo.biz.security.login.UserLogin;

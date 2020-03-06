@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.product.cost.impl;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.product.cost.CostComponentCalc;
 import org.abchip.mimo.biz.product.cost.CostComponentType;

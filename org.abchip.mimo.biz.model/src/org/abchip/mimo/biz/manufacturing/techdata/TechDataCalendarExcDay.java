@@ -10,7 +10,6 @@ package org.abchip.mimo.biz.manufacturing.techdata;
 import java.math.BigDecimal;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 
 /**

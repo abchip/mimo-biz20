@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.workeffort.workeffort.impl;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.content.survey.Survey;
 import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.workeffort.workeffort.WorkEffort;

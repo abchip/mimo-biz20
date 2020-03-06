@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.content.website;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.content.content.Content;
 import org.abchip.mimo.biz.webapp.website.WebSite;

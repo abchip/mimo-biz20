@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.product.store;
 
 import java.math.BigDecimal;
-
 import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.accounting.finaccount.FinAccountType;
 import org.abchip.mimo.biz.common.enum_.Enumeration;

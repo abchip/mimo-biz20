@@ -10,7 +10,6 @@ package org.abchip.mimo.biz.workeffort.workeffort;
 import java.math.BigDecimal;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.accounting.fixedasset.FixedAsset;
 import org.abchip.mimo.biz.common.status.StatusItem;

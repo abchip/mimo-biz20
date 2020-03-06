@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.passport.impl;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.passport.OAuth2LinkedIn;
 import org.abchip.mimo.biz.passport.PassportPackage;

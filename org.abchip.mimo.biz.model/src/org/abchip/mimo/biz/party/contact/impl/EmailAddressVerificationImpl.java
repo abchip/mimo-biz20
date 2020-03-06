@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.party.contact.impl;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.party.contact.ContactPackage;
 import org.abchip.mimo.biz.party.contact.EmailAddressVerification;

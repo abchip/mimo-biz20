@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.party.agreement.impl;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.party.agreement.AgreementEmploymentAppl;
 import org.abchip.mimo.biz.party.agreement.AgreementPackage;

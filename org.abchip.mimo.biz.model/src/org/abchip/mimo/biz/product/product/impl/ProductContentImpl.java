@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.product.product.impl;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.common.uom.Uom;
 import org.abchip.mimo.biz.content.content.Content;
 import org.abchip.mimo.biz.impl.BizEntityTypedImpl;

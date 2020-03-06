@@ -10,7 +10,6 @@ package org.abchip.mimo.biz.humanres.employment;
 import java.math.BigDecimal;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 
 /**

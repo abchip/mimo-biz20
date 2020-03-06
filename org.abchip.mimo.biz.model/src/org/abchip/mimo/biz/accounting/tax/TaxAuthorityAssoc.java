@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.accounting.tax;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 
 /**

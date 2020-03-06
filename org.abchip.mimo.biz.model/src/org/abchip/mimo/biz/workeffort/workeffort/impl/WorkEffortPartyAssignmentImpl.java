@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.workeffort.workeffort.impl;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.common.enum_.Enumeration;
 import org.abchip.mimo.biz.common.status.StatusItem;
 import org.abchip.mimo.biz.impl.BizEntityImpl;

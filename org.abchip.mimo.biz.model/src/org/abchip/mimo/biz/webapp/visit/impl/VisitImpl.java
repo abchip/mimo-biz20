@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.webapp.visit.impl;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.webapp.visit.UserAgent;
 import org.abchip.mimo.biz.webapp.visit.Visit;

@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.shipment.picklist.impl;
 
 import java.math.BigDecimal;
-
 import org.abchip.mimo.biz.common.status.StatusItem;
 import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.order.order.OrderHeader;

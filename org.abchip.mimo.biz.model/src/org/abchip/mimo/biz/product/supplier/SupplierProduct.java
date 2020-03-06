@@ -10,7 +10,6 @@ package org.abchip.mimo.biz.product.supplier;
 import java.math.BigDecimal;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.common.uom.Uom;
 import org.abchip.mimo.biz.party.party.Party;

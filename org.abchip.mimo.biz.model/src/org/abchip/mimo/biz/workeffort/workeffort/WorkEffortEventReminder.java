@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.workeffort.workeffort;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.party.contact.ContactMech;
 import org.abchip.mimo.biz.party.party.Party;

@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.humanres.ability;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.accounting.payment.Payment;
 import org.abchip.mimo.biz.humanres.position.EmplPosition;

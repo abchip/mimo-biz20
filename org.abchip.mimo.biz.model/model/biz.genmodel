@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2017, 2020 ABChip and others.&#xA;All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html"
-    modelDirectory="/org.abchip.mimo.biz/src" modelPluginID="org.abchip.mimo.biz"
+    modelDirectory="/org.abchip.mimo.biz.model/src" editDirectory="/org.abchip.mimo.biz.edit/src"
+    editorDirectory="/org.abchip.mimo.biz.editor/src" modelPluginID="org.abchip.mimo.biz.model"
     modelName="MIMO Biz" editPluginClass="org.abchip.mimo.biz.provider.BizCoreEditPlugin"
     editorPluginClass="org.abchip.mimo.biz.presentation.BizCoreEditorPlugin" rootExtendsInterface=""
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" suppressEMFTypes="true"
-    reflectiveDelegation="true" testSuiteClass="org.abchip.mimo.biz.tests.BizCoreAllTests"
+    reflectiveDelegation="true" testsDirectory="/org.abchip.mimo.biz.tests/src" testSuiteClass="org.abchip.mimo.biz.tests.BizCoreAllTests"
     importerID="org.eclipse.emf.importer.ecore" featureDelegation="Reflective" containmentProxies="true"
-    suppressNotification="true" complianceLevel="8.0" copyrightFields="false" language="EN"
-    usedGenPackages="../../org.abchip.mimo.core/model/mimo.genmodel#//mimo" importOrganizing="true">
+    suppressNotification="true" complianceLevel="8.0" copyrightFields="false" editPluginID="org.abchip.mimo.biz.edit"
+    editorPluginID="org.abchip.mimo.biz.editor" testsPluginID="org.abchip.mimo.biz.tests"
+    language="EN" usedGenPackages="../../org.abchip.mimo.core/model/mimo.genmodel#//mimo"
+    importOrganizing="true">
   <foreignModel>biz.ecore</foreignModel>
   <genPackages prefix="Biz" basePackage="org.abchip.mimo" disposableProviderFactory="true"
       adapterFactory="false" ecorePackage="biz.ecore#/">
+    <genClasses ecoreClass="biz.ecore#//BizComponent">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference biz.ecore#//BizComponent/bizModules"/>
+    </genClasses>
+    <genClasses ecoreClass="biz.ecore#//BizModule">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//BizModule/name"/>
+    </genClasses>
     <genClasses ecoreClass="biz.ecore#//BizEntity"/>
     <genClasses ecoreClass="biz.ecore#//BizEntityNote">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//BizEntityNote/noteId"/>

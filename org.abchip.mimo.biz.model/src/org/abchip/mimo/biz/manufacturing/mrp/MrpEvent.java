@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.manufacturing.mrp;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.product.facility.Facility;
 import org.abchip.mimo.biz.product.product.Product;

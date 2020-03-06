@@ -8,22 +8,23 @@
  */
 package org.abchip.mimo.biz.product;
 
-import org.abchip.mimo.context.ContextRoot;
+import org.abchip.mimo.application.Application;
 
 public class BizClassLoaderImpl extends ClassLoader {
 
-	private ContextRoot context = null;
+	private Application application = null;
 
-	public BizClassLoaderImpl(ClassLoader originalLoader, ContextRoot context) {
+	public BizClassLoaderImpl(ClassLoader originalLoader, Application application) {
 		super(originalLoader);
-		this.context = context;
+		this.application = application;
 	}
 
 	@Override
 	public Class<?> loadClass(String name) throws ClassNotFoundException {
 
 		if (name.equals("org.apache.ofbiz.base.container.ContainerLoader")) {
-			return BizContainerLoaderImpl.class;
+			BizApplicationLoaderImpl.setApplication(application);
+			return BizApplicationLoaderImpl.class;
 		} else
 			return super.loadClass(name);
 	}
@@ -35,9 +36,9 @@ public class BizClassLoaderImpl extends ClassLoader {
 			return super.findClass(name);
 		} catch (ClassNotFoundException e) {
 			if (name.startsWith("org.abchip.mimo.biz"))
-				return this.context.loadClass(name);
+				return this.application.getContext().loadClass(name);
 			else if (name.startsWith("org.apache.ofbiz"))
-				return this.context.loadClass(name);
+				return this.application.getContext().loadClass(name);
 			else
 				throw e;
 		}

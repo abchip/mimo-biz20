@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.product.price;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 
 /**

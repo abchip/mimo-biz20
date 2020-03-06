@@ -10,7 +10,6 @@ package org.abchip.mimo.biz.order.shoppingcart;
 import java.math.BigDecimal;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.product.catalog.ProdCatalog;
 import org.abchip.mimo.biz.product.product.Product;

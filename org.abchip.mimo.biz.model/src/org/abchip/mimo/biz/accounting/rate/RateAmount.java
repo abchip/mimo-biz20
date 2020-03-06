@@ -10,7 +10,6 @@ package org.abchip.mimo.biz.accounting.rate;
 import java.math.BigDecimal;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.common.period.PeriodType;
 import org.abchip.mimo.biz.common.uom.Uom;

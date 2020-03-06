@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.marketing.opportunity.impl;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.marketing.opportunity.OpportunityPackage;
 import org.abchip.mimo.biz.marketing.opportunity.SalesOpportunity;

@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.product.supplier.impl;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.party.party.PartyClassificationGroup;
 import org.abchip.mimo.biz.product.category.ProductCategory;

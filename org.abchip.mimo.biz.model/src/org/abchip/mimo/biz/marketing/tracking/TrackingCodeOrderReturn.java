@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.marketing.tracking;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.order.order.OrderHeader;
 import org.abchip.mimo.biz.order.return_.ReturnHeader;

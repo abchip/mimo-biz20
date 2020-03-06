@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.party.need;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.party.communication.CommunicationEvent;
 import org.abchip.mimo.biz.party.party.Party;

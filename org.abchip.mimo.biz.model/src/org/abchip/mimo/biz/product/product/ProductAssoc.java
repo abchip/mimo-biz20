@@ -10,7 +10,6 @@ package org.abchip.mimo.biz.product.product;
 import java.math.BigDecimal;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.common.method.CustomMethod;
 import org.abchip.mimo.biz.service.schedule.RecurrenceInfo;

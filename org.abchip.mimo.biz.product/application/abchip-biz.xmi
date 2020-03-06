@@ -3,10 +3,11 @@
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:biz="http://www.abchip.org/mimo/biz"
     xmlns:mimo-app="http://www.abchip.org/mimo/application"
     xmlns:mimo-ctx="http://www.abchip.org/mimo/context"
     xmlns:mimo-resource="http://www.abchip.org/mimo/resource"
-    xsi:schemaLocation="http://www.abchip.org/mimo/application ../../org.abchip.mimo.core/model/mimo.ecore#//application http://www.abchip.org/mimo/context ../../org.abchip.mimo.core/model/mimo.ecore#//context http://www.abchip.org/mimo/resource ../../org.abchip.mimo.core/model/mimo.ecore#//resource"
+    xsi:schemaLocation="http://www.abchip.org/mimo/biz ../../org.abchip.mimo.biz.model/model/biz.ecore http://www.abchip.org/mimo/application ../../org.abchip.mimo.core/model/mimo.ecore#//application http://www.abchip.org/mimo/context ../../org.abchip.mimo.core/model/mimo.ecore#//context http://www.abchip.org/mimo/resource ../../org.abchip.mimo.core/model/mimo.ecore#//resource"
     name="ofbiz-application"
     text="OFBiz Application">
   <components
@@ -91,7 +92,8 @@
     </modules>
   </components>
   <components
-      name="OFBiz">
+      xsi:type="biz:BizComponent"
+      name="Framework">
     <config>
       <entities
           xsi:type="mimo-ctx:ProviderConfig"
@@ -101,19 +103,24 @@
             password="ofbiz"/>
       </entities>
     </config>
-    <hooks className="org.abchip.mimo.biz.plugins.application.MIMOHook"/>
-    <commands
-        className="org.abchip.mimo.biz.plugins.command.OFBizCommandProviderTenantImpl"/>
-    <commands
-        className="org.abchip.mimo.biz.plugins.command.OFBizCommandProviderImpl"/>
-    <commands
-        className="org.abchip.mimo.biz.base.command.PartyCommandProviderImpl"/>
     <modules
-        name="Base">
+        name="Commands">
+      <services
+          xsi:type="mimo-app:ServiceCommandProvider"
+          className="org.abchip.mimo.biz.plugins.command.OFBizCommandProviderTenantImpl"/>
+      <services
+          xsi:type="mimo-app:ServiceCommandProvider"
+          className="org.abchip.mimo.biz.plugins.command.OFBizCommandProviderImpl"/>
+    </modules>
+    <modules
+        name="Authentication">
       <services
           xsi:type="mimo-app:ServiceExecutor"
           className="org.abchip.mimo.biz.plugins.application.OFBizAuthenticationManagerImpl"
           interfaceName="org.abchip.mimo.context.AuthenticationManager"/>
+    </modules>
+    <modules
+        name="Resources">
       <services
           xsi:type="mimo-app:ServiceRegistryEntry"
           className="org.abchip.mimo.biz.plugins.driver.OFBizResourceProviderImpl"
@@ -129,8 +136,49 @@
           vendor="ABChip"
           version="0.1.0"/>
     </modules>
+    <bizModules
+        name="base"/>
+    <bizModules
+        name="entity"/>
+    <bizModules
+        name="security"/>
+    <bizModules
+        name="datafile"/>
+    <bizModules
+        name="minilang"/>
+    <bizModules
+        name="common"/>
+    <bizModules
+        name="service"/>
+    <bizModules
+        name="catalina"/>
+    <bizModules
+        name="entityext"/>
+    <bizModules
+        name="webapp"/>
+    <bizModules
+        name="widget"/>
+    <bizModules
+        name="testtools"/>
+    <bizModules
+        name="webtools"/>
+  </components>
+  <components
+      name="Applications">
     <modules
-        name="Service">
+        name="Commands">
+      <services
+          xsi:type="mimo-app:ServiceCommandProvider"
+          className="org.abchip.mimo.biz.base.command.PartyCommandProviderImpl"/>
+    </modules>
+  </components>
+  <components
+      name="Plugins"/>
+  <components
+      name="Connectors"
+      status="STP">
+    <modules
+        name="Session">
       <services
           xsi:type="mimo-app:ServiceServlet"
           className="org.abchip.mimo.core.http.servlet.session.LoginServlet"
@@ -143,6 +191,9 @@
           xsi:type="mimo-app:ServiceServlet"
           className="org.abchip.mimo.core.http.servlet.session.StatusServlet"
           alias="/biz/service/status"/>
+    </modules>
+    <modules
+        name="Rest">
       <services
           xsi:type="mimo-app:ServiceServlet"
           className="org.abchip.mimo.core.http.servlet.LookupServlet"
@@ -162,7 +213,8 @@
     </modules>
   </components>
   <components
-      name="Data Interchange">
+      name="Data Interchange"
+      status="STP">
     <hooks className="org.abchip.mimo.biz.plugins.edi.EdiHook"
         status="STP"/>
     <commands

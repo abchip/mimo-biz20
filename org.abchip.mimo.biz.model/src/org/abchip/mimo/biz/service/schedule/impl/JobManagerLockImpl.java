@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.service.schedule.impl;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.common.enum_.Enumeration;
 import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.service.schedule.JobManagerLock;

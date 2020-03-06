@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.workeffort.workeffort.impl;
 
 import java.math.BigDecimal;
-
 import org.abchip.mimo.biz.humanres.ability.SkillType;
 import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.workeffort.workeffort.WorkEffort;

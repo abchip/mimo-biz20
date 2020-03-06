@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.workeffort.workeffort;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.service.schedule.RuntimeData;
 

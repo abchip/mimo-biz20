@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.order.order.impl;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.order.order.OrderHeader;
 import org.abchip.mimo.biz.order.order.OrderItemShipGroup;

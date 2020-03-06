@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.product.facility.impl;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.common.geo.GeoPoint;
 import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.product.facility.FacilityLocationGeoPoint;

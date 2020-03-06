@@ -8,9 +8,7 @@
 package org.abchip.mimo.biz.party.impl;
 
 import org.abchip.mimo.MimoPackage;
-
 import org.abchip.mimo.biz.BizPackage;
-
 import org.abchip.mimo.biz.accounting.AccountingPackage;
 
 import org.abchip.mimo.biz.accounting.budget.BudgetPackage;
@@ -194,9 +192,7 @@ import org.abchip.mimo.biz.humanres.recruitment.impl.RecruitmentPackageImpl;
 import org.abchip.mimo.biz.humanres.trainings.TrainingsPackage;
 
 import org.abchip.mimo.biz.humanres.trainings.impl.TrainingsPackageImpl;
-
 import org.abchip.mimo.biz.impl.BizPackageImpl;
-
 import org.abchip.mimo.biz.manufacturing.bom.BomPackage;
 
 import org.abchip.mimo.biz.manufacturing.bom.impl.BomPackageImpl;
@@ -380,7 +376,6 @@ import org.abchip.mimo.biz.workeffort.timesheet.impl.TimesheetPackageImpl;
 import org.abchip.mimo.biz.workeffort.workeffort.WorkeffortPackage;
 
 import org.abchip.mimo.biz.workeffort.workeffort.impl.WorkeffortPackageImpl;
-
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 

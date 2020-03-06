@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.order.quote;
 
 import java.math.BigDecimal;
-
 import org.abchip.mimo.biz.BizEntity;
 
 /**

@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.party.party;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.webapp.website.WebSite;
 

@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.accounting.fixedasset;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.common.method.CustomMethod;
 

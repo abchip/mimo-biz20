@@ -8,12 +8,15 @@
 package org.abchip.mimo.biz.impl;
 
 import org.abchip.mimo.MimoPackage;
+import org.abchip.mimo.application.ApplicationPackage;
+import org.abchip.mimo.biz.BizComponent;
 import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.BizEntityNote;
 import org.abchip.mimo.biz.BizEntityNoteData;
 import org.abchip.mimo.biz.BizEntityType;
 import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.BizFactory;
+import org.abchip.mimo.biz.BizModule;
 import org.abchip.mimo.biz.BizPackage;
 import org.abchip.mimo.biz.accounting.AccountingPackage;
 import org.abchip.mimo.biz.accounting.budget.BudgetPackage;
@@ -205,6 +208,7 @@ import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.ETypeParameter;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
@@ -216,6 +220,20 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
  * @generated
  */
 public class BizPackageImpl extends EPackageImpl implements BizPackage {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass bizComponentEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass bizModuleEClass = null;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -703,6 +721,46 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getBizComponent() {
+		return bizComponentEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getBizComponent_BizModules() {
+		return (EReference)bizComponentEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getBizModule() {
+		return bizModuleEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBizModule_Name() {
+		return (EAttribute)bizModuleEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getBizEntity() {
 		return bizEntityEClass;
 	}
@@ -866,6 +924,12 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 		isCreated = true;
 
 		// Create classes and their features
+		bizComponentEClass = createEClass(BIZ_COMPONENT);
+		createEReference(bizComponentEClass, BIZ_COMPONENT__BIZ_MODULES);
+
+		bizModuleEClass = createEClass(BIZ_MODULE);
+		createEAttribute(bizModuleEClass, BIZ_MODULE__NAME);
+
 		bizEntityEClass = createEClass(BIZ_ENTITY);
 
 		bizEntityNoteEClass = createEClass(BIZ_ENTITY_NOTE);
@@ -969,6 +1033,7 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 		org.abchip.mimo.biz.webapp.website.WebsitePackage theWebsitePackage_1 = (org.abchip.mimo.biz.webapp.website.WebsitePackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.webapp.website.WebsitePackage.eNS_URI);
 		TimesheetPackage theTimesheetPackage = (TimesheetPackage)EPackage.Registry.INSTANCE.getEPackage(TimesheetPackage.eNS_URI);
 		WorkeffortPackage theWorkeffortPackage = (WorkeffortPackage)EPackage.Registry.INSTANCE.getEPackage(WorkeffortPackage.eNS_URI);
+		ApplicationPackage theApplicationPackage = (ApplicationPackage)EPackage.Registry.INSTANCE.getEPackage(ApplicationPackage.eNS_URI);
 		EntityPackage theEntityPackage_1 = (EntityPackage)EPackage.Registry.INSTANCE.getEPackage(EntityPackage.eNS_URI);
 
 		// Add subpackages
@@ -1047,6 +1112,8 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 		bizEntityTypeEClass_E.getEBounds().add(g1);
 
 		// Add supertypes to classes
+		bizComponentEClass.getESuperTypes().add(theApplicationPackage.getApplicationComponent());
+		bizModuleEClass.getESuperTypes().add(theEntityPackage_1.getEntity());
 		bizEntityEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		bizEntityEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		bizEntityNoteEClass.getESuperTypes().add(this.getBizEntity());
@@ -1065,6 +1132,12 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 		bizEntityTypeEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters
+		initEClass(bizComponentEClass, BizComponent.class, "BizComponent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getBizComponent_BizModules(), this.getBizModule(), null, "bizModules", null, 0, -1, BizComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(bizModuleEClass, BizModule.class, "BizModule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getBizModule_Name(), ecorePackage.getEString(), "name", null, 0, 1, BizModule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		initEClass(bizEntityEClass, BizEntity.class, "BizEntity", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(bizEntityNoteEClass, BizEntityNote.class, "BizEntityNote", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

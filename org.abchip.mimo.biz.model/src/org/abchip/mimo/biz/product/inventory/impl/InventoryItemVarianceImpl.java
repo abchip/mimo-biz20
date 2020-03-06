@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.product.inventory.impl;
 
 import java.math.BigDecimal;
-
 import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.product.inventory.InventoryItem;
 import org.abchip.mimo.biz.product.inventory.InventoryItemVariance;

@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.entity.synchronization;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 
 /**

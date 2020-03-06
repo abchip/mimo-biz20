@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.shipment.shipment.impl;
 
 import java.math.BigDecimal;
-
 import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.product.product.Product;
 import org.abchip.mimo.biz.shipment.shipment.Shipment;

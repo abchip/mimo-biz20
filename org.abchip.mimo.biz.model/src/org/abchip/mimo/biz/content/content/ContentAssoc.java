@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.content.content;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.common.datasource.DataSource;
 import org.abchip.mimo.biz.security.login.UserLogin;

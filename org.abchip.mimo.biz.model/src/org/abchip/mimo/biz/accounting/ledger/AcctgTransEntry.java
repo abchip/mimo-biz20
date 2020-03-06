@@ -10,7 +10,6 @@ package org.abchip.mimo.biz.accounting.ledger;
 import java.math.BigDecimal;
 
 import java.util.Date;
-
 import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.accounting.DebitCreditFlag;
 import org.abchip.mimo.biz.common.status.StatusItem;

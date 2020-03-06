@@ -6,7 +6,7 @@ Bundle-Version: 0.2.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Automatic-Module-Name: org.abchip.mimo.biz
+Automatic-Module-Name: org.abchip.mimo.biz.model
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: org.abchip.mimo.biz,
  org.abchip.mimo.biz.accounting,
