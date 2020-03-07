@@ -8,34 +8,38 @@
  */
 package org.abchip.mimo.biz.product;
 
+import java.io.File;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLClassLoader;
 import java.util.ArrayList;
-import java.util.Collection;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.stream.Collectors;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
 
 import org.abchip.mimo.application.Application;
+import org.abchip.mimo.application.ApplicationComponent;
+import org.abchip.mimo.application.ComponentStatus;
+import org.abchip.mimo.biz.BizComponent;
+import org.abchip.mimo.biz.BizModule;
 import org.apache.ofbiz.base.component.ComponentConfig;
-import org.apache.ofbiz.base.container.ComponentContainer;
+import org.apache.ofbiz.base.component.ComponentException;
 import org.apache.ofbiz.base.container.Container;
-import org.apache.ofbiz.base.container.ContainerConfig;
 import org.apache.ofbiz.base.container.ContainerException;
 import org.apache.ofbiz.base.container.ContainerLoader;
+import org.apache.ofbiz.base.start.Classpath;
 import org.apache.ofbiz.base.start.Config;
 import org.apache.ofbiz.base.start.StartupCommand;
 import org.apache.ofbiz.base.start.StartupException;
 import org.apache.ofbiz.base.util.Debug;
-import org.apache.ofbiz.base.util.UtilValidate;
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
+import org.apache.ofbiz.base.util.FileUtil;
 
 import edu.emory.mathcs.backport.java.util.Collections;
 
 public class BizApplicationLoaderImpl extends ContainerLoader {
 
+	private final List<Classpath> componentsClassPath = new ArrayList<>();
 	private final List<Container> loadedContainers = new LinkedList<>();
 
 	protected static Application application;
@@ -50,109 +54,86 @@ public class BizApplicationLoaderImpl extends ContainerLoader {
 	@Override
 	public synchronized void load(Config config, List<StartupCommand> ofbizCommands) throws StartupException {
 
-		Debug.logInfo("[Startup] Loading application: " + application.getName(), module);
+		Debug.logInfo("Loading application: " + application.getName(), module);
 
-		Document document = null;
-		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+		for (ApplicationComponent component : BizApplicationLoaderImpl.application.getComponents()) {
+			if (component.getStatus() != ComponentStatus.ACTIVE)
+				continue;
+			if (!(component instanceof BizComponent))
+				continue;
 
-		factory.setValidating(true);
-		try {
-			DocumentBuilder builder = factory.newDocumentBuilder();
-			document = builder.newDocument();
-		} catch (Exception e) {
-			Debug.logError(e, module);
+			BizComponent bizComponent = (BizComponent) component;
+			for (BizModule bizModule : bizComponent.getBizModules()) {
+				Debug.logInfo("Loading module : " + bizModule.getName(), module);
+				try {
+					ComponentConfig componentConfig = ComponentConfig.getComponentConfig(bizModule.getName(), config.ofbizHome + "/" + bizComponent.getName().toLowerCase() + "/" + bizModule.getName().toLowerCase());
+					if (componentConfig.enabled())
+						componentsClassPath.add(buildClasspathFromComponentConfig(componentConfig));
+					
+					Debug.logInfo("Loaded module : " + bizModule.getName(), module);
+				} catch (IOException | ComponentException e) {
+					throw new StartupException(e);
+				}
+			}
 		}
 
-		// initialize the container object
 		try {
-			ComponentContainer componentContainer = new ComponentContainer();
-
-//			Element configElement = document.createElement("container");
-//			ContainerConfig.Configuration containerConfig = new ContainerConfig.Configuration(configElement);
-			componentContainer.init(ofbizCommands, "component-container", null);
+			loadClassPathForAllComponents(componentsClassPath);
 		} catch (ContainerException e) {
-			throw new StartupException("Cannot init() " + "component-container", e);
+			throw new StartupException(e);
 		}
-
-		// loaders defined in startup (e.g. main, test, load-data, etc ...)
-		List<String> loaders = config.loaders;
-
-		// load containers defined in ofbiz-containers.xml
-//		Debug.logInfo("[Startup] Loading containers...", module);
-//		List<ContainerConfig.Configuration> ofbizContainerConfigs = filterContainersHavingMatchingLoaders(loaders, retrieveOfbizContainers(config.containerConfig));
-//		loadedContainers.addAll(loadContainersFromConfigurations(ofbizContainerConfigs, config, ofbizCommands));
-
-		// load containers defined in components
-		Debug.logInfo("[Startup] Loading component containers...", module);
-		List<ContainerConfig.Configuration> componentContainerConfigs = filterContainersHavingMatchingLoaders(loaders, ComponentConfig.getAllConfigurations());
-		loadedContainers.addAll(loadContainersFromConfigurations(componentContainerConfigs, config, ofbizCommands));
 
 		// Start all containers loaded from above steps
 		startLoadedContainers();
 	}
 
-	private Collection<ContainerConfig.Configuration> retrieveOfbizContainers(String configFile) throws StartupException {
-		try {
-			return ContainerConfig.getConfigurations(configFile);
-		} catch (ContainerException e) {
-			throw new StartupException(e);
+	private Classpath buildClasspathFromComponentConfig(ComponentConfig config) throws IOException {
+		Classpath classPath = new Classpath();
+		String configRoot = config.getRootLocation().replace('\\', '/');
+		configRoot = configRoot.endsWith("/") ? configRoot : configRoot + "/";
+		List<ComponentConfig.ClasspathInfo> classpathInfos = config.getClasspathInfos();
+
+		for (ComponentConfig.ClasspathInfo cp : classpathInfos) {
+			String location = cp.location.replace('\\', '/');
+			if (!"jar".equals(cp.type) && !"dir".equals(cp.type)) {
+				Debug.logError("Classpath type '" + cp.type + "' is not supported; '" + location + "' not loaded", module);
+				continue;
+			}
+
+			location = location.startsWith("/") ? location.substring(1) : location;
+			String dirLoc = location.endsWith("/*") ? location.substring(0, location.length() - 2) : location;
+			File path = FileUtil.getFile(configRoot + dirLoc);
+
+			if (path.exists()) {
+				classPath.addComponent(configRoot + location);
+				if (path.isDirectory() && "dir".equals(cp.type)) {
+					classPath.addFilesFromPath(path);
+				}
+			} else {
+				Debug.logWarning("Location '" + configRoot + dirLoc + "' does not exist", module);
+			}
 		}
+		return classPath;
 	}
 
-	private List<ContainerConfig.Configuration> filterContainersHavingMatchingLoaders(List<String> loaders, Collection<ContainerConfig.Configuration> containerConfigs) {
-		return containerConfigs.stream().filter(
-				containerCfg -> UtilValidate.isEmpty(containerCfg.loaders) && UtilValidate.isEmpty(loaders) || containerCfg.loaders.stream().anyMatch(loader -> loaders.contains(loader)))
-				.collect(Collectors.toList());
-	}
-
-	private List<Container> loadContainersFromConfigurations(List<ContainerConfig.Configuration> containerConfigs, Config config, List<StartupCommand> ofbizCommands) throws StartupException {
-
-		List<Container> loadContainers = new ArrayList<>();
-		for (ContainerConfig.Configuration containerCfg : containerConfigs) {
-			Debug.logInfo("Loading container: " + containerCfg.name, module);
-			Container tmpContainer = loadContainer(config.containerConfig, containerCfg, ofbizCommands);
-			loadContainers.add(tmpContainer);
-			Debug.logInfo("Loaded container: " + containerCfg.name, module);
+	@SuppressWarnings("resource")
+	private void loadClassPathForAllComponents(List<Classpath> componentsClassPath) throws ContainerException {
+		List<URL> allComponentUrls = new ArrayList<>();
+		for (Classpath classPath : componentsClassPath) {
+			try {
+				allComponentUrls.addAll(Arrays.asList(classPath.getUrls()));
+			} catch (MalformedURLException e) {
+				Debug.logError("Unable to load component classpath" + classPath.toString(), module);
+				Debug.logError(e.getMessage(), module);
+			}
 		}
-		return loadContainers;
-	}
-
-	private Container loadContainer(String configFile, ContainerConfig.Configuration containerCfg, List<StartupCommand> ofbizCommands) throws StartupException {
-		// load the container class
-		ClassLoader loader = Thread.currentThread().getContextClassLoader();
-		Class<?> containerClass;
-		try {
-			containerClass = loader.loadClass(containerCfg.className);
-		} catch (ClassNotFoundException e) {
-			throw new StartupException("Cannot locate container class", e);
-		}
-		if (containerClass == null) {
-			throw new StartupException("Component container class not loaded");
-		}
-
-		// create a new instance of the container object
-		Container containerObj;
-		try {
-			containerObj = (Container) containerClass.getDeclaredConstructor().newInstance();
-		} catch (ReflectiveOperationException e) {
-			throw new StartupException("Cannot create " + containerCfg.name, e);
-		}
-		if (containerObj == null) {
-			throw new StartupException("Unable to create instance of component container");
-		}
-
-		// initialize the container object
-		try {
-			containerObj.init(ofbizCommands, containerCfg.name, configFile);
-		} catch (ContainerException e) {
-			throw new StartupException("Cannot init() " + containerCfg.name, e);
-		}
-
-		return containerObj;
+		URL[] componentURLs = allComponentUrls.toArray(new URL[allComponentUrls.size()]);
+		URLClassLoader classLoader = new URLClassLoader(componentURLs, Thread.currentThread().getContextClassLoader());
+		Thread.currentThread().setContextClassLoader(classLoader);
 	}
 
 	private void startLoadedContainers() throws StartupException {
-		Debug.logInfo("[Startup] Starting containers...", module);
+
 		for (Container container : loadedContainers) {
 			Debug.logInfo("Starting container " + container.getName(), module);
 			try {
