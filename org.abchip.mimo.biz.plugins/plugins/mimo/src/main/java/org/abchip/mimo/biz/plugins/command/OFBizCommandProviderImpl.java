@@ -102,7 +102,7 @@ public class OFBizCommandProviderImpl extends BaseCommandProviderImpl {
 	private static final String TAX_AUTH_GEO_ID = "ITA";
 	
 	public <E extends EntityIdentifiable> void _login2(CommandInterpreter interpreter) throws Exception {
-		this.login(interpreter.nextArgument(), interpreter.nextArgument());
+		this.login(interpreter.nextArgument());
 	}
 
 	@SuppressWarnings("resource")

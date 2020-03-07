@@ -27,12 +27,12 @@ public class OFBizCommandProviderTenantImpl extends BaseCommandProviderImpl {
 	private ResourceManager resourceManager;
 
 	public <E extends EntityIdentifiable> void _loginBizTenant(CommandInterpreter interpreter) throws Exception {
-		this.login(interpreter.nextArgument(), interpreter.nextArgument());
+		this.login(interpreter.nextArgument());
 	}
 
 	@SuppressWarnings("resource")
 	public void _createMaster(CommandInterpreter interpreter) throws Exception {
-		
+
 		Context context = this.getContext();
 
 		OFBizCommandUtils.loadSeeds(context, "mimo", null, true);

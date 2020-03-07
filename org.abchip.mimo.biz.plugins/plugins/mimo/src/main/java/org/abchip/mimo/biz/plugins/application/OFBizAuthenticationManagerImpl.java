@@ -2,7 +2,9 @@ package org.abchip.mimo.biz.plugins.application;
 
 import javax.inject.Inject;
 
+import org.abchip.mimo.application.Application;
 import org.abchip.mimo.biz.security.login.UserLogin;
+import org.abchip.mimo.context.AuthenticationAdminKey;
 import org.abchip.mimo.context.AuthenticationAnonymous;
 import org.abchip.mimo.context.AuthenticationManager;
 import org.abchip.mimo.context.AuthenticationUserPassword;
@@ -11,9 +13,12 @@ import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextRoot;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
+import org.apache.ofbiz.base.start.Start;
 
 public class OFBizAuthenticationManagerImpl implements AuthenticationManager {
 
+	@Inject
+	private Application application;
 	@Inject
 	private ResourceManager resourceManager;
 
@@ -60,5 +65,20 @@ public class OFBizAuthenticationManagerImpl implements AuthenticationManager {
 	public Context login(String contextId, AuthenticationUserToken authentication) {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	@SuppressWarnings("resource")
+	@Override
+	public Context login(String contextId, AuthenticationAdminKey authentication) {
+
+		if (!authentication.getAdminKey().equals(Start.getInstance().getConfig().adminKey))
+			return null;
+
+		ContextRoot contextRoot = application.getContext();
+		if (contextRoot == null)
+			return null;
+
+		Context contextUser = contextRoot.createChildContext(contextId);
+		return contextUser;
 	}
 }
