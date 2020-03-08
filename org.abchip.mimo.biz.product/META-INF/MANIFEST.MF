@@ -16,6 +16,7 @@ Require-Bundle: org.eclipse.equinox.app,
  org.abchip.mimo.biz.plugins,
  org.abchip.mimo.biz.themes,
  org.abchip.mimo.biz.tomcat
-Import-Package: org.osgi.framework
+Import-Package: org.eclipse.osgi.internal.url,
+ org.osgi.framework
 Export-Package: org.abchip.mimo.biz.product
 Bundle-ActivationPolicy: lazy

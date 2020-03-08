@@ -137,13 +137,31 @@ public interface BizPackage extends EPackage {
 	int BIZ_COMPONENT__STATUS = ApplicationPackage.APPLICATION_COMPONENT__STATUS;
 
 	/**
+	 * The feature id for the '<em><b>Plugin</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BIZ_COMPONENT__PLUGIN = ApplicationPackage.APPLICATION_COMPONENT_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>Biz Modules</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_COMPONENT__BIZ_MODULES = ApplicationPackage.APPLICATION_COMPONENT_FEATURE_COUNT + 0;
+	int BIZ_COMPONENT__BIZ_MODULES = ApplicationPackage.APPLICATION_COMPONENT_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Modules Dir</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BIZ_COMPONENT__MODULES_DIR = ApplicationPackage.APPLICATION_COMPONENT_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Component</em>' class.
@@ -152,7 +170,7 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_COMPONENT_FEATURE_COUNT = ApplicationPackage.APPLICATION_COMPONENT_FEATURE_COUNT + 1;
+	int BIZ_COMPONENT_FEATURE_COUNT = ApplicationPackage.APPLICATION_COMPONENT_FEATURE_COUNT + 3;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.impl.BizModuleImpl <em>Module</em>}' class.
@@ -558,6 +576,17 @@ public interface BizPackage extends EPackage {
 	EClass getBizComponent();
 
 	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.BizComponent#getPlugin <em>Plugin</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Plugin</em>'.
+	 * @see org.abchip.mimo.biz.BizComponent#getPlugin()
+	 * @see #getBizComponent()
+	 * @generated
+	 */
+	EAttribute getBizComponent_Plugin();
+
+	/**
 	 * Returns the meta object for the containment reference list '{@link org.abchip.mimo.biz.BizComponent#getBizModules <em>Biz Modules</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -567,6 +596,17 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getBizComponent_BizModules();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.BizComponent#getModulesDir <em>Modules Dir</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Modules Dir</em>'.
+	 * @see org.abchip.mimo.biz.BizComponent#getModulesDir()
+	 * @see #getBizComponent()
+	 * @generated
+	 */
+	EAttribute getBizComponent_ModulesDir();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.BizModule <em>Module</em>}'.
@@ -771,12 +811,28 @@ public interface BizPackage extends EPackage {
 		EClass BIZ_COMPONENT = eINSTANCE.getBizComponent();
 
 		/**
+		 * The meta object literal for the '<em><b>Plugin</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BIZ_COMPONENT__PLUGIN = eINSTANCE.getBizComponent_Plugin();
+
+		/**
 		 * The meta object literal for the '<em><b>Biz Modules</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference BIZ_COMPONENT__BIZ_MODULES = eINSTANCE.getBizComponent_BizModules();
+
+		/**
+		 * The meta object literal for the '<em><b>Modules Dir</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BIZ_COMPONENT__MODULES_DIR = eINSTANCE.getBizComponent_ModulesDir();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.impl.BizModuleImpl <em>Module</em>}' class.

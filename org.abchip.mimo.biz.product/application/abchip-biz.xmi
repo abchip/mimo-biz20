@@ -93,7 +93,9 @@
   </components>
   <components
       xsi:type="biz:BizComponent"
-      name="Framework">
+      name="Framework"
+      plugin="org.abchip.mimo.biz.framework"
+      modulesDir="framework">
     <config>
       <entities
           xsi:type="mimo-ctx:ProviderConfig"

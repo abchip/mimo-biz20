@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MIMO Biz Tomcat
+Bundle-SymbolicName: org.abchip.mimo.biz.tomcat
+Bundle-Version: 0.2.0.202003081206
+Bundle-Vendor: ABChip
+Automatic-Module-Name: org.abchip.mimo.biz.tomcat
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ClassPath: .,lib/tomcat-annotations-api-9.0.31.jar,lib/tomcat-a
+ pi-9.0.31.jar,lib/tomcat-catalina-9.0.31.jar,lib/tomcat-catalina-ha-9
+ .0.31.jar,lib/tomcat-coyote-9.0.31.jar,lib/tomcat-el-api-9.0.31.jar,l
+ ib/tomcat-jasper-9.0.31.jar,lib/tomcat-jasper-el-9.0.31.jar,lib/tomca
+ t-jaspic-api-9.0.31.jar,lib/tomcat-jni-9.0.31.jar,lib/tomcat-jsp-api-
+ 9.0.31.jar,lib/tomcat-juli-9.0.31.jar,lib/tomcat-servlet-api-9.0.31.j
+ ar,lib/tomcat-tribes-9.0.31.jar,lib/tomcat-util-9.0.31.jar,lib/tomcat
+ -util-scan-9.0.31.jar
+Export-Package: javax.servlet,javax.servlet.annotation,javax.servlet.h
+ ttp,javax.servlet.jsp,org.apache.catalina,org.apache.catalina.authent
+ icator,org.apache.catalina.connector,org.apache.catalina.core,org.apa
+ che.catalina.filters,org.apache.catalina.ha,org.apache.catalina.ha.tc
+ p,org.apache.catalina.loader,org.apache.catalina.realm,org.apache.cat
+ alina.startup,org.apache.catalina.tribes,org.apache.catalina.tribes.g
+ roup,org.apache.catalina.tribes.membership,org.apache.catalina.tribes
+ .transport,org.apache.catalina.tribes.transport.nio,org.apache.catali
+ na.util,org.apache.catalina.valves,org.apache.catalina.webresources,o
+ rg.apache.coyote,org.apache.tomcat,org.apache.tomcat.util,org.apache.
+ tomcat.util.buf,org.apache.tomcat.util.descriptor,org.apache.tomcat.u
+ til.descriptor.web,org.apache.tomcat.util.digester,org.apache.tomcat.
+ util.http,org.apache.tomcat.util.res,org.apache.tomcat.util.scan
+Require-Bundle: org.abchip.mimo.biz.commons
+
+

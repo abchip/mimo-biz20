@@ -2,8 +2,11 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="biz" nsURI="http://www.abchip.org/mimo/biz" nsPrefix="biz">
   <eClassifiers xsi:type="ecore:EClass" name="BizComponent" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//application/ApplicationComponent">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="plugin" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="bizModules" upperBound="-1"
         eType="#//BizModule" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="modulesDir" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="BizModule" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/Entity">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>

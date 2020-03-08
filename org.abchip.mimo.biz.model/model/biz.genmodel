@@ -16,7 +16,9 @@
   <genPackages prefix="Biz" basePackage="org.abchip.mimo" disposableProviderFactory="true"
       adapterFactory="false" ecorePackage="biz.ecore#/">
     <genClasses ecoreClass="biz.ecore#//BizComponent">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//BizComponent/plugin"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference biz.ecore#//BizComponent/bizModules"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//BizComponent/modulesDir"/>
     </genClasses>
     <genClasses ecoreClass="biz.ecore#//BizModule">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//BizModule/name"/>

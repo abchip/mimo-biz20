@@ -13,6 +13,8 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLClassLoader;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -27,17 +29,19 @@ import org.apache.ofbiz.base.component.ComponentConfig;
 import org.apache.ofbiz.base.component.ComponentException;
 import org.apache.ofbiz.base.container.Container;
 import org.apache.ofbiz.base.container.ContainerException;
-import org.apache.ofbiz.base.container.ContainerLoader;
 import org.apache.ofbiz.base.start.Classpath;
 import org.apache.ofbiz.base.start.Config;
 import org.apache.ofbiz.base.start.StartupCommand;
 import org.apache.ofbiz.base.start.StartupException;
+import org.apache.ofbiz.base.start.StartupLoader;
 import org.apache.ofbiz.base.util.Debug;
 import org.apache.ofbiz.base.util.FileUtil;
 
 import edu.emory.mathcs.backport.java.util.Collections;
 
-public class BizApplicationLoaderImpl extends ContainerLoader {
+public class BizApplicationLoaderImpl implements StartupLoader {
+
+	public static final String module = "ApplicationLoader";
 
 	private final List<Classpath> componentsClassPath = new ArrayList<>();
 	private final List<Container> loadedContainers = new LinkedList<>();
@@ -63,18 +67,26 @@ public class BizApplicationLoaderImpl extends ContainerLoader {
 				continue;
 
 			BizComponent bizComponent = (BizComponent) component;
+			String componentLocation = BizApplicationLoaderImpl.application.getContext().locateBundle(bizComponent.getPlugin());
+
+			Debug.logInfo("Loading component : " + bizComponent.getName() + " from location: " + componentLocation, module);
+
 			for (BizModule bizModule : bizComponent.getBizModules()) {
-				Debug.logInfo("Loading module : " + bizModule.getName(), module);
 				try {
-					ComponentConfig componentConfig = ComponentConfig.getComponentConfig(bizModule.getName(), config.ofbizHome + "/" + bizComponent.getName().toLowerCase() + "/" + bizModule.getName().toLowerCase());
+					Path moduleLocation = Paths.get(componentLocation, bizComponent.getModulesDir(), bizModule.getName().toLowerCase());
+					Debug.logInfo("Loading module : " + bizModule.getName() + " from location: " + moduleLocation, module);
+
+					ComponentConfig componentConfig = ComponentConfig.getComponentConfig(bizModule.getName(), moduleLocation.toString());
 					if (componentConfig.enabled())
 						componentsClassPath.add(buildClasspathFromComponentConfig(componentConfig));
-					
+
 					Debug.logInfo("Loaded module : " + bizModule.getName(), module);
 				} catch (IOException | ComponentException e) {
 					throw new StartupException(e);
 				}
 			}
+
+			Debug.logInfo("Loaded component : " + bizComponent.getName(), module);
 		}
 
 		try {
@@ -85,6 +97,8 @@ public class BizApplicationLoaderImpl extends ContainerLoader {
 
 		// Start all containers loaded from above steps
 		startLoadedContainers();
+
+		Debug.logInfo("Loaded application: " + application.getName(), module);
 	}
 
 	private Classpath buildClasspathFromComponentConfig(ComponentConfig config) throws IOException {
@@ -150,7 +164,8 @@ public class BizApplicationLoaderImpl extends ContainerLoader {
 	 */
 	@Override
 	public synchronized void unload() throws StartupException {
-		Debug.logInfo("Shutting down containers", module);
+
+		Debug.logInfo("Unloading application", module);
 
 		List<Container> reversedContainerList = new ArrayList<>(loadedContainers);
 		Collections.reverse(reversedContainerList);
@@ -164,5 +179,7 @@ public class BizApplicationLoaderImpl extends ContainerLoader {
 			}
 			Debug.logInfo("Stopped container " + loadedContainer.getName(), module);
 		}
+
+		Debug.logInfo("Unoloaded application", module);
 	}
 }

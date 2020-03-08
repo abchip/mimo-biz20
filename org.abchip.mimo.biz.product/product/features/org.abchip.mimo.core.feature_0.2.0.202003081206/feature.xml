@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.abchip.mimo.core.feature"
+      label="MIMO Core Feature"
+      version="0.2.0.202003081206"
+      provider-name="ABChip">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <plugin
+         id="org.abchip.mimo.core"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.202003081206"
+         unpack="false"/>
+
+   <plugin
+         id="org.abchip.mimo.core.base"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.202003081206"
+         unpack="false"/>
+
+   <plugin
+         id="org.abchip.mimo.core.e4"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.202003081206"
+         unpack="false"/>
+
+   <plugin
+         id="org.abchip.mimo.core.test"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.202003081206"
+         unpack="false"/>
+
+   <plugin
+         id="org.abchip.mimo.core.http"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.202003081206"
+         unpack="false"/>
+
+   <plugin
+         id="org.emfjson.jackson"
+         download-size="0"
+         install-size="0"
+         version="1.2.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.fasterxml.jackson.core.jackson-annotations"
+         download-size="0"
+         install-size="0"
+         version="2.9.2.v20180207-1730"
+         unpack="false"/>
+
+   <plugin
+         id="com.fasterxml.jackson.core.jackson-core"
+         download-size="0"
+         install-size="0"
+         version="2.9.2.v20180207-1730"
+         unpack="false"/>
+
+   <plugin
+         id="com.fasterxml.jackson.core.jackson-databind"
+         download-size="0"
+         install-size="0"
+         version="2.9.2.v20180207-1730"
+         unpack="false"/>
+
+   <plugin
+         id="org.abchip.mimo.tester"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.202003081206"
+         unpack="false"/>
+
+   <plugin
+         id="org.abchip.mimo.tester.base"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.202003081206"
+         unpack="false"/>
+
+   <plugin
+         id="org.abchip.mimo.tester.test"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.202003081206"
+         unpack="false"/>
+
+</feature>

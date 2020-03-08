@@ -8,23 +8,23 @@
 package org.abchip.mimo.biz.impl;
 
 import java.util.List;
-import org.abchip.mimo.application.impl.ApplicationComponentImpl;
 
+import org.abchip.mimo.application.impl.ApplicationComponentImpl;
 import org.abchip.mimo.biz.BizComponent;
 import org.abchip.mimo.biz.BizModule;
 import org.abchip.mimo.biz.BizPackage;
-
 import org.eclipse.emf.ecore.EClass;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Component</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Component</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizComponentImpl#getPlugin <em>Plugin</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.impl.BizComponentImpl#getBizModules <em>Biz Modules</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizComponentImpl#getModulesDir <em>Modules Dir</em>}</li>
  * </ul>
  *
  * @generated
@@ -36,8 +36,7 @@ public class BizComponentImpl extends ApplicationComponentImpl implements BizCom
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected BizComponentImpl() {
@@ -45,8 +44,7 @@ public class BizComponentImpl extends ApplicationComponentImpl implements BizCom
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -55,15 +53,13 @@ public class BizComponentImpl extends ApplicationComponentImpl implements BizCom
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected static final int ESTATIC_FEATURE_COUNT = 7;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -72,8 +68,25 @@ public class BizComponentImpl extends ApplicationComponentImpl implements BizCom
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getPlugin() {
+		return (String)eGet(BizPackage.Literals.BIZ_COMPONENT__PLUGIN, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setPlugin(String newPlugin) {
+		eSet(BizPackage.Literals.BIZ_COMPONENT__PLUGIN, newPlugin);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -82,4 +95,21 @@ public class BizComponentImpl extends ApplicationComponentImpl implements BizCom
 		return (List<BizModule>)eGet(BizPackage.Literals.BIZ_COMPONENT__BIZ_MODULES, true);
 	}
 
-} //BizComponentImpl
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getModulesDir() {
+		return (String)eGet(BizPackage.Literals.BIZ_COMPONENT__MODULES_DIR, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setModulesDir(String newModulesDir) {
+		eSet(BizPackage.Literals.BIZ_COMPONENT__MODULES_DIR, newModulesDir);
+	}
+} // BizComponentImpl

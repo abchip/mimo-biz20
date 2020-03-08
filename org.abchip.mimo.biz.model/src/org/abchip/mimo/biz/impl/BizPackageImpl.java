@@ -731,8 +731,28 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 	 * @generated
 	 */
 	@Override
+	public EAttribute getBizComponent_Plugin() {
+		return (EAttribute)bizComponentEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EReference getBizComponent_BizModules() {
-		return (EReference)bizComponentEClass.getEStructuralFeatures().get(0);
+		return (EReference)bizComponentEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getBizComponent_ModulesDir() {
+		return (EAttribute)bizComponentEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -925,7 +945,9 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 
 		// Create classes and their features
 		bizComponentEClass = createEClass(BIZ_COMPONENT);
+		createEAttribute(bizComponentEClass, BIZ_COMPONENT__PLUGIN);
 		createEReference(bizComponentEClass, BIZ_COMPONENT__BIZ_MODULES);
+		createEAttribute(bizComponentEClass, BIZ_COMPONENT__MODULES_DIR);
 
 		bizModuleEClass = createEClass(BIZ_MODULE);
 		createEAttribute(bizModuleEClass, BIZ_MODULE__NAME);
@@ -1133,7 +1155,9 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(bizComponentEClass, BizComponent.class, "BizComponent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getBizComponent_Plugin(), ecorePackage.getEString(), "plugin", null, 1, 1, BizComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getBizComponent_BizModules(), this.getBizModule(), null, "bizModules", null, 0, -1, BizComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBizComponent_ModulesDir(), ecorePackage.getEString(), "modulesDir", null, 0, 1, BizComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(bizModuleEClass, BizModule.class, "BizModule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getBizModule_Name(), ecorePackage.getEString(), "name", null, 0, 1, BizModule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
