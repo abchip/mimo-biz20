@@ -25,8 +25,11 @@ import org.apache.ofbiz.base.conversion.MiscConverters;
 import org.apache.ofbiz.base.conversion.NetConverters;
 import org.apache.ofbiz.base.conversion.NumberConverters;
 import org.apache.ofbiz.base.start.Start;
+import org.eclipse.osgi.internal.url.EquinoxFactoryManager;
+import org.eclipse.osgi.internal.url.URLStreamHandlerFactoryImpl;
 import org.osgi.framework.FrameworkUtil;
 
+@SuppressWarnings("restriction")
 public class BizEquinoxApplicationImpl extends E4EquinoxApplicationImpl {
 
 	@Override
@@ -41,21 +44,22 @@ public class BizEquinoxApplicationImpl extends E4EquinoxApplicationImpl {
 		Converters.loadContainedConverters(NetConverters.class);
 		Converters.loadContainedConverters(NumberConverters.class);
 
+		BizApplicationLoaderImpl.setApplication(application);
+
 		try {
-			Field field = URL.class.getDeclaredField("factory");
+			Field field = EquinoxFactoryManager.getField(URL.class, URLStreamHandlerFactory.class, false);
 			if (field != null) {
-				boolean isAccessible = field.isAccessible();
-
-				field.setAccessible(true);
-
-				URLStreamHandlerFactory currentFactory = (URLStreamHandlerFactory) field.get(null);
-				field.set(null, null);
+//				boolean isAccessible = field.isAccessible();
+				URLStreamHandlerFactoryImpl currentFactory = (URLStreamHandlerFactoryImpl) field.get(null);
+				
+//				field.set(null, null);
 
 				TomcatURLStreamHandlerFactory tomcatFactory = TomcatURLStreamHandlerFactory.getInstance();
-				if (currentFactory != null)
-					tomcatFactory.addUserFactory(currentFactory);
+				currentFactory.setParentFactory(tomcatFactory);
+//				if (currentFactory != null)
+//					tomcatFactory.addUserFactory(currentFactory);
 
-				field.setAccessible(isAccessible);
+//				field.setAccessible(isAccessible);
 			}
 		} catch (Exception e) {
 			throw new RuntimeException(e);

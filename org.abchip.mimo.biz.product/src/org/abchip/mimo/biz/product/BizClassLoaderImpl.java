@@ -23,7 +23,6 @@ public class BizClassLoaderImpl extends ClassLoader {
 	public Class<?> loadClass(String name) throws ClassNotFoundException {
 
 		if (name.equals("org.apache.ofbiz.base.container.ContainerLoader")) {
-			BizApplicationLoaderImpl.setApplication(application);
 			return BizApplicationLoaderImpl.class;
 		} else
 			return super.loadClass(name);

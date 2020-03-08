@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+   <extension
+         id="mimo-biz-application"
+         name="Application"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            cardinality="singleton-global"
+            thread="main"
+            visible="true">
+         <run
+               class="org.abchip.mimo.biz.product.BizEquinoxApplicationImpl">
+         </run>
+      </application>
+   </extension>
+   <extension
+         id="mimo-biz"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.abchip.mimo.biz.product.mimo-biz-application"
+            name="abchip-biz-application">
+         <property
+               name="appName"
+               value="abchip-biz-application">
+         </property>
+      </product>
+   </extension>
+</plugin>
