@@ -12,7 +12,6 @@
 	<classpathentry kind="src" path="applications/humanres/src/main/java"/>
 	<classpathentry kind="src" path="applications/content/src/main/java"/>
 	<classpathentry excluding="org/apache/ofbiz/accounting/thirdparty/cybersource/IcsPaymentServices.java|org/apache/ofbiz/accounting/thirdparty/orbital/OrbitalPaymentServices.java|org/apache/ofbiz/accounting/thirdparty/paypal/PayPalServices.java|org/apache/ofbiz/accounting/thirdparty/securepay/SecurePayPaymentServices.java|org/apache/ofbiz/accounting/thirdparty/verisign/PayflowPro.java|org/apache/ofbiz/accounting/test/FinAccountTests.java|org/apache/ofbiz/accounting/thirdparty/clearcommerce/CCServicesTest.java|org/apache/ofbiz/accounting/thirdparty/securepay/SecurePayServiceTest.java|org/apache/ofbiz/accounting/thirdparty/authorizedotnet/|org/apache/ofbiz/accounting/thirdparty/clearcommerce/|org/apache/ofbiz/accounting/thirdparty/cybersource/|org/apache/ofbiz/accounting/thirdparty/eway/|org/apache/ofbiz/accounting/thirdparty/gosoftware/|org/apache/ofbiz/accounting/thirdparty/orbital/|org/apache/ofbiz/accounting/thirdparty/paypal/|org/apache/ofbiz/accounting/thirdparty/sagepay/|org/apache/ofbiz/accounting/thirdparty/securepay/|org/apache/ofbiz/accounting/thirdparty/valuelink/|org/apache/ofbiz/accounting/thirdparty/verisign/|org/apache/ofbiz/accounting/thirdparty/worldpay/" kind="src" path="applications/accounting/src/main/java"/>
-	<classpathentry kind="con" path="GROOVY_SUPPORT"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

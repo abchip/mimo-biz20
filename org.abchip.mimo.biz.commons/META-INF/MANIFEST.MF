@@ -78,3 +78,4 @@ Export-Package: javax.jms,
  org.apache.shiro.crypto.hash,
  org.apache.shiro.util,
  org.slf4j
+Require-Bundle: org.abchip.mimo.biz.tomcat

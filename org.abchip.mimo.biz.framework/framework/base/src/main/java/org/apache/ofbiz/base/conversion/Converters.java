@@ -46,6 +46,7 @@ public class Converters {
         while (converterLoaders.hasNext()) {
             try {
                 ConverterLoader converterLoader = converterLoaders.next();
+                System.out.println(converterLoader.getClass().getName());
                 converterLoader.loadConverters();
             } catch (Exception e) {
                 Debug.logError(e, module);

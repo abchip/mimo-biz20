@@ -8,76 +8,33 @@
  */
 package org.abchip.mimo.biz.product;
 
-import java.lang.reflect.Field;
-import java.net.URL;
-import java.net.URLStreamHandlerFactory;
+import java.io.IOException;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 
 import org.abchip.mimo.application.Application;
 import org.abchip.mimo.core.e4.E4EquinoxApplicationImpl;
-import org.apache.catalina.webresources.TomcatURLStreamHandlerFactory;
-import org.apache.ofbiz.base.conversion.BooleanConverters;
-import org.apache.ofbiz.base.conversion.CollectionConverters;
-import org.apache.ofbiz.base.conversion.Converters;
-import org.apache.ofbiz.base.conversion.DateTimeConverters;
-import org.apache.ofbiz.base.conversion.JSONConverters;
-import org.apache.ofbiz.base.conversion.MiscConverters;
-import org.apache.ofbiz.base.conversion.NetConverters;
-import org.apache.ofbiz.base.conversion.NumberConverters;
 import org.apache.ofbiz.base.start.Start;
-import org.eclipse.osgi.internal.url.EquinoxFactoryManager;
-import org.eclipse.osgi.internal.url.URLStreamHandlerFactoryImpl;
-import org.osgi.framework.FrameworkUtil;
 
-@SuppressWarnings("restriction")
 public class BizEquinoxApplicationImpl extends E4EquinoxApplicationImpl {
 
 	@Override
-	protected void doStart(Application application) {
+	protected void doStart(Application application) throws IOException {
+		
+		BizApplicationUtils.loadConverters();
 
-		Converters.loadContainedConverters(org.apache.ofbiz.entity.util.Converters.class);
-		Converters.loadContainedConverters(BooleanConverters.class);
-		Converters.loadContainedConverters(CollectionConverters.class);
-		Converters.loadContainedConverters(DateTimeConverters.class);
-		Converters.loadContainedConverters(JSONConverters.class);
-		Converters.loadContainedConverters(MiscConverters.class);
-		Converters.loadContainedConverters(NetConverters.class);
-		Converters.loadContainedConverters(NumberConverters.class);
+		BizApplicationUtils.setClassLoader(application);
+		
+		BizApplicationUtils.setURLStreamHandlerFactory();
+		
+		Path workPath = Paths.get(application.getPaths().getWork(), "ofbiz");		
+		BizApplicationUtils.copyToWork(application, workPath);
+		
+		
+		System.setProperty("ofbiz.home", workPath.toString());
+		System.setProperty("ofbiz.log.dir", application.getPaths().getLogs());
+		System.setProperty("derby.system.home", application.getPaths().getData() + "/derby");
 
-		BizApplicationLoaderImpl.setApplication(application);
-
-		try {
-			Field field = EquinoxFactoryManager.getField(URL.class, URLStreamHandlerFactory.class, false);
-			if (field != null) {
-//				boolean isAccessible = field.isAccessible();
-				URLStreamHandlerFactoryImpl currentFactory = (URLStreamHandlerFactoryImpl) field.get(null);
-				
-//				field.set(null, null);
-
-				TomcatURLStreamHandlerFactory tomcatFactory = TomcatURLStreamHandlerFactory.getInstance();
-				currentFactory.setParentFactory(tomcatFactory);
-//				if (currentFactory != null)
-//					tomcatFactory.addUserFactory(currentFactory);
-
-//				field.setAccessible(isAccessible);
-			}
-		} catch (Exception e) {
-			throw new RuntimeException(e);
-		}
-
-		String location = application.getContext().locateBundle(FrameworkUtil.getBundle(this.getClass()).getSymbolicName());
-		System.out.println("bundle location: " + location);
-
-		System.setProperty("ofbiz.home", Paths.get(location).getParent().toString());
-
-		ClassLoader originalLoader = Thread.currentThread().getContextClassLoader();
-
-		try {
-			Thread.currentThread().setContextClassLoader(new BizClassLoaderImpl(originalLoader, application));
-
-			Start.main(new String[0]);
-		} finally {
-			Thread.currentThread().setContextClassLoader(originalLoader);
-		}
+		Start.main(new String[0]);
 	}
 }

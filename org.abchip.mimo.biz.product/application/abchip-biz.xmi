@@ -8,7 +8,6 @@
     xmlns:mimo-ctx="http://www.abchip.org/mimo/context"
     xmlns:mimo-resource="http://www.abchip.org/mimo/resource"
     xsi:schemaLocation="http://www.abchip.org/mimo/biz ../../org.abchip.mimo.biz.model/model/biz.ecore http://www.abchip.org/mimo/application ../../org.abchip.mimo.core/model/mimo.ecore#//application http://www.abchip.org/mimo/context ../../org.abchip.mimo.core/model/mimo.ecore#//context http://www.abchip.org/mimo/resource ../../org.abchip.mimo.core/model/mimo.ecore#//resource"
-    homeLocation="/mimo/abchip-biz"
     name="ofbiz-application"
     text="OFBiz Application">
   <components
@@ -167,6 +166,22 @@
         name="webtools"/>
   </components>
   <components
+      xsi:type="biz:BizComponent"
+      name="Themes"
+      plugin="org.abchip.mimo.biz.themes"
+      modulesDir="themes">
+    <bizModules
+        name="bluelight"/>
+    <bizModules
+        name="common-theme"/>
+    <bizModules
+        name="flatgrey"/>
+    <bizModules
+        name="rainbowstone"/>
+    <bizModules
+        name="tomahawk"/>
+  </components>
+  <components
       name="Applications">
     <modules
         name="Commands">
@@ -236,6 +251,9 @@
   <contextDescription
       id="abchip-biz"
       user="mimo"/>
+  <paths data="/mimo/abchip-biz/data"
+      logs="/mimo/abchip-biz/logs"
+      work="/mimo/abchip-biz"/>
   <resourceMapping>
     <rules xsi:type="mimo-resource:ResourceMappingRuleByPackage"
         provider="*OFBIZ"

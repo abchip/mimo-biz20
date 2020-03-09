@@ -8,6 +8,11 @@
  */
 package org.abchip.mimo.biz.product;
 
+import java.io.IOException;
+import java.net.URL;
+import java.util.Collections;
+import java.util.Enumeration;
+
 import org.abchip.mimo.application.Application;
 
 public class BizClassLoaderImpl extends ClassLoader {
@@ -39,7 +44,35 @@ public class BizClassLoaderImpl extends ClassLoader {
 			else if (name.startsWith("org.apache.ofbiz"))
 				return this.application.getContext().loadClass(name);
 			else
-				throw e;
+				return this.application.getContext().loadClass(name);
 		}
+	}
+
+	@Override
+	protected URL findResource(String name) {
+		if (!name.startsWith("META-INF/services"))
+			return super.findResource(name);
+
+		URL url = super.findResource(name);
+		if (url == null)
+			try {
+				url = application.getContext().getResource(name);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+
+		return url;
+	}
+
+	@Override
+	protected Enumeration<URL> findResources(String name) throws IOException {
+		if (!name.startsWith("META-INF/services"))
+			return super.findResources(name);
+
+		Enumeration<URL> urls = super.findResources(name);
+		if (urls.hasMoreElements())
+			return urls;
+
+		return Collections.enumeration(application.getContext().getResources(name));
 	}
 }

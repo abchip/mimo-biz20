@@ -17,8 +17,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.abchip.mimo.application.Application;
 import org.abchip.mimo.application.ApplicationComponent;
@@ -28,6 +30,7 @@ import org.abchip.mimo.biz.BizModule;
 import org.apache.ofbiz.base.component.ComponentConfig;
 import org.apache.ofbiz.base.component.ComponentException;
 import org.apache.ofbiz.base.container.Container;
+import org.apache.ofbiz.base.container.ContainerConfig;
 import org.apache.ofbiz.base.container.ContainerException;
 import org.apache.ofbiz.base.start.Classpath;
 import org.apache.ofbiz.base.start.Config;
@@ -36,6 +39,7 @@ import org.apache.ofbiz.base.start.StartupException;
 import org.apache.ofbiz.base.start.StartupLoader;
 import org.apache.ofbiz.base.util.Debug;
 import org.apache.ofbiz.base.util.FileUtil;
+import org.apache.ofbiz.base.util.UtilValidate;
 
 import edu.emory.mathcs.backport.java.util.Collections;
 
@@ -74,13 +78,12 @@ public class BizApplicationLoaderImpl implements StartupLoader {
 			for (BizModule bizModule : bizComponent.getBizModules()) {
 				try {
 					Path moduleLocation = Paths.get(componentLocation, bizComponent.getModulesDir(), bizModule.getName().toLowerCase());
-					Debug.logInfo("Loading module : " + bizModule.getName() + " from location: " + moduleLocation, module);
+					Debug.logInfo("Load module : " + bizModule.getName() + " from location: " + moduleLocation, module);
 
 					ComponentConfig componentConfig = ComponentConfig.getComponentConfig(bizModule.getName(), moduleLocation.toString());
 					if (componentConfig.enabled())
 						componentsClassPath.add(buildClasspathFromComponentConfig(componentConfig));
 
-					Debug.logInfo("Loaded module : " + bizModule.getName(), module);
 				} catch (IOException | ComponentException e) {
 					throw new StartupException(e);
 				}
@@ -89,13 +92,14 @@ public class BizApplicationLoaderImpl implements StartupLoader {
 			Debug.logInfo("Loaded component : " + bizComponent.getName(), module);
 		}
 
-		try {
-			loadClassPathForAllComponents(componentsClassPath);
-		} catch (ContainerException e) {
-			throw new StartupException(e);
-		}
+		loadClassPathForAllComponents(componentsClassPath);
 
-		// Start all containers loaded from above steps
+		List<String> loaders = config.loaders;
+
+		List<ContainerConfig.Configuration> componentContainerConfigs = filterContainersHavingMatchingLoaders(loaders, ComponentConfig.getAllConfigurations());
+		loadedContainers.addAll(loadContainersFromConfigurations(componentContainerConfigs, config, ofbizCommands));
+
+		// Start all containers
 		startLoadedContainers();
 
 		Debug.logInfo("Loaded application: " + application.getName(), module);
@@ -131,7 +135,7 @@ public class BizApplicationLoaderImpl implements StartupLoader {
 	}
 
 	@SuppressWarnings("resource")
-	private void loadClassPathForAllComponents(List<Classpath> componentsClassPath) throws ContainerException {
+	private void loadClassPathForAllComponents(List<Classpath> componentsClassPath) {
 		List<URL> allComponentUrls = new ArrayList<>();
 		for (Classpath classPath : componentsClassPath) {
 			try {
@@ -144,6 +148,58 @@ public class BizApplicationLoaderImpl implements StartupLoader {
 		URL[] componentURLs = allComponentUrls.toArray(new URL[allComponentUrls.size()]);
 		URLClassLoader classLoader = new URLClassLoader(componentURLs, Thread.currentThread().getContextClassLoader());
 		Thread.currentThread().setContextClassLoader(classLoader);
+	}
+
+	private List<ContainerConfig.Configuration> filterContainersHavingMatchingLoaders(List<String> loaders, Collection<ContainerConfig.Configuration> containerConfigs) {
+		return containerConfigs.stream().filter(
+				containerCfg -> UtilValidate.isEmpty(containerCfg.loaders) && UtilValidate.isEmpty(loaders) || containerCfg.loaders.stream().anyMatch(loader -> loaders.contains(loader)))
+				.collect(Collectors.toList());
+	}
+
+	private List<Container> loadContainersFromConfigurations(List<ContainerConfig.Configuration> containerConfigs, Config config, List<StartupCommand> ofbizCommands) throws StartupException {
+
+		List<Container> loadContainers = new ArrayList<>();
+		for (ContainerConfig.Configuration containerCfg : containerConfigs) {
+			Debug.logInfo("Loading container: " + containerCfg.name, module);
+			Container tmpContainer = loadContainer(config.containerConfig, containerCfg, ofbizCommands);
+			loadContainers.add(tmpContainer);
+			Debug.logInfo("Loaded container: " + containerCfg.name, module);
+		}
+		return loadContainers;
+	}
+
+	private Container loadContainer(String configFile, ContainerConfig.Configuration containerCfg, List<StartupCommand> ofbizCommands) throws StartupException {
+		// load the container class
+		ClassLoader loader = Thread.currentThread().getContextClassLoader();
+		Class<?> containerClass;
+		try {
+			containerClass = loader.loadClass(containerCfg.className);
+		} catch (ClassNotFoundException e) {
+			throw new StartupException("Cannot locate container class", e);
+		}
+		if (containerClass == null) {
+			throw new StartupException("Component container class not loaded");
+		}
+
+		// create a new instance of the container object
+		Container containerObj;
+		try {
+			containerObj = (Container) containerClass.getDeclaredConstructor().newInstance();
+		} catch (ReflectiveOperationException e) {
+			throw new StartupException("Cannot create " + containerCfg.name, e);
+		}
+		if (containerObj == null) {
+			throw new StartupException("Unable to create instance of component container");
+		}
+
+		// initialize the container object
+		try {
+			containerObj.init(ofbizCommands, containerCfg.name, configFile);
+		} catch (ContainerException e) {
+			throw new StartupException("Cannot init() " + containerCfg.name, e);
+		}
+
+		return containerObj;
 	}
 
 	private void startLoadedContainers() throws StartupException {

@@ -24,6 +24,7 @@ import javax.servlet.ServletRegistration;
 
 import org.abchip.mimo.application.Application;
 import org.abchip.mimo.application.ApplicationManager;
+import org.abchip.mimo.application.ApplicationPaths;
 import org.abchip.mimo.context.ContextRoot;
 import org.abchip.mimo.core.base.app.BaseApplicationManagerImpl;
 import org.abchip.mimo.core.e4.E4ContextRootImpl;
@@ -110,6 +111,7 @@ public final class MIMOStarter {
 			@SuppressWarnings("resource")
 			ContextRoot contextApplication = new E4ContextRootImpl(bundleContext, application.getContextDescription());
 			contextApplication.set(Application.class, application);
+			contextApplication.set(ApplicationPaths.class, application.getPaths());
 			contextApplication.set(ContextRoot.class, contextApplication);
 			contextApplication.set(HttpService.class, new TomcatHttpService(servletContext));
 
