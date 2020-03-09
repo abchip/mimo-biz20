@@ -182,7 +182,10 @@
         name="tomahawk"/>
   </components>
   <components
-      name="Applications">
+      xsi:type="biz:BizComponent"
+      name="Applications"
+      plugin="org.abchip.mimo.biz.applications"
+      modulesDir="applications">
     <modules
         name="Commands">
       <services
@@ -192,9 +195,31 @@
           xsi:type="mimo-app:ServiceCommandProvider"
           className="org.abchip.mimo.biz.base.command.FiCCommandProviderImpl"/>
     </modules>
+    <bizModules
+        name="datamodel"/>
+    <bizModules
+        name="party"/>
+    <bizModules
+        name="securityext"/>
+    <bizModules
+        name="content"/>
+    <bizModules
+        name="workeffort"/>
+    <bizModules
+        name="product"/>
+    <bizModules
+        name="manufacturing"/>
+    <bizModules
+        name="accounting"/>
+    <bizModules
+        name="humanres"/>
+    <bizModules
+        name="order"/>
+    <bizModules
+        name="marketing"/>
+    <bizModules
+        name="commonext"/>
   </components>
-  <components
-      name="Plugins"/>
   <components
       name="Connectors"
       status="STP">
