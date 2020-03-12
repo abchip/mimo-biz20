@@ -157,6 +157,10 @@ public class OFBizCommandUtils {
 		URL url = null;
 		while (urlListIt.hasNext()) {
 			url = urlListIt.next();
+			
+			if(url.toString().endsWith("RainbowStoneThemeData.xml"))
+				continue;
+			
 			try {
 				List<GenericValue> listEntity = delegator.readXmlDocument(url);
 				createContainer(context, url, listEntity, filter);

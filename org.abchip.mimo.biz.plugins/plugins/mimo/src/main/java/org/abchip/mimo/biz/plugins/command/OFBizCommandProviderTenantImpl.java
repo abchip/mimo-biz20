@@ -57,13 +57,13 @@ public class OFBizCommandProviderTenantImpl extends BaseCommandProviderImpl {
 		}
 		
 		try {
-//			OFBizCommandUtils.exportReaderFiltered(context, delegator, "tenant");
+			OFBizCommandUtils.exportReaderFiltered(context, delegator, "tenant");
 			OFBizCommandUtils.exportReaderFiltered(context, delegator, "seed");
 			OFBizCommandUtils.exportReaderFiltered(context, delegator, "seed-initial");
-//			OFBizCommandUtils.exportReaderFiltered(context, delegator, "demo");
-//			OFBizCommandUtils.exportReaderFiltered(context, delegator, "ext");
-//			OFBizCommandUtils.exportReaderFiltered(context, delegator, "ext-test");
-//			OFBizCommandUtils.exportReaderFiltered(context, delegator, "ext-demo");
+			OFBizCommandUtils.exportReaderFiltered(context, delegator, "demo");
+			OFBizCommandUtils.exportReaderFiltered(context, delegator, "ext");
+			OFBizCommandUtils.exportReaderFiltered(context, delegator, "ext-test");
+			OFBizCommandUtils.exportReaderFiltered(context, delegator, "ext-demo");
 			
 		} catch (Exception e) {
 			e.printStackTrace();
