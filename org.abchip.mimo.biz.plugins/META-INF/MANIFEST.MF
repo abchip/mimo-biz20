@@ -36,5 +36,4 @@ Export-Package: org.abchip.mimo.biz.plugins,
  org.abchip.mimo.biz.plugins.entity,
  org.abchip.mimo.biz.plugins.party,
  org.abchip.mimo.biz.plugins.paymentGateway,
- org.abchip.mimo.biz.plugins.product,
- org.abchip.mimo.biz.plugins.seed
+ org.abchip.mimo.biz.plugins.product

@@ -31,9 +31,4 @@ under the License.
 			optional="true" />			
 	</service>    	
 
-	<service name="exportReaders" engine="java"
-		location="org.abchip.mimo.biz.plugins.seed.SeedServices" invoke="exportReaders">
-		<description>Export OFBiz Readers</description>
-	</service>    	
-
 </services>

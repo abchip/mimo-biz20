@@ -17,8 +17,12 @@ import org.abchip.mimo.biz.party.party.Person;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.base.BaseCommandProviderImpl;
 import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceManager;
+import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.resource.ResourceWriter;
+import org.apache.ofbiz.entity.Delegator;
+import org.apache.ofbiz.entity.DelegatorFactory;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
 
 public class OFBizCommandProviderTenantImpl extends BaseCommandProviderImpl {
@@ -30,6 +34,42 @@ public class OFBizCommandProviderTenantImpl extends BaseCommandProviderImpl {
 		this.login(interpreter.nextArgument());
 	}
 
+	@SuppressWarnings("resource")
+	public void _convertSeeds(CommandInterpreter interpreter) throws Exception {
+		Context context = this.getContext();
+		/* Readers list
+		  <read-data reader-name="tenant"/>
+		  <read-data reader-name="seed"/>
+		  <read-data reader-name="seed-initial"/> 
+		  <read-data reader-name="demo"/> 
+		  <read-data reader-name="ext"/> 
+		  <read-data reader-name="ext-test"/> 
+		  <read-data reader-name="ext-demo"/>
+		 */
+		Delegator delegator = DelegatorFactory.getDelegator(null);
+		ResourceReader<EntityIdentifiable> entityreader = resourceManager.getResourceReader(context, "EntityContainer");
+		ResourceWriter<EntityIdentifiable> entityWriter = resourceManager.getResourceWriter(context, "EntityContainer");
+		
+		try (EntityIterator<EntityIdentifiable> entityIterator = entityreader.find()){
+			while (entityIterator.hasNext()) {
+				entityWriter.delete(entityIterator.next());
+			}
+		}
+		
+		try {
+//			OFBizCommandUtils.exportReaderFiltered(context, delegator, "tenant");
+			OFBizCommandUtils.exportReaderFiltered(context, delegator, "seed");
+			OFBizCommandUtils.exportReaderFiltered(context, delegator, "seed-initial");
+//			OFBizCommandUtils.exportReaderFiltered(context, delegator, "demo");
+//			OFBizCommandUtils.exportReaderFiltered(context, delegator, "ext");
+//			OFBizCommandUtils.exportReaderFiltered(context, delegator, "ext-test");
+//			OFBizCommandUtils.exportReaderFiltered(context, delegator, "ext-demo");
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
 	@SuppressWarnings("resource")
 	public void _createMaster(CommandInterpreter interpreter) throws Exception {
 
