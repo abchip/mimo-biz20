@@ -113,6 +113,7 @@ public class BizApplicationUtils {
 				FileUtils.copyDirectory(moduleLocation.toFile(), moduleDest.toFile());
 
 				// remove src
+				FileUtils.deleteDirectory(moduleDest.resolve("documents").toFile());
 				FileUtils.deleteDirectory(moduleDest.resolve("src").toFile());
 			}
 

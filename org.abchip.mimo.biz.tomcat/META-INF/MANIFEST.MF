@@ -7,7 +7,6 @@ Bundle-Vendor: ABChip
 Automatic-Module-Name: org.abchip.mimo.biz.tomcat
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ClassPath: .,
- lib/tomcat-annotations-api-9.0.31.jar,
  lib/tomcat-api-9.0.31.jar,
  lib/tomcat-catalina-9.0.31.jar,
  lib/tomcat-catalina-ha-9.0.31.jar,
@@ -22,11 +21,9 @@ Bundle-ClassPath: .,
  lib/tomcat-servlet-api-9.0.31.jar,
  lib/tomcat-tribes-9.0.31.jar,
  lib/tomcat-util-9.0.31.jar,
- lib/tomcat-util-scan-9.0.31.jar
-Export-Package: javax.annotation,
- javax.annotation.security,
- javax.annotation.sql,
- javax.el,
+ lib/tomcat-util-scan-9.0.31.jar,
+ lib/tomcat-annotations-api-9.0.31.jar
+Export-Package: javax.el,
  javax.security.auth.message,
  javax.security.auth.message.callback,
  javax.security.auth.message.config,
