@@ -112,36 +112,39 @@ public class OFBizCommandUtils {
 	}
 
 	public static void loadSeeds(Context context, String seedName, String tenantId, boolean update) {
-
 		ResourceManager resourceManager = context.get(ResourceManager.class);
+		try {
+			for (URL tableURL : context.getResources(OFBizCommandUtils.class, OFBizConstants.SEEDS_PATH)) {
+				for (File file : new File(tableURL.getFile()).listFiles()) {
+					if (!file.getName().equals(seedName + ".xmi"))
+						continue;
+					try (InputStream inputStream = Files.newInputStream(Paths.get(file.getAbsolutePath()))) {
 
-		for (File file : new File(OFBizConstants.SEEDS_PATH).listFiles()) {
+						XMIResource resource = new XMIResourceImpl();
+						resource.load(inputStream, null);
+						EObject eObject = resource.getContents().get(0);
+						EntityContainer entityContainer = (EntityContainer) eObject;
+						if (entityContainer == null)
+							continue;
 
-			if (!file.getName().equals(seedName + ".xmi"))
-				continue;
+						for (EntityIdentifiable entityIdentifiable : entityContainer.getContents()) {
+							try {
+								ResourceWriter<EntityIdentifiable> entityWriter = resourceManager.getResourceWriter(context, entityIdentifiable.isa(), tenantId);
+								entityWriter.create(entityIdentifiable, update);
+							} catch (Exception e) {
+								System.err.println(e.getMessage());
+							}
+						}
 
-			try (InputStream inputStream = Files.newInputStream(Paths.get(file.getAbsolutePath()))) {
-
-				XMIResource resource = new XMIResourceImpl();
-				resource.load(inputStream, null);
-				EObject eObject = resource.getContents().get(0);
-				EntityContainer entityContainer = (EntityContainer) eObject;
-				if (entityContainer == null)
-					continue;
-
-				for (EntityIdentifiable entityIdentifiable : entityContainer.getContents()) {
-					try {
-						ResourceWriter<EntityIdentifiable> entityWriter = resourceManager.getResourceWriter(context, entityIdentifiable.isa(), tenantId);
-						entityWriter.create(entityIdentifiable, update);
-					} catch (Exception e) {
-						System.err.println(e.getMessage());
+					} catch (IOException e) {
+						e.printStackTrace();
+						continue;
 					}
 				}
-
-			} catch (IOException e) {
-				e.printStackTrace();
-				continue;
 			}
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 
 		System.out.println(seedName);

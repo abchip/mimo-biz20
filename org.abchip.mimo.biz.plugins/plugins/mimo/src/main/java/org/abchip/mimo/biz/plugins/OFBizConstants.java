@@ -10,7 +10,8 @@ package org.abchip.mimo.biz.plugins;
 
 public class OFBizConstants {
 
-	public static String SEEDS_PATH = "plugins/mimo/config/seeds";
+//	public static String SEEDS_PATH = "plugins/mimo/config/seeds";
+	public static String SEEDS_PATH = "application/seeds";
 	public static String DERBY_SEED = "plugins/mimo/config/derby";
 	public static String DERBY_PATH = "runtime/data/derby";
 	
