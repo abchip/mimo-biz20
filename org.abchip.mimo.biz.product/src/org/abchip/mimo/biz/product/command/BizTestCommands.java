@@ -6,7 +6,7 @@
  *  http://www.eclipse.org/legal/epl-v10.html
  *
  */
-package org.abchip.mimo.biz.plugins.command;
+package org.abchip.mimo.biz.product.command;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -82,7 +82,7 @@ import com.stripe.Stripe;
 import com.stripe.model.PaymentIntent;
 import com.stripe.model.PaymentMethod;
 
-public class OFBizCommandProviderImpl extends BaseCommandProviderImpl {
+public class BizTestCommands extends BaseCommandProviderImpl {
 
 	@Inject
 	private ResourceManager resourceManager;

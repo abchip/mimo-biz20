@@ -6,14 +6,12 @@
  *  http://www.eclipse.org/legal/epl-v10.html
  *
  */
-package org.abchip.mimo.biz.plugins.command;
+package org.abchip.mimo.biz.product.command;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -41,11 +39,10 @@ import org.apache.commons.io.FileUtils;
 import org.apache.ofbiz.entity.Delegator;
 import org.apache.ofbiz.entity.GenericValue;
 import org.apache.ofbiz.entity.util.EntityDataLoader;
-import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.xmi.XMIResource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
 
-public class OFBizCommandUtils {
+public class BizCommandUtils {
 
 	public static void createTenant(Context context, String tenantId, String tenantName, boolean clean) {
 
@@ -114,34 +111,32 @@ public class OFBizCommandUtils {
 	public static void loadSeeds(Context context, String seedName, String tenantId, boolean update) {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 		try {
-			for (URL tableURL : context.getResources(OFBizCommandUtils.class, OFBizConstants.SEEDS_PATH)) {
-				for (File file : new File(tableURL.getFile()).listFiles()) {
-					if (!file.getName().equals(seedName + ".xmi"))
-						continue;
-					try (InputStream inputStream = Files.newInputStream(Paths.get(file.getAbsolutePath()))) {
 
-						XMIResource resource = new XMIResourceImpl();
-						resource.load(inputStream, null);
-						EObject eObject = resource.getContents().get(0);
-						EntityContainer entityContainer = (EntityContainer) eObject;
-						if (entityContainer == null)
-							continue;
+			URL seedUrl = context.getResource(BizCommandUtils.class, OFBizConstants.SEEDS_PATH + "/" + seedName + ".xmi");
+			if(seedUrl == null)
+				return;
+			
+			try (InputStream inputStream = seedUrl.openStream()) {
 
-						for (EntityIdentifiable entityIdentifiable : entityContainer.getContents()) {
-							try {
-								ResourceWriter<EntityIdentifiable> entityWriter = resourceManager.getResourceWriter(context, entityIdentifiable.isa(), tenantId);
-								entityWriter.create(entityIdentifiable, update);
-							} catch (Exception e) {
-								System.err.println(e.getMessage());
-							}
+				XMIResource resource = new XMIResourceImpl();
+				resource.load(inputStream, null);
+				if (!resource.getContents().isEmpty()) {
+					EntityContainer entityContainer = (EntityContainer) resource.getContents().get(0);
+
+					for (EntityIdentifiable entityIdentifiable : entityContainer.getContents()) {
+						try {
+							ResourceWriter<EntityIdentifiable> entityWriter = resourceManager.getResourceWriter(context, entityIdentifiable.isa(), tenantId);
+							entityWriter.create(entityIdentifiable, update);
+						} catch (Exception e) {
+							System.err.println(e.getMessage());
 						}
-
-					} catch (IOException e) {
-						e.printStackTrace();
-						continue;
 					}
 				}
+
+			} catch (IOException e) {
+				e.printStackTrace();
 			}
+
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -149,8 +144,9 @@ public class OFBizCommandUtils {
 
 		System.out.println(seedName);
 	}
-	
+
 	public static void exportReaderFiltered(Context context, Delegator delegator, String filter) {
+
 		LinkedList<String> readerNames = new LinkedList<String>();
 		readerNames.add(filter);
 		String helperName = delegator.getGroupHelperName("org.apache.ofbiz");
@@ -160,21 +156,21 @@ public class OFBizCommandUtils {
 		URL url = null;
 		while (urlListIt.hasNext()) {
 			url = urlListIt.next();
-			
-			if(url.toString().endsWith("RainbowStoneThemeData.xml"))
+
+			if (url.toString().endsWith("RainbowStoneThemeData.xml"))
 				continue;
-			
+
 			try {
 				List<GenericValue> listEntity = delegator.readXmlDocument(url);
 				createContainer(context, url, listEntity, filter);
 			} catch (Exception e) {
-				System.err.println("Problem with xml " + url  + " " + e.getMessage());
+				System.err.println("Problem with xml " + url + " " + e.getMessage());
 			}
 		}
 	}
 
 	@SuppressWarnings({ "unchecked" })
-	private static <E extends EntityIdentifiable> void createContainer(Context context, URL url, List<GenericValue> listEntity, String prefix) {
+	private static void createContainer(Context context, URL url, List<GenericValue> listEntity, String prefix) {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		Iterator<GenericValue> listEntityIt = listEntity.iterator();
@@ -186,16 +182,16 @@ public class OFBizCommandUtils {
 		container.setName(containerName);
 		while (listEntityIt.hasNext()) {
 			GenericValue genericValue = listEntityIt.next();
-			E entity = null;
+			EntityIdentifiable entityIdentifiable = null;
 			try {
-				entity = EntityUtils.toEntity((Frame<E>) resourceManager.getFrame(context, genericValue.getEntityName()), genericValue);
+				entityIdentifiable = EntityUtils.toEntity((Frame<EntityIdentifiable>) resourceManager.getFrame(context, genericValue.getEntityName()), genericValue);
 			} catch (Exception e) {
 				System.err.println("Error in ecore model not find entity " + genericValue.getEntityName());
 				continue;
 			}
-			container.getContents().add(entity);
+			container.getContents().add(entityIdentifiable);
 		}
-		ResourceWriter<EntityIdentifiable> entityWriter = resourceManager.getResourceWriter(context, "EntityContainer");
+		ResourceWriter<EntityContainer> entityWriter = resourceManager.getResourceWriter(context, EntityContainer.class);
 		entityWriter.create(container, true);
-	}	
+	}
 }

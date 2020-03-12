@@ -109,10 +109,13 @@
         name="Commands">
       <services
           xsi:type="mimo-app:ServiceCommandProvider"
-          className="org.abchip.mimo.biz.plugins.command.OFBizCommandProviderImpl"/>
+          className="org.abchip.mimo.biz.product.command.BizTestCommands"/>
       <services
           xsi:type="mimo-app:ServiceCommandProvider"
-          className="org.abchip.mimo.biz.plugins.command.OFBizCommandProviderTenantImpl"/>
+          className="org.abchip.mimo.biz.product.command.BizTenantCommands"/>
+      <services
+          xsi:type="mimo-app:ServiceCommandProvider"
+          className="org.abchip.mimo.biz.product.command.BizSeedCommands"/>
     </modules>
     <modules
         name="Authentication">
