@@ -11,11 +11,11 @@ Require-Bundle: org.eclipse.equinox.app,
  org.abchip.mimo.core.e4,
  org.abchip.mimo.biz.model,
  org.abchip.mimo.biz.base,
- org.abchip.mimo.biz.framework,
  org.abchip.mimo.biz.applications,
  org.abchip.mimo.biz.plugins,
  org.abchip.mimo.biz.themes,
- org.abchip.mimo.biz.tomcat
+ org.abchip.mimo.biz.tomcat,
+ org.eclipse.osgi
 Import-Package: org.eclipse.osgi.internal.url,
  org.osgi.framework
 Export-Package: org.abchip.mimo.biz.product

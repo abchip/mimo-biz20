@@ -29,50 +29,37 @@ public class BizClassLoaderImpl extends ClassLoader {
 
 		if (name.equals("org.apache.ofbiz.base.container.ContainerLoader")) {
 			return BizApplicationLoaderImpl.class;
-		} else
+		} else {
 			return super.loadClass(name);
+		}
 	}
 
 	@Override
 	public Class<?> findClass(String name) throws ClassNotFoundException {
 
 		try {
-			return super.findClass(name);
-		} catch (ClassNotFoundException e) {
-			if (name.startsWith("org.abchip.mimo.biz"))
-				return this.application.getContext().loadClass(name);
-			else if (name.startsWith("org.apache.ofbiz"))
-				return this.application.getContext().loadClass(name);
-			else
-				return this.application.getContext().loadClass(name);
+			Class<?> klass = super.findClass(name);
+			if(klass != null)
+				return klass;
 		}
+		catch(Exception e) {			
+		}
+		
+		return this.application.getContext().loadClass(name);
 	}
 
 	@Override
 	protected URL findResource(String name) {
-		if (!name.startsWith("META-INF/services"))
-			return super.findResource(name);
 
-		URL url = super.findResource(name);
-		if (url == null)
-			try {
-				url = application.getContext().getResource(name);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-
-		return url;
+		try {
+			return application.getContext().getResource(name);
+		} catch (IOException e) {
+			return null;
+		}
 	}
 
 	@Override
 	protected Enumeration<URL> findResources(String name) throws IOException {
-		if (!name.startsWith("META-INF/services"))
-			return super.findResources(name);
-
-		Enumeration<URL> urls = super.findResources(name);
-		if (urls.hasMoreElements())
-			return urls;
-
 		return Collections.enumeration(application.getContext().getResources(name));
 	}
 }

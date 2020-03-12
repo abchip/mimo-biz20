@@ -21,16 +21,15 @@ public class BizEquinoxApplicationImpl extends E4EquinoxApplicationImpl {
 	@Override
 	protected void doStart(Application application) throws IOException {
 		
-		BizApplicationUtils.loadConverters();
-
 		BizApplicationUtils.setClassLoader(application);
 		
+		BizApplicationUtils.loadConverters();
+		
 		BizApplicationUtils.setURLStreamHandlerFactory();
-		
-		Path workPath = Paths.get(application.getPaths().getWork(), "ofbiz");		
+
+		Path workPath = Paths.get(application.getPaths().getWork(), "ofbiz");
 		BizApplicationUtils.copyToWork(application, workPath);
-		
-		
+
 		System.setProperty("ofbiz.home", workPath.toString());
 		System.setProperty("ofbiz.log.dir", application.getPaths().getLogs());
 		System.setProperty("derby.system.home", application.getPaths().getData() + "/derby");

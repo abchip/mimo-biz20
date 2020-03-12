@@ -20,16 +20,10 @@ import org.abchip.mimo.application.ApplicationComponent;
 import org.abchip.mimo.application.ComponentStatus;
 import org.abchip.mimo.biz.BizComponent;
 import org.abchip.mimo.biz.BizModule;
+import org.abchip.mimo.biz.plugins.entity.EntityConverter;
 import org.apache.catalina.webresources.TomcatURLStreamHandlerFactory;
 import org.apache.commons.io.FileUtils;
-import org.apache.ofbiz.base.conversion.BooleanConverters;
-import org.apache.ofbiz.base.conversion.CollectionConverters;
 import org.apache.ofbiz.base.conversion.Converters;
-import org.apache.ofbiz.base.conversion.DateTimeConverters;
-import org.apache.ofbiz.base.conversion.JSONConverters;
-import org.apache.ofbiz.base.conversion.MiscConverters;
-import org.apache.ofbiz.base.conversion.NetConverters;
-import org.apache.ofbiz.base.conversion.NumberConverters;
 import org.apache.ofbiz.base.util.Debug;
 import org.eclipse.osgi.internal.url.EquinoxFactoryManager;
 import org.eclipse.osgi.internal.url.URLStreamHandlerFactoryImpl;
@@ -40,14 +34,18 @@ public class BizApplicationUtils {
 	private static final String module = "BizApplication";
 
 	public static void loadConverters() {
-		Converters.loadContainedConverters(Converters.class);
-		Converters.loadContainedConverters(BooleanConverters.class);
-		Converters.loadContainedConverters(CollectionConverters.class);
-		Converters.loadContainedConverters(DateTimeConverters.class);
-		Converters.loadContainedConverters(JSONConverters.class);
-		Converters.loadContainedConverters(MiscConverters.class);
-		Converters.loadContainedConverters(NetConverters.class);
-		Converters.loadContainedConverters(NumberConverters.class);
+		/*
+		 * Converters.loadContainedConverters(Converters.class);
+		 * Converters.loadContainedConverters(BooleanConverters.class);
+		 * Converters.loadContainedConverters(CollectionConverters.class);
+		 * Converters.loadContainedConverters(DateTimeConverters.class);
+		 * Converters.loadContainedConverters(JSONConverters.class);
+		 * Converters.loadContainedConverters(MiscConverters.class);
+		 * Converters.loadContainedConverters(NetConverters.class);
+		 * Converters.loadContainedConverters(NumberConverters.class);
+		 */
+
+		Converters.registerConverter(new EntityConverter<>());
 	}
 
 	public static void setURLStreamHandlerFactory() {
@@ -68,8 +66,25 @@ public class BizApplicationUtils {
 	public static void setClassLoader(Application application) {
 		BizApplicationLoaderImpl.setApplication(application);
 
-		ClassLoader originalLoader = Thread.currentThread().getContextClassLoader();
-		Thread.currentThread().setContextClassLoader(new BizClassLoaderImpl(originalLoader, application));
+		ClassLoader bizLoader = new BizClassLoaderImpl(Thread.currentThread().getContextClassLoader(), application);
+
+		Thread.currentThread().setContextClassLoader(bizLoader);
+
+/*		try {
+			EquinoxBundle bizBundle = (EquinoxBundle) FrameworkUtil.getBundle(DispatchContext.class);
+
+			ModuleWiring wiring = bizBundle.getModule().getCurrentRevision().getWiring();
+			if (wiring != null) {
+				BundleLoader bundleLoader = (BundleLoader) wiring.getModuleLoader();
+				Field field = bundleLoader.getClass().getDeclaredField("parent");
+				field.setAccessible(true);
+				field.set(bundleLoader, bizLoader);
+			}
+
+			bizBundle.toString();
+		} catch (NoSuchFieldException | SecurityException | IllegalArgumentException | IllegalAccessException e) {
+			e.printStackTrace();
+		}*/ 
 	}
 
 	public static void copyToWork(Application application, Path workPath) throws IOException {
@@ -96,7 +111,7 @@ public class BizApplicationUtils {
 
 				Path moduleDest = componentPath.resolve(bizModule.getName().toLowerCase());
 				FileUtils.copyDirectory(moduleLocation.toFile(), moduleDest.toFile());
-				
+
 				// remove src
 				FileUtils.deleteDirectory(moduleDest.resolve("src").toFile());
 			}

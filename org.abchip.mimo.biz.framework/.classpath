@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry exported="true" kind="lib" path="lib/xercesImpl-2.9.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/jackson-annotations-2.9.7.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/groovy-all-2.4.13.jar" sourcepath="lib/groovy-all-2.4.13-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/activation-1.1.jar"/>
@@ -75,7 +76,6 @@
 	<classpathentry exported="true" kind="lib" path="lib/tika-parsers-1.20.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/ws-commons-util-1.0.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/wsdl4j-1.6.3.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/xercesImpl-2.9.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/xmlgraphics-commons-2.3.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/xmlpull-1.1.3.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/xmlrpc-client-3.1.3.jar"/>
@@ -95,7 +95,6 @@
 	<classpathentry excluding="org/apache/ofbiz/service/test/|org/apache/ofbiz/service/testtools/" kind="src" path="framework/service/src/main/java"/>
 	<classpathentry kind="src" path="framework/start/src/main/java"/>
 	<classpathentry excluding="org/apache/ofbiz/testtools/EntityXmlAssertTest.java|org/apache/ofbiz/testtools/GroovyScriptTestCase.java|org/apache/ofbiz/testtools/" kind="src" path="framework/testtools/src/main/java"/>
-	<classpathentry kind="src" path="framework/webapp/src/main/java"/>
 	<classpathentry excluding="org/apache/ofbiz/webtools/artifactinfo/RunTestEvents.java" kind="src" path="framework/webtools/src/main/java"/>
 	<classpathentry excluding="org/apache/ofbiz/widget/test/" kind="src" path="framework/widget/src/main/java"/>
 	<classpathentry kind="src" path="framework/base/config"/>
@@ -103,6 +102,7 @@
 	<classpathentry kind="src" path="framework/service/dtd"/>
 	<classpathentry kind="src" path="framework/entity/dtd"/>
 	<classpathentry kind="src" path="framework/service/src/main/groovy"/>
+	<classpathentry kind="src" path="framework/webapp/src/main/java"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
