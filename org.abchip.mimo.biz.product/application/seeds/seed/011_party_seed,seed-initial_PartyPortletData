@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-portal="http://www.abchip.org/mimo/biz/common/portal" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/portal http://www.abchip.org/mimo/biz#//common/portal http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="011_party_seed,seed-initial_PartyPortletData">
+  <contents xsi:type="biz-portal:PortletCategory" portletCategoryId="PARTY_PROFILE" description="Profiles"/>
+  <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="party" description="General information about a person or party group" portletName="Party Info" screenLocation="component://party/widget/partymgr/ProfileScreens.xml" screenName="Party" screenshot="/images/portlets/party.png"/>
+  <contents xsi:type="biz-portal:PortletPortletCategory">
+    <portalPortletId href="PortalPortlet#party"/>
+    <portletCategoryId href="PortletCategory#PARTY_PROFILE"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="Attributes" description="Attributes of a party" portletName="Attributes" screenLocation="component://party/widget/partymgr/ProfileScreens.xml" screenName="Attributes" screenshot="/images/portlets/Attributes.png"/>
+  <contents xsi:type="biz-portal:PortletPortletCategory">
+    <portalPortletId href="PortalPortlet#Attributes"/>
+    <portletCategoryId href="PortletCategory#PARTY_PROFILE"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="PartyIdentifications" description="Identification associate to a party" portletName="Party Identification" screenLocation="component://party/widget/partymgr/ProfileScreens.xml" screenName="PartyIdentifications"/>
+  <contents xsi:type="biz-portal:PortletPortletCategory">
+    <portalPortletId href="PortalPortlet#PartyIdentifications"/>
+    <portletCategoryId href="PortletCategory#PARTY_PROFILE"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="AvsSettings" description="Avs Settings of a party" portletName="Avs Settings" screenLocation="component://party/widget/partymgr/ProfileScreens.xml" screenName="AvsSettings" screenshot="/images/portlets/AvsSettings.png"/>
+  <contents xsi:type="biz-portal:PortletPortletCategory">
+    <portalPortletId href="PortalPortlet#AvsSettings"/>
+    <portletCategoryId href="PortletCategory#PARTY_PROFILE"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="Content" description="Attached Content of a party" portletName="Content" screenLocation="component://party/widget/partymgr/ProfileScreens.xml" screenName="Content" screenshot="/images/portlets/Content.png"/>
+  <contents xsi:type="biz-portal:PortletPortletCategory">
+    <portalPortletId href="PortalPortlet#Content"/>
+    <portletCategoryId href="PortletCategory#PARTY_PROFILE"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="LoyaltyPoints" description="Loyalty Points of a party" portletName="Loyalty Points" screenLocation="component://party/widget/partymgr/ProfileScreens.xml" screenName="LoyaltyPoints" screenshot="/images/portlets/LoyaltyPoints.png"/>
+  <contents xsi:type="biz-portal:PortletPortletCategory">
+    <portalPortletId href="PortalPortlet#LoyaltyPoints"/>
+    <portletCategoryId href="PortletCategory#PARTY_PROFILE"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="MYTASKSPARTY" description="Assigned Tasks of a party" portletName="My Tasks From Party" screenLocation="component://party/widget/partymgr/ProfileScreens.xml" screenName="mytasks" screenshot="/images/portlets/MYTASKSPARTY.png"/>
+  <contents xsi:type="biz-portal:PortletPortletCategory">
+    <portalPortletId href="PortalPortlet#MYTASKSPARTY"/>
+    <portletCategoryId href="PortletCategory#PARTY_PROFILE"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="Notes" description="Notes of a party" portletName="Notes" screenLocation="component://party/widget/partymgr/ProfileScreens.xml" screenName="Notes" screenshot="/images/portlets/Notes.png"/>
+  <contents xsi:type="biz-portal:PortletPortletCategory">
+    <portalPortletId href="PortalPortlet#Notes"/>
+    <portletCategoryId href="PortletCategory#PARTY_PROFILE"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="PaymentMethods" description="PaymentMethods of a party" portletName="Payment Methods" screenLocation="component://party/widget/partymgr/ProfileScreens.xml" screenName="PaymentMethods" screenshot="/images/portlets/PaymentMethods.png"/>
+  <contents xsi:type="biz-portal:PortletPortletCategory">
+    <portalPortletId href="PortalPortlet#PaymentMethods"/>
+    <portletCategoryId href="PortletCategory#PARTY_PROFILE"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="ShipperAccount" description="Shipper Accounts of a party" portletName="Shipper Account" screenLocation="component://party/widget/partymgr/ProfileScreens.xml" screenName="ShipperAccount" screenshot="/images/portlets/ShipperAccount.png"/>
+  <contents xsi:type="biz-portal:PortletPortletCategory">
+    <portalPortletId href="PortalPortlet#ShipperAccount"/>
+    <portletCategoryId href="PortletCategory#PARTY_PROFILE"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="UserLogin" description="User Logins of a party" portletName="User Login" screenLocation="component://party/widget/partymgr/ProfileScreens.xml" screenName="UserLogin" screenshot="/images/portlets/UserLogin.png"/>
+  <contents xsi:type="biz-portal:PortletPortletCategory">
+    <portalPortletId href="PortalPortlet#UserLogin"/>
+    <portletCategoryId href="PortletCategory#PARTY_PROFILE"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="Visits" description="Visits of a certain party" portletName="Visits" screenLocation="component://party/widget/partymgr/ProfileScreens.xml" screenName="Visits" screenshot="/images/portlets/Visits.png"/>
+  <contents xsi:type="biz-portal:PortletPortletCategory">
+    <portalPortletId href="PortalPortlet#Visits"/>
+    <portletCategoryId href="PortletCategory#PARTY_PROFILE"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="ProductStores" description="ProductStores of a certain party" portletName="ProductStores" screenLocation="component://party/widget/partymgr/ProfileScreens.xml" screenName="ProductStores"/>
+  <contents xsi:type="biz-portal:PortletPortletCategory">
+    <portalPortletId href="PortalPortlet#ProductStores"/>
+    <portletCategoryId href="PortletCategory#PARTY_PROFILE"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="contact" description="contact methods of a party" portletName="Contact" screenLocation="component://party/widget/partymgr/ProfileScreens.xml" screenName="Contact" screenshot="/images/portlets/contact.png"/>
+  <contents xsi:type="biz-portal:PortletPortletCategory">
+    <portalPortletId href="PortalPortlet#contact"/>
+    <portletCategoryId href="PortletCategory#PARTY_PROFILE"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="partyRelContacts" description="Related contacts of an account" portletName="Account Related Contacts" screenLocation="component://party/widget/partymgr/ProfileScreens.xml" screenName="partyRelContacts"/>
+  <contents xsi:type="biz-portal:PortletPortletCategory">
+    <portalPortletId href="PortalPortlet#partyRelContacts"/>
+    <portletCategoryId href="PortletCategory#PARTY_PROFILE"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="partyRelAccounts" description="Related accounts of an contact" portletName="Contact Related Accounts" screenLocation="component://party/widget/partymgr/ProfileScreens.xml" screenName="partyRelAccounts"/>
+  <contents xsi:type="biz-portal:PortletPortletCategory">
+    <portalPortletId href="PortalPortlet#partyRelAccounts"/>
+    <portletCategoryId href="PortletCategory#PARTY_PROFILE"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="partyLoggedIn" description="A list of all logged in users" portletName="List all logged in users" screenLocation="component://party/widget/partymgr/VisitScreens.xml" screenName="LoggedInUsersScreen"/>
+  <contents xsi:type="biz-portal:PortletPortletCategory">
+    <portalPortletId href="PortalPortlet#partyLoggedIn"/>
+    <portletCategoryId href="PortletCategory#PARTY_PROFILE"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortletCategory" portletCategoryId="COMMUNICATIONS" description="Communication(s)"/>
+  <contents xsi:type="biz-portal:PortalPortlet" portalPortletId="MyCommunications" description="IN and outgoing Communication list of a party" editFormLocation="component://party/widget/partymgr/CommunicationEventForms.xml" editFormName="EditCommPortletParams" portletName="My Communications" screenLocation="component://party/widget/partymgr/CommunicationEventScreens.xml" screenName="MyCommunicationEvents" screenshot="/images/portlets/MyCommunications.png"/>
+  <contents xsi:type="biz-portal:PortletPortletCategory">
+    <portalPortletId href="PortalPortlet#MyCommunications"/>
+    <portletCategoryId href="PortletCategory#COMMUNICATIONS"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPage" portalPageId="PartyProfile" description="Party profile page using flexible Portal technology" ownerUserLoginId="_NA_" portalPageName="Parties"/>
+  <contents xsi:type="biz-portal:PortalPageColumn" columnSeqId="00001" columnWidthPercentage="50">
+    <portalPageId href="PortalPage#PartyProfile"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPageColumn" columnSeqId="00002">
+    <portalPageId href="PortalPage#PartyProfile"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPagePortlet" portletSeqId="00001" columnSeqId="00001">
+    <portalPageId href="PortalPage#PartyProfile"/>
+    <portalPortletId href="PortalPortlet#party"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPagePortlet" portletSeqId="00001" columnSeqId="00001" sequenceNum="1">
+    <portalPageId href="PortalPage#PartyProfile"/>
+    <portalPortletId href="PortalPortlet#partyRelContacts"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPagePortlet" portletSeqId="00001" columnSeqId="00001" sequenceNum="2">
+    <portalPageId href="PortalPage#PartyProfile"/>
+    <portalPortletId href="PortalPortlet#partyRelAccounts"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPagePortlet" portletSeqId="00001" columnSeqId="00001" sequenceNum="3">
+    <portalPageId href="PortalPage#PartyProfile"/>
+    <portalPortletId href="PortalPortlet#contact"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPagePortlet" portletSeqId="00001" columnSeqId="00001" sequenceNum="4">
+    <portalPageId href="PortalPage#PartyProfile"/>
+    <portalPortletId href="PortalPortlet#LoyaltyPoints"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPagePortlet" portletSeqId="00001" columnSeqId="00001" sequenceNum="5">
+    <portalPageId href="PortalPage#PartyProfile"/>
+    <portalPortletId href="PortalPortlet#PaymentMethods"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPagePortlet" portletSeqId="00001" columnSeqId="00001" sequenceNum="6">
+    <portalPageId href="PortalPage#PartyProfile"/>
+    <portalPortletId href="PortalPortlet#PartyIdentifications"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPagePortlet" portletSeqId="00001" columnSeqId="00002" sequenceNum="1">
+    <portalPageId href="PortalPage#PartyProfile"/>
+    <portalPortletId href="PortalPortlet#UserLogin"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPagePortlet" portletSeqId="00001" columnSeqId="00002" sequenceNum="2">
+    <portalPageId href="PortalPage#PartyProfile"/>
+    <portalPortletId href="PortalPortlet#Attributes"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPagePortlet" portletSeqId="00001" columnSeqId="00002" sequenceNum="3">
+    <portalPageId href="PortalPage#PartyProfile"/>
+    <portalPortletId href="PortalPortlet#AvsSettings"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPagePortlet" portletSeqId="00001" columnSeqId="00002" sequenceNum="4">
+    <portalPageId href="PortalPage#PartyProfile"/>
+    <portalPortletId href="PortalPortlet#Visits"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPagePortlet" portletSeqId="00001" columnSeqId="00002" sequenceNum="5">
+    <portalPageId href="PortalPage#PartyProfile"/>
+    <portalPortletId href="PortalPortlet#Content"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPagePortlet" portletSeqId="00001" columnSeqId="00002" sequenceNum="6">
+    <portalPageId href="PortalPage#PartyProfile"/>
+    <portalPortletId href="PortalPortlet#Notes"/>
+  </contents>
+  <contents xsi:type="biz-portal:PortalPagePortlet" portletSeqId="00001" columnSeqId="00002" sequenceNum="8">
+    <portalPageId href="PortalPage#PartyProfile"/>
+    <portalPortletId href="PortalPortlet#ProductStores"/>
+  </contents>
+</mimo-ent:EntityContainer>

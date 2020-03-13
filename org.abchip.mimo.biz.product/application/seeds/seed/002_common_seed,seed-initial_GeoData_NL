@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-geo="http://www.abchip.org/mimo/biz/common/geo" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/geo http://www.abchip.org/mimo/biz#//common/geo http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="002_common_seed,seed-initial_GeoData_NL">
+  <contents xsi:type="biz-geo:Geo" geoId="NL-DR" abbreviation="DR" geoCode="DR" geoName="Drenthe">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NL-FL" abbreviation="FL" geoCode="FL" geoName="Flevoland">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NL-FR" abbreviation="FR" geoCode="FR" geoName="Friesland">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NL-GL" abbreviation="GL" geoCode="GL" geoName="Gelderland">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NL-GR" abbreviation="GR" geoCode="GR" geoName="Groningen">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NL-LB" abbreviation="LB" geoCode="LB" geoName="Limburg">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NL-NB" abbreviation="NB" geoCode="NB" geoName="Noord-Brabant">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NL-NH" abbreviation="NH" geoCode="NH" geoName="Noord-Holland">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NL-OV" abbreviation="OV" geoCode="OV" geoName="Overijssel">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NL-UT" abbreviation="UT" geoCode="UT" geoName="Utrecht">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NL-ZE" abbreviation="ZE" geoCode="ZE" geoName="Zeeland">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NL-ZH" abbreviation="ZH" geoCode="ZH" geoName="Zuid-Holland">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NL-ZL" abbreviation="ZL" geoCode="ZL" geoName="Zeeland">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NLD"/>
+    <geoIdTo href="Geo#NL-DR"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NLD"/>
+    <geoIdTo href="Geo#NL-FL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NLD"/>
+    <geoIdTo href="Geo#NL-FR"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NLD"/>
+    <geoIdTo href="Geo#NL-GL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NLD"/>
+    <geoIdTo href="Geo#NL-GR"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NLD"/>
+    <geoIdTo href="Geo#NL-LB"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NLD"/>
+    <geoIdTo href="Geo#NL-NB"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NLD"/>
+    <geoIdTo href="Geo#NL-NH"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NLD"/>
+    <geoIdTo href="Geo#NL-OV"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NLD"/>
+    <geoIdTo href="Geo#NL-UT"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NLD"/>
+    <geoIdTo href="Geo#NL-ZE"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NLD"/>
+    <geoIdTo href="Geo#NL-ZH"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NLD"/>
+    <geoIdTo href="Geo#NL-ZL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+</mimo-ent:EntityContainer>

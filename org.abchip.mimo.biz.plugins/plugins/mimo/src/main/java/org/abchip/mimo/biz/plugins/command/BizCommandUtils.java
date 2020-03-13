@@ -8,7 +8,6 @@
  */
 package org.abchip.mimo.biz.plugins.command;
 
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
@@ -35,7 +34,7 @@ import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
-import org.apache.commons.io.FileUtils;
+import org.apache.ofbiz.base.util.StringUtil;
 import org.apache.ofbiz.entity.Delegator;
 import org.apache.ofbiz.entity.GenericValue;
 import org.apache.ofbiz.entity.util.EntityDataLoader;
@@ -45,7 +44,6 @@ import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
 public class BizCommandUtils {
 
 	public static void createTenant(Context context, String tenantId, String tenantName, boolean clean) {
-
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		// Tenant
@@ -69,25 +67,11 @@ public class BizCommandUtils {
 		tenantDataSource.setJdbcPassword("ofbiz");
 		tenantDataSource.setJdbcUri("jdbc:derby:ofbiz_" + tenantId + ";create=true");
 		tenantDataSourceWriter.create(tenantDataSource, clean);
+	}
 
-		// Tenant creation
-
-		// copy file
-		String source = OFBizConstants.DERBY_SEED + "/ofbiz";
-		File srcDir = new File(source);
-
-		String destination = OFBizConstants.DERBY_PATH + "/ofbiz_" + tenantId;
-		File destDir = new File(destination);
-
-		try {
-			if (clean)
-				FileUtils.deleteDirectory(destDir);
-
-			FileUtils.copyDirectory(srcDir, destDir);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
+	
+	public static void createUserTenant(Context context, String tenantId, boolean clean) {
+		ResourceManager resourceManager = context.get(ResourceManager.class);
 		// UserLogin
 		ResourceWriter<UserLogin> userLogintWriter = resourceManager.getResourceWriter(context, UserLogin.class, tenantId);
 		UserLogin userLogin = LoginFactory.eINSTANCE.createUserLogin();
@@ -125,6 +109,11 @@ public class BizCommandUtils {
 						for (EntityIdentifiable entityIdentifiable : entityContainer.getContents()) {
 							try {
 								ResourceWriter<EntityIdentifiable> entityWriter = resourceManager.getResourceWriter(context, entityIdentifiable.isa(), tenantId);
+
+								if(entityIdentifiable.isa().getName().equals("TechDataCalendarWeek")) {
+									"".toCharArray();
+								}
+								System.out.println(entityIdentifiable.isa().getName());
 								entityWriter.create(entityIdentifiable, update);
 							} catch (Exception e) {
 								System.err.println(e.getMessage());
@@ -180,14 +169,20 @@ public class BizCommandUtils {
 	}
 
 	public static void exportReaderFiltered(Context context, Delegator delegator, String filter) {
-
-		LinkedList<String> readerNames = new LinkedList<String>();
-		readerNames.add(filter);
+		int c1 = 0;
+		List<String> readerNames = new LinkedList<String>();
+        if (filter.indexOf(",") == -1) {
+            readerNames = new LinkedList<String>();
+            readerNames.add(filter);
+        } else {
+            readerNames = StringUtil.split(filter, ",");
+        }
 		String helperName = delegator.getGroupHelperName("org.apache.ofbiz");
 		List<URL> urlList = EntityDataLoader.getUrlList(helperName, readerNames);
 
 		Iterator<URL> urlListIt = urlList.iterator();
 		URL url = null;
+		String folderNameP= "";
 		while (urlListIt.hasNext()) {
 			url = urlListIt.next();
 
@@ -196,7 +191,14 @@ public class BizCommandUtils {
 
 			try {
 				List<GenericValue> listEntity = delegator.readXmlDocument(url);
-				createContainer(context, url, listEntity, filter);
+				
+				String[] segments = url.getPath().split("/");
+				String containerName = segments[segments.length - 1];
+				String folderName = segments[segments.length - 3];
+				if(!folderName.contentEquals(folderNameP))
+					c1++;
+				folderNameP = folderName;
+				createContainer(context, containerName, folderName, listEntity, filter, c1);
 			} catch (Exception e) {
 				System.err.println("Problem with xml " + url + " " + e.getMessage());
 			}
@@ -204,14 +206,14 @@ public class BizCommandUtils {
 	}
 
 	@SuppressWarnings({ "unchecked" })
-	private static void createContainer(Context context, URL url, List<GenericValue> listEntity, String prefix) {
+	private static void createContainer(Context context, String containerName, String folderName, List<GenericValue> listEntity, String prefix, int counter) {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
+		String counterPad = org.apache.commons.lang.StringUtils.leftPad(Integer.toString(counter), 3, "0");
 		Iterator<GenericValue> listEntityIt = listEntity.iterator();
 		EntityContainer container = EntityFactory.eINSTANCE.createEntityContainer();
-		String[] segments = url.getPath().split("/");
-		String containerName = segments[segments.length - 1];
-		containerName = prefix + "_" + containerName.substring(0, containerName.lastIndexOf('.'));
+		// TODO creazione di cartelle?
+		containerName = counterPad + "_" + folderName + "_" + prefix + "_" + containerName.substring(0, containerName.lastIndexOf('.'));
 
 		container.setName(containerName);
 		while (listEntityIt.hasNext()) {
