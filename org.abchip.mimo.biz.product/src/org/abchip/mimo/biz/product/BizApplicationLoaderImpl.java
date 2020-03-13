@@ -22,7 +22,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.abchip.mimo.application.Application;
 import org.abchip.mimo.application.ApplicationComponent;
 import org.abchip.mimo.application.ComponentStatus;
 import org.abchip.mimo.biz.BizComponent;
@@ -50,28 +49,22 @@ public class BizApplicationLoaderImpl implements StartupLoader {
 	private final List<Classpath> componentsClassPath = new ArrayList<>();
 	private final List<Container> loadedContainers = new LinkedList<>();
 
-	protected static Application application;
-
-	protected static void setApplication(Application application) {
-		BizApplicationLoaderImpl.application = application;
-	}
-
 	/**
 	 * @see org.apache.ofbiz.base.start.StartupLoader#load(Config, List)
 	 */
 	@Override
 	public synchronized void load(Config config, List<StartupCommand> ofbizCommands) throws StartupException {
 
-		Debug.logInfo("Loading application: " + application.getName(), module);
+		Debug.logInfo("Loading application: " + BizActivatorImpl.getApplication().getName(), module);
 
-		for (ApplicationComponent component : BizApplicationLoaderImpl.application.getComponents()) {
+		for (ApplicationComponent component : BizActivatorImpl.getApplication().getComponents()) {
 			if (component.getStatus() != ComponentStatus.ACTIVE)
 				continue;
 			if (!(component instanceof BizComponent))
 				continue;
 
 			BizComponent bizComponent = (BizComponent) component;
-			String componentLocation = BizApplicationLoaderImpl.application.getContext().locateBundle(bizComponent.getPlugin());
+			String componentLocation = BizActivatorImpl.getApplication().getContext().locateBundle(bizComponent.getPlugin());
 
 			Debug.logInfo("Loading component : " + bizComponent.getName() + " from location: " + componentLocation, module);
 
@@ -102,7 +95,7 @@ public class BizApplicationLoaderImpl implements StartupLoader {
 		// Start all containers
 		startLoadedContainers();
 
-		Debug.logInfo("Loaded application: " + application.getName(), module);
+		Debug.logInfo("Loaded application: " + BizActivatorImpl.getApplication().getName(), module);
 	}
 
 	private Classpath buildClasspathFromComponentConfig(ComponentConfig config) throws IOException {

@@ -23,7 +23,7 @@ public class BizEquinoxApplicationImpl extends E4EquinoxApplicationImpl {
 		
 //		BizApplicationUtils.setClassLoader(application);
 		
-		BizApplicationUtils.loadConverters();
+//		BizApplicationUtils.loadConverters();
 		
 //		BizApplicationUtils.setURLStreamHandlerFactory();
 
@@ -34,6 +34,8 @@ public class BizEquinoxApplicationImpl extends E4EquinoxApplicationImpl {
 		System.setProperty("ofbiz.log.dir", application.getPaths().getLogs());
 		System.setProperty("derby.system.home", application.getPaths().getData() + "/derby");
 
+		BizActivatorImpl.setApplication(application);
+		
 		Start.main(new String[0]);
 	}
 }
