@@ -6,9 +6,7 @@ Bundle-Version: 0.2.0.qualifier
 Bundle-Vendor: ABChip
 Automatic-Module-Name: org.abchip.mimo.biz.asf
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Bundle-Activator: org.abchip.mimo.biz.asf.BizActivator
 Import-Package: org.osgi.framework
 Require-Bundle: org.abchip.mimo.core,
  org.abchip.mimo.core.e4,
  org.eclipse.equinox.app
-Bundle-ActivationPolicy: lazy

@@ -8,7 +8,6 @@
  */
 package org.abchip.mimo.biz.product.command;
 
-import java.net.URI;
 import java.net.URL;
 import java.util.List;
 
@@ -75,9 +74,9 @@ public class BizSeedCommands extends BaseCommandProviderImpl {
 
 		String seedName = interpreter.nextArgument();
 		String tenantId = interpreter.nextArgument();
-		
-		if(seedName.endsWith("/")) {
-			List<URL> seedUrl = context.getResources(this.getClass(), OFBizConstants.SEEDS_PATH + "/" + org.apache.commons.lang.StringUtils.chop(seedName));
+
+		if (seedName.endsWith("/")) {
+			List<URL> seedUrl = context.getResources(this.getClass(), OFBizConstants.SEEDS_PATH + "/" + seedName);
 			"".toCharArray();
 		} else {
 			BizCommandUtils.loadSeeds(context, seedName, tenantId, true);
