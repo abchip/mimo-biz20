@@ -6,7 +6,7 @@
  *  http://www.eclipse.org/legal/epl-v10.html
  *
  */
-package org.abchip.mimo.biz.product;
+package org.abchip.mimo.biz.plugins.application;
 
 import java.io.IOException;
 import java.nio.file.Path;
@@ -63,12 +63,10 @@ public class BizApplicationHook {
 
 	@ApplicationStarted
 	private void started() {
-		System.out.println(APPLICATION);
 	}
 
 	@ApplicationStopping
 	private void stopping() {
-
 	}
 
 	@ApplicationStopped

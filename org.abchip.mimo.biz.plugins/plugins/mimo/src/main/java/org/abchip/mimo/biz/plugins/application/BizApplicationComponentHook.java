@@ -6,13 +6,14 @@
  *  http://www.eclipse.org/legal/epl-v10.html
  *
  */
-package org.abchip.mimo.biz.product;
+package org.abchip.mimo.biz.plugins.application;
 
 import javax.inject.Inject;
 
 import org.abchip.mimo.application.ApplicationComponent;
 import org.abchip.mimo.application.ComponentStarted;
 import org.abchip.mimo.application.ComponentStarting;
+import org.abchip.mimo.biz.BizComponent;
 
 public class BizApplicationComponentHook {
 
@@ -20,12 +21,16 @@ public class BizApplicationComponentHook {
 	private ApplicationComponent component;
 
 	@ComponentStarting
-	private void starting() {
-		System.out.println(component);
+	private void starting() {		
+		if(!(component instanceof BizComponent))
+			return;
+		
+		
 	}
 
 	@ComponentStarted
-	private void started() {
-		System.out.println(component);
+	private void started() {		
+		if(!(component instanceof BizComponent))
+			return;
 	}
 }

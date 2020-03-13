@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: MIMO Biz Framework
 Bundle-SymbolicName: org.abchip.mimo.biz.framework
 Bundle-Version: 0.2.0.qualifier
-Fragment-Host: org.abchip.mimo.biz.asf
+Fragment-Host: org.abchip.mimo.biz.product
 Bundle-ClassPath: .,
  lib/activation-1.1.jar,
  lib/antlr-runtime-3.4.jar,

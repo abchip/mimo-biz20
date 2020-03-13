@@ -105,18 +105,18 @@
             password="ofbiz"/>
       </entities>
     </config>
-    <hooks className="org.abchip.mimo.biz.product.BizApplicationComponentHook"/>
+    <hooks className="org.abchip.mimo.biz.plugins.application.BizApplicationComponentHook"/>
     <modules
         name="Commands">
       <services
           xsi:type="mimo-app:ServiceCommandProvider"
-          className="org.abchip.mimo.biz.product.command.BizTestCommands"/>
+          className="org.abchip.mimo.biz.plugins.command.BizTestCommands"/>
       <services
           xsi:type="mimo-app:ServiceCommandProvider"
-          className="org.abchip.mimo.biz.product.command.BizTenantCommands"/>
+          className="org.abchip.mimo.biz.plugins.command.BizTenantCommands"/>
       <services
           xsi:type="mimo-app:ServiceCommandProvider"
-          className="org.abchip.mimo.biz.product.command.BizSeedCommands"/>
+          className="org.abchip.mimo.biz.plugins.command.BizSeedCommands"/>
     </modules>
     <modules
         name="Authentication">
@@ -174,7 +174,7 @@
       name="Applications"
       plugin="org.abchip.mimo.biz.applications"
       modulesDir="applications">
-    <hooks className="org.abchip.mimo.biz.product.BizApplicationComponentHook"/>
+    <hooks className="org.abchip.mimo.biz.plugins.application.BizApplicationComponentHook"/>
     <modules
         name="Commands">
       <services
@@ -214,7 +214,7 @@
       name="Themes"
       plugin="org.abchip.mimo.biz.themes"
       modulesDir="themes">
-    <hooks className="org.abchip.mimo.biz.product.BizApplicationComponentHook"/>
+    <hooks className="org.abchip.mimo.biz.plugins.application.BizApplicationComponentHook"/>
     <bizModules
         name="bluelight"/>
     <bizModules
@@ -282,7 +282,7 @@
   <contextDescription
       id="abchip-biz"
       user="mimo"/>
-  <hooks className="org.abchip.mimo.biz.product.BizApplicationHook"/>
+  <hooks className="org.abchip.mimo.biz.plugins.application.BizApplicationHook"/>
   <paths data="/mimo/abchip-biz/data"
       logs="/mimo/abchip-biz/logs"
       work="/mimo/abchip-biz"/>

@@ -6,7 +6,7 @@
  *  http://www.eclipse.org/legal/epl-v10.html
  *
  */
-package org.abchip.mimo.biz.product.command;
+package org.abchip.mimo.biz.plugins.command;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

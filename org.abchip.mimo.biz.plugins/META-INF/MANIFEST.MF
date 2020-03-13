@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: MIMO Biz Plugins
 Bundle-SymbolicName: org.abchip.mimo.biz.plugins
 Bundle-Version: 0.2.0.qualifier
-Fragment-Host: org.abchip.mimo.biz.asf
+Fragment-Host: org.abchip.mimo.biz.product
 Bundle-Vendor: ABChip
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ClassPath: .,
@@ -30,6 +30,7 @@ Export-Package: com.stripe,
  com.stripe.model,
  org.abchip.mimo.biz.plugins,
  org.abchip.mimo.biz.plugins.application,
+ org.abchip.mimo.biz.plugins.command,
  org.abchip.mimo.biz.plugins.context,
  org.abchip.mimo.biz.plugins.driver,
  org.abchip.mimo.biz.plugins.edi,
