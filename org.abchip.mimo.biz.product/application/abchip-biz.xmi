@@ -105,6 +105,7 @@
             password="ofbiz"/>
       </entities>
     </config>
+    <hooks className="org.abchip.mimo.biz.product.BizApplicationComponentHook"/>
     <modules
         name="Commands">
       <services
@@ -170,25 +171,10 @@
   </components>
   <components
       xsi:type="biz:BizComponent"
-      name="Themes"
-      plugin="org.abchip.mimo.biz.themes"
-      modulesDir="themes">
-    <bizModules
-        name="bluelight"/>
-    <bizModules
-        name="common-theme"/>
-    <bizModules
-        name="flatgrey"/>
-    <bizModules
-        name="rainbowstone"/>
-    <bizModules
-        name="tomahawk"/>
-  </components>
-  <components
-      xsi:type="biz:BizComponent"
       name="Applications"
       plugin="org.abchip.mimo.biz.applications"
       modulesDir="applications">
+    <hooks className="org.abchip.mimo.biz.product.BizApplicationComponentHook"/>
     <modules
         name="Commands">
       <services
@@ -222,6 +208,23 @@
         name="marketing"/>
     <bizModules
         name="commonext"/>
+  </components>
+  <components
+      xsi:type="biz:BizComponent"
+      name="Themes"
+      plugin="org.abchip.mimo.biz.themes"
+      modulesDir="themes">
+    <hooks className="org.abchip.mimo.biz.product.BizApplicationComponentHook"/>
+    <bizModules
+        name="bluelight"/>
+    <bizModules
+        name="common-theme"/>
+    <bizModules
+        name="flatgrey"/>
+    <bizModules
+        name="rainbowstone"/>
+    <bizModules
+        name="tomahawk"/>
   </components>
   <components
       name="Connectors"
@@ -279,6 +282,7 @@
   <contextDescription
       id="abchip-biz"
       user="mimo"/>
+  <hooks className="org.abchip.mimo.biz.product.BizApplicationHook"/>
   <paths data="/mimo/abchip-biz/data"
       logs="/mimo/abchip-biz/logs"
       work="/mimo/abchip-biz"/>

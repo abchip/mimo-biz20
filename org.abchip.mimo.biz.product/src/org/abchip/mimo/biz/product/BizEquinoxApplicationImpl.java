@@ -27,15 +27,7 @@ public class BizEquinoxApplicationImpl extends E4EquinoxApplicationImpl {
 		
 //		BizApplicationUtils.setURLStreamHandlerFactory();
 
-		Path workPath = Paths.get(application.getPaths().getWork(), "ofbiz");
-		BizApplicationUtils.copyToWork(application, workPath);
-
-		System.setProperty("ofbiz.home", workPath.toString());
-		System.setProperty("ofbiz.log.dir", application.getPaths().getLogs());
-		System.setProperty("derby.system.home", application.getPaths().getData() + "/derby");
-
-		BizActivatorImpl.setApplication(application);
 		
-		Start.main(new String[0]);
+//		Start.main(new String[0]);
 	}
 }
