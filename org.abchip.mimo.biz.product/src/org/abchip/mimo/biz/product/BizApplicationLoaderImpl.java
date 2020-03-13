@@ -55,16 +55,16 @@ public class BizApplicationLoaderImpl implements StartupLoader {
 	@Override
 	public synchronized void load(Config config, List<StartupCommand> ofbizCommands) throws StartupException {
 
-		Debug.logInfo("Loading application: " + BizActivatorImpl.getApplication().getName(), module);
+		Debug.logInfo("Loading application: " + BizApplicationHook.getApplication().getName(), module);
 
-		for (ApplicationComponent component : BizActivatorImpl.getApplication().getComponents()) {
+		for (ApplicationComponent component : BizApplicationHook.getApplication().getComponents()) {
 			if (component.getStatus() != ComponentStatus.ACTIVE)
 				continue;
 			if (!(component instanceof BizComponent))
 				continue;
 
 			BizComponent bizComponent = (BizComponent) component;
-			String componentLocation = BizActivatorImpl.getApplication().getContext().locateBundle(bizComponent.getPlugin());
+			String componentLocation = BizApplicationHook.getApplication().getContext().locateBundle(bizComponent.getPlugin());
 
 			Debug.logInfo("Loading component : " + bizComponent.getName() + " from location: " + componentLocation, module);
 
@@ -95,7 +95,7 @@ public class BizApplicationLoaderImpl implements StartupLoader {
 		// Start all containers
 		startLoadedContainers();
 
-		Debug.logInfo("Loaded application: " + BizActivatorImpl.getApplication().getName(), module);
+		Debug.logInfo("Loaded application: " + BizApplicationHook.getApplication().getName(), module);
 	}
 
 	private Classpath buildClasspathFromComponentConfig(ComponentConfig config) throws IOException {

@@ -17,4 +17,3 @@ Import-Package: org.eclipse.osgi.internal.url,
  org.osgi.framework
 Export-Package: org.abchip.mimo.biz.product.command
 Bundle-ActivationPolicy: lazy
-Bundle-Activator: org.abchip.mimo.biz.product.BizActivatorImpl

@@ -14,7 +14,7 @@
             thread="main"
             visible="true">
          <run
-               class="org.abchip.mimo.biz.product.BizEquinoxApplicationImpl">
+               class="org.abchip.mimo.core.e4.E4EquinoxApplicationImpl">
          </run>
       </application>
    </extension>
