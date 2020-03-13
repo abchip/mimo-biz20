@@ -35,12 +35,12 @@ public class BizTenantCommands extends BaseCommandProviderImpl {
 
 		Context context = this.getContext();
 
-		BizCommandUtils.loadSeeds(context, "mimo", null, true);
-		BizCommandUtils.loadSeeds(context, "party", null, true);
-		BizCommandUtils.loadSeeds(context, "abchip-net", null, true);
-		BizCommandUtils.loadSeeds(context, "abchip-net-accounting", null, true);
-		BizCommandUtils.loadSeeds(context, "passport", null, true);
-		BizCommandUtils.loadSeeds(context, "edi", null, true);
+		BizCommandUtils.loadSeed(context, "mimo", null, true);
+		BizCommandUtils.loadSeed(context, "party", null, true);
+		BizCommandUtils.loadSeed(context, "abchip-net", null, true);
+		BizCommandUtils.loadSeed(context, "abchip-net-accounting", null, true);
+		BizCommandUtils.loadSeed(context, "passport", null, true);
+		BizCommandUtils.loadSeed(context, "edi", null, true);
 	}
 
 	@SuppressWarnings("resource")
@@ -57,9 +57,9 @@ public class BizTenantCommands extends BaseCommandProviderImpl {
 		String partyId = interpreter.nextArgument();
 
 		BizCommandUtils.createTenant(context, tenantId, tenantName, false);
-		BizCommandUtils.loadSeeds(context, "mimo", tenantId, true);
-		BizCommandUtils.loadSeeds(context, "party", tenantId, true);
-		BizCommandUtils.loadSeeds(context, "abchip-biz", tenantId, true);
+		BizCommandUtils.loadSeed(context, "mimo", tenantId, true);
+		BizCommandUtils.loadSeed(context, "party", tenantId, true);
+		BizCommandUtils.loadSeed(context, "abchip-biz", tenantId, true);
 		// Mail
 
 		// Party
@@ -89,9 +89,9 @@ public class BizTenantCommands extends BaseCommandProviderImpl {
 			clean = Boolean.parseBoolean(cleanString);
 
 		BizCommandUtils.createTenant(context, tenantId, tenantName, clean);
-		BizCommandUtils.loadSeeds(context, "mimo", tenantId, true);
-		BizCommandUtils.loadSeeds(context, "party", tenantId, true);
-		BizCommandUtils.loadSeeds(context, "abchip-test", tenantId, true);
+		BizCommandUtils.loadSeed(context, "mimo", tenantId, true);
+		BizCommandUtils.loadSeed(context, "party", tenantId, true);
+		BizCommandUtils.loadSeed(context, "abchip-test", tenantId, true);
 	}
 
 	@Override

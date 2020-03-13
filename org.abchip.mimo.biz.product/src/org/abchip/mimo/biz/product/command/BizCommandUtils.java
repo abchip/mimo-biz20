@@ -109,13 +109,47 @@ public class BizCommandUtils {
 	}
 
 	public static void loadSeeds(Context context, String seedName, String tenantId, boolean update) {
+
+		ResourceManager resourceManager = context.get(ResourceManager.class);
+		try {
+
+			List<URL> seedUrls = context.getResources(BizCommandUtils.class, OFBizConstants.SEEDS_PATH + "/" + seedName);
+			for (URL seedUrl : seedUrls) {
+				try (InputStream inputStream = seedUrl.openStream()) {
+
+					XMIResource resource = new XMIResourceImpl();
+					resource.load(inputStream, null);
+					if (!resource.getContents().isEmpty()) {
+						EntityContainer entityContainer = (EntityContainer) resource.getContents().get(0);
+
+						for (EntityIdentifiable entityIdentifiable : entityContainer.getContents()) {
+							try {
+								ResourceWriter<EntityIdentifiable> entityWriter = resourceManager.getResourceWriter(context, entityIdentifiable.isa(), tenantId);
+								entityWriter.create(entityIdentifiable, update);
+							} catch (Exception e) {
+								System.err.println(e.getMessage());
+							}
+						}
+					}
+
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		} catch (IOException e) {
+
+		}
+
+	}
+
+	public static void loadSeed(Context context, String seedName, String tenantId, boolean update) {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 		try {
 
 			URL seedUrl = context.getResource(BizCommandUtils.class, OFBizConstants.SEEDS_PATH + "/" + seedName + ".xmi");
-			if(seedUrl == null)
+			if (seedUrl == null)
 				return;
-			
+
 			try (InputStream inputStream = seedUrl.openStream()) {
 
 				XMIResource resource = new XMIResourceImpl();
