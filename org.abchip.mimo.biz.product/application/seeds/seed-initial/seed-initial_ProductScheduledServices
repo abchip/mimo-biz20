@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-schedule="http://www.abchip.org/mimo/biz/service/schedule" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/service/schedule http://www.abchip.org/mimo/biz#//schedule http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="seed-initial_ProductScheduledServices">
-  <contents xsi:type="biz-schedule:JobSandbox" jobId="8100" jobName="Purge Old Store Auto-Entered Promos" maxRecurrenceCount="-1" poolId="pool" runTime="2000-01-01T00:00:00.000+0100" serviceName="purgeOldStoreAutoPromos">
-    <runAsUser href="UserLogin#system"/>
-    <tempExprId href="TemporalExpression#MIDNIGHT_DAILY"/>
-  </contents>
-</mimo-ent:EntityContainer>

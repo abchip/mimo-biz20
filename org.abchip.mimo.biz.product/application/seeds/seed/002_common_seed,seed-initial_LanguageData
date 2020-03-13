@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-language="http://www.abchip.org/mimo/biz/common/language" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/language http://www.abchip.org/mimo/biz#//common/language http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="002_common_seed,seed-initial_LanguageData">
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6301" langCode2="aa" langCode3b="aar" langCode3t="aar" langFamily="Hamitic" langName="Afar"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6302" langCode2="ab" langCode3b="abk" langCode3t="abk" langFamily="Ibero-caucasian" langName="Abkhazian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6303" langCode3b="ace" langCode3t="ace" langName="Achinese"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6304" langCode3b="ach" langCode3t="ach" langName="Acoli"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6305" langCode3b="ada" langCode3t="ada" langName="Adangme"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6306" langCode3b="afa" langCode3t="afa" langName="Afro-Asiatic (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6307" langCode3b="afh" langCode3t="afh" langName="Afrihili"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6308" langCode2="af" langCode3b="afr" langCode3t="afr" langFamily="Germanic" langName="Afrikaans"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6309" langCode3b="aka" langCode3t="aka" langName="Akan"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6310" langCode3b="akk" langCode3t="akk" langName="Akkadian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6311" langCode3b="ale" langCode3t="ale" langName="Aleut"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6312" langCode3b="alg" langCode3t="alg" langName="Algonquian languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6313" langCode2="am" langCode3b="amh" langCode3t="amh" langFamily="Semitic" langName="Amharic"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6314" langCode3b="ang" langCode3t="ang" langName="English, Old (ca. 450-1100)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6315" langCode3b="apa" langCode3t="apa" langName="Apache languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6316" langCode2="ar" langCode3b="ara" langCode3t="ara" langFamily="Semitic" langName="Arabic"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6317" langCode3b="arc" langCode3t="arc" langName="Aramaic"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6318" langCode3b="arn" langCode3t="arn" langName="Araucanian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6319" langCode3b="arp" langCode3t="arp" langName="Arapaho"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6320" langCode3b="art" langCode3t="art" langName="Artificial (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6321" langCode3b="arw" langCode3t="arw" langName="Arawak"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6322" langCode2="as" langCode3b="asm" langCode3t="asm" langFamily="Indian" langName="Assamese"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6323" langCode3b="ath" langCode3t="ath" langName="Athapascan languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6324" langCode3b="aus" langCode3t="aus" langName="Australian languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6325" langCode3b="ava" langCode3t="ava" langName="Avaric"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6326" langCode2="ae" langCode3b="ave" langCode3t="ave" langName="Avestan"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6327" langCode3b="awa" langCode3t="awa" langName="Awadhi"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6328" langCode2="ay" langCode3b="aym" langCode3t="aym" langFamily="Amerindian" langName="Aymara"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6329" langCode2="az" langCode3b="aze" langCode3t="aze" langFamily="Turkic/altaic" langName="Azerbaijani"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6330" langCode3b="bad" langCode3t="bad" langName="Banda"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6331" langCode3b="bai" langCode3t="bai" langName="Bamileke languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6332" langCode2="ba" langCode3b="bak" langCode3t="bak" langFamily="Turkic/altaic" langName="Bashkir"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6333" langCode3b="bal" langCode3t="bal" langName="Baluchi"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6334" langCode3b="bam" langCode3t="bam" langName="Bambara"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6335" langCode3b="ban" langCode3t="ban" langName="Balinese"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6336" langCode3b="bas" langCode3t="bas" langName="Basa"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6337" langCode3b="bat" langCode3t="bat" langName="Baltic (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6338" langCode3b="bej" langCode3t="bej" langName="Beja"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6339" langCode2="be" langCode3b="bel" langCode3t="bel" langFamily="Slavic" langName="Belarusian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6340" langCode3b="bem" langCode3t="bem" langName="Bemba"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6341" langCode2="bn" langCode3b="ben" langCode3t="ben" langFamily="Indian" langName="Bengali"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6342" langCode3b="ber" langCode3t="ber" langName="Berber (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6343" langCode3b="bho" langCode3t="bho" langName="Bhojpuri"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6344" langCode2="bh" langCode3b="bih" langCode3t="bih" langFamily="Indian" langName="Bihari"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6345" langCode3b="bik" langCode3t="bik" langName="Bikol"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6346" langCode3b="bin" langCode3t="bin" langName="Bini"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6347" langCode2="bi" langCode3b="bis" langCode3t="bis" langName="Bislama"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6348" langCode3b="bla" langCode3t="bla" langName="Siksika"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6349" langCode3b="bnt" langCode3t="bnt" langName="Bantu (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6350" langCode2="bo" langCode3b="tib" langCode3t="bod" langFamily="Asian" langName="Tibetan"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6351" langCode2="bs" langCode3b="bos" langCode3t="bos" langName="Bosnian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6352" langCode3b="bra" langCode3t="bra" langName="Braj"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6353" langCode2="br" langCode3b="bre" langCode3t="bre" langFamily="Celtic" langName="Breton"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6354" langCode3b="btk" langCode3t="btk" langName="Batak (Indonesia)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6355" langCode3b="bua" langCode3t="bua" langName="Buriat"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6356" langCode3b="bug" langCode3t="bug" langName="Buginese"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6357" langCode2="bg" langCode3b="bul" langCode3t="bul" langFamily="Slavic" langName="Bulgarian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6358" langCode3b="cad" langCode3t="cad" langName="Caddo"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6359" langCode3b="cai" langCode3t="cai" langName="Central American Indian (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6360" langCode3b="car" langCode3t="car" langName="Carib"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6361" langCode2="ca" langCode3b="cat" langCode3t="cat" langFamily="Romance" langName="Catalan"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6362" langCode3b="cau" langCode3t="cau" langName="Caucasian (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6363" langCode3b="ceb" langCode3t="ceb" langName="Cebuano"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6364" langCode3b="cel" langCode3t="cel" langName="Celtic (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6365" langCode2="cs" langCode3b="cze" langCode3t="ces" langFamily="Slavic" langName="Czech"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6366" langCode2="ch" langCode3b="cha" langCode3t="cha" langName="Chamorro"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6367" langCode3b="chb" langCode3t="chb" langName="Chibcha"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6368" langCode2="ce" langCode3b="che" langCode3t="che" langName="Chechen"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6369" langCode3b="chg" langCode3t="chg" langName="Chagatai"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6370" langCode3b="chk" langCode3t="chk" langName="Chuukese"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6371" langCode3b="chm" langCode3t="chm" langName="Mari"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6372" langCode3b="chn" langCode3t="chn" langName="Chinook jargon"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6373" langCode3b="cho" langCode3t="cho" langName="Choctaw"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6374" langCode3b="chp" langCode3t="chp" langName="Chipewyan"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6375" langCode3b="chr" langCode3t="chr" langName="Cherokee"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6376" langCode2="cu" langCode3b="chu" langCode3t="chu" langName="Church Slavic"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6377" langCode2="cv" langCode3b="chv" langCode3t="chv" langName="Chuvash"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6378" langCode3b="chy" langCode3t="chy" langName="Cheyenne"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6379" langCode3b="cmc" langCode3t="cmc" langName="Chamic languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6380" langCode3b="cop" langCode3t="cop" langName="Coptic"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6381" langCode2="kw" langCode3b="cor" langCode3t="cor" langName="Cornish"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6382" langCode2="co" langCode3b="cos" langCode3t="cos" langFamily="Romance" langName="Corsican"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6383" langCode3b="cpe" langCode3t="cpe" langName="Creoles and pidgins, English based (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6384" langCode3b="cpf" langCode3t="cpf" langName="Creoles and pidgins, French-based (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6385" langCode3b="cpp" langCode3t="cpp" langName="Creoles and pidgins, Portuguese-based (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6386" langCode3b="cre" langCode3t="cre" langName="Cree"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6387" langCode3b="crp" langCode3t="crp" langName="Creoles and pidgins (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6388" langCode3b="cus" langCode3t="cus" langName="Cushitic (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6389" langCode2="cy" langCode3b="wel" langCode3t="cym" langFamily="Celtic" langName="Welsh"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6390" langCode3b="dak" langCode3t="dak" langName="Dakota"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6391" langCode2="da" langCode3b="dan" langCode3t="dan" langFamily="Germanic" langName="Danish"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6392" langCode3b="day" langCode3t="day" langName="Dayak"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6393" langCode3b="del" langCode3t="del" langName="Delaware"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6394" langCode3b="den" langCode3t="den" langName="Slave (Athapascan)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6395" langCode2="de" langCode3b="ger" langCode3t="deu" langFamily="Germanic" langName="German"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6396" langCode3b="dgr" langCode3t="dgr" langName="Dogrib"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6397" langCode3b="din" langCode3t="din" langName="Dinka"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6398" langCode3b="div" langCode3t="div" langName="Divehi"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6399" langCode3b="doi" langCode3t="doi" langName="Dogri"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6400" langCode3b="dra" langCode3t="dra" langName="Dravidian (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6401" langCode3b="dua" langCode3t="dua" langName="Duala"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6402" langCode3b="dum" langCode3t="dum" langName="Dutch, Middle (ca. 1050-1350)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6403" langCode3b="dyu" langCode3t="dyu" langName="Dyula"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6404" langCode2="dz" langCode3b="dzo" langCode3t="dzo" langFamily="Asian" langName="Dzongkha"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6405" langCode3b="efi" langCode3t="efi" langName="Efik"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6406" langCode3b="egy" langCode3t="egy" langName="Egyptian (Ancient)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6407" langCode3b="eka" langCode3t="eka" langName="Ekajuk"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6408" langCode2="el" langCode3b="gre" langCode3t="ell" langFamily="Latin/greek" langName="Greek, Modern (1453-)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6409" langCode3b="elx" langCode3t="elx" langName="Elamite"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6410" langCode2="en" langCode3b="eng" langCode3t="eng" langFamily="Germanic" langName="English"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6411" langCode3b="enm" langCode3t="enm" langName="English, Middle (1100-1500)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6412" langCode2="eo" langCode3b="epo" langCode3t="epo" langFamily="International aux." langName="Esperanto"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6413" langCode2="et" langCode3b="est" langCode3t="est" langFamily="Finno-ugric" langName="Estonian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6414" langCode2="eu" langCode3b="baq" langCode3t="eus" langFamily="Basque" langName="Basque"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6415" langCode3b="ewe" langCode3t="ewe" langName="Ewe"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6416" langCode3b="ewo" langCode3t="ewo" langName="Ewondo"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6417" langCode3b="fan" langCode3t="fan" langName="Fang"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6418" langCode2="fo" langCode3b="fao" langCode3t="fao" langFamily="Germanic" langName="Faroese"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6419" langCode2="fa" langCode3b="per" langCode3t="fas" langName="Persian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6420" langCode3b="fat" langCode3t="fat" langName="Fanti"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6421" langCode2="fj" langCode3b="fij" langCode3t="fij" langFamily="Oceanic/indonesian" langName="Fijian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6422" langCode2="fi" langCode3b="fin" langCode3t="fin" langFamily="Finno-ugric" langName="Finnish"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6423" langCode3b="fiu" langCode3t="fiu" langName="Finno-Ugrian (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6424" langCode3b="fon" langCode3t="fon" langName="Fon"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6425" langCode2="fr" langCode3b="fre" langCode3t="fra" langFamily="Romance" langName="French"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6426" langCode3b="frm" langCode3t="frm" langName="French, Middle (ca. 1400-1600)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6427" langCode3b="fro" langCode3t="fro" langName="French, Old (842-ca. 1400)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6428" langCode2="fy" langCode3b="fry" langCode3t="fry" langFamily="Germanic" langName="Frisian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6429" langCode3b="ful" langCode3t="ful" langName="Fulah"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6430" langCode3b="fur" langCode3t="fur" langName="Friulian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6431" langCode3b="gaa" langCode3t="gaa" langName="Ga"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6432" langCode3b="gay" langCode3t="gay" langName="Gayo"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6433" langCode3b="gba" langCode3t="gba" langName="Gbaya"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6434" langCode3b="gem" langCode3t="gem" langName="Germanic (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6435" langCode3b="gez" langCode3t="gez" langName="Geez"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6436" langCode3b="gil" langCode3t="gil" langName="Gilbertese"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6437" langCode2="gd" langCode3b="gla" langCode3t="gla" langFamily="Celtic" langName="Gaelic (Scots)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6438" langCode2="ga" langCode3b="gle" langCode3t="gle" langFamily="Celtic" langName="Irish"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6439" langCode2="gl" langCode3b="glg" langCode3t="glg" langFamily="Romance" langName="Gallegan"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6440" langCode2="gv" langCode3b="glv" langCode3t="glv" langName="Manx"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6441" langCode3b="gmh" langCode3t="gmh" langName="German, Middle High (ca. 1050-1500)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6442" langCode3b="goh" langCode3t="goh" langName="German, Old High (ca. 750-1050)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6443" langCode3b="gon" langCode3t="gon" langName="Gondi"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6444" langCode3b="gor" langCode3t="gor" langName="Gorontalo"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6445" langCode3b="got" langCode3t="got" langName="Gothic"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6446" langCode3b="grb" langCode3t="grb" langName="Grebo"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6447" langCode3b="grc" langCode3t="grc" langName="Greek, Ancient (to 1453)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6448" langCode2="gn" langCode3b="grn" langCode3t="grn" langFamily="Amerindian" langName="Guarani"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6449" langCode2="gu" langCode3b="guj" langCode3t="guj" langFamily="Indian" langName="Gujarati"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6450" langCode3b="gwi" langCode3t="gwi" langName="Gwich´in"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6451" langCode3b="hai" langCode3t="hai" langName="Haida"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6452" langCode2="ha" langCode3b="hau" langCode3t="hau" langFamily="Negro-african" langName="Hausa"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6453" langCode3b="haw" langCode3t="haw" langName="Hawaiian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6454" langCode2="he" langCode3b="heb" langCode3t="heb" langName="Hebrew"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6455" langCode2="hz" langCode3b="her" langCode3t="her" langName="Herero"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6456" langCode3b="hil" langCode3t="hil" langName="Hiligaynon"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6457" langCode3b="him" langCode3t="him" langName="Himachali"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6458" langCode2="hi" langCode3b="hin" langCode3t="hin" langFamily="Indian" langName="Hindi"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6459" langCode3b="hit" langCode3t="hit" langName="Hittite"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6460" langCode3b="hmn" langCode3t="hmn" langName="Hmong"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6461" langCode2="ho" langCode3b="hmo" langCode3t="hmo" langName="Hiri Motu"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6462" langCode2="hr" langCode3b="scr" langCode3t="hrv" langFamily="Slavic" langName="Croatian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6463" langCode2="hu" langCode3b="hun" langCode3t="hun" langFamily="Finno-ugric" langName="Hungarian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6464" langCode3b="hup" langCode3t="hup" langName="Hupa"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6465" langCode2="hy" langCode3b="arm" langCode3t="hye" langFamily="Indo-european (other)" langName="Armenian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6466" langCode3b="iba" langCode3t="iba" langName="Iban"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6467" langCode3b="ibo" langCode3t="ibo" langName="Igbo"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6468" langCode3b="ijo" langCode3t="ijo" langName="Ijo"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6469" langCode2="iu" langCode3b="iku" langCode3t="iku" langName="Inuktitut"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6470" langCode2="ie" langCode3b="ile" langCode3t="ile" langFamily="International aux." langName="Interlingue"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6471" langCode3b="ilo" langCode3t="ilo" langName="Iloko"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6472" langCode2="ia" langCode3b="ina" langCode3t="ina" langFamily="International aux." langName="Interlingua"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6473" langCode3b="inc" langCode3t="inc" langName="Indic (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6474" langCode2="id" langCode3b="ind" langCode3t="ind" langName="Indonesian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6475" langCode3b="ine" langCode3t="ine" langName="Indo-European (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6476" langCode2="ik" langCode3b="ipk" langCode3t="ipk" langFamily="Eskimo" langName="Inupiaq"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6477" langCode3b="ira" langCode3t="ira" langName="Iranian (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6478" langCode3b="iro" langCode3t="iro" langName="Iroquoian languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6479" langCode2="is" langCode3b="ice" langCode3t="isl" langFamily="Germanic" langName="Icelandic"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6480" langCode2="it" langCode3b="ita" langCode3t="ita" langFamily="Romance" langName="Italian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6481" langCode2="jw" langCode3b="jav" langCode3t="jaw" langName="Javanese"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6482" langCode2="ja" langCode3b="jpn" langCode3t="jpn" langFamily="Asian" langName="Japanese"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6483" langCode3b="jpr" langCode3t="jpr" langName="Judeo-Persian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6484" langCode3b="kaa" langCode3t="kaa" langName="Kara-Kalpak"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6485" langCode3b="kab" langCode3t="kab" langName="Kabyle"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6486" langCode3b="kac" langCode3t="kac" langName="Kachin"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6487" langCode2="kl" langCode3b="kal" langCode3t="kal" langFamily="Eskimo" langName="Kalaallisut"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6488" langCode3b="kam" langCode3t="kam" langName="Kamba"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6489" langCode2="kn" langCode3b="kan" langCode3t="kan" langFamily="Dravidian" langName="Kannada"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6490" langCode3b="kar" langCode3t="kar" langName="Karen"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6491" langCode2="ks" langCode3b="kas" langCode3t="kas" langFamily="Indian" langName="Kashmiri"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6492" langCode2="ka" langCode3b="geo" langCode3t="kat" langFamily="Ibero-caucasian" langName="Georgian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6493" langCode3b="kau" langCode3t="kau" langName="Kanuri"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6494" langCode3b="kaw" langCode3t="kaw" langName="Kawi"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6495" langCode2="kk" langCode3b="kaz" langCode3t="kaz" langFamily="Turkic/altaic" langName="Kazakh"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6496" langCode3b="kha" langCode3t="kha" langName="Khasi"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6497" langCode3b="khi" langCode3t="khi" langName="Khoisan (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6498" langCode2="km" langCode3b="khm" langCode3t="khm" langFamily="Asian" langName="Khmer"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6499" langCode3b="kho" langCode3t="kho" langName="Khotanese"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6500" langCode2="ki" langCode3b="kik" langCode3t="kik" langName="Kikuyu"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6501" langCode2="rw" langCode3b="kin" langCode3t="kin" langFamily="Negro-african" langName="Kinyarwanda"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6502" langCode2="ky" langCode3b="kir" langCode3t="kir" langFamily="Turkic/altaic" langName="Kirghiz"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6503" langCode3b="kmb" langCode3t="kmb" langName="Kimbundu"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6504" langCode3b="kok" langCode3t="kok" langName="Konkani"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6505" langCode2="kv" langCode3b="kom" langCode3t="kom" langName="Komi"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6506" langCode3b="kon" langCode3t="kon" langName="Kongo"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6507" langCode2="ko" langCode3b="kor" langCode3t="kor" langFamily="Asian" langName="Korean"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6508" langCode3b="kos" langCode3t="kos" langName="Kosraean"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6509" langCode3b="kpe" langCode3t="kpe" langName="Kpelle"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6510" langCode3b="kro" langCode3t="kro" langName="Kru"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6511" langCode3b="kru" langCode3t="kru" langName="Kurukh"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6512" langCode3b="kum" langCode3t="kum" langName="Kumyk"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6513" langCode2="ku" langCode3b="kur" langCode3t="kur" langFamily="Iranian" langName="Kurdish"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6514" langCode3b="kut" langCode3t="kut" langName="Kutenai"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6515" langCode3b="lad" langCode3t="lad" langName="Ladino"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6516" langCode3b="lah" langCode3t="lah" langName="Lahnda"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6517" langCode3b="lam" langCode3t="lam" langName="Lamba"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6518" langCode2="lo" langCode3b="lao" langCode3t="lao" langFamily="Asian" langName="Lao"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6519" langCode2="la" langCode3b="lat" langCode3t="lat" langFamily="Latin/greek" langName="Latin"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6520" langCode2="lv" langCode3b="lav" langCode3t="lav" langFamily="Baltic" langName="Latvian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6521" langCode3b="lez" langCode3t="lez" langName="Lezghian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6522" langCode2="ln" langCode3b="lin" langCode3t="lin" langFamily="Negro-african" langName="Lingala"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6523" langCode2="lt" langCode3b="lit" langCode3t="lit" langFamily="Baltic" langName="Lithuanian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6524" langCode3b="lol" langCode3t="lol" langName="Mongo"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6525" langCode3b="loz" langCode3t="loz" langName="Lozi"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6526" langCode2="lb" langCode3b="ltz" langCode3t="ltz" langName="Letzeburgesch"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6527" langCode3b="lua" langCode3t="lua" langName="Luba-Lulua"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6528" langCode3b="lub" langCode3t="lub" langName="Luba-Katanga"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6529" langCode3b="lug" langCode3t="lug" langName="Ganda"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6530" langCode3b="lui" langCode3t="lui" langName="Luiseno"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6531" langCode3b="lun" langCode3t="lun" langName="Lunda"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6532" langCode3b="luo" langCode3t="luo" langName="Luo (Kenya and Tanzania)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6533" langCode3b="lus" langCode3t="lus" langName="lushai"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6534" langCode3b="mad" langCode3t="mad" langName="Madurese"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6535" langCode3b="mag" langCode3t="mag" langName="Magahi"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6536" langCode2="mh" langCode3b="mah" langCode3t="mah" langName="Marshall"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6537" langCode3b="mai" langCode3t="mai" langName="Maithili"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6538" langCode3b="mak" langCode3t="mak" langName="Makasar"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6539" langCode2="ml" langCode3b="mal" langCode3t="mal" langFamily="Dravidian" langName="Malayalam"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6540" langCode3b="man" langCode3t="man" langName="Mandingo"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6541" langCode3b="map" langCode3t="map" langName="Austronesian (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6542" langCode2="mr" langCode3b="mar" langCode3t="mar" langFamily="Indian" langName="Marathi"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6543" langCode3b="mas" langCode3t="mas" langName="Masai"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6544" langCode3b="mdr" langCode3t="mdr" langName="Mandar"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6545" langCode3b="men" langCode3t="men" langName="Mende"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6546" langCode3b="mga" langCode3t="mga" langName="Irish, Middle (900-1200)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6547" langCode3b="mic" langCode3t="mic" langName="Micmac"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6548" langCode3b="min" langCode3t="min" langName="Minangkabau"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6549" langCode3b="mis" langCode3t="mis" langName="Miscellaneous languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6550" langCode2="mk" langCode3b="mac" langCode3t="mkd" langFamily="Slavic" langName="Macedonian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6551" langCode3b="mkh" langCode3t="mkh" langName="Mon-Khmer (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6552" langCode2="mg" langCode3b="mlg" langCode3t="mlg" langFamily="Oceanic/indonesian" langName="Malagasy"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6553" langCode2="mt" langCode3b="mlt" langCode3t="mlt" langFamily="Semitic" langName="Maltese"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6554" langCode3b="mnc" langCode3t="mnc" langName="Manchu"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6555" langCode3b="mni" langCode3t="mni" langName="Manipuri"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6556" langCode3b="mno" langCode3t="mno" langName="Manobo languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6557" langCode3b="moh" langCode3t="moh" langName="Mohawk"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6558" langCode2="mo" langCode3b="mol" langCode3t="mol" langFamily="Romance" langName="Moldavian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6559" langCode2="mn" langCode3b="mon" langCode3t="mon" langName="Mongolian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6560" langCode3b="mos" langCode3t="mos" langName="Mossi"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6561" langCode2="mi" langCode3b="mao" langCode3t="mri" langFamily="Oceanic/indonesian" langName="Maori"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6562" langCode2="ms" langCode3b="may" langCode3t="msa" langFamily="Oceanic/indonesian" langName="Malay"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6563" langCode3b="mul" langCode3t="mul" langName="Multiple languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6564" langCode3b="mun" langCode3t="mun" langName="Munda languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6565" langCode3b="mus" langCode3t="mus" langName="Creek"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6566" langCode3b="mwr" langCode3t="mwr" langName="Marwari"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6567" langCode2="my" langCode3b="bur" langCode3t="mya" langFamily="Asian" langName="Burmese"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6568" langCode3b="myn" langCode3t="myn" langName="Mayan languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6569" langCode3b="nah" langCode3t="nah" langName="Nahuatl"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6570" langCode3b="nai" langCode3t="nai" langName="North American Indian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6571" langCode2="na" langCode3b="nau" langCode3t="nau" langName="Nauru"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6572" langCode2="nv" langCode3b="nav" langCode3t="nav" langName="Navajo"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6573" langCode2="nr" langCode3b="nbl" langCode3t="nbl" langName="Ndebele, South"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6574" langCode2="nd" langCode3b="nde" langCode3t="nde" langName="Ndebele, North"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6575" langCode2="ng" langCode3b="ndo" langCode3t="ndo" langName="Ndonga"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6576" langCode3b="nds" langCode3t="nds" langName="Low German; Low Saxon; German, Low; Saxon, Low"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6577" langCode2="ne" langCode3b="nep" langCode3t="nep" langFamily="Indian" langName="Nepali"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6578" langCode3b="new" langCode3t="new" langName="Newari"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6579" langCode3b="nia" langCode3t="nia" langName="Nias"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6580" langCode3b="nic" langCode3t="nic" langName="Niger-Kordofanian (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6581" langCode3b="niu" langCode3t="niu" langName="Niuean"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6582" langCode2="nl" langCode3b="dut" langCode3t="nld" langFamily="Germanic" langName="Dutch"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6583" langCode2="nn" langCode3b="nno" langCode3t="nno" langName="Norwegian Nynorsk"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6584" langCode2="nb" langCode3b="nob" langCode3t="nob" langName="Norwegian Bokmål"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6585" langCode3b="non" langCode3t="non" langName="Norse, Old"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6586" langCode2="no" langCode3b="nor" langCode3t="nor" langFamily="Germanic" langName="Norwegian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6587" langCode3b="nso" langCode3t="nso" langName="Sotho, Northern"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6588" langCode3b="nub" langCode3t="nub" langName="Nubian languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6589" langCode2="ny" langCode3b="nya" langCode3t="nya" langName="Chichewa; Nyanja"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6590" langCode3b="nym" langCode3t="nym" langName="Nyamwezi"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6591" langCode3b="nyn" langCode3t="nyn" langName="Nyankole"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6592" langCode3b="nyo" langCode3t="nyo" langName="Nyoro"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6593" langCode3b="nzi" langCode3t="nzi" langName="Nzima"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6594" langCode2="oc" langCode3b="oci" langCode3t="oci" langFamily="Romance" langName="Occitan (post 1500); Provençal"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6595" langCode3b="oji" langCode3t="oji" langName="Ojibwa"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6596" langCode2="or" langCode3b="ori" langCode3t="ori" langFamily="Indian" langName="Oriya"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6597" langCode2="om" langCode3b="orm" langCode3t="orm" langFamily="Hamitic" langName="Oromo"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6598" langCode3b="osa" langCode3t="osa" langName="Osage"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6599" langCode2="os" langCode3b="oss" langCode3t="oss" langName="Ossetian; Ossetic"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6600" langCode3b="ota" langCode3t="ota" langName="Turkish, Ottoman (1500-1928)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6601" langCode3b="oto" langCode3t="oto" langName="Otomian languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6602" langCode3b="paa" langCode3t="paa" langName="Papuan (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6603" langCode3b="pag" langCode3t="pag" langName="Pangasinan"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6604" langCode3b="pal" langCode3t="pal" langName="Pahlavi"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6605" langCode3b="pam" langCode3t="pam" langName="Pampanga"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6606" langCode2="pa" langCode3b="pan" langCode3t="pan" langFamily="Indian" langName="Panjabi"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6607" langCode3b="pap" langCode3t="pap" langName="Papiamento"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6608" langCode3b="pau" langCode3t="pau" langName="Palauan"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6609" langCode3b="peo" langCode3t="peo" langName="Persian, Old (ca. 600-400 b.c.)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6610" langCode3b="phi" langCode3t="phi" langName="Philippine (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6611" langCode2="pi" langCode3b="pli" langCode3t="pli" langName="Pali"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6612" langCode2="pl" langCode3b="pol" langCode3t="pol" langFamily="Slavic" langName="Polish"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6613" langCode3b="pon" langCode3t="pon" langName="Pohnpeian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6614" langCode2="pt" langCode3b="por" langCode3t="por" langFamily="Romance" langName="Portuguese"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6615" langCode3b="pra" langCode3t="pra" langName="Prakrit languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6616" langCode3b="pro" langCode3t="pro" langName="Provençal, Old (to 1500)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6617" langCode2="ps" langCode3b="pus" langCode3t="pus" langFamily="Iranian" langName="Pushto"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6618" langCode2="qu" langCode3b="que" langCode3t="que" langFamily="Amerindian" langName="Quechua"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6619" langCode3b="raj" langCode3t="raj" langName="Rajasthani"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6620" langCode3b="rap" langCode3t="rap" langName="Rapanui"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6621" langCode3b="rar" langCode3t="rar" langName="Rarotongan"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6622" langCode3b="roa" langCode3t="roa" langName="Romance (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6623" langCode3b="rom" langCode3t="rom" langName="Romany"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6624" langCode2="ro" langCode3b="rum" langCode3t="ron" langFamily="Romance" langName="Romanian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6625" langCode2="rn" langCode3b="run" langCode3t="run" langFamily="Negro-african" langName="Rundi"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6626" langCode2="ru" langCode3b="rus" langCode3t="rus" langFamily="Slavic" langName="Russian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6627" langCode3b="sad" langCode3t="sad" langName="Sandawe"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6628" langCode2="sg" langCode3b="sag" langCode3t="sag" langFamily="Negro-african" langName="Sango"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6629" langCode3b="sah" langCode3t="sah" langName="Yakut"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6630" langCode3b="sai" langCode3t="sai" langName="South American Indian (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6631" langCode3b="sal" langCode3t="sal" langName="Salishan languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6632" langCode3b="sam" langCode3t="sam" langName="Samaritan Aramaic"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6633" langCode2="sa" langCode3b="san" langCode3t="san" langFamily="Indian" langName="Sanskrit"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6634" langCode3b="sas" langCode3t="sas" langName="Sasak"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6635" langCode3b="sat" langCode3t="sat" langName="Santali"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6636" langCode3b="sco" langCode3t="sco" langName="Scots"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6637" langCode3b="sel" langCode3t="sel" langName="Selkup"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6638" langCode3b="sem" langCode3t="sem" langName="Semitic (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6639" langCode3b="sga" langCode3t="sga" langName="Irish, Old (to 900)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6640" langCode3b="sgn" langCode3t="sgn" langName="Sign Languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6641" langCode3b="shn" langCode3t="shn" langName="Shan"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6642" langCode3b="sid" langCode3t="sid" langName="Sidamo"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6643" langCode2="si" langCode3b="sin" langCode3t="sin" langFamily="Indian" langName="Sinhalese"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6644" langCode3b="sio" langCode3t="sio" langName="Siouan languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6645" langCode3b="sit" langCode3t="sit" langName="Sino-Tibetan (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6646" langCode3b="sla" langCode3t="sla" langName="Slavic (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6647" langCode2="sk" langCode3b="slo" langCode3t="slk" langFamily="Slavic" langName="Slovak"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6648" langCode2="sl" langCode3b="slv" langCode3t="slv" langFamily="Slavic" langName="Slovenian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6649" langCode2="se" langCode3b="sme" langCode3t="sme" langName="Northern Sami"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6650" langCode3b="smi" langCode3t="smi" langName="Sami languages (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6651" langCode2="sm" langCode3b="smo" langCode3t="smo" langFamily="Oceanic/indonesian" langName="Samoan"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6652" langCode2="sn" langCode3b="sna" langCode3t="sna" langFamily="Negro-african" langName="Shona"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6653" langCode2="sd" langCode3b="snd" langCode3t="snd" langFamily="Indian" langName="Sindhi"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6654" langCode3b="snk" langCode3t="snk" langName="Soninke"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6655" langCode3b="sog" langCode3t="sog" langName="Sogdian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6656" langCode2="so" langCode3b="som" langCode3t="som" langFamily="Hamitic" langName="Somali"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6657" langCode3b="son" langCode3t="son" langName="Songhai"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6658" langCode2="st" langCode3b="sot" langCode3t="sot" langFamily="Negro-african" langName="Sotho, Southern"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6659" langCode2="es" langCode3b="spa" langCode3t="spa" langFamily="Romance" langName="Spanish"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6660" langCode2="sq" langCode3b="alb" langCode3t="sqi" langFamily="Indo-european (other)" langName="Albanian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6661" langCode2="sc" langCode3b="srd" langCode3t="srd" langName="Sardinian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6662" langCode2="sr" langCode3b="scc" langCode3t="srp" langFamily="Slavic" langName="Serbian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6663" langCode3b="srr" langCode3t="srr" langName="Serer"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6664" langCode3b="ssa" langCode3t="ssa" langName="Nilo-Saharan (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6665" langCode2="ss" langCode3b="ssw" langCode3t="ssw" langFamily="Negro-african" langName="Swati"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6666" langCode3b="suk" langCode3t="suk" langName="Sukuma"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6667" langCode2="su" langCode3b="sun" langCode3t="sun" langFamily="Oceanic/indonesian" langName="Sundanese"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6668" langCode3b="sus" langCode3t="sus" langName="Susu"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6669" langCode3b="sux" langCode3t="sux" langName="Sumerian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6670" langCode2="sw" langCode3b="swa" langCode3t="swa" langFamily="Negro-african" langName="Swahili"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6671" langCode2="sv" langCode3b="swe" langCode3t="swe" langFamily="Germanic" langName="Swedish"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6672" langCode3b="syr" langCode3t="syr" langName="Syriac"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6673" langCode2="ty" langCode3b="tah" langCode3t="tah" langName="Tahitian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6674" langCode3b="tai" langCode3t="tai" langName="Tai (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6675" langCode2="ta" langCode3b="tam" langCode3t="tam" langFamily="Dravidian" langName="Tamil"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6676" langCode2="tt" langCode3b="tat" langCode3t="tat" langFamily="Turkic/altaic" langName="Tatar"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6677" langCode2="te" langCode3b="tel" langCode3t="tel" langFamily="Dravidian" langName="Telugu"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6678" langCode3b="tem" langCode3t="tem" langName="Timne"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6679" langCode3b="ter" langCode3t="ter" langName="Tereno"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6680" langCode3b="tet" langCode3t="tet" langName="Tetum"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6681" langCode2="tg" langCode3b="tgk" langCode3t="tgk" langFamily="Iranian" langName="Tajik"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6682" langCode2="tl" langCode3b="tgl" langCode3t="tgl" langFamily="Oceanic/indonesian" langName="Tagalog"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6683" langCode2="th" langCode3b="tha" langCode3t="tha" langFamily="Asian" langName="Thai"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6684" langCode3b="tig" langCode3t="tig" langName="Tigre"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6685" langCode2="ti" langCode3b="tir" langCode3t="tir" langFamily="Semitic" langName="Tigrinya"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6686" langCode3b="tiv" langCode3t="tiv" langName="Tiv"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6687" langCode3b="tkl" langCode3t="tkl" langName="Tokelau"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6688" langCode3b="tli" langCode3t="tli" langName="Tlingit"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6689" langCode3b="tmh" langCode3t="tmh" langName="Tamashek"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6690" langCode3b="tog" langCode3t="tog" langName="Tonga (Nyasa)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6691" langCode2="to" langCode3b="ton" langCode3t="ton" langFamily="Oceanic/indonesian" langName="Tonga (Tonga Islands)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6692" langCode3b="tpi" langCode3t="tpi" langName="Tok Pisin"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6693" langCode3b="tsi" langCode3t="tsi" langName="Tsimshian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6694" langCode2="tn" langCode3b="tsn" langCode3t="tsn" langFamily="Negro-african" langName="Tswana"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6695" langCode2="ts" langCode3b="tso" langCode3t="tso" langFamily="Negro-african" langName="Tsonga"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6696" langCode2="tk" langCode3b="tuk" langCode3t="tuk" langFamily="Turkic/altaic" langName="Turkmen"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6697" langCode3b="tum" langCode3t="tum" langName="Tumbuka"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6698" langCode2="tr" langCode3b="tur" langCode3t="tur" langFamily="Turkic/altaic" langName="Turkish"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6699" langCode3b="tut" langCode3t="tut" langName="Altaic (Other)"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6700" langCode3b="tvl" langCode3t="tvl" langName="Tuvalu"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6701" langCode2="tw" langCode3b="twi" langCode3t="twi" langFamily="Negro-african" langName="Twi"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6702" langCode3b="tyv" langCode3t="tyv" langName="Tuvinian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6703" langCode3b="uga" langCode3t="uga" langName="Ugaritic"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6704" langCode2="ug" langCode3b="uig" langCode3t="uig" langName="Uighur"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6705" langCode2="uk" langCode3b="ukr" langCode3t="ukr" langFamily="Slavic" langName="Ukrainian"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6706" langCode3b="umb" langCode3t="umb" langName="Umbundu"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6707" langCode3b="und" langCode3t="und" langName="Undetermined"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6708" langCode2="ur" langCode3b="urd" langCode3t="urd" langFamily="Indian" langName="Urdu"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6709" langCode2="uz" langCode3b="uzb" langCode3t="uzb" langFamily="Turkic/altaic" langName="Uzbek"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6710" langCode3b="vai" langCode3t="vai" langName="Vai"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6711" langCode3b="ven" langCode3t="ven" langName="Venda"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6712" langCode2="vi" langCode3b="vie" langCode3t="vie" langFamily="Asian" langName="Vietnamese"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6713" langCode2="vo" langCode3b="vol" langCode3t="vol" langFamily="International aux." langName="Volapük"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6714" langCode3b="vot" langCode3t="vot" langName="Votic"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6715" langCode3b="wak" langCode3t="wak" langName="Wakashan languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6716" langCode3b="wal" langCode3t="wal" langName="Walamo"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6717" langCode3b="war" langCode3t="war" langName="Waray"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6718" langCode3b="was" langCode3t="was" langName="Washo"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6719" langCode3b="wen" langCode3t="wen" langName="Sorbian languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6720" langCode2="wo" langCode3b="wol" langCode3t="wol" langFamily="Negro-african" langName="Wolof"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6721" langCode2="xh" langCode3b="xho" langCode3t="xho" langFamily="Negro-african" langName="Xhosa"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6722" langCode3b="yao" langCode3t="yao" langName="Yao"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6723" langCode3b="yap" langCode3t="yap" langName="Yapese"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6724" langCode2="yi" langCode3b="yid" langCode3t="yid" langName="Yiddish"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6725" langCode2="yo" langCode3b="yor" langCode3t="yor" langFamily="Negro-african" langName="Yoruba"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6726" langCode3b="ypk" langCode3t="ypk" langName="Yupik languages"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6727" langCode3b="zap" langCode3t="zap" langName="Zapotec"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6728" langCode3b="zen" langCode3t="zen" langName="Zenaga"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6729" langCode2="za" langCode3b="zha" langCode3t="zha" langName="Zhuang"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6730" langCode2="zh" langCode3b="chi" langCode3t="zho" langFamily="Asian" langName="Chinese"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6731" langCode3b="znd" langCode3t="znd" langName="Zande"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6732" langCode2="zu" langCode3b="zul" langCode3t="zul" langFamily="Negro-african" langName="Zulu"/>
+  <contents xsi:type="biz-language:StandardLanguage" standardLanguageId="6733" langCode3b="zun" langCode3t="zun" langName="Zuni"/>
+</mimo-ent:EntityContainer>

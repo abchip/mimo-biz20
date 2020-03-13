@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-period="http://www.abchip.org/mimo/biz/common/period" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/period http://www.abchip.org/mimo/biz#//common/period http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="002_common_seed,seed-initial_PeriodData">
+  <contents xsi:type="biz-period:PeriodType" periodTypeId="FISCAL_YEAR" description="Fiscal Year" periodLength="1">
+    <uomId href="Uom#TF_yr"/>
+  </contents>
+  <contents xsi:type="biz-period:PeriodType" periodTypeId="FISCAL_QUARTER" description="Fiscal Quarter" periodLength="3">
+    <uomId href="Uom#TF_mon"/>
+  </contents>
+  <contents xsi:type="biz-period:PeriodType" periodTypeId="FISCAL_MONTH" description="Fiscal Month" periodLength="1">
+    <uomId href="Uom#TF_mon"/>
+  </contents>
+  <contents xsi:type="biz-period:PeriodType" periodTypeId="FISCAL_WEEK" description="Fiscal Week" periodLength="1">
+    <uomId href="Uom#TF_wk"/>
+  </contents>
+  <contents xsi:type="biz-period:PeriodType" periodTypeId="FISCAL_BIWEEK" description="Fiscal Bi-Week" periodLength="2">
+    <uomId href="Uom#TF_wk"/>
+  </contents>
+  <contents xsi:type="biz-period:PeriodType" periodTypeId="SALES_QUARTER" description="Sales Quarter" periodLength="3">
+    <uomId href="Uom#TF_mon"/>
+  </contents>
+  <contents xsi:type="biz-period:PeriodType" periodTypeId="SALES_MONTH" description="Sales Month" periodLength="1">
+    <uomId href="Uom#TF_mon"/>
+  </contents>
+</mimo-ent:EntityContainer>

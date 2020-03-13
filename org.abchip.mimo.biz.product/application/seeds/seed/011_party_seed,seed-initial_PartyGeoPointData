@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-geo="http://www.abchip.org/mimo/biz/common/geo" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/geo http://www.abchip.org/mimo/biz#//common/geo http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="011_party_seed,seed-initial_PartyGeoPointData">
+  <contents xsi:type="biz-geo:GeoPoint" geoPointId="9000" elevation="4770" information="A testing GeoPoint for contactMechId=9015 (DemoCustomer)" latitude="40.297264" longitude="-111.696625">
+    <dataSourceId href="DataSource#GEOPT_GOOGLE"/>
+    <elevationUomId href="Uom#LEN_ft"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoPoint" geoPointId="9001" elevation="10" information="A testing GeoPoint for contactMechId=EUROCUSTOMER (EuroCustomer)" latitude="52.350" longitude="4.917">
+    <dataSourceId href="DataSource#GEOPT_GOOGLE"/>
+    <elevationUomId href="Uom#LEN_m"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoPoint" geoPointId="9002" elevation="30" information="A testing GeoPoint for contactMechId=FRENCHCUSTOMER (FrenchCustomer)" latitude="43.492" longitude="3.684">
+    <dataSourceId href="DataSource#GEOPT_GOOGLE"/>
+    <elevationUomId href="Uom#LEN_m"/>
+  </contents>
+</mimo-ent:EntityContainer>

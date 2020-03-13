@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-ability="http://www.abchip.org/mimo/biz/humanres/ability" xmlns:biz-employment="http://www.abchip.org/mimo/biz/humanres/employment" xmlns:biz-enum="http://www.abchip.org/mimo/biz/common/enum" xmlns:biz-payment="http://www.abchip.org/mimo/biz/accounting/payment" xmlns:biz-position="http://www.abchip.org/mimo/biz/humanres/position" xmlns:biz-recruitment="http://www.abchip.org/mimo/biz/humanres/recruitment" xmlns:biz-status="http://www.abchip.org/mimo/biz/common/status" xmlns:biz-workeffort="http://www.abchip.org/mimo/biz/workeffort/workeffort" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/humanres/ability http://www.abchip.org/mimo/biz#//ability http://www.abchip.org/mimo/biz/humanres/employment http://www.abchip.org/mimo/biz#//employment http://www.abchip.org/mimo/biz/common/enum http://www.abchip.org/mimo/biz#//common/enum http://www.abchip.org/mimo/biz/accounting/payment http://www.abchip.org/mimo/biz#//accounting/payment http://www.abchip.org/mimo/biz/humanres/position http://www.abchip.org/mimo/biz#//position http://www.abchip.org/mimo/biz/humanres/recruitment http://www.abchip.org/mimo/biz#//recruitment http://www.abchip.org/mimo/biz/common/status http://www.abchip.org/mimo/biz#//common/status http://www.abchip.org/mimo/biz/workeffort/workeffort http://www.abchip.org/mimo/biz#//workeffort http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="010_data_seed,seed-initial_HumanResSeedData">
+  <contents xsi:type="biz-status:StatusType" statusTypeId="EMPLOYMENT_APP_STTS" description="Employment Application"/>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="EMPL_POSITION_STATUS" description="Employee Position Status"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="EMPL_POS_PLANNEDFOR" description="Planned For" sequenceId="01" statusCode="PLANNED_FOR">
+    <statusTypeId href="StatusType#EMPL_POSITION_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="EMPL_POS_ACTIVE" description="Active/Open" sequenceId="02" statusCode="ACTIVE">
+    <statusTypeId href="StatusType#EMPL_POSITION_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="EMPL_POS_INACTIVE" description="Inactive/Closed" sequenceId="03" statusCode="INACTIVE">
+    <statusTypeId href="StatusType#EMPL_POSITION_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="UNEMPL_CLAIM_STATUS" description="Unemployment Claim"/>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="HR_DEGREE_STATUS" description="Degree status"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="HR_DS_COMPLETE" description="Completed" sequenceId="01" statusCode="COMPLETE">
+    <statusTypeId href="StatusType#HR_DEGREE_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="HR_DS_INCOMPLETE" description="Incomplete" sequenceId="02" statusCode="INCOMPLETE">
+    <statusTypeId href="StatusType#HR_DEGREE_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="HR_DS_DEFERRED" description="Deferred" sequenceId="03" statusCode="DEFERRED">
+    <statusTypeId href="StatusType#HR_DEGREE_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="HR_JOB_STATUS" description="Job status"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="HR_JS_FULLTIME" description="Full time" sequenceId="01" statusCode="FULLTIME">
+    <statusTypeId href="StatusType#HR_JOB_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="HR_JS_PARTTIME" description="Part time" sequenceId="02" statusCode="PARTTIME">
+    <statusTypeId href="StatusType#HR_JOB_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="HR_JS_CONTRACTOR" description="Contractor" sequenceId="03" statusCode="CONTRACTOR">
+    <statusTypeId href="StatusType#HR_JOB_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="PARTYQUAL_VERIFY" description="PartyQual verification status"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="PQV_NOT_VERIFIED" description="Not verified" sequenceId="01" statusCode="NOT_VERIFIED">
+    <statusTypeId href="StatusType#PARTYQUAL_VERIFY"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PQV_VERIFIED" description="Verified" sequenceId="02" statusCode="VERIFIED">
+    <statusTypeId href="StatusType#PARTYQUAL_VERIFY"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="IJP_STATUS" description="Internal Job Posting Status"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="IJP_APPROVED" description="Approved">
+    <statusTypeId href="StatusType#IJP_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="IJP_REJECTED" description="Rejected">
+    <statusTypeId href="StatusType#IJP_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="RELOCATION_STATUS" description="Relocation Status"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="STATUS_PENDING" description="Pending">
+    <statusTypeId href="StatusType#RELOCATION_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="STATUS_RELOCATED" description="Relocated">
+    <statusTypeId href="StatusType#RELOCATION_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="TRAINING_STATUS" description="Training Status"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="TRAINING_APPLIED" description="Applied">
+    <statusTypeId href="StatusType#TRAINING_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="TRAINING_APPROVED" description="Approved">
+    <statusTypeId href="StatusType#TRAINING_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="TRAINING_ASSIGNED" description="Assigned">
+    <statusTypeId href="StatusType#TRAINING_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="TRAINING_PROPOSED" description="Proposed">
+    <statusTypeId href="StatusType#TRAINING_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="TRAINING_REJECTED" description="Rejected">
+    <statusTypeId href="StatusType#TRAINING_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="LEAVE_STATUS" description="Employee Leave Status"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="LEAVE_APPROVED" description="Approved">
+    <statusTypeId href="StatusType#LEAVE_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="LEAVE_CREATED" description="Created">
+    <statusTypeId href="StatusType#LEAVE_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="LEAVE_REJECTED" description="Rejected">
+    <statusTypeId href="StatusType#LEAVE_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-position:EmplPositionType" emplPositionTypeId="PROGRAMMER" description="Programmer"/>
+  <contents xsi:type="biz-position:EmplPositionType" emplPositionTypeId="SYS_ADMIN" description="System Administrator"/>
+  <contents xsi:type="biz-position:EmplPositionType" emplPositionTypeId="BIZ_ANALYST" description="Business Analyst"/>
+  <contents xsi:type="biz-position:EmplPositionType" emplPositionTypeId="CEO" description="Chief Executive Officer"/>
+  <contents xsi:type="biz-position:EmplPositionType" emplPositionTypeId="CFO" description="Chief Financial Officer"/>
+  <contents xsi:type="biz-position:EmplPositionType" emplPositionTypeId="CIO" description="Chief Information Officer"/>
+  <contents xsi:type="biz-position:EmplPositionType" emplPositionTypeId="CMO" description="Chief Marketing Officer"/>
+  <contents xsi:type="biz-position:EmplPositionType" emplPositionTypeId="CCO" description="Chief Compliance Officer"/>
+  <contents xsi:type="biz-position:EmplPositionType" emplPositionTypeId="CSO" description="Chief Security Officer"/>
+  <contents xsi:type="biz-ability:ResponsibilityType" responsibilityTypeId="FIN_MGMT" description="Finance Management"/>
+  <contents xsi:type="biz-ability:ResponsibilityType" responsibilityTypeId="INV_MGMT" description="Inventory Management"/>
+  <contents xsi:type="biz-ability:ResponsibilityType" responsibilityTypeId="PUR_MGMT" description="Purchase Management"/>
+  <contents xsi:type="biz-ability:ResponsibilityType" responsibilityTypeId="RES_MGMT" description="Resource Management"/>
+  <contents xsi:type="biz-ability:ResponsibilityType" responsibilityTypeId="PROD_MGMT" description="Production Management"/>
+  <contents xsi:type="biz-ability:ResponsibilityType" responsibilityTypeId="SALES_MGMT" description="Sales Management"/>
+  <contents xsi:type="biz-ability:ResponsibilityType" responsibilityTypeId="GENERAL_MGMT" description="General Management"/>
+  <contents xsi:type="biz-ability:ResponsibilityType" responsibilityTypeId="INFO_MGMT" description="Information Management"/>
+  <contents xsi:type="biz-ability:ResponsibilityType" responsibilityTypeId="MKTG_MGMT" description="Marketing Management"/>
+  <contents xsi:type="biz-ability:ResponsibilityType" responsibilityTypeId="COMPLI_MGMT" description="Compliance Management"/>
+  <contents xsi:type="biz-ability:ResponsibilityType" responsibilityTypeId="SECUR_MGMT" description="Security Management"/>
+  <contents xsi:type="biz-employment:BenefitType" benefitTypeId="HEALTH" description="Health"/>
+  <contents xsi:type="biz-employment:BenefitType" benefitTypeId="VACATION" description="Vacation"/>
+  <contents xsi:type="biz-employment:BenefitType" benefitTypeId="SICK_LEAVE" description="Sick Leave"/>
+  <contents xsi:type="biz-ability:TrainingClassType" trainingClassTypeId="BASIC_TRAINING" description="Basic Training"/>
+  <contents xsi:type="biz-ability:TrainingClassType" trainingClassTypeId="ONJOB_TRAINING" description="On Job Training"/>
+  <contents xsi:type="biz-ability:TrainingClassType" trainingClassTypeId="ADVAN_TRAINING" description="Advance Training"/>
+  <contents xsi:type="biz-ability:TrainingClassType" trainingClassTypeId="IMPRO_TRAINING" description="Improvement Training"/>
+  <contents xsi:type="biz-ability:PartyQualType" partyQualTypeId="DEGREE" description="Degree"/>
+  <contents xsi:type="biz-ability:PartyQualType" partyQualTypeId="CERTIFICATION" description="Certification"/>
+  <contents xsi:type="biz-ability:PartyQualType" partyQualTypeId="B.Tech" description="Bachelor of Technology">
+    <parentTypeId href="PartyQualType#DEGREE"/>
+  </contents>
+  <contents xsi:type="biz-ability:PartyQualType" partyQualTypeId="MBA" description="Masters of business administration">
+    <parentTypeId href="PartyQualType#DEGREE"/>
+  </contents>
+  <contents xsi:type="biz-ability:PartyQualType" partyQualTypeId="MSC" description="Masters of Science">
+    <parentTypeId href="PartyQualType#DEGREE"/>
+  </contents>
+  <contents xsi:type="biz-ability:PartyQualType" partyQualTypeId="BSC" description="Bachelor of Science">
+    <parentTypeId href="PartyQualType#DEGREE"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="INTR_RATNG" description="Interview Rating"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="INTR_RATNG_A" description="A (above 75%)" enumCode="RATING_A" sequenceId="01">
+    <enumTypeId href="EnumerationType#INTR_RATNG"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="INTR_RATNG_B" description="B (60-75%)" enumCode="RATING_B" sequenceId="02">
+    <enumTypeId href="EnumerationType#INTR_RATNG"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="INTR_RATNG_C" description="C (45-60%)" enumCode="RATING_C" sequenceId="03">
+    <enumTypeId href="EnumerationType#INTR_RATNG"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="INTR_RATNG_D" description="D (below 40%)" enumCode="RATING_D" sequenceId="04">
+    <enumTypeId href="EnumerationType#INTR_RATNG"/>
+  </contents>
+  <contents xsi:type="biz-employment:EmploymentAppSourceType" employmentAppSourceTypeId="NEWS_PAPER" description="NewsPaper"/>
+  <contents xsi:type="biz-employment:EmploymentAppSourceType" employmentAppSourceTypeId="PER_REF" description="PersonalReferal"/>
+  <contents xsi:type="biz-employment:EmploymentAppSourceType" employmentAppSourceTypeId="INTERNET" description="Internet"/>
+  <contents xsi:type="biz-employment:EmploymentAppSourceType" employmentAppSourceTypeId="ADV" description="Advertisement"/>
+  <contents xsi:type="biz-payment:DeductionType" deductionTypeId="FED_TAX" description="Federal Tax"/>
+  <contents xsi:type="biz-payment:DeductionType" deductionTypeId="STATE_TAX" description="State Tax"/>
+  <contents xsi:type="biz-payment:DeductionType" deductionTypeId="INSURANCE" description="Insurance"/>
+  <contents xsi:type="biz-payment:DeductionType" deductionTypeId="CAFE_PLAN" description="Cafeteria Plan"/>
+  <contents xsi:type="biz-employment:TerminationType" terminationTypeId="RESIGN" description="Resignation"/>
+  <contents xsi:type="biz-employment:TerminationType" terminationTypeId="FIRE" description="Fired"/>
+  <contents xsi:type="biz-employment:TerminationType" terminationTypeId="RETIRE" description="Retirement"/>
+  <contents xsi:type="biz-employment:EmplLeaveType" leaveTypeId="INLAND_EARNED" description="Inland Earned Leave"/>
+  <contents xsi:type="biz-employment:EmplLeaveType" leaveTypeId="LOSS_OF_PAY" description="Inland Loss of Pay"/>
+  <contents xsi:type="biz-employment:EmplLeaveType" leaveTypeId="RESTRICTED_HOLIDAY" description="Inland Restricted Holiday"/>
+  <contents xsi:type="biz-employment:EmplLeaveType" leaveTypeId="SPECIAL_DAY_OFF" description="Inland Special Day Off"/>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="JOB_POSTING" description="Job Posting Types"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="JOB_POSTING_INTR" description="Internal Job Posting" enumCode="POSTING_INTR" sequenceId="01">
+    <enumTypeId href="EnumerationType#JOB_POSTING"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="JOB_POSTING_EXTR" description="External Job Posting" enumCode="POSTING_INTR" sequenceId="02">
+    <enumTypeId href="EnumerationType#JOB_POSTING"/>
+  </contents>
+  <contents xsi:type="biz-position:EmplPositionType" emplPositionTypeId="PROGRAMMER" description="Programmer"/>
+  <contents xsi:type="biz-position:EmplPositionType" emplPositionTypeId="SYS_ADMIN" description="System Administrator"/>
+  <contents xsi:type="biz-position:EmplPositionType" emplPositionTypeId="BIZ_ANALYST" description="Business Analyst"/>
+  <contents xsi:type="biz-position:EmplPositionType" emplPositionTypeId="_NA_"/>
+  <contents xsi:type="biz-recruitment:JobInterviewType" jobInterviewTypeId="JOB_INTERVW" description="It is a process in which an employee is evaluated by an employer for prospective employment in their company"/>
+  <contents xsi:type="biz-recruitment:JobInterviewType" jobInterviewTypeId="EXIT_INTERVW" description="It is conducted by an employer of a departing employee"/>
+  <contents xsi:type="biz-recruitment:JobInterviewType" jobInterviewTypeId="INFORMAL_INTERVW" description="It is a meeting in which a job seeker asks for advice rather than employment"/>
+  <contents xsi:type="biz-recruitment:JobInterviewType" jobInterviewTypeId="CASE_INTERVW" description="It is an interview in which the applicant is given a question/situation and asked to resolve it"/>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="EXAM_TYPE" description="Exam Type"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="EXAM_WRITTEN_APT" description="Written Aptitude Exam" enumCode="WRITTEN_APT" sequenceId="01">
+    <enumTypeId href="EnumerationType#EXAM_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="EXAM_TECHNICAL" description="Technical Exam" enumCode="TECHNICAL" sequenceId="02">
+    <enumTypeId href="EnumerationType#EXAM_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="EXAM_GROUP_DISCN" description="Group Discussion" enumCode="GROUP_DISCN" sequenceId="03">
+    <enumTypeId href="EnumerationType#EXAM_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-employment:EmplLeaveReasonType" emplLeaveReasonTypeId="MEDICAL" description="Medical"/>
+  <contents xsi:type="biz-employment:EmplLeaveReasonType" emplLeaveReasonTypeId="CASUAL" description="Casual"/>
+  <contents xsi:type="biz-ability:PerfReviewItemType" perfReviewItemTypeId="TECH" description="Technical skills"/>
+  <contents xsi:type="biz-ability:PerfReviewItemType" perfReviewItemTypeId="RESP" description="Responsibility"/>
+  <contents xsi:type="biz-ability:PerfReviewItemType" perfReviewItemTypeId="ATT" description="Attitude"/>
+  <contents xsi:type="biz-ability:PerfReviewItemType" perfReviewItemTypeId="COMM" description="Communication skills"/>
+  <contents xsi:type="biz-ability:PerfReviewItemType" perfReviewItemTypeId="JOBSAT" description="Job Satisfaction"/>
+  <contents xsi:type="biz-ability:PerfRatingType" perfRatingTypeId="1" description="Fails to Meet Expectations"/>
+  <contents xsi:type="biz-ability:PerfRatingType" perfRatingTypeId="2" description="Inconsistently Fulfills"/>
+  <contents xsi:type="biz-ability:PerfRatingType" perfRatingTypeId="3" description="Fulfilled Expectations"/>
+  <contents xsi:type="biz-ability:PerfRatingType" perfRatingTypeId="4" description="Frequently Exceeds"/>
+  <contents xsi:type="biz-ability:PerfRatingType" perfRatingTypeId="5" description="Consistently Exceeds"/>
+  <contents xsi:type="biz-workeffort:WorkEffortType" workEffortTypeId="PUBLIC_HOLIDAY" description="Public Holiday"/>
+</mimo-ent:EntityContainer>

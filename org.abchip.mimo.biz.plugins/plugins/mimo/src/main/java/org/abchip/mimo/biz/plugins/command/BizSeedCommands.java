@@ -50,13 +50,12 @@ public class BizSeedCommands extends BaseCommandProviderImpl {
 
 		Delegator delegator = DelegatorFactory.getDelegator(null);
 		try {
-			BizCommandUtils.exportReaderFiltered(context, delegator, "tenant");
-			BizCommandUtils.exportReaderFiltered(context, delegator, "seed");
-			BizCommandUtils.exportReaderFiltered(context, delegator, "seed-initial");
-			BizCommandUtils.exportReaderFiltered(context, delegator, "demo");
-			BizCommandUtils.exportReaderFiltered(context, delegator, "ext");
-			BizCommandUtils.exportReaderFiltered(context, delegator, "ext-test");
-			BizCommandUtils.exportReaderFiltered(context, delegator, "ext-demo");
+			BizCommandUtils.exportReaderFiltered(context, delegator, "seed,seed-initial");
+//			BizCommandUtils.exportReaderFiltered(context, delegator, "tenant");
+//			BizCommandUtils.exportReaderFiltered(context, delegator, "demo");
+//			BizCommandUtils.exportReaderFiltered(context, delegator, "ext");
+//			BizCommandUtils.exportReaderFiltered(context, delegator, "ext-test");
+//			BizCommandUtils.exportReaderFiltered(context, delegator, "ext-demo");
 
 		} catch (Exception e) {
 			e.printStackTrace();

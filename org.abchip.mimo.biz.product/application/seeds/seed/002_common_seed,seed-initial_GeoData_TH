@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-geo="http://www.abchip.org/mimo/biz/common/geo" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/geo http://www.abchip.org/mimo/biz#//common/geo http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="002_common_seed,seed-initial_GeoData_TH">
+  <contents xsi:type="biz-geo:Geo" geoId="TH-10" abbreviation="BKK" geoCode="10" geoName="Bangkok">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-37" abbreviation="ACR" geoCode="37" geoName="Amnat Charoen">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-15" abbreviation="ATG" geoCode="15" geoName="Ang Thong">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-38" abbreviation="BK" geoCode="38" geoName="Bueng Kan">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-31" abbreviation="BRM" geoCode="31" geoName="Buriram">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-24" abbreviation="CCO" geoCode="24" geoName="Chachoengsao">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-18" abbreviation="CNT" geoCode="18" geoName="Chainat">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-36" abbreviation="CPM" geoCode="36" geoName="Chaiyaphum">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-22" abbreviation="CTI" geoCode="22" geoName="Chanthaburi">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-50" abbreviation="CMI" geoCode="50" geoName="Chiang Mai">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-57" abbreviation="CRI" geoCode="57" geoName="Chiang Rai">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-20" abbreviation="CBI" geoCode="20" geoName="Chonburi">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-86" abbreviation="CPN" geoCode="86" geoName="Chumphon">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-46" abbreviation="KSN" geoCode="46" geoName="Kalasin">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-62" abbreviation="KPT" geoCode="62" geoName="Kamphaeng Phet">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-71" abbreviation="KRI" geoCode="71" geoName="Kanchanaburi">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-40" abbreviation="KKN" geoCode="40" geoName="Khon Kaen">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-81" abbreviation="KBI" geoCode="81" geoName="Krabi">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-52" abbreviation="LPG" geoCode="52" geoName="Lampang">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-51" abbreviation="LPN" geoCode="51" geoName="Lamphun">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-42" abbreviation="LEI" geoCode="42" geoName="Loei">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-16" abbreviation="LRI" geoCode="16" geoName="Lopburi">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-58" abbreviation="MSN" geoCode="58" geoName="Mae Hong Son">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-44" abbreviation="MKM" geoCode="44" geoName="Maha Sarakham">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-49" abbreviation="MDH" geoCode="49" geoName="Mukdahan">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-26" abbreviation="NYK" geoCode="26" geoName="Nakhon Nayok">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-73" abbreviation="NPT" geoCode="73" geoName="Nakhon Pathom">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-48" abbreviation="NPM" geoCode="48" geoName="Nakhon Phanom">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-30" abbreviation="NMA" geoCode="30" geoName="Nakhon Ratchasima">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-60" abbreviation="NSN" geoCode="60" geoName="Nakhon Sawan">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-80" abbreviation="NRT" geoCode="80" geoName="Nakhon Si Thammarat">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-55" abbreviation="NAN" geoCode="55" geoName="Nan">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-96" abbreviation="NWT" geoCode="96" geoName="Narathiwat">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-39" abbreviation="NBP" geoCode="39" geoName="Nong Bua Lamphu">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-43" abbreviation="NKI" geoCode="43" geoName="Nong Khai">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-12" abbreviation="NBI" geoCode="12" geoName="Nonthaburi">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-13" abbreviation="PTE" geoCode="13" geoName="Pathum Thani">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-94" abbreviation="PTN" geoCode="94" geoName="Pattani">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-82" abbreviation="PNA" geoCode="82" geoName="Phang Nga">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-93" abbreviation="PLG" geoCode="93" geoName="Phatthalung">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-56" abbreviation="PYO" geoCode="56" geoName="Phayao">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-67" abbreviation="PNB" geoCode="67" geoName="Phetchabun">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-76" abbreviation="PBI" geoCode="76" geoName="Phetchaburi">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-66" abbreviation="PCT" geoCode="66" geoName="Phichit">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-65" abbreviation="PLK" geoCode="65" geoName="Phitsanulok">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-14" abbreviation="AYA" geoCode="14" geoName="Phra Nakhon Si Ayutthaya">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-54" abbreviation="PRE" geoCode="54" geoName="Phrae">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-83" abbreviation="PKT" geoCode="83" geoName="Phuket">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-25" abbreviation="PRI" geoCode="25" geoName="Prachinburi">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-77" abbreviation="PKN" geoCode="77" geoName="Prachuap Khiri Khan">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-85" abbreviation="RNG" geoCode="85" geoName="Ranong">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-70" abbreviation="RBR" geoCode="70" geoName="Ratchaburi">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-21" abbreviation="RYG" geoCode="21" geoName="Rayong">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-45" abbreviation="RET" geoCode="45" geoName="Roi Et">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-27" abbreviation="SKW" geoCode="27" geoName="Sa Kaeo">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-47" abbreviation="SNK" geoCode="47" geoName="Sakon Nakhon">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-11" abbreviation="SPK" geoCode="11" geoName="Samut Prakan">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-74" abbreviation="SKN" geoCode="74" geoName="Samut Sakhon">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-75" abbreviation="SKM" geoCode="75" geoName="Samut Songkhram">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-19" abbreviation="SRI" geoCode="19" geoName="Saraburi">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-91" abbreviation="STN" geoCode="91" geoName="Satun">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-17" abbreviation="SBR" geoCode="17" geoName="Sing Buri">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-33" abbreviation="SSK" geoCode="33" geoName="Sisaket">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-90" abbreviation="SKA" geoCode="90" geoName="Songkhla">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-64" abbreviation="STI" geoCode="64" geoName="Sukhothai">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-72" abbreviation="SPB" geoCode="72" geoName="Suphan Buri">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-84" abbreviation="SNI" geoCode="84" geoName="Surat Thani">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-32" abbreviation="SRN" geoCode="32" geoName="Surin">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-63" abbreviation="TAK" geoCode="63" geoName="Tak">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-92" abbreviation="TRG" geoCode="92" geoName="Trang">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-23" abbreviation="TRT" geoCode="23" geoName="Trat">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-34" abbreviation="UBN" geoCode="34" geoName="Ubon Ratchathani">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-41" abbreviation="UDN" geoCode="41" geoName="Udon Thani">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-61" abbreviation="UTI" geoCode="61" geoName="Uthai Thani">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-53" abbreviation="UTD" geoCode="53" geoName="Uttaradit">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-95" abbreviation="YLA" geoCode="95" geoName="Yala">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TH-35" abbreviation="YST" geoCode="35" geoName="Yasothon">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-10"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-37"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-15"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-38"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-31"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-24"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-18"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-36"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-22"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-50"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-57"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-20"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-86"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-46"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-62"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-71"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-40"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-81"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-52"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-51"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-42"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-16"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-58"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-44"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-49"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-26"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-73"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-48"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-30"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-60"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-80"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-55"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-96"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-39"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-43"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-12"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-13"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-94"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-82"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-93"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-56"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-67"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-76"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-66"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-65"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-14"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-54"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-83"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-25"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-77"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-85"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-70"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-21"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-45"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-27"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-47"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-11"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-74"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-75"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-19"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-91"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-17"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-33"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-90"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-64"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-72"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-84"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-32"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-63"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-92"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-23"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-34"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-41"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-61"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-53"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-95"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#THA"/>
+    <geoIdTo href="Geo#TH-35"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+</mimo-ent:EntityContainer>
