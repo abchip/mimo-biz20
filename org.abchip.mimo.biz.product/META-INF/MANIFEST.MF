@@ -4,7 +4,6 @@ Bundle-Name: MIMO Biz Product
 Bundle-SymbolicName: org.abchip.mimo.biz.product;singleton:=true
 Bundle-Version: 0.2.0.qualifier
 Bundle-Vendor: ABChip
-Automatic-Module-Name: org.abchip.mimo.biz.product
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: org.eclipse.equinox.app,
  org.abchip.mimo.core,
@@ -12,13 +11,11 @@ Require-Bundle: org.eclipse.equinox.app,
  org.abchip.mimo.core.e4,
  org.abchip.mimo.biz.model,
  org.abchip.mimo.biz.base,
- org.abchip.mimo.biz.framework,
- org.abchip.mimo.biz.applications,
- org.abchip.mimo.biz.plugins,
- org.abchip.mimo.biz.themes,
+ org.abchip.mimo.biz.asf,
  org.abchip.mimo.biz.tomcat,
+ org.abchip.mimo.biz.commons,
  org.eclipse.osgi
 Import-Package: org.eclipse.osgi.internal.url,
  org.osgi.framework
-Export-Package: org.abchip.mimo.biz.product
+Export-Package: org.abchip.mimo.biz.product.command
 Bundle-ActivationPolicy: lazy

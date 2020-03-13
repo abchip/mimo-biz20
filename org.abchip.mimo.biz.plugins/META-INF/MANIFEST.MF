@@ -3,6 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: MIMO Biz Plugins
 Bundle-SymbolicName: org.abchip.mimo.biz.plugins
 Bundle-Version: 0.2.0.qualifier
+Fragment-Host: org.abchip.mimo.biz.asf
 Bundle-Vendor: ABChip
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ClassPath: .,
@@ -21,8 +22,7 @@ Require-Bundle: org.abchip.mimo.core,
  org.abchip.mimo.edi,
  org.abchip.mimo.ui,
  org.abchip.mimo.language,
- org.abchip.mimo.biz.framework,
- org.abchip.mimo.biz.applications,
+ org.abchip.mimo.biz.commons,
  org.abchip.mimo.biz.tomcat
 Import-Package: org.eclipse.osgi.framework.console,
  org.eclipse.osgi.launch,

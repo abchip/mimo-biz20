@@ -11,5 +11,7 @@
 	<classpathentry kind="src" path="plugins/passport/src/main/java"/>
 	<classpathentry kind="src" path="plugins/mimo/src/main/java"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.abchip.mimo.biz.applications"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.abchip.mimo.biz.framework"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

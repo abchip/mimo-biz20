@@ -3,6 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: MIMO Biz Framework
 Bundle-SymbolicName: org.abchip.mimo.biz.framework
 Bundle-Version: 0.2.0.qualifier
+Fragment-Host: org.abchip.mimo.biz.asf
 Bundle-ClassPath: .,
  lib/activation-1.1.jar,
  lib/antlr-runtime-3.4.jar,
@@ -1623,5 +1624,5 @@ Export-Package: bsh,
  org.xmlpull.v1,
  ucar.httpservices
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Require-Bundle: org.abchip.mimo.biz.commons;visibility:=reexport,
- org.abchip.mimo.biz.tomcat 
+Require-Bundle: org.abchip.mimo.biz.commons,
+ org.abchip.mimo.biz.tomcat
