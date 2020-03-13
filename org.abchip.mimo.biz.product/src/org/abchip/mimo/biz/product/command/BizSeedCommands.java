@@ -8,8 +8,13 @@
  */
 package org.abchip.mimo.biz.product.command;
 
+import java.net.URI;
+import java.net.URL;
+import java.util.List;
+
 import javax.inject.Inject;
 
+import org.abchip.mimo.biz.plugins.OFBizConstants;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.base.BaseCommandProviderImpl;
 import org.abchip.mimo.entity.EntityContainer;
@@ -70,8 +75,13 @@ public class BizSeedCommands extends BaseCommandProviderImpl {
 
 		String seedName = interpreter.nextArgument();
 		String tenantId = interpreter.nextArgument();
-
-		BizCommandUtils.loadSeeds(context, seedName, tenantId, true);
+		
+		if(seedName.endsWith("/")) {
+			List<URL> seedUrl = context.getResources(this.getClass(), OFBizConstants.SEEDS_PATH + "/" + org.apache.commons.lang.StringUtils.chop(seedName));
+			"".toCharArray();
+		} else {
+			BizCommandUtils.loadSeeds(context, seedName, tenantId, true);
+		}
 	}
 
 	@Override

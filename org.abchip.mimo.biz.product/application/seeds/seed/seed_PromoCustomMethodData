@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-enum="http://www.abchip.org/mimo/biz/common/enum" xmlns:biz-method="http://www.abchip.org/mimo/biz/common/method" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/enum http://www.abchip.org/mimo/biz#//common/enum http://www.abchip.org/mimo/biz/common/method http://www.abchip.org/mimo/biz#//common/method http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="seed_PromoCustomMethodData">
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="PRODUCT_PROMO"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="PRODUCT_PROMO_COND">
+    <parentTypeId href="CustomMethodType#PRODUCT_PROMO"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="PRODUCT_PROMO_ACTION">
+    <parentTypeId href="CustomMethodType#PRODUCT_PROMO"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPC_PRODUCT_AMOUNT" customMethodName="productPromoCondProductAmount" description="Product amount">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_PRODUCT_AMOUNT" enumCode="PPC_PRODUCT_AMOUNT"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPC_PRODUCT_TOTAL" customMethodName="productPromoCondProductTotal" description="Product Total">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_PRODUCT_TOTAL" enumCode="PPC_PRODUCT_TOTAL"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPC_PRODUCT_QUANT" customMethodName="productPromoCondProductQuant" description="X Quantity of Product">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_PRODUCT_QUANT" enumCode="PPC_PRODUCT_QUANT"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPC_NEW_ACCT" customMethodName="productPromoCondNewACCT" description="Account Days Since Created">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_NEW_ACCT" enumCode="PPC_NEW_ACCT"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPC_PARTY_ID" customMethodName="productPromoCondPartyID" description="Party">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_PARTY_ID" enumCode="PPC_PARTY_ID"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPC_PARTY_GRP_MEM" customMethodName="productPromoCondPartyGM" description="Party group member">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_PARTY_GRP_MEM" enumCode="PPC_PARTY_GRP_MEM"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPC_PARTY_CLASS" customMethodName="productPromoCondPartyClass" description="Party classification">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_PARTY_CLASS" enumCode="PPC_PARTY_CLASS"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPC_ROLE_TYPE" customMethodName="productPromoCondRoleType" description="Role type">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_ROLE_TYPE" enumCode="PPC_ROLE_TYPE"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPC_GEO_ID" customMethodName="productPromoCondGeoID" description="Shipping destination">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_GEO_ID" enumCode="PPC_GEO_ID"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPC_ORDER_TOTAL" customMethodName="productPromoCondOrderTotal" description="Cart sub-total">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_ORDER_TOTAL" enumCode="PPC_ORDER_TOTAL"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPC_ORST_HIST" customMethodName="productPromoCondOrderHist" description="Order sub-total X in last Y Months">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_ORST_HIST" enumCode="PPC_ORST_HIST"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPC_ORST_YEAR" customMethodName="productPromoCondOrderYear" description="Order sub-total X since beginning of current year">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_ORST_YEAR" enumCode="PPC_ORST_YEAR"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPC_ORST_LAST_YEAR" customMethodName="productPromoCondOrderLastYear" description="Order sub-total X last year">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_ORST_LAST_YEAR" enumCode="PPC_ORST_LAST_YEAR"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPC_RECURRENCE" customMethodName="productPromoCondPromoRecurrence" description="Promotion Recurrence">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_RECURRENCE" enumCode="PPC_RECURRENCE"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPC_ORDER_SHIPTOTAL" customMethodName="productPromoCondOrderShipTotal" description="Shipping total">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_ORDER_SHIPTOTAL" enumCode="PPC_ORDER_SHIPTOTAL"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPC_LPMUP_AMT" customMethodName="productPromoCondListPriceMinAmount" description="List Price minus Unit Price (Amount)">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_LPMUP_AMT" enumCode="PPC_LPMUP_AMT"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPC_LPMUP_PER" customMethodName="productPromoCondListPriceMinPercent" description="List Price minus Unit Price (Percent)">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_LPMUP_PER" enumCode="PPC_LPMUP_PER"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPA_GWP" customMethodName="productPromoActGiftGWP" description="gift with purchase">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_ACTION"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PROMO_GWP" enumCode="PPA_GWP"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPA_FREE_SHIPPING" customMethodName="productPromoActFreeShip" description="free shipping">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_ACTION"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PROMO_FREE_SHIPPING" enumCode="PPA_FREE_SHIPPING"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPA_PROD_DISC" customMethodName="productPromoActProdDISC" description="X Product for Y% Discount">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_ACTION"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PROMO_PROD_DISC" enumCode="PPA_PROD_DISC"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPA_PROD_AMDISC" customMethodName="productPromoActProdAMDISC" description="X Product for Y Discount">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_ACTION"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PROMO_PROD_AMDISC" enumCode="PPA_PROD_AMDISC"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPA_PROD_PRICE" customMethodName="productPromoActProdPrice" description="X Product for Y Price">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_ACTION"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PROMO_PROD_PRICE" enumCode="PPA_PROD_PRICE"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPA_ORDER_PERCENT" customMethodName="productPromoActOrderPercent" description="Order Percent Discount">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_ACTION"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PROMO_ORDER_PERCENT" enumCode="PPA_ORDER_PERCENT"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPA_ORDER_AMOUNT" customMethodName="productPromoActOrderAmount" description="Order Amount Flat">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_ACTION"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PROMO_ORDER_AMOUNT" enumCode="PPA_ORDER_AMOUNT"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPA_PROD_SPPRC" customMethodName="productPromoActProdSpecialPrice" description="Product for [Special Promo] Price">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_ACTION"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PROMO_PROD_SPPRC" enumCode="PPA_PROD_SPPRC"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPA_TAX_PERCENT" customMethodName="productPromoActTaxPercent" description="Tax % Discount">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_ACTION"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PROMO_TAX_PERCENT" enumCode="PPA_TAX_PERCENT"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PPA_SHIP_CHARGE" customMethodName="productPromoActShipCharge" description="shipping charge">
+    <customMethodTypeId href="CustomMethodType#PRODUCT_PROMO_ACTION"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PROMO_SHIP_CHARGE" enumCode="PPA_SHIP_CHARGE"/>
+</mimo-ent:EntityContainer>

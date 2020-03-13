@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-content="http://www.abchip.org/mimo/biz/content/content" xmlns:biz-data="http://www.abchip.org/mimo/biz/content/data" xmlns:biz-document="http://www.abchip.org/mimo/biz/content/document" xmlns:biz-enum="http://www.abchip.org/mimo/biz/common/enum" xmlns:biz-party="http://www.abchip.org/mimo/biz/party/party" xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/security/securitygroup" xmlns:biz-status="http://www.abchip.org/mimo/biz/common/status" xmlns:biz-subscription="http://www.abchip.org/mimo/biz/product/subscription" xmlns:biz-survey="http://www.abchip.org/mimo/biz/content/survey" xmlns:biz-website="http://www.abchip.org/mimo/biz/content/website" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/content/content http://www.abchip.org/mimo/biz#//content http://www.abchip.org/mimo/biz/content/data http://www.abchip.org/mimo/biz#//data http://www.abchip.org/mimo/biz/content/document http://www.abchip.org/mimo/biz#//document http://www.abchip.org/mimo/biz/common/enum http://www.abchip.org/mimo/biz#//common/enum http://www.abchip.org/mimo/biz/party/party http://www.abchip.org/mimo/biz#//party/party http://www.abchip.org/mimo/biz/security/securitygroup http://www.abchip.org/mimo/biz#//securitygroup http://www.abchip.org/mimo/biz/common/status http://www.abchip.org/mimo/biz#//common/status http://www.abchip.org/mimo/biz/product/subscription http://www.abchip.org/mimo/biz#//subscription http://www.abchip.org/mimo/biz/content/survey http://www.abchip.org/mimo/biz#//survey http://www.abchip.org/mimo/biz/content/website http://www.abchip.org/mimo/biz#//website http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="seed_ContentSeedData">
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="TEMPLATE_MEMBER" description="Template Member"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="STRUCTURE_DEF" description="Document Structure Definition"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="TXFORM_DEF" description="Transformation Definition"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="LIST_ENTRY" description="List Entry"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="TREE_CHILD" description="Tree Child"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="GRAPH_LINK" description="Graph Link"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="ALTERNATE_LOCALE" description="Alternate Locale"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="ALTERNATE_ROLE" description="Alternate Role"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="RESPONSE" description="Response"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="SUB_CONTENT" description="Sub-Content"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="TOPIC" description="Topic"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="DESCRIPTION" description="Description"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="SUBSITE" description="SubSite"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="DEPARTMENT" description="Department"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="RELATED_CONTENT" description="Related content"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="PUBLISH_LINK" description="Publish link"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="ATTRIBUTE" description="Attribute"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="AUTHOR" description="Author"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="SUMMARY" description="Summary"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="COMPDOC_PART" description="Composite Document Part"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="INSTANCE" description="Instance Of"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="ALTERNATIVE_URL" description="Alternative URL"/>
+  <contents xsi:type="biz-content:ContentAssocPredicate" contentAssocPredicateId="member-of" description="The object is a member of the subject."/>
+  <contents xsi:type="biz-content:ContentAssocPredicate" contentAssocPredicateId="defines" description="The object defines the subject."/>
+  <contents xsi:type="biz-content:ContentAssocPredicate" contentAssocPredicateId="extends" description="The object extends the subject."/>
+  <contents xsi:type="biz-content:ContentAssocPredicate" contentAssocPredicateId="related-to" description="The object is related to the subject."/>
+  <contents xsi:type="biz-content:ContentAssocPredicate" contentAssocPredicateId="references" description="The object references the subject."/>
+  <contents xsi:type="biz-content:ContentAssocPredicate" contentAssocPredicateId="topifies" description="Topifies"/>
+  <contents xsi:type="biz-content:ContentAssocPredicate" contentAssocPredicateId="categorizes" description="Categorizes"/>
+  <contents xsi:type="biz-data:MetaDataPredicate" metaDataPredicateId="author-name" description="Name of the author or creator of the subject."/>
+  <contents xsi:type="biz-data:MetaDataPredicate" metaDataPredicateId="author-email" description="eMail address of the author or creator of the subject."/>
+  <contents xsi:type="biz-data:MetaDataPredicate" metaDataPredicateId="event-date" description="The date and time of the event in format [yyyy-MM-dd hh:mm:ss]."/>
+  <contents xsi:type="biz-data:MetaDataPredicate" metaDataPredicateId="event-location" description="The location where subject event took place."/>
+  <contents xsi:type="biz-data:MetaDataPredicate" metaDataPredicateId="event-person-name" description="The name of a person involved in the subject event."/>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="DOCUMENT" description="Document"/>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="TEMPLATE" description="Template or Form"/>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="DECORATOR" description="Decorator">
+    <parentTypeId href="ContentType#TEMPLATE"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="ANNOTATION" description="Annotation"/>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="MENU_CONTAINER" description="Menu Container"/>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="OUTLINE_NODE" description="Outline Node">
+    <parentTypeId href="ContentType#DOCUMENT"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="PAGE_NODE" description="Page Node">
+    <parentTypeId href="ContentType#DOCUMENT"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="SUBPAGE_NODE" description="Sub Page Node">
+    <parentTypeId href="ContentType#DOCUMENT"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="CONTENT_LIST" description="Content List"/>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="TREE_ROOT" description="Tree Root"/>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="GRAPH_ROOT" description="Graph Root"/>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="STRUCTURE_NODE" description="Structure Node"/>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="STRUCTURE_LEAF" description="Structure Leaf"/>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="STRUCTURE_DEF" description="Structure Definition (like DTD)"/>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="TXFORM_DEF" description="Transformation Definition (like XSLT)"/>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="PLACEHOLDER" description="Place Holder"/>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="WEB_SITE_PUB_PT" description="Web Site Publish Point" hasTable="true">
+    <parentTypeId href="ContentType#PLACEHOLDER"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="FORUM_ROOT" description="Forum Root">
+    <parentTypeId href="ContentType#PLACEHOLDER"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="BLOG_ROOT" description="Blog Root">
+    <parentTypeId href="ContentType#PLACEHOLDER"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="FAQ_ROOT" description="FAQ Root">
+    <parentTypeId href="ContentType#PLACEHOLDER"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="DEPARTMENT" description="Department">
+    <parentTypeId href="ContentType#PLACEHOLDER"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="PEOPLE" description="People">
+    <parentTypeId href="ContentType#PLACEHOLDER"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="PERSON" description="Person">
+    <parentTypeId href="ContentType#PLACEHOLDER"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="TOPIC" description="Topic">
+    <parentTypeId href="ContentType#PLACEHOLDER"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="COMPDOC_TEMPLATE" description="Composite Document Template"/>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="COMPDOC_INSTANCE" description="Composite Document Instance"/>
+  <contents xsi:type="biz-data:DataResourceType" dataResourceTypeId="LOCAL_FILE" description="Local File"/>
+  <contents xsi:type="biz-data:DataResourceType" dataResourceTypeId="OFBIZ_FILE" description="File (rel to OFBIZ_HOME)"/>
+  <contents xsi:type="biz-data:DataResourceType" dataResourceTypeId="CONTEXT_FILE" description="File (rel to webapp root)"/>
+  <contents xsi:type="biz-data:DataResourceType" dataResourceTypeId="LOCAL_FILE_BIN" description="Local Binary File"/>
+  <contents xsi:type="biz-data:DataResourceType" dataResourceTypeId="OFBIZ_FILE_BIN" description="Binary File (rel to OFBIZ_HOME)"/>
+  <contents xsi:type="biz-data:DataResourceType" dataResourceTypeId="CONTEXT_FILE_BIN" description="Binary File (rel to webapp root)"/>
+  <contents xsi:type="biz-data:DataResourceType" dataResourceTypeId="LINK" description="HyperLink"/>
+  <contents xsi:type="biz-data:DataResourceType" dataResourceTypeId="URL_RESOURCE" description="URL Resource"/>
+  <contents xsi:type="biz-data:DataResourceType" dataResourceTypeId="SHORT_TEXT" description="Short Text"/>
+  <contents xsi:type="biz-data:DataResourceType" dataResourceTypeId="ELECTRONIC_TEXT" description="Long Text" hasTable="true"/>
+  <contents xsi:type="biz-data:DataResourceType" dataResourceTypeId="AUDIO_OBJECT" description="Audio" hasTable="true"/>
+  <contents xsi:type="biz-data:DataResourceType" dataResourceTypeId="IMAGE_OBJECT" description="Image" hasTable="true"/>
+  <contents xsi:type="biz-data:DataResourceType" dataResourceTypeId="OTHER_OBJECT" description="Other" hasTable="true"/>
+  <contents xsi:type="biz-data:DataResourceType" dataResourceTypeId="VIDEO_OBJECT" description="Video" hasTable="true"/>
+  <contents xsi:type="biz-data:DataResourceType" dataResourceTypeId="SURVEY" description="Survey"/>
+  <contents xsi:type="biz-data:DataResourceType" dataResourceTypeId="SURVEY_RESPONSE" description="Survey Response"/>
+  <contents xsi:type="biz-data:DataTemplateType" dataTemplateTypeId="NONE" description="No Template"/>
+  <contents xsi:type="biz-data:DataTemplateType" dataTemplateTypeId="FTL" description="FreeMarker" extension="ftl"/>
+  <contents xsi:type="biz-data:DataTemplateType" dataTemplateTypeId="WM" description="WebMacro" extension="wm"/>
+  <contents xsi:type="biz-data:DataTemplateType" dataTemplateTypeId="XSLT" description="XSLT" extension="xsl"/>
+  <contents xsi:type="biz-data:DataTemplateType" dataTemplateTypeId="SCREEN_COMBINED" description="Screen widget" extension="xml"/>
+  <contents xsi:type="biz-document:DocumentType" documentTypeId="SHIPPING_DOCUMENT" description="Shipping" hasTable="true"/>
+  <contents xsi:type="biz-document:DocumentType" documentTypeId="BILL_OF_LADING" description="Bill Of Lading">
+    <parentTypeId href="DocumentType#SHIPPING_DOCUMENT"/>
+  </contents>
+  <contents xsi:type="biz-document:DocumentType" documentTypeId="EXPORT_DOCUMENTATION" description="Export">
+    <parentTypeId href="DocumentType#SHIPPING_DOCUMENT"/>
+  </contents>
+  <contents xsi:type="biz-document:DocumentType" documentTypeId="HAZ_MAT_DOCUMENT" description="Haz Mat">
+    <parentTypeId href="DocumentType#SHIPPING_DOCUMENT"/>
+  </contents>
+  <contents xsi:type="biz-document:DocumentType" documentTypeId="MANIFEST" description="Manifest">
+    <parentTypeId href="DocumentType#SHIPPING_DOCUMENT"/>
+  </contents>
+  <contents xsi:type="biz-document:DocumentType" documentTypeId="OTHER_SHIP_DOCUMENT" description="Other Shipping">
+    <parentTypeId href="DocumentType#SHIPPING_DOCUMENT"/>
+  </contents>
+  <contents xsi:type="biz-document:DocumentType" documentTypeId="PACKAGING_SLIP" description="Packing Slip">
+    <parentTypeId href="DocumentType#SHIPPING_DOCUMENT"/>
+  </contents>
+  <contents xsi:type="biz-document:DocumentType" documentTypeId="PORT_CHARGE_DOCUMENT" description="Port Charge">
+    <parentTypeId href="DocumentType#SHIPPING_DOCUMENT"/>
+  </contents>
+  <contents xsi:type="biz-document:DocumentType" documentTypeId="TAX_TARIFF_DOCUMENT" description="Tax Tariff">
+    <parentTypeId href="DocumentType#SHIPPING_DOCUMENT"/>
+  </contents>
+  <contents xsi:type="biz-website:WebSiteContentType" webSiteContentTypeId="BLOG_ROOT" description="Blog Root"/>
+  <contents xsi:type="biz-website:WebSiteContentType" webSiteContentTypeId="DEFAULT_PAGE" description="Default Page"/>
+  <contents xsi:type="biz-website:WebSiteContentType" webSiteContentTypeId="FORUM_ROOT" description="Forum Root"/>
+  <contents xsi:type="biz-website:WebSiteContentType" webSiteContentTypeId="MENU_ROOT" description="Menu Containers"/>
+  <contents xsi:type="biz-website:WebSiteContentType" webSiteContentTypeId="ERROR_ROOT" description="Error Page Containers"/>
+  <contents xsi:type="biz-website:WebSiteContentType" webSiteContentTypeId="PUBLISH_POINT" description="Publish Point"/>
+  <contents xsi:type="biz-website:WebSiteContentType" webSiteContentTypeId="WEB_PAGE" description="Web Page"/>
+  <contents xsi:type="biz-website:WebSiteContentType" webSiteContentTypeId="MAINTENANCE_PAGE" description="Maintenance Page"/>
+  <contents xsi:type="biz-party:RoleType" roleTypeId="LOGGEDIN" description="Logged In"/>
+  <contents xsi:type="biz-party:RoleType" roleTypeId="CONTENT" description="Content Member"/>
+  <contents xsi:type="biz-party:RoleType" roleTypeId="CONTENT_ADMIN" description="Content Administrator">
+    <parentTypeId href="RoleType#CONTENT"/>
+  </contents>
+  <contents xsi:type="biz-party:RoleType" roleTypeId="CONTENT_PUBLISHER" description="Content Publisher">
+    <parentTypeId href="RoleType#CONTENT"/>
+  </contents>
+  <contents xsi:type="biz-party:RoleType" roleTypeId="CONTENT_EDITOR" description="Content Editor">
+    <parentTypeId href="RoleType#CONTENT"/>
+  </contents>
+  <contents xsi:type="biz-party:RoleType" roleTypeId="CONTENT_AUTHOR" description="Content Author">
+    <parentTypeId href="RoleType#CONTENT"/>
+  </contents>
+  <contents xsi:type="biz-party:RoleType" roleTypeId="CONTENT_USER" description="Content User">
+    <parentTypeId href="RoleType#CONTENT"/>
+  </contents>
+  <contents xsi:type="biz-party:RoleType" roleTypeId="CONTENT_GUEST" description="Content Guest">
+    <parentTypeId href="RoleType#CONTENT"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="CNTNTAPPR_STATUS" description="Content Approval Status"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="CNTAP_NOT_READY" description="Not Ready for Approval" sequenceId="01" statusCode="NOT_READY">
+    <statusTypeId href="StatusType#CNTNTAPPR_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="CNTAP_READY" description="Ready for Approval" sequenceId="02" statusCode="READY">
+    <statusTypeId href="StatusType#CNTNTAPPR_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="CNTAP_IN_PROCESS" description="Approval In Process" sequenceId="03" statusCode="IN_PROCESS">
+    <statusTypeId href="StatusType#CNTNTAPPR_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="CNTAP_SOFT_REJ" description="Soft Rejected" sequenceId="11" statusCode="SOFT_REJ">
+    <statusTypeId href="StatusType#CNTNTAPPR_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="CNTAP_REJECTED" description="Rejected" sequenceId="12" statusCode="REJECTED">
+    <statusTypeId href="StatusType#CNTNTAPPR_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="CNTAP_APPROVED" description="Approved" sequenceId="21" statusCode="APPROVED">
+    <statusTypeId href="StatusType#CNTNTAPPR_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="TEMPLATE_MASTER" description="Template Master">
+    <contentTypeId href="ContentType#TREE_ROOT"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="CONTENT_PRIVILEGE" description="Content Privilege"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="CNT_PRV_NA_" description="Not Applicable" enumCode="_NA_" sequenceId="00">
+    <enumTypeId href="EnumerationType#CONTENT_PRIVILEGE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="CNT_PRV_BRONZE" description="Bronze Level" enumCode="BRONZE" sequenceId="10">
+    <enumTypeId href="EnumerationType#CONTENT_PRIVILEGE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="CNT_PRV_SILVER" description="Silver Level" enumCode="SILVER" sequenceId="20">
+    <enumTypeId href="EnumerationType#CONTENT_PRIVILEGE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="CNT_PRV_GOLD" description="Gold Level" enumCode="GOLD" sequenceId="30">
+    <enumTypeId href="EnumerationType#CONTENT_PRIVILEGE"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="SUBSCRIPTION_TYPE" description="Subscription Level"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="SUBSCRIBE_BRONZE" description="Bronze Level" enumCode="BRONZE" sequenceId="10">
+    <enumTypeId href="EnumerationType#SUBSCRIPTION_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="SUBSCRIBE_GOLD" description="Gold Level" enumCode="GOLD" sequenceId="30">
+    <enumTypeId href="EnumerationType#SUBSCRIPTION_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="SUBSCRIBE_SILVER" description="Silver Level" enumCode="SILVER" sequenceId="20">
+    <enumTypeId href="EnumerationType#SUBSCRIPTION_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="SERVER_HIT_STATUS" description="Server Hit"/>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="WEB_CONTENT_STATUS" description="Web Content"/>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="CONTENT_STATUS" description="Content"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="CTNT_IN_PROGRESS" description="In Progress" sequenceId="01" statusCode="IN_PROGRESS">
+    <statusTypeId href="StatusType#CONTENT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="CTNT_INITIAL_DRAFT" description="Initial Draft" sequenceId="02" statusCode="INITIAL_DRAFT">
+    <statusTypeId href="StatusType#CONTENT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="CTNT_REVISED_DRAFT" description="Revised Draft" sequenceId="03" statusCode="REVISED_DRAFT">
+    <statusTypeId href="StatusType#CONTENT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="CTNT_FINAL_DRAFT" description="Final Draft" sequenceId="04" statusCode="FINAL_DRAFT">
+    <statusTypeId href="StatusType#CONTENT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="CTNT_PUBLISHED" description="Published" sequenceId="05" statusCode="PUBLISHED">
+    <statusTypeId href="StatusType#CONTENT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="CTNT_DEACTIVATED" description="Deactivated" sequenceId="99" statusCode="DEACTIVATED">
+    <statusTypeId href="StatusType#CONTENT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="CTNT_AVAILABLE" description="Available" sequenceId="10" statusCode="AVAILABLE">
+    <statusTypeId href="StatusType#CONTENT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="First draft">
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <statusIdTo href="StatusItem#CTNT_INITIAL_DRAFT"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="published, not revised">
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <statusIdTo href="StatusItem#CTNT_PUBLISHED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Available">
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <statusIdTo href="StatusItem#CTNT_AVAILABLE"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Image Pending">
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <statusIdTo href="StatusItem#IM_PENDING"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Draft revised">
+    <statusId href="StatusItem#CTNT_INITIAL_DRAFT"/>
+    <statusIdTo href="StatusItem#CTNT_REVISED_DRAFT"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Initial draft published">
+    <statusId href="StatusItem#CTNT_INITIAL_DRAFT"/>
+    <statusIdTo href="StatusItem#CTNT_PUBLISHED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Final draft">
+    <statusId href="StatusItem#CTNT_REVISED_DRAFT"/>
+    <statusIdTo href="StatusItem#CTNT_FINAL_DRAFT"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Revised draft published">
+    <statusId href="StatusItem#CTNT_REVISED_DRAFT"/>
+    <statusIdTo href="StatusItem#CTNT_PUBLISHED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Final draft Published">
+    <statusId href="StatusItem#CTNT_FINAL_DRAFT"/>
+    <statusIdTo href="StatusItem#CTNT_PUBLISHED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Deactivated">
+    <statusId href="StatusItem#CTNT_PUBLISHED"/>
+    <statusIdTo href="StatusItem#CTNT_DEACTIVATED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Available to Deactivated">
+    <statusId href="StatusItem#CTNT_AVAILABLE"/>
+    <statusIdTo href="StatusItem#CTNT_DEACTIVATED"/>
+  </contents>
+  <contents xsi:type="biz-subscription:SubscriptionType" subscriptionTypeId="NEWSGROUP_SUBSCR" description="Newsgroup"/>
+  <contents xsi:type="biz-subscription:SubscriptionType" subscriptionTypeId="OTHER_SUBSCR" description="Other"/>
+  <contents xsi:type="biz-subscription:SubscriptionType" subscriptionTypeId="PRODUCT_INFO_SUBSCR" description="Product Info"/>
+  <contents xsi:type="biz-survey:SurveyApplType" surveyApplTypeId="CART_ADD" description="Add-To Cart"/>
+  <contents xsi:type="biz-survey:SurveyApplType" surveyApplTypeId="CHECK_OUT" description="Check-Out"/>
+  <contents xsi:type="biz-survey:SurveyApplType" surveyApplTypeId="GENERAL_POLL" description="General Poll"/>
+  <contents xsi:type="biz-survey:SurveyApplType" surveyApplTypeId="RANDOM_POLL" description="Random Poll"/>
+  <contents xsi:type="biz-survey:SurveyApplType" surveyApplTypeId="CUSTOMER_PROFILE" description="Customer Profile"/>
+  <contents xsi:type="biz-survey:SurveyApplType" surveyApplTypeId="SORDER_PLACE" description="Sales Order Placement"/>
+  <contents xsi:type="biz-survey:SurveyApplType" surveyApplTypeId="PORDER_PLACE" description="Purchase Order Placement"/>
+  <contents xsi:type="biz-survey:SurveyApplType" surveyApplTypeId="PORDITM_PLACE" description="Purchase Order Item Placement"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="BOOLEAN" description="Boolean (Yes/No)"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="CONTENT" description="Content Record"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="COUNTRY" description="Country"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="CREDIT_CARD" description="Credit Card Number"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="GEO" description="Geo List"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="GIFT_CARD" description="Gift Card Number"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="DATE" description="Date String (mm/dd/yyyy)"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="EMAIL" description="Email Address"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="ENUMERATION" description="Enumeration"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="NUMBER_CURRENCY" description="Numeric (Currency)"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="NUMBER_FLOAT" description="Numeric (Float)"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="NUMBER_LONG" description="Numeric (Long)"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="OPTION" description="Selected Option"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="PASSWORD" description="Password"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="SEPERATOR_LINE" description="Seperator Line"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="SEPERATOR_TEXT" description="Seperator Text"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="STATE_PROVINCE" description="State/Province"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="TEXT_SHORT" description="Short Text (single-line)"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="TEXT_LONG" description="Long Text (single-line)"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="TEXTAREA" description="Text (multi-line)"/>
+  <contents xsi:type="biz-survey:SurveyQuestionType" surveyQuestionTypeId="URL" description="URL"/>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="STDWRAP001" dataResourceName="Standard SubContent Wrapper">
+    <dataResourceTypeId href="DataResourceType#ELECTRONIC_TEXT"/>
+    <dataTemplateTypeId href="DataTemplateType#FTL"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-data:ElectronicText" dataResourceId="STDWRAP001" textData="&lt;#assign mapKey=wrapMapKey?if_exists/>&#xA;&lt;#assign subDataResourceId=wrapDataResourceId?if_exists/>&#xA;&lt;#assign subDataResourceTypeId=wrapDataResourceTypeId?if_exists/>&#xA;&lt;#assign contentIdTo=wrapContentIdTo?if_exists/>&#xA;&lt;#assign mimeTypeId=wrapMimeTypeId?if_exists/>&#xA;&lt;#assign subContentId=wrapSubContentId?if_exists/>&#xA;&lt;div id=&quot;divTwo&quot; class=&quot;wrapOuter&quot;>&#xA;    &lt;div>&#xA;    ${mapKey?if_exists}&#xA;    &lt;a class=&quot;buttontext&quot; href=&quot;javascript:lookupSubContent('&lt;@ofbizUrl>/LookupSubContent&lt;/@ofbizUrl>', '${contentIdTo?if_exists}','${mapKey?if_exists}',  '${subDataResourceTypeId?if_exists}', '${mimeTypeId?if_exists}')&quot;>[Find]&lt;/a>&#xA;    &lt;#assign ofbizRequest=&quot;&quot;/>&#xA;    &lt;#assign httpParams=&quot;contentIdTo=&quot; + contentIdTo?if_exists + &quot;&amp;mapKey=&quot; + mapKey?if_exists />&#xA;    &lt;#if subDataResourceTypeId == &quot;IMAGE_OBJECT&quot;>&#xA;        &lt;#assign ofbizRequest=&quot;EditLayoutImage&quot;/>&#xA;    &lt;#else>&#xA;        &lt;#if subDataResourceTypeId == &quot;URL_RESOURCE&quot;>&#xA;            &lt;#assign ofbizRequest=&quot;EditLayoutUrl&quot;/>&#xA;        &lt;#else>&#xA;            &lt;#assign ofbizRequest=&quot;EditLayoutSubContent&quot;/>&#xA;        &lt;/#if>&#xA;    &lt;/#if>&#xA;    &lt;a class=&quot;buttontext&quot; href=&quot;&lt;@ofbizUrl>/${ofbizRequest}?${httpParams}&amp;mode=add&lt;/@ofbizUrl>&quot;>[New]&lt;/a>&#xA;    &lt;#if subContentId?exists &amp;&amp; (0 &lt; subContentId?length)>&#xA;        &lt;a class=&quot;buttontext&quot; href=&quot;&lt;@ofbizUrl>/${ofbizRequest}?${httpParams}&amp;contentId=${subContentId}&amp;drDataResourceId=${subDataResourceId?if_exists}&lt;/@ofbizUrl>&quot;>[Edit]&lt;/a>&#xA;    &lt;/#if>&#xA;    &lt;/div>&#xA;&lt;div id=&quot;divOne&quot; class=&quot;wrapInner&quot;>&#xA;&lt;@renderWrappedText/>&#xA;&lt;/div>&#xA;&lt;/div>"/>
+  <contents xsi:type="biz-content:Content" contentId="STDWRAP001" contentName="Standard SubContent Wrapper" description="Standard SubContent Wrapper">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#STDWRAP001"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-website:WebAnalyticsType" webAnalyticsTypeId="WEB_ANALYTICS" description="Web Analytics"/>
+  <contents xsi:type="biz-website:WebAnalyticsType" webAnalyticsTypeId="GOOGLE_ANALYTICS" description="Google Analytics">
+    <parentTypeId href="WebAnalyticsType#WEB_ANALYTICS"/>
+  </contents>
+  <contents xsi:type="biz-website:WebAnalyticsType" webAnalyticsTypeId="BING_ANALYTICS" description="Bing Analytics">
+    <parentTypeId href="WebAnalyticsType#WEB_ANALYTICS"/>
+  </contents>
+  <contents xsi:type="biz-website:WebAnalyticsType" webAnalyticsTypeId="BACKEND_ANALYTICS" description="Backend Analytics">
+    <parentTypeId href="WebAnalyticsType#WEB_ANALYTICS"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="CONTENT_ADMIN" description="Content Admin"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="CONTENT_CREATE" description="Content Create"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="CONTENT_UPDATE" description="Content Update"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="CONTENT_DELETE" description="Content Delete"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="CONTENT_VIEW" description="Content View"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="CONTENT_PUBLISH" description="Content Publish"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="CONTENT_RESPOND" description="Content Respond"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="CONTENT_PUBLISH_SELF" description="Content Publish"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="_NA_" description="Not Applicable"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="HAS_OWNER_ROLE" description="Has User Role"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="HAS_USER_ROLE" description="Has User Role"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="HAS_AUTHOR_ROLE" description="Has Author Role"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="HAS_EDITOR_ROLE" description="Has Editor Role"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="HAS_ADMIN_ROLE" description="Has Admin Role"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="HAS_PUBLISHER_ROLE" description="Has Publisher Role"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="CONTENT_CREATE_SUB" description="Create SubContent"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="CONTENT_VIEW_SHORT" description="View Short Desc"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="CHILD_CREATE" description="Child Create"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="CHILD_UPDATE" description="Child Update"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="CHILD_DELETE" description="Child Delete"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="CHILD_VIEW" description="Child View"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="CONTENT_LINK" description="Content Link"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="CONTENT_LINK_TO" description="Content Link To"/>
+  <contents xsi:type="biz-content:ContentOperation" contentOperationId="CONTENT_LINK_FROM" description="Content Link From"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="ARTICLE" description="Article"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="MESSAGE" description="Message"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="FEEDBACK" description="Feedback"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="COMMENT" description="Comment"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="PRODUCT_INFO" description="Product Info"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="PROJECT_INFO" description="Project Info"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="COMPANY_INFO" description="Company Info"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="ADVERTISEMENT" description="Advertisement"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="GENERAL_INFO" description="General Info"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="LEGAL_INFO" description="Legal Info"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="DESCRIPTION" description="Description"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="OWNER" description="Owner"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="ARTICLE" description="Article"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="RESPONSE" description="Response"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="_NA_" description="Not Applicable"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="SECTION" description="Section"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="TOPIC" description="Topic"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="SUMMARY" description="Summary"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="MAIN_ARTICLE" description="Main Content"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="SUB_ARTICLE" description="Sub Content"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="USER" description="User"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="FAQ" description="FAQ"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="SOURCE" description="General Source"/>
+  <contents xsi:type="biz-content:ContentPurposeType" contentPurposeTypeId="LANDING_PAGE_IMAGE" description="Landing Page Image"/>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#ARTICLE"/>
+    <contentOperationId href="ContentOperation#CONTENT_CREATE"/>
+    <roleTypeId href="RoleType#CONTENT_AUTHOR"/>
+    <statusId href="StatusItem#CTNT_PUBLISHED"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#ARTICLE"/>
+    <contentOperationId href="ContentOperation#CONTENT_CREATE"/>
+    <roleTypeId href="RoleType#CONTENT_AUTHOR"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#ARTICLE"/>
+    <contentOperationId href="ContentOperation#CONTENT_CREATE"/>
+    <roleTypeId href="RoleType#CONTENT_EDITOR"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#ARTICLE"/>
+    <contentOperationId href="ContentOperation#CONTENT_CREATE_SUB"/>
+    <roleTypeId href="RoleType#OWNER"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#ARTICLE"/>
+    <contentOperationId href="ContentOperation#CONTENT_UPDATE"/>
+    <roleTypeId href="RoleType#CONTENT_AUTHOR"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#ARTICLE"/>
+    <contentOperationId href="ContentOperation#CONTENT_UPDATE"/>
+    <roleTypeId href="RoleType#CONTENT_EDITOR"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#ARTICLE"/>
+    <contentOperationId href="ContentOperation#CONTENT_UPDATE"/>
+    <roleTypeId href="RoleType#OWNER"/>
+    <statusId href="StatusItem#CTNT_INITIAL_DRAFT"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#ARTICLE"/>
+    <contentOperationId href="ContentOperation#CONTENT_PUBLISH"/>
+    <roleTypeId href="RoleType#CONTENT_EDITOR"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#ARTICLE"/>
+    <contentOperationId href="ContentOperation#CONTENT_PUBLISH"/>
+    <roleTypeId href="RoleType#CONTENT_PUBLISHER"/>
+    <statusId href="StatusItem#CTNT_PUBLISHED"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#ARTICLE"/>
+    <contentOperationId href="ContentOperation#CONTENT_PUBLISH"/>
+    <roleTypeId href="RoleType#OWNER"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#ARTICLE"/>
+    <contentOperationId href="ContentOperation#CONTENT_PUBLISH_SELF"/>
+    <roleTypeId href="RoleType#CONTENT_AUTHOR"/>
+    <statusId href="StatusItem#CTNT_PUBLISHED"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#ARTICLE"/>
+    <contentOperationId href="ContentOperation#CONTENT_RESPOND"/>
+    <roleTypeId href="RoleType#CONTENT_USER"/>
+    <statusId href="StatusItem#CTNT_PUBLISHED"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#ARTICLE"/>
+    <contentOperationId href="ContentOperation#CONTENT_VIEW"/>
+    <roleTypeId href="RoleType#CONTENT_AUTHOR"/>
+    <statusId href="StatusItem#CTNT_PUBLISHED"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#ARTICLE"/>
+    <contentOperationId href="ContentOperation#CONTENT_VIEW"/>
+    <roleTypeId href="RoleType#CONTENT_EDITOR"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#ARTICLE"/>
+    <contentOperationId href="ContentOperation#CONTENT_VIEW"/>
+    <roleTypeId href="RoleType#OWNER"/>
+    <statusId href="StatusItem#CTNT_INITIAL_DRAFT"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#ARTICLE"/>
+    <contentOperationId href="ContentOperation#CONTENT_LINK_FROM"/>
+    <roleTypeId href="RoleType#_NA_"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#ARTICLE"/>
+    <contentOperationId href="ContentOperation#CONTENT_LINK_TO"/>
+    <roleTypeId href="RoleType#_NA_"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#RESPONSE"/>
+    <contentOperationId href="ContentOperation#CONTENT_CREATE"/>
+    <roleTypeId href="RoleType#CONTENT_EDITOR"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#RESPONSE"/>
+    <contentOperationId href="ContentOperation#CONTENT_UPDATE"/>
+    <roleTypeId href="RoleType#CONTENT_EDITOR"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#RESPONSE"/>
+    <contentOperationId href="ContentOperation#CONTENT_UPDATE"/>
+    <roleTypeId href="RoleType#OWNER"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#RESPONSE"/>
+    <contentOperationId href="ContentOperation#CONTENT_PUBLISH"/>
+    <roleTypeId href="RoleType#CONTENT_PUBLISHER"/>
+    <statusId href="StatusItem#CTNT_PUBLISHED"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#RESPONSE"/>
+    <contentOperationId href="ContentOperation#CONTENT_PUBLISH"/>
+    <roleTypeId href="RoleType#CONTENT_USER"/>
+    <statusId href="StatusItem#CTNT_PUBLISHED"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#RESPONSE"/>
+    <contentOperationId href="ContentOperation#CONTENT_RESPOND"/>
+    <roleTypeId href="RoleType#CONTENT_USER"/>
+    <statusId href="StatusItem#CTNT_PUBLISHED"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#RESPONSE"/>
+    <contentOperationId href="ContentOperation#CONTENT_LINK_FROM"/>
+    <roleTypeId href="RoleType#_NA_"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#RESPONSE"/>
+    <contentOperationId href="ContentOperation#CONTENT_LINK_TO"/>
+    <roleTypeId href="RoleType#_NA_"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#SECTION"/>
+    <contentOperationId href="ContentOperation#CONTENT_UPDATE"/>
+    <roleTypeId href="RoleType#CONTENT_AUTHOR"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#SECTION"/>
+    <contentOperationId href="ContentOperation#CONTENT_UPDATE"/>
+    <roleTypeId href="RoleType#CONTENT_EDITOR"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#SECTION"/>
+    <contentOperationId href="ContentOperation#CONTENT_UPDATE"/>
+    <roleTypeId href="RoleType#OWNER"/>
+    <statusId href="StatusItem#CTNT_INITIAL_DRAFT"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#SECTION"/>
+    <contentOperationId href="ContentOperation#CONTENT_PUBLISH"/>
+    <roleTypeId href="RoleType#CONTENT_EDITOR"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#SECTION"/>
+    <contentOperationId href="ContentOperation#CONTENT_PUBLISH"/>
+    <roleTypeId href="RoleType#CONTENT_PUBLISHER"/>
+    <statusId href="StatusItem#CTNT_PUBLISHED"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#SECTION"/>
+    <contentOperationId href="ContentOperation#CONTENT_PUBLISH"/>
+    <roleTypeId href="RoleType#OWNER"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#SECTION"/>
+    <contentOperationId href="ContentOperation#CONTENT_VIEW"/>
+    <roleTypeId href="RoleType#CONTENT_AUTHOR"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#SECTION"/>
+    <contentOperationId href="ContentOperation#CONTENT_VIEW"/>
+    <roleTypeId href="RoleType#CONTENT_EDITOR"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#SECTION"/>
+    <contentOperationId href="ContentOperation#CONTENT_VIEW"/>
+    <roleTypeId href="RoleType#OWNER"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#SECTION"/>
+    <contentOperationId href="ContentOperation#CONTENT_VIEW"/>
+    <roleTypeId href="RoleType#_NA_"/>
+    <statusId href="StatusItem#CTNT_PUBLISHED"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#USER"/>
+    <contentOperationId href="ContentOperation#CONTENT_UPDATE"/>
+    <roleTypeId href="RoleType#OWNER"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#_NA_"/>
+    <contentOperationId href="ContentOperation#HAS_OWNER_ROLE"/>
+    <roleTypeId href="RoleType#OWNER"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#_NA_"/>
+    <contentOperationId href="ContentOperation#HAS_USER_ROLE"/>
+    <roleTypeId href="RoleType#CONTENT_USER"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#_NA_"/>
+    <contentOperationId href="ContentOperation#HAS_AUTHOR_ROLE"/>
+    <roleTypeId href="RoleType#CONTENT_AUTHOR"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#_NA_"/>
+    <contentOperationId href="ContentOperation#HAS_EDITOR_ROLE"/>
+    <roleTypeId href="RoleType#CONTENT_EDITOR"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#_NA_"/>
+    <contentOperationId href="ContentOperation#HAS_ADMIN_ROLE"/>
+    <roleTypeId href="RoleType#CONTENT_ADMIN"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#_NA_"/>
+    <contentOperationId href="ContentOperation#HAS_PUBLISHER_ROLE"/>
+    <roleTypeId href="RoleType#CONTENT_PUBLISHER"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#_NA_"/>
+    <contentOperationId href="ContentOperation#CONTENT_PUBLISH"/>
+    <roleTypeId href="RoleType#CONTENT_PUBLISHER"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#_NA_"/>
+    <contentOperationId href="ContentOperation#CONTENT_VIEW"/>
+    <roleTypeId href="RoleType#CONTENT_ADMIN"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#_NA_"/>
+    <contentOperationId href="ContentOperation#CONTENT_VIEW"/>
+    <roleTypeId href="RoleType#CONTENT_USER"/>
+    <statusId href="StatusItem#CTNT_PUBLISHED"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#_NA_"/>
+    <contentOperationId href="ContentOperation#CONTENT_LINK_TO"/>
+    <roleTypeId href="RoleType#OWNER"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#_NA_"/>
+    <contentOperationId href="ContentOperation#CONTENT_LINK_FROM"/>
+    <roleTypeId href="RoleType#OWNER"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#_NA_"/>
+    <contentOperationId href="ContentOperation#CONTENT_LINK_TO"/>
+    <roleTypeId href="RoleType#CONTENT_ADMIN"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#_NA_"/>
+    <contentOperationId href="ContentOperation#CONTENT_LINK_FROM"/>
+    <roleTypeId href="RoleType#CONTENT_ADMIN"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#_NA_"/>
+    <contentOperationId href="ContentOperation#_NA_"/>
+    <roleTypeId href="RoleType#CONTENT_ADMIN"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-data:CharacterSet" characterSetId="ISO-8859-1" description="ISO-8859-1 English"/>
+  <contents xsi:type="biz-data:CharacterSet" characterSetId="ISO-8859-2" description="ISO-8859-2 ?"/>
+  <contents xsi:type="biz-data:CharacterSet" characterSetId="ISO-8859-3" description="ISO-8859-3 ?"/>
+  <contents xsi:type="biz-data:CharacterSet" characterSetId="ISO-8859-4" description="ISO-8859-4 ?"/>
+  <contents xsi:type="biz-data:CharacterSet" characterSetId="ISO-8859-5" description="ISO-8859-5 ?"/>
+  <contents xsi:type="biz-data:CharacterSet" characterSetId="ISO-8859-6" description="ISO-8859-6 Latin/Arabic"/>
+  <contents xsi:type="biz-data:CharacterSet" characterSetId="ISO-8859-7" description="ISO-8859-7 ?"/>
+  <contents xsi:type="biz-data:CharacterSet" characterSetId="ISO-8859-8" description="ISO-8859-8 Latin/Hebrew"/>
+  <contents xsi:type="biz-data:CharacterSet" characterSetId="ISO-8859-9" description="ISO-8859-9 ?"/>
+  <contents xsi:type="biz-data:CharacterSet" characterSetId="ISO-8859-10" description="ISO-8859-10 ?"/>
+  <contents xsi:type="biz-data:CharacterSet" characterSetId="US-ASCII" description="US-ASCII as defined in ANSI X3.4-1986"/>
+  <contents xsi:type="biz-data:CharacterSet" characterSetId="UTF-8" description="Unicode 8 bit"/>
+  <contents xsi:type="biz-data:CharacterSet" characterSetId="UTF-16" description="Unicode 16 bit"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="application/octet-stream" description="Arbitrary Binary Data"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="application/pkcs7-signature" description="PKCS7 Signature"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="application/postscript" description="Postsctipt Application/Script"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="application/zip" description="ZIP Data"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="application/pdf" description="Adobe Portable Document Format (PDF)"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="application/msword" description="Microsoft Word"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="application/x-shockwave-flash" description="Shockwave Flash Movie"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="application/x-zip-compressed" description="ZIP compressed file"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="application/x-tgz" description="Gzipped Tar archive file"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="application/vnd.oasis.opendocument.text" description="OpenOffice OpenDocument Text"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="application/vnd.oasis.opendocument.spreadsheet" description="OpenOffice OpenDocument Spreadsheet"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="application/vnd.ofbiz.survey" description="Survey"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="application/vnd.ofbiz.survey.response" description="Survey Response"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="application/vnd.ms-powerpoint" description="Microsoft PowerPoint"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="application/vnd.ms-excel" description="Microsoft Excel"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="audio/basic" description="Basic Audio"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="audio/mpeg" description="MPEG Audio"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="audio/x-ms-wax" description="WAX Audio"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="audio/x-ms-wma" description="WMA Audio"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="image/jpeg" description="JPEG/JPG Image"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="image/pjpeg" description="Progressive JPEG/JPG Image"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="image/gif" description="GIF Image"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="image/tiff" description="TIFF Image"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="image/png" description="PNG Image"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="message/external-body" description="External Body Message"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="message/http" description="HTTP Message"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="message/s-http" description="HTTPS/S-HTTP Message"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="message/news" description="News Message"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="message/partial" description="Partial Message"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="message/rfc822" description="RFC 822 Headered Message"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="model/mesh" description="Mesh Model"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="model/vrml" description="VRML Model"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="multipart/alternative" description="Mutliple Alternative Multipart"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="multipart/digest" description="Digest of Messages Multipart"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="multipart/encrypted" description="Encrypted Multipart"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="multipart/form-data" description="Form Data Multipart"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="multipart/mixed" description="Mixed Type Multipart"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="multipart/related" description="Related Multipart"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="multipart/signed" description="Signed Multipart"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="text/css" description="CSS Text"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="text/csv" description="Comma Separated Value Text"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="text/enriched" description="Enriched Text"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="text/html" description="HTML Text"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="text/plain" description="Plain Text"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="text/rtf" description="RTF Rich Text"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="text/richtext" description="Rich Text"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="text/sgml" description="SGML Text"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="text/tab-separated-values" description="Tab Separated Value Text"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="text/x-diff" description="diff for patching files"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="text/xml" description="XML Text"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="text/x-vcard" description="electronic business card"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="video/avi" description="AVI Video"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="video/mpeg" description="MPEG/MPG Video"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="video/mp4" description="MPEG-4 (H.264) Video"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="video/quicktime" description="Quicktime Video"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="video/x-ms-asf" description="ASF Video"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="video/x-flv" description="Flash Streaming Video"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="video/x-ms-wvx" description="WVX Video"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="video/x-ms-wm" description="WM Video"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="video/x-ms-wmv" description="WMV Video"/>
+  <contents xsi:type="biz-data:MimeType" mimeTypeId="video/x-ms-wmx" description="WMX Video"/>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="asf">
+    <mimeTypeId href="MimeType#video/x-ms-asf"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="asx">
+    <mimeTypeId href="MimeType#video/x-ms-asf"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="avi">
+    <mimeTypeId href="MimeType#video/avi"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="css">
+    <mimeTypeId href="MimeType#text/css"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="flv">
+    <mimeTypeId href="MimeType#video/x-flv"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="jpg">
+    <mimeTypeId href="MimeType#image/jpeg"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="jpeg">
+    <mimeTypeId href="MimeType#image/jpeg"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="tif">
+    <mimeTypeId href="MimeType#image/tiff"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="tiff">
+    <mimeTypeId href="MimeType#image/tiff"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="gif">
+    <mimeTypeId href="MimeType#image/gif"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="png">
+    <mimeTypeId href="MimeType#image/png"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="mp4">
+    <mimeTypeId href="MimeType#video/mp4"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="m4v">
+    <mimeTypeId href="MimeType#video/mp4"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="mpg">
+    <mimeTypeId href="MimeType#video/mpeg"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="mpeg">
+    <mimeTypeId href="MimeType#video/mpeg"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="mov">
+    <mimeTypeId href="MimeType#video/quicktime"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="pdf">
+    <mimeTypeId href="MimeType#application/pdf"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="ps">
+    <mimeTypeId href="MimeType#application/postscript"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="qt">
+    <mimeTypeId href="MimeType#video/quicktime"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="rtf">
+    <mimeTypeId href="MimeType#text/rtf"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="swf">
+    <mimeTypeId href="MimeType#application/x-shockwave-flash"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="txt">
+    <mimeTypeId href="MimeType#text/plain"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="htm">
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="html">
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="xml">
+    <mimeTypeId href="MimeType#text/xml"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="vrml">
+    <mimeTypeId href="MimeType#model/vrml"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="doc">
+    <mimeTypeId href="MimeType#application/msword"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="odt">
+    <mimeTypeId href="MimeType#application/vnd.oasis.opendocument.text"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="wvx">
+    <mimeTypeId href="MimeType#video/x-ms-wvx"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="wm">
+    <mimeTypeId href="MimeType#video/x-ms-wm"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="wmv">
+    <mimeTypeId href="MimeType#video/x-ms-wmv"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="wmx">
+    <mimeTypeId href="MimeType#video/x-ms-wmx"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="zip">
+    <mimeTypeId href="MimeType#application/zip"/>
+  </contents>
+  <contents xsi:type="biz-data:FileExtension" fileExtensionId="vcf">
+    <mimeTypeId href="MimeType#text/x-vcard"/>
+  </contents>
+  <contents xsi:type="biz-data:MimeTypeHtmlTemplate" mimeTypeId="application/x-shockwave-flash" templateLocation="component://content/template/mime-type/Flash-swf.ftl"/>
+  <contents xsi:type="biz-data:MimeTypeHtmlTemplate" mimeTypeId="image/jpeg" templateLocation="component://content/template/mime-type/Image.ftl"/>
+  <contents xsi:type="biz-data:MimeTypeHtmlTemplate" mimeTypeId="image/pjpeg" templateLocation="component://content/template/mime-type/Image.ftl"/>
+  <contents xsi:type="biz-data:MimeTypeHtmlTemplate" mimeTypeId="image/gif" templateLocation="component://content/template/mime-type/Image.ftl"/>
+  <contents xsi:type="biz-data:MimeTypeHtmlTemplate" mimeTypeId="image/tiff" templateLocation="component://content/template/mime-type/Image.ftl"/>
+  <contents xsi:type="biz-data:MimeTypeHtmlTemplate" mimeTypeId="image/png" templateLocation="component://content/template/mime-type/Image.ftl"/>
+  <contents xsi:type="biz-data:MimeTypeHtmlTemplate" mimeTypeId="video/quicktime" templateLocation="component://content/template/mime-type/QuickTime.ftl"/>
+  <contents xsi:type="biz-data:MimeTypeHtmlTemplate" mimeTypeId="video/mp4" templateLocation="component://content/template/mime-type/QuickTime.ftl"/>
+  <contents xsi:type="biz-data:MimeTypeHtmlTemplate" mimeTypeId="video/x-flv" templateLocation="component://content/template/mime-type/Flash-flv.ftl"/>
+  <contents xsi:type="biz-data:DataCategory" dataCategoryId="ROOT"/>
+  <contents xsi:type="biz-data:DataCategory" dataCategoryId="BUSINESS" categoryName="Business">
+    <parentCategoryId href="DataCategory#ROOT"/>
+  </contents>
+  <contents xsi:type="biz-data:DataCategory" dataCategoryId="TECHNOLOGY" categoryName="Technology">
+    <parentCategoryId href="DataCategory#ROOT"/>
+  </contents>
+  <contents xsi:type="biz-data:DataCategory" dataCategoryId="PERSONAL" categoryName="Personal">
+    <parentCategoryId href="DataCategory#ROOT"/>
+  </contents>
+  <contents xsi:type="biz-data:DataCategory" dataCategoryId="LEGAL" categoryName="Legal">
+    <parentCategoryId href="DataCategory#ROOT"/>
+  </contents>
+  <contents xsi:type="biz-data:DataCategory" dataCategoryId="POLITICAL" categoryName="Political">
+    <parentCategoryId href="DataCategory#ROOT"/>
+  </contents>
+  <contents xsi:type="biz-data:DataCategory" dataCategoryId="FINANCIAL" categoryName="Financial">
+    <parentCategoryId href="DataCategory#ROOT"/>
+  </contents>
+  <contents xsi:type="biz-data:DataCategory" dataCategoryId="BUS_RETAIL" categoryName="Retail">
+    <parentCategoryId href="DataCategory#BUSINESS"/>
+  </contents>
+  <contents xsi:type="biz-data:DataCategory" dataCategoryId="BUS_SERVICE" categoryName="Service">
+    <parentCategoryId href="DataCategory#BUSINESS"/>
+  </contents>
+  <contents xsi:type="biz-data:DataCategory" dataCategoryId="BUS_MANU" categoryName="Manufacturing">
+    <parentCategoryId href="DataCategory#BUSINESS"/>
+  </contents>
+  <contents xsi:type="biz-data:DataCategory" dataCategoryId="TECH_SOFT" categoryName="Software">
+    <parentCategoryId href="DataCategory#TECHNOLOGY"/>
+  </contents>
+  <contents xsi:type="biz-data:DataCategory" dataCategoryId="TECH_SOFT_OFBIZ" categoryName="Apache OFBiz">
+    <parentCategoryId href="DataCategory#TECH_SOFT"/>
+  </contents>
+  <contents xsi:type="biz-data:DataCategory" dataCategoryId="TECH_SOFT_LINUX" categoryName="Linux">
+    <parentCategoryId href="DataCategory#TECH_SOFT"/>
+  </contents>
+  <contents xsi:type="biz-data:DataCategory" dataCategoryId="TECH_SOFT_JAVA" categoryName="Java">
+    <parentCategoryId href="DataCategory#TECH_SOFT"/>
+  </contents>
+  <contents xsi:type="biz-data:DataCategory" dataCategoryId="TECH_HARD" categoryName="Hardware">
+    <parentCategoryId href="DataCategory#TECHNOLOGY"/>
+  </contents>
+  <contents xsi:type="biz-data:DataCategory" dataCategoryId="TECH_SERV" categoryName="Service">
+    <parentCategoryId href="DataCategory#TECHNOLOGY"/>
+  </contents>
+  <contents xsi:type="biz-data:DataCategory" dataCategoryId="TEMPLATE" categoryName="Template">
+    <parentCategoryId href="DataCategory#ROOT"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="BLOGROOT" childBranchCount="1" childLeafCount="1" contentName="Blog Root" description="Blog Root">
+    <contentTypeId href="ContentType#WEB_SITE_PUB_PT"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#_NA_"/>
+    <contentOperationId href="ContentOperation#CONTENT_ADMIN"/>
+    <roleTypeId href="RoleType#CONTENT_ADMIN"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#_NA_"/>
+    <contentOperationId href="ContentOperation#CONTENT_UPDATE"/>
+    <roleTypeId href="RoleType#CONTENT_ADMIN"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentPurposeOperation">
+    <contentPurposeTypeId href="ContentPurposeType#RESPONSE"/>
+    <contentOperationId href="ContentOperation#CONTENT_CREATE"/>
+    <roleTypeId href="RoleType#_NA_"/>
+    <statusId href="StatusItem#_NA_"/>
+    <privilegeEnumId href="Enumeration#CNT_PRV_NA_"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="BLOG_TPL_TOPLEFT" createdDate="2004-01-16T01:24:06.522+0100" dataResourceName="Float left" lastModifiedDate="2004-01-16T19:20:58.891+0100" objectInfo="component://ecommerce/widget/blog/BlogTemplates.xml#FloatLeft">
+    <dataResourceTypeId href="DataResourceType#URL_RESOURCE"/>
+    <dataTemplateTypeId href="DataTemplateType#SCREEN_COMBINED"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="BLOG_TPL_TOPCENTER" createdDate="2004-01-16T01:24:06.522+0100" dataResourceName="Top centered" lastModifiedDate="2004-01-16T19:20:58.891+0100" objectInfo="component://ecommerce/widget/blog/BlogTemplates.xml#TopCenter">
+    <dataResourceTypeId href="DataResourceType#URL_RESOURCE"/>
+    <dataTemplateTypeId href="DataTemplateType#SCREEN_COMBINED"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="ECOM_BLANK" createdDate="2004-01-16T01:24:06.522+0100" dataResourceName="Plain Decorator" lastModifiedDate="2004-01-16T19:20:58.891+0100" objectInfo="component://ecommerce/widget/CommonScreens.xml#CommonEmptyDecorator">
+    <dataCategoryId href="DataCategory#TEMPLATE"/>
+    <dataResourceTypeId href="DataResourceType#URL_RESOURCE"/>
+    <dataTemplateTypeId href="DataTemplateType#SCREEN_COMBINED"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="ECOM_LEFT" createdDate="2004-01-16T01:24:06.522+0100" dataResourceName="Left Decorator" lastModifiedDate="2004-01-16T19:20:58.891+0100" objectInfo="component://ecommerce/widget/CommonScreens.xml#CommonLeftDecorator">
+    <dataCategoryId href="DataCategory#TEMPLATE"/>
+    <dataResourceTypeId href="DataResourceType#URL_RESOURCE"/>
+    <dataTemplateTypeId href="DataTemplateType#SCREEN_COMBINED"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="ECOM_RIGHT" createdDate="2004-01-16T01:24:06.522+0100" dataResourceName="Right Decorator" lastModifiedDate="2004-01-16T19:20:58.891+0100" objectInfo="component://ecommerce/widget/CommonScreens.xml#CommonRightDecorator">
+    <dataCategoryId href="DataCategory#TEMPLATE"/>
+    <dataResourceTypeId href="DataResourceType#URL_RESOURCE"/>
+    <dataTemplateTypeId href="DataTemplateType#SCREEN_COMBINED"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="ECOM_LEFTRIGHT" createdDate="2004-01-16T01:24:06.522+0100" dataResourceName="Left/Right Decorator" lastModifiedDate="2004-01-16T19:20:58.891+0100" objectInfo="component://ecommerce/widget/CommonScreens.xml#CommonLeftRightDecorator">
+    <dataCategoryId href="DataCategory#TEMPLATE"/>
+    <dataResourceTypeId href="DataResourceType#URL_RESOURCE"/>
+    <dataTemplateTypeId href="DataTemplateType#SCREEN_COMBINED"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="WRAP_STD_LOOP" dataResourceName="Loop Wrap">
+    <dataResourceTypeId href="DataResourceType#ELECTRONIC_TEXT"/>
+    <dataTemplateTypeId href="DataTemplateType#FTL"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="AFIBC_LOGO" dataResourceName="SFIBC Logo" objectInfo="sfibc_logo.png">
+    <dataResourceTypeId href="DataResourceType#IMAGE_OBJECT"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="AGEP_LOGO" dataResourceName="AGEP Logo" objectInfo="agep_logo.png">
+    <dataResourceTypeId href="DataResourceType#IMAGE_OBJECT"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="AGINC_LOGO" dataResourceName="AGINC Logo" objectInfo="aginc_logo.png">
+    <dataResourceTypeId href="DataResourceType#IMAGE_OBJECT"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="ARTICLE_WRAP">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#FTL"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="LEFTBAR" dataResourceName="Left Bar" objectInfo="LEFT BAR">
+    <dataResourceTypeId href="DataResourceType#ELECTRONIC_TEXT"/>
+    <dataTemplateTypeId href="DataTemplateType#FTL"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="RP_MEDAL" dataResourceName="Project Reliance Medallion Logo" objectInfo="pr_medal.png">
+    <dataResourceTypeId href="DataResourceType#IMAGE_OBJECT"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="TMPLT_IMG_CENTER" dataResourceName="Image Centered">
+    <dataResourceTypeId href="DataResourceType#ELECTRONIC_TEXT"/>
+    <dataTemplateTypeId href="DataTemplateType#FTL"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="TEMPLATE_IMAGE_LEFT" dataResourceName="Image Left">
+    <dataResourceTypeId href="DataResourceType#ELECTRONIC_TEXT"/>
+    <dataTemplateTypeId href="DataTemplateType#FTL"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="TEMPLATE_TEXT_ONLY" dataResourceName="Template Text">
+    <dataResourceTypeId href="DataResourceType#ELECTRONIC_TEXT"/>
+    <dataTemplateTypeId href="DataTemplateType#FTL"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="VIEW_WRAP">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#FTL"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="WRAP_ARTICLE">
+    <dataResourceTypeId href="DataResourceType#ELECTRONIC_TEXT"/>
+    <dataTemplateTypeId href="DataTemplateType#FTL"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="WRAP_ARTICLE_TABLE" dataResourceName="Article wrap with table elements">
+    <dataResourceTypeId href="DataResourceType#ELECTRONIC_TEXT"/>
+    <dataTemplateTypeId href="DataTemplateType#FTL"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="WRAP_NEXT_PREV" dataResourceName="Next/Prev wrapper">
+    <dataResourceTypeId href="DataResourceType#ELECTRONIC_TEXT"/>
+    <dataTemplateTypeId href="DataTemplateType#FTL"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="WRAP_STD_001" dataResourceName="Standard SubContent Wrapper">
+    <dataResourceTypeId href="DataResourceType#ELECTRONIC_TEXT"/>
+    <dataTemplateTypeId href="DataTemplateType#FTL"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="WRAP_VIEW">
+    <dataResourceTypeId href="DataResourceType#ELECTRONIC_TEXT"/>
+    <dataTemplateTypeId href="DataTemplateType#FTL"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="IMAGE_CENTERED" dataResourceName="Image Centered">
+    <dataResourceTypeId href="DataResourceType#ELECTRONIC_TEXT"/>
+    <dataTemplateTypeId href="DataTemplateType#FTL"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="IMAGE_LEFT" dataResourceName="Image Left">
+    <dataResourceTypeId href="DataResourceType#ELECTRONIC_TEXT"/>
+    <dataTemplateTypeId href="DataTemplateType#FTL"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="TEMPLATE_TEXT" dataResourceName="Template Text">
+    <dataResourceTypeId href="DataResourceType#ELECTRONIC_TEXT"/>
+    <dataTemplateTypeId href="DataTemplateType#FTL"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="TMPLT_IMG_CENTER_FL" dataResourceName="Image Centered">
+    <dataResourceTypeId href="DataResourceType#ELECTRONIC_TEXT"/>
+    <dataTemplateTypeId href="DataTemplateType#FTL"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="TEMPLATE_COMPOSITE" objectInfo="/content/TemplateComposite.ftl">
+    <dataResourceTypeId href="DataResourceType#CONTEXT_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#FTL"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="LEFTBAR" contentName="Left Bar" description="Left Bar">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#LEFTBAR"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="OWNER_BLOG_CONTENT" contentName="Blog Content Owner">
+    <contentTypeId href="ContentType#PLACEHOLDER"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="TMPLT_IMG_CENTER" contentName="Image Centered" description="Image centered above text">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#IMAGE_CENTERED"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="TEMPLATE_IMAGE_LEFT" contentName="Image Left" description="Image with text flowing around">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#IMAGE_LEFT"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="TEMPLATE_MASTER" description="Template Master">
+    <contentTypeId href="ContentType#TREE_ROOT"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="TEMPLATE_TEXT_ONLY" contentName="Template Text" description="Template Text Only">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#TEMPLATE_TEXT"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="VIEW_WRAP" contentName="View Wrap">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#VIEW_WRAP"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="WRAP_ARTICLE">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#WRAP_ARTICLE"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="WRAP_NEXT_PREV" contentName="Next-Prev wrapper" description="Next and Previous wrapper">
+    <contentTypeId href="ContentType#ANNOTATION"/>
+    <dataResourceId href="DataResource#WRAP_NEXT_PREV"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="WRAP_STD_LOOP" contentName="Loop Wrap">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#WRAP_STD_LOOP"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="WRAP_VIEW">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#WRAP_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="ARTICLE_WRAP">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#ARTICLE_WRAP"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="BLOG_MASTER" contentName="Blog Master">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+  </contents>
+  <contents xsi:type="biz-data:ElectronicText" dataResourceId="LEFTBAR" textData="&lt;#--&#xA;Licensed to the Apache Software Foundation (ASF) under one&#xA;or more contributor license agreements.  See the NOTICE file&#xA;distributed with this work for additional information&#xA;regarding copyright ownership.  The ASF licenses this file&#xA;to you under the Apache License, Version 2.0 (the&#xA;&quot;License&quot;); you may not use this file except in compliance&#xA;with the License.  You may obtain a copy of the License at&#xA;&#xA;http://www.apache.org/licenses/LICENSE-2.0&#xA;&#xA;Unless required by applicable law or agreed to in writing,&#xA;software distributed under the License is distributed on an&#xA;&quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY&#xA;KIND, either express or implied.  See the License for the&#xA;specific language governing permissions and limitations&#xA;under the License.&#xA;-->&#xA;&#xA;&lt;table width='100%' border='0' cellpadding='0' cellspacing='0'>&#xA;  &lt;tr>&#xA;    &lt;td width='100%' valign='top'>&#xA;      &lt;table border='0' width='100%' cellspacing='0' cellpadding='0' >&#xA;  &lt;#if requestAttributes.userLogin?has_content>&#xA;    &lt;tr>&#xA;     &lt;td>&#xA;    &lt;div>&lt;a href=&quot;&lt;@ofbizUrl>/logout&lt;/@ofbizUrl>&quot;>Logout&lt;/a>&lt;/div>&#xA;     &lt;br/>&#xA;    &lt;div>&lt;a href=&quot;&lt;@ofbizUrl>/viewprofile&lt;/@ofbizUrl>&quot;>Profile&lt;/a>&lt;/div>&#xA;     &lt;/td>&#xA;      &lt;/tr>&#xA;  &lt;#else>&#xA;&#xA;       &lt;tr>&#xA;          &lt;td width='100%'>&#xA;            &lt;table width='100%' border='0' cellspacing='0' cellpadding='0' '>&#xA;              &lt;tr>&#xA;                &lt;td>&#xA;                  &lt;form method=&quot;POST&quot; action=&quot;&lt;@ofbizUrl>/login${previousParams?if_exists}&lt;/@ofbizUrl>&quot; name=&quot;loginform&quot; style='margin: 0;'>&#xA;                    &lt;table width='100%' border='0' cellpadding='0' cellspacing='2'>&#xA;                      &lt;tr align=&quot;center&quot;>&#xA;                        &lt;td align='left'>&lt;span>Username: &lt;/span>&lt;/td>&#xA;                      &lt;/tr>&#xA;                       &lt;tr>&#xA;                         &lt;td align=left>&#xA;                          &lt;input type=&quot;text&quot; class='inputBox' name=&quot;USERNAME&quot; value='&lt;#if requestParameters.USERNAME?has_content>${requestParameters.USERNAME?if_exists}&lt;#elseif autoUserLogin?has_content>&lt;${autoUserLogin.userLoginId?if_exists}&lt;/#if>' size=&quot;20&quot;>&#xA;                        &lt;/td>&#xA;                      &lt;/tr>&#xA;                       &lt;tr align=&quot;center&quot;>&#xA;                        &lt;td align='left'>&lt;span>Password: &lt;/span>&lt;/td>&#xA;                       &lt;/tr>&#xA;                       &lt;tr>&#xA;                         &lt;td align='left'>&lt;input type=&quot;password&quot; class='inputBox' name=&quot;PASSWORD&quot; autocomplete=&quot;off&quot; value=&quot;&quot; size=&quot;20&quot;>&lt;/td>&#xA;                      &lt;/tr>&#xA;                      &lt;tr>&#xA;                        &lt;td colspan=&quot;2&quot; align=&quot;center&quot;>&lt;input type=&quot;submit&quot; value=&quot;Login&quot;>&lt;/td>&#xA;                      &lt;/tr>&#xA;                    &lt;/table>&#xA;                  &lt;/form>&#xA;                &lt;/td>&#xA;              &lt;/tr>&#xA;            &lt;/table>&#xA;          &lt;/td>&#xA;        &lt;/tr>&#xA;       &lt;/#if>&#xA;             &lt;tr>&#xA;                &lt;td valign='middle' align='center'>&#xA;                  &lt;div>&lt;a href=&quot;&lt;@ofbizUrl>/forgotpasswd&lt;/@ofbizUrl>&quot;>Forgot Password?&lt;/a>&lt;/div>&#xA;                &lt;/td>&#xA;              &lt;/tr>&#xA;              &lt;tr>&#xA;                &lt;td valign='middle' align='center'>&#xA;                  &lt;div>&lt;a   href=&quot;&lt;@ofbizUrl>/newblogger&lt;/@ofbizUrl>&quot;>New User&lt;/a>&lt;/div>&#xA;                &lt;/td>&#xA;              &lt;/tr>&#xA;      &lt;/table>&#xA;      &lt;br>&#xA;   &lt;/td>&#xA;&#xA;  &lt;/tr>&#xA;&lt;/table>&#xA;&#xA;&lt;script>&#xA;  &lt;#if autoUserLogin?has_content>document.loginform.PASSWORD.focus();&lt;/#if>&#xA;  &lt;#if !autoUserLogin?has_content>document.loginform.USERNAME.focus();&lt;/#if>&#xA;   function requery() {&#xA;       showErrorAlert(&quot;${uiLabelMap.CommonErrorMessage2}&quot;, &quot;${uiLabelMap.CommonRequery}: &quot; + document.sectionform.sectionId.value));&#xA;   }&#xA;&lt;/script>&#xA;            "/>
+  <contents xsi:type="biz-data:ElectronicText" dataResourceId="TMPLT_IMG_CENTER" textData="&lt;table>&#xA;  &lt;tr>&#xA;    &lt;td>&#xA;            &lt;#assign thisContentId=contentId?if_exists/>&#xA;        &lt;@traverseSubContentCache subContentId=thisContentId&#xA;            pickWhen=&quot;mapKey != null &amp;&amp; mapKey.equals(\&quot;IMAGE\&quot;)&quot;&#xA;            returnFromPickWhen=&quot;mapKey != null &amp;&amp; mapKey.equals(\&quot;IMAGE\&quot;)&quot;&#xA;        >&#xA;            &lt;#assign drDataResourceId=content.dataResourceId?if_exists/>&#xA;        &lt;/@traverseSubContentCache>&#xA;        &lt;img src=&quot;&lt;@ofbizUrl>/img?imgId=${drDataResourceId?if_exists}&lt;/@ofbizUrl>&quot; alt=&quot;&quot;/>&#xA;    &lt;/td>&#xA;  &lt;/tr>&#xA;&lt;/table>&#xA;&#xA;&lt;hr />&#xA;&#xA;&lt;table>&#xA;  &lt;tr>&#xA;    &lt;td>&#xA;&lt;@renderSubContentCache mapKey=&quot;ARTICLE&quot; contentId=thisContentId subContentId=&quot;&quot;/>&#xA;    &lt;/td>&#xA;  &lt;/tr>&#xA;&lt;/table>"/>
+  <contents xsi:type="biz-data:ElectronicText" dataResourceId="TEMPLATE_IMAGE_LEFT" textData="&lt;@editRenderSubContentCache mapKey=&quot;IMAGE&quot;>&#xA;  &lt;@renderSubContentCache/>&#xA;&lt;/@editRenderSubContentCache>&#xA;&lt;@editRenderSubContentCache mapKey=&quot;SUMMARY&quot;>&#xA;  &lt;@renderSubContentCache/>&#xA;&lt;/@editRenderSubContentCache>&#xA; "/>
+  <contents xsi:type="biz-data:ElectronicText" dataResourceId="TEMPLATE_TEXT_ONLY" textData="&lt;@renderSubContentCache mapKey=&quot;ARTICLE&quot; wrapTemplateId=&quot;&quot;/>&#xA;            "/>
+  <contents xsi:type="biz-data:ElectronicText" dataResourceId="WRAP_ARTICLE" textData="&lt;#assign thisContentId = &quot;&quot;/>&#xA;&lt;#if nodeTrailCsv?exists>&#xA;    &lt;#assign idList = nodeTrailCsv?split(&quot;,&quot;)/>&#xA;    &lt;#if 0 &lt; idList?size >&#xA;        &lt;#assign thisContentId = idList?last>&#xA;    &lt;/#if>&#xA;&lt;/#if>&#xA;&#xA;&lt;a class=&quot;tabButton&quot; href=&quot;&lt;@ofbizUrl>/ViewArticle?contentId=${thisContentId}&amp;nodeTrailCsv=${nodeTrailCsv?if_exists}&lt;/@ofbizUrl>&quot; >View&lt;/a>&#xA;&#xA;            "/>
+  <contents xsi:type="biz-data:ElectronicText" dataResourceId="WRAP_ARTICLE_TABLE" textData="&lt;#assign thisContentId = &quot;&quot;/>&#xA;&lt;#if nodeTrailCsv?exists>&#xA;    &lt;#assign idList = nodeTrailCsv?split(&quot;,&quot;)/>&#xA;    &lt;#if 0 &lt; idList?size >&#xA;        &lt;#assign thisContentId = idList?last>&#xA;    &lt;/#if>&#xA;&lt;/#if>&#xA;&lt;tr>&#xA;&lt;td>&#xA;${wrappedContent?if_exists}&#xA;&lt;/td>&#xA;&lt;/tr>&#xA;&lt;tr>&#xA;&lt;td align=&quot;right&quot;>&#xA;&#xA;&lt;a class=&quot;tabButton&quot; href=&quot;&lt;@ofbizUrl>/ViewArticle?contentId=${thisContentId}&amp;nodeTrailCsv=${nodeTrailCsv?if_exists}&lt;/@ofbizUrl>&quot; >View&lt;/a>&#xA;&lt;/td>&#xA;&lt;/tr>&#xA;            "/>
+  <contents xsi:type="biz-data:ElectronicText" dataResourceId="WRAP_NEXT_PREV" textData="&lt;tr>&lt;td>${wrappedContent}&lt;/td>&lt;/tr>&#xA;&#xA;&lt;#assign listSize=listSize?number/>&#xA;&lt;#assign viewIndex=viewIndex?number/>&#xA;&lt;#assign highIndex=highIndex?number/>&#xA;&lt;#assign lowIndex=lowIndex?number/>&#xA;&lt;#assign requestURL=requestURL?if_exists/>&#xA;&lt;#assign queryString=queryString?if_exists/>&#xA;&lt;#assign lowIndexShow=lowIndex + 1 />&#xA;&#xA;&lt;#if highIndex &lt; lowIndexShow >&#xA;    &lt;#assign lowIndexShow=highIndex/>&#xA;&lt;/#if>&#xA;&#xA;&lt;tr>&lt;td>&#xA;             &lt;#if 0 &lt; listSize>&#xA;                &lt;#if 0 &lt; viewIndex>&#xA;                  &lt;a href=&quot;${requestURL}?${queryString}&amp;VIEW_SIZE=${viewSize}&amp;VIEW_INDEX=${viewIndex-1}${paramList?if_exists}&quot; class=&quot;submenutext&quot;>Previous&lt;/a>&#xA;                &lt;#else>&#xA;                  &lt;span class=&quot;submenutextdisabled&quot;>Previous&lt;/span>&#xA;                &lt;/#if>&#xA;                &lt;#if 0 &lt; listSize>&#xA;                  &lt;span class=&quot;submenutextinfo&quot;>${lowIndexShow} - ${highIndex?if_exists} of ${listSize?if_exists}&lt;/span>&#xA;                &lt;/#if>&#xA;                &lt;#if highIndex?if_exists &lt; listSize?if_exists>&#xA;                  &lt;a href=&quot;${requestURL}?${queryString?if_exists}&amp;VIEW_SIZE=${viewSize?if_exists}&amp;VIEW_INDEX=${viewIndex?if_exists+1}${paramList?if_exists}&quot; class=&quot;submenutextright&quot;>Next&lt;/a>&#xA;                &lt;#else>&#xA;                  &lt;span class=&quot;submenutextrightdisabled&quot;>Next&lt;/span>&#xA;                &lt;/#if>&#xA;              &lt;/#if>&#xA;&lt;/td>&lt;/tr>&#xA;            "/>
+  <contents xsi:type="biz-data:ElectronicText" dataResourceId="WRAP_STD_001" textData="&lt;#assign mapKey=wrapMapKey?if_exists/>&#xA;&lt;#assign subDataResourceId=wrapDataResourceId?if_exists/>&#xA;&lt;#assign subDataResourceTypeId=wrapDataResourceTypeId?if_exists/>&#xA;&lt;#assign contentIdTo=wrapContentIdTo?if_exists/>&#xA;&lt;#assign mimeTypeId=wrapMimeTypeId?if_exists/>&#xA;&lt;#assign subContentId=wrapSubContentId?if_exists/>&#xA;&lt;div id=&quot;divTwo&quot; class=&quot;wrapOuter&quot;>&#xA;    &lt;div>&#xA;    ${mapKey?if_exists}&#xA;    &lt;a class=&quot;buttontext&quot; href=&quot;javascript:lookupSubContent('&lt;@ofbizUrl>/LookupSubContent&lt;/@ofbizUrl>', '${contentIdTo?if_exists}','${mapKey?if_exists}',  '${subDataResourceTypeId?if_exists}', '${mimeTypeId?if_exists}')&quot;&#xA;>[Find]&lt;/a>&#xA;    &lt;#assign ofbizRequest=&quot;&quot;/>&#xA;    &lt;#assign httpParams=&quot;contentIdTo=&quot; + contentIdTo?if_exists + &quot;&amp;mapKey=&quot; + mapKey?if_exists />&#xA;    &lt;#if subDataResourceTypeId == &quot;IMAGE_OBJECT&quot;>&#xA;        &lt;#assign ofbizRequest=&quot;EditLayoutImage&quot;/>&#xA;    &lt;#else>&#xA;        &lt;#if subDataResourceTypeId == &quot;URL_RESOURCE&quot;>&#xA;            &lt;#assign ofbizRequest=&quot;EditLayoutUrl&quot;/>&#xA;        &lt;#else>&#xA;            &lt;#assign ofbizRequest=&quot;EditLayoutSubContent&quot;/>&#xA;        &lt;/#if>&#xA;    &lt;/#if>&#xA;    &lt;a class=&quot;buttontext&quot; href=&quot;&lt;@ofbizUrl>/${ofbizRequest}?${httpParams}&amp;mode=add&lt;/@ofbizUrl>&quot;>[New]&lt;/a>&#xA;    &lt;#if subContentId?exists &amp;&amp; (0 &lt; subContentId?length)>&#xA;        &lt;a class=&quot;buttontext&quot; href=&quot;&lt;@ofbizUrl>/${ofbizRequest}?${httpParams}&amp;contentId=${subContentId}&amp;drData&#xA;ResourceId=${subDataResourceId?if_exists}&lt;/@ofbizUrl>&quot;>[Edit]&lt;/a>&#xA;    &lt;/#if>&#xA;    &lt;/div>&#xA;&lt;div id=&quot;divOne&quot; class=&quot;wrapInner&quot;>&#xA;&lt;@renderWrappedText/>&#xA;&lt;/div>&#xA;&lt;/div>"/>
+  <contents xsi:type="biz-data:ElectronicText" dataResourceId="WRAP_STD_LOOP" textData="&lt;#assign contentIdTo=contentIdTo?if_exists/>&#xA;&#xA;&lt;tr>&lt;td>&#xA;&lt;@checkPermission entityOperation=&quot;_CREATE&quot; targetPurpose=&quot;${targetPurpose?if_exists}&quot;>&#xA;&lt;a class=&quot;tabButton&quot; style=&quot;height:14pt;&quot; href=&quot;&lt;@ofbizUrl>/EditCombo?contentIdTo=${contentIdTo?if_exists}&amp;mode=add&lt;/@ofbizUrl>&quot; >New&lt;/a>&#xA;&lt;br/>&#xA;&lt;/@checkPermission>&#xA;&lt;/td>&lt;/tr>&#xA;&#xA;&lt;#assign outputIndex = 0/>&#xA;&lt;#if outputIndex?exists >&#xA;&lt;#assign outputIndex = outputIndex?number/>&#xA;&lt;#else>&#xA;&lt;#assign outputIndex = 0/>&#xA;&lt;/#if>&#xA;&lt;#if listSize?exists >&#xA;&lt;#assign listSize = listSize?number/>&#xA;&lt;#else>&#xA;&lt;#assign listSize = 0/>&#xA;&lt;/#if>&#xA;&lt;#if viewIndex?exists >&#xA;&lt;#assign viewIndex = viewIndex?number/>&#xA;&lt;#else>&#xA;&lt;#assign viewIndex = 0/>&#xA;&lt;/#if>&#xA;&lt;#if lowIndex?exists >&#xA;&lt;#assign lowIndex = lowIndex?number/>&#xA;&lt;#else>&#xA;&lt;#assign lowIndex = 0/>&#xA;&lt;/#if>&#xA;&lt;#assign lowPlusOne = lowIndex + 1/>&#xA;&lt;#assign prevStr = &quot;&quot;/>&#xA;&lt;#if highIndex?exists >&#xA;&lt;#assign highIndex = highIndex?number/>&#xA;&lt;#else>&#xA;&lt;#assign highIndex = 0/>&#xA;&lt;/#if>&#xA;&lt;#assign hiIndex = highIndex -1 />&#xA;&lt;#assign nextStr = &quot;&quot;/>&#xA;&lt;tr>&lt;td>&#xA;&lt;table border=&quot;0&quot; width=&quot;100%&quot;>&#xA;    &lt;tr>&lt;td>&#xA;&lt;span>&#xA;&lt;#if 0 &lt; lowIndex?if_exists >&#xA;    &lt;#assign prevArg=(viewIndex - 1)?string />&#xA;&lt;a href=&quot;&lt;@ofbizUrl>/main&lt;/@ofbizUrl>?viewIndex=${prevArg?if_exists}&quot;>Prev&lt;/a>&#xA;&lt;/#if>&#xA;&lt;#if 0 &lt; outputIndex >&#xA; ${lowIndex?if_exists}-${outputIndex?if_exists}&#xA;&lt;#else>&#xA; No records found&#xA;&lt;/#if>&#xA;&lt;#if highIndex &lt; listSize >&#xA;    &lt;#assign nextArg=(viewIndex + 1)?string />&#xA;&lt;a href=&quot;&lt;@ofbizUrl>/main&lt;/@ofbizUrl>?viewIndex=${nextArg?if_exists}&quot;>Next&lt;/a>&#xA;&lt;/#if>&#xA;&lt;/span>&#xA;    &lt;/td>&lt;/tr>&#xA;&lt;/table>&#xA;&lt;/td>&lt;/tr>&#xA;            "/>
+  <contents xsi:type="biz-data:ElectronicText" dataResourceId="WRAP_VIEW" textData="&lt;#assign txt=wrappedContent?default(&quot;&quot;)/>&#xA;${txt}&#xA;&lt;br/>&#xA;&lt;@checkPermission targetOperation=&quot;CONTENT_CREATE|CONTENT_RESPOND&quot;>&#xA;&lt;a class=&quot;tabButton&quot; href=&quot;&lt;@ofbizUrl>/AddResponse?contentIdTo=${subContentId?if_exists}&amp;nodeTrailCsv=${nodeTrailCsv?if_exists}&lt;/@ofbizUrl>&quot; >Respond&lt;/a>&#xA;&lt;/@checkPermission>&#xA;&lt;br/>&#xA;            "/>
+  <contents xsi:type="biz-data:ElectronicText" dataResourceId="IMAGE_CENTERED" textData="&lt;table>&#xA;  &lt;tr>&#xA;    &lt;td>&#xA;&lt;@editRenderSubContent mapKey=&quot;IMAGE&quot;>&#xA;  &lt;@renderSubContent/>&#xA;&lt;/@editRenderSubContent>&#xA;    &lt;/td>&#xA;  &lt;/tr>&#xA;&lt;/table>&#xA;&#xA;&lt;hr/>&#xA;&#xA;&lt;table>&#xA;  &lt;tr>&#xA;    &lt;td>&#xA;&lt;@editRenderSubContent mapKey=&quot;ARTICLE&quot;>&#xA;  &lt;@renderSubContent/>&#xA;&lt;/@editRenderSubContent>&#xA;    &lt;/td>&#xA;  &lt;/tr>&#xA;&lt;/table>"/>
+  <contents xsi:type="biz-data:ElectronicText" dataResourceId="IMAGE_LEFT" textData="&lt;@editRenderSubContent mapKey=&quot;IMAGE&quot;>&#xA;  &lt;@renderSubContent/>&#xA;&lt;/@editRenderSubContent>&#xA;&lt;@editRenderSubContent mapKey=&quot;SUMMARY&quot;>&#xA;  &lt;@renderSubContent/>&#xA;&lt;/@editRenderSubContent>&#xA; "/>
+  <contents xsi:type="biz-data:ElectronicText" dataResourceId="TEMPLATE_TEXT" textData="&lt;@editRenderSubContent mapKey=&quot;ARTICLE&quot;>&#xA;  &lt;@renderSubContent/>&#xA;&lt;/@editRenderSubContent>&#xA;            "/>
+  <contents xsi:type="biz-data:ElectronicText" dataResourceId="TMPLT_IMG_CENTER_FL" textData="&lt;table>&#xA;  &lt;tr>&#xA;    &lt;td>&#xA;        &lt;img src=&quot;&lt;@ofbizContentUrl>&lt;@renderSubContentCache mapKey=&quot;IMAGE&quot; wrapTemplateId=&quot;&quot;/>&lt;/@ofbizContentUrl>&quot; alt=&quot;&quot; />&#xA;    &lt;/td>&#xA;  &lt;/tr>&#xA;&lt;/table>&#xA;&#xA;&lt;hr />&#xA;&#xA;&lt;table>&#xA;  &lt;tr>&#xA;    &lt;td>&#xA;&lt;@renderSubContentCache mapKey=&quot;ARTICLE&quot;/>&#xA;    &lt;/td>&#xA;  &lt;/tr>&#xA;&lt;/table>"/>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="HELP_TEMPL" dataResourceName="Help template file" isPublic="true" objectInfo="applications/content/template/HelpTemplate.ftl">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#FTL"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="CONTENTMGR_VIEW" description="View operations in the Content Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="CONTENTMGR_CREATE" description="Create operations in the Content Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="CONTENTMGR_UPDATE" description="Update operations in the Content Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="CONTENTMGR_DELETE" description="Delete operations in the Content Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="CONTENTMGR_ADMIN" description="ALL operations in the Content Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="CONTENTMGR_ROLE_VIEW" description="Limited View operations in the Content Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="CONTENTMGR_ROLE_CREATE" description="Limited Create operations in the Content Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="CONTENTMGR_ROLE_UPDATE" description="Limited Update operations in the Content Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="CONTENTMGR_ROLE_DELETE" description="Limited Delete operations in the Content Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#SUPER"/>
+    <permissionId href="SecurityPermission#CONTENTMGR_ADMIN"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="NOCONTENTFOUND" createdDate="2004-08-06T11:40:15.818+0200" objectInfo="/applications/content/webapp/content/images/nocontentfound.png">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#image/png"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="NOCONTENTFOUND" contentName="No Content Found" createdDate="2004-08-06T11:40:15.818+0200" description="No Content Found">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#NOCONTENTFOUND"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="NOTEXTFOUND" createdDate="2004-08-06T11:40:15.818+0200" objectInfo="/applications/content/webapp/content/images/notextfound.html">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/html"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="NOTEXTFOUND" contentName="No Text Found" createdDate="2004-08-06T11:40:15.818+0200" description="No Text Found">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#NOTEXTFOUND"/>
+  </contents>
+</mimo-ent:EntityContainer>

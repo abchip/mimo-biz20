@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/security/securitygroup" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/security/securitygroup http://www.abchip.org/mimo/biz#//securitygroup http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="seed_MarketingSecurityPermissionSeedData">
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="MARKETING_VIEW" description="View operations in the Marketing Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="MARKETING_CREATE" description="Create operations in the Marketing Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="MARKETING_UPDATE" description="Update operations in the Marketing Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="MARKETING_DELETE" description="Delete operations in the Marketing Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="MARKETING_ADMIN" description="ALL operations in the Marketing Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="MARKETING_ROLE_VIEW" description="Limited view operations in the Marketing Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="MARKETING_ROLE_UPDATE" description="Limited update operations in the Marketing Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="SFA_VIEW" description="View operations in the SFA Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="SFA_CREATE" description="Create operations in the SFA Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="SFA_UPDATE" description="Update operations in the SFA Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="SFA_DELETE" description="Delete operations in the SFA Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="SFA_ADMIN" description="ALL operations in the SFA Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="SFA_ROLE_VIEW" description="Limited view operations in the SFA Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="SFA_ROLE_UPDATE" description="Limited update operations in the SFA Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#SUPER"/>
+    <permissionId href="SecurityPermission#MARKETING_ADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#SUPER"/>
+    <permissionId href="SecurityPermission#SFA_ADMIN"/>
+  </contents>
+</mimo-ent:EntityContainer>

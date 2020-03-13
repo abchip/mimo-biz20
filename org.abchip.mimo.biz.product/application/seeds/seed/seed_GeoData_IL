@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-geo="http://www.abchip.org/mimo/biz/common/geo" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/geo http://www.abchip.org/mimo/biz#//common/geo http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="seed_GeoData_IL">
+  <contents xsi:type="biz-geo:Geo" geoId="IL-D" geoCode="D" geoName="HaDarom">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="IL-M" geoCode="M" geoName="HaMerkaz">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="IL-Z" geoCode="Z" geoName="HaZafon">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="IL-HA" geoCode="HA" geoName="Haifa">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="IL-TA" geoCode="TA" geoName="Tel Aviv">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="IL-JM" geoCode="JM" geoName="Jerusalem">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ISR"/>
+    <geoIdTo href="Geo#IL-D"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ISR"/>
+    <geoIdTo href="Geo#IL-M"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ISR"/>
+    <geoIdTo href="Geo#IL-Z"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ISR"/>
+    <geoIdTo href="Geo#IL-HA"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ISR"/>
+    <geoIdTo href="Geo#IL-TA"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ISR"/>
+    <geoIdTo href="Geo#IL-JM"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+</mimo-ent:EntityContainer>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-geo="http://www.abchip.org/mimo/biz/common/geo" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/geo http://www.abchip.org/mimo/biz#//common/geo http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="seed_GeoData_PL">
+  <contents xsi:type="biz-geo:Geo" geoId="PL-DŚ" abbreviation="DŚ" geoCode="DŚ" geoName="dolnośląskie">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PL-KP" abbreviation="KP" geoCode="KP" geoName="kujawsko-pomorskie">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PL-LB" abbreviation="LB" geoCode="LB" geoName="lubelskie">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PL-LS" abbreviation="LS" geoCode="LS" geoName="lubuskie">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PL-ŁD" abbreviation="ŁD" geoCode="ŁD" geoName="łódzkie">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PL-MP" abbreviation="MP" geoCode="MP" geoName="małopolskie">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PL-MZ" abbreviation="MZ" geoCode="MZ" geoName="mazowieckie">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PL-OP" abbreviation="OP" geoCode="OP" geoName="opolskie">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PL-PK" abbreviation="PK" geoCode="PK" geoName="podkarpackie">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PL-PL" abbreviation="PL" geoCode="PL" geoName="podlaskie">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PL-PM" abbreviation="PM" geoCode="PM" geoName="pomorskie">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PL-ŚL" abbreviation="ŚL" geoCode="ŚL" geoName="śląskie">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PL-ŚK" abbreviation="ŚK" geoCode="ŚK" geoName="świętokrzyskie">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PL-WM" abbreviation="WM" geoCode="WM" geoName="warmińsko-mazurskie">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PL-WP" abbreviation="WP" geoCode="WP" geoName="wielkopolskie">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PL-ZP" abbreviation="ZP" geoCode="ZP" geoName="zachodniopomorskie">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#POL"/>
+    <geoIdTo href="Geo#PL-DŚ"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#POL"/>
+    <geoIdTo href="Geo#PL-KP"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#POL"/>
+    <geoIdTo href="Geo#PL-LB"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#POL"/>
+    <geoIdTo href="Geo#PL-LS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#POL"/>
+    <geoIdTo href="Geo#PL-ŁD"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#POL"/>
+    <geoIdTo href="Geo#PL-MP"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#POL"/>
+    <geoIdTo href="Geo#PL-MZ"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#POL"/>
+    <geoIdTo href="Geo#PL-OP"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#POL"/>
+    <geoIdTo href="Geo#PL-PK"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#POL"/>
+    <geoIdTo href="Geo#PL-PL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#POL"/>
+    <geoIdTo href="Geo#PL-PM"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#POL"/>
+    <geoIdTo href="Geo#PL-ŚL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#POL"/>
+    <geoIdTo href="Geo#PL-ŚK"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#POL"/>
+    <geoIdTo href="Geo#PL-WM"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#POL"/>
+    <geoIdTo href="Geo#PL-WP"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#POL"/>
+    <geoIdTo href="Geo#PL-ZP"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+</mimo-ent:EntityContainer>

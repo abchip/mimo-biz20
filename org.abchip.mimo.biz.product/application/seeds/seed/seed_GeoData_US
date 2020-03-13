@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-geo="http://www.abchip.org/mimo/biz/common/geo" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/geo http://www.abchip.org/mimo/biz#//common/geo http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="seed_GeoData_US">
+  <contents xsi:type="biz-geo:Geo" geoId="AA" abbreviation="AA" geoCode="AA" geoName="Armed Forces Americas">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="AE" abbreviation="AE" geoCode="AE" geoName="Armed Forces Europe">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="AP" abbreviation="AP" geoCode="AP" geoName="Armed Forces Pacific">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="AK" abbreviation="AK" geoCode="AK" geoName="Alaska">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="AL" abbreviation="AL" geoCode="AL" geoName="Alabama">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="AR" abbreviation="AR" geoCode="AR" geoName="Arkansas">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="AS" abbreviation="AS" geoCode="AS" geoName="American Samoa">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="AZ" abbreviation="AZ" geoCode="AZ" geoName="Arizona">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CA" abbreviation="CA" geoCode="CA" geoName="California">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO" abbreviation="CO" geoCode="CO" geoName="Colorado">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CT" abbreviation="CT" geoCode="CT" geoName="Connecticut">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="DC" abbreviation="DC" geoCode="DC" geoName="District of Columbia">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="DE" abbreviation="DE" geoCode="DE" geoName="Delaware">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FL" abbreviation="FL" geoCode="FL" geoName="Florida">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FM" abbreviation="FM" geoCode="FM" geoName="Federated States of Micronesia">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GA" abbreviation="GA" geoCode="GA" geoName="Georgia">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GU" abbreviation="GU" geoCode="GU" geoName="Guam">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="HI" abbreviation="HI" geoCode="HI" geoName="Hawaii">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="IA" abbreviation="IA" geoCode="IA" geoName="Iowa">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ID" abbreviation="ID" geoCode="ID" geoName="Idaho">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="IL" abbreviation="IL" geoCode="IL" geoName="Illinois">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="IN" abbreviation="IN" geoCode="IN" geoName="Indiana">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="KS" abbreviation="KS" geoCode="KS" geoName="Kansas">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="KY" abbreviation="KY" geoCode="KY" geoName="Kentucky">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="LA" abbreviation="LA" geoCode="LA" geoName="Louisiana">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MA" abbreviation="MA" geoCode="MA" geoName="Massachusetts">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MD" abbreviation="MD" geoCode="MD" geoName="Maryland">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ME" abbreviation="ME" geoCode="ME" geoName="Maine">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MH" abbreviation="MH" geoCode="MH" geoName="Marshall Islands">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MI" abbreviation="MI" geoCode="MI" geoName="Michigan">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MN" abbreviation="MN" geoCode="MN" geoName="Minnesota">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MP" abbreviation="MP" geoCode="MP" geoName="Northern Mariana Islands">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MO" abbreviation="MO" geoCode="MO" geoName="Missouri">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MS" abbreviation="MS" geoCode="MS" geoName="Mississippi">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MT" abbreviation="MT" geoCode="MT" geoName="Montana">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NC" abbreviation="NC" geoCode="NC" geoName="North Carolina">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ND" abbreviation="ND" geoCode="ND" geoName="North Dakota">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NE" abbreviation="NE" geoCode="NE" geoName="Nebraska">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NH" abbreviation="NH" geoCode="NH" geoName="New Hampshire">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NJ" abbreviation="NJ" geoCode="NJ" geoName="New Jersey">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NM" abbreviation="NM" geoCode="NM" geoName="New Mexico">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NV" abbreviation="NV" geoCode="NV" geoName="Nevada">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NY" abbreviation="NY" geoCode="NY" geoName="New York">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="OH" abbreviation="OH" geoCode="OH" geoName="Ohio">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="OK" abbreviation="OK" geoCode="OK" geoName="Oklahoma">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="OR" abbreviation="OR" geoCode="OR" geoName="Oregon">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PA" abbreviation="PA" geoCode="PA" geoName="Pennsylvania">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PW" abbreviation="PW" geoCode="PW" geoName="Palau">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PR" abbreviation="PR" geoCode="PR" geoName="Puerto Rico">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="RI" abbreviation="RI" geoCode="RI" geoName="Rhode Island">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SC" abbreviation="SC" geoCode="SC" geoName="South Carolina">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SD" abbreviation="SD" geoCode="SD" geoName="South Dakota">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TN" abbreviation="TN" geoCode="TN" geoName="Tennessee">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TX" abbreviation="TX" geoCode="TX" geoName="Texas">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="UM" abbreviation="UM" geoCode="UM" geoName="U.S. Minor Outlying Islands">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="UT" abbreviation="UT" geoCode="UT" geoName="Utah">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="VA" abbreviation="VA" geoCode="VA" geoName="Virginia">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="VT" abbreviation="VT" geoCode="VT" geoName="Vermont">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="WA" abbreviation="WA" geoCode="WA" geoName="Washington">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="WI" abbreviation="WI" geoCode="WI" geoName="Wisconsin">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="WV" abbreviation="WV" geoCode="WV" geoName="West Virginia">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="WY" abbreviation="WY" geoCode="WY" geoName="Wyoming">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="VI" abbreviation="VI" geoCode="VI" geoName="Virgin Islands">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#AK"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#AL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#AR"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#AZ"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#CA"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#CO"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#CT"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#DC"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#DE"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#FL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#GA"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#GU"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#HI"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#IA"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#ID"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#IL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#IN"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#KS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#KY"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#LA"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#MA"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#MD"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#ME"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#MI"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#MN"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#MO"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#MS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#MT"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#NC"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#ND"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#NE"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#NH"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#NJ"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#NM"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#NV"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#NY"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#OH"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#OK"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#OR"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#PA"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#PR"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#RI"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#SC"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#SD"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#TN"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#TX"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#UT"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#VA"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#VT"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#WA"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#WI"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#WV"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#WY"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#VI"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#AA"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#AE"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#AP"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="USAF" abbreviation="USAF" geoCode="USAF" geoName="US Armed Forces">
+    <geoTypeId href="GeoType#GROUP"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#AA"/>
+    <geoIdTo href="Geo#USAF"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#AE"/>
+    <geoIdTo href="Geo#USAF"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#AP"/>
+    <geoIdTo href="Geo#USAF"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="AKHI" abbreviation="AKHI" geoCode="AKHI" geoName="Alaska/Hawaii">
+    <geoTypeId href="GeoType#GROUP"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#AK"/>
+    <geoIdTo href="Geo#AKHI"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#HI"/>
+    <geoIdTo href="Geo#AKHI"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="USTR" abbreviation="USTR" geoCode="USTR" geoName="US Territories">
+    <geoTypeId href="GeoType#GROUP"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#AS"/>
+    <geoIdTo href="Geo#USTR"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FM"/>
+    <geoIdTo href="Geo#USTR"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#GU"/>
+    <geoIdTo href="Geo#USTR"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MH"/>
+    <geoIdTo href="Geo#USTR"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MP"/>
+    <geoIdTo href="Geo#USTR"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#PW"/>
+    <geoIdTo href="Geo#USTR"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#PR"/>
+    <geoIdTo href="Geo#USTR"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#UM"/>
+    <geoIdTo href="Geo#USTR"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#VI"/>
+    <geoIdTo href="Geo#USTR"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="AHUST" abbreviation="AHUST" geoCode="AHUST" geoName="Alaska/Hawaii/Territories">
+    <geoTypeId href="GeoType#GROUP"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#AKHI"/>
+    <geoIdTo href="Geo#AHUST"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USTR"/>
+    <geoIdTo href="Geo#AHUST"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="USCN" abbreviation="USCN" geoCode="USCN" geoName="US Continental">
+    <geoTypeId href="GeoType#GROUP"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#AL"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#AR"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#AZ"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CA"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CO"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CT"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#DC"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#DE"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FL"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#GA"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#IA"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ID"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#IL"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#IN"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#KS"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#KY"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#LA"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MA"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MD"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ME"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MI"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MN"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MO"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MS"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MT"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NC"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ND"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NE"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NH"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NJ"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NM"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NV"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NY"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#OH"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#OK"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#OR"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#PA"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#RI"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SC"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SD"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#TN"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#TX"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#UT"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#VA"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#VT"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#WA"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#WI"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#WV"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#WY"/>
+    <geoIdTo href="Geo#USCN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="USALL" abbreviation="USALL" geoCode="USALL" geoName="US All (w/ APO/FPO)">
+    <geoTypeId href="GeoType#GROUP"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USCN"/>
+    <geoIdTo href="Geo#USALL"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USAF"/>
+    <geoIdTo href="Geo#USALL"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#AHUST"/>
+    <geoIdTo href="Geo#USALL"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="US50" abbreviation="US50" geoCode="US50" geoName="US 50 (no APO/FPO)">
+    <geoTypeId href="GeoType#GROUP"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USCN"/>
+    <geoIdTo href="Geo#US50"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#AHUST"/>
+    <geoIdTo href="Geo#US50"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="USCAN" abbreviation="USCAN" geoCode="USCAN" geoName="US/Canada">
+    <geoTypeId href="GeoType#GROUP"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#USCAN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CAN"/>
+    <geoIdTo href="Geo#USCAN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="USMEXCAN" abbreviation="USMEXCAN" geoCode="USMEXCAN" geoName="US/Mexico/Canada">
+    <geoTypeId href="GeoType#GROUP"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#USMEXCAN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MEX"/>
+    <geoIdTo href="Geo#USMEXCAN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CAN"/>
+    <geoIdTo href="Geo#USMEXCAN"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="UT-UTAH" abbreviation="UTAH" geoCode="UTAH" geoName="Utah County">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#UT"/>
+    <geoIdTo href="Geo#UT-UTAH"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="UT-SANPETE" abbreviation="SANPETE" geoCode="SANPETE" geoName="Sanpete">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#UT"/>
+    <geoIdTo href="Geo#UT-SANPETE"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="USA-84057" abbreviation="84057" geoCode="84057" geoName="84057">
+    <geoTypeId href="GeoType#POSTAL_CODE"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#UT-UTAH"/>
+    <geoIdTo href="Geo#USA-84057"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#USA"/>
+    <geoIdTo href="Geo#USA-84057"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+</mimo-ent:EntityContainer>

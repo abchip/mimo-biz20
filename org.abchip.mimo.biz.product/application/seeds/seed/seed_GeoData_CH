@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-geo="http://www.abchip.org/mimo/biz/common/geo" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/geo http://www.abchip.org/mimo/biz#//common/geo http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="seed_GeoData_CH">
+  <contents xsi:type="biz-geo:Geo" geoId="CH-AG" abbreviation="AG" geoCode="AG" geoName="Aargau">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-AI" abbreviation="AI" geoCode="AI" geoName="Appenzell Innerrhoden">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-AR" abbreviation="AR" geoCode="AR" geoName="Appenzell Ausserrhoden">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-BE" abbreviation="BE" geoCode="BE" geoName="Bern">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-BL" abbreviation="BL" geoCode="BL" geoName="Basel-Landschaft">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-BS" abbreviation="BS" geoCode="BS" geoName="Basel-Stadt">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-FR" abbreviation="FR" geoCode="FR" geoName="Fribourg">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-GE" abbreviation="GE" geoCode="GE" geoName="Genève">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-GL" abbreviation="GL" geoCode="GL" geoName="Glarus">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-GR" abbreviation="GR" geoCode="GR" geoName="Graubünden">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-JU" abbreviation="JU" geoCode="JU" geoName="Jura">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-LU" abbreviation="LU" geoCode="LU" geoName="Luzern">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-NE" abbreviation="NE" geoCode="NE" geoName="Neuchâtel">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-NW" abbreviation="NW" geoCode="NW" geoName="Nidwalden">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-OW" abbreviation="OW" geoCode="OW" geoName="Obwalden">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-SG" abbreviation="SG" geoCode="SG" geoName="St. Gallen">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-SH" abbreviation="SH" geoCode="SH" geoName="Schaffhausen">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-SO" abbreviation="SO" geoCode="SO" geoName="Solothurn">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-SZ" abbreviation="SZ" geoCode="SZ" geoName="Schwyz">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-TG" abbreviation="TG" geoCode="TG" geoName="Thurgau">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-TI" abbreviation="TI" geoCode="TI" geoName="Ticino">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-UR" abbreviation="UR" geoCode="UR" geoName="Uri">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-VD" abbreviation="VD" geoCode="VD" geoName="Vaud">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-VS" abbreviation="VS" geoCode="VS" geoName="Valais">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-ZG" abbreviation="ZG" geoCode="ZG" geoName="Zug">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CH-ZH" abbreviation="ZH" geoCode="ZH" geoName="Zürich">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-AG"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-AI"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-AR"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-BE"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-BL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-BS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-FR"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-GE"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-GL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-GR"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-JU"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-LU"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-NE"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-NW"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-OW"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-SG"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-SH"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-SO"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-SZ"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-TG"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-TI"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-UR"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-VD"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-VS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-ZG"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CHE"/>
+    <geoIdTo href="Geo#CH-ZH"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+</mimo-ent:EntityContainer>

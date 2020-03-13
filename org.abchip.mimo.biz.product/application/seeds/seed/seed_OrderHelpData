@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-content="http://www.abchip.org/mimo/biz/content/content" xmlns:biz-data="http://www.abchip.org/mimo/biz/content/data" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/content/content http://www.abchip.org/mimo/biz#//content http://www.abchip.org/mimo/biz/content/data http://www.abchip.org/mimo/biz#//data http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="seed_OrderHelpData">
+  <contents xsi:type="biz-data:DataResource" dataResourceId="HELP_ORDERMGR" dataResourceName="Order" isPublic="true" localeString="en" objectInfo="applications/order/data/helpdata/HELP_ORDERMGR.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="HELP_ORDERMGR" contentName="Order Manager">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#HELP_ORDERMGR"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100">
+    <contentId href="Content#HELP_ROOT"/>
+    <contentIdTo href="Content#HELP_ORDERMGR"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="HELP_ORDERMGR_VIEW" dataResourceName="Ebay" isPublic="true" localeString="en" objectInfo="applications/order/data/helpdata/HELP_ORDERMGR_View.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="HELP_ORDERMGR_VIEW" contentName="Order View Help">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#HELP_ORDERMGR_VIEW"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100" mapKey="ORDERMGR_orderview">
+    <contentId href="Content#HELP_ORDERMGR"/>
+    <contentIdTo href="Content#HELP_ORDERMGR_VIEW"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="HELP_ORDERMGR_REPORT" dataResourceName="Ebay" isPublic="true" localeString="en" objectInfo="applications/order/data/helpdata/HELP_ORDERMGR_Report.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="HELP_ORDERMGR_REPORT" contentName="Order Reports Help">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#HELP_ORDERMGR_REPORT"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100" mapKey="ORDERMGR_OrderPurchaseReportOptions">
+    <contentId href="Content#HELP_ORDERMGR"/>
+    <contentIdTo href="Content#HELP_ORDERMGR_REPORT"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+</mimo-ent:EntityContainer>

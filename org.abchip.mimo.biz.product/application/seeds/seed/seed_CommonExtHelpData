@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-content="http://www.abchip.org/mimo/biz/content/content" xmlns:biz-data="http://www.abchip.org/mimo/biz/content/data" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/content/content http://www.abchip.org/mimo/biz#//content http://www.abchip.org/mimo/biz/content/data http://www.abchip.org/mimo/biz#//data http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="seed_CommonExtHelpData">
+  <contents xsi:type="biz-data:DataResource" dataResourceId="HELP_SETUP" dataResourceName="OFBiz Setup Overview" isPublic="true" localeString="en" objectInfo="applications/commonext/data/helpdata/HELP_SETUP.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="HELP_SETUP" contentName="OFBiz Setup" localeString="en">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#HELP_SETUP"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2009-09-09T01:01:01.000+0200">
+    <contentId href="Content#HELP_ROOT"/>
+    <contentIdTo href="Content#HELP_SETUP"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="SETUP_initialsetup" dataResourceName="Setup Main Help" isPublic="true" localeString="en" objectInfo="applications/commonext/data/helpdata/HELP_SETUP_initialsetup.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="SETUP_initialsetup" contentName="Setup main.">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#SETUP_initialsetup"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2009-09-09T01:01:01.000+0200" mapKey="OFBIZSETUP_initialsetup" sequenceNum="1">
+    <contentId href="Content#HELP_SETUP"/>
+    <contentIdTo href="Content#SETUP_initialsetup"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="SETUP_editFacility" dataResourceName="OFBiz Setup Edit Facility Help" isPublic="true" localeString="en" objectInfo="applications/commonext/data/helpdata/HELP_SETUP_editFacility.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="SETUP_editFacility" contentName="Edit Facility.">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#SETUP_editFacility"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2009-09-09T01:01:01.000+0200" mapKey="OFBIZSETUP_EditFacility" sequenceNum="2">
+    <contentId href="Content#HELP_SETUP"/>
+    <contentIdTo href="Content#SETUP_editFacility"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="SETUP_editProdStore" dataResourceName="OFBiz Setup Edit Product Store Help" isPublic="true" localeString="en" objectInfo="applications/commonext/data/helpdata/HELP_SETUP_editProductStore.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="SETUP_editProdStore" contentName="Edit Product Store.">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#SETUP_editProdStore"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2009-09-09T01:01:01.000+0200" mapKey="OFBIZSETUP_EditProductStore" sequenceNum="3">
+    <contentId href="Content#HELP_SETUP"/>
+    <contentIdTo href="Content#SETUP_editProdStore"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="SETUP_editWebSite" dataResourceName="OFBiz Setup Edit WebSite Help" isPublic="true" localeString="en" objectInfo="applications/commonext/data/helpdata/HELP_SETUP_editWebSite.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="SETUP_editWebSite" contentName="Edit WebSite.">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#SETUP_editWebSite"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2009-09-09T01:01:01.000+0200" mapKey="OFBIZSETUP_EditWebSite" sequenceNum="4">
+    <contentId href="Content#HELP_SETUP"/>
+    <contentIdTo href="Content#SETUP_editWebSite"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="SETUP_firstCust" dataResourceName="OFBiz Setup Create First Customer Help" isPublic="true" localeString="en" objectInfo="applications/commonext/data/helpdata/HELP_SETUP_firstcustomer.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="SETUP_firstCust" contentName="Create First Customer.">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#SETUP_firstCust"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2009-09-09T01:01:01.000+0200" mapKey="OFBIZSETUP_firstcustomer" sequenceNum="5">
+    <contentId href="Content#HELP_SETUP"/>
+    <contentIdTo href="Content#SETUP_firstCust"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="SETUP_firstCatalog" dataResourceName="OFBiz Setup First Catalog Help" isPublic="true" localeString="en" objectInfo="applications/commonext/data/helpdata/HELP_SETUP_firstProdCatalog.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="SETUP_firstCatalog" contentName="Create First Catalog.">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#SETUP_firstCatalog"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2009-09-09T01:01:01.000+0200" mapKey="OFBIZSETUP_firstproduct" sequenceNum="6">
+    <contentId href="Content#HELP_SETUP"/>
+    <contentIdTo href="Content#SETUP_firstCatalog"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="SETUP_firstCategory" dataResourceName="OFBiz Setup First Product Category Help" isPublic="true" localeString="en" objectInfo="applications/commonext/data/helpdata/HELP_SETUP_firstProductCategory.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="SETUP_firstCategory" contentName="Create First Product Category Help">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#SETUP_firstCategory"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2009-09-09T01:01:01.000+0200" mapKey="OFBIZSETUP_EditCategory" sequenceNum="7">
+    <contentId href="Content#HELP_SETUP"/>
+    <contentIdTo href="Content#SETUP_firstCategory"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="SETUP_firstproduct" dataResourceName="OFBiz Setup The First Product Help" isPublic="true" localeString="en" objectInfo="applications/commonext/data/helpdata/HELP_SETUP_firstproduct.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="SETUP_firstproduct" contentName="Create First Product.">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#SETUP_firstproduct"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2009-09-09T01:01:01.000+0200" mapKey="OFBIZSETUP_EditProduct" sequenceNum="8">
+    <contentId href="Content#HELP_SETUP"/>
+    <contentIdTo href="Content#SETUP_firstproduct"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="SETUP_profileORG" dataResourceName="OFBiz Setup View Organization Profile Help" isPublic="true" localeString="en" objectInfo="applications/commonext/data/helpdata/HELP_SETUP_profileCompany.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="SETUP_profileORG" contentName="View Organization Profile.">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#SETUP_profileORG"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2009-09-09T01:01:01.000+0200" mapKey="OFBIZSETUP_viewprofile" sequenceNum="9">
+    <contentId href="Content#HELP_SETUP"/>
+    <contentIdTo href="Content#SETUP_profileORG"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="DOCUMENTATION_SYSTEM" dataResourceName="Documentation system" isPublic="true" localeString="en" objectInfo="applications/commonext/data/helpdata/HELP_OFBizDocumentationSystem.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="DOCUMENTATION_SYSTEM" contentName="Documentation system" localeString="en">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#DOCUMENTATION_SYSTEM"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2009-09-09T01:01:01.000+0200" mapKey="DOCUMENTATION_SYSTEM" sequenceNum="10">
+    <contentId href="Content#HELP_SETUP"/>
+    <contentIdTo href="Content#DOCUMENTATION_SYSTEM"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="DOCUMENTAT_SYSTEM_FR" dataResourceName="Orga. techn. de la documentation" isPublic="true" localeString="fr" objectInfo="applications/commonext/data/helpdata/HELP_OFBizDocumentationSystem_FR.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="DOCUMENTAT_SYSTEM_FR" contentName="Orga. techn. de la documentation" localeString="fr">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#DOCUMENTAT_SYSTEM_FR"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100">
+    <contentId href="Content#DOCUMENTATION_SYSTEM"/>
+    <contentIdTo href="Content#DOCUMENTAT_SYSTEM_FR"/>
+    <contentAssocTypeId href="ContentAssocType#ALTERNATE_LOCALE"/>
+  </contents>
+</mimo-ent:EntityContainer>

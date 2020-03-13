@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-enum="http://www.abchip.org/mimo/biz/common/enum" xmlns:biz-order="http://www.abchip.org/mimo/biz/order/order" xmlns:biz-quote="http://www.abchip.org/mimo/biz/order/quote" xmlns:biz-request="http://www.abchip.org/mimo/biz/order/request" xmlns:biz-requirement="http://www.abchip.org/mimo/biz/order/requirement" xmlns:biz-return="http://www.abchip.org/mimo/biz/order/return" xmlns:biz-shoppinglist="http://www.abchip.org/mimo/biz/order/shoppinglist" xmlns:biz-status="http://www.abchip.org/mimo/biz/common/status" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/enum http://www.abchip.org/mimo/biz#//common/enum http://www.abchip.org/mimo/biz/order/order http://www.abchip.org/mimo/biz#//order http://www.abchip.org/mimo/biz/order/quote http://www.abchip.org/mimo/biz#//quote http://www.abchip.org/mimo/biz/order/request http://www.abchip.org/mimo/biz#//request http://www.abchip.org/mimo/biz/order/requirement http://www.abchip.org/mimo/biz#//requirement http://www.abchip.org/mimo/biz/order/return http://www.abchip.org/mimo/biz#//return http://www.abchip.org/mimo/biz/order/shoppinglist http://www.abchip.org/mimo/biz#//shoppinglist http://www.abchip.org/mimo/biz/common/status http://www.abchip.org/mimo/biz#//common/status http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="seed_OrderSeedData">
+  <contents xsi:type="biz-request:CustRequestType" custRequestTypeId="RF_BUGFIX" description="Request For Bug Fix"/>
+  <contents xsi:type="biz-request:CustRequestType" custRequestTypeId="RF_CATALOG" description="Request For Catalog"/>
+  <contents xsi:type="biz-request:CustRequestType" custRequestTypeId="RF_FEATURE" description="Request For Feature"/>
+  <contents xsi:type="biz-request:CustRequestType" custRequestTypeId="RF_INFO" description="Request For Information"/>
+  <contents xsi:type="biz-request:CustRequestType" custRequestTypeId="RF_PROPOSAL" description="Request For Proposal"/>
+  <contents xsi:type="biz-request:CustRequestType" custRequestTypeId="RF_QUOTE" description="Request For Quote"/>
+  <contents xsi:type="biz-request:CustRequestType" custRequestTypeId="RF_SUPPORT" description="Request For Support"/>
+  <contents xsi:type="biz-request:CustRequestType" custRequestTypeId="RF_PUR_QUOTE" description="Request For Purchase Quote"/>
+  <contents xsi:type="biz-request:CustRequestResolution" custRequestResolutionId="FIXED" description="Fixed">
+    <custRequestTypeId href="CustRequestType#RF_BUGFIX"/>
+  </contents>
+  <contents xsi:type="biz-request:CustRequestResolution" custRequestResolutionId="WORKS" description="Works For Me">
+    <custRequestTypeId href="CustRequestType#RF_BUGFIX"/>
+  </contents>
+  <contents xsi:type="biz-request:CustRequestResolution" custRequestResolutionId="WONTFIX" description="Won't Fix">
+    <custRequestTypeId href="CustRequestType#RF_BUGFIX"/>
+  </contents>
+  <contents xsi:type="biz-request:CustRequestResolution" custRequestResolutionId="DUPLICATE" description="Duplicate">
+    <custRequestTypeId href="CustRequestType#RF_FEATURE"/>
+  </contents>
+  <contents xsi:type="biz-request:CustRequestResolution" custRequestResolutionId="REJECTED" description="Rejected">
+    <custRequestTypeId href="CustRequestType#RF_FEATURE"/>
+  </contents>
+  <contents xsi:type="biz-request:CustRequestResolution" custRequestResolutionId="IMPLEMENTED" description="Implemented">
+    <custRequestTypeId href="CustRequestType#RF_FEATURE"/>
+  </contents>
+  <contents xsi:type="biz-order:OrderAdjustmentType" orderAdjustmentTypeId="PROMOTION_ADJUSTMENT" description="Promotion"/>
+  <contents xsi:type="biz-order:OrderAdjustmentType" orderAdjustmentTypeId="REPLACE_ADJUSTMENT" description="Replacement"/>
+  <contents xsi:type="biz-order:OrderAdjustmentType" orderAdjustmentTypeId="DISCOUNT_ADJUSTMENT" description="Discount"/>
+  <contents xsi:type="biz-order:OrderAdjustmentType" orderAdjustmentTypeId="DONATION_ADJUSTMENT" description="Donation"/>
+  <contents xsi:type="biz-order:OrderAdjustmentType" orderAdjustmentTypeId="FEE" description="Fee"/>
+  <contents xsi:type="biz-order:OrderAdjustmentType" orderAdjustmentTypeId="MISCELLANEOUS_CHARGE" description="Miscellaneous Charges"/>
+  <contents xsi:type="biz-order:OrderAdjustmentType" orderAdjustmentTypeId="SALES_TAX" description="Sales Tax"/>
+  <contents xsi:type="biz-order:OrderAdjustmentType" orderAdjustmentTypeId="VAT_TAX" description="VAT Tax (not added to totals)"/>
+  <contents xsi:type="biz-order:OrderAdjustmentType" orderAdjustmentTypeId="VAT_PRICE_CORRECT" description="VAT Price Correction"/>
+  <contents xsi:type="biz-order:OrderAdjustmentType" orderAdjustmentTypeId="SHIPPING_CHARGES" description="Shipping and Handling"/>
+  <contents xsi:type="biz-order:OrderAdjustmentType" orderAdjustmentTypeId="SURCHARGE_ADJUSTMENT" description="Surcharge"/>
+  <contents xsi:type="biz-order:OrderAdjustmentType" orderAdjustmentTypeId="ADDITIONAL_FEATURE" description="Additional Feature"/>
+  <contents xsi:type="biz-order:OrderAdjustmentType" orderAdjustmentTypeId="WARRANTY_ADJUSTMENT" description="Warranty"/>
+  <contents xsi:type="biz-order:OrderAdjustmentType" orderAdjustmentTypeId="MKTG_PKG_AUTO_ADJUST" description="Marketing Package Adjustment"/>
+  <contents xsi:type="biz-order:OrderAdjustmentType" orderAdjustmentTypeId="DEPOSIT_ADJUSTMENT" description="Deposit"/>
+  <contents xsi:type="biz-order:OrderBlacklistType" orderBlacklistTypeId="BLACKLIST_ADDRESS" description="Addresss"/>
+  <contents xsi:type="biz-order:OrderBlacklistType" orderBlacklistTypeId="BLACKLIST_CREDITCARD" description="Credit Card"/>
+  <contents xsi:type="biz-order:OrderBlacklistType" orderBlacklistTypeId="BLACKLIST_EMAIL" description="E-Mail"/>
+  <contents xsi:type="biz-order:OrderBlacklistType" orderBlacklistTypeId="BLACKLIST_PHONE" description="Phone Number"/>
+  <contents xsi:type="biz-order:OrderItemType" orderItemTypeId="PURCHASE_SPECIFIC" description="Purchase Order Specific"/>
+  <contents xsi:type="biz-order:OrderItemType" orderItemTypeId="INVENTORY_ORDER_ITEM" description="PO: Inventory">
+    <parentTypeId href="OrderItemType#PURCHASE_SPECIFIC"/>
+  </contents>
+  <contents xsi:type="biz-order:OrderItemType" orderItemTypeId="SUPPLIES_ORDER_ITEM" description="PO: Supplies (to Expense)">
+    <parentTypeId href="OrderItemType#PURCHASE_SPECIFIC"/>
+  </contents>
+  <contents xsi:type="biz-order:OrderItemType" orderItemTypeId="ASSET_ORDER_ITEM" description="PO: Fixed Asset">
+    <parentTypeId href="OrderItemType#PURCHASE_SPECIFIC"/>
+  </contents>
+  <contents xsi:type="biz-order:OrderItemType" orderItemTypeId="PRODUCT_ORDER_ITEM" description="Product Item"/>
+  <contents xsi:type="biz-order:OrderItemType" orderItemTypeId="WORK_ORDER_ITEM" description="Work Item"/>
+  <contents xsi:type="biz-order:OrderItemType" orderItemTypeId="RENTAL_ORDER_ITEM" description="Rental Item"/>
+  <contents xsi:type="biz-order:OrderItemType" orderItemTypeId="BULK_ORDER_ITEM" description="Bulk Item"/>
+  <contents xsi:type="biz-order:OrderType" orderTypeId="PURCHASE_ORDER" description="Purchase"/>
+  <contents xsi:type="biz-order:OrderType" orderTypeId="SALES_ORDER" description="Sales"/>
+  <contents xsi:type="biz-order:OrderItemAssocType" orderItemAssocTypeId="PURCHASE_ORDER" description="Purchase Order"/>
+  <contents xsi:type="biz-order:OrderItemAssocType" orderItemAssocTypeId="DROP_SHIPMENT" description="Drop Shipment"/>
+  <contents xsi:type="biz-order:OrderItemAssocType" orderItemAssocTypeId="REPLACEMENT" description="Return Replacement"/>
+  <contents xsi:type="biz-order:OrderItemAssocType" orderItemAssocTypeId="NEW_VERSION" description="New Version"/>
+  <contents xsi:type="biz-order:OrderItemAssocType" orderItemAssocTypeId="EXCHANGE" description="Exchange Order"/>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="ORDER_SALES_CHANNEL" description="Order Sales Channel"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="WEB_SALES_CHANNEL" description="Web Channel" enumCode="WEB_CHANNEL" sequenceId="01">
+    <enumTypeId href="EnumerationType#ORDER_SALES_CHANNEL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAX_SALES_CHANNEL" description="Fax Channel" enumCode="FAX_CHANNEL" sequenceId="03">
+    <enumTypeId href="EnumerationType#ORDER_SALES_CHANNEL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PHONE_SALES_CHANNEL" description="Phone Channel" enumCode="PHONE_CHANNEL" sequenceId="04">
+    <enumTypeId href="EnumerationType#ORDER_SALES_CHANNEL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="EMAIL_SALES_CHANNEL" description="E-Mail Channel" enumCode="EMAIL_CHANNEL" sequenceId="05">
+    <enumTypeId href="EnumerationType#ORDER_SALES_CHANNEL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="SNAIL_SALES_CHANNEL" description="Snail Mail Channel" enumCode="SNAIL_CHANNEL" sequenceId="06">
+    <enumTypeId href="EnumerationType#ORDER_SALES_CHANNEL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="AFFIL_SALES_CHANNEL" description="Affiliate Channel" enumCode="AFFIL_CHANNEL" sequenceId="07">
+    <enumTypeId href="EnumerationType#ORDER_SALES_CHANNEL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="EBAY_SALES_CHANNEL" description="eBay Channel" enumCode="EBAY_CHANNEL" sequenceId="08">
+    <enumTypeId href="EnumerationType#ORDER_SALES_CHANNEL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="UNKNWN_SALES_CHANNEL" description="Unknown Channel" enumCode="UNKOWN_CHANNEL" sequenceId="99">
+    <enumTypeId href="EnumerationType#ORDER_SALES_CHANNEL"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="ODR_ITM_CHANGE_TYPE" description="Order Item Change Type"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="ODR_ITM_UPDATE" description="Order Item Update" enumCode="ITM_UPDATE" sequenceId="01">
+    <enumTypeId href="EnumerationType#ODR_ITM_CHANGE_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="ODR_ITM_CANCEL" description="Order Item Cancel" enumCode="ITM_CANCEL" sequenceId="02">
+    <enumTypeId href="EnumerationType#ODR_ITM_CHANGE_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="ODR_ITM_APPEND" description="Order Item Append" enumCode="ITM_APPEND" sequenceId="03">
+    <enumTypeId href="EnumerationType#ODR_ITM_CHANGE_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="ODR_ITM_CH_REASON" description="Order Item Change Reason"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="OICR_MISORDER_ITEM" description="Mis-Ordered Item" enumCode="MISORDER" sequenceId="01">
+    <enumTypeId href="EnumerationType#ODR_ITM_CH_REASON"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="OICR_CHANGE_MIND" description="Changed Mind" enumCode="CHANGE_MIND" sequenceId="02">
+    <enumTypeId href="EnumerationType#ODR_ITM_CH_REASON"/>
+  </contents>
+  <contents xsi:type="biz-quote:QuoteType" quoteTypeId="OTHER_QUOTE" description="Other"/>
+  <contents xsi:type="biz-quote:QuoteType" quoteTypeId="PRODUCT_QUOTE" description="Product"/>
+  <contents xsi:type="biz-quote:QuoteType" quoteTypeId="PROPOSAL" description="Proposal"/>
+  <contents xsi:type="biz-quote:QuoteType" quoteTypeId="PURCHASE_QUOTE" description="Product Purchase"/>
+  <contents xsi:type="biz-requirement:RequirementType" requirementTypeId="CUSTOMER_REQUIREMENT" description="Customer Requirement"/>
+  <contents xsi:type="biz-requirement:RequirementType" requirementTypeId="INTERNAL_REQUIREMENT" description="Internal Requirement"/>
+  <contents xsi:type="biz-requirement:RequirementType" requirementTypeId="PRODUCT_REQUIREMENT" description="Product Requirement"/>
+  <contents xsi:type="biz-requirement:RequirementType" requirementTypeId="WORK_REQUIREMENT" description="Work Requirement"/>
+  <contents xsi:type="biz-requirement:RequirementType" requirementTypeId="TRANSFER_REQUIREMENT" description="Inter Facility Transfer Requirement"/>
+  <contents xsi:type="biz-shoppinglist:ShoppingListType" shoppingListTypeId="SLT_WISH_LIST" description="Wish List"/>
+  <contents xsi:type="biz-shoppinglist:ShoppingListType" shoppingListTypeId="SLT_GIFT_REG" description="Gift Registry"/>
+  <contents xsi:type="biz-shoppinglist:ShoppingListType" shoppingListTypeId="SLT_AUTO_REODR" description="Automatic Re-Orders"/>
+  <contents xsi:type="biz-shoppinglist:ShoppingListType" shoppingListTypeId="SLT_FREQ_PURCHASES" description="Frequent Purchases"/>
+  <contents xsi:type="biz-shoppinglist:ShoppingListType" shoppingListTypeId="SLT_SPEC_PURP" description="Special Purpose"/>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="ORDER_STATUS" description="Order"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="ORDER_CREATED" description="Created" sequenceId="01" statusCode="CREATED">
+    <statusTypeId href="StatusType#ORDER_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ORDER_PROCESSING" description="Processing" sequenceId="04" statusCode="PROCESSING">
+    <statusTypeId href="StatusType#ORDER_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ORDER_APPROVED" description="Approved" sequenceId="05" statusCode="APPROVED">
+    <statusTypeId href="StatusType#ORDER_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ORDER_SENT" description="Sent" sequenceId="03" statusCode="SENT">
+    <statusTypeId href="StatusType#ORDER_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ORDER_HOLD" description="Held" sequenceId="06" statusCode="HELD">
+    <statusTypeId href="StatusType#ORDER_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ORDER_COMPLETED" description="Completed" sequenceId="10" statusCode="COMPLETED">
+    <statusTypeId href="StatusType#ORDER_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ORDER_REJECTED" description="Rejected" sequenceId="98" statusCode="REJECTED">
+    <statusTypeId href="StatusType#ORDER_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ORDER_CANCELLED" description="Cancelled" sequenceId="99" statusCode="CANCELLED">
+    <statusTypeId href="StatusType#ORDER_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="ORDER_ITEM_STATUS" description="Order Item">
+    <parentTypeId href="StatusType#ORDER_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ITEM_CREATED" description="Created" sequenceId="01" statusCode="CREATED">
+    <statusTypeId href="StatusType#ORDER_ITEM_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ITEM_APPROVED" description="Approved" sequenceId="05" statusCode="APPROVED">
+    <statusTypeId href="StatusType#ORDER_ITEM_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ITEM_COMPLETED" description="Completed" sequenceId="10" statusCode="COMPLETED">
+    <statusTypeId href="StatusType#ORDER_ITEM_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ITEM_REJECTED" description="Rejected" sequenceId="98" statusCode="REJECTED">
+    <statusTypeId href="StatusType#ORDER_ITEM_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ITEM_CANCELLED" description="Cancelled" sequenceId="99" statusCode="CANCELLED">
+    <statusTypeId href="StatusType#ORDER_ITEM_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Process Order">
+    <statusId href="StatusItem#ORDER_CREATED"/>
+    <statusIdTo href="StatusItem#ORDER_PROCESSING"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Approve Order">
+    <statusId href="StatusItem#ORDER_CREATED"/>
+    <statusIdTo href="StatusItem#ORDER_APPROVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Hold Order">
+    <statusId href="StatusItem#ORDER_CREATED"/>
+    <statusIdTo href="StatusItem#ORDER_HOLD"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Reject Order">
+    <statusId href="StatusItem#ORDER_CREATED"/>
+    <statusIdTo href="StatusItem#ORDER_REJECTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel Order">
+    <statusId href="StatusItem#ORDER_CREATED"/>
+    <statusIdTo href="StatusItem#ORDER_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Hold Order">
+    <statusId href="StatusItem#ORDER_PROCESSING"/>
+    <statusIdTo href="StatusItem#ORDER_HOLD"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Approve Order">
+    <statusId href="StatusItem#ORDER_PROCESSING"/>
+    <statusIdTo href="StatusItem#ORDER_APPROVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Reject Order">
+    <statusId href="StatusItem#ORDER_PROCESSING"/>
+    <statusIdTo href="StatusItem#ORDER_REJECTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel Order">
+    <statusId href="StatusItem#ORDER_PROCESSING"/>
+    <statusIdTo href="StatusItem#ORDER_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Send Order">
+    <statusId href="StatusItem#ORDER_APPROVED"/>
+    <statusIdTo href="StatusItem#ORDER_SENT"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Process Order">
+    <statusId href="StatusItem#ORDER_APPROVED"/>
+    <statusIdTo href="StatusItem#ORDER_PROCESSING"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Complete Order">
+    <statusId href="StatusItem#ORDER_APPROVED"/>
+    <statusIdTo href="StatusItem#ORDER_COMPLETED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel Order">
+    <statusId href="StatusItem#ORDER_APPROVED"/>
+    <statusIdTo href="StatusItem#ORDER_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Hold Order">
+    <statusId href="StatusItem#ORDER_APPROVED"/>
+    <statusIdTo href="StatusItem#ORDER_HOLD"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Process Order">
+    <statusId href="StatusItem#ORDER_HOLD"/>
+    <statusIdTo href="StatusItem#ORDER_PROCESSING"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Approve Order">
+    <statusId href="StatusItem#ORDER_HOLD"/>
+    <statusIdTo href="StatusItem#ORDER_APPROVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel Order">
+    <statusId href="StatusItem#ORDER_HOLD"/>
+    <statusIdTo href="StatusItem#ORDER_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Order Completed">
+    <statusId href="StatusItem#ORDER_SENT"/>
+    <statusIdTo href="StatusItem#ORDER_COMPLETED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Order Cancelled">
+    <statusId href="StatusItem#ORDER_SENT"/>
+    <statusIdTo href="StatusItem#ORDER_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Approve Order">
+    <statusId href="StatusItem#ORDER_COMPLETED"/>
+    <statusIdTo href="StatusItem#ORDER_APPROVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Approve Item">
+    <statusId href="StatusItem#ITEM_CREATED"/>
+    <statusIdTo href="StatusItem#ITEM_APPROVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Reject Item">
+    <statusId href="StatusItem#ITEM_CREATED"/>
+    <statusIdTo href="StatusItem#ITEM_REJECTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel Item">
+    <statusId href="StatusItem#ITEM_CREATED"/>
+    <statusIdTo href="StatusItem#ITEM_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Complete Item">
+    <statusId href="StatusItem#ITEM_APPROVED"/>
+    <statusIdTo href="StatusItem#ITEM_COMPLETED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel Item">
+    <statusId href="StatusItem#ITEM_APPROVED"/>
+    <statusIdTo href="StatusItem#ITEM_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Approve Item">
+    <statusId href="StatusItem#ITEM_COMPLETED"/>
+    <statusIdTo href="StatusItem#ITEM_APPROVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="PAYMENT_PREF_STATUS" description="Payment Preference"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="PAYMENT_NOT_RECEIVED" description="Not-Received" sequenceId="01" statusCode="NOT_RECEIVED">
+    <statusTypeId href="StatusType#PAYMENT_PREF_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PAYMENT_RECEIVED" description="Received" sequenceId="02" statusCode="RECEIVED">
+    <statusTypeId href="StatusType#PAYMENT_PREF_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PAYMENT_NOT_AUTH" description="Not-Authorized" sequenceId="01" statusCode="NOT_AUTHORIZED">
+    <statusTypeId href="StatusType#PAYMENT_PREF_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PAYMENT_AUTHORIZED" description="Authorized" sequenceId="02" statusCode="AUTHORIZED">
+    <statusTypeId href="StatusType#PAYMENT_PREF_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PAYMENT_SETTLED" description="Settled" sequenceId="03" statusCode="SETTLED">
+    <statusTypeId href="StatusType#PAYMENT_PREF_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PAYMENT_DECLINED" description="Declined" sequenceId="04" statusCode="DECLINED">
+    <statusTypeId href="StatusType#PAYMENT_PREF_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PAYMENT_REFUNDED" description="Refunded" sequenceId="05" statusCode="REFUNDED">
+    <statusTypeId href="StatusType#PAYMENT_PREF_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PAYMENT_CANCELLED" description="Cancelled" sequenceId="99" statusCode="CANCELLED">
+    <statusTypeId href="StatusType#PAYMENT_PREF_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Payment Received">
+    <statusId href="StatusItem#PAYMENT_NOT_RECEIVED"/>
+    <statusIdTo href="StatusItem#PAYMENT_RECEIVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Payment Cancelled">
+    <statusId href="StatusItem#PAYMENT_NOT_RECEIVED"/>
+    <statusIdTo href="StatusItem#PAYMENT_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Payment Authorized">
+    <statusId href="StatusItem#PAYMENT_NOT_AUTH"/>
+    <statusIdTo href="StatusItem#PAYMENT_AUTHORIZED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Payment Cancelled">
+    <statusId href="StatusItem#PAYMENT_NOT_AUTH"/>
+    <statusIdTo href="StatusItem#PAYMENT_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Payment Settled">
+    <statusId href="StatusItem#PAYMENT_AUTHORIZED"/>
+    <statusIdTo href="StatusItem#PAYMENT_SETTLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Payment Cancelled">
+    <statusId href="StatusItem#PAYMENT_AUTHORIZED"/>
+    <statusIdTo href="StatusItem#PAYMENT_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Payment Refunded">
+    <statusId href="StatusItem#PAYMENT_SETTLED"/>
+    <statusIdTo href="StatusItem#PAYMENT_REFUNDED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="ORDER_DEL_SCH" description="Order Delivery Schedule"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="ODS_SUBMITTED" description="Supplier Submitted" sequenceId="01" statusCode="SUBMITTED">
+    <statusTypeId href="StatusType#ORDER_DEL_SCH"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ODS_ACCEPTED" description="Accepted" sequenceId="02" statusCode="ACCEPTED">
+    <statusTypeId href="StatusType#ORDER_DEL_SCH"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ODS_APPROVED" description="Schedule Approved" sequenceId="03" statusCode="APPROVED">
+    <statusTypeId href="StatusType#ORDER_DEL_SCH"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ODS_ARRANGED" description="Delivery Arranged" sequenceId="04" statusCode="ARRANGED">
+    <statusTypeId href="StatusType#ORDER_DEL_SCH"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ODS_CANCELLED" description="Delivery Cancelled" sequenceId="99" statusCode="CANCELLED">
+    <statusTypeId href="StatusType#ORDER_DEL_SCH"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Accept Delivery Information">
+    <statusId href="StatusItem#ODS_SUBMITTED"/>
+    <statusIdTo href="StatusItem#ODS_ACCEPTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Approve Delivery Schedule">
+    <statusId href="StatusItem#ODS_ACCEPTED"/>
+    <statusIdTo href="StatusItem#ODS_APPROVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Arrange Delivery">
+    <statusId href="StatusItem#ODS_APPROVED"/>
+    <statusIdTo href="StatusItem#ODS_ARRANGED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel Delivery">
+    <statusId href="StatusItem#ODS_SUBMITTED"/>
+    <statusIdTo href="StatusItem#ODS_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel Delivery">
+    <statusId href="StatusItem#ODS_ACCEPTED"/>
+    <statusIdTo href="StatusItem#ODS_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel Delivery">
+    <statusId href="StatusItem#ODS_APPROVED"/>
+    <statusIdTo href="StatusItem#ODS_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel Delivery">
+    <statusId href="StatusItem#ODS_ARRANGED"/>
+    <statusIdTo href="StatusItem#ODS_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="ORDER_RETURN_STTS" description="Order Return Status For Customer Returns"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="RETURN_REQUESTED" description="Requested" sequenceId="01" statusCode="REQUESTED">
+    <statusTypeId href="StatusType#ORDER_RETURN_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="RETURN_ACCEPTED" description="Accepted" sequenceId="02" statusCode="ACCEPTED">
+    <statusTypeId href="StatusType#ORDER_RETURN_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="RETURN_RECEIVED" description="Received" sequenceId="03" statusCode="RECEIVED">
+    <statusTypeId href="StatusType#ORDER_RETURN_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="RETURN_COMPLETED" description="Completed" sequenceId="10" statusCode="COMPLETED">
+    <statusTypeId href="StatusType#ORDER_RETURN_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="RETURN_MAN_REFUND" description="Manual Refund Required" sequenceId="11" statusCode="MANUAL_REFUND">
+    <statusTypeId href="StatusType#ORDER_RETURN_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="RETURN_CANCELLED" description="Cancelled" sequenceId="99" statusCode="CANCELLED">
+    <statusTypeId href="StatusType#ORDER_RETURN_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Requested Return Accepted">
+    <statusId href="StatusItem#RETURN_REQUESTED"/>
+    <statusIdTo href="StatusItem#RETURN_ACCEPTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Requested Return Cancelled">
+    <statusId href="StatusItem#RETURN_REQUESTED"/>
+    <statusIdTo href="StatusItem#RETURN_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Accepted Return Received">
+    <statusId href="StatusItem#RETURN_ACCEPTED"/>
+    <statusIdTo href="StatusItem#RETURN_RECEIVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Accepted Return Cancelled">
+    <statusId href="StatusItem#RETURN_ACCEPTED"/>
+    <statusIdTo href="StatusItem#RETURN_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Received Return Completed">
+    <statusId href="StatusItem#RETURN_RECEIVED"/>
+    <statusIdTo href="StatusItem#RETURN_COMPLETED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Received Return Cancelled">
+    <statusId href="StatusItem#RETURN_RECEIVED"/>
+    <statusIdTo href="StatusItem#RETURN_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Received Return Requires Manual Refund">
+    <statusId href="StatusItem#RETURN_RECEIVED"/>
+    <statusIdTo href="StatusItem#RETURN_MAN_REFUND"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="PORDER_RETURN_STTS" description="Order Return Status For Supplier Returns"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="SUP_RETURN_REQUESTED" description="Requested" sequenceId="01" statusCode="REQUESTED">
+    <statusTypeId href="StatusType#PORDER_RETURN_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="SUP_RETURN_ACCEPTED" description="Accepted" sequenceId="02" statusCode="ACCEPTED">
+    <statusTypeId href="StatusType#PORDER_RETURN_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="SUP_RETURN_SHIPPED" description="Shipped" sequenceId="03" statusCode="SHIPPED">
+    <statusTypeId href="StatusType#PORDER_RETURN_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="SUP_RETURN_COMPLETED" description="Completed" sequenceId="10" statusCode="COMPLETED">
+    <statusTypeId href="StatusType#PORDER_RETURN_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="SUP_RETURN_CANCELLED" description="Cancelled" sequenceId="99" statusCode="CANCELLED">
+    <statusTypeId href="StatusType#PORDER_RETURN_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Requested Return Accepted">
+    <statusId href="StatusItem#SUP_RETURN_REQUESTED"/>
+    <statusIdTo href="StatusItem#SUP_RETURN_ACCEPTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Requested Return Cancelled">
+    <statusId href="StatusItem#SUP_RETURN_REQUESTED"/>
+    <statusIdTo href="StatusItem#SUP_RETURN_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Accepted Return Shipped">
+    <statusId href="StatusItem#SUP_RETURN_ACCEPTED"/>
+    <statusIdTo href="StatusItem#SUP_RETURN_SHIPPED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Accepted Return Cancelled">
+    <statusId href="StatusItem#SUP_RETURN_ACCEPTED"/>
+    <statusIdTo href="StatusItem#SUP_RETURN_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Shipped Return Completed">
+    <statusId href="StatusItem#SUP_RETURN_SHIPPED"/>
+    <statusIdTo href="StatusItem#SUP_RETURN_COMPLETED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Shipped Return Cancelled">
+    <statusId href="StatusItem#SUP_RETURN_SHIPPED"/>
+    <statusIdTo href="StatusItem#SUP_RETURN_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="CUSTREQ_STTS" description="Custom Request Status"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="CRQ_DRAFT" description="Draft" sequenceId="00" statusCode="DRAFT">
+    <statusTypeId href="StatusType#CUSTREQ_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="CRQ_SUBMITTED" description="Submitted" sequenceId="01" statusCode="SUBMITTED">
+    <statusTypeId href="StatusType#CUSTREQ_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="CRQ_ACCEPTED" description="Accepted" sequenceId="02" statusCode="ACCEPTED">
+    <statusTypeId href="StatusType#CUSTREQ_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="CRQ_REVIEWED" description="Reviewed" sequenceId="03" statusCode="REVIEWED">
+    <statusTypeId href="StatusType#CUSTREQ_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="CRQ_PENDING" description="Pending Cust." sequenceId="09" statusCode="PENDING">
+    <statusTypeId href="StatusType#CUSTREQ_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="CRQ_COMPLETED" description="Completed" sequenceId="04" statusCode="COMPLETED">
+    <statusTypeId href="StatusType#CUSTREQ_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="CRQ_REJECTED" description="Rejected" sequenceId="98" statusCode="REJECTED">
+    <statusTypeId href="StatusType#CUSTREQ_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="CRQ_CANCELLED" description="Cancelled" sequenceId="99" statusCode="CANCELLED">
+    <statusTypeId href="StatusType#CUSTREQ_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Accept Request">
+    <statusId href="StatusItem#CRQ_DRAFT"/>
+    <statusIdTo href="StatusItem#CRQ_ACCEPTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Submit Request">
+    <statusId href="StatusItem#CRQ_DRAFT"/>
+    <statusIdTo href="StatusItem#CRQ_SUBMITTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel Request">
+    <statusId href="StatusItem#CRQ_DRAFT"/>
+    <statusIdTo href="StatusItem#CRQ_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Accept Request">
+    <statusId href="StatusItem#CRQ_SUBMITTED"/>
+    <statusIdTo href="StatusItem#CRQ_ACCEPTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Complete Request">
+    <statusId href="StatusItem#CRQ_SUBMITTED"/>
+    <statusIdTo href="StatusItem#CRQ_COMPLETED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Reject Request">
+    <statusId href="StatusItem#CRQ_SUBMITTED"/>
+    <statusIdTo href="StatusItem#CRQ_REJECTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel Request">
+    <statusId href="StatusItem#CRQ_SUBMITTED"/>
+    <statusIdTo href="StatusItem#CRQ_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Pending customer">
+    <statusId href="StatusItem#CRQ_SUBMITTED"/>
+    <statusIdTo href="StatusItem#CRQ_PENDING"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Submit Request">
+    <statusId href="StatusItem#CRQ_PENDING"/>
+    <statusIdTo href="StatusItem#CRQ_SUBMITTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Accept Request">
+    <statusId href="StatusItem#CRQ_PENDING"/>
+    <statusIdTo href="StatusItem#CRQ_ACCEPTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Review Request">
+    <statusId href="StatusItem#CRQ_PENDING"/>
+    <statusIdTo href="StatusItem#CRQ_REVIEWED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel Request">
+    <statusId href="StatusItem#CRQ_PENDING"/>
+    <statusIdTo href="StatusItem#CRQ_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Review Request">
+    <statusId href="StatusItem#CRQ_ACCEPTED"/>
+    <statusIdTo href="StatusItem#CRQ_REVIEWED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Complete Request">
+    <statusId href="StatusItem#CRQ_ACCEPTED"/>
+    <statusIdTo href="StatusItem#CRQ_COMPLETED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel Request">
+    <statusId href="StatusItem#CRQ_ACCEPTED"/>
+    <statusIdTo href="StatusItem#CRQ_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Pending Customer">
+    <statusId href="StatusItem#CRQ_ACCEPTED"/>
+    <statusIdTo href="StatusItem#CRQ_PENDING"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Complete Request">
+    <statusId href="StatusItem#CRQ_REVIEWED"/>
+    <statusIdTo href="StatusItem#CRQ_COMPLETED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel Request">
+    <statusId href="StatusItem#CRQ_REVIEWED"/>
+    <statusIdTo href="StatusItem#CRQ_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Pending Customer">
+    <statusId href="StatusItem#CRQ_REVIEWED"/>
+    <statusIdTo href="StatusItem#CRQ_PENDING"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Re-open Request">
+    <statusId href="StatusItem#CRQ_COMPLETED"/>
+    <statusIdTo href="StatusItem#CRQ_REVIEWED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="REQUIREMENT_STATUS" description="Requirement Status"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="REQ_PROPOSED" description="Proposed" sequenceId="01" statusCode="PROPOSED">
+    <statusTypeId href="StatusType#REQUIREMENT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="REQ_CREATED" description="Created" sequenceId="01" statusCode="CREATED">
+    <statusTypeId href="StatusType#REQUIREMENT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="REQ_APPROVED" description="Approved" sequenceId="02" statusCode="APPROVED">
+    <statusTypeId href="StatusType#REQUIREMENT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="REQ_ORDERED" description="Ordered" sequenceId="03" statusCode="ORDERED">
+    <statusTypeId href="StatusType#REQUIREMENT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="REQ_REJECTED" description="Rejected" sequenceId="98" statusCode="REJECTED">
+    <statusTypeId href="StatusType#REQUIREMENT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Accept Requirement">
+    <statusId href="StatusItem#REQ_PROPOSED"/>
+    <statusIdTo href="StatusItem#REQ_APPROVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Reject Requirement">
+    <statusId href="StatusItem#REQ_PROPOSED"/>
+    <statusIdTo href="StatusItem#REQ_REJECTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Accept Requirement">
+    <statusId href="StatusItem#REQ_CREATED"/>
+    <statusIdTo href="StatusItem#REQ_APPROVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Reject Requirement">
+    <statusId href="StatusItem#REQ_CREATED"/>
+    <statusIdTo href="StatusItem#REQ_REJECTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Order Requirement">
+    <statusId href="StatusItem#REQ_APPROVED"/>
+    <statusIdTo href="StatusItem#REQ_ORDERED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Reject Requirement">
+    <statusId href="StatusItem#REQ_APPROVED"/>
+    <statusIdTo href="StatusItem#REQ_REJECTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="QUOTE_STATUS" description="Quote Status"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="QUO_CREATED" description="Created" sequenceId="01" statusCode="CREATED">
+    <statusTypeId href="StatusType#QUOTE_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="QUO_APPROVED" description="Approved" sequenceId="02" statusCode="APPROVED">
+    <statusTypeId href="StatusType#QUOTE_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="QUO_ORDERED" description="Ordered" sequenceId="03" statusCode="ORDERED">
+    <statusTypeId href="StatusType#QUOTE_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="QUO_REJECTED" description="Rejected" sequenceId="98" statusCode="REJECTED">
+    <statusTypeId href="StatusType#QUOTE_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Accept Quote">
+    <statusId href="StatusItem#QUO_CREATED"/>
+    <statusIdTo href="StatusItem#QUO_APPROVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Reject Quote">
+    <statusId href="StatusItem#QUO_CREATED"/>
+    <statusIdTo href="StatusItem#QUO_REJECTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Order Quote">
+    <statusId href="StatusItem#QUO_APPROVED"/>
+    <statusIdTo href="StatusItem#QUO_ORDERED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Reject Quote">
+    <statusId href="StatusItem#QUO_APPROVED"/>
+    <statusIdTo href="StatusItem#QUO_REJECTED"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnAdjustmentType" returnAdjustmentTypeId="RET_PROMOTION_ADJ" description="Return Promotion"/>
+  <contents xsi:type="biz-return:ReturnAdjustmentType" returnAdjustmentTypeId="RET_REPLACE_ADJ" description="Return Replacement"/>
+  <contents xsi:type="biz-return:ReturnAdjustmentType" returnAdjustmentTypeId="RET_DISCOUNT_ADJ" description="Return Discount"/>
+  <contents xsi:type="biz-return:ReturnAdjustmentType" returnAdjustmentTypeId="RET_FEE_ADJ" description="Return Fee"/>
+  <contents xsi:type="biz-return:ReturnAdjustmentType" returnAdjustmentTypeId="RET_MISC_ADJ" description="Return Miscellaneous Charges"/>
+  <contents xsi:type="biz-return:ReturnAdjustmentType" returnAdjustmentTypeId="RET_SALES_TAX_ADJ" description="Return Sales Tax"/>
+  <contents xsi:type="biz-return:ReturnAdjustmentType" returnAdjustmentTypeId="RET_VAT_TAX_ADJ" description="Return VAT Tax"/>
+  <contents xsi:type="biz-return:ReturnAdjustmentType" returnAdjustmentTypeId="RET_VAT_PC_ADJ" description="Return VAT Price Correction"/>
+  <contents xsi:type="biz-return:ReturnAdjustmentType" returnAdjustmentTypeId="RET_SHIPPING_ADJ" description="Return Shipping and Handling"/>
+  <contents xsi:type="biz-return:ReturnAdjustmentType" returnAdjustmentTypeId="RET_SURCHARGE_ADJ" description="Return Surcharge"/>
+  <contents xsi:type="biz-return:ReturnAdjustmentType" returnAdjustmentTypeId="RET_ADD_FEATURE_ADJ" description="Return Additional Feature"/>
+  <contents xsi:type="biz-return:ReturnAdjustmentType" returnAdjustmentTypeId="RET_WARRANTY_ADJ" description="Return Warranty"/>
+  <contents xsi:type="biz-return:ReturnAdjustmentType" returnAdjustmentTypeId="RET_MKTG_PKG_ADJ" description="Return Marketing Package Adjustment"/>
+  <contents xsi:type="biz-return:ReturnAdjustmentType" returnAdjustmentTypeId="RET_MAN_ADJ" description="Return Manual Adjustment"/>
+  <contents xsi:type="biz-return:ReturnHeaderType" returnHeaderTypeId="CUSTOMER_RETURN" description="Return from Customer"/>
+  <contents xsi:type="biz-return:ReturnHeaderType" returnHeaderTypeId="VENDOR_RETURN" description="Return to Vendor"/>
+  <contents xsi:type="biz-return:ReturnItemType" returnItemTypeId="RET_NPROD_ITEM" description="Return Non-Product Item"/>
+  <contents xsi:type="biz-return:ReturnItemType" returnItemTypeId="RET_PROD_ITEM" description="Return Product Item"/>
+  <contents xsi:type="biz-return:ReturnItemType" returnItemTypeId="RET_FPROD_ITEM" description="Return Finished Good Item">
+    <parentTypeId href="ReturnItemType#RET_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemType" returnItemTypeId="RET_DPROD_ITEM" description="Return Digital Good Item">
+    <parentTypeId href="ReturnItemType#RET_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemType" returnItemTypeId="RET_FDPROD_ITEM" description="Return Finished/Digital Good Item">
+    <parentTypeId href="ReturnItemType#RET_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemType" returnItemTypeId="RET_RPROD_ITEM" description="Return Raw Material Good Item">
+    <parentTypeId href="ReturnItemType#RET_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemType" returnItemTypeId="RET_PROD_FEATR_ITEM" description="Return Product-Feature Item">
+    <parentTypeId href="ReturnItemType#RET_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemType" returnItemTypeId="RET_SPROD_ITEM" description="Return Service Product Item">
+    <parentTypeId href="ReturnItemType#RET_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemType" returnItemTypeId="RET_WE_ITEM" description="Return Work-Effort Item">
+    <parentTypeId href="ReturnItemType#RET_NPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemType" returnItemTypeId="RET_TE_ITEM" description="Return Time-Entry Item">
+    <parentTypeId href="ReturnItemType#RET_NPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemType" returnItemTypeId="RET_MPROD_ITEM" description="Return Raw Material Item">
+    <parentTypeId href="ReturnItemType#RET_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="FINISHED_GOOD">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_FPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="MARKETING_PKG_AUTO">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_FPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="MARKETING_PKG_PICK">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_FPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="AGGREGATED_CONF">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_FPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="DIGITAL_GOOD">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_DPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="FINDIG_GOOD">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_FDPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="RAW_MATERIAL">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_RPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="PROMOTION_ADJUSTMENT">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_PROMOTION_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="REPLACE_ADJUSTMENT">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_REPLACE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="DISCOUNT_ADJUSTMENT">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_DISCOUNT_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="FEE">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_FEE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="MISCELLANEOUS_CHARGE">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_MISC_CHARGE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="SALES_TAX">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_SALES_TAX_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="VAT_TAX">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_VAT_TAX_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="VAT_PRICE_CORRECT">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_VAT_PC_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="SHIPPING_CHARGES">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_SHIPPING_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="SURCHARGE_ADJUSTMENT">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_SURCHARGE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="ADDITIONAL_FEATURE">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_ADD_FEATURE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="WARRANTY_ADJUSTMENT">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_WARRANTY_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="RENTAL_ORDER_ITEM">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_FPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="ASSET_USAGE_OUT_IN">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_FPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="SERVICE_PRODUCT">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_SPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="SERVICE">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_SPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="RAW_MATERIAL">
+    <returnHeaderTypeId href="ReturnHeaderType#CUSTOMER_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_MPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="FINISHED_GOOD">
+    <returnHeaderTypeId href="ReturnHeaderType#VENDOR_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_FPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="MARKETING_PKG_AUTO">
+    <returnHeaderTypeId href="ReturnHeaderType#VENDOR_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_FPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="MARKETING_PKG_PICK">
+    <returnHeaderTypeId href="ReturnHeaderType#VENDOR_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_FPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="AGGREGATED_CONF">
+    <returnHeaderTypeId href="ReturnHeaderType#VENDOR_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_FPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="DIGITAL_GOOD">
+    <returnHeaderTypeId href="ReturnHeaderType#VENDOR_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_DPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="FINDIG_GOOD">
+    <returnHeaderTypeId href="ReturnHeaderType#VENDOR_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_FDPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="RAW_MATERIAL">
+    <returnHeaderTypeId href="ReturnHeaderType#VENDOR_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_RPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="PROMOTION_ADJUSTMENT">
+    <returnHeaderTypeId href="ReturnHeaderType#VENDOR_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_PROMOTION_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="REPLACE_ADJUSTMENT">
+    <returnHeaderTypeId href="ReturnHeaderType#VENDOR_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_REPLACE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="DISCOUNT_ADJUSTMENT">
+    <returnHeaderTypeId href="ReturnHeaderType#VENDOR_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_DISCOUNT_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="FEE">
+    <returnHeaderTypeId href="ReturnHeaderType#VENDOR_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_FEE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="MISCELLANEOUS_CHARGE">
+    <returnHeaderTypeId href="ReturnHeaderType#VENDOR_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_MISC_CHARGE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="SALES_TAX">
+    <returnHeaderTypeId href="ReturnHeaderType#VENDOR_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_SALES_TAX_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="VAT_TAX">
+    <returnHeaderTypeId href="ReturnHeaderType#VENDOR_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_VAT_TAX_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="VAT_PRICE_CORRECT">
+    <returnHeaderTypeId href="ReturnHeaderType#VENDOR_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_VAT_PC_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="SHIPPING_CHARGES">
+    <returnHeaderTypeId href="ReturnHeaderType#VENDOR_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_SHIPPING_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="SURCHARGE_ADJUSTMENT">
+    <returnHeaderTypeId href="ReturnHeaderType#VENDOR_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_SURCHARGE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="ADDITIONAL_FEATURE">
+    <returnHeaderTypeId href="ReturnHeaderType#VENDOR_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_ADD_FEATURE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="WARRANTY_ADJUSTMENT">
+    <returnHeaderTypeId href="ReturnHeaderType#VENDOR_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_WARRANTY_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnItemTypeMap" returnItemMapKey="RAW_MATERIAL">
+    <returnHeaderTypeId href="ReturnHeaderType#VENDOR_RETURN"/>
+    <returnItemTypeId href="ReturnItemType#RET_MPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-return:ReturnReason" returnReasonId="RTN_NOT_WANT" description="Did Not Want Item" sequenceId="01"/>
+  <contents xsi:type="biz-return:ReturnReason" returnReasonId="RTN_DEFECTIVE_ITEM" description="Defective Item" sequenceId="02"/>
+  <contents xsi:type="biz-return:ReturnReason" returnReasonId="RTN_MISSHIP_ITEM" description="Mis-Shipped Item" sequenceId="03"/>
+  <contents xsi:type="biz-return:ReturnReason" returnReasonId="RTN_DIG_FILL_FAIL" description="Digital Fulfillment Failed" sequenceId="04"/>
+  <contents xsi:type="biz-return:ReturnReason" returnReasonId="RTN_COD_REJECT" description="COD Payment Rejected" sequenceId="05"/>
+  <contents xsi:type="biz-return:ReturnReason" returnReasonId="RTN_SIZE_EXCHANGE" description="Size Exchange" sequenceId="06"/>
+  <contents xsi:type="biz-return:ReturnReason" returnReasonId="RTN_NORMAL_RETURN" description="Normal Return" sequenceId="07"/>
+  <contents xsi:type="biz-return:ReturnType" returnTypeId="RTN_CREDIT" description="Store Credit" sequenceId="01"/>
+  <contents xsi:type="biz-return:ReturnType" returnTypeId="RTN_REFUND" description="Refund" sequenceId="02"/>
+  <contents xsi:type="biz-return:ReturnType" returnTypeId="RTN_REPLACE" description="Wait Replacement" sequenceId="03"/>
+  <contents xsi:type="biz-return:ReturnType" returnTypeId="RTN_CSREPLACE" description="Cross-Ship Replacement" sequenceId="04"/>
+  <contents xsi:type="biz-return:ReturnType" returnTypeId="RTN_REPAIR_REPLACE" description="Repair Replacement" sequenceId="05"/>
+  <contents xsi:type="biz-return:ReturnType" returnTypeId="RTN_WAIT_REPLACE_RES" description="Wait Replacement Reserved" sequenceId="06"/>
+  <contents xsi:type="biz-return:ReturnType" returnTypeId="RTN_REPLACE_IMMEDIAT" description="Replace Immediately" sequenceId="07"/>
+  <contents xsi:type="biz-return:ReturnType" returnTypeId="RTN_REFUND_IMMEDIATE" description="Refund immediately" sequenceId="08"/>
+  <contents xsi:type="biz-return:ReturnType" returnTypeId="RTN_RENTAL" description="Rental" sequenceId="09"/>
+  <contents xsi:type="biz-requirement:WorkReqFulfType" workReqFulfTypeId="WRF_IMPLEMENTS" description="Implements"/>
+  <contents xsi:type="biz-requirement:WorkReqFulfType" workReqFulfTypeId="WRF_FIXES" description="Fixes"/>
+  <contents xsi:type="biz-requirement:WorkReqFulfType" workReqFulfTypeId="WRF_DEPLOYS" description="Deploys"/>
+  <contents xsi:type="biz-requirement:WorkReqFulfType" workReqFulfTypeId="WRF_TESTS" description="Tests"/>
+  <contents xsi:type="biz-requirement:WorkReqFulfType" workReqFulfTypeId="WRF_DELIVERS" description="Delivers"/>
+</mimo-ent:EntityContainer>

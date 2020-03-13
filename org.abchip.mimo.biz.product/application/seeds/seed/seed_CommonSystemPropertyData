@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-property="http://www.abchip.org/mimo/biz/common/property" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/property http://www.abchip.org/mimo/biz#//common/property http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="seed_CommonSystemPropertyData">
+  <contents xsi:type="biz-property:SystemProperty" systemPropertyId="ORGANIZATION_PARTY" systemResourceId="general" description="the default organizationPartyId for used in dropdowns and reports" systemPropertyValue="Company"/>
+  <contents xsi:type="biz-property:SystemProperty" systemPropertyId="VISUAL_THEME" systemResourceId="general" description="ID of the VisualTheme to use if there is no VISUAL_THEME UserPreference record for the current user (ie default value)" systemPropertyValue="RAINBOWSTONE_SAPHIR"/>
+  <contents xsi:type="biz-property:SystemProperty" systemPropertyId="currency.uom.id.default" systemResourceId="general" description="The default currency to use for prices, etc" systemPropertyValue="USD"/>
+  <contents xsi:type="biz-property:SystemProperty" systemPropertyId="country.geo.id.default" systemResourceId="general" description="the default country for drop downs" systemPropertyValue="USA"/>
+  <contents xsi:type="biz-property:SystemProperty" systemPropertyId="partner.trackingCodeId.default" systemResourceId="general" description="the default trackingCodeId to use for Partner Managed Tracking Codes"/>
+  <contents xsi:type="biz-property:SystemProperty" systemPropertyId="defaultFromEmailAddress" systemResourceId="general" description="general default 'fromEmailAddress' can be overridden in: EmailTemplateSetting" systemPropertyValue="ofbiztest@example.com"/>
+  <contents xsi:type="biz-property:SystemProperty" systemPropertyId="mail.notifications.enabled" systemResourceId="general" description="mail notifications enabled (Y|N)" systemPropertyValue="N"/>
+  <contents xsi:type="biz-property:SystemProperty" systemPropertyId="mail.smtp.relay.host" systemResourceId="general" description="the default mail server to use"/>
+  <contents xsi:type="biz-property:SystemProperty" systemPropertyId="mail.smtp.auth.user" systemResourceId="general" description="SMTP Auth username setting"/>
+  <contents xsi:type="biz-property:SystemProperty" systemPropertyId="mail.smtp.auth.password" systemResourceId="general" description="SMTP Auth password setting"/>
+  <contents xsi:type="biz-property:SystemProperty" systemPropertyId="mail.smtp.port" systemResourceId="general" description="Gmail smtp port can be either 465 or 587" systemPropertyValue="465"/>
+  <contents xsi:type="biz-property:SystemProperty" systemPropertyId="mail.smtp.starttls.enable" systemResourceId="general" description="Gmail requires StartTLS" systemPropertyValue="true"/>
+  <contents xsi:type="biz-property:SystemProperty" systemPropertyId="mail.smtp.socketFactory.port" systemResourceId="general" description="Port needs to be the same as mail.smtp.port" systemPropertyValue="465"/>
+  <contents xsi:type="biz-property:SystemProperty" systemPropertyId="mail.smtp.socketFactory.class" systemResourceId="general" description="JSSE socket factory" systemPropertyValue="javax.net.ssl.SSLSocketFactory"/>
+  <contents xsi:type="biz-property:SystemProperty" systemPropertyId="mail.smtp.socketFactory.fallback" systemResourceId="general" description="Fallback [true|false] determines whether you will allow a non secure connection if you are unable to get a secure one" systemPropertyValue="false"/>
+  <contents xsi:type="biz-property:SystemProperty" systemPropertyId="mail.smtp.sendpartial" systemResourceId="general" description="setting this property to false will abort sending the message" systemPropertyValue="true"/>
+</mimo-ent:EntityContainer>

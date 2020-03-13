@@ -1,0 +1,1347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-catalog="http://www.abchip.org/mimo/biz/product/catalog" xmlns:biz-category="http://www.abchip.org/mimo/biz/product/category" xmlns:biz-config="http://www.abchip.org/mimo/biz/product/config" xmlns:biz-content="http://www.abchip.org/mimo/biz/content/content" xmlns:biz-cost="http://www.abchip.org/mimo/biz/product/cost" xmlns:biz-enum="http://www.abchip.org/mimo/biz/common/enum" xmlns:biz-facility="http://www.abchip.org/mimo/biz/product/facility" xmlns:biz-feature="http://www.abchip.org/mimo/biz/product/feature" xmlns:biz-inventory="http://www.abchip.org/mimo/biz/product/inventory" xmlns:biz-method="http://www.abchip.org/mimo/biz/common/method" xmlns:biz-party="http://www.abchip.org/mimo/biz/party/party" xmlns:biz-price="http://www.abchip.org/mimo/biz/product/price" xmlns:biz-product="http://www.abchip.org/mimo/biz/product/product" xmlns:biz-receipt="http://www.abchip.org/mimo/biz/shipment/receipt" xmlns:biz-shipment="http://www.abchip.org/mimo/biz/shipment/shipment" xmlns:biz-status="http://www.abchip.org/mimo/biz/common/status" xmlns:biz-store="http://www.abchip.org/mimo/biz/product/store" xmlns:biz-subscription="http://www.abchip.org/mimo/biz/product/subscription" xmlns:biz-supplier="http://www.abchip.org/mimo/biz/product/supplier" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/product/catalog http://www.abchip.org/mimo/biz#//catalog http://www.abchip.org/mimo/biz/product/category http://www.abchip.org/mimo/biz#//category http://www.abchip.org/mimo/biz/product/config http://www.abchip.org/mimo/biz#//config http://www.abchip.org/mimo/biz/content/content http://www.abchip.org/mimo/biz#//content http://www.abchip.org/mimo/biz/product/cost http://www.abchip.org/mimo/biz#//cost http://www.abchip.org/mimo/biz/common/enum http://www.abchip.org/mimo/biz#//common/enum http://www.abchip.org/mimo/biz/product/facility http://www.abchip.org/mimo/biz#//facility http://www.abchip.org/mimo/biz/product/feature http://www.abchip.org/mimo/biz#//feature http://www.abchip.org/mimo/biz/product/inventory http://www.abchip.org/mimo/biz#//inventory http://www.abchip.org/mimo/biz/common/method http://www.abchip.org/mimo/biz#//common/method http://www.abchip.org/mimo/biz/party/party http://www.abchip.org/mimo/biz#//party/party http://www.abchip.org/mimo/biz/product/price http://www.abchip.org/mimo/biz#//price http://www.abchip.org/mimo/biz/product/product http://www.abchip.org/mimo/biz#//product http://www.abchip.org/mimo/biz/shipment/receipt http://www.abchip.org/mimo/biz#//receipt http://www.abchip.org/mimo/biz/shipment/shipment http://www.abchip.org/mimo/biz#//shipment http://www.abchip.org/mimo/biz/common/status http://www.abchip.org/mimo/biz#//common/status http://www.abchip.org/mimo/biz/product/store http://www.abchip.org/mimo/biz#//store http://www.abchip.org/mimo/biz/product/subscription http://www.abchip.org/mimo/biz#//subscription http://www.abchip.org/mimo/biz/product/supplier http://www.abchip.org/mimo/biz#//supplier http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="seed_ProductSeedData">
+  <contents xsi:type="biz-cost:CostComponentType" costComponentTypeId="MAT_COST" description="Materials Cost"/>
+  <contents xsi:type="biz-cost:CostComponentType" costComponentTypeId="ROUTE_COST" description="Route (fixed asset usage) Cost"/>
+  <contents xsi:type="biz-cost:CostComponentType" costComponentTypeId="LABOR_COST" description="Labor Cost"/>
+  <contents xsi:type="biz-cost:CostComponentType" costComponentTypeId="GEN_COST" description="General Cost"/>
+  <contents xsi:type="biz-cost:CostComponentType" costComponentTypeId="IND_COST" description="Indirect Cost"/>
+  <contents xsi:type="biz-cost:CostComponentType" costComponentTypeId="OTHER_COST" description="Other Cost"/>
+  <contents xsi:type="biz-cost:CostComponentType" costComponentTypeId="EST_STD_MAT_COST" description="Estimated Standard Materials Cost">
+    <parentTypeId href="CostComponentType#MAT_COST"/>
+  </contents>
+  <contents xsi:type="biz-cost:CostComponentType" costComponentTypeId="EST_STD_ROUTE_COST" description="Estimated Standard Route (fixed asset usage) Cost">
+    <parentTypeId href="CostComponentType#ROUTE_COST"/>
+  </contents>
+  <contents xsi:type="biz-cost:CostComponentType" costComponentTypeId="EST_STD_LABOR_COST" description="Estimated Standard Labor Cost">
+    <parentTypeId href="CostComponentType#LABOR_COST"/>
+  </contents>
+  <contents xsi:type="biz-cost:CostComponentType" costComponentTypeId="EST_STD_GEN_COST" description="Estimated Standard General Cost">
+    <parentTypeId href="CostComponentType#GEN_COST"/>
+  </contents>
+  <contents xsi:type="biz-cost:CostComponentType" costComponentTypeId="EST_STD_IND_COST" description="Estimated Standard Indirect Cost">
+    <parentTypeId href="CostComponentType#IND_COST"/>
+  </contents>
+  <contents xsi:type="biz-cost:CostComponentType" costComponentTypeId="EST_STD_OTHER_COST" description="Estimated Standard Other Cost">
+    <parentTypeId href="CostComponentType#OTHER_COST"/>
+  </contents>
+  <contents xsi:type="biz-cost:CostComponentType" costComponentTypeId="ACTUAL_MAT_COST" description="Actual Materials Cost">
+    <parentTypeId href="CostComponentType#MAT_COST"/>
+  </contents>
+  <contents xsi:type="biz-cost:CostComponentType" costComponentTypeId="ACTUAL_ROUTE_COST" description="Actual Route (fixed asset usage) Cost">
+    <parentTypeId href="CostComponentType#ROUTE_COST"/>
+  </contents>
+  <contents xsi:type="biz-cost:CostComponentType" costComponentTypeId="ACTUAL_LABOR_COST" description="Actual Labor Cost">
+    <parentTypeId href="CostComponentType#LABOR_COST"/>
+  </contents>
+  <contents xsi:type="biz-cost:CostComponentType" costComponentTypeId="ACTUAL_OTHER_COST" description="Actual Other Cost">
+    <parentTypeId href="CostComponentType#OTHER_COST"/>
+  </contents>
+  <contents xsi:type="biz-cost:CostComponentType" costComponentTypeId="ACTUAL_GEN_COST" description="Actual General Cost">
+    <parentTypeId href="CostComponentType#GEN_COST"/>
+  </contents>
+  <contents xsi:type="biz-cost:CostComponentType" costComponentTypeId="ACTUAL_IND_COST" description="Actual Indirect Cost">
+    <parentTypeId href="CostComponentType#IND_COST"/>
+  </contents>
+  <contents xsi:type="biz-cost:CostComponentType" costComponentTypeId="ACTUAL_OTHER_COST" description="Actual Other Cost">
+    <parentTypeId href="CostComponentType#OTHER_COST"/>
+  </contents>
+  <contents xsi:type="biz-product:GoodIdentificationType" goodIdentificationTypeId="ISBN" description="ISBN"/>
+  <contents xsi:type="biz-product:GoodIdentificationType" goodIdentificationTypeId="MANUFACTURER_ID_NO" description="Manufacturer (Model) Number"/>
+  <contents xsi:type="biz-product:GoodIdentificationType" goodIdentificationTypeId="MODEL_YEAR" description="Model Year"/>
+  <contents xsi:type="biz-product:GoodIdentificationType" goodIdentificationTypeId="OTHER_ID" description="Other"/>
+  <contents xsi:type="biz-product:GoodIdentificationType" goodIdentificationTypeId="SKU" description="SKU"/>
+  <contents xsi:type="biz-product:GoodIdentificationType" goodIdentificationTypeId="UPCA" description="UPCA"/>
+  <contents xsi:type="biz-product:GoodIdentificationType" goodIdentificationTypeId="UPCE" description="UPCE"/>
+  <contents xsi:type="biz-product:GoodIdentificationType" goodIdentificationTypeId="EAN" description="EAN"/>
+  <contents xsi:type="biz-product:GoodIdentificationType" goodIdentificationTypeId="LOC" description="Library of Congress"/>
+  <contents xsi:type="biz-product:GoodIdentificationType" goodIdentificationTypeId="HS_CODE" description="Harmonized System Codes (HS Code)"/>
+  <contents xsi:type="biz-catalog:ProdCatalogCategoryType" prodCatalogCategoryTypeId="PCCT_BROWSE_ROOT" description="Browse Root (One)"/>
+  <contents xsi:type="biz-catalog:ProdCatalogCategoryType" prodCatalogCategoryTypeId="PCCT_SEARCH" description="Default Search (One)"/>
+  <contents xsi:type="biz-catalog:ProdCatalogCategoryType" prodCatalogCategoryTypeId="PCCT_OTHER_SEARCH" description="Other Search (Many)"/>
+  <contents xsi:type="biz-catalog:ProdCatalogCategoryType" prodCatalogCategoryTypeId="PCCT_QUICK_ADD" description="Quick Add (Many)"/>
+  <contents xsi:type="biz-catalog:ProdCatalogCategoryType" prodCatalogCategoryTypeId="PCCT_PROMOTIONS" description="Promotions (One)"/>
+  <contents xsi:type="biz-catalog:ProdCatalogCategoryType" prodCatalogCategoryTypeId="PCCT_MOST_POPULAR" description="Most Popular (One)"/>
+  <contents xsi:type="biz-catalog:ProdCatalogCategoryType" prodCatalogCategoryTypeId="PCCT_WHATS_NEW" description="What's New (One)"/>
+  <contents xsi:type="biz-catalog:ProdCatalogCategoryType" prodCatalogCategoryTypeId="PCCT_VIEW_ALLW" description="View Allow (One)"/>
+  <contents xsi:type="biz-catalog:ProdCatalogCategoryType" prodCatalogCategoryTypeId="PCCT_PURCH_ALLW" description="Purchase Allow (One)"/>
+  <contents xsi:type="biz-catalog:ProdCatalogCategoryType" prodCatalogCategoryTypeId="PCCT_ADMIN_ALLW" description="Admin Allow (One)"/>
+  <contents xsi:type="biz-catalog:ProdCatalogCategoryType" prodCatalogCategoryTypeId="PCCT_EBAY_ROOT" description="Ebay Root (One)"/>
+  <contents xsi:type="biz-catalog:ProdCatalogCategoryType" prodCatalogCategoryTypeId="PCCT_BEST_SELL" description="Best Selling (One)"/>
+  <contents xsi:type="biz-product:ProductAssocType" productAssocTypeId="ALSO_BOUGHT" description="Also Bought"/>
+  <contents xsi:type="biz-product:ProductAssocType" productAssocTypeId="PRODUCT_UPGRADE" description="Upgrade or Up-Sell"/>
+  <contents xsi:type="biz-product:ProductAssocType" productAssocTypeId="PRODUCT_COMPLEMENT" description="Complementary or Cross-Sell"/>
+  <contents xsi:type="biz-product:ProductAssocType" productAssocTypeId="PRODUCT_INCOMPATABLE" description="Incompatible"/>
+  <contents xsi:type="biz-product:ProductAssocType" productAssocTypeId="PRODUCT_OBSOLESCENCE" description="New Version, Replacement"/>
+  <contents xsi:type="biz-product:ProductAssocType" productAssocTypeId="PRODUCT_COMPONENT" description="Actual Product Component"/>
+  <contents xsi:type="biz-product:ProductAssocType" productAssocTypeId="PRODUCT_SUBSTITUTE" description="Equivalent or Substitute"/>
+  <contents xsi:type="biz-product:ProductAssocType" productAssocTypeId="PRODUCT_VARIANT" description="Product Variant"/>
+  <contents xsi:type="biz-product:ProductAssocType" productAssocTypeId="UNIQUE_ITEM" description="Unique Item"/>
+  <contents xsi:type="biz-product:ProductAssocType" productAssocTypeId="PRODUCT_ACCESSORY" description="Accessory"/>
+  <contents xsi:type="biz-product:ProductAssocType" productAssocTypeId="PRODUCT_REFURB" description="Refurbished Equivalent"/>
+  <contents xsi:type="biz-product:ProductAssocType" productAssocTypeId="PRODUCT_REPAIR_SRV" description="Repair Service"/>
+  <contents xsi:type="biz-product:ProductAssocType" productAssocTypeId="PRODUCT_AUTORO" description="Auto Reorder (needs recurrenceInfoId)"/>
+  <contents xsi:type="biz-product:ProductAssocType" productAssocTypeId="PRODUCT_REVISION" description="Revision"/>
+  <contents xsi:type="biz-product:ProductAssocType" productAssocTypeId="MANUF_COMPONENT" description="Manufacturing Bill of Materials">
+    <parentTypeId href="ProductAssocType#PRODUCT_COMPONENT"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductAssocType" productAssocTypeId="ENGINEER_COMPONENT" description="Engineering Bill of Materials">
+    <parentTypeId href="ProductAssocType#PRODUCT_COMPONENT"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductAssocType" productAssocTypeId="PRODUCT_MANUFACTURED" description="Product Manufactured As"/>
+  <contents xsi:type="biz-product:ProductAssocType" productAssocTypeId="PRODUCT_CONF" description="Configurable product instance"/>
+  <contents xsi:type="biz-product:ProductAssocType" productAssocTypeId="ALTERNATIVE_PACKAGE" description="Alternative Packaging"/>
+  <contents xsi:type="biz-category:ProductCategoryType" productCategoryTypeId="CATALOG_CATEGORY" description="Catalog"/>
+  <contents xsi:type="biz-category:ProductCategoryType" productCategoryTypeId="INDUSTRY_CATEGORY" description="Industry"/>
+  <contents xsi:type="biz-category:ProductCategoryType" productCategoryTypeId="INTERNAL_CATEGORY" description="Internal"/>
+  <contents xsi:type="biz-category:ProductCategoryType" productCategoryTypeId="MATERIALS_CATEGORY" description="Materials"/>
+  <contents xsi:type="biz-category:ProductCategoryType" productCategoryTypeId="QUICKADD_CATEGORY" description="Quick Add"/>
+  <contents xsi:type="biz-category:ProductCategoryType" productCategoryTypeId="SEARCH_CATEGORY" description="Search"/>
+  <contents xsi:type="biz-category:ProductCategoryType" productCategoryTypeId="USAGE_CATEGORY" description="Usage"/>
+  <contents xsi:type="biz-category:ProductCategoryType" productCategoryTypeId="MIXMATCH_CATEGORY" description="Mix and Match"/>
+  <contents xsi:type="biz-category:ProductCategoryType" productCategoryTypeId="CROSS_SELL_CATEGORY" description="Cross Sell"/>
+  <contents xsi:type="biz-category:ProductCategoryType" productCategoryTypeId="TAX_CATEGORY" description="Tax"/>
+  <contents xsi:type="biz-category:ProductCategoryType" productCategoryTypeId="GOOGLE_BASE_CATEGORY" description="Google Base"/>
+  <contents xsi:type="biz-category:ProductCategoryType" productCategoryTypeId="GIFT_CARD_CATEGORY" description="Gift Cards"/>
+  <contents xsi:type="biz-category:ProductCategoryType" productCategoryTypeId="BEST_SELL_CATEGORY" description="Best Selling"/>
+  <contents xsi:type="biz-category:ProductCategoryContentType" prodCatContentTypeId="CATEGORY_NAME" description="Category Name"/>
+  <contents xsi:type="biz-category:ProductCategoryContentType" prodCatContentTypeId="DESCRIPTION" description="Description"/>
+  <contents xsi:type="biz-category:ProductCategoryContentType" prodCatContentTypeId="LONG_DESCRIPTION" description="Description - Long"/>
+  <contents xsi:type="biz-category:ProductCategoryContentType" prodCatContentTypeId="ALTERNATIVE_URL" description="Alternative URL"/>
+  <contents xsi:type="biz-category:ProductCategoryContentType" prodCatContentTypeId="CATEGORY_IMAGE" description="Category Image"/>
+  <contents xsi:type="biz-category:ProductCategoryContentType" prodCatContentTypeId="CATEGORY_IMAGE_URL" description="Category Image URL"/>
+  <contents xsi:type="biz-category:ProductCategoryContentType" prodCatContentTypeId="CATEGORY_IMAGE_ALT" description="Category Image Alt Text"/>
+  <contents xsi:type="biz-category:ProductCategoryContentType" prodCatContentTypeId="LINK1_ALT_TEXT" description="Link 1 Alt Text"/>
+  <contents xsi:type="biz-category:ProductCategoryContentType" prodCatContentTypeId="LINK2_ALT_TEXT" description="Link 2 Alt Text"/>
+  <contents xsi:type="biz-category:ProductCategoryContentType" prodCatContentTypeId="FOOTER" description="Footer"/>
+  <contents xsi:type="biz-category:ProductCategoryContentType" prodCatContentTypeId="PAGE_TITLE" description="Page Title"/>
+  <contents xsi:type="biz-category:ProductCategoryContentType" prodCatContentTypeId="META_KEYWORD" description="Meta Keyword"/>
+  <contents xsi:type="biz-category:ProductCategoryContentType" prodCatContentTypeId="META_DESCRIPTION" description="Meta Description"/>
+  <contents xsi:type="biz-category:ProductCategoryContentType" prodCatContentTypeId="RELATED_URL" description="Related URL"/>
+  <contents xsi:type="biz-category:ProductCategoryContentType" prodCatContentTypeId="VIDEO" description="Video"/>
+  <contents xsi:type="biz-category:ProductCategoryContentType" prodCatContentTypeId="VIDEO_URL" description="Video URL"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="ONLINE_ACCESS" description="Online Access"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="DIGITAL_DOWNLOAD" description="Digital Download"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="FULFILLMENT_EMAIL" description="Fulfillment Email"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="FULFILLMENT_EXTASYNC" description="Fulfillment External (Async)"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="FULFILLMENT_EXTSYNC" description="Fulfillment External (Sync)"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="PRODUCT_NAME" description="Product Name"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="DESCRIPTION" description="Description"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="LONG_DESCRIPTION" description="Description - Long"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="ALTERNATIVE_URL" description="Alternative URL"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="PRICE_DETAIL_TEXT" description="Price Detail Text"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="INGREDIENTS" description="Ingredients"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="UNIQUE_INGREDIENTS" description="Unique Ingredients"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="SPECIALINSTRUCTIONS" description="Special Instructions"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="WARNINGS" description="Warnings"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="DIRECTIONS" description="Directions"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="TERMS_AND_CONDS" description="Terms and Conditions"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="DELIVERY_INFO" description="Delivery Info"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="SMALL_IMAGE_URL" description="Image - Small"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="MEDIUM_IMAGE_URL" description="Image - Medium"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="LARGE_IMAGE_URL" description="Image - Large"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="DETAIL_IMAGE_URL" description="Image - Detail"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="ORIGINAL_IMAGE_URL" description="Image - Original"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="SMALL_IMAGE_ALT" description="Image Alt Text - Small"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="MEDIUM_IMAGE_ALT" description="Image Alt Text - Medium"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="LARGE_IMAGE_ALT" description="Image Alt Text - Large"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="DETAIL_IMAGE_ALT" description="Image Alt Text - Detail"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="ADDITIONAL_IMAGE_1" description="Image - Additional View 1"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="ADDITIONAL_IMAGE_2" description="Image - Additional View 2"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="ADDITIONAL_IMAGE_3" description="Image - Additional View 3"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="ADDITIONAL_IMAGE_4" description="Image - Additional View 4"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="XTRA_IMG_1_SMALL" description="Image - Additional View 1 Small"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="XTRA_IMG_1_MEDIUM" description="Image - Additional View 1 Medium"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="XTRA_IMG_1_LARGE" description="Image - Additional View 1 Large"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="XTRA_IMG_1_DETAIL" description="Image - Additional View 1 Detail"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="XTRA_IMG_2_SMALL" description="Image - Additional View 2 Small"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="XTRA_IMG_2_MEDIUM" description="Image - Additional View 2 Medium"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="XTRA_IMG_2_LARGE" description="Image - Additional View 2 Large"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="XTRA_IMG_2_DETAIL" description="Image - Additional View 2 Detail"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="XTRA_IMG_3_SMALL" description="Image - Additional View 3 Small"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="XTRA_IMG_3_MEDIUM" description="Image - Additional View 3 Medium"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="XTRA_IMG_3_LARGE" description="Image - Additional View 3 Large"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="XTRA_IMG_3_DETAIL" description="Image - Additional View 3 Detail"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="XTRA_IMG_4_SMALL" description="Image - Additional View 4 Small"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="XTRA_IMG_4_MEDIUM" description="Image - Additional View 4 Medium"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="XTRA_IMG_4_LARGE" description="Image - Additional View 4 Large"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="XTRA_IMG_4_DETAIL" description="Image - Additional View 4 Detail"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="XTRA_IMG_L_SMALL" description="Image - Additional View Small"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="XTRA_IMG_L_MEDIUM" description="Image - Additional View Medium"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="XTRA_IMG_L_LARGE" description="Image - Additional View Large"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="XTRA_IMG_L_DETAIL" description="Image - Additional View Detail"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="ADDTOCART_LABEL" description="Add To Cart Label"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="ADDTOCART_IMAGE" description="Add To Cart Image"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="SHORT_SALES_PITCH" description="Short Sales Pitch"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="INSTALLATION" description="Installation">
+    <parentTypeId href="ProductContentType#DIGITAL_DOWNLOAD"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="SPECIFICATION" description="Specification">
+    <parentTypeId href="ProductContentType#DIGITAL_DOWNLOAD"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="WARRANTY" description="Warranty">
+    <parentTypeId href="ProductContentType#DIGITAL_DOWNLOAD"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="PAGE_TITLE" description="Page Title"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="META_KEYWORD" description="Meta Keyword"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="META_DESCRIPTION" description="Meta Description"/>
+  <contents xsi:type="biz-config:ProdConfItemContentType" confItemContentTypeId="IMAGE_URL" description="Image"/>
+  <contents xsi:type="biz-config:ProdConfItemContentType" confItemContentTypeId="DESCRIPTION" description="Description"/>
+  <contents xsi:type="biz-config:ProdConfItemContentType" confItemContentTypeId="LONG_DESCRIPTION" description="Description - Long"/>
+  <contents xsi:type="biz-config:ProdConfItemContentType" confItemContentTypeId="INSTRUCTIONS" description="Instructions"/>
+  <contents xsi:type="biz-feature:ProductFeatureApplType" productFeatureApplTypeId="OPTIONAL_FEATURE" description="Optional"/>
+  <contents xsi:type="biz-feature:ProductFeatureApplType" productFeatureApplTypeId="REQUIRED_FEATURE" description="Required"/>
+  <contents xsi:type="biz-feature:ProductFeatureApplType" productFeatureApplTypeId="SELECTABLE_FEATURE" description="Selectable"/>
+  <contents xsi:type="biz-feature:ProductFeatureApplType" productFeatureApplTypeId="STANDARD_FEATURE" description="Standard"/>
+  <contents xsi:type="biz-feature:ProductFeatureApplType" productFeatureApplTypeId="DISTINGUISHING_FEAT" description="Distinguishing"/>
+  <contents xsi:type="biz-feature:ProductFeatureIactnType" productFeatureIactnTypeId="FEATURE_IACTN_DEPEND" description="Dependencies"/>
+  <contents xsi:type="biz-feature:ProductFeatureIactnType" productFeatureIactnTypeId="FEATURE_IACTN_INCOMP" description="Incompatibility"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="ACCESSORY" description="Accessory"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="AMOUNT" description="Amount"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="NET_WEIGHT" description="Net Weight">
+    <parentTypeId href="ProductFeatureType#AMOUNT"/>
+  </contents>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="ARTIST" description="Artist"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="BILLING_FEATURE" description="Billing Feature"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="BRAND" description="Brand"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="CARE" description="Care"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="COLOR" description="Color"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="DIMENSION" description="Dimension"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="EQUIP_CLASS" description="Equipment Class"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="FABRIC" description="Fabric"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="GENRE" description="Genre"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="GIFT_WRAP" description="Gift Wrap"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="HARDWARE_FEATURE" description="Hardware Feature"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="HAZMAT" description="Hazmat"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="LICENSE" description="License"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="ORIGIN" description="Origin"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="OTHER_FEATURE" description="Other Feature"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="PRODUCT_QUALITY" description="Product Quality"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="SIZE" description="Size"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="SOFTWARE_FEATURE" description="Software Feature"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="STYLE" description="Style"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="SYMPTOM" description="Symptom"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="TOPIC" description="Topic"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="TYPE" description="Type"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="WARRANTY" description="Warranty"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="MODEL_YEAR" description="Model Year"/>
+  <contents xsi:type="biz-feature:ProductFeatureType" productFeatureTypeId="YEAR_MADE" description="Year Made"/>
+  <contents xsi:type="biz-product:ProductMeterType" productMeterTypeId="SPEEDOMETER" description="Speedometer"/>
+  <contents xsi:type="biz-product:ProductMeterType" productMeterTypeId="TACHOMETER" description="Tachometer"/>
+  <contents xsi:type="biz-product:ProductMeterType" productMeterTypeId="DISTANCE" description="Distance Meter"/>
+  <contents xsi:type="biz-product:ProductMeterType" productMeterTypeId="MOTOR_TIME" description="Motor Time Meter"/>
+  <contents xsi:type="biz-product:ProductMeterType" productMeterTypeId="USE_COUNT" description="Use Count Meter"/>
+  <contents xsi:type="biz-product:ProductMeterType" productMeterTypeId="COPY_COUNT" description="Copy Count Meter"/>
+  <contents xsi:type="biz-product:ProductMeterType" productMeterTypeId="TRIP_METER" description="Trip meter"/>
+  <contents xsi:type="biz-product:ProductMeterType" productMeterTypeId="TACHOGRAPH" description="Tachograph"/>
+  <contents xsi:type="biz-product:ProductMeterType" productMeterTypeId="TAXIMETER" description="Taximeter"/>
+  <contents xsi:type="biz-product:ProductMeterType" productMeterTypeId="EVENT_DATA_RECORDER" description="Event Data Recorder"/>
+  <contents xsi:type="biz-product:ProductMeterType" productMeterTypeId="PEDOMETER" description="Pedometer"/>
+  <contents xsi:type="biz-product:ProductMeterType" productMeterTypeId="ODOMETER" description="Odometer"/>
+  <contents xsi:type="biz-product:ProductMaintType" productMaintTypeId="VEHICLE_MAINT" description="Vehicle Maintenance"/>
+  <contents xsi:type="biz-product:ProductMaintType" productMaintTypeId="OIL_CHANGE" description="Oil Change">
+    <parentTypeId href="ProductMaintType#VEHICLE_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductMaintType" productMaintTypeId="SERP_BELT" description="Serpentine Belt Replacement">
+    <parentTypeId href="ProductMaintType#VEHICLE_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductMaintType" productMaintTypeId="REFUEL" description="Re-Fuel">
+    <parentTypeId href="ProductMaintType#VEHICLE_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductMaintType" productMaintTypeId="REPLACE_BATTERY" description="Replace Battery">
+    <parentTypeId href="ProductMaintType#VEHICLE_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductMaintType" productMaintTypeId="TUNE_UP" description="Tune Up">
+    <parentTypeId href="ProductMaintType#VEHICLE_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductMaintType" productMaintTypeId="CHECK_BATTERY" description="Check Battery">
+    <parentTypeId href="ProductMaintType#VEHICLE_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductMaintType" productMaintTypeId="CHASSIS_LUBE" description="Chassis Lubrication">
+    <parentTypeId href="ProductMaintType#VEHICLE_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductMaintType" productMaintTypeId="ROTATE_TIRES" description="Rotate Tires">
+    <parentTypeId href="ProductMaintType#VEHICLE_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductMaintType" productMaintTypeId="HVAC_MAINT" description="HVAC Maintenance"/>
+  <contents xsi:type="biz-product:ProductMaintType" productMaintTypeId="HVAC_REPLACE_FILTER" description="Replace Air Filter">
+    <parentTypeId href="ProductMaintType#HVAC_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductMaintType" productMaintTypeId="HVAC_CHECK_REFR" description="Check/Recharge Refrigerant">
+    <parentTypeId href="ProductMaintType#HVAC_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductMaintType" productMaintTypeId="WASH" description="Wash"/>
+  <contents xsi:type="biz-price:ProductPriceType" productPriceTypeId="LIST_PRICE" description="List Price"/>
+  <contents xsi:type="biz-price:ProductPriceType" productPriceTypeId="DEFAULT_PRICE" description="Default Price"/>
+  <contents xsi:type="biz-price:ProductPriceType" productPriceTypeId="AVERAGE_COST" description="Average Cost"/>
+  <contents xsi:type="biz-price:ProductPriceType" productPriceTypeId="MINIMUM_PRICE" description="Minimum Price"/>
+  <contents xsi:type="biz-price:ProductPriceType" productPriceTypeId="MAXIMUM_PRICE" description="Maximum Price"/>
+  <contents xsi:type="biz-price:ProductPriceType" productPriceTypeId="PROMO_PRICE" description="Promotional Price"/>
+  <contents xsi:type="biz-price:ProductPriceType" productPriceTypeId="COMPETITIVE_PRICE" description="Competitive Price"/>
+  <contents xsi:type="biz-price:ProductPriceType" productPriceTypeId="WHOLESALE_PRICE" description="Wholesale Price"/>
+  <contents xsi:type="biz-price:ProductPriceType" productPriceTypeId="SPECIAL_PROMO_PRICE" description="Special Promo Price"/>
+  <contents xsi:type="biz-price:ProductPriceType" productPriceTypeId="BOX_PRICE" description="Box Price"/>
+  <contents xsi:type="biz-price:ProductPriceType" productPriceTypeId="MINIMUM_ORDER_PRICE" description="Minimum Order Price"/>
+  <contents xsi:type="biz-price:ProductPriceType" productPriceTypeId="SHIPPING_ALLOWANCE" description="Shipping Allowance Price"/>
+  <contents xsi:type="biz-price:ProductPricePurpose" productPricePurposeId="DEPOSIT" description="Deposit price"/>
+  <contents xsi:type="biz-price:ProductPricePurpose" productPricePurposeId="PURCHASE" description="Purchase/Initial"/>
+  <contents xsi:type="biz-price:ProductPricePurpose" productPricePurposeId="RECURRING_CHARGE" description="Recurring Charge"/>
+  <contents xsi:type="biz-price:ProductPricePurpose" productPricePurposeId="USAGE_CHARGE" description="Usage Charge"/>
+  <contents xsi:type="biz-price:ProductPricePurpose" productPricePurposeId="COMPONENT_PRICE" description="Component Price"/>
+  <contents xsi:type="biz-price:ProductPriceActionType" productPriceActionTypeId="PRICE_POL" description="Percent Of List Price"/>
+  <contents xsi:type="biz-price:ProductPriceActionType" productPriceActionTypeId="PRICE_POD" description="Percent Of Default Price"/>
+  <contents xsi:type="biz-price:ProductPriceActionType" productPriceActionTypeId="PRICE_POAC" description="Percent Of Average Cost"/>
+  <contents xsi:type="biz-price:ProductPriceActionType" productPriceActionTypeId="PRICE_POM" description="Percent Of Margin"/>
+  <contents xsi:type="biz-price:ProductPriceActionType" productPriceActionTypeId="PRICE_POWHS" description="Percent Of Wholesale"/>
+  <contents xsi:type="biz-price:ProductPriceActionType" productPriceActionTypeId="PRICE_FOL" description="Flat Amount Modify"/>
+  <contents xsi:type="biz-price:ProductPriceActionType" productPriceActionTypeId="PRICE_FLAT" description="Flat Amount Override"/>
+  <contents xsi:type="biz-price:ProductPriceActionType" productPriceActionTypeId="PRICE_PFLAT" description="Promo Amount Override"/>
+  <contents xsi:type="biz-price:ProductPriceActionType" productPriceActionTypeId="PRICE_WFLAT" description="Wholesale Amount Override"/>
+  <contents xsi:type="biz-product:ProductType" productTypeId="ASSET_USAGE" description="Fixed Asset Usage" isPhysical="true"/>
+  <contents xsi:type="biz-product:ProductType" productTypeId="SERVICE" description="Service"/>
+  <contents xsi:type="biz-product:ProductType" productTypeId="GOOD" description="Good" isPhysical="true"/>
+  <contents xsi:type="biz-product:ProductType" productTypeId="RAW_MATERIAL" description="Raw Material" isPhysical="true">
+    <parentTypeId href="ProductType#GOOD"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductType" productTypeId="SUBASSEMBLY" description="Subassembly" isPhysical="true">
+    <parentTypeId href="ProductType#GOOD"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductType" productTypeId="FINISHED_GOOD" description="Finished Good" isPhysical="true">
+    <parentTypeId href="ProductType#GOOD"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductType" productTypeId="DIGITAL_GOOD" description="Digital Good" isDigital="true">
+    <parentTypeId href="ProductType#GOOD"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductType" productTypeId="FINDIG_GOOD" description="Finished/Digital Good" isDigital="true" isPhysical="true">
+    <parentTypeId href="ProductType#GOOD"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductType" productTypeId="AGGREGATED" description="Configurable Good" isPhysical="true">
+    <parentTypeId href="ProductType#GOOD"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductType" productTypeId="MARKETING_PKG" description="Marketing Package" isPhysical="true">
+    <parentTypeId href="ProductType#GOOD"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductType" productTypeId="MARKETING_PKG_AUTO" description="Marketing Package: Auto Manufactured" isPhysical="true">
+    <parentTypeId href="ProductType#MARKETING_PKG"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductType" productTypeId="MARKETING_PKG_PICK" description="Marketing Package: Pick Assembly" isPhysical="true">
+    <parentTypeId href="ProductType#MARKETING_PKG"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductType" productTypeId="WIP" description="Work In Process" isPhysical="true">
+    <parentTypeId href="ProductType#GOOD"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductType" productTypeId="AGGREGATED_CONF" description="Configurable Good Configuration" isPhysical="true">
+    <parentTypeId href="ProductType#AGGREGATED"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductType" productTypeId="ASSET_USAGE_OUT_IN" description="Fixed Asset Usage For Rental of an asset which is shipped from and returned to inventory" isPhysical="true"/>
+  <contents xsi:type="biz-product:ProductType" productTypeId="SERVICE_PRODUCT" description="Service a product using inventory" isPhysical="true"/>
+  <contents xsi:type="biz-product:ProductType" productTypeId="AGGREGATED_SERVICE" description="Configurable Service using inventory" isPhysical="true">
+    <parentTypeId href="ProductType#SERVICE_PRODUCT"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductType" productTypeId="AGGREGATEDSERV_CONF" description="Configurable Service Configuration" isPhysical="true">
+    <parentTypeId href="ProductType#AGGREGATED"/>
+  </contents>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="IMAGE" description="Image"/>
+  <contents xsi:type="biz-product:ProductContentType" productContentTypeId="DEFAULT_IMAGE" description="Default Image"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="COST_FORMULA" description="Formula for calculating costs for tasks and products"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PROD_PERC_FORMULA" customMethodName="productCostPercentageFormula" description="Formula that creates a cost component equal to a percentage of total product cost">
+    <customMethodTypeId href="CustomMethodType#COST_FORMULA"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="PROD_PRICE" description="Product Price Parent Enum Type"/>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="PROD_PRICE_IN_PARAM" description="Product Price Input Parameter">
+    <parentTypeId href="EnumerationType#PROD_PRICE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRIP_PRODUCT_ID" description="Product" enumCode="PRODUCT_ID" sequenceId="01">
+    <enumTypeId href="EnumerationType#PROD_PRICE_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRIP_PROD_CAT_ID" description="Product Category" enumCode="PRODUCT_CATEGORY_ID" sequenceId="02">
+    <enumTypeId href="EnumerationType#PROD_PRICE_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRIP_PROD_CLG_ID" description="Product Catalog" enumCode="PROD_CATALOG_ID" sequenceId="03">
+    <enumTypeId href="EnumerationType#PROD_PRICE_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRIP_PROD_FEAT_ID" description="Product Feature" enumCode="PRODUCT_FEATURE_ID" sequenceId="04">
+    <enumTypeId href="EnumerationType#PROD_PRICE_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRIP_PROD_SGRP_ID" description="Product Store Group" enumCode="PROD_STORE_GRP_ID" sequenceId="05">
+    <enumTypeId href="EnumerationType#PROD_PRICE_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRIP_WEBSITE_ID" description="Website" enumCode="WEBSITE_ID" sequenceId="06">
+    <enumTypeId href="EnumerationType#PROD_PRICE_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRIP_QUANTITY" description="Quantity" enumCode="QUANTITY" sequenceId="07">
+    <enumTypeId href="EnumerationType#PROD_PRICE_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRIP_PARTY_ID" description="Party" enumCode="PARTY_ID" sequenceId="08">
+    <enumTypeId href="EnumerationType#PROD_PRICE_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRIP_PARTY_GRP_MEM" description="Party Group Member" enumCode="PARTY_GROUP_MEMBER" sequenceId="09">
+    <enumTypeId href="EnumerationType#PROD_PRICE_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRIP_PARTY_CLASS" description="Party Classification" enumCode="PARTY_CLASS" sequenceId="10">
+    <enumTypeId href="EnumerationType#PROD_PRICE_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRIP_ROLE_TYPE" description="Role Type" enumCode="ROLE_TYPE" sequenceId="11">
+    <enumTypeId href="EnumerationType#PROD_PRICE_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRIP_LIST_PRICE" description="List Price" enumCode="LIST_PRICE" sequenceId="12">
+    <enumTypeId href="EnumerationType#PROD_PRICE_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRIP_CURRENCY_UOMID" description="Currency UomId" enumCode="CURRENCY_UOMID" sequenceId="13">
+    <enumTypeId href="EnumerationType#PROD_PRICE_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="PROD_PRICE_COND" description="Product Price Condition">
+    <parentTypeId href="EnumerationType#PROD_PRICE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRC_EQ" description="Is" enumCode="EQ" sequenceId="01">
+    <enumTypeId href="EnumerationType#PROD_PRICE_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRC_NEQ" description="Is Not" enumCode="NEQ" sequenceId="02">
+    <enumTypeId href="EnumerationType#PROD_PRICE_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRC_LT" description="Is Less Than" enumCode="LT" sequenceId="03">
+    <enumTypeId href="EnumerationType#PROD_PRICE_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRC_LTE" description="Is Less Than or Equal To" enumCode="LTE" sequenceId="04">
+    <enumTypeId href="EnumerationType#PROD_PRICE_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRC_GT" description="Is Greater Than" enumCode="GT" sequenceId="05">
+    <enumTypeId href="EnumerationType#PROD_PRICE_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRC_GTE" description="Is Greater Than or Equal To" enumCode="GTE" sequenceId="06">
+    <enumTypeId href="EnumerationType#PROD_PRICE_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="INV_RES_ORDER" description="Inventory Reservation Order"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="INVRO_FIFO_REC" description="FIFO Received" enumCode="FIFO_REC" sequenceId="01">
+    <enumTypeId href="EnumerationType#INV_RES_ORDER"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="INVRO_LIFO_REC" description="LIFO Received" enumCode="LIFO_REC" sequenceId="02">
+    <enumTypeId href="EnumerationType#INV_RES_ORDER"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="INVRO_FIFO_EXP" description="FIFO Expire" enumCode="FIFO_EXP" sequenceId="03">
+    <enumTypeId href="EnumerationType#INV_RES_ORDER"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="INVRO_LIFO_EXP" description="LIFO Expire" enumCode="LIFO_EXP" sequenceId="04">
+    <enumTypeId href="EnumerationType#INV_RES_ORDER"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="INVRO_GUNIT_COST" description="Greater Unit Cost" enumCode="GUNIT_COST" sequenceId="05">
+    <enumTypeId href="EnumerationType#INV_RES_ORDER"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="INVRO_LUNIT_COST" description="Less Unit Cost" enumCode="LUNIT_COST" sequenceId="06">
+    <enumTypeId href="EnumerationType#INV_RES_ORDER"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="IID_REASON" description="Inventory Item Detail Reason"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="VAR_LOST" description="Lost" enumCode="VAR_LOST" sequenceId="01">
+    <enumTypeId href="EnumerationType#IID_REASON"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="VAR_STOLEN" description="Stolen" enumCode="VAR_STOLEN" sequenceId="02">
+    <enumTypeId href="EnumerationType#IID_REASON"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="VAR_FOUND" description="Found" enumCode="VAR_FOUND" sequenceId="03">
+    <enumTypeId href="EnumerationType#IID_REASON"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="VAR_DAMAGED" description="Damaged" enumCode="VAR_DAMAGED" sequenceId="04">
+    <enumTypeId href="EnumerationType#IID_REASON"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="VAR_SAMPLE" description="Sample (Giveaway)" enumCode="VAR_SAMPLE" sequenceId="05">
+    <enumTypeId href="EnumerationType#IID_REASON"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="VAR_INTEGR" description="Integration" enumCode="VAR_INTEGR" sequenceId="06">
+    <enumTypeId href="EnumerationType#IID_REASON"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="VAR_MISSHIP_ORDERED" description="Mis-shipped Item Ordered (+)" enumCode="VAR_MISSHIP_ORDERED" sequenceId="07">
+    <enumTypeId href="EnumerationType#IID_REASON"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="VAR_MISSHIP_SHIPPED" description="Mis-shipped Item Shipped (-)" enumCode="VAR_MISSHIP_SHIPPED" sequenceId="08">
+    <enumTypeId href="EnumerationType#IID_REASON"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="PRDS_PAYSVC" description="Product Store Payment Service Type"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_PAY_AUTH" description="Payment Authorization Service" enumCode="PAY_AUTH" sequenceId="01">
+    <enumTypeId href="EnumerationType#PRDS_PAYSVC"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_PAY_AUTH_VERIFY" description="Payment Auth Verification Service" enumCode="PAY_AUTH_VERIFY" sequenceId="06">
+    <enumTypeId href="EnumerationType#PRDS_PAYSVC"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_PAY_REAUTH" description="Payment Re-Authorization Service" enumCode="PAY_REAUTH" sequenceId="02">
+    <enumTypeId href="EnumerationType#PRDS_PAYSVC"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_PAY_RELEASE" description="Payment Release Authorization Service" enumCode="PAY_RELEASE" sequenceId="03">
+    <enumTypeId href="EnumerationType#PRDS_PAYSVC"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_PAY_CAPTURE" description="Payment Capture Service" enumCode="PAY_CAPTURE" sequenceId="04">
+    <enumTypeId href="EnumerationType#PRDS_PAYSVC"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_PAY_REFUND" description="Payment Refund Service" enumCode="PAY_REFUND" sequenceId="05">
+    <enumTypeId href="EnumerationType#PRDS_PAYSVC"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_PAY_CREDIT" description="Payment Credit Service" enumCode="PAY_CREDIT" sequenceId="06">
+    <enumTypeId href="EnumerationType#PRDS_PAYSVC"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_PAY_EXTERNAL" description="External Payment (No Service)" enumCode="PAY_EXTERNAL" sequenceId="07">
+    <enumTypeId href="EnumerationType#PRDS_PAYSVC"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="PRDS_EMAIL" description="Product Store Email Notification"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_CUST_REGISTER" description="Registration" enumCode="CUST_REGISTER" sequenceId="01">
+    <enumTypeId href="EnumerationType#PRDS_EMAIL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_ODR_CONFIRM" description="Confirmation" enumCode="ODR_CONFIRM" sequenceId="02">
+    <enumTypeId href="EnumerationType#PRDS_EMAIL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_ODR_COMPLETE" description="Complete" enumCode="ODR_COMPLETE" sequenceId="03">
+    <enumTypeId href="EnumerationType#PRDS_EMAIL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_ODR_BACKORDER" description="Back-Order" enumCode="ODR_BACKORDER" sequenceId="04">
+    <enumTypeId href="EnumerationType#PRDS_EMAIL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_ODR_CHANGE" description="Order Change" enumCode="ODR_CHANGE" sequenceId="05">
+    <enumTypeId href="EnumerationType#PRDS_EMAIL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_ODR_PAYRETRY" description="Payment Retry" enumCode="ODR_PAYRETRY" sequenceId="06">
+    <enumTypeId href="EnumerationType#PRDS_EMAIL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_RTN_ACCEPT" description="Return Accepted" enumCode="RTN_ACCEPT" sequenceId="07">
+    <enumTypeId href="EnumerationType#PRDS_EMAIL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_RTN_COMPLETE" description="Return Completed" enumCode="RTN_COMPLETE" sequenceId="08">
+    <enumTypeId href="EnumerationType#PRDS_EMAIL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_RTN_CANCEL" description="Return Cancelled" enumCode="RTN_CANCEL" sequenceId="09">
+    <enumTypeId href="EnumerationType#PRDS_EMAIL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_PWD_RETRIEVE" description="Retrieve Password" enumCode="PWD_RETRIEVE" sequenceId="10">
+    <enumTypeId href="EnumerationType#PRDS_EMAIL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_TELL_FRIEND" description="Tell-A-Friend" enumCode="TELL_FRIEND" sequenceId="11">
+    <enumTypeId href="EnumerationType#PRDS_EMAIL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_GC_PURCHASE" description="Gift-Card Purchase" enumCode="GC_PURCHASE" sequenceId="12">
+    <enumTypeId href="EnumerationType#PRDS_EMAIL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_GC_RELOAD" description="Gift-Card Reload" enumCode="GC_RELOAD" sequenceId="13">
+    <enumTypeId href="EnumerationType#PRDS_EMAIL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_QUO_CREATED" description="Quote Created" enumCode="QUO_CREATED" sequenceId="14">
+    <enumTypeId href="EnumerationType#PRDS_EMAIL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_QUO_CONFIRM" description="Quote Confirmation" enumCode="QUO_CONFIRM" sequenceId="15">
+    <enumTypeId href="EnumerationType#PRDS_EMAIL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDS_ODR_SHIP_COMPLT" description="Shipment Complete" enumCode="SHP_COMPLETE" sequenceId="16">
+    <enumTypeId href="EnumerationType#PRDS_EMAIL"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="FACLOC_TYPE" description="Facility Location Type"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FLT_PICKLOC" description="Pick/Primary" enumCode="PICKLOC" sequenceId="01">
+    <enumTypeId href="EnumerationType#FACLOC_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FLT_BULK" description="Bulk" enumCode="BULK" sequenceId="02">
+    <enumTypeId href="EnumerationType#FACLOC_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="KWOVRD_TRGT_TYPE" description="Keyword Override Target Type"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="KOTT_PRODCAT" description="Product Category" enumCode="PRODCAT" sequenceId="01">
+    <enumTypeId href="EnumerationType#KWOVRD_TRGT_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="KOTT_PRODUCT" description="Product" enumCode="PRODUCT" sequenceId="02">
+    <enumTypeId href="EnumerationType#KWOVRD_TRGT_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="KOTT_OFBURL" description="OFBiz URL" enumCode="OFBURL" sequenceId="03">
+    <enumTypeId href="EnumerationType#KWOVRD_TRGT_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="KOTT_AURL" description="Absolute URL" enumCode="AURL" sequenceId="04">
+    <enumTypeId href="EnumerationType#KWOVRD_TRGT_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="PCAT_LINK_TYPE" description="Product Category Link Type"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PCLT_SEARCH_PARAM" description="Search Parameters" enumCode="SEARCH_PARAM" sequenceId="01">
+    <enumTypeId href="EnumerationType#PCAT_LINK_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PCLT_ABS_URL" description="Absolute URL" enumCode="ABS_URL" sequenceId="02">
+    <enumTypeId href="EnumerationType#PCAT_LINK_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PCLT_CAT_ID" description="Category ID" enumCode="CAT_ID" sequenceId="03">
+    <enumTypeId href="EnumerationType#PCAT_LINK_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-facility:FacilityType" facilityTypeId="BUILDING" description="Building"/>
+  <contents xsi:type="biz-facility:FacilityType" facilityTypeId="FLOOR" description="Floor"/>
+  <contents xsi:type="biz-facility:FacilityType" facilityTypeId="OFFICE" description="Office"/>
+  <contents xsi:type="biz-facility:FacilityType" facilityTypeId="CALL_CENTER" description="Call Center"/>
+  <contents xsi:type="biz-facility:FacilityType" facilityTypeId="PLANT" description="Plant"/>
+  <contents xsi:type="biz-facility:FacilityType" facilityTypeId="ROOM" description="Room"/>
+  <contents xsi:type="biz-facility:FacilityType" facilityTypeId="RETAIL_STORE" description="Retail Store"/>
+  <contents xsi:type="biz-facility:FacilityType" facilityTypeId="WAREHOUSE" description="Warehouse"/>
+  <contents xsi:type="biz-facility:FacilityGroupType" facilityGroupTypeId="MGMT_STRUCTURE" description="Management Structure"/>
+  <contents xsi:type="biz-facility:FacilityGroupType" facilityGroupTypeId="PRICING_GROUP" description="Pricing Group"/>
+  <contents xsi:type="biz-facility:FacilityGroup" facilityGroupId="_NA_" description="Not Applicable" facilityGroupName="Not Applicable"/>
+  <contents xsi:type="biz-inventory:InventoryItemType" inventoryItemTypeId="SERIALIZED_INV_ITEM" description="Serialized"/>
+  <contents xsi:type="biz-inventory:InventoryItemType" inventoryItemTypeId="NON_SERIAL_INV_ITEM" description="Non-Serialized"/>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="PROD_GEO" description="Product Geo Data"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PG_PURCH_INCLUDE" description="Purchase Include Geo" enumCode="PURCHASE_INCLUDE" sequenceId="01">
+    <enumTypeId href="EnumerationType#PROD_GEO"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PG_PURCH_EXCLUDE" description="Purchase Exclude Geo" enumCode="PURCHASE_EXCLUDE" sequenceId="02">
+    <enumTypeId href="EnumerationType#PROD_GEO"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PG_SHIP_INCLUDE" description="Shipment Include Geo" enumCode="SHIPMENT_INCLUDE" sequenceId="03">
+    <enumTypeId href="EnumerationType#PROD_GEO"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PG_SHIP_EXCLUDE" description="Shipment Exclude Geo" enumCode="SHIPMENT_EXCLUDE" sequenceId="04">
+    <enumTypeId href="EnumerationType#PROD_GEO"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="PROD_PROMO" description="Product Promotion Parent Enum Type"/>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="PROD_PROMO_IN_PARAM" description="Product Promotion Input Parameter">
+    <parentTypeId href="EnumerationType#PROD_PROMO"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_ORDER_TOTAL" description="Cart Sub-total" enumCode="ORDER_TOTAL" sequenceId="01">
+    <enumTypeId href="EnumerationType#PROD_PROMO_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_PRODUCT_TOTAL" description="Total Amount of Product" enumCode="PRODUCT_TOTAL" sequenceId="02">
+    <enumTypeId href="EnumerationType#PROD_PROMO_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_PRODUCT_AMOUNT" description="X Amount of Product" enumCode="PRODUCT_AMOUNT" sequenceId="03">
+    <enumTypeId href="EnumerationType#PROD_PROMO_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_PRODUCT_QUANT" description="X Quantity of Product" enumCode="PRODUCT_QUANT" sequenceId="04">
+    <enumTypeId href="EnumerationType#PROD_PROMO_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_NEW_ACCT" description="Account Days Since Created" enumCode="NEW_ACCT" sequenceId="05">
+    <enumTypeId href="EnumerationType#PROD_PROMO_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_PARTY_ID" description="Party" enumCode="PARTY_ID" sequenceId="06">
+    <enumTypeId href="EnumerationType#PROD_PROMO_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_PARTY_GRP_MEM" description="Party Group Member" enumCode="PARTY_GROUP_MEMBER" sequenceId="07">
+    <enumTypeId href="EnumerationType#PROD_PROMO_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_PARTY_CLASS" description="Party Classification" enumCode="PARTY_CLASS" sequenceId="08">
+    <enumTypeId href="EnumerationType#PROD_PROMO_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_ROLE_TYPE" description="Role Type" enumCode="ROLE_TYPE" sequenceId="09">
+    <enumTypeId href="EnumerationType#PROD_PROMO_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_ORST_HIST" description="Order sub-total X in last Y Months" enumCode="ORST_HIST" sequenceId="10">
+    <enumTypeId href="EnumerationType#PROD_PROMO_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_RECURRENCE" description="Promotion Recurrence" enumCode="PROMO_RECURRENCE" sequenceId="11">
+    <enumTypeId href="EnumerationType#PROD_PROMO_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_ORST_YEAR" description="Order sub-total X since beginning of current year" enumCode="ORST_YEAR" sequenceId="12">
+    <enumTypeId href="EnumerationType#PROD_PROMO_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_ORST_LAST_YEAR" description="Order sub-total X last year" enumCode="ORST_LAST_YEAR" sequenceId="13">
+    <enumTypeId href="EnumerationType#PROD_PROMO_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_LPMUP_AMT" description="List Price minus Unit Price (Amount)" enumCode="LPMUP_AMT" sequenceId="14">
+    <enumTypeId href="EnumerationType#PROD_PROMO_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_LPMUP_PER" description="List Price minus Unit Price (Percent)" enumCode="LPMUP_PER" sequenceId="15">
+    <enumTypeId href="EnumerationType#PROD_PROMO_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_ORDER_SHIPTOTAL" description="Shipping Total" enumCode="ORDER_SHIP_TOTAL" sequenceId="16">
+    <enumTypeId href="EnumerationType#PROD_PROMO_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_SERVICE" description="Call Service" enumCode="SERVICE" sequenceId="17">
+    <enumTypeId href="EnumerationType#PROD_PROMO_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPIP_GEO_ID" description="Shipping Destination" enumCode="GEO_ID" sequenceId="18">
+    <enumTypeId href="EnumerationType#PROD_PROMO_IN_PARAM"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="PROD_PROMO_COND" description="Product Promotion Condition">
+    <parentTypeId href="EnumerationType#PROD_PROMO"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPC_EQ" description="Is" enumCode="EQ" sequenceId="01">
+    <enumTypeId href="EnumerationType#PROD_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPC_NEQ" description="Is Not" enumCode="NEQ" sequenceId="02">
+    <enumTypeId href="EnumerationType#PROD_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPC_LT" description="Is Less Than" enumCode="LT" sequenceId="03">
+    <enumTypeId href="EnumerationType#PROD_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPC_LTE" description="Is Less Than or Equal To" enumCode="LTE" sequenceId="04">
+    <enumTypeId href="EnumerationType#PROD_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPC_GT" description="Is Greater Than" enumCode="GT" sequenceId="05">
+    <enumTypeId href="EnumerationType#PROD_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPC_GTE" description="Is Greater Than or Equal To" enumCode="GTE" sequenceId="06">
+    <enumTypeId href="EnumerationType#PROD_PROMO_COND"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="PROD_PROMO_PCAPPL" description="Product Promotion Product/Category Application Type">
+    <parentTypeId href="EnumerationType#PROD_PROMO"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPPA_INCLUDE" description="Include" enumCode="INCLUDE" sequenceId="01">
+    <enumTypeId href="EnumerationType#PROD_PROMO_PCAPPL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPPA_EXCLUDE" description="Exclude" enumCode="EXCLUDE" sequenceId="02">
+    <enumTypeId href="EnumerationType#PROD_PROMO_PCAPPL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PPPA_ALWAYS" description="Always Include" enumCode="ALWAYS" sequenceId="03">
+    <enumTypeId href="EnumerationType#PROD_PROMO_PCAPPL"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="PROD_PROMO_ACTION" description="Product Promotion Action">
+    <parentTypeId href="EnumerationType#PROD_PROMO"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PROMO_GWP" description="Gift With Purchase" enumCode="GWP" sequenceId="01">
+    <enumTypeId href="EnumerationType#PROD_PROMO_ACTION"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PROMO_PROD_DISC" description="X Product for Y% Discount" enumCode="PROD_DISC" sequenceId="03">
+    <enumTypeId href="EnumerationType#PROD_PROMO_ACTION"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PROMO_PROD_AMDISC" description="X Product for Y Discount" enumCode="PROD_AMDISC" sequenceId="04">
+    <enumTypeId href="EnumerationType#PROD_PROMO_ACTION"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PROMO_PROD_PRICE" description="X Product for Y Price" enumCode="PROD_PRICE" sequenceId="05">
+    <enumTypeId href="EnumerationType#PROD_PROMO_ACTION"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PROMO_ORDER_PERCENT" description="Order Percent Discount" enumCode="ORDER_PERCENT" sequenceId="06">
+    <enumTypeId href="EnumerationType#PROD_PROMO_ACTION"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PROMO_ORDER_AMOUNT" description="Order Amount Flat" enumCode="ORDER_AMOUNT" sequenceId="07">
+    <enumTypeId href="EnumerationType#PROD_PROMO_ACTION"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PROMO_PROD_SPPRC" description="Product for [Special Promo] Price" enumCode="PROD_SPPRC" sequenceId="08">
+    <enumTypeId href="EnumerationType#PROD_PROMO_ACTION"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PROMO_SHIP_CHARGE" description="Shipping X% discount" enumCode="SHIP_CHARGE" sequenceId="09">
+    <enumTypeId href="EnumerationType#PROD_PROMO_ACTION"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PROMO_SERVICE" description="Call Service" enumCode="SERVICE" sequenceId="10">
+    <enumTypeId href="EnumerationType#PROD_PROMO_ACTION"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PROMO_TAX_PERCENT" description="Tax % Discount" enumCode="TAX_PERCENT" sequenceId="11">
+    <enumTypeId href="EnumerationType#PROD_PROMO_ACTION"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="PROD_RATING_TYPE" description="Product Rating Field Type"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDR_MIN" description="Min Rating" enumCode="MIN" sequenceId="01">
+    <enumTypeId href="EnumerationType#PROD_RATING_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDR_MAX" description="Max Rating" enumCode="MAX" sequenceId="02">
+    <enumTypeId href="EnumerationType#PROD_RATING_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRDR_FLAT" description="Rating Override" enumCode="FLAT" sequenceId="03">
+    <enumTypeId href="EnumerationType#PROD_RATING_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="PROD_VVMETHOD" description="Virtual Variant Method"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="VV_FEATURETREE" description="Feature tree Generation" enumCode="FEATURETREE" sequenceId="01">
+    <enumTypeId href="EnumerationType#PROD_VVMETHOD"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="VV_VARIANTTREE" description="Variant Tree generation" enumCode="VARIANTTREE" sequenceId="02">
+    <enumTypeId href="EnumerationType#PROD_VVMETHOD"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="PRICE_FORMULA" description="Service with formula for calculating the unit price of a product"/>
+  <contents xsi:type="biz-store:ProductStoreGroup" productStoreGroupId="_NA_" description="Not Applicable" productStoreGroupName="Not Applicable"/>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="PROD_REQ_METHOD" description="Product Requirement Method"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRODRQM_NONE" description="No Requirement Created" enumCode="NONE" sequenceId="01">
+    <enumTypeId href="EnumerationType#PROD_REQ_METHOD"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRODRQM_AUTO" description="Automatic For Every Sales Order" enumCode="AUTO" sequenceId="02">
+    <enumTypeId href="EnumerationType#PROD_REQ_METHOD"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRODRQM_STOCK" description="When QOH Reaches Minimum Stock for Product-Facility" enumCode="STOCK_QOH" sequenceId="03">
+    <enumTypeId href="EnumerationType#PROD_REQ_METHOD"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRODRQM_STOCK_ATP" description="When ATP Reaches Minimum Stock for Product-Facility" enumCode="STOCK_ATP" sequenceId="04">
+    <enumTypeId href="EnumerationType#PROD_REQ_METHOD"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRODRQM_ATP" description="Requirement for order when ATP Reaches Minimum Stock for Product-Facility" enumCode="ATP" sequenceId="05">
+    <enumTypeId href="EnumerationType#PROD_REQ_METHOD"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRODRQM_DS" description="Drop-ship only" enumCode="DROPS" sequenceId="06">
+    <enumTypeId href="EnumerationType#PROD_REQ_METHOD"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PRODRQM_DSATP" description="Auto drop-ship on low quantity" enumCode="DROPS_ATP" sequenceId="07">
+    <enumTypeId href="EnumerationType#PROD_REQ_METHOD"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="INVENTORY_ITEM_STTS" description="Inventory Item"/>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="INV_SERIALIZED_STTS" description="Serialized Inventory Item">
+    <parentTypeId href="StatusType#INVENTORY_ITEM_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="INV_NON_SER_STTS" description="Non-Serialized Inventory Item">
+    <parentTypeId href="StatusType#INVENTORY_ITEM_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INV_ON_ORDER" description="On Order" sequenceId="01" statusCode="ON_ORDER">
+    <statusTypeId href="StatusType#INV_SERIALIZED_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INV_AVAILABLE" description="Available" sequenceId="02" statusCode="AVAILABLE">
+    <statusTypeId href="StatusType#INV_SERIALIZED_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INV_PROMISED" description="Promised" sequenceId="03" statusCode="PROMISED">
+    <statusTypeId href="StatusType#INV_SERIALIZED_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INV_DELIVERED" description="Delivered" sequenceId="04" statusCode="DELIVERED">
+    <statusTypeId href="StatusType#INV_SERIALIZED_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INV_ACTIVATED" description="Activated" sequenceId="05" statusCode="ACTIVATED">
+    <statusTypeId href="StatusType#INV_SERIALIZED_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INV_DEACTIVATED" description="Deactivated" sequenceId="06" statusCode="DEACTIVATED">
+    <statusTypeId href="StatusType#INV_SERIALIZED_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INV_ON_HOLD" description="On Hold" sequenceId="07" statusCode="ON_HOLD">
+    <statusTypeId href="StatusType#INV_SERIALIZED_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INV_BEING_TRANSFERED" description="Being Transfered" sequenceId="10" statusCode="BEING_TRANSFERED">
+    <statusTypeId href="StatusType#INV_SERIALIZED_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INV_BEING_TRANS_PRM" description="Being Transfered (Promised)" sequenceId="11" statusCode="BEING_TRANS_PRM">
+    <statusTypeId href="StatusType#INV_SERIALIZED_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INV_RETURNED" description="Returned" sequenceId="20" statusCode="RETURNED">
+    <statusTypeId href="StatusType#INV_SERIALIZED_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INV_DEFECTIVE" description="Defective" sequenceId="21" statusCode="DEFECTIVE">
+    <statusTypeId href="StatusType#INV_SERIALIZED_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INV_NS_ON_HOLD" description="On Hold (Non-Serialized)" sequenceId="01" statusCode="ON_HOLD_NS">
+    <statusTypeId href="StatusType#INV_NON_SER_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INV_NS_DEFECTIVE" description="Defective (Non-Serialized)" sequenceId="02" statusCode="DEFECTIVE_NS">
+    <statusTypeId href="StatusType#INV_NON_SER_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INV_NS_RETURNED" description="Returned (Non-Serialized)" sequenceId="02" statusCode="RETURNED_NS">
+    <statusTypeId href="StatusType#INV_NON_SER_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Order Arrived">
+    <statusId href="StatusItem#INV_ON_ORDER"/>
+    <statusIdTo href="StatusItem#INV_AVAILABLE"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Promise">
+    <statusId href="StatusItem#INV_AVAILABLE"/>
+    <statusIdTo href="StatusItem#INV_PROMISED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Hold">
+    <statusId href="StatusItem#INV_AVAILABLE"/>
+    <statusIdTo href="StatusItem#INV_ON_HOLD"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Mark As Defective">
+    <statusId href="StatusItem#INV_AVAILABLE"/>
+    <statusIdTo href="StatusItem#INV_DEFECTIVE"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Being Transfered">
+    <statusId href="StatusItem#INV_AVAILABLE"/>
+    <statusIdTo href="StatusItem#INV_BEING_TRANSFERED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Release Hold">
+    <statusId href="StatusItem#INV_ON_HOLD"/>
+    <statusIdTo href="StatusItem#INV_AVAILABLE"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Mark Held Defective">
+    <statusId href="StatusItem#INV_ON_HOLD"/>
+    <statusIdTo href="StatusItem#INV_DEFECTIVE"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Transfer Complete">
+    <statusId href="StatusItem#INV_BEING_TRANSFERED"/>
+    <statusIdTo href="StatusItem#INV_AVAILABLE"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel Promise">
+    <statusId href="StatusItem#INV_PROMISED"/>
+    <statusIdTo href="StatusItem#INV_AVAILABLE"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Deliver">
+    <statusId href="StatusItem#INV_PROMISED"/>
+    <statusIdTo href="StatusItem#INV_DELIVERED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Mark As Defective">
+    <statusId href="StatusItem#INV_PROMISED"/>
+    <statusIdTo href="StatusItem#INV_DEFECTIVE"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Being Transfered (Promised)">
+    <statusId href="StatusItem#INV_PROMISED"/>
+    <statusIdTo href="StatusItem#INV_BEING_TRANS_PRM"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Transfer Complete (Promised)">
+    <statusId href="StatusItem#INV_BEING_TRANS_PRM"/>
+    <statusIdTo href="StatusItem#INV_PROMISED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Return Status Pending">
+    <statusId href="StatusItem#INV_DELIVERED"/>
+    <statusIdTo href="StatusItem#INV_RETURNED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Make Return Available">
+    <statusId href="StatusItem#INV_RETURNED"/>
+    <statusIdTo href="StatusItem#INV_AVAILABLE"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Make Return Held">
+    <statusId href="StatusItem#INV_RETURNED"/>
+    <statusIdTo href="StatusItem#INV_ON_HOLD"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Mark Return Defective">
+    <statusId href="StatusItem#INV_RETURNED"/>
+    <statusIdTo href="StatusItem#INV_DEFECTIVE"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Activate">
+    <statusId href="StatusItem#INV_DELIVERED"/>
+    <statusIdTo href="StatusItem#INV_ACTIVATED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Deactivate">
+    <statusId href="StatusItem#INV_ACTIVATED"/>
+    <statusIdTo href="StatusItem#INV_DEACTIVATED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Return Status Pending">
+    <statusId href="StatusItem#INV_ACTIVATED"/>
+    <statusIdTo href="StatusItem#INV_RETURNED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Hold Inactive">
+    <statusId href="StatusItem#INV_DEACTIVATED"/>
+    <statusIdTo href="StatusItem#INV_ON_HOLD"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Return Inactive">
+    <statusId href="StatusItem#INV_DEACTIVATED"/>
+    <statusIdTo href="StatusItem#INV_RETURNED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Make Return Held">
+    <statusId href="StatusItem#INV_NS_RETURNED"/>
+    <statusIdTo href="StatusItem#INV_NS_ON_HOLD"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Mark Return Defective">
+    <statusId href="StatusItem#INV_NS_RETURNED"/>
+    <statusIdTo href="StatusItem#INV_NS_DEFECTIVE"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="INVENTORY_XFER_STTS" description="Inventory Transfer"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="IXF_REQUESTED" description="Requested" sequenceId="01" statusCode="REQUESTED">
+    <statusTypeId href="StatusType#INVENTORY_XFER_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="IXF_SCHEDULED" description="Scheduled" sequenceId="02" statusCode="SCHEDULED">
+    <statusTypeId href="StatusType#INVENTORY_XFER_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="IXF_EN_ROUTE" description="En-Route" sequenceId="03" statusCode="EN_ROUTE">
+    <statusTypeId href="StatusType#INVENTORY_XFER_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="IXF_COMPLETE" description="Complete" sequenceId="04" statusCode="COMPLETE">
+    <statusTypeId href="StatusType#INVENTORY_XFER_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="IXF_CANCELLED" description="Cancelled" sequenceId="99" statusCode="CANCELLED">
+    <statusTypeId href="StatusType#INVENTORY_XFER_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Inventory Request Scheduled">
+    <statusId href="StatusItem#IXF_REQUESTED"/>
+    <statusIdTo href="StatusItem#IXF_SCHEDULED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Inventory Request In Route">
+    <statusId href="StatusItem#IXF_REQUESTED"/>
+    <statusIdTo href="StatusItem#IXF_EN_ROUTE"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Inventory Request Completed">
+    <statusId href="StatusItem#IXF_REQUESTED"/>
+    <statusIdTo href="StatusItem#IXF_COMPLETE"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Inventory Request Cancelled">
+    <statusId href="StatusItem#IXF_REQUESTED"/>
+    <statusIdTo href="StatusItem#IXF_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Scheduled Inventory In Route">
+    <statusId href="StatusItem#IXF_SCHEDULED"/>
+    <statusIdTo href="StatusItem#IXF_EN_ROUTE"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Scheduled Inventory Completed">
+    <statusId href="StatusItem#IXF_SCHEDULED"/>
+    <statusIdTo href="StatusItem#IXF_COMPLETE"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Scheduled Inventory Cancelled">
+    <statusId href="StatusItem#IXF_SCHEDULED"/>
+    <statusIdTo href="StatusItem#IXF_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="In Route Transfer Completed">
+    <statusId href="StatusItem#IXF_EN_ROUTE"/>
+    <statusIdTo href="StatusItem#IXF_COMPLETE"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="PRODUCT_REVIEW_STTS" description="Product Review"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="PRR_PENDING" description="Pending" sequenceId="01" statusCode="PENDING">
+    <statusTypeId href="StatusType#PRODUCT_REVIEW_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PRR_APPROVED" description="Approved" sequenceId="02" statusCode="APPROVED">
+    <statusTypeId href="StatusType#PRODUCT_REVIEW_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PRR_DELETED" description="Deleted" sequenceId="99" statusCode="DELETED">
+    <statusTypeId href="StatusType#PRODUCT_REVIEW_STTS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Review Approved">
+    <statusId href="StatusItem#PRR_PENDING"/>
+    <statusIdTo href="StatusItem#PRR_APPROVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Review Deleted">
+    <statusId href="StatusItem#PRR_PENDING"/>
+    <statusIdTo href="StatusItem#PRR_DELETED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Review Deleted">
+    <statusId href="StatusItem#PRR_APPROVED"/>
+    <statusIdTo href="StatusItem#PRR_DELETED"/>
+  </contents>
+  <contents xsi:type="biz-inventory:VarianceReason" varianceReasonId="VAR_LOST" description="Lost"/>
+  <contents xsi:type="biz-inventory:VarianceReason" varianceReasonId="VAR_STOLEN" description="Stolen"/>
+  <contents xsi:type="biz-inventory:VarianceReason" varianceReasonId="VAR_FOUND" description="Found"/>
+  <contents xsi:type="biz-inventory:VarianceReason" varianceReasonId="VAR_DAMAGED" description="Damaged"/>
+  <contents xsi:type="biz-inventory:VarianceReason" varianceReasonId="VAR_INTEGR" description="Integration"/>
+  <contents xsi:type="biz-inventory:VarianceReason" varianceReasonId="VAR_SAMPLE" description="Sample (Giveaway)"/>
+  <contents xsi:type="biz-inventory:VarianceReason" varianceReasonId="VAR_MISSHIP_ORDERED" description="Mis-shipped Item Ordered (+)"/>
+  <contents xsi:type="biz-inventory:VarianceReason" varianceReasonId="VAR_MISSHIP_SHIPPED" description="Mis-shipped Item Shipped (-)"/>
+  <contents xsi:type="biz-supplier:SupplierPrefOrder" supplierPrefOrderId="10_MAIN_SUPPL" description="Main Supplier"/>
+  <contents xsi:type="biz-supplier:SupplierPrefOrder" supplierPrefOrderId="90_ALT_SUPPL" description="Alternative Supplier"/>
+  <contents xsi:type="biz-subscription:SubscriptionType" subscriptionTypeId="PRODUCT_SUBSCR" description="Product"/>
+  <contents xsi:type="biz-party:RoleType" roleTypeId="IMAGEAPPROVER" description="Image Approver"/>
+  <contents xsi:type="biz-content:ContentType" contentTypeId="IMAGE_FRAME" description="Frame Image"/>
+  <contents xsi:type="biz-content:ContentAssocType" contentAssocTypeId="IMAGE_THUMBNAIL" description="Image Thumbnail"/>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="IMAGE_MANAGEMENT_ST" description="Image Management"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="IM_PENDING" description="Pending" sequenceId="01" statusCode="PENDING">
+    <statusTypeId href="StatusType#IMAGE_MANAGEMENT_ST"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="IM_APPROVED" description="Approved" sequenceId="02" statusCode="APPROVED">
+    <statusTypeId href="StatusType#IMAGE_MANAGEMENT_ST"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="IM_REJECTED" description="Rejected" sequenceId="03" statusCode="REJECTED">
+    <statusTypeId href="StatusType#IMAGE_MANAGEMENT_ST"/>
+  </contents>
+  <contents xsi:type="biz-feature:ProductFeatureCategory" productFeatureCategoryId="IMAGE" description="Image"/>
+  <contents xsi:type="biz-feature:ProductFeatureCategory" productFeatureCategoryId="TEXT" description="Text"/>
+  <contents xsi:type="biz-feature:ProductFeature" productFeatureId="IMAGE_AVATAR" abbrev="100x75" defaultSequenceNum="1" description="100 X 75 (avatar)">
+    <productFeatureCategoryId href="ProductFeatureCategory#IMAGE"/>
+    <productFeatureTypeId href="ProductFeatureType#SIZE"/>
+  </contents>
+  <contents xsi:type="biz-feature:ProductFeature" productFeatureId="IMAGE_THUMBNAIL" abbrev="150x112" defaultSequenceNum="2" description="150 X 112 (thumbnail)">
+    <productFeatureCategoryId href="ProductFeatureCategory#IMAGE"/>
+    <productFeatureTypeId href="ProductFeatureType#SIZE"/>
+  </contents>
+  <contents xsi:type="biz-feature:ProductFeature" productFeatureId="IMAGE_WEBSITE" abbrev="320x240" defaultSequenceNum="3" description="320 X 240 (for websites and email)">
+    <productFeatureCategoryId href="ProductFeatureCategory#IMAGE"/>
+    <productFeatureTypeId href="ProductFeatureType#SIZE"/>
+  </contents>
+  <contents xsi:type="biz-feature:ProductFeature" productFeatureId="IMAGE_BOARD" abbrev="640x480" defaultSequenceNum="4" description="640 X 480 (for message boards)">
+    <productFeatureCategoryId href="ProductFeatureCategory#IMAGE"/>
+    <productFeatureTypeId href="ProductFeatureType#SIZE"/>
+  </contents>
+  <contents xsi:type="biz-feature:ProductFeature" productFeatureId="IMAGE_MONITOR15" abbrev="800x600" defaultSequenceNum="5" description="800 X 600 (15-inch monitor)">
+    <productFeatureCategoryId href="ProductFeatureCategory#IMAGE"/>
+    <productFeatureTypeId href="ProductFeatureType#SIZE"/>
+  </contents>
+  <contents xsi:type="biz-feature:ProductFeature" productFeatureId="IMAGE_MONITOR17" abbrev="1024x768" defaultSequenceNum="6" description="1024 X 768 (17-inch monitor)">
+    <productFeatureCategoryId href="ProductFeatureCategory#IMAGE"/>
+    <productFeatureTypeId href="ProductFeatureType#SIZE"/>
+  </contents>
+  <contents xsi:type="biz-feature:ProductFeature" productFeatureId="IMAGE_MONITOR19" abbrev="1280x1024" defaultSequenceNum="7" description="1280 X 1024 (19-inch monitor)">
+    <productFeatureCategoryId href="ProductFeatureCategory#IMAGE"/>
+    <productFeatureTypeId href="ProductFeatureType#SIZE"/>
+  </contents>
+  <contents xsi:type="biz-feature:ProductFeature" productFeatureId="IMAGE_MONITOR21" abbrev="1600x1200" defaultSequenceNum="8" description="1600 X 1200 (21-inch monitor)">
+    <productFeatureCategoryId href="ProductFeatureCategory#IMAGE"/>
+    <productFeatureTypeId href="ProductFeatureType#SIZE"/>
+  </contents>
+  <contents xsi:type="biz-feature:ProductFeature" productFeatureId="TEXT_SMALL" defaultSequenceNum="1" description="Small">
+    <productFeatureCategoryId href="ProductFeatureCategory#TEXT"/>
+    <productFeatureTypeId href="ProductFeatureType#SIZE"/>
+  </contents>
+  <contents xsi:type="biz-feature:ProductFeature" productFeatureId="TEXT_MIDDLE" defaultSequenceNum="2" description="Middle">
+    <productFeatureCategoryId href="ProductFeatureCategory#TEXT"/>
+    <productFeatureTypeId href="ProductFeatureType#SIZE"/>
+  </contents>
+  <contents xsi:type="biz-feature:ProductFeature" productFeatureId="TEXT_LARGE" defaultSequenceNum="3" description="Large">
+    <productFeatureCategoryId href="ProductFeatureCategory#TEXT"/>
+    <productFeatureTypeId href="ProductFeatureType#SIZE"/>
+  </contents>
+  <contents xsi:type="biz-feature:ProductFeature" productFeatureId="TEXT_VERYLARGE" defaultSequenceNum="4" description="Very Large">
+    <productFeatureCategoryId href="ProductFeatureCategory#TEXT"/>
+    <productFeatureTypeId href="ProductFeatureType#SIZE"/>
+  </contents>
+  <contents xsi:type="biz-feature:ProductFeature" productFeatureId="TEXT_WHITE" defaultSequenceNum="1" description="White">
+    <productFeatureCategoryId href="ProductFeatureCategory#TEXT"/>
+    <productFeatureTypeId href="ProductFeatureType#COLOR"/>
+  </contents>
+  <contents xsi:type="biz-feature:ProductFeature" productFeatureId="TEXT_GRAY" defaultSequenceNum="2" description="Gray">
+    <productFeatureCategoryId href="ProductFeatureCategory#TEXT"/>
+    <productFeatureTypeId href="ProductFeatureType#COLOR"/>
+  </contents>
+  <contents xsi:type="biz-feature:ProductFeature" productFeatureId="TEXT_BLACK" defaultSequenceNum="3" description="Black">
+    <productFeatureCategoryId href="ProductFeatureCategory#TEXT"/>
+    <productFeatureTypeId href="ProductFeatureType#COLOR"/>
+  </contents>
+  <contents xsi:type="biz-feature:ProductFeature" productFeatureId="TEXT_RED" defaultSequenceNum="4" description="Red">
+    <productFeatureCategoryId href="ProductFeatureCategory#TEXT"/>
+    <productFeatureTypeId href="ProductFeatureType#COLOR"/>
+  </contents>
+  <contents xsi:type="biz-feature:ProductFeature" productFeatureId="TEXT_GREEN" defaultSequenceNum="5" description="Green">
+    <productFeatureCategoryId href="ProductFeatureCategory#TEXT"/>
+    <productFeatureTypeId href="ProductFeatureType#COLOR"/>
+  </contents>
+  <contents xsi:type="biz-feature:ProductFeature" productFeatureId="TEXT_BLUE" defaultSequenceNum="6" description="Blue">
+    <productFeatureCategoryId href="ProductFeatureCategory#TEXT"/>
+    <productFeatureTypeId href="ProductFeatureType#COLOR"/>
+  </contents>
+  <contents xsi:type="biz-feature:ProductFeature" productFeatureId="TEXT_YELLOW" defaultSequenceNum="7" description="Yellow">
+    <productFeatureCategoryId href="ProductFeatureCategory#TEXT"/>
+    <productFeatureTypeId href="ProductFeatureType#COLOR"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="IMAGE_REJECT_REASON" description="Image Reject Reason"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="RETAKE_PHOTO" description="Re-take Photo" enumCode="RETAKE_PHOTO" sequenceId="01">
+    <enumTypeId href="EnumerationType#IMAGE_REJECT_REASON"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="REMOVE_LOGO" description="Remove Logo" enumCode="REMOVE_LOGO" sequenceId="02">
+    <enumTypeId href="EnumerationType#IMAGE_REJECT_REASON"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="OTHER" description="Other" enumCode="OTHER" sequenceId="03">
+    <enumTypeId href="EnumerationType#IMAGE_REJECT_REASON"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="GROUP_ORDER_STATUS" description="Group Order Status"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="GO_CREATED" description="Created" sequenceId="01" statusCode="CREATED">
+    <statusTypeId href="StatusType#GROUP_ORDER_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="GO_SUCCESS" description="Success" sequenceId="02" statusCode="SUCCESS">
+    <statusTypeId href="StatusType#GROUP_ORDER_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="GO_CANCELLED" description="Cancelled" sequenceId="03" statusCode="CANCELLED">
+    <statusTypeId href="StatusType#GROUP_ORDER_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-price:QuantityBreakType" quantityBreakTypeId="SHIP_WEIGHT" description="Shipping Weight Break"/>
+  <contents xsi:type="biz-price:QuantityBreakType" quantityBreakTypeId="SHIP_QUANTITY" description="Shipping Quantity Break"/>
+  <contents xsi:type="biz-price:QuantityBreakType" quantityBreakTypeId="SHIP_PRICE" description="Shipping Price Break"/>
+  <contents xsi:type="biz-price:QuantityBreakType" quantityBreakTypeId="QUANTITY" description="Price Component Quantity Break"/>
+  <contents xsi:type="biz-price:QuantityBreakType" quantityBreakTypeId="ORDER_VALUE" description="Price Component Order Value Break"/>
+  <contents xsi:type="biz-shipment:ShipmentContactMechType" shipmentContactMechTypeId="SHIP_TO_ADDRESS" description="Ship-To Address"/>
+  <contents xsi:type="biz-shipment:ShipmentContactMechType" shipmentContactMechTypeId="SHIP_FROM_ADDRESS" description="Ship-From Address"/>
+  <contents xsi:type="biz-shipment:ShipmentContactMechType" shipmentContactMechTypeId="SHIP_TO_TELECOM" description="Ship-To Telecom Number"/>
+  <contents xsi:type="biz-shipment:ShipmentContactMechType" shipmentContactMechTypeId="SHIP_FROM_TELECOM" description="Ship-From Telecom Number"/>
+  <contents xsi:type="biz-shipment:ShipmentContactMechType" shipmentContactMechTypeId="SHIP_TO_EMAIL" description="Ship-To E-Mail"/>
+  <contents xsi:type="biz-shipment:ShipmentContactMechType" shipmentContactMechTypeId="SHIP_FROM_EMAIL" description="Ship-From E-Mail"/>
+  <contents xsi:type="biz-shipment:ShipmentType" shipmentTypeId="INCOMING_SHIPMENT" description="Incoming"/>
+  <contents xsi:type="biz-shipment:ShipmentType" shipmentTypeId="OUTGOING_SHIPMENT" description="Outgoing"/>
+  <contents xsi:type="biz-shipment:ShipmentType" shipmentTypeId="SALES_RETURN" description="Sales Return">
+    <parentTypeId href="ShipmentType#INCOMING_SHIPMENT"/>
+  </contents>
+  <contents xsi:type="biz-shipment:ShipmentType" shipmentTypeId="SALES_SHIPMENT" description="Sales Shipment">
+    <parentTypeId href="ShipmentType#OUTGOING_SHIPMENT"/>
+  </contents>
+  <contents xsi:type="biz-shipment:ShipmentType" shipmentTypeId="PURCHASE_SHIPMENT" description="Purchase Shipment">
+    <parentTypeId href="ShipmentType#INCOMING_SHIPMENT"/>
+  </contents>
+  <contents xsi:type="biz-shipment:ShipmentType" shipmentTypeId="PURCHASE_RETURN" description="Purchase Return">
+    <parentTypeId href="ShipmentType#OUTGOING_SHIPMENT"/>
+  </contents>
+  <contents xsi:type="biz-shipment:ShipmentType" shipmentTypeId="DROP_SHIPMENT" description="Drop Shipment"/>
+  <contents xsi:type="biz-shipment:ShipmentType" shipmentTypeId="TRANSFER" description="Transfer"/>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="SHIPMENT_STATUS" description="Shipment"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="SHIPMENT_INPUT" description="Input" sequenceId="01" statusCode="INPUT">
+    <statusTypeId href="StatusType#SHIPMENT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="SHIPMENT_SCHEDULED" description="Scheduled" sequenceId="02" statusCode="SCHEDULED">
+    <statusTypeId href="StatusType#SHIPMENT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="SHIPMENT_PICKED" description="Picked" sequenceId="03" statusCode="PICKED">
+    <statusTypeId href="StatusType#SHIPMENT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="SHIPMENT_PACKED" description="Packed" sequenceId="04" statusCode="PACKED">
+    <statusTypeId href="StatusType#SHIPMENT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="SHIPMENT_SHIPPED" description="Shipped" sequenceId="05" statusCode="SHIPPED">
+    <statusTypeId href="StatusType#SHIPMENT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="SHIPMENT_DELIVERED" description="Delivered" sequenceId="06" statusCode="DELIVERED">
+    <statusTypeId href="StatusType#SHIPMENT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="SHIPMENT_CANCELLED" description="Cancelled" sequenceId="99" statusCode="CANCELLED">
+    <statusTypeId href="StatusType#SHIPMENT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Schedule">
+    <statusId href="StatusItem#SHIPMENT_INPUT"/>
+    <statusIdTo href="StatusItem#SHIPMENT_SCHEDULED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Pick">
+    <statusId href="StatusItem#SHIPMENT_INPUT"/>
+    <statusIdTo href="StatusItem#SHIPMENT_PICKED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Pack">
+    <statusId href="StatusItem#SHIPMENT_INPUT"/>
+    <statusIdTo href="StatusItem#SHIPMENT_PACKED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Pick">
+    <statusId href="StatusItem#SHIPMENT_SCHEDULED"/>
+    <statusIdTo href="StatusItem#SHIPMENT_PICKED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Pack">
+    <statusId href="StatusItem#SHIPMENT_SCHEDULED"/>
+    <statusIdTo href="StatusItem#SHIPMENT_PACKED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Pack">
+    <statusId href="StatusItem#SHIPMENT_PICKED"/>
+    <statusIdTo href="StatusItem#SHIPMENT_PACKED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Ship">
+    <statusId href="StatusItem#SHIPMENT_PACKED"/>
+    <statusIdTo href="StatusItem#SHIPMENT_SHIPPED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Deliver">
+    <statusId href="StatusItem#SHIPMENT_SHIPPED"/>
+    <statusIdTo href="StatusItem#SHIPMENT_DELIVERED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
+    <statusId href="StatusItem#SHIPMENT_INPUT"/>
+    <statusIdTo href="StatusItem#SHIPMENT_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
+    <statusId href="StatusItem#SHIPMENT_SCHEDULED"/>
+    <statusIdTo href="StatusItem#SHIPMENT_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
+    <statusId href="StatusItem#SHIPMENT_PICKED"/>
+    <statusIdTo href="StatusItem#SHIPMENT_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="PURCH_SHIP_STATUS" description="Purchase Shipment"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="PURCH_SHIP_CREATED" description="Created" sequenceId="01" statusCode="CREATED">
+    <statusTypeId href="StatusType#PURCH_SHIP_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PURCH_SHIP_SHIPPED" description="Shipped" sequenceId="02" statusCode="SHIPPED">
+    <statusTypeId href="StatusType#PURCH_SHIP_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PURCH_SHIP_RECEIVED" description="Received" sequenceId="03" statusCode="RECEIVED">
+    <statusTypeId href="StatusType#PURCH_SHIP_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Receive">
+    <statusId href="StatusItem#PURCH_SHIP_CREATED"/>
+    <statusIdTo href="StatusItem#PURCH_SHIP_RECEIVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Ship">
+    <statusId href="StatusItem#PURCH_SHIP_CREATED"/>
+    <statusIdTo href="StatusItem#PURCH_SHIP_SHIPPED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Receive">
+    <statusId href="StatusItem#PURCH_SHIP_SHIPPED"/>
+    <statusIdTo href="StatusItem#PURCH_SHIP_RECEIVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Ship">
+    <statusId href="StatusItem#PURCH_SHIP_RECEIVED"/>
+    <statusIdTo href="StatusItem#PURCH_SHIP_SHIPPED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="SHPRTSG_CS_STATUS" description="ShipmentRouteSegment:CarrierService"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="SHRSCS_NOT_STARTED" description="Not Started" sequenceId="01" statusCode="NOT_STARTED">
+    <statusTypeId href="StatusType#SHPRTSG_CS_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="SHRSCS_CONFIRMED" description="Confirmed" sequenceId="02" statusCode="CONFIRMED">
+    <statusTypeId href="StatusType#SHPRTSG_CS_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="SHRSCS_ACCEPTED" description="Accepted" sequenceId="03" statusCode="ACCEPTED">
+    <statusTypeId href="StatusType#SHPRTSG_CS_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="SHRSCS_VOIDED" description="Voided" sequenceId="08" statusCode="VOIDED">
+    <statusTypeId href="StatusType#SHPRTSG_CS_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Confirm">
+    <statusId href="StatusItem#SHRSCS_NOT_STARTED"/>
+    <statusIdTo href="StatusItem#SHRSCS_CONFIRMED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Accept">
+    <statusId href="StatusItem#SHRSCS_CONFIRMED"/>
+    <statusIdTo href="StatusItem#SHRSCS_ACCEPTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Void">
+    <statusId href="StatusItem#SHRSCS_CONFIRMED"/>
+    <statusIdTo href="StatusItem#SHRSCS_VOIDED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Void">
+    <statusId href="StatusItem#SHRSCS_ACCEPTED"/>
+    <statusIdTo href="StatusItem#SHRSCS_VOIDED"/>
+  </contents>
+  <contents xsi:type="biz-receipt:RejectionReason" rejectionId="SRJ_DAMAGED" description="Damaged"/>
+  <contents xsi:type="biz-receipt:RejectionReason" rejectionId="SRJ_NOT_ORDERED" description="Not Ordered"/>
+  <contents xsi:type="biz-receipt:RejectionReason" rejectionId="SRJ_OVER_SHIPPED" description="Over Shipped"/>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="PICKLIST_STATUS" description="Picklist"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="PICKLIST_INPUT" description="Input" sequenceId="01" statusCode="INPUT">
+    <statusTypeId href="StatusType#PICKLIST_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PICKLIST_ASSIGNED" description="Assigned" sequenceId="02" statusCode="ASSIGNED">
+    <statusTypeId href="StatusType#PICKLIST_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PICKLIST_PRINTED" description="Printed" sequenceId="03" statusCode="PRINTED">
+    <statusTypeId href="StatusType#PICKLIST_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PICKLIST_PICKED" description="Picked" sequenceId="10" statusCode="PICKED">
+    <statusTypeId href="StatusType#PICKLIST_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PICKLIST_CANCELLED" description="Cancelled" sequenceId="99" statusCode="CANCELLED">
+    <statusTypeId href="StatusType#PICKLIST_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Assign">
+    <statusId href="StatusItem#PICKLIST_INPUT"/>
+    <statusIdTo href="StatusItem#PICKLIST_ASSIGNED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Print">
+    <statusId href="StatusItem#PICKLIST_INPUT"/>
+    <statusIdTo href="StatusItem#PICKLIST_PRINTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Pick">
+    <statusId href="StatusItem#PICKLIST_INPUT"/>
+    <statusIdTo href="StatusItem#PICKLIST_PICKED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
+    <statusId href="StatusItem#PICKLIST_INPUT"/>
+    <statusIdTo href="StatusItem#PICKLIST_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Pick">
+    <statusId href="StatusItem#PICKLIST_ASSIGNED"/>
+    <statusIdTo href="StatusItem#PICKLIST_PICKED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Print">
+    <statusId href="StatusItem#PICKLIST_ASSIGNED"/>
+    <statusIdTo href="StatusItem#PICKLIST_PRINTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
+    <statusId href="StatusItem#PICKLIST_ASSIGNED"/>
+    <statusIdTo href="StatusItem#PICKLIST_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Pick">
+    <statusId href="StatusItem#PICKLIST_PRINTED"/>
+    <statusIdTo href="StatusItem#PICKLIST_PICKED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
+    <statusId href="StatusItem#PICKLIST_PRINTED"/>
+    <statusIdTo href="StatusItem#PICKLIST_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="PICKITEM_STATUS" description="Picklist Item"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="PICKITEM_PENDING" description="Pending" sequenceId="01" statusCode="PENDING">
+    <statusTypeId href="StatusType#PICKITEM_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PICKITEM_COMPLETED" description="Completed" sequenceId="50" statusCode="COMPLETED">
+    <statusTypeId href="StatusType#PICKITEM_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PICKITEM_CANCELLED" description="Cancelled" sequenceId="99" statusCode="CANCELLED">
+    <statusTypeId href="StatusType#PICKITEM_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Complete">
+    <statusId href="StatusItem#PICKITEM_PENDING"/>
+    <statusIdTo href="StatusItem#PICKITEM_COMPLETED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
+    <statusId href="StatusItem#PICKITEM_PENDING"/>
+    <statusIdTo href="StatusItem#PICKITEM_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-shipment:ShipmentGatewayConfigType" shipmentGatewayConfTypeId="SHIP_GATEWAY_DHL" description="Shipment Gateway DHL" hasTable="true"/>
+  <contents xsi:type="biz-shipment:ShipmentGatewayConfig" shipmentGatewayConfigId="DHL_CONFIG" description="DHL Config">
+    <shipmentGatewayConfTypeId href="ShipmentGatewayConfigType#SHIP_GATEWAY_DHL"/>
+  </contents>
+  <contents xsi:type="biz-shipment:ShipmentGatewayDhl" shipmentGatewayConfigId="DHL_CONFIG" accessAccountNbr="YOUR DHL ShipIT ACCOUNT NUMBER" accessPassword="YOUR DHL ShipIT ACCESS PASSWORD" accessShippingKey="YOUR DHL ShipIT SHIPPING KEY" accessUserId="YOUR DHL ShipIT USER ID" connectTimeout="60" connectUrl="https://eCommerce.airborne.com/ApiLandingTest.asp" headAction="Request" headVersion="1.1" labelImageFormat="PNG" rateEstimateTemplate="api.schema.DHL"/>
+  <contents xsi:type="biz-shipment:ShipmentGatewayConfigType" shipmentGatewayConfTypeId="SHIP_GATEWAY_FEDEX" description="Shipment Gateway Fedex" hasTable="true"/>
+  <contents xsi:type="biz-shipment:ShipmentGatewayConfig" shipmentGatewayConfigId="FEDEX_CONFIG" description="Fedex Config">
+    <shipmentGatewayConfTypeId href="ShipmentGatewayConfigType#SHIP_GATEWAY_FEDEX"/>
+  </contents>
+  <contents xsi:type="biz-shipment:ShipmentGatewayFedex" shipmentGatewayConfigId="FEDEX_CONFIG" connectSoapUrl="https://gatewaybeta.fedex.com:443/web-services" connectTimeout="60" connectUrl="https://gatewaybeta.fedex.com/GatewayDC" defaultDropoffType="REGULARPICKUP" defaultPackagingType="YOURPACKNG" labelImageType="PNG" rateEstimateTemplate="component://product/template/shipment/FedexRateEstimateRequestTemplate.xml.ftl" templateShipment="component://product/template/shipment/FedexShipRequestTemplate.xml.ftl" templateSubscription="component://product/template/shipment/FedexSubscriptionRequestTemplate.xml.ftl"/>
+  <contents xsi:type="biz-shipment:ShipmentGatewayConfigType" shipmentGatewayConfTypeId="SHIP_GATEWAY_UPS" description="Shipment Gateway UPS" hasTable="true"/>
+  <contents xsi:type="biz-shipment:ShipmentGatewayConfig" shipmentGatewayConfigId="UPS_CONFIG" description="UPS Config">
+    <shipmentGatewayConfTypeId href="ShipmentGatewayConfigType#SHIP_GATEWAY_UPS"/>
+  </contents>
+  <contents xsi:type="biz-shipment:ShipmentGatewayUps" shipmentGatewayConfigId="UPS_CONFIG" accessLicenseNumber="TEST262223144CAT" accessPassword="REG111111" accessUserId="REG111111" billShipperAccountNumber="12345E" codAllowCod="true" codFundsCode="0" codSurchargeAmount="9" codSurchargeApplyToPackage="first" codSurchargeCurrencyUomId="USD" connectTimeout="60" connectUrl="https://wwwcie.ups.com/ups.app/xml" customerClassification="03" defaultReturnLabelMemo="UPS Shipment Return Memo" defaultReturnLabelSubject="UPS Shipment Return Label" maxEstimateWeight="90" minEstimateWeight="0.1" saveCertInfo="true" saveCertPath="${sys:getProperty('ofbiz.home')}/runtime/output/upscert" shipperNumber="12345E" shipperPickupType="06"/>
+  <contents xsi:type="biz-shipment:ShipmentGatewayConfigType" shipmentGatewayConfTypeId="SHIP_GATEWAY_USPS" description="Shipment Gateway USPS" hasTable="true"/>
+  <contents xsi:type="biz-shipment:ShipmentGatewayConfig" shipmentGatewayConfigId="USPS_CONFIG" description="USPS Config">
+    <shipmentGatewayConfTypeId href="ShipmentGatewayConfigType#SHIP_GATEWAY_USPS"/>
+  </contents>
+  <contents xsi:type="biz-shipment:ShipmentGatewayUsps" shipmentGatewayConfigId="USPS_CONFIG" accessPassword="999999999999" accessUserId="000000000000" connectTimeout="60" connectUrl="http://production.shippingapis.com/ShippingAPITest.dll" connectUrlLabels="http://production.shippingapis.com/ShippingAPITest.dll" maxEstimateWeight="70" test="N"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="SHIP_EST" description="Shipment Gateway rate estimate methods"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="SHIP_EST_DHL" customMethodName="dhlRateEstimate" description="DHL rate estimate">
+    <customMethodTypeId href="CustomMethodType#SHIP_EST"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="SHIP_EST_FEDEX" customMethodName="fedexRateEstimate" description="FedEx rate estimate">
+    <customMethodTypeId href="CustomMethodType#SHIP_EST"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="SHIP_EST_UPS" customMethodName="upsRateEstimate" description="UPS rate estimate">
+    <customMethodTypeId href="CustomMethodType#SHIP_EST"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="SHIP_EST_USPS" customMethodName="uspsRateInquire" description="USPS rate estimate">
+    <customMethodTypeId href="CustomMethodType#SHIP_EST"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="SHIP_EST_USPS_INT" customMethodName="uspsInternationalRateInquire" description="USPS rate estimate international">
+    <customMethodTypeId href="CustomMethodType#SHIP_EST"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="DIRECT_STORE_DELIVRY" description="Direct Store Delivery" enumCode="DIRECT_STORE_DELIVRY" sequenceId="01"/>
+</mimo-ent:EntityContainer>
