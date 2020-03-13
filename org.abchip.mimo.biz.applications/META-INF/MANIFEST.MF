@@ -6,8 +6,6 @@ Bundle-Version: 0.2.0.qualifier
 Fragment-Host: org.abchip.mimo.biz.asf
 Bundle-Vendor: ABChip
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Require-Bundle: org.abchip.mimo.biz.tomcat,
- org.abchip.mimo.biz.commons
 Export-Package: org.apache.ofbiz.accounting,
  org.apache.ofbiz.accounting.agreement,
  org.apache.ofbiz.accounting.finaccount,

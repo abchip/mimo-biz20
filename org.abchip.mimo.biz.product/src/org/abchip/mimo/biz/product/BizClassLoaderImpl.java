@@ -33,7 +33,7 @@ public class BizClassLoaderImpl extends ClassLoader {
 			return super.loadClass(name);
 		}
 	}
-
+/*
 	@Override
 	public Class<?> findClass(String name) throws ClassNotFoundException {
 
@@ -61,5 +61,5 @@ public class BizClassLoaderImpl extends ClassLoader {
 	@Override
 	protected Enumeration<URL> findResources(String name) throws IOException {
 		return Collections.enumeration(application.getContext().getResources(name));
-	}
+	}*/
 }

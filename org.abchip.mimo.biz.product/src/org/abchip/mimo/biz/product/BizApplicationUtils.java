@@ -48,6 +48,7 @@ public class BizApplicationUtils {
 		Converters.registerConverter(new EntityConverter<>());
 	}
 
+	/*
 	public static void setURLStreamHandlerFactory() {
 		try {
 			Field field = EquinoxFactoryManager.getField(URL.class, URLStreamHandlerFactory.class, false);
@@ -61,7 +62,7 @@ public class BizApplicationUtils {
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
-	}
+	}*/
 
 	public static void setClassLoader(Application application) {
 		BizApplicationLoaderImpl.setApplication(application);

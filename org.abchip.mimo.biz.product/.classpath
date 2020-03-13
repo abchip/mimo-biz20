@@ -6,5 +6,7 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/org.abchip.mimo.biz.plugins"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/org.abchip.mimo.biz.framework"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/org.abchip.mimo.biz.applications"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.abchip.mimo.biz.commons"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.abchip.mimo.biz.tomcat"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

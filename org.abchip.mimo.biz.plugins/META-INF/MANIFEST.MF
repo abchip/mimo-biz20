@@ -21,9 +21,7 @@ Require-Bundle: org.abchip.mimo.core,
  org.abchip.mimo.biz.base,
  org.abchip.mimo.edi,
  org.abchip.mimo.ui,
- org.abchip.mimo.language,
- org.abchip.mimo.biz.commons,
- org.abchip.mimo.biz.tomcat
+ org.abchip.mimo.language
 Import-Package: org.eclipse.osgi.framework.console,
  org.eclipse.osgi.launch,
  org.osgi.framework,

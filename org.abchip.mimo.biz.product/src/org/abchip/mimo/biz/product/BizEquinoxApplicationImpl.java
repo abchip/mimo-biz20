@@ -21,11 +21,11 @@ public class BizEquinoxApplicationImpl extends E4EquinoxApplicationImpl {
 	@Override
 	protected void doStart(Application application) throws IOException {
 		
-		BizApplicationUtils.setClassLoader(application);
+//		BizApplicationUtils.setClassLoader(application);
 		
 		BizApplicationUtils.loadConverters();
 		
-		BizApplicationUtils.setURLStreamHandlerFactory();
+//		BizApplicationUtils.setURLStreamHandlerFactory();
 
 		Path workPath = Paths.get(application.getPaths().getWork(), "ofbiz");
 		BizApplicationUtils.copyToWork(application, workPath);

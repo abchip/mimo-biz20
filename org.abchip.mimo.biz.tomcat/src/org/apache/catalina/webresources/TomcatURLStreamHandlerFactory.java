@@ -16,6 +16,7 @@
  */
 package org.apache.catalina.webresources;
 
+import java.lang.reflect.Field;
 import java.net.URL;
 import java.net.URLStreamHandler;
 import java.net.URLStreamHandlerFactory;
@@ -23,160 +24,163 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 import org.apache.catalina.webresources.war.Handler;
+import org.eclipse.osgi.internal.url.EquinoxFactoryManager;
+import org.eclipse.osgi.internal.url.URLStreamHandlerFactoryImpl;
 
+@SuppressWarnings("restriction")
 public class TomcatURLStreamHandlerFactory implements URLStreamHandlerFactory {
 
-    private static final String WAR_PROTOCOL = "war";
-    private static final String CLASSPATH_PROTOCOL = "classpath";
+	private static final String WAR_PROTOCOL = "war";
+	private static final String CLASSPATH_PROTOCOL = "classpath";
 
-    // Singleton instance
-    private static volatile TomcatURLStreamHandlerFactory instance = null;
+	// Singleton instance
+	private static volatile TomcatURLStreamHandlerFactory instance = null;
 
-    /**
-     * Obtain a reference to the singleton instance. It is recommended that
-     * callers check the value of {@link #isRegistered()} before using the
-     * returned instance.
-     *
-     * @return A reference to the singleton instance
-     */
-    public static TomcatURLStreamHandlerFactory getInstance() {
-        getInstanceInternal(true);
-        return instance;
-    }
+	/**
+	 * Obtain a reference to the singleton instance. It is recommended that callers
+	 * check the value of {@link #isRegistered()} before using the returned
+	 * instance.
+	 *
+	 * @return A reference to the singleton instance
+	 */
+	public static TomcatURLStreamHandlerFactory getInstance() {
+		getInstanceInternal(true);
+		return instance;
+	}
 
-
-    private static TomcatURLStreamHandlerFactory getInstanceInternal(boolean register) {
-        // Double checked locking. OK because instance is volatile.
-        if (instance == null) {
-            synchronized (TomcatURLStreamHandlerFactory.class) {
-                if (instance == null) {
-                    instance = new TomcatURLStreamHandlerFactory(register);
-                }
-            }
-        }
-        return instance;
-    }
-
-
-    private final boolean registered;
-
-    // List of factories for application defined stream handler factories.
-    private final List<URLStreamHandlerFactory> userFactories =
-            new CopyOnWriteArrayList<>();
-
-    /**
-     * Register this factory with the JVM. May be called more than once. The
-     * implementation ensures that registration only occurs once.
-     *
-     * @return <code>true</code> if the factory is already registered with the
-     *         JVM or was successfully registered as a result of this call.
-     *         <code>false</code> if the factory was disabled prior to this
-     *         call.
-     */
-    public static boolean register() {
-        return getInstanceInternal(true).isRegistered();
-    }
-
-
-    /**
-     * Prevent this this factory from registering with the JVM. May be called
-     * more than once.
-     *
-     * @return <code>true</code> if the factory is already disabled or was
-     *         successfully disabled as a result of this call.
-     *         <code>false</code> if the factory was already registered prior
-     *         to this call.
-
-     */
-    public static boolean disable() {
-        return !getInstanceInternal(false).isRegistered();
-    }
-
-
-    /**
-     * Release references to any user provided factories that have been loaded
-     * using the provided class loader. Called during web application stop to
-     * prevent memory leaks.
-     *
-     * @param classLoader The class loader to release
-     */
-    public static void release(ClassLoader classLoader) {
-        if (instance == null) {
-            return;
-        }
-        List<URLStreamHandlerFactory> factories = instance.userFactories;
-        for (URLStreamHandlerFactory factory : factories) {
-            ClassLoader factoryLoader = factory.getClass().getClassLoader();
-            while (factoryLoader != null) {
-                if (classLoader.equals(factoryLoader)) {
-                    // Implementation note: userFactories is a
-                    // CopyOnWriteArrayList, so items are removed with
-                    // List.remove() instead of usual Iterator.remove()
-                    factories.remove(factory);
-                    break;
-                }
-                factoryLoader = factoryLoader.getParent();
-            }
-        }
-    }
-
-
-    private TomcatURLStreamHandlerFactory(boolean register) {
-        // Hide default constructor
-        // Singleton pattern to ensure there is only one instance of this
-        // factory
-        this.registered = register;
-        if (register) {
-        	try {
-        		URL.setURLStreamHandlerFactory(this);
-        	}
-        	catch (Throwable e) {
-				// TODO: handle exception
+	private static TomcatURLStreamHandlerFactory getInstanceInternal(boolean register) {
+		// Double checked locking. OK because instance is volatile.
+		if (instance == null) {
+			synchronized (TomcatURLStreamHandlerFactory.class) {
+				if (instance == null) {
+					instance = new TomcatURLStreamHandlerFactory(register);
+				}
 			}
-        }
-    }
+		}
+		return instance;
+	}
 
+	private final boolean registered;
 
-    public boolean isRegistered() {
-        return registered;
-    }
+	// List of factories for application defined stream handler factories.
+	private final List<URLStreamHandlerFactory> userFactories = new CopyOnWriteArrayList<>();
 
+	/**
+	 * Register this factory with the JVM. May be called more than once. The
+	 * implementation ensures that registration only occurs once.
+	 *
+	 * @return <code>true</code> if the factory is already registered with the JVM
+	 *         or was successfully registered as a result of this call.
+	 *         <code>false</code> if the factory was disabled prior to this call.
+	 */
+	public static boolean register() {
+		return getInstanceInternal(true).isRegistered();
+	}
 
-    /**
-     * Since the JVM only allows a single call to
-     * {@link URL#setURLStreamHandlerFactory(URLStreamHandlerFactory)} and
-     * Tomcat needs to register a handler, provide a mechanism to allow
-     * applications to register their own handlers.
-     *
-     * @param factory The user provided factory to add to the factories Tomcat
-     *                has already registered
-     */
-    public void addUserFactory(URLStreamHandlerFactory factory) {
-        userFactories.add(factory);
-    }
+	/**
+	 * Prevent this this factory from registering with the JVM. May be called more
+	 * than once.
+	 *
+	 * @return <code>true</code> if the factory is already disabled or was
+	 *         successfully disabled as a result of this call. <code>false</code> if
+	 *         the factory was already registered prior to this call.
+	 * 
+	 */
+	public static boolean disable() {
+		return !getInstanceInternal(false).isRegistered();
+	}
 
+	/**
+	 * Release references to any user provided factories that have been loaded using
+	 * the provided class loader. Called during web application stop to prevent
+	 * memory leaks.
+	 *
+	 * @param classLoader
+	 *            The class loader to release
+	 */
+	public static void release(ClassLoader classLoader) {
+		if (instance == null) {
+			return;
+		}
+		List<URLStreamHandlerFactory> factories = instance.userFactories;
+		for (URLStreamHandlerFactory factory : factories) {
+			ClassLoader factoryLoader = factory.getClass().getClassLoader();
+			while (factoryLoader != null) {
+				if (classLoader.equals(factoryLoader)) {
+					// Implementation note: userFactories is a
+					// CopyOnWriteArrayList, so items are removed with
+					// List.remove() instead of usual Iterator.remove()
+					factories.remove(factory);
+					break;
+				}
+				factoryLoader = factoryLoader.getParent();
+			}
+		}
+	}
 
-    @Override
-    public URLStreamHandler createURLStreamHandler(String protocol) {
+	private TomcatURLStreamHandlerFactory(boolean register) {
+		// Hide default constructor
+		// Singleton pattern to ensure there is only one instance of this
+		// factory
+		this.registered = register;
+		if (register) {
+			try {
+				URL.setURLStreamHandlerFactory(this);
+			} catch (Throwable e) {
+				try {
+					Field field = EquinoxFactoryManager.getField(URL.class, URLStreamHandlerFactory.class, false);
+					Object value = field.get(null);
 
-        // Tomcat's handler always takes priority so applications can't override
-        // it.
-        if (WAR_PROTOCOL.equals(protocol)) {
-            return new Handler();
-        } else if (CLASSPATH_PROTOCOL.equals(protocol)) {
-            return new ClasspathURLStreamHandler();
-        }
+					if (!(value instanceof URLStreamHandlerFactoryImpl))
+						return;
 
-        // Application handlers
-        for (URLStreamHandlerFactory factory : userFactories) {
-            URLStreamHandler handler =
-                factory.createURLStreamHandler(protocol);
-            if (handler != null) {
-                return handler;
-            }
-        }
+					URLStreamHandlerFactoryImpl currentFactory = (URLStreamHandlerFactoryImpl) value;
+					currentFactory.setParentFactory(this);
+				} catch (IllegalArgumentException | IllegalAccessException e2) {
+					throw new RuntimeException(e);
+				}
+			}
+		}
+	}
 
-        // Unknown protocol
-        return null;
-    }
+	public boolean isRegistered() {
+		return registered;
+	}
+
+	/**
+	 * Since the JVM only allows a single call to
+	 * {@link URL#setURLStreamHandlerFactory(URLStreamHandlerFactory)} and Tomcat
+	 * needs to register a handler, provide a mechanism to allow applications to
+	 * register their own handlers.
+	 *
+	 * @param factory
+	 *            The user provided factory to add to the factories Tomcat has
+	 *            already registered
+	 */
+	public void addUserFactory(URLStreamHandlerFactory factory) {
+		userFactories.add(factory);
+	}
+
+	@Override
+	public URLStreamHandler createURLStreamHandler(String protocol) {
+
+		// Tomcat's handler always takes priority so applications can't override
+		// it.
+		if (WAR_PROTOCOL.equals(protocol)) {
+			return new Handler();
+		} else if (CLASSPATH_PROTOCOL.equals(protocol)) {
+			return new ClasspathURLStreamHandler();
+		}
+
+		// Application handlers
+		for (URLStreamHandlerFactory factory : userFactories) {
+			URLStreamHandler handler = factory.createURLStreamHandler(protocol);
+			if (handler != null) {
+				return handler;
+			}
+		}
+
+		// Unknown protocol
+		return null;
+	}
 }

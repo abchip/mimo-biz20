@@ -12,8 +12,6 @@ Require-Bundle: org.eclipse.equinox.app,
  org.abchip.mimo.biz.model,
  org.abchip.mimo.biz.base,
  org.abchip.mimo.biz.asf,
- org.abchip.mimo.biz.tomcat,
- org.abchip.mimo.biz.commons,
  org.eclipse.osgi
 Import-Package: org.eclipse.osgi.internal.url,
  org.osgi.framework
