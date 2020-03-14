@@ -3,8 +3,6 @@
 	<classpathentry exported="true" kind="lib" path="lib/poi-4.0.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/poi-ooxml-4.0.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/poi-scratchpad-4.0.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/org.eclipse.osgi_3.13.200.v20181130-2106.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/org.eclipse.osgi.services_3.7.100.v20180827-1536.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/stripe-java-17.0.0.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
@@ -14,6 +12,5 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/org.abchip.mimo.biz.applications"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/org.abchip.mimo.biz.framework"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/org.abchip.mimo.biz.commons"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/org.abchip.mimo.biz.tomcat"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

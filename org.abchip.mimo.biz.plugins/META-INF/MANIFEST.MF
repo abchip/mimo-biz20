@@ -8,24 +8,24 @@ Bundle-Vendor: ABChip
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ClassPath: .,
  lib/stripe-java-17.0.0.jar,
- lib/org.eclipse.osgi_3.13.200.v20181130-2106.jar,
- lib/org.eclipse.osgi.services_3.7.100.v20180827-1536.jar,
  lib/poi-4.0.1.jar,
  lib/poi-ooxml-4.0.1.jar,
  lib/poi-scratchpad-4.0.1.jar
 Require-Bundle: org.abchip.mimo.core,
- org.abchip.mimo.core.base,
  org.abchip.mimo.core.e4,
  org.abchip.mimo.parser.sqlite,
  org.abchip.mimo.biz.model,
  org.abchip.mimo.biz.base,
  org.abchip.mimo.edi,
  org.abchip.mimo.ui,
- org.abchip.mimo.language
-Import-Package: org.eclipse.osgi.framework.console,
- org.eclipse.osgi.launch,
+ org.abchip.mimo.language,
+ org.abchip.mimo.core.base,
+ org.eclipse.osgi
+Import-Package: javax.servlet,
+ javax.servlet.http,
  org.osgi.framework,
- org.osgi.framework.launch
+ org.osgi.framework.launch,
+ org.osgi.service.http
 Export-Package: com.stripe,
  com.stripe.model,
  org.abchip.mimo.biz.plugins,
