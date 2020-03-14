@@ -19,7 +19,6 @@
 
    <windowImages/>
 
-
    <launcher>
       <win useIco="false">
          <bmp/>
@@ -38,6 +37,7 @@
       <feature id="org.abchip.mimo.language.feature" version="0.2.0.qualifier"/>
       <feature id="org.abchip.mimo.edi.feature" version="0.2.0.qualifier"/>
       <feature id="org.abchip.mimo.biz.feature" version="0.2.0.qualifier"/>
+      <feature id="org.abchip.mimo.biz.asf.feature" version="0.2.0.qualifier"/>
       <feature id="org.abchip.mimo.mining.feature" version="0.2.0.qualifier"/>
       <feature id="org.abchip.mimo.jetty.feature" version="0.2.0.qualifier"/>
       <feature id="org.abchip.mimo.ui.feature" version="0.2.0.qualifier"/>

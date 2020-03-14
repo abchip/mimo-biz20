@@ -4,7 +4,6 @@ Bundle-Name: MIMO Biz Commons
 Bundle-SymbolicName: org.abchip.mimo.biz.commons;singleton:=true
 Bundle-Version: 0.2.0.qualifier
 Bundle-Vendor: ABChip
-Fragment-Host: org.abchip.mimo.biz.product
 Automatic-Module-Name: org.abchip.mimo.biz.commons
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ClassPath: .,

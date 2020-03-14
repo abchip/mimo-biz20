@@ -3,7 +3,6 @@ Bundle-ManifestVersion: 2
 Bundle-Name: MIMO Biz Tomcat
 Bundle-SymbolicName: org.abchip.mimo.biz.tomcat;singleton:=true
 Bundle-Version: 0.2.0.qualifier
-Fragment-Host: org.abchip.mimo.biz.product
 Bundle-Vendor: ABChip
 Automatic-Module-Name: org.abchip.mimo.biz.tomcat
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
