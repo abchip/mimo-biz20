@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MIMO Biz E4
+Bundle-SymbolicName: org.abchip.mimo.biz.e4
+Bundle-Version: 0.2.0.qualifier
+Bundle-Vendor: ABChip
+Automatic-Module-Name: org.abchip.mimo.biz.e4
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.abchip.mimo.core,
+ org.abchip.mimo.biz.model,
+ org.abchip.mimo.biz.product,
+ org.abchip.mimo.biz.commons
+Bundle-ClassPath: .
