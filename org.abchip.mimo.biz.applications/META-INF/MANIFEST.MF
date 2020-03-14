@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: MIMO Biz Applications
-Bundle-SymbolicName: org.abchip.mimo.biz.applications
+Bundle-SymbolicName: org.abchip.mimo.biz.applications;singleton:=true
 Bundle-Version: 0.2.0.qualifier
 Fragment-Host: org.abchip.mimo.biz.product
 Bundle-Vendor: ABChip
@@ -81,3 +81,4 @@ Export-Package: org.apache.ofbiz.accounting,
  org.apache.ofbiz.shipment.weightPackage,
  org.apache.ofbiz.workeffort.content,
  org.apache.ofbiz.workeffort.workeffort
+Bundle-ClassPath: .
