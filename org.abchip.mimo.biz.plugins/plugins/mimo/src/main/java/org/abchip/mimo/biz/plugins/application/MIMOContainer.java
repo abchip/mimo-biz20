@@ -13,6 +13,7 @@ import java.util.WeakHashMap;
 
 import org.abchip.mimo.biz.entity.tenant.Tenant;
 import org.abchip.mimo.context.Context;
+import org.abchip.mimo.core.e4.E4Activator;
 import org.abchip.mimo.resource.ResourceManager;
 import org.apache.ofbiz.base.container.Container;
 import org.apache.ofbiz.base.container.ContainerException;
@@ -47,23 +48,23 @@ public class MIMOContainer implements Container {
 	public static Context getOrCreateContext(String tenantId) {
 
 		if (tenantId == null)
-			return MIMOStarter.getInstance().getContext();
+			return E4Activator.getApplication().getContext();
 
 		Context context = contexts.get(tenantId);
 		if (context != null)
 			return context;
 
-		synchronized (MIMOStarter.getInstance()) {
+		synchronized (E4Activator.getApplication()) {
 			context = contexts.get(tenantId);
 			if (context == null) {
 
-				ResourceManager resourceManager = MIMOStarter.getInstance().getContext().get(ResourceManager.class);
+				ResourceManager resourceManager = E4Activator.getApplication().getContext().get(ResourceManager.class);
 
-				Tenant tenant = resourceManager.getResourceReader(MIMOStarter.getInstance().getContext(), Tenant.class).lookup(tenantId);
+				Tenant tenant = resourceManager.getResourceReader(E4Activator.getApplication().getContext(), Tenant.class).lookup(tenantId);
 				if (tenant == null)
 					return null;
 
-				context = MIMOStarter.getInstance().getContext().createChildContext(null);
+				context = E4Activator.getApplication().getContext().createChildContext(null);
 				context.getContextDescription().setTenant(tenantId);
 				context.getContextDescription().setUser(tenantId);
 				contexts.put(tenantId, context);

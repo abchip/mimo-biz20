@@ -9,5 +9,6 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: org.abchip.mimo.core,
  org.abchip.mimo.biz.model,
  org.abchip.mimo.biz.product,
- org.abchip.mimo.biz.commons
+ org.abchip.mimo.biz.commons,
+ org.abchip.mimo.biz.tomcat
 Bundle-ClassPath: .

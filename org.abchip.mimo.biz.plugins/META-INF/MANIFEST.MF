@@ -7,19 +7,14 @@ Fragment-Host: org.abchip.mimo.biz.product
 Bundle-Vendor: ABChip
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ClassPath: .,
- lib/stripe-java-17.0.0.jar,
- lib/poi-4.0.1.jar,
- lib/poi-ooxml-4.0.1.jar,
- lib/poi-scratchpad-4.0.1.jar
+ lib/stripe-java-17.0.0.jar
 Require-Bundle: org.abchip.mimo.core,
  org.abchip.mimo.core.e4,
+ org.abchip.mimo.core.base,
  org.abchip.mimo.parser.sqlite,
  org.abchip.mimo.biz.model,
  org.abchip.mimo.biz.base,
  org.abchip.mimo.edi,
- org.abchip.mimo.ui,
- org.abchip.mimo.language,
- org.abchip.mimo.core.base,
  org.eclipse.osgi
 Import-Package: javax.servlet,
  javax.servlet.http,

@@ -48,7 +48,7 @@
 <!--
 	<servlet>
 		<servlet-name>MIMOStartupServlet</servlet-name>
-		<servlet-class>org.abchip.mimo.biz.plugins.application.MIMOStartupServlet</servlet-class>
+		<servlet-class>org.abchip.mimo.core.http.servlet.FrameworkServlet</servlet-class>
 		<init-param>
 			<param-name>mimo.osgi.data</param-name>
 			<param-value>/mimo/osgi-data</param-value>

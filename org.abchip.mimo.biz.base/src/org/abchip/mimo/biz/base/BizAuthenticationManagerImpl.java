@@ -1,4 +1,4 @@
-package org.abchip.mimo.biz.plugins.application;
+package org.abchip.mimo.biz.base;
 
 import javax.inject.Inject;
 
@@ -13,9 +13,8 @@ import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextRoot;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
-import org.apache.ofbiz.base.start.Start;
 
-public class OFBizAuthenticationManagerImpl implements AuthenticationManager {
+public class BizAuthenticationManagerImpl implements AuthenticationManager {
 
 	@Inject
 	private Application application;
@@ -33,16 +32,10 @@ public class OFBizAuthenticationManagerImpl implements AuthenticationManager {
 		return null;
 	}
 
-	@SuppressWarnings("resource")
 	@Override
 	public Context login(String contextId, AuthenticationUserPassword authentication) {
 
-		ContextRoot contextRoot = MIMOStarter.getInstance().getContext();
-		if (contextRoot == null)
-			return null;
-
-		ResourceReader<UserLogin> userLoginReader = resourceManager.getResourceReader(contextRoot, UserLogin.class,
-				authentication.getTenant());
+		ResourceReader<UserLogin> userLoginReader = resourceManager.getResourceReader(application.getContext(), UserLogin.class, authentication.getTenant());
 		UserLogin userLogin = userLoginReader.lookup(authentication.getUser());
 		if (userLogin == null)
 			return null;
@@ -50,7 +43,7 @@ public class OFBizAuthenticationManagerImpl implements AuthenticationManager {
 		// TODO compare password and SHA
 		// userLogin.getCurrentPassword().equals(SHA)
 
-		Context contextUser = contextRoot.createChildContext(contextId);
+		Context contextUser = application.getContext().createChildContext(contextId);
 		contextUser.getContextDescription().setUser(authentication.getUser());
 		contextUser.getContextDescription().setTenant(authentication.getTenant());
 		contextUser.getContextDescription().setCurrencyUom(userLogin.getLastCurrencyUom());
@@ -71,7 +64,7 @@ public class OFBizAuthenticationManagerImpl implements AuthenticationManager {
 	@Override
 	public Context login(String contextId, AuthenticationAdminKey authentication) {
 
-		if (!authentication.getAdminKey().equals(Start.getInstance().getConfig().adminKey))
+		if (application.getAdminKey() != null && !authentication.getAdminKey().equals(application.getAdminKey()))
 			return null;
 
 		ContextRoot contextRoot = application.getContext();

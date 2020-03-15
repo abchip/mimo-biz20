@@ -21,4 +21,6 @@ Bundle-ClassPath: lib/poi-4.0.1.jar,
  .,
  lib/ez-vcard-0.9.10.jar
 Import-Package: org.apache.commons.io
-Export-Package: org.abchip.mimo.biz.base.service
+Export-Package: org.abchip.mimo.biz.base.service,
+ org.apache.poi.hssf.usermodel,
+ org.apache.poi.poifs.filesystem
