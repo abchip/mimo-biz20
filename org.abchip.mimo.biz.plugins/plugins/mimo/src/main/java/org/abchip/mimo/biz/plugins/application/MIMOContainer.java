@@ -11,7 +11,7 @@ package org.abchip.mimo.biz.plugins.application;
 import java.util.List;
 import java.util.WeakHashMap;
 
-import org.abchip.mimo.biz.entity.tenant.Tenant;
+import org.abchip.mimo.biz.model.entity.tenant.Tenant;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.e4.E4Activator;
 import org.abchip.mimo.resource.ResourceManager;

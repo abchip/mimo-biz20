@@ -1,7 +1,7 @@
 package org.abchip.mimo.biz.base.service;
 
-import org.abchip.mimo.biz.accounting.payment.CreditCard;
-import org.abchip.mimo.biz.accounting.payment.PaymentMethod;
+import org.abchip.mimo.biz.model.accounting.payment.CreditCard;
+import org.abchip.mimo.biz.model.accounting.payment.PaymentMethod;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;

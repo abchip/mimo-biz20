@@ -1,10 +1,10 @@
 package org.abchip.mimo.biz.base.service;
 
-import org.abchip.mimo.biz.party.contact.PostalAddress;
-import org.abchip.mimo.biz.party.contact.TelecomNumber;
-import org.abchip.mimo.biz.party.party.Party;
-import org.abchip.mimo.biz.party.party.PartyGroup;
-import org.abchip.mimo.biz.party.party.Person;
+import org.abchip.mimo.biz.model.party.contact.PostalAddress;
+import org.abchip.mimo.biz.model.party.contact.TelecomNumber;
+import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.biz.model.party.party.PartyGroup;
+import org.abchip.mimo.biz.model.party.party.Person;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;

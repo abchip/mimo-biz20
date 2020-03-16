@@ -3,7 +3,7 @@ package org.abchip.mimo.biz.base;
 import javax.inject.Inject;
 
 import org.abchip.mimo.application.Application;
-import org.abchip.mimo.biz.security.login.UserLogin;
+import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.context.AuthenticationAdminKey;
 import org.abchip.mimo.context.AuthenticationAnonymous;
 import org.abchip.mimo.context.AuthenticationManager;
