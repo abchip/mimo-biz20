@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-content="http://www.abchip.org/mimo/biz/content/content" xmlns:biz-data="http://www.abchip.org/mimo/biz/content/data" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/content/content http://www.abchip.org/mimo/biz#//content http://www.abchip.org/mimo/biz/content/data http://www.abchip.org/mimo/biz#//data http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="082_marketing_seed,seed-initial_MarketingHelpData">
+  <contents xsi:type="biz-data:DataResource" dataResourceId="HELP_MARKETING" dataResourceName="Marketing Overview" isPublic="true" localeString="en" objectInfo="applications/marketing/data/helpdata/HELP_MARKETING.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="HELP_MARKETING" contentName="Marketing">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#HELP_MARKETING"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100">
+    <contentId href="Content#HELP_ROOT"/>
+    <contentIdTo href="Content#HELP_MARKETING"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="MARKETING_main" dataResourceName="Marketing Main Help" isPublic="true" localeString="en" objectInfo="applications/marketing/data/helpdata/HELP_MARKETING_main.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="MARKETING_main" contentName="MARKETING Main Help">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#MARKETING_main"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100" mapKey="MARKETING_main">
+    <contentId href="Content#HELP_MARKETING"/>
+    <contentIdTo href="Content#MARKETING_main"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="MARKETING_ContLsts" dataResourceName="Marketing Contact Lists" isPublic="true" localeString="en" objectInfo="applications/marketing/data/helpdata/HELP_MARKETING_ContactLists.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="MARKETING_ContLsts" contentName="MARKETING Contact lists">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#MARKETING_ContLsts"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100">
+    <contentId href="Content#HELP_MARKETING"/>
+    <contentIdTo href="Content#MARKETING_ContLsts"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="MARKETING_FindContL" dataResourceName="Marketing Main Help" isPublic="true" localeString="en" objectInfo="applications/marketing/data/helpdata/HELP_MARKETING_FindContactLists.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="MARKETING_FindContL" contentName="MARKETING Find contactlist">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#MARKETING_FindContL"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100" mapKey="MARKETING_FindContactLists">
+    <contentId href="Content#MARKETING_ContLsts"/>
+    <contentIdTo href="Content#MARKETING_FindContL"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="MARKETING_EditContL" dataResourceName="Marketing Main Help" isPublic="true" localeString="en" objectInfo="applications/marketing/data/helpdata/HELP_MARKETING_EditContactList.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="MARKETING_EditContL" contentName="MARKETING Edit contactlist">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#MARKETING_EditContL"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100" mapKey="MARKETING_EditContactList">
+    <contentId href="Content#MARKETING_ContLsts"/>
+    <contentIdTo href="Content#MARKETING_EditContL"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="MARKETING_ImpoContLP" dataResourceName="Marketing Main Help" isPublic="true" localeString="en" objectInfo="applications/marketing/data/helpdata/HELP_MARKETING_ImportContactListParties.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="MARKETING_ImpoContLP" contentName="MARKETING Import contactlist Parties">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#MARKETING_ImpoContLP"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100" mapKey="MARKETING_FindImportContactListParties">
+    <contentId href="Content#MARKETING_ContLsts"/>
+    <contentIdTo href="Content#MARKETING_ImpoContLP"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="HELP_SFA" dataResourceName="SFA Overview" isPublic="true" localeString="en" objectInfo="applications/marketing/data/helpdata/HELP_SFA.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="HELP_SFA" contentName="SFA(Sales force Autm.)">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#HELP_SFA"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100">
+    <contentId href="Content#HELP_ROOT"/>
+    <contentIdTo href="Content#HELP_SFA"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="SFA_main" dataResourceName="SFA Main Help" isPublic="true" localeString="en" objectInfo="applications/marketing/data/helpdata/HELP_SFA_main.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="SFA_main" contentName="SFA Main Help">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#SFA_main"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100" mapKey="SFA_main">
+    <contentId href="Content#HELP_SFA"/>
+    <contentIdTo href="Content#SFA_main"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="SFA_FindLeads" dataResourceName="SFA Leads find/list Help" isPublic="true" localeString="en" objectInfo="applications/marketing/data/helpdata/HELP_SFA_FindLeads.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="SFA_FindLeads" contentName="SFA Leads find/list Help">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#SFA_FindLeads"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100" mapKey="SFA_FindLeads">
+    <contentId href="Content#HELP_SFA"/>
+    <contentIdTo href="Content#SFA_FindLeads"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="SFA_FindAccounts" dataResourceName="SFA Accounts find/list Help" isPublic="true" localeString="en" objectInfo="applications/marketing/data/helpdata/HELP_SFA_FindAccounts.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="SFA_FindAccounts" contentName="SFA Accounts find/list Help">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#SFA_FindAccounts"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100" mapKey="SFA_FindAccounts">
+    <contentId href="Content#HELP_SFA"/>
+    <contentIdTo href="Content#SFA_FindAccounts"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="SFA_FindContacts" dataResourceName="SFA Contacts find/list Help" isPublic="true" localeString="en" objectInfo="applications/marketing/data/helpdata/HELP_SFA_FindContacts.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="SFA_FindContacts" contentName="SFA Contacts find/list Help">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#SFA_FindContacts"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100" mapKey="SFA_FindContacts">
+    <contentId href="Content#HELP_SFA"/>
+    <contentIdTo href="Content#SFA_FindContacts"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="SFA_FindSalesOpportu" dataResourceName="SFA SalesOpportunities find/list Help" isPublic="true" localeString="en" objectInfo="applications/marketing/data/helpdata/HELP_SFA_FindSalesOpportu.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="SFA_FindSalesOpportu" contentName="SFA SalesOpportunities find/list Help">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#SFA_FindSalesOpportu"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100" mapKey="SFA_FindSalesOpportunities">
+    <contentId href="Content#HELP_SFA"/>
+    <contentIdTo href="Content#SFA_FindSalesOpportu"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+</mimo-ent:EntityContainer>

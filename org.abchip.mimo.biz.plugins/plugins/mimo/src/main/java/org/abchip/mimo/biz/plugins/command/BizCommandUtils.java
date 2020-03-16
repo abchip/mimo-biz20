@@ -101,6 +101,10 @@ public class BizCommandUtils {
 			for (URL seedUrl : seedUrls) {
 				try (InputStream inputStream = seedUrl.openStream()) {
 
+//					System.err.println("************************");
+//					System.err.println(seedUrl);
+//					System.err.println("************************");
+					
 					XMIResource resource = new XMIResourceImpl();
 					resource.load(inputStream, null);
 					if (!resource.getContents().isEmpty()) {
@@ -109,11 +113,7 @@ public class BizCommandUtils {
 						for (EntityIdentifiable entityIdentifiable : entityContainer.getContents()) {
 							try {
 								ResourceWriter<EntityIdentifiable> entityWriter = resourceManager.getResourceWriter(context, entityIdentifiable.isa(), tenantId);
-
-								if(entityIdentifiable.isa().getName().equals("TechDataCalendarWeek")) {
-									"".toCharArray();
-								}
-								System.out.println(entityIdentifiable.isa().getName());
+//								System.err.println(entityIdentifiable.isa().getName());
 								entityWriter.create(entityIdentifiable, update);
 							} catch (Exception e) {
 								System.err.println(e.getMessage());
@@ -182,7 +182,6 @@ public class BizCommandUtils {
 
 		Iterator<URL> urlListIt = urlList.iterator();
 		URL url = null;
-		String folderNameP= "";
 		while (urlListIt.hasNext()) {
 			url = urlListIt.next();
 
@@ -195,10 +194,7 @@ public class BizCommandUtils {
 				String[] segments = url.getPath().split("/");
 				String containerName = segments[segments.length - 1];
 				String folderName = segments[segments.length - 3];
-				if(!folderName.contentEquals(folderNameP))
-					c1++;
-				folderNameP = folderName;
-				createContainer(context, containerName, folderName, listEntity, filter, c1);
+				createContainer(context, containerName, folderName, listEntity, filter, c1++);
 			} catch (Exception e) {
 				System.err.println("Problem with xml " + url + " " + e.getMessage());
 			}

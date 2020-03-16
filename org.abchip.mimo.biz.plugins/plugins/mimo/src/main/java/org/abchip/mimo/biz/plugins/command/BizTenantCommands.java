@@ -36,12 +36,12 @@ public class BizTenantCommands extends BaseCommandProviderImpl {
 		Context context = this.getContext();
 
 		BizCommandUtils.loadSeeds(context, "seed", null, true);
-		BizCommandUtils.loadSeed(context, "mimo", null, true);
-		BizCommandUtils.loadSeed(context, "party", null, true);
-		BizCommandUtils.loadSeed(context, "abchip-net", null, true);
-		BizCommandUtils.loadSeed(context, "abchip-net-accounting", null, true);
-		BizCommandUtils.loadSeed(context, "passport", null, true);
-		BizCommandUtils.loadSeed(context, "edi", null, true);
+//		BizCommandUtils.loadSeed(context, "mimo", null, true);
+//		BizCommandUtils.loadSeed(context, "party", null, true);
+//		BizCommandUtils.loadSeed(context, "abchip-net", null, true);
+//		BizCommandUtils.loadSeed(context, "abchip-net-accounting", null, true);
+//		BizCommandUtils.loadSeed(context, "passport", null, true);
+//		BizCommandUtils.loadSeed(context, "edi", null, true);
 	}
 
 	@SuppressWarnings("resource")

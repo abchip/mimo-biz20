@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-enum="http://www.abchip.org/mimo/biz/common/enum" xmlns:biz-status="http://www.abchip.org/mimo/biz/common/status" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/enum http://www.abchip.org/mimo/biz#//common/enum http://www.abchip.org/mimo/biz/common/status http://www.abchip.org/mimo/biz#//common/status http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="038_entityext_seed,seed-initial_EntityExtTypeData">
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="ENTSYNC_INC_APPL" description="Entity Sync Include Application Type"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="ESIA_INCLUDE" description="Include" enumCode="INCLUDE" sequenceId="01">
+    <enumTypeId href="EnumerationType#ENTSYNC_INC_APPL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="ESIA_EXCLUDE" description="Exclude" enumCode="EXCLUDE" sequenceId="02">
+    <enumTypeId href="EnumerationType#ENTSYNC_INC_APPL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="ESIA_ALWAYS" description="Always Include" enumCode="ALWAYS" sequenceId="03">
+    <enumTypeId href="EnumerationType#ENTSYNC_INC_APPL"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="ENTSYNC_RUN" description="Entity Sync Run"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="ESR_NOT_STARTED" description="Not Started" sequenceId="01" statusCode="NOT_STARTED">
+    <statusTypeId href="StatusType#ENTSYNC_RUN"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ESR_RUNNING" description="Running" sequenceId="02" statusCode="RUNNING">
+    <statusTypeId href="StatusType#ENTSYNC_RUN"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ESR_PENDING" description="Offline Pending" sequenceId="03" statusCode="PENDING">
+    <statusTypeId href="StatusType#ENTSYNC_RUN"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ESR_COMPLETE" description="Complete" sequenceId="04" statusCode="COMPLETE">
+    <statusTypeId href="StatusType#ENTSYNC_RUN"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ESR_OTHER_ERROR" description="Other Error" sequenceId="97" statusCode="OTHER_ERROR">
+    <statusTypeId href="StatusType#ENTSYNC_RUN"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ESR_SERVICE_ERROR" description="Service Call Error" sequenceId="98" statusCode="SERVICE_ERROR">
+    <statusTypeId href="StatusType#ENTSYNC_RUN"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="ESR_DATA_ERROR" description="Data Error" sequenceId="99" statusCode="DATA_ERROR">
+    <statusTypeId href="StatusType#ENTSYNC_RUN"/>
+  </contents>
+</mimo-ent:EntityContainer>

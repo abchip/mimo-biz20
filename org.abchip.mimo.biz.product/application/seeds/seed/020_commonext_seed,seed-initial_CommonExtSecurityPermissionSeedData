@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/security/securitygroup" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/security/securitygroup http://www.abchip.org/mimo/biz#//securitygroup http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="020_commonext_seed,seed-initial_CommonExtSecurityPermissionSeedData">
-  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="COMMONEXT_PUBLMSG" description="Create public system information messages."/>
-  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
-    <groupId href="SecurityGroup#SUPER"/>
-    <permissionId href="SecurityPermission#COMMONEXT_PUBLMSG"/>
-  </contents>
-</mimo-ent:EntityContainer>
