@@ -6,7 +6,7 @@
     xmlns:biz-property="http://www.abchip.org/mimo/biz/common/property"
     xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/security/securitygroup"
     xmlns:mimo-ent="http://www.abchip.org/mimo/entity"
-    xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/property ../../../org.abchip.mimo.biz.model/model/biz.ecore#//common/property http://www.abchip.org/mimo/biz/security/securitygroup ../../../org.abchip.mimo.biz.model/model/biz.ecore#//security/securitygroup http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
+    xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/property ../../../org.abchip.mimo.biz/model/biz.ecore#//common/property http://www.abchip.org/mimo/biz/security/securitygroup ../../../org.abchip.mimo.biz/model/biz.ecore#//security/securitygroup http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
     name="Mimo">
   <contents
       xsi:type="biz-securitygroup:SecurityPermission"

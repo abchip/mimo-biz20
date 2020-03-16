@@ -15,7 +15,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz"
-            class="org.abchip.mimo.biz.model.BizPackage"
+            class="org.abchip.mimo.biz.BizPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -23,7 +23,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/accounting"
-            class="org.abchip.mimo.biz.model.accounting.AccountingPackage"
+            class="org.abchip.mimo.biz.accounting.AccountingPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -31,7 +31,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/accounting/budget"
-            class="org.abchip.mimo.biz.model.accounting.budget.BudgetPackage"
+            class="org.abchip.mimo.biz.accounting.budget.BudgetPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -39,7 +39,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/accounting/finaccount"
-            class="org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage"
+            class="org.abchip.mimo.biz.accounting.finaccount.FinaccountPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -47,7 +47,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/accounting/fixedasset"
-            class="org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage"
+            class="org.abchip.mimo.biz.accounting.fixedasset.FixedassetPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -55,7 +55,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/accounting/invoice"
-            class="org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage"
+            class="org.abchip.mimo.biz.accounting.invoice.InvoicePackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -63,7 +63,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/accounting/ledger"
-            class="org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage"
+            class="org.abchip.mimo.biz.accounting.ledger.LedgerPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -71,7 +71,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/accounting/payment"
-            class="org.abchip.mimo.biz.model.accounting.payment.PaymentPackage"
+            class="org.abchip.mimo.biz.accounting.payment.PaymentPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -79,7 +79,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/accounting/rate"
-            class="org.abchip.mimo.biz.model.accounting.rate.RatePackage"
+            class="org.abchip.mimo.biz.accounting.rate.RatePackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -87,7 +87,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/accounting/tax"
-            class="org.abchip.mimo.biz.model.accounting.tax.TaxPackage"
+            class="org.abchip.mimo.biz.accounting.tax.TaxPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -95,7 +95,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/catalina/session"
-            class="org.abchip.mimo.biz.model.catalina.session.SessionPackage"
+            class="org.abchip.mimo.biz.catalina.session.SessionPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -103,7 +103,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/common"
-            class="org.abchip.mimo.biz.model.common.CommonPackage"
+            class="org.abchip.mimo.biz.common.CommonPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -111,7 +111,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/common/datasource"
-            class="org.abchip.mimo.biz.model.common.datasource.DatasourcePackage"
+            class="org.abchip.mimo.biz.common.datasource.DatasourcePackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -119,7 +119,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/common/email"
-            class="org.abchip.mimo.biz.model.common.email.EmailPackage"
+            class="org.abchip.mimo.biz.common.email.EmailPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -127,7 +127,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/common/enum"
-            class="org.abchip.mimo.biz.model.common.enum_.EnumPackage"
+            class="org.abchip.mimo.biz.common.enum_.EnumPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -135,7 +135,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/common/geo"
-            class="org.abchip.mimo.biz.model.common.geo.GeoPackage"
+            class="org.abchip.mimo.biz.common.geo.GeoPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -143,7 +143,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/common/keyword"
-            class="org.abchip.mimo.biz.model.common.keyword.KeywordPackage"
+            class="org.abchip.mimo.biz.common.keyword.KeywordPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -151,7 +151,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/common/language"
-            class="org.abchip.mimo.biz.model.common.language.LanguagePackage"
+            class="org.abchip.mimo.biz.common.language.LanguagePackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -159,7 +159,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/common/method"
-            class="org.abchip.mimo.biz.model.common.method.MethodPackage"
+            class="org.abchip.mimo.biz.common.method.MethodPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -167,7 +167,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/common/note"
-            class="org.abchip.mimo.biz.model.common.note.NotePackage"
+            class="org.abchip.mimo.biz.common.note.NotePackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -175,7 +175,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/common/period"
-            class="org.abchip.mimo.biz.model.common.period.PeriodPackage"
+            class="org.abchip.mimo.biz.common.period.PeriodPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -183,7 +183,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/common/portal"
-            class="org.abchip.mimo.biz.model.common.portal.PortalPackage"
+            class="org.abchip.mimo.biz.common.portal.PortalPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -191,7 +191,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/common/property"
-            class="org.abchip.mimo.biz.model.common.property.PropertyPackage"
+            class="org.abchip.mimo.biz.common.property.PropertyPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -199,7 +199,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/common/screen"
-            class="org.abchip.mimo.biz.model.common.screen.ScreenPackage"
+            class="org.abchip.mimo.biz.common.screen.ScreenPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -207,7 +207,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/common/status"
-            class="org.abchip.mimo.biz.model.common.status.StatusPackage"
+            class="org.abchip.mimo.biz.common.status.StatusPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -215,7 +215,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/common/theme"
-            class="org.abchip.mimo.biz.model.common.theme.ThemePackage"
+            class="org.abchip.mimo.biz.common.theme.ThemePackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -223,7 +223,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/common/uom"
-            class="org.abchip.mimo.biz.model.common.uom.UomPackage"
+            class="org.abchip.mimo.biz.common.uom.UomPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -231,7 +231,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/common/user"
-            class="org.abchip.mimo.biz.model.common.user.UserPackage"
+            class="org.abchip.mimo.biz.common.user.UserPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -239,7 +239,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/content/content"
-            class="org.abchip.mimo.biz.model.content.content.ContentPackage"
+            class="org.abchip.mimo.biz.content.content.ContentPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -247,7 +247,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/content/data"
-            class="org.abchip.mimo.biz.model.content.data.DataPackage"
+            class="org.abchip.mimo.biz.content.data.DataPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -255,7 +255,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/content/document"
-            class="org.abchip.mimo.biz.model.content.document.DocumentPackage"
+            class="org.abchip.mimo.biz.content.document.DocumentPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -263,7 +263,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/content/preference"
-            class="org.abchip.mimo.biz.model.content.preference.PreferencePackage"
+            class="org.abchip.mimo.biz.content.preference.PreferencePackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -271,7 +271,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/content/survey"
-            class="org.abchip.mimo.biz.model.content.survey.SurveyPackage"
+            class="org.abchip.mimo.biz.content.survey.SurveyPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -279,7 +279,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/content/website"
-            class="org.abchip.mimo.biz.model.content.website.WebsitePackage"
+            class="org.abchip.mimo.biz.content.website.WebsitePackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -287,7 +287,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/entity"
-            class="org.abchip.mimo.biz.model.entity.EntityPackage"
+            class="org.abchip.mimo.biz.entity.EntityPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -295,7 +295,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/entity/audit"
-            class="org.abchip.mimo.biz.model.entity.audit.AuditPackage"
+            class="org.abchip.mimo.biz.entity.audit.AuditPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -303,7 +303,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/entity/crypto"
-            class="org.abchip.mimo.biz.model.entity.crypto.CryptoPackage"
+            class="org.abchip.mimo.biz.entity.crypto.CryptoPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -311,7 +311,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/entity/group"
-            class="org.abchip.mimo.biz.model.entity.group.GroupPackage"
+            class="org.abchip.mimo.biz.entity.group.GroupPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -319,7 +319,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/entity/sequence"
-            class="org.abchip.mimo.biz.model.entity.sequence.SequencePackage"
+            class="org.abchip.mimo.biz.entity.sequence.SequencePackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -327,7 +327,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/entity/synchronization"
-            class="org.abchip.mimo.biz.model.entity.synchronization.SynchronizationPackage"
+            class="org.abchip.mimo.biz.entity.synchronization.SynchronizationPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -335,7 +335,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/entity/tenant"
-            class="org.abchip.mimo.biz.model.entity.tenant.TenantPackage"
+            class="org.abchip.mimo.biz.entity.tenant.TenantPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -343,7 +343,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/entity/test"
-            class="org.abchip.mimo.biz.model.entity.test.TestPackage"
+            class="org.abchip.mimo.biz.entity.test.TestPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -351,7 +351,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/humanres/ability"
-            class="org.abchip.mimo.biz.model.humanres.ability.AbilityPackage"
+            class="org.abchip.mimo.biz.humanres.ability.AbilityPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -359,7 +359,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/humanres/employment"
-            class="org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage"
+            class="org.abchip.mimo.biz.humanres.employment.EmploymentPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -367,7 +367,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/humanres/position"
-            class="org.abchip.mimo.biz.model.humanres.position.PositionPackage"
+            class="org.abchip.mimo.biz.humanres.position.PositionPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -375,7 +375,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/humanres/recruitment"
-            class="org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage"
+            class="org.abchip.mimo.biz.humanres.recruitment.RecruitmentPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -383,7 +383,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/humanres/trainings"
-            class="org.abchip.mimo.biz.model.humanres.trainings.TrainingsPackage"
+            class="org.abchip.mimo.biz.humanres.trainings.TrainingsPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -391,7 +391,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/order/order"
-            class="org.abchip.mimo.biz.model.order.order.OrderPackage"
+            class="org.abchip.mimo.biz.order.order.OrderPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -399,7 +399,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/order/quote"
-            class="org.abchip.mimo.biz.model.order.quote.QuotePackage"
+            class="org.abchip.mimo.biz.order.quote.QuotePackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -407,7 +407,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/order/request"
-            class="org.abchip.mimo.biz.model.order.request.RequestPackage"
+            class="org.abchip.mimo.biz.order.request.RequestPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -415,7 +415,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/order/requirement"
-            class="org.abchip.mimo.biz.model.order.requirement.RequirementPackage"
+            class="org.abchip.mimo.biz.order.requirement.RequirementPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -423,7 +423,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/order/reservations"
-            class="org.abchip.mimo.biz.model.order.reservations.ReservationsPackage"
+            class="org.abchip.mimo.biz.order.reservations.ReservationsPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -431,7 +431,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/order/return"
-            class="org.abchip.mimo.biz.model.order.return_.ReturnPackage"
+            class="org.abchip.mimo.biz.order.return_.ReturnPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -439,7 +439,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/order/shoppingcart"
-            class="org.abchip.mimo.biz.model.order.shoppingcart.ShoppingcartPackage"
+            class="org.abchip.mimo.biz.order.shoppingcart.ShoppingcartPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -447,7 +447,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/order/shoppinglist"
-            class="org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage"
+            class="org.abchip.mimo.biz.order.shoppinglist.ShoppinglistPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -455,7 +455,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/party"
-            class="org.abchip.mimo.biz.model.party.PartyPackage"
+            class="org.abchip.mimo.biz.party.PartyPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -463,7 +463,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/marketing/campaign"
-            class="org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage"
+            class="org.abchip.mimo.biz.marketing.campaign.CampaignPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -471,7 +471,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/marketing/contact"
-            class="org.abchip.mimo.biz.model.marketing.contact.ContactPackage"
+            class="org.abchip.mimo.biz.marketing.contact.ContactPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -479,7 +479,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/marketing/opportunity"
-            class="org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage"
+            class="org.abchip.mimo.biz.marketing.opportunity.OpportunityPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -487,7 +487,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/marketing/segment"
-            class="org.abchip.mimo.biz.model.marketing.segment.SegmentPackage"
+            class="org.abchip.mimo.biz.marketing.segment.SegmentPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -495,7 +495,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/marketing/tracking"
-            class="org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage"
+            class="org.abchip.mimo.biz.marketing.tracking.TrackingPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -503,7 +503,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/manufacturing/bom"
-            class="org.abchip.mimo.biz.model.manufacturing.bom.BomPackage"
+            class="org.abchip.mimo.biz.manufacturing.bom.BomPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -511,7 +511,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/manufacturing/mrp"
-            class="org.abchip.mimo.biz.model.manufacturing.mrp.MrpPackage"
+            class="org.abchip.mimo.biz.manufacturing.mrp.MrpPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -519,7 +519,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/manufacturing/techdata"
-            class="org.abchip.mimo.biz.model.manufacturing.techdata.TechdataPackage"
+            class="org.abchip.mimo.biz.manufacturing.techdata.TechdataPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -527,7 +527,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/party/agreement"
-            class="org.abchip.mimo.biz.model.party.agreement.AgreementPackage"
+            class="org.abchip.mimo.biz.party.agreement.AgreementPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -535,7 +535,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/party/communication"
-            class="org.abchip.mimo.biz.model.party.communication.CommunicationPackage"
+            class="org.abchip.mimo.biz.party.communication.CommunicationPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -543,7 +543,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/party/contact"
-            class="org.abchip.mimo.biz.model.party.contact.ContactPackage"
+            class="org.abchip.mimo.biz.party.contact.ContactPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -551,7 +551,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/party/need"
-            class="org.abchip.mimo.biz.model.party.need.NeedPackage"
+            class="org.abchip.mimo.biz.party.need.NeedPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -559,7 +559,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/party/party"
-            class="org.abchip.mimo.biz.model.party.party.PartyPackage"
+            class="org.abchip.mimo.biz.party.party.PartyPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -567,7 +567,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/passport"
-            class="org.abchip.mimo.biz.model.passport.PassportPackage"
+            class="org.abchip.mimo.biz.passport.PassportPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -575,7 +575,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/product/catalog"
-            class="org.abchip.mimo.biz.model.product.catalog.CatalogPackage"
+            class="org.abchip.mimo.biz.product.catalog.CatalogPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -583,7 +583,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/product/category"
-            class="org.abchip.mimo.biz.model.product.category.CategoryPackage"
+            class="org.abchip.mimo.biz.product.category.CategoryPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -591,7 +591,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/product/config"
-            class="org.abchip.mimo.biz.model.product.config.ConfigPackage"
+            class="org.abchip.mimo.biz.product.config.ConfigPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -599,7 +599,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/product/cost"
-            class="org.abchip.mimo.biz.model.product.cost.CostPackage"
+            class="org.abchip.mimo.biz.product.cost.CostPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -607,7 +607,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/product/facility"
-            class="org.abchip.mimo.biz.model.product.facility.FacilityPackage"
+            class="org.abchip.mimo.biz.product.facility.FacilityPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -615,7 +615,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/product/feature"
-            class="org.abchip.mimo.biz.model.product.feature.FeaturePackage"
+            class="org.abchip.mimo.biz.product.feature.FeaturePackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -623,7 +623,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/product/inventory"
-            class="org.abchip.mimo.biz.model.product.inventory.InventoryPackage"
+            class="org.abchip.mimo.biz.product.inventory.InventoryPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -631,7 +631,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/product/price"
-            class="org.abchip.mimo.biz.model.product.price.PricePackage"
+            class="org.abchip.mimo.biz.product.price.PricePackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -639,7 +639,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/product/product"
-            class="org.abchip.mimo.biz.model.product.product.ProductPackage"
+            class="org.abchip.mimo.biz.product.product.ProductPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -647,7 +647,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/product/promo"
-            class="org.abchip.mimo.biz.model.product.promo.PromoPackage"
+            class="org.abchip.mimo.biz.product.promo.PromoPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -655,7 +655,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/product/store"
-            class="org.abchip.mimo.biz.model.product.store.StorePackage"
+            class="org.abchip.mimo.biz.product.store.StorePackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -663,7 +663,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/product/subscription"
-            class="org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage"
+            class="org.abchip.mimo.biz.product.subscription.SubscriptionPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -671,7 +671,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/product/supplier"
-            class="org.abchip.mimo.biz.model.product.supplier.SupplierPackage"
+            class="org.abchip.mimo.biz.product.supplier.SupplierPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -679,7 +679,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/security/cert"
-            class="org.abchip.mimo.biz.model.security.cert.CertPackage"
+            class="org.abchip.mimo.biz.security.cert.CertPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -687,7 +687,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/security/login"
-            class="org.abchip.mimo.biz.model.security.login.LoginPackage"
+            class="org.abchip.mimo.biz.security.login.LoginPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -695,7 +695,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/security/securitygroup"
-            class="org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage"
+            class="org.abchip.mimo.biz.security.securitygroup.SecuritygroupPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -703,7 +703,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/service/schedule"
-            class="org.abchip.mimo.biz.model.service.schedule.SchedulePackage"
+            class="org.abchip.mimo.biz.service.schedule.SchedulePackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -711,7 +711,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/service/semaphore"
-            class="org.abchip.mimo.biz.model.service.semaphore.SemaphorePackage"
+            class="org.abchip.mimo.biz.service.semaphore.SemaphorePackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -719,7 +719,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/shipment/issuance"
-            class="org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage"
+            class="org.abchip.mimo.biz.shipment.issuance.IssuancePackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -727,7 +727,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/shipment/picklist"
-            class="org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage"
+            class="org.abchip.mimo.biz.shipment.picklist.PicklistPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -735,7 +735,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/shipment/receipt"
-            class="org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage"
+            class="org.abchip.mimo.biz.shipment.receipt.ReceiptPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -743,7 +743,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/shipment/shipment"
-            class="org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package"
+            class="org.abchip.mimo.biz.shipment.shipment.Shipment_Package"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -751,7 +751,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/webapp/visit"
-            class="org.abchip.mimo.biz.model.webapp.visit.VisitPackage"
+            class="org.abchip.mimo.biz.webapp.visit.VisitPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -759,7 +759,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/webapp/website"
-            class="org.abchip.mimo.biz.model.webapp.website.WebsitePackage"
+            class="org.abchip.mimo.biz.webapp.website.WebsitePackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -767,7 +767,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/workeffort/timesheet"
-            class="org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage"
+            class="org.abchip.mimo.biz.workeffort.timesheet.TimesheetPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 
@@ -775,7 +775,7 @@
       <!-- @generated biz -->
       <package
             uri="http://www.abchip.org/mimo/biz/workeffort/workeffort"
-            class="org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage"
+            class="org.abchip.mimo.biz.workeffort.workeffort.WorkeffortPackage"
             genModel="model/biz.genmodel"/>
    </extension>
 

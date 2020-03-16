@@ -12,7 +12,7 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizPackage;
 import org.abchip.mimo.biz.plugins.entity.EcoreUtils;
 import org.abchip.mimo.edi.entity.EntityPackage;
 import org.abchip.mimo.edi.message.MessagePackage;

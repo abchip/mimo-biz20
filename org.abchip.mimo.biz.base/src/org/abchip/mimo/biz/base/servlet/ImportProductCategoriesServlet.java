@@ -16,9 +16,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
 
-import org.abchip.mimo.biz.model.product.category.CategoryFactory;
-import org.abchip.mimo.biz.model.product.category.ProductCategory;
-import org.abchip.mimo.biz.model.product.category.ProductCategoryType;
+import org.abchip.mimo.biz.product.category.CategoryFactory;
+import org.abchip.mimo.biz.product.category.ProductCategory;
+import org.abchip.mimo.biz.product.category.ProductCategoryType;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.http.servlet.BaseServlet;
 import org.abchip.mimo.entity.EntityIdentifiable;

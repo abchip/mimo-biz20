@@ -10,10 +10,10 @@ package org.abchip.mimo.biz.test.runner;
 
 import javax.inject.Inject;
 
-import org.abchip.mimo.biz.model.party.party.Party;
-import org.abchip.mimo.biz.model.party.party.PartyFactory;
-import org.abchip.mimo.biz.model.party.party.PartyGroup;
-import org.abchip.mimo.biz.model.party.party.Person;
+import org.abchip.mimo.biz.party.party.Party;
+import org.abchip.mimo.biz.party.party.PartyFactory;
+import org.abchip.mimo.biz.party.party.PartyGroup;
+import org.abchip.mimo.biz.party.party.Person;
 import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;

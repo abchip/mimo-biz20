@@ -7,7 +7,7 @@
     xmlns:biz-payment="http://www.abchip.org/mimo/biz/accounting/payment"
     xmlns:biz-period="http://www.abchip.org/mimo/biz/common/period"
     xmlns:mimo-ent="http://www.abchip.org/mimo/entity"
-    xsi:schemaLocation="http://www.abchip.org/mimo/biz/accounting/ledger ../../../org.abchip.mimo.biz.model/model/biz.ecore#//accounting/ledger http://www.abchip.org/mimo/biz/accounting/payment ../../../org.abchip.mimo.biz.model/model/biz.ecore#//accounting/payment http://www.abchip.org/mimo/biz/common/period ../../../org.abchip.mimo.biz.model/model/biz.ecore#//common/period http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
+    xsi:schemaLocation="http://www.abchip.org/mimo/biz/accounting/ledger ../../../org.abchip.mimo.biz/model/biz.ecore#//accounting/ledger http://www.abchip.org/mimo/biz/accounting/payment ../../../org.abchip.mimo.biz/model/biz.ecore#//accounting/payment http://www.abchip.org/mimo/biz/common/period ../../../org.abchip.mimo.biz/model/biz.ecore#//common/period http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
     name="abchip-net">
   <contents
       xsi:type="biz-ledger:PartyAcctgPreference"

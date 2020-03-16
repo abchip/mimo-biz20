@@ -6,7 +6,7 @@
     xmlns:biz-party="http://www.abchip.org/mimo/biz/party/party"
     xmlns:biz-sequence="http://www.abchip.org/mimo/biz/entity/sequence"
     xmlns:mimo-ent="http://www.abchip.org/mimo/entity"
-    xsi:schemaLocation="http://www.abchip.org/mimo/biz/party/party ../../../org.abchip.mimo.biz.model/model/biz.ecore#//party/party http://www.abchip.org/mimo/biz/entity/sequence ../../../org.abchip.mimo.biz.model/model/biz.ecore#//entity/sequence http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
+    xsi:schemaLocation="http://www.abchip.org/mimo/biz/party/party ../../../org.abchip.mimo.biz/model/biz.ecore#//party/party http://www.abchip.org/mimo/biz/entity/sequence ../../../org.abchip.mimo.biz/model/biz.ecore#//entity/sequence http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
     name="Edi">
   <contents
       xsi:type="biz-party:Person"

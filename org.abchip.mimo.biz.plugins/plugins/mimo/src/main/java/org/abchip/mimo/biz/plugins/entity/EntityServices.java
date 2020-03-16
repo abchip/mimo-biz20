@@ -25,7 +25,7 @@ import java.util.Map.Entry;
 import java.util.Queue;
 import java.util.Set;
 
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizPackage;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
 import org.abchip.mimo.util.Strings;
