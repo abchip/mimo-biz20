@@ -6,7 +6,9 @@
     xmlns:biz-enum="http://www.abchip.org/mimo/biz/common/enum"
     xmlns:biz-passport="http://www.abchip.org/mimo/biz/passport"
     xmlns:mimo-ent="http://www.abchip.org/mimo/entity"
-    xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/enum ../../../../../org.abchip.mimo.biz/model/biz.ecore#//common/enum http://www.abchip.org/mimo/biz/passport ../../../../../org.abchip.mimo.biz/model/biz.ecore#//passport http://www.abchip.org/mimo/entity ../../../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
+    xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/enum ../../../org.abchip.mimo.biz.model/model/biz.ecore#//common/enum 
+    					http://www.abchip.org/mimo/biz/passport ../../../org.abchip.mimo.biz.model/model/biz.ecore#//passport 
+    					http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
     name="Passport">
   <contents
       xsi:type="biz-enum:EnumerationType"
