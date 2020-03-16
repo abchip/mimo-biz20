@@ -202,5 +202,5 @@ Export-Package: org.abchip.mimo.biz,
  org.abchip.mimo.biz.workeffort.workeffort.impl
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
- org.abchip.mimo.core
+ org.abchip.mimo.core;visibility:=reexport
 Bundle-ActivationPolicy: lazy

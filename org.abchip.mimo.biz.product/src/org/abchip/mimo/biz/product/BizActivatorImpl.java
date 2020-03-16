@@ -17,6 +17,7 @@ public class BizActivatorImpl implements BundleActivator {
 	public void start(BundleContext context) throws Exception {
 		// TODO Auto-generated method stub
 		
+		context.toString();
 	}
 
 	@Override

@@ -63,16 +63,16 @@ public class BizApplicationHook {
 
 		Debug.logInfo("Starting application: " + APPLICATION.getName(), MODULE);
 
-		ClassLoader parentLoader = Thread.currentThread().getContextClassLoader();
-		ClassLoader bizLoader = new BizClassLoaderImpl(parentLoader);
-		Thread.currentThread().setContextClassLoader(bizLoader);
-
 		Path workPath = Paths.get(APPLICATION.getPaths().getWork(), "ofbiz");
 		try {
 			this.copyToWork(APPLICATION, workPath);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+
+		ClassLoader parentLoader = Thread.currentThread().getContextClassLoader();
+		ClassLoader bizLoader = new BizClassLoaderImpl(parentLoader);
+		Thread.currentThread().setContextClassLoader(bizLoader);
 
 		System.setProperty("ofbiz.home", workPath.toString());
 		System.setProperty("ofbiz.log.dir", APPLICATION.getPaths().getLogs());

@@ -32,7 +32,7 @@ public class BizApplicationComponentHook {
 
 	@Inject
 	private ApplicationComponent component;
-
+	
 	@SuppressWarnings("resource")
 	@ComponentStarting
 	private void starting() {
