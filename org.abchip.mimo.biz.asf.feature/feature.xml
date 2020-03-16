@@ -28,7 +28,7 @@
          version="0.0.0"/>
 
    <plugin
-         id="org.abchip.mimo.biz.product"
+         id="org.abchip.mimo.biz.asf"
          download-size="0"
          install-size="0"
          version="0.0.0"/>
@@ -55,13 +55,6 @@
 
    <plugin
          id="org.abchip.mimo.biz.themes"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         fragment="true"/>
-
-   <plugin
-         id="org.abchip.mimo.biz.e4"
          download-size="0"
          install-size="0"
          version="0.0.0"

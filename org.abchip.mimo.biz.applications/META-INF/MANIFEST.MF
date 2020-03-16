@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: MIMO Biz Applications
 Bundle-SymbolicName: org.abchip.mimo.biz.applications;singleton:=true
 Bundle-Version: 0.2.0.qualifier
-Fragment-Host: org.abchip.mimo.biz.product
+Fragment-Host: org.abchip.mimo.biz.asf
 Bundle-Vendor: ABChip
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: org.apache.ofbiz.accounting,

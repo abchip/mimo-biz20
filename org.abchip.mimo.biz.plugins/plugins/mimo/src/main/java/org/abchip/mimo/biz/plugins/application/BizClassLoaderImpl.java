@@ -6,7 +6,7 @@
  *  http://www.eclipse.org/legal/epl-v10.html
  *
  */
-package org.abchip.mimo.biz.e4;
+package org.abchip.mimo.biz.plugins.application;
 
 import java.net.URL;
 import java.net.URLClassLoader;

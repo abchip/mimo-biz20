@@ -8,7 +8,7 @@
     xmlns:mimo-ctx="http://www.abchip.org/mimo/context"
     xmlns:mimo-resource="http://www.abchip.org/mimo/resource"
     xsi:schemaLocation="http://www.abchip.org/mimo/biz ../../org.abchip.mimo.biz/model/biz.ecore http://www.abchip.org/mimo/application ../../org.abchip.mimo.core/model/mimo.ecore#//application http://www.abchip.org/mimo/context ../../org.abchip.mimo.core/model/mimo.ecore#//context http://www.abchip.org/mimo/resource ../../org.abchip.mimo.core/model/mimo.ecore#//resource"
-    plugin="org.abchip.mimo.biz.product"
+    plugin="org.abchip.mimo.biz.asf"
     name="ofbiz-application"
     text="OFBiz Application">
   <components
@@ -106,7 +106,7 @@
             password="ofbiz"/>
       </entities>
     </config>
-    <hooks className="org.abchip.mimo.biz.e4.BizApplicationComponentHook"/>
+    <hooks className="org.abchip.mimo.biz.plugins.application.BizApplicationComponentHook"/>
     <modules
         name="Commands">
       <services
@@ -175,7 +175,7 @@
       name="Applications"
       plugin="org.abchip.mimo.biz.applications"
       modulesDir="applications">
-    <hooks className="org.abchip.mimo.biz.e4.BizApplicationComponentHook"/>
+    <hooks className="org.abchip.mimo.biz.plugins.application.BizApplicationComponentHook"/>
     <modules
         name="Commands">
       <services
@@ -215,7 +215,7 @@
       name="Themes"
       plugin="org.abchip.mimo.biz.themes"
       modulesDir="themes">
-    <hooks className="org.abchip.mimo.biz.e4.BizApplicationComponentHook"/>
+    <hooks className="org.abchip.mimo.biz.plugins.application.BizApplicationComponentHook"/>
     <bizModules
         name="bluelight"/>
     <bizModules
@@ -283,7 +283,7 @@
   <contextDescription
       id="abchip-biz"
       user="mimo"/>
-  <hooks className="org.abchip.mimo.biz.e4.BizApplicationHook"/>
+  <hooks className="org.abchip.mimo.biz.plugins.application.BizApplicationHook"/>
   <paths data="/mimo/abchip-biz/data"
       logs="/mimo/abchip-biz/logs"
       work="/mimo/abchip-biz"/>
