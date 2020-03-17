@@ -6,7 +6,7 @@
  *  http://www.eclipse.org/legal/epl-v10.html
  *
  */
-package org.abchip.mimo.biz.plugins;
+package org.abchip.mimo.biz.plugins.servlet;
 
 import java.io.IOException;
 import java.util.Map;

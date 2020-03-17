@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry exported="true" kind="lib" path="lib/tomcat-annotations-api-9.0.31.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/tomcat-servlet-api-9.0.31.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/tomcat-api-9.0.31.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/tomcat-annotations-api-9.0.31.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/tomcat-catalina-9.0.31-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/tomcat-catalina-9.0.31.jar" sourcepath="lib/tomcat-catalina-9.0.31-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/tomcat-catalina-ha-9.0.31.jar"/>
@@ -13,7 +14,6 @@
 	<classpathentry exported="true" kind="lib" path="lib/tomcat-jni-9.0.31.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/tomcat-jsp-api-9.0.31.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/tomcat-juli-9.0.31.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/tomcat-servlet-api-9.0.31.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/tomcat-tribes-9.0.31.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/tomcat-util-9.0.31.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/tomcat-util-scan-9.0.31.jar"/>

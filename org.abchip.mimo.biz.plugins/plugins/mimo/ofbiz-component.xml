@@ -48,11 +48,11 @@
 
 	<!-- web applications; will be mounted when using the embedded container -->
 	<webapp name="mimo" title="Mimo" server="default-server"
-		location="webapp/mimo" base-permission="OFBTOOLS,MIMO" mount-point="/" />
+		location="webapp/mimo" base-permission="OFBTOOLS,MIMO" mount-point="/mimo" />
 
 <!--
 	<container name="mimo-container" loaders="main"
-		class="org.abchip.mimo.biz.plugins.application.MIMOContainer">
+		class="org.abchip.mimo.biz.plugins.application.BizContainerImpl">
 		<property name="mimo.osgi.data" value="/mimo/osgi-data" />
 		<property name="mimo.application.config"
 			value="plugins/mimo/abchip-biz.xmi" />

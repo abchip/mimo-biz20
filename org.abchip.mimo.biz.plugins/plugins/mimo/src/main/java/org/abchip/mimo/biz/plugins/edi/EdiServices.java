@@ -12,7 +12,7 @@ package org.abchip.mimo.biz.plugins.edi;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.abchip.mimo.biz.plugins.application.MIMOContainer;
+import org.abchip.mimo.biz.plugins.application.BizContainerImpl;
 import org.abchip.mimo.biz.plugins.entity.EntityUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.edi.EdiManager;
@@ -48,7 +48,7 @@ public class EdiServices {
 	public static Map<String, Object> startEdiEngine(DispatchContext ctx, Map<String, Object> params) {
 
 		Delegator delegator = ctx.getDelegator();
-		Context context = MIMOContainer.getOrCreateContext(delegator.getDelegatorTenantId());
+		Context context = BizContainerImpl.getOrCreateContext(delegator.getDelegatorTenantId());
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		ModelReader modelReader = delegator.getModelReader();
@@ -134,7 +134,7 @@ public class EdiServices {
 		ModelReader modelReader = delegator.getModelReader();
 		String resource = delegator.getDelegatorTenantId();
 
-		Context context = MIMOContainer.getOrCreateContext(delegator.getDelegatorTenantId());
+		Context context = BizContainerImpl.getOrCreateContext(delegator.getDelegatorTenantId());
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		EdiFrameSetup ediFrameSetup = EntityUtils.toEntity(resourceManager.getFrame(context, EdiFrameSetup.class), entityInstance);
@@ -160,7 +160,7 @@ public class EdiServices {
 		}
 
 		Delegator delegator = ctx.getDelegator();
-		Context context = MIMOContainer.getOrCreateContext(delegator.getDelegatorTenantId());
+		Context context = BizContainerImpl.getOrCreateContext(delegator.getDelegatorTenantId());
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		MessageType<?> messageType = EntityUtils.toEntity(resourceManager.getFrame(context, MessageType.class), entityInstance);
@@ -189,7 +189,7 @@ public class EdiServices {
 			return ServiceUtil.returnError("Entity instance is null");
 
 		Delegator delegator = ctx.getDelegator();
-		Context context = MIMOContainer.getOrCreateContext(delegator.getDelegatorTenantId());
+		Context context = BizContainerImpl.getOrCreateContext(delegator.getDelegatorTenantId());
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		@SuppressWarnings("unchecked")

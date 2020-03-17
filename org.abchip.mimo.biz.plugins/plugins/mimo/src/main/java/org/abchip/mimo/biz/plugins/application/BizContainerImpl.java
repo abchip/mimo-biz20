@@ -19,7 +19,7 @@ import org.apache.ofbiz.base.container.Container;
 import org.apache.ofbiz.base.container.ContainerException;
 import org.apache.ofbiz.base.start.StartupCommand;
 
-public class MIMOContainer implements Container {
+public class BizContainerImpl implements Container {
 
 	private String name;
 

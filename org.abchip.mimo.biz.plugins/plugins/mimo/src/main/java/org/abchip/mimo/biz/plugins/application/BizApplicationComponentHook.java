@@ -107,5 +107,7 @@ public class BizApplicationComponentHook {
 	private void started() {
 		if (!(component instanceof BizComponent))
 			return;
+		
+		
 	}
 }

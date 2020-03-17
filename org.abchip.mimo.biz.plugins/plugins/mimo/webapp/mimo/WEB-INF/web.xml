@@ -10,7 +10,10 @@
 	OF ANY KIND, either express or implied. See the License for the specific 
 	language governing permissions and limitations under the License. -->
 
-<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+<web-app version="4.0"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
 	<display-name>Apache OFBiz - Mimo Component</display-name>
 	<description>Mimo Component of the Apache OFBiz Project</description>
 
@@ -45,52 +48,25 @@
 		<param-value>false</param-value>
 	</context-param>
 
-<!--
 	<servlet>
-		<servlet-name>MIMOStartupServlet</servlet-name>
-		<servlet-class>org.abchip.mimo.core.http.servlet.FrameworkServlet</servlet-class>
-		<init-param>
-			<param-name>mimo.osgi.data</param-name>
-			<param-value>/mimo/osgi-data</param-value>
-		</init-param>
-		<init-param>
-			<param-name>mimo.application.config</param-name>
-			<param-value>plugins/mimo/abchip-biz.xmi</param-value>
-		</init-param>
-		<init-param>
-			<param-name>mimo.application.name</param-name>
-			<param-value>OFBiz</param-value>
-		</init-param>
-		<init-param>
-			<param-name>mimo.application.port</param-name>
-			<param-value>0</param-value>
-		</init-param>	
+		<servlet-name>HttpServiceServlet</servlet-name>
+		<servlet-class>org.abchip.mimo.core.http.servlet.HttpServiceServlet</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
--->
 
-	<servlet>
-		<servlet-name>EntityCheckLoginServlet</servlet-name>
-		<servlet-class>org.abchip.mimo.biz.plugins.context.CheckLoginServlet
-		</servlet-class>
-	</servlet>
-
-	<servlet>
-		<servlet-name>EntityExternalCredentialServlet</servlet-name>
-		<servlet-class>org.abchip.mimo.biz.plugins.ExternalCredentialServlet
-		</servlet-class>
-	</servlet>
-
-	<!-- Mapping -->
-
-	<servlet-mapping>
-		<servlet-name>EntityCheckLoginServlet</servlet-name>
-		<url-pattern>/biz/service/entityCheckLogin</url-pattern>
-	</servlet-mapping>
-
-	<servlet-mapping>
-		<servlet-name>EntityExternalCredentialServlet</servlet-name>
-		<url-pattern>/biz/service/entityExternalCredential</url-pattern>
-	</servlet-mapping>
-
+	<!-- <servlet> <servlet-name>MIMOStartupServlet</servlet-name> <servlet-class>org.abchip.mimo.core.http.servlet.FrameworkServlet</servlet-class> 
+		<init-param> <param-name>mimo.osgi.data</param-name> <param-value>/mimo/osgi-data</param-value> 
+		</init-param> <init-param> <param-name>mimo.application.config</param-name> 
+		<param-value>plugins/mimo/abchip-biz.xmi</param-value> </init-param> <init-param> 
+		<param-name>mimo.application.name</param-name> <param-value>OFBiz</param-value> 
+		</init-param> <init-param> <param-name>mimo.application.port</param-name> 
+		<param-value>0</param-value> </init-param> <load-on-startup>1</load-on-startup> 
+		</servlet> <servlet> <servlet-name>EntityCheckLoginServlet</servlet-name> 
+		<servlet-class>org.abchip.mimo.biz.plugins.servlet.CheckLoginServlet </servlet-class> 
+		</servlet> <servlet> <servlet-name>EntityExternalCredentialServlet</servlet-name> 
+		<servlet-class>org.abchip.mimo.biz.plugins.servlet.ExternalCredentialServlet </servlet-class> 
+		</servlet> <servlet-mapping> <servlet-name>EntityCheckLoginServlet</servlet-name> 
+		<url-pattern>/biz/service/entityCheckLogin</url-pattern> </servlet-mapping> 
+		<servlet-mapping> <servlet-name>EntityExternalCredentialServlet</servlet-name> 
+		<url-pattern>/biz/service/entityExternalCredential</url-pattern> </servlet-mapping> -->
 </web-app>

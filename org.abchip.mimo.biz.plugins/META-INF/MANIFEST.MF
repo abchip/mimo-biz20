@@ -16,20 +16,18 @@ Require-Bundle: org.abchip.mimo.core,
  org.abchip.mimo.biz.base,
  org.abchip.mimo.edi,
  org.eclipse.osgi
-Import-Package: javax.servlet,
- javax.servlet.http,
- org.osgi.framework,
- org.osgi.framework.launch,
- org.osgi.service.http
+Import-Package: org.osgi.framework,
+ org.osgi.framework.launch
 Export-Package: com.stripe,
  com.stripe.model,
  org.abchip.mimo.biz.plugins,
  org.abchip.mimo.biz.plugins.application,
  org.abchip.mimo.biz.plugins.command,
- org.abchip.mimo.biz.plugins.context,
  org.abchip.mimo.biz.plugins.driver,
  org.abchip.mimo.biz.plugins.edi,
  org.abchip.mimo.biz.plugins.entity,
  org.abchip.mimo.biz.plugins.party,
  org.abchip.mimo.biz.plugins.paymentGateway,
- org.abchip.mimo.biz.plugins.product
+ org.abchip.mimo.biz.plugins.product,
+ org.abchip.mimo.biz.plugins.servlet,
+ org.abchip.mimo.biz.plugins.userLogin

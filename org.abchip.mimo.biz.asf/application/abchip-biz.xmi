@@ -7,7 +7,7 @@
     xmlns:mimo-app="http://www.abchip.org/mimo/application"
     xmlns:mimo-ctx="http://www.abchip.org/mimo/context"
     xmlns:mimo-resource="http://www.abchip.org/mimo/resource"
-    xsi:schemaLocation="http://www.abchip.org/mimo/biz ../../org.abchip.mimo.biz/model/biz.ecore http://www.abchip.org/mimo/application ../../org.abchip.mimo.core/model/mimo.ecore#//application http://www.abchip.org/mimo/context ../../org.abchip.mimo.core/model/mimo.ecore#//context http://www.abchip.org/mimo/resource ../../org.abchip.mimo.core/model/mimo.ecore#//resource"
+    xsi:schemaLocation="http://www.abchip.org/mimo/biz ../../org.abchip.mimo.biz.model/model/biz.ecore http://www.abchip.org/mimo/application ../../org.abchip.mimo.core/model/mimo.ecore#//application http://www.abchip.org/mimo/context ../../org.abchip.mimo.core/model/mimo.ecore#//context http://www.abchip.org/mimo/resource ../../org.abchip.mimo.core/model/mimo.ecore#//resource"
     plugin="org.abchip.mimo.biz.asf"
     name="ofbiz-application"
     text="OFBiz Application">
@@ -212,6 +212,17 @@
   </components>
   <components
       xsi:type="biz:BizComponent"
+      name="Plugins"
+      plugin="org.abchip.mimo.biz.plugins"
+      modulesDir="plugins">
+    <hooks className="org.abchip.mimo.biz.plugins.application.BizApplicationComponentHook"/>
+    <bizModules
+        name="mimo"/>
+    <bizModules
+        name="passport"/>
+  </components>
+  <components
+      xsi:type="biz:BizComponent"
       name="Themes"
       plugin="org.abchip.mimo.biz.themes"
       modulesDir="themes">
@@ -228,8 +239,7 @@
         name="tomahawk"/>
   </components>
   <components
-      name="Connectors"
-      status="STP">
+      name="Connectors">
     <modules
         name="Session">
       <services
@@ -244,6 +254,14 @@
           xsi:type="mimo-app:ServiceServlet"
           className="org.abchip.mimo.core.http.servlet.session.StatusServlet"
           alias="/biz/service/status"/>
+      <services
+          xsi:type="mimo-app:ServiceServlet"
+          className="org.abchip.mimo.biz.plugins.servlet.CheckLoginServlet"
+          alias="/biz/service/entityCheckLogin"/>
+      <services
+          xsi:type="mimo-app:ServiceServlet"
+          className="org.abchip.mimo.biz.plugins.servlet.ExternalCredentialServlet"
+          alias="/biz/service/entityExternalCredential"/>
     </modules>
     <modules
         name="Rest">

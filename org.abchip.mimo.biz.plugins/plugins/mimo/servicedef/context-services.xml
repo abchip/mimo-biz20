@@ -25,7 +25,7 @@ under the License.
     <version>1.0</version>
 
 	<service name="checkLoginGitHubUser" engine="java"
-		location="org.abchip.mimo.biz.plugins.context.UserLoginServices" invoke="checkLoginGitHubUser">
+		location="org.abchip.mimo.biz.plugins.userLogin.UserLoginServices" invoke="checkLoginGitHubUser">
 		<description>Check GitHub login</description>
         <attribute name="accessToken" type="String" mode="IN" optional="false"/>
         <attribute name="userId" type="String" mode="IN" optional="false"/>
@@ -35,7 +35,7 @@ under the License.
 	</service>
 
 	<service name="checkLoginGoogleUser" engine="java"
-		location="org.abchip.mimo.biz.plugins.context.UserLoginServices" invoke="checkLoginGoogleUser">
+		location="org.abchip.mimo.biz.plugins.userLogin.UserLoginServices" invoke="checkLoginGoogleUser">
 		<description>Check Google login</description>
         <attribute name="accessToken" type="String" mode="IN" optional="false"/>
         <attribute name="userId" type="String" mode="IN" optional="false"/>
@@ -45,7 +45,7 @@ under the License.
 	</service>
 
 	<service name="checkLoginLinkedInUser" engine="java"
-		location="org.abchip.mimo.biz.plugins.context.UserLoginServices" invoke="checkLoginLinkedInUser">
+		location="org.abchip.mimo.biz.plugins.userLogin.UserLoginServices" invoke="checkLoginLinkedInUser">
 		<description>Check LinkedIn login</description>
         <attribute name="accessToken" type="String" mode="IN" optional="false"/>
         <attribute name="userId" type="String" mode="IN" optional="false"/>
@@ -55,7 +55,7 @@ under the License.
 	</service>
 
 	<service name="getUserCredentialFromExternalId" engine="java"
-		location="org.abchip.mimo.biz.plugins.context.UserLoginServices" invoke="getUserCredentialFromExternalId">
+		location="org.abchip.mimo.biz.plugins.userLogin.UserLoginServices" invoke="getUserCredentialFromExternalId">
 		<description>Check google login</description>
         <attribute name="userId" type="String" mode="IN" optional="false"/>
 		<attribute name="user" type="String" mode="OUT" optional="false"/>

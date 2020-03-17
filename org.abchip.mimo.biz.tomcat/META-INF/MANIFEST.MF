@@ -18,11 +18,11 @@ Bundle-ClassPath: .,
  lib/tomcat-jni-9.0.31.jar,
  lib/tomcat-jsp-api-9.0.31.jar,
  lib/tomcat-juli-9.0.31.jar,
- lib/tomcat-servlet-api-9.0.31.jar,
  lib/tomcat-tribes-9.0.31.jar,
  lib/tomcat-util-9.0.31.jar,
  lib/tomcat-util-scan-9.0.31.jar,
- lib/tomcat-annotations-api-9.0.31.jar
+ lib/tomcat-annotations-api-9.0.31.jar,
+ lib/tomcat-servlet-api-9.0.31.jar
 Export-Package: javax.el,
  javax.security.auth.message,
  javax.security.auth.message.callback,

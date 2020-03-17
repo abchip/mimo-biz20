@@ -13,8 +13,7 @@ Require-Bundle: org.abchip.mimo.core,
  org.abchip.mimo.core.base,
  org.eclipse.osgi,
  com.fasterxml.jackson.core.jackson-core,
- com.fasterxml.jackson.core.jackson-databind,
- javax.servlet;bundle-version="3.1.0"
+ com.fasterxml.jackson.core.jackson-databind
 Bundle-ClassPath: .,
  lib/poi-4.0.1.jar,
  lib/ez-vcard-0.9.10.jar
@@ -24,3 +23,5 @@ Export-Package: org.abchip.mimo.biz.base,
  org.abchip.mimo.biz.base.servlet,
  org.apache.poi.hssf.usermodel,
  org.apache.poi.poifs.filesystem
+Import-Package: javax.servlet,
+ javax.servlet.http

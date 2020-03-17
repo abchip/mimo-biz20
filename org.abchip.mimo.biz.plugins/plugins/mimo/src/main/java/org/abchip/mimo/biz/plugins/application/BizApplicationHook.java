@@ -39,6 +39,7 @@ import org.apache.ofbiz.base.start.StartupCommand;
 import org.apache.ofbiz.base.start.StartupException;
 import org.apache.ofbiz.base.util.Debug;
 import org.apache.ofbiz.base.util.UtilValidate;
+import org.apache.ofbiz.catalina.container.CatalinaContainer;
 
 import edu.emory.mathcs.backport.java.util.Collections;
 
@@ -118,14 +119,21 @@ public class BizApplicationHook {
 	@ApplicationStarted
 	private void started() throws StartupException {
 
-		Debug.logInfo("Started application: " + APPLICATION.getName(), MODULE);
-
 		Config config = Start.getInstance().getConfig();
 		List<ContainerConfig.Configuration> componentContainerConfigs = filterContainersHavingMatchingLoaders(config.loaders, ComponentConfig.getAllConfigurations());
 		BizApplicationHook.CONTAINERS.addAll(loadContainersFromConfigurations(componentContainerConfigs, config, new ArrayList<StartupCommand>()));
 
-		// Start all containers
-		startLoadedContainers();
+		for (Container container : CONTAINERS) {
+			Debug.logInfo("Starting container " + container.getName(), MODULE);
+			try {
+				container.start();
+			} catch (ContainerException e) {
+				throw new StartupException("Cannot start() " + container.getClass().getName(), e);
+			}
+			Debug.logInfo("Started container " + container.getName(), MODULE);
+		}
+
+		Debug.logInfo("Started application: " + APPLICATION.getName(), MODULE);
 	}
 
 	private List<ContainerConfig.Configuration> filterContainersHavingMatchingLoaders(List<String> loaders, Collection<ContainerConfig.Configuration> containerConfigs) {
@@ -178,19 +186,6 @@ public class BizApplicationHook {
 		}
 
 		return containerObj;
-	}
-
-	private void startLoadedContainers() throws StartupException {
-
-		for (Container container : CONTAINERS) {
-			Debug.logInfo("Starting container " + container.getName(), MODULE);
-			try {
-				container.start();
-			} catch (ContainerException e) {
-				throw new StartupException("Cannot start() " + container.getClass().getName(), e);
-			}
-			Debug.logInfo("Started container " + container.getName(), MODULE);
-		}
 	}
 
 	@ApplicationStopping
