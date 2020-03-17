@@ -12,3 +12,4 @@ Require-Bundle: org.abchip.mimo.biz.model,
  org.abchip.mimo.biz.base
 Export-Package: org.abchip.mimo.biz.test,
  org.abchip.mimo.biz.test.runner
+Bundle-ClassPath: .
