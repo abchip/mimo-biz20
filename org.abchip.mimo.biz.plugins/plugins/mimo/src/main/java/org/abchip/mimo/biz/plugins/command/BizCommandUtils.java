@@ -12,10 +12,12 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.Date;
+import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.abchip.mimo.application.Application;
 import org.abchip.mimo.biz.entity.tenant.Tenant;
 import org.abchip.mimo.biz.entity.tenant.TenantDataSource;
 import org.abchip.mimo.biz.entity.tenant.TenantDomainName;
@@ -40,6 +42,7 @@ import org.apache.ofbiz.entity.GenericValue;
 import org.apache.ofbiz.entity.util.EntityDataLoader;
 import org.eclipse.emf.ecore.xmi.XMIResource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
+import org.osgi.framework.Bundle;
 
 public class BizCommandUtils {
 
@@ -69,7 +72,6 @@ public class BizCommandUtils {
 		tenantDataSourceWriter.create(tenantDataSource, clean);
 	}
 
-	
 	public static void createUserTenant(Context context, String tenantId, boolean clean) {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 		// UserLogin
@@ -95,51 +97,15 @@ public class BizCommandUtils {
 	public static void loadSeeds(Context context, String seedName, String tenantId, boolean update) {
 
 		ResourceManager resourceManager = context.get(ResourceManager.class);
-		try {
+		Bundle bundle = context.get(Application.class).getBundle();
 
-			List<URL> seedUrls = context.getResources(BizCommandUtils.class, OFBizConstants.SEEDS_PATH + "/" + seedName);
-			for (URL seedUrl : seedUrls) {
-				try (InputStream inputStream = seedUrl.openStream()) {
-
-//					System.err.println("************************");
-//					System.err.println(seedUrl);
-//					System.err.println("************************");
-					
-					XMIResource resource = new XMIResourceImpl();
-					resource.load(inputStream, null);
-					if (!resource.getContents().isEmpty()) {
-						EntityContainer entityContainer = (EntityContainer) resource.getContents().get(0);
-
-						for (EntityIdentifiable entityIdentifiable : entityContainer.getContents()) {
-							try {
-								ResourceWriter<EntityIdentifiable> entityWriter = resourceManager.getResourceWriter(context, entityIdentifiable.isa(), tenantId);
-//								System.err.println(entityIdentifiable.isa().getName());
-								entityWriter.create(entityIdentifiable, update);
-							} catch (Exception e) {
-								System.err.println(e.getMessage());
-							}
-						}
-					}
-
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-		} catch (IOException e) {
-
-		}
-
-	}
-
-	public static void loadSeed(Context context, String seedName, String tenantId, boolean update) {
-		ResourceManager resourceManager = context.get(ResourceManager.class);
-		try {
-
-			URL seedUrl = context.getResource(BizCommandUtils.class, OFBizConstants.SEEDS_PATH + "/" + seedName + ".xmi");
-			if (seedUrl == null)
-				return;
-
+		for (Enumeration<URL> elements = bundle.findEntries(OFBizConstants.SEEDS_PATH + "/" + seedName, null, false); elements.hasMoreElements();) {
+			URL seedUrl = elements.nextElement();
 			try (InputStream inputStream = seedUrl.openStream()) {
+
+				// System.err.println("************************");
+				// System.err.println(seedUrl);
+				// System.err.println("************************");
 
 				XMIResource resource = new XMIResourceImpl();
 				resource.load(inputStream, null);
@@ -149,6 +115,7 @@ public class BizCommandUtils {
 					for (EntityIdentifiable entityIdentifiable : entityContainer.getContents()) {
 						try {
 							ResourceWriter<EntityIdentifiable> entityWriter = resourceManager.getResourceWriter(context, entityIdentifiable.isa(), tenantId);
+							// System.err.println(entityIdentifiable.isa().getName());
 							entityWriter.create(entityIdentifiable, update);
 						} catch (Exception e) {
 							System.err.println(e.getMessage());
@@ -159,9 +126,36 @@ public class BizCommandUtils {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
+		}
+	}
+
+	public static void loadSeed(Context context, String seedName, String tenantId, boolean update) {
+
+		ResourceManager resourceManager = context.get(ResourceManager.class);
+		Bundle bundle = context.get(Application.class).getBundle();
+
+		URL seedUrl = bundle.getResource(OFBizConstants.SEEDS_PATH + "/" + seedName + ".xmi");
+		if (seedUrl == null)
+			return;
+
+		try (InputStream inputStream = seedUrl.openStream()) {
+
+			XMIResource resource = new XMIResourceImpl();
+			resource.load(inputStream, null);
+			if (!resource.getContents().isEmpty()) {
+				EntityContainer entityContainer = (EntityContainer) resource.getContents().get(0);
+
+				for (EntityIdentifiable entityIdentifiable : entityContainer.getContents()) {
+					try {
+						ResourceWriter<EntityIdentifiable> entityWriter = resourceManager.getResourceWriter(context, entityIdentifiable.isa(), tenantId);
+						entityWriter.create(entityIdentifiable, update);
+					} catch (Exception e) {
+						System.err.println(e.getMessage());
+					}
+				}
+			}
 
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -171,12 +165,12 @@ public class BizCommandUtils {
 	public static void exportReaderFiltered(Context context, Delegator delegator, String filter) {
 		int c1 = 0;
 		List<String> readerNames = new LinkedList<String>();
-        if (filter.indexOf(",") == -1) {
-            readerNames = new LinkedList<String>();
-            readerNames.add(filter);
-        } else {
-            readerNames = StringUtil.split(filter, ",");
-        }
+		if (filter.indexOf(",") == -1) {
+			readerNames = new LinkedList<String>();
+			readerNames.add(filter);
+		} else {
+			readerNames = StringUtil.split(filter, ",");
+		}
 		String helperName = delegator.getGroupHelperName("org.apache.ofbiz");
 		List<URL> urlList = EntityDataLoader.getUrlList(helperName, readerNames);
 
@@ -190,7 +184,7 @@ public class BizCommandUtils {
 
 			try {
 				List<GenericValue> listEntity = delegator.readXmlDocument(url);
-				
+
 				String[] segments = url.getPath().split("/");
 				String containerName = segments[segments.length - 1];
 				String folderName = segments[segments.length - 3];
