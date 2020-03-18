@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-geo="http://www.abchip.org/mimo/biz/common/geo" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/geo http://www.abchip.org/mimo/biz#//common/geo http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="029_common_seed,seed-initial_GeoData_UK">
+  <contents xsi:type="biz-geo:Geo" geoId="GB-ABDN" abbreviation="ABDN" geoCode="ABDN" geoName="Aberdeenshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-ANGS" abbreviation="ANGS" geoCode="ANGS" geoName="Angus/Forfarshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-ARGL" abbreviation="ARGL" geoCode="ARGL" geoName="Argyllshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-AYRS" abbreviation="AYRS" geoCode="AYRS" geoName="Ayrshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-BANF" abbreviation="BANF" geoCode="BANF" geoName="Banffshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-BDFD" abbreviation="BDFD" geoCode="BDFD" geoName="Bedfordshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-BRKS" abbreviation="BRKS" geoCode="BRKS" geoName="Berkshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-BWKS" abbreviation="BWKS" geoCode="BWKS" geoName="Berwickshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-BUCKS" abbreviation="BUCKS" geoCode="BUCKS" geoName="Buckinghamshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-BUTE" abbreviation="BUTE" geoCode="BUTE" geoName="Buteshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-CTHN" abbreviation="CTHN" geoCode="CTHN" geoName="Caithness">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-CAMBS" abbreviation="CAMBS" geoCode="CAMBS" geoName="Cambridgeshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-CDGN" abbreviation="CDGN" geoCode="CDGN" geoName="Cardiganshire/Ceredigion">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-CHES" abbreviation="CHES" geoCode="CHES" geoName="Cheshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-CLAK" abbreviation="CLAK" geoCode="CLAK" geoName="Clackmannanshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-CNWL" abbreviation="CNWL" geoCode="CNWL" geoName="Cornwall">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-CMTY" abbreviation="CMTY" geoCode="CMTY" geoName="Cromartyshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-CUMB" abbreviation="CUMB" geoCode="CUMB" geoName="Cumberland">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-DRBYS" abbreviation="DRBYS" geoCode="DRBYS" geoName="Derbyshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-DEVON" abbreviation="DEVON" geoCode="DEVON" geoName="Devon">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-DRST" abbreviation="DRST" geoCode="DRST" geoName="Dorset">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-DMFS" abbreviation="DMFS" geoCode="DMFS" geoName="Dumfriesshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-DMBR" abbreviation="DMBR" geoCode="DMBR" geoName="Dunbartonshire/Dumbartonshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-DRHM" abbreviation="DRHM" geoCode="DRHM" geoName="Durham">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-ESSX" abbreviation="ESSX" geoCode="ESSX" geoName="Essex">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-FIFE" abbreviation="FIFE" geoCode="FIFE" geoName="Fife">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-GLAM" abbreviation="GLAM" geoCode="GLAM" geoName="Glamorgan/Morgannwg">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-GLOU" abbreviation="GLOU" geoCode="GLOU" geoName="Gloucestershire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-HAMPS" abbreviation="HAMPS" geoCode="HAMPS" geoName="Hampshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-HRFDS" abbreviation="HRFDS" geoCode="HRFDS" geoName="Herefordshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-HERTS" abbreviation="HERTS" geoCode="HERTS" geoName="Hertfordshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-HUNTS" abbreviation="HUNTS" geoCode="HUNTS" geoName="Huntingdonshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-INVER" abbreviation="INVER" geoCode="INVER" geoName="Inverness-shire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-KENT" abbreviation="KENT" geoCode="KENT" geoName="Kent">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-KNDN" abbreviation="KNDN" geoCode="KNDN" geoName="Kincardineshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-KRSS" abbreviation="KRSS" geoCode="KRSS" geoName="Kinross-shire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-KRCUD" abbreviation="KRCUD" geoCode="KRCUD" geoName="Kirkcudbrightshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-LRKS" abbreviation="LRKS" geoCode="LRKS" geoName="Lanarkshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-LANCS" abbreviation="LANCS" geoCode="LANCS" geoName="Lancashire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-LIECS" abbreviation="LIECS" geoCode="LIECS" geoName="Leicestershire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-LINCS" abbreviation="LINCS" geoCode="LINCS" geoName="Lincolnshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-MIENT" abbreviation="MIENT" geoCode="MIENT" geoName="Merioneth/Meirionnydd">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-MSEX" abbreviation="MSEX" geoCode="MSEX" geoName="Middlesex">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-MLOTH" abbreviation="MLOTH" geoCode="MLOTH" geoName="Midlothian/Edinburghshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-MORAY" abbreviation="MORAY" geoCode="MORAY" geoName="Morayshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-NAIRN" abbreviation="NAIRN" geoCode="NAIRN" geoName="Nairnshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-NFLK" abbreviation="NFLK" geoCode="NFLK" geoName="Norfolk">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-NHANTS" abbreviation="NHANTS" geoCode="NHANTS" geoName="Northamptonshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-NHUMB" abbreviation="NHUMB" geoCode="NHUMB" geoName="Northumberland">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-NOTTS" abbreviation="NOTTS" geoCode="NOTTS" geoName="Nottinghamshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-ORK" abbreviation="ORK" geoCode="ORK" geoName="Orkney">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-OXFD" abbreviation="OXFD" geoCode="OXFD" geoName="Oxfordshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-PEEBS" abbreviation="PEEBS" geoCode="PEEBS" geoName="Peeblesshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-PERTH" abbreviation="PERTH" geoCode="PERTH" geoName="Perthshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-RNFR" abbreviation="RNFR" geoCode="RNFR" geoName="Renfrewshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-ROSS" abbreviation="ROSS" geoCode="ROSS" geoName="Ross-shire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-ROXB" abbreviation="ROXB" geoCode="ROXB" geoName="Roxburghshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-RUTL" abbreviation="RUTL" geoCode="RUTL" geoName="Rutland">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-SELKS" abbreviation="SELKS" geoCode="SELKS" geoName="Selkirkshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-SHET" abbreviation="SHET" geoCode="SHET" geoName="Shetland">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-SHROPS" abbreviation="SHROPS" geoCode="SHROPS" geoName="Shropshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-SOMST" abbreviation="SOMST" geoCode="SOMST" geoName="Somerset">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-STAFFS" abbreviation="STAFFS" geoCode="STAFFS" geoName="Staffordshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-STLNG" abbreviation="STLNG" geoCode="STLNG" geoName="Stirlingshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-SFFK" abbreviation="SFFK" geoCode="SFFK" geoName="Suffolk">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-SURR" abbreviation="SURR" geoCode="SURR" geoName="Surrey">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-SUSX" abbreviation="SUSX" geoCode="SUSX" geoName="Sussex">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-SUTH" abbreviation="SUTH" geoCode="SUTH" geoName="Sutherland">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-WWKS" abbreviation="WWKS" geoCode="WWKS" geoName="Warwickshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-WMLD" abbreviation="WMLD" geoCode="WMLD" geoName="Westmorland">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-WGNSH" abbreviation="WGNSH" geoCode="WGNSH" geoName="Wigtownshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-WILTS" abbreviation="WILTS" geoCode="WILTS" geoName="Wiltshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-WORCS" abbreviation="WORCS" geoCode="WORCS" geoName="Worcestershire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-YORKS" abbreviation="YORKS" geoCode="YORKS" geoName="Yorkshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-AGSY" abbreviation="AGSY" geoCode="AGSY" geoName="Anglesey/Sir Fon">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-BREK" abbreviation="BREK" geoCode="BREK" geoName="Brecknockshire/Sir Frycheiniog">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-CNFN" abbreviation="CNFN" geoCode="CNFN" geoName="Caernarfonshire/Sir Gaernarfon">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-CMRN" abbreviation="CMRN" geoCode="CMRN" geoName="Carmarthenshire/Sir Gaerfyrddin">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-DENB" abbreviation="DENB" geoCode="DENB" geoName="Denbighshire/Sir Ddinbych">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-ELOTH" abbreviation="ELOTH" geoCode="ELOTH" geoName="East Lothian/Haddingtonshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-FTSH" abbreviation="FTSH" geoCode="FTSH" geoName="Flintshire/Sir Fflint">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-MMTH" abbreviation="MMTH" geoCode="MMTH" geoName="Monmouthshire/Sir Fynwy">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-MNTGS" abbreviation="MNTGS" geoCode="MNTGS" geoName="Montgomeryshire/Sir Drefaldwyn">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-PMBRK" abbreviation="PMBRK" geoCode="PMBRK" geoName="Pembrokeshire/Sir Benfro">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-RNRS" abbreviation="RNRS" geoCode="RNRS" geoName="Radnorshire/Sir Faesyfed">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GB-WLOTH" abbreviation="WLOTH" geoCode="WLOTH" geoName="West Lothian/Linlithgowshire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-ABDN"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-ANGS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-ARGL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-AYRS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-BANF"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-BDFD"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-BRKS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-BWKS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-BUCKS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-BUTE"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#WALS"/>
+    <geoIdTo href="Geo#GB-CTHN"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-CAMBS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#WALS"/>
+    <geoIdTo href="Geo#GB-CDGN"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-CHES"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-CLAK"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-CNWL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-CMTY"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-CUMB"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-DRBYS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-DEVON"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-DRST"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-DMFS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-DMBR"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-DRHM"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-ESSX"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-FIFE"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#WALS"/>
+    <geoIdTo href="Geo#GB-GLAM"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-GLOU"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-HAMPS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-HRFDS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-HERTS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-HUNTS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-INVER"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-KENT"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-KNDN"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-KRSS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-KRCUD"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-LRKS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-LANCS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-LIECS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-LINCS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#WALS"/>
+    <geoIdTo href="Geo#GB-MIENT"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-MSEX"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-MLOTH"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-MORAY"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-NAIRN"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-NFLK"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-NHANTS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-NHUMB"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-NOTTS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-ORK"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-OXFD"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-PEEBS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-PERTH"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-RNFR"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-ROSS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-ROXB"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-RUTL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-SELKS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-SHET"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-SHROPS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-SOMST"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-STAFFS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-STLNG"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-SFFK"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-SURR"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-SUSX"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-SUTH"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-WWKS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-WMLD"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-WGNSH"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-WILTS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-WORCS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GB-YORKS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#WALS"/>
+    <geoIdTo href="Geo#GB-AGSY"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#WALS"/>
+    <geoIdTo href="Geo#GB-BREK"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#WALS"/>
+    <geoIdTo href="Geo#GB-CNFN"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#WALS"/>
+    <geoIdTo href="Geo#GB-CMRN"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#WALS"/>
+    <geoIdTo href="Geo#GB-DENB"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-ELOTH"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#WALS"/>
+    <geoIdTo href="Geo#GB-FTSH"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#WALS"/>
+    <geoIdTo href="Geo#GB-MMTH"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#WALS"/>
+    <geoIdTo href="Geo#GB-MNTGS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#WALS"/>
+    <geoIdTo href="Geo#GB-PMBRK"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#WALS"/>
+    <geoIdTo href="Geo#GB-RNRS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GB-WLOTH"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NIRL-ATRM" abbreviation="ATRM" geoCode="ATRM" geoName="Antrim">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NIRL-ARMG" abbreviation="ARMG" geoCode="ARMG" geoName="Armagh">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NIRL-DOWN" abbreviation="DOWN" geoCode="DOWN" geoName="Down">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NIRL-FMNH" abbreviation="FMNH" geoCode="FMNH" geoName="Fermanagh">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NIRL-LDRY" abbreviation="LDRY" geoCode="LDRY" geoName="Londonderry">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NIRL-TYR" abbreviation="TYR" geoCode="TYR" geoName="Tyrone">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NIRL"/>
+    <geoIdTo href="Geo#NIRL-ATRM"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NIRL"/>
+    <geoIdTo href="Geo#NIRL-ARMG"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NIRL"/>
+    <geoIdTo href="Geo#NIRL-DOWN"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NIRL"/>
+    <geoIdTo href="Geo#NIRL-FMNH"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NIRL"/>
+    <geoIdTo href="Geo#NIRL-LDRY"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NIRL"/>
+    <geoIdTo href="Geo#NIRL-TYR"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+</mimo-ent:EntityContainer>

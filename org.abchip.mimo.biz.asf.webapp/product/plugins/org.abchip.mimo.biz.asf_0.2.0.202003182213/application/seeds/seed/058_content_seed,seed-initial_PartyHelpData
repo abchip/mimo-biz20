@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-content="http://www.abchip.org/mimo/biz/content/content" xmlns:biz-data="http://www.abchip.org/mimo/biz/content/data" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/content/content http://www.abchip.org/mimo/biz#//content http://www.abchip.org/mimo/biz/content/data http://www.abchip.org/mimo/biz#//data http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="058_content_seed,seed-initial_PartyHelpData">
+  <contents xsi:type="biz-data:DataResource" dataResourceId="HELP_PARTY" dataResourceName="Party Overview" isPublic="true" localeString="en" objectInfo="applications/party/data/helpdata/HELP_PARTY.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="HELP_PARTY" contentName="Party Manager">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#HELP_PARTY"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100">
+    <contentId href="Content#HELP_ROOT"/>
+    <contentIdTo href="Content#HELP_PARTY"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="PARTY_findparty" dataResourceName="List parties Help" isPublic="true" localeString="en" objectInfo="applications/party/data/helpdata/HELP_PARTY_findparty.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="PARTY_findparty" contentName="List parties Help">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#PARTY_findparty"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100" mapKey="PARTY_findparty">
+    <contentId href="Content#HELP_PARTY"/>
+    <contentIdTo href="Content#PARTY_findparty"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+</mimo-ent:EntityContainer>

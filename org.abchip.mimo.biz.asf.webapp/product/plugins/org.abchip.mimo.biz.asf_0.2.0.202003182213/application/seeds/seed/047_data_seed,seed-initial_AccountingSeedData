@@ -1,0 +1,2687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-budget="http://www.abchip.org/mimo/biz/accounting/budget" xmlns:biz-enum="http://www.abchip.org/mimo/biz/common/enum" xmlns:biz-finaccount="http://www.abchip.org/mimo/biz/accounting/finaccount" xmlns:biz-fixedasset="http://www.abchip.org/mimo/biz/accounting/fixedasset" xmlns:biz-invoice="http://www.abchip.org/mimo/biz/accounting/invoice" xmlns:biz-ledger="http://www.abchip.org/mimo/biz/accounting/ledger" xmlns:biz-method="http://www.abchip.org/mimo/biz/common/method" xmlns:biz-party="http://www.abchip.org/mimo/biz/party/party" xmlns:biz-payment="http://www.abchip.org/mimo/biz/accounting/payment" xmlns:biz-period="http://www.abchip.org/mimo/biz/common/period" xmlns:biz-position="http://www.abchip.org/mimo/biz/humanres/position" xmlns:biz-product="http://www.abchip.org/mimo/biz/product/product" xmlns:biz-rate="http://www.abchip.org/mimo/biz/accounting/rate" xmlns:biz-screen="http://www.abchip.org/mimo/biz/common/screen" xmlns:biz-status="http://www.abchip.org/mimo/biz/common/status" xmlns:biz-tax="http://www.abchip.org/mimo/biz/accounting/tax" xmlns:biz-workeffort="http://www.abchip.org/mimo/biz/workeffort/workeffort" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/accounting/budget http://www.abchip.org/mimo/biz#//accounting/budget http://www.abchip.org/mimo/biz/common/enum http://www.abchip.org/mimo/biz#//common/enum http://www.abchip.org/mimo/biz/accounting/finaccount http://www.abchip.org/mimo/biz#//accounting/finaccount http://www.abchip.org/mimo/biz/accounting/fixedasset http://www.abchip.org/mimo/biz#//accounting/fixedasset http://www.abchip.org/mimo/biz/accounting/invoice http://www.abchip.org/mimo/biz#//accounting/invoice http://www.abchip.org/mimo/biz/accounting/ledger http://www.abchip.org/mimo/biz#//accounting/ledger http://www.abchip.org/mimo/biz/common/method http://www.abchip.org/mimo/biz#//common/method http://www.abchip.org/mimo/biz/party/party http://www.abchip.org/mimo/biz#//party/party http://www.abchip.org/mimo/biz/accounting/payment http://www.abchip.org/mimo/biz#//accounting/payment http://www.abchip.org/mimo/biz/common/period http://www.abchip.org/mimo/biz#//common/period http://www.abchip.org/mimo/biz/humanres/position http://www.abchip.org/mimo/biz#//position http://www.abchip.org/mimo/biz/product/product http://www.abchip.org/mimo/biz#//product http://www.abchip.org/mimo/biz/accounting/rate http://www.abchip.org/mimo/biz#//accounting/rate http://www.abchip.org/mimo/biz/common/screen http://www.abchip.org/mimo/biz#//common/screen http://www.abchip.org/mimo/biz/common/status http://www.abchip.org/mimo/biz#//common/status http://www.abchip.org/mimo/biz/accounting/tax http://www.abchip.org/mimo/biz#//accounting/tax http://www.abchip.org/mimo/biz/workeffort/workeffort http://www.abchip.org/mimo/biz#//workeffort http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="047_data_seed,seed-initial_AccountingSeedData">
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="_NA_" description="Not Applicable"/>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="INTERNAL_ACCTG_TRANS" description="Internal" hasTable="true"/>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="AMORTIZATION" description="Amortization">
+    <parentTypeId href="AcctgTransType#INTERNAL_ACCTG_TRANS"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="DEPRECIATION" description="Depreciation" hasTable="true">
+    <parentTypeId href="AcctgTransType#INTERNAL_ACCTG_TRANS"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="CAPITALIZATION" description="Capitalization">
+    <parentTypeId href="AcctgTransType#INTERNAL_ACCTG_TRANS"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="INVENTORY" description="Inventory">
+    <parentTypeId href="AcctgTransType#INTERNAL_ACCTG_TRANS"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="ITEM_VARIANCE" description="Inventory Item Variance" hasTable="true">
+    <parentTypeId href="AcctgTransType#INTERNAL_ACCTG_TRANS"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="OTHER_INTERNAL" description="Other Internal">
+    <parentTypeId href="AcctgTransType#INTERNAL_ACCTG_TRANS"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="PERIOD_CLOSING" description="Period Closing">
+    <parentTypeId href="AcctgTransType#INTERNAL_ACCTG_TRANS"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="EXTERNAL_ACCTG_TRANS" description="External" hasTable="true"/>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="OBLIGATION_ACCTG_TRA" description="Obligation">
+    <parentTypeId href="AcctgTransType#EXTERNAL_ACCTG_TRANS"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="CREDIT_LINE" description="Credit Line">
+    <parentTypeId href="AcctgTransType#OBLIGATION_ACCTG_TRA"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="CREDIT_MEMO" description="Credit Memo">
+    <parentTypeId href="AcctgTransType#OBLIGATION_ACCTG_TRA"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="NOTE" description="Note">
+    <parentTypeId href="AcctgTransType#OBLIGATION_ACCTG_TRA"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="OTHER_OBLIGATION" description="Other Obligation">
+    <parentTypeId href="AcctgTransType#OBLIGATION_ACCTG_TRA"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="SALES" description="Sales" hasTable="true">
+    <parentTypeId href="AcctgTransType#OBLIGATION_ACCTG_TRA"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="TAX_DUE" description="Tax Due">
+    <parentTypeId href="AcctgTransType#OBLIGATION_ACCTG_TRA"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="PAYMENT_ACCTG_TRANS" description="Payment" hasTable="true">
+    <parentTypeId href="AcctgTransType#EXTERNAL_ACCTG_TRANS"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="DISBURSEMENT" description="Disbursement">
+    <parentTypeId href="AcctgTransType#PAYMENT_ACCTG_TRANS"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="RECEIPT" description="Receipt">
+    <parentTypeId href="AcctgTransType#PAYMENT_ACCTG_TRANS"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="INVENTORY_RETURN" description="Inventory from Return">
+    <parentTypeId href="AcctgTransType#EXTERNAL_ACCTG_TRANS"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="SALES_INVOICE" description="Sales Invoice">
+    <parentTypeId href="AcctgTransType#OBLIGATION_ACCTG_TRA"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="PURCHASE_INVOICE" description="Purchase Invoice">
+    <parentTypeId href="AcctgTransType#OBLIGATION_ACCTG_TRA"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="CUST_RTN_INVOICE" description="Customer Return">
+    <parentTypeId href="AcctgTransType#OBLIGATION_ACCTG_TRA"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="SALES_SHIPMENT" description="Sales Shipment">
+    <parentTypeId href="AcctgTransType#EXTERNAL_ACCTG_TRANS"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="SHIPMENT_RECEIPT" description="Shipment Receipt">
+    <parentTypeId href="AcctgTransType#EXTERNAL_ACCTG_TRANS"/>
+  </contents>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="MANUFACTURING" description="Manufacturing"/>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="INCOMING_PAYMENT" description="Incoming Payment"/>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="OUTGOING_PAYMENT" description="Outgoing Payment"/>
+  <contents xsi:type="biz-ledger:AcctgTransType" acctgTransTypeId="PAYMENT_APPL" description="Payment Applied"/>
+  <contents xsi:type="biz-ledger:AcctgTransEntryType" acctgTransEntryTypeId="_NA_" description="Not Applicable"/>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="ACCTG_ENREC_STATUS" description="Acctg Entry Reconcile"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="AES_NOT_RECONCILED" description="Not Reconciled" sequenceId="01" statusCode="NOT_RECONCILED">
+    <statusTypeId href="StatusType#ACCTG_ENREC_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="AES_PARTLY_RECON" description="Partly Reconciled" sequenceId="02" statusCode="PARTLY_RECONCILED">
+    <statusTypeId href="StatusType#ACCTG_ENREC_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="AES_RECONCILED" description="Reconciled" sequenceId="03" statusCode="RECONCILED">
+    <statusTypeId href="StatusType#ACCTG_ENREC_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-budget:BudgetItemType" budgetItemTypeId="REQUIREMENT_BUDGET_A" description="Requirement" hasTable="true"/>
+  <contents xsi:type="biz-budget:BudgetType" budgetTypeId="CAPITAL_BUDGET" description="Capital"/>
+  <contents xsi:type="biz-budget:BudgetType" budgetTypeId="OPERATING_BUDGET" description="Operating"/>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="GC_FULFILL" description="Gift Card Fulfillment"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="GC_ACTIVATE" description="Activate" enumCode="ACTIVATE" sequenceId="01">
+    <enumTypeId href="EnumerationType#GC_FULFILL"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="GC_RELOAD" description="Reload" enumCode="RELOAD" sequenceId="02">
+    <enumTypeId href="EnumerationType#GC_FULFILL"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="PGT_CODE" description="Payment Gateway Transaction Code"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PGT_AUTHORIZE" description="Authorize" enumCode="AUTHORIZE" sequenceId="01">
+    <enumTypeId href="EnumerationType#PGT_CODE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PGT_CAPTURE" description="Capture" enumCode="CAPTURE" sequenceId="02">
+    <enumTypeId href="EnumerationType#PGT_CODE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PGT_RELEASE" description="Release" enumCode="RELEASE" sequenceId="03">
+    <enumTypeId href="EnumerationType#PGT_CODE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PGT_REFUND" description="Refund" enumCode="REFUND" sequenceId="04">
+    <enumTypeId href="EnumerationType#PGT_CODE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PGT_CREDIT" description="Credit" enumCode="CREDIT" sequenceId="05">
+    <enumTypeId href="EnumerationType#PGT_CODE"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="FARP_TYPE" description="Financial Account Replenish Type"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FARP_AUTOMATIC" description="Automatic Replenish" enumCode="AUTOMATIC" sequenceId="01">
+    <enumTypeId href="EnumerationType#FARP_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FARP_MANUAL" description="Manual Replenish" enumCode="MANUAL" sequenceId="02">
+    <enumTypeId href="EnumerationType#FARP_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FARP_NONE" description="No Replenish" enumCode="NONE" sequenceId="03">
+    <enumTypeId href="EnumerationType#FARP_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="FARP_METHOD" description="Financial Account Replenish Method"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FARP_TOP_OFF" description="Top-off" enumCode="TOP_OFF" sequenceId="01">
+    <enumTypeId href="EnumerationType#FARP_METHOD"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FARP_REPLENISH_LEVEL" description="Replenish-level" enumCode="REPLENISH_LEVEL" sequenceId="02">
+    <enumTypeId href="EnumerationType#FARP_METHOD"/>
+  </contents>
+  <contents xsi:type="biz-finaccount:FinAccountTransType" finAccountTransTypeId="DEPOSIT" description="Deposit"/>
+  <contents xsi:type="biz-finaccount:FinAccountTransType" finAccountTransTypeId="WITHDRAWAL" description="Withdraw"/>
+  <contents xsi:type="biz-finaccount:FinAccountTransType" finAccountTransTypeId="ADJUSTMENT" description="Adjustment"/>
+  <contents xsi:type="biz-finaccount:FinAccountType" finAccountTypeId="GIFTCERT_ACCOUNT" description="Gift Certificate">
+    <replenishEnumId href="Enumeration#FARP_MANUAL"/>
+  </contents>
+  <contents xsi:type="biz-finaccount:FinAccountType" finAccountTypeId="DEPOSIT_ACCOUNT" description="Deposit Account" isRefundable="true">
+    <replenishEnumId href="Enumeration#FARP_MANUAL"/>
+  </contents>
+  <contents xsi:type="biz-finaccount:FinAccountType" finAccountTypeId="BANK_ACCOUNT" description="Bank Account" isRefundable="true">
+    <parentTypeId href="FinAccountType#DEPOSIT_ACCOUNT"/>
+    <replenishEnumId href="Enumeration#FARP_MANUAL"/>
+  </contents>
+  <contents xsi:type="biz-finaccount:FinAccountType" finAccountTypeId="STORE_CREDIT_ACCT" description="Store Credit Account" isRefundable="true">
+    <parentTypeId href="FinAccountType#DEPOSIT_ACCOUNT"/>
+    <replenishEnumId href="Enumeration#FARP_MANUAL"/>
+  </contents>
+  <contents xsi:type="biz-finaccount:FinAccountType" finAccountTypeId="INVESTMENT_ACCOUNT" description="Investment Account" isRefundable="true">
+    <parentTypeId href="FinAccountType#DEPOSIT_ACCOUNT"/>
+    <replenishEnumId href="Enumeration#FARP_MANUAL"/>
+  </contents>
+  <contents xsi:type="biz-finaccount:FinAccountType" finAccountTypeId="REPLENISH_ACCOUNT" description="Replenish Account" isRefundable="true">
+    <parentTypeId href="FinAccountType#DEPOSIT_ACCOUNT"/>
+    <replenishEnumId href="Enumeration#FARP_AUTOMATIC"/>
+  </contents>
+  <contents xsi:type="biz-finaccount:FinAccountType" finAccountTypeId="SVCCRED_ACCOUNT" description="Service Credit Account">
+    <replenishEnumId href="Enumeration#FARP_MANUAL"/>
+  </contents>
+  <contents xsi:type="biz-finaccount:FinAccountType" finAccountTypeId="LOAN_ACCOUNT" description="Loan Account" isRefundable="true">
+    <replenishEnumId href="Enumeration#FARP_MANUAL"/>
+  </contents>
+  <contents xsi:type="biz-finaccount:FinAccountType" finAccountTypeId="CREDIT_CARD_ACCOUNT" description="Credit Card Account" isRefundable="true">
+    <parentTypeId href="FinAccountType#LOAN_ACCOUNT"/>
+    <replenishEnumId href="Enumeration#FARP_MANUAL"/>
+  </contents>
+  <contents xsi:type="biz-finaccount:FinAccountType" finAccountTypeId="EQUITY_LINE_ACCOUNT" description="Equity Line Account" isRefundable="true">
+    <parentTypeId href="FinAccountType#LOAN_ACCOUNT"/>
+    <replenishEnumId href="Enumeration#FARP_MANUAL"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="FINACCT_STATUS" description="Financial Account Status"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="FNACT_ACTIVE" description="Active" sequenceId="01" statusCode="ACTIVE">
+    <statusTypeId href="StatusType#FINACCT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="FNACT_NEGPENDREPL" description="Negative Pending Replenishment" sequenceId="02" statusCode="NEGPENDREPL">
+    <statusTypeId href="StatusType#FINACCT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="FNACT_MANFROZEN" description="Manually Frozen" sequenceId="03" statusCode="MANFROZEN">
+    <statusTypeId href="StatusType#FINACCT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="FNACT_CANCELLED" description="Cancelled" sequenceId="09" statusCode="CANCELLED">
+    <statusTypeId href="StatusType#FINACCT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Set Negative Pending Replenishment">
+    <statusId href="StatusItem#FNACT_ACTIVE"/>
+    <statusIdTo href="StatusItem#FNACT_NEGPENDREPL"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Set Manually Frozen">
+    <statusId href="StatusItem#FNACT_ACTIVE"/>
+    <statusIdTo href="StatusItem#FNACT_MANFROZEN"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
+    <statusId href="StatusItem#FNACT_ACTIVE"/>
+    <statusIdTo href="StatusItem#FNACT_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Re-activate">
+    <statusId href="StatusItem#FNACT_NEGPENDREPL"/>
+    <statusIdTo href="StatusItem#FNACT_ACTIVE"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Manually Freeze">
+    <statusId href="StatusItem#FNACT_NEGPENDREPL"/>
+    <statusIdTo href="StatusItem#FNACT_MANFROZEN"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
+    <statusId href="StatusItem#FNACT_NEGPENDREPL"/>
+    <statusIdTo href="StatusItem#FNACT_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Re-activate">
+    <statusId href="StatusItem#FNACT_MANFROZEN"/>
+    <statusIdTo href="StatusItem#FNACT_ACTIVE"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
+    <statusId href="StatusItem#FNACT_MANFROZEN"/>
+    <statusIdTo href="StatusItem#FNACT_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="FINACT_TRNS_STATUS" description="Financial Account Trans Status"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="FINACT_TRNS_APPROVED" description="Approved" sequenceId="11" statusCode="APPROVED">
+    <statusTypeId href="StatusType#FINACT_TRNS_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="FINACT_TRNS_CREATED" description="Created" sequenceId="12" statusCode="CREATED">
+    <statusTypeId href="StatusType#FINACT_TRNS_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="FINACT_TRNS_CANCELED" description="Canceled" sequenceId="13" statusCode="CANCELED">
+    <statusTypeId href="StatusType#FINACT_TRNS_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Set Created to Approved">
+    <statusId href="StatusItem#FINACT_TRNS_CREATED"/>
+    <statusIdTo href="StatusItem#FINACT_TRNS_APPROVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Set Created to Canceled">
+    <statusId href="StatusItem#FINACT_TRNS_CREATED"/>
+    <statusIdTo href="StatusItem#FINACT_TRNS_CANCELED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Set Approved to Canceled">
+    <statusId href="StatusItem#FINACT_TRNS_APPROVED"/>
+    <statusIdTo href="StatusItem#FINACT_TRNS_CANCELED"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="FINACCT_TRANS_REASON" description="Service Debit Reasons"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FATR_PURCHASE" description="Purchase" enumCode="PURCHASE" sequenceId="01">
+    <enumTypeId href="EnumerationType#FINACCT_TRANS_REASON"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FATR_IDEPOSIT" description="Initial Deposit" enumCode="IDEPOSIT" sequenceId="02">
+    <enumTypeId href="EnumerationType#FINACCT_TRANS_REASON"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FATR_REPLENISH" description="Replenishment" enumCode="REPLENISH" sequenceId="03">
+    <enumTypeId href="EnumerationType#FINACCT_TRANS_REASON"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FATR_REFUND" description="Refund" enumCode="REFUND" sequenceId="04">
+    <enumTypeId href="EnumerationType#FINACCT_TRANS_REASON"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAssetType" fixedAssetTypeId="EQUIPMENT" description="Equipment"/>
+  <contents xsi:type="biz-fixedasset:FixedAssetType" fixedAssetTypeId="PRODUCTION_EQUIPMENT" description="The fixed asset used in the operation-routing definition"/>
+  <contents xsi:type="biz-fixedasset:FixedAssetType" fixedAssetTypeId="GROUP_EQUIPMENT" description="Group of machines, used for task and routing definition"/>
+  <contents xsi:type="biz-fixedasset:FixedAssetType" fixedAssetTypeId="OTHER_FIXED_ASSET" description="Other Fixed Asset"/>
+  <contents xsi:type="biz-fixedasset:FixedAssetType" fixedAssetTypeId="PROPERTY" description="Property"/>
+  <contents xsi:type="biz-fixedasset:FixedAssetType" fixedAssetTypeId="VEHICLE" description="Vehicle"/>
+  <contents xsi:type="biz-fixedasset:FixedAssetType" fixedAssetTypeId="REAL_ESTATE" description="Real Estate"/>
+  <contents xsi:type="biz-fixedasset:FixedAssetType" fixedAssetTypeId="COMPUTER_SOFTWARE" description="Computer Software"/>
+  <contents xsi:type="biz-fixedasset:FixedAssetType" fixedAssetTypeId="COMPUTER_HARDWARE" description="Computer Hardware"/>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="FXAST_CLASS" description="Fixed Asset Class"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAC_BOAT" description="Boat" enumCode="BOAT" sequenceId="01">
+    <enumTypeId href="EnumerationType#FXAST_CLASS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAC_FORKLIFT" description="Forklift" enumCode="FORKLIFT" sequenceId="01">
+    <enumTypeId href="EnumerationType#FXAST_CLASS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAC_DIGGER" description="Digger" enumCode="DIGGER" sequenceId="01">
+    <enumTypeId href="EnumerationType#FXAST_CLASS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAC_MANLIFT" description="Manlift" enumCode="MANLIFT" sequenceId="01">
+    <enumTypeId href="EnumerationType#FXAST_CLASS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAC_SERVICE_BODY" description="Service Body" enumCode="SERVICE_BODY" sequenceId="01">
+    <enumTypeId href="EnumerationType#FXAST_CLASS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAC_TRACTOR" description="Tractor" enumCode="TRACTOR" sequenceId="01">
+    <enumTypeId href="EnumerationType#FXAST_CLASS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAC_PASSENGER" description="Passenger Vehicle" enumCode="PASSENGER" sequenceId="01">
+    <enumTypeId href="EnumerationType#FXAST_CLASS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAC_COMPRESSOR" description="Compressor" enumCode="COMPRESSOR" sequenceId="01">
+    <enumTypeId href="EnumerationType#FXAST_CLASS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAC_TRENCHER" description="Trencher" enumCode="TRENCHER" sequenceId="01">
+    <enumTypeId href="EnumerationType#FXAST_CLASS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAC_PULLER" description="Puller" enumCode="PULLER" sequenceId="01">
+    <enumTypeId href="EnumerationType#FXAST_CLASS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAC_MOBILE" description="Mobile" enumCode="MOBILE" sequenceId="01">
+    <enumTypeId href="EnumerationType#FXAST_CLASS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAC_TANKER" description="Tanker" enumCode="TANKER" sequenceId="01">
+    <enumTypeId href="EnumerationType#FXAST_CLASS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAC_REEL_STAND" description="Reel Stand" enumCode="REEL_STAND" sequenceId="01">
+    <enumTypeId href="EnumerationType#FXAST_CLASS"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="FXAST_COMPU_HARDWARE" description="Computer Hardware">
+    <parentTypeId href="EnumerationType#FXAST_CLASS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAC_DESKTOP" description="Desktop" enumCode="DESKTOP" sequenceId="01">
+    <enumTypeId href="EnumerationType#FXAST_COMPU_HARDWARE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAC_LAPTOP" description="Laptop" enumCode="LAPTOP" sequenceId="01">
+    <enumTypeId href="EnumerationType#FXAST_COMPU_HARDWARE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAC_MONITOR" description="Monitor" enumCode="MONITOR" sequenceId="01">
+    <enumTypeId href="EnumerationType#FXAST_COMPU_HARDWARE"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="FXAST_COMPU_SOFTWARE" description="Computer Software">
+    <parentTypeId href="EnumerationType#FXAST_CLASS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAC_PRG_SOFTWARE" description="Programming Software" enumCode="PRG_SOFTWARE" sequenceId="01">
+    <enumTypeId href="EnumerationType#FXAST_COMPU_SOFTWARE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAC_SYS_SOFTWARE" description="System Software" enumCode="SYS_SOFTWARE" sequenceId="01">
+    <enumTypeId href="EnumerationType#FXAST_COMPU_SOFTWARE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAC_APP_SOFTWARE" description="Application Software" enumCode="APP_SOFTWARE" sequenceId="01">
+    <enumTypeId href="EnumerationType#FXAST_COMPU_SOFTWARE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FAC_UTIL_SOFTWARE" description="Utility Software" enumCode="UTIL_SOFTWARE" sequenceId="01">
+    <enumTypeId href="EnumerationType#FXAST_COMPU_SOFTWARE"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAssetIdentType" fixedAssetIdentTypeId="MFG_SERIAL" description="Mfg Serial Number"/>
+  <contents xsi:type="biz-fixedasset:FixedAssetIdentType" fixedAssetIdentTypeId="TRACKING_VENDOR" description="Vendor Tracking/Inventory Number"/>
+  <contents xsi:type="biz-fixedasset:FixedAssetIdentType" fixedAssetIdentTypeId="TRACKING_LABEL" description="Internal Tracking Label Number"/>
+  <contents xsi:type="biz-fixedasset:FixedAssetIdentType" fixedAssetIdentTypeId="VIN" description="Vehicle Identification Number (VIN)"/>
+  <contents xsi:type="biz-fixedasset:FixedAssetIdentType" fixedAssetIdentTypeId="GAS_CARD1" description="Gas Card Number 1"/>
+  <contents xsi:type="biz-fixedasset:FixedAssetIdentType" fixedAssetIdentTypeId="GAS_CARD2" description="Gas Card Number 2"/>
+  <contents xsi:type="biz-fixedasset:FixedAssetIdentType" fixedAssetIdentTypeId="GAS_CARD3" description="Gas Card Number 3"/>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="FIXEDAST_MNT_STATUS" description="Fixed Asset Maintenance"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="FAM_CREATED" description="Created" sequenceId="01" statusCode="CREATED">
+    <statusTypeId href="StatusType#FIXEDAST_MNT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="FAM_SCHEDULED" description="Scheduled" sequenceId="03" statusCode="SCHEDULED">
+    <statusTypeId href="StatusType#FIXEDAST_MNT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="FAM_IN_PROCESS" description="In Process" sequenceId="05" statusCode="IN_PROCESS">
+    <statusTypeId href="StatusType#FIXEDAST_MNT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="FAM_COMPLETED" description="Completed" sequenceId="10" statusCode="COMPLETED">
+    <statusTypeId href="StatusType#FIXEDAST_MNT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="FAM_CANCELLED" description="Cancelled" sequenceId="99" statusCode="CANCELLED">
+    <statusTypeId href="StatusType#FIXEDAST_MNT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Created Maintenance Scheduled">
+    <statusId href="StatusItem#FAM_CREATED"/>
+    <statusIdTo href="StatusItem#FAM_SCHEDULED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Created Maintenance In-Process">
+    <statusId href="StatusItem#FAM_CREATED"/>
+    <statusIdTo href="StatusItem#FAM_IN_PROCESS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Created Maintenace Cancelled">
+    <statusId href="StatusItem#FAM_CREATED"/>
+    <statusIdTo href="StatusItem#FAM_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Scheduled Maintenace In-Process">
+    <statusId href="StatusItem#FAM_SCHEDULED"/>
+    <statusIdTo href="StatusItem#FAM_IN_PROCESS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Scheduled Maintenace Cancelled">
+    <statusId href="StatusItem#FAM_SCHEDULED"/>
+    <statusIdTo href="StatusItem#FAM_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="In-Process Maintenance Completed">
+    <statusId href="StatusItem#FAM_IN_PROCESS"/>
+    <statusIdTo href="StatusItem#FAM_COMPLETED"/>
+  </contents>
+  <contents xsi:type="biz-party:RoleType" roleTypeId="FAM_ASSIGNEE" description="Fixed Asset Maint Assignee"/>
+  <contents xsi:type="biz-party:RoleType" roleTypeId="FAM_SUPPLIER" description="Maintenance Supplier or Service">
+    <parentTypeId href="RoleType#FAM_ASSIGNEE"/>
+  </contents>
+  <contents xsi:type="biz-party:RoleType" roleTypeId="FAM_MANAGER" description="Maintenance Manager or Supervisor">
+    <parentTypeId href="RoleType#FAM_ASSIGNEE"/>
+  </contents>
+  <contents xsi:type="biz-party:RoleType" roleTypeId="FAM_WORKER" description="Maintenance Worker">
+    <parentTypeId href="RoleType#FAM_ASSIGNEE"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAssetProductType" fixedAssetProductTypeId="FAPT_USE" description="Use of Asset"/>
+  <contents xsi:type="biz-fixedasset:FixedAssetProductType" fixedAssetProductTypeId="FAPT_SALE" description="Sale of Asset"/>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="DEBIT" description="Debit" sequenceNum="100"/>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="CREDIT" description="Credit" sequenceNum="200"/>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="RESOURCE" description="Resource" sequenceNum="300"/>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="ASSET" description="Asset" sequenceNum="110">
+    <parentClassId href="GlAccountClass#DEBIT"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="DISTRIBUTION" description="Equity Distribution" sequenceNum="130">
+    <parentClassId href="GlAccountClass#DEBIT"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="EXPENSE" description="Expense" sequenceNum="150">
+    <parentClassId href="GlAccountClass#DEBIT"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="CONTRA_REVENUE" description="Contra Revenue" sequenceNum="170">
+    <parentClassId href="GlAccountClass#DEBIT"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="NON_POSTING" description="Non-Posting" sequenceNum="190">
+    <parentClassId href="GlAccountClass#DEBIT"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="LIABILITY" description="Liability" sequenceNum="210">
+    <parentClassId href="GlAccountClass#CREDIT"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="EQUITY" description="Equity" sequenceNum="230">
+    <parentClassId href="GlAccountClass#CREDIT"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="REVENUE" description="Revenue" sequenceNum="250">
+    <parentClassId href="GlAccountClass#CREDIT"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="CONTRA_ASSET" description="Contra Asset" sequenceNum="270">
+    <parentClassId href="GlAccountClass#CREDIT"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="INCOME" description="Income" sequenceNum="290">
+    <parentClassId href="GlAccountClass#CREDIT"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="CURRENT_ASSET" description="Current Asset" sequenceNum="115">
+    <parentClassId href="GlAccountClass#ASSET"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="LONGTERM_ASSET" description="Long Term Asset" sequenceNum="125">
+    <parentClassId href="GlAccountClass#ASSET"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="CASH_EQUIVALENT" description="Cash and Equivalent" sequenceNum="120">
+    <parentClassId href="GlAccountClass#CURRENT_ASSET"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="INVENTORY_ASSET" description="Inventory Asset" sequenceNum="122">
+    <parentClassId href="GlAccountClass#CURRENT_ASSET"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="RETURN_OF_CAPITAL" description="Return of Capital" sequenceNum="135">
+    <parentClassId href="GlAccountClass#DISTRIBUTION"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="DIVIDEND" description="Dividends" sequenceNum="145">
+    <parentClassId href="GlAccountClass#DISTRIBUTION"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="CASH_EXPENSE" description="Cash Expense" sequenceNum="155">
+    <parentClassId href="GlAccountClass#EXPENSE"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="NON_CASH_EXPENSE" description="Non-Cash Expense" sequenceNum="165">
+    <parentClassId href="GlAccountClass#EXPENSE"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="INTEREST_EXPENSE" description="Interest Expense" sequenceNum="160">
+    <parentClassId href="GlAccountClass#CASH_EXPENSE"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="COGS_EXPENSE" description="Cost of Goods Sold Expense" sequenceNum="162">
+    <parentClassId href="GlAccountClass#CASH_EXPENSE"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="SGA_EXPENSE" description="Selling, General, and Administrative Expense" sequenceNum="165">
+    <parentClassId href="GlAccountClass#CASH_EXPENSE"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="DEPRECIATION" description="Depreciation" sequenceNum="166">
+    <parentClassId href="GlAccountClass#NON_CASH_EXPENSE"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="AMORTIZATION" description="Amortization" sequenceNum="168">
+    <parentClassId href="GlAccountClass#NON_CASH_EXPENSE"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="INVENTORY_ADJUST" description="Inventory Adjustment" sequenceNum="169">
+    <parentClassId href="GlAccountClass#NON_CASH_EXPENSE"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="CURRENT_LIABILITY" description="Current Liability" sequenceNum="215">
+    <parentClassId href="GlAccountClass#LIABILITY"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="LONGTERM_LIABILITY" description="Long Term Liability" sequenceNum="225">
+    <parentClassId href="GlAccountClass#LIABILITY"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="OWNERS_EQUITY" description="Owners Equity" sequenceNum="235">
+    <parentClassId href="GlAccountClass#EQUITY"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="RETAINED_EARNINGS" description="Retained Earnings" sequenceNum="245">
+    <parentClassId href="GlAccountClass#EQUITY"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="ACCUM_DEPRECIATION" description="Accumulated Depreciation" sequenceNum="275">
+    <parentClassId href="GlAccountClass#CONTRA_ASSET"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="ACCUM_AMORTIZATION" description="Accumulated Amortization" sequenceNum="285">
+    <parentClassId href="GlAccountClass#CONTRA_ASSET"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="CASH_INCOME" description="Cash Income" sequenceNum="295">
+    <parentClassId href="GlAccountClass#INCOME"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="NON_CASH_INCOME" description="Non-Cash Income" sequenceNum="298">
+    <parentClassId href="GlAccountClass#INCOME"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="_NA_" description="Not Applicable"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="ACCOUNTS_RECEIVABLE" description="Accounts Receivable"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="ACCOUNTS_PAYABLE" description="Accounts Payable"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="BALANCE_ACCOUNT" description="Balance"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="BANK_STLMNT_ACCOUNT" description="Bank Settlement"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="UNDEPOSITED_RECEIPTS" description="Undeposited Receipts"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="MRCH_STLMNT_ACCOUNT" description="Merchant Account Settlement">
+    <parentTypeId href="GlAccountType#ACCOUNTS_RECEIVABLE"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="CURRENT_ASSET" description="Current Asset"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="FIXED_ASSET" description="Fixed Asset"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="FIXED_ASSET_MAINT" description="Fixed Asset Maintenance"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="OTHER_ASSET" description="Other Asset"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="CREDIT_CARD" description="Credit Card"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="CURRENT_LIABILITY" description="Current Liability"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="LONG_TERM_LIABILITY" description="Long Term Liability"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="CUSTOMER_ACCOUNT" description="Customer"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="SUPPLIER_ACCOUNT" description="Supplier"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="PRODUCT_ACCOUNT" description="Product"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="INVENTORY_ACCOUNT" description="Inventory"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="INV_ADJ_AVG_COST" description="Inventory Adjustment from Average Cost">
+    <parentTypeId href="GlAccountType#INVENTORY_ACCOUNT"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="INV_ADJ_VAL" description="Inventory Item Value Adjustment"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="RAWMAT_INVENTORY" description="Raw Materials Inventory"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="WIP_INVENTORY" description="Work In Progress Inventory"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="TAX_ACCOUNT" description="Tax"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="PROFIT_LOSS_ACCOUNT" description="Profit Loss"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="SALES_ACCOUNT" description="Sales"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="SALES_RETURNS" description="Customer Returns"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="DISCOUNTS_ACCOUNT" description="Discounts"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="COGS_ACCOUNT" description="Cost of Goods Sold"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="COGS_ADJ_AVG_COST" description="COGS - Average Cost Adjustment">
+    <parentTypeId href="GlAccountType#COGS_ACCOUNT"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="PURCHASE_ACCOUNT" description="Purchase"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="INV_CHANGE_ACCOUNT" description="Inventory Change"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="EXPENSE" description="Expense"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="OPERATING_EXPENSE" description="Operating Expense">
+    <parentTypeId href="GlAccountType#EXPENSE"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="OTHER_EXPENSE" description="Other Expense">
+    <parentTypeId href="GlAccountType#EXPENSE"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="OWNERS_EQUITY" description="Owner's Equity"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="RETAINED_EARNINGS" description="Retained Earnings"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="CUSTOMER_DEPOSIT" description="Customer Deposits">
+    <parentTypeId href="GlAccountType#CURRENT_LIABILITY"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="CUSTOMER_CREDIT" description="Customer Credits">
+    <parentTypeId href="GlAccountType#CURRENT_LIABILITY"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="CUSTOMER_GC_DEPOSIT" description="Customer Gift Certificate Balances">
+    <parentTypeId href="GlAccountType#CURRENT_LIABILITY"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="UNINVOICED_SHIP_RCPT" description="Uninvoiced Shipment Receipts">
+    <parentTypeId href="GlAccountType#CURRENT_LIABILITY"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="PURCHASE_PRICE_VAR" description="Purchase Price Variance">
+    <parentTypeId href="GlAccountType#OTHER_EXPENSE"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="INCOME" description="Income"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="OTHER_INCOME" description="Other Income">
+    <parentTypeId href="GlAccountType#INCOME"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="INTEREST_INCOME" description="Interest Income">
+    <parentTypeId href="GlAccountType#INCOME"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="INTRSTINC_RECEIVABLE" description="Interest Income Receivables">
+    <parentTypeId href="GlAccountType#ACCOUNTS_RECEIVABLE"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="PREPAID_EXPENSES" description="Prepaid Expenses">
+    <parentTypeId href="GlAccountType#CURRENT_ASSET"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="INVENTORY_XFER_OUT" description="Receivable from Inventory Transferred Out">
+    <parentTypeId href="GlAccountType#CURRENT_ASSET"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="INVENTORY_XFER_IN" description="Payable from Inventory Transferred In">
+    <parentTypeId href="GlAccountType#CURRENT_LIABILITY"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="ACCPAYABLE_UNAPPLIED" description="Accounts Payable - Unapplied Payments">
+    <parentTypeId href="GlAccountType#ACCOUNTS_PAYABLE"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="ACCREC_UNAPPLIED" description="Accounts Receivable - Unapplied Payments">
+    <parentTypeId href="GlAccountType#ACCOUNTS_RECEIVABLE"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="COMMISSION_EXPENSE" description="Commission Expense">
+    <parentTypeId href="GlAccountType#OPERATING_EXPENSE"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="COMMISSIONS_PAYABLE" description="Commissions Payables">
+    <parentTypeId href="GlAccountType#CURRENT_LIABILITY"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="WRITEOFF" description="Write Off">
+    <parentTypeId href="GlAccountType#OTHER_EXPENSE"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="ACCTRECV_WRITEOFF" description="Accounts Receivables Write Off">
+    <parentTypeId href="GlAccountType#WRITEOFF"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="ACCTPAY_WRITEOFF" description="Accounts Payables Write Off">
+    <parentTypeId href="GlAccountType#WRITEOFF"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="COMMISSIONS_WRITEOFF" description="Commissions Payables Write Off">
+    <parentTypeId href="GlAccountType#WRITEOFF"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="INTRSTINC_WRITEOFF" description="Interest Income Write Off">
+    <parentTypeId href="GlAccountType#WRITEOFF"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="FX_GAIN_LOSS_ACCT" description="Foreign Exchange Gain/Loss">
+    <parentTypeId href="GlAccountType#OTHER_EXPENSE"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="FX_GAIN_ACCOUNT" description="Foreign Exchange Gain">
+    <parentTypeId href="GlAccountType#FX_GAIN_LOSS_ACCT"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="FX_LOSS_ACCOUNT" description="Foreign Exchange Loss">
+    <parentTypeId href="GlAccountType#FX_GAIN_LOSS_ACCT"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlResourceType" glResourceTypeId="_NA_" description="Not Applicable"/>
+  <contents xsi:type="biz-ledger:GlResourceType" glResourceTypeId="MONEY" description="Money"/>
+  <contents xsi:type="biz-ledger:GlResourceType" glResourceTypeId="RAW_MATERIALS" description="Raw Materials"/>
+  <contents xsi:type="biz-ledger:GlResourceType" glResourceTypeId="LABOR" description="Labor"/>
+  <contents xsi:type="biz-ledger:GlResourceType" glResourceTypeId="SERVICES" description="Services"/>
+  <contents xsi:type="biz-ledger:GlResourceType" glResourceTypeId="FINISHED_GOODS" description="Finished Goods"/>
+  <contents xsi:type="biz-ledger:GlResourceType" glResourceTypeId="DELIVERED_GOODS" description="Delivered Goods"/>
+  <contents xsi:type="biz-ledger:GlXbrlClass" glXbrlClassId="US_GAAP" description="US GAAP"/>
+  <contents xsi:type="biz-ledger:GlXbrlClass" glXbrlClassId="IAS" description="IAS"/>
+  <contents xsi:type="biz-ledger:GlFiscalType" glFiscalTypeId="ACTUAL" description="Actual"/>
+  <contents xsi:type="biz-ledger:GlFiscalType" glFiscalTypeId="BUDGET" description="Budget"/>
+  <contents xsi:type="biz-ledger:GlFiscalType" glFiscalTypeId="FORECAST" description="Forecast"/>
+  <contents xsi:type="biz-ledger:GlFiscalType" glFiscalTypeId="PLAN" description="Plan"/>
+  <contents xsi:type="biz-ledger:GlFiscalType" glFiscalTypeId="SCENARIO" description="Scenario"/>
+  <contents xsi:type="biz-ledger:GlAccountCategoryType" glAccountCategoryTypeId="COST_CENTER" description="Cost Center Category"/>
+  <contents xsi:type="biz-invoice:InvoiceContentType" invoiceContentTypeId="COMMENTS" description="comments"/>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="INVOICE_ADJ" description="Invoice Adjustment"/>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="INVOICE_HEAD_ADJ" description="Invoice Header Adjustment">
+    <parentTypeId href="InvoiceItemType#INVOICE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="INVOICE_ITM_ADJ" description="Invoice Item Adjustment">
+    <parentTypeId href="InvoiceItemType#INVOICE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SINVOICE_HEAD_ADJ" description="Sales Invoice Header Adjustment">
+    <parentTypeId href="InvoiceItemType#INVOICE_HEAD_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SINVOICE_ITM_ADJ" description="Sales Invoice Item Adjustment">
+    <parentTypeId href="InvoiceItemType#INVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINVOICE_ADJ" description="Purchase Invoice Header Adjustment">
+    <parentTypeId href="InvoiceItemType#INVOICE_HEAD_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINVOICE_ITM_ADJ" description="Purchase Invoice Item Adjustment">
+    <parentTypeId href="InvoiceItemType#INVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRETURN_ADJ" description="Customer Return Adjustment">
+    <parentTypeId href="InvoiceItemType#INVOICE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRETURN_ADJ" description="Supplier Return Adjustment">
+    <parentTypeId href="InvoiceItemType#INVOICE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="INV_PROMOTION_ADJ" description="Invoice Promotion(Sales)">
+    <parentTypeId href="InvoiceItemType#SINVOICE_HEAD_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="INV_DISCOUNT_ADJ" description="Invoice Discount(Sales)">
+    <parentTypeId href="InvoiceItemType#SINVOICE_HEAD_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="FEE" description="Invoice Fee(Sales)">
+    <parentTypeId href="InvoiceItemType#SINVOICE_HEAD_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="INV_MISC_CHARGE" description="Invoice Miscellaneous Charges(Sales)">
+    <parentTypeId href="InvoiceItemType#SINVOICE_HEAD_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="INV_SALES_TAX" description="Invoice Sales Tax(Sales)">
+    <parentTypeId href="InvoiceItemType#SINVOICE_HEAD_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="INV_SHIPPING_CHARGES" description="Invoice Shipping and Handling(Sales)">
+    <parentTypeId href="InvoiceItemType#SINVOICE_HEAD_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="INV_SURCHARGE_ADJ" description="Invoice Surcharge(Sales)">
+    <parentTypeId href="InvoiceItemType#SINVOICE_HEAD_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="INV_ADD_FEATURE" description="Invoice Additional Feature(Sales)">
+    <parentTypeId href="InvoiceItemType#SINVOICE_HEAD_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="INV_WARRANTY_ADJ" description="Invoice Warranty(Sales)">
+    <parentTypeId href="InvoiceItemType#SINVOICE_HEAD_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="INV_INTRST_CHRG" description="Invoice Interest Charge">
+    <parentTypeId href="InvoiceItemType#SINVOICE_HEAD_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="ITM_PROMOTION_ADJ" description="Invoice Item Promotion(Sales)">
+    <parentTypeId href="InvoiceItemType#SINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="ITM_REPLACE_ADJ" description="Invoice Item Replacement(Sales)">
+    <parentTypeId href="InvoiceItemType#SINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="ITM_DISCOUNT_ADJ" description="Invoice Item Discount(Sales)">
+    <parentTypeId href="InvoiceItemType#SINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="ITM_FEE" description="Invoice Item Fee(Sales)">
+    <parentTypeId href="InvoiceItemType#SINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="ITM_MISC_CHARGE" description="Invoice Item Miscellaneous Charges(Sales)">
+    <parentTypeId href="InvoiceItemType#SINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="ITM_SALES_TAX" description="Invoice Item Sales Tax(Sales)">
+    <parentTypeId href="InvoiceItemType#SINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="ITM_SHIPPING_CHARGES" description="Invoice Item Shipping and Handling(Sales)">
+    <parentTypeId href="InvoiceItemType#SINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="ITM_SURCHARGE_ADJ" description="Invoice Item Surcharge(Sales)">
+    <parentTypeId href="InvoiceItemType#SINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="ITM_ADD_FEATURE" description="Invoice Item Additional Feature(Sales)">
+    <parentTypeId href="InvoiceItemType#SINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="ITM_WARRANTY_ADJ" description="Invoice Item Warranty(Sales)">
+    <parentTypeId href="InvoiceItemType#SINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="ITM_VAT_TAX" description="Invoice Item VAT Tax(Sales)">
+    <parentTypeId href="InvoiceItemType#SINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="INV_PROD_ITEM" description="Invoice Product Item(Sales)"/>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="INV_FPROD_ITEM" description="Invoice Finished Good Item(Sales)">
+    <parentTypeId href="InvoiceItemType#INV_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="INV_DPROD_ITEM" description="Invoice Digital Good Item(Sales)">
+    <parentTypeId href="InvoiceItemType#INV_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="INV_FDPROD_ITEM" description="Invoice Finished/Digital Good Item(Sales)">
+    <parentTypeId href="InvoiceItemType#INV_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="INV_PROD_FEATR_ITEM" description="Invoice Product-Feature Item(Sales)">
+    <parentTypeId href="InvoiceItemType#INV_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="INV_SPROD_ITEM" description="Invoice Service Product Item(Sales)">
+    <parentTypeId href="InvoiceItemType#INV_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="INV_WE_ITEM" description="Invoice Work-Effort Item(Sales)"/>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="INV_TE_ITEM" description="Invoice Time-Entry Item(Sales)"/>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINV_PROMOTION_ADJ" description="Invoice Promotion(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINVOICE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINV_DISCOUNT_ADJ" description="Invoice Discount(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINVOICE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="P_FEE" description="Invoice Fee(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINVOICE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINV_MISC_CHARGE" description="Invoice Miscellaneous Charges(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINVOICE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINV_SALES_TAX" description="Invoice Sales Tax(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINVOICE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINV_SHIP_CHARGES" description="Invoice Shipping and Handling(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINVOICE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINV_SURCHARGE_ADJ" description="Invoice Surcharge(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINVOICE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINV_ADD_FEATURE" description="Invoice Additional Feature(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINVOICE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINV_WARRANTY_ADJ" description="Invoice Warranty(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINVOICE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PITM_PROMOTION_ADJ" description="Invoice Item Promotion(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PITM_REPLACE_ADJ" description="Invoice Item Replacement(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PITM_DISCOUNT_ADJ" description="Invoice Item Discount(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PITM_FEE" description="Invoice Item Fee(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PITM_MISC_CHARGE" description="Invoice Item Miscellaneous Charges(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PITM_SALES_TAX" description="Invoice Item Sales Tax(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PITM_SHIP_CHARGES" description="Invoice Item Shipping and Handling(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PITM_SURCHARGE_ADJ" description="Invoice Item Surcharge(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PITM_ADD_FEATURE" description="Invoice Item Additional Feature(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PITM_WARRANTY_ADJ" description="Invoice Item Warranty(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINVOICE_ITM_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINV_PROD_ITEM" description="Invoice Product Item(Purchase)"/>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINV_FPROD_ITEM" description="Invoice Finished Good Item(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINV_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINV_DPROD_ITEM" description="Invoice Digital Good Item(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINV_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINV_FDPROD_ITEM" description="Invoice Finished/Digital Good Item(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINV_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINV_PROD_FEATR_ITEM" description="Invoice Product-Feature Item(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINV_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINV_RPROD_ITEM" description="Invoice Raw Material(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINV_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINV_SPROD_ITEM" description="Invoice Service Product Item(Purchase)">
+    <parentTypeId href="InvoiceItemType#PINV_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINV_INVPRD_ITEM" description="Invoice Inventory Product Item">
+    <parentTypeId href="InvoiceItemType#PINV_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINV_SUPLPRD_ITEM" description="Invoice Supplies (to Expense) Product Item">
+    <parentTypeId href="InvoiceItemType#PINV_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINV_FXASTPRD_ITEM" description="Invoice Fixed Asset Product Item">
+    <parentTypeId href="InvoiceItemType#PINV_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINV_WE_ITEM" description="Invoice Work-Effort Item(Purchase)"/>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PINV_TE_ITEM" description="Invoice Time-Entry Item(Purchase)"/>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_PROD_ITEM" description="Return Product Item"/>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_FPROD_ITEM" description="Return Finished Good Item">
+    <parentTypeId href="InvoiceItemType#CRT_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_DPROD_ITEM" description="Return Digital Good Item">
+    <parentTypeId href="InvoiceItemType#CRT_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_FDPROD_ITEM" description="Return Finished/Digital Good Item">
+    <parentTypeId href="InvoiceItemType#CRT_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_RPROD_ITEM" description="Return Raw Material Good Item">
+    <parentTypeId href="InvoiceItemType#CRT_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_PROD_FEATR_ITEM" description="Return Product-Feature Item">
+    <parentTypeId href="InvoiceItemType#CRT_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_SPROD_ITEM" description="Return Service Product Item">
+    <parentTypeId href="InvoiceItemType#CRT_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_WE_ITEM" description="Return Work-Effort Item"/>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_TE_ITEM" description="Return Time-Entry Item"/>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_PROMOTION_ADJ" description="Return Promotion">
+    <parentTypeId href="InvoiceItemType#CRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_REPLACE_ADJ" description="Return Replacement">
+    <parentTypeId href="InvoiceItemType#CRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_DISCOUNT_ADJ" description="Return Discount">
+    <parentTypeId href="InvoiceItemType#CRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_FEE_ADJ" description="Return Fee">
+    <parentTypeId href="InvoiceItemType#CRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_MISC_ADJ" description="Return Miscellaneous Charges">
+    <parentTypeId href="InvoiceItemType#CRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_SALES_TAX_ADJ" description="Return Sales Tax">
+    <parentTypeId href="InvoiceItemType#CRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_VAT_TAX_ADJ" description="Return VAT Tax">
+    <parentTypeId href="InvoiceItemType#CRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_VAT_PC_ADJ" description="Return VAT Price Correct">
+    <parentTypeId href="InvoiceItemType#CRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_SHIPPING_ADJ" description="Return Shipping and Handling">
+    <parentTypeId href="InvoiceItemType#CRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_SURCHARGE_ADJ" description="Return Surcharge">
+    <parentTypeId href="InvoiceItemType#CRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_ADD_FEATURE_ADJ" description="Return Additional Feature">
+    <parentTypeId href="InvoiceItemType#CRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_WARRANTY_ADJ" description="Return Warranty">
+    <parentTypeId href="InvoiceItemType#CRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_MKTG_PKG_ADJ" description="Return Marketing Package Adjustment">
+    <parentTypeId href="InvoiceItemType#CRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="CRT_MAN_ADJ" description="Return Manual Adjustment">
+    <parentTypeId href="InvoiceItemType#CRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_PROD_ITEM" description="Return Product Item"/>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_FPROD_ITEM" description="Return Finished Good Item">
+    <parentTypeId href="InvoiceItemType#SRT_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_DPROD_ITEM" description="Return Digital Good Item">
+    <parentTypeId href="InvoiceItemType#SRT_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_FDPROD_ITEM" description="Return Finished/Digital Good Item">
+    <parentTypeId href="InvoiceItemType#SRT_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_RPROD_ITEM" description="Return Raw Material Good Item">
+    <parentTypeId href="InvoiceItemType#SRT_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_PROD_FEATR_ITEM" description="Return Product-Feature Item">
+    <parentTypeId href="InvoiceItemType#SRT_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_SPROD_ITEM" description="Return Service Product Item">
+    <parentTypeId href="InvoiceItemType#SRT_PROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_WE_ITEM" description="Return Work-Effort Item"/>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_TE_ITEM" description="Return Time-Entry Item"/>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_PROMOTION_ADJ" description="Return Promotion">
+    <parentTypeId href="InvoiceItemType#SRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_REPLACE_ADJ" description="Return Replacement">
+    <parentTypeId href="InvoiceItemType#SRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_DISCOUNT_ADJ" description="Return Discount">
+    <parentTypeId href="InvoiceItemType#SRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_FEE_ADJ" description="Return Fee">
+    <parentTypeId href="InvoiceItemType#SRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_MISC_ADJ" description="Return Miscellaneous Charges">
+    <parentTypeId href="InvoiceItemType#SRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_SALES_TAX_ADJ" description="Return Sales Tax">
+    <parentTypeId href="InvoiceItemType#SRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_VAT_TAX_ADJ" description="Return VAT Tax">
+    <parentTypeId href="InvoiceItemType#SRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_VAT_PC_ADJ" description="Return VAT Price Correct">
+    <parentTypeId href="InvoiceItemType#SRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_SHIPPING_ADJ" description="Return Shipping and Handling">
+    <parentTypeId href="InvoiceItemType#SRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_SURCHARGE_ADJ" description="Return Surcharge">
+    <parentTypeId href="InvoiceItemType#SRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_ADD_FEATURE_ADJ" description="Return Additional Feature">
+    <parentTypeId href="InvoiceItemType#SRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_WARRANTY_ADJ" description="Return Warranty">
+    <parentTypeId href="InvoiceItemType#SRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_MKTG_PKG_ADJ" description="Return Marketing Package Adjustment">
+    <parentTypeId href="InvoiceItemType#SRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="SRT_MAN_ADJ" description="Return Manual Adjustment">
+    <parentTypeId href="InvoiceItemType#SRETURN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="COMM_INV_ITEM" description="Commission Invoice Line Item"/>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="COMM_INV_ADJ" description="Commission Invoice Adjustment">
+    <parentTypeId href="InvoiceItemType#INVOICE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceType" invoiceTypeId="INVOICE" description="Invoice"/>
+  <contents xsi:type="biz-invoice:InvoiceType" invoiceTypeId="PURCHASE_INVOICE" description="Purchase Invoice">
+    <parentTypeId href="InvoiceType#INVOICE"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceType" invoiceTypeId="SALES_INVOICE" description="Sales Invoice">
+    <parentTypeId href="InvoiceType#INVOICE"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceType" invoiceTypeId="CUST_RTN_INVOICE" description="Customer Return">
+    <parentTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceType" invoiceTypeId="PURC_RTN_INVOICE" description="Purchase Return">
+    <parentTypeId href="InvoiceType#SALES_INVOICE"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceType" invoiceTypeId="COMMISSION_INVOICE" description="Commission">
+    <parentTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceType" invoiceTypeId="INTEREST_INVOICE" description="Interest">
+    <parentTypeId href="InvoiceType#SALES_INVOICE"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceType" invoiceTypeId="TEMPLATE" description="Invoice Template">
+    <parentTypeId href="InvoiceType#INVOICE"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceType" invoiceTypeId="SALES_INV_TEMPLATE" description="Sales Invoice Template">
+    <parentTypeId href="InvoiceType#TEMPLATE"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceType" invoiceTypeId="PUR_INV_TEMPLATE" description="Purchase Invoice Template">
+    <parentTypeId href="InvoiceType#TEMPLATE"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemAssocType" invoiceItemAssocTypeId="COMMISSION_INVOICE" description="Commission"/>
+  <contents xsi:type="biz-invoice:InvoiceItemAssocType" invoiceItemAssocTypeId="WITHDRAW_INVOICE" description="Withdraw"/>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="FINISHED_GOOD">
+    <invoiceTypeId href="InvoiceType#SALES_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#INV_FPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="SERVICE_PRODUCT">
+    <invoiceTypeId href="InvoiceType#SALES_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#INV_SPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="SERVICE">
+    <invoiceTypeId href="InvoiceType#SALES_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#INV_SPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="DIGITAL_GOOD">
+    <invoiceTypeId href="InvoiceType#SALES_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#INV_DPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="FINDIG_GOOD">
+    <invoiceTypeId href="InvoiceType#SALES_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#INV_FDPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="PROMOTION_ADJUSTMENT">
+    <invoiceTypeId href="InvoiceType#SALES_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#ITM_PROMOTION_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="REPLACE_ADJUSTMENT">
+    <invoiceTypeId href="InvoiceType#SALES_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#ITM_REPLACE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="DISCOUNT_ADJUSTMENT">
+    <invoiceTypeId href="InvoiceType#SALES_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#ITM_DISCOUNT_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="FEE">
+    <invoiceTypeId href="InvoiceType#SALES_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#ITM_FEE"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="MISCELLANEOUS_CHARGE">
+    <invoiceTypeId href="InvoiceType#SALES_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#ITM_MISC_CHARGE"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="SALES_TAX">
+    <invoiceTypeId href="InvoiceType#SALES_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#ITM_SALES_TAX"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="SHIPPING_CHARGES">
+    <invoiceTypeId href="InvoiceType#SALES_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#ITM_SHIPPING_CHARGES"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="SURCHARGE_ADJUSTMENT">
+    <invoiceTypeId href="InvoiceType#SALES_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#ITM_SURCHARGE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="ADDITIONAL_FEATURE">
+    <invoiceTypeId href="InvoiceType#SALES_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#ITM_ADD_FEATURE"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="WARRANTY_ADJUSTMENT">
+    <invoiceTypeId href="InvoiceType#SALES_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#ITM_WARRANTY_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="VAT_TAX">
+    <invoiceTypeId href="InvoiceType#SALES_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#ITM_VAT_TAX"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="INVENTORY_ORDER_ITEM">
+    <invoiceTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#PINV_INVPRD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="SUPPLIES_ORDER_ITEM">
+    <invoiceTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#PINV_SUPLPRD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="ASSET_ORDER_ITEM">
+    <invoiceTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#PINV_FXASTPRD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="FINISHED_GOOD">
+    <invoiceTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#PINV_FPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="DIGITAL_GOOD">
+    <invoiceTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#PINV_DPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="FINDIG_GOOD">
+    <invoiceTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#PINV_FDPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="SERVICE">
+    <invoiceTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#PINV_SPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RAW_MATERIAL">
+    <invoiceTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#PINV_RPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="PROMOTION_ADJUSTMENT">
+    <invoiceTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#PITM_PROMOTION_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="REPLACE_ADJUSTMENT">
+    <invoiceTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#PITM_REPLACE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="DISCOUNT_ADJUSTMENT">
+    <invoiceTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#PITM_DISCOUNT_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="FEE">
+    <invoiceTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#PITM_FEE"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="MISCELLANEOUS_CHARGE">
+    <invoiceTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#PITM_MISC_CHARGE"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="SALES_TAX">
+    <invoiceTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#PITM_SALES_TAX"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="SHIPPING_CHARGES">
+    <invoiceTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#PITM_SHIP_CHARGES"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="SURCHARGE_ADJUSTMENT">
+    <invoiceTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#PITM_SURCHARGE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="ADDITIONAL_FEATURE">
+    <invoiceTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#PITM_ADD_FEATURE"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="WARRANTY_ADJUSTMENT">
+    <invoiceTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#PITM_WARRANTY_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_FPROD_ITEM">
+    <invoiceTypeId href="InvoiceType#CUST_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#CRT_FPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_DPROD_ITEM">
+    <invoiceTypeId href="InvoiceType#CUST_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#CRT_DPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_FDPROD_ITEM">
+    <invoiceTypeId href="InvoiceType#CUST_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#CRT_FDPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_RPROD_ITEM">
+    <invoiceTypeId href="InvoiceType#CUST_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#CRT_RPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_PROMOTION_ADJ">
+    <invoiceTypeId href="InvoiceType#CUST_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#CRT_PROMOTION_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_REPLACE_ADJ">
+    <invoiceTypeId href="InvoiceType#CUST_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#CRT_REPLACE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_DISCOUNT_ADJ">
+    <invoiceTypeId href="InvoiceType#CUST_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#CRT_DISCOUNT_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_FEE_ADJ">
+    <invoiceTypeId href="InvoiceType#CUST_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#CRT_FEE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_MISC_CHARGE_ADJ">
+    <invoiceTypeId href="InvoiceType#CUST_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#CRT_MISC_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_SALES_TAX_ADJ">
+    <invoiceTypeId href="InvoiceType#CUST_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#CRT_SALES_TAX_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_VAT_TAX_ADJ">
+    <invoiceTypeId href="InvoiceType#CUST_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#CRT_VAT_TAX_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_VAT_PC_ADJ">
+    <invoiceTypeId href="InvoiceType#CUST_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#CRT_VAT_PC_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_SHIPPING_ADJ">
+    <invoiceTypeId href="InvoiceType#CUST_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#CRT_SHIPPING_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_SURCHARGE_ADJ">
+    <invoiceTypeId href="InvoiceType#CUST_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#CRT_SURCHARGE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_ADD_FEATURE_ADJ">
+    <invoiceTypeId href="InvoiceType#CUST_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#CRT_ADD_FEATURE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_WARRANTY_ADJ">
+    <invoiceTypeId href="InvoiceType#CUST_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#CRT_WARRANTY_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_MAN_ADJ">
+    <invoiceTypeId href="InvoiceType#CUST_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#CRT_MAN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_MKTG_PKG_ADJ">
+    <invoiceTypeId href="InvoiceType#CUST_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#CRT_MKTG_PKG_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_SPROD_ITEM">
+    <invoiceTypeId href="InvoiceType#CUST_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#CRT_SPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_FPROD_ITEM">
+    <invoiceTypeId href="InvoiceType#PURC_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#SRT_FPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_DPROD_ITEM">
+    <invoiceTypeId href="InvoiceType#PURC_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#SRT_DPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_FDPROD_ITEM">
+    <invoiceTypeId href="InvoiceType#PURC_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#SRT_FDPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_RPROD_ITEM">
+    <invoiceTypeId href="InvoiceType#PURC_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#SRT_RPROD_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_PROMOTION_ADJ">
+    <invoiceTypeId href="InvoiceType#PURC_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#SRT_PROMOTION_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_REPLACE_ADJ">
+    <invoiceTypeId href="InvoiceType#PURC_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#SRT_REPLACE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_DISCOUNT_ADJ">
+    <invoiceTypeId href="InvoiceType#PURC_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#SRT_DISCOUNT_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_FEE_ADJ">
+    <invoiceTypeId href="InvoiceType#PURC_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#SRT_FEE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_MISC_CHARGE_ADJ">
+    <invoiceTypeId href="InvoiceType#PURC_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#SRT_MISC_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_SALES_TAX_ADJ">
+    <invoiceTypeId href="InvoiceType#PURC_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#SRT_SALES_TAX_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_VAT_TAX_ADJ">
+    <invoiceTypeId href="InvoiceType#PURC_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#SRT_VAT_TAX_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_VAT_PC_ADJ">
+    <invoiceTypeId href="InvoiceType#PURC_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#SRT_VAT_PC_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_SHIPPING_ADJ">
+    <invoiceTypeId href="InvoiceType#PURC_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#SRT_SHIPPING_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_SURCHARGE_ADJ">
+    <invoiceTypeId href="InvoiceType#PURC_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#SRT_SURCHARGE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_ADD_FEATURE_ADJ">
+    <invoiceTypeId href="InvoiceType#PURC_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#SRT_ADD_FEATURE_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_WARRANTY_ADJ">
+    <invoiceTypeId href="InvoiceType#PURC_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#SRT_WARRANTY_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_MAN_ADJ">
+    <invoiceTypeId href="InvoiceType#PURC_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#SRT_MAN_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="RET_MKTG_PKG_ADJ">
+    <invoiceTypeId href="InvoiceType#PURC_RTN_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#SRT_MKTG_PKG_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="COM_COMM_ITEM">
+    <invoiceTypeId href="InvoiceType#COMMISSION_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#COMM_INV_ITEM"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="COM_COMM_ADJ">
+    <invoiceTypeId href="InvoiceType#COMMISSION_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#COMM_INV_ADJ"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemTypeMap" invoiceItemMapKey="INT_INV_CHRG">
+    <invoiceTypeId href="InvoiceType#INTEREST_INVOICE"/>
+    <invoiceItemTypeId href="InvoiceItemType#INV_INTRST_CHRG"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceType" invoiceTypeId="PAYROL_INVOICE" description="Payrol">
+    <parentTypeId href="InvoiceType#PURCHASE_INVOICE"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL" description="Payrol"/>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_EARN_HOURS" description="Earnings and Hours">
+    <parentTypeId href="InvoiceItemType#PAYROL"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_HRLY_RATE" description="Hourly Rate">
+    <parentTypeId href="InvoiceItemType#PAYROL_EARN_HOURS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_HRLY_RATE_SIC" description="Sick Hourly Rate">
+    <parentTypeId href="InvoiceItemType#PAYROL_EARN_HOURS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_SALARY" description="Salary">
+    <parentTypeId href="InvoiceItemType#PAYROL_EARN_HOURS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_SALARY_VAC" description="Vacation Salary">
+    <parentTypeId href="InvoiceItemType#PAYROL_EARN_HOURS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_SALARY_SICK" description="Sick Salary">
+    <parentTypeId href="InvoiceItemType#PAYROL_EARN_HOURS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_BONUS" description="Bonus">
+    <parentTypeId href="InvoiceItemType#PAYROL_EARN_HOURS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_COMMISSION" description="Commission">
+    <parentTypeId href="InvoiceItemType#PAYROL_EARN_HOURS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_ADV_PAY" description="Advance Pay">
+    <parentTypeId href="InvoiceItemType#PAYROL_EARN_HOURS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_MIL_REIMB" description="Mileage Reimboursement">
+    <parentTypeId href="InvoiceItemType#PAYROL_EARN_HOURS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_OFF_EXP_REIMB" description="Office Exp. reimboursement">
+    <parentTypeId href="InvoiceItemType#PAYROL_EARN_HOURS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_PAYPER_OVRPAY" description="Pay Period adj(over pay)">
+    <parentTypeId href="InvoiceItemType#PAYROL_EARN_HOURS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_PAYPER_PAY" description="Pay Period adj pay">
+    <parentTypeId href="InvoiceItemType#PAYROL_EARN_HOURS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_DD_FROM_GROSS" description="Deductions from Gross">
+    <parentTypeId href="InvoiceItemType#PAYROL"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_DD_125COMPY" description="125*Compy. Contr Other Prem.">
+    <parentTypeId href="InvoiceItemType#PAYROL_DD_FROM_GROSS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_DD_125PPO" description="125*PPO (pre tax)">
+    <parentTypeId href="InvoiceItemType#PAYROL_DD_FROM_GROSS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_DD_125HSA" description="125*HSA Contribution (pre tax)">
+    <parentTypeId href="InvoiceItemType#PAYROL_DD_FROM_GROSS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_DD_401K" description="401K Emp.">
+    <parentTypeId href="InvoiceItemType#PAYROL_DD_FROM_GROSS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_DD_REPAY" description="Advance Repayment">
+    <parentTypeId href="InvoiceItemType#PAYROL_DD_FROM_GROSS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_DD_CHAR_DONAT" description="Charity Donation">
+    <parentTypeId href="InvoiceItemType#PAYROL_DD_FROM_GROSS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_DD_CHILD_SUPP" description="Child Support Garnishment">
+    <parentTypeId href="InvoiceItemType#PAYROL_DD_FROM_GROSS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_DD_MISC" description="Miscellaneous Deduction">
+    <parentTypeId href="InvoiceItemType#PAYROL_DD_FROM_GROSS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_DD_ROTH_401K" description="Roth 401k Emp.">
+    <parentTypeId href="InvoiceItemType#PAYROL_DD_FROM_GROSS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_DD_SIMP_IRA" description="Simple IRA emp.">
+    <parentTypeId href="InvoiceItemType#PAYROL_DD_FROM_GROSS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_DD_UNION" description="Union Dues">
+    <parentTypeId href="InvoiceItemType#PAYROL_DD_FROM_GROSS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_DD_SAL_TIMOFF" description="Unpaid Salary Time off.">
+    <parentTypeId href="InvoiceItemType#PAYROL_DD_FROM_GROSS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_DD_WAG_GARN" description="Wage Garnishment">
+    <parentTypeId href="InvoiceItemType#PAYROL_DD_FROM_GROSS"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_TAXES" description="Taxes">
+    <parentTypeId href="InvoiceItemType#PAYROL"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_TAX_FEDERAL" description="Federal Witholding">
+    <parentTypeId href="InvoiceItemType#PAYROL_TAXES"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_SOC_SEC_EMPL" description="Social Security Employee">
+    <parentTypeId href="InvoiceItemType#PAYROL_TAXES"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_TAX_MED_EMPL" description="Medicare Employee">
+    <parentTypeId href="InvoiceItemType#PAYROL_TAXES"/>
+  </contents>
+  <contents xsi:type="biz-invoice:InvoiceItemType" invoiceItemTypeId="PAYROL_TAX_MD_WITHOL" description="MD Withholding">
+    <parentTypeId href="InvoiceItemType#PAYROL_TAXES"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="TAXABLE_INV_ITM_TY" description="Taxable Invoice Item Types"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="INV_SALES_TAX" description="Sales Invoice Sales Tax" enumCode="INV_SALES_TAX" sequenceId="01">
+    <enumTypeId href="EnumerationType#TAXABLE_INV_ITM_TY"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="ITM_SALES_TAX" description="Sales Invoice Line Item Sales Tax" enumCode="ITM_SALES_TAX" sequenceId="02">
+    <enumTypeId href="EnumerationType#TAXABLE_INV_ITM_TY"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PINV_SALES_TAX" description="Purchase Invoice Sales Tax" enumCode="PINV_SALES_TAX" sequenceId="03">
+    <enumTypeId href="EnumerationType#TAXABLE_INV_ITM_TY"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="PITM_SALES_TAX" description="Purchase Invoice Line Item Sales Tax" enumCode="PITM_SALES_TAX" sequenceId="04">
+    <enumTypeId href="EnumerationType#TAXABLE_INV_ITM_TY"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="CRT_SALES_TAX_ADJ" description="Customer Return Sales Tax Adjustment" enumCode="CRT_SALES_TAX_ADJ" sequenceId="05">
+    <enumTypeId href="EnumerationType#TAXABLE_INV_ITM_TY"/>
+  </contents>
+  <contents xsi:type="biz-payment:PaymentMethodType" paymentMethodTypeId="CREDIT_CARD" description="Credit Card"/>
+  <contents xsi:type="biz-payment:PaymentMethodType" paymentMethodTypeId="GIFT_CARD" description="Gift Card"/>
+  <contents xsi:type="biz-payment:PaymentMethodType" paymentMethodTypeId="GIFT_CERTIFICATE" description="Gift Certificate"/>
+  <contents xsi:type="biz-payment:PaymentMethodType" paymentMethodTypeId="CASH" description="Cash"/>
+  <contents xsi:type="biz-payment:PaymentMethodType" paymentMethodTypeId="EFT_ACCOUNT" description="Electronic Funds Transfer"/>
+  <contents xsi:type="biz-payment:PaymentMethodType" paymentMethodTypeId="FIN_ACCOUNT" description="Financial Account"/>
+  <contents xsi:type="biz-payment:PaymentMethodType" paymentMethodTypeId="PERSONAL_CHECK" description="Personal Check"/>
+  <contents xsi:type="biz-payment:PaymentMethodType" paymentMethodTypeId="COMPANY_CHECK" description="Company Check"/>
+  <contents xsi:type="biz-payment:PaymentMethodType" paymentMethodTypeId="CERTIFIED_CHECK" description="Certified Check"/>
+  <contents xsi:type="biz-payment:PaymentMethodType" paymentMethodTypeId="MONEY_ORDER" description="Money Order"/>
+  <contents xsi:type="biz-payment:PaymentMethodType" paymentMethodTypeId="COMPANY_ACCOUNT" description="Company Account"/>
+  <contents xsi:type="biz-payment:PaymentMethodType" paymentMethodTypeId="EXT_BILLACT" description="Billing Account"/>
+  <contents xsi:type="biz-payment:PaymentMethodType" paymentMethodTypeId="EXT_COD" description="Cash On Delivery"/>
+  <contents xsi:type="biz-payment:PaymentMethodType" paymentMethodTypeId="EXT_EBAY" description="eBay"/>
+  <contents xsi:type="biz-payment:PaymentMethodType" paymentMethodTypeId="EXT_OFFLINE" description="Offline Payment"/>
+  <contents xsi:type="biz-payment:PaymentMethodType" paymentMethodTypeId="EXT_PAYPAL" description="PayPal"/>
+  <contents xsi:type="biz-payment:PaymentMethodType" paymentMethodTypeId="EXT_WORLDPAY" description="RBS WorldPay"/>
+  <contents xsi:type="biz-payment:PaymentType" paymentTypeId="DISBURSEMENT" description="Disbursement"/>
+  <contents xsi:type="biz-payment:PaymentType" paymentTypeId="CUSTOMER_REFUND" description="Customer Refund">
+    <parentTypeId href="PaymentType#DISBURSEMENT"/>
+  </contents>
+  <contents xsi:type="biz-payment:PaymentType" paymentTypeId="VENDOR_PAYMENT" description="Vendor Payment">
+    <parentTypeId href="PaymentType#DISBURSEMENT"/>
+  </contents>
+  <contents xsi:type="biz-payment:PaymentType" paymentTypeId="VENDOR_PREPAY" description="Vendor Prepayment">
+    <parentTypeId href="PaymentType#DISBURSEMENT"/>
+  </contents>
+  <contents xsi:type="biz-payment:PaymentType" paymentTypeId="COMMISSION_PAYMENT" description="Commission Payment">
+    <parentTypeId href="PaymentType#DISBURSEMENT"/>
+  </contents>
+  <contents xsi:type="biz-payment:PaymentType" paymentTypeId="PAYROL_PAYMENT" description="Payrol Payment">
+    <parentTypeId href="PaymentType#DISBURSEMENT"/>
+  </contents>
+  <contents xsi:type="biz-payment:PaymentType" paymentTypeId="PAY_CHECK" description="Pay Check">
+    <parentTypeId href="PaymentType#DISBURSEMENT"/>
+  </contents>
+  <contents xsi:type="biz-payment:PaymentType" paymentTypeId="TAX_PAYMENT" description="Tax Payment">
+    <parentTypeId href="PaymentType#DISBURSEMENT"/>
+  </contents>
+  <contents xsi:type="biz-payment:PaymentType" paymentTypeId="SALES_TAX_PAYMENT" description="Sales Tax Payment">
+    <parentTypeId href="PaymentType#TAX_PAYMENT"/>
+  </contents>
+  <contents xsi:type="biz-payment:PaymentType" paymentTypeId="PAYROLL_TAX_PAYMENT" description="Payroll Tax Payment">
+    <parentTypeId href="PaymentType#TAX_PAYMENT"/>
+  </contents>
+  <contents xsi:type="biz-payment:PaymentType" paymentTypeId="INCOME_TAX_PAYMENT" description="Income Tax Payment">
+    <parentTypeId href="PaymentType#TAX_PAYMENT"/>
+  </contents>
+  <contents xsi:type="biz-payment:PaymentType" paymentTypeId="GC_WITHDRAWAL" description="Gift Certificate Withdrawal">
+    <parentTypeId href="PaymentType#DISBURSEMENT"/>
+  </contents>
+  <contents xsi:type="biz-payment:PaymentType" paymentTypeId="RECEIPT" description="Receipt"/>
+  <contents xsi:type="biz-payment:PaymentType" paymentTypeId="CUSTOMER_PAYMENT" description="Customer Payment">
+    <parentTypeId href="PaymentType#RECEIPT"/>
+  </contents>
+  <contents xsi:type="biz-payment:PaymentType" paymentTypeId="CUSTOMER_DEPOSIT" description="Customer Deposit">
+    <parentTypeId href="PaymentType#RECEIPT"/>
+  </contents>
+  <contents xsi:type="biz-payment:PaymentType" paymentTypeId="INTEREST_RECEIPT" description="Interest Receipt">
+    <parentTypeId href="PaymentType#RECEIPT"/>
+  </contents>
+  <contents xsi:type="biz-payment:PaymentType" paymentTypeId="GC_DEPOSIT" description="Gift Certificate Deposit">
+    <parentTypeId href="PaymentType#RECEIPT"/>
+  </contents>
+  <contents xsi:type="biz-payment:PaymentGroupType" paymentGroupTypeId="CHECK_RUN" description="Check Run"/>
+  <contents xsi:type="biz-payment:PaymentGroupType" paymentGroupTypeId="BATCH_PAYMENT" description="Batch of Payments"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="CC_AUTH" description="Credit Card authorize methods"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="CC_CAPTURE" description="Credit Card capture methods"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="CC_REFUND" description="Credit Card refund methods"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="CC_RELEASE" description="Credit Card release methods"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="CC_CREDIT" description="Credit Card credit methods"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="EFT_AUTH" description="EFT authorize methods"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="EFT_RELEASE" description="EFT release methods"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="FIN_AUTH" description="FIN account authorize methods"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="FIN_CAPTURE" description="FIN account capture methods"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="FIN_REFUND" description="FIN account refund methods"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="FIN_RELEASE" description="FIN account release methods"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="FIN_PURCHASE" description="FIN account purchase methods"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="GIFT_AUTH" description="GIFT card authorize methods"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="GIFT_CAPTURE" description="GIFT card capture methods"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="GIFT_REFUND" description="GIFT card refund methods"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="GIFT_RELEASE" description="GIFT card release methods"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="GIFT_PURCHASE" description="GIFT card purchase methods"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="PAYPAL_AUTH" description="PayPal authorize methods"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="PAYPAL_CAPTURE" description="PayPal capture methods"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="PAYPAL_REFUND" description="PayPal refund methods"/>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="PAYPAL_RELEASE" description="PayPal release methods"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_TEST" customMethodName="testCCProcessor" description="CC Test authorize">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_CAPTURE_TST" customMethodName="testCCProcessorWithCapture" description="CC Test authorize and capture">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_RANDOM_TEST" customMethodName="testRandomAuthorize" description="CC Test random authorize">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_AIM" customMethodName="aimCCAuth" description="CC Authorize dot net authorize">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_CAPTURE_AIM" customMethodName="aimCCAuthCapture" description="CC Authorize dot net authorize and capture">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_CLEARCOMMERC" customMethodName="clearCommerceCCAuth" description="CC Clear Commerce authorize">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_CLEARCOM_REP" customMethodName="clearCommerceCCReport" description="CC Clear Commerce authorize reporting facility">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_CYBERSOURCE" customMethodName="cyberSourceCCAuth" description="CC CyberSource authorize">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_PAYFLOW" customMethodName="payflowCCProcessor" description="CC Payflow Pro authorize">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_PCCHARGE" customMethodName="pcChargeCCAuth" description="CC PCCharge authorize">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_RITA" customMethodName="ritaCCAuth" description="CC RiTA authorize">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_RITA_REMOTE" customMethodName="ritaCCAuthRemote" description="CC RiTA remote authorize">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_ALWAYSAPPROV" customMethodName="alwaysApproveCCProcessor" description="CC Always authorize">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_ALWAYSDECLIN" customMethodName="alwaysDeclineCCProcessor" description="CC Always decline">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_ALWAYSNSF" customMethodName="alwaysNsfCCProcessor" description="CC Always decline for not sufficient funds">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_ALWAYSBAD" customMethodName="alwaysBadExpireCCProcessor" description="CC Always decline for fail/bad expire date">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_ALWAYSEVEN" customMethodName="badExpireEvenCCProcessor" description="CC Always decline for fail/bad expire date when year is even">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_ALWAYSBADNUM" customMethodName="alwaysBadCardNumberCCProcessor" description="CC Always decline for bad card number">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_ALWAYSFAIL" customMethodName="alwaysBadCardNumberCCProcessor" description="CC Always fail">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_CAPTURE_ALWA" customMethodName="alwaysApproveWithCaptureCCProcessor" description="CC Always authorize and capture">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_ORBITAL" customMethodName="orbitalCCAuth" description="CC Orbital authorize">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_AUTH_CAPTR_ORBTL" customMethodName="orbitalCCAuthCapture" description="CC Orbital authorize and capture">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_CAPTURE_TEST" customMethodName="testCCCapture" description="CC Test capture">
+    <customMethodTypeId href="CustomMethodType#CC_CAPTURE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_CAPTURE_REAUTH" customMethodName="testCCCaptureWithReAuth" description="CC Test reauth capture">
+    <customMethodTypeId href="CustomMethodType#CC_CAPTURE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_CAPTURE_ALWAYSDEC" customMethodName="testCCProcessorCaptureAlwaysDecline" description="CC Always decline capture">
+    <customMethodTypeId href="CustomMethodType#CC_CAPTURE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_CAPTURE_AIM" customMethodName="aimCCCapture" description="CC Authorize dot net capture">
+    <customMethodTypeId href="CustomMethodType#CC_CAPTURE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_CAPTURE_CLEARCOMM" customMethodName="clearCommerceCCCapture" description="CC Clear Commerce capture">
+    <customMethodTypeId href="CustomMethodType#CC_CAPTURE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_CAPTURE_CYBERSOUR" customMethodName="cyberSourceCCCapture" description="CC CyberSource capture">
+    <customMethodTypeId href="CustomMethodType#CC_CAPTURE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_CAPTURE_PAYFLOW" customMethodName="payflowCCCapture" description="CC Payflow Pro capture">
+    <customMethodTypeId href="CustomMethodType#CC_CAPTURE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_CAPTURE_PCCHARGE" customMethodName="pcChargeCCCapture" description="CC PCCharge capture">
+    <customMethodTypeId href="CustomMethodType#CC_CAPTURE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_CAPTURE_RITA" customMethodName="ritaCCCapture" description="CC RiTA capture">
+    <customMethodTypeId href="CustomMethodType#CC_CAPTURE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_CAPTURE_RITA_REMO" customMethodName="ritaCCCaptureRemote" description="CC RiTA remote capture">
+    <customMethodTypeId href="CustomMethodType#CC_CAPTURE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_CAPTURE_ORBITAL" customMethodName="orbitalCCCapture" description="CC Orbital capture">
+    <customMethodTypeId href="CustomMethodType#CC_CAPTURE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_REFUND_TEST" customMethodName="testCCRefund" description="CC Test refund">
+    <customMethodTypeId href="CustomMethodType#CC_REFUND"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_REFUND_TEST_FAIL" customMethodName="testCCRefundFailure" description="CC Test refund failure">
+    <customMethodTypeId href="CustomMethodType#CC_REFUND"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_REFUND_AIM" customMethodName="aimCCRefund" description="CC Authorize dot net refund">
+    <customMethodTypeId href="CustomMethodType#CC_REFUND"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_REFUND_CLEARCOMME" customMethodName="clearCommerceCCRefund" description="CC Clear Commerce refund">
+    <customMethodTypeId href="CustomMethodType#CC_REFUND"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_REFUND_CYBERSOURC" customMethodName="cyberSourceCCRefund" description="CC CyberSource refund">
+    <customMethodTypeId href="CustomMethodType#CC_REFUND"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_REFUND_PAYFLOW" customMethodName="payflowCCRefund" description="CC Payflow Pro refund">
+    <customMethodTypeId href="CustomMethodType#CC_REFUND"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_REFUND_PCCHARGE" customMethodName="pcChargeCCRefund" description="CC PCCharge refund">
+    <customMethodTypeId href="CustomMethodType#CC_REFUND"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_REFUND_RITA" customMethodName="ritaCCRefund" description="CC RiTA refund">
+    <customMethodTypeId href="CustomMethodType#CC_REFUND"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_REFUND_RITA_REMOT" customMethodName="ritaCCRefundRemote" description="CC RiTA remote refund">
+    <customMethodTypeId href="CustomMethodType#CC_REFUND"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_REFUND_ORBITAL" customMethodName="orbitalCCRefund" description="CC Orbital refund">
+    <customMethodTypeId href="CustomMethodType#CC_REFUND"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_RELEASE_TEST" customMethodName="testCCRelease" description="CC Test release">
+    <customMethodTypeId href="CustomMethodType#CC_RELEASE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_RELEASE_AIM" customMethodName="aimCCRelease" description="CC Authorize dot net release">
+    <customMethodTypeId href="CustomMethodType#CC_RELEASE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_RELEASE_CLEARCOMM" customMethodName="clearCommerceCCRelease" description="CC Clear Commerce release">
+    <customMethodTypeId href="CustomMethodType#CC_RELEASE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_RELEASE_CYBERSOUR" customMethodName="cyberSourceCCRelease" description="CC CyberSource release">
+    <customMethodTypeId href="CustomMethodType#CC_RELEASE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_RELEASE_PAYFLOW" customMethodName="payflowCCVoid" description="CC Payflow Pro release">
+    <customMethodTypeId href="CustomMethodType#CC_RELEASE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_RELEASE_PCCHARGE" customMethodName="pcChargeCCRelease" description="CC PCCharge release">
+    <customMethodTypeId href="CustomMethodType#CC_RELEASE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_RELEASE_RITA" customMethodName="ritaCCRelease" description="CC RiTA release">
+    <customMethodTypeId href="CustomMethodType#CC_RELEASE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_RELEASE_RITA_REMO" customMethodName="ritaCCReleaseRemote" description="CC RiTA remote release">
+    <customMethodTypeId href="CustomMethodType#CC_RELEASE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_RELEASE_ORBITAL" customMethodName="orbitalCCRelease" description="CC Orbital release">
+    <customMethodTypeId href="CustomMethodType#CC_RELEASE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_CREDIT_AIM" customMethodName="aimCCCredit" description="CC Authorize dot net credit">
+    <customMethodTypeId href="CustomMethodType#CC_CREDIT"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_CREDIT_CLEARCOMME" customMethodName="clearCommerceCCCredit" description="CC Clear Commerce credit">
+    <customMethodTypeId href="CustomMethodType#CC_CREDIT"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_CREDIT_CYBERSOURC" customMethodName="cyberSourceCCCredit" description="CC CyberSource credit">
+    <customMethodTypeId href="CustomMethodType#CC_CREDIT"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_CREDIT_RITA" customMethodName="ritaCCCreditRefund" description="CC RiTA credit">
+    <customMethodTypeId href="CustomMethodType#CC_CREDIT"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="EFT_AUTH_TEST" customMethodName="testEFTProcessor" description="EFT test authorize">
+    <customMethodTypeId href="CustomMethodType#EFT_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="EFT_AUTH_ALWAYSAPPRO" customMethodName="alwaysApproveEFTProcessor" description="EFT always authorize">
+    <customMethodTypeId href="CustomMethodType#EFT_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="EFT_AUTH_ALWAYSDECLI" customMethodName="alwaysDeclineEFTProcessor" description="EFT always decline">
+    <customMethodTypeId href="CustomMethodType#EFT_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="EFT_RELEASE_TEST" customMethodName="testEFTRelease" description="EFT test release">
+    <customMethodTypeId href="CustomMethodType#EFT_RELEASE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="FIN_AUTH_OFBIZ" customMethodName="ofbFaAuthorize" description="FIN account authorize">
+    <customMethodTypeId href="CustomMethodType#FIN_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="FIN_CAPTURE_OFBIZ" customMethodName="ofbFaCapture" description="FIN account capture">
+    <customMethodTypeId href="CustomMethodType#FIN_CAPTURE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="FIN_REFUND_OFBIZ" customMethodName="ofbFaRefund" description="FIN account refund">
+    <customMethodTypeId href="CustomMethodType#FIN_REFUND"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="FIN_RELEASE_OFBIZ" customMethodName="ofbFaRelease" description="FIN account release">
+    <customMethodTypeId href="CustomMethodType#FIN_RELEASE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="FIN_PURCH_OFBIZ" customMethodName="createPartyFinAccountFromPurchase" description="FIN account purchase">
+    <customMethodTypeId href="CustomMethodType#FIN_PURCHASE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="GIFT_AUTH_OFBIZ" customMethodName="ofbGcAuthorize" description="GIFT card authorize">
+    <customMethodTypeId href="CustomMethodType#GIFT_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="GIFT_AUTH_ALWAYSAPPR" customMethodName="alwaysApproveGCProcessor" description="GIFT card always authorize">
+    <customMethodTypeId href="CustomMethodType#GIFT_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="GIFT_AUTH_ALWAYSDECL" customMethodName="alwaysDeclineGCProcessor" description="GIFT card always decline">
+    <customMethodTypeId href="CustomMethodType#GIFT_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="GIFT_AUTH_VALUELINK" customMethodName="valueLinkProcessor" description="GIFT card ValueLink authorize">
+    <customMethodTypeId href="CustomMethodType#GIFT_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="GIFT_CAPTURE_OFBIZ" customMethodName="ofbGcProcessor" description="GIFT card capture">
+    <customMethodTypeId href="CustomMethodType#GIFT_CAPTURE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="GIFT_REFUND_OFBIZ" customMethodName="ofbGcRefund" description="GIFT card refund">
+    <customMethodTypeId href="CustomMethodType#GIFT_REFUND"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="GIFT_REFUND_VALUELI" customMethodName="valueLinkRefund" description="GIFT card ValueLink refund">
+    <customMethodTypeId href="CustomMethodType#GIFT_REFUND"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="GIFT_RELEASE_OFBIZ" customMethodName="ofbGcRelease" description="GIFT card release">
+    <customMethodTypeId href="CustomMethodType#GIFT_RELEASE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="GIFT_RELEASE_TEST" customMethodName="testGCRelease" description="GIFT card test release">
+    <customMethodTypeId href="CustomMethodType#GIFT_RELEASE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="GIFT_RELEASE_VALUEL" customMethodName="valueLinkRelease" description="GIFT card ValueLink release">
+    <customMethodTypeId href="CustomMethodType#GIFT_RELEASE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="GIFT_PURCH_OFBIZ" customMethodName="ofbGcPurchase" description="GIFT card Purchase Fulfillment Service">
+    <customMethodTypeId href="CustomMethodType#GIFT_PURCHASE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PAYPAL_AUTH_PFP" customMethodName="payflowPayPalProcessor" description="Payflow PayPal payment authorize">
+    <customMethodTypeId href="CustomMethodType#PAYPAL_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PAYPAL_AUTH" customMethodName="payPalProcessor" description="PayPal payment authorize">
+    <customMethodTypeId href="CustomMethodType#PAYPAL_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PAYPAL_CAPTURE_PFP" customMethodName="payflowPayPalCapture" description="Payflow PayPal payment capture">
+    <customMethodTypeId href="CustomMethodType#PAYPAL_CAPTURE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PAYPAL_CAPTURE" customMethodName="payPalCapture" description="PayPal payment capture">
+    <customMethodTypeId href="CustomMethodType#PAYPAL_CAPTURE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PAYPAL_REFUND_PFP" customMethodName="payflowPayPalRefund" description="Payflow PayPal payment refund">
+    <customMethodTypeId href="CustomMethodType#PAYPAL_REFUND"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PAYPAL_REFUND" customMethodName="payPalRefund" description="PayPal payment refund">
+    <customMethodTypeId href="CustomMethodType#PAYPAL_REFUND"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PAYPAL_RELEASE_PFP" customMethodName="payflowPayPalVoid" description="Payflow PayPal Order release">
+    <customMethodTypeId href="CustomMethodType#PAYPAL_RELEASE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="PAYPAL_RELEASE" customMethodName="payPalVoid" description="PayPal Order Release">
+    <customMethodTypeId href="CustomMethodType#PAYPAL_RELEASE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_CHARGE_EWAY" customMethodName="ewayCharge" description="eWay CC Charge">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_REFUND_EWAY" customMethodName="ewayRefund" description="eWay CC Refund">
+    <customMethodTypeId href="CustomMethodType#CC_REFUND"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="CC_RELEASE_EWAY" customMethodName="ewayRelease" description="eWay CC Release">
+    <customMethodTypeId href="CustomMethodType#CC_RELEASE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="SECURE_AUTH_OFBIZ" customMethodName="ofbScAuthorize" description="SecurePay payment authorize">
+    <customMethodTypeId href="CustomMethodType#CC_AUTH"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="SECURE_CAPTURE_OFBIZ" customMethodName="ofbScCapture" description="SecurePay payment capture">
+    <customMethodTypeId href="CustomMethodType#CC_CAPTURE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="SECURE_REFUND_OFBIZ" customMethodName="ofbScRefund" description="SecurePay payment refund">
+    <customMethodTypeId href="CustomMethodType#CC_REFUND"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="SECURE_RELEASE_OFBIZ" customMethodName="ofbScRelease" description="SecurePay payment release">
+    <customMethodTypeId href="CustomMethodType#CC_RELEASE"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="SECURE_CREDIT_OFBIZ" customMethodName="ofbScCCCredit" description="SecurePay Credit Card">
+    <customMethodTypeId href="CustomMethodType#CC_CREDIT"/>
+  </contents>
+  <contents xsi:type="biz-screen:CustomScreenType" customScreenTypeId="CST_INVOICE_TPL" description="Invoice types template"/>
+  <contents xsi:type="biz-screen:CustomScreenType" customScreenTypeId="CST_ORDER_TPL" description="Order types template"/>
+  <contents xsi:type="biz-screen:CustomScreenType" customScreenTypeId="CST_QUOTE_TPL" description="Quote types template"/>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="CREDIT_CARD_TYPE" description="Credit Card Type"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="CCT_VISA" description="Visa" enumCode="Visa" sequenceId="01">
+    <enumTypeId href="EnumerationType#CREDIT_CARD_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="CCT_MASTERCARD" description="Master Card" enumCode="MasterCard" sequenceId="02">
+    <enumTypeId href="EnumerationType#CREDIT_CARD_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="CCT_AMERICANEXPRESS" description="American Express" enumCode="AmericanExpress" sequenceId="03">
+    <enumTypeId href="EnumerationType#CREDIT_CARD_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="CCT_DINERSCLUB" description="Diners Club" enumCode="DinersClub" sequenceId="04">
+    <enumTypeId href="EnumerationType#CREDIT_CARD_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="CCT_DISCOVER" description="Discover" enumCode="Discover" sequenceId="05">
+    <enumTypeId href="EnumerationType#CREDIT_CARD_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="CCT_ENROUTE" description="EnRoute" enumCode="EnRoute" sequenceId="06">
+    <enumTypeId href="EnumerationType#CREDIT_CARD_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="CCT_CARTEBLANCHE" description="Carte Blanche" enumCode="CarteBlanche" sequenceId="07">
+    <enumTypeId href="EnumerationType#CREDIT_CARD_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="CCT_JCB" description="JCB" enumCode="JCB" sequenceId="08">
+    <enumTypeId href="EnumerationType#CREDIT_CARD_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="CCT_SOLO" description="Solo" enumCode="Solo" sequenceId="09">
+    <enumTypeId href="EnumerationType#CREDIT_CARD_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="CCT_SWITCH" description="Switch" enumCode="Switch" sequenceId="10">
+    <enumTypeId href="EnumerationType#CREDIT_CARD_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="CCT_VISAELECTRON" description="Visa Electron" enumCode="VisaElectron" sequenceId="11">
+    <enumTypeId href="EnumerationType#CREDIT_CARD_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="CCT_UATP" description="Universal Air Travel Plan" enumCode="UATP" sequenceId="12">
+    <enumTypeId href="EnumerationType#CREDIT_CARD_TYPE"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="BUDGET_STATUS" description="Budget"/>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="PARTY_ASSET_STATUS" description="Party Asset"/>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="INVOICE_STATUS" description="Invoice Status"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="INVOICE_IN_PROCESS" description="In-Process" sequenceId="01" statusCode="IN_PROCESS">
+    <statusTypeId href="StatusType#INVOICE_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INVOICE_APPROVED" description="Approved" sequenceId="02" statusCode="APPROVED">
+    <statusTypeId href="StatusType#INVOICE_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INVOICE_SENT" description="Sent" sequenceId="10" statusCode="SENT">
+    <statusTypeId href="StatusType#INVOICE_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INVOICE_RECEIVED" description="Received" sequenceId="11" statusCode="RECEIVED">
+    <statusTypeId href="StatusType#INVOICE_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INVOICE_READY" description="Ready for Posting" sequenceId="20" statusCode="READY">
+    <statusTypeId href="StatusType#INVOICE_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INVOICE_PAID" description="Paid" sequenceId="30" statusCode="PAID">
+    <statusTypeId href="StatusType#INVOICE_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INVOICE_WRITEOFF" description="Write Off" sequenceId="31" statusCode="WRITE OFF">
+    <statusTypeId href="StatusType#INVOICE_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="INVOICE_CANCELLED" description="Cancelled" sequenceId="99" statusCode="CANCELLED">
+    <statusTypeId href="StatusType#INVOICE_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Mark Ready">
+    <statusId href="StatusItem#INVOICE_IN_PROCESS"/>
+    <statusIdTo href="StatusItem#INVOICE_READY"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
+    <statusId href="StatusItem#INVOICE_IN_PROCESS"/>
+    <statusIdTo href="StatusItem#INVOICE_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Send">
+    <statusId href="StatusItem#INVOICE_IN_PROCESS"/>
+    <statusIdTo href="StatusItem#INVOICE_SENT"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Receive">
+    <statusId href="StatusItem#INVOICE_IN_PROCESS"/>
+    <statusIdTo href="StatusItem#INVOICE_RECEIVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Mark Approved">
+    <statusId href="StatusItem#INVOICE_SENT"/>
+    <statusIdTo href="StatusItem#INVOICE_APPROVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Mark Ready">
+    <statusId href="StatusItem#INVOICE_SENT"/>
+    <statusIdTo href="StatusItem#INVOICE_READY"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Receive">
+    <statusId href="StatusItem#INVOICE_SENT"/>
+    <statusIdTo href="StatusItem#INVOICE_RECEIVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Mark Receive">
+    <statusId href="StatusItem#INVOICE_RECEIVED"/>
+    <statusIdTo href="StatusItem#INVOICE_READY"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
+    <statusId href="StatusItem#INVOICE_SENT"/>
+    <statusIdTo href="StatusItem#INVOICE_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
+    <statusId href="StatusItem#INVOICE_RECEIVED"/>
+    <statusIdTo href="StatusItem#INVOICE_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Enable sales invoice update">
+    <statusId href="StatusItem#INVOICE_SENT"/>
+    <statusIdTo href="StatusItem#INVOICE_IN_PROCESS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Enable purch.invoice update">
+    <statusId href="StatusItem#INVOICE_RECEIVED"/>
+    <statusIdTo href="StatusItem#INVOICE_IN_PROCESS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Approve">
+    <statusId href="StatusItem#INVOICE_IN_PROCESS"/>
+    <statusIdTo href="StatusItem#INVOICE_APPROVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Send">
+    <statusId href="StatusItem#INVOICE_APPROVED"/>
+    <statusIdTo href="StatusItem#INVOICE_SENT"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Receive">
+    <statusId href="StatusItem#INVOICE_IN_PROCESS"/>
+    <statusIdTo href="StatusItem#INVOICE_RECEIVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Approve">
+    <statusId href="StatusItem#INVOICE_RECEIVED"/>
+    <statusIdTo href="StatusItem#INVOICE_APPROVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Mark Ready">
+    <statusId href="StatusItem#INVOICE_APPROVED"/>
+    <statusIdTo href="StatusItem#INVOICE_READY"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
+    <statusId href="StatusItem#INVOICE_APPROVED"/>
+    <statusIdTo href="StatusItem#INVOICE_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Pay">
+    <statusId href="StatusItem#INVOICE_READY"/>
+    <statusIdTo href="StatusItem#INVOICE_PAID"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Write Off">
+    <statusId href="StatusItem#INVOICE_READY"/>
+    <statusIdTo href="StatusItem#INVOICE_WRITEOFF"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Unpay">
+    <statusId href="StatusItem#INVOICE_PAID"/>
+    <statusIdTo href="StatusItem#INVOICE_READY"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
+    <statusId href="StatusItem#INVOICE_READY"/>
+    <statusIdTo href="StatusItem#INVOICE_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Cancel">
+    <statusId href="StatusItem#INVOICE_PAID"/>
+    <statusIdTo href="StatusItem#INVOICE_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="PMNT_STATUS" description="Payment Status"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="PMNT_NOT_PAID" description="Not Paid" sequenceId="01" statusCode="NOT_PAID">
+    <statusTypeId href="StatusType#PMNT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PMNT_SENT" description="Sent" sequenceId="03" statusCode="SENT">
+    <statusTypeId href="StatusType#PMNT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PMNT_RECEIVED" description="Received" sequenceId="04" statusCode="RECEIVED">
+    <statusTypeId href="StatusType#PMNT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PMNT_CONFIRMED" description="Confirmed" sequenceId="05" statusCode="CONFIRMED">
+    <statusTypeId href="StatusType#PMNT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PMNT_CANCELLED" description="Cancelled" sequenceId="10" statusCode="CANCELLED">
+    <statusTypeId href="StatusType#PMNT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="PMNT_VOID" description="Voided" sequenceId="11" statusCode="VOID">
+    <statusTypeId href="StatusType#PMNT_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Payment Send">
+    <statusId href="StatusItem#PMNT_NOT_PAID"/>
+    <statusIdTo href="StatusItem#PMNT_SENT"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Payment Received">
+    <statusId href="StatusItem#PMNT_NOT_PAID"/>
+    <statusIdTo href="StatusItem#PMNT_RECEIVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Payment Cancelled">
+    <statusId href="StatusItem#PMNT_NOT_PAID"/>
+    <statusIdTo href="StatusItem#PMNT_CANCELLED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Payment Confirmed">
+    <statusId href="StatusItem#PMNT_SENT"/>
+    <statusIdTo href="StatusItem#PMNT_CONFIRMED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Payment Confirmed">
+    <statusId href="StatusItem#PMNT_RECEIVED"/>
+    <statusIdTo href="StatusItem#PMNT_CONFIRMED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Payment Voided">
+    <statusId href="StatusItem#PMNT_SENT"/>
+    <statusIdTo href="StatusItem#PMNT_VOID"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Payment Voided">
+    <statusId href="StatusItem#PMNT_RECEIVED"/>
+    <statusIdTo href="StatusItem#PMNT_VOID"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Payment Voided">
+    <statusId href="StatusItem#PMNT_NOT_PAID"/>
+    <statusIdTo href="StatusItem#PMNT_VOID"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Payment Not Paid">
+    <statusId href="StatusItem#PMNT_SENT"/>
+    <statusIdTo href="StatusItem#PMNT_NOT_PAID"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Payment Not Paid">
+    <statusId href="StatusItem#PMNT_RECEIVED"/>
+    <statusIdTo href="StatusItem#PMNT_NOT_PAID"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Payment Confirmed to Sent">
+    <statusId href="StatusItem#PMNT_CONFIRMED"/>
+    <statusIdTo href="StatusItem#PMNT_SENT"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Payment Confirmed to Received">
+    <statusId href="StatusItem#PMNT_CONFIRMED"/>
+    <statusIdTo href="StatusItem#PMNT_RECEIVED"/>
+  </contents>
+  <contents xsi:type="biz-ledger:SettlementTerm" settlementTermId="COD" termName="Cash Due on Delivery" uomId="TF_day"/>
+  <contents xsi:type="biz-ledger:SettlementTerm" settlementTermId="NET_15" termName="Net Due in 15 Days" termValue="15" uomId="TF_day"/>
+  <contents xsi:type="biz-ledger:SettlementTerm" settlementTermId="NET_30" termName="Net Due in 30 Days" termValue="30" uomId="TF_day"/>
+  <contents xsi:type="biz-ledger:SettlementTerm" settlementTermId="NET_60" termName="Net Due in 60 Days" termValue="60" uomId="TF_day"/>
+  <contents xsi:type="biz-ledger:SettlementTerm" settlementTermId="NET_90" termName="Net Due in 90 Days" termValue="90" uomId="TF_day"/>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="TAX_FORMS" description="Tax Forms"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="US_IRS_1120" description="Form 1120 (US IRS)" enumCode="1120" sequenceId="01">
+    <enumTypeId href="EnumerationType#TAX_FORMS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="US_IRS_1120S" description="Form 1120S (US IRS)" enumCode="1120S" sequenceId="02">
+    <enumTypeId href="EnumerationType#TAX_FORMS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="US_IRS_1065" description="Form 1065 (US IRS)" enumCode="1065" sequenceId="03">
+    <enumTypeId href="EnumerationType#TAX_FORMS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="US_IRS_990" description="Form 990 (US IRS)" enumCode="990" sequenceId="04">
+    <enumTypeId href="EnumerationType#TAX_FORMS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="US_IRS_990PF" description="Form 990-PF (US IRS)" enumCode="990PF" sequenceId="05">
+    <enumTypeId href="EnumerationType#TAX_FORMS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="US_IRS_990T" description="Form 990-T (US IRS)" enumCode="990T" sequenceId="06">
+    <enumTypeId href="EnumerationType#TAX_FORMS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="US_IRS_1040" description="Form 1040 (US IRS)" enumCode="1040" sequenceId="07">
+    <enumTypeId href="EnumerationType#TAX_FORMS"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="COGS_METHODS" description="COGS Methods"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="COGS_LIFO" description="LIFO" enumCode="LIFO" sequenceId="01">
+    <enumTypeId href="EnumerationType#COGS_METHODS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="COGS_FIFO" description="FIFO" enumCode="FIFO" sequenceId="02">
+    <enumTypeId href="EnumerationType#COGS_METHODS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="COGS_AVG_COST" description="Average Cost" enumCode="AVG_COST" sequenceId="03">
+    <enumTypeId href="EnumerationType#COGS_METHODS"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="COGS_INV_COST" description="Inventory Item Cost" enumCode="INV_COST" sequenceId="04">
+    <enumTypeId href="EnumerationType#COGS_METHODS"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="HOOK" description="Custom Methode Type define HOOK method to resolve specific sequence">
+    <parentTypeId href="CustomMethodType#HOOK"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="INVOICE_HOOK" description="Invoice Sequence methods">
+    <parentTypeId href="CustomMethodType#HOOK"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="INV_HOOK_ENF_SEQ" customMethodName="invoiceSequenceEnforced" description="Enforced Sequence (no gaps, per organization)">
+    <customMethodTypeId href="CustomMethodType#INVOICE_HOOK"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="INV_HOOK_RES_YR" customMethodName="invoiceSequenceRestart" description="Restart on Fiscal Year (no gaps, per org, reset to 1 each year)">
+    <customMethodTypeId href="CustomMethodType#INVOICE_HOOK"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="QUOTE_HOOK" description="Quote Sequence methods">
+    <parentTypeId href="CustomMethodType#HOOK"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="QUOTE_HOOK_ENF_SEQ" customMethodName="quoteSequenceEnforced" description="Enforced Sequence (no gaps, per organization)">
+    <customMethodTypeId href="CustomMethodType#QUOTE_HOOK"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="ORDER_HOOK" description="Order Sequence methods">
+    <parentTypeId href="CustomMethodType#HOOK"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="ORDER_HOOK_ENF_SEQ" customMethodName="orderSequence_enforced" description="Enforced Sequence (no gaps, per organization)">
+    <customMethodTypeId href="CustomMethodType#ORDER_HOOK"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="INVOICE_SEQMD" description="Invoice Sequence Mode"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="INVSQ_STANDARD" description="Standard (faster, may have gaps, per system)" enumCode="STANDARD" sequenceId="01">
+    <enumTypeId href="EnumerationType#INVOICE_SEQMD"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="INVSQ_ENF_SEQ" description="Enforced Sequence (no gaps, per organization)" enumCode="ENF_SEQ" sequenceId="02">
+    <enumTypeId href="EnumerationType#INVOICE_SEQMD"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="INVSQ_RESTARTYR" description="Restart on Fiscal Year (no gaps, per org, reset to 1 each year)" enumCode="RESTARTYR" sequenceId="03">
+    <enumTypeId href="EnumerationType#INVOICE_SEQMD"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="QUOTE_SEQMD" description="Quote Sequence Mode"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="QTESQ_STANDARD" description="Standard (faster, may have gaps, per system)" enumCode="STANDARD" sequenceId="01">
+    <enumTypeId href="EnumerationType#QUOTE_SEQMD"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="QTESQ_ENF_SEQ" description="Enforced Sequence (no gaps, per organization)" enumCode="ENF_SEQ" sequenceId="02">
+    <enumTypeId href="EnumerationType#QUOTE_SEQMD"/>
+  </contents>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="ORDER_SEQMD" description="Order Sequence Mode"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="ODRSQ_STANDARD" description="Standard (faster, may have gaps, per system)" enumCode="STANDARD" sequenceId="01">
+    <enumTypeId href="EnumerationType#ORDER_SEQMD"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="ODRSQ_ENF_SEQ" description="Enforced Sequence (no gaps, per organization)" enumCode="ENF_SEQ" sequenceId="02">
+    <enumTypeId href="EnumerationType#ORDER_SEQMD"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAssetStdCostType" fixedAssetStdCostTypeId="SETUP_COST" description="Standard Setup Cost"/>
+  <contents xsi:type="biz-fixedasset:FixedAssetStdCostType" fixedAssetStdCostTypeId="USAGE_COST" description="Standard Usage Cost"/>
+  <contents xsi:type="biz-tax:TaxAuthorityAssocType" taxAuthorityAssocTypeId="EXEMPT_INHER" description="Exemption Inheritance"/>
+  <contents xsi:type="biz-tax:TaxAuthorityAssocType" taxAuthorityAssocTypeId="COLLECT_AGENT" description="Collection Agent"/>
+  <contents xsi:type="biz-tax:TaxAuthorityRateType" taxAuthorityRateTypeId="SALES_TAX" description="Sales Tax"/>
+  <contents xsi:type="biz-tax:TaxAuthorityRateType" taxAuthorityRateTypeId="USE_TAX" description="Use Tax"/>
+  <contents xsi:type="biz-tax:TaxAuthorityRateType" taxAuthorityRateTypeId="INCOME_TAX" description="Income Tax"/>
+  <contents xsi:type="biz-tax:TaxAuthorityRateType" taxAuthorityRateTypeId="EXPORT_TAX" description="Export Tax"/>
+  <contents xsi:type="biz-tax:TaxAuthorityRateType" taxAuthorityRateTypeId="IMPORT_TAX" description="Import Tax"/>
+  <contents xsi:type="biz-tax:TaxAuthorityRateType" taxAuthorityRateTypeId="VAT_TAX" description="Value Added Tax"/>
+  <contents xsi:type="biz-rate:RateType" rateTypeId="STANDARD" description="Standard Rate"/>
+  <contents xsi:type="biz-rate:RateType" rateTypeId="DISCOUNTED" description="Discounted Rate"/>
+  <contents xsi:type="biz-rate:RateType" rateTypeId="OVERTIME" description="Overtime Rate"/>
+  <contents xsi:type="biz-rate:RateType" rateTypeId="AVERAGE_PAY_RATE" description="Average Pay Rate"/>
+  <contents xsi:type="biz-rate:RateType" rateTypeId="HIGH_PAY_RATE" description="Highest Pay Rate"/>
+  <contents xsi:type="biz-rate:RateType" rateTypeId="LOW_PAY_RATE" description="Lowest Pay Rate"/>
+  <contents xsi:type="biz-period:PeriodType" periodTypeId="RATE_HOUR" description="Rate amount per Hour" periodLength="1">
+    <uomId href="Uom#TF_hr"/>
+  </contents>
+  <contents xsi:type="biz-period:PeriodType" periodTypeId="RATE_WEEK" description="Rate amount per Week" periodLength="1">
+    <uomId href="Uom#TF_wk"/>
+  </contents>
+  <contents xsi:type="biz-period:PeriodType" periodTypeId="RATE_MONTH" description="Rate amount per month" periodLength="1">
+    <uomId href="Uom#TF_mon"/>
+  </contents>
+  <contents xsi:type="biz-period:PeriodType" periodTypeId="RATE_QUARTER" description="Rate amount per Quarter" periodLength="3">
+    <uomId href="Uom#TF_mon"/>
+  </contents>
+  <contents xsi:type="biz-workeffort:WorkEffort" workEffortId="_NA_"/>
+  <contents xsi:type="biz-position:EmplPositionType" emplPositionTypeId="_NA_"/>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="PTSOFTTFR" description="Points of Title Transfer"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="POTT_DEST" description="Desination" enumCode="DEST" sequenceId="01">
+    <enumTypeId href="EnumerationType#PTSOFTTFR"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="POTT_ORIG" description="Origin" enumCode="ORIG" sequenceId="02">
+    <enumTypeId href="EnumerationType#PTSOFTTFR"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="POTT_INTR" description="In Transit" enumCode="INTR" sequenceId="03">
+    <enumTypeId href="EnumerationType#PTSOFTTFR"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="POTT_EXW" description="EX-Works" enumCode="EXW" sequenceId="11">
+    <enumTypeId href="EnumerationType#PTSOFTTFR"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="POTT_FOB" description="Free On Board" enumCode="FOB" sequenceId="12">
+    <enumTypeId href="EnumerationType#PTSOFTTFR"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="POTT_FCA" description="Free Carrier" enumCode="FCA" sequenceId="13">
+    <enumTypeId href="EnumerationType#PTSOFTTFR"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="POTT_FAS" description="Free Alongside Ship" enumCode="FAS" sequenceId="14">
+    <enumTypeId href="EnumerationType#PTSOFTTFR"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="POTT_CFR" description="Cost and Freight" enumCode="CFR" sequenceId="15">
+    <enumTypeId href="EnumerationType#PTSOFTTFR"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="POTT_CIF" description="Cost, Insurance and Freight" enumCode="CIF" sequenceId="16">
+    <enumTypeId href="EnumerationType#PTSOFTTFR"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="POTT_CPT" description="Carriage Paid To" enumCode="CPT" sequenceId="17">
+    <enumTypeId href="EnumerationType#PTSOFTTFR"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="POTT_CIP" description="Carriage and Insurance Paid To" enumCode="CIP" sequenceId="18">
+    <enumTypeId href="EnumerationType#PTSOFTTFR"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="POTT_DAF" description="Delivered At Frontier" enumCode="DAF" sequenceId="19">
+    <enumTypeId href="EnumerationType#PTSOFTTFR"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="POTT_DES" description="Delivered Ex Ship" enumCode="DES" sequenceId="20">
+    <enumTypeId href="EnumerationType#PTSOFTTFR"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="POTT_DEQ" description="Delivered Ex Quay" enumCode="DEQ" sequenceId="21">
+    <enumTypeId href="EnumerationType#PTSOFTTFR"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="POTT_DDP" description="Delivered Duty Paid" enumCode="DDP" sequenceId="22">
+    <enumTypeId href="EnumerationType#PTSOFTTFR"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="POTT_DDQ" description="Delivered Duty Unpaid" enumCode="DDQ" sequenceId="23">
+    <enumTypeId href="EnumerationType#PTSOFTTFR"/>
+  </contents>
+  <contents xsi:type="biz-ledger:ProductAverageCostType" productAverageCostTypeId="SIMPLE_AVG_COST" description="Simple Average Cost"/>
+  <contents xsi:type="biz-ledger:ProductAverageCostType" productAverageCostTypeId="WEIGHTED_AVG_COST" description="Weighted Average Cost"/>
+  <contents xsi:type="biz-ledger:ProductAverageCostType" productAverageCostTypeId="MOVING_AVG_COST" description="Moving Average Cost"/>
+  <contents xsi:type="biz-enum:EnumerationType" enumTypeId="STR_CRDT_ACT" description="Store Credit Account"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="FIN_ACCOUNT" description="Financial Account" enumCode="FINACCOUNT" sequenceId="01">
+    <enumTypeId href="EnumerationType#STR_CRDT_ACT"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="BILLING_ACCOUNT" description="Billing Account" enumCode="BILLACCOUNT" sequenceId="02">
+    <enumTypeId href="EnumerationType#STR_CRDT_ACT"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusType" statusTypeId="GLREC_STATUS" description="Gl Reconciliation Status"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="GLREC_CREATED" description="Created" sequenceId="11" statusCode="CREATED">
+    <statusTypeId href="StatusType#GLREC_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="GLREC_RECONCILED" description="Reconciled" sequenceId="12" statusCode="RECONCILED">
+    <statusTypeId href="StatusType#GLREC_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Set Created to Reconciled">
+    <statusId href="StatusItem#GLREC_CREATED"/>
+    <statusIdTo href="StatusItem#GLREC_RECONCILED"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethodType" customMethodTypeId="DEPRECIATION_FORMULA" description="Formula for calculating depreciation for fixed asset"/>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="STR_LINE_DEP_FORMULA" customMethodName="straightLineDepreciation" description="Straight Line depreciation algorithm for fixed asset ((purchaseCost - salvageCost)/expectedLifeInYears)">
+    <customMethodTypeId href="CustomMethodType#DEPRECIATION_FORMULA"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="DBL_DECL_DEP_FORMULA" customMethodName="doubleDecliningBalanceDepreciation" description="Double decline depreciation algorithm for fixed asset ((NetBookValue - salvageCost)*2/remainingLifeInYears)">
+    <customMethodTypeId href="CustomMethodType#DEPRECIATION_FORMULA"/>
+  </contents>
+  <contents xsi:type="biz-product:GoodIdentificationType" goodIdentificationTypeId="INVOICE_EXPORT" description="replacement value for partyId in the invoice export function in accounting"/>
+  <contents xsi:type="biz-party:PartyIdentificationType" partyIdentificationTypeId="INVOICE_EXPORT" description="replacement value for partyId in the invoice export function in accounting"/>
+  <contents xsi:type="biz-status:StatusItem" statusId="BG_CREATED" description="Created" sequenceId="00" statusCode="CREATED">
+    <statusTypeId href="StatusType#BUDGET_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="BG_REVIEWED" description="Reviewed" sequenceId="01" statusCode="REVIEWED">
+    <statusTypeId href="StatusType#BUDGET_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="BG_APPROVED" description="Approved" sequenceId="02" statusCode="APPROVED">
+    <statusTypeId href="StatusType#BUDGET_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusItem" statusId="BG_REJECTED" description="Rejected" sequenceId="03" statusCode="REJECTED">
+    <statusTypeId href="StatusType#BUDGET_STATUS"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Review Budget">
+    <statusId href="StatusItem#BG_CREATED"/>
+    <statusIdTo href="StatusItem#BG_REVIEWED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Submit Budget">
+    <statusId href="StatusItem#BG_CREATED"/>
+    <statusIdTo href="StatusItem#BG_APPROVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Reject Budget">
+    <statusId href="StatusItem#BG_CREATED"/>
+    <statusIdTo href="StatusItem#BG_REJECTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Approved Budget">
+    <statusId href="StatusItem#BG_REVIEWED"/>
+    <statusIdTo href="StatusItem#BG_APPROVED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Reject Budget">
+    <statusId href="StatusItem#BG_REVIEWED"/>
+    <statusIdTo href="StatusItem#BG_REJECTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Accept Budget">
+    <statusId href="StatusItem#BG_APPROVED"/>
+    <statusIdTo href="StatusItem#BG_CREATED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Reject Budget">
+    <statusId href="StatusItem#BG_APPROVED"/>
+    <statusIdTo href="StatusItem#BG_REJECTED"/>
+  </contents>
+  <contents xsi:type="biz-budget:BudgetReviewResultType" budgetReviewResultTypeId="BGR_ACCEPTED" description="Accepted"/>
+  <contents xsi:type="biz-budget:BudgetReviewResultType" budgetReviewResultTypeId="BGR_REJECTED" description="Rejected"/>
+  <contents xsi:type="biz-payment:PaymentGatewayConfigType" paymentGatewayConfigTypeId="PAY_GATWY_SAGEPAY" description="Payment Gateway SagePay" hasTable="true"/>
+  <contents xsi:type="biz-payment:PaymentGatewayConfigType" paymentGatewayConfigTypeId="PAY_GATWY_AUTH_NET" description="Payment Gateway Authorize Dot Net" hasTable="true"/>
+  <contents xsi:type="biz-payment:PaymentGatewayConfigType" paymentGatewayConfigTypeId="PAY_GATWY_CYBERSRC" description="Payment Gateway CyberSource" hasTable="true"/>
+  <contents xsi:type="biz-payment:PaymentGatewayConfigType" paymentGatewayConfigTypeId="PAY_GATWY_EWAY" description="Payment Gateway eWay" hasTable="true"/>
+  <contents xsi:type="biz-payment:PaymentGatewayConfigType" paymentGatewayConfigTypeId="PAY_GATWY_PAYFLOWPRO" description="Payment Gateway Payflow Pro" hasTable="true"/>
+  <contents xsi:type="biz-payment:PaymentGatewayConfigType" paymentGatewayConfigTypeId="PAY_GATWY_PAYPAL" description="Payment Gateway PayPal" hasTable="true"/>
+  <contents xsi:type="biz-payment:PaymentGatewayConfigType" paymentGatewayConfigTypeId="PAY_GATWY_CLRCOMRC" description="Payment Gateway Clear Commerce" hasTable="true"/>
+  <contents xsi:type="biz-payment:PaymentGatewayConfigType" paymentGatewayConfigTypeId="PAY_GATWY_WORLDPAY" description="Payment Gateway RBS WorldPay" hasTable="true"/>
+  <contents xsi:type="biz-payment:PaymentGatewayConfigType" paymentGatewayConfigTypeId="PAY_GATWY_ORBITAL" description="Payment Gateway Orbital" hasTable="true"/>
+  <contents xsi:type="biz-payment:PaymentGatewayConfigType" paymentGatewayConfigTypeId="PAY_GATWY_SECUREPAY" description="Payment Gateway SecurePay" hasTable="true"/>
+  <contents xsi:type="biz-ledger:GlAccountGroupType" glAccountGroupTypeId="TAX_FIELD_US" description="Tax Form Field: USA"/>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9001" description="Form 1040: Other income, misc.">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9002" description="Form 1040: IRA contribution, self">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9003" description="Form 1040: IRA contribution, spouse">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9004" description="Form 1040: Keogh deduction, self">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9005" description="Form 1040: Keogh deduction, spouse">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9006" description="Form 1040: SEP deduction, self">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9007" description="Form 1040: SEP deduction, spouse">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9008" description="Form 1040: SIMPLE contribution, self">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9009" description="Form 1040: SIMPLE contribution, spouse">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9010" description="Form 1040: Federal estimated tax, quarterly">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9021" description="Schedule B: Interest income">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9022" description="Schedule B: Dividend income">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9031" description="Schedule C: Gross receipts or sales">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9032" description="Schedule C: Returns and allowances">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9033" description="Schedule C: Other business income">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9034" description="Schedule C: Advertising">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9035" description="Schedule C: Bad debts from sales/services">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9036" description="Schedule C: Car and truck expenses">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9037" description="Schedule C: Commissions and fees">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9038" description="Schedule C: Depletion">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9039" description="Schedule C: Employee benefit programs">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9040" description="Schedule C: Insurance (other than health)">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9041" description="Schedule C: Interest expense, mortgage">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9042" description="Schedule C: Interest expense, other">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9043" description="Schedule C: Legal and professional fees">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9044" description="Schedule C: Office expenses">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9045" description="Schedule C: Pension/profit-sharing plans">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9046" description="Schedule C: Rent/lease vehicles, equipment">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9047" description="Schedule C: Rent/lease other business property">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9048" description="Schedule C: Repairs and maintenance">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9049" description="Schedule C: Supplies purchased (not from COGS)">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9050" description="Schedule C: Taxes and licenses">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9051" description="Schedule C: Travel">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9052" description="Schedule C: Meals and entertainment">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9053" description="Schedule C: Utilities">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9054" description="Schedule C: Wages paid">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9055" description="Schedule C: Other business expenses">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9056" description="Schedule C: COGS purchases">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9057" description="Schedule C: COGS labor">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9058" description="Schedule C: COGS materials/supplies">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9059" description="Schedule C: COGS other">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9071" description="Schedule E: Rents received">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9072" description="Schedule E: Royalties received">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9073" description="Schedule E: Advertising">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9074" description="Schedule E: Auto and travel">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9075" description="Schedule E: Cleaning and maintenance">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9076" description="Schedule E: Commissions">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9077" description="Schedule E: Insurance">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9078" description="Schedule E: Legal and professional fees">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9079" description="Schedule E: Management fees">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9080" description="Schedule E: Interest expense, mortgage">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9081" description="Schedule E: Interest expense, other">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9082" description="Schedule E: Repairs and maintenance">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9083" description="Schedule E: Supplies purchased">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9084" description="Schedule E: Taxes">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9085" description="Schedule E: Utilities">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9086" description="Schedule E: Other expenses">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9101" description="Schedule F: Resales livestock/items">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9102" description="Schedule F: Cost of resale livestock/items">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9103" description="Schedule F: Sale of livestock/produce">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9104" description="Schedule F: Total co-op distributions">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9105" description="Schedule F: Agricultural program payments">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9106" description="Schedule F: CCC loans reported/election">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9107" description="Schedule F: CCC loans forfeited/repaid">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9108" description="Schedule F: Crop insurance proceeds received">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9109" description="Schedule F: Crop insurance proceeds deferred">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9110" description="Schedule F: Custom hire income">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9111" description="Schedule F: Other farm income">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9112" description="Schedule F: Car and truck expenses">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9113" description="Schedule F: Chemicals">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9114" description="Schedule F: Conservation expenses">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9115" description="Schedule F: Custom hire expenses">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9116" description="Schedule F: Employee benefit programs">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9117" description="Schedule F: Feed purchased">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9118" description="Schedule F: Fertilizers and lime">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9119" description="Schedule F: Freight and trucking">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9120" description="Schedule F: Gasoline, fuel, and oil">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9121" description="Schedule F: Insurance (other than health)">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9122" description="Schedule F: Interest expense, mortgage">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9123" description="Schedule F: Interest expense, other">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9124" description="Schedule F: Labor hired">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9125" description="Schedule F: Pension/profit-sharing plans">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9126" description="Schedule F: Rent/lease vehicles, equipment">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9127" description="Schedule F: Rent/lease land, animals">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9128" description="Schedule F: Repairs and maintenance">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9129" description="Schedule F: Seeds and plants purchased">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9130" description="Schedule F: Storage and warehousing">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9131" description="Schedule F: Supplies purchased">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9132" description="Schedule F: Taxes">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9133" description="Schedule F: Utilities">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9134" description="Schedule F: Vet, breeding, medicine">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9135" description="Schedule F: Other farm expenses">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9151" description="Schedule K-1: Ordinary income or loss">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9152" description="Schedule K-1: Rental RE income or loss">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9153" description="Schedule K-1: Other rental income or loss">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9154" description="Schedule K-1: Interest income">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9155" description="Schedule K-1: Dividends">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9156" description="Schedule K-1: Royalties">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9157" description="Schedule K-1: Net ST capital gain or loss">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9158" description="Schedule K-1: Net LT capital gain or loss">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9159" description="Schedule K-1: 28% rate gain or loss">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9160" description="Schedule K-1: Qualified 5-year gain">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9161" description="Schedule K-1: Guaranteed partner payments">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9162" description="Schedule K-1: Net Section 1231 gain or loss">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9163" description="Schedule K-1: Other income or loss">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9164" description="Schedule K-1: Tax-exempt interest income">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9165" description="Schedule K-1: Total foreign tax">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9201" description="Form 1099-MISC: Prizes and awards">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9202" description="Form 1099-MISC: Rents">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9203" description="Form 1099-MISC: Royalties">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9204" description="Form 1099-MISC: Other income">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9205" description="Form 1099-MISC: Federal tax withheld">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9206" description="Form 1099-MISC: Fishing boat proceeds">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9207" description="Form 1099-MISC: Medical/health payments">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9208" description="Form 1099-MISC: Nonemployee compensation">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9209" description="Form 1099-MISC: Crop insurance proceeds">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9210" description="Form 1099-MISC: State tax withheld">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9401" description="Form 4835: Sale of livestock/produce">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9402" description="Form 4835: Total co-op distributions">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9403" description="Form 4835: Agricultural program payments">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9404" description="Form 4835: CCC loans reported/election">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9405" description="Form 4835: CCC loans forfeited/repaid">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9406" description="Form 4835: Crop insurance proceeds received">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9407" description="Form 4835: Crop insurance proceeds deferred">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9408" description="Form 4835: Other income">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9409" description="Form 4835: Car and truck expenses">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9410" description="Form 4835: Chemicals">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9411" description="Form 4835: Conservation expenses">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9412" description="Form 4835: Custom hire expenses">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9413" description="Form 4835: Employee benefit programs">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9414" description="Form 4835: Feed purchased">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9415" description="Form 4835: Fertilizers and lime">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9416" description="Form 4835: Freight and trucking">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9417" description="Form 4835: Gasoline, fuel, and oil">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9418" description="Form 4835: Insurance (other than health)">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9419" description="Form 4835: Interest expense, mortgage">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9420" description="Form 4835: Interest expense, other">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9421" description="Form 4835: Labor hired">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9422" description="Form 4835: Pension/profit-sharing plans">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9423" description="Form 4835: Rent/lease vehicles, equipment">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9424" description="Form 4835: Rent/lease land, animals">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9425" description="Form 4835: Repairs and maintenance">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9426" description="Form 4835: Seeds and plants purchased">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9427" description="Form 4835: Storage and warehousing">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9428" description="Form 4835: Supplies purchased">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9429" description="Form 4835: Taxes">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9430" description="Form 4835: Utilities">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9431" description="Form 4835: Vet, breeding, medicine">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9432" description="Form 4835: Other expenses">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9801" description="Form 8829: Deductable mortgage expense">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9802" description="Form 8829: Real estate taxes">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9803" description="Form 8829: Insurance">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9804" description="Form 8829: Repairs and maintenance">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9805" description="Form 8829: Utilities">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+  <contents xsi:type="biz-ledger:GlAccountGroup" glAccountGroupId="9806" description="Form 8829: Other expenses">
+    <glAccountGroupTypeId href="GlAccountGroupType#TAX_FIELD_US"/>
+  </contents>
+</mimo-ent:EntityContainer>

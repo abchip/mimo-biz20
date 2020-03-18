@@ -39,7 +39,6 @@ import org.apache.ofbiz.base.start.StartupCommand;
 import org.apache.ofbiz.base.start.StartupException;
 import org.apache.ofbiz.base.util.Debug;
 import org.apache.ofbiz.base.util.UtilValidate;
-import org.apache.ofbiz.catalina.container.CatalinaContainer;
 
 import edu.emory.mathcs.backport.java.util.Collections;
 

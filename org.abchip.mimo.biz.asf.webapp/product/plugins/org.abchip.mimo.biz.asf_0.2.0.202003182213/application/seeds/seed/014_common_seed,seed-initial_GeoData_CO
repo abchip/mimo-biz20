@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-geo="http://www.abchip.org/mimo/biz/common/geo" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/geo http://www.abchip.org/mimo/biz#//common/geo http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="014_common_seed,seed-initial_GeoData_CO">
+  <contents xsi:type="biz-geo:Geo" geoId="CO-AMA" abbreviation="AMA" geoCode="AMA" geoName="Amazonas">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-ANT" abbreviation="ANT" geoCode="ANT" geoName="Antioquia">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-ARA" abbreviation="ARA" geoCode="ARA" geoName="Arauca">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-ATL" abbreviation="ATL" geoCode="ATL" geoName="Atlántico">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-BOL" abbreviation="BOL" geoCode="BOL" geoName="Bolívar">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-BOY" abbreviation="BOY" geoCode="BOY" geoName="Boyacá">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-CAL" abbreviation="CAL" geoCode="CAL" geoName="Caldas">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-CAQ" abbreviation="CAQ" geoCode="CAQ" geoName="Caquetá">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-CAS" abbreviation="CAS" geoCode="CAS" geoName="Casanare">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-CAU" abbreviation="CAU" geoCode="CAU" geoName="Cauca">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-CES" abbreviation="CES" geoCode="CES" geoName="Cesar">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-CHO" abbreviation="CHO" geoCode="CHO" geoName="Chocó">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-COR" abbreviation="COR" geoCode="COR" geoName="Córdoba">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-CUN" abbreviation="CUN" geoCode="CUN" geoName="Cundinamarca">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-DC" abbreviation="DC" geoCode="DC" geoName="Bogotá D.C.">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-GUA" abbreviation="GUA" geoCode="GUA" geoName="Guainía">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-GUV" abbreviation="GUV" geoCode="GUV" geoName="Guaviare">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-HUI" abbreviation="HUI" geoCode="HUI" geoName="Huila">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-LAG" abbreviation="LAG" geoCode="LAG" geoName="La Guajira">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-MAG" abbreviation="MAG" geoCode="MAG" geoName="Magdalena">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-MET" abbreviation="MET" geoCode="MET" geoName="Meta">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-NAR" abbreviation="NAR" geoCode="NAR" geoName="Nariño">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-NSA" abbreviation="NSA" geoCode="NSA" geoName="Norte de Santander">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-PUT" abbreviation="PUT" geoCode="PUT" geoName="Putumayo">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-QUI" abbreviation="QUI" geoCode="QUI" geoName="Quindío">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-RIS" abbreviation="RIS" geoCode="RIS" geoName="Risaralda">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-SAN" abbreviation="SAN" geoCode="SAN" geoName="Santander">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-SAP" abbreviation="SAP" geoCode="SAP" geoName="San Andrés y Providencia">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-SUC" abbreviation="SUC" geoCode="SUC" geoName="Sucre">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-TOL" abbreviation="TOL" geoCode="TOL" geoName="Tolima">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-VAC" abbreviation="VAC" geoCode="VAC" geoName="Valle del Cauca">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-VAU" abbreviation="VAU" geoCode="VAU" geoName="Vaupés">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CO-VID" abbreviation="VID" geoCode="VID" geoName="Vichada">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-AMA"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-ANT"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-ARA"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-ATL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-BOL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-BOY"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-CAL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-CAQ"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-CAS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-CAU"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-CES"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-CHO"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-COR"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-CUN"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-DC"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-GUA"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-GUV"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-HUI"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-LAG"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-MAG"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-MET"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-NAR"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-NSA"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-PUT"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-QUI"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-RIS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-SAN"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-SAP"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-SUC"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-TOL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-VAC"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-VAU"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#COL"/>
+    <geoIdTo href="Geo#CO-VID"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+</mimo-ent:EntityContainer>

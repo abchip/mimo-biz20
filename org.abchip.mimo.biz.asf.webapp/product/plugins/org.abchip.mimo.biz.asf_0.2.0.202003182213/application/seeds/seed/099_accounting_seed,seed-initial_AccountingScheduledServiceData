@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-schedule="http://www.abchip.org/mimo/biz/service/schedule" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/service/schedule http://www.abchip.org/mimo/biz#//schedule http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="099_accounting_seed,seed-initial_AccountingScheduledServiceData">
+  <contents xsi:type="biz-schedule:RecurrenceRule" recurrenceRuleId="400" countNumber="-1" frequency="MONTHLY" intervalNumber="1"/>
+  <contents xsi:type="biz-schedule:RecurrenceInfo" recurrenceInfoId="400" startDateTime="2008-05-14T22:00:00.000+0200">
+    <recurrenceRuleId href="RecurrenceRule#400"/>
+  </contents>
+  <contents xsi:type="biz-schedule:RuntimeData" runtimeDataId="8501" runtimeInfo="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;            &lt;ofbiz-ser>&#xA;                &lt;map-HashMap>&#xA;                    &lt;map-Entry>&#xA;                        &lt;map-Key>&#xA;                            &lt;std-String value=&quot;recurrenceInfoId&quot;/>&#xA;                        &lt;/map-Key>&#xA;                        &lt;map-Value>&#xA;                            &lt;std-String value=&quot;400&quot;/>&#xA;                        &lt;/map-Value>&#xA;                    &lt;/map-Entry>&#xA;                &lt;/map-HashMap>&#xA;            &lt;/ofbiz-ser>&#xA;        "/>
+  <contents xsi:type="biz-schedule:JobSandbox" jobId="8500" jobName="Generate Invoice template" poolId="pool" runTime="2008-05-14T00:00:00.000+0200" serviceName="autoGenerateInvoiceFromExistingInvoice">
+    <recurrenceInfoId href="RecurrenceInfo#400"/>
+    <runAsUser href="UserLogin#system"/>
+    <runtimeDataId href="RuntimeData#8501"/>
+  </contents>
+  <contents xsi:type="biz-schedule:RecurrenceRule" recurrenceRuleId="9000" countNumber="-1" frequency="DAILY" intervalNumber="5"/>
+  <contents xsi:type="biz-schedule:RecurrenceInfo" recurrenceInfoId="9000" startDateTime="2000-01-01T00:00:00.000+0100">
+    <recurrenceRuleId href="RecurrenceRule#9000"/>
+  </contents>
+  <contents xsi:type="biz-schedule:JobSandbox" jobId="9000" jobName="Auto Reconcile Financial Account" poolId="pool" runTime="2000-01-01T00:00:00.000+0100" serviceName="autoFinAccountReconciliation">
+    <recurrenceInfoId href="RecurrenceInfo#9000"/>
+    <runAsUser href="UserLogin#system"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="FAM_AUTO_CREATE" description="Every Hour" integer1="12" integer2="60" tempExprTypeId="FREQUENCY"/>
+  <contents xsi:type="biz-schedule:JobSandbox" jobId="FAM_AUTO_CREATE" jobName="Auto-create Fixed Asset Maintenances" maxRecurrenceCount="-1" poolId="pool" runTime="2000-01-01T00:00:00.000+0100" serviceName="createMaintsFromTimeInterval">
+    <runAsUser href="UserLogin#system"/>
+    <tempExprId href="TemporalExpression#FAM_AUTO_CREATE"/>
+  </contents>
+</mimo-ent:EntityContainer>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-geo="http://www.abchip.org/mimo/biz/common/geo" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/geo http://www.abchip.org/mimo/biz#//common/geo http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="022_common_seed,seed-initial_GeoData_JP">
+  <contents xsi:type="biz-geo:Geo" geoId="JP-01" abbreviation="HK" geoCode="01" geoName="北海道" wellKnownText="Hokkaido">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-02" abbreviation="AO" geoCode="02" geoName="青森県" wellKnownText="Aomori">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-03" abbreviation="IT" geoCode="03" geoName="岩手県" wellKnownText="Iwate">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-04" abbreviation="MG" geoCode="04" geoName="宮城県" wellKnownText="Miyagi">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-05" abbreviation="AK" geoCode="05" geoName="秋田県" wellKnownText="Akita">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-06" abbreviation="YG" geoCode="06" geoName="山形県" wellKnownText="Yamagata">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-07" abbreviation="FS" geoCode="07" geoName="福島県" wellKnownText="Fukushima">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-08" abbreviation="IB" geoCode="08" geoName="茨城県" wellKnownText="Ibaraki">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-09" abbreviation="TC" geoCode="09" geoName="栃木県" wellKnownText="Tochigi">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-10" abbreviation="GU" geoCode="10" geoName="群馬県" wellKnownText="Gunma">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-11" abbreviation="ST" geoCode="11" geoName="埼玉県" wellKnownText="Saitama">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-12" abbreviation="CB" geoCode="12" geoName="千葉県" wellKnownText="Chiba">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-13" abbreviation="TY" geoCode="13" geoName="東京都" wellKnownText="Tokyo">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-14" abbreviation="KN" geoCode="14" geoName="神奈川県" wellKnownText="Kanagawa">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-15" abbreviation="NI" geoCode="15" geoName="新潟県" wellKnownText="Niigata">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-16" abbreviation="TM" geoCode="16" geoName="富山県" wellKnownText="Toyama">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-17" abbreviation="IS" geoCode="17" geoName="石川県" wellKnownText="Ishikawa">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-18" abbreviation="FI" geoCode="18" geoName="福井県" wellKnownText="Fukui">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-19" abbreviation="YN" geoCode="19" geoName="山梨県" wellKnownText="Yamanashi">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-20" abbreviation="NA" geoCode="20" geoName="長野県" wellKnownText="Nagano">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-21" abbreviation="GI" geoCode="21" geoName="岐阜県" wellKnownText="Gifu">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-22" abbreviation="SZ" geoCode="22" geoName="静岡県" wellKnownText="Shizuoka">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-23" abbreviation="AI" geoCode="23" geoName="愛知県" wellKnownText="Aichi">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-24" abbreviation="ME" geoCode="24" geoName="三重県" wellKnownText="Mie">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-25" abbreviation="SI" geoCode="25" geoName="滋賀県" wellKnownText="Shiga">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-26" abbreviation="KY" geoCode="26" geoName="京都府" wellKnownText="Kyoto">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-27" abbreviation="OS" geoCode="27" geoName="大阪府" wellKnownText="Osaka">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-28" abbreviation="HG" geoCode="28" geoName="兵庫県" wellKnownText="Hyogo">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-29" abbreviation="NR" geoCode="29" geoName="奈良県" wellKnownText="Nara">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-30" abbreviation="WA" geoCode="30" geoName="和歌山県" wellKnownText="Wakayama">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-31" abbreviation="TT" geoCode="31" geoName="鳥取県" wellKnownText="Tottori">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-32" abbreviation="SM" geoCode="32" geoName="島根県" wellKnownText="Shimane">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-33" abbreviation="OY" geoCode="33" geoName="岡山県" wellKnownText="Okayama">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-34" abbreviation="HS" geoCode="34" geoName="広島県" wellKnownText="Hiroshima">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-35" abbreviation="YA" geoCode="35" geoName="山口県" wellKnownText="Yamaguchi">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-36" abbreviation="TK" geoCode="36" geoName="徳島県" wellKnownText="Tokushima">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-37" abbreviation="KA" geoCode="37" geoName="香川県" wellKnownText="Kagawa">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-38" abbreviation="EH" geoCode="38" geoName="愛媛県" wellKnownText="Ehime">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-39" abbreviation="KO" geoCode="39" geoName="高知県" wellKnownText="Kochi">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-40" abbreviation="FO" geoCode="40" geoName="福岡県" wellKnownText="Fukuoka">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-41" abbreviation="SG" geoCode="41" geoName="佐賀県" wellKnownText="Saga">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-42" abbreviation="NS" geoCode="42" geoName="長崎県" wellKnownText="Nagasaki">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-43" abbreviation="KU" geoCode="43" geoName="熊本県" wellKnownText="Kumamoto">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-44" abbreviation="OI" geoCode="44" geoName="大分県" wellKnownText="Oita">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-45" abbreviation="MZ" geoCode="45" geoName="宮崎県" wellKnownText="Miyazaki">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-46" abbreviation="KG" geoCode="46" geoName="鹿児島県" wellKnownText="Kagoshima">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JP-47" abbreviation="OK" geoCode="47" geoName="沖縄県" wellKnownText="Okinawa">
+    <geoTypeId href="GeoType#PROVINCE"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-01"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-02"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-03"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-04"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-05"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-06"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-07"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-08"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-09"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-10"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-11"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-12"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-13"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-14"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-15"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-16"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-17"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-18"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-19"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-20"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-21"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-22"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-23"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-24"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-25"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-26"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-27"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-28"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-29"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-30"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-31"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-32"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-33"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-34"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-35"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-36"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-37"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-38"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-39"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-40"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-41"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-42"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-43"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-44"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-45"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-46"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#JPN"/>
+    <geoIdTo href="Geo#JP-47"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+</mimo-ent:EntityContainer>

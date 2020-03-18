@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-content="http://www.abchip.org/mimo/biz/content/content" xmlns:biz-data="http://www.abchip.org/mimo/biz/content/data" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/content/content http://www.abchip.org/mimo/biz#//content http://www.abchip.org/mimo/biz/content/data http://www.abchip.org/mimo/biz#//data http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="062_product_seed,seed-initial_ProductHelpData">
+  <contents xsi:type="biz-data:DataResource" dataResourceId="HELP_PRODUCT" dataResourceName="Help system Product" isPublic="true" localeString="en" objectInfo="applications/product/data/helpdata/HELP_PRODUCT.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="HELP_PRODUCT" contentName="Catalog Manager" localeString="en">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#HELP_PRODUCT"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100" sequenceNum="20">
+    <contentId href="Content#HELP_ROOT"/>
+    <contentIdTo href="Content#HELP_PRODUCT"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="PRODCATALOG_main" dataResourceName="Accounting Help" isPublic="true" localeString="en" objectInfo="applications/product/data/helpdata/HELP_PRODCATALOG_main.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="PRODCATALOG_main" contentName="Main Catalog Help">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#PRODCATALOG_main"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100" mapKey="CATALOG_main">
+    <contentId href="Content#HELP_PRODUCT"/>
+    <contentIdTo href="Content#PRODCATALOG_main"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="IMAGEMANAGEMENT_MAIN" dataResourceName="Image Management" isPublic="true" localeString="en" objectInfo="applications/product/data/helpdata/HELP_IMAGEMANAGEMENT.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="IMAGEMANAGEMENT_MAIN" contentName="Image Management">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#IMAGEMANAGEMENT_MAIN"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100" mapKey="CATALOG_Imagemanagement" sequenceNum="1">
+    <contentId href="Content#PRODCATALOG_main"/>
+    <contentIdTo href="Content#IMAGEMANAGEMENT_MAIN"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="HELP_FACILITY" dataResourceName="Help system Facility" isPublic="true" localeString="en" objectInfo="applications/product/data/helpdata/HELP_FACILITY.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="HELP_FACILITY" contentName="Facility">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#HELP_FACILITY"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100">
+    <contentId href="Content#HELP_ROOT"/>
+    <contentIdTo href="Content#HELP_FACILITY"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="HELP_FACILITY_TRK" dataResourceName="Help system Facility Tracking" isPublic="true" localeString="en" objectInfo="applications/product/data/helpdata/HELP_FACILITY_Tracking.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="HELP_FACILITY_TRK" contentName="Facility Tracking" localeString="en">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#HELP_FACILITY_TRK"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100" mapKey="FACILITY_Tracking">
+    <contentId href="Content#HELP_FACILITY"/>
+    <contentIdTo href="Content#HELP_FACILITY_TRK"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+  <contents xsi:type="biz-data:DataResource" dataResourceId="HELP_FACILITY_PICK" dataResourceName="Help system Facility PicklistManage" isPublic="true" localeString="en" objectInfo="applications/product/data/helpdata/HELP_FACILITY_PicklistManage.xml">
+    <dataResourceTypeId href="DataResourceType#OFBIZ_FILE"/>
+    <dataTemplateTypeId href="DataTemplateType#NONE"/>
+    <mimeTypeId href="MimeType#text/xml"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+  </contents>
+  <contents xsi:type="biz-content:Content" contentId="HELP_FACILITY_PICK" contentName="Facility PicklistManage" localeString="en">
+    <contentTypeId href="ContentType#DOCUMENT"/>
+    <dataResourceId href="DataResource#HELP_FACILITY_PICK"/>
+    <mimeTypeId href="MimeType#text/html"/>
+    <statusId href="StatusItem#CTNT_IN_PROGRESS"/>
+    <templateDataResourceId href="DataResource#HELP_TEMPL"/>
+  </contents>
+  <contents xsi:type="biz-content:ContentAssoc" fromDate="2006-01-12T01:01:01.000+0100" mapKey="FACILITY_PicklistManage">
+    <contentId href="Content#HELP_FACILITY"/>
+    <contentIdTo href="Content#HELP_FACILITY_PICK"/>
+    <contentAssocTypeId href="ContentAssocType#TREE_CHILD"/>
+  </contents>
+</mimo-ent:EntityContainer>
