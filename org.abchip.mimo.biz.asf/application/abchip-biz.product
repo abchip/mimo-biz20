@@ -10,6 +10,7 @@
       <programArgs>-console
 -clean
 -mimo.config ${container_loc}/abchip-biz.xmi
+-mimo.home /mimo/abchip-biz
       </programArgs>
       <vmArgs>-Djavax.xml.parsers.DocumentBuilderFactory=com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl
       </vmArgs>

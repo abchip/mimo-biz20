@@ -302,9 +302,9 @@
       id="abchip-biz"
       user="mimo"/>
   <hooks className="org.abchip.mimo.biz.plugins.application.BizApplicationHook"/>
-  <paths data="/mimo/abchip-biz/data"
-      logs="/mimo/abchip-biz/logs"
-      work="/mimo/abchip-biz"/>
+  <paths data="{mimo.home}/data"
+      logs="{mimo.home}/logs"
+      work="{mimo.home}/work"/>
   <resourceMapping>
     <rules xsi:type="mimo-resource:ResourceMappingRuleByPackage"
         provider="*OFBIZ"
