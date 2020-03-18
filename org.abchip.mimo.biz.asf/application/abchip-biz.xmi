@@ -120,13 +120,6 @@
           className="org.abchip.mimo.biz.plugins.command.BizSeedCommands"/>
     </modules>
     <modules
-        name="Authentication">
-      <services
-          xsi:type="mimo-app:ServiceExecutor"
-          className="org.abchip.mimo.biz.base.BizAuthenticationManagerImpl"
-          interfaceName="org.abchip.mimo.context.AuthenticationManager"/>
-    </modules>
-    <modules
         name="Resources">
       <services
           xsi:type="mimo-app:ServiceRegistryEntry"
@@ -240,6 +233,13 @@
   </components>
   <components
       name="Connectors">
+    <modules
+        name="Auth">
+      <services
+          xsi:type="mimo-app:ServiceExecutor"
+          className="org.abchip.mimo.biz.base.BizAuthenticationManagerImpl"
+          interfaceName="org.abchip.mimo.context.AuthenticationManager"/>
+    </modules>
     <modules
         name="Session">
       <services

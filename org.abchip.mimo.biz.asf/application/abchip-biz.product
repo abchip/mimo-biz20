@@ -34,7 +34,6 @@
    <features>
       <feature id="org.abchip.eclipse.osgi.feature" version="0.2.0.qualifier"/>
       <feature id="org.abchip.mimo.core.feature" version="0.2.0.qualifier"/>
-      <feature id="org.abchip.mimo.language.feature" version="0.2.0.qualifier"/>
       <feature id="org.abchip.mimo.edi.feature" version="0.2.0.qualifier"/>
       <feature id="org.abchip.mimo.biz.feature" version="0.2.0.qualifier"/>
       <feature id="org.abchip.mimo.biz.asf.feature" version="0.2.0.qualifier"/>
