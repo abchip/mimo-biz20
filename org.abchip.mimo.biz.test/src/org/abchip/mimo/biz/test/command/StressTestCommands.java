@@ -10,7 +10,6 @@ package org.abchip.mimo.biz.test.command;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
@@ -46,7 +45,7 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 		AuthenticationManager authenticationManager = application.getContext().get(AuthenticationManager.class);
 
 		try (Context context = authenticationManager.login(null, authentication)) {
-			ExecutorService executor = Executors.newFixedThreadPool(2);
+			ExecutorService executor = Executors.newFixedThreadPool(100);
 			List<Future<Boolean>> resultList = new ArrayList<>();
 
 			for (int i = 1; i <= 10; i++) {
@@ -55,21 +54,10 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 				resultList.add(result);
 			}
 
-			for (int i = 0; i < resultList.size(); i++) {
-				Future<Boolean> result = resultList.get(i);
-				boolean state = true;
-				try {
-					state = result.get();
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				} catch (ExecutionException e) {
-					e.printStackTrace();
-				}
-				System.out.printf("Main: Task %d: %d\n", i, state);
-			}
-
 			executor.shutdown();
 		}
+		
+		System.out.println("End stress test");
 	}
 
 	@Override
