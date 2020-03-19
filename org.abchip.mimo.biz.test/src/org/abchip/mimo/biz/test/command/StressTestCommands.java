@@ -10,9 +10,11 @@ package org.abchip.mimo.biz.test.command;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
 
 import javax.inject.Inject;
 
@@ -22,7 +24,6 @@ import org.abchip.mimo.context.AuthenticationUserPassword;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextFactory;
 import org.abchip.mimo.core.base.BaseCommandProviderImpl;
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
 
 public class StressTestCommands extends BaseCommandProviderImpl {
@@ -30,13 +31,8 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 	@Inject
 	private Application application;
 
-	public <E extends EntityIdentifiable> void _loginStress(CommandInterpreter interpreter) throws Exception {
-		this.login(interpreter.nextArgument());
-	}
-
 	public void _stressTest(CommandInterpreter interpreter) throws Exception {
-		
-		
+
 		AuthenticationUserPassword authentication = ContextFactory.eINSTANCE.createAuthenticationUserPassword();
 		authentication.setUser("test");
 		authentication.setPassword("ofbiz");
@@ -45,19 +41,50 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 		AuthenticationManager authenticationManager = application.getContext().get(AuthenticationManager.class);
 
 		try (Context context = authenticationManager.login(null, authentication)) {
-			ExecutorService executor = Executors.newFixedThreadPool(100);
+
+			ExecutorService executor = Executors.newFixedThreadPool(1);
 			List<Future<Boolean>> resultList = new ArrayList<>();
 
-			for (int i = 1; i <= 10; i++) {
-				RunnableTest calculator = new RunnableTest(i);
-				Future<Boolean> result = executor.submit(calculator);
-				resultList.add(result);
+			
+			CreateParty callable = null;
+			Future<Boolean> result = null;
+			callable = new CreateParty(context);
+			result = executor.submit(callable);
+			resultList.add(result);
+
+/*			
+			RunnableTest calculator = null;
+			Future<Boolean> result = null;
+			calculator = new RunnableTest(1);
+			result = executor.submit(calculator);
+			resultList.add(result);
+			calculator = new RunnableTest(2);
+			result = executor.submit(calculator);
+			resultList.add(result);
+			calculator = new RunnableTest(3);
+			result = executor.submit(calculator);
+			resultList.add(result);
+			calculator = new RunnableTest(4);
+			result = executor.submit(calculator);
+			resultList.add(result);
+*/
+			executor.awaitTermination(5, TimeUnit.SECONDS);
+
+			for (int i = 0; i < resultList.size(); i++) {
+				result = resultList.get(i);
+				boolean success = true;
+				try {
+					success = result.get();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				} catch (ExecutionException e) {
+					e.printStackTrace();
+				}
+				System.out.println("Main: Task " + i  + " success " + success);
 			}
 
 			executor.shutdown();
 		}
-		
-		System.out.println("End stress test");
 	}
 
 	@Override
