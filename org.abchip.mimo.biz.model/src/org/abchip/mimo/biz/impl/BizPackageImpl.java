@@ -781,6 +781,16 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 	 * @generated
 	 */
 	@Override
+	public EAttribute getBizModule_Status() {
+		return (EAttribute)bizModuleEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getBizEntity() {
 		return bizEntityEClass;
 	}
@@ -951,6 +961,7 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 
 		bizModuleEClass = createEClass(BIZ_MODULE);
 		createEAttribute(bizModuleEClass, BIZ_MODULE__NAME);
+		createEAttribute(bizModuleEClass, BIZ_MODULE__STATUS);
 
 		bizEntityEClass = createEClass(BIZ_ENTITY);
 
@@ -1161,6 +1172,7 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 
 		initEClass(bizModuleEClass, BizModule.class, "BizModule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getBizModule_Name(), ecorePackage.getEString(), "name", null, 0, 1, BizModule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBizModule_Status(), theApplicationPackage.getModuleStatus(), "status", "ACT", 1, 1, BizModule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(bizEntityEClass, BizEntity.class, "BizEntity", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

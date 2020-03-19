@@ -7,6 +7,7 @@
  */
 package org.abchip.mimo.biz.impl;
 
+import org.abchip.mimo.application.ModuleStatus;
 import org.abchip.mimo.biz.BizModule;
 import org.abchip.mimo.biz.BizPackage;
 import org.abchip.mimo.entity.impl.EntityImpl;
@@ -22,6 +23,7 @@ import org.eclipse.emf.ecore.EClass;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.impl.BizModuleImpl#getName <em>Name</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizModuleImpl#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @generated
@@ -79,6 +81,26 @@ public class BizModuleImpl extends EntityImpl implements BizModule {
 	@Override
 	public void setName(String newName) {
 		eSet(BizPackage.Literals.BIZ_MODULE__NAME, newName);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ModuleStatus getStatus() {
+		return (ModuleStatus)eGet(BizPackage.Literals.BIZ_MODULE__STATUS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setStatus(ModuleStatus newStatus) {
+		eSet(BizPackage.Literals.BIZ_MODULE__STATUS, newStatus);
 	}
 
 } //BizModuleImpl

@@ -20,6 +20,7 @@ import javax.inject.Inject;
 import org.abchip.mimo.application.ApplicationComponent;
 import org.abchip.mimo.application.ComponentStarted;
 import org.abchip.mimo.application.ComponentStarting;
+import org.abchip.mimo.application.ModuleStatus;
 import org.abchip.mimo.biz.BizComponent;
 import org.abchip.mimo.biz.BizModule;
 import org.apache.ofbiz.base.component.ComponentConfig;
@@ -40,11 +41,14 @@ public class BizApplicationComponentHook {
 			return;
 
 		BizComponent bizComponent = (BizComponent) component;
-		String componentLocation = BizApplicationHook.getApplication().getContext().locateBundle(bizComponent.getPlugin());
+		String componentLocation = BizApplicationHook.getApplication().locateBundle(bizComponent.getPlugin());
 
 		Debug.logInfo("Loading component : " + bizComponent.getName() + " from location: " + componentLocation, BizApplicationHook.MODULE);
 
 		for (BizModule bizModule : bizComponent.getBizModules()) {
+			if (bizModule.getStatus() != ModuleStatus.ACTIVE)
+				continue;
+
 			try {
 				Path moduleLocation = Paths.get(componentLocation, bizComponent.getModulesDir(), bizModule.getName().toLowerCase());
 				Debug.logInfo("Load module : " + bizModule.getName() + " from location: " + moduleLocation, BizApplicationHook.MODULE);

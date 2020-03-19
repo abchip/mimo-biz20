@@ -151,7 +151,8 @@
     <bizModules
         name="service"/>
     <bizModules
-        name="catalina"/>
+        name="catalina"
+        status="STP"/>
     <bizModules
         name="entityext"/>
     <bizModules

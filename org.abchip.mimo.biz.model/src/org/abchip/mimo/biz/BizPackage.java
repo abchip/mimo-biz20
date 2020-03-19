@@ -192,13 +192,22 @@ public interface BizPackage extends EPackage {
 	int BIZ_MODULE__NAME = EntityPackage.ENTITY_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BIZ_MODULE__STATUS = EntityPackage.ENTITY_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Module</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_MODULE_FEATURE_COUNT = EntityPackage.ENTITY_FEATURE_COUNT + 1;
+	int BIZ_MODULE_FEATURE_COUNT = EntityPackage.ENTITY_FEATURE_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.impl.BizEntityImpl <em>Entity</em>}' class.
@@ -630,6 +639,17 @@ public interface BizPackage extends EPackage {
 	EAttribute getBizModule_Name();
 
 	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.BizModule#getStatus <em>Status</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Status</em>'.
+	 * @see org.abchip.mimo.biz.BizModule#getStatus()
+	 * @see #getBizModule()
+	 * @generated
+	 */
+	EAttribute getBizModule_Status();
+
+	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.BizEntity <em>Entity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -851,6 +871,14 @@ public interface BizPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute BIZ_MODULE__NAME = eINSTANCE.getBizModule_Name();
+
+		/**
+		 * The meta object literal for the '<em><b>Status</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute BIZ_MODULE__STATUS = eINSTANCE.getBizModule_Status();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.impl.BizEntityImpl <em>Entity</em>}' class.

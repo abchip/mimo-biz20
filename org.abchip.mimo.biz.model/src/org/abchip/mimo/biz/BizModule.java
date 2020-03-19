@@ -7,6 +7,7 @@
  */
 package org.abchip.mimo.biz;
 
+import org.abchip.mimo.application.ModuleStatus;
 import org.abchip.mimo.entity.Entity;
 
 /**
@@ -19,6 +20,7 @@ import org.abchip.mimo.entity.Entity;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.BizModule#getName <em>Name</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.BizModule#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.BizPackage#getBizModule()
@@ -52,4 +54,34 @@ public interface BizModule extends Entity {
 	 * @generated
 	 */
 	void setName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Status</b></em>' attribute.
+	 * The default value is <code>"ACT"</code>.
+	 * The literals are from the enumeration {@link org.abchip.mimo.application.ModuleStatus}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Status</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Status</em>' attribute.
+	 * @see org.abchip.mimo.application.ModuleStatus
+	 * @see #setStatus(ModuleStatus)
+	 * @see org.abchip.mimo.biz.BizPackage#getBizModule_Status()
+	 * @model default="ACT" required="true"
+	 * @generated
+	 */
+	ModuleStatus getStatus();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.BizModule#getStatus <em>Status</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Status</em>' attribute.
+	 * @see org.abchip.mimo.application.ModuleStatus
+	 * @see #getStatus()
+	 * @generated
+	 */
+	void setStatus(ModuleStatus value);
 } // BizModule

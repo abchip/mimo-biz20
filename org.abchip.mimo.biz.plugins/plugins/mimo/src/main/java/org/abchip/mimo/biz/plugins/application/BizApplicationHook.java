@@ -26,6 +26,7 @@ import org.abchip.mimo.application.ApplicationStarting;
 import org.abchip.mimo.application.ApplicationStopped;
 import org.abchip.mimo.application.ApplicationStopping;
 import org.abchip.mimo.application.ComponentStatus;
+import org.abchip.mimo.application.ModuleStatus;
 import org.abchip.mimo.biz.BizComponent;
 import org.abchip.mimo.biz.BizModule;
 import org.apache.commons.io.FileUtils;
@@ -95,11 +96,14 @@ public class BizApplicationHook {
 
 			Path componentPath = workPath.resolve(bizComponent.getModulesDir());
 
-			String bundleLocation = application.getContext().locateBundle(bizComponent.getPlugin());
+			String bundleLocation = application.locateBundle(bizComponent.getPlugin());
 
 			Debug.logInfo("Copying component " + bizComponent.getName() + " from bundle " + bundleLocation + " to " + componentPath, MODULE);
 
 			for (BizModule bizModule : bizComponent.getBizModules()) {
+				if (bizModule.getStatus() != ModuleStatus.ACTIVE)
+					continue;
+
 				Path moduleLocation = Paths.get(bundleLocation, bizComponent.getModulesDir(), bizModule.getName().toLowerCase());
 				Debug.logInfo("Copy module " + bizModule.getName() + " from bundle " + moduleLocation, MODULE);
 
