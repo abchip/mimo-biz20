@@ -68,6 +68,8 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 			result = executor.submit(calculator);
 			resultList.add(result);
 */
+			
+			
 			executor.awaitTermination(5, TimeUnit.SECONDS);
 
 			for (int i = 0; i < resultList.size(); i++) {

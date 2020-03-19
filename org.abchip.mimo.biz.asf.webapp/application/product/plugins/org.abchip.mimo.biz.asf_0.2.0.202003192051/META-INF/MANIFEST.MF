@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MIMO Biz Product
+Bundle-SymbolicName: org.abchip.mimo.biz.asf;singleton:=true
+Bundle-Version: 0.2.0.202003192051
+Bundle-Vendor: ABChip
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.abchip.mimo.core,org.abchip.mimo.core.e4,org.abchi
+ p.mimo.core.base,org.abchip.mimo.core.http,org.abchip.mimo.biz.common
+ s,org.abchip.mimo.biz.tomcat,org.abchip.mimo.biz.base,org.abchip.mimo
+ .biz.model
+Bundle-Activator: org.abchip.mimo.biz.asf.BizActivatorImpl
+Import-Package: org.osgi.framework
+Bundle-ClassPath: .
+
+

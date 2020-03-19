@@ -19,10 +19,13 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 
-import org.eclipse.core.runtime.adaptor.EclipseStarter;
+import org.eclipse.osgi.launch.Equinox;
+import org.osgi.framework.Bundle;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.BundleException;
 import org.osgi.framework.Constants;
+import org.osgi.framework.launch.Framework;
 
-@SuppressWarnings("restriction")
 public class StartupServlet extends HttpServlet {
 
 	/**
@@ -41,26 +44,69 @@ public class StartupServlet extends HttpServlet {
 		File workingDir = (File) servletContext.getAttribute(ServletContext.TEMPDIR);
 		System.out.println(workingDir);
 
+		Map<String, String> frameworkConfig = new HashMap<String, String>();
+		// config.put(Constants.FRAMEWORK_STORAGE, applicationData);
+		frameworkConfig.put(Constants.FRAMEWORK_STORAGE_CLEAN, "true");
+		frameworkConfig.put("osgi.console", "1234");
+		// config.put("org.osgi.framework.bootdelegation", "none");
+		// config.put("osgi.parentClassloader", "ext");
+
 		try {
-			Map<String, String> frameworkConfig = new HashMap<String, String>();
-			frameworkConfig.put(Constants.FRAMEWORK_STORAGE, workingDir.getAbsolutePath());
-			frameworkConfig.put("osgi.install.area", "/home/mattia/Dati/git/abchip/mimo-biz20/org.abchip.mimo.biz.asf.webapp/product/");
-			frameworkConfig.put(Constants.FRAMEWORK_STORAGE_CLEAN, "true");
-			frameworkConfig.put("osgi.console", "1234");
+			Framework framework = new Equinox(frameworkConfig);
+			framework.init();
 
-			List<String> args = new ArrayList<String>();
-			addParameter(args, "product", "org.abchip.mimo.biz.asf.mimo-biz");
-//			[-data, /home/mattia/Dati/eclipse/abchip/../runtime-abchip-biz-webapp.product, -dev, file:/home/mattia/Dati/eclipse/abchip/.metadata/.plugins/org.eclipse.pde.core/abchip-biz-webapp.product/dev.properties, -os, linux, -ws, gtk, -arch, x86_64, -consoleLog, -console, -clean, -mimo.config, /home/mattia/Dati/git/abchip/mimo-biz20/org.abchip.mimo.biz.asf.webapp/application/abchip-biz-webapp.xmi, -mimo.home, /mimo/abchip-biz-webapp]
-			EclipseStarter.startup((String[]) args.toArray(), null);
+			framework.start();
 
-		} catch (Exception e) {
+			BundleContext bundleContext = framework.getBundleContext();
+			
+			
+			
+//			bundleContext.registerService(String.class, service, properties)
+			ArrayList<Bundle> availableBundles = new ArrayList<Bundle>();
+			// get and open available bundles
+			for (File file : getBundles(servletContext)) {
+				Bundle bundle;
+				try {
+					bundle = bundleContext.installBundle("reference:file:" + file.getAbsolutePath(), null);
+					availableBundles.add(bundle);
+				} catch (BundleException e) {
+
+					switch (e.getType()) {
+					case BundleException.DUPLICATE_BUNDLE_ERROR:
+						break;
+					default:
+						e.printStackTrace();
+						throw e;
+					}
+				}
+			}
+
+			// start the bundles
+			for (Bundle bundle : availableBundles) {
+				try {
+					bundle.start();
+				} catch (BundleException ex) {
+					System.out.println("Failed to start bundle " + bundle.getSymbolicName());
+				}
+			}
+		} catch (BundleException e) {
 			throw new ServletException(e);
 		}
 	}
 
-	private void addParameter(List<String> args, String key, String value) {
-		args.add("-" + key);
-		if (value != null)
-			args.add(value);
+	private List<File> getBundles(ServletContext servletContext) {
+
+		List<File> bundles = new ArrayList<File>();
+
+		String pluginsPath = servletContext.getRealPath("/application/product/plugins");
+		for (File file : new File(pluginsPath).listFiles()) {
+
+			if (file.isHidden())
+				continue;
+
+			bundles.add(file);
+		}
+
+		return bundles;
 	}
 }

@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-geo="http://www.abchip.org/mimo/biz/common/geo" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/geo http://www.abchip.org/mimo/biz#//common/geo http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="007_common_GeoData">
+  <contents xsi:type="biz-geo:GeoType" geoTypeId="CITY" description="City"/>
+  <contents xsi:type="biz-geo:GeoType" geoTypeId="GROUP" description="Group"/>
+  <contents xsi:type="biz-geo:GeoType" geoTypeId="STATE" description="State"/>
+  <contents xsi:type="biz-geo:GeoType" geoTypeId="POSTAL_CODE" description="Postal Code"/>
+  <contents xsi:type="biz-geo:GeoType" geoTypeId="COUNTRY" description="Country"/>
+  <contents xsi:type="biz-geo:GeoType" geoTypeId="COUNTY" description="County"/>
+  <contents xsi:type="biz-geo:GeoType" geoTypeId="COUNTY_CITY" description="County-City"/>
+  <contents xsi:type="biz-geo:GeoType" geoTypeId="MUNICIPALITY" description="Municipality"/>
+  <contents xsi:type="biz-geo:GeoType" geoTypeId="PROVINCE" description="Province"/>
+  <contents xsi:type="biz-geo:GeoType" geoTypeId="REGION" description="Region"/>
+  <contents xsi:type="biz-geo:GeoType" geoTypeId="TERRITORY" description="Territory"/>
+  <contents xsi:type="biz-geo:GeoType" geoTypeId="SALES_TERRITORY" description="Sales Territory">
+    <parentTypeId href="GeoType#TERRITORY"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoType" geoTypeId="SERVICE_TERRITORY" description="Service Territory">
+    <parentTypeId href="GeoType#TERRITORY"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssocType" geoAssocTypeId="GROUP_MEMBER" description="Geo Group Member"/>
+  <contents xsi:type="biz-geo:GeoAssocType" geoAssocTypeId="REGIONS" description="For a region of a larger Geo, i.e. states, counties, provinces..."/>
+  <contents xsi:type="biz-geo:GeoAssocType" geoAssocTypeId="COUNTY_CITY" description="City in a county"/>
+  <contents xsi:type="biz-geo:GeoAssocType" geoAssocTypeId="COUNTY_SEAT" description="Administrative Main City of a County"/>
+  <contents xsi:type="biz-geo:GeoAssocType" geoAssocTypeId="POSTAL_CODE" description="Postal code associated to a GeoType"/>
+  <contents xsi:type="biz-geo:Geo" geoId="_NA_" abbreviation="_NA_" geoCode="_NA_" geoName="Not Applicable"/>
+  <contents xsi:type="biz-geo:Geo" geoId="AFG" abbreviation="AFG" geoCode="AF" geoName="Afghanistan" geoSecCode="004">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ALA" abbreviation="ALA" geoCode="AX" geoName="Åland islands" geoSecCode="248">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ALB" abbreviation="ALB" geoCode="AL" geoName="Albania" geoSecCode="008">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="DZA" abbreviation="DZA" geoCode="DZ" geoName="Algeria" geoSecCode="012">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ASM" abbreviation="ASM" geoCode="AS" geoName="American Samoa" geoSecCode="016">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="AND" abbreviation="AND" geoCode="AD" geoName="Andorra" geoSecCode="020">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="AGO" abbreviation="AGO" geoCode="AO" geoName="Angola" geoSecCode="024">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="AIA" abbreviation="AIA" geoCode="AI" geoName="Anguilla" geoSecCode="660">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ATA" abbreviation="ATA" geoCode="AQ" geoName="Antarctica" geoSecCode="010">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ATG" abbreviation="ATG" geoCode="AG" geoName="Antigua And Barbuda" geoSecCode="028">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ARG" abbreviation="ARG" geoCode="AR" geoName="Argentina" geoSecCode="032">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ARM" abbreviation="ARM" geoCode="AM" geoName="Armenia" geoSecCode="051">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ABW" abbreviation="ABW" geoCode="AW" geoName="Aruba" geoSecCode="533">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="AUS" abbreviation="AUS" geoCode="AU" geoName="Australia" geoSecCode="036">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="AUT" abbreviation="AUT" geoCode="AT" geoName="Austria" geoSecCode="040">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="AZE" abbreviation="AZE" geoCode="AZ" geoName="Azerbaijan" geoSecCode="031">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BHS" abbreviation="BHS" geoCode="BS" geoName="Bahamas" geoSecCode="044">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BHR" abbreviation="BHR" geoCode="BH" geoName="Bahrain" geoSecCode="048">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BGD" abbreviation="BGD" geoCode="BD" geoName="Bangladesh" geoSecCode="050">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BRB" abbreviation="BRB" geoCode="BB" geoName="Barbados" geoSecCode="052">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BLR" abbreviation="BLR" geoCode="BY" geoName="Belarus" geoSecCode="112">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BEL" abbreviation="BEL" geoCode="BE" geoName="Belgium" geoSecCode="056">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BES" abbreviation="BES" geoCode="BQ" geoName="Bonaire, Sint Eustatius and Saba" geoSecCode="535">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BLZ" abbreviation="BLZ" geoCode="BZ" geoName="Belize" geoSecCode="084">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BEN" abbreviation="BEN" geoCode="BJ" geoName="Benin" geoSecCode="204">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BMU" abbreviation="BMU" geoCode="BM" geoName="Bermuda" geoSecCode="060">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BTN" abbreviation="BTN" geoCode="BT" geoName="Bhutan" geoSecCode="064">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BOL" abbreviation="BOL" geoCode="BO" geoName="Bolivia" geoSecCode="068">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BIH" abbreviation="BIH" geoCode="BA" geoName="Bosnia And Herzegowina" geoSecCode="070">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BWA" abbreviation="BWA" geoCode="BW" geoName="Botswana" geoSecCode="072">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BVT" abbreviation="BVT" geoCode="BV" geoName="Bouvet Island" geoSecCode="074">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BRA" abbreviation="BRA" geoCode="BR" geoName="Brazil" geoSecCode="076">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="IOT" abbreviation="IOT" geoCode="IO" geoName="British Indian Ocean Territory" geoSecCode="086">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BRN" abbreviation="BRN" geoCode="BN" geoName="Brunei Darussalam" geoSecCode="096">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BGR" abbreviation="BGR" geoCode="BG" geoName="Bulgaria" geoSecCode="100">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BFA" abbreviation="BFA" geoCode="BF" geoName="Burkina Faso" geoSecCode="854">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BDI" abbreviation="BDI" geoCode="BI" geoName="Burundi" geoSecCode="108">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="KHM" abbreviation="KHM" geoCode="KH" geoName="Cambodia" geoSecCode="116">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CMR" abbreviation="CMR" geoCode="CM" geoName="Cameroon" geoSecCode="120">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CAN" abbreviation="CAN" geoCode="CA" geoName="Canada" geoSecCode="124">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CPV" abbreviation="CPV" geoCode="CV" geoName="Cape Verde" geoSecCode="132">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CYM" abbreviation="CYM" geoCode="KY" geoName="Cayman Islands" geoSecCode="136">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CAF" abbreviation="CAF" geoCode="CF" geoName="Central African Republic" geoSecCode="140">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TCD" abbreviation="TCD" geoCode="TD" geoName="Chad" geoSecCode="148">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CHL" abbreviation="CHL" geoCode="CL" geoName="Chile" geoSecCode="152">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CHN" abbreviation="CHN" geoCode="CN" geoName="China" geoSecCode="156">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CXR" abbreviation="CXR" geoCode="CX" geoName="Christmas Island" geoSecCode="162">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CCK" abbreviation="CCK" geoCode="CC" geoName="Cocos (keeling) Islands" geoSecCode="166">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="COL" abbreviation="COL" geoCode="CO" geoName="Colombia" geoSecCode="170">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="COM" abbreviation="COM" geoCode="KM" geoName="Comoros" geoSecCode="174">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="COG" abbreviation="COG" geoCode="CG" geoName="Congo" geoSecCode="178">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="COD" abbreviation="COD" geoCode="CD" geoName="Congo, The Democratic Republic Of The" geoSecCode="180">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="COK" abbreviation="COK" geoCode="CK" geoName="Cook Islands" geoSecCode="184">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CRI" abbreviation="CRI" geoCode="CR" geoName="Costa Rica" geoSecCode="188">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CIV" abbreviation="CIV" geoCode="CI" geoName="Cote D'ivoire" geoSecCode="384">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="HRV" abbreviation="HRV" geoCode="HR" geoName="Croatia (local Name: Hrvatska)" geoSecCode="191">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CUB" abbreviation="CUB" geoCode="CU" geoName="Cuba" geoSecCode="192">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CUW" abbreviation="CUW" geoCode="CW" geoName="Curaçao" geoSecCode="531">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CYP" abbreviation="CYP" geoCode="CY" geoName="Cyprus" geoSecCode="196">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CZE" abbreviation="CZE" geoCode="CZ" geoName="Czech Republic" geoSecCode="203">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="DNK" abbreviation="DNK" geoCode="DK" geoName="Denmark" geoSecCode="208">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="DJI" abbreviation="DJI" geoCode="DJ" geoName="Djibouti" geoSecCode="262">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="DMA" abbreviation="DMA" geoCode="DM" geoName="Dominica" geoSecCode="212">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="DOM" abbreviation="DOM" geoCode="DO" geoName="Dominican Republic" geoSecCode="214">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TLS" abbreviation="TLS" geoCode="TL" geoName="East Timor" geoSecCode="626">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ECU" abbreviation="ECU" geoCode="EC" geoName="Ecuador" geoSecCode="218">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="EGY" abbreviation="EGY" geoCode="EG" geoName="Egypt" geoSecCode="818">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SLV" abbreviation="SLV" geoCode="SV" geoName="El Salvador" geoSecCode="222">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ENGL" abbreviation="ENGL" geoCode="ENG" geoName="England" geoSecCode="896">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GNQ" abbreviation="GNQ" geoCode="GQ" geoName="Equatorial Guinea" geoSecCode="226">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ERI" abbreviation="ERI" geoCode="ER" geoName="Eritrea" geoSecCode="232">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="EST" abbreviation="EST" geoCode="EE" geoName="Estonia" geoSecCode="233">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ETH" abbreviation="ETH" geoCode="ET" geoName="Ethiopia" geoSecCode="231">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FLK" abbreviation="FLK" geoCode="FK" geoName="Falkland Islands (malvinas)" geoSecCode="238">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FRO" abbreviation="FRO" geoCode="FO" geoName="Faroe Islands" geoSecCode="234">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FJI" abbreviation="FJI" geoCode="FJ" geoName="Fiji" geoSecCode="242">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FIN" abbreviation="FIN" geoCode="FI" geoName="Finland" geoSecCode="246">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FXX" abbreviation="FXX" geoCode="FX" geoName="France, Metropolitan" geoSecCode="249">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FRA" abbreviation="FRA" geoCode="FR" geoName="France" geoSecCode="250">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GUF" abbreviation="GUF" geoCode="GF" geoName="French Guiana" geoSecCode="254">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PYF" abbreviation="PYF" geoCode="PF" geoName="French Polynesia" geoSecCode="258">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ATF" abbreviation="ATF" geoCode="TF" geoName="French Southern Territories" geoSecCode="260">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GAB" abbreviation="GAB" geoCode="GA" geoName="Gabon" geoSecCode="266">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GMB" abbreviation="GMB" geoCode="GM" geoName="Gambia" geoSecCode="270">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GEO" abbreviation="GEO" geoCode="GE" geoName="Georgia" geoSecCode="268">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="DEU" abbreviation="DEU" geoCode="DE" geoName="Germany" geoSecCode="276">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GHA" abbreviation="GHA" geoCode="GH" geoName="Ghana" geoSecCode="288">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GIB" abbreviation="GIB" geoCode="GI" geoName="Gibraltar" geoSecCode="292">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GRC" abbreviation="GRC" geoCode="GR" geoName="Greece" geoSecCode="300">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GRL" abbreviation="GRL" geoCode="GL" geoName="Greenland" geoSecCode="304">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GRD" abbreviation="GRD" geoCode="GD" geoName="Grenada" geoSecCode="308">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GLP" abbreviation="GLP" geoCode="GP" geoName="Guadeloupe" geoSecCode="312">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GUM" abbreviation="GUM" geoCode="GU" geoName="Guam" geoSecCode="316">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GTM" abbreviation="GTM" geoCode="GT" geoName="Guatemala" geoSecCode="320">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GGY" abbreviation="GGY" geoCode="GG" geoName="Guernsey" geoSecCode="831">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GIN" abbreviation="GIN" geoCode="GN" geoName="Guinea" geoSecCode="324">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GNB" abbreviation="GNB" geoCode="GW" geoName="Guinea-bissau" geoSecCode="624">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GUY" abbreviation="GUY" geoCode="GY" geoName="Guyana" geoSecCode="328">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="HTI" abbreviation="HTI" geoCode="HT" geoName="Haiti" geoSecCode="332">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="HMD" abbreviation="HMD" geoCode="HM" geoName="Heard And Mc Donald Islands" geoSecCode="334">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="VAT" abbreviation="VAT" geoCode="VA" geoName="Holy See (vatican City State)" geoSecCode="336">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="HND" abbreviation="HND" geoCode="HN" geoName="Honduras" geoSecCode="340">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="HKG" abbreviation="HKG" geoCode="HK" geoName="Hong Kong" geoSecCode="344">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="HUN" abbreviation="HUN" geoCode="HU" geoName="Hungary" geoSecCode="348">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ISL" abbreviation="ISL" geoCode="IS" geoName="Iceland" geoSecCode="352">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="IND" abbreviation="IND" geoCode="IN" geoName="India" geoSecCode="356">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="IDN" abbreviation="IDN" geoCode="ID" geoName="Indonesia" geoSecCode="360">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="IRN" abbreviation="IRN" geoCode="IR" geoName="Iran (islamic Republic Of)" geoSecCode="364">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="IRQ" abbreviation="IRQ" geoCode="IQ" geoName="Iraq" geoSecCode="368">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="IRL" abbreviation="IRL" geoCode="IE" geoName="Ireland" geoSecCode="372">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="IMN" abbreviation="IMN" geoCode="IM" geoName="Isle of Man" geoSecCode="833">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ISR" abbreviation="ISR" geoCode="IL" geoName="Israel" geoSecCode="376">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ITA" abbreviation="ITA" geoCode="IT" geoName="Italy" geoSecCode="380">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JAM" abbreviation="JAM" geoCode="JM" geoName="Jamaica" geoSecCode="388">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JPN" abbreviation="JPN" geoCode="JP" geoName="Japan" geoSecCode="392">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JEY" abbreviation="JEY" geoCode="JE" geoName="Jersey" geoSecCode="832">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="JOR" abbreviation="JOR" geoCode="JO" geoName="Jordan" geoSecCode="400">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="KAZ" abbreviation="KAZ" geoCode="KZ" geoName="Kazakhstan" geoSecCode="398">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="KEN" abbreviation="KEN" geoCode="KE" geoName="Kenya" geoSecCode="404">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="KIR" abbreviation="KIR" geoCode="KI" geoName="Kiribati" geoSecCode="296">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PRK" abbreviation="PRK" geoCode="KP" geoName="Korea, Democratic People's Republic Of" geoSecCode="408">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="KOR" abbreviation="KOR" geoCode="KR" geoName="Korea, Republic Of" geoSecCode="410">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="KWT" abbreviation="KWT" geoCode="KW" geoName="Kuwait" geoSecCode="414">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="KGZ" abbreviation="KGZ" geoCode="KG" geoName="Kyrgyzstan" geoSecCode="417">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="LAO" abbreviation="LAO" geoCode="LA" geoName="Lao People's Democratic Republic" geoSecCode="418">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="LVA" abbreviation="LVA" geoCode="LV" geoName="Latvia" geoSecCode="428">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="LBN" abbreviation="LBN" geoCode="LB" geoName="Lebanon" geoSecCode="422">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="LSO" abbreviation="LSO" geoCode="LS" geoName="Lesotho" geoSecCode="426">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="LBR" abbreviation="LBR" geoCode="LR" geoName="Liberia" geoSecCode="430">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="LBY" abbreviation="LBY" geoCode="LY" geoName="Libyan Arab Jamahiriya" geoSecCode="434">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="LIE" abbreviation="LIE" geoCode="LI" geoName="Liechtenstein" geoSecCode="438">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="LTU" abbreviation="LTU" geoCode="LT" geoName="Lithuania" geoSecCode="440">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="LUX" abbreviation="LUX" geoCode="LU" geoName="Luxembourg" geoSecCode="442">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MAC" abbreviation="MAC" geoCode="MO" geoName="Macau" geoSecCode="446">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MKD" abbreviation="MKD" geoCode="MK" geoName="Macedonia, The Former Yugoslav Republic Of" geoSecCode="807">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MDG" abbreviation="MDG" geoCode="MG" geoName="Madagascar" geoSecCode="450">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MWI" abbreviation="MWI" geoCode="MW" geoName="Malawi" geoSecCode="454">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MYS" abbreviation="MYS" geoCode="MY" geoName="Malaysia" geoSecCode="458">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MDV" abbreviation="MDV" geoCode="MV" geoName="Maldives" geoSecCode="462">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MLI" abbreviation="MLI" geoCode="ML" geoName="Mali" geoSecCode="466">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MLT" abbreviation="MLT" geoCode="MT" geoName="Malta" geoSecCode="470">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MHL" abbreviation="MHL" geoCode="MH" geoName="Marshall Islands" geoSecCode="584">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MTQ" abbreviation="MTQ" geoCode="MQ" geoName="Martinique" geoSecCode="474">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MRT" abbreviation="MRT" geoCode="MR" geoName="Mauritania" geoSecCode="478">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MUS" abbreviation="MUS" geoCode="MU" geoName="Mauritius" geoSecCode="480">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MYT" abbreviation="MYT" geoCode="YT" geoName="Mayotte" geoSecCode="175">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MEX" abbreviation="MEX" geoCode="MX" geoName="Mexico" geoSecCode="484">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FSM" abbreviation="FSM" geoCode="FM" geoName="Micronesia, Federated States Of" geoSecCode="583">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MDA" abbreviation="MDA" geoCode="MD" geoName="Moldova, Republic Of" geoSecCode="498">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MCO" abbreviation="MCO" geoCode="MC" geoName="Monaco" geoSecCode="492">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MNG" abbreviation="MNG" geoCode="MN" geoName="Mongolia" geoSecCode="496">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MNE" abbreviation="MNE" geoCode="ME" geoName="Montenegro" geoSecCode="499">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MSR" abbreviation="MSR" geoCode="MS" geoName="Montserrat" geoSecCode="500">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MAR" abbreviation="MAR" geoCode="MA" geoName="Morocco" geoSecCode="504">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MOZ" abbreviation="MOZ" geoCode="MZ" geoName="Mozambique" geoSecCode="508">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MMR" abbreviation="MMR" geoCode="MM" geoName="Myanmar" geoSecCode="104">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NIRL" abbreviation="NIRL" geoCode="NIR" geoName="N.Ireland" geoSecCode="897">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NAM" abbreviation="NAM" geoCode="NA" geoName="Namibia" geoSecCode="516">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NRU" abbreviation="NRU" geoCode="NR" geoName="Nauru" geoSecCode="520">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NPL" abbreviation="NPL" geoCode="NP" geoName="Nepal" geoSecCode="524">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NLD" abbreviation="NLD" geoCode="NL" geoName="Netherlands" geoSecCode="528">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ANT" abbreviation="ANT" geoCode="AN" geoName="Netherlands Antilles" geoSecCode="530">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NCL" abbreviation="NCL" geoCode="NC" geoName="New Caledonia" geoSecCode="540">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NZL" abbreviation="NZL" geoCode="NZ" geoName="New Zealand" geoSecCode="554">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NIC" abbreviation="NIC" geoCode="NI" geoName="Nicaragua" geoSecCode="558">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NER" abbreviation="NER" geoCode="NE" geoName="Niger" geoSecCode="562">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NGA" abbreviation="NGA" geoCode="NG" geoName="Nigeria" geoSecCode="566">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NIU" abbreviation="NIU" geoCode="NU" geoName="Niue" geoSecCode="570">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NFK" abbreviation="NFK" geoCode="NF" geoName="Norfolk Island" geoSecCode="574">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MNP" abbreviation="MNP" geoCode="MP" geoName="Northern Mariana Islands" geoSecCode="580">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="NOR" abbreviation="NOR" geoCode="NO" geoName="Norway" geoSecCode="578">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="OMN" abbreviation="OMN" geoCode="OM" geoName="Oman" geoSecCode="512">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PAK" abbreviation="PAK" geoCode="PK" geoName="Pakistan" geoSecCode="586">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PLW" abbreviation="PLW" geoCode="PW" geoName="Palau" geoSecCode="585">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PSE" abbreviation="PSE" geoCode="PS" geoName="Palestinian Territory, Occupied" geoSecCode="275">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PAN" abbreviation="PAN" geoCode="PA" geoName="Panama" geoSecCode="591">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PNG" abbreviation="PNG" geoCode="PG" geoName="Papua New Guinea" geoSecCode="598">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PRY" abbreviation="PRY" geoCode="PY" geoName="Paraguay" geoSecCode="600">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PER" abbreviation="PER" geoCode="PE" geoName="Peru" geoSecCode="604">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PHL" abbreviation="PHL" geoCode="PH" geoName="Philippines" geoSecCode="608">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PCN" abbreviation="PCN" geoCode="PN" geoName="Pitcairn" geoSecCode="612">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="POL" abbreviation="POL" geoCode="PL" geoName="Poland" geoSecCode="616">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PRT" abbreviation="PRT" geoCode="PT" geoName="Portugal" geoSecCode="620">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="PRI" abbreviation="PRI" geoCode="PR" geoName="Puerto Rico" geoSecCode="630">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="QAT" abbreviation="QAT" geoCode="QA" geoName="Qatar" geoSecCode="634">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="REU" abbreviation="REU" geoCode="RE" geoName="Reunion" geoSecCode="638">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ROU" abbreviation="ROU" geoCode="RO" geoName="Romania" geoSecCode="642">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="RUS" abbreviation="RUS" geoCode="RU" geoName="Russian Federation" geoSecCode="643">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="RWA" abbreviation="RWA" geoCode="RW" geoName="Rwanda" geoSecCode="646">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="KNA" abbreviation="KNA" geoCode="KN" geoName="Saint Kitts And Nevis" geoSecCode="659">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="LCA" abbreviation="LCA" geoCode="LC" geoName="Saint Lucia" geoSecCode="662">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="VCT" abbreviation="VCT" geoCode="VC" geoName="Saint Vincent And The Grenadines" geoSecCode="670">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BLM" abbreviation="BLM" geoCode="BL" geoName="Saint Barthélemy" geoSecCode="652">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MAF" abbreviation="MAF" geoCode="MF" geoName="Saint Martin (French part)" geoSecCode="663">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="WSM" abbreviation="WSM" geoCode="WS" geoName="Samoa" geoSecCode="882">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SMR" abbreviation="SMR" geoCode="SM" geoName="San Marino" geoSecCode="674">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="STP" abbreviation="STP" geoCode="ST" geoName="Sao Tome And Principe" geoSecCode="678">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SAU" abbreviation="SAU" geoCode="SA" geoName="Saudi Arabia" geoSecCode="682">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SCOT" abbreviation="SCOT" geoCode="SCT" geoName="Scotland" geoSecCode="895">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SEN" abbreviation="SEN" geoCode="SN" geoName="Senegal" geoSecCode="686">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SRB" abbreviation="SRB" geoCode="RS" geoName="Serbia" geoSecCode="688">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SYC" abbreviation="SYC" geoCode="SC" geoName="Seychelles" geoSecCode="690">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SLE" abbreviation="SLE" geoCode="SL" geoName="Sierra Leone" geoSecCode="694">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SGP" abbreviation="SGP" geoCode="SG" geoName="Singapore" geoSecCode="702">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SVK" abbreviation="SVK" geoCode="SK" geoName="Slovakia (slovak Republic)" geoSecCode="703">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SXM" abbreviation="SXM" geoCode="SX" geoName="Sint Maarten (Dutch part)" geoSecCode="534">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SVN" abbreviation="SVN" geoCode="SI" geoName="Slovenia" geoSecCode="705">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SLB" abbreviation="SLB" geoCode="SB" geoName="Solomon Islands" geoSecCode="090">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SOM" abbreviation="SOM" geoCode="SO" geoName="Somalia" geoSecCode="706">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SGS" abbreviation="SGS" geoCode="GS" geoName="South Georgia And The South Sandwich Islands" geoSecCode="239">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ZAF" abbreviation="ZAF" geoCode="ZA" geoName="South Africa" geoSecCode="710">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SSD" abbreviation="SSD" geoCode="SS" geoName="South Sudan" geoSecCode="728">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ESP" abbreviation="ESP" geoCode="ES" geoName="Spain" geoSecCode="724">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="LKA" abbreviation="LKA" geoCode="LK" geoName="Sri Lanka" geoSecCode="144">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SHN" abbreviation="SHN" geoCode="SH" geoName="St. Helena" geoSecCode="654">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SPM" abbreviation="SPM" geoCode="PM" geoName="St. Pierre And Miquelon" geoSecCode="666">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SDN" abbreviation="SDN" geoCode="SD" geoName="Sudan" geoSecCode="736">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SUR" abbreviation="SUR" geoCode="SR" geoName="Suriname" geoSecCode="740">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SJM" abbreviation="SJM" geoCode="SJ" geoName="Svalbard And Jan Mayen Islands" geoSecCode="744">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SWZ" abbreviation="SWZ" geoCode="SZ" geoName="Swaziland" geoSecCode="748">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SWE" abbreviation="SWE" geoCode="SE" geoName="Sweden" geoSecCode="752">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="CHE" abbreviation="CHE" geoCode="CH" geoName="Switzerland" geoSecCode="756">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="SYR" abbreviation="SYR" geoCode="SY" geoName="Syrian Arab Republic" geoSecCode="760">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TWN" abbreviation="TWN" geoCode="TW" geoName="Taiwan" geoSecCode="158">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TJK" abbreviation="TJK" geoCode="TJ" geoName="Tajikistan" geoSecCode="762">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TZA" abbreviation="TZA" geoCode="TZ" geoName="Tanzania, United Republic Of" geoSecCode="834">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="THA" abbreviation="THA" geoCode="TH" geoName="Thailand" geoSecCode="764">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TGO" abbreviation="TGO" geoCode="TG" geoName="Togo" geoSecCode="768">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TKL" abbreviation="TKL" geoCode="TK" geoName="Tokelau" geoSecCode="772">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TON" abbreviation="TON" geoCode="TO" geoName="Tonga" geoSecCode="776">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TTO" abbreviation="TTO" geoCode="TT" geoName="Trinidad And Tobago" geoSecCode="780">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TUN" abbreviation="TUN" geoCode="TN" geoName="Tunisia" geoSecCode="788">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TUR" abbreviation="TUR" geoCode="TR" geoName="Turkey" geoSecCode="792">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TKM" abbreviation="TKM" geoCode="TM" geoName="Turkmenistan" geoSecCode="795">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TCA" abbreviation="TCA" geoCode="TC" geoName="Turks And Caicos Islands" geoSecCode="796">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="TUV" abbreviation="TUV" geoCode="TV" geoName="Tuvalu" geoSecCode="798">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="UGA" abbreviation="UGA" geoCode="UG" geoName="Uganda" geoSecCode="800">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="UKR" abbreviation="UKR" geoCode="UA" geoName="Ukraine" geoSecCode="804">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="USA" abbreviation="USA" geoCode="US" geoName="United States" geoSecCode="840">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="UMI" abbreviation="UMI" geoCode="UM" geoName="United States Minor Outlying Islands" geoSecCode="581">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ARE" abbreviation="ARE" geoCode="AE" geoName="United Arab Emirates" geoSecCode="784">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="GBR" abbreviation="GBR" geoCode="GB" geoName="United Kingdom" geoSecCode="826">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="URY" abbreviation="URY" geoCode="UY" geoName="Uruguay" geoSecCode="858">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="UZB" abbreviation="UZB" geoCode="UZ" geoName="Uzbekistan" geoSecCode="860">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="VUT" abbreviation="VUT" geoCode="VU" geoName="Vanuatu" geoSecCode="548">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="VEN" abbreviation="VEN" geoCode="VE" geoName="Venezuela" geoSecCode="862">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="VNM" abbreviation="VNM" geoCode="VN" geoName="Viet Nam" geoSecCode="704">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="VGB" abbreviation="VGB" geoCode="VG" geoName="Virgin Islands (british)" geoSecCode="092">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="VIR" abbreviation="VIR" geoCode="VI" geoName="Virgin Islands (u.s.)" geoSecCode="850">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="WALS" abbreviation="WALS" geoCode="WLS" geoName="Wales" geoSecCode="898">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="WLF" abbreviation="WLF" geoCode="WF" geoName="Wallis And Futuna Islands" geoSecCode="876">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ESH" abbreviation="ESH" geoCode="EH" geoName="Western Sahara" geoSecCode="732">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="YEM" abbreviation="YEM" geoCode="YE" geoName="Yemen" geoSecCode="887">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="YUG" abbreviation="YUG" geoCode="YU" geoName="Yugoslavia" geoSecCode="891">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ZMB" abbreviation="ZMB" geoCode="ZM" geoName="Zambia" geoSecCode="894">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="ZWE" abbreviation="ZWE" geoCode="ZW" geoName="Zimbabwe" geoSecCode="716">
+    <geoTypeId href="GeoType#COUNTRY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="EU" abbreviation="EU" geoCode="EU" geoName="European Union">
+    <geoTypeId href="GeoType#GROUP"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#DEU"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#AUT"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BEL"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BGR"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CYP"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#DNK"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ESP"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#EST"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FIN"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FRA"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#GRC"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#HUN"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#HRV"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#IRL"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ITA"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#LVA"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#LTU"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#LUX"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MLT"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NLD"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#POL"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#PRT"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ROU"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#GBR"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#CZE"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SVK"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SVN"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SWE"/>
+    <geoIdTo href="Geo#EU"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#SCOT"/>
+    <geoIdTo href="Geo#GBR"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#ENGL"/>
+    <geoIdTo href="Geo#GBR"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#NIRL"/>
+    <geoIdTo href="Geo#GBR"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#WALS"/>
+    <geoIdTo href="Geo#GBR"/>
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="DEU">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="GBR">
+    <geoAssocTypeId href="GeoAssocType#GROUP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="ENGL">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="NIRL">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="WALS">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="SCOT">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="USA">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="CAN">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="AUS">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="BGR">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="BRA">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="CHN">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="COL">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="MEX">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="NLD" postalCodeRegex="^[1-9][\d]{3}\s?(?!(sa|sd|ss|SA|SD|SS))([a-eghj-opr-tv-xzA-EGHJ-OPR-TV-XZ]{2})?$ " requirePostalCode="true" requireStateProvinceId="N">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="POL">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="IND">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="ITA">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="CHE">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="FRA" postalCodeRegex="^(([0-8][0-9])|(9[0-5]))[0-9]{3}$" requirePostalCode="true" requireStateProvinceId="N"/>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="MYS">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="THA">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="ISR">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="CHL"/>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="TUR">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="ZAF">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:CountryAddressFormat" geoId="JPN" postalCodeRegex="\d{3}-\d{4}">
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+</mimo-ent:EntityContainer>

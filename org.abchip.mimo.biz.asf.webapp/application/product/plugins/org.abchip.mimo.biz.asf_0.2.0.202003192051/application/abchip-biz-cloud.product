@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="MIMO Biz Application Cloud" uid="mimo-biz-cloud" id="org.abchip.mimo.biz.asf.mimo-biz" application="org.abchip.mimo.biz.asf.mimo-biz-application" version="0.2.0" useFeatures="true" includeLaunchers="true">
+
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-console
+-clean
+-mimo.config ${container_loc}/abchip-biz-cloud.xmi
+-mimo.home /mimo/abchip-biz-cloud
+      </programArgs>
+      <vmArgs>-Djavax.xml.parsers.DocumentBuilderFactory=com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl
+      </vmArgs>
+      <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages/>
+
+
+   <launcher>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+
+   <vm>
+   </vm>
+
+
+   <plugins>
+   </plugins>
+
+   <features>
+      <feature id="org.abchip.eclipse.osgi.feature" version="0.2.0.qualifier"/>
+      <feature id="org.abchip.mimo.core.feature" version="0.2.0.qualifier"/>
+      <feature id="org.abchip.mimo.edi.feature" version="0.2.0.qualifier"/>
+      <feature id="org.abchip.mimo.biz.feature" version="0.2.0.qualifier"/>
+      <feature id="org.abchip.mimo.biz.asf.feature" version="0.2.0.qualifier"/>
+   </features>
+
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>
