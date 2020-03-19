@@ -39,7 +39,12 @@ public class BizSeedCommands extends BaseCommandProviderImpl {
 		 * reader-name="demo"/> <read-data reader-name="ext"/> <read-data
 		 * reader-name="ext-test"/> <read-data reader-name="ext-demo"/>
 		 */
-
+		String filterReaders = interpreter.nextArgument();
+		if(filterReaders == null || filterReaders.isEmpty()) {
+			System.err.println("Filter readers is empty. Maybe you want to try with 'seed,seed-initial'");
+			return;
+		}
+		
 		// remove containers
 		ResourceWriter<EntityContainer> entityWriter = resourceManager.getResourceWriter(context, EntityContainer.class);
 		try (EntityIterator<EntityContainer> conatinerIterator = entityWriter.find()) {
@@ -50,12 +55,7 @@ public class BizSeedCommands extends BaseCommandProviderImpl {
 
 		Delegator delegator = DelegatorFactory.getDelegator(null);
 		try {
-			BizCommandUtils.exportReaderFiltered(context, delegator, "seed,seed-initial");
-//			BizCommandUtils.exportReaderFiltered(context, delegator, "tenant");
-//			BizCommandUtils.exportReaderFiltered(context, delegator, "demo");
-//			BizCommandUtils.exportReaderFiltered(context, delegator, "ext");
-//			BizCommandUtils.exportReaderFiltered(context, delegator, "ext-test");
-//			BizCommandUtils.exportReaderFiltered(context, delegator, "ext-demo");
+			BizCommandUtils.exportReaderFiltered(context, delegator, filterReaders);
 
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -162,14 +162,14 @@ public class BizCommandUtils {
 		System.out.println(seedName);
 	}
 
-	public static void exportReaderFiltered(Context context, Delegator delegator, String filter) {
-		int c1 = 0;
+	public static void exportReaderFiltered(Context context, Delegator delegator, String filterReaders) {
+		int c1 = 1;
 		List<String> readerNames = new LinkedList<String>();
-		if (filter.indexOf(",") == -1) {
+		if (filterReaders.indexOf(",") == -1) {
 			readerNames = new LinkedList<String>();
-			readerNames.add(filter);
+			readerNames.add(filterReaders);
 		} else {
-			readerNames = StringUtil.split(filter, ",");
+			readerNames = StringUtil.split(filterReaders, ",");
 		}
 		String helperName = delegator.getGroupHelperName("org.apache.ofbiz");
 		List<URL> urlList = EntityDataLoader.getUrlList(helperName, readerNames);
@@ -188,7 +188,7 @@ public class BizCommandUtils {
 				String[] segments = url.getPath().split("/");
 				String containerName = segments[segments.length - 1];
 				String folderName = segments[segments.length - 3];
-				createContainer(context, containerName, folderName, listEntity, filter, c1++);
+				createContainer(context, containerName, folderName, listEntity, c1++);
 			} catch (Exception e) {
 				System.err.println("Problem with xml " + url + " " + e.getMessage());
 			}
@@ -196,14 +196,13 @@ public class BizCommandUtils {
 	}
 
 	@SuppressWarnings({ "unchecked" })
-	private static void createContainer(Context context, String containerName, String folderName, List<GenericValue> listEntity, String prefix, int counter) {
+	private static void createContainer(Context context, String containerName, String folderName, List<GenericValue> listEntity, int counter) {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		String counterPad = org.apache.commons.lang.StringUtils.leftPad(Integer.toString(counter), 3, "0");
 		Iterator<GenericValue> listEntityIt = listEntity.iterator();
 		EntityContainer container = EntityFactory.eINSTANCE.createEntityContainer();
-		// TODO creazione di cartelle?
-		containerName = counterPad + "_" + folderName + "_" + prefix + "_" + containerName.substring(0, containerName.lastIndexOf('.'));
+		containerName = counterPad + "_" + folderName + "_" + containerName.substring(0, containerName.lastIndexOf('.'));
 
 		container.setName(containerName);
 		while (listEntityIt.hasNext()) {
