@@ -23,10 +23,10 @@
          point="org.eclipse.core.runtime.products">
       <product
             application="org.abchip.mimo.biz.asf.mimo-biz-application"
-            name="MIMO Biz Application Cloud">
+            name="MIMO Biz Application Webapp">
          <property
                name="appName"
-               value="MIMO Biz Application Cloud">
+               value="MIMO Biz Application Webapp">
          </property>
       </product>
    </extension>

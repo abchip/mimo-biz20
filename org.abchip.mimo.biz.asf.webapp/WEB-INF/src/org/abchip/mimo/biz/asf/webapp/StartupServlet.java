@@ -9,8 +9,9 @@
 package org.abchip.mimo.biz.asf.webapp;
 
 import java.io.File;
-import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import javax.servlet.ServletConfig;
@@ -18,11 +19,10 @@ import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 
-import org.eclipse.osgi.launch.Equinox;
-import org.osgi.framework.BundleException;
+import org.eclipse.core.runtime.adaptor.EclipseStarter;
 import org.osgi.framework.Constants;
-import org.osgi.framework.launch.Framework;
 
+@SuppressWarnings("restriction")
 public class StartupServlet extends HttpServlet {
 
 	/**
@@ -42,24 +42,25 @@ public class StartupServlet extends HttpServlet {
 		System.out.println(workingDir);
 
 		try {
-			start();
-		} catch (BundleException | IOException e) {
+			Map<String, String> frameworkConfig = new HashMap<String, String>();
+			frameworkConfig.put(Constants.FRAMEWORK_STORAGE, workingDir.getAbsolutePath());
+			frameworkConfig.put("osgi.install.area", "/home/mattia/Dati/git/abchip/mimo-biz20/org.abchip.mimo.biz.asf.webapp/product/");
+			frameworkConfig.put(Constants.FRAMEWORK_STORAGE_CLEAN, "true");
+			frameworkConfig.put("osgi.console", "1234");
+
+			List<String> args = new ArrayList<String>();
+			addParameter(args, "product", "org.abchip.mimo.biz.asf.mimo-biz");
+//			[-data, /home/mattia/Dati/eclipse/abchip/../runtime-abchip-biz-webapp.product, -dev, file:/home/mattia/Dati/eclipse/abchip/.metadata/.plugins/org.eclipse.pde.core/abchip-biz-webapp.product/dev.properties, -os, linux, -ws, gtk, -arch, x86_64, -consoleLog, -console, -clean, -mimo.config, /home/mattia/Dati/git/abchip/mimo-biz20/org.abchip.mimo.biz.asf.webapp/application/abchip-biz-webapp.xmi, -mimo.home, /mimo/abchip-biz-webapp]
+			EclipseStarter.startup((String[]) args.toArray(), null);
+
+		} catch (Exception e) {
 			throw new ServletException(e);
 		}
 	}
 
-	public void start() throws BundleException, IOException {
-
-		Map<String, String> config = new HashMap<String, String>();
-//		config.put(Constants.FRAMEWORK_STORAGE, applicationData);
-		config.put(Constants.FRAMEWORK_STORAGE_CLEAN, "true");
-		config.put("osgi.console", "1234");
-		// config.put("org.osgi.framework.bootdelegation", "none");
-		// config.put("osgi.parentClassloader", "ext");
-
-		Framework framework = new Equinox(config);
-		framework.init();
-
-		framework.start();
+	private void addParameter(List<String> args, String key, String value) {
+		args.add("-" + key);
+		if (value != null)
+			args.add(value);
 	}
 }
