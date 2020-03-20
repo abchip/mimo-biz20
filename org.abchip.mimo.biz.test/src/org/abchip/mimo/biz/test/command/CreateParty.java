@@ -4,7 +4,7 @@ import java.util.concurrent.Callable;
 
 import org.abchip.mimo.context.Context;
 
-public class CreateParty implements Callable<Boolean> {
+public class CreateParty implements Callable<Long> {
 
 	Context context;
 	
@@ -13,9 +13,11 @@ public class CreateParty implements Callable<Boolean> {
     }
 	
 	@Override
-	public Boolean call() throws Exception {
+	public Long call() throws Exception {
+		long time1 = System.currentTimeMillis();
 		StressTestUtils.createParty(context);
-		return true;
+		long time2 = System.currentTimeMillis();
+		return time2 - time1;
 	}
 	
 }

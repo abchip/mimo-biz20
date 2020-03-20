@@ -41,50 +41,28 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 		AuthenticationManager authenticationManager = application.getContext().get(AuthenticationManager.class);
 
 		try (Context context = authenticationManager.login(null, authentication)) {
-
 			ExecutorService executor = Executors.newFixedThreadPool(1);
-			List<Future<Boolean>> resultList = new ArrayList<>();
-
+			List<Future<Long>> resultList = new ArrayList<>();
 			
 			CreateParty callable = null;
-			Future<Boolean> result = null;
+			Future<Long> result = null;
 			callable = new CreateParty(context);
 			result = executor.submit(callable);
 			resultList.add(result);
-
-/*			
-			RunnableTest calculator = null;
-			Future<Boolean> result = null;
-			calculator = new RunnableTest(1);
-			result = executor.submit(calculator);
-			resultList.add(result);
-			calculator = new RunnableTest(2);
-			result = executor.submit(calculator);
-			resultList.add(result);
-			calculator = new RunnableTest(3);
-			result = executor.submit(calculator);
-			resultList.add(result);
-			calculator = new RunnableTest(4);
-			result = executor.submit(calculator);
-			resultList.add(result);
-*/
-			
-			
 			executor.awaitTermination(5, TimeUnit.SECONDS);
 
 			for (int i = 0; i < resultList.size(); i++) {
 				result = resultList.get(i);
-				boolean success = true;
+				long time = 0;
 				try {
-					success = result.get();
+					time = result.get();
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				} catch (ExecutionException e) {
 					e.printStackTrace();
 				}
-				System.out.println("Main: Task " + i  + " success " + success);
+				System.out.println("Main: Task " + i  + " time " + time);
 			}
-
 			executor.shutdown();
 		}
 	}
