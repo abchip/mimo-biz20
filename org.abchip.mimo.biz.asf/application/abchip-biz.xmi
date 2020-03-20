@@ -8,6 +8,7 @@
     xmlns:mimo-ctx="http://www.abchip.org/mimo/context"
     xmlns:mimo-resource="http://www.abchip.org/mimo/resource"
     xsi:schemaLocation="http://www.abchip.org/mimo/biz ../../org.abchip.mimo.biz.model/model/biz.ecore http://www.abchip.org/mimo/application ../../org.abchip.mimo.core/model/mimo.ecore#//application http://www.abchip.org/mimo/context ../../org.abchip.mimo.core/model/mimo.ecore#//context http://www.abchip.org/mimo/resource ../../org.abchip.mimo.core/model/mimo.ecore#//resource"
+    adminKey="${mimo.admin.key}"
     plugin="org.abchip.mimo.biz.asf"
     name="ofbiz-application"
     text="OFBiz Application">
@@ -310,9 +311,9 @@
       id="abchip-biz"
       user="mimo"/>
   <hooks className="org.abchip.mimo.biz.plugins.application.BizApplicationHook"/>
-  <paths data="{mimo.home}/data"
-      logs="{mimo.home}/logs"
-      work="{mimo.home}/work"/>
+  <paths data="${mimo.home}/data"
+      logs="${mimo.home}/logs"
+      work="${mimo.home}/work"/>
   <resourceMapping>
     <rules xsi:type="mimo-resource:ResourceMappingRuleByPackage"
         provider="*OFBIZ"
