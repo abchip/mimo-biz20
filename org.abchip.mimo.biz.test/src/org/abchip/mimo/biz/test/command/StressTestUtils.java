@@ -58,7 +58,6 @@ public class StressTestUtils {
 		// PostaAddress
 		ResourceWriter<PostalAddress> postalAddressWriter = resourceManager.getResourceWriter(context, PostalAddress.class);
 		PostalAddress postalAddress = postalAddressWriter.make(true);
-		String mechId = postalAddress.getID();
 		postalAddress.setToName("Party " + partyGroup.getID());
 		// indirizzo_via
 		postalAddress.setAddress1("via Party " + partyGroup.getID());
@@ -70,27 +69,24 @@ public class StressTestUtils {
 		postalAddress.setCountryGeoId(resourceManager.getFrame(context, Geo.class).createProxy("ITA"));
 		postalAddress.setStateProvinceGeoId(resourceManager.getFrame(context, Geo.class).createProxy("RM"));
 		postalAddressWriter.create(postalAddress, true);
-		createPartyContactMech(context, resourceManager, partyGroup, mechId, "GENERAL_LOCATION");
+		createPartyContactMech(context, resourceManager, partyGroup, postalAddress, "GENERAL_LOCATION");
 
 		// Email
 		// ContactMech
 		ResourceWriter<ContactMech> contactMechWriter = resourceManager.getResourceWriter(context, ContactMech.class);
 		ContactMech contactMech = contactMechWriter.make(true);
-		mechId = contactMech.getID();
-		contactMech.setContactMechId(mechId);
 		contactMech.setInfoString("info" + partyGroup.getID() + "@gmail.com");
 		contactMech.setContactMechTypeId(resourceManager.getFrame(context, ContactMechType.class).createProxy("EMAIL_ADDRESS"));
 		contactMechWriter.create(contactMech, true);
-		createPartyContactMech(context, resourceManager, partyGroup, mechId, "PRIMARY_EMAIL");
+		createPartyContactMech(context, resourceManager, partyGroup, contactMech, "PRIMARY_EMAIL");
 		
 		// TelecomNumber
 		ResourceWriter<TelecomNumber> telecomNumberWriter = resourceManager.getResourceWriter(context, TelecomNumber.class);
 		TelecomNumber telecomNumber = telecomNumberWriter.make(true);
-		mechId = contactMech.getID();
 		telecomNumber.setContactMechTypeId(resourceManager.getFrame(context, ContactMechType.class).createProxy("TELECOM_NUMBER"));
 		telecomNumber.setContactNumber("001 002 003");
 		telecomNumberWriter.create(telecomNumber, true);
-		createPartyContactMech(context, resourceManager, partyGroup, mechId, "PRIMARY_PHONE");
+		createPartyContactMech(context, resourceManager, partyGroup, telecomNumber, "PRIMARY_PHONE");
 		
 		// PartyTaxAuthInfo
 		ResourceWriter<PartyTaxAuthInfo> partyTaxAuthInfoWriter = resourceManager.getResourceWriter(context, PartyTaxAuthInfo.class);
@@ -113,12 +109,12 @@ public class StressTestUtils {
 		return partyGroup;
 	}
 	
-	private static void createPartyContactMech(Context context, ResourceManager resourceManager, Party party, String mechId, String purposeType) {
+	private static void createPartyContactMech(Context context, ResourceManager resourceManager, Party party, ContactMech contactMech, String purposeType) {
 		// PartyContactMech
 		ResourceWriter<PartyContactMech> partyContactMechWriter = resourceManager.getResourceWriter(context, PartyContactMech.class);
 		PartyContactMech partyContactMech = partyContactMechWriter.make();
 		partyContactMech.setPartyId(party);
-		partyContactMech.setContactMechId(resourceManager.getFrame(context, ContactMech.class).createProxy(mechId));
+		partyContactMech.setContactMechId(contactMech);
 		partyContactMech.setFromDate(new Date());
 		partyContactMechWriter.create(partyContactMech, true);
 
@@ -127,7 +123,7 @@ public class StressTestUtils {
 			ResourceWriter<PartyContactMechPurpose> partyContactMechPurposeWriter = resourceManager.getResourceWriter(context, PartyContactMechPurpose.class);
 			PartyContactMechPurpose partyContactMechPurpose = partyContactMechPurposeWriter.make();
 			partyContactMechPurpose.setPartyId(party);
-			partyContactMechPurpose.setContactMechId(resourceManager.getFrame(context, ContactMech.class).createProxy(mechId));
+			partyContactMechPurpose.setContactMechId(contactMech);
 			partyContactMechPurpose.setContactMechPurposeTypeId(resourceManager.getFrame(context, ContactMechPurposeType.class).createProxy(purposeType));
 			partyContactMechPurpose.setFromDate(new Date());
 			partyContactMechPurposeWriter.create(partyContactMechPurpose, true);

@@ -34,9 +34,11 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 	public void _stressTest(CommandInterpreter interpreter) throws Exception {
 
 		AuthenticationUserPassword authentication = ContextFactory.eINSTANCE.createAuthenticationUserPassword();
-		authentication.setUser("test");
+//		authentication.setUser("test");
+//		authentication.setPassword("ofbiz");
+//		authentication.setTenant("test");
+		authentication.setUser("abchip");
 		authentication.setPassword("ofbiz");
-		authentication.setTenant("test");
 
 		AuthenticationManager authenticationManager = application.getContext().get(AuthenticationManager.class);
 
@@ -44,9 +46,13 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 			ExecutorService executor = Executors.newFixedThreadPool(1);
 			List<Future<Long>> resultList = new ArrayList<>();
 			
-			CreateParty callable = null;
+//			CreateParty callable = null;
+//			callable = new CreateParty(context);
+			CreateProduct callable = null;
+			callable = new CreateProduct(context);
+
 			Future<Long> result = null;
-			callable = new CreateParty(context);
+
 			result = executor.submit(callable);
 			resultList.add(result);
 			executor.awaitTermination(5, TimeUnit.SECONDS);
