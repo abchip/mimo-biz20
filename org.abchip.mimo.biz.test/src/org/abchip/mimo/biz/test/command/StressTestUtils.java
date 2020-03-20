@@ -45,7 +45,7 @@ public class StressTestUtils {
 		partyGroup.setPreferredCurrencyUomId(resourceManager.getFrame(context, Uom.class).createProxy("EUR"));
 		// nome
 		partyGroup.setGroupName("Description Party " + partyGroup.getID());
-		partyGroupWriter.create(partyGroup);
+		partyGroupWriter.create(partyGroup, true);
 		
 		// PartyRole
 		ResourceWriter<PartyRole> partyRoleWriter = resourceManager.getResourceWriter(context, PartyRole.class);

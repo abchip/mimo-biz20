@@ -45,16 +45,21 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 		try (Context context = authenticationManager.login(null, authentication)) {
 			ExecutorService executor = Executors.newFixedThreadPool(1);
 			List<Future<Long>> resultList = new ArrayList<>();
-			
-//			CreateParty callable = null;
-//			callable = new CreateParty(context);
-			CreateProduct callable = null;
-			callable = new CreateProduct(context);
 
 			Future<Long> result = null;
 
-			result = executor.submit(callable);
+//			CreateParty partyCallable = new CreateParty(context);
+//			result = executor.submit(partyCallable);
+//			resultList.add(result);
+
+			CreateProduct productCallable = new CreateProduct(context);
+			result = executor.submit(productCallable);
 			resultList.add(result);
+
+			CreateOrder orderCallable = new CreateOrder(context);
+			result = executor.submit(orderCallable);
+			resultList.add(result);
+			
 			executor.awaitTermination(5, TimeUnit.SECONDS);
 
 			for (int i = 0; i < resultList.size(); i++) {
