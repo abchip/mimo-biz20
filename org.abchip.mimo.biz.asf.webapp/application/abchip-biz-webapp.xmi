@@ -293,14 +293,14 @@
       logs="${mimo.home}/logs"
       work="${mimo.home}/work"/>
   <resourceMapping>
+    <rules xsi:type="mimo-resource:ResourceMappingRuleByFrame"
+        provider="*NIO"
+        frame="EntityIdentifiable"/>
     <rules xsi:type="mimo-resource:ResourceMappingRuleByPackage"
         provider="*OFBIZ"
         package="biz"/>
     <rules xsi:type="mimo-resource:ResourceMappingRuleByPackage"
         provider="*OFBIZ"
         package="edi"/>
-    <rules xsi:type="mimo-resource:ResourceMappingRuleByFrame"
-        provider="*NIO"
-        frame="EntityIdentifiable"/>
   </resourceMapping>
 </mimo-app:Application>
