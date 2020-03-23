@@ -51,12 +51,7 @@
 	<classpathentry exported="true" kind="lib" path="lib/jsoup-1.11.3.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/juel-impl-2.2.7.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/juel-spi-2.2.7.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/jul-to-slf4j-1.7.25.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/libphonenumber-8.9.16.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/log4j-api-2.11.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/log4j-core-2.11.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/log4j-jul-2.11.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/log4j-slf4j-impl-2.11.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/neethi-3.0.3.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/nekohtml-1.9.16.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/openjson-1.0.10.jar"/>

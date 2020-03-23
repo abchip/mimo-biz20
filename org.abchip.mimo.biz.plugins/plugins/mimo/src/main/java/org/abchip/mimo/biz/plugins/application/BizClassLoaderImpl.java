@@ -34,6 +34,7 @@ public class BizClassLoaderImpl extends URLClassLoader {
 		if (name.equals("org.apache.ofbiz.base.container.ContainerLoader")) {
 			return BizApplicationLoaderImpl.class;
 		} else {
+//			System.out.println(name);
 			return super.loadClass(name);
 		}
 	}

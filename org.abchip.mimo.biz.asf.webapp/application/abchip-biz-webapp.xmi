@@ -5,9 +5,8 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:biz="http://www.abchip.org/mimo/biz"
     xmlns:mimo-app="http://www.abchip.org/mimo/application"
-    xmlns:mimo-ctx="http://www.abchip.org/mimo/context"
     xmlns:mimo-resource="http://www.abchip.org/mimo/resource"
-    xsi:schemaLocation="http://www.abchip.org/mimo/biz ../../org.abchip.mimo.biz.model/model/biz.ecore http://www.abchip.org/mimo/application ../../org.abchip.mimo.core/model/mimo.ecore#//application http://www.abchip.org/mimo/context ../../org.abchip.mimo.core/model/mimo.ecore#//context http://www.abchip.org/mimo/resource ../../org.abchip.mimo.core/model/mimo.ecore#//resource"
+    xsi:schemaLocation="http://www.abchip.org/mimo/biz ../../org.abchip.mimo.biz.model/model/biz.ecore http://www.abchip.org/mimo/application ../../org.abchip.mimo.core/model/mimo.ecore#//application http://www.abchip.org/mimo/resource ../../org.abchip.mimo.core/model/mimo.ecore#//resource"
     adminKey="${mimo.admin.key}"
     plugin="org.abchip.mimo.biz.asf"
     name="ofbiz-application"
@@ -98,24 +97,18 @@
       name="Framework"
       plugin="org.abchip.mimo.biz.framework"
       modulesDir="framework">
-    <config>
-      <entities
-          xsi:type="mimo-ctx:ProviderConfig"
-          url="https://localhost:8080/biz/service">
-        <publicUser
-            user="guest"
-            password="ofbiz"/>
-      </entities>
-    </config>
     <hooks className="org.abchip.mimo.biz.plugins.application.BizApplicationComponentHook"/>
     <modules
         name="Commands">
       <services
           xsi:type="mimo-app:ServiceCommandProvider"
-          className="org.abchip.mimo.biz.plugins.command.BizTestCommands"/>
+          className="org.abchip.mimo.biz.base.command.SeedCommands"/>
       <services
           xsi:type="mimo-app:ServiceCommandProvider"
-          className="org.abchip.mimo.biz.plugins.command.BizTenantCommands"/>
+          className="org.abchip.mimo.biz.base.command.TenantCommands"/>
+      <services
+          xsi:type="mimo-app:ServiceCommandProvider"
+          className="org.abchip.mimo.biz.plugins.command.BizTestCommands"/>
       <services
           xsi:type="mimo-app:ServiceCommandProvider"
           className="org.abchip.mimo.biz.plugins.command.BizSeedCommands"/>
@@ -127,13 +120,6 @@
           className="org.abchip.mimo.biz.plugins.driver.OFBizResourceProviderImpl"
           interfaceName="org.abchip.mimo.resource.ResourceProvider"
           name="*OFBIZ"
-          vendor="ABChip"
-          version="0.1.0"/>
-      <services
-          xsi:type="mimo-app:ServiceRegistryEntry"
-          className="org.abchip.mimo.core.http.HttpResourceProviderImpl"
-          interfaceName="org.abchip.mimo.resource.ResourceProvider"
-          name="*HTTP"
           vendor="ABChip"
           version="0.1.0"/>
     </modules>
@@ -169,10 +155,10 @@
         name="Commands">
       <services
           xsi:type="mimo-app:ServiceCommandProvider"
-          className="org.abchip.mimo.biz.base.command.PartyCommandProviderImpl"/>
+          className="org.abchip.mimo.biz.base.command.PartyCommands"/>
       <services
           xsi:type="mimo-app:ServiceCommandProvider"
-          className="org.abchip.mimo.biz.base.command.FiCCommandProviderImpl"/>
+          className="org.abchip.mimo.biz.base.command.FiCCommands"/>
     </modules>
     <bizModules
         name="datamodel"/>

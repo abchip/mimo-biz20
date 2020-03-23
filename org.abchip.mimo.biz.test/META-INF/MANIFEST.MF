@@ -12,7 +12,10 @@ Require-Bundle: org.abchip.mimo.biz.model,
  org.abchip.mimo.biz.base,
  org.eclipse.osgi,
  org.abchip.mimo.core.base
-Export-Package: org.abchip.mimo.biz.test,
- org.abchip.mimo.biz.test.command,
- org.abchip.mimo.biz.test.runner
+Export-Package: org.abchip.mimo.biz.test.command,
+ org.abchip.mimo.biz.test.command.runner,
+ org.abchip.mimo.biz.test.party,
+ org.abchip.mimo.biz.test.party.runner,
+ org.abchip.mimo.biz.test.product,
+ org.abchip.mimo.biz.test.product.runner
 Bundle-ClassPath: .

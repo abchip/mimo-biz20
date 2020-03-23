@@ -10,7 +10,9 @@ package org.abchip.mimo.biz.asf.webapp;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Dictionary;
 import java.util.HashMap;
+import java.util.Hashtable;
 import java.util.List;
 import java.util.Map;
 
@@ -25,8 +27,14 @@ import org.osgi.framework.BundleContext;
 import org.osgi.framework.BundleException;
 import org.osgi.framework.Constants;
 import org.osgi.framework.launch.Framework;
+import org.osgi.framework.wiring.BundleRevision;
 
 public class StartupServlet extends HttpServlet {
+
+	public static final String APPLICATION_ACTIVATOR = "org.abchip.mimo.application.activator";
+	public static final String APPLICATION_ACTIVATOR_HOME = "org.abchip.mimo.application.home";
+	public static final String APPLICATION_ACTIVATOR_CONFIG = "org.abchip.mimo.application.config";
+	public static final String APPLICATION_ACTIVATOR_ADMIN_KEY = "org.abchip.mimo.application.admin.key";
 
 	/**
 	 * 
@@ -39,10 +47,7 @@ public class StartupServlet extends HttpServlet {
 
 		ServletContext servletContext = config.getServletContext();
 
-		System.out.println(servletContext.getRealPath("/"));
-
-		File workingDir = (File) servletContext.getAttribute(ServletContext.TEMPDIR);
-		System.out.println(workingDir);
+		// File workingDir = (File) servletContext.getAttribute(ServletContext.TEMPDIR);
 
 		Map<String, String> frameworkConfig = new HashMap<String, String>();
 		// config.put(Constants.FRAMEWORK_STORAGE, applicationData);
@@ -55,13 +60,24 @@ public class StartupServlet extends HttpServlet {
 			Framework framework = new Equinox(frameworkConfig);
 			framework.init();
 
+			BundleContext bundleContext = framework.getBundleContext();
+
+			String mimoConfig = config.getInitParameter("mimo.config");
+			String mimoHome = config.getInitParameter("mimo.home");
+			String mimoAdminKey = config.getInitParameter("mimo.admin.key");
+
+			Dictionary<String, Object> dictionary = new Hashtable<String, Object>();
+			dictionary.put(APPLICATION_ACTIVATOR_CONFIG, servletContext.getRealPath("/") + mimoConfig);
+			dictionary.put(APPLICATION_ACTIVATOR_HOME, mimoHome);
+			if (mimoAdminKey != null)
+				dictionary.put(APPLICATION_ACTIVATOR_ADMIN_KEY, mimoAdminKey);
+
+			Dictionary<String, Object> properties = new Hashtable<String, Object>();
+			properties.put(APPLICATION_ACTIVATOR, true);
+			bundleContext.registerService(Dictionary.class, dictionary, properties);
+
 			framework.start();
 
-			BundleContext bundleContext = framework.getBundleContext();
-			
-			
-			
-//			bundleContext.registerService(String.class, service, properties)
 			ArrayList<Bundle> availableBundles = new ArrayList<Bundle>();
 			// get and open available bundles
 			for (File file : getBundles(servletContext)) {
@@ -83,6 +99,8 @@ public class StartupServlet extends HttpServlet {
 
 			// start the bundles
 			for (Bundle bundle : availableBundles) {
+				if ((bundle.adapt(BundleRevision.class).getTypes() & BundleRevision.TYPE_FRAGMENT) != 0)
+					continue;
 				try {
 					bundle.start();
 				} catch (BundleException ex) {

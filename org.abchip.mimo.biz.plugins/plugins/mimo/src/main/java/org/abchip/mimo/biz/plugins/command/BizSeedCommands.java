@@ -8,17 +8,28 @@
  */
 package org.abchip.mimo.biz.plugins.command;
 
+import java.net.URL;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+
 import javax.inject.Inject;
 
+import org.abchip.mimo.biz.plugins.entity.EntityUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.base.BaseCommandProviderImpl;
 import org.abchip.mimo.entity.EntityContainer;
+import org.abchip.mimo.entity.EntityFactory;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityIterator;
+import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
+import org.apache.ofbiz.base.util.StringUtil;
 import org.apache.ofbiz.entity.Delegator;
 import org.apache.ofbiz.entity.DelegatorFactory;
+import org.apache.ofbiz.entity.GenericValue;
+import org.apache.ofbiz.entity.util.EntityDataLoader;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
 
 public class BizSeedCommands extends BaseCommandProviderImpl {
@@ -55,35 +66,71 @@ public class BizSeedCommands extends BaseCommandProviderImpl {
 
 		Delegator delegator = DelegatorFactory.getDelegator(null);
 		try {
-			BizCommandUtils.exportReaderFiltered(context, delegator, filterReaders);
+			BizSeedCommands.exportReaderFiltered(context, delegator, filterReaders);
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	@SuppressWarnings("resource")
-	public void _loadSeed(CommandInterpreter interpreter) throws Exception {
+	public static void exportReaderFiltered(Context context, Delegator delegator, String filterReaders) {
+		int c1 = 1;
+		List<String> readerNames = new LinkedList<String>();
+		if (filterReaders.indexOf(",") == -1) {
+			readerNames = new LinkedList<String>();
+			readerNames.add(filterReaders);
+		} else {
+			readerNames = StringUtil.split(filterReaders, ",");
+		}
+		String helperName = delegator.getGroupHelperName("org.apache.ofbiz");
+		List<URL> urlList = EntityDataLoader.getUrlList(helperName, readerNames);
 
-		Context context = this.getContext();
+		Iterator<URL> urlListIt = urlList.iterator();
+		URL url = null;
+		while (urlListIt.hasNext()) {
+			url = urlListIt.next();
 
-		String seedName = interpreter.nextArgument();
-		String tenantId = interpreter.nextArgument();
+			if (url.toString().endsWith("RainbowStoneThemeData.xml"))
+				continue;
 
-		BizCommandUtils.loadSeed(context, seedName, tenantId, true);
+			try {
+				List<GenericValue> listEntity = delegator.readXmlDocument(url);
+
+				String[] segments = url.getPath().split("/");
+				String containerName = segments[segments.length - 1];
+				String folderName = segments[segments.length - 3];
+				createContainer(context, containerName, folderName, listEntity, c1++);
+			} catch (Exception e) {
+				System.err.println("Problem with xml " + url + " " + e.getMessage());
+			}
+		}
 	}
 
-	@SuppressWarnings("resource")
-	public void _loadSeeds(CommandInterpreter interpreter) throws Exception {
+	@SuppressWarnings({ "unchecked" })
+	private static void createContainer(Context context, String containerName, String folderName, List<GenericValue> listEntity, int counter) {
+		ResourceManager resourceManager = context.get(ResourceManager.class);
 
-		Context context = this.getContext();
+		String counterPad = org.apache.commons.lang.StringUtils.leftPad(Integer.toString(counter), 3, "0");
+		Iterator<GenericValue> listEntityIt = listEntity.iterator();
+		EntityContainer container = EntityFactory.eINSTANCE.createEntityContainer();
+		containerName = counterPad + "_" + folderName + "_" + containerName.substring(0, containerName.lastIndexOf('.'));
 
-		String seedName = interpreter.nextArgument();
-		String tenantId = interpreter.nextArgument();
-
-		BizCommandUtils.loadSeeds(context, seedName, tenantId, true);
+		container.setName(containerName);
+		while (listEntityIt.hasNext()) {
+			GenericValue genericValue = listEntityIt.next();
+			EntityIdentifiable entityIdentifiable = null;
+			try {
+				entityIdentifiable = EntityUtils.toEntity((Frame<EntityIdentifiable>) resourceManager.getFrame(context, genericValue.getEntityName()), genericValue);
+			} catch (Exception e) {
+				System.err.println("Error in ecore model not find entity " + genericValue.getEntityName());
+				continue;
+			}
+			container.getContents().add(entityIdentifiable);
+		}
+		ResourceWriter<EntityContainer> entityWriter = resourceManager.getResourceWriter(context, EntityContainer.class);
+		entityWriter.create(container, true);
 	}
-
+	
 	@Override
 	public String getHelp() {
 		// TODO Auto-generated method stub

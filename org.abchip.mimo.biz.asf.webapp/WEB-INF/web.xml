@@ -10,6 +10,14 @@
 	<servlet>
 		<servlet-name>StartupServlet</servlet-name>
 		<servlet-class>org.abchip.mimo.biz.asf.webapp.StartupServlet</servlet-class>
-		<load-on-startup>1</load-on-startup>
+		<init-param>
+			<param-name>mimo.config</param-name>
+			<param-value>application/abchip-biz-webapp.xmi</param-value>
+		</init-param>
+		<init-param>
+			<param-name>mimo.home</param-name>
+			<param-value>/mimo/abchip-biz-webapp</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>		
 	</servlet>
 </web-app>

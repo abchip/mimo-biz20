@@ -9,10 +9,6 @@
 package org.abchip.mimo.biz.plugins;
 
 public class OFBizConstants {
-
-	public static String SEEDS_PATH = "application/seeds";
-	public static String DERBY_SEED = "plugins/mimo/config/derby";
-	public static String DERBY_PATH = "runtime/data/derby";
 	
 	public static final String DATE_FORMAT = "yyyy-MM-dd";
 	public static final String DATETIME_FORMAT = "yyyy-MM-dd'T'HH:mm:ss";
