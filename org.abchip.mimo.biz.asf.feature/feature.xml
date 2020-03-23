@@ -22,19 +22,7 @@
          version="0.0.0"/>
 
    <plugin
-         id="org.abchip.mimo.biz.commons"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
-
-   <plugin
          id="org.abchip.mimo.biz.asf"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
-
-   <plugin
-         id="org.abchip.mimo.biz.tomcat"
          download-size="0"
          install-size="0"
          version="0.0.0"/>
@@ -62,6 +50,20 @@
 
    <plugin
          id="org.abchip.mimo.biz.plugins"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"/>
+
+   <plugin
+         id="org.abchip.mimo.biz.commons"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"/>
+
+   <plugin
+         id="org.abchip.mimo.biz.tomcat"
          download-size="0"
          install-size="0"
          version="0.0.0"

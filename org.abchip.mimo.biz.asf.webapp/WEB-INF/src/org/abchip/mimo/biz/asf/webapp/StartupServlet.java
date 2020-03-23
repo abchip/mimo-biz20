@@ -9,6 +9,7 @@
 package org.abchip.mimo.biz.asf.webapp;
 
 import java.io.File;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Dictionary;
 import java.util.HashMap;
@@ -46,69 +47,80 @@ public class StartupServlet extends HttpServlet {
 
 		ServletContext servletContext = config.getServletContext();
 
-		// File workingDir = (File) servletContext.getAttribute(ServletContext.TEMPDIR);
+		File workingDir = (File) servletContext.getAttribute(ServletContext.TEMPDIR);
 
 		Map<String, String> frameworkConfig = new HashMap<String, String>();
 		// config.put(Constants.FRAMEWORK_STORAGE, applicationData);
 		frameworkConfig.put(Constants.FRAMEWORK_STORAGE_CLEAN, "true");
 		frameworkConfig.put("osgi.console", "1234");
-		// config.put("org.osgi.framework.bootdelegation", "none");
-		// config.put("osgi.parentClassloader", "ext");
+		frameworkConfig.put("osgi.configuration.area", Paths.get(workingDir.getAbsolutePath(), "osgi").toString());
 
+		Framework framework = new Equinox(frameworkConfig);
 		try {
-			Framework framework = new Equinox(frameworkConfig);
 			framework.init();
+			framework.start();
+		} catch (BundleException e) {
+			e.printStackTrace();
+		}
 
-			BundleContext bundleContext = framework.getBundleContext();
+		BundleContext bundleContext = framework.getBundleContext();
 
-			String mimoConfig = config.getInitParameter("mimo.config");
-			String mimoHome = config.getInitParameter("mimo.home");
-			String mimoAdminKey = config.getInitParameter("mimo.admin.key");
+		String mimoConfig = config.getInitParameter("mimo.config");
+		String mimoHome = config.getInitParameter("mimo.home");
+		String mimoAdminKey = config.getInitParameter("mimo.admin.key");
 
-			Dictionary<String, Object> dictionary = new Hashtable<String, Object>();
-			dictionary.put(APPLICATION_ACTIVATOR_CONFIG, servletContext.getRealPath("/") + mimoConfig);
-			dictionary.put(APPLICATION_ACTIVATOR_HOME, mimoHome);
-			if (mimoAdminKey != null)
-				dictionary.put(APPLICATION_ACTIVATOR_ADMIN_KEY, mimoAdminKey);
+		Dictionary<String, Object> dictionary = new Hashtable<String, Object>();
+		dictionary.put(APPLICATION_ACTIVATOR_CONFIG, servletContext.getRealPath("/") + mimoConfig);
+		dictionary.put(APPLICATION_ACTIVATOR_HOME, mimoHome);
+		if (mimoAdminKey != null)
+			dictionary.put(APPLICATION_ACTIVATOR_ADMIN_KEY, mimoAdminKey);
 
-			Dictionary<String, Object> properties = new Hashtable<String, Object>();
-			properties.put(APPLICATION_ACTIVATOR, true);
-			bundleContext.registerService(Dictionary.class, dictionary, properties);
+		Dictionary<String, Object> properties = new Hashtable<String, Object>();
+		properties.put(APPLICATION_ACTIVATOR, true);
+		bundleContext.registerService(Dictionary.class, dictionary, properties);
 
-			ArrayList<Bundle> availableBundles = new ArrayList<Bundle>();
-			// get and open available bundles
-			for (File file : getBundles(servletContext)) {
-				Bundle bundle;
+		installBundles(bundleContext, servletContext);
+
+		for (Bundle bundle : bundleContext.getBundles()) {
+			System.out.println(bundle.getSymbolicName());
+			if (bundle.getSymbolicName().equals("org.eclipse.equinox.console")) {
 				try {
-					bundle = bundleContext.installBundle("reference:file:" + file.getAbsolutePath(), null);
-					availableBundles.add(bundle);
+					bundle.start();
 				} catch (BundleException e) {
-
 					switch (e.getType()) {
 					case BundleException.DUPLICATE_BUNDLE_ERROR:
 						break;
 					default:
 						e.printStackTrace();
-						throw e;
 					}
+
 				}
 			}
-
-			// start the bundles
-/*			for (Bundle bundle : availableBundles) {
-				if ((bundle.adapt(BundleRevision.class).getTypes() & BundleRevision.TYPE_FRAGMENT) != 0)
-					continue;
-				try {
-					bundle.start();
-				} catch (BundleException ex) {
-					System.out.println("Failed to start bundle " + bundle.getSymbolicName());
-				}
-			}*/
-			
-			framework.start();
-		} catch (BundleException e) {
-			throw new ServletException(e);
 		}
+	}
+
+	private void installBundles(BundleContext bundleContext, ServletContext servletContext) {
+
+		if (bundleContext.getBundles().length > 1)
+			return;
+
+		ArrayList<Bundle> availableBundles = new ArrayList<Bundle>();
+		for (File file : getBundles(servletContext)) {
+			Bundle bundle;
+			try {
+				bundle = bundleContext.installBundle("reference:file:" + file.getAbsolutePath(), null);
+				availableBundles.add(bundle);
+			} catch (BundleException e) {
+
+				switch (e.getType()) {
+				case BundleException.DUPLICATE_BUNDLE_ERROR:
+					break;
+				default:
+					e.printStackTrace();
+				}
+			}
+		}
+
 	}
 
 	private List<File> getBundles(ServletContext servletContext) {
