@@ -62,12 +62,14 @@ public class BizApplicationHook {
 
 		MODULE = "Application[" + APPLICATION.getName() + "]";
 
-		Debug.logInfo("Starting application: " + APPLICATION.getName(), MODULE);
-
 		Path workPath = Paths.get(APPLICATION.getPaths().getWork(), "ofbiz");
+
 		try {
+
+			Debug.logInfo("Starting application: " + APPLICATION.getName(), MODULE);
+
 			this.copyToWork(APPLICATION, workPath);
-		} catch (IOException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 

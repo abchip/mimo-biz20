@@ -27,7 +27,6 @@ import org.osgi.framework.BundleContext;
 import org.osgi.framework.BundleException;
 import org.osgi.framework.Constants;
 import org.osgi.framework.launch.Framework;
-import org.osgi.framework.wiring.BundleRevision;
 
 public class StartupServlet extends HttpServlet {
 
@@ -76,8 +75,6 @@ public class StartupServlet extends HttpServlet {
 			properties.put(APPLICATION_ACTIVATOR, true);
 			bundleContext.registerService(Dictionary.class, dictionary, properties);
 
-			framework.start();
-
 			ArrayList<Bundle> availableBundles = new ArrayList<Bundle>();
 			// get and open available bundles
 			for (File file : getBundles(servletContext)) {
@@ -98,7 +95,7 @@ public class StartupServlet extends HttpServlet {
 			}
 
 			// start the bundles
-			for (Bundle bundle : availableBundles) {
+/*			for (Bundle bundle : availableBundles) {
 				if ((bundle.adapt(BundleRevision.class).getTypes() & BundleRevision.TYPE_FRAGMENT) != 0)
 					continue;
 				try {
@@ -106,7 +103,9 @@ public class StartupServlet extends HttpServlet {
 				} catch (BundleException ex) {
 					System.out.println("Failed to start bundle " + bundle.getSymbolicName());
 				}
-			}
+			}*/
+			
+			framework.start();
 		} catch (BundleException e) {
 			throw new ServletException(e);
 		}

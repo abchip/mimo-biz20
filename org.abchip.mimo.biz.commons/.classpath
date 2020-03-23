@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry exported="true" kind="lib" path="lib/xercesImpl-2.9.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/slf4j-api-2.0.0-alpha1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/log4j-slf4j18-impl-2.13.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/log4j-api-2.13.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/log4j-core-2.13.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/log4j-slf4j-impl-2.13.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/slf4j-api-2.0.99.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/shiro-cache-1.4.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/shiro-config-core-1.4.0.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/shiro-config-ogdl-1.4.0.jar"/>
@@ -19,7 +20,7 @@
 	<classpathentry exported="true" kind="lib" path="lib/geronimo-jms_1.1_spec-1.1.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/geronimo-jta_1.1_spec-1.1.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/geronimo-stax-api_1.0_spec-1.0.1.jar"/>
-	<classpathentry exported="true" kind="lib" path="lib/geronimo-transaction-3.1.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/geronimo-transaction-3.1.4.jar" sourcepath="lib/geronimo-transaction-3.1.4-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/geronimo-ws-metadata_2.0_spec-1.1.2.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/commons-beanutils-1.9.3.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/commons-beanutils-core-1.8.3.jar"/>

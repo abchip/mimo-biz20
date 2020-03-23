@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry exported="true" kind="lib" path="lib/xercesImpl-2.9.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/jackson-annotations-2.9.7.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/groovy-all-2.4.13.jar" sourcepath="lib/groovy-all-2.4.13-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="lib/activation-1.1.jar"/>
