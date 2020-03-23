@@ -81,28 +81,10 @@ public class StartupServlet extends HttpServlet {
 
 		installBundles(bundleContext, servletContext);
 
-		for (Bundle bundle : bundleContext.getBundles()) {
-			System.out.println(bundle.getSymbolicName());
-			if (bundle.getSymbolicName().equals("org.eclipse.equinox.console")) {
-				try {
-					bundle.start();
-				} catch (BundleException e) {
-					switch (e.getType()) {
-					case BundleException.DUPLICATE_BUNDLE_ERROR:
-						break;
-					default:
-						e.printStackTrace();
-					}
-
-				}
-			}
-		}
+		startBundles(bundleContext, servletContext);		
 	}
 
 	private void installBundles(BundleContext bundleContext, ServletContext servletContext) {
-
-		if (bundleContext.getBundles().length > 1)
-			return;
 
 		ArrayList<Bundle> availableBundles = new ArrayList<Bundle>();
 		for (File file : getBundles(servletContext)) {
@@ -121,6 +103,24 @@ public class StartupServlet extends HttpServlet {
 			}
 		}
 
+	}
+
+	private void startBundles(BundleContext bundleContext, ServletContext servletContext) {
+		for (Bundle bundle : bundleContext.getBundles()) {
+			if (bundle.getSymbolicName().equals("org.eclipse.equinox.console") || bundle.getSymbolicName().equals("org.abchip.mimo.core.e4")) {
+				try {
+					bundle.start();
+				} catch (BundleException e) {
+					switch (e.getType()) {
+					case BundleException.DUPLICATE_BUNDLE_ERROR:
+						break;
+					default:
+						e.printStackTrace();
+					}
+
+				}
+			}
+		}		
 	}
 
 	private List<File> getBundles(ServletContext servletContext) {
