@@ -20,6 +20,7 @@ import javax.inject.Inject;
 
 import org.abchip.mimo.application.Application;
 import org.abchip.mimo.biz.test.command.runner.CreateOrder;
+import org.abchip.mimo.biz.test.command.runner.CreateParty;
 import org.abchip.mimo.biz.test.command.runner.CreateProduct;
 import org.abchip.mimo.context.AuthenticationManager;
 import org.abchip.mimo.context.AuthenticationUserPassword;
@@ -50,9 +51,9 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 
 			Future<Long> result = null;
 
-//			CreateParty partyCallable = new CreateParty(context);
-//			result = executor.submit(partyCallable);
-//			resultList.add(result);
+			CreateParty partyCallable = new CreateParty(context);
+			result = executor.submit(partyCallable);
+			resultList.add(result);
 
 			CreateProduct productCallable = new CreateProduct(context);
 			result = executor.submit(productCallable);
