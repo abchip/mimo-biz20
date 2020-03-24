@@ -17,7 +17,8 @@ Require-Bundle: org.abchip.mimo.core,
  org.abchip.mimo.edi,
  org.eclipse.osgi
 Import-Package: org.osgi.framework,
- org.osgi.framework.launch
+ org.osgi.framework.launch,
+ org.osgi.service.http
 Export-Package: com.stripe,
  com.stripe.model,
  org.abchip.mimo.biz.plugins,

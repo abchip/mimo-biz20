@@ -39,7 +39,6 @@
       <feature id="org.abchip.mimo.biz.feature" version="0.2.0.qualifier"/>
       <feature id="org.abchip.mimo.biz.asf.feature" version="0.2.0.qualifier"/>
       <feature id="org.abchip.mimo.mining.feature" version="0.2.0.qualifier"/>
-      <feature id="org.abchip.mimo.ui.feature" version="0.2.0.qualifier"/>
    </features>
 
 

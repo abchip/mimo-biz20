@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config date="1585074653967" transient="false" version="3.0">
+<site enabled="true" policy="USER-EXCLUDE" updateable="true" url="platform:/base/">
+<feature id="org.eclipse.equinox.servletbridge.feature" url="features/org.eclipse.equinox.servletbridge.feature_1.0.0/" version="1.0.0">
+</feature>
+</site>
+</config>
