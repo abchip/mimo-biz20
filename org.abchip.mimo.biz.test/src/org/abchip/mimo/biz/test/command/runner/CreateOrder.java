@@ -66,9 +66,6 @@ public class CreateOrder implements Callable<Long> {
 			return;
 		}
 
-		if (true)
-			return;
-
 		filter = "productId >= '10000'";
 		Product productEntity = null;
 		for (Product product : productReader.find(filter)) {
