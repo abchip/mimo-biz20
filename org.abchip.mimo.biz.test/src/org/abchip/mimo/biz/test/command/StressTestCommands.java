@@ -37,13 +37,17 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 	public void _stressTest(CommandInterpreter interpreter) throws Exception {
 
 		AuthenticationUserPassword authentication = ContextFactory.eINSTANCE.createAuthenticationUserPassword();
-//		authentication.setUser("test");
-//		authentication.setPassword("ofbiz");
-//		authentication.setTenant("test");
-		authentication.setUser("abchip");
+		authentication.setUser("test");
 		authentication.setPassword("ofbiz");
+		authentication.setTenant("test");
+//		authentication.setUser("abchip");
+//		authentication.setPassword("ofbiz");
 
 		AuthenticationManager authenticationManager = application.getContext().get(AuthenticationManager.class);
+		if(authenticationManager == null) {
+			System.err.println("Tenant 'test' not found");
+			return;
+		}
 
 		try (Context context = authenticationManager.login(null, authentication)) {
 			ExecutorService executor = Executors.newFixedThreadPool(1);
