@@ -58,6 +58,7 @@ import org.abchip.mimo.biz.party.party.RoleType;
 import org.abchip.mimo.biz.plugins.entity.EntityUtils;
 import org.abchip.mimo.biz.plugins.paymentGateway.StripePaymentManager;
 import org.abchip.mimo.biz.product.product.Product;
+import org.abchip.mimo.biz.product.product.ProductType;
 import org.abchip.mimo.biz.product.store.ProductStore;
 import org.abchip.mimo.biz.security.login.UserLogin;
 import org.abchip.mimo.biz.shipment.shipment.ShipmentMethodType;
@@ -167,6 +168,7 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 		Product product = productWriter.make();
 		product.setProductId(productId);
 		product.setInternalName(productId);
+		product.setProductTypeId(resourceManager.getFrame(context, ProductType.class).createProxy("DIGITAL_GOOD"));
 		productWriter.create(product, true);
 	}
 

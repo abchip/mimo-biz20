@@ -3,6 +3,7 @@ package org.abchip.mimo.biz.test.command.runner;
 import java.util.concurrent.Callable;
 
 import org.abchip.mimo.biz.product.product.Product;
+import org.abchip.mimo.biz.product.product.ProductType;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
@@ -30,7 +31,7 @@ public class CreateProduct implements Callable<Long> {
 		Product product = productWriter.make(true);
 		product.setInternalName(product.getID());
 		product.setDescription("Description product " + product.getID());
+		product.setProductTypeId(resourceManager.getFrame(context, ProductType.class).createProxy("DIGITAL_GOOD"));
 		productWriter.create(product, true);
 	}
-	
 }

@@ -67,7 +67,7 @@ public class StressTestUtils {
 		postalAddress.setPostalCode("00000");
 		postalAddress.setContactMechTypeId(resourceManager.getFrame(context, ContactMechType.class).createProxy("POSTAL_ADDRESS"));
 		postalAddress.setCountryGeoId(resourceManager.getFrame(context, Geo.class).createProxy("ITA"));
-		postalAddress.setStateProvinceGeoId(resourceManager.getFrame(context, Geo.class).createProxy("RM"));
+		postalAddress.setStateProvinceGeoId(resourceManager.getFrame(context, Geo.class).createProxy("IT-RM"));
 		postalAddressWriter.create(postalAddress, true);
 		createPartyContactMech(context, resourceManager, partyGroup, postalAddress, "GENERAL_LOCATION");
 
@@ -102,7 +102,7 @@ public class StressTestUtils {
 		ResourceWriter<PartyIdentification> partyIdentificationWriter = resourceManager.getResourceWriter(context, PartyIdentification.class);
 		PartyIdentification partyIdentification = partyIdentificationWriter.make();
 		partyIdentification.setPartyId(partyGroup);
-		partyIdentification.setPartyIdentificationTypeId(resourceManager.getFrame(context, PartyIdentificationType.class).createProxy("CARD_ID"));
+		partyIdentification.setPartyIdentificationTypeId(resourceManager.getFrame(context, PartyIdentificationType.class).createProxy("VCARD_FN_ORIGIN"));
 		partyIdentification.setIdValue("PPRPLN20C01H501K");
 		partyIdentificationWriter.create(partyIdentification, true);
 		

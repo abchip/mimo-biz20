@@ -116,7 +116,7 @@ public class FiCCommandUtils {
 		// PartyTaxAuthInfo
 		PartyIdentification partyIdentification = PartyFactory.eINSTANCE.createPartyIdentification();
 		partyIdentification.setPartyId(resourceManager.getFrame(context, Party.class).createProxy(partyId));
-		partyIdentification.setPartyIdentificationTypeId(resourceManager.getFrame(context, PartyIdentificationType.class).createProxy("CARD_ID"));
+		partyIdentification.setPartyIdentificationTypeId(resourceManager.getFrame(context, PartyIdentificationType.class).createProxy("VCARD_FN_ORIGIN"));
 		partyIdentification.setIdValue(cf);
 		container.getContents().add(partyIdentification);
 	}
