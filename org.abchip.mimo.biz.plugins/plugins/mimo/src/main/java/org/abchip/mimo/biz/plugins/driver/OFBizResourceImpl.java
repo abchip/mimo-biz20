@@ -139,7 +139,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 		// first level non abstract
 		Frame<?> frame = this.frame;
-		while (!frame.ako().isAbstract())
+		while (frame.ako() != null && !frame.ako().isAbstract())
 			frame = frame.ako();
 
 		return this.delegator.getNextSeqId(frame.getName());
