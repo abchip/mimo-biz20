@@ -470,3 +470,5 @@ Export-Package: javax.activation,
  org.slf4j.helpers,
  org.slf4j.spi,
  org.w3c.dom.html
+Import-Package: javax.servlet,
+ javax.servlet.http

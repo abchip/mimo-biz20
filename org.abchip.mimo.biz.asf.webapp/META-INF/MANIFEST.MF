@@ -1,7 +1,13 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: MIMO Biz Application Webapp
-Bundle-SymbolicName: org.abchip.mimo.biz.asf.webapp
+Bundle-SymbolicName: org.abchip.mimo.biz.asf.webapp;singleton:=true
 Bundle-Version: 0.2.0.qualifier
 Bundle-Vendor: ABChip
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Import-Package: javax.servlet,
+ javax.servlet.http,
+ org.eclipse.core.runtime.adaptor,
+ org.osgi.framework
+Bundle-ClassPath: .
+Export-Package: org.eclipse.equinox.servletbridge
