@@ -37,13 +37,17 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 	public void _stressTest(CommandInterpreter interpreter) throws Exception {
 
 		AuthenticationUserPassword authentication = ContextFactory.eINSTANCE.createAuthenticationUserPassword();
-//		authentication.setUser("test");
-//		authentication.setPassword("ofbiz");
-//		authentication.setTenant("test");
-		authentication.setUser("abchip");
+		authentication.setUser("test");
 		authentication.setPassword("ofbiz");
+		authentication.setTenant("test");
+//		authentication.setUser("abchip");
+//		authentication.setPassword("ofbiz");
 
 		AuthenticationManager authenticationManager = application.getContext().get(AuthenticationManager.class);
+		if(authenticationManager == null) {
+			System.err.println("Tenant 'test' not found");
+			return;
+		}
 
 		try (Context context = authenticationManager.login(null, authentication)) {
 			ExecutorService executor = Executors.newFixedThreadPool(1);
@@ -51,17 +55,17 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 
 			Future<Long> result = null;
 
-			CreateParty partyCallable = new CreateParty(context);
-			result = executor.submit(partyCallable);
-			resultList.add(result);
-
 			CreateProduct productCallable = new CreateProduct(context);
 			result = executor.submit(productCallable);
 			resultList.add(result);
 
-			CreateOrder orderCallable = new CreateOrder(context);
-			result = executor.submit(orderCallable);
+			CreateParty partyCallable = new CreateParty(context);
+			result = executor.submit(partyCallable);
 			resultList.add(result);
+
+//			CreateOrder orderCallable = new CreateOrder(context);
+//			result = executor.submit(orderCallable);
+//			resultList.add(result);
 			
 			executor.awaitTermination(5, TimeUnit.SECONDS);
 

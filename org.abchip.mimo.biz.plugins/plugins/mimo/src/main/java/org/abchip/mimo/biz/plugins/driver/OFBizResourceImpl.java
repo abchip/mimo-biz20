@@ -13,7 +13,6 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.plugins.entity.EntityUtils;
 import org.abchip.mimo.biz.plugins.entity.ModelUtils;
 import org.abchip.mimo.context.Context;
@@ -138,12 +137,10 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 	@Override
 	public String nextSequence() {
 
+		// first level non abstract
 		Frame<?> frame = this.frame;
-		while (frame.ako() != null) {
-			if (frame.ako().getName().startsWith(BizEntity.class.getSimpleName()))
-				break;
+		while (!frame.ako().isAbstract())
 			frame = frame.ako();
-		}
 
 		return this.delegator.getNextSeqId(frame.getName());
 	}
