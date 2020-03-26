@@ -51,17 +51,17 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 
 			Future<Long> result = null;
 
-			CreateParty partyCallable = new CreateParty(context);
-			result = executor.submit(partyCallable);
-			resultList.add(result);
-
 			CreateProduct productCallable = new CreateProduct(context);
 			result = executor.submit(productCallable);
 			resultList.add(result);
 
-			CreateOrder orderCallable = new CreateOrder(context);
-			result = executor.submit(orderCallable);
+			CreateParty partyCallable = new CreateParty(context);
+			result = executor.submit(partyCallable);
 			resultList.add(result);
+
+//			CreateOrder orderCallable = new CreateOrder(context);
+//			result = executor.submit(orderCallable);
+//			resultList.add(result);
 			
 			executor.awaitTermination(5, TimeUnit.SECONDS);
 
