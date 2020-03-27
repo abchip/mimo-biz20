@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-geo="http://www.abchip.org/mimo/biz/common/geo" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/geo http://www.abchip.org/mimo/biz#//common/geo http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="024_common_GeoData_MY">
+  <contents xsi:type="biz-geo:Geo" geoId="MY-01" abbreviation="JHR" geoCode="01" geoName="Johor">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MY-02" abbreviation="KDH" geoCode="02" geoName="Kedah">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MY-03" abbreviation="KTN" geoCode="03" geoName="Kelantan">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MY-04" abbreviation="MLK" geoCode="04" geoName="Malacca">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MY-05" abbreviation="NSN" geoCode="05" geoName="Negeri Sembilan">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MY-06" abbreviation="PHG" geoCode="06" geoName="Pahang">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MY-07" abbreviation="PNG" geoCode="07" geoName="Penang">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MY-08" abbreviation="PRK" geoCode="08" geoName="Perak">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MY-09" abbreviation="PLS" geoCode="09" geoName="Perlis">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MY-10" abbreviation="SGR" geoCode="10" geoName="Selangor">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MY-11" abbreviation="TRG" geoCode="11" geoName="Terengganu">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MY-12" abbreviation="SBH" geoCode="12" geoName="Sabah">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MY-13" abbreviation="SRW" geoCode="13" geoName="Sarawak">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MY-14" abbreviation="KUL" geoCode="14" geoName="Federal Territory of Kuala Lumpur">
+    <geoTypeId href="GeoType#TERRITORY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MY-15" abbreviation="LBN" geoCode="15" geoName="Federal Territory of Labuan">
+    <geoTypeId href="GeoType#TERRITORY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="MY-16" abbreviation="PJY" geoCode="16" geoName="Federal Territory of Putrajaya">
+    <geoTypeId href="GeoType#TERRITORY"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MYS"/>
+    <geoIdTo href="Geo#MY-01"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MYS"/>
+    <geoIdTo href="Geo#MY-02"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MYS"/>
+    <geoIdTo href="Geo#MY-03"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MYS"/>
+    <geoIdTo href="Geo#MY-04"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MYS"/>
+    <geoIdTo href="Geo#MY-05"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MYS"/>
+    <geoIdTo href="Geo#MY-06"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MYS"/>
+    <geoIdTo href="Geo#MY-07"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MYS"/>
+    <geoIdTo href="Geo#MY-08"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MYS"/>
+    <geoIdTo href="Geo#MY-09"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MYS"/>
+    <geoIdTo href="Geo#MY-10"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MYS"/>
+    <geoIdTo href="Geo#MY-11"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MYS"/>
+    <geoIdTo href="Geo#MY-12"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MYS"/>
+    <geoIdTo href="Geo#MY-13"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MYS"/>
+    <geoIdTo href="Geo#MY-14"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MYS"/>
+    <geoIdTo href="Geo#MY-15"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#MYS"/>
+    <geoIdTo href="Geo#MY-16"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+</mimo-ent:EntityContainer>

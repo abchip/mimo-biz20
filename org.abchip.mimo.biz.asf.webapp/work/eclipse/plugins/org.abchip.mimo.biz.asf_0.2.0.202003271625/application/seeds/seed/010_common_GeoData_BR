@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-geo="http://www.abchip.org/mimo/biz/common/geo" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/geo http://www.abchip.org/mimo/biz#//common/geo http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="010_common_GeoData_BR">
+  <contents xsi:type="biz-geo:Geo" geoId="BR-AC" abbreviation="AC" geoCode="AC" geoName="Acre">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-AL" abbreviation="AL" geoCode="AL" geoName="Alagoas">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-AM" abbreviation="AM" geoCode="AM" geoName="Amazonas">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-AP" abbreviation="AP" geoCode="AP" geoName="Amapá">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-BA" abbreviation="BA" geoCode="BA" geoName="Bahia">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-CE" abbreviation="CE" geoCode="CE" geoName="Ceará">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-DF" abbreviation="DF" geoCode="DF" geoName="Distrito Federal">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-ES" abbreviation="ES" geoCode="ES" geoName="Espírito Santo">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-GO" abbreviation="GO" geoCode="GO" geoName="Goiás">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-MA" abbreviation="MA" geoCode="MA" geoName="Maranhão">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-MG" abbreviation="MG" geoCode="MG" geoName="Minas Gerais">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-MS" abbreviation="MS" geoCode="MS" geoName="Mato Grosso do Sul">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-MT" abbreviation="MT" geoCode="MT" geoName="Mato Grosso">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-PA" abbreviation="PA" geoCode="PA" geoName="Pará">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-PB" abbreviation="PB" geoCode="PB" geoName="Paraíba">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-PE" abbreviation="PE" geoCode="PE" geoName="Pernambuco">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-PI" abbreviation="PI" geoCode="PI" geoName="Piauí">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-PR" abbreviation="PR" geoCode="PR" geoName="Paraná">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-RJ" abbreviation="RJ" geoCode="RJ" geoName="Rio de Janeiro">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-RN" abbreviation="RN" geoCode="RN" geoName="Rio Grande do Norte">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-RO" abbreviation="RO" geoCode="RO" geoName="Rondônia">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-RR" abbreviation="RR" geoCode="RR" geoName="Roraima">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-RS" abbreviation="RS" geoCode="RS" geoName="Rio Grande do Sul">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-SC" abbreviation="SC" geoCode="SC" geoName="Santa Catarina">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-SE" abbreviation="SE" geoCode="SE" geoName="Sergipe">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-SP" abbreviation="SP" geoCode="SP" geoName="São Paulo">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="BR-TO" abbreviation="TO" geoCode="TO" geoName="Tocantins">
+    <geoTypeId href="GeoType#STATE"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-AL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-AM"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-AP"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-BA"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-CE"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-DF"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-ES"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-GO"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-MA"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-MG"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-MS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-MT"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-PA"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-PB"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-PE"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-PI"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-PR"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-RJ"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-RN"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-RO"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-RR"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-RS"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-SC"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-SE"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-SP"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#BRA"/>
+    <geoIdTo href="Geo#BR-TO"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+</mimo-ent:EntityContainer>

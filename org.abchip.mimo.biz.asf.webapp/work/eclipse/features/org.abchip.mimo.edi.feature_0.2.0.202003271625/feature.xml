@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.abchip.mimo.edi.feature"
+      label="MIMO EDI Feature"
+      version="0.2.0.202003271625"
+      provider-name="ABChip">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <includes
+         id="org.abchip.mimo.core.feature"
+         version="0.2.0.202003271625"/>
+
+   <plugin
+         id="org.abchip.mimo.edi"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.202003271625"
+         unpack="false"/>
+
+   <plugin
+         id="org.abchip.mimo.edi.base"
+         download-size="0"
+         install-size="0"
+         version="0.2.0.202003271625"
+         unpack="false"/>
+
+</feature>
