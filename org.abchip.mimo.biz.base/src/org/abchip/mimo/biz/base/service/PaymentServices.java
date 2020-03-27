@@ -16,6 +16,7 @@ import org.abchip.mimo.resource.ResourceReader;
 
 public class PaymentServices {
 
+	@SuppressWarnings("resource")
 	public static PaymentMethod getPaymentMethodParty(Context context, String partyId, String methodType) {
 		
 		ResourceManager resourceManager = context.get(ResourceManager.class);
