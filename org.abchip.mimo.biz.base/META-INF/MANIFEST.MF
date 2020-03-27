@@ -23,5 +23,6 @@ Export-Package: org.abchip.mimo.biz.base,
  org.abchip.mimo.biz.base.servlet,
  org.apache.poi.hssf.usermodel,
  org.apache.poi.poifs.filesystem
-Import-Package: javax.servlet,
+Import-Package: javax.inject,
+ javax.servlet,
  javax.servlet.http

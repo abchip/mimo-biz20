@@ -42,12 +42,12 @@
    </features>
 
    <configurations>
-      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.equinox.http.servletbridge" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
-      <property name="mimo.home" value="/mimo/abchip-biz-webapp" />
-      <property name="mimo.config" value="/mimo/abchip-biz-webapp/abchip-biz-webapp.xmi" />
       <property name="mimo.activation" value="true" />
+      <property name="mimo.config" value="/mimo/abchip-biz-webapp/abchip-biz-webapp.xmi" />
+      <property name="mimo.home" value="/mimo/abchip-biz-webapp" />
    </configurations>
 
    <preferencesInfo>

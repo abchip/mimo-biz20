@@ -41,7 +41,6 @@ public class BizSeedCommands extends BaseCommandProviderImpl {
 		this.login(interpreter.nextArgument());
 	}
 
-	@SuppressWarnings("resource")
 	public void _convertSeeds(CommandInterpreter interpreter) throws Exception {
 		Context context = this.getContext();
 		/*

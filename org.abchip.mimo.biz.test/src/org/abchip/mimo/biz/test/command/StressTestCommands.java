@@ -19,6 +19,7 @@ import java.util.concurrent.TimeUnit;
 import javax.inject.Inject;
 
 import org.abchip.mimo.application.Application;
+import org.abchip.mimo.biz.test.command.runner.CreateAgreement;
 import org.abchip.mimo.biz.test.command.runner.CreateInvoice;
 import org.abchip.mimo.biz.test.command.runner.CreateOrder;
 import org.abchip.mimo.biz.test.command.runner.CreateParty;
@@ -39,6 +40,7 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 		stressTestBase();
 		stressTestOrder();
 		stressTestInvoice();
+		stressTestAgreement();
 	}
 
 	public void _stressTestBase(CommandInterpreter interpreter) throws Exception {
@@ -53,6 +55,10 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 		stressTestInvoice();
 	}
 
+	public void _stressTestAgreement(CommandInterpreter interpreter) throws Exception {
+		stressTestAgreement();
+	}
+	
 	private void stressTestBase()  throws Exception {
 		try (Context context = login()) {
 			if(context == null) {
@@ -159,6 +165,39 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 		}
 	}
 
+	private void stressTestAgreement()  throws Exception {
+		try (Context context = login()) {
+			if(context == null) {
+				System.err.println("Tenant 'test' not found");
+				return;
+			}
+			
+			ExecutorService executor = Executors.newFixedThreadPool(1);
+			List<Future<Long>> resultList = new ArrayList<>();
+
+			Future<Long> result = null;
+
+			CreateAgreement agreementCallable = new CreateAgreement(context);
+			result = executor.submit(agreementCallable);
+			resultList.add(result);
+			
+			executor.awaitTermination(5, TimeUnit.SECONDS);
+
+			for (int i = 0; i < resultList.size(); i++) {
+				result = resultList.get(i);
+				long time = 0;
+				try {
+					time = result.get();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				} catch (ExecutionException e) {
+					e.printStackTrace();
+				}
+				System.out.println("Main: Task " + i  + " time " + time);
+			}
+			executor.shutdown();
+		}
+	}
 
 	private Context login() {
 		AuthenticationUserPassword authentication = ContextFactory.eINSTANCE.createAuthenticationUserPassword();

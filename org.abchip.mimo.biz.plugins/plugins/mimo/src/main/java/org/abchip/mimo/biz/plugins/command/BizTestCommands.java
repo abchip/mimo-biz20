@@ -106,7 +106,6 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 		this.login(interpreter.nextArgument());
 	}
 
-	@SuppressWarnings("resource")
 	public void _getCreditCardParty(CommandInterpreter interpreter) throws Exception {
 		Context context = this.getContext();
 		String partyId = interpreter.nextArgument();
@@ -114,21 +113,18 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 		System.out.println("Credit card number " + creditCard.getCardNumber());
 	}
 	
-	@SuppressWarnings("resource")
 	public void _createAgreement(CommandInterpreter interpreter) throws Exception {
 		Context context = this.getContext();
 		String partyId = interpreter.nextArgument();
 		createAgreement(context, partyId);
 	}
 
-	@SuppressWarnings("resource")
 	public void _renewalAgreement(CommandInterpreter interpreter) throws Exception {
 		Context context = this.getContext();
 		String agreementId = interpreter.nextArgument();
 		renewalAgreement(context, agreementId);
 	}
 
-	@SuppressWarnings("resource")
 	public void _expireAgreement(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();
@@ -160,7 +156,6 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 		System.out.println("Agreement " + agreementId + " expired");
 	}
 
-	@SuppressWarnings("resource")
 	public void _createProduct(CommandInterpreter interpreter) throws Exception {
 		Context context = this.getContext();
 		String productId = interpreter.nextArgument();
@@ -172,7 +167,6 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 		productWriter.create(product, true);
 	}
 
-	@SuppressWarnings("resource")
 	public void _createOrder(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();
@@ -182,7 +176,6 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 		createOrder(context, partyId);
 	}
 
-	@SuppressWarnings("resource")
 	public void _createInvoice(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();
@@ -219,7 +212,6 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 //		}
 	}
 
-	@SuppressWarnings("resource")
 	public void _approveOrder(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();
@@ -269,7 +261,6 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 		System.out.println("Order " + orderId + " approved");
 	}
 
-	@SuppressWarnings("resource")
 	public void _holdOrder(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();
@@ -319,7 +310,6 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 		System.out.println("Order " + orderId + " holded");
 	}
 
-	@SuppressWarnings("resource")
 	public void _cancelOrder(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();
@@ -369,6 +359,7 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 		System.out.println("Order " + orderId + " deleted");
 	}
 
+	@SuppressWarnings("resource")
 	private void createOrder(Context context, String partyId) {
 
 		Party party = resourceManager.getFrame(context, Party.class).createProxy(partyId);
@@ -730,6 +721,7 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 		return invoice;
 	}
 
+	@SuppressWarnings("resource")
 	private void createInvoiceItem(Context context, Delegator delegator, LocalDispatcher dispatcher, Invoice invoice, String item, int quantity, String itemType) {
 		ResourceWriter<InvoiceItem> invoiceItemWriter = resourceManager.getResourceWriter(context, InvoiceItem.class);
 
@@ -1006,6 +998,7 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 		agreementProductApplWriter.create(agreementProductAppl, true);
 	}
 
+	@SuppressWarnings("resource")
 	private void renewalAgreement(Context context, String agreementId) {
 		
 		/* il rinnovo del contratto avviene quando questo è ancora aperto (Agreement)

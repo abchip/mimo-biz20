@@ -41,6 +41,9 @@
       <feature id="org.abchip.mimo.mining.feature" version="0.2.0.qualifier"/>
    </features>
 
+   <configurations>
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+   </configurations>
 
    <preferencesInfo>
       <targetfile overwrite="false"/>
