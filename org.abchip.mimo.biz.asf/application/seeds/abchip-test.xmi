@@ -56,8 +56,6 @@
       fromDate="2019-01-01T00:00:00.000+0100"
       taxAuthGeoId="ITA"
       taxAuthPartyId="ITA_ADE"
-      isExempt="true"
-      isNexus="true"
       partyTaxId="IT-0123456789"/>
   <contents
       xsi:type="biz-contact:PostalAddress"
@@ -138,8 +136,20 @@
   <contents
       xsi:type="biz-store:ProductStore"
       productStoreId="8000"
-      autoInvoiceDigitalItems="true"
+      autoApproveInvoice="false"
+      autoOrderCcTryExp="false"
+      autoOrderCcTryLaterNsf="false"
+      autoOrderCcTryOtherCards="false"
+      checkInventory="false"
+      oneInventoryFacility="false"
       payToPartyId="Company"
+      prodSearchExcludeVariants="false"
+      reqShipAddrForDigItems="false"
+      reserveInventory="false"
+      retryFailedAuths="false"
+      shipIfCaptureFails="false"
+      showCheckoutGiftOptions="false"
+      showPricesWithVatTax="true"
       storeName="ABChip Test Store"
       title="Open For Commerce"
       visualThemeId="EC_DEFAULT"/>
