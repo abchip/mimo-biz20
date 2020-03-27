@@ -12,6 +12,7 @@ import javax.inject.Inject;
 
 import org.abchip.mimo.biz.base.service.ContactMechServices;
 import org.abchip.mimo.biz.party.contact.ContactFactory;
+import org.abchip.mimo.biz.party.contact.ContactMech;
 import org.abchip.mimo.biz.party.contact.PartyContactMech;
 import org.abchip.mimo.biz.party.contact.PostalAddress;
 import org.abchip.mimo.tester.Test;
@@ -38,7 +39,7 @@ public class PartyContactMechTest {
 		PostalAddress postalAddress = ContactMechServices.getLatestPostaAddress(testRunner.getContext(), partyId);		
 		testAsserter.assertNotNull("PostalAddress '" + partyId + "' exist", postalAddress);
 
-		String eMail = ContactMechServices.getLatestEmail(testRunner.getContext(), partyId);		
+		ContactMech eMail = ContactMechServices.getLatestEmail(testRunner.getContext(), partyId);
 		testAsserter.assertNotNull("Email '" + partyId + "' exist", eMail);
 	}
 }

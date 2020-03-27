@@ -8,6 +8,7 @@
  */
 package org.abchip.mimo.biz.base.service;
 
+import org.abchip.mimo.biz.party.contact.ContactMech;
 import org.abchip.mimo.biz.party.contact.PostalAddress;
 import org.abchip.mimo.biz.party.contact.TelecomNumber;
 import org.abchip.mimo.biz.party.party.Party;
@@ -143,9 +144,12 @@ public class PartyServices {
 	}
 
 	private static void writeLatestEmail(Context context, VCard vcard, String partyId) {
-		String email = ContactMechServices.getLatestEmail(context, partyId);
-		if (email.isEmpty())
+		ContactMech contactMech = ContactMechServices.getLatestEmail(context, partyId);
+		if (contactMech == null)
 			return;
-		vcard.addEmail(new Email(email));
+
+		if (contactMech.getInfoString() != null && !contactMech.getInfoString().isEmpty()) {
+			vcard.addEmail(new Email(contactMech.getInfoString()));
+		}
 	}
 }

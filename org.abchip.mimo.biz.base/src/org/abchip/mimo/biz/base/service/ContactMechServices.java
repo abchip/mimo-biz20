@@ -65,7 +65,7 @@ public class ContactMechServices {
 		return telecomNumber;
 	}
 	
-	public static String getLatestEmail(Context context, String partyId) {
+	public static ContactMech getLatestEmail(Context context, String partyId) {
 		
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
@@ -73,21 +73,20 @@ public class ContactMechServices {
 		String order = "-fromDate";
 		ResourceReader<PartyContactMech> partyContactMechReader = resourceManager.getResourceReader(context,
 				PartyContactMech.class);
-		String email = "";
+		ContactMech contactMech = null;
 
 		for (PartyContactMech partyContactMech : partyContactMechReader.find(filter, null, order)) {
 			ResourceReader<ContactMech> contactMechReader = resourceManager.getResourceReader(context,
 					ContactMech.class);
-			ContactMech contactMech = contactMechReader.lookup(partyContactMech.getContactMechId().getContactMechId());
+			contactMech = contactMechReader.lookup(partyContactMech.getContactMechId().getContactMechId());
 
 			if (!contactMech.getContactMechTypeId().getContactMechTypeId().equals("EMAIL_ADDRESS"))
 				continue;
 
 			if (contactMech.getInfoString() != null && !contactMech.getInfoString().isEmpty()) {
-				email = contactMech.getInfoString();
 				break;
 			}
 		}
-		return email;
+		return contactMech;
 	}
 }
