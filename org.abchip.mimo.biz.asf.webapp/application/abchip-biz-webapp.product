@@ -3,15 +3,14 @@
 
 <product name="MIMO Biz Application Webapp" uid="mimo-biz-webapp" id="org.abchip.mimo.biz.asf.mimo-biz" application="org.abchip.mimo.biz.asf.mimo-biz-application" version="0.2.0" useFeatures="true" includeLaunchers="true">
 
-
    <configIni use="default">
    </configIni>
 
    <launcherArgs>
       <programArgs>-console
 -clean
--mimo.config ${container_loc}/abchip-biz-webapp.xmi
 -mimo.home /mimo/abchip-biz-webapp
+-mimo.config ${container_loc}/abchip-biz-webapp.xmi
       </programArgs>
       <vmArgs>-Djavax.xml.parsers.DocumentBuilderFactory=com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl
       </vmArgs>
@@ -21,29 +20,35 @@
 
    <windowImages/>
 
-
    <launcher>
       <win useIco="false">
          <bmp/>
       </win>
    </launcher>
 
-
    <vm>
    </vm>
-
 
    <plugins>
    </plugins>
 
    <features>
       <feature id="org.abchip.eclipse.osgi.feature" version="0.2.0.qualifier"/>
+      <feature id="org.abchip.mimo.biz.asf.webapp.feature" version="0.2.0.qualifier"/>
       <feature id="org.abchip.mimo.core.feature" version="0.2.0.qualifier"/>
       <feature id="org.abchip.mimo.edi.feature" version="0.2.0.qualifier"/>
       <feature id="org.abchip.mimo.biz.feature" version="0.2.0.qualifier"/>
       <feature id="org.abchip.mimo.biz.asf.feature" version="0.2.0.qualifier"/>
    </features>
 
+   <configurations>
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.http.servletbridge" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <property name="mimo.home" value="/mimo/abchip-biz-webapp" />
+      <property name="mimo.config" value="/mimo/abchip-biz-webapp/abchip-biz-webapp.xmi" />
+      <property name="mimo.activation" value="true" />
+   </configurations>
 
    <preferencesInfo>
       <targetfile overwrite="false"/>

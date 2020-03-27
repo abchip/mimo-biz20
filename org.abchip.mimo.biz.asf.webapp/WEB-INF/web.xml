@@ -28,7 +28,12 @@
 			<param-name>extendedFrameworkExports</param-name>
 			<param-value></param-value>
 		</init-param>
-
+		
+		<init-param>
+			<param-name>overrideAndReplaceExtensionBundle</param-name>
+			<param-value>true</param-value>
+		</init-param>	
+		
 		<!-- You can specify your own framework launcher here. The default is: 
 			org.eclipse.equinox.servletbridge.FrameworkLauncher <init-param> <param-name>frameworkLauncherClass</param-name> 
 			<param-value>org.eclipse.equinox.servletbridge.FrameworkLauncher</param-value> 
@@ -36,6 +41,7 @@
 			
 		<load-on-startup>1</load-on-startup>
 	</servlet>
+	
 	<servlet-mapping>
 		<servlet-name>equinoxbridgeservlet</servlet-name>
 		<url-pattern>/*</url-pattern>
@@ -44,18 +50,4 @@
 		<servlet-name>equinoxbridgeservlet</servlet-name>
 		<url-pattern>*.jsp</url-pattern>
 	</servlet-mapping>
-
-	<servlet>
-		<servlet-name>StartupServlet</servlet-name>
-		<servlet-class>org.abchip.mimo.biz.asf.webapp.StartupServlet</servlet-class>
-		<init-param>
-			<param-name>mimo.config</param-name>
-			<param-value>application/abchip-biz-webapp.xmi</param-value>
-		</init-param>
-		<init-param>
-			<param-name>mimo.home</param-name>
-			<param-value>/mimo/abchip-biz-webapp</param-value>
-		</init-param>
-		<load-on-startup>2</load-on-startup>
-	</servlet>
 </web-app>

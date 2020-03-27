@@ -253,7 +253,7 @@
       <services
           xsi:type="mimo-app:ServiceServlet"
           className="org.abchip.mimo.core.http.servlet.NextSequenceServlet"
-          alias="/biz/service/findNames"/>
+          alias="/biz/service/nextSequence"/>
     </modules>
   </components>
   <components

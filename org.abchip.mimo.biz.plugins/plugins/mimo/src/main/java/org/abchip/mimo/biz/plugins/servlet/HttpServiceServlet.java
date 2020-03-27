@@ -19,7 +19,6 @@ import org.abchip.mimo.application.Application;
 import org.abchip.mimo.core.e4.E4Activator;
 import org.abchip.mimo.core.http.HttpServiceImpl;
 import org.osgi.framework.BundleContext;
-import org.osgi.framework.FrameworkUtil;
 import org.osgi.framework.InvalidSyntaxException;
 import org.osgi.framework.ServiceReference;
 import org.osgi.service.http.HttpService;
@@ -48,7 +47,7 @@ public class HttpServiceServlet extends HttpServlet {
 				HttpService httpService = new HttpServiceImpl(servletContext);
 				application.getContext().set(HttpService.class, httpService);
 
-				BundleContext bundleContext = FrameworkUtil.getBundle(Application.class).getBundleContext();
+				BundleContext bundleContext = application.getBundle().getBundleContext();
 				for (ServiceReference<Servlet> serviceReference : bundleContext.getServiceReferences(Servlet.class, null)) {
 					Object servletAlias = serviceReference.getProperty(MimoConstants.SERVLET_ALIAS);
 					if (servletAlias == null)
