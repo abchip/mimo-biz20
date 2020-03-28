@@ -26,8 +26,8 @@ import org.abchip.mimo.biz.test.command.runner.CreateParty;
 import org.abchip.mimo.biz.test.command.runner.CreateProduct;
 import org.abchip.mimo.context.AuthenticationManager;
 import org.abchip.mimo.context.AuthenticationUserPassword;
-import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextFactory;
+import org.abchip.mimo.context.ContextProvider;
 import org.abchip.mimo.core.base.BaseCommandProviderImpl;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
 
@@ -58,27 +58,27 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 	public void _stressTestAgreement(CommandInterpreter interpreter) throws Exception {
 		stressTestAgreement();
 	}
-	
-	private void stressTestBase()  throws Exception {
-		try (Context context = login()) {
-			if(context == null) {
+
+	private void stressTestBase() throws Exception {
+		try (ContextProvider context = login()) {
+			if (context == null) {
 				System.err.println("Tenant 'test' not found");
 				return;
 			}
-			
+
 			ExecutorService executor = Executors.newFixedThreadPool(1);
 			List<Future<Long>> resultList = new ArrayList<>();
 
 			Future<Long> result = null;
 
-			CreateProduct productCallable = new CreateProduct(context);
+			CreateProduct productCallable = new CreateProduct(context.get());
 			result = executor.submit(productCallable);
 			resultList.add(result);
 
-			CreateParty partyCallable = new CreateParty(context);
+			CreateParty partyCallable = new CreateParty(context.get());
 			result = executor.submit(partyCallable);
 			resultList.add(result);
-			
+
 			executor.awaitTermination(5, TimeUnit.SECONDS);
 
 			for (int i = 0; i < resultList.size(); i++) {
@@ -91,28 +91,28 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 				} catch (ExecutionException e) {
 					e.printStackTrace();
 				}
-				System.out.println("Main: Task " + i  + " time " + time);
+				System.out.println("Main: Task " + i + " time " + time);
 			}
 			executor.shutdown();
 		}
 	}
 
-	private void stressTestOrder()  throws Exception {
-		try (Context context = login()) {
-			if(context == null) {
+	private void stressTestOrder() throws Exception {
+		try (ContextProvider context = login()) {
+			if (context == null) {
 				System.err.println("Tenant 'test' not found");
 				return;
 			}
-			
+
 			ExecutorService executor = Executors.newFixedThreadPool(1);
 			List<Future<Long>> resultList = new ArrayList<>();
 
 			Future<Long> result = null;
 
-			CreateOrder orderCallable = new CreateOrder(context);
+			CreateOrder orderCallable = new CreateOrder(context.get());
 			result = executor.submit(orderCallable);
 			resultList.add(result);
-			
+
 			executor.awaitTermination(5, TimeUnit.SECONDS);
 
 			for (int i = 0; i < resultList.size(); i++) {
@@ -125,28 +125,28 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 				} catch (ExecutionException e) {
 					e.printStackTrace();
 				}
-				System.out.println("Main: Task " + i  + " time " + time);
+				System.out.println("Main: Task " + i + " time " + time);
 			}
 			executor.shutdown();
 		}
 	}
-	
-	private void stressTestInvoice()  throws Exception {
-		try (Context context = login()) {
-			if(context == null) {
+
+	private void stressTestInvoice() throws Exception {
+		try (ContextProvider context = login()) {
+			if (context == null) {
 				System.err.println("Tenant 'test' not found");
 				return;
 			}
-			
+
 			ExecutorService executor = Executors.newFixedThreadPool(1);
 			List<Future<Long>> resultList = new ArrayList<>();
 
 			Future<Long> result = null;
 
-			CreateInvoice invoiceCallable = new CreateInvoice(context);
+			CreateInvoice invoiceCallable = new CreateInvoice(context.get());
 			result = executor.submit(invoiceCallable);
 			resultList.add(result);
-			
+
 			executor.awaitTermination(5, TimeUnit.SECONDS);
 
 			for (int i = 0; i < resultList.size(); i++) {
@@ -159,28 +159,28 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 				} catch (ExecutionException e) {
 					e.printStackTrace();
 				}
-				System.out.println("Main: Task " + i  + " time " + time);
+				System.out.println("Main: Task " + i + " time " + time);
 			}
 			executor.shutdown();
 		}
 	}
 
-	private void stressTestAgreement()  throws Exception {
-		try (Context context = login()) {
-			if(context == null) {
+	private void stressTestAgreement() throws Exception {
+		try (ContextProvider context = login()) {
+			if (context == null) {
 				System.err.println("Tenant 'test' not found");
 				return;
 			}
-			
+
 			ExecutorService executor = Executors.newFixedThreadPool(1);
 			List<Future<Long>> resultList = new ArrayList<>();
 
 			Future<Long> result = null;
 
-			CreateAgreement agreementCallable = new CreateAgreement(context);
+			CreateAgreement agreementCallable = new CreateAgreement(context.get());
 			result = executor.submit(agreementCallable);
 			resultList.add(result);
-			
+
 			executor.awaitTermination(5, TimeUnit.SECONDS);
 
 			for (int i = 0; i < resultList.size(); i++) {
@@ -193,24 +193,24 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 				} catch (ExecutionException e) {
 					e.printStackTrace();
 				}
-				System.out.println("Main: Task " + i  + " time " + time);
+				System.out.println("Main: Task " + i + " time " + time);
 			}
 			executor.shutdown();
 		}
 	}
 
-	private Context login() {
+	private ContextProvider login() {
 		AuthenticationUserPassword authentication = ContextFactory.eINSTANCE.createAuthenticationUserPassword();
 		authentication.setUser("abchip-test");
 		authentication.setPassword("ofbiz");
 		authentication.setTenant("test");
-//		authentication.setUser("abchip");
-//		authentication.setPassword("ofbiz");
+		// authentication.setUser("abchip");
+		// authentication.setPassword("ofbiz");
 		AuthenticationManager authenticationManager = application.getContext().get(AuthenticationManager.class);
 
 		return authenticationManager.login(null, authentication);
 	}
-	
+
 	@Override
 	public String getHelp() {
 		return null;

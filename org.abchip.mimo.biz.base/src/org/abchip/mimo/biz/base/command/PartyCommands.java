@@ -30,7 +30,6 @@ public class PartyCommands extends BaseCommandProviderImpl {
 	@Inject
 	private ResourceManager resourceManager;
 
-	@SuppressWarnings("resource")
 	public <E extends EntityIdentifiable> void _testParty(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();
@@ -49,7 +48,6 @@ public class PartyCommands extends BaseCommandProviderImpl {
 		System.out.println(party.getPartyTypeId().getID());
 	}
 
-	@SuppressWarnings("resource")
 	public <E extends EntityIdentifiable> void _hackerParty(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();

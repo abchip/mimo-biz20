@@ -49,6 +49,7 @@ public class ImportPeopleServlet extends BaseServlet {
 		_execute(context, request, response);
 	}
 
+	@SuppressWarnings("resource")
 	private <E extends EntityIdentifiable> void _execute(Context context, HttpServletRequest request, HttpServletResponse response) throws IOException {
 
 		try {

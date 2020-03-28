@@ -64,7 +64,7 @@ public class BizContainerImpl implements Container {
 				if (tenant == null)
 					return null;
 
-				context = E4Activator.getApplication().getContext().createChildContext(null);
+				context = E4Activator.getApplication().getContext().createChildContext(null).get();
 				context.getContextDescription().setTenant(tenantId);
 				context.getContextDescription().setUser(tenantId);
 				contexts.put(tenantId, context);

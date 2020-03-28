@@ -10,6 +10,7 @@ import org.abchip.mimo.context.AuthenticationManager;
 import org.abchip.mimo.context.AuthenticationUserPassword;
 import org.abchip.mimo.context.AuthenticationUserToken;
 import org.abchip.mimo.context.Context;
+import org.abchip.mimo.context.ContextProvider;
 import org.abchip.mimo.context.ContextRoot;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
@@ -28,12 +29,12 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 	}
 
 	@Override
-	public Context login(String contextId, AuthenticationAnonymous authentication) {
+	public ContextProvider login(String contextId, AuthenticationAnonymous authentication) {
 		return null;
 	}
 
 	@Override
-	public Context login(String contextId, AuthenticationUserPassword authentication) {
+	public ContextProvider login(String contextId, AuthenticationUserPassword authentication) {
 
 		ResourceReader<UserLogin> userLoginReader = resourceManager.getResourceReader(application.getContext(), UserLogin.class, authentication.getTenant());
 		UserLogin userLogin = userLoginReader.lookup(authentication.getUser());
@@ -43,7 +44,8 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 		// TODO compare password and SHA
 		// userLogin.getCurrentPassword().equals(SHA)
 
-		Context contextUser = application.getContext().createChildContext(contextId);
+		ContextProvider contextProvider  = application.getContext().createChildContext(contextId);
+		Context contextUser = contextProvider.get();
 		contextUser.getContextDescription().setUser(authentication.getUser());
 		contextUser.getContextDescription().setTenant(authentication.getTenant());
 		contextUser.getContextDescription().setCurrencyUom(userLogin.getLastCurrencyUom());
@@ -51,18 +53,17 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 			contextUser.getContextDescription().setLocale(userLogin.getLastLocale().replace("_", "-"));
 		contextUser.getContextDescription().setTimeZone(userLogin.getLastTimeZone());
 
-		return contextUser;
+		return contextProvider;
 	}
 
 	@Override
-	public Context login(String contextId, AuthenticationUserToken authentication) {
+	public ContextProvider login(String contextId, AuthenticationUserToken authentication) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@SuppressWarnings("resource")
 	@Override
-	public Context login(String contextId, AuthenticationAdminKey authentication) {
+	public ContextProvider login(String contextId, AuthenticationAdminKey authentication) {
 
 		if (application.getAdminKey() != null && !authentication.getAdminKey().equals(application.getAdminKey()))
 			return null;
@@ -71,8 +72,8 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 		if (contextRoot == null)
 			return null;
 
-		Context contextUser = contextRoot.createChildContext(contextId);
-		contextUser.getContextDescription().setTenant(authentication.getTenant());
+		ContextProvider contextUser = contextRoot.createChildContext(contextId);
+		contextUser.get().getContextDescription().setTenant(authentication.getTenant());
 		return contextUser;
 	}
 }

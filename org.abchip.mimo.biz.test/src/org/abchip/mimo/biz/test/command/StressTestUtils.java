@@ -42,7 +42,7 @@ public class StressTestUtils {
 		partyContactMech.setFromDate(new Date());
 		partyContactMechWriter.create(partyContactMech, true);
 
-		if(!purposeType.isEmpty()) {
+		if (!purposeType.isEmpty()) {
 			// PartyContactMechPurpose
 			ResourceWriter<PartyContactMechPurpose> partyContactMechPurposeWriter = resourceManager.getResourceWriter(context, PartyContactMechPurpose.class);
 			PartyContactMechPurpose partyContactMechPurpose = partyContactMechPurposeWriter.make();
@@ -53,20 +53,20 @@ public class StressTestUtils {
 			partyContactMechPurposeWriter.create(partyContactMechPurpose, true);
 		}
 	}
-	
+
 	public static ProductStore getProductStore(Context context, ResourceManager resourceManager) {
 		ResourceWriter<ProductStore> productStoreWriter = resourceManager.getResourceWriter(context, ProductStore.class);
-		EntityIterator<ProductStore> list = productStoreWriter.find();
-		if(list.hasNext())
-			return list.next();
 
-		
-		ProductStore productStore = productStoreWriter.make(true);
+		ProductStore productStore = productStoreWriter.first();
+		if (productStore != null)
+			return productStore;
+
+		productStore = productStoreWriter.make(true);
 		productStore.setAllowPassword(false);
-		productStore.setAutoApproveInvoice(false); 
+		productStore.setAutoApproveInvoice(false);
 		productStore.setAutoOrderCcTryExp(false);
-		productStore.setAutoOrderCcTryLaterNsf(false); 
-		productStore.setAutoOrderCcTryOtherCards(false); 
+		productStore.setAutoOrderCcTryLaterNsf(false);
+		productStore.setAutoOrderCcTryOtherCards(false);
 		productStore.setCheckInventory(false);
 		productStore.setInventoryFacilityId(resourceManager.getFrame(context, Facility.class).createProxy("WebStoreWarehouse"));
 		productStore.setIsDemoStore(false);
@@ -90,38 +90,36 @@ public class StressTestUtils {
 
 		return productStore;
 	}
-	
+
 	public static ProductPrice getProductPrice(Context context, ResourceManager resourceManager, Product product) {
 		ResourceReader<ProductPrice> productPriceReader = resourceManager.getResourceWriter(context, ProductPrice.class);
-		
+
 		String filter = "productId = \"" + product.getID() + "\"  AND thruDate IS NULL";
 		String order = "-fromDate";
-		EntityIterator<ProductPrice> list = productPriceReader.find(filter, null, order);
-		if(list.hasNext())
+		try (EntityIterator<ProductPrice> list = productPriceReader.find(filter, null, order)) {
 			return list.next();
-
-		return null;
+		}
 	}
-	
+
 	@SuppressWarnings("resource")
 	public static List<Party> checkParty(Context context, ResourceManager resourceManager) {
 		ResourceReader<Party> partyReader = resourceManager.getResourceReader(context, Party.class);
 		ArrayList<Party> parties = new ArrayList<Party>();
-		
+
 		for (Party party : partyReader.find()) {
-			if(party.getID().equals("PersonCanary"))
+			if (party.getID().equals("PersonCanary"))
 				continue;
-			if(!party.getStatusId().getID().equals("PARTY_ENABLED"))
+			if (!party.getStatusId().getID().equals("PARTY_ENABLED"))
 				continue;
 			int count = 0;
-			if(party.getPartyRoles() == null )
+			if (party.getPartyRoles() == null)
 				continue;
 			for (PartyRole partyRole : party.getPartyRoles()) {
 				if (!partyRole.getRoleTypeId().getID().equals("CUSTOMER"))
 					continue;
 				count++;
 			}
-			if(count == 0)
+			if (count == 0)
 				continue;
 			parties.add(party);
 		}
@@ -134,12 +132,12 @@ public class StressTestUtils {
 		HashMap<Product, ProductPrice> map = new HashMap<Product, ProductPrice>();
 
 		for (Product product : productReader.find()) {
-			if(product.getID().equals("ProductCanary"))
+			if (product.getID().equals("ProductCanary"))
 				continue;
 			if (!product.getProductTypeId().getID().equals("DIGITAL_GOOD"))
 				continue;
 			ProductPrice price = StressTestUtils.getProductPrice(context, resourceManager, product);
-			if(price == null)
+			if (price == null)
 				continue;
 			map.put(product, price);
 		}
@@ -156,15 +154,13 @@ public class StressTestUtils {
 		ResourceReader<Uom> uomReader = resourceManager.getResourceReader(context, Uom.class);
 		return uomReader.lookup("EUR");
 	}
-	
-    public static String formatPaddedNumber(long number, int numericPadding) {
-        StringBuilder outStrBfr = new StringBuilder(Long.toString(number));
-        while (numericPadding > outStrBfr.length()) {
-            outStrBfr.insert(0, '0');
-        }
-        return outStrBfr.toString();
-    }
-	
-	
-	
+
+	public static String formatPaddedNumber(long number, int numericPadding) {
+		StringBuilder outStrBfr = new StringBuilder(Long.toString(number));
+		while (numericPadding > outStrBfr.length()) {
+			outStrBfr.insert(0, '0');
+		}
+		return outStrBfr.toString();
+	}
+
 }

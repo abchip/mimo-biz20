@@ -20,7 +20,6 @@ public class SeedCommands extends BaseCommandProviderImpl {
 		this.login(interpreter.nextArgument());
 	}
 
-	@SuppressWarnings("resource")
 	public void _loadSeed(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();
@@ -31,7 +30,6 @@ public class SeedCommands extends BaseCommandProviderImpl {
 		SeedServices.loadSeed(context, seedName, tenantId, true);
 	}
 
-	@SuppressWarnings("resource")
 	public void _loadSeeds(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();
@@ -42,7 +40,6 @@ public class SeedCommands extends BaseCommandProviderImpl {
 		SeedServices.loadSeeds(context, seedName, tenantId, true);
 	}
 
-	@Override
 	public String getHelp() {
 		// TODO Auto-generated method stub
 		return null;

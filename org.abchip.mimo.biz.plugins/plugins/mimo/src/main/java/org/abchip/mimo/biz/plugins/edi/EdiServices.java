@@ -151,7 +151,6 @@ public class EdiServices {
 		return ServiceUtil.returnSuccess();
 	}
 
-	@SuppressWarnings("resource")
 	private static Map<String, Object> manageMessageType(Operations operation, DispatchContext ctx, Map<String, Object> params) {
 
 		GenericValue entityInstance = (GenericValue) params.get(VALUEATTR);
@@ -181,7 +180,6 @@ public class EdiServices {
 		}
 	}
 
-	@SuppressWarnings("resource")
 	private static <E extends EntityIdentifiable> Map<String, Object> manageEdiEntity(Operations operation, DispatchContext ctx, Map<String, Object> params) {
 
 		GenericValue entityInstance = (GenericValue) params.get(VALUEATTR);

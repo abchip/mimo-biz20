@@ -32,7 +32,6 @@ public class TenantCommands extends BaseCommandProviderImpl {
 		this.login(interpreter.nextArgument());
 	}
 
-	@SuppressWarnings("resource")
 	public void _createMaster(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();
@@ -46,7 +45,6 @@ public class TenantCommands extends BaseCommandProviderImpl {
 		SeedServices.loadSeed(context, "edi", null, true);
 	}
 
-	@SuppressWarnings("resource")
 	public void _createTenant(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();
@@ -79,7 +77,6 @@ public class TenantCommands extends BaseCommandProviderImpl {
 		}
 	}
 
-	@SuppressWarnings("resource")
 	public void _createTest(CommandInterpreter interpreter) throws Exception {
 
 		String cleanString = interpreter.nextArgument();

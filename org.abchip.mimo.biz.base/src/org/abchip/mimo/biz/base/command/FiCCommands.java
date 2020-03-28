@@ -61,7 +61,6 @@ public class FiCCommands extends BaseCommandProviderImpl {
 		importFicProduct();
 	}
 	
-	@SuppressWarnings("resource")
 	private void importFicRegistry() throws Exception {
 //		Context context = this.getContext();
 		Context context = application.getContext();
@@ -185,7 +184,7 @@ public class FiCCommands extends BaseCommandProviderImpl {
 		entityWriter.create(container, true);
 	}
 
-	@SuppressWarnings({ "resource", "unchecked" })
+	@SuppressWarnings({ "unchecked" })
 	private void importFicProduct() throws Exception {
 		/*
 		 * 
