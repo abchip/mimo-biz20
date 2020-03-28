@@ -210,50 +210,50 @@
       <services
           xsi:type="mimo-app:ServiceServlet"
           className="org.abchip.mimo.core.http.servlet.session.LoginServlet"
-          alias="/biz/service/login"/>
+          alias="/service/login"/>
       <services
           xsi:type="mimo-app:ServiceServlet"
           className="org.abchip.mimo.core.http.servlet.session.LogoutServlet"
-          alias="/biz/service/logout"/>
+          alias="/service/logout"/>
       <services
           xsi:type="mimo-app:ServiceServlet"
           className="org.abchip.mimo.core.http.servlet.session.StatusServlet"
-          alias="/biz/service/status"/>
+          alias="/service/status"/>
       <services
           xsi:type="mimo-app:ServiceServlet"
           className="org.abchip.mimo.biz.plugins.servlet.CheckLoginServlet"
-          alias="/biz/service/entityCheckLogin"/>
+          alias="/service/entityCheckLogin"/>
       <services
           xsi:type="mimo-app:ServiceServlet"
           className="org.abchip.mimo.biz.plugins.servlet.ExternalCredentialServlet"
-          alias="/biz/service/entityExternalCredential"/>
+          alias="/service/entityExternalCredential"/>
     </modules>
     <modules
         name="Rest">
       <services
           xsi:type="mimo-app:ServiceServlet"
           className="org.abchip.mimo.core.http.servlet.LookupServlet"
-          alias="/biz/service/lookup"/>
+          alias="/service/lookup"/>
       <services
           xsi:type="mimo-app:ServiceServlet"
           className="org.abchip.mimo.core.http.servlet.FindServlet"
-          alias="/biz/service/find"/>
+          alias="/service/find"/>
       <services
           xsi:type="mimo-app:ServiceServlet"
           className="org.abchip.mimo.core.http.servlet.DeleteServlet"
-          alias="/biz/service/delete"/>
+          alias="/service/delete"/>
       <services
           xsi:type="mimo-app:ServiceServlet"
           className="org.abchip.mimo.core.http.servlet.SaveServlet"
-          alias="/biz/service/save"/>
+          alias="/service/save"/>
       <services
           xsi:type="mimo-app:ServiceServlet"
           className="org.abchip.mimo.core.http.servlet.FindNamesServlet"
-          alias="/biz/service/findNames"/>
+          alias="/service/findNames"/>
       <services
           xsi:type="mimo-app:ServiceServlet"
           className="org.abchip.mimo.core.http.servlet.NextSequenceServlet"
-          alias="/biz/service/nextSequence"/>
+          alias="/service/nextSequence"/>
     </modules>
   </components>
   <components

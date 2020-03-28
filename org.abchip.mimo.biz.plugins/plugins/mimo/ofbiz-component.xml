@@ -48,17 +48,5 @@
 
 	<!-- web applications; will be mounted when using the embedded container -->
 	<webapp name="mimo" title="Mimo" server="default-server"
-		location="webapp/mimo" base-permission="OFBTOOLS,MIMO" mount-point="/" />
-
-<!--
-	<container name="mimo-container" loaders="main"
-		class="org.abchip.mimo.biz.plugins.application.BizContainerImpl">
-		<property name="mimo.osgi.data" value="/mimo/osgi-data" />
-		<property name="mimo.application.config"
-			value="plugins/mimo/abchip-biz.xmi" />
-		<property name="mimo.application.name" value="OFBiz" />
-		<property name="mimo.application.port" value="" />
-	</container>
--->
-
+		location="webapp/mimo" base-permission="OFBTOOLS,MIMO" mount-point="/biz" />
 </ofbiz-component>
