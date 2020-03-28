@@ -20,6 +20,7 @@ import org.abchip.mimo.edi.entity.EdiFrameSetup;
 import org.abchip.mimo.edi.entity.EntityEvent;
 import org.abchip.mimo.edi.message.MessageType;
 import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
@@ -44,7 +45,6 @@ public class EdiServices {
 
 	private static final String VALUEATTR = "entityInstance";
 
-	@SuppressWarnings("resource")
 	public static Map<String, Object> startEdiEngine(DispatchContext ctx, Map<String, Object> params) {
 
 		Delegator delegator = ctx.getDelegator();
@@ -53,11 +53,13 @@ public class EdiServices {
 
 		ModelReader modelReader = delegator.getModelReader();
 		ResourceReader<EdiFrameSetup> setupReader = resourceManager.getResourceReader(context, EdiFrameSetup.class);
-		for (EdiFrameSetup setup : setupReader.find()) {
-			if (modelReader.getModelEntityNoCheck(setup.getFrame()) == null)
-				continue;
+		try (EntityIterator<EdiFrameSetup> setups = setupReader.find()) {
+			for (EdiFrameSetup setup : setups) {
+				if (modelReader.getModelEntityNoCheck(setup.getFrame()) == null)
+					continue;
 
-			EdiUtils.addEdiEca(delegator, setup);
+				EdiUtils.addEdiEca(delegator, setup);
+			}
 		}
 
 		return ServiceUtil.returnSuccess();
@@ -122,7 +124,6 @@ public class EdiServices {
 		return manageEdiEntity(Operations.DLT, ctx, params);
 	}
 
-	@SuppressWarnings("resource")
 	private static Map<String, Object> manageEdiFrameSetup(Operations operation, DispatchContext ctx, Map<String, Object> params) {
 
 		GenericValue entityInstance = (GenericValue) params.get(VALUEATTR);
@@ -141,11 +142,13 @@ public class EdiServices {
 		EdiUtils.removeEdiEca(delegator, ediFrameSetup.getFrame());
 
 		ResourceReader<EdiFrameSetup> setupReader = resourceManager.getResourceReader(context, EdiFrameSetup.class, resource);
-		for (EdiFrameSetup setup : setupReader.find()) {
-			if (modelReader.getModelEntityNoCheck(setup.getFrame()) == null)
-				continue;
+		try (EntityIterator<EdiFrameSetup> setups = setupReader.find()) {
+			for (EdiFrameSetup setup : setups) {
+				if (modelReader.getModelEntityNoCheck(setup.getFrame()) == null)
+					continue;
 
-			EdiUtils.addEdiEca(delegator, setup);
+				EdiUtils.addEdiEca(delegator, setup);
+			}
 		}
 
 		return ServiceUtil.returnSuccess();
