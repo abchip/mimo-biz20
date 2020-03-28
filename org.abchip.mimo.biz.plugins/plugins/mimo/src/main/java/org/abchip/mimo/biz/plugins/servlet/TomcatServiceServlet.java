@@ -8,27 +8,30 @@
  */
 package org.abchip.mimo.biz.plugins.servlet;
 
+import java.util.Dictionary;
+
 import javax.servlet.Servlet;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
+import javax.servlet.ServletRegistration;
 import javax.servlet.http.HttpServlet;
 
 import org.abchip.mimo.MimoConstants;
 import org.abchip.mimo.application.Application;
 import org.abchip.mimo.core.e4.E4Activator;
-import org.abchip.mimo.core.http.HttpServiceImpl;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.InvalidSyntaxException;
 import org.osgi.framework.ServiceReference;
+import org.osgi.service.http.HttpContext;
 import org.osgi.service.http.HttpService;
 import org.osgi.service.http.NamespaceException;
 
-public class HttpServiceServlet extends HttpServlet {
+public class TomcatServiceServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
-	public HttpServiceServlet() {
+	public TomcatServiceServlet() {
 		super();
 	}
 
@@ -65,6 +68,36 @@ public class HttpServiceServlet extends HttpServlet {
 
 		} catch (InvalidSyntaxException e) {
 			throw new ServletException(e);
+		}
+	}
+
+	public class HttpServiceImpl implements HttpService {
+
+		protected ServletContext servletContext;
+
+		public HttpServiceImpl(ServletContext servletContext) {
+			this.servletContext = servletContext;
+		}
+
+		@Override
+		public HttpContext createDefaultHttpContext() {
+			return null;
+		}
+
+		@Override
+		public void registerResources(String arg0, String arg1, HttpContext arg2) throws NamespaceException {
+		}
+
+		@SuppressWarnings("rawtypes")
+		@Override
+		public void registerServlet(String alias, Servlet servlet, Dictionary dictionary, HttpContext context) throws ServletException, NamespaceException {
+
+			ServletRegistration servletRegistration = servletContext.addServlet(servlet.getClass().getSimpleName(), servlet);
+			servletRegistration.addMapping(alias);
+		}
+
+		@Override
+		public void unregister(String servletName) {
 		}
 	}
 }
