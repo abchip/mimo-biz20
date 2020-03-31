@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Bundle-ManifestVersion: 2
-Bundle-Name: MIMO Biz Themes
-Bundle-SymbolicName: org.abchip.mimo.biz.themes;singleton:=true
-Bundle-Version: 0.2.0.qualifier
-Fragment-Host: org.abchip.mimo.biz.asf
-Bundle-Vendor: ABChip
-Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Bundle-ClassPath: .

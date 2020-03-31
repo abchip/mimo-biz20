@@ -28,41 +28,41 @@
          version="0.0.0"/>
 
    <plugin
-         id="org.abchip.mimo.biz.framework"
+         id="org.abchip.mimo.biz.asf.framework"
          download-size="0"
          install-size="0"
          version="0.0.0"
          fragment="true"/>
 
    <plugin
-         id="org.abchip.mimo.biz.applications"
+         id="org.abchip.mimo.biz.asf.applications"
          download-size="0"
          install-size="0"
          version="0.0.0"
          fragment="true"/>
 
    <plugin
-         id="org.abchip.mimo.biz.themes"
+         id="org.abchip.mimo.biz.asf.themes"
          download-size="0"
          install-size="0"
          version="0.0.0"
          fragment="true"/>
 
    <plugin
-         id="org.abchip.mimo.biz.plugins"
+         id="org.abchip.mimo.biz.asf.plugins"
          download-size="0"
          install-size="0"
          version="0.0.0"
          fragment="true"/>
 
    <plugin
-         id="org.abchip.mimo.biz.commons"
+         id="org.abchip.mimo.biz.asf.commons"
          download-size="0"
          install-size="0"
          version="0.0.0"/>
 
    <plugin
-         id="org.abchip.mimo.biz.tomcat"
+         id="org.abchip.mimo.biz.asf.tomcat"
          download-size="0"
          install-size="0"
          version="0.0.0"/>

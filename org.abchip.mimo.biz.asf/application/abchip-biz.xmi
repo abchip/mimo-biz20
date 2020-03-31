@@ -19,36 +19,8 @@
         name="Base">
       <services
           xsi:type="mimo-app:ServiceExecutor"
-          className="org.abchip.mimo.core.base.util.BaseStringsImpl"
-          interfaceName="org.abchip.mimo.util.Strings"/>
-      <services
-          xsi:type="mimo-app:ServiceExecutor"
-          className="org.abchip.mimo.core.base.util.BaseListsImpl"
-          interfaceName="org.abchip.mimo.util.Lists"/>
-      <services
-          xsi:type="mimo-app:ServiceExecutor"
-          className="org.abchip.mimo.core.base.util.BaseFilesImpl"
-          interfaceName="org.abchip.mimo.util.Files"/>
-      <services
-          xsi:type="mimo-app:ServiceExecutor"
-          className="org.abchip.mimo.core.base.util.BaseStreamsImpl"
-          interfaceName="org.abchip.mimo.util.Streams"/>
-      <services
-          xsi:type="mimo-app:ServiceExecutor"
-          className="org.abchip.mimo.core.base.util.BaseClassesImpl"
-          interfaceName="org.abchip.mimo.util.Classes"/>
-      <services
-          xsi:type="mimo-app:ServiceExecutor"
-          className="org.abchip.mimo.core.base.util.BaseThreadsImpl"
-          interfaceName="org.abchip.mimo.util.Threads"/>
-      <services
-          xsi:type="mimo-app:ServiceExecutor"
-          className="org.abchip.mimo.core.base.util.BaseThreadManagerImpl"
-          interfaceName="org.abchip.mimo.util.ThreadManager"/>
-      <services
-          xsi:type="mimo-app:ServiceExecutor"
-          className="org.abchip.mimo.core.base.util.BaseURIsImpl"
-          interfaceName="org.abchip.mimo.util.URIs"/>
+          className="org.abchip.mimo.core.base.ctx.BaseThreadManagerImpl"
+          interfaceName="org.abchip.mimo.context.ThreadManager"/>
       <services
           xsi:type="mimo-app:ServiceExecutor"
           className="org.abchip.mimo.core.e4.E4LoggerImpl"
@@ -95,7 +67,7 @@
   <components
       xsi:type="biz:BizComponent"
       name="Framework"
-      plugin="org.abchip.mimo.biz.framework"
+      plugin="org.abchip.mimo.biz.asf.framework"
       modulesDir="framework">
     <hooks className="org.abchip.mimo.biz.plugins.application.BizApplicationComponentHook"/>
     <modules
@@ -153,7 +125,7 @@
   <components
       xsi:type="biz:BizComponent"
       name="Applications"
-      plugin="org.abchip.mimo.biz.applications"
+      plugin="org.abchip.mimo.biz.asf.applications"
       modulesDir="applications">
     <hooks className="org.abchip.mimo.biz.plugins.application.BizApplicationComponentHook"/>
     <modules
@@ -193,7 +165,7 @@
   <components
       xsi:type="biz:BizComponent"
       name="Plugins"
-      plugin="org.abchip.mimo.biz.plugins"
+      plugin="org.abchip.mimo.biz.asf.plugins"
       modulesDir="plugins">
     <hooks className="org.abchip.mimo.biz.plugins.application.BizApplicationComponentHook"/>
     <bizModules
@@ -204,7 +176,7 @@
   <components
       xsi:type="biz:BizComponent"
       name="Themes"
-      plugin="org.abchip.mimo.biz.themes"
+      plugin="org.abchip.mimo.biz.asf.themes"
       modulesDir="themes">
     <hooks className="org.abchip.mimo.biz.plugins.application.BizApplicationComponentHook"/>
     <bizModules

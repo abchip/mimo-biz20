@@ -9,16 +9,11 @@
 package org.abchip.mimo.biz.test.command;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
 import org.abchip.mimo.biz.common.uom.Uom;
-import org.abchip.mimo.biz.party.contact.ContactMech;
-import org.abchip.mimo.biz.party.contact.ContactMechPurposeType;
-import org.abchip.mimo.biz.party.contact.PartyContactMech;
-import org.abchip.mimo.biz.party.contact.PartyContactMechPurpose;
 import org.abchip.mimo.biz.party.party.Party;
 import org.abchip.mimo.biz.party.party.PartyRole;
 import org.abchip.mimo.biz.product.facility.Facility;

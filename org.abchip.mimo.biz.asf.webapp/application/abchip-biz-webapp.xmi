@@ -95,7 +95,7 @@
   <components
       xsi:type="biz:BizComponent"
       name="Framework"
-      plugin="org.abchip.mimo.biz.framework"
+      plugin="org.abchip.mimo.biz.asf.framework"
       modulesDir="framework">
     <hooks className="org.abchip.mimo.biz.plugins.application.BizApplicationComponentHook"/>
     <modules
@@ -148,7 +148,7 @@
   <components
       xsi:type="biz:BizComponent"
       name="Applications"
-      plugin="org.abchip.mimo.biz.applications"
+      plugin="org.abchip.mimo.biz.asf.applications"
       modulesDir="applications">
     <hooks className="org.abchip.mimo.biz.plugins.application.BizApplicationComponentHook"/>
     <modules
@@ -188,7 +188,7 @@
   <components
       xsi:type="biz:BizComponent"
       name="Plugins"
-      plugin="org.abchip.mimo.biz.plugins"
+      plugin="org.abchip.mimo.biz.asf.plugins"
       modulesDir="plugins">
     <hooks className="org.abchip.mimo.biz.plugins.application.BizApplicationComponentHook"/>
     <bizModules
