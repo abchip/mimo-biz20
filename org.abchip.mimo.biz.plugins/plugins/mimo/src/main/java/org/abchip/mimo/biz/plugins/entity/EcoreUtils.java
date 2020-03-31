@@ -188,11 +188,11 @@ public class EcoreUtils {
 		EcoreFactory ecoreFactory = EcoreFactory.eINSTANCE;
 
 		EEnum eEnum = ecoreFactory.createEEnum();
-		eEnum.setName(Strings.qINSTANCE.firstToUpper(formField.getName()));
+		eEnum.setName(Strings.firstToUpper(formField.getName()));
 
 		FieldInfo fieldInfo = formField.getFieldInfo();
 
-		String resource = Strings.qINSTANCE.firstToUpper(ePackage.getName());
+		String resource = Strings.firstToUpper(ePackage.getName());
 		if (resource.equals("Humanres"))
 			resource = "HumanRes";
 		resource = resource + "UiLabels";

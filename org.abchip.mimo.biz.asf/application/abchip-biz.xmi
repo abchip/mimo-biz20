@@ -19,36 +19,8 @@
         name="Base">
       <services
           xsi:type="mimo-app:ServiceExecutor"
-          className="org.abchip.mimo.core.base.util.BaseStringsImpl"
-          interfaceName="org.abchip.mimo.util.Strings"/>
-      <services
-          xsi:type="mimo-app:ServiceExecutor"
-          className="org.abchip.mimo.core.base.util.BaseListsImpl"
-          interfaceName="org.abchip.mimo.util.Lists"/>
-      <services
-          xsi:type="mimo-app:ServiceExecutor"
-          className="org.abchip.mimo.core.base.util.BaseFilesImpl"
-          interfaceName="org.abchip.mimo.util.Files"/>
-      <services
-          xsi:type="mimo-app:ServiceExecutor"
-          className="org.abchip.mimo.core.base.util.BaseStreamsImpl"
-          interfaceName="org.abchip.mimo.util.Streams"/>
-      <services
-          xsi:type="mimo-app:ServiceExecutor"
-          className="org.abchip.mimo.core.base.util.BaseClassesImpl"
-          interfaceName="org.abchip.mimo.util.Classes"/>
-      <services
-          xsi:type="mimo-app:ServiceExecutor"
-          className="org.abchip.mimo.core.base.util.BaseThreadsImpl"
-          interfaceName="org.abchip.mimo.util.Threads"/>
-      <services
-          xsi:type="mimo-app:ServiceExecutor"
-          className="org.abchip.mimo.core.base.util.BaseThreadManagerImpl"
-          interfaceName="org.abchip.mimo.util.ThreadManager"/>
-      <services
-          xsi:type="mimo-app:ServiceExecutor"
-          className="org.abchip.mimo.core.base.util.BaseURIsImpl"
-          interfaceName="org.abchip.mimo.util.URIs"/>
+          className="org.abchip.mimo.core.base.ctx.BaseThreadManagerImpl"
+          interfaceName="org.abchip.mimo.context.ThreadManager"/>
       <services
           xsi:type="mimo-app:ServiceExecutor"
           className="org.abchip.mimo.core.e4.E4LoggerImpl"

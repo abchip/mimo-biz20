@@ -1,33 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?eclipse version="3.0"?>
-
-<!--
--->
-
+<?eclipse version="3.4"?>
 <plugin>
+
    <extension
-         id="mimo-biz-application"
-         name="Application"
-         point="org.eclipse.core.runtime.applications">
-      <application
-            cardinality="singleton-global"
-            thread="main"
-            visible="true">
-         <run
-               class="org.abchip.mimo.core.e4.E4EquinoxApplicationImpl">
-         </run>
-      </application>
-   </extension>
-   <extension
-         id="mimo-biz"
+         id="abchip_biz"
          point="org.eclipse.core.runtime.products">
       <product
-            application="org.abchip.mimo.biz.asf.mimo-biz-application"
-            name="MIMO Biz Application">
+            name="abchip-biz"
+            application="org.abchip.mimo.core.e4.osgi">
          <property
                name="appName"
-               value="MIMO Biz Application">
+               value="abchip-biz">
          </property>
       </product>
    </extension>
+
 </plugin>

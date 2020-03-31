@@ -90,7 +90,7 @@ public class ImportPeopleServlet extends BaseServlet {
 						person.setPartyTypeId(resourceManager.getFrame(context, PartyType.class).createProxy("PERSON"));
 						// Person
 						person.setPartyId(id);
-						person.setFirstName(Strings.qINSTANCE.escape(name));
+						person.setFirstName(Strings.escapeJava(name));
 
 						personWriter.create(person);
 

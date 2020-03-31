@@ -7,10 +7,8 @@
    </configIni>
 
    <launcherArgs>
-      <programArgs>-console
+      <programArgs>-console 8081
 -clean
--mimo.home /mimo/abchip-biz-webapp
--mimo.config ${container_loc}/abchip-biz-webapp.xmi
       </programArgs>
       <vmArgs>-Djavax.xml.parsers.DocumentBuilderFactory=com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl
       </vmArgs>
@@ -44,10 +42,9 @@
    <configurations>
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.equinox.http.servletbridge" autoStart="true" startLevel="0" />
-      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
       <property name="mimo.activation" value="true" />
-      <property name="mimo.config" value="/mimo/abchip-biz-webapp/abchip-biz-webapp.xmi" />
       <property name="mimo.home" value="/mimo/abchip-biz-webapp" />
+      <property name="mimo.config" value="/mimo/abchip-biz-webapp/abchip-biz-webapp.xmi" />
    </configurations>
 
    <preferencesInfo>

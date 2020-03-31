@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="MIMO Biz Application" uid="mimo-biz" id="org.abchip.mimo.biz.asf.mimo-biz" application="org.abchip.mimo.biz.asf.mimo-biz-application" version="0.2.0" useFeatures="true" includeLaunchers="true">
+<product name="abchip-biz" uid="abchip-biz" id="org.abchip.mimo.biz.asf.abchip_biz" application="org.abchip.mimo.core.e4.osgi" version="0.2.0" useFeatures="true" includeLaunchers="true">
 
    <configIni use="default">
+      <linux>/org.abchip.mimo.biz.asf/application/abchip-biz.ini</linux>
    </configIni>
 
    <launcherArgs>
-      <programArgs>-console
+      <programArgs>-console 8081
 -clean
--mimo.config /mimo/abchip-biz/abchip-biz.xmi
--mimo.home /mimo/abchip-biz
       </programArgs>
       <vmArgs>-Djavax.xml.parsers.DocumentBuilderFactory=com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl
       </vmArgs>
@@ -33,16 +32,20 @@
    </plugins>
 
    <features>
-      <feature id="org.abchip.eclipse.osgi.feature" version="0.2.0.qualifier"/>
+      <feature id="org.abchip.mimo.biz.asf.feature" version="0.2.0.qualifier"/>
+      <feature id="org.abchip.mimo.biz.feature" version="0.2.0.qualifier"/>
       <feature id="org.abchip.mimo.core.feature" version="0.2.0.qualifier"/>
       <feature id="org.abchip.mimo.edi.feature" version="0.2.0.qualifier"/>
-      <feature id="org.abchip.mimo.biz.feature" version="0.2.0.qualifier"/>
-      <feature id="org.abchip.mimo.biz.asf.feature" version="0.2.0.qualifier"/>
       <feature id="org.abchip.mimo.mining.feature" version="0.2.0.qualifier"/>
+      <feature id="org.abchip.eclipse.osgi.feature" version="0.2.0.qualifier"/>
    </features>
 
    <configurations>
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <property name="mimo.config" value="/mimo/abchip-biz/abchip-biz.xmi" />
+      <property name="mimo.home" value="/mimo/abchip-biz" />
+      <property name="mimo.activation" value="true" />
    </configurations>
 
    <preferencesInfo>

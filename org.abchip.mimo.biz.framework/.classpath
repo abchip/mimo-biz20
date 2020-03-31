@@ -97,7 +97,5 @@
 	<classpathentry kind="src" path="framework/service/src/main/groovy"/>
 	<classpathentry kind="src" path="framework/webapp/src/main/java"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/org.abchip.mimo.biz.commons"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/org.abchip.mimo.biz.tomcat"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

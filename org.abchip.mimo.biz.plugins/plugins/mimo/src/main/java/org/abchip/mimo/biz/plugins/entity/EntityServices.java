@@ -470,7 +470,7 @@ public class EntityServices {
 						if (eClass != eFeature.eContainer())
 							continue;
 
-						String referenceName = Strings.qINSTANCE.firstToLower(modelEntityRef.getEntityName());
+						String referenceName = Strings.firstToLower(modelEntityRef.getEntityName());
 						EReference eReference = (EReference) eClass.getEStructuralFeature(referenceName);
 						if (eReference == null) {
 							eReference = ecoreFactory.createEReference();
@@ -586,7 +586,7 @@ public class EntityServices {
 				}
 
 				if (formField != null) {
-					EEnum eEnum = (EEnum) EcoreUtils.findEClassifier(bizPackage, Strings.qINSTANCE.firstToUpper(formField.getName()));
+					EEnum eEnum = (EEnum) EcoreUtils.findEClassifier(bizPackage, Strings.firstToUpper(formField.getName()));
 					if (eEnum == null) {
 						eEnum = EcoreUtils.buildEnum(eClass.getEPackage().getESuperPackage(), context, formField);
 						if (eEnum != null)
