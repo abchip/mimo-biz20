@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="lib/jackson-annotations-2.9.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/groovy-all-2.4.13.jar" sourcepath="lib/groovy-all-2.4.13-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/activation-1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/antlr-runtime-3.4.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/axiom-api-1.2.20.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/axiom-impl-1.2.20.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/axis2-kernel-1.7.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/axis2-transport-http-1.7.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/axis2-transport-local-1.7.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/backport-util-concurrent-3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/bctsp-jdk14-1.38.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/bsh-core-2.0b4.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/concurrentlinkedhashmap-lru-1.4.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/core-3.3.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/dec-0.1.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/derby-10.14.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/ehcache-core-2.6.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/esapi-2.1.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/ez-vcard-0.9.10.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/fop-2.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/freemarker-2.3.28.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/geoapi-3.0.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/gson-2.8.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/guava-19.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/hamcrest-all-1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/hamcrest-core-1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/httpclient-4.5.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/httpclient-cache-4.5.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/httpcore-4.4.10.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/httpmime-4.5.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/httpservices-4.5.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/ical4j-1.0-rc3-atlassian-11.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/icu4j-63.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/itext-2.1.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jackson-core-2.9.9.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jackson-databind-2.9.9.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/java-jwt-3.8.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/javax.activation-1.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/javax.el-api-3.0.1-b06.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/javax.mail-1.6.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/javax.ws.rs-api-2.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/javax.xml.soap-api-1.4.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jaxb-api-2.3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jaxb-runtime-2.3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jdom2-2.0.6.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/json-1.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/json-simple-1.1.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/jsoup-1.11.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/juel-impl-2.2.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/juel-spi-2.2.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/libphonenumber-8.9.16.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/neethi-3.0.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/nekohtml-1.9.16.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/openjson-1.0.10.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/opennlp-tools-1.9.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/oro-2.0.8.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/owasp-java-html-sanitizer-20180219.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/postgresql-42.2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/quartz-2.2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/rome-1.12.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/rome-utils-1.12.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/sequence-library-1.0.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/serializer-2.7.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/sshd-core-1.7.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/tagsoup-1.2.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/tika-core-1.20.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/tika-parsers-1.20.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/ws-commons-util-1.0.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/wsdl4j-1.6.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/xmlgraphics-commons-2.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/xmlpull-1.1.3.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/xmlrpc-client-3.1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/xmlrpc-common-3.1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/xmlrpc-server-3.1.3.jar"/>
+	<classpathentry exported="true" kind="lib" path="lib/xstream-1.4.11.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry excluding="org/apache/ofbiz/base/conversion/test/|org/apache/ofbiz/base/lang/test/|org/apache/ofbiz/base/util/cache/test/|org/apache/ofbiz/base/util/collections/test/|org/apache/ofbiz/base/util/string/test/|org/apache/ofbiz/base/util/test/|org/apache/ofbiz/base/test/" kind="src" path="framework/base/src/main/java"/>
+	<classpathentry kind="src" path="framework/catalina/src/main/java"/>
+	<classpathentry excluding="org/apache/ofbiz/common/test/" kind="src" path="framework/common/src/main/java"/>
+	<classpathentry kind="src" path="framework/datafile/src/main/java"/>
+	<classpathentry excluding="org/apache/ofbiz/entity/test/|org/apache/ofbiz/entity/testtools/" kind="src" path="framework/entity/src/main/java"/>
+	<classpathentry kind="src" path="framework/entityext/src/main/java"/>
+	<classpathentry excluding="org/apache/ofbiz/minilang/test/" kind="src" path="framework/minilang/src/main/java"/>
+	<classpathentry kind="src" path="framework/security/src/main/java"/>
+	<classpathentry excluding="org/apache/ofbiz/service/test/|org/apache/ofbiz/service/testtools/" kind="src" path="framework/service/src/main/java"/>
+	<classpathentry kind="src" path="framework/start/src/main/java"/>
+	<classpathentry excluding="org/apache/ofbiz/testtools/EntityXmlAssertTest.java|org/apache/ofbiz/testtools/GroovyScriptTestCase.java|org/apache/ofbiz/testtools/" kind="src" path="framework/testtools/src/main/java"/>
+	<classpathentry excluding="org/apache/ofbiz/webtools/artifactinfo/RunTestEvents.java" kind="src" path="framework/webtools/src/main/java"/>
+	<classpathentry excluding="org/apache/ofbiz/widget/test/" kind="src" path="framework/widget/src/main/java"/>
+	<classpathentry kind="src" path="framework/base/config"/>
+	<classpathentry kind="src" path="framework/base/dtd"/>
+	<classpathentry kind="src" path="framework/service/dtd"/>
+	<classpathentry kind="src" path="framework/entity/dtd"/>
+	<classpathentry kind="src" path="framework/service/src/main/groovy"/>
+	<classpathentry kind="src" path="framework/webapp/src/main/java"/>
+	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,19 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="src" path="applications/workeffort/src/main/java"/>
+	<classpathentry kind="src" path="applications/securityext/src/main/java"/>
+	<classpathentry excluding="org/apache/ofbiz/shipment/thirdparty/usps/UspsServicesTests.java|org/apache/ofbiz/shipment/test/IssuanceTest.java|org/apache/ofbiz/product/test/InventoryItemTransferTest.java|org/apache/ofbiz/product/test/StockMovesTest.java|org/apache/ofbiz/product/spreadsheetimport/ImportProductServices.java|org/apache/ofbiz/product/category/SeoControlServlet.java|org/apache/ofbiz/product/category/SeoCatalogUrlServlet.java|org/apache/ofbiz/product/category/SeoContentUrlFilter.java|org/apache/ofbiz/product/category/SeoContextFilter.java|org/apache/ofbiz/shipment/thirdparty/dhl/|org/apache/ofbiz/shipment/thirdparty/fedex/|org/apache/ofbiz/shipment/thirdparty/ups/|org/apache/ofbiz/shipment/thirdparty/usps/" kind="src" path="applications/product/src/main/java"/>
+	<classpathentry kind="src" path="applications/party/src/main/java"/>
+	<classpathentry excluding="org/apache/ofbiz/order/test/FinAccountTest.java|org/apache/ofbiz/order/test/PurchaseOrderTest.java|org/apache/ofbiz/order/test/SalesOrderTest.java|org/apache/ofbiz/order/thirdparty/taxware/" kind="src" path="applications/order/src/main/java"/>
+	<classpathentry kind="src" path="applications/marketing/src/main/java"/>
+	<classpathentry kind="src" path="applications/manufacturing/src/main/java"/>
+	<classpathentry kind="src" path="applications/humanres/src/main/java"/>
+	<classpathentry kind="src" path="applications/content/src/main/java"/>
+	<classpathentry excluding="org/apache/ofbiz/accounting/thirdparty/cybersource/IcsPaymentServices.java|org/apache/ofbiz/accounting/thirdparty/orbital/OrbitalPaymentServices.java|org/apache/ofbiz/accounting/thirdparty/paypal/PayPalServices.java|org/apache/ofbiz/accounting/thirdparty/securepay/SecurePayPaymentServices.java|org/apache/ofbiz/accounting/thirdparty/verisign/PayflowPro.java|org/apache/ofbiz/accounting/test/FinAccountTests.java|org/apache/ofbiz/accounting/thirdparty/clearcommerce/CCServicesTest.java|org/apache/ofbiz/accounting/thirdparty/securepay/SecurePayServiceTest.java|org/apache/ofbiz/accounting/thirdparty/authorizedotnet/|org/apache/ofbiz/accounting/thirdparty/clearcommerce/|org/apache/ofbiz/accounting/thirdparty/cybersource/|org/apache/ofbiz/accounting/thirdparty/eway/|org/apache/ofbiz/accounting/thirdparty/gosoftware/|org/apache/ofbiz/accounting/thirdparty/orbital/|org/apache/ofbiz/accounting/thirdparty/paypal/|org/apache/ofbiz/accounting/thirdparty/sagepay/|org/apache/ofbiz/accounting/thirdparty/securepay/|org/apache/ofbiz/accounting/thirdparty/valuelink/|org/apache/ofbiz/accounting/thirdparty/verisign/|org/apache/ofbiz/accounting/thirdparty/worldpay/" kind="src" path="applications/accounting/src/main/java"/>
+	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.abchip.mimo.biz.asf.framework"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
