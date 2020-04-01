@@ -3,14 +3,14 @@
 <plugin>
 
    <extension
-         id="abchip_biz"
+         id="biz_asf"
          point="org.eclipse.core.runtime.products">
       <product
-            name="abchip-biz"
-            application="org.abchip.mimo.core.e4.osgi">
+            application="org.abchip.mimo.core.e4.osgi"
+            name="ABChip.net Biz Desk">
          <property
                name="appName"
-               value="abchip-biz">
+               value="ABChip.net Biz Desk">
          </property>
       </product>
    </extension>

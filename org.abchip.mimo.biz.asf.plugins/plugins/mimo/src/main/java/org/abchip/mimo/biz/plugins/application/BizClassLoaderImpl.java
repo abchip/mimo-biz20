@@ -43,7 +43,6 @@ public class BizClassLoaderImpl extends URLClassLoader {
 
 		@Override
 		public synchronized void load(Config config, List<StartupCommand> ofbizCommands) throws StartupException {
-			"".toString();
 		}
 
 		@Override
