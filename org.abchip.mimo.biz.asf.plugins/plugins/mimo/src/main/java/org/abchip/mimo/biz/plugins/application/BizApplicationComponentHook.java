@@ -33,7 +33,7 @@ public class BizApplicationComponentHook {
 
 	@Inject
 	private ApplicationComponent component;
-	
+
 	@SuppressWarnings("resource")
 	@ComponentStarting
 	private void starting() {
@@ -66,9 +66,10 @@ public class BizApplicationComponentHook {
 					bizClassLoader = (BizClassLoaderImpl) classLoader;
 
 					for (URL url : classpath.getUrls()) {
+						Debug.logInfo("Append to classpath: " + url, BizApplicationHook.MODULE);
 						bizClassLoader.addURL(url);
 					}
-				} 
+				}
 			} catch (IOException | ComponentException e) {
 				throw new RuntimeException(e);
 			}
@@ -111,7 +112,6 @@ public class BizApplicationComponentHook {
 	private void started() {
 		if (!(component instanceof BizComponent))
 			return;
-		
-		
+
 	}
 }
