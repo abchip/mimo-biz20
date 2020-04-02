@@ -7,7 +7,6 @@ import org.abchip.mimo.biz.accounting.tax.PartyTaxAuthInfo;
 import org.abchip.mimo.biz.base.service.SystemDefault;
 import org.abchip.mimo.biz.common.geo.Geo;
 import org.abchip.mimo.biz.common.status.StatusItem;
-import org.abchip.mimo.biz.common.uom.Uom;
 import org.abchip.mimo.biz.party.contact.ContactMech;
 import org.abchip.mimo.biz.party.contact.ContactMechPurposeType;
 import org.abchip.mimo.biz.party.contact.ContactMechType;
