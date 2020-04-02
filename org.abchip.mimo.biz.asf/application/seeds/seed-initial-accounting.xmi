@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-ledger="http://www.abchip.org/mimo/biz/accounting/ledger" xmlns:biz-payment="http://www.abchip.org/mimo/biz/accounting/payment" xmlns:biz-period="http://www.abchip.org/mimo/biz/common/period" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/accounting/ledger ../../../org.abchip.mimo.biz.model/model/biz.ecore#//accounting/ledger http://www.abchip.org/mimo/biz/accounting/payment ../../../org.abchip.mimo.biz.model/model/biz.ecore#//accounting/payment http://www.abchip.org/mimo/biz/common/period ../../../org.abchip.mimo.biz.model/model/biz.ecore#//common/period http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity" name="Seeds">
+  <contents xsi:type="biz-period:PeriodType" periodTypeId="FISCAL_YEAR"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="_NA_"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="ACCOUNTS_RECEIVABLE"/>
+  <contents xsi:type="biz-ledger:GlAccountType" glAccountTypeId="MRCH_STLMNT_ACCOUNT"/>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="ASSET"/>
+  <contents xsi:type="biz-ledger:GlAccountClass" glAccountClassId="CURRENT_ASSET"/>
+  <contents xsi:type="biz-ledger:GlResourceType" glResourceTypeId="MONEY"/>
+  <contents xsi:type="biz-payment:PaymentType" paymentTypeId="CUSTOMER_PAYMENT"/>
+</mimo-ent:EntityContainer>

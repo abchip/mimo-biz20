@@ -1,0 +1,1779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-geo="http://www.abchip.org/mimo/biz/common/geo" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/geo http://www.abchip.org/mimo/biz#//common/geo http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="017_common_GeoData_FR">
+  <contents xsi:type="biz-geo:Geo" geoId="FR-01" abbreviation="AIN" geoCode="01" geoName="Ain">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-02" abbreviation="AIS" geoCode="02" geoName="Aisne">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-03" abbreviation="ALL" geoCode="03" geoName="Allier">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-04" abbreviation="AHP" geoCode="04" geoName="Alpes de Hautes-Provence">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-05" abbreviation="HAL" geoCode="05" geoName="Hautes-Alpes">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-06" abbreviation="ALM" geoCode="06" geoName="Alpes-Maritimes">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-07" abbreviation="ARD" geoCode="07" geoName="Ardèche">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-08" abbreviation="ARE" geoCode="08" geoName="Ardennes">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-09" abbreviation="ARI" geoCode="09" geoName="Ariège">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-10" abbreviation="AUB" geoCode="10" geoName="Aube">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-11" abbreviation="AUD" geoCode="11" geoName="Aude">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-12" abbreviation="AVE" geoCode="12" geoName="Aveyron">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-13" abbreviation="BDR" geoCode="13" geoName="Bouches-du-Rhône">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-14" abbreviation="CAL" geoCode="14" geoName="Calvados">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-15" abbreviation="CAN" geoCode="15" geoName="Cantal">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-16" abbreviation="CHA" geoCode="16" geoName="Charente">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-17" abbreviation="CHM" geoCode="17" geoName="Charente-Maritime">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-18" abbreviation="CHE" geoCode="18" geoName="Cher">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-19" abbreviation="COR" geoCode="19" geoName="Corrèze">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-20" abbreviation="COS" geoCode="20" geoName="Corse">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-2A" abbreviation="CDS" geoCode="2A" geoName="Corse-du-Sud">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-2B" abbreviation="HCO" geoCode="2B" geoName="Haute-Corse">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-21" abbreviation="COO" geoCode="21" geoName="Côte-d'Or">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-22" abbreviation="COA" geoCode="22" geoName="Côtes d'Armor">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-23" abbreviation="CRE" geoCode="23" geoName="Creuse">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-24" abbreviation="DOR" geoCode="24" geoName="Dordogne">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-25" abbreviation="DOU" geoCode="25" geoName="Doubs">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-26" abbreviation="DRO" geoCode="26" geoName="Drôme">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-27" abbreviation="EUR" geoCode="27" geoName="Eure">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-28" abbreviation="EUL" geoCode="28" geoName="Eure-et-Loir">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-29" abbreviation="FIN" geoCode="29" geoName="Finistère">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-30" abbreviation="GAR" geoCode="30" geoName="Gard">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-31" abbreviation="HAG" geoCode="31" geoName="Haute-Garonne">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-32" abbreviation="GER" geoCode="32" geoName="Gers">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-33" abbreviation="GIR" geoCode="33" geoName="Gironde">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-34" abbreviation="HER" geoCode="34" geoName="Hérault">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-35" abbreviation="ILL" geoCode="35" geoName="Ille-et-Vilaine">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-36" abbreviation="IND" geoCode="36" geoName="Indre">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-37" abbreviation="IEL" geoCode="37" geoName="Indre-et-Loire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-38" abbreviation="ISE" geoCode="38" geoName="Isère">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-39" abbreviation="JUR" geoCode="39" geoName="Jura">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-40" abbreviation="LAN" geoCode="40" geoName="Landes">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-41" abbreviation="LEC" geoCode="41" geoName="Loir-et-Cher">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-42" abbreviation="LOI" geoCode="42" geoName="Loire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-43" abbreviation="HLO" geoCode="43" geoName="Haute-Loire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-44" abbreviation="LOA" geoCode="44" geoName="Loire-Atlantique">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-45" abbreviation="LOR" geoCode="45" geoName="Loiret">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-46" abbreviation="LOT" geoCode="46" geoName="Lot">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-47" abbreviation="LOG" geoCode="47" geoName="Lot-et-Garonne">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-48" abbreviation="LOZ" geoCode="48" geoName="Lozère">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-49" abbreviation="MEL" geoCode="49" geoName="Maine-et-Loire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-50" abbreviation="MAN" geoCode="50" geoName="Manche">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-51" abbreviation="MAR" geoCode="51" geoName="Marne">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-52" abbreviation="HMA" geoCode="52" geoName="Haute-Marne">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-53" abbreviation="MAY" geoCode="53" geoName="Mayenne">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-54" abbreviation="MEM" geoCode="54" geoName="Meurthe-et-Moselle">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-55" abbreviation="MEU" geoCode="55" geoName="Meuse">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-56" abbreviation="MOR" geoCode="56" geoName="Morbihan">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-57" abbreviation="MOS" geoCode="57" geoName="Moselle">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-58" abbreviation="NIE" geoCode="58" geoName="Nièvre">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-59" abbreviation="NOR" geoCode="59" geoName="Nord">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-60" abbreviation="OIS" geoCode="60" geoName="Oise">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-61" abbreviation="ORN" geoCode="61" geoName="Orne">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-62" abbreviation="PDC" geoCode="62" geoName="Pas-de-Calais">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-63" abbreviation="PUY" geoCode="63" geoName="Puy-de-Dôme">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-64" abbreviation="PYA" geoCode="64" geoName="Pyrénées-Atlantiques">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-65" abbreviation="HPY" geoCode="65" geoName="Hautes-Pyrénées">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-66" abbreviation="PYO" geoCode="66" geoName="Pyrénées-Orientales">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-67" abbreviation="BRH" geoCode="67" geoName="Bas-Rhin">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-68" abbreviation="HRH" geoCode="68" geoName="Haut-Rhin">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-69" abbreviation="RHO" geoCode="69" geoName="Rhône">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-70" abbreviation="HAS" geoCode="70" geoName="Haute-Saône">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-71" abbreviation="SEL" geoCode="71" geoName="Saône-et-Loire">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-72" abbreviation="SAR" geoCode="72" geoName="Sarthe">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-73" abbreviation="SAV" geoCode="73" geoName="Savoie">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-74" abbreviation="HAS" geoCode="74" geoName="Haute-Savoie">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-75" abbreviation="PAR" geoCode="75" geoName="Paris">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-76" abbreviation="SMA" geoCode="76" geoName="Seine-Maritime">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-77" abbreviation="SEM" geoCode="77" geoName="Seine-et-Marne">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-78" abbreviation="YVE" geoCode="78" geoName="Yvelines">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-79" abbreviation="DSE" geoCode="79" geoName="Deux-Sèvres">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-80" abbreviation="SOM" geoCode="80" geoName="Somme">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-81" abbreviation="TAR" geoCode="81" geoName="Tarn">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-82" abbreviation="TAG" geoCode="82" geoName="Tarn-et-Garonne">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-83" abbreviation="VAR" geoCode="83" geoName="Var">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-84" abbreviation="VAU" geoCode="84" geoName="Vaucluse">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-85" abbreviation="VEN" geoCode="85" geoName="Vendée">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-86" abbreviation="VIE" geoCode="86" geoName="Vienne">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-87" abbreviation="HVI" geoCode="87" geoName="Haute-Vienne">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-88" abbreviation="VOS" geoCode="88" geoName="Vosges">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-89" abbreviation="YON" geoCode="89" geoName="Yonne">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-90" abbreviation="TDB" geoCode="90" geoName="Territoire-de-Belfort">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-91" abbreviation="ESS" geoCode="91" geoName="Essonne">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-92" abbreviation="HDS" geoCode="92" geoName="Hauts-de-Seine">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-93" abbreviation="SSD" geoCode="93" geoName="Seine-Saint-Denis">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-94" abbreviation="VDM" geoCode="94" geoName="Val-de-Marne">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-95" abbreviation="VDO" geoCode="95" geoName="Val-d'Oise">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-98" abbreviation="MON" geoCode="98" geoName="Monaco">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-GP" abbreviation="GUA" geoCode="GP" geoName="Guadeloupe">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-GF" abbreviation="GUY" geoCode="GF" geoName="Guyane">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-MQ" abbreviation="MAR" geoCode="MQ" geoName="Martinique">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-RE" abbreviation="REU" geoCode="RE" geoName="La Réunion">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-PM" abbreviation="SPM" geoCode="PM" geoName="St Pierre et Miquelon">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-YT" abbreviation="MAY" geoCode="YT" geoName="Mayotte">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-NC" abbreviation="NOC" geoCode="NC" geoName="Nouvelle-Calédonie">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-PF" abbreviation="POF" geoCode="PF" geoName="Polynésie française">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-BL" abbreviation="SBL" geoCode="PF" geoName="Saint-Barthélemy">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-MT" abbreviation="SMT" geoCode="MT" geoName="Saint-Martin">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-TF" abbreviation="TAF" geoCode="TF" geoName="Terres australes françaises">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-WF" abbreviation="WEF" geoCode="WF" geoName="Wallis et Futuna">
+    <geoTypeId href="GeoType#COUNTY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-BEB01" abbreviation="BEB" geoCode="BEB" geoName="Bourg-en-Bresse">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-LAO02" abbreviation="LAO" geoCode="LAO" geoName="Laon">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-MOU03" abbreviation="MOU" geoCode="MOU" geoName="Moulins">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-DIG04" abbreviation="DIG" geoCode="DIG" geoName="Digne">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-GAP05" abbreviation="GAP" geoCode="GAP" geoName="Gap">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-NIC06" abbreviation="NIC" geoCode="NIC" geoName="Nice">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-PRI07" abbreviation="PRI" geoCode="PRI" geoName="Privas">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-CHM08" abbreviation="CHM" geoCode="CHM" geoName="Charleville-Mézières">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-FOI09" abbreviation="FOI" geoCode="FOI" geoName="Foix">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-TRO10" abbreviation="TRO" geoCode="TRO" geoName="Troyes">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-CAR11" abbreviation="CAR" geoCode="CAR" geoName="Carcassonne">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-ROD12" abbreviation="ROD" geoCode="ROD" geoName="Rodez">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-MAR13" abbreviation="MAR" geoCode="MAR" geoName="Marseille">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-CAE14" abbreviation="CAE" geoCode="CAE" geoName="Caen">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-AUR15" abbreviation="AUR" geoCode="AUR" geoName="Aurillac">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-ANG16" abbreviation="ANG" geoCode="ANG" geoName="Angoulême">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-LRO17" abbreviation="LRO" geoCode="LRO" geoName="La Rochelle">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-BOU18" abbreviation="BOU" geoCode="BOU" geoName="Bourges">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-TUL19" abbreviation="TUL" geoCode="TUL" geoName="Tulle">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-AJA2A" abbreviation="AJA" geoCode="AJA" geoName="Ajaccio">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-BAS2B" abbreviation="BAS" geoCode="BAS" geoName="Bastia">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-DIJ21" abbreviation="DIJ" geoCode="DIJ" geoName="Dijon">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-SBR22" abbreviation="SBR" geoCode="SBR" geoName="Saint-Brieuc">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-GUE23" abbreviation="GUE" geoCode="GUE" geoName="Guéret">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-PER24" abbreviation="PER" geoCode="PER" geoName="Périgueux">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-BES25" abbreviation="BES" geoCode="BES" geoName="Besançon">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-VAL26" abbreviation="VAL" geoCode="VAL" geoName="Valence">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-EVR27" abbreviation="EVR" geoCode="EVR" geoName="Évreux">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-CHA28" abbreviation="CHA" geoCode="CHA" geoName="Chartres">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-QUI29" abbreviation="QUI" geoCode="QUI" geoName="Quimper">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-NIM30" abbreviation="NIM" geoCode="NIM" geoName="Nîmes">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-TLS31" abbreviation="TLS" geoCode="TLS" geoName="Toulouse">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-AUC32" abbreviation="AUC" geoCode="AUC" geoName="Auch">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-BOR33" abbreviation="BOR" geoCode="BOR" geoName="Bordeaux">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-MON34" abbreviation="MON" geoCode="MON" geoName="Montpellier">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-REN35" abbreviation="REN" geoCode="REN" geoName="Rennes">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-CHT36" abbreviation="CHT" geoCode="CHT" geoName="Châteauroux">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-TOU37" abbreviation="TOU" geoCode="TOU" geoName="Tours">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-GRE38" abbreviation="GRE" geoCode="GRE" geoName="Grenoble">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-LON39" abbreviation="LON" geoCode="LON" geoName="Lons-le-Saunier">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-MDM40" abbreviation="MDM" geoCode="MDM" geoName="Mont-de-Marsan">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-BLO41" abbreviation="BLO" geoCode="BLO" geoName="Blois">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-SET42" abbreviation="SET" geoCode="SET" geoName="Saint-Étienne">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-PEV43" abbreviation="PEV" geoCode="PEV" geoName="Le Puy-en-Velay">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-NAN44" abbreviation="NAN" geoCode="NAN" geoName="Nantes">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-ORL45" abbreviation="ORL" geoCode="ORL" geoName="Orléans">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-CAH46" abbreviation="CAH" geoCode="CAH" geoName="Cahors">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-AGE47" abbreviation="AGE" geoCode="AGE" geoName="Agen">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-MEN48" abbreviation="MEN" geoCode="MEN" geoName="Mende">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-ANG49" abbreviation="ANG" geoCode="ANG" geoName="Angers">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-SLO50" abbreviation="SLO" geoCode="SLO" geoName="Saint-Lô">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-CEC51" abbreviation="CEC" geoCode="CEC" geoName="Châlons-en-Champagne">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-CHM52" abbreviation="CHM" geoCode="CHM" geoName="Chaumont">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-LVL53" abbreviation="LVL" geoCode="LVL" geoName="Laval">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-NCY54" abbreviation="NCY" geoCode="NCY" geoName="Nancy">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-BLD55" abbreviation="BLD" geoCode="BLD" geoName="Bar-le-Duc">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-VAN56" abbreviation="VAN" geoCode="VAN" geoName="Vannes">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-MET57" abbreviation="MET" geoCode="MET" geoName="Metz">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-NEV58" abbreviation="NEV" geoCode="NEV" geoName="Nevers">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-LIL59" abbreviation="LIL" geoCode="LIL" geoName="Lille">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-BVA60" abbreviation="BVA" geoCode="BVA" geoName="Beauvais">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-ALE61" abbreviation="ALE" geoCode="ALE" geoName="Alençon">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-ARR62" abbreviation="ARR" geoCode="ARR" geoName="Arras">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-CLF63" abbreviation="CLF" geoCode="CLF" geoName="Clermont-Ferrand">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-PAU64" abbreviation="PAU" geoCode="PAU" geoName="Pau">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-TBS65" abbreviation="TBS" geoCode="TBS" geoName="Tarbes">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-PPG66" abbreviation="PPG" geoCode="PPG" geoName="Perpignan">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-SBG67" abbreviation="SBG" geoCode="SBG" geoName="Strasbourg">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-CLM68" abbreviation="CLM" geoCode="CLM" geoName="Colmar">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-LYO69" abbreviation="LYO" geoCode="LYO" geoName="Lyon">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-VSL70" abbreviation="VSL" geoCode="VSL" geoName="Vesoul">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-MCN71" abbreviation="MCN" geoCode="MCN" geoName="Mâcon">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-LMA72" abbreviation="LMA" geoCode="LMA" geoName="Le Mans">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-CBY73" abbreviation="CBY" geoCode="CBY" geoName="Chambéry">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-ACY74" abbreviation="ACY" geoCode="ACY" geoName="Annecy">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-PAR75" abbreviation="PAR" geoCode="PAR" geoName="Paris">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-ROU76" abbreviation="ROU" geoCode="ROU" geoName="Rouen">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-MLN77" abbreviation="MLN" geoCode="MLN" geoName="Melun">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-VSS78" abbreviation="VSS" geoCode="VSS" geoName="Versailles">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-NIO79" abbreviation="NIO" geoCode="NIO" geoName="Niort">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-AMI80" abbreviation="AMI" geoCode="AMI" geoName="Amiens">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-ALB81" abbreviation="ALB" geoCode="ALB" geoName="Albi">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-MTB82" abbreviation="MTB" geoCode="MTB" geoName="Montauban">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-TLN83" abbreviation="TLN" geoCode="TLN" geoName="Toulon">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-AVG84" abbreviation="AVG" geoCode="AVG" geoName="Avignon">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-RSY85" abbreviation="RSY" geoCode="RSY" geoName="La Roche-sur-Yon">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-POI86" abbreviation="POI" geoCode="POI" geoName="Poitiers">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-LMG87" abbreviation="LMG" geoCode="LMG" geoName="Limoges">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-EPI88" abbreviation="EPI" geoCode="EPI" geoName="Épinal">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-AXR89" abbreviation="AXR" geoCode="AXR" geoName="Auxerre">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-BLF90" abbreviation="BLF" geoCode="BLF" geoName="Belfort">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-EVR91" abbreviation="EVR" geoCode="EVR" geoName="Évry">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-NTR92" abbreviation="NTR" geoCode="NTR" geoName="Nanterre">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-BBY93" abbreviation="BBY" geoCode="BBY" geoName="Bobigny">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-CTL94" abbreviation="CTL" geoCode="CTL" geoName="Créteil">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-PTO95" abbreviation="PTO" geoCode="PTO" geoName="Pontoise">
+    <geoTypeId href="GeoType#COUNTY_CITY"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-ARA" abbreviation="ARA" geoCode="ARA" geoName="Auvergne-Rhône-Alpes">
+    <geoTypeId href="GeoType#REGION"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-HDF" abbreviation="HDF" geoCode="HDF" geoName="Hauts-de-France">
+    <geoTypeId href="GeoType#REGION"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-PAC" abbreviation="PAC" geoCode="PAC" geoName="Provence-Alpes-Côte d'Azur">
+    <geoTypeId href="GeoType#REGION"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-OCC" abbreviation="OCC" geoCode="OCC" geoName="Occitanie">
+    <geoTypeId href="GeoType#REGION"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-NOR" abbreviation="NOR" geoCode="NOR" geoName="Normandie">
+    <geoTypeId href="GeoType#REGION"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-CVL" abbreviation="CVL" geoCode="CVL" geoName="Centre-Val de Loire">
+    <geoTypeId href="GeoType#REGION"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-BRE" abbreviation="BRE" geoCode="BRE" geoName="Bretagne">
+    <geoTypeId href="GeoType#REGION"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-NAQ" abbreviation="NAQ" geoCode="NAQ" geoName="Nouvelle-Aquitaine">
+    <geoTypeId href="GeoType#REGION"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-COR" abbreviation="COR" geoCode="COR" geoName="Corse">
+    <geoTypeId href="GeoType#REGION"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-BFC" abbreviation="BFC" geoCode="BFC" geoName="Bourgogne-Franche-Comté">
+    <geoTypeId href="GeoType#REGION"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-PDL" abbreviation="PDL" geoCode="PDL" geoName="Pays de la Loire">
+    <geoTypeId href="GeoType#REGION"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-GES" abbreviation="GES" geoCode="GES" geoName="Grand-Est">
+    <geoTypeId href="GeoType#REGION"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-IDF" abbreviation="IDF" geoCode="IDF" geoName="Ile-de-France">
+    <geoTypeId href="GeoType#REGION"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-GUA" abbreviation="GUA" geoCode="GUA" geoName="Guadeloupe">
+    <geoTypeId href="GeoType#REGION"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-LRE" abbreviation="LRE" geoCode="LRE" geoName="La Réunion">
+    <geoTypeId href="GeoType#REGION"/>
+  </contents>
+  <contents xsi:type="biz-geo:Geo" geoId="FR-MAY" abbreviation="MAY" geoCode="MAY" geoName="Mayotte">
+    <geoTypeId href="GeoType#REGION"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ARA"/>
+    <geoIdTo href="Geo#FR-01"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-HDF"/>
+    <geoIdTo href="Geo#FR-02"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ARA"/>
+    <geoIdTo href="Geo#FR-03"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-PAC"/>
+    <geoIdTo href="Geo#FR-04"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-PAC"/>
+    <geoIdTo href="Geo#FR-05"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-PAC"/>
+    <geoIdTo href="Geo#FR-06"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ARA"/>
+    <geoIdTo href="Geo#FR-07"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-GES"/>
+    <geoIdTo href="Geo#FR-08"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-OCC"/>
+    <geoIdTo href="Geo#FR-09"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-GES"/>
+    <geoIdTo href="Geo#FR-10"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-OCC"/>
+    <geoIdTo href="Geo#FR-11"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-OCC"/>
+    <geoIdTo href="Geo#FR-12"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-PAC"/>
+    <geoIdTo href="Geo#FR-13"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NOR"/>
+    <geoIdTo href="Geo#FR-14"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ARA"/>
+    <geoIdTo href="Geo#FR-15"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NAQ"/>
+    <geoIdTo href="Geo#FR-16"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NAQ"/>
+    <geoIdTo href="Geo#FR-17"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-CVL"/>
+    <geoIdTo href="Geo#FR-18"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NAQ"/>
+    <geoIdTo href="Geo#FR-19"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-COR"/>
+    <geoIdTo href="Geo#FR-20"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-COR"/>
+    <geoIdTo href="Geo#FR-2A"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-COR"/>
+    <geoIdTo href="Geo#FR-2B"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-BFC"/>
+    <geoIdTo href="Geo#FR-21"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-BRE"/>
+    <geoIdTo href="Geo#FR-22"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NAQ"/>
+    <geoIdTo href="Geo#FR-23"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NAQ"/>
+    <geoIdTo href="Geo#FR-24"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-GES"/>
+    <geoIdTo href="Geo#FR-25"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ARA"/>
+    <geoIdTo href="Geo#FR-26"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NOR"/>
+    <geoIdTo href="Geo#FR-27"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-CVL"/>
+    <geoIdTo href="Geo#FR-28"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-BRE"/>
+    <geoIdTo href="Geo#FR-29"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-OCC"/>
+    <geoIdTo href="Geo#FR-30"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-OCC"/>
+    <geoIdTo href="Geo#FR-31"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-OCC"/>
+    <geoIdTo href="Geo#FR-32"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NAQ"/>
+    <geoIdTo href="Geo#FR-33"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-OCC"/>
+    <geoIdTo href="Geo#FR-34"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-BRE"/>
+    <geoIdTo href="Geo#FR-35"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-CVL"/>
+    <geoIdTo href="Geo#FR-36"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-CVL"/>
+    <geoIdTo href="Geo#FR-37"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ARA"/>
+    <geoIdTo href="Geo#FR-38"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-GES"/>
+    <geoIdTo href="Geo#FR-39"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NAQ"/>
+    <geoIdTo href="Geo#FR-40"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-CVL"/>
+    <geoIdTo href="Geo#FR-41"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ARA"/>
+    <geoIdTo href="Geo#FR-42"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ARA"/>
+    <geoIdTo href="Geo#FR-43"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-PDL"/>
+    <geoIdTo href="Geo#FR-44"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-CVL"/>
+    <geoIdTo href="Geo#FR-45"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-OCC"/>
+    <geoIdTo href="Geo#FR-46"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NAQ"/>
+    <geoIdTo href="Geo#FR-47"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-OCC"/>
+    <geoIdTo href="Geo#FR-48"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-PDL"/>
+    <geoIdTo href="Geo#FR-49"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NOR"/>
+    <geoIdTo href="Geo#FR-50"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-GES"/>
+    <geoIdTo href="Geo#FR-51"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-GES"/>
+    <geoIdTo href="Geo#FR-52"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-PDL"/>
+    <geoIdTo href="Geo#FR-53"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-GES"/>
+    <geoIdTo href="Geo#FR-54"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-GES"/>
+    <geoIdTo href="Geo#FR-55"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-BRE"/>
+    <geoIdTo href="Geo#FR-56"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-GES"/>
+    <geoIdTo href="Geo#FR-57"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-BFC"/>
+    <geoIdTo href="Geo#FR-58"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-HDF"/>
+    <geoIdTo href="Geo#FR-59"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-HDF"/>
+    <geoIdTo href="Geo#FR-60"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NOR"/>
+    <geoIdTo href="Geo#FR-61"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-HDF"/>
+    <geoIdTo href="Geo#FR-62"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ARA"/>
+    <geoIdTo href="Geo#FR-63"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NAQ"/>
+    <geoIdTo href="Geo#FR-64"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-OCC"/>
+    <geoIdTo href="Geo#FR-65"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-OCC"/>
+    <geoIdTo href="Geo#FR-66"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-GES"/>
+    <geoIdTo href="Geo#FR-67"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-GES"/>
+    <geoIdTo href="Geo#FR-68"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ARA"/>
+    <geoIdTo href="Geo#FR-69"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-GES"/>
+    <geoIdTo href="Geo#FR-70"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-BFC"/>
+    <geoIdTo href="Geo#FR-71"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-PDL"/>
+    <geoIdTo href="Geo#FR-72"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ARA"/>
+    <geoIdTo href="Geo#FR-73"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ARA"/>
+    <geoIdTo href="Geo#FR-74"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-IDF"/>
+    <geoIdTo href="Geo#FR-75"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NOR"/>
+    <geoIdTo href="Geo#FR-76"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-IDF"/>
+    <geoIdTo href="Geo#FR-77"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-IDF"/>
+    <geoIdTo href="Geo#FR-78"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NAQ"/>
+    <geoIdTo href="Geo#FR-79"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-HDF"/>
+    <geoIdTo href="Geo#FR-80"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-OCC"/>
+    <geoIdTo href="Geo#FR-81"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-OCC"/>
+    <geoIdTo href="Geo#FR-82"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-PAC"/>
+    <geoIdTo href="Geo#FR-83"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-PAC"/>
+    <geoIdTo href="Geo#FR-84"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-PDL"/>
+    <geoIdTo href="Geo#FR-85"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NAQ"/>
+    <geoIdTo href="Geo#FR-86"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NAQ"/>
+    <geoIdTo href="Geo#FR-87"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-GES"/>
+    <geoIdTo href="Geo#FR-88"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-BFC"/>
+    <geoIdTo href="Geo#FR-89"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-GES"/>
+    <geoIdTo href="Geo#FR-90"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-IDF"/>
+    <geoIdTo href="Geo#FR-91"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-IDF"/>
+    <geoIdTo href="Geo#FR-92"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-IDF"/>
+    <geoIdTo href="Geo#FR-93"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-IDF"/>
+    <geoIdTo href="Geo#FR-94"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-IDF"/>
+    <geoIdTo href="Geo#FR-95"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-GUA"/>
+    <geoIdTo href="Geo#FR-GP"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-GF"/>
+    <geoIdTo href="Geo#FR-GF"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-LRE"/>
+    <geoIdTo href="Geo#FR-RE"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-MAY"/>
+    <geoIdTo href="Geo#FR-YT"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-MQ"/>
+    <geoIdTo href="Geo#FR-MQ"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-PM"/>
+    <geoIdTo href="Geo#FR-PM"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-YT"/>
+    <geoIdTo href="Geo#FR-YT"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NC"/>
+    <geoIdTo href="Geo#FR-NC"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-PF"/>
+    <geoIdTo href="Geo#FR-PF"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-BL"/>
+    <geoIdTo href="Geo#FR-BL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-MT"/>
+    <geoIdTo href="Geo#FR-MT"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-TF"/>
+    <geoIdTo href="Geo#FR-TF"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-WF"/>
+    <geoIdTo href="Geo#FR-WF"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-BEB01"/>
+    <geoIdTo href="Geo#FR-01"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-LAO02"/>
+    <geoIdTo href="Geo#FR-02"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-MOU03"/>
+    <geoIdTo href="Geo#FR-03"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-DIG04"/>
+    <geoIdTo href="Geo#FR-04"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-GAP05"/>
+    <geoIdTo href="Geo#FR-05"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NIC06"/>
+    <geoIdTo href="Geo#FR-06"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-PRI07"/>
+    <geoIdTo href="Geo#FR-07"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-CHM08"/>
+    <geoIdTo href="Geo#FR-08"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-FOI09"/>
+    <geoIdTo href="Geo#FR-09"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-TRO10"/>
+    <geoIdTo href="Geo#FR-10"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-CAR11"/>
+    <geoIdTo href="Geo#FR-11"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ROD12"/>
+    <geoIdTo href="Geo#FR-12"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-MAR13"/>
+    <geoIdTo href="Geo#FR-13"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-CAE14"/>
+    <geoIdTo href="Geo#FR-14"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-AUR15"/>
+    <geoIdTo href="Geo#FR-15"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ANG16"/>
+    <geoIdTo href="Geo#FR-16"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-LRO17"/>
+    <geoIdTo href="Geo#FR-17"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-BOU18"/>
+    <geoIdTo href="Geo#FR-18"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-TUL19"/>
+    <geoIdTo href="Geo#FR-19"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-AJA2A"/>
+    <geoIdTo href="Geo#FR-2A"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-BAS2B"/>
+    <geoIdTo href="Geo#FR-2B"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-DIJ21"/>
+    <geoIdTo href="Geo#FR-21"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-SBR22"/>
+    <geoIdTo href="Geo#FR-22"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-GUE23"/>
+    <geoIdTo href="Geo#FR-23"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-PER24"/>
+    <geoIdTo href="Geo#FR-24"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-BES25"/>
+    <geoIdTo href="Geo#FR-25"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-VAL26"/>
+    <geoIdTo href="Geo#FR-26"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-EVR27"/>
+    <geoIdTo href="Geo#FR-27"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-CHA28"/>
+    <geoIdTo href="Geo#FR-28"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-QUI29"/>
+    <geoIdTo href="Geo#FR-29"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NIM30"/>
+    <geoIdTo href="Geo#FR-30"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-TLS31"/>
+    <geoIdTo href="Geo#FR-31"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-AUC32"/>
+    <geoIdTo href="Geo#FR-32"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-BOR33"/>
+    <geoIdTo href="Geo#FR-33"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-MON34"/>
+    <geoIdTo href="Geo#FR-34"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-REN35"/>
+    <geoIdTo href="Geo#FR-35"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-CHT36"/>
+    <geoIdTo href="Geo#FR-36"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-TOU37"/>
+    <geoIdTo href="Geo#FR-37"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-GRE38"/>
+    <geoIdTo href="Geo#FR-38"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-LON39"/>
+    <geoIdTo href="Geo#FR-39"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-MDM40"/>
+    <geoIdTo href="Geo#FR-40"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-BLO41"/>
+    <geoIdTo href="Geo#FR-41"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-SET42"/>
+    <geoIdTo href="Geo#FR-42"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-PEV43"/>
+    <geoIdTo href="Geo#FR-43"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NAN44"/>
+    <geoIdTo href="Geo#FR-44"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ORL45"/>
+    <geoIdTo href="Geo#FR-45"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-CAH46"/>
+    <geoIdTo href="Geo#FR-46"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-AGE47"/>
+    <geoIdTo href="Geo#FR-47"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-MEN48"/>
+    <geoIdTo href="Geo#FR-48"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ANG49"/>
+    <geoIdTo href="Geo#FR-49"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-SLO50"/>
+    <geoIdTo href="Geo#FR-50"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-CEC51"/>
+    <geoIdTo href="Geo#FR-51"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-CHM52"/>
+    <geoIdTo href="Geo#FR-52"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-LVL53"/>
+    <geoIdTo href="Geo#FR-53"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NCY54"/>
+    <geoIdTo href="Geo#FR-54"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-BLD55"/>
+    <geoIdTo href="Geo#FR-55"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-VAN56"/>
+    <geoIdTo href="Geo#FR-56"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-MET57"/>
+    <geoIdTo href="Geo#FR-57"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NEV58"/>
+    <geoIdTo href="Geo#FR-58"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-LIL59"/>
+    <geoIdTo href="Geo#FR-59"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-BVA60"/>
+    <geoIdTo href="Geo#FR-60"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ALE61"/>
+    <geoIdTo href="Geo#FR-61"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ARR62"/>
+    <geoIdTo href="Geo#FR-62"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-CLF63"/>
+    <geoIdTo href="Geo#FR-63"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-PAU64"/>
+    <geoIdTo href="Geo#FR-64"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-TBS65"/>
+    <geoIdTo href="Geo#FR-65"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-PPG66"/>
+    <geoIdTo href="Geo#FR-66"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-SBG67"/>
+    <geoIdTo href="Geo#FR-67"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-CLM68"/>
+    <geoIdTo href="Geo#FR-68"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-LYO69"/>
+    <geoIdTo href="Geo#FR-69"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-VSL70"/>
+    <geoIdTo href="Geo#FR-70"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-MCN71"/>
+    <geoIdTo href="Geo#FR-71"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-LMA72"/>
+    <geoIdTo href="Geo#FR-72"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-CBY73"/>
+    <geoIdTo href="Geo#FR-73"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ACY74"/>
+    <geoIdTo href="Geo#FR-74"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-PAR75"/>
+    <geoIdTo href="Geo#FR-75"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ROU76"/>
+    <geoIdTo href="Geo#FR-76"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-MLN77"/>
+    <geoIdTo href="Geo#FR-77"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-VSS78"/>
+    <geoIdTo href="Geo#FR-78"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NIO79"/>
+    <geoIdTo href="Geo#FR-79"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-AMI80"/>
+    <geoIdTo href="Geo#FR-80"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-ALB81"/>
+    <geoIdTo href="Geo#FR-81"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-MTB82"/>
+    <geoIdTo href="Geo#FR-82"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-TLN83"/>
+    <geoIdTo href="Geo#FR-83"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-AVG84"/>
+    <geoIdTo href="Geo#FR-84"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-RSY85"/>
+    <geoIdTo href="Geo#FR-85"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-POI86"/>
+    <geoIdTo href="Geo#FR-86"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-LMG87"/>
+    <geoIdTo href="Geo#FR-87"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-EPI88"/>
+    <geoIdTo href="Geo#FR-88"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-AXR89"/>
+    <geoIdTo href="Geo#FR-89"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-BLF90"/>
+    <geoIdTo href="Geo#FR-90"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-EVR91"/>
+    <geoIdTo href="Geo#FR-91"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-NTR92"/>
+    <geoIdTo href="Geo#FR-92"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-BBY93"/>
+    <geoIdTo href="Geo#FR-93"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-CTL94"/>
+    <geoIdTo href="Geo#FR-94"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FR-PTO95"/>
+    <geoIdTo href="Geo#FR-95"/>
+    <geoAssocTypeId href="GeoAssocType#COUNTY_SEAT"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FRA"/>
+    <geoIdTo href="Geo#FR-ARA"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FRA"/>
+    <geoIdTo href="Geo#FR-HDF"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FRA"/>
+    <geoIdTo href="Geo#FR-PAC"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FRA"/>
+    <geoIdTo href="Geo#FR-OCC"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FRA"/>
+    <geoIdTo href="Geo#FR-NOR"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FRA"/>
+    <geoIdTo href="Geo#FR-CVL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FRA"/>
+    <geoIdTo href="Geo#FR-BRE"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FRA"/>
+    <geoIdTo href="Geo#FR-NAQ"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FRA"/>
+    <geoIdTo href="Geo#FR-COR"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FRA"/>
+    <geoIdTo href="Geo#FR-BFC"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FRA"/>
+    <geoIdTo href="Geo#FR-PDL"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FRA"/>
+    <geoIdTo href="Geo#FR-GES"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FRA"/>
+    <geoIdTo href="Geo#FR-IDF"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FRA"/>
+    <geoIdTo href="Geo#FR-GUA"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FRA"/>
+    <geoIdTo href="Geo#FR-LRE"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+  <contents xsi:type="biz-geo:GeoAssoc">
+    <geoId href="Geo#FRA"/>
+    <geoIdTo href="Geo#FR-MAY"/>
+    <geoAssocTypeId href="GeoAssocType#REGIONS"/>
+  </contents>
+</mimo-ent:EntityContainer>

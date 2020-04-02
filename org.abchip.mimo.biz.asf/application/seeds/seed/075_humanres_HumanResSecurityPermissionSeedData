@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/security/securitygroup" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/security/securitygroup http://www.abchip.org/mimo/biz#//securitygroup http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="075_humanres_HumanResSecurityPermissionSeedData">
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="HUMANRES_ADMIN" description="All operations in the HumanRes Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="HUMANRES_VIEW" description="View operations in the HumanRes Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="HUMANRES_CREATE" description="Create operations in the HumanRes Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="HUMANRES_UPDATE" description="Update operations in the HumanRes Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="HUMANRES_DELETE" description="Delete operations in the HumanRes Manager."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="HUMANRES_APPROVE" description="Approver can update the IJP approval status with this permission."/>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#SUPER"/>
+    <permissionId href="SecurityPermission#HUMANRES_ADMIN"/>
+  </contents>
+</mimo-ent:EntityContainer>
