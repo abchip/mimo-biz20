@@ -15,6 +15,7 @@ import org.abchip.mimo.biz.accounting.invoice.InvoiceItemType;
 import org.abchip.mimo.biz.accounting.invoice.InvoiceStatus;
 import org.abchip.mimo.biz.accounting.invoice.InvoiceType;
 import org.abchip.mimo.biz.base.service.ContactMechServices;
+import org.abchip.mimo.biz.base.service.SystemDefault;
 import org.abchip.mimo.biz.common.status.StatusItem;
 import org.abchip.mimo.biz.party.contact.ContactMechPurposeType;
 import org.abchip.mimo.biz.party.party.Party;
@@ -70,9 +71,9 @@ public class CreateInvoice implements Callable<Long> {
 		invoice.setInvoiceTypeId(resourceManager.getFrame(context, InvoiceType.class).createProxy("SALES_INVOICE"));
 		invoice.setInvoiceDate(new Date());
 		invoice.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("INVOICE_IN_PROCESS"));
-		invoice.setCurrencyUomId(StressTestUtils.getUom(context, resourceManager));
+		invoice.setCurrencyUomId(SystemDefault.getUom(context));
 		invoice.setPartyId(party);
-		invoice.setPartyIdFrom(StressTestUtils.getCompany(context, resourceManager));
+		invoice.setPartyIdFrom(SystemDefault.getCompany(context));
 		invoice.setDescription("Invoice test for party " + party.getID());
 		invoiceWriter.create(invoice, true);
 

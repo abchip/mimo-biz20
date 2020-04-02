@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.concurrent.Callable;
 
 import org.abchip.mimo.biz.accounting.tax.PartyTaxAuthInfo;
+import org.abchip.mimo.biz.base.service.SystemDefault;
 import org.abchip.mimo.biz.common.geo.Geo;
 import org.abchip.mimo.biz.common.status.StatusItem;
 import org.abchip.mimo.biz.common.uom.Uom;
@@ -49,7 +50,7 @@ public class CreateParty implements Callable<Long> {
 		PartyGroup partyGroup = partyGroupWriter.make(true);
 		partyGroup.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("PARTY_ENABLED"));
 		partyGroup.setPartyTypeId(resourceManager.getFrame(context, PartyType.class).createProxy("PARTY_GROUP"));
-		partyGroup.setPreferredCurrencyUomId(resourceManager.getFrame(context, Uom.class).createProxy("EUR"));
+		partyGroup.setPreferredCurrencyUomId(SystemDefault.getUom(context));
 		// nome
 		partyGroup.setGroupName("Description Party " + partyGroup.getID());
 		partyGroupWriter.create(partyGroup, true);

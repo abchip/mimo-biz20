@@ -9,6 +9,7 @@ import java.util.Map.Entry;
 import java.util.concurrent.Callable;
 
 import org.abchip.mimo.biz.accounting.invoice.InvoiceItemType;
+import org.abchip.mimo.biz.base.service.SystemDefault;
 import org.abchip.mimo.biz.party.agreement.Agreement;
 import org.abchip.mimo.biz.party.agreement.AgreementItem;
 import org.abchip.mimo.biz.party.agreement.AgreementItemType;
@@ -73,7 +74,7 @@ public class CreateAgreement implements Callable<Long> {
 		ResourceWriter<Agreement> agreementWriter = resourceManager.getResourceWriter(context, Agreement.class);
 
 		Agreement agreement = agreementWriter.make(true);
-		agreement.setPartyIdFrom(StressTestUtils.getCompany(context, resourceManager));
+		agreement.setPartyIdFrom(SystemDefault.getCompany(context));
 		agreement.setPartyIdTo(party);
 
 		agreement.setRoleTypeIdFrom(roleTypeFrom);
@@ -106,7 +107,7 @@ public class CreateAgreement implements Callable<Long> {
 		String agreementItemSeqId = StressTestUtils.formatPaddedNumber(1, 5);
 		agreementItem.setAgreementItemSeqId(agreementItemSeqId);
 		agreementItem.setAgreementItemTypeId(agreementType);
-		agreementItem.setCurrencyUomId("EUR");
+		agreementItem.setCurrencyUomId(SystemDefault.getUom(context).getID());
 		agreementItem.setAgreementText(text);
 		agreementItemWriter.create(agreementItem, true);
 

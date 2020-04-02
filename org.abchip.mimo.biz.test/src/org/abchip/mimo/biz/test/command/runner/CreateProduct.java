@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.concurrent.Callable;
 
-import org.abchip.mimo.biz.common.uom.Uom;
+import org.abchip.mimo.biz.base.service.SystemDefault;
 import org.abchip.mimo.biz.product.price.ProductPrice;
 import org.abchip.mimo.biz.product.price.ProductPricePurpose;
 import org.abchip.mimo.biz.product.price.ProductPriceType;
@@ -51,7 +51,7 @@ public class CreateProduct implements Callable<Long> {
 		productPrice.setFromDate(new Date());
 		productPrice.setProductPriceTypeId(resourceManager.getFrame(context, ProductPriceType.class).createProxy("DEFAULT_PRICE"));
 		productPrice.setProductPricePurposeId(resourceManager.getFrame(context, ProductPricePurpose.class).createProxy("PURCHASE"));
-		productPrice.setCurrencyUomId(resourceManager.getFrame(context, Uom.class).createProxy("EUR"));
+		productPrice.setCurrencyUomId(SystemDefault.getUom(context));
 		productPrice.setProductStoreGroupId(resourceManager.getFrame(context, ProductStoreGroup.class).createProxy("_NA_"));
 		productPriceWriter.create(productPrice, true);
 	}

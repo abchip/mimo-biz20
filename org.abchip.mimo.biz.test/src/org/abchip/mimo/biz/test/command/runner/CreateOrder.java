@@ -10,6 +10,7 @@ import java.util.concurrent.Callable;
 
 import org.abchip.mimo.biz.accounting.payment.PaymentMethodType;
 import org.abchip.mimo.biz.base.service.ContactMechServices;
+import org.abchip.mimo.biz.base.service.SystemDefault;
 import org.abchip.mimo.biz.common.enum_.Enumeration;
 import org.abchip.mimo.biz.common.status.StatusItem;
 import org.abchip.mimo.biz.order.order.OrderContactMech;
@@ -94,7 +95,7 @@ public class CreateOrder implements Callable<Long> {
 		orderHeader.setOrderDate(new Date());
 		orderHeader.setEntryDate(new Date());
 		orderHeader.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("ORDER_CREATED"));
-		orderHeader.setCurrencyUom(StressTestUtils.getUom(context, resourceManager));
+		orderHeader.setCurrencyUom(SystemDefault.getUom(context));
 		orderHeader.setInvoicePerShipment(Boolean.TRUE);
 		orderHeader.setCreatedBy(userLogin);
 		// orderHeader.setRemainingSubTotal(new BigDecimal(10));
@@ -141,7 +142,7 @@ public class CreateOrder implements Callable<Long> {
 		ResourceWriter<OrderRole> orderRoleWriter = resourceManager.getResourceWriter(context, OrderRole.class);
 		OrderRole orderRole = orderRoleWriter.make();
 		orderRole.setOrderId(orderHeader);
-		orderRole.setPartyId(StressTestUtils.getCompany(context, resourceManager));
+		orderRole.setPartyId(SystemDefault.getCompany(context));
 		orderRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("BILL_FROM_VENDOR"));
 		orderRoleWriter.create(orderRole, true);
 

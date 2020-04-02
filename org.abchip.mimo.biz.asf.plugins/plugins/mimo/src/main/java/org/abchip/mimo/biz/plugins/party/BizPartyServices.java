@@ -38,7 +38,7 @@ import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 
-public class PartyServices {
+public class BizPartyServices {
 
 	static List<String> stringEscape = Arrays.asList("(CONTRATTO DI RETE CON SOGGETTIVITA' GIURIDICA)",
 			"- CONTRATTO DI RETE DI CUI AL D.L. 10/02/2009 N. 5 CONVERTITO DALLA LEGGE 33/2009 E SUCC. MODD.",

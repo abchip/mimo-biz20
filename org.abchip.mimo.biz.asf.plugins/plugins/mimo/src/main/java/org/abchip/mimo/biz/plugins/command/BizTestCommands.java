@@ -29,10 +29,10 @@ import org.abchip.mimo.biz.accounting.payment.PaymentMethodType;
 import org.abchip.mimo.biz.accounting.tax.TaxAuthorityRateProduct;
 import org.abchip.mimo.biz.base.service.ContactMechServices;
 import org.abchip.mimo.biz.base.service.PaymentServices;
+import org.abchip.mimo.biz.base.service.SystemDefault;
 import org.abchip.mimo.biz.common.enum_.Enumeration;
 import org.abchip.mimo.biz.common.geo.Geo;
 import org.abchip.mimo.biz.common.status.StatusItem;
-import org.abchip.mimo.biz.common.uom.Uom;
 import org.abchip.mimo.biz.order.order.OrderContactMech;
 import org.abchip.mimo.biz.order.order.OrderHeader;
 import org.abchip.mimo.biz.order.order.OrderItem;
@@ -94,8 +94,6 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 	private static final String holdOrderStatusId = "ORDER_HOLD";
 	private static final String cancelOrderStatusId = "ORDER_CANCELLED";
 	private static final String PRODUCT_STORE_ID = "8000";
-	private static final String CURRRENCY_UOM_ID = "EUR";
-	private static final String COMPANY_ID = "Company";
 	private static final String SHIPMENT_METHOD_TYPE_ID = "NO_SHIPPING";
 	private static final String CARRIER_ID = "_NA_";
 	private static final String PRODUCT_CATALOG_ID = "ABChipCatalog";
@@ -382,7 +380,7 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 		orderHeader.setOrderDate(new Date());
 		orderHeader.setEntryDate(new Date());
 		orderHeader.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("ORDER_CREATED"));
-		orderHeader.setCurrencyUom(resourceManager.getFrame(context, Uom.class).createProxy(CURRRENCY_UOM_ID));
+		orderHeader.setCurrencyUom(SystemDefault.getUom(context));
 		orderHeader.setInvoicePerShipment(Boolean.TRUE);
 		orderHeader.setCreatedBy(userLogin);
 		// orderHeader.setRemainingSubTotal(new BigDecimal(10));
@@ -432,7 +430,7 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 		ResourceWriter<OrderRole> orderRoleWriter = resourceManager.getResourceWriter(context, OrderRole.class);
 		OrderRole orderRole = orderRoleWriter.make();
 		orderRole.setOrderId(orderHeader);
-		orderRole.setPartyId(resourceManager.getFrame(context, Party.class).createProxy(COMPANY_ID));
+		orderRole.setPartyId(SystemDefault.getCompany(context));
 		orderRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("BILL_FROM_VENDOR"));
 		orderRoleWriter.create(orderRole, true);
 
@@ -577,7 +575,7 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 		Map<String, Object> priceContext = new HashMap<>();
 		GenericValue product = EntityUtils.toBizEntity(delegator, productEntity);
 		priceContext.put("product", product);
-		priceContext.put("currencyUomId", CURRRENCY_UOM_ID);
+		priceContext.put("currencyUomId", SystemDefault.getUom(context).getID());
 		Map<String, Object> priceResult = new HashMap<>();
 		try {
 			priceResult = dispatcher.runSync("calculateProductPrice", priceContext);
@@ -625,7 +623,7 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 
 	private Invoice createInvoice(Context context, String partyId, String description) {
 		Party party = resourceManager.getFrame(context, Party.class).createProxy(partyId);
-		Party partyFrom = resourceManager.getFrame(context, Party.class).createProxy(COMPANY_ID);
+		Party partyFrom = SystemDefault.getCompany(context);
 
 		// Invoice Header
 		ResourceWriter<Invoice> invoiceWriter = resourceManager.getResourceWriter(context, Invoice.class);
@@ -633,7 +631,7 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 		invoice.setInvoiceTypeId(resourceManager.getFrame(context, InvoiceType.class).createProxy("SALES_INVOICE"));
 		invoice.setInvoiceDate(new Date());
 		invoice.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("INVOICE_IN_PROCESS"));
-		invoice.setCurrencyUomId(resourceManager.getFrame(context, Uom.class).createProxy(CURRRENCY_UOM_ID));
+		invoice.setCurrencyUomId(SystemDefault.getUom(context));
 		invoice.setPartyId(party);
 		invoice.setPartyIdFrom(partyFrom);
 		if (!description.isEmpty())
@@ -743,7 +741,7 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 		Map<String, Object> priceContext = new HashMap<>();
 		GenericValue product = EntityUtils.toBizEntity(delegator, productEntity);
 		priceContext.put("product", product);
-		priceContext.put("currencyUomId", CURRRENCY_UOM_ID);
+		priceContext.put("currencyUomId", SystemDefault.getUom(context).getID());
 		Map<String, Object> priceResult = new HashMap<>();
 
 		BigDecimal price = new BigDecimal(0);
@@ -860,7 +858,7 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 
 	private void createAgreement(Context context, String partyId) {
 
-		Party partyFrom = resourceManager.getFrame(context, Party.class).createProxy(COMPANY_ID);
+		Party partyFrom = SystemDefault.getCompany(context);
 		Party partyTo = resourceManager.getFrame(context, Party.class).createProxy(partyId);
 
 		RoleType roleTypeFrom = resourceManager.getFrame(context, RoleType.class).createProxy("INTERNAL_ORGANIZATIO");
@@ -972,7 +970,7 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 		Map<String, Object> priceContext = new HashMap<>();
 		GenericValue product = EntityUtils.toBizEntity(delegator, productEntity);
 		priceContext.put("product", product);
-		priceContext.put("currencyUomId", CURRRENCY_UOM_ID);
+		priceContext.put("currencyUomId", SystemDefault.getUom(context).getID());
 		Map<String, Object> priceResult = new HashMap<>();
 		try {
 			priceResult = dispatcher.runSync("calculateProductPrice", priceContext);
@@ -1205,7 +1203,7 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 				paymentContext.put("paymentTypeId", "CUSTOMER_PAYMENT");
 				paymentContext.put("paymentMethodTypeId", "CREDIT_CARD");
 				paymentContext.put("paymentMethodId", paymentMethod.getID());
-				paymentContext.put("currencyUomId", CURRRENCY_UOM_ID);
+				paymentContext.put("currencyUomId", SystemDefault.getUom(context).getID());
 				paymentContext.put("paymentRefNum", "Invoice number " + invoiceEntity.getID());
 				paymentContext.put("userLogin", userLogin);
 				paymentResult = dispatcher.runSync("createPayment", paymentContext);

@@ -123,16 +123,6 @@ public class StressTestUtils {
 		return digitals;
 	}
 
-	public static Party getCompany(Context context, ResourceManager resourceManager) {
-		ResourceReader<Party> partyReader = resourceManager.getResourceReader(context, Party.class);
-		return partyReader.lookup("Company");
-	}
-
-	public static Uom getUom(Context context, ResourceManager resourceManager) {
-		ResourceReader<Uom> uomReader = resourceManager.getResourceReader(context, Uom.class);
-		return uomReader.lookup("EUR");
-	}
-
 	public static String formatPaddedNumber(long number, int numericPadding) {
 		StringBuilder outStrBfr = new StringBuilder(Long.toString(number));
 		while (numericPadding > outStrBfr.length()) {
