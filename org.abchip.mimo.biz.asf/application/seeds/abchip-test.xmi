@@ -10,11 +10,12 @@
     xmlns:biz-party="http://www.abchip.org/mimo/biz/party/party"
     xmlns:biz-price="http://www.abchip.org/mimo/biz/product/price"
     xmlns:biz-product="http://www.abchip.org/mimo/biz/product/product"
+    xmlns:biz-property="http://www.abchip.org/mimo/biz/common/property"
     xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/security/securitygroup"
     xmlns:biz-store="http://www.abchip.org/mimo/biz/product/store"
     xmlns:biz-tax="http://www.abchip.org/mimo/biz/accounting/tax"
     xmlns:mimo-ent="http://www.abchip.org/mimo/entity"
-    xsi:schemaLocation="http://www.abchip.org/mimo/biz/product/catalog ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/catalog http://www.abchip.org/mimo/biz/party/contact ../../../org.abchip.mimo.biz.model/model/biz.ecore#//party/contact http://www.abchip.org/mimo/biz/product/facility ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/facility http://www.abchip.org/mimo/biz/security/login ../../../org.abchip.mimo.biz.model/model/biz.ecore#//security/login http://www.abchip.org/mimo/biz/party/party ../../../org.abchip.mimo.biz.model/model/biz.ecore#//party/party http://www.abchip.org/mimo/biz/product/price ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/price http://www.abchip.org/mimo/biz/product/product ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/product http://www.abchip.org/mimo/biz/security/securitygroup ../../../org.abchip.mimo.biz.model/model/biz.ecore#//security/securitygroup http://www.abchip.org/mimo/biz/product/store ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/store http://www.abchip.org/mimo/biz/accounting/tax ../../../org.abchip.mimo.biz.model/model/biz.ecore#//accounting/tax http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
+    xsi:schemaLocation="http://www.abchip.org/mimo/biz/product/catalog ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/catalog http://www.abchip.org/mimo/biz/party/contact ../../../org.abchip.mimo.biz.model/model/biz.ecore#//party/contact http://www.abchip.org/mimo/biz/product/facility ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/facility http://www.abchip.org/mimo/biz/security/login ../../../org.abchip.mimo.biz.model/model/biz.ecore#//security/login http://www.abchip.org/mimo/biz/party/party ../../../org.abchip.mimo.biz.model/model/biz.ecore#//party/party http://www.abchip.org/mimo/biz/product/price ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/price http://www.abchip.org/mimo/biz/product/product ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/product http://www.abchip.org/mimo/biz/common/property ../../../org.abchip.mimo.biz.model/model/biz.ecore#//common/property http://www.abchip.org/mimo/biz/security/securitygroup ../../../org.abchip.mimo.biz.model/model/biz.ecore#//security/securitygroup http://www.abchip.org/mimo/biz/product/store ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/store http://www.abchip.org/mimo/biz/accounting/tax ../../../org.abchip.mimo.biz.model/model/biz.ecore#//accounting/tax http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
     name="abchip-net">
   <contents
       xsi:type="biz-party:PartyGroup"
@@ -206,4 +207,16 @@
     <productStoreGroupId
         href="seed-initial-product-store-group.xmi#_NA_"/>
   </contents>
+  <contents
+      xsi:type="biz-property:SystemProperty"
+      systemPropertyId="currency.uom.id.default"
+      systemResourceId="general"
+      description="The default currency to use for prices, etc"
+      systemPropertyValue="EUR"/>
+  <contents
+      xsi:type="biz-property:SystemProperty"
+      systemPropertyId="country.geo.id.default"
+      systemResourceId="general"
+      description="The default country for drop downs"
+      systemPropertyValue="ITA"/>
 </mimo-ent:EntityContainer>
