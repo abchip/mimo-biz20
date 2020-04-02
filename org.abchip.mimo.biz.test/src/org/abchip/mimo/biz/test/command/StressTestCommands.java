@@ -20,6 +20,7 @@ import javax.inject.Inject;
 
 import org.abchip.mimo.application.Application;
 import org.abchip.mimo.biz.test.command.runner.CreateAgreement;
+import org.abchip.mimo.biz.test.command.runner.CreateInpsAgreement;
 import org.abchip.mimo.biz.test.command.runner.CreateInvoice;
 import org.abchip.mimo.biz.test.command.runner.CreateOrder;
 import org.abchip.mimo.biz.test.command.runner.CreateParty;
@@ -57,6 +58,63 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 
 	public void _stressTestAgreement(CommandInterpreter interpreter) throws Exception {
 		stressTestAgreement();
+	}
+
+	public void _stressTestInps(CommandInterpreter interpreter) throws Exception {
+		String reqNumber = interpreter.nextArgument();
+		String poolNumber = interpreter.nextArgument();
+        long l1 = 100;
+        int l2 = 100;
+		if(reqNumber != null) {
+			try {
+		        l1 = Long.parseLong(reqNumber);
+		    } catch (NumberFormatException e) {
+		    }
+		}
+		if(poolNumber != null) {
+			try {
+		        l2 = Integer.parseInt(poolNumber);
+		    } catch (NumberFormatException e) {
+		    }
+		}
+		System.out.println("Execution Stress Inps test with number request: " + l1 + " and " + " threadPool: " + l2);
+		stressTestInps(l1, l2);
+	}
+
+	private void stressTestInps(long l1, int l2) throws Exception {
+		try (ContextProvider context = login()) {
+			if (context == null) {
+				System.err.println("Tenant 'test' not found");
+				return;
+			}
+			ExecutorService executor = Executors.newFixedThreadPool(l2);
+			List<Future<Long>> resultList = new ArrayList<>();
+
+			Future<Long> result = null;
+
+			for(long i = 0; i<l1; i++) {
+				CreateInpsAgreement inpsCallable = new CreateInpsAgreement(context.get());
+				result = executor.submit(inpsCallable);
+				resultList.add(result);
+			}
+
+			executor.awaitTermination(5, TimeUnit.SECONDS);
+			long time = 0;
+
+			for (int i = 0; i < resultList.size(); i++) {
+				result = resultList.get(i);
+				try {
+					time += result.get();
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				} catch (ExecutionException e) {
+					e.printStackTrace();
+				}
+			}
+			System.out.println("Total time in seconds " + time/1000);
+			executor.shutdown();
+		}
+
 	}
 
 	private void stressTestBase() throws Exception {
