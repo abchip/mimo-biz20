@@ -40,6 +40,7 @@ public class CreateProduct implements Callable<Long> {
 		product.setProductName(product.getID() + " description");
 		product.setDescription("Description product " + product.getID());
 		product.setProductTypeId(resourceManager.getFrame(context, ProductType.class).createProxy("DIGITAL_GOOD"));
+		product.setTaxable(true);
 		productWriter.create(product, true);
 
 		// ProductPrice
