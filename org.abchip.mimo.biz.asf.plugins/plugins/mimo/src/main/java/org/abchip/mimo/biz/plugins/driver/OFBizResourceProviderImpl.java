@@ -29,7 +29,7 @@ public class OFBizResourceProviderImpl extends ResourceProviderImpl {
 
 		this.resourceConfig = ResourceFactory.eINSTANCE.createResourceConfig();
 		this.resourceConfig.setLockSupport(false);
-		this.resourceConfig.setOrderSupport(true);
+		this.resourceConfig.setOrderSupport(false);
 	}
 
 	@Override

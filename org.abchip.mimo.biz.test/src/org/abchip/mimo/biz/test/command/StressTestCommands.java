@@ -17,7 +17,6 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
-import java.util.concurrent.TimeUnit;
 
 import javax.inject.Inject;
 
@@ -69,19 +68,19 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 	public void _stressTestInps(CommandInterpreter interpreter) throws Exception {
 		String reqNumber = nextArgument(interpreter);
 		String poolNumber = nextArgument(interpreter);
-        long l1 = 100;
-        int l2 = 100;
-		if(reqNumber != null) {
+		long l1 = 100;
+		int l2 = 100;
+		if (reqNumber != null) {
 			try {
-		        l1 = Long.parseLong(reqNumber);
-		    } catch (NumberFormatException e) {
-		    }
+				l1 = Long.parseLong(reqNumber);
+			} catch (NumberFormatException e) {
+			}
 		}
-		if(poolNumber != null) {
+		if (poolNumber != null) {
 			try {
-		        l2 = Integer.parseInt(poolNumber);
-		    } catch (NumberFormatException e) {
-		    }
+				l2 = Integer.parseInt(poolNumber);
+			} catch (NumberFormatException e) {
+			}
 		}
 		System.out.println("Execution Stress Inps test with number request: " + l1 + " and " + " threadPool: " + l2);
 		stressTestInps(l1, l2);
@@ -93,14 +92,13 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 				System.err.println("Tenant 'test' not found");
 				return;
 			}
-			
-			
-//			ContactMech contactMech = ContactMechServices.getLatestEmail(context.get(), "10000");
-//			if(1==1) {
-//				return;
-//			}
-			
-			
+
+			// ContactMech contactMech = ContactMechServices.getLatestEmail(context.get(),
+			// "10000");
+			// if(1==1) {
+			// return;
+			// }
+
 			long time1 = System.currentTimeMillis();
 			ExecutorService executor = Executors.newFixedThreadPool(1);
 			List<Future<Long>> resultList = new ArrayList<>();
@@ -115,10 +113,10 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 			result = executor.submit(partyCallable);
 			resultList.add(result);
 
-	        executeThread(executor, resultList);
+			executeThread(executor, resultList);
 
-	        long time2 = System.currentTimeMillis();
-			System.out.println("Total time execution StressTestBase: " + (time2-time1));
+			long time2 = System.currentTimeMillis();
+			System.out.println("Total time execution StressTestBase: " + (time2 - time1));
 		}
 	}
 
@@ -130,13 +128,13 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 			}
 			// Set of party
 			List<Party> parties = StressTestUtils.getEnabledCustomers(context.get());
-			if(parties.size() == 0) {
+			if (parties.size() == 0) {
 				System.err.println("Customer Party not found. Operation canceled.");
 				return;
 			}
 			// Set of product
 			Map<Product, ProductPrice> productMap = StressTestUtils.getDigitalProducts(context.get());
-			if(productMap.isEmpty()) {
+			if (productMap.isEmpty()) {
 				System.err.println("Digital product and price not found. Operation canceled.");
 				return;
 			}
@@ -147,16 +145,16 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 
 			Future<Long> result = null;
 			Iterator<Party> partyIt = parties.iterator();
-			while(partyIt.hasNext()) {
+			while (partyIt.hasNext()) {
 				CreateSalesOrder orderCallable = new CreateSalesOrder(context.get(), partyIt.next(), productMap);
 				result = executor.submit(orderCallable);
 				resultList.add(result);
 			}
 
-	        executeThread(executor, resultList);
+			executeThread(executor, resultList);
 
-	        long time2 = System.currentTimeMillis();
-			System.out.println("Total time execution StressTestOrder: " + (time2-time1));
+			long time2 = System.currentTimeMillis();
+			System.out.println("Total time execution StressTestOrder: " + (time2 - time1));
 		}
 	}
 
@@ -168,13 +166,13 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 			}
 			// Set of party
 			List<Party> parties = StressTestUtils.getEnabledCustomers(context.get());
-			if(parties.size() == 0) {
+			if (parties.size() == 0) {
 				System.err.println("Customer Party not found. Operation canceled.");
 				return;
 			}
 			// Set of product
 			Map<Product, ProductPrice> productMap = StressTestUtils.getDigitalProducts(context.get());
-			if(productMap.isEmpty()) {
+			if (productMap.isEmpty()) {
 				System.err.println("Digital product and price not found. Operation canceled.");
 				return;
 			}
@@ -185,16 +183,16 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 
 			Future<Long> result = null;
 			Iterator<Party> partyIt = parties.iterator();
-			while(partyIt.hasNext()) {
+			while (partyIt.hasNext()) {
 				CreateSalesInvoice callable = new CreateSalesInvoice(context.get(), partyIt.next(), productMap);
 				result = executor.submit(callable);
 				resultList.add(result);
 			}
 
-	        executeThread(executor, resultList);
+			executeThread(executor, resultList);
 
-	        long time2 = System.currentTimeMillis();
-			System.out.println("Total time execution StressTestInvoice: " + (time2-time1));
+			long time2 = System.currentTimeMillis();
+			System.out.println("Total time execution StressTestInvoice: " + (time2 - time1));
 		}
 	}
 
@@ -206,13 +204,13 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 			}
 			// Set of party
 			List<Party> parties = StressTestUtils.getEnabledCustomers(context.get());
-			if(parties.size() == 0) {
+			if (parties.size() == 0) {
 				System.err.println("Customer Party not found. Operation canceled.");
 				return;
 			}
 			// Set of product
 			Map<Product, ProductPrice> productMap = StressTestUtils.getDigitalProducts(context.get());
-			if(productMap.isEmpty()) {
+			if (productMap.isEmpty()) {
 				System.err.println("Digital product and price not found. Operation canceled.");
 				return;
 			}
@@ -223,7 +221,7 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 
 			Future<Long> result = null;
 			Iterator<Party> partyIt = parties.iterator();
-			while(partyIt.hasNext()) {
+			while (partyIt.hasNext()) {
 				CreateAgreement agreementCallable = new CreateAgreement(context.get(), partyIt.next(), productMap);
 				result = executor.submit(agreementCallable);
 				resultList.add(result);
@@ -231,8 +229,8 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 
 			executeThread(executor, resultList);
 
-	        long time2 = System.currentTimeMillis();
-			System.out.println("Total time execution StressTestAgreement: " + (time2-time1));
+			long time2 = System.currentTimeMillis();
+			System.out.println("Total time execution StressTestAgreement: " + (time2 - time1));
 		}
 	}
 
@@ -246,31 +244,31 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 			ExecutorService executor = Executors.newFixedThreadPool(l2);
 			List<Future<Long>> list = new ArrayList<Future<Long>>();
 			Callable<Long> callable = new CreateInpsAgreement(context.get());
-	        for(int i=0; i< l1; i++){
-	            Future<Long> future = executor.submit(callable);
-	            list.add(future);
-	        }
+			for (int i = 0; i < l1; i++) {
+				Future<Long> future = executor.submit(callable);
+				list.add(future);
+			}
 
-	        executeThread(executor, list);
+			executeThread(executor, list);
 
-	        long time2 = System.currentTimeMillis();
-			System.out.println("Total time execution StressTestInps: " + (time2-time1));
+			long time2 = System.currentTimeMillis();
+			System.out.println("Total time execution StressTestInps: " + (time2 - time1));
 		}
 	}
 
 	private void executeThread(ExecutorService executor, List<Future<Long>> list) throws InterruptedException {
-		executor.awaitTermination(1, TimeUnit.SECONDS);
-        for(Future<Long> fut : list){
-            try {
-            	// se non faccio cosi non vengono eseguiti tutti i job
-            	fut.get();
-            } catch (InterruptedException | ExecutionException e) {
-                e.printStackTrace();
-            }
-        }
+		// executor.awaitTermination(1, TimeUnit.SECONDS);
+		for (Future<Long> fut : list) {
+			try {
+				// se non faccio cosi non vengono eseguiti tutti i job
+				fut.get();
+			} catch (InterruptedException | ExecutionException e) {
+				e.printStackTrace();
+			}
+		}
 		executor.shutdown();
 	}
-	
+
 	private ContextProvider login() {
 		AuthenticationUserPassword authentication = ContextFactory.eINSTANCE.createAuthenticationUserPassword();
 		authentication.setUser("abchip-test");
