@@ -12,10 +12,11 @@
     xmlns:biz-product="http://www.abchip.org/mimo/biz/product/product"
     xmlns:biz-property="http://www.abchip.org/mimo/biz/common/property"
     xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/security/securitygroup"
+    xmlns:biz-shipment="http://www.abchip.org/mimo/biz/shipment/shipment"
     xmlns:biz-store="http://www.abchip.org/mimo/biz/product/store"
     xmlns:biz-tax="http://www.abchip.org/mimo/biz/accounting/tax"
     xmlns:mimo-ent="http://www.abchip.org/mimo/entity"
-    xsi:schemaLocation="http://www.abchip.org/mimo/biz/product/catalog ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/catalog http://www.abchip.org/mimo/biz/party/contact ../../../org.abchip.mimo.biz.model/model/biz.ecore#//party/contact http://www.abchip.org/mimo/biz/product/facility ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/facility http://www.abchip.org/mimo/biz/security/login ../../../org.abchip.mimo.biz.model/model/biz.ecore#//security/login http://www.abchip.org/mimo/biz/party/party ../../../org.abchip.mimo.biz.model/model/biz.ecore#//party/party http://www.abchip.org/mimo/biz/product/price ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/price http://www.abchip.org/mimo/biz/product/product ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/product http://www.abchip.org/mimo/biz/common/property ../../../org.abchip.mimo.biz.model/model/biz.ecore#//common/property http://www.abchip.org/mimo/biz/security/securitygroup ../../../org.abchip.mimo.biz.model/model/biz.ecore#//security/securitygroup http://www.abchip.org/mimo/biz/product/store ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/store http://www.abchip.org/mimo/biz/accounting/tax ../../../org.abchip.mimo.biz.model/model/biz.ecore#//accounting/tax http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
+    xsi:schemaLocation="http://www.abchip.org/mimo/biz/product/catalog ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/catalog http://www.abchip.org/mimo/biz/party/contact ../../../org.abchip.mimo.biz.model/model/biz.ecore#//party/contact http://www.abchip.org/mimo/biz/product/facility ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/facility http://www.abchip.org/mimo/biz/security/login ../../../org.abchip.mimo.biz.model/model/biz.ecore#//security/login http://www.abchip.org/mimo/biz/party/party ../../../org.abchip.mimo.biz.model/model/biz.ecore#//party/party http://www.abchip.org/mimo/biz/product/price ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/price http://www.abchip.org/mimo/biz/product/product ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/product http://www.abchip.org/mimo/biz/common/property ../../../org.abchip.mimo.biz.model/model/biz.ecore#//common/property http://www.abchip.org/mimo/biz/security/securitygroup ../../../org.abchip.mimo.biz.model/model/biz.ecore#//security/securitygroup http://www.abchip.org/mimo/biz/shipment/shipment ../../../org.abchip.mimo.biz.model/model/biz.ecore#//shipment/shipment http://www.abchip.org/mimo/biz/product/store ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/store http://www.abchip.org/mimo/biz/accounting/tax ../../../org.abchip.mimo.biz.model/model/biz.ecore#//accounting/tax http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
     name="abchip-net">
   <contents
       xsi:type="biz-party:PartyGroup"
@@ -153,6 +154,8 @@
       showPricesWithVatTax="true"
       storeName="ABChip Test Store"
       title="Open For Commerce"
+      vatTaxAuthGeoId="ITA"
+      vatTaxAuthPartyId="ITA_ADE"
       visualThemeId="EC_DEFAULT"/>
   <contents
       xsi:type="biz-catalog:ProdCatalog"
@@ -181,6 +184,81 @@
       userLoginId="guest"
       currentPassword="{SHA}47ca69ebb4bdc9ae0adec130880165d2cc05db1a"
       enabled="true"/>
+  <contents
+      xsi:type="biz-party:Person"
+      partyId="_NA_">
+    <partyTypeId
+        href="seed-initial.xmi#PERSON"/>
+    <statusId
+        href="seed-initial.xmi#PARTY_ENABLED"/>
+  </contents>
+  <contents
+      xsi:type="biz-party:PartyRole"
+      partyId="_NA_">
+    <roleTypeId
+        href="seed-initial.xmi#CARRIER"/>
+  </contents>
+  <contents
+      xsi:type="biz-party:PartyRole"
+      partyId="_NA_">
+    <roleTypeId
+        href="seed-initial.xmi#_NA_"/>
+  </contents>
+  <contents
+      xsi:type="biz-store:ProductStorePaymentSetting"
+      applyToAllProducts="true"
+      paymentService="">
+    <productStoreId
+        href="abchip-net.xmi#8000"/>
+    <paymentMethodTypeId
+        href="seed-initial.xmi#CREDIT_CARD"/>
+    <paymentServiceTypeEnumId
+        href="seed-initial.xmi#PRDS_PAY_EXTERNAL"/>
+  </contents>
+  <contents
+      xsi:type="biz-store:ProductStorePaymentSetting"
+      applyToAllProducts="true"
+      paymentService="">
+    <productStoreId
+        href="abchip-net.xmi#8000"/>
+    <paymentMethodTypeId
+        href="seed-initial.xmi#EXT_COD"/>
+    <paymentServiceTypeEnumId
+        href="seed-initial.xmi#PRDS_PAY_EXTERNAL"/>
+  </contents>
+  <contents
+      xsi:type="biz-store:ProductStorePaymentSetting"
+      applyToAllProducts="true"
+      paymentService="">
+    <productStoreId
+        href="abchip-net.xmi#8000"/>
+    <paymentMethodTypeId
+        href="seed-initial.xmi#EFT_ACCOUNT"/>
+    <paymentServiceTypeEnumId
+        href="seed-initial.xmi#PRDS_PAY_EXTERNAL"/>
+  </contents>
+  <contents
+      xsi:type="biz-shipment:ShipmentMethodType"
+      shipmentMethodTypeId="NO_SHIPPING"
+      description="No shipping"/>
+  <contents
+      xsi:type="biz-shipment:CarrierShipmentMethod"
+      shipmentMethodTypeId="NO_SHIPPING"
+      roleTypeId="CARRIER"
+      sequenceNumber="1">
+    <partyId
+        href="abchip-net.xmi#_NA_"/>
+  </contents>
+  <contents
+      xsi:type="biz-store:ProductStoreShipmentMeth"
+      productStoreShipMethId="0001"
+      allowCompanyAddr="false"
+      allowUspsAddr="false"
+      partyId="_NA_"
+      productStoreId="8000"
+      roleTypeId="CARRIER"
+      sequenceNumber="1"
+      shipmentMethodTypeId="NO_SHIPPING"/>
   <contents
       xsi:type="biz-product:Product"
       productId="ProductCanary"
@@ -219,4 +297,17 @@
       systemResourceId="general"
       description="The default country for drop downs"
       systemPropertyValue="ITA"/>
+  <contents
+      xsi:type="biz-tax:TaxAuthorityRateProduct"
+      taxAuthorityRateSeqId="10000"
+      isTaxInShippingPrice="true"
+      taxAuthGeoId="ITA"
+      taxAuthPartyId="ITA_ADE"
+      taxPercentage="22"
+      taxPromotions="true">
+    <productStoreId
+        href="seed-initial.xmi#8000"/>
+    <taxAuthorityRateTypeId
+        href="seed-initial.xmi#SALES_TAX"/>
+  </contents>
 </mimo-ent:EntityContainer>
