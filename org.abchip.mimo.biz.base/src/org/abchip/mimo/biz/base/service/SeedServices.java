@@ -11,7 +11,9 @@ package org.abchip.mimo.biz.base.service;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
+import java.util.Comparator;
 import java.util.Enumeration;
+import java.util.List;
 
 import org.abchip.mimo.application.Application;
 import org.abchip.mimo.context.Context;
@@ -19,21 +21,29 @@ import org.abchip.mimo.entity.EntityContainer;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
+import org.abchip.mimo.util.Enumerations;
 import org.eclipse.emf.ecore.xmi.XMIResource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
 import org.osgi.framework.Bundle;
 
 public class SeedServices {
-	
+
 	public static String SEEDS_PATH = "application/seeds";
-	
+
 	public static void loadSeeds(Context context, String seedName, String tenantId, boolean update) {
 
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 		Bundle bundle = context.get(Application.class).getBundle();
 
-		for (Enumeration<URL> elements = bundle.findEntries(SEEDS_PATH + "/" + seedName, null, false); elements.hasMoreElements();) {
-			URL seedUrl = elements.nextElement();
+		Enumeration<URL> entries = bundle.findEntries(SEEDS_PATH + "/" + seedName, null, false);
+		List<URL> elements = Enumerations.sort(entries, new Comparator<URL>() {
+			@Override
+			public int compare(URL o1, URL o2) {
+				return o1.getPath().compareTo(o2.getPath());
+			}
+			
+		});
+		for (URL seedUrl : elements) {
 			try (InputStream inputStream = seedUrl.openStream()) {
 
 				// System.err.println("************************");
