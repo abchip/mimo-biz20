@@ -13,11 +13,8 @@ import java.util.Date;
 import org.abchip.mimo.biz.entity.tenant.Tenant;
 import org.abchip.mimo.biz.entity.tenant.TenantDataSource;
 import org.abchip.mimo.biz.entity.tenant.TenantDomainName;
-import org.abchip.mimo.biz.entity.tenant.TenantFactory;
-import org.abchip.mimo.biz.security.login.LoginFactory;
 import org.abchip.mimo.biz.security.login.UserLogin;
 import org.abchip.mimo.biz.security.securitygroup.SecurityGroup;
-import org.abchip.mimo.biz.security.securitygroup.SecuritygroupFactory;
 import org.abchip.mimo.biz.security.securitygroup.UserLoginSecurityGroup;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceManager;
@@ -25,37 +22,55 @@ import org.abchip.mimo.resource.ResourceWriter;
 
 public class TenantServices {
 
-	public static void createTenant(Context context, String tenantId, String tenantName, boolean clean) {
+	public enum DBType {
+		D, P
+	}
+
+	public static void createTenant(Context context, String tenantId, String tenantName, DBType dbType, boolean clean) {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		// Tenant
 		ResourceWriter<Tenant> tenantWriter = resourceManager.getResourceWriter(context, Tenant.class);
-		Tenant tenant = TenantFactory.eINSTANCE.createTenant();
+		Tenant tenant = tenantWriter.make();
 		tenant.setTenantId(tenantId);
 		tenant.setTenantName(tenantName);
 		tenantWriter.create(tenant, clean);
+
 		// TenantDomainName
 		ResourceWriter<TenantDomainName> tenantDomainNameWriter = resourceManager.getResourceWriter(context, TenantDomainName.class);
-		TenantDomainName tenantDomainName = TenantFactory.eINSTANCE.createTenantDomainName();
+		TenantDomainName tenantDomainName = tenantDomainNameWriter.make();
 		tenantDomainName.setTenantId(tenant);
 		tenantDomainName.setDomainName(tenantId + ".abchip.net");
 		tenantDomainNameWriter.create(tenantDomainName, clean);
+
 		// TenantDataSource
 		ResourceWriter<TenantDataSource> tenantDataSourceWriter = resourceManager.getResourceWriter(context, TenantDataSource.class);
-		TenantDataSource tenantDataSource = TenantFactory.eINSTANCE.createTenantDataSource();
+		TenantDataSource tenantDataSource = tenantDataSourceWriter.make();
 		tenantDataSource.setTenantId(tenant);
 		tenantDataSource.setEntityGroupName("org.apache.ofbiz");
-		tenantDataSource.setJdbcUsername("ofbiz");
-		tenantDataSource.setJdbcPassword("ofbiz");
-		tenantDataSource.setJdbcUri("jdbc:derby:ofbiz_" + tenantId + ";create=true");
+
+		switch (dbType) {
+		case D:
+			tenantDataSource.setJdbcUsername("ofbiz");
+			tenantDataSource.setJdbcPassword("ofbiz");
+			tenantDataSource.setJdbcUri("jdbc:derby:ofbiz_" + tenantId + ";create=true");
+			break;
+		case P:
+			tenantDataSource.setJdbcUsername("ofbizuser_tenant");
+			tenantDataSource.setJdbcPassword("ofbiz@user");
+			tenantDataSource.setJdbcUri("jdbc:postgresql://127.0.0.1/ofbiz_" + tenantId);
+			break;
+		}
+
 		tenantDataSourceWriter.create(tenantDataSource, clean);
 	}
 
 	public static void createUserTenant(Context context, String tenantId, boolean clean) {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
+
 		// UserLogin
 		ResourceWriter<UserLogin> userLogintWriter = resourceManager.getResourceWriter(context, UserLogin.class, tenantId);
-		UserLogin userLogin = LoginFactory.eINSTANCE.createUserLogin();
+		UserLogin userLogin = userLogintWriter.make();
 		userLogin.setUserLoginId(tenantId);
 		userLogin.setCurrentPassword("{SHA}47ca69ebb4bdc9ae0adec130880165d2cc05db1a");
 		userLogin.setIsSystem(true);
@@ -66,7 +81,7 @@ public class TenantServices {
 
 		// UserLoginSecurityGroup
 		ResourceWriter<UserLoginSecurityGroup> userLoginSecurityGroupWriter = resourceManager.getResourceWriter(context, UserLoginSecurityGroup.class, tenantId);
-		UserLoginSecurityGroup userLoginSecurityGroup = SecuritygroupFactory.eINSTANCE.createUserLoginSecurityGroup();
+		UserLoginSecurityGroup userLoginSecurityGroup = userLoginSecurityGroupWriter.make();
 		userLoginSecurityGroup.setUserLoginId(userLogin);
 		userLoginSecurityGroup.setGroupId(resourceManager.getFrame(context, SecurityGroup.class).createProxy("SUPER"));
 		userLoginSecurityGroup.setFromDate(new Date());

@@ -38,7 +38,7 @@ public class BizSeedCommands extends BaseCommandProviderImpl {
 	private ResourceManager resourceManager;
 
 	public <E extends EntityIdentifiable> void _loginBizSeed(CommandInterpreter interpreter) throws Exception {
-		this.login(interpreter.nextArgument());
+		this.login(nextArgument(interpreter));
 	}
 
 	public void _convertSeeds(CommandInterpreter interpreter) throws Exception {
@@ -49,7 +49,7 @@ public class BizSeedCommands extends BaseCommandProviderImpl {
 		 * reader-name="demo"/> <read-data reader-name="ext"/> <read-data
 		 * reader-name="ext-test"/> <read-data reader-name="ext-demo"/>
 		 */
-		String filterReaders = interpreter.nextArgument();
+		String filterReaders = nextArgument(interpreter);
 		if(filterReaders == null || filterReaders.isEmpty()) {
 			System.err.println("Filter readers is empty. Maybe you want to try with 'seed,seed-initial'");
 			return;

@@ -52,7 +52,7 @@ public class PartyCommands extends BaseCommandProviderImpl {
 
 		Context context = this.getContext();
 
-		String id = interpreter.nextArgument();
+		String id = nextArgument(interpreter);
 
 		// Write Person
 		ResourceWriter<Person> personWriter = resourceManager.getResourceWriter(context, Person.class);

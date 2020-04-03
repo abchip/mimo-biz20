@@ -27,10 +27,10 @@ import org.abchip.mimo.biz.product.price.ProductPrice;
 import org.abchip.mimo.biz.product.product.Product;
 import org.abchip.mimo.biz.test.command.runner.CreateAgreement;
 import org.abchip.mimo.biz.test.command.runner.CreateInpsAgreement;
-import org.abchip.mimo.biz.test.command.runner.CreateSalesInvoice;
-import org.abchip.mimo.biz.test.command.runner.CreateSalesOrder;
 import org.abchip.mimo.biz.test.command.runner.CreateParty;
 import org.abchip.mimo.biz.test.command.runner.CreateProduct;
+import org.abchip.mimo.biz.test.command.runner.CreateSalesInvoice;
+import org.abchip.mimo.biz.test.command.runner.CreateSalesOrder;
 import org.abchip.mimo.context.AuthenticationManager;
 import org.abchip.mimo.context.AuthenticationUserPassword;
 import org.abchip.mimo.context.ContextFactory;
@@ -67,8 +67,8 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 	}
 
 	public void _stressTestInps(CommandInterpreter interpreter) throws Exception {
-		String reqNumber = interpreter.nextArgument();
-		String poolNumber = interpreter.nextArgument();
+		String reqNumber = nextArgument(interpreter);
+		String poolNumber = nextArgument(interpreter);
         long l1 = 100;
         int l2 = 100;
 		if(reqNumber != null) {
@@ -93,6 +93,13 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 				System.err.println("Tenant 'test' not found");
 				return;
 			}
+			
+			
+//			ContactMech contactMech = ContactMechServices.getLatestEmail(context.get(), "10000");
+//			if(1==1) {
+//				return;
+//			}
+			
 			
 			long time1 = System.currentTimeMillis();
 			ExecutorService executor = Executors.newFixedThreadPool(1);

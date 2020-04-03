@@ -17,15 +17,15 @@ import org.eclipse.osgi.framework.console.CommandInterpreter;
 public class SeedCommands extends BaseCommandProviderImpl {
 
 	public <E extends EntityIdentifiable> void _loginSeed(CommandInterpreter interpreter) throws Exception {
-		this.login(interpreter.nextArgument());
+		this.login(nextArgument(interpreter));
 	}
 
 	public void _loadSeed(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();
 
-		String seedName = interpreter.nextArgument();
-		String tenantId = interpreter.nextArgument();
+		String seedName = nextArgument(interpreter);
+		String tenantId = nextArgument(interpreter);
 
 		SeedServices.loadSeed(context, seedName, tenantId, true);
 	}
@@ -34,8 +34,8 @@ public class SeedCommands extends BaseCommandProviderImpl {
 
 		Context context = this.getContext();
 
-		String seedName = interpreter.nextArgument();
-		String tenantId = interpreter.nextArgument();
+		String seedName = nextArgument(interpreter);
+		String tenantId = nextArgument(interpreter);
 
 		SeedServices.loadSeeds(context, seedName, tenantId, true);
 	}

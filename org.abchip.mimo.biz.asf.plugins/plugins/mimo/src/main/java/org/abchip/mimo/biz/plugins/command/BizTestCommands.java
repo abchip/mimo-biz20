@@ -102,25 +102,25 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 	private static final String TAX_AUTH_GEO_ID = "ITA";
 
 	public <E extends EntityIdentifiable> void _login2(CommandInterpreter interpreter) throws Exception {
-		this.login(interpreter.nextArgument());
+		this.login(nextArgument(interpreter));
 	}
 
 	public void _getCreditCardParty(CommandInterpreter interpreter) throws Exception {
 		Context context = this.getContext();
-		String partyId = interpreter.nextArgument();
+		String partyId = nextArgument(interpreter);
 		CreditCard creditCard = PaymentServices.getCreditCardParty(context, partyId);
 		System.out.println("Credit card number " + creditCard.getCardNumber());
 	}
 
 	public void _createAgreement(CommandInterpreter interpreter) throws Exception {
 		Context context = this.getContext();
-		String partyId = interpreter.nextArgument();
+		String partyId = nextArgument(interpreter);
 		createAgreement(context, partyId);
 	}
 
 	public void _renewalAgreement(CommandInterpreter interpreter) throws Exception {
 		Context context = this.getContext();
-		String agreementId = interpreter.nextArgument();
+		String agreementId = nextArgument(interpreter);
 		renewalAgreement(context, agreementId);
 	}
 
@@ -128,7 +128,7 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 
 		Context context = this.getContext();
 
-		String agreementId = interpreter.nextArgument();
+		String agreementId = nextArgument(interpreter);
 
 		if (agreementId == null) {
 			System.err.println("Invalid agreement!!!");
@@ -157,7 +157,7 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 
 	public void _createProduct(CommandInterpreter interpreter) throws Exception {
 		Context context = this.getContext();
-		String productId = interpreter.nextArgument();
+		String productId = nextArgument(interpreter);
 		ResourceWriter<Product> productWriter = resourceManager.getResourceWriter(context, Product.class);
 		Product product = productWriter.make();
 		product.setProductId(productId);
@@ -170,7 +170,7 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 
 		Context context = this.getContext();
 
-		String partyId = interpreter.nextArgument();
+		String partyId = nextArgument(interpreter);
 
 		createOrder(context, partyId);
 	}
@@ -179,7 +179,7 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 
 		Context context = this.getContext();
 
-		String partyId = interpreter.nextArgument();
+		String partyId = nextArgument(interpreter);
 
 		Invoice invoice = createInvoice(context, partyId, "");
 
@@ -214,7 +214,7 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 
 		Context context = this.getContext();
 
-		String orderId = interpreter.nextArgument();
+		String orderId = nextArgument(interpreter);
 
 		if (orderId == null) {
 			System.err.println("Invalid order!!!");
@@ -263,7 +263,7 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 
 		Context context = this.getContext();
 
-		String orderId = interpreter.nextArgument();
+		String orderId = nextArgument(interpreter);
 
 		if (orderId == null) {
 			System.err.println("Invalid order!!!");
@@ -312,7 +312,7 @@ public class BizTestCommands extends BaseCommandProviderImpl {
 
 		Context context = this.getContext();
 
-		String orderId = interpreter.nextArgument();
+		String orderId = nextArgument(interpreter);
 
 		if (orderId == null) {
 			System.err.println("Invalid order!!!");

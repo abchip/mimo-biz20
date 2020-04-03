@@ -12,6 +12,7 @@ import javax.inject.Inject;
 
 import org.abchip.mimo.biz.base.service.SeedServices;
 import org.abchip.mimo.biz.base.service.TenantServices;
+import org.abchip.mimo.biz.base.service.TenantServices.DBType;
 import org.abchip.mimo.biz.common.status.StatusItem;
 import org.abchip.mimo.biz.party.party.PartyFactory;
 import org.abchip.mimo.biz.party.party.PartyType;
@@ -29,7 +30,7 @@ public class TenantCommands extends BaseCommandProviderImpl {
 	private ResourceManager resourceManager;
 
 	public <E extends EntityIdentifiable> void _loginTenant(CommandInterpreter interpreter) throws Exception {
-		this.login(interpreter.nextArgument());
+		this.login(nextArgument(interpreter));
 	}
 
 	public void _createMaster(CommandInterpreter interpreter) throws Exception {
@@ -53,11 +54,12 @@ public class TenantCommands extends BaseCommandProviderImpl {
 		// tenant seeds, depending on db type (AdminNewTenantData-Derby.xml,
 		// AdminUserLoginData.xml)
 
-		String tenantId = interpreter.nextArgument();
-		String tenantName = interpreter.nextArgument();
-		String partyId = interpreter.nextArgument();
+		String tenantId = nextArgument(interpreter);
+		String tenantName = nextArgument(interpreter);
+		DBType dbType = DBType.valueOf(nextArgument(interpreter));
+		String partyId = nextArgument(interpreter);
 
-		TenantServices.createTenant(context, tenantId, tenantName, false);
+		TenantServices.createTenant(context, tenantId, tenantName, dbType, false);
 		SeedServices.loadSeeds(context, "seed", tenantId, true);
 		SeedServices.loadSeed(context, "mimo", tenantId, true);
 		SeedServices.loadSeed(context, "party", tenantId, true);
@@ -79,7 +81,8 @@ public class TenantCommands extends BaseCommandProviderImpl {
 
 	public void _createTest(CommandInterpreter interpreter) throws Exception {
 
-		String cleanString = interpreter.nextArgument();
+		DBType dbType = DBType.valueOf(nextArgument(interpreter));
+		String cleanString = nextArgument(interpreter);
 
 		Context context = this.getContext();
 
@@ -90,7 +93,7 @@ public class TenantCommands extends BaseCommandProviderImpl {
 		if (cleanString != null)
 			clean = Boolean.parseBoolean(cleanString);
 
-		TenantServices.createTenant(context, tenantId, tenantName, clean);
+		TenantServices.createTenant(context, tenantId, tenantName, dbType, clean);
 		SeedServices.loadSeeds(context, "seed", tenantId, true);
 		SeedServices.loadSeed(context, "mimo", tenantId, true);
 		SeedServices.loadSeed(context, "party", tenantId, true);
