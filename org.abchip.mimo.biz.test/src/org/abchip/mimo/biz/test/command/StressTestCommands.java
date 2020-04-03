@@ -46,7 +46,7 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 	public void _stressTest(CommandInterpreter interpreter) throws Exception {
 		stressTestBase();
 		stressTestSalesOrder();
-		stressTestInvoice();
+		stressTestSalesInvoice();
 		stressTestAgreement();
 	}
 
@@ -58,8 +58,8 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 		stressTestSalesOrder();
 	}
 
-	public void _stressTestInvoice(CommandInterpreter interpreter) throws Exception {
-		stressTestInvoice();
+	public void _stressTestSalesInvoice(CommandInterpreter interpreter) throws Exception {
+		stressTestSalesInvoice();
 	}
 
 	public void _stressTestAgreement(CommandInterpreter interpreter) throws Exception {
@@ -153,7 +153,7 @@ public class StressTestCommands extends BaseCommandProviderImpl {
 		}
 	}
 
-	private void stressTestInvoice() throws Exception {
+	private void stressTestSalesInvoice() throws Exception {
 		try (ContextProvider context = login()) {
 			if (context == null) {
 				System.err.println("Tenant 'test' not found");
