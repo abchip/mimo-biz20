@@ -2,8 +2,6 @@ package org.abchip.mimo.biz.test.command.runner;
 
 import java.math.BigDecimal;
 import java.util.Date;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.Callable;
@@ -39,12 +37,16 @@ import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.resource.ResourceWriter;
 
-public class CreateOrder implements Callable<Long> {
+public class CreateSalesOrder implements Callable<Long> {
 
 	Context context;
+	Party party;
+	Map<Product, ProductPrice> productSet;
 
-	public CreateOrder(Context context) {
+	public CreateSalesOrder(Context context, Party party, Map<Product, ProductPrice> productSet) {
 		this.context = context;
+		this.party = party;
+		this.productSet = productSet;
 	}
 
 	@Override
@@ -57,24 +59,7 @@ public class CreateOrder implements Callable<Long> {
 
 	private void createOrder() {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
-
-		List<Party> parties = StressTestUtils.getEnabledCustomers(context, resourceManager);
-		if(parties.size() == 0) {
-			System.err.println("Customer Party not found. Operation canceled.");
-			return;
-		}
-
-		Map<Product, ProductPrice> productMap = StressTestUtils.getDigitalProducts(context, resourceManager);
-		if(productMap.isEmpty()) {
-			System.err.println("Digital product and price not found. Operation canceled.");
-			return;
-		}
-
-		// Create orders
-		Iterator<Party> partyIt = parties.iterator();
-		while(partyIt.hasNext()) {
-			createPartyOrder(resourceManager, partyIt.next(), productMap);
-		}
+		createPartyOrder(resourceManager, party, productSet);
 	}
 
 	private void createPartyOrder(ResourceManager resourceManager, Party party, Map<Product, ProductPrice> productMap) {

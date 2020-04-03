@@ -21,6 +21,7 @@ import org.abchip.mimo.biz.party.party.PartyIdentificationType;
 import org.abchip.mimo.biz.party.party.PartyRole;
 import org.abchip.mimo.biz.party.party.PartyType;
 import org.abchip.mimo.biz.party.party.RoleType;
+import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
@@ -36,12 +37,21 @@ public class CreateParty implements Callable<Long> {
 	@Override
 	public Long call() throws Exception {
 		long time1 = System.currentTimeMillis();
-		createParty(context);
+		createPartyCustomer(context);
+		createPartySupplier(context);
 		long time2 = System.currentTimeMillis();
 		return time2 - time1;
 	}
 
-	public void createParty(Context context) {
+	public void createPartyCustomer(Context context) {
+		createParty(context, "CUSTOMER");
+	}
+
+	public void createPartySupplier(Context context) {
+		createParty(context, "SUPPLIER");
+	}
+
+	public void createParty(Context context, String role) {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		// Create PartyGroup
@@ -58,7 +68,7 @@ public class CreateParty implements Callable<Long> {
 		ResourceWriter<PartyRole> partyRoleWriter = resourceManager.getResourceWriter(context, PartyRole.class);
 		PartyRole partyRole = partyRoleWriter.make();
 		partyRole.setPartyId(partyGroup);
-		partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("CUSTOMER"));
+		partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy(role));
 		partyRoleWriter.create(partyRole, true);
 
 		// Address
@@ -71,9 +81,9 @@ public class CreateParty implements Callable<Long> {
 		// indirizzo_città
 		postalAddress.setCity("indirizzo Party " + partyGroup.getID());
 		// indirizzo_cap
-		postalAddress.setPostalCode("00000");
+		postalAddress.setPostalCode(StressTestUtils.generateRandomString(5, true));
 		postalAddress.setContactMechTypeId(resourceManager.getFrame(context, ContactMechType.class).createProxy("POSTAL_ADDRESS"));
-		postalAddress.setCountryGeoId(resourceManager.getFrame(context, Geo.class).createProxy("ITA"));
+		postalAddress.setCountryGeoId(SystemDefault.getGeo(context));
 		postalAddress.setStateProvinceGeoId(resourceManager.getFrame(context, Geo.class).createProxy("IT-RM"));
 		postalAddressWriter.create(postalAddress, true);
 		createPartyContactMech(context, resourceManager, partyGroup, postalAddress, "GENERAL_LOCATION");
@@ -91,7 +101,7 @@ public class CreateParty implements Callable<Long> {
 		ResourceWriter<TelecomNumber> telecomNumberWriter = resourceManager.getResourceWriter(context, TelecomNumber.class);
 		TelecomNumber telecomNumber = telecomNumberWriter.make(true);
 		telecomNumber.setContactMechTypeId(resourceManager.getFrame(context, ContactMechType.class).createProxy("TELECOM_NUMBER"));
-		telecomNumber.setContactNumber("001 002 003");
+		telecomNumber.setContactNumber(StressTestUtils.generateRandomString(3, true) + " " + StressTestUtils.generateRandomString(7, true));
 		telecomNumberWriter.create(telecomNumber, true);
 		createPartyContactMech(context, resourceManager, partyGroup, telecomNumber, "PRIMARY_PHONE");
 
@@ -100,9 +110,9 @@ public class CreateParty implements Callable<Long> {
 		PartyTaxAuthInfo partyTaxAuthInfo = partyTaxAuthInfoWriter.make();
 		partyTaxAuthInfo.setPartyId(partyGroup);
 		partyTaxAuthInfo.setFromDate(new Date());
-		partyTaxAuthInfo.setTaxAuthGeoId("ITA");
+		partyTaxAuthInfo.setTaxAuthGeoId(SystemDefault.getGeo(context).getID());
 		partyTaxAuthInfo.setTaxAuthPartyId("ITA_ADE");
-		partyTaxAuthInfo.setPartyTaxId("IT-" + "13128080150");
+		partyTaxAuthInfo.setPartyTaxId("IT-" + StressTestUtils.generateRandomString(7, true));
 		partyTaxAuthInfoWriter.create(partyTaxAuthInfo, true);
 
 		// PartyIdentification
@@ -110,7 +120,7 @@ public class CreateParty implements Callable<Long> {
 		PartyIdentification partyIdentification = partyIdentificationWriter.make();
 		partyIdentification.setPartyId(partyGroup);
 		partyIdentification.setPartyIdentificationTypeId(resourceManager.getFrame(context, PartyIdentificationType.class).createProxy("VCARD_FN_ORIGIN"));
-		partyIdentification.setIdValue("PPRPLN20C01H501K");
+		partyIdentification.setIdValue(StressTestUtils.generateRandomString(16, false));
 		partyIdentificationWriter.create(partyIdentification, true);
 	}
 

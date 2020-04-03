@@ -8,6 +8,7 @@
  */
 package org.abchip.mimo.biz.base.service;
 
+import org.abchip.mimo.biz.common.geo.Geo;
 import org.abchip.mimo.biz.common.property.SystemProperty;
 import org.abchip.mimo.biz.common.uom.Uom;
 import org.abchip.mimo.biz.party.party.Party;
@@ -32,5 +33,15 @@ public class SystemDefault {
 		
 		ResourceReader<Uom> uomReader = resourceManager.getResourceReader(context, Uom.class);
 		return uomReader.lookup(props.getSystemPropertyValue());
+	}
+
+
+	public static Geo getGeo(Context context) {
+		ResourceManager resourceManager = context.get(ResourceManager.class);
+		ResourceReader<SystemProperty> systemProperty = resourceManager.getResourceReader(context, SystemProperty.class);
+		SystemProperty props = systemProperty.lookup("general/country.geo.id.default");
+		
+		ResourceReader<Geo> geoReader = resourceManager.getResourceReader(context, Geo.class);
+		return geoReader.lookup(props.getSystemPropertyValue());
 	}
 }

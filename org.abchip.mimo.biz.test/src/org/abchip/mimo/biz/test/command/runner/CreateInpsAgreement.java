@@ -1,6 +1,5 @@
 package org.abchip.mimo.biz.test.command.runner;
 
-import java.security.SecureRandom;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.Callable;
@@ -36,7 +35,7 @@ public class CreateInpsAgreement implements Callable<Long> {
 	}
 
 	private void createInpsAgreement(ResourceManager resourceManager) {
-		String fiscalCode = generateRandomString(16, false);
+		String fiscalCode = StressTestUtils.generateRandomString(16, false);
 		// Agreement
 		ResourceWriter<Agreement> agreementWriter = resourceManager.getResourceWriter(context, Agreement.class);
 
@@ -49,10 +48,10 @@ public class CreateInpsAgreement implements Callable<Long> {
 		
 		int row = 1;
 		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Codice fiscale: " + fiscalCode);
-		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Telefono fisso: " + "0" + generateRandomString(2, true) + " " + generateRandomString(6, true));
-		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Telefono cellulare: " + "3" + generateRandomString(2, true) + " " + generateRandomString(7, true));
+		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Telefono fisso: " + "0" + StressTestUtils.generateRandomString(2, true) + " " + StressTestUtils.generateRandomString(6, true));
+		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Telefono cellulare: " + "3" + StressTestUtils.generateRandomString(2, true) + " " + StressTestUtils.generateRandomString(7, true));
 		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "E-mail: " + fiscalCode + "@gmail.com");
-		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Iban: " + "IT" + generateRandomString(2, true) + generateRandomString(1, false) + generateRandomString(5, true) + generateRandomString(5, true) + generateRandomString(12, true));
+		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Iban: " + "IT" + StressTestUtils.generateRandomString(2, true) + StressTestUtils.generateRandomString(1, false) + StressTestUtils.generateRandomString(5, true) + StressTestUtils.generateRandomString(5, true) + StressTestUtils.generateRandomString(12, true));
 		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Flag gestione separata: SI");
 		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Flag dichiarazioni non mendaci: SI");
 		
@@ -83,36 +82,5 @@ public class CreateInpsAgreement implements Callable<Long> {
 		agreementItem.setAgreementItemSeqId(seqId);
 		agreementItem.setAgreementText(text);
 		agreementItemWriter.create(agreementItem, true);
-	}
-	
-	private static String generateRandomString(int length, boolean onlyNumbers) {
-	    // You can customize the characters that you want to add into
-	    // the random strings
-	    String CHAR_LOWER = "abcdefghijklmnopqrstuvwxyz";
-	    String CHAR_UPPER = CHAR_LOWER.toUpperCase();
-	    String NUMBER = "0123456789";
-
-	    String DATA_FOR_RANDOM_STRING = "";
-
-	    if(onlyNumbers) {
-	    	DATA_FOR_RANDOM_STRING = NUMBER + NUMBER;
-	    } else {
-	    	DATA_FOR_RANDOM_STRING = CHAR_UPPER + NUMBER;
-	    }
-	    SecureRandom random = new SecureRandom();
-
-	    if (length < 1) throw new IllegalArgumentException();
-
-	    StringBuilder sb = new StringBuilder(length);
-	    
-	    for (int i = 0; i < length; i++) {
-	        // 0-62 (exclusive), random returns 0-61
-	        int rndCharAt = random.nextInt(DATA_FOR_RANDOM_STRING.length());
-	        char rndChar = DATA_FOR_RANDOM_STRING.charAt(rndCharAt);
-
-	        sb.append(rndChar);
-	    }
-
-	    return sb.toString();
 	}
 }
