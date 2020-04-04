@@ -60,10 +60,9 @@ public class BizApplicationComponentHook {
 
 				Classpath classpath = buildClasspathFromComponentConfig(componentConfig);
 
-				BizClassLoaderImpl bizClassLoader = null;
 				ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
 				if (classLoader instanceof BizClassLoaderImpl) {
-					bizClassLoader = (BizClassLoaderImpl) classLoader;
+					BizClassLoaderImpl bizClassLoader = (BizClassLoaderImpl) classLoader;
 
 					for (URL url : classpath.getUrls()) {
 						Debug.logInfo("Append to classpath: " + url, BizApplicationHook.MODULE);

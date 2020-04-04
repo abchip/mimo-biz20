@@ -9,6 +9,8 @@
 package org.abchip.mimo.biz.plugins.application;
 
 import java.io.IOException;
+import java.net.URL;
+import java.net.URLClassLoader;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -82,49 +84,23 @@ public class BizApplicationHook {
 		Start.main(new String[0]);
 	}
 
-	private void copyToWork(Application application, Path workPath) throws IOException {
-
-		FileUtils.deleteDirectory(workPath.toFile());
-
-		for (ApplicationComponent component : application.getComponents()) {
-			if (component.getStatus() != ComponentStatus.ACTIVE)
-				continue;
-			if (!(component instanceof BizComponent))
-				continue;
-
-			BizComponent bizComponent = (BizComponent) component;
-
-			Path componentPath = workPath.resolve(bizComponent.getModulesDir());
-
-			String bundleLocation = application.locateBundle(bizComponent.getPlugin());
-
-			Debug.logInfo("Copying component " + bizComponent.getName() + " from bundle " + bundleLocation + " to " + componentPath, MODULE);
-
-			for (BizModule bizModule : bizComponent.getBizModules()) {
-				if (bizModule.getStatus() != ModuleStatus.ACTIVE)
-					continue;
-
-				Path moduleLocation = Paths.get(bundleLocation, bizComponent.getModulesDir(), bizModule.getName().toLowerCase());
-				Debug.logInfo("Copy module " + bizModule.getName() + " from bundle " + moduleLocation, MODULE);
-
-				Path moduleDest = componentPath.resolve(bizModule.getName().toLowerCase());
-				FileUtils.copyDirectory(moduleLocation.toFile(), moduleDest.toFile());
-
-				// remove src
-				FileUtils.deleteDirectory(moduleDest.resolve("documents").toFile());
-				FileUtils.deleteDirectory(moduleDest.resolve("src").toFile());
-			}
-
-			Debug.logInfo("Copied component " + bizComponent.getName(), MODULE);
-		}
-	}
-
+	@SuppressWarnings("resource")
 	@ApplicationStarted
 	private void started() throws StartupException {
 
 		Config config = Start.getInstance().getConfig();
 		List<ContainerConfig.Configuration> componentContainerConfigs = filterContainersHavingMatchingLoaders(config.loaders, ComponentConfig.getAllConfigurations());
 		BizApplicationHook.CONTAINERS.addAll(loadContainersFromConfigurations(componentContainerConfigs, config, new ArrayList<StartupCommand>()));
+
+		ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+		if (classLoader instanceof BizClassLoaderImpl) {
+			try (BizClassLoaderImpl bizClassLoader = (BizClassLoaderImpl) classLoader) {
+				URL[] componentURLs = bizClassLoader.getURLs();
+				Thread.currentThread().setContextClassLoader(new URLClassLoader(componentURLs, bizClassLoader.getParent()));
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
 
 		for (Container container : CONTAINERS) {
 			Debug.logInfo("Starting container " + container.getName(), MODULE);
@@ -217,5 +193,42 @@ public class BizApplicationHook {
 	private void stopped() {
 		ClassLoader bizLoader = Thread.currentThread().getContextClassLoader();
 		Thread.currentThread().setContextClassLoader(bizLoader.getParent());
+	}
+
+	private void copyToWork(Application application, Path workPath) throws IOException {
+
+		FileUtils.deleteDirectory(workPath.toFile());
+
+		for (ApplicationComponent component : application.getComponents()) {
+			if (component.getStatus() != ComponentStatus.ACTIVE)
+				continue;
+			if (!(component instanceof BizComponent))
+				continue;
+
+			BizComponent bizComponent = (BizComponent) component;
+
+			Path componentPath = workPath.resolve(bizComponent.getModulesDir());
+
+			String bundleLocation = application.locateBundle(bizComponent.getPlugin());
+
+			Debug.logInfo("Copying component " + bizComponent.getName() + " from bundle " + bundleLocation + " to " + componentPath, MODULE);
+
+			for (BizModule bizModule : bizComponent.getBizModules()) {
+				if (bizModule.getStatus() != ModuleStatus.ACTIVE)
+					continue;
+
+				Path moduleLocation = Paths.get(bundleLocation, bizComponent.getModulesDir(), bizModule.getName().toLowerCase());
+				Debug.logInfo("Copy module " + bizModule.getName() + " from bundle " + moduleLocation, MODULE);
+
+				Path moduleDest = componentPath.resolve(bizModule.getName().toLowerCase());
+				FileUtils.copyDirectory(moduleLocation.toFile(), moduleDest.toFile());
+
+				// remove src
+				FileUtils.deleteDirectory(moduleDest.resolve("documents").toFile());
+				FileUtils.deleteDirectory(moduleDest.resolve("src").toFile());
+			}
+
+			Debug.logInfo("Copied component " + bizComponent.getName(), MODULE);
+		}
 	}
 }

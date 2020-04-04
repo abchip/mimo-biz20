@@ -96,6 +96,8 @@
 	<classpathentry kind="src" path="framework/entity/dtd"/>
 	<classpathentry kind="src" path="framework/service/src/main/groovy"/>
 	<classpathentry kind="src" path="framework/webapp/src/main/java"/>
+	<classpathentry kind="src" path="framework/webapp/config"/>
+	<classpathentry kind="src" path="framework/webapp/dtd"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

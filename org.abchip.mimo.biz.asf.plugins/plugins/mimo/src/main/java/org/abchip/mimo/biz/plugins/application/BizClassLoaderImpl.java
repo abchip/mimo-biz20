@@ -29,16 +29,14 @@ public class BizClassLoaderImpl extends URLClassLoader {
 	}
 
 	@Override
-	public Class<?> loadClass(String name) throws ClassNotFoundException {
+	public Class<?> loadClass(String name, boolean resolve) throws ClassNotFoundException {
 
-		if (name.equals("org.apache.ofbiz.base.container.ContainerLoader")) {
+		if (name.equals("org.apache.ofbiz.base.container.ContainerLoader"))
 			return BizApplicationLoaderImpl.class;
-		} else {
-//			System.out.println(name);
-			return super.loadClass(name);
-		}
+
+		return super.loadClass(name, resolve);
 	}
-	
+
 	public static class BizApplicationLoaderImpl implements StartupLoader {
 
 		@Override

@@ -122,7 +122,7 @@ access. For a detailed description see the core/docs/entityconfig.html file.
                 jdbc-password="ofbiz@user"
                 isolation-level="ReadCommitted"
                 pool-minsize="2"
-                pool-maxsize="250"
+                pool-maxsize="100"
                 time-between-eviction-runs-millis="600000"/>
     </datasource>
     <datasource name="localpostgrestenant"
