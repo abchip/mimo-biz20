@@ -41,7 +41,7 @@ public class CreateProduct implements Callable<Long> {
 		product.setDescription("Description product " + product.getID());
 		product.setProductTypeId(resourceManager.getFrame(context, ProductType.class).createProxy("DIGITAL_GOOD"));
 		product.setTaxable(true);
-		productWriter.create(product, true);
+		productWriter.create(product);
 
 		// ProductPrice
 		ResourceWriter<ProductPrice> productPriceWriter = resourceManager.getResourceWriter(context, ProductPrice.class);
@@ -54,6 +54,6 @@ public class CreateProduct implements Callable<Long> {
 		productPrice.setProductPricePurposeId(resourceManager.getFrame(context, ProductPricePurpose.class).createProxy("PURCHASE"));
 		productPrice.setCurrencyUomId(SystemDefault.getUom(context));
 		productPrice.setProductStoreGroupId(resourceManager.getFrame(context, ProductStoreGroup.class).createProxy("_NA_"));
-		productPriceWriter.create(productPrice, true);
+		productPriceWriter.create(productPrice);
 	}
 }

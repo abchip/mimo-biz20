@@ -12,6 +12,7 @@ Require-Bundle: org.abchip.mimo.core,
  org.abchip.mimo.core.http,
  org.abchip.mimo.biz.base,
  org.abchip.mimo.biz.model,
+ org.abchip.mimo.biz.test,
  org.eclipse.osgi,
  org.abchip.mimo.biz.asf.commons,
  org.abchip.mimo.biz.asf.tomcat

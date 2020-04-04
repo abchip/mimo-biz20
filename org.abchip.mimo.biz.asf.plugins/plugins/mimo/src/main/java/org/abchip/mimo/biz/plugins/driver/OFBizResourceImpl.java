@@ -137,11 +137,14 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 	@Override
 	public String nextSequence() {
 
+		if(this.frame.getKeys().size() != 1)
+			return null;
+
 		// first level non abstract
 		Frame<?> frame = this.frame;
 		while (frame.ako() != null && !frame.ako().isAbstract())
 			frame = frame.ako();
-
+		
 		return this.delegator.getNextSeqId(frame.getName());
 	}
 

@@ -2,8 +2,7 @@ package org.abchip.mimo.biz.test.command.runner;
 
 import java.util.Calendar;
 import java.util.Date;
-import java.util.Map;
-import java.util.Map.Entry;
+import java.util.List;
 import java.util.concurrent.Callable;
 
 import org.abchip.mimo.biz.accounting.invoice.InvoiceItemType;
@@ -18,7 +17,6 @@ import org.abchip.mimo.biz.party.agreement.TermType;
 import org.abchip.mimo.biz.party.party.Party;
 import org.abchip.mimo.biz.party.party.RoleType;
 import org.abchip.mimo.biz.product.price.ProductPrice;
-import org.abchip.mimo.biz.product.product.Product;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceManager;
@@ -28,14 +26,14 @@ public class CreateAgreement implements Callable<Long> {
 
 	Context context;
 	Party party;
-	Map<Product, ProductPrice> productSet;
-	
-	public CreateAgreement(Context context, Party party, Map<Product, ProductPrice> productSet) {
+	List<ProductPrice> productPrices;
+
+	public CreateAgreement(Context context, Party party, List<ProductPrice> productPrices) {
 		this.context = context;
 		this.party = party;
-		this.productSet = productSet;
+		this.productPrices = productPrices;
 	}
-	
+
 	@Override
 	public Long call() throws Exception {
 		long time1 = System.currentTimeMillis();
@@ -46,10 +44,7 @@ public class CreateAgreement implements Callable<Long> {
 
 	private void createAgreement() {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
-		createPartyAgreement(resourceManager, party, productSet);
-	}
 
-	private void createPartyAgreement(ResourceManager resourceManager, Party party, Map<Product, ProductPrice> productMap) {
 		RoleType roleTypeFrom = resourceManager.getFrame(context, RoleType.class).createProxy("INTERNAL_ORGANIZATIO");
 		RoleType roleTypeTo = resourceManager.getFrame(context, RoleType.class).createProxy("CUSTOMER");
 		AgreementType agreementType = resourceManager.getFrame(context, AgreementType.class).createProxy("SALES_AGREEMENT");
@@ -67,17 +62,27 @@ public class CreateAgreement implements Callable<Long> {
 		agreement.setAgreementDate(new Date());
 		agreement.setFromDate(new Date());
 		agreement.setDescription("Open new agreement for customer " + party.getID());
-		agreementWriter.create(agreement, true);
+		agreementWriter.create(agreement);
 
-		String agreementItemSeqId = createRow(resourceManager, agreement, "Agrement test opened in trial mode");
-		
+		String agreementItemSeqId = createRow(resourceManager, agreement);
+
 		// row product
-		for(Entry<Product, ProductPrice> entry : productMap.entrySet()) {
-			createRowProduct(resourceManager, agreement, entry.getKey(), entry.getValue(), agreementItemSeqId);
-		}
+		for (ProductPrice productPrice : this.productPrices)
+			createRowProduct(resourceManager, agreement, productPrice, agreementItemSeqId);
 	}
-	
-	private String createRow(ResourceManager resourceManager, Agreement agreement, String text) {
+
+	private void createRowProduct(ResourceManager resourceManager, Agreement agreement, ProductPrice productPrice, String itemSeqId) {
+		// AgreementProductAppl
+		ResourceWriter<AgreementProductAppl> agreementProductApplWriter = resourceManager.getResourceWriter(context, AgreementProductAppl.class);
+		AgreementProductAppl agreementProductAppl = agreementProductApplWriter.make();
+		agreementProductAppl.setAgreementId(agreement);
+		agreementProductAppl.setAgreementItemSeqId(itemSeqId);
+		agreementProductAppl.setProductId(productPrice.getProductId());
+		agreementProductAppl.setPrice(productPrice.getPrice());
+		agreementProductApplWriter.create(agreementProductAppl);
+	}
+
+	private String createRow(ResourceManager resourceManager, Agreement agreement) {
 
 		AgreementItemType agreementType = resourceManager.getFrame(context, AgreementItemType.class).createProxy("AGREEMENT_PRICING_PR");
 		TermType termType = resourceManager.getFrame(context, TermType.class).createProxy("FIN_PAYMENT_FIXDAY");
@@ -92,8 +97,8 @@ public class CreateAgreement implements Callable<Long> {
 		agreementItem.setAgreementItemSeqId(agreementItemSeqId);
 		agreementItem.setAgreementItemTypeId(agreementType);
 		agreementItem.setCurrencyUomId(SystemDefault.getUom(context).getID());
-		agreementItem.setAgreementText(text);
-		agreementItemWriter.create(agreementItem, true);
+		agreementItem.setAgreementText("Agrement test opened in trial mode");
+		agreementItemWriter.create(agreementItem);
 
 		// AgreementTerm
 		ResourceWriter<AgreementTerm> agreementTermWriter = resourceManager.getResourceWriter(context, AgreementTerm.class);
@@ -111,20 +116,9 @@ public class CreateAgreement implements Callable<Long> {
 		Date date2 = cal.getTime();
 		agreementTerm.setFromDate(date1);
 		agreementTerm.setThruDate(date2);
-//		agreementTerm.setDescription();
-		agreementTermWriter.create(agreementTerm, true);
+		// agreementTerm.setDescription();
+		agreementTermWriter.create(agreementTerm);
 
 		return agreementItemSeqId;
-	}
-	
-	private void createRowProduct(ResourceManager resourceManager, Agreement agreement, Product product, ProductPrice price, String itemSeqId) {
-		// AgreementProductAppl
-		ResourceWriter<AgreementProductAppl> agreementProductApplWriter = resourceManager.getResourceWriter(context, AgreementProductAppl.class);
-		AgreementProductAppl agreementProductAppl = agreementProductApplWriter.make();
-		agreementProductAppl.setAgreementId(agreement);
-		agreementProductAppl.setAgreementItemSeqId(itemSeqId);
-		agreementProductAppl.setProductId(product);
-		agreementProductAppl.setPrice(price.getPrice());
-		agreementProductApplWriter.create(agreementProductAppl, true);
 	}
 }

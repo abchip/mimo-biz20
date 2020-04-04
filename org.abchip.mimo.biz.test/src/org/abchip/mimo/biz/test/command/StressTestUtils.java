@@ -10,9 +10,7 @@ package org.abchip.mimo.biz.test.command;
 
 import java.security.SecureRandom;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import org.abchip.mimo.biz.party.party.Party;
 import org.abchip.mimo.biz.party.party.PartyRole;
@@ -128,12 +126,12 @@ public class StressTestUtils {
 		}
 		return customers;
 	}
-	
-	public static Map<Product, ProductPrice> getDigitalProducts(Context context) {
+
+	public static List<ProductPrice> getDigitalProductPrices(Context context) {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		ResourceReader<Product> productReader = resourceManager.getResourceReader(context, Product.class);
-		HashMap<Product, ProductPrice> digitals = new HashMap<Product, ProductPrice>();
+		List<ProductPrice> productPrices = new ArrayList<ProductPrice>();
 
 		try (EntityIterator<Product> products = productReader.find()) {
 			for (Product product : products) {
@@ -144,42 +142,43 @@ public class StressTestUtils {
 				ProductPrice price = StressTestUtils.getProductPrice(context, resourceManager, product);
 				if (price == null)
 					continue;
-				digitals.put(product, price);
+				productPrices.add(price);
 			}
 		}
 
-		return digitals;
+		return productPrices;
 	}
 
 	public static String generateRandomString(int length, boolean onlyNumbers) {
-	    // You can customize the characters that you want to add into
-	    // the random strings
-	    String CHAR_LOWER = "abcdefghijklmnopqrstuvwxyz";
-	    String CHAR_UPPER = CHAR_LOWER.toUpperCase();
-	    String NUMBER = "0123456789";
+		// You can customize the characters that you want to add into
+		// the random strings
+		String CHAR_LOWER = "abcdefghijklmnopqrstuvwxyz";
+		String CHAR_UPPER = CHAR_LOWER.toUpperCase();
+		String NUMBER = "0123456789";
 
-	    String DATA_FOR_RANDOM_STRING = "";
+		String DATA_FOR_RANDOM_STRING = "";
 
-	    if(onlyNumbers) {
-	    	DATA_FOR_RANDOM_STRING = NUMBER + NUMBER;
-	    } else {
-	    	DATA_FOR_RANDOM_STRING = CHAR_UPPER + NUMBER;
-	    }
-	    SecureRandom random = new SecureRandom();
+		if (onlyNumbers) {
+			DATA_FOR_RANDOM_STRING = NUMBER + NUMBER;
+		} else {
+			DATA_FOR_RANDOM_STRING = CHAR_UPPER + NUMBER;
+		}
+		SecureRandom random = new SecureRandom();
 
-	    if (length < 1) throw new IllegalArgumentException();
+		if (length < 1)
+			throw new IllegalArgumentException();
 
-	    StringBuilder sb = new StringBuilder(length);
-	    
-	    for (int i = 0; i < length; i++) {
-	        // 0-62 (exclusive), random returns 0-61
-	        int rndCharAt = random.nextInt(DATA_FOR_RANDOM_STRING.length());
-	        char rndChar = DATA_FOR_RANDOM_STRING.charAt(rndCharAt);
+		StringBuilder sb = new StringBuilder(length);
 
-	        sb.append(rndChar);
-	    }
+		for (int i = 0; i < length; i++) {
+			// 0-62 (exclusive), random returns 0-61
+			int rndCharAt = random.nextInt(DATA_FOR_RANDOM_STRING.length());
+			char rndChar = DATA_FOR_RANDOM_STRING.charAt(rndCharAt);
 
-	    return sb.toString();
+			sb.append(rndChar);
+		}
+
+		return sb.toString();
 	}
 
 	public static String formatPaddedNumber(long number, int numericPadding) {
@@ -189,5 +188,4 @@ public class StressTestUtils {
 		}
 		return outStrBfr.toString();
 	}
-
 }

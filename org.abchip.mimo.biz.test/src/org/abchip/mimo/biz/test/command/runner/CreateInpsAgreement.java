@@ -16,11 +16,11 @@ import org.abchip.mimo.resource.ResourceWriter;
 public class CreateInpsAgreement implements Callable<Long> {
 
 	Context context;
-	
+
 	public CreateInpsAgreement(Context context) {
-        this.context = context;
-    }
-	
+		this.context = context;
+	}
+
 	@Override
 	public Long call() throws Exception {
 		long time1 = System.currentTimeMillis();
@@ -31,11 +31,8 @@ public class CreateInpsAgreement implements Callable<Long> {
 
 	private void createAgreement() {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
-		createInpsAgreement(resourceManager);
-	}
-
-	private void createInpsAgreement(ResourceManager resourceManager) {
 		String fiscalCode = StressTestUtils.generateRandomString(16, false);
+
 		// Agreement
 		ResourceWriter<Agreement> agreementWriter = resourceManager.getResourceWriter(context, Agreement.class);
 
@@ -44,17 +41,21 @@ public class CreateInpsAgreement implements Callable<Long> {
 		agreement.setAgreementDate(new Date());
 		agreement.setFromDate(new Date());
 		agreement.setDescription("Risarcimento INPS 600€ per soggetto: " + fiscalCode);
-		agreementWriter.create(agreement, true);
-		
+		agreementWriter.create(agreement);
+
 		int row = 1;
 		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Codice fiscale: " + fiscalCode);
-		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Telefono fisso: " + "0" + StressTestUtils.generateRandomString(2, true) + " " + StressTestUtils.generateRandomString(6, true));
-		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Telefono cellulare: " + "3" + StressTestUtils.generateRandomString(2, true) + " " + StressTestUtils.generateRandomString(7, true));
+		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5),
+				"Telefono fisso: " + "0" + StressTestUtils.generateRandomString(2, true) + " " + StressTestUtils.generateRandomString(6, true));
+		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5),
+				"Telefono cellulare: " + "3" + StressTestUtils.generateRandomString(2, true) + " " + StressTestUtils.generateRandomString(7, true));
 		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "E-mail: " + fiscalCode + "@gmail.com");
-		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Iban: " + "IT" + StressTestUtils.generateRandomString(2, true) + StressTestUtils.generateRandomString(1, false) + StressTestUtils.generateRandomString(5, true) + StressTestUtils.generateRandomString(5, true) + StressTestUtils.generateRandomString(12, true));
+		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5),
+				"Iban: " + "IT" + StressTestUtils.generateRandomString(2, true) + StressTestUtils.generateRandomString(1, false) + StressTestUtils.generateRandomString(5, true)
+						+ StressTestUtils.generateRandomString(5, true) + StressTestUtils.generateRandomString(12, true));
 		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Flag gestione separata: SI");
 		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Flag dichiarazioni non mendaci: SI");
-		
+
 		// AgreementTerm
 		TermType termType = resourceManager.getFrame(context, TermType.class).createProxy("INDEMNIFICATION");
 		ResourceWriter<AgreementTerm> agreementTermWriter = resourceManager.getResourceWriter(context, AgreementTerm.class);
@@ -70,10 +71,10 @@ public class CreateInpsAgreement implements Callable<Long> {
 		Date date2 = cal.getTime();
 		agreementTerm.setFromDate(date1);
 		agreementTerm.setThruDate(date2);
-//		agreementTerm.setDescription();
-		agreementTermWriter.create(agreementTerm, true);
+		// agreementTerm.setDescription();
+		agreementTermWriter.create(agreementTerm);
 	}
-	
+
 	private void createRow(ResourceManager resourceManager, Agreement agreement, String seqId, String text) {
 		// AgreementItem
 		ResourceWriter<AgreementItem> agreementItemWriter = resourceManager.getResourceWriter(context, AgreementItem.class);
@@ -81,6 +82,6 @@ public class CreateInpsAgreement implements Callable<Long> {
 		agreementItem.setAgreementId(agreement);
 		agreementItem.setAgreementItemSeqId(seqId);
 		agreementItem.setAgreementText(text);
-		agreementItemWriter.create(agreementItem, true);
+		agreementItemWriter.create(agreementItem);
 	}
 }
