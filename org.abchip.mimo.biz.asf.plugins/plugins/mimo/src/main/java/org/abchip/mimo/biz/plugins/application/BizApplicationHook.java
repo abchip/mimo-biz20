@@ -64,10 +64,12 @@ public class BizApplicationHook {
 
 		Path workPath = Paths.get(APPLICATION.getPaths().getWork(), "ofbiz");
 
+		System.setProperty("ofbiz.home", workPath.toString());
+		System.setProperty("ofbiz.log.dir", APPLICATION.getPaths().getLogs());
+		System.setProperty("derby.system.home", APPLICATION.getPaths().getData() + "/derby");
+
 		try {
-
 			Debug.logInfo("Starting application: " + APPLICATION.getName(), MODULE);
-
 			this.copyToWork(APPLICATION, workPath);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -76,10 +78,6 @@ public class BizApplicationHook {
 		ClassLoader parentLoader = Thread.currentThread().getContextClassLoader();
 		ClassLoader bizLoader = new BizClassLoaderImpl(parentLoader);
 		Thread.currentThread().setContextClassLoader(bizLoader);
-
-		System.setProperty("ofbiz.home", workPath.toString());
-		System.setProperty("ofbiz.log.dir", APPLICATION.getPaths().getLogs());
-		System.setProperty("derby.system.home", APPLICATION.getPaths().getData() + "/derby");
 
 		Start.main(new String[0]);
 	}

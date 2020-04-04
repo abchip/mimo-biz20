@@ -37,12 +37,16 @@ under the License.
         <property name="default-server" value="engine">
             <property name="default-host" value="0.0.0.0"/>
             <property name="jvm-route" value="jvm1"/>
-            <property name="access-log-pattern">
+            
+<!--
+	        <property name="access-log-pattern">
                 <property-value>%h %l %u %t "%r" %s %b "%{Referer}i" "%{User-Agent}i"</property-value>
             </property>
             <property name="access-log-rotate" value="true"/>
             <property name="access-log-prefix" value="access_log."/>
-            <property name="access-log-dir" value="runtime/logs"/>
+            <property name="access-log-dir" value="runtime/logs"/> 
+-->
+            
             <!-- uncomment for cluster support
             <property name="default-server-cluster" value="cluster">
                 <property name="rep-valve-filter">
