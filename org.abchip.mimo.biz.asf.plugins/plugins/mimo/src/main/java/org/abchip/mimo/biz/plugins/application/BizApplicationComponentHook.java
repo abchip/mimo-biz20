@@ -18,7 +18,6 @@ import java.util.List;
 import javax.inject.Inject;
 
 import org.abchip.mimo.application.ApplicationComponent;
-import org.abchip.mimo.application.ComponentStarted;
 import org.abchip.mimo.application.ComponentStarting;
 import org.abchip.mimo.application.ModuleStatus;
 import org.abchip.mimo.biz.BizComponent;
@@ -34,7 +33,8 @@ public class BizApplicationComponentHook {
 	@Inject
 	private ApplicationComponent component;
 
-	@SuppressWarnings("resource")
+	private ComponentConfig componentConfig;
+
 	@ComponentStarting
 	private void starting() {
 		if (!(component instanceof BizComponent))
@@ -53,23 +53,28 @@ public class BizApplicationComponentHook {
 				Path moduleLocation = Paths.get(componentLocation, bizComponent.getModulesDir(), bizModule.getName().toLowerCase());
 				Debug.logInfo("Load module : " + bizModule.getName() + " from location: " + moduleLocation, BizApplicationHook.MODULE);
 
-				ComponentConfig componentConfig = ComponentConfig.getComponentConfig(bizModule.getName(), moduleLocation.toString());
+				componentConfig = ComponentConfig.getComponentConfig(bizModule.getName(), moduleLocation.toString());
 
-				if (!componentConfig.enabled())
+				if (componentConfig == null || !componentConfig.enabled())
 					continue;
 
-				Classpath classpath = buildClasspathFromComponentConfig(componentConfig);
 
-				ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-				if (classLoader instanceof BizClassLoaderImpl) {
+					Classpath classpath = buildClasspathFromComponentConfig(componentConfig);
+
+					ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+					if (!(classLoader instanceof BizClassLoaderImpl)) {
+						System.err.println("Unexpected condition: 9xm8ty98rtn743ytb7q94bv");
+						return;
+					}
+
 					BizClassLoaderImpl bizClassLoader = (BizClassLoaderImpl) classLoader;
 
 					for (URL url : classpath.getUrls()) {
 						Debug.logInfo("Append to classpath: " + url, BizApplicationHook.MODULE);
 						bizClassLoader.addURL(url);
 					}
-				}
-			} catch (IOException | ComponentException e) {
+
+			} catch (ComponentException | IOException e) {
 				throw new RuntimeException(e);
 			}
 		}
@@ -105,12 +110,5 @@ public class BizApplicationComponentHook {
 			}
 		}
 		return classPath;
-	}
-
-	@ComponentStarted
-	private void started() {
-		if (!(component instanceof BizComponent))
-			return;
-
 	}
 }

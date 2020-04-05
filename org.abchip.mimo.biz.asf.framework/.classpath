@@ -90,12 +90,12 @@
 	<classpathentry excluding="org/apache/ofbiz/testtools/EntityXmlAssertTest.java|org/apache/ofbiz/testtools/GroovyScriptTestCase.java|org/apache/ofbiz/testtools/" kind="src" path="framework/testtools/src/main/java"/>
 	<classpathentry excluding="org/apache/ofbiz/webtools/artifactinfo/RunTestEvents.java" kind="src" path="framework/webtools/src/main/java"/>
 	<classpathentry excluding="org/apache/ofbiz/widget/test/" kind="src" path="framework/widget/src/main/java"/>
+	<classpathentry kind="src" path="framework/service/src/main/groovy"/>
+	<classpathentry kind="src" path="framework/webapp/src/main/java"/>
 	<classpathentry kind="src" path="framework/base/config"/>
 	<classpathentry kind="src" path="framework/base/dtd"/>
 	<classpathentry kind="src" path="framework/service/dtd"/>
 	<classpathentry kind="src" path="framework/entity/dtd"/>
-	<classpathentry kind="src" path="framework/service/src/main/groovy"/>
-	<classpathentry kind="src" path="framework/webapp/src/main/java"/>
 	<classpathentry kind="src" path="framework/webapp/config"/>
 	<classpathentry kind="src" path="framework/webapp/dtd"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>

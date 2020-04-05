@@ -9,8 +9,6 @@
 package org.abchip.mimo.biz.plugins.application;
 
 import java.io.IOException;
-import java.net.URL;
-import java.net.URLClassLoader;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -58,7 +56,6 @@ public class BizApplicationHook {
 		return APPLICATION;
 	}
 
-	@SuppressWarnings("resource")
 	@ApplicationStarting
 	private void starting() {
 
@@ -84,23 +81,12 @@ public class BizApplicationHook {
 		Start.main(new String[0]);
 	}
 
-	@SuppressWarnings("resource")
 	@ApplicationStarted
 	private void started() throws StartupException {
 
 		Config config = Start.getInstance().getConfig();
 		List<ContainerConfig.Configuration> componentContainerConfigs = filterContainersHavingMatchingLoaders(config.loaders, ComponentConfig.getAllConfigurations());
 		BizApplicationHook.CONTAINERS.addAll(loadContainersFromConfigurations(componentContainerConfigs, config, new ArrayList<StartupCommand>()));
-
-		ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-		if (classLoader instanceof BizClassLoaderImpl) {
-			try (BizClassLoaderImpl bizClassLoader = (BizClassLoaderImpl) classLoader) {
-				URL[] componentURLs = bizClassLoader.getURLs();
-				Thread.currentThread().setContextClassLoader(new URLClassLoader(componentURLs, bizClassLoader.getParent()));
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}
 
 		for (Container container : CONTAINERS) {
 			Debug.logInfo("Starting container " + container.getName(), MODULE);

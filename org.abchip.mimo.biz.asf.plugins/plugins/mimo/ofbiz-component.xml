@@ -20,7 +20,6 @@
 	<!-- place the config directory on the classpath to access configuration 
 		files -->
 	<classpath type="dir" location="config" />
-	<classpath type="dir" location="dtd" />
 <!-- 	<classpath type="jar" location="product/plugins/*"/>  -->
 
 	<!-- entity resources: model(s), eca(s), group, and data definitions -->

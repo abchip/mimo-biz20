@@ -8,8 +8,11 @@
  */
 package org.abchip.mimo.biz.plugins.application;
 
+import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLClassLoader;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.ofbiz.base.start.Config;
@@ -17,15 +20,37 @@ import org.apache.ofbiz.base.start.StartupCommand;
 import org.apache.ofbiz.base.start.StartupException;
 import org.apache.ofbiz.base.start.StartupLoader;
 
-public class BizClassLoaderImpl extends URLClassLoader {
+public class BizClassLoaderImpl extends ClassLoader {
+
+	private List<URL> urls = null;
 
 	public BizClassLoaderImpl(ClassLoader parent) {
-		super(new URL[0], parent);
+		super(parent);
+		this.urls = new ArrayList<URL>();
+	}
+
+	protected void addURL(URL url) {
+		this.urls.add(url);
 	}
 
 	@Override
-	protected void addURL(URL url) {
-		super.addURL(url);
+	public URL findResource(String name) {
+
+		if (name.contains("/"))
+			return null;
+
+		for (URL url : urls) {
+			Path path = Paths.get(url.getFile(), name);
+			if (path.toFile().exists()) {
+				try {
+					return path.toUri().toURL();
+				} catch (MalformedURLException e) {
+					continue;
+				}
+			}
+		}
+
+		return null;
 	}
 
 	@Override
