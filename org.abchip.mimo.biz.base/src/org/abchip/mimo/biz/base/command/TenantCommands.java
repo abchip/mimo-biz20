@@ -82,18 +82,14 @@ public class TenantCommands extends BaseCommandProviderImpl {
 	public void _createTest(CommandInterpreter interpreter) throws Exception {
 
 		DBType dbType = DBType.valueOf(nextArgument(interpreter));
-		String cleanString = nextArgument(interpreter);
+		boolean update = Boolean.parseBoolean(nextArgument(interpreter));
 
 		Context context = this.getContext();
 
 		String tenantId = "test";
 		String tenantName = "Test";
-
-		boolean clean = false;
-		if (cleanString != null)
-			clean = Boolean.parseBoolean(cleanString);
-
-		TenantServices.createTenant(context, tenantId, tenantName, dbType, clean);
+		
+		TenantServices.createTenant(context, tenantId, tenantName, dbType, update);
 		SeedServices.loadSeeds(context, "seed", tenantId, true);
 		SeedServices.loadSeed(context, "mimo", tenantId, true);
 		SeedServices.loadSeed(context, "party", tenantId, true);

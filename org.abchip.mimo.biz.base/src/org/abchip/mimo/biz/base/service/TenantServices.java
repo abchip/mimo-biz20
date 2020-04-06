@@ -26,7 +26,7 @@ public class TenantServices {
 		D, P
 	}
 
-	public static void createTenant(Context context, String tenantId, String tenantName, DBType dbType, boolean clean) {
+	public static void createTenant(Context context, String tenantId, String tenantName, DBType dbType, boolean update) {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		// Tenant
@@ -34,14 +34,14 @@ public class TenantServices {
 		Tenant tenant = tenantWriter.make();
 		tenant.setTenantId(tenantId);
 		tenant.setTenantName(tenantName);
-		tenantWriter.create(tenant, clean);
+		tenantWriter.create(tenant, update);
 
 		// TenantDomainName
 		ResourceWriter<TenantDomainName> tenantDomainNameWriter = resourceManager.getResourceWriter(context, TenantDomainName.class);
 		TenantDomainName tenantDomainName = tenantDomainNameWriter.make();
 		tenantDomainName.setTenantId(tenant);
 		tenantDomainName.setDomainName(tenantId + ".abchip.net");
-		tenantDomainNameWriter.create(tenantDomainName, clean);
+		tenantDomainNameWriter.create(tenantDomainName, update);
 
 		// TenantDataSource
 		ResourceWriter<TenantDataSource> tenantDataSourceWriter = resourceManager.getResourceWriter(context, TenantDataSource.class);
@@ -62,7 +62,7 @@ public class TenantServices {
 			break;
 		}
 
-		tenantDataSourceWriter.create(tenantDataSource, clean);
+		tenantDataSourceWriter.create(tenantDataSource, update);
 	}
 
 	public static void createUserTenant(Context context, String tenantId, boolean clean) {

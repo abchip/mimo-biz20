@@ -80,28 +80,35 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			TransactionUtil.commit(beganTransaction);
 		} catch (GenericEntityException e) {
 			try {
-				TransactionUtil.rollback(beganTransaction, null, e);
+				String errMsg = "Failure in create operation for entity [" + this.getFrame().getName() + "/" + entity.getID() + "]: " + e.toString() + ". Rolling back transaction.";
+				TransactionUtil.rollback(beganTransaction, errMsg, e);
 			} catch (GenericTransactionException e1) {
+				// Debug.logError(gte2, "Unable to rollback transaction", module);
 				e1.printStackTrace();
 			}
 			throw new RuntimeException(e);
 		}
 	}
 
-	private void doCreate(Frame<?> frame, EntityIdentifiable entity, boolean replace) throws GenericEntityException {
+	@Override
+	public void update(E entity) {
+		boolean beganTransaction = false;
 
-		if (this.delegator.getModelReader().getModelEntityNoCheck(frame.getName()) == null)
-			return;
+		try {
+			beganTransaction = TransactionUtil.begin();
 
-		Frame<?> ako = frame.ako();
-		if (ako != null)
-			doCreate(ako, entity, replace);
+			this.doUpdate(entity.isa(), entity);
 
-		GenericValue genericValue = EntityUtils.toBizEntity(this.delegator, frame, entity);
-		if (replace)
-			this.delegator.createOrStore(genericValue);
-		else
-			this.delegator.create(genericValue);
+			TransactionUtil.commit(beganTransaction);
+		} catch (GenericEntityException e) {
+			try {
+				String errMsg = "Failure in update operation for entity [" + this.getFrame().getName() + "/" + entity.getID() + "]: " + e.toString() + ". Rolling back transaction.";
+				TransactionUtil.rollback(beganTransaction, errMsg, e);
+			} catch (GenericTransactionException e1) {
+				e1.printStackTrace();
+			}
+			throw new RuntimeException(e);
+		}
 	}
 
 	@Override
@@ -117,35 +124,48 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			TransactionUtil.commit(beganTransaction);
 		} catch (GenericEntityException e) {
 			try {
-				TransactionUtil.rollback(beganTransaction, null, e);
+				String errMsg = "Failure in delete operation for entity [" + this.getFrame().getName() + "/" + entity.getID() + "]: " + e.toString() + ". Rolling back transaction.";
+				TransactionUtil.rollback(beganTransaction, errMsg, e);
 			} catch (GenericTransactionException e1) {
+				// Debug.logError(gte2, "Unable to rollback transaction", module);
 				e1.printStackTrace();
 			}
 			throw new RuntimeException(e);
 		}
 	}
 
-	private void doDelete(Frame<?> frame, EntityIdentifiable entity) throws GenericEntityException {
-
-		GenericValue genericValue = EntityUtils.toBizEntity(this.delegator, frame, entity);
-		this.delegator.removeValue(genericValue);
-
-		if (frame.ako() != null)
-			doDelete(frame.ako(), entity);
-	}
-
 	@Override
 	public String nextSequence() {
 
-		if(this.frame.getKeys().size() != 1)
+		if (this.frame.getKeys().size() != 1)
 			return null;
 
 		// first level non abstract
 		Frame<?> frame = this.frame;
 		while (frame.ako() != null && !frame.ako().isAbstract())
 			frame = frame.ako();
-		
-		return this.delegator.getNextSeqId(frame.getName());
+
+		String nextSeq = null;
+
+		boolean beganTransaction = false;
+
+		try {
+			beganTransaction = TransactionUtil.begin();
+
+			nextSeq = this.delegator.getNextSeqId(frame.getName());
+
+			TransactionUtil.commit(beganTransaction);
+		} catch (GenericEntityException e) {
+			try {
+				String errMsg = "General error in getting a sequenced ID for frame " + this.getFrame().getID();
+				TransactionUtil.rollback(beganTransaction, errMsg, e);
+			} catch (GenericTransactionException e1) {
+				// Debug.logError(e, errMsg, module);
+				e1.printStackTrace();
+			}
+			throw new RuntimeException(e);
+		}
+		return nextSeq;
 	}
 
 	@Override
@@ -153,45 +173,40 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 		E entity = null;
 
+		DynamicViewEntity dynamicViewEntity = buildDynamicView(this.modelEntity);
+
+		EntityQuery eq = EntityQuery.use(delegator);
+		eq = eq.from(dynamicViewEntity);
+
+		GenericPK primaryKey = GenericPK.create(modelEntity);
+		String[] keys = name.split("/");
+		int i = 0;
+		for (String key : keys) {
+			Slot slot = this.getFrame().getSlot(this.modelEntity.getPkFieldNames().get(i));
+			Object value = EntityUtils.toBizValue(slot, key);
+			primaryKey.set(slot.getName(), value);
+			i++;
+		}
+
+		eq = eq.where(EntityCondition.makeCondition(primaryKey, EntityJoinOperator.AND));
+
+		boolean beganTransaction = false;
 		try {
-			GenericPK primaryKey = GenericPK.create(modelEntity);
-
-			String[] keys = name.split("/");
-			int i = 0;
-			for (String key : keys) {
-				Slot slot = this.getFrame().getSlot(this.modelEntity.getPkFieldNames().get(i));
-				Object value = EntityUtils.toBizValue(slot, key);
-				primaryKey.set(slot.getName(), value);
-				i++;
+			beganTransaction = TransactionUtil.begin();
+			GenericValue genericValue = eq.queryOne();
+			if (genericValue != null) {
+				entity = EntityUtils.toEntity(frame, genericValue);
+				if (proxy)
+					entity = frame.createProxy(entity.getID());
 			}
 
-			DynamicViewEntity dynamicViewEntity = buildDynamicView(this.modelEntity);
-
-			EntityQuery eq = EntityQuery.use(delegator);
-			eq = eq.from(dynamicViewEntity);
-			eq = eq.where(EntityCondition.makeCondition(primaryKey, EntityJoinOperator.AND));
-
-			boolean beganTransaction = false;
+			TransactionUtil.commit(beganTransaction);
+		} catch (GenericEntityException e) {
 			try {
-				beganTransaction = TransactionUtil.begin();
-				GenericValue genericValue = eq.queryOne();
-				if (genericValue != null) {
-					entity = EntityUtils.toEntity(frame, genericValue);
-					if (proxy)
-						entity = frame.createProxy(entity.getID());
-				}
-
-				TransactionUtil.commit(beganTransaction);
-			} catch (GenericEntityException e) {
-				try {
-					TransactionUtil.rollback(beganTransaction, null, e);
-				} catch (GenericTransactionException e1) {
-					e1.printStackTrace();
-				}
-				throw new RuntimeException(e);
+				TransactionUtil.rollback(beganTransaction, null, e);
+			} catch (GenericTransactionException e1) {
+				e1.printStackTrace();
 			}
-
-		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
 
@@ -201,15 +216,13 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 	@Override
 	public List<E> read(String filter, String fields, String order, int limit, boolean proxy) {
 
-		List<E> entities = new ArrayList<E>();
+		DynamicViewEntity dynamicViewEntity = buildDynamicView(this.modelEntity);
 
 		OFBizFilterAnalyzer analyzer = null;
 		if (filter != null && !filter.isEmpty()) {
 			analyzer = analyzeFilter(delegator, this.modelEntity.getEntityName(), filter);
 			filter = analyzer.getStringFilter();
 		}
-
-		DynamicViewEntity dynamicViewEntity = buildDynamicView(this.modelEntity);
 
 		if (analyzer != null && analyzer.getListEntities().size() > 0) {
 			for (String linkedName : analyzer.getListEntities()) {
@@ -250,6 +263,8 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		if (limit > 0)
 			eq.maxRows(limit);
 
+		List<E> entities = new ArrayList<E>();
+		
 		boolean beganTransaction = false;
 		try {
 			beganTransaction = TransactionUtil.begin();
@@ -273,24 +288,29 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		return entities;
 	}
 
-	@Override
-	public void update(E entity) {
-		boolean beganTransaction = false;
+	private void doCreate(Frame<?> frame, EntityIdentifiable entity, boolean replace) throws GenericEntityException {
 
-		try {
-			beganTransaction = TransactionUtil.begin();
+		if (this.delegator.getModelReader().getModelEntityNoCheck(frame.getName()) == null)
+			return;
 
-			this.doUpdate(entity.isa(), entity);
+		Frame<?> ako = frame.ako();
+		if (ako != null)
+			doCreate(ako, entity, replace);
 
-			TransactionUtil.commit(beganTransaction);
-		} catch (GenericEntityException e) {
-			try {
-				TransactionUtil.rollback(beganTransaction, null, e);
-			} catch (GenericTransactionException e1) {
-				e1.printStackTrace();
-			}
-			throw new RuntimeException(e);
-		}
+		GenericValue genericValue = EntityUtils.toBizEntity(this.delegator, frame, entity);
+		if (replace)
+			this.delegator.createOrStore(genericValue);
+		else
+			this.delegator.create(genericValue);
+	}
+
+	private void doDelete(Frame<?> frame, EntityIdentifiable entity) throws GenericEntityException {
+
+		GenericValue genericValue = EntityUtils.toBizEntity(this.delegator, frame, entity);
+		this.delegator.removeValue(genericValue);
+
+		if (frame.ako() != null)
+			doDelete(frame.ako(), entity);
 	}
 
 	private void doUpdate(Frame<?> frame, EntityIdentifiable entity) throws GenericEntityException {
