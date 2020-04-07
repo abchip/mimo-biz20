@@ -22,6 +22,7 @@ import org.abchip.mimo.entity.Slot;
 import org.abchip.mimo.parser.sqlite.SQLiteLexer;
 import org.abchip.mimo.parser.sqlite.SQLiteParser;
 import org.abchip.mimo.resource.impl.ResourceImpl;
+import org.abchip.mimo.util.Logs;
 import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
@@ -39,6 +40,7 @@ import org.apache.ofbiz.entity.model.ModelKeyMap;
 import org.apache.ofbiz.entity.transaction.GenericTransactionException;
 import org.apache.ofbiz.entity.transaction.TransactionUtil;
 import org.apache.ofbiz.entity.util.EntityQuery;
+import org.osgi.service.log.Logger;
 
 public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImpl<E> {
 
@@ -46,6 +48,8 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+
+	private final static Logger LOGGER = Logs.getLogger(OFBizResourceImpl.class);
 
 	private Frame<E> frame = null;
 	private Delegator delegator = null;
@@ -216,6 +220,8 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 	@Override
 	public List<E> read(String filter, String fields, String order, int limit, boolean proxy) {
 
+		LOGGER.trace("Read frame " + this.getFrame().getName());
+
 		DynamicViewEntity dynamicViewEntity = buildDynamicView(this.modelEntity);
 
 		OFBizFilterAnalyzer analyzer = null;
@@ -264,7 +270,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			eq.maxRows(limit);
 
 		List<E> entities = new ArrayList<E>();
-		
+
 		boolean beganTransaction = false;
 		try {
 			beganTransaction = TransactionUtil.begin();

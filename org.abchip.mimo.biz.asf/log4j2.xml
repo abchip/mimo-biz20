@@ -61,7 +61,8 @@ under the License.
         <logger name="org.apache" level="warn"/>
         <logger name="org.apache.ofbiz" level="all"/>
         <logger name="org.apache.ofbiz.base.converter.Converters" level="warn"/>
-        <logger name="freemarker" level="warn"/>
+        <logger name="freemarker" level="warn"/>       
+        <logger name="org.abchip.mimo" level="all"/>
 
         <Root level="all">
             <AppenderRef ref="async"/>

@@ -35,7 +35,7 @@ public class BizClassLoaderImpl extends ClassLoader {
 
 	@Override
 	public URL findResource(String name) {
-
+		
 		if (name.contains("/"))
 			return null;
 

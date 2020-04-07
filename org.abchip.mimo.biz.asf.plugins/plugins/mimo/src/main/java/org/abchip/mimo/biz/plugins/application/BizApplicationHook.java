@@ -29,6 +29,7 @@ import org.abchip.mimo.application.ComponentStatus;
 import org.abchip.mimo.application.ModuleStatus;
 import org.abchip.mimo.biz.BizComponent;
 import org.abchip.mimo.biz.BizModule;
+import org.abchip.mimo.util.Logs;
 import org.apache.commons.io.FileUtils;
 import org.apache.ofbiz.base.component.ComponentConfig;
 import org.apache.ofbiz.base.container.Container;
@@ -38,8 +39,8 @@ import org.apache.ofbiz.base.start.Config;
 import org.apache.ofbiz.base.start.Start;
 import org.apache.ofbiz.base.start.StartupCommand;
 import org.apache.ofbiz.base.start.StartupException;
-import org.apache.ofbiz.base.util.Debug;
 import org.apache.ofbiz.base.util.UtilValidate;
+import org.osgi.service.log.Logger;
 
 import edu.emory.mathcs.backport.java.util.Collections;
 
@@ -48,7 +49,7 @@ public class BizApplicationHook {
 	@Inject
 	private static Application APPLICATION;
 
-	protected static String MODULE = null;
+	private final static Logger LOGGER = Logs.getLogger(BizApplicationHook.class);
 
 	protected static List<Container> CONTAINERS = new LinkedList<>();
 
@@ -59,8 +60,6 @@ public class BizApplicationHook {
 	@ApplicationStarting
 	private void starting() {
 
-		MODULE = "Application[" + APPLICATION.getName() + "]";
-
 		Path workPath = Paths.get(APPLICATION.getPaths().getWork(), "ofbiz");
 
 		System.setProperty("ofbiz.home", workPath.toString());
@@ -68,7 +67,7 @@ public class BizApplicationHook {
 		System.setProperty("derby.system.home", APPLICATION.getPaths().getData() + "/derby");
 
 		try {
-			Debug.logInfo("Starting application: " + APPLICATION.getName(), MODULE);
+			LOGGER.info("Starting application: " + APPLICATION.getName());
 			this.copyToWork(APPLICATION, workPath);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -89,16 +88,16 @@ public class BizApplicationHook {
 		BizApplicationHook.CONTAINERS.addAll(loadContainersFromConfigurations(componentContainerConfigs, config, new ArrayList<StartupCommand>()));
 
 		for (Container container : CONTAINERS) {
-			Debug.logInfo("Starting container " + container.getName(), MODULE);
+			LOGGER.info("Starting container " + container.getName());
 			try {
 				container.start();
 			} catch (ContainerException e) {
 				throw new StartupException("Cannot start() " + container.getClass().getName(), e);
 			}
-			Debug.logInfo("Started container " + container.getName(), MODULE);
+			LOGGER.info("Started container " + container.getName());
 		}
 
-		Debug.logInfo("Started application: " + APPLICATION.getName(), MODULE);
+		LOGGER.info("Started application: " + APPLICATION.getName());
 	}
 
 	private List<ContainerConfig.Configuration> filterContainersHavingMatchingLoaders(List<String> loaders, Collection<ContainerConfig.Configuration> containerConfigs) {
@@ -111,10 +110,10 @@ public class BizApplicationHook {
 
 		List<Container> loadContainers = new ArrayList<>();
 		for (ContainerConfig.Configuration containerCfg : containerConfigs) {
-			Debug.logInfo("Loading container: " + containerCfg.name, MODULE);
+			LOGGER.info("Loading container: " + containerCfg.name);
 			Container tmpContainer = loadContainer(config.containerConfig, containerCfg, ofbizCommands);
 			loadContainers.add(tmpContainer);
-			Debug.logInfo("Loaded container: " + containerCfg.name, MODULE);
+			LOGGER.info("Loaded container: " + containerCfg.name);
 		}
 		return loadContainers;
 	}
@@ -156,22 +155,22 @@ public class BizApplicationHook {
 	@ApplicationStopping
 	private void stopping() {
 
-		Debug.logInfo("Stopping application", MODULE);
+		LOGGER.info("Stopping application");
 
 		List<Container> reversedContainerList = new ArrayList<>(CONTAINERS);
 		Collections.reverse(reversedContainerList);
 
 		for (Container loadedContainer : reversedContainerList) {
-			Debug.logInfo("Stopping container " + loadedContainer.getName(), MODULE);
+			LOGGER.info("Stopping container " + loadedContainer.getName());
 			try {
 				loadedContainer.stop();
 			} catch (ContainerException e) {
-				Debug.logError(e, MODULE);
+				LOGGER.error(e.getMessage());
 			}
-			Debug.logInfo("Stopped container " + loadedContainer.getName(), MODULE);
+			LOGGER.info("Stopped container " + loadedContainer.getName());
 		}
 
-		Debug.logInfo("Stopped application", MODULE);
+		LOGGER.info("Stopped application");
 
 	}
 
@@ -197,14 +196,14 @@ public class BizApplicationHook {
 
 			String bundleLocation = application.locateBundle(bizComponent.getPlugin());
 
-			Debug.logInfo("Copying component " + bizComponent.getName() + " from bundle " + bundleLocation + " to " + componentPath, MODULE);
+			LOGGER.info("Copying component " + bizComponent.getName() + " from bundle " + bundleLocation + " to " + componentPath);
 
 			for (BizModule bizModule : bizComponent.getBizModules()) {
 				if (bizModule.getStatus() != ModuleStatus.ACTIVE)
 					continue;
 
 				Path moduleLocation = Paths.get(bundleLocation, bizComponent.getModulesDir(), bizModule.getName().toLowerCase());
-				Debug.logInfo("Copy module " + bizModule.getName() + " from bundle " + moduleLocation, MODULE);
+				LOGGER.info("Copy module " + bizModule.getName() + " from bundle " + moduleLocation);
 
 				Path moduleDest = componentPath.resolve(bizModule.getName().toLowerCase());
 				FileUtils.copyDirectory(moduleLocation.toFile(), moduleDest.toFile());
@@ -214,7 +213,7 @@ public class BizApplicationHook {
 				FileUtils.deleteDirectory(moduleDest.resolve("src").toFile());
 			}
 
-			Debug.logInfo("Copied component " + bizComponent.getName(), MODULE);
+			LOGGER.info("Copied component " + bizComponent.getName());
 		}
 	}
 }

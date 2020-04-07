@@ -22,16 +22,19 @@ import org.abchip.mimo.application.ComponentStarting;
 import org.abchip.mimo.application.ModuleStatus;
 import org.abchip.mimo.biz.BizComponent;
 import org.abchip.mimo.biz.BizModule;
+import org.abchip.mimo.util.Logs;
 import org.apache.ofbiz.base.component.ComponentConfig;
 import org.apache.ofbiz.base.component.ComponentException;
 import org.apache.ofbiz.base.start.Classpath;
-import org.apache.ofbiz.base.util.Debug;
 import org.apache.ofbiz.base.util.FileUtil;
+import org.osgi.service.log.Logger;
 
 public class BizApplicationComponentHook {
 
 	@Inject
 	private ApplicationComponent component;
+
+	private final static Logger LOGGER = Logs.getLogger(BizApplicationComponentHook.class);
 
 	private ComponentConfig componentConfig;
 
@@ -43,7 +46,7 @@ public class BizApplicationComponentHook {
 		BizComponent bizComponent = (BizComponent) component;
 		String componentLocation = BizApplicationHook.getApplication().locateBundle(bizComponent.getPlugin());
 
-		Debug.logInfo("Loading component : " + bizComponent.getName() + " from location: " + componentLocation, BizApplicationHook.MODULE);
+		LOGGER.info("Loading component : " + bizComponent.getName() + " from location: " + componentLocation);
 
 		for (BizModule bizModule : bizComponent.getBizModules()) {
 			if (bizModule.getStatus() != ModuleStatus.ACTIVE)
@@ -51,35 +54,34 @@ public class BizApplicationComponentHook {
 
 			try {
 				Path moduleLocation = Paths.get(componentLocation, bizComponent.getModulesDir(), bizModule.getName().toLowerCase());
-				Debug.logInfo("Load module : " + bizModule.getName() + " from location: " + moduleLocation, BizApplicationHook.MODULE);
+				LOGGER.info("Load module : " + bizModule.getName() + " from location: " + moduleLocation);
 
 				componentConfig = ComponentConfig.getComponentConfig(bizModule.getName(), moduleLocation.toString());
 
 				if (componentConfig == null || !componentConfig.enabled())
 					continue;
 
+				Classpath classpath = buildClasspathFromComponentConfig(componentConfig);
 
-					Classpath classpath = buildClasspathFromComponentConfig(componentConfig);
+				ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+				if (!(classLoader instanceof BizClassLoaderImpl)) {
+					System.err.println("Unexpected condition: 9xm8ty98rtn743ytb7q94bv");
+					return;
+				}
 
-					ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
-					if (!(classLoader instanceof BizClassLoaderImpl)) {
-						System.err.println("Unexpected condition: 9xm8ty98rtn743ytb7q94bv");
-						return;
-					}
+				BizClassLoaderImpl bizClassLoader = (BizClassLoaderImpl) classLoader;
 
-					BizClassLoaderImpl bizClassLoader = (BizClassLoaderImpl) classLoader;
-
-					for (URL url : classpath.getUrls()) {
-						Debug.logInfo("Append to classpath: " + url, BizApplicationHook.MODULE);
-						bizClassLoader.addURL(url);
-					}
+				for (URL url : classpath.getUrls()) {
+					LOGGER.info("Append to classpath: " + url);
+					bizClassLoader.addURL(url);
+				}
 
 			} catch (ComponentException | IOException e) {
 				throw new RuntimeException(e);
 			}
 		}
 
-		Debug.logInfo("Loaded component : " + bizComponent.getName(), BizApplicationHook.MODULE);
+		LOGGER.info("Loaded component : " + bizComponent.getName());
 
 	}
 
@@ -92,7 +94,7 @@ public class BizApplicationComponentHook {
 		for (ComponentConfig.ClasspathInfo cp : classpathInfos) {
 			String location = cp.location.replace('\\', '/');
 			if (!"jar".equals(cp.type) && !"dir".equals(cp.type)) {
-				Debug.logError("Classpath type '" + cp.type + "' is not supported; '" + location + "' not loaded", BizApplicationHook.MODULE);
+				LOGGER.error("Classpath type '" + cp.type + "' is not supported; '" + location + "' not loaded");
 				continue;
 			}
 
@@ -106,7 +108,7 @@ public class BizApplicationComponentHook {
 					classPath.addFilesFromPath(path);
 				}
 			} else {
-				Debug.logWarning("Location '" + configRoot + dirLoc + "' does not exist", BizApplicationHook.MODULE);
+				LOGGER.warn("Location '" + configRoot + dirLoc + "' does not exist");
 			}
 		}
 		return classPath;
