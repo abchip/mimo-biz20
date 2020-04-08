@@ -49,7 +49,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private final static Logger LOGGER = Logs.getLogger(OFBizResourceImpl.class);
+	private final Logger LOGGER = Logs.getLogger(OFBizResourceImpl.class);
 
 	private Frame<E> frame = null;
 	private Delegator delegator = null;

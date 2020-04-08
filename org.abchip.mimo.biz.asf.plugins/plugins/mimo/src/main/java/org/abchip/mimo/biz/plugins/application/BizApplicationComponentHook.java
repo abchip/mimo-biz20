@@ -34,7 +34,7 @@ public class BizApplicationComponentHook {
 	@Inject
 	private ApplicationComponent component;
 
-	private final static Logger LOGGER = Logs.getLogger(BizApplicationComponentHook.class);
+	private final Logger LOGGER = Logs.getLogger(BizApplicationComponentHook.class);
 
 	private ComponentConfig componentConfig;
 
@@ -46,7 +46,7 @@ public class BizApplicationComponentHook {
 		BizComponent bizComponent = (BizComponent) component;
 		String componentLocation = BizApplicationHook.getApplication().locateBundle(bizComponent.getPlugin());
 
-		LOGGER.info("Loading component : " + bizComponent.getName() + " from location: " + componentLocation);
+		LOGGER.info("Loading biz-component {}  from location {}", bizComponent.getName(), componentLocation);
 
 		for (BizModule bizModule : bizComponent.getBizModules()) {
 			if (bizModule.getStatus() != ModuleStatus.ACTIVE)
@@ -54,7 +54,7 @@ public class BizApplicationComponentHook {
 
 			try {
 				Path moduleLocation = Paths.get(componentLocation, bizComponent.getModulesDir(), bizModule.getName().toLowerCase());
-				LOGGER.info("Load module : " + bizModule.getName() + " from location: " + moduleLocation);
+				LOGGER.info("Load module {} from location {}", bizModule.getName(), moduleLocation);
 
 				componentConfig = ComponentConfig.getComponentConfig(bizModule.getName(), moduleLocation.toString());
 
@@ -72,7 +72,7 @@ public class BizApplicationComponentHook {
 				BizClassLoaderImpl bizClassLoader = (BizClassLoaderImpl) classLoader;
 
 				for (URL url : classpath.getUrls()) {
-					LOGGER.info("Append to classpath: " + url);
+					LOGGER.info("Append to classpath {}", url);
 					bizClassLoader.addURL(url);
 				}
 
@@ -81,7 +81,7 @@ public class BizApplicationComponentHook {
 			}
 		}
 
-		LOGGER.info("Loaded component : " + bizComponent.getName());
+		LOGGER.info("Loaded biz-component {}", bizComponent.getName());
 
 	}
 

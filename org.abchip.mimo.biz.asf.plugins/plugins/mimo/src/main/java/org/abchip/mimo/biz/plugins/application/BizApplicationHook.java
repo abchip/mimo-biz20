@@ -49,7 +49,7 @@ public class BizApplicationHook {
 	@Inject
 	private static Application APPLICATION;
 
-	private final static Logger LOGGER = Logs.getLogger(BizApplicationHook.class);
+	private final Logger LOGGER = Logs.getLogger(BizApplicationHook.class);
 
 	protected static List<Container> CONTAINERS = new LinkedList<>();
 
@@ -67,10 +67,10 @@ public class BizApplicationHook {
 		System.setProperty("derby.system.home", APPLICATION.getPaths().getData() + "/derby");
 
 		try {
-			LOGGER.info("Starting Biz application: " + APPLICATION.getName());
 			this.copyToWork(APPLICATION, workPath);
 		} catch (Exception e) {
-			e.printStackTrace();
+			LOGGER.error(e.getMessage());
+			return;
 		}
 
 		ClassLoader parentLoader = Thread.currentThread().getContextClassLoader();
@@ -88,16 +88,15 @@ public class BizApplicationHook {
 		BizApplicationHook.CONTAINERS.addAll(loadContainersFromConfigurations(componentContainerConfigs, config, new ArrayList<StartupCommand>()));
 
 		for (Container container : CONTAINERS) {
-			LOGGER.info("Starting container " + container.getName());
+			LOGGER.info("Starting container {}", container.getName());
 			try {
 				container.start();
 			} catch (ContainerException e) {
+				LOGGER.error(e.getMessage());
 				throw new StartupException("Cannot start() " + container.getClass().getName(), e);
 			}
-			LOGGER.info("Started container " + container.getName());
+			LOGGER.info("Started container {}", container.getName());
 		}
-
-		LOGGER.info("Started Biz application: " + APPLICATION.getName());
 	}
 
 	private List<ContainerConfig.Configuration> filterContainersHavingMatchingLoaders(List<String> loaders, Collection<ContainerConfig.Configuration> containerConfigs) {
@@ -110,10 +109,10 @@ public class BizApplicationHook {
 
 		List<Container> loadContainers = new ArrayList<>();
 		for (ContainerConfig.Configuration containerCfg : containerConfigs) {
-			LOGGER.info("Loading container: " + containerCfg.name);
+			LOGGER.info("Loading container {}", containerCfg.name);
 			Container tmpContainer = loadContainer(config.containerConfig, containerCfg, ofbizCommands);
 			loadContainers.add(tmpContainer);
-			LOGGER.info("Loaded container: " + containerCfg.name);
+			LOGGER.info("Loaded container {}", containerCfg.name);
 		}
 		return loadContainers;
 	}
@@ -125,6 +124,7 @@ public class BizApplicationHook {
 		try {
 			containerClass = loader.loadClass(containerCfg.className);
 		} catch (ClassNotFoundException e) {
+			LOGGER.error(e.getMessage());
 			throw new StartupException("Cannot locate container class", e);
 		}
 		if (containerClass == null) {
@@ -136,6 +136,7 @@ public class BizApplicationHook {
 		try {
 			containerObj = (Container) containerClass.getDeclaredConstructor().newInstance();
 		} catch (ReflectiveOperationException e) {
+			LOGGER.error(e.getMessage());
 			throw new StartupException("Cannot create " + containerCfg.name, e);
 		}
 		if (containerObj == null) {
@@ -146,6 +147,7 @@ public class BizApplicationHook {
 		try {
 			containerObj.init(ofbizCommands, containerCfg.name, configFile);
 		} catch (ContainerException e) {
+			LOGGER.error(e.getMessage());
 			throw new StartupException("Cannot init() " + containerCfg.name, e);
 		}
 
@@ -154,8 +156,6 @@ public class BizApplicationHook {
 
 	@ApplicationStopping
 	private void stopping() {
-
-		LOGGER.info("Stopping application");
 
 		List<Container> reversedContainerList = new ArrayList<>(CONTAINERS);
 		Collections.reverse(reversedContainerList);
@@ -169,9 +169,6 @@ public class BizApplicationHook {
 			}
 			LOGGER.info("Stopped container " + loadedContainer.getName());
 		}
-
-		LOGGER.info("Stopped application");
-
 	}
 
 	@ApplicationStopped
@@ -196,14 +193,14 @@ public class BizApplicationHook {
 
 			String bundleLocation = application.locateBundle(bizComponent.getPlugin());
 
-			LOGGER.info("Copying component " + bizComponent.getName() + " from bundle " + bundleLocation + " to " + componentPath);
+			LOGGER.info("Copy component {} from bundle {} to {}", bizComponent.getName(), bundleLocation, componentPath);
 
 			for (BizModule bizModule : bizComponent.getBizModules()) {
 				if (bizModule.getStatus() != ModuleStatus.ACTIVE)
 					continue;
 
 				Path moduleLocation = Paths.get(bundleLocation, bizComponent.getModulesDir(), bizModule.getName().toLowerCase());
-				LOGGER.info("Copy module " + bizModule.getName() + " from bundle " + moduleLocation);
+				LOGGER.info("Copy module {} from bundle {}", bizModule.getName(), moduleLocation);
 
 				Path moduleDest = componentPath.resolve(bizModule.getName().toLowerCase());
 				FileUtils.copyDirectory(moduleLocation.toFile(), moduleDest.toFile());
@@ -213,7 +210,7 @@ public class BizApplicationHook {
 				FileUtils.deleteDirectory(moduleDest.resolve("src").toFile());
 			}
 
-			LOGGER.info("Copied component " + bizComponent.getName());
+			LOGGER.info("Copied component {}", bizComponent.getName());
 		}
 	}
 }
