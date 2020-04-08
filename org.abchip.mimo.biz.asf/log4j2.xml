@@ -32,8 +32,8 @@ under the License.
         <Console name="stdout" target="SYSTEM_OUT">
             <PatternLayout pattern="%date{DEFAULT} |%-20.20thread |%-30.30logger{1}|%level{length=1}| %message%n"/>
         </Console>
-        <RollingFile name="ofbiz" fileName="${sys:ofbiz.log.dir}/ofbiz.log"
-                     filePattern="${sys:ofbiz.log.dir}/ofbiz-%d{yyyy-MM-dd}-%i.log">
+        <RollingFile name="ofbiz" fileName="${sys:ofbiz.log.dir}/biz-asf.log"
+                     filePattern="${sys:ofbiz.log.dir}/biz-asf-%d{yyyy-MM-dd}-%i.log">
             <PatternLayout pattern="%date{DEFAULT} |%-20.20thread |%-30.30logger{1}|%level{length=1}| %message%n"/>
             <Policies>
                 <TimeBasedTriggeringPolicy/>

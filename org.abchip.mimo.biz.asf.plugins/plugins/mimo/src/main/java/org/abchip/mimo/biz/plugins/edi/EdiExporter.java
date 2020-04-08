@@ -18,6 +18,7 @@ import org.abchip.mimo.edi.entity.EntityPackage;
 import org.abchip.mimo.edi.message.MessagePackage;
 import org.abchip.mimo.edi.transmission.TransmissionPackage;
 import org.abchip.mimo.entity.Slot;
+import org.abchip.mimo.util.Logs;
 import org.eclipse.emf.ecore.EAnnotation;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -27,10 +28,13 @@ import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EcorePackage;
+import org.osgi.service.log.Logger;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 public class EdiExporter {
+
+	private static final Logger LOGGER = Logs.getLogger(EdiExporter.class);
 
 	private Document document;
 	private List<EPackage> ePackages = null;
@@ -55,7 +59,7 @@ public class EdiExporter {
 		try {
 			documentBuilder = documentFactory.newDocumentBuilder();
 		} catch (ParserConfigurationException e) {
-			System.err.println(e.getMessage());
+			LOGGER.error(e.getMessage());
 			return;
 		}
 		Document document = documentBuilder.newDocument();
@@ -70,16 +74,9 @@ public class EdiExporter {
 			DOMSource domSource = new DOMSource(document);
 			StreamResult streamResult = new StreamResult(System.out);
 
-			// If you use
-			// StreamResult result = new StreamResult(System.out);
-			// the output will be pushed to the standard output ...
-			// You can use that for debugging
-
 			transformer.transform(domSource, streamResult);
-			System.out.println();
 		} catch (TransformerException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			LOGGER.error(e.getMessage());
 		}
 	}
 
@@ -119,15 +116,10 @@ public class EdiExporter {
 					continue;
 
 				appendEClass(root, eClass);
-				// System.out.println(eClass.getName());
 			} else if (eClassifier instanceof EEnum) {
-				// EEnum eEnum = (EEnum) eClassifier;
-				// System.out.println(eEnum.getName());
 			} else if (eClassifier instanceof EDataType) {
-				EDataType eDataType = (EDataType) eClassifier;
-				System.out.println(eDataType.getName());
 			} else {
-				System.err.println(eClassifier.getName());
+				LOGGER.warn("Classifier {} not found", eClassifier.getName());
 			}
 		}
 
@@ -189,7 +181,7 @@ public class EdiExporter {
 			else if (eAttribute.getEType() instanceof EEnum)
 				field.setAttribute("type", "value");
 			else {
-				System.err.println(field);
+				LOGGER.warn("Unknown field {}", field);
 			}
 			entity.appendChild(field);
 		}

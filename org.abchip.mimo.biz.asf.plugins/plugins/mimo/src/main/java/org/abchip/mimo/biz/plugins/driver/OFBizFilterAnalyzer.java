@@ -15,14 +15,18 @@ import java.util.Map;
 import org.abchip.mimo.biz.plugins.entity.ModelUtils;
 import org.abchip.mimo.parser.sqlite.SQLiteBaseListener;
 import org.abchip.mimo.parser.sqlite.SQLiteLexer;
+import org.abchip.mimo.util.Logs;
 import org.antlr.v4.runtime.Token;
 import org.antlr.v4.runtime.tree.TerminalNode;
 import org.apache.ofbiz.entity.Delegator;
 import org.apache.ofbiz.entity.model.ModelField;
 import org.apache.ofbiz.entity.model.ModelRelation;
+import org.osgi.service.log.Logger;
 
 public class OFBizFilterAnalyzer extends SQLiteBaseListener {
 
+	private static final Logger LOGGER = Logs.getLogger(OFBizFilterAnalyzer.class);
+	
 	private Delegator delegator = null;
 	private String frame = null;
 	private StringBuffer result = null;
@@ -68,7 +72,7 @@ public class OFBizFilterAnalyzer extends SQLiteBaseListener {
 						text = manyMap.get("Field");
 						entities.add(manyMap.get("Entity"));
 					} else {
-						System.err.println("Unexpected condition: slot not found: " + frame + "/" + text);
+						LOGGER.warn("Slot {} not found", frame + "/" + text);
 					}
 				}
 			}

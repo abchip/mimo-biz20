@@ -18,6 +18,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
+import org.abchip.mimo.util.Logs;
 import org.apache.ofbiz.base.util.UtilDateTime;
 import org.apache.ofbiz.base.util.UtilMisc;
 import org.apache.ofbiz.entity.Delegator;
@@ -37,8 +38,11 @@ import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
+import org.osgi.service.log.Logger;
 
 public class BizPartyServices {
+
+	private static final Logger LOGGER = Logs.getLogger(BizPartyServices.class);
 
 	static List<String> stringEscape = Arrays.asList("(CONTRATTO DI RETE CON SOGGETTIVITA' GIURIDICA)",
 			"- CONTRATTO DI RETE DI CUI AL D.L. 10/02/2009 N. 5 CONVERTITO DALLA LEGGE 33/2009 E SUCC. MODD.",
@@ -411,11 +415,11 @@ public class BizPartyServices {
 				ii++;
 				if (i == 100) {
 					TransactionUtil.commit();
-					System.out.println("Deleted " + ii + " party group from " + nn);
+					LOGGER.info("Deleted " + ii + " party group from " + nn);
 					i = 0;
 				}
 			}
-			System.out.println("Deleted " + ii + " party group from " + nn);
+			LOGGER.info("Deleted " + ii + " party group from " + nn);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return false;
@@ -448,11 +452,11 @@ public class BizPartyServices {
 				ii++;
 				if (i == 100) {
 					TransactionUtil.commit();
-					System.out.println("Deleted " + ii + " party from " + nn);
+					LOGGER.info("Deleted " + ii + " party from " + nn);
 					i = 0;
 				}
 			}
-			System.out.println("Deleted " + ii + " party from " + nn);
+			LOGGER.info("Deleted " + ii + " party from " + nn);
 		} catch (Exception e) {
 			e.printStackTrace();
 			return false;

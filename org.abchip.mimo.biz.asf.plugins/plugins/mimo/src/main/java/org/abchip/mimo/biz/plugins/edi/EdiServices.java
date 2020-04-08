@@ -24,6 +24,7 @@ import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
+import org.abchip.mimo.util.Logs;
 import org.apache.ofbiz.entity.Delegator;
 import org.apache.ofbiz.entity.GenericEntityException;
 import org.apache.ofbiz.entity.GenericValue;
@@ -32,9 +33,12 @@ import org.apache.ofbiz.service.DispatchContext;
 import org.apache.ofbiz.service.GenericServiceException;
 import org.apache.ofbiz.service.ServiceUtil;
 import org.apache.ofbiz.service.calendar.RecurrenceRule;
+import org.osgi.service.log.Logger;
 
 public class EdiServices {
 
+	private static final Logger LOGGER = Logs.getLogger(EdiServices.class); 
+	
 	public enum Services {
 		startEdiEngine, stopEdiEngine, createEdiEntity, updateEdiEntity, deleteEdiEntity, transmitMessages
 	}
@@ -83,8 +87,8 @@ public class EdiServices {
 
 	public static Map<String, Object> transmitMessages(DispatchContext ctx, Map<String, Object> params) {
 
-		System.err.println(params.get("messageType"));
-
+		LOGGER.trace("TODO transimit message {}", params.get("messageType"));
+		
 		return ServiceUtil.returnSuccess();
 	}
 

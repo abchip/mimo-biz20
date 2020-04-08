@@ -39,34 +39,34 @@ public class StressTestCommands extends BaseCommands {
 
 	public void _stressTest(CommandInterpreter interpreter) throws Exception {
 		try (ContextProvider context = login()) {
-			stressTestBase(context.get());
-			stressTestSalesOrder(context.get());
-			stressTestSalesInvoice(context.get());
-			stressTestAgreement(context.get());
+			stressTestBase(interpreter, context.get());
+			stressTestSalesOrder(interpreter, context.get());
+			stressTestSalesInvoice(interpreter, context.get());
+			stressTestAgreement(interpreter, context.get());
 		}
 	}
 
 	public void _stressTestBase(CommandInterpreter interpreter) throws Exception {
 		try (ContextProvider context = login()) {
-			stressTestBase(context.get());
+			stressTestBase(interpreter, context.get());
 		}
 	}
 
 	public void _stressTestSalesOrder(CommandInterpreter interpreter) throws Exception {
 		try (ContextProvider context = login()) {
-			stressTestSalesOrder(context.get());
+			stressTestSalesOrder(interpreter, context.get());
 		}
 	}
 
 	public void _stressTestSalesInvoice(CommandInterpreter interpreter) throws Exception {
 		try (ContextProvider context = login()) {
-			stressTestSalesInvoice(context.get());
+			stressTestSalesInvoice(interpreter, context.get());
 		}
 	}
 
 	public void _stressTestAgreement(CommandInterpreter interpreter) throws Exception {
 		try (ContextProvider context = login()) {
-			stressTestAgreement(context.get());
+			stressTestAgreement(interpreter, context.get());
 		}
 	}
 
@@ -88,12 +88,12 @@ public class StressTestCommands extends BaseCommands {
 				} catch (NumberFormatException e) {
 				}
 			}
-			System.out.println("Execution Stress Test Inps loops: " + loops + " and " + " poolSize: " + poolSize);
-			stressTestInps(context.get(), loops, poolSize);
+			interpreter.println("Execution Stress Test Inps loops: " + loops + " and " + " poolSize: " + poolSize);
+			stressTestInps(interpreter, context.get(), loops, poolSize);
 		}
 	}
 
-	private void stressTestBase(Context context) throws Exception {
+	private void stressTestBase(CommandInterpreter interpreter, Context context) throws Exception {
 
 		long time1 = System.currentTimeMillis();
 
@@ -106,10 +106,10 @@ public class StressTestCommands extends BaseCommands {
 		executor.awaitTermination(1, TimeUnit.MINUTES);
 
 		long time2 = System.currentTimeMillis();
-		System.out.println("Total time execution StressTestBase: " + (time2 - time1));
+		interpreter.println("Total time execution StressTestBase: " + (time2 - time1));
 	}
 
-	private void stressTestSalesOrder(Context context) throws Exception {
+	private void stressTestSalesOrder(CommandInterpreter interpreter, Context context) throws Exception {
 
 		List<Party> parties = StressTestUtils.getEnabledCustomers(context);
 		List<ProductPrice> productPrices = StressTestUtils.getDigitalProductPrices(context);
@@ -124,10 +124,10 @@ public class StressTestCommands extends BaseCommands {
 		executor.awaitTermination(1, TimeUnit.MINUTES);
 
 		long time2 = System.currentTimeMillis();
-		System.out.println("Total time execution StressTestOrder: " + (time2 - time1));
+		interpreter.println("Total time execution StressTestOrder: " + (time2 - time1));
 	}
 
-	private void stressTestSalesInvoice(Context context) throws Exception {
+	private void stressTestSalesInvoice(CommandInterpreter interpreter, Context context) throws Exception {
 
 		List<Party> parties = StressTestUtils.getEnabledCustomers(context);
 		List<ProductPrice> productPrices = StressTestUtils.getDigitalProductPrices(context);
@@ -142,10 +142,10 @@ public class StressTestCommands extends BaseCommands {
 		executor.awaitTermination(1, TimeUnit.MINUTES);
 
 		long time2 = System.currentTimeMillis();
-		System.out.println("Total time execution StressTestInvoice: " + (time2 - time1));
+		interpreter.println("Total time execution StressTestInvoice: " + (time2 - time1));
 	}
 
-	private void stressTestAgreement(Context context) throws Exception {
+	private void stressTestAgreement(CommandInterpreter interpreter, Context context) throws Exception {
 
 		List<Party> parties = StressTestUtils.getEnabledCustomers(context);
 		List<ProductPrice> productPrices = StressTestUtils.getDigitalProductPrices(context);
@@ -160,10 +160,10 @@ public class StressTestCommands extends BaseCommands {
 		executor.awaitTermination(1, TimeUnit.MINUTES);
 
 		long time2 = System.currentTimeMillis();
-		System.out.println("Total time execution StressTestAgreement: " + (time2 - time1));
+		interpreter.println("Total time execution StressTestAgreement: " + (time2 - time1));
 	}
 
-	private void stressTestInps(Context context, long loops, int poolSize) throws Exception {
+	private void stressTestInps(CommandInterpreter interpreter, Context context, long loops, int poolSize) throws Exception {
 
 		long time1 = System.currentTimeMillis();
 
@@ -175,7 +175,7 @@ public class StressTestCommands extends BaseCommands {
 		executor.awaitTermination(1, TimeUnit.HOURS);
 
 		long time2 = System.currentTimeMillis();
-		System.out.println("Total time execution StressTestInps: " + (time2 - time1));
+		interpreter.println("Total time execution StressTestInps: " + (time2 - time1));
 	}
 
 	private ContextProvider login() {

@@ -36,16 +36,16 @@ public class PartyCommands extends BaseCommands {
 
 		ResourceReader<Party> partyReader = resourceManager.getResourceReader(context, Party.class);
 		Party party = partyReader.lookup("10000", true);
-		System.out.println(party.getID());
-		System.out.println(party.getURI());
-		System.out.println(party.getPartyId());
+		interpreter.println(party.getID());
+		interpreter.println(party.getURI());
+		interpreter.println(party.getPartyId());
 
 		// for (PartyRole partyRole : party.getPartyRoles()) {
-		// System.out.println(partyRole.getID());
+		// interpreter.println(partyRole.getID());
 		// }
 
-		System.out.println(party.getCreatedByUserLogin().getPartyId().getID());
-		System.out.println(party.getPartyTypeId().getID());
+		interpreter.println(party.getCreatedByUserLogin().getPartyId().getID());
+		interpreter.println(party.getPartyTypeId().getID());
 	}
 
 	public <E extends EntityIdentifiable> void _hackerParty(CommandInterpreter interpreter) throws Exception {

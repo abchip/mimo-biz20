@@ -12,8 +12,6 @@ public class RunnableTest implements Callable<Boolean> {
 	@Override
 	public Boolean call() throws Exception {
 		Thread.sleep(number * 1000);
-		System.out.println("Ho atteso " + number + " secondi");
-		// TODO Auto-generated method stub
 		return true;
 	}
 }

@@ -147,7 +147,6 @@ public class ProductServices {
 					Double num = f.getNumericCellValue();
 					volume = Double.toString(num);
 				}
-				// System.err.println(productId + " " + qtaxc);
 				Timestamp now = UtilDateTime.nowTimestamp();
 				Map<String, Object> newProductMap = UtilMisc.toMap("createdDate", now, "lastModifiedDate", now);
 				if (userLogin != null) {

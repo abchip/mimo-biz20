@@ -22,12 +22,16 @@ import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.util.Enumerations;
+import org.abchip.mimo.util.Logs;
 import org.eclipse.emf.ecore.xmi.XMIResource;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceImpl;
 import org.osgi.framework.Bundle;
+import org.osgi.service.log.Logger;
 
 public class SeedServices {
 
+	private static final Logger LOGGER = Logs.getLogger(SeedServices.class);
+	
 	public static String SEEDS_PATH = "application/seeds";
 
 	public static void loadSeeds(Context context, String seedName, String tenantId, boolean update) {
@@ -46,10 +50,6 @@ public class SeedServices {
 		for (URL seedUrl : elements) {
 			try (InputStream inputStream = seedUrl.openStream()) {
 
-				// System.err.println("************************");
-				// System.err.println(seedUrl);
-				// System.err.println("************************");
-
 				XMIResource resource = new XMIResourceImpl();
 				resource.load(inputStream, null);
 				if (!resource.getContents().isEmpty()) {
@@ -58,10 +58,9 @@ public class SeedServices {
 					for (EntityIdentifiable entityIdentifiable : entityContainer.getContents()) {
 						try {
 							ResourceWriter<EntityIdentifiable> entityWriter = resourceManager.getResourceWriter(context, entityIdentifiable.isa(), tenantId);
-							// System.err.println(entityIdentifiable.isa().getName());
 							entityWriter.create(entityIdentifiable, update);
 						} catch (Exception e) {
-							System.err.println(e.getMessage());
+							LOGGER.error(e.getMessage());
 						}
 					}
 				}
@@ -93,7 +92,7 @@ public class SeedServices {
 						ResourceWriter<EntityIdentifiable> entityWriter = resourceManager.getResourceWriter(context, entityIdentifiable.isa(), tenantId);
 						entityWriter.create(entityIdentifiable, update);
 					} catch (Exception e) {
-						System.err.println(e.getMessage());
+						LOGGER.error(e.getMessage());
 					}
 				}
 			}
@@ -101,7 +100,7 @@ public class SeedServices {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
-		System.out.println(seedName);
+		
+		LOGGER.info("Imprted seed {}", seedName);
 	}
 }

@@ -64,7 +64,6 @@ public abstract class BizEntityTypeImpl<E extends BizEntityTyped<?>> extends Ent
 		
 		String[] tokens = textFormula.split("+");
 		for(String token: tokens) {
-			System.out.println(token);
 			sb.append(token);
 		}
 		return sb.toString();

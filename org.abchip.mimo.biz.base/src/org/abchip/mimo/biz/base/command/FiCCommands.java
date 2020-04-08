@@ -49,30 +49,30 @@ public class FiCCommands extends BaseCommands {
 
 	
 	public <E extends EntityIdentifiable> void _importFicAll(CommandInterpreter interpreter) throws Exception {
-		importFicRegistry();
-		importFicProduct();
+		importFicRegistry(interpreter);
+		importFicProduct(interpreter);
 	}
 
 	public <E extends EntityIdentifiable> void _importFicRegistry(CommandInterpreter interpreter) throws Exception {
-		importFicRegistry();
+		importFicRegistry(interpreter);
 	}
 
 	public <E extends EntityIdentifiable> void _importFicProduct(CommandInterpreter interpreter) throws Exception {
-		importFicProduct();
+		importFicProduct(interpreter);
 	}
 	
-	private void importFicRegistry() throws Exception {
+	private void importFicRegistry(CommandInterpreter interpreter) throws Exception {
 //		Context context = this.getContext();
 		Context context = application.getContext();
 		AtomicInteger partyCounter = new AtomicInteger(9999);
 		AtomicInteger contactMechCounter = new AtomicInteger(9999);
 
-		importRegistry(context, partyCounter, contactMechCounter, "FiC_Customer", "clienti", "lista_clienti", "CUSTOMER");
-		importRegistry(context, partyCounter, contactMechCounter, "FiC_Supplier", "fornitori", "lista_fornitori", "SUPPLIER");
+		importRegistry(interpreter, context, partyCounter, contactMechCounter, "FiC_Customer", "clienti", "lista_clienti", "CUSTOMER");
+		importRegistry(interpreter, context, partyCounter, contactMechCounter, "FiC_Supplier", "fornitori", "lista_fornitori", "SUPPLIER");
 	}
 	
 	@SuppressWarnings("unchecked")
-	private void importRegistry(Context context, AtomicInteger partyCounter, AtomicInteger contactMechCounter, String containerName, String typeSubject, String nameArray, String role) throws UnsupportedEncodingException {
+	private void importRegistry(CommandInterpreter interpreter, Context context, AtomicInteger partyCounter, AtomicInteger contactMechCounter, String containerName, String typeSubject, String nameArray, String role) throws UnsupportedEncodingException {
 		EntityContainer container = EntityFactory.eINSTANCE.createEntityContainer();
 		container.setName(containerName);
 
@@ -94,7 +94,7 @@ public class FiCCommands extends BaseCommands {
 				postMethod.setEntity(params);
 				try (CloseableHttpResponse postResponse = client.execute(postMethod)) {
 					String responseString = new BasicResponseHandler().handleResponse(postResponse);
-					System.out.println(responseString);
+					interpreter.println(responseString);
 					if (postResponse.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
 		//				String responseString = "{\"lista_clienti\":[{\"id\":\"33363131\",\"nome\":\"Giuliano Giancristofaro\",\"referente\":\"\",\"indirizzo_via\":\"via rezzara 1\",\"indirizzo_cap\":\"24036\",\"indirizzo_citta\":\"Ponte San Pietro\",\"indirizzo_provincia\":\"BG\",\"indirizzo_extra\":\"\",\"paese\":\"Italia\",\"mail\":\"giuliano.giancristofaro@gmail.com\",\"pec\":\"giuliano.giancristofaro@legalmail.it\",\"tel\":\"001 0123456\",\"fax\":\"123 5684798\",\"piva\":\"02580920169\",\"cf\":\"GNCGLN73P01H501V\",\"termini_pagamento\":\"30\",\"pagamento_fine_mese\":false,\"val_iva_default\":\"22\",\"desc_iva_default\":\"\",\"extra\":\"\",\"PA\":true,\"PA_codice\":\"\"}],\"pagina_corrente\":1,\"numero_pagine\":1,\"success\":true}";
 						fiCResult = new ObjectMapper().readValue(responseString, HashMap.class);
@@ -169,7 +169,7 @@ public class FiCCommands extends BaseCommands {
 							}
 						}
 					} else {
-						System.err.println("Error");
+						interpreter.println("Error");
 					}
 				}
 			} catch (Exception e) {
@@ -185,7 +185,7 @@ public class FiCCommands extends BaseCommands {
 	}
 
 	@SuppressWarnings({ "unchecked" })
-	private void importFicProduct() throws Exception {
+	private void importFicProduct(CommandInterpreter interpreter) throws Exception {
 		/*
 		 * 
 		 * {
@@ -228,7 +228,7 @@ public class FiCCommands extends BaseCommands {
 				postMethod.setEntity(params);
 				try (CloseableHttpResponse postResponse = client.execute(postMethod)) {
 					String responseString = new BasicResponseHandler().handleResponse(postResponse);
-					System.out.println(responseString);
+					interpreter.println(responseString);
 					if (postResponse.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
 		//				String responseString = "{\"lista_clienti\":[{\"id\":\"33363131\",\"nome\":\"Giuliano Giancristofaro\",\"referente\":\"\",\"indirizzo_via\":\"via rezzara 1\",\"indirizzo_cap\":\"24036\",\"indirizzo_citta\":\"Ponte San Pietro\",\"indirizzo_provincia\":\"BG\",\"indirizzo_extra\":\"\",\"paese\":\"Italia\",\"mail\":\"giuliano.giancristofaro@gmail.com\",\"pec\":\"giuliano.giancristofaro@legalmail.it\",\"tel\":\"001 0123456\",\"fax\":\"123 5684798\",\"piva\":\"02580920169\",\"cf\":\"GNCGLN73P01H501V\",\"termini_pagamento\":\"30\",\"pagamento_fine_mese\":false,\"val_iva_default\":\"22\",\"desc_iva_default\":\"\",\"extra\":\"\",\"PA\":true,\"PA_codice\":\"\"}],\"pagina_corrente\":1,\"numero_pagine\":1,\"success\":true}";
 						fiCResult = new ObjectMapper().readValue(responseString, HashMap.class);
@@ -265,7 +265,7 @@ public class FiCCommands extends BaseCommands {
 							}
 						}
 					} else {
-						System.err.println("Error");
+						interpreter.println("Error");
 					}
 				}
 			} catch (Exception e) {

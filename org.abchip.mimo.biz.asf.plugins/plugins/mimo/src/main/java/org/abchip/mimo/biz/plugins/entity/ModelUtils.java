@@ -13,6 +13,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
+import org.abchip.mimo.util.Logs;
 import org.apache.ofbiz.base.util.UtilValidate;
 import org.apache.ofbiz.entity.Delegator;
 import org.apache.ofbiz.entity.GenericEntityException;
@@ -24,9 +25,12 @@ import org.apache.ofbiz.entity.model.ModelReader;
 import org.apache.ofbiz.entity.model.ModelRelation;
 import org.apache.ofbiz.entity.model.ModelUtil;
 import org.apache.ofbiz.entity.model.ModelViewEntity;
+import org.osgi.service.log.Logger;
 
 public class ModelUtils {
 
+	private static final Logger LOGGER = Logs.getLogger(ModelUtils.class);
+	
 	public static final String OFBIZ_PACKAGE = "org.apache.ofbiz";
 
 	public static Set<String> findPackages(ModelReader modelReader, String packagePrefix) throws GenericEntityException {
@@ -108,7 +112,7 @@ public class ModelUtils {
 
 			// one field map
 			if (modelRelation.getKeyMaps().size() > 1) {				
-				System.out.println("HISTORY: "+ modelRelation.getRelEntityName() + " -> " + entityName);
+				LOGGER.info("HISTORY: "+ modelRelation.getRelEntityName() + " -> " + entityName);
 				continue;			
 			}
 
@@ -129,7 +133,7 @@ public class ModelUtils {
 
 			// TODO who is? interfaces?
 			if (entityType == null) {
-				System.out.println("INTERFACE: "+superEntity + " -> " + entityName);
+				LOGGER.info("INTERFACE: "+superEntity + " -> " + entityName);
 				return null;
 			}
 
@@ -146,7 +150,7 @@ public class ModelUtils {
 
 			GenericValue genericValue = delegator.findOne(entityType.getEntityName(), true, pkField, pkValue);
 			if (genericValue == null) {
-				System.out.println("SUPER: "+entityType.getEntityName() + " -> " + entityName);
+				LOGGER.info("SUPER: "+entityType.getEntityName() + " -> " + entityName);
 				return null;
 			}
 

@@ -51,7 +51,7 @@ public class BizSeedCommands extends BaseCommands {
 		 */
 		String filterReaders = nextArgument(interpreter);
 		if(filterReaders == null || filterReaders.isEmpty()) {
-			System.err.println("Filter readers is empty. Maybe you want to try with 'seed,seed-initial'");
+			interpreter.println("Filter readers is empty. Maybe you want to try with 'seed,seed-initial'");
 			return;
 		}
 		
@@ -65,14 +65,14 @@ public class BizSeedCommands extends BaseCommands {
 
 		Delegator delegator = DelegatorFactory.getDelegator(null);
 		try {
-			BizSeedCommands.exportReaderFiltered(context, delegator, filterReaders);
+			BizSeedCommands.exportReaderFiltered(interpreter, context, delegator, filterReaders);
 
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	public static void exportReaderFiltered(Context context, Delegator delegator, String filterReaders) {
+	public static void exportReaderFiltered(CommandInterpreter interpreter, Context context, Delegator delegator, String filterReaders) {
 		int c1 = 1;
 		List<String> readerNames = new LinkedList<String>();
 		if (filterReaders.indexOf(",") == -1) {
@@ -98,15 +98,15 @@ public class BizSeedCommands extends BaseCommands {
 				String[] segments = url.getPath().split("/");
 				String containerName = segments[segments.length - 1];
 				String folderName = segments[segments.length - 3];
-				createContainer(context, containerName, folderName, listEntity, c1++);
+				createContainer(interpreter, context, containerName, folderName, listEntity, c1++);
 			} catch (Exception e) {
-				System.err.println("Problem with xml " + url + " " + e.getMessage());
+				interpreter.println("Problem with xml " + url + " " + e.getMessage());
 			}
 		}
 	}
 
 	@SuppressWarnings({ "unchecked" })
-	private static void createContainer(Context context, String containerName, String folderName, List<GenericValue> listEntity, int counter) {
+	private static void createContainer(CommandInterpreter interpreter, Context context, String containerName, String folderName, List<GenericValue> listEntity, int counter) {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		String counterPad = org.apache.commons.lang.StringUtils.leftPad(Integer.toString(counter), 3, "0");
@@ -121,7 +121,7 @@ public class BizSeedCommands extends BaseCommands {
 			try {
 				entityIdentifiable = EntityUtils.toEntity((Frame<EntityIdentifiable>) resourceManager.getFrame(context, genericValue.getEntityName()), genericValue);
 			} catch (Exception e) {
-				System.err.println("Error in ecore model not find entity " + genericValue.getEntityName());
+				interpreter.println("Error in ecore model not find entity " + genericValue.getEntityName());
 				continue;
 			}
 			container.getContents().add(entityIdentifiable);

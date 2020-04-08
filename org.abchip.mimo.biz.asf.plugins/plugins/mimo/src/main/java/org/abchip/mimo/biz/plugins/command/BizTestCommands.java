@@ -109,19 +109,19 @@ public class BizTestCommands extends BaseCommands {
 		Context context = this.getContext();
 		String partyId = nextArgument(interpreter);
 		CreditCard creditCard = PaymentServices.getCreditCardParty(context, partyId);
-		System.out.println("Credit card number " + creditCard.getCardNumber());
+		interpreter.println("Credit card number " + creditCard.getCardNumber());
 	}
 
 	public void _createAgreement(CommandInterpreter interpreter) throws Exception {
 		Context context = this.getContext();
 		String partyId = nextArgument(interpreter);
-		createAgreement(context, partyId);
+		createAgreement(interpreter, context, partyId);
 	}
 
 	public void _renewalAgreement(CommandInterpreter interpreter) throws Exception {
 		Context context = this.getContext();
 		String agreementId = nextArgument(interpreter);
-		renewalAgreement(context, agreementId);
+		renewalAgreement(interpreter, context, agreementId);
 	}
 
 	public void _expireAgreement(CommandInterpreter interpreter) throws Exception {
@@ -131,7 +131,7 @@ public class BizTestCommands extends BaseCommands {
 		String agreementId = nextArgument(interpreter);
 
 		if (agreementId == null) {
-			System.err.println("Invalid agreement!!!");
+			interpreter.println("Invalid agreement!!!");
 			return;
 		}
 
@@ -139,12 +139,12 @@ public class BizTestCommands extends BaseCommands {
 		ResourceReader<Agreement> agreementReader = resourceManager.getResourceReader(context, Agreement.class);
 		Agreement agreementEntity = agreementReader.lookup(agreementId);
 		if (agreementEntity == null) {
-			System.err.println("Invalid agreement!!!");
+			interpreter.println("Invalid agreement!!!");
 			return;
 		}
 
 		if (agreementEntity.getThruDate() != null) {
-			System.err.println("Expire agreement " + agreementId + " not possible!!!");
+			interpreter.println("Expire agreement " + agreementId + " not possible!!!");
 			return;
 		}
 
@@ -152,7 +152,7 @@ public class BizTestCommands extends BaseCommands {
 		agreementEntity.setThruDate(new Date());
 		agreementWriter.create(agreementEntity, true);
 
-		System.out.println("Agreement " + agreementId + " expired");
+		interpreter.println("Agreement " + agreementId + " expired");
 	}
 
 	public void _createProduct(CommandInterpreter interpreter) throws Exception {
@@ -172,7 +172,7 @@ public class BizTestCommands extends BaseCommands {
 
 		String partyId = nextArgument(interpreter);
 
-		createOrder(context, partyId);
+		createOrder(interpreter, context, partyId);
 	}
 
 	public void _createInvoice(CommandInterpreter interpreter) throws Exception {
@@ -181,27 +181,27 @@ public class BizTestCommands extends BaseCommands {
 
 		String partyId = nextArgument(interpreter);
 
-		Invoice invoice = createInvoice(context, partyId, "");
+		Invoice invoice = createInvoice(interpreter, context, partyId, "");
 
 		// InvoiceItem
 		Delegator delegator = DelegatorFactory.getDelegator(null);
 		LocalDispatcher dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
-		createInvoiceItem(context, delegator, dispatcher, invoice, "Accounting", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(context, delegator, dispatcher, invoice, "Edi", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(context, delegator, dispatcher, invoice, "Humanres", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(context, delegator, dispatcher, invoice, "Manufacturing", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(context, delegator, dispatcher, invoice, "Marketing", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(context, delegator, dispatcher, invoice, "Modeling", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(context, delegator, dispatcher, invoice, "Order", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(context, delegator, dispatcher, invoice, "Party", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(context, delegator, dispatcher, invoice, "Product", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(context, delegator, dispatcher, invoice, "Shipment", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(context, delegator, dispatcher, invoice, "Workeffort", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Accounting", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Edi", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Humanres", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Manufacturing", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Marketing", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Modeling", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Order", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Party", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Product", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Shipment", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Workeffort", 1, "INV_DPROD_ITEM");
 
-		System.out.println("Creata fattura numero " + invoice.getInvoiceId());
+		interpreter.println("Creata fattura numero " + invoice.getInvoiceId());
 		// Creazione pagamento
-		String paymentId = createPaymentFromInvoice(context, delegator, invoice);
-		System.out.println("Creato pagamento " + paymentId);
+		String paymentId = createPaymentFromInvoice(interpreter, context, delegator, invoice);
+		interpreter.println("Creato pagamento " + paymentId);
 
 		// Receive payment (PMNT_RECEIVED)
 
@@ -217,7 +217,7 @@ public class BizTestCommands extends BaseCommands {
 		String orderId = nextArgument(interpreter);
 
 		if (orderId == null) {
-			System.err.println("Invalid order!!!");
+			interpreter.println("Invalid order!!!");
 			return;
 		}
 
@@ -225,12 +225,12 @@ public class BizTestCommands extends BaseCommands {
 		ResourceReader<OrderHeader> orderHeaderReader = resourceManager.getResourceReader(context, OrderHeader.class);
 		OrderHeader orderHeaderEntity = orderHeaderReader.lookup(orderId);
 		if (orderHeaderEntity == null) {
-			System.err.println("Invalid order!!!");
+			interpreter.println("Invalid order!!!");
 			return;
 		}
 
 		if (!orderHeaderEntity.isApprovable()) {
-			System.err.println("Approve order " + orderId + " not possible!!!");
+			interpreter.println("Approve order " + orderId + " not possible!!!");
 			return;
 		}
 
@@ -249,14 +249,14 @@ public class BizTestCommands extends BaseCommands {
 		try {
 			orderStatusResult = dispatcher.runSync("changeOrderStatus", orderStatusContext);
 			if (ServiceUtil.isError(orderStatusResult)) {
-				System.err.println("Error in set status");
+				interpreter.println("Error in set status");
 				return;
 			}
 		} catch (GenericServiceException e) {
 			e.printStackTrace();
 		}
 
-		System.out.println("Order " + orderId + " approved");
+		interpreter.println("Order " + orderId + " approved");
 	}
 
 	public void _holdOrder(CommandInterpreter interpreter) throws Exception {
@@ -266,7 +266,7 @@ public class BizTestCommands extends BaseCommands {
 		String orderId = nextArgument(interpreter);
 
 		if (orderId == null) {
-			System.err.println("Invalid order!!!");
+			interpreter.println("Invalid order!!!");
 			return;
 		}
 
@@ -274,12 +274,12 @@ public class BizTestCommands extends BaseCommands {
 		ResourceReader<OrderHeader> orderHeaderReader = resourceManager.getResourceReader(context, OrderHeader.class);
 		OrderHeader orderHeaderEntity = orderHeaderReader.lookup(orderId);
 		if (orderHeaderEntity == null) {
-			System.err.println("Invalid order!!!");
+			interpreter.println("Invalid order!!!");
 			return;
 		}
 
 		if (!orderHeaderEntity.getStatusId().getStatusId().equals("ORDER_APPROVED")) {
-			System.err.println("Hold order " + orderId + " not possible!!!");
+			interpreter.println("Hold order " + orderId + " not possible!!!");
 			return;
 		}
 
@@ -298,14 +298,14 @@ public class BizTestCommands extends BaseCommands {
 		try {
 			orderStatusResult = dispatcher.runSync("changeOrderStatus", orderStatusContext);
 			if (ServiceUtil.isError(orderStatusResult)) {
-				System.err.println("Error in set status");
+				interpreter.println("Error in set status");
 				return;
 			}
 		} catch (GenericServiceException e) {
 			e.printStackTrace();
 		}
 
-		System.out.println("Order " + orderId + " holded");
+		interpreter.println("Order " + orderId + " holded");
 	}
 
 	public void _cancelOrder(CommandInterpreter interpreter) throws Exception {
@@ -315,7 +315,7 @@ public class BizTestCommands extends BaseCommands {
 		String orderId = nextArgument(interpreter);
 
 		if (orderId == null) {
-			System.err.println("Invalid order!!!");
+			interpreter.println("Invalid order!!!");
 			return;
 		}
 
@@ -323,12 +323,12 @@ public class BizTestCommands extends BaseCommands {
 		ResourceReader<OrderHeader> orderHeaderReader = resourceManager.getResourceReader(context, OrderHeader.class);
 		OrderHeader orderHeaderEntity = orderHeaderReader.lookup(orderId);
 		if (orderHeaderEntity == null) {
-			System.err.println("Invalid order!!!");
+			interpreter.println("Invalid order!!!");
 			return;
 		}
 
 		if (!orderHeaderEntity.getStatusId().getStatusId().equals("ORDER_CANCELLED") && !orderHeaderEntity.getStatusId().getStatusId().equals("ORDER_COMPLETED")) {
-			System.err.println("Delete order " + orderId + " not possible!!!");
+			interpreter.println("Delete order " + orderId + " not possible!!!");
 			return;
 		}
 
@@ -347,17 +347,17 @@ public class BizTestCommands extends BaseCommands {
 		try {
 			orderStatusResult = dispatcher.runSync("changeOrderStatus", orderStatusContext);
 			if (ServiceUtil.isError(orderStatusResult)) {
-				System.err.println("Error in set status");
+				interpreter.println("Error in set status");
 				return;
 			}
 		} catch (GenericServiceException e) {
 			e.printStackTrace();
 		}
 
-		System.out.println("Order " + orderId + " deleted");
+		interpreter.println("Order " + orderId + " deleted");
 	}
 
-	private void createOrder(Context context, String partyId) {
+	private void createOrder(CommandInterpreter interpreter, Context context, String partyId) {
 
 		Party party = resourceManager.getFrame(context, Party.class).createProxy(partyId);
 
@@ -420,7 +420,7 @@ public class BizTestCommands extends BaseCommands {
 		Delegator delegator = DelegatorFactory.getDelegator(null);
 		LocalDispatcher dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
 
-		createOrderItem(context, delegator, dispatcher, orderHeader, itemSeqiD, "Accounting", 1, shipGroupSeqId);
+		createOrderItem(interpreter, context, delegator, dispatcher, orderHeader, itemSeqiD, "Accounting", 1, shipGroupSeqId);
 		// seqItemId++;
 		// itemSeqiD = UtilFormatOut.formatPaddedNumber(seqItemId, 5);
 		// createOrderItem(delegator, dispatcher, orderId, itemSeqiD, "TESTFLOW-ITEM-2",
@@ -526,7 +526,7 @@ public class BizTestCommands extends BaseCommands {
 						String invErrMsg = "The product ";
 						invErrMsg += orderItem.getProductId();
 						invErrMsg += " with ID " + orderItem.getProductId() + " is no longer in stock. Please try reducing the quantity or removing the product from this order.";
-						System.err.println(invErrMsg);
+						interpreter.println(invErrMsg);
 					}
 				} catch (GenericServiceException e) {
 					e.printStackTrace();
@@ -540,17 +540,17 @@ public class BizTestCommands extends BaseCommands {
 		try {
 			updateOrderResult = dispatcher.runSync("resetGrandTotal", updateOrder);
 			if (ServiceUtil.isError(updateOrderResult)) {
-				System.err.println("Errore in aggiornamento testata documento");
+				interpreter.println("Errore in aggiornamento testata documento");
 			}
 
 		} catch (GenericServiceException e) {
 			e.printStackTrace();
 		}
 
-		System.out.println("New order created: " + orderHeader.getOrderId());
+		interpreter.println("New order created: " + orderHeader.getOrderId());
 	}
 
-	private void createOrderItem(Context context, Delegator delegator, LocalDispatcher dispatcher, OrderHeader orderHeader, String itemSeqiD, String item, int quantity,
+	private void createOrderItem(CommandInterpreter interpreter, Context context, Delegator delegator, LocalDispatcher dispatcher, OrderHeader orderHeader, String itemSeqiD, String item, int quantity,
 			String shipGroupSeqId) {
 
 		ResourceWriter<OrderItem> orderItemWriter = resourceManager.getResourceWriter(context, OrderItem.class);
@@ -580,11 +580,11 @@ public class BizTestCommands extends BaseCommands {
 		try {
 			priceResult = dispatcher.runSync("calculateProductPrice", priceContext);
 			if (ServiceUtil.isError(priceResult)) {
-				System.err.println("Errore in recupero prezzo articolo " + item);
+				interpreter.println("Errore in recupero prezzo articolo " + item);
 			}
 			Boolean validPriceFound = (Boolean) priceResult.get("validPriceFound");
 			if (Boolean.FALSE.equals(validPriceFound)) {
-				System.err.println("Prezzo non valido per articolo " + item);
+				interpreter.println("Prezzo non valido per articolo " + item);
 			}
 
 			// (ShoppingCartItem)
@@ -621,7 +621,7 @@ public class BizTestCommands extends BaseCommands {
 		orderItemShipGroupAssocWriter.create(orderItemShipGroupAssoc, true);
 	}
 
-	private Invoice createInvoice(Context context, String partyId, String description) {
+	private Invoice createInvoice(CommandInterpreter interpreter, Context context, String partyId, String description) {
 		Party party = resourceManager.getFrame(context, Party.class).createProxy(partyId);
 		Party partyFrom = SystemDefault.getCompany(context);
 
@@ -719,7 +719,7 @@ public class BizTestCommands extends BaseCommands {
 		return invoice;
 	}
 
-	private void createInvoiceItem(Context context, Delegator delegator, LocalDispatcher dispatcher, Invoice invoice, String item, int quantity, String itemType) {
+	private void createInvoiceItem(CommandInterpreter interpreter, Context context, Delegator delegator, LocalDispatcher dispatcher, Invoice invoice, String item, int quantity, String itemType) {
 		ResourceWriter<InvoiceItem> invoiceItemWriter = resourceManager.getResourceWriter(context, InvoiceItem.class);
 
 		InvoiceItem invoiceItem = invoiceItemWriter.make();
@@ -748,11 +748,11 @@ public class BizTestCommands extends BaseCommands {
 		try {
 			priceResult = dispatcher.runSync("calculateProductPrice", priceContext);
 			if (ServiceUtil.isError(priceResult)) {
-				System.err.println("Errore in recupero prezzo articolo " + item);
+				interpreter.println("Errore in recupero prezzo articolo " + item);
 			}
 			Boolean validPriceFound = (Boolean) priceResult.get("validPriceFound");
 			if (Boolean.FALSE.equals(validPriceFound)) {
-				System.err.println("Prezzo non valido per articolo " + item);
+				interpreter.println("Prezzo non valido per articolo " + item);
 			}
 
 			if (priceResult.get("listPrice") != null) {
@@ -805,7 +805,7 @@ public class BizTestCommands extends BaseCommands {
 		try {
 			taxResult = dispatcher.runSync("calcTaxForDisplay", taxContext);
 			if (ServiceUtil.isError(taxResult)) {
-				System.err.println("Errore in recupero tasse per articolo " + item);
+				interpreter.println("Errore in recupero tasse per articolo " + item);
 			}
 		} catch (GenericServiceException e) {
 			e.printStackTrace();
@@ -856,7 +856,7 @@ public class BizTestCommands extends BaseCommands {
 		}
 	}
 
-	private void createAgreement(Context context, String partyId) {
+	private void createAgreement(CommandInterpreter interpreter, Context context, String partyId) {
 
 		Party partyFrom = SystemDefault.getCompany(context);
 		Party partyTo = resourceManager.getFrame(context, Party.class).createProxy(partyId);
@@ -884,17 +884,17 @@ public class BizTestCommands extends BaseCommands {
 
 		String agreementItemSeqId = createRow(context, agreement, "Agrement opened in trial mode");
 
-		createRowProduct(context, agreement, "Accounting", agreementItemSeqId);
-		createRowProduct(context, agreement, "Edi", agreementItemSeqId);
-		createRowProduct(context, agreement, "Humanres", agreementItemSeqId);
-		createRowProduct(context, agreement, "Manufacturing", agreementItemSeqId);
-		createRowProduct(context, agreement, "Marketing", agreementItemSeqId);
-		createRowProduct(context, agreement, "Modeling", agreementItemSeqId);
-		createRowProduct(context, agreement, "Order", agreementItemSeqId);
-		createRowProduct(context, agreement, "Party", agreementItemSeqId);
-		createRowProduct(context, agreement, "Product", agreementItemSeqId);
-		createRowProduct(context, agreement, "Shipment", agreementItemSeqId);
-		createRowProduct(context, agreement, "Workeffort", agreementItemSeqId);
+		createRowProduct(interpreter, context, agreement, "Accounting", agreementItemSeqId);
+		createRowProduct(interpreter, context, agreement, "Edi", agreementItemSeqId);
+		createRowProduct(interpreter, context, agreement, "Humanres", agreementItemSeqId);
+		createRowProduct(interpreter, context, agreement, "Manufacturing", agreementItemSeqId);
+		createRowProduct(interpreter, context, agreement, "Marketing", agreementItemSeqId);
+		createRowProduct(interpreter, context, agreement, "Modeling", agreementItemSeqId);
+		createRowProduct(interpreter, context, agreement, "Order", agreementItemSeqId);
+		createRowProduct(interpreter, context, agreement, "Party", agreementItemSeqId);
+		createRowProduct(interpreter, context, agreement, "Product", agreementItemSeqId);
+		createRowProduct(interpreter, context, agreement, "Shipment", agreementItemSeqId);
+		createRowProduct(interpreter, context, agreement, "Workeffort", agreementItemSeqId);
 
 	}
 
@@ -949,7 +949,7 @@ public class BizTestCommands extends BaseCommands {
 		return genericValue.getString(fieldName);
 	}
 
-	private void createRowProduct(Context context, Agreement agreement, String item, String itemSeqId) {
+	private void createRowProduct(CommandInterpreter interpreter,Context context, Agreement agreement, String item, String itemSeqId) {
 
 		Product productItem = resourceManager.getFrame(context, Product.class).createProxy(item);
 		Delegator delegator = DelegatorFactory.getDelegator(null);
@@ -975,11 +975,11 @@ public class BizTestCommands extends BaseCommands {
 		try {
 			priceResult = dispatcher.runSync("calculateProductPrice", priceContext);
 			if (ServiceUtil.isError(priceResult)) {
-				System.err.println("Errore in recupero prezzo articolo " + item);
+				interpreter.println("Errore in recupero prezzo articolo " + item);
 			}
 			Boolean validPriceFound = (Boolean) priceResult.get("validPriceFound");
 			if (Boolean.FALSE.equals(validPriceFound)) {
-				System.err.println("Prezzo non valido per articolo " + item);
+				interpreter.println("Prezzo non valido per articolo " + item);
 			}
 
 			if (priceResult.get("listPrice") != null) {
@@ -996,7 +996,7 @@ public class BizTestCommands extends BaseCommands {
 		agreementProductApplWriter.create(agreementProductAppl, true);
 	}
 
-	private void renewalAgreement(Context context, String agreementId) {
+	private void renewalAgreement(CommandInterpreter interpreter, Context context, String agreementId) {
 
 		/*
 		 * il rinnovo del contratto avviene quando questo è ancora aperto (Agreement) ed
@@ -1021,7 +1021,7 @@ public class BizTestCommands extends BaseCommands {
 
 		try (EntityIterator<Agreement> agreements = agreementReader.find(filter)) {
 			for (Agreement agreement : agreements) {
-				System.out.println("Verify agreement " + agreement.getAgreementId());
+				interpreter.println("Verify agreement " + agreement.getAgreementId());
 
 				String termFilter = "agreementId = '" + agreement.getAgreementId() + "'";
 
@@ -1036,7 +1036,7 @@ public class BizTestCommands extends BaseCommands {
 						Date date = new Date();
 						if (agreementTerm.getThruDate().compareTo(date) < 0) {
 							close++;
-							// System.out.println(agreementTerm.getAgreementItemSeqId() + " " +
+							// interpreter.println(agreementTerm.getAgreementItemSeqId() + " " +
 							// agreementTerm.getFromDate() + " " + agreementTerm.getThruDate() + " " +
 							// agreementTerm.getDescription());
 						} else {
@@ -1055,12 +1055,12 @@ public class BizTestCommands extends BaseCommands {
 
 					try (EntityIterator<AgreementProductAppl> agreementProducts = agreementProductApplReader.find(productFilter)) {
 						for (AgreementProductAppl agreementProduct : agreementProducts) {
-							createRowProduct(context, agreement, agreementProduct.getProductId().getProductId(), agreementItemSeqId);
+							createRowProduct(interpreter, context, agreement, agreementProduct.getProductId().getProductId(), agreementItemSeqId);
 						}
 					}
 
 					// Creo la fattura dalla nuova riga
-					Invoice invoiceEntity = createInvoice(context, agreement.getPartyIdTo().getPartyId(), "Agreement renewal - reference " + agreement.getID() + "/" + agreementItemSeqId);
+					Invoice invoiceEntity = createInvoice(interpreter, context, agreement.getPartyIdTo().getPartyId(), "Agreement renewal - reference " + agreement.getID() + "/" + agreementItemSeqId);
 
 					Delegator delegator = DelegatorFactory.getDelegator(null);
 					LocalDispatcher dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
@@ -1069,15 +1069,15 @@ public class BizTestCommands extends BaseCommands {
 					productFilter = "agreementId = '" + agreement.getAgreementId() + "' AND agreementItemSeqId = '" + agreementItemSeqId + "'";
 					try (EntityIterator<AgreementProductAppl> agreementProducts = agreementProductApplReader.find(productFilter)) {
 						for (AgreementProductAppl agreementProduct : agreementProducts) {
-							createInvoiceItem(context, delegator, dispatcher, invoiceEntity, agreementProduct.getProductId().getProductId(), 1,
+							createInvoiceItem(interpreter, context, delegator, dispatcher, invoiceEntity, agreementProduct.getProductId().getProductId(), 1,
 									agreementTermLast.getInvoiceItemTypeId().getID());
 						}
 					}
 
-					System.out.println("Creata fattura numero " + invoiceEntity.getInvoiceId());
+					interpreter.println("Creata fattura numero " + invoiceEntity.getInvoiceId());
 					// Creazione pagamento
-					String paymentId = createPaymentFromInvoice(context, delegator, invoiceEntity);
-					System.out.println("Creato pagamento " + paymentId);
+					String paymentId = createPaymentFromInvoice(interpreter, context, delegator, invoiceEntity);
+					interpreter.println("Creato pagamento " + paymentId);
 
 					// Effettuo pagamento Tramite Stripe
 					CreditCard creditCard = PaymentServices.getCreditCardParty(context, invoiceEntity.getPartyId().getID());
@@ -1095,21 +1095,21 @@ public class BizTestCommands extends BaseCommands {
 						PaymentMethod paymentMethod = StripePaymentManager.createPaymentCardMethod(creditCard.getCardNumber(), Integer.parseInt(values[0]), Integer.parseInt(values[1]),
 								creditCard.getDescription());
 						PaymentIntent confirm = StripePaymentManager.confirm(intent.getId(), paymentMethod.getId());
-						System.out.println("Transaction " + confirm.getId() + " " + confirm.getStatus());
+						interpreter.println("Transaction " + confirm.getId() + " " + confirm.getStatus());
 						if (confirm.getStatus().contentEquals("succeeded")) {
 							// Receive payment (PMNT_RECEIVED)
-							if (setPaymentStatus(context, paymentId, "PMNT_RECEIVED")) {
-								setPaymentStatus(context, paymentId, "PMNT_CONFIRMED");
+							if (setPaymentStatus(interpreter, context, paymentId, "PMNT_RECEIVED")) {
+								setPaymentStatus(interpreter, context, paymentId, "PMNT_CONFIRMED");
 							}
 							// TODO Update payment with transaction id
 
 							// Approve Invoice
-							setInvoiceStatus(context, invoiceEntity.getID(), "INVOICE_APPROVED");
+							setInvoiceStatus(interpreter, context, invoiceEntity.getID(), "INVOICE_APPROVED");
 						} else {
-							System.err.println("Error in credit card payment");
+							interpreter.println("Error in credit card payment");
 						}
 					} else {
-						System.out.println("Invalid transaction - credit card not found");
+						interpreter.println("Invalid transaction - credit card not found");
 					}
 				}
 
@@ -1124,7 +1124,7 @@ public class BizTestCommands extends BaseCommands {
 		}
 	}
 
-	private boolean setPaymentStatus(Context context, String paymentId, String statusPayment) {
+	private boolean setPaymentStatus(CommandInterpreter interpreter, Context context, String paymentId, String statusPayment) {
 
 		Delegator delegator = DelegatorFactory.getDelegator(null);
 		LocalDispatcher dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
@@ -1141,7 +1141,7 @@ public class BizTestCommands extends BaseCommands {
 			paymentStatusContext.put("userLogin", userLogin);
 			paymentStatusResult = dispatcher.runSync("setPaymentStatus", paymentStatusContext);
 			if (ServiceUtil.isError(paymentStatusResult)) {
-				System.err.println("Error in receive payment");
+				interpreter.println("Error in receive payment");
 				return false;
 			}
 		} catch (GenericServiceException e) {
@@ -1150,7 +1150,7 @@ public class BizTestCommands extends BaseCommands {
 		return true;
 	}
 
-	private boolean setInvoiceStatus(Context context, String invoiceId, String status) {
+	private boolean setInvoiceStatus(CommandInterpreter interpreter, Context context, String invoiceId, String status) {
 
 		Delegator delegator = DelegatorFactory.getDelegator(null);
 		LocalDispatcher dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
@@ -1169,7 +1169,7 @@ public class BizTestCommands extends BaseCommands {
 			invoiceStatusContext.put("userLogin", userLogin);
 			invoiceStatusResult = dispatcher.runSync("setInvoiceStatus", invoiceStatusContext);
 			if (ServiceUtil.isError(invoiceStatusResult)) {
-				System.err.println("Error in approve invoice");
+				interpreter.println("Error in approve invoice");
 				return false;
 			}
 		} catch (GenericServiceException e) {
@@ -1178,7 +1178,7 @@ public class BizTestCommands extends BaseCommands {
 		return true;
 	}
 
-	private String createPaymentFromInvoice(Context context, Delegator delegator, Invoice invoiceEntity) {
+	private String createPaymentFromInvoice(CommandInterpreter interpreter, Context context, Delegator delegator, Invoice invoiceEntity) {
 		ResourceReader<UserLogin> userLoginReader = resourceManager.getResourceReader(context, UserLogin.class);
 		UserLogin userLoginEntity = userLoginReader.lookup(USER_LOGIN_ID);
 		GenericValue userLogin = EntityUtils.toBizEntity(delegator, userLoginEntity);
@@ -1194,7 +1194,7 @@ public class BizTestCommands extends BaseCommands {
 
 			org.abchip.mimo.biz.accounting.payment.PaymentMethod paymentMethod = PaymentServices.getPaymentMethodParty(context, invoiceEntity.getPartyId().getID(), "CREDIT_CARD");
 			if (paymentMethod == null) {
-				System.err.println("Payment method not found for party " + invoiceEntity.getPartyId().getID());
+				interpreter.println("Payment method not found for party " + invoiceEntity.getPartyId().getID());
 			} else {
 				// creazione pagamento
 				paymentContext.put("amount", InvoiceWorker.getInvoiceTotal(invoice));
@@ -1208,7 +1208,7 @@ public class BizTestCommands extends BaseCommands {
 				paymentContext.put("userLogin", userLogin);
 				paymentResult = dispatcher.runSync("createPayment", paymentContext);
 				if (ServiceUtil.isError(paymentResult)) {
-					System.err.println("Error in create payment");
+					interpreter.println("Error in create payment");
 					return null;
 				}
 				// applicazione pagamento
@@ -1216,10 +1216,10 @@ public class BizTestCommands extends BaseCommands {
 				paymentApplicationContext.put("paymentId", paymentResult.get("paymentId"));
 				paymentApplicationResult = dispatcher.runSync("updatePaymentApplicationDef", paymentApplicationContext);
 				if (ServiceUtil.isError(paymentApplicationResult)) {
-					System.err.println("Error in payment application: " + paymentResult.get("paymentId"));
+					interpreter.println("Error in payment application: " + paymentResult.get("paymentId"));
 					return (String) paymentResult.get("paymentId");
 				}
-				System.out.println("Pagamento applicato");
+				interpreter.println("Pagamento applicato");
 			}
 		} catch (GenericServiceException e) {
 			e.printStackTrace();

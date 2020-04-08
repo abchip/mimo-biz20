@@ -17,6 +17,7 @@ import java.util.TreeSet;
 import org.abchip.mimo.biz.BizPackage;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
+import org.abchip.mimo.util.Logs;
 import org.abchip.mimo.util.Strings;
 import org.apache.ofbiz.base.util.UtilProperties;
 import org.apache.ofbiz.entity.Delegator;
@@ -43,9 +44,12 @@ import org.eclipse.emf.ecore.EModelElement;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EcoreFactory;
 import org.eclipse.emf.ecore.EcorePackage;
+import org.osgi.service.log.Logger;
 
 public class EcoreUtils {
 
+	private static final Logger LOGGER = Logs.getLogger(EcoreUtils.class);
+	
 	public static EClassifier findEClassifier(EPackage ePackage, String entityName) {
 
 		EClassifier eClassifier = ePackage.getEClassifier(entityName);
@@ -214,7 +218,7 @@ public class EcoreUtils {
 						String message = UtilProperties.getMessage(resource, name, context, Locale.ENGLISH);
 						literal.setName(message);
 					} catch (Exception e) {
-						System.err.println(e.getMessage());
+						LOGGER.error(e.getMessage());
 					}
 					eEnum.getELiterals().add(literal);
 				}
@@ -307,9 +311,8 @@ public class EcoreUtils {
 
 			// TODO
 			if (modelField.getDescription().trim().toLowerCase().contains("calculated")) {
-				System.out.println(modelField.getModelEntity().getEntityName() + "." + modelField.getName());
-				System.out.println(modelField.getDescription());
-				"".toString();
+//				System.out.println(modelField.getModelEntity().getEntityName() + "." + modelField.getName());
+//				System.out.println(modelField.getDescription());
 			}
 		}
 
@@ -403,7 +406,7 @@ public class EcoreUtils {
 			break;
 		}
 		default:
-			System.err.println("Unexpected condition: 9wefcbth87qewy8tv");
+			LOGGER.warn("Unknown field type {}", modelField);
 			return;
 		}
 	}

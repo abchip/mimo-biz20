@@ -65,7 +65,7 @@ public class BizApplicationComponentHook {
 
 				ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
 				if (!(classLoader instanceof BizClassLoaderImpl)) {
-					System.err.println("Unexpected condition: 9xm8ty98rtn743ytb7q94bv");
+					LOGGER.error("Unexpected condition {}", "9xm8ty98rtn743ytb7q94bv");
 					return;
 				}
 

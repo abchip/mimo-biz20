@@ -223,8 +223,6 @@ public class FormUtils {
 
 		if (modelFormField != null) {
 			enumType = "";
-			// System.out.println(modelEntity.getEntityName() + "." + eFeature.getName() + "
-			// " + modelFormField.getName());
 		}
 
 		return enumType;

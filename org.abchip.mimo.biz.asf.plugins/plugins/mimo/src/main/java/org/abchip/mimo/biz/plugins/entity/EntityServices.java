@@ -28,6 +28,7 @@ import java.util.Set;
 import org.abchip.mimo.biz.BizPackage;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
+import org.abchip.mimo.util.Logs;
 import org.abchip.mimo.util.Strings;
 import org.apache.ofbiz.entity.Delegator;
 import org.apache.ofbiz.entity.GenericEntityException;
@@ -57,8 +58,11 @@ import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
+import org.osgi.service.log.Logger;
 
 public class EntityServices {
+
+	private static final Logger LOGGER = Logs.getLogger(EntityServices.class);
 
 	// private static final String PATH =
 	// "C:\\Users\\giugianc_new\\Develop\\ofbiz\\";
@@ -277,7 +281,7 @@ public class EntityServices {
 
 					eGenericType.getETypeArguments().add(eGenericType2);
 				} else {
-					System.out.println("ROLE: " + modelEntity.getEntityName() + " -> " + typeEntity.getName() + "<" + eGenericType.getETypeArguments().get(0).getEClassifier().getName() + ">");
+					LOGGER.info("ROLE: " + modelEntity.getEntityName() + " -> " + typeEntity.getName() + "<" + eGenericType.getETypeArguments().get(0).getEClassifier().getName() + ">");
 					eClass = EcoreUtils.buildEntityEClass(delegator, forms, modelEntity);
 				}
 			} else
@@ -300,7 +304,7 @@ public class EntityServices {
 				continue;
 
 			if (typeEntity.getEGenericSuperTypes().get(0).getETypeArguments().isEmpty()) {
-				System.out.println("TYPE: " + typeEntity.getName());
+				LOGGER.info("TYPE: " + typeEntity.getName());
 				typeEntity.getEGenericSuperTypes().clear();
 				typeEntity.getESuperTypes().clear();
 				typeEntity.getESuperTypes().add(BizPackage.eINSTANCE.getBizEntity());
@@ -328,7 +332,7 @@ public class EntityServices {
 
 			// relation not found
 			if (eClassRelation == null) {
-				System.err.println("Model not found: " + relationEntity);
+				LOGGER.error("Model not found {}", relationEntity);
 				continue;
 			}
 
@@ -396,7 +400,7 @@ public class EntityServices {
 
 				EClass eClassRef = EcoreUtils.findEClass(bizPackage, modelRelation.getRelEntityName());
 				if (eClassRef == null) {
-					System.out.println("VIEW: " + entityName + " ->  " + modelRelation.getRelEntityName());
+					LOGGER.info("VIEW: " + entityName + " ->  " + modelRelation.getRelEntityName());
 					continue;
 				}
 
@@ -424,7 +428,7 @@ public class EntityServices {
 					EAttribute eAttribute = (EAttribute) eFeature;
 
 					if (eAttribute.isID()) {
-						System.out.println("INTERFACE: " + eClassRef.getName() + " -> " + eClass.getName());
+						LOGGER.info("INTERFACE: " + eClassRef.getName() + " -> " + eClass.getName());
 						continue;
 					}
 
@@ -483,7 +487,7 @@ public class EntityServices {
 							if (modelFieldFrom.getIsPk())
 								EcoreUtils.addAnnotationKey(eReference, Slot.NS_PREFIX_SLOT, "key", "true");
 
-							System.err.println(eClass.getName() + "." + eReference.getName());
+							LOGGER.info(eClass.getName() + "." + eReference.getName());
 						}
 						EcoreUtils.addAnnotationKey(eReference, Slot.NS_PREFIX_SLOT_MAPPING, modelKeyMap.getFieldName(), modelKeyMap.getRelFieldName());
 
@@ -771,7 +775,7 @@ public class EntityServices {
 
 			replaceFileReferences(file);
 		} catch (IOException e) {
-			System.err.println(e.getMessage());
+			LOGGER.error(e.getMessage());
 		}
 	}
 
