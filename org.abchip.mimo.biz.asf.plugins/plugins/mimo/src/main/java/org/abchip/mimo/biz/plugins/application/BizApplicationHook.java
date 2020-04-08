@@ -67,7 +67,7 @@ public class BizApplicationHook {
 		System.setProperty("derby.system.home", APPLICATION.getPaths().getData() + "/derby");
 
 		try {
-			LOGGER.info("Starting application: " + APPLICATION.getName());
+			LOGGER.info("Starting Biz application: " + APPLICATION.getName());
 			this.copyToWork(APPLICATION, workPath);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -97,7 +97,7 @@ public class BizApplicationHook {
 			LOGGER.info("Started container " + container.getName());
 		}
 
-		LOGGER.info("Started application: " + APPLICATION.getName());
+		LOGGER.info("Started Biz application: " + APPLICATION.getName());
 	}
 
 	private List<ContainerConfig.Configuration> filterContainersHavingMatchingLoaders(List<String> loaders, Collection<ContainerConfig.Configuration> containerConfigs) {
