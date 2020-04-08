@@ -18,13 +18,13 @@ import org.abchip.mimo.biz.party.party.PartyFactory;
 import org.abchip.mimo.biz.party.party.PartyType;
 import org.abchip.mimo.biz.party.party.Person;
 import org.abchip.mimo.context.Context;
-import org.abchip.mimo.core.base.BaseCommandProviderImpl;
+import org.abchip.mimo.core.base.cmd.BaseCommands;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
 
-public class TenantCommands extends BaseCommandProviderImpl {
+public class TenantCommands extends BaseCommands {
 
 	@Inject
 	private ResourceManager resourceManager;

@@ -29,10 +29,10 @@ import org.abchip.mimo.context.AuthenticationUserPassword;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextFactory;
 import org.abchip.mimo.context.ContextProvider;
-import org.abchip.mimo.core.base.BaseCommandProviderImpl;
+import org.abchip.mimo.core.base.cmd.BaseCommands;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
 
-public class StressTestCommands extends BaseCommandProviderImpl {
+public class StressTestCommands extends BaseCommands {
 
 	@Inject
 	private Application application;

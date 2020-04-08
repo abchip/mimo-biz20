@@ -63,7 +63,7 @@ import org.abchip.mimo.biz.product.store.ProductStore;
 import org.abchip.mimo.biz.security.login.UserLogin;
 import org.abchip.mimo.biz.shipment.shipment.ShipmentMethodType;
 import org.abchip.mimo.context.Context;
-import org.abchip.mimo.core.base.BaseCommandProviderImpl;
+import org.abchip.mimo.core.base.cmd.BaseCommands;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceManager;
@@ -84,7 +84,7 @@ import com.stripe.Stripe;
 import com.stripe.model.PaymentIntent;
 import com.stripe.model.PaymentMethod;
 
-public class BizTestCommands extends BaseCommandProviderImpl {
+public class BizTestCommands extends BaseCommands {
 
 	@Inject
 	private ResourceManager resourceManager;

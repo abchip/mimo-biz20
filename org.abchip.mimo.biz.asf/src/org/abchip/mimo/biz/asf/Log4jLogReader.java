@@ -8,6 +8,9 @@
  */
 package org.abchip.mimo.biz.asf;
 
+import java.util.Map;
+import java.util.WeakHashMap;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.osgi.service.log.LogEntry;
@@ -16,14 +19,16 @@ import org.osgi.service.log.LogListener;
 
 public final class Log4jLogReader implements LogListener {
 
+	private Map<String, Logger> loggers = new WeakHashMap<String, Logger>();
+
 	@Override
-	public void logged(final LogEntry entry) {
+	public void logged(LogEntry logEntry) {
 
-		Logger logger = LogManager.getLogger(entry.getLoggerName()); 
+		Logger logger = getLogger(logEntry);
 
-		final String message = entry.getMessage();
+		String message = logEntry.getMessage();
 
-		LogLevel level = entry.getLogLevel();
+		LogLevel level = logEntry.getLogLevel();
 		switch (level) {
 		case AUDIT:
 			logger.warn(message);
@@ -44,5 +49,16 @@ public final class Log4jLogReader implements LogListener {
 			logger.warn(message);
 			break;
 		}
+	}
+
+	private Logger getLogger(LogEntry logEntry) {
+
+		Logger logger = loggers.get(logEntry.getLoggerName());
+		if (logger == null) {
+			logger = LogManager.getLogger(logEntry.getLoggerName());
+			loggers.put(logEntry.getLoggerName(), logger);
+		}
+
+		return logger;
 	}
 }

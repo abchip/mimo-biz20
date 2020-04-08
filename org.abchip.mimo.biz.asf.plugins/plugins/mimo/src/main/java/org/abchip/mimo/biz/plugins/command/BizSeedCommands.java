@@ -17,7 +17,7 @@ import javax.inject.Inject;
 
 import org.abchip.mimo.biz.plugins.entity.EntityUtils;
 import org.abchip.mimo.context.Context;
-import org.abchip.mimo.core.base.BaseCommandProviderImpl;
+import org.abchip.mimo.core.base.cmd.BaseCommands;
 import org.abchip.mimo.entity.EntityContainer;
 import org.abchip.mimo.entity.EntityFactory;
 import org.abchip.mimo.entity.EntityIdentifiable;
@@ -32,7 +32,7 @@ import org.apache.ofbiz.entity.GenericValue;
 import org.apache.ofbiz.entity.util.EntityDataLoader;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
 
-public class BizSeedCommands extends BaseCommandProviderImpl {
+public class BizSeedCommands extends BaseCommands {
 
 	@Inject
 	private ResourceManager resourceManager;

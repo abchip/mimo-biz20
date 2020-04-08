@@ -220,7 +220,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 	@Override
 	public List<E> read(String filter, String fields, String order, int limit, boolean proxy) {
 
-		LOGGER.trace("Read frame " + this.getFrame().getName());
+		LOGGER.trace("Read frame {}", this.getFrame().getName());
 
 		DynamicViewEntity dynamicViewEntity = buildDynamicView(this.modelEntity);
 

@@ -20,7 +20,7 @@ import javax.inject.Inject;
 
 import org.abchip.mimo.application.Application;
 import org.abchip.mimo.context.Context;
-import org.abchip.mimo.core.base.BaseCommandProviderImpl;
+import org.abchip.mimo.core.base.cmd.BaseCommands;
 import org.abchip.mimo.entity.EntityContainer;
 import org.abchip.mimo.entity.EntityFactory;
 import org.abchip.mimo.entity.EntityIdentifiable;
@@ -38,7 +38,7 @@ import org.eclipse.osgi.framework.console.CommandInterpreter;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class FiCCommands extends BaseCommandProviderImpl {
+public class FiCCommands extends BaseCommands {
 	private static final String urlFiC = "https://api.fattureincloud.it:443/v1/";
 	private static final String body = "{\"api_uid\": \"673532\", \"api_key\": \"38319cbc95dddf6ff7d744491bd823e7\", \"pagina\": ?}";
 
