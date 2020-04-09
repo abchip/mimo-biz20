@@ -18,10 +18,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.abchip.mimo.util.Logs;
-import org.apache.ofbiz.base.start.Config;
-import org.apache.ofbiz.base.start.StartupCommand;
-import org.apache.ofbiz.base.start.StartupException;
-import org.apache.ofbiz.base.start.StartupLoader;
 import org.osgi.service.log.Logger;
 
 public class BizClassLoaderImpl extends ClassLoader {
@@ -59,25 +55,5 @@ public class BizClassLoaderImpl extends ClassLoader {
 		}
 
 		return null;
-	}
-
-	@Override
-	public Class<?> loadClass(String name, boolean resolve) throws ClassNotFoundException {
-
-		if (name.equals("org.apache.ofbiz.base.container.ContainerLoader"))
-			return BizApplicationLoaderImpl.class;
-
-		return super.loadClass(name, resolve);
-	}
-
-	public static class BizApplicationLoaderImpl implements StartupLoader {
-
-		@Override
-		public synchronized void load(Config config, List<StartupCommand> ofbizCommands) throws StartupException {
-		}
-
-		@Override
-		public void unload() throws StartupException {
-		}
 	}
 }

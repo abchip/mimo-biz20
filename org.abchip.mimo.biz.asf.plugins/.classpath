@@ -8,6 +8,5 @@
 	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/org.abchip.mimo.biz.asf.applications"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/org.abchip.mimo.biz.asf.framework"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/org.abchip.mimo.biz.asf.extensions"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

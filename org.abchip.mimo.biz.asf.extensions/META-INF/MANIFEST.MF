@@ -8,4 +8,4 @@ Fragment-Host: org.abchip.mimo.biz.asf
 Automatic-Module-Name: org.abchip.mimo.biz.asf.extensions
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ActivationPolicy: lazy
-Export-Package: org.apache.ofbiz.base.util
+Export-Package: org.apache.ofbiz.base.container

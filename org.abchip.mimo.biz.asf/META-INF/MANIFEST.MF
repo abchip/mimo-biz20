@@ -19,3 +19,4 @@ Require-Bundle: org.abchip.mimo.core,
 Import-Package: org.osgi.framework
 Bundle-ClassPath: .
 Bundle-ActivationPolicy: lazy
+Export-Package: org.apache.ofbiz.base.util

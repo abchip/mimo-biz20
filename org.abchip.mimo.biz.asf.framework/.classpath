@@ -99,6 +99,5 @@
 	<classpathentry kind="src" path="framework/webapp/config"/>
 	<classpathentry kind="src" path="framework/webapp/dtd"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/org.abchip.mimo.biz.asf.extensions"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
