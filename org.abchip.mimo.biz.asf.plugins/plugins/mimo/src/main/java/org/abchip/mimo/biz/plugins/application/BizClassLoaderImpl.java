@@ -9,18 +9,24 @@
 package org.abchip.mimo.biz.plugins.application;
 
 import java.net.MalformedURLException;
+import java.net.URISyntaxException;
 import java.net.URL;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.abchip.mimo.util.Logs;
 import org.apache.ofbiz.base.start.Config;
 import org.apache.ofbiz.base.start.StartupCommand;
 import org.apache.ofbiz.base.start.StartupException;
 import org.apache.ofbiz.base.start.StartupLoader;
+import org.osgi.service.log.Logger;
 
 public class BizClassLoaderImpl extends ClassLoader {
+
+	private static final Logger LOGGER = Logs.getLogger(BizClassLoaderImpl.class);
 
 	private List<URL> urls = null;
 
@@ -35,18 +41,20 @@ public class BizClassLoaderImpl extends ClassLoader {
 
 	@Override
 	public URL findResource(String name) {
-		
+
 		if (name.contains("/"))
 			return null;
 
 		for (URL url : urls) {
-			Path path = Paths.get(url.getFile(), name);
-			if (path.toFile().exists()) {
-				try {
+			try {
+				Path path = Paths.get(url.toURI()).resolve(name);
+
+				if (Files.exists(path))
 					return path.toUri().toURL();
-				} catch (MalformedURLException e) {
-					continue;
-				}
+
+			} catch (URISyntaxException | MalformedURLException e) {
+				LOGGER.warn(e.getMessage());
+				continue;
 			}
 		}
 
