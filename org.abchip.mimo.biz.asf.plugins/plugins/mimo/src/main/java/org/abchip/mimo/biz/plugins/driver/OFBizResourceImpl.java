@@ -49,7 +49,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private final Logger LOGGER = Logs.getLogger(OFBizResourceImpl.class);
+	private static final Logger LOGGER = Logs.getLogger(OFBizResourceImpl.class);
 
 	private Frame<E> frame = null;
 	private Delegator delegator = null;
@@ -87,8 +87,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 				String errMsg = "Failure in create operation for entity [" + this.getFrame().getName() + "/" + entity.getID() + "]: " + e.toString() + ". Rolling back transaction.";
 				TransactionUtil.rollback(beganTransaction, errMsg, e);
 			} catch (GenericTransactionException e1) {
-				// Debug.logError(gte2, "Unable to rollback transaction", module);
-				e1.printStackTrace();
+				LOGGER.warn(e1.getMessage());
 			}
 			throw new RuntimeException(e);
 		}
@@ -109,7 +108,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 				String errMsg = "Failure in update operation for entity [" + this.getFrame().getName() + "/" + entity.getID() + "]: " + e.toString() + ". Rolling back transaction.";
 				TransactionUtil.rollback(beganTransaction, errMsg, e);
 			} catch (GenericTransactionException e1) {
-				e1.printStackTrace();
+				LOGGER.warn(e1.getMessage());
 			}
 			throw new RuntimeException(e);
 		}
@@ -131,8 +130,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 				String errMsg = "Failure in delete operation for entity [" + this.getFrame().getName() + "/" + entity.getID() + "]: " + e.toString() + ". Rolling back transaction.";
 				TransactionUtil.rollback(beganTransaction, errMsg, e);
 			} catch (GenericTransactionException e1) {
-				// Debug.logError(gte2, "Unable to rollback transaction", module);
-				e1.printStackTrace();
+				LOGGER.warn(e1.getMessage());
 			}
 			throw new RuntimeException(e);
 		}
@@ -164,8 +162,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 				String errMsg = "General error in getting a sequenced ID for frame " + this.getFrame().getID();
 				TransactionUtil.rollback(beganTransaction, errMsg, e);
 			} catch (GenericTransactionException e1) {
-				// Debug.logError(e, errMsg, module);
-				e1.printStackTrace();
+				LOGGER.warn(e1.getMessage());
 			}
 			throw new RuntimeException(e);
 		}
@@ -207,9 +204,10 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			TransactionUtil.commit(beganTransaction);
 		} catch (GenericEntityException e) {
 			try {
-				TransactionUtil.rollback(beganTransaction, null, e);
+				String errMsg = "Failure in read operation for entity [" + this.getFrame().getName() + "/" + name + "]: " + e.toString() + ". Rolling back transaction.";
+				TransactionUtil.rollback(beganTransaction, errMsg, e);
 			} catch (GenericTransactionException e1) {
-				e1.printStackTrace();
+				LOGGER.warn(e1.getMessage());
 			}
 			throw new RuntimeException(e);
 		}
@@ -220,7 +218,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 	@Override
 	public List<E> read(String filter, String fields, String order, int limit, boolean proxy) {
 
-		LOGGER.trace("Read frame {}", this.getFrame().getName());
+		LOGGER.trace("Read frame {} filter {} fields {} order {} limit {} proxy {}", this.getFrame().getName(), filter, fields, order, limit, proxy);
 
 		DynamicViewEntity dynamicViewEntity = buildDynamicView(this.modelEntity);
 
@@ -284,12 +282,15 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			TransactionUtil.commit(beganTransaction);
 		} catch (GenericEntityException e) {
 			try {
-				TransactionUtil.rollback(beganTransaction, null, e);
+				String errMsg = "Failure in read operation for entity [" + this.getFrame().getName() + "]: " + e.toString() + ". Rolling back transaction.";
+				TransactionUtil.rollback(beganTransaction, errMsg, e);
 			} catch (GenericTransactionException e1) {
-				e1.printStackTrace();
+				LOGGER.warn(e1.getMessage());
 			}
 			throw new RuntimeException(e);
 		}
+
+		LOGGER.trace("Read frame {} elements {}", this.getFrame().getName(), entities.size());
 
 		return entities;
 	}
