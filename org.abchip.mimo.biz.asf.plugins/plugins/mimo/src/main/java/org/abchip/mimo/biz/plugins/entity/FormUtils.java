@@ -235,7 +235,7 @@ public class FormUtils {
 		Collection<ComponentConfig> components = ComponentConfig.getAllComponents();
 		for (ComponentConfig componentConfig : components) {
 
-			Path root = Paths.get(componentConfig.getRootLocation() + "widget");
+			Path root = Paths.get(componentConfig.getRootLocation(), "widget");
 			if (!Files.exists(root))
 				continue;
 
