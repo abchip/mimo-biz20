@@ -8,6 +8,7 @@
  */
 package org.abchip.mimo.biz.test.command;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -71,26 +72,25 @@ public class StressTestCommands extends BaseCommands {
 	}
 
 	public void _stressTestInps(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login()) {
-			String reqNumber = nextArgument(interpreter);
-			String poolNumber = nextArgument(interpreter);
-			long loops = 100;
-			int poolSize = 2;
-			if (reqNumber != null) {
-				try {
-					loops = Long.parseLong(reqNumber);
-				} catch (NumberFormatException e) {
-				}
+
+		String reqNumber = nextArgument(interpreter);
+		String poolNumber = nextArgument(interpreter);
+		long loops = 100;
+		int poolSize = 2;
+		if (reqNumber != null) {
+			try {
+				loops = Long.parseLong(reqNumber);
+			} catch (NumberFormatException e) {
 			}
-			if (poolNumber != null) {
-				try {
-					poolSize = Integer.parseInt(poolNumber);
-				} catch (NumberFormatException e) {
-				}
-			}
-			interpreter.println("Execution Stress Test Inps loops: " + loops + " and " + " poolSize: " + poolSize);
-			stressTestInps(interpreter, context.get(), loops, poolSize);
 		}
+		if (poolNumber != null) {
+			try {
+				poolSize = Integer.parseInt(poolNumber);
+			} catch (NumberFormatException e) {
+			}
+		}
+		interpreter.println("Execution Stress Test Inps loops: " + loops + " and " + " poolSize: " + poolSize);
+		stressTestInps(interpreter, loops, poolSize);
 	}
 
 	private void stressTestBase(CommandInterpreter interpreter, Context context) throws Exception {
@@ -163,19 +163,42 @@ public class StressTestCommands extends BaseCommands {
 		interpreter.println("Total time execution StressTestAgreement: " + (time2 - time1));
 	}
 
-	private void stressTestInps(CommandInterpreter interpreter, Context context, long loops, int poolSize) throws Exception {
+	@SuppressWarnings("resource")
+	private void stressTestInps(CommandInterpreter interpreter, long loops, int poolSize) throws Exception {
 
+		List<ContextProvider> contexts = new ArrayList<ContextProvider>();
+		
+		// open context
+		interpreter.print("Create " + poolSize + " connections.. ");
+		for (int i = 0; i < poolSize; i++) {
+			ContextProvider context = login();
+			contexts.add(context);
+		}
+		interpreter.println("done");
+		
 		long time1 = System.currentTimeMillis();
 
 		ExecutorService executor = Executors.newFixedThreadPool(poolSize);
-		for (int i = 0; i < loops; i++)
-			executor.submit(new CreateInpsAgreement(context));
+
+		int x = 0;
+		for (int i = 0; i < loops; i++) {
+			executor.submit(new CreateInpsAgreement(contexts.get(x).get()));
+			x++;
+			if (x == poolSize)
+				x = 0;
+		}
 
 		executor.shutdown();
 		executor.awaitTermination(1, TimeUnit.HOURS);
 
 		long time2 = System.currentTimeMillis();
 		interpreter.println("Total time execution StressTestInps: " + (time2 - time1));
+		
+		interpreter.print("Close " + poolSize + " connections.. ");
+		for (int i = 0; i < poolSize; i++) {
+			contexts.get(i).close();
+		}
+		interpreter.println("done");
 	}
 
 	private ContextProvider login() {
