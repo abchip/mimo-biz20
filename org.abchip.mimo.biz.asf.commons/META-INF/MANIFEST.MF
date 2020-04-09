@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: MIMO Biz Commons
+Bundle-Name: MIMO Biz ASF Commons
 Bundle-SymbolicName: org.abchip.mimo.biz.asf.commons;singleton:=true
 Bundle-Version: 0.2.0.qualifier
 Bundle-Vendor: ABChip

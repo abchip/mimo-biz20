@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: MIMO Biz Product
+Bundle-Name: MIMO Biz ASF Product
 Bundle-SymbolicName: org.abchip.mimo.biz.asf;singleton:=true
 Bundle-Version: 0.2.0.qualifier
 Bundle-Vendor: ABChip
@@ -19,4 +19,3 @@ Require-Bundle: org.abchip.mimo.core,
 Import-Package: org.osgi.framework
 Bundle-ClassPath: .
 Bundle-ActivationPolicy: lazy
-Export-Package: org.apache.ofbiz.base.util

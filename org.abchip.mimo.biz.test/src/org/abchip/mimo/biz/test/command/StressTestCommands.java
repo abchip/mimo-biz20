@@ -167,19 +167,17 @@ public class StressTestCommands extends BaseCommands {
 	private void stressTestInps(CommandInterpreter interpreter, long loops, int poolSize) throws Exception {
 
 		List<ContextProvider> contexts = new ArrayList<ContextProvider>();
-		
-		// open context
-		interpreter.print("Create " + poolSize + " connections.. ");
-		for (int i = 0; i < poolSize; i++) {
-			ContextProvider context = login();
-			contexts.add(context);
-		}
-		interpreter.println("done");
-		
-		long time1 = System.currentTimeMillis();
 
+		// open contexts
+		interpreter.print("Create " + poolSize + " connections.. ");
+		for (int i = 0; i < poolSize; i++)
+			contexts.add(login());
+		interpreter.println("done");
+
+		long time1 = System.currentTimeMillis();
 		ExecutorService executor = Executors.newFixedThreadPool(poolSize);
 
+		// jobs
 		int x = 0;
 		for (int i = 0; i < loops; i++) {
 			executor.submit(new CreateInpsAgreement(contexts.get(x).get()));
@@ -190,27 +188,29 @@ public class StressTestCommands extends BaseCommands {
 
 		executor.shutdown();
 		executor.awaitTermination(1, TimeUnit.HOURS);
+		interpreter.println("Total time execution StressTestInps: " + (System.currentTimeMillis() - time1));
 
-		long time2 = System.currentTimeMillis();
-		interpreter.println("Total time execution StressTestInps: " + (time2 - time1));
-		
+		// close contexts
 		interpreter.print("Close " + poolSize + " connections.. ");
-		for (int i = 0; i < poolSize; i++) {
+		for (int i = 0; i < poolSize; i++)
 			contexts.get(i).close();
-		}
 		interpreter.println("done");
+		
 	}
 
 	private ContextProvider login() {
+
 		AuthenticationUserPassword authentication = ContextFactory.eINSTANCE.createAuthenticationUserPassword();
 		authentication.setUser("abchip-test");
 		authentication.setPassword("ofbiz");
 		authentication.setTenant("test");
-		// authentication.setUser("abchip");
-		// authentication.setPassword("ofbiz");
 		AuthenticationManager authenticationManager = application.getContext().get(AuthenticationManager.class);
 
-		return authenticationManager.login(null, authentication);
+		ContextProvider contextProvider = authenticationManager.login(null, authentication);
+		if (contextProvider == null)
+			throw new RuntimeException("Login failed");
+
+		return contextProvider;
 	}
 
 	@Override

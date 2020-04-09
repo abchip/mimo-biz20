@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MIMO Biz ASF Extensions
+Bundle-SymbolicName: org.abchip.mimo.biz.asf.extensions;singleton:=true
+Bundle-Version: 0.2.0.qualifier
+Bundle-Vendor: ABChip
+Fragment-Host: org.abchip.mimo.biz.asf
+Automatic-Module-Name: org.abchip.mimo.biz.asf.extensions
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy
+Export-Package: org.apache.ofbiz.base.util
