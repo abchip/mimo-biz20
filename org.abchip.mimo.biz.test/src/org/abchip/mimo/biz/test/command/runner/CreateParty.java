@@ -67,6 +67,26 @@ public class CreateParty implements Callable<Long> {
 		partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy(role));
 		partyRoleWriter.create(partyRole);
 
+		partyRole = partyRoleWriter.make();
+		partyRole.setPartyId(partyGroup);
+		partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("BILL_TO_CUSTOMER"));
+		partyRoleWriter.create(partyRole);
+
+		partyRole = partyRoleWriter.make();
+		partyRole.setPartyId(partyGroup);
+		partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("SHIP_TO_CUSTOMER"));
+		partyRoleWriter.create(partyRole);
+
+		partyRole = partyRoleWriter.make();
+		partyRole.setPartyId(partyGroup);
+		partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("END_USER_CUSTOMER"));
+		partyRoleWriter.create(partyRole);
+
+		partyRole = partyRoleWriter.make();
+		partyRole.setPartyId(partyGroup);
+		partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("PLACING_CUSTOMER"));
+		partyRoleWriter.create(partyRole);
+
 		// Address
 		// PostaAddress
 		ResourceWriter<PostalAddress> postalAddressWriter = resourceManager.getResourceWriter(context, PostalAddress.class);

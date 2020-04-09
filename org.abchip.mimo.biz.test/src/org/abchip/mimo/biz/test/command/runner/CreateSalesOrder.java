@@ -23,7 +23,6 @@ import org.abchip.mimo.biz.order.order.OrderType;
 import org.abchip.mimo.biz.party.contact.ContactMech;
 import org.abchip.mimo.biz.party.contact.ContactMechPurposeType;
 import org.abchip.mimo.biz.party.party.Party;
-import org.abchip.mimo.biz.party.party.PartyRole;
 import org.abchip.mimo.biz.party.party.RoleType;
 import org.abchip.mimo.biz.product.price.ProductPrice;
 import org.abchip.mimo.biz.product.store.ProductStore;
@@ -59,7 +58,7 @@ public class CreateSalesOrder implements Callable<Long> {
 
 		ProductStore productStore = StressTestUtils.getProductStore(context, resourceManager);
 		UserLogin userLogin = resourceManager.getFrame(context, UserLogin.class).createProxy("abchip-test");
-		
+
 		// Order Header
 		ResourceWriter<OrderHeader> orderHeaderWriter = resourceManager.getResourceWriter(context, OrderHeader.class);
 		OrderHeader orderHeader = orderHeaderWriter.make(true);
@@ -112,30 +111,8 @@ public class CreateSalesOrder implements Callable<Long> {
 
 		// OrderItem
 		long i = 1;
-		for (ProductPrice productPrice : this.productPrices) 
+		for (ProductPrice productPrice : this.productPrices)
 			createOrderItem(resourceManager, orderHeader, StressTestUtils.formatPaddedNumber(i++, 5), 1, productPrice);
-
-		// Party Role to partyId
-		ResourceWriter<PartyRole> partyRoleWriter = resourceManager.getResourceWriter(context, PartyRole.class);
-		PartyRole partyRole = partyRoleWriter.make();
-		partyRole.setPartyId(party);
-		partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("BILL_TO_CUSTOMER"));
-		partyRoleWriter.create(partyRole);
-
-		partyRole = partyRoleWriter.make();
-		partyRole.setPartyId(party);
-		partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("SHIP_TO_CUSTOMER"));
-		partyRoleWriter.create(partyRole);
-
-		partyRole = partyRoleWriter.make();
-		partyRole.setPartyId(party);
-		partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("END_USER_CUSTOMER"));
-		partyRoleWriter.create(partyRole);
-
-		partyRole = partyRoleWriter.make();
-		partyRole.setPartyId(party);
-		partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("PLACING_CUSTOMER"));
-		partyRoleWriter.create(partyRole);
 
 		// OrderRole
 		ResourceWriter<OrderRole> orderRoleWriter = resourceManager.getResourceWriter(context, OrderRole.class);

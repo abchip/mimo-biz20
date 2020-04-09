@@ -1521,4 +1521,3 @@ Export-Package: bsh,
  org.xmlpull.v1,
  ucar.httpservices
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Require-Bundle: org.abchip.mimo.core.log4j;bundle-version="0.2.0"
