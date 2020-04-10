@@ -101,6 +101,6 @@ public class SeedServices {
 			e.printStackTrace();
 		}
 		
-		LOGGER.info("Imprted seed {}", seedName);
+		LOGGER.info("Imported seed {}", seedName);
 	}
 }
