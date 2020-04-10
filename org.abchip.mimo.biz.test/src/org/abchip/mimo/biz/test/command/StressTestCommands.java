@@ -40,16 +40,23 @@ public class StressTestCommands extends BaseCommands {
 
 	public void _stressTest(CommandInterpreter interpreter) throws Exception {
 		try (ContextProvider context = login()) {
-			stressTestBase(interpreter, context.get());
 			stressTestSalesOrder(interpreter, context.get());
 			stressTestSalesInvoice(interpreter, context.get());
 			stressTestAgreement(interpreter, context.get());
 		}
 	}
 
-	public void _stressTestBase(CommandInterpreter interpreter) throws Exception {
+	public void _createTestBaseData(CommandInterpreter interpreter) throws Exception {
 		try (ContextProvider context = login()) {
-			stressTestBase(interpreter, context.get());
+			String reqNumber = nextArgument(interpreter);
+			long loops = 1;
+			if (reqNumber != null) {
+				try {
+					loops = Long.parseLong(reqNumber);
+				} catch (NumberFormatException e) {
+				}
+			}
+			createTestBaseData(interpreter, context.get(), loops);
 		}
 	}
 
@@ -93,14 +100,15 @@ public class StressTestCommands extends BaseCommands {
 		stressTestInps(interpreter, loops, poolSize);
 	}
 
-	private void stressTestBase(CommandInterpreter interpreter, Context context) throws Exception {
-
+	private void createTestBaseData(CommandInterpreter interpreter, Context context, long loops) throws Exception {
 		long time1 = System.currentTimeMillis();
-
 		ExecutorService executor = Executors.newFixedThreadPool(1);
 
-		executor.submit(new CreateProduct(context));
-		executor.submit(new CreateParty(context));
+		// jobs
+		for (int i = 0; i < loops; i++) {
+			executor.submit(new CreateProduct(context));
+			executor.submit(new CreateParty(context));
+		}
 
 		executor.shutdown();
 		executor.awaitTermination(1, TimeUnit.MINUTES);
@@ -112,6 +120,10 @@ public class StressTestCommands extends BaseCommands {
 	private void stressTestSalesOrder(CommandInterpreter interpreter, Context context) throws Exception {
 
 		List<Party> parties = StressTestUtils.getEnabledCustomers(context);
+		if(parties.isEmpty()) {
+			interpreter.println("Customer not present, launch command 'createTestBaseData'");
+			return;
+		}
 		List<ProductPrice> productPrices = StressTestUtils.getDigitalProductPrices(context);
 
 		long time1 = System.currentTimeMillis();
@@ -130,6 +142,10 @@ public class StressTestCommands extends BaseCommands {
 	private void stressTestSalesInvoice(CommandInterpreter interpreter, Context context) throws Exception {
 
 		List<Party> parties = StressTestUtils.getEnabledCustomers(context);
+		if(parties.isEmpty()) {
+			interpreter.println("Customer not present, launch command 'createTestBaseData'");
+			return;
+		}
 		List<ProductPrice> productPrices = StressTestUtils.getDigitalProductPrices(context);
 
 		long time1 = System.currentTimeMillis();
@@ -148,6 +164,10 @@ public class StressTestCommands extends BaseCommands {
 	private void stressTestAgreement(CommandInterpreter interpreter, Context context) throws Exception {
 
 		List<Party> parties = StressTestUtils.getEnabledCustomers(context);
+		if(parties.isEmpty()) {
+			interpreter.println("Customer not present, launch command 'createTestBaseData'");
+			return;
+		}
 		List<ProductPrice> productPrices = StressTestUtils.getDigitalProductPrices(context);
 
 		long time1 = System.currentTimeMillis();

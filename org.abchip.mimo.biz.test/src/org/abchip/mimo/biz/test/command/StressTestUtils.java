@@ -80,8 +80,6 @@ public class StressTestUtils {
 
 		try (EntityIterator<Party> parties = partyReader.find()) {
 			for (Party party : parties) {
-				if (party.getID().equals("PersonCanary"))
-					continue;
 				if (!party.getStatusId().getID().equals("PARTY_ENABLED"))
 					continue;
 				int count = 0;
@@ -107,8 +105,6 @@ public class StressTestUtils {
 
 		try (EntityIterator<Party> parties = partyReader.find()) {
 			for (Party party : parties) {
-				if (party.getID().equals("PersonCanary"))
-					continue;
 				if (!party.getStatusId().getID().equals("PARTY_ENABLED"))
 					continue;
 				int count = 0;
@@ -135,8 +131,6 @@ public class StressTestUtils {
 
 		try (EntityIterator<Product> products = productReader.find()) {
 			for (Product product : products) {
-				if (product.getID().equals("ProductCanary"))
-					continue;
 				if (!product.getProductTypeId().getID().equals("DIGITAL_GOOD"))
 					continue;
 				ProductPrice price = StressTestUtils.getProductPrice(context, resourceManager, product);
