@@ -230,8 +230,20 @@
       shipmentMethodTypeId="NO_SHIPPING"
       description="No shipping"/>
   <contents
+      xsi:type="biz-shipment:ShipmentMethodType"
+      shipmentMethodTypeId="STANDARD"
+      description="Standard"/>
+  <contents
       xsi:type="biz-shipment:CarrierShipmentMethod"
       shipmentMethodTypeId="NO_SHIPPING"
+      roleTypeId="CARRIER"
+      sequenceNumber="1">
+    <partyId
+        href="abchip-net.xmi#_NA_"/>
+  </contents>
+  <contents
+      xsi:type="biz-shipment:CarrierShipmentMethod"
+      shipmentMethodTypeId="STANDARD"
       roleTypeId="CARRIER"
       sequenceNumber="1">
     <partyId
