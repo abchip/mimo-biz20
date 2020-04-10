@@ -8,15 +8,13 @@
     xmlns:biz-facility="http://www.abchip.org/mimo/biz/product/facility"
     xmlns:biz-login="http://www.abchip.org/mimo/biz/security/login"
     xmlns:biz-party="http://www.abchip.org/mimo/biz/party/party"
-    xmlns:biz-price="http://www.abchip.org/mimo/biz/product/price"
-    xmlns:biz-product="http://www.abchip.org/mimo/biz/product/product"
     xmlns:biz-property="http://www.abchip.org/mimo/biz/common/property"
     xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/security/securitygroup"
     xmlns:biz-shipment="http://www.abchip.org/mimo/biz/shipment/shipment"
     xmlns:biz-store="http://www.abchip.org/mimo/biz/product/store"
     xmlns:biz-tax="http://www.abchip.org/mimo/biz/accounting/tax"
     xmlns:mimo-ent="http://www.abchip.org/mimo/entity"
-    xsi:schemaLocation="http://www.abchip.org/mimo/biz/product/catalog ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/catalog http://www.abchip.org/mimo/biz/party/contact ../../../org.abchip.mimo.biz.model/model/biz.ecore#//party/contact http://www.abchip.org/mimo/biz/product/facility ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/facility http://www.abchip.org/mimo/biz/security/login ../../../org.abchip.mimo.biz.model/model/biz.ecore#//security/login http://www.abchip.org/mimo/biz/party/party ../../../org.abchip.mimo.biz.model/model/biz.ecore#//party/party http://www.abchip.org/mimo/biz/product/price ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/price http://www.abchip.org/mimo/biz/product/product ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/product http://www.abchip.org/mimo/biz/common/property ../../../org.abchip.mimo.biz.model/model/biz.ecore#//common/property http://www.abchip.org/mimo/biz/security/securitygroup ../../../org.abchip.mimo.biz.model/model/biz.ecore#//security/securitygroup http://www.abchip.org/mimo/biz/shipment/shipment ../../../org.abchip.mimo.biz.model/model/biz.ecore#//shipment/shipment http://www.abchip.org/mimo/biz/product/store ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/store http://www.abchip.org/mimo/biz/accounting/tax ../../../org.abchip.mimo.biz.model/model/biz.ecore#//accounting/tax http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
+    xsi:schemaLocation="http://www.abchip.org/mimo/biz/product/catalog ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/catalog http://www.abchip.org/mimo/biz/party/contact ../../../org.abchip.mimo.biz.model/model/biz.ecore#//party/contact http://www.abchip.org/mimo/biz/product/facility ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/facility http://www.abchip.org/mimo/biz/security/login ../../../org.abchip.mimo.biz.model/model/biz.ecore#//security/login http://www.abchip.org/mimo/biz/party/party ../../../org.abchip.mimo.biz.model/model/biz.ecore#//party/party http://www.abchip.org/mimo/biz/common/property ../../../org.abchip.mimo.biz.model/model/biz.ecore#//common/property http://www.abchip.org/mimo/biz/security/securitygroup ../../../org.abchip.mimo.biz.model/model/biz.ecore#//security/securitygroup http://www.abchip.org/mimo/biz/shipment/shipment ../../../org.abchip.mimo.biz.model/model/biz.ecore#//shipment/shipment http://www.abchip.org/mimo/biz/product/store ../../../org.abchip.mimo.biz.model/model/biz.ecore#//product/store http://www.abchip.org/mimo/biz/accounting/tax ../../../org.abchip.mimo.biz.model/model/biz.ecore#//accounting/tax http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
     name="abchip-net">
   <contents
       xsi:type="biz-party:PartyGroup"
@@ -115,16 +113,6 @@
       allowSolicitation="true">
     <partyId
         href="abchip-net.xmi#Company"/>
-  </contents>
-  <contents
-      xsi:type="biz-party:Person"
-      partyId="PersonCanary"
-      firstName="First name"
-      lastName="Last name">
-    <partyTypeId
-        href="seed-initial.xmi#PERSON"/>
-    <statusId
-        href="seed-initial.xmi#PARTY_ENABLED"/>
   </contents>
   <contents
       xsi:type="biz-facility:Facility"
@@ -259,32 +247,6 @@
       roleTypeId="CARRIER"
       sequenceNumber="1"
       shipmentMethodTypeId="NO_SHIPPING"/>
-  <contents
-      xsi:type="biz-product:Product"
-      productId="ProductCanary"
-      internalName="ProductCanary"
-      lotIdFilledIn="Allowed"
-      productName="ProductCanary description">
-    <inventoryItemTypeId
-        href="seed-initial.xmi#NON_SERIAL_INV_ITEM"/>
-    <productTypeId
-        href="seed-initial.xmi#DIGITAL_GOOD"/>
-  </contents>
-  <contents
-      xsi:type="biz-price:ProductPrice"
-      productId="ProductCanary"
-      fromDate="2019-01-01T00:00:00.000+0100"
-      price="1"
-      taxInPrice="true">
-    <productPriceTypeId
-        href="seed-initial.xmi#DEFAULT_PRICE"/>
-    <productPricePurposeId
-        href="seed-initial.xmi#PURCHASE"/>
-    <currencyUomId
-        href="seed-initial.xmi#EUR"/>
-    <productStoreGroupId
-        href="seed-initial-product-store-group.xmi#_NA_"/>
-  </contents>
   <contents
       xsi:type="biz-property:SystemProperty"
       systemPropertyId="currency.uom.id.default"

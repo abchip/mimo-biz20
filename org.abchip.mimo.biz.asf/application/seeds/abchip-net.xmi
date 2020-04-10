@@ -203,4 +203,18 @@
   </contents>
   <contents xsi:type="biz-property:SystemProperty" systemPropertyId="currency.uom.id.default" systemResourceId="general" description="The default currency to use for prices, etc" systemPropertyValue="EUR"/>
   <contents xsi:type="biz-property:SystemProperty" systemPropertyId="country.geo.id.default" systemResourceId="general" description="The default country for drop downs" systemPropertyValue="ITA"/>
+  <contents xsi:type="biz-party:Person" partyId="PersonCanary" firstName="First name" lastName="Last name">
+    <partyTypeId href="seed-initial.xmi#PERSON"/>
+    <statusId href="seed-initial.xmi#PARTY_ENABLED"/>
+  </contents>
+  <contents xsi:type="biz-product:Product" productId="ProductCanary" internalName="ProductCanary" lotIdFilledIn="Allowed" productName="ProductCanary description">
+    <inventoryItemTypeId href="seed-initial.xmi#NON_SERIAL_INV_ITEM"/>
+    <productTypeId href="seed-initial.xmi#DIGITAL_GOOD"/>
+  </contents>
+  <contents xsi:type="biz-price:ProductPrice" productId="ProductCanary" fromDate="2019-01-01T00:00:00.000+0100" price="1" taxInPrice="true">
+    <productPriceTypeId href="seed-initial.xmi#DEFAULT_PRICE"/>
+    <productPricePurposeId href="seed-initial.xmi#PURCHASE"/>
+    <currencyUomId href="seed-initial.xmi#EUR"/>
+    <productStoreGroupId href="seed-initial-product-store-group.xmi#_NA_"/>
+  </contents>
 </mimo-ent:EntityContainer>
