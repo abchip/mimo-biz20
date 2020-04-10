@@ -113,7 +113,7 @@ public class CreateSalesOrder implements Callable<Long> {
 		orderItemShipGroup.setShipmentMethodTypeId(resourceManager.getFrame(context, ShipmentMethodType.class).createProxy("NO_SHIPPING"));
 		orderItemShipGroup.setCarrierPartyId(resourceManager.getFrame(context, Party.class).createProxy("_NA_"));
 		orderItemShipGroup.setCarrierRoleTypeId("CARRIER");
-		orderItemShipGroupWriter.create(orderItemShipGroup, true);
+		orderItemShipGroupWriter.create(orderItemShipGroup);
 
 		// OrderItem
 		long i = 1;
@@ -160,7 +160,7 @@ public class CreateSalesOrder implements Callable<Long> {
 		orderPaymentPreference.setOrderId(orderHeader);
 		orderPaymentPreference.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("PAYMENT_NOT_RECEIVED"));
 		orderPaymentPreference.setPaymentMethodTypeId(resourceManager.getFrame(context, PaymentMethodType.class).createProxy("EXT_COD"));
-		orderPaymentPreferenceWriter.create(orderPaymentPreference, true);
+		orderPaymentPreferenceWriter.create(orderPaymentPreference);
 
 		// Inventory
 		//
