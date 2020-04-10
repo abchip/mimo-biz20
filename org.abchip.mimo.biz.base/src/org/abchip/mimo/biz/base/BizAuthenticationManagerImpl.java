@@ -34,6 +34,12 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 	}
 
 	@Override
+	public ContextProvider login(String contextId, AuthenticationUserToken authentication) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
 	public ContextProvider login(String contextId, AuthenticationUserPassword authentication) {
 
 		ResourceReader<UserLogin> userLoginReader = resourceManager.getResourceReader(application.getContext(), UserLogin.class, authentication.getTenant());
@@ -54,12 +60,6 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 		contextUser.getContextDescription().setTimeZone(userLogin.getLastTimeZone());
 
 		return contextProvider;
-	}
-
-	@Override
-	public ContextProvider login(String contextId, AuthenticationUserToken authentication) {
-		// TODO Auto-generated method stub
-		return null;
 	}
 
 	@Override
