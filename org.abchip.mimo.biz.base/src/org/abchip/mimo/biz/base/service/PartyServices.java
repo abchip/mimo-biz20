@@ -8,6 +8,7 @@
  */
 package org.abchip.mimo.biz.base.service;
 
+import org.abchip.mimo.biz.accounting.ledger.PartyAcctgPreference;
 import org.abchip.mimo.biz.party.contact.ContactMech;
 import org.abchip.mimo.biz.party.contact.PostalAddress;
 import org.abchip.mimo.biz.party.contact.TelecomNumber;
@@ -27,6 +28,12 @@ import ezvcard.property.StructuredName;
 import ezvcard.property.Telephone;
 
 public class PartyServices {
+	
+	public static PartyAcctgPreference getPartyAcctgPreference(Context context) {
+		ResourceManager resourceManager = context.get(ResourceManager.class);
+		ResourceReader<PartyAcctgPreference> partyAcctgPreference = resourceManager.getResourceReader(context, PartyAcctgPreference.class);
+		return partyAcctgPreference.lookup(SystemDefault.getCompany(context).getID());
+	}
 
 	public static VCard createVcardFromParty(Context context, String partyId) {
 

@@ -158,7 +158,10 @@ public class CreateParty implements Callable<Long> {
 		partyTaxAuthInfo.setFromDate(new Date());
 		partyTaxAuthInfo.setTaxAuthGeoId(SystemDefault.getGeo(context).getID());
 		partyTaxAuthInfo.setTaxAuthPartyId("ITA_ADE");
-		partyTaxAuthInfo.setPartyTaxId("IT-" + StressTestUtils.generateRandomString(7, true));
+		partyTaxAuthInfo.setPartyTaxId("IT-" + StressTestUtils.generateRandomString(11, true));
+		partyTaxAuthInfo.setIsExempt(false);
+		partyTaxAuthInfo.setIsNexus(false); 
+
 		partyTaxAuthInfoWriter.create(partyTaxAuthInfo);
 
 		// PartyIdentification

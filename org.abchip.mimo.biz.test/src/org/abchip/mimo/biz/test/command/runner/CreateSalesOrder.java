@@ -5,8 +5,10 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
 
+import org.abchip.mimo.biz.accounting.ledger.PartyAcctgPreference;
 import org.abchip.mimo.biz.accounting.payment.PaymentMethodType;
 import org.abchip.mimo.biz.base.service.ContactMechServices;
+import org.abchip.mimo.biz.base.service.PartyServices;
 import org.abchip.mimo.biz.base.service.SystemDefault;
 import org.abchip.mimo.biz.common.enum_.Enumeration;
 import org.abchip.mimo.biz.common.status.StatusItem;
@@ -57,14 +59,18 @@ public class CreateSalesOrder implements Callable<Long> {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		ProductStore productStore = StressTestUtils.getProductStore(context, resourceManager);
+		PartyAcctgPreference partyAcctgPreference = PartyServices.getPartyAcctgPreference(context);
 		UserLogin userLogin = resourceManager.getFrame(context, UserLogin.class).createProxy("abchip-test");
 
 		// Order Header
 		ResourceWriter<OrderHeader> orderHeaderWriter = resourceManager.getResourceWriter(context, OrderHeader.class);
 		OrderHeader orderHeader = orderHeaderWriter.make(true);
-
+		String orderId = orderHeader.getOrderId();
+		if (partyAcctgPreference != null && partyAcctgPreference.getOrderIdPrefix() != null) {
+			orderHeader.setOrderId(partyAcctgPreference.getOrderIdPrefix() + orderId);
+		}
 		if (productStore.getOrderNumberPrefix() != null)
-			orderHeader.setOrderId(productStore.getOrderNumberPrefix() + orderHeader.getOrderId());
+			orderHeader.setOrderId(productStore.getOrderNumberPrefix() + orderId);
 
 		orderHeader.setOrderTypeId(resourceManager.getFrame(context, OrderType.class).createProxy("SALES_ORDER"));
 		orderHeader.setProductStoreId(productStore);
@@ -107,13 +113,15 @@ public class CreateSalesOrder implements Callable<Long> {
 		orderItemShipGroup.setShipmentMethodTypeId(resourceManager.getFrame(context, ShipmentMethodType.class).createProxy("NO_SHIPPING"));
 		orderItemShipGroup.setCarrierPartyId(resourceManager.getFrame(context, Party.class).createProxy("_NA_"));
 		orderItemShipGroup.setCarrierRoleTypeId("CARRIER");
-		// orderItemShipGroupWriter.create(orderItemShipGroup, true);
+		orderItemShipGroupWriter.create(orderItemShipGroup, true);
 
 		// OrderItem
 		long i = 1;
-		for (ProductPrice productPrice : this.productPrices)
-			createOrderItem(resourceManager, orderHeader, StressTestUtils.formatPaddedNumber(i++, 5), 1, productPrice);
-
+		long total = 0;
+		for (ProductPrice productPrice : this.productPrices) {
+			createOrderItem(resourceManager, orderHeader, StressTestUtils.formatPaddedNumber(i++, 5), shipGroupSeqId, 1, productPrice);
+			total++;
+		}
 		// OrderRole
 		ResourceWriter<OrderRole> orderRoleWriter = resourceManager.getResourceWriter(context, OrderRole.class);
 		OrderRole orderRole = orderRoleWriter.make();
@@ -161,21 +169,24 @@ public class CreateSalesOrder implements Callable<Long> {
 		//
 
 		// TODO chiamare il servizio per i totali
+		orderHeader.setGrandTotal(new BigDecimal(total));
+		orderHeaderWriter.update(orderHeader);
+
 	}
 
-	private void createOrderItem(ResourceManager resourceManager, OrderHeader orderHeader, String itemSeqiD, int quantity, ProductPrice productPrice) {
+	private void createOrderItem(ResourceManager resourceManager, OrderHeader orderHeader, String itemSeqiD, String shipGroupSeqId, int quantity, ProductPrice productPrice) {
 		ResourceWriter<OrderItem> orderItemWriter = resourceManager.getResourceWriter(context, OrderItem.class);
 
 		OrderItem orderItem = orderItemWriter.make();
 		orderItem.setOrderId(orderHeader);
 		orderItem.setOrderItemSeqId(itemSeqiD);
 		orderItem.setOrderItemTypeId(resourceManager.getFrame(context, OrderItemType.class).createProxy("PRODUCT_ORDER_ITEM"));
-		orderItem.setProdCatalogId("TestCatalog");
+		orderItem.setProdCatalogId("ABChipTest");
 		orderItem.setProductId(productPrice.getProductId());
 		orderItem.setItemDescription(productPrice.getProductId().getProductName());
 		orderItem.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("ITEM_CREATED"));
 		orderItem.setQuantity(new BigDecimal(quantity));
-		orderItem.setUnitListPrice(productPrice.getPrice());
+		orderItem.setUnitPrice(productPrice.getPrice());
 		orderItemWriter.create(orderItem);
 
 		// OrderStatus
@@ -192,8 +203,8 @@ public class CreateSalesOrder implements Callable<Long> {
 		OrderItemShipGroupAssoc orderItemShipGroupAssoc = orderItemShipGroupAssocWriter.make();
 		orderItemShipGroupAssoc.setOrderId(orderHeader);
 		orderItemShipGroupAssoc.setOrderItemSeqId(itemSeqiD);
-		orderItemShipGroupAssoc.setShipGroupSeqId("00001");
+		orderItemShipGroupAssoc.setShipGroupSeqId(shipGroupSeqId);
 		orderItemShipGroupAssoc.setQuantity(new BigDecimal(quantity));
-		// orderItemShipGroupAssocWriter.create(orderItemShipGroupAssoc, true);
+		orderItemShipGroupAssocWriter.create(orderItemShipGroupAssoc, true);
 	}
 }
