@@ -86,7 +86,7 @@ public class StressTestCommands extends BaseCommands {
 		}
 	}
 
-	public void _stressTestInps(CommandInterpreter interpreter) throws Exception {
+	public void _st_Inps(CommandInterpreter interpreter) throws Exception {
 
 		String reqNumber = nextArgument(interpreter);
 		String poolNumber = nextArgument(interpreter);
