@@ -17,6 +17,10 @@ import java.util.concurrent.TimeUnit;
 import javax.inject.Inject;
 
 import org.abchip.mimo.application.Application;
+import org.abchip.mimo.authentication.AuthenticationException;
+import org.abchip.mimo.authentication.AuthenticationFactory;
+import org.abchip.mimo.authentication.AuthenticationManager;
+import org.abchip.mimo.authentication.AuthenticationUserPassword;
 import org.abchip.mimo.biz.party.party.Party;
 import org.abchip.mimo.biz.product.price.ProductPrice;
 import org.abchip.mimo.biz.test.command.runner.CreateAgreement;
@@ -26,10 +30,7 @@ import org.abchip.mimo.biz.test.command.runner.CreateProduct;
 import org.abchip.mimo.biz.test.command.runner.CreatePurchaseInvoice;
 import org.abchip.mimo.biz.test.command.runner.CreateSalesInvoice;
 import org.abchip.mimo.biz.test.command.runner.CreateSalesOrder;
-import org.abchip.mimo.context.AuthenticationManager;
-import org.abchip.mimo.context.AuthenticationUserPassword;
 import org.abchip.mimo.context.Context;
-import org.abchip.mimo.context.ContextFactory;
 import org.abchip.mimo.context.ContextProvider;
 import org.abchip.mimo.core.base.cmd.BaseCommands;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
@@ -128,7 +129,7 @@ public class StressTestCommands extends BaseCommands {
 	private void stressTestSalesOrder(CommandInterpreter interpreter, Context context) throws Exception {
 
 		List<Party> parties = StressTestUtils.getEnabledCustomers(context);
-		if(parties.isEmpty()) {
+		if (parties.isEmpty()) {
 			interpreter.println("Customer not present, launch command 'createTestBaseData'");
 			return;
 		}
@@ -150,7 +151,7 @@ public class StressTestCommands extends BaseCommands {
 	private void stressTestSalesInvoice(CommandInterpreter interpreter, Context context) throws Exception {
 
 		List<Party> parties = StressTestUtils.getEnabledCustomers(context);
-		if(parties.isEmpty()) {
+		if (parties.isEmpty()) {
 			interpreter.println("Customer not present, launch command 'createTestBaseData'");
 			return;
 		}
@@ -172,7 +173,7 @@ public class StressTestCommands extends BaseCommands {
 	private void stressTestPurchaseInvoice(CommandInterpreter interpreter, Context context) throws Exception {
 
 		List<Party> parties = StressTestUtils.getEnabledSupplier(context);
-		if(parties.isEmpty()) {
+		if (parties.isEmpty()) {
 			interpreter.println("Supplier not present, launch command 'createTestBaseData'");
 			return;
 		}
@@ -194,7 +195,7 @@ public class StressTestCommands extends BaseCommands {
 	private void stressTestAgreement(CommandInterpreter interpreter, Context context) throws Exception {
 
 		List<Party> parties = StressTestUtils.getEnabledCustomers(context);
-		if(parties.isEmpty()) {
+		if (parties.isEmpty()) {
 			interpreter.println("Customer not present, launch command 'createTestBaseData'");
 			return;
 		}
@@ -245,20 +246,18 @@ public class StressTestCommands extends BaseCommands {
 		for (int i = 0; i < poolSize; i++)
 			contexts.get(i).close();
 		interpreter.println("done");
-		
+
 	}
 
-	private ContextProvider login() {
+	private ContextProvider login() throws AuthenticationException {
 
-		AuthenticationUserPassword authentication = ContextFactory.eINSTANCE.createAuthenticationUserPassword();
+		AuthenticationUserPassword authentication = AuthenticationFactory.eINSTANCE.createAuthenticationUserPassword();
 		authentication.setUser("abchip-test");
 		authentication.setPassword("ofbiz");
 		authentication.setTenant("test");
 		AuthenticationManager authenticationManager = application.getContext().get(AuthenticationManager.class);
 
 		ContextProvider contextProvider = authenticationManager.login(null, authentication);
-		if (contextProvider == null)
-			throw new RuntimeException("Login failed");
 
 		return contextProvider;
 	}

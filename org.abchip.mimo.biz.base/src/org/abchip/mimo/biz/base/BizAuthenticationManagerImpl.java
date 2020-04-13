@@ -3,12 +3,13 @@ package org.abchip.mimo.biz.base;
 import javax.inject.Inject;
 
 import org.abchip.mimo.application.Application;
+import org.abchip.mimo.authentication.AuthenticationAdminKey;
+import org.abchip.mimo.authentication.AuthenticationAnonymous;
+import org.abchip.mimo.authentication.AuthenticationException;
+import org.abchip.mimo.authentication.AuthenticationManager;
+import org.abchip.mimo.authentication.AuthenticationUserPassword;
+import org.abchip.mimo.authentication.AuthenticationUserToken;
 import org.abchip.mimo.biz.security.login.UserLogin;
-import org.abchip.mimo.context.AuthenticationAdminKey;
-import org.abchip.mimo.context.AuthenticationAnonymous;
-import org.abchip.mimo.context.AuthenticationManager;
-import org.abchip.mimo.context.AuthenticationUserPassword;
-import org.abchip.mimo.context.AuthenticationUserToken;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextProvider;
 import org.abchip.mimo.context.ContextRoot;
@@ -29,23 +30,23 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 	}
 
 	@Override
-	public ContextProvider login(String contextId, AuthenticationAnonymous authentication) {
+	public ContextProvider login(String contextId, AuthenticationAnonymous authentication) throws AuthenticationException  {
 		return null;
 	}
 
 	@Override
-	public ContextProvider login(String contextId, AuthenticationUserToken authentication) {
+	public ContextProvider login(String contextId, AuthenticationUserToken authentication) throws AuthenticationException  {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public ContextProvider login(String contextId, AuthenticationUserPassword authentication) {
+	public ContextProvider login(String contextId, AuthenticationUserPassword authentication) throws AuthenticationException {
 
 		ResourceReader<UserLogin> userLoginReader = resourceManager.getResourceReader(application.getContext(), UserLogin.class, authentication.getTenant());
 		UserLogin userLogin = userLoginReader.lookup(authentication.getUser());
 		if (userLogin == null)
-			return null;
+			throw new AuthenticationException("Invalid user");
 
 		// TODO compare password and SHA
 		// userLogin.getCurrentPassword().equals(SHA)
@@ -63,10 +64,10 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 	}
 
 	@Override
-	public ContextProvider login(String contextId, AuthenticationAdminKey authentication) {
+	public ContextProvider login(String contextId, AuthenticationAdminKey authentication) throws AuthenticationException  {
 
 		if (application.getAdminKey() != null && !authentication.getAdminKey().equals(application.getAdminKey()))
-			return null;
+			throw new AuthenticationException("Invalid adminKey");
 
 		ContextRoot contextRoot = application.getContext();
 		if (contextRoot == null)
