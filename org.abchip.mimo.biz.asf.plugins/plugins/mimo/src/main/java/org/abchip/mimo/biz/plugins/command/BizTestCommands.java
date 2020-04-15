@@ -66,6 +66,7 @@ import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.base.cmd.BaseCommands;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityIterator;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.resource.ResourceWriter;
@@ -357,7 +358,7 @@ public class BizTestCommands extends BaseCommands {
 		interpreter.println("Order " + orderId + " deleted");
 	}
 
-	private void createOrder(CommandInterpreter interpreter, Context context, String partyId) {
+	private void createOrder(CommandInterpreter interpreter, Context context, String partyId) throws ResourceException {
 
 		Party party = resourceManager.getFrame(context, Party.class).createProxy(partyId);
 
@@ -551,7 +552,7 @@ public class BizTestCommands extends BaseCommands {
 	}
 
 	private void createOrderItem(CommandInterpreter interpreter, Context context, Delegator delegator, LocalDispatcher dispatcher, OrderHeader orderHeader, String itemSeqiD, String item, int quantity,
-			String shipGroupSeqId) {
+			String shipGroupSeqId) throws ResourceException {
 
 		ResourceWriter<OrderItem> orderItemWriter = resourceManager.getResourceWriter(context, OrderItem.class);
 
@@ -621,7 +622,7 @@ public class BizTestCommands extends BaseCommands {
 		orderItemShipGroupAssocWriter.create(orderItemShipGroupAssoc, true);
 	}
 
-	private Invoice createInvoice(CommandInterpreter interpreter, Context context, String partyId, String description) {
+	private Invoice createInvoice(CommandInterpreter interpreter, Context context, String partyId, String description) throws ResourceException {
 		Party party = resourceManager.getFrame(context, Party.class).createProxy(partyId);
 		Party partyFrom = SystemDefault.getCompany(context);
 
@@ -719,7 +720,7 @@ public class BizTestCommands extends BaseCommands {
 		return invoice;
 	}
 
-	private void createInvoiceItem(CommandInterpreter interpreter, Context context, Delegator delegator, LocalDispatcher dispatcher, Invoice invoice, String item, int quantity, String itemType) {
+	private void createInvoiceItem(CommandInterpreter interpreter, Context context, Delegator delegator, LocalDispatcher dispatcher, Invoice invoice, String item, int quantity, String itemType) throws ResourceException {
 		ResourceWriter<InvoiceItem> invoiceItemWriter = resourceManager.getResourceWriter(context, InvoiceItem.class);
 
 		InvoiceItem invoiceItem = invoiceItemWriter.make();
@@ -856,7 +857,7 @@ public class BizTestCommands extends BaseCommands {
 		}
 	}
 
-	private void createAgreement(CommandInterpreter interpreter, Context context, String partyId) {
+	private void createAgreement(CommandInterpreter interpreter, Context context, String partyId) throws ResourceException {
 
 		Party partyFrom = SystemDefault.getCompany(context);
 		Party partyTo = resourceManager.getFrame(context, Party.class).createProxy(partyId);
@@ -898,7 +899,7 @@ public class BizTestCommands extends BaseCommands {
 
 	}
 
-	private String createRow(Context context, Agreement agreement, String text) {
+	private String createRow(Context context, Agreement agreement, String text) throws ResourceException {
 
 		AgreementItemType agreementType = resourceManager.getFrame(context, AgreementItemType.class).createProxy("AGREEMENT_PRICING_PR");
 		TermType termType = resourceManager.getFrame(context, TermType.class).createProxy("FIN_PAYMENT_FIXDAY");
@@ -949,7 +950,7 @@ public class BizTestCommands extends BaseCommands {
 		return genericValue.getString(fieldName);
 	}
 
-	private void createRowProduct(CommandInterpreter interpreter,Context context, Agreement agreement, String item, String itemSeqId) {
+	private void createRowProduct(CommandInterpreter interpreter,Context context, Agreement agreement, String item, String itemSeqId) throws ResourceException {
 
 		Product productItem = resourceManager.getFrame(context, Product.class).createProxy(item);
 		Delegator delegator = DelegatorFactory.getDelegator(null);
@@ -996,7 +997,7 @@ public class BizTestCommands extends BaseCommands {
 		agreementProductApplWriter.create(agreementProductAppl, true);
 	}
 
-	private void renewalAgreement(CommandInterpreter interpreter, Context context, String agreementId) {
+	private void renewalAgreement(CommandInterpreter interpreter, Context context, String agreementId) throws ResourceException {
 
 		/*
 		 * il rinnovo del contratto avviene quando questo è ancora aperto (Agreement) ed
@@ -1124,7 +1125,7 @@ public class BizTestCommands extends BaseCommands {
 		}
 	}
 
-	private boolean setPaymentStatus(CommandInterpreter interpreter, Context context, String paymentId, String statusPayment) {
+	private boolean setPaymentStatus(CommandInterpreter interpreter, Context context, String paymentId, String statusPayment) throws ResourceException {
 
 		Delegator delegator = DelegatorFactory.getDelegator(null);
 		LocalDispatcher dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
@@ -1150,7 +1151,7 @@ public class BizTestCommands extends BaseCommands {
 		return true;
 	}
 
-	private boolean setInvoiceStatus(CommandInterpreter interpreter, Context context, String invoiceId, String status) {
+	private boolean setInvoiceStatus(CommandInterpreter interpreter, Context context, String invoiceId, String status) throws ResourceException {
 
 		Delegator delegator = DelegatorFactory.getDelegator(null);
 		LocalDispatcher dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
@@ -1178,7 +1179,7 @@ public class BizTestCommands extends BaseCommands {
 		return true;
 	}
 
-	private String createPaymentFromInvoice(CommandInterpreter interpreter, Context context, Delegator delegator, Invoice invoiceEntity) {
+	private String createPaymentFromInvoice(CommandInterpreter interpreter, Context context, Delegator delegator, Invoice invoiceEntity) throws ResourceException {
 		ResourceReader<UserLogin> userLoginReader = resourceManager.getResourceReader(context, UserLogin.class);
 		UserLogin userLoginEntity = userLoginReader.lookup(USER_LOGIN_ID);
 		GenericValue userLogin = EntityUtils.toBizEntity(delegator, userLoginEntity);

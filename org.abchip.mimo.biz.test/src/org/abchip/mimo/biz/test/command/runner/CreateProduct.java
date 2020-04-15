@@ -12,6 +12,7 @@ import org.abchip.mimo.biz.product.product.Product;
 import org.abchip.mimo.biz.product.product.ProductType;
 import org.abchip.mimo.biz.product.store.ProductStoreGroup;
 import org.abchip.mimo.context.Context;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 
@@ -31,7 +32,7 @@ public class CreateProduct implements Callable<Long> {
 		return time2 - time1;
 	}
 
-	private void createProduct() {
+	private void createProduct() throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 		// Product
 		ResourceWriter<Product> productWriter = resourceManager.getResourceWriter(context, Product.class);

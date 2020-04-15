@@ -23,6 +23,7 @@ import org.abchip.mimo.entity.EntityFactory;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.entity.Frame;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.apache.ofbiz.base.util.StringUtil;
@@ -106,7 +107,7 @@ public class BizSeedCommands extends BaseCommands {
 	}
 
 	@SuppressWarnings({ "unchecked" })
-	private static void createContainer(CommandInterpreter interpreter, Context context, String containerName, String folderName, List<GenericValue> listEntity, int counter) {
+	private static void createContainer(CommandInterpreter interpreter, Context context, String containerName, String folderName, List<GenericValue> listEntity, int counter) throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		String counterPad = org.apache.commons.lang.StringUtils.leftPad(Integer.toString(counter), 3, "0");

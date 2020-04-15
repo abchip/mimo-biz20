@@ -15,6 +15,7 @@ import java.util.Map;
 import org.abchip.mimo.biz.plugins.application.BizContainerImpl;
 import org.abchip.mimo.biz.plugins.entity.EntityUtils;
 import org.abchip.mimo.context.Context;
+import org.abchip.mimo.edi.DataInterchangeException;
 import org.abchip.mimo.edi.EdiManager;
 import org.abchip.mimo.edi.entity.EdiFrameSetup;
 import org.abchip.mimo.edi.entity.EntityEvent;
@@ -22,6 +23,7 @@ import org.abchip.mimo.edi.message.MessageType;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.entity.Frame;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.util.Logs;
@@ -49,7 +51,7 @@ public class EdiServices {
 
 	private static final String VALUEATTR = "entityInstance";
 
-	public static Map<String, Object> startEdiEngine(DispatchContext ctx, Map<String, Object> params) {
+	public static Map<String, Object> startEdiEngine(DispatchContext ctx, Map<String, Object> params) throws ResourceException {
 
 		Delegator delegator = ctx.getDelegator();
 		Context context = BizContainerImpl.getOrCreateContext(delegator.getDelegatorTenantId());
@@ -92,43 +94,43 @@ public class EdiServices {
 		return ServiceUtil.returnSuccess();
 	}
 
-	public static Map<String, Object> createEdiFrameSetup(DispatchContext ctx, Map<String, Object> params) {
+	public static Map<String, Object> createEdiFrameSetup(DispatchContext ctx, Map<String, Object> params) throws ResourceException {
 		return manageEdiFrameSetup(Operations.CRT, ctx, params);
 	}
 
-	public static Map<String, Object> updateEdiFrameSetup(DispatchContext ctx, Map<String, Object> params) {
+	public static Map<String, Object> updateEdiFrameSetup(DispatchContext ctx, Map<String, Object> params) throws ResourceException {
 		return manageEdiFrameSetup(Operations.UPD, ctx, params);
 	}
 
-	public static Map<String, Object> deleteEdiFrameSetup(DispatchContext ctx, Map<String, Object> params) {
+	public static Map<String, Object> deleteEdiFrameSetup(DispatchContext ctx, Map<String, Object> params) throws ResourceException {
 		return manageEdiFrameSetup(Operations.DLT, ctx, params);
 	}
 
-	public static Map<String, Object> createMessageType(DispatchContext ctx, Map<String, Object> params) {
+	public static Map<String, Object> createMessageType(DispatchContext ctx, Map<String, Object> params) throws ResourceException {
 		return manageMessageType(Operations.CRT, ctx, params);
 	}
 
-	public static Map<String, Object> updateMessageType(DispatchContext ctx, Map<String, Object> params) {
+	public static Map<String, Object> updateMessageType(DispatchContext ctx, Map<String, Object> params) throws ResourceException {
 		return manageMessageType(Operations.UPD, ctx, params);
 	}
 
-	public static Map<String, Object> deleteMessageType(DispatchContext ctx, Map<String, Object> params) {
+	public static Map<String, Object> deleteMessageType(DispatchContext ctx, Map<String, Object> params) throws ResourceException {
 		return manageMessageType(Operations.DLT, ctx, params);
 	}
 
-	public static Map<String, Object> createEdiEntity(DispatchContext ctx, Map<String, Object> params) {
+	public static Map<String, Object> createEdiEntity(DispatchContext ctx, Map<String, Object> params) throws DataInterchangeException, ResourceException {
 		return manageEdiEntity(Operations.CRT, ctx, params);
 	}
 
-	public static Map<String, Object> updateEdiEntity(DispatchContext ctx, Map<String, Object> params) {
+	public static Map<String, Object> updateEdiEntity(DispatchContext ctx, Map<String, Object> params) throws DataInterchangeException, ResourceException {
 		return manageEdiEntity(Operations.UPD, ctx, params);
 	}
 
-	public static Map<String, Object> deleteEntity(DispatchContext ctx, Map<String, Object> params) {
+	public static Map<String, Object> deleteEntity(DispatchContext ctx, Map<String, Object> params) throws DataInterchangeException, ResourceException {
 		return manageEdiEntity(Operations.DLT, ctx, params);
 	}
 
-	private static Map<String, Object> manageEdiFrameSetup(Operations operation, DispatchContext ctx, Map<String, Object> params) {
+	private static Map<String, Object> manageEdiFrameSetup(Operations operation, DispatchContext ctx, Map<String, Object> params) throws ResourceException {
 
 		GenericValue entityInstance = (GenericValue) params.get(VALUEATTR);
 		if (entityInstance == null) {
@@ -158,7 +160,7 @@ public class EdiServices {
 		return ServiceUtil.returnSuccess();
 	}
 
-	private static Map<String, Object> manageMessageType(Operations operation, DispatchContext ctx, Map<String, Object> params) {
+	private static Map<String, Object> manageMessageType(Operations operation, DispatchContext ctx, Map<String, Object> params) throws ResourceException {
 
 		GenericValue entityInstance = (GenericValue) params.get(VALUEATTR);
 		if (entityInstance == null) {
@@ -187,7 +189,7 @@ public class EdiServices {
 		}
 	}
 
-	private static <E extends EntityIdentifiable> Map<String, Object> manageEdiEntity(Operations operation, DispatchContext ctx, Map<String, Object> params) {
+	private static <E extends EntityIdentifiable> Map<String, Object> manageEdiEntity(Operations operation, DispatchContext ctx, Map<String, Object> params) throws DataInterchangeException, ResourceException {
 
 		GenericValue entityInstance = (GenericValue) params.get(VALUEATTR);
 		if (entityInstance == null)

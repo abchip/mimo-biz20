@@ -19,6 +19,7 @@ import org.abchip.mimo.biz.party.party.RoleType;
 import org.abchip.mimo.biz.product.price.ProductPrice;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 
@@ -42,7 +43,7 @@ public class CreateAgreement implements Callable<Long> {
 		return time2 - time1;
 	}
 
-	private void createAgreement() {
+	private void createAgreement() throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		RoleType roleTypeFrom = resourceManager.getFrame(context, RoleType.class).createProxy("INTERNAL_ORGANIZATIO");
@@ -71,7 +72,7 @@ public class CreateAgreement implements Callable<Long> {
 			createRowProduct(resourceManager, agreement, productPrice, agreementItemSeqId);
 	}
 
-	private void createRowProduct(ResourceManager resourceManager, Agreement agreement, ProductPrice productPrice, String itemSeqId) {
+	private void createRowProduct(ResourceManager resourceManager, Agreement agreement, ProductPrice productPrice, String itemSeqId) throws ResourceException {
 		// AgreementProductAppl
 		ResourceWriter<AgreementProductAppl> agreementProductApplWriter = resourceManager.getResourceWriter(context, AgreementProductAppl.class);
 		AgreementProductAppl agreementProductAppl = agreementProductApplWriter.make();
@@ -82,7 +83,7 @@ public class CreateAgreement implements Callable<Long> {
 		agreementProductApplWriter.create(agreementProductAppl);
 	}
 
-	private String createRow(ResourceManager resourceManager, Agreement agreement) {
+	private String createRow(ResourceManager resourceManager, Agreement agreement) throws ResourceException {
 
 		AgreementItemType agreementType = resourceManager.getFrame(context, AgreementItemType.class).createProxy("AGREEMENT_PRICING_PR");
 		TermType termType = resourceManager.getFrame(context, TermType.class).createProxy("FIN_PAYMENT_FIXDAY");

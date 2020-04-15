@@ -14,6 +14,7 @@ import java.util.WeakHashMap;
 import org.abchip.mimo.biz.entity.tenant.Tenant;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.e4.E4Activator;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.apache.ofbiz.base.container.Container;
 import org.apache.ofbiz.base.container.ContainerException;
@@ -45,7 +46,7 @@ public class BizContainerImpl implements Container {
 	}
 
 	@SuppressWarnings("resource")
-	public static Context getOrCreateContext(String tenantId) {
+	public static Context getOrCreateContext(String tenantId) throws ResourceException {
 
 		if (tenantId == null)
 			return E4Activator.getApplication().getContext();

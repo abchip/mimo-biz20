@@ -20,13 +20,14 @@ import org.abchip.mimo.biz.product.product.Product;
 import org.abchip.mimo.biz.product.store.ProductStore;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityIterator;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.resource.ResourceWriter;
 
 public class StressTestUtils {
 
-	public static ProductStore getProductStore(Context context, ResourceManager resourceManager) {
+	public static ProductStore getProductStore(Context context, ResourceManager resourceManager) throws ResourceException {
 		ResourceWriter<ProductStore> productStoreWriter = resourceManager.getResourceWriter(context, ProductStore.class);
 
 		ProductStore productStore = productStoreWriter.first();
@@ -63,7 +64,7 @@ public class StressTestUtils {
 		return productStore;
 	}
 
-	public static ProductPrice getProductPrice(Context context, ResourceManager resourceManager, Product product) {
+	public static ProductPrice getProductPrice(Context context, ResourceManager resourceManager, Product product) throws ResourceException {
 		ResourceReader<ProductPrice> productPriceReader = resourceManager.getResourceReader(context, ProductPrice.class);
 
 		String filter = "productId = \"" + product.getID() + "\"  AND thruDate IS NULL";
@@ -73,7 +74,7 @@ public class StressTestUtils {
 		}
 	}
 
-	public static List<Party> getEnabledCustomers(Context context) {
+	public static List<Party> getEnabledCustomers(Context context) throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 		ResourceReader<Party> partyReader = resourceManager.getResourceReader(context, Party.class);
 		ArrayList<Party> customers = new ArrayList<Party>();
@@ -98,7 +99,7 @@ public class StressTestUtils {
 		return customers;
 	}
 
-	public static List<Party> getEnabledSupplier(Context context) {
+	public static List<Party> getEnabledSupplier(Context context) throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 		ResourceReader<Party> partyReader = resourceManager.getResourceReader(context, Party.class);
 		ArrayList<Party> customers = new ArrayList<Party>();
@@ -123,7 +124,7 @@ public class StressTestUtils {
 		return customers;
 	}
 
-	public static List<ProductPrice> getDigitalProductPrices(Context context) {
+	public static List<ProductPrice> getDigitalProductPrices(Context context) throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		ResourceReader<Product> productReader = resourceManager.getResourceReader(context, Product.class);

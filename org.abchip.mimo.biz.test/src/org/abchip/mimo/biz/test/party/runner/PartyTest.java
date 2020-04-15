@@ -15,6 +15,7 @@ import org.abchip.mimo.biz.party.party.PartyFactory;
 import org.abchip.mimo.biz.party.party.PartyGroup;
 import org.abchip.mimo.biz.party.party.Person;
 import org.abchip.mimo.entity.EntityIterator;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.tester.Test;
@@ -33,7 +34,7 @@ public class PartyTest {
 	private TestRunner testRunner;
 
 	@TestStarted
-	public void doTest() {
+	public void doTest() throws ResourceException {
 
 		// Party
 		Party party = PartyFactory.eINSTANCE.createParty();

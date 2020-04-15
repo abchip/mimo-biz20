@@ -14,6 +14,7 @@ import org.abchip.mimo.biz.product.price.PriceFactory;
 import org.abchip.mimo.biz.product.price.ProductPrice;
 import org.abchip.mimo.biz.product.product.Product;
 import org.abchip.mimo.biz.product.product.ProductFactory;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.tester.Test;
@@ -32,7 +33,7 @@ public class ProductTest {
 	private TestRunner testRunner;
 
 	@TestStarted
-	public void doTest() {
+	public void doTest() throws ResourceException {
 		// Product
 		String productId = "ProductCanary";
 		

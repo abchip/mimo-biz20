@@ -29,6 +29,7 @@ import org.abchip.mimo.biz.party.party.RoleType;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.http.servlet.BaseServlet;
 import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.util.Strings;
@@ -111,6 +112,9 @@ public class ImportPeopleServlet extends BaseServlet {
 						partyTaxAuthInfo.setIsNexus(true);
 						partyTaxAuthInfoWriter.create(partyTaxAuthInfo, true);
 					}
+				} catch (ResourceException e) {
+					response.sendError(HttpServletResponse.SC_BAD_REQUEST, e.getMessage());
+					return;
 				}
 			}
 			response.setStatus(HttpServletResponse.SC_OK);

@@ -17,6 +17,7 @@ import org.abchip.mimo.biz.security.login.UserLogin;
 import org.abchip.mimo.biz.security.securitygroup.SecurityGroup;
 import org.abchip.mimo.biz.security.securitygroup.UserLoginSecurityGroup;
 import org.abchip.mimo.context.Context;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 
@@ -26,7 +27,7 @@ public class TenantServices {
 		D, P
 	}
 
-	public static void createTenant(Context context, String tenantId, String tenantName, DBType dbType, boolean update) {
+	public static void createTenant(Context context, String tenantId, String tenantName, DBType dbType, boolean update) throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		// Tenant
@@ -65,7 +66,7 @@ public class TenantServices {
 		tenantDataSourceWriter.create(tenantDataSource, update);
 	}
 
-	public static void createUserTenant(Context context, String tenantId, boolean clean) {
+	public static void createUserTenant(Context context, String tenantId, boolean clean) throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		// UserLogin

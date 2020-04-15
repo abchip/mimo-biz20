@@ -21,6 +21,7 @@ import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
 import org.abchip.mimo.parser.sqlite.SQLiteLexer;
 import org.abchip.mimo.parser.sqlite.SQLiteParser;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.impl.ResourceImpl;
 import org.abchip.mimo.util.Logs;
 import org.antlr.v4.runtime.ANTLRInputStream;
@@ -73,7 +74,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 	}
 
 	@Override
-	public void create(E entity, boolean update) {
+	public void create(E entity, boolean update) throws ResourceException {
 		boolean beganTransaction = false;
 
 		try {
@@ -89,12 +90,12 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			} catch (GenericTransactionException e1) {
 				LOGGER.warn(e1.getMessage());
 			}
-			throw new RuntimeException(e);
+			throw new ResourceException(e);
 		}
 	}
 
 	@Override
-	public void update(E entity) {
+	public void update(E entity) throws ResourceException {
 		boolean beganTransaction = false;
 
 		try {
@@ -110,12 +111,12 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			} catch (GenericTransactionException e1) {
 				LOGGER.warn(e1.getMessage());
 			}
-			throw new RuntimeException(e);
+			throw new ResourceException(e);
 		}
 	}
 
 	@Override
-	public void delete(E entity) {
+	public void delete(E entity) throws ResourceException {
 
 		boolean beganTransaction = false;
 
@@ -132,12 +133,12 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			} catch (GenericTransactionException e1) {
 				LOGGER.warn(e1.getMessage());
 			}
-			throw new RuntimeException(e);
+			throw new ResourceException(e);
 		}
 	}
 
 	@Override
-	public String nextSequence() {
+	public String nextSequence() throws ResourceException {
 
 		if (this.frame.getKeys().size() != 1)
 			return null;
@@ -164,13 +165,13 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			} catch (GenericTransactionException e1) {
 				LOGGER.warn(e1.getMessage());
 			}
-			throw new RuntimeException(e);
+			throw new ResourceException(e);
 		}
 		return nextSeq;
 	}
 
 	@Override
-	public E read(String name, String fields, boolean proxy) {
+	public E read(String name, String fields, boolean proxy) throws ResourceException {
 
 		E entity = null;
 
@@ -209,14 +210,14 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			} catch (GenericTransactionException e1) {
 				LOGGER.warn(e1.getMessage());
 			}
-			throw new RuntimeException(e);
+			throw new ResourceException(e);
 		}
 
 		return entity;
 	}
 
 	@Override
-	public List<E> read(String filter, String fields, String order, int limit, boolean proxy) {
+	public List<E> read(String filter, String fields, String order, int limit, boolean proxy) throws ResourceException {
 
 		LOGGER.trace("Read frame {} filter {} fields {} order {} limit {} proxy {}", this.getFrame().getName(), filter, fields, order, limit, proxy);
 
@@ -287,7 +288,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			} catch (GenericTransactionException e1) {
 				LOGGER.warn(e1.getMessage());
 			}
-			throw new RuntimeException(e);
+			throw new ResourceException(e);
 		}
 
 		LOGGER.trace("Read frame {} elements {}", this.getFrame().getName(), entities.size());

@@ -17,6 +17,7 @@ import org.abchip.mimo.biz.base.service.PartyServices;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.http.servlet.BaseServlet;
 import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.resource.ResourceException;
 
 import ezvcard.Ezvcard;
 import ezvcard.VCard;
@@ -35,7 +36,6 @@ public class ExportPartyVcardServlet extends BaseServlet {
 		String partyId = request.getParameter("partyId");
 
 		try {
-
 			VCard vcard = PartyServices.createVcardFromParty(context, partyId);
 
 			response.setStatus(HttpServletResponse.SC_OK);
@@ -43,8 +43,9 @@ public class ExportPartyVcardServlet extends BaseServlet {
 			response.setContentType("text/vcard");
 
 			Ezvcard.write(vcard).go(response.getOutputStream());
-		} catch (Exception e) {
-			response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+		} catch (ResourceException e) {
+			response.sendError(HttpServletResponse.SC_BAD_REQUEST, e.getMessage());
+			return;
 		}
 	}
 }

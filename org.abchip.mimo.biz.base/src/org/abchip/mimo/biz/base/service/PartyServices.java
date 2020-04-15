@@ -16,6 +16,7 @@ import org.abchip.mimo.biz.party.party.Party;
 import org.abchip.mimo.biz.party.party.PartyGroup;
 import org.abchip.mimo.biz.party.party.Person;
 import org.abchip.mimo.context.Context;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 
@@ -29,13 +30,13 @@ import ezvcard.property.Telephone;
 
 public class PartyServices {
 	
-	public static PartyAcctgPreference getPartyAcctgPreference(Context context) {
+	public static PartyAcctgPreference getPartyAcctgPreference(Context context) throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 		ResourceReader<PartyAcctgPreference> partyAcctgPreference = resourceManager.getResourceReader(context, PartyAcctgPreference.class);
 		return partyAcctgPreference.lookup(SystemDefault.getCompany(context).getID());
 	}
 
-	public static VCard createVcardFromParty(Context context, String partyId) {
+	public static VCard createVcardFromParty(Context context, String partyId) throws ResourceException {
 
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
@@ -111,7 +112,7 @@ public class PartyServices {
 		return vcard;
 	}
 
-	private static void writeLatestPostalAddress(Context context, VCard vcard, String partyId) {
+	private static void writeLatestPostalAddress(Context context, VCard vcard, String partyId) throws ResourceException {
 		PostalAddress postalAddress = ContactMechServices.getLatestPostaAddress(context, partyId);
 		if (postalAddress == null)
 			return;
@@ -134,7 +135,7 @@ public class PartyServices {
 		vcard.addAddress(address);
 	}
 
-	private static void writeLatestTelecomNumber(Context context, VCard vcard, String partyId) {
+	private static void writeLatestTelecomNumber(Context context, VCard vcard, String partyId) throws ResourceException {
 		TelecomNumber telecomNumber = ContactMechServices.getLatestTelecomNumber(context, partyId);
 		if (telecomNumber == null)
 			return;
@@ -150,7 +151,7 @@ public class PartyServices {
 		vcard.addTelephoneNumber(tel);
 	}
 
-	private static void writeLatestEmail(Context context, VCard vcard, String partyId) {
+	private static void writeLatestEmail(Context context, VCard vcard, String partyId) throws ResourceException {
 		ContactMech contactMech = ContactMechServices.getLatestEmail(context, partyId);
 		if (contactMech == null)
 			return;

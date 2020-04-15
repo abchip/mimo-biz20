@@ -14,12 +14,13 @@ import org.abchip.mimo.biz.party.contact.PostalAddress;
 import org.abchip.mimo.biz.party.contact.TelecomNumber;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityIterator;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 
 public class ContactMechServices {
 
-	public static PostalAddress getLatestPostaAddress(Context context, String partyId) {
+	public static PostalAddress getLatestPostaAddress(Context context, String partyId) throws ResourceException {
 
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
@@ -43,7 +44,7 @@ public class ContactMechServices {
 		return postalAddress;
 	}
 
-	public static TelecomNumber getLatestTelecomNumber(Context context, String partyId) {
+	public static TelecomNumber getLatestTelecomNumber(Context context, String partyId) throws ResourceException {
 
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
@@ -67,7 +68,7 @@ public class ContactMechServices {
 		return telecomNumber;
 	}
 
-	public static ContactMech getLatestEmail(Context context, String partyId) {
+	public static ContactMech getLatestEmail(Context context, String partyId) throws ResourceException {
 
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 

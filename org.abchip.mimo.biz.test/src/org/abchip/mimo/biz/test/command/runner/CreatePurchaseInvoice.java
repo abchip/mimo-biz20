@@ -21,6 +21,7 @@ import org.abchip.mimo.biz.party.party.Party;
 import org.abchip.mimo.biz.product.price.ProductPrice;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 
@@ -44,7 +45,7 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 		return time2 - time1;
 	}
 
-	private void createInvoice() {
+	private void createInvoice() throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 		
 		Party company = SystemDefault.getCompany(context);
@@ -89,7 +90,7 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 		}
 	}
 
-	private void createInvoiceItem(ResourceManager resourceManager, Invoice invoice, String itemSeqiD, int quantity, ProductPrice productPrice) {
+	private void createInvoiceItem(ResourceManager resourceManager, Invoice invoice, String itemSeqiD, int quantity, ProductPrice productPrice) throws ResourceException {
 		ResourceWriter<InvoiceItem> invoiceItemWriter = resourceManager.getResourceWriter(context, InvoiceItem.class);
 
 		InvoiceItem invoiceItem = invoiceItemWriter.make();

@@ -24,6 +24,7 @@ import org.abchip.mimo.core.base.cmd.BaseCommands;
 import org.abchip.mimo.entity.EntityContainer;
 import org.abchip.mimo.entity.EntityFactory;
 import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.apache.http.HttpStatus;
@@ -72,7 +73,7 @@ public class FiCCommands extends BaseCommands {
 	}
 	
 	@SuppressWarnings("unchecked")
-	private void importRegistry(CommandInterpreter interpreter, Context context, AtomicInteger partyCounter, AtomicInteger contactMechCounter, String containerName, String typeSubject, String nameArray, String role) throws UnsupportedEncodingException {
+	private void importRegistry(CommandInterpreter interpreter, Context context, AtomicInteger partyCounter, AtomicInteger contactMechCounter, String containerName, String typeSubject, String nameArray, String role) throws UnsupportedEncodingException, ResourceException {
 		EntityContainer container = EntityFactory.eINSTANCE.createEntityContainer();
 		container.setName(containerName);
 

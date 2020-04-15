@@ -26,6 +26,7 @@ import org.abchip.mimo.biz.party.party.Person;
 import org.abchip.mimo.biz.party.party.RoleType;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 
@@ -50,7 +51,7 @@ public class CreateParty implements Callable<Long> {
 		return time2 - time1;
 	}
 
-	public void createPartyGroup(Context context, String role) {
+	public void createPartyGroup(Context context, String role) throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		// Create PartyGroup
@@ -66,7 +67,7 @@ public class CreateParty implements Callable<Long> {
 		createRelated(resourceManager, partyGroup, role);
 	}
 
-	public void createPerson(Context context, String role) {
+	public void createPerson(Context context, String role) throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		// Create PartyGroup
@@ -82,7 +83,8 @@ public class CreateParty implements Callable<Long> {
 		createRelated(resourceManager, person, role);
 	}
 	
-	private void createRelated(ResourceManager resourceManager, Party party, String role) {
+	private void createRelated(ResourceManager resourceManager, Party party, String role) throws ResourceException {
+
 		// PartyRole
 		ResourceWriter<PartyRole> partyRoleWriter = resourceManager.getResourceWriter(context, PartyRole.class);
 		PartyRole partyRole = partyRoleWriter.make();
@@ -173,7 +175,8 @@ public class CreateParty implements Callable<Long> {
 		partyIdentificationWriter.create(partyIdentification);
 	}
 
-	private void createPartyContactMech(Context context, ResourceManager resourceManager, Party party, ContactMech contactMech, List<String> purposeTypes) {
+	private void createPartyContactMech(Context context, ResourceManager resourceManager, Party party, ContactMech contactMech, List<String> purposeTypes) throws ResourceException {
+
 		// PartyContactMech
 		ResourceWriter<PartyContactMech> partyContactMechWriter = resourceManager.getResourceWriter(context, PartyContactMech.class);
 		PartyContactMech partyContactMech = partyContactMechWriter.make();

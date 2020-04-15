@@ -10,6 +10,7 @@ import org.abchip.mimo.biz.party.agreement.AgreementTerm;
 import org.abchip.mimo.biz.party.agreement.TermType;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 
@@ -29,7 +30,7 @@ public class CreateInpsAgreement implements Callable<Long> {
 		return time2 - time1;
 	}
 
-	private void createAgreement() {
+	private void createAgreement() throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 		String fiscalCode = StressTestUtils.generateRandomString(16, false);
 
@@ -75,7 +76,7 @@ public class CreateInpsAgreement implements Callable<Long> {
 		agreementTermWriter.create(agreementTerm);
 	}
 
-	private void createRow(ResourceManager resourceManager, Agreement agreement, String seqId, String text) {
+	private void createRow(ResourceManager resourceManager, Agreement agreement, String seqId, String text) throws ResourceException {
 		// AgreementItem
 		ResourceWriter<AgreementItem> agreementItemWriter = resourceManager.getResourceWriter(context, AgreementItem.class);
 		AgreementItem agreementItem = agreementItemWriter.make();

@@ -15,6 +15,7 @@ import org.abchip.mimo.biz.party.contact.ContactFactory;
 import org.abchip.mimo.biz.party.contact.ContactMech;
 import org.abchip.mimo.biz.party.contact.PartyContactMech;
 import org.abchip.mimo.biz.party.contact.PostalAddress;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.tester.Test;
 import org.abchip.mimo.tester.TestAsserter;
 import org.abchip.mimo.tester.TestRunner;
@@ -30,7 +31,7 @@ public class PartyContactMechTest {
 
 	
 	@TestStarted
-	public void doTest() {
+	public void doTest() throws ResourceException {
 		String partyId = "Company";
 
 		PartyContactMech partyContactMech = ContactFactory.eINSTANCE.createPartyContactMech();

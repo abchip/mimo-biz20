@@ -22,6 +22,7 @@ import org.abchip.mimo.biz.product.category.ProductCategoryType;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.http.servlet.BaseServlet;
 import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.util.Strings;
@@ -74,6 +75,9 @@ public class ImportProductCategoriesServlet extends BaseServlet {
 							productCategory.setCategoryName(Strings.escapeJava(description));
 							productCategoryWriter.create(productCategory, true);
 						}
+					} catch (ResourceException e) {
+						response.sendError(HttpServletResponse.SC_BAD_REQUEST, e.getMessage());
+						return;
 					}
 				}
 			}

@@ -32,6 +32,7 @@ import org.abchip.mimo.biz.security.login.UserLogin;
 import org.abchip.mimo.biz.shipment.shipment.ShipmentMethodType;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 
@@ -55,7 +56,7 @@ public class CreateSalesOrder implements Callable<Long> {
 		return time2 - time1;
 	}
 
-	private void createOrder() {
+	private void createOrder() throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		ProductStore productStore = StressTestUtils.getProductStore(context, resourceManager);
@@ -174,7 +175,7 @@ public class CreateSalesOrder implements Callable<Long> {
 
 	}
 
-	private void createOrderItem(ResourceManager resourceManager, OrderHeader orderHeader, String itemSeqiD, String shipGroupSeqId, int quantity, ProductPrice productPrice) {
+	private void createOrderItem(ResourceManager resourceManager, OrderHeader orderHeader, String itemSeqiD, String shipGroupSeqId, int quantity, ProductPrice productPrice) throws ResourceException {
 		ResourceWriter<OrderItem> orderItemWriter = resourceManager.getResourceWriter(context, OrderItem.class);
 
 		OrderItem orderItem = orderItemWriter.make();
