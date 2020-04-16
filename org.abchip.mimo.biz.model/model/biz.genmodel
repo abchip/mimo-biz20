@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
     xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2017, 2020 ABChip and others.&#xA;All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html"
-    modelDirectory="/org.abchip.mimo.biz.model/src" editDirectory="/org.abchip.mimo.biz.edit/src"
-    editorDirectory="/org.abchip.mimo.biz.editor/src" modelPluginID="org.abchip.mimo.biz.model"
-    modelName="MIMO Biz" editPluginClass="org.abchip.mimo.biz.provider.BizCoreEditPlugin"
-    editorPluginClass="org.abchip.mimo.biz.presentation.BizCoreEditorPlugin" rootExtendsInterface=""
-    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" suppressEMFTypes="true"
-    reflectiveDelegation="true" testsDirectory="/org.abchip.mimo.biz.tests/src" testSuiteClass="org.abchip.mimo.biz.tests.BizCoreAllTests"
-    importerID="org.eclipse.emf.importer.ecore" featureDelegation="Reflective" containmentProxies="true"
-    suppressNotification="true" complianceLevel="8.0" copyrightFields="false" editPluginID="org.abchip.mimo.biz.edit"
-    editorPluginID="org.abchip.mimo.biz.editor" testsPluginID="org.abchip.mimo.biz.tests"
+    modelDirectory="/org.abchip.mimo.biz.model/src" editDirectory="/org.abchip.mimo.biz.model.edit/src"
+    editorDirectory="/org.abchip.mimo.biz.model.editor/src" modelPluginID="org.abchip.mimo.biz.model"
+    modelName="MIMO Biz" editPluginClass="org.abchip.mimo.biz.model.provider.BizCoreEditPlugin"
+    editorPluginClass="org.abchip.mimo.biz.model.presentation.BizCoreEditorPlugin"
+    rootExtendsInterface="" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    suppressEMFTypes="true" reflectiveDelegation="true" testsDirectory="/org.abchip.mimo.biz.model.tests/src"
+    testSuiteClass="org.abchip.mimo.biz.model.tests.BizCoreAllTests" importerID="org.eclipse.emf.importer.ecore"
+    featureDelegation="Reflective" containmentProxies="true" suppressNotification="true"
+    complianceLevel="8.0" copyrightFields="false" editPluginID="org.abchip.mimo.biz.model.edit"
+    editorPluginID="org.abchip.mimo.biz.model.editor" testsPluginID="org.abchip.mimo.biz.model.tests"
     language="EN" usedGenPackages="../../org.abchip.mimo.core/model/mimo.genmodel#//mimo"
     importOrganizing="true">
   <foreignModel>biz.ecore</foreignModel>
-  <genPackages prefix="Biz" basePackage="org.abchip.mimo" disposableProviderFactory="true"
+  <genPackages prefix="Biz" basePackage="org.abchip.mimo.model" disposableProviderFactory="true"
       adapterFactory="false" ecorePackage="biz.ecore#/">
     <genClasses ecoreClass="biz.ecore#//BizComponent">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//BizComponent/plugin"/>
@@ -44,8 +45,8 @@
     <genClasses ecoreClass="biz.ecore#//BizEntityType">
       <genTypeParameters ecoreTypeParameter="biz.ecore#//BizEntityType/E"/>
     </genClasses>
-    <nestedGenPackages prefix="Accounting" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
-        adapterFactory="false" ecorePackage="biz.ecore#//accounting">
+    <nestedGenPackages prefix="Accounting" basePackage="org.abchip.mimo.biz.model"
+        disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//accounting">
       <genEnums typeSafeEnumCompatible="false" ecoreEnum="biz.ecore#//accounting/DebitCreditFlag">
         <genEnumLiterals ecoreEnumLiteral="biz.ecore#//accounting/DebitCreditFlag/Credit"/>
         <genEnumLiterals ecoreEnumLiteral="biz.ecore#//accounting/DebitCreditFlag/Debit"/>
@@ -60,7 +61,7 @@
         <genEnumLiterals ecoreEnumLiteral="biz.ecore#//accounting/AuthMode/FullAuthorize"/>
         <genEnumLiterals ecoreEnumLiteral="biz.ecore#//accounting/AuthMode/PreAuth"/>
       </genEnums>
-      <nestedGenPackages prefix="Budget" basePackage="org.abchip.mimo.biz.accounting"
+      <nestedGenPackages prefix="Budget" basePackage="org.abchip.mimo.biz.model.accounting"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//accounting/budget">
         <genClasses ecoreClass="biz.ecore#//accounting/budget/Budget">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//accounting/budget/Budget/budgetId"/>
@@ -181,7 +182,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//accounting/budget/BudgetTypeAttr/description"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Finaccount" basePackage="org.abchip.mimo.biz.accounting"
+      <nestedGenPackages prefix="Finaccount" basePackage="org.abchip.mimo.biz.model.accounting"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//accounting/finaccount">
         <genClasses ecoreClass="biz.ecore#//accounting/finaccount/FinAccount">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//accounting/finaccount/FinAccount/finAccountId"/>
@@ -295,7 +296,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//accounting/finaccount/FinAccountTypeGlAccount/glAccountId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Fixedasset" basePackage="org.abchip.mimo.biz.accounting"
+      <nestedGenPackages prefix="Fixedasset" basePackage="org.abchip.mimo.biz.model.accounting"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//accounting/fixedasset">
         <genClasses ecoreClass="biz.ecore#//accounting/fixedasset/AccommodationClass">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//accounting/fixedasset/AccommodationClass/accommodationClassId"/>
@@ -474,7 +475,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//accounting/fixedasset/PartyFixedAssetAssignment/thruDate"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Invoice" basePackage="org.abchip.mimo.biz.accounting"
+      <nestedGenPackages prefix="Invoice" basePackage="org.abchip.mimo.biz.model.accounting"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//accounting/invoice">
         <genClasses ecoreClass="biz.ecore#//accounting/invoice/Invoice">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//accounting/invoice/Invoice/invoiceId"/>
@@ -646,7 +647,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//accounting/invoice/InvoiceTypeAttr/description"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Ledger" basePackage="org.abchip.mimo.biz.accounting"
+      <nestedGenPackages prefix="Ledger" basePackage="org.abchip.mimo.biz.model.accounting"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//accounting/ledger">
         <genClasses ecoreClass="biz.ecore#//accounting/ledger/AcctgTrans">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//accounting/ledger/AcctgTrans/acctgTransId"/>
@@ -940,7 +941,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//accounting/ledger/VarianceReasonGlAccount/glAccountId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Payment" basePackage="org.abchip.mimo.biz.accounting"
+      <nestedGenPackages prefix="Payment" basePackage="org.abchip.mimo.biz.model.accounting"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//accounting/payment">
         <genClasses ecoreClass="biz.ecore#//accounting/payment/BillingAccount">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//accounting/payment/BillingAccount/billingAccountId"/>
@@ -1397,7 +1398,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//accounting/payment/ValueLinkKey/workingKeyIndex"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Rate" basePackage="org.abchip.mimo.biz.accounting"
+      <nestedGenPackages prefix="Rate" basePackage="org.abchip.mimo.biz.model.accounting"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//accounting/rate">
         <genClasses ecoreClass="biz.ecore#//accounting/rate/PartyRate">
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//accounting/rate/PartyRate/partyId"/>
@@ -1423,7 +1424,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//accounting/rate/RateType/description"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Tax" basePackage="org.abchip.mimo.biz.accounting"
+      <nestedGenPackages prefix="Tax" basePackage="org.abchip.mimo.biz.model.accounting"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//accounting/tax">
         <genClasses ecoreClass="biz.ecore#//accounting/tax/PartyTaxAuthInfo">
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//accounting/tax/PartyTaxAuthInfo/partyId"/>
@@ -1523,9 +1524,9 @@
         </genClasses>
       </nestedGenPackages>
     </nestedGenPackages>
-    <nestedGenPackages prefix="Catalina" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Catalina" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz.ecore#//catalina">
-      <nestedGenPackages prefix="Session" basePackage="org.abchip.mimo.biz.catalina"
+      <nestedGenPackages prefix="Session" basePackage="org.abchip.mimo.biz.model.catalina"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//catalina/session">
         <genClasses ecoreClass="biz.ecore#//catalina/session/CatalinaSession">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//catalina/session/CatalinaSession/sessionId"/>
@@ -1537,13 +1538,13 @@
         </genClasses>
       </nestedGenPackages>
     </nestedGenPackages>
-    <nestedGenPackages prefix="Common" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Common" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz.ecore#//common">
       <genEnums typeSafeEnumCompatible="false" ecoreEnum="biz.ecore#//common/Gender">
         <genEnumLiterals ecoreEnumLiteral="biz.ecore#//common/Gender/CommonMale"/>
         <genEnumLiterals ecoreEnumLiteral="biz.ecore#//common/Gender/CommonFemale"/>
       </genEnums>
-      <nestedGenPackages prefix="Datasource" basePackage="org.abchip.mimo.biz.common"
+      <nestedGenPackages prefix="Datasource" basePackage="org.abchip.mimo.biz.model.common"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//common/datasource">
         <genClasses ecoreClass="biz.ecore#//common/datasource/DataSource">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/datasource/DataSource/dataSourceId"/>
@@ -1555,8 +1556,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/datasource/DataSourceType/description"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Email" basePackage="org.abchip.mimo.biz.common" disposableProviderFactory="true"
-          adapterFactory="false" ecorePackage="biz.ecore#//common/email">
+      <nestedGenPackages prefix="Email" basePackage="org.abchip.mimo.biz.model.common"
+          disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//common/email">
         <genClasses ecoreClass="biz.ecore#//common/email/EmailTemplateSetting">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/email/EmailTemplateSetting/emailTemplateSettingId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/email/EmailTemplateSetting/bccAddress"/>
@@ -1570,8 +1571,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/email/EmailTemplateSetting/xslfoAttachScreenLocation"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Enum" basePackage="org.abchip.mimo.biz.common" disposableProviderFactory="true"
-          adapterFactory="false" ecorePackage="biz.ecore#//common/enum">
+      <nestedGenPackages prefix="Enum" basePackage="org.abchip.mimo.biz.model.common"
+          disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//common/enum">
         <genClasses ecoreClass="biz.ecore#//common/enum/Enumeration">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/enum/Enumeration/enumId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/enum/Enumeration/description"/>
@@ -1588,8 +1589,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//common/enum/EnumerationType/parentTypeId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Geo" basePackage="org.abchip.mimo.biz.common" disposableProviderFactory="true"
-          adapterFactory="false" ecorePackage="biz.ecore#//common/geo">
+      <nestedGenPackages prefix="Geo" basePackage="org.abchip.mimo.biz.model.common"
+          disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//common/geo">
         <genClasses ecoreClass="biz.ecore#//common/geo/CountryAddressFormat">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/geo/CountryAddressFormat/geoId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/geo/CountryAddressFormat/addressFormat"/>
@@ -1652,7 +1653,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//common/geo/GeoType/parentTypeId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Keyword" basePackage="org.abchip.mimo.biz.common"
+      <nestedGenPackages prefix="Keyword" basePackage="org.abchip.mimo.biz.model.common"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//common/keyword">
         <genClasses ecoreClass="biz.ecore#//common/keyword/KeywordThesaurus">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/keyword/KeywordThesaurus/alternateKeyword"/>
@@ -1660,7 +1661,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//common/keyword/KeywordThesaurus/relationshipEnumId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Language" basePackage="org.abchip.mimo.biz.common"
+      <nestedGenPackages prefix="Language" basePackage="org.abchip.mimo.biz.model.common"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//common/language">
         <genClasses ecoreClass="biz.ecore#//common/language/StandardLanguage">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/language/StandardLanguage/standardLanguageId"/>
@@ -1672,7 +1673,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/language/StandardLanguage/langName"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Method" basePackage="org.abchip.mimo.biz.common"
+      <nestedGenPackages prefix="Method" basePackage="org.abchip.mimo.biz.model.common"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//common/method">
         <genClasses ecoreClass="biz.ecore#//common/method/CustomMethod">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/method/CustomMethod/customMethodId"/>
@@ -1689,8 +1690,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//common/method/CustomMethodType/parentTypeId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Note" basePackage="org.abchip.mimo.biz.common" disposableProviderFactory="true"
-          adapterFactory="false" ecorePackage="biz.ecore#//common/note">
+      <nestedGenPackages prefix="Note" basePackage="org.abchip.mimo.biz.model.common"
+          disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//common/note">
         <genClasses ecoreClass="biz.ecore#//common/note/NoteData">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/note/NoteData/noteId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/note/NoteData/moreInfoItemId"/>
@@ -1702,7 +1703,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//common/note/NoteData/noteParty"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Period" basePackage="org.abchip.mimo.biz.common"
+      <nestedGenPackages prefix="Period" basePackage="org.abchip.mimo.biz.model.common"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//common/period">
         <genClasses ecoreClass="biz.ecore#//common/period/CustomTimePeriod">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/period/CustomTimePeriod/customTimePeriodId"/>
@@ -1722,7 +1723,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//common/period/PeriodType/uomId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Portal" basePackage="org.abchip.mimo.biz.common"
+      <nestedGenPackages prefix="Portal" basePackage="org.abchip.mimo.biz.model.common"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//common/portal">
         <genClasses ecoreClass="biz.ecore#//common/portal/PortalPage">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/portal/PortalPage/portalPageId"/>
@@ -1782,7 +1783,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//common/portal/PortletPortletCategory/portletCategoryId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Property" basePackage="org.abchip.mimo.biz.common"
+      <nestedGenPackages prefix="Property" basePackage="org.abchip.mimo.biz.model.common"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//common/property">
         <genClasses ecoreClass="biz.ecore#//common/property/SystemProperty">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/property/SystemProperty/systemPropertyId"/>
@@ -1791,7 +1792,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/property/SystemProperty/systemPropertyValue"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Screen" basePackage="org.abchip.mimo.biz.common"
+      <nestedGenPackages prefix="Screen" basePackage="org.abchip.mimo.biz.model.common"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//common/screen">
         <genClasses ecoreClass="biz.ecore#//common/screen/CustomScreen">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/screen/CustomScreen/customScreenId"/>
@@ -1807,7 +1808,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/screen/CustomScreenType/parentTypeId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Status" basePackage="org.abchip.mimo.biz.common"
+      <nestedGenPackages prefix="Status" basePackage="org.abchip.mimo.biz.model.common"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//common/status">
         <genClasses ecoreClass="biz.ecore#//common/status/StatusItem">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/status/StatusItem/statusId"/>
@@ -1833,8 +1834,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/status/StatusValidChange/transitionName"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Theme" basePackage="org.abchip.mimo.biz.common" disposableProviderFactory="true"
-          adapterFactory="false" ecorePackage="biz.ecore#//common/theme">
+      <nestedGenPackages prefix="Theme" basePackage="org.abchip.mimo.biz.model.common"
+          disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//common/theme">
         <genClasses ecoreClass="biz.ecore#//common/theme/VisualTheme">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/theme/VisualTheme/visualThemeId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/theme/VisualTheme/description"/>
@@ -1851,8 +1852,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/theme/VisualThemeSet/description"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Uom" basePackage="org.abchip.mimo.biz.common" disposableProviderFactory="true"
-          adapterFactory="false" ecorePackage="biz.ecore#//common/uom">
+      <nestedGenPackages prefix="Uom" basePackage="org.abchip.mimo.biz.model.common"
+          disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//common/uom">
         <genClasses ecoreClass="biz.ecore#//common/uom/Uom">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/uom/Uom/uomId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/uom/Uom/abbreviation"/>
@@ -1892,8 +1893,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//common/uom/UomType/parentTypeId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="User" basePackage="org.abchip.mimo.biz.common" disposableProviderFactory="true"
-          adapterFactory="false" ecorePackage="biz.ecore#//common/user">
+      <nestedGenPackages prefix="User" basePackage="org.abchip.mimo.biz.model.common"
+          disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//common/user">
         <genClasses ecoreClass="biz.ecore#//common/user/UserPrefGroupType">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/user/UserPrefGroupType/userPrefGroupTypeId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//common/user/UserPrefGroupType/description"/>
@@ -1907,9 +1908,9 @@
         </genClasses>
       </nestedGenPackages>
     </nestedGenPackages>
-    <nestedGenPackages prefix="Content" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Content" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz.ecore#//content">
-      <nestedGenPackages prefix="Content" basePackage="org.abchip.mimo.biz.content"
+      <nestedGenPackages prefix="Content" basePackage="org.abchip.mimo.biz.model.content"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//content/content">
         <genClasses ecoreClass="biz.ecore#//content/content/Content">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//content/content/Content/contentId"/>
@@ -2077,8 +2078,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//content/content/ContentTypeAttr/description"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Data" basePackage="org.abchip.mimo.biz.content" disposableProviderFactory="true"
-          adapterFactory="false" ecorePackage="biz.ecore#//content/data">
+      <nestedGenPackages prefix="Data" basePackage="org.abchip.mimo.biz.model.content"
+          disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//content/data">
         <genClasses ecoreClass="biz.ecore#//content/data/AudioDataResource">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//content/data/AudioDataResource/dataResourceId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//content/data/AudioDataResource/audioData"/>
@@ -2194,7 +2195,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//content/data/VideoDataResource/videoData"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Document" basePackage="org.abchip.mimo.biz.content"
+      <nestedGenPackages prefix="Document" basePackage="org.abchip.mimo.biz.model.content"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//content/document">
         <genClasses ecoreClass="biz.ecore#//content/document/Document">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//content/document/Document/documentId"/>
@@ -2227,7 +2228,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//content/document/DocumentTypeAttr/description"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Preference" basePackage="org.abchip.mimo.biz.content"
+      <nestedGenPackages prefix="Preference" basePackage="org.abchip.mimo.biz.model.content"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//content/preference">
         <genClasses ecoreClass="biz.ecore#//content/preference/WebPreferenceType">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//content/preference/WebPreferenceType/webPreferenceTypeId"/>
@@ -2241,7 +2242,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//content/preference/WebUserPreference/webPreferenceValue"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Survey" basePackage="org.abchip.mimo.biz.content"
+      <nestedGenPackages prefix="Survey" basePackage="org.abchip.mimo.biz.model.content"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//content/survey">
         <genClasses ecoreClass="biz.ecore#//content/survey/Survey">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//content/survey/Survey/surveyId"/>
@@ -2367,7 +2368,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//content/survey/SurveyTrigger/thruDate"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Website" basePackage="org.abchip.mimo.biz.content"
+      <nestedGenPackages prefix="Website" basePackage="org.abchip.mimo.biz.model.content"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//content/website">
         <genClasses ecoreClass="biz.ecore#//content/website/WebAnalyticsConfig">
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//content/website/WebAnalyticsConfig/webAnalyticsTypeId"/>
@@ -2416,14 +2417,14 @@
         </genClasses>
       </nestedGenPackages>
     </nestedGenPackages>
-    <nestedGenPackages prefix="Entity" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Entity" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz.ecore#//entity">
       <genClasses ecoreClass="biz.ecore#//entity/JavaResource">
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//entity/JavaResource/resourceName"/>
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//entity/JavaResource/resourceValue"/>
       </genClasses>
-      <nestedGenPackages prefix="Audit" basePackage="org.abchip.mimo.biz.entity" disposableProviderFactory="true"
-          adapterFactory="false" ecorePackage="biz.ecore#//entity/audit">
+      <nestedGenPackages prefix="Audit" basePackage="org.abchip.mimo.biz.model.entity"
+          disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//entity/audit">
         <genClasses ecoreClass="biz.ecore#//entity/audit/EntityAuditLog">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//entity/audit/EntityAuditLog/auditHistorySeqId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//entity/audit/EntityAuditLog/changedByInfo"/>
@@ -2436,15 +2437,15 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//entity/audit/EntityAuditLog/pkCombinedValueText"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Crypto" basePackage="org.abchip.mimo.biz.entity"
+      <nestedGenPackages prefix="Crypto" basePackage="org.abchip.mimo.biz.model.entity"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//entity/crypto">
         <genClasses ecoreClass="biz.ecore#//entity/crypto/EntityKeyStore">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//entity/crypto/EntityKeyStore/keyName"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//entity/crypto/EntityKeyStore/keyText"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Group" basePackage="org.abchip.mimo.biz.entity" disposableProviderFactory="true"
-          adapterFactory="false" ecorePackage="biz.ecore#//entity/group">
+      <nestedGenPackages prefix="Group" basePackage="org.abchip.mimo.biz.model.entity"
+          disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//entity/group">
         <genClasses ecoreClass="biz.ecore#//entity/group/EntityGroup">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//entity/group/EntityGroup/entityGroupId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -2457,7 +2458,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//entity/group/EntityGroupEntry/applEnumId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Sequence" basePackage="org.abchip.mimo.biz.entity"
+      <nestedGenPackages prefix="Sequence" basePackage="org.abchip.mimo.biz.model.entity"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//entity/sequence">
         <genClasses ecoreClass="biz.ecore#//entity/sequence/SequenceValueItem">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//entity/sequence/SequenceValueItem/seqName"/>
@@ -2465,7 +2466,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//entity/sequence/SequenceValueItem/sequencePolicy"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Synchronization" basePackage="org.abchip.mimo.biz.entity"
+      <nestedGenPackages prefix="Synchronization" basePackage="org.abchip.mimo.biz.model.entity"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//entity/synchronization">
         <genClasses ecoreClass="biz.ecore#//entity/synchronization/EntitySync">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//entity/synchronization/EntitySync/entitySyncId"/>
@@ -2531,7 +2532,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//entity/synchronization/EntitySyncRemove/primaryKeyRemoved"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Tenant" basePackage="org.abchip.mimo.biz.entity"
+      <nestedGenPackages prefix="Tenant" basePackage="org.abchip.mimo.biz.model.entity"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//entity/tenant">
         <genClasses ecoreClass="biz.ecore#//entity/tenant/Component">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//entity/tenant/Component/componentName"/>
@@ -2568,8 +2569,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//entity/tenant/TenantKeyEncryptingKey/kekText"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Test" basePackage="org.abchip.mimo.biz.entity" disposableProviderFactory="true"
-          adapterFactory="false" ecorePackage="biz.ecore#//entity/test">
+      <nestedGenPackages prefix="Test" basePackage="org.abchip.mimo.biz.model.entity"
+          disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//entity/test">
         <genClasses ecoreClass="biz.ecore#//entity/test/TestFieldType">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//entity/test/TestFieldType/testFieldTypeId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//entity/test/TestFieldType/blobField"/>
@@ -2640,9 +2641,9 @@
         </genClasses>
       </nestedGenPackages>
     </nestedGenPackages>
-    <nestedGenPackages prefix="Humanres" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Humanres" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz.ecore#//humanres">
-      <nestedGenPackages prefix="Ability" basePackage="org.abchip.mimo.biz.humanres"
+      <nestedGenPackages prefix="Ability" basePackage="org.abchip.mimo.biz.model.humanres"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//humanres/ability">
         <genClasses ecoreClass="biz.ecore#//humanres/ability/PartyQual">
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//humanres/ability/PartyQual/partyId"/>
@@ -2746,7 +2747,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//humanres/ability/TrainingClassType/parentTypeId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Employment" basePackage="org.abchip.mimo.biz.humanres"
+      <nestedGenPackages prefix="Employment" basePackage="org.abchip.mimo.biz.model.humanres"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//humanres/employment">
         <genClasses ecoreClass="biz.ecore#//humanres/employment/BenefitType">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//humanres/employment/BenefitType/benefitTypeId"/>
@@ -2884,7 +2885,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//humanres/employment/UnemploymentClaim/unemploymentClaimDate"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Position" basePackage="org.abchip.mimo.biz.humanres"
+      <nestedGenPackages prefix="Position" basePackage="org.abchip.mimo.biz.model.humanres"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//humanres/position">
         <genClasses ecoreClass="biz.ecore#//humanres/position/EmplPosition">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//humanres/position/EmplPosition/emplPositionId"/>
@@ -2959,7 +2960,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//humanres/position/ValidResponsibility/thruDate"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Recruitment" basePackage="org.abchip.mimo.biz.humanres"
+      <nestedGenPackages prefix="Recruitment" basePackage="org.abchip.mimo.biz.model.humanres"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//humanres/recruitment">
         <genClasses ecoreClass="biz.ecore#//humanres/recruitment/JobInterview">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//humanres/recruitment/JobInterview/jobInterviewId"/>
@@ -2992,16 +2993,16 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//humanres/recruitment/JobRequisition/skillTypeId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Trainings" basePackage="org.abchip.mimo.biz.humanres"
+      <nestedGenPackages prefix="Trainings" basePackage="org.abchip.mimo.biz.model.humanres"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//humanres/trainings">
         <genClasses ecoreClass="biz.ecore#//humanres/trainings/TrainingRequest">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//humanres/trainings/TrainingRequest/trainingRequestId"/>
         </genClasses>
       </nestedGenPackages>
     </nestedGenPackages>
-    <nestedGenPackages prefix="Manufacturing" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
-        adapterFactory="false" ecorePackage="biz.ecore#//manufacturing">
-      <nestedGenPackages prefix="Bom" basePackage="org.abchip.mimo.biz.manufacturing"
+    <nestedGenPackages prefix="Manufacturing" basePackage="org.abchip.mimo.biz.model"
+        disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//manufacturing">
+      <nestedGenPackages prefix="Bom" basePackage="org.abchip.mimo.biz.model.manufacturing"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//manufacturing/bom">
         <genClasses ecoreClass="biz.ecore#//manufacturing/bom/ProductManufacturingRule">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//manufacturing/bom/ProductManufacturingRule/ruleId"/>
@@ -3018,7 +3019,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//manufacturing/bom/ProductManufacturingRule/thruDate"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Mrp" basePackage="org.abchip.mimo.biz.manufacturing"
+      <nestedGenPackages prefix="Mrp" basePackage="org.abchip.mimo.biz.model.manufacturing"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//manufacturing/mrp">
         <genClasses ecoreClass="biz.ecore#//manufacturing/mrp/MrpEvent">
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//manufacturing/mrp/MrpEvent/productId"/>
@@ -3035,7 +3036,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//manufacturing/mrp/MrpEventType/description"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Techdata" basePackage="org.abchip.mimo.biz.manufacturing"
+      <nestedGenPackages prefix="Techdata" basePackage="org.abchip.mimo.biz.model.manufacturing"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//manufacturing/techdata">
         <genClasses ecoreClass="biz.ecore#//manufacturing/techdata/TechDataCalendar">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//manufacturing/techdata/TechDataCalendar/calendarId"/>
@@ -3079,9 +3080,9 @@
         </genClasses>
       </nestedGenPackages>
     </nestedGenPackages>
-    <nestedGenPackages prefix="Marketing" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
-        adapterFactory="false" ecorePackage="biz.ecore#//marketing">
-      <nestedGenPackages prefix="Campaign" basePackage="org.abchip.mimo.biz.marketing"
+    <nestedGenPackages prefix="Marketing" basePackage="org.abchip.mimo.biz.model"
+        disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//marketing">
+      <nestedGenPackages prefix="Campaign" basePackage="org.abchip.mimo.biz.model.marketing"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//marketing/campaign">
         <genClasses ecoreClass="biz.ecore#//marketing/campaign/MarketingCampaign">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//marketing/campaign/MarketingCampaign/marketingCampaignId"/>
@@ -3129,7 +3130,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//marketing/campaign/MarketingCampaignRole/thruDate"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Contact" basePackage="org.abchip.mimo.biz.marketing"
+      <nestedGenPackages prefix="Contact" basePackage="org.abchip.mimo.biz.model.marketing"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//marketing/contact">
         <genClasses ecoreClass="biz.ecore#//marketing/contact/ContactList">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//marketing/contact/ContactList/contactListId"/>
@@ -3187,7 +3188,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//marketing/contact/WebSiteContactList/thruDate"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Opportunity" basePackage="org.abchip.mimo.biz.marketing"
+      <nestedGenPackages prefix="Opportunity" basePackage="org.abchip.mimo.biz.model.marketing"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//marketing/opportunity">
         <genClasses ecoreClass="biz.ecore#//marketing/opportunity/SalesForecast">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//marketing/opportunity/SalesForecast/salesForecastId"/>
@@ -3305,7 +3306,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//marketing/opportunity/SalesOpportunityWorkEffort/workEffortId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Segment" basePackage="org.abchip.mimo.biz.marketing"
+      <nestedGenPackages prefix="Segment" basePackage="org.abchip.mimo.biz.model.marketing"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//marketing/segment">
         <genClasses ecoreClass="biz.ecore#//marketing/segment/SegmentGroup">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//marketing/segment/SegmentGroup/segmentGroupId"/>
@@ -3335,7 +3336,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//marketing/segment/SegmentGroupType/description"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Tracking" basePackage="org.abchip.mimo.biz.marketing"
+      <nestedGenPackages prefix="Tracking" basePackage="org.abchip.mimo.biz.model.marketing"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//marketing/tracking">
         <genClasses ecoreClass="biz.ecore#//marketing/tracking/TrackingCode">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//marketing/tracking/TrackingCode/trackingCodeId"/>
@@ -3390,10 +3391,10 @@
         </genClasses>
       </nestedGenPackages>
     </nestedGenPackages>
-    <nestedGenPackages prefix="Order" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Order" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz.ecore#//order">
-      <nestedGenPackages prefix="Order" basePackage="org.abchip.mimo.biz.order" disposableProviderFactory="true"
-          adapterFactory="false" ecorePackage="biz.ecore#//order/order">
+      <nestedGenPackages prefix="Order" basePackage="org.abchip.mimo.biz.model.order"
+          disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//order/order">
         <genClasses ecoreClass="biz.ecore#//order/order/CommunicationEventOrder">
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//order/order/CommunicationEventOrder/orderId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//order/order/CommunicationEventOrder/communicationEventId"/>
@@ -3870,8 +3871,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//order/order/WorkOrderItemFulfillment/shipGroupSeqId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Quote" basePackage="org.abchip.mimo.biz.order" disposableProviderFactory="true"
-          adapterFactory="false" ecorePackage="biz.ecore#//order/quote">
+      <nestedGenPackages prefix="Quote" basePackage="org.abchip.mimo.biz.model.order"
+          disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//order/quote">
         <genClasses ecoreClass="biz.ecore#//order/quote/Quote">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//order/quote/Quote/quoteId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//order/quote/Quote/currencyUomId"/>
@@ -4005,7 +4006,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//order/quote/QuoteWorkEffort/workEffortId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Request" basePackage="org.abchip.mimo.biz.order"
+      <nestedGenPackages prefix="Request" basePackage="org.abchip.mimo.biz.model.order"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//order/request">
         <genClasses ecoreClass="biz.ecore#//order/request/CustRequest">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//order/request/CustRequest/custRequestId"/>
@@ -4140,7 +4141,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//order/request/RespondingParty/dateSent"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Requirement" basePackage="org.abchip.mimo.biz.order"
+      <nestedGenPackages prefix="Requirement" basePackage="org.abchip.mimo.biz.model.order"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//order/requirement">
         <genClasses ecoreClass="biz.ecore#//order/requirement/DesiredFeature">
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//order/requirement/DesiredFeature/requirementId"/>
@@ -4233,7 +4234,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//order/requirement/WorkRequirementFulfillment/workReqFulfTypeId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Reservations" basePackage="org.abchip.mimo.biz.order"
+      <nestedGenPackages prefix="Reservations" basePackage="org.abchip.mimo.biz.model.order"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//order/reservations">
         <genClasses ecoreClass="biz.ecore#//order/reservations/AccommodationSpot">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//order/reservations/AccommodationSpot/accommodationSpotId"/>
@@ -4243,8 +4244,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//order/reservations/AccommodationSpot/numberOfSpaces"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Return" basePackage="org.abchip.mimo.biz.order" disposableProviderFactory="true"
-          adapterFactory="false" ecorePackage="biz.ecore#//order/return">
+      <nestedGenPackages prefix="Return" basePackage="org.abchip.mimo.biz.model.order"
+          disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//order/return">
         <genClasses ecoreClass="biz.ecore#//order/return/CommunicationEventReturn">
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//order/return/CommunicationEventReturn/returnId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//order/return/CommunicationEventReturn/communicationEventId"/>
@@ -4391,7 +4392,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//order/return/ReturnType/sequenceId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Shoppingcart" basePackage="org.abchip.mimo.biz.order"
+      <nestedGenPackages prefix="Shoppingcart" basePackage="org.abchip.mimo.biz.model.order"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//order/shoppingcart">
         <genClasses ecoreClass="biz.ecore#//order/shoppingcart/CartAbandonedLine">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//order/shoppingcart/CartAbandonedLine/cartAbandonedLineSeqId"/>
@@ -4410,7 +4411,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//order/shoppingcart/CartAbandonedLine/wasReserved"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Shoppinglist" basePackage="org.abchip.mimo.biz.order"
+      <nestedGenPackages prefix="Shoppinglist" basePackage="org.abchip.mimo.biz.model.order"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//order/shoppinglist">
         <genClasses ecoreClass="biz.ecore#//order/shoppinglist/ShoppingList">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//order/shoppinglist/ShoppingList/shoppingListId"/>
@@ -4465,7 +4466,7 @@
         </genClasses>
       </nestedGenPackages>
     </nestedGenPackages>
-    <nestedGenPackages prefix="Party" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Party" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz.ecore#//party">
       <genEnums typeSafeEnumCompatible="false" ecoreEnum="biz.ecore#//party/MaritalStatus">
         <genEnumLiterals ecoreEnumLiteral="biz.ecore#//party/MaritalStatus/Single"/>
@@ -4474,7 +4475,7 @@
         <genEnumLiterals ecoreEnumLiteral="biz.ecore#//party/MaritalStatus/Divorced"/>
         <genEnumLiterals ecoreEnumLiteral="biz.ecore#//party/MaritalStatus/Widowed"/>
       </genEnums>
-      <nestedGenPackages prefix="Agreement" basePackage="org.abchip.mimo.biz.party"
+      <nestedGenPackages prefix="Agreement" basePackage="org.abchip.mimo.biz.model.party"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//party/agreement">
         <genClasses ecoreClass="biz.ecore#//party/agreement/Addendum">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//party/agreement/Addendum/addendumId"/>
@@ -4650,7 +4651,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//party/agreement/TermTypeAttr/description"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Communication" basePackage="org.abchip.mimo.biz.party"
+      <nestedGenPackages prefix="Communication" basePackage="org.abchip.mimo.biz.model.party"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//party/communication">
         <genClasses ecoreClass="biz.ecore#//party/communication/CommContentAssocType">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//party/communication/CommContentAssocType/commContentAssocTypeId"/>
@@ -4725,7 +4726,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//party/communication/CommunicationEventType/parentTypeId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Contact" basePackage="org.abchip.mimo.biz.party"
+      <nestedGenPackages prefix="Contact" basePackage="org.abchip.mimo.biz.model.party"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//party/contact">
         <genClasses ecoreClass="biz.ecore#//party/contact/ContactMech">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//party/contact/ContactMech/contactMechId"/>
@@ -4841,8 +4842,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//party/contact/ValidContactMechRole/contactMechTypeId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Need" basePackage="org.abchip.mimo.biz.party" disposableProviderFactory="true"
-          adapterFactory="false" ecorePackage="biz.ecore#//party/need">
+      <nestedGenPackages prefix="Need" basePackage="org.abchip.mimo.biz.model.party"
+          disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//party/need">
         <genClasses ecoreClass="biz.ecore#//party/need/NeedType">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//party/need/NeedType/needTypeId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//party/need/NeedType/description"/>
@@ -4861,8 +4862,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//party/need/PartyNeed/visitId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Party" basePackage="org.abchip.mimo.biz.party" disposableProviderFactory="true"
-          adapterFactory="false" ecorePackage="biz.ecore#//party/party">
+      <nestedGenPackages prefix="Party" basePackage="org.abchip.mimo.biz.model.party"
+          disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//party/party">
         <genClasses ecoreClass="biz.ecore#//party/party/AddressMatchMap">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//party/party/AddressMatchMap/mapKey"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//party/party/AddressMatchMap/mapValue"/>
@@ -5150,7 +5151,7 @@
         </genClasses>
       </nestedGenPackages>
     </nestedGenPackages>
-    <nestedGenPackages prefix="Passport" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Passport" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz.ecore#//passport">
       <genClasses ecoreClass="biz.ecore#//passport/GitHubUser">
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//passport/GitHubUser/gitHubUserId"/>
@@ -5212,9 +5213,9 @@
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//passport/ThirdPartyLogin/thruDate"/>
       </genClasses>
     </nestedGenPackages>
-    <nestedGenPackages prefix="Product" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Product" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz.ecore#//product">
-      <nestedGenPackages prefix="Catalog" basePackage="org.abchip.mimo.biz.product"
+      <nestedGenPackages prefix="Catalog" basePackage="org.abchip.mimo.biz.model.product"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//product/catalog">
         <genClasses ecoreClass="biz.ecore#//product/catalog/ProdCatalog">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//product/catalog/ProdCatalog/prodCatalogId"/>
@@ -5256,7 +5257,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//product/catalog/ProdCatalogRole/thruDate"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Category" basePackage="org.abchip.mimo.biz.product"
+      <nestedGenPackages prefix="Category" basePackage="org.abchip.mimo.biz.model.product"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//product/category">
         <genClasses ecoreClass="biz.ecore#//product/category/ProductCategory">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//product/category/ProductCategory/productCategoryId"/>
@@ -5355,7 +5356,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//product/category/ProductCategoryTypeAttr/description"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Config" basePackage="org.abchip.mimo.biz.product"
+      <nestedGenPackages prefix="Config" basePackage="org.abchip.mimo.biz.model.product"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//product/config">
         <genClasses ecoreClass="biz.ecore#//product/config/ConfigOptionProductOption">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//product/config/ConfigOptionProductOption/configId"/>
@@ -5438,8 +5439,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//product/config/ProductConfigStats/numOfConfs"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Cost" basePackage="org.abchip.mimo.biz.product" disposableProviderFactory="true"
-          adapterFactory="false" ecorePackage="biz.ecore#//product/cost">
+      <nestedGenPackages prefix="Cost" basePackage="org.abchip.mimo.biz.model.product"
+          disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//product/cost">
         <genClasses ecoreClass="biz.ecore#//product/cost/CostComponent">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//product/cost/CostComponent/costComponentId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//product/cost/CostComponent/cost"/>
@@ -5496,7 +5497,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//product/cost/ProductCostComponentCalc/thruDate"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Facility" basePackage="org.abchip.mimo.biz.product"
+      <nestedGenPackages prefix="Facility" basePackage="org.abchip.mimo.biz.model.product"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//product/facility">
         <genClasses ecoreClass="biz.ecore#//product/facility/Container">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//product/facility/Container/containerId"/>
@@ -5668,7 +5669,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//product/facility/ProductFacilityLocation/moveQuantity"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Feature" basePackage="org.abchip.mimo.biz.product"
+      <nestedGenPackages prefix="Feature" basePackage="org.abchip.mimo.biz.model.product"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//product/feature">
         <genClasses ecoreClass="biz.ecore#//product/feature/ProductFeature">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//product/feature/ProductFeature/productFeatureId"/>
@@ -5758,7 +5759,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//product/feature/ProductFeatureType/parentTypeId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Inventory" basePackage="org.abchip.mimo.biz.product"
+      <nestedGenPackages prefix="Inventory" basePackage="org.abchip.mimo.biz.model.product"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//product/inventory">
         <genClasses ecoreClass="biz.ecore#//product/inventory/InventoryItem">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//product/inventory/InventoryItem/inventoryItemId"/>
@@ -5916,7 +5917,7 @@
               ecoreFeature="ecore:EReference biz.ecore#//product/inventory/VarianceReason/varianceReasonGlAccounts"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Price" basePackage="org.abchip.mimo.biz.product"
+      <nestedGenPackages prefix="Price" basePackage="org.abchip.mimo.biz.model.product"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//product/price">
         <genClasses ecoreClass="biz.ecore#//product/price/ProductFeaturePrice">
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//product/price/ProductFeaturePrice/productPriceTypeId"/>
@@ -6035,7 +6036,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//product/price/SaleType/description"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Product" basePackage="org.abchip.mimo.biz.product"
+      <nestedGenPackages prefix="Product" basePackage="org.abchip.mimo.biz.model.product"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//product/product">
         <genClasses ecoreClass="biz.ecore#//product/product/GoodIdentification">
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//product/product/GoodIdentification/goodIdentificationTypeId"/>
@@ -6309,7 +6310,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//product/product/VendorProduct/productStoreGroupId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Promo" basePackage="org.abchip.mimo.biz.product"
+      <nestedGenPackages prefix="Promo" basePackage="org.abchip.mimo.biz.model.product"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//product/promo">
         <genClasses ecoreClass="biz.ecore#//product/promo/ProductPromo">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//product/promo/ProductPromo/productPromoId"/>
@@ -6420,7 +6421,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//product/promo/ProductPromoUse/totalDiscountAmount"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Store" basePackage="org.abchip.mimo.biz.product"
+      <nestedGenPackages prefix="Store" basePackage="org.abchip.mimo.biz.model.product"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//product/store">
         <genClasses ecoreClass="biz.ecore#//product/store/ProductStore">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//product/store/ProductStore/productStoreId"/>
@@ -6678,7 +6679,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//product/store/ProductStoreVendorShipment/carrierPartyId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Subscription" basePackage="org.abchip.mimo.biz.product"
+      <nestedGenPackages prefix="Subscription" basePackage="org.abchip.mimo.biz.model.product"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//product/subscription">
         <genClasses ecoreClass="biz.ecore#//product/subscription/ProductSubscriptionResource">
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//product/subscription/ProductSubscriptionResource/productId"/>
@@ -6785,7 +6786,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//product/subscription/SubscriptionTypeAttr/description"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Supplier" basePackage="org.abchip.mimo.biz.product"
+      <nestedGenPackages prefix="Supplier" basePackage="org.abchip.mimo.biz.model.product"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//product/supplier">
         <genClasses ecoreClass="biz.ecore#//product/supplier/MarketInterest">
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//product/supplier/MarketInterest/productCategoryId"/>
@@ -6844,9 +6845,9 @@
         </genClasses>
       </nestedGenPackages>
     </nestedGenPackages>
-    <nestedGenPackages prefix="Security" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Security" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz.ecore#//security">
-      <nestedGenPackages prefix="Cert" basePackage="org.abchip.mimo.biz.security"
+      <nestedGenPackages prefix="Cert" basePackage="org.abchip.mimo.biz.model.security"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//security/cert">
         <genClasses ecoreClass="biz.ecore#//security/cert/X509IssuerProvision">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//security/cert/X509IssuerProvision/certProvisionId"/>
@@ -6859,7 +6860,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//security/cert/X509IssuerProvision/stateProvince"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Login" basePackage="org.abchip.mimo.biz.security"
+      <nestedGenPackages prefix="Login" basePackage="org.abchip.mimo.biz.model.security"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//security/login">
         <genClasses ecoreClass="biz.ecore#//security/login/UserLogin">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//security/login/UserLogin/userLoginId"/>
@@ -6912,7 +6913,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//security/login/UserLoginSession/sessionData"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Securitygroup" basePackage="org.abchip.mimo.biz.security"
+      <nestedGenPackages prefix="Securitygroup" basePackage="org.abchip.mimo.biz.model.security"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//security/securitygroup">
         <genClasses ecoreClass="biz.ecore#//security/securitygroup/ProtectedView">
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//security/securitygroup/ProtectedView/groupId"/>
@@ -6951,9 +6952,9 @@
         </genClasses>
       </nestedGenPackages>
     </nestedGenPackages>
-    <nestedGenPackages prefix="Service" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Service" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz.ecore#//service">
-      <nestedGenPackages prefix="Schedule" basePackage="org.abchip.mimo.biz.service"
+      <nestedGenPackages prefix="Schedule" basePackage="org.abchip.mimo.biz.model.service"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//service/schedule">
         <genClasses ecoreClass="biz.ecore#//service/schedule/JobManagerLock">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//service/schedule/JobManagerLock/fromDate"/>
@@ -7041,7 +7042,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//service/schedule/TemporalExpressionAssoc/exprAssocType"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Semaphore" basePackage="org.abchip.mimo.biz.service"
+      <nestedGenPackages prefix="Semaphore" basePackage="org.abchip.mimo.biz.model.service"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//service/semaphore">
         <genClasses ecoreClass="biz.ecore#//service/semaphore/ServiceSemaphore">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//service/semaphore/ServiceSemaphore/serviceName"/>
@@ -7051,9 +7052,9 @@
         </genClasses>
       </nestedGenPackages>
     </nestedGenPackages>
-    <nestedGenPackages prefix="Shipment" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Shipment" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz.ecore#//shipment">
-      <nestedGenPackages prefix="Issuance" basePackage="org.abchip.mimo.biz.shipment"
+      <nestedGenPackages prefix="Issuance" basePackage="org.abchip.mimo.biz.model.shipment"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//shipment/issuance">
         <genClasses ecoreClass="biz.ecore#//shipment/issuance/ItemIssuance">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//shipment/issuance/ItemIssuance/itemIssuanceId"/>
@@ -7076,7 +7077,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//shipment/issuance/ItemIssuanceRole/roleTypeId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Picklist" basePackage="org.abchip.mimo.biz.shipment"
+      <nestedGenPackages prefix="Picklist" basePackage="org.abchip.mimo.biz.model.shipment"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//shipment/picklist">
         <genClasses ecoreClass="biz.ecore#//shipment/picklist/Picklist">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//shipment/picklist/Picklist/picklistId"/>
@@ -7123,7 +7124,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//shipment/picklist/PicklistStatusHistory/statusIdTo"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Receipt" basePackage="org.abchip.mimo.biz.shipment"
+      <nestedGenPackages prefix="Receipt" basePackage="org.abchip.mimo.biz.model.shipment"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//shipment/receipt">
         <genClasses ecoreClass="biz.ecore#//shipment/receipt/RejectionReason">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//shipment/receipt/RejectionReason/rejectionId"/>
@@ -7153,7 +7154,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//shipment/receipt/ShipmentReceiptRole/roleTypeId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Shipment_" basePackage="org.abchip.mimo.biz.shipment"
+      <nestedGenPackages prefix="Shipment_" basePackage="org.abchip.mimo.biz.model.shipment"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//shipment/shipment">
         <genClasses ecoreClass="biz.ecore#//shipment/shipment/CarrierShipmentBoxType">
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//shipment/shipment/CarrierShipmentBoxType/shipmentBoxTypeId"/>
@@ -7488,10 +7489,10 @@
         </genClasses>
       </nestedGenPackages>
     </nestedGenPackages>
-    <nestedGenPackages prefix="Webapp" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Webapp" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz.ecore#//webapp">
-      <nestedGenPackages prefix="Visit" basePackage="org.abchip.mimo.biz.webapp" disposableProviderFactory="true"
-          adapterFactory="false" ecorePackage="biz.ecore#//webapp/visit">
+      <nestedGenPackages prefix="Visit" basePackage="org.abchip.mimo.biz.model.webapp"
+          disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//webapp/visit">
         <genClasses ecoreClass="biz.ecore#//webapp/visit/BrowserType">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//webapp/visit/BrowserType/browserTypeId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//webapp/visit/BrowserType/browserName"/>
@@ -7592,7 +7593,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//webapp/visit/Visitor/userLoginId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Website" basePackage="org.abchip.mimo.biz.webapp"
+      <nestedGenPackages prefix="Website" basePackage="org.abchip.mimo.biz.model.webapp"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//webapp/website">
         <genClasses ecoreClass="biz.ecore#//webapp/website/WebPage">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//webapp/website/WebPage/webPageId"/>
@@ -7623,9 +7624,9 @@
         </genClasses>
       </nestedGenPackages>
     </nestedGenPackages>
-    <nestedGenPackages prefix="Workeffort" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
-        adapterFactory="false" ecorePackage="biz.ecore#//workeffort">
-      <nestedGenPackages prefix="Timesheet" basePackage="org.abchip.mimo.biz.workeffort"
+    <nestedGenPackages prefix="Workeffort" basePackage="org.abchip.mimo.biz.model"
+        disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//workeffort">
+      <nestedGenPackages prefix="Timesheet" basePackage="org.abchip.mimo.biz.model.workeffort"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//workeffort/timesheet">
         <genClasses ecoreClass="biz.ecore#//workeffort/timesheet/TimeEntry">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//workeffort/timesheet/TimeEntry/timeEntryId"/>
@@ -7656,7 +7657,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EReference biz.ecore#//workeffort/timesheet/TimesheetRole/roleTypeId"/>
         </genClasses>
       </nestedGenPackages>
-      <nestedGenPackages prefix="Workeffort" basePackage="org.abchip.mimo.biz.workeffort"
+      <nestedGenPackages prefix="Workeffort" basePackage="org.abchip.mimo.biz.model.workeffort"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz.ecore#//workeffort/workeffort">
         <genClasses ecoreClass="biz.ecore#//workeffort/workeffort/ApplicationSandbox">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//workeffort/workeffort/ApplicationSandbox/applicationId"/>

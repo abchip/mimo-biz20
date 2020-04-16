@@ -18,50 +18,51 @@ import java.util.Map;
 
 import javax.inject.Inject;
 
-import org.abchip.mimo.biz.accounting.invoice.Invoice;
-import org.abchip.mimo.biz.accounting.invoice.InvoiceContactMech;
-import org.abchip.mimo.biz.accounting.invoice.InvoiceItem;
-import org.abchip.mimo.biz.accounting.invoice.InvoiceItemType;
-import org.abchip.mimo.biz.accounting.invoice.InvoiceStatus;
-import org.abchip.mimo.biz.accounting.invoice.InvoiceType;
-import org.abchip.mimo.biz.accounting.payment.CreditCard;
-import org.abchip.mimo.biz.accounting.payment.PaymentMethodType;
-import org.abchip.mimo.biz.accounting.tax.TaxAuthorityRateProduct;
 import org.abchip.mimo.biz.base.service.ContactMechServices;
 import org.abchip.mimo.biz.base.service.PaymentServices;
 import org.abchip.mimo.biz.base.service.SystemDefault;
-import org.abchip.mimo.biz.common.enum_.Enumeration;
-import org.abchip.mimo.biz.common.geo.Geo;
-import org.abchip.mimo.biz.common.status.StatusItem;
-import org.abchip.mimo.biz.order.order.OrderContactMech;
-import org.abchip.mimo.biz.order.order.OrderHeader;
-import org.abchip.mimo.biz.order.order.OrderItem;
-import org.abchip.mimo.biz.order.order.OrderItemShipGroup;
-import org.abchip.mimo.biz.order.order.OrderItemShipGroupAssoc;
-import org.abchip.mimo.biz.order.order.OrderItemType;
-import org.abchip.mimo.biz.order.order.OrderPaymentPreference;
-import org.abchip.mimo.biz.order.order.OrderRole;
-import org.abchip.mimo.biz.order.order.OrderStatus;
-import org.abchip.mimo.biz.order.order.OrderType;
-import org.abchip.mimo.biz.party.agreement.Agreement;
-import org.abchip.mimo.biz.party.agreement.AgreementItem;
-import org.abchip.mimo.biz.party.agreement.AgreementItemType;
-import org.abchip.mimo.biz.party.agreement.AgreementProductAppl;
-import org.abchip.mimo.biz.party.agreement.AgreementTerm;
-import org.abchip.mimo.biz.party.agreement.AgreementType;
-import org.abchip.mimo.biz.party.agreement.TermType;
-import org.abchip.mimo.biz.party.contact.ContactMech;
-import org.abchip.mimo.biz.party.contact.ContactMechPurposeType;
-import org.abchip.mimo.biz.party.party.Party;
-import org.abchip.mimo.biz.party.party.PartyRole;
-import org.abchip.mimo.biz.party.party.RoleType;
+import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
+import org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech;
+import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem;
+import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemType;
+import org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus;
+import org.abchip.mimo.biz.model.accounting.invoice.InvoiceType;
+import org.abchip.mimo.biz.model.accounting.payment.CreditCard;
+import org.abchip.mimo.biz.model.accounting.payment.PaymentMethod;
+import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType;
+import org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct;
+import org.abchip.mimo.biz.model.common.enum_.Enumeration;
+import org.abchip.mimo.biz.model.common.geo.Geo;
+import org.abchip.mimo.biz.model.common.status.StatusItem;
+import org.abchip.mimo.biz.model.order.order.OrderContactMech;
+import org.abchip.mimo.biz.model.order.order.OrderHeader;
+import org.abchip.mimo.biz.model.order.order.OrderItem;
+import org.abchip.mimo.biz.model.order.order.OrderItemShipGroup;
+import org.abchip.mimo.biz.model.order.order.OrderItemShipGroupAssoc;
+import org.abchip.mimo.biz.model.order.order.OrderItemType;
+import org.abchip.mimo.biz.model.order.order.OrderPaymentPreference;
+import org.abchip.mimo.biz.model.order.order.OrderRole;
+import org.abchip.mimo.biz.model.order.order.OrderStatus;
+import org.abchip.mimo.biz.model.order.order.OrderType;
+import org.abchip.mimo.biz.model.party.agreement.Agreement;
+import org.abchip.mimo.biz.model.party.agreement.AgreementItem;
+import org.abchip.mimo.biz.model.party.agreement.AgreementItemType;
+import org.abchip.mimo.biz.model.party.agreement.AgreementProductAppl;
+import org.abchip.mimo.biz.model.party.agreement.AgreementTerm;
+import org.abchip.mimo.biz.model.party.agreement.AgreementType;
+import org.abchip.mimo.biz.model.party.agreement.TermType;
+import org.abchip.mimo.biz.model.party.contact.ContactMech;
+import org.abchip.mimo.biz.model.party.contact.ContactMechPurposeType;
+import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.biz.model.party.party.PartyRole;
+import org.abchip.mimo.biz.model.party.party.RoleType;
+import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.biz.model.product.product.ProductType;
+import org.abchip.mimo.biz.model.product.store.ProductStore;
+import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
 import org.abchip.mimo.biz.plugins.entity.EntityUtils;
 import org.abchip.mimo.biz.plugins.paymentGateway.StripePaymentManager;
-import org.abchip.mimo.biz.product.product.Product;
-import org.abchip.mimo.biz.product.product.ProductType;
-import org.abchip.mimo.biz.product.store.ProductStore;
-import org.abchip.mimo.biz.security.login.UserLogin;
-import org.abchip.mimo.biz.shipment.shipment.ShipmentMethodType;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.base.cmd.BaseCommands;
 import org.abchip.mimo.entity.EntityIdentifiable;
@@ -83,7 +84,7 @@ import org.eclipse.osgi.framework.console.CommandInterpreter;
 
 import com.stripe.Stripe;
 import com.stripe.model.PaymentIntent;
-import com.stripe.model.PaymentMethod;
+
 
 public class BizTestCommands extends BaseCommands {
 
@@ -1093,7 +1094,7 @@ public class BizTestCommands extends BaseCommands {
 						String description = "Payment invoice nr. " + invoiceEntity.getID() + " - customer " + invoiceEntity.getPartyId().getID();
 						PaymentIntent intent = StripePaymentManager.createPaymentIntent("card", Integer.parseInt(amountString), invoiceEntity.getCurrencyUomId().getID(), description);
 						String[] values = creditCard.getExpireDate().split("/");
-						PaymentMethod paymentMethod = StripePaymentManager.createPaymentCardMethod(creditCard.getCardNumber(), Integer.parseInt(values[0]), Integer.parseInt(values[1]),
+						com.stripe.model.PaymentMethod paymentMethod = StripePaymentManager.createPaymentCardMethod(creditCard.getCardNumber(), Integer.parseInt(values[0]), Integer.parseInt(values[1]),
 								creditCard.getDescription());
 						PaymentIntent confirm = StripePaymentManager.confirm(intent.getId(), paymentMethod.getId());
 						interpreter.println("Transaction " + confirm.getId() + " " + confirm.getStatus());
@@ -1193,7 +1194,7 @@ public class BizTestCommands extends BaseCommands {
 
 		try {
 
-			org.abchip.mimo.biz.accounting.payment.PaymentMethod paymentMethod = PaymentServices.getPaymentMethodParty(context, invoiceEntity.getPartyId().getID(), "CREDIT_CARD");
+			PaymentMethod paymentMethod = PaymentServices.getPaymentMethodParty(context, invoiceEntity.getPartyId().getID(), "CREDIT_CARD");
 			if (paymentMethod == null) {
 				interpreter.println("Payment method not found for party " + invoiceEntity.getPartyId().getID());
 			} else {

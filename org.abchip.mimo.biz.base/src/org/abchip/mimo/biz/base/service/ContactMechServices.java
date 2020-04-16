@@ -8,10 +8,10 @@
  */
 package org.abchip.mimo.biz.base.service;
 
-import org.abchip.mimo.biz.party.contact.ContactMech;
-import org.abchip.mimo.biz.party.contact.PartyContactMech;
-import org.abchip.mimo.biz.party.contact.PostalAddress;
-import org.abchip.mimo.biz.party.contact.TelecomNumber;
+import org.abchip.mimo.biz.model.party.contact.ContactMech;
+import org.abchip.mimo.biz.model.party.contact.PartyContactMech;
+import org.abchip.mimo.biz.model.party.contact.PostalAddress;
+import org.abchip.mimo.biz.model.party.contact.TelecomNumber;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceException;

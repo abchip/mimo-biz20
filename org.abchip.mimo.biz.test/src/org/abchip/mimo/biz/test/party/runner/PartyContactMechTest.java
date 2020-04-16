@@ -11,10 +11,10 @@ package org.abchip.mimo.biz.test.party.runner;
 import javax.inject.Inject;
 
 import org.abchip.mimo.biz.base.service.ContactMechServices;
-import org.abchip.mimo.biz.party.contact.ContactFactory;
-import org.abchip.mimo.biz.party.contact.ContactMech;
-import org.abchip.mimo.biz.party.contact.PartyContactMech;
-import org.abchip.mimo.biz.party.contact.PostalAddress;
+import org.abchip.mimo.biz.model.party.contact.ContactFactory;
+import org.abchip.mimo.biz.model.party.contact.ContactMech;
+import org.abchip.mimo.biz.model.party.contact.PartyContactMech;
+import org.abchip.mimo.biz.model.party.contact.PostalAddress;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.tester.Test;
 import org.abchip.mimo.tester.TestAsserter;

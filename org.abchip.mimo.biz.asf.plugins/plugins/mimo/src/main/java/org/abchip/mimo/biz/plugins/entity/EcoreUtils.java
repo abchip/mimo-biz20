@@ -14,7 +14,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.biz.model.BizPackage;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
 import org.abchip.mimo.util.Logs;

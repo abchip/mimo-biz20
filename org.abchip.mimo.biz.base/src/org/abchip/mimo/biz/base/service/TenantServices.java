@@ -10,12 +10,12 @@ package org.abchip.mimo.biz.base.service;
 
 import java.util.Date;
 
-import org.abchip.mimo.biz.entity.tenant.Tenant;
-import org.abchip.mimo.biz.entity.tenant.TenantDataSource;
-import org.abchip.mimo.biz.entity.tenant.TenantDomainName;
-import org.abchip.mimo.biz.security.login.UserLogin;
-import org.abchip.mimo.biz.security.securitygroup.SecurityGroup;
-import org.abchip.mimo.biz.security.securitygroup.UserLoginSecurityGroup;
+import org.abchip.mimo.biz.model.entity.tenant.Tenant;
+import org.abchip.mimo.biz.model.entity.tenant.TenantDataSource;
+import org.abchip.mimo.biz.model.entity.tenant.TenantDomainName;
+import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.biz.model.security.securitygroup.SecurityGroup;
+import org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;

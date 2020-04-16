@@ -10,10 +10,10 @@ package org.abchip.mimo.biz.test.product.runner;
 
 import javax.inject.Inject;
 
-import org.abchip.mimo.biz.product.price.PriceFactory;
-import org.abchip.mimo.biz.product.price.ProductPrice;
-import org.abchip.mimo.biz.product.product.Product;
-import org.abchip.mimo.biz.product.product.ProductFactory;
+import org.abchip.mimo.biz.model.product.price.PriceFactory;
+import org.abchip.mimo.biz.model.product.price.ProductPrice;
+import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.biz.model.product.product.ProductFactory;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;

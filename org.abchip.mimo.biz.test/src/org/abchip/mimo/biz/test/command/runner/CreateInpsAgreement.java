@@ -4,10 +4,10 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.Callable;
 
-import org.abchip.mimo.biz.party.agreement.Agreement;
-import org.abchip.mimo.biz.party.agreement.AgreementItem;
-import org.abchip.mimo.biz.party.agreement.AgreementTerm;
-import org.abchip.mimo.biz.party.agreement.TermType;
+import org.abchip.mimo.biz.model.party.agreement.Agreement;
+import org.abchip.mimo.biz.model.party.agreement.AgreementItem;
+import org.abchip.mimo.biz.model.party.agreement.AgreementTerm;
+import org.abchip.mimo.biz.model.party.agreement.TermType;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceException;

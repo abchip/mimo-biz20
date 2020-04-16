@@ -10,13 +10,13 @@ package org.abchip.mimo.biz.base.command;
 
 import javax.inject.Inject;
 
-import org.abchip.mimo.biz.common.status.StatusItem;
-import org.abchip.mimo.biz.common.uom.Uom;
-import org.abchip.mimo.biz.party.party.Party;
-import org.abchip.mimo.biz.party.party.PartyFactory;
-import org.abchip.mimo.biz.party.party.PartyGroup;
-import org.abchip.mimo.biz.party.party.PartyType;
-import org.abchip.mimo.biz.party.party.Person;
+import org.abchip.mimo.biz.model.common.status.StatusItem;
+import org.abchip.mimo.biz.model.common.uom.Uom;
+import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.biz.model.party.party.PartyFactory;
+import org.abchip.mimo.biz.model.party.party.PartyGroup;
+import org.abchip.mimo.biz.model.party.party.PartyType;
+import org.abchip.mimo.biz.model.party.party.Person;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.base.cmd.BaseCommands;
 import org.abchip.mimo.entity.EntityIdentifiable;

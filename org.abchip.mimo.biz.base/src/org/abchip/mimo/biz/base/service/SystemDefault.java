@@ -8,10 +8,10 @@
  */
 package org.abchip.mimo.biz.base.service;
 
-import org.abchip.mimo.biz.common.geo.Geo;
-import org.abchip.mimo.biz.common.property.SystemProperty;
-import org.abchip.mimo.biz.common.uom.Uom;
-import org.abchip.mimo.biz.party.party.Party;
+import org.abchip.mimo.biz.model.common.geo.Geo;
+import org.abchip.mimo.biz.model.common.property.SystemProperty;
+import org.abchip.mimo.biz.model.common.uom.Uom;
+import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;

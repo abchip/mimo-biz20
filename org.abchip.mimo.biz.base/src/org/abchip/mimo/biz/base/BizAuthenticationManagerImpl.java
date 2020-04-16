@@ -9,7 +9,7 @@ import org.abchip.mimo.authentication.AuthenticationException;
 import org.abchip.mimo.authentication.AuthenticationManager;
 import org.abchip.mimo.authentication.AuthenticationUserPassword;
 import org.abchip.mimo.authentication.AuthenticationUserToken;
-import org.abchip.mimo.biz.security.login.UserLogin;
+import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextProvider;
 import org.abchip.mimo.context.ContextRoot;
