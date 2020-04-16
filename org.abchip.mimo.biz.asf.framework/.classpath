@@ -87,6 +87,15 @@
 	<classpathentry kind="src" path="framework/entity/dtd"/>
 	<classpathentry kind="src" path="framework/webapp/config"/>
 	<classpathentry kind="src" path="framework/webapp/dtd"/>
+	<classpathentry kind="src" path="framework/webtools/groovyScripts/artifactinfo"/>
+	<classpathentry kind="src" path="framework/webtools/groovyScripts/cache"/>
+	<classpathentry kind="src" path="framework/webtools/groovyScripts/datafile"/>
+	<classpathentry kind="src" path="framework/webtools/groovyScripts/entity"/>
+	<classpathentry kind="src" path="framework/webtools/groovyScripts/geo"/>
+	<classpathentry kind="src" path="framework/webtools/groovyScripts/labelmanager"/>
+	<classpathentry kind="src" path="framework/webtools/groovyScripts/log"/>
+	<classpathentry kind="src" path="framework/webtools/groovyScripts/service"/>
+	<classpathentry kind="src" path="framework/webtools/groovyScripts/stats"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
