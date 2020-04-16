@@ -56,7 +56,9 @@
       fromDate="2019-01-01T00:00:00.000+0100"
       taxAuthGeoId="ITA"
       taxAuthPartyId="ITA_ADE"
-      partyTaxId="IT-0123456789"/>
+      isExempt="false"
+      isNexus="false"
+      partyTaxId="IT-01234567891"/>
   <contents
       xsi:type="biz-contact:PostalAddress"
       contactMechId="9000"
@@ -274,6 +276,7 @@
   <contents
       xsi:type="biz-tax:TaxAuthorityRateProduct"
       taxAuthorityRateSeqId="10000"
+      description="Tax percentage for sales"
       isTaxInShippingPrice="true"
       taxAuthGeoId="ITA"
       taxAuthPartyId="ITA_ADE"
@@ -281,6 +284,20 @@
       taxPromotions="true">
     <productStoreId
         href="seed-initial.xmi#8000"/>
+    <taxAuthorityRateTypeId
+        href="seed-initial.xmi#SALES_TAX"/>
+  </contents>
+  <contents
+      xsi:type="biz-tax:TaxAuthorityRateProduct"
+      taxAuthorityRateSeqId="10001"
+      description="Tax percentage for purchase"
+      isTaxInShippingPrice="true"
+      minItemPrice="1"
+      minPurchase="1"
+      taxAuthGeoId="ITA"
+      taxAuthPartyId="ITA_ADE"
+      taxPercentage="22"
+      taxPromotions="true">
     <taxAuthorityRateTypeId
         href="seed-initial.xmi#SALES_TAX"/>
   </contents>
