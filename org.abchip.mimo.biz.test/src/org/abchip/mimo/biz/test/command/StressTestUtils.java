@@ -18,6 +18,7 @@ import org.abchip.mimo.biz.product.facility.Facility;
 import org.abchip.mimo.biz.product.price.ProductPrice;
 import org.abchip.mimo.biz.product.product.Product;
 import org.abchip.mimo.biz.product.store.ProductStore;
+import org.abchip.mimo.biz.product.supplier.SupplierProduct;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceException;
@@ -144,6 +145,24 @@ public class StressTestUtils {
 		return productPrices;
 	}
 
+	public static List<SupplierProduct> getSupplierProduct(Context context, Party party) throws ResourceException {
+		ResourceManager resourceManager = context.get(ResourceManager.class);
+
+		ResourceReader<SupplierProduct> supplierProductReader = resourceManager.getResourceReader(context, SupplierProduct.class);
+		List<SupplierProduct> supplierProduct = new ArrayList<SupplierProduct>();
+		String filter = "partyId = \"" + party.getID() + "\"";
+		
+		try (EntityIterator<SupplierProduct> supplierProducts = supplierProductReader.find(filter)) {
+			for (SupplierProduct product : supplierProducts) {
+
+				if (product.getLastPrice().equals(0))
+					continue;
+				supplierProduct.add(product);
+			}
+		}
+		return supplierProduct;
+	}
+	
 	public static String generateRandomString(int length, boolean onlyNumbers) {
 		// You can customize the characters that you want to add into
 		// the random strings

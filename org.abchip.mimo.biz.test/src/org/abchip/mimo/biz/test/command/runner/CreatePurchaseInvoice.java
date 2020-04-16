@@ -83,7 +83,7 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 		invoiceContactMech.setContactMechId(ContactMechServices.getLatestPostaAddress(context, company.getID()));
 		invoiceContactMechWriter.create(invoiceContactMech);
 
-		// OrderItem
+		// Items
 		long i = 1;
 		for (ProductPrice productPrice : this.productPrices) {
 			createInvoiceItem(resourceManager, invoice, StressTestUtils.formatPaddedNumber(i++, 5), 1, productPrice);

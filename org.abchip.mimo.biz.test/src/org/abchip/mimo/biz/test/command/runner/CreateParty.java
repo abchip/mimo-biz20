@@ -85,7 +85,7 @@ public class CreateParty implements Callable<Long> {
 	
 	private void createRelated(ResourceManager resourceManager, Party party, String role) throws ResourceException {
 
-		// PartyRole
+		// Base role
 		ResourceWriter<PartyRole> partyRoleWriter = resourceManager.getResourceWriter(context, PartyRole.class);
 		PartyRole partyRole = partyRoleWriter.make();
 		partyRole.setPartyId(party);
@@ -115,7 +115,20 @@ public class CreateParty implements Callable<Long> {
 			partyRoleWriter.create(partyRole);
 			break;
 		case "SUPPLIER":
+			partyRole = partyRoleWriter.make();
+			partyRole.setPartyId(party);
+			partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("BILL_FROM_VENDOR"));
+			partyRoleWriter.create(partyRole);
 
+			partyRole = partyRoleWriter.make();
+			partyRole.setPartyId(party);
+			partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("SHIP_FROM_VENDOR"));
+			partyRoleWriter.create(partyRole);
+
+			partyRole = partyRoleWriter.make();
+			partyRole.setPartyId(party);
+			partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("SUPPLIER_AGENT"));
+			partyRoleWriter.create(partyRole);
 			break;
 		}
 

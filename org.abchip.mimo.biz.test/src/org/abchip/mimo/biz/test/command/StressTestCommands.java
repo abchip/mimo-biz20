@@ -28,6 +28,7 @@ import org.abchip.mimo.biz.test.command.runner.CreateInpsAgreement;
 import org.abchip.mimo.biz.test.command.runner.CreateParty;
 import org.abchip.mimo.biz.test.command.runner.CreateProduct;
 import org.abchip.mimo.biz.test.command.runner.CreatePurchaseInvoice;
+import org.abchip.mimo.biz.test.command.runner.CreatePurchaseOrder;
 import org.abchip.mimo.biz.test.command.runner.CreateSalesInvoice;
 import org.abchip.mimo.biz.test.command.runner.CreateSalesOrder;
 import org.abchip.mimo.context.Context;
@@ -44,6 +45,7 @@ public class StressTestCommands extends BaseCommands {
 		try (ContextProvider context = login()) {
 			stressTestSalesOrder(interpreter, context.get());
 			stressTestSalesInvoice(interpreter, context.get());
+			stressTestPurchaseOrder(interpreter, context.get());
 			stressTestPurchaseInvoice(interpreter, context.get());
 			stressTestAgreement(interpreter, context.get());
 		}
@@ -72,6 +74,12 @@ public class StressTestCommands extends BaseCommands {
 	public void _stressTestSalesInvoice(CommandInterpreter interpreter) throws Exception {
 		try (ContextProvider context = login()) {
 			stressTestSalesInvoice(interpreter, context.get());
+		}
+	}
+
+	public void _stressTestPurchaseOrder(CommandInterpreter interpreter) throws Exception {
+		try (ContextProvider context = login()) {
+			stressTestPurchaseOrder(interpreter, context.get());
 		}
 	}
 
@@ -115,8 +123,8 @@ public class StressTestCommands extends BaseCommands {
 
 		// jobs
 		for (int i = 0; i < loops; i++) {
-			executor.submit(new CreateProduct(context));
 			executor.submit(new CreateParty(context));
+			executor.submit(new CreateProduct(context));
 		}
 
 		executor.shutdown();
@@ -145,7 +153,7 @@ public class StressTestCommands extends BaseCommands {
 		executor.awaitTermination(1, TimeUnit.MINUTES);
 
 		long time2 = System.currentTimeMillis();
-		interpreter.println("Total time execution StressTestOrder: " + (time2 - time1));
+		interpreter.println("Total time execution StressTestSalesOrder: " + (time2 - time1));
 	}
 
 	private void stressTestSalesInvoice(CommandInterpreter interpreter, Context context) throws Exception {
@@ -170,6 +178,26 @@ public class StressTestCommands extends BaseCommands {
 		interpreter.println("Total time execution StressTestSalesInvoice: " + (time2 - time1));
 	}
 
+	private void stressTestPurchaseOrder(CommandInterpreter interpreter, Context context) throws Exception {
+
+		List<Party> parties = StressTestUtils.getEnabledSupplier(context);
+		if (parties.isEmpty()) {
+			interpreter.println("Supplier not present, launch command 'createTestBaseData'");
+			return;
+		}
+		long time1 = System.currentTimeMillis();
+
+		ExecutorService executor = Executors.newFixedThreadPool(1);
+		for (Party party : parties)
+			executor.submit(new CreatePurchaseOrder(context, party, StressTestUtils.getSupplierProduct(context, party)));
+
+		executor.shutdown();
+		executor.awaitTermination(1, TimeUnit.MINUTES);
+
+		long time2 = System.currentTimeMillis();
+		interpreter.println("Total time execution StressTestPurchaseOrder: " + (time2 - time1));
+	}
+	
 	private void stressTestPurchaseInvoice(CommandInterpreter interpreter, Context context) throws Exception {
 
 		List<Party> parties = StressTestUtils.getEnabledSupplier(context);

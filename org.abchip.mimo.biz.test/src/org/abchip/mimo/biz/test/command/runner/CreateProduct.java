@@ -2,18 +2,27 @@ package org.abchip.mimo.biz.test.command.runner;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 import java.util.concurrent.Callable;
 
 import org.abchip.mimo.biz.base.service.SystemDefault;
+import org.abchip.mimo.biz.party.party.Party;
+import org.abchip.mimo.biz.product.facility.Facility;
+import org.abchip.mimo.biz.product.facility.ProductFacility;
 import org.abchip.mimo.biz.product.price.ProductPrice;
 import org.abchip.mimo.biz.product.price.ProductPricePurpose;
 import org.abchip.mimo.biz.product.price.ProductPriceType;
 import org.abchip.mimo.biz.product.product.Product;
 import org.abchip.mimo.biz.product.product.ProductType;
 import org.abchip.mimo.biz.product.store.ProductStoreGroup;
+import org.abchip.mimo.biz.product.supplier.SupplierPrefOrder;
+import org.abchip.mimo.biz.product.supplier.SupplierProduct;
+import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
+import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
+import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.resource.ResourceWriter;
 
 public class CreateProduct implements Callable<Long> {
@@ -33,13 +42,18 @@ public class CreateProduct implements Callable<Long> {
 	}
 
 	private void createProduct() throws ResourceException {
+		createSalesProduct();
+		createPurchaseProduct();
+	}
+
+	private void createSalesProduct() throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 		// Product
 		ResourceWriter<Product> productWriter = resourceManager.getResourceWriter(context, Product.class);
 		Product product = productWriter.make(true);
 		product.setInternalName(product.getID());
-		product.setProductName(product.getID() + " description");
-		product.setDescription("Description product " + product.getID());
+		product.setProductName(product.getID() + " sales product");
+		product.setDescription("Sales product " + product.getID());
 		product.setProductTypeId(resourceManager.getFrame(context, ProductType.class).createProxy("DIGITAL_GOOD"));
 		product.setTaxable(true);
 		productWriter.create(product);
@@ -56,5 +70,51 @@ public class CreateProduct implements Callable<Long> {
 		productPrice.setCurrencyUomId(SystemDefault.getUom(context));
 		productPrice.setProductStoreGroupId(resourceManager.getFrame(context, ProductStoreGroup.class).createProxy("_NA_"));
 		productPriceWriter.create(productPrice);
+	}
+	
+	private void createPurchaseProduct() throws ResourceException {
+		ResourceManager resourceManager = context.get(ResourceManager.class);
+		// Product
+		ResourceWriter<Product> productWriter = resourceManager.getResourceWriter(context, Product.class);
+		Product product = productWriter.make(true);
+		product.setInternalName(product.getID());
+		product.setProductName(product.getID() + " purchase product");
+		product.setDescription("Purchase product " + product.getID());
+		product.setProductTypeId(resourceManager.getFrame(context, ProductType.class).createProxy("FINISHED_GOOD"));
+		product.setTaxable(true);
+		productWriter.create(product);
+
+		ResourceWriter<SupplierProduct> supplierProductWriter = resourceManager.getResourceWriter(context, SupplierProduct.class);
+		ResourceWriter<ProductFacility > productFacilityWriter = resourceManager.getResourceWriter(context, ProductFacility .class);
+		ResourceReader<Facility> facilityReader = resourceManager.getResourceReader(context, Facility.class);
+		
+		// List of supplier
+		List<Party> parties = StressTestUtils.getEnabledSupplier(context);
+		for (Party party : parties) {
+			// SupplierProduct
+			SupplierProduct supplierProduct = supplierProductWriter.make();
+			supplierProduct.setProductId(product);
+			supplierProduct.setPartyId(party);
+			supplierProduct.setAvailableFromDate(new Date());
+			supplierProduct.setSupplierPrefOrderId(resourceManager.getFrame(context, SupplierPrefOrder.class).createProxy("10_MAIN_SUPPL"));
+			supplierProduct.setMinimumOrderQuantity(new BigDecimal(1));
+			supplierProduct.setLastPrice(new BigDecimal(1));
+			supplierProduct.setCurrencyUomId(SystemDefault.getUom(context));
+			supplierProduct.setCanDropShip(false);
+			supplierProduct.setSupplierProductId(party.getID() + "-" + product.getID());
+			supplierProductWriter.create(supplierProduct);
+		}
+		// ProductFacility
+		try (EntityIterator<Facility> facilities = facilityReader.find()) {
+			for (Facility facility : facilities) {
+				ProductFacility productFacility = productFacilityWriter.make();
+				productFacility.setProductId(product);
+				productFacility.setFacilityId(facility);
+				productFacility.setMinimumStock(new BigDecimal(1));
+				productFacility.setReorderQuantity(new BigDecimal(1));
+				productFacility.setDaysToShip(1);
+				productFacilityWriter.create(productFacility);
+			}
+		}
 	}
 }

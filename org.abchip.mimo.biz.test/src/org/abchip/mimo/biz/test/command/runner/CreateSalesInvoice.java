@@ -9,6 +9,7 @@ import org.abchip.mimo.biz.accounting.invoice.Invoice;
 import org.abchip.mimo.biz.accounting.invoice.InvoiceContactMech;
 import org.abchip.mimo.biz.accounting.invoice.InvoiceItem;
 import org.abchip.mimo.biz.accounting.invoice.InvoiceItemType;
+import org.abchip.mimo.biz.accounting.invoice.InvoiceRole;
 import org.abchip.mimo.biz.accounting.invoice.InvoiceStatus;
 import org.abchip.mimo.biz.accounting.invoice.InvoiceType;
 import org.abchip.mimo.biz.accounting.ledger.PartyAcctgPreference;
@@ -18,6 +19,7 @@ import org.abchip.mimo.biz.base.service.SystemDefault;
 import org.abchip.mimo.biz.common.status.StatusItem;
 import org.abchip.mimo.biz.party.contact.ContactMechPurposeType;
 import org.abchip.mimo.biz.party.party.Party;
+import org.abchip.mimo.biz.party.party.RoleType;
 import org.abchip.mimo.biz.product.price.ProductPrice;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
@@ -47,6 +49,8 @@ public class CreateSalesInvoice implements Callable<Long> {
 
 	private void createInvoice() throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
+		
+		Party company = SystemDefault.getCompany(context); 
 
 		// Invoice Header
 		ResourceWriter<Invoice> invoiceWriter = resourceManager.getResourceWriter(context, Invoice.class);
@@ -57,13 +61,13 @@ public class CreateSalesInvoice implements Callable<Long> {
 		if (partyAcctgPreference != null && partyAcctgPreference.getInvoiceIdPrefix() != null) {
 			invoice.setInvoiceId(partyAcctgPreference.getInvoiceIdPrefix() + invoiceId);
 		}
-		
+
 		invoice.setInvoiceTypeId(resourceManager.getFrame(context, InvoiceType.class).createProxy("SALES_INVOICE"));
 		invoice.setInvoiceDate(new Date());
 		invoice.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("INVOICE_IN_PROCESS"));
 		invoice.setCurrencyUomId(SystemDefault.getUom(context));
 		invoice.setPartyId(party);
-		invoice.setPartyIdFrom(SystemDefault.getCompany(context));
+		invoice.setPartyIdFrom(company);
 		invoice.setDescription("Sales invoice test for party " + party.getID());
 		invoiceWriter.create(invoice);
 
@@ -83,21 +87,53 @@ public class CreateSalesInvoice implements Callable<Long> {
 		invoiceContactMech.setContactMechId(ContactMechServices.getLatestPostaAddress(context, party.getID()));
 		invoiceContactMechWriter.create(invoiceContactMech);
 
-		// OrderItem
+		// Roles
+		ResourceWriter<InvoiceRole> invoiceRoleWriter = resourceManager.getResourceWriter(context, InvoiceRole.class);
+		InvoiceRole invoiceRole = invoiceRoleWriter.make();
+		invoiceRole.setInvoiceId(invoice);
+		invoiceRole.setPartyId(company);
+		invoiceRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("BILL_FROM_VENDOR"));
+		invoiceRoleWriter.create(invoiceRole);
+
+		invoiceRole = invoiceRoleWriter.make();
+		invoiceRole.setInvoiceId(invoice);
+		invoiceRole.setPartyId(party);
+		invoiceRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("BILL_TO_CUSTOMER"));
+		invoiceRoleWriter.create(invoiceRole);
+
+		invoiceRole = invoiceRoleWriter.make();
+		invoiceRole.setInvoiceId(invoice);
+		invoiceRole.setPartyId(party);
+		invoiceRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("SHIP_TO_CUSTOMER"));
+		invoiceRoleWriter.create(invoiceRole);
+
+		invoiceRole = invoiceRoleWriter.make();
+		invoiceRole.setInvoiceId(invoice);
+		invoiceRole.setPartyId(party);
+		invoiceRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("END_USER_CUSTOMER"));
+		invoiceRoleWriter.create(invoiceRole);
+
+		invoiceRole = invoiceRoleWriter.make();
+		invoiceRole.setInvoiceId(invoice);
+		invoiceRole.setPartyId(party);
+		invoiceRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("PLACING_CUSTOMER"));
+		invoiceRoleWriter.create(invoiceRole);
+
+		// Items
 		long i = 1;
 		for (ProductPrice productPrice : this.productPrices) {
 			createInvoiceItem(resourceManager, invoice, StressTestUtils.formatPaddedNumber(i++, 5), 1, productPrice);
 		}
 	}
 
-	private void createInvoiceItem(ResourceManager resourceManager, Invoice invoice, String itemSeqiD, int quantity, ProductPrice productPrice) throws ResourceException {
+	private void createInvoiceItem(ResourceManager resourceManager, Invoice invoice, String itemSeqiD, int quantity,
+			ProductPrice productPrice) throws ResourceException {
 		ResourceWriter<InvoiceItem> invoiceItemWriter = resourceManager.getResourceWriter(context, InvoiceItem.class);
 
 		InvoiceItem invoiceItem = invoiceItemWriter.make();
 		invoiceItem.setInvoiceId(invoice);
 		invoiceItem.setInvoiceItemSeqId(itemSeqiD);
 		invoiceItem.setInvoiceItemTypeId(resourceManager.getFrame(context, InvoiceItemType.class).createProxy("INV_DPROD_ITEM"));
-
 		invoiceItem.setProductId(productPrice.getProductId());
 		invoiceItem.setDescription(productPrice.getProductId().getProductName());
 		invoiceItem.setQuantity(new BigDecimal(quantity));
