@@ -12,6 +12,7 @@ import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.abchip.mimo.biz.model.party.contact.PartyContactMech;
 import org.abchip.mimo.biz.model.party.contact.PostalAddress;
 import org.abchip.mimo.biz.model.party.contact.TelecomNumber;
+import org.abchip.mimo.biz.model.product.facility.FacilityContactMech;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceException;
@@ -44,6 +45,30 @@ public class ContactMechServices {
 		return postalAddress;
 	}
 
+	public static PostalAddress getFacilityLatestPostaAddress(Context context, String facilityId) throws ResourceException {
+
+		ResourceManager resourceManager = context.get(ResourceManager.class);
+
+		String filter = "facilityId = \"" + facilityId + "\"  AND thruDate IS NULL";
+		String order = "-fromDate";
+		ResourceReader<FacilityContactMech> facilityContactMechReader = resourceManager.getResourceReader(context, FacilityContactMech.class);
+		ResourceReader<PostalAddress> postalAddressReader = resourceManager.getResourceReader(context, PostalAddress.class);
+		PostalAddress postalAddress = null;
+		try (EntityIterator<FacilityContactMech> facilityContactMechs = facilityContactMechReader.find(filter, null, order)) {
+			for (FacilityContactMech facilityContactMech : facilityContactMechs) {
+				ResourceReader<ContactMech> contactMechReader = resourceManager.getResourceReader(context, ContactMech.class);
+				ContactMech contactMech = contactMechReader.lookup(facilityContactMech.getContactMechId().getContactMechId());
+
+				if (!contactMech.getContactMechTypeId().getContactMechTypeId().equals("POSTAL_ADDRESS"))
+					continue;
+
+				postalAddress = postalAddressReader.lookup(contactMech.getContactMechId());
+				break;
+			}
+		}
+		return postalAddress;
+	}
+	
 	public static TelecomNumber getLatestTelecomNumber(Context context, String partyId) throws ResourceException {
 
 		ResourceManager resourceManager = context.get(ResourceManager.class);

@@ -96,7 +96,7 @@ public class CreateSalesOrder implements Callable<Long> {
 
 		// OrderContactMech
 		createContactMech(resourceManager, ContactMechServices.getLatestEmail(context, party.getID()), orderHeader, "ORDER_EMAIL");
-		createContactMech(resourceManager, ContactMechServices.getLatestEmail(context, party.getID()), orderHeader, "SHIPPING_LOCATION");
+		createContactMech(resourceManager, ContactMechServices.getLatestPostaAddress(context, party.getID()), orderHeader, "SHIPPING_LOCATION");
 
 		// OrderItemShipGroup
 		ResourceWriter<OrderItemShipGroup> orderItemShipGroupWriter = resourceManager.getResourceWriter(context, OrderItemShipGroup.class);
