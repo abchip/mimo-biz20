@@ -623,19 +623,6 @@
         href="seed-initial.xmi#SALES_TAX"/>
   </contents>
   <contents
-      xsi:type="biz-tax:TaxAuthorityRateProduct"
-      taxAuthorityRateSeqId="10001"
-      isTaxInShippingPrice="true"
-      minItemPrice="1"
-      minPurchase="1"
-      taxAuthGeoId="ITA"
-      taxAuthPartyId="ITA_ADE"
-      taxPercentage="22"
-      taxPromotions="true">
-    <taxAuthorityRateTypeId
-        href="seed-initial.xmi#SALES_TAX"/>
-  </contents>
-  <contents
       xsi:type="biz-user:UserPreference"
       userPrefTypeId="ORGANIZATION_PARTY"
       userPrefValue="Company">

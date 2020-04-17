@@ -93,8 +93,8 @@ public class TenantCommands extends BaseCommands {
 		SeedServices.loadSeeds(context, "seed", tenantId, true);
 		SeedServices.loadSeed(context, "mimo", tenantId, true);
 		SeedServices.loadSeed(context, "party", tenantId, true);
-		SeedServices.loadSeed(context, "abchip-test", tenantId, true);
-		SeedServices.loadSeed(context, "abchip-test-accounting", tenantId, true);
+		SeedServices.loadSeed(context, "abchip-tenantTest", tenantId, true);
+		SeedServices.loadSeed(context, "abchip-tenantTest-accounting", tenantId, true);
 		TenantServices.createUserTenant(context, tenantId, false);
 	}
 

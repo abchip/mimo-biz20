@@ -8,7 +8,7 @@
     xmlns:biz-period="http://www.abchip.org/mimo/biz/model/common/period"
     xmlns:mimo-ent="http://www.abchip.org/mimo/entity"
     xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/accounting/ledger ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//accounting/ledger http://www.abchip.org/mimo/biz/model/accounting/payment ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//accounting/payment http://www.abchip.org/mimo/biz/model/common/period ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//common/period http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
-    name="abchip-net">
+    name="abchip-tenantTest-accounting">
   <contents
       xsi:type="biz-ledger:PartyAcctgPreference"
       partyId="Company"
@@ -33,7 +33,7 @@
       periodNum="1"
       thruDate="2020-12-31T00:00:00.000+0100">
     <organizationPartyId
-        href="abchip-net.xmi#Company"/>
+        href="abchip-tenantTest.xmi#Company"/>
     <periodTypeId
         href="seed-initial-accounting.xmi#FISCAL_YEAR"/>
   </contents>
@@ -92,25 +92,25 @@
       xsi:type="biz-ledger:GlAccountOrganization"
       glAccountId="100000">
     <organizationPartyId
-        href="abchip-net.xmi#Company"/>
+        href="abchip-tenantTest.xmi#Company"/>
   </contents>
   <contents
       xsi:type="biz-ledger:GlAccountOrganization"
       glAccountId="120000">
     <organizationPartyId
-        href="abchip-net.xmi#Company"/>
+        href="abchip-tenantTest.xmi#Company"/>
   </contents>
   <contents
       xsi:type="biz-ledger:GlAccountOrganization"
       glAccountId="122000">
     <organizationPartyId
-        href="abchip-net.xmi#Company"/>
+        href="abchip-tenantTest.xmi#Company"/>
   </contents>
   <contents
       xsi:type="biz-ledger:GlAccountOrganization"
       glAccountId="122300">
     <organizationPartyId
-        href="abchip-net.xmi#Company"/>
+        href="abchip-tenantTest.xmi#Company"/>
   </contents>
   <contents
       xsi:type="biz-ledger:GlAccountTypeDefault"
@@ -118,14 +118,14 @@
     <glAccountTypeId
         href="seed-initial-accounting.xmi#ACCOUNTS_RECEIVABLE"/>
     <organizationPartyId
-        href="abchip-net.xmi#Company"/>
+        href="abchip-tenantTest.xmi#Company"/>
   </contents>
   <contents
       xsi:type="biz-payment:PaymentGlAccountTypeMap">
     <paymentTypeId
         href="seed-initial-accounting.xmi#CUSTOMER_PAYMENT"/>
     <organizationPartyId
-        href="abchip-net.xmi#Company"/>
+        href="abchip-tenantTest.xmi#Company"/>
     <glAccountTypeId
         href="seed-initial-accounting.xmi#ACCOUNTS_RECEIVABLE"/>
   </contents>

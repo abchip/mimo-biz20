@@ -15,7 +15,7 @@
     xmlns:biz-tax="http://www.abchip.org/mimo/biz/model/accounting/tax"
     xmlns:mimo-ent="http://www.abchip.org/mimo/entity"
     xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/product/catalog ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//product/catalog http://www.abchip.org/mimo/biz/model/party/contact ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//party/contact http://www.abchip.org/mimo/biz/model/product/facility ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//product/facility http://www.abchip.org/mimo/biz/model/security/login ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//security/login http://www.abchip.org/mimo/biz/model/party/party ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//party/party http://www.abchip.org/mimo/biz/model/common/property ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//common/property http://www.abchip.org/mimo/biz/model/security/securitygroup ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//security/securitygroup http://www.abchip.org/mimo/biz/model/shipment/shipment ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//shipment/shipment http://www.abchip.org/mimo/biz/model/product/store ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//product/store http://www.abchip.org/mimo/biz/model/accounting/tax ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//accounting/tax http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
-    name="abchip-net">
+    name="abchip-tenantTest">
   <contents
       xsi:type="biz-party:PartyGroup"
       partyId="Company"
@@ -75,22 +75,17 @@
   </contents>
   <contents
       xsi:type="biz-contact:PartyContactMech"
+      partyId="Company"
+      contactMechId="9000"
       fromDate="2019-01-01T00:00:00.000+0100"
-      allowSolicitation="true">
-    <partyId
-        href="abchip-net.xmi#Company"/>
-    <contactMechId
-        href="abchip-net.xmi#9000"/>
-  </contents>
+      allowSolicitation="true"/>
   <contents
       xsi:type="biz-contact:PartyContactMechPurpose"
+      partyId="Company"
+      contactMechId="9000"
       fromDate="2019-01-01T00:00:00.000+0100">
     <contactMechPurposeTypeId
         href="seed-initial.xmi#GENERAL_LOCATION"/>
-    <partyId
-        href="abchip-net.xmi#Company"/>
-    <contactMechId
-        href="abchip-net.xmi#9000"/>
   </contents>
   <contents
       xsi:type="biz-contact:ContactMech"
@@ -101,21 +96,18 @@
   </contents>
   <contents
       xsi:type="biz-contact:PartyContactMechPurpose"
+      partyId="Company"
       contactMechId="9001"
       fromDate="2019-01-01T00:00:00.000+0100">
     <contactMechPurposeTypeId
         href="seed-initial.xmi#PRIMARY_EMAIL"/>
-    <partyId
-        href="abchip-net.xmi#Company"/>
   </contents>
   <contents
       xsi:type="biz-contact:PartyContactMech"
+      partyId="Company"
       contactMechId="9001"
       fromDate="2019-01-01T00:00:00.000+0100"
-      allowSolicitation="true">
-    <partyId
-        href="abchip-net.xmi#Company"/>
-  </contents>
+      allowSolicitation="true"/>
   <contents
       xsi:type="biz-facility:Facility"
       facilityId="WebStoreWarehouse"
@@ -196,10 +188,9 @@
   </contents>
   <contents
       xsi:type="biz-store:ProductStorePaymentSetting"
+      productStoreId="8000"
       applyToAllProducts="true"
       paymentService="">
-    <productStoreId
-        href="abchip-net.xmi#8000"/>
     <paymentMethodTypeId
         href="seed-initial.xmi#CREDIT_CARD"/>
     <paymentServiceTypeEnumId
@@ -207,10 +198,9 @@
   </contents>
   <contents
       xsi:type="biz-store:ProductStorePaymentSetting"
+      productStoreId="8000"
       applyToAllProducts="true"
       paymentService="">
-    <productStoreId
-        href="abchip-net.xmi#8000"/>
     <paymentMethodTypeId
         href="seed-initial.xmi#EXT_COD"/>
     <paymentServiceTypeEnumId
@@ -218,10 +208,9 @@
   </contents>
   <contents
       xsi:type="biz-store:ProductStorePaymentSetting"
+      productStoreId="8000"
       applyToAllProducts="true"
       paymentService="">
-    <productStoreId
-        href="abchip-net.xmi#8000"/>
     <paymentMethodTypeId
         href="seed-initial.xmi#EFT_ACCOUNT"/>
     <paymentServiceTypeEnumId
@@ -238,19 +227,15 @@
   <contents
       xsi:type="biz-shipment:CarrierShipmentMethod"
       shipmentMethodTypeId="NO_SHIPPING"
+      partyId="_NA_"
       roleTypeId="CARRIER"
-      sequenceNumber="1">
-    <partyId
-        href="abchip-net.xmi#_NA_"/>
-  </contents>
+      sequenceNumber="1"/>
   <contents
       xsi:type="biz-shipment:CarrierShipmentMethod"
       shipmentMethodTypeId="STANDARD"
+      partyId="_NA_"
       roleTypeId="CARRIER"
-      sequenceNumber="1">
-    <partyId
-        href="abchip-net.xmi#_NA_"/>
-  </contents>
+      sequenceNumber="1"/>
   <contents
       xsi:type="biz-store:ProductStoreShipmentMeth"
       productStoreShipMethId="0001"
@@ -288,17 +273,30 @@
         href="seed-initial.xmi#SALES_TAX"/>
   </contents>
   <contents
-      xsi:type="biz-tax:TaxAuthorityRateProduct"
-      taxAuthorityRateSeqId="10001"
-      description="Tax percentage for purchase"
-      isTaxInShippingPrice="true"
-      minItemPrice="1"
-      minPurchase="1"
-      taxAuthGeoId="ITA"
-      taxAuthPartyId="ITA_ADE"
-      taxPercentage="22"
-      taxPromotions="true">
-    <taxAuthorityRateTypeId
-        href="seed-initial.xmi#SALES_TAX"/>
+      xsi:type="biz-contact:PostalAddress"
+      contactMechId="9002"
+      address1="Address 1"
+      city="City"
+      postalCode="20100"
+      toName="Company test ">
+    <contactMechTypeId
+        href="seed-initial.xmi#POSTAL_ADDRESS"/>
+    <countryGeoId
+        href="seed-initial.xmi#ITA"/>
+    <stateProvinceGeoId
+        href="seed-initial.xmi#MI"/>
+  </contents>
+  <contents
+      xsi:type="biz-facility:FacilityContactMech"
+      facilityId="WebStoreWarehouse"
+      contactMechId="9002"
+      fromDate="2019-01-01T00:00:00.000+0100"/>
+  <contents
+      xsi:type="biz-facility:FacilityContactMechPurpose"
+      facilityId="WebStoreWarehouse"
+      contactMechId="9002"
+      fromDate="2019-01-01T00:00:00.000+0100">
+    <contactMechPurposeTypeId
+        href="seed-initial.xmi#GENERAL_LOCATION"/>
   </contents>
 </mimo-ent:EntityContainer>
