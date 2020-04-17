@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.order.order.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.content.content.Content;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.order.order.OrderContent;
 import org.abchip.mimo.biz.model.order.order.OrderContentType;
 import org.abchip.mimo.biz.model.order.order.OrderHeader;

@@ -9,13 +9,13 @@ package org.abchip.mimo.biz.model.content.survey.impl;
 
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.content.survey.SurveyPackage;
 import org.abchip.mimo.biz.model.content.survey.SurveyQuestion;
 import org.abchip.mimo.biz.model.content.survey.SurveyQuestionCategory;
 import org.abchip.mimo.biz.model.content.survey.SurveyQuestionOption;
 import org.abchip.mimo.biz.model.content.survey.SurveyQuestionType;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

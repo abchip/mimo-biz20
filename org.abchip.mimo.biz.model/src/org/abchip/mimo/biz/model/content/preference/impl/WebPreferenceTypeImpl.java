@@ -7,9 +7,9 @@
  */
 package org.abchip.mimo.biz.model.content.preference.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.content.preference.PreferencePackage;
 import org.abchip.mimo.biz.model.content.preference.WebPreferenceType;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

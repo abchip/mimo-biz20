@@ -11,10 +11,10 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemAssoc;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemAssocType;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.eclipse.emf.ecore.EClass;
 

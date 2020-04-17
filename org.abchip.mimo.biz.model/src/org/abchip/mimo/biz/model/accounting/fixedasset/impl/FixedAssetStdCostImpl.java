@@ -11,12 +11,12 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCost;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCostType;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage;
 import org.abchip.mimo.biz.model.common.uom.Uom;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

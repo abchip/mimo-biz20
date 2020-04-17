@@ -10,11 +10,11 @@ package org.abchip.mimo.biz.model.accounting.ledger.impl;
 import java.math.BigDecimal;
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.accounting.ledger.GlReconciliation;
 import org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.eclipse.emf.ecore.EClass;
 

@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.marketing.segment.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.marketing.segment.SegmentGroupType;
 import org.abchip.mimo.biz.model.marketing.segment.SegmentPackage;
 import org.eclipse.emf.ecore.EClass;

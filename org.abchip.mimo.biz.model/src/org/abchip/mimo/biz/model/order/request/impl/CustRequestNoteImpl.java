@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.order.request.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityNoteImpl;
+import org.abchip.mimo.biz.impl.BizEntityNoteImpl;
 import org.abchip.mimo.biz.model.order.request.CustRequest;
 import org.abchip.mimo.biz.model.order.request.CustRequestNote;
 import org.abchip.mimo.biz.model.order.request.RequestPackage;

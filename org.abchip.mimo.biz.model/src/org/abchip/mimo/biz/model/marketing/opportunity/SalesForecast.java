@@ -9,8 +9,7 @@ package org.abchip.mimo.biz.model.marketing.opportunity;
 
 import java.math.BigDecimal;
 import java.util.List;
-
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.period.CustomTimePeriod;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.party.party.Party;

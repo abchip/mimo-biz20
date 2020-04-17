@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.common.status.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.status.StatusPackage;
 import org.abchip.mimo.biz.model.common.status.StatusType;
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

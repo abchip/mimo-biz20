@@ -10,8 +10,7 @@ package org.abchip.mimo.biz.model.accounting.fixedasset;
 import java.math.BigDecimal;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.BizEntityTyped;
+import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 
 /**

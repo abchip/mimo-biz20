@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.common.geo;
 
 import java.math.BigDecimal;
-
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.datasource.DataSource;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.uom.Uom;

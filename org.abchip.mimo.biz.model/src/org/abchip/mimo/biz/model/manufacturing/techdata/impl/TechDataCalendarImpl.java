@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.manufacturing.techdata.impl;
 
 import java.util.List;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendar;
 import org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendarExcDay;
 import org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendarExcWeek;

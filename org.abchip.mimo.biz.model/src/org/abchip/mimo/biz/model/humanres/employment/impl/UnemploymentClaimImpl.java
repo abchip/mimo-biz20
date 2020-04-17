@@ -9,10 +9,10 @@ package org.abchip.mimo.biz.model.humanres.employment.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage;
 import org.abchip.mimo.biz.model.humanres.employment.UnemploymentClaim;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

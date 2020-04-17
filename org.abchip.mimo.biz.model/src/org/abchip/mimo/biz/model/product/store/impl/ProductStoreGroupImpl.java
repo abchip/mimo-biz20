@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.store.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.store.ProductStoreGroup;
 import org.abchip.mimo.biz.model.product.store.ProductStoreGroupType;
 import org.abchip.mimo.biz.model.product.store.StorePackage;

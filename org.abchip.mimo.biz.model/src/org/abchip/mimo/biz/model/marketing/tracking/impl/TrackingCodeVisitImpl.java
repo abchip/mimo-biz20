@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.marketing.tracking.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.marketing.tracking.TrackingCode;
 import org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeVisit;
 import org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage;

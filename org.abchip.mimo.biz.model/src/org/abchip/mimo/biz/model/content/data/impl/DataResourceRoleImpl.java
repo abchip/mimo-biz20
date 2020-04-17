@@ -9,10 +9,10 @@ package org.abchip.mimo.biz.model.content.data.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.content.data.DataPackage;
 import org.abchip.mimo.biz.model.content.data.DataResource;
 import org.abchip.mimo.biz.model.content.data.DataResourceRole;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.eclipse.emf.ecore.EClass;
 

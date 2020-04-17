@@ -7,9 +7,9 @@
  */
 package org.abchip.mimo.biz.model.humanres.recruitment.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.humanres.recruitment.JobInterviewType;
 import org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

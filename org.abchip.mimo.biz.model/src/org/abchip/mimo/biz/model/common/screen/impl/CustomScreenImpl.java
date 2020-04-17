@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.common.screen.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.common.screen.CustomScreen;
 import org.abchip.mimo.biz.model.common.screen.CustomScreenType;
 import org.abchip.mimo.biz.model.common.screen.ScreenPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

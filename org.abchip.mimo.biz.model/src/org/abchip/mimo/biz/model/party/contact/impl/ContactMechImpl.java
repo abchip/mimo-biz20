@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.party.contact.impl;
 
 import java.util.List;
-
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.abchip.mimo.biz.model.party.contact.ContactMechAttribute;
 import org.abchip.mimo.biz.model.party.contact.ContactMechLink;

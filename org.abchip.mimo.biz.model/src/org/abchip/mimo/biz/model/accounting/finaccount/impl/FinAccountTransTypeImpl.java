@@ -9,11 +9,11 @@ package org.abchip.mimo.biz.model.accounting.finaccount.impl;
 
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTransType;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTransTypeAttr;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

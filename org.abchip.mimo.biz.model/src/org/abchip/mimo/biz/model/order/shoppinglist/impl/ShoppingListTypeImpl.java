@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.order.shoppinglist.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListType;
 import org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage;
 import org.eclipse.emf.ecore.EClass;

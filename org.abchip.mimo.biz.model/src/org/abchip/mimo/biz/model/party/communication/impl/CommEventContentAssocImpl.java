@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.party.communication.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.content.content.Content;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.communication.CommContentAssocType;
 import org.abchip.mimo.biz.model.party.communication.CommEventContentAssoc;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEvent;

@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.party.agreement.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.content.content.Content;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.party.agreement.Agreement;
 import org.abchip.mimo.biz.model.party.agreement.AgreementContent;
 import org.abchip.mimo.biz.model.party.agreement.AgreementContentType;

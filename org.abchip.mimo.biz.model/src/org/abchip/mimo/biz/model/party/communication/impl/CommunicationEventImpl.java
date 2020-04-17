@@ -9,10 +9,10 @@ package org.abchip.mimo.biz.model.party.communication.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.content.data.MimeType;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.marketing.contact.ContactList;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEvent;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEventType;

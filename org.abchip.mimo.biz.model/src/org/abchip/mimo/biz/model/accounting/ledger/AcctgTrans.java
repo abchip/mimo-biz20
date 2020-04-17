@@ -9,8 +9,7 @@ package org.abchip.mimo.biz.model.accounting.ledger;
 
 import java.util.Date;
 import java.util.List;
-
-import org.abchip.mimo.biz.model.BizEntityTyped;
+import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset;
 import org.abchip.mimo.biz.model.accounting.invoice.Invoice;

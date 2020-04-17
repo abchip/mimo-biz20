@@ -9,10 +9,10 @@ package org.abchip.mimo.biz.model.accounting.ledger.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceType;
 import org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage;
 import org.abchip.mimo.biz.model.accounting.ledger.PartyPrefDocTypeTpl;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.order.order.OrderType;
 import org.abchip.mimo.biz.model.order.quote.QuoteType;
 import org.abchip.mimo.biz.model.party.party.Party;

@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.order.order.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.order.order.OrderBlacklist;
 import org.abchip.mimo.biz.model.order.order.OrderBlacklistType;
 import org.abchip.mimo.biz.model.order.order.OrderPackage;

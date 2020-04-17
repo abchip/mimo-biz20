@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.marketing.tracking.impl;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.marketing.tracking.TrackingCode;
 import org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn;
 import org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeType;

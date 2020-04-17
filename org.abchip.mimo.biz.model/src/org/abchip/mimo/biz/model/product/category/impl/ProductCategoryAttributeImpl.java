@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.category.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.category.CategoryPackage;
 import org.abchip.mimo.biz.model.product.category.ProductCategory;
 import org.abchip.mimo.biz.model.product.category.ProductCategoryAttribute;

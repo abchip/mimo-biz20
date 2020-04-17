@@ -7,9 +7,9 @@
  */
 package org.abchip.mimo.biz.model.content.website.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.content.website.WebSitePublishPoint;
 import org.abchip.mimo.biz.model.content.website.WebsitePackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

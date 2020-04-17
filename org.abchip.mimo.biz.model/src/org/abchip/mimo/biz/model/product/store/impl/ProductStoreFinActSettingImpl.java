@@ -9,10 +9,10 @@ package org.abchip.mimo.biz.model.product.store.impl;
 
 import java.math.BigDecimal;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.content.survey.Survey;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
 import org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting;
 import org.abchip.mimo.biz.model.product.store.StorePackage;

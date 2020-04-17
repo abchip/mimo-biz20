@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.order.order;
 
-import org.abchip.mimo.biz.model.BizEntityNote;
+import org.abchip.mimo.biz.BizEntityNote;
 
 /**
  * <!-- begin-user-doc -->

@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.marketing.opportunity.impl;
 
 import java.math.BigDecimal;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.uom.Uom;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage;
 import org.abchip.mimo.biz.model.marketing.opportunity.SalesForecast;
 import org.abchip.mimo.biz.model.marketing.opportunity.SalesForecastDetail;

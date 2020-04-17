@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.workeffort.workeffort.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortBilling;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;

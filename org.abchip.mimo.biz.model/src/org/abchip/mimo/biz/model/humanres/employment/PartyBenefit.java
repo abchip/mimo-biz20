@@ -10,8 +10,7 @@ package org.abchip.mimo.biz.model.humanres.employment;
 import java.math.BigDecimal;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.BizEntityTyped;
+import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.period.PeriodType;
 import org.abchip.mimo.biz.model.party.party.Party;
 

@@ -9,12 +9,12 @@ package org.abchip.mimo.biz.model.accounting.payment.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.accounting.payment.Payment;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentContent;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentContentType;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentPackage;
 import org.abchip.mimo.biz.model.content.content.Content;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

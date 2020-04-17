@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.workeffort.workeffort.impl;
 
 import java.math.BigDecimal;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.humanres.ability.SkillType;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSkillStandard;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;

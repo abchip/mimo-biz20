@@ -9,13 +9,13 @@ package org.abchip.mimo.biz.model.accounting.finaccount.impl;
 
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccount;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTypeAttr;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTypeGlAccount;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

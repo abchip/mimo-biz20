@@ -9,10 +9,10 @@ package org.abchip.mimo.biz.model.accounting.budget.impl;
 
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetPackage;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetScenario;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetScenarioRule;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

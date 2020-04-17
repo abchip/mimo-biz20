@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.order.reservations;
 
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationClass;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset;
 

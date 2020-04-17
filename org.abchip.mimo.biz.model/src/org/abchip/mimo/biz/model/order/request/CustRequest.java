@@ -9,8 +9,7 @@ package org.abchip.mimo.biz.model.order.request;
 
 import java.util.Date;
 import java.util.List;
-
-import org.abchip.mimo.biz.model.BizEntityTyped;
+import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.uom.Uom;

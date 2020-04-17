@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.accounting.payment;
 
 import java.util.List;
-
-import org.abchip.mimo.biz.model.BizEntityType;
+import org.abchip.mimo.biz.BizEntityType;
 
 /**
  * <!-- begin-user-doc -->

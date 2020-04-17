@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.marketing.opportunity;
 
 import java.math.BigDecimal;
-
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 
 /**
  * <!-- begin-user-doc -->

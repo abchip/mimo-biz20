@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.common.portal.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.portal.PortalPackage;
 import org.abchip.mimo.biz.model.common.portal.PortalPage;
 import org.abchip.mimo.biz.model.common.portal.PortalPageColumn;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.common.note;
 
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -43,7 +43,7 @@ public interface NotePackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.abchip.org/mimo/biz/common/note";
+	String eNS_URI = "http://www.abchip.org/mimo/biz/model/common/note";
 
 	/**
 	 * The package namespace name.

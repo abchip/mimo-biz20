@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.common.period.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.period.PeriodPackage;
 import org.abchip.mimo.biz.model.common.period.PeriodType;
 import org.abchip.mimo.biz.model.common.uom.Uom;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

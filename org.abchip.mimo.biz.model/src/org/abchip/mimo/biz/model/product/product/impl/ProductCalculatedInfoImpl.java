@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.product.product.impl;
 
 import java.math.BigDecimal;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.product.ProductCalculatedInfo;
 import org.abchip.mimo.biz.model.product.product.ProductPackage;
 import org.eclipse.emf.ecore.EClass;

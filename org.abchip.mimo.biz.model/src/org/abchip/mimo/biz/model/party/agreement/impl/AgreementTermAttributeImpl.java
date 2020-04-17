@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.party.agreement.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.agreement.AgreementPackage;
 import org.abchip.mimo.biz.model.party.agreement.AgreementTerm;
 import org.abchip.mimo.biz.model.party.agreement.AgreementTermAttribute;

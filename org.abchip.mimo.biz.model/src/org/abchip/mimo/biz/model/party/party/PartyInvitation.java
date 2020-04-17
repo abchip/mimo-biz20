@@ -9,8 +9,7 @@ package org.abchip.mimo.biz.model.party.party;
 
 import java.util.Date;
 import java.util.List;
-
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 
 /**

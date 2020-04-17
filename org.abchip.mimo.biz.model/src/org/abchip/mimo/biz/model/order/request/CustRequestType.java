@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.order.request;
 
 import java.util.List;
-
-import org.abchip.mimo.biz.model.BizEntityType;
+import org.abchip.mimo.biz.BizEntityType;
 import org.abchip.mimo.biz.model.party.party.Party;
 
 /**

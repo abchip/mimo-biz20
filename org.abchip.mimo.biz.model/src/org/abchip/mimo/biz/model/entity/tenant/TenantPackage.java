@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.entity.tenant;
 
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -43,7 +43,7 @@ public interface TenantPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.abchip.org/mimo/biz/entity/tenant";
+	String eNS_URI = "http://www.abchip.org/mimo/biz/model/entity/tenant";
 
 	/**
 	 * The package namespace name.

@@ -9,10 +9,10 @@ package org.abchip.mimo.biz.model.entity.synchronization.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.entity.synchronization.EntitySync;
 import org.abchip.mimo.biz.model.entity.synchronization.EntitySyncHistory;
 import org.abchip.mimo.biz.model.entity.synchronization.SynchronizationPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

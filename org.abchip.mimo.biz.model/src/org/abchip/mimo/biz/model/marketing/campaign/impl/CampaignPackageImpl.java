@@ -8,7 +8,7 @@
 package org.abchip.mimo.biz.model.marketing.campaign.impl;
 
 import org.abchip.mimo.MimoPackage;
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizPackage;
 import org.abchip.mimo.biz.model.accounting.AccountingPackage;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetPackage;
 import org.abchip.mimo.biz.model.accounting.budget.impl.BudgetPackageImpl;
@@ -101,7 +101,6 @@ import org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage;
 import org.abchip.mimo.biz.model.humanres.recruitment.impl.RecruitmentPackageImpl;
 import org.abchip.mimo.biz.model.humanres.trainings.TrainingsPackage;
 import org.abchip.mimo.biz.model.humanres.trainings.impl.TrainingsPackageImpl;
-import org.abchip.mimo.biz.model.impl.BizPackageImpl;
 import org.abchip.mimo.biz.model.manufacturing.bom.BomPackage;
 import org.abchip.mimo.biz.model.manufacturing.bom.impl.BomPackageImpl;
 import org.abchip.mimo.biz.model.manufacturing.mrp.MrpPackage;
@@ -296,12 +295,11 @@ public class CampaignPackageImpl extends EPackageImpl implements CampaignPackage
 		isInited = true;
 
 		// Initialize simple dependencies
+		BizPackage.eINSTANCE.eClass();
 		MimoPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
-		BizPackageImpl theBizPackage = (BizPackageImpl)(registeredPackage instanceof BizPackageImpl ? registeredPackage : BizPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI);
 		AccountingPackageImpl theAccountingPackage = (AccountingPackageImpl)(registeredPackage instanceof AccountingPackageImpl ? registeredPackage : AccountingPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BudgetPackage.eNS_URI);
 		BudgetPackageImpl theBudgetPackage = (BudgetPackageImpl)(registeredPackage instanceof BudgetPackageImpl ? registeredPackage : BudgetPackage.eINSTANCE);
@@ -399,6 +397,12 @@ public class CampaignPackageImpl extends EPackageImpl implements CampaignPackage
 		MrpPackageImpl theMrpPackage = (MrpPackageImpl)(registeredPackage instanceof MrpPackageImpl ? registeredPackage : MrpPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(TechdataPackage.eNS_URI);
 		TechdataPackageImpl theTechdataPackage = (TechdataPackageImpl)(registeredPackage instanceof TechdataPackageImpl ? registeredPackage : TechdataPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BomPackage.eNS_URI);
+		BomPackageImpl theBomPackage_1 = (BomPackageImpl)(registeredPackage instanceof BomPackageImpl ? registeredPackage : BomPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(MrpPackage.eNS_URI);
+		MrpPackageImpl theMrpPackage_1 = (MrpPackageImpl)(registeredPackage instanceof MrpPackageImpl ? registeredPackage : MrpPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(TechdataPackage.eNS_URI);
+		TechdataPackageImpl theTechdataPackage_1 = (TechdataPackageImpl)(registeredPackage instanceof TechdataPackageImpl ? registeredPackage : TechdataPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ContactPackage.eNS_URI);
 		ContactPackageImpl theContactPackage = (ContactPackageImpl)(registeredPackage instanceof ContactPackageImpl ? registeredPackage : ContactPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(OpportunityPackage.eNS_URI);
@@ -492,7 +496,6 @@ public class CampaignPackageImpl extends EPackageImpl implements CampaignPackage
 
 		// Create package meta-data objects
 		theCampaignPackage.createPackageContents();
-		theBizPackage.createPackageContents();
 		theAccountingPackage.createPackageContents();
 		theBudgetPackage.createPackageContents();
 		theFinaccountPackage.createPackageContents();
@@ -542,6 +545,9 @@ public class CampaignPackageImpl extends EPackageImpl implements CampaignPackage
 		theBomPackage.createPackageContents();
 		theMrpPackage.createPackageContents();
 		theTechdataPackage.createPackageContents();
+		theBomPackage_1.createPackageContents();
+		theMrpPackage_1.createPackageContents();
+		theTechdataPackage_1.createPackageContents();
 		theContactPackage.createPackageContents();
 		theOpportunityPackage.createPackageContents();
 		theSegmentPackage.createPackageContents();
@@ -590,7 +596,6 @@ public class CampaignPackageImpl extends EPackageImpl implements CampaignPackage
 
 		// Initialize created meta-data
 		theCampaignPackage.initializePackageContents();
-		theBizPackage.initializePackageContents();
 		theAccountingPackage.initializePackageContents();
 		theBudgetPackage.initializePackageContents();
 		theFinaccountPackage.initializePackageContents();
@@ -640,6 +645,9 @@ public class CampaignPackageImpl extends EPackageImpl implements CampaignPackage
 		theBomPackage.initializePackageContents();
 		theMrpPackage.initializePackageContents();
 		theTechdataPackage.initializePackageContents();
+		theBomPackage_1.initializePackageContents();
+		theMrpPackage_1.initializePackageContents();
+		theTechdataPackage_1.initializePackageContents();
 		theContactPackage.initializePackageContents();
 		theOpportunityPackage.initializePackageContents();
 		theSegmentPackage.initializePackageContents();
@@ -1255,6 +1263,9 @@ public class CampaignPackageImpl extends EPackageImpl implements CampaignPackage
 		getMarketingCampaignRole_RoleTypeId().getEKeys().add(thePartyPackage_1.getRoleType_RoleTypeId());
 		initEAttribute(getMarketingCampaignRole_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, MarketingCampaignRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMarketingCampaignRole_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, MarketingCampaignRole.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		// Create resource
+		createResource(eNS_URI);
 
 		// Create annotations
 		// mimo-ent-format

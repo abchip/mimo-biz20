@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.accounting.budget.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.budget.Budget;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetPackage;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetRole;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.eclipse.emf.ecore.EClass;
 

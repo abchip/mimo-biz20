@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.accounting.budget;
 
 import java.math.BigDecimal;
-
-import org.abchip.mimo.biz.model.BizEntityTyped;
+import org.abchip.mimo.biz.BizEntityTyped;
 
 /**
  * <!-- begin-user-doc -->

@@ -7,11 +7,11 @@
  */
 package org.abchip.mimo.biz.model.common.theme.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.theme.ThemePackage;
 import org.abchip.mimo.biz.model.common.theme.VisualTheme;
 import org.abchip.mimo.biz.model.common.theme.VisualThemeResource;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

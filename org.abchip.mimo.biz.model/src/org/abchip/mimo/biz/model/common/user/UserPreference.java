@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.common.user;
 
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 
 /**

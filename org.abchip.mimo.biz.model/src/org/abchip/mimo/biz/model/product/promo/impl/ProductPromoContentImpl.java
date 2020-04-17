@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.product.promo.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.content.content.Content;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.product.ProductContentType;
 import org.abchip.mimo.biz.model.product.promo.ProductPromo;
 import org.abchip.mimo.biz.model.product.promo.ProductPromoContent;

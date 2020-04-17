@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.security.securitygroup.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.security.securitygroup.ProtectedView;
 import org.abchip.mimo.biz.model.security.securitygroup.SecurityGroup;
 import org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage;

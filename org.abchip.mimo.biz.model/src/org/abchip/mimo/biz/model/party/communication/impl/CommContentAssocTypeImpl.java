@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.party.communication.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.communication.CommContentAssocType;
 import org.abchip.mimo.biz.model.party.communication.CommunicationPackage;
 import org.eclipse.emf.ecore.EClass;

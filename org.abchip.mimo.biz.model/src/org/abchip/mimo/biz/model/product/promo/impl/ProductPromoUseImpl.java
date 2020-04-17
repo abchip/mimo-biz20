@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.product.promo.impl;
 
 import java.math.BigDecimal;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.order.order.OrderHeader;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.promo.ProductPromo;

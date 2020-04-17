@@ -11,10 +11,10 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct;
 import org.abchip.mimo.biz.model.common.geo.Geo;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.order.order.OrderAdjustment;
 import org.abchip.mimo.biz.model.order.return_.ReturnAdjustment;
 import org.abchip.mimo.biz.model.order.return_.ReturnAdjustmentType;

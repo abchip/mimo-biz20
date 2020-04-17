@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.content.website.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig;
 import org.abchip.mimo.biz.model.content.website.WebAnalyticsType;
 import org.abchip.mimo.biz.model.content.website.WebsitePackage;
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

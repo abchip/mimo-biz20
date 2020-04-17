@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.category;
 
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccountType;
 import org.abchip.mimo.biz.model.party.party.Party;

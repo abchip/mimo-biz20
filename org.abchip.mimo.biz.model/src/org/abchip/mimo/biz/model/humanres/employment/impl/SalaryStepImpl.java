@@ -11,10 +11,10 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage;
 import org.abchip.mimo.biz.model.humanres.employment.PayGrade;
 import org.abchip.mimo.biz.model.humanres.employment.SalaryStep;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

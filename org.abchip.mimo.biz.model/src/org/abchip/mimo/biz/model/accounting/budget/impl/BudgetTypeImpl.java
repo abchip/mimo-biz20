@@ -9,11 +9,11 @@ package org.abchip.mimo.biz.model.accounting.budget.impl;
 
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.accounting.budget.Budget;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetPackage;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetType;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetTypeAttr;
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

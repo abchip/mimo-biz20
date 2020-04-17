@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.accounting.payment.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentGroup;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentGroupType;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

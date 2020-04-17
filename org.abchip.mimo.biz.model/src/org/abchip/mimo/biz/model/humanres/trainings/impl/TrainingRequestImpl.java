@@ -7,9 +7,9 @@
  */
 package org.abchip.mimo.biz.model.humanres.trainings.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.humanres.trainings.TrainingRequest;
 import org.abchip.mimo.biz.model.humanres.trainings.TrainingsPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

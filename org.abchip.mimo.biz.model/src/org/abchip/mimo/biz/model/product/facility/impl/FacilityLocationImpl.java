@@ -7,9 +7,9 @@
  */
 package org.abchip.mimo.biz.model.product.facility.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.geo.GeoPoint;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.product.facility.FacilityLocation;
 import org.abchip.mimo.biz.model.product.facility.FacilityPackage;

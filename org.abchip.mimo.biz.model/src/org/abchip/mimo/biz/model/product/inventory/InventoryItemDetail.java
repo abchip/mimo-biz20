@@ -10,8 +10,7 @@ package org.abchip.mimo.biz.model.product.inventory;
 import java.math.BigDecimal;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance;
 import org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt;

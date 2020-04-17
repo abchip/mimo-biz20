@@ -7,11 +7,11 @@
  */
 package org.abchip.mimo.biz.model.common.geo.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.common.geo.GeoAssoc;
 import org.abchip.mimo.biz.model.common.geo.GeoAssocType;
 import org.abchip.mimo.biz.model.common.geo.GeoPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.inventory.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItemLabel;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItemLabelType;
 import org.abchip.mimo.biz.model.product.inventory.InventoryPackage;

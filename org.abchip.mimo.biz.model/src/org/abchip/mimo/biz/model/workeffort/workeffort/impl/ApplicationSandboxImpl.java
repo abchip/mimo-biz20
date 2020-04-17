@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.workeffort.workeffort.impl;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.service.schedule.RuntimeData;
 import org.abchip.mimo.biz.model.workeffort.workeffort.ApplicationSandbox;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;

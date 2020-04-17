@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.shipment.shipment.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.shipment.shipment.Shipment;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentItemBilling;
 import org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package;

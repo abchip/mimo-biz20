@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.party.agreement.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.geo.Geo;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.agreement.Agreement;
 import org.abchip.mimo.biz.model.party.agreement.AgreementGeographicalApplic;
 import org.abchip.mimo.biz.model.party.agreement.AgreementPackage;

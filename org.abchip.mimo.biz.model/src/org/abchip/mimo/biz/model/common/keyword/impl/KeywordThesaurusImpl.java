@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.common.keyword.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.keyword.KeywordPackage;
 import org.abchip.mimo.biz.model.common.keyword.KeywordThesaurus;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

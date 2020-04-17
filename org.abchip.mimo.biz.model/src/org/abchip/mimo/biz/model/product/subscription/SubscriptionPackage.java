@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.subscription;
 
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -43,7 +43,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.abchip.org/mimo/biz/product/subscription";
+	String eNS_URI = "http://www.abchip.org/mimo/biz/model/product/subscription";
 
 	/**
 	 * The package namespace name.

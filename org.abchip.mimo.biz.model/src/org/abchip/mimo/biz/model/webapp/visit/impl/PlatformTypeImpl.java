@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.webapp.visit.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.webapp.visit.PlatformType;
 import org.abchip.mimo.biz.model.webapp.visit.VisitPackage;
 import org.eclipse.emf.ecore.EClass;

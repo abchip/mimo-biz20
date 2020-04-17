@@ -11,10 +11,10 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage;
 import org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost;
 import org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCostType;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.product.product.Product;

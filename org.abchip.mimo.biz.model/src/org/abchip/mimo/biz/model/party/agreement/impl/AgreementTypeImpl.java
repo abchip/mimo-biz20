@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.party.agreement.impl;
 
 import java.util.List;
-
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.party.agreement.Agreement;
 import org.abchip.mimo.biz.model.party.agreement.AgreementPackage;
 import org.abchip.mimo.biz.model.party.agreement.AgreementType;

@@ -9,11 +9,11 @@ package org.abchip.mimo.biz.model.accounting.ledger.impl;
 
 import java.math.BigDecimal;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans;
 import org.abchip.mimo.biz.model.accounting.ledger.GlReconciliation;
 import org.abchip.mimo.biz.model.accounting.ledger.GlReconciliationEntry;
 import org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

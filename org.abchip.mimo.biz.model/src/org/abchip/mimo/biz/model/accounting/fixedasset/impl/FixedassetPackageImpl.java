@@ -8,7 +8,7 @@
 package org.abchip.mimo.biz.model.accounting.fixedasset.impl;
 
 import org.abchip.mimo.MimoPackage;
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizPackage;
 import org.abchip.mimo.biz.model.accounting.AccountingPackage;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetPackage;
 import org.abchip.mimo.biz.model.accounting.budget.impl.BudgetPackageImpl;
@@ -122,7 +122,6 @@ import org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage;
 import org.abchip.mimo.biz.model.humanres.recruitment.impl.RecruitmentPackageImpl;
 import org.abchip.mimo.biz.model.humanres.trainings.TrainingsPackage;
 import org.abchip.mimo.biz.model.humanres.trainings.impl.TrainingsPackageImpl;
-import org.abchip.mimo.biz.model.impl.BizPackageImpl;
 import org.abchip.mimo.biz.model.manufacturing.bom.BomPackage;
 import org.abchip.mimo.biz.model.manufacturing.bom.impl.BomPackageImpl;
 import org.abchip.mimo.biz.model.manufacturing.mrp.MrpPackage;
@@ -425,12 +424,11 @@ public class FixedassetPackageImpl extends EPackageImpl implements FixedassetPac
 		isInited = true;
 
 		// Initialize simple dependencies
+		BizPackage.eINSTANCE.eClass();
 		MimoPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
-		BizPackageImpl theBizPackage = (BizPackageImpl)(registeredPackage instanceof BizPackageImpl ? registeredPackage : BizPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI);
 		AccountingPackageImpl theAccountingPackage = (AccountingPackageImpl)(registeredPackage instanceof AccountingPackageImpl ? registeredPackage : AccountingPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BudgetPackage.eNS_URI);
 		BudgetPackageImpl theBudgetPackage = (BudgetPackageImpl)(registeredPackage instanceof BudgetPackageImpl ? registeredPackage : BudgetPackage.eINSTANCE);
@@ -526,6 +524,12 @@ public class FixedassetPackageImpl extends EPackageImpl implements FixedassetPac
 		MrpPackageImpl theMrpPackage = (MrpPackageImpl)(registeredPackage instanceof MrpPackageImpl ? registeredPackage : MrpPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(TechdataPackage.eNS_URI);
 		TechdataPackageImpl theTechdataPackage = (TechdataPackageImpl)(registeredPackage instanceof TechdataPackageImpl ? registeredPackage : TechdataPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BomPackage.eNS_URI);
+		BomPackageImpl theBomPackage_1 = (BomPackageImpl)(registeredPackage instanceof BomPackageImpl ? registeredPackage : BomPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(MrpPackage.eNS_URI);
+		MrpPackageImpl theMrpPackage_1 = (MrpPackageImpl)(registeredPackage instanceof MrpPackageImpl ? registeredPackage : MrpPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(TechdataPackage.eNS_URI);
+		TechdataPackageImpl theTechdataPackage_1 = (TechdataPackageImpl)(registeredPackage instanceof TechdataPackageImpl ? registeredPackage : TechdataPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CampaignPackage.eNS_URI);
 		CampaignPackageImpl theCampaignPackage = (CampaignPackageImpl)(registeredPackage instanceof CampaignPackageImpl ? registeredPackage : CampaignPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ContactPackage.eNS_URI);
@@ -621,7 +625,6 @@ public class FixedassetPackageImpl extends EPackageImpl implements FixedassetPac
 
 		// Create package meta-data objects
 		theFixedassetPackage.createPackageContents();
-		theBizPackage.createPackageContents();
 		theAccountingPackage.createPackageContents();
 		theBudgetPackage.createPackageContents();
 		theFinaccountPackage.createPackageContents();
@@ -670,6 +673,9 @@ public class FixedassetPackageImpl extends EPackageImpl implements FixedassetPac
 		theBomPackage.createPackageContents();
 		theMrpPackage.createPackageContents();
 		theTechdataPackage.createPackageContents();
+		theBomPackage_1.createPackageContents();
+		theMrpPackage_1.createPackageContents();
+		theTechdataPackage_1.createPackageContents();
 		theCampaignPackage.createPackageContents();
 		theContactPackage.createPackageContents();
 		theOpportunityPackage.createPackageContents();
@@ -719,7 +725,6 @@ public class FixedassetPackageImpl extends EPackageImpl implements FixedassetPac
 
 		// Initialize created meta-data
 		theFixedassetPackage.initializePackageContents();
-		theBizPackage.initializePackageContents();
 		theAccountingPackage.initializePackageContents();
 		theBudgetPackage.initializePackageContents();
 		theFinaccountPackage.initializePackageContents();
@@ -768,6 +773,9 @@ public class FixedassetPackageImpl extends EPackageImpl implements FixedassetPac
 		theBomPackage.initializePackageContents();
 		theMrpPackage.initializePackageContents();
 		theTechdataPackage.initializePackageContents();
+		theBomPackage_1.initializePackageContents();
+		theMrpPackage_1.initializePackageContents();
+		theTechdataPackage_1.initializePackageContents();
 		theCampaignPackage.initializePackageContents();
 		theContactPackage.initializePackageContents();
 		theOpportunityPackage.initializePackageContents();

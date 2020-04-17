@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.shipment.picklist.impl;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.shipment.picklist.Picklist;

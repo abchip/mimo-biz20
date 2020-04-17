@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.accounting.finaccount;
 
 import java.util.List;
-
-import org.abchip.mimo.biz.model.BizEntityType;
+import org.abchip.mimo.biz.BizEntityType;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 
 /**

@@ -7,11 +7,11 @@
  */
 package org.abchip.mimo.biz.model.accounting.ledger.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccountType;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccountTypeDefault;
 import org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.eclipse.emf.ecore.EClass;
 

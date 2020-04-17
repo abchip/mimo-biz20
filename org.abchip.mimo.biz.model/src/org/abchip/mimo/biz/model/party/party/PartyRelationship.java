@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.party.party;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.BizEntityTyped;
+import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.security.securitygroup.SecurityGroup;
 

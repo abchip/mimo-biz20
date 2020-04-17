@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.product.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.product.ProductMaintType;
 import org.abchip.mimo.biz.model.product.product.ProductPackage;
 import org.eclipse.emf.ecore.EClass;

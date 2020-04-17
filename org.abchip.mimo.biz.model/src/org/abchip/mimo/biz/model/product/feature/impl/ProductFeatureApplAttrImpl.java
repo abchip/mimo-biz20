@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.product.feature.impl;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.feature.FeaturePackage;
 import org.abchip.mimo.biz.model.product.feature.ProductFeature;
 import org.abchip.mimo.biz.model.product.feature.ProductFeatureApplAttr;

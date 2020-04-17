@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.webapp.website;
 
 import java.util.List;
-
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.theme.VisualThemeSet;
 import org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig;
 import org.abchip.mimo.biz.model.product.store.ProductStore;

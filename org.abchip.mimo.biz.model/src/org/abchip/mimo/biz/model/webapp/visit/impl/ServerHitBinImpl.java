@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.webapp.visit.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.content.content.Content;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.webapp.visit.ServerHitBin;
 import org.abchip.mimo.biz.model.webapp.visit.ServerHitType;
 import org.abchip.mimo.biz.model.webapp.visit.VisitPackage;

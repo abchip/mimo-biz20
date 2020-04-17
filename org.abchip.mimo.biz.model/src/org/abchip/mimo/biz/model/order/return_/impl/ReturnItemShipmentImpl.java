@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.order.return_.impl;
 
 import java.math.BigDecimal;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.order.return_.ReturnHeader;
 import org.abchip.mimo.biz.model.order.return_.ReturnItemShipment;
 import org.abchip.mimo.biz.model.order.return_.ReturnPackage;

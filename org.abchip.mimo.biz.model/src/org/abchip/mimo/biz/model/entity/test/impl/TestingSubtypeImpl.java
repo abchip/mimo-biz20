@@ -7,9 +7,9 @@
  */
 package org.abchip.mimo.biz.model.entity.test.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.entity.test.TestPackage;
 import org.abchip.mimo.biz.model.entity.test.TestingSubtype;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

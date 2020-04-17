@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.accounting.fixedasset;
 
 import java.math.BigDecimal;
-
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.order.order.OrderHeader;

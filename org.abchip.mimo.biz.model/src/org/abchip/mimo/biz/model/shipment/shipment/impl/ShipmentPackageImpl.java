@@ -8,14 +8,18 @@
 package org.abchip.mimo.biz.model.shipment.shipment.impl;
 
 import java.math.BigDecimal;
+
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
+
 import org.abchip.mimo.biz.model.common.uom.Uom;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+
 import org.abchip.mimo.biz.model.shipment.shipment.Shipment;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentBoxType;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentPackage;
 import org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package;
+
 import org.eclipse.emf.ecore.EClass;
 
 /**

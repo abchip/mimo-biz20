@@ -11,9 +11,9 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.common.geo.Geo;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.order.order.OrderAdjustmentType;
 import org.abchip.mimo.biz.model.order.quote.Quote;
 import org.abchip.mimo.biz.model.order.quote.QuoteAdjustment;

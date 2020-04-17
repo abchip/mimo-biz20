@@ -9,10 +9,10 @@ package org.abchip.mimo.biz.model.product.cost.impl;
 
 import java.math.BigDecimal;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccountType;
 import org.abchip.mimo.biz.model.common.method.CustomMethod;
 import org.abchip.mimo.biz.model.common.uom.Uom;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.cost.CostComponentCalc;
 import org.abchip.mimo.biz.model.product.cost.CostPackage;
 import org.eclipse.emf.ecore.EClass;

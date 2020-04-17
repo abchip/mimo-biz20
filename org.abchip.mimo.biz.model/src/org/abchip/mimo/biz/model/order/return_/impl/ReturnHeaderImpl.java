@@ -10,12 +10,12 @@ package org.abchip.mimo.biz.model.order.return_.impl;
 import java.util.Date;
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccount;
 import org.abchip.mimo.biz.model.accounting.payment.BillingAccount;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethod;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.uom.Uom;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.order.return_.CommunicationEventReturn;
 import org.abchip.mimo.biz.model.order.return_.ReturnHeader;
 import org.abchip.mimo.biz.model.order.return_.ReturnHeaderType;

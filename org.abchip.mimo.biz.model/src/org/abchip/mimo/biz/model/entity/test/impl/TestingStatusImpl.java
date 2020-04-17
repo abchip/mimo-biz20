@@ -9,10 +9,10 @@ package org.abchip.mimo.biz.model.entity.test.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.entity.test.TestPackage;
 import org.abchip.mimo.biz.model.entity.test.TestingStatus;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.eclipse.emf.ecore.EClass;
 

@@ -5,12 +5,12 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.model.impl;
+package org.abchip.mimo.biz.impl;
 
 import java.util.Date;
 
-import org.abchip.mimo.biz.model.BizEntity;
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.biz.BizPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
 import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
@@ -24,10 +24,10 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizEntityImpl#getCreatedStamp <em>Created Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizEntityImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizEntityImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizEntityImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizEntityImpl#getCreatedStamp <em>Created Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizEntityImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizEntityImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizEntityImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  * </ul>
  *
  * @generated

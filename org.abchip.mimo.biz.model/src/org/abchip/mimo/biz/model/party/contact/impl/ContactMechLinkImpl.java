@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.party.contact.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.abchip.mimo.biz.model.party.contact.ContactMechLink;
 import org.abchip.mimo.biz.model.party.contact.ContactPackage;

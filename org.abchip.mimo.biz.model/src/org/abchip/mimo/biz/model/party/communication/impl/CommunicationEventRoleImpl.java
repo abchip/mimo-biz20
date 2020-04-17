@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.party.communication.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEvent;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEventRole;
 import org.abchip.mimo.biz.model.party.communication.CommunicationPackage;

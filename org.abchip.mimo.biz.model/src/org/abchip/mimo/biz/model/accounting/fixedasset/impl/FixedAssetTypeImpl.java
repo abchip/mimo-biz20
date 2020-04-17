@@ -9,11 +9,11 @@ package org.abchip.mimo.biz.model.accounting.fixedasset.impl;
 
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetType;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeAttr;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

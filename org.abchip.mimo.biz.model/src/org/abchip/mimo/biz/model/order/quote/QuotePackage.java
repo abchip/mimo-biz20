@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.order.quote;
 
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -43,7 +43,7 @@ public interface QuotePackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.abchip.org/mimo/biz/order/quote";
+	String eNS_URI = "http://www.abchip.org/mimo/biz/model/order/quote";
 
 	/**
 	 * The package namespace name.

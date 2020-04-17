@@ -5,7 +5,7 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.model;
+package org.abchip.mimo.biz;
 
 import org.abchip.mimo.application.ModuleStatus;
 import org.abchip.mimo.entity.Entity;
@@ -19,11 +19,11 @@ import org.abchip.mimo.entity.Entity;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.BizModule#getName <em>Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.BizModule#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.BizModule#getName <em>Name</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.BizModule#getStatus <em>Status</em>}</li>
  * </ul>
  *
- * @see org.abchip.mimo.biz.model.BizPackage#getBizModule()
+ * @see org.abchip.mimo.biz.BizPackage#getBizModule()
  * @model
  * @generated
  */
@@ -39,14 +39,14 @@ public interface BizModule extends Entity {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
-	 * @see org.abchip.mimo.biz.model.BizPackage#getBizModule_Name()
+	 * @see org.abchip.mimo.biz.BizPackage#getBizModule_Name()
 	 * @model
 	 * @generated
 	 */
 	String getName();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.BizModule#getName <em>Name</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.BizModule#getName <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Name</em>' attribute.
@@ -68,14 +68,14 @@ public interface BizModule extends Entity {
 	 * @return the value of the '<em>Status</em>' attribute.
 	 * @see org.abchip.mimo.application.ModuleStatus
 	 * @see #setStatus(ModuleStatus)
-	 * @see org.abchip.mimo.biz.model.BizPackage#getBizModule_Status()
+	 * @see org.abchip.mimo.biz.BizPackage#getBizModule_Status()
 	 * @model default="ACT" required="true"
 	 * @generated
 	 */
 	ModuleStatus getStatus();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.BizModule#getStatus <em>Status</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.BizModule#getStatus <em>Status</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Status</em>' attribute.

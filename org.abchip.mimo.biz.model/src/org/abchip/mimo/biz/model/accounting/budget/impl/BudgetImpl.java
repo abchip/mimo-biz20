@@ -9,6 +9,7 @@ package org.abchip.mimo.biz.model.accounting.budget.impl;
 
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.accounting.budget.Budget;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetAttribute;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetItem;
@@ -17,7 +18,6 @@ import org.abchip.mimo.biz.model.accounting.budget.BudgetRevision;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetStatus;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetType;
 import org.abchip.mimo.biz.model.common.period.CustomTimePeriod;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

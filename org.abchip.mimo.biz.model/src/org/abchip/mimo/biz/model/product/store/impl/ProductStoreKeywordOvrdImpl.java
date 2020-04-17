@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.product.store.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
 import org.abchip.mimo.biz.model.product.store.ProductStoreKeywordOvrd;
 import org.abchip.mimo.biz.model.product.store.StorePackage;

@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.service.schedule.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.service.schedule.RuntimeData;
 import org.abchip.mimo.biz.model.service.schedule.SchedulePackage;
 import org.eclipse.emf.ecore.EClass;

@@ -11,13 +11,13 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.rate.RateAmount;
 import org.abchip.mimo.biz.model.accounting.rate.RatePackage;
 import org.abchip.mimo.biz.model.accounting.rate.RateType;
 import org.abchip.mimo.biz.model.common.period.PeriodType;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.humanres.position.EmplPositionType;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
 import org.eclipse.emf.ecore.EClass;

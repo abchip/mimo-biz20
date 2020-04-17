@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.humanres.position;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.rate.RateType;
 
 /**

@@ -9,9 +9,9 @@ package org.abchip.mimo.biz.model.workeffort.timesheet.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
 import org.abchip.mimo.biz.model.accounting.rate.RateType;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.workeffort.timesheet.TimeEntry;
 import org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet;

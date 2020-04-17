@@ -9,8 +9,7 @@ package org.abchip.mimo.biz.model.product.subscription.impl;
 
 import java.util.Date;
 import java.util.List;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.subscription.SubscriptionActivity;
 import org.abchip.mimo.biz.model.product.subscription.SubscriptionFulfillmentPiece;
 import org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage;

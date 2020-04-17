@@ -7,9 +7,9 @@
  */
 package org.abchip.mimo.biz.model.accounting.rate.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.rate.RatePackage;
 import org.abchip.mimo.biz.model.accounting.rate.RateType;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

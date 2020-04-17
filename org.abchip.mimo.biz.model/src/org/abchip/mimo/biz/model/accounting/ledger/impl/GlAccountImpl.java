@@ -9,6 +9,7 @@ package org.abchip.mimo.biz.model.accounting.ledger.impl;
 
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccountClass;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccountGroupMember;
@@ -17,7 +18,6 @@ import org.abchip.mimo.biz.model.accounting.ledger.GlAccountType;
 import org.abchip.mimo.biz.model.accounting.ledger.GlResourceType;
 import org.abchip.mimo.biz.model.accounting.ledger.GlXbrlClass;
 import org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

@@ -9,10 +9,10 @@ package org.abchip.mimo.biz.model.accounting.ledger.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccountRole;
 import org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.eclipse.emf.ecore.EClass;

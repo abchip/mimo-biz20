@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.order.return_.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.order.return_.ReturnAdjustment;
 import org.abchip.mimo.biz.model.order.return_.ReturnAdjustmentType;
 import org.abchip.mimo.biz.model.order.return_.ReturnPackage;

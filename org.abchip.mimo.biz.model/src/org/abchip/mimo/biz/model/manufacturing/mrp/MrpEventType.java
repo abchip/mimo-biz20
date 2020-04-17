@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.manufacturing.mrp;
 
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 
 /**
  * <!-- begin-user-doc -->

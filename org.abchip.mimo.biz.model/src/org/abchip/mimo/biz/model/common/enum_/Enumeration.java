@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.common.enum_;
 
 import java.util.List;
-
-import org.abchip.mimo.biz.model.BizEntityTyped;
+import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion;
 
 /**

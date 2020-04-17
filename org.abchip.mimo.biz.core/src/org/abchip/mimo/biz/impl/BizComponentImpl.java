@@ -5,14 +5,14 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.model.impl;
+package org.abchip.mimo.biz.impl;
 
 import java.util.List;
 
 import org.abchip.mimo.application.impl.ApplicationComponentImpl;
-import org.abchip.mimo.biz.model.BizComponent;
-import org.abchip.mimo.biz.model.BizModule;
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizComponent;
+import org.abchip.mimo.biz.BizModule;
+import org.abchip.mimo.biz.BizPackage;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -22,9 +22,9 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizComponentImpl#getPlugin <em>Plugin</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizComponentImpl#getBizModules <em>Biz Modules</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizComponentImpl#getModulesDir <em>Modules Dir</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizComponentImpl#getPlugin <em>Plugin</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizComponentImpl#getBizModules <em>Biz Modules</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizComponentImpl#getModulesDir <em>Modules Dir</em>}</li>
  * </ul>
  *
  * @generated

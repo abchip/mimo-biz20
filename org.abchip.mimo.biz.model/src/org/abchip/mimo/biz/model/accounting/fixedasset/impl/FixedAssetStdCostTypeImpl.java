@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.accounting.fixedasset.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCost;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCostType;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

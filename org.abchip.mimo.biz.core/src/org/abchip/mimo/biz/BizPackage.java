@@ -5,7 +5,7 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.model;
+package org.abchip.mimo.biz;
 
 import org.abchip.mimo.application.ApplicationPackage;
 import org.abchip.mimo.entity.EntityPackage;
@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.EReference;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see org.abchip.mimo.biz.model.BizFactory
+ * @see org.abchip.mimo.biz.BizFactory
  * @model kind="package"
  * @generated
  */
@@ -61,14 +61,14 @@ public interface BizPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	BizPackage eINSTANCE = org.abchip.mimo.biz.model.impl.BizPackageImpl.init();
+	BizPackage eINSTANCE = org.abchip.mimo.biz.impl.BizPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link org.abchip.mimo.biz.model.impl.BizComponentImpl <em>Component</em>}' class.
+	 * The meta object id for the '{@link org.abchip.mimo.biz.impl.BizComponentImpl <em>Component</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.abchip.mimo.biz.model.impl.BizComponentImpl
-	 * @see org.abchip.mimo.biz.model.impl.BizPackageImpl#getBizComponent()
+	 * @see org.abchip.mimo.biz.impl.BizComponentImpl
+	 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizComponent()
 	 * @generated
 	 */
 	int BIZ_COMPONENT = 0;
@@ -173,11 +173,11 @@ public interface BizPackage extends EPackage {
 	int BIZ_COMPONENT_FEATURE_COUNT = ApplicationPackage.APPLICATION_COMPONENT_FEATURE_COUNT + 3;
 
 	/**
-	 * The meta object id for the '{@link org.abchip.mimo.biz.model.impl.BizModuleImpl <em>Module</em>}' class.
+	 * The meta object id for the '{@link org.abchip.mimo.biz.impl.BizModuleImpl <em>Module</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.abchip.mimo.biz.model.impl.BizModuleImpl
-	 * @see org.abchip.mimo.biz.model.impl.BizPackageImpl#getBizModule()
+	 * @see org.abchip.mimo.biz.impl.BizModuleImpl
+	 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizModule()
 	 * @generated
 	 */
 	int BIZ_MODULE = 1;
@@ -210,11 +210,11 @@ public interface BizPackage extends EPackage {
 	int BIZ_MODULE_FEATURE_COUNT = EntityPackage.ENTITY_FEATURE_COUNT + 2;
 
 	/**
-	 * The meta object id for the '{@link org.abchip.mimo.biz.model.impl.BizEntityImpl <em>Entity</em>}' class.
+	 * The meta object id for the '{@link org.abchip.mimo.biz.impl.BizEntityImpl <em>Entity</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.abchip.mimo.biz.model.impl.BizEntityImpl
-	 * @see org.abchip.mimo.biz.model.impl.BizPackageImpl#getBizEntity()
+	 * @see org.abchip.mimo.biz.impl.BizEntityImpl
+	 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntity()
 	 * @generated
 	 */
 	int BIZ_ENTITY = 2;
@@ -265,11 +265,11 @@ public interface BizPackage extends EPackage {
 	int BIZ_ENTITY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
-	 * The meta object id for the '{@link org.abchip.mimo.biz.model.impl.BizEntityNoteImpl <em>Entity Note</em>}' class.
+	 * The meta object id for the '{@link org.abchip.mimo.biz.impl.BizEntityNoteImpl <em>Entity Note</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.abchip.mimo.biz.model.impl.BizEntityNoteImpl
-	 * @see org.abchip.mimo.biz.model.impl.BizPackageImpl#getBizEntityNote()
+	 * @see org.abchip.mimo.biz.impl.BizEntityNoteImpl
+	 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntityNote()
 	 * @generated
 	 */
 	int BIZ_ENTITY_NOTE = 3;
@@ -329,31 +329,31 @@ public interface BizPackage extends EPackage {
 	int BIZ_ENTITY_NOTE_FEATURE_COUNT = BIZ_ENTITY_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link org.abchip.mimo.biz.model.impl.BizEntityTypedImpl <em>Entity Typed</em>}' class.
+	 * The meta object id for the '{@link org.abchip.mimo.biz.impl.BizEntityTypedImpl <em>Entity Typed</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.abchip.mimo.biz.model.impl.BizEntityTypedImpl
-	 * @see org.abchip.mimo.biz.model.impl.BizPackageImpl#getBizEntityTyped()
+	 * @see org.abchip.mimo.biz.impl.BizEntityTypedImpl
+	 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntityTyped()
 	 * @generated
 	 */
 	int BIZ_ENTITY_TYPED = 5;
 
 	/**
-	 * The meta object id for the '{@link org.abchip.mimo.biz.model.impl.BizEntityTypeImpl <em>Entity Type</em>}' class.
+	 * The meta object id for the '{@link org.abchip.mimo.biz.impl.BizEntityTypeImpl <em>Entity Type</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.abchip.mimo.biz.model.impl.BizEntityTypeImpl
-	 * @see org.abchip.mimo.biz.model.impl.BizPackageImpl#getBizEntityType()
+	 * @see org.abchip.mimo.biz.impl.BizEntityTypeImpl
+	 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntityType()
 	 * @generated
 	 */
 	int BIZ_ENTITY_TYPE = 6;
 
 	/**
-	 * The meta object id for the '{@link org.abchip.mimo.biz.model.impl.BizEntityNoteDataImpl <em>Entity Note Data</em>}' class.
+	 * The meta object id for the '{@link org.abchip.mimo.biz.impl.BizEntityNoteDataImpl <em>Entity Note Data</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.abchip.mimo.biz.model.impl.BizEntityNoteDataImpl
-	 * @see org.abchip.mimo.biz.model.impl.BizPackageImpl#getBizEntityNoteData()
+	 * @see org.abchip.mimo.biz.impl.BizEntityNoteDataImpl
+	 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntityNoteData()
 	 * @generated
 	 */
 	int BIZ_ENTITY_NOTE_DATA = 4;
@@ -575,224 +575,224 @@ public interface BizPackage extends EPackage {
 	int BIZ_ENTITY_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
-	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.BizComponent <em>Component</em>}'.
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.BizComponent <em>Component</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Component</em>'.
-	 * @see org.abchip.mimo.biz.model.BizComponent
+	 * @see org.abchip.mimo.biz.BizComponent
 	 * @generated
 	 */
 	EClass getBizComponent();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.BizComponent#getPlugin <em>Plugin</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.BizComponent#getPlugin <em>Plugin</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Plugin</em>'.
-	 * @see org.abchip.mimo.biz.model.BizComponent#getPlugin()
+	 * @see org.abchip.mimo.biz.BizComponent#getPlugin()
 	 * @see #getBizComponent()
 	 * @generated
 	 */
 	EAttribute getBizComponent_Plugin();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link org.abchip.mimo.biz.model.BizComponent#getBizModules <em>Biz Modules</em>}'.
+	 * Returns the meta object for the containment reference list '{@link org.abchip.mimo.biz.BizComponent#getBizModules <em>Biz Modules</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference list '<em>Biz Modules</em>'.
-	 * @see org.abchip.mimo.biz.model.BizComponent#getBizModules()
+	 * @see org.abchip.mimo.biz.BizComponent#getBizModules()
 	 * @see #getBizComponent()
 	 * @generated
 	 */
 	EReference getBizComponent_BizModules();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.BizComponent#getModulesDir <em>Modules Dir</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.BizComponent#getModulesDir <em>Modules Dir</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Modules Dir</em>'.
-	 * @see org.abchip.mimo.biz.model.BizComponent#getModulesDir()
+	 * @see org.abchip.mimo.biz.BizComponent#getModulesDir()
 	 * @see #getBizComponent()
 	 * @generated
 	 */
 	EAttribute getBizComponent_ModulesDir();
 
 	/**
-	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.BizModule <em>Module</em>}'.
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.BizModule <em>Module</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Module</em>'.
-	 * @see org.abchip.mimo.biz.model.BizModule
+	 * @see org.abchip.mimo.biz.BizModule
 	 * @generated
 	 */
 	EClass getBizModule();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.BizModule#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.BizModule#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see org.abchip.mimo.biz.model.BizModule#getName()
+	 * @see org.abchip.mimo.biz.BizModule#getName()
 	 * @see #getBizModule()
 	 * @generated
 	 */
 	EAttribute getBizModule_Name();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.BizModule#getStatus <em>Status</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.BizModule#getStatus <em>Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Status</em>'.
-	 * @see org.abchip.mimo.biz.model.BizModule#getStatus()
+	 * @see org.abchip.mimo.biz.BizModule#getStatus()
 	 * @see #getBizModule()
 	 * @generated
 	 */
 	EAttribute getBizModule_Status();
 
 	/**
-	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.BizEntity <em>Entity</em>}'.
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.BizEntity <em>Entity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Entity</em>'.
-	 * @see org.abchip.mimo.biz.model.BizEntity
+	 * @see org.abchip.mimo.biz.BizEntity
 	 * @generated
 	 */
 	EClass getBizEntity();
 
 	/**
-	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.BizEntityNote <em>Entity Note</em>}'.
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.BizEntityNote <em>Entity Note</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Entity Note</em>'.
-	 * @see org.abchip.mimo.biz.model.BizEntityNote
+	 * @see org.abchip.mimo.biz.BizEntityNote
 	 * @generated
 	 */
 	EClass getBizEntityNote();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.BizEntityNote#getNoteId <em>Note Id</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.BizEntityNote#getNoteId <em>Note Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Note Id</em>'.
-	 * @see org.abchip.mimo.biz.model.BizEntityNote#getNoteId()
+	 * @see org.abchip.mimo.biz.BizEntityNote#getNoteId()
 	 * @see #getBizEntityNote()
 	 * @generated
 	 */
 	EAttribute getBizEntityNote_NoteId();
 
 	/**
-	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.BizEntityTyped <em>Entity Typed</em>}'.
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.BizEntityTyped <em>Entity Typed</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Entity Typed</em>'.
-	 * @see org.abchip.mimo.biz.model.BizEntityTyped
+	 * @see org.abchip.mimo.biz.BizEntityTyped
 	 * @generated
 	 */
 	EClass getBizEntityTyped();
 
 	/**
-	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.BizEntityType <em>Entity Type</em>}'.
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.BizEntityType <em>Entity Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Entity Type</em>'.
-	 * @see org.abchip.mimo.biz.model.BizEntityType
+	 * @see org.abchip.mimo.biz.BizEntityType
 	 * @generated
 	 */
 	EClass getBizEntityType();
 
 	/**
-	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.BizEntityNoteData <em>Entity Note Data</em>}'.
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.BizEntityNoteData <em>Entity Note Data</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Entity Note Data</em>'.
-	 * @see org.abchip.mimo.biz.model.BizEntityNoteData
+	 * @see org.abchip.mimo.biz.BizEntityNoteData
 	 * @generated
 	 */
 	EClass getBizEntityNoteData();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.BizEntityNoteData#getNoteId <em>Note Id</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.BizEntityNoteData#getNoteId <em>Note Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Note Id</em>'.
-	 * @see org.abchip.mimo.biz.model.BizEntityNoteData#getNoteId()
+	 * @see org.abchip.mimo.biz.BizEntityNoteData#getNoteId()
 	 * @see #getBizEntityNoteData()
 	 * @generated
 	 */
 	EAttribute getBizEntityNoteData_NoteId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.BizEntityNoteData#getMoreInfoItemId <em>More Info Item Id</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.BizEntityNoteData#getMoreInfoItemId <em>More Info Item Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>More Info Item Id</em>'.
-	 * @see org.abchip.mimo.biz.model.BizEntityNoteData#getMoreInfoItemId()
+	 * @see org.abchip.mimo.biz.BizEntityNoteData#getMoreInfoItemId()
 	 * @see #getBizEntityNoteData()
 	 * @generated
 	 */
 	EAttribute getBizEntityNoteData_MoreInfoItemId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.BizEntityNoteData#getMoreInfoItemName <em>More Info Item Name</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.BizEntityNoteData#getMoreInfoItemName <em>More Info Item Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>More Info Item Name</em>'.
-	 * @see org.abchip.mimo.biz.model.BizEntityNoteData#getMoreInfoItemName()
+	 * @see org.abchip.mimo.biz.BizEntityNoteData#getMoreInfoItemName()
 	 * @see #getBizEntityNoteData()
 	 * @generated
 	 */
 	EAttribute getBizEntityNoteData_MoreInfoItemName();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.BizEntityNoteData#getMoreInfoUrl <em>More Info Url</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.BizEntityNoteData#getMoreInfoUrl <em>More Info Url</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>More Info Url</em>'.
-	 * @see org.abchip.mimo.biz.model.BizEntityNoteData#getMoreInfoUrl()
+	 * @see org.abchip.mimo.biz.BizEntityNoteData#getMoreInfoUrl()
 	 * @see #getBizEntityNoteData()
 	 * @generated
 	 */
 	EAttribute getBizEntityNoteData_MoreInfoUrl();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.BizEntityNoteData#getNoteDateTime <em>Note Date Time</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.BizEntityNoteData#getNoteDateTime <em>Note Date Time</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Note Date Time</em>'.
-	 * @see org.abchip.mimo.biz.model.BizEntityNoteData#getNoteDateTime()
+	 * @see org.abchip.mimo.biz.BizEntityNoteData#getNoteDateTime()
 	 * @see #getBizEntityNoteData()
 	 * @generated
 	 */
 	EAttribute getBizEntityNoteData_NoteDateTime();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.BizEntityNoteData#getNoteInfo <em>Note Info</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.BizEntityNoteData#getNoteInfo <em>Note Info</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Note Info</em>'.
-	 * @see org.abchip.mimo.biz.model.BizEntityNoteData#getNoteInfo()
+	 * @see org.abchip.mimo.biz.BizEntityNoteData#getNoteInfo()
 	 * @see #getBizEntityNoteData()
 	 * @generated
 	 */
 	EAttribute getBizEntityNoteData_NoteInfo();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.BizEntityNoteData#getNoteName <em>Note Name</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.BizEntityNoteData#getNoteName <em>Note Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Note Name</em>'.
-	 * @see org.abchip.mimo.biz.model.BizEntityNoteData#getNoteName()
+	 * @see org.abchip.mimo.biz.BizEntityNoteData#getNoteName()
 	 * @see #getBizEntityNoteData()
 	 * @generated
 	 */
 	EAttribute getBizEntityNoteData_NoteName();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.BizEntityNoteData#getNoteParty <em>Note Party</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.BizEntityNoteData#getNoteParty <em>Note Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Note Party</em>'.
-	 * @see org.abchip.mimo.biz.model.BizEntityNoteData#getNoteParty()
+	 * @see org.abchip.mimo.biz.BizEntityNoteData#getNoteParty()
 	 * @see #getBizEntityNoteData()
 	 * @generated
 	 */
@@ -821,11 +821,11 @@ public interface BizPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.impl.BizComponentImpl <em>Component</em>}' class.
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.impl.BizComponentImpl <em>Component</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.abchip.mimo.biz.model.impl.BizComponentImpl
-		 * @see org.abchip.mimo.biz.model.impl.BizPackageImpl#getBizComponent()
+		 * @see org.abchip.mimo.biz.impl.BizComponentImpl
+		 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizComponent()
 		 * @generated
 		 */
 		EClass BIZ_COMPONENT = eINSTANCE.getBizComponent();
@@ -855,11 +855,11 @@ public interface BizPackage extends EPackage {
 		EAttribute BIZ_COMPONENT__MODULES_DIR = eINSTANCE.getBizComponent_ModulesDir();
 
 		/**
-		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.impl.BizModuleImpl <em>Module</em>}' class.
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.impl.BizModuleImpl <em>Module</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.abchip.mimo.biz.model.impl.BizModuleImpl
-		 * @see org.abchip.mimo.biz.model.impl.BizPackageImpl#getBizModule()
+		 * @see org.abchip.mimo.biz.impl.BizModuleImpl
+		 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizModule()
 		 * @generated
 		 */
 		EClass BIZ_MODULE = eINSTANCE.getBizModule();
@@ -881,21 +881,21 @@ public interface BizPackage extends EPackage {
 		EAttribute BIZ_MODULE__STATUS = eINSTANCE.getBizModule_Status();
 
 		/**
-		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.impl.BizEntityImpl <em>Entity</em>}' class.
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.impl.BizEntityImpl <em>Entity</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.abchip.mimo.biz.model.impl.BizEntityImpl
-		 * @see org.abchip.mimo.biz.model.impl.BizPackageImpl#getBizEntity()
+		 * @see org.abchip.mimo.biz.impl.BizEntityImpl
+		 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntity()
 		 * @generated
 		 */
 		EClass BIZ_ENTITY = eINSTANCE.getBizEntity();
 
 		/**
-		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.impl.BizEntityNoteImpl <em>Entity Note</em>}' class.
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.impl.BizEntityNoteImpl <em>Entity Note</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.abchip.mimo.biz.model.impl.BizEntityNoteImpl
-		 * @see org.abchip.mimo.biz.model.impl.BizPackageImpl#getBizEntityNote()
+		 * @see org.abchip.mimo.biz.impl.BizEntityNoteImpl
+		 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntityNote()
 		 * @generated
 		 */
 		EClass BIZ_ENTITY_NOTE = eINSTANCE.getBizEntityNote();
@@ -909,31 +909,31 @@ public interface BizPackage extends EPackage {
 		EAttribute BIZ_ENTITY_NOTE__NOTE_ID = eINSTANCE.getBizEntityNote_NoteId();
 
 		/**
-		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.impl.BizEntityTypedImpl <em>Entity Typed</em>}' class.
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.impl.BizEntityTypedImpl <em>Entity Typed</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.abchip.mimo.biz.model.impl.BizEntityTypedImpl
-		 * @see org.abchip.mimo.biz.model.impl.BizPackageImpl#getBizEntityTyped()
+		 * @see org.abchip.mimo.biz.impl.BizEntityTypedImpl
+		 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntityTyped()
 		 * @generated
 		 */
 		EClass BIZ_ENTITY_TYPED = eINSTANCE.getBizEntityTyped();
 
 		/**
-		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.impl.BizEntityTypeImpl <em>Entity Type</em>}' class.
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.impl.BizEntityTypeImpl <em>Entity Type</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.abchip.mimo.biz.model.impl.BizEntityTypeImpl
-		 * @see org.abchip.mimo.biz.model.impl.BizPackageImpl#getBizEntityType()
+		 * @see org.abchip.mimo.biz.impl.BizEntityTypeImpl
+		 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntityType()
 		 * @generated
 		 */
 		EClass BIZ_ENTITY_TYPE = eINSTANCE.getBizEntityType();
 
 		/**
-		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.impl.BizEntityNoteDataImpl <em>Entity Note Data</em>}' class.
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.impl.BizEntityNoteDataImpl <em>Entity Note Data</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.abchip.mimo.biz.model.impl.BizEntityNoteDataImpl
-		 * @see org.abchip.mimo.biz.model.impl.BizPackageImpl#getBizEntityNoteData()
+		 * @see org.abchip.mimo.biz.impl.BizEntityNoteDataImpl
+		 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntityNoteData()
 		 * @generated
 		 */
 		EClass BIZ_ENTITY_NOTE_DATA = eINSTANCE.getBizEntityNoteData();

@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.order.quote.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityNoteImpl;
+import org.abchip.mimo.biz.impl.BizEntityNoteImpl;
 import org.abchip.mimo.biz.model.order.quote.Quote;
 import org.abchip.mimo.biz.model.order.quote.QuoteNote;
 import org.abchip.mimo.biz.model.order.quote.QuotePackage;

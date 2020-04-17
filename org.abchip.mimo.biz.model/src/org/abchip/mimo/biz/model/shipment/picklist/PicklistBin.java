@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.shipment.picklist;
 
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.order.order.OrderHeader;
 
 /**

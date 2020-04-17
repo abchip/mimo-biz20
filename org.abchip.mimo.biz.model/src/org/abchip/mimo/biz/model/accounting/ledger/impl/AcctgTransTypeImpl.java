@@ -9,11 +9,11 @@ package org.abchip.mimo.biz.model.accounting.ledger.impl;
 
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans;
 import org.abchip.mimo.biz.model.accounting.ledger.AcctgTransType;
 import org.abchip.mimo.biz.model.accounting.ledger.AcctgTransTypeAttr;
 import org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

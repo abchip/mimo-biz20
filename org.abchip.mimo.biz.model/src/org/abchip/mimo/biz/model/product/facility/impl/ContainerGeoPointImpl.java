@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.product.facility.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.geo.GeoPoint;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint;
 import org.abchip.mimo.biz.model.product.facility.FacilityPackage;
 import org.eclipse.emf.ecore.EClass;

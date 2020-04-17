@@ -9,11 +9,11 @@ package org.abchip.mimo.biz.model.accounting.budget.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.budget.Budget;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetPackage;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetStatus;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.eclipse.emf.ecore.EClass;
 

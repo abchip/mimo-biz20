@@ -10,8 +10,7 @@ package org.abchip.mimo.biz.model.order.return_;
 import java.math.BigDecimal;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.BizEntityTyped;
+import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct;
 import org.abchip.mimo.biz.model.common.geo.Geo;

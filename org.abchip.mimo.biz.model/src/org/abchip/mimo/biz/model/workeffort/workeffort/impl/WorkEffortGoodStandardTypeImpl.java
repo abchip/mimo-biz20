@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.workeffort.workeffort.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandard;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortGoodStandardType;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;

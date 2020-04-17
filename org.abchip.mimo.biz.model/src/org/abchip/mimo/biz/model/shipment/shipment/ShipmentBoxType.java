@@ -9,8 +9,7 @@ package org.abchip.mimo.biz.model.shipment.shipment;
 
 import java.math.BigDecimal;
 import java.util.List;
-
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 
 /**

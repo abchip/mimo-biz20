@@ -10,11 +10,11 @@ package org.abchip.mimo.biz.model.party.party.impl;
 import java.util.Date;
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.common.datasource.DataSource;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.humanres.ability.PartySkill;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.PartyAttribute;
 import org.abchip.mimo.biz.model.party.party.PartyIdentification;

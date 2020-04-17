@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.shipment.receipt.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage;
 import org.abchip.mimo.biz.model.shipment.receipt.RejectionReason;
 import org.eclipse.emf.ecore.EClass;

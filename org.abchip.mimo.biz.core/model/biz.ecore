@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="biz" nsURI="http://www.abchip.org/mimo/biz" nsPrefix="biz">
+  <eClassifiers xsi:type="ecore:EClass" name="BizComponent" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//application/ApplicationComponent">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="plugin" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="bizModules" upperBound="-1"
+        eType="#//BizModule" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="modulesDir" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BizModule" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/Entity">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="status" lowerBound="1"
+        eType="ecore:EEnum ../../org.abchip.mimo.core/model/mimo.ecore#//application/ModuleStatus"
+        defaultValueLiteral="ACT"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BizEntity" abstract="true" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityIdentifiable ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo"/>
+  <eClassifiers xsi:type="ecore:EClass" name="BizEntityNote" abstract="true" eSuperTypes="#//BizEntity">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="noteId" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="mimo-ent-slot">
+        <details key="key" value="true"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BizEntityNoteData" abstract="true" eSuperTypes="#//BizEntity">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="noteId" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="moreInfoItemId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="moreInfoItemName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="moreInfoUrl" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="noteDateTime" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="noteInfo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="noteName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="noteParty" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="mimo-ent-domain" references="../../org.abchip.mimo.core/model/mimo.ecore#//entity/Domain">
+        <details key="frame" value="Party"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BizEntityTyped" abstract="true">
+    <eTypeParameters name="T">
+      <eBounds eClassifier="#//BizEntityType">
+        <eTypeArguments/>
+      </eBounds>
+    </eTypeParameters>
+    <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityTyped">
+      <eTypeArguments eTypeParameter="#//BizEntityTyped/T"/>
+    </eGenericSuperTypes>
+    <eGenericSuperTypes eClassifier="#//BizEntity"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BizEntityType" abstract="true">
+    <eTypeParameters name="E">
+      <eBounds eClassifier="#//BizEntityTyped">
+        <eTypeArguments/>
+      </eBounds>
+    </eTypeParameters>
+    <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityType">
+      <eTypeArguments eTypeParameter="#//BizEntityType/E"/>
+    </eGenericSuperTypes>
+    <eGenericSuperTypes eClassifier="#//BizEntity"/>
+  </eClassifiers>
+</ecore:EPackage>

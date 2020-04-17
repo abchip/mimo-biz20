@@ -9,9 +9,9 @@ package org.abchip.mimo.biz.model.webapp.website.impl;
 
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.theme.VisualThemeSet;
 import org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
 import org.abchip.mimo.biz.model.webapp.website.WebSite;
 import org.abchip.mimo.biz.model.webapp.website.WebsitePackage;

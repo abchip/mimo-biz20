@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.common.datasource.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.datasource.DataSource;
 import org.abchip.mimo.biz.model.common.datasource.DataSourceType;
 import org.abchip.mimo.biz.model.common.datasource.DatasourcePackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

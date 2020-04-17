@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.passport.impl;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.passport.OAuth2Google;
 import org.abchip.mimo.biz.model.passport.PassportPackage;
 import org.abchip.mimo.biz.model.product.store.ProductStore;

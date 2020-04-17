@@ -9,11 +9,11 @@ package org.abchip.mimo.biz.model.common.method.impl;
 
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod;
 import org.abchip.mimo.biz.model.common.method.CustomMethod;
 import org.abchip.mimo.biz.model.common.method.CustomMethodType;
 import org.abchip.mimo.biz.model.common.method.MethodPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

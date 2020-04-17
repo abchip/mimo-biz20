@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.order.shoppinglist.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList;
 import org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListWorkEffort;
 import org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage;

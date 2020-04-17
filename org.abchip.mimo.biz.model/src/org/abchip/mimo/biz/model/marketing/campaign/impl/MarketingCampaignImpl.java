@@ -11,9 +11,9 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.uom.Uom;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage;
 import org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaign;
 import org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignNote;

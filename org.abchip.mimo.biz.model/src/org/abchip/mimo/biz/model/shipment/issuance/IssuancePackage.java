@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.shipment.issuance;
 
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -43,7 +43,7 @@ public interface IssuancePackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.abchip.org/mimo/biz/shipment/issuance";
+	String eNS_URI = "http://www.abchip.org/mimo/biz/model/shipment/issuance";
 
 	/**
 	 * The package namespace name.

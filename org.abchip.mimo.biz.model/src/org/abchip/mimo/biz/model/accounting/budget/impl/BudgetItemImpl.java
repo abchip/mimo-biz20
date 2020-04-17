@@ -9,11 +9,11 @@ package org.abchip.mimo.biz.model.accounting.budget.impl;
 
 import java.math.BigDecimal;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.accounting.budget.Budget;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetItem;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetItemType;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

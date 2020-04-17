@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.manufacturing.mrp.impl;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent;
 import org.abchip.mimo.biz.model.manufacturing.mrp.MrpEventType;
 import org.abchip.mimo.biz.model.manufacturing.mrp.MrpPackage;

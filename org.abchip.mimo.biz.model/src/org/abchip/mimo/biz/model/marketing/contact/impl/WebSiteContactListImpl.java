@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.marketing.contact.impl;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.marketing.contact.ContactList;
 import org.abchip.mimo.biz.model.marketing.contact.ContactPackage;
 import org.abchip.mimo.biz.model.marketing.contact.WebSiteContactList;

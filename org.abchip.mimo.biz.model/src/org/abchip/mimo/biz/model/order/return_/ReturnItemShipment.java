@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.order.return_;
 
 import java.math.BigDecimal;
-
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.shipment.shipment.Shipment;
 
 /**

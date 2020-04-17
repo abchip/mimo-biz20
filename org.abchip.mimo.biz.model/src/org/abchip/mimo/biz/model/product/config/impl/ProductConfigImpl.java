@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.product.config.impl;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.config.ConfigPackage;
 import org.abchip.mimo.biz.model.product.config.ProductConfig;
 import org.abchip.mimo.biz.model.product.config.ProductConfigItem;

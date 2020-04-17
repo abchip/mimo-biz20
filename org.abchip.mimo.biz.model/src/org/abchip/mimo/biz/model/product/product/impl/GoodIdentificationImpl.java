@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.product.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.product.product.GoodIdentification;
 import org.abchip.mimo.biz.model.product.product.GoodIdentificationType;
 import org.abchip.mimo.biz.model.product.product.Product;

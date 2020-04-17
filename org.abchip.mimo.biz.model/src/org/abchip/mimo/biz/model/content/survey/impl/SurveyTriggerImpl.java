@@ -9,11 +9,11 @@ package org.abchip.mimo.biz.model.content.survey.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.content.survey.Survey;
 import org.abchip.mimo.biz.model.content.survey.SurveyApplType;
 import org.abchip.mimo.biz.model.content.survey.SurveyPackage;
 import org.abchip.mimo.biz.model.content.survey.SurveyTrigger;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

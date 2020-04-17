@@ -9,12 +9,12 @@ package org.abchip.mimo.biz.model.accounting.invoice.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceContent;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceContentType;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage;
 import org.abchip.mimo.biz.model.content.content.Content;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.manufacturing.mrp.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.manufacturing.mrp.MrpEventType;
 import org.abchip.mimo.biz.model.manufacturing.mrp.MrpPackage;
 import org.eclipse.emf.ecore.EClass;

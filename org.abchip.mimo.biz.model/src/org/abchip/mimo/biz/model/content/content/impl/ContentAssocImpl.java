@@ -9,13 +9,13 @@ package org.abchip.mimo.biz.model.content.content.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.datasource.DataSource;
 import org.abchip.mimo.biz.model.content.content.Content;
 import org.abchip.mimo.biz.model.content.content.ContentAssoc;
 import org.abchip.mimo.biz.model.content.content.ContentAssocPredicate;
 import org.abchip.mimo.biz.model.content.content.ContentAssocType;
 import org.abchip.mimo.biz.model.content.content.ContentPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.eclipse.emf.ecore.EClass;
 

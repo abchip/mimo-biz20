@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.service.schedule.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.service.schedule.JobManagerLock;
 import org.abchip.mimo.biz.model.service.schedule.SchedulePackage;
 import org.eclipse.emf.ecore.EClass;

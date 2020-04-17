@@ -11,6 +11,7 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.accounting.DebitCreditFlag;
 import org.abchip.mimo.biz.model.accounting.ledger.AcctgTrans;
 import org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntry;
@@ -21,7 +22,6 @@ import org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage;
 import org.abchip.mimo.biz.model.accounting.ledger.SettlementTerm;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.uom.Uom;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItem;

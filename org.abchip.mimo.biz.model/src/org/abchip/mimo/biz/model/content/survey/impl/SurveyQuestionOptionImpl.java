@@ -9,10 +9,10 @@ package org.abchip.mimo.biz.model.content.survey.impl;
 
 import java.math.BigDecimal;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.content.survey.SurveyPackage;
 import org.abchip.mimo.biz.model.content.survey.SurveyQuestion;
 import org.abchip.mimo.biz.model.content.survey.SurveyQuestionOption;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

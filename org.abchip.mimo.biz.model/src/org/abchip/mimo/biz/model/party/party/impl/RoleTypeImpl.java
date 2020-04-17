@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.party.party.impl;
 
 import java.util.List;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.contact.ValidContactMechRole;
 import org.abchip.mimo.biz.model.party.party.PartyPackage;
 import org.abchip.mimo.biz.model.party.party.RoleType;

@@ -7,11 +7,11 @@
  */
 package org.abchip.mimo.biz.model.humanres.ability.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.humanres.ability.AbilityPackage;
 import org.abchip.mimo.biz.model.humanres.ability.PerfRatingType;
 import org.abchip.mimo.biz.model.humanres.ability.PerfReviewItem;
 import org.abchip.mimo.biz.model.humanres.ability.PerfReviewItemType;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.eclipse.emf.ecore.EClass;
 

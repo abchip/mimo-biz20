@@ -9,11 +9,11 @@ package org.abchip.mimo.biz.model.humanres.position.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.humanres.position.EmplPositionClassType;
 import org.abchip.mimo.biz.model.humanres.position.EmplPositionType;
 import org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeClass;
 import org.abchip.mimo.biz.model.humanres.position.PositionPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

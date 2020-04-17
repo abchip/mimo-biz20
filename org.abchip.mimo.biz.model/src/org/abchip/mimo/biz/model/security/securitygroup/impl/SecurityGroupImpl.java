@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.security.securitygroup.impl;
 
 import java.util.List;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.security.securitygroup.ProtectedView;
 import org.abchip.mimo.biz.model.security.securitygroup.SecurityGroup;
 import org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage;

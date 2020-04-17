@@ -9,11 +9,11 @@ package org.abchip.mimo.biz.model.accounting.payment.impl;
 
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodTypeGlAccount;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

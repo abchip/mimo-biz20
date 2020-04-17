@@ -5,70 +5,50 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.model.impl;
+package org.abchip.mimo.biz.impl;
 
 import java.util.Date;
 
-import org.abchip.mimo.biz.model.BizEntity;
-import org.abchip.mimo.biz.model.BizEntityType;
-import org.abchip.mimo.biz.model.BizEntityTyped;
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.biz.BizEntityType;
+import org.abchip.mimo.biz.BizEntityTyped;
+import org.abchip.mimo.biz.BizPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityTypeImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Biz Entity Type</b></em>'.
+ * An implementation of the model object '<em><b>Biz Entity Typed</b></em>'.
  * <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizEntityTypeImpl#getCreatedStamp <em>Created Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizEntityTypeImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizEntityTypeImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizEntityTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizEntityTypedImpl#getCreatedStamp <em>Created Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizEntityTypedImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizEntityTypedImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizEntityTypedImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  * </ul>
  *
  * @generated
  */
-public abstract class BizEntityTypeImpl<E extends BizEntityTyped<?>> extends EntityTypeImpl<E> implements BizEntityType<E> {
+public abstract class BizEntityTypedImpl<T extends BizEntityType<?>> extends EntityTypedImpl<T> implements BizEntityTyped<T> {
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected BizEntityTypeImpl() {
+	protected BizEntityTypedImpl() {
 		super();
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated NOT
-	 */
-	@Override
-	public String getText() {
-		
-		String textFormula = this.isa().getTextFormula();
-		if(textFormula == null) 
-			return null;
-		
-		StringBuffer sb = new StringBuffer();
-		
-		String[] tokens = textFormula.split("+");
-		for(String token: tokens) {
-			sb.append(token);
-		}
-		return sb.toString();
-	}
-	
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -76,7 +56,7 @@ public abstract class BizEntityTypeImpl<E extends BizEntityTyped<?>> extends Ent
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return BizPackage.Literals.BIZ_ENTITY_TYPE;
+		return BizPackage.Literals.BIZ_ENTITY_TYPED;
 	}
 
 	/**
@@ -84,15 +64,9 @@ public abstract class BizEntityTypeImpl<E extends BizEntityTyped<?>> extends Ent
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 1;
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return ESTATIC_FEATURE_COUNT;
+		return 0;
 	}
 
 	/**
@@ -184,10 +158,10 @@ public abstract class BizEntityTypeImpl<E extends BizEntityTyped<?>> extends Ent
 	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
 		if (baseClass == EntityInfo.class) {
 			switch (derivedFeatureID) {
-				case BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP: return EntityPackage.ENTITY_INFO__CREATED_STAMP;
-				case BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP: return EntityPackage.ENTITY_INFO__CREATED_TX_STAMP;
-				case BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP;
-				case BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP;
+				case BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP: return EntityPackage.ENTITY_INFO__CREATED_STAMP;
+				case BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP: return EntityPackage.ENTITY_INFO__CREATED_TX_STAMP;
+				case BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP;
+				case BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP;
 				default: return -1;
 			}
 		}
@@ -208,10 +182,10 @@ public abstract class BizEntityTypeImpl<E extends BizEntityTyped<?>> extends Ent
 	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
 		if (baseClass == EntityInfo.class) {
 			switch (baseFeatureID) {
-				case EntityPackage.ENTITY_INFO__CREATED_STAMP: return BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
-				case EntityPackage.ENTITY_INFO__CREATED_TX_STAMP: return BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
-				case EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP: return BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
-				case EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP: return BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+				case EntityPackage.ENTITY_INFO__CREATED_STAMP: return BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+				case EntityPackage.ENTITY_INFO__CREATED_TX_STAMP: return BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP: return BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP: return BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
 				default: return -1;
 			}
 		}
@@ -223,4 +197,4 @@ public abstract class BizEntityTypeImpl<E extends BizEntityTyped<?>> extends Ent
 		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
-} //BizEntityTypeImpl
+} //BizEntityTypedImpl

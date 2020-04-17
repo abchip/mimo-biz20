@@ -7,9 +7,9 @@
  */
 package org.abchip.mimo.biz.model.accounting.tax.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityCategory;
 import org.abchip.mimo.biz.model.accounting.tax.TaxPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.category.ProductCategory;
 import org.eclipse.emf.ecore.EClass;
 

@@ -9,10 +9,10 @@ package org.abchip.mimo.biz.model.accounting.finaccount.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccount;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccountRole;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.eclipse.emf.ecore.EClass;

@@ -11,9 +11,9 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.humanres.ability.SkillType;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.order.quote.Quote;
 import org.abchip.mimo.biz.model.order.quote.QuoteItem;
 import org.abchip.mimo.biz.model.order.quote.QuotePackage;

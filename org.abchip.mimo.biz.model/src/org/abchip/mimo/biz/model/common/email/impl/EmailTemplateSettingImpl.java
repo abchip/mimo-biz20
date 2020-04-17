@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.common.email.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.email.EmailPackage;
 import org.abchip.mimo.biz.model.common.email.EmailTemplateSetting;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

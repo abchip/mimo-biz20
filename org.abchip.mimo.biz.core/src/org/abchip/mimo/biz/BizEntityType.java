@@ -5,7 +5,7 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.model;
+package org.abchip.mimo.biz;
 
 import org.abchip.mimo.entity.EntityType;
 
@@ -15,7 +15,7 @@ import org.abchip.mimo.entity.EntityType;
  * <!-- end-user-doc -->
  *
  *
- * @see org.abchip.mimo.biz.model.BizPackage#getBizEntityType()
+ * @see org.abchip.mimo.biz.BizPackage#getBizEntityType()
  * @model abstract="true"
  * @generated
  */

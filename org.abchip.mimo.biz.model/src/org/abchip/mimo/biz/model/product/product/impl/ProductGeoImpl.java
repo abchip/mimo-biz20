@@ -7,9 +7,9 @@
  */
 package org.abchip.mimo.biz.model.product.product.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.geo.Geo;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.model.product.product.ProductGeo;
 import org.abchip.mimo.biz.model.product.product.ProductPackage;

@@ -8,9 +8,11 @@
 package org.abchip.mimo.biz.model.shipment.shipment;
 
 import java.math.BigDecimal;
+
 import java.util.Date;
 
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
+
 import org.abchip.mimo.biz.model.common.uom.Uom;
 
 /**
@@ -43,10 +45,6 @@ public interface ShipmentPackage extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Shipment Id</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Shipment Id</em>' reference.
 	 * @see #setShipmentId(Shipment)
@@ -70,10 +68,6 @@ public interface ShipmentPackage extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Shipment Package Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Package Seq Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Shipment Package Seq Id</em>' attribute.
 	 * @see #setShipmentPackageSeqId(String)
@@ -98,10 +92,6 @@ public interface ShipmentPackage extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Box Height</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Box Height</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Box Height</em>' attribute.
 	 * @see #setBoxHeight(BigDecimal)
@@ -125,10 +115,6 @@ public interface ShipmentPackage extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Box Length</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Box Length</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Box Length</em>' attribute.
 	 * @see #setBoxLength(BigDecimal)
@@ -152,10 +138,6 @@ public interface ShipmentPackage extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Box Width</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Box Width</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Box Width</em>' attribute.
 	 * @see #setBoxWidth(BigDecimal)
@@ -179,10 +161,6 @@ public interface ShipmentPackage extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Date Created</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Date Created</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Date Created</em>' attribute.
 	 * @see #setDateCreated(Date)
@@ -205,10 +183,6 @@ public interface ShipmentPackage extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Dimension Uom Id</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Dimension Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Dimension Uom Id</em>' reference.
 	 * @see #setDimensionUomId(Uom)
@@ -232,10 +206,6 @@ public interface ShipmentPackage extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Insured Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Insured Value</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Insured Value</em>' attribute.
 	 * @see #setInsuredValue(BigDecimal)
@@ -258,10 +228,6 @@ public interface ShipmentPackage extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Shipment Box Type Id</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Shipment Box Type Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Shipment Box Type Id</em>' reference.
 	 * @see #setShipmentBoxTypeId(ShipmentBoxType)
@@ -284,10 +250,6 @@ public interface ShipmentPackage extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Weight</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Weight</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Weight</em>' attribute.
 	 * @see #setWeight(BigDecimal)
@@ -310,10 +272,6 @@ public interface ShipmentPackage extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Weight Uom Id</b></em>' reference.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Weight Uom Id</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Weight Uom Id</em>' reference.
 	 * @see #setWeightUomId(Uom)

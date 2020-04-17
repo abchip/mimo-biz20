@@ -40,7 +40,7 @@ public interface CommonPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.abchip.org/mimo/biz/common";
+	String eNS_URI = "http://www.abchip.org/mimo/biz/model/common";
 
 	/**
 	 * The package namespace name.

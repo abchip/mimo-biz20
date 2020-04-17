@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.entity.tenant.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.entity.tenant.Tenant;
 import org.abchip.mimo.biz.model.entity.tenant.TenantDomainName;
 import org.abchip.mimo.biz.model.entity.tenant.TenantPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

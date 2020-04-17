@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.security.cert.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.security.cert.CertPackage;
 import org.abchip.mimo.biz.model.security.cert.X509IssuerProvision;
 import org.eclipse.emf.ecore.EClass;

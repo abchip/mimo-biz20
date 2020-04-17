@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.marketing.campaign.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityNoteImpl;
+import org.abchip.mimo.biz.impl.BizEntityNoteImpl;
 import org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage;
 import org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaign;
 import org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignNote;

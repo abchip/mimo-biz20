@@ -9,8 +9,7 @@ package org.abchip.mimo.biz.model.product.product.impl;
 
 import java.util.Date;
 import java.util.List;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.product.ProductPackage;
 import org.abchip.mimo.biz.model.product.product.ProductSearchConstraint;
 import org.abchip.mimo.biz.model.product.product.ProductSearchResult;

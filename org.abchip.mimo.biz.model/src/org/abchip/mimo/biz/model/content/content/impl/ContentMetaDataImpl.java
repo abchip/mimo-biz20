@@ -7,12 +7,12 @@
  */
 package org.abchip.mimo.biz.model.content.content.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.datasource.DataSource;
 import org.abchip.mimo.biz.model.content.content.Content;
 import org.abchip.mimo.biz.model.content.content.ContentMetaData;
 import org.abchip.mimo.biz.model.content.content.ContentPackage;
 import org.abchip.mimo.biz.model.content.data.MetaDataPredicate;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

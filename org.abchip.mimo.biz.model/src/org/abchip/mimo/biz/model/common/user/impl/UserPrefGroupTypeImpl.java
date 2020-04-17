@@ -7,9 +7,9 @@
  */
 package org.abchip.mimo.biz.model.common.user.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.user.UserPackage;
 import org.abchip.mimo.biz.model.common.user.UserPrefGroupType;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

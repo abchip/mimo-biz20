@@ -10,11 +10,11 @@ package org.abchip.mimo.biz.model.accounting.invoice.impl;
 import java.math.BigDecimal;
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceTerm;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceTermAttribute;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.agreement.TermType;
 import org.eclipse.emf.ecore.EClass;
 

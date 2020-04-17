@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.workeffort.workeffort.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityNoteImpl;
+import org.abchip.mimo.biz.impl.BizEntityNoteImpl;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortNote;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;

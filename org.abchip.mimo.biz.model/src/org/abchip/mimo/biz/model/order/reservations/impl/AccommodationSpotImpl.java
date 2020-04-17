@@ -7,9 +7,9 @@
  */
 package org.abchip.mimo.biz.model.order.reservations.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationClass;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.order.reservations.AccommodationSpot;
 import org.abchip.mimo.biz.model.order.reservations.ReservationsPackage;
 import org.eclipse.emf.ecore.EClass;

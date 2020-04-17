@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.product.facility.impl;
 
 import java.math.BigDecimal;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.product.facility.FacilityPackage;
 import org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation;

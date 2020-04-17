@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.accounting.ledger;
 
 import java.math.BigDecimal;
-
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.period.CustomTimePeriod;
 import org.abchip.mimo.biz.model.party.party.Party;
 

@@ -10,12 +10,12 @@ package org.abchip.mimo.biz.model.accounting.payment.impl;
 import java.math.BigDecimal;
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.payment.BillingAccount;
 import org.abchip.mimo.biz.model.accounting.payment.BillingAccountTerm;
 import org.abchip.mimo.biz.model.accounting.payment.BillingAccountTermAttr;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentPackage;
 import org.abchip.mimo.biz.model.common.uom.Uom;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.agreement.TermType;
 import org.eclipse.emf.ecore.EClass;
 

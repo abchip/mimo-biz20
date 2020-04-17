@@ -7,9 +7,9 @@
  */
 package org.abchip.mimo.biz.model.entity.crypto.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.entity.crypto.CryptoPackage;
 import org.abchip.mimo.biz.model.entity.crypto.EntityKeyStore;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

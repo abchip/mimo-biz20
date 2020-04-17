@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.party.communication.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEvent;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEventPrpTyp;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEventPurpose;

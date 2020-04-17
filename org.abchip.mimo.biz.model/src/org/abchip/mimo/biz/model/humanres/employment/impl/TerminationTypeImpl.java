@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.humanres.employment.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.humanres.employment.Employment;
 import org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage;
 import org.abchip.mimo.biz.model.humanres.employment.TerminationType;
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

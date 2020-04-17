@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.humanres.employment;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.BizEntityTyped;
+import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.humanres.position.EmplPosition;
 import org.abchip.mimo.biz.model.humanres.recruitment.JobRequisition;

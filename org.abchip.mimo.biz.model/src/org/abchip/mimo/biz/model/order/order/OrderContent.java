@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.order.order;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.BizEntityTyped;
+import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.content.content.Content;
 
 /**

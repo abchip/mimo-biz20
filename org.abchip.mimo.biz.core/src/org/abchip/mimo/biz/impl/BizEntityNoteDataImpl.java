@@ -5,12 +5,12 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.model.impl;
+package org.abchip.mimo.biz.impl;
 
 import java.util.Date;
 
-import org.abchip.mimo.biz.model.BizEntityNoteData;
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizEntityNoteData;
+import org.abchip.mimo.biz.BizPackage;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -21,14 +21,14 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizEntityNoteDataImpl#getNoteId <em>Note Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizEntityNoteDataImpl#getMoreInfoItemId <em>More Info Item Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizEntityNoteDataImpl#getMoreInfoItemName <em>More Info Item Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizEntityNoteDataImpl#getMoreInfoUrl <em>More Info Url</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizEntityNoteDataImpl#getNoteDateTime <em>Note Date Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizEntityNoteDataImpl#getNoteInfo <em>Note Info</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizEntityNoteDataImpl#getNoteName <em>Note Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizEntityNoteDataImpl#getNoteParty <em>Note Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizEntityNoteDataImpl#getNoteId <em>Note Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizEntityNoteDataImpl#getMoreInfoItemId <em>More Info Item Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizEntityNoteDataImpl#getMoreInfoItemName <em>More Info Item Name</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizEntityNoteDataImpl#getMoreInfoUrl <em>More Info Url</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizEntityNoteDataImpl#getNoteDateTime <em>Note Date Time</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizEntityNoteDataImpl#getNoteInfo <em>Note Info</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizEntityNoteDataImpl#getNoteName <em>Note Name</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizEntityNoteDataImpl#getNoteParty <em>Note Party</em>}</li>
  * </ul>
  *
  * @generated

@@ -5,7 +5,7 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.model;
+package org.abchip.mimo.biz;
 
 import java.util.Date;
 
@@ -18,17 +18,17 @@ import java.util.Date;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.BizEntityNoteData#getNoteId <em>Note Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.BizEntityNoteData#getMoreInfoItemId <em>More Info Item Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.BizEntityNoteData#getMoreInfoItemName <em>More Info Item Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.BizEntityNoteData#getMoreInfoUrl <em>More Info Url</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.BizEntityNoteData#getNoteDateTime <em>Note Date Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.BizEntityNoteData#getNoteInfo <em>Note Info</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.BizEntityNoteData#getNoteName <em>Note Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.BizEntityNoteData#getNoteParty <em>Note Party</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.BizEntityNoteData#getNoteId <em>Note Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.BizEntityNoteData#getMoreInfoItemId <em>More Info Item Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.BizEntityNoteData#getMoreInfoItemName <em>More Info Item Name</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.BizEntityNoteData#getMoreInfoUrl <em>More Info Url</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.BizEntityNoteData#getNoteDateTime <em>Note Date Time</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.BizEntityNoteData#getNoteInfo <em>Note Info</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.BizEntityNoteData#getNoteName <em>Note Name</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.BizEntityNoteData#getNoteParty <em>Note Party</em>}</li>
  * </ul>
  *
- * @see org.abchip.mimo.biz.model.BizPackage#getBizEntityNoteData()
+ * @see org.abchip.mimo.biz.BizPackage#getBizEntityNoteData()
  * @model abstract="true"
  * @generated
  */
@@ -43,14 +43,14 @@ public interface BizEntityNoteData extends BizEntity {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Note Id</em>' attribute.
 	 * @see #setNoteId(String)
-	 * @see org.abchip.mimo.biz.model.BizPackage#getBizEntityNoteData_NoteId()
+	 * @see org.abchip.mimo.biz.BizPackage#getBizEntityNoteData_NoteId()
 	 * @model id="true" required="true"
 	 * @generated
 	 */
 	String getNoteId();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.BizEntityNoteData#getNoteId <em>Note Id</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.BizEntityNoteData#getNoteId <em>Note Id</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Note Id</em>' attribute.
@@ -69,14 +69,14 @@ public interface BizEntityNoteData extends BizEntity {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>More Info Item Id</em>' attribute.
 	 * @see #setMoreInfoItemId(String)
-	 * @see org.abchip.mimo.biz.model.BizPackage#getBizEntityNoteData_MoreInfoItemId()
+	 * @see org.abchip.mimo.biz.BizPackage#getBizEntityNoteData_MoreInfoItemId()
 	 * @model
 	 * @generated
 	 */
 	String getMoreInfoItemId();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.BizEntityNoteData#getMoreInfoItemId <em>More Info Item Id</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.BizEntityNoteData#getMoreInfoItemId <em>More Info Item Id</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>More Info Item Id</em>' attribute.
@@ -95,14 +95,14 @@ public interface BizEntityNoteData extends BizEntity {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>More Info Item Name</em>' attribute.
 	 * @see #setMoreInfoItemName(String)
-	 * @see org.abchip.mimo.biz.model.BizPackage#getBizEntityNoteData_MoreInfoItemName()
+	 * @see org.abchip.mimo.biz.BizPackage#getBizEntityNoteData_MoreInfoItemName()
 	 * @model
 	 * @generated
 	 */
 	String getMoreInfoItemName();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.BizEntityNoteData#getMoreInfoItemName <em>More Info Item Name</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.BizEntityNoteData#getMoreInfoItemName <em>More Info Item Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>More Info Item Name</em>' attribute.
@@ -121,14 +121,14 @@ public interface BizEntityNoteData extends BizEntity {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>More Info Url</em>' attribute.
 	 * @see #setMoreInfoUrl(String)
-	 * @see org.abchip.mimo.biz.model.BizPackage#getBizEntityNoteData_MoreInfoUrl()
+	 * @see org.abchip.mimo.biz.BizPackage#getBizEntityNoteData_MoreInfoUrl()
 	 * @model
 	 * @generated
 	 */
 	String getMoreInfoUrl();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.BizEntityNoteData#getMoreInfoUrl <em>More Info Url</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.BizEntityNoteData#getMoreInfoUrl <em>More Info Url</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>More Info Url</em>' attribute.
@@ -147,14 +147,14 @@ public interface BizEntityNoteData extends BizEntity {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Note Date Time</em>' attribute.
 	 * @see #setNoteDateTime(Date)
-	 * @see org.abchip.mimo.biz.model.BizPackage#getBizEntityNoteData_NoteDateTime()
+	 * @see org.abchip.mimo.biz.BizPackage#getBizEntityNoteData_NoteDateTime()
 	 * @model
 	 * @generated
 	 */
 	Date getNoteDateTime();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.BizEntityNoteData#getNoteDateTime <em>Note Date Time</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.BizEntityNoteData#getNoteDateTime <em>Note Date Time</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Note Date Time</em>' attribute.
@@ -173,14 +173,14 @@ public interface BizEntityNoteData extends BizEntity {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Note Info</em>' attribute.
 	 * @see #setNoteInfo(String)
-	 * @see org.abchip.mimo.biz.model.BizPackage#getBizEntityNoteData_NoteInfo()
+	 * @see org.abchip.mimo.biz.BizPackage#getBizEntityNoteData_NoteInfo()
 	 * @model
 	 * @generated
 	 */
 	String getNoteInfo();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.BizEntityNoteData#getNoteInfo <em>Note Info</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.BizEntityNoteData#getNoteInfo <em>Note Info</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Note Info</em>' attribute.
@@ -199,14 +199,14 @@ public interface BizEntityNoteData extends BizEntity {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Note Name</em>' attribute.
 	 * @see #setNoteName(String)
-	 * @see org.abchip.mimo.biz.model.BizPackage#getBizEntityNoteData_NoteName()
+	 * @see org.abchip.mimo.biz.BizPackage#getBizEntityNoteData_NoteName()
 	 * @model
 	 * @generated
 	 */
 	String getNoteName();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.BizEntityNoteData#getNoteName <em>Note Name</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.BizEntityNoteData#getNoteName <em>Note Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Note Name</em>' attribute.
@@ -225,14 +225,14 @@ public interface BizEntityNoteData extends BizEntity {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Note Party</em>' attribute.
 	 * @see #setNoteParty(String)
-	 * @see org.abchip.mimo.biz.model.BizPackage#getBizEntityNoteData_NoteParty()
+	 * @see org.abchip.mimo.biz.BizPackage#getBizEntityNoteData_NoteParty()
 	 * @model annotation="mimo-ent-domain frame='Party'"
 	 * @generated
 	 */
 	String getNoteParty();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.BizEntityNoteData#getNoteParty <em>Note Party</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.BizEntityNoteData#getNoteParty <em>Note Party</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Note Party</em>' attribute.

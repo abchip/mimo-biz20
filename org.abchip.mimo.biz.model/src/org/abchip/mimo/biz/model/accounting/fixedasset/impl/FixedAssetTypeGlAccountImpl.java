@@ -7,12 +7,12 @@
  */
 package org.abchip.mimo.biz.model.accounting.fixedasset.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetType;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetTypeGlAccount;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.eclipse.emf.ecore.EClass;
 

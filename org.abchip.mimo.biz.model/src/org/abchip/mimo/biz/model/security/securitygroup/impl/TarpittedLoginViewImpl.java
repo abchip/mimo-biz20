@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.security.securitygroup.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage;
 import org.abchip.mimo.biz.model.security.securitygroup.TarpittedLoginView;
 import org.eclipse.emf.ecore.EClass;

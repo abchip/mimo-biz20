@@ -9,12 +9,12 @@ package org.abchip.mimo.biz.model.common.geo.impl;
 
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.accounting.tax.TaxAuthority;
 import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.common.geo.GeoAssoc;
 import org.abchip.mimo.biz.model.common.geo.GeoPackage;
 import org.abchip.mimo.biz.model.common.geo.GeoType;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

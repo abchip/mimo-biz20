@@ -5,7 +5,7 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.model;
+package org.abchip.mimo.biz;
 
 import java.util.List;
 import org.abchip.mimo.application.ApplicationComponent;
@@ -19,12 +19,12 @@ import org.abchip.mimo.application.ApplicationComponent;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.BizComponent#getPlugin <em>Plugin</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.BizComponent#getBizModules <em>Biz Modules</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.BizComponent#getModulesDir <em>Modules Dir</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.BizComponent#getPlugin <em>Plugin</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.BizComponent#getBizModules <em>Biz Modules</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.BizComponent#getModulesDir <em>Modules Dir</em>}</li>
  * </ul>
  *
- * @see org.abchip.mimo.biz.model.BizPackage#getBizComponent()
+ * @see org.abchip.mimo.biz.BizPackage#getBizComponent()
  * @model
  * @generated
  */
@@ -40,14 +40,14 @@ public interface BizComponent extends ApplicationComponent {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Plugin</em>' attribute.
 	 * @see #setPlugin(String)
-	 * @see org.abchip.mimo.biz.model.BizPackage#getBizComponent_Plugin()
+	 * @see org.abchip.mimo.biz.BizPackage#getBizComponent_Plugin()
 	 * @model required="true"
 	 * @generated
 	 */
 	String getPlugin();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.BizComponent#getPlugin <em>Plugin</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.BizComponent#getPlugin <em>Plugin</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Plugin</em>' attribute.
@@ -58,7 +58,7 @@ public interface BizComponent extends ApplicationComponent {
 
 	/**
 	 * Returns the value of the '<em><b>Biz Modules</b></em>' containment reference list.
-	 * The list contents are of type {@link org.abchip.mimo.biz.model.BizModule}.
+	 * The list contents are of type {@link org.abchip.mimo.biz.BizModule}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Biz Modules</em>' containment reference list isn't clear,
@@ -66,7 +66,7 @@ public interface BizComponent extends ApplicationComponent {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Biz Modules</em>' containment reference list.
-	 * @see org.abchip.mimo.biz.model.BizPackage#getBizComponent_BizModules()
+	 * @see org.abchip.mimo.biz.BizPackage#getBizComponent_BizModules()
 	 * @model containment="true" resolveProxies="true"
 	 * @generated
 	 */
@@ -82,14 +82,14 @@ public interface BizComponent extends ApplicationComponent {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Modules Dir</em>' attribute.
 	 * @see #setModulesDir(String)
-	 * @see org.abchip.mimo.biz.model.BizPackage#getBizComponent_ModulesDir()
+	 * @see org.abchip.mimo.biz.BizPackage#getBizComponent_ModulesDir()
 	 * @model
 	 * @generated
 	 */
 	String getModulesDir();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.BizComponent#getModulesDir <em>Modules Dir</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.BizComponent#getModulesDir <em>Modules Dir</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Modules Dir</em>' attribute.

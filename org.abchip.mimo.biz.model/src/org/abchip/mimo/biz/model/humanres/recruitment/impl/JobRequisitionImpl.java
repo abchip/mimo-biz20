@@ -9,12 +9,12 @@ package org.abchip.mimo.biz.model.humanres.recruitment.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.Gender;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.humanres.ability.SkillType;
 import org.abchip.mimo.biz.model.humanres.recruitment.JobRequisition;
 import org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

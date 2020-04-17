@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.order.return_;
 
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEvent;
 
 /**

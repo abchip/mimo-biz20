@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.product.subscription.impl;
 
 import java.util.List;
-
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.product.subscription.Subscription;
 import org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage;
 import org.abchip.mimo.biz.model.product.subscription.SubscriptionType;

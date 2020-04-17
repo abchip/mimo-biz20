@@ -10,11 +10,11 @@ package org.abchip.mimo.biz.model.content.document.impl;
 import java.util.Date;
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.content.document.Document;
 import org.abchip.mimo.biz.model.content.document.DocumentAttribute;
 import org.abchip.mimo.biz.model.content.document.DocumentPackage;
 import org.abchip.mimo.biz.model.content.document.DocumentType;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

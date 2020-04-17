@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.humanres.trainings;
 
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -42,7 +42,7 @@ public interface TrainingsPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.abchip.org/mimo/biz/humanres/trainings";
+	String eNS_URI = "http://www.abchip.org/mimo/biz/model/humanres/trainings";
 
 	/**
 	 * The package namespace name.

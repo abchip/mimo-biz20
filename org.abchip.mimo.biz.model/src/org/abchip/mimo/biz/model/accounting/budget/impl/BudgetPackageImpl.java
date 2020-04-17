@@ -8,7 +8,7 @@
 package org.abchip.mimo.biz.model.accounting.budget.impl;
 
 import org.abchip.mimo.MimoPackage;
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizPackage;
 import org.abchip.mimo.biz.model.accounting.AccountingPackage;
 import org.abchip.mimo.biz.model.accounting.budget.Budget;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetAttribute;
@@ -118,7 +118,6 @@ import org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage;
 import org.abchip.mimo.biz.model.humanres.recruitment.impl.RecruitmentPackageImpl;
 import org.abchip.mimo.biz.model.humanres.trainings.TrainingsPackage;
 import org.abchip.mimo.biz.model.humanres.trainings.impl.TrainingsPackageImpl;
-import org.abchip.mimo.biz.model.impl.BizPackageImpl;
 import org.abchip.mimo.biz.model.manufacturing.bom.BomPackage;
 import org.abchip.mimo.biz.model.manufacturing.bom.impl.BomPackageImpl;
 import org.abchip.mimo.biz.model.manufacturing.mrp.MrpPackage;
@@ -393,12 +392,11 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		isInited = true;
 
 		// Initialize simple dependencies
+		BizPackage.eINSTANCE.eClass();
 		MimoPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
-		BizPackageImpl theBizPackage = (BizPackageImpl)(registeredPackage instanceof BizPackageImpl ? registeredPackage : BizPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI);
 		AccountingPackageImpl theAccountingPackage = (AccountingPackageImpl)(registeredPackage instanceof AccountingPackageImpl ? registeredPackage : AccountingPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(FinaccountPackage.eNS_URI);
 		FinaccountPackageImpl theFinaccountPackage = (FinaccountPackageImpl)(registeredPackage instanceof FinaccountPackageImpl ? registeredPackage : FinaccountPackage.eINSTANCE);
@@ -494,6 +492,12 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		MrpPackageImpl theMrpPackage = (MrpPackageImpl)(registeredPackage instanceof MrpPackageImpl ? registeredPackage : MrpPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(TechdataPackage.eNS_URI);
 		TechdataPackageImpl theTechdataPackage = (TechdataPackageImpl)(registeredPackage instanceof TechdataPackageImpl ? registeredPackage : TechdataPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BomPackage.eNS_URI);
+		BomPackageImpl theBomPackage_1 = (BomPackageImpl)(registeredPackage instanceof BomPackageImpl ? registeredPackage : BomPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(MrpPackage.eNS_URI);
+		MrpPackageImpl theMrpPackage_1 = (MrpPackageImpl)(registeredPackage instanceof MrpPackageImpl ? registeredPackage : MrpPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(TechdataPackage.eNS_URI);
+		TechdataPackageImpl theTechdataPackage_1 = (TechdataPackageImpl)(registeredPackage instanceof TechdataPackageImpl ? registeredPackage : TechdataPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CampaignPackage.eNS_URI);
 		CampaignPackageImpl theCampaignPackage = (CampaignPackageImpl)(registeredPackage instanceof CampaignPackageImpl ? registeredPackage : CampaignPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ContactPackage.eNS_URI);
@@ -589,7 +593,6 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 
 		// Create package meta-data objects
 		theBudgetPackage.createPackageContents();
-		theBizPackage.createPackageContents();
 		theAccountingPackage.createPackageContents();
 		theFinaccountPackage.createPackageContents();
 		theFixedassetPackage.createPackageContents();
@@ -638,6 +641,9 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		theBomPackage.createPackageContents();
 		theMrpPackage.createPackageContents();
 		theTechdataPackage.createPackageContents();
+		theBomPackage_1.createPackageContents();
+		theMrpPackage_1.createPackageContents();
+		theTechdataPackage_1.createPackageContents();
 		theCampaignPackage.createPackageContents();
 		theContactPackage.createPackageContents();
 		theOpportunityPackage.createPackageContents();
@@ -687,7 +693,6 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 
 		// Initialize created meta-data
 		theBudgetPackage.initializePackageContents();
-		theBizPackage.initializePackageContents();
 		theAccountingPackage.initializePackageContents();
 		theFinaccountPackage.initializePackageContents();
 		theFixedassetPackage.initializePackageContents();
@@ -736,6 +741,9 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		theBomPackage.initializePackageContents();
 		theMrpPackage.initializePackageContents();
 		theTechdataPackage.initializePackageContents();
+		theBomPackage_1.initializePackageContents();
+		theMrpPackage_1.initializePackageContents();
+		theTechdataPackage_1.initializePackageContents();
 		theCampaignPackage.initializePackageContents();
 		theContactPackage.initializePackageContents();
 		theOpportunityPackage.initializePackageContents();

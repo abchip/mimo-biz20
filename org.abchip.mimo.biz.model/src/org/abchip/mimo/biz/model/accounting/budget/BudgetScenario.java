@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.accounting.budget;
 
 import java.util.List;
-
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 
 /**
  * <!-- begin-user-doc -->

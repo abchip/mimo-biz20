@@ -10,8 +10,8 @@ package org.abchip.mimo.biz.model.security.login.impl;
 import java.util.Date;
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.user.UserPreference;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.security.login.LoginPackage;
 import org.abchip.mimo.biz.model.security.login.UserLogin;

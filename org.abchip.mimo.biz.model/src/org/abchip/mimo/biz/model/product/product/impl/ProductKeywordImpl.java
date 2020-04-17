@@ -7,9 +7,9 @@
  */
 package org.abchip.mimo.biz.model.product.product.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.model.product.product.ProductKeyword;
 import org.abchip.mimo.biz.model.product.product.ProductPackage;

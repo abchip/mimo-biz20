@@ -9,11 +9,11 @@ package org.abchip.mimo.biz.model.humanres.employment.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.humanres.employment.Employment;
 import org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage;
 import org.abchip.mimo.biz.model.humanres.employment.TerminationReason;
 import org.abchip.mimo.biz.model.humanres.employment.TerminationType;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.eclipse.emf.ecore.EClass;
 

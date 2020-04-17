@@ -11,9 +11,9 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.order.requirement.Requirement;
 import org.abchip.mimo.biz.model.order.requirement.RequirementAttribute;
 import org.abchip.mimo.biz.model.order.requirement.RequirementPackage;

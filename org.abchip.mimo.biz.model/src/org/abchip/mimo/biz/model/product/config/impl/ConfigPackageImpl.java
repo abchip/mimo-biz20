@@ -8,7 +8,7 @@
 package org.abchip.mimo.biz.model.product.config.impl;
 
 import org.abchip.mimo.MimoPackage;
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizPackage;
 import org.abchip.mimo.biz.model.accounting.AccountingPackage;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetPackage;
 import org.abchip.mimo.biz.model.accounting.budget.impl.BudgetPackageImpl;
@@ -101,7 +101,6 @@ import org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage;
 import org.abchip.mimo.biz.model.humanres.recruitment.impl.RecruitmentPackageImpl;
 import org.abchip.mimo.biz.model.humanres.trainings.TrainingsPackage;
 import org.abchip.mimo.biz.model.humanres.trainings.impl.TrainingsPackageImpl;
-import org.abchip.mimo.biz.model.impl.BizPackageImpl;
 import org.abchip.mimo.biz.model.manufacturing.bom.BomPackage;
 import org.abchip.mimo.biz.model.manufacturing.bom.impl.BomPackageImpl;
 import org.abchip.mimo.biz.model.manufacturing.mrp.MrpPackage;
@@ -337,12 +336,11 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		isInited = true;
 
 		// Initialize simple dependencies
+		BizPackage.eINSTANCE.eClass();
 		MimoPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
-		BizPackageImpl theBizPackage = (BizPackageImpl)(registeredPackage instanceof BizPackageImpl ? registeredPackage : BizPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI);
 		AccountingPackageImpl theAccountingPackage = (AccountingPackageImpl)(registeredPackage instanceof AccountingPackageImpl ? registeredPackage : AccountingPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BudgetPackage.eNS_URI);
 		BudgetPackageImpl theBudgetPackage = (BudgetPackageImpl)(registeredPackage instanceof BudgetPackageImpl ? registeredPackage : BudgetPackage.eINSTANCE);
@@ -440,6 +438,12 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		MrpPackageImpl theMrpPackage = (MrpPackageImpl)(registeredPackage instanceof MrpPackageImpl ? registeredPackage : MrpPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(TechdataPackage.eNS_URI);
 		TechdataPackageImpl theTechdataPackage = (TechdataPackageImpl)(registeredPackage instanceof TechdataPackageImpl ? registeredPackage : TechdataPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BomPackage.eNS_URI);
+		BomPackageImpl theBomPackage_1 = (BomPackageImpl)(registeredPackage instanceof BomPackageImpl ? registeredPackage : BomPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(MrpPackage.eNS_URI);
+		MrpPackageImpl theMrpPackage_1 = (MrpPackageImpl)(registeredPackage instanceof MrpPackageImpl ? registeredPackage : MrpPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(TechdataPackage.eNS_URI);
+		TechdataPackageImpl theTechdataPackage_1 = (TechdataPackageImpl)(registeredPackage instanceof TechdataPackageImpl ? registeredPackage : TechdataPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CampaignPackage.eNS_URI);
 		CampaignPackageImpl theCampaignPackage = (CampaignPackageImpl)(registeredPackage instanceof CampaignPackageImpl ? registeredPackage : CampaignPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ContactPackage.eNS_URI);
@@ -533,7 +537,6 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 
 		// Create package meta-data objects
 		theConfigPackage.createPackageContents();
-		theBizPackage.createPackageContents();
 		theAccountingPackage.createPackageContents();
 		theBudgetPackage.createPackageContents();
 		theFinaccountPackage.createPackageContents();
@@ -583,6 +586,9 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		theBomPackage.createPackageContents();
 		theMrpPackage.createPackageContents();
 		theTechdataPackage.createPackageContents();
+		theBomPackage_1.createPackageContents();
+		theMrpPackage_1.createPackageContents();
+		theTechdataPackage_1.createPackageContents();
 		theCampaignPackage.createPackageContents();
 		theContactPackage.createPackageContents();
 		theOpportunityPackage.createPackageContents();
@@ -631,7 +637,6 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 
 		// Initialize created meta-data
 		theConfigPackage.initializePackageContents();
-		theBizPackage.initializePackageContents();
 		theAccountingPackage.initializePackageContents();
 		theBudgetPackage.initializePackageContents();
 		theFinaccountPackage.initializePackageContents();
@@ -681,6 +686,9 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		theBomPackage.initializePackageContents();
 		theMrpPackage.initializePackageContents();
 		theTechdataPackage.initializePackageContents();
+		theBomPackage_1.initializePackageContents();
+		theMrpPackage_1.initializePackageContents();
+		theTechdataPackage_1.initializePackageContents();
 		theCampaignPackage.initializePackageContents();
 		theContactPackage.initializePackageContents();
 		theOpportunityPackage.initializePackageContents();
@@ -1676,6 +1684,9 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		initEAttribute(getProductConfigStats_ConfigId(), ecorePackage.getEString(), "configId", null, 1, 1, ProductConfigStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductConfigStats_ConfigTypeId(), ecorePackage.getEString(), "configTypeId", null, 0, 1, ProductConfigStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductConfigStats_NumOfConfs(), ecorePackage.getELong(), "numOfConfs", null, 0, 1, ProductConfigStats.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		// Create resource
+		createResource(eNS_URI);
 
 		// Create annotations
 		// mimo-ent-frame

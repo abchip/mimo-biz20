@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.party.agreement.impl;
 
 import java.math.BigDecimal;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.agreement.Agreement;
 import org.abchip.mimo.biz.model.party.agreement.AgreementPackage;
 import org.abchip.mimo.biz.model.party.agreement.AgreementProductAppl;

@@ -5,15 +5,16 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.model.impl;
+package org.abchip.mimo.biz.impl;
 
-import org.abchip.mimo.biz.model.*;
+import org.abchip.mimo.biz.BizComponent;
+import org.abchip.mimo.biz.BizFactory;
+import org.abchip.mimo.biz.BizModule;
+import org.abchip.mimo.biz.BizPackage;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
-
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
 
 /**

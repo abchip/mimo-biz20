@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.marketing.opportunity.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage;
 import org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity;
 import org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunityQuote;

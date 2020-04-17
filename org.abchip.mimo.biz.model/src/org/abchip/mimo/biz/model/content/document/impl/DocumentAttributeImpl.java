@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.content.document.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.content.document.Document;
 import org.abchip.mimo.biz.model.content.document.DocumentAttribute;
 import org.abchip.mimo.biz.model.content.document.DocumentPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

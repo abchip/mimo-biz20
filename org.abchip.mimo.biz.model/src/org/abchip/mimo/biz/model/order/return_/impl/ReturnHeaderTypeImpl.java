@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.order.return_.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.order.return_.ReturnHeaderType;
 import org.abchip.mimo.biz.model.order.return_.ReturnPackage;
 import org.eclipse.emf.ecore.EClass;

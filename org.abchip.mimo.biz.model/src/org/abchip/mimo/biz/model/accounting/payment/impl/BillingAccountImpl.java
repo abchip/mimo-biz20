@@ -10,10 +10,10 @@ package org.abchip.mimo.biz.model.accounting.payment.impl;
 import java.math.BigDecimal;
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.payment.BillingAccount;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentPackage;
 import org.abchip.mimo.biz.model.common.uom.Uom;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.eclipse.emf.ecore.EClass;
 

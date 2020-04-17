@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.webapp.website;
 
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.content.content.Content;
 
 /**

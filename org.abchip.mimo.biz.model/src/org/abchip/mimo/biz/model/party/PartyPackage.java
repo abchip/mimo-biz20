@@ -40,7 +40,7 @@ public interface PartyPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.abchip.org/mimo/biz/party";
+	String eNS_URI = "http://www.abchip.org/mimo/biz/model/party";
 
 	/**
 	 * The package namespace name.

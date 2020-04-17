@@ -7,11 +7,11 @@
  */
 package org.abchip.mimo.biz.model.accounting.finaccount.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTypeGlAccount;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.eclipse.emf.ecore.EClass;
 

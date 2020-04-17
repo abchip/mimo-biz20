@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.entity.group.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.entity.group.EntityGroup;
 import org.abchip.mimo.biz.model.entity.group.EntityGroupEntry;
 import org.abchip.mimo.biz.model.entity.group.GroupPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

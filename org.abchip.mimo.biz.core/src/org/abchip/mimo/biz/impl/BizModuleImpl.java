@@ -5,11 +5,11 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.model.impl;
+package org.abchip.mimo.biz.impl;
 
 import org.abchip.mimo.application.ModuleStatus;
-import org.abchip.mimo.biz.model.BizModule;
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizModule;
+import org.abchip.mimo.biz.BizPackage;
 import org.abchip.mimo.entity.impl.EntityImpl;
 
 import org.eclipse.emf.ecore.EClass;
@@ -22,8 +22,8 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizModuleImpl#getName <em>Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizModuleImpl#getStatus <em>Status</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizModuleImpl#getName <em>Name</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizModuleImpl#getStatus <em>Status</em>}</li>
  * </ul>
  *
  * @generated

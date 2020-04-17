@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.humanres.employment.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.humanres.employment.EmploymentApp;
 import org.abchip.mimo.biz.model.humanres.employment.EmploymentAppSourceType;
 import org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

@@ -7,11 +7,11 @@
  */
 package org.abchip.mimo.biz.model.content.content.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.content.content.Content;
 import org.abchip.mimo.biz.model.content.content.ContentPackage;
 import org.abchip.mimo.biz.model.content.content.ContentPurpose;
 import org.abchip.mimo.biz.model.content.content.ContentPurposeType;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

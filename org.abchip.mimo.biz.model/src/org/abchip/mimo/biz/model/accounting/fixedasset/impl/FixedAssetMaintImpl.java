@@ -9,12 +9,12 @@ package org.abchip.mimo.biz.model.accounting.fixedasset.impl;
 
 import java.math.BigDecimal;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetMaint;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.uom.Uom;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.order.order.OrderHeader;
 import org.abchip.mimo.biz.model.product.product.ProductMaintType;
 import org.abchip.mimo.biz.model.product.product.ProductMeterType;

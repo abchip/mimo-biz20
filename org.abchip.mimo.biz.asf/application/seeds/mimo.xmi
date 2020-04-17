@@ -3,10 +3,10 @@
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:biz-property="http://www.abchip.org/mimo/biz/common/property"
-    xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/security/securitygroup"
+    xmlns:biz-property="http://www.abchip.org/mimo/biz/model/common/property"
+    xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/model/security/securitygroup"
     xmlns:mimo-ent="http://www.abchip.org/mimo/entity"
-    xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/property ../../../org.abchip.mimo.biz.model/model/biz.ecore#//common/property http://www.abchip.org/mimo/biz/security/securitygroup ../../../org.abchip.mimo.biz.model/model/biz.ecore#//security/securitygroup http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
+    xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/common/property ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//common/property http://www.abchip.org/mimo/biz/model/security/securitygroup ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//security/securitygroup http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
     name="Mimo">
   <contents
       xsi:type="biz-securitygroup:SecurityPermission"

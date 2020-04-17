@@ -9,10 +9,10 @@ package org.abchip.mimo.biz.model.humanres.ability.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.humanres.ability.AbilityPackage;
 import org.abchip.mimo.biz.model.humanres.ability.PartySkill;
 import org.abchip.mimo.biz.model.humanres.ability.SkillType;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.eclipse.emf.ecore.EClass;
 

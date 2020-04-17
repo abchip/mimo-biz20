@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.content.content.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.content.content.ContentPackage;
 import org.abchip.mimo.biz.model.content.content.ContentSearchConstraint;
 import org.abchip.mimo.biz.model.content.content.ContentSearchResult;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

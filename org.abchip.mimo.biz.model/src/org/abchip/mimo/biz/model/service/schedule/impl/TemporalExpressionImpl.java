@@ -9,8 +9,7 @@ package org.abchip.mimo.biz.model.service.schedule.impl;
 
 import java.util.Date;
 import java.util.List;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.service.schedule.SchedulePackage;
 import org.abchip.mimo.biz.model.service.schedule.TemporalExpression;
 import org.abchip.mimo.biz.model.service.schedule.TemporalExpressionAssoc;

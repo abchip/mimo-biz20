@@ -10,8 +10,8 @@ package org.abchip.mimo.biz.model.shipment.picklist.impl;
 import java.util.Date;
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.shipment.picklist.Picklist;
 import org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage;

@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.workeffort.workeffort.impl;
 
 import java.util.List;
-
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssoc;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocType;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAssocTypeAttr;

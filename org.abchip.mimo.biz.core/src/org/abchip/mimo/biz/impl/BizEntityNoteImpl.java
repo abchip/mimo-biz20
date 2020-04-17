@@ -5,10 +5,10 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.model.impl;
+package org.abchip.mimo.biz.impl;
 
-import org.abchip.mimo.biz.model.BizEntityNote;
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizEntityNote;
+import org.abchip.mimo.biz.BizPackage;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.impl.BizEntityNoteImpl#getNoteId <em>Note Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.impl.BizEntityNoteImpl#getNoteId <em>Note Id</em>}</li>
  * </ul>
  *
  * @generated

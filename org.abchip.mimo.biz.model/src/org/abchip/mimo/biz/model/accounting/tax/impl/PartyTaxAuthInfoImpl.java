@@ -9,9 +9,9 @@ package org.abchip.mimo.biz.model.accounting.tax.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.tax.PartyTaxAuthInfo;
 import org.abchip.mimo.biz.model.accounting.tax.TaxPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.eclipse.emf.ecore.EClass;
 

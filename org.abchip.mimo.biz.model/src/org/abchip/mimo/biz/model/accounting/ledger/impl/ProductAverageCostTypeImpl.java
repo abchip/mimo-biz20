@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.accounting.ledger.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage;
 import org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCost;
 import org.abchip.mimo.biz.model.accounting.ledger.ProductAverageCostType;
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

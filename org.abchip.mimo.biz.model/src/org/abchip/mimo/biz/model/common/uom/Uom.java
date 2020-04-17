@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.common.uom;
 
 import java.util.List;
-
-import org.abchip.mimo.biz.model.BizEntityTyped;
+import org.abchip.mimo.biz.BizEntityTyped;
 
 /**
  * <!-- begin-user-doc -->

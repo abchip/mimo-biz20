@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.order.order.impl;
 
 import java.math.BigDecimal;
-
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.order.order.OrderHeader;
 import org.abchip.mimo.biz.model.order.order.OrderItemAssoc;
 import org.abchip.mimo.biz.model.order.order.OrderItemAssocType;

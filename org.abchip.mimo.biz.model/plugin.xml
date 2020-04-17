@@ -11,772 +11,765 @@
 
 <plugin>
 
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
-      <package
-            uri="http://www.abchip.org/mimo/biz"
-            class="org.abchip.mimo.biz.model.BizPackage"
-            genModel="model/biz.genmodel"/>
-   </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/accounting"
+            uri="http://www.abchip.org/mimo/biz/model/accounting"
             class="org.abchip.mimo.biz.model.accounting.AccountingPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/accounting/budget"
+            uri="http://www.abchip.org/mimo/biz/model/accounting/budget"
             class="org.abchip.mimo.biz.model.accounting.budget.BudgetPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/accounting/finaccount"
+            uri="http://www.abchip.org/mimo/biz/model/accounting/finaccount"
             class="org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/accounting/fixedasset"
+            uri="http://www.abchip.org/mimo/biz/model/accounting/fixedasset"
             class="org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/accounting/invoice"
+            uri="http://www.abchip.org/mimo/biz/model/accounting/invoice"
             class="org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/accounting/ledger"
+            uri="http://www.abchip.org/mimo/biz/model/accounting/ledger"
             class="org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/accounting/payment"
+            uri="http://www.abchip.org/mimo/biz/model/accounting/payment"
             class="org.abchip.mimo.biz.model.accounting.payment.PaymentPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/accounting/rate"
+            uri="http://www.abchip.org/mimo/biz/model/accounting/rate"
             class="org.abchip.mimo.biz.model.accounting.rate.RatePackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/accounting/tax"
+            uri="http://www.abchip.org/mimo/biz/model/accounting/tax"
             class="org.abchip.mimo.biz.model.accounting.tax.TaxPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/catalina/session"
+            uri="http://www.abchip.org/mimo/biz/model/catalina/session"
             class="org.abchip.mimo.biz.model.catalina.session.SessionPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/common"
+            uri="http://www.abchip.org/mimo/biz/model/common"
             class="org.abchip.mimo.biz.model.common.CommonPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/common/datasource"
+            uri="http://www.abchip.org/mimo/biz/model/common/datasource"
             class="org.abchip.mimo.biz.model.common.datasource.DatasourcePackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/common/email"
+            uri="http://www.abchip.org/mimo/biz/model/common/email"
             class="org.abchip.mimo.biz.model.common.email.EmailPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/common/enum"
+            uri="http://www.abchip.org/mimo/biz/model/common/enum"
             class="org.abchip.mimo.biz.model.common.enum_.EnumPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/common/geo"
+            uri="http://www.abchip.org/mimo/biz/model/common/geo"
             class="org.abchip.mimo.biz.model.common.geo.GeoPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/common/keyword"
+            uri="http://www.abchip.org/mimo/biz/model/common/keyword"
             class="org.abchip.mimo.biz.model.common.keyword.KeywordPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/common/language"
+            uri="http://www.abchip.org/mimo/biz/model/common/language"
             class="org.abchip.mimo.biz.model.common.language.LanguagePackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/common/method"
+            uri="http://www.abchip.org/mimo/biz/model/common/method"
             class="org.abchip.mimo.biz.model.common.method.MethodPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/common/note"
+            uri="http://www.abchip.org/mimo/biz/model/common/note"
             class="org.abchip.mimo.biz.model.common.note.NotePackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/common/period"
+            uri="http://www.abchip.org/mimo/biz/model/common/period"
             class="org.abchip.mimo.biz.model.common.period.PeriodPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/common/portal"
+            uri="http://www.abchip.org/mimo/biz/model/common/portal"
             class="org.abchip.mimo.biz.model.common.portal.PortalPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/common/property"
+            uri="http://www.abchip.org/mimo/biz/model/common/property"
             class="org.abchip.mimo.biz.model.common.property.PropertyPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/common/screen"
+            uri="http://www.abchip.org/mimo/biz/model/common/screen"
             class="org.abchip.mimo.biz.model.common.screen.ScreenPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/common/status"
+            uri="http://www.abchip.org/mimo/biz/model/common/status"
             class="org.abchip.mimo.biz.model.common.status.StatusPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/common/theme"
+            uri="http://www.abchip.org/mimo/biz/model/common/theme"
             class="org.abchip.mimo.biz.model.common.theme.ThemePackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/common/uom"
+            uri="http://www.abchip.org/mimo/biz/model/common/uom"
             class="org.abchip.mimo.biz.model.common.uom.UomPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/common/user"
+            uri="http://www.abchip.org/mimo/biz/model/common/user"
             class="org.abchip.mimo.biz.model.common.user.UserPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/content/content"
+            uri="http://www.abchip.org/mimo/biz/model/content/content"
             class="org.abchip.mimo.biz.model.content.content.ContentPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/content/data"
+            uri="http://www.abchip.org/mimo/biz/model/content/data"
             class="org.abchip.mimo.biz.model.content.data.DataPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/content/document"
+            uri="http://www.abchip.org/mimo/biz/model/content/document"
             class="org.abchip.mimo.biz.model.content.document.DocumentPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/content/preference"
+            uri="http://www.abchip.org/mimo/biz/model/content/preference"
             class="org.abchip.mimo.biz.model.content.preference.PreferencePackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/content/survey"
+            uri="http://www.abchip.org/mimo/biz/model/content/survey"
             class="org.abchip.mimo.biz.model.content.survey.SurveyPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/content/website"
+            uri="http://www.abchip.org/mimo/biz/model/content/website"
             class="org.abchip.mimo.biz.model.content.website.WebsitePackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/entity"
+            uri="http://www.abchip.org/mimo/biz/model/entity"
             class="org.abchip.mimo.biz.model.entity.EntityPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/entity/audit"
+            uri="http://www.abchip.org/mimo/biz/model/entity/audit"
             class="org.abchip.mimo.biz.model.entity.audit.AuditPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/entity/crypto"
+            uri="http://www.abchip.org/mimo/biz/model/entity/crypto"
             class="org.abchip.mimo.biz.model.entity.crypto.CryptoPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/entity/group"
+            uri="http://www.abchip.org/mimo/biz/model/entity/group"
             class="org.abchip.mimo.biz.model.entity.group.GroupPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/entity/sequence"
+            uri="http://www.abchip.org/mimo/biz/model/entity/sequence"
             class="org.abchip.mimo.biz.model.entity.sequence.SequencePackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/entity/synchronization"
+            uri="http://www.abchip.org/mimo/biz/model/entity/synchronization"
             class="org.abchip.mimo.biz.model.entity.synchronization.SynchronizationPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/entity/tenant"
+            uri="http://www.abchip.org/mimo/biz/model/entity/tenant"
             class="org.abchip.mimo.biz.model.entity.tenant.TenantPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/entity/test"
+            uri="http://www.abchip.org/mimo/biz/model/entity/test"
             class="org.abchip.mimo.biz.model.entity.test.TestPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/humanres/ability"
+            uri="http://www.abchip.org/mimo/biz/model/humanres/ability"
             class="org.abchip.mimo.biz.model.humanres.ability.AbilityPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/humanres/employment"
+            uri="http://www.abchip.org/mimo/biz/model/humanres/employment"
             class="org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/humanres/position"
+            uri="http://www.abchip.org/mimo/biz/model/humanres/position"
             class="org.abchip.mimo.biz.model.humanres.position.PositionPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/humanres/recruitment"
+            uri="http://www.abchip.org/mimo/biz/model/humanres/recruitment"
             class="org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/humanres/trainings"
+            uri="http://www.abchip.org/mimo/biz/model/humanres/trainings"
             class="org.abchip.mimo.biz.model.humanres.trainings.TrainingsPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/order/order"
-            class="org.abchip.mimo.biz.model.order.order.OrderPackage"
-            genModel="model/biz.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
-      <package
-            uri="http://www.abchip.org/mimo/biz/order/quote"
-            class="org.abchip.mimo.biz.model.order.quote.QuotePackage"
-            genModel="model/biz.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
-      <package
-            uri="http://www.abchip.org/mimo/biz/order/request"
-            class="org.abchip.mimo.biz.model.order.request.RequestPackage"
-            genModel="model/biz.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
-      <package
-            uri="http://www.abchip.org/mimo/biz/order/requirement"
-            class="org.abchip.mimo.biz.model.order.requirement.RequirementPackage"
-            genModel="model/biz.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
-      <package
-            uri="http://www.abchip.org/mimo/biz/order/reservations"
-            class="org.abchip.mimo.biz.model.order.reservations.ReservationsPackage"
-            genModel="model/biz.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
-      <package
-            uri="http://www.abchip.org/mimo/biz/order/return"
-            class="org.abchip.mimo.biz.model.order.return_.ReturnPackage"
-            genModel="model/biz.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
-      <package
-            uri="http://www.abchip.org/mimo/biz/order/shoppingcart"
-            class="org.abchip.mimo.biz.model.order.shoppingcart.ShoppingcartPackage"
-            genModel="model/biz.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
-      <package
-            uri="http://www.abchip.org/mimo/biz/order/shoppinglist"
-            class="org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage"
-            genModel="model/biz.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
-      <package
-            uri="http://www.abchip.org/mimo/biz/party"
-            class="org.abchip.mimo.biz.model.party.PartyPackage"
-            genModel="model/biz.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
-      <package
-            uri="http://www.abchip.org/mimo/biz/marketing/campaign"
-            class="org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage"
-            genModel="model/biz.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
-      <package
-            uri="http://www.abchip.org/mimo/biz/marketing/contact"
-            class="org.abchip.mimo.biz.model.marketing.contact.ContactPackage"
-            genModel="model/biz.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
-      <package
-            uri="http://www.abchip.org/mimo/biz/marketing/opportunity"
-            class="org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage"
-            genModel="model/biz.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
-      <package
-            uri="http://www.abchip.org/mimo/biz/marketing/segment"
-            class="org.abchip.mimo.biz.model.marketing.segment.SegmentPackage"
-            genModel="model/biz.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
-      <package
-            uri="http://www.abchip.org/mimo/biz/marketing/tracking"
-            class="org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage"
-            genModel="model/biz.genmodel"/>
-   </extension>
-
-   <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
-      <package
-            uri="http://www.abchip.org/mimo/biz/manufacturing/bom"
+            uri="http://www.abchip.org/mimo/biz/model/manufacturing/bom"
             class="org.abchip.mimo.biz.model.manufacturing.bom.BomPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/manufacturing/mrp"
+            uri="http://www.abchip.org/mimo/biz/model/manufacturing/mrp"
             class="org.abchip.mimo.biz.model.manufacturing.mrp.MrpPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/manufacturing/techdata"
+            uri="http://www.abchip.org/mimo/biz/model/manufacturing/techdata"
             class="org.abchip.mimo.biz.model.manufacturing.techdata.TechdataPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/party/agreement"
+            uri="http://www.abchip.org/mimo/biz/model/marketing/campaign"
+            class="org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage"
+            genModel="model/biz-model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated biz-model -->
+      <package
+            uri="http://www.abchip.org/mimo/biz/model/marketing/contact"
+            class="org.abchip.mimo.biz.model.marketing.contact.ContactPackage"
+            genModel="model/biz-model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated biz-model -->
+      <package
+            uri="http://www.abchip.org/mimo/biz/model/marketing/opportunity"
+            class="org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage"
+            genModel="model/biz-model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated biz-model -->
+      <package
+            uri="http://www.abchip.org/mimo/biz/model/marketing/segment"
+            class="org.abchip.mimo.biz.model.marketing.segment.SegmentPackage"
+            genModel="model/biz-model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated biz-model -->
+      <package
+            uri="http://www.abchip.org/mimo/biz/model/marketing/tracking"
+            class="org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage"
+            genModel="model/biz-model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated biz-model -->
+      <package
+            uri="http://www.abchip.org/mimo/biz/model/order/order"
+            class="org.abchip.mimo.biz.model.order.order.OrderPackage"
+            genModel="model/biz-model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated biz-model -->
+      <package
+            uri="http://www.abchip.org/mimo/biz/model/order/quote"
+            class="org.abchip.mimo.biz.model.order.quote.QuotePackage"
+            genModel="model/biz-model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated biz-model -->
+      <package
+            uri="http://www.abchip.org/mimo/biz/model/order/request"
+            class="org.abchip.mimo.biz.model.order.request.RequestPackage"
+            genModel="model/biz-model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated biz-model -->
+      <package
+            uri="http://www.abchip.org/mimo/biz/model/order/requirement"
+            class="org.abchip.mimo.biz.model.order.requirement.RequirementPackage"
+            genModel="model/biz-model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated biz-model -->
+      <package
+            uri="http://www.abchip.org/mimo/biz/model/order/reservations"
+            class="org.abchip.mimo.biz.model.order.reservations.ReservationsPackage"
+            genModel="model/biz-model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated biz-model -->
+      <package
+            uri="http://www.abchip.org/mimo/biz/model/order/return"
+            class="org.abchip.mimo.biz.model.order.return_.ReturnPackage"
+            genModel="model/biz-model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated biz-model -->
+      <package
+            uri="http://www.abchip.org/mimo/biz/model/order/shoppingcart"
+            class="org.abchip.mimo.biz.model.order.shoppingcart.ShoppingcartPackage"
+            genModel="model/biz-model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated biz-model -->
+      <package
+            uri="http://www.abchip.org/mimo/biz/model/order/shoppinglist"
+            class="org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage"
+            genModel="model/biz-model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated biz-model -->
+      <package
+            uri="http://www.abchip.org/mimo/biz/model/party"
+            class="org.abchip.mimo.biz.model.party.PartyPackage"
+            genModel="model/biz-model.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated biz-model -->
+      <package
+            uri="http://www.abchip.org/mimo/biz/model/party/agreement"
             class="org.abchip.mimo.biz.model.party.agreement.AgreementPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/party/communication"
+            uri="http://www.abchip.org/mimo/biz/model/party/communication"
             class="org.abchip.mimo.biz.model.party.communication.CommunicationPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/party/contact"
+            uri="http://www.abchip.org/mimo/biz/model/party/contact"
             class="org.abchip.mimo.biz.model.party.contact.ContactPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/party/need"
+            uri="http://www.abchip.org/mimo/biz/model/party/need"
             class="org.abchip.mimo.biz.model.party.need.NeedPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/party/party"
+            uri="http://www.abchip.org/mimo/biz/model/party/party"
             class="org.abchip.mimo.biz.model.party.party.PartyPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/passport"
+            uri="http://www.abchip.org/mimo/biz/model/passport"
             class="org.abchip.mimo.biz.model.passport.PassportPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/product/catalog"
+            uri="http://www.abchip.org/mimo/biz/model/product/catalog"
             class="org.abchip.mimo.biz.model.product.catalog.CatalogPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/product/category"
+            uri="http://www.abchip.org/mimo/biz/model/product/category"
             class="org.abchip.mimo.biz.model.product.category.CategoryPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/product/config"
+            uri="http://www.abchip.org/mimo/biz/model/product/config"
             class="org.abchip.mimo.biz.model.product.config.ConfigPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/product/cost"
+            uri="http://www.abchip.org/mimo/biz/model/product/cost"
             class="org.abchip.mimo.biz.model.product.cost.CostPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/product/facility"
+            uri="http://www.abchip.org/mimo/biz/model/product/facility"
             class="org.abchip.mimo.biz.model.product.facility.FacilityPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/product/feature"
+            uri="http://www.abchip.org/mimo/biz/model/product/feature"
             class="org.abchip.mimo.biz.model.product.feature.FeaturePackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/product/inventory"
+            uri="http://www.abchip.org/mimo/biz/model/product/inventory"
             class="org.abchip.mimo.biz.model.product.inventory.InventoryPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/product/price"
+            uri="http://www.abchip.org/mimo/biz/model/product/price"
             class="org.abchip.mimo.biz.model.product.price.PricePackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/product/product"
+            uri="http://www.abchip.org/mimo/biz/model/product/product"
             class="org.abchip.mimo.biz.model.product.product.ProductPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/product/promo"
+            uri="http://www.abchip.org/mimo/biz/model/product/promo"
             class="org.abchip.mimo.biz.model.product.promo.PromoPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/product/store"
+            uri="http://www.abchip.org/mimo/biz/model/product/store"
             class="org.abchip.mimo.biz.model.product.store.StorePackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/product/subscription"
+            uri="http://www.abchip.org/mimo/biz/model/product/subscription"
             class="org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/product/supplier"
+            uri="http://www.abchip.org/mimo/biz/model/product/supplier"
             class="org.abchip.mimo.biz.model.product.supplier.SupplierPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/security/cert"
+            uri="http://www.abchip.org/mimo/biz/model/security/cert"
             class="org.abchip.mimo.biz.model.security.cert.CertPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/security/login"
+            uri="http://www.abchip.org/mimo/biz/model/security/login"
             class="org.abchip.mimo.biz.model.security.login.LoginPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/security/securitygroup"
+            uri="http://www.abchip.org/mimo/biz/model/security/securitygroup"
             class="org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/service/schedule"
+            uri="http://www.abchip.org/mimo/biz/model/service/schedule"
             class="org.abchip.mimo.biz.model.service.schedule.SchedulePackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/service/semaphore"
+            uri="http://www.abchip.org/mimo/biz/model/service/semaphore"
             class="org.abchip.mimo.biz.model.service.semaphore.SemaphorePackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/shipment/issuance"
+            uri="http://www.abchip.org/mimo/biz/model/shipment/issuance"
             class="org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/shipment/picklist"
+            uri="http://www.abchip.org/mimo/biz/model/shipment/picklist"
             class="org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/shipment/receipt"
+            uri="http://www.abchip.org/mimo/biz/model/shipment/receipt"
             class="org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/shipment/shipment"
+            uri="http://www.abchip.org/mimo/biz/model/shipment/shipment"
             class="org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/webapp/visit"
+            uri="http://www.abchip.org/mimo/biz/model/webapp/visit"
             class="org.abchip.mimo.biz.model.webapp.visit.VisitPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/webapp/website"
+            uri="http://www.abchip.org/mimo/biz/model/webapp/website"
             class="org.abchip.mimo.biz.model.webapp.website.WebsitePackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/workeffort/timesheet"
+            uri="http://www.abchip.org/mimo/biz/model/workeffort/timesheet"
             class="org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated biz -->
+      <!-- @generated biz-model -->
       <package
-            uri="http://www.abchip.org/mimo/biz/workeffort/workeffort"
+            uri="http://www.abchip.org/mimo/biz/model/workeffort/workeffort"
             class="org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage"
-            genModel="model/biz.genmodel"/>
+            genModel="model/biz-model.genmodel"/>
    </extension>
 
 </plugin>

@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.product.cost.impl;
 
 import java.util.List;
-
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.product.cost.CostComponent;
 import org.abchip.mimo.biz.model.product.cost.CostComponentType;
 import org.abchip.mimo.biz.model.product.cost.CostComponentTypeAttr;

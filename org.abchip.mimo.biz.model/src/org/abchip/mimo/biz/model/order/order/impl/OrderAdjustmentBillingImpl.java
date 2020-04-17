@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.order.order.impl;
 
 import java.math.BigDecimal;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.order.order.OrderAdjustment;
 import org.abchip.mimo.biz.model.order.order.OrderAdjustmentBilling;
 import org.abchip.mimo.biz.model.order.order.OrderPackage;

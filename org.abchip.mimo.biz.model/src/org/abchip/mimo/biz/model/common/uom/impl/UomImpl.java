@@ -9,11 +9,11 @@ package org.abchip.mimo.biz.model.common.uom.impl;
 
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.common.uom.UomConversion;
 import org.abchip.mimo.biz.model.common.uom.UomPackage;
 import org.abchip.mimo.biz.model.common.uom.UomType;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

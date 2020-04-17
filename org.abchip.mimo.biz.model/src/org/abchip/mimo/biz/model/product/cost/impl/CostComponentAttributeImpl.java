@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.cost.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.cost.CostComponent;
 import org.abchip.mimo.biz.model.product.cost.CostComponentAttribute;
 import org.abchip.mimo.biz.model.product.cost.CostPackage;

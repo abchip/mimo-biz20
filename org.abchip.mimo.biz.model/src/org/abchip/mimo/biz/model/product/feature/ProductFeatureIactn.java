@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.feature;
 
-import org.abchip.mimo.biz.model.BizEntityTyped;
+import org.abchip.mimo.biz.BizEntityTyped;
 
 /**
  * <!-- begin-user-doc -->

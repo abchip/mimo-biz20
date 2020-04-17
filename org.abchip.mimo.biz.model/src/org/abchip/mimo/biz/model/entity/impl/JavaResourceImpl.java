@@ -7,9 +7,9 @@
  */
 package org.abchip.mimo.biz.model.entity.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.entity.EntityPackage;
 import org.abchip.mimo.biz.model.entity.JavaResource;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

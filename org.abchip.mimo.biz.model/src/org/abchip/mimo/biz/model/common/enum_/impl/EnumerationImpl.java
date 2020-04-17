@@ -9,10 +9,10 @@ package org.abchip.mimo.biz.model.common.enum_.impl;
 
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.common.enum_.EnumPackage;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.enum_.EnumerationType;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion;
 import org.eclipse.emf.ecore.EClass;
 

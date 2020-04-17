@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.workeffort.workeffort.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEvent;
 import org.abchip.mimo.biz.model.workeffort.workeffort.CommunicationEventWorkEff;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;

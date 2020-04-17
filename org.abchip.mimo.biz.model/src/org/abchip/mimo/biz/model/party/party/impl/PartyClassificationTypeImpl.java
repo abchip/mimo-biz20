@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.party.party.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.party.party.PartyClassification;
 import org.abchip.mimo.biz.model.party.party.PartyClassificationType;
 import org.abchip.mimo.biz.model.party.party.PartyPackage;

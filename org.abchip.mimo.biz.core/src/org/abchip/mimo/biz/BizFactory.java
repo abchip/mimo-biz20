@@ -5,7 +5,7 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.model;
+package org.abchip.mimo.biz;
 
 import org.eclipse.emf.ecore.EFactory;
 
@@ -14,7 +14,7 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see org.abchip.mimo.biz.model.BizPackage
+ * @see org.abchip.mimo.biz.BizPackage
  * @generated
  */
 public interface BizFactory extends EFactory {
@@ -24,7 +24,7 @@ public interface BizFactory extends EFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	BizFactory eINSTANCE = org.abchip.mimo.biz.model.impl.BizFactoryImpl.init();
+	BizFactory eINSTANCE = org.abchip.mimo.biz.impl.BizFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>Component</em>'.

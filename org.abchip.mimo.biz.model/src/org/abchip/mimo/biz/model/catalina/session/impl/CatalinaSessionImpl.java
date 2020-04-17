@@ -7,9 +7,9 @@
  */
 package org.abchip.mimo.biz.model.catalina.session.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.catalina.session.CatalinaSession;
 import org.abchip.mimo.biz.model.catalina.session.SessionPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

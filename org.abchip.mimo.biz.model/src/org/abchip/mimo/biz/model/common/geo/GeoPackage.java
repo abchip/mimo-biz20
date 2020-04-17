@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.common.geo;
 
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -43,7 +43,7 @@ public interface GeoPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.abchip.org/mimo/biz/common/geo";
+	String eNS_URI = "http://www.abchip.org/mimo/biz/model/common/geo";
 
 	/**
 	 * The package namespace name.

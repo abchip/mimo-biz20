@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.party.need.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.need.NeedPackage;
 import org.abchip.mimo.biz.model.party.need.NeedType;
 import org.eclipse.emf.ecore.EClass;

@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.product.price.impl;
 
 import java.math.BigDecimal;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.price.PricePackage;
 import org.abchip.mimo.biz.model.product.price.QuantityBreak;
 import org.abchip.mimo.biz.model.product.price.QuantityBreakType;

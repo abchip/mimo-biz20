@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.shipment.shipment.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentBoxType;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentBoxType;

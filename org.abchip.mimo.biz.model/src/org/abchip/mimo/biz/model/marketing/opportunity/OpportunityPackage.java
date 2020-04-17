@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.marketing.opportunity;
 
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -43,7 +43,7 @@ public interface OpportunityPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.abchip.org/mimo/biz/marketing/opportunity";
+	String eNS_URI = "http://www.abchip.org/mimo/biz/model/marketing/opportunity";
 
 	/**
 	 * The package namespace name.

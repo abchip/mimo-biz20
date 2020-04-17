@@ -9,13 +9,13 @@ package org.abchip.mimo.biz.model.accounting.invoice.impl;
 
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemType;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemTypeAttr;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemTypeGlAccount;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

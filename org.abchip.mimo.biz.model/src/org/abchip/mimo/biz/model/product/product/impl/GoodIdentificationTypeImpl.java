@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.product.product.impl;
 
 import java.util.List;
-
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.product.product.GoodIdentification;
 import org.abchip.mimo.biz.model.product.product.GoodIdentificationType;
 import org.abchip.mimo.biz.model.product.product.ProductPackage;

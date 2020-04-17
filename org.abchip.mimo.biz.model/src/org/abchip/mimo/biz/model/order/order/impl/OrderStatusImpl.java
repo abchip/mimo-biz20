@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.order.order.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.order.order.OrderHeader;
 import org.abchip.mimo.biz.model.order.order.OrderPackage;
 import org.abchip.mimo.biz.model.order.order.OrderPaymentPreference;

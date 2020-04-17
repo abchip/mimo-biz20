@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.party.party.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.datasource.DataSource;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.PartyDataSource;
 import org.abchip.mimo.biz.model.party.party.PartyPackage;

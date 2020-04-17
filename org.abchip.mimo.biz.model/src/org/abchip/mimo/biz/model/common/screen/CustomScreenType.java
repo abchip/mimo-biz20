@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.common.screen;
 
-import org.abchip.mimo.biz.model.BizEntityType;
+import org.abchip.mimo.biz.BizEntityType;
 
 /**
  * <!-- begin-user-doc -->

@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.order.requirement.impl;
 
 import java.util.List;
-
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.order.requirement.Requirement;
 import org.abchip.mimo.biz.model.order.requirement.RequirementPackage;
 import org.abchip.mimo.biz.model.order.requirement.RequirementType;

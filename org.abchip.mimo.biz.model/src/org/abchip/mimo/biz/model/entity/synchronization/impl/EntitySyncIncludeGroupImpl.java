@@ -7,11 +7,11 @@
  */
 package org.abchip.mimo.biz.model.entity.synchronization.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.entity.group.EntityGroup;
 import org.abchip.mimo.biz.model.entity.synchronization.EntitySync;
 import org.abchip.mimo.biz.model.entity.synchronization.EntitySyncIncludeGroup;
 import org.abchip.mimo.biz.model.entity.synchronization.SynchronizationPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

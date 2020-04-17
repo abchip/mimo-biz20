@@ -8,7 +8,7 @@
 package org.abchip.mimo.biz.model.humanres.recruitment.impl;
 
 import org.abchip.mimo.MimoPackage;
-import org.abchip.mimo.biz.model.BizPackage;
+import org.abchip.mimo.biz.BizPackage;
 import org.abchip.mimo.biz.model.accounting.AccountingPackage;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetPackage;
 import org.abchip.mimo.biz.model.accounting.budget.impl.BudgetPackageImpl;
@@ -104,7 +104,6 @@ import org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentFactory;
 import org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage;
 import org.abchip.mimo.biz.model.humanres.trainings.TrainingsPackage;
 import org.abchip.mimo.biz.model.humanres.trainings.impl.TrainingsPackageImpl;
-import org.abchip.mimo.biz.model.impl.BizPackageImpl;
 import org.abchip.mimo.biz.model.manufacturing.bom.BomPackage;
 import org.abchip.mimo.biz.model.manufacturing.bom.impl.BomPackageImpl;
 import org.abchip.mimo.biz.model.manufacturing.mrp.MrpPackage;
@@ -280,12 +279,11 @@ public class RecruitmentPackageImpl extends EPackageImpl implements RecruitmentP
 		isInited = true;
 
 		// Initialize simple dependencies
+		BizPackage.eINSTANCE.eClass();
 		MimoPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
-		BizPackageImpl theBizPackage = (BizPackageImpl)(registeredPackage instanceof BizPackageImpl ? registeredPackage : BizPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(AccountingPackage.eNS_URI);
 		AccountingPackageImpl theAccountingPackage = (AccountingPackageImpl)(registeredPackage instanceof AccountingPackageImpl ? registeredPackage : AccountingPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BudgetPackage.eNS_URI);
 		BudgetPackageImpl theBudgetPackage = (BudgetPackageImpl)(registeredPackage instanceof BudgetPackageImpl ? registeredPackage : BudgetPackage.eINSTANCE);
@@ -381,6 +379,12 @@ public class RecruitmentPackageImpl extends EPackageImpl implements RecruitmentP
 		MrpPackageImpl theMrpPackage = (MrpPackageImpl)(registeredPackage instanceof MrpPackageImpl ? registeredPackage : MrpPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(TechdataPackage.eNS_URI);
 		TechdataPackageImpl theTechdataPackage = (TechdataPackageImpl)(registeredPackage instanceof TechdataPackageImpl ? registeredPackage : TechdataPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BomPackage.eNS_URI);
+		BomPackageImpl theBomPackage_1 = (BomPackageImpl)(registeredPackage instanceof BomPackageImpl ? registeredPackage : BomPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(MrpPackage.eNS_URI);
+		MrpPackageImpl theMrpPackage_1 = (MrpPackageImpl)(registeredPackage instanceof MrpPackageImpl ? registeredPackage : MrpPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(TechdataPackage.eNS_URI);
+		TechdataPackageImpl theTechdataPackage_1 = (TechdataPackageImpl)(registeredPackage instanceof TechdataPackageImpl ? registeredPackage : TechdataPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CampaignPackage.eNS_URI);
 		CampaignPackageImpl theCampaignPackage = (CampaignPackageImpl)(registeredPackage instanceof CampaignPackageImpl ? registeredPackage : CampaignPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ContactPackage.eNS_URI);
@@ -476,7 +480,6 @@ public class RecruitmentPackageImpl extends EPackageImpl implements RecruitmentP
 
 		// Create package meta-data objects
 		theRecruitmentPackage.createPackageContents();
-		theBizPackage.createPackageContents();
 		theAccountingPackage.createPackageContents();
 		theBudgetPackage.createPackageContents();
 		theFinaccountPackage.createPackageContents();
@@ -525,6 +528,9 @@ public class RecruitmentPackageImpl extends EPackageImpl implements RecruitmentP
 		theBomPackage.createPackageContents();
 		theMrpPackage.createPackageContents();
 		theTechdataPackage.createPackageContents();
+		theBomPackage_1.createPackageContents();
+		theMrpPackage_1.createPackageContents();
+		theTechdataPackage_1.createPackageContents();
 		theCampaignPackage.createPackageContents();
 		theContactPackage.createPackageContents();
 		theOpportunityPackage.createPackageContents();
@@ -574,7 +580,6 @@ public class RecruitmentPackageImpl extends EPackageImpl implements RecruitmentP
 
 		// Initialize created meta-data
 		theRecruitmentPackage.initializePackageContents();
-		theBizPackage.initializePackageContents();
 		theAccountingPackage.initializePackageContents();
 		theBudgetPackage.initializePackageContents();
 		theFinaccountPackage.initializePackageContents();
@@ -623,6 +628,9 @@ public class RecruitmentPackageImpl extends EPackageImpl implements RecruitmentP
 		theBomPackage.initializePackageContents();
 		theMrpPackage.initializePackageContents();
 		theTechdataPackage.initializePackageContents();
+		theBomPackage_1.initializePackageContents();
+		theMrpPackage_1.initializePackageContents();
+		theTechdataPackage_1.initializePackageContents();
 		theCampaignPackage.initializePackageContents();
 		theContactPackage.initializePackageContents();
 		theOpportunityPackage.initializePackageContents();
@@ -1085,6 +1093,9 @@ public class RecruitmentPackageImpl extends EPackageImpl implements RecruitmentP
 		initEAttribute(getJobRequisition_RequiredOnDate(), ecorePackage.getEDate(), "requiredOnDate", null, 0, 1, JobRequisition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getJobRequisition_SkillTypeId(), theAbilityPackage.getSkillType(), null, "skillTypeId", null, 0, 1, JobRequisition.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getJobRequisition_SkillTypeId().getEKeys().add(theAbilityPackage.getSkillType_SkillTypeId());
+
+		// Create resource
+		createResource(eNS_URI);
 
 		// Create annotations
 		// mimo-ent-frame

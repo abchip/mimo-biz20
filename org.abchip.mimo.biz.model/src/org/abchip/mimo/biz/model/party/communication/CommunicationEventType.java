@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.party.communication;
 
-import org.abchip.mimo.biz.model.BizEntityType;
+import org.abchip.mimo.biz.BizEntityType;
 import org.abchip.mimo.biz.model.party.contact.ContactMechType;
 
 /**

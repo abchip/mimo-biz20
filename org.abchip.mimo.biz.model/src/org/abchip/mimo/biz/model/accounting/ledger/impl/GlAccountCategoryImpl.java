@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.accounting.ledger.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccountCategory;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccountCategoryType;
 import org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

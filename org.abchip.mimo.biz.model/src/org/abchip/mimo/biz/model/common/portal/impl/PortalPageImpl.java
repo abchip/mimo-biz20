@@ -9,11 +9,11 @@ package org.abchip.mimo.biz.model.common.portal.impl;
 
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.portal.PortalPackage;
 import org.abchip.mimo.biz.model.common.portal.PortalPage;
 import org.abchip.mimo.biz.model.common.portal.PortalPageColumn;
 import org.abchip.mimo.biz.model.content.content.Content;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.security.securitygroup.SecurityGroup;
 import org.eclipse.emf.ecore.EClass;
 

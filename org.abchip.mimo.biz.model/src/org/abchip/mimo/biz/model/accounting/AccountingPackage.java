@@ -40,7 +40,7 @@ public interface AccountingPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.abchip.org/mimo/biz/accounting";
+	String eNS_URI = "http://www.abchip.org/mimo/biz/model/accounting";
 
 	/**
 	 * The package namespace name.

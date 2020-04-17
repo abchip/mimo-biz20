@@ -7,9 +7,9 @@
  */
 package org.abchip.mimo.biz.model.entity.tenant.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.entity.tenant.TenantKeyEncryptingKey;
 import org.abchip.mimo.biz.model.entity.tenant.TenantPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

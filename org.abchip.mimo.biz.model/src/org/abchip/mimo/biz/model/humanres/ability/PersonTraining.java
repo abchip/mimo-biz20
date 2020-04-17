@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.humanres.ability;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.BizEntityTyped;
+import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.humanres.trainings.TrainingRequest;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.Person;

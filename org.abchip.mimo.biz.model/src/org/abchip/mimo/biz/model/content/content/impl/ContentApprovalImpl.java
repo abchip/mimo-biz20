@@ -9,11 +9,11 @@ package org.abchip.mimo.biz.model.content.content.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.content.content.Content;
 import org.abchip.mimo.biz.model.content.content.ContentApproval;
 import org.abchip.mimo.biz.model.content.content.ContentPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.eclipse.emf.ecore.EClass;

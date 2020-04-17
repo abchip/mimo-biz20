@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.workeffort.workeffort.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortIcalData;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.eclipse.emf.ecore.EClass;

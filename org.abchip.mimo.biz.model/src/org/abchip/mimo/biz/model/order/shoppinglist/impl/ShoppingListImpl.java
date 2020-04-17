@@ -10,8 +10,8 @@ package org.abchip.mimo.biz.model.order.shoppinglist.impl;
 import java.util.Date;
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethod;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList;
 import org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListItem;
 import org.abchip.mimo.biz.model.order.shoppinglist.ShoppingListType;

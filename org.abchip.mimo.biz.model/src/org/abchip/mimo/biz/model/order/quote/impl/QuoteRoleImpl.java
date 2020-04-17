@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.order.quote.impl;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.order.quote.Quote;
 import org.abchip.mimo.biz.model.order.quote.QuotePackage;
 import org.abchip.mimo.biz.model.order.quote.QuoteRole;

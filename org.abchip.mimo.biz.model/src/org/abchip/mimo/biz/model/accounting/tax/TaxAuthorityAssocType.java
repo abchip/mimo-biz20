@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.accounting.tax;
 
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 
 /**
  * <!-- begin-user-doc -->

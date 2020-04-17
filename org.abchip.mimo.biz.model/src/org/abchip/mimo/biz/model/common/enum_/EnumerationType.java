@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.common.enum_;
 
-import org.abchip.mimo.biz.model.BizEntityType;
+import org.abchip.mimo.biz.BizEntityType;
 
 /**
  * <!-- begin-user-doc -->

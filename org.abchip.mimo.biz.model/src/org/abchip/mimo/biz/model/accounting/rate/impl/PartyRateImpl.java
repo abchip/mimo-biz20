@@ -9,10 +9,10 @@ package org.abchip.mimo.biz.model.accounting.rate.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.rate.PartyRate;
 import org.abchip.mimo.biz.model.accounting.rate.RatePackage;
 import org.abchip.mimo.biz.model.accounting.rate.RateType;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.eclipse.emf.ecore.EClass;
 

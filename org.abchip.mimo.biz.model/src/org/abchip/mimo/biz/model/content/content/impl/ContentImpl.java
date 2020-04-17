@@ -10,6 +10,7 @@ package org.abchip.mimo.biz.model.content.content.impl;
 import java.util.Date;
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.common.datasource.DataSource;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.method.CustomMethod;
@@ -25,7 +26,6 @@ import org.abchip.mimo.biz.model.content.content.ContentType;
 import org.abchip.mimo.biz.model.content.data.CharacterSet;
 import org.abchip.mimo.biz.model.content.data.DataResource;
 import org.abchip.mimo.biz.model.content.data.MimeType;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.eclipse.emf.ecore.EClass;
 

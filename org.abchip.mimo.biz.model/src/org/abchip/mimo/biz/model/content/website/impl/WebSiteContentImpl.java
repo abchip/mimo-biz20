@@ -9,11 +9,11 @@ package org.abchip.mimo.biz.model.content.website.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.content.content.Content;
 import org.abchip.mimo.biz.model.content.website.WebSiteContent;
 import org.abchip.mimo.biz.model.content.website.WebSiteContentType;
 import org.abchip.mimo.biz.model.content.website.WebsitePackage;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.webapp.website.WebSite;
 import org.eclipse.emf.ecore.EClass;
 

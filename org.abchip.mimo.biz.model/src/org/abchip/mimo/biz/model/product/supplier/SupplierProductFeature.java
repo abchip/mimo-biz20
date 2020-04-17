@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.supplier;
 
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.feature.ProductFeature;

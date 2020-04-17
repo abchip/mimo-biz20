@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.product.inventory.impl;
 
 import java.util.List;
-
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItem;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItemType;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItemTypeAttr;

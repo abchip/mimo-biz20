@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.order.order.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityNoteImpl;
+import org.abchip.mimo.biz.impl.BizEntityNoteImpl;
 import org.abchip.mimo.biz.model.order.order.OrderHeader;
 import org.abchip.mimo.biz.model.order.order.OrderHeaderNote;
 import org.abchip.mimo.biz.model.order.order.OrderPackage;

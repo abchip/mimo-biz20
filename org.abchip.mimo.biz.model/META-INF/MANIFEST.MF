@@ -8,8 +8,7 @@ Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Automatic-Module-Name: org.abchip.mimo.biz.model
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Export-Package: org.abchip.mimo.biz.model,
- org.abchip.mimo.biz.model.accounting,
+Export-Package: org.abchip.mimo.biz.model.accounting,
  org.abchip.mimo.biz.model.accounting.budget,
  org.abchip.mimo.biz.model.accounting.budget.impl,
  org.abchip.mimo.biz.model.accounting.finaccount,
@@ -101,7 +100,6 @@ Export-Package: org.abchip.mimo.biz.model,
  org.abchip.mimo.biz.model.humanres.recruitment.impl,
  org.abchip.mimo.biz.model.humanres.trainings,
  org.abchip.mimo.biz.model.humanres.trainings.impl,
- org.abchip.mimo.biz.model.impl,
  org.abchip.mimo.biz.model.manufacturing.bom,
  org.abchip.mimo.biz.model.manufacturing.bom.impl,
  org.abchip.mimo.biz.model.manufacturing.mrp,
@@ -200,7 +198,8 @@ Export-Package: org.abchip.mimo.biz.model,
  org.abchip.mimo.biz.model.workeffort.timesheet.impl,
  org.abchip.mimo.biz.model.workeffort.workeffort,
  org.abchip.mimo.biz.model.workeffort.workeffort.impl
-Require-Bundle: org.eclipse.core.runtime,
- org.eclipse.emf.ecore;visibility:=reexport,
- org.abchip.mimo.core;visibility:=reexport
+Require-Bundle: org.abchip.mimo.biz.core;bundle-version="0.2.0";visibility:=reexport,
+ org.abchip.mimo.core;visibility:=reexport,
+ org.eclipse.core.runtime,
+ org.eclipse.emf.ecore;visibility:=reexport
 Bundle-ActivationPolicy: lazy

@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.party.communication.impl;
 
 import java.util.List;
-
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEventPrpTyp;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEventPurpose;
 import org.abchip.mimo.biz.model.party.communication.CommunicationPackage;

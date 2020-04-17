@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.marketing.campaign.impl;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage;
 import org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaign;
 import org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignPromo;

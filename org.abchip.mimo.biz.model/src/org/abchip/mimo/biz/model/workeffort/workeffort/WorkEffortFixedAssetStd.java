@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.workeffort.workeffort;
 
 import java.math.BigDecimal;
-
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetType;
 
 /**

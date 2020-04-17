@@ -3,11 +3,11 @@
     xmi:version="2.0"
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:biz-enum="http://www.abchip.org/mimo/biz/common/enum"
-    xmlns:biz-passport="http://www.abchip.org/mimo/biz/passport"
+    xmlns:biz-enum="http://www.abchip.org/mimo/biz/model/common/enum"
+    xmlns:biz-passport="http://www.abchip.org/mimo/biz/model/passport"
     xmlns:mimo-ent="http://www.abchip.org/mimo/entity"
-    xsi:schemaLocation="http://www.abchip.org/mimo/biz/common/enum ../../../org.abchip.mimo.biz.model/model/biz.ecore#//common/enum 
-    					http://www.abchip.org/mimo/biz/passport ../../../org.abchip.mimo.biz.model/model/biz.ecore#//passport 
+    xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/common/enum ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//common/enum 
+    					http://www.abchip.org/mimo/biz/model/passport ../../../org.abchip.mimo.biz.model/model/biz-model.ecore#//passport 
     					http://www.abchip.org/mimo/entity ../../../org.abchip.mimo.core/model/mimo.ecore#//entity"
     name="Passport">
   <contents

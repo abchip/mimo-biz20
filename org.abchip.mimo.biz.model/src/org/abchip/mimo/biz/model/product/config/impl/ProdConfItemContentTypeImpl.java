@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.config.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.product.config.ConfigPackage;
 import org.abchip.mimo.biz.model.product.config.ProdConfItemContent;
 import org.abchip.mimo.biz.model.product.config.ProdConfItemContentType;

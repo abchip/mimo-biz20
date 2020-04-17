@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.accounting.invoice.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceContent;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceContentType;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage;
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

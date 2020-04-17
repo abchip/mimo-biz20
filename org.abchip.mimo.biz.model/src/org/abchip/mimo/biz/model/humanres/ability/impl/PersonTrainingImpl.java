@@ -9,11 +9,11 @@ package org.abchip.mimo.biz.model.humanres.ability.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.humanres.ability.AbilityPackage;
 import org.abchip.mimo.biz.model.humanres.ability.PersonTraining;
 import org.abchip.mimo.biz.model.humanres.ability.TrainingClassType;
 import org.abchip.mimo.biz.model.humanres.trainings.TrainingRequest;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.Person;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;

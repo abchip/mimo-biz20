@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.subscription.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage;
 import org.abchip.mimo.biz.model.product.subscription.SubscriptionType;
 import org.abchip.mimo.biz.model.product.subscription.SubscriptionTypeAttr;

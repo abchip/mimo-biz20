@@ -9,10 +9,10 @@ package org.abchip.mimo.biz.model.common.period.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.period.CustomTimePeriod;
 import org.abchip.mimo.biz.model.common.period.PeriodPackage;
 import org.abchip.mimo.biz.model.common.period.PeriodType;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.eclipse.emf.ecore.EClass;
 

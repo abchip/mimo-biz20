@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.webapp.website.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.content.content.Content;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.webapp.website.WebPage;
 import org.abchip.mimo.biz.model.webapp.website.WebSite;
 import org.abchip.mimo.biz.model.webapp.website.WebsitePackage;

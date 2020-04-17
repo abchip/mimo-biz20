@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.product.inventory.impl;
 
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.ledger.VarianceReasonGlAccount;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.inventory.InventoryPackage;
 import org.abchip.mimo.biz.model.product.inventory.VarianceReason;
 import org.eclipse.emf.ecore.EClass;

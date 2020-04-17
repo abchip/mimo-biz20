@@ -7,10 +7,10 @@
  */
 package org.abchip.mimo.biz.model.humanres.ability.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.humanres.ability.AbilityPackage;
 import org.abchip.mimo.biz.model.humanres.ability.PartyQual;
 import org.abchip.mimo.biz.model.humanres.ability.PartyQualType;
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

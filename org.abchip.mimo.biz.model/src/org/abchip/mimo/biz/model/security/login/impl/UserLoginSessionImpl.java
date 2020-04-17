@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.security.login.impl;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.security.login.LoginPackage;
 import org.abchip.mimo.biz.model.security.login.UserLoginSession;
 import org.eclipse.emf.ecore.EClass;

@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.entity.synchronization;
 
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.entity.group.EntityGroup;
 
 /**

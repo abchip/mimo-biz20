@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.order.requirement.impl;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.order.requirement.Requirement;
 import org.abchip.mimo.biz.model.order.requirement.RequirementPackage;
 import org.abchip.mimo.biz.model.order.requirement.RequirementRole;

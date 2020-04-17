@@ -9,8 +9,7 @@ package org.abchip.mimo.biz.model.accounting.payment;
 
 import java.math.BigDecimal;
 import java.util.List;
-
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.party.agreement.TermType;
 

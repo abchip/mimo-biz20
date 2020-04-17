@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.product.config.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.content.content.Content;
-import org.abchip.mimo.biz.model.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.product.config.ConfigPackage;
 import org.abchip.mimo.biz.model.product.config.ProdConfItemContent;
 import org.abchip.mimo.biz.model.product.config.ProdConfItemContentType;

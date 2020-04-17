@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.product.price.impl;
 
 import java.util.Date;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.product.price.PricePackage;
 import org.abchip.mimo.biz.model.product.price.ProductPaymentMethodType;
 import org.abchip.mimo.biz.model.product.price.ProductPricePurpose;

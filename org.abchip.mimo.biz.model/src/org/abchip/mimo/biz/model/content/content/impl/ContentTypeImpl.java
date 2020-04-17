@@ -9,11 +9,11 @@ package org.abchip.mimo.biz.model.content.content.impl;
 
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.content.content.Content;
 import org.abchip.mimo.biz.model.content.content.ContentPackage;
 import org.abchip.mimo.biz.model.content.content.ContentType;
 import org.abchip.mimo.biz.model.content.content.ContentTypeAttr;
-import org.abchip.mimo.biz.model.impl.BizEntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

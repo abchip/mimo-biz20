@@ -9,10 +9,10 @@ package org.abchip.mimo.biz.model.entity.tenant.impl;
 
 import java.util.List;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.entity.tenant.Component;
 import org.abchip.mimo.biz.model.entity.tenant.TenantComponent;
 import org.abchip.mimo.biz.model.entity.tenant.TenantPackage;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

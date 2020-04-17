@@ -5,7 +5,7 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.model;
+package org.abchip.mimo.biz;
 
 
 /**
@@ -17,10 +17,10 @@ package org.abchip.mimo.biz.model;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.BizEntityNote#getNoteId <em>Note Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.BizEntityNote#getNoteId <em>Note Id</em>}</li>
  * </ul>
  *
- * @see org.abchip.mimo.biz.model.BizPackage#getBizEntityNote()
+ * @see org.abchip.mimo.biz.BizPackage#getBizEntityNote()
  * @model abstract="true"
  * @generated
  */
@@ -36,7 +36,7 @@ public interface BizEntityNote extends BizEntity {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Note Id</em>' attribute.
 	 * @see #setNoteId(String)
-	 * @see org.abchip.mimo.biz.model.BizPackage#getBizEntityNote_NoteId()
+	 * @see org.abchip.mimo.biz.BizPackage#getBizEntityNote_NoteId()
 	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
 	 * @generated
@@ -44,7 +44,7 @@ public interface BizEntityNote extends BizEntity {
 	String getNoteId();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.BizEntityNote#getNoteId <em>Note Id</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.BizEntityNote#getNoteId <em>Note Id</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Note Id</em>' attribute.

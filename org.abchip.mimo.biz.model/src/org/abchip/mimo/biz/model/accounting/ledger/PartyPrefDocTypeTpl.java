@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.accounting.ledger;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.BizEntity;
+import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceType;
 import org.abchip.mimo.biz.model.order.order.OrderType;
 import org.abchip.mimo.biz.model.order.quote.QuoteType;

@@ -7,9 +7,9 @@
  */
 package org.abchip.mimo.biz.model.common.property.impl;
 
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.common.property.PropertyPackage;
 import org.abchip.mimo.biz.model.common.property.SystemProperty;
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**

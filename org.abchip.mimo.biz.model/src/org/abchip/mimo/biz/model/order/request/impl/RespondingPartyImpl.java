@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.model.order.request.impl;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.order.request.CustRequest;
 import org.abchip.mimo.biz.model.order.request.RequestPackage;
 import org.abchip.mimo.biz.model.order.request.RespondingParty;

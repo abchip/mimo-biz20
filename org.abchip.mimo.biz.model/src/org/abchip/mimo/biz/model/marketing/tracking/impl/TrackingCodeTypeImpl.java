@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.marketing.tracking.impl;
 
-import org.abchip.mimo.biz.model.impl.BizEntityImpl;
+import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeType;
 import org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage;
 import org.eclipse.emf.ecore.EClass;
