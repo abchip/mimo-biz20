@@ -162,7 +162,10 @@ public class CreateSalesOrder implements Callable<Long> {
 		// (OrderAdjustment) che poi sarà trasferita nella fattura
 		//
 
-		// TODO chiamare il servizio per i totali
+		// TODO richiamare il servizio reserveStoreInventory per finalizzare l'ordine
+		
+		
+		// TODO chiamare il servizio resetGrandTotal
 		orderHeader.setGrandTotal(new BigDecimal(total));
 		orderHeaderWriter.update(orderHeader);
 
@@ -171,6 +174,8 @@ public class CreateSalesOrder implements Callable<Long> {
 	private void createOrderItem(ResourceManager resourceManager, OrderHeader orderHeader, String itemSeqiD, String shipGroupSeqId, int quantity, ProductPrice productPrice) throws ResourceException {
 		ResourceWriter<OrderItem> orderItemWriter = resourceManager.getResourceWriter(context, OrderItem.class);
 
+		// TODO servizio calculateProductPrice
+		
 		OrderItem orderItem = orderItemWriter.make();
 		orderItem.setOrderId(orderHeader);
 		orderItem.setOrderItemSeqId(itemSeqiD);
