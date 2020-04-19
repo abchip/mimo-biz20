@@ -157,7 +157,7 @@ public class CreatePurchaseOrder implements Callable<Long> {
 		//
 		// TODO qui richiamare il servizio calcTax per aggiungere l'iva all'ordine
 
-		// TODO chiamare il servizio per i totali
+		// TODO chiamare il servizio resetGrandTotal
 		orderHeader.setGrandTotal(new BigDecimal(total));
 		orderHeaderWriter.update(orderHeader);
 	}
