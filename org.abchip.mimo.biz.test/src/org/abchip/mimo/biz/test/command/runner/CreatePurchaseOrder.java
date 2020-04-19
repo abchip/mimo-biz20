@@ -7,7 +7,7 @@ import java.util.concurrent.Callable;
 
 import org.abchip.mimo.biz.base.service.ContactMechServices;
 import org.abchip.mimo.biz.base.service.PartyServices;
-import org.abchip.mimo.biz.base.service.SystemDefault;
+import org.abchip.mimo.biz.base.service.UomServices;
 import org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
@@ -81,7 +81,7 @@ public class CreatePurchaseOrder implements Callable<Long> {
 		orderHeader.setOrderDate(new Date());
 		orderHeader.setEntryDate(new Date());
 		orderHeader.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("ORDER_CREATED"));
-		orderHeader.setCurrencyUom(SystemDefault.getUom(context));
+		orderHeader.setCurrencyUom(UomServices.getUom(context));
 		orderHeader.setInvoicePerShipment(Boolean.TRUE);
 		orderHeader.setCreatedBy(userLogin);
 		// orderHeader.setRemainingSubTotal(new BigDecimal(10));
@@ -123,7 +123,7 @@ public class CreatePurchaseOrder implements Callable<Long> {
 		ResourceWriter<OrderRole> orderRoleWriter = resourceManager.getResourceWriter(context, OrderRole.class);
 		OrderRole orderRole = orderRoleWriter.make();
 		orderRole.setOrderId(orderHeader);
-		orderRole.setPartyId(SystemDefault.getCompany(context));
+		orderRole.setPartyId(PartyServices.getCompany(context));
 		orderRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("BILL_TO_CUSTOMER"));
 		orderRoleWriter.create(orderRole);
 

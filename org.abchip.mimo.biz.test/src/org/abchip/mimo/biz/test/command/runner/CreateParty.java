@@ -5,7 +5,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-import org.abchip.mimo.biz.base.service.SystemDefault;
+import org.abchip.mimo.biz.base.service.GeoServices;
+import org.abchip.mimo.biz.base.service.UomServices;
 import org.abchip.mimo.biz.model.accounting.tax.PartyTaxAuthInfo;
 import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
@@ -59,7 +60,7 @@ public class CreateParty implements Callable<Long> {
 		PartyGroup partyGroup = partyGroupWriter.make(true);
 		partyGroup.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("PARTY_ENABLED"));
 		partyGroup.setPartyTypeId(resourceManager.getFrame(context, PartyType.class).createProxy("PARTY_GROUP"));
-		partyGroup.setPreferredCurrencyUomId(SystemDefault.getUom(context));
+		partyGroup.setPreferredCurrencyUomId(UomServices.getUom(context));
 		// nome
 		partyGroup.setGroupName("Description Party " + role.toLowerCase() + " " + partyGroup.getID());
 		partyGroupWriter.create(partyGroup);
@@ -75,14 +76,14 @@ public class CreateParty implements Callable<Long> {
 		Person person = personWriter.make(true);
 		person.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("PARTY_ENABLED"));
 		person.setPartyTypeId(resourceManager.getFrame(context, PartyType.class).createProxy("PERSON"));
-		person.setPreferredCurrencyUomId(SystemDefault.getUom(context));
+		person.setPreferredCurrencyUomId(UomServices.getUom(context));
 		person.setFirstName("First name " + role.toLowerCase() + " " + person.getID());
 		person.setLastName("Last name " + role.toLowerCase() + " " + person.getID());
 		personWriter.create(person);
 
 		createRelated(resourceManager, person, role);
 	}
-	
+
 	private void createRelated(ResourceManager resourceManager, Party party, String role) throws ResourceException {
 
 		// Base role
@@ -144,7 +145,7 @@ public class CreateParty implements Callable<Long> {
 		// indirizzo_cap
 		postalAddress.setPostalCode(StressTestUtils.generateRandomString(5, true));
 		postalAddress.setContactMechTypeId(resourceManager.getFrame(context, ContactMechType.class).createProxy("POSTAL_ADDRESS"));
-		postalAddress.setCountryGeoId(SystemDefault.getGeo(context));
+		postalAddress.setCountryGeoId(GeoServices.getGeo(context));
 		postalAddress.setStateProvinceGeoId(resourceManager.getFrame(context, Geo.class).createProxy("IT-RM"));
 		postalAddressWriter.create(postalAddress);
 		createPartyContactMech(context, resourceManager, party, postalAddress, Arrays.asList("GENERAL_LOCATION", "SHIPPING_LOCATION"));
@@ -171,11 +172,11 @@ public class CreateParty implements Callable<Long> {
 		PartyTaxAuthInfo partyTaxAuthInfo = partyTaxAuthInfoWriter.make();
 		partyTaxAuthInfo.setPartyId(party);
 		partyTaxAuthInfo.setFromDate(new Date());
-		partyTaxAuthInfo.setTaxAuthGeoId(SystemDefault.getGeo(context).getID());
+		partyTaxAuthInfo.setTaxAuthGeoId(GeoServices.getGeo(context).getID());
 		partyTaxAuthInfo.setTaxAuthPartyId("ITA_ADE");
 		partyTaxAuthInfo.setPartyTaxId("IT-" + StressTestUtils.generateRandomString(11, true));
 		partyTaxAuthInfo.setIsExempt(false);
-		partyTaxAuthInfo.setIsNexus(false); 
+		partyTaxAuthInfo.setIsNexus(false);
 
 		partyTaxAuthInfoWriter.create(partyTaxAuthInfo);
 

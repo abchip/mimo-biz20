@@ -9,6 +9,7 @@
 package org.abchip.mimo.biz.base.service;
 
 import org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference;
+import org.abchip.mimo.biz.model.common.property.SystemProperty;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.abchip.mimo.biz.model.party.contact.PostalAddress;
 import org.abchip.mimo.biz.model.party.contact.TelecomNumber;
@@ -29,11 +30,19 @@ import ezvcard.property.StructuredName;
 import ezvcard.property.Telephone;
 
 public class PartyServices {
+
+	public static Party getCompany(Context context) throws ResourceException {
+		ResourceManager resourceManager = context.get(ResourceManager.class);
+		ResourceReader<SystemProperty> systemProperty = resourceManager.getResourceReader(context, SystemProperty.class);
+		SystemProperty props = systemProperty.lookup("general/ORGANIZATION_PARTY");
+		ResourceReader<Party> partyReader = resourceManager.getResourceReader(context, Party.class);
+		return partyReader.lookup(props.getSystemPropertyValue());
+	}
 	
 	public static PartyAcctgPreference getPartyAcctgPreference(Context context) throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 		ResourceReader<PartyAcctgPreference> partyAcctgPreference = resourceManager.getResourceReader(context, PartyAcctgPreference.class);
-		return partyAcctgPreference.lookup(SystemDefault.getCompany(context).getID());
+		return partyAcctgPreference.lookup(getCompany(context).getID());
 	}
 
 	public static VCard createVcardFromParty(Context context, String partyId) throws ResourceException {

@@ -5,7 +5,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-import org.abchip.mimo.biz.base.service.SystemDefault;
+import org.abchip.mimo.biz.base.service.PartyServices;
+import org.abchip.mimo.biz.base.service.UomServices;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemType;
 import org.abchip.mimo.biz.model.party.agreement.Agreement;
 import org.abchip.mimo.biz.model.party.agreement.AgreementItem;
@@ -54,7 +55,7 @@ public class CreateAgreement implements Callable<Long> {
 		ResourceWriter<Agreement> agreementWriter = resourceManager.getResourceWriter(context, Agreement.class);
 
 		Agreement agreement = agreementWriter.make(true);
-		agreement.setPartyIdFrom(SystemDefault.getCompany(context));
+		agreement.setPartyIdFrom(PartyServices.getCompany(context));
 		agreement.setPartyIdTo(party);
 
 		agreement.setRoleTypeIdFrom(roleTypeFrom);
@@ -97,7 +98,7 @@ public class CreateAgreement implements Callable<Long> {
 		String agreementItemSeqId = StressTestUtils.formatPaddedNumber(1, 5);
 		agreementItem.setAgreementItemSeqId(agreementItemSeqId);
 		agreementItem.setAgreementItemTypeId(agreementType);
-		agreementItem.setCurrencyUomId(SystemDefault.getUom(context).getID());
+		agreementItem.setCurrencyUomId(UomServices.getUom(context).getID());
 		agreementItem.setAgreementText("Agrement test opened in trial mode");
 		agreementItemWriter.create(agreementItem);
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
-    copyrightText="Copyright (c) 2017, 2020 ABChip and others.&#xA;All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html"
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" copyrightText="Copyright (c) 2017, 2020 ABChip and others.&#xA;All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html"
     modelDirectory="/org.abchip.mimo.biz.service/src" editDirectory="/org.abchip.mimo.biz.service.edit/src"
     editorDirectory="/org.abchip.mimo.biz.service.editor/src" modelPluginID="org.abchip.mimo.biz.service"
     modelName="MIMO Biz Service" editPluginClass="org.abchip.mimo.biz.service.provider.BizCoreEditPlugin"
@@ -11,7 +11,7 @@
     featureDelegation="Reflective" containmentProxies="true" suppressNotification="true"
     complianceLevel="8.0" copyrightFields="false" editPluginID="org.abchip.mimo.biz.service.edit"
     editorPluginID="org.abchip.mimo.biz.service.editor" testsPluginID="org.abchip.mimo.biz.service.tests"
-    language="EN" usedGenPackages="../../org.abchip.mimo.core/model/mimo.genmodel#//mimo"
+    language="EN" usedGenPackages="../../org.abchip.mimo.biz.core/model/biz.genmodel#//biz ../../org.abchip.mimo.biz.model/model/biz-model.genmodel#//model ../../org.abchip.mimo.core/model/mimo.genmodel#//mimo"
     importOrganizing="true">
   <foreignModel>biz-service.ecore</foreignModel>
   <genPackages prefix="BizService" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
@@ -40,8 +40,16 @@
         adapterFactory="false" ecorePackage="biz-service.ecore#//passport"/>
     <nestedGenPackages prefix="Product" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz-service.ecore#//product">
-      <genClasses ecoreClass="biz-service.ecore#//product/CalculateProductPrice"/>
-      <genClasses ecoreClass="biz-service.ecore#//product/CalculateProductPriceResponse"/>
+      <genClasses ecoreClass="biz-service.ecore#//product/CalculateProductPrice">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference biz-service.ecore#//product/CalculateProductPrice/product"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//product/CalculateProductPrice/currencyUomId"/>
+      </genClasses>
+      <genClasses ecoreClass="biz-service.ecore#//product/CalculateProductPriceResponse">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//product/CalculateProductPriceResponse/validPriceFound"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//product/CalculateProductPriceResponse/basePrice"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//product/CalculateProductPriceResponse/listPrice"/>
+      </genClasses>
     </nestedGenPackages>
     <nestedGenPackages prefix="Security" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz-service.ecore#//security"/>

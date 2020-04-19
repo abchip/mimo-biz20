@@ -26,11 +26,20 @@
   <eSubpackages name="product" nsURI="http://www.abchip.org/mimo/biz/service/product"
       nsPrefix="biz-product">
     <eClassifiers xsi:type="ecore:EClass" name="CalculateProductPrice">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="product" lowerBound="1"
+          eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//product/product/Product"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="currencyUomId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
         <eTypeArguments eClassifier="#//product/CalculateProductPriceResponse"/>
       </eGenericSuperTypes>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="CalculateProductPriceResponse" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
+    <eClassifiers xsi:type="ecore:EClass" name="CalculateProductPriceResponse" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="validPriceFound" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="basePrice" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="listPrice" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
+    </eClassifiers>
   </eSubpackages>
   <eSubpackages name="security" nsURI="http://www.abchip.org/mimo/biz/service/security"
       nsPrefix="biz-security"/>

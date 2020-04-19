@@ -11,6 +11,7 @@ import org.abchip.mimo.biz.model.product.CalculateProductPrice;
 import org.abchip.mimo.biz.model.product.CalculateProductPriceResponse;
 import org.abchip.mimo.biz.model.product.ProductPackage;
 
+import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.service.impl.ServiceRequestImpl;
 
 import org.eclipse.emf.ecore.EClass;
@@ -19,6 +20,13 @@ import org.eclipse.emf.ecore.EClass;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Calculate Product Price</b></em>'.
  * <!-- end-user-doc -->
+ * <p>
+ * The following features are implemented:
+ * </p>
+ * <ul>
+ *   <li>{@link org.abchip.mimo.biz.model.product.impl.CalculateProductPriceImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.impl.CalculateProductPriceImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ * </ul>
  *
  * @generated
  */
@@ -55,6 +63,46 @@ public class CalculateProductPriceImpl extends ServiceRequestImpl<CalculateProdu
 	@Override
 	protected int eStaticFeatureCount() {
 		return 0;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Product getProduct() {
+		return (Product)eGet(ProductPackage.Literals.CALCULATE_PRODUCT_PRICE__PRODUCT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setProduct(Product newProduct) {
+		eSet(ProductPackage.Literals.CALCULATE_PRODUCT_PRICE__PRODUCT, newProduct);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getCurrencyUomId() {
+		return (String)eGet(ProductPackage.Literals.CALCULATE_PRODUCT_PRICE__CURRENCY_UOM_ID, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCurrencyUomId(String newCurrencyUomId) {
+		eSet(ProductPackage.Literals.CALCULATE_PRODUCT_PRICE__CURRENCY_UOM_ID, newCurrencyUomId);
 	}
 
 } //CalculateProductPriceImpl

@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-import org.abchip.mimo.biz.base.service.SystemDefault;
+import org.abchip.mimo.biz.base.service.UomServices;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.product.facility.ProductFacility;
@@ -67,7 +67,7 @@ public class CreateProduct implements Callable<Long> {
 		productPrice.setFromDate(new Date());
 		productPrice.setProductPriceTypeId(resourceManager.getFrame(context, ProductPriceType.class).createProxy("DEFAULT_PRICE"));
 		productPrice.setProductPricePurposeId(resourceManager.getFrame(context, ProductPricePurpose.class).createProxy("PURCHASE"));
-		productPrice.setCurrencyUomId(SystemDefault.getUom(context));
+		productPrice.setCurrencyUomId(UomServices.getUom(context));
 		productPrice.setProductStoreGroupId(resourceManager.getFrame(context, ProductStoreGroup.class).createProxy("_NA_"));
 		productPriceWriter.create(productPrice);
 	}
@@ -99,7 +99,7 @@ public class CreateProduct implements Callable<Long> {
 			supplierProduct.setSupplierPrefOrderId(resourceManager.getFrame(context, SupplierPrefOrder.class).createProxy("10_MAIN_SUPPL"));
 			supplierProduct.setMinimumOrderQuantity(new BigDecimal(1));
 			supplierProduct.setLastPrice(new BigDecimal(1));
-			supplierProduct.setCurrencyUomId(SystemDefault.getUom(context));
+			supplierProduct.setCurrencyUomId(UomServices.getUom(context));
 			supplierProduct.setCanDropShip(false);
 			supplierProduct.setSupplierProductId(party.getID() + "-" + product.getID());
 			supplierProductWriter.create(supplierProduct);

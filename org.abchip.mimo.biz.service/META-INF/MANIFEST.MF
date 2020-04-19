@@ -15,4 +15,4 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.abchip.mimo.biz.core;bundle-version="0.2.0";visibility:=reexport,
  org.abchip.mimo.core;visibility:=reexport,
- org.abchip.mimo.biz.model;bundle-version="0.2.0"
+ org.abchip.mimo.biz.model;bundle-version="0.2.0";visibility:=reexport

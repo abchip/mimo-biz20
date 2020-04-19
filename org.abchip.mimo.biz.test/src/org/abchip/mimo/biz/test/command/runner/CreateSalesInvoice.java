@@ -7,7 +7,7 @@ import java.util.concurrent.Callable;
 
 import org.abchip.mimo.biz.base.service.ContactMechServices;
 import org.abchip.mimo.biz.base.service.PartyServices;
-import org.abchip.mimo.biz.base.service.SystemDefault;
+import org.abchip.mimo.biz.base.service.UomServices;
 import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem;
@@ -50,7 +50,7 @@ public class CreateSalesInvoice implements Callable<Long> {
 	private void createInvoice() throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 		
-		Party company = SystemDefault.getCompany(context); 
+		Party company = PartyServices.getCompany(context); 
 
 		// Invoice Header
 		ResourceWriter<Invoice> invoiceWriter = resourceManager.getResourceWriter(context, Invoice.class);
@@ -65,7 +65,7 @@ public class CreateSalesInvoice implements Callable<Long> {
 		invoice.setInvoiceTypeId(resourceManager.getFrame(context, InvoiceType.class).createProxy("SALES_INVOICE"));
 		invoice.setInvoiceDate(new Date());
 		invoice.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("INVOICE_IN_PROCESS"));
-		invoice.setCurrencyUomId(SystemDefault.getUom(context));
+		invoice.setCurrencyUomId(UomServices.getUom(context));
 		invoice.setPartyId(party);
 		invoice.setPartyIdFrom(company);
 		invoice.setDescription("Sales invoice test for party " + party.getID());

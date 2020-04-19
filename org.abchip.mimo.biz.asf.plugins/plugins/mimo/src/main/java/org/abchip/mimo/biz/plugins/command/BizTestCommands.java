@@ -19,8 +19,9 @@ import java.util.Map;
 import javax.inject.Inject;
 
 import org.abchip.mimo.biz.base.service.ContactMechServices;
+import org.abchip.mimo.biz.base.service.PartyServices;
 import org.abchip.mimo.biz.base.service.PaymentServices;
-import org.abchip.mimo.biz.base.service.SystemDefault;
+import org.abchip.mimo.biz.base.service.UomServices;
 import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem;
@@ -382,7 +383,7 @@ public class BizTestCommands extends BaseCommands {
 		orderHeader.setOrderDate(new Date());
 		orderHeader.setEntryDate(new Date());
 		orderHeader.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("ORDER_CREATED"));
-		orderHeader.setCurrencyUom(SystemDefault.getUom(context));
+		orderHeader.setCurrencyUom(UomServices.getUom(context));
 		orderHeader.setInvoicePerShipment(Boolean.TRUE);
 		orderHeader.setCreatedBy(userLogin);
 		// orderHeader.setRemainingSubTotal(new BigDecimal(10));
@@ -432,7 +433,7 @@ public class BizTestCommands extends BaseCommands {
 		ResourceWriter<OrderRole> orderRoleWriter = resourceManager.getResourceWriter(context, OrderRole.class);
 		OrderRole orderRole = orderRoleWriter.make();
 		orderRole.setOrderId(orderHeader);
-		orderRole.setPartyId(SystemDefault.getCompany(context));
+		orderRole.setPartyId(PartyServices.getCompany(context));
 		orderRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("BILL_FROM_VENDOR"));
 		orderRoleWriter.create(orderRole, true);
 
@@ -577,7 +578,7 @@ public class BizTestCommands extends BaseCommands {
 		Map<String, Object> priceContext = new HashMap<>();
 		GenericValue product = EntityUtils.toBizEntity(delegator, productEntity);
 		priceContext.put("product", product);
-		priceContext.put("currencyUomId", SystemDefault.getUom(context).getID());
+		priceContext.put("currencyUomId", UomServices.getUom(context).getID());
 		Map<String, Object> priceResult = new HashMap<>();
 		try {
 			priceResult = dispatcher.runSync("calculateProductPrice", priceContext);
@@ -625,7 +626,7 @@ public class BizTestCommands extends BaseCommands {
 
 	private Invoice createInvoice(CommandInterpreter interpreter, Context context, String partyId, String description) throws ResourceException {
 		Party party = resourceManager.getFrame(context, Party.class).createProxy(partyId);
-		Party partyFrom = SystemDefault.getCompany(context);
+		Party partyFrom = PartyServices.getCompany(context);
 
 		// Invoice Header
 		ResourceWriter<Invoice> invoiceWriter = resourceManager.getResourceWriter(context, Invoice.class);
@@ -633,7 +634,7 @@ public class BizTestCommands extends BaseCommands {
 		invoice.setInvoiceTypeId(resourceManager.getFrame(context, InvoiceType.class).createProxy("SALES_INVOICE"));
 		invoice.setInvoiceDate(new Date());
 		invoice.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("INVOICE_IN_PROCESS"));
-		invoice.setCurrencyUomId(SystemDefault.getUom(context));
+		invoice.setCurrencyUomId(UomServices.getUom(context));
 		invoice.setPartyId(party);
 		invoice.setPartyIdFrom(partyFrom);
 		if (!description.isEmpty())
@@ -743,7 +744,7 @@ public class BizTestCommands extends BaseCommands {
 		Map<String, Object> priceContext = new HashMap<>();
 		GenericValue product = EntityUtils.toBizEntity(delegator, productEntity);
 		priceContext.put("product", product);
-		priceContext.put("currencyUomId", SystemDefault.getUom(context).getID());
+		priceContext.put("currencyUomId", UomServices.getUom(context).getID());
 		Map<String, Object> priceResult = new HashMap<>();
 
 		BigDecimal price = new BigDecimal(0);
@@ -860,7 +861,7 @@ public class BizTestCommands extends BaseCommands {
 
 	private void createAgreement(CommandInterpreter interpreter, Context context, String partyId) throws ResourceException {
 
-		Party partyFrom = SystemDefault.getCompany(context);
+		Party partyFrom = PartyServices.getCompany(context);
 		Party partyTo = resourceManager.getFrame(context, Party.class).createProxy(partyId);
 
 		RoleType roleTypeFrom = resourceManager.getFrame(context, RoleType.class).createProxy("INTERNAL_ORGANIZATIO");
@@ -972,7 +973,7 @@ public class BizTestCommands extends BaseCommands {
 		Map<String, Object> priceContext = new HashMap<>();
 		GenericValue product = EntityUtils.toBizEntity(delegator, productEntity);
 		priceContext.put("product", product);
-		priceContext.put("currencyUomId", SystemDefault.getUom(context).getID());
+		priceContext.put("currencyUomId", UomServices.getUom(context).getID());
 		Map<String, Object> priceResult = new HashMap<>();
 		try {
 			priceResult = dispatcher.runSync("calculateProductPrice", priceContext);
@@ -1205,7 +1206,7 @@ public class BizTestCommands extends BaseCommands {
 				paymentContext.put("paymentTypeId", "CUSTOMER_PAYMENT");
 				paymentContext.put("paymentMethodTypeId", "CREDIT_CARD");
 				paymentContext.put("paymentMethodId", paymentMethod.getID());
-				paymentContext.put("currencyUomId", SystemDefault.getUom(context).getID());
+				paymentContext.put("currencyUomId", UomServices.getUom(context).getID());
 				paymentContext.put("paymentRefNum", "Invoice number " + invoiceEntity.getID());
 				paymentContext.put("userLogin", userLogin);
 				paymentResult = dispatcher.runSync("createPayment", paymentContext);
