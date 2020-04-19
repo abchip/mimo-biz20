@@ -369,14 +369,8 @@ public class MrpPackageImpl extends EPackageImpl implements MrpPackage {
 		TrainingsPackageImpl theTrainingsPackage = (TrainingsPackageImpl)(registeredPackage instanceof TrainingsPackageImpl ? registeredPackage : TrainingsPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BomPackage.eNS_URI);
 		BomPackageImpl theBomPackage = (BomPackageImpl)(registeredPackage instanceof BomPackageImpl ? registeredPackage : BomPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(MrpPackage.eNS_URI);
-		MrpPackageImpl theMrpPackage_1 = (MrpPackageImpl)(registeredPackage instanceof MrpPackageImpl ? registeredPackage : MrpPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(TechdataPackage.eNS_URI);
 		TechdataPackageImpl theTechdataPackage = (TechdataPackageImpl)(registeredPackage instanceof TechdataPackageImpl ? registeredPackage : TechdataPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BomPackage.eNS_URI);
-		BomPackageImpl theBomPackage_1 = (BomPackageImpl)(registeredPackage instanceof BomPackageImpl ? registeredPackage : BomPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(TechdataPackage.eNS_URI);
-		TechdataPackageImpl theTechdataPackage_1 = (TechdataPackageImpl)(registeredPackage instanceof TechdataPackageImpl ? registeredPackage : TechdataPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(CampaignPackage.eNS_URI);
 		CampaignPackageImpl theCampaignPackage = (CampaignPackageImpl)(registeredPackage instanceof CampaignPackageImpl ? registeredPackage : CampaignPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(ContactPackage.eNS_URI);
@@ -519,10 +513,7 @@ public class MrpPackageImpl extends EPackageImpl implements MrpPackage {
 		theRecruitmentPackage.createPackageContents();
 		theTrainingsPackage.createPackageContents();
 		theBomPackage.createPackageContents();
-		theMrpPackage_1.createPackageContents();
 		theTechdataPackage.createPackageContents();
-		theBomPackage_1.createPackageContents();
-		theTechdataPackage_1.createPackageContents();
 		theCampaignPackage.createPackageContents();
 		theContactPackage.createPackageContents();
 		theOpportunityPackage.createPackageContents();
@@ -619,10 +610,7 @@ public class MrpPackageImpl extends EPackageImpl implements MrpPackage {
 		theRecruitmentPackage.initializePackageContents();
 		theTrainingsPackage.initializePackageContents();
 		theBomPackage.initializePackageContents();
-		theMrpPackage_1.initializePackageContents();
 		theTechdataPackage.initializePackageContents();
-		theBomPackage_1.initializePackageContents();
-		theTechdataPackage_1.initializePackageContents();
 		theCampaignPackage.initializePackageContents();
 		theContactPackage.initializePackageContents();
 		theOpportunityPackage.initializePackageContents();
@@ -868,7 +856,6 @@ public class MrpPackageImpl extends EPackageImpl implements MrpPackage {
 		// Obtain other dependent packages
 		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
 		ProductPackage theProductPackage = (ProductPackage)EPackage.Registry.INSTANCE.getEPackage(ProductPackage.eNS_URI);
-		MrpPackage theMrpPackage_1 = (MrpPackage)EPackage.Registry.INSTANCE.getEPackage(MrpPackage.eNS_URI);
 		FacilityPackage theFacilityPackage = (FacilityPackage)EPackage.Registry.INSTANCE.getEPackage(FacilityPackage.eNS_URI);
 
 		// Create type parameters
@@ -883,8 +870,8 @@ public class MrpPackageImpl extends EPackageImpl implements MrpPackage {
 		initEClass(mrpEventEClass, MrpEvent.class, "MrpEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getMrpEvent_ProductId(), theProductPackage.getProduct(), null, "productId", null, 1, 1, MrpEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getMrpEvent_ProductId().getEKeys().add(theProductPackage.getProduct_ProductId());
-		initEReference(getMrpEvent_MrpEventTypeId(), theMrpPackage_1.getMrpEventType(), null, "mrpEventTypeId", null, 1, 1, MrpEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		getMrpEvent_MrpEventTypeId().getEKeys().add(theMrpPackage_1.getMrpEventType_MrpEventTypeId());
+		initEReference(getMrpEvent_MrpEventTypeId(), this.getMrpEventType(), null, "mrpEventTypeId", null, 1, 1, MrpEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getMrpEvent_MrpEventTypeId().getEKeys().add(this.getMrpEventType_MrpEventTypeId());
 		initEAttribute(getMrpEvent_EventDate(), ecorePackage.getEDate(), "eventDate", null, 1, 1, MrpEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMrpEvent_MrpId(), ecorePackage.getEString(), "mrpId", null, 1, 1, MrpEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getMrpEvent_EventName(), ecorePackage.getEString(), "eventName", null, 0, 1, MrpEvent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

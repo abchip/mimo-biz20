@@ -8,9 +8,10 @@ Automatic-Module-Name: org.abchip.mimo.biz.test
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Require-Bundle: org.abchip.mimo.core.base,
  org.abchip.mimo.biz.model,
+ org.abchip.mimo.biz.service;bundle-version="0.2.0",
+ org.abchip.mimo.biz.base,
  org.abchip.mimo.tester,
  org.abchip.mimo.tester.base,
- org.abchip.mimo.biz.base,
  org.eclipse.osgi
 Export-Package: org.abchip.mimo.biz.test.command,
  org.abchip.mimo.biz.test.command.runner,

@@ -1,0 +1,23 @@
+/**
+ * Copyright (c) 2017, 2020 ABChip and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ */
+package org.abchip.mimo.biz.model.product;
+
+import org.abchip.mimo.service.ServiceResponse;
+
+/**
+ * <!-- begin-user-doc -->
+ * A representation of the model object '<em><b>Calculate Product Price Response</b></em>'.
+ * <!-- end-user-doc -->
+ *
+ *
+ * @see org.abchip.mimo.biz.model.product.ProductPackage#getCalculateProductPriceResponse()
+ * @model
+ * @generated
+ */
+public interface CalculateProductPriceResponse extends ServiceResponse {
+} // CalculateProductPriceResponse

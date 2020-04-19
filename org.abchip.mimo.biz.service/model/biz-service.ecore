@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="service" nsURI="http://www.abchip.org/mimo/biz/service" nsPrefix="biz-service">
+  <eSubpackages name="accounting" nsURI="http://www.abchip.org/mimo/biz/service/accounting"
+      nsPrefix="biz-accounting"/>
+  <eSubpackages name="catalina" nsURI="http://www.abchip.org/mimo/biz/service/catalina"
+      nsPrefix="biz-catalina"/>
+  <eSubpackages name="common" nsURI="http://www.abchip.org/mimo/biz/service/common"
+      nsPrefix="biz-common"/>
+  <eSubpackages name="content" nsURI="http://www.abchip.org/mimo/biz/service/content"
+      nsPrefix="biz-content"/>
+  <eSubpackages name="entity" nsURI="http://www.abchip.org/mimo/biz/service/entity"
+      nsPrefix="biz-entity"/>
+  <eSubpackages name="humanres" nsURI="http://www.abchip.org/mimo/biz/service/humanres"
+      nsPrefix="biz-humanres"/>
+  <eSubpackages name="manufacturing" nsURI="http://www.abchip.org/mimo/biz/service/manufacturing"
+      nsPrefix="biz-manufacturing"/>
+  <eSubpackages name="marketing" nsURI="http://www.abchip.org/mimo/biz/service/marketing"
+      nsPrefix="biz-marketing"/>
+  <eSubpackages name="order" nsURI="http://www.abchip.org/mimo/biz/service/order"
+      nsPrefix="biz-order"/>
+  <eSubpackages name="party" nsURI="http://www.abchip.org/mimo/biz/service/party"
+      nsPrefix="biz-party"/>
+  <eSubpackages name="passport" nsURI="http://www.abchip.org/mimo/biz/service/passport"
+      nsPrefix="biz-passport"/>
+  <eSubpackages name="product" nsURI="http://www.abchip.org/mimo/biz/service/product"
+      nsPrefix="biz-product">
+    <eClassifiers xsi:type="ecore:EClass" name="CalculateProductPrice">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
+        <eTypeArguments eClassifier="#//product/CalculateProductPrice"/>
+        <eTypeArguments eClassifier="#//product/CalculateProductPriceResponse"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CalculateProductPriceResponse" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
+  </eSubpackages>
+  <eSubpackages name="security" nsURI="http://www.abchip.org/mimo/biz/service/security"
+      nsPrefix="biz-security"/>
+  <eSubpackages name="service" nsURI="http://www.abchip.org/mimo/biz/service/service"
+      nsPrefix="biz-service"/>
+  <eSubpackages name="shipment" nsURI="http://www.abchip.org/mimo/biz/service/shipment"
+      nsPrefix="biz-shipment"/>
+  <eSubpackages name="webapp" nsURI="http://www.abchip.org/mimo/biz/service/webapp"
+      nsPrefix="biz-webapp"/>
+  <eSubpackages name="workeffort" nsURI="http://www.abchip.org/mimo/biz/service/workeffort"
+      nsPrefix="biz-workeffort"/>
+</ecore:EPackage>

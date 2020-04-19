@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    copyrightText="Copyright (c) 2017, 2020 ABChip and others.&#xA;All rights reserved. This program and the accompanying materials&#xA;are made available under the terms of the Eclipse Public License v1.0&#xA;which accompanies this distribution, and is available at&#xA;http://www.eclipse.org/legal/epl-v10.html"
+    modelDirectory="/org.abchip.mimo.biz.service/src" editDirectory="/org.abchip.mimo.biz.service.edit/src"
+    editorDirectory="/org.abchip.mimo.biz.service.editor/src" modelPluginID="org.abchip.mimo.biz.service"
+    modelName="MIMO Biz Service" editPluginClass="org.abchip.mimo.biz.service.provider.BizCoreEditPlugin"
+    editorPluginClass="org.abchip.mimo.biz.service.presentation.BizCoreEditorPlugin"
+    rootExtendsInterface="" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    suppressEMFTypes="true" reflectiveDelegation="true" testsDirectory="/org.abchip.mimo.biz.service.tests/src"
+    testSuiteClass="org.abchip.mimo.biz.service.tests.BizCoreAllTests" importerID="org.eclipse.emf.importer.ecore"
+    featureDelegation="Reflective" containmentProxies="true" suppressNotification="true"
+    complianceLevel="8.0" copyrightFields="false" editPluginID="org.abchip.mimo.biz.service.edit"
+    editorPluginID="org.abchip.mimo.biz.service.editor" testsPluginID="org.abchip.mimo.biz.service.tests"
+    language="EN" usedGenPackages="../../org.abchip.mimo.core/model/mimo.genmodel#//mimo"
+    importOrganizing="true">
+  <foreignModel>biz-service.ecore</foreignModel>
+  <genPackages prefix="BizService" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
+      adapterFactory="false" ecorePackage="biz-service.ecore#/">
+    <nestedGenPackages prefix="Accounting" basePackage="org.abchip.mimo.biz.model"
+        disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//accounting"/>
+    <nestedGenPackages prefix="Catalina" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+        adapterFactory="false" ecorePackage="biz-service.ecore#//catalina"/>
+    <nestedGenPackages prefix="Common" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+        adapterFactory="false" ecorePackage="biz-service.ecore#//common"/>
+    <nestedGenPackages prefix="Content" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+        adapterFactory="false" ecorePackage="biz-service.ecore#//content"/>
+    <nestedGenPackages prefix="Entity" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+        adapterFactory="false" ecorePackage="biz-service.ecore#//entity"/>
+    <nestedGenPackages prefix="Humanres" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+        adapterFactory="false" ecorePackage="biz-service.ecore#//humanres"/>
+    <nestedGenPackages prefix="Manufacturing" basePackage="org.abchip.mimo.biz.model"
+        disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//manufacturing"/>
+    <nestedGenPackages prefix="Marketing" basePackage="org.abchip.mimo.biz.model"
+        disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//marketing"/>
+    <nestedGenPackages prefix="Order" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+        adapterFactory="false" ecorePackage="biz-service.ecore#//order"/>
+    <nestedGenPackages prefix="Party" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+        adapterFactory="false" ecorePackage="biz-service.ecore#//party"/>
+    <nestedGenPackages prefix="Passport" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+        adapterFactory="false" ecorePackage="biz-service.ecore#//passport"/>
+    <nestedGenPackages prefix="Product" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+        adapterFactory="false" ecorePackage="biz-service.ecore#//product">
+      <genClasses ecoreClass="biz-service.ecore#//product/CalculateProductPrice"/>
+      <genClasses ecoreClass="biz-service.ecore#//product/CalculateProductPriceResponse"/>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Security" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+        adapterFactory="false" ecorePackage="biz-service.ecore#//security"/>
+    <nestedGenPackages prefix="Service" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+        adapterFactory="false" ecorePackage="biz-service.ecore#//service"/>
+    <nestedGenPackages prefix="Shipment" basePackage="org.abchip.mimo.biz.model."
+        disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//shipment"/>
+    <nestedGenPackages prefix="Webapp" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+        adapterFactory="false" ecorePackage="biz-service.ecore#//webapp"/>
+    <nestedGenPackages prefix="Workeffort" basePackage="org.abchip.mimo.biz.model"
+        disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//workeffort"/>
+  </genPackages>
+</genmodel:GenModel>
