@@ -10,6 +10,7 @@ package org.abchip.mimo.biz.test.command;
 
 import javax.inject.Inject;
 
+import org.abchip.mimo.application.Application;
 import org.abchip.mimo.authentication.AuthenticationException;
 import org.abchip.mimo.authentication.AuthenticationFactory;
 import org.abchip.mimo.authentication.AuthenticationManager;
@@ -20,7 +21,7 @@ import org.abchip.mimo.core.base.cmd.BaseCommands;
 public abstract class BaseTestCommands extends BaseCommands {
 
 	@Inject
-	private AuthenticationManager authenticationManager;
+	private Application application;
 
 	protected ContextProvider login() throws AuthenticationException {
 
@@ -29,7 +30,7 @@ public abstract class BaseTestCommands extends BaseCommands {
 		authentication.setPassword("ofbiz");
 		authentication.setTenant("test");
 
-		ContextProvider contextProvider = authenticationManager.login(null, authentication);
+		ContextProvider contextProvider = application.getContext().get(AuthenticationManager.class).login(null, authentication);
 
 		return contextProvider;
 	}
