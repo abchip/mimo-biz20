@@ -19,5 +19,5 @@ import org.abchip.mimo.service.ServiceRequest;
  * @model
  * @generated
  */
-public interface CalculateProductPrice extends ServiceRequest<CalculateProductPrice, CalculateProductPriceResponse> {
+public interface CalculateProductPrice extends ServiceRequest<CalculateProductPriceResponse> {
 } // CalculateProductPrice

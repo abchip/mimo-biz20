@@ -23,6 +23,7 @@ import org.abchip.mimo.core.base.cmd.BaseCommands;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.service.Service;
+import org.abchip.mimo.service.ServiceCall;
 import org.abchip.mimo.service.ServiceManager;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
 
@@ -38,23 +39,20 @@ public class ServiceTestCommands extends BaseCommands {
 	public void _st_product(CommandInterpreter interpreter) throws Exception {
 		try (ContextProvider context = login()) {
 
-			CalculateProductPrice callable = serviceManager.prepare(context.get(), CalculateProductPrice.class);
-
-			CalculateProductPriceResponse response = callable.call();
-			response.toString();
-			// executor.setCurrencyUomId("EUR");
-			// executor.setPartyId("Company");
-
+			ServiceCall<CalculateProductPrice, CalculateProductPriceResponse> callable = serviceManager.prepare(context.get(), CalculateProductPrice.class);
 			// frame
 			Product product = resourceManager.getFrame(context.get(), Product.class).createProxy("Marketing");
 			Frame<Product> frame = product.isa();
 			frame.toString();
 
 			// service
-			CalculateProductPrice calculateProductPrice = serviceManager.prepare(context.get(), CalculateProductPrice.class);
-			Service<CalculateProductPrice, CalculateProductPriceResponse> service = calculateProductPrice.getService();
-			service.toString();
-
+			Service<CalculateProductPrice, CalculateProductPriceResponse> service = callable.getService();
+			service.getName();
+			
+			CalculateProductPriceResponse response = callable.call();
+			response.toString();
+			// executor.setCurrencyUomId("EUR");
+			// executor.setPartyId("Company");
 			// executor.setProduct(product);
 		}
 	}

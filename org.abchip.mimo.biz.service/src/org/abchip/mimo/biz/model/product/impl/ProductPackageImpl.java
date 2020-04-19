@@ -193,9 +193,7 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 
 		// Add supertypes to classes
 		EGenericType g1 = createEGenericType(theServicePackage.getServiceRequest());
-		EGenericType g2 = createEGenericType(this.getCalculateProductPrice());
-		g1.getETypeArguments().add(g2);
-		g2 = createEGenericType(this.getCalculateProductPriceResponse());
+		EGenericType g2 = createEGenericType(this.getCalculateProductPriceResponse());
 		g1.getETypeArguments().add(g2);
 		calculateProductPriceEClass.getEGenericSuperTypes().add(g1);
 		calculateProductPriceResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());

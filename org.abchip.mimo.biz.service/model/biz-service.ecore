@@ -27,7 +27,6 @@
       nsPrefix="biz-product">
     <eClassifiers xsi:type="ecore:EClass" name="CalculateProductPrice">
       <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
-        <eTypeArguments eClassifier="#//product/CalculateProductPrice"/>
         <eTypeArguments eClassifier="#//product/CalculateProductPriceResponse"/>
       </eGenericSuperTypes>
     </eClassifiers>

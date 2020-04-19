@@ -22,7 +22,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class CalculateProductPriceImpl extends ServiceRequestImpl<CalculateProductPrice, CalculateProductPriceResponse> implements CalculateProductPrice {
+public class CalculateProductPriceImpl extends ServiceRequestImpl<CalculateProductPriceResponse> implements CalculateProductPrice {
 	/**
 	 * 
 	 */
