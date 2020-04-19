@@ -39,8 +39,8 @@ import org.osgi.service.log.Logger;
 
 public class EdiServices {
 
-	private static final Logger LOGGER = Logs.getLogger(EdiServices.class); 
-	
+	private static final Logger LOGGER = Logs.getLogger(EdiServices.class);
+
 	public enum Services {
 		startEdiEngine, stopEdiEngine, createEdiEntity, updateEdiEntity, deleteEdiEntity, transmitMessages
 	}
@@ -90,7 +90,7 @@ public class EdiServices {
 	public static Map<String, Object> transmitMessages(DispatchContext ctx, Map<String, Object> params) {
 
 		LOGGER.trace("TODO transimit message {}", params.get("messageType"));
-		
+
 		return ServiceUtil.returnSuccess();
 	}
 
@@ -144,7 +144,7 @@ public class EdiServices {
 		Context context = BizContainerImpl.getOrCreateContext(delegator.getDelegatorTenantId());
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
-		EdiFrameSetup ediFrameSetup = EntityUtils.toEntity(resourceManager.getFrame(context, EdiFrameSetup.class), entityInstance);
+		EdiFrameSetup ediFrameSetup = EntityUtils.toEntity(context.getFrame(EdiFrameSetup.class), entityInstance);
 		EdiUtils.removeEdiEca(delegator, ediFrameSetup.getFrame());
 
 		ResourceReader<EdiFrameSetup> setupReader = resourceManager.getResourceReader(context, EdiFrameSetup.class, resource);
@@ -169,9 +169,8 @@ public class EdiServices {
 
 		Delegator delegator = ctx.getDelegator();
 		Context context = BizContainerImpl.getOrCreateContext(delegator.getDelegatorTenantId());
-		ResourceManager resourceManager = context.get(ResourceManager.class);
 
-		MessageType<?> messageType = EntityUtils.toEntity(resourceManager.getFrame(context, MessageType.class), entityInstance);
+		MessageType<?> messageType = EntityUtils.toEntity(context.getFrame(MessageType.class), entityInstance);
 
 		try {
 			long startTime = new java.util.Date().getTime();
@@ -189,7 +188,8 @@ public class EdiServices {
 		}
 	}
 
-	private static <E extends EntityIdentifiable> Map<String, Object> manageEdiEntity(Operations operation, DispatchContext ctx, Map<String, Object> params) throws DataInterchangeException, ResourceException {
+	private static <E extends EntityIdentifiable> Map<String, Object> manageEdiEntity(Operations operation, DispatchContext ctx, Map<String, Object> params)
+			throws DataInterchangeException, ResourceException {
 
 		GenericValue entityInstance = (GenericValue) params.get(VALUEATTR);
 		if (entityInstance == null)

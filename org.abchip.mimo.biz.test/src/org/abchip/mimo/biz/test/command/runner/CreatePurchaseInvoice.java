@@ -58,9 +58,9 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 		if (partyAcctgPreference != null && partyAcctgPreference.getInvoiceIdPrefix() != null) {
 			invoice.setInvoiceId(partyAcctgPreference.getInvoiceIdPrefix() + invoiceId);
 		}
-		invoice.setInvoiceTypeId(resourceManager.getFrame(context, InvoiceType.class).createProxy("PURCHASE_INVOICE"));
+		invoice.setInvoiceTypeId(context.getFrame(InvoiceType.class).createProxy("PURCHASE_INVOICE"));
 		invoice.setInvoiceDate(new Date());
-		invoice.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("INVOICE_IN_PROCESS"));
+		invoice.setStatusId(context.getFrame(StatusItem.class).createProxy("INVOICE_IN_PROCESS"));
 		invoice.setCurrencyUomId(UomServices.getUom(context));
 		invoice.setPartyId(company);
 		invoice.setPartyIdFrom(party);
@@ -70,7 +70,7 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 		// InvoiceStatus
 		ResourceWriter<InvoiceStatus> invoiceStatusWriter = resourceManager.getResourceWriter(context, InvoiceStatus.class);
 		InvoiceStatus invoiceStatus = invoiceStatusWriter.make();
-		invoiceStatus.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("INVOICE_IN_PROCESS"));
+		invoiceStatus.setStatusId(context.getFrame(StatusItem.class).createProxy("INVOICE_IN_PROCESS"));
 		invoiceStatus.setInvoiceId(invoice);
 		invoiceStatus.setStatusDate(new Date());
 		invoiceStatusWriter.create(invoiceStatus);
@@ -79,7 +79,7 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 		ResourceWriter<InvoiceContactMech> invoiceContactMechWriter = resourceManager.getResourceWriter(context, InvoiceContactMech.class);
 		InvoiceContactMech invoiceContactMech = invoiceContactMechWriter.make();
 		invoiceContactMech.setInvoiceId(invoice);
-		invoiceContactMech.setContactMechPurposeTypeId(resourceManager.getFrame(context, ContactMechPurposeType.class).createProxy("PAYMENT_LOCATION"));
+		invoiceContactMech.setContactMechPurposeTypeId(context.getFrame(ContactMechPurposeType.class).createProxy("PAYMENT_LOCATION"));
 		invoiceContactMech.setContactMechId(ContactMechServices.getLatestPostaAddress(context, company.getID()));
 		invoiceContactMechWriter.create(invoiceContactMech);
 
@@ -96,7 +96,7 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 		InvoiceItem invoiceItem = invoiceItemWriter.make();
 		invoiceItem.setInvoiceId(invoice);
 		invoiceItem.setInvoiceItemSeqId(itemSeqiD);
-		invoiceItem.setInvoiceItemTypeId(resourceManager.getFrame(context, InvoiceItemType.class).createProxy("INV_DPROD_ITEM"));
+		invoiceItem.setInvoiceItemTypeId(context.getFrame(InvoiceItemType.class).createProxy("INV_DPROD_ITEM"));
 
 		invoiceItem.setProductId(productPrice.getProductId());
 		invoiceItem.setDescription(productPrice.getProductId().getProductName());

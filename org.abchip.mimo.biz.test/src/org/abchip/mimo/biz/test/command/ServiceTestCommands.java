@@ -14,8 +14,8 @@ import org.abchip.mimo.biz.base.service.UomServices;
 import org.abchip.mimo.biz.model.product.CalculateProductPrice;
 import org.abchip.mimo.biz.model.product.CalculateProductPriceResponse;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextProvider;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.service.Service;
 import org.abchip.mimo.service.ServiceManager;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
@@ -24,22 +24,20 @@ public class ServiceTestCommands extends BaseTestCommands {
 
 	@Inject
 	private ServiceManager serviceManager;
-	@Inject
-	private ResourceManager resourceManager;
 
 	public void _st_product(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login()) {
+		try (ContextProvider contextProvider = login()) {
+			Context context = contextProvider.get();
 
-			CalculateProductPrice calculateProductPrice = serviceManager.prepare(context.get(), CalculateProductPrice.class);
-			Product product = resourceManager.getFrame(context.get(), Product.class).createProxy("Marketing");
-			calculateProductPrice.setProduct(product);
-			calculateProductPrice.setCurrencyUomId(UomServices.getUom(context.get()).getID());
+			CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
+			calculateProductPrice.setProduct(context.getFrame(Product.class).createProxy("Marketing"));
+			calculateProductPrice.setCurrencyUomId(UomServices.getUom(context).getID());
 
 			// service
-			Service<CalculateProductPrice, CalculateProductPriceResponse> service = serviceManager.getService(context.get(), calculateProductPrice);
+			Service<CalculateProductPrice, CalculateProductPriceResponse> service = serviceManager.getService(context, calculateProductPrice);
 			service.getName();
 
-			service = serviceManager.getService(context.get(), CalculateProductPrice.class);
+			service = serviceManager.getService(context, CalculateProductPrice.class);
 			service.getName();
 
 			CalculateProductPriceResponse response = calculateProductPrice.call();

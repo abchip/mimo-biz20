@@ -54,7 +54,7 @@ public class CreateProduct implements Callable<Long> {
 		product.setInternalName(product.getID());
 		product.setProductName(product.getID() + " sales product");
 		product.setDescription("Sales product " + product.getID());
-		product.setProductTypeId(resourceManager.getFrame(context, ProductType.class).createProxy("DIGITAL_GOOD"));
+		product.setProductTypeId(context.getFrame(ProductType.class).createProxy("DIGITAL_GOOD"));
 		product.setTaxable(true);
 		productWriter.create(product);
 
@@ -65,10 +65,10 @@ public class CreateProduct implements Callable<Long> {
 		productPrice.setPrice(new BigDecimal(1));
 		productPrice.setTaxInPrice(true);
 		productPrice.setFromDate(new Date());
-		productPrice.setProductPriceTypeId(resourceManager.getFrame(context, ProductPriceType.class).createProxy("DEFAULT_PRICE"));
-		productPrice.setProductPricePurposeId(resourceManager.getFrame(context, ProductPricePurpose.class).createProxy("PURCHASE"));
+		productPrice.setProductPriceTypeId(context.getFrame(ProductPriceType.class).createProxy("DEFAULT_PRICE"));
+		productPrice.setProductPricePurposeId(context.getFrame(ProductPricePurpose.class).createProxy("PURCHASE"));
 		productPrice.setCurrencyUomId(UomServices.getUom(context));
-		productPrice.setProductStoreGroupId(resourceManager.getFrame(context, ProductStoreGroup.class).createProxy("_NA_"));
+		productPrice.setProductStoreGroupId(context.getFrame(ProductStoreGroup.class).createProxy("_NA_"));
 		productPriceWriter.create(productPrice);
 	}
 	
@@ -80,7 +80,7 @@ public class CreateProduct implements Callable<Long> {
 		product.setInternalName(product.getID());
 		product.setProductName(product.getID() + " purchase product");
 		product.setDescription("Purchase product " + product.getID());
-		product.setProductTypeId(resourceManager.getFrame(context, ProductType.class).createProxy("FINISHED_GOOD"));
+		product.setProductTypeId(context.getFrame(ProductType.class).createProxy("FINISHED_GOOD"));
 		product.setTaxable(true);
 		productWriter.create(product);
 
@@ -96,7 +96,7 @@ public class CreateProduct implements Callable<Long> {
 			supplierProduct.setProductId(product);
 			supplierProduct.setPartyId(party);
 			supplierProduct.setAvailableFromDate(new Date());
-			supplierProduct.setSupplierPrefOrderId(resourceManager.getFrame(context, SupplierPrefOrder.class).createProxy("10_MAIN_SUPPL"));
+			supplierProduct.setSupplierPrefOrderId(context.getFrame(SupplierPrefOrder.class).createProxy("10_MAIN_SUPPL"));
 			supplierProduct.setMinimumOrderQuantity(new BigDecimal(1));
 			supplierProduct.setLastPrice(new BigDecimal(1));
 			supplierProduct.setCurrencyUomId(UomServices.getUom(context));

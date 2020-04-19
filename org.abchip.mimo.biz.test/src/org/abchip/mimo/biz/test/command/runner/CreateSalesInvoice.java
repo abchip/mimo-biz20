@@ -62,9 +62,9 @@ public class CreateSalesInvoice implements Callable<Long> {
 			invoice.setInvoiceId(partyAcctgPreference.getInvoiceIdPrefix() + invoiceId);
 		}
 
-		invoice.setInvoiceTypeId(resourceManager.getFrame(context, InvoiceType.class).createProxy("SALES_INVOICE"));
+		invoice.setInvoiceTypeId(context.getFrame(InvoiceType.class).createProxy("SALES_INVOICE"));
 		invoice.setInvoiceDate(new Date());
-		invoice.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("INVOICE_IN_PROCESS"));
+		invoice.setStatusId(context.getFrame(StatusItem.class).createProxy("INVOICE_IN_PROCESS"));
 		invoice.setCurrencyUomId(UomServices.getUom(context));
 		invoice.setPartyId(party);
 		invoice.setPartyIdFrom(company);
@@ -74,7 +74,7 @@ public class CreateSalesInvoice implements Callable<Long> {
 		// InvoiceStatus
 		ResourceWriter<InvoiceStatus> invoiceStatusWriter = resourceManager.getResourceWriter(context, InvoiceStatus.class);
 		InvoiceStatus invoiceStatus = invoiceStatusWriter.make();
-		invoiceStatus.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("INVOICE_IN_PROCESS"));
+		invoiceStatus.setStatusId(context.getFrame(StatusItem.class).createProxy("INVOICE_IN_PROCESS"));
 		invoiceStatus.setInvoiceId(invoice);
 		invoiceStatus.setStatusDate(new Date());
 		invoiceStatusWriter.create(invoiceStatus);
@@ -83,7 +83,7 @@ public class CreateSalesInvoice implements Callable<Long> {
 		ResourceWriter<InvoiceContactMech> invoiceContactMechWriter = resourceManager.getResourceWriter(context, InvoiceContactMech.class);
 		InvoiceContactMech invoiceContactMech = invoiceContactMechWriter.make();
 		invoiceContactMech.setInvoiceId(invoice);
-		invoiceContactMech.setContactMechPurposeTypeId(resourceManager.getFrame(context, ContactMechPurposeType.class).createProxy("PAYMENT_LOCATION"));
+		invoiceContactMech.setContactMechPurposeTypeId(context.getFrame(ContactMechPurposeType.class).createProxy("PAYMENT_LOCATION"));
 		invoiceContactMech.setContactMechId(ContactMechServices.getLatestPostaAddress(context, party.getID()));
 		invoiceContactMechWriter.create(invoiceContactMech);
 
@@ -92,31 +92,31 @@ public class CreateSalesInvoice implements Callable<Long> {
 		InvoiceRole invoiceRole = invoiceRoleWriter.make();
 		invoiceRole.setInvoiceId(invoice);
 		invoiceRole.setPartyId(company);
-		invoiceRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("BILL_FROM_VENDOR"));
+		invoiceRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("BILL_FROM_VENDOR"));
 		invoiceRoleWriter.create(invoiceRole);
 
 		invoiceRole = invoiceRoleWriter.make();
 		invoiceRole.setInvoiceId(invoice);
 		invoiceRole.setPartyId(party);
-		invoiceRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("BILL_TO_CUSTOMER"));
+		invoiceRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("BILL_TO_CUSTOMER"));
 		invoiceRoleWriter.create(invoiceRole);
 
 		invoiceRole = invoiceRoleWriter.make();
 		invoiceRole.setInvoiceId(invoice);
 		invoiceRole.setPartyId(party);
-		invoiceRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("SHIP_TO_CUSTOMER"));
+		invoiceRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("SHIP_TO_CUSTOMER"));
 		invoiceRoleWriter.create(invoiceRole);
 
 		invoiceRole = invoiceRoleWriter.make();
 		invoiceRole.setInvoiceId(invoice);
 		invoiceRole.setPartyId(party);
-		invoiceRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("END_USER_CUSTOMER"));
+		invoiceRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("END_USER_CUSTOMER"));
 		invoiceRoleWriter.create(invoiceRole);
 
 		invoiceRole = invoiceRoleWriter.make();
 		invoiceRole.setInvoiceId(invoice);
 		invoiceRole.setPartyId(party);
-		invoiceRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("PLACING_CUSTOMER"));
+		invoiceRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("PLACING_CUSTOMER"));
 		invoiceRoleWriter.create(invoiceRole);
 
 		// Items
@@ -133,7 +133,7 @@ public class CreateSalesInvoice implements Callable<Long> {
 		InvoiceItem invoiceItem = invoiceItemWriter.make();
 		invoiceItem.setInvoiceId(invoice);
 		invoiceItem.setInvoiceItemSeqId(itemSeqiD);
-		invoiceItem.setInvoiceItemTypeId(resourceManager.getFrame(context, InvoiceItemType.class).createProxy("INV_DPROD_ITEM"));
+		invoiceItem.setInvoiceItemTypeId(context.getFrame(InvoiceItemType.class).createProxy("INV_DPROD_ITEM"));
 		invoiceItem.setProductId(productPrice.getProductId());
 		invoiceItem.setDescription(productPrice.getProductId().getProductName());
 		invoiceItem.setQuantity(new BigDecimal(quantity));

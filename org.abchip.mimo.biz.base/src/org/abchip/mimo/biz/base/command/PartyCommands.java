@@ -58,9 +58,9 @@ public class PartyCommands extends BaseCommands {
 		ResourceWriter<Person> personWriter = resourceManager.getResourceWriter(context, Person.class);
 
 		Person person = PartyFactory.eINSTANCE.createPerson();
-		person.setPreferredCurrencyUomId(resourceManager.getFrame(context, Uom.class).createProxy("EUR"));
-		person.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("PARTY_ENABLED"));
-		person.setPartyTypeId(resourceManager.getFrame(context, PartyType.class).createProxy("PERSON"));
+		person.setPreferredCurrencyUomId(context.getFrame(Uom.class).createProxy("EUR"));
+		person.setStatusId(context.getFrame(StatusItem.class).createProxy("PARTY_ENABLED"));
+		person.setPartyTypeId(context.getFrame(PartyType.class).createProxy("PERSON"));
 		person.setPartyId(id);
 		person.setFirstName("Test hacker party person");
 		personWriter.create(person);
@@ -69,9 +69,9 @@ public class PartyCommands extends BaseCommands {
 		ResourceWriter<PartyGroup> groupWriter = resourceManager.getResourceWriter(context, PartyGroup.class);
 
 		PartyGroup partyGroup = PartyFactory.eINSTANCE.createPartyGroup();
-		partyGroup.setPreferredCurrencyUomId(resourceManager.getFrame(context, Uom.class).createProxy("EUR"));
-		partyGroup.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("PARTY_ENABLED"));
-		partyGroup.setPartyTypeId(resourceManager.getFrame(context, PartyType.class).createProxy("PARTY_GROUP"));
+		partyGroup.setPreferredCurrencyUomId(context.getFrame(Uom.class).createProxy("EUR"));
+		partyGroup.setStatusId(context.getFrame(StatusItem.class).createProxy("PARTY_ENABLED"));
+		partyGroup.setPartyTypeId(context.getFrame(PartyType.class).createProxy("PARTY_GROUP"));
 		partyGroup.setPartyId(id);
 		partyGroup.setGroupName("Test hacker party group");
 		groupWriter.create(partyGroup);

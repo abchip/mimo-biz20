@@ -72,8 +72,8 @@ public class TenantCommands extends BaseCommands {
 			ResourceWriter<Person> tenantPersonWriter = resourceManager.getResourceWriter(context, Person.class);
 			Person tenantPerson = PartyFactory.eINSTANCE.createPerson();
 			tenantPerson.setPartyId(tenantId);
-			tenantPerson.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("PARTY_ENABLED"));
-			tenantPerson.setPartyTypeId(resourceManager.getFrame(context, PartyType.class).createProxy("PERSON"));
+			tenantPerson.setStatusId(context.getFrame(StatusItem.class).createProxy("PARTY_ENABLED"));
+			tenantPerson.setPartyTypeId(context.getFrame(PartyType.class).createProxy("PERSON"));
 			tenantPerson.setFirstName("Tenant " + tenantId);
 			tenantPersonWriter.create(tenantPerson);
 		}

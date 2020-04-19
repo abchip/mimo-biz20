@@ -42,10 +42,10 @@ public class StressTestUtils {
 		productStore.setAutoOrderCcTryLaterNsf(false);
 		productStore.setAutoOrderCcTryOtherCards(false);
 		productStore.setCheckInventory(false);
-		productStore.setInventoryFacilityId(resourceManager.getFrame(context, Facility.class).createProxy("WebStoreWarehouse"));
+		productStore.setInventoryFacilityId(context.getFrame(Facility.class).createProxy("WebStoreWarehouse"));
 		productStore.setIsDemoStore(false);
 		productStore.setOneInventoryFacility(false);
-		productStore.setPayToPartyId(resourceManager.getFrame(context, Party.class).createProxy("Company"));
+		productStore.setPayToPartyId(context.getFrame(Party.class).createProxy("Company"));
 		productStore.setProdSearchExcludeVariants(false);
 		productStore.setProrateShipping(false);
 		productStore.setProrateTaxes(false);

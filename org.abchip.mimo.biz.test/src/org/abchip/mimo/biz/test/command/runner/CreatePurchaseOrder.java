@@ -63,7 +63,7 @@ public class CreatePurchaseOrder implements Callable<Long> {
 
 		ProductStore productStore = StressTestUtils.getProductStore(context, resourceManager);
 		PartyAcctgPreference partyAcctgPreference = PartyServices.getPartyAcctgPreference(context);
-		UserLogin userLogin = resourceManager.getFrame(context, UserLogin.class).createProxy(context.getContextDescription().getUser());
+		UserLogin userLogin = context.getFrame(UserLogin.class).createProxy(context.getContextDescription().getUser());
 
 		// Order Header
 		ResourceWriter<OrderHeader> orderHeaderWriter = resourceManager.getResourceWriter(context, OrderHeader.class);
@@ -75,12 +75,12 @@ public class CreatePurchaseOrder implements Callable<Long> {
 		if (productStore.getOrderNumberPrefix() != null)
 			orderHeader.setOrderId(productStore.getOrderNumberPrefix() + orderId);
 
-		orderHeader.setOrderTypeId(resourceManager.getFrame(context, OrderType.class).createProxy("PURCHASE_ORDER"));
+		orderHeader.setOrderTypeId(context.getFrame(OrderType.class).createProxy("PURCHASE_ORDER"));
 		orderHeader.setProductStoreId(productStore);
-		orderHeader.setSalesChannelEnumId(resourceManager.getFrame(context, Enumeration.class).createProxy("UNKNWN_SALES_CHANNEL"));
+		orderHeader.setSalesChannelEnumId(context.getFrame(Enumeration.class).createProxy("UNKNWN_SALES_CHANNEL"));
 		orderHeader.setOrderDate(new Date());
 		orderHeader.setEntryDate(new Date());
-		orderHeader.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("ORDER_CREATED"));
+		orderHeader.setStatusId(context.getFrame(StatusItem.class).createProxy("ORDER_CREATED"));
 		orderHeader.setCurrencyUom(UomServices.getUom(context));
 		orderHeader.setInvoicePerShipment(Boolean.TRUE);
 		orderHeader.setCreatedBy(userLogin);
@@ -92,7 +92,7 @@ public class CreatePurchaseOrder implements Callable<Long> {
 		ResourceWriter<OrderStatus> orderStatusWriter = resourceManager.getResourceWriter(context, OrderStatus.class);
 		OrderStatus orderStatus = orderStatusWriter.make(true);
 		orderStatus.setOrderId(orderHeader);
-		orderStatus.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("ORDER_CREATED"));
+		orderStatus.setStatusId(context.getFrame(StatusItem.class).createProxy("ORDER_CREATED"));
 		orderStatus.setStatusUserLogin(userLogin);
 		orderStatusWriter.create(orderStatus);
 
@@ -106,10 +106,10 @@ public class CreatePurchaseOrder implements Callable<Long> {
 		OrderItemShipGroup orderItemShipGroup = orderItemShipGroupWriter.make();
 		orderItemShipGroup.setOrderId(orderHeader);
 		orderItemShipGroup.setShipGroupSeqId(shipGroupSeqId);
-		orderItemShipGroup.setShipmentMethodTypeId(resourceManager.getFrame(context, ShipmentMethodType.class).createProxy("STANDARD"));
-		orderItemShipGroup.setCarrierPartyId(resourceManager.getFrame(context, Party.class).createProxy("_NA_"));
+		orderItemShipGroup.setShipmentMethodTypeId(context.getFrame(ShipmentMethodType.class).createProxy("STANDARD"));
+		orderItemShipGroup.setCarrierPartyId(context.getFrame(Party.class).createProxy("_NA_"));
 		orderItemShipGroup.setCarrierRoleTypeId("CARRIER");
-		orderItemShipGroup.setFacilityId(resourceManager.getFrame(context, Facility.class).createProxy("WebStoreWarehouse"));
+		orderItemShipGroup.setFacilityId(context.getFrame(Facility.class).createProxy("WebStoreWarehouse"));
 		orderItemShipGroupWriter.create(orderItemShipGroup);
 
 		// OrderItem
@@ -124,33 +124,33 @@ public class CreatePurchaseOrder implements Callable<Long> {
 		OrderRole orderRole = orderRoleWriter.make();
 		orderRole.setOrderId(orderHeader);
 		orderRole.setPartyId(PartyServices.getCompany(context));
-		orderRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("BILL_TO_CUSTOMER"));
+		orderRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("BILL_TO_CUSTOMER"));
 		orderRoleWriter.create(orderRole);
 
 		orderRole = orderRoleWriter.make();
 		orderRole.setOrderId(orderHeader);
 		orderRole.setPartyId(party);
-		orderRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("SHIP_FROM_VENDOR"));
+		orderRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("SHIP_FROM_VENDOR"));
 		orderRoleWriter.create(orderRole);
 
 		orderRole = orderRoleWriter.make();
 		orderRole.setOrderId(orderHeader);
 		orderRole.setPartyId(party);
-		orderRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("BILL_FROM_VENDOR"));
+		orderRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("BILL_FROM_VENDOR"));
 		orderRoleWriter.create(orderRole);
 
 		orderRole = orderRoleWriter.make();
 		orderRole.setOrderId(orderHeader);
 		orderRole.setPartyId(party);
-		orderRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("SUPPLIER_AGENT"));
+		orderRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("SUPPLIER_AGENT"));
 		orderRoleWriter.create(orderRole);
 
 		// OrderPaymentPreference
 		ResourceWriter<OrderPaymentPreference> orderPaymentPreferenceWriter = resourceManager.getResourceWriter(context, OrderPaymentPreference.class);
 		OrderPaymentPreference orderPaymentPreference = orderPaymentPreferenceWriter.make(true);
 		orderPaymentPreference.setOrderId(orderHeader);
-		orderPaymentPreference.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("PAYMENT_NOT_RECEIVED"));
-		orderPaymentPreference.setPaymentMethodTypeId(resourceManager.getFrame(context, PaymentMethodType.class).createProxy("EXT_COD"));
+		orderPaymentPreference.setStatusId(context.getFrame(StatusItem.class).createProxy("PAYMENT_NOT_RECEIVED"));
+		orderPaymentPreference.setPaymentMethodTypeId(context.getFrame(PaymentMethodType.class).createProxy("EXT_COD"));
 		orderPaymentPreferenceWriter.create(orderPaymentPreference);
 
 		// Inventory
@@ -170,14 +170,14 @@ public class CreatePurchaseOrder implements Callable<Long> {
 		OrderItem orderItem = orderItemWriter.make();
 		orderItem.setOrderId(orderHeader);
 		orderItem.setOrderItemSeqId(itemSeqiD);
-		orderItem.setOrderItemTypeId(resourceManager.getFrame(context, OrderItemType.class).createProxy("PRODUCT_ORDER_ITEM"));
+		orderItem.setOrderItemTypeId(context.getFrame(OrderItemType.class).createProxy("PRODUCT_ORDER_ITEM"));
 		orderItem.setProdCatalogId("ABChipTest");
 		orderItem.setProductId(supplierProduct.getProductId());
 		orderItem.setSupplierProductId(supplierProduct.getSupplierProductId());
 		orderItem.setIsPromo(false);
 		orderItem.setIsModifiedPrice(false);
 		orderItem.setItemDescription(supplierProduct.getProductId().getProductName());
-		orderItem.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("ITEM_CREATED"));
+		orderItem.setStatusId(context.getFrame(StatusItem.class).createProxy("ITEM_CREATED"));
 		orderItem.setQuantity(new BigDecimal(quantity));
 		orderItem.setUnitPrice(supplierProduct.getLastPrice());
 		orderItemWriter.create(orderItem);
@@ -187,8 +187,8 @@ public class CreatePurchaseOrder implements Callable<Long> {
 		OrderStatus orderStatus = orderStatusWriter.make(true);
 		orderStatus.setOrderId(orderHeader);
 		orderStatus.setOrderItemSeqId(itemSeqiD);
-		orderStatus.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("ITEM_CREATED"));
-		orderStatus.setStatusUserLogin(resourceManager.getFrame(context, UserLogin.class).createProxy(context.getContextDescription().getUser()));
+		orderStatus.setStatusId(context.getFrame(StatusItem.class).createProxy("ITEM_CREATED"));
+		orderStatus.setStatusUserLogin(context.getFrame(UserLogin.class).createProxy(context.getContextDescription().getUser()));
 		orderStatusWriter.create(orderStatus);
 
 		// OrderItemShipGroupAssoc
@@ -218,7 +218,7 @@ public class CreatePurchaseOrder implements Callable<Long> {
 			ResourceWriter<OrderContactMech> orderContactMechWriter = resourceManager.getResourceWriter(context, OrderContactMech.class);
 			OrderContactMech orderContactMech = orderContactMechWriter.make();
 			orderContactMech.setOrderId(orderHeader);
-			orderContactMech.setContactMechPurposeTypeId(resourceManager.getFrame(context, ContactMechPurposeType.class).createProxy(purposeType));
+			orderContactMech.setContactMechPurposeTypeId(context.getFrame(ContactMechPurposeType.class).createProxy(purposeType));
 			orderContactMech.setContactMechId(contactMech);
 			orderContactMechWriter.create(orderContactMech);
 		}

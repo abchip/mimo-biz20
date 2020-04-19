@@ -58,8 +58,8 @@ public class CreateParty implements Callable<Long> {
 		// Create PartyGroup
 		ResourceWriter<PartyGroup> partyGroupWriter = resourceManager.getResourceWriter(context, PartyGroup.class);
 		PartyGroup partyGroup = partyGroupWriter.make(true);
-		partyGroup.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("PARTY_ENABLED"));
-		partyGroup.setPartyTypeId(resourceManager.getFrame(context, PartyType.class).createProxy("PARTY_GROUP"));
+		partyGroup.setStatusId(context.getFrame(StatusItem.class).createProxy("PARTY_ENABLED"));
+		partyGroup.setPartyTypeId(context.getFrame(PartyType.class).createProxy("PARTY_GROUP"));
 		partyGroup.setPreferredCurrencyUomId(UomServices.getUom(context));
 		// nome
 		partyGroup.setGroupName("Description Party " + role.toLowerCase() + " " + partyGroup.getID());
@@ -74,8 +74,8 @@ public class CreateParty implements Callable<Long> {
 		// Create PartyGroup
 		ResourceWriter<Person> personWriter = resourceManager.getResourceWriter(context, Person.class);
 		Person person = personWriter.make(true);
-		person.setStatusId(resourceManager.getFrame(context, StatusItem.class).createProxy("PARTY_ENABLED"));
-		person.setPartyTypeId(resourceManager.getFrame(context, PartyType.class).createProxy("PERSON"));
+		person.setStatusId(context.getFrame(StatusItem.class).createProxy("PARTY_ENABLED"));
+		person.setPartyTypeId(context.getFrame(PartyType.class).createProxy("PERSON"));
 		person.setPreferredCurrencyUomId(UomServices.getUom(context));
 		person.setFirstName("First name " + role.toLowerCase() + " " + person.getID());
 		person.setLastName("Last name " + role.toLowerCase() + " " + person.getID());
@@ -90,45 +90,45 @@ public class CreateParty implements Callable<Long> {
 		ResourceWriter<PartyRole> partyRoleWriter = resourceManager.getResourceWriter(context, PartyRole.class);
 		PartyRole partyRole = partyRoleWriter.make();
 		partyRole.setPartyId(party);
-		partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy(role));
+		partyRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy(role));
 		partyRoleWriter.create(partyRole);
 
 		switch (role) {
 		case "CUSTOMER":
 			partyRole = partyRoleWriter.make();
 			partyRole.setPartyId(party);
-			partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("BILL_TO_CUSTOMER"));
+			partyRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("BILL_TO_CUSTOMER"));
 			partyRoleWriter.create(partyRole);
 
 			partyRole = partyRoleWriter.make();
 			partyRole.setPartyId(party);
-			partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("SHIP_TO_CUSTOMER"));
+			partyRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("SHIP_TO_CUSTOMER"));
 			partyRoleWriter.create(partyRole);
 
 			partyRole = partyRoleWriter.make();
 			partyRole.setPartyId(party);
-			partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("END_USER_CUSTOMER"));
+			partyRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("END_USER_CUSTOMER"));
 			partyRoleWriter.create(partyRole);
 
 			partyRole = partyRoleWriter.make();
 			partyRole.setPartyId(party);
-			partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("PLACING_CUSTOMER"));
+			partyRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("PLACING_CUSTOMER"));
 			partyRoleWriter.create(partyRole);
 			break;
 		case "SUPPLIER":
 			partyRole = partyRoleWriter.make();
 			partyRole.setPartyId(party);
-			partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("BILL_FROM_VENDOR"));
+			partyRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("BILL_FROM_VENDOR"));
 			partyRoleWriter.create(partyRole);
 
 			partyRole = partyRoleWriter.make();
 			partyRole.setPartyId(party);
-			partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("SHIP_FROM_VENDOR"));
+			partyRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("SHIP_FROM_VENDOR"));
 			partyRoleWriter.create(partyRole);
 
 			partyRole = partyRoleWriter.make();
 			partyRole.setPartyId(party);
-			partyRole.setRoleTypeId(resourceManager.getFrame(context, RoleType.class).createProxy("SUPPLIER_AGENT"));
+			partyRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("SUPPLIER_AGENT"));
 			partyRoleWriter.create(partyRole);
 			break;
 		}
@@ -144,9 +144,9 @@ public class CreateParty implements Callable<Long> {
 		postalAddress.setCity("indirizzo Party " + party.getID());
 		// indirizzo_cap
 		postalAddress.setPostalCode(StressTestUtils.generateRandomString(5, true));
-		postalAddress.setContactMechTypeId(resourceManager.getFrame(context, ContactMechType.class).createProxy("POSTAL_ADDRESS"));
+		postalAddress.setContactMechTypeId(context.getFrame(ContactMechType.class).createProxy("POSTAL_ADDRESS"));
 		postalAddress.setCountryGeoId(GeoServices.getGeo(context));
-		postalAddress.setStateProvinceGeoId(resourceManager.getFrame(context, Geo.class).createProxy("IT-RM"));
+		postalAddress.setStateProvinceGeoId(context.getFrame(Geo.class).createProxy("IT-RM"));
 		postalAddressWriter.create(postalAddress);
 		createPartyContactMech(context, resourceManager, party, postalAddress, Arrays.asList("GENERAL_LOCATION", "SHIPPING_LOCATION"));
 
@@ -155,14 +155,14 @@ public class CreateParty implements Callable<Long> {
 		ResourceWriter<ContactMech> contactMechWriter = resourceManager.getResourceWriter(context, ContactMech.class);
 		ContactMech contactMech = contactMechWriter.make(true);
 		contactMech.setInfoString("info" + party.getID() + "@gmail.com");
-		contactMech.setContactMechTypeId(resourceManager.getFrame(context, ContactMechType.class).createProxy("EMAIL_ADDRESS"));
+		contactMech.setContactMechTypeId(context.getFrame(ContactMechType.class).createProxy("EMAIL_ADDRESS"));
 		contactMechWriter.create(contactMech);
 		createPartyContactMech(context, resourceManager, party, contactMech, Arrays.asList("PRIMARY_EMAIL"));
 
 		// TelecomNumber
 		ResourceWriter<TelecomNumber> telecomNumberWriter = resourceManager.getResourceWriter(context, TelecomNumber.class);
 		TelecomNumber telecomNumber = telecomNumberWriter.make(true);
-		telecomNumber.setContactMechTypeId(resourceManager.getFrame(context, ContactMechType.class).createProxy("TELECOM_NUMBER"));
+		telecomNumber.setContactMechTypeId(context.getFrame(ContactMechType.class).createProxy("TELECOM_NUMBER"));
 		telecomNumber.setContactNumber(StressTestUtils.generateRandomString(3, true) + " " + StressTestUtils.generateRandomString(7, true));
 		telecomNumberWriter.create(telecomNumber);
 		createPartyContactMech(context, resourceManager, party, telecomNumber, Arrays.asList("PRIMARY_PHONE"));
@@ -184,7 +184,7 @@ public class CreateParty implements Callable<Long> {
 		ResourceWriter<PartyIdentification> partyIdentificationWriter = resourceManager.getResourceWriter(context, PartyIdentification.class);
 		PartyIdentification partyIdentification = partyIdentificationWriter.make();
 		partyIdentification.setPartyId(party);
-		partyIdentification.setPartyIdentificationTypeId(resourceManager.getFrame(context, PartyIdentificationType.class).createProxy("VCARD_FN_ORIGIN"));
+		partyIdentification.setPartyIdentificationTypeId(context.getFrame(PartyIdentificationType.class).createProxy("VCARD_FN_ORIGIN"));
 		partyIdentification.setIdValue(StressTestUtils.generateRandomString(16, false));
 		partyIdentificationWriter.create(partyIdentification);
 	}
@@ -204,7 +204,7 @@ public class CreateParty implements Callable<Long> {
 			PartyContactMechPurpose partyContactMechPurpose = partyContactMechPurposeWriter.make();
 			partyContactMechPurpose.setPartyId(party);
 			partyContactMechPurpose.setContactMechId(contactMech);
-			partyContactMechPurpose.setContactMechPurposeTypeId(resourceManager.getFrame(context, ContactMechPurposeType.class).createProxy(type));
+			partyContactMechPurpose.setContactMechPurposeTypeId(context.getFrame(ContactMechPurposeType.class).createProxy(type));
 			partyContactMechPurpose.setFromDate(new Date());
 			partyContactMechPurposeWriter.create(partyContactMechPurpose);
 		}
