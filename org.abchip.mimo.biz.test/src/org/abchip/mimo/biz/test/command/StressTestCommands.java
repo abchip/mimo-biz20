@@ -14,13 +14,6 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-import javax.inject.Inject;
-
-import org.abchip.mimo.application.Application;
-import org.abchip.mimo.authentication.AuthenticationException;
-import org.abchip.mimo.authentication.AuthenticationFactory;
-import org.abchip.mimo.authentication.AuthenticationManager;
-import org.abchip.mimo.authentication.AuthenticationUserPassword;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.price.ProductPrice;
 import org.abchip.mimo.biz.test.command.runner.CreateAgreement;
@@ -33,13 +26,9 @@ import org.abchip.mimo.biz.test.command.runner.CreateSalesInvoice;
 import org.abchip.mimo.biz.test.command.runner.CreateSalesOrder;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextProvider;
-import org.abchip.mimo.core.base.cmd.BaseCommands;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
 
-public class StressTestCommands extends BaseCommands {
-
-	@Inject
-	private Application application;
+public class StressTestCommands extends BaseTestCommands {
 
 	public void _stressTest(CommandInterpreter interpreter) throws Exception {
 		try (ContextProvider context = login()) {
@@ -197,7 +186,7 @@ public class StressTestCommands extends BaseCommands {
 		long time2 = System.currentTimeMillis();
 		interpreter.println("Total time execution StressTestPurchaseOrder: " + (time2 - time1));
 	}
-	
+
 	private void stressTestPurchaseInvoice(CommandInterpreter interpreter, Context context) throws Exception {
 
 		List<Party> parties = StressTestUtils.getEnabledSupplier(context);
@@ -275,19 +264,6 @@ public class StressTestCommands extends BaseCommands {
 			contexts.get(i).close();
 		interpreter.println("done");
 
-	}
-
-	private ContextProvider login() throws AuthenticationException {
-
-		AuthenticationUserPassword authentication = AuthenticationFactory.eINSTANCE.createAuthenticationUserPassword();
-		authentication.setUser("abchip-test");
-		authentication.setPassword("ofbiz");
-		authentication.setTenant("test");
-		AuthenticationManager authenticationManager = application.getContext().get(AuthenticationManager.class);
-
-		ContextProvider contextProvider = authenticationManager.login(null, authentication);
-
-		return contextProvider;
 	}
 
 	@Override
