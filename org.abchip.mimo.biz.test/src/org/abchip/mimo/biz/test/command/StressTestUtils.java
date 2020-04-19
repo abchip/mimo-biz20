@@ -42,10 +42,10 @@ public class StressTestUtils {
 		productStore.setAutoOrderCcTryLaterNsf(false);
 		productStore.setAutoOrderCcTryOtherCards(false);
 		productStore.setCheckInventory(false);
-		productStore.setInventoryFacilityId(context.getFrame(Facility.class).createProxy("WebStoreWarehouse"));
+		productStore.setInventoryFacilityId(context.createProxy(Facility.class, "WebStoreWarehouse"));
 		productStore.setIsDemoStore(false);
 		productStore.setOneInventoryFacility(false);
-		productStore.setPayToPartyId(context.getFrame(Party.class).createProxy("Company"));
+		productStore.setPayToPartyId(context.createProxy(Party.class, "Company"));
 		productStore.setProdSearchExcludeVariants(false);
 		productStore.setProrateShipping(false);
 		productStore.setProrateTaxes(false);
@@ -151,7 +151,7 @@ public class StressTestUtils {
 		ResourceReader<SupplierProduct> supplierProductReader = resourceManager.getResourceReader(context, SupplierProduct.class);
 		List<SupplierProduct> supplierProduct = new ArrayList<SupplierProduct>();
 		String filter = "partyId = \"" + party.getID() + "\"";
-		
+
 		try (EntityIterator<SupplierProduct> supplierProducts = supplierProductReader.find(filter)) {
 			for (SupplierProduct product : supplierProducts) {
 
@@ -162,7 +162,7 @@ public class StressTestUtils {
 		}
 		return supplierProduct;
 	}
-	
+
 	public static String generateRandomString(int length, boolean onlyNumbers) {
 		// You can customize the characters that you want to add into
 		// the random strings

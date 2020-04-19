@@ -28,11 +28,11 @@ import org.abchip.mimo.resource.ResourceWriter;
 public class CreateProduct implements Callable<Long> {
 
 	Context context;
-	
+
 	public CreateProduct(Context context) {
-        this.context = context;
-    }
-	
+		this.context = context;
+	}
+
 	@Override
 	public Long call() throws Exception {
 		long time1 = System.currentTimeMillis();
@@ -54,7 +54,7 @@ public class CreateProduct implements Callable<Long> {
 		product.setInternalName(product.getID());
 		product.setProductName(product.getID() + " sales product");
 		product.setDescription("Sales product " + product.getID());
-		product.setProductTypeId(context.getFrame(ProductType.class).createProxy("DIGITAL_GOOD"));
+		product.setProductTypeId(context.createProxy(ProductType.class, "DIGITAL_GOOD"));
 		product.setTaxable(true);
 		productWriter.create(product);
 
@@ -65,13 +65,13 @@ public class CreateProduct implements Callable<Long> {
 		productPrice.setPrice(new BigDecimal(1));
 		productPrice.setTaxInPrice(true);
 		productPrice.setFromDate(new Date());
-		productPrice.setProductPriceTypeId(context.getFrame(ProductPriceType.class).createProxy("DEFAULT_PRICE"));
-		productPrice.setProductPricePurposeId(context.getFrame(ProductPricePurpose.class).createProxy("PURCHASE"));
+		productPrice.setProductPriceTypeId(context.createProxy(ProductPriceType.class, "DEFAULT_PRICE"));
+		productPrice.setProductPricePurposeId(context.createProxy(ProductPricePurpose.class, "PURCHASE"));
 		productPrice.setCurrencyUomId(UomServices.getUom(context));
-		productPrice.setProductStoreGroupId(context.getFrame(ProductStoreGroup.class).createProxy("_NA_"));
+		productPrice.setProductStoreGroupId(context.createProxy(ProductStoreGroup.class, "_NA_"));
 		productPriceWriter.create(productPrice);
 	}
-	
+
 	private void createPurchaseProduct() throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 		// Product
@@ -80,14 +80,14 @@ public class CreateProduct implements Callable<Long> {
 		product.setInternalName(product.getID());
 		product.setProductName(product.getID() + " purchase product");
 		product.setDescription("Purchase product " + product.getID());
-		product.setProductTypeId(context.getFrame(ProductType.class).createProxy("FINISHED_GOOD"));
+		product.setProductTypeId(context.createProxy(ProductType.class, "FINISHED_GOOD"));
 		product.setTaxable(true);
 		productWriter.create(product);
 
 		ResourceWriter<SupplierProduct> supplierProductWriter = resourceManager.getResourceWriter(context, SupplierProduct.class);
-		ResourceWriter<ProductFacility > productFacilityWriter = resourceManager.getResourceWriter(context, ProductFacility .class);
+		ResourceWriter<ProductFacility> productFacilityWriter = resourceManager.getResourceWriter(context, ProductFacility.class);
 		ResourceReader<Facility> facilityReader = resourceManager.getResourceReader(context, Facility.class);
-		
+
 		// List of supplier
 		List<Party> parties = StressTestUtils.getEnabledSupplier(context);
 		for (Party party : parties) {
@@ -96,7 +96,7 @@ public class CreateProduct implements Callable<Long> {
 			supplierProduct.setProductId(product);
 			supplierProduct.setPartyId(party);
 			supplierProduct.setAvailableFromDate(new Date());
-			supplierProduct.setSupplierPrefOrderId(context.getFrame(SupplierPrefOrder.class).createProxy("10_MAIN_SUPPL"));
+			supplierProduct.setSupplierPrefOrderId(context.createProxy(SupplierPrefOrder.class, "10_MAIN_SUPPL"));
 			supplierProduct.setMinimumOrderQuantity(new BigDecimal(1));
 			supplierProduct.setLastPrice(new BigDecimal(1));
 			supplierProduct.setCurrencyUomId(UomServices.getUom(context));

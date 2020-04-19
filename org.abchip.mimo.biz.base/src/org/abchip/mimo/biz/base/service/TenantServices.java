@@ -84,7 +84,7 @@ public class TenantServices {
 		ResourceWriter<UserLoginSecurityGroup> userLoginSecurityGroupWriter = resourceManager.getResourceWriter(context, UserLoginSecurityGroup.class, tenantId);
 		UserLoginSecurityGroup userLoginSecurityGroup = userLoginSecurityGroupWriter.make();
 		userLoginSecurityGroup.setUserLoginId(userLogin);
-		userLoginSecurityGroup.setGroupId(context.getFrame(SecurityGroup.class).createProxy("SUPER"));
+		userLoginSecurityGroup.setGroupId(context.createProxy(SecurityGroup.class, "SUPER"));
 		userLoginSecurityGroup.setFromDate(new Date());
 		userLoginSecurityGroupWriter.create(userLoginSecurityGroup, clean);
 	}

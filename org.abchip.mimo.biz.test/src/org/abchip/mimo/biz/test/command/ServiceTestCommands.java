@@ -30,7 +30,7 @@ public class ServiceTestCommands extends BaseTestCommands {
 			Context context = contextProvider.get();
 
 			CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
-			calculateProductPrice.setProduct(context.getFrame(Product.class).createProxy("Marketing"));
+			calculateProductPrice.setProduct(context.createProxy(Product.class, "Marketing"));
 			calculateProductPrice.setCurrencyUomId(UomServices.getUom(context).getID());
 
 			// service

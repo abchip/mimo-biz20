@@ -52,12 +52,14 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 	private static final Logger LOGGER = Logs.getLogger(OFBizResourceImpl.class);
 
+	private Context context = null;
 	private Frame<E> frame = null;
 	private Delegator delegator = null;
 
 	private ModelEntity modelEntity = null;
 
 	public OFBizResourceImpl(Context context, Frame<E> frame, Delegator delegator) {
+		this.context = context;
 		this.frame = frame;
 		this.delegator = delegator;
 		this.modelEntity = delegator.getModelEntity(frame.getName());
@@ -199,7 +201,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			if (genericValue != null) {
 				entity = EntityUtils.toEntity(frame, genericValue);
 				if (proxy)
-					entity = frame.createProxy(entity.getID());
+					entity = context.createProxy(frame, entity.getID());
 			}
 
 			TransactionUtil.commit(beganTransaction);
@@ -276,7 +278,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			for (GenericValue genericValue : eq.queryList()) {
 				E entity = EntityUtils.toEntity(frame, genericValue);
 				if (proxy)
-					entity = frame.createProxy(entity.getID());
+					entity = context.createProxy(frame, entity.getID());
 
 				entities.add(entity);
 			}

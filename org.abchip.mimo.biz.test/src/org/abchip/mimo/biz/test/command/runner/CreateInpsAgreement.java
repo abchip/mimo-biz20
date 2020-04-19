@@ -58,7 +58,7 @@ public class CreateInpsAgreement implements Callable<Long> {
 		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Flag dichiarazioni non mendaci: SI");
 
 		// AgreementTerm
-		TermType termType = context.getFrame(TermType.class).createProxy("INDEMNIFICATION");
+		TermType termType = context.createProxy(TermType.class, "INDEMNIFICATION");
 		ResourceWriter<AgreementTerm> agreementTermWriter = resourceManager.getResourceWriter(context, AgreementTerm.class);
 		AgreementTerm agreementTerm = agreementTermWriter.make(true);
 		agreementTerm.setTermTypeId(termType);

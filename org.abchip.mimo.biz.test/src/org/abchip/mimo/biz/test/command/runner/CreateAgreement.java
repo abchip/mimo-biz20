@@ -47,9 +47,9 @@ public class CreateAgreement implements Callable<Long> {
 	private void createAgreement() throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
-		RoleType roleTypeFrom = context.getFrame(RoleType.class).createProxy("INTERNAL_ORGANIZATIO");
-		RoleType roleTypeTo = context.getFrame(RoleType.class).createProxy("CUSTOMER");
-		AgreementType agreementType = context.getFrame(AgreementType.class).createProxy("SALES_AGREEMENT");
+		RoleType roleTypeFrom = context.createProxy(RoleType.class, "INTERNAL_ORGANIZATIO");
+		RoleType roleTypeTo = context.createProxy(RoleType.class, "CUSTOMER");
+		AgreementType agreementType = context.createProxy(AgreementType.class, "SALES_AGREEMENT");
 
 		// Agreement
 		ResourceWriter<Agreement> agreementWriter = resourceManager.getResourceWriter(context, Agreement.class);
@@ -86,9 +86,9 @@ public class CreateAgreement implements Callable<Long> {
 
 	private String createRow(ResourceManager resourceManager, Agreement agreement) throws ResourceException {
 
-		AgreementItemType agreementType = context.getFrame(AgreementItemType.class).createProxy("AGREEMENT_PRICING_PR");
-		TermType termType = context.getFrame(TermType.class).createProxy("FIN_PAYMENT_FIXDAY");
-		InvoiceItemType invoiceItemType = context.getFrame(InvoiceItemType.class).createProxy("INV_DPROD_ITEM");
+		AgreementItemType agreementType = context.createProxy(AgreementItemType.class, "AGREEMENT_PRICING_PR");
+		TermType termType = context.createProxy(TermType.class, "FIN_PAYMENT_FIXDAY");
+		InvoiceItemType invoiceItemType = context.createProxy(InvoiceItemType.class, "INV_DPROD_ITEM");
 
 		// AgreementItem
 		ResourceWriter<AgreementItem> agreementItemWriter = resourceManager.getResourceWriter(context, AgreementItem.class);

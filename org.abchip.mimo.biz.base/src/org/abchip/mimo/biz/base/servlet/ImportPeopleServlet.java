@@ -86,9 +86,9 @@ public class ImportPeopleServlet extends BaseServlet {
 
 						Person person = PartyFactory.eINSTANCE.createPerson();
 						// Party
-						person.setPreferredCurrencyUomId(context.getFrame(Uom.class).createProxy("EUR"));
-						person.setStatusId(context.getFrame(StatusItem.class).createProxy("PARTY_ENABLED"));
-						person.setPartyTypeId(context.getFrame(PartyType.class).createProxy("PERSON"));
+						person.setPreferredCurrencyUomId(context.createProxy(Uom.class, "EUR"));
+						person.setStatusId(context.createProxy(StatusItem.class, "PARTY_ENABLED"));
+						person.setPartyTypeId(context.createProxy(PartyType.class, "PERSON"));
 						// Person
 						person.setPartyId(id);
 						person.setFirstName(Strings.escapeJava(name));
@@ -98,7 +98,7 @@ public class ImportPeopleServlet extends BaseServlet {
 						// Party Role
 						PartyRole partyRole = PartyFactory.eINSTANCE.createPartyRole();
 						partyRole.setPartyId(person);
-						partyRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("CUSTOMER"));
+						partyRole.setRoleTypeId(context.createProxy(RoleType.class, "CUSTOMER"));
 						partyRoleWriter.create(partyRole, true);
 
 						// PartyTaxAuthInfo
