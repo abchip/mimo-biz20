@@ -60,9 +60,16 @@ public class CalculateProductPriceImpl extends ServiceRequestImpl<CalculateProdu
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 1;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return 0;
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	/**

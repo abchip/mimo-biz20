@@ -386,6 +386,26 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 
 		// Create resource
 		createResource(eNS_URI);
+
+		// Create annotations
+		// mimo-ent-frame
+		createMimoentframeAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>mimo-ent-frame</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createMimoentframeAnnotations() {
+		String source = "mimo-ent-frame";
+		addAnnotation
+		  (calculateProductPriceEClass,
+		   source,
+		   new String[] {
+			   "owner", "product"
+		   });
 	}
 
 } //ProductPackageImpl

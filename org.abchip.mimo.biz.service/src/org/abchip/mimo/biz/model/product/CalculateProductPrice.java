@@ -24,7 +24,7 @@ import org.abchip.mimo.service.ServiceRequest;
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.ProductPackage#getCalculateProductPrice()
- * @model
+ * @model annotation="mimo-ent-frame owner='product'"
  * @generated
  */
 public interface CalculateProductPrice extends ServiceRequest<CalculateProductPriceResponse> {
