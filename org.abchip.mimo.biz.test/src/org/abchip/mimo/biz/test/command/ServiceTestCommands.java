@@ -37,9 +37,6 @@ public class ServiceTestCommands extends BaseTestCommands {
 			Service<CalculateProductPrice, CalculateProductPriceResponse> service = serviceManager.getService(context, calculateProductPrice);
 			service.getName();
 
-			service = serviceManager.getService(context, CalculateProductPrice.class);
-			service.getName();
-
 			CalculateProductPriceResponse response = calculateProductPrice.call();
 			response.toString();
 			// executor.setCurrencyUomId("EUR");
