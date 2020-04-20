@@ -82,6 +82,15 @@ public interface ProductPackage extends EPackage {
 	int CALCULATE_PRODUCT_PRICE__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
+
+	/**
 	 * The feature id for the '<em><b>Product</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
