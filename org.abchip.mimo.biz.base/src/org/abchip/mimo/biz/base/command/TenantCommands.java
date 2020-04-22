@@ -19,7 +19,6 @@ import org.abchip.mimo.biz.model.party.party.PartyType;
 import org.abchip.mimo.biz.model.party.party.Person;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.base.cmd.BaseCommands;
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
@@ -28,10 +27,6 @@ public class TenantCommands extends BaseCommands {
 
 	@Inject
 	private ResourceManager resourceManager;
-
-	public <E extends EntityIdentifiable> void _loginTenant(CommandInterpreter interpreter) throws Exception {
-		this.login(nextArgument(interpreter));
-	}
 
 	public void _createMaster(CommandInterpreter interpreter) throws Exception {
 

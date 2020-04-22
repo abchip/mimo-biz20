@@ -65,13 +65,12 @@ import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
 import org.abchip.mimo.biz.plugins.entity.EntityUtils;
 import org.abchip.mimo.biz.plugins.paymentGateway.StripePaymentManager;
 import org.abchip.mimo.context.Context;
-import org.abchip.mimo.core.base.cmd.BaseCommands;
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.resource.ResourceWriter;
+import org.abchip.mimo.tester.base.BaseTestCommands;
 import org.apache.ofbiz.accounting.invoice.InvoiceWorker;
 import org.apache.ofbiz.base.util.UtilFormatOut;
 import org.apache.ofbiz.entity.Delegator;
@@ -86,7 +85,7 @@ import org.eclipse.osgi.framework.console.CommandInterpreter;
 import com.stripe.Stripe;
 import com.stripe.model.PaymentIntent;
 
-public class BizTestCommands extends BaseCommands {
+public class BizTestCommands extends BaseTestCommands {
 
 	@Inject
 	private ResourceManager resourceManager;
@@ -102,10 +101,6 @@ public class BizTestCommands extends BaseCommands {
 
 	private static final String TAX_AUTH_PARTY_ID = "ITA_ADE";
 	private static final String TAX_AUTH_GEO_ID = "ITA";
-
-	public <E extends EntityIdentifiable> void _login2(CommandInterpreter interpreter) throws Exception {
-		this.login(nextArgument(interpreter));
-	}
 
 	public void _getCreditCardParty(CommandInterpreter interpreter) throws Exception {
 		Context context = this.getContext();

@@ -18,7 +18,6 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 import javax.inject.Inject;
 
-import org.abchip.mimo.application.Application;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.base.cmd.BaseCommands;
 import org.abchip.mimo.entity.EntityContainer;
@@ -45,10 +44,7 @@ public class FiCCommands extends BaseCommands {
 
 	@Inject
 	private ResourceManager resourceManager;
-	@Inject
-	private Application application;
 
-	
 	public <E extends EntityIdentifiable> void _importFicAll(CommandInterpreter interpreter) throws Exception {
 		importFicRegistry(interpreter);
 		importFicProduct(interpreter);
@@ -61,19 +57,19 @@ public class FiCCommands extends BaseCommands {
 	public <E extends EntityIdentifiable> void _importFicProduct(CommandInterpreter interpreter) throws Exception {
 		importFicProduct(interpreter);
 	}
-	
+
 	private void importFicRegistry(CommandInterpreter interpreter) throws Exception {
-//		Context context = this.getContext();
-		Context context = application.getContext();
+		Context context = this.getContext();
 		AtomicInteger partyCounter = new AtomicInteger(9999);
 		AtomicInteger contactMechCounter = new AtomicInteger(9999);
 
 		importRegistry(interpreter, context, partyCounter, contactMechCounter, "FiC_Customer", "clienti", "lista_clienti", "CUSTOMER");
 		importRegistry(interpreter, context, partyCounter, contactMechCounter, "FiC_Supplier", "fornitori", "lista_fornitori", "SUPPLIER");
 	}
-	
+
 	@SuppressWarnings("unchecked")
-	private void importRegistry(CommandInterpreter interpreter, Context context, AtomicInteger partyCounter, AtomicInteger contactMechCounter, String containerName, String typeSubject, String nameArray, String role) throws UnsupportedEncodingException, ResourceException {
+	private void importRegistry(CommandInterpreter interpreter, Context context, AtomicInteger partyCounter, AtomicInteger contactMechCounter, String containerName, String typeSubject,
+			String nameArray, String role) throws UnsupportedEncodingException, ResourceException {
 		EntityContainer container = EntityFactory.eINSTANCE.createEntityContainer();
 		container.setName(containerName);
 
@@ -90,14 +86,20 @@ public class FiCCommands extends BaseCommands {
 			HttpPost postMethod = null;
 			HashMap<?, ?> fiCResult = null;
 			try (CloseableHttpClient client = HttpClients.custom().build()) {
-				URI uri = new URIBuilder().setPath(urlFiC + typeSubject+"/lista").build();
+				URI uri = new URIBuilder().setPath(urlFiC + typeSubject + "/lista").build();
 				postMethod = new HttpPost(uri);
 				postMethod.setEntity(params);
 				try (CloseableHttpResponse postResponse = client.execute(postMethod)) {
 					String responseString = new BasicResponseHandler().handleResponse(postResponse);
 					interpreter.println(responseString);
 					if (postResponse.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
-		//				String responseString = "{\"lista_clienti\":[{\"id\":\"33363131\",\"nome\":\"Giuliano Giancristofaro\",\"referente\":\"\",\"indirizzo_via\":\"via rezzara 1\",\"indirizzo_cap\":\"24036\",\"indirizzo_citta\":\"Ponte San Pietro\",\"indirizzo_provincia\":\"BG\",\"indirizzo_extra\":\"\",\"paese\":\"Italia\",\"mail\":\"giuliano.giancristofaro@gmail.com\",\"pec\":\"giuliano.giancristofaro@legalmail.it\",\"tel\":\"001 0123456\",\"fax\":\"123 5684798\",\"piva\":\"02580920169\",\"cf\":\"GNCGLN73P01H501V\",\"termini_pagamento\":\"30\",\"pagamento_fine_mese\":false,\"val_iva_default\":\"22\",\"desc_iva_default\":\"\",\"extra\":\"\",\"PA\":true,\"PA_codice\":\"\"}],\"pagina_corrente\":1,\"numero_pagine\":1,\"success\":true}";
+						// String responseString =
+						// "{\"lista_clienti\":[{\"id\":\"33363131\",\"nome\":\"Giuliano
+						// Giancristofaro\",\"referente\":\"\",\"indirizzo_via\":\"via rezzara
+						// 1\",\"indirizzo_cap\":\"24036\",\"indirizzo_citta\":\"Ponte San
+						// Pietro\",\"indirizzo_provincia\":\"BG\",\"indirizzo_extra\":\"\",\"paese\":\"Italia\",\"mail\":\"giuliano.giancristofaro@gmail.com\",\"pec\":\"giuliano.giancristofaro@legalmail.it\",\"tel\":\"001
+						// 0123456\",\"fax\":\"123
+						// 5684798\",\"piva\":\"02580920169\",\"cf\":\"GNCGLN73P01H501V\",\"termini_pagamento\":\"30\",\"pagamento_fine_mese\":false,\"val_iva_default\":\"22\",\"desc_iva_default\":\"\",\"extra\":\"\",\"PA\":true,\"PA_codice\":\"\"}],\"pagina_corrente\":1,\"numero_pagine\":1,\"success\":true}";
 						fiCResult = new ObjectMapper().readValue(responseString, HashMap.class);
 						boolean success = (boolean) fiCResult.get("success");
 						if (success) {
@@ -106,67 +108,70 @@ public class FiCCommands extends BaseCommands {
 							number_page = (int) fiCResult.get("numero_pagine");
 							//
 							for (LinkedHashMap<String, Object> record : arrayList) {
-							// TODO non viene riportata la tipologia del cliente. 
-							// TODO Al momento tratto tutti come Party_Group
+								// TODO non viene riportata la tipologia del cliente.
+								// TODO Al momento tratto tutti come Party_Group
 								String partyId = Integer.toString(partyCounter.incrementAndGet());
 								String id = (String) record.get("id");
 								String nome = (String) record.get("nome");
 								String referente = (String) record.get("referente");
-								
+
 								FiCCommandUtils.createPartyGroup(container, context, partyId, id, nome, referente);
 								FiCCommandUtils.createPartyRole(container, context, partyId, role);
-								
-								// Indirizzo 
+
+								// Indirizzo
 								String indirizzo_via = (String) record.get("indirizzo_via");
 								String indirizzo_citta = (String) record.get("indirizzo_citta");
 								String indirizzo_cap = (String) record.get("indirizzo_cap");
 								String indirizzo_provincia = (String) record.get("indirizzo_provincia");
 								String indirizzo_paese = (String) record.get("paese");
-								if (!(indirizzo_via).isEmpty()
-									|| !(indirizzo_citta).isEmpty()
-									|| !(indirizzo_cap).isEmpty()
-									|| !(indirizzo_provincia).isEmpty()) {
-									FiCCommandUtils.createPostaAddress(container, context, partyId, contactMechCounter, nome, indirizzo_via, indirizzo_citta, indirizzo_cap, indirizzo_provincia, indirizzo_paese);
+								if (!(indirizzo_via).isEmpty() || !(indirizzo_citta).isEmpty() || !(indirizzo_cap).isEmpty() || !(indirizzo_provincia).isEmpty()) {
+									FiCCommandUtils.createPostaAddress(container, context, partyId, contactMechCounter, nome, indirizzo_via, indirizzo_citta, indirizzo_cap,
+											indirizzo_provincia, indirizzo_paese);
 								}
 								// mail
-								if (record.get("mail")!= null && !((String) record.get("mail")).isEmpty()) {
-									FiCCommandUtils.createContactMechMail(container, context, (String) record.get("mail"), partyId, contactMechCounter,"EMAIL_ADDRESS", "PRIMARY_EMAIL");
+								if (record.get("mail") != null && !((String) record.get("mail")).isEmpty()) {
+									FiCCommandUtils.createContactMechMail(container, context, (String) record.get("mail"), partyId, contactMechCounter, "EMAIL_ADDRESS", "PRIMARY_EMAIL");
 								}
 								// pec
-								if (record.get("pec")!= null && !((String) record.get("pec")).isEmpty()) {
-									FiCCommandUtils.createContactMechMail(container, context, (String) record.get("mail"), partyId, contactMechCounter,"EMAIL_ADDRESS", "BILLING_EMAIL");
+								if (record.get("pec") != null && !((String) record.get("pec")).isEmpty()) {
+									FiCCommandUtils.createContactMechMail(container, context, (String) record.get("mail"), partyId, contactMechCounter, "EMAIL_ADDRESS", "BILLING_EMAIL");
 								}
-								
+
 								// tel
-								if (record.get("tel")!= null && !((String) record.get("tel")).isEmpty()) {
+								if (record.get("tel") != null && !((String) record.get("tel")).isEmpty()) {
 									FiCCommandUtils.createContactMechTelecom(container, context, (String) record.get("tel"), partyId, contactMechCounter, "TELECOM_NUMBER", "PRIMARY_PHONE");
 								}
 								// fax
-								if (record.get("fax")!= null && !((String) record.get("fax")).isEmpty()) {
+								if (record.get("fax") != null && !((String) record.get("fax")).isEmpty()) {
 									FiCCommandUtils.createContactMechTelecom(container, context, (String) record.get("tel"), partyId, contactMechCounter, "TELECOM_NUMBER", "FAX_NUMBER");
 								}
 								// piva
-								if (record.get("piva")!= null && !((String) record.get("piva")).isEmpty()) {
+								if (record.get("piva") != null && !((String) record.get("piva")).isEmpty()) {
 									FiCCommandUtils.createTaxAuth(container, context, partyId, (String) record.get("piva"));
 								}
 								// cf
-								if (record.get("cf")!= null && !((String) record.get("cf")).isEmpty()) {
+								if (record.get("cf") != null && !((String) record.get("cf")).isEmpty()) {
 									FiCCommandUtils.createIdentificationCard(container, context, partyId, (String) record.get("cf"));
 								}
 								// termini_pagamento
-								if (record.get("termini_pagamento")!= null && !((String) record.get("termini_pagamento")).isEmpty()) {}
+								if (record.get("termini_pagamento") != null && !((String) record.get("termini_pagamento")).isEmpty()) {
+								}
 								// pagamento_fine_mese
-								//						if (!((String) record.get("pagamento_fine_mese")).isEmpty()) {}
+								// if (!((String) record.get("pagamento_fine_mese")).isEmpty()) {}
 								// val_iva_default
-								if (record.get("val_iva_default")!= null && !((String) record.get("val_iva_default")).isEmpty()) {}
+								if (record.get("val_iva_default") != null && !((String) record.get("val_iva_default")).isEmpty()) {
+								}
 								// desc_iva_default
-								if (record.get("desc_iva_default")!= null && !((String) record.get("desc_iva_default")).isEmpty()) {}
+								if (record.get("desc_iva_default") != null && !((String) record.get("desc_iva_default")).isEmpty()) {
+								}
 								// extra
-								if (record.get("extra")!= null && !((String) record.get("extra")).isEmpty()) {}
+								if (record.get("extra") != null && !((String) record.get("extra")).isEmpty()) {
+								}
 								// PA
-								//						if (!((String) record.get("PA")).isEmpty()) {}
+								// if (!((String) record.get("PA")).isEmpty()) {}
 								// PA_codice
-								if (record.get("PA_codice")!= null && !((String) record.get("PA_codice")).isEmpty()) {}
+								if (record.get("PA_codice") != null && !((String) record.get("PA_codice")).isEmpty()) {
+								}
 							}
 						}
 					} else {
@@ -189,25 +194,14 @@ public class FiCCommands extends BaseCommands {
 	private void importFicProduct(CommandInterpreter interpreter) throws Exception {
 		/*
 		 * 
-		 * {
-			  "id": "14806135",
-			  "cod": "0001",
-			  "nome": "Prodotto 1",
-			  "prezzo_netto": "10.00000",
-			  "prezzo_ivato": false,
-			  "costo": "0.00000",
-			  "valore_iva": "-1",
-			  "desc_iva": "-1",
-			  "um": "NR",
-			  "categoria": "Prodotto finito",
-			  "desc": "Prodotto numero 1",
-			  "note": "",
-			  "magazzino": false
-    		}
+		 * { "id": "14806135", "cod": "0001", "nome": "Prodotto 1", "prezzo_netto":
+		 * "10.00000", "prezzo_ivato": false, "costo": "0.00000", "valore_iva": "-1",
+		 * "desc_iva": "-1", "um": "NR", "categoria": "Prodotto finito", "desc":
+		 * "Prodotto numero 1", "note": "", "magazzino": false }
 		 */
-//		Context context = this.getContext();
-		Context context = application.getContext();
-		
+
+		Context context = this.getContext();
+
 		EntityContainer container = EntityFactory.eINSTANCE.createEntityContainer();
 		container.setName("FiC_Product");
 
@@ -231,16 +225,22 @@ public class FiCCommands extends BaseCommands {
 					String responseString = new BasicResponseHandler().handleResponse(postResponse);
 					interpreter.println(responseString);
 					if (postResponse.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
-		//				String responseString = "{\"lista_clienti\":[{\"id\":\"33363131\",\"nome\":\"Giuliano Giancristofaro\",\"referente\":\"\",\"indirizzo_via\":\"via rezzara 1\",\"indirizzo_cap\":\"24036\",\"indirizzo_citta\":\"Ponte San Pietro\",\"indirizzo_provincia\":\"BG\",\"indirizzo_extra\":\"\",\"paese\":\"Italia\",\"mail\":\"giuliano.giancristofaro@gmail.com\",\"pec\":\"giuliano.giancristofaro@legalmail.it\",\"tel\":\"001 0123456\",\"fax\":\"123 5684798\",\"piva\":\"02580920169\",\"cf\":\"GNCGLN73P01H501V\",\"termini_pagamento\":\"30\",\"pagamento_fine_mese\":false,\"val_iva_default\":\"22\",\"desc_iva_default\":\"\",\"extra\":\"\",\"PA\":true,\"PA_codice\":\"\"}],\"pagina_corrente\":1,\"numero_pagine\":1,\"success\":true}";
+						// String responseString =
+						// "{\"lista_clienti\":[{\"id\":\"33363131\",\"nome\":\"Giuliano
+						// Giancristofaro\",\"referente\":\"\",\"indirizzo_via\":\"via rezzara
+						// 1\",\"indirizzo_cap\":\"24036\",\"indirizzo_citta\":\"Ponte San
+						// Pietro\",\"indirizzo_provincia\":\"BG\",\"indirizzo_extra\":\"\",\"paese\":\"Italia\",\"mail\":\"giuliano.giancristofaro@gmail.com\",\"pec\":\"giuliano.giancristofaro@legalmail.it\",\"tel\":\"001
+						// 0123456\",\"fax\":\"123
+						// 5684798\",\"piva\":\"02580920169\",\"cf\":\"GNCGLN73P01H501V\",\"termini_pagamento\":\"30\",\"pagamento_fine_mese\":false,\"val_iva_default\":\"22\",\"desc_iva_default\":\"\",\"extra\":\"\",\"PA\":true,\"PA_codice\":\"\"}],\"pagina_corrente\":1,\"numero_pagine\":1,\"success\":true}";
 						fiCResult = new ObjectMapper().readValue(responseString, HashMap.class);
 						boolean success = (boolean) fiCResult.get("success");
 						if (success) {
 							arrayList = (ArrayList<LinkedHashMap<String, Object>>) fiCResult.get("lista_prodotti");
-							current_page = Integer.parseInt((String) fiCResult.get("pagina_corrente")) ;
+							current_page = Integer.parseInt((String) fiCResult.get("pagina_corrente"));
 							number_page = (int) fiCResult.get("numero_pagine");
 							//
 							for (LinkedHashMap<String, Object> record : arrayList) {
-								
+
 								String id = (String) record.get("id");
 								String cod = (String) record.get("cod");
 								String nome = (String) record.get("nome");
@@ -249,16 +249,16 @@ public class FiCCommands extends BaseCommands {
 								String um = (String) record.get("um");
 								FiCCommandUtils.createProduct(container, context, id, cod, nome, desc, categoria, um);
 
-								BigDecimal price =  null;
-								if((String) record.get("prezzo_netto") != null) {
-									price =  new BigDecimal((String) record.get("prezzo_netto"));
+								BigDecimal price = null;
+								if ((String) record.get("prezzo_netto") != null) {
+									price = new BigDecimal((String) record.get("prezzo_netto"));
 								} else if ((String) record.get("prezzo_lordo") != null) {
-									price =  new BigDecimal((String) record.get("prezzo_lordo"));
+									price = new BigDecimal((String) record.get("prezzo_lordo"));
 								} else {
-									price =  new BigDecimal(0);
+									price = new BigDecimal(0);
 								}
-								
-								BigDecimal cost =  new BigDecimal((String) record.get("costo"));
+
+								BigDecimal cost = new BigDecimal((String) record.get("costo"));
 								boolean iva = (boolean) record.get("prezzo_ivato");
 								String ivaValue = (String) record.get("valore_iva");
 								String ivaDescription = (String) record.get("desc_iva");
@@ -280,7 +280,7 @@ public class FiCCommands extends BaseCommands {
 		ResourceWriter<EntityIdentifiable> entityWriter = resourceManager.getResourceWriter(context, "EntityContainer");
 		entityWriter.create(container, true);
 	}
-	
+
 	@Override
 	public String getHelp() {
 		// TODO Auto-generated method stub

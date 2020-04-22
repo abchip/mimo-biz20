@@ -38,10 +38,6 @@ public class BizSeedCommands extends BaseCommands {
 	@Inject
 	private ResourceManager resourceManager;
 
-	public <E extends EntityIdentifiable> void _loginBizSeed(CommandInterpreter interpreter) throws Exception {
-		this.login(nextArgument(interpreter));
-	}
-
 	public void _convertSeeds(CommandInterpreter interpreter) throws Exception {
 		Context context = this.getContext();
 		/*

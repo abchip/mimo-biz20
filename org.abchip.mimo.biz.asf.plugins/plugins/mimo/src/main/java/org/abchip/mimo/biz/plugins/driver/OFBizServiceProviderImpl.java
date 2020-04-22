@@ -8,14 +8,17 @@
  */
 package org.abchip.mimo.biz.plugins.driver;
 
+import java.util.Map;
 import java.util.concurrent.Future;
 
+import org.abchip.mimo.biz.plugins.entity.EntityUtils;
 import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceRequest;
 import org.abchip.mimo.service.ServiceResponse;
 import org.abchip.mimo.service.impl.ServiceProviderImpl;
 import org.apache.ofbiz.entity.Delegator;
 import org.apache.ofbiz.entity.DelegatorFactory;
+import org.apache.ofbiz.service.GenericServiceException;
 import org.apache.ofbiz.service.LocalDispatcher;
 import org.apache.ofbiz.service.ServiceContainer;
 
@@ -25,14 +28,28 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 	public <V extends ServiceResponse, R extends ServiceRequest<V>> V execute(R request) throws ServiceException {
 
 		LocalDispatcher dispatcher = getLocalDispatcher(request);
-		return null;
+
+		try {
+			Map<String, ? extends Object> context = EntityUtils.toBizContext(dispatcher.getDelegator(), request);
+			dispatcher.runSync(request.getServiceName(), context);
+			return null;
+		} catch (GenericServiceException e) {
+			throw new ServiceException(e);
+		}
 	}
 
 	@Override
 	public <V extends ServiceResponse, R extends ServiceRequest<V>> Future<V> submit(R request) throws ServiceException {
 
 		LocalDispatcher dispatcher = getLocalDispatcher(request);
-		return null;
+
+		try {
+			Map<String, ? extends Object> context = EntityUtils.toBizContext(dispatcher.getDelegator(), request);
+			dispatcher.runAsync(request.getServiceName(), context);
+			return null;
+		} catch (GenericServiceException e) {
+			throw new ServiceException(e);
+		}
 	}
 
 	private <V extends ServiceResponse, R extends ServiceRequest<V>> LocalDispatcher getLocalDispatcher(R request) throws ServiceException {

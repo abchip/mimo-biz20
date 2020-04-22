@@ -18,6 +18,7 @@ import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextProvider;
 import org.abchip.mimo.service.Service;
 import org.abchip.mimo.service.ServiceManager;
+import org.abchip.mimo.tester.base.BaseTestCommands;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
 
 public class ServiceTestCommands extends BaseTestCommands {

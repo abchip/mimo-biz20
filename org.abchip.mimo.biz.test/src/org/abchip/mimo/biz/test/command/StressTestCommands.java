@@ -26,6 +26,7 @@ import org.abchip.mimo.biz.test.command.runner.CreateSalesInvoice;
 import org.abchip.mimo.biz.test.command.runner.CreateSalesOrder;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextProvider;
+import org.abchip.mimo.tester.base.BaseTestCommands;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
 
 public class StressTestCommands extends BaseTestCommands {
