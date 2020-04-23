@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-contact="http://www.abchip.org/mimo/biz/model/party/contact" xmlns:biz-enum="http://www.abchip.org/mimo/biz/model/common/enum" xmlns:biz-login="http://www.abchip.org/mimo/biz/model/security/login" xmlns:biz-opportunity="http://www.abchip.org/mimo/biz/model/marketing/opportunity" xmlns:biz-party="http://www.abchip.org/mimo/biz/model/party/party" xmlns:biz-property="http://www.abchip.org/mimo/biz/model/common/property" xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/model/security/securitygroup" xmlns:biz-status="http://www.abchip.org/mimo/biz/model/common/status" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/party/contact http://www.abchip.org/mimo/biz/model/party#//contact http://www.abchip.org/mimo/biz/model/common/enum http://www.abchip.org/mimo/biz/model/common#//enum http://www.abchip.org/mimo/biz/model/party/party http://www.abchip.org/mimo/biz/model/party#//party http://www.abchip.org/mimo/biz/model/common/property http://www.abchip.org/mimo/biz/model/common#//property http://www.abchip.org/mimo/biz/model/common/status http://www.abchip.org/mimo/biz/model/common#//status http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="018_data_MarketingDemoData">
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#MARKETING_ADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#MARKETING_CREATE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#MARKETING_DELETE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#MARKETING_UPDATE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#MARKETING_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#VIEWADMIN"/>
+    <permissionId href="SecurityPermission#MARKETING_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#BIZADMIN"/>
+    <permissionId href="SecurityPermission#MARKETING_ADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#SFA_ADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#SFA_CREATE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#SFA_DELETE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#SFA_UPDATE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#SFA_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#VIEWADMIN"/>
+    <permissionId href="SecurityPermission#SFA_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#BIZADMIN"/>
+    <permissionId href="SecurityPermission#SFA_ADMIN"/>
+  </contents>
+  <contents xsi:type="biz-property:SystemProperty" systemPropertyId="save.outgoing.directory" systemResourceId="sfa" description="If the save.outgoing.directory is specified the file will be saved there, else it will be saved under OFBIZ_HOME"/>
+  <contents xsi:type="biz-party:Party" partyId="sfa100">
+    <partyTypeId href="PartyType#PARTY_GROUP"/>
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyGroup" partyId="sfa100" groupName="A profitable Account"/>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#sfa100"/>
+    <roleTypeId href="RoleType#_NA_"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#sfa100"/>
+    <roleTypeId href="RoleType#ACCOUNT"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyId href="Party#sfa100"/>
+  </contents>
+  <contents xsi:type="biz-contact:ContactMech" contactMechId="sfa100">
+    <contactMechTypeId href="ContactMechType#POSTAL_ADDRESS"/>
+  </contents>
+  <contents xsi:type="biz-contact:ContactMech" contactMechId="sfa101">
+    <contactMechTypeId href="ContactMechType#TELECOM_NUMBER"/>
+  </contents>
+  <contents xsi:type="biz-contact:ContactMech" contactMechId="sfa102" infoString="ofbiztest@example.com">
+    <contactMechTypeId href="ContactMechType#EMAIL_ADDRESS"/>
+  </contents>
+  <contents xsi:type="biz-contact:PostalAddress" contactMechId="sfa100" address1="151 Madison street." city="Edison" postalCode="32451">
+    <countryGeoId href="Geo#USA"/>
+    <stateProvinceGeoId href="Geo#CA"/>
+  </contents>
+  <contents xsi:type="biz-contact:TelecomNumber" contactMechId="sfa101" areaCode="33" contactNumber="12456" countryCode="1"/>
+  <contents xsi:type="biz-contact:PartyContactMech" fromDate="2000-01-01T00:00:00.000+0100">
+    <partyId href="Party#sfa100"/>
+    <contactMechId href="ContactMech#sfa100"/>
+  </contents>
+  <contents xsi:type="biz-contact:PartyContactMech" fromDate="2000-01-01T00:00:00.000+0100">
+    <partyId href="Party#sfa100"/>
+    <contactMechId href="ContactMech#sfa101"/>
+  </contents>
+  <contents xsi:type="biz-contact:PartyContactMech" fromDate="2000-01-01T00:00:00.000+0100">
+    <partyId href="Party#sfa100"/>
+    <contactMechId href="ContactMech#sfa102"/>
+  </contents>
+  <contents xsi:type="biz-contact:PartyContactMechPurpose" fromDate="2000-01-01T00:00:00.000+0100">
+    <contactMechPurposeTypeId href="ContactMechPurposeType#GENERAL_LOCATION"/>
+    <partyId href="Party#sfa100"/>
+    <contactMechId href="ContactMech#sfa100"/>
+  </contents>
+  <contents xsi:type="biz-contact:PartyContactMechPurpose" fromDate="2000-01-01T00:00:00.000+0100">
+    <contactMechPurposeTypeId href="ContactMechPurposeType#PRIMARY_PHONE"/>
+    <partyId href="Party#sfa100"/>
+    <contactMechId href="ContactMech#sfa101"/>
+  </contents>
+  <contents xsi:type="biz-contact:PartyContactMechPurpose" fromDate="2000-01-01T00:00:00.000+0100">
+    <contactMechPurposeTypeId href="ContactMechPurposeType#PRIMARY_EMAIL"/>
+    <partyId href="Party#sfa100"/>
+    <contactMechId href="ContactMech#sfa102"/>
+  </contents>
+  <contents xsi:type="biz-party:Party" partyId="DemoCustomer1">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#DemoCustomer1"/>
+    <roleTypeId href="RoleType#CONTACT"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyId href="Party#DemoCustomer1"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRelationship" fromDate="2000-01-01T00:00:00.000+0100">
+    <partyIdFrom href="Party#sfa100"/>
+    <partyIdTo href="Party#DemoCustomer1"/>
+    <roleTypeIdFrom href="RoleType#ACCOUNT"/>
+    <roleTypeIdTo href="RoleType#CONTACT"/>
+    <partyRelationshipTypeId href="PartyRelationshipType#EMPLOYMENT"/>
+  </contents>
+  <contents xsi:type="biz-party:Party" partyId="DemoCustomer2">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#DemoCustomer2"/>
+    <roleTypeId href="RoleType#CONTACT"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyId href="Party#DemoCustomer2"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRelationship" fromDate="2000-01-01T00:00:00.000+0100">
+    <partyIdFrom href="Party#DemoCustCompany"/>
+    <partyIdTo href="Party#DemoCustomer2"/>
+    <roleTypeIdFrom href="RoleType#ACCOUNT"/>
+    <roleTypeIdTo href="RoleType#CONTACT"/>
+    <partyRelationshipTypeId href="PartyRelationshipType#EMPLOYMENT"/>
+  </contents>
+  <contents xsi:type="biz-party:Party" partyId="DemoCustomer3">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#DemoCustomer3"/>
+    <roleTypeId href="RoleType#CONTACT"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyId href="Party#DemoCustomer3"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRelationship" fromDate="2000-01-01T00:00:00.000+0100">
+    <partyIdFrom href="Party#DemoCustCompany"/>
+    <partyIdTo href="Party#DemoCustomer3"/>
+    <roleTypeIdFrom href="RoleType#ACCOUNT"/>
+    <roleTypeIdTo href="RoleType#CONTACT"/>
+    <partyRelationshipTypeId href="PartyRelationshipType#EMPLOYMENT"/>
+  </contents>
+  <contents xsi:type="biz-party:Party" partyId="DemoLeadOwner">
+    <partyTypeId href="PartyType#PERSON"/>
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+  </contents>
+  <contents xsi:type="biz-party:Person" partyId="DemoLeadOwner" firstName="Demo" lastName="LeadOwner"/>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#DemoLeadOwner"/>
+    <roleTypeId href="RoleType#_NA_"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#DemoLeadOwner"/>
+    <roleTypeId href="RoleType#OWNER"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyId href="Party#DemoLeadOwner"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRelationship" fromDate="2000-01-01T00:00:00.000+0100">
+    <partyIdFrom href="Party#Company"/>
+    <partyIdTo href="Party#DemoLeadOwner"/>
+    <roleTypeIdFrom href="RoleType#_NA_"/>
+    <roleTypeIdTo href="RoleType#_NA_"/>
+    <partyRelationshipTypeId href="PartyRelationshipType#EMPLOYMENT"/>
+  </contents>
+  <contents xsi:type="biz-login:UserLogin" userLoginId="DemoLeadOwner" currentPassword="{SHA}47b56994cbc2b6d10aa1be30f70165adb305a41a" enabled="true">
+    <partyId href="Party#DemoLeadOwner"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:UserLoginSecurityGroup" fromDate="2001-05-13T00:00:00.000+0200">
+    <userLoginId href="UserLogin#DemoLeadOwner"/>
+    <groupId href="SecurityGroup#FULLADMIN"/>
+  </contents>
+  <contents xsi:type="biz-party:Party" partyId="DemoLeadOwner1">
+    <partyTypeId href="PartyType#PERSON"/>
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+  </contents>
+  <contents xsi:type="biz-party:Person" partyId="DemoLeadOwner1" firstName="Demo" lastName="LeadOwner1"/>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#DemoLeadOwner1"/>
+    <roleTypeId href="RoleType#_NA_"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#DemoLeadOwner1"/>
+    <roleTypeId href="RoleType#OWNER"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyId href="Party#DemoLeadOwner1"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRelationship" fromDate="2000-01-01T00:00:00.000+0100">
+    <partyIdFrom href="Party#Company"/>
+    <partyIdTo href="Party#DemoLeadOwner1"/>
+    <roleTypeIdFrom href="RoleType#_NA_"/>
+    <roleTypeIdTo href="RoleType#_NA_"/>
+    <partyRelationshipTypeId href="PartyRelationshipType#EMPLOYMENT"/>
+  </contents>
+  <contents xsi:type="biz-login:UserLogin" userLoginId="DemoLeadOwner1" currentPassword="{SHA}47b56994cbc2b6d10aa1be30f70165adb305a41a" enabled="true">
+    <partyId href="Party#DemoLeadOwner1"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:UserLoginSecurityGroup" fromDate="2001-05-13T00:00:00.000+0200">
+    <userLoginId href="UserLogin#DemoLeadOwner1"/>
+    <groupId href="SecurityGroup#FULLADMIN"/>
+  </contents>
+  <contents xsi:type="biz-party:Party" partyId="sfa102">
+    <partyTypeId href="PartyType#PARTY_GROUP"/>
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyGroup" partyId="sfa102" groupName="A promising Lead Company"/>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#sfa102"/>
+    <roleTypeId href="RoleType#ACCOUNT_LEAD"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#sfa102"/>
+    <roleTypeId href="RoleType#_NA_"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyId href="Party#sfa102"/>
+  </contents>
+  <contents xsi:type="biz-party:Party" partyId="sfa101">
+    <partyTypeId href="PartyType#PERSON"/>
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+  </contents>
+  <contents xsi:type="biz-party:Person" partyId="sfa101" firstName="John" lastName="Lead"/>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#sfa101"/>
+    <roleTypeId href="RoleType#_NA_"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#sfa101"/>
+    <roleTypeId href="RoleType#LEAD"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyId href="Party#sfa101"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRelationship" fromDate="2000-01-01T00:00:00.000+0100">
+    <partyIdFrom href="Party#sfa102"/>
+    <partyIdTo href="Party#sfa101"/>
+    <roleTypeIdFrom href="RoleType#ACCOUNT_LEAD"/>
+    <roleTypeIdTo href="RoleType#LEAD"/>
+    <partyRelationshipTypeId href="PartyRelationshipType#EMPLOYMENT"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRelationship" fromDate="2000-01-01T00:00:00.000+0100">
+    <partyIdFrom href="Party#DemoLeadOwner"/>
+    <partyIdTo href="Party#sfa101"/>
+    <roleTypeIdFrom href="RoleType#OWNER"/>
+    <roleTypeIdTo href="RoleType#LEAD"/>
+    <partyRelationshipTypeId href="PartyRelationshipType#LEAD_OWNER"/>
+  </contents>
+  <contents xsi:type="biz-contact:ContactMech" contactMechId="sfa103" infoString="ofbiztestLead@example.com">
+    <contactMechTypeId href="ContactMechType#EMAIL_ADDRESS"/>
+  </contents>
+  <contents xsi:type="biz-contact:PartyContactMech" fromDate="2000-01-01T00:00:00.000+0100">
+    <partyId href="Party#sfa101"/>
+    <contactMechId href="ContactMech#sfa103"/>
+  </contents>
+  <contents xsi:type="biz-contact:PartyContactMechPurpose" fromDate="2000-01-01T00:00:00.000+0100">
+    <contactMechPurposeTypeId href="ContactMechPurposeType#PRIMARY_EMAIL"/>
+    <partyId href="Party#sfa101"/>
+    <contactMechId href="ContactMech#sfa103"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Convert Lead To Contact">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <statusIdTo href="StatusItem#LEAD_CONVERTED"/>
+  </contents>
+  <contents xsi:type="biz-status:StatusValidChange" transitionName="Disabled">
+    <statusId href="StatusItem#LEAD_CONVERTED"/>
+    <statusIdTo href="StatusItem#PARTY_DISABLED"/>
+  </contents>
+  <contents xsi:type="biz-party:Party" partyId="DemoLead">
+    <partyTypeId href="PartyType#PERSON"/>
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+  </contents>
+  <contents xsi:type="biz-party:Person" partyId="DemoLead" firstName="Demo" lastName="Lead"/>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#DemoLead"/>
+    <roleTypeId href="RoleType#_NA_"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#DemoLead"/>
+    <roleTypeId href="RoleType#LEAD"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyId href="Party#DemoLead"/>
+  </contents>
+  <contents xsi:type="biz-party:Party" partyId="DemoLead1">
+    <partyTypeId href="PartyType#PERSON"/>
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+  </contents>
+  <contents xsi:type="biz-party:Person" partyId="DemoLead1" firstName="Demo" lastName="Lead1"/>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#DemoLead1"/>
+    <roleTypeId href="RoleType#_NA_"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#DemoLead1"/>
+    <roleTypeId href="RoleType#LEAD"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyId href="Party#DemoLead1"/>
+  </contents>
+  <contents xsi:type="biz-party:Party" partyId="DemoLead2">
+    <partyTypeId href="PartyType#PERSON"/>
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+  </contents>
+  <contents xsi:type="biz-party:Person" partyId="DemoLead2" firstName="Demo" lastName="Lead2"/>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#DemoLead2"/>
+    <roleTypeId href="RoleType#_NA_"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#DemoLead2"/>
+    <roleTypeId href="RoleType#LEAD"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyId href="Party#DemoLead2"/>
+  </contents>
+  <contents xsi:type="biz-party:Party" partyId="DemoLead3">
+    <partyTypeId href="PartyType#PERSON"/>
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+  </contents>
+  <contents xsi:type="biz-party:Person" partyId="DemoLead3" firstName="Demo" lastName="Lead3"/>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#DemoLead3"/>
+    <roleTypeId href="RoleType#_NA_"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#DemoLead3"/>
+    <roleTypeId href="RoleType#LEAD"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyId href="Party#DemoLead3"/>
+  </contents>
+  <contents xsi:type="biz-party:Party" partyId="DemoLead4">
+    <partyTypeId href="PartyType#PERSON"/>
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+  </contents>
+  <contents xsi:type="biz-party:Person" partyId="DemoLead4" firstName="Demo" lastName="Lead4"/>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#DemoLead4"/>
+    <roleTypeId href="RoleType#_NA_"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#DemoLead4"/>
+    <roleTypeId href="RoleType#LEAD"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyId href="Party#DemoLead4"/>
+  </contents>
+  <contents xsi:type="biz-party:Party" partyId="DemoLeadOwnersGroup">
+    <partyTypeId href="PartyType#TEAM"/>
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyGroup" partyId="DemoLeadOwnersGroup" groupName="A Group of Lead Owners"/>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#DemoLeadOwnersGroup"/>
+    <roleTypeId href="RoleType#_NA_"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#DemoLeadOwnersGroup"/>
+    <roleTypeId href="RoleType#INTERNAL_ORGANIZATIO"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyId href="Party#DemoLeadOwnersGroup"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRelationship" fromDate="2001-05-13T00:00:00.000+0200">
+    <partyIdFrom href="Party#Company"/>
+    <partyIdTo href="Party#DemoLeadOwnersGroup"/>
+    <roleTypeIdFrom href="RoleType#_NA_"/>
+    <roleTypeIdTo href="RoleType#_NA_"/>
+    <partyRelationshipTypeId href="PartyRelationshipType#GROUP_ROLLUP"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRelationship" fromDate="2001-05-13T00:00:00.000+0200">
+    <partyIdFrom href="Party#DemoLeadOwner"/>
+    <partyIdTo href="Party#DemoLead"/>
+    <roleTypeIdFrom href="RoleType#OWNER"/>
+    <roleTypeIdTo href="RoleType#LEAD"/>
+    <partyRelationshipTypeId href="PartyRelationshipType#LEAD_OWNER"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRelationship" fromDate="2001-05-13T00:00:00.000+0200">
+    <partyIdFrom href="Party#DemoLeadOwner"/>
+    <partyIdTo href="Party#DemoLead1"/>
+    <roleTypeIdFrom href="RoleType#OWNER"/>
+    <roleTypeIdTo href="RoleType#LEAD"/>
+    <partyRelationshipTypeId href="PartyRelationshipType#LEAD_OWNER"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRelationship" fromDate="2001-05-13T00:00:00.000+0200">
+    <partyIdFrom href="Party#DemoLeadOwner"/>
+    <partyIdTo href="Party#DemoLead2"/>
+    <roleTypeIdFrom href="RoleType#OWNER"/>
+    <roleTypeIdTo href="RoleType#LEAD"/>
+    <partyRelationshipTypeId href="PartyRelationshipType#LEAD_OWNER"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRelationship" fromDate="2001-05-13T00:00:00.000+0200">
+    <partyIdFrom href="Party#DemoLeadOwner1"/>
+    <partyIdTo href="Party#DemoLead3"/>
+    <roleTypeIdFrom href="RoleType#OWNER"/>
+    <roleTypeIdTo href="RoleType#LEAD"/>
+    <partyRelationshipTypeId href="PartyRelationshipType#LEAD_OWNER"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRelationship" fromDate="2001-05-13T00:00:00.000+0200">
+    <partyIdFrom href="Party#DemoLeadOwner1"/>
+    <partyIdTo href="Party#DemoLead4"/>
+    <roleTypeIdFrom href="RoleType#OWNER"/>
+    <roleTypeIdTo href="RoleType#LEAD"/>
+    <partyRelationshipTypeId href="PartyRelationshipType#LEAD_OWNER"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRelationship" fromDate="2001-05-13T00:00:00.000+0200">
+    <partyIdFrom href="Party#DemoLeadOwnersGroup"/>
+    <partyIdTo href="Party#DemoLeadOwner"/>
+    <roleTypeIdFrom href="RoleType#INTERNAL_ORGANIZATIO"/>
+    <roleTypeIdTo href="RoleType#OWNER"/>
+    <partyRelationshipTypeId href="PartyRelationshipType#LEAD_OWN_GRP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRelationship" fromDate="2001-05-13T00:00:00.000+0200">
+    <partyIdFrom href="Party#DemoLeadOwnersGroup"/>
+    <partyIdTo href="Party#DemoLeadOwner1"/>
+    <roleTypeIdFrom href="RoleType#INTERNAL_ORGANIZATIO"/>
+    <roleTypeIdTo href="RoleType#OWNER"/>
+    <partyRelationshipTypeId href="PartyRelationshipType#LEAD_OWN_GRP_MEMBER"/>
+  </contents>
+  <contents xsi:type="biz-opportunity:SalesOpportunityStage" opportunityStageId="SOSTG_PROSPECT" defaultProbability="0.050000" description="Prospect" sequenceNum="1"/>
+  <contents xsi:type="biz-opportunity:SalesOpportunityStage" opportunityStageId="SOSTG_PROPOSAL" defaultProbability="0.200000" description="Proposal" sequenceNum="2"/>
+  <contents xsi:type="biz-opportunity:SalesOpportunityStage" opportunityStageId="SOSTG_QUOTED" defaultProbability="0.400000" description="Quoted" sequenceNum="3"/>
+  <contents xsi:type="biz-opportunity:SalesOpportunityStage" opportunityStageId="SOSTG_CLOSED" defaultProbability="1.000000" description="Closed" sequenceNum="4"/>
+  <contents xsi:type="biz-enum:Enumeration" enumId="SLSOPP_ECOMMERCE" description="Ecommerce">
+    <enumTypeId href="EnumerationType#SLSOPP_TYP_ENUM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="SLSOPP_ERP" description="ERP">
+    <enumTypeId href="EnumerationType#SLSOPP_TYP_ENUM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="SLSOPP_INSTALL" description="Installation">
+    <enumTypeId href="EnumerationType#SLSOPP_TYP_ENUM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="SLSOPP_CUSTM" description="Customization">
+    <enumTypeId href="EnumerationType#SLSOPP_TYP_ENUM"/>
+  </contents>
+  <contents xsi:type="biz-enum:Enumeration" enumId="SLSOPP_SUPPORT" description="Support plan">
+    <enumTypeId href="EnumerationType#SLSOPP_TYP_ENUM"/>
+  </contents>
+</mimo-ent:EntityContainer>

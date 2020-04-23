@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/model/security/securitygroup" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="008_webtools_WebtoolsSecurityGroupDemoData">
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#WEBTOOLS_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#WEBTOOLS_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#VIEWADMIN"/>
+    <permissionId href="SecurityPermission#WEBTOOLS_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#SERVER_STATS_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#SERVER_STATS_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#VIEWADMIN"/>
+    <permissionId href="SecurityPermission#SERVER_STATS_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#ARTIFACT_INFO_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#ARTIFACT_INFO_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#VIEWADMIN"/>
+    <permissionId href="SecurityPermission#ARTIFACT_INFO_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#LABEL_MANAGER_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#LABEL_MANAGER_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#VIEWADMIN"/>
+    <permissionId href="SecurityPermission#LABEL_MANAGER_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#DATAFILE_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#DATAFILE_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#SERVICE_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#SERVICE_JM_LOCK"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#SERVICE_RSAS_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#SERVICE_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#SERVICE_JM_LOCK"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#PERIOD_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#PERIOD_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#BIZADMIN"/>
+    <permissionId href="SecurityPermission#PERIOD_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#ENUM_STATUS_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#ENUM_STATUS_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#ENTITY_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#ENTITY_DATA_ADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#ENTITY_MAINT"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#ENTITY_DATA_CREATE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#ENTITY_DATA_DELETE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#ENTITY_DATA_UPDATE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#ENTITY_DATA_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#VIEWADMIN"/>
+    <permissionId href="SecurityPermission#ENTITY_DATA_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#UTIL_CACHE_EDIT"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#UTIL_CACHE_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#UTIL_DEBUG_EDIT"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#UTIL_DEBUG_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#UTIL_CACHE_EDIT"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#UTIL_CACHE_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#UTIL_DEBUG_EDIT"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#UTIL_DEBUG_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#VIEWADMIN"/>
+    <permissionId href="SecurityPermission#UTIL_CACHE_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#VIEWADMIN"/>
+    <permissionId href="SecurityPermission#UTIL_DEBUG_VIEW"/>
+  </contents>
+</mimo-ent:EntityContainer>

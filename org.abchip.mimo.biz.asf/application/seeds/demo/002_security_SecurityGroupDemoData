@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/model/security/securitygroup" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="002_security_SecurityGroupDemoData">
+  <contents xsi:type="biz-securitygroup:SecurityGroup" groupId="FULLADMIN" description="Full Admin group, has all general permissions." groupName="Full Admin"/>
+  <contents xsi:type="biz-securitygroup:SecurityGroup" groupId="FLEXADMIN" description="Flexible Admin group, has all granular permissions." groupName="Flex Admin"/>
+  <contents xsi:type="biz-securitygroup:SecurityGroup" groupId="VIEWADMIN" description="Demo Admin group, has all view permissions." groupName="View Admin"/>
+  <contents xsi:type="biz-securitygroup:SecurityGroup" groupId="BIZADMIN" description="Full Business Applications permission group, has all business app admin permissions, not technical permissions." groupName="Biz Admin"/>
+  <contents xsi:type="biz-securitygroup:SecurityGroup" groupId="IMPERSONATION" description="Permission group to impersonate user."/>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="OFBTOOLS_VIEW" description="Permission to access the Stock OFBiz Manager Applications."/>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#OFBTOOLS_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#OFBTOOLS_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#VIEWADMIN"/>
+    <permissionId href="SecurityPermission#OFBTOOLS_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#BIZADMIN"/>
+    <permissionId href="SecurityPermission#OFBTOOLS_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:UserLoginSecurityGroup" fromDate="2001-01-01T12:00:00.000+0100">
+    <userLoginId href="UserLogin#admin"/>
+    <groupId href="SecurityGroup#FULLADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:UserLoginSecurityGroup" fromDate="2001-01-01T12:00:00.000+0100">
+    <userLoginId href="UserLogin#flexadmin"/>
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:UserLoginSecurityGroup" fromDate="2001-01-01T12:00:00.000+0100">
+    <userLoginId href="UserLogin#demoadmin"/>
+    <groupId href="SecurityGroup#VIEWADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:UserLoginSecurityGroup" fromDate="2001-01-01T12:00:00.000+0100">
+    <userLoginId href="UserLogin#ltdadmin"/>
+    <groupId href="SecurityGroup#VIEWADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:UserLoginSecurityGroup" fromDate="2001-01-01T12:00:00.000+0100">
+    <userLoginId href="UserLogin#ltdadmin1"/>
+    <groupId href="SecurityGroup#VIEWADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:UserLoginSecurityGroup" fromDate="2001-01-01T12:00:00.000+0100">
+    <userLoginId href="UserLogin#bizadmin"/>
+    <groupId href="SecurityGroup#BIZADMIN"/>
+  </contents>
+</mimo-ent:EntityContainer>

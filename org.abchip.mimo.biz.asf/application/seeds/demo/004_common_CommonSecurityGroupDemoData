@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/model/security/securitygroup" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="004_common_CommonSecurityGroupDemoData">
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#COMMON_CREATE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#COMMON_DELETE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#COMMON_UPDATE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#COMMON_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#VISUALTHEME_CREATE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#VISUALTHEME_UPDATE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#VISUALTHEME_DELETE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#PORTALPAGE_ADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#VISUALTHEME_ADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#COMMON_ADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#PORTALPAGE_ADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#VIEWADMIN"/>
+    <permissionId href="SecurityPermission#COMMON_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#USERPREF_ADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#TEMPEXPR_ADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#IMPERSONATE_ADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#IMPERSONATION"/>
+    <permissionId href="SecurityPermission#IMPERSONATE_ADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#IMPERSONATION"/>
+    <permissionId href="SecurityPermission#SECURITY_VIEW"/>
+  </contents>
+</mimo-ent:EntityContainer>

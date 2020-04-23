@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-fixedasset="http://www.abchip.org/mimo/biz/model/accounting/fixedasset" xmlns:biz-method="http://www.abchip.org/mimo/biz/model/common/method" xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/model/security/securitygroup" xmlns:biz-techdata="http://www.abchip.org/mimo/biz/model/manufacturing/techdata" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/accounting/fixedasset http://www.abchip.org/mimo/biz/model/accounting#//fixedasset http://www.abchip.org/mimo/biz/model/common/method http://www.abchip.org/mimo/biz/model/common#//method http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="014_data_ManufacturingDemoData">
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#MANUFACTURING_ADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#MANUFACTURING_CREATE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#MANUFACTURING_DELETE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#MANUFACTURING_UPDATE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#MANUFACTURING_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#VIEWADMIN"/>
+    <permissionId href="SecurityPermission#MANUFACTURING_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#BIZADMIN"/>
+    <permissionId href="SecurityPermission#MANUFACTURING_ADMIN"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="6000" customMethodName="exampleTaskFormula" description="Example task formula (qty * estimatedMilliSeconds * 10)">
+    <customMethodTypeId href="CustomMethodType#TASK_FORMULA"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="6001" customMethodName="exampleComponentFormula" description="Example bom formula (qty * k)">
+    <customMethodTypeId href="CustomMethodType#BOM_FORMULA"/>
+  </contents>
+  <contents xsi:type="biz-method:CustomMethod" customMethodId="6002" customMethodName="linearComponentFormula" description="Bom formula for linear components">
+    <customMethodTypeId href="CustomMethodType#BOM_FORMULA"/>
+  </contents>
+  <contents xsi:type="biz-techdata:TechDataCalendarWeek" calendarWeekId="DEMO_WEEK" description="Demo calendar week of 8hours/days 5days/week starting at 8h30 from monday to friday" fridayCapacity="2.88E7" mondayCapacity="2.88E7" thursdayCapacity="2.88E7" tuesdayCapacity="2.88E7" wednesdayCapacity="2.88E7"/>
+  <contents xsi:type="biz-techdata:TechDataCalendar" calendarId="DEMO_CALENDAR" description="Demo Workcenter Calendar">
+    <calendarWeekId href="TechDataCalendarWeek#DEMO_WEEK"/>
+  </contents>
+  <contents xsi:type="biz-techdata:TechDataCalendarExcDay" exceptionDateStartTime="2004-12-24T00:01:00.000+0100" description="Christmas Day" exceptionCapacity="0">
+    <calendarId href="TechDataCalendar#DEMO_CALENDAR"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAsset" fixedAssetId="DEMO_MACHINE_GROUP" fixedAssetName="Demo Machine Group">
+    <fixedAssetTypeId href="FixedAssetType#GROUP_EQUIPMENT"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAssetGeoPoint" fromDate="2009-01-09T00:00:00.000+0100">
+    <fixedAssetId href="FixedAsset#DEMO_MACHINE_GROUP"/>
+    <geoPointId href="GeoPoint#9000"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAsset" fixedAssetId="DEMO_MACHINE" fixedAssetName="Demo Machine" purchaseCost="50000" purchaseCostUomId="USD">
+    <calendarId href="TechDataCalendar#DEMO_CALENDAR"/>
+    <fixedAssetTypeId href="FixedAssetType#PRODUCTION_EQUIPMENT"/>
+    <parentFixedAssetId href="FixedAsset#DEMO_MACHINE_GROUP"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAssetGeoPoint" fromDate="2009-01-09T00:00:00.000+0100">
+    <fixedAssetId href="FixedAsset#DEMO_MACHINE"/>
+    <geoPointId href="GeoPoint#9000"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAsset" fixedAssetId="DEMO_FOOD_GROUP" fixedAssetName="Demo Food Group">
+    <fixedAssetTypeId href="FixedAssetType#GROUP_EQUIPMENT"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAssetGeoPoint" fromDate="2009-01-09T00:00:00.000+0100">
+    <fixedAssetId href="FixedAsset#DEMO_FOOD_GROUP"/>
+    <geoPointId href="GeoPoint#9000"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAsset" fixedAssetId="DEMO_FOOD" fixedAssetName="Demo Food" purchaseCost="7000" purchaseCostUomId="USD">
+    <calendarId href="TechDataCalendar#DEMO_CALENDAR"/>
+    <fixedAssetTypeId href="FixedAssetType#PRODUCTION_EQUIPMENT"/>
+    <parentFixedAssetId href="FixedAsset#DEMO_FOOD_GROUP"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAssetGeoPoint" fromDate="2009-01-09T00:00:00.000+0100">
+    <fixedAssetId href="FixedAsset#DEMO_FOOD"/>
+    <geoPointId href="GeoPoint#9000"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAsset" fixedAssetId="DEMO_PROD_EQUIPMT_1" fixedAssetName="Demo Production Equipment One" purchaseCost="1000" purchaseCostUomId="USD" salvageValue="50">
+    <calendarId href="TechDataCalendar#DEMO_CALENDAR"/>
+    <fixedAssetTypeId href="FixedAssetType#PRODUCTION_EQUIPMENT"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAssetGeoPoint" fromDate="2009-01-09T00:00:00.000+0100">
+    <fixedAssetId href="FixedAsset#DEMO_PROD_EQUIPMT_1"/>
+    <geoPointId href="GeoPoint#9000"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAsset" fixedAssetId="DEMO_PROD_EQUIPMT_2" fixedAssetName="Demo Production Equipment Two" purchaseCost="1000" purchaseCostUomId="USD" salvageValue="50">
+    <calendarId href="TechDataCalendar#DEMO_CALENDAR"/>
+    <fixedAssetTypeId href="FixedAssetType#PRODUCTION_EQUIPMENT"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAssetGeoPoint" fromDate="2009-01-09T00:00:00.000+0100">
+    <fixedAssetId href="FixedAsset#DEMO_PROD_EQUIPMT_2"/>
+    <geoPointId href="GeoPoint#9000"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAsset" fixedAssetId="DEMO_BOOK_GROUP" fixedAssetName="Demo Book Group">
+    <fixedAssetTypeId href="FixedAssetType#GROUP_EQUIPMENT"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAssetGeoPoint" fromDate="2011-08-02T00:00:00.000+0200">
+    <fixedAssetId href="FixedAsset#DEMO_BOOK_GROUP"/>
+    <geoPointId href="GeoPoint#9000"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAsset" fixedAssetId="DEMO_BOOK" fixedAssetName="Demo Book" purchaseCost="200" purchaseCostUomId="USD">
+    <calendarId href="TechDataCalendar#DEMO_CALENDAR"/>
+    <fixedAssetTypeId href="FixedAssetType#PRODUCTION_EQUIPMENT"/>
+    <parentFixedAssetId href="FixedAsset#DEMO_BOOK_GROUP"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAssetGeoPoint" fromDate="2011-08-02T00:00:00.000+0200">
+    <fixedAssetId href="FixedAsset#DEMO_BOOK"/>
+    <geoPointId href="GeoPoint#9000"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAssetDepMethod">
+    <depreciationCustomMethodId href="CustomMethod#STR_LINE_DEP_FORMULA"/>
+    <fixedAssetId href="FixedAsset#DEMO_PROD_EQUIPMT_1"/>
+  </contents>
+  <contents xsi:type="biz-fixedasset:FixedAssetDepMethod">
+    <depreciationCustomMethodId href="CustomMethod#DBL_DECL_DEP_FORMULA"/>
+    <fixedAssetId href="FixedAsset#DEMO_PROD_EQUIPMT_2"/>
+  </contents>
+</mimo-ent:EntityContainer>

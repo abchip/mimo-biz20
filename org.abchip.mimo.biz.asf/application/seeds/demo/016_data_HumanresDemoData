@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-employment="http://www.abchip.org/mimo/biz/model/humanres/employment" xmlns:biz-login="http://www.abchip.org/mimo/biz/model/security/login" xmlns:biz-party="http://www.abchip.org/mimo/biz/model/party/party" xmlns:biz-position="http://www.abchip.org/mimo/biz/model/humanres/position" xmlns:biz-rate="http://www.abchip.org/mimo/biz/model/accounting/rate" xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/model/security/securitygroup" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/party/party http://www.abchip.org/mimo/biz/model/party#//party http://www.abchip.org/mimo/biz/model/accounting/rate http://www.abchip.org/mimo/biz/model/accounting#//rate http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="016_data_HumanresDemoData">
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FULLADMIN"/>
+    <permissionId href="SecurityPermission#HUMANRES_ADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#HUMANRES_CREATE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#HUMANRES_DELETE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#HUMANRES_UPDATE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#FLEXADMIN"/>
+    <permissionId href="SecurityPermission#HUMANRES_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#VIEWADMIN"/>
+    <permissionId href="SecurityPermission#HUMANRES_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#BIZADMIN"/>
+    <permissionId href="SecurityPermission#HUMANRES_ADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroup" groupId="HUMANRES_ADMIN" description="This security group is for those who have full access to the human resource component." groupName="Humanres Admin"/>
+  <contents xsi:type="biz-securitygroup:SecurityGroup" groupId="HUMANRES_APPROVER" description="This security group is for those who will approve the internal job posting application." groupName="Humanres Approver"/>
+  <contents xsi:type="biz-securitygroup:SecurityGroup" groupId="HUMANRES_EMPLOYEE" description="This security group is for all the employees who want to apply for internal Job Posting." groupName="Humanres Employee"/>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#HUMANRES_ADMIN"/>
+    <permissionId href="SecurityPermission#HUMANRES_ADMIN"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#HUMANRES_APPROVER"/>
+    <permissionId href="SecurityPermission#HUMANRES_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#HUMANRES_APPROVER"/>
+    <permissionId href="SecurityPermission#HUMANRES_CREATE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#HUMANRES_APPROVER"/>
+    <permissionId href="SecurityPermission#PARTYMGR_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#HUMANRES_APPROVER"/>
+    <permissionId href="SecurityPermission#OFBTOOLS_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#HUMANRES_APPROVER"/>
+    <permissionId href="SecurityPermission#HUMANRES_UPDATE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#HUMANRES_APPROVER"/>
+    <permissionId href="SecurityPermission#HUMANRES_APPROVE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#HUMANRES_EMPLOYEE"/>
+    <permissionId href="SecurityPermission#HUMANRES_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#HUMANRES_EMPLOYEE"/>
+    <permissionId href="SecurityPermission#HUMANRES_CREATE"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#HUMANRES_EMPLOYEE"/>
+    <permissionId href="SecurityPermission#PARTYMGR_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#HUMANRES_EMPLOYEE"/>
+    <permissionId href="SecurityPermission#OFBTOOLS_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-party:Party" partyId="DemoEmployee">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyRole">
+    <partyId href="Party#DemoEmployee"/>
+    <roleTypeId href="RoleType#EMPLOYEE"/>
+  </contents>
+  <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyId href="Party#DemoEmployee"/>
+  </contents>
+  <contents xsi:type="biz-rate:RateAmount" fromDate="2000-01-30T17:58:56.038+0100" rateAmount="2300">
+    <rateTypeId href="RateType#AVERAGE_PAY_RATE"/>
+    <rateCurrencyUomId href="Uom#USD"/>
+    <workEffortId href="WorkEffort#_NA_"/>
+    <partyId href="Party#DemoEmployee"/>
+    <emplPositionTypeId href="EmplPositionType#_NA_"/>
+    <periodTypeId href="PeriodType#RATE_MONTH"/>
+  </contents>
+  <contents xsi:type="biz-rate:RateAmount" fromDate="2000-01-30T17:58:56.038+0100" rateAmount="2000">
+    <rateTypeId href="RateType#AVERAGE_PAY_RATE"/>
+    <rateCurrencyUomId href="Uom#USD"/>
+    <workEffortId href="WorkEffort#_NA_"/>
+    <partyId href="Party#_NA_"/>
+    <emplPositionTypeId href="EmplPositionType#PROGRAMMER"/>
+    <periodTypeId href="PeriodType#RATE_MONTH"/>
+  </contents>
+  <contents xsi:type="biz-position:EmplPosition" emplPositionId="DEMO100" exemptFlag="true" fulltimeFlag="true" salaryFlag="true" temporaryFlag="true">
+    <emplPositionTypeId href="EmplPositionType#PROGRAMMER"/>
+    <partyId href="Party#Company"/>
+    <statusId href="StatusItem#EMPL_POS_ACTIVE"/>
+  </contents>
+  <contents xsi:type="biz-position:EmplPositionFulfillment" fromDate="2009-01-30T17:58:02.745+0100">
+    <emplPositionId href="EmplPosition#DEMO100"/>
+    <partyId href="Party#DemoEmployee"/>
+  </contents>
+  <contents xsi:type="biz-position:EmplPositionTypeRate" fromDate="2009-01-30T17:58:56.038+0100">
+    <emplPositionTypeId href="EmplPositionType#PROGRAMMER"/>
+    <rateTypeId href="RateType#AVERAGE_PAY_RATE"/>
+  </contents>
+  <contents xsi:type="biz-employment:Employment" fromDate="2000-01-30T17:50:15.767+0100" roleTypeIdFrom="INTERNAL_ORGANIZATIO" roleTypeIdTo="EMPLOYEE">
+    <partyIdTo href="Party#DemoEmployee"/>
+    <partyIdFrom href="Party#Company"/>
+  </contents>
+  <contents xsi:type="biz-party:Party" partyId="DemoApprover">
+    <partyTypeId href="PartyType#PERSON"/>
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+  </contents>
+  <contents xsi:type="biz-party:Person" partyId="DemoApprover" firstName="Demo" lastName="Approver"/>
+  <contents xsi:type="biz-party:PartyStatus" statusDate="2001-01-01T12:00:00.000+0100">
+    <statusId href="StatusItem#PARTY_ENABLED"/>
+    <partyId href="Party#DemoApprover"/>
+  </contents>
+  <contents xsi:type="biz-login:UserLogin" userLoginId="demoapprover" currentPassword="{SHA}47b56994cbc2b6d10aa1be30f70165adb305a41a">
+    <partyId href="Party#DemoApprover"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:UserLoginSecurityGroup" fromDate="2001-01-01T12:00:00.000+0100">
+    <userLoginId href="UserLogin#demoapprover"/>
+    <groupId href="SecurityGroup#HUMANRES_APPROVER"/>
+  </contents>
+  <contents xsi:type="biz-login:UserLogin" userLoginId="demoemployee" currentPassword="{SHA}47b56994cbc2b6d10aa1be30f70165adb305a41a">
+    <partyId href="Party#DemoEmployee"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="EMPLOYEE_VIEW" description="Employee can check the status of his requests and trainings assigned to him with this permission."/>
+  <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
+    <groupId href="SecurityGroup#HUMANRES_EMPLOYEE"/>
+    <permissionId href="SecurityPermission#EMPLOYEE_VIEW"/>
+  </contents>
+  <contents xsi:type="biz-securitygroup:UserLoginSecurityGroup" fromDate="2001-01-01T12:00:00.000+0100">
+    <userLoginId href="UserLogin#demoemployee"/>
+    <groupId href="SecurityGroup#HUMANRES_EMPLOYEE"/>
+  </contents>
+</mimo-ent:EntityContainer>

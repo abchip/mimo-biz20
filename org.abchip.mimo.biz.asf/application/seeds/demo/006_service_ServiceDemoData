@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-schedule="http://www.abchip.org/mimo/biz/model/service/schedule" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="006_service_ServiceDemoData">
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="1ST_MONDAY_IN_MONTH" description="First Monday in Month" integer1="2" integer2="1" tempExprTypeId="DAY_IN_MONTH"/>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="2ND_MONDAY_IN_MONTH" description="Second Monday in Month" integer1="2" integer2="2" tempExprTypeId="DAY_IN_MONTH"/>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="3RD_MONDAY_IN_MONTH" description="Third Monday in Month" integer1="2" integer2="3" tempExprTypeId="DAY_IN_MONTH"/>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="4TH_MONDAY_IN_MONTH" description="Fourth Monday in Month" integer1="2" integer2="4" tempExprTypeId="DAY_IN_MONTH"/>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="LAST_MONDAY_IN_MONTH" description="Last Monday in Month" integer1="2" integer2="-1" tempExprTypeId="DAY_IN_MONTH"/>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="US_FED_HOLIDAYS" description="US Federal Holidays" tempExprTypeId="UNION"/>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="JANUARY_FIRST" description="January First" tempExprTypeId="INTERSECTION"/>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#JANUARY_FIRST"/>
+    <toTempExprId href="TemporalExpression#MONTH_RANGE_01"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#JANUARY_FIRST"/>
+    <toTempExprId href="TemporalExpression#DAYOFMONTH_01"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#US_FED_HOLIDAYS"/>
+    <toTempExprId href="TemporalExpression#JANUARY_FIRST"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="MLK_DAY" description="Martin Luther King Day" tempExprTypeId="INTERSECTION"/>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#MLK_DAY"/>
+    <toTempExprId href="TemporalExpression#MONTH_RANGE_01"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#MLK_DAY"/>
+    <toTempExprId href="TemporalExpression#3RD_MONDAY_IN_MONTH"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#US_FED_HOLIDAYS"/>
+    <toTempExprId href="TemporalExpression#MLK_DAY"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="PRESIDENTS_DAY" description="Presidents Day" tempExprTypeId="INTERSECTION"/>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#PRESIDENTS_DAY"/>
+    <toTempExprId href="TemporalExpression#MONTH_RANGE_02"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#PRESIDENTS_DAY"/>
+    <toTempExprId href="TemporalExpression#3RD_MONDAY_IN_MONTH"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#US_FED_HOLIDAYS"/>
+    <toTempExprId href="TemporalExpression#PRESIDENTS_DAY"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="MEMORIAL_DAY" description="Memorial Day" tempExprTypeId="INTERSECTION"/>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#MEMORIAL_DAY"/>
+    <toTempExprId href="TemporalExpression#MONTH_RANGE_05"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#MEMORIAL_DAY"/>
+    <toTempExprId href="TemporalExpression#LAST_MONDAY_IN_MONTH"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#US_FED_HOLIDAYS"/>
+    <toTempExprId href="TemporalExpression#MEMORIAL_DAY"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="INDEPENDENCE_DAY" description="Independence Day" tempExprTypeId="INTERSECTION"/>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#INDEPENDENCE_DAY"/>
+    <toTempExprId href="TemporalExpression#MONTH_RANGE_07"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#INDEPENDENCE_DAY"/>
+    <toTempExprId href="TemporalExpression#DAYOFMONTH_04"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#US_FED_HOLIDAYS"/>
+    <toTempExprId href="TemporalExpression#INDEPENDENCE_DAY"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="LABOR_DAY" description="Labor Day" tempExprTypeId="INTERSECTION"/>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#LABOR_DAY"/>
+    <toTempExprId href="TemporalExpression#MONTH_RANGE_09"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#LABOR_DAY"/>
+    <toTempExprId href="TemporalExpression#1ST_MONDAY_IN_MONTH"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#US_FED_HOLIDAYS"/>
+    <toTempExprId href="TemporalExpression#LABOR_DAY"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="COLUMBUS_DAY" description="Columbus Day" tempExprTypeId="INTERSECTION"/>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#COLUMBUS_DAY"/>
+    <toTempExprId href="TemporalExpression#MONTH_RANGE_10"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#COLUMBUS_DAY"/>
+    <toTempExprId href="TemporalExpression#2ND_MONDAY_IN_MONTH"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#US_FED_HOLIDAYS"/>
+    <toTempExprId href="TemporalExpression#COLUMBUS_DAY"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="VETERANS_DAY" description="Veterans Day" tempExprTypeId="INTERSECTION"/>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#VETERANS_DAY"/>
+    <toTempExprId href="TemporalExpression#MONTH_RANGE_11"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#VETERANS_DAY"/>
+    <toTempExprId href="TemporalExpression#DAYOFMONTH_11"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#US_FED_HOLIDAYS"/>
+    <toTempExprId href="TemporalExpression#VETERANS_DAY"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="THANKSGIVING_DAY" description="Thanksgiving Day" tempExprTypeId="INTERSECTION"/>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="4TH_THURS_IN_MONTH" description="Fourth Thursday in Month" integer1="5" integer2="4" tempExprTypeId="DAY_IN_MONTH"/>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#THANKSGIVING_DAY"/>
+    <toTempExprId href="TemporalExpression#MONTH_RANGE_11"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#THANKSGIVING_DAY"/>
+    <toTempExprId href="TemporalExpression#4TH_THURS_IN_MONTH"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#US_FED_HOLIDAYS"/>
+    <toTempExprId href="TemporalExpression#THANKSGIVING_DAY"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="CHRISTMAS_DAY" description="Christmas Day" tempExprTypeId="INTERSECTION"/>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#CHRISTMAS_DAY"/>
+    <toTempExprId href="TemporalExpression#MONTH_RANGE_12"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#CHRISTMAS_DAY"/>
+    <toTempExprId href="TemporalExpression#DAYOFMONTH_25"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#US_FED_HOLIDAYS"/>
+    <toTempExprId href="TemporalExpression#CHRISTMAS_DAY"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="1ST_AND_15TH_MONTH" description="First and Fifteenth of the month" tempExprTypeId="UNION"/>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#1ST_AND_15TH_MONTH"/>
+    <toTempExprId href="TemporalExpression#DAYOFMONTH_01"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#1ST_AND_15TH_MONTH"/>
+    <toTempExprId href="TemporalExpression#DAYOFMONTH_15"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="GOVT_WORK_SCHED" description="Monday to Friday without US Federal Holidays" tempExprTypeId="DIFFERENCE"/>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc" exprAssocType="INCLUDE">
+    <fromTempExprId href="TemporalExpression#GOVT_WORK_SCHED"/>
+    <toTempExprId href="TemporalExpression#MON_TO_FRI"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc" exprAssocType="EXCLUDE">
+    <fromTempExprId href="TemporalExpression#GOVT_WORK_SCHED"/>
+    <toTempExprId href="TemporalExpression#US_FED_HOLIDAYS"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="DAILY_GRIND" description="Monday to Friday at 8am without US Federal Holidays" tempExprTypeId="INTERSECTION"/>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#DAILY_GRIND"/>
+    <toTempExprId href="TemporalExpression#HOUR_08"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpressionAssoc">
+    <fromTempExprId href="TemporalExpression#DAILY_GRIND"/>
+    <toTempExprId href="TemporalExpression#GOVT_WORK_SCHED"/>
+  </contents>
+  <contents xsi:type="biz-schedule:TemporalExpression" tempExprId="5PM_BIMONDAY" date1="2000-01-03T17:00:00.000+0100" description="Every Other Monday at 5pm" integer1="5" integer2="14" tempExprTypeId="FREQUENCY"/>
+</mimo-ent:EntityContainer>
