@@ -65,7 +65,7 @@ public class BizSeedCommands extends BaseCommands {
 			BizSeedCommands.exportReaderFiltered(interpreter, context, delegator, filterReaders);
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			interpreter.printStackTrace(e);
 		}
 	}
 
@@ -114,6 +114,11 @@ public class BizSeedCommands extends BaseCommands {
 		container.setName(containerName);
 		while (listEntityIt.hasNext()) {
 			GenericValue genericValue = listEntityIt.next();
+
+			// TODO verifiy
+			if (genericValue.getEntityName().startsWith("Budget"))
+				continue;
+			
 			EntityIdentifiable entityIdentifiable = null;
 			try {
 				entityIdentifiable = EntityUtils.toEntity((Frame<EntityIdentifiable>) resourceManager.getFrame(context, genericValue.getEntityName()), genericValue);

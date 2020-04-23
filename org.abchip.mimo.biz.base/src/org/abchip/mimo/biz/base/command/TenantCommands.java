@@ -93,6 +93,22 @@ public class TenantCommands extends BaseCommands {
 		TenantServices.createUserTenant(context, tenantId, false);
 	}
 
+	public void _createDemo(CommandInterpreter interpreter) throws Exception {
+
+		DBType dbType = DBType.valueOf(nextArgument(interpreter));
+		boolean update = Boolean.parseBoolean(nextArgument(interpreter));
+
+		Context context = this.getContext();
+
+		String tenantId = "demo";
+		String tenantName = "Demo tenant";
+
+		TenantServices.createTenant(context, tenantId, tenantName, dbType, update);
+		SeedServices.loadSeeds(context, "seed", tenantId, true);
+		SeedServices.loadSeeds(context, "demo", tenantId, true);
+		TenantServices.createUserTenant(context, tenantId, false);
+	}
+
 	@Override
 	public String getHelp() {
 		// TODO Auto-generated method stub
