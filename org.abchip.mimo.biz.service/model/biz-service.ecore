@@ -5,8 +5,6 @@
     <eTypeParameters name="V">
       <eBounds eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
     </eTypeParameters>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="locale" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="userLogin" lowerBound="1"
         eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//security/login/UserLogin"
         changeable="false" containment="true"/>
@@ -16,12 +14,11 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="BizServiceResponse" abstract="true"
       eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="locale" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" changeable="false"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="userLogin" lowerBound="1"
         eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//security/login/UserLogin"
         changeable="false" containment="true"/>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BizServiceResponseVoid" eSuperTypes="#//BizServiceResponse"/>
   <eSubpackages name="accounting" nsURI="http://www.abchip.org/mimo/biz/service/accounting"
       nsPrefix="biz-accounting"/>
   <eSubpackages name="catalina" nsURI="http://www.abchip.org/mimo/biz/service/catalina"
@@ -50,7 +47,8 @@
       <eStructuralFeatures xsi:type="ecore:EReference" name="product" lowerBound="1"
           eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//product/product/Product"
           containment="true"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="currencyUomId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="currencyUomId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+          defaultValueLiteral="@general/currency.uom.id.default"/>
       <eGenericSuperTypes eClassifier="#//BizServiceRequest">
         <eTypeArguments eClassifier="#//product/CalculateProductPriceResponse"/>
       </eGenericSuperTypes>
@@ -61,7 +59,11 @@
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="basePrice" lowerBound="1"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="listPrice" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="orderItemPriceInfos"
+          upperBound="-1" eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//order/order/OrderItemPriceInfo"
+          containment="true"/>
     </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="MyService" eSuperTypes="#//product/CalculateProductPrice"/>
   </eSubpackages>
   <eSubpackages name="security" nsURI="http://www.abchip.org/mimo/biz/service/security"
       nsPrefix="biz-security"/>

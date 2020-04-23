@@ -88,9 +88,6 @@ import org.abchip.mimo.biz.model.product.cost.CostPackage;
 import org.abchip.mimo.biz.model.product.facility.FacilityPackage;
 
 import org.abchip.mimo.biz.model.product.feature.FeaturePackage;
-
-import org.abchip.mimo.biz.model.product.impl.ProductPackageImpl;
-
 import org.abchip.mimo.biz.model.product.inventory.InventoryPackage;
 
 import org.abchip.mimo.biz.model.product.price.PricePackage;
@@ -134,9 +131,9 @@ import org.abchip.mimo.biz.service.BizServicePackage;
 import org.abchip.mimo.biz.service.BizServiceRequest;
 import org.abchip.mimo.biz.service.BizServiceResponse;
 
+import org.abchip.mimo.biz.service.BizServiceResponseVoid;
+import org.abchip.mimo.biz.service.product.impl.ProductPackageImpl;
 import org.abchip.mimo.service.ServicePackage;
-
-import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
@@ -165,6 +162,13 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 	 * @generated
 	 */
 	private EClass bizServiceResponseEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass bizServiceResponseVoidEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -277,8 +281,8 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 		MimoPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.model.product.ProductPackage.eNS_URI);
-		ProductPackageImpl theProductPackage_1 = (ProductPackageImpl)(registeredPackage instanceof ProductPackageImpl ? registeredPackage : org.abchip.mimo.biz.model.product.ProductPackage.eINSTANCE);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.product.ProductPackage.eNS_URI);
+		ProductPackageImpl theProductPackage_1 = (ProductPackageImpl)(registeredPackage instanceof ProductPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.product.ProductPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theBizServicePackage.createPackageContents();
@@ -312,18 +316,8 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 	 * @generated
 	 */
 	@Override
-	public EAttribute getBizServiceRequest_Locale() {
-		return (EAttribute)bizServiceRequestEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EReference getBizServiceRequest_UserLogin() {
-		return (EReference)bizServiceRequestEClass.getEStructuralFeatures().get(1);
+		return (EReference)bizServiceRequestEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -342,8 +336,8 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 	 * @generated
 	 */
 	@Override
-	public EAttribute getBizServiceResponse_Locale() {
-		return (EAttribute)bizServiceResponseEClass.getEStructuralFeatures().get(0);
+	public EReference getBizServiceResponse_UserLogin() {
+		return (EReference)bizServiceResponseEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -352,8 +346,8 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 	 * @generated
 	 */
 	@Override
-	public EReference getBizServiceResponse_UserLogin() {
-		return (EReference)bizServiceResponseEClass.getEStructuralFeatures().get(1);
+	public EClass getBizServiceResponseVoid() {
+		return bizServiceResponseVoidEClass;
 	}
 
 	/**
@@ -386,12 +380,12 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 
 		// Create classes and their features
 		bizServiceRequestEClass = createEClass(BIZ_SERVICE_REQUEST);
-		createEAttribute(bizServiceRequestEClass, BIZ_SERVICE_REQUEST__LOCALE);
 		createEReference(bizServiceRequestEClass, BIZ_SERVICE_REQUEST__USER_LOGIN);
 
 		bizServiceResponseEClass = createEClass(BIZ_SERVICE_RESPONSE);
-		createEAttribute(bizServiceResponseEClass, BIZ_SERVICE_RESPONSE__LOCALE);
 		createEReference(bizServiceResponseEClass, BIZ_SERVICE_RESPONSE__USER_LOGIN);
+
+		bizServiceResponseVoidEClass = createEClass(BIZ_SERVICE_RESPONSE_VOID);
 	}
 
 	/**
@@ -418,7 +412,7 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		org.abchip.mimo.biz.model.product.ProductPackage theProductPackage_1 = (org.abchip.mimo.biz.model.product.ProductPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.model.product.ProductPackage.eNS_URI);
+		org.abchip.mimo.biz.service.product.ProductPackage theProductPackage_1 = (org.abchip.mimo.biz.service.product.ProductPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.product.ProductPackage.eNS_URI);
 		ServicePackage theServicePackage = (ServicePackage)EPackage.Registry.INSTANCE.getEPackage(ServicePackage.eNS_URI);
 		LoginPackage theLoginPackage = (LoginPackage)EPackage.Registry.INSTANCE.getEPackage(LoginPackage.eNS_URI);
 
@@ -438,15 +432,16 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 		g1.getETypeArguments().add(g2);
 		bizServiceRequestEClass.getEGenericSuperTypes().add(g1);
 		bizServiceResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
+		bizServiceResponseVoidEClass.getESuperTypes().add(this.getBizServiceResponse());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(bizServiceRequestEClass, BizServiceRequest.class, "BizServiceRequest", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getBizServiceRequest_Locale(), ecorePackage.getEString(), "locale", null, 1, 1, BizServiceRequest.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getBizServiceRequest_UserLogin(), theLoginPackage.getUserLogin(), null, "userLogin", null, 1, 1, BizServiceRequest.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(bizServiceResponseEClass, BizServiceResponse.class, "BizServiceResponse", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getBizServiceResponse_Locale(), ecorePackage.getEString(), "locale", null, 1, 1, BizServiceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getBizServiceResponse_UserLogin(), theLoginPackage.getUserLogin(), null, "userLogin", null, 1, 1, BizServiceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(bizServiceResponseVoidEClass, BizServiceResponseVoid.class, "BizServiceResponseVoid", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

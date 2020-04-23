@@ -28,37 +28,15 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- * <li>{@link org.abchip.mimo.biz.service.impl.BizServiceRequestImpl#getLocale
- * <em>Locale</em>}</li>
- * <li>{@link org.abchip.mimo.biz.service.impl.BizServiceRequestImpl#getUserLogin
- * <em>User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.impl.BizServiceRequestImpl#getUserLogin <em>User Login</em>}</li>
  * </ul>
  *
  * @generated
  */
 public abstract class BizServiceRequestImpl<V extends ServiceResponse> extends ServiceRequestImpl<V> implements BizServiceRequest<V> {
 	/**
-	 * The default value of the '{@link #getLocale() <em>Locale</em>}' attribute.
+	 * The cached value of the '{@link #getUserLogin() <em>User Login</em>}' containment reference.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getLocale()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String LOCALE_EDEFAULT = null;
-	/**
-	 * The cached value of the '{@link #getLocale() <em>Locale</em>}' attribute.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @see #getLocale()
-	 * @generated
-	 * @ordered
-	 */
-	protected String locale = LOCALE_EDEFAULT;
-	/**
-	 * The cached value of the '{@link #getUserLogin() <em>User Login</em>}'
-	 * containment reference. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @see #getUserLogin()
 	 * @generated
 	 * @ordered
@@ -71,7 +49,6 @@ public abstract class BizServiceRequestImpl<V extends ServiceResponse> extends S
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected BizServiceRequestImpl() {
@@ -80,7 +57,6 @@ public abstract class BizServiceRequestImpl<V extends ServiceResponse> extends S
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -90,32 +66,20 @@ public abstract class BizServiceRequestImpl<V extends ServiceResponse> extends S
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	@Override
-	public String getLocale() {
-		return locale;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public UserLogin getUserLogin() {
-		if (userLogin != null && ((EObject) userLogin).eIsProxy()) {
-			InternalEObject oldUserLogin = (InternalEObject) userLogin;
-			userLogin = (UserLogin) eResolveProxy(oldUserLogin);
+		if (userLogin != null && ((EObject)userLogin).eIsProxy()) {
+			InternalEObject oldUserLogin = (InternalEObject)userLogin;
+			userLogin = (UserLogin)eResolveProxy(oldUserLogin);
 			if (userLogin != oldUserLogin) {
-				InternalEObject newUserLogin = (InternalEObject) userLogin;
+				InternalEObject newUserLogin = (InternalEObject)userLogin;
 				NotificationChain msgs = oldUserLogin.eInverseRemove(this, EOPPOSITE_FEATURE_BASE - BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN, null, null);
 				if (newUserLogin.eInternalContainer() == null) {
 					msgs = newUserLogin.eInverseAdd(this, EOPPOSITE_FEATURE_BASE - BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN, null, msgs);
 				}
-				if (msgs != null)
-					msgs.dispatch();
+				if (msgs != null) msgs.dispatch();
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN, oldUserLogin, userLogin));
 			}
@@ -125,7 +89,6 @@ public abstract class BizServiceRequestImpl<V extends ServiceResponse> extends S
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public UserLogin basicGetUserLogin() {
@@ -134,7 +97,6 @@ public abstract class BizServiceRequestImpl<V extends ServiceResponse> extends S
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	public NotificationChain basicSetUserLogin(UserLogin newUserLogin, NotificationChain msgs) {
@@ -142,77 +104,49 @@ public abstract class BizServiceRequestImpl<V extends ServiceResponse> extends S
 		userLogin = newUserLogin;
 		if (eNotificationRequired()) {
 			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN, oldUserLogin, newUserLogin);
-			if (msgs == null)
-				msgs = notification;
-			else
-				msgs.add(notification);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-		case BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN:
-			return basicSetUserLogin(null, msgs);
+			case BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN:
+				return basicSetUserLogin(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-		case BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE:
-			return getLocale();
-		case BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN:
-			if (resolve)
-				return getUserLogin();
-			return basicGetUserLogin();
+			case BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN:
+				if (resolve) return getUserLogin();
+				return basicGetUserLogin();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-		case BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE:
-			return LOCALE_EDEFAULT == null ? locale != null : !LOCALE_EDEFAULT.equals(locale);
-		case BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN:
-			return userLogin != null;
+			case BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN:
+				return userLogin != null;
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy())
-			return super.toString();
-
-		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (locale: ");
-		result.append(locale);
-		result.append(')');
-		return result.toString();
 	}
 
 	/**

@@ -19,7 +19,6 @@ import org.abchip.mimo.service.ServiceResponse;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.service.BizServiceResponse#getLocale <em>Locale</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.service.BizServiceResponse#getUserLogin <em>User Login</em>}</li>
  * </ul>
  *
@@ -28,17 +27,6 @@ import org.abchip.mimo.service.ServiceResponse;
  * @generated
  */
 public interface BizServiceResponse extends ServiceResponse {
-
-	/**
-	 * Returns the value of the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Locale</em>' attribute.
-	 * @see org.abchip.mimo.biz.service.BizServicePackage#getBizServiceResponse_Locale()
-	 * @model required="true" changeable="false"
-	 * @generated
-	 */
-	String getLocale();
 
 	/**
 	 * Returns the value of the '<em><b>User Login</b></em>' containment reference.

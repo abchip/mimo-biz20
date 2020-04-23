@@ -5,7 +5,7 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.model.product.impl;
+package org.abchip.mimo.biz.service.product.impl;
 
 import org.abchip.mimo.MimoPackage;
 
@@ -43,11 +43,6 @@ import org.abchip.mimo.biz.model.order.shoppingcart.ShoppingcartPackage;
 import org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage;
 import org.abchip.mimo.biz.model.party.PartyPackage;
 import org.abchip.mimo.biz.model.passport.PassportPackage;
-import org.abchip.mimo.biz.model.product.CalculateProductPrice;
-import org.abchip.mimo.biz.model.product.CalculateProductPriceResponse;
-import org.abchip.mimo.biz.model.product.ProductFactory;
-import org.abchip.mimo.biz.model.product.ProductPackage;
-
 import org.abchip.mimo.biz.model.product.catalog.CatalogPackage;
 import org.abchip.mimo.biz.model.product.category.CategoryPackage;
 import org.abchip.mimo.biz.model.product.config.ConfigPackage;
@@ -74,6 +69,11 @@ import org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.service.BizServicePackage;
 import org.abchip.mimo.biz.service.impl.BizServicePackageImpl;
+import org.abchip.mimo.biz.service.product.CalculateProductPrice;
+import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
+import org.abchip.mimo.biz.service.product.MyService;
+import org.abchip.mimo.biz.service.product.ProductFactory;
+import org.abchip.mimo.biz.service.product.ProductPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EGenericType;
@@ -104,6 +104,13 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	private EClass calculateProductPriceResponseEClass = null;
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass myServiceEClass = null;
+
+	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
 	 * {@link org.eclipse.emf.ecore.EPackage.Registry EPackage.Registry} by the package
 	 * package URI value.
@@ -114,7 +121,7 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see org.abchip.mimo.biz.model.product.ProductPackage#eNS_URI
+	 * @see org.abchip.mimo.biz.service.product.ProductPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */
@@ -309,6 +316,26 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getCalculateProductPriceResponse_OrderItemPriceInfos() {
+		return (EReference)calculateProductPriceResponseEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getMyService() {
+		return myServiceEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public ProductFactory getProductFactory() {
 		return (ProductFactory)getEFactoryInstance();
 	}
@@ -340,6 +367,9 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		createEAttribute(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__VALID_PRICE_FOUND);
 		createEAttribute(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__BASE_PRICE);
 		createEAttribute(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE);
+		createEReference(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS);
+
+		myServiceEClass = createEClass(MY_SERVICE);
 	}
 
 	/**
@@ -368,6 +398,7 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		// Obtain other dependent packages
 		BizServicePackage theBizServicePackage = (BizServicePackage)EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
 		org.abchip.mimo.biz.model.product.product.ProductPackage theProductPackage_1 = (org.abchip.mimo.biz.model.product.product.ProductPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.model.product.product.ProductPackage.eNS_URI);
+		OrderPackage theOrderPackage = (OrderPackage)EPackage.Registry.INSTANCE.getEPackage(OrderPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -379,16 +410,20 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		g1.getETypeArguments().add(g2);
 		calculateProductPriceEClass.getEGenericSuperTypes().add(g1);
 		calculateProductPriceResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
+		myServiceEClass.getESuperTypes().add(this.getCalculateProductPrice());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(calculateProductPriceEClass, CalculateProductPrice.class, "CalculateProductPrice", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCalculateProductPrice_Product(), theProductPackage_1.getProduct(), null, "product", null, 1, 1, CalculateProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCalculateProductPrice_CurrencyUomId(), ecorePackage.getEString(), "currencyUomId", null, 0, 1, CalculateProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCalculateProductPrice_CurrencyUomId(), ecorePackage.getEString(), "currencyUomId", "@general/currency.uom.id.default", 0, 1, CalculateProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(calculateProductPriceResponseEClass, CalculateProductPriceResponse.class, "CalculateProductPriceResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCalculateProductPriceResponse_ValidPriceFound(), ecorePackage.getEBoolean(), "validPriceFound", null, 1, 1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCalculateProductPriceResponse_BasePrice(), ecorePackage.getEBigDecimal(), "basePrice", null, 1, 1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCalculateProductPriceResponse_ListPrice(), ecorePackage.getEBigDecimal(), "listPrice", null, 0, 1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCalculateProductPriceResponse_OrderItemPriceInfos(), theOrderPackage.getOrderItemPriceInfo(), null, "orderItemPriceInfos", null, 0, -1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(myServiceEClass, MyService.class, "MyService", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 	}
 
 } //ProductPackageImpl

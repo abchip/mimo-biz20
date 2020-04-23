@@ -5,9 +5,11 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.model.product;
+package org.abchip.mimo.biz.service.product;
 
 import java.math.BigDecimal;
+import java.util.List;
+import org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo;
 import org.abchip.mimo.biz.service.BizServiceResponse;
 
 /**
@@ -19,12 +21,13 @@ import org.abchip.mimo.biz.service.BizServiceResponse;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.CalculateProductPriceResponse#isValidPriceFound <em>Valid Price Found</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.CalculateProductPriceResponse#getBasePrice <em>Base Price</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.CalculateProductPriceResponse#getListPrice <em>List Price</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.product.CalculateProductPriceResponse#isValidPriceFound <em>Valid Price Found</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.product.CalculateProductPriceResponse#getBasePrice <em>Base Price</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.product.CalculateProductPriceResponse#getListPrice <em>List Price</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.product.CalculateProductPriceResponse#getOrderItemPriceInfos <em>Order Item Price Infos</em>}</li>
  * </ul>
  *
- * @see org.abchip.mimo.biz.model.product.ProductPackage#getCalculateProductPriceResponse()
+ * @see org.abchip.mimo.biz.service.product.ProductPackage#getCalculateProductPriceResponse()
  * @model
  * @generated
  */
@@ -36,14 +39,14 @@ public interface CalculateProductPriceResponse extends BizServiceResponse {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Valid Price Found</em>' attribute.
 	 * @see #setValidPriceFound(boolean)
-	 * @see org.abchip.mimo.biz.model.product.ProductPackage#getCalculateProductPriceResponse_ValidPriceFound()
+	 * @see org.abchip.mimo.biz.service.product.ProductPackage#getCalculateProductPriceResponse_ValidPriceFound()
 	 * @model required="true"
 	 * @generated
 	 */
 	boolean isValidPriceFound();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.CalculateProductPriceResponse#isValidPriceFound <em>Valid Price Found</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.service.product.CalculateProductPriceResponse#isValidPriceFound <em>Valid Price Found</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Valid Price Found</em>' attribute.
@@ -58,14 +61,14 @@ public interface CalculateProductPriceResponse extends BizServiceResponse {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base Price</em>' attribute.
 	 * @see #setBasePrice(BigDecimal)
-	 * @see org.abchip.mimo.biz.model.product.ProductPackage#getCalculateProductPriceResponse_BasePrice()
+	 * @see org.abchip.mimo.biz.service.product.ProductPackage#getCalculateProductPriceResponse_BasePrice()
 	 * @model required="true"
 	 * @generated
 	 */
 	BigDecimal getBasePrice();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.CalculateProductPriceResponse#getBasePrice <em>Base Price</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.service.product.CalculateProductPriceResponse#getBasePrice <em>Base Price</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Base Price</em>' attribute.
@@ -80,14 +83,14 @@ public interface CalculateProductPriceResponse extends BizServiceResponse {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>List Price</em>' attribute.
 	 * @see #setListPrice(BigDecimal)
-	 * @see org.abchip.mimo.biz.model.product.ProductPackage#getCalculateProductPriceResponse_ListPrice()
+	 * @see org.abchip.mimo.biz.service.product.ProductPackage#getCalculateProductPriceResponse_ListPrice()
 	 * @model
 	 * @generated
 	 */
 	BigDecimal getListPrice();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.CalculateProductPriceResponse#getListPrice <em>List Price</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.service.product.CalculateProductPriceResponse#getListPrice <em>List Price</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>List Price</em>' attribute.
@@ -95,4 +98,16 @@ public interface CalculateProductPriceResponse extends BizServiceResponse {
 	 * @generated
 	 */
 	void setListPrice(BigDecimal value);
+
+	/**
+	 * Returns the value of the '<em><b>Order Item Price Infos</b></em>' containment reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Order Item Price Infos</em>' containment reference list.
+	 * @see org.abchip.mimo.biz.service.product.ProductPackage#getCalculateProductPriceResponse_OrderItemPriceInfos()
+	 * @model containment="true" resolveProxies="true"
+	 * @generated
+	 */
+	List<OrderItemPriceInfo> getOrderItemPriceInfos();
 } // CalculateProductPriceResponse

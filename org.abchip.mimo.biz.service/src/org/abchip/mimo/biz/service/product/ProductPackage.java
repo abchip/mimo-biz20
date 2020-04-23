@@ -5,7 +5,7 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.model.product;
+package org.abchip.mimo.biz.service.product;
 
 import org.abchip.mimo.biz.service.BizServicePackage;
 import org.eclipse.emf.ecore.EAttribute;
@@ -24,7 +24,7 @@ import org.eclipse.emf.ecore.EReference;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see org.abchip.mimo.biz.model.product.ProductFactory
+ * @see org.abchip.mimo.biz.service.product.ProductFactory
  * @model kind="package"
  * @generated
  */
@@ -59,14 +59,14 @@ public interface ProductPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	ProductPackage eINSTANCE = org.abchip.mimo.biz.model.product.impl.ProductPackageImpl.init();
+	ProductPackage eINSTANCE = org.abchip.mimo.biz.service.product.impl.ProductPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.impl.CalculateProductPriceImpl <em>Calculate Product Price</em>}' class.
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.product.impl.CalculateProductPriceImpl <em>Calculate Product Price</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.abchip.mimo.biz.model.product.impl.CalculateProductPriceImpl
-	 * @see org.abchip.mimo.biz.model.product.impl.ProductPackageImpl#getCalculateProductPrice()
+	 * @see org.abchip.mimo.biz.service.product.impl.CalculateProductPriceImpl
+	 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getCalculateProductPrice()
 	 * @generated
 	 */
 	int CALCULATE_PRODUCT_PRICE = 0;
@@ -81,15 +81,6 @@ public interface ProductPackage extends EPackage {
 	int CALCULATE_PRODUCT_PRICE__CONTEXT = BizServicePackage.BIZ_SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PRODUCT_PRICE__TENANT = BizServicePackage.BIZ_SERVICE_REQUEST__TENANT;
-
-	/**
 	 * The feature id for the '<em><b>Locale</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -97,6 +88,15 @@ public interface ProductPackage extends EPackage {
 	 * @ordered
 	 */
 	int CALCULATE_PRODUCT_PRICE__LOCALE = BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE__TENANT = BizServicePackage.BIZ_SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
@@ -135,11 +135,11 @@ public interface ProductPackage extends EPackage {
 	int CALCULATE_PRODUCT_PRICE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 2;
 
 	/**
-	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.impl.CalculateProductPriceResponseImpl <em>Calculate Product Price Response</em>}' class.
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.product.impl.CalculateProductPriceResponseImpl <em>Calculate Product Price Response</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.abchip.mimo.biz.model.product.impl.CalculateProductPriceResponseImpl
-	 * @see org.abchip.mimo.biz.model.product.impl.ProductPackageImpl#getCalculateProductPriceResponse()
+	 * @see org.abchip.mimo.biz.service.product.impl.CalculateProductPriceResponseImpl
+	 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getCalculateProductPriceResponse()
 	 * @generated
 	 */
 	int CALCULATE_PRODUCT_PRICE_RESPONSE = 1;
@@ -161,6 +161,42 @@ public interface ProductPackage extends EPackage {
 	 * @ordered
 	 */
 	int CALCULATE_PRODUCT_PRICE_RESPONSE__LOCALE = BizServicePackage.BIZ_SERVICE_RESPONSE__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Error</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__ERROR = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR;
+
+	/**
+	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__ERROR_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Response Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__RESPONSE_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__RESPONSE_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__SUCCESS_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__SUCCESS_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
@@ -199,89 +235,193 @@ public interface ProductPackage extends EPackage {
 	int CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Order Item Price Infos</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 3;
+
+	/**
 	 * The number of structural features of the '<em>Calculate Product Price Response</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 3;
+	int CALCULATE_PRODUCT_PRICE_RESPONSE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 4;
 
 
 	/**
-	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.CalculateProductPrice <em>Calculate Product Price</em>}'.
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.product.impl.MyServiceImpl <em>My Service</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.product.impl.MyServiceImpl
+	 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getMyService()
+	 * @generated
+	 */
+	int MY_SERVICE = 2;
+
+	/**
+	 * The feature id for the '<em><b>Context</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MY_SERVICE__CONTEXT = CALCULATE_PRODUCT_PRICE__CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>Locale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MY_SERVICE__LOCALE = CALCULATE_PRODUCT_PRICE__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MY_SERVICE__TENANT = CALCULATE_PRODUCT_PRICE__TENANT;
+
+	/**
+	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MY_SERVICE__USER_LOGIN = CALCULATE_PRODUCT_PRICE__USER_LOGIN;
+
+	/**
+	 * The feature id for the '<em><b>Product</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MY_SERVICE__PRODUCT = CALCULATE_PRODUCT_PRICE__PRODUCT;
+
+	/**
+	 * The feature id for the '<em><b>Currency Uom Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MY_SERVICE__CURRENCY_UOM_ID = CALCULATE_PRODUCT_PRICE__CURRENCY_UOM_ID;
+
+	/**
+	 * The number of structural features of the '<em>My Service</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MY_SERVICE_FEATURE_COUNT = CALCULATE_PRODUCT_PRICE_FEATURE_COUNT + 0;
+
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.product.CalculateProductPrice <em>Calculate Product Price</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Calculate Product Price</em>'.
-	 * @see org.abchip.mimo.biz.model.product.CalculateProductPrice
+	 * @see org.abchip.mimo.biz.service.product.CalculateProductPrice
 	 * @generated
 	 */
 	EClass getCalculateProductPrice();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link org.abchip.mimo.biz.model.product.CalculateProductPrice#getProduct <em>Product</em>}'.
+	 * Returns the meta object for the containment reference '{@link org.abchip.mimo.biz.service.product.CalculateProductPrice#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>Product</em>'.
-	 * @see org.abchip.mimo.biz.model.product.CalculateProductPrice#getProduct()
+	 * @see org.abchip.mimo.biz.service.product.CalculateProductPrice#getProduct()
 	 * @see #getCalculateProductPrice()
 	 * @generated
 	 */
 	EReference getCalculateProductPrice_Product();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.CalculateProductPrice#getCurrencyUomId <em>Currency Uom Id</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.product.CalculateProductPrice#getCurrencyUomId <em>Currency Uom Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Currency Uom Id</em>'.
-	 * @see org.abchip.mimo.biz.model.product.CalculateProductPrice#getCurrencyUomId()
+	 * @see org.abchip.mimo.biz.service.product.CalculateProductPrice#getCurrencyUomId()
 	 * @see #getCalculateProductPrice()
 	 * @generated
 	 */
 	EAttribute getCalculateProductPrice_CurrencyUomId();
 
 	/**
-	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.CalculateProductPriceResponse <em>Calculate Product Price Response</em>}'.
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.product.CalculateProductPriceResponse <em>Calculate Product Price Response</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>Calculate Product Price Response</em>'.
-	 * @see org.abchip.mimo.biz.model.product.CalculateProductPriceResponse
+	 * @see org.abchip.mimo.biz.service.product.CalculateProductPriceResponse
 	 * @generated
 	 */
 	EClass getCalculateProductPriceResponse();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.CalculateProductPriceResponse#isValidPriceFound <em>Valid Price Found</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.product.CalculateProductPriceResponse#isValidPriceFound <em>Valid Price Found</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Valid Price Found</em>'.
-	 * @see org.abchip.mimo.biz.model.product.CalculateProductPriceResponse#isValidPriceFound()
+	 * @see org.abchip.mimo.biz.service.product.CalculateProductPriceResponse#isValidPriceFound()
 	 * @see #getCalculateProductPriceResponse()
 	 * @generated
 	 */
 	EAttribute getCalculateProductPriceResponse_ValidPriceFound();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.CalculateProductPriceResponse#getBasePrice <em>Base Price</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.product.CalculateProductPriceResponse#getBasePrice <em>Base Price</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Base Price</em>'.
-	 * @see org.abchip.mimo.biz.model.product.CalculateProductPriceResponse#getBasePrice()
+	 * @see org.abchip.mimo.biz.service.product.CalculateProductPriceResponse#getBasePrice()
 	 * @see #getCalculateProductPriceResponse()
 	 * @generated
 	 */
 	EAttribute getCalculateProductPriceResponse_BasePrice();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.CalculateProductPriceResponse#getListPrice <em>List Price</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.product.CalculateProductPriceResponse#getListPrice <em>List Price</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>List Price</em>'.
-	 * @see org.abchip.mimo.biz.model.product.CalculateProductPriceResponse#getListPrice()
+	 * @see org.abchip.mimo.biz.service.product.CalculateProductPriceResponse#getListPrice()
 	 * @see #getCalculateProductPriceResponse()
 	 * @generated
 	 */
 	EAttribute getCalculateProductPriceResponse_ListPrice();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link org.abchip.mimo.biz.service.product.CalculateProductPriceResponse#getOrderItemPriceInfos <em>Order Item Price Infos</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Order Item Price Infos</em>'.
+	 * @see org.abchip.mimo.biz.service.product.CalculateProductPriceResponse#getOrderItemPriceInfos()
+	 * @see #getCalculateProductPriceResponse()
+	 * @generated
+	 */
+	EReference getCalculateProductPriceResponse_OrderItemPriceInfos();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.product.MyService <em>My Service</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>My Service</em>'.
+	 * @see org.abchip.mimo.biz.service.product.MyService
+	 * @generated
+	 */
+	EClass getMyService();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -306,11 +446,11 @@ public interface ProductPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.impl.CalculateProductPriceImpl <em>Calculate Product Price</em>}' class.
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.product.impl.CalculateProductPriceImpl <em>Calculate Product Price</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.abchip.mimo.biz.model.product.impl.CalculateProductPriceImpl
-		 * @see org.abchip.mimo.biz.model.product.impl.ProductPackageImpl#getCalculateProductPrice()
+		 * @see org.abchip.mimo.biz.service.product.impl.CalculateProductPriceImpl
+		 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getCalculateProductPrice()
 		 * @generated
 		 */
 		EClass CALCULATE_PRODUCT_PRICE = eINSTANCE.getCalculateProductPrice();
@@ -332,11 +472,11 @@ public interface ProductPackage extends EPackage {
 		EAttribute CALCULATE_PRODUCT_PRICE__CURRENCY_UOM_ID = eINSTANCE.getCalculateProductPrice_CurrencyUomId();
 
 		/**
-		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.impl.CalculateProductPriceResponseImpl <em>Calculate Product Price Response</em>}' class.
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.product.impl.CalculateProductPriceResponseImpl <em>Calculate Product Price Response</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see org.abchip.mimo.biz.model.product.impl.CalculateProductPriceResponseImpl
-		 * @see org.abchip.mimo.biz.model.product.impl.ProductPackageImpl#getCalculateProductPriceResponse()
+		 * @see org.abchip.mimo.biz.service.product.impl.CalculateProductPriceResponseImpl
+		 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getCalculateProductPriceResponse()
 		 * @generated
 		 */
 		EClass CALCULATE_PRODUCT_PRICE_RESPONSE = eINSTANCE.getCalculateProductPriceResponse();
@@ -364,6 +504,24 @@ public interface ProductPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE = eINSTANCE.getCalculateProductPriceResponse_ListPrice();
+
+		/**
+		 * The meta object literal for the '<em><b>Order Item Price Infos</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS = eINSTANCE.getCalculateProductPriceResponse_OrderItemPriceInfos();
+
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.product.impl.MyServiceImpl <em>My Service</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.product.impl.MyServiceImpl
+		 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getMyService()
+		 * @generated
+		 */
+		EClass MY_SERVICE = eINSTANCE.getMyService();
 
 	}
 

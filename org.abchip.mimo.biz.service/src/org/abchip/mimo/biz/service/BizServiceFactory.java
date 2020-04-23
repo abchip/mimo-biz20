@@ -27,6 +27,15 @@ public interface BizServiceFactory extends EFactory {
 	BizServiceFactory eINSTANCE = org.abchip.mimo.biz.service.impl.BizServiceFactoryImpl.init();
 
 	/**
+	 * Returns a new object of class '<em>Response Void</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Response Void</em>'.
+	 * @generated
+	 */
+	BizServiceResponseVoid createBizServiceResponseVoid();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

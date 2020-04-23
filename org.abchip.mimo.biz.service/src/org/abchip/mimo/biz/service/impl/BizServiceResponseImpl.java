@@ -28,31 +28,12 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.service.impl.BizServiceResponseImpl#getLocale <em>Locale</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.service.impl.BizServiceResponseImpl#getUserLogin <em>User Login</em>}</li>
  * </ul>
  *
  * @generated
  */
 public abstract class BizServiceResponseImpl extends ServiceResponseImpl implements BizServiceResponse {
-	/**
-	 * The default value of the '{@link #getLocale() <em>Locale</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getLocale()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String LOCALE_EDEFAULT = null;
-	/**
-	 * The cached value of the '{@link #getLocale() <em>Locale</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getLocale()
-	 * @generated
-	 * @ordered
-	 */
-	protected String locale = LOCALE_EDEFAULT;
 	/**
 	 * The cached value of the '{@link #getUserLogin() <em>User Login</em>}' containment reference.
 	 * <!-- begin-user-doc -->
@@ -84,16 +65,6 @@ public abstract class BizServiceResponseImpl extends ServiceResponseImpl impleme
 	@Override
 	protected EClass eStaticClass() {
 		return BizServicePackage.Literals.BIZ_SERVICE_RESPONSE;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getLocale() {
-		return locale;
 	}
 
 	/**
@@ -166,8 +137,6 @@ public abstract class BizServiceResponseImpl extends ServiceResponseImpl impleme
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case BizServicePackage.BIZ_SERVICE_RESPONSE__LOCALE:
-				return getLocale();
 			case BizServicePackage.BIZ_SERVICE_RESPONSE__USER_LOGIN:
 				if (resolve) return getUserLogin();
 				return basicGetUserLogin();
@@ -183,28 +152,10 @@ public abstract class BizServiceResponseImpl extends ServiceResponseImpl impleme
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case BizServicePackage.BIZ_SERVICE_RESPONSE__LOCALE:
-				return LOCALE_EDEFAULT == null ? locale != null : !LOCALE_EDEFAULT.equals(locale);
 			case BizServicePackage.BIZ_SERVICE_RESPONSE__USER_LOGIN:
 				return userLogin != null;
 		}
 		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) return super.toString();
-
-		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (locale: ");
-		result.append(locale);
-		result.append(')');
-		return result.toString();
 	}
 
 } //BizServiceResponseImpl

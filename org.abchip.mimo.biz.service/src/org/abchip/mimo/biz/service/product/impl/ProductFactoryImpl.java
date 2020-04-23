@@ -5,10 +5,9 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.model.product.impl;
+package org.abchip.mimo.biz.service.product.impl;
 
-import org.abchip.mimo.biz.model.product.*;
-
+import org.abchip.mimo.biz.service.product.*;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -63,6 +62,7 @@ public class ProductFactoryImpl extends EFactoryImpl implements ProductFactory {
 		switch (eClass.getClassifierID()) {
 			case ProductPackage.CALCULATE_PRODUCT_PRICE: return (EObject)createCalculateProductPrice();
 			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE: return (EObject)createCalculateProductPriceResponse();
+			case ProductPackage.MY_SERVICE: return (EObject)createMyService();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -88,6 +88,17 @@ public class ProductFactoryImpl extends EFactoryImpl implements ProductFactory {
 	public CalculateProductPriceResponse createCalculateProductPriceResponse() {
 		CalculateProductPriceResponseImpl calculateProductPriceResponse = new CalculateProductPriceResponseImpl();
 		return calculateProductPriceResponse;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public MyService createMyService() {
+		MyServiceImpl myService = new MyServiceImpl();
+		return myService;
 	}
 
 	/**

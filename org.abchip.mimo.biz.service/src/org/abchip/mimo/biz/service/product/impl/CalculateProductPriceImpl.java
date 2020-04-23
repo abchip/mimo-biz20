@@ -5,14 +5,13 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.model.product.impl;
-
-import org.abchip.mimo.biz.model.product.CalculateProductPrice;
-import org.abchip.mimo.biz.model.product.CalculateProductPriceResponse;
-import org.abchip.mimo.biz.model.product.ProductPackage;
+package org.abchip.mimo.biz.service.product.impl;
 
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.service.impl.BizServiceRequestImpl;
+import org.abchip.mimo.biz.service.product.CalculateProductPrice;
+import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
+import org.abchip.mimo.biz.service.product.ProductPackage;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.ecore.EClass;
@@ -28,8 +27,8 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.impl.CalculateProductPriceImpl#getProduct <em>Product</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.impl.CalculateProductPriceImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.product.impl.CalculateProductPriceImpl#getProduct <em>Product</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.product.impl.CalculateProductPriceImpl#getCurrencyUomId <em>Currency Uom Id</em>}</li>
  * </ul>
  *
  * @generated
@@ -52,7 +51,7 @@ public class CalculateProductPriceImpl extends BizServiceRequestImpl<CalculatePr
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String CURRENCY_UOM_ID_EDEFAULT = null;
+	protected static final String CURRENCY_UOM_ID_EDEFAULT = "@general/currency.uom.id.default";
 	/**
 	 * The cached value of the '{@link #getCurrencyUomId() <em>Currency Uom Id</em>}' attribute.
 	 * <!-- begin-user-doc -->

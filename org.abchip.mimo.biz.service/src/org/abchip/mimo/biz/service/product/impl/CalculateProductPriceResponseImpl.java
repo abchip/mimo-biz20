@@ -5,15 +5,23 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.model.product.impl;
+package org.abchip.mimo.biz.service.product.impl;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.model.product.CalculateProductPriceResponse;
-import org.abchip.mimo.biz.model.product.ProductPackage;
+import java.util.Collection;
+import java.util.List;
+import org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo;
 import org.abchip.mimo.biz.service.impl.BizServiceResponseImpl;
+import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
+import org.abchip.mimo.biz.service.product.ProductPackage;
 import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.notify.NotificationChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.InternalEObject;
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
+import org.eclipse.emf.ecore.util.EObjectContainmentEList;
+import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -23,9 +31,10 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.product.impl.CalculateProductPriceResponseImpl#isValidPriceFound <em>Valid Price Found</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.impl.CalculateProductPriceResponseImpl#getBasePrice <em>Base Price</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.impl.CalculateProductPriceResponseImpl#getListPrice <em>List Price</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.product.impl.CalculateProductPriceResponseImpl#isValidPriceFound <em>Valid Price Found</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.product.impl.CalculateProductPriceResponseImpl#getBasePrice <em>Base Price</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.product.impl.CalculateProductPriceResponseImpl#getListPrice <em>List Price</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.product.impl.CalculateProductPriceResponseImpl#getOrderItemPriceInfos <em>Order Item Price Infos</em>}</li>
  * </ul>
  *
  * @generated
@@ -85,6 +94,15 @@ public class CalculateProductPriceResponseImpl extends BizServiceResponseImpl im
 	 * @ordered
 	 */
 	protected BigDecimal listPrice = LIST_PRICE_EDEFAULT;
+	/**
+	 * The cached value of the '{@link #getOrderItemPriceInfos() <em>Order Item Price Infos</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getOrderItemPriceInfos()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<OrderItemPriceInfo> orderItemPriceInfos;
 	/**
 	 * 
 	 */
@@ -184,6 +202,33 @@ public class CalculateProductPriceResponseImpl extends BizServiceResponseImpl im
 	 * @generated
 	 */
 	@Override
+	public List<OrderItemPriceInfo> getOrderItemPriceInfos() {
+		if (orderItemPriceInfos == null) {
+			orderItemPriceInfos = new EObjectContainmentEList.Resolving<OrderItemPriceInfo>(OrderItemPriceInfo.class, this, ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS);
+		}
+		return orderItemPriceInfos;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS:
+				return ((InternalEList<?>)getOrderItemPriceInfos()).basicRemove(otherEnd, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
 			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__VALID_PRICE_FOUND:
@@ -192,6 +237,8 @@ public class CalculateProductPriceResponseImpl extends BizServiceResponseImpl im
 				return getBasePrice();
 			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE:
 				return getListPrice();
+			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS:
+				return getOrderItemPriceInfos();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -201,6 +248,7 @@ public class CalculateProductPriceResponseImpl extends BizServiceResponseImpl im
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
@@ -212,6 +260,10 @@ public class CalculateProductPriceResponseImpl extends BizServiceResponseImpl im
 				return;
 			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE:
 				setListPrice((BigDecimal)newValue);
+				return;
+			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS:
+				getOrderItemPriceInfos().clear();
+				getOrderItemPriceInfos().addAll((Collection<? extends OrderItemPriceInfo>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -234,6 +286,9 @@ public class CalculateProductPriceResponseImpl extends BizServiceResponseImpl im
 			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE:
 				setListPrice(LIST_PRICE_EDEFAULT);
 				return;
+			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS:
+				getOrderItemPriceInfos().clear();
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -252,6 +307,8 @@ public class CalculateProductPriceResponseImpl extends BizServiceResponseImpl im
 				return BASE_PRICE_EDEFAULT == null ? basePrice != null : !BASE_PRICE_EDEFAULT.equals(basePrice);
 			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE:
 				return LIST_PRICE_EDEFAULT == null ? listPrice != null : !LIST_PRICE_EDEFAULT.equals(listPrice);
+			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS:
+				return orderItemPriceInfos != null && !orderItemPriceInfos.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
