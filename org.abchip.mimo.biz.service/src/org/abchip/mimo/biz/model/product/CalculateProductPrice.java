@@ -8,7 +8,7 @@
 package org.abchip.mimo.biz.model.product;
 
 import org.abchip.mimo.biz.model.product.product.Product;
-import org.abchip.mimo.service.ServiceRequest;
+import org.abchip.mimo.biz.service.BizServiceRequest;
 
 /**
  * <!-- begin-user-doc -->
@@ -24,28 +24,28 @@ import org.abchip.mimo.service.ServiceRequest;
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.ProductPackage#getCalculateProductPrice()
- * @model annotation="mimo-ent-frame owner='product'"
+ * @model
  * @generated
  */
-public interface CalculateProductPrice extends ServiceRequest<CalculateProductPriceResponse> {
+public interface CalculateProductPrice extends BizServiceRequest<CalculateProductPriceResponse> {
 
 	/**
-	 * Returns the value of the '<em><b>Product</b></em>' reference.
+	 * Returns the value of the '<em><b>Product</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Product</em>' reference.
+	 * @return the value of the '<em>Product</em>' containment reference.
 	 * @see #setProduct(Product)
 	 * @see org.abchip.mimo.biz.model.product.ProductPackage#getCalculateProductPrice_Product()
-	 * @model required="true"
+	 * @model containment="true" resolveProxies="true" required="true"
 	 * @generated
 	 */
 	Product getProduct();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.CalculateProductPrice#getProduct <em>Product</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.CalculateProductPrice#getProduct <em>Product</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Product</em>' reference.
+	 * @param value the new value of the '<em>Product</em>' containment reference.
 	 * @see #getProduct()
 	 * @generated
 	 */

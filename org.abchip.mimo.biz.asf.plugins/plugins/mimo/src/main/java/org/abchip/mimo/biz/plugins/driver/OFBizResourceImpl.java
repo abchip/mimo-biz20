@@ -187,7 +187,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		int i = 0;
 		for (String key : keys) {
 			Slot slot = this.getFrame().getSlot(this.modelEntity.getPkFieldNames().get(i));
-			Object value = EntityUtils.toBizValue(slot, key);
+			Object value = EntityUtils.toBizValue(delegator, slot, key);
 			primaryKey.set(slot.getName(), value);
 			i++;
 		}

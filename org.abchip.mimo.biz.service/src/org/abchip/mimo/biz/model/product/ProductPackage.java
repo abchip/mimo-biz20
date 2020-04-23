@@ -7,8 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product;
 
-import org.abchip.mimo.service.ServicePackage;
-
+import org.abchip.mimo.biz.service.BizServicePackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -79,7 +78,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
+	int CALCULATE_PRODUCT_PRICE__CONTEXT = BizServicePackage.BIZ_SERVICE_REQUEST__CONTEXT;
 
 	/**
 	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
@@ -88,16 +87,34 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
+	int CALCULATE_PRODUCT_PRICE__TENANT = BizServicePackage.BIZ_SERVICE_REQUEST__TENANT;
 
 	/**
-	 * The feature id for the '<em><b>Product</b></em>' reference.
+	 * The feature id for the '<em><b>Locale</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE__PRODUCT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
+	int CALCULATE_PRODUCT_PRICE__LOCALE = BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE__USER_LOGIN = BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN;
+
+	/**
+	 * The feature id for the '<em><b>Product</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE__PRODUCT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Currency Uom Id</b></em>' attribute.
@@ -106,7 +123,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE__CURRENCY_UOM_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
+	int CALCULATE_PRODUCT_PRICE__CURRENCY_UOM_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Calculate Product Price</em>' class.
@@ -115,7 +132,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
+	int CALCULATE_PRODUCT_PRICE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.impl.CalculateProductPriceResponseImpl <em>Calculate Product Price Response</em>}' class.
@@ -128,13 +145,40 @@ public interface ProductPackage extends EPackage {
 	int CALCULATE_PRODUCT_PRICE_RESPONSE = 1;
 
 	/**
+	 * The feature id for the '<em><b>Context</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__CONTEXT = BizServicePackage.BIZ_SERVICE_RESPONSE__CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>Locale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__LOCALE = BizServicePackage.BIZ_SERVICE_RESPONSE__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__USER_LOGIN = BizServicePackage.BIZ_SERVICE_RESPONSE__USER_LOGIN;
+
+	/**
 	 * The feature id for the '<em><b>Valid Price Found</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__VALID_PRICE_FOUND = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__VALID_PRICE_FOUND = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Base Price</b></em>' attribute.
@@ -143,7 +187,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__BASE_PRICE = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 1;
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__BASE_PRICE = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>List Price</b></em>' attribute.
@@ -152,7 +196,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 2;
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Calculate Product Price Response</em>' class.
@@ -161,7 +205,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 3;
+	int CALCULATE_PRODUCT_PRICE_RESPONSE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 3;
 
 
 	/**
@@ -175,10 +219,10 @@ public interface ProductPackage extends EPackage {
 	EClass getCalculateProductPrice();
 
 	/**
-	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.CalculateProductPrice#getProduct <em>Product</em>}'.
+	 * Returns the meta object for the containment reference '{@link org.abchip.mimo.biz.model.product.CalculateProductPrice#getProduct <em>Product</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Product</em>'.
+	 * @return the meta object for the containment reference '<em>Product</em>'.
 	 * @see org.abchip.mimo.biz.model.product.CalculateProductPrice#getProduct()
 	 * @see #getCalculateProductPrice()
 	 * @generated
@@ -272,7 +316,7 @@ public interface ProductPackage extends EPackage {
 		EClass CALCULATE_PRODUCT_PRICE = eINSTANCE.getCalculateProductPrice();
 
 		/**
-		 * The meta object literal for the '<em><b>Product</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Product</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

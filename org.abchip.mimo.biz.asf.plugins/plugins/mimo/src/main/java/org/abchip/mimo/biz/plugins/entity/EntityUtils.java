@@ -14,9 +14,7 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.Iterator;
-import java.util.Map;
 import java.util.Map.Entry;
 
 import org.abchip.mimo.biz.plugins.OFBizConstants;
@@ -25,7 +23,6 @@ import org.abchip.mimo.data.NumericDef;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
-import org.abchip.mimo.service.ServiceRequest;
 import org.apache.ofbiz.base.util.UtilValidate;
 import org.apache.ofbiz.entity.Delegator;
 import org.apache.ofbiz.entity.GenericValue;
@@ -33,22 +30,6 @@ import org.apache.ofbiz.entity.model.ModelField;
 import org.eclipse.emf.common.util.Enumerator;
 
 public class EntityUtils {
-
-	public static Map<String, Object> toBizContext(Delegator delegator, ServiceRequest<?> request) {
-
-		Map<String, Object> context = new HashMap<String, Object>();
-
-		Frame<ServiceRequest<?>> frame = request.isa();
-
-		for (Slot slot : frame.getSlots()) {
-			Object value = frame.getValue(request, slot.getName(), false, false);
-			value = EntityUtils.toBizValue(slot, value);
-			if (value != null)
-				context.put(slot.getName(), value);
-		}
-
-		return context;
-	}
 
 	// from entity -> ofbiz
 	public static GenericValue toBizEntity(Delegator delegator, EntityIdentifiable entity) {
@@ -67,7 +48,7 @@ public class EntityUtils {
 			if (UtilValidate.isEmpty(value))
 				continue;
 
-			value = toBizValue(frame.getSlot(field.getName()), value);
+			value = toBizValue(delegator, frame.getSlot(field.getName()), value);
 			genericValue.set(field.getName(), value);
 		}
 
@@ -98,7 +79,7 @@ public class EntityUtils {
 	}
 
 	// from entity -> ofbiz
-	public static Object toBizValue(Slot slot, Object value) {
+	public static Object toBizValue(Delegator delegator, Slot slot, Object value) {
 
 		Object bizValue = null;
 		if (value == null) {
@@ -194,7 +175,10 @@ public class EntityUtils {
 			break;
 		case ENTITY:
 			EntityIdentifiable entityIdentifiable = (EntityIdentifiable) value;
-			bizValue = entityIdentifiable.getID();
+			if (slot.isContainment()) {
+				bizValue = EntityUtils.toBizEntity(delegator, entityIdentifiable);
+			} else
+				bizValue = entityIdentifiable.getID();
 			break;
 		case ENUM:
 			Enumerator enumerator = (Enumerator) value;

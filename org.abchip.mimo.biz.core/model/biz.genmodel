@@ -21,10 +21,6 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference biz.ecore#//BizComponent/bizModules"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//BizComponent/modulesDir"/>
     </genClasses>
-    <genClasses ecoreClass="biz.ecore#//BizModule">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//BizModule/name"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//BizModule/status"/>
-    </genClasses>
     <genClasses ecoreClass="biz.ecore#//BizEntity"/>
     <genClasses ecoreClass="biz.ecore#//BizEntityNote">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//BizEntityNote/noteId"/>
@@ -38,6 +34,10 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//BizEntityNoteData/noteInfo"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//BizEntityNoteData/noteName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//BizEntityNoteData/noteParty"/>
+    </genClasses>
+    <genClasses ecoreClass="biz.ecore#//BizModule">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//BizModule/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz.ecore#//BizModule/status"/>
     </genClasses>
     <genClasses ecoreClass="biz.ecore#//BizEntityTyped">
       <genTypeParameters ecoreTypeParameter="biz.ecore#//BizEntityTyped/T"/>

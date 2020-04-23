@@ -15,7 +15,6 @@ import org.abchip.mimo.biz.model.product.CalculateProductPrice;
 import org.abchip.mimo.biz.model.product.CalculateProductPriceResponse;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.context.Context;
-import org.abchip.mimo.context.ContextProvider;
 import org.abchip.mimo.service.Service;
 import org.abchip.mimo.service.ServiceManager;
 import org.abchip.mimo.tester.base.BaseTestCommands;
@@ -27,23 +26,22 @@ public class ServiceTestCommands extends BaseTestCommands {
 	private ServiceManager serviceManager;
 
 	public void _st_product(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider contextProvider = login()) {
-			Context context = contextProvider.get();
 
-			CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
-			calculateProductPrice.setProduct(context.createProxy(Product.class, "Marketing"));
-			calculateProductPrice.setCurrencyUomId(UomServices.getUom(context).getID());
+		Context context = this.getContext();
 
-			// service
-			Service<CalculateProductPrice, CalculateProductPriceResponse> service = serviceManager.getService(context, calculateProductPrice);
-			service.getName();
+		CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
+		calculateProductPrice.setProduct(context.createProxy(Product.class, "Marketing"));
+		calculateProductPrice.setCurrencyUomId(UomServices.getUom(context).getID());
 
-			CalculateProductPriceResponse response = calculateProductPrice.call();
-			response.toString();
-			// executor.setCurrencyUomId("EUR");
-			// executor.setPartyId("Company");
-			// executor.setProduct(product);
-		}
+		// service
+		Service<CalculateProductPrice, CalculateProductPriceResponse> service = serviceManager.getService(context, calculateProductPrice);
+		service.getName();
+
+		CalculateProductPriceResponse response = calculateProductPrice.call();
+		response.toString();
+		// executor.setCurrencyUomId("EUR");
+		// executor.setPartyId("Company");
+		// executor.setProduct(product);
 	}
 
 	@Override

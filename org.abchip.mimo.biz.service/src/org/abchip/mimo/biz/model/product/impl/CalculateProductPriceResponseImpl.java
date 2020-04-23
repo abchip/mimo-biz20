@@ -10,10 +10,10 @@ package org.abchip.mimo.biz.model.product.impl;
 import java.math.BigDecimal;
 import org.abchip.mimo.biz.model.product.CalculateProductPriceResponse;
 import org.abchip.mimo.biz.model.product.ProductPackage;
-
-import org.abchip.mimo.service.impl.ServiceResponseImpl;
-
+import org.abchip.mimo.biz.service.impl.BizServiceResponseImpl;
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +30,61 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class CalculateProductPriceResponseImpl extends ServiceResponseImpl implements CalculateProductPriceResponse {
+public class CalculateProductPriceResponseImpl extends BizServiceResponseImpl implements CalculateProductPriceResponse {
+	/**
+	 * The default value of the '{@link #isValidPriceFound() <em>Valid Price Found</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isValidPriceFound()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final boolean VALID_PRICE_FOUND_EDEFAULT = false;
+	/**
+	 * The cached value of the '{@link #isValidPriceFound() <em>Valid Price Found</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #isValidPriceFound()
+	 * @generated
+	 * @ordered
+	 */
+	protected boolean validPriceFound = VALID_PRICE_FOUND_EDEFAULT;
+	/**
+	 * The default value of the '{@link #getBasePrice() <em>Base Price</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBasePrice()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final BigDecimal BASE_PRICE_EDEFAULT = null;
+	/**
+	 * The cached value of the '{@link #getBasePrice() <em>Base Price</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getBasePrice()
+	 * @generated
+	 * @ordered
+	 */
+	protected BigDecimal basePrice = BASE_PRICE_EDEFAULT;
+	/**
+	 * The default value of the '{@link #getListPrice() <em>List Price</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getListPrice()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final BigDecimal LIST_PRICE_EDEFAULT = null;
+	/**
+	 * The cached value of the '{@link #getListPrice() <em>List Price</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getListPrice()
+	 * @generated
+	 * @ordered
+	 */
+	protected BigDecimal listPrice = LIST_PRICE_EDEFAULT;
 	/**
 	 * 
 	 */
@@ -61,18 +115,8 @@ public class CalculateProductPriceResponseImpl extends ServiceResponseImpl imple
 	 * @generated
 	 */
 	@Override
-	protected int eStaticFeatureCount() {
-		return 0;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public boolean isValidPriceFound() {
-		return (Boolean)eGet(ProductPackage.Literals.CALCULATE_PRODUCT_PRICE_RESPONSE__VALID_PRICE_FOUND, true);
+		return validPriceFound;
 	}
 
 	/**
@@ -82,7 +126,10 @@ public class CalculateProductPriceResponseImpl extends ServiceResponseImpl imple
 	 */
 	@Override
 	public void setValidPriceFound(boolean newValidPriceFound) {
-		eSet(ProductPackage.Literals.CALCULATE_PRODUCT_PRICE_RESPONSE__VALID_PRICE_FOUND, newValidPriceFound);
+		boolean oldValidPriceFound = validPriceFound;
+		validPriceFound = newValidPriceFound;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__VALID_PRICE_FOUND, oldValidPriceFound, validPriceFound));
 	}
 
 	/**
@@ -92,7 +139,7 @@ public class CalculateProductPriceResponseImpl extends ServiceResponseImpl imple
 	 */
 	@Override
 	public BigDecimal getBasePrice() {
-		return (BigDecimal)eGet(ProductPackage.Literals.CALCULATE_PRODUCT_PRICE_RESPONSE__BASE_PRICE, true);
+		return basePrice;
 	}
 
 	/**
@@ -102,7 +149,10 @@ public class CalculateProductPriceResponseImpl extends ServiceResponseImpl imple
 	 */
 	@Override
 	public void setBasePrice(BigDecimal newBasePrice) {
-		eSet(ProductPackage.Literals.CALCULATE_PRODUCT_PRICE_RESPONSE__BASE_PRICE, newBasePrice);
+		BigDecimal oldBasePrice = basePrice;
+		basePrice = newBasePrice;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__BASE_PRICE, oldBasePrice, basePrice));
 	}
 
 	/**
@@ -112,7 +162,7 @@ public class CalculateProductPriceResponseImpl extends ServiceResponseImpl imple
 	 */
 	@Override
 	public BigDecimal getListPrice() {
-		return (BigDecimal)eGet(ProductPackage.Literals.CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE, true);
+		return listPrice;
 	}
 
 	/**
@@ -122,7 +172,108 @@ public class CalculateProductPriceResponseImpl extends ServiceResponseImpl imple
 	 */
 	@Override
 	public void setListPrice(BigDecimal newListPrice) {
-		eSet(ProductPackage.Literals.CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE, newListPrice);
+		BigDecimal oldListPrice = listPrice;
+		listPrice = newListPrice;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE, oldListPrice, listPrice));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object eGet(int featureID, boolean resolve, boolean coreType) {
+		switch (featureID) {
+			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__VALID_PRICE_FOUND:
+				return isValidPriceFound();
+			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__BASE_PRICE:
+				return getBasePrice();
+			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE:
+				return getListPrice();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eSet(int featureID, Object newValue) {
+		switch (featureID) {
+			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__VALID_PRICE_FOUND:
+				setValidPriceFound((Boolean)newValue);
+				return;
+			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__BASE_PRICE:
+				setBasePrice((BigDecimal)newValue);
+				return;
+			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE:
+				setListPrice((BigDecimal)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void eUnset(int featureID) {
+		switch (featureID) {
+			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__VALID_PRICE_FOUND:
+				setValidPriceFound(VALID_PRICE_FOUND_EDEFAULT);
+				return;
+			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__BASE_PRICE:
+				setBasePrice(BASE_PRICE_EDEFAULT);
+				return;
+			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE:
+				setListPrice(LIST_PRICE_EDEFAULT);
+				return;
+		}
+		super.eUnset(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean eIsSet(int featureID) {
+		switch (featureID) {
+			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__VALID_PRICE_FOUND:
+				return validPriceFound != VALID_PRICE_FOUND_EDEFAULT;
+			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__BASE_PRICE:
+				return BASE_PRICE_EDEFAULT == null ? basePrice != null : !BASE_PRICE_EDEFAULT.equals(basePrice);
+			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE:
+				return LIST_PRICE_EDEFAULT == null ? listPrice != null : !LIST_PRICE_EDEFAULT.equals(listPrice);
+		}
+		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String toString() {
+		if (eIsProxy()) return super.toString();
+
+		StringBuilder result = new StringBuilder(super.toString());
+		result.append(" (validPriceFound: ");
+		result.append(validPriceFound);
+		result.append(", basePrice: ");
+		result.append(basePrice);
+		result.append(", listPrice: ");
+		result.append(listPrice);
+		result.append(')');
+		return result.toString();
 	}
 
 } //CalculateProductPriceResponseImpl

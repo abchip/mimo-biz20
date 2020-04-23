@@ -394,10 +394,6 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 		createEReference(bizComponentEClass, BIZ_COMPONENT__BIZ_MODULES);
 		createEAttribute(bizComponentEClass, BIZ_COMPONENT__MODULES_DIR);
 
-		bizModuleEClass = createEClass(BIZ_MODULE);
-		createEAttribute(bizModuleEClass, BIZ_MODULE__NAME);
-		createEAttribute(bizModuleEClass, BIZ_MODULE__STATUS);
-
 		bizEntityEClass = createEClass(BIZ_ENTITY);
 
 		bizEntityNoteEClass = createEClass(BIZ_ENTITY_NOTE);
@@ -412,6 +408,10 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 		createEAttribute(bizEntityNoteDataEClass, BIZ_ENTITY_NOTE_DATA__NOTE_INFO);
 		createEAttribute(bizEntityNoteDataEClass, BIZ_ENTITY_NOTE_DATA__NOTE_NAME);
 		createEAttribute(bizEntityNoteDataEClass, BIZ_ENTITY_NOTE_DATA__NOTE_PARTY);
+
+		bizModuleEClass = createEClass(BIZ_MODULE);
+		createEAttribute(bizModuleEClass, BIZ_MODULE__NAME);
+		createEAttribute(bizModuleEClass, BIZ_MODULE__STATUS);
 
 		bizEntityTypedEClass = createEClass(BIZ_ENTITY_TYPED);
 
@@ -461,11 +461,11 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 
 		// Add supertypes to classes
 		bizComponentEClass.getESuperTypes().add(theApplicationPackage.getApplicationComponent());
-		bizModuleEClass.getESuperTypes().add(theEntityPackage.getEntity());
 		bizEntityEClass.getESuperTypes().add(theEntityPackage.getEntityIdentifiable());
 		bizEntityEClass.getESuperTypes().add(theEntityPackage.getEntityInfo());
 		bizEntityNoteEClass.getESuperTypes().add(this.getBizEntity());
 		bizEntityNoteDataEClass.getESuperTypes().add(this.getBizEntity());
+		bizModuleEClass.getESuperTypes().add(theEntityPackage.getEntity());
 		g1 = createEGenericType(theEntityPackage.getEntityTyped());
 		g2 = createEGenericType(bizEntityTypedEClass_T);
 		g1.getETypeArguments().add(g2);
@@ -485,10 +485,6 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 		initEReference(getBizComponent_BizModules(), this.getBizModule(), null, "bizModules", null, 0, -1, BizComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBizComponent_ModulesDir(), ecorePackage.getEString(), "modulesDir", null, 0, 1, BizComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(bizModuleEClass, BizModule.class, "BizModule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getBizModule_Name(), ecorePackage.getEString(), "name", null, 0, 1, BizModule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getBizModule_Status(), theApplicationPackage.getModuleStatus(), "status", "ACT", 1, 1, BizModule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
 		initEClass(bizEntityEClass, BizEntity.class, "BizEntity", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(bizEntityNoteEClass, BizEntityNote.class, "BizEntityNote", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -503,6 +499,10 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 		initEAttribute(getBizEntityNoteData_NoteInfo(), ecorePackage.getEString(), "noteInfo", null, 0, 1, BizEntityNoteData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBizEntityNoteData_NoteName(), ecorePackage.getEString(), "noteName", null, 0, 1, BizEntityNoteData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBizEntityNoteData_NoteParty(), ecorePackage.getEString(), "noteParty", null, 0, 1, BizEntityNoteData.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(bizModuleEClass, BizModule.class, "BizModule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getBizModule_Name(), ecorePackage.getEString(), "name", null, 0, 1, BizModule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBizModule_Status(), theApplicationPackage.getModuleStatus(), "status", "ACT", 1, 1, BizModule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(bizEntityTypedEClass, BizEntityTyped.class, "BizEntityTyped", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 

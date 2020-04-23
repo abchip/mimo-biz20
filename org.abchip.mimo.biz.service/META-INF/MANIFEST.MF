@@ -9,7 +9,9 @@ Bundle-Localization: plugin
 Automatic-Module-Name: org.abchip.mimo.biz.service
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: org.abchip.mimo.biz.model.product,
- org.abchip.mimo.biz.model.product.impl
+ org.abchip.mimo.biz.model.product.impl,
+ org.abchip.mimo.biz.service,
+ org.abchip.mimo.biz.service.impl
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,

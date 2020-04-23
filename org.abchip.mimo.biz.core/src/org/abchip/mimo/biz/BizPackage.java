@@ -9,7 +9,6 @@ package org.abchip.mimo.biz;
 
 import org.abchip.mimo.application.ApplicationPackage;
 import org.abchip.mimo.entity.EntityPackage;
-
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -180,34 +179,7 @@ public interface BizPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizModule()
 	 * @generated
 	 */
-	int BIZ_MODULE = 1;
-
-	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_MODULE__NAME = EntityPackage.ENTITY_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Status</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_MODULE__STATUS = EntityPackage.ENTITY_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of structural features of the '<em>Module</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_MODULE_FEATURE_COUNT = EntityPackage.ENTITY_FEATURE_COUNT + 2;
+	int BIZ_MODULE = 4;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.impl.BizEntityImpl <em>Entity</em>}' class.
@@ -217,7 +189,7 @@ public interface BizPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntity()
 	 * @generated
 	 */
-	int BIZ_ENTITY = 2;
+	int BIZ_ENTITY = 1;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -272,7 +244,7 @@ public interface BizPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntityNote()
 	 * @generated
 	 */
-	int BIZ_ENTITY_NOTE = 3;
+	int BIZ_ENTITY_NOTE = 2;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -356,7 +328,7 @@ public interface BizPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntityNoteData()
 	 * @generated
 	 */
-	int BIZ_ENTITY_NOTE_DATA = 4;
+	int BIZ_ENTITY_NOTE_DATA = 3;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -474,6 +446,33 @@ public interface BizPackage extends EPackage {
 	 * @ordered
 	 */
 	int BIZ_ENTITY_NOTE_DATA_FEATURE_COUNT = BIZ_ENTITY_FEATURE_COUNT + 8;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BIZ_MODULE__NAME = EntityPackage.ENTITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Status</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BIZ_MODULE__STATUS = EntityPackage.ENTITY_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Module</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BIZ_MODULE_FEATURE_COUNT = EntityPackage.ENTITY_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.

@@ -8,10 +8,13 @@
  */
 package org.abchip.mimo.biz.plugins.driver;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Future;
 
 import org.abchip.mimo.biz.plugins.entity.EntityUtils;
+import org.abchip.mimo.entity.Frame;
+import org.abchip.mimo.entity.Slot;
 import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceRequest;
 import org.abchip.mimo.service.ServiceResponse;
@@ -30,9 +33,12 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 		LocalDispatcher dispatcher = getLocalDispatcher(request);
 
 		try {
-			Map<String, ? extends Object> context = EntityUtils.toBizContext(dispatcher.getDelegator(), request);
-			dispatcher.runSync(request.getServiceName(), context);
-			return null;
+			Map<String, Object> context = toBizContext(dispatcher.getDelegator(), request);
+			context = dispatcher.runSync(request.getServiceName(), context);
+
+			V response = request.prepareResponse();
+
+			return response;
 		} catch (GenericServiceException e) {
 			throw new ServiceException(e);
 		}
@@ -44,7 +50,7 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 		LocalDispatcher dispatcher = getLocalDispatcher(request);
 
 		try {
-			Map<String, ? extends Object> context = EntityUtils.toBizContext(dispatcher.getDelegator(), request);
+			Map<String, ? extends Object> context = toBizContext(dispatcher.getDelegator(), request);
 			dispatcher.runAsync(request.getServiceName(), context);
 			return null;
 		} catch (GenericServiceException e) {
@@ -70,5 +76,24 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 			throw new ServiceException("Dispatcher not found for request: " + request.getServiceName());
 
 		return dispatcher;
+	}
+
+	private Map<String, Object> toBizContext(Delegator delegator, ServiceRequest<?> request) {
+
+		Map<String, Object> context = new HashMap<String, Object>();
+
+		Frame<ServiceRequest<?>> frame = request.isa();
+
+		for (Slot slot : frame.getSlots()) {
+			if (slot.isTransient())
+				continue;
+
+			Object value = frame.getValue(request, slot.getName(), false, false);
+			value = EntityUtils.toBizValue(delegator, slot, value);
+			if (value != null)
+				context.put(slot.getName(), value);
+		}
+
+		return context;
 	}
 }
