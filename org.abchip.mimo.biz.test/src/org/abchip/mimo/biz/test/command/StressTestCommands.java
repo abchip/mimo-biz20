@@ -17,6 +17,7 @@ import java.util.concurrent.TimeUnit;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.price.ProductPrice;
 import org.abchip.mimo.biz.test.command.runner.CreateAgreement;
+import org.abchip.mimo.biz.test.command.runner.CreateBudget;
 import org.abchip.mimo.biz.test.command.runner.CreateInpsAgreement;
 import org.abchip.mimo.biz.test.command.runner.CreateParty;
 import org.abchip.mimo.biz.test.command.runner.CreateProduct;
@@ -82,6 +83,13 @@ public class StressTestCommands extends BaseTestCommands {
 	public void _stressTestAgreement(CommandInterpreter interpreter) throws Exception {
 		try (ContextProvider context = login()) {
 			stressTestAgreement(interpreter, context.get());
+		}
+	}
+
+	// TODO remove me
+	public void _stressTestBudget(CommandInterpreter interpreter) throws Exception {
+		try (ContextProvider context = login()) {
+			stressTestBudget(interpreter, context.get());
 		}
 	}
 
@@ -230,6 +238,17 @@ public class StressTestCommands extends BaseTestCommands {
 
 		long time2 = System.currentTimeMillis();
 		interpreter.println("Total time execution StressTestAgreement: " + (time2 - time1));
+	}
+
+	// TODO Remove me
+	private void stressTestBudget(CommandInterpreter interpreter, Context context) throws Exception {
+		long time1 = System.currentTimeMillis();
+		ExecutorService executor = Executors.newFixedThreadPool(1);
+		executor.submit(new CreateBudget(context));
+		executor.shutdown();
+		executor.awaitTermination(1, TimeUnit.MINUTES);
+		long time2 = System.currentTimeMillis();
+		interpreter.println("Total time execution StressTestBudget: " + (time2 - time1));
 	}
 
 	@SuppressWarnings("resource")
