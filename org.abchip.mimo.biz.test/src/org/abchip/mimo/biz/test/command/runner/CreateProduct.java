@@ -64,6 +64,7 @@ public class CreateProduct implements Callable<Long> {
 		product.setDescription("Sales product " + product.getID());
 		product.setProductTypeId(context.createProxy(ProductType.class, "DIGITAL_GOOD"));
 		product.setTaxable(true);
+		product.setReturnable(true);
 		productWriter.create(product);
 
 		// ProductPrice
@@ -90,6 +91,7 @@ public class CreateProduct implements Callable<Long> {
 		product.setDescription("Purchase product " + product.getID());
 		product.setProductTypeId(context.createProxy(ProductType.class, "FINISHED_GOOD"));
 		product.setTaxable(true);
+		product.setReturnable(true);
 		productWriter.create(product);
 
 		ResourceWriter<SupplierProduct> supplierProductWriter = resourceManager.getResourceWriter(context, SupplierProduct.class);
