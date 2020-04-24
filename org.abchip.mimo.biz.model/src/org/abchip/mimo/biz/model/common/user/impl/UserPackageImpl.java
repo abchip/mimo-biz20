@@ -898,8 +898,7 @@ public class UserPackageImpl extends EPackageImpl implements UserPackage {
 		  (getUserPrefGroupType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getUserPreference_UserPrefTypeId(),

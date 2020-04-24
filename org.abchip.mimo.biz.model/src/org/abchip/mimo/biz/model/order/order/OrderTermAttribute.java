@@ -42,7 +42,7 @@ public interface OrderTermAttribute extends BizEntity {
 	 * @return the value of the '<em>Attr Description</em>' attribute.
 	 * @see #setAttrDescription(String)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderTermAttribute_AttrDescription()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getAttrDescription();

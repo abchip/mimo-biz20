@@ -41,7 +41,7 @@ public interface PhysicalInventory extends BizEntity {
 	 * @return the value of the '<em>General Comments</em>' attribute.
 	 * @see #setGeneralComments(String)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getPhysicalInventory_GeneralComments()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getGeneralComments();

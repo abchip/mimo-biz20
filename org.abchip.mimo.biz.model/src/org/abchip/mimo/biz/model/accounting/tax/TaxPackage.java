@@ -2200,11 +2200,11 @@ public interface TaxPackage extends EPackage {
 	EAttribute getZipSalesTaxLookup_GeoCode();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.tax.ZipSalesTaxLookup#isInsideCity <em>Inside City</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.tax.ZipSalesTaxLookup#getInsideCity <em>Inside City</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Inside City</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.tax.ZipSalesTaxLookup#isInsideCity()
+	 * @see org.abchip.mimo.biz.model.accounting.tax.ZipSalesTaxLookup#getInsideCity()
 	 * @see #getZipSalesTaxLookup()
 	 * @generated
 	 */

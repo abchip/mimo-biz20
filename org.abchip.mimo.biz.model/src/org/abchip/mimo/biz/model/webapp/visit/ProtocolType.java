@@ -65,7 +65,7 @@ public interface ProtocolType extends BizEntity {
 	 * @return the value of the '<em>Protocol Name</em>' attribute.
 	 * @see #setProtocolName(String)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getProtocolType_ProtocolName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getProtocolName();

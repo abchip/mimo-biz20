@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpactImpl#getBudgetId <em>Budget Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpactImpl#getBudgetItemSeqId <em>Budget Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpactImpl#getRevisionSeqId <em>Revision Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpactImpl#isAddDeleteFlag <em>Add Delete Flag</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpactImpl#getAddDeleteFlag <em>Add Delete Flag</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpactImpl#getRevisedAmount <em>Revised Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpactImpl#getRevisionReason <em>Revision Reason</em>}</li>
  * </ul>
@@ -143,7 +143,7 @@ public class BudgetRevisionImpactImpl extends BizEntityImpl implements BudgetRev
 	 * @generated
 	 */
 	@Override
-	public boolean isAddDeleteFlag() {
+	public Boolean getAddDeleteFlag() {
 		return (Boolean)eGet(BudgetPackage.Literals.BUDGET_REVISION_IMPACT__ADD_DELETE_FLAG, true);
 	}
 
@@ -153,7 +153,7 @@ public class BudgetRevisionImpactImpl extends BizEntityImpl implements BudgetRev
 	 * @generated
 	 */
 	@Override
-	public void setAddDeleteFlag(boolean newAddDeleteFlag) {
+	public void setAddDeleteFlag(Boolean newAddDeleteFlag) {
 		eSet(BudgetPackage.Literals.BUDGET_REVISION_IMPACT__ADD_DELETE_FLAG, newAddDeleteFlag);
 	}
 

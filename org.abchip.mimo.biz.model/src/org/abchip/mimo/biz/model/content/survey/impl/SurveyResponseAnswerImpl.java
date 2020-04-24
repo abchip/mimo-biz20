@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getAmountBase <em>Amount Base</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getAmountBaseUomId <em>Amount Base Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getAnsweredDate <em>Answered Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#isBooleanResponse <em>Boolean Response</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getBooleanResponse <em>Boolean Response</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getContentId <em>Content Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getCurrencyResponse <em>Currency Response</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyResponseAnswerImpl#getDuration <em>Duration</em>}</li>
@@ -140,7 +140,7 @@ public class SurveyResponseAnswerImpl extends BizEntityImpl implements SurveyRes
 	 * @generated
 	 */
 	@Override
-	public boolean isBooleanResponse() {
+	public Boolean getBooleanResponse() {
 		return (Boolean)eGet(SurveyPackage.Literals.SURVEY_RESPONSE_ANSWER__BOOLEAN_RESPONSE, true);
 	}
 
@@ -150,7 +150,7 @@ public class SurveyResponseAnswerImpl extends BizEntityImpl implements SurveyRes
 	 * @generated
 	 */
 	@Override
-	public void setBooleanResponse(boolean newBooleanResponse) {
+	public void setBooleanResponse(Boolean newBooleanResponse) {
 		eSet(SurveyPackage.Literals.SURVEY_RESPONSE_ANSWER__BOOLEAN_RESPONSE, newBooleanResponse);
 	}
 

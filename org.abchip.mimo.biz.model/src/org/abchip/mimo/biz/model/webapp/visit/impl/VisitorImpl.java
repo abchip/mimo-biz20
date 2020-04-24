@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.model.webapp.visit.impl;
 
 import org.abchip.mimo.biz.impl.BizEntityImpl;
-import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.webapp.visit.VisitPackage;
 import org.abchip.mimo.biz.model.webapp.visit.Visitor;
 import org.eclipse.emf.ecore.EClass;
@@ -99,8 +98,8 @@ public class VisitorImpl extends BizEntityImpl implements Visitor {
 	 * @generated
 	 */
 	@Override
-	public UserLogin getUserLoginId() {
-		return (UserLogin)eGet(VisitPackage.Literals.VISITOR__USER_LOGIN_ID, true);
+	public String getUserLoginId() {
+		return (String)eGet(VisitPackage.Literals.VISITOR__USER_LOGIN_ID, true);
 	}
 
 	/**
@@ -109,7 +108,7 @@ public class VisitorImpl extends BizEntityImpl implements Visitor {
 	 * @generated
 	 */
 	@Override
-	public void setUserLoginId(UserLogin newUserLoginId) {
+	public void setUserLoginId(String newUserLoginId) {
 		eSet(VisitPackage.Literals.VISITOR__USER_LOGIN_ID, newUserLoginId);
 	}
 

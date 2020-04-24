@@ -38,7 +38,7 @@ public interface TestingRemoveAll extends BizEntity {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTestingRemoveAll_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();

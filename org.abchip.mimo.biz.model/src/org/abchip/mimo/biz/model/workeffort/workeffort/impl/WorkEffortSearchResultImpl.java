@@ -24,7 +24,7 @@ import org.eclipse.emf.ecore.EClass;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSearchResultImpl#getWorkEffortSearchResultId <em>Work Effort Search Result Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSearchResultImpl#isIsAscending <em>Is Ascending</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSearchResultImpl#getIsAscending <em>Is Ascending</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSearchResultImpl#getNumResults <em>Num Results</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSearchResultImpl#getOrderByName <em>Order By Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSearchResultImpl#getSearchDate <em>Search Date</em>}</li>
@@ -197,7 +197,7 @@ public class WorkEffortSearchResultImpl extends BizEntityImpl implements WorkEff
 	 * @generated
 	 */
 	@Override
-	public boolean isIsAscending() {
+	public Boolean getIsAscending() {
 		return (Boolean)eGet(WorkeffortPackage.Literals.WORK_EFFORT_SEARCH_RESULT__IS_ASCENDING, true);
 	}
 
@@ -207,7 +207,7 @@ public class WorkEffortSearchResultImpl extends BizEntityImpl implements WorkEff
 	 * @generated
 	 */
 	@Override
-	public void setIsAscending(boolean newIsAscending) {
+	public void setIsAscending(Boolean newIsAscending) {
 		eSet(WorkeffortPackage.Literals.WORK_EFFORT_SEARCH_RESULT__IS_ASCENDING, newIsAscending);
 	}
 

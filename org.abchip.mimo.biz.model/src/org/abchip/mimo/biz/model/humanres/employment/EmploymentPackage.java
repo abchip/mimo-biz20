@@ -1143,13 +1143,22 @@ public interface EmploymentPackage extends EPackage {
 	int PAY_HISTORY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
 
 	/**
+	 * The feature id for the '<em><b>Empl From Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PAY_HISTORY__EMPL_FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+
+	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PAY_HISTORY__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PAY_HISTORY__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Party Id From</b></em>' attribute.
@@ -1158,7 +1167,7 @@ public interface EmploymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAY_HISTORY__PARTY_ID_FROM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PAY_HISTORY__PARTY_ID_FROM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Party Id To</b></em>' attribute.
@@ -1167,7 +1176,7 @@ public interface EmploymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAY_HISTORY__PARTY_ID_TO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PAY_HISTORY__PARTY_ID_TO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id From</b></em>' attribute.
@@ -1176,7 +1185,7 @@ public interface EmploymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAY_HISTORY__ROLE_TYPE_ID_FROM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PAY_HISTORY__ROLE_TYPE_ID_FROM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id To</b></em>' attribute.
@@ -1185,7 +1194,7 @@ public interface EmploymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAY_HISTORY__ROLE_TYPE_ID_TO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PAY_HISTORY__ROLE_TYPE_ID_TO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Amount</b></em>' attribute.
@@ -1194,7 +1203,7 @@ public interface EmploymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAY_HISTORY__AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PAY_HISTORY__AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -1203,7 +1212,7 @@ public interface EmploymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAY_HISTORY__COMMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PAY_HISTORY__COMMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Pay Grade Id</b></em>' reference.
@@ -1212,7 +1221,7 @@ public interface EmploymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAY_HISTORY__PAY_GRADE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PAY_HISTORY__PAY_GRADE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Period Type Id</b></em>' reference.
@@ -1221,7 +1230,7 @@ public interface EmploymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAY_HISTORY__PERIOD_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int PAY_HISTORY__PERIOD_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Salary Step Seq Id</b></em>' attribute.
@@ -1230,7 +1239,7 @@ public interface EmploymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAY_HISTORY__SALARY_STEP_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int PAY_HISTORY__SALARY_STEP_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -1239,7 +1248,7 @@ public interface EmploymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAY_HISTORY__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int PAY_HISTORY__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Pay History</em>' class.
@@ -1248,7 +1257,7 @@ public interface EmploymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAY_HISTORY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int PAY_HISTORY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayrollPreferenceImpl <em>Payroll Preference</em>}' class.
@@ -2596,6 +2605,17 @@ public interface EmploymentPackage extends EPackage {
 	EClass getPayHistory();
 
 	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.employment.PayHistory#getEmplFromDate <em>Empl From Date</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Empl From Date</em>'.
+	 * @see org.abchip.mimo.biz.model.humanres.employment.PayHistory#getEmplFromDate()
+	 * @see #getPayHistory()
+	 * @generated
+	 */
+	EAttribute getPayHistory_EmplFromDate();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.humanres.employment.PayHistory#getRoleTypeIdFrom <em>Role Type Id From</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3750,6 +3770,14 @@ public interface EmploymentPackage extends EPackage {
 		 * @generated
 		 */
 		EClass PAY_HISTORY = eINSTANCE.getPayHistory();
+
+		/**
+		 * The meta object literal for the '<em><b>Empl From Date</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PAY_HISTORY__EMPL_FROM_DATE = eINSTANCE.getPayHistory_EmplFromDate();
 
 		/**
 		 * The meta object literal for the '<em><b>Role Type Id From</b></em>' attribute feature.

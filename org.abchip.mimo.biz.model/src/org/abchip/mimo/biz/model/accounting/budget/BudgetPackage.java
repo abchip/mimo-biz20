@@ -2304,11 +2304,11 @@ public interface BudgetPackage extends EPackage {
 	EAttribute getBudgetRevisionImpact_RevisionSeqId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetRevisionImpact#isAddDeleteFlag <em>Add Delete Flag</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetRevisionImpact#getAddDeleteFlag <em>Add Delete Flag</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Add Delete Flag</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetRevisionImpact#isAddDeleteFlag()
+	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetRevisionImpact#getAddDeleteFlag()
 	 * @see #getBudgetRevisionImpact()
 	 * @generated
 	 */

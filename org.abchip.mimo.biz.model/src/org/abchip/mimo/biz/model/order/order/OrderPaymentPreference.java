@@ -37,19 +37,19 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getManualAuthCode <em>Manual Auth Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getManualRefNum <em>Manual Ref Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getMaxAmount <em>Max Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#isNeedsNsfRetry <em>Needs Nsf Retry</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getNeedsNsfRetry <em>Needs Nsf Retry</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getOrderId <em>Order Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#isOverflowFlag <em>Overflow Flag</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getOverflowFlag <em>Overflow Flag</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getPaymentMethodId <em>Payment Method Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getPaymentMethodTypeId <em>Payment Method Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#isPresentFlag <em>Present Flag</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getPresentFlag <em>Present Flag</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getProcessAttempt <em>Process Attempt</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getProductPricePurposeId <em>Product Price Purpose Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getSecurityCode <em>Security Code</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getShipGroupSeqId <em>Ship Group Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getStatusId <em>Status Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#isSwipedFlag <em>Swiped Flag</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getSwipedFlag <em>Swiped Flag</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getTrack2 <em>Track2</em>}</li>
  * </ul>
  *
@@ -296,28 +296,24 @@ public interface OrderPaymentPreference extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Needs Nsf Retry</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Needs Nsf Retry</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Needs Nsf Retry</em>' attribute.
-	 * @see #setNeedsNsfRetry(boolean)
+	 * @see #setNeedsNsfRetry(Boolean)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderPaymentPreference_NeedsNsfRetry()
 	 * @model
 	 * @generated
 	 */
-	boolean isNeedsNsfRetry();
+	Boolean getNeedsNsfRetry();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#isNeedsNsfRetry <em>Needs Nsf Retry</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getNeedsNsfRetry <em>Needs Nsf Retry</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Needs Nsf Retry</em>' attribute.
-	 * @see #isNeedsNsfRetry()
+	 * @see #getNeedsNsfRetry()
 	 * @generated
 	 */
-	void setNeedsNsfRetry(boolean value);
+	void setNeedsNsfRetry(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
@@ -374,28 +370,24 @@ public interface OrderPaymentPreference extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Overflow Flag</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Overflow Flag</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Overflow Flag</em>' attribute.
-	 * @see #setOverflowFlag(boolean)
+	 * @see #setOverflowFlag(Boolean)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderPaymentPreference_OverflowFlag()
 	 * @model
 	 * @generated
 	 */
-	boolean isOverflowFlag();
+	Boolean getOverflowFlag();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#isOverflowFlag <em>Overflow Flag</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getOverflowFlag <em>Overflow Flag</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Overflow Flag</em>' attribute.
-	 * @see #isOverflowFlag()
+	 * @see #getOverflowFlag()
 	 * @generated
 	 */
-	void setOverflowFlag(boolean value);
+	void setOverflowFlag(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Payment Preference Id</b></em>' attribute.
@@ -479,28 +471,24 @@ public interface OrderPaymentPreference extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Present Flag</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Present Flag</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Present Flag</em>' attribute.
-	 * @see #setPresentFlag(boolean)
+	 * @see #setPresentFlag(Boolean)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderPaymentPreference_PresentFlag()
 	 * @model
 	 * @generated
 	 */
-	boolean isPresentFlag();
+	Boolean getPresentFlag();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#isPresentFlag <em>Present Flag</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getPresentFlag <em>Present Flag</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Present Flag</em>' attribute.
-	 * @see #isPresentFlag()
+	 * @see #getPresentFlag()
 	 * @generated
 	 */
-	void setPresentFlag(boolean value);
+	void setPresentFlag(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Process Attempt</b></em>' attribute.
@@ -636,28 +624,24 @@ public interface OrderPaymentPreference extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Swiped Flag</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Swiped Flag</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Swiped Flag</em>' attribute.
-	 * @see #setSwipedFlag(boolean)
+	 * @see #setSwipedFlag(Boolean)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderPaymentPreference_SwipedFlag()
 	 * @model
 	 * @generated
 	 */
-	boolean isSwipedFlag();
+	Boolean getSwipedFlag();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#isSwipedFlag <em>Swiped Flag</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getSwipedFlag <em>Swiped Flag</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Swiped Flag</em>' attribute.
-	 * @see #isSwipedFlag()
+	 * @see #getSwipedFlag()
 	 * @generated
 	 */
-	void setSwipedFlag(boolean value);
+	void setSwipedFlag(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Track2</b></em>' attribute.

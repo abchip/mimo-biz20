@@ -38,7 +38,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.impl.CartAbandonedLineImpl#getReservStart <em>Reserv Start</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.impl.CartAbandonedLineImpl#getTotalWithAdjustments <em>Total With Adjustments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.impl.CartAbandonedLineImpl#getUnitPrice <em>Unit Price</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.impl.CartAbandonedLineImpl#isWasReserved <em>Was Reserved</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.impl.CartAbandonedLineImpl#getWasReserved <em>Was Reserved</em>}</li>
  * </ul>
  *
  * @generated
@@ -314,7 +314,7 @@ public class CartAbandonedLineImpl extends BizEntityImpl implements CartAbandone
 	 * @generated
 	 */
 	@Override
-	public boolean isWasReserved() {
+	public Boolean getWasReserved() {
 		return (Boolean)eGet(ShoppingcartPackage.Literals.CART_ABANDONED_LINE__WAS_RESERVED, true);
 	}
 
@@ -324,7 +324,7 @@ public class CartAbandonedLineImpl extends BizEntityImpl implements CartAbandone
 	 * @generated
 	 */
 	@Override
-	public void setWasReserved(boolean newWasReserved) {
+	public void setWasReserved(Boolean newWasReserved) {
 		eSet(ShoppingcartPackage.Literals.CART_ABANDONED_LINE__WAS_RESERVED, newWasReserved);
 	}
 

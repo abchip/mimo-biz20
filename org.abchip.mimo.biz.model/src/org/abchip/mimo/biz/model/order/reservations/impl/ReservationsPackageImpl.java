@@ -843,8 +843,7 @@ public class ReservationsPackageImpl extends EPackageImpl implements Reservation
 		  (getAccommodationSpot_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getAccommodationSpot_NumberOfSpaces(),

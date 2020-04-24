@@ -108,9 +108,9 @@ public class EntityServices {
 	private static EPackage buildBizPackage(Delegator delegator, List<ModelForm> forms) throws GenericEntityException {
 
 		EPackage bizPackage = EcoreFactory.eINSTANCE.createEPackage();
-		bizPackage.setName("biz");
-		bizPackage.setNsPrefix("biz");
-		bizPackage.setNsURI("http://www.abchip.org/mimo/biz");
+		bizPackage.setName("model");
+		bizPackage.setNsPrefix("biz-model");
+		bizPackage.setNsURI("http://www.abchip.org/mimo/biz/model");
 
 		for (String packageName : ModelUtils.findPackages(delegator.getModelReader(), null)) {
 
@@ -765,7 +765,7 @@ public class EntityServices {
 		ResourceSet resourceSet = new ResourceSetImpl();
 		resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", new EcoreResourceFactoryImpl());
 
-		Resource resource = resourceSet.createResource(URI.createURI(bizPackage.getName() + ".ecore"));
+		Resource resource = resourceSet.createResource(URI.createURI("biz-model.ecore"));
 		resource.getContents().add(bizPackage);
 
 		File file = new File(PATH + resource.getURI().lastSegment());
@@ -787,10 +787,10 @@ public class EntityServices {
 		try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
 			String line = "";
 			while ((line = reader.readLine()) != null) {
-				line = line.replaceFirst("ecore:EClass http://www.abchip.org/mimo/biz#//", "#//");
-				line = line.replaceFirst("ecore:EClass biz.ecore#//", "#//");
-				line = line.replaceFirst("biz.ecore#//", "#//");
-				line = line.replaceFirst("http://www.abchip.org/mimo/biz#//", "#//");
+				line = line.replaceFirst("ecore:EClass http://www.abchip.org/mimo/biz/model#//", "#//");
+				line = line.replaceFirst("ecore:EClass biz-model.ecore#//", "#//");
+				line = line.replaceFirst("biz-model.ecore#//", "#//");
+				line = line.replaceFirst("http://www.abchip.org/mimo/biz#//", "../../org.abchip.mimo.biz.core/model/biz.ecore#//");
 				line = line.replaceFirst("http://www.abchip.org/mimo#//", "../../org.abchip.mimo.core/model/mimo.ecore#//");
 
 				stringBuilder.append(line);

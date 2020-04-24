@@ -32,8 +32,8 @@ import org.abchip.mimo.biz.model.service.schedule.RecurrenceInfo;
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getContactMechId <em>Contact Mech Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#isIsActive <em>Is Active</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#isIsPublic <em>Is Public</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getIsActive <em>Is Active</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getIsPublic <em>Is Public</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getLastAdminModified <em>Last Admin Modified</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getLastOrderedDate <em>Last Ordered Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getListName <em>List Name</em>}</li>
@@ -170,7 +170,7 @@ public interface ShoppingList extends BizEntity {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingList_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -188,54 +188,46 @@ public interface ShoppingList extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Is Active</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Active</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Active</em>' attribute.
-	 * @see #setIsActive(boolean)
+	 * @see #setIsActive(Boolean)
 	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingList_IsActive()
 	 * @model
 	 * @generated
 	 */
-	boolean isIsActive();
+	Boolean getIsActive();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#isIsActive <em>Is Active</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getIsActive <em>Is Active</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is Active</em>' attribute.
-	 * @see #isIsActive()
+	 * @see #getIsActive()
 	 * @generated
 	 */
-	void setIsActive(boolean value);
+	void setIsActive(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Is Public</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Public</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Public</em>' attribute.
-	 * @see #setIsPublic(boolean)
+	 * @see #setIsPublic(Boolean)
 	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingList_IsPublic()
 	 * @model
 	 * @generated
 	 */
-	boolean isIsPublic();
+	Boolean getIsPublic();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#isIsPublic <em>Is Public</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getIsPublic <em>Is Public</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is Public</em>' attribute.
-	 * @see #isIsPublic()
+	 * @see #getIsPublic()
 	 * @generated
 	 */
-	void setIsPublic(boolean value);
+	void setIsPublic(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Last Admin Modified</b></em>' attribute.
@@ -300,7 +292,7 @@ public interface ShoppingList extends BizEntity {
 	 * @return the value of the '<em>List Name</em>' attribute.
 	 * @see #setListName(String)
 	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage#getShoppingList_ListName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getListName();

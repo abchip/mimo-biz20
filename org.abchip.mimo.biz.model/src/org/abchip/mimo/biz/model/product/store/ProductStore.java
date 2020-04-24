@@ -77,8 +77,8 @@ import org.abchip.mimo.biz.model.product.facility.Facility;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getOldHeaderMiddleBackground <em>Old Header Middle Background</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getOldHeaderRightBackground <em>Old Header Right Background</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getOldStyleSheet <em>Old Style Sheet</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isOneInventoryFacility <em>One Inventory Facility</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isOrderDecimalQuantity <em>Order Decimal Quantity</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getOneInventoryFacility <em>One Inventory Facility</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getOrderDecimalQuantity <em>Order Decimal Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getOrderNumberPrefix <em>Order Number Prefix</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getPayToPartyId <em>Pay To Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getPrimaryStoreGroupId <em>Primary Store Group Id</em>}</li>
@@ -87,7 +87,7 @@ import org.abchip.mimo.biz.model.product.facility.Facility;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getProductStoreFinActSettings <em>Product Store Fin Act Settings</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isProrateShipping <em>Prorate Shipping</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isProrateTaxes <em>Prorate Taxes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isReqReturnInventoryReceive <em>Req Return Inventory Receive</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getReqReturnInventoryReceive <em>Req Return Inventory Receive</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isReqShipAddrForDigItems <em>Req Ship Addr For Dig Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isRequireCustomerRole <em>Require Customer Role</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isRequireInventory <em>Require Inventory</em>}</li>
@@ -96,7 +96,7 @@ import org.abchip.mimo.biz.model.product.facility.Facility;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getReserveOrderEnumId <em>Reserve Order Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isRetryFailedAuths <em>Retry Failed Auths</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isSelectPaymentTypePerItem <em>Select Payment Type Per Item</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isSetOwnerUponIssuance <em>Set Owner Upon Issuance</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getSetOwnerUponIssuance <em>Set Owner Upon Issuance</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isShipIfCaptureFails <em>Ship If Capture Fails</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isShowCheckoutGiftOptions <em>Show Checkout Gift Options</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isShowOutOfStockProducts <em>Show Out Of Stock Products</em>}</li>
@@ -536,7 +536,7 @@ public interface ProductStore extends BizEntity {
 	 * @return the value of the '<em>Company Name</em>' attribute.
 	 * @see #setCompanyName(String)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_CompanyName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getCompanyName();
@@ -1160,7 +1160,7 @@ public interface ProductStore extends BizEntity {
 	 * @return the value of the '<em>Old Header Logo</em>' attribute.
 	 * @see #setOldHeaderLogo(String)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_OldHeaderLogo()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getOldHeaderLogo();
@@ -1186,7 +1186,7 @@ public interface ProductStore extends BizEntity {
 	 * @return the value of the '<em>Old Header Middle Background</em>' attribute.
 	 * @see #setOldHeaderMiddleBackground(String)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_OldHeaderMiddleBackground()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getOldHeaderMiddleBackground();
@@ -1212,7 +1212,7 @@ public interface ProductStore extends BizEntity {
 	 * @return the value of the '<em>Old Header Right Background</em>' attribute.
 	 * @see #setOldHeaderRightBackground(String)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_OldHeaderRightBackground()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getOldHeaderRightBackground();
@@ -1238,7 +1238,7 @@ public interface ProductStore extends BizEntity {
 	 * @return the value of the '<em>Old Style Sheet</em>' attribute.
 	 * @see #setOldStyleSheet(String)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_OldStyleSheet()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getOldStyleSheet();
@@ -1257,54 +1257,46 @@ public interface ProductStore extends BizEntity {
 	 * Returns the value of the '<em><b>One Inventory Facility</b></em>' attribute.
 	 * The default value is <code>"true"</code>.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>One Inventory Facility</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>One Inventory Facility</em>' attribute.
-	 * @see #setOneInventoryFacility(boolean)
+	 * @see #setOneInventoryFacility(Boolean)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_OneInventoryFacility()
 	 * @model default="true"
 	 * @generated
 	 */
-	boolean isOneInventoryFacility();
+	Boolean getOneInventoryFacility();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#isOneInventoryFacility <em>One Inventory Facility</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getOneInventoryFacility <em>One Inventory Facility</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>One Inventory Facility</em>' attribute.
-	 * @see #isOneInventoryFacility()
+	 * @see #getOneInventoryFacility()
 	 * @generated
 	 */
-	void setOneInventoryFacility(boolean value);
+	void setOneInventoryFacility(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Decimal Quantity</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Decimal Quantity</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Order Decimal Quantity</em>' attribute.
-	 * @see #setOrderDecimalQuantity(boolean)
+	 * @see #setOrderDecimalQuantity(Boolean)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_OrderDecimalQuantity()
 	 * @model annotation="mimo-ent-slot help='use to indicate if decimal quantity can be ordered for this producStore. Default value is Y'"
 	 * @generated
 	 */
-	boolean isOrderDecimalQuantity();
+	Boolean getOrderDecimalQuantity();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#isOrderDecimalQuantity <em>Order Decimal Quantity</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getOrderDecimalQuantity <em>Order Decimal Quantity</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Order Decimal Quantity</em>' attribute.
-	 * @see #isOrderDecimalQuantity()
+	 * @see #getOrderDecimalQuantity()
 	 * @generated
 	 */
-	void setOrderDecimalQuantity(boolean value);
+	void setOrderDecimalQuantity(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Number Prefix</b></em>' attribute.
@@ -1331,32 +1323,6 @@ public interface ProductStore extends BizEntity {
 	 * @generated
 	 */
 	void setOrderNumberPrefix(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Req Return Inventory Receive</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Req Return Inventory Receive</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Req Return Inventory Receive</em>' attribute.
-	 * @see #setReqReturnInventoryReceive(boolean)
-	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ReqReturnInventoryReceive()
-	 * @model annotation="mimo-ent-slot help='Default N. This is the default value for the ReturnHeader.needsInventoryReceive field. If set to Y return will automatically go to the Received status when Accepted instead of waiting for actual receipt of the return.'"
-	 * @generated
-	 */
-	boolean isReqReturnInventoryReceive();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#isReqReturnInventoryReceive <em>Req Return Inventory Receive</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Req Return Inventory Receive</em>' attribute.
-	 * @see #isReqReturnInventoryReceive()
-	 * @generated
-	 */
-	void setReqReturnInventoryReceive(boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Req Ship Addr For Dig Items</b></em>' attribute.
@@ -1521,28 +1487,24 @@ public interface ProductStore extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Set Owner Upon Issuance</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Set Owner Upon Issuance</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Set Owner Upon Issuance</em>' attribute.
-	 * @see #setSetOwnerUponIssuance(boolean)
+	 * @see #setSetOwnerUponIssuance(Boolean)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_SetOwnerUponIssuance()
 	 * @model annotation="mimo-ent-slot help='If Y or empty, set the inventory item owner upon issuance.'"
 	 * @generated
 	 */
-	boolean isSetOwnerUponIssuance();
+	Boolean getSetOwnerUponIssuance();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#isSetOwnerUponIssuance <em>Set Owner Upon Issuance</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getSetOwnerUponIssuance <em>Set Owner Upon Issuance</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Set Owner Upon Issuance</em>' attribute.
-	 * @see #isSetOwnerUponIssuance()
+	 * @see #getSetOwnerUponIssuance()
 	 * @generated
 	 */
-	void setSetOwnerUponIssuance(boolean value);
+	void setSetOwnerUponIssuance(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Ship If Capture Fails</b></em>' attribute.
@@ -1851,7 +1813,7 @@ public interface ProductStore extends BizEntity {
 	 * @return the value of the '<em>Store Name</em>' attribute.
 	 * @see #setStoreName(String)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_StoreName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getStoreName();
@@ -1877,7 +1839,7 @@ public interface ProductStore extends BizEntity {
 	 * @return the value of the '<em>Subtitle</em>' attribute.
 	 * @see #setSubtitle(String)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_Subtitle()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getSubtitle();
@@ -1903,7 +1865,7 @@ public interface ProductStore extends BizEntity {
 	 * @return the value of the '<em>Title</em>' attribute.
 	 * @see #setTitle(String)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_Title()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getTitle();
@@ -2101,6 +2063,28 @@ public interface ProductStore extends BizEntity {
 	 * @generated
 	 */
 	void setProrateTaxes(boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Req Return Inventory Receive</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Req Return Inventory Receive</em>' attribute.
+	 * @see #setReqReturnInventoryReceive(Boolean)
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ReqReturnInventoryReceive()
+	 * @model annotation="mimo-ent-slot help='Default N. This is the default value for the ReturnHeader.needsInventoryReceive field. If set to Y return will automatically go to the Received status when Accepted instead of waiting for actual receipt of the return.'"
+	 * @generated
+	 */
+	Boolean getReqReturnInventoryReceive();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getReqReturnInventoryReceive <em>Req Return Inventory Receive</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Req Return Inventory Receive</em>' attribute.
+	 * @see #getReqReturnInventoryReceive()
+	 * @generated
+	 */
+	void setReqReturnInventoryReceive(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Primary Store Group Id</b></em>' reference.

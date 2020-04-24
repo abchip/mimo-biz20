@@ -49,7 +49,7 @@ public interface GeoPoint extends BizEntity {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeoPoint_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -156,7 +156,7 @@ public interface GeoPoint extends BizEntity {
 	 * @see #setInformation(String)
 	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeoPoint_Information()
 	 * @model annotation="mimo-ent-slot help='To enter any related information'"
-	 *        annotation="mimo-ent-format type='comment' length='255'"
+	 *        annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getInformation();

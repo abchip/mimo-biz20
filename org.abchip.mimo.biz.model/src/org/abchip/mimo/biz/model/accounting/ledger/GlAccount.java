@@ -50,7 +50,7 @@ public interface GlAccount extends BizEntityTyped<GlAccountType> {
 	 * @return the value of the '<em>Account Code</em>' attribute.
 	 * @see #setAccountCode(String)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_AccountCode()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getAccountCode();
@@ -76,7 +76,7 @@ public interface GlAccount extends BizEntityTyped<GlAccountType> {
 	 * @return the value of the '<em>Account Name</em>' attribute.
 	 * @see #setAccountName(String)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_AccountName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getAccountName();
@@ -102,7 +102,7 @@ public interface GlAccount extends BizEntityTyped<GlAccountType> {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccount_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();

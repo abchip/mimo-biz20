@@ -22,7 +22,7 @@ import org.abchip.mimo.biz.BizEntity;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetRevisionImpact#getBudgetId <em>Budget Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetRevisionImpact#getBudgetItemSeqId <em>Budget Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetRevisionImpact#getRevisionSeqId <em>Revision Seq Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetRevisionImpact#isAddDeleteFlag <em>Add Delete Flag</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetRevisionImpact#getAddDeleteFlag <em>Add Delete Flag</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetRevisionImpact#getRevisedAmount <em>Revised Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.budget.BudgetRevisionImpact#getRevisionReason <em>Revision Reason</em>}</li>
  * </ul>
@@ -143,28 +143,24 @@ public interface BudgetRevisionImpact extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Add Delete Flag</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Add Delete Flag</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Add Delete Flag</em>' attribute.
-	 * @see #setAddDeleteFlag(boolean)
+	 * @see #setAddDeleteFlag(Boolean)
 	 * @see org.abchip.mimo.biz.model.accounting.budget.BudgetPackage#getBudgetRevisionImpact_AddDeleteFlag()
 	 * @model
 	 * @generated
 	 */
-	boolean isAddDeleteFlag();
+	Boolean getAddDeleteFlag();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetRevisionImpact#isAddDeleteFlag <em>Add Delete Flag</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.budget.BudgetRevisionImpact#getAddDeleteFlag <em>Add Delete Flag</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Add Delete Flag</em>' attribute.
-	 * @see #isAddDeleteFlag()
+	 * @see #getAddDeleteFlag()
 	 * @generated
 	 */
-	void setAddDeleteFlag(boolean value);
+	void setAddDeleteFlag(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Budget Id</b></em>' reference.

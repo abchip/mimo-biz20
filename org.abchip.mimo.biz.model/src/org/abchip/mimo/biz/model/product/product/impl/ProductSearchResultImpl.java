@@ -24,7 +24,7 @@ import org.eclipse.emf.ecore.EClass;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchResultImpl#getProductSearchResultId <em>Product Search Result Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchResultImpl#isIsAscending <em>Is Ascending</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchResultImpl#getIsAscending <em>Is Ascending</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchResultImpl#getNumResults <em>Num Results</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchResultImpl#getOrderByName <em>Order By Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchResultImpl#getProductSearchConstraints <em>Product Search Constraints</em>}</li>
@@ -197,7 +197,7 @@ public class ProductSearchResultImpl extends BizEntityImpl implements ProductSea
 	 * @generated
 	 */
 	@Override
-	public boolean isIsAscending() {
+	public Boolean getIsAscending() {
 		return (Boolean)eGet(ProductPackage.Literals.PRODUCT_SEARCH_RESULT__IS_ASCENDING, true);
 	}
 
@@ -207,7 +207,7 @@ public class ProductSearchResultImpl extends BizEntityImpl implements ProductSea
 	 * @generated
 	 */
 	@Override
-	public void setIsAscending(boolean newIsAscending) {
+	public void setIsAscending(Boolean newIsAscending) {
 		eSet(ProductPackage.Literals.PRODUCT_SEARCH_RESULT__IS_ASCENDING, newIsAscending);
 	}
 

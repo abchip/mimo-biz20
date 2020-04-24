@@ -39,7 +39,7 @@ import org.abchip.mimo.biz.model.product.inventory.InventoryItem;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntry#getGlAccountTypeId <em>Gl Account Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntry#getGroupId <em>Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntry#getInventoryItemId <em>Inventory Item Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntry#isIsSummary <em>Is Summary</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntry#getIsSummary <em>Is Summary</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntry#getOrganizationPartyId <em>Organization Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntry#getOrigAmount <em>Orig Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntry#getOrigCurrencyUomId <em>Orig Currency Uom Id</em>}</li>
@@ -179,7 +179,7 @@ public interface AcctgTransEntry extends BizEntityTyped<AcctgTransEntryType> {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransEntry_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -247,32 +247,6 @@ public interface AcctgTransEntry extends BizEntityTyped<AcctgTransEntryType> {
 	void setGroupId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Is Summary</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Summary</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Is Summary</em>' attribute.
-	 * @see #setIsSummary(boolean)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransEntry_IsSummary()
-	 * @model
-	 * @generated
-	 */
-	boolean isIsSummary();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntry#isIsSummary <em>Is Summary</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Is Summary</em>' attribute.
-	 * @see #isIsSummary()
-	 * @generated
-	 */
-	void setIsSummary(boolean value);
-
-	/**
 	 * Returns the value of the '<em><b>Inventory Item Id</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -297,6 +271,28 @@ public interface AcctgTransEntry extends BizEntityTyped<AcctgTransEntryType> {
 	 * @generated
 	 */
 	void setInventoryItemId(InventoryItem value);
+
+	/**
+	 * Returns the value of the '<em><b>Is Summary</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Is Summary</em>' attribute.
+	 * @see #setIsSummary(Boolean)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getAcctgTransEntry_IsSummary()
+	 * @model
+	 * @generated
+	 */
+	Boolean getIsSummary();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntry#getIsSummary <em>Is Summary</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Is Summary</em>' attribute.
+	 * @see #getIsSummary()
+	 * @generated
+	 */
+	void setIsSummary(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Organization Party Id</b></em>' attribute.

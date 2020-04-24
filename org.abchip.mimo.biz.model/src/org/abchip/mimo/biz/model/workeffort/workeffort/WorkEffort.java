@@ -363,7 +363,7 @@ public interface WorkEffort extends BizEntityTyped<WorkEffortType> {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -676,7 +676,7 @@ public interface WorkEffort extends BizEntityTyped<WorkEffortType> {
 	 * @return the value of the '<em>Location Desc</em>' attribute.
 	 * @see #setLocationDesc(String)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_LocationDesc()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getLocationDesc();
@@ -1096,7 +1096,7 @@ public interface WorkEffort extends BizEntityTyped<WorkEffortType> {
 	 * @return the value of the '<em>Service Loader Name</em>' attribute.
 	 * @see #setServiceLoaderName(String)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_ServiceLoaderName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getServiceLoaderName();
@@ -1470,7 +1470,7 @@ public interface WorkEffort extends BizEntityTyped<WorkEffortType> {
 	 * @return the value of the '<em>Work Effort Name</em>' attribute.
 	 * @see #setWorkEffortName(String)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_WorkEffortName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getWorkEffortName();

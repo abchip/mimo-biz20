@@ -34,6 +34,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.Deliverable;
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.Requirement#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.Requirement#getEstimatedBudget <em>Estimated Budget</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.Requirement#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.Requirement#getFacilityIdTo <em>Facility Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.Requirement#getFixedAssetId <em>Fixed Asset Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.Requirement#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.Requirement#getLastModifiedDate <em>Last Modified Date</em>}</li>
@@ -144,7 +145,7 @@ public interface Requirement extends BizEntityTyped<RequirementType> {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirement_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -210,6 +211,28 @@ public interface Requirement extends BizEntityTyped<RequirementType> {
 	 * @generated
 	 */
 	void setFacilityId(Facility value);
+
+	/**
+	 * Returns the value of the '<em><b>Facility Id To</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Facility Id To</em>' attribute.
+	 * @see #setFacilityIdTo(String)
+	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getRequirement_FacilityIdTo()
+	 * @model annotation="mimo-ent-format length='20'"
+	 * @generated
+	 */
+	String getFacilityIdTo();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.Requirement#getFacilityIdTo <em>Facility Id To</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Facility Id To</em>' attribute.
+	 * @see #getFacilityIdTo()
+	 * @generated
+	 */
+	void setFacilityIdTo(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Fixed Asset Id</b></em>' reference.

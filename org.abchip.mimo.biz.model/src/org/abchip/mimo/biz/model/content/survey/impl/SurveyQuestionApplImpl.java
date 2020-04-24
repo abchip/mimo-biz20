@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionApplImpl#getSurveyQuestionId <em>Survey Question Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionApplImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionApplImpl#getExternalFieldRef <em>External Field Ref</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionApplImpl#isRequiredField <em>Required Field</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionApplImpl#getRequiredField <em>Required Field</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionApplImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionApplImpl#getSurveyMultiRespColId <em>Survey Multi Resp Col Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyQuestionApplImpl#getSurveyMultiRespId <em>Survey Multi Resp Id</em>}</li>
@@ -91,7 +91,7 @@ public class SurveyQuestionApplImpl extends BizEntityImpl implements SurveyQuest
 	 * @generated
 	 */
 	@Override
-	public boolean isRequiredField() {
+	public Boolean getRequiredField() {
 		return (Boolean)eGet(SurveyPackage.Literals.SURVEY_QUESTION_APPL__REQUIRED_FIELD, true);
 	}
 
@@ -101,7 +101,7 @@ public class SurveyQuestionApplImpl extends BizEntityImpl implements SurveyQuest
 	 * @generated
 	 */
 	@Override
-	public void setRequiredField(boolean newRequiredField) {
+	public void setRequiredField(Boolean newRequiredField) {
 		eSet(SurveyPackage.Literals.SURVEY_QUESTION_APPL__REQUIRED_FIELD, newRequiredField);
 	}
 

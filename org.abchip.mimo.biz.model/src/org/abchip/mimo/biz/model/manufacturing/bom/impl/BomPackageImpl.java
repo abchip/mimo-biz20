@@ -932,8 +932,7 @@ public class BomPackageImpl extends EPackageImpl implements BomPackage {
 		  (getProductManufacturingRule_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductManufacturingRule_RuleOperator(),

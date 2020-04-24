@@ -72,7 +72,7 @@ public interface PartyNameHistory extends BizEntity {
 	 * @return the value of the '<em>First Name</em>' attribute.
 	 * @see #setFirstName(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyNameHistory_FirstName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getFirstName();
@@ -99,7 +99,7 @@ public interface PartyNameHistory extends BizEntity {
 	 * @see #setGroupName(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyNameHistory_GroupName()
 	 * @model annotation="mimo-ent-slot help='For Party Groups only'"
-	 *        annotation="mimo-ent-format type='name' length='100'"
+	 *        annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getGroupName();
@@ -125,7 +125,7 @@ public interface PartyNameHistory extends BizEntity {
 	 * @return the value of the '<em>Last Name</em>' attribute.
 	 * @see #setLastName(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyNameHistory_LastName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getLastName();
@@ -151,7 +151,7 @@ public interface PartyNameHistory extends BizEntity {
 	 * @return the value of the '<em>Middle Name</em>' attribute.
 	 * @see #setMiddleName(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyNameHistory_MiddleName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getMiddleName();
@@ -177,7 +177,7 @@ public interface PartyNameHistory extends BizEntity {
 	 * @return the value of the '<em>Personal Title</em>' attribute.
 	 * @see #setPersonalTitle(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyNameHistory_PersonalTitle()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getPersonalTitle();
@@ -203,7 +203,7 @@ public interface PartyNameHistory extends BizEntity {
 	 * @return the value of the '<em>Suffix</em>' attribute.
 	 * @see #setSuffix(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyNameHistory_Suffix()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getSuffix();

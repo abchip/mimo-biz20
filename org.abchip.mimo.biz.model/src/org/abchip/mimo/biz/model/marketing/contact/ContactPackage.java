@@ -867,11 +867,11 @@ public interface ContactPackage extends EPackage {
 	EAttribute getContactList_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#isIsPublic <em>Is Public</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getIsPublic <em>Is Public</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Public</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactList#isIsPublic()
+	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactList#getIsPublic()
 	 * @see #getContactList()
 	 * @generated
 	 */
@@ -922,11 +922,11 @@ public interface ContactPackage extends EPackage {
 	EReference getContactList_OwnerPartyId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#isSingleUse <em>Single Use</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getSingleUse <em>Single Use</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Single Use</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactList#isSingleUse()
+	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactList#getSingleUse()
 	 * @see #getContactList()
 	 * @generated
 	 */

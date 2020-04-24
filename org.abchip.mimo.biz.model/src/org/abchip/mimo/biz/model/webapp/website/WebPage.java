@@ -94,7 +94,7 @@ public interface WebPage extends BizEntity {
 	 * @return the value of the '<em>Page Name</em>' attribute.
 	 * @see #setPageName(String)
 	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebPage_PageName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getPageName();

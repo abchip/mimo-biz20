@@ -344,7 +344,7 @@ public interface ContentAssoc extends BizEntity {
 	 * @return the value of the '<em>Map Key</em>' attribute.
 	 * @see #setMapKey(String)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentAssoc_MapKey()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getMapKey();

@@ -435,13 +435,22 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY__FACILITY_ATTRIBUTES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
+	 * The feature id for the '<em><b>Facility Level</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACILITY__FACILITY_LEVEL = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+
+	/**
 	 * The feature id for the '<em><b>Facility Locations</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__FACILITY_LOCATIONS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int FACILITY__FACILITY_LOCATIONS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Facility Name</b></em>' attribute.
@@ -450,7 +459,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__FACILITY_NAME = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 9;
+	int FACILITY__FACILITY_NAME = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Facility Size</b></em>' attribute.
@@ -459,7 +468,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__FACILITY_SIZE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 10;
+	int FACILITY__FACILITY_SIZE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Facility Size Uom Id</b></em>' reference.
@@ -468,7 +477,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__FACILITY_SIZE_UOM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 11;
+	int FACILITY__FACILITY_SIZE_UOM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Facility Type Id</b></em>' reference.
@@ -477,7 +486,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__FACILITY_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 12;
+	int FACILITY__FACILITY_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Geo Point Id</b></em>' reference.
@@ -486,7 +495,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__GEO_POINT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 13;
+	int FACILITY__GEO_POINT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Old Square Footage</b></em>' attribute.
@@ -495,7 +504,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__OLD_SQUARE_FOOTAGE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 14;
+	int FACILITY__OLD_SQUARE_FOOTAGE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Opened Date</b></em>' attribute.
@@ -504,7 +513,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__OPENED_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 15;
+	int FACILITY__OPENED_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Owner Party Id</b></em>' reference.
@@ -513,7 +522,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__OWNER_PARTY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 16;
+	int FACILITY__OWNER_PARTY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Parent Facility Id</b></em>' reference.
@@ -522,7 +531,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__PARENT_FACILITY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 17;
+	int FACILITY__PARENT_FACILITY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Primary Facility Group Id</b></em>' reference.
@@ -531,7 +540,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__PRIMARY_FACILITY_GROUP_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 18;
+	int FACILITY__PRIMARY_FACILITY_GROUP_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Id</b></em>' reference.
@@ -540,7 +549,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__PRODUCT_STORE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 19;
+	int FACILITY__PRODUCT_STORE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The number of structural features of the '<em>Facility</em>' class.
@@ -549,7 +558,80 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 20;
+	int FACILITY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 21;
+
+	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityAssocTypeImpl <em>Assoc Type</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityAssocTypeImpl
+	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getFacilityAssocType()
+	 * @generated
+	 */
+	int FACILITY_ASSOC_TYPE = 4;
+
+	/**
+	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACILITY_ASSOC_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+
+	/**
+	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACILITY_ASSOC_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+
+	/**
+	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACILITY_ASSOC_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+
+	/**
+	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACILITY_ASSOC_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+
+	/**
+	 * The feature id for the '<em><b>Facility Assoc Type Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACILITY_ASSOC_TYPE__FACILITY_ASSOC_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACILITY_ASSOC_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Assoc Type</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACILITY_ASSOC_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityAttributeImpl <em>Attribute</em>}' class.
@@ -559,7 +641,7 @@ public interface FacilityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getFacilityAttribute()
 	 * @generated
 	 */
-	int FACILITY_ATTRIBUTE = 4;
+	int FACILITY_ATTRIBUTE = 5;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -650,7 +732,7 @@ public interface FacilityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getFacilityCalendar()
 	 * @generated
 	 */
-	int FACILITY_CALENDAR = 5;
+	int FACILITY_CALENDAR = 6;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -750,7 +832,7 @@ public interface FacilityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getFacilityCalendarType()
 	 * @generated
 	 */
-	int FACILITY_CALENDAR_TYPE = 6;
+	int FACILITY_CALENDAR_TYPE = 7;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -832,7 +914,7 @@ public interface FacilityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getFacilityCarrierShipment()
 	 * @generated
 	 */
-	int FACILITY_CARRIER_SHIPMENT = 7;
+	int FACILITY_CARRIER_SHIPMENT = 8;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -923,7 +1005,7 @@ public interface FacilityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getFacilityContactMech()
 	 * @generated
 	 */
-	int FACILITY_CONTACT_MECH = 8;
+	int FACILITY_CONTACT_MECH = 9;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1032,7 +1114,7 @@ public interface FacilityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getFacilityContactMechPurpose()
 	 * @generated
 	 */
-	int FACILITY_CONTACT_MECH_PURPOSE = 9;
+	int FACILITY_CONTACT_MECH_PURPOSE = 10;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1132,7 +1214,7 @@ public interface FacilityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getFacilityContent()
 	 * @generated
 	 */
-	int FACILITY_CONTENT = 10;
+	int FACILITY_CONTENT = 11;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1223,7 +1305,7 @@ public interface FacilityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getFacilityGroup()
 	 * @generated
 	 */
-	int FACILITY_GROUP = 11;
+	int FACILITY_GROUP = 12;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1323,7 +1405,7 @@ public interface FacilityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getFacilityGroupMember()
 	 * @generated
 	 */
-	int FACILITY_GROUP_MEMBER = 12;
+	int FACILITY_GROUP_MEMBER = 13;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1423,7 +1505,7 @@ public interface FacilityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getFacilityGroupRole()
 	 * @generated
 	 */
-	int FACILITY_GROUP_ROLE = 13;
+	int FACILITY_GROUP_ROLE = 14;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1505,7 +1587,7 @@ public interface FacilityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getFacilityGroupRollup()
 	 * @generated
 	 */
-	int FACILITY_GROUP_ROLLUP = 14;
+	int FACILITY_GROUP_ROLLUP = 15;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1605,7 +1687,7 @@ public interface FacilityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getFacilityGroupType()
 	 * @generated
 	 */
-	int FACILITY_GROUP_TYPE = 15;
+	int FACILITY_GROUP_TYPE = 16;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1678,7 +1760,7 @@ public interface FacilityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getFacilityLocation()
 	 * @generated
 	 */
-	int FACILITY_LOCATION = 16;
+	int FACILITY_LOCATION = 17;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1814,7 +1896,7 @@ public interface FacilityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getFacilityLocationGeoPoint()
 	 * @generated
 	 */
-	int FACILITY_LOCATION_GEO_POINT = 17;
+	int FACILITY_LOCATION_GEO_POINT = 18;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1914,7 +1996,7 @@ public interface FacilityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getFacilityParty()
 	 * @generated
 	 */
-	int FACILITY_PARTY = 18;
+	int FACILITY_PARTY = 19;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -2014,7 +2096,7 @@ public interface FacilityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getFacilityType()
 	 * @generated
 	 */
-	int FACILITY_TYPE = 19;
+	int FACILITY_TYPE = 20;
 
 	/**
 	 * The feature id for the '<em><b>Slots</b></em>' containment reference list.
@@ -2123,7 +2205,7 @@ public interface FacilityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getFacilityTypeAttr()
 	 * @generated
 	 */
-	int FACILITY_TYPE_ATTR = 20;
+	int FACILITY_TYPE_ATTR = 21;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -2205,7 +2287,7 @@ public interface FacilityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getProductFacility()
 	 * @generated
 	 */
-	int PRODUCT_FACILITY = 21;
+	int PRODUCT_FACILITY = 22;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -2298,13 +2380,22 @@ public interface FacilityPackage extends EPackage {
 	int PRODUCT_FACILITY__REORDER_QUANTITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
 
 	/**
+	 * The feature id for the '<em><b>Replenish Method Enum Id</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_FACILITY__REPLENISH_METHOD_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+
+	/**
 	 * The feature id for the '<em><b>Requirement Method Enum Id</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FACILITY__REQUIREMENT_METHOD_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PRODUCT_FACILITY__REQUIREMENT_METHOD_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Product Facility</em>' class.
@@ -2313,7 +2404,134 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FACILITY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PRODUCT_FACILITY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+
+	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityAssocImpl <em>Product Facility Assoc</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityAssocImpl
+	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getProductFacilityAssoc()
+	 * @generated
+	 */
+	int PRODUCT_FACILITY_ASSOC = 23;
+
+	/**
+	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_FACILITY_ASSOC__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+
+	/**
+	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_FACILITY_ASSOC__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+
+	/**
+	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_FACILITY_ASSOC__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+
+	/**
+	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_FACILITY_ASSOC__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+
+	/**
+	 * The feature id for the '<em><b>Product Id</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_FACILITY_ASSOC__PRODUCT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_FACILITY_ASSOC__FACILITY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Facility Id To</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_FACILITY_ASSOC__FACILITY_ID_TO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Facility Assoc Type Id</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_FACILITY_ASSOC__FACILITY_ASSOC_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>From Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_FACILITY_ASSOC__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_FACILITY_ASSOC__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_FACILITY_ASSOC__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Transit Time</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_FACILITY_ASSOC__TRANSIT_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+
+	/**
+	 * The number of structural features of the '<em>Product Facility Assoc</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_FACILITY_ASSOC_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityLocationImpl <em>Product Facility Location</em>}' class.
@@ -2323,7 +2541,7 @@ public interface FacilityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getProductFacilityLocation()
 	 * @generated
 	 */
-	int PRODUCT_FACILITY_LOCATION = 22;
+	int PRODUCT_FACILITY_LOCATION = 24;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -2655,6 +2873,17 @@ public interface FacilityPackage extends EPackage {
 	EReference getFacility_FacilityAttributes();
 
 	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityLevel <em>Facility Level</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Facility Level</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getFacilityLevel()
+	 * @see #getFacility()
+	 * @generated
+	 */
+	EAttribute getFacility_FacilityLevel();
+
+	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityLocations <em>Facility Locations</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2785,6 +3014,38 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getFacility_ProductStoreId();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.facility.FacilityAssocType <em>Assoc Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Assoc Type</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityAssocType
+	 * @generated
+	 */
+	EClass getFacilityAssocType();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityAssocType#getFacilityAssocTypeId <em>Facility Assoc Type Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Facility Assoc Type Id</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityAssocType#getFacilityAssocTypeId()
+	 * @see #getFacilityAssocType()
+	 * @generated
+	 */
+	EAttribute getFacilityAssocType_FacilityAssocTypeId();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityAssocType#getDescription <em>Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Description</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityAssocType#getDescription()
+	 * @see #getFacilityAssocType()
+	 * @generated
+	 */
+	EAttribute getFacilityAssocType_Description();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.facility.FacilityAttribute <em>Attribute</em>}'.
@@ -3891,6 +4152,17 @@ public interface FacilityPackage extends EPackage {
 	EAttribute getProductFacility_ReorderQuantity();
 
 	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getReplenishMethodEnumId <em>Replenish Method Enum Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Replenish Method Enum Id</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacility#getReplenishMethodEnumId()
+	 * @see #getProductFacility()
+	 * @generated
+	 */
+	EReference getProductFacility_ReplenishMethodEnumId();
+
+	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getRequirementMethodEnumId <em>Requirement Method Enum Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3900,6 +4172,104 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getProductFacility_RequirementMethodEnumId();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc <em>Product Facility Assoc</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Product Facility Assoc</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc
+	 * @generated
+	 */
+	EClass getProductFacilityAssoc();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getProductId <em>Product Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Product Id</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getProductId()
+	 * @see #getProductFacilityAssoc()
+	 * @generated
+	 */
+	EReference getProductFacilityAssoc_ProductId();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacilityId <em>Facility Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Facility Id</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacilityId()
+	 * @see #getProductFacilityAssoc()
+	 * @generated
+	 */
+	EReference getProductFacilityAssoc_FacilityId();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacilityIdTo <em>Facility Id To</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Facility Id To</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacilityIdTo()
+	 * @see #getProductFacilityAssoc()
+	 * @generated
+	 */
+	EReference getProductFacilityAssoc_FacilityIdTo();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacilityAssocTypeId <em>Facility Assoc Type Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Facility Assoc Type Id</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFacilityAssocTypeId()
+	 * @see #getProductFacilityAssoc()
+	 * @generated
+	 */
+	EReference getProductFacilityAssoc_FacilityAssocTypeId();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFromDate <em>From Date</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>From Date</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getFromDate()
+	 * @see #getProductFacilityAssoc()
+	 * @generated
+	 */
+	EAttribute getProductFacilityAssoc_FromDate();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getSequenceNum <em>Sequence Num</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Sequence Num</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getSequenceNum()
+	 * @see #getProductFacilityAssoc()
+	 * @generated
+	 */
+	EAttribute getProductFacilityAssoc_SequenceNum();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getThruDate <em>Thru Date</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Thru Date</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getThruDate()
+	 * @see #getProductFacilityAssoc()
+	 * @generated
+	 */
+	EAttribute getProductFacilityAssoc_ThruDate();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getTransitTime <em>Transit Time</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Transit Time</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc#getTransitTime()
+	 * @see #getProductFacilityAssoc()
+	 * @generated
+	 */
+	EAttribute getProductFacilityAssoc_TransitTime();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation <em>Product Facility Location</em>}'.
@@ -4173,6 +4543,14 @@ public interface FacilityPackage extends EPackage {
 		EReference FACILITY__FACILITY_ATTRIBUTES = eINSTANCE.getFacility_FacilityAttributes();
 
 		/**
+		 * The meta object literal for the '<em><b>Facility Level</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FACILITY__FACILITY_LEVEL = eINSTANCE.getFacility_FacilityLevel();
+
+		/**
 		 * The meta object literal for the '<em><b>Facility Locations</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -4267,6 +4645,32 @@ public interface FacilityPackage extends EPackage {
 		 * @generated
 		 */
 		EReference FACILITY__PRODUCT_STORE_ID = eINSTANCE.getFacility_ProductStoreId();
+
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityAssocTypeImpl <em>Assoc Type</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityAssocTypeImpl
+		 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getFacilityAssocType()
+		 * @generated
+		 */
+		EClass FACILITY_ASSOC_TYPE = eINSTANCE.getFacilityAssocType();
+
+		/**
+		 * The meta object literal for the '<em><b>Facility Assoc Type Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FACILITY_ASSOC_TYPE__FACILITY_ASSOC_TYPE_ID = eINSTANCE.getFacilityAssocType_FacilityAssocTypeId();
+
+		/**
+		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute FACILITY_ASSOC_TYPE__DESCRIPTION = eINSTANCE.getFacilityAssocType_Description();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityAttributeImpl <em>Attribute</em>}' class.
@@ -5121,12 +5525,94 @@ public interface FacilityPackage extends EPackage {
 		EAttribute PRODUCT_FACILITY__REORDER_QUANTITY = eINSTANCE.getProductFacility_ReorderQuantity();
 
 		/**
+		 * The meta object literal for the '<em><b>Replenish Method Enum Id</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_FACILITY__REPLENISH_METHOD_ENUM_ID = eINSTANCE.getProductFacility_ReplenishMethodEnumId();
+
+		/**
 		 * The meta object literal for the '<em><b>Requirement Method Enum Id</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference PRODUCT_FACILITY__REQUIREMENT_METHOD_ENUM_ID = eINSTANCE.getProductFacility_RequirementMethodEnumId();
+
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityAssocImpl <em>Product Facility Assoc</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityAssocImpl
+		 * @see org.abchip.mimo.biz.model.product.facility.impl.FacilityPackageImpl#getProductFacilityAssoc()
+		 * @generated
+		 */
+		EClass PRODUCT_FACILITY_ASSOC = eINSTANCE.getProductFacilityAssoc();
+
+		/**
+		 * The meta object literal for the '<em><b>Product Id</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_FACILITY_ASSOC__PRODUCT_ID = eINSTANCE.getProductFacilityAssoc_ProductId();
+
+		/**
+		 * The meta object literal for the '<em><b>Facility Id</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_FACILITY_ASSOC__FACILITY_ID = eINSTANCE.getProductFacilityAssoc_FacilityId();
+
+		/**
+		 * The meta object literal for the '<em><b>Facility Id To</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_FACILITY_ASSOC__FACILITY_ID_TO = eINSTANCE.getProductFacilityAssoc_FacilityIdTo();
+
+		/**
+		 * The meta object literal for the '<em><b>Facility Assoc Type Id</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_FACILITY_ASSOC__FACILITY_ASSOC_TYPE_ID = eINSTANCE.getProductFacilityAssoc_FacilityAssocTypeId();
+
+		/**
+		 * The meta object literal for the '<em><b>From Date</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCT_FACILITY_ASSOC__FROM_DATE = eINSTANCE.getProductFacilityAssoc_FromDate();
+
+		/**
+		 * The meta object literal for the '<em><b>Sequence Num</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCT_FACILITY_ASSOC__SEQUENCE_NUM = eINSTANCE.getProductFacilityAssoc_SequenceNum();
+
+		/**
+		 * The meta object literal for the '<em><b>Thru Date</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCT_FACILITY_ASSOC__THRU_DATE = eINSTANCE.getProductFacilityAssoc_ThruDate();
+
+		/**
+		 * The meta object literal for the '<em><b>Transit Time</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute PRODUCT_FACILITY_ASSOC__TRANSIT_TIME = eINSTANCE.getProductFacilityAssoc_TransitTime();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityLocationImpl <em>Product Facility Location</em>}' class.

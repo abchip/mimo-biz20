@@ -26,7 +26,7 @@ import org.abchip.mimo.biz.model.content.survey.Survey;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getFinAccountTypeId <em>Fin Account Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getAccountCodeLength <em>Account Code Length</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getAccountValidDays <em>Account Valid Days</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#isAllowAuthToNegative <em>Allow Auth To Negative</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getAllowAuthToNegative <em>Allow Auth To Negative</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getAuthValidDays <em>Auth Valid Days</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getMinBalance <em>Min Balance</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getPinCodeLength <em>Pin Code Length</em>}</li>
@@ -35,8 +35,8 @@ import org.abchip.mimo.biz.model.content.survey.Survey;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getPurchaseSurveyId <em>Purchase Survey Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getReplenishMethodEnumId <em>Replenish Method Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getReplenishThreshold <em>Replenish Threshold</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#isRequirePinCode <em>Require Pin Code</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#isValidateGCFinAcct <em>Validate GC Fin Acct</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getRequirePinCode <em>Require Pin Code</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getValidateGCFinAcct <em>Validate GC Fin Acct</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreFinActSetting()
@@ -101,28 +101,24 @@ public interface ProductStoreFinActSetting extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Allow Auth To Negative</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Allow Auth To Negative</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Allow Auth To Negative</em>' attribute.
-	 * @see #setAllowAuthToNegative(boolean)
+	 * @see #setAllowAuthToNegative(Boolean)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreFinActSetting_AllowAuthToNegative()
 	 * @model
 	 * @generated
 	 */
-	boolean isAllowAuthToNegative();
+	Boolean getAllowAuthToNegative();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#isAllowAuthToNegative <em>Allow Auth To Negative</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getAllowAuthToNegative <em>Allow Auth To Negative</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Allow Auth To Negative</em>' attribute.
-	 * @see #isAllowAuthToNegative()
+	 * @see #getAllowAuthToNegative()
 	 * @generated
 	 */
-	void setAllowAuthToNegative(boolean value);
+	void setAllowAuthToNegative(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Auth Valid Days</b></em>' attribute.
@@ -368,54 +364,46 @@ public interface ProductStoreFinActSetting extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Require Pin Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Require Pin Code</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Require Pin Code</em>' attribute.
-	 * @see #setRequirePinCode(boolean)
+	 * @see #setRequirePinCode(Boolean)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreFinActSetting_RequirePinCode()
 	 * @model
 	 * @generated
 	 */
-	boolean isRequirePinCode();
+	Boolean getRequirePinCode();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#isRequirePinCode <em>Require Pin Code</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getRequirePinCode <em>Require Pin Code</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Require Pin Code</em>' attribute.
-	 * @see #isRequirePinCode()
+	 * @see #getRequirePinCode()
 	 * @generated
 	 */
-	void setRequirePinCode(boolean value);
+	void setRequirePinCode(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Validate GC Fin Acct</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Validate GC Fin Acct</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Validate GC Fin Acct</em>' attribute.
-	 * @see #setValidateGCFinAcct(boolean)
+	 * @see #setValidateGCFinAcct(Boolean)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreFinActSetting_ValidateGCFinAcct()
 	 * @model annotation="mimo-ent-slot help='determines whether the store should validate gift card numbers against the gift certificate codes stored in FinAccount.\n              Set to N if using external gift card provider.'"
 	 * @generated
 	 */
-	boolean isValidateGCFinAcct();
+	Boolean getValidateGCFinAcct();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#isValidateGCFinAcct <em>Validate GC Fin Acct</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getValidateGCFinAcct <em>Validate GC Fin Acct</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Validate GC Fin Acct</em>' attribute.
-	 * @see #isValidateGCFinAcct()
+	 * @see #getValidateGCFinAcct()
 	 * @generated
 	 */
-	void setValidateGCFinAcct(boolean value);
+	void setValidateGCFinAcct(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Store Id</b></em>' reference.

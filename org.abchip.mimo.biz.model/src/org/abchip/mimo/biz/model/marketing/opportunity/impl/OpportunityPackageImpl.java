@@ -2263,8 +2263,7 @@ public class OpportunityPackageImpl extends EPackageImpl implements OpportunityP
 		  (getSalesOpportunity_OpportunityName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getSalesOpportunityCompetitor_CompetitorPartyId(),
@@ -2318,8 +2317,7 @@ public class OpportunityPackageImpl extends EPackageImpl implements OpportunityP
 		  (getSalesOpportunityStage_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getSalesOpportunityStage_SequenceNum(),

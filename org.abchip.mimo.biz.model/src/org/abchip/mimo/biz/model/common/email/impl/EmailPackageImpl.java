@@ -901,8 +901,7 @@ public class EmailPackageImpl extends EPackageImpl implements EmailPackage {
 		  (getEmailTemplateSetting_BccAddress(),
 		   source,
 		   new String[] {
-			   "type", "email",
-			   "length", "320"
+			   "type", "email"
 		   });
 		addAnnotation
 		  (getEmailTemplateSetting_BodyScreenLocation(),
@@ -914,8 +913,7 @@ public class EmailPackageImpl extends EPackageImpl implements EmailPackage {
 		  (getEmailTemplateSetting_CcAddress(),
 		   source,
 		   new String[] {
-			   "type", "email",
-			   "length", "320"
+			   "type", "email"
 		   });
 		addAnnotation
 		  (getEmailTemplateSetting_ContentType(),
@@ -927,22 +925,19 @@ public class EmailPackageImpl extends EPackageImpl implements EmailPackage {
 		  (getEmailTemplateSetting_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getEmailTemplateSetting_FromAddress(),
 		   source,
 		   new String[] {
-			   "type", "email",
-			   "length", "320"
+			   "type", "email"
 		   });
 		addAnnotation
 		  (getEmailTemplateSetting_Subject(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getEmailTemplateSetting_XslfoAttachScreenLocation(),

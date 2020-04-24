@@ -40,7 +40,7 @@ public interface ShipmentGatewayConfigType extends BizEntityType<ShipmentGateway
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentGatewayConfigType_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();

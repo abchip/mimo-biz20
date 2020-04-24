@@ -47,7 +47,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getGlAccountTypeId <em>Gl Account Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getGroupId <em>Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getInventoryItemId <em>Inventory Item Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#isIsSummary <em>Is Summary</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getIsSummary <em>Is Summary</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getOrigAmount <em>Orig Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl#getOrigCurrencyUomId <em>Orig Currency Uom Id</em>}</li>
@@ -234,26 +234,6 @@ public class AcctgTransEntryImpl extends BizEntityTypedImpl<AcctgTransEntryType>
 	 * @generated
 	 */
 	@Override
-	public boolean isIsSummary() {
-		return (Boolean)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__IS_SUMMARY, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setIsSummary(boolean newIsSummary) {
-		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__IS_SUMMARY, newIsSummary);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public InventoryItem getInventoryItemId() {
 		return (InventoryItem)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__INVENTORY_ITEM_ID, true);
 	}
@@ -266,6 +246,26 @@ public class AcctgTransEntryImpl extends BizEntityTypedImpl<AcctgTransEntryType>
 	@Override
 	public void setInventoryItemId(InventoryItem newInventoryItemId) {
 		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__INVENTORY_ITEM_ID, newInventoryItemId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Boolean getIsSummary() {
+		return (Boolean)eGet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__IS_SUMMARY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setIsSummary(Boolean newIsSummary) {
+		eSet(LedgerPackage.Literals.ACCTG_TRANS_ENTRY__IS_SUMMARY, newIsSummary);
 	}
 
 	/**

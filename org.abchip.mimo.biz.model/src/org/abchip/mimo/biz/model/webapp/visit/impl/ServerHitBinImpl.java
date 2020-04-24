@@ -10,7 +10,6 @@ package org.abchip.mimo.biz.model.webapp.visit.impl;
 import java.util.Date;
 
 import org.abchip.mimo.biz.impl.BizEntityImpl;
-import org.abchip.mimo.biz.model.content.content.Content;
 import org.abchip.mimo.biz.model.webapp.visit.ServerHitBin;
 import org.abchip.mimo.biz.model.webapp.visit.ServerHitType;
 import org.abchip.mimo.biz.model.webapp.visit.VisitPackage;
@@ -171,8 +170,8 @@ public class ServerHitBinImpl extends BizEntityImpl implements ServerHitBin {
 	 * @generated
 	 */
 	@Override
-	public Content getInternalContentId() {
-		return (Content)eGet(VisitPackage.Literals.SERVER_HIT_BIN__INTERNAL_CONTENT_ID, true);
+	public String getInternalContentId() {
+		return (String)eGet(VisitPackage.Literals.SERVER_HIT_BIN__INTERNAL_CONTENT_ID, true);
 	}
 
 	/**
@@ -181,7 +180,7 @@ public class ServerHitBinImpl extends BizEntityImpl implements ServerHitBin {
 	 * @generated
 	 */
 	@Override
-	public void setInternalContentId(Content newInternalContentId) {
+	public void setInternalContentId(String newInternalContentId) {
 		eSet(VisitPackage.Literals.SERVER_HIT_BIN__INTERNAL_CONTENT_ID, newInternalContentId);
 	}
 

@@ -42,7 +42,7 @@ public interface BenefitType extends BizEntityType<PartyBenefit> {
 	 * @return the value of the '<em>Benefit Name</em>' attribute.
 	 * @see #setBenefitName(String)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getBenefitType_BenefitName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getBenefitName();
@@ -95,7 +95,7 @@ public interface BenefitType extends BizEntityType<PartyBenefit> {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getBenefitType_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();

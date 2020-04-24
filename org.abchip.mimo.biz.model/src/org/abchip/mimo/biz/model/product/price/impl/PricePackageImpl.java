@@ -2212,8 +2212,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 		  (getProductPriceActionType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductPriceAutoNotice_ProductPriceNoticeId(),
@@ -2301,8 +2300,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 		  (getProductPricePurpose_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductPriceRule_ProductPriceRuleId(),
@@ -2314,15 +2312,13 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 		  (getProductPriceRule_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductPriceRule_RuleName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getProductPriceType_ProductPriceTypeId(),
@@ -2334,8 +2330,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 		  (getProductPriceType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getQuantityBreak_QuantityBreakId(),
@@ -2369,8 +2364,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 		  (getQuantityBreakType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getSaleType_SaleTypeId(),
@@ -2382,8 +2376,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 		  (getSaleType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

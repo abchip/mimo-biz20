@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.model.webapp.visit;
 
 import org.abchip.mimo.biz.BizEntity;
-import org.abchip.mimo.biz.model.security.login.UserLogin;
 
 /**
  * <!-- begin-user-doc -->
@@ -83,29 +82,29 @@ public interface Visitor extends BizEntity {
 	void setPartyId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>User Login Id</b></em>' reference.
+	 * Returns the value of the '<em><b>User Login Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>User Login Id</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>User Login Id</em>' reference.
-	 * @see #setUserLoginId(UserLogin)
+	 * @return the value of the '<em>User Login Id</em>' attribute.
+	 * @see #setUserLoginId(String)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getVisitor_UserLoginId()
-	 * @model keys="userLoginId"
+	 * @model annotation="mimo-ent-format length='255'"
 	 * @generated
 	 */
-	UserLogin getUserLoginId();
+	String getUserLoginId();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.visit.Visitor#getUserLoginId <em>User Login Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.visit.Visitor#getUserLoginId <em>User Login Id</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>User Login Id</em>' reference.
+	 * @param value the new value of the '<em>User Login Id</em>' attribute.
 	 * @see #getUserLoginId()
 	 * @generated
 	 */
-	void setUserLoginId(UserLogin value);
+	void setUserLoginId(String value);
 
 } // Visitor

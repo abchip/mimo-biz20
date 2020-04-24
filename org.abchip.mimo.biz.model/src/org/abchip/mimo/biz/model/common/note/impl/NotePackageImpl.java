@@ -877,8 +877,7 @@ public class NotePackageImpl extends EPackageImpl implements NotePackage {
 		  (getNoteData_NoteName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 	}
 

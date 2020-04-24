@@ -7032,22 +7032,22 @@ public interface PaymentPackage extends EPackage {
 	EAttribute getPayPalPaymentMethod_PaymentMethodId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.PayPalPaymentMethod#isAvsAddr <em>Avs Addr</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.PayPalPaymentMethod#getAvsAddr <em>Avs Addr</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Avs Addr</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PayPalPaymentMethod#isAvsAddr()
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PayPalPaymentMethod#getAvsAddr()
 	 * @see #getPayPalPaymentMethod()
 	 * @generated
 	 */
 	EAttribute getPayPalPaymentMethod_AvsAddr();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.PayPalPaymentMethod#isAvsZip <em>Avs Zip</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.PayPalPaymentMethod#getAvsZip <em>Avs Zip</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Avs Zip</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PayPalPaymentMethod#isAvsZip()
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PayPalPaymentMethod#getAvsZip()
 	 * @see #getPayPalPaymentMethod()
 	 * @generated
 	 */
@@ -9259,44 +9259,44 @@ public interface PaymentPackage extends EPackage {
 	EAttribute getPaymentGatewayResponse_ReferenceNum();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#isResultBadCardNumber <em>Result Bad Card Number</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getResultBadCardNumber <em>Result Bad Card Number</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Result Bad Card Number</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#isResultBadCardNumber()
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getResultBadCardNumber()
 	 * @see #getPaymentGatewayResponse()
 	 * @generated
 	 */
 	EAttribute getPaymentGatewayResponse_ResultBadCardNumber();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#isResultBadExpire <em>Result Bad Expire</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getResultBadExpire <em>Result Bad Expire</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Result Bad Expire</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#isResultBadExpire()
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getResultBadExpire()
 	 * @see #getPaymentGatewayResponse()
 	 * @generated
 	 */
 	EAttribute getPaymentGatewayResponse_ResultBadExpire();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#isResultDeclined <em>Result Declined</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getResultDeclined <em>Result Declined</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Result Declined</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#isResultDeclined()
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getResultDeclined()
 	 * @see #getPaymentGatewayResponse()
 	 * @generated
 	 */
 	EAttribute getPaymentGatewayResponse_ResultDeclined();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#isResultNsf <em>Result Nsf</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getResultNsf <em>Result Nsf</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Result Nsf</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#isResultNsf()
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getResultNsf()
 	 * @see #getPaymentGatewayResponse()
 	 * @generated
 	 */

@@ -4421,11 +4421,11 @@ public interface LedgerPackage extends EPackage {
 	EReference getAcctgTransEntry_InventoryItemId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntry#isIsSummary <em>Is Summary</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntry#getIsSummary <em>Is Summary</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Summary</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntry#isIsSummary()
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.AcctgTransEntry#getIsSummary()
 	 * @see #getAcctgTransEntry()
 	 * @generated
 	 */
@@ -5051,11 +5051,11 @@ public interface LedgerPackage extends EPackage {
 	EAttribute getGlAccountClass_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountClass#isIsAssetClass <em>Is Asset Class</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountClass#getIsAssetClass <em>Is Asset Class</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Asset Class</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.GlAccountClass#isIsAssetClass()
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.GlAccountClass#getIsAssetClass()
 	 * @see #getGlAccountClass()
 	 * @generated
 	 */
@@ -5656,11 +5656,11 @@ public interface LedgerPackage extends EPackage {
 	EAttribute getGlJournal_GlJournalName();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.ledger.GlJournal#isIsPosted <em>Is Posted</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.ledger.GlJournal#getIsPosted <em>Is Posted</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Posted</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.GlJournal#isIsPosted()
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.GlJournal#getIsPosted()
 	 * @see #getGlJournal()
 	 * @generated
 	 */
@@ -6003,11 +6003,11 @@ public interface LedgerPackage extends EPackage {
 	EReference getPartyAcctgPreference_CogsMethodId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#isEnableAccounting <em>Enable Accounting</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#getEnableAccounting <em>Enable Accounting</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Enable Accounting</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#isEnableAccounting()
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#getEnableAccounting()
 	 * @see #getPartyAcctgPreference()
 	 * @generated
 	 */
@@ -6212,11 +6212,11 @@ public interface LedgerPackage extends EPackage {
 	EReference getPartyAcctgPreference_TaxFormId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#isUseInvoiceIdForReturns <em>Use Invoice Id For Returns</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#getUseInvoiceIdForReturns <em>Use Invoice Id For Returns</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Use Invoice Id For Returns</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#isUseInvoiceIdForReturns()
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#getUseInvoiceIdForReturns()
 	 * @see #getPartyAcctgPreference()
 	 * @generated
 	 */

@@ -24,14 +24,14 @@ import org.eclipse.emf.common.util.Enumerator;
  */
 public enum AuthMode implements Enumerator {
 	/**
-	 * The '<em><b>Full Authorize</b></em>' literal object.
+	 * The '<em><b>Full authorize</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #FULL_AUTHORIZE_VALUE
 	 * @generated
 	 * @ordered
 	 */
-	FULL_AUTHORIZE(0, "FullAuthorize", "A"), /**
+	FULL_AUTHORIZE(0, "Full_authorize", "A"), /**
 	 * The '<em><b>Pre Auth</b></em>' literal object.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -39,10 +39,10 @@ public enum AuthMode implements Enumerator {
 	 * @generated
 	 * @ordered
 	 */
-	PRE_AUTH(0, "PreAuth", "E");
+	PRE_AUTH(0, "Pre_Auth", "E");
 
 	/**
-	 * The '<em><b>Full Authorize</b></em>' literal value.
+	 * The '<em><b>Full authorize</b></em>' literal value.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of '<em><b>Full Authorize</b></em>' literal object isn't clear,
@@ -50,7 +50,7 @@ public enum AuthMode implements Enumerator {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #FULL_AUTHORIZE
-	 * @model name="FullAuthorize" literal="A"
+	 * @model name="Full_authorize" literal="A"
 	 * @generated
 	 * @ordered
 	 */
@@ -65,7 +65,7 @@ public enum AuthMode implements Enumerator {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @see #PRE_AUTH
-	 * @model name="PreAuth" literal="E"
+	 * @model name="Pre_Auth" literal="E"
 	 * @generated
 	 * @ordered
 	 */

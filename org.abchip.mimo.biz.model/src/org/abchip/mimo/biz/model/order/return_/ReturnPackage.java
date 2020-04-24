@@ -2055,22 +2055,22 @@ public interface ReturnPackage extends EPackage {
 	EAttribute getReturnAdjustment_ExemptAmount();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#isIncludeInShipping <em>Include In Shipping</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getIncludeInShipping <em>Include In Shipping</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Include In Shipping</em>'.
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#isIncludeInShipping()
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getIncludeInShipping()
 	 * @see #getReturnAdjustment()
 	 * @generated
 	 */
 	EAttribute getReturnAdjustment_IncludeInShipping();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#isIncludeInTax <em>Include In Tax</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getIncludeInTax <em>Include In Tax</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Include In Tax</em>'.
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#isIncludeInTax()
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getIncludeInTax()
 	 * @see #getReturnAdjustment()
 	 * @generated
 	 */
@@ -2503,11 +2503,11 @@ public interface ReturnPackage extends EPackage {
 	EReference getReturnHeader_FromPartyId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.return_.ReturnHeader#isNeedsInventoryReceive <em>Needs Inventory Receive</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.return_.ReturnHeader#getNeedsInventoryReceive <em>Needs Inventory Receive</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Needs Inventory Receive</em>'.
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnHeader#isNeedsInventoryReceive()
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnHeader#getNeedsInventoryReceive()
 	 * @see #getReturnHeader()
 	 * @generated
 	 */

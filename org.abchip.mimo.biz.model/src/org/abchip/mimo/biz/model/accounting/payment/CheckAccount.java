@@ -98,7 +98,7 @@ public interface CheckAccount extends BizEntity {
 	 * @return the value of the '<em>Bank Name</em>' attribute.
 	 * @see #setBankName(String)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getCheckAccount_BankName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getBankName();
@@ -150,7 +150,7 @@ public interface CheckAccount extends BizEntity {
 	 * @return the value of the '<em>Company Name On Account</em>' attribute.
 	 * @see #setCompanyNameOnAccount(String)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getCheckAccount_CompanyNameOnAccount()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getCompanyNameOnAccount();
@@ -202,7 +202,7 @@ public interface CheckAccount extends BizEntity {
 	 * @return the value of the '<em>Name On Account</em>' attribute.
 	 * @see #setNameOnAccount(String)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getCheckAccount_NameOnAccount()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getNameOnAccount();

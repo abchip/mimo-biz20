@@ -26,6 +26,7 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayHistoryImpl#getEmplFromDate <em>Empl From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayHistoryImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayHistoryImpl#getPartyIdFrom <em>Party Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.impl.PayHistoryImpl#getPartyIdTo <em>Party Id To</em>}</li>
@@ -64,6 +65,26 @@ public class PayHistoryImpl extends BizEntityImpl implements PayHistory {
 	@Override
 	protected EClass eStaticClass() {
 		return EmploymentPackage.Literals.PAY_HISTORY;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getEmplFromDate() {
+		return (Date)eGet(EmploymentPackage.Literals.PAY_HISTORY__EMPL_FROM_DATE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEmplFromDate(Date newEmplFromDate) {
+		eSet(EmploymentPackage.Literals.PAY_HISTORY__EMPL_FROM_DATE, newEmplFromDate);
 	}
 
 	/**

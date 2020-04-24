@@ -2003,7 +2003,7 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 		initEReference(getFinAccountType_FinAccountTypeAttrs(), this.getFinAccountTypeAttr(), null, "finAccountTypeAttrs", null, 0, -1, FinAccountType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getFinAccountType_FinAccountTypeGlAccounts(), this.getFinAccountTypeGlAccount(), null, "finAccountTypeGlAccounts", null, 0, -1, FinAccountType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFinAccountType_HasTable(), ecorePackage.getEBoolean(), "hasTable", null, 0, 1, FinAccountType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getFinAccountType_IsRefundable(), ecorePackage.getEBoolean(), "isRefundable", null, 0, 1, FinAccountType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFinAccountType_IsRefundable(), ecorePackage.getEBooleanObject(), "isRefundable", null, 0, 1, FinAccountType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFinAccountType_ParentTypeId(), this.getFinAccountType(), null, "parentTypeId", null, 0, 1, FinAccountType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getFinAccountType_ParentTypeId().getEKeys().add(this.getFinAccountType_FinAccountTypeId());
 		initEReference(getFinAccountType_ReplenishEnumId(), theEnumPackage.getEnumeration(), null, "replenishEnumId", null, 0, 1, FinAccountType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2073,8 +2073,7 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 		  (getFinAccount_FinAccountName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getFinAccount_FinAccountPin(),
@@ -2106,8 +2105,7 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 		  (getFinAccountAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getFinAccountAttribute_AttrValue(),
@@ -2153,8 +2151,7 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 		  (getFinAccountTrans_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getFinAccountTrans_OrderId(),
@@ -2178,8 +2175,7 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 		  (getFinAccountTransAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getFinAccountTransAttribute_AttrValue(),
@@ -2197,8 +2193,7 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 		  (getFinAccountTransType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getFinAccountTransTypeAttr_AttrName(),
@@ -2210,8 +2205,7 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 		  (getFinAccountTransTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getFinAccountType_FinAccountTypeId(),
@@ -2223,8 +2217,7 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 		  (getFinAccountType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getFinAccountTypeAttr_AttrName(),
@@ -2242,8 +2235,7 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 		  (getFinAccountTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

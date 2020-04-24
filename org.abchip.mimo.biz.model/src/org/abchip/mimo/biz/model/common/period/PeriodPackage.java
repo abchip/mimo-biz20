@@ -322,11 +322,11 @@ public interface PeriodPackage extends EPackage {
 	EAttribute getCustomTimePeriod_FromDate();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.period.CustomTimePeriod#isIsClosed <em>Is Closed</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getIsClosed <em>Is Closed</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Closed</em>'.
-	 * @see org.abchip.mimo.biz.model.common.period.CustomTimePeriod#isIsClosed()
+	 * @see org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getIsClosed()
 	 * @see #getCustomTimePeriod()
 	 * @generated
 	 */

@@ -66,7 +66,7 @@ public interface CountryCode extends BizEntity {
 	 * @return the value of the '<em>Country Name</em>' attribute.
 	 * @see #setCountryName(String)
 	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getCountryCode_CountryName()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getCountryName();

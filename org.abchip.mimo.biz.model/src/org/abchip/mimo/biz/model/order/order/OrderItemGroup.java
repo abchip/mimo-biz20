@@ -40,7 +40,7 @@ public interface OrderItemGroup extends BizEntity {
 	 * @return the value of the '<em>Group Name</em>' attribute.
 	 * @see #setGroupName(String)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemGroup_GroupName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getGroupName();

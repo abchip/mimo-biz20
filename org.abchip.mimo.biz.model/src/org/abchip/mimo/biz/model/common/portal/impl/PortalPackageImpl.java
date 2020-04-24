@@ -1458,8 +1458,7 @@ public class PortalPackageImpl extends EPackageImpl implements PortalPackage {
 		  (getPortalPage_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getPortalPage_OriginalPortalPageId(),
@@ -1477,8 +1476,7 @@ public class PortalPackageImpl extends EPackageImpl implements PortalPackage {
 		  (getPortalPage_PortalPageName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getPortalPage_SequenceNum(),
@@ -1536,8 +1534,7 @@ public class PortalPackageImpl extends EPackageImpl implements PortalPackage {
 		  (getPortalPortlet_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getPortalPortlet_EditFormLocation(),
@@ -1555,8 +1552,7 @@ public class PortalPackageImpl extends EPackageImpl implements PortalPackage {
 		  (getPortalPortlet_PortletName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getPortalPortlet_ScreenLocation(),
@@ -1574,8 +1570,7 @@ public class PortalPackageImpl extends EPackageImpl implements PortalPackage {
 		  (getPortalPortlet_Screenshot(),
 		   source,
 		   new String[] {
-			   "type", "url",
-			   "length", "2000"
+			   "type", "url"
 		   });
 		addAnnotation
 		  (getPortalPortlet_SecurityMainAction(),
@@ -1611,8 +1606,7 @@ public class PortalPackageImpl extends EPackageImpl implements PortalPackage {
 		  (getPortletAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getPortletAttribute_AttrType(),
@@ -1636,8 +1630,7 @@ public class PortalPackageImpl extends EPackageImpl implements PortalPackage {
 		  (getPortletCategory_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

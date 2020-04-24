@@ -37,9 +37,9 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getCustomerReferenceId <em>Customer Reference Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getExemptAmount <em>Exempt Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#isIncludeInShipping <em>Include In Shipping</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#isIncludeInTax <em>Include In Tax</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#isIsManual <em>Is Manual</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getIncludeInShipping <em>Include In Shipping</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getIncludeInTax <em>Include In Tax</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getIsManual <em>Is Manual</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getLastModifiedDate <em>Last Modified Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getOldAmountPerQuantity <em>Old Amount Per Quantity</em>}</li>
@@ -134,7 +134,7 @@ public interface OrderAdjustment extends BizEntityTyped<OrderAdjustmentType> {
 	 * @return the value of the '<em>Comments</em>' attribute.
 	 * @see #setComments(String)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustment_Comments()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getComments();
@@ -265,7 +265,7 @@ public interface OrderAdjustment extends BizEntityTyped<OrderAdjustmentType> {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustment_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -310,80 +310,68 @@ public interface OrderAdjustment extends BizEntityTyped<OrderAdjustmentType> {
 	/**
 	 * Returns the value of the '<em><b>Include In Shipping</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Include In Shipping</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Include In Shipping</em>' attribute.
-	 * @see #setIncludeInShipping(boolean)
+	 * @see #setIncludeInShipping(Boolean)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustment_IncludeInShipping()
 	 * @model
 	 * @generated
 	 */
-	boolean isIncludeInShipping();
+	Boolean getIncludeInShipping();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#isIncludeInShipping <em>Include In Shipping</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getIncludeInShipping <em>Include In Shipping</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Include In Shipping</em>' attribute.
-	 * @see #isIncludeInShipping()
+	 * @see #getIncludeInShipping()
 	 * @generated
 	 */
-	void setIncludeInShipping(boolean value);
+	void setIncludeInShipping(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Include In Tax</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Include In Tax</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Include In Tax</em>' attribute.
-	 * @see #setIncludeInTax(boolean)
+	 * @see #setIncludeInTax(Boolean)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustment_IncludeInTax()
 	 * @model
 	 * @generated
 	 */
-	boolean isIncludeInTax();
+	Boolean getIncludeInTax();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#isIncludeInTax <em>Include In Tax</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getIncludeInTax <em>Include In Tax</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Include In Tax</em>' attribute.
-	 * @see #isIncludeInTax()
+	 * @see #getIncludeInTax()
 	 * @generated
 	 */
-	void setIncludeInTax(boolean value);
+	void setIncludeInTax(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Is Manual</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Manual</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Manual</em>' attribute.
-	 * @see #setIsManual(boolean)
+	 * @see #setIsManual(Boolean)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderAdjustment_IsManual()
 	 * @model
 	 * @generated
 	 */
-	boolean isIsManual();
+	Boolean getIsManual();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#isIsManual <em>Is Manual</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getIsManual <em>Is Manual</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is Manual</em>' attribute.
-	 * @see #isIsManual()
+	 * @see #getIsManual()
 	 * @generated
 	 */
-	void setIsManual(boolean value);
+	void setIsManual(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Last Modified By User Login</b></em>' attribute.

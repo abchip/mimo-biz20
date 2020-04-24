@@ -2134,11 +2134,11 @@ public interface SurveyPackage extends EPackage {
 	EAttribute getSurveyQuestionAppl_ExternalFieldRef();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#isRequiredField <em>Required Field</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getRequiredField <em>Required Field</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Required Field</em>'.
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#isRequiredField()
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getRequiredField()
 	 * @see #getSurveyQuestionAppl()
 	 * @generated
 	 */
@@ -2602,11 +2602,11 @@ public interface SurveyPackage extends EPackage {
 	EAttribute getSurveyResponseAnswer_AnsweredDate();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#isBooleanResponse <em>Boolean Response</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getBooleanResponse <em>Boolean Response</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Boolean Response</em>'.
-	 * @see org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#isBooleanResponse()
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getBooleanResponse()
 	 * @see #getSurveyResponseAnswer()
 	 * @generated
 	 */

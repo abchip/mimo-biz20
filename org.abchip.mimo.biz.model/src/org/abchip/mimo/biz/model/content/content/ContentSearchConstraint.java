@@ -24,11 +24,11 @@ import org.abchip.mimo.biz.BizEntity;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getAnySuffix <em>Any Suffix</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getConstraintName <em>Constraint Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getHighValue <em>High Value</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#isIncludeSubCategories <em>Include Sub Categories</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getIncludeSubCategories <em>Include Sub Categories</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getInfoString <em>Info String</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#isIsAnd <em>Is And</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getIsAnd <em>Is And</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getLowValue <em>Low Value</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#isRemoveStems <em>Remove Stems</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getRemoveStems <em>Remove Stems</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentSearchConstraint()
@@ -198,28 +198,24 @@ public interface ContentSearchConstraint extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Include Sub Categories</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Include Sub Categories</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Include Sub Categories</em>' attribute.
-	 * @see #setIncludeSubCategories(boolean)
+	 * @see #setIncludeSubCategories(Boolean)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentSearchConstraint_IncludeSubCategories()
 	 * @model
 	 * @generated
 	 */
-	boolean isIncludeSubCategories();
+	Boolean getIncludeSubCategories();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#isIncludeSubCategories <em>Include Sub Categories</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getIncludeSubCategories <em>Include Sub Categories</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Include Sub Categories</em>' attribute.
-	 * @see #isIncludeSubCategories()
+	 * @see #getIncludeSubCategories()
 	 * @generated
 	 */
-	void setIncludeSubCategories(boolean value);
+	void setIncludeSubCategories(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Info String</b></em>' attribute.
@@ -250,28 +246,24 @@ public interface ContentSearchConstraint extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Is And</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is And</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is And</em>' attribute.
-	 * @see #setIsAnd(boolean)
+	 * @see #setIsAnd(Boolean)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentSearchConstraint_IsAnd()
 	 * @model
 	 * @generated
 	 */
-	boolean isIsAnd();
+	Boolean getIsAnd();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#isIsAnd <em>Is And</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getIsAnd <em>Is And</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is And</em>' attribute.
-	 * @see #isIsAnd()
+	 * @see #getIsAnd()
 	 * @generated
 	 */
-	void setIsAnd(boolean value);
+	void setIsAnd(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Low Value</b></em>' attribute.
@@ -302,27 +294,23 @@ public interface ContentSearchConstraint extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Remove Stems</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Remove Stems</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Remove Stems</em>' attribute.
-	 * @see #setRemoveStems(boolean)
+	 * @see #setRemoveStems(Boolean)
 	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContentSearchConstraint_RemoveStems()
 	 * @model
 	 * @generated
 	 */
-	boolean isRemoveStems();
+	Boolean getRemoveStems();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#isRemoveStems <em>Remove Stems</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getRemoveStems <em>Remove Stems</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Remove Stems</em>' attribute.
-	 * @see #isRemoveStems()
+	 * @see #getRemoveStems()
 	 * @generated
 	 */
-	void setRemoveStems(boolean value);
+	void setRemoveStems(Boolean value);
 
 } // ContentSearchConstraint

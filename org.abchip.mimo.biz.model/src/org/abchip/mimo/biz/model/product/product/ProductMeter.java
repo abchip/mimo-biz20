@@ -41,7 +41,7 @@ public interface ProductMeter extends BizEntity {
 	 * @return the value of the '<em>Meter Name</em>' attribute.
 	 * @see #setMeterName(String)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductMeter_MeterName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getMeterName();

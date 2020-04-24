@@ -2610,8 +2610,7 @@ public class InventoryPackageImpl extends EPackageImpl implements InventoryPacka
 		  (getInventoryItem_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getInventoryItem_LocationSeqId(),
@@ -2673,8 +2672,7 @@ public class InventoryPackageImpl extends EPackageImpl implements InventoryPacka
 		  (getInventoryItemAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getInventoryItemAttribute_AttrValue(),
@@ -2708,8 +2706,7 @@ public class InventoryPackageImpl extends EPackageImpl implements InventoryPacka
 		  (getInventoryItemDetail_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getInventoryItemDetail_FixedAssetId(),
@@ -2791,8 +2788,7 @@ public class InventoryPackageImpl extends EPackageImpl implements InventoryPacka
 		  (getInventoryItemLabel_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getInventoryItemLabelAppl_SequenceNum(),
@@ -2811,8 +2807,7 @@ public class InventoryPackageImpl extends EPackageImpl implements InventoryPacka
 		  (getInventoryItemLabelType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getInventoryItemStatus_OwnerPartyId(),
@@ -2850,8 +2845,7 @@ public class InventoryPackageImpl extends EPackageImpl implements InventoryPacka
 		  (getInventoryItemType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getInventoryItemTypeAttr_AttrName(),
@@ -2863,8 +2857,7 @@ public class InventoryPackageImpl extends EPackageImpl implements InventoryPacka
 		  (getInventoryItemTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getInventoryItemVariance_AvailableToPromiseVar(),
@@ -2878,8 +2871,7 @@ public class InventoryPackageImpl extends EPackageImpl implements InventoryPacka
 		  (getInventoryItemVariance_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getInventoryItemVariance_QuantityOnHandVar(),
@@ -2899,8 +2891,7 @@ public class InventoryPackageImpl extends EPackageImpl implements InventoryPacka
 		  (getInventoryTransfer_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getInventoryTransfer_LocationSeqId(),
@@ -2938,8 +2929,7 @@ public class InventoryPackageImpl extends EPackageImpl implements InventoryPacka
 		  (getPhysicalInventory_GeneralComments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getPhysicalInventory_PartyId(),
@@ -2957,8 +2947,7 @@ public class InventoryPackageImpl extends EPackageImpl implements InventoryPacka
 		  (getVarianceReason_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

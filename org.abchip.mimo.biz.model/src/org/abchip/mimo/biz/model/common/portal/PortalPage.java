@@ -49,7 +49,7 @@ public interface PortalPage extends BizEntity {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortalPage_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -155,7 +155,7 @@ public interface PortalPage extends BizEntity {
 	 * @return the value of the '<em>Portal Page Name</em>' attribute.
 	 * @see #setPortalPageName(String)
 	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortalPage_PortalPageName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getPortalPageName();

@@ -47,7 +47,7 @@ public interface OrderStatus extends BizEntity {
 	 * @return the value of the '<em>Change Reason</em>' attribute.
 	 * @see #setChangeReason(String)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderStatus_ChangeReason()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getChangeReason();

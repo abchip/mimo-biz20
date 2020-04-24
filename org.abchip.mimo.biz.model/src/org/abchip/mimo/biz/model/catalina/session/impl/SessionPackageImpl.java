@@ -801,7 +801,7 @@ public class SessionPackageImpl extends EPackageImpl implements SessionPackage {
 		// Initialize classes and features; add operations and parameters
 		initEClass(catalinaSessionEClass, CatalinaSession.class, "CatalinaSession", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCatalinaSession_SessionId(), ecorePackage.getEString(), "sessionId", null, 1, 1, CatalinaSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCatalinaSession_IsValid(), ecorePackage.getEBoolean(), "isValid", null, 0, 1, CatalinaSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCatalinaSession_IsValid(), ecorePackage.getEBooleanObject(), "isValid", null, 0, 1, CatalinaSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCatalinaSession_LastAccessed(), ecorePackage.getELong(), "lastAccessed", null, 0, 1, CatalinaSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCatalinaSession_MaxIdle(), ecorePackage.getELong(), "maxIdle", null, 0, 1, CatalinaSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCatalinaSession_SessionInfo(), ecorePackage.getEString(), "sessionInfo", null, 0, 1, CatalinaSession.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

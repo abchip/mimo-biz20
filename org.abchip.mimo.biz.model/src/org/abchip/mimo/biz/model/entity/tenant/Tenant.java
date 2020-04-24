@@ -20,7 +20,7 @@ import org.abchip.mimo.biz.BizEntity;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.Tenant#getTenantId <em>Tenant Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.Tenant#isDisabled <em>Disabled</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.Tenant#getDisabled <em>Disabled</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.Tenant#getInitialPath <em>Initial Path</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.Tenant#getTenantDataSources <em>Tenant Data Sources</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.Tenant#getTenantName <em>Tenant Name</em>}</li>
@@ -103,28 +103,24 @@ public interface Tenant extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Disabled</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Disabled</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Disabled</em>' attribute.
-	 * @see #setDisabled(boolean)
+	 * @see #setDisabled(Boolean)
 	 * @see org.abchip.mimo.biz.model.entity.tenant.TenantPackage#getTenant_Disabled()
 	 * @model annotation="mimo-ent-slot help='Disabled if \'Y\', defaults to \'N\' (not disabled).'"
 	 * @generated
 	 */
-	boolean isDisabled();
+	Boolean getDisabled();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.tenant.Tenant#isDisabled <em>Disabled</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.tenant.Tenant#getDisabled <em>Disabled</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Disabled</em>' attribute.
-	 * @see #isDisabled()
+	 * @see #getDisabled()
 	 * @generated
 	 */
-	void setDisabled(boolean value);
+	void setDisabled(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Tenant Name</b></em>' attribute.
@@ -137,7 +133,7 @@ public interface Tenant extends BizEntity {
 	 * @return the value of the '<em>Tenant Name</em>' attribute.
 	 * @see #setTenantName(String)
 	 * @see org.abchip.mimo.biz.model.entity.tenant.TenantPackage#getTenant_TenantName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getTenantName();

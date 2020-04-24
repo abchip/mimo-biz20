@@ -28,7 +28,7 @@ import org.abchip.mimo.biz.model.content.content.Content;
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getAmountBase <em>Amount Base</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getAmountBaseUomId <em>Amount Base Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getAnsweredDate <em>Answered Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#isBooleanResponse <em>Boolean Response</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getBooleanResponse <em>Boolean Response</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getContentId <em>Content Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getCurrencyResponse <em>Currency Response</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getDuration <em>Duration</em>}</li>
@@ -128,28 +128,24 @@ public interface SurveyResponseAnswer extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Boolean Response</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Boolean Response</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Boolean Response</em>' attribute.
-	 * @see #setBooleanResponse(boolean)
+	 * @see #setBooleanResponse(Boolean)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyResponseAnswer_BooleanResponse()
 	 * @model
 	 * @generated
 	 */
-	boolean isBooleanResponse();
+	Boolean getBooleanResponse();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#isBooleanResponse <em>Boolean Response</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyResponseAnswer#getBooleanResponse <em>Boolean Response</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Boolean Response</em>' attribute.
-	 * @see #isBooleanResponse()
+	 * @see #getBooleanResponse()
 	 * @generated
 	 */
-	void setBooleanResponse(boolean value);
+	void setBooleanResponse(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Content Id</b></em>' reference.

@@ -36,7 +36,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getReservStart <em>Reserv Start</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getTotalWithAdjustments <em>Total With Adjustments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getUnitPrice <em>Unit Price</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#isWasReserved <em>Was Reserved</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getWasReserved <em>Was Reserved</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.shoppingcart.ShoppingcartPackage#getCartAbandonedLine()
@@ -361,28 +361,24 @@ public interface CartAbandonedLine extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Was Reserved</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Was Reserved</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Was Reserved</em>' attribute.
-	 * @see #setWasReserved(boolean)
+	 * @see #setWasReserved(Boolean)
 	 * @see org.abchip.mimo.biz.model.order.shoppingcart.ShoppingcartPackage#getCartAbandonedLine_WasReserved()
 	 * @model
 	 * @generated
 	 */
-	boolean isWasReserved();
+	Boolean getWasReserved();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#isWasReserved <em>Was Reserved</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getWasReserved <em>Was Reserved</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Was Reserved</em>' attribute.
-	 * @see #isWasReserved()
+	 * @see #getWasReserved()
 	 * @generated
 	 */
-	void setWasReserved(boolean value);
+	void setWasReserved(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Visit Id</b></em>' attribute.

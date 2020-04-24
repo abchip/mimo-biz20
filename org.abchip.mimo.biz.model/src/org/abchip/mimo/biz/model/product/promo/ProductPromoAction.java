@@ -33,7 +33,7 @@ import org.abchip.mimo.biz.model.order.order.OrderAdjustmentType;
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getProductPromoActionEnumId <em>Product Promo Action Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getServiceName <em>Service Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#isUseCartQuantity <em>Use Cart Quantity</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getUseCartQuantity <em>Use Cart Quantity</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoAction()
@@ -308,28 +308,24 @@ public interface ProductPromoAction extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Use Cart Quantity</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Use Cart Quantity</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Use Cart Quantity</em>' attribute.
-	 * @see #setUseCartQuantity(boolean)
+	 * @see #setUseCartQuantity(Boolean)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoAction_UseCartQuantity()
 	 * @model
 	 * @generated
 	 */
-	boolean isUseCartQuantity();
+	Boolean getUseCartQuantity();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#isUseCartQuantity <em>Use Cart Quantity</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getUseCartQuantity <em>Use Cart Quantity</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Use Cart Quantity</em>' attribute.
-	 * @see #isUseCartQuantity()
+	 * @see #getUseCartQuantity()
 	 * @generated
 	 */
-	void setUseCartQuantity(boolean value);
+	void setUseCartQuantity(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Promo Id</b></em>' reference.

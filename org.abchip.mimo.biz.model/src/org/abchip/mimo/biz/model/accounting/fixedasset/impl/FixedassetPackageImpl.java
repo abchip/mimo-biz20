@@ -2958,8 +2958,7 @@ public class FixedassetPackageImpl extends EPackageImpl implements FixedassetPac
 		  (getAccommodationClass_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getAccommodationMap_AccommodationMapId(),
@@ -2984,8 +2983,7 @@ public class FixedassetPackageImpl extends EPackageImpl implements FixedassetPac
 		  (getAccommodationMapType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getFixedAsset_FixedAssetId(),
@@ -3011,8 +3009,7 @@ public class FixedassetPackageImpl extends EPackageImpl implements FixedassetPac
 		  (getFixedAsset_FixedAssetName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getFixedAsset_LocatedAtLocationSeqId(),
@@ -3066,8 +3063,7 @@ public class FixedassetPackageImpl extends EPackageImpl implements FixedassetPac
 		  (getFixedAssetAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getFixedAssetAttribute_AttrValue(),
@@ -3091,8 +3087,7 @@ public class FixedassetPackageImpl extends EPackageImpl implements FixedassetPac
 		  (getFixedAssetIdentType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getFixedAssetMaint_MaintHistSeqId(),
@@ -3162,8 +3157,7 @@ public class FixedassetPackageImpl extends EPackageImpl implements FixedassetPac
 		  (getFixedAssetProduct_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getFixedAssetProduct_Quantity(),
@@ -3190,8 +3184,7 @@ public class FixedassetPackageImpl extends EPackageImpl implements FixedassetPac
 		  (getFixedAssetProductType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getFixedAssetRegistration_LicenseNumber(),
@@ -3223,8 +3216,7 @@ public class FixedassetPackageImpl extends EPackageImpl implements FixedassetPac
 		  (getFixedAssetStdCostType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getFixedAssetType_FixedAssetTypeId(),
@@ -3236,8 +3228,7 @@ public class FixedassetPackageImpl extends EPackageImpl implements FixedassetPac
 		  (getFixedAssetType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getFixedAssetTypeAttr_AttrName(),
@@ -3249,15 +3240,13 @@ public class FixedassetPackageImpl extends EPackageImpl implements FixedassetPac
 		  (getFixedAssetTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getPartyFixedAssetAssignment_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 	}
 

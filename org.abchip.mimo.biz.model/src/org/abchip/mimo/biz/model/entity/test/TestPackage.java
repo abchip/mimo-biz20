@@ -62,6 +62,313 @@ public interface TestPackage extends EPackage {
 	TestPackage eINSTANCE = org.abchip.mimo.biz.model.entity.test.impl.TestPackageImpl.init();
 
 	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.model.entity.test.impl.TestEntityImpl <em>Entity</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.model.entity.test.impl.TestEntityImpl
+	 * @see org.abchip.mimo.biz.model.entity.test.impl.TestPackageImpl#getTestEntity()
+	 * @generated
+	 */
+	int TEST_ENTITY = 0;
+
+	/**
+	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+
+	/**
+	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+
+	/**
+	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+
+	/**
+	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+
+	/**
+	 * The feature id for the '<em><b>Field Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Field Blob</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_BLOB = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Field Byte Array</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_BYTE_ARRAY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Field Comment</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_COMMENT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Field Credit Card Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_CREDIT_CARD_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Field Credit Card Number</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_CREDIT_CARD_NUMBER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Field Currency Amount</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_CURRENCY_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+
+	/**
+	 * The feature id for the '<em><b>Field Currency Precise</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_CURRENCY_PRECISE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+
+	/**
+	 * The feature id for the '<em><b>Field Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+
+	/**
+	 * The feature id for the '<em><b>Field Date Time</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_DATE_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+
+	/**
+	 * The feature id for the '<em><b>Field Description</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+
+	/**
+	 * The feature id for the '<em><b>Field Email</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_EMAIL = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+
+	/**
+	 * The feature id for the '<em><b>Field Fixed Point</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_FIXED_POINT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+
+	/**
+	 * The feature id for the '<em><b>Field Floating Point</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_FLOATING_POINT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+
+	/**
+	 * The feature id for the '<em><b>Field Id Long</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_ID_LONG = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+
+	/**
+	 * The feature id for the '<em><b>Field Id Vlong</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_ID_VLONG = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+
+	/**
+	 * The feature id for the '<em><b>Field Indicator</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_INDICATOR = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+
+	/**
+	 * The feature id for the '<em><b>Field Long Varchar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_LONG_VARCHAR = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 17;
+
+	/**
+	 * The feature id for the '<em><b>Field Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 18;
+
+	/**
+	 * The feature id for the '<em><b>Field Numeric</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_NUMERIC = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 19;
+
+	/**
+	 * The feature id for the '<em><b>Field Object</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_OBJECT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 20;
+
+	/**
+	 * The feature id for the '<em><b>Field Short Varchar</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_SHORT_VARCHAR = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 21;
+
+	/**
+	 * The feature id for the '<em><b>Field Tel Number</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_TEL_NUMBER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 22;
+
+	/**
+	 * The feature id for the '<em><b>Field Time</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 23;
+
+	/**
+	 * The feature id for the '<em><b>Field Url</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_URL = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 24;
+
+	/**
+	 * The feature id for the '<em><b>Field Value</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 25;
+
+	/**
+	 * The feature id for the '<em><b>Field Very Long</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_VERY_LONG = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 26;
+
+	/**
+	 * The feature id for the '<em><b>Field Very Short</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY__FIELD_VERY_SHORT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 27;
+
+	/**
+	 * The number of structural features of the '<em>Entity</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TEST_ENTITY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 28;
+
+	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.entity.test.impl.TestFieldTypeImpl <em>Field Type</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -69,7 +376,7 @@ public interface TestPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.entity.test.impl.TestPackageImpl#getTestFieldType()
 	 * @generated
 	 */
-	int TEST_FIELD_TYPE = 0;
+	int TEST_FIELD_TYPE = 1;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -223,7 +530,7 @@ public interface TestPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.entity.test.impl.TestPackageImpl#getTesting()
 	 * @generated
 	 */
-	int TESTING = 1;
+	int TESTING = 2;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -350,7 +657,7 @@ public interface TestPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.entity.test.impl.TestPackageImpl#getTestingCrypto()
 	 * @generated
 	 */
-	int TESTING_CRYPTO = 2;
+	int TESTING_CRYPTO = 3;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -450,7 +757,7 @@ public interface TestPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.entity.test.impl.TestPackageImpl#getTestingItem()
 	 * @generated
 	 */
-	int TESTING_ITEM = 3;
+	int TESTING_ITEM = 4;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -532,7 +839,7 @@ public interface TestPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.entity.test.impl.TestPackageImpl#getTestingNode()
 	 * @generated
 	 */
-	int TESTING_NODE = 4;
+	int TESTING_NODE = 5;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -614,7 +921,7 @@ public interface TestPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.entity.test.impl.TestPackageImpl#getTestingNodeMember()
 	 * @generated
 	 */
-	int TESTING_NODE_MEMBER = 5;
+	int TESTING_NODE_MEMBER = 6;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -723,7 +1030,7 @@ public interface TestPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.entity.test.impl.TestPackageImpl#getTestingRemoveAll()
 	 * @generated
 	 */
-	int TESTING_REMOVE_ALL = 6;
+	int TESTING_REMOVE_ALL = 7;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -796,7 +1103,7 @@ public interface TestPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.entity.test.impl.TestPackageImpl#getTestingStatus()
 	 * @generated
 	 */
-	int TESTING_STATUS = 7;
+	int TESTING_STATUS = 8;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -896,7 +1203,7 @@ public interface TestPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.entity.test.impl.TestPackageImpl#getTestingSubtype()
 	 * @generated
 	 */
-	int TESTING_SUBTYPE = 8;
+	int TESTING_SUBTYPE = 9;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -969,7 +1276,7 @@ public interface TestPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.model.entity.test.impl.TestPackageImpl#getTestingType()
 	 * @generated
 	 */
-	int TESTING_TYPE = 9;
+	int TESTING_TYPE = 10;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1034,6 +1341,324 @@ public interface TestPackage extends EPackage {
 	 */
 	int TESTING_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
 
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.entity.test.TestEntity <em>Entity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Entity</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity
+	 * @generated
+	 */
+	EClass getTestEntity();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldId <em>Field Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Id</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldId()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldId();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldBlob <em>Field Blob</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Blob</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldBlob()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldBlob();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldByteArray <em>Field Byte Array</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Byte Array</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldByteArray()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldByteArray();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldComment <em>Field Comment</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Comment</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldComment()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldComment();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldCreditCardDate <em>Field Credit Card Date</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Credit Card Date</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldCreditCardDate()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldCreditCardDate();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldCreditCardNumber <em>Field Credit Card Number</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Credit Card Number</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldCreditCardNumber()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldCreditCardNumber();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldCurrencyAmount <em>Field Currency Amount</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Currency Amount</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldCurrencyAmount()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldCurrencyAmount();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldCurrencyPrecise <em>Field Currency Precise</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Currency Precise</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldCurrencyPrecise()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldCurrencyPrecise();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldDate <em>Field Date</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Date</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldDate()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldDate();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldDateTime <em>Field Date Time</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Date Time</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldDateTime()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldDateTime();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldDescription <em>Field Description</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Description</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldDescription()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldDescription();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldEmail <em>Field Email</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Email</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldEmail()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldEmail();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldFixedPoint <em>Field Fixed Point</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Fixed Point</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldFixedPoint()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldFixedPoint();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldFloatingPoint <em>Field Floating Point</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Floating Point</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldFloatingPoint()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldFloatingPoint();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldIdLong <em>Field Id Long</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Id Long</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldIdLong()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldIdLong();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldIdVlong <em>Field Id Vlong</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Id Vlong</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldIdVlong()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldIdVlong();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#isFieldIndicator <em>Field Indicator</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Indicator</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#isFieldIndicator()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldIndicator();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldLongVarchar <em>Field Long Varchar</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Long Varchar</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldLongVarchar()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldLongVarchar();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldName <em>Field Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Name</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldName()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldNumeric <em>Field Numeric</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Numeric</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldNumeric()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldNumeric();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldObject <em>Field Object</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Object</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldObject()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldObject();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldShortVarchar <em>Field Short Varchar</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Short Varchar</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldShortVarchar()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldShortVarchar();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldTelNumber <em>Field Tel Number</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Tel Number</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldTelNumber()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldTelNumber();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldTime <em>Field Time</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Time</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldTime()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldTime();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldUrl <em>Field Url</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Url</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldUrl()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldUrl();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldValue <em>Field Value</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Value</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldValue()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldValue();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldVeryLong <em>Field Very Long</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Very Long</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldVeryLong()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldVeryLong();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldVeryShort <em>Field Very Short</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Field Very Short</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestEntity#getFieldVeryShort()
+	 * @see #getTestEntity()
+	 * @generated
+	 */
+	EAttribute getTestEntity_FieldVeryShort();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.entity.test.TestFieldType <em>Field Type</em>}'.
@@ -1674,6 +2299,240 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 */
 	interface Literals {
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.entity.test.impl.TestEntityImpl <em>Entity</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.model.entity.test.impl.TestEntityImpl
+		 * @see org.abchip.mimo.biz.model.entity.test.impl.TestPackageImpl#getTestEntity()
+		 * @generated
+		 */
+		EClass TEST_ENTITY = eINSTANCE.getTestEntity();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_ID = eINSTANCE.getTestEntity_FieldId();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Blob</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_BLOB = eINSTANCE.getTestEntity_FieldBlob();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Byte Array</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_BYTE_ARRAY = eINSTANCE.getTestEntity_FieldByteArray();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Comment</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_COMMENT = eINSTANCE.getTestEntity_FieldComment();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Credit Card Date</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_CREDIT_CARD_DATE = eINSTANCE.getTestEntity_FieldCreditCardDate();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Credit Card Number</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_CREDIT_CARD_NUMBER = eINSTANCE.getTestEntity_FieldCreditCardNumber();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Currency Amount</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_CURRENCY_AMOUNT = eINSTANCE.getTestEntity_FieldCurrencyAmount();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Currency Precise</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_CURRENCY_PRECISE = eINSTANCE.getTestEntity_FieldCurrencyPrecise();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Date</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_DATE = eINSTANCE.getTestEntity_FieldDate();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Date Time</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_DATE_TIME = eINSTANCE.getTestEntity_FieldDateTime();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Description</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_DESCRIPTION = eINSTANCE.getTestEntity_FieldDescription();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Email</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_EMAIL = eINSTANCE.getTestEntity_FieldEmail();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Fixed Point</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_FIXED_POINT = eINSTANCE.getTestEntity_FieldFixedPoint();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Floating Point</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_FLOATING_POINT = eINSTANCE.getTestEntity_FieldFloatingPoint();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Id Long</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_ID_LONG = eINSTANCE.getTestEntity_FieldIdLong();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Id Vlong</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_ID_VLONG = eINSTANCE.getTestEntity_FieldIdVlong();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Indicator</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_INDICATOR = eINSTANCE.getTestEntity_FieldIndicator();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Long Varchar</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_LONG_VARCHAR = eINSTANCE.getTestEntity_FieldLongVarchar();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_NAME = eINSTANCE.getTestEntity_FieldName();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Numeric</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_NUMERIC = eINSTANCE.getTestEntity_FieldNumeric();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Object</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_OBJECT = eINSTANCE.getTestEntity_FieldObject();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Short Varchar</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_SHORT_VARCHAR = eINSTANCE.getTestEntity_FieldShortVarchar();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Tel Number</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_TEL_NUMBER = eINSTANCE.getTestEntity_FieldTelNumber();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Time</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_TIME = eINSTANCE.getTestEntity_FieldTime();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Url</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_URL = eINSTANCE.getTestEntity_FieldUrl();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Value</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_VALUE = eINSTANCE.getTestEntity_FieldValue();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Very Long</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_VERY_LONG = eINSTANCE.getTestEntity_FieldVeryLong();
+
+		/**
+		 * The meta object literal for the '<em><b>Field Very Short</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute TEST_ENTITY__FIELD_VERY_SHORT = eINSTANCE.getTestEntity_FieldVeryShort();
+
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.entity.test.impl.TestFieldTypeImpl <em>Field Type</em>}' class.
 		 * <!-- begin-user-doc -->

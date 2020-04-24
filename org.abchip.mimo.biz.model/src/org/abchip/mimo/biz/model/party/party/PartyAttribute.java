@@ -40,7 +40,7 @@ public interface PartyAttribute extends BizEntity {
 	 * @return the value of the '<em>Attr Description</em>' attribute.
 	 * @see #setAttrDescription(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyAttribute_AttrDescription()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getAttrDescription();

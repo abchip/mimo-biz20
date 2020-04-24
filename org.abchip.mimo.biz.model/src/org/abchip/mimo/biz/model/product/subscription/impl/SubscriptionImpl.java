@@ -37,7 +37,7 @@ import org.eclipse.emf.ecore.EClass;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionImpl#getSubscriptionId <em>Subscription Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionImpl#isAutomaticExtend <em>Automatic Extend</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionImpl#getAutomaticExtend <em>Automatic Extend</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionImpl#getAvailableTime <em>Available Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionImpl#getAvailableTimeUomId <em>Available Time Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionImpl#getCanclAutmExtTime <em>Cancl Autm Ext Time</em>}</li>
@@ -810,7 +810,7 @@ public class SubscriptionImpl extends BizEntityTypedImpl<SubscriptionType> imple
 	 * @generated
 	 */
 	@Override
-	public boolean isAutomaticExtend() {
+	public Boolean getAutomaticExtend() {
 		return (Boolean)eGet(SubscriptionPackage.Literals.SUBSCRIPTION__AUTOMATIC_EXTEND, true);
 	}
 
@@ -820,7 +820,7 @@ public class SubscriptionImpl extends BizEntityTypedImpl<SubscriptionType> imple
 	 * @generated
 	 */
 	@Override
-	public void setAutomaticExtend(boolean newAutomaticExtend) {
+	public void setAutomaticExtend(Boolean newAutomaticExtend) {
 		eSet(SubscriptionPackage.Literals.SUBSCRIPTION__AUTOMATIC_EXTEND, newAutomaticExtend);
 	}
 

@@ -40,7 +40,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getCustRequestItemSeqId <em>Cust Request Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getDeliverableTypeId <em>Deliverable Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getEstimatedDeliveryDate <em>Estimated Delivery Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#isIsPromo <em>Is Promo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getIsPromo <em>Is Promo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getLeadTimeDays <em>Lead Time Days</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getProductFeatureId <em>Product Feature Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl#getProductId <em>Product Id</em>}</li>
@@ -208,7 +208,7 @@ public class QuoteItemImpl extends BizEntityImpl implements QuoteItem {
 	 * @generated
 	 */
 	@Override
-	public boolean isIsPromo() {
+	public Boolean getIsPromo() {
 		return (Boolean)eGet(QuotePackage.Literals.QUOTE_ITEM__IS_PROMO, true);
 	}
 
@@ -218,7 +218,7 @@ public class QuoteItemImpl extends BizEntityImpl implements QuoteItem {
 	 * @generated
 	 */
 	@Override
-	public void setIsPromo(boolean newIsPromo) {
+	public void setIsPromo(Boolean newIsPromo) {
 		eSet(QuotePackage.Literals.QUOTE_ITEM__IS_PROMO, newIsPromo);
 	}
 

@@ -1758,8 +1758,7 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 		  (getJobManagerLock_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getJobManagerLock_CreatedByUserLogin(),
@@ -1797,8 +1796,7 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 		  (getJobSandbox_JobName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getJobSandbox_JobResult(),
@@ -1810,8 +1808,7 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 		  (getJobSandbox_LoaderName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getJobSandbox_MaxRecurrenceCount(),
@@ -1837,8 +1834,7 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 		  (getJobSandbox_PoolId(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getJobSandbox_PreviousJobId(),
@@ -1856,8 +1852,7 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 		  (getJobSandbox_ServiceName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getRecurrenceInfo_RecurrenceInfoId(),
@@ -1920,8 +1915,7 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 		  (getTemporalExpression_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getTemporalExpression_Integer1(),

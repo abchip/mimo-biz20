@@ -44,7 +44,7 @@ public interface WorkEffortStatus extends BizEntity {
 	 * @return the value of the '<em>Reason</em>' attribute.
 	 * @see #setReason(String)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortStatus_Reason()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getReason();

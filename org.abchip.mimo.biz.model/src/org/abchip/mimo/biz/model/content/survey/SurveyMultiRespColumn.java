@@ -41,7 +41,7 @@ public interface SurveyMultiRespColumn extends BizEntity {
 	 * @return the value of the '<em>Column Title</em>' attribute.
 	 * @see #setColumnTitle(String)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyMultiRespColumn_ColumnTitle()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getColumnTitle();

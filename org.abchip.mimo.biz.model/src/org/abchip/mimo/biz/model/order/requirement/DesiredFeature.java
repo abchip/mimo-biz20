@@ -21,7 +21,7 @@ import org.abchip.mimo.biz.model.product.feature.ProductFeature;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.DesiredFeature#getRequirementId <em>Requirement Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.DesiredFeature#getDesiredFeatureId <em>Desired Feature Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.requirement.DesiredFeature#isOptionalInd <em>Optional Ind</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.DesiredFeature#getOptionalInd <em>Optional Ind</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.DesiredFeature#getProductFeatureId <em>Product Feature Id</em>}</li>
  * </ul>
  *
@@ -61,28 +61,24 @@ public interface DesiredFeature extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Optional Ind</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Optional Ind</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Optional Ind</em>' attribute.
-	 * @see #setOptionalInd(boolean)
+	 * @see #setOptionalInd(Boolean)
 	 * @see org.abchip.mimo.biz.model.order.requirement.RequirementPackage#getDesiredFeature_OptionalInd()
 	 * @model
 	 * @generated
 	 */
-	boolean isOptionalInd();
+	Boolean getOptionalInd();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.DesiredFeature#isOptionalInd <em>Optional Ind</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.requirement.DesiredFeature#getOptionalInd <em>Optional Ind</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Optional Ind</em>' attribute.
-	 * @see #isOptionalInd()
+	 * @see #getOptionalInd()
 	 * @generated
 	 */
-	void setOptionalInd(boolean value);
+	void setOptionalInd(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Feature Id</b></em>' reference.

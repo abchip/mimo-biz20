@@ -144,7 +144,7 @@ public class CreateSalesInvoice implements Callable<Long> {
 		invoiceItem.setProductId(productPrice.getProductId());
 		invoiceItem.setDescription(productPrice.getProductId().getProductName());
 		invoiceItem.setQuantity(new BigDecimal(quantity));
-		invoiceItem.setTaxableFlag(productPrice.getProductId().isTaxable());
+		invoiceItem.setTaxableFlag(productPrice.getProductId().getTaxable());
 		invoiceItem.setAmount(productPrice.getPrice());
 
 		invoiceItemWriter.create(invoiceItem);

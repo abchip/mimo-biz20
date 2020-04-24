@@ -25,7 +25,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getOriginUserLoginId <em>Origin User Login Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getPartyId <em>Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getPasswordUsed <em>Password Used</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#isSuccessfulLogin <em>Successful Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getSuccessfulLogin <em>Successful Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getVisitId <em>Visit Id</em>}</li>
  * </ul>
@@ -144,28 +144,24 @@ public interface UserLoginHistory extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Successful Login</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Successful Login</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Successful Login</em>' attribute.
-	 * @see #setSuccessfulLogin(boolean)
+	 * @see #setSuccessfulLogin(Boolean)
 	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLoginHistory_SuccessfulLogin()
 	 * @model
 	 * @generated
 	 */
-	boolean isSuccessfulLogin();
+	Boolean getSuccessfulLogin();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#isSuccessfulLogin <em>Successful Login</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getSuccessfulLogin <em>Successful Login</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Successful Login</em>' attribute.
-	 * @see #isSuccessfulLogin()
+	 * @see #getSuccessfulLogin()
 	 * @generated
 	 */
-	void setSuccessfulLogin(boolean value);
+	void setSuccessfulLogin(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Thru Date</b></em>' attribute.

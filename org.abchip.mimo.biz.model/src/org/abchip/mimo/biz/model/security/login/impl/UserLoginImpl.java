@@ -31,10 +31,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getCurrentPassword <em>Current Password</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getDisabledBy <em>Disabled By</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getDisabledDateTime <em>Disabled Date Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#isEnabled <em>Enabled</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getEnabled <em>Enabled</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getExternalAuthId <em>External Auth Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#isHasLoggedOut <em>Has Logged Out</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#isIsSystem <em>Is System</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getHasLoggedOut <em>Has Logged Out</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getIsSystem <em>Is System</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getLastCurrencyUom <em>Last Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getLastLocale <em>Last Locale</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getLastTimeZone <em>Last Time Zone</em>}</li>
@@ -142,7 +142,7 @@ public class UserLoginImpl extends BizEntityImpl implements UserLogin {
 	 * @generated
 	 */
 	@Override
-	public boolean isEnabled() {
+	public Boolean getEnabled() {
 		return (Boolean)eGet(LoginPackage.Literals.USER_LOGIN__ENABLED, true);
 	}
 
@@ -152,7 +152,7 @@ public class UserLoginImpl extends BizEntityImpl implements UserLogin {
 	 * @generated
 	 */
 	@Override
-	public void setEnabled(boolean newEnabled) {
+	public void setEnabled(Boolean newEnabled) {
 		eSet(LoginPackage.Literals.USER_LOGIN__ENABLED, newEnabled);
 	}
 
@@ -182,7 +182,7 @@ public class UserLoginImpl extends BizEntityImpl implements UserLogin {
 	 * @generated
 	 */
 	@Override
-	public boolean isHasLoggedOut() {
+	public Boolean getHasLoggedOut() {
 		return (Boolean)eGet(LoginPackage.Literals.USER_LOGIN__HAS_LOGGED_OUT, true);
 	}
 
@@ -192,7 +192,7 @@ public class UserLoginImpl extends BizEntityImpl implements UserLogin {
 	 * @generated
 	 */
 	@Override
-	public void setHasLoggedOut(boolean newHasLoggedOut) {
+	public void setHasLoggedOut(Boolean newHasLoggedOut) {
 		eSet(LoginPackage.Literals.USER_LOGIN__HAS_LOGGED_OUT, newHasLoggedOut);
 	}
 
@@ -202,7 +202,7 @@ public class UserLoginImpl extends BizEntityImpl implements UserLogin {
 	 * @generated
 	 */
 	@Override
-	public boolean isIsSystem() {
+	public Boolean getIsSystem() {
 		return (Boolean)eGet(LoginPackage.Literals.USER_LOGIN__IS_SYSTEM, true);
 	}
 
@@ -212,7 +212,7 @@ public class UserLoginImpl extends BizEntityImpl implements UserLogin {
 	 * @generated
 	 */
 	@Override
-	public void setIsSystem(boolean newIsSystem) {
+	public void setIsSystem(Boolean newIsSystem) {
 		eSet(LoginPackage.Literals.USER_LOGIN__IS_SYSTEM, newIsSystem);
 	}
 

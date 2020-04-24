@@ -1545,11 +1545,11 @@ public interface SubscriptionPackage extends EPackage {
 	EAttribute getSubscription_SubscriptionId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#isAutomaticExtend <em>Automatic Extend</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getAutomaticExtend <em>Automatic Extend</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Automatic Extend</em>'.
-	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#isAutomaticExtend()
+	 * @see org.abchip.mimo.biz.model.product.subscription.Subscription#getAutomaticExtend()
 	 * @see #getSubscription()
 	 * @generated
 	 */

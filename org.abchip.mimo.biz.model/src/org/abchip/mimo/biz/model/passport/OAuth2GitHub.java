@@ -152,7 +152,7 @@ public interface OAuth2GitHub extends BizEntity {
 	 * @return the value of the '<em>Icon Url</em>' attribute.
 	 * @see #setIconUrl(String)
 	 * @see org.abchip.mimo.biz.model.passport.PassportPackage#getOAuth2GitHub_IconUrl()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getIconUrl();

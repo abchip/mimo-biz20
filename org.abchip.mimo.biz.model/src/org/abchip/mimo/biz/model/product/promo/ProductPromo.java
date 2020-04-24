@@ -230,7 +230,7 @@ public interface ProductPromo extends BizEntity {
 	 * @return the value of the '<em>Promo Name</em>' attribute.
 	 * @see #setPromoName(String)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromo_PromoName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getPromoName();
@@ -256,7 +256,7 @@ public interface ProductPromo extends BizEntity {
 	 * @return the value of the '<em>Promo Text</em>' attribute.
 	 * @see #setPromoText(String)
 	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromo_PromoText()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getPromoText();

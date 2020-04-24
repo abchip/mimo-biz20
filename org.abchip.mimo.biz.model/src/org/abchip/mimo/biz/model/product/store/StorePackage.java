@@ -3539,22 +3539,22 @@ public interface StorePackage extends EPackage {
 	EAttribute getProductStore_OldStyleSheet();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.store.ProductStore#isOneInventoryFacility <em>One Inventory Facility</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getOneInventoryFacility <em>One Inventory Facility</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>One Inventory Facility</em>'.
-	 * @see org.abchip.mimo.biz.model.product.store.ProductStore#isOneInventoryFacility()
+	 * @see org.abchip.mimo.biz.model.product.store.ProductStore#getOneInventoryFacility()
 	 * @see #getProductStore()
 	 * @generated
 	 */
 	EAttribute getProductStore_OneInventoryFacility();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.store.ProductStore#isOrderDecimalQuantity <em>Order Decimal Quantity</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getOrderDecimalQuantity <em>Order Decimal Quantity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Order Decimal Quantity</em>'.
-	 * @see org.abchip.mimo.biz.model.product.store.ProductStore#isOrderDecimalQuantity()
+	 * @see org.abchip.mimo.biz.model.product.store.ProductStore#getOrderDecimalQuantity()
 	 * @see #getProductStore()
 	 * @generated
 	 */
@@ -3649,11 +3649,11 @@ public interface StorePackage extends EPackage {
 	EAttribute getProductStore_ProrateTaxes();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.store.ProductStore#isReqReturnInventoryReceive <em>Req Return Inventory Receive</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getReqReturnInventoryReceive <em>Req Return Inventory Receive</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Req Return Inventory Receive</em>'.
-	 * @see org.abchip.mimo.biz.model.product.store.ProductStore#isReqReturnInventoryReceive()
+	 * @see org.abchip.mimo.biz.model.product.store.ProductStore#getReqReturnInventoryReceive()
 	 * @see #getProductStore()
 	 * @generated
 	 */
@@ -3748,11 +3748,11 @@ public interface StorePackage extends EPackage {
 	EAttribute getProductStore_SelectPaymentTypePerItem();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.store.ProductStore#isSetOwnerUponIssuance <em>Set Owner Upon Issuance</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getSetOwnerUponIssuance <em>Set Owner Upon Issuance</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Set Owner Upon Issuance</em>'.
-	 * @see org.abchip.mimo.biz.model.product.store.ProductStore#isSetOwnerUponIssuance()
+	 * @see org.abchip.mimo.biz.model.product.store.ProductStore#getSetOwnerUponIssuance()
 	 * @see #getProductStore()
 	 * @generated
 	 */
@@ -4228,11 +4228,11 @@ public interface StorePackage extends EPackage {
 	EAttribute getProductStoreFinActSetting_AccountValidDays();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#isAllowAuthToNegative <em>Allow Auth To Negative</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getAllowAuthToNegative <em>Allow Auth To Negative</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Allow Auth To Negative</em>'.
-	 * @see org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#isAllowAuthToNegative()
+	 * @see org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getAllowAuthToNegative()
 	 * @see #getProductStoreFinActSetting()
 	 * @generated
 	 */
@@ -4327,22 +4327,22 @@ public interface StorePackage extends EPackage {
 	EAttribute getProductStoreFinActSetting_ReplenishThreshold();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#isRequirePinCode <em>Require Pin Code</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getRequirePinCode <em>Require Pin Code</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Require Pin Code</em>'.
-	 * @see org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#isRequirePinCode()
+	 * @see org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getRequirePinCode()
 	 * @see #getProductStoreFinActSetting()
 	 * @generated
 	 */
 	EAttribute getProductStoreFinActSetting_RequirePinCode();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#isValidateGCFinAcct <em>Validate GC Fin Acct</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getValidateGCFinAcct <em>Validate GC Fin Acct</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Validate GC Fin Acct</em>'.
-	 * @see org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#isValidateGCFinAcct()
+	 * @see org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting#getValidateGCFinAcct()
 	 * @see #getProductStoreFinActSetting()
 	 * @generated
 	 */
@@ -4836,11 +4836,11 @@ public interface StorePackage extends EPackage {
 	EAttribute getProductStorePromoAppl_FromDate();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.store.ProductStorePromoAppl#isManualOnly <em>Manual Only</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.store.ProductStorePromoAppl#getManualOnly <em>Manual Only</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Manual Only</em>'.
-	 * @see org.abchip.mimo.biz.model.product.store.ProductStorePromoAppl#isManualOnly()
+	 * @see org.abchip.mimo.biz.model.product.store.ProductStorePromoAppl#getManualOnly()
 	 * @see #getProductStorePromoAppl()
 	 * @generated
 	 */

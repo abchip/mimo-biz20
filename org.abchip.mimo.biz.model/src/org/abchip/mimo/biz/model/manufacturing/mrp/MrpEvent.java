@@ -27,7 +27,8 @@ import org.abchip.mimo.biz.model.product.product.Product;
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getMrpId <em>Mrp Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getEventName <em>Event Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getFacilityId <em>Facility Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#isIsLate <em>Is Late</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getFacilityIdTo <em>Facility Id To</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getIsLate <em>Is Late</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getQuantity <em>Quantity</em>}</li>
  * </ul>
  *
@@ -172,32 +173,6 @@ public interface MrpEvent extends BizEntity {
 	void setEventName(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Is Late</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Late</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Is Late</em>' attribute.
-	 * @see #setIsLate(boolean)
-	 * @see org.abchip.mimo.biz.model.manufacturing.mrp.MrpPackage#getMrpEvent_IsLate()
-	 * @model
-	 * @generated
-	 */
-	boolean isIsLate();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#isIsLate <em>Is Late</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Is Late</em>' attribute.
-	 * @see #isIsLate()
-	 * @generated
-	 */
-	void setIsLate(boolean value);
-
-	/**
 	 * Returns the value of the '<em><b>Facility Id</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -222,6 +197,50 @@ public interface MrpEvent extends BizEntity {
 	 * @generated
 	 */
 	void setFacilityId(Facility value);
+
+	/**
+	 * Returns the value of the '<em><b>Facility Id To</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Facility Id To</em>' attribute.
+	 * @see #setFacilityIdTo(String)
+	 * @see org.abchip.mimo.biz.model.manufacturing.mrp.MrpPackage#getMrpEvent_FacilityIdTo()
+	 * @model annotation="mimo-ent-format length='20'"
+	 * @generated
+	 */
+	String getFacilityIdTo();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getFacilityIdTo <em>Facility Id To</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Facility Id To</em>' attribute.
+	 * @see #getFacilityIdTo()
+	 * @generated
+	 */
+	void setFacilityIdTo(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Is Late</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Is Late</em>' attribute.
+	 * @see #setIsLate(Boolean)
+	 * @see org.abchip.mimo.biz.model.manufacturing.mrp.MrpPackage#getMrpEvent_IsLate()
+	 * @model
+	 * @generated
+	 */
+	Boolean getIsLate();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getIsLate <em>Is Late</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Is Late</em>' attribute.
+	 * @see #getIsLate()
+	 * @generated
+	 */
+	void setIsLate(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Quantity</b></em>' attribute.

@@ -219,7 +219,7 @@ public interface JobSandbox extends BizEntity {
 	 * @return the value of the '<em>Job Name</em>' attribute.
 	 * @see #setJobName(String)
 	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox_JobName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getJobName();
@@ -271,7 +271,7 @@ public interface JobSandbox extends BizEntity {
 	 * @return the value of the '<em>Loader Name</em>' attribute.
 	 * @see #setLoaderName(String)
 	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox_LoaderName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getLoaderName();
@@ -375,7 +375,7 @@ public interface JobSandbox extends BizEntity {
 	 * @return the value of the '<em>Pool Id</em>' attribute.
 	 * @see #setPoolId(String)
 	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox_PoolId()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getPoolId();
@@ -558,7 +558,7 @@ public interface JobSandbox extends BizEntity {
 	 * @return the value of the '<em>Service Name</em>' attribute.
 	 * @see #setServiceName(String)
 	 * @see org.abchip.mimo.biz.model.service.schedule.SchedulePackage#getJobSandbox_ServiceName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getServiceName();

@@ -955,8 +955,7 @@ public class ThemePackageImpl extends EPackageImpl implements ThemePackage {
 		  (getVisualTheme_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getVisualThemeResource_SequenceId(),
@@ -980,8 +979,7 @@ public class ThemePackageImpl extends EPackageImpl implements ThemePackage {
 		  (getVisualThemeSet_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

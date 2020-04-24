@@ -43,7 +43,7 @@ public interface PartyRelationshipType extends BizEntityType<PartyRelationship> 
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationshipType_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -95,7 +95,7 @@ public interface PartyRelationshipType extends BizEntityType<PartyRelationship> 
 	 * @return the value of the '<em>Party Relationship Name</em>' attribute.
 	 * @see #setPartyRelationshipName(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationshipType_PartyRelationshipName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getPartyRelationshipName();

@@ -34,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryImpl#getPrimaryParentCategoryId <em>Primary Parent Category Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryImpl#getProductCategoryAttributes <em>Product Category Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryImpl#getProductCategoryTypeId <em>Product Category Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryImpl#isShowInSelect <em>Show In Select</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryImpl#getShowInSelect <em>Show In Select</em>}</li>
  * </ul>
  *
  * @generated
@@ -210,26 +210,6 @@ public class ProductCategoryImpl extends BizEntityTypedImpl<ProductCategoryType>
 	 * @generated
 	 */
 	@Override
-	public boolean isShowInSelect() {
-		return (Boolean)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY__SHOW_IN_SELECT, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setShowInSelect(boolean newShowInSelect) {
-		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY__SHOW_IN_SELECT, newShowInSelect);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public ProductCategoryType getProductCategoryTypeId() {
 		return (ProductCategoryType)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRODUCT_CATEGORY_TYPE_ID, true);
 	}
@@ -242,6 +222,26 @@ public class ProductCategoryImpl extends BizEntityTypedImpl<ProductCategoryType>
 	@Override
 	public void setProductCategoryTypeId(ProductCategoryType newProductCategoryTypeId) {
 		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY__PRODUCT_CATEGORY_TYPE_ID, newProductCategoryTypeId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Boolean getShowInSelect() {
+		return (Boolean)eGet(CategoryPackage.Literals.PRODUCT_CATEGORY__SHOW_IN_SELECT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setShowInSelect(Boolean newShowInSelect) {
+		eSet(CategoryPackage.Literals.PRODUCT_CATEGORY__SHOW_IN_SELECT, newShowInSelect);
 	}
 
 	/**

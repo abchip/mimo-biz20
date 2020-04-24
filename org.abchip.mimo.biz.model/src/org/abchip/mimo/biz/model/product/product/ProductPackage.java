@@ -3485,11 +3485,11 @@ public interface ProductPackage extends EPackage {
 	EReference getProduct_AmountUomTypeId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.Product#isAutoCreateKeywords <em>Auto Create Keywords</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.Product#getAutoCreateKeywords <em>Auto Create Keywords</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Auto Create Keywords</em>'.
-	 * @see org.abchip.mimo.biz.model.product.product.Product#isAutoCreateKeywords()
+	 * @see org.abchip.mimo.biz.model.product.product.Product#getAutoCreateKeywords()
 	 * @see #getProduct()
 	 * @generated
 	 */
@@ -3518,11 +3518,11 @@ public interface ProductPackage extends EPackage {
 	EAttribute getProduct_BrandName();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.Product#isChargeShipping <em>Charge Shipping</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.Product#getChargeShipping <em>Charge Shipping</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Charge Shipping</em>'.
-	 * @see org.abchip.mimo.biz.model.product.product.Product#isChargeShipping()
+	 * @see org.abchip.mimo.biz.model.product.product.Product#getChargeShipping()
 	 * @see #getProduct()
 	 * @generated
 	 */
@@ -3694,11 +3694,11 @@ public interface ProductPackage extends EPackage {
 	EAttribute getProduct_InShippingBox();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.Product#isIncludeInPromotions <em>Include In Promotions</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.Product#getIncludeInPromotions <em>Include In Promotions</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Include In Promotions</em>'.
-	 * @see org.abchip.mimo.biz.model.product.product.Product#isIncludeInPromotions()
+	 * @see org.abchip.mimo.biz.model.product.product.Product#getIncludeInPromotions()
 	 * @see #getProduct()
 	 * @generated
 	 */
@@ -3837,11 +3837,11 @@ public interface ProductPackage extends EPackage {
 	EAttribute getProduct_MediumImageUrl();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.Product#isOrderDecimalQuantity <em>Order Decimal Quantity</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.Product#getOrderDecimalQuantity <em>Order Decimal Quantity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Order Decimal Quantity</em>'.
-	 * @see org.abchip.mimo.biz.model.product.product.Product#isOrderDecimalQuantity()
+	 * @see org.abchip.mimo.biz.model.product.product.Product#getOrderDecimalQuantity()
 	 * @see #getProduct()
 	 * @generated
 	 */
@@ -4090,22 +4090,22 @@ public interface ProductPackage extends EPackage {
 	EAttribute getProduct_ReleaseDate();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.Product#isRequireAmount <em>Require Amount</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.Product#getRequireAmount <em>Require Amount</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Require Amount</em>'.
-	 * @see org.abchip.mimo.biz.model.product.product.Product#isRequireAmount()
+	 * @see org.abchip.mimo.biz.model.product.product.Product#getRequireAmount()
 	 * @see #getProduct()
 	 * @generated
 	 */
 	EAttribute getProduct_RequireAmount();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.Product#isRequireInventory <em>Require Inventory</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.Product#getRequireInventory <em>Require Inventory</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Require Inventory</em>'.
-	 * @see org.abchip.mimo.biz.model.product.product.Product#isRequireInventory()
+	 * @see org.abchip.mimo.biz.model.product.product.Product#getRequireInventory()
 	 * @see #getProduct()
 	 * @generated
 	 */
@@ -4156,22 +4156,22 @@ public interface ProductPackage extends EPackage {
 	EAttribute getProduct_ReservNthPPPerc();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.Product#isReturnable <em>Returnable</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.Product#getReturnable <em>Returnable</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Returnable</em>'.
-	 * @see org.abchip.mimo.biz.model.product.product.Product#isReturnable()
+	 * @see org.abchip.mimo.biz.model.product.product.Product#getReturnable()
 	 * @see #getProduct()
 	 * @generated
 	 */
 	EAttribute getProduct_Returnable();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.Product#isSalesDiscWhenNotAvail <em>Sales Disc When Not Avail</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.Product#getSalesDiscWhenNotAvail <em>Sales Disc When Not Avail</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Sales Disc When Not Avail</em>'.
-	 * @see org.abchip.mimo.biz.model.product.product.Product#isSalesDiscWhenNotAvail()
+	 * @see org.abchip.mimo.biz.model.product.product.Product#getSalesDiscWhenNotAvail()
 	 * @see #getProduct()
 	 * @generated
 	 */
@@ -4255,11 +4255,11 @@ public interface ProductPackage extends EPackage {
 	EAttribute getProduct_SupportDiscontinuationDate();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.Product#isTaxable <em>Taxable</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.Product#getTaxable <em>Taxable</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Taxable</em>'.
-	 * @see org.abchip.mimo.biz.model.product.product.Product#isTaxable()
+	 * @see org.abchip.mimo.biz.model.product.product.Product#getTaxable()
 	 * @see #getProduct()
 	 * @generated
 	 */
@@ -5362,11 +5362,11 @@ public interface ProductPackage extends EPackage {
 	EAttribute getProductReview_ProductReviewId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.ProductReview#isPostedAnonymous <em>Posted Anonymous</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.ProductReview#getPostedAnonymous <em>Posted Anonymous</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Posted Anonymous</em>'.
-	 * @see org.abchip.mimo.biz.model.product.product.ProductReview#isPostedAnonymous()
+	 * @see org.abchip.mimo.biz.model.product.product.ProductReview#getPostedAnonymous()
 	 * @see #getProductReview()
 	 * @generated
 	 */
@@ -5613,11 +5613,11 @@ public interface ProductPackage extends EPackage {
 	EAttribute getProductSearchConstraint_HighValue();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.ProductSearchConstraint#isIncludeSubCategories <em>Include Sub Categories</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.ProductSearchConstraint#getIncludeSubCategories <em>Include Sub Categories</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Include Sub Categories</em>'.
-	 * @see org.abchip.mimo.biz.model.product.product.ProductSearchConstraint#isIncludeSubCategories()
+	 * @see org.abchip.mimo.biz.model.product.product.ProductSearchConstraint#getIncludeSubCategories()
 	 * @see #getProductSearchConstraint()
 	 * @generated
 	 */
@@ -5635,11 +5635,11 @@ public interface ProductPackage extends EPackage {
 	EAttribute getProductSearchConstraint_InfoString();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.ProductSearchConstraint#isIsAnd <em>Is And</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.ProductSearchConstraint#getIsAnd <em>Is And</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is And</em>'.
-	 * @see org.abchip.mimo.biz.model.product.product.ProductSearchConstraint#isIsAnd()
+	 * @see org.abchip.mimo.biz.model.product.product.ProductSearchConstraint#getIsAnd()
 	 * @see #getProductSearchConstraint()
 	 * @generated
 	 */
@@ -5657,11 +5657,11 @@ public interface ProductPackage extends EPackage {
 	EAttribute getProductSearchConstraint_LowValue();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.ProductSearchConstraint#isRemoveStems <em>Remove Stems</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.ProductSearchConstraint#getRemoveStems <em>Remove Stems</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Remove Stems</em>'.
-	 * @see org.abchip.mimo.biz.model.product.product.ProductSearchConstraint#isRemoveStems()
+	 * @see org.abchip.mimo.biz.model.product.product.ProductSearchConstraint#getRemoveStems()
 	 * @see #getProductSearchConstraint()
 	 * @generated
 	 */
@@ -5689,11 +5689,11 @@ public interface ProductPackage extends EPackage {
 	EAttribute getProductSearchResult_ProductSearchResultId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.ProductSearchResult#isIsAscending <em>Is Ascending</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.ProductSearchResult#getIsAscending <em>Is Ascending</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Ascending</em>'.
-	 * @see org.abchip.mimo.biz.model.product.product.ProductSearchResult#isIsAscending()
+	 * @see org.abchip.mimo.biz.model.product.product.ProductSearchResult#getIsAscending()
 	 * @see #getProductSearchResult()
 	 * @generated
 	 */
@@ -5809,22 +5809,22 @@ public interface ProductPackage extends EPackage {
 	EAttribute getProductType_HasTable();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.ProductType#isIsDigital <em>Is Digital</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.ProductType#getIsDigital <em>Is Digital</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Digital</em>'.
-	 * @see org.abchip.mimo.biz.model.product.product.ProductType#isIsDigital()
+	 * @see org.abchip.mimo.biz.model.product.product.ProductType#getIsDigital()
 	 * @see #getProductType()
 	 * @generated
 	 */
 	EAttribute getProductType_IsDigital();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.ProductType#isIsPhysical <em>Is Physical</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.ProductType#getIsPhysical <em>Is Physical</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Physical</em>'.
-	 * @see org.abchip.mimo.biz.model.product.product.ProductType#isIsPhysical()
+	 * @see org.abchip.mimo.biz.model.product.product.ProductType#getIsPhysical()
 	 * @see #getProductType()
 	 * @generated
 	 */

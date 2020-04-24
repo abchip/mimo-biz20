@@ -40,7 +40,7 @@ public interface SurveyPage extends BizEntity {
 	 * @return the value of the '<em>Page Name</em>' attribute.
 	 * @see #setPageName(String)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyPage_PageName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getPageName();

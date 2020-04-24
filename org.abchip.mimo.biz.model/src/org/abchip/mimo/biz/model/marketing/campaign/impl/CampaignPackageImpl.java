@@ -1296,8 +1296,7 @@ public class CampaignPackageImpl extends EPackageImpl implements CampaignPackage
 		  (getMarketingCampaign_CampaignName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getMarketingCampaign_ConvertedLeads(),

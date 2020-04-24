@@ -30,7 +30,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getMrpId <em>Mrp Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getEventName <em>Event Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getFacilityId <em>Facility Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#isIsLate <em>Is Late</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getFacilityIdTo <em>Facility Id To</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getIsLate <em>Is Late</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventImpl#getQuantity <em>Quantity</em>}</li>
  * </ul>
  *
@@ -167,26 +168,6 @@ public class MrpEventImpl extends BizEntityImpl implements MrpEvent {
 	 * @generated
 	 */
 	@Override
-	public boolean isIsLate() {
-		return (Boolean)eGet(MrpPackage.Literals.MRP_EVENT__IS_LATE, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setIsLate(boolean newIsLate) {
-		eSet(MrpPackage.Literals.MRP_EVENT__IS_LATE, newIsLate);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Facility getFacilityId() {
 		return (Facility)eGet(MrpPackage.Literals.MRP_EVENT__FACILITY_ID, true);
 	}
@@ -199,6 +180,46 @@ public class MrpEventImpl extends BizEntityImpl implements MrpEvent {
 	@Override
 	public void setFacilityId(Facility newFacilityId) {
 		eSet(MrpPackage.Literals.MRP_EVENT__FACILITY_ID, newFacilityId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getFacilityIdTo() {
+		return (String)eGet(MrpPackage.Literals.MRP_EVENT__FACILITY_ID_TO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFacilityIdTo(String newFacilityIdTo) {
+		eSet(MrpPackage.Literals.MRP_EVENT__FACILITY_ID_TO, newFacilityIdTo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Boolean getIsLate() {
+		return (Boolean)eGet(MrpPackage.Literals.MRP_EVENT__IS_LATE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setIsLate(Boolean newIsLate) {
+		eSet(MrpPackage.Literals.MRP_EVENT__IS_LATE, newIsLate);
 	}
 
 	/**

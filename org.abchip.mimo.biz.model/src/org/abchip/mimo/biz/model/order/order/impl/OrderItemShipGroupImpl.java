@@ -36,8 +36,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getEstimatedShipDate <em>Estimated Ship Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getFacilityId <em>Facility Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getGiftMessage <em>Gift Message</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#isIsGift <em>Is Gift</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#isMaySplit <em>May Split</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getIsGift <em>Is Gift</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getMaySplit <em>May Split</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getShipAfterDate <em>Ship After Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getShipByDate <em>Ship By Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemShipGroupImpl#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}</li>
@@ -222,7 +222,7 @@ public class OrderItemShipGroupImpl extends BizEntityImpl implements OrderItemSh
 	 * @generated
 	 */
 	@Override
-	public boolean isIsGift() {
+	public Boolean getIsGift() {
 		return (Boolean)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__IS_GIFT, true);
 	}
 
@@ -232,7 +232,7 @@ public class OrderItemShipGroupImpl extends BizEntityImpl implements OrderItemSh
 	 * @generated
 	 */
 	@Override
-	public void setIsGift(boolean newIsGift) {
+	public void setIsGift(Boolean newIsGift) {
 		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__IS_GIFT, newIsGift);
 	}
 
@@ -242,7 +242,7 @@ public class OrderItemShipGroupImpl extends BizEntityImpl implements OrderItemSh
 	 * @generated
 	 */
 	@Override
-	public boolean isMaySplit() {
+	public Boolean getMaySplit() {
 		return (Boolean)eGet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__MAY_SPLIT, true);
 	}
 
@@ -252,7 +252,7 @@ public class OrderItemShipGroupImpl extends BizEntityImpl implements OrderItemSh
 	 * @generated
 	 */
 	@Override
-	public void setMaySplit(boolean newMaySplit) {
+	public void setMaySplit(Boolean newMaySplit) {
 		eSet(OrderPackage.Literals.ORDER_ITEM_SHIP_GROUP__MAY_SPLIT, newMaySplit);
 	}
 

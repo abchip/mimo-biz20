@@ -40,6 +40,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getEstimatedBudget <em>Estimated Budget</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getFacilityId <em>Facility Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getFacilityIdTo <em>Facility Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getFixedAssetId <em>Fixed Asset Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
@@ -201,6 +202,26 @@ public class RequirementImpl extends BizEntityTypedImpl<RequirementType> impleme
 	@Override
 	public void setFacilityId(Facility newFacilityId) {
 		eSet(RequirementPackage.Literals.REQUIREMENT__FACILITY_ID, newFacilityId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String getFacilityIdTo() {
+		return (String)eGet(RequirementPackage.Literals.REQUIREMENT__FACILITY_ID_TO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFacilityIdTo(String newFacilityIdTo) {
+		eSet(RequirementPackage.Literals.REQUIREMENT__FACILITY_ID_TO, newFacilityIdTo);
 	}
 
 	/**

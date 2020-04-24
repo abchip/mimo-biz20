@@ -43,7 +43,7 @@ public interface TenantDataSource extends BizEntity {
 	 * @see org.abchip.mimo.biz.model.entity.tenant.TenantPackage#getTenantDataSource_EntityGroupName()
 	 * @model required="true"
 	 *        annotation="mimo-ent-slot key='true'"
-	 *        annotation="mimo-ent-format type='name' length='100'"
+	 *        annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getEntityGroupName();

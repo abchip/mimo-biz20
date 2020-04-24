@@ -637,11 +637,11 @@ public interface TenantPackage extends EPackage {
 	EAttribute getTenant_TenantId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.tenant.Tenant#isDisabled <em>Disabled</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.tenant.Tenant#getDisabled <em>Disabled</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Disabled</em>'.
-	 * @see org.abchip.mimo.biz.model.entity.tenant.Tenant#isDisabled()
+	 * @see org.abchip.mimo.biz.model.entity.tenant.Tenant#getDisabled()
 	 * @see #getTenant()
 	 * @generated
 	 */

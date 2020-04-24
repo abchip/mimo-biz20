@@ -19,15 +19,15 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.FtpAddressImpl#isBinaryTransfer <em>Binary Transfer</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.FtpAddressImpl#getBinaryTransfer <em>Binary Transfer</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.FtpAddressImpl#getDefaultTimeout <em>Default Timeout</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.FtpAddressImpl#getFilePath <em>File Path</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.FtpAddressImpl#getFtpPassword <em>Ftp Password</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.FtpAddressImpl#getHostname <em>Hostname</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.FtpAddressImpl#isPassiveMode <em>Passive Mode</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.FtpAddressImpl#getPassiveMode <em>Passive Mode</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.FtpAddressImpl#getPort <em>Port</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.FtpAddressImpl#getUsername <em>Username</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.FtpAddressImpl#isZipFile <em>Zip File</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.FtpAddressImpl#getZipFile <em>Zip File</em>}</li>
  * </ul>
  *
  * @generated
@@ -63,7 +63,7 @@ public class FtpAddressImpl extends ContactMechImpl implements FtpAddress {
 	 * @generated
 	 */
 	@Override
-	public boolean isBinaryTransfer() {
+	public Boolean getBinaryTransfer() {
 		return (Boolean)eGet(ContactPackage.Literals.FTP_ADDRESS__BINARY_TRANSFER, true);
 	}
 
@@ -73,7 +73,7 @@ public class FtpAddressImpl extends ContactMechImpl implements FtpAddress {
 	 * @generated
 	 */
 	@Override
-	public void setBinaryTransfer(boolean newBinaryTransfer) {
+	public void setBinaryTransfer(Boolean newBinaryTransfer) {
 		eSet(ContactPackage.Literals.FTP_ADDRESS__BINARY_TRANSFER, newBinaryTransfer);
 	}
 
@@ -163,7 +163,7 @@ public class FtpAddressImpl extends ContactMechImpl implements FtpAddress {
 	 * @generated
 	 */
 	@Override
-	public boolean isPassiveMode() {
+	public Boolean getPassiveMode() {
 		return (Boolean)eGet(ContactPackage.Literals.FTP_ADDRESS__PASSIVE_MODE, true);
 	}
 
@@ -173,7 +173,7 @@ public class FtpAddressImpl extends ContactMechImpl implements FtpAddress {
 	 * @generated
 	 */
 	@Override
-	public void setPassiveMode(boolean newPassiveMode) {
+	public void setPassiveMode(Boolean newPassiveMode) {
 		eSet(ContactPackage.Literals.FTP_ADDRESS__PASSIVE_MODE, newPassiveMode);
 	}
 
@@ -223,7 +223,7 @@ public class FtpAddressImpl extends ContactMechImpl implements FtpAddress {
 	 * @generated
 	 */
 	@Override
-	public boolean isZipFile() {
+	public Boolean getZipFile() {
 		return (Boolean)eGet(ContactPackage.Literals.FTP_ADDRESS__ZIP_FILE, true);
 	}
 
@@ -233,7 +233,7 @@ public class FtpAddressImpl extends ContactMechImpl implements FtpAddress {
 	 * @generated
 	 */
 	@Override
-	public void setZipFile(boolean newZipFile) {
+	public void setZipFile(Boolean newZipFile) {
 		eSet(ContactPackage.Literals.FTP_ADDRESS__ZIP_FILE, newZipFile);
 	}
 

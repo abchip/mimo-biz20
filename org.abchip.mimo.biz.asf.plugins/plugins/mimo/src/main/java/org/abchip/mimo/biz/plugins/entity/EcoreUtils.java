@@ -216,6 +216,7 @@ public class EcoreUtils {
 					name = name.substring(0, name.length() - 1);
 					try {
 						String message = UtilProperties.getMessage(resource, name, context, Locale.ENGLISH);
+						message = message.replaceAll("-", "_");
 						literal.setName(message);
 					} catch (Exception e) {
 						LOGGER.error(e.getMessage());
@@ -289,7 +290,7 @@ public class EcoreUtils {
 
 		EAttribute eAttribute = ecoreFactory.createEAttribute();
 		eAttribute.setName(modelField.getName());
-
+		
 		if (modelField.getIsPk()) {
 			if (modelField.getModelEntity().getPksSize() == 1)
 				eAttribute.setID(true);
@@ -351,6 +352,7 @@ public class EcoreUtils {
 		case "tel-number":
 		case "url":
 			addAnnotationKey(eAttribute, Slot.NS_PREFIX_FORMAT, "type", modelField.getType());
+			eAttribute.setEType(EcorePackage.eINSTANCE.getEString());
 			break;
 		// string
 		case "id-ne":
@@ -451,7 +453,10 @@ public class EcoreUtils {
 			eAttribute.setLowerBound(1);
 
 		if (isBoolean) {
-			eAttribute.setEType(EcorePackage.eINSTANCE.getEBoolean());
+			if (!allowEmpty)
+				eAttribute.setEType(EcorePackage.eINSTANCE.getEBoolean());
+			else
+				eAttribute.setEType(EcorePackage.eINSTANCE.getEBooleanObject());
 			if (defaulValue == Boolean.TRUE)
 				eAttribute.setDefaultValue(defaulValue);
 		} else {

@@ -397,11 +397,11 @@ public interface ShoppingcartPackage extends EPackage {
 	EAttribute getCartAbandonedLine_UnitPrice();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#isWasReserved <em>Was Reserved</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getWasReserved <em>Was Reserved</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Was Reserved</em>'.
-	 * @see org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#isWasReserved()
+	 * @see org.abchip.mimo.biz.model.order.shoppingcart.CartAbandonedLine#getWasReserved()
 	 * @see #getCartAbandonedLine()
 	 * @generated
 	 */

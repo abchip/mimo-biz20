@@ -2358,11 +2358,11 @@ public interface QuotePackage extends EPackage {
 	EAttribute getQuoteItem_EstimatedDeliveryDate();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#isIsPromo <em>Is Promo</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getIsPromo <em>Is Promo</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Promo</em>'.
-	 * @see org.abchip.mimo.biz.model.order.quote.QuoteItem#isIsPromo()
+	 * @see org.abchip.mimo.biz.model.order.quote.QuoteItem#getIsPromo()
 	 * @see #getQuoteItem()
 	 * @generated
 	 */

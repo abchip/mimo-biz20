@@ -55,7 +55,7 @@ public interface CreditCard extends PaymentMethod {
 	 * @see #setCardNumber(String)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getCreditCard_CardNumber()
 	 * @model annotation="mimo-ent-slot encrypt='TRUE'"
-	 *        annotation="mimo-ent-format type='credit-card-number' length='255'"
+	 *        annotation="mimo-ent-format type='credit-card-number'"
 	 * @generated
 	 */
 	String getCardNumber();
@@ -107,7 +107,7 @@ public interface CreditCard extends PaymentMethod {
 	 * @return the value of the '<em>Company Name On Card</em>' attribute.
 	 * @see #setCompanyNameOnCard(String)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getCreditCard_CompanyNameOnCard()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getCompanyNameOnCard();
@@ -212,7 +212,7 @@ public interface CreditCard extends PaymentMethod {
 	 * @return the value of the '<em>Expire Date</em>' attribute.
 	 * @see #setExpireDate(String)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getCreditCard_ExpireDate()
-	 * @model annotation="mimo-ent-format type='credit-card-date' length='7'"
+	 * @model annotation="mimo-ent-format type='credit-card-date'"
 	 * @generated
 	 */
 	String getExpireDate();
@@ -238,7 +238,7 @@ public interface CreditCard extends PaymentMethod {
 	 * @return the value of the '<em>First Name On Card</em>' attribute.
 	 * @see #setFirstNameOnCard(String)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getCreditCard_FirstNameOnCard()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getFirstNameOnCard();
@@ -265,7 +265,7 @@ public interface CreditCard extends PaymentMethod {
 	 * @see #setIssueNumber(String)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getCreditCard_IssueNumber()
 	 * @model annotation="mimo-ent-slot help='Single digit number on some Switch and Maestro cards'"
-	 *        annotation="mimo-ent-format type='credit-card-date' length='7'"
+	 *        annotation="mimo-ent-format type='credit-card-date'"
 	 * @generated
 	 */
 	String getIssueNumber();
@@ -343,7 +343,7 @@ public interface CreditCard extends PaymentMethod {
 	 * @return the value of the '<em>Last Name On Card</em>' attribute.
 	 * @see #setLastNameOnCard(String)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getCreditCard_LastNameOnCard()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getLastNameOnCard();
@@ -369,7 +369,7 @@ public interface CreditCard extends PaymentMethod {
 	 * @return the value of the '<em>Middle Name On Card</em>' attribute.
 	 * @see #setMiddleNameOnCard(String)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getCreditCard_MiddleNameOnCard()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getMiddleNameOnCard();
@@ -395,7 +395,7 @@ public interface CreditCard extends PaymentMethod {
 	 * @return the value of the '<em>Suffix On Card</em>' attribute.
 	 * @see #setSuffixOnCard(String)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getCreditCard_SuffixOnCard()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getSuffixOnCard();
@@ -421,7 +421,7 @@ public interface CreditCard extends PaymentMethod {
 	 * @return the value of the '<em>Title On Card</em>' attribute.
 	 * @see #setTitleOnCard(String)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getCreditCard_TitleOnCard()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getTitleOnCard();
@@ -448,7 +448,7 @@ public interface CreditCard extends PaymentMethod {
 	 * @see #setValidFromDate(String)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getCreditCard_ValidFromDate()
 	 * @model annotation="mimo-ent-slot help='Not common in some parts of the world.'"
-	 *        annotation="mimo-ent-format type='credit-card-date' length='7'"
+	 *        annotation="mimo-ent-format type='credit-card-date'"
 	 * @generated
 	 */
 	String getValidFromDate();

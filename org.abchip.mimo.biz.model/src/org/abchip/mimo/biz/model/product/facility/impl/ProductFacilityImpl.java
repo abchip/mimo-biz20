@@ -31,6 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityImpl#getLastInventoryCount <em>Last Inventory Count</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityImpl#getMinimumStock <em>Minimum Stock</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityImpl#getReorderQuantity <em>Reorder Quantity</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityImpl#getReplenishMethodEnumId <em>Replenish Method Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ProductFacilityImpl#getRequirementMethodEnumId <em>Requirement Method Enum Id</em>}</li>
  * </ul>
  *
@@ -159,6 +160,26 @@ public class ProductFacilityImpl extends BizEntityImpl implements ProductFacilit
 	@Override
 	public void setReorderQuantity(BigDecimal newReorderQuantity) {
 		eSet(FacilityPackage.Literals.PRODUCT_FACILITY__REORDER_QUANTITY, newReorderQuantity);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Enumeration getReplenishMethodEnumId() {
+		return (Enumeration)eGet(FacilityPackage.Literals.PRODUCT_FACILITY__REPLENISH_METHOD_ENUM_ID, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setReplenishMethodEnumId(Enumeration newReplenishMethodEnumId) {
+		eSet(FacilityPackage.Literals.PRODUCT_FACILITY__REPLENISH_METHOD_ENUM_ID, newReplenishMethodEnumId);
 	}
 
 	/**

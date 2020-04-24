@@ -60,6 +60,7 @@ public class TestFactoryImpl extends EFactoryImpl implements TestFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
+			case TestPackage.TEST_ENTITY: return (EObject)createTestEntity();
 			case TestPackage.TEST_FIELD_TYPE: return (EObject)createTestFieldType();
 			case TestPackage.TESTING: return (EObject)createTesting();
 			case TestPackage.TESTING_CRYPTO: return (EObject)createTestingCrypto();
@@ -73,6 +74,17 @@ public class TestFactoryImpl extends EFactoryImpl implements TestFactory {
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public TestEntity createTestEntity() {
+		TestEntityImpl testEntity = new TestEntityImpl();
+		return testEntity;
 	}
 
 	/**

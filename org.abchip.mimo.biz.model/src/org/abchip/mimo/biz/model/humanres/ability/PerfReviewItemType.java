@@ -40,7 +40,7 @@ public interface PerfReviewItemType extends BizEntityType<PerfReviewItem> {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.humanres.ability.AbilityPackage#getPerfReviewItemType_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();

@@ -1086,8 +1086,7 @@ public class DocumentPackageImpl extends EPackageImpl implements DocumentPackage
 		  (getDocument_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getDocument_DocumentLocation(),
@@ -1111,8 +1110,7 @@ public class DocumentPackageImpl extends EPackageImpl implements DocumentPackage
 		  (getDocumentAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getDocumentAttribute_AttrValue(),
@@ -1130,8 +1128,7 @@ public class DocumentPackageImpl extends EPackageImpl implements DocumentPackage
 		  (getDocumentType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getDocumentTypeAttr_AttrName(),
@@ -1143,8 +1140,7 @@ public class DocumentPackageImpl extends EPackageImpl implements DocumentPackage
 		  (getDocumentTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

@@ -39,7 +39,7 @@ public interface PaymentGroup extends BizEntityTyped<PaymentGroupType> {
 	 * @return the value of the '<em>Payment Group Name</em>' attribute.
 	 * @see #setPaymentGroupName(String)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGroup_PaymentGroupName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getPaymentGroupName();

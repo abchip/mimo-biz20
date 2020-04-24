@@ -21,7 +21,7 @@ import org.abchip.mimo.biz.BizEntity;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductSearchResult#getProductSearchResultId <em>Product Search Result Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductSearchResult#isIsAscending <em>Is Ascending</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductSearchResult#getIsAscending <em>Is Ascending</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductSearchResult#getNumResults <em>Num Results</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductSearchResult#getOrderByName <em>Order By Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductSearchResult#getProductSearchConstraints <em>Product Search Constraints</em>}</li>
@@ -211,27 +211,23 @@ public interface ProductSearchResult extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Is Ascending</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Ascending</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Ascending</em>' attribute.
-	 * @see #setIsAscending(boolean)
+	 * @see #setIsAscending(Boolean)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductSearchResult_IsAscending()
 	 * @model
 	 * @generated
 	 */
-	boolean isIsAscending();
+	Boolean getIsAscending();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductSearchResult#isIsAscending <em>Is Ascending</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductSearchResult#getIsAscending <em>Is Ascending</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is Ascending</em>' attribute.
-	 * @see #isIsAscending()
+	 * @see #getIsAscending()
 	 * @generated
 	 */
-	void setIsAscending(boolean value);
+	void setIsAscending(Boolean value);
 
 } // ProductSearchResult

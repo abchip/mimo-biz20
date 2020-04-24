@@ -37,7 +37,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getProductPromoActionEnumId <em>Product Promo Action Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getQuantity <em>Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getServiceName <em>Service Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#isUseCartQuantity <em>Use Cart Quantity</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl#getUseCartQuantity <em>Use Cart Quantity</em>}</li>
  * </ul>
  *
  * @generated
@@ -273,7 +273,7 @@ public class ProductPromoActionImpl extends BizEntityImpl implements ProductProm
 	 * @generated
 	 */
 	@Override
-	public boolean isUseCartQuantity() {
+	public Boolean getUseCartQuantity() {
 		return (Boolean)eGet(PromoPackage.Literals.PRODUCT_PROMO_ACTION__USE_CART_QUANTITY, true);
 	}
 
@@ -283,7 +283,7 @@ public class ProductPromoActionImpl extends BizEntityImpl implements ProductProm
 	 * @generated
 	 */
 	@Override
-	public void setUseCartQuantity(boolean newUseCartQuantity) {
+	public void setUseCartQuantity(Boolean newUseCartQuantity) {
 		eSet(PromoPackage.Literals.PRODUCT_PROMO_ACTION__USE_CART_QUANTITY, newUseCartQuantity);
 	}
 

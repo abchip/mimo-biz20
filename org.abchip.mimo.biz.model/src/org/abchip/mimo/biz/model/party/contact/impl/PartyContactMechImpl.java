@@ -27,13 +27,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getPartyId <em>Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getContactMechId <em>Contact Mech Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#isAllowSolicitation <em>Allow Solicitation</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getAllowSolicitation <em>Allow Solicitation</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getExtension <em>Extension</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getMonthsWithContactMech <em>Months With Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getRoleTypeId <em>Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getThruDate <em>Thru Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#isVerified <em>Verified</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getVerified <em>Verified</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.impl.PartyContactMechImpl#getYearsWithContactMech <em>Years With Contact Mech</em>}</li>
  * </ul>
  *
@@ -129,7 +129,7 @@ public class PartyContactMechImpl extends BizEntityImpl implements PartyContactM
 	 * @generated
 	 */
 	@Override
-	public boolean isAllowSolicitation() {
+	public Boolean getAllowSolicitation() {
 		return (Boolean)eGet(ContactPackage.Literals.PARTY_CONTACT_MECH__ALLOW_SOLICITATION, true);
 	}
 
@@ -139,7 +139,7 @@ public class PartyContactMechImpl extends BizEntityImpl implements PartyContactM
 	 * @generated
 	 */
 	@Override
-	public void setAllowSolicitation(boolean newAllowSolicitation) {
+	public void setAllowSolicitation(Boolean newAllowSolicitation) {
 		eSet(ContactPackage.Literals.PARTY_CONTACT_MECH__ALLOW_SOLICITATION, newAllowSolicitation);
 	}
 
@@ -229,7 +229,7 @@ public class PartyContactMechImpl extends BizEntityImpl implements PartyContactM
 	 * @generated
 	 */
 	@Override
-	public boolean isVerified() {
+	public Boolean getVerified() {
 		return (Boolean)eGet(ContactPackage.Literals.PARTY_CONTACT_MECH__VERIFIED, true);
 	}
 
@@ -239,7 +239,7 @@ public class PartyContactMechImpl extends BizEntityImpl implements PartyContactM
 	 * @generated
 	 */
 	@Override
-	public void setVerified(boolean newVerified) {
+	public void setVerified(Boolean newVerified) {
 		eSet(ContactPackage.Literals.PARTY_CONTACT_MECH__VERIFIED, newVerified);
 	}
 

@@ -10,9 +10,6 @@ package org.abchip.mimo.biz.model.webapp.visit.impl;
 import java.util.Date;
 
 import org.abchip.mimo.biz.impl.BizEntityImpl;
-import org.abchip.mimo.biz.model.content.content.Content;
-import org.abchip.mimo.biz.model.party.contact.ContactMech;
-import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.webapp.visit.ServerHit;
 import org.abchip.mimo.biz.model.webapp.visit.ServerHitType;
 import org.abchip.mimo.biz.model.webapp.visit.Visit;
@@ -158,8 +155,8 @@ public class ServerHitImpl extends BizEntityImpl implements ServerHit {
 	 * @generated
 	 */
 	@Override
-	public ContactMech getIdByIpContactMechId() {
-		return (ContactMech)eGet(VisitPackage.Literals.SERVER_HIT__ID_BY_IP_CONTACT_MECH_ID, true);
+	public String getIdByIpContactMechId() {
+		return (String)eGet(VisitPackage.Literals.SERVER_HIT__ID_BY_IP_CONTACT_MECH_ID, true);
 	}
 
 	/**
@@ -168,7 +165,7 @@ public class ServerHitImpl extends BizEntityImpl implements ServerHit {
 	 * @generated
 	 */
 	@Override
-	public void setIdByIpContactMechId(ContactMech newIdByIpContactMechId) {
+	public void setIdByIpContactMechId(String newIdByIpContactMechId) {
 		eSet(VisitPackage.Literals.SERVER_HIT__ID_BY_IP_CONTACT_MECH_ID, newIdByIpContactMechId);
 	}
 
@@ -178,8 +175,8 @@ public class ServerHitImpl extends BizEntityImpl implements ServerHit {
 	 * @generated
 	 */
 	@Override
-	public Content getInternalContentId() {
-		return (Content)eGet(VisitPackage.Literals.SERVER_HIT__INTERNAL_CONTENT_ID, true);
+	public String getInternalContentId() {
+		return (String)eGet(VisitPackage.Literals.SERVER_HIT__INTERNAL_CONTENT_ID, true);
 	}
 
 	/**
@@ -188,7 +185,7 @@ public class ServerHitImpl extends BizEntityImpl implements ServerHit {
 	 * @generated
 	 */
 	@Override
-	public void setInternalContentId(Content newInternalContentId) {
+	public void setInternalContentId(String newInternalContentId) {
 		eSet(VisitPackage.Literals.SERVER_HIT__INTERNAL_CONTENT_ID, newInternalContentId);
 	}
 
@@ -218,8 +215,8 @@ public class ServerHitImpl extends BizEntityImpl implements ServerHit {
 	 * @generated
 	 */
 	@Override
-	public Party getPartyId() {
-		return (Party)eGet(VisitPackage.Literals.SERVER_HIT__PARTY_ID, true);
+	public String getPartyId() {
+		return (String)eGet(VisitPackage.Literals.SERVER_HIT__PARTY_ID, true);
 	}
 
 	/**
@@ -228,7 +225,7 @@ public class ServerHitImpl extends BizEntityImpl implements ServerHit {
 	 * @generated
 	 */
 	@Override
-	public void setPartyId(Party newPartyId) {
+	public void setPartyId(String newPartyId) {
 		eSet(VisitPackage.Literals.SERVER_HIT__PARTY_ID, newPartyId);
 	}
 
@@ -238,8 +235,8 @@ public class ServerHitImpl extends BizEntityImpl implements ServerHit {
 	 * @generated
 	 */
 	@Override
-	public ContactMech getRefByWebContactMechId() {
-		return (ContactMech)eGet(VisitPackage.Literals.SERVER_HIT__REF_BY_WEB_CONTACT_MECH_ID, true);
+	public String getRefByWebContactMechId() {
+		return (String)eGet(VisitPackage.Literals.SERVER_HIT__REF_BY_WEB_CONTACT_MECH_ID, true);
 	}
 
 	/**
@@ -248,7 +245,7 @@ public class ServerHitImpl extends BizEntityImpl implements ServerHit {
 	 * @generated
 	 */
 	@Override
-	public void setRefByWebContactMechId(ContactMech newRefByWebContactMechId) {
+	public void setRefByWebContactMechId(String newRefByWebContactMechId) {
 		eSet(VisitPackage.Literals.SERVER_HIT__REF_BY_WEB_CONTACT_MECH_ID, newRefByWebContactMechId);
 	}
 

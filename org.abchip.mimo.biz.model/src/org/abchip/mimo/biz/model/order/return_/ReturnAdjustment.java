@@ -36,8 +36,8 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getCustomerReferenceId <em>Customer Reference Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getExemptAmount <em>Exempt Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#isIncludeInShipping <em>Include In Shipping</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#isIncludeInTax <em>Include In Tax</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getIncludeInShipping <em>Include In Shipping</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getIncludeInTax <em>Include In Tax</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getLastModifiedDate <em>Last Modified Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getOrderAdjustmentId <em>Order Adjustment Id</em>}</li>
@@ -102,7 +102,7 @@ public interface ReturnAdjustment extends BizEntityTyped<ReturnAdjustmentType> {
 	 * @return the value of the '<em>Comments</em>' attribute.
 	 * @see #setComments(String)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_Comments()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getComments();
@@ -233,7 +233,7 @@ public interface ReturnAdjustment extends BizEntityTyped<ReturnAdjustmentType> {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -278,54 +278,46 @@ public interface ReturnAdjustment extends BizEntityTyped<ReturnAdjustmentType> {
 	/**
 	 * Returns the value of the '<em><b>Include In Shipping</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Include In Shipping</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Include In Shipping</em>' attribute.
-	 * @see #setIncludeInShipping(boolean)
+	 * @see #setIncludeInShipping(Boolean)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_IncludeInShipping()
 	 * @model
 	 * @generated
 	 */
-	boolean isIncludeInShipping();
+	Boolean getIncludeInShipping();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#isIncludeInShipping <em>Include In Shipping</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getIncludeInShipping <em>Include In Shipping</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Include In Shipping</em>' attribute.
-	 * @see #isIncludeInShipping()
+	 * @see #getIncludeInShipping()
 	 * @generated
 	 */
-	void setIncludeInShipping(boolean value);
+	void setIncludeInShipping(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Include In Tax</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Include In Tax</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Include In Tax</em>' attribute.
-	 * @see #setIncludeInTax(boolean)
+	 * @see #setIncludeInTax(Boolean)
 	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnAdjustment_IncludeInTax()
 	 * @model
 	 * @generated
 	 */
-	boolean isIncludeInTax();
+	Boolean getIncludeInTax();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#isIncludeInTax <em>Include In Tax</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnAdjustment#getIncludeInTax <em>Include In Tax</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Include In Tax</em>' attribute.
-	 * @see #isIncludeInTax()
+	 * @see #getIncludeInTax()
 	 * @generated
 	 */
-	void setIncludeInTax(boolean value);
+	void setIncludeInTax(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Last Modified By User Login</b></em>' attribute.

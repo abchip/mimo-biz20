@@ -1902,7 +1902,7 @@ public class PromoPackageImpl extends EPackageImpl implements PromoPackage {
 		getProductPromoAction_ProductPromoActionEnumId().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getProductPromoAction_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 0, 1, ProductPromoAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductPromoAction_ServiceName(), ecorePackage.getEString(), "serviceName", null, 0, 1, ProductPromoAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getProductPromoAction_UseCartQuantity(), ecorePackage.getEBoolean(), "useCartQuantity", null, 0, 1, ProductPromoAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProductPromoAction_UseCartQuantity(), ecorePackage.getEBooleanObject(), "useCartQuantity", null, 0, 1, ProductPromoAction.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productPromoCategoryEClass, ProductPromoCategory.class, "ProductPromoCategory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductPromoCategory_ProductPromoId(), this.getProductPromo(), null, "productPromoId", null, 1, 1, ProductPromoCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1913,7 +1913,7 @@ public class PromoPackageImpl extends EPackageImpl implements PromoPackage {
 		initEAttribute(getProductPromoCategory_ProductPromoActionSeqId(), ecorePackage.getEString(), "productPromoActionSeqId", null, 1, 1, ProductPromoCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductPromoCategory_ProductPromoCondSeqId(), ecorePackage.getEString(), "productPromoCondSeqId", null, 1, 1, ProductPromoCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductPromoCategory_ProductPromoRuleId(), ecorePackage.getEString(), "productPromoRuleId", null, 1, 1, ProductPromoCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getProductPromoCategory_IncludeSubCategories(), ecorePackage.getEBoolean(), "includeSubCategories", null, 0, 1, ProductPromoCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProductPromoCategory_IncludeSubCategories(), ecorePackage.getEBooleanObject(), "includeSubCategories", null, 0, 1, ProductPromoCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getProductPromoCategory_ProductPromoApplEnumId(), theEnumPackage.getEnumeration(), null, "productPromoApplEnumId", null, 0, 1, ProductPromoCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getProductPromoCategory_ProductPromoApplEnumId().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 
@@ -2125,15 +2125,13 @@ public class PromoPackageImpl extends EPackageImpl implements PromoPackage {
 		  (getProductPromo_PromoName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getProductPromo_PromoText(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductPromo_UseLimitPerCustomer(),
@@ -2250,8 +2248,7 @@ public class PromoPackageImpl extends EPackageImpl implements PromoPackage {
 		  (getProductPromoCodeEmail_EmailAddress(),
 		   source,
 		   new String[] {
-			   "type", "email",
-			   "length", "320"
+			   "type", "email"
 		   });
 		addAnnotation
 		  (getProductPromoCond_ProductPromoCondSeqId(),
@@ -2305,8 +2302,7 @@ public class PromoPackageImpl extends EPackageImpl implements PromoPackage {
 		  (getProductPromoRule_RuleName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getProductPromoUse_PromoSequenceId(),

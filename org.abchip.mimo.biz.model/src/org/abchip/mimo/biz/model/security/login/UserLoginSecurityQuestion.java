@@ -67,7 +67,7 @@ public interface UserLoginSecurityQuestion extends BizEntity {
 	 * @return the value of the '<em>Security Answer</em>' attribute.
 	 * @see #setSecurityAnswer(String)
 	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLoginSecurityQuestion_SecurityAnswer()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getSecurityAnswer();

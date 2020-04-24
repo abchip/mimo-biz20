@@ -44,7 +44,7 @@ public interface SupplierProductFeature extends BizEntity {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getSupplierProductFeature_Description()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getDescription();

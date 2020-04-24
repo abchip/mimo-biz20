@@ -1095,8 +1095,7 @@ public class ReceiptPackageImpl extends EPackageImpl implements ReceiptPackage {
 		  (getRejectionReason_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getShipmentReceipt_ReceiptId(),
@@ -1108,8 +1107,7 @@ public class ReceiptPackageImpl extends EPackageImpl implements ReceiptPackage {
 		  (getShipmentReceipt_ItemDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getShipmentReceipt_OrderItemSeqId(),

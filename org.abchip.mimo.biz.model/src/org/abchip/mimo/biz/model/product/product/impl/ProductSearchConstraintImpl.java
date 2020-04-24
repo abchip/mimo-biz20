@@ -27,11 +27,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchConstraintImpl#getAnySuffix <em>Any Suffix</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchConstraintImpl#getConstraintName <em>Constraint Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchConstraintImpl#getHighValue <em>High Value</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchConstraintImpl#isIncludeSubCategories <em>Include Sub Categories</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchConstraintImpl#getIncludeSubCategories <em>Include Sub Categories</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchConstraintImpl#getInfoString <em>Info String</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchConstraintImpl#isIsAnd <em>Is And</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchConstraintImpl#getIsAnd <em>Is And</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchConstraintImpl#getLowValue <em>Low Value</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchConstraintImpl#isRemoveStems <em>Remove Stems</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductSearchConstraintImpl#getRemoveStems <em>Remove Stems</em>}</li>
  * </ul>
  *
  * @generated
@@ -167,7 +167,7 @@ public class ProductSearchConstraintImpl extends BizEntityImpl implements Produc
 	 * @generated
 	 */
 	@Override
-	public boolean isIncludeSubCategories() {
+	public Boolean getIncludeSubCategories() {
 		return (Boolean)eGet(ProductPackage.Literals.PRODUCT_SEARCH_CONSTRAINT__INCLUDE_SUB_CATEGORIES, true);
 	}
 
@@ -177,7 +177,7 @@ public class ProductSearchConstraintImpl extends BizEntityImpl implements Produc
 	 * @generated
 	 */
 	@Override
-	public void setIncludeSubCategories(boolean newIncludeSubCategories) {
+	public void setIncludeSubCategories(Boolean newIncludeSubCategories) {
 		eSet(ProductPackage.Literals.PRODUCT_SEARCH_CONSTRAINT__INCLUDE_SUB_CATEGORIES, newIncludeSubCategories);
 	}
 
@@ -207,7 +207,7 @@ public class ProductSearchConstraintImpl extends BizEntityImpl implements Produc
 	 * @generated
 	 */
 	@Override
-	public boolean isIsAnd() {
+	public Boolean getIsAnd() {
 		return (Boolean)eGet(ProductPackage.Literals.PRODUCT_SEARCH_CONSTRAINT__IS_AND, true);
 	}
 
@@ -217,7 +217,7 @@ public class ProductSearchConstraintImpl extends BizEntityImpl implements Produc
 	 * @generated
 	 */
 	@Override
-	public void setIsAnd(boolean newIsAnd) {
+	public void setIsAnd(Boolean newIsAnd) {
 		eSet(ProductPackage.Literals.PRODUCT_SEARCH_CONSTRAINT__IS_AND, newIsAnd);
 	}
 
@@ -247,7 +247,7 @@ public class ProductSearchConstraintImpl extends BizEntityImpl implements Produc
 	 * @generated
 	 */
 	@Override
-	public boolean isRemoveStems() {
+	public Boolean getRemoveStems() {
 		return (Boolean)eGet(ProductPackage.Literals.PRODUCT_SEARCH_CONSTRAINT__REMOVE_STEMS, true);
 	}
 
@@ -257,7 +257,7 @@ public class ProductSearchConstraintImpl extends BizEntityImpl implements Produc
 	 * @generated
 	 */
 	@Override
-	public void setRemoveStems(boolean newRemoveStems) {
+	public void setRemoveStems(Boolean newRemoveStems) {
 		eSet(ProductPackage.Literals.PRODUCT_SEARCH_CONSTRAINT__REMOVE_STEMS, newRemoveStems);
 	}
 

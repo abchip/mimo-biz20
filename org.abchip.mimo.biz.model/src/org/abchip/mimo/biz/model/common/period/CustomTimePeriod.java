@@ -22,7 +22,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getCustomTimePeriodId <em>Custom Time Period Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.period.CustomTimePeriod#isIsClosed <em>Is Closed</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getIsClosed <em>Is Closed</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getOrganizationPartyId <em>Organization Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getParentPeriodId <em>Parent Period Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getPeriodName <em>Period Name</em>}</li>
@@ -65,28 +65,24 @@ public interface CustomTimePeriod extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Is Closed</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Closed</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Closed</em>' attribute.
-	 * @see #setIsClosed(boolean)
+	 * @see #setIsClosed(Boolean)
 	 * @see org.abchip.mimo.biz.model.common.period.PeriodPackage#getCustomTimePeriod_IsClosed()
 	 * @model
 	 * @generated
 	 */
-	boolean isIsClosed();
+	Boolean getIsClosed();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.period.CustomTimePeriod#isIsClosed <em>Is Closed</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.common.period.CustomTimePeriod#getIsClosed <em>Is Closed</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is Closed</em>' attribute.
-	 * @see #isIsClosed()
+	 * @see #getIsClosed()
 	 * @generated
 	 */
-	void setIsClosed(boolean value);
+	void setIsClosed(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Organization Party Id</b></em>' reference.
@@ -125,7 +121,7 @@ public interface CustomTimePeriod extends BizEntity {
 	 * @return the value of the '<em>Period Name</em>' attribute.
 	 * @see #setPeriodName(String)
 	 * @see org.abchip.mimo.biz.model.common.period.PeriodPackage#getCustomTimePeriod_PeriodName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getPeriodName();

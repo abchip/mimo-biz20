@@ -32,7 +32,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getDataSourceId <em>Data Source Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getExternalId <em>External Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#isIsUnread <em>Is Unread</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getIsUnread <em>Is Unread</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getLastModifiedDate <em>Last Modified Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyAttributes <em>Party Attributes</em>}</li>
@@ -186,28 +186,24 @@ public interface Party extends BizEntityTyped<PartyType> {
 	/**
 	 * Returns the value of the '<em><b>Is Unread</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Unread</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Unread</em>' attribute.
-	 * @see #setIsUnread(boolean)
+	 * @see #setIsUnread(Boolean)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_IsUnread()
 	 * @model
 	 * @generated
 	 */
-	boolean isIsUnread();
+	Boolean getIsUnread();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.Party#isIsUnread <em>Is Unread</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.Party#getIsUnread <em>Is Unread</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is Unread</em>' attribute.
-	 * @see #isIsUnread()
+	 * @see #getIsUnread()
 	 * @generated
 	 */
-	void setIsUnread(boolean value);
+	void setIsUnread(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Last Modified By User Login</b></em>' reference.

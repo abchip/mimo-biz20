@@ -322,7 +322,7 @@ public interface SalesOpportunity extends BizEntity {
 	 * @return the value of the '<em>Opportunity Name</em>' attribute.
 	 * @see #setOpportunityName(String)
 	 * @see org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage#getSalesOpportunity_OpportunityName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getOpportunityName();

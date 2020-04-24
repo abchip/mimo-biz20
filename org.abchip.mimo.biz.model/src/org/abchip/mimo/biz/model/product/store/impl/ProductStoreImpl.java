@@ -83,8 +83,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getOldHeaderMiddleBackground <em>Old Header Middle Background</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getOldHeaderRightBackground <em>Old Header Right Background</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getOldStyleSheet <em>Old Style Sheet</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isOneInventoryFacility <em>One Inventory Facility</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isOrderDecimalQuantity <em>Order Decimal Quantity</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getOneInventoryFacility <em>One Inventory Facility</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getOrderDecimalQuantity <em>Order Decimal Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getOrderNumberPrefix <em>Order Number Prefix</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getPayToPartyId <em>Pay To Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getPrimaryStoreGroupId <em>Primary Store Group Id</em>}</li>
@@ -93,7 +93,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getProductStoreFinActSettings <em>Product Store Fin Act Settings</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isProrateShipping <em>Prorate Shipping</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isProrateTaxes <em>Prorate Taxes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isReqReturnInventoryReceive <em>Req Return Inventory Receive</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getReqReturnInventoryReceive <em>Req Return Inventory Receive</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isReqShipAddrForDigItems <em>Req Ship Addr For Dig Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isRequireCustomerRole <em>Require Customer Role</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isRequireInventory <em>Require Inventory</em>}</li>
@@ -102,7 +102,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getReserveOrderEnumId <em>Reserve Order Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isRetryFailedAuths <em>Retry Failed Auths</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isSelectPaymentTypePerItem <em>Select Payment Type Per Item</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isSetOwnerUponIssuance <em>Set Owner Upon Issuance</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getSetOwnerUponIssuance <em>Set Owner Upon Issuance</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isShipIfCaptureFails <em>Ship If Capture Fails</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isShowCheckoutGiftOptions <em>Show Checkout Gift Options</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isShowOutOfStockProducts <em>Show Out Of Stock Products</em>}</li>
@@ -1007,7 +1007,7 @@ public class ProductStoreImpl extends BizEntityImpl implements ProductStore {
 	 * @generated
 	 */
 	@Override
-	public boolean isOneInventoryFacility() {
+	public Boolean getOneInventoryFacility() {
 		return (Boolean)eGet(StorePackage.Literals.PRODUCT_STORE__ONE_INVENTORY_FACILITY, true);
 	}
 
@@ -1017,7 +1017,7 @@ public class ProductStoreImpl extends BizEntityImpl implements ProductStore {
 	 * @generated
 	 */
 	@Override
-	public void setOneInventoryFacility(boolean newOneInventoryFacility) {
+	public void setOneInventoryFacility(Boolean newOneInventoryFacility) {
 		eSet(StorePackage.Literals.PRODUCT_STORE__ONE_INVENTORY_FACILITY, newOneInventoryFacility);
 	}
 
@@ -1027,7 +1027,7 @@ public class ProductStoreImpl extends BizEntityImpl implements ProductStore {
 	 * @generated
 	 */
 	@Override
-	public boolean isOrderDecimalQuantity() {
+	public Boolean getOrderDecimalQuantity() {
 		return (Boolean)eGet(StorePackage.Literals.PRODUCT_STORE__ORDER_DECIMAL_QUANTITY, true);
 	}
 
@@ -1037,7 +1037,7 @@ public class ProductStoreImpl extends BizEntityImpl implements ProductStore {
 	 * @generated
 	 */
 	@Override
-	public void setOrderDecimalQuantity(boolean newOrderDecimalQuantity) {
+	public void setOrderDecimalQuantity(Boolean newOrderDecimalQuantity) {
 		eSet(StorePackage.Literals.PRODUCT_STORE__ORDER_DECIMAL_QUANTITY, newOrderDecimalQuantity);
 	}
 
@@ -1059,26 +1059,6 @@ public class ProductStoreImpl extends BizEntityImpl implements ProductStore {
 	@Override
 	public void setOrderNumberPrefix(String newOrderNumberPrefix) {
 		eSet(StorePackage.Literals.PRODUCT_STORE__ORDER_NUMBER_PREFIX, newOrderNumberPrefix);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean isReqReturnInventoryReceive() {
-		return (Boolean)eGet(StorePackage.Literals.PRODUCT_STORE__REQ_RETURN_INVENTORY_RECEIVE, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setReqReturnInventoryReceive(boolean newReqReturnInventoryReceive) {
-		eSet(StorePackage.Literals.PRODUCT_STORE__REQ_RETURN_INVENTORY_RECEIVE, newReqReturnInventoryReceive);
 	}
 
 	/**
@@ -1207,7 +1187,7 @@ public class ProductStoreImpl extends BizEntityImpl implements ProductStore {
 	 * @generated
 	 */
 	@Override
-	public boolean isSetOwnerUponIssuance() {
+	public Boolean getSetOwnerUponIssuance() {
 		return (Boolean)eGet(StorePackage.Literals.PRODUCT_STORE__SET_OWNER_UPON_ISSUANCE, true);
 	}
 
@@ -1217,7 +1197,7 @@ public class ProductStoreImpl extends BizEntityImpl implements ProductStore {
 	 * @generated
 	 */
 	@Override
-	public void setSetOwnerUponIssuance(boolean newSetOwnerUponIssuance) {
+	public void setSetOwnerUponIssuance(Boolean newSetOwnerUponIssuance) {
 		eSet(StorePackage.Literals.PRODUCT_STORE__SET_OWNER_UPON_ISSUANCE, newSetOwnerUponIssuance);
 	}
 
@@ -1639,6 +1619,26 @@ public class ProductStoreImpl extends BizEntityImpl implements ProductStore {
 	@Override
 	public void setProrateTaxes(boolean newProrateTaxes) {
 		eSet(StorePackage.Literals.PRODUCT_STORE__PRORATE_TAXES, newProrateTaxes);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Boolean getReqReturnInventoryReceive() {
+		return (Boolean)eGet(StorePackage.Literals.PRODUCT_STORE__REQ_RETURN_INVENTORY_RECEIVE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setReqReturnInventoryReceive(Boolean newReqReturnInventoryReceive) {
+		eSet(StorePackage.Literals.PRODUCT_STORE__REQ_RETURN_INVENTORY_RECEIVE, newReqReturnInventoryReceive);
 	}
 
 	/**

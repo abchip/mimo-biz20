@@ -1243,15 +1243,13 @@ public class TechdataPackageImpl extends EPackageImpl implements TechdataPackage
 		  (getTechDataCalendar_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getTechDataCalendarExcDay_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getTechDataCalendarExcDay_ExceptionCapacity(),
@@ -1273,8 +1271,7 @@ public class TechdataPackageImpl extends EPackageImpl implements TechdataPackage
 		  (getTechDataCalendarExcWeek_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getTechDataCalendarWeek_CalendarWeekId(),
@@ -1286,8 +1283,7 @@ public class TechdataPackageImpl extends EPackageImpl implements TechdataPackage
 		  (getTechDataCalendarWeek_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

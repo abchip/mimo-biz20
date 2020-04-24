@@ -63,6 +63,15 @@ public interface FacilityFactory extends EFactory {
 	Facility createFacility();
 
 	/**
+	 * Returns a new object of class '<em>Assoc Type</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Assoc Type</em>'.
+	 * @generated
+	 */
+	FacilityAssocType createFacilityAssocType();
+
+	/**
 	 * Returns a new object of class '<em>Attribute</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -223,6 +232,15 @@ public interface FacilityFactory extends EFactory {
 	 * @generated
 	 */
 	ProductFacility createProductFacility();
+
+	/**
+	 * Returns a new object of class '<em>Product Facility Assoc</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Product Facility Assoc</em>'.
+	 * @generated
+	 */
+	ProductFacilityAssoc createProductFacilityAssoc();
 
 	/**
 	 * Returns a new object of class '<em>Product Facility Location</em>'.

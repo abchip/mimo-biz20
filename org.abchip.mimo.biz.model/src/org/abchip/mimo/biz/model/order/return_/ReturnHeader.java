@@ -38,7 +38,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnHeader#getEntryDate <em>Entry Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnHeader#getFinAccountId <em>Fin Account Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnHeader#getFromPartyId <em>From Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnHeader#isNeedsInventoryReceive <em>Needs Inventory Receive</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnHeader#getNeedsInventoryReceive <em>Needs Inventory Receive</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnHeader#getOriginContactMechId <em>Origin Contact Mech Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnHeader#getPaymentMethodId <em>Payment Method Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.ReturnHeader#getReturnHeaderTypeId <em>Return Header Type Id</em>}</li>
@@ -200,32 +200,6 @@ public interface ReturnHeader extends BizEntity {
 	void setEntryDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Needs Inventory Receive</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Needs Inventory Receive</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Needs Inventory Receive</em>' attribute.
-	 * @see #setNeedsInventoryReceive(boolean)
-	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnHeader_NeedsInventoryReceive()
-	 * @model
-	 * @generated
-	 */
-	boolean isNeedsInventoryReceive();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnHeader#isNeedsInventoryReceive <em>Needs Inventory Receive</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Needs Inventory Receive</em>' attribute.
-	 * @see #isNeedsInventoryReceive()
-	 * @generated
-	 */
-	void setNeedsInventoryReceive(boolean value);
-
-	/**
 	 * Returns the value of the '<em><b>Fin Account Id</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -276,6 +250,28 @@ public interface ReturnHeader extends BizEntity {
 	 * @generated
 	 */
 	void setFromPartyId(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Needs Inventory Receive</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Needs Inventory Receive</em>' attribute.
+	 * @see #setNeedsInventoryReceive(Boolean)
+	 * @see org.abchip.mimo.biz.model.order.return_.ReturnPackage#getReturnHeader_NeedsInventoryReceive()
+	 * @model
+	 * @generated
+	 */
+	Boolean getNeedsInventoryReceive();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.return_.ReturnHeader#getNeedsInventoryReceive <em>Needs Inventory Receive</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Needs Inventory Receive</em>' attribute.
+	 * @see #getNeedsInventoryReceive()
+	 * @generated
+	 */
+	void setNeedsInventoryReceive(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Origin Contact Mech Id</b></em>' reference.

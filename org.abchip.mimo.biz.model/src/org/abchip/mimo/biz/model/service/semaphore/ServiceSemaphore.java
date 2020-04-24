@@ -42,7 +42,7 @@ public interface ServiceSemaphore extends BizEntity {
 	 * @see #setServiceName(String)
 	 * @see org.abchip.mimo.biz.model.service.semaphore.SemaphorePackage#getServiceSemaphore_ServiceName()
 	 * @model id="true" required="true"
-	 *        annotation="mimo-ent-format type='name' length='100'"
+	 *        annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getServiceName();
@@ -68,7 +68,7 @@ public interface ServiceSemaphore extends BizEntity {
 	 * @return the value of the '<em>Lock Thread</em>' attribute.
 	 * @see #setLockThread(String)
 	 * @see org.abchip.mimo.biz.model.service.semaphore.SemaphorePackage#getServiceSemaphore_LockThread()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getLockThread();

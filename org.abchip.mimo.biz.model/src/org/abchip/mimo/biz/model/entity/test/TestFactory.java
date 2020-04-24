@@ -27,6 +27,15 @@ public interface TestFactory extends EFactory {
 	TestFactory eINSTANCE = org.abchip.mimo.biz.model.entity.test.impl.TestFactoryImpl.init();
 
 	/**
+	 * Returns a new object of class '<em>Entity</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Entity</em>'.
+	 * @generated
+	 */
+	TestEntity createTestEntity();
+
+	/**
 	 * Returns a new object of class '<em>Field Type</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

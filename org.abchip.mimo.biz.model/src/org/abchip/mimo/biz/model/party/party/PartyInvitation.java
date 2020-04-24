@@ -152,7 +152,7 @@ public interface PartyInvitation extends BizEntity {
 	 * @return the value of the '<em>To Name</em>' attribute.
 	 * @see #setToName(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyInvitation_ToName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getToName();

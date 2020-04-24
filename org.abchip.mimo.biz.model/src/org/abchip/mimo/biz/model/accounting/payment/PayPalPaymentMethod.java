@@ -20,8 +20,8 @@ import org.abchip.mimo.biz.model.party.contact.ContactMech;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PayPalPaymentMethod#getPaymentMethodId <em>Payment Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PayPalPaymentMethod#isAvsAddr <em>Avs Addr</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PayPalPaymentMethod#isAvsZip <em>Avs Zip</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PayPalPaymentMethod#getAvsAddr <em>Avs Addr</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PayPalPaymentMethod#getAvsZip <em>Avs Zip</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PayPalPaymentMethod#getContactMechId <em>Contact Mech Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PayPalPaymentMethod#getCorrelationId <em>Correlation Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PayPalPaymentMethod#getExpressCheckoutToken <em>Express Checkout Token</em>}</li>
@@ -195,54 +195,46 @@ public interface PayPalPaymentMethod extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Avs Addr</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Avs Addr</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Avs Addr</em>' attribute.
-	 * @see #setAvsAddr(boolean)
+	 * @see #setAvsAddr(Boolean)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPayPalPaymentMethod_AvsAddr()
 	 * @model
 	 * @generated
 	 */
-	boolean isAvsAddr();
+	Boolean getAvsAddr();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PayPalPaymentMethod#isAvsAddr <em>Avs Addr</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PayPalPaymentMethod#getAvsAddr <em>Avs Addr</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Avs Addr</em>' attribute.
-	 * @see #isAvsAddr()
+	 * @see #getAvsAddr()
 	 * @generated
 	 */
-	void setAvsAddr(boolean value);
+	void setAvsAddr(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Avs Zip</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Avs Zip</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Avs Zip</em>' attribute.
-	 * @see #setAvsZip(boolean)
+	 * @see #setAvsZip(Boolean)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPayPalPaymentMethod_AvsZip()
 	 * @model
 	 * @generated
 	 */
-	boolean isAvsZip();
+	Boolean getAvsZip();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PayPalPaymentMethod#isAvsZip <em>Avs Zip</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PayPalPaymentMethod#getAvsZip <em>Avs Zip</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Avs Zip</em>' attribute.
-	 * @see #isAvsZip()
+	 * @see #getAvsZip()
 	 * @generated
 	 */
-	void setAvsZip(boolean value);
+	void setAvsZip(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Transaction Id</b></em>' attribute.

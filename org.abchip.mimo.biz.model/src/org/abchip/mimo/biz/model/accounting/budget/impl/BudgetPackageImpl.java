@@ -2010,7 +2010,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		getBudgetRevisionImpact_BudgetId().getEKeys().add(this.getBudget_BudgetId());
 		initEAttribute(getBudgetRevisionImpact_BudgetItemSeqId(), ecorePackage.getEString(), "budgetItemSeqId", null, 1, 1, BudgetRevisionImpact.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetRevisionImpact_RevisionSeqId(), ecorePackage.getEString(), "revisionSeqId", null, 1, 1, BudgetRevisionImpact.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getBudgetRevisionImpact_AddDeleteFlag(), ecorePackage.getEBoolean(), "addDeleteFlag", null, 0, 1, BudgetRevisionImpact.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getBudgetRevisionImpact_AddDeleteFlag(), ecorePackage.getEBooleanObject(), "addDeleteFlag", null, 0, 1, BudgetRevisionImpact.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetRevisionImpact_RevisedAmount(), ecorePackage.getEBigDecimal(), "revisedAmount", null, 0, 1, BudgetRevisionImpact.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBudgetRevisionImpact_RevisionReason(), ecorePackage.getEString(), "revisionReason", null, 0, 1, BudgetRevisionImpact.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -2095,8 +2095,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		  (getBudget_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getBudgetAttribute_AttrName(),
@@ -2108,8 +2107,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		  (getBudgetAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getBudgetAttribute_AttrValue(),
@@ -2165,8 +2163,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		  (getBudgetItemAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getBudgetItemAttribute_AttrValue(),
@@ -2184,8 +2181,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		  (getBudgetItemType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getBudgetItemTypeAttr_AttrName(),
@@ -2197,8 +2193,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		  (getBudgetItemTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getBudgetReview_BudgetReviewId(),
@@ -2216,15 +2211,13 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		  (getBudgetReviewResultType_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getBudgetReviewResultType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getBudgetRevision_RevisionSeqId(),
@@ -2274,8 +2267,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		  (getBudgetScenario_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getBudgetScenarioApplication_BudgetScenarioApplicId(),
@@ -2325,8 +2317,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		  (getBudgetStatus_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getBudgetType_BudgetTypeId(),
@@ -2338,8 +2329,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		  (getBudgetType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getBudgetTypeAttr_AttrName(),
@@ -2351,8 +2341,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		  (getBudgetTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

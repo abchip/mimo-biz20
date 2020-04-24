@@ -26,10 +26,10 @@ import org.abchip.mimo.biz.model.party.party.Party;
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLogin#getCurrentPassword <em>Current Password</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLogin#getDisabledBy <em>Disabled By</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLogin#getDisabledDateTime <em>Disabled Date Time</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLogin#isEnabled <em>Enabled</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLogin#getEnabled <em>Enabled</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLogin#getExternalAuthId <em>External Auth Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLogin#isHasLoggedOut <em>Has Logged Out</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLogin#isIsSystem <em>Is System</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLogin#getHasLoggedOut <em>Has Logged Out</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLogin#getIsSystem <em>Is System</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLogin#getLastCurrencyUom <em>Last Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLogin#getLastLocale <em>Last Locale</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLogin#getLastTimeZone <em>Last Time Zone</em>}</li>
@@ -129,28 +129,24 @@ public interface UserLogin extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Enabled</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Enabled</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Enabled</em>' attribute.
-	 * @see #setEnabled(boolean)
+	 * @see #setEnabled(Boolean)
 	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLogin_Enabled()
 	 * @model
 	 * @generated
 	 */
-	boolean isEnabled();
+	Boolean getEnabled();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.login.UserLogin#isEnabled <em>Enabled</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.login.UserLogin#getEnabled <em>Enabled</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Enabled</em>' attribute.
-	 * @see #isEnabled()
+	 * @see #getEnabled()
 	 * @generated
 	 */
-	void setEnabled(boolean value);
+	void setEnabled(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>External Auth Id</b></em>' attribute.
@@ -182,54 +178,46 @@ public interface UserLogin extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Has Logged Out</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Has Logged Out</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Has Logged Out</em>' attribute.
-	 * @see #setHasLoggedOut(boolean)
+	 * @see #setHasLoggedOut(Boolean)
 	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLogin_HasLoggedOut()
 	 * @model
 	 * @generated
 	 */
-	boolean isHasLoggedOut();
+	Boolean getHasLoggedOut();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.login.UserLogin#isHasLoggedOut <em>Has Logged Out</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.login.UserLogin#getHasLoggedOut <em>Has Logged Out</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Has Logged Out</em>' attribute.
-	 * @see #isHasLoggedOut()
+	 * @see #getHasLoggedOut()
 	 * @generated
 	 */
-	void setHasLoggedOut(boolean value);
+	void setHasLoggedOut(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Is System</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is System</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is System</em>' attribute.
-	 * @see #setIsSystem(boolean)
+	 * @see #setIsSystem(Boolean)
 	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLogin_IsSystem()
 	 * @model
 	 * @generated
 	 */
-	boolean isIsSystem();
+	Boolean getIsSystem();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.login.UserLogin#isIsSystem <em>Is System</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.security.login.UserLogin#getIsSystem <em>Is System</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is System</em>' attribute.
-	 * @see #isIsSystem()
+	 * @see #getIsSystem()
 	 * @generated
 	 */
-	void setIsSystem(boolean value);
+	void setIsSystem(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Last Currency Uom</b></em>' attribute.
@@ -346,7 +334,7 @@ public interface UserLogin extends BizEntity {
 	 * @return the value of the '<em>Password Hint</em>' attribute.
 	 * @see #setPasswordHint(String)
 	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLogin_PasswordHint()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getPasswordHint();

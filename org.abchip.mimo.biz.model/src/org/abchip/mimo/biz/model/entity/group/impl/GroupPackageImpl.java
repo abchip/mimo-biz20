@@ -881,8 +881,7 @@ public class GroupPackageImpl extends EPackageImpl implements GroupPackage {
 		  (getEntityGroup_EntityGroupName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getEntityGroupEntry_EntityOrPackage(),

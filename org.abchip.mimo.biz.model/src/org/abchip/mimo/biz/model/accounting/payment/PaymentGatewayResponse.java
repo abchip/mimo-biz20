@@ -39,10 +39,10 @@ import org.abchip.mimo.biz.model.order.order.OrderPaymentPreference;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getPaymentMethodTypeId <em>Payment Method Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getPaymentServiceTypeEnumId <em>Payment Service Type Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getReferenceNum <em>Reference Num</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#isResultBadCardNumber <em>Result Bad Card Number</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#isResultBadExpire <em>Result Bad Expire</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#isResultDeclined <em>Result Declined</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#isResultNsf <em>Result Nsf</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getResultBadCardNumber <em>Result Bad Card Number</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getResultBadExpire <em>Result Bad Expire</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getResultDeclined <em>Result Declined</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getResultNsf <em>Result Nsf</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getSubReference <em>Sub Reference</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getTransCodeEnumId <em>Trans Code Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getTransactionDate <em>Transaction Date</em>}</li>
@@ -368,106 +368,90 @@ public interface PaymentGatewayResponse extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Result Bad Card Number</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Result Bad Card Number</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Result Bad Card Number</em>' attribute.
-	 * @see #setResultBadCardNumber(boolean)
+	 * @see #setResultBadCardNumber(Boolean)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_ResultBadCardNumber()
 	 * @model
 	 * @generated
 	 */
-	boolean isResultBadCardNumber();
+	Boolean getResultBadCardNumber();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#isResultBadCardNumber <em>Result Bad Card Number</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getResultBadCardNumber <em>Result Bad Card Number</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Result Bad Card Number</em>' attribute.
-	 * @see #isResultBadCardNumber()
+	 * @see #getResultBadCardNumber()
 	 * @generated
 	 */
-	void setResultBadCardNumber(boolean value);
+	void setResultBadCardNumber(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Result Bad Expire</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Result Bad Expire</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Result Bad Expire</em>' attribute.
-	 * @see #setResultBadExpire(boolean)
+	 * @see #setResultBadExpire(Boolean)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_ResultBadExpire()
 	 * @model
 	 * @generated
 	 */
-	boolean isResultBadExpire();
+	Boolean getResultBadExpire();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#isResultBadExpire <em>Result Bad Expire</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getResultBadExpire <em>Result Bad Expire</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Result Bad Expire</em>' attribute.
-	 * @see #isResultBadExpire()
+	 * @see #getResultBadExpire()
 	 * @generated
 	 */
-	void setResultBadExpire(boolean value);
+	void setResultBadExpire(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Result Declined</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Result Declined</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Result Declined</em>' attribute.
-	 * @see #setResultDeclined(boolean)
+	 * @see #setResultDeclined(Boolean)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_ResultDeclined()
 	 * @model
 	 * @generated
 	 */
-	boolean isResultDeclined();
+	Boolean getResultDeclined();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#isResultDeclined <em>Result Declined</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getResultDeclined <em>Result Declined</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Result Declined</em>' attribute.
-	 * @see #isResultDeclined()
+	 * @see #getResultDeclined()
 	 * @generated
 	 */
-	void setResultDeclined(boolean value);
+	void setResultDeclined(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Result Nsf</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Result Nsf</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Result Nsf</em>' attribute.
-	 * @see #setResultNsf(boolean)
+	 * @see #setResultNsf(Boolean)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayResponse_ResultNsf()
 	 * @model
 	 * @generated
 	 */
-	boolean isResultNsf();
+	Boolean getResultNsf();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#isResultNsf <em>Result Nsf</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse#getResultNsf <em>Result Nsf</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Result Nsf</em>' attribute.
-	 * @see #isResultNsf()
+	 * @see #getResultNsf()
 	 * @generated
 	 */
-	void setResultNsf(boolean value);
+	void setResultNsf(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Sub Reference</b></em>' attribute.

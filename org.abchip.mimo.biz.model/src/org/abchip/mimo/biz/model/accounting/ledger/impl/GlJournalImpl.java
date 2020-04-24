@@ -25,7 +25,7 @@ import org.eclipse.emf.ecore.EClass;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlJournalImpl#getGlJournalId <em>Gl Journal Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlJournalImpl#getGlJournalName <em>Gl Journal Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlJournalImpl#isIsPosted <em>Is Posted</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlJournalImpl#getIsPosted <em>Is Posted</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlJournalImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlJournalImpl#getPostedDate <em>Posted Date</em>}</li>
  * </ul>
@@ -82,7 +82,7 @@ public class GlJournalImpl extends BizEntityImpl implements GlJournal {
 	 * @generated
 	 */
 	@Override
-	public boolean isIsPosted() {
+	public Boolean getIsPosted() {
 		return (Boolean)eGet(LedgerPackage.Literals.GL_JOURNAL__IS_POSTED, true);
 	}
 
@@ -92,7 +92,7 @@ public class GlJournalImpl extends BizEntityImpl implements GlJournal {
 	 * @generated
 	 */
 	@Override
-	public void setIsPosted(boolean newIsPosted) {
+	public void setIsPosted(Boolean newIsPosted) {
 		eSet(LedgerPackage.Literals.GL_JOURNAL__IS_POSTED, newIsPosted);
 	}
 

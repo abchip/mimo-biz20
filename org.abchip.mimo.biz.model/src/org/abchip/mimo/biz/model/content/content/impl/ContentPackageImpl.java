@@ -2620,16 +2620,16 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		initEAttribute(getContentSearchConstraint_AnySuffix(), ecorePackage.getEString(), "anySuffix", null, 0, 1, ContentSearchConstraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentSearchConstraint_ConstraintName(), ecorePackage.getEString(), "constraintName", null, 0, 1, ContentSearchConstraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentSearchConstraint_HighValue(), ecorePackage.getEString(), "highValue", null, 0, 1, ContentSearchConstraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getContentSearchConstraint_IncludeSubCategories(), ecorePackage.getEBoolean(), "includeSubCategories", null, 0, 1, ContentSearchConstraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getContentSearchConstraint_IncludeSubCategories(), ecorePackage.getEBooleanObject(), "includeSubCategories", null, 0, 1, ContentSearchConstraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentSearchConstraint_InfoString(), ecorePackage.getEString(), "infoString", null, 0, 1, ContentSearchConstraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getContentSearchConstraint_IsAnd(), ecorePackage.getEBoolean(), "isAnd", null, 0, 1, ContentSearchConstraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getContentSearchConstraint_IsAnd(), ecorePackage.getEBooleanObject(), "isAnd", null, 0, 1, ContentSearchConstraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentSearchConstraint_LowValue(), ecorePackage.getEString(), "lowValue", null, 0, 1, ContentSearchConstraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getContentSearchConstraint_RemoveStems(), ecorePackage.getEBoolean(), "removeStems", null, 0, 1, ContentSearchConstraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getContentSearchConstraint_RemoveStems(), ecorePackage.getEBooleanObject(), "removeStems", null, 0, 1, ContentSearchConstraint.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(contentSearchResultEClass, ContentSearchResult.class, "ContentSearchResult", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getContentSearchResult_ContentSearchResultId(), ecorePackage.getEString(), "contentSearchResultId", null, 1, 1, ContentSearchResult.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getContentSearchResult_ContentSearchConstraints(), this.getContentSearchConstraint(), null, "contentSearchConstraints", null, 0, -1, ContentSearchResult.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
-		initEAttribute(getContentSearchResult_IsAscending(), ecorePackage.getEBoolean(), "isAscending", null, 0, 1, ContentSearchResult.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getContentSearchResult_IsAscending(), ecorePackage.getEBooleanObject(), "isAscending", null, 0, 1, ContentSearchResult.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentSearchResult_NumResults(), ecorePackage.getELong(), "numResults", null, 0, 1, ContentSearchResult.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentSearchResult_OrderByName(), ecorePackage.getEString(), "orderByName", null, 0, 1, ContentSearchResult.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContentSearchResult_SearchDate(), ecorePackage.getEDate(), "searchDate", null, 0, 1, ContentSearchResult.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2791,8 +2791,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		  (getContent_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getContent_LocaleString(),
@@ -2816,8 +2815,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		  (getContentApproval_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getContentApproval_ContentRevisionSeqId(),
@@ -2843,8 +2841,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		  (getContentAssoc_MapKey(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getContentAssoc_SequenceNum(),
@@ -2870,8 +2867,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		  (getContentAssocPredicate_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getContentAssocType_ContentAssocTypeId(),
@@ -2883,8 +2879,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		  (getContentAssocType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getContentAttribute_AttrName(),
@@ -2896,8 +2891,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		  (getContentAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getContentAttribute_AttrValue(),
@@ -2934,8 +2928,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		  (getContentOperation_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getContentPurpose_SequenceNum(),
@@ -2954,8 +2947,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		  (getContentPurposeType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getContentRevision_ContentRevisionSeqId(),
@@ -2967,8 +2959,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		  (getContentRevision_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getContentRevisionItem_ContentId(),
@@ -3059,8 +3050,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		  (getContentType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getContentTypeAttr_AttrName(),
@@ -3072,8 +3062,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		  (getContentTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

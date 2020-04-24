@@ -99,7 +99,7 @@ public interface Geo extends BizEntityTyped<GeoType> {
 	 * @return the value of the '<em>Geo Name</em>' attribute.
 	 * @see #setGeoName(String)
 	 * @see org.abchip.mimo.biz.model.common.geo.GeoPackage#getGeo_GeoName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getGeoName();

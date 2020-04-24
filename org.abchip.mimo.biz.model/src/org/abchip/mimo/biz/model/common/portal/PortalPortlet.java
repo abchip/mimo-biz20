@@ -48,7 +48,7 @@ public interface PortalPortlet extends BizEntity {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortalPortlet_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -126,7 +126,7 @@ public interface PortalPortlet extends BizEntity {
 	 * @return the value of the '<em>Portlet Name</em>' attribute.
 	 * @see #setPortletName(String)
 	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortalPortlet_PortletName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getPortletName();
@@ -220,7 +220,7 @@ public interface PortalPortlet extends BizEntity {
 	 * @return the value of the '<em>Screenshot</em>' attribute.
 	 * @see #setScreenshot(String)
 	 * @see org.abchip.mimo.biz.model.common.portal.PortalPackage#getPortalPortlet_Screenshot()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getScreenshot();

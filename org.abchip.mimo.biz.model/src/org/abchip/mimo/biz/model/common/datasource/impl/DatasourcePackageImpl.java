@@ -868,8 +868,7 @@ public class DatasourcePackageImpl extends EPackageImpl implements DatasourcePac
 		  (getDataSource_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getDataSourceType_DataSourceTypeId(),
@@ -881,8 +880,7 @@ public class DatasourcePackageImpl extends EPackageImpl implements DatasourcePac
 		  (getDataSourceType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

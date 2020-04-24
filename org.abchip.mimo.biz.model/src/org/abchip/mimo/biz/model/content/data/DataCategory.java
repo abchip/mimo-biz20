@@ -39,7 +39,7 @@ public interface DataCategory extends BizEntity {
 	 * @return the value of the '<em>Category Name</em>' attribute.
 	 * @see #setCategoryName(String)
 	 * @see org.abchip.mimo.biz.model.content.data.DataPackage#getDataCategory_CategoryName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getCategoryName();

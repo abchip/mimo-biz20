@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.EClass;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchResultImpl#getContentSearchResultId <em>Content Search Result Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchResultImpl#getContentSearchConstraints <em>Content Search Constraints</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchResultImpl#isIsAscending <em>Is Ascending</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchResultImpl#getIsAscending <em>Is Ascending</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchResultImpl#getNumResults <em>Num Results</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchResultImpl#getOrderByName <em>Order By Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchResultImpl#getSearchDate <em>Search Date</em>}</li>
@@ -98,7 +98,7 @@ public class ContentSearchResultImpl extends BizEntityImpl implements ContentSea
 	 * @generated
 	 */
 	@Override
-	public boolean isIsAscending() {
+	public Boolean getIsAscending() {
 		return (Boolean)eGet(ContentPackage.Literals.CONTENT_SEARCH_RESULT__IS_ASCENDING, true);
 	}
 
@@ -108,7 +108,7 @@ public class ContentSearchResultImpl extends BizEntityImpl implements ContentSea
 	 * @generated
 	 */
 	@Override
-	public void setIsAscending(boolean newIsAscending) {
+	public void setIsAscending(Boolean newIsAscending) {
 		eSet(ContentPackage.Literals.CONTENT_SEARCH_RESULT__IS_ASCENDING, newIsAscending);
 	}
 

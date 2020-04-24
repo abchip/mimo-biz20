@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeImpl#getFinAccountTypeAttrs <em>Fin Account Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeImpl#getFinAccountTypeGlAccounts <em>Fin Account Type Gl Accounts</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeImpl#isIsRefundable <em>Is Refundable</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeImpl#getIsRefundable <em>Is Refundable</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.impl.FinAccountTypeImpl#getReplenishEnumId <em>Replenish Enum Id</em>}</li>
  * </ul>
@@ -130,7 +130,7 @@ public class FinAccountTypeImpl extends BizEntityTypeImpl<FinAccount> implements
 	 * @generated
 	 */
 	@Override
-	public boolean isIsRefundable() {
+	public Boolean getIsRefundable() {
 		return (Boolean)eGet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE__IS_REFUNDABLE, true);
 	}
 
@@ -140,7 +140,7 @@ public class FinAccountTypeImpl extends BizEntityTypeImpl<FinAccount> implements
 	 * @generated
 	 */
 	@Override
-	public void setIsRefundable(boolean newIsRefundable) {
+	public void setIsRefundable(Boolean newIsRefundable) {
 		eSet(FinaccountPackage.Literals.FIN_ACCOUNT_TYPE__IS_REFUNDABLE, newIsRefundable);
 	}
 

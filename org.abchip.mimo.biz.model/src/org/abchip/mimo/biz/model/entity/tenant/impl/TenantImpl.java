@@ -24,7 +24,7 @@ import org.eclipse.emf.ecore.EClass;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantImpl#getTenantId <em>Tenant Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantImpl#isDisabled <em>Disabled</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantImpl#getDisabled <em>Disabled</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantImpl#getInitialPath <em>Initial Path</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantImpl#getTenantDataSources <em>Tenant Data Sources</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantImpl#getTenantName <em>Tenant Name</em>}</li>
@@ -113,7 +113,7 @@ public class TenantImpl extends BizEntityImpl implements Tenant {
 	 * @generated
 	 */
 	@Override
-	public boolean isDisabled() {
+	public Boolean getDisabled() {
 		return (Boolean)eGet(TenantPackage.Literals.TENANT__DISABLED, true);
 	}
 
@@ -123,7 +123,7 @@ public class TenantImpl extends BizEntityImpl implements Tenant {
 	 * @generated
 	 */
 	@Override
-	public void setDisabled(boolean newDisabled) {
+	public void setDisabled(Boolean newDisabled) {
 		eSet(TenantPackage.Literals.TENANT__DISABLED, newDisabled);
 	}
 

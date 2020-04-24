@@ -1732,11 +1732,11 @@ public interface PromoPackage extends EPackage {
 	EAttribute getProductPromoAction_ServiceName();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#isUseCartQuantity <em>Use Cart Quantity</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getUseCartQuantity <em>Use Cart Quantity</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Use Cart Quantity</em>'.
-	 * @see org.abchip.mimo.biz.model.product.promo.ProductPromoAction#isUseCartQuantity()
+	 * @see org.abchip.mimo.biz.model.product.promo.ProductPromoAction#getUseCartQuantity()
 	 * @see #getProductPromoAction()
 	 * @generated
 	 */
@@ -1819,11 +1819,11 @@ public interface PromoPackage extends EPackage {
 	EAttribute getProductPromoCategory_AndGroupId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#isIncludeSubCategories <em>Include Sub Categories</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getIncludeSubCategories <em>Include Sub Categories</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Include Sub Categories</em>'.
-	 * @see org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#isIncludeSubCategories()
+	 * @see org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getIncludeSubCategories()
 	 * @see #getProductPromoCategory()
 	 * @generated
 	 */

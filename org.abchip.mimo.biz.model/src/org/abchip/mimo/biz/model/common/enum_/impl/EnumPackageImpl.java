@@ -938,8 +938,7 @@ public class EnumPackageImpl extends EPackageImpl implements EnumPackage {
 		  (getEnumeration_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getEnumeration_EnumCode(),
@@ -963,8 +962,7 @@ public class EnumPackageImpl extends EPackageImpl implements EnumPackage {
 		  (getEnumerationType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

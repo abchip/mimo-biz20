@@ -3446,11 +3446,11 @@ public interface ContentPackage extends EPackage {
 	EAttribute getContentSearchConstraint_HighValue();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#isIncludeSubCategories <em>Include Sub Categories</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getIncludeSubCategories <em>Include Sub Categories</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Include Sub Categories</em>'.
-	 * @see org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#isIncludeSubCategories()
+	 * @see org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getIncludeSubCategories()
 	 * @see #getContentSearchConstraint()
 	 * @generated
 	 */
@@ -3468,11 +3468,11 @@ public interface ContentPackage extends EPackage {
 	EAttribute getContentSearchConstraint_InfoString();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#isIsAnd <em>Is And</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getIsAnd <em>Is And</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is And</em>'.
-	 * @see org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#isIsAnd()
+	 * @see org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getIsAnd()
 	 * @see #getContentSearchConstraint()
 	 * @generated
 	 */
@@ -3490,11 +3490,11 @@ public interface ContentPackage extends EPackage {
 	EAttribute getContentSearchConstraint_LowValue();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#isRemoveStems <em>Remove Stems</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getRemoveStems <em>Remove Stems</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Remove Stems</em>'.
-	 * @see org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#isRemoveStems()
+	 * @see org.abchip.mimo.biz.model.content.content.ContentSearchConstraint#getRemoveStems()
 	 * @see #getContentSearchConstraint()
 	 * @generated
 	 */
@@ -3533,11 +3533,11 @@ public interface ContentPackage extends EPackage {
 	EReference getContentSearchResult_ContentSearchConstraints();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.content.ContentSearchResult#isIsAscending <em>Is Ascending</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.content.content.ContentSearchResult#getIsAscending <em>Is Ascending</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Ascending</em>'.
-	 * @see org.abchip.mimo.biz.model.content.content.ContentSearchResult#isIsAscending()
+	 * @see org.abchip.mimo.biz.model.content.content.ContentSearchResult#getIsAscending()
 	 * @see #getContentSearchResult()
 	 * @generated
 	 */

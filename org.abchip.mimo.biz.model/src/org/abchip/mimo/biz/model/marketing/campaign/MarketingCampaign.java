@@ -114,7 +114,7 @@ public interface MarketingCampaign extends BizEntity {
 	 * @return the value of the '<em>Campaign Name</em>' attribute.
 	 * @see #setCampaignName(String)
 	 * @see org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage#getMarketingCampaign_CampaignName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getCampaignName();

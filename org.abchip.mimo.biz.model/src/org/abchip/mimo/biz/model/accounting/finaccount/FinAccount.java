@@ -185,7 +185,7 @@ public interface FinAccount extends BizEntityTyped<FinAccountType> {
 	 * @return the value of the '<em>Fin Account Name</em>' attribute.
 	 * @see #setFinAccountName(String)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccount_FinAccountName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getFinAccountName();

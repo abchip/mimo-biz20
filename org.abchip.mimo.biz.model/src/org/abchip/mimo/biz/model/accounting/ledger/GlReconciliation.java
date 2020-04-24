@@ -106,7 +106,7 @@ public interface GlReconciliation extends BizEntity {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlReconciliation_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -132,7 +132,7 @@ public interface GlReconciliation extends BizEntity {
 	 * @return the value of the '<em>Gl Reconciliation Name</em>' attribute.
 	 * @see #setGlReconciliationName(String)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlReconciliation_GlReconciliationName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getGlReconciliationName();

@@ -125,7 +125,7 @@ public interface WebSitePathAlias extends BizEntity {
 	 * @return the value of the '<em>Map Key</em>' attribute.
 	 * @see #setMapKey(String)
 	 * @see org.abchip.mimo.biz.model.content.website.WebsitePackage#getWebSitePathAlias_MapKey()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getMapKey();

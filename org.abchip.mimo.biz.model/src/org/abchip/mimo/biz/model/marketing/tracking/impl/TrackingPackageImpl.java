@@ -1302,8 +1302,8 @@ public class TrackingPackageImpl extends EPackageImpl implements TrackingPackage
 		initEReference(getTrackingCodeOrder_TrackingCodeTypeId(), this.getTrackingCodeType(), null, "trackingCodeTypeId", null, 1, 1, TrackingCodeOrder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getTrackingCodeOrder_TrackingCodeTypeId().getEKeys().add(this.getTrackingCodeType_TrackingCodeTypeId());
 		initEAttribute(getTrackingCodeOrder_AffiliateReferredTimeStamp(), ecorePackage.getEDate(), "affiliateReferredTimeStamp", null, 0, 1, TrackingCodeOrder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getTrackingCodeOrder_HasExported(), ecorePackage.getEBoolean(), "hasExported", null, 0, 1, TrackingCodeOrder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getTrackingCodeOrder_IsBillable(), ecorePackage.getEBoolean(), "isBillable", null, 0, 1, TrackingCodeOrder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTrackingCodeOrder_HasExported(), ecorePackage.getEBooleanObject(), "hasExported", null, 0, 1, TrackingCodeOrder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTrackingCodeOrder_IsBillable(), ecorePackage.getEBooleanObject(), "isBillable", null, 0, 1, TrackingCodeOrder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTrackingCodeOrder_SiteId(), ecorePackage.getEString(), "siteId", null, 0, 1, TrackingCodeOrder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getTrackingCodeOrder_TrackingCodeId(), this.getTrackingCode(), null, "trackingCodeId", null, 0, 1, TrackingCodeOrder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getTrackingCodeOrder_TrackingCodeId().getEKeys().add(this.getTrackingCode_TrackingCodeId());
@@ -1316,8 +1316,8 @@ public class TrackingPackageImpl extends EPackageImpl implements TrackingPackage
 		initEReference(getTrackingCodeOrderReturn_TrackingCodeTypeId(), this.getTrackingCodeType(), null, "trackingCodeTypeId", null, 1, 1, TrackingCodeOrderReturn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getTrackingCodeOrderReturn_TrackingCodeTypeId().getEKeys().add(this.getTrackingCodeType_TrackingCodeTypeId());
 		initEAttribute(getTrackingCodeOrderReturn_AffiliateReferredTimeStamp(), ecorePackage.getEDate(), "affiliateReferredTimeStamp", null, 0, 1, TrackingCodeOrderReturn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getTrackingCodeOrderReturn_HasExported(), ecorePackage.getEBoolean(), "hasExported", null, 0, 1, TrackingCodeOrderReturn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getTrackingCodeOrderReturn_IsBillable(), ecorePackage.getEBoolean(), "isBillable", null, 0, 1, TrackingCodeOrderReturn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTrackingCodeOrderReturn_HasExported(), ecorePackage.getEBooleanObject(), "hasExported", null, 0, 1, TrackingCodeOrderReturn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTrackingCodeOrderReturn_IsBillable(), ecorePackage.getEBooleanObject(), "isBillable", null, 0, 1, TrackingCodeOrderReturn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTrackingCodeOrderReturn_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 0, 1, TrackingCodeOrderReturn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTrackingCodeOrderReturn_SiteId(), ecorePackage.getEString(), "siteId", null, 0, 1, TrackingCodeOrderReturn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getTrackingCodeOrderReturn_TrackingCodeId(), this.getTrackingCode(), null, "trackingCodeId", null, 0, 1, TrackingCodeOrderReturn.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1407,8 +1407,7 @@ public class TrackingPackageImpl extends EPackageImpl implements TrackingPackage
 		  (getTrackingCode_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getTrackingCode_CreatedByUserLogin(),
@@ -1420,8 +1419,7 @@ public class TrackingPackageImpl extends EPackageImpl implements TrackingPackage
 		  (getTrackingCode_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getTrackingCode_GroupId(),
@@ -1439,15 +1437,13 @@ public class TrackingPackageImpl extends EPackageImpl implements TrackingPackage
 		  (getTrackingCode_OverrideCss(),
 		   source,
 		   new String[] {
-			   "type", "url",
-			   "length", "2000"
+			   "type", "url"
 		   });
 		addAnnotation
 		  (getTrackingCode_OverrideLogo(),
 		   source,
 		   new String[] {
-			   "type", "url",
-			   "length", "2000"
+			   "type", "url"
 		   });
 		addAnnotation
 		  (getTrackingCode_ProdCatalogId(),
@@ -1459,8 +1455,7 @@ public class TrackingPackageImpl extends EPackageImpl implements TrackingPackage
 		  (getTrackingCode_RedirectUrl(),
 		   source,
 		   new String[] {
-			   "type", "url",
-			   "length", "2000"
+			   "type", "url"
 		   });
 		addAnnotation
 		  (getTrackingCode_SubgroupId(),
@@ -1503,8 +1498,7 @@ public class TrackingPackageImpl extends EPackageImpl implements TrackingPackage
 		  (getTrackingCodeType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getTrackingCodeVisit_VisitId(),

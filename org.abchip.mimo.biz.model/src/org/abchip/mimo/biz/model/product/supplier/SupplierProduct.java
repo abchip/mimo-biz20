@@ -193,7 +193,7 @@ public interface SupplierProduct extends BizEntity {
 	 * @return the value of the '<em>Comments</em>' attribute.
 	 * @see #setComments(String)
 	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getSupplierProduct_Comments()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getComments();
@@ -431,7 +431,7 @@ public interface SupplierProduct extends BizEntity {
 	 * @return the value of the '<em>Supplier Product Id</em>' attribute.
 	 * @see #setSupplierProductId(String)
 	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getSupplierProduct_SupplierProductId()
-	 * @model annotation="mimo-ent-format length='20'"
+	 * @model annotation="mimo-ent-format length='60'"
 	 * @generated
 	 */
 	String getSupplierProductId();
@@ -457,7 +457,7 @@ public interface SupplierProduct extends BizEntity {
 	 * @return the value of the '<em>Supplier Product Name</em>' attribute.
 	 * @see #setSupplierProductName(String)
 	 * @see org.abchip.mimo.biz.model.product.supplier.SupplierPackage#getSupplierProduct_SupplierProductName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getSupplierProductName();

@@ -19,7 +19,7 @@ import org.abchip.mimo.biz.BizEntity;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.catalina.session.CatalinaSession#getSessionId <em>Session Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.catalina.session.CatalinaSession#isIsValid <em>Is Valid</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.catalina.session.CatalinaSession#getIsValid <em>Is Valid</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.catalina.session.CatalinaSession#getLastAccessed <em>Last Accessed</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.catalina.session.CatalinaSession#getMaxIdle <em>Max Idle</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.catalina.session.CatalinaSession#getSessionInfo <em>Session Info</em>}</li>
@@ -61,28 +61,24 @@ public interface CatalinaSession extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Is Valid</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Valid</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Valid</em>' attribute.
-	 * @see #setIsValid(boolean)
+	 * @see #setIsValid(Boolean)
 	 * @see org.abchip.mimo.biz.model.catalina.session.SessionPackage#getCatalinaSession_IsValid()
 	 * @model
 	 * @generated
 	 */
-	boolean isIsValid();
+	Boolean getIsValid();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.catalina.session.CatalinaSession#isIsValid <em>Is Valid</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.catalina.session.CatalinaSession#getIsValid <em>Is Valid</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is Valid</em>' attribute.
-	 * @see #isIsValid()
+	 * @see #getIsValid()
 	 * @generated
 	 */
-	void setIsValid(boolean value);
+	void setIsValid(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Last Accessed</b></em>' attribute.

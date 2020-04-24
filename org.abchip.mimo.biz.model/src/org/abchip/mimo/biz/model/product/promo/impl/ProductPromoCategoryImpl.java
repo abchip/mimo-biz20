@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl#getProductPromoActionSeqId <em>Product Promo Action Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl#getProductPromoCondSeqId <em>Product Promo Cond Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl#getProductPromoRuleId <em>Product Promo Rule Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl#isIncludeSubCategories <em>Include Sub Categories</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl#getIncludeSubCategories <em>Include Sub Categories</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl#getProductPromoApplEnumId <em>Product Promo Appl Enum Id</em>}</li>
  * </ul>
  *
@@ -78,26 +78,6 @@ public class ProductPromoCategoryImpl extends BizEntityImpl implements ProductPr
 	@Override
 	public void setAndGroupId(String newAndGroupId) {
 		eSet(PromoPackage.Literals.PRODUCT_PROMO_CATEGORY__AND_GROUP_ID, newAndGroupId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean isIncludeSubCategories() {
-		return (Boolean)eGet(PromoPackage.Literals.PRODUCT_PROMO_CATEGORY__INCLUDE_SUB_CATEGORIES, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setIncludeSubCategories(boolean newIncludeSubCategories) {
-		eSet(PromoPackage.Literals.PRODUCT_PROMO_CATEGORY__INCLUDE_SUB_CATEGORIES, newIncludeSubCategories);
 	}
 
 	/**
@@ -178,6 +158,26 @@ public class ProductPromoCategoryImpl extends BizEntityImpl implements ProductPr
 	@Override
 	public void setProductPromoRuleId(String newProductPromoRuleId) {
 		eSet(PromoPackage.Literals.PRODUCT_PROMO_CATEGORY__PRODUCT_PROMO_RULE_ID, newProductPromoRuleId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Boolean getIncludeSubCategories() {
+		return (Boolean)eGet(PromoPackage.Literals.PRODUCT_PROMO_CATEGORY__INCLUDE_SUB_CATEGORIES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setIncludeSubCategories(Boolean newIncludeSubCategories) {
+		eSet(PromoPackage.Literals.PRODUCT_PROMO_CATEGORY__INCLUDE_SUB_CATEGORIES, newIncludeSubCategories);
 	}
 
 	/**

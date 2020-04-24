@@ -1178,8 +1178,7 @@ public class SecuritygroupPackageImpl extends EPackageImpl implements Securitygr
 		  (getSecurityGroup_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getSecurityGroup_GroupName(),
@@ -1197,8 +1196,7 @@ public class SecuritygroupPackageImpl extends EPackageImpl implements Securitygr
 		  (getSecurityPermission_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getTarpittedLoginView_UserLoginId(),

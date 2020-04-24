@@ -2371,11 +2371,11 @@ public interface FinaccountPackage extends EPackage {
 	EAttribute getFinAccountType_HasTable();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#isIsRefundable <em>Is Refundable</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getIsRefundable <em>Is Refundable</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Refundable</em>'.
-	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#isIsRefundable()
+	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getIsRefundable()
 	 * @see #getFinAccountType()
 	 * @generated
 	 */

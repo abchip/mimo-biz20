@@ -35,7 +35,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getLabelHtml <em>Label Html</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getLabelImage <em>Label Image</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getLabelIntlSignImage <em>Label Intl Sign Image</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#isLabelPrinted <em>Label Printed</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getLabelPrinted <em>Label Printed</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getPackageOtherCost <em>Package Other Cost</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getPackageServiceCost <em>Package Service Cost</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl#getPackageTransportCost <em>Package Transport Cost</em>}</li>
@@ -235,7 +235,7 @@ public class ShipmentPackageRouteSegImpl extends BizEntityImpl implements Shipme
 	 * @generated
 	 */
 	@Override
-	public boolean isLabelPrinted() {
+	public Boolean getLabelPrinted() {
 		return (Boolean)eGet(Shipment_Package.Literals.SHIPMENT_PACKAGE_ROUTE_SEG__LABEL_PRINTED, true);
 	}
 
@@ -245,7 +245,7 @@ public class ShipmentPackageRouteSegImpl extends BizEntityImpl implements Shipme
 	 * @generated
 	 */
 	@Override
-	public void setLabelPrinted(boolean newLabelPrinted) {
+	public void setLabelPrinted(Boolean newLabelPrinted) {
 		eSet(Shipment_Package.Literals.SHIPMENT_PACKAGE_ROUTE_SEG__LABEL_PRINTED, newLabelPrinted);
 	}
 

@@ -842,22 +842,22 @@ public interface SynchronizationPackage extends EPackage {
 	EReference getEntitySync_EntitySyncIncludes();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySync#isForPullOnly <em>For Pull Only</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySync#getForPullOnly <em>For Pull Only</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>For Pull Only</em>'.
-	 * @see org.abchip.mimo.biz.model.entity.synchronization.EntitySync#isForPullOnly()
+	 * @see org.abchip.mimo.biz.model.entity.synchronization.EntitySync#getForPullOnly()
 	 * @see #getEntitySync()
 	 * @generated
 	 */
 	EAttribute getEntitySync_ForPullOnly();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySync#isForPushOnly <em>For Push Only</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySync#getForPushOnly <em>For Push Only</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>For Push Only</em>'.
-	 * @see org.abchip.mimo.biz.model.entity.synchronization.EntitySync#isForPushOnly()
+	 * @see org.abchip.mimo.biz.model.entity.synchronization.EntitySync#getForPushOnly()
 	 * @see #getEntitySync()
 	 * @generated
 	 */

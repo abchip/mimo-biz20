@@ -23,8 +23,8 @@ import org.abchip.mimo.biz.model.order.order.OrderHeader;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#getOrderId <em>Order Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#getTrackingCodeTypeId <em>Tracking Code Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#getAffiliateReferredTimeStamp <em>Affiliate Referred Time Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#isHasExported <em>Has Exported</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#isIsBillable <em>Is Billable</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#getHasExported <em>Has Exported</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#getIsBillable <em>Is Billable</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#getSiteId <em>Site Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#getTrackingCodeId <em>Tracking Code Id</em>}</li>
  * </ul>
@@ -63,54 +63,46 @@ public interface TrackingCodeOrder extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Has Exported</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Has Exported</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Has Exported</em>' attribute.
-	 * @see #setHasExported(boolean)
+	 * @see #setHasExported(Boolean)
 	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeOrder_HasExported()
 	 * @model
 	 * @generated
 	 */
-	boolean isHasExported();
+	Boolean getHasExported();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#isHasExported <em>Has Exported</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#getHasExported <em>Has Exported</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Has Exported</em>' attribute.
-	 * @see #isHasExported()
+	 * @see #getHasExported()
 	 * @generated
 	 */
-	void setHasExported(boolean value);
+	void setHasExported(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Is Billable</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Billable</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Billable</em>' attribute.
-	 * @see #setIsBillable(boolean)
+	 * @see #setIsBillable(Boolean)
 	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCodeOrder_IsBillable()
 	 * @model
 	 * @generated
 	 */
-	boolean isIsBillable();
+	Boolean getIsBillable();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#isIsBillable <em>Is Billable</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#getIsBillable <em>Is Billable</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is Billable</em>' attribute.
-	 * @see #isIsBillable()
+	 * @see #getIsBillable()
 	 * @generated
 	 */
-	void setIsBillable(boolean value);
+	void setIsBillable(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Id</b></em>' reference.

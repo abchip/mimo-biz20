@@ -1768,7 +1768,7 @@ public class CategoryPackageImpl extends EPackageImpl implements CategoryPackage
 		initEReference(getProductCategory_ProductCategoryAttributes(), this.getProductCategoryAttribute(), null, "productCategoryAttributes", null, 0, -1, ProductCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getProductCategory_ProductCategoryTypeId(), this.getProductCategoryType(), null, "productCategoryTypeId", null, 0, 1, ProductCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getProductCategory_ProductCategoryTypeId().getEKeys().add(this.getProductCategoryType_ProductCategoryTypeId());
-		initEAttribute(getProductCategory_ShowInSelect(), ecorePackage.getEBoolean(), "showInSelect", null, 0, 1, ProductCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProductCategory_ShowInSelect(), ecorePackage.getEBooleanObject(), "showInSelect", null, 0, 1, ProductCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productCategoryAttributeEClass, ProductCategoryAttribute.class, "ProductCategoryAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductCategoryAttribute_ProductCategoryId(), this.getProductCategory(), null, "productCategoryId", null, 1, 1, ProductCategoryAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1982,22 +1982,19 @@ public class CategoryPackageImpl extends EPackageImpl implements CategoryPackage
 		  (getProductCategory_CategoryImageUrl(),
 		   source,
 		   new String[] {
-			   "type", "url",
-			   "length", "2000"
+			   "type", "url"
 		   });
 		addAnnotation
 		  (getProductCategory_CategoryName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getProductCategory_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductCategory_DetailScreen(),
@@ -2009,15 +2006,13 @@ public class CategoryPackageImpl extends EPackageImpl implements CategoryPackage
 		  (getProductCategory_LinkOneImageUrl(),
 		   source,
 		   new String[] {
-			   "type", "url",
-			   "length", "2000"
+			   "type", "url"
 		   });
 		addAnnotation
 		  (getProductCategory_LinkTwoImageUrl(),
 		   source,
 		   new String[] {
-			   "type", "url",
-			   "length", "2000"
+			   "type", "url"
 		   });
 		addAnnotation
 		  (getProductCategoryAttribute_AttrName(),
@@ -2029,8 +2024,7 @@ public class CategoryPackageImpl extends EPackageImpl implements CategoryPackage
 		  (getProductCategoryAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductCategoryAttribute_AttrValue(),
@@ -2063,8 +2057,7 @@ public class CategoryPackageImpl extends EPackageImpl implements CategoryPackage
 		  (getProductCategoryContentType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductCategoryLink_LinkSeqId(),
@@ -2076,8 +2069,7 @@ public class CategoryPackageImpl extends EPackageImpl implements CategoryPackage
 		  (getProductCategoryLink_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getProductCategoryLink_DetailSubScreen(),
@@ -2089,15 +2081,13 @@ public class CategoryPackageImpl extends EPackageImpl implements CategoryPackage
 		  (getProductCategoryLink_ImageTwoUrl(),
 		   source,
 		   new String[] {
-			   "type", "url",
-			   "length", "2000"
+			   "type", "url"
 		   });
 		addAnnotation
 		  (getProductCategoryLink_ImageUrl(),
 		   source,
 		   new String[] {
-			   "type", "url",
-			   "length", "2000"
+			   "type", "url"
 		   });
 		addAnnotation
 		  (getProductCategoryLink_LinkInfo(),
@@ -2116,15 +2106,13 @@ public class CategoryPackageImpl extends EPackageImpl implements CategoryPackage
 		  (getProductCategoryLink_TitleText(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductCategoryMember_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getProductCategoryMember_Quantity(),
@@ -2145,8 +2133,7 @@ public class CategoryPackageImpl extends EPackageImpl implements CategoryPackage
 		  (getProductCategoryRole_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getProductCategoryRollup_SequenceNum(),
@@ -2165,8 +2152,7 @@ public class CategoryPackageImpl extends EPackageImpl implements CategoryPackage
 		  (getProductCategoryType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductCategoryTypeAttr_AttrName(),
@@ -2178,8 +2164,7 @@ public class CategoryPackageImpl extends EPackageImpl implements CategoryPackage
 		  (getProductCategoryTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

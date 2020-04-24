@@ -2013,8 +2013,7 @@ public class AbilityPackageImpl extends EPackageImpl implements AbilityPackage {
 		  (getPartyQualType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getPartyResume_ResumeId(),
@@ -2059,8 +2058,7 @@ public class AbilityPackageImpl extends EPackageImpl implements AbilityPackage {
 		  (getPerfRatingType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getPerfReview_EmployeeRoleTypeId(),
@@ -2078,8 +2076,7 @@ public class AbilityPackageImpl extends EPackageImpl implements AbilityPackage {
 		  (getPerfReview_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getPerfReview_ManagerRoleTypeId(),
@@ -2109,8 +2106,7 @@ public class AbilityPackageImpl extends EPackageImpl implements AbilityPackage {
 		  (getPerfReviewItem_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getPerfReviewItemType_PerfReviewItemTypeId(),
@@ -2122,8 +2118,7 @@ public class AbilityPackageImpl extends EPackageImpl implements AbilityPackage {
 		  (getPerfReviewItemType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getPerformanceNote_RoleTypeId(),
@@ -2135,8 +2130,7 @@ public class AbilityPackageImpl extends EPackageImpl implements AbilityPackage {
 		  (getPerformanceNote_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getPersonTraining_ApprovalStatus(),
@@ -2148,8 +2142,7 @@ public class AbilityPackageImpl extends EPackageImpl implements AbilityPackage {
 		  (getPersonTraining_Reason(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getResponsibilityType_ResponsibilityTypeId(),
@@ -2161,8 +2154,7 @@ public class AbilityPackageImpl extends EPackageImpl implements AbilityPackage {
 		  (getResponsibilityType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getSkillType_SkillTypeId(),
@@ -2174,8 +2166,7 @@ public class AbilityPackageImpl extends EPackageImpl implements AbilityPackage {
 		  (getSkillType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getTrainingClassType_TrainingClassTypeId(),
@@ -2187,8 +2178,7 @@ public class AbilityPackageImpl extends EPackageImpl implements AbilityPackage {
 		  (getTrainingClassType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

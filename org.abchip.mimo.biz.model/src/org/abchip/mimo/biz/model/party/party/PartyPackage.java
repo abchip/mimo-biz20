@@ -4402,11 +4402,11 @@ public interface PartyPackage extends EPackage {
 	EAttribute getParty_ExternalId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.Party#isIsUnread <em>Is Unread</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.Party#getIsUnread <em>Is Unread</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Unread</em>'.
-	 * @see org.abchip.mimo.biz.model.party.party.Party#isIsUnread()
+	 * @see org.abchip.mimo.biz.model.party.party.Party#getIsUnread()
 	 * @see #getParty()
 	 * @generated
 	 */
@@ -4999,11 +4999,11 @@ public interface PartyPackage extends EPackage {
 	EAttribute getPartyDataSource_Comments();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.PartyDataSource#isIsCreate <em>Is Create</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.PartyDataSource#getIsCreate <em>Is Create</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Create</em>'.
-	 * @see org.abchip.mimo.biz.model.party.party.PartyDataSource#isIsCreate()
+	 * @see org.abchip.mimo.biz.model.party.party.PartyDataSource#getIsCreate()
 	 * @see #getPartyDataSource()
 	 * @generated
 	 */
@@ -6180,11 +6180,11 @@ public interface PartyPackage extends EPackage {
 	EReference getPerson_EmploymentStatusEnumId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.Person#isExistingCustomer <em>Existing Customer</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.Person#getExistingCustomer <em>Existing Customer</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Existing Customer</em>'.
-	 * @see org.abchip.mimo.biz.model.party.party.Person#isExistingCustomer()
+	 * @see org.abchip.mimo.biz.model.party.party.Person#getExistingCustomer()
 	 * @see #getPerson()
 	 * @generated
 	 */

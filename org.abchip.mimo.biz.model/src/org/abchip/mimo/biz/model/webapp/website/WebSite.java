@@ -26,7 +26,7 @@ import org.abchip.mimo.biz.model.product.store.ProductStore;
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#isAllowProductStoreChange <em>Allow Product Store Change</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getCookieDomain <em>Cookie Domain</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#isDisplayMaintenancePage <em>Display Maintenance Page</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#isEnableHttps <em>Enable Https</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getEnableHttps <em>Enable Https</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getHostedPathAlias <em>Hosted Path Alias</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getHttpHost <em>Http Host</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getHttpPort <em>Http Port</em>}</li>
@@ -157,28 +157,24 @@ public interface WebSite extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Enable Https</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Enable Https</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Enable Https</em>' attribute.
-	 * @see #setEnableHttps(boolean)
+	 * @see #setEnableHttps(Boolean)
 	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebSite_EnableHttps()
 	 * @model
 	 * @generated
 	 */
-	boolean isEnableHttps();
+	Boolean getEnableHttps();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.website.WebSite#isEnableHttps <em>Enable Https</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getEnableHttps <em>Enable Https</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Enable Https</em>' attribute.
-	 * @see #isEnableHttps()
+	 * @see #getEnableHttps()
 	 * @generated
 	 */
-	void setEnableHttps(boolean value);
+	void setEnableHttps(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Hosted Path Alias</b></em>' attribute.
@@ -375,7 +371,7 @@ public interface WebSite extends BizEntity {
 	 * @return the value of the '<em>Secure Content Prefix</em>' attribute.
 	 * @see #setSecureContentPrefix(String)
 	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebSite_SecureContentPrefix()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getSecureContentPrefix();
@@ -401,7 +397,7 @@ public interface WebSite extends BizEntity {
 	 * @return the value of the '<em>Site Name</em>' attribute.
 	 * @see #setSiteName(String)
 	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebSite_SiteName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getSiteName();
@@ -427,7 +423,7 @@ public interface WebSite extends BizEntity {
 	 * @return the value of the '<em>Standard Content Prefix</em>' attribute.
 	 * @see #setStandardContentPrefix(String)
 	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebSite_StandardContentPrefix()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getStandardContentPrefix();

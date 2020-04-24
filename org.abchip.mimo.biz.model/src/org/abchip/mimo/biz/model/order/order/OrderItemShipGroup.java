@@ -33,8 +33,8 @@ import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getEstimatedShipDate <em>Estimated Ship Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getFacilityId <em>Facility Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getGiftMessage <em>Gift Message</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#isIsGift <em>Is Gift</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#isMaySplit <em>May Split</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getIsGift <em>Is Gift</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getMaySplit <em>May Split</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getShipAfterDate <em>Ship After Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getShipByDate <em>Ship By Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getShipmentMethodTypeId <em>Shipment Method Type Id</em>}</li>
@@ -237,54 +237,46 @@ public interface OrderItemShipGroup extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Is Gift</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Gift</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Gift</em>' attribute.
-	 * @see #setIsGift(boolean)
+	 * @see #setIsGift(Boolean)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_IsGift()
 	 * @model
 	 * @generated
 	 */
-	boolean isIsGift();
+	Boolean getIsGift();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#isIsGift <em>Is Gift</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getIsGift <em>Is Gift</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is Gift</em>' attribute.
-	 * @see #isIsGift()
+	 * @see #getIsGift()
 	 * @generated
 	 */
-	void setIsGift(boolean value);
+	void setIsGift(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>May Split</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>May Split</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>May Split</em>' attribute.
-	 * @see #setMaySplit(boolean)
+	 * @see #setMaySplit(Boolean)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemShipGroup_MaySplit()
 	 * @model
 	 * @generated
 	 */
-	boolean isMaySplit();
+	Boolean getMaySplit();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#isMaySplit <em>May Split</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getMaySplit <em>May Split</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>May Split</em>' attribute.
-	 * @see #isMaySplit()
+	 * @see #getMaySplit()
 	 * @generated
 	 */
-	void setMaySplit(boolean value);
+	void setMaySplit(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Order Id</b></em>' reference.

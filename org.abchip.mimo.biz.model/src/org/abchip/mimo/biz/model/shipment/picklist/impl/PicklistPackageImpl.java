@@ -1312,8 +1312,7 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 		  (getPicklist_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getPicklist_LastModifiedByUserLogin(),

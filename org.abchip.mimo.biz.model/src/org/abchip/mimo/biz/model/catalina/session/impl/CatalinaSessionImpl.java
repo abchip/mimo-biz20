@@ -21,7 +21,7 @@ import org.eclipse.emf.ecore.EClass;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.catalina.session.impl.CatalinaSessionImpl#getSessionId <em>Session Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.catalina.session.impl.CatalinaSessionImpl#isIsValid <em>Is Valid</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.catalina.session.impl.CatalinaSessionImpl#getIsValid <em>Is Valid</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.catalina.session.impl.CatalinaSessionImpl#getLastAccessed <em>Last Accessed</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.catalina.session.impl.CatalinaSessionImpl#getMaxIdle <em>Max Idle</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.catalina.session.impl.CatalinaSessionImpl#getSessionInfo <em>Session Info</em>}</li>
@@ -81,7 +81,7 @@ public class CatalinaSessionImpl extends BizEntityImpl implements CatalinaSessio
 	 * @generated
 	 */
 	@Override
-	public boolean isIsValid() {
+	public Boolean getIsValid() {
 		return (Boolean)eGet(SessionPackage.Literals.CATALINA_SESSION__IS_VALID, true);
 	}
 
@@ -91,7 +91,7 @@ public class CatalinaSessionImpl extends BizEntityImpl implements CatalinaSessio
 	 * @generated
 	 */
 	@Override
-	public void setIsValid(boolean newIsValid) {
+	public void setIsValid(Boolean newIsValid) {
 		eSet(SessionPackage.Literals.CATALINA_SESSION__IS_VALID, newIsValid);
 	}
 

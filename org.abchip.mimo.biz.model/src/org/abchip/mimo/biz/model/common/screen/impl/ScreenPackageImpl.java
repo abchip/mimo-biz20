@@ -935,8 +935,7 @@ public class ScreenPackageImpl extends EPackageImpl implements ScreenPackage {
 		  (getCustomScreen_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getCustomScreenType_CustomScreenTypeId(),
@@ -948,8 +947,7 @@ public class ScreenPackageImpl extends EPackageImpl implements ScreenPackage {
 		  (getCustomScreenType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getCustomScreenType_ParentTypeId(),

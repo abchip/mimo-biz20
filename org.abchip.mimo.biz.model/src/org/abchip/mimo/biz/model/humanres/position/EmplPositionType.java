@@ -40,7 +40,7 @@ public interface EmplPositionType extends BizEntityType<EmplPosition> {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPositionType_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();

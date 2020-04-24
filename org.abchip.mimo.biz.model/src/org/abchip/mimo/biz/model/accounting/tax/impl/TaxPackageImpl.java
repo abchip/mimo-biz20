@@ -1866,7 +1866,7 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 		initEAttribute(getZipSalesTaxLookup_CountyUseTax(), ecorePackage.getEBigDecimal(), "countyUseTax", null, 0, 1, ZipSalesTaxLookup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getZipSalesTaxLookup_GeneralDefault(), ecorePackage.getEString(), "generalDefault", null, 0, 1, ZipSalesTaxLookup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getZipSalesTaxLookup_GeoCode(), ecorePackage.getEString(), "geoCode", null, 0, 1, ZipSalesTaxLookup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getZipSalesTaxLookup_InsideCity(), ecorePackage.getEBoolean(), "insideCity", null, 0, 1, ZipSalesTaxLookup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getZipSalesTaxLookup_InsideCity(), ecorePackage.getEBooleanObject(), "insideCity", null, 0, 1, ZipSalesTaxLookup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getZipSalesTaxLookup_StateSalesTax(), ecorePackage.getEBigDecimal(), "stateSalesTax", null, 0, 1, ZipSalesTaxLookup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getZipSalesTaxLookup_StateUseTax(), ecorePackage.getEBigDecimal(), "stateUseTax", null, 0, 1, ZipSalesTaxLookup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
@@ -1945,8 +1945,7 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 		  (getTaxAuthorityAssocType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getTaxAuthorityCategory_TaxAuthGeoId(),
@@ -1982,8 +1981,7 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 		  (getTaxAuthorityRateProduct_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getTaxAuthorityRateProduct_MinItemPrice(),
@@ -2037,8 +2035,7 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 		  (getTaxAuthorityRateType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getZipSalesRuleLookup_City(),

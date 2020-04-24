@@ -1249,8 +1249,7 @@ public class UomPackageImpl extends EPackageImpl implements UomPackage {
 		  (getUom_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getUom_NumericCode(),
@@ -1301,8 +1300,7 @@ public class UomPackageImpl extends EPackageImpl implements UomPackage {
 		  (getUomType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

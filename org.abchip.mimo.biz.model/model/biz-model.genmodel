@@ -29,8 +29,8 @@
         <genEnumLiterals ecoreEnumLiteral="biz-model.ecore#//accounting/ProcessMode/Production"/>
       </genEnums>
       <genEnums typeSafeEnumCompatible="false" ecoreEnum="biz-model.ecore#//accounting/AuthMode">
-        <genEnumLiterals ecoreEnumLiteral="biz-model.ecore#//accounting/AuthMode/FullAuthorize"/>
-        <genEnumLiterals ecoreEnumLiteral="biz-model.ecore#//accounting/AuthMode/PreAuth"/>
+        <genEnumLiterals ecoreEnumLiteral="biz-model.ecore#//accounting/AuthMode/Full_authorize"/>
+        <genEnumLiterals ecoreEnumLiteral="biz-model.ecore#//accounting/AuthMode/Pre_Auth"/>
       </genEnums>
       <nestedGenPackages prefix="Budget" basePackage="org.abchip.mimo.biz.model.accounting"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-model.ecore#//accounting/budget">
@@ -3049,6 +3049,36 @@
       </nestedGenPackages>
       <nestedGenPackages prefix="Test" basePackage="org.abchip.mimo.biz.model.entity"
           disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-model.ecore#//entity/test">
+        <genClasses ecoreClass="biz-model.ecore#//entity/test/TestEntity">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldId"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldBlob"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldByteArray"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldComment"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldCreditCardDate"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldCreditCardNumber"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldCurrencyAmount"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldCurrencyPrecise"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldDate"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldDateTime"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldDescription"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldEmail"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldFixedPoint"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldFloatingPoint"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldIdLong"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldIdVlong"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldIndicator"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldLongVarchar"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldName"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldNumeric"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldObject"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldShortVarchar"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldTelNumber"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldTime"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldUrl"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldValue"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldVeryLong"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestEntity/fieldVeryShort"/>
+        </genClasses>
         <genClasses ecoreClass="biz-model.ecore#//entity/test/TestFieldType">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestFieldType/testFieldTypeId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestFieldType/blobField"/>
@@ -3361,6 +3391,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//humanres/employment/PayGrade/payGradeName"/>
         </genClasses>
         <genClasses ecoreClass="biz-model.ecore#//humanres/employment/PayHistory">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//humanres/employment/PayHistory/emplFromDate"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//humanres/employment/PayHistory/fromDate"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//humanres/employment/PayHistory/partyIdFrom"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//humanres/employment/PayHistory/partyIdTo"/>
@@ -3606,6 +3637,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//manufacturing/mrp/MrpEvent/eventName"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//manufacturing/mrp/MrpEvent/facilityId"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//manufacturing/mrp/MrpEvent/facilityIdTo"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//manufacturing/mrp/MrpEvent/isLate"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//manufacturing/mrp/MrpEvent/quantity"/>
         </genClasses>
@@ -5027,6 +5059,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//order/requirement/Requirement/estimatedBudget"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//order/requirement/Requirement/facilityId"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//order/requirement/Requirement/facilityIdTo"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//order/requirement/Requirement/fixedAssetId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//order/requirement/Requirement/lastModifiedByUserLogin"/>
@@ -6714,6 +6747,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/facility/Facility/description"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//product/facility/Facility/facilityAttributes"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/facility/Facility/facilityLevel"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//product/facility/Facility/facilityLocations"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/facility/Facility/facilityName"/>
@@ -6734,6 +6768,10 @@
               ecoreFeature="ecore:EReference biz-model.ecore#//product/facility/Facility/primaryFacilityGroupId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//product/facility/Facility/productStoreId"/>
+        </genClasses>
+        <genClasses ecoreClass="biz-model.ecore#//product/facility/FacilityAssocType">
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/facility/FacilityAssocType/facilityAssocTypeId"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/facility/FacilityAssocType/description"/>
         </genClasses>
         <genClasses ecoreClass="biz-model.ecore#//product/facility/FacilityAttribute">
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -6889,7 +6927,23 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/facility/ProductFacility/minimumStock"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/facility/ProductFacility/reorderQuantity"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/facility/ProductFacility/replenishMethodEnumId"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//product/facility/ProductFacility/requirementMethodEnumId"/>
+        </genClasses>
+        <genClasses ecoreClass="biz-model.ecore#//product/facility/ProductFacilityAssoc">
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/facility/ProductFacilityAssoc/productId"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/facility/ProductFacilityAssoc/facilityId"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/facility/ProductFacilityAssoc/facilityIdTo"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/facility/ProductFacilityAssoc/facilityAssocTypeId"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/facility/ProductFacilityAssoc/fromDate"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/facility/ProductFacilityAssoc/sequenceNum"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/facility/ProductFacilityAssoc/thruDate"/>
+          <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/facility/ProductFacilityAssoc/transitTime"/>
         </genClasses>
         <genClasses ecoreClass="biz-model.ecore#//product/facility/ProductFacilityLocation">
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -9183,14 +9237,14 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//webapp/visit/ServerHit/contentId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//webapp/visit/ServerHit/hitStartDateTime"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
-              ecoreFeature="ecore:EReference biz-model.ecore#//webapp/visit/ServerHit/idByIpContactMechId"/>
+              ecoreFeature="ecore:EAttribute biz-model.ecore#//webapp/visit/ServerHit/idByIpContactMechId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
-              ecoreFeature="ecore:EReference biz-model.ecore#//webapp/visit/ServerHit/internalContentId"/>
+              ecoreFeature="ecore:EAttribute biz-model.ecore#//webapp/visit/ServerHit/internalContentId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//webapp/visit/ServerHit/numOfBytes"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
-              ecoreFeature="ecore:EReference biz-model.ecore#//webapp/visit/ServerHit/partyId"/>
+              ecoreFeature="ecore:EAttribute biz-model.ecore#//webapp/visit/ServerHit/partyId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
-              ecoreFeature="ecore:EReference biz-model.ecore#//webapp/visit/ServerHit/refByWebContactMechId"/>
+              ecoreFeature="ecore:EAttribute biz-model.ecore#//webapp/visit/ServerHit/refByWebContactMechId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//webapp/visit/ServerHit/referrerUrl"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//webapp/visit/ServerHit/requestUrl"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//webapp/visit/ServerHit/runningTimeMillis"/>
@@ -9207,7 +9261,7 @@
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//webapp/visit/ServerHitBin/hitTypeId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
-              ecoreFeature="ecore:EReference biz-model.ecore#//webapp/visit/ServerHitBin/internalContentId"/>
+              ecoreFeature="ecore:EAttribute biz-model.ecore#//webapp/visit/ServerHitBin/internalContentId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//webapp/visit/ServerHitBin/maxTimeMillis"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//webapp/visit/ServerHitBin/minTimeMillis"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//webapp/visit/ServerHitBin/numberHits"/>
@@ -9274,7 +9328,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//webapp/visit/Visitor/visitorId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//webapp/visit/Visitor/partyId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
-              ecoreFeature="ecore:EReference biz-model.ecore#//webapp/visit/Visitor/userLoginId"/>
+              ecoreFeature="ecore:EAttribute biz-model.ecore#//webapp/visit/Visitor/userLoginId"/>
         </genClasses>
       </nestedGenPackages>
       <nestedGenPackages prefix="Website" basePackage="org.abchip.mimo.biz.model.webapp"

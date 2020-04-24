@@ -82,7 +82,7 @@ public interface PayrollPreference extends BizEntity {
 	 * @return the value of the '<em>Bank Name</em>' attribute.
 	 * @see #setBankName(String)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayrollPreference_BankName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getBankName();

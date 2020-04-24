@@ -2313,8 +2313,8 @@ public class ReturnPackageImpl extends EPackageImpl implements ReturnPackage {
 		initEAttribute(getReturnAdjustment_CustomerReferenceId(), ecorePackage.getEString(), "customerReferenceId", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnAdjustment_Description(), ecorePackage.getEString(), "description", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnAdjustment_ExemptAmount(), ecorePackage.getEBigDecimal(), "exemptAmount", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getReturnAdjustment_IncludeInShipping(), ecorePackage.getEBoolean(), "includeInShipping", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getReturnAdjustment_IncludeInTax(), ecorePackage.getEBoolean(), "includeInTax", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getReturnAdjustment_IncludeInShipping(), ecorePackage.getEBooleanObject(), "includeInShipping", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getReturnAdjustment_IncludeInTax(), ecorePackage.getEBooleanObject(), "includeInTax", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnAdjustment_LastModifiedByUserLogin(), ecorePackage.getEString(), "lastModifiedByUserLogin", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getReturnAdjustment_LastModifiedDate(), ecorePackage.getEDate(), "lastModifiedDate", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnAdjustment_OrderAdjustmentId(), theOrderPackage.getOrderAdjustment(), null, "orderAdjustmentId", null, 0, 1, ReturnAdjustment.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2376,7 +2376,7 @@ public class ReturnPackageImpl extends EPackageImpl implements ReturnPackage {
 		getReturnHeader_FinAccountId().getEKeys().add(theFinaccountPackage.getFinAccount_FinAccountId());
 		initEReference(getReturnHeader_FromPartyId(), thePartyPackage_1.getParty(), null, "fromPartyId", null, 0, 1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getReturnHeader_FromPartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
-		initEAttribute(getReturnHeader_NeedsInventoryReceive(), ecorePackage.getEBoolean(), "needsInventoryReceive", null, 0, 1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getReturnHeader_NeedsInventoryReceive(), ecorePackage.getEBooleanObject(), "needsInventoryReceive", null, 0, 1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getReturnHeader_OriginContactMechId(), theContactPackage_1.getContactMech(), null, "originContactMechId", null, 0, 1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getReturnHeader_OriginContactMechId().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
 		initEReference(getReturnHeader_PaymentMethodId(), thePaymentPackage.getPaymentMethod(), null, "paymentMethodId", null, 0, 1, ReturnHeader.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2836,8 +2836,7 @@ public class ReturnPackageImpl extends EPackageImpl implements ReturnPackage {
 		  (getReturnAdjustment_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getReturnAdjustment_CorrespondingProductId(),
@@ -2855,8 +2854,7 @@ public class ReturnPackageImpl extends EPackageImpl implements ReturnPackage {
 		  (getReturnAdjustment_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getReturnAdjustment_ExemptAmount(),
@@ -2938,8 +2936,7 @@ public class ReturnPackageImpl extends EPackageImpl implements ReturnPackage {
 		  (getReturnAdjustmentType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getReturnHeader_ReturnId(),
@@ -2963,8 +2960,7 @@ public class ReturnPackageImpl extends EPackageImpl implements ReturnPackage {
 		  (getReturnHeaderType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getReturnItem_ReturnItemSeqId(),
@@ -2976,8 +2972,7 @@ public class ReturnPackageImpl extends EPackageImpl implements ReturnPackage {
 		  (getReturnItem_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getReturnItem_OrderItemSeqId(),
@@ -3081,8 +3076,7 @@ public class ReturnPackageImpl extends EPackageImpl implements ReturnPackage {
 		  (getReturnItemType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getReturnItemTypeMap_ReturnItemMapKey(),
@@ -3100,8 +3094,7 @@ public class ReturnPackageImpl extends EPackageImpl implements ReturnPackage {
 		  (getReturnReason_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getReturnReason_SequenceId(),
@@ -3131,8 +3124,7 @@ public class ReturnPackageImpl extends EPackageImpl implements ReturnPackage {
 		  (getReturnType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getReturnType_SequenceId(),

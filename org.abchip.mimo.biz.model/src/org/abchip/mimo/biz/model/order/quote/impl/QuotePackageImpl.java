@@ -2196,7 +2196,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		initEReference(getQuoteItem_DeliverableTypeId(), theWorkeffortPackage.getDeliverableType(), null, "deliverableTypeId", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getQuoteItem_DeliverableTypeId().getEKeys().add(theWorkeffortPackage.getDeliverableType_DeliverableTypeId());
 		initEAttribute(getQuoteItem_EstimatedDeliveryDate(), ecorePackage.getEDate(), "estimatedDeliveryDate", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getQuoteItem_IsPromo(), ecorePackage.getEBoolean(), "isPromo", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getQuoteItem_IsPromo(), ecorePackage.getEBooleanObject(), "isPromo", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getQuoteItem_LeadTimeDays(), ecorePackage.getELong(), "leadTimeDays", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getQuoteItem_ProductFeatureId(), theFeaturePackage.getProductFeature(), null, "productFeatureId", null, 0, 1, QuoteItem.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getQuoteItem_ProductFeatureId().getEKeys().add(theFeaturePackage.getProductFeature_ProductFeatureId());
@@ -2342,15 +2342,13 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		  (getQuote_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getQuote_QuoteName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getQuoteAdjustment_QuoteAdjustmentId(),
@@ -2370,8 +2368,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		  (getQuoteAdjustment_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getQuoteAdjustment_CorrespondingProductId(),
@@ -2389,8 +2386,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		  (getQuoteAdjustment_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getQuoteAdjustment_ExemptAmount(),
@@ -2466,8 +2462,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		  (getQuoteAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getQuoteAttribute_AttrValue(),
@@ -2499,8 +2494,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		  (getQuoteItem_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getQuoteItem_ConfigId(),
@@ -2571,8 +2565,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		  (getQuoteTerm_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getQuoteTerm_TermDays(),
@@ -2592,8 +2585,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		  (getQuoteTerm_TextValue(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getQuoteTerm_UomId(),
@@ -2629,8 +2621,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		  (getQuoteTermAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getQuoteTermAttribute_AttrValue(),
@@ -2648,8 +2639,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		  (getQuoteType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getQuoteTypeAttr_AttrName(),
@@ -2661,8 +2651,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		  (getQuoteTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

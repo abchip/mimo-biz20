@@ -46,7 +46,7 @@ public interface ProductPriceRule extends BizEntity {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPriceRule_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -156,7 +156,7 @@ public interface ProductPriceRule extends BizEntity {
 	 * @return the value of the '<em>Rule Name</em>' attribute.
 	 * @see #setRuleName(String)
 	 * @see org.abchip.mimo.biz.model.product.price.PricePackage#getProductPriceRule_RuleName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getRuleName();

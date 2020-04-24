@@ -22,7 +22,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlJournal#getGlJournalId <em>Gl Journal Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlJournal#getGlJournalName <em>Gl Journal Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlJournal#isIsPosted <em>Is Posted</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlJournal#getIsPosted <em>Is Posted</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlJournal#getOrganizationPartyId <em>Organization Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlJournal#getPostedDate <em>Posted Date</em>}</li>
  * </ul>
@@ -43,7 +43,7 @@ public interface GlJournal extends BizEntity {
 	 * @return the value of the '<em>Gl Journal Name</em>' attribute.
 	 * @see #setGlJournalName(String)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlJournal_GlJournalName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getGlJournalName();
@@ -61,28 +61,24 @@ public interface GlJournal extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Is Posted</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Posted</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Posted</em>' attribute.
-	 * @see #setIsPosted(boolean)
+	 * @see #setIsPosted(Boolean)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlJournal_IsPosted()
 	 * @model
 	 * @generated
 	 */
-	boolean isIsPosted();
+	Boolean getIsPosted();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlJournal#isIsPosted <em>Is Posted</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlJournal#getIsPosted <em>Is Posted</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is Posted</em>' attribute.
-	 * @see #isIsPosted()
+	 * @see #getIsPosted()
 	 * @generated
 	 */
-	void setIsPosted(boolean value);
+	void setIsPosted(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Organization Party Id</b></em>' reference.

@@ -24,8 +24,8 @@ import org.abchip.mimo.biz.BizEntity;
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySync#getEntitySyncHistories <em>Entity Sync Histories</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySync#getEntitySyncIncludeGroups <em>Entity Sync Include Groups</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySync#getEntitySyncIncludes <em>Entity Sync Includes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySync#isForPullOnly <em>For Pull Only</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySync#isForPushOnly <em>For Push Only</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySync#getForPullOnly <em>For Pull Only</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySync#getForPushOnly <em>For Push Only</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySync#getKeepRemoveInfoHours <em>Keep Remove Info Hours</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySync#getLastHistoryStartDate <em>Last History Start Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySync#getLastSuccessfulSynchTime <em>Last Successful Synch Time</em>}</li>
@@ -122,54 +122,46 @@ public interface EntitySync extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>For Pull Only</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>For Pull Only</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>For Pull Only</em>' attribute.
-	 * @see #setForPullOnly(boolean)
+	 * @see #setForPullOnly(Boolean)
 	 * @see org.abchip.mimo.biz.model.entity.synchronization.SynchronizationPackage#getEntitySync_ForPullOnly()
 	 * @model
 	 * @generated
 	 */
-	boolean isForPullOnly();
+	Boolean getForPullOnly();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySync#isForPullOnly <em>For Pull Only</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySync#getForPullOnly <em>For Pull Only</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>For Pull Only</em>' attribute.
-	 * @see #isForPullOnly()
+	 * @see #getForPullOnly()
 	 * @generated
 	 */
-	void setForPullOnly(boolean value);
+	void setForPullOnly(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>For Push Only</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>For Push Only</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>For Push Only</em>' attribute.
-	 * @see #setForPushOnly(boolean)
+	 * @see #setForPushOnly(Boolean)
 	 * @see org.abchip.mimo.biz.model.entity.synchronization.SynchronizationPackage#getEntitySync_ForPushOnly()
 	 * @model
 	 * @generated
 	 */
-	boolean isForPushOnly();
+	Boolean getForPushOnly();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySync#isForPushOnly <em>For Push Only</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.entity.synchronization.EntitySync#getForPushOnly <em>For Push Only</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>For Push Only</em>' attribute.
-	 * @see #isForPushOnly()
+	 * @see #getForPushOnly()
 	 * @generated
 	 */
-	void setForPushOnly(boolean value);
+	void setForPushOnly(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Keep Remove Info Hours</b></em>' attribute.

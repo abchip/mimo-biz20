@@ -45,7 +45,7 @@ public interface ProdCatalog extends BizEntity {
 	 * @return the value of the '<em>Catalog Name</em>' attribute.
 	 * @see #setCatalogName(String)
 	 * @see org.abchip.mimo.biz.model.product.catalog.CatalogPackage#getProdCatalog_CatalogName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getCatalogName();
@@ -97,7 +97,7 @@ public interface ProdCatalog extends BizEntity {
 	 * @return the value of the '<em>Header Logo</em>' attribute.
 	 * @see #setHeaderLogo(String)
 	 * @see org.abchip.mimo.biz.model.product.catalog.CatalogPackage#getProdCatalog_HeaderLogo()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getHeaderLogo();
@@ -149,7 +149,7 @@ public interface ProdCatalog extends BizEntity {
 	 * @return the value of the '<em>Style Sheet</em>' attribute.
 	 * @see #setStyleSheet(String)
 	 * @see org.abchip.mimo.biz.model.product.catalog.CatalogPackage#getProdCatalog_StyleSheet()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getStyleSheet();

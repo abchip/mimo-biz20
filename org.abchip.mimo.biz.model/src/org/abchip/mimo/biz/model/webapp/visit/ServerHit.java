@@ -9,9 +9,6 @@ package org.abchip.mimo.biz.model.webapp.visit;
 
 import java.util.Date;
 import org.abchip.mimo.biz.BizEntity;
-import org.abchip.mimo.biz.model.content.content.Content;
-import org.abchip.mimo.biz.model.party.contact.ContactMech;
-import org.abchip.mimo.biz.model.party.party.Party;
 
 /**
  * <!-- begin-user-doc -->
@@ -155,56 +152,56 @@ public interface ServerHit extends BizEntity {
 	void setHitTypeId(ServerHitType value);
 
 	/**
-	 * Returns the value of the '<em><b>Id By Ip Contact Mech Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Id By Ip Contact Mech Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Id By Ip Contact Mech Id</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Id By Ip Contact Mech Id</em>' reference.
-	 * @see #setIdByIpContactMechId(ContactMech)
+	 * @return the value of the '<em>Id By Ip Contact Mech Id</em>' attribute.
+	 * @see #setIdByIpContactMechId(String)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getServerHit_IdByIpContactMechId()
-	 * @model keys="contactMechId"
+	 * @model annotation="mimo-ent-format length='20'"
 	 * @generated
 	 */
-	ContactMech getIdByIpContactMechId();
+	String getIdByIpContactMechId();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.visit.ServerHit#getIdByIpContactMechId <em>Id By Ip Contact Mech Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.visit.ServerHit#getIdByIpContactMechId <em>Id By Ip Contact Mech Id</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Id By Ip Contact Mech Id</em>' reference.
+	 * @param value the new value of the '<em>Id By Ip Contact Mech Id</em>' attribute.
 	 * @see #getIdByIpContactMechId()
 	 * @generated
 	 */
-	void setIdByIpContactMechId(ContactMech value);
+	void setIdByIpContactMechId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Internal Content Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Internal Content Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Internal Content Id</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Internal Content Id</em>' reference.
-	 * @see #setInternalContentId(Content)
+	 * @return the value of the '<em>Internal Content Id</em>' attribute.
+	 * @see #setInternalContentId(String)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getServerHit_InternalContentId()
-	 * @model keys="contentId"
+	 * @model annotation="mimo-ent-format length='20'"
 	 * @generated
 	 */
-	Content getInternalContentId();
+	String getInternalContentId();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.visit.ServerHit#getInternalContentId <em>Internal Content Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.visit.ServerHit#getInternalContentId <em>Internal Content Id</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Internal Content Id</em>' reference.
+	 * @param value the new value of the '<em>Internal Content Id</em>' attribute.
 	 * @see #getInternalContentId()
 	 * @generated
 	 */
-	void setInternalContentId(Content value);
+	void setInternalContentId(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Num Of Bytes</b></em>' attribute.
@@ -233,56 +230,56 @@ public interface ServerHit extends BizEntity {
 	void setNumOfBytes(long value);
 
 	/**
-	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Party Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Party Id</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Party Id</em>' reference.
-	 * @see #setPartyId(Party)
+	 * @return the value of the '<em>Party Id</em>' attribute.
+	 * @see #setPartyId(String)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getServerHit_PartyId()
-	 * @model keys="partyId"
+	 * @model annotation="mimo-ent-format length='20'"
 	 * @generated
 	 */
-	Party getPartyId();
+	String getPartyId();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.visit.ServerHit#getPartyId <em>Party Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.visit.ServerHit#getPartyId <em>Party Id</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Party Id</em>' reference.
+	 * @param value the new value of the '<em>Party Id</em>' attribute.
 	 * @see #getPartyId()
 	 * @generated
 	 */
-	void setPartyId(Party value);
+	void setPartyId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Ref By Web Contact Mech Id</b></em>' reference.
+	 * Returns the value of the '<em><b>Ref By Web Contact Mech Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Ref By Web Contact Mech Id</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Ref By Web Contact Mech Id</em>' reference.
-	 * @see #setRefByWebContactMechId(ContactMech)
+	 * @return the value of the '<em>Ref By Web Contact Mech Id</em>' attribute.
+	 * @see #setRefByWebContactMechId(String)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getServerHit_RefByWebContactMechId()
-	 * @model keys="contactMechId"
+	 * @model annotation="mimo-ent-format length='20'"
 	 * @generated
 	 */
-	ContactMech getRefByWebContactMechId();
+	String getRefByWebContactMechId();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.visit.ServerHit#getRefByWebContactMechId <em>Ref By Web Contact Mech Id</em>}' reference.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.visit.ServerHit#getRefByWebContactMechId <em>Ref By Web Contact Mech Id</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Ref By Web Contact Mech Id</em>' reference.
+	 * @param value the new value of the '<em>Ref By Web Contact Mech Id</em>' attribute.
 	 * @see #getRefByWebContactMechId()
 	 * @generated
 	 */
-	void setRefByWebContactMechId(ContactMech value);
+	void setRefByWebContactMechId(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Referrer Url</b></em>' attribute.
@@ -295,7 +292,7 @@ public interface ServerHit extends BizEntity {
 	 * @return the value of the '<em>Referrer Url</em>' attribute.
 	 * @see #setReferrerUrl(String)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getServerHit_ReferrerUrl()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getReferrerUrl();
@@ -321,7 +318,7 @@ public interface ServerHit extends BizEntity {
 	 * @return the value of the '<em>Request Url</em>' attribute.
 	 * @see #setRequestUrl(String)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getServerHit_RequestUrl()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getRequestUrl();

@@ -41,7 +41,7 @@ public interface FacilityGroup extends BizEntity {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroup_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -67,7 +67,7 @@ public interface FacilityGroup extends BizEntity {
 	 * @return the value of the '<em>Facility Group Name</em>' attribute.
 	 * @see #setFacilityGroupName(String)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroup_FacilityGroupName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getFacilityGroupName();

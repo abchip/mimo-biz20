@@ -45,9 +45,9 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getEstimatedShipDate <em>Estimated Ship Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getExternalId <em>External Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getFromInventoryItemId <em>From Inventory Item Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#isIsItemGroupPrimary <em>Is Item Group Primary</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#isIsModifiedPrice <em>Is Modified Price</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#isIsPromo <em>Is Promo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getIsItemGroupPrimary <em>Is Item Group Primary</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getIsModifiedPrice <em>Is Modified Price</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getIsPromo <em>Is Promo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getItemDescription <em>Item Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOrderItemGroupSeqId <em>Order Item Group Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderItem#getOrderItemTypeId <em>Order Item Type Id</em>}</li>
@@ -250,7 +250,7 @@ public interface OrderItem extends BizEntityTyped<OrderItemType> {
 	 * @return the value of the '<em>Comments</em>' attribute.
 	 * @see #setComments(String)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_Comments()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getComments();
@@ -448,84 +448,6 @@ public interface OrderItem extends BizEntityTyped<OrderItemType> {
 	void setExternalId(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Is Item Group Primary</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Item Group Primary</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Is Item Group Primary</em>' attribute.
-	 * @see #setIsItemGroupPrimary(boolean)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_IsItemGroupPrimary()
-	 * @model
-	 * @generated
-	 */
-	boolean isIsItemGroupPrimary();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#isIsItemGroupPrimary <em>Is Item Group Primary</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Is Item Group Primary</em>' attribute.
-	 * @see #isIsItemGroupPrimary()
-	 * @generated
-	 */
-	void setIsItemGroupPrimary(boolean value);
-
-	/**
-	 * Returns the value of the '<em><b>Is Modified Price</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Modified Price</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Is Modified Price</em>' attribute.
-	 * @see #setIsModifiedPrice(boolean)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_IsModifiedPrice()
-	 * @model
-	 * @generated
-	 */
-	boolean isIsModifiedPrice();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#isIsModifiedPrice <em>Is Modified Price</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Is Modified Price</em>' attribute.
-	 * @see #isIsModifiedPrice()
-	 * @generated
-	 */
-	void setIsModifiedPrice(boolean value);
-
-	/**
-	 * Returns the value of the '<em><b>Is Promo</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Promo</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Is Promo</em>' attribute.
-	 * @see #setIsPromo(boolean)
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_IsPromo()
-	 * @model
-	 * @generated
-	 */
-	boolean isIsPromo();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#isIsPromo <em>Is Promo</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Is Promo</em>' attribute.
-	 * @see #isIsPromo()
-	 * @generated
-	 */
-	void setIsPromo(boolean value);
-
-	/**
 	 * Returns the value of the '<em><b>From Inventory Item Id</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -552,6 +474,72 @@ public interface OrderItem extends BizEntityTyped<OrderItemType> {
 	void setFromInventoryItemId(InventoryItem value);
 
 	/**
+	 * Returns the value of the '<em><b>Is Item Group Primary</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Is Item Group Primary</em>' attribute.
+	 * @see #setIsItemGroupPrimary(Boolean)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_IsItemGroupPrimary()
+	 * @model
+	 * @generated
+	 */
+	Boolean getIsItemGroupPrimary();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getIsItemGroupPrimary <em>Is Item Group Primary</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Is Item Group Primary</em>' attribute.
+	 * @see #getIsItemGroupPrimary()
+	 * @generated
+	 */
+	void setIsItemGroupPrimary(Boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Is Modified Price</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Is Modified Price</em>' attribute.
+	 * @see #setIsModifiedPrice(Boolean)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_IsModifiedPrice()
+	 * @model
+	 * @generated
+	 */
+	Boolean getIsModifiedPrice();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getIsModifiedPrice <em>Is Modified Price</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Is Modified Price</em>' attribute.
+	 * @see #getIsModifiedPrice()
+	 * @generated
+	 */
+	void setIsModifiedPrice(Boolean value);
+
+	/**
+	 * Returns the value of the '<em><b>Is Promo</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Is Promo</em>' attribute.
+	 * @see #setIsPromo(Boolean)
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_IsPromo()
+	 * @model
+	 * @generated
+	 */
+	Boolean getIsPromo();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getIsPromo <em>Is Promo</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Is Promo</em>' attribute.
+	 * @see #getIsPromo()
+	 * @generated
+	 */
+	void setIsPromo(Boolean value);
+
+	/**
 	 * Returns the value of the '<em><b>Item Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -562,7 +550,7 @@ public interface OrderItem extends BizEntityTyped<OrderItemType> {
 	 * @return the value of the '<em>Item Description</em>' attribute.
 	 * @see #setItemDescription(String)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItem_ItemDescription()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getItemDescription();

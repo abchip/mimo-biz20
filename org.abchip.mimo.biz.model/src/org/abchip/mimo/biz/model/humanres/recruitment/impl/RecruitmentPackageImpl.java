@@ -1122,8 +1122,7 @@ public class RecruitmentPackageImpl extends EPackageImpl implements RecruitmentP
 		  (getJobInterviewType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getJobRequisition_JobRequisitionId(),

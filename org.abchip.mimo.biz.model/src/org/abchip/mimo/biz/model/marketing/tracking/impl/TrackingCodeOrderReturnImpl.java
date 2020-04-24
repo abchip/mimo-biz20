@@ -29,8 +29,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getOrderId <em>Order Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getTrackingCodeTypeId <em>Tracking Code Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getAffiliateReferredTimeStamp <em>Affiliate Referred Time Stamp</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#isHasExported <em>Has Exported</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#isIsBillable <em>Is Billable</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getHasExported <em>Has Exported</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getIsBillable <em>Is Billable</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getOrderItemSeqId <em>Order Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getSiteId <em>Site Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl#getTrackingCodeId <em>Tracking Code Id</em>}</li>
@@ -89,7 +89,7 @@ public class TrackingCodeOrderReturnImpl extends BizEntityImpl implements Tracki
 	 * @generated
 	 */
 	@Override
-	public boolean isHasExported() {
+	public Boolean getHasExported() {
 		return (Boolean)eGet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__HAS_EXPORTED, true);
 	}
 
@@ -99,7 +99,7 @@ public class TrackingCodeOrderReturnImpl extends BizEntityImpl implements Tracki
 	 * @generated
 	 */
 	@Override
-	public void setHasExported(boolean newHasExported) {
+	public void setHasExported(Boolean newHasExported) {
 		eSet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__HAS_EXPORTED, newHasExported);
 	}
 
@@ -109,7 +109,7 @@ public class TrackingCodeOrderReturnImpl extends BizEntityImpl implements Tracki
 	 * @generated
 	 */
 	@Override
-	public boolean isIsBillable() {
+	public Boolean getIsBillable() {
 		return (Boolean)eGet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__IS_BILLABLE, true);
 	}
 
@@ -119,7 +119,7 @@ public class TrackingCodeOrderReturnImpl extends BizEntityImpl implements Tracki
 	 * @generated
 	 */
 	@Override
-	public void setIsBillable(boolean newIsBillable) {
+	public void setIsBillable(Boolean newIsBillable) {
 		eSet(TrackingPackage.Literals.TRACKING_CODE_ORDER_RETURN__IS_BILLABLE, newIsBillable);
 	}
 

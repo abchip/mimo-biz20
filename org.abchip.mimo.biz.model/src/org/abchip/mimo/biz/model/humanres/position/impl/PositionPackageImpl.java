@@ -1644,29 +1644,25 @@ public class PositionPackageImpl extends EPackageImpl implements PositionPackage
 		  (getEmplPositionClassType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getEmplPositionFulfillment_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getEmplPositionReportingStruct_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getEmplPositionResponsibility_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getEmplPositionType_EmplPositionTypeId(),
@@ -1678,8 +1674,7 @@ public class PositionPackageImpl extends EPackageImpl implements PositionPackage
 		  (getEmplPositionType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getEmplPositionTypeRate_PayGradeId(),
@@ -1697,8 +1692,7 @@ public class PositionPackageImpl extends EPackageImpl implements PositionPackage
 		  (getValidResponsibility_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 	}
 

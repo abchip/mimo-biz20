@@ -1301,8 +1301,7 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 		  (getWebAnalyticsType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getWebSiteContentType_WebSiteContentTypeId(),
@@ -1314,8 +1313,7 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 		  (getWebSiteContentType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getWebSitePathAlias_PathAlias(),
@@ -1333,8 +1331,7 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 		  (getWebSitePathAlias_MapKey(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getWebSitePublishPoint_ContentId(),

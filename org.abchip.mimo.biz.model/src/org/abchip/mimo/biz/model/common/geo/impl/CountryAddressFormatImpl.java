@@ -24,10 +24,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.CountryAddressFormatImpl#getGeoId <em>Geo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.CountryAddressFormatImpl#getAddressFormat <em>Address Format</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.CountryAddressFormatImpl#getGeoAssocTypeId <em>Geo Assoc Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.CountryAddressFormatImpl#isHasPostalCodeExt <em>Has Postal Code Ext</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.CountryAddressFormatImpl#getHasPostalCodeExt <em>Has Postal Code Ext</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.CountryAddressFormatImpl#getPostalCodeRegex <em>Postal Code Regex</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.CountryAddressFormatImpl#isRequirePostalCode <em>Require Postal Code</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.CountryAddressFormatImpl#isRequirePostalCodeExt <em>Require Postal Code Ext</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.CountryAddressFormatImpl#getRequirePostalCode <em>Require Postal Code</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.CountryAddressFormatImpl#getRequirePostalCodeExt <em>Require Postal Code Ext</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.geo.impl.CountryAddressFormatImpl#getRequireStateProvinceId <em>Require State Province Id</em>}</li>
  * </ul>
  *
@@ -83,26 +83,6 @@ public class CountryAddressFormatImpl extends BizEntityImpl implements CountryAd
 	 * @generated
 	 */
 	@Override
-	public boolean isHasPostalCodeExt() {
-		return (Boolean)eGet(GeoPackage.Literals.COUNTRY_ADDRESS_FORMAT__HAS_POSTAL_CODE_EXT, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setHasPostalCodeExt(boolean newHasPostalCodeExt) {
-		eSet(GeoPackage.Literals.COUNTRY_ADDRESS_FORMAT__HAS_POSTAL_CODE_EXT, newHasPostalCodeExt);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public String getPostalCodeRegex() {
 		return (String)eGet(GeoPackage.Literals.COUNTRY_ADDRESS_FORMAT__POSTAL_CODE_REGEX, true);
 	}
@@ -123,7 +103,7 @@ public class CountryAddressFormatImpl extends BizEntityImpl implements CountryAd
 	 * @generated
 	 */
 	@Override
-	public boolean isRequirePostalCode() {
+	public Boolean getRequirePostalCode() {
 		return (Boolean)eGet(GeoPackage.Literals.COUNTRY_ADDRESS_FORMAT__REQUIRE_POSTAL_CODE, true);
 	}
 
@@ -133,7 +113,7 @@ public class CountryAddressFormatImpl extends BizEntityImpl implements CountryAd
 	 * @generated
 	 */
 	@Override
-	public void setRequirePostalCode(boolean newRequirePostalCode) {
+	public void setRequirePostalCode(Boolean newRequirePostalCode) {
 		eSet(GeoPackage.Literals.COUNTRY_ADDRESS_FORMAT__REQUIRE_POSTAL_CODE, newRequirePostalCode);
 	}
 
@@ -143,7 +123,7 @@ public class CountryAddressFormatImpl extends BizEntityImpl implements CountryAd
 	 * @generated
 	 */
 	@Override
-	public boolean isRequirePostalCodeExt() {
+	public Boolean getRequirePostalCodeExt() {
 		return (Boolean)eGet(GeoPackage.Literals.COUNTRY_ADDRESS_FORMAT__REQUIRE_POSTAL_CODE_EXT, true);
 	}
 
@@ -153,7 +133,7 @@ public class CountryAddressFormatImpl extends BizEntityImpl implements CountryAd
 	 * @generated
 	 */
 	@Override
-	public void setRequirePostalCodeExt(boolean newRequirePostalCodeExt) {
+	public void setRequirePostalCodeExt(Boolean newRequirePostalCodeExt) {
 		eSet(GeoPackage.Literals.COUNTRY_ADDRESS_FORMAT__REQUIRE_POSTAL_CODE_EXT, newRequirePostalCodeExt);
 	}
 
@@ -195,6 +175,26 @@ public class CountryAddressFormatImpl extends BizEntityImpl implements CountryAd
 	@Override
 	public void setGeoAssocTypeId(GeoAssocType newGeoAssocTypeId) {
 		eSet(GeoPackage.Literals.COUNTRY_ADDRESS_FORMAT__GEO_ASSOC_TYPE_ID, newGeoAssocTypeId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Boolean getHasPostalCodeExt() {
+		return (Boolean)eGet(GeoPackage.Literals.COUNTRY_ADDRESS_FORMAT__HAS_POSTAL_CODE_EXT, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setHasPostalCodeExt(Boolean newHasPostalCodeExt) {
+		eSet(GeoPackage.Literals.COUNTRY_ADDRESS_FORMAT__HAS_POSTAL_CODE_EXT, newHasPostalCodeExt);
 	}
 
 	/**

@@ -64,7 +64,7 @@ public interface TelecomNumber extends ContactMech {
 	 * @return the value of the '<em>Ask For Name</em>' attribute.
 	 * @see #setAskForName(String)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getTelecomNumber_AskForName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getAskForName();

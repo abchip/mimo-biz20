@@ -101,7 +101,7 @@ public interface ProductMaint extends BizEntity {
 	 * @return the value of the '<em>Maint Name</em>' attribute.
 	 * @see #setMaintName(String)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductMaint_MaintName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getMaintName();

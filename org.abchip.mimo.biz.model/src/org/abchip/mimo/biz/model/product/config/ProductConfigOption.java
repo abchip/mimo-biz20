@@ -69,7 +69,7 @@ public interface ProductConfigOption extends BizEntity {
 	 * @return the value of the '<em>Config Option Name</em>' attribute.
 	 * @see #setConfigOptionName(String)
 	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProductConfigOption_ConfigOptionName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getConfigOptionName();
@@ -95,7 +95,7 @@ public interface ProductConfigOption extends BizEntity {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.product.config.ConfigPackage#getProductConfigOption_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();

@@ -1422,8 +1422,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 		  (getCostComponentAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getCostComponentAttribute_AttrValue(),
@@ -1441,8 +1440,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 		  (getCostComponentCalc_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getCostComponentCalc_FixedCost(),
@@ -1477,8 +1475,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 		  (getCostComponentType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getCostComponentTypeAttr_AttrName(),
@@ -1490,8 +1487,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 		  (getCostComponentTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductCostComponentCalc_SequenceNum(),

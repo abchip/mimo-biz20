@@ -38,8 +38,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getContactMechId <em>Contact Mech Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getCurrencyUom <em>Currency Uom</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#isIsActive <em>Is Active</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#isIsPublic <em>Is Public</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getIsActive <em>Is Active</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getIsPublic <em>Is Public</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getLastAdminModified <em>Last Admin Modified</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getLastOrderedDate <em>Last Ordered Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.shoppinglist.impl.ShoppingListImpl#getListName <em>List Name</em>}</li>
@@ -189,7 +189,7 @@ public class ShoppingListImpl extends BizEntityImpl implements ShoppingList {
 	 * @generated
 	 */
 	@Override
-	public boolean isIsActive() {
+	public Boolean getIsActive() {
 		return (Boolean)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__IS_ACTIVE, true);
 	}
 
@@ -199,7 +199,7 @@ public class ShoppingListImpl extends BizEntityImpl implements ShoppingList {
 	 * @generated
 	 */
 	@Override
-	public void setIsActive(boolean newIsActive) {
+	public void setIsActive(Boolean newIsActive) {
 		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST__IS_ACTIVE, newIsActive);
 	}
 
@@ -209,7 +209,7 @@ public class ShoppingListImpl extends BizEntityImpl implements ShoppingList {
 	 * @generated
 	 */
 	@Override
-	public boolean isIsPublic() {
+	public Boolean getIsPublic() {
 		return (Boolean)eGet(ShoppinglistPackage.Literals.SHOPPING_LIST__IS_PUBLIC, true);
 	}
 
@@ -219,7 +219,7 @@ public class ShoppingListImpl extends BizEntityImpl implements ShoppingList {
 	 * @generated
 	 */
 	@Override
-	public void setIsPublic(boolean newIsPublic) {
+	public void setIsPublic(Boolean newIsPublic) {
 		eSet(ShoppinglistPackage.Literals.SHOPPING_LIST__IS_PUBLIC, newIsPublic);
 	}
 

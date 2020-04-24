@@ -906,7 +906,7 @@ public class ShoppingcartPackageImpl extends EPackageImpl implements Shoppingcar
 		initEAttribute(getCartAbandonedLine_ReservStart(), ecorePackage.getEDate(), "reservStart", null, 0, 1, CartAbandonedLine.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCartAbandonedLine_TotalWithAdjustments(), ecorePackage.getEBigDecimal(), "totalWithAdjustments", null, 0, 1, CartAbandonedLine.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCartAbandonedLine_UnitPrice(), ecorePackage.getEBigDecimal(), "unitPrice", null, 0, 1, CartAbandonedLine.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCartAbandonedLine_WasReserved(), ecorePackage.getEBoolean(), "wasReserved", null, 0, 1, CartAbandonedLine.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCartAbandonedLine_WasReserved(), ecorePackage.getEBooleanObject(), "wasReserved", null, 0, 1, CartAbandonedLine.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

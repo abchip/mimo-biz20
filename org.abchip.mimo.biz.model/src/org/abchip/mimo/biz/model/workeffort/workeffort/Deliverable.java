@@ -67,7 +67,7 @@ public interface Deliverable extends BizEntity {
 	 * @return the value of the '<em>Deliverable Name</em>' attribute.
 	 * @see #setDeliverableName(String)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getDeliverable_DeliverableName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getDeliverableName();
@@ -119,7 +119,7 @@ public interface Deliverable extends BizEntity {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getDeliverable_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();

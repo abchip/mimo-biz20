@@ -45,7 +45,7 @@ public interface QuoteTerm extends BizEntity {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteTerm_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -205,7 +205,7 @@ public interface QuoteTerm extends BizEntity {
 	 * @return the value of the '<em>Text Value</em>' attribute.
 	 * @see #setTextValue(String)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteTerm_TextValue()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getTextValue();

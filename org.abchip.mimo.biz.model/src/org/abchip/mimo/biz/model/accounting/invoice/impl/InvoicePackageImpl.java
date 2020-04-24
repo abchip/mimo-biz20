@@ -2838,8 +2838,7 @@ public class InvoicePackageImpl extends EPackageImpl implements InvoicePackage {
 		  (getInvoice_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getInvoice_InvoiceMessage(),
@@ -2863,8 +2862,7 @@ public class InvoicePackageImpl extends EPackageImpl implements InvoicePackage {
 		  (getInvoiceAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getInvoiceAttribute_AttrValue(),
@@ -2882,8 +2880,7 @@ public class InvoicePackageImpl extends EPackageImpl implements InvoicePackage {
 		  (getInvoiceContentType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getInvoiceItem_InvoiceItemSeqId(),
@@ -2903,8 +2900,7 @@ public class InvoicePackageImpl extends EPackageImpl implements InvoicePackage {
 		  (getInvoiceItem_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getInvoiceItem_ParentInvoiceId(),
@@ -2976,8 +2972,7 @@ public class InvoicePackageImpl extends EPackageImpl implements InvoicePackage {
 		  (getInvoiceItemAssocType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getInvoiceItemAttribute_AttrName(),
@@ -3001,8 +2996,7 @@ public class InvoicePackageImpl extends EPackageImpl implements InvoicePackage {
 		  (getInvoiceItemAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getInvoiceItemAttribute_AttrValue(),
@@ -3020,8 +3014,7 @@ public class InvoicePackageImpl extends EPackageImpl implements InvoicePackage {
 		  (getInvoiceItemType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getInvoiceItemTypeAttr_AttrName(),
@@ -3033,8 +3026,7 @@ public class InvoicePackageImpl extends EPackageImpl implements InvoicePackage {
 		  (getInvoiceItemTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getInvoiceItemTypeMap_InvoiceItemMapKey(),
@@ -3060,8 +3052,7 @@ public class InvoicePackageImpl extends EPackageImpl implements InvoicePackage {
 		  (getInvoiceTerm_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getInvoiceTerm_InvoiceItemSeqId(),
@@ -3088,8 +3079,7 @@ public class InvoicePackageImpl extends EPackageImpl implements InvoicePackage {
 		  (getInvoiceTerm_TextValue(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getInvoiceTerm_UomId(),
@@ -3107,8 +3097,7 @@ public class InvoicePackageImpl extends EPackageImpl implements InvoicePackage {
 		  (getInvoiceTermAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getInvoiceTermAttribute_AttrValue(),
@@ -3126,8 +3115,7 @@ public class InvoicePackageImpl extends EPackageImpl implements InvoicePackage {
 		  (getInvoiceType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getInvoiceTypeAttr_AttrName(),
@@ -3139,8 +3127,7 @@ public class InvoicePackageImpl extends EPackageImpl implements InvoicePackage {
 		  (getInvoiceTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

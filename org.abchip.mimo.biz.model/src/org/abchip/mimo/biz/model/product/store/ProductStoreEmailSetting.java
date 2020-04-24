@@ -46,7 +46,7 @@ public interface ProductStoreEmailSetting extends BizEntity {
 	 * @return the value of the '<em>Bcc Address</em>' attribute.
 	 * @see #setBccAddress(String)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreEmailSetting_BccAddress()
-	 * @model annotation="mimo-ent-format type='email' length='320'"
+	 * @model annotation="mimo-ent-format type='email'"
 	 * @generated
 	 */
 	String getBccAddress();
@@ -99,7 +99,7 @@ public interface ProductStoreEmailSetting extends BizEntity {
 	 * @return the value of the '<em>Cc Address</em>' attribute.
 	 * @see #setCcAddress(String)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreEmailSetting_CcAddress()
-	 * @model annotation="mimo-ent-format type='email' length='320'"
+	 * @model annotation="mimo-ent-format type='email'"
 	 * @generated
 	 */
 	String getCcAddress();
@@ -178,7 +178,7 @@ public interface ProductStoreEmailSetting extends BizEntity {
 	 * @return the value of the '<em>From Address</em>' attribute.
 	 * @see #setFromAddress(String)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreEmailSetting_FromAddress()
-	 * @model annotation="mimo-ent-format type='email' length='320'"
+	 * @model annotation="mimo-ent-format type='email'"
 	 * @generated
 	 */
 	String getFromAddress();
@@ -204,7 +204,7 @@ public interface ProductStoreEmailSetting extends BizEntity {
 	 * @return the value of the '<em>Subject</em>' attribute.
 	 * @see #setSubject(String)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreEmailSetting_Subject()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getSubject();

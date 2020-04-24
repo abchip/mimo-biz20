@@ -112,7 +112,7 @@ public interface ShipmentReceipt extends BizEntity {
 	 * @return the value of the '<em>Item Description</em>' attribute.
 	 * @see #setItemDescription(String)
 	 * @see org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage#getShipmentReceipt_ItemDescription()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getItemDescription();

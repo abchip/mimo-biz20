@@ -1815,8 +1815,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		  (getConfigOptionProductOption_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getConfigOptionProductOption_ProductOptionId(),
@@ -1834,8 +1833,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		  (getProdConfItemContentType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductConfig_SequenceNum(),
@@ -1860,8 +1858,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		  (getProductConfig_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductConfigConfig_ConfigId(),
@@ -1886,8 +1883,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		  (getProductConfigConfig_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductConfigItem_ConfigItemId(),
@@ -1899,8 +1895,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		  (getProductConfigItem_ConfigItemName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getProductConfigItem_ConfigItemTypeId(),
@@ -1912,15 +1907,13 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		  (getProductConfigItem_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductConfigItem_ImageUrl(),
 		   source,
 		   new String[] {
-			   "type", "url",
-			   "length", "2000"
+			   "type", "url"
 		   });
 		addAnnotation
 		  (getProductConfigOption_ConfigOptionId(),
@@ -1932,15 +1925,13 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		  (getProductConfigOption_ConfigOptionName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getProductConfigOption_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductConfigOption_SequenceNum(),
@@ -1978,8 +1969,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		  (getProductConfigOptionIactn_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductConfigProduct_ConfigOptionId(),

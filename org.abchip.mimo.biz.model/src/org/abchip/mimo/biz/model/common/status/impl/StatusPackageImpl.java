@@ -1032,8 +1032,7 @@ public class StatusPackageImpl extends EPackageImpl implements StatusPackage {
 		  (getStatusItem_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getStatusItem_SequenceId(),
@@ -1057,8 +1056,7 @@ public class StatusPackageImpl extends EPackageImpl implements StatusPackage {
 		  (getStatusType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getStatusValidChange_ConditionExpression(),
@@ -1070,8 +1068,7 @@ public class StatusPackageImpl extends EPackageImpl implements StatusPackage {
 		  (getStatusValidChange_TransitionName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 	}
 

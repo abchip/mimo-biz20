@@ -303,7 +303,7 @@ public interface CustRequest extends BizEntityTyped<CustRequestType> {
 	 * @return the value of the '<em>Cust Request Name</em>' attribute.
 	 * @see #setCustRequestName(String)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_CustRequestName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getCustRequestName();
@@ -387,7 +387,7 @@ public interface CustRequest extends BizEntityTyped<CustRequestType> {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -466,7 +466,7 @@ public interface CustRequest extends BizEntityTyped<CustRequestType> {
 	 * @return the value of the '<em>Internal Comment</em>' attribute.
 	 * @see #setInternalComment(String)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_InternalComment()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getInternalComment();
@@ -648,7 +648,7 @@ public interface CustRequest extends BizEntityTyped<CustRequestType> {
 	 * @return the value of the '<em>Reason</em>' attribute.
 	 * @see #setReason(String)
 	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_Reason()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getReason();

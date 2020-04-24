@@ -31,7 +31,7 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentPackageRouteSeg#getLabelHtml <em>Label Html</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentPackageRouteSeg#getLabelImage <em>Label Image</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentPackageRouteSeg#getLabelIntlSignImage <em>Label Intl Sign Image</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentPackageRouteSeg#isLabelPrinted <em>Label Printed</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentPackageRouteSeg#getLabelPrinted <em>Label Printed</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentPackageRouteSeg#getPackageOtherCost <em>Package Other Cost</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentPackageRouteSeg#getPackageServiceCost <em>Package Service Cost</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentPackageRouteSeg#getPackageTransportCost <em>Package Transport Cost</em>}</li>
@@ -254,28 +254,24 @@ public interface ShipmentPackageRouteSeg extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Label Printed</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Label Printed</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Label Printed</em>' attribute.
-	 * @see #setLabelPrinted(boolean)
+	 * @see #setLabelPrinted(Boolean)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentPackageRouteSeg_LabelPrinted()
 	 * @model
 	 * @generated
 	 */
-	boolean isLabelPrinted();
+	Boolean getLabelPrinted();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentPackageRouteSeg#isLabelPrinted <em>Label Printed</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentPackageRouteSeg#getLabelPrinted <em>Label Printed</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Label Printed</em>' attribute.
-	 * @see #isLabelPrinted()
+	 * @see #getLabelPrinted()
 	 * @generated
 	 */
-	void setLabelPrinted(boolean value);
+	void setLabelPrinted(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Package Other Cost</b></em>' attribute.

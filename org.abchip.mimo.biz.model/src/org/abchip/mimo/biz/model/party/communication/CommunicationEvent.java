@@ -436,7 +436,7 @@ public interface CommunicationEvent extends BizEntityTyped<CommunicationEventTyp
 	 * @return the value of the '<em>Note</em>' attribute.
 	 * @see #setNote(String)
 	 * @see org.abchip.mimo.biz.model.party.communication.CommunicationPackage#getCommunicationEvent_Note()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getNote();

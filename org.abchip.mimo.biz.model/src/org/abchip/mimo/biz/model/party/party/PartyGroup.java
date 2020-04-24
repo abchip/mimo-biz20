@@ -70,7 +70,7 @@ public interface PartyGroup extends Party {
 	 * @return the value of the '<em>Comments</em>' attribute.
 	 * @see #setComments(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyGroup_Comments()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getComments();
@@ -96,7 +96,7 @@ public interface PartyGroup extends Party {
 	 * @return the value of the '<em>Group Name</em>' attribute.
 	 * @see #setGroupName(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyGroup_GroupName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getGroupName();
@@ -122,7 +122,7 @@ public interface PartyGroup extends Party {
 	 * @return the value of the '<em>Group Name Local</em>' attribute.
 	 * @see #setGroupNameLocal(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyGroup_GroupNameLocal()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getGroupNameLocal();
@@ -148,7 +148,7 @@ public interface PartyGroup extends Party {
 	 * @return the value of the '<em>Logo Image Url</em>' attribute.
 	 * @see #setLogoImageUrl(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyGroup_LogoImageUrl()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getLogoImageUrl();
@@ -200,7 +200,7 @@ public interface PartyGroup extends Party {
 	 * @return the value of the '<em>Office Site Name</em>' attribute.
 	 * @see #setOfficeSiteName(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyGroup_OfficeSiteName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getOfficeSiteName();

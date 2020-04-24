@@ -41,7 +41,7 @@ import org.abchip.mimo.biz.BizEntity;
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.Visit#getSessionId <em>Session Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.Visit#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.Visit#getUserAgentId <em>User Agent Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.Visit#isUserCreated <em>User Created</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.Visit#getUserCreated <em>User Created</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.Visit#getUserLoginId <em>User Login Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.Visit#getVisitorId <em>Visitor Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.Visit#getWebappName <em>Webapp Name</em>}</li>
@@ -376,7 +376,7 @@ public interface Visit extends BizEntity {
 	 * @return the value of the '<em>Initial Referrer</em>' attribute.
 	 * @see #setInitialReferrer(String)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getVisit_InitialReferrer()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getInitialReferrer();
@@ -402,7 +402,7 @@ public interface Visit extends BizEntity {
 	 * @return the value of the '<em>Initial Request</em>' attribute.
 	 * @see #setInitialRequest(String)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getVisit_InitialRequest()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getInitialRequest();
@@ -600,32 +600,6 @@ public interface Visit extends BizEntity {
 	void setThruDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>User Created</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>User Created</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>User Created</em>' attribute.
-	 * @see #setUserCreated(boolean)
-	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getVisit_UserCreated()
-	 * @model
-	 * @generated
-	 */
-	boolean isUserCreated();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.visit.Visit#isUserCreated <em>User Created</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>User Created</em>' attribute.
-	 * @see #isUserCreated()
-	 * @generated
-	 */
-	void setUserCreated(boolean value);
-
-	/**
 	 * Returns the value of the '<em><b>User Agent Id</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -650,6 +624,28 @@ public interface Visit extends BizEntity {
 	 * @generated
 	 */
 	void setUserAgentId(UserAgent value);
+
+	/**
+	 * Returns the value of the '<em><b>User Created</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>User Created</em>' attribute.
+	 * @see #setUserCreated(Boolean)
+	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getVisit_UserCreated()
+	 * @model
+	 * @generated
+	 */
+	Boolean getUserCreated();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.webapp.visit.Visit#getUserCreated <em>User Created</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>User Created</em>' attribute.
+	 * @see #getUserCreated()
+	 * @generated
+	 */
+	void setUserCreated(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>User Login Id</b></em>' attribute.

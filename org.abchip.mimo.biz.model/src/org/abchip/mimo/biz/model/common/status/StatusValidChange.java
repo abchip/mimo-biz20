@@ -66,7 +66,7 @@ public interface StatusValidChange extends BizEntity {
 	 * @return the value of the '<em>Transition Name</em>' attribute.
 	 * @see #setTransitionName(String)
 	 * @see org.abchip.mimo.biz.model.common.status.StatusPackage#getStatusValidChange_TransitionName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getTransitionName();

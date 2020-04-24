@@ -725,11 +725,11 @@ public interface LoginPackage extends EPackage {
 	EAttribute getUserLogin_DisabledDateTime();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.security.login.UserLogin#isEnabled <em>Enabled</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.security.login.UserLogin#getEnabled <em>Enabled</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Enabled</em>'.
-	 * @see org.abchip.mimo.biz.model.security.login.UserLogin#isEnabled()
+	 * @see org.abchip.mimo.biz.model.security.login.UserLogin#getEnabled()
 	 * @see #getUserLogin()
 	 * @generated
 	 */
@@ -747,22 +747,22 @@ public interface LoginPackage extends EPackage {
 	EAttribute getUserLogin_ExternalAuthId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.security.login.UserLogin#isHasLoggedOut <em>Has Logged Out</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.security.login.UserLogin#getHasLoggedOut <em>Has Logged Out</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Logged Out</em>'.
-	 * @see org.abchip.mimo.biz.model.security.login.UserLogin#isHasLoggedOut()
+	 * @see org.abchip.mimo.biz.model.security.login.UserLogin#getHasLoggedOut()
 	 * @see #getUserLogin()
 	 * @generated
 	 */
 	EAttribute getUserLogin_HasLoggedOut();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.security.login.UserLogin#isIsSystem <em>Is System</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.security.login.UserLogin#getIsSystem <em>Is System</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is System</em>'.
-	 * @see org.abchip.mimo.biz.model.security.login.UserLogin#isIsSystem()
+	 * @see org.abchip.mimo.biz.model.security.login.UserLogin#getIsSystem()
 	 * @see #getUserLogin()
 	 * @generated
 	 */
@@ -955,11 +955,11 @@ public interface LoginPackage extends EPackage {
 	EAttribute getUserLoginHistory_PasswordUsed();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#isSuccessfulLogin <em>Successful Login</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.security.login.UserLoginHistory#getSuccessfulLogin <em>Successful Login</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Successful Login</em>'.
-	 * @see org.abchip.mimo.biz.model.security.login.UserLoginHistory#isSuccessfulLogin()
+	 * @see org.abchip.mimo.biz.model.security.login.UserLoginHistory#getSuccessfulLogin()
 	 * @see #getUserLoginHistory()
 	 * @generated
 	 */

@@ -833,8 +833,7 @@ public class PropertyPackageImpl extends EPackageImpl implements PropertyPackage
 		  (getSystemProperty_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getSystemProperty_SystemPropertyValue(),

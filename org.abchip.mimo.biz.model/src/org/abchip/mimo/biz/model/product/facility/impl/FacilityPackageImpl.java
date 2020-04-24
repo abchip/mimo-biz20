@@ -154,6 +154,7 @@ import org.abchip.mimo.biz.model.product.cost.impl.CostPackageImpl;
 import org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint;
 import org.abchip.mimo.biz.model.product.facility.ContainerType;
 import org.abchip.mimo.biz.model.product.facility.Facility;
+import org.abchip.mimo.biz.model.product.facility.FacilityAssocType;
 import org.abchip.mimo.biz.model.product.facility.FacilityAttribute;
 import org.abchip.mimo.biz.model.product.facility.FacilityCalendar;
 import org.abchip.mimo.biz.model.product.facility.FacilityCalendarType;
@@ -174,6 +175,7 @@ import org.abchip.mimo.biz.model.product.facility.FacilityParty;
 import org.abchip.mimo.biz.model.product.facility.FacilityType;
 import org.abchip.mimo.biz.model.product.facility.FacilityTypeAttr;
 import org.abchip.mimo.biz.model.product.facility.ProductFacility;
+import org.abchip.mimo.biz.model.product.facility.ProductFacilityAssoc;
 import org.abchip.mimo.biz.model.product.facility.ProductFacilityLocation;
 import org.abchip.mimo.biz.model.product.feature.FeaturePackage;
 import org.abchip.mimo.biz.model.product.feature.impl.FeaturePackageImpl;
@@ -257,6 +259,13 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 	 * @generated
 	 */
 	private EClass facilityEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass facilityAssocTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -383,6 +392,13 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 	 * @generated
 	 */
 	private EClass productFacilityEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass productFacilityAssocEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1060,8 +1076,18 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 	 * @generated
 	 */
 	@Override
+	public EAttribute getFacility_FacilityLevel() {
+		return (EAttribute)facilityEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EReference getFacility_FacilityLocations() {
-		return (EReference)facilityEClass.getEStructuralFeatures().get(8);
+		return (EReference)facilityEClass.getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -1071,16 +1097,6 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 	 */
 	@Override
 	public EAttribute getFacility_FacilityName() {
-		return (EAttribute)facilityEClass.getEStructuralFeatures().get(9);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getFacility_FacilitySize() {
 		return (EAttribute)facilityEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -1090,8 +1106,8 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getFacility_FacilitySizeUomId() {
-		return (EReference)facilityEClass.getEStructuralFeatures().get(11);
+	public EAttribute getFacility_FacilitySize() {
+		return (EAttribute)facilityEClass.getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -1100,7 +1116,7 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getFacility_FacilityTypeId() {
+	public EReference getFacility_FacilitySizeUomId() {
 		return (EReference)facilityEClass.getEStructuralFeatures().get(12);
 	}
 
@@ -1110,7 +1126,7 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getFacility_GeoPointId() {
+	public EReference getFacility_FacilityTypeId() {
 		return (EReference)facilityEClass.getEStructuralFeatures().get(13);
 	}
 
@@ -1120,8 +1136,8 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getFacility_OldSquareFootage() {
-		return (EAttribute)facilityEClass.getEStructuralFeatures().get(14);
+	public EReference getFacility_GeoPointId() {
+		return (EReference)facilityEClass.getEStructuralFeatures().get(14);
 	}
 
 	/**
@@ -1130,7 +1146,7 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 	 * @generated
 	 */
 	@Override
-	public EAttribute getFacility_OpenedDate() {
+	public EAttribute getFacility_OldSquareFootage() {
 		return (EAttribute)facilityEClass.getEStructuralFeatures().get(15);
 	}
 
@@ -1140,8 +1156,8 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getFacility_OwnerPartyId() {
-		return (EReference)facilityEClass.getEStructuralFeatures().get(16);
+	public EAttribute getFacility_OpenedDate() {
+		return (EAttribute)facilityEClass.getEStructuralFeatures().get(16);
 	}
 
 	/**
@@ -1150,7 +1166,7 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getFacility_ParentFacilityId() {
+	public EReference getFacility_OwnerPartyId() {
 		return (EReference)facilityEClass.getEStructuralFeatures().get(17);
 	}
 
@@ -1160,7 +1176,7 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getFacility_PrimaryFacilityGroupId() {
+	public EReference getFacility_ParentFacilityId() {
 		return (EReference)facilityEClass.getEStructuralFeatures().get(18);
 	}
 
@@ -1170,8 +1186,48 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getFacility_ProductStoreId() {
+	public EReference getFacility_PrimaryFacilityGroupId() {
 		return (EReference)facilityEClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getFacility_ProductStoreId() {
+		return (EReference)facilityEClass.getEStructuralFeatures().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getFacilityAssocType() {
+		return facilityAssocTypeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFacilityAssocType_FacilityAssocTypeId() {
+		return (EAttribute)facilityAssocTypeEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getFacilityAssocType_Description() {
+		return (EAttribute)facilityAssocTypeEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -2200,8 +2256,108 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 	 * @generated
 	 */
 	@Override
-	public EReference getProductFacility_RequirementMethodEnumId() {
+	public EReference getProductFacility_ReplenishMethodEnumId() {
 		return (EReference)productFacilityEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getProductFacility_RequirementMethodEnumId() {
+		return (EReference)productFacilityEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getProductFacilityAssoc() {
+		return productFacilityAssocEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getProductFacilityAssoc_ProductId() {
+		return (EReference)productFacilityAssocEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getProductFacilityAssoc_FacilityId() {
+		return (EReference)productFacilityAssocEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getProductFacilityAssoc_FacilityIdTo() {
+		return (EReference)productFacilityAssocEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getProductFacilityAssoc_FacilityAssocTypeId() {
+		return (EReference)productFacilityAssocEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getProductFacilityAssoc_FromDate() {
+		return (EAttribute)productFacilityAssocEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getProductFacilityAssoc_SequenceNum() {
+		return (EAttribute)productFacilityAssocEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getProductFacilityAssoc_ThruDate() {
+		return (EAttribute)productFacilityAssocEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getProductFacilityAssoc_TransitTime() {
+		return (EAttribute)productFacilityAssocEClass.getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -2318,6 +2474,7 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		createEReference(facilityEClass, FACILITY__DEFAULT_WEIGHT_UOM_ID);
 		createEAttribute(facilityEClass, FACILITY__DESCRIPTION);
 		createEReference(facilityEClass, FACILITY__FACILITY_ATTRIBUTES);
+		createEAttribute(facilityEClass, FACILITY__FACILITY_LEVEL);
 		createEReference(facilityEClass, FACILITY__FACILITY_LOCATIONS);
 		createEAttribute(facilityEClass, FACILITY__FACILITY_NAME);
 		createEAttribute(facilityEClass, FACILITY__FACILITY_SIZE);
@@ -2330,6 +2487,10 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		createEReference(facilityEClass, FACILITY__PARENT_FACILITY_ID);
 		createEReference(facilityEClass, FACILITY__PRIMARY_FACILITY_GROUP_ID);
 		createEReference(facilityEClass, FACILITY__PRODUCT_STORE_ID);
+
+		facilityAssocTypeEClass = createEClass(FACILITY_ASSOC_TYPE);
+		createEAttribute(facilityAssocTypeEClass, FACILITY_ASSOC_TYPE__FACILITY_ASSOC_TYPE_ID);
+		createEAttribute(facilityAssocTypeEClass, FACILITY_ASSOC_TYPE__DESCRIPTION);
 
 		facilityAttributeEClass = createEClass(FACILITY_ATTRIBUTE);
 		createEReference(facilityAttributeEClass, FACILITY_ATTRIBUTE__FACILITY_ID);
@@ -2450,7 +2611,18 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		createEAttribute(productFacilityEClass, PRODUCT_FACILITY__LAST_INVENTORY_COUNT);
 		createEAttribute(productFacilityEClass, PRODUCT_FACILITY__MINIMUM_STOCK);
 		createEAttribute(productFacilityEClass, PRODUCT_FACILITY__REORDER_QUANTITY);
+		createEReference(productFacilityEClass, PRODUCT_FACILITY__REPLENISH_METHOD_ENUM_ID);
 		createEReference(productFacilityEClass, PRODUCT_FACILITY__REQUIREMENT_METHOD_ENUM_ID);
+
+		productFacilityAssocEClass = createEClass(PRODUCT_FACILITY_ASSOC);
+		createEReference(productFacilityAssocEClass, PRODUCT_FACILITY_ASSOC__PRODUCT_ID);
+		createEReference(productFacilityAssocEClass, PRODUCT_FACILITY_ASSOC__FACILITY_ID);
+		createEReference(productFacilityAssocEClass, PRODUCT_FACILITY_ASSOC__FACILITY_ID_TO);
+		createEReference(productFacilityAssocEClass, PRODUCT_FACILITY_ASSOC__FACILITY_ASSOC_TYPE_ID);
+		createEAttribute(productFacilityAssocEClass, PRODUCT_FACILITY_ASSOC__FROM_DATE);
+		createEAttribute(productFacilityAssocEClass, PRODUCT_FACILITY_ASSOC__SEQUENCE_NUM);
+		createEAttribute(productFacilityAssocEClass, PRODUCT_FACILITY_ASSOC__THRU_DATE);
+		createEAttribute(productFacilityAssocEClass, PRODUCT_FACILITY_ASSOC__TRANSIT_TIME);
 
 		productFacilityLocationEClass = createEClass(PRODUCT_FACILITY_LOCATION);
 		createEReference(productFacilityLocationEClass, PRODUCT_FACILITY_LOCATION__PRODUCT_ID);
@@ -2508,6 +2680,7 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		EGenericType g2 = createEGenericType(this.getFacilityType());
 		g1.getETypeArguments().add(g2);
 		facilityEClass.getEGenericSuperTypes().add(g1);
+		facilityAssocTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
 		facilityAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
 		facilityCalendarEClass.getESuperTypes().add(theBizPackage.getBizEntity());
 		facilityCalendarTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
@@ -2529,6 +2702,7 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		facilityTypeEClass.getEGenericSuperTypes().add(g1);
 		facilityTypeAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
 		productFacilityEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		productFacilityAssocEClass.getESuperTypes().add(theBizPackage.getBizEntity());
 		productFacilityLocationEClass.getESuperTypes().add(theBizPackage.getBizEntity());
 
 		// Initialize classes and features; add operations and parameters
@@ -2564,6 +2738,7 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		getFacility_DefaultWeightUomId().getEKeys().add(theUomPackage.getUom_UomId());
 		initEAttribute(getFacility_Description(), ecorePackage.getEString(), "description", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFacility_FacilityAttributes(), this.getFacilityAttribute(), null, "facilityAttributes", null, 0, -1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFacility_FacilityLevel(), ecorePackage.getELong(), "facilityLevel", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getFacility_FacilityLocations(), this.getFacilityLocation(), null, "facilityLocations", null, 0, -1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacility_FacilityName(), ecorePackage.getEString(), "facilityName", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getFacility_FacilitySize(), ecorePackage.getEBigDecimal(), "facilitySize", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2583,6 +2758,10 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		getFacility_PrimaryFacilityGroupId().getEKeys().add(this.getFacilityGroup_FacilityGroupId());
 		initEReference(getFacility_ProductStoreId(), theStorePackage.getProductStore(), null, "productStoreId", null, 0, 1, Facility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getFacility_ProductStoreId().getEKeys().add(theStorePackage.getProductStore_ProductStoreId());
+
+		initEClass(facilityAssocTypeEClass, FacilityAssocType.class, "FacilityAssocType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getFacilityAssocType_FacilityAssocTypeId(), ecorePackage.getEString(), "facilityAssocTypeId", null, 1, 1, FacilityAssocType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFacilityAssocType_Description(), ecorePackage.getEString(), "description", null, 0, 1, FacilityAssocType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(facilityAttributeEClass, FacilityAttribute.class, "FacilityAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getFacilityAttribute_FacilityId(), this.getFacility(), null, "facilityId", null, 1, 1, FacilityAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2736,8 +2915,24 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		initEAttribute(getProductFacility_LastInventoryCount(), ecorePackage.getEBigDecimal(), "lastInventoryCount", null, 0, 1, ProductFacility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFacility_MinimumStock(), ecorePackage.getEBigDecimal(), "minimumStock", null, 0, 1, ProductFacility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFacility_ReorderQuantity(), ecorePackage.getEBigDecimal(), "reorderQuantity", null, 0, 1, ProductFacility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProductFacility_ReplenishMethodEnumId(), theEnumPackage.getEnumeration(), null, "replenishMethodEnumId", null, 0, 1, ProductFacility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductFacility_ReplenishMethodEnumId().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEReference(getProductFacility_RequirementMethodEnumId(), theEnumPackage.getEnumeration(), null, "requirementMethodEnumId", null, 0, 1, ProductFacility.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getProductFacility_RequirementMethodEnumId().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
+
+		initEClass(productFacilityAssocEClass, ProductFacilityAssoc.class, "ProductFacilityAssoc", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getProductFacilityAssoc_ProductId(), theProductPackage.getProduct(), null, "productId", null, 1, 1, ProductFacilityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductFacilityAssoc_ProductId().getEKeys().add(theProductPackage.getProduct_ProductId());
+		initEReference(getProductFacilityAssoc_FacilityId(), this.getFacility(), null, "facilityId", null, 1, 1, ProductFacilityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductFacilityAssoc_FacilityId().getEKeys().add(this.getFacility_FacilityId());
+		initEReference(getProductFacilityAssoc_FacilityIdTo(), this.getFacility(), null, "facilityIdTo", null, 1, 1, ProductFacilityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductFacilityAssoc_FacilityIdTo().getEKeys().add(this.getFacility_FacilityId());
+		initEReference(getProductFacilityAssoc_FacilityAssocTypeId(), this.getFacilityAssocType(), null, "facilityAssocTypeId", null, 1, 1, ProductFacilityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		getProductFacilityAssoc_FacilityAssocTypeId().getEKeys().add(this.getFacilityAssocType_FacilityAssocTypeId());
+		initEAttribute(getProductFacilityAssoc_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, ProductFacilityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProductFacilityAssoc_SequenceNum(), ecorePackage.getELong(), "sequenceNum", null, 0, 1, ProductFacilityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProductFacilityAssoc_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, ProductFacilityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getProductFacilityAssoc_TransitTime(), ecorePackage.getELong(), "transitTime", null, 0, 1, ProductFacilityAssoc.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(productFacilityLocationEClass, ProductFacilityLocation.class, "ProductFacilityLocation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductFacilityLocation_ProductId(), theProductPackage.getProduct(), null, "productId", null, 1, 1, ProductFacilityLocation.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2793,6 +2988,14 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		  (facilityEClass,
 		   source,
 		   new String[] {
+			   "dictionary", "ProductEntityLabels",
+			   "formula", "description"
+		   });
+		addAnnotation
+		  (facilityAssocTypeEClass,
+		   source,
+		   new String[] {
+			   "title", "Define associations between facilities",
 			   "dictionary", "ProductEntityLabels",
 			   "formula", "description"
 		   });
@@ -2916,6 +3119,13 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 			   "dictionary", "ProductEntityLabels"
 		   });
 		addAnnotation
+		  (productFacilityAssocEClass,
+		   source,
+		   new String[] {
+			   "title", "Define associations between Product facilities",
+			   "dictionary", "ProductEntityLabels"
+		   });
+		addAnnotation
 		  (productFacilityLocationEClass,
 		   source,
 		   new String[] {
@@ -2942,8 +3152,7 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		  (getContainer_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getContainerType_ContainerTypeId(),
@@ -2955,8 +3164,7 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		  (getContainerType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getFacility_FacilityId(),
@@ -2975,15 +3183,20 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		  (getFacility_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
+		   });
+		addAnnotation
+		  (getFacility_FacilityLevel(),
+		   source,
+		   new String[] {
+			   "precision", "20",
+			   "scale", "0"
 		   });
 		addAnnotation
 		  (getFacility_FacilityName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getFacility_FacilitySize(),
@@ -3001,6 +3214,18 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 			   "scale", "0"
 		   });
 		addAnnotation
+		  (getFacilityAssocType_FacilityAssocTypeId(),
+		   source,
+		   new String[] {
+			   "length", "20"
+		   });
+		addAnnotation
+		  (getFacilityAssocType_Description(),
+		   source,
+		   new String[] {
+			   "type", "description"
+		   });
+		addAnnotation
 		  (getFacilityAttribute_AttrName(),
 		   source,
 		   new String[] {
@@ -3010,8 +3235,7 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		  (getFacilityAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getFacilityAttribute_AttrValue(),
@@ -3035,8 +3259,7 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		  (getFacilityCalendarType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getFacilityCalendarType_ParentTypeId(),
@@ -3054,8 +3277,7 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		  (getFacilityContactMech_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getFacilityContactMech_Extension(),
@@ -3073,15 +3295,13 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		  (getFacilityGroup_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getFacilityGroup_FacilityGroupName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getFacilityGroupMember_SequenceNum(),
@@ -3107,8 +3327,7 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		  (getFacilityGroupType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getFacilityLocation_LocationSeqId(),
@@ -3168,8 +3387,7 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		  (getFacilityType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getFacilityTypeAttr_AttrName(),
@@ -3181,8 +3399,7 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		  (getFacilityTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductFacility_DaysToShip(),
@@ -3214,6 +3431,20 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 			   "type", "fixed-point",
 			   "precision", "18",
 			   "scale", "6"
+		   });
+		addAnnotation
+		  (getProductFacilityAssoc_SequenceNum(),
+		   source,
+		   new String[] {
+			   "precision", "20",
+			   "scale", "0"
+		   });
+		addAnnotation
+		  (getProductFacilityAssoc_TransitTime(),
+		   source,
+		   new String[] {
+			   "precision", "20",
+			   "scale", "0"
 		   });
 		addAnnotation
 		  (getProductFacilityLocation_LocationSeqId(),
@@ -3276,6 +3507,12 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		   source,
 		   new String[] {
 			   "help", "This field store the unit of measurement of dimension (length, width and height)"
+		   });
+		addAnnotation
+		  (getFacility_FacilityLevel(),
+		   source,
+		   new String[] {
+			   "help", "This field will define the level of facility."
 		   });
 		addAnnotation
 		  (getFacilityAttribute_FacilityId(),
@@ -3539,7 +3776,37 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		  (getProductFacility_LastInventoryCount(),
 		   source,
 		   new String[] {
-			   "help", "This field represents availableToPromiseTotal of a product at a certain point of time and is being updated regularly by a schedule service every hour"
+			   "help", "This field represents availableToPromiseTotal of a product at a certain point of time and is\n                being updated regularly by a schedule service every hour"
+		   });
+		addAnnotation
+		  (getProductFacilityAssoc_ProductId(),
+		   source,
+		   new String[] {
+			   "key", "true"
+		   });
+		addAnnotation
+		  (getProductFacilityAssoc_FacilityId(),
+		   source,
+		   new String[] {
+			   "key", "true"
+		   });
+		addAnnotation
+		  (getProductFacilityAssoc_FacilityIdTo(),
+		   source,
+		   new String[] {
+			   "key", "true"
+		   });
+		addAnnotation
+		  (getProductFacilityAssoc_FacilityAssocTypeId(),
+		   source,
+		   new String[] {
+			   "key", "true"
+		   });
+		addAnnotation
+		  (getProductFacilityAssoc_FromDate(),
+		   source,
+		   new String[] {
+			   "key", "true"
 		   });
 		addAnnotation
 		  (getProductFacilityLocation_ProductId(),

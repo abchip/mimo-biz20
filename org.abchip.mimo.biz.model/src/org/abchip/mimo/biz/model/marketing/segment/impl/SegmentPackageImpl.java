@@ -1073,8 +1073,7 @@ public class SegmentPackageImpl extends EPackageImpl implements SegmentPackage {
 		  (getSegmentGroup_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getSegmentGroupType_SegmentGroupTypeId(),
@@ -1086,8 +1085,7 @@ public class SegmentPackageImpl extends EPackageImpl implements SegmentPackage {
 		  (getSegmentGroupType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

@@ -756,7 +756,7 @@ public class BizTestCommands extends BaseTestCommands {
 				price = ((BigDecimal) priceResult.get("basePrice"));
 			}
 
-			invoiceItem.setTaxableFlag(productEntity.isTaxable());
+			invoiceItem.setTaxableFlag(productEntity.getTaxable());
 			invoiceItem.setAmount(price);
 		} catch (GenericServiceException e) {
 			e.printStackTrace();

@@ -1092,8 +1092,7 @@ public class TimesheetPackageImpl extends EPackageImpl implements TimesheetPacka
 		  (getTimeEntry_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getTimeEntry_InvoiceItemSeqId(),
@@ -1111,8 +1110,7 @@ public class TimesheetPackageImpl extends EPackageImpl implements TimesheetPacka
 		  (getTimesheet_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 	}
 

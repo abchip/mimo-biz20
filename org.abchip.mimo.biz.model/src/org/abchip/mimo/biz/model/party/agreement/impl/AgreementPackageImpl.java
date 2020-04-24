@@ -2811,8 +2811,7 @@ public class AgreementPackageImpl extends EPackageImpl implements AgreementPacka
 		  (getAgreement_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getAgreementAttribute_AttrName(),
@@ -2824,8 +2823,7 @@ public class AgreementPackageImpl extends EPackageImpl implements AgreementPacka
 		  (getAgreementAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getAgreementAttribute_AttrValue(),
@@ -2849,8 +2847,7 @@ public class AgreementPackageImpl extends EPackageImpl implements AgreementPacka
 		  (getAgreementContentType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getAgreementEmploymentAppl_AgreementId(),
@@ -2934,8 +2931,7 @@ public class AgreementPackageImpl extends EPackageImpl implements AgreementPacka
 		  (getAgreementItemAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getAgreementItemAttribute_AttrValue(),
@@ -2953,8 +2949,7 @@ public class AgreementPackageImpl extends EPackageImpl implements AgreementPacka
 		  (getAgreementItemType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getAgreementItemTypeAttr_AttrName(),
@@ -2966,8 +2961,7 @@ public class AgreementPackageImpl extends EPackageImpl implements AgreementPacka
 		  (getAgreementItemTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getAgreementPartyApplic_AgreementItemSeqId(),
@@ -3018,8 +3012,7 @@ public class AgreementPackageImpl extends EPackageImpl implements AgreementPacka
 		  (getAgreementTerm_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getAgreementTerm_TermDays(),
@@ -3040,8 +3033,7 @@ public class AgreementPackageImpl extends EPackageImpl implements AgreementPacka
 		  (getAgreementTerm_TextValue(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getAgreementTermAttribute_AttrName(),
@@ -3053,8 +3045,7 @@ public class AgreementPackageImpl extends EPackageImpl implements AgreementPacka
 		  (getAgreementTermAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getAgreementTermAttribute_AttrValue(),
@@ -3072,8 +3063,7 @@ public class AgreementPackageImpl extends EPackageImpl implements AgreementPacka
 		  (getAgreementType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getAgreementTypeAttr_AttrName(),
@@ -3085,8 +3075,7 @@ public class AgreementPackageImpl extends EPackageImpl implements AgreementPacka
 		  (getAgreementTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getAgreementWorkEffortApplic_AgreementItemSeqId(),
@@ -3104,8 +3093,7 @@ public class AgreementPackageImpl extends EPackageImpl implements AgreementPacka
 		  (getTermType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getTermTypeAttr_AttrName(),
@@ -3117,8 +3105,7 @@ public class AgreementPackageImpl extends EPackageImpl implements AgreementPacka
 		  (getTermTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

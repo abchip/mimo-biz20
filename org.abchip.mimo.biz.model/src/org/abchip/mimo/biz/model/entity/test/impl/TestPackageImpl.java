@@ -89,6 +89,7 @@ import org.abchip.mimo.biz.model.entity.synchronization.SynchronizationPackage;
 import org.abchip.mimo.biz.model.entity.synchronization.impl.SynchronizationPackageImpl;
 import org.abchip.mimo.biz.model.entity.tenant.TenantPackage;
 import org.abchip.mimo.biz.model.entity.tenant.impl.TenantPackageImpl;
+import org.abchip.mimo.biz.model.entity.test.TestEntity;
 import org.abchip.mimo.biz.model.entity.test.TestFactory;
 import org.abchip.mimo.biz.model.entity.test.TestFieldType;
 import org.abchip.mimo.biz.model.entity.test.TestPackage;
@@ -217,6 +218,13 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
  * @generated
  */
 public class TestPackageImpl extends EPackageImpl implements TestPackage {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass testEntityEClass = null;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -728,6 +736,296 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(TestPackage.eNS_URI, theTestPackage);
 		return theTestPackage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getTestEntity() {
+		return testEntityEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldId() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldBlob() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldByteArray() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldComment() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldCreditCardDate() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldCreditCardNumber() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldCurrencyAmount() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldCurrencyPrecise() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldDate() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldDateTime() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldDescription() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldEmail() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldFixedPoint() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldFloatingPoint() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldIdLong() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(14);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldIdVlong() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(15);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldIndicator() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldLongVarchar() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldName() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldNumeric() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldObject() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(20);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldShortVarchar() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(21);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldTelNumber() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(22);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldTime() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(23);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldUrl() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(24);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldValue() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(25);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldVeryLong() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(26);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getTestEntity_FieldVeryShort() {
+		return (EAttribute)testEntityEClass.getEStructuralFeatures().get(27);
 	}
 
 	/**
@@ -1329,6 +1627,36 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 		isCreated = true;
 
 		// Create classes and their features
+		testEntityEClass = createEClass(TEST_ENTITY);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_ID);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_BLOB);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_BYTE_ARRAY);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_COMMENT);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_CREDIT_CARD_DATE);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_CREDIT_CARD_NUMBER);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_CURRENCY_AMOUNT);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_CURRENCY_PRECISE);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_DATE);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_DATE_TIME);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_DESCRIPTION);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_EMAIL);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_FIXED_POINT);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_FLOATING_POINT);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_ID_LONG);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_ID_VLONG);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_INDICATOR);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_LONG_VARCHAR);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_NAME);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_NUMERIC);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_OBJECT);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_SHORT_VARCHAR);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_TEL_NUMBER);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_TIME);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_URL);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_VALUE);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_VERY_LONG);
+		createEAttribute(testEntityEClass, TEST_ENTITY__FIELD_VERY_SHORT);
+
 		testFieldTypeEClass = createEClass(TEST_FIELD_TYPE);
 		createEAttribute(testFieldTypeEClass, TEST_FIELD_TYPE__TEST_FIELD_TYPE_ID);
 		createEAttribute(testFieldTypeEClass, TEST_FIELD_TYPE__BLOB_FIELD);
@@ -1430,6 +1758,7 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
+		testEntityEClass.getESuperTypes().add(theBizPackage.getBizEntity());
 		testFieldTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
 		testingEClass.getESuperTypes().add(theBizPackage.getBizEntity());
 		testingCryptoEClass.getESuperTypes().add(theBizPackage.getBizEntity());
@@ -1442,6 +1771,36 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 		testingTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
 
 		// Initialize classes and features; add operations and parameters
+		initEClass(testEntityEClass, TestEntity.class, "TestEntity", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getTestEntity_FieldId(), ecorePackage.getEString(), "fieldId", null, 1, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldBlob(), ecorePackage.getEString(), "fieldBlob", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldByteArray(), ecorePackage.getEByteArray(), "fieldByteArray", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldComment(), ecorePackage.getEString(), "fieldComment", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldCreditCardDate(), ecorePackage.getEString(), "fieldCreditCardDate", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldCreditCardNumber(), ecorePackage.getEString(), "fieldCreditCardNumber", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldCurrencyAmount(), ecorePackage.getEBigDecimal(), "fieldCurrencyAmount", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldCurrencyPrecise(), ecorePackage.getEBigDecimal(), "fieldCurrencyPrecise", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldDate(), ecorePackage.getEDate(), "fieldDate", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldDateTime(), ecorePackage.getEDate(), "fieldDateTime", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldDescription(), ecorePackage.getEString(), "fieldDescription", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldEmail(), ecorePackage.getEString(), "fieldEmail", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldFixedPoint(), ecorePackage.getEBigDecimal(), "fieldFixedPoint", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldFloatingPoint(), ecorePackage.getEDouble(), "fieldFloatingPoint", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldIdLong(), ecorePackage.getEString(), "fieldIdLong", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldIdVlong(), ecorePackage.getEString(), "fieldIdVlong", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldIndicator(), ecorePackage.getEBoolean(), "fieldIndicator", null, 1, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldLongVarchar(), ecorePackage.getEString(), "fieldLongVarchar", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldName(), ecorePackage.getEString(), "fieldName", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldNumeric(), ecorePackage.getELong(), "fieldNumeric", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldObject(), ecorePackage.getEJavaObject(), "fieldObject", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldShortVarchar(), ecorePackage.getEString(), "fieldShortVarchar", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldTelNumber(), ecorePackage.getEString(), "fieldTelNumber", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldTime(), ecorePackage.getEDate(), "fieldTime", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldUrl(), ecorePackage.getEString(), "fieldUrl", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldValue(), ecorePackage.getEString(), "fieldValue", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldVeryLong(), ecorePackage.getEString(), "fieldVeryLong", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTestEntity_FieldVeryShort(), ecorePackage.getEString(), "fieldVeryShort", null, 0, 1, TestEntity.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		initEClass(testFieldTypeEClass, TestFieldType.class, "TestFieldType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getTestFieldType_TestFieldTypeId(), ecorePackage.getEString(), "testFieldTypeId", null, 1, 1, TestFieldType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTestFieldType_BlobField(), ecorePackage.getEString(), "blobField", null, 0, 1, TestFieldType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1534,6 +1893,127 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 	protected void createMimoentformatAnnotations() {
 		String source = "mimo-ent-format";
 		addAnnotation
+		  (getTestEntity_FieldId(),
+		   source,
+		   new String[] {
+			   "length", "20"
+		   });
+		addAnnotation
+		  (getTestEntity_FieldComment(),
+		   source,
+		   new String[] {
+			   "type", "comment"
+		   });
+		addAnnotation
+		  (getTestEntity_FieldCreditCardDate(),
+		   source,
+		   new String[] {
+			   "type", "credit-card-date"
+		   });
+		addAnnotation
+		  (getTestEntity_FieldCreditCardNumber(),
+		   source,
+		   new String[] {
+			   "type", "credit-card-number"
+		   });
+		addAnnotation
+		  (getTestEntity_FieldCurrencyAmount(),
+		   source,
+		   new String[] {
+			   "type", "currency-amount",
+			   "precision", "18",
+			   "scale", "2"
+		   });
+		addAnnotation
+		  (getTestEntity_FieldCurrencyPrecise(),
+		   source,
+		   new String[] {
+			   "type", "currency-precise",
+			   "precision", "18",
+			   "scale", "3"
+		   });
+		addAnnotation
+		  (getTestEntity_FieldDescription(),
+		   source,
+		   new String[] {
+			   "type", "description"
+		   });
+		addAnnotation
+		  (getTestEntity_FieldEmail(),
+		   source,
+		   new String[] {
+			   "type", "email"
+		   });
+		addAnnotation
+		  (getTestEntity_FieldFixedPoint(),
+		   source,
+		   new String[] {
+			   "type", "fixed-point",
+			   "precision", "18",
+			   "scale", "6"
+		   });
+		addAnnotation
+		  (getTestEntity_FieldIdLong(),
+		   source,
+		   new String[] {
+			   "length", "60"
+		   });
+		addAnnotation
+		  (getTestEntity_FieldIdVlong(),
+		   source,
+		   new String[] {
+			   "length", "255"
+		   });
+		addAnnotation
+		  (getTestEntity_FieldLongVarchar(),
+		   source,
+		   new String[] {
+			   "length", "255"
+		   });
+		addAnnotation
+		  (getTestEntity_FieldName(),
+		   source,
+		   new String[] {
+			   "type", "name"
+		   });
+		addAnnotation
+		  (getTestEntity_FieldNumeric(),
+		   source,
+		   new String[] {
+			   "precision", "20",
+			   "scale", "0"
+		   });
+		addAnnotation
+		  (getTestEntity_FieldShortVarchar(),
+		   source,
+		   new String[] {
+			   "length", "60"
+		   });
+		addAnnotation
+		  (getTestEntity_FieldTelNumber(),
+		   source,
+		   new String[] {
+			   "type", "tel-number"
+		   });
+		addAnnotation
+		  (getTestEntity_FieldUrl(),
+		   source,
+		   new String[] {
+			   "type", "url"
+		   });
+		addAnnotation
+		  (getTestEntity_FieldValue(),
+		   source,
+		   new String[] {
+			   "length", "255"
+		   });
+		addAnnotation
+		  (getTestEntity_FieldVeryShort(),
+		   source,
+		   new String[] {
+			   "length", "10"
+		   });
+		addAnnotation
 		  (getTestFieldType_TestFieldTypeId(),
 		   source,
 		   new String[] {
@@ -1564,22 +2044,19 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 		  (getTesting_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getTesting_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getTesting_TestingName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getTesting_TestingSize(),
@@ -1598,15 +2075,13 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 		  (getTestingCrypto_EncryptedValue(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getTestingCrypto_SaltedEncryptedValue(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getTestingCrypto_TestingCryptoTypeId(),
@@ -1618,8 +2093,7 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 		  (getTestingCrypto_UnencryptedValue(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getTestingItem_TestingSeqId(),
@@ -1637,8 +2111,7 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 		  (getTestingNode_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getTestingRemoveAll_TestingRemoveAllId(),
@@ -1650,8 +2123,7 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 		  (getTestingRemoveAll_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getTestingStatus_TestingStatusId(),
@@ -1675,8 +2147,7 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 		  (getTestingSubtype_SubtypeDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getTestingType_TestingTypeId(),
@@ -1688,8 +2159,7 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 		  (getTestingType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 
@@ -1759,6 +2229,12 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 	 */
 	protected void createMimoentframeAnnotations() {
 		String source = "mimo-ent-frame";
+		addAnnotation
+		  (testEntityEClass,
+		   source,
+		   new String[] {
+			   "title", "Test file for write"
+		   });
 		addAnnotation
 		  (testFieldTypeEClass,
 		   source,

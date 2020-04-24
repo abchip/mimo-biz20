@@ -2075,8 +2075,7 @@ public class DataPackageImpl extends EPackageImpl implements DataPackage {
 		  (getCharacterSet_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getDataCategory_DataCategoryId(),
@@ -2088,8 +2087,7 @@ public class DataPackageImpl extends EPackageImpl implements DataPackage {
 		  (getDataCategory_CategoryName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getDataResource_DataResourceId(),
@@ -2131,8 +2129,7 @@ public class DataPackageImpl extends EPackageImpl implements DataPackage {
 		  (getDataResourceAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getDataResourceAttribute_AttrValue(),
@@ -2162,8 +2159,7 @@ public class DataPackageImpl extends EPackageImpl implements DataPackage {
 		  (getDataResourceType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getDataResourceTypeAttr_AttrName(),
@@ -2175,8 +2171,7 @@ public class DataPackageImpl extends EPackageImpl implements DataPackage {
 		  (getDataResourceTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getDataTemplateType_DataTemplateTypeId(),
@@ -2188,8 +2183,7 @@ public class DataPackageImpl extends EPackageImpl implements DataPackage {
 		  (getDataTemplateType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getDataTemplateType_Extension(),
@@ -2219,8 +2213,7 @@ public class DataPackageImpl extends EPackageImpl implements DataPackage {
 		  (getMetaDataPredicate_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getMimeType_MimeTypeId(),
@@ -2232,8 +2225,7 @@ public class DataPackageImpl extends EPackageImpl implements DataPackage {
 		  (getMimeType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getMimeTypeHtmlTemplate_MimeTypeId(),

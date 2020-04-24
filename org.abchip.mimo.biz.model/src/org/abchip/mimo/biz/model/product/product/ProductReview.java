@@ -25,7 +25,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductReview#getProductReviewId <em>Product Review Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductReview#isPostedAnonymous <em>Posted Anonymous</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductReview#getPostedAnonymous <em>Posted Anonymous</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductReview#getPostedDateTime <em>Posted Date Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductReview#getProductId <em>Product Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductReview#getProductRating <em>Product Rating</em>}</li>
@@ -148,28 +148,24 @@ public interface ProductReview extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Posted Anonymous</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Posted Anonymous</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Posted Anonymous</em>' attribute.
-	 * @see #setPostedAnonymous(boolean)
+	 * @see #setPostedAnonymous(Boolean)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductReview_PostedAnonymous()
 	 * @model
 	 * @generated
 	 */
-	boolean isPostedAnonymous();
+	Boolean getPostedAnonymous();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductReview#isPostedAnonymous <em>Posted Anonymous</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductReview#getPostedAnonymous <em>Posted Anonymous</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Posted Anonymous</em>' attribute.
-	 * @see #isPostedAnonymous()
+	 * @see #getPostedAnonymous()
 	 * @generated
 	 */
-	void setPostedAnonymous(boolean value);
+	void setPostedAnonymous(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Store Id</b></em>' reference.

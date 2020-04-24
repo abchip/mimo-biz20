@@ -975,8 +975,7 @@ public class NeedPackageImpl extends EPackageImpl implements NeedPackage {
 		  (getNeedType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getPartyNeed_PartyNeedId(),
@@ -988,8 +987,7 @@ public class NeedPackageImpl extends EPackageImpl implements NeedPackage {
 		  (getPartyNeed_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getPartyNeed_VisitId(),

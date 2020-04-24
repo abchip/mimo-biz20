@@ -931,8 +931,7 @@ public class MethodPackageImpl extends EPackageImpl implements MethodPackage {
 		  (getCustomMethod_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getCustomMethodType_CustomMethodTypeId(),
@@ -944,8 +943,7 @@ public class MethodPackageImpl extends EPackageImpl implements MethodPackage {
 		  (getCustomMethodType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

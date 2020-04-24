@@ -35,6 +35,7 @@ import org.abchip.mimo.biz.model.product.store.ProductStore;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultWeightUomId <em>Default Weight Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityAttributes <em>Facility Attributes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityLevel <em>Facility Level</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityLocations <em>Facility Locations</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityName <em>Facility Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilitySize <em>Facility Size</em>}</li>
@@ -197,7 +198,7 @@ public interface Facility extends BizEntityTyped<FacilityType> {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -229,6 +230,29 @@ public interface Facility extends BizEntityTyped<FacilityType> {
 	List<FacilityAttribute> getFacilityAttributes();
 
 	/**
+	 * Returns the value of the '<em><b>Facility Level</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Facility Level</em>' attribute.
+	 * @see #setFacilityLevel(long)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_FacilityLevel()
+	 * @model annotation="mimo-ent-slot help='This field will define the level of facility.'"
+	 *        annotation="mimo-ent-format precision='20' scale='0'"
+	 * @generated
+	 */
+	long getFacilityLevel();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityLevel <em>Facility Level</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Facility Level</em>' attribute.
+	 * @see #getFacilityLevel()
+	 * @generated
+	 */
+	void setFacilityLevel(long value);
+
+	/**
 	 * Returns the value of the '<em><b>Facility Locations</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.facility.FacilityLocation}.
 	 * <!-- begin-user-doc -->
@@ -255,7 +279,7 @@ public interface Facility extends BizEntityTyped<FacilityType> {
 	 * @return the value of the '<em>Facility Name</em>' attribute.
 	 * @see #setFacilityName(String)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_FacilityName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getFacilityName();

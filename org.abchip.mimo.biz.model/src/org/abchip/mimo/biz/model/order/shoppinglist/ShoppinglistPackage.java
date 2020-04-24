@@ -765,22 +765,22 @@ public interface ShoppinglistPackage extends EPackage {
 	EAttribute getShoppingList_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#isIsActive <em>Is Active</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getIsActive <em>Is Active</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Active</em>'.
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#isIsActive()
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getIsActive()
 	 * @see #getShoppingList()
 	 * @generated
 	 */
 	EAttribute getShoppingList_IsActive();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#isIsPublic <em>Is Public</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getIsPublic <em>Is Public</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Public</em>'.
-	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#isIsPublic()
+	 * @see org.abchip.mimo.biz.model.order.shoppinglist.ShoppingList#getIsPublic()
 	 * @see #getShoppingList()
 	 * @generated
 	 */

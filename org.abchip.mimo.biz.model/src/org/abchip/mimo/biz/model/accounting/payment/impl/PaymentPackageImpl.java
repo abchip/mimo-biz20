@@ -5786,8 +5786,8 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 
 		initEClass(payPalPaymentMethodEClass, PayPalPaymentMethod.class, "PayPalPaymentMethod", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPayPalPaymentMethod_PaymentMethodId(), ecorePackage.getEString(), "paymentMethodId", null, 1, 1, PayPalPaymentMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPayPalPaymentMethod_AvsAddr(), ecorePackage.getEBoolean(), "avsAddr", null, 0, 1, PayPalPaymentMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPayPalPaymentMethod_AvsZip(), ecorePackage.getEBoolean(), "avsZip", null, 0, 1, PayPalPaymentMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPayPalPaymentMethod_AvsAddr(), ecorePackage.getEBooleanObject(), "avsAddr", null, 0, 1, PayPalPaymentMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPayPalPaymentMethod_AvsZip(), ecorePackage.getEBooleanObject(), "avsZip", null, 0, 1, PayPalPaymentMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPayPalPaymentMethod_ContactMechId(), theContactPackage_1.getContactMech(), null, "contactMechId", null, 0, 1, PayPalPaymentMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getPayPalPaymentMethod_ContactMechId().getEKeys().add(theContactPackage_1.getContactMech_ContactMechId());
 		initEAttribute(getPayPalPaymentMethod_CorrelationId(), ecorePackage.getEString(), "correlationId", null, 0, 1, PayPalPaymentMethod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -6042,10 +6042,10 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		initEReference(getPaymentGatewayResponse_PaymentServiceTypeEnumId(), theEnumPackage.getEnumeration(), null, "paymentServiceTypeEnumId", null, 0, 1, PaymentGatewayResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getPaymentGatewayResponse_PaymentServiceTypeEnumId().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
 		initEAttribute(getPaymentGatewayResponse_ReferenceNum(), ecorePackage.getEString(), "referenceNum", null, 0, 1, PaymentGatewayResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPaymentGatewayResponse_ResultBadCardNumber(), ecorePackage.getEBoolean(), "resultBadCardNumber", null, 0, 1, PaymentGatewayResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPaymentGatewayResponse_ResultBadExpire(), ecorePackage.getEBoolean(), "resultBadExpire", null, 0, 1, PaymentGatewayResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPaymentGatewayResponse_ResultDeclined(), ecorePackage.getEBoolean(), "resultDeclined", null, 0, 1, PaymentGatewayResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getPaymentGatewayResponse_ResultNsf(), ecorePackage.getEBoolean(), "resultNsf", null, 0, 1, PaymentGatewayResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPaymentGatewayResponse_ResultBadCardNumber(), ecorePackage.getEBooleanObject(), "resultBadCardNumber", null, 0, 1, PaymentGatewayResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPaymentGatewayResponse_ResultBadExpire(), ecorePackage.getEBooleanObject(), "resultBadExpire", null, 0, 1, PaymentGatewayResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPaymentGatewayResponse_ResultDeclined(), ecorePackage.getEBooleanObject(), "resultDeclined", null, 0, 1, PaymentGatewayResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getPaymentGatewayResponse_ResultNsf(), ecorePackage.getEBooleanObject(), "resultNsf", null, 0, 1, PaymentGatewayResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPaymentGatewayResponse_SubReference(), ecorePackage.getEString(), "subReference", null, 0, 1, PaymentGatewayResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPaymentGatewayResponse_TransCodeEnumId(), theEnumPackage.getEnumeration(), null, "transCodeEnumId", null, 0, 1, PaymentGatewayResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getPaymentGatewayResponse_TransCodeEnumId().getEKeys().add(theEnumPackage.getEnumeration_EnumId());
@@ -6422,8 +6422,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getBillingAccount_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getBillingAccount_ExternalAccountId(),
@@ -6486,8 +6485,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getCheckAccount_BankName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getCheckAccount_BranchCode(),
@@ -6499,15 +6497,13 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getCheckAccount_CompanyNameOnAccount(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getCheckAccount_NameOnAccount(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getCheckAccount_RoutingNumber(),
@@ -6519,8 +6515,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getCreditCard_CardNumber(),
 		   source,
 		   new String[] {
-			   "type", "credit-card-number",
-			   "length", "255"
+			   "type", "credit-card-number"
 		   });
 		addAnnotation
 		  (getCreditCard_CardType(),
@@ -6532,8 +6527,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getCreditCard_CompanyNameOnCard(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getCreditCard_ConsecutiveFailedAuths(),
@@ -6553,57 +6547,49 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getCreditCard_ExpireDate(),
 		   source,
 		   new String[] {
-			   "type", "credit-card-date",
-			   "length", "7"
+			   "type", "credit-card-date"
 		   });
 		addAnnotation
 		  (getCreditCard_FirstNameOnCard(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getCreditCard_IssueNumber(),
 		   source,
 		   new String[] {
-			   "type", "credit-card-date",
-			   "length", "7"
+			   "type", "credit-card-date"
 		   });
 		addAnnotation
 		  (getCreditCard_LastNameOnCard(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getCreditCard_MiddleNameOnCard(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getCreditCard_SuffixOnCard(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getCreditCard_TitleOnCard(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getCreditCard_ValidFromDate(),
 		   source,
 		   new String[] {
-			   "type", "credit-card-date",
-			   "length", "7"
+			   "type", "credit-card-date"
 		   });
 		addAnnotation
 		  (getCreditCardTypeGlAccount_CardType(),
@@ -6647,8 +6633,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getDeductionType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getEftAccount_AccountNumber(),
@@ -6666,22 +6651,19 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getEftAccount_BankName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getEftAccount_CompanyNameOnAccount(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getEftAccount_NameOnAccount(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getEftAccount_RoutingNumber(),
@@ -6706,8 +6688,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getGiftCard_ExpireDate(),
 		   source,
 		   new String[] {
-			   "type", "credit-card-date",
-			   "length", "7"
+			   "type", "credit-card-date"
 		   });
 		addAnnotation
 		  (getGiftCard_PinNumber(),
@@ -6833,8 +6814,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getPayment_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getPayment_PaymentRefNum(),
@@ -6872,8 +6852,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getPaymentAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getPaymentAttribute_AttrValue(),
@@ -6905,8 +6884,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getPaymentContentType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getPaymentGatewayAuthorizeNet_PaymentGatewayConfigId(),
@@ -7087,8 +7065,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getPaymentGatewayConfig_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getPaymentGatewayConfigType_PaymentGatewayConfigTypeId(),
@@ -7100,8 +7077,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getPaymentGatewayConfigType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getPaymentGatewayCyberSource_PaymentGatewayConfigId(),
@@ -7406,8 +7382,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getPaymentGatewayPayPal_ShippingCallbackUrl(),
 		   source,
 		   new String[] {
-			   "type", "url",
-			   "length", "2000"
+			   "type", "url"
 		   });
 		addAnnotation
 		  (getPaymentGatewayPayflowPro_PaymentGatewayConfigId(),
@@ -7764,8 +7739,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getPaymentGroup_PaymentGroupName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getPaymentGroupMember_SequenceNum(),
@@ -7784,8 +7758,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getPaymentGroupType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getPaymentMethod_PaymentMethodId(),
@@ -7797,8 +7770,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getPaymentMethod_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getPaymentMethodType_PaymentMethodTypeId(),
@@ -7810,8 +7782,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getPaymentMethodType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getPaymentType_PaymentTypeId(),
@@ -7823,8 +7794,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getPaymentType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getPaymentTypeAttr_AttrName(),
@@ -7836,8 +7806,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		  (getPaymentTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getValueLinkKey_MerchantId(),

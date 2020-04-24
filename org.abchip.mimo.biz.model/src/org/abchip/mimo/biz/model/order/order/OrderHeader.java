@@ -637,7 +637,7 @@ public interface OrderHeader extends BizEntityTyped<OrderType> {
 	 * @return the value of the '<em>Order Name</em>' attribute.
 	 * @see #setOrderName(String)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_OrderName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getOrderName();

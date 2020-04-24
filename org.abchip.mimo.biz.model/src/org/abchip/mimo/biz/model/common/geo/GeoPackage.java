@@ -1051,11 +1051,11 @@ public interface GeoPackage extends EPackage {
 	EReference getCountryAddressFormat_GeoAssocTypeId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#isHasPostalCodeExt <em>Has Postal Code Ext</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#getHasPostalCodeExt <em>Has Postal Code Ext</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Postal Code Ext</em>'.
-	 * @see org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#isHasPostalCodeExt()
+	 * @see org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#getHasPostalCodeExt()
 	 * @see #getCountryAddressFormat()
 	 * @generated
 	 */
@@ -1073,22 +1073,22 @@ public interface GeoPackage extends EPackage {
 	EAttribute getCountryAddressFormat_PostalCodeRegex();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#isRequirePostalCode <em>Require Postal Code</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#getRequirePostalCode <em>Require Postal Code</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Require Postal Code</em>'.
-	 * @see org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#isRequirePostalCode()
+	 * @see org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#getRequirePostalCode()
 	 * @see #getCountryAddressFormat()
 	 * @generated
 	 */
 	EAttribute getCountryAddressFormat_RequirePostalCode();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#isRequirePostalCodeExt <em>Require Postal Code Ext</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#getRequirePostalCodeExt <em>Require Postal Code Ext</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Require Postal Code Ext</em>'.
-	 * @see org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#isRequirePostalCodeExt()
+	 * @see org.abchip.mimo.biz.model.common.geo.CountryAddressFormat#getRequirePostalCodeExt()
 	 * @see #getCountryAddressFormat()
 	 * @generated
 	 */

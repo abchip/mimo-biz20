@@ -2121,11 +2121,11 @@ public interface ContactPackage extends EPackage {
 	EClass getFtpAddress();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.contact.FtpAddress#isBinaryTransfer <em>Binary Transfer</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.contact.FtpAddress#getBinaryTransfer <em>Binary Transfer</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Binary Transfer</em>'.
-	 * @see org.abchip.mimo.biz.model.party.contact.FtpAddress#isBinaryTransfer()
+	 * @see org.abchip.mimo.biz.model.party.contact.FtpAddress#getBinaryTransfer()
 	 * @see #getFtpAddress()
 	 * @generated
 	 */
@@ -2176,11 +2176,11 @@ public interface ContactPackage extends EPackage {
 	EAttribute getFtpAddress_Hostname();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.contact.FtpAddress#isPassiveMode <em>Passive Mode</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.contact.FtpAddress#getPassiveMode <em>Passive Mode</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Passive Mode</em>'.
-	 * @see org.abchip.mimo.biz.model.party.contact.FtpAddress#isPassiveMode()
+	 * @see org.abchip.mimo.biz.model.party.contact.FtpAddress#getPassiveMode()
 	 * @see #getFtpAddress()
 	 * @generated
 	 */
@@ -2209,11 +2209,11 @@ public interface ContactPackage extends EPackage {
 	EAttribute getFtpAddress_Username();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.contact.FtpAddress#isZipFile <em>Zip File</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.contact.FtpAddress#getZipFile <em>Zip File</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Zip File</em>'.
-	 * @see org.abchip.mimo.biz.model.party.contact.FtpAddress#isZipFile()
+	 * @see org.abchip.mimo.biz.model.party.contact.FtpAddress#getZipFile()
 	 * @see #getFtpAddress()
 	 * @generated
 	 */
@@ -2263,11 +2263,11 @@ public interface ContactPackage extends EPackage {
 	EAttribute getPartyContactMech_FromDate();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#isAllowSolicitation <em>Allow Solicitation</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#getAllowSolicitation <em>Allow Solicitation</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Allow Solicitation</em>'.
-	 * @see org.abchip.mimo.biz.model.party.contact.PartyContactMech#isAllowSolicitation()
+	 * @see org.abchip.mimo.biz.model.party.contact.PartyContactMech#getAllowSolicitation()
 	 * @see #getPartyContactMech()
 	 * @generated
 	 */
@@ -2329,11 +2329,11 @@ public interface ContactPackage extends EPackage {
 	EAttribute getPartyContactMech_ThruDate();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#isVerified <em>Verified</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#getVerified <em>Verified</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Verified</em>'.
-	 * @see org.abchip.mimo.biz.model.party.contact.PartyContactMech#isVerified()
+	 * @see org.abchip.mimo.biz.model.party.contact.PartyContactMech#getVerified()
 	 * @see #getPartyContactMech()
 	 * @generated
 	 */

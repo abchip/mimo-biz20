@@ -42,7 +42,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getDataSourceId <em>Data Source Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getExternalId <em>External Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#isIsUnread <em>Is Unread</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getIsUnread <em>Is Unread</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyAttributes <em>Party Attributes</em>}</li>
@@ -190,7 +190,7 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 	 * @generated
 	 */
 	@Override
-	public boolean isIsUnread() {
+	public Boolean getIsUnread() {
 		return (Boolean)eGet(PartyPackage.Literals.PARTY__IS_UNREAD, true);
 	}
 
@@ -200,7 +200,7 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 	 * @generated
 	 */
 	@Override
-	public void setIsUnread(boolean newIsUnread) {
+	public void setIsUnread(Boolean newIsUnread) {
 		eSet(PartyPackage.Literals.PARTY__IS_UNREAD, newIsUnread);
 	}
 

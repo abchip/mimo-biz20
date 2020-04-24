@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePromoApplImpl#getProductStoreId <em>Product Store Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePromoApplImpl#getProductPromoId <em>Product Promo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePromoApplImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePromoApplImpl#isManualOnly <em>Manual Only</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePromoApplImpl#getManualOnly <em>Manual Only</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePromoApplImpl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStorePromoApplImpl#getThruDate <em>Thru Date</em>}</li>
  * </ul>
@@ -84,7 +84,7 @@ public class ProductStorePromoApplImpl extends BizEntityImpl implements ProductS
 	 * @generated
 	 */
 	@Override
-	public boolean isManualOnly() {
+	public Boolean getManualOnly() {
 		return (Boolean)eGet(StorePackage.Literals.PRODUCT_STORE_PROMO_APPL__MANUAL_ONLY, true);
 	}
 
@@ -94,7 +94,7 @@ public class ProductStorePromoApplImpl extends BizEntityImpl implements ProductS
 	 * @generated
 	 */
 	@Override
-	public void setManualOnly(boolean newManualOnly) {
+	public void setManualOnly(Boolean newManualOnly) {
 		eSet(StorePackage.Literals.PRODUCT_STORE_PROMO_APPL__MANUAL_ONLY, newManualOnly);
 	}
 

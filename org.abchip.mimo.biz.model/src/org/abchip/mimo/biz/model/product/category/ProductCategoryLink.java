@@ -52,7 +52,7 @@ public interface ProductCategoryLink extends BizEntity {
 	 * @see #setComments(String)
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryLink_Comments()
 	 * @model annotation="mimo-ent-slot help='Internal comments, not for public display.'"
-	 *        annotation="mimo-ent-format type='comment' length='255'"
+	 *        annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getComments();
@@ -158,7 +158,7 @@ public interface ProductCategoryLink extends BizEntity {
 	 * @return the value of the '<em>Image Two Url</em>' attribute.
 	 * @see #setImageTwoUrl(String)
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryLink_ImageTwoUrl()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getImageTwoUrl();
@@ -184,7 +184,7 @@ public interface ProductCategoryLink extends BizEntity {
 	 * @return the value of the '<em>Image Url</em>' attribute.
 	 * @see #setImageUrl(String)
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryLink_ImageUrl()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getImageUrl();
@@ -343,7 +343,7 @@ public interface ProductCategoryLink extends BizEntity {
 	 * @return the value of the '<em>Title Text</em>' attribute.
 	 * @see #setTitleText(String)
 	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategoryLink_TitleText()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getTitleText();

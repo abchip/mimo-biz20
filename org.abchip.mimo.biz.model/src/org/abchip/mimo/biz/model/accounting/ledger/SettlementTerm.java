@@ -40,7 +40,7 @@ public interface SettlementTerm extends BizEntity {
 	 * @return the value of the '<em>Term Name</em>' attribute.
 	 * @see #setTermName(String)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getSettlementTerm_TermName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getTermName();

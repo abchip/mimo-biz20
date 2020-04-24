@@ -6606,11 +6606,11 @@ public interface WorkeffortPackage extends EPackage {
 	EReference getWorkEffortPartyAssignment_FacilityId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#isMustRsvp <em>Must Rsvp</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getMustRsvp <em>Must Rsvp</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Must Rsvp</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#isMustRsvp()
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getMustRsvp()
 	 * @see #getWorkEffortPartyAssignment()
 	 * @generated
 	 */
@@ -6856,11 +6856,11 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffortSearchConstraint_HighValue();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#isIncludeSubWorkEfforts <em>Include Sub Work Efforts</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getIncludeSubWorkEfforts <em>Include Sub Work Efforts</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Include Sub Work Efforts</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#isIncludeSubWorkEfforts()
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getIncludeSubWorkEfforts()
 	 * @see #getWorkEffortSearchConstraint()
 	 * @generated
 	 */
@@ -6878,11 +6878,11 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffortSearchConstraint_InfoString();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#isIsAnd <em>Is And</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getIsAnd <em>Is And</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is And</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#isIsAnd()
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getIsAnd()
 	 * @see #getWorkEffortSearchConstraint()
 	 * @generated
 	 */
@@ -6900,11 +6900,11 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffortSearchConstraint_LowValue();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#isRemoveStems <em>Remove Stems</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getRemoveStems <em>Remove Stems</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Remove Stems</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#isRemoveStems()
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getRemoveStems()
 	 * @see #getWorkEffortSearchConstraint()
 	 * @generated
 	 */
@@ -6932,11 +6932,11 @@ public interface WorkeffortPackage extends EPackage {
 	EAttribute getWorkEffortSearchResult_WorkEffortSearchResultId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchResult#isIsAscending <em>Is Ascending</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchResult#getIsAscending <em>Is Ascending</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Ascending</em>'.
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchResult#isIsAscending()
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchResult#getIsAscending()
 	 * @see #getWorkEffortSearchResult()
 	 * @generated
 	 */

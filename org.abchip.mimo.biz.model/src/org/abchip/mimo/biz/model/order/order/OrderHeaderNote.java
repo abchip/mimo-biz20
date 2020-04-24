@@ -19,7 +19,7 @@ import org.abchip.mimo.biz.BizEntityNote;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeaderNote#getOrderId <em>Order Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeaderNote#isInternalNote <em>Internal Note</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeaderNote#getInternalNote <em>Internal Note</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeaderNote()
@@ -57,27 +57,23 @@ public interface OrderHeaderNote extends BizEntityNote {
 	/**
 	 * Returns the value of the '<em><b>Internal Note</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Internal Note</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Internal Note</em>' attribute.
-	 * @see #setInternalNote(boolean)
+	 * @see #setInternalNote(Boolean)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeaderNote_InternalNote()
 	 * @model
 	 * @generated
 	 */
-	boolean isInternalNote();
+	Boolean getInternalNote();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeaderNote#isInternalNote <em>Internal Note</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeaderNote#getInternalNote <em>Internal Note</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Internal Note</em>' attribute.
-	 * @see #isInternalNote()
+	 * @see #getInternalNote()
 	 * @generated
 	 */
-	void setInternalNote(boolean value);
+	void setInternalNote(Boolean value);
 
 } // OrderHeaderNote

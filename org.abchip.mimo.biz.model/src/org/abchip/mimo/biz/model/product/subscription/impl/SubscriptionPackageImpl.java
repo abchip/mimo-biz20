@@ -1853,7 +1853,7 @@ public class SubscriptionPackageImpl extends EPackageImpl implements Subscriptio
 
 		initEClass(subscriptionEClass, Subscription.class, "Subscription", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSubscription_SubscriptionId(), ecorePackage.getEString(), "subscriptionId", null, 1, 1, Subscription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getSubscription_AutomaticExtend(), ecorePackage.getEBoolean(), "automaticExtend", null, 0, 1, Subscription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSubscription_AutomaticExtend(), ecorePackage.getEBooleanObject(), "automaticExtend", null, 0, 1, Subscription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSubscription_AvailableTime(), ecorePackage.getELong(), "availableTime", null, 0, 1, Subscription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSubscription_AvailableTimeUomId(), theUomPackage.getUom(), null, "availableTimeUomId", null, 0, 1, Subscription.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getSubscription_AvailableTimeUomId().getEKeys().add(theUomPackage.getUom_UomId());
@@ -2049,8 +2049,7 @@ public class SubscriptionPackageImpl extends EPackageImpl implements Subscriptio
 		  (getSubscription_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getSubscription_ExternalSubscriptionId(),
@@ -2108,8 +2107,7 @@ public class SubscriptionPackageImpl extends EPackageImpl implements Subscriptio
 		  (getSubscriptionActivity_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getSubscriptionAttribute_AttrName(),
@@ -2121,8 +2119,7 @@ public class SubscriptionPackageImpl extends EPackageImpl implements Subscriptio
 		  (getSubscriptionAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getSubscriptionAttribute_AttrValue(),
@@ -2140,8 +2137,7 @@ public class SubscriptionPackageImpl extends EPackageImpl implements Subscriptio
 		  (getSubscriptionResource_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getSubscriptionResource_ServiceNameOnExpiry(),
@@ -2159,8 +2155,7 @@ public class SubscriptionPackageImpl extends EPackageImpl implements Subscriptio
 		  (getSubscriptionType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getSubscriptionTypeAttr_AttrName(),
@@ -2172,8 +2167,7 @@ public class SubscriptionPackageImpl extends EPackageImpl implements Subscriptio
 		  (getSubscriptionTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

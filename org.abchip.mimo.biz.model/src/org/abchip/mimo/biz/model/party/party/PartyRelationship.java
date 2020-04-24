@@ -53,7 +53,7 @@ public interface PartyRelationship extends BizEntityTyped<PartyRelationshipType>
 	 * @return the value of the '<em>Comments</em>' attribute.
 	 * @see #setComments(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationship_Comments()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getComments();
@@ -133,7 +133,7 @@ public interface PartyRelationship extends BizEntityTyped<PartyRelationshipType>
 	 * @see #setPositionTitle(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationship_PositionTitle()
 	 * @model annotation="mimo-ent-slot help='The exact word used within the company'"
-	 *        annotation="mimo-ent-format type='name' length='100'"
+	 *        annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getPositionTitle();
@@ -160,7 +160,7 @@ public interface PartyRelationship extends BizEntityTyped<PartyRelationshipType>
 	 * @see #setRelationshipName(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyRelationship_RelationshipName()
 	 * @model annotation="mimo-ent-slot help='Official name of relationship, such as title in a company'"
-	 *        annotation="mimo-ent-format type='name' length='100'"
+	 *        annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getRelationshipName();

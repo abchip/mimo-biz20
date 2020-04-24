@@ -24,13 +24,13 @@ import org.abchip.mimo.biz.model.party.party.RoleType;
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#getPartyId <em>Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#getContactMechId <em>Contact Mech Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#isAllowSolicitation <em>Allow Solicitation</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#getAllowSolicitation <em>Allow Solicitation</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#getExtension <em>Extension</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#getMonthsWithContactMech <em>Months With Contact Mech</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#getRoleTypeId <em>Role Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#getThruDate <em>Thru Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#isVerified <em>Verified</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#getVerified <em>Verified</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#getYearsWithContactMech <em>Years With Contact Mech</em>}</li>
  * </ul>
  *
@@ -50,7 +50,7 @@ public interface PartyContactMech extends BizEntity {
 	 * @return the value of the '<em>Comments</em>' attribute.
 	 * @see #setComments(String)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPartyContactMech_Comments()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getComments();
@@ -121,28 +121,24 @@ public interface PartyContactMech extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Allow Solicitation</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Allow Solicitation</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Allow Solicitation</em>' attribute.
-	 * @see #setAllowSolicitation(boolean)
+	 * @see #setAllowSolicitation(Boolean)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPartyContactMech_AllowSolicitation()
 	 * @model
 	 * @generated
 	 */
-	boolean isAllowSolicitation();
+	Boolean getAllowSolicitation();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#isAllowSolicitation <em>Allow Solicitation</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#getAllowSolicitation <em>Allow Solicitation</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Allow Solicitation</em>' attribute.
-	 * @see #isAllowSolicitation()
+	 * @see #getAllowSolicitation()
 	 * @generated
 	 */
-	void setAllowSolicitation(boolean value);
+	void setAllowSolicitation(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Months With Contact Mech</b></em>' attribute.
@@ -252,28 +248,24 @@ public interface PartyContactMech extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Verified</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Verified</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Verified</em>' attribute.
-	 * @see #setVerified(boolean)
+	 * @see #setVerified(Boolean)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPartyContactMech_Verified()
 	 * @model
 	 * @generated
 	 */
-	boolean isVerified();
+	Boolean getVerified();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#isVerified <em>Verified</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.contact.PartyContactMech#getVerified <em>Verified</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Verified</em>' attribute.
-	 * @see #isVerified()
+	 * @see #getVerified()
 	 * @generated
 	 */
-	void setVerified(boolean value);
+	void setVerified(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Years With Contact Mech</b></em>' attribute.

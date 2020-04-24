@@ -24,7 +24,7 @@ import org.abchip.mimo.biz.model.common.datasource.DataSource;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyDataSource#getDataSourceId <em>Data Source Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyDataSource#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyDataSource#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyDataSource#isIsCreate <em>Is Create</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyDataSource#getIsCreate <em>Is Create</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.PartyDataSource#getVisitId <em>Visit Id</em>}</li>
  * </ul>
  *
@@ -44,7 +44,7 @@ public interface PartyDataSource extends BizEntity {
 	 * @return the value of the '<em>Comments</em>' attribute.
 	 * @see #setComments(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyDataSource_Comments()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getComments();
@@ -62,28 +62,24 @@ public interface PartyDataSource extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Is Create</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Create</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Create</em>' attribute.
-	 * @see #setIsCreate(boolean)
+	 * @see #setIsCreate(Boolean)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getPartyDataSource_IsCreate()
 	 * @model
 	 * @generated
 	 */
-	boolean isIsCreate();
+	Boolean getIsCreate();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyDataSource#isIsCreate <em>Is Create</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.party.party.PartyDataSource#getIsCreate <em>Is Create</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is Create</em>' attribute.
-	 * @see #isIsCreate()
+	 * @see #getIsCreate()
 	 * @generated
 	 */
-	void setIsCreate(boolean value);
+	void setIsCreate(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Data Source Id</b></em>' reference.

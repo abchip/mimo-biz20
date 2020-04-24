@@ -26,7 +26,7 @@ import org.abchip.mimo.biz.model.product.category.ProductCategory;
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getProductPromoActionSeqId <em>Product Promo Action Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getProductPromoCondSeqId <em>Product Promo Cond Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getProductPromoRuleId <em>Product Promo Rule Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#isIncludeSubCategories <em>Include Sub Categories</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getIncludeSubCategories <em>Include Sub Categories</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getProductPromoApplEnumId <em>Product Promo Appl Enum Id</em>}</li>
  * </ul>
  *
@@ -62,32 +62,6 @@ public interface ProductPromoCategory extends BizEntity {
 	 * @generated
 	 */
 	void setAndGroupId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Include Sub Categories</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Include Sub Categories</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Include Sub Categories</em>' attribute.
-	 * @see #setIncludeSubCategories(boolean)
-	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCategory_IncludeSubCategories()
-	 * @model
-	 * @generated
-	 */
-	boolean isIncludeSubCategories();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#isIncludeSubCategories <em>Include Sub Categories</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Include Sub Categories</em>' attribute.
-	 * @see #isIncludeSubCategories()
-	 * @generated
-	 */
-	void setIncludeSubCategories(boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Promo Action Seq Id</b></em>' attribute.
@@ -198,6 +172,28 @@ public interface ProductPromoCategory extends BizEntity {
 	 * @generated
 	 */
 	void setProductPromoRuleId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Include Sub Categories</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Include Sub Categories</em>' attribute.
+	 * @see #setIncludeSubCategories(Boolean)
+	 * @see org.abchip.mimo.biz.model.product.promo.PromoPackage#getProductPromoCategory_IncludeSubCategories()
+	 * @model
+	 * @generated
+	 */
+	Boolean getIncludeSubCategories();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.promo.ProductPromoCategory#getIncludeSubCategories <em>Include Sub Categories</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Include Sub Categories</em>' attribute.
+	 * @see #getIncludeSubCategories()
+	 * @generated
+	 */
+	void setIncludeSubCategories(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Promo Id</b></em>' reference.

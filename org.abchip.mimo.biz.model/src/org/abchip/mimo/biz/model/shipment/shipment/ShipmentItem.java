@@ -95,7 +95,7 @@ public interface ShipmentItem extends BizEntity {
 	 * @return the value of the '<em>Shipment Content Description</em>' attribute.
 	 * @see #setShipmentContentDescription(String)
 	 * @see org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package#getShipmentItem_ShipmentContentDescription()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getShipmentContentDescription();

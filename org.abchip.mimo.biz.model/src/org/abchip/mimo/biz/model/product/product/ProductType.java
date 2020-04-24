@@ -22,8 +22,8 @@ import org.abchip.mimo.biz.BizEntityType;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductType#getProductTypeId <em>Product Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductType#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductType#isIsDigital <em>Is Digital</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductType#isIsPhysical <em>Is Physical</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductType#getIsDigital <em>Is Digital</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductType#getIsPhysical <em>Is Physical</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductType#getParentTypeId <em>Parent Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.ProductType#getProductTypeAttrs <em>Product Type Attrs</em>}</li>
  * </ul>
@@ -44,7 +44,7 @@ public interface ProductType extends BizEntityType<Product> {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductType_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -88,54 +88,46 @@ public interface ProductType extends BizEntityType<Product> {
 	/**
 	 * Returns the value of the '<em><b>Is Digital</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Digital</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Digital</em>' attribute.
-	 * @see #setIsDigital(boolean)
+	 * @see #setIsDigital(Boolean)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductType_IsDigital()
 	 * @model
 	 * @generated
 	 */
-	boolean isIsDigital();
+	Boolean getIsDigital();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductType#isIsDigital <em>Is Digital</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductType#getIsDigital <em>Is Digital</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is Digital</em>' attribute.
-	 * @see #isIsDigital()
+	 * @see #getIsDigital()
 	 * @generated
 	 */
-	void setIsDigital(boolean value);
+	void setIsDigital(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Is Physical</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Physical</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Physical</em>' attribute.
-	 * @see #setIsPhysical(boolean)
+	 * @see #setIsPhysical(Boolean)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProductType_IsPhysical()
 	 * @model
 	 * @generated
 	 */
-	boolean isIsPhysical();
+	Boolean getIsPhysical();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductType#isIsPhysical <em>Is Physical</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.ProductType#getIsPhysical <em>Is Physical</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is Physical</em>' attribute.
-	 * @see #isIsPhysical()
+	 * @see #getIsPhysical()
 	 * @generated
 	 */
-	void setIsPhysical(boolean value);
+	void setIsPhysical(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Parent Type Id</b></em>' reference.

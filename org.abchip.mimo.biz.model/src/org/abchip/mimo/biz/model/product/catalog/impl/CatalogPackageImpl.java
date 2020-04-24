@@ -1218,8 +1218,7 @@ public class CatalogPackageImpl extends EPackageImpl implements CatalogPackage {
 		  (getProdCatalog_CatalogName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getProdCatalog_ContentPathPrefix(),
@@ -1231,15 +1230,13 @@ public class CatalogPackageImpl extends EPackageImpl implements CatalogPackage {
 		  (getProdCatalog_HeaderLogo(),
 		   source,
 		   new String[] {
-			   "type", "url",
-			   "length", "2000"
+			   "type", "url"
 		   });
 		addAnnotation
 		  (getProdCatalog_StyleSheet(),
 		   source,
 		   new String[] {
-			   "type", "url",
-			   "length", "2000"
+			   "type", "url"
 		   });
 		addAnnotation
 		  (getProdCatalog_TemplatePathPrefix(),
@@ -1264,8 +1261,7 @@ public class CatalogPackageImpl extends EPackageImpl implements CatalogPackage {
 		  (getProdCatalogCategoryType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProdCatalogInvFacility_SequenceNum(),

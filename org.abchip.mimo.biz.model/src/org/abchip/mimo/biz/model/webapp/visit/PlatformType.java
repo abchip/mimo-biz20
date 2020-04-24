@@ -66,7 +66,7 @@ public interface PlatformType extends BizEntity {
 	 * @return the value of the '<em>Platform Name</em>' attribute.
 	 * @see #setPlatformName(String)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getPlatformType_PlatformName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getPlatformName();

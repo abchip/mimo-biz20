@@ -79,7 +79,7 @@ public interface OrderItemChange extends BizEntity {
 	 * @return the value of the '<em>Change Comments</em>' attribute.
 	 * @see #setChangeComments(String)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemChange_ChangeComments()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getChangeComments();
@@ -183,7 +183,7 @@ public interface OrderItemChange extends BizEntity {
 	 * @return the value of the '<em>Item Description</em>' attribute.
 	 * @see #setItemDescription(String)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderItemChange_ItemDescription()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getItemDescription();

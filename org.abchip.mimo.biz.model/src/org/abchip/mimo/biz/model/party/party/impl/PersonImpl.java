@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getDeceasedDate <em>Deceased Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getEmploymentStatusEnumId <em>Employment Status Enum Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#isExistingCustomer <em>Existing Customer</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getExistingCustomer <em>Existing Customer</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getFirstName <em>First Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getFirstNameLocal <em>First Name Local</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl#getGender <em>Gender</em>}</li>
@@ -169,26 +169,6 @@ public class PersonImpl extends PartyImpl implements Person {
 	 * @generated
 	 */
 	@Override
-	public boolean isExistingCustomer() {
-		return (Boolean)eGet(PartyPackage.Literals.PERSON__EXISTING_CUSTOMER, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setExistingCustomer(boolean newExistingCustomer) {
-		eSet(PartyPackage.Literals.PERSON__EXISTING_CUSTOMER, newExistingCustomer);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Enumeration getEmploymentStatusEnumId() {
 		return (Enumeration)eGet(PartyPackage.Literals.PERSON__EMPLOYMENT_STATUS_ENUM_ID, true);
 	}
@@ -201,6 +181,26 @@ public class PersonImpl extends PartyImpl implements Person {
 	@Override
 	public void setEmploymentStatusEnumId(Enumeration newEmploymentStatusEnumId) {
 		eSet(PartyPackage.Literals.PERSON__EMPLOYMENT_STATUS_ENUM_ID, newEmploymentStatusEnumId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Boolean getExistingCustomer() {
+		return (Boolean)eGet(PartyPackage.Literals.PERSON__EXISTING_CUSTOMER, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setExistingCustomer(Boolean newExistingCustomer) {
+		eSet(PartyPackage.Literals.PERSON__EXISTING_CUSTOMER, newExistingCustomer);
 	}
 
 	/**

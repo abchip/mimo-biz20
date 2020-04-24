@@ -79,7 +79,7 @@ public interface ProductStoreSurveyAppl extends BizEntity {
 	 * @return the value of the '<em>Group Name</em>' attribute.
 	 * @see #setGroupName(String)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreSurveyAppl_GroupName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getGroupName();

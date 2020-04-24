@@ -30,7 +30,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getSubscriptionId <em>Subscription Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.subscription.Subscription#isAutomaticExtend <em>Automatic Extend</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getAutomaticExtend <em>Automatic Extend</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getAvailableTime <em>Available Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getAvailableTimeUomId <em>Available Time Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getCanclAutmExtTime <em>Cancl Autm Ext Time</em>}</li>
@@ -243,7 +243,7 @@ public interface Subscription extends BizEntityTyped<SubscriptionType> {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -999,27 +999,23 @@ public interface Subscription extends BizEntityTyped<SubscriptionType> {
 	/**
 	 * Returns the value of the '<em><b>Automatic Extend</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Automatic Extend</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Automatic Extend</em>' attribute.
-	 * @see #setAutomaticExtend(boolean)
+	 * @see #setAutomaticExtend(Boolean)
 	 * @see org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage#getSubscription_AutomaticExtend()
 	 * @model annotation="mimo-ent-slot help='If this subscription is automatically extended with the same period as the initial period.'"
 	 * @generated
 	 */
-	boolean isAutomaticExtend();
+	Boolean getAutomaticExtend();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#isAutomaticExtend <em>Automatic Extend</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.subscription.Subscription#getAutomaticExtend <em>Automatic Extend</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Automatic Extend</em>' attribute.
-	 * @see #isAutomaticExtend()
+	 * @see #getAutomaticExtend()
 	 * @generated
 	 */
-	void setAutomaticExtend(boolean value);
+	void setAutomaticExtend(Boolean value);
 
 } // Subscription

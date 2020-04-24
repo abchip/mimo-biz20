@@ -27,11 +27,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchConstraintImpl#getAnySuffix <em>Any Suffix</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchConstraintImpl#getConstraintName <em>Constraint Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchConstraintImpl#getHighValue <em>High Value</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchConstraintImpl#isIncludeSubCategories <em>Include Sub Categories</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchConstraintImpl#getIncludeSubCategories <em>Include Sub Categories</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchConstraintImpl#getInfoString <em>Info String</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchConstraintImpl#isIsAnd <em>Is And</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchConstraintImpl#getIsAnd <em>Is And</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchConstraintImpl#getLowValue <em>Low Value</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchConstraintImpl#isRemoveStems <em>Remove Stems</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentSearchConstraintImpl#getRemoveStems <em>Remove Stems</em>}</li>
  * </ul>
  *
  * @generated
@@ -187,7 +187,7 @@ public class ContentSearchConstraintImpl extends BizEntityImpl implements Conten
 	 * @generated
 	 */
 	@Override
-	public boolean isIncludeSubCategories() {
+	public Boolean getIncludeSubCategories() {
 		return (Boolean)eGet(ContentPackage.Literals.CONTENT_SEARCH_CONSTRAINT__INCLUDE_SUB_CATEGORIES, true);
 	}
 
@@ -197,7 +197,7 @@ public class ContentSearchConstraintImpl extends BizEntityImpl implements Conten
 	 * @generated
 	 */
 	@Override
-	public void setIncludeSubCategories(boolean newIncludeSubCategories) {
+	public void setIncludeSubCategories(Boolean newIncludeSubCategories) {
 		eSet(ContentPackage.Literals.CONTENT_SEARCH_CONSTRAINT__INCLUDE_SUB_CATEGORIES, newIncludeSubCategories);
 	}
 
@@ -227,7 +227,7 @@ public class ContentSearchConstraintImpl extends BizEntityImpl implements Conten
 	 * @generated
 	 */
 	@Override
-	public boolean isIsAnd() {
+	public Boolean getIsAnd() {
 		return (Boolean)eGet(ContentPackage.Literals.CONTENT_SEARCH_CONSTRAINT__IS_AND, true);
 	}
 
@@ -237,7 +237,7 @@ public class ContentSearchConstraintImpl extends BizEntityImpl implements Conten
 	 * @generated
 	 */
 	@Override
-	public void setIsAnd(boolean newIsAnd) {
+	public void setIsAnd(Boolean newIsAnd) {
 		eSet(ContentPackage.Literals.CONTENT_SEARCH_CONSTRAINT__IS_AND, newIsAnd);
 	}
 
@@ -267,7 +267,7 @@ public class ContentSearchConstraintImpl extends BizEntityImpl implements Conten
 	 * @generated
 	 */
 	@Override
-	public boolean isRemoveStems() {
+	public Boolean getRemoveStems() {
 		return (Boolean)eGet(ContentPackage.Literals.CONTENT_SEARCH_CONSTRAINT__REMOVE_STEMS, true);
 	}
 
@@ -277,7 +277,7 @@ public class ContentSearchConstraintImpl extends BizEntityImpl implements Conten
 	 * @generated
 	 */
 	@Override
-	public void setRemoveStems(boolean newRemoveStems) {
+	public void setRemoveStems(Boolean newRemoveStems) {
 		eSet(ContentPackage.Literals.CONTENT_SEARCH_CONSTRAINT__REMOVE_STEMS, newRemoveStems);
 	}
 

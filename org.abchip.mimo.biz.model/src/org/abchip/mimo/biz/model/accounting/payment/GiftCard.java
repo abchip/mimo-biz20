@@ -93,7 +93,7 @@ public interface GiftCard extends PaymentMethod {
 	 * @return the value of the '<em>Expire Date</em>' attribute.
 	 * @see #setExpireDate(String)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getGiftCard_ExpireDate()
-	 * @model annotation="mimo-ent-format type='credit-card-date' length='7'"
+	 * @model annotation="mimo-ent-format type='credit-card-date'"
 	 * @generated
 	 */
 	String getExpireDate();

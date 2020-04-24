@@ -20,7 +20,7 @@ import org.abchip.mimo.biz.BizEntity;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountClass#getGlAccountClassId <em>Gl Account Class Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountClass#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountClass#isIsAssetClass <em>Is Asset Class</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountClass#getIsAssetClass <em>Is Asset Class</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountClass#getParentClassId <em>Parent Class Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountClass#getSequenceNum <em>Sequence Num</em>}</li>
  * </ul>
@@ -41,7 +41,7 @@ public interface GlAccountClass extends BizEntity {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccountClass_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -59,28 +59,24 @@ public interface GlAccountClass extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Is Asset Class</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Asset Class</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Asset Class</em>' attribute.
-	 * @see #setIsAssetClass(boolean)
+	 * @see #setIsAssetClass(Boolean)
 	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getGlAccountClass_IsAssetClass()
 	 * @model
 	 * @generated
 	 */
-	boolean isIsAssetClass();
+	Boolean getIsAssetClass();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountClass#isIsAssetClass <em>Is Asset Class</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccountClass#getIsAssetClass <em>Is Asset Class</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is Asset Class</em>' attribute.
-	 * @see #isIsAssetClass()
+	 * @see #getIsAssetClass()
 	 * @generated
 	 */
-	void setIsAssetClass(boolean value);
+	void setIsAssetClass(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Parent Class Id</b></em>' reference.

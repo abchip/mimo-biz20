@@ -29,12 +29,12 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getContactMechTypeId <em>Contact Mech Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#isIsPublic <em>Is Public</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getIsPublic <em>Is Public</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getMarketingCampaignId <em>Marketing Campaign Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getOptOutScreen <em>Opt Out Screen</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getOwnerPartyId <em>Owner Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#isSingleUse <em>Single Use</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getSingleUse <em>Single Use</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getVerifyEmailFrom <em>Verify Email From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getVerifyEmailScreen <em>Verify Email Screen</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getVerifyEmailSubject <em>Verify Email Subject</em>}</li>
@@ -57,7 +57,7 @@ public interface ContactList extends BizEntity {
 	 * @return the value of the '<em>Comments</em>' attribute.
 	 * @see #setComments(String)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_Comments()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getComments();
@@ -110,7 +110,7 @@ public interface ContactList extends BizEntity {
 	 * @return the value of the '<em>Contact List Name</em>' attribute.
 	 * @see #setContactListName(String)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_ContactListName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getContactListName();
@@ -214,7 +214,7 @@ public interface ContactList extends BizEntity {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -232,28 +232,24 @@ public interface ContactList extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Is Public</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Public</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Public</em>' attribute.
-	 * @see #setIsPublic(boolean)
+	 * @see #setIsPublic(Boolean)
 	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_IsPublic()
 	 * @model
 	 * @generated
 	 */
-	boolean isIsPublic();
+	Boolean getIsPublic();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#isIsPublic <em>Is Public</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getIsPublic <em>Is Public</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is Public</em>' attribute.
-	 * @see #isIsPublic()
+	 * @see #getIsPublic()
 	 * @generated
 	 */
-	void setIsPublic(boolean value);
+	void setIsPublic(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Last Modified By User Login</b></em>' reference.
@@ -334,32 +330,6 @@ public interface ContactList extends BizEntity {
 	void setOptOutScreen(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Single Use</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Single Use</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Single Use</em>' attribute.
-	 * @see #setSingleUse(boolean)
-	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_SingleUse()
-	 * @model annotation="mimo-ent-slot help='Whether members of the list should be contacted only once.'"
-	 * @generated
-	 */
-	boolean isSingleUse();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#isSingleUse <em>Single Use</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Single Use</em>' attribute.
-	 * @see #isSingleUse()
-	 * @generated
-	 */
-	void setSingleUse(boolean value);
-
-	/**
 	 * Returns the value of the '<em><b>Owner Party Id</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -384,6 +354,28 @@ public interface ContactList extends BizEntity {
 	 * @generated
 	 */
 	void setOwnerPartyId(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Single Use</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Single Use</em>' attribute.
+	 * @see #setSingleUse(Boolean)
+	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_SingleUse()
+	 * @model annotation="mimo-ent-slot help='Whether members of the list should be contacted only once.'"
+	 * @generated
+	 */
+	Boolean getSingleUse();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getSingleUse <em>Single Use</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Single Use</em>' attribute.
+	 * @see #getSingleUse()
+	 * @generated
+	 */
+	void setSingleUse(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Verify Email From</b></em>' attribute.

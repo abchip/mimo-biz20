@@ -27,11 +27,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSearchConstraintImpl#getAnySuffix <em>Any Suffix</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSearchConstraintImpl#getConstraintName <em>Constraint Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSearchConstraintImpl#getHighValue <em>High Value</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSearchConstraintImpl#isIncludeSubWorkEfforts <em>Include Sub Work Efforts</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSearchConstraintImpl#getIncludeSubWorkEfforts <em>Include Sub Work Efforts</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSearchConstraintImpl#getInfoString <em>Info String</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSearchConstraintImpl#isIsAnd <em>Is And</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSearchConstraintImpl#getIsAnd <em>Is And</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSearchConstraintImpl#getLowValue <em>Low Value</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSearchConstraintImpl#isRemoveStems <em>Remove Stems</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSearchConstraintImpl#getRemoveStems <em>Remove Stems</em>}</li>
  * </ul>
  *
  * @generated
@@ -167,7 +167,7 @@ public class WorkEffortSearchConstraintImpl extends BizEntityImpl implements Wor
 	 * @generated
 	 */
 	@Override
-	public boolean isIncludeSubWorkEfforts() {
+	public Boolean getIncludeSubWorkEfforts() {
 		return (Boolean)eGet(WorkeffortPackage.Literals.WORK_EFFORT_SEARCH_CONSTRAINT__INCLUDE_SUB_WORK_EFFORTS, true);
 	}
 
@@ -177,7 +177,7 @@ public class WorkEffortSearchConstraintImpl extends BizEntityImpl implements Wor
 	 * @generated
 	 */
 	@Override
-	public void setIncludeSubWorkEfforts(boolean newIncludeSubWorkEfforts) {
+	public void setIncludeSubWorkEfforts(Boolean newIncludeSubWorkEfforts) {
 		eSet(WorkeffortPackage.Literals.WORK_EFFORT_SEARCH_CONSTRAINT__INCLUDE_SUB_WORK_EFFORTS, newIncludeSubWorkEfforts);
 	}
 
@@ -207,7 +207,7 @@ public class WorkEffortSearchConstraintImpl extends BizEntityImpl implements Wor
 	 * @generated
 	 */
 	@Override
-	public boolean isIsAnd() {
+	public Boolean getIsAnd() {
 		return (Boolean)eGet(WorkeffortPackage.Literals.WORK_EFFORT_SEARCH_CONSTRAINT__IS_AND, true);
 	}
 
@@ -217,7 +217,7 @@ public class WorkEffortSearchConstraintImpl extends BizEntityImpl implements Wor
 	 * @generated
 	 */
 	@Override
-	public void setIsAnd(boolean newIsAnd) {
+	public void setIsAnd(Boolean newIsAnd) {
 		eSet(WorkeffortPackage.Literals.WORK_EFFORT_SEARCH_CONSTRAINT__IS_AND, newIsAnd);
 	}
 
@@ -247,7 +247,7 @@ public class WorkEffortSearchConstraintImpl extends BizEntityImpl implements Wor
 	 * @generated
 	 */
 	@Override
-	public boolean isRemoveStems() {
+	public Boolean getRemoveStems() {
 		return (Boolean)eGet(WorkeffortPackage.Literals.WORK_EFFORT_SEARCH_CONSTRAINT__REMOVE_STEMS, true);
 	}
 
@@ -257,7 +257,7 @@ public class WorkEffortSearchConstraintImpl extends BizEntityImpl implements Wor
 	 * @generated
 	 */
 	@Override
-	public void setRemoveStems(boolean newRemoveStems) {
+	public void setRemoveStems(Boolean newRemoveStems) {
 		eSet(WorkeffortPackage.Literals.WORK_EFFORT_SEARCH_CONSTRAINT__REMOVE_STEMS, newRemoveStems);
 	}
 

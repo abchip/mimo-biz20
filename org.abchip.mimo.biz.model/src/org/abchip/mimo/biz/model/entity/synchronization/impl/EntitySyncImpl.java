@@ -30,8 +30,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncImpl#getEntitySyncHistories <em>Entity Sync Histories</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncImpl#getEntitySyncIncludeGroups <em>Entity Sync Include Groups</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncImpl#getEntitySyncIncludes <em>Entity Sync Includes</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncImpl#isForPullOnly <em>For Pull Only</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncImpl#isForPushOnly <em>For Push Only</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncImpl#getForPullOnly <em>For Pull Only</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncImpl#getForPushOnly <em>For Push Only</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncImpl#getKeepRemoveInfoHours <em>Keep Remove Info Hours</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncImpl#getLastHistoryStartDate <em>Last History Start Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.synchronization.impl.EntitySyncImpl#getLastSuccessfulSynchTime <em>Last Successful Synch Time</em>}</li>
@@ -130,7 +130,7 @@ public class EntitySyncImpl extends BizEntityImpl implements EntitySync {
 	 * @generated
 	 */
 	@Override
-	public boolean isForPullOnly() {
+	public Boolean getForPullOnly() {
 		return (Boolean)eGet(SynchronizationPackage.Literals.ENTITY_SYNC__FOR_PULL_ONLY, true);
 	}
 
@@ -140,7 +140,7 @@ public class EntitySyncImpl extends BizEntityImpl implements EntitySync {
 	 * @generated
 	 */
 	@Override
-	public void setForPullOnly(boolean newForPullOnly) {
+	public void setForPullOnly(Boolean newForPullOnly) {
 		eSet(SynchronizationPackage.Literals.ENTITY_SYNC__FOR_PULL_ONLY, newForPullOnly);
 	}
 
@@ -150,7 +150,7 @@ public class EntitySyncImpl extends BizEntityImpl implements EntitySync {
 	 * @generated
 	 */
 	@Override
-	public boolean isForPushOnly() {
+	public Boolean getForPushOnly() {
 		return (Boolean)eGet(SynchronizationPackage.Literals.ENTITY_SYNC__FOR_PUSH_ONLY, true);
 	}
 
@@ -160,7 +160,7 @@ public class EntitySyncImpl extends BizEntityImpl implements EntitySync {
 	 * @generated
 	 */
 	@Override
-	public void setForPushOnly(boolean newForPushOnly) {
+	public void setForPushOnly(Boolean newForPushOnly) {
 		eSet(SynchronizationPackage.Literals.ENTITY_SYNC__FOR_PUSH_ONLY, newForPushOnly);
 	}
 

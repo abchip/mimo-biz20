@@ -821,15 +821,13 @@ public class SemaphorePackageImpl extends EPackageImpl implements SemaphorePacka
 		  (getServiceSemaphore_ServiceName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getServiceSemaphore_LockThread(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getServiceSemaphore_LockedByInstanceId(),

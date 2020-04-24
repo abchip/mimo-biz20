@@ -969,22 +969,22 @@ public interface TrackingPackage extends EPackage {
 	EAttribute getTrackingCodeOrder_AffiliateReferredTimeStamp();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#isHasExported <em>Has Exported</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#getHasExported <em>Has Exported</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Exported</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#isHasExported()
+	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#getHasExported()
 	 * @see #getTrackingCodeOrder()
 	 * @generated
 	 */
 	EAttribute getTrackingCodeOrder_HasExported();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#isIsBillable <em>Is Billable</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#getIsBillable <em>Is Billable</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Billable</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#isIsBillable()
+	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder#getIsBillable()
 	 * @see #getTrackingCodeOrder()
 	 * @generated
 	 */
@@ -1067,22 +1067,22 @@ public interface TrackingPackage extends EPackage {
 	EAttribute getTrackingCodeOrderReturn_AffiliateReferredTimeStamp();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#isHasExported <em>Has Exported</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getHasExported <em>Has Exported</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Has Exported</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#isHasExported()
+	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getHasExported()
 	 * @see #getTrackingCodeOrderReturn()
 	 * @generated
 	 */
 	EAttribute getTrackingCodeOrderReturn_HasExported();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#isIsBillable <em>Is Billable</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getIsBillable <em>Is Billable</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Billable</em>'.
-	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#isIsBillable()
+	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrderReturn#getIsBillable()
 	 * @see #getTrackingCodeOrderReturn()
 	 * @generated
 	 */

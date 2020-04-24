@@ -24,11 +24,11 @@ import org.abchip.mimo.biz.BizEntity;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getAnySuffix <em>Any Suffix</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getConstraintName <em>Constraint Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getHighValue <em>High Value</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#isIncludeSubWorkEfforts <em>Include Sub Work Efforts</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getIncludeSubWorkEfforts <em>Include Sub Work Efforts</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getInfoString <em>Info String</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#isIsAnd <em>Is And</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getIsAnd <em>Is And</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getLowValue <em>Low Value</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#isRemoveStems <em>Remove Stems</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getRemoveStems <em>Remove Stems</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortSearchConstraint()
@@ -171,28 +171,24 @@ public interface WorkEffortSearchConstraint extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Include Sub Work Efforts</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Include Sub Work Efforts</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Include Sub Work Efforts</em>' attribute.
-	 * @see #setIncludeSubWorkEfforts(boolean)
+	 * @see #setIncludeSubWorkEfforts(Boolean)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortSearchConstraint_IncludeSubWorkEfforts()
 	 * @model
 	 * @generated
 	 */
-	boolean isIncludeSubWorkEfforts();
+	Boolean getIncludeSubWorkEfforts();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#isIncludeSubWorkEfforts <em>Include Sub Work Efforts</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getIncludeSubWorkEfforts <em>Include Sub Work Efforts</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Include Sub Work Efforts</em>' attribute.
-	 * @see #isIncludeSubWorkEfforts()
+	 * @see #getIncludeSubWorkEfforts()
 	 * @generated
 	 */
-	void setIncludeSubWorkEfforts(boolean value);
+	void setIncludeSubWorkEfforts(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Info String</b></em>' attribute.
@@ -223,28 +219,24 @@ public interface WorkEffortSearchConstraint extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Is And</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is And</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is And</em>' attribute.
-	 * @see #setIsAnd(boolean)
+	 * @see #setIsAnd(Boolean)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortSearchConstraint_IsAnd()
 	 * @model
 	 * @generated
 	 */
-	boolean isIsAnd();
+	Boolean getIsAnd();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#isIsAnd <em>Is And</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getIsAnd <em>Is And</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is And</em>' attribute.
-	 * @see #isIsAnd()
+	 * @see #getIsAnd()
 	 * @generated
 	 */
-	void setIsAnd(boolean value);
+	void setIsAnd(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Low Value</b></em>' attribute.
@@ -275,28 +267,24 @@ public interface WorkEffortSearchConstraint extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Remove Stems</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Remove Stems</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Remove Stems</em>' attribute.
-	 * @see #setRemoveStems(boolean)
+	 * @see #setRemoveStems(Boolean)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortSearchConstraint_RemoveStems()
 	 * @model
 	 * @generated
 	 */
-	boolean isRemoveStems();
+	Boolean getRemoveStems();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#isRemoveStems <em>Remove Stems</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSearchConstraint#getRemoveStems <em>Remove Stems</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Remove Stems</em>' attribute.
-	 * @see #isRemoveStems()
+	 * @see #getRemoveStems()
 	 * @generated
 	 */
-	void setRemoveStems(boolean value);
+	void setRemoveStems(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Work Effort Search Result Id</b></em>' reference.

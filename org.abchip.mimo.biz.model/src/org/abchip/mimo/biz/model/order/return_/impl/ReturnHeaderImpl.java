@@ -44,7 +44,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getEntryDate <em>Entry Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getFinAccountId <em>Fin Account Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getFromPartyId <em>From Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#isNeedsInventoryReceive <em>Needs Inventory Receive</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getNeedsInventoryReceive <em>Needs Inventory Receive</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getOriginContactMechId <em>Origin Contact Mech Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getPaymentMethodId <em>Payment Method Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderImpl#getReturnHeaderTypeId <em>Return Header Type Id</em>}</li>
@@ -198,26 +198,6 @@ public class ReturnHeaderImpl extends BizEntityImpl implements ReturnHeader {
 	 * @generated
 	 */
 	@Override
-	public boolean isNeedsInventoryReceive() {
-		return (Boolean)eGet(ReturnPackage.Literals.RETURN_HEADER__NEEDS_INVENTORY_RECEIVE, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setNeedsInventoryReceive(boolean newNeedsInventoryReceive) {
-		eSet(ReturnPackage.Literals.RETURN_HEADER__NEEDS_INVENTORY_RECEIVE, newNeedsInventoryReceive);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public FinAccount getFinAccountId() {
 		return (FinAccount)eGet(ReturnPackage.Literals.RETURN_HEADER__FIN_ACCOUNT_ID, true);
 	}
@@ -250,6 +230,26 @@ public class ReturnHeaderImpl extends BizEntityImpl implements ReturnHeader {
 	@Override
 	public void setFromPartyId(Party newFromPartyId) {
 		eSet(ReturnPackage.Literals.RETURN_HEADER__FROM_PARTY_ID, newFromPartyId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Boolean getNeedsInventoryReceive() {
+		return (Boolean)eGet(ReturnPackage.Literals.RETURN_HEADER__NEEDS_INVENTORY_RECEIVE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setNeedsInventoryReceive(Boolean newNeedsInventoryReceive) {
+		eSet(ReturnPackage.Literals.RETURN_HEADER__NEEDS_INVENTORY_RECEIVE, newNeedsInventoryReceive);
 	}
 
 	/**

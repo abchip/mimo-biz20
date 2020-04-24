@@ -1931,8 +1931,7 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 		  (getProductFeature_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductFeature_IdCode(),
@@ -1993,8 +1992,7 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 		  (getProductFeatureApplType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductFeatureCategory_ProductFeatureCategoryId(),
@@ -2006,8 +2004,7 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 		  (getProductFeatureCategory_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductFeatureGroup_ProductFeatureGroupId(),
@@ -2019,8 +2016,7 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 		  (getProductFeatureGroup_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductFeatureGroupAppl_SequenceNum(),
@@ -2045,8 +2041,7 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 		  (getProductFeatureIactnType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getProductFeatureType_ProductFeatureTypeId(),
@@ -2058,8 +2053,7 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 		  (getProductFeatureType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

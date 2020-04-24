@@ -192,11 +192,11 @@ public interface SessionPackage extends EPackage {
 	EAttribute getCatalinaSession_SessionId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.catalina.session.CatalinaSession#isIsValid <em>Is Valid</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.catalina.session.CatalinaSession#getIsValid <em>Is Valid</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Valid</em>'.
-	 * @see org.abchip.mimo.biz.model.catalina.session.CatalinaSession#isIsValid()
+	 * @see org.abchip.mimo.biz.model.catalina.session.CatalinaSession#getIsValid()
 	 * @see #getCatalinaSession()
 	 * @generated
 	 */

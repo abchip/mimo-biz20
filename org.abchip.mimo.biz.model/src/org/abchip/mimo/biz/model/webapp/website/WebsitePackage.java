@@ -479,11 +479,11 @@ public interface WebsitePackage extends EPackage {
 	EAttribute getWebSite_DisplayMaintenancePage();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.webapp.website.WebSite#isEnableHttps <em>Enable Https</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getEnableHttps <em>Enable Https</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Enable Https</em>'.
-	 * @see org.abchip.mimo.biz.model.webapp.website.WebSite#isEnableHttps()
+	 * @see org.abchip.mimo.biz.model.webapp.website.WebSite#getEnableHttps()
 	 * @see #getWebSite()
 	 * @generated
 	 */

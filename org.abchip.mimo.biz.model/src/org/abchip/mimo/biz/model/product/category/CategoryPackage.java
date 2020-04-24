@@ -1465,11 +1465,11 @@ public interface CategoryPackage extends EPackage {
 	EReference getProductCategory_ProductCategoryTypeId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.category.ProductCategory#isShowInSelect <em>Show In Select</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getShowInSelect <em>Show In Select</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Show In Select</em>'.
-	 * @see org.abchip.mimo.biz.model.product.category.ProductCategory#isShowInSelect()
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategory#getShowInSelect()
 	 * @see #getProductCategory()
 	 * @generated
 	 */

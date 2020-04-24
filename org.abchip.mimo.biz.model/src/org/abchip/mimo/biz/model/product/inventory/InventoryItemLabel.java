@@ -39,7 +39,7 @@ public interface InventoryItemLabel extends BizEntityTyped<InventoryItemLabelTyp
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.product.inventory.InventoryPackage#getInventoryItemLabel_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();

@@ -430,7 +430,7 @@ public interface PaymentGatewayPayPal extends BizEntity {
 	 * @see #setShippingCallbackUrl(String)
 	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGatewayPayPal_ShippingCallbackUrl()
 	 * @model annotation="mimo-ent-slot help='Specific to Express Checkout which performs callbacks to our server to retrieve shipping estimates'"
-	 *        annotation="mimo-ent-format type='url' length='2000'"
+	 *        annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getShippingCallbackUrl();

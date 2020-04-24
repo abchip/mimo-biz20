@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getFinAccountTypeId <em>Fin Account Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getAccountCodeLength <em>Account Code Length</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getAccountValidDays <em>Account Valid Days</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#isAllowAuthToNegative <em>Allow Auth To Negative</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getAllowAuthToNegative <em>Allow Auth To Negative</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getAuthValidDays <em>Auth Valid Days</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getMinBalance <em>Min Balance</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getPinCodeLength <em>Pin Code Length</em>}</li>
@@ -39,8 +39,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getPurchaseSurveyId <em>Purchase Survey Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getReplenishMethodEnumId <em>Replenish Method Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getReplenishThreshold <em>Replenish Threshold</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#isRequirePinCode <em>Require Pin Code</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#isValidateGCFinAcct <em>Validate GC Fin Acct</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getRequirePinCode <em>Require Pin Code</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreFinActSettingImpl#getValidateGCFinAcct <em>Validate GC Fin Acct</em>}</li>
  * </ul>
  *
  * @generated
@@ -116,7 +116,7 @@ public class ProductStoreFinActSettingImpl extends BizEntityImpl implements Prod
 	 * @generated
 	 */
 	@Override
-	public boolean isAllowAuthToNegative() {
+	public Boolean getAllowAuthToNegative() {
 		return (Boolean)eGet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__ALLOW_AUTH_TO_NEGATIVE, true);
 	}
 
@@ -126,7 +126,7 @@ public class ProductStoreFinActSettingImpl extends BizEntityImpl implements Prod
 	 * @generated
 	 */
 	@Override
-	public void setAllowAuthToNegative(boolean newAllowAuthToNegative) {
+	public void setAllowAuthToNegative(Boolean newAllowAuthToNegative) {
 		eSet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__ALLOW_AUTH_TO_NEGATIVE, newAllowAuthToNegative);
 	}
 
@@ -316,7 +316,7 @@ public class ProductStoreFinActSettingImpl extends BizEntityImpl implements Prod
 	 * @generated
 	 */
 	@Override
-	public boolean isRequirePinCode() {
+	public Boolean getRequirePinCode() {
 		return (Boolean)eGet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__REQUIRE_PIN_CODE, true);
 	}
 
@@ -326,7 +326,7 @@ public class ProductStoreFinActSettingImpl extends BizEntityImpl implements Prod
 	 * @generated
 	 */
 	@Override
-	public void setRequirePinCode(boolean newRequirePinCode) {
+	public void setRequirePinCode(Boolean newRequirePinCode) {
 		eSet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__REQUIRE_PIN_CODE, newRequirePinCode);
 	}
 
@@ -336,7 +336,7 @@ public class ProductStoreFinActSettingImpl extends BizEntityImpl implements Prod
 	 * @generated
 	 */
 	@Override
-	public boolean isValidateGCFinAcct() {
+	public Boolean getValidateGCFinAcct() {
 		return (Boolean)eGet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__VALIDATE_GC_FIN_ACCT, true);
 	}
 
@@ -346,7 +346,7 @@ public class ProductStoreFinActSettingImpl extends BizEntityImpl implements Prod
 	 * @generated
 	 */
 	@Override
-	public void setValidateGCFinAcct(boolean newValidateGCFinAcct) {
+	public void setValidateGCFinAcct(Boolean newValidateGCFinAcct) {
 		eSet(StorePackage.Literals.PRODUCT_STORE_FIN_ACT_SETTING__VALIDATE_GC_FIN_ACCT, newValidateGCFinAcct);
 	}
 

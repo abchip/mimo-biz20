@@ -41,7 +41,7 @@ public interface Component extends BizEntity {
 	 * @see #setComponentName(String)
 	 * @see org.abchip.mimo.biz.model.entity.tenant.TenantPackage#getComponent_ComponentName()
 	 * @model id="true" required="true"
-	 *        annotation="mimo-ent-format type='name' length='100'"
+	 *        annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getComponentName();
@@ -67,7 +67,7 @@ public interface Component extends BizEntity {
 	 * @return the value of the '<em>Root Location</em>' attribute.
 	 * @see #setRootLocation(String)
 	 * @see org.abchip.mimo.biz.model.entity.tenant.TenantPackage#getComponent_RootLocation()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getRootLocation();

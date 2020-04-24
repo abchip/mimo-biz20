@@ -46,7 +46,7 @@ public interface Affiliate extends BizEntity {
 	 * @return the value of the '<em>Affiliate Description</em>' attribute.
 	 * @see #setAffiliateDescription(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getAffiliate_AffiliateDescription()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getAffiliateDescription();
@@ -72,7 +72,7 @@ public interface Affiliate extends BizEntity {
 	 * @return the value of the '<em>Affiliate Name</em>' attribute.
 	 * @see #setAffiliateName(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getAffiliate_AffiliateName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getAffiliateName();
@@ -177,7 +177,7 @@ public interface Affiliate extends BizEntity {
 	 * @return the value of the '<em>Site Page Views</em>' attribute.
 	 * @see #setSitePageViews(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getAffiliate_SitePageViews()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getSitePageViews();
@@ -203,7 +203,7 @@ public interface Affiliate extends BizEntity {
 	 * @return the value of the '<em>Site Type</em>' attribute.
 	 * @see #setSiteType(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getAffiliate_SiteType()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getSiteType();
@@ -229,7 +229,7 @@ public interface Affiliate extends BizEntity {
 	 * @return the value of the '<em>Site Visitors</em>' attribute.
 	 * @see #setSiteVisitors(String)
 	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getAffiliate_SiteVisitors()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getSiteVisitors();

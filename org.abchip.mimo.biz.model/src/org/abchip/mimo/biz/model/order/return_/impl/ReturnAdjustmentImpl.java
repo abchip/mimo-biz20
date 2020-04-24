@@ -42,8 +42,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getCustomerReferenceId <em>Customer Reference Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getExemptAmount <em>Exempt Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#isIncludeInShipping <em>Include In Shipping</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#isIncludeInTax <em>Include In Tax</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getIncludeInShipping <em>Include In Shipping</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getIncludeInTax <em>Include In Tax</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnAdjustmentImpl#getOrderAdjustmentId <em>Order Adjustment Id</em>}</li>
@@ -259,7 +259,7 @@ public class ReturnAdjustmentImpl extends BizEntityTypedImpl<ReturnAdjustmentTyp
 	 * @generated
 	 */
 	@Override
-	public boolean isIncludeInShipping() {
+	public Boolean getIncludeInShipping() {
 		return (Boolean)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__INCLUDE_IN_SHIPPING, true);
 	}
 
@@ -269,7 +269,7 @@ public class ReturnAdjustmentImpl extends BizEntityTypedImpl<ReturnAdjustmentTyp
 	 * @generated
 	 */
 	@Override
-	public void setIncludeInShipping(boolean newIncludeInShipping) {
+	public void setIncludeInShipping(Boolean newIncludeInShipping) {
 		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__INCLUDE_IN_SHIPPING, newIncludeInShipping);
 	}
 
@@ -279,7 +279,7 @@ public class ReturnAdjustmentImpl extends BizEntityTypedImpl<ReturnAdjustmentTyp
 	 * @generated
 	 */
 	@Override
-	public boolean isIncludeInTax() {
+	public Boolean getIncludeInTax() {
 		return (Boolean)eGet(ReturnPackage.Literals.RETURN_ADJUSTMENT__INCLUDE_IN_TAX, true);
 	}
 
@@ -289,7 +289,7 @@ public class ReturnAdjustmentImpl extends BizEntityTypedImpl<ReturnAdjustmentTyp
 	 * @generated
 	 */
 	@Override
-	public void setIncludeInTax(boolean newIncludeInTax) {
+	public void setIncludeInTax(Boolean newIncludeInTax) {
 		eSet(ReturnPackage.Literals.RETURN_ADJUSTMENT__INCLUDE_IN_TAX, newIncludeInTax);
 	}
 

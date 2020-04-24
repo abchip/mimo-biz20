@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl#getOriginUserLoginId <em>Origin User Login Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl#getPartyId <em>Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl#getPasswordUsed <em>Password Used</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl#isSuccessfulLogin <em>Successful Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl#getSuccessfulLogin <em>Successful Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl#getVisitId <em>Visit Id</em>}</li>
  * </ul>
@@ -147,7 +147,7 @@ public class UserLoginHistoryImpl extends BizEntityImpl implements UserLoginHist
 	 * @generated
 	 */
 	@Override
-	public boolean isSuccessfulLogin() {
+	public Boolean getSuccessfulLogin() {
 		return (Boolean)eGet(LoginPackage.Literals.USER_LOGIN_HISTORY__SUCCESSFUL_LOGIN, true);
 	}
 
@@ -157,7 +157,7 @@ public class UserLoginHistoryImpl extends BizEntityImpl implements UserLoginHist
 	 * @generated
 	 */
 	@Override
-	public void setSuccessfulLogin(boolean newSuccessfulLogin) {
+	public void setSuccessfulLogin(Boolean newSuccessfulLogin) {
 		eSet(LoginPackage.Literals.USER_LOGIN_HISTORY__SUCCESSFUL_LOGIN, newSuccessfulLogin);
 	}
 

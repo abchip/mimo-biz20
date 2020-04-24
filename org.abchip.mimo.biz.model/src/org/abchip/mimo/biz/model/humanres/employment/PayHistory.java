@@ -22,6 +22,7 @@ import org.abchip.mimo.biz.model.common.period.PeriodType;
  * The following features are supported:
  * </p>
  * <ul>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayHistory#getEmplFromDate <em>Empl From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayHistory#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayHistory#getPartyIdFrom <em>Party Id From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.employment.PayHistory#getPartyIdTo <em>Party Id To</em>}</li>
@@ -40,6 +41,29 @@ import org.abchip.mimo.biz.model.common.period.PeriodType;
  * @generated
  */
 public interface PayHistory extends BizEntity {
+	/**
+	 * Returns the value of the '<em><b>Empl From Date</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Empl From Date</em>' attribute.
+	 * @see #setEmplFromDate(Date)
+	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayHistory_EmplFromDate()
+	 * @model required="true"
+	 *        annotation="mimo-ent-slot key='true'"
+	 * @generated
+	 */
+	Date getEmplFromDate();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.humanres.employment.PayHistory#getEmplFromDate <em>Empl From Date</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Empl From Date</em>' attribute.
+	 * @see #getEmplFromDate()
+	 * @generated
+	 */
+	void setEmplFromDate(Date value);
+
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->
@@ -77,7 +101,7 @@ public interface PayHistory extends BizEntity {
 	 * @return the value of the '<em>Comments</em>' attribute.
 	 * @see #setComments(String)
 	 * @see org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage#getPayHistory_Comments()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getComments();

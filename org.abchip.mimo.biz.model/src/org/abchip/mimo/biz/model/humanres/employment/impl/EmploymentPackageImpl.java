@@ -1447,47 +1447,7 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 	 * @generated
 	 */
 	@Override
-	public EAttribute getPayHistory_RoleTypeIdFrom() {
-		return (EAttribute)payHistoryEClass.getEStructuralFeatures().get(3);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getPayHistory_RoleTypeIdTo() {
-		return (EAttribute)payHistoryEClass.getEStructuralFeatures().get(4);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getPayHistory_PartyIdFrom() {
-		return (EAttribute)payHistoryEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getPayHistory_PartyIdTo() {
-		return (EAttribute)payHistoryEClass.getEStructuralFeatures().get(2);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getPayHistory_FromDate() {
+	public EAttribute getPayHistory_EmplFromDate() {
 		return (EAttribute)payHistoryEClass.getEStructuralFeatures().get(0);
 	}
 
@@ -1497,7 +1457,17 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 	 * @generated
 	 */
 	@Override
-	public EAttribute getPayHistory_Amount() {
+	public EAttribute getPayHistory_RoleTypeIdFrom() {
+		return (EAttribute)payHistoryEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPayHistory_RoleTypeIdTo() {
 		return (EAttribute)payHistoryEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -1507,7 +1477,37 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 	 * @generated
 	 */
 	@Override
-	public EAttribute getPayHistory_Comments() {
+	public EAttribute getPayHistory_PartyIdFrom() {
+		return (EAttribute)payHistoryEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPayHistory_PartyIdTo() {
+		return (EAttribute)payHistoryEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPayHistory_FromDate() {
+		return (EAttribute)payHistoryEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getPayHistory_Amount() {
 		return (EAttribute)payHistoryEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -1517,8 +1517,8 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 	 * @generated
 	 */
 	@Override
-	public EReference getPayHistory_PayGradeId() {
-		return (EReference)payHistoryEClass.getEStructuralFeatures().get(7);
+	public EAttribute getPayHistory_Comments() {
+		return (EAttribute)payHistoryEClass.getEStructuralFeatures().get(7);
 	}
 
 	/**
@@ -1527,7 +1527,7 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 	 * @generated
 	 */
 	@Override
-	public EReference getPayHistory_PeriodTypeId() {
+	public EReference getPayHistory_PayGradeId() {
 		return (EReference)payHistoryEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -1537,8 +1537,18 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 	 * @generated
 	 */
 	@Override
+	public EReference getPayHistory_PeriodTypeId() {
+		return (EReference)payHistoryEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getPayHistory_SalaryStepSeqId() {
-		return (EAttribute)payHistoryEClass.getEStructuralFeatures().get(9);
+		return (EAttribute)payHistoryEClass.getEStructuralFeatures().get(10);
 	}
 
 	/**
@@ -1548,7 +1558,7 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 	 */
 	@Override
 	public EAttribute getPayHistory_ThruDate() {
-		return (EAttribute)payHistoryEClass.getEStructuralFeatures().get(10);
+		return (EAttribute)payHistoryEClass.getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -2076,6 +2086,7 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 		createEAttribute(payGradeEClass, PAY_GRADE__PAY_GRADE_NAME);
 
 		payHistoryEClass = createEClass(PAY_HISTORY);
+		createEAttribute(payHistoryEClass, PAY_HISTORY__EMPL_FROM_DATE);
 		createEAttribute(payHistoryEClass, PAY_HISTORY__FROM_DATE);
 		createEAttribute(payHistoryEClass, PAY_HISTORY__PARTY_ID_FROM);
 		createEAttribute(payHistoryEClass, PAY_HISTORY__PARTY_ID_TO);
@@ -2314,6 +2325,7 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 		initEAttribute(getPayGrade_PayGradeName(), ecorePackage.getEString(), "payGradeName", null, 0, 1, PayGrade.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(payHistoryEClass, PayHistory.class, "PayHistory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getPayHistory_EmplFromDate(), ecorePackage.getEDate(), "emplFromDate", null, 1, 1, PayHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPayHistory_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, PayHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPayHistory_PartyIdFrom(), ecorePackage.getEString(), "partyIdFrom", null, 1, 1, PayHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPayHistory_PartyIdTo(), ecorePackage.getEString(), "partyIdTo", null, 1, 1, PayHistory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2482,22 +2494,19 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 		  (getBenefitType_BenefitName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getBenefitType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getEmplLeave_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getEmplLeaveReasonType_EmplLeaveReasonTypeId(),
@@ -2509,8 +2518,7 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 		  (getEmplLeaveReasonType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getEmplLeaveType_LeaveTypeId(),
@@ -2522,8 +2530,7 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 		  (getEmplLeaveType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getEmployment_RoleTypeIdFrom(),
@@ -2553,8 +2560,7 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 		  (getEmploymentAppSourceType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getPartyBenefit_RoleTypeIdFrom(),
@@ -2593,15 +2599,13 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 		  (getPayGrade_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getPayGrade_PayGradeName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getPayHistory_PartyIdFrom(),
@@ -2639,8 +2643,7 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 		  (getPayHistory_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getPayHistory_SalaryStepSeqId(),
@@ -2670,8 +2673,7 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 		  (getPayrollPreference_BankName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getPayrollPreference_FlatAmount(),
@@ -2723,8 +2725,7 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 		  (getTerminationReason_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getTerminationType_TerminationTypeId(),
@@ -2736,8 +2737,7 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 		  (getTerminationType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getUnemploymentClaim_UnemploymentClaimId(),
@@ -2749,8 +2749,7 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 		  (getUnemploymentClaim_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getUnemploymentClaim_PartyIdFrom(),
@@ -2866,6 +2865,12 @@ public class EmploymentPackageImpl extends EPackageImpl implements EmploymentPac
 		   });
 		addAnnotation
 		  (getPartyBenefit_RoleTypeIdTo(),
+		   source,
+		   new String[] {
+			   "key", "true"
+		   });
+		addAnnotation
+		  (getPayHistory_EmplFromDate(),
 		   source,
 		   new String[] {
 			   "key", "true"

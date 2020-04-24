@@ -21,6 +21,7 @@ import java.util.Map;
 
 import javax.xml.parsers.ParserConfigurationException;
 
+import org.abchip.mimo.util.Logs;
 import org.apache.ofbiz.base.component.ComponentConfig;
 import org.apache.ofbiz.entity.model.ModelField;
 import org.apache.ofbiz.entity.model.ModelReader;
@@ -33,9 +34,12 @@ import org.apache.ofbiz.widget.model.ModelFormField;
 import org.apache.ofbiz.widget.model.ModelFormField.DropDownField;
 import org.apache.ofbiz.widget.model.ModelFormField.OptionSource;
 import org.apache.ofbiz.widget.model.ModelFormField.SingleOption;
+import org.osgi.service.log.Logger;
 import org.xml.sax.SAXException;
 
 public class FormUtils {
+
+	private static final Logger LOGGER = Logs.getLogger(FormUtils.class);
 
 	public static List<ModelForm> searchForm(List<ModelForm> forms, String entityName) {
 
@@ -150,7 +154,8 @@ public class FormUtils {
 			return true;
 		}
 
-		throw new RuntimeException("Unexpected condition: ib8t7v6794865a408");
+		LOGGER.warn("Declared unknown indicator {}", modelField.getName());
+		return false;
 	}
 
 	public static Object getDefaultValue(ModelField modelField, ModelFormField formField) {

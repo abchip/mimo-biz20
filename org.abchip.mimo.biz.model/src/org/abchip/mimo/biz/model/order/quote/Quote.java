@@ -86,7 +86,7 @@ public interface Quote extends BizEntityTyped<QuoteType> {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuote_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -265,7 +265,7 @@ public interface Quote extends BizEntityTyped<QuoteType> {
 	 * @return the value of the '<em>Quote Name</em>' attribute.
 	 * @see #setQuoteName(String)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuote_QuoteName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getQuoteName();

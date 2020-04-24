@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataSourceImpl#getDataSourceId <em>Data Source Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataSourceImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataSourceImpl#getComments <em>Comments</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataSourceImpl#isIsCreate <em>Is Create</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataSourceImpl#getIsCreate <em>Is Create</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataSourceImpl#getVisitId <em>Visit Id</em>}</li>
  * </ul>
  *
@@ -84,7 +84,7 @@ public class PartyDataSourceImpl extends BizEntityImpl implements PartyDataSourc
 	 * @generated
 	 */
 	@Override
-	public boolean isIsCreate() {
+	public Boolean getIsCreate() {
 		return (Boolean)eGet(PartyPackage.Literals.PARTY_DATA_SOURCE__IS_CREATE, true);
 	}
 
@@ -94,7 +94,7 @@ public class PartyDataSourceImpl extends BizEntityImpl implements PartyDataSourc
 	 * @generated
 	 */
 	@Override
-	public void setIsCreate(boolean newIsCreate) {
+	public void setIsCreate(Boolean newIsCreate) {
 		eSet(PartyPackage.Literals.PARTY_DATA_SOURCE__IS_CREATE, newIsCreate);
 	}
 

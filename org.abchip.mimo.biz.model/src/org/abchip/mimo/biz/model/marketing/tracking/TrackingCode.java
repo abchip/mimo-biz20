@@ -83,7 +83,7 @@ public interface TrackingCode extends BizEntity {
 	 * @return the value of the '<em>Comments</em>' attribute.
 	 * @see #setComments(String)
 	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCode_Comments()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getComments();
@@ -161,7 +161,7 @@ public interface TrackingCode extends BizEntity {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCode_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -317,7 +317,7 @@ public interface TrackingCode extends BizEntity {
 	 * @return the value of the '<em>Override Css</em>' attribute.
 	 * @see #setOverrideCss(String)
 	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCode_OverrideCss()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getOverrideCss();
@@ -343,7 +343,7 @@ public interface TrackingCode extends BizEntity {
 	 * @return the value of the '<em>Override Logo</em>' attribute.
 	 * @see #setOverrideLogo(String)
 	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCode_OverrideLogo()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getOverrideLogo();
@@ -395,7 +395,7 @@ public interface TrackingCode extends BizEntity {
 	 * @return the value of the '<em>Redirect Url</em>' attribute.
 	 * @see #setRedirectUrl(String)
 	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCode_RedirectUrl()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getRedirectUrl();

@@ -66,7 +66,7 @@ public interface BrowserType extends BizEntity {
 	 * @return the value of the '<em>Browser Name</em>' attribute.
 	 * @see #setBrowserName(String)
 	 * @see org.abchip.mimo.biz.model.webapp.visit.VisitPackage#getBrowserType_BrowserName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getBrowserName();

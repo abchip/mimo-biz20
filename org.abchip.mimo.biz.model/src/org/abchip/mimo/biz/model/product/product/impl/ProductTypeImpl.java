@@ -26,8 +26,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#getProductTypeId <em>Product Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#isIsDigital <em>Is Digital</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#isIsPhysical <em>Is Physical</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#getIsDigital <em>Is Digital</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#getIsPhysical <em>Is Physical</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductTypeImpl#getProductTypeAttrs <em>Product Type Attrs</em>}</li>
  * </ul>
@@ -105,7 +105,7 @@ public class ProductTypeImpl extends BizEntityTypeImpl<Product> implements Produ
 	 * @generated
 	 */
 	@Override
-	public boolean isIsDigital() {
+	public Boolean getIsDigital() {
 		return (Boolean)eGet(ProductPackage.Literals.PRODUCT_TYPE__IS_DIGITAL, true);
 	}
 
@@ -115,7 +115,7 @@ public class ProductTypeImpl extends BizEntityTypeImpl<Product> implements Produ
 	 * @generated
 	 */
 	@Override
-	public void setIsDigital(boolean newIsDigital) {
+	public void setIsDigital(Boolean newIsDigital) {
 		eSet(ProductPackage.Literals.PRODUCT_TYPE__IS_DIGITAL, newIsDigital);
 	}
 
@@ -125,7 +125,7 @@ public class ProductTypeImpl extends BizEntityTypeImpl<Product> implements Produ
 	 * @generated
 	 */
 	@Override
-	public boolean isIsPhysical() {
+	public Boolean getIsPhysical() {
 		return (Boolean)eGet(ProductPackage.Literals.PRODUCT_TYPE__IS_PHYSICAL, true);
 	}
 
@@ -135,7 +135,7 @@ public class ProductTypeImpl extends BizEntityTypeImpl<Product> implements Produ
 	 * @generated
 	 */
 	@Override
-	public void setIsPhysical(boolean newIsPhysical) {
+	public void setIsPhysical(Boolean newIsPhysical) {
 		eSet(ProductPackage.Literals.PRODUCT_TYPE__IS_PHYSICAL, newIsPhysical);
 	}
 

@@ -1066,7 +1066,7 @@ public class TenantPackageImpl extends EPackageImpl implements TenantPackage {
 
 		initEClass(tenantEClass, Tenant.class, "Tenant", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getTenant_TenantId(), ecorePackage.getEString(), "tenantId", null, 1, 1, Tenant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getTenant_Disabled(), ecorePackage.getEBoolean(), "disabled", null, 0, 1, Tenant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getTenant_Disabled(), ecorePackage.getEBooleanObject(), "disabled", null, 0, 1, Tenant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTenant_InitialPath(), ecorePackage.getEString(), "initialPath", null, 0, 1, Tenant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getTenant_TenantDataSources(), this.getTenantDataSource(), null, "tenantDataSources", null, 0, -1, Tenant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTenant_TenantName(), ecorePackage.getEString(), "tenantName", null, 0, 1, Tenant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1150,15 +1150,13 @@ public class TenantPackageImpl extends EPackageImpl implements TenantPackage {
 		  (getComponent_ComponentName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getComponent_RootLocation(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getTenant_TenantId(),
@@ -1176,8 +1174,7 @@ public class TenantPackageImpl extends EPackageImpl implements TenantPackage {
 		  (getTenant_TenantName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getTenantComponent_SequenceNum(),
@@ -1190,8 +1187,7 @@ public class TenantPackageImpl extends EPackageImpl implements TenantPackage {
 		  (getTenantDataSource_EntityGroupName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getTenantDataSource_JdbcPassword(),

@@ -130,7 +130,7 @@ public interface Survey extends BizEntity {
 	 * @return the value of the '<em>Comments</em>' attribute.
 	 * @see #setComments(String)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurvey_Comments()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getComments();
@@ -156,7 +156,7 @@ public interface Survey extends BizEntity {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurvey_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -304,7 +304,7 @@ public interface Survey extends BizEntity {
 	 * @return the value of the '<em>Survey Name</em>' attribute.
 	 * @see #setSurveyName(String)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurvey_SurveyName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getSurveyName();

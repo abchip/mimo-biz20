@@ -207,7 +207,7 @@ public interface NoteData extends BizEntity {
 	 * @return the value of the '<em>Note Name</em>' attribute.
 	 * @see #setNoteName(String)
 	 * @see org.abchip.mimo.biz.model.common.note.NotePackage#getNoteData_NoteName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getNoteName();

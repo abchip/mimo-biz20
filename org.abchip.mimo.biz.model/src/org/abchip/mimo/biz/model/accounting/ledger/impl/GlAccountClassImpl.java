@@ -22,7 +22,7 @@ import org.eclipse.emf.ecore.EClass;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountClassImpl#getGlAccountClassId <em>Gl Account Class Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountClassImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountClassImpl#isIsAssetClass <em>Is Asset Class</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountClassImpl#getIsAssetClass <em>Is Asset Class</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountClassImpl#getParentClassId <em>Parent Class Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountClassImpl#getSequenceNum <em>Sequence Num</em>}</li>
  * </ul>
@@ -79,7 +79,7 @@ public class GlAccountClassImpl extends BizEntityImpl implements GlAccountClass 
 	 * @generated
 	 */
 	@Override
-	public boolean isIsAssetClass() {
+	public Boolean getIsAssetClass() {
 		return (Boolean)eGet(LedgerPackage.Literals.GL_ACCOUNT_CLASS__IS_ASSET_CLASS, true);
 	}
 
@@ -89,7 +89,7 @@ public class GlAccountClassImpl extends BizEntityImpl implements GlAccountClass 
 	 * @generated
 	 */
 	@Override
-	public void setIsAssetClass(boolean newIsAssetClass) {
+	public void setIsAssetClass(Boolean newIsAssetClass) {
 		eSet(LedgerPackage.Literals.GL_ACCOUNT_CLASS__IS_ASSET_CLASS, newIsAssetClass);
 	}
 

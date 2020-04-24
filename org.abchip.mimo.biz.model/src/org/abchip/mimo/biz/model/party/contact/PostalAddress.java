@@ -109,7 +109,7 @@ public interface PostalAddress extends ContactMech {
 	 * @return the value of the '<em>Attn Name</em>' attribute.
 	 * @see #setAttnName(String)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_AttnName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getAttnName();
@@ -135,7 +135,7 @@ public interface PostalAddress extends ContactMech {
 	 * @return the value of the '<em>City</em>' attribute.
 	 * @see #setCity(String)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_City()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getCity();
@@ -489,7 +489,7 @@ public interface PostalAddress extends ContactMech {
 	 * @return the value of the '<em>To Name</em>' attribute.
 	 * @see #setToName(String)
 	 * @see org.abchip.mimo.biz.model.party.contact.ContactPackage#getPostalAddress_ToName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getToName();

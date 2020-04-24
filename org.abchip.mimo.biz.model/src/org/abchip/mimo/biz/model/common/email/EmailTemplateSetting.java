@@ -47,7 +47,7 @@ public interface EmailTemplateSetting extends BizEntity {
 	 * @return the value of the '<em>Bcc Address</em>' attribute.
 	 * @see #setBccAddress(String)
 	 * @see org.abchip.mimo.biz.model.common.email.EmailPackage#getEmailTemplateSetting_BccAddress()
-	 * @model annotation="mimo-ent-format type='email' length='320'"
+	 * @model annotation="mimo-ent-format type='email'"
 	 * @generated
 	 */
 	String getBccAddress();
@@ -100,7 +100,7 @@ public interface EmailTemplateSetting extends BizEntity {
 	 * @return the value of the '<em>Cc Address</em>' attribute.
 	 * @see #setCcAddress(String)
 	 * @see org.abchip.mimo.biz.model.common.email.EmailPackage#getEmailTemplateSetting_CcAddress()
-	 * @model annotation="mimo-ent-format type='email' length='320'"
+	 * @model annotation="mimo-ent-format type='email'"
 	 * @generated
 	 */
 	String getCcAddress();
@@ -152,7 +152,7 @@ public interface EmailTemplateSetting extends BizEntity {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.common.email.EmailPackage#getEmailTemplateSetting_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -231,7 +231,7 @@ public interface EmailTemplateSetting extends BizEntity {
 	 * @return the value of the '<em>From Address</em>' attribute.
 	 * @see #setFromAddress(String)
 	 * @see org.abchip.mimo.biz.model.common.email.EmailPackage#getEmailTemplateSetting_FromAddress()
-	 * @model annotation="mimo-ent-format type='email' length='320'"
+	 * @model annotation="mimo-ent-format type='email'"
 	 * @generated
 	 */
 	String getFromAddress();
@@ -257,7 +257,7 @@ public interface EmailTemplateSetting extends BizEntity {
 	 * @return the value of the '<em>Subject</em>' attribute.
 	 * @see #setSubject(String)
 	 * @see org.abchip.mimo.biz.model.common.email.EmailPackage#getEmailTemplateSetting_Subject()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getSubject();

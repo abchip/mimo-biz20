@@ -42,9 +42,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getCustomerReferenceId <em>Customer Reference Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getExemptAmount <em>Exempt Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#isIncludeInShipping <em>Include In Shipping</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#isIncludeInTax <em>Include In Tax</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#isIsManual <em>Is Manual</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getIncludeInShipping <em>Include In Shipping</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getIncludeInTax <em>Include In Tax</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getIsManual <em>Is Manual</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderAdjustmentImpl#getOldAmountPerQuantity <em>Old Amount Per Quantity</em>}</li>
@@ -283,7 +283,7 @@ public class OrderAdjustmentImpl extends BizEntityTypedImpl<OrderAdjustmentType>
 	 * @generated
 	 */
 	@Override
-	public boolean isIncludeInShipping() {
+	public Boolean getIncludeInShipping() {
 		return (Boolean)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__INCLUDE_IN_SHIPPING, true);
 	}
 
@@ -293,7 +293,7 @@ public class OrderAdjustmentImpl extends BizEntityTypedImpl<OrderAdjustmentType>
 	 * @generated
 	 */
 	@Override
-	public void setIncludeInShipping(boolean newIncludeInShipping) {
+	public void setIncludeInShipping(Boolean newIncludeInShipping) {
 		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT__INCLUDE_IN_SHIPPING, newIncludeInShipping);
 	}
 
@@ -303,7 +303,7 @@ public class OrderAdjustmentImpl extends BizEntityTypedImpl<OrderAdjustmentType>
 	 * @generated
 	 */
 	@Override
-	public boolean isIncludeInTax() {
+	public Boolean getIncludeInTax() {
 		return (Boolean)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__INCLUDE_IN_TAX, true);
 	}
 
@@ -313,7 +313,7 @@ public class OrderAdjustmentImpl extends BizEntityTypedImpl<OrderAdjustmentType>
 	 * @generated
 	 */
 	@Override
-	public void setIncludeInTax(boolean newIncludeInTax) {
+	public void setIncludeInTax(Boolean newIncludeInTax) {
 		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT__INCLUDE_IN_TAX, newIncludeInTax);
 	}
 
@@ -323,7 +323,7 @@ public class OrderAdjustmentImpl extends BizEntityTypedImpl<OrderAdjustmentType>
 	 * @generated
 	 */
 	@Override
-	public boolean isIsManual() {
+	public Boolean getIsManual() {
 		return (Boolean)eGet(OrderPackage.Literals.ORDER_ADJUSTMENT__IS_MANUAL, true);
 	}
 
@@ -333,7 +333,7 @@ public class OrderAdjustmentImpl extends BizEntityTypedImpl<OrderAdjustmentType>
 	 * @generated
 	 */
 	@Override
-	public void setIsManual(boolean newIsManual) {
+	public void setIsManual(Boolean newIsManual) {
 		eSet(OrderPackage.Literals.ORDER_ADJUSTMENT__IS_MANUAL, newIsManual);
 	}
 

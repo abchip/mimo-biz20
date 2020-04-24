@@ -68,7 +68,7 @@ public interface LinkedInUser extends BizEntity {
 	 * @return the value of the '<em>Access Token</em>' attribute.
 	 * @see #setAccessToken(String)
 	 * @see org.abchip.mimo.biz.model.passport.PassportPackage#getLinkedInUser_AccessToken()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getAccessToken();

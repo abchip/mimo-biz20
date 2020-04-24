@@ -6645,11 +6645,11 @@ public interface Shipment_Package extends EPackage {
 	EAttribute getShipmentPackageRouteSeg_LabelIntlSignImage();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentPackageRouteSeg#isLabelPrinted <em>Label Printed</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.shipment.shipment.ShipmentPackageRouteSeg#getLabelPrinted <em>Label Printed</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Label Printed</em>'.
-	 * @see org.abchip.mimo.biz.model.shipment.shipment.ShipmentPackageRouteSeg#isLabelPrinted()
+	 * @see org.abchip.mimo.biz.model.shipment.shipment.ShipmentPackageRouteSeg#getLabelPrinted()
 	 * @see #getShipmentPackageRouteSeg()
 	 * @generated
 	 */

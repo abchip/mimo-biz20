@@ -30,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getPartyId <em>Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getBaseCurrencyUomId <em>Base Currency Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getCogsMethodId <em>Cogs Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#isEnableAccounting <em>Enable Accounting</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getEnableAccounting <em>Enable Accounting</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getErrorGlJournalId <em>Error Gl Journal Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getFiscalYearStartDay <em>Fiscal Year Start Day</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getFiscalYearStartMonth <em>Fiscal Year Start Month</em>}</li>
@@ -49,7 +49,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getQuoteSeqCustMethId <em>Quote Seq Cust Meth Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getRefundPaymentMethodId <em>Refund Payment Method Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getTaxFormId <em>Tax Form Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#isUseInvoiceIdForReturns <em>Use Invoice Id For Returns</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl#getUseInvoiceIdForReturns <em>Use Invoice Id For Returns</em>}</li>
  * </ul>
  *
  * @generated
@@ -76,26 +76,6 @@ public class PartyAcctgPreferenceImpl extends BizEntityImpl implements PartyAcct
 	@Override
 	protected EClass eStaticClass() {
 		return LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean isEnableAccounting() {
-		return (Boolean)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__ENABLE_ACCOUNTING, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setEnableAccounting(boolean newEnableAccounting) {
-		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__ENABLE_ACCOUNTING, newEnableAccounting);
 	}
 
 	/**
@@ -136,6 +116,26 @@ public class PartyAcctgPreferenceImpl extends BizEntityImpl implements PartyAcct
 	@Override
 	public void setCogsMethodId(Enumeration newCogsMethodId) {
 		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__COGS_METHOD_ID, newCogsMethodId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Boolean getEnableAccounting() {
+		return (Boolean)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__ENABLE_ACCOUNTING, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setEnableAccounting(Boolean newEnableAccounting) {
+		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__ENABLE_ACCOUNTING, newEnableAccounting);
 	}
 
 	/**
@@ -444,26 +444,6 @@ public class PartyAcctgPreferenceImpl extends BizEntityImpl implements PartyAcct
 	 * @generated
 	 */
 	@Override
-	public boolean isUseInvoiceIdForReturns() {
-		return (Boolean)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__USE_INVOICE_ID_FOR_RETURNS, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setUseInvoiceIdForReturns(boolean newUseInvoiceIdForReturns) {
-		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__USE_INVOICE_ID_FOR_RETURNS, newUseInvoiceIdForReturns);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public CustomMethod getQuoteSeqCustMethId() {
 		return (CustomMethod)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__QUOTE_SEQ_CUST_METH_ID, true);
 	}
@@ -516,6 +496,26 @@ public class PartyAcctgPreferenceImpl extends BizEntityImpl implements PartyAcct
 	@Override
 	public void setTaxFormId(Enumeration newTaxFormId) {
 		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__TAX_FORM_ID, newTaxFormId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Boolean getUseInvoiceIdForReturns() {
+		return (Boolean)eGet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__USE_INVOICE_ID_FOR_RETURNS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setUseInvoiceIdForReturns(Boolean newUseInvoiceIdForReturns) {
+		eSet(LedgerPackage.Literals.PARTY_ACCTG_PREFERENCE__USE_INVOICE_ID_FOR_RETURNS, newUseInvoiceIdForReturns);
 	}
 
 	/**

@@ -83,7 +83,7 @@ public interface EntityGroup extends BizEntity {
 	 * @return the value of the '<em>Entity Group Name</em>' attribute.
 	 * @see #setEntityGroupName(String)
 	 * @see org.abchip.mimo.biz.model.entity.group.GroupPackage#getEntityGroup_EntityGroupName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getEntityGroupName();

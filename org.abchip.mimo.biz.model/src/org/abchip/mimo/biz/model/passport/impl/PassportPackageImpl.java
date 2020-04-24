@@ -1559,8 +1559,7 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 		  (getLinkedInUser_AccessToken(),
 		   source,
 		   new String[] {
-			   "type", "url",
-			   "length", "2000"
+			   "type", "url"
 		   });
 		addAnnotation
 		  (getLinkedInUser_EnvPrefix(),
@@ -1584,8 +1583,7 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 		  (getOAuth2GitHub_IconUrl(),
 		   source,
 		   new String[] {
-			   "type", "url",
-			   "length", "2000"
+			   "type", "url"
 		   });
 		addAnnotation
 		  (getOAuth2GitHub_LocalRedirectUri(),
@@ -1615,8 +1613,7 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 		  (getOAuth2Google_IconUrl(),
 		   source,
 		   new String[] {
-			   "type", "url",
-			   "length", "2000"
+			   "type", "url"
 		   });
 		addAnnotation
 		  (getOAuth2Google_LocalRedirectUri(),
@@ -1640,8 +1637,7 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 		  (getOAuth2LinkedIn_IconUrl(),
 		   source,
 		   new String[] {
-			   "type", "url",
-			   "length", "2000"
+			   "type", "url"
 		   });
 		addAnnotation
 		  (getOAuth2LinkedIn_LiveReturnUrl(),

@@ -41,7 +41,7 @@ public interface ProductStoreGroup extends BizEntity {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreGroup_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -67,7 +67,7 @@ public interface ProductStoreGroup extends BizEntity {
 	 * @return the value of the '<em>Product Store Group Name</em>' attribute.
 	 * @see #setProductStoreGroupName(String)
 	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreGroup_ProductStoreGroupName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getProductStoreGroupName();

@@ -23,7 +23,7 @@ import org.abchip.mimo.biz.BizEntity;
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getSurveyQuestionId <em>Survey Question Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getExternalFieldRef <em>External Field Ref</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#isRequiredField <em>Required Field</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getRequiredField <em>Required Field</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getSequenceNum <em>Sequence Num</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getSurveyMultiRespColId <em>Survey Multi Resp Col Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getSurveyMultiRespId <em>Survey Multi Resp Id</em>}</li>
@@ -68,28 +68,24 @@ public interface SurveyQuestionAppl extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Required Field</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Required Field</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Required Field</em>' attribute.
-	 * @see #setRequiredField(boolean)
+	 * @see #setRequiredField(Boolean)
 	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurveyQuestionAppl_RequiredField()
 	 * @model
 	 * @generated
 	 */
-	boolean isRequiredField();
+	Boolean getRequiredField();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#isRequiredField <em>Required Field</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl#getRequiredField <em>Required Field</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Required Field</em>' attribute.
-	 * @see #isRequiredField()
+	 * @see #getRequiredField()
 	 * @generated
 	 */
-	void setRequiredField(boolean value);
+	void setRequiredField(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.

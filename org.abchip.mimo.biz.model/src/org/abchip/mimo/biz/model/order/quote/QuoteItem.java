@@ -36,7 +36,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getCustRequestItemSeqId <em>Cust Request Item Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getDeliverableTypeId <em>Deliverable Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getEstimatedDeliveryDate <em>Estimated Delivery Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#isIsPromo <em>Is Promo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getIsPromo <em>Is Promo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getLeadTimeDays <em>Lead Time Days</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getProductFeatureId <em>Product Feature Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getProductId <em>Product Id</em>}</li>
@@ -67,7 +67,7 @@ public interface QuoteItem extends BizEntity {
 	 * @return the value of the '<em>Comments</em>' attribute.
 	 * @see #setComments(String)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_Comments()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getComments();
@@ -215,28 +215,24 @@ public interface QuoteItem extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Is Promo</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Promo</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Promo</em>' attribute.
-	 * @see #setIsPromo(boolean)
+	 * @see #setIsPromo(Boolean)
 	 * @see org.abchip.mimo.biz.model.order.quote.QuotePackage#getQuoteItem_IsPromo()
 	 * @model
 	 * @generated
 	 */
-	boolean isIsPromo();
+	Boolean getIsPromo();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#isIsPromo <em>Is Promo</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.quote.QuoteItem#getIsPromo <em>Is Promo</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is Promo</em>' attribute.
-	 * @see #isIsPromo()
+	 * @see #getIsPromo()
 	 * @generated
 	 */
-	void setIsPromo(boolean value);
+	void setIsPromo(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Lead Time Days</b></em>' attribute.

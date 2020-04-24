@@ -1034,8 +1034,7 @@ public class RatePackageImpl extends EPackageImpl implements RatePackage {
 		  (getRateType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

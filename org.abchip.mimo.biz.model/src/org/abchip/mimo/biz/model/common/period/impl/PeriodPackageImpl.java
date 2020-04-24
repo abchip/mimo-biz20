@@ -903,7 +903,7 @@ public class PeriodPackageImpl extends EPackageImpl implements PeriodPackage {
 		initEClass(customTimePeriodEClass, CustomTimePeriod.class, "CustomTimePeriod", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCustomTimePeriod_CustomTimePeriodId(), ecorePackage.getEString(), "customTimePeriodId", null, 1, 1, CustomTimePeriod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCustomTimePeriod_FromDate(), ecorePackage.getEDate(), "fromDate", null, 0, 1, CustomTimePeriod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCustomTimePeriod_IsClosed(), ecorePackage.getEBoolean(), "isClosed", null, 0, 1, CustomTimePeriod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCustomTimePeriod_IsClosed(), ecorePackage.getEBooleanObject(), "isClosed", null, 0, 1, CustomTimePeriod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCustomTimePeriod_OrganizationPartyId(), thePartyPackage_1.getParty(), null, "organizationPartyId", null, 0, 1, CustomTimePeriod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getCustomTimePeriod_OrganizationPartyId().getEKeys().add(thePartyPackage_1.getParty_PartyId());
 		initEReference(getCustomTimePeriod_ParentPeriodId(), this.getCustomTimePeriod(), null, "parentPeriodId", null, 0, 1, CustomTimePeriod.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -946,8 +946,7 @@ public class PeriodPackageImpl extends EPackageImpl implements PeriodPackage {
 		  (getCustomTimePeriod_PeriodName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getCustomTimePeriod_PeriodNum(),
@@ -966,8 +965,7 @@ public class PeriodPackageImpl extends EPackageImpl implements PeriodPackage {
 		  (getPeriodType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getPeriodType_PeriodLength(),

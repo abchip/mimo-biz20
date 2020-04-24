@@ -26,7 +26,7 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#getPartyId <em>Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#getBaseCurrencyUomId <em>Base Currency Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#getCogsMethodId <em>Cogs Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#isEnableAccounting <em>Enable Accounting</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#getEnableAccounting <em>Enable Accounting</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#getErrorGlJournalId <em>Error Gl Journal Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#getFiscalYearStartDay <em>Fiscal Year Start Day</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#getFiscalYearStartMonth <em>Fiscal Year Start Month</em>}</li>
@@ -45,7 +45,7 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#getQuoteSeqCustMethId <em>Quote Seq Cust Meth Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#getRefundPaymentMethodId <em>Refund Payment Method Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#getTaxFormId <em>Tax Form Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#isUseInvoiceIdForReturns <em>Use Invoice Id For Returns</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#getUseInvoiceIdForReturns <em>Use Invoice Id For Returns</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyAcctgPreference()
@@ -53,32 +53,6 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
  * @generated
  */
 public interface PartyAcctgPreference extends BizEntity {
-	/**
-	 * Returns the value of the '<em><b>Enable Accounting</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Enable Accounting</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Enable Accounting</em>' attribute.
-	 * @see #setEnableAccounting(boolean)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyAcctgPreference_EnableAccounting()
-	 * @model
-	 * @generated
-	 */
-	boolean isEnableAccounting();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#isEnableAccounting <em>Enable Accounting</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Enable Accounting</em>' attribute.
-	 * @see #isEnableAccounting()
-	 * @generated
-	 */
-	void setEnableAccounting(boolean value);
-
 	/**
 	 * Returns the value of the '<em><b>Base Currency Uom Id</b></em>' reference.
 	 * <!-- begin-user-doc -->
@@ -130,6 +104,28 @@ public interface PartyAcctgPreference extends BizEntity {
 	 * @generated
 	 */
 	void setCogsMethodId(Enumeration value);
+
+	/**
+	 * Returns the value of the '<em><b>Enable Accounting</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Enable Accounting</em>' attribute.
+	 * @see #setEnableAccounting(Boolean)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyAcctgPreference_EnableAccounting()
+	 * @model
+	 * @generated
+	 */
+	Boolean getEnableAccounting();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#getEnableAccounting <em>Enable Accounting</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Enable Accounting</em>' attribute.
+	 * @see #getEnableAccounting()
+	 * @generated
+	 */
+	void setEnableAccounting(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Fiscal Year Start Day</b></em>' attribute.
@@ -523,32 +519,6 @@ public interface PartyAcctgPreference extends BizEntity {
 	void setQuoteIdPrefix(String value);
 
 	/**
-	 * Returns the value of the '<em><b>Use Invoice Id For Returns</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Use Invoice Id For Returns</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Use Invoice Id For Returns</em>' attribute.
-	 * @see #setUseInvoiceIdForReturns(boolean)
-	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyAcctgPreference_UseInvoiceIdForReturns()
-	 * @model
-	 * @generated
-	 */
-	boolean isUseInvoiceIdForReturns();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#isUseInvoiceIdForReturns <em>Use Invoice Id For Returns</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Use Invoice Id For Returns</em>' attribute.
-	 * @see #isUseInvoiceIdForReturns()
-	 * @generated
-	 */
-	void setUseInvoiceIdForReturns(boolean value);
-
-	/**
 	 * Returns the value of the '<em><b>Quote Seq Cust Meth Id</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -625,6 +595,28 @@ public interface PartyAcctgPreference extends BizEntity {
 	 * @generated
 	 */
 	void setTaxFormId(Enumeration value);
+
+	/**
+	 * Returns the value of the '<em><b>Use Invoice Id For Returns</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Use Invoice Id For Returns</em>' attribute.
+	 * @see #setUseInvoiceIdForReturns(Boolean)
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage#getPartyAcctgPreference_UseInvoiceIdForReturns()
+	 * @model
+	 * @generated
+	 */
+	Boolean getUseInvoiceIdForReturns();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference#getUseInvoiceIdForReturns <em>Use Invoice Id For Returns</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Use Invoice Id For Returns</em>' attribute.
+	 * @see #getUseInvoiceIdForReturns()
+	 * @generated
+	 */
+	void setUseInvoiceIdForReturns(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Error Gl Journal Id</b></em>' reference.

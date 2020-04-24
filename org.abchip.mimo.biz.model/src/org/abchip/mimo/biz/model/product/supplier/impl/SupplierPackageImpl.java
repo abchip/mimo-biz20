@@ -1447,8 +1447,7 @@ public class SupplierPackageImpl extends EPackageImpl implements SupplierPackage
 		  (getSupplierPrefOrder_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getSupplierProduct_MinimumOrderQuantity(),
@@ -1474,8 +1473,7 @@ public class SupplierPackageImpl extends EPackageImpl implements SupplierPackage
 		  (getSupplierProduct_Comments(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getSupplierProduct_LastPrice(),
@@ -1513,14 +1511,13 @@ public class SupplierPackageImpl extends EPackageImpl implements SupplierPackage
 		  (getSupplierProduct_SupplierProductId(),
 		   source,
 		   new String[] {
-			   "length", "20"
+			   "length", "60"
 		   });
 		addAnnotation
 		  (getSupplierProduct_SupplierProductName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getSupplierProduct_UnitsIncluded(),
@@ -1534,8 +1531,7 @@ public class SupplierPackageImpl extends EPackageImpl implements SupplierPackage
 		  (getSupplierProductFeature_Description(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getSupplierProductFeature_IdCode(),
@@ -1553,8 +1549,7 @@ public class SupplierPackageImpl extends EPackageImpl implements SupplierPackage
 		  (getSupplierRatingType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

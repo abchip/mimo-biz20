@@ -25,7 +25,7 @@ import org.abchip.mimo.biz.model.common.enum_.Enumeration;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getFinAccountTypeAttrs <em>Fin Account Type Attrs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getFinAccountTypeGlAccounts <em>Fin Account Type Gl Accounts</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#isHasTable <em>Has Table</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#isIsRefundable <em>Is Refundable</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getIsRefundable <em>Is Refundable</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getParentTypeId <em>Parent Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getReplenishEnumId <em>Replenish Enum Id</em>}</li>
  * </ul>
@@ -46,7 +46,7 @@ public interface FinAccountType extends BizEntityType<FinAccount> {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountType_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -122,28 +122,24 @@ public interface FinAccountType extends BizEntityType<FinAccount> {
 	/**
 	 * Returns the value of the '<em><b>Is Refundable</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Is Refundable</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Is Refundable</em>' attribute.
-	 * @see #setIsRefundable(boolean)
+	 * @see #setIsRefundable(Boolean)
 	 * @see org.abchip.mimo.biz.model.accounting.finaccount.FinaccountPackage#getFinAccountType_IsRefundable()
 	 * @model
 	 * @generated
 	 */
-	boolean isIsRefundable();
+	Boolean getIsRefundable();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#isIsRefundable <em>Is Refundable</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType#getIsRefundable <em>Is Refundable</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Is Refundable</em>' attribute.
-	 * @see #isIsRefundable()
+	 * @see #getIsRefundable()
 	 * @generated
 	 */
-	void setIsRefundable(boolean value);
+	void setIsRefundable(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Replenish Enum Id</b></em>' reference.

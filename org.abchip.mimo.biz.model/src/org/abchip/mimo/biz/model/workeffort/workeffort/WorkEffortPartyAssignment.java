@@ -35,7 +35,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getDelegateReasonEnumId <em>Delegate Reason Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getExpectationEnumId <em>Expectation Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getFacilityId <em>Facility Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#isMustRsvp <em>Must Rsvp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getMustRsvp <em>Must Rsvp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getStatusDateTime <em>Status Date Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getStatusId <em>Status Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getThruDate <em>Thru Date</em>}</li>
@@ -110,7 +110,7 @@ public interface WorkEffortPartyAssignment extends BizEntity {
 	 * @return the value of the '<em>Comments</em>' attribute.
 	 * @see #setComments(String)
 	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortPartyAssignment_Comments()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getComments();
@@ -124,32 +124,6 @@ public interface WorkEffortPartyAssignment extends BizEntity {
 	 * @generated
 	 */
 	void setComments(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Must Rsvp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Must Rsvp</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Must Rsvp</em>' attribute.
-	 * @see #setMustRsvp(boolean)
-	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortPartyAssignment_MustRsvp()
-	 * @model
-	 * @generated
-	 */
-	boolean isMustRsvp();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#isMustRsvp <em>Must Rsvp</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Must Rsvp</em>' attribute.
-	 * @see #isMustRsvp()
-	 * @generated
-	 */
-	void setMustRsvp(boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Delegate Reason Enum Id</b></em>' reference.
@@ -230,6 +204,28 @@ public interface WorkEffortPartyAssignment extends BizEntity {
 	 * @generated
 	 */
 	void setFacilityId(Facility value);
+
+	/**
+	 * Returns the value of the '<em><b>Must Rsvp</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Must Rsvp</em>' attribute.
+	 * @see #setMustRsvp(Boolean)
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffortPartyAssignment_MustRsvp()
+	 * @model
+	 * @generated
+	 */
+	Boolean getMustRsvp();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPartyAssignment#getMustRsvp <em>Must Rsvp</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Must Rsvp</em>' attribute.
+	 * @see #getMustRsvp()
+	 * @generated
+	 */
+	void setMustRsvp(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.

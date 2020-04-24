@@ -4580,7 +4580,7 @@ public class Shipment_PackageImpl extends EPackageImpl implements Shipment_Packa
 		initEAttribute(getShipmentPackageRouteSeg_LabelHtml(), ecorePackage.getEString(), "labelHtml", null, 0, 1, ShipmentPackageRouteSeg.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShipmentPackageRouteSeg_LabelImage(), ecorePackage.getEByteArray(), "labelImage", null, 0, 1, ShipmentPackageRouteSeg.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShipmentPackageRouteSeg_LabelIntlSignImage(), ecorePackage.getEByteArray(), "labelIntlSignImage", null, 0, 1, ShipmentPackageRouteSeg.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getShipmentPackageRouteSeg_LabelPrinted(), ecorePackage.getEBoolean(), "labelPrinted", null, 0, 1, ShipmentPackageRouteSeg.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getShipmentPackageRouteSeg_LabelPrinted(), ecorePackage.getEBooleanObject(), "labelPrinted", null, 0, 1, ShipmentPackageRouteSeg.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShipmentPackageRouteSeg_PackageOtherCost(), ecorePackage.getEBigDecimal(), "packageOtherCost", null, 0, 1, ShipmentPackageRouteSeg.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShipmentPackageRouteSeg_PackageServiceCost(), ecorePackage.getEBigDecimal(), "packageServiceCost", null, 0, 1, ShipmentPackageRouteSeg.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getShipmentPackageRouteSeg_PackageTransportCost(), ecorePackage.getEBigDecimal(), "packageTransportCost", null, 0, 1, ShipmentPackageRouteSeg.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -4824,8 +4824,7 @@ public class Shipment_PackageImpl extends EPackageImpl implements Shipment_Packa
 		  (getShipmentAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getShipmentAttribute_AttrValue(),
@@ -4875,8 +4874,7 @@ public class Shipment_PackageImpl extends EPackageImpl implements Shipment_Packa
 		  (getShipmentBoxType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getShipmentContactMechType_ShipmentContactMechTypeId(),
@@ -4888,8 +4886,7 @@ public class Shipment_PackageImpl extends EPackageImpl implements Shipment_Packa
 		  (getShipmentContactMechType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getShipmentCostEstimate_ShipmentCostEstimateId(),
@@ -5025,8 +5022,7 @@ public class Shipment_PackageImpl extends EPackageImpl implements Shipment_Packa
 		  (getShipmentGatewayConfig_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getShipmentGatewayConfigType_ShipmentGatewayConfTypeId(),
@@ -5038,8 +5034,7 @@ public class Shipment_PackageImpl extends EPackageImpl implements Shipment_Packa
 		  (getShipmentGatewayConfigType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getShipmentGatewayDhl_AccessAccountNbr(),
@@ -5370,8 +5365,7 @@ public class Shipment_PackageImpl extends EPackageImpl implements Shipment_Packa
 		  (getShipmentItem_ShipmentContentDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getShipmentItemBilling_InvoiceItemSeqId(),
@@ -5401,8 +5395,7 @@ public class Shipment_PackageImpl extends EPackageImpl implements Shipment_Packa
 		  (getShipmentMethodType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getShipmentMethodType_SequenceNum(),
@@ -5686,8 +5679,7 @@ public class Shipment_PackageImpl extends EPackageImpl implements Shipment_Packa
 		  (getShipmentType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getShipmentTypeAttr_AttrName(),
@@ -5699,15 +5691,13 @@ public class Shipment_PackageImpl extends EPackageImpl implements Shipment_Packa
 		  (getShipmentTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getShippingDocument_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getShippingDocument_ShipmentId(),

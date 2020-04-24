@@ -41,6 +41,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getDefaultWeightUomId <em>Default Weight Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilityAttributes <em>Facility Attributes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilityLevel <em>Facility Level</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilityLocations <em>Facility Locations</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilityName <em>Facility Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilitySize <em>Facility Size</em>}</li>
@@ -211,6 +212,26 @@ public class FacilityImpl extends BizEntityTypedImpl<FacilityType> implements Fa
 	@Override
 	public List<FacilityAttribute> getFacilityAttributes() {
 		return (List<FacilityAttribute>)eGet(FacilityPackage.Literals.FACILITY__FACILITY_ATTRIBUTES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public long getFacilityLevel() {
+		return (Long)eGet(FacilityPackage.Literals.FACILITY__FACILITY_LEVEL, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setFacilityLevel(long newFacilityLevel) {
+		eSet(FacilityPackage.Literals.FACILITY__FACILITY_LEVEL, newFacilityLevel);
 	}
 
 	/**

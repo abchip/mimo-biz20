@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#isAllowProductStoreChange <em>Allow Product Store Change</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getCookieDomain <em>Cookie Domain</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#isDisplayMaintenancePage <em>Display Maintenance Page</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#isEnableHttps <em>Enable Https</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getEnableHttps <em>Enable Https</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getHostedPathAlias <em>Hosted Path Alias</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getHttpHost <em>Http Host</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getHttpPort <em>Http Port</em>}</li>
@@ -158,7 +158,7 @@ public class WebSiteImpl extends BizEntityImpl implements WebSite {
 	 * @generated
 	 */
 	@Override
-	public boolean isEnableHttps() {
+	public Boolean getEnableHttps() {
 		return (Boolean)eGet(WebsitePackage.Literals.WEB_SITE__ENABLE_HTTPS, true);
 	}
 
@@ -168,7 +168,7 @@ public class WebSiteImpl extends BizEntityImpl implements WebSite {
 	 * @generated
 	 */
 	@Override
-	public void setEnableHttps(boolean newEnableHttps) {
+	public void setEnableHttps(Boolean newEnableHttps) {
 		eSet(WebsitePackage.Literals.WEB_SITE__ENABLE_HTTPS, newEnableHttps);
 	}
 

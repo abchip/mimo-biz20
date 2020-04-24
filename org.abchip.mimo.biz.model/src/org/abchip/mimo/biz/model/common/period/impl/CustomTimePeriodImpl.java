@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.EClass;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.CustomTimePeriodImpl#getCustomTimePeriodId <em>Custom Time Period Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.CustomTimePeriodImpl#getFromDate <em>From Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.CustomTimePeriodImpl#isIsClosed <em>Is Closed</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.CustomTimePeriodImpl#getIsClosed <em>Is Closed</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.CustomTimePeriodImpl#getOrganizationPartyId <em>Organization Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.CustomTimePeriodImpl#getParentPeriodId <em>Parent Period Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.period.impl.CustomTimePeriodImpl#getPeriodName <em>Period Name</em>}</li>
@@ -87,7 +87,7 @@ public class CustomTimePeriodImpl extends BizEntityImpl implements CustomTimePer
 	 * @generated
 	 */
 	@Override
-	public boolean isIsClosed() {
+	public Boolean getIsClosed() {
 		return (Boolean)eGet(PeriodPackage.Literals.CUSTOM_TIME_PERIOD__IS_CLOSED, true);
 	}
 
@@ -97,7 +97,7 @@ public class CustomTimePeriodImpl extends BizEntityImpl implements CustomTimePer
 	 * @generated
 	 */
 	@Override
-	public void setIsClosed(boolean newIsClosed) {
+	public void setIsClosed(Boolean newIsClosed) {
 		eSet(PeriodPackage.Literals.CUSTOM_TIME_PERIOD__IS_CLOSED, newIsClosed);
 	}
 

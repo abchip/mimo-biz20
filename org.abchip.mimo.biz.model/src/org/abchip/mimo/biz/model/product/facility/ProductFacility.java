@@ -27,6 +27,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getLastInventoryCount <em>Last Inventory Count</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getMinimumStock <em>Minimum Stock</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getReorderQuantity <em>Reorder Quantity</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getReplenishMethodEnumId <em>Replenish Method Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getRequirementMethodEnumId <em>Requirement Method Enum Id</em>}</li>
  * </ul>
  *
@@ -72,7 +73,7 @@ public interface ProductFacility extends BizEntity {
 	 * @return the value of the '<em>Last Inventory Count</em>' attribute.
 	 * @see #setLastInventoryCount(BigDecimal)
 	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacility_LastInventoryCount()
-	 * @model annotation="mimo-ent-slot help='This field represents availableToPromiseTotal of a product at a certain point of time and is being updated regularly by a schedule service every hour'"
+	 * @model annotation="mimo-ent-slot help='This field represents availableToPromiseTotal of a product at a certain point of time and is\n                being updated regularly by a schedule service every hour'"
 	 *        annotation="mimo-ent-format type='fixed-point' precision='18' scale='6'"
 	 * @generated
 	 */
@@ -166,6 +167,28 @@ public interface ProductFacility extends BizEntity {
 	 * @generated
 	 */
 	void setReorderQuantity(BigDecimal value);
+
+	/**
+	 * Returns the value of the '<em><b>Replenish Method Enum Id</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Replenish Method Enum Id</em>' reference.
+	 * @see #setReplenishMethodEnumId(Enumeration)
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getProductFacility_ReplenishMethodEnumId()
+	 * @model keys="enumId"
+	 * @generated
+	 */
+	Enumeration getReplenishMethodEnumId();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.facility.ProductFacility#getReplenishMethodEnumId <em>Replenish Method Enum Id</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Replenish Method Enum Id</em>' reference.
+	 * @see #getReplenishMethodEnumId()
+	 * @generated
+	 */
+	void setReplenishMethodEnumId(Enumeration value);
 
 	/**
 	 * Returns the value of the '<em><b>Requirement Method Enum Id</b></em>' reference.

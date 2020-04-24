@@ -38,7 +38,7 @@ public interface TestingSubtype extends BizEntity {
 	 * @return the value of the '<em>Subtype Description</em>' attribute.
 	 * @see #setSubtypeDescription(String)
 	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTestingSubtype_SubtypeDescription()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getSubtypeDescription();

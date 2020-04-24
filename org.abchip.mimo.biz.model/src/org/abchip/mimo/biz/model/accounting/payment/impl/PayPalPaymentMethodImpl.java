@@ -22,8 +22,8 @@ import org.eclipse.emf.ecore.EClass;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PayPalPaymentMethodImpl#getPaymentMethodId <em>Payment Method Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PayPalPaymentMethodImpl#isAvsAddr <em>Avs Addr</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PayPalPaymentMethodImpl#isAvsZip <em>Avs Zip</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PayPalPaymentMethodImpl#getAvsAddr <em>Avs Addr</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PayPalPaymentMethodImpl#getAvsZip <em>Avs Zip</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PayPalPaymentMethodImpl#getContactMechId <em>Contact Mech Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PayPalPaymentMethodImpl#getCorrelationId <em>Correlation Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PayPalPaymentMethodImpl#getExpressCheckoutToken <em>Express Checkout Token</em>}</li>
@@ -184,7 +184,7 @@ public class PayPalPaymentMethodImpl extends BizEntityImpl implements PayPalPaym
 	 * @generated
 	 */
 	@Override
-	public boolean isAvsAddr() {
+	public Boolean getAvsAddr() {
 		return (Boolean)eGet(PaymentPackage.Literals.PAY_PAL_PAYMENT_METHOD__AVS_ADDR, true);
 	}
 
@@ -194,7 +194,7 @@ public class PayPalPaymentMethodImpl extends BizEntityImpl implements PayPalPaym
 	 * @generated
 	 */
 	@Override
-	public void setAvsAddr(boolean newAvsAddr) {
+	public void setAvsAddr(Boolean newAvsAddr) {
 		eSet(PaymentPackage.Literals.PAY_PAL_PAYMENT_METHOD__AVS_ADDR, newAvsAddr);
 	}
 
@@ -204,7 +204,7 @@ public class PayPalPaymentMethodImpl extends BizEntityImpl implements PayPalPaym
 	 * @generated
 	 */
 	@Override
-	public boolean isAvsZip() {
+	public Boolean getAvsZip() {
 		return (Boolean)eGet(PaymentPackage.Literals.PAY_PAL_PAYMENT_METHOD__AVS_ZIP, true);
 	}
 
@@ -214,7 +214,7 @@ public class PayPalPaymentMethodImpl extends BizEntityImpl implements PayPalPaym
 	 * @generated
 	 */
 	@Override
-	public void setAvsZip(boolean newAvsZip) {
+	public void setAvsZip(Boolean newAvsZip) {
 		eSet(PaymentPackage.Literals.PAY_PAL_PAYMENT_METHOD__AVS_ZIP, newAvsZip);
 	}
 

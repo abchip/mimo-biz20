@@ -29,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductReviewImpl#getProductReviewId <em>Product Review Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductReviewImpl#isPostedAnonymous <em>Posted Anonymous</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductReviewImpl#getPostedAnonymous <em>Posted Anonymous</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductReviewImpl#getPostedDateTime <em>Posted Date Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductReviewImpl#getProductId <em>Product Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductReviewImpl#getProductRating <em>Product Rating</em>}</li>
@@ -152,7 +152,7 @@ public class ProductReviewImpl extends BizEntityImpl implements ProductReview {
 	 * @generated
 	 */
 	@Override
-	public boolean isPostedAnonymous() {
+	public Boolean getPostedAnonymous() {
 		return (Boolean)eGet(ProductPackage.Literals.PRODUCT_REVIEW__POSTED_ANONYMOUS, true);
 	}
 
@@ -162,7 +162,7 @@ public class ProductReviewImpl extends BizEntityImpl implements ProductReview {
 	 * @generated
 	 */
 	@Override
-	public void setPostedAnonymous(boolean newPostedAnonymous) {
+	public void setPostedAnonymous(Boolean newPostedAnonymous) {
 		eSet(ProductPackage.Literals.PRODUCT_REVIEW__POSTED_ANONYMOUS, newPostedAnonymous);
 	}
 

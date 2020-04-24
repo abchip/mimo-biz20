@@ -1682,8 +1682,7 @@ public class CommunicationPackageImpl extends EPackageImpl implements Communicat
 		  (getCommContentAssocType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getCommEventContentAssoc_SequenceNum(),
@@ -1708,8 +1707,7 @@ public class CommunicationPackageImpl extends EPackageImpl implements Communicat
 		  (getCommunicationEvent_Note(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getCommunicationEvent_OrigCommEventId(),
@@ -1739,15 +1737,13 @@ public class CommunicationPackageImpl extends EPackageImpl implements Communicat
 		  (getCommunicationEventPrpTyp_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getCommunicationEventPurpose_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getCommunicationEventType_CommunicationEventTypeId(),
@@ -1759,8 +1755,7 @@ public class CommunicationPackageImpl extends EPackageImpl implements Communicat
 		  (getCommunicationEventType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 	}
 

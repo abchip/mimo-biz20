@@ -385,7 +385,7 @@ public interface FixedAsset extends BizEntityTyped<FixedAssetType> {
 	 * @return the value of the '<em>Fixed Asset Name</em>' attribute.
 	 * @see #setFixedAssetName(String)
 	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_FixedAssetName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getFixedAssetName();

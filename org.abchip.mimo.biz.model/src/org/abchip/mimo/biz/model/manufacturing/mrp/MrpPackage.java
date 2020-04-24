@@ -162,13 +162,22 @@ public interface MrpPackage extends EPackage {
 	int MRP_EVENT__FACILITY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
 
 	/**
+	 * The feature id for the '<em><b>Facility Id To</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MRP_EVENT__FACILITY_ID_TO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+
+	/**
 	 * The feature id for the '<em><b>Is Late</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MRP_EVENT__IS_LATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int MRP_EVENT__IS_LATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -177,7 +186,7 @@ public interface MrpPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MRP_EVENT__QUANTITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int MRP_EVENT__QUANTITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Event</em>' class.
@@ -186,7 +195,7 @@ public interface MrpPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MRP_EVENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int MRP_EVENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.manufacturing.mrp.impl.MrpEventTypeImpl <em>Event Type</em>}' class.
@@ -339,11 +348,22 @@ public interface MrpPackage extends EPackage {
 	EReference getMrpEvent_FacilityId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#isIsLate <em>Is Late</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getFacilityIdTo <em>Facility Id To</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Facility Id To</em>'.
+	 * @see org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getFacilityIdTo()
+	 * @see #getMrpEvent()
+	 * @generated
+	 */
+	EAttribute getMrpEvent_FacilityIdTo();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getIsLate <em>Is Late</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Late</em>'.
-	 * @see org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#isIsLate()
+	 * @see org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent#getIsLate()
 	 * @see #getMrpEvent()
 	 * @generated
 	 */
@@ -471,6 +491,14 @@ public interface MrpPackage extends EPackage {
 		 * @generated
 		 */
 		EReference MRP_EVENT__FACILITY_ID = eINSTANCE.getMrpEvent_FacilityId();
+
+		/**
+		 * The meta object literal for the '<em><b>Facility Id To</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute MRP_EVENT__FACILITY_ID_TO = eINSTANCE.getMrpEvent_FacilityIdTo();
 
 		/**
 		 * The meta object literal for the '<em><b>Is Late</b></em>' attribute feature.

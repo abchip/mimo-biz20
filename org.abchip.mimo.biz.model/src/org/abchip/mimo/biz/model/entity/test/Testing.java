@@ -46,7 +46,7 @@ public interface Testing extends BizEntity {
 	 * @return the value of the '<em>Comments</em>' attribute.
 	 * @see #setComments(String)
 	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTesting_Comments()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getComments();
@@ -72,7 +72,7 @@ public interface Testing extends BizEntity {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTesting_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -168,7 +168,7 @@ public interface Testing extends BizEntity {
 	 * @see #setTestingName(String)
 	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTesting_TestingName()
 	 * @model annotation="mimo-ent-slot audit='true'"
-	 *        annotation="mimo-ent-format type='name' length='100'"
+	 *        annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getTestingName();

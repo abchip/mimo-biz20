@@ -6074,33 +6074,33 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderAdjustment_ExemptAmount();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#isIncludeInShipping <em>Include In Shipping</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getIncludeInShipping <em>Include In Shipping</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Include In Shipping</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#isIncludeInShipping()
+	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#getIncludeInShipping()
 	 * @see #getOrderAdjustment()
 	 * @generated
 	 */
 	EAttribute getOrderAdjustment_IncludeInShipping();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#isIncludeInTax <em>Include In Tax</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getIncludeInTax <em>Include In Tax</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Include In Tax</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#isIncludeInTax()
+	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#getIncludeInTax()
 	 * @see #getOrderAdjustment()
 	 * @generated
 	 */
 	EAttribute getOrderAdjustment_IncludeInTax();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#isIsManual <em>Is Manual</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderAdjustment#getIsManual <em>Is Manual</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Manual</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#isIsManual()
+	 * @see org.abchip.mimo.biz.model.order.order.OrderAdjustment#getIsManual()
 	 * @see #getOrderAdjustment()
 	 * @generated
 	 */
@@ -7480,11 +7480,11 @@ public interface OrderPackage extends EPackage {
 	EReference getOrderHeaderNote_OrderId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderHeaderNote#isInternalNote <em>Internal Note</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderHeaderNote#getInternalNote <em>Internal Note</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Internal Note</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderHeaderNote#isInternalNote()
+	 * @see org.abchip.mimo.biz.model.order.order.OrderHeaderNote#getInternalNote()
 	 * @see #getOrderHeaderNote()
 	 * @generated
 	 */
@@ -7720,33 +7720,33 @@ public interface OrderPackage extends EPackage {
 	EReference getOrderItem_FromInventoryItemId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItem#isIsItemGroupPrimary <em>Is Item Group Primary</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getIsItemGroupPrimary <em>Is Item Group Primary</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Item Group Primary</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#isIsItemGroupPrimary()
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getIsItemGroupPrimary()
 	 * @see #getOrderItem()
 	 * @generated
 	 */
 	EAttribute getOrderItem_IsItemGroupPrimary();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItem#isIsModifiedPrice <em>Is Modified Price</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getIsModifiedPrice <em>Is Modified Price</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Modified Price</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#isIsModifiedPrice()
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getIsModifiedPrice()
 	 * @see #getOrderItem()
 	 * @generated
 	 */
 	EAttribute getOrderItem_IsModifiedPrice();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItem#isIsPromo <em>Is Promo</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItem#getIsPromo <em>Is Promo</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Promo</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#isIsPromo()
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItem#getIsPromo()
 	 * @see #getOrderItem()
 	 * @generated
 	 */
@@ -8919,22 +8919,22 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderItemShipGroup_GiftMessage();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#isIsGift <em>Is Gift</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getIsGift <em>Is Gift</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Is Gift</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#isIsGift()
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getIsGift()
 	 * @see #getOrderItemShipGroup()
 	 * @generated
 	 */
 	EAttribute getOrderItemShipGroup_IsGift();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#isMaySplit <em>May Split</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getMaySplit <em>May Split</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>May Split</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#isMaySplit()
+	 * @see org.abchip.mimo.biz.model.order.order.OrderItemShipGroup#getMaySplit()
 	 * @see #getOrderItemShipGroup()
 	 * @generated
 	 */
@@ -9562,11 +9562,11 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderPaymentPreference_MaxAmount();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#isNeedsNsfRetry <em>Needs Nsf Retry</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getNeedsNsfRetry <em>Needs Nsf Retry</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Needs Nsf Retry</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#isNeedsNsfRetry()
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getNeedsNsfRetry()
 	 * @see #getOrderPaymentPreference()
 	 * @generated
 	 */
@@ -9595,11 +9595,11 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderPaymentPreference_OrderItemSeqId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#isOverflowFlag <em>Overflow Flag</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getOverflowFlag <em>Overflow Flag</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Overflow Flag</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#isOverflowFlag()
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getOverflowFlag()
 	 * @see #getOrderPaymentPreference()
 	 * @generated
 	 */
@@ -9628,11 +9628,11 @@ public interface OrderPackage extends EPackage {
 	EReference getOrderPaymentPreference_PaymentMethodTypeId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#isPresentFlag <em>Present Flag</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getPresentFlag <em>Present Flag</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Present Flag</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#isPresentFlag()
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getPresentFlag()
 	 * @see #getOrderPaymentPreference()
 	 * @generated
 	 */
@@ -9694,11 +9694,11 @@ public interface OrderPackage extends EPackage {
 	EReference getOrderPaymentPreference_StatusId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#isSwipedFlag <em>Swiped Flag</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getSwipedFlag <em>Swiped Flag</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Swiped Flag</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#isSwipedFlag()
+	 * @see org.abchip.mimo.biz.model.order.order.OrderPaymentPreference#getSwipedFlag()
 	 * @see #getOrderPaymentPreference()
 	 * @generated
 	 */

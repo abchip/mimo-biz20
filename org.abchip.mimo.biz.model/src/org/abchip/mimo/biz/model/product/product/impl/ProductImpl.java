@@ -42,10 +42,10 @@ import org.eclipse.emf.ecore.EClass;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductId <em>Product Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getAmountUomTypeId <em>Amount Uom Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#isAutoCreateKeywords <em>Auto Create Keywords</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getAutoCreateKeywords <em>Auto Create Keywords</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getBillOfMaterialLevel <em>Bill Of Material Level</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getBrandName <em>Brand Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#isChargeShipping <em>Charge Shipping</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getChargeShipping <em>Charge Shipping</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getCommunicationEventProducts <em>Communication Event Products</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getConfigId <em>Config Id</em>}</li>
@@ -61,7 +61,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getFixedAmount <em>Fixed Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getHeightUomId <em>Height Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#isInShippingBox <em>In Shipping Box</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#isIncludeInPromotions <em>Include In Promotions</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getIncludeInPromotions <em>Include In Promotions</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getInternalName <em>Internal Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getIntroductionDate <em>Introduction Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getInventoryItemTypeId <em>Inventory Item Type Id</em>}</li>
@@ -74,7 +74,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getLongDescription <em>Long Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getLotIdFilledIn <em>Lot Id Filled In</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getMediumImageUrl <em>Medium Image Url</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#isOrderDecimalQuantity <em>Order Decimal Quantity</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getOrderDecimalQuantity <em>Order Decimal Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getOriginGeoId <em>Origin Geo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getOriginalImageUrl <em>Original Image Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getPiecesIncluded <em>Pieces Included</em>}</li>
@@ -97,14 +97,14 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getQuantityUomId <em>Quantity Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getRatingTypeEnum <em>Rating Type Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getReleaseDate <em>Release Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#isRequireAmount <em>Require Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#isRequireInventory <em>Require Inventory</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getRequireAmount <em>Require Amount</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getRequireInventory <em>Require Inventory</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getRequirementMethodEnumId <em>Requirement Method Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getReserv2ndPPPerc <em>Reserv2nd PP Perc</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getReservMaxPersons <em>Reserv Max Persons</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getReservNthPPPerc <em>Reserv Nth PP Perc</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#isReturnable <em>Returnable</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#isSalesDiscWhenNotAvail <em>Sales Disc When Not Avail</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getReturnable <em>Returnable</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getSalesDiscWhenNotAvail <em>Sales Disc When Not Avail</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getSalesDiscontinuationDate <em>Sales Discontinuation Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getShippingDepth <em>Shipping Depth</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getShippingHeight <em>Shipping Height</em>}</li>
@@ -112,7 +112,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getShippingWidth <em>Shipping Width</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getSmallImageUrl <em>Small Image Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getSupportDiscontinuationDate <em>Support Discontinuation Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#isTaxable <em>Taxable</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getTaxable <em>Taxable</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getVirtualVariantMethodEnum <em>Virtual Variant Method Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getWeightUomId <em>Weight Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getWidthUomId <em>Width Uom Id</em>}</li>
@@ -171,6 +171,26 @@ public class ProductImpl extends BizEntityTypedImpl<ProductType> implements Prod
 	 * @generated
 	 */
 	@Override
+	public Boolean getAutoCreateKeywords() {
+		return (Boolean)eGet(ProductPackage.Literals.PRODUCT__AUTO_CREATE_KEYWORDS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setAutoCreateKeywords(Boolean newAutoCreateKeywords) {
+		eSet(ProductPackage.Literals.PRODUCT__AUTO_CREATE_KEYWORDS, newAutoCreateKeywords);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public long getBillOfMaterialLevel() {
 		return (Long)eGet(ProductPackage.Literals.PRODUCT__BILL_OF_MATERIAL_LEVEL, true);
 	}
@@ -211,7 +231,7 @@ public class ProductImpl extends BizEntityTypedImpl<ProductType> implements Prod
 	 * @generated
 	 */
 	@Override
-	public boolean isChargeShipping() {
+	public Boolean getChargeShipping() {
 		return (Boolean)eGet(ProductPackage.Literals.PRODUCT__CHARGE_SHIPPING, true);
 	}
 
@@ -221,7 +241,7 @@ public class ProductImpl extends BizEntityTypedImpl<ProductType> implements Prod
 	 * @generated
 	 */
 	@Override
-	public void setChargeShipping(boolean newChargeShipping) {
+	public void setChargeShipping(Boolean newChargeShipping) {
 		eSet(ProductPackage.Literals.PRODUCT__CHARGE_SHIPPING, newChargeShipping);
 	}
 
@@ -482,7 +502,7 @@ public class ProductImpl extends BizEntityTypedImpl<ProductType> implements Prod
 	 * @generated
 	 */
 	@Override
-	public boolean isIncludeInPromotions() {
+	public Boolean getIncludeInPromotions() {
 		return (Boolean)eGet(ProductPackage.Literals.PRODUCT__INCLUDE_IN_PROMOTIONS, true);
 	}
 
@@ -492,7 +512,7 @@ public class ProductImpl extends BizEntityTypedImpl<ProductType> implements Prod
 	 * @generated
 	 */
 	@Override
-	public void setIncludeInPromotions(boolean newIncludeInPromotions) {
+	public void setIncludeInPromotions(Boolean newIncludeInPromotions) {
 		eSet(ProductPackage.Literals.PRODUCT__INCLUDE_IN_PROMOTIONS, newIncludeInPromotions);
 	}
 
@@ -742,7 +762,7 @@ public class ProductImpl extends BizEntityTypedImpl<ProductType> implements Prod
 	 * @generated
 	 */
 	@Override
-	public boolean isOrderDecimalQuantity() {
+	public Boolean getOrderDecimalQuantity() {
 		return (Boolean)eGet(ProductPackage.Literals.PRODUCT__ORDER_DECIMAL_QUANTITY, true);
 	}
 
@@ -752,7 +772,7 @@ public class ProductImpl extends BizEntityTypedImpl<ProductType> implements Prod
 	 * @generated
 	 */
 	@Override
-	public void setOrderDecimalQuantity(boolean newOrderDecimalQuantity) {
+	public void setOrderDecimalQuantity(Boolean newOrderDecimalQuantity) {
 		eSet(ProductPackage.Literals.PRODUCT__ORDER_DECIMAL_QUANTITY, newOrderDecimalQuantity);
 	}
 
@@ -1106,7 +1126,7 @@ public class ProductImpl extends BizEntityTypedImpl<ProductType> implements Prod
 	 * @generated
 	 */
 	@Override
-	public boolean isRequireAmount() {
+	public Boolean getRequireAmount() {
 		return (Boolean)eGet(ProductPackage.Literals.PRODUCT__REQUIRE_AMOUNT, true);
 	}
 
@@ -1116,7 +1136,7 @@ public class ProductImpl extends BizEntityTypedImpl<ProductType> implements Prod
 	 * @generated
 	 */
 	@Override
-	public void setRequireAmount(boolean newRequireAmount) {
+	public void setRequireAmount(Boolean newRequireAmount) {
 		eSet(ProductPackage.Literals.PRODUCT__REQUIRE_AMOUNT, newRequireAmount);
 	}
 
@@ -1126,7 +1146,7 @@ public class ProductImpl extends BizEntityTypedImpl<ProductType> implements Prod
 	 * @generated
 	 */
 	@Override
-	public boolean isRequireInventory() {
+	public Boolean getRequireInventory() {
 		return (Boolean)eGet(ProductPackage.Literals.PRODUCT__REQUIRE_INVENTORY, true);
 	}
 
@@ -1136,7 +1156,7 @@ public class ProductImpl extends BizEntityTypedImpl<ProductType> implements Prod
 	 * @generated
 	 */
 	@Override
-	public void setRequireInventory(boolean newRequireInventory) {
+	public void setRequireInventory(Boolean newRequireInventory) {
 		eSet(ProductPackage.Literals.PRODUCT__REQUIRE_INVENTORY, newRequireInventory);
 	}
 
@@ -1226,7 +1246,7 @@ public class ProductImpl extends BizEntityTypedImpl<ProductType> implements Prod
 	 * @generated
 	 */
 	@Override
-	public boolean isReturnable() {
+	public Boolean getReturnable() {
 		return (Boolean)eGet(ProductPackage.Literals.PRODUCT__RETURNABLE, true);
 	}
 
@@ -1236,7 +1256,7 @@ public class ProductImpl extends BizEntityTypedImpl<ProductType> implements Prod
 	 * @generated
 	 */
 	@Override
-	public void setReturnable(boolean newReturnable) {
+	public void setReturnable(Boolean newReturnable) {
 		eSet(ProductPackage.Literals.PRODUCT__RETURNABLE, newReturnable);
 	}
 
@@ -1246,7 +1266,7 @@ public class ProductImpl extends BizEntityTypedImpl<ProductType> implements Prod
 	 * @generated
 	 */
 	@Override
-	public boolean isSalesDiscWhenNotAvail() {
+	public Boolean getSalesDiscWhenNotAvail() {
 		return (Boolean)eGet(ProductPackage.Literals.PRODUCT__SALES_DISC_WHEN_NOT_AVAIL, true);
 	}
 
@@ -1256,7 +1276,7 @@ public class ProductImpl extends BizEntityTypedImpl<ProductType> implements Prod
 	 * @generated
 	 */
 	@Override
-	public void setSalesDiscWhenNotAvail(boolean newSalesDiscWhenNotAvail) {
+	public void setSalesDiscWhenNotAvail(Boolean newSalesDiscWhenNotAvail) {
 		eSet(ProductPackage.Literals.PRODUCT__SALES_DISC_WHEN_NOT_AVAIL, newSalesDiscWhenNotAvail);
 	}
 
@@ -1406,7 +1426,7 @@ public class ProductImpl extends BizEntityTypedImpl<ProductType> implements Prod
 	 * @generated
 	 */
 	@Override
-	public boolean isTaxable() {
+	public Boolean getTaxable() {
 		return (Boolean)eGet(ProductPackage.Literals.PRODUCT__TAXABLE, true);
 	}
 
@@ -1416,7 +1436,7 @@ public class ProductImpl extends BizEntityTypedImpl<ProductType> implements Prod
 	 * @generated
 	 */
 	@Override
-	public void setTaxable(boolean newTaxable) {
+	public void setTaxable(Boolean newTaxable) {
 		eSet(ProductPackage.Literals.PRODUCT__TAXABLE, newTaxable);
 	}
 
@@ -1589,26 +1609,6 @@ public class ProductImpl extends BizEntityTypedImpl<ProductType> implements Prod
 	@Override
 	public void setProductId(String newProductId) {
 		eSet(ProductPackage.Literals.PRODUCT__PRODUCT_ID, newProductId);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean isAutoCreateKeywords() {
-		return (Boolean)eGet(ProductPackage.Literals.PRODUCT__AUTO_CREATE_KEYWORDS, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setAutoCreateKeywords(boolean newAutoCreateKeywords) {
-		eSet(ProductPackage.Literals.PRODUCT__AUTO_CREATE_KEYWORDS, newAutoCreateKeywords);
 	}
 
 } //ProductImpl

@@ -50,9 +50,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemImpl#getEstimatedShipDate <em>Estimated Ship Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemImpl#getExternalId <em>External Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemImpl#getFromInventoryItemId <em>From Inventory Item Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemImpl#isIsItemGroupPrimary <em>Is Item Group Primary</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemImpl#isIsModifiedPrice <em>Is Modified Price</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemImpl#isIsPromo <em>Is Promo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemImpl#getIsItemGroupPrimary <em>Is Item Group Primary</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemImpl#getIsModifiedPrice <em>Is Modified Price</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemImpl#getIsPromo <em>Is Promo</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemImpl#getItemDescription <em>Item Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemImpl#getOrderItemGroupSeqId <em>Order Item Group Seq Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.impl.OrderItemImpl#getOrderItemTypeId <em>Order Item Type Id</em>}</li>
@@ -395,66 +395,6 @@ public class OrderItemImpl extends BizEntityTypedImpl<OrderItemType> implements 
 	 * @generated
 	 */
 	@Override
-	public boolean isIsItemGroupPrimary() {
-		return (Boolean)eGet(OrderPackage.Literals.ORDER_ITEM__IS_ITEM_GROUP_PRIMARY, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setIsItemGroupPrimary(boolean newIsItemGroupPrimary) {
-		eSet(OrderPackage.Literals.ORDER_ITEM__IS_ITEM_GROUP_PRIMARY, newIsItemGroupPrimary);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean isIsModifiedPrice() {
-		return (Boolean)eGet(OrderPackage.Literals.ORDER_ITEM__IS_MODIFIED_PRICE, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setIsModifiedPrice(boolean newIsModifiedPrice) {
-		eSet(OrderPackage.Literals.ORDER_ITEM__IS_MODIFIED_PRICE, newIsModifiedPrice);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean isIsPromo() {
-		return (Boolean)eGet(OrderPackage.Literals.ORDER_ITEM__IS_PROMO, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setIsPromo(boolean newIsPromo) {
-		eSet(OrderPackage.Literals.ORDER_ITEM__IS_PROMO, newIsPromo);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public InventoryItem getFromInventoryItemId() {
 		return (InventoryItem)eGet(OrderPackage.Literals.ORDER_ITEM__FROM_INVENTORY_ITEM_ID, true);
 	}
@@ -467,6 +407,66 @@ public class OrderItemImpl extends BizEntityTypedImpl<OrderItemType> implements 
 	@Override
 	public void setFromInventoryItemId(InventoryItem newFromInventoryItemId) {
 		eSet(OrderPackage.Literals.ORDER_ITEM__FROM_INVENTORY_ITEM_ID, newFromInventoryItemId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Boolean getIsItemGroupPrimary() {
+		return (Boolean)eGet(OrderPackage.Literals.ORDER_ITEM__IS_ITEM_GROUP_PRIMARY, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setIsItemGroupPrimary(Boolean newIsItemGroupPrimary) {
+		eSet(OrderPackage.Literals.ORDER_ITEM__IS_ITEM_GROUP_PRIMARY, newIsItemGroupPrimary);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Boolean getIsModifiedPrice() {
+		return (Boolean)eGet(OrderPackage.Literals.ORDER_ITEM__IS_MODIFIED_PRICE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setIsModifiedPrice(Boolean newIsModifiedPrice) {
+		eSet(OrderPackage.Literals.ORDER_ITEM__IS_MODIFIED_PRICE, newIsModifiedPrice);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Boolean getIsPromo() {
+		return (Boolean)eGet(OrderPackage.Literals.ORDER_ITEM__IS_PROMO, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setIsPromo(Boolean newIsPromo) {
+		eSet(OrderPackage.Literals.ORDER_ITEM__IS_PROMO, newIsPromo);
 	}
 
 	/**

@@ -45,7 +45,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.VisitImpl#getSessionId <em>Session Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.VisitImpl#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.VisitImpl#getUserAgentId <em>User Agent Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.VisitImpl#isUserCreated <em>User Created</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.VisitImpl#getUserCreated <em>User Created</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.VisitImpl#getUserLoginId <em>User Login Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.VisitImpl#getVisitorId <em>Visitor Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.visit.impl.VisitImpl#getWebappName <em>Webapp Name</em>}</li>
@@ -504,26 +504,6 @@ public class VisitImpl extends BizEntityImpl implements Visit {
 	 * @generated
 	 */
 	@Override
-	public boolean isUserCreated() {
-		return (Boolean)eGet(VisitPackage.Literals.VISIT__USER_CREATED, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setUserCreated(boolean newUserCreated) {
-		eSet(VisitPackage.Literals.VISIT__USER_CREATED, newUserCreated);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public UserAgent getUserAgentId() {
 		return (UserAgent)eGet(VisitPackage.Literals.VISIT__USER_AGENT_ID, true);
 	}
@@ -536,6 +516,26 @@ public class VisitImpl extends BizEntityImpl implements Visit {
 	@Override
 	public void setUserAgentId(UserAgent newUserAgentId) {
 		eSet(VisitPackage.Literals.VISIT__USER_AGENT_ID, newUserAgentId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Boolean getUserCreated() {
+		return (Boolean)eGet(VisitPackage.Literals.VISIT__USER_CREATED, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setUserCreated(Boolean newUserCreated) {
+		eSet(VisitPackage.Literals.VISIT__USER_CREATED, newUserCreated);
 	}
 
 	/**

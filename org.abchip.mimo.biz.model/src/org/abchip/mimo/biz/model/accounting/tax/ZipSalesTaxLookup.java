@@ -40,7 +40,7 @@ import org.abchip.mimo.biz.BizEntity;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.ZipSalesTaxLookup#getCountyUseTax <em>County Use Tax</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.ZipSalesTaxLookup#getGeneralDefault <em>General Default</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.ZipSalesTaxLookup#getGeoCode <em>Geo Code</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.ZipSalesTaxLookup#isInsideCity <em>Inside City</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.ZipSalesTaxLookup#getInsideCity <em>Inside City</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.ZipSalesTaxLookup#getStateSalesTax <em>State Sales Tax</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.tax.ZipSalesTaxLookup#getStateUseTax <em>State Use Tax</em>}</li>
  * </ul>
@@ -500,28 +500,24 @@ public interface ZipSalesTaxLookup extends BizEntity {
 	/**
 	 * Returns the value of the '<em><b>Inside City</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Inside City</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Inside City</em>' attribute.
-	 * @see #setInsideCity(boolean)
+	 * @see #setInsideCity(Boolean)
 	 * @see org.abchip.mimo.biz.model.accounting.tax.TaxPackage#getZipSalesTaxLookup_InsideCity()
 	 * @model
 	 * @generated
 	 */
-	boolean isInsideCity();
+	Boolean getInsideCity();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.tax.ZipSalesTaxLookup#isInsideCity <em>Inside City</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.accounting.tax.ZipSalesTaxLookup#getInsideCity <em>Inside City</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Inside City</em>' attribute.
-	 * @see #isInsideCity()
+	 * @see #getInsideCity()
 	 * @generated
 	 */
-	void setInsideCity(boolean value);
+	void setInsideCity(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>State Code</b></em>' attribute.

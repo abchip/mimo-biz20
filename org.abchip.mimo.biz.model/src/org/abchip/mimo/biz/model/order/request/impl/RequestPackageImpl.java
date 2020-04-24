@@ -2396,22 +2396,19 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 		  (getCustRequest_CustRequestName(),
 		   source,
 		   new String[] {
-			   "type", "name",
-			   "length", "100"
+			   "type", "name"
 		   });
 		addAnnotation
 		  (getCustRequest_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getCustRequest_InternalComment(),
 		   source,
 		   new String[] {
-			   "type", "comment",
-			   "length", "255"
+			   "type", "comment"
 		   });
 		addAnnotation
 		  (getCustRequest_LastModifiedByUserLogin(),
@@ -2430,8 +2427,7 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 		  (getCustRequest_Reason(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getCustRequestAttribute_AttrName(),
@@ -2443,8 +2439,7 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 		  (getCustRequestAttribute_AttrDescription(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getCustRequestAttribute_AttrValue(),
@@ -2462,8 +2457,7 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 		  (getCustRequestCategory_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getCustRequestItem_CustRequestItemSeqId(),
@@ -2481,8 +2475,7 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 		  (getCustRequestItem_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getCustRequestItem_MaximumAmount(),
@@ -2566,8 +2559,7 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 		  (getCustRequestResolution_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getCustRequestStatus_CustRequestStatusId(),
@@ -2591,8 +2583,7 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 		  (getCustRequestType_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getCustRequestTypeAttr_AttrName(),
@@ -2604,8 +2595,7 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 		  (getCustRequestTypeAttr_Description(),
 		   source,
 		   new String[] {
-			   "type", "description",
-			   "length", "255"
+			   "type", "description"
 		   });
 		addAnnotation
 		  (getRespondingParty_RespondingPartySeqId(),

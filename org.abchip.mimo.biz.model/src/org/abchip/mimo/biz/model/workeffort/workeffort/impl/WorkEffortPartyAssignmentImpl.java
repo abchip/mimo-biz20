@@ -39,7 +39,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getDelegateReasonEnumId <em>Delegate Reason Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getExpectationEnumId <em>Expectation Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getFacilityId <em>Facility Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#isMustRsvp <em>Must Rsvp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getMustRsvp <em>Must Rsvp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getStatusDateTime <em>Status Date Time</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getStatusId <em>Status Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPartyAssignmentImpl#getThruDate <em>Thru Date</em>}</li>
@@ -138,26 +138,6 @@ public class WorkEffortPartyAssignmentImpl extends BizEntityImpl implements Work
 	 * @generated
 	 */
 	@Override
-	public boolean isMustRsvp() {
-		return (Boolean)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__MUST_RSVP, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setMustRsvp(boolean newMustRsvp) {
-		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__MUST_RSVP, newMustRsvp);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Enumeration getDelegateReasonEnumId() {
 		return (Enumeration)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__DELEGATE_REASON_ENUM_ID, true);
 	}
@@ -210,6 +190,26 @@ public class WorkEffortPartyAssignmentImpl extends BizEntityImpl implements Work
 	@Override
 	public void setFacilityId(Facility newFacilityId) {
 		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__FACILITY_ID, newFacilityId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Boolean getMustRsvp() {
+		return (Boolean)eGet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__MUST_RSVP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setMustRsvp(Boolean newMustRsvp) {
+		eSet(WorkeffortPackage.Literals.WORK_EFFORT_PARTY_ASSIGNMENT__MUST_RSVP, newMustRsvp);
 	}
 
 	/**

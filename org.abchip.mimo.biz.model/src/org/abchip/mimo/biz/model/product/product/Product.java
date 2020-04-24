@@ -35,10 +35,10 @@ import org.abchip.mimo.biz.model.shipment.shipment.ShipmentBoxType;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductId <em>Product Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getAmountUomTypeId <em>Amount Uom Type Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#isAutoCreateKeywords <em>Auto Create Keywords</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getAutoCreateKeywords <em>Auto Create Keywords</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getBillOfMaterialLevel <em>Bill Of Material Level</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getBrandName <em>Brand Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#isChargeShipping <em>Charge Shipping</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getChargeShipping <em>Charge Shipping</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getCommunicationEventProducts <em>Communication Event Products</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getConfigId <em>Config Id</em>}</li>
@@ -54,7 +54,7 @@ import org.abchip.mimo.biz.model.shipment.shipment.ShipmentBoxType;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getFixedAmount <em>Fixed Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getHeightUomId <em>Height Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#isInShippingBox <em>In Shipping Box</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#isIncludeInPromotions <em>Include In Promotions</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getIncludeInPromotions <em>Include In Promotions</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getInternalName <em>Internal Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getIntroductionDate <em>Introduction Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getInventoryItemTypeId <em>Inventory Item Type Id</em>}</li>
@@ -67,7 +67,7 @@ import org.abchip.mimo.biz.model.shipment.shipment.ShipmentBoxType;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getLongDescription <em>Long Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getLotIdFilledIn <em>Lot Id Filled In</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getMediumImageUrl <em>Medium Image Url</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#isOrderDecimalQuantity <em>Order Decimal Quantity</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getOrderDecimalQuantity <em>Order Decimal Quantity</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getOriginGeoId <em>Origin Geo Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getOriginalImageUrl <em>Original Image Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getPiecesIncluded <em>Pieces Included</em>}</li>
@@ -90,14 +90,14 @@ import org.abchip.mimo.biz.model.shipment.shipment.ShipmentBoxType;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getQuantityUomId <em>Quantity Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getRatingTypeEnum <em>Rating Type Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getReleaseDate <em>Release Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#isRequireAmount <em>Require Amount</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#isRequireInventory <em>Require Inventory</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getRequireAmount <em>Require Amount</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getRequireInventory <em>Require Inventory</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getRequirementMethodEnumId <em>Requirement Method Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getReserv2ndPPPerc <em>Reserv2nd PP Perc</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getReservMaxPersons <em>Reserv Max Persons</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getReservNthPPPerc <em>Reserv Nth PP Perc</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#isReturnable <em>Returnable</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#isSalesDiscWhenNotAvail <em>Sales Disc When Not Avail</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getReturnable <em>Returnable</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getSalesDiscWhenNotAvail <em>Sales Disc When Not Avail</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getSalesDiscontinuationDate <em>Sales Discontinuation Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getShippingDepth <em>Shipping Depth</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getShippingHeight <em>Shipping Height</em>}</li>
@@ -105,7 +105,7 @@ import org.abchip.mimo.biz.model.shipment.shipment.ShipmentBoxType;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getShippingWidth <em>Shipping Width</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getSmallImageUrl <em>Small Image Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getSupportDiscontinuationDate <em>Support Discontinuation Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#isTaxable <em>Taxable</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getTaxable <em>Taxable</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getVirtualVariantMethodEnum <em>Virtual Variant Method Enum</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getWeightUomId <em>Weight Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getWidthUomId <em>Width Uom Id</em>}</li>
@@ -141,6 +141,28 @@ public interface Product extends BizEntityTyped<ProductType> {
 	 * @generated
 	 */
 	void setAmountUomTypeId(UomType value);
+
+	/**
+	 * Returns the value of the '<em><b>Auto Create Keywords</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Auto Create Keywords</em>' attribute.
+	 * @see #setAutoCreateKeywords(Boolean)
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_AutoCreateKeywords()
+	 * @model
+	 * @generated
+	 */
+	Boolean getAutoCreateKeywords();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getAutoCreateKeywords <em>Auto Create Keywords</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Auto Create Keywords</em>' attribute.
+	 * @see #getAutoCreateKeywords()
+	 * @generated
+	 */
+	void setAutoCreateKeywords(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Bill Of Material Level</b></em>' attribute.
@@ -179,7 +201,7 @@ public interface Product extends BizEntityTyped<ProductType> {
 	 * @return the value of the '<em>Brand Name</em>' attribute.
 	 * @see #setBrandName(String)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_BrandName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getBrandName();
@@ -197,28 +219,24 @@ public interface Product extends BizEntityTyped<ProductType> {
 	/**
 	 * Returns the value of the '<em><b>Charge Shipping</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Charge Shipping</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Charge Shipping</em>' attribute.
-	 * @see #setChargeShipping(boolean)
+	 * @see #setChargeShipping(Boolean)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ChargeShipping()
 	 * @model
 	 * @generated
 	 */
-	boolean isChargeShipping();
+	Boolean getChargeShipping();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#isChargeShipping <em>Charge Shipping</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getChargeShipping <em>Charge Shipping</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Charge Shipping</em>' attribute.
-	 * @see #isChargeShipping()
+	 * @see #getChargeShipping()
 	 * @generated
 	 */
-	void setChargeShipping(boolean value);
+	void setChargeShipping(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
@@ -231,7 +249,7 @@ public interface Product extends BizEntityTyped<ProductType> {
 	 * @return the value of the '<em>Comments</em>' attribute.
 	 * @see #setComments(String)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_Comments()
-	 * @model annotation="mimo-ent-format type='comment' length='255'"
+	 * @model annotation="mimo-ent-format type='comment'"
 	 * @generated
 	 */
 	String getComments();
@@ -404,7 +422,7 @@ public interface Product extends BizEntityTyped<ProductType> {
 	 * @return the value of the '<em>Description</em>' attribute.
 	 * @see #setDescription(String)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_Description()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getDescription();
@@ -430,7 +448,7 @@ public interface Product extends BizEntityTyped<ProductType> {
 	 * @return the value of the '<em>Detail Image Url</em>' attribute.
 	 * @see #setDetailImageUrl(String)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_DetailImageUrl()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getDetailImageUrl();
@@ -553,28 +571,24 @@ public interface Product extends BizEntityTyped<ProductType> {
 	/**
 	 * Returns the value of the '<em><b>Include In Promotions</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Include In Promotions</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Include In Promotions</em>' attribute.
-	 * @see #setIncludeInPromotions(boolean)
+	 * @see #setIncludeInPromotions(Boolean)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_IncludeInPromotions()
 	 * @model
 	 * @generated
 	 */
-	boolean isIncludeInPromotions();
+	Boolean getIncludeInPromotions();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#isIncludeInPromotions <em>Include In Promotions</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getIncludeInPromotions <em>Include In Promotions</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Include In Promotions</em>' attribute.
-	 * @see #isIncludeInPromotions()
+	 * @see #getIncludeInPromotions()
 	 * @generated
 	 */
-	void setIncludeInPromotions(boolean value);
+	void setIncludeInPromotions(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Height Uom Id</b></em>' reference.
@@ -613,7 +627,7 @@ public interface Product extends BizEntityTyped<ProductType> {
 	 * @return the value of the '<em>Internal Name</em>' attribute.
 	 * @see #setInternalName(String)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_InternalName()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getInternalName();
@@ -665,7 +679,7 @@ public interface Product extends BizEntityTyped<ProductType> {
 	 * @return the value of the '<em>Inventory Message</em>' attribute.
 	 * @see #setInventoryMessage(String)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_InventoryMessage()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getInventoryMessage();
@@ -743,7 +757,7 @@ public interface Product extends BizEntityTyped<ProductType> {
 	 * @return the value of the '<em>Large Image Url</em>' attribute.
 	 * @see #setLargeImageUrl(String)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_LargeImageUrl()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getLargeImageUrl();
@@ -874,7 +888,7 @@ public interface Product extends BizEntityTyped<ProductType> {
 	 * @return the value of the '<em>Medium Image Url</em>' attribute.
 	 * @see #setMediumImageUrl(String)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_MediumImageUrl()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getMediumImageUrl();
@@ -892,28 +906,24 @@ public interface Product extends BizEntityTyped<ProductType> {
 	/**
 	 * Returns the value of the '<em><b>Order Decimal Quantity</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Order Decimal Quantity</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Order Decimal Quantity</em>' attribute.
-	 * @see #setOrderDecimalQuantity(boolean)
+	 * @see #setOrderDecimalQuantity(Boolean)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_OrderDecimalQuantity()
 	 * @model annotation="mimo-ent-slot help='use to indicate if decimal quantity can be ordered for this product. Default value is Y'"
 	 * @generated
 	 */
-	boolean isOrderDecimalQuantity();
+	Boolean getOrderDecimalQuantity();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#isOrderDecimalQuantity <em>Order Decimal Quantity</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getOrderDecimalQuantity <em>Order Decimal Quantity</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Order Decimal Quantity</em>' attribute.
-	 * @see #isOrderDecimalQuantity()
+	 * @see #getOrderDecimalQuantity()
 	 * @generated
 	 */
-	void setOrderDecimalQuantity(boolean value);
+	void setOrderDecimalQuantity(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Origin Geo Id</b></em>' reference.
@@ -952,7 +962,7 @@ public interface Product extends BizEntityTyped<ProductType> {
 	 * @return the value of the '<em>Original Image Url</em>' attribute.
 	 * @see #setOriginalImageUrl(String)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_OriginalImageUrl()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getOriginalImageUrl();
@@ -1004,7 +1014,7 @@ public interface Product extends BizEntityTyped<ProductType> {
 	 * @return the value of the '<em>Price Detail Text</em>' attribute.
 	 * @see #setPriceDetailText(String)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_PriceDetailText()
-	 * @model annotation="mimo-ent-format type='description' length='255'"
+	 * @model annotation="mimo-ent-format type='description'"
 	 * @generated
 	 */
 	String getPriceDetailText();
@@ -1172,7 +1182,7 @@ public interface Product extends BizEntityTyped<ProductType> {
 	 * @return the value of the '<em>Product Name</em>' attribute.
 	 * @see #setProductName(String)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductName()
-	 * @model annotation="mimo-ent-format type='name' length='100'"
+	 * @model annotation="mimo-ent-format type='name'"
 	 * @generated
 	 */
 	String getProductName();
@@ -1373,54 +1383,46 @@ public interface Product extends BizEntityTyped<ProductType> {
 	/**
 	 * Returns the value of the '<em><b>Require Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Require Amount</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Require Amount</em>' attribute.
-	 * @see #setRequireAmount(boolean)
+	 * @see #setRequireAmount(Boolean)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_RequireAmount()
 	 * @model
 	 * @generated
 	 */
-	boolean isRequireAmount();
+	Boolean getRequireAmount();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#isRequireAmount <em>Require Amount</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getRequireAmount <em>Require Amount</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Require Amount</em>' attribute.
-	 * @see #isRequireAmount()
+	 * @see #getRequireAmount()
 	 * @generated
 	 */
-	void setRequireAmount(boolean value);
+	void setRequireAmount(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Require Inventory</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Require Inventory</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Require Inventory</em>' attribute.
-	 * @see #setRequireInventory(boolean)
+	 * @see #setRequireInventory(Boolean)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_RequireInventory()
 	 * @model
 	 * @generated
 	 */
-	boolean isRequireInventory();
+	Boolean getRequireInventory();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#isRequireInventory <em>Require Inventory</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getRequireInventory <em>Require Inventory</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Require Inventory</em>' attribute.
-	 * @see #isRequireInventory()
+	 * @see #getRequireInventory()
 	 * @generated
 	 */
-	void setRequireInventory(boolean value);
+	void setRequireInventory(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Requirement Method Enum Id</b></em>' reference.
@@ -1532,54 +1534,46 @@ public interface Product extends BizEntityTyped<ProductType> {
 	/**
 	 * Returns the value of the '<em><b>Returnable</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Returnable</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Returnable</em>' attribute.
-	 * @see #setReturnable(boolean)
+	 * @see #setReturnable(Boolean)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_Returnable()
 	 * @model
 	 * @generated
 	 */
-	boolean isReturnable();
+	Boolean getReturnable();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#isReturnable <em>Returnable</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getReturnable <em>Returnable</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Returnable</em>' attribute.
-	 * @see #isReturnable()
+	 * @see #getReturnable()
 	 * @generated
 	 */
-	void setReturnable(boolean value);
+	void setReturnable(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Sales Disc When Not Avail</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Sales Disc When Not Avail</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Sales Disc When Not Avail</em>' attribute.
-	 * @see #setSalesDiscWhenNotAvail(boolean)
+	 * @see #setSalesDiscWhenNotAvail(Boolean)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_SalesDiscWhenNotAvail()
 	 * @model
 	 * @generated
 	 */
-	boolean isSalesDiscWhenNotAvail();
+	Boolean getSalesDiscWhenNotAvail();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#isSalesDiscWhenNotAvail <em>Sales Disc When Not Avail</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getSalesDiscWhenNotAvail <em>Sales Disc When Not Avail</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Sales Disc When Not Avail</em>' attribute.
-	 * @see #isSalesDiscWhenNotAvail()
+	 * @see #getSalesDiscWhenNotAvail()
 	 * @generated
 	 */
-	void setSalesDiscWhenNotAvail(boolean value);
+	void setSalesDiscWhenNotAvail(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Sales Discontinuation Date</b></em>' attribute.
@@ -1723,7 +1717,7 @@ public interface Product extends BizEntityTyped<ProductType> {
 	 * @return the value of the '<em>Small Image Url</em>' attribute.
 	 * @see #setSmallImageUrl(String)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_SmallImageUrl()
-	 * @model annotation="mimo-ent-format type='url' length='2000'"
+	 * @model annotation="mimo-ent-format type='url'"
 	 * @generated
 	 */
 	String getSmallImageUrl();
@@ -1767,28 +1761,24 @@ public interface Product extends BizEntityTyped<ProductType> {
 	/**
 	 * Returns the value of the '<em><b>Taxable</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Taxable</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Taxable</em>' attribute.
-	 * @see #setTaxable(boolean)
+	 * @see #setTaxable(Boolean)
 	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_Taxable()
 	 * @model
 	 * @generated
 	 */
-	boolean isTaxable();
+	Boolean getTaxable();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#isTaxable <em>Taxable</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#getTaxable <em>Taxable</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Taxable</em>' attribute.
-	 * @see #isTaxable()
+	 * @see #getTaxable()
 	 * @generated
 	 */
-	void setTaxable(boolean value);
+	void setTaxable(Boolean value);
 
 	/**
 	 * Returns the value of the '<em><b>Virtual Variant Method Enum</b></em>' reference.
@@ -2016,31 +2006,5 @@ public interface Product extends BizEntityTyped<ProductType> {
 	 * @generated
 	 */
 	void setProductId(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Auto Create Keywords</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Auto Create Keywords</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Auto Create Keywords</em>' attribute.
-	 * @see #setAutoCreateKeywords(boolean)
-	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_AutoCreateKeywords()
-	 * @model
-	 * @generated
-	 */
-	boolean isAutoCreateKeywords();
-
-	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.product.product.Product#isAutoCreateKeywords <em>Auto Create Keywords</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Auto Create Keywords</em>' attribute.
-	 * @see #isAutoCreateKeywords()
-	 * @generated
-	 */
-	void setAutoCreateKeywords(boolean value);
 
 } // Product

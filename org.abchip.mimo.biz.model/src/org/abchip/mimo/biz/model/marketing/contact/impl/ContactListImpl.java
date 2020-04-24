@@ -32,12 +32,12 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getContactMechTypeId <em>Contact Mech Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#isIsPublic <em>Is Public</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getIsPublic <em>Is Public</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getMarketingCampaignId <em>Marketing Campaign Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getOptOutScreen <em>Opt Out Screen</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getOwnerPartyId <em>Owner Party Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#isSingleUse <em>Single Use</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getSingleUse <em>Single Use</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getVerifyEmailFrom <em>Verify Email From</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getVerifyEmailScreen <em>Verify Email Screen</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getVerifyEmailSubject <em>Verify Email Subject</em>}</li>
@@ -217,7 +217,7 @@ public class ContactListImpl extends BizEntityImpl implements ContactList {
 	 * @generated
 	 */
 	@Override
-	public boolean isIsPublic() {
+	public Boolean getIsPublic() {
 		return (Boolean)eGet(ContactPackage.Literals.CONTACT_LIST__IS_PUBLIC, true);
 	}
 
@@ -227,7 +227,7 @@ public class ContactListImpl extends BizEntityImpl implements ContactList {
 	 * @generated
 	 */
 	@Override
-	public void setIsPublic(boolean newIsPublic) {
+	public void setIsPublic(Boolean newIsPublic) {
 		eSet(ContactPackage.Literals.CONTACT_LIST__IS_PUBLIC, newIsPublic);
 	}
 
@@ -297,26 +297,6 @@ public class ContactListImpl extends BizEntityImpl implements ContactList {
 	 * @generated
 	 */
 	@Override
-	public boolean isSingleUse() {
-		return (Boolean)eGet(ContactPackage.Literals.CONTACT_LIST__SINGLE_USE, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setSingleUse(boolean newSingleUse) {
-		eSet(ContactPackage.Literals.CONTACT_LIST__SINGLE_USE, newSingleUse);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public Party getOwnerPartyId() {
 		return (Party)eGet(ContactPackage.Literals.CONTACT_LIST__OWNER_PARTY_ID, true);
 	}
@@ -329,6 +309,26 @@ public class ContactListImpl extends BizEntityImpl implements ContactList {
 	@Override
 	public void setOwnerPartyId(Party newOwnerPartyId) {
 		eSet(ContactPackage.Literals.CONTACT_LIST__OWNER_PARTY_ID, newOwnerPartyId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Boolean getSingleUse() {
+		return (Boolean)eGet(ContactPackage.Literals.CONTACT_LIST__SINGLE_USE, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setSingleUse(Boolean newSingleUse) {
+		eSet(ContactPackage.Literals.CONTACT_LIST__SINGLE_USE, newSingleUse);
 	}
 
 	/**

@@ -64,6 +64,7 @@ public class FacilityFactoryImpl extends EFactoryImpl implements FacilityFactory
 			case FacilityPackage.CONTAINER_GEO_POINT: return (EObject)createContainerGeoPoint();
 			case FacilityPackage.CONTAINER_TYPE: return (EObject)createContainerType();
 			case FacilityPackage.FACILITY: return (EObject)createFacility();
+			case FacilityPackage.FACILITY_ASSOC_TYPE: return (EObject)createFacilityAssocType();
 			case FacilityPackage.FACILITY_ATTRIBUTE: return (EObject)createFacilityAttribute();
 			case FacilityPackage.FACILITY_CALENDAR: return (EObject)createFacilityCalendar();
 			case FacilityPackage.FACILITY_CALENDAR_TYPE: return (EObject)createFacilityCalendarType();
@@ -82,6 +83,7 @@ public class FacilityFactoryImpl extends EFactoryImpl implements FacilityFactory
 			case FacilityPackage.FACILITY_TYPE: return (EObject)createFacilityType();
 			case FacilityPackage.FACILITY_TYPE_ATTR: return (EObject)createFacilityTypeAttr();
 			case FacilityPackage.PRODUCT_FACILITY: return (EObject)createProductFacility();
+			case FacilityPackage.PRODUCT_FACILITY_ASSOC: return (EObject)createProductFacilityAssoc();
 			case FacilityPackage.PRODUCT_FACILITY_LOCATION: return (EObject)createProductFacilityLocation();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
@@ -130,6 +132,17 @@ public class FacilityFactoryImpl extends EFactoryImpl implements FacilityFactory
 	public Facility createFacility() {
 		FacilityImpl facility = new FacilityImpl();
 		return facility;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public FacilityAssocType createFacilityAssocType() {
+		FacilityAssocTypeImpl facilityAssocType = new FacilityAssocTypeImpl();
+		return facilityAssocType;
 	}
 
 	/**
@@ -328,6 +341,17 @@ public class FacilityFactoryImpl extends EFactoryImpl implements FacilityFactory
 	public ProductFacility createProductFacility() {
 		ProductFacilityImpl productFacility = new ProductFacilityImpl();
 		return productFacility;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ProductFacilityAssoc createProductFacilityAssoc() {
+		ProductFacilityAssocImpl productFacilityAssoc = new ProductFacilityAssocImpl();
+		return productFacilityAssoc;
 	}
 
 	/**

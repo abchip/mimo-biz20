@@ -43,10 +43,10 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getPaymentMethodTypeId <em>Payment Method Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getPaymentServiceTypeEnumId <em>Payment Service Type Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getReferenceNum <em>Reference Num</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#isResultBadCardNumber <em>Result Bad Card Number</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#isResultBadExpire <em>Result Bad Expire</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#isResultDeclined <em>Result Declined</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#isResultNsf <em>Result Nsf</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getResultBadCardNumber <em>Result Bad Card Number</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getResultBadExpire <em>Result Bad Expire</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getResultDeclined <em>Result Declined</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getResultNsf <em>Result Nsf</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getSubReference <em>Sub Reference</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getTransCodeEnumId <em>Trans Code Enum Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewayResponseImpl#getTransactionDate <em>Transaction Date</em>}</li>
@@ -324,7 +324,7 @@ public class PaymentGatewayResponseImpl extends BizEntityImpl implements Payment
 	 * @generated
 	 */
 	@Override
-	public boolean isResultBadCardNumber() {
+	public Boolean getResultBadCardNumber() {
 		return (Boolean)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__RESULT_BAD_CARD_NUMBER, true);
 	}
 
@@ -334,7 +334,7 @@ public class PaymentGatewayResponseImpl extends BizEntityImpl implements Payment
 	 * @generated
 	 */
 	@Override
-	public void setResultBadCardNumber(boolean newResultBadCardNumber) {
+	public void setResultBadCardNumber(Boolean newResultBadCardNumber) {
 		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__RESULT_BAD_CARD_NUMBER, newResultBadCardNumber);
 	}
 
@@ -344,7 +344,7 @@ public class PaymentGatewayResponseImpl extends BizEntityImpl implements Payment
 	 * @generated
 	 */
 	@Override
-	public boolean isResultBadExpire() {
+	public Boolean getResultBadExpire() {
 		return (Boolean)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__RESULT_BAD_EXPIRE, true);
 	}
 
@@ -354,7 +354,7 @@ public class PaymentGatewayResponseImpl extends BizEntityImpl implements Payment
 	 * @generated
 	 */
 	@Override
-	public void setResultBadExpire(boolean newResultBadExpire) {
+	public void setResultBadExpire(Boolean newResultBadExpire) {
 		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__RESULT_BAD_EXPIRE, newResultBadExpire);
 	}
 
@@ -364,7 +364,7 @@ public class PaymentGatewayResponseImpl extends BizEntityImpl implements Payment
 	 * @generated
 	 */
 	@Override
-	public boolean isResultDeclined() {
+	public Boolean getResultDeclined() {
 		return (Boolean)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__RESULT_DECLINED, true);
 	}
 
@@ -374,7 +374,7 @@ public class PaymentGatewayResponseImpl extends BizEntityImpl implements Payment
 	 * @generated
 	 */
 	@Override
-	public void setResultDeclined(boolean newResultDeclined) {
+	public void setResultDeclined(Boolean newResultDeclined) {
 		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__RESULT_DECLINED, newResultDeclined);
 	}
 
@@ -384,7 +384,7 @@ public class PaymentGatewayResponseImpl extends BizEntityImpl implements Payment
 	 * @generated
 	 */
 	@Override
-	public boolean isResultNsf() {
+	public Boolean getResultNsf() {
 		return (Boolean)eGet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__RESULT_NSF, true);
 	}
 
@@ -394,7 +394,7 @@ public class PaymentGatewayResponseImpl extends BizEntityImpl implements Payment
 	 * @generated
 	 */
 	@Override
-	public void setResultNsf(boolean newResultNsf) {
+	public void setResultNsf(Boolean newResultNsf) {
 		eSet(PaymentPackage.Literals.PAYMENT_GATEWAY_RESPONSE__RESULT_NSF, newResultNsf);
 	}
 
