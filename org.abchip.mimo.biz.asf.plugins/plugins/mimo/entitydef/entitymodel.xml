@@ -26,6 +26,41 @@
 		<field name="sequencePolicy" type="value"></field>
 	</extend-entity>
 
+	<!-- Test file for write -->
+	<entity entity-name="TestEntity"
+		package-name="org.apache.ofbiz.entity.test"
+		title="Test file for write">
+		<field name="fieldId" type="id"/>
+	    <field name="fieldBlob" type="blob"/>
+	    <field name="fieldByteArray" type="byte-array"/>
+	    <field name="fieldObject" type="object"/>
+	    <field name="fieldDateTime" type="date-time"/>
+	    <field name="fieldDate" type="date"/>
+	    <field name="fieldTime" type="time"/>
+	    <field name="fieldCurrencyAmount" type="currency-amount"/>
+	    <field name="fieldCurrencyPrecise" type="currency-precise"/>
+	    <field name="fieldFixedPoint" type="fixed-point"/>
+	    <field name="fieldFloatingPoint" type="floating-point"/>
+	    <field name="fieldNumeric" type="numeric"/>
+	    <field name="fieldIdLong" type="id-long"/>
+	    <field name="fieldIdVlong" type="id-vlong"/>
+	    <field name="fieldIndicator" type="indicator"/>
+	    <field name="fieldVeryShort" type="very-short"/>
+	    <field name="fieldShortVarchar" type="short-varchar"/>
+	    <field name="fieldLongVarchar" type="long-varchar"/>
+	    <field name="fieldVeryLong" type="very-long"/>
+	    <field name="fieldComment" type="comment"/>
+	    <field name="fieldDescription" type="description"/>
+	    <field name="fieldName" type="name"/>
+	    <field name="fieldValue" type="value"/>
+	    <field name="fieldCreditCardNumber" type="credit-card-number"/>
+	    <field name="fieldCreditCardDate" type="credit-card-date"/>
+	    <field name="fieldEmail" type="email"/>
+	    <field name="fieldUrl" type="url"/>
+	    <field name="fieldTelNumber" type="tel-number"/>
+		<prim-key field="fieldId" />
+	</entity>
+
 <!-- 
 	<entity entity-name="EntitiesDescription"
 		package-name="org.abchip.mimo.biz.plugins.entity"
