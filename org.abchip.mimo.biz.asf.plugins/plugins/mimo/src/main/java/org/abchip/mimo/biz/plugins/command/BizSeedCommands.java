@@ -115,10 +115,6 @@ public class BizSeedCommands extends BaseCommands {
 		while (listEntityIt.hasNext()) {
 			GenericValue genericValue = listEntityIt.next();
 
-			// TODO verifiy
-			if (genericValue.getEntityName().startsWith("Budget"))
-				continue;
-			
 			EntityIdentifiable entityIdentifiable = null;
 			try {
 				entityIdentifiable = EntityUtils.toEntity((Frame<EntityIdentifiable>) resourceManager.getFrame(context, genericValue.getEntityName()), genericValue);

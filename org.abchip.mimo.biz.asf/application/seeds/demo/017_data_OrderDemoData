@@ -7878,7 +7878,7 @@
     <reconcileStatusId href="StatusItem#AES_NOT_RECONCILED"/>
     <roleTypeId href="RoleType#BILL_FROM_VENDOR"/>
   </contents>
-  <contents xsi:type="biz-inventory:InventoryItem" inventoryItemId="9025" datetimeReceived="2009-08-13T17:47:31.095+0200" locationSeqId="TLTLTLLL01" unitCost="24.000000">
+  <contents xsi:type="biz-inventory:InventoryItem" inventoryItemId="9025" availableToPromiseTotal="2.000000" datetimeReceived="2009-08-13T17:47:31.095+0200" locationSeqId="TLTLTLLL01" quantityOnHandTotal="2.000000" unitCost="24.000000">
     <currencyUomId href="Uom#USD"/>
     <facilityId href="Facility#WebStoreWarehouse"/>
     <inventoryItemTypeId href="InventoryItemType#NON_SERIAL_INV_ITEM"/>

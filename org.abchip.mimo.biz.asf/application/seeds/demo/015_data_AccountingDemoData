@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-agreement="http://www.abchip.org/mimo/biz/model/party/agreement" xmlns:biz-category="http://www.abchip.org/mimo/biz/model/product/category" xmlns:biz-contact="http://www.abchip.org/mimo/biz/model/party/contact" xmlns:biz-cost="http://www.abchip.org/mimo/biz/model/product/cost" xmlns:biz-facility="http://www.abchip.org/mimo/biz/model/product/facility" xmlns:biz-finaccount="http://www.abchip.org/mimo/biz/model/accounting/finaccount" xmlns:biz-fixedasset="http://www.abchip.org/mimo/biz/model/accounting/fixedasset" xmlns:biz-inventory="http://www.abchip.org/mimo/biz/model/product/inventory" xmlns:biz-invoice="http://www.abchip.org/mimo/biz/model/accounting/invoice" xmlns:biz-ledger="http://www.abchip.org/mimo/biz/model/accounting/ledger" xmlns:biz-login="http://www.abchip.org/mimo/biz/model/security/login" xmlns:biz-party="http://www.abchip.org/mimo/biz/model/party/party" xmlns:biz-payment="http://www.abchip.org/mimo/biz/model/accounting/payment" xmlns:biz-period="http://www.abchip.org/mimo/biz/model/common/period" xmlns:biz-price="http://www.abchip.org/mimo/biz/model/product/price" xmlns:biz-product="http://www.abchip.org/mimo/biz/model/product/product" xmlns:biz-rate="http://www.abchip.org/mimo/biz/model/accounting/rate" xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/model/security/securitygroup" xmlns:biz-supplier="http://www.abchip.org/mimo/biz/model/product/supplier" xmlns:biz-tax="http://www.abchip.org/mimo/biz/model/accounting/tax" xmlns:biz-uom="http://www.abchip.org/mimo/biz/model/common/uom" xmlns:biz-workeffort="http://www.abchip.org/mimo/biz/model/workeffort/workeffort" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/party/agreement http://www.abchip.org/mimo/biz/model/party#//agreement http://www.abchip.org/mimo/biz/model/party/contact http://www.abchip.org/mimo/biz/model/party#//contact http://www.abchip.org/mimo/biz/model/accounting/finaccount http://www.abchip.org/mimo/biz/model/accounting#//finaccount http://www.abchip.org/mimo/biz/model/accounting/fixedasset http://www.abchip.org/mimo/biz/model/accounting#//fixedasset http://www.abchip.org/mimo/biz/model/accounting/invoice http://www.abchip.org/mimo/biz/model/accounting#//invoice http://www.abchip.org/mimo/biz/model/accounting/ledger http://www.abchip.org/mimo/biz/model/accounting#//ledger http://www.abchip.org/mimo/biz/model/party/party http://www.abchip.org/mimo/biz/model/party#//party http://www.abchip.org/mimo/biz/model/accounting/payment http://www.abchip.org/mimo/biz/model/accounting#//payment http://www.abchip.org/mimo/biz/model/common/period http://www.abchip.org/mimo/biz/model/common#//period http://www.abchip.org/mimo/biz/model/accounting/rate http://www.abchip.org/mimo/biz/model/accounting#//rate http://www.abchip.org/mimo/biz/model/accounting/tax http://www.abchip.org/mimo/biz/model/accounting#//tax http://www.abchip.org/mimo/biz/model/common/uom http://www.abchip.org/mimo/biz/model/common#//uom http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="015_data_AccountingDemoData">
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-agreement="http://www.abchip.org/mimo/biz/model/party/agreement" xmlns:biz-budget="http://www.abchip.org/mimo/biz/model/accounting/budget" xmlns:biz-category="http://www.abchip.org/mimo/biz/model/product/category" xmlns:biz-contact="http://www.abchip.org/mimo/biz/model/party/contact" xmlns:biz-cost="http://www.abchip.org/mimo/biz/model/product/cost" xmlns:biz-facility="http://www.abchip.org/mimo/biz/model/product/facility" xmlns:biz-finaccount="http://www.abchip.org/mimo/biz/model/accounting/finaccount" xmlns:biz-fixedasset="http://www.abchip.org/mimo/biz/model/accounting/fixedasset" xmlns:biz-inventory="http://www.abchip.org/mimo/biz/model/product/inventory" xmlns:biz-invoice="http://www.abchip.org/mimo/biz/model/accounting/invoice" xmlns:biz-ledger="http://www.abchip.org/mimo/biz/model/accounting/ledger" xmlns:biz-login="http://www.abchip.org/mimo/biz/model/security/login" xmlns:biz-party="http://www.abchip.org/mimo/biz/model/party/party" xmlns:biz-payment="http://www.abchip.org/mimo/biz/model/accounting/payment" xmlns:biz-period="http://www.abchip.org/mimo/biz/model/common/period" xmlns:biz-price="http://www.abchip.org/mimo/biz/model/product/price" xmlns:biz-product="http://www.abchip.org/mimo/biz/model/product/product" xmlns:biz-rate="http://www.abchip.org/mimo/biz/model/accounting/rate" xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/model/security/securitygroup" xmlns:biz-supplier="http://www.abchip.org/mimo/biz/model/product/supplier" xmlns:biz-tax="http://www.abchip.org/mimo/biz/model/accounting/tax" xmlns:biz-uom="http://www.abchip.org/mimo/biz/model/common/uom" xmlns:biz-workeffort="http://www.abchip.org/mimo/biz/model/workeffort/workeffort" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/party/agreement http://www.abchip.org/mimo/biz/model/party#//agreement http://www.abchip.org/mimo/biz/model/accounting/budget http://www.abchip.org/mimo/biz/model/accounting#//budget http://www.abchip.org/mimo/biz/model/party/contact http://www.abchip.org/mimo/biz/model/party#//contact http://www.abchip.org/mimo/biz/model/accounting/finaccount http://www.abchip.org/mimo/biz/model/accounting#//finaccount http://www.abchip.org/mimo/biz/model/accounting/fixedasset http://www.abchip.org/mimo/biz/model/accounting#//fixedasset http://www.abchip.org/mimo/biz/model/accounting/invoice http://www.abchip.org/mimo/biz/model/accounting#//invoice http://www.abchip.org/mimo/biz/model/accounting/ledger http://www.abchip.org/mimo/biz/model/accounting#//ledger http://www.abchip.org/mimo/biz/model/party/party http://www.abchip.org/mimo/biz/model/party#//party http://www.abchip.org/mimo/biz/model/accounting/payment http://www.abchip.org/mimo/biz/model/accounting#//payment http://www.abchip.org/mimo/biz/model/common/period http://www.abchip.org/mimo/biz/model/common#//period http://www.abchip.org/mimo/biz/model/accounting/rate http://www.abchip.org/mimo/biz/model/accounting#//rate http://www.abchip.org/mimo/biz/model/accounting/tax http://www.abchip.org/mimo/biz/model/accounting#//tax http://www.abchip.org/mimo/biz/model/common/uom http://www.abchip.org/mimo/biz/model/common#//uom http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="015_data_AccountingDemoData">
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
     <groupId href="SecurityGroup#FLEXADMIN"/>
     <permissionId href="SecurityPermission#PAYPROC_CREATE"/>
@@ -7576,6 +7576,93 @@
     <productId href="Product#COMPANY_VEHICLE"/>
     <intervalMeterTypeId href="ProductMeterType#ODOMETER"/>
     <productMaintTypeId href="ProductMaintType#ROTATE_TIRES"/>
+  </contents>
+  <contents xsi:type="biz-budget:Budget" budgetId="DemoBudget001" comments="Demo for budget 001">
+    <budgetTypeId href="BudgetType#CAPITAL_BUDGET"/>
+    <customTimePeriodId href="CustomTimePeriod#6015"/>
+  </contents>
+  <contents xsi:type="biz-budget:Budget" budgetId="DemoBudget002" comments="Demo for budget 002">
+    <budgetTypeId href="BudgetType#OPERATING_BUDGET"/>
+    <customTimePeriodId href="CustomTimePeriod#6010"/>
+  </contents>
+  <contents xsi:type="biz-budget:BudgetStatus" statusDate="2009-01-09T00:00:00.000+0100">
+    <budgetId href="Budget#DemoBudget001"/>
+    <statusId href="StatusItem#BG_CREATED"/>
+  </contents>
+  <contents xsi:type="biz-budget:BudgetStatus" statusDate="2009-01-10T00:00:00.000+0100">
+    <budgetId href="Budget#DemoBudget001"/>
+    <statusId href="StatusItem#BG_REVIEWED"/>
+  </contents>
+  <contents xsi:type="biz-budget:BudgetStatus" statusDate="2009-01-09T00:00:00.000+0100">
+    <budgetId href="Budget#DemoBudget002"/>
+    <statusId href="StatusItem#BG_CREATED"/>
+  </contents>
+  <contents xsi:type="biz-budget:BudgetStatus" statusDate="2009-01-10T00:00:00.000+0100">
+    <budgetId href="Budget#DemoBudget002"/>
+    <statusId href="StatusItem#BG_REVIEWED"/>
+  </contents>
+  <contents xsi:type="biz-budget:BudgetStatus" statusDate="2009-01-11T00:00:00.000+0100">
+    <budgetId href="Budget#DemoBudget002"/>
+    <statusId href="StatusItem#BG_APPROVED"/>
+  </contents>
+  <contents xsi:type="biz-budget:BudgetRole" roleTypeId="INTERNAL_ORGANIZATIO">
+    <budgetId href="Budget#DemoBudget001"/>
+    <partyId href="Party#ACCOUNTING"/>
+  </contents>
+  <contents xsi:type="biz-budget:BudgetRole" roleTypeId="ACCOUNTANT">
+    <budgetId href="Budget#DemoBudget002"/>
+    <partyId href="Party#accountingadmin"/>
+  </contents>
+  <contents xsi:type="biz-budget:BudgetRole" roleTypeId="INTERNAL_ORGANIZATIO">
+    <budgetId href="Budget#DemoBudget002"/>
+    <partyId href="Party#MARKETING"/>
+  </contents>
+  <contents xsi:type="biz-budget:BudgetItem" budgetItemSeqId="00001" amount="500" justification="For Demo budget 001" purpose="Demo item 1 for Demo budget 001">
+    <budgetId href="Budget#DemoBudget001"/>
+    <budgetItemTypeId href="BudgetItemType#REQUIREMENT_BUDGET_A"/>
+  </contents>
+  <contents xsi:type="biz-budget:BudgetItem" budgetItemSeqId="00001" amount="1000" justification="For Demo budget 002" purpose="Demo item 1 for Demo budget 002">
+    <budgetId href="Budget#DemoBudget002"/>
+    <budgetItemTypeId href="BudgetItemType#REQUIREMENT_BUDGET_A"/>
+  </contents>
+  <contents xsi:type="biz-budget:BudgetItem" budgetItemSeqId="00002" amount="1500" justification="For Demo budget 002" purpose="Demo item 2 for Demo budget 002">
+    <budgetId href="Budget#DemoBudget002"/>
+    <budgetItemTypeId href="BudgetItemType#REQUIREMENT_BUDGET_A"/>
+  </contents>
+  <contents xsi:type="biz-budget:BudgetReview" budgetReviewId="00001" reviewDate="2009-01-10T00:00:00.000+0100">
+    <budgetId href="Budget#DemoBudget001"/>
+    <partyId href="Party#ACCOUNTING"/>
+    <budgetReviewResultTypeId href="BudgetReviewResultType#BGR_REJECTED"/>
+  </contents>
+  <contents xsi:type="biz-budget:BudgetReview" budgetReviewId="00002" reviewDate="2009-01-11T00:00:00.000+0100">
+    <budgetId href="Budget#DemoBudget001"/>
+    <partyId href="Party#ACCOUNTING"/>
+    <budgetReviewResultTypeId href="BudgetReviewResultType#BGR_ACCEPTED"/>
+  </contents>
+  <contents xsi:type="biz-budget:BudgetReview" budgetReviewId="00003" reviewDate="2009-01-11T00:00:00.000+0100">
+    <budgetId href="Budget#DemoBudget001"/>
+    <partyId href="Party#ACCOUNTING"/>
+    <budgetReviewResultTypeId href="BudgetReviewResultType#BGR_ACCEPTED"/>
+  </contents>
+  <contents xsi:type="biz-budget:BudgetReview" budgetReviewId="00001" reviewDate="2009-01-10T00:00:00.000+0100">
+    <budgetId href="Budget#DemoBudget002"/>
+    <partyId href="Party#accountingadmin"/>
+    <budgetReviewResultTypeId href="BudgetReviewResultType#BGR_REJECTED"/>
+  </contents>
+  <contents xsi:type="biz-budget:BudgetReview" budgetReviewId="00002" reviewDate="2009-01-10T00:00:00.000+0100">
+    <budgetId href="Budget#DemoBudget002"/>
+    <partyId href="Party#accountingadmin"/>
+    <budgetReviewResultTypeId href="BudgetReviewResultType#BGR_REJECTED"/>
+  </contents>
+  <contents xsi:type="biz-budget:BudgetReview" budgetReviewId="00003" reviewDate="2009-01-10T00:00:00.000+0100">
+    <budgetId href="Budget#DemoBudget002"/>
+    <partyId href="Party#accountingadmin"/>
+    <budgetReviewResultTypeId href="BudgetReviewResultType#BGR_REJECTED"/>
+  </contents>
+  <contents xsi:type="biz-budget:BudgetReview" budgetReviewId="00004" reviewDate="2009-01-11T00:00:00.000+0100">
+    <budgetId href="Budget#DemoBudget002"/>
+    <partyId href="Party#accountingadmin"/>
+    <budgetReviewResultTypeId href="BudgetReviewResultType#BGR_ACCEPTED"/>
   </contents>
   <contents xsi:type="biz-fixedasset:FixedAsset" fixedAssetId="WORKCENTER_COST" fixedAssetName="Demo Workcenter with Standard Costs information">
     <fixedAssetTypeId href="FixedAssetType#GROUP_EQUIPMENT"/>
