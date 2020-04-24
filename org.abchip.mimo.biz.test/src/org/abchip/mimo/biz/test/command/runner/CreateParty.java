@@ -51,16 +51,16 @@ public class CreateParty implements Callable<Long> {
 	public Long call() throws Exception {
 		long time1 = System.currentTimeMillis();
 
-		createPartyGroup(context, "CUSTOMER");
-		createPerson(context, "CUSTOMER");
-		createPartyGroup(context, "SUPPLIER");
-		createPerson(context, "SUPPLIER");
+		createPartyGroup("CUSTOMER");
+		createPerson("CUSTOMER");
+		createPartyGroup("SUPPLIER");
+		createPerson("SUPPLIER");
 
 		long time2 = System.currentTimeMillis();
 		return time2 - time1;
 	}
 
-	public void createPartyGroup(Context context, String role) throws ResourceException {
+	public void createPartyGroup(String role) throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		// Create PartyGroup
@@ -76,7 +76,7 @@ public class CreateParty implements Callable<Long> {
 		createRelated(resourceManager, partyGroup, role);
 	}
 
-	public void createPerson(Context context, String role) throws ResourceException {
+	public void createPerson(String role) throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		// Create PartyGroup
