@@ -9,15 +9,19 @@
 package org.abchip.mimo.biz.test.command;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
+import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset;
+import org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendarWeek;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.price.ProductPrice;
+import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.biz.model.product.product.ProductType;
 import org.abchip.mimo.biz.test.command.runner.CreateAgreement;
-import org.abchip.mimo.biz.test.command.runner.CreateBudget;
 import org.abchip.mimo.biz.test.command.runner.CreateInpsAgreement;
 import org.abchip.mimo.biz.test.command.runner.CreateParty;
 import org.abchip.mimo.biz.test.command.runner.CreateProduct;
@@ -27,6 +31,8 @@ import org.abchip.mimo.biz.test.command.runner.CreateSalesInvoice;
 import org.abchip.mimo.biz.test.command.runner.CreateSalesOrder;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextProvider;
+import org.abchip.mimo.resource.ResourceManager;
+import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.tester.base.BaseTestCommands;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
 
@@ -41,6 +47,46 @@ public class StressTestCommands extends BaseTestCommands {
 			stressTestAgreement(interpreter, context.get());
 		}
 	}
+	
+	public void _writeTest(CommandInterpreter interpreter) throws Exception {
+
+		Context context = this.getContext();
+		ResourceManager resourceManager = context.get(ResourceManager.class);
+
+		// il campo MondayStartTime in Biz è definito come Time
+		ResourceWriter<TechDataCalendarWeek> calendarWeekWriter = resourceManager.getResourceWriter(context, TechDataCalendarWeek.class);
+		TechDataCalendarWeek calendarWeek = calendarWeekWriter.make();
+		calendarWeek.setCalendarWeekId("TESTTIME");
+		calendarWeek.setMondayCapacity(2.0);
+		calendarWeek.setMondayStartTime(new Date());
+		
+		// E' sempre lo stesso ID per cui forzo anche l'aggiornamento
+//		calendarWeekWriter.create(calendarWeek, true);
+
+		// il campo ExpectedEndOfLife in Biz è definito come Date
+		ResourceWriter<FixedAsset> fixedAssetWriter = resourceManager.getResourceWriter(context, FixedAsset.class);
+		FixedAsset fixedAsset = fixedAssetWriter.make();
+		fixedAsset.setFixedAssetId("TESTDATE");
+		fixedAsset.setExpectedEndOfLife(new Date());
+
+		// E' sempre lo stesso ID per cui forzo anche l'aggiornamento
+//		fixedAssetWriter.create(fixedAsset);
+
+		ResourceWriter<Product> productWriter = resourceManager.getResourceWriter(context, Product.class);
+		Product product = productWriter.make();
+		product.setProductId("TEST_BOOLEAN");
+		product.setProductName("Test boolean");
+		product.setDescription("Test boolean");
+		product.setProductTypeId(context.createProxy(ProductType.class, "DIGITAL_GOOD"));
+		// Sono interessati i flag Taxable e Returnable che in grafica Biz hanno *BLANK come default
+		// In scritura vengono forzati a false
+//		product.setTaxable(true);
+//		product.setReturnable(true);
+
+		// E' sempre lo stesso ID per cui forzo anche l'aggiornamento
+		productWriter.create(product, true);
+	}
+
 
 	public void _createTestBaseData(CommandInterpreter interpreter) throws Exception {
 		try (ContextProvider context = login()) {
@@ -83,13 +129,6 @@ public class StressTestCommands extends BaseTestCommands {
 	public void _stressTestAgreement(CommandInterpreter interpreter) throws Exception {
 		try (ContextProvider context = login()) {
 			stressTestAgreement(interpreter, context.get());
-		}
-	}
-
-	// TODO remove me
-	public void _stressTestBudget(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login()) {
-			stressTestBudget(interpreter, context.get());
 		}
 	}
 
@@ -238,17 +277,6 @@ public class StressTestCommands extends BaseTestCommands {
 
 		long time2 = System.currentTimeMillis();
 		interpreter.println("Total time execution StressTestAgreement: " + (time2 - time1));
-	}
-
-	// TODO Remove me
-	private void stressTestBudget(CommandInterpreter interpreter, Context context) throws Exception {
-		long time1 = System.currentTimeMillis();
-		ExecutorService executor = Executors.newFixedThreadPool(1);
-		executor.submit(new CreateBudget(context));
-		executor.shutdown();
-		executor.awaitTermination(1, TimeUnit.MINUTES);
-		long time2 = System.currentTimeMillis();
-		interpreter.println("Total time execution StressTestBudget: " + (time2 - time1));
 	}
 
 	@SuppressWarnings("resource")
