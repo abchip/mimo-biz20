@@ -256,33 +256,36 @@ public class StressTestCommands extends BaseTestCommands {
 
 		List<ContextProvider> contexts = new ArrayList<ContextProvider>();
 
-		// open contexts
-		interpreter.print("Create " + poolSize + " connections.. ");
-		for (int i = 0; i < poolSize; i++)
-			contexts.add(login());
-		interpreter.println("done");
+		try {
+			// open contexts
+			interpreter.print("Create " + poolSize + " connections.. ");
+			for (int i = 0; i < poolSize; i++)
+				contexts.add(login());
+			interpreter.println("done");
 
-		long time1 = System.currentTimeMillis();
-		ExecutorService executor = Executors.newFixedThreadPool(poolSize);
+			long time1 = System.currentTimeMillis();
+			ExecutorService executor = Executors.newFixedThreadPool(poolSize);
 
-		// jobs
-		int x = 0;
-		for (int i = 0; i < loops; i++) {
-			executor.submit(new CreateInpsAgreement(contexts.get(x).get()));
-			x++;
-			if (x == poolSize)
-				x = 0;
+			// jobs
+			int x = 0;
+			for (int i = 0; i < loops; i++) {
+				executor.submit(new CreateInpsAgreement(contexts.get(x).get()));
+				x++;
+				if (x == poolSize)
+					x = 0;
+			}
+
+			executor.shutdown();
+
+			executor.awaitTermination(1, TimeUnit.HOURS);
+			interpreter.println("Total time execution StressTestInps: " + (System.currentTimeMillis() - time1));
+		} finally {
+			// close contexts
+			interpreter.print("Close " + poolSize + " connections.. ");
+			for (int i = 0; i < poolSize; i++)
+				contexts.get(i).close();
+			interpreter.println("done");
 		}
-
-		executor.shutdown();
-		executor.awaitTermination(1, TimeUnit.HOURS);
-		interpreter.println("Total time execution StressTestInps: " + (System.currentTimeMillis() - time1));
-
-		// close contexts
-		interpreter.print("Close " + poolSize + " connections.. ");
-		for (int i = 0; i < poolSize; i++)
-			contexts.get(i).close();
-		interpreter.println("done");
 
 	}
 
