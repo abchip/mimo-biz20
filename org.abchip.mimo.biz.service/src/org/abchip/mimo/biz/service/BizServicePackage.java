@@ -72,15 +72,6 @@ public interface BizServicePackage extends EPackage {
 	int BIZ_SERVICE_REQUEST = 0;
 
 	/**
-	 * The feature id for the '<em><b>Context</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_SERVICE_REQUEST__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
-
-	/**
 	 * The feature id for the '<em><b>Locale</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -97,6 +88,15 @@ public interface BizServicePackage extends EPackage {
 	 * @ordered
 	 */
 	int BIZ_SERVICE_REQUEST__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
+
+	/**
+	 * The feature id for the '<em><b>Context</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BIZ_SERVICE_REQUEST__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
 	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
@@ -125,24 +125,6 @@ public interface BizServicePackage extends EPackage {
 	 * @generated
 	 */
 	int BIZ_SERVICE_RESPONSE = 1;
-
-	/**
-	 * The feature id for the '<em><b>Context</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_SERVICE_RESPONSE__CONTEXT = ServicePackage.SERVICE_RESPONSE__CONTEXT;
-
-	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_SERVICE_RESPONSE__LOCALE = ServicePackage.SERVICE_RESPONSE__LOCALE;
 
 	/**
 	 * The feature id for the '<em><b>Error</b></em>' attribute.
@@ -207,24 +189,6 @@ public interface BizServicePackage extends EPackage {
 	 * @generated
 	 */
 	int BIZ_SERVICE_RESPONSE_VOID = 2;
-
-	/**
-	 * The feature id for the '<em><b>Context</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_SERVICE_RESPONSE_VOID__CONTEXT = BIZ_SERVICE_RESPONSE__CONTEXT;
-
-	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_SERVICE_RESPONSE_VOID__LOCALE = BIZ_SERVICE_RESPONSE__LOCALE;
 
 	/**
 	 * The feature id for the '<em><b>Error</b></em>' attribute.

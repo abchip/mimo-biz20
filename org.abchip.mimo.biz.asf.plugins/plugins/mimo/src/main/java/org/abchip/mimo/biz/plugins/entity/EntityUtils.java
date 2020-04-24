@@ -13,8 +13,11 @@ import java.sql.Timestamp;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map.Entry;
 
 import org.abchip.mimo.biz.plugins.OFBizConstants;
@@ -256,6 +259,21 @@ public class EntityUtils {
 
 	// from ofbiz -> entity
 	public static Object toValue(Slot slot, Object bizValue) {
+
+		if (slot.getCardinality().isMultiple()) {
+			List<Object> values = new ArrayList<Object>();
+			if (bizValue instanceof Collection<?>) {
+				Collection<?> bizValues = (Collection<?>) bizValue;
+				for (Object object : bizValues)
+					values.add(toSingleValue(slot, object));
+			} else
+				values.add(toSingleValue(slot, bizValue));
+			return values;
+		} else
+			return toSingleValue(slot, bizValue);
+	}
+
+	private static Object toSingleValue(Slot slot, Object bizValue) {
 
 		Object value = bizValue;
 

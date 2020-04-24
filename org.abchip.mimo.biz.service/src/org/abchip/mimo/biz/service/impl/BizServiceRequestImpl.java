@@ -163,7 +163,6 @@ public abstract class BizServiceRequestImpl<V extends ServiceResponse> extends S
 			throw new UnsupportedOperationException("Request already prepared");
 
 		this.context = context;
-
 		this.tenant = tenant;
 
 		ContextDescription contextDescription = context.getContextDescription();

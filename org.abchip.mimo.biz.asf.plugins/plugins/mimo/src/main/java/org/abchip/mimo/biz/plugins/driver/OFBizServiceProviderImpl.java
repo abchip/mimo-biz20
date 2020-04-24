@@ -36,7 +36,7 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 			Map<String, Object> context = toBizContext(dispatcher.getDelegator(), request);
 			context = dispatcher.runSync(request.getServiceName(), context);
 
-			V response = request.prepareResponse();
+			V response = toResponse(request, context);
 
 			return response;
 		} catch (GenericServiceException e) {
@@ -50,8 +50,9 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 		LocalDispatcher dispatcher = getLocalDispatcher(request);
 
 		try {
-			Map<String, ? extends Object> context = toBizContext(dispatcher.getDelegator(), request);
+			Map<String, Object> context = toBizContext(dispatcher.getDelegator(), request);
 			dispatcher.runAsync(request.getServiceName(), context);
+
 			return null;
 		} catch (GenericServiceException e) {
 			throw new ServiceException(e);
@@ -95,5 +96,28 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 		}
 
 		return context;
+	}
+
+	private <V extends ServiceResponse, R extends ServiceRequest<V>> V toResponse(R request, Map<String, Object> context) throws ServiceException {
+
+		V response = request.prepareResponse();
+
+		Frame<?> frame = response.isa();
+		for (Slot slot : frame.getSlots()) {
+			Object value = context.get(slot.getName());
+			if (value == null)
+				continue;
+
+			value = EntityUtils.toValue(slot, value);
+
+			try {
+				frame.setValue(response, slot.getName(), value);
+			}
+			catch(Exception e) {
+				throw new ServiceException(e);
+			}
+		}
+
+		return response;
 	}
 }
