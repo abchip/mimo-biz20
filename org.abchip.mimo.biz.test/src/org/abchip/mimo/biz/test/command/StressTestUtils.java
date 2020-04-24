@@ -8,6 +8,7 @@
  */
 package org.abchip.mimo.biz.test.command;
 
+import java.math.BigDecimal;
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
@@ -155,7 +156,7 @@ public class StressTestUtils {
 		try (EntityIterator<SupplierProduct> supplierProducts = supplierProductReader.find(filter)) {
 			for (SupplierProduct product : supplierProducts) {
 
-				if (product.getLastPrice().equals(0))
+				if (product.getLastPrice().equals(BigDecimal.ZERO))
 					continue;
 				supplierProduct.add(product);
 			}
