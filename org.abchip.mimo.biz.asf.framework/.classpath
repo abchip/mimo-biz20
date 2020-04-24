@@ -99,6 +99,23 @@
 	<classpathentry kind="src" path="framework/webtools/groovyScripts/log"/>
 	<classpathentry kind="src" path="framework/webtools/groovyScripts/service"/>
 	<classpathentry kind="src" path="framework/webtools/groovyScripts/stats"/>
+	<classpathentry kind="src" path="framework/entity/config"/>
+	<classpathentry kind="src" path="framework/security/config"/>
+	<classpathentry kind="src" path="framework/security/dtd"/>
+	<classpathentry kind="src" path="framework/datafile/dtd"/>
+	<classpathentry kind="src" path="framework/minilang/config"/>
+	<classpathentry kind="src" path="framework/minilang/dtd"/>
+	<classpathentry kind="src" path="framework/common/config"/>
+	<classpathentry kind="src" path="framework/service/config"/>
+	<classpathentry kind="src" path="framework/catalina/config"/>
+	<classpathentry kind="src" path="framework/entityext/config"/>
+	<classpathentry kind="src" path="framework/widget/config"/>
+	<classpathentry kind="src" path="framework/widget/dtd"/>
+	<classpathentry kind="src" path="framework/testtools/dtd"/>
+	<classpathentry kind="src" path="framework/webtools/config"/>
+	<classpathentry kind="src" path="framework/common/groovyScripts/permission"/>
+	<classpathentry excluding="permission/" kind="src" path="framework/common/groovyScripts"/>
+	<classpathentry excluding="test/" kind="src" path="framework/base/groovyScripts"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -85,12 +85,12 @@ public class TenantCommands extends BaseCommands {
 		String tenantName = "Test";
 
 		TenantServices.createTenant(context, tenantId, tenantName, dbType, update);
-		SeedServices.loadSeeds(context, "seed", tenantId, true);
-		SeedServices.loadSeed(context, "mimo", tenantId, true);
-		SeedServices.loadSeed(context, "party", tenantId, true);
-		SeedServices.loadSeed(context, "abchip-tenantTest", tenantId, true);
-		SeedServices.loadSeed(context, "abchip-tenantTest-accounting", tenantId, true);
-		TenantServices.createUserTenant(context, tenantId, false);
+		SeedServices.loadSeeds(context, "seed", tenantId, update);
+		SeedServices.loadSeed(context, "mimo", tenantId, update);
+		SeedServices.loadSeed(context, "party", tenantId, update);
+		SeedServices.loadSeed(context, "abchip-tenantTest", tenantId, update);
+		SeedServices.loadSeed(context, "abchip-tenantTest-accounting", tenantId, update);
+		TenantServices.createUserTenant(context, tenantId, update);
 	}
 
 	public void _createDemo(CommandInterpreter interpreter) throws Exception {
@@ -104,9 +104,9 @@ public class TenantCommands extends BaseCommands {
 		String tenantName = "Demo tenant";
 
 		TenantServices.createTenant(context, tenantId, tenantName, dbType, update);
-		SeedServices.loadSeeds(context, "seed", tenantId, true);
-		SeedServices.loadSeeds(context, "demo", tenantId, true);
-		TenantServices.createUserTenant(context, tenantId, false);
+		SeedServices.loadSeeds(context, "seed", tenantId, update);
+		SeedServices.loadSeeds(context, "demo", tenantId, update);
+		TenantServices.createUserTenant(context, tenantId, update);
 	}
 
 	@Override

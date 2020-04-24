@@ -5,6 +5,7 @@
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="src" path="plugins/passport/src/main/java"/>
 	<classpathentry kind="src" path="plugins/mimo/src/main/java"/>
+	<classpathentry kind="src" path="plugins/passport/config"/>
 	<classpathentry exported="true" kind="con" path="GROOVY_DSL_SUPPORT"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/org.abchip.mimo.biz.asf.applications"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/org.abchip.mimo.biz.asf.framework"/>
