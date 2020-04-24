@@ -15,7 +15,6 @@ import org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.service.product.CalculateProductPrice;
 import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
-import org.abchip.mimo.biz.service.product.MyService;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceManager;
@@ -37,12 +36,12 @@ public class ServiceTestCommands extends BaseTestCommands {
 
 		String product = this.nextArgument(interpreter, "Marketing");
 
-		CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, MyService.class);
+		CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
 		calculateProductPrice.setProduct(context.createProxy(Product.class, product));
 		calculateProductPrice.setCurrencyUomId(UomServices.getUom(context).getID());
 
 		try {
-			CalculateProductPriceResponse response = calculateProductPrice.call();
+			CalculateProductPriceResponse response = serviceManager.execute(calculateProductPrice);
 
 			if (response.isError()) {
 				interpreter.println(response.getErrorMessage());

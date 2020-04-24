@@ -10,7 +10,6 @@ package org.abchip.mimo.biz.service.impl;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.service.BizServicePackage;
 import org.abchip.mimo.biz.service.BizServiceResponse;
-
 import org.abchip.mimo.service.impl.ServiceResponseImpl;
 
 import org.eclipse.emf.common.notify.Notification;

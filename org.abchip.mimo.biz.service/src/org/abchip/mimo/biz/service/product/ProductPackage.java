@@ -254,80 +254,6 @@ public interface ProductPackage extends EPackage {
 
 
 	/**
-	 * The meta object id for the '{@link org.abchip.mimo.biz.service.product.impl.MyServiceImpl <em>My Service</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.abchip.mimo.biz.service.product.impl.MyServiceImpl
-	 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getMyService()
-	 * @generated
-	 */
-	int MY_SERVICE = 2;
-
-	/**
-	 * The feature id for the '<em><b>Context</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MY_SERVICE__CONTEXT = CALCULATE_PRODUCT_PRICE__CONTEXT;
-
-	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MY_SERVICE__LOCALE = CALCULATE_PRODUCT_PRICE__LOCALE;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MY_SERVICE__TENANT = CALCULATE_PRODUCT_PRICE__TENANT;
-
-	/**
-	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MY_SERVICE__USER_LOGIN = CALCULATE_PRODUCT_PRICE__USER_LOGIN;
-
-	/**
-	 * The feature id for the '<em><b>Product</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MY_SERVICE__PRODUCT = CALCULATE_PRODUCT_PRICE__PRODUCT;
-
-	/**
-	 * The feature id for the '<em><b>Currency Uom Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MY_SERVICE__CURRENCY_UOM_ID = CALCULATE_PRODUCT_PRICE__CURRENCY_UOM_ID;
-
-	/**
-	 * The number of structural features of the '<em>My Service</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int MY_SERVICE_FEATURE_COUNT = CALCULATE_PRODUCT_PRICE_FEATURE_COUNT + 0;
-
-
-	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.product.CalculateProductPrice <em>Calculate Product Price</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -412,16 +338,6 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getCalculateProductPriceResponse_OrderItemPriceInfos();
-
-	/**
-	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.product.MyService <em>My Service</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>My Service</em>'.
-	 * @see org.abchip.mimo.biz.service.product.MyService
-	 * @generated
-	 */
-	EClass getMyService();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -512,16 +428,6 @@ public interface ProductPackage extends EPackage {
 		 * @generated
 		 */
 		EReference CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS = eINSTANCE.getCalculateProductPriceResponse_OrderItemPriceInfos();
-
-		/**
-		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.product.impl.MyServiceImpl <em>My Service</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.abchip.mimo.biz.service.product.impl.MyServiceImpl
-		 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getMyService()
-		 * @generated
-		 */
-		EClass MY_SERVICE = eINSTANCE.getMyService();
 
 	}
 

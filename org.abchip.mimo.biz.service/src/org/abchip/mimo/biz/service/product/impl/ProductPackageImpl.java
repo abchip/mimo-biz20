@@ -71,7 +71,6 @@ import org.abchip.mimo.biz.service.BizServicePackage;
 import org.abchip.mimo.biz.service.impl.BizServicePackageImpl;
 import org.abchip.mimo.biz.service.product.CalculateProductPrice;
 import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
-import org.abchip.mimo.biz.service.product.MyService;
 import org.abchip.mimo.biz.service.product.ProductFactory;
 import org.abchip.mimo.biz.service.product.ProductPackage;
 import org.eclipse.emf.ecore.EAttribute;
@@ -102,13 +101,6 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	 * @generated
 	 */
 	private EClass calculateProductPriceResponseEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass myServiceEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -326,16 +318,6 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getMyService() {
-		return myServiceEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public ProductFactory getProductFactory() {
 		return (ProductFactory)getEFactoryInstance();
 	}
@@ -368,8 +350,6 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		createEAttribute(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__BASE_PRICE);
 		createEAttribute(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE);
 		createEReference(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS);
-
-		myServiceEClass = createEClass(MY_SERVICE);
 	}
 
 	/**
@@ -410,7 +390,6 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		g1.getETypeArguments().add(g2);
 		calculateProductPriceEClass.getEGenericSuperTypes().add(g1);
 		calculateProductPriceResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
-		myServiceEClass.getESuperTypes().add(this.getCalculateProductPrice());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(calculateProductPriceEClass, CalculateProductPrice.class, "CalculateProductPrice", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -422,8 +401,6 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		initEAttribute(getCalculateProductPriceResponse_BasePrice(), ecorePackage.getEBigDecimal(), "basePrice", null, 1, 1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCalculateProductPriceResponse_ListPrice(), ecorePackage.getEBigDecimal(), "listPrice", null, 0, 1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCalculateProductPriceResponse_OrderItemPriceInfos(), theOrderPackage.getOrderItemPriceInfo(), null, "orderItemPriceInfos", null, 0, -1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(myServiceEClass, MyService.class, "MyService", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 	}
 
 } //ProductPackageImpl

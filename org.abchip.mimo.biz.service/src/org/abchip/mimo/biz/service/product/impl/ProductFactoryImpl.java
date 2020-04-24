@@ -62,7 +62,6 @@ public class ProductFactoryImpl extends EFactoryImpl implements ProductFactory {
 		switch (eClass.getClassifierID()) {
 			case ProductPackage.CALCULATE_PRODUCT_PRICE: return (EObject)createCalculateProductPrice();
 			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE: return (EObject)createCalculateProductPriceResponse();
-			case ProductPackage.MY_SERVICE: return (EObject)createMyService();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -88,17 +87,6 @@ public class ProductFactoryImpl extends EFactoryImpl implements ProductFactory {
 	public CalculateProductPriceResponse createCalculateProductPriceResponse() {
 		CalculateProductPriceResponseImpl calculateProductPriceResponse = new CalculateProductPriceResponseImpl();
 		return calculateProductPriceResponse;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public MyService createMyService() {
-		MyServiceImpl myService = new MyServiceImpl();
-		return myService;
 	}
 
 	/**

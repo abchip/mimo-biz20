@@ -8,6 +8,7 @@
 package org.abchip.mimo.biz.service;
 
 import org.abchip.mimo.service.ServicePackage;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
@@ -196,7 +197,6 @@ public interface BizServicePackage extends EPackage {
 	 * @ordered
 	 */
 	int BIZ_SERVICE_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 1;
-
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.service.impl.BizServiceResponseVoidImpl <em>Response Void</em>}' class.

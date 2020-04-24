@@ -96,7 +96,8 @@ public abstract class BizServiceRequestImpl<V extends ServiceResponse> extends S
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public NotificationChain basicSetUserLogin(UserLogin newUserLogin, NotificationChain msgs) {

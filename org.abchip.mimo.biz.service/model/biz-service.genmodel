@@ -58,7 +58,6 @@
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//product/CalculateProductPriceResponse/listPrice"/>
         <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference biz-service.ecore#//product/CalculateProductPriceResponse/orderItemPriceInfos"/>
       </genClasses>
-      <genClasses ecoreClass="biz-service.ecore#//product/MyService"/>
     </nestedGenPackages>
     <nestedGenPackages prefix="Security" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz-service.ecore#//security"/>

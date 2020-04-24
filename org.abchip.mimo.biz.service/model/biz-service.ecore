@@ -63,7 +63,6 @@
           upperBound="-1" eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//order/order/OrderItemPriceInfo"
           containment="true"/>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="MyService" eSuperTypes="#//product/CalculateProductPrice"/>
   </eSubpackages>
   <eSubpackages name="security" nsURI="http://www.abchip.org/mimo/biz/service/security"
       nsPrefix="biz-security"/>

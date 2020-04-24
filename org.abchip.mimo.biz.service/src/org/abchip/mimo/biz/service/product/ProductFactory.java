@@ -45,15 +45,6 @@ public interface ProductFactory extends EFactory {
 	CalculateProductPriceResponse createCalculateProductPriceResponse();
 
 	/**
-	 * Returns a new object of class '<em>My Service</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>My Service</em>'.
-	 * @generated
-	 */
-	MyService createMyService();
-
-	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

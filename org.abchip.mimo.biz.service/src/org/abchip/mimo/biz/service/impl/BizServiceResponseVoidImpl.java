@@ -9,7 +9,6 @@ package org.abchip.mimo.biz.service.impl;
 
 import org.abchip.mimo.biz.service.BizServicePackage;
 import org.abchip.mimo.biz.service.BizServiceResponseVoid;
-
 import org.eclipse.emf.ecore.EClass;
 
 /**

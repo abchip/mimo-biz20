@@ -88,6 +88,7 @@ import org.abchip.mimo.biz.model.product.cost.CostPackage;
 import org.abchip.mimo.biz.model.product.facility.FacilityPackage;
 
 import org.abchip.mimo.biz.model.product.feature.FeaturePackage;
+
 import org.abchip.mimo.biz.model.product.inventory.InventoryPackage;
 
 import org.abchip.mimo.biz.model.product.price.PricePackage;
@@ -130,10 +131,12 @@ import org.abchip.mimo.biz.service.BizServiceFactory;
 import org.abchip.mimo.biz.service.BizServicePackage;
 import org.abchip.mimo.biz.service.BizServiceRequest;
 import org.abchip.mimo.biz.service.BizServiceResponse;
-
 import org.abchip.mimo.biz.service.BizServiceResponseVoid;
+
 import org.abchip.mimo.biz.service.product.impl.ProductPackageImpl;
+
 import org.abchip.mimo.service.ServicePackage;
+
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;

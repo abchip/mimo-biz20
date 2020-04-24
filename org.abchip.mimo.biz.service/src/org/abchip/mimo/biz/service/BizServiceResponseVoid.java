@@ -7,7 +7,6 @@
  */
 package org.abchip.mimo.biz.service;
 
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Response Void</b></em>'.
