@@ -23,7 +23,7 @@ import org.abchip.mimo.service.ServiceResponse;
  * </ul>
  *
  * @see org.abchip.mimo.biz.service.BizServicePackage#getBizServiceResponse()
- * @model abstract="true"
+ * @model
  * @generated
  */
 public interface BizServiceResponse extends ServiceResponse {

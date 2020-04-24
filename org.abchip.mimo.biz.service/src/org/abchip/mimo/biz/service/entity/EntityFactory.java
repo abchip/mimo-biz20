@@ -5,7 +5,7 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.service;
+package org.abchip.mimo.biz.service.entity;
 
 import org.eclipse.emf.ecore.EFactory;
 
@@ -14,26 +14,26 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see org.abchip.mimo.biz.service.BizServicePackage
+ * @see org.abchip.mimo.biz.service.entity.EntityPackage
  * @generated
  */
-public interface BizServiceFactory extends EFactory {
+public interface EntityFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	BizServiceFactory eINSTANCE = org.abchip.mimo.biz.service.impl.BizServiceFactoryImpl.init();
+	EntityFactory eINSTANCE = org.abchip.mimo.biz.service.entity.impl.EntityFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Response</em>'.
+	 * Returns a new object of class '<em>Export Entities</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Response</em>'.
+	 * @return a new object of class '<em>Export Entities</em>'.
 	 * @generated
 	 */
-	BizServiceResponse createBizServiceResponse();
+	ExportEntities createExportEntities();
 
 	/**
 	 * Returns the package supported by this factory.
@@ -42,6 +42,6 @@ public interface BizServiceFactory extends EFactory {
 	 * @return the package supported by this factory.
 	 * @generated
 	 */
-	BizServicePackage getBizServicePackage();
+	EntityPackage getEntityPackage();
 
-} //BizServiceFactory
+} //EntityFactory

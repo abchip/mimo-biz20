@@ -12,13 +12,11 @@
       <eTypeArguments eTypeParameter="#//BizServiceRequest/V"/>
     </eGenericSuperTypes>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BizServiceResponse" abstract="true"
-      eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse">
+  <eClassifiers xsi:type="ecore:EClass" name="BizServiceResponse" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse">
     <eStructuralFeatures xsi:type="ecore:EReference" name="userLogin" lowerBound="1"
         eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//security/login/UserLogin"
         changeable="false" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BizServiceResponseVoid" eSuperTypes="#//BizServiceResponse"/>
   <eSubpackages name="accounting" nsURI="http://www.abchip.org/mimo/biz/service/accounting"
       nsPrefix="biz-accounting"/>
   <eSubpackages name="catalina" nsURI="http://www.abchip.org/mimo/biz/service/catalina"
@@ -28,7 +26,13 @@
   <eSubpackages name="content" nsURI="http://www.abchip.org/mimo/biz/service/content"
       nsPrefix="biz-content"/>
   <eSubpackages name="entity" nsURI="http://www.abchip.org/mimo/biz/service/entity"
-      nsPrefix="biz-entity"/>
+      nsPrefix="biz-entity">
+    <eClassifiers xsi:type="ecore:EClass" name="ExportEntities">
+      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
+        <eTypeArguments eClassifier="#//BizServiceResponse"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+  </eSubpackages>
   <eSubpackages name="humanres" nsURI="http://www.abchip.org/mimo/biz/service/humanres"
       nsPrefix="biz-humanres"/>
   <eSubpackages name="manufacturing" nsURI="http://www.abchip.org/mimo/biz/service/manufacturing"

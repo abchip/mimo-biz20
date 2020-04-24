@@ -215,14 +215,18 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		// Obtain or create and register interdependencies
 		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
 		BizServicePackageImpl theBizServicePackage = (BizServicePackageImpl)(registeredPackage instanceof BizServicePackageImpl ? registeredPackage : BizServicePackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.entity.EntityPackage.eNS_URI);
+		org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl theEntityPackage_1 = (org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl)(registeredPackage instanceof org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.entity.EntityPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theProductPackage.createPackageContents();
 		theBizServicePackage.createPackageContents();
+		theEntityPackage_1.createPackageContents();
 
 		// Initialize created meta-data
 		theProductPackage.initializePackageContents();
 		theBizServicePackage.initializePackageContents();
+		theEntityPackage_1.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theProductPackage.freeze();

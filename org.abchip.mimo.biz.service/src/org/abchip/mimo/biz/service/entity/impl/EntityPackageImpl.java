@@ -5,7 +5,7 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.service.impl;
+package org.abchip.mimo.biz.service.entity.impl;
 
 import org.abchip.mimo.MimoPackage;
 
@@ -29,7 +29,6 @@ import org.abchip.mimo.biz.model.content.survey.SurveyPackage;
 
 import org.abchip.mimo.biz.model.content.website.WebsitePackage;
 
-import org.abchip.mimo.biz.model.entity.EntityPackage;
 import org.abchip.mimo.biz.model.humanres.ability.AbilityPackage;
 
 import org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage;
@@ -126,19 +125,19 @@ import org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage;
 
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 
-import org.abchip.mimo.biz.service.BizServiceFactory;
 import org.abchip.mimo.biz.service.BizServicePackage;
-import org.abchip.mimo.biz.service.BizServiceRequest;
-import org.abchip.mimo.biz.service.BizServiceResponse;
-import org.abchip.mimo.biz.service.product.impl.ProductPackageImpl;
 
-import org.abchip.mimo.service.ServicePackage;
+import org.abchip.mimo.biz.service.entity.EntityFactory;
+import org.abchip.mimo.biz.service.entity.EntityPackage;
+import org.abchip.mimo.biz.service.entity.ExportEntities;
+
+import org.abchip.mimo.biz.service.impl.BizServicePackageImpl;
+
+import org.abchip.mimo.biz.service.product.impl.ProductPackageImpl;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
-import org.eclipse.emf.ecore.EReference;
-import org.eclipse.emf.ecore.ETypeParameter;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
@@ -148,20 +147,13 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
  * <!-- end-user-doc -->
  * @generated
  */
-public class BizServicePackageImpl extends EPackageImpl implements BizServicePackage {
+public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass bizServiceRequestEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass bizServiceResponseEClass = null;
+	private EClass exportEntitiesEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -174,12 +166,12 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see org.abchip.mimo.biz.service.BizServicePackage#eNS_URI
+	 * @see org.abchip.mimo.biz.service.entity.EntityPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */
-	private BizServicePackageImpl() {
-		super(eNS_URI, BizServiceFactory.eINSTANCE);
+	private EntityPackageImpl() {
+		super(eNS_URI, EntityFactory.eINSTANCE);
 	}
 
 	/**
@@ -192,7 +184,7 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
 	 *
-	 * <p>This method is used to initialize {@link BizServicePackage#eINSTANCE} when that field is accessed.
+	 * <p>This method is used to initialize {@link EntityPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -201,12 +193,12 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 	 * @see #initializePackageContents()
 	 * @generated
 	 */
-	public static BizServicePackage init() {
-		if (isInited) return (BizServicePackage)EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
+	public static EntityPackage init() {
+		if (isInited) return (EntityPackage)EPackage.Registry.INSTANCE.getEPackage(EntityPackage.eNS_URI);
 
 		// Obtain or create and register package
-		Object registeredBizServicePackage = EPackage.Registry.INSTANCE.get(eNS_URI);
-		BizServicePackageImpl theBizServicePackage = registeredBizServicePackage instanceof BizServicePackageImpl ? (BizServicePackageImpl)registeredBizServicePackage : new BizServicePackageImpl();
+		Object registeredEntityPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		EntityPackageImpl theEntityPackage = registeredEntityPackage instanceof EntityPackageImpl ? (EntityPackageImpl)registeredEntityPackage : new EntityPackageImpl();
 
 		isInited = true;
 
@@ -221,7 +213,7 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 		PreferencePackage.eINSTANCE.eClass();
 		SurveyPackage.eINSTANCE.eClass();
 		WebsitePackage.eINSTANCE.eClass();
-		EntityPackage.eINSTANCE.eClass();
+		org.abchip.mimo.biz.model.entity.EntityPackage.eINSTANCE.eClass();
 		AbilityPackage.eINSTANCE.eClass();
 		EmploymentPackage.eINSTANCE.eClass();
 		PositionPackage.eINSTANCE.eClass();
@@ -274,27 +266,27 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 		MimoPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.entity.EntityPackage.eNS_URI);
-		org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl theEntityPackage_1 = (org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl)(registeredPackage instanceof org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.entity.EntityPackage.eINSTANCE);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
+		BizServicePackageImpl theBizServicePackage = (BizServicePackageImpl)(registeredPackage instanceof BizServicePackageImpl ? registeredPackage : BizServicePackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.product.ProductPackage.eNS_URI);
 		ProductPackageImpl theProductPackage_1 = (ProductPackageImpl)(registeredPackage instanceof ProductPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.product.ProductPackage.eINSTANCE);
 
 		// Create package meta-data objects
+		theEntityPackage.createPackageContents();
 		theBizServicePackage.createPackageContents();
-		theEntityPackage_1.createPackageContents();
 		theProductPackage_1.createPackageContents();
 
 		// Initialize created meta-data
+		theEntityPackage.initializePackageContents();
 		theBizServicePackage.initializePackageContents();
-		theEntityPackage_1.initializePackageContents();
 		theProductPackage_1.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
-		theBizServicePackage.freeze();
+		theEntityPackage.freeze();
 
 		// Update the registry and return the package
-		EPackage.Registry.INSTANCE.put(BizServicePackage.eNS_URI, theBizServicePackage);
-		return theBizServicePackage;
+		EPackage.Registry.INSTANCE.put(EntityPackage.eNS_URI, theEntityPackage);
+		return theEntityPackage;
 	}
 
 	/**
@@ -303,8 +295,8 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 	 * @generated
 	 */
 	@Override
-	public EClass getBizServiceRequest() {
-		return bizServiceRequestEClass;
+	public EClass getExportEntities() {
+		return exportEntitiesEClass;
 	}
 
 	/**
@@ -313,38 +305,8 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 	 * @generated
 	 */
 	@Override
-	public EReference getBizServiceRequest_UserLogin() {
-		return (EReference)bizServiceRequestEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getBizServiceResponse() {
-		return bizServiceResponseEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EReference getBizServiceResponse_UserLogin() {
-		return (EReference)bizServiceResponseEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public BizServiceFactory getBizServiceFactory() {
-		return (BizServiceFactory)getEFactoryInstance();
+	public EntityFactory getEntityFactory() {
+		return (EntityFactory)getEFactoryInstance();
 	}
 
 	/**
@@ -366,11 +328,7 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 		isCreated = true;
 
 		// Create classes and their features
-		bizServiceRequestEClass = createEClass(BIZ_SERVICE_REQUEST);
-		createEReference(bizServiceRequestEClass, BIZ_SERVICE_REQUEST__USER_LOGIN);
-
-		bizServiceResponseEClass = createEClass(BIZ_SERVICE_RESPONSE);
-		createEReference(bizServiceResponseEClass, BIZ_SERVICE_RESPONSE__USER_LOGIN);
+		exportEntitiesEClass = createEClass(EXPORT_ENTITIES);
 	}
 
 	/**
@@ -397,38 +355,20 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		org.abchip.mimo.biz.service.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.biz.service.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.entity.EntityPackage.eNS_URI);
-		org.abchip.mimo.biz.service.product.ProductPackage theProductPackage_1 = (org.abchip.mimo.biz.service.product.ProductPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.product.ProductPackage.eNS_URI);
-		ServicePackage theServicePackage = (ServicePackage)EPackage.Registry.INSTANCE.getEPackage(ServicePackage.eNS_URI);
-		LoginPackage theLoginPackage = (LoginPackage)EPackage.Registry.INSTANCE.getEPackage(LoginPackage.eNS_URI);
-
-		// Add subpackages
-		getESubpackages().add(theEntityPackage_1);
-		getESubpackages().add(theProductPackage_1);
+		BizServicePackage theBizServicePackage = (BizServicePackage)EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
 
 		// Create type parameters
-		ETypeParameter bizServiceRequestEClass_V = addETypeParameter(bizServiceRequestEClass, "V");
 
 		// Set bounds for type parameters
-		EGenericType g1 = createEGenericType(theServicePackage.getServiceResponse());
-		bizServiceRequestEClass_V.getEBounds().add(g1);
 
 		// Add supertypes to classes
-		g1 = createEGenericType(theServicePackage.getServiceRequest());
-		EGenericType g2 = createEGenericType(bizServiceRequestEClass_V);
+		EGenericType g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
+		EGenericType g2 = createEGenericType(theBizServicePackage.getBizServiceResponse());
 		g1.getETypeArguments().add(g2);
-		bizServiceRequestEClass.getEGenericSuperTypes().add(g1);
-		bizServiceResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
+		exportEntitiesEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters
-		initEClass(bizServiceRequestEClass, BizServiceRequest.class, "BizServiceRequest", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getBizServiceRequest_UserLogin(), theLoginPackage.getUserLogin(), null, "userLogin", null, 1, 1, BizServiceRequest.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(bizServiceResponseEClass, BizServiceResponse.class, "BizServiceResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getBizServiceResponse_UserLogin(), theLoginPackage.getUserLogin(), null, "userLogin", null, 1, 1, BizServiceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		// Create resource
-		createResource(eNS_URI);
+		initEClass(exportEntitiesEClass, ExportEntities.class, "ExportEntities", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 	}
 
-} //BizServicePackageImpl
+} //EntityPackageImpl

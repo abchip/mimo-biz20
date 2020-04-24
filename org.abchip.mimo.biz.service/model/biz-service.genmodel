@@ -22,28 +22,29 @@
     <genClasses image="false" ecoreClass="biz-service.ecore#//BizServiceResponse">
       <genFeatures property="None" children="true" createChild="false" ecoreFeature="ecore:EReference biz-service.ecore#//BizServiceResponse/userLogin"/>
     </genClasses>
-    <genClasses ecoreClass="biz-service.ecore#//BizServiceResponseVoid"/>
-    <nestedGenPackages prefix="Accounting" basePackage="org.abchip.mimo.biz.model"
+    <nestedGenPackages prefix="Accounting" basePackage="org.abchip.mimo.biz.service"
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//accounting"/>
-    <nestedGenPackages prefix="Catalina" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Catalina" basePackage="org.abchip.mimo.biz.service" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz-service.ecore#//catalina"/>
-    <nestedGenPackages prefix="Common" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Common" basePackage="org.abchip.mimo.biz.service" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz-service.ecore#//common"/>
-    <nestedGenPackages prefix="Content" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Content" basePackage="org.abchip.mimo.biz.service" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz-service.ecore#//content"/>
-    <nestedGenPackages prefix="Entity" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
-        adapterFactory="false" ecorePackage="biz-service.ecore#//entity"/>
-    <nestedGenPackages prefix="Humanres" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Entity" basePackage="org.abchip.mimo.biz.service" disposableProviderFactory="true"
+        adapterFactory="false" ecorePackage="biz-service.ecore#//entity">
+      <genClasses ecoreClass="biz-service.ecore#//entity/ExportEntities"/>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Humanres" basePackage="org.abchip.mimo.biz.service" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz-service.ecore#//humanres"/>
-    <nestedGenPackages prefix="Manufacturing" basePackage="org.abchip.mimo.biz.model"
+    <nestedGenPackages prefix="Manufacturing" basePackage="org.abchip.mimo.biz.service"
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//manufacturing"/>
-    <nestedGenPackages prefix="Marketing" basePackage="org.abchip.mimo.biz.model"
+    <nestedGenPackages prefix="Marketing" basePackage="org.abchip.mimo.biz.service"
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//marketing"/>
-    <nestedGenPackages prefix="Order" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Order" basePackage="org.abchip.mimo.biz.service" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz-service.ecore#//order"/>
-    <nestedGenPackages prefix="Party" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Party" basePackage="org.abchip.mimo.biz.service" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz-service.ecore#//party"/>
-    <nestedGenPackages prefix="Passport" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Passport" basePackage="org.abchip.mimo.biz.service" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz-service.ecore#//passport"/>
     <nestedGenPackages prefix="Product" basePackage="org.abchip.mimo.biz.service"
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//product">
@@ -59,15 +60,15 @@
         <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference biz-service.ecore#//product/CalculateProductPriceResponse/orderItemPriceInfos"/>
       </genClasses>
     </nestedGenPackages>
-    <nestedGenPackages prefix="Security" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Security" basePackage="org.abchip.mimo.biz.service" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz-service.ecore#//security"/>
-    <nestedGenPackages prefix="Service" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Service" basePackage="org.abchip.mimo.biz.service" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz-service.ecore#//service"/>
     <nestedGenPackages prefix="Shipment" basePackage="org.abchip.mimo.biz.model."
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//shipment"/>
-    <nestedGenPackages prefix="Webapp" basePackage="org.abchip.mimo.biz.model" disposableProviderFactory="true"
+    <nestedGenPackages prefix="Webapp" basePackage="org.abchip.mimo.biz.service" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz-service.ecore#//webapp"/>
-    <nestedGenPackages prefix="Workeffort" basePackage="org.abchip.mimo.biz.model"
+    <nestedGenPackages prefix="Workeffort" basePackage="org.abchip.mimo.biz.service"
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//workeffort"/>
   </genPackages>
 </genmodel:GenModel>

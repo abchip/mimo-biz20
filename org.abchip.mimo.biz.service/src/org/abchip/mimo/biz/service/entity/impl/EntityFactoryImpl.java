@@ -5,9 +5,9 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.service.impl;
+package org.abchip.mimo.biz.service.entity.impl;
 
-import org.abchip.mimo.biz.service.*;
+import org.abchip.mimo.biz.service.entity.*;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -23,24 +23,24 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class BizServiceFactoryImpl extends EFactoryImpl implements BizServiceFactory {
+public class EntityFactoryImpl extends EFactoryImpl implements EntityFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static BizServiceFactory init() {
+	public static EntityFactory init() {
 		try {
-			BizServiceFactory theBizServiceFactory = (BizServiceFactory)EPackage.Registry.INSTANCE.getEFactory(BizServicePackage.eNS_URI);
-			if (theBizServiceFactory != null) {
-				return theBizServiceFactory;
+			EntityFactory theEntityFactory = (EntityFactory)EPackage.Registry.INSTANCE.getEFactory(EntityPackage.eNS_URI);
+			if (theEntityFactory != null) {
+				return theEntityFactory;
 			}
 		}
 		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
-		return new BizServiceFactoryImpl();
+		return new EntityFactoryImpl();
 	}
 
 	/**
@@ -49,7 +49,7 @@ public class BizServiceFactoryImpl extends EFactoryImpl implements BizServiceFac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public BizServiceFactoryImpl() {
+	public EntityFactoryImpl() {
 		super();
 	}
 
@@ -61,7 +61,7 @@ public class BizServiceFactoryImpl extends EFactoryImpl implements BizServiceFac
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case BizServicePackage.BIZ_SERVICE_RESPONSE: return (EObject)createBizServiceResponse();
+			case EntityPackage.EXPORT_ENTITIES: return (EObject)createExportEntities();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -73,9 +73,9 @@ public class BizServiceFactoryImpl extends EFactoryImpl implements BizServiceFac
 	 * @generated
 	 */
 	@Override
-	public BizServiceResponse createBizServiceResponse() {
-		BizServiceResponseImpl bizServiceResponse = new BizServiceResponseImpl();
-		return bizServiceResponse;
+	public ExportEntities createExportEntities() {
+		ExportEntitiesImpl exportEntities = new ExportEntitiesImpl();
+		return exportEntities;
 	}
 
 	/**
@@ -84,8 +84,8 @@ public class BizServiceFactoryImpl extends EFactoryImpl implements BizServiceFac
 	 * @generated
 	 */
 	@Override
-	public BizServicePackage getBizServicePackage() {
-		return (BizServicePackage)getEPackage();
+	public EntityPackage getEntityPackage() {
+		return (EntityPackage)getEPackage();
 	}
 
 	/**
@@ -95,8 +95,8 @@ public class BizServiceFactoryImpl extends EFactoryImpl implements BizServiceFac
 	 * @generated
 	 */
 	@Deprecated
-	public static BizServicePackage getPackage() {
-		return BizServicePackage.eINSTANCE;
+	public static EntityPackage getPackage() {
+		return EntityPackage.eINSTANCE;
 	}
 
-} //BizServiceFactoryImpl
+} //EntityFactoryImpl

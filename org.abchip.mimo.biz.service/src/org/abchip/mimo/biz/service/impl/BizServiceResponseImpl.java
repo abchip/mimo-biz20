@@ -32,7 +32,7 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  *
  * @generated
  */
-public abstract class BizServiceResponseImpl extends ServiceResponseImpl implements BizServiceResponse {
+public class BizServiceResponseImpl extends ServiceResponseImpl implements BizServiceResponse {
 	/**
 	 * The cached value of the '{@link #getUserLogin() <em>User Login</em>}' containment reference.
 	 * <!-- begin-user-doc -->

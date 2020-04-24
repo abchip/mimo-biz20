@@ -181,71 +181,6 @@ public interface BizServicePackage extends EPackage {
 	int BIZ_SERVICE_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link org.abchip.mimo.biz.service.impl.BizServiceResponseVoidImpl <em>Response Void</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.abchip.mimo.biz.service.impl.BizServiceResponseVoidImpl
-	 * @see org.abchip.mimo.biz.service.impl.BizServicePackageImpl#getBizServiceResponseVoid()
-	 * @generated
-	 */
-	int BIZ_SERVICE_RESPONSE_VOID = 2;
-
-	/**
-	 * The feature id for the '<em><b>Error</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_SERVICE_RESPONSE_VOID__ERROR = BIZ_SERVICE_RESPONSE__ERROR;
-
-	/**
-	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_SERVICE_RESPONSE_VOID__ERROR_MESSAGE = BIZ_SERVICE_RESPONSE__ERROR_MESSAGE;
-
-	/**
-	 * The feature id for the '<em><b>Response Message</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_SERVICE_RESPONSE_VOID__RESPONSE_MESSAGE = BIZ_SERVICE_RESPONSE__RESPONSE_MESSAGE;
-
-	/**
-	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_SERVICE_RESPONSE_VOID__SUCCESS_MESSAGE = BIZ_SERVICE_RESPONSE__SUCCESS_MESSAGE;
-
-	/**
-	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_SERVICE_RESPONSE_VOID__USER_LOGIN = BIZ_SERVICE_RESPONSE__USER_LOGIN;
-
-	/**
-	 * The number of structural features of the '<em>Response Void</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_SERVICE_RESPONSE_VOID_FEATURE_COUNT = BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 0;
-
-
-	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.BizServiceRequest <em>Request</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -286,16 +221,6 @@ public interface BizServicePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getBizServiceResponse_UserLogin();
-
-	/**
-	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.BizServiceResponseVoid <em>Response Void</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Response Void</em>'.
-	 * @see org.abchip.mimo.biz.service.BizServiceResponseVoid
-	 * @generated
-	 */
-	EClass getBizServiceResponseVoid();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -354,16 +279,6 @@ public interface BizServicePackage extends EPackage {
 		 * @generated
 		 */
 		EReference BIZ_SERVICE_RESPONSE__USER_LOGIN = eINSTANCE.getBizServiceResponse_UserLogin();
-
-		/**
-		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.impl.BizServiceResponseVoidImpl <em>Response Void</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.abchip.mimo.biz.service.impl.BizServiceResponseVoidImpl
-		 * @see org.abchip.mimo.biz.service.impl.BizServicePackageImpl#getBizServiceResponseVoid()
-		 * @generated
-		 */
-		EClass BIZ_SERVICE_RESPONSE_VOID = eINSTANCE.getBizServiceResponseVoid();
 
 	}
 
