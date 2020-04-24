@@ -27,11 +27,9 @@ public class ServiceTestCommands extends BaseTestCommands {
 	private ServiceManager serviceManager;
 
 	public void _st_ecore(CommandInterpreter interpreter) throws Exception {
-
-		Context context = this.getContext();
-		ExportEntities request = serviceManager.prepare(context, ExportEntities.class);
-		request.setPathTo(this.nextArgument(interpreter));
-		serviceManager.execute(request);
+		ExportEntities request = serviceManager.prepare(this.getContext(), ExportEntities.class);
+		request.setPathTo(this.nextArgument(interpreter, "/home/mattia/ofbiz/"));
+		serviceManager.submit(request);
 	}
 
 	public void _st_product(CommandInterpreter interpreter) throws Exception {
