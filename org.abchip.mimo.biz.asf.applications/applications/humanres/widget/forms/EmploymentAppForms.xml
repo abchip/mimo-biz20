@@ -24,7 +24,7 @@ under the License.
         <actions>
             <set field="partyId" from-field="parameters.partyId"/>
             <set field="referredByPartyId" from-field="parameters.partyId"/>
-            <entity-one entity-name="EmploymentApp" auto-field-map="true"/>
+            <entity-one entity-name="EmploymentApp" value-field="employmentApp" auto-field-map="true"/>
             <service service-name="performFind" result-map="result" result-map-list="listIt">
                 <field-map field-name="inputFields" from-field="employmentAppCtx"/>
                 <field-map field-name="entityName" value="EmploymentApp"/>
