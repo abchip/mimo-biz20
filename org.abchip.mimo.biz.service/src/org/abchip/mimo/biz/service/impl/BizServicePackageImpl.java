@@ -130,6 +130,7 @@ import org.abchip.mimo.biz.service.BizServiceFactory;
 import org.abchip.mimo.biz.service.BizServicePackage;
 import org.abchip.mimo.biz.service.BizServiceRequest;
 import org.abchip.mimo.biz.service.BizServiceResponse;
+import org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl;
 import org.abchip.mimo.biz.service.product.impl.ProductPackageImpl;
 
 import org.abchip.mimo.service.ServicePackage;
@@ -275,7 +276,7 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 
 		// Obtain or create and register interdependencies
 		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.entity.EntityPackage.eNS_URI);
-		org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl theEntityPackage_1 = (org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl)(registeredPackage instanceof org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.entity.EntityPackage.eINSTANCE);
+		EntityPackageImpl theEntityPackage_1 = (EntityPackageImpl)(registeredPackage instanceof EntityPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.entity.EntityPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.product.ProductPackage.eNS_URI);
 		ProductPackageImpl theProductPackage_1 = (ProductPackageImpl)(registeredPackage instanceof ProductPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.product.ProductPackage.eINSTANCE);
 

@@ -9,6 +9,7 @@ package org.abchip.mimo.biz.service.entity;
 
 import org.abchip.mimo.biz.service.BizServicePackage;
 
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 
@@ -107,13 +108,22 @@ public interface EntityPackage extends EPackage {
 	int EXPORT_ENTITIES__USER_LOGIN = BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN;
 
 	/**
+	 * The feature id for the '<em><b>Path To</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int EXPORT_ENTITIES__PATH_TO = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 0;
+
+	/**
 	 * The number of structural features of the '<em>Export Entities</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EXPORT_ENTITIES_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 0;
+	int EXPORT_ENTITIES_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 1;
 
 
 	/**
@@ -125,6 +135,17 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getExportEntities();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.ExportEntities#getPathTo <em>Path To</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Path To</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.ExportEntities#getPathTo()
+	 * @see #getExportEntities()
+	 * @generated
+	 */
+	EAttribute getExportEntities_PathTo();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -157,6 +178,13 @@ public interface EntityPackage extends EPackage {
 		 * @generated
 		 */
 		EClass EXPORT_ENTITIES = eINSTANCE.getExportEntities();
+		/**
+		 * The meta object literal for the '<em><b>Path To</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute EXPORT_ENTITIES__PATH_TO = eINSTANCE.getExportEntities_PathTo();
 
 	}
 

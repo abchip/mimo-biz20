@@ -135,6 +135,7 @@ import org.abchip.mimo.biz.service.impl.BizServicePackageImpl;
 
 import org.abchip.mimo.biz.service.product.impl.ProductPackageImpl;
 
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
@@ -305,6 +306,16 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 	 * @generated
 	 */
 	@Override
+	public EAttribute getExportEntities_PathTo() {
+		return (EAttribute)exportEntitiesEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EntityFactory getEntityFactory() {
 		return (EntityFactory)getEFactoryInstance();
 	}
@@ -329,6 +340,7 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 
 		// Create classes and their features
 		exportEntitiesEClass = createEClass(EXPORT_ENTITIES);
+		createEAttribute(exportEntitiesEClass, EXPORT_ENTITIES__PATH_TO);
 	}
 
 	/**
@@ -369,6 +381,7 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(exportEntitiesEClass, ExportEntities.class, "ExportEntities", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getExportEntities_PathTo(), ecorePackage.getEString(), "pathTo", null, 1, 1, ExportEntities.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 	}
 
 } //EntityPackageImpl

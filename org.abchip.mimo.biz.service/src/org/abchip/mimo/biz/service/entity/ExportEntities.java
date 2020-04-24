@@ -15,10 +15,38 @@ import org.abchip.mimo.biz.service.BizServiceResponse;
  * A representation of the model object '<em><b>Export Entities</b></em>'.
  * <!-- end-user-doc -->
  *
+ * <p>
+ * The following features are supported:
+ * </p>
+ * <ul>
+ *   <li>{@link org.abchip.mimo.biz.service.entity.ExportEntities#getPathTo <em>Path To</em>}</li>
+ * </ul>
  *
  * @see org.abchip.mimo.biz.service.entity.EntityPackage#getExportEntities()
  * @model
  * @generated
  */
 public interface ExportEntities extends BizServiceRequest<BizServiceResponse> {
+
+	/**
+	 * Returns the value of the '<em><b>Path To</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Path To</em>' attribute.
+	 * @see #setPathTo(String)
+	 * @see org.abchip.mimo.biz.service.entity.EntityPackage#getExportEntities_PathTo()
+	 * @model required="true"
+	 * @generated
+	 */
+	String getPathTo();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.service.entity.ExportEntities#getPathTo <em>Path To</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Path To</em>' attribute.
+	 * @see #getPathTo()
+	 * @generated
+	 */
+	void setPathTo(String value);
 } // ExportEntities

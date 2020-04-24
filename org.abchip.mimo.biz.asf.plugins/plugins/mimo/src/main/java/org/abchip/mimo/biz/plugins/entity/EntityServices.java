@@ -64,10 +64,6 @@ public class EntityServices {
 
 	private static final Logger LOGGER = Logs.getLogger(EntityServices.class);
 
-	// private static final String PATH =
-	// "C:\\Users\\giugianc_new\\Develop\\ofbiz\\";
-	private static final String PATH = "/home/mattia/ofbiz/";
-
 	public static Map<String, Object> exportEntities(DispatchContext dctx, Map<String, Object> context) {
 
 		Delegator delegator = dctx.getDelegator();
@@ -93,10 +89,9 @@ public class EntityServices {
 
 			reorderFeatures(bizPackage, entityNames);
 
-			writePackage(bizPackage);
+			writePackage(bizPackage, context);
 
 			Map<String, Object> resultMap = ServiceUtil.returnSuccess("OK");
-			resultMap.put("entityModelPath", PATH);
 
 			return resultMap;
 		} catch (GenericEntityException e) {
@@ -760,7 +755,7 @@ public class EntityServices {
 		}
 	}
 
-	private static void writePackage(EPackage bizPackage) {
+	private static void writePackage(EPackage bizPackage, Map<String, Object> context) {
 
 		ResourceSet resourceSet = new ResourceSetImpl();
 		resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", new EcoreResourceFactoryImpl());
@@ -768,7 +763,8 @@ public class EntityServices {
 		Resource resource = resourceSet.createResource(URI.createURI("biz-model.ecore"));
 		resource.getContents().add(bizPackage);
 
-		File file = new File(PATH + resource.getURI().lastSegment());
+		String pathTo = context.get("pathTo").toString();
+		File file = new File(pathTo + resource.getURI().lastSegment());
 
 		try (FileOutputStream fos = new FileOutputStream(file)) {
 			resource.save(fos, null);

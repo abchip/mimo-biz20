@@ -30,6 +30,7 @@ public class ServiceTestCommands extends BaseTestCommands {
 
 		Context context = this.getContext();
 		ExportEntities request = serviceManager.prepare(context, ExportEntities.class);
+		request.setPathTo(this.nextArgument(interpreter));
 		serviceManager.execute(request);
 	}
 

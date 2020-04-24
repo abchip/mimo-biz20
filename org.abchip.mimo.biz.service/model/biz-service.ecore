@@ -28,6 +28,8 @@
   <eSubpackages name="entity" nsURI="http://www.abchip.org/mimo/biz/service/entity"
       nsPrefix="biz-entity">
     <eClassifiers xsi:type="ecore:EClass" name="ExportEntities">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="pathTo" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       <eGenericSuperTypes eClassifier="#//BizServiceRequest">
         <eTypeArguments eClassifier="#//BizServiceResponse"/>
       </eGenericSuperTypes>

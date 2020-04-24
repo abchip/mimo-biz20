@@ -68,6 +68,7 @@ import org.abchip.mimo.biz.model.webapp.visit.VisitPackage;
 import org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.service.BizServicePackage;
+import org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl;
 import org.abchip.mimo.biz.service.impl.BizServicePackageImpl;
 import org.abchip.mimo.biz.service.product.CalculateProductPrice;
 import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
@@ -216,7 +217,7 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
 		BizServicePackageImpl theBizServicePackage = (BizServicePackageImpl)(registeredPackage instanceof BizServicePackageImpl ? registeredPackage : BizServicePackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.entity.EntityPackage.eNS_URI);
-		org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl theEntityPackage_1 = (org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl)(registeredPackage instanceof org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.entity.EntityPackage.eINSTANCE);
+		EntityPackageImpl theEntityPackage_1 = (EntityPackageImpl)(registeredPackage instanceof EntityPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.entity.EntityPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theProductPackage.createPackageContents();
