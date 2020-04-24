@@ -27,6 +27,7 @@ public class ServiceTestCommands extends BaseTestCommands {
 	private ServiceManager serviceManager;
 
 	public void _st_ecore(CommandInterpreter interpreter) throws Exception {
+		
 		ExportEntities request = serviceManager.prepare(this.getContext(), ExportEntities.class);
 		request.setPathTo(this.nextArgument(interpreter, "/home/mattia/ofbiz/"));
 		serviceManager.submit(request);
@@ -61,7 +62,6 @@ public class ServiceTestCommands extends BaseTestCommands {
 
 		for (OrderItemPriceInfo orderItemPriceInfo : response.getOrderItemPriceInfos())
 			interpreter.println(orderItemPriceInfo);
-
 	}
 
 	@Override
