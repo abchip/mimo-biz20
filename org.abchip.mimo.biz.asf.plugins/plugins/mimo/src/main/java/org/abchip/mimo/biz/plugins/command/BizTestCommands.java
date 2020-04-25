@@ -64,8 +64,18 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
 import org.abchip.mimo.biz.plugins.entity.EntityUtils;
 import org.abchip.mimo.biz.plugins.paymentGateway.StripePaymentManager;
+import org.abchip.mimo.biz.service.accounting.SetInvoiceStatus;
+import org.abchip.mimo.biz.service.accounting.SetInvoiceStatusResponse;
+import org.abchip.mimo.biz.service.accounting.SetPaymentStatus;
+import org.abchip.mimo.biz.service.accounting.SetPaymentStatusResponse;
 import org.abchip.mimo.biz.service.order.ChangeOrderStatus;
 import org.abchip.mimo.biz.service.order.ChangeOrderStatusResponse;
+import org.abchip.mimo.biz.service.order.ReserveStoreInventory;
+import org.abchip.mimo.biz.service.order.ReserveStoreInventoryResponse;
+import org.abchip.mimo.biz.service.order.ResetGrandTotal;
+import org.abchip.mimo.biz.service.order.ResetGrandTotalResponse;
+import org.abchip.mimo.biz.service.product.CalcTaxForDisplay;
+import org.abchip.mimo.biz.service.product.CalcTaxForDisplayResponse;
 import org.abchip.mimo.biz.service.product.CalculateProductPrice;
 import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
 import org.abchip.mimo.context.Context;
@@ -477,46 +487,37 @@ public class BizTestCommands extends BaseTestCommands {
 				OrderItem orderItem = orderItemReader.lookup(orderHeader.getOrderId() + "/" + orderItemShipGroupAssoc.getOrderItemSeqId());
 
 				// reserve the product
-				Map<String, Object> reserveInput = new HashMap<>();
-				reserveInput.put("productStoreId", PRODUCT_STORE_ID);
-				reserveInput.put("productId", orderItem.getProductId().getProductId());
-				reserveInput.put("orderId", orderItem.getOrderId().getOrderId());
-				reserveInput.put("orderItemSeqId", orderItem.getOrderItemSeqId());
-				reserveInput.put("shipGroupSeqId", orderItemShipGroupAssoc.getShipGroupSeqId());
+				ReserveStoreInventory reserveStoreInventory = serviceManager.prepare(context, ReserveStoreInventory.class);
+				reserveStoreInventory.setProductStoreId(PRODUCT_STORE_ID);
+				reserveStoreInventory.setProductId(orderItem.getProductId().getProductId());
+				reserveStoreInventory.setOrderId(orderItem.getOrderId().getOrderId());
+				reserveStoreInventory.setOrderItemSeqId(orderItem.getOrderItemSeqId());
+				reserveStoreInventory.setShipGroupSeqId(orderItemShipGroupAssoc.getShipGroupSeqId());
 				// verificare da dove prenderlo
-				reserveInput.put("facilityId", null);
+				reserveStoreInventory.setFacilityId(null);
 				// use the quantity from the orderItemShipGroupAssoc, NOT the orderItem, these
 				// are reserved by item-group assoc
-				reserveInput.put("quantity", orderItemShipGroupAssoc.getQuantity());
+				reserveStoreInventory.setQuantity(orderItemShipGroupAssoc.getQuantity());
 
-				GenericValue bizUserLogin = EntityUtils.toBizEntity(delegator, userLogin);
-				reserveInput.put("userLogin", bizUserLogin);
+				ReserveStoreInventoryResponse response = serviceManager.execute(reserveStoreInventory);
 
-				try {
-					Map<String, Object> reserveResult = dispatcher.runSync("reserveStoreInventory", reserveInput);
-					if (ServiceUtil.isError(reserveResult)) {
-						String invErrMsg = "The product ";
-						invErrMsg += orderItem.getProductId();
-						invErrMsg += " with ID " + orderItem.getProductId() + " is no longer in stock. Please try reducing the quantity or removing the product from this order.";
-						interpreter.println(invErrMsg);
-					}
-				} catch (GenericServiceException e) {
-					e.printStackTrace();
+				if (response.isError()) {
+					String invErrMsg = "The product ";
+					invErrMsg += orderItem.getProductId();
+					invErrMsg += " with ID " + orderItem.getProductId() + " is no longer in stock. Please try reducing the quantity or removing the product from this order.";
+					interpreter.println(invErrMsg);
 				}
+
 			}
 		}
-		// Update Total OrderHeader (OrderServices)
-		Map<String, Object> updateOrder = new HashMap<>();
-		updateOrder.put("orderId", orderHeader.getOrderId());
-		Map<String, Object> updateOrderResult = new HashMap<>();
-		try {
-			updateOrderResult = dispatcher.runSync("resetGrandTotal", updateOrder);
-			if (ServiceUtil.isError(updateOrderResult)) {
-				interpreter.println("Errore in aggiornamento testata documento");
-			}
 
-		} catch (GenericServiceException e) {
-			e.printStackTrace();
+		// Update Total OrderHeader (OrderServices)
+		ResetGrandTotal resetGrandTotal = serviceManager.prepare(context, ResetGrandTotal.class);
+		resetGrandTotal.setOrderId(orderHeader.getOrderId());
+		ResetGrandTotalResponse response = serviceManager.execute(resetGrandTotal);
+		if (response.isError()) {
+			interpreter.println("Errore in aggiornamento testata documento");
+			return;
 		}
 
 		interpreter.println("New order created: " + orderHeader.getOrderId());
@@ -695,12 +696,12 @@ public class BizTestCommands extends BaseTestCommands {
 		calculateProductPrice.setProduct(product);
 		calculateProductPrice.setCurrencyUomId(UomServices.getUom(context).getID());
 
-		CalculateProductPriceResponse response = serviceManager.execute(calculateProductPrice);
-		if (response.isError())
+		CalculateProductPriceResponse productPrice = serviceManager.execute(calculateProductPrice);
+		if (productPrice.isError())
 			interpreter.println("Errore in recupero prezzo articolo " + item);
 
-		if (response.isValidPriceFound()) {
-			invoiceItem.setAmount(response.getBasePrice());
+		if (productPrice.isValidPriceFound()) {
+			invoiceItem.setAmount(productPrice.getBasePrice());
 		} else
 			interpreter.println("Prezzo non valido per articolo " + item);
 
@@ -731,64 +732,48 @@ public class BizTestCommands extends BaseTestCommands {
 		if (taxAuthGeoId == null || taxAuthGeoId.isEmpty())
 			taxAuthGeoId = TAX_AUTH_GEO_ID;
 
-		Map<String, Object> taxContext = new HashMap<>();
-		Map<String, Object> taxResult = new HashMap<>();
-
-		taxContext.put("basePrice", response.getBasePrice());
-		taxContext.put("productId", item);
-		taxContext.put("productStoreId", PRODUCT_STORE_ID);
-		try {
-			taxResult = dispatcher.runSync("calcTaxForDisplay", taxContext);
-			if (ServiceUtil.isError(taxResult)) {
-				interpreter.println("Errore in recupero tasse per articolo " + item);
-			}
-		} catch (GenericServiceException e) {
-			e.printStackTrace();
+		CalcTaxForDisplay calcTaxForDisplay = serviceManager.prepare(context, CalcTaxForDisplay.class);
+		calcTaxForDisplay.setBasePrice(productPrice.getBasePrice());
+		calcTaxForDisplay.setProductId(item);
+		calcTaxForDisplay.setProductStoreId(PRODUCT_STORE_ID);
+		CalcTaxForDisplayResponse taxForDisplay = serviceManager.execute(calcTaxForDisplay);
+		if (taxForDisplay.isError()) {
+			interpreter.println("Errore in recupero tasse per articolo " + item);
+			return;
 		}
 
-		BigDecimal taxTotal = null;
+		Party taxAutPartyId = context.createProxy(Party.class, taxAuthPartyId);
+		Geo taxAutGeo = context.createProxy(Geo.class, taxAuthGeoId);
+		// result.put("taxTotal", taxTotal);
+		// result.put("taxPercentage", taxPercentage);
+		// result.put("priceWithTax", priceWithTax);
 
-		if (taxResult.get("taxTotal") != null) {
-			taxTotal = (BigDecimal) taxResult.get("taxTotal");
+		invoiceItem = invoiceItemWriter.make();
+		invoiceItem.setInvoiceId(invoice);
+
+		invoiceItemValue = EntityUtils.toBizEntity(delegator, invoiceItem);
+		invoiceItemSeqId = getNextSubSeqId(delegator, invoiceItemValue, "invoiceItemSeqId");
+
+		invoiceItem.setInvoiceItemSeqId(invoiceItemSeqId);
+		invoiceItem.setInvoiceItemTypeId(context.createProxy(InvoiceItemType.class, "ITM_SALES_TAX"));
+
+		invoiceItem.setProductId(product);
+
+		invoiceItem.setParentInvoiceId(invoice.getID());
+		invoiceItem.setParentInvoiceItemSeqId(saveInvoiceItemSeqId);
+
+		invoiceItem.setQuantity(new BigDecimal(quantity));
+		invoiceItem.setAmount((taxForDisplay.getTaxTotal()));
+
+		// TODO verify
+		invoiceItem.setTaxAuthPartyId(taxAutPartyId);
+		invoiceItem.setTaxAuthGeoId(taxAutGeo);
+		if (!taxAuthorityRateSeqId.isEmpty()) {
+			TaxAuthorityRateProduct taxAuthorityRateProduct = context.createProxy(TaxAuthorityRateProduct.class, taxAuthorityRateSeqId);
+			invoiceItem.setTaxAuthorityRateSeqId(taxAuthorityRateProduct);
 		}
 
-		if (taxTotal.signum() > 0) {
-
-			if (taxResult.get("taxTotal") != null) {
-				Party taxAutPartyId = context.createProxy(Party.class, taxAuthPartyId);
-				Geo taxAutGeo = context.createProxy(Geo.class, taxAuthGeoId);
-				// result.put("taxTotal", taxTotal);
-				// result.put("taxPercentage", taxPercentage);
-				// result.put("priceWithTax", priceWithTax);
-
-				invoiceItem = invoiceItemWriter.make();
-				invoiceItem.setInvoiceId(invoice);
-
-				invoiceItemValue = EntityUtils.toBizEntity(delegator, invoiceItem);
-				invoiceItemSeqId = getNextSubSeqId(delegator, invoiceItemValue, "invoiceItemSeqId");
-
-				invoiceItem.setInvoiceItemSeqId(invoiceItemSeqId);
-				invoiceItem.setInvoiceItemTypeId(context.createProxy(InvoiceItemType.class, "ITM_SALES_TAX"));
-
-				invoiceItem.setProductId(product);
-
-				invoiceItem.setParentInvoiceId(invoice.getID());
-				invoiceItem.setParentInvoiceItemSeqId(saveInvoiceItemSeqId);
-
-				invoiceItem.setQuantity(new BigDecimal(quantity));
-				invoiceItem.setAmount((taxTotal));
-
-				// TODO verify
-				invoiceItem.setTaxAuthPartyId(taxAutPartyId);
-				invoiceItem.setTaxAuthGeoId(taxAutGeo);
-				if (!taxAuthorityRateSeqId.isEmpty()) {
-					TaxAuthorityRateProduct taxAuthorityRateProduct = context.createProxy(TaxAuthorityRateProduct.class, taxAuthorityRateSeqId);
-					invoiceItem.setTaxAuthorityRateSeqId(taxAuthorityRateProduct);
-				}
-
-				invoiceItemWriter.create(invoiceItem, true);
-			}
-		}
+		invoiceItemWriter.create(invoiceItem, true);
 	}
 
 	private void createAgreement(CommandInterpreter interpreter, Context context, String partyId) throws ResourceException, ServiceException {
@@ -1044,57 +1029,34 @@ public class BizTestCommands extends BaseTestCommands {
 		}
 	}
 
-	private boolean setPaymentStatus(CommandInterpreter interpreter, Context context, String paymentId, String statusPayment) throws ResourceException {
+	private boolean setPaymentStatus(CommandInterpreter interpreter, Context context, String paymentId, String statusPaymentId) throws ResourceException, ServiceException {
 
-		Delegator delegator = DelegatorFactory.getDelegator(null);
-		LocalDispatcher dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
-
-		ResourceReader<UserLogin> userLoginReader = resourceManager.getResourceReader(context, UserLogin.class);
-		UserLogin userLoginEntity = userLoginReader.lookup(USER_LOGIN_ID);
-		GenericValue userLogin = EntityUtils.toBizEntity(delegator, userLoginEntity);
-		Map<String, Object> paymentStatusContext = new HashMap<>();
-		Map<String, Object> paymentStatusResult = new HashMap<>();
-
-		try {
-			paymentStatusContext.put("paymentId", paymentId);
-			paymentStatusContext.put("statusId", statusPayment);
-			paymentStatusContext.put("userLogin", userLogin);
-			paymentStatusResult = dispatcher.runSync("setPaymentStatus", paymentStatusContext);
-			if (ServiceUtil.isError(paymentStatusResult)) {
-				interpreter.println("Error in receive payment");
-				return false;
-			}
-		} catch (GenericServiceException e) {
-			e.printStackTrace();
+		SetPaymentStatus setPaymentStatus = serviceManager.prepare(context, SetPaymentStatus.class);
+		setPaymentStatus.setPaymentId(paymentId);
+		setPaymentStatus.setStatusId(statusPaymentId);
+		SetPaymentStatusResponse response = serviceManager.execute(setPaymentStatus);
+		if (response.isError()) {
+			interpreter.println("Error in receive payment");
+			return false;
 		}
+
 		return true;
 	}
 
-	private boolean setInvoiceStatus(CommandInterpreter interpreter, Context context, String invoiceId, String status) throws ResourceException {
+	private boolean setInvoiceStatus(CommandInterpreter interpreter, Context context, String invoiceId, String status) throws ResourceException, ServiceException {
 
-		Delegator delegator = DelegatorFactory.getDelegator(null);
-		LocalDispatcher dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
+		SetInvoiceStatus setInvoiceStatus = serviceManager.prepare(context, SetInvoiceStatus.class);
+		setInvoiceStatus.setInvoiceId(invoiceId);
+		setInvoiceStatus.setStatusId(status);
+		setInvoiceStatus.setPaidDate(new Date());
+		setInvoiceStatus.setStatusDate(new Date());
 
-		ResourceReader<UserLogin> userLoginReader = resourceManager.getResourceReader(context, UserLogin.class);
-		UserLogin userLoginEntity = userLoginReader.lookup(USER_LOGIN_ID);
-		GenericValue userLogin = EntityUtils.toBizEntity(delegator, userLoginEntity);
-		Map<String, Object> invoiceStatusContext = new HashMap<>();
-		Map<String, Object> invoiceStatusResult = new HashMap<>();
-
-		try {
-			invoiceStatusContext.put("invoiceId", invoiceId);
-			invoiceStatusContext.put("statusId", status);
-			invoiceStatusContext.put("paidDate", new Date());
-			invoiceStatusContext.put("statusDate", new Date());
-			invoiceStatusContext.put("userLogin", userLogin);
-			invoiceStatusResult = dispatcher.runSync("setInvoiceStatus", invoiceStatusContext);
-			if (ServiceUtil.isError(invoiceStatusResult)) {
-				interpreter.println("Error in approve invoice");
-				return false;
-			}
-		} catch (GenericServiceException e) {
-			e.printStackTrace();
+		SetInvoiceStatusResponse response = serviceManager.execute(setInvoiceStatus);
+		if (response.isError()) {
+			interpreter.println("Error in approve invoice");
+			return false;
 		}
+
 		return true;
 	}
 

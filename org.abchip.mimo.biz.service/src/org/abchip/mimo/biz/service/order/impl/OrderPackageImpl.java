@@ -127,6 +127,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 
 import org.abchip.mimo.biz.service.BizServicePackage;
 
+import org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl;
 import org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl;
 
 import org.abchip.mimo.biz.service.impl.BizServicePackageImpl;
@@ -136,6 +137,10 @@ import org.abchip.mimo.biz.service.order.ChangeOrderStatusResponse;
 import org.abchip.mimo.biz.service.order.OrderFactory;
 import org.abchip.mimo.biz.service.order.OrderPackage;
 
+import org.abchip.mimo.biz.service.order.ReserveStoreInventory;
+import org.abchip.mimo.biz.service.order.ReserveStoreInventoryResponse;
+import org.abchip.mimo.biz.service.order.ResetGrandTotal;
+import org.abchip.mimo.biz.service.order.ResetGrandTotalResponse;
 import org.abchip.mimo.biz.service.product.impl.ProductPackageImpl;
 
 import org.eclipse.emf.ecore.EAttribute;
@@ -165,6 +170,34 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	private EClass changeOrderStatusResponseEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass reserveStoreInventoryEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass reserveStoreInventoryResponseEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass resetGrandTotalEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass resetGrandTotalResponseEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -279,6 +312,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		// Obtain or create and register interdependencies
 		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
 		BizServicePackageImpl theBizServicePackage = (BizServicePackageImpl)(registeredPackage instanceof BizServicePackageImpl ? registeredPackage : BizServicePackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.accounting.AccountingPackage.eNS_URI);
+		AccountingPackageImpl theAccountingPackage_1 = (AccountingPackageImpl)(registeredPackage instanceof AccountingPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.accounting.AccountingPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.entity.EntityPackage.eNS_URI);
 		EntityPackageImpl theEntityPackage_1 = (EntityPackageImpl)(registeredPackage instanceof EntityPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.entity.EntityPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.product.ProductPackage.eNS_URI);
@@ -287,12 +322,14 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		// Create package meta-data objects
 		theOrderPackage.createPackageContents();
 		theBizServicePackage.createPackageContents();
+		theAccountingPackage_1.createPackageContents();
 		theEntityPackage_1.createPackageContents();
 		theProductPackage_1.createPackageContents();
 
 		// Initialize created meta-data
 		theOrderPackage.initializePackageContents();
 		theBizServicePackage.initializePackageContents();
+		theAccountingPackage_1.initializePackageContents();
 		theEntityPackage_1.initializePackageContents();
 		theProductPackage_1.initializePackageContents();
 
@@ -420,6 +457,136 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getReserveStoreInventory() {
+		return reserveStoreInventoryEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getReserveStoreInventory_FacilityId() {
+		return (EAttribute)reserveStoreInventoryEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getReserveStoreInventory_OrderId() {
+		return (EAttribute)reserveStoreInventoryEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getReserveStoreInventory_OrderItemSeqId() {
+		return (EAttribute)reserveStoreInventoryEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getReserveStoreInventory_ProductId() {
+		return (EAttribute)reserveStoreInventoryEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getReserveStoreInventory_ProductStoreId() {
+		return (EAttribute)reserveStoreInventoryEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getReserveStoreInventory_Quantity() {
+		return (EAttribute)reserveStoreInventoryEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getReserveStoreInventory_ShipGroupSeqId() {
+		return (EAttribute)reserveStoreInventoryEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getReserveStoreInventoryResponse() {
+		return reserveStoreInventoryResponseEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getReserveStoreInventoryResponse_QuantityNotReserved() {
+		return (EAttribute)reserveStoreInventoryResponseEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getResetGrandTotal() {
+		return resetGrandTotalEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getResetGrandTotal_OrderId() {
+		return (EAttribute)resetGrandTotalEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getResetGrandTotalResponse() {
+		return resetGrandTotalResponseEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public OrderFactory getOrderFactory() {
 		return (OrderFactory)getEFactoryInstance();
 	}
@@ -455,6 +622,23 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		createEAttribute(changeOrderStatusResponseEClass, CHANGE_ORDER_STATUS_RESPONSE__OLD_STATUS_ID);
 		createEAttribute(changeOrderStatusResponseEClass, CHANGE_ORDER_STATUS_RESPONSE__ORDER_STATUS_ID);
 		createEAttribute(changeOrderStatusResponseEClass, CHANGE_ORDER_STATUS_RESPONSE__ORDER_TYPE_ID);
+
+		reserveStoreInventoryEClass = createEClass(RESERVE_STORE_INVENTORY);
+		createEAttribute(reserveStoreInventoryEClass, RESERVE_STORE_INVENTORY__FACILITY_ID);
+		createEAttribute(reserveStoreInventoryEClass, RESERVE_STORE_INVENTORY__ORDER_ID);
+		createEAttribute(reserveStoreInventoryEClass, RESERVE_STORE_INVENTORY__ORDER_ITEM_SEQ_ID);
+		createEAttribute(reserveStoreInventoryEClass, RESERVE_STORE_INVENTORY__PRODUCT_ID);
+		createEAttribute(reserveStoreInventoryEClass, RESERVE_STORE_INVENTORY__PRODUCT_STORE_ID);
+		createEAttribute(reserveStoreInventoryEClass, RESERVE_STORE_INVENTORY__QUANTITY);
+		createEAttribute(reserveStoreInventoryEClass, RESERVE_STORE_INVENTORY__SHIP_GROUP_SEQ_ID);
+
+		reserveStoreInventoryResponseEClass = createEClass(RESERVE_STORE_INVENTORY_RESPONSE);
+		createEAttribute(reserveStoreInventoryResponseEClass, RESERVE_STORE_INVENTORY_RESPONSE__QUANTITY_NOT_RESERVED);
+
+		resetGrandTotalEClass = createEClass(RESET_GRAND_TOTAL);
+		createEAttribute(resetGrandTotalEClass, RESET_GRAND_TOTAL__ORDER_ID);
+
+		resetGrandTotalResponseEClass = createEClass(RESET_GRAND_TOTAL_RESPONSE);
 	}
 
 	/**
@@ -493,6 +677,16 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		g1.getETypeArguments().add(g2);
 		changeOrderStatusEClass.getEGenericSuperTypes().add(g1);
 		changeOrderStatusResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
+		g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
+		g2 = createEGenericType(this.getReserveStoreInventoryResponse());
+		g1.getETypeArguments().add(g2);
+		reserveStoreInventoryEClass.getEGenericSuperTypes().add(g1);
+		reserveStoreInventoryResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
+		g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
+		g2 = createEGenericType(this.getResetGrandTotalResponse());
+		g1.getETypeArguments().add(g2);
+		resetGrandTotalEClass.getEGenericSuperTypes().add(g1);
+		resetGrandTotalResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(changeOrderStatusEClass, ChangeOrderStatus.class, "ChangeOrderStatus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -507,6 +701,23 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		initEAttribute(getChangeOrderStatusResponse_OldStatusId(), ecorePackage.getEString(), "oldStatusId", null, 1, 1, ChangeOrderStatusResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getChangeOrderStatusResponse_OrderStatusId(), ecorePackage.getEString(), "orderStatusId", null, 0, 1, ChangeOrderStatusResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getChangeOrderStatusResponse_OrderTypeId(), ecorePackage.getEString(), "orderTypeId", null, 0, 1, ChangeOrderStatusResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(reserveStoreInventoryEClass, ReserveStoreInventory.class, "ReserveStoreInventory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getReserveStoreInventory_FacilityId(), ecorePackage.getEString(), "facilityId", null, 0, 1, ReserveStoreInventory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getReserveStoreInventory_OrderId(), ecorePackage.getEString(), "orderId", null, 0, 1, ReserveStoreInventory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getReserveStoreInventory_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 0, 1, ReserveStoreInventory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getReserveStoreInventory_ProductId(), ecorePackage.getEString(), "productId", null, 1, 1, ReserveStoreInventory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getReserveStoreInventory_ProductStoreId(), ecorePackage.getEString(), "productStoreId", null, 1, 1, ReserveStoreInventory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getReserveStoreInventory_Quantity(), ecorePackage.getEBigDecimal(), "quantity", null, 1, 1, ReserveStoreInventory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getReserveStoreInventory_ShipGroupSeqId(), ecorePackage.getEString(), "shipGroupSeqId", null, 0, 1, ReserveStoreInventory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(reserveStoreInventoryResponseEClass, ReserveStoreInventoryResponse.class, "ReserveStoreInventoryResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getReserveStoreInventoryResponse_QuantityNotReserved(), ecorePackage.getEBigDecimal(), "quantityNotReserved", null, 1, 1, ReserveStoreInventoryResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(resetGrandTotalEClass, ResetGrandTotal.class, "ResetGrandTotal", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getResetGrandTotal_OrderId(), ecorePackage.getEString(), "orderId", null, 0, 1, ResetGrandTotal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(resetGrandTotalResponseEClass, ResetGrandTotalResponse.class, "ResetGrandTotalResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 	}
 
 } //OrderPackageImpl

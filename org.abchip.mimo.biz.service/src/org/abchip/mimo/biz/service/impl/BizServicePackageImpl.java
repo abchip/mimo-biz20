@@ -130,6 +130,7 @@ import org.abchip.mimo.biz.service.BizServiceFactory;
 import org.abchip.mimo.biz.service.BizServicePackage;
 import org.abchip.mimo.biz.service.BizServiceRequest;
 import org.abchip.mimo.biz.service.BizServiceResponse;
+import org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl;
 import org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl;
 import org.abchip.mimo.biz.service.order.impl.OrderPackageImpl;
 import org.abchip.mimo.biz.service.product.impl.ProductPackageImpl;
@@ -276,7 +277,9 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 		MimoPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.entity.EntityPackage.eNS_URI);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.accounting.AccountingPackage.eNS_URI);
+		AccountingPackageImpl theAccountingPackage_1 = (AccountingPackageImpl)(registeredPackage instanceof AccountingPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.accounting.AccountingPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.entity.EntityPackage.eNS_URI);
 		EntityPackageImpl theEntityPackage_1 = (EntityPackageImpl)(registeredPackage instanceof EntityPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.entity.EntityPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.order.OrderPackage.eNS_URI);
 		OrderPackageImpl theOrderPackage_1 = (OrderPackageImpl)(registeredPackage instanceof OrderPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.order.OrderPackage.eINSTANCE);
@@ -285,12 +288,14 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 
 		// Create package meta-data objects
 		theBizServicePackage.createPackageContents();
+		theAccountingPackage_1.createPackageContents();
 		theEntityPackage_1.createPackageContents();
 		theOrderPackage_1.createPackageContents();
 		theProductPackage_1.createPackageContents();
 
 		// Initialize created meta-data
 		theBizServicePackage.initializePackageContents();
+		theAccountingPackage_1.initializePackageContents();
 		theEntityPackage_1.initializePackageContents();
 		theOrderPackage_1.initializePackageContents();
 		theProductPackage_1.initializePackageContents();
@@ -392,6 +397,7 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
+		org.abchip.mimo.biz.service.accounting.AccountingPackage theAccountingPackage_1 = (org.abchip.mimo.biz.service.accounting.AccountingPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.accounting.AccountingPackage.eNS_URI);
 		org.abchip.mimo.biz.service.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.biz.service.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.entity.EntityPackage.eNS_URI);
 		org.abchip.mimo.biz.service.order.OrderPackage theOrderPackage_1 = (org.abchip.mimo.biz.service.order.OrderPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.order.OrderPackage.eNS_URI);
 		org.abchip.mimo.biz.service.product.ProductPackage theProductPackage_1 = (org.abchip.mimo.biz.service.product.ProductPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.product.ProductPackage.eNS_URI);
@@ -399,6 +405,7 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 		LoginPackage theLoginPackage = (LoginPackage)EPackage.Registry.INSTANCE.getEPackage(LoginPackage.eNS_URI);
 
 		// Add subpackages
+		getESubpackages().add(theAccountingPackage_1);
 		getESubpackages().add(theEntityPackage_1);
 		getESubpackages().add(theOrderPackage_1);
 		getESubpackages().add(theProductPackage_1);

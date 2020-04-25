@@ -45,6 +45,42 @@ public interface OrderFactory extends EFactory {
 	ChangeOrderStatusResponse createChangeOrderStatusResponse();
 
 	/**
+	 * Returns a new object of class '<em>Reserve Store Inventory</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Reserve Store Inventory</em>'.
+	 * @generated
+	 */
+	ReserveStoreInventory createReserveStoreInventory();
+
+	/**
+	 * Returns a new object of class '<em>Reserve Store Inventory Response</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Reserve Store Inventory Response</em>'.
+	 * @generated
+	 */
+	ReserveStoreInventoryResponse createReserveStoreInventoryResponse();
+
+	/**
+	 * Returns a new object of class '<em>Reset Grand Total</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Reset Grand Total</em>'.
+	 * @generated
+	 */
+	ResetGrandTotal createResetGrandTotal();
+
+	/**
+	 * Returns a new object of class '<em>Reset Grand Total Response</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Reset Grand Total Response</em>'.
+	 * @generated
+	 */
+	ResetGrandTotalResponse createResetGrandTotalResponse();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

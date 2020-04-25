@@ -63,6 +63,10 @@ public class OrderFactoryImpl extends EFactoryImpl implements OrderFactory {
 		switch (eClass.getClassifierID()) {
 			case OrderPackage.CHANGE_ORDER_STATUS: return (EObject)createChangeOrderStatus();
 			case OrderPackage.CHANGE_ORDER_STATUS_RESPONSE: return (EObject)createChangeOrderStatusResponse();
+			case OrderPackage.RESERVE_STORE_INVENTORY: return (EObject)createReserveStoreInventory();
+			case OrderPackage.RESERVE_STORE_INVENTORY_RESPONSE: return (EObject)createReserveStoreInventoryResponse();
+			case OrderPackage.RESET_GRAND_TOTAL: return (EObject)createResetGrandTotal();
+			case OrderPackage.RESET_GRAND_TOTAL_RESPONSE: return (EObject)createResetGrandTotalResponse();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -88,6 +92,50 @@ public class OrderFactoryImpl extends EFactoryImpl implements OrderFactory {
 	public ChangeOrderStatusResponse createChangeOrderStatusResponse() {
 		ChangeOrderStatusResponseImpl changeOrderStatusResponse = new ChangeOrderStatusResponseImpl();
 		return changeOrderStatusResponse;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ReserveStoreInventory createReserveStoreInventory() {
+		ReserveStoreInventoryImpl reserveStoreInventory = new ReserveStoreInventoryImpl();
+		return reserveStoreInventory;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ReserveStoreInventoryResponse createReserveStoreInventoryResponse() {
+		ReserveStoreInventoryResponseImpl reserveStoreInventoryResponse = new ReserveStoreInventoryResponseImpl();
+		return reserveStoreInventoryResponse;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ResetGrandTotal createResetGrandTotal() {
+		ResetGrandTotalImpl resetGrandTotal = new ResetGrandTotalImpl();
+		return resetGrandTotal;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ResetGrandTotalResponse createResetGrandTotalResponse() {
+		ResetGrandTotalResponseImpl resetGrandTotalResponse = new ResetGrandTotalResponseImpl();
+		return resetGrandTotalResponse;
 	}
 
 	/**

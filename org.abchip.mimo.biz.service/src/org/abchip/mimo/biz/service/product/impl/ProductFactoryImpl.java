@@ -62,6 +62,8 @@ public class ProductFactoryImpl extends EFactoryImpl implements ProductFactory {
 		switch (eClass.getClassifierID()) {
 			case ProductPackage.CALCULATE_PRODUCT_PRICE: return (EObject)createCalculateProductPrice();
 			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE: return (EObject)createCalculateProductPriceResponse();
+			case ProductPackage.CALC_TAX_FOR_DISPLAY: return (EObject)createCalcTaxForDisplay();
+			case ProductPackage.CALC_TAX_FOR_DISPLAY_RESPONSE: return (EObject)createCalcTaxForDisplayResponse();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -87,6 +89,28 @@ public class ProductFactoryImpl extends EFactoryImpl implements ProductFactory {
 	public CalculateProductPriceResponse createCalculateProductPriceResponse() {
 		CalculateProductPriceResponseImpl calculateProductPriceResponse = new CalculateProductPriceResponseImpl();
 		return calculateProductPriceResponse;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CalcTaxForDisplay createCalcTaxForDisplay() {
+		CalcTaxForDisplayImpl calcTaxForDisplay = new CalcTaxForDisplayImpl();
+		return calcTaxForDisplay;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CalcTaxForDisplayResponse createCalcTaxForDisplayResponse() {
+		CalcTaxForDisplayResponseImpl calcTaxForDisplayResponse = new CalcTaxForDisplayResponseImpl();
+		return calcTaxForDisplayResponse;
 	}
 
 	/**
