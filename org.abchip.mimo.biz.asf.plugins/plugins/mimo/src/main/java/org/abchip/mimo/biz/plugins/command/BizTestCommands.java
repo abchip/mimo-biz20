@@ -64,12 +64,16 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
 import org.abchip.mimo.biz.plugins.entity.EntityUtils;
 import org.abchip.mimo.biz.plugins.paymentGateway.StripePaymentManager;
+import org.abchip.mimo.biz.service.product.CalculateProductPrice;
+import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.resource.ResourceWriter;
+import org.abchip.mimo.service.ServiceException;
+import org.abchip.mimo.service.ServiceManager;
 import org.abchip.mimo.tester.base.BaseTestCommands;
 import org.apache.ofbiz.accounting.invoice.InvoiceWorker;
 import org.apache.ofbiz.base.util.UtilFormatOut;
@@ -89,6 +93,8 @@ public class BizTestCommands extends BaseTestCommands {
 
 	@Inject
 	private ResourceManager resourceManager;
+	@Inject
+	private ServiceManager serviceManager;
 
 	private static final String USER_LOGIN_ID = "abchip";
 	private static final String approveOrderStatusId = "ORDER_APPROVED";
@@ -354,7 +360,7 @@ public class BizTestCommands extends BaseTestCommands {
 		interpreter.println("Order " + orderId + " deleted");
 	}
 
-	private void createOrder(CommandInterpreter interpreter, Context context, String partyId) throws ResourceException {
+	private void createOrder(CommandInterpreter interpreter, Context context, String partyId) throws ResourceException, ServiceException {
 
 		Party party = context.createProxy(Party.class, partyId);
 
@@ -548,7 +554,7 @@ public class BizTestCommands extends BaseTestCommands {
 	}
 
 	private void createOrderItem(CommandInterpreter interpreter, Context context, Delegator delegator, LocalDispatcher dispatcher, OrderHeader orderHeader, String itemSeqiD, String item,
-			int quantity, String shipGroupSeqId) throws ResourceException {
+			int quantity, String shipGroupSeqId) throws ResourceException, ServiceException {
 
 		ResourceWriter<OrderItem> orderItemWriter = resourceManager.getResourceWriter(context, OrderItem.class);
 
@@ -559,43 +565,27 @@ public class BizTestCommands extends BaseTestCommands {
 		orderItem.setProdCatalogId(PRODUCT_CATALOG_ID);
 
 		ResourceReader<Product> productReader = resourceManager.getResourceReader(context, Product.class);
-		Product productEntity = productReader.lookup(item);
-		orderItem.setProductId(productEntity);
-		orderItem.setItemDescription(productEntity.getProductName());
-
+		Product product = productReader.lookup(item);
+		orderItem.setProductId(product);
+		orderItem.setItemDescription(product.getProductName());
 		orderItem.setStatusId(context.createProxy(StatusItem.class, "ITEM_CREATED"));
 		orderItem.setQuantity(new BigDecimal(quantity));
+		orderItem.setUnitPrice(new BigDecimal(10));
 
-		// get price
-		// orderItem.setUnitPrice(new BigDecimal(10));
+		// price calculation
+		CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
+		calculateProductPrice.setProduct(product);
+		calculateProductPrice.setCurrencyUomId(UomServices.getUom(context).getID());
 
-		Map<String, Object> priceContext = new HashMap<>();
-		GenericValue product = EntityUtils.toBizEntity(delegator, productEntity);
-		priceContext.put("product", product);
-		priceContext.put("currencyUomId", UomServices.getUom(context).getID());
-		Map<String, Object> priceResult = new HashMap<>();
-		try {
-			priceResult = dispatcher.runSync("calculateProductPrice", priceContext);
-			if (ServiceUtil.isError(priceResult)) {
-				interpreter.println("Errore in recupero prezzo articolo " + item);
-			}
-			Boolean validPriceFound = (Boolean) priceResult.get("validPriceFound");
-			if (Boolean.FALSE.equals(validPriceFound)) {
-				interpreter.println("Prezzo non valido per articolo " + item);
-			}
+		CalculateProductPriceResponse response = serviceManager.execute(calculateProductPrice);
+		if (response.isError())
+			interpreter.println("Errore in recupero prezzo articolo " + item);
 
-			// (ShoppingCartItem)
-			orderItem.setUnitPrice(new BigDecimal(10));
-			if (priceResult.get("listPrice") != null) {
-				orderItem.setUnitListPrice(((BigDecimal) priceResult.get("listPrice")));
-			}
-
-			if (priceResult.get("basePrice") != null) {
-				orderItem.setUnitPrice(((BigDecimal) priceResult.get("basePrice")));
-			}
-		} catch (GenericServiceException e) {
-			e.printStackTrace();
-		}
+		if (response.isValidPriceFound()) {
+			orderItem.setUnitListPrice(response.getListPrice());
+			orderItem.setUnitPrice(response.getBasePrice());
+		} else
+			interpreter.println("Prezzo non valido per articolo " + item);
 
 		orderItemWriter.create(orderItem, true);
 
@@ -712,7 +702,7 @@ public class BizTestCommands extends BaseTestCommands {
 	}
 
 	private void createInvoiceItem(CommandInterpreter interpreter, Context context, Delegator delegator, LocalDispatcher dispatcher, Invoice invoice, String item, int quantity,
-			String itemType) throws ResourceException {
+			String itemType) throws ResourceException, ServiceException {
 		ResourceWriter<InvoiceItem> invoiceItemWriter = resourceManager.getResourceWriter(context, InvoiceItem.class);
 
 		InvoiceItem invoiceItem = invoiceItemWriter.make();
@@ -726,41 +716,24 @@ public class BizTestCommands extends BaseTestCommands {
 		invoiceItem.setInvoiceItemTypeId(context.createProxy(InvoiceItemType.class, itemType));
 
 		ResourceReader<Product> productReader = resourceManager.getResourceReader(context, Product.class);
-		Product productEntity = productReader.lookup(item);
-		invoiceItem.setProductId(productEntity);
-		invoiceItem.setDescription(productEntity.getProductName());
+		Product product = productReader.lookup(item);
+		invoiceItem.setProductId(product);
+		invoiceItem.setDescription(product.getProductName());
 		invoiceItem.setQuantity(new BigDecimal(quantity));
 
-		Map<String, Object> priceContext = new HashMap<>();
-		GenericValue product = EntityUtils.toBizEntity(delegator, productEntity);
-		priceContext.put("product", product);
-		priceContext.put("currencyUomId", UomServices.getUom(context).getID());
-		Map<String, Object> priceResult = new HashMap<>();
+		// price calculation
+		CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
+		calculateProductPrice.setProduct(product);
+		calculateProductPrice.setCurrencyUomId(UomServices.getUom(context).getID());
 
-		BigDecimal price = new BigDecimal(0);
-		try {
-			priceResult = dispatcher.runSync("calculateProductPrice", priceContext);
-			if (ServiceUtil.isError(priceResult)) {
-				interpreter.println("Errore in recupero prezzo articolo " + item);
-			}
-			Boolean validPriceFound = (Boolean) priceResult.get("validPriceFound");
-			if (Boolean.FALSE.equals(validPriceFound)) {
-				interpreter.println("Prezzo non valido per articolo " + item);
-			}
+		CalculateProductPriceResponse response = serviceManager.execute(calculateProductPrice);
+		if (response.isError())
+			interpreter.println("Errore in recupero prezzo articolo " + item);
 
-			if (priceResult.get("listPrice") != null) {
-				price = ((BigDecimal) priceResult.get("listPrice"));
-			}
-
-			if (priceResult.get("basePrice") != null) {
-				price = ((BigDecimal) priceResult.get("basePrice"));
-			}
-
-			invoiceItem.setTaxableFlag(productEntity.getTaxable());
-			invoiceItem.setAmount(price);
-		} catch (GenericServiceException e) {
-			e.printStackTrace();
-		}
+		if (response.isValidPriceFound()) {
+			invoiceItem.setAmount(response.getBasePrice());
+		} else
+			interpreter.println("Prezzo non valido per articolo " + item);
 
 		invoiceItemWriter.create(invoiceItem, true);
 
@@ -792,7 +765,7 @@ public class BizTestCommands extends BaseTestCommands {
 		Map<String, Object> taxContext = new HashMap<>();
 		Map<String, Object> taxResult = new HashMap<>();
 
-		taxContext.put("basePrice", price);
+		taxContext.put("basePrice", response.getBasePrice());
 		taxContext.put("productId", item);
 		taxContext.put("productStoreId", PRODUCT_STORE_ID);
 		try {
@@ -828,7 +801,7 @@ public class BizTestCommands extends BaseTestCommands {
 				invoiceItem.setInvoiceItemSeqId(invoiceItemSeqId);
 				invoiceItem.setInvoiceItemTypeId(context.createProxy(InvoiceItemType.class, "ITM_SALES_TAX"));
 
-				invoiceItem.setProductId(productEntity);
+				invoiceItem.setProductId(product);
 
 				invoiceItem.setParentInvoiceId(invoice.getID());
 				invoiceItem.setParentInvoiceItemSeqId(saveInvoiceItemSeqId);
@@ -849,7 +822,7 @@ public class BizTestCommands extends BaseTestCommands {
 		}
 	}
 
-	private void createAgreement(CommandInterpreter interpreter, Context context, String partyId) throws ResourceException {
+	private void createAgreement(CommandInterpreter interpreter, Context context, String partyId) throws ResourceException, ServiceException {
 
 		Party partyFrom = PartyServices.getCompany(context);
 		Party partyTo = context.createProxy(Party.class, partyId);
@@ -942,11 +915,9 @@ public class BizTestCommands extends BaseTestCommands {
 		return genericValue.getString(fieldName);
 	}
 
-	private void createRowProduct(CommandInterpreter interpreter, Context context, Agreement agreement, String item, String itemSeqId) throws ResourceException {
+	private void createRowProduct(CommandInterpreter interpreter, Context context, Agreement agreement, String item, String itemSeqId) throws ResourceException, ServiceException {
 
 		Product productItem = context.createProxy(Product.class, item);
-		Delegator delegator = DelegatorFactory.getDelegator(null);
-		LocalDispatcher dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
 
 		// AgreementProductAppl
 		ResourceWriter<AgreementProductAppl> agreementProductApplWriter = resourceManager.getResourceWriter(context, AgreementProductAppl.class);
@@ -956,40 +927,26 @@ public class BizTestCommands extends BaseTestCommands {
 		agreementProductAppl.setProductId(productItem);
 
 		ResourceReader<Product> productReader = resourceManager.getResourceReader(context, Product.class);
-		Product productEntity = productReader.lookup(item);
+		Product product = productReader.lookup(item);
 
-		// price
+		// price calculation
+		CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
+		calculateProductPrice.setProduct(product);
+		calculateProductPrice.setCurrencyUomId(UomServices.getUom(context).getID());
 
-		Map<String, Object> priceContext = new HashMap<>();
-		GenericValue product = EntityUtils.toBizEntity(delegator, productEntity);
-		priceContext.put("product", product);
-		priceContext.put("currencyUomId", UomServices.getUom(context).getID());
-		Map<String, Object> priceResult = new HashMap<>();
-		try {
-			priceResult = dispatcher.runSync("calculateProductPrice", priceContext);
-			if (ServiceUtil.isError(priceResult)) {
-				interpreter.println("Errore in recupero prezzo articolo " + item);
-			}
-			Boolean validPriceFound = (Boolean) priceResult.get("validPriceFound");
-			if (Boolean.FALSE.equals(validPriceFound)) {
-				interpreter.println("Prezzo non valido per articolo " + item);
-			}
+		CalculateProductPriceResponse response = serviceManager.execute(calculateProductPrice);
+		if (response.isError())
+			interpreter.println("Errore in recupero prezzo articolo " + item);
 
-			if (priceResult.get("listPrice") != null) {
-				agreementProductAppl.setPrice(((BigDecimal) priceResult.get("listPrice")));
-			}
-
-			if (priceResult.get("basePrice") != null) {
-				agreementProductAppl.setPrice(((BigDecimal) priceResult.get("basePrice")));
-			}
-		} catch (GenericServiceException e) {
-			e.printStackTrace();
-		}
+		if (response.isValidPriceFound()) {
+			agreementProductAppl.setPrice(response.getBasePrice());
+		} else
+			interpreter.println("Prezzo non valido per articolo " + item);
 
 		agreementProductApplWriter.create(agreementProductAppl, true);
 	}
 
-	private void renewalAgreement(CommandInterpreter interpreter, Context context, String agreementId) throws ResourceException {
+	private void renewalAgreement(CommandInterpreter interpreter, Context context, String agreementId) throws ResourceException, ServiceException {
 
 		/*
 		 * il rinnovo del contratto avviene quando questo è ancora aperto (Agreement) ed

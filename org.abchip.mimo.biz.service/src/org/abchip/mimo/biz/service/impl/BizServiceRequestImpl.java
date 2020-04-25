@@ -217,7 +217,12 @@ public abstract class BizServiceRequestImpl<V extends ServiceResponse> extends S
 		this.locale = contextDescription.getLocale();
 		this.userLogin = context.createProxy(UserLogin.class, contextDescription.getUser());
 	}
-
+	
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
+	 * @generated NOT
+	 */
 	@Override
 	public Class<V> getResponse() {
 
