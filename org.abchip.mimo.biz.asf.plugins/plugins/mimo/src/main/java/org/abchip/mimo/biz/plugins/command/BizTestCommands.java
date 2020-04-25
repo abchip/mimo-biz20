@@ -64,6 +64,8 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
 import org.abchip.mimo.biz.plugins.entity.EntityUtils;
 import org.abchip.mimo.biz.plugins.paymentGateway.StripePaymentManager;
+import org.abchip.mimo.biz.service.order.ChangeOrderStatus;
+import org.abchip.mimo.biz.service.order.ChangeOrderStatusResponse;
 import org.abchip.mimo.biz.service.product.CalculateProductPrice;
 import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
 import org.abchip.mimo.context.Context;
@@ -97,9 +99,9 @@ public class BizTestCommands extends BaseTestCommands {
 	private ServiceManager serviceManager;
 
 	private static final String USER_LOGIN_ID = "abchip";
-	private static final String approveOrderStatusId = "ORDER_APPROVED";
-	private static final String holdOrderStatusId = "ORDER_HOLD";
-	private static final String cancelOrderStatusId = "ORDER_CANCELLED";
+	private static final String ORDER_STATUS_APPROVED = "ORDER_APPROVED";
+	private static final String ORDER_STATUS_HOLD = "ORDER_HOLD";
+	private static final String ORDER_STATUS_CANCELLED = "ORDER_CANCELLED";
 	private static final String PRODUCT_STORE_ID = "8000";
 	private static final String SHIPMENT_METHOD_TYPE_ID = "NO_SHIPPING";
 	private static final String CARRIER_ID = "_NA_";
@@ -237,26 +239,15 @@ public class BizTestCommands extends BaseTestCommands {
 			return;
 		}
 
-		ResourceReader<UserLogin> userLoginReader = resourceManager.getResourceReader(context, UserLogin.class);
-		Delegator delegator = DelegatorFactory.getDelegator(null);
-		LocalDispatcher dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
-		UserLogin userLoginEntity = userLoginReader.lookup(USER_LOGIN_ID);
-		Map<String, Object> orderStatusContext = new HashMap<>();
-		GenericValue userLogin = EntityUtils.toBizEntity(delegator, userLoginEntity);
-		orderStatusContext.put("userLogin", userLogin);
-		orderStatusContext.put("orderId", orderId);
-		orderStatusContext.put("statusId", approveOrderStatusId);
-		orderStatusContext.put("setItemStatus", "Y");
-		Map<String, Object> orderStatusResult = new HashMap<>();
+		ChangeOrderStatus changeOrderStatus = serviceManager.prepare(context, ChangeOrderStatus.class);
+		changeOrderStatus.setOrderId(orderId);
+		changeOrderStatus.setStatusId(ORDER_STATUS_APPROVED);
+		changeOrderStatus.setSetItemStatus(true);
+		ChangeOrderStatusResponse response = serviceManager.execute(changeOrderStatus);
 
-		try {
-			orderStatusResult = dispatcher.runSync("changeOrderStatus", orderStatusContext);
-			if (ServiceUtil.isError(orderStatusResult)) {
-				interpreter.println("Error in set status");
-				return;
-			}
-		} catch (GenericServiceException e) {
-			e.printStackTrace();
+		if (response.isError()) {
+			interpreter.println("Error in set status");
+			return;
 		}
 
 		interpreter.println("Order " + orderId + " approved");
@@ -286,26 +277,15 @@ public class BizTestCommands extends BaseTestCommands {
 			return;
 		}
 
-		ResourceReader<UserLogin> userLoginReader = resourceManager.getResourceReader(context, UserLogin.class);
-		Delegator delegator = DelegatorFactory.getDelegator(null);
-		LocalDispatcher dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
-		UserLogin userLoginEntity = userLoginReader.lookup(USER_LOGIN_ID);
-		Map<String, Object> orderStatusContext = new HashMap<>();
-		GenericValue userLogin = EntityUtils.toBizEntity(delegator, userLoginEntity);
-		orderStatusContext.put("userLogin", userLogin);
-		orderStatusContext.put("orderId", orderId);
-		orderStatusContext.put("statusId", holdOrderStatusId);
-		orderStatusContext.put("setItemStatus", "Y");
-		Map<String, Object> orderStatusResult = new HashMap<>();
+		ChangeOrderStatus changeOrderStatus = serviceManager.prepare(context, ChangeOrderStatus.class);
+		changeOrderStatus.setOrderId(orderId);
+		changeOrderStatus.setStatusId(ORDER_STATUS_HOLD);
+		changeOrderStatus.setSetItemStatus(true);
+		ChangeOrderStatusResponse response = serviceManager.execute(changeOrderStatus);
 
-		try {
-			orderStatusResult = dispatcher.runSync("changeOrderStatus", orderStatusContext);
-			if (ServiceUtil.isError(orderStatusResult)) {
-				interpreter.println("Error in set status");
-				return;
-			}
-		} catch (GenericServiceException e) {
-			e.printStackTrace();
+		if (response.isError()) {
+			interpreter.println("Error in set status");
+			return;
 		}
 
 		interpreter.println("Order " + orderId + " holded");
@@ -335,26 +315,15 @@ public class BizTestCommands extends BaseTestCommands {
 			return;
 		}
 
-		ResourceReader<UserLogin> userLoginReader = resourceManager.getResourceReader(context, UserLogin.class);
-		Delegator delegator = DelegatorFactory.getDelegator(null);
-		LocalDispatcher dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
-		UserLogin userLoginEntity = userLoginReader.lookup(USER_LOGIN_ID);
-		Map<String, Object> orderStatusContext = new HashMap<>();
-		GenericValue userLogin = EntityUtils.toBizEntity(delegator, userLoginEntity);
-		orderStatusContext.put("userLogin", userLogin);
-		orderStatusContext.put("orderId", orderId);
-		orderStatusContext.put("statusId", cancelOrderStatusId);
-		orderStatusContext.put("setItemStatus", "Y");
-		Map<String, Object> orderStatusResult = new HashMap<>();
+		ChangeOrderStatus changeOrderStatus = serviceManager.prepare(context, ChangeOrderStatus.class);
+		changeOrderStatus.setOrderId(orderId);
+		changeOrderStatus.setStatusId(ORDER_STATUS_CANCELLED);
+		changeOrderStatus.setSetItemStatus(true);
+		ChangeOrderStatusResponse response = serviceManager.execute(changeOrderStatus);
 
-		try {
-			orderStatusResult = dispatcher.runSync("changeOrderStatus", orderStatusContext);
-			if (ServiceUtil.isError(orderStatusResult)) {
-				interpreter.println("Error in set status");
-				return;
-			}
-		} catch (GenericServiceException e) {
-			e.printStackTrace();
+		if (response.isError()) {
+			interpreter.println("Error in set status");
+			return;
 		}
 
 		interpreter.println("Order " + orderId + " deleted");

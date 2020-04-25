@@ -12,6 +12,8 @@ Export-Package: org.abchip.mimo.biz.service,
  org.abchip.mimo.biz.service.entity,
  org.abchip.mimo.biz.service.entity.impl,
  org.abchip.mimo.biz.service.impl,
+ org.abchip.mimo.biz.service.order,
+ org.abchip.mimo.biz.service.order.impl,
  org.abchip.mimo.biz.service.product,
  org.abchip.mimo.biz.service.product.impl
 Bundle-ActivationPolicy: lazy

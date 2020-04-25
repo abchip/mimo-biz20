@@ -5,82 +5,144 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.service.product.impl;
+package org.abchip.mimo.biz.service.order.impl;
 
 import org.abchip.mimo.MimoPackage;
 
 import org.abchip.mimo.biz.BizPackage;
+
 import org.abchip.mimo.biz.model.accounting.AccountingPackage;
+
 import org.abchip.mimo.biz.model.catalina.session.SessionPackage;
+
 import org.abchip.mimo.biz.model.common.CommonPackage;
+
 import org.abchip.mimo.biz.model.content.content.ContentPackage;
+
 import org.abchip.mimo.biz.model.content.data.DataPackage;
+
 import org.abchip.mimo.biz.model.content.document.DocumentPackage;
+
 import org.abchip.mimo.biz.model.content.preference.PreferencePackage;
+
 import org.abchip.mimo.biz.model.content.survey.SurveyPackage;
+
 import org.abchip.mimo.biz.model.content.website.WebsitePackage;
+
 import org.abchip.mimo.biz.model.entity.EntityPackage;
+
 import org.abchip.mimo.biz.model.humanres.ability.AbilityPackage;
+
 import org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage;
+
 import org.abchip.mimo.biz.model.humanres.position.PositionPackage;
+
 import org.abchip.mimo.biz.model.humanres.recruitment.RecruitmentPackage;
+
 import org.abchip.mimo.biz.model.humanres.trainings.TrainingsPackage;
+
 import org.abchip.mimo.biz.model.manufacturing.bom.BomPackage;
+
 import org.abchip.mimo.biz.model.manufacturing.mrp.MrpPackage;
+
 import org.abchip.mimo.biz.model.manufacturing.techdata.TechdataPackage;
+
 import org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage;
+
 import org.abchip.mimo.biz.model.marketing.contact.ContactPackage;
+
 import org.abchip.mimo.biz.model.marketing.opportunity.OpportunityPackage;
+
 import org.abchip.mimo.biz.model.marketing.segment.SegmentPackage;
+
 import org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage;
-import org.abchip.mimo.biz.model.order.order.OrderPackage;
+
 import org.abchip.mimo.biz.model.order.quote.QuotePackage;
+
 import org.abchip.mimo.biz.model.order.request.RequestPackage;
+
 import org.abchip.mimo.biz.model.order.requirement.RequirementPackage;
+
 import org.abchip.mimo.biz.model.order.reservations.ReservationsPackage;
+
 import org.abchip.mimo.biz.model.order.return_.ReturnPackage;
+
 import org.abchip.mimo.biz.model.order.shoppingcart.ShoppingcartPackage;
+
 import org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage;
+
 import org.abchip.mimo.biz.model.party.PartyPackage;
+
 import org.abchip.mimo.biz.model.passport.PassportPackage;
+
 import org.abchip.mimo.biz.model.product.catalog.CatalogPackage;
+
 import org.abchip.mimo.biz.model.product.category.CategoryPackage;
+
 import org.abchip.mimo.biz.model.product.config.ConfigPackage;
+
 import org.abchip.mimo.biz.model.product.cost.CostPackage;
+
 import org.abchip.mimo.biz.model.product.facility.FacilityPackage;
+
 import org.abchip.mimo.biz.model.product.feature.FeaturePackage;
+
 import org.abchip.mimo.biz.model.product.inventory.InventoryPackage;
+
 import org.abchip.mimo.biz.model.product.price.PricePackage;
+
+import org.abchip.mimo.biz.model.product.product.ProductPackage;
+
 import org.abchip.mimo.biz.model.product.promo.PromoPackage;
+
 import org.abchip.mimo.biz.model.product.store.StorePackage;
+
 import org.abchip.mimo.biz.model.product.subscription.SubscriptionPackage;
+
 import org.abchip.mimo.biz.model.product.supplier.SupplierPackage;
+
 import org.abchip.mimo.biz.model.security.cert.CertPackage;
+
 import org.abchip.mimo.biz.model.security.login.LoginPackage;
+
 import org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage;
+
 import org.abchip.mimo.biz.model.service.schedule.SchedulePackage;
+
 import org.abchip.mimo.biz.model.service.semaphore.SemaphorePackage;
+
 import org.abchip.mimo.biz.model.shipment.issuance.IssuancePackage;
+
 import org.abchip.mimo.biz.model.shipment.picklist.PicklistPackage;
+
 import org.abchip.mimo.biz.model.shipment.receipt.ReceiptPackage;
+
 import org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package;
+
 import org.abchip.mimo.biz.model.webapp.visit.VisitPackage;
+
 import org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage;
+
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
+
 import org.abchip.mimo.biz.service.BizServicePackage;
+
 import org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl;
+
 import org.abchip.mimo.biz.service.impl.BizServicePackageImpl;
-import org.abchip.mimo.biz.service.order.impl.OrderPackageImpl;
-import org.abchip.mimo.biz.service.product.CalculateProductPrice;
-import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
-import org.abchip.mimo.biz.service.product.ProductFactory;
-import org.abchip.mimo.biz.service.product.ProductPackage;
+
+import org.abchip.mimo.biz.service.order.ChangeOrderStatus;
+import org.abchip.mimo.biz.service.order.ChangeOrderStatusResponse;
+import org.abchip.mimo.biz.service.order.OrderFactory;
+import org.abchip.mimo.biz.service.order.OrderPackage;
+
+import org.abchip.mimo.biz.service.product.impl.ProductPackageImpl;
+
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 
-import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
@@ -89,20 +151,20 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
  * <!-- end-user-doc -->
  * @generated
  */
-public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
+public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass calculateProductPriceEClass = null;
+	private EClass changeOrderStatusEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass calculateProductPriceResponseEClass = null;
+	private EClass changeOrderStatusResponseEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -115,12 +177,12 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see org.abchip.mimo.biz.service.product.ProductPackage#eNS_URI
+	 * @see org.abchip.mimo.biz.service.order.OrderPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */
-	private ProductPackageImpl() {
-		super(eNS_URI, ProductFactory.eINSTANCE);
+	private OrderPackageImpl() {
+		super(eNS_URI, OrderFactory.eINSTANCE);
 	}
 
 	/**
@@ -133,7 +195,7 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
 	 *
-	 * <p>This method is used to initialize {@link ProductPackage#eINSTANCE} when that field is accessed.
+	 * <p>This method is used to initialize {@link OrderPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -142,12 +204,12 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	 * @see #initializePackageContents()
 	 * @generated
 	 */
-	public static ProductPackage init() {
-		if (isInited) return (ProductPackage)EPackage.Registry.INSTANCE.getEPackage(ProductPackage.eNS_URI);
+	public static OrderPackage init() {
+		if (isInited) return (OrderPackage)EPackage.Registry.INSTANCE.getEPackage(OrderPackage.eNS_URI);
 
 		// Obtain or create and register package
-		Object registeredProductPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
-		ProductPackageImpl theProductPackage = registeredProductPackage instanceof ProductPackageImpl ? (ProductPackageImpl)registeredProductPackage : new ProductPackageImpl();
+		Object registeredOrderPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		OrderPackageImpl theOrderPackage = registeredOrderPackage instanceof OrderPackageImpl ? (OrderPackageImpl)registeredOrderPackage : new OrderPackageImpl();
 
 		isInited = true;
 
@@ -176,7 +238,7 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		OpportunityPackage.eINSTANCE.eClass();
 		SegmentPackage.eINSTANCE.eClass();
 		TrackingPackage.eINSTANCE.eClass();
-		OrderPackage.eINSTANCE.eClass();
+		org.abchip.mimo.biz.model.order.order.OrderPackage.eINSTANCE.eClass();
 		QuotePackage.eINSTANCE.eClass();
 		RequestPackage.eINSTANCE.eClass();
 		RequirementPackage.eINSTANCE.eClass();
@@ -194,7 +256,7 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		FeaturePackage.eINSTANCE.eClass();
 		InventoryPackage.eINSTANCE.eClass();
 		PricePackage.eINSTANCE.eClass();
-		org.abchip.mimo.biz.model.product.product.ProductPackage.eINSTANCE.eClass();
+		ProductPackage.eINSTANCE.eClass();
 		PromoPackage.eINSTANCE.eClass();
 		StorePackage.eINSTANCE.eClass();
 		SubscriptionPackage.eINSTANCE.eClass();
@@ -219,27 +281,27 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		BizServicePackageImpl theBizServicePackage = (BizServicePackageImpl)(registeredPackage instanceof BizServicePackageImpl ? registeredPackage : BizServicePackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.entity.EntityPackage.eNS_URI);
 		EntityPackageImpl theEntityPackage_1 = (EntityPackageImpl)(registeredPackage instanceof EntityPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.entity.EntityPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.order.OrderPackage.eNS_URI);
-		OrderPackageImpl theOrderPackage_1 = (OrderPackageImpl)(registeredPackage instanceof OrderPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.order.OrderPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.product.ProductPackage.eNS_URI);
+		ProductPackageImpl theProductPackage_1 = (ProductPackageImpl)(registeredPackage instanceof ProductPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.product.ProductPackage.eINSTANCE);
 
 		// Create package meta-data objects
-		theProductPackage.createPackageContents();
+		theOrderPackage.createPackageContents();
 		theBizServicePackage.createPackageContents();
 		theEntityPackage_1.createPackageContents();
-		theOrderPackage_1.createPackageContents();
+		theProductPackage_1.createPackageContents();
 
 		// Initialize created meta-data
-		theProductPackage.initializePackageContents();
+		theOrderPackage.initializePackageContents();
 		theBizServicePackage.initializePackageContents();
 		theEntityPackage_1.initializePackageContents();
-		theOrderPackage_1.initializePackageContents();
+		theProductPackage_1.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
-		theProductPackage.freeze();
+		theOrderPackage.freeze();
 
 		// Update the registry and return the package
-		EPackage.Registry.INSTANCE.put(ProductPackage.eNS_URI, theProductPackage);
-		return theProductPackage;
+		EPackage.Registry.INSTANCE.put(OrderPackage.eNS_URI, theOrderPackage);
+		return theOrderPackage;
 	}
 
 	/**
@@ -248,8 +310,8 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getCalculateProductPrice() {
-		return calculateProductPriceEClass;
+	public EClass getChangeOrderStatus() {
+		return changeOrderStatusEClass;
 	}
 
 	/**
@@ -258,8 +320,8 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCalculateProductPrice_Product() {
-		return (EReference)calculateProductPriceEClass.getEStructuralFeatures().get(0);
+	public EAttribute getChangeOrderStatus_ChangeReason() {
+		return (EAttribute)changeOrderStatusEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -268,8 +330,8 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getCalculateProductPrice_CurrencyUomId() {
-		return (EAttribute)calculateProductPriceEClass.getEStructuralFeatures().get(1);
+	public EAttribute getChangeOrderStatus_OrderId() {
+		return (EAttribute)changeOrderStatusEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -278,8 +340,8 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getCalculateProductPriceResponse() {
-		return calculateProductPriceResponseEClass;
+	public EAttribute getChangeOrderStatus_SetItemStatus() {
+		return (EAttribute)changeOrderStatusEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -288,8 +350,8 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getCalculateProductPriceResponse_ValidPriceFound() {
-		return (EAttribute)calculateProductPriceResponseEClass.getEStructuralFeatures().get(0);
+	public EAttribute getChangeOrderStatus_StatusId() {
+		return (EAttribute)changeOrderStatusEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -298,8 +360,8 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getCalculateProductPriceResponse_BasePrice() {
-		return (EAttribute)calculateProductPriceResponseEClass.getEStructuralFeatures().get(1);
+	public EClass getChangeOrderStatusResponse() {
+		return changeOrderStatusResponseEClass;
 	}
 
 	/**
@@ -308,8 +370,8 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getCalculateProductPriceResponse_ListPrice() {
-		return (EAttribute)calculateProductPriceResponseEClass.getEStructuralFeatures().get(2);
+	public EAttribute getChangeOrderStatusResponse_GrandTotal() {
+		return (EAttribute)changeOrderStatusResponseEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -318,8 +380,8 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getCalculateProductPriceResponse_OrderItemPriceInfos() {
-		return (EReference)calculateProductPriceResponseEClass.getEStructuralFeatures().get(3);
+	public EAttribute getChangeOrderStatusResponse_NeedsInventoryIssuance() {
+		return (EAttribute)changeOrderStatusResponseEClass.getEStructuralFeatures().get(1);
 	}
 
 	/**
@@ -328,8 +390,38 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	 * @generated
 	 */
 	@Override
-	public ProductFactory getProductFactory() {
-		return (ProductFactory)getEFactoryInstance();
+	public EAttribute getChangeOrderStatusResponse_OldStatusId() {
+		return (EAttribute)changeOrderStatusResponseEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getChangeOrderStatusResponse_OrderStatusId() {
+		return (EAttribute)changeOrderStatusResponseEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getChangeOrderStatusResponse_OrderTypeId() {
+		return (EAttribute)changeOrderStatusResponseEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public OrderFactory getOrderFactory() {
+		return (OrderFactory)getEFactoryInstance();
 	}
 
 	/**
@@ -351,15 +443,18 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		isCreated = true;
 
 		// Create classes and their features
-		calculateProductPriceEClass = createEClass(CALCULATE_PRODUCT_PRICE);
-		createEReference(calculateProductPriceEClass, CALCULATE_PRODUCT_PRICE__PRODUCT);
-		createEAttribute(calculateProductPriceEClass, CALCULATE_PRODUCT_PRICE__CURRENCY_UOM_ID);
+		changeOrderStatusEClass = createEClass(CHANGE_ORDER_STATUS);
+		createEAttribute(changeOrderStatusEClass, CHANGE_ORDER_STATUS__CHANGE_REASON);
+		createEAttribute(changeOrderStatusEClass, CHANGE_ORDER_STATUS__ORDER_ID);
+		createEAttribute(changeOrderStatusEClass, CHANGE_ORDER_STATUS__SET_ITEM_STATUS);
+		createEAttribute(changeOrderStatusEClass, CHANGE_ORDER_STATUS__STATUS_ID);
 
-		calculateProductPriceResponseEClass = createEClass(CALCULATE_PRODUCT_PRICE_RESPONSE);
-		createEAttribute(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__VALID_PRICE_FOUND);
-		createEAttribute(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__BASE_PRICE);
-		createEAttribute(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE);
-		createEReference(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS);
+		changeOrderStatusResponseEClass = createEClass(CHANGE_ORDER_STATUS_RESPONSE);
+		createEAttribute(changeOrderStatusResponseEClass, CHANGE_ORDER_STATUS_RESPONSE__GRAND_TOTAL);
+		createEAttribute(changeOrderStatusResponseEClass, CHANGE_ORDER_STATUS_RESPONSE__NEEDS_INVENTORY_ISSUANCE);
+		createEAttribute(changeOrderStatusResponseEClass, CHANGE_ORDER_STATUS_RESPONSE__OLD_STATUS_ID);
+		createEAttribute(changeOrderStatusResponseEClass, CHANGE_ORDER_STATUS_RESPONSE__ORDER_STATUS_ID);
+		createEAttribute(changeOrderStatusResponseEClass, CHANGE_ORDER_STATUS_RESPONSE__ORDER_TYPE_ID);
 	}
 
 	/**
@@ -387,8 +482,6 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 
 		// Obtain other dependent packages
 		BizServicePackage theBizServicePackage = (BizServicePackage)EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
-		org.abchip.mimo.biz.model.product.product.ProductPackage theProductPackage_1 = (org.abchip.mimo.biz.model.product.product.ProductPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.model.product.product.ProductPackage.eNS_URI);
-		OrderPackage theOrderPackage = (OrderPackage)EPackage.Registry.INSTANCE.getEPackage(OrderPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -396,21 +489,24 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 
 		// Add supertypes to classes
 		EGenericType g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
-		EGenericType g2 = createEGenericType(this.getCalculateProductPriceResponse());
+		EGenericType g2 = createEGenericType(this.getChangeOrderStatusResponse());
 		g1.getETypeArguments().add(g2);
-		calculateProductPriceEClass.getEGenericSuperTypes().add(g1);
-		calculateProductPriceResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
+		changeOrderStatusEClass.getEGenericSuperTypes().add(g1);
+		changeOrderStatusResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
 
 		// Initialize classes and features; add operations and parameters
-		initEClass(calculateProductPriceEClass, CalculateProductPrice.class, "CalculateProductPrice", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getCalculateProductPrice_Product(), theProductPackage_1.getProduct(), null, "product", null, 1, 1, CalculateProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCalculateProductPrice_CurrencyUomId(), ecorePackage.getEString(), "currencyUomId", "@general/currency.uom.id.default", 0, 1, CalculateProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(changeOrderStatusEClass, ChangeOrderStatus.class, "ChangeOrderStatus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getChangeOrderStatus_ChangeReason(), ecorePackage.getEString(), "changeReason", null, 0, 1, ChangeOrderStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getChangeOrderStatus_OrderId(), ecorePackage.getEString(), "orderId", null, 1, 1, ChangeOrderStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getChangeOrderStatus_SetItemStatus(), ecorePackage.getEBoolean(), "setItemStatus", null, 0, 1, ChangeOrderStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getChangeOrderStatus_StatusId(), ecorePackage.getEString(), "statusId", null, 1, 1, ChangeOrderStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(calculateProductPriceResponseEClass, CalculateProductPriceResponse.class, "CalculateProductPriceResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getCalculateProductPriceResponse_ValidPriceFound(), ecorePackage.getEBoolean(), "validPriceFound", null, 1, 1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCalculateProductPriceResponse_BasePrice(), ecorePackage.getEBigDecimal(), "basePrice", null, 1, 1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCalculateProductPriceResponse_ListPrice(), ecorePackage.getEBigDecimal(), "listPrice", null, 0, 1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCalculateProductPriceResponse_OrderItemPriceInfos(), theOrderPackage.getOrderItemPriceInfo(), null, "orderItemPriceInfos", null, 0, -1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(changeOrderStatusResponseEClass, ChangeOrderStatusResponse.class, "ChangeOrderStatusResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getChangeOrderStatusResponse_GrandTotal(), ecorePackage.getEBigDecimal(), "grandTotal", null, 0, 1, ChangeOrderStatusResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getChangeOrderStatusResponse_NeedsInventoryIssuance(), ecorePackage.getEString(), "needsInventoryIssuance", null, 0, 1, ChangeOrderStatusResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getChangeOrderStatusResponse_OldStatusId(), ecorePackage.getEString(), "oldStatusId", null, 1, 1, ChangeOrderStatusResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getChangeOrderStatusResponse_OrderStatusId(), ecorePackage.getEString(), "orderStatusId", null, 0, 1, ChangeOrderStatusResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getChangeOrderStatusResponse_OrderTypeId(), ecorePackage.getEString(), "orderTypeId", null, 0, 1, ChangeOrderStatusResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 	}
 
-} //ProductPackageImpl
+} //OrderPackageImpl

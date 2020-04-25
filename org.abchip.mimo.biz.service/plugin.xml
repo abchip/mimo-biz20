@@ -30,6 +30,14 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated biz-service -->
       <package
+            uri="http://www.abchip.org/mimo/biz/service/order"
+            class="org.abchip.mimo.biz.service.order.OrderPackage"
+            genModel="model/biz-service.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated biz-service -->
+      <package
             uri="http://www.abchip.org/mimo/biz/service/product"
             class="org.abchip.mimo.biz.service.product.ProductPackage"
             genModel="model/biz-service.genmodel"/>

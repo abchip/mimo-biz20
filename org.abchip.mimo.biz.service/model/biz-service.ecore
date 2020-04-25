@@ -38,7 +38,28 @@
   <eSubpackages name="marketing" nsURI="http://www.abchip.org/mimo/biz/service/marketing"
       nsPrefix="biz-marketing"/>
   <eSubpackages name="order" nsURI="http://www.abchip.org/mimo/biz/service/order"
-      nsPrefix="biz-order"/>
+      nsPrefix="biz-order">
+    <eClassifiers xsi:type="ecore:EClass" name="ChangeOrderStatus">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="changeReason" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="orderId" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="setItemStatus" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="statusId" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
+        <eTypeArguments eClassifier="#//order/ChangeOrderStatusResponse"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="ChangeOrderStatusResponse" eSuperTypes="#//BizServiceResponse">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="grandTotal" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="needsInventoryIssuance"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="oldStatusId" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="orderStatusId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="orderTypeId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eClassifiers>
+  </eSubpackages>
   <eSubpackages name="party" nsURI="http://www.abchip.org/mimo/biz/service/party"
       nsPrefix="biz-party"/>
   <eSubpackages name="passport" nsURI="http://www.abchip.org/mimo/biz/service/passport"

@@ -41,7 +41,21 @@
     <nestedGenPackages prefix="Marketing" basePackage="org.abchip.mimo.biz.service"
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//marketing"/>
     <nestedGenPackages prefix="Order" basePackage="org.abchip.mimo.biz.service" disposableProviderFactory="true"
-        adapterFactory="false" ecorePackage="biz-service.ecore#//order"/>
+        adapterFactory="false" ecorePackage="biz-service.ecore#//order">
+      <genClasses ecoreClass="biz-service.ecore#//order/ChangeOrderStatus">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//order/ChangeOrderStatus/changeReason"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//order/ChangeOrderStatus/orderId"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//order/ChangeOrderStatus/setItemStatus"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//order/ChangeOrderStatus/statusId"/>
+      </genClasses>
+      <genClasses ecoreClass="biz-service.ecore#//order/ChangeOrderStatusResponse">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//order/ChangeOrderStatusResponse/grandTotal"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//order/ChangeOrderStatusResponse/needsInventoryIssuance"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//order/ChangeOrderStatusResponse/oldStatusId"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//order/ChangeOrderStatusResponse/orderStatusId"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//order/ChangeOrderStatusResponse/orderTypeId"/>
+      </genClasses>
+    </nestedGenPackages>
     <nestedGenPackages prefix="Party" basePackage="org.abchip.mimo.biz.service" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz-service.ecore#//party"/>
     <nestedGenPackages prefix="Passport" basePackage="org.abchip.mimo.biz.service"
