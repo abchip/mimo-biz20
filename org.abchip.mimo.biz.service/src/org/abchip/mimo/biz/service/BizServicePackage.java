@@ -163,22 +163,13 @@ public interface BizServicePackage extends EPackage {
 	int BIZ_SERVICE_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
 
 	/**
-	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_SERVICE_RESPONSE__USER_LOGIN = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
-
-	/**
 	 * The number of structural features of the '<em>Response</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_SERVICE_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 1;
+	int BIZ_SERVICE_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.BizServiceRequest <em>Request</em>}'.
@@ -210,17 +201,6 @@ public interface BizServicePackage extends EPackage {
 	 * @generated
 	 */
 	EClass getBizServiceResponse();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link org.abchip.mimo.biz.service.BizServiceResponse#getUserLogin <em>User Login</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>User Login</em>'.
-	 * @see org.abchip.mimo.biz.service.BizServiceResponse#getUserLogin()
-	 * @see #getBizServiceResponse()
-	 * @generated
-	 */
-	EReference getBizServiceResponse_UserLogin();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -271,14 +251,6 @@ public interface BizServicePackage extends EPackage {
 		 * @generated
 		 */
 		EClass BIZ_SERVICE_RESPONSE = eINSTANCE.getBizServiceResponse();
-
-		/**
-		 * The meta object literal for the '<em><b>User Login</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference BIZ_SERVICE_RESPONSE__USER_LOGIN = eINSTANCE.getBizServiceResponse_UserLogin();
 
 	}
 

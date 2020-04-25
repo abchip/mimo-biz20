@@ -34,9 +34,20 @@ public interface BizServiceRequest<V extends ServiceResponse> extends ServiceReq
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>User Login</em>' containment reference.
+	 * @see #setUserLogin(UserLogin)
 	 * @see org.abchip.mimo.biz.service.BizServicePackage#getBizServiceRequest_UserLogin()
-	 * @model containment="true" resolveProxies="true" required="true" changeable="false"
+	 * @model containment="true" resolveProxies="true" required="true"
 	 * @generated
 	 */
 	UserLogin getUserLogin();
+
+	/**
+	 * Sets the value of the '{@link org.abchip.mimo.biz.service.BizServiceRequest#getUserLogin <em>User Login</em>}' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>User Login</em>' containment reference.
+	 * @see #getUserLogin()
+	 * @generated
+	 */
+	void setUserLogin(UserLogin value);
 } // BizServiceRequest

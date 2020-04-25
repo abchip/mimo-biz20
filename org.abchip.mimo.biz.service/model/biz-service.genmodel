@@ -19,9 +19,7 @@
       <genTypeParameters ecoreTypeParameter="biz-service.ecore#//BizServiceRequest/V"/>
       <genFeatures property="None" children="true" createChild="false" ecoreFeature="ecore:EReference biz-service.ecore#//BizServiceRequest/userLogin"/>
     </genClasses>
-    <genClasses image="false" ecoreClass="biz-service.ecore#//BizServiceResponse">
-      <genFeatures property="None" children="true" createChild="false" ecoreFeature="ecore:EReference biz-service.ecore#//BizServiceResponse/userLogin"/>
-    </genClasses>
+    <genClasses image="false" ecoreClass="biz-service.ecore#//BizServiceResponse"/>
     <nestedGenPackages prefix="Accounting" basePackage="org.abchip.mimo.biz.service"
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//accounting"/>
     <nestedGenPackages prefix="Catalina" basePackage="org.abchip.mimo.biz.service"

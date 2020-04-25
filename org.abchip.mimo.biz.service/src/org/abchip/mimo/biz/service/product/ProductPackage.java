@@ -181,15 +181,6 @@ public interface ProductPackage extends EPackage {
 	int CALCULATE_PRODUCT_PRICE_RESPONSE__SUCCESS_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__SUCCESS_MESSAGE;
 
 	/**
-	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__USER_LOGIN = BizServicePackage.BIZ_SERVICE_RESPONSE__USER_LOGIN;
-
-	/**
 	 * The feature id for the '<em><b>Valid Price Found</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

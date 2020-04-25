@@ -7,16 +7,12 @@
     </eTypeParameters>
     <eStructuralFeatures xsi:type="ecore:EReference" name="userLogin" lowerBound="1"
         eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//security/login/UserLogin"
-        changeable="false" containment="true"/>
+        containment="true"/>
     <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
       <eTypeArguments eTypeParameter="#//BizServiceRequest/V"/>
     </eGenericSuperTypes>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="BizServiceResponse" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="userLogin" lowerBound="1"
-        eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//security/login/UserLogin"
-        changeable="false" containment="true"/>
-  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BizServiceResponse" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
   <eSubpackages name="accounting" nsURI="http://www.abchip.org/mimo/biz/service/accounting"
       nsPrefix="biz-accounting"/>
   <eSubpackages name="catalina" nsURI="http://www.abchip.org/mimo/biz/service/catalina"

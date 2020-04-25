@@ -334,16 +334,6 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 	 * @generated
 	 */
 	@Override
-	public EReference getBizServiceResponse_UserLogin() {
-		return (EReference)bizServiceResponseEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public BizServiceFactory getBizServiceFactory() {
 		return (BizServiceFactory)getEFactoryInstance();
 	}
@@ -371,7 +361,6 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 		createEReference(bizServiceRequestEClass, BIZ_SERVICE_REQUEST__USER_LOGIN);
 
 		bizServiceResponseEClass = createEClass(BIZ_SERVICE_RESPONSE);
-		createEReference(bizServiceResponseEClass, BIZ_SERVICE_RESPONSE__USER_LOGIN);
 	}
 
 	/**
@@ -423,10 +412,9 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(bizServiceRequestEClass, BizServiceRequest.class, "BizServiceRequest", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getBizServiceRequest_UserLogin(), theLoginPackage.getUserLogin(), null, "userLogin", null, 1, 1, BizServiceRequest.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getBizServiceRequest_UserLogin(), theLoginPackage.getUserLogin(), null, "userLogin", null, 1, 1, BizServiceRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(bizServiceResponseEClass, BizServiceResponse.class, "BizServiceResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getBizServiceResponse_UserLogin(), theLoginPackage.getUserLogin(), null, "userLogin", null, 1, 1, BizServiceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, !IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
