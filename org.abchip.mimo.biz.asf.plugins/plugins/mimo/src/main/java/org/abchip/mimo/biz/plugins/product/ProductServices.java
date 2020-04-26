@@ -38,22 +38,6 @@ import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 public class ProductServices {
 
 
-	public static Map<String, Object> createSimpleProduct(DispatchContext ctx, Map<String, ? extends Object> context) {
-		String productId = (String) context.get("productId");
-		Delegator delegator = ctx.getDelegator();
-		
-		try {
-			GenericValue product = delegator.makeValue("Product");
-			product.set("productId", productId);
-//			product.set("internalName", productId);
-			product.create();
-		} catch (GenericEntityException e) {
-			return ServiceUtil.returnError(e.getMessage());
-		}
-
-		return ServiceUtil.returnSuccess("Product " + productId + " created succesfully" );
-	}
-	
 	public static Map<String, Object> importProduct(DispatchContext ctx, Map<String, ? extends Object> context) {
 		LocalDispatcher dispatcher = ctx.getDispatcher();
 		@SuppressWarnings("unused")

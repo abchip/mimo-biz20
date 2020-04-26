@@ -36,11 +36,5 @@ under the License.
         <attribute name="pathFileItem" type="String" mode="IN" optional="false"/>
         <attribute name="pathFilePrice" type="String" mode="IN" optional="false"/>
 	</service>
-
-	<service name="createSimpleProduct" engine="java"
-		location="org.abchip.mimo.biz.plugins.product.ProductServices" invoke="createSimpleProduct">
-		<description>Product creation, no default</description>
-        <attribute name="productId" type="String" mode="IN" optional="false"/>
-	</service>
 	
 </services>

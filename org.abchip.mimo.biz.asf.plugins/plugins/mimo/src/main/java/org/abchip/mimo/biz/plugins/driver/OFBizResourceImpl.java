@@ -66,6 +66,11 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 	}
 
 	@Override
+	public Context getContext() {
+		return this.context;
+	}
+
+	@Override
 	public String getTenant() {
 		return this.delegator.getDelegatorTenantId();
 	}
@@ -201,7 +206,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			if (genericValue != null) {
 				entity = EntityUtils.toEntity(frame, genericValue);
 				if (proxy)
-					entity = context.createProxy(frame, entity.getID());
+					entity = frame.createProxy(entity.getID());
 			}
 
 			TransactionUtil.commit(beganTransaction);
@@ -278,7 +283,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			for (GenericValue genericValue : eq.queryList()) {
 				E entity = EntityUtils.toEntity(frame, genericValue);
 				if (proxy)
-					entity = context.createProxy(frame, entity.getID());
+					entity = frame.createProxy(entity.getID());
 
 				entities.add(entity);
 			}
