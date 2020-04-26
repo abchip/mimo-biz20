@@ -21,16 +21,6 @@
       </eGenericSuperTypes>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="CreatePaymentResponse" eSuperTypes="#//BizServiceResponse"/>
-    <eClassifiers xsi:type="ecore:EClass" name="SetPaymentStatus">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="paymentId" lowerBound="1"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="statusId" lowerBound="1"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
-        <eTypeArguments eClassifier="#//accounting/SetPaymentStatusResponse"/>
-      </eGenericSuperTypes>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="SetPaymentStatusResponse" eSuperTypes="#//BizServiceResponse"/>
     <eClassifiers xsi:type="ecore:EClass" name="SetInvoiceStatus">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="invoiceId" lowerBound="1"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -46,6 +36,26 @@
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="invoiceTypeId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="oldStatusId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SetPaymentStatus">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="paymentId" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="statusId" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
+        <eTypeArguments eClassifier="#//accounting/SetPaymentStatusResponse"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="SetPaymentStatusResponse" eSuperTypes="#//BizServiceResponse"/>
+    <eClassifiers xsi:type="ecore:EClass" name="UpdatePaymentApplicationDef">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="invoiceId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="paymentId" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
+        <eTypeArguments eClassifier="#//accounting/UpdatePaymentApplicationDefResponse"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="UpdatePaymentApplicationDefResponse"
+        eSuperTypes="#//BizServiceResponse"/>
   </eSubpackages>
   <eSubpackages name="catalina" nsURI="http://www.abchip.org/mimo/biz/service/catalina"
       nsPrefix="biz-catalina"/>
@@ -124,26 +134,6 @@
       nsPrefix="biz-passport"/>
   <eSubpackages name="product" nsURI="http://www.abchip.org/mimo/biz/service/product"
       nsPrefix="biz-product">
-    <eClassifiers xsi:type="ecore:EClass" name="CalculateProductPrice">
-      <eStructuralFeatures xsi:type="ecore:EReference" name="product" lowerBound="1"
-          eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//product/product/Product"
-          containment="true"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="currencyUomId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-          defaultValueLiteral="@general/currency.uom.id.default"/>
-      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
-        <eTypeArguments eClassifier="#//product/CalculateProductPriceResponse"/>
-      </eGenericSuperTypes>
-    </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="CalculateProductPriceResponse" eSuperTypes="#//BizServiceResponse">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="validPriceFound" lowerBound="1"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="basePrice" lowerBound="1"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="listPrice" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
-      <eStructuralFeatures xsi:type="ecore:EReference" name="orderItemPriceInfos"
-          upperBound="-1" eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//order/order/OrderItemPriceInfo"
-          containment="true"/>
-    </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="CalcTaxForDisplay">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="basePrice" lowerBound="1"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
@@ -166,6 +156,26 @@
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="taxTotal" lowerBound="1"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CalculateProductPrice">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="product" lowerBound="1"
+          eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//product/product/Product"
+          containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="currencyUomId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+          defaultValueLiteral="@general/currency.uom.id.default"/>
+      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
+        <eTypeArguments eClassifier="#//product/CalculateProductPriceResponse"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CalculateProductPriceResponse" eSuperTypes="#//BizServiceResponse">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="validPriceFound" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="basePrice" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="listPrice" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="orderItemPriceInfos"
+          upperBound="-1" eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//order/order/OrderItemPriceInfo"
+          containment="true"/>
     </eClassifiers>
   </eSubpackages>
   <eSubpackages name="security" nsURI="http://www.abchip.org/mimo/biz/service/security"

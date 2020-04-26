@@ -69,70 +69,7 @@ public interface ProductPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getCalculateProductPrice()
 	 * @generated
 	 */
-	int CALCULATE_PRODUCT_PRICE = 0;
-
-	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PRODUCT_PRICE__LOCALE = BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PRODUCT_PRICE__TENANT = BizServicePackage.BIZ_SERVICE_REQUEST__TENANT;
-
-	/**
-	 * The feature id for the '<em><b>Context</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PRODUCT_PRICE__CONTEXT = BizServicePackage.BIZ_SERVICE_REQUEST__CONTEXT;
-
-	/**
-	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PRODUCT_PRICE__USER_LOGIN = BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN;
-
-	/**
-	 * The feature id for the '<em><b>Product</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PRODUCT_PRICE__PRODUCT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Currency Uom Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PRODUCT_PRICE__CURRENCY_UOM_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of structural features of the '<em>Calculate Product Price</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PRODUCT_PRICE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 2;
+	int CALCULATE_PRODUCT_PRICE = 2;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.service.product.impl.CalculateProductPriceResponseImpl <em>Calculate Product Price Response</em>}' class.
@@ -142,89 +79,7 @@ public interface ProductPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getCalculateProductPriceResponse()
 	 * @generated
 	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE = 1;
-
-	/**
-	 * The feature id for the '<em><b>Error</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__ERROR = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR;
-
-	/**
-	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__ERROR_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR_MESSAGE;
-
-	/**
-	 * The feature id for the '<em><b>Response Message</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__RESPONSE_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__RESPONSE_MESSAGE;
-
-	/**
-	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__SUCCESS_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__SUCCESS_MESSAGE;
-
-	/**
-	 * The feature id for the '<em><b>Valid Price Found</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__VALID_PRICE_FOUND = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Base Price</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__BASE_PRICE = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>List Price</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Order Item Price Infos</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 3;
-
-	/**
-	 * The number of structural features of the '<em>Calculate Product Price Response</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 4;
-
+	int CALCULATE_PRODUCT_PRICE_RESPONSE = 3;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.service.product.impl.CalcTaxForDisplayImpl <em>Calc Tax For Display</em>}' class.
@@ -234,7 +89,7 @@ public interface ProductPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getCalcTaxForDisplay()
 	 * @generated
 	 */
-	int CALC_TAX_FOR_DISPLAY = 2;
+	int CALC_TAX_FOR_DISPLAY = 0;
 
 	/**
 	 * The feature id for the '<em><b>Locale</b></em>' attribute.
@@ -343,7 +198,7 @@ public interface ProductPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getCalcTaxForDisplayResponse()
 	 * @generated
 	 */
-	int CALC_TAX_FOR_DISPLAY_RESPONSE = 3;
+	int CALC_TAX_FOR_DISPLAY_RESPONSE = 1;
 
 	/**
 	 * The feature id for the '<em><b>Error</b></em>' attribute.
@@ -416,6 +271,150 @@ public interface ProductPackage extends EPackage {
 	 * @ordered
 	 */
 	int CALC_TAX_FOR_DISPLAY_RESPONSE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Locale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE__LOCALE = BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE__TENANT = BizServicePackage.BIZ_SERVICE_REQUEST__TENANT;
+
+	/**
+	 * The feature id for the '<em><b>Context</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE__CONTEXT = BizServicePackage.BIZ_SERVICE_REQUEST__CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE__USER_LOGIN = BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN;
+
+	/**
+	 * The feature id for the '<em><b>Product</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE__PRODUCT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Currency Uom Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE__CURRENCY_UOM_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Calculate Product Price</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Error</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__ERROR = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR;
+
+	/**
+	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__ERROR_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Response Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__RESPONSE_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__RESPONSE_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__SUCCESS_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__SUCCESS_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Valid Price Found</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__VALID_PRICE_FOUND = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Base Price</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__BASE_PRICE = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>List Price</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Order Item Price Infos</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 3;
+
+	/**
+	 * The number of structural features of the '<em>Calculate Product Price Response</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE_RESPONSE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 4;
 
 
 	/**

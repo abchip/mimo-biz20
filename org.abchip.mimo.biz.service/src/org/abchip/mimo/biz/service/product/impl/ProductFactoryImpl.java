@@ -60,10 +60,10 @@ public class ProductFactoryImpl extends EFactoryImpl implements ProductFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case ProductPackage.CALCULATE_PRODUCT_PRICE: return (EObject)createCalculateProductPrice();
-			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE: return (EObject)createCalculateProductPriceResponse();
 			case ProductPackage.CALC_TAX_FOR_DISPLAY: return (EObject)createCalcTaxForDisplay();
 			case ProductPackage.CALC_TAX_FOR_DISPLAY_RESPONSE: return (EObject)createCalcTaxForDisplayResponse();
+			case ProductPackage.CALCULATE_PRODUCT_PRICE: return (EObject)createCalculateProductPrice();
+			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE: return (EObject)createCalculateProductPriceResponse();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}

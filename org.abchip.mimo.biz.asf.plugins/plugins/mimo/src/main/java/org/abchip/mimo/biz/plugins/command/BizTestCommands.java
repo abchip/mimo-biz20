@@ -13,8 +13,6 @@ import java.math.RoundingMode;
 import java.sql.Timestamp;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 
 import javax.inject.Inject;
 
@@ -29,8 +27,10 @@ import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemType;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceType;
 import org.abchip.mimo.biz.model.accounting.payment.CreditCard;
+import org.abchip.mimo.biz.model.accounting.payment.Payment;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethod;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType;
+import org.abchip.mimo.biz.model.accounting.payment.PaymentType;
 import org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.geo.Geo;
@@ -68,6 +68,8 @@ import org.abchip.mimo.biz.service.accounting.SetInvoiceStatus;
 import org.abchip.mimo.biz.service.accounting.SetInvoiceStatusResponse;
 import org.abchip.mimo.biz.service.accounting.SetPaymentStatus;
 import org.abchip.mimo.biz.service.accounting.SetPaymentStatusResponse;
+import org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDef;
+import org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDefResponse;
 import org.abchip.mimo.biz.service.order.ChangeOrderStatus;
 import org.abchip.mimo.biz.service.order.ChangeOrderStatusResponse;
 import org.abchip.mimo.biz.service.order.ReserveStoreInventory;
@@ -92,10 +94,6 @@ import org.apache.ofbiz.base.util.UtilFormatOut;
 import org.apache.ofbiz.entity.Delegator;
 import org.apache.ofbiz.entity.DelegatorFactory;
 import org.apache.ofbiz.entity.GenericValue;
-import org.apache.ofbiz.service.GenericServiceException;
-import org.apache.ofbiz.service.LocalDispatcher;
-import org.apache.ofbiz.service.ServiceContainer;
-import org.apache.ofbiz.service.ServiceUtil;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
 
 import com.stripe.Stripe;
@@ -199,23 +197,21 @@ public class BizTestCommands extends BaseTestCommands {
 		Invoice invoice = createInvoice(interpreter, context, partyId, "");
 
 		// InvoiceItem
-		Delegator delegator = DelegatorFactory.getDelegator(null);
-		LocalDispatcher dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
-		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Accounting", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Edi", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Humanres", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Manufacturing", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Marketing", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Modeling", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Order", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Party", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Product", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Shipment", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(interpreter, context, delegator, dispatcher, invoice, "Workeffort", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, invoice, "Accounting", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, invoice, "Edi", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, invoice, "Humanres", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, invoice, "Manufacturing", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, invoice, "Marketing", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, invoice, "Modeling", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, invoice, "Order", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, invoice, "Party", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, invoice, "Product", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, invoice, "Shipment", 1, "INV_DPROD_ITEM");
+		createInvoiceItem(interpreter, context, invoice, "Workeffort", 1, "INV_DPROD_ITEM");
 
 		interpreter.println("Creata fattura numero " + invoice.getInvoiceId());
 		// Creazione pagamento
-		String paymentId = createPaymentFromInvoice(interpreter, context, delegator, invoice);
+		String paymentId = createPaymentFromInvoice(interpreter, context, invoice);
 		interpreter.println("Creato pagamento " + paymentId);
 
 		// Receive payment (PMNT_RECEIVED)
@@ -399,13 +395,10 @@ public class BizTestCommands extends BaseTestCommands {
 		// OrderItem
 		String itemSeqiD = UtilFormatOut.formatPaddedNumber(1, 5);
 
-		Delegator delegator = DelegatorFactory.getDelegator(null);
-		LocalDispatcher dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
-
-		createOrderItem(interpreter, context, delegator, dispatcher, orderHeader, itemSeqiD, "Accounting", 1, shipGroupSeqId);
+		createOrderItem(interpreter, context, orderHeader, itemSeqiD, "Accounting", 1, shipGroupSeqId);
 		// seqItemId++;
 		// itemSeqiD = UtilFormatOut.formatPaddedNumber(seqItemId, 5);
-		// createOrderItem(delegator, dispatcher, orderId, itemSeqiD, "TESTFLOW-ITEM-2",
+		// createOrderItem(orderId, itemSeqiD, "TESTFLOW-ITEM-2",
 		// 20, shipGroupSeqId);
 
 		// OrderRole
@@ -523,8 +516,8 @@ public class BizTestCommands extends BaseTestCommands {
 		interpreter.println("New order created: " + orderHeader.getOrderId());
 	}
 
-	private void createOrderItem(CommandInterpreter interpreter, Context context, Delegator delegator, LocalDispatcher dispatcher, OrderHeader orderHeader, String itemSeqiD, String item,
-			int quantity, String shipGroupSeqId) throws ResourceException, ServiceException {
+	private void createOrderItem(CommandInterpreter interpreter, Context context, OrderHeader orderHeader, String itemSeqiD, String item, int quantity,
+			String shipGroupSeqId) throws ResourceException, ServiceException {
 
 		ResourceWriter<OrderItem> orderItemWriter = resourceManager.getResourceWriter(context, OrderItem.class);
 
@@ -611,68 +604,14 @@ public class BizTestCommands extends BaseTestCommands {
 		invoiceContactMech.setContactMechId(ContactMechServices.getLatestPostaAddress(context, partyId));
 		invoiceContactMechWriter.create(invoiceContactMech, true);
 
-		/*
-		 * // InvoiceRole ResourceWriter<InvoiceRole> invoiceRoleWriter =
-		 * resourceManager.getResourceWriter(context, InvoiceRole.class); InvoiceRole
-		 * invoiceRole = InvoiceFactory.eINSTANCE.createInvoiceRole();
-		 * invoiceRole.setInvoiceId(invoice);
-		 * invoiceRole.setPartyId(resourceManager.createProxy(context, Party.class,
-		 * COMPANY_ID)); invoiceRole.setRoleTypeId(resourceManager.createProxy(context,
-		 * RoleType.class, "BILL_FROM_VENDOR")); invoiceRoleWriter.create(invoiceRole,
-		 * true);
-		 * 
-		 * // Party Role to partyId ResourceWriter<PartyRole> partyRoleWriter =
-		 * resourceManager.getResourceWriter(context, PartyRole.class); PartyRole
-		 * partyRole = PartyFactory.eINSTANCE.createPartyRole();
-		 * partyRole.setPartyId(party);
-		 * partyRole.setRoleTypeId(resourceManager.createProxy(context, RoleType.class,
-		 * "BILL_TO_CUSTOMER")); partyRoleWriter.create(partyRole, true);
-		 * 
-		 * invoiceRole = InvoiceFactory.eINSTANCE.createInvoiceRole();
-		 * invoiceRole.setInvoiceId(invoice); invoiceRole.setPartyId(party);
-		 * invoiceRole.setRoleTypeId(resourceManager.createProxy(context,
-		 * RoleType.class, "BILL_TO_CUSTOMER")); invoiceRoleWriter.create(invoiceRole,
-		 * true);
-		 * 
-		 * partyRole = PartyFactory.eINSTANCE.createPartyRole();
-		 * partyRole.setPartyId(party);
-		 * partyRole.setRoleTypeId(resourceManager.createProxy(context, RoleType.class,
-		 * "SHIP_TO_CUSTOMER")); partyRoleWriter.create(partyRole, true);
-		 * 
-		 * invoiceRole = InvoiceFactory.eINSTANCE.createInvoiceRole();
-		 * invoiceRole.setInvoiceId(invoice); invoiceRole.setPartyId(party);
-		 * invoiceRole.setRoleTypeId(resourceManager.createProxy(context,
-		 * RoleType.class, "SHIP_TO_CUSTOMER")); invoiceRoleWriter.create(invoiceRole,
-		 * true);
-		 * 
-		 * partyRole = PartyFactory.eINSTANCE.createPartyRole();
-		 * partyRole.setPartyId(party);
-		 * partyRole.setRoleTypeId(resourceManager.createProxy(context, RoleType.class,
-		 * "END_USER_CUSTOMER")); partyRoleWriter.create(partyRole, true);
-		 * 
-		 * invoiceRole = InvoiceFactory.eINSTANCE.createInvoiceRole();
-		 * invoiceRole.setInvoiceId(invoice); invoiceRole.setPartyId(party);
-		 * invoiceRole.setRoleTypeId(resourceManager.createProxy(context,
-		 * RoleType.class, "END_USER_CUSTOMER")); invoiceRoleWriter.create(invoiceRole,
-		 * true);
-		 * 
-		 * partyRole = PartyFactory.eINSTANCE.createPartyRole();
-		 * partyRole.setPartyId(party);
-		 * partyRole.setRoleTypeId(resourceManager.createProxy(context, RoleType.class,
-		 * "PLACING_CUSTOMER")); partyRoleWriter.create(partyRole, true);
-		 * 
-		 * invoiceRole = InvoiceFactory.eINSTANCE.createInvoiceRole();
-		 * invoiceRole.setInvoiceId(invoice); invoiceRole.setPartyId(party);
-		 * invoiceRole.setRoleTypeId(resourceManager.createProxy(context,
-		 * RoleType.class, "PLACING_CUSTOMER")); invoiceRoleWriter.create(invoiceRole,
-		 * true);
-		 */
-
 		return invoice;
 	}
 
-	private void createInvoiceItem(CommandInterpreter interpreter, Context context, Delegator delegator, LocalDispatcher dispatcher, Invoice invoice, String item, int quantity,
-			String itemType) throws ResourceException, ServiceException {
+	private void createInvoiceItem(CommandInterpreter interpreter, Context context, Invoice invoice, String item, int quantity, String itemType)
+			throws ResourceException, ServiceException {
+		
+		Delegator delegator = DelegatorFactory.getDelegator(null);
+		
 		ResourceWriter<InvoiceItem> invoiceItemWriter = resourceManager.getResourceWriter(context, InvoiceItem.class);
 
 		InvoiceItem invoiceItem = invoiceItemWriter.make();
@@ -820,6 +759,8 @@ public class BizTestCommands extends BaseTestCommands {
 
 	private String createRow(Context context, Agreement agreement, String text) throws ResourceException {
 
+		Delegator delegator = DelegatorFactory.getDelegator(null);
+		
 		AgreementItemType agreementType = context.createProxy(AgreementItemType.class, "AGREEMENT_PRICING_PR");
 		TermType termType = context.createProxy(TermType.class, "FIN_PAYMENT_FIXDAY");
 		InvoiceItemType invoiceItemType = context.createProxy(InvoiceItemType.class, "INV_DPROD_ITEM");
@@ -830,8 +771,6 @@ public class BizTestCommands extends BaseTestCommands {
 		AgreementItem agreementItem = agreementItemWriter.make();
 		agreementItem.setAgreementId(agreement);
 
-		//
-		Delegator delegator = DelegatorFactory.getDelegator(null);
 		GenericValue agreementItemValue = EntityUtils.toBizEntity(delegator, agreementItem);
 		String agreementItemSeqId = getNextSubSeqId(delegator, agreementItemValue, "agreementItemSeqId");
 
@@ -902,6 +841,8 @@ public class BizTestCommands extends BaseTestCommands {
 
 	private void renewalAgreement(CommandInterpreter interpreter, Context context, String agreementId) throws ResourceException, ServiceException {
 
+		Delegator delegator = DelegatorFactory.getDelegator(null);
+		
 		/*
 		 * il rinnovo del contratto avviene quando questo è ancora aperto (Agreement) ed
 		 * i termini della varie righe sono scaduti. verrà presa l'ultima riga e copiata
@@ -967,21 +908,18 @@ public class BizTestCommands extends BaseTestCommands {
 					Invoice invoiceEntity = createInvoice(interpreter, context, agreement.getPartyIdTo().getPartyId(),
 							"Agreement renewal - reference " + agreement.getID() + "/" + agreementItemSeqId);
 
-					Delegator delegator = DelegatorFactory.getDelegator(null);
-					LocalDispatcher dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
-
 					// leggo la riga appena creata
 					productFilter = "agreementId = '" + agreement.getAgreementId() + "' AND agreementItemSeqId = '" + agreementItemSeqId + "'";
 					try (EntityIterator<AgreementProductAppl> agreementProducts = agreementProductApplReader.find(productFilter)) {
 						for (AgreementProductAppl agreementProduct : agreementProducts) {
-							createInvoiceItem(interpreter, context, delegator, dispatcher, invoiceEntity, agreementProduct.getProductId().getProductId(), 1,
+							createInvoiceItem(interpreter, context, invoiceEntity, agreementProduct.getProductId().getProductId(), 1,
 									agreementTermLast.getInvoiceItemTypeId().getID());
 						}
 					}
 
 					interpreter.println("Creata fattura numero " + invoiceEntity.getInvoiceId());
 					// Creazione pagamento
-					String paymentId = createPaymentFromInvoice(interpreter, context, delegator, invoiceEntity);
+					String paymentId = createPaymentFromInvoice(interpreter, context, invoiceEntity);
 					interpreter.println("Creato pagamento " + paymentId);
 
 					// Effettuo pagamento Tramite Stripe
@@ -1060,53 +998,39 @@ public class BizTestCommands extends BaseTestCommands {
 		return true;
 	}
 
-	private String createPaymentFromInvoice(CommandInterpreter interpreter, Context context, Delegator delegator, Invoice invoiceEntity) throws ResourceException {
-		ResourceReader<UserLogin> userLoginReader = resourceManager.getResourceReader(context, UserLogin.class);
-		UserLogin userLoginEntity = userLoginReader.lookup(USER_LOGIN_ID);
-		GenericValue userLogin = EntityUtils.toBizEntity(delegator, userLoginEntity);
+	private String createPaymentFromInvoice(CommandInterpreter interpreter, Context context, Invoice invoice) throws ResourceException, ServiceException {
 
-		LocalDispatcher dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
-		GenericValue invoice = EntityUtils.toBizEntity(delegator, invoiceEntity);
-		Map<String, Object> paymentContext = new HashMap<>();
-		Map<String, Object> paymentResult = new HashMap<>();
-		Map<String, Object> paymentApplicationContext = new HashMap<>();
-		Map<String, Object> paymentApplicationResult = new HashMap<>();
-
-		try {
-
-			PaymentMethod paymentMethod = PaymentServices.getPaymentMethodParty(context, invoiceEntity.getPartyId().getID(), "CREDIT_CARD");
-			if (paymentMethod == null) {
-				interpreter.println("Payment method not found for party " + invoiceEntity.getPartyId().getID());
-			} else {
-				// creazione pagamento
-				paymentContext.put("amount", InvoiceWorker.getInvoiceTotal(invoice));
-				paymentContext.put("partyIdTo", invoiceEntity.getPartyIdFrom().getID());
-				paymentContext.put("partyIdFrom", invoiceEntity.getPartyId().getID());
-				paymentContext.put("paymentTypeId", "CUSTOMER_PAYMENT");
-				paymentContext.put("paymentMethodTypeId", "CREDIT_CARD");
-				paymentContext.put("paymentMethodId", paymentMethod.getID());
-				paymentContext.put("currencyUomId", UomServices.getUom(context).getID());
-				paymentContext.put("paymentRefNum", "Invoice number " + invoiceEntity.getID());
-				paymentContext.put("userLogin", userLogin);
-				paymentResult = dispatcher.runSync("createPayment", paymentContext);
-				if (ServiceUtil.isError(paymentResult)) {
-					interpreter.println("Error in create payment");
-					return null;
-				}
-				// applicazione pagamento
-				paymentApplicationContext.put("invoiceId", invoiceEntity.getID());
-				paymentApplicationContext.put("paymentId", paymentResult.get("paymentId"));
-				paymentApplicationResult = dispatcher.runSync("updatePaymentApplicationDef", paymentApplicationContext);
-				if (ServiceUtil.isError(paymentApplicationResult)) {
-					interpreter.println("Error in payment application: " + paymentResult.get("paymentId"));
-					return (String) paymentResult.get("paymentId");
-				}
-				interpreter.println("Pagamento applicato");
-			}
-		} catch (GenericServiceException e) {
-			e.printStackTrace();
+		Delegator delegator = DelegatorFactory.getDelegator(null);
+		
+		PaymentMethod paymentMethod = PaymentServices.getPaymentMethodParty(context, invoice.getPartyId().getID(), "CREDIT_CARD");
+		if (paymentMethod == null) {
+			interpreter.println("Payment method not found for party " + invoice.getPartyId().getID());
 		}
-		return (String) paymentResult.get("paymentId");
+
+		ResourceWriter<Payment> paymentWriter = resourceManager.getResourceWriter(context, Payment.class);
+		Payment payment = paymentWriter.make(true);
+		payment.setAmount(InvoiceWorker.getInvoiceTotal(EntityUtils.toBizEntity(delegator, invoice)));
+		payment.setPartyIdTo(invoice.getPartyIdFrom());
+		payment.setPartyIdFrom(invoice.getPartyId());
+		payment.setPaymentTypeId(context.getFrame(PaymentType.class).createProxy("CUSTOMER_PAYMENT"));
+		payment.setPaymentMethodTypeId(context.getFrame(PaymentMethodType.class).createProxy("CREDIT_CARD"));
+		payment.setCurrencyUomId(UomServices.getUom(context));
+		payment.setPaymentRefNum("Invoice number " + invoice.getID());
+
+		paymentWriter.create(payment);
+
+		// applicazione pagamento
+		UpdatePaymentApplicationDef updatePaymentApplicationDef = serviceManager.prepare(context, UpdatePaymentApplicationDef.class);
+		updatePaymentApplicationDef.setInvoiceId(invoice.getID());
+		updatePaymentApplicationDef.setPaymentId(payment.getID());
+		UpdatePaymentApplicationDefResponse response = serviceManager.execute(updatePaymentApplicationDef);
+		if (response.isError()) {
+			interpreter.println("Error in payment application: " + payment.getID());
+			return payment.getID();
+		}
+		interpreter.println("Pagamento applicato");
+
+		return payment.getID();
 	}
 
 	@Override

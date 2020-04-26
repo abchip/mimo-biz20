@@ -179,70 +179,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl#getSetPaymentStatus()
 	 * @generated
 	 */
-	int SET_PAYMENT_STATUS = 2;
-
-	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_PAYMENT_STATUS__LOCALE = BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_PAYMENT_STATUS__TENANT = BizServicePackage.BIZ_SERVICE_REQUEST__TENANT;
-
-	/**
-	 * The feature id for the '<em><b>Context</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_PAYMENT_STATUS__CONTEXT = BizServicePackage.BIZ_SERVICE_REQUEST__CONTEXT;
-
-	/**
-	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_PAYMENT_STATUS__USER_LOGIN = BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN;
-
-	/**
-	 * The feature id for the '<em><b>Payment Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_PAYMENT_STATUS__PAYMENT_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Status Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_PAYMENT_STATUS__STATUS_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of structural features of the '<em>Set Payment Status</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_PAYMENT_STATUS_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 2;
+	int SET_PAYMENT_STATUS = 4;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.service.accounting.impl.SetPaymentStatusResponseImpl <em>Set Payment Status Response</em>}' class.
@@ -252,53 +189,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl#getSetPaymentStatusResponse()
 	 * @generated
 	 */
-	int SET_PAYMENT_STATUS_RESPONSE = 3;
-
-	/**
-	 * The feature id for the '<em><b>Error</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_PAYMENT_STATUS_RESPONSE__ERROR = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR;
-
-	/**
-	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_PAYMENT_STATUS_RESPONSE__ERROR_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR_MESSAGE;
-
-	/**
-	 * The feature id for the '<em><b>Response Message</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_PAYMENT_STATUS_RESPONSE__RESPONSE_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__RESPONSE_MESSAGE;
-
-	/**
-	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_PAYMENT_STATUS_RESPONSE__SUCCESS_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__SUCCESS_MESSAGE;
-
-	/**
-	 * The number of structural features of the '<em>Set Payment Status Response</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_PAYMENT_STATUS_RESPONSE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 0;
-
+	int SET_PAYMENT_STATUS_RESPONSE = 5;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.service.accounting.impl.SetInvoiceStatusImpl <em>Set Invoice Status</em>}' class.
@@ -308,7 +199,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl#getSetInvoiceStatus()
 	 * @generated
 	 */
-	int SET_INVOICE_STATUS = 4;
+	int SET_INVOICE_STATUS = 2;
 
 	/**
 	 * The feature id for the '<em><b>Locale</b></em>' attribute.
@@ -399,7 +290,7 @@ public interface AccountingPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl#getSetInvoiceStatusResponse()
 	 * @generated
 	 */
-	int SET_INVOICE_STATUS_RESPONSE = 5;
+	int SET_INVOICE_STATUS_RESPONSE = 3;
 
 	/**
 	 * The feature id for the '<em><b>Error</b></em>' attribute.
@@ -464,6 +355,243 @@ public interface AccountingPackage extends EPackage {
 	 */
 	int SET_INVOICE_STATUS_RESPONSE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 2;
 
+	/**
+	 * The feature id for the '<em><b>Locale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SET_PAYMENT_STATUS__LOCALE = BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SET_PAYMENT_STATUS__TENANT = BizServicePackage.BIZ_SERVICE_REQUEST__TENANT;
+
+	/**
+	 * The feature id for the '<em><b>Context</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SET_PAYMENT_STATUS__CONTEXT = BizServicePackage.BIZ_SERVICE_REQUEST__CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SET_PAYMENT_STATUS__USER_LOGIN = BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN;
+
+	/**
+	 * The feature id for the '<em><b>Payment Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SET_PAYMENT_STATUS__PAYMENT_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Status Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SET_PAYMENT_STATUS__STATUS_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Set Payment Status</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SET_PAYMENT_STATUS_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Error</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SET_PAYMENT_STATUS_RESPONSE__ERROR = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR;
+
+	/**
+	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SET_PAYMENT_STATUS_RESPONSE__ERROR_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Response Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SET_PAYMENT_STATUS_RESPONSE__RESPONSE_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__RESPONSE_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SET_PAYMENT_STATUS_RESPONSE__SUCCESS_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__SUCCESS_MESSAGE;
+
+	/**
+	 * The number of structural features of the '<em>Set Payment Status Response</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SET_PAYMENT_STATUS_RESPONSE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 0;
+
+
+	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.accounting.impl.UpdatePaymentApplicationDefImpl <em>Update Payment Application Def</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.accounting.impl.UpdatePaymentApplicationDefImpl
+	 * @see org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl#getUpdatePaymentApplicationDef()
+	 * @generated
+	 */
+	int UPDATE_PAYMENT_APPLICATION_DEF = 6;
+
+	/**
+	 * The feature id for the '<em><b>Locale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPDATE_PAYMENT_APPLICATION_DEF__LOCALE = BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPDATE_PAYMENT_APPLICATION_DEF__TENANT = BizServicePackage.BIZ_SERVICE_REQUEST__TENANT;
+
+	/**
+	 * The feature id for the '<em><b>Context</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPDATE_PAYMENT_APPLICATION_DEF__CONTEXT = BizServicePackage.BIZ_SERVICE_REQUEST__CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPDATE_PAYMENT_APPLICATION_DEF__USER_LOGIN = BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN;
+
+	/**
+	 * The feature id for the '<em><b>Invoice Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPDATE_PAYMENT_APPLICATION_DEF__INVOICE_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Payment Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPDATE_PAYMENT_APPLICATION_DEF__PAYMENT_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Update Payment Application Def</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPDATE_PAYMENT_APPLICATION_DEF_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 2;
+
+	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.accounting.impl.UpdatePaymentApplicationDefResponseImpl <em>Update Payment Application Def Response</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.accounting.impl.UpdatePaymentApplicationDefResponseImpl
+	 * @see org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl#getUpdatePaymentApplicationDefResponse()
+	 * @generated
+	 */
+	int UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE = 7;
+
+	/**
+	 * The feature id for the '<em><b>Error</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE__ERROR = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR;
+
+	/**
+	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE__ERROR_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Response Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE__RESPONSE_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__RESPONSE_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE__SUCCESS_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__SUCCESS_MESSAGE;
+
+	/**
+	 * The number of structural features of the '<em>Update Payment Application Def Response</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 0;
+
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.accounting.CreatePayment <em>Create Payment</em>}'.
@@ -526,6 +654,48 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getSetPaymentStatusResponse();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDef <em>Update Payment Application Def</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Update Payment Application Def</em>'.
+	 * @see org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDef
+	 * @generated
+	 */
+	EClass getUpdatePaymentApplicationDef();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDef#getInvoiceId <em>Invoice Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Invoice Id</em>'.
+	 * @see org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDef#getInvoiceId()
+	 * @see #getUpdatePaymentApplicationDef()
+	 * @generated
+	 */
+	EAttribute getUpdatePaymentApplicationDef_InvoiceId();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDef#getPaymentId <em>Payment Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Payment Id</em>'.
+	 * @see org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDef#getPaymentId()
+	 * @see #getUpdatePaymentApplicationDef()
+	 * @generated
+	 */
+	EAttribute getUpdatePaymentApplicationDef_PaymentId();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDefResponse <em>Update Payment Application Def Response</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Update Payment Application Def Response</em>'.
+	 * @see org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDefResponse
+	 * @generated
+	 */
+	EClass getUpdatePaymentApplicationDefResponse();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.accounting.SetInvoiceStatus <em>Set Invoice Status</em>}'.
@@ -690,6 +860,42 @@ public interface AccountingPackage extends EPackage {
 		 * @generated
 		 */
 		EClass SET_PAYMENT_STATUS_RESPONSE = eINSTANCE.getSetPaymentStatusResponse();
+
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.accounting.impl.UpdatePaymentApplicationDefImpl <em>Update Payment Application Def</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.accounting.impl.UpdatePaymentApplicationDefImpl
+		 * @see org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl#getUpdatePaymentApplicationDef()
+		 * @generated
+		 */
+		EClass UPDATE_PAYMENT_APPLICATION_DEF = eINSTANCE.getUpdatePaymentApplicationDef();
+
+		/**
+		 * The meta object literal for the '<em><b>Invoice Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute UPDATE_PAYMENT_APPLICATION_DEF__INVOICE_ID = eINSTANCE.getUpdatePaymentApplicationDef_InvoiceId();
+
+		/**
+		 * The meta object literal for the '<em><b>Payment Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute UPDATE_PAYMENT_APPLICATION_DEF__PAYMENT_ID = eINSTANCE.getUpdatePaymentApplicationDef_PaymentId();
+
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.accounting.impl.UpdatePaymentApplicationDefResponseImpl <em>Update Payment Application Def Response</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.accounting.impl.UpdatePaymentApplicationDefResponseImpl
+		 * @see org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl#getUpdatePaymentApplicationDefResponse()
+		 * @generated
+		 */
+		EClass UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE = eINSTANCE.getUpdatePaymentApplicationDefResponse();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.accounting.impl.SetInvoiceStatusImpl <em>Set Invoice Status</em>}' class.

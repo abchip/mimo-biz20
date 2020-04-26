@@ -63,6 +63,24 @@ public interface AccountingFactory extends EFactory {
 	SetPaymentStatusResponse createSetPaymentStatusResponse();
 
 	/**
+	 * Returns a new object of class '<em>Update Payment Application Def</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Update Payment Application Def</em>'.
+	 * @generated
+	 */
+	UpdatePaymentApplicationDef createUpdatePaymentApplicationDef();
+
+	/**
+	 * Returns a new object of class '<em>Update Payment Application Def Response</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Update Payment Application Def Response</em>'.
+	 * @generated
+	 */
+	UpdatePaymentApplicationDefResponse createUpdatePaymentApplicationDefResponse();
+
+	/**
 	 * Returns a new object of class '<em>Set Invoice Status</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

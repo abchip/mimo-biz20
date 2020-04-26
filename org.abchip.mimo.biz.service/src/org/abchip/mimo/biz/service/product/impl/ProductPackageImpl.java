@@ -482,16 +482,6 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		isCreated = true;
 
 		// Create classes and their features
-		calculateProductPriceEClass = createEClass(CALCULATE_PRODUCT_PRICE);
-		createEReference(calculateProductPriceEClass, CALCULATE_PRODUCT_PRICE__PRODUCT);
-		createEAttribute(calculateProductPriceEClass, CALCULATE_PRODUCT_PRICE__CURRENCY_UOM_ID);
-
-		calculateProductPriceResponseEClass = createEClass(CALCULATE_PRODUCT_PRICE_RESPONSE);
-		createEAttribute(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__VALID_PRICE_FOUND);
-		createEAttribute(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__BASE_PRICE);
-		createEAttribute(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE);
-		createEReference(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS);
-
 		calcTaxForDisplayEClass = createEClass(CALC_TAX_FOR_DISPLAY);
 		createEAttribute(calcTaxForDisplayEClass, CALC_TAX_FOR_DISPLAY__BASE_PRICE);
 		createEAttribute(calcTaxForDisplayEClass, CALC_TAX_FOR_DISPLAY__BILL_TO_PARTY_ID);
@@ -504,6 +494,16 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		createEAttribute(calcTaxForDisplayResponseEClass, CALC_TAX_FOR_DISPLAY_RESPONSE__PRICE_WITH_TAX);
 		createEAttribute(calcTaxForDisplayResponseEClass, CALC_TAX_FOR_DISPLAY_RESPONSE__TAX_PERCENTAGE);
 		createEAttribute(calcTaxForDisplayResponseEClass, CALC_TAX_FOR_DISPLAY_RESPONSE__TAX_TOTAL);
+
+		calculateProductPriceEClass = createEClass(CALCULATE_PRODUCT_PRICE);
+		createEReference(calculateProductPriceEClass, CALCULATE_PRODUCT_PRICE__PRODUCT);
+		createEAttribute(calculateProductPriceEClass, CALCULATE_PRODUCT_PRICE__CURRENCY_UOM_ID);
+
+		calculateProductPriceResponseEClass = createEClass(CALCULATE_PRODUCT_PRICE_RESPONSE);
+		createEAttribute(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__VALID_PRICE_FOUND);
+		createEAttribute(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__BASE_PRICE);
+		createEAttribute(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE);
+		createEReference(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS);
 	}
 
 	/**
@@ -540,27 +540,17 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 
 		// Add supertypes to classes
 		EGenericType g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
-		EGenericType g2 = createEGenericType(this.getCalculateProductPriceResponse());
-		g1.getETypeArguments().add(g2);
-		calculateProductPriceEClass.getEGenericSuperTypes().add(g1);
-		calculateProductPriceResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
-		g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
-		g2 = createEGenericType(this.getCalcTaxForDisplayResponse());
+		EGenericType g2 = createEGenericType(this.getCalcTaxForDisplayResponse());
 		g1.getETypeArguments().add(g2);
 		calcTaxForDisplayEClass.getEGenericSuperTypes().add(g1);
 		calcTaxForDisplayResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
+		g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
+		g2 = createEGenericType(this.getCalculateProductPriceResponse());
+		g1.getETypeArguments().add(g2);
+		calculateProductPriceEClass.getEGenericSuperTypes().add(g1);
+		calculateProductPriceResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
 
 		// Initialize classes and features; add operations and parameters
-		initEClass(calculateProductPriceEClass, CalculateProductPrice.class, "CalculateProductPrice", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getCalculateProductPrice_Product(), theProductPackage_1.getProduct(), null, "product", null, 1, 1, CalculateProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCalculateProductPrice_CurrencyUomId(), ecorePackage.getEString(), "currencyUomId", "@general/currency.uom.id.default", 0, 1, CalculateProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(calculateProductPriceResponseEClass, CalculateProductPriceResponse.class, "CalculateProductPriceResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getCalculateProductPriceResponse_ValidPriceFound(), ecorePackage.getEBoolean(), "validPriceFound", null, 1, 1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCalculateProductPriceResponse_BasePrice(), ecorePackage.getEBigDecimal(), "basePrice", null, 1, 1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCalculateProductPriceResponse_ListPrice(), ecorePackage.getEBigDecimal(), "listPrice", null, 0, 1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getCalculateProductPriceResponse_OrderItemPriceInfos(), theOrderPackage.getOrderItemPriceInfo(), null, "orderItemPriceInfos", null, 0, -1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
 		initEClass(calcTaxForDisplayEClass, CalcTaxForDisplay.class, "CalcTaxForDisplay", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCalcTaxForDisplay_BasePrice(), ecorePackage.getEBigDecimal(), "basePrice", null, 1, 1, CalcTaxForDisplay.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCalcTaxForDisplay_BillToPartyId(), ecorePackage.getEString(), "billToPartyId", null, 1, 1, CalcTaxForDisplay.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -573,6 +563,16 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		initEAttribute(getCalcTaxForDisplayResponse_PriceWithTax(), ecorePackage.getEBigDecimal(), "priceWithTax", null, 1, 1, CalcTaxForDisplayResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCalcTaxForDisplayResponse_TaxPercentage(), ecorePackage.getEBigDecimal(), "taxPercentage", null, 1, 1, CalcTaxForDisplayResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCalcTaxForDisplayResponse_TaxTotal(), ecorePackage.getEBigDecimal(), "taxTotal", null, 1, 1, CalcTaxForDisplayResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(calculateProductPriceEClass, CalculateProductPrice.class, "CalculateProductPrice", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getCalculateProductPrice_Product(), theProductPackage_1.getProduct(), null, "product", null, 1, 1, CalculateProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCalculateProductPrice_CurrencyUomId(), ecorePackage.getEString(), "currencyUomId", "@general/currency.uom.id.default", 0, 1, CalculateProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(calculateProductPriceResponseEClass, CalculateProductPriceResponse.class, "CalculateProductPriceResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCalculateProductPriceResponse_ValidPriceFound(), ecorePackage.getEBoolean(), "validPriceFound", null, 1, 1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCalculateProductPriceResponse_BasePrice(), ecorePackage.getEBigDecimal(), "basePrice", null, 1, 1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCalculateProductPriceResponse_ListPrice(), ecorePackage.getEBigDecimal(), "listPrice", null, 0, 1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCalculateProductPriceResponse_OrderItemPriceInfos(), theOrderPackage.getOrderItemPriceInfo(), null, "orderItemPriceInfos", null, 0, -1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 	}
 
 } //ProductPackageImpl

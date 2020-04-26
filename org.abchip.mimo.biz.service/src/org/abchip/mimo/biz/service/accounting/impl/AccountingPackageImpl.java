@@ -136,6 +136,8 @@ import org.abchip.mimo.biz.service.accounting.SetInvoiceStatusResponse;
 import org.abchip.mimo.biz.service.accounting.SetPaymentStatus;
 import org.abchip.mimo.biz.service.accounting.SetPaymentStatusResponse;
 
+import org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDef;
+import org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDefResponse;
 import org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl;
 
 import org.abchip.mimo.biz.service.impl.BizServicePackageImpl;
@@ -185,6 +187,20 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * @generated
 	 */
 	private EClass setPaymentStatusResponseEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass updatePaymentApplicationDefEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass updatePaymentApplicationDefResponseEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -408,6 +424,46 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * @generated
 	 */
 	@Override
+	public EClass getUpdatePaymentApplicationDef() {
+		return updatePaymentApplicationDefEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUpdatePaymentApplicationDef_InvoiceId() {
+		return (EAttribute)updatePaymentApplicationDefEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUpdatePaymentApplicationDef_PaymentId() {
+		return (EAttribute)updatePaymentApplicationDefEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getUpdatePaymentApplicationDefResponse() {
+		return updatePaymentApplicationDefResponseEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getSetInvoiceStatus() {
 		return setInvoiceStatusEClass;
 	}
@@ -515,12 +571,6 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 
 		createPaymentResponseEClass = createEClass(CREATE_PAYMENT_RESPONSE);
 
-		setPaymentStatusEClass = createEClass(SET_PAYMENT_STATUS);
-		createEAttribute(setPaymentStatusEClass, SET_PAYMENT_STATUS__PAYMENT_ID);
-		createEAttribute(setPaymentStatusEClass, SET_PAYMENT_STATUS__STATUS_ID);
-
-		setPaymentStatusResponseEClass = createEClass(SET_PAYMENT_STATUS_RESPONSE);
-
 		setInvoiceStatusEClass = createEClass(SET_INVOICE_STATUS);
 		createEAttribute(setInvoiceStatusEClass, SET_INVOICE_STATUS__INVOICE_ID);
 		createEAttribute(setInvoiceStatusEClass, SET_INVOICE_STATUS__PAID_DATE);
@@ -530,6 +580,18 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 		setInvoiceStatusResponseEClass = createEClass(SET_INVOICE_STATUS_RESPONSE);
 		createEAttribute(setInvoiceStatusResponseEClass, SET_INVOICE_STATUS_RESPONSE__INVOICE_TYPE_ID);
 		createEAttribute(setInvoiceStatusResponseEClass, SET_INVOICE_STATUS_RESPONSE__OLD_STATUS_ID);
+
+		setPaymentStatusEClass = createEClass(SET_PAYMENT_STATUS);
+		createEAttribute(setPaymentStatusEClass, SET_PAYMENT_STATUS__PAYMENT_ID);
+		createEAttribute(setPaymentStatusEClass, SET_PAYMENT_STATUS__STATUS_ID);
+
+		setPaymentStatusResponseEClass = createEClass(SET_PAYMENT_STATUS_RESPONSE);
+
+		updatePaymentApplicationDefEClass = createEClass(UPDATE_PAYMENT_APPLICATION_DEF);
+		createEAttribute(updatePaymentApplicationDefEClass, UPDATE_PAYMENT_APPLICATION_DEF__INVOICE_ID);
+		createEAttribute(updatePaymentApplicationDefEClass, UPDATE_PAYMENT_APPLICATION_DEF__PAYMENT_ID);
+
+		updatePaymentApplicationDefResponseEClass = createEClass(UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE);
 	}
 
 	/**
@@ -569,26 +631,25 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 		createPaymentEClass.getEGenericSuperTypes().add(g1);
 		createPaymentResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
 		g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
+		g2 = createEGenericType(this.getSetInvoiceStatusResponse());
+		g1.getETypeArguments().add(g2);
+		setInvoiceStatusEClass.getEGenericSuperTypes().add(g1);
+		setInvoiceStatusResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
+		g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
 		g2 = createEGenericType(this.getSetPaymentStatusResponse());
 		g1.getETypeArguments().add(g2);
 		setPaymentStatusEClass.getEGenericSuperTypes().add(g1);
 		setPaymentStatusResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
 		g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
-		g2 = createEGenericType(this.getSetInvoiceStatusResponse());
+		g2 = createEGenericType(this.getUpdatePaymentApplicationDefResponse());
 		g1.getETypeArguments().add(g2);
-		setInvoiceStatusEClass.getEGenericSuperTypes().add(g1);
-		setInvoiceStatusResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
+		updatePaymentApplicationDefEClass.getEGenericSuperTypes().add(g1);
+		updatePaymentApplicationDefResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(createPaymentEClass, CreatePayment.class, "CreatePayment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(createPaymentResponseEClass, CreatePaymentResponse.class, "CreatePaymentResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(setPaymentStatusEClass, SetPaymentStatus.class, "SetPaymentStatus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getSetPaymentStatus_PaymentId(), ecorePackage.getEString(), "paymentId", null, 1, 1, SetPaymentStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getSetPaymentStatus_StatusId(), ecorePackage.getEString(), "statusId", null, 1, 1, SetPaymentStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(setPaymentStatusResponseEClass, SetPaymentStatusResponse.class, "SetPaymentStatusResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(setInvoiceStatusEClass, SetInvoiceStatus.class, "SetInvoiceStatus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSetInvoiceStatus_InvoiceId(), ecorePackage.getEString(), "invoiceId", null, 1, 1, SetInvoiceStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -599,6 +660,18 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 		initEClass(setInvoiceStatusResponseEClass, SetInvoiceStatusResponse.class, "SetInvoiceStatusResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSetInvoiceStatusResponse_InvoiceTypeId(), ecorePackage.getEString(), "invoiceTypeId", null, 0, 1, SetInvoiceStatusResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSetInvoiceStatusResponse_OldStatusId(), ecorePackage.getEString(), "oldStatusId", null, 0, 1, SetInvoiceStatusResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(setPaymentStatusEClass, SetPaymentStatus.class, "SetPaymentStatus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSetPaymentStatus_PaymentId(), ecorePackage.getEString(), "paymentId", null, 1, 1, SetPaymentStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSetPaymentStatus_StatusId(), ecorePackage.getEString(), "statusId", null, 1, 1, SetPaymentStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(setPaymentStatusResponseEClass, SetPaymentStatusResponse.class, "SetPaymentStatusResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(updatePaymentApplicationDefEClass, UpdatePaymentApplicationDef.class, "UpdatePaymentApplicationDef", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getUpdatePaymentApplicationDef_InvoiceId(), ecorePackage.getEString(), "invoiceId", null, 0, 1, UpdatePaymentApplicationDef.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUpdatePaymentApplicationDef_PaymentId(), ecorePackage.getEString(), "paymentId", null, 1, 1, UpdatePaymentApplicationDef.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(updatePaymentApplicationDefResponseEClass, UpdatePaymentApplicationDefResponse.class, "UpdatePaymentApplicationDefResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 	}
 
 } //AccountingPackageImpl
