@@ -1,5 +1,6 @@
 package org.abchip.mimo.biz.plugins.paymentGateway;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -13,7 +14,7 @@ public class StripePaymentManager {
 	
 	public static final String API_KEY = "sk_test_9HACrndqWGPN3Ox1hYNfuJQO00z4GR7fOI";
 	
-	public static PaymentIntent createPaymentIntent(String paymentType, Integer amount, String currency, String description) {
+	public static PaymentIntent createPaymentIntent(String paymentType, BigDecimal amount, String currency, String description) {
 		PaymentIntent paymentIntent = null;
 		
 		try {

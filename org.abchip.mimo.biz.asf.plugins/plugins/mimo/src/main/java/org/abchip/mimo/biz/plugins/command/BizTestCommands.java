@@ -9,7 +9,6 @@
 package org.abchip.mimo.biz.plugins.command;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.sql.Timestamp;
 import java.util.Calendar;
 import java.util.Date;
@@ -89,7 +88,6 @@ import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceManager;
 import org.abchip.mimo.tester.base.BaseTestCommands;
-import org.apache.ofbiz.accounting.invoice.InvoiceWorker;
 import org.apache.ofbiz.base.util.UtilFormatOut;
 import org.apache.ofbiz.entity.Delegator;
 import org.apache.ofbiz.entity.DelegatorFactory;
@@ -852,8 +850,6 @@ public class BizTestCommands extends BaseTestCommands {
 
 	private void renewalAgreement(CommandInterpreter interpreter, Context context, String agreementId) throws ResourceException, ServiceException {
 
-		Delegator delegator = DelegatorFactory.getDelegator(null);
-
 		/*
 		 * il rinnovo del contratto avviene quando questo è ancora aperto (Agreement) ed
 		 * i termini della varie righe sono scaduti. verrà presa l'ultima riga e copiata
@@ -916,34 +912,29 @@ public class BizTestCommands extends BaseTestCommands {
 					}
 
 					// Creo la fattura dalla nuova riga
-					Invoice invoiceEntity = createInvoice(interpreter, context, agreement.getPartyIdTo().getPartyId(),
+					Invoice invoice = createInvoice(interpreter, context, agreement.getPartyIdTo().getPartyId(),
 							"Agreement renewal - reference " + agreement.getID() + "/" + agreementItemSeqId);
 
 					// leggo la riga appena creata
 					productFilter = "agreementId = '" + agreement.getAgreementId() + "' AND agreementItemSeqId = '" + agreementItemSeqId + "'";
 					try (EntityIterator<AgreementProductAppl> agreementProducts = agreementProductApplReader.find(productFilter)) {
 						for (AgreementProductAppl agreementProduct : agreementProducts) {
-							createInvoiceItem(interpreter, context, invoiceEntity, agreementProduct.getProductId().getProductId(), 1, agreementTermLast.getInvoiceItemTypeId().getID());
+							createInvoiceItem(interpreter, context, invoice, agreementProduct.getProductId().getProductId(), 1, agreementTermLast.getInvoiceItemTypeId().getID());
 						}
 					}
 
-					interpreter.println("Creata fattura numero " + invoiceEntity.getInvoiceId());
+					interpreter.println("Creata fattura numero " + invoice.getInvoiceId());
 					// Creazione pagamento
-					String paymentId = createPaymentFromInvoice(interpreter, context, invoiceEntity);
+					String paymentId = createPaymentFromInvoice(interpreter, context, invoice);
 					interpreter.println("Creato pagamento " + paymentId);
 
 					// Effettuo pagamento Tramite Stripe
-					CreditCard creditCard = PaymentServices.getCreditCardParty(context, invoiceEntity.getPartyId().getID());
+					CreditCard creditCard = PaymentServices.getCreditCardParty(context, invoice.getPartyId().getID());
 					if (creditCard != null) {
 						Stripe.apiKey = StripePaymentManager.API_KEY;
-						BigDecimal amount = InvoiceWorker.getInvoiceTotal(EntityUtils.toBizEntity(delegator, invoiceEntity));
-						amount = amount.setScale(2, RoundingMode.HALF_UP);
-						String amountString = amount.toString();
-						amountString = amountString.replace(".", "");
-						amountString = amountString.replace(",", "");
 
-						String description = "Payment invoice nr. " + invoiceEntity.getID() + " - customer " + invoiceEntity.getPartyId().getID();
-						PaymentIntent intent = StripePaymentManager.createPaymentIntent("card", Integer.parseInt(amountString), invoiceEntity.getCurrencyUomId().getID(), description);
+						String description = "Payment invoice nr. " + invoice.getID() + " - customer " + invoice.getPartyId().getID();
+						PaymentIntent intent = StripePaymentManager.createPaymentIntent("card", invoice.getTotal(), invoice.getCurrencyUomId().getID(), description);
 						String[] values = creditCard.getExpireDate().split("/");
 						com.stripe.model.PaymentMethod paymentMethod = StripePaymentManager.createPaymentCardMethod(creditCard.getCardNumber(), Integer.parseInt(values[0]),
 								Integer.parseInt(values[1]), creditCard.getDescription());
@@ -957,7 +948,7 @@ public class BizTestCommands extends BaseTestCommands {
 							// TODO Update payment with transaction id
 
 							// Approve Invoice
-							setInvoiceStatus(interpreter, context, invoiceEntity.getID(), "INVOICE_APPROVED");
+							setInvoiceStatus(interpreter, context, invoice.getID(), "INVOICE_APPROVED");
 						} else {
 							interpreter.println("Error in credit card payment");
 						}
@@ -1010,8 +1001,6 @@ public class BizTestCommands extends BaseTestCommands {
 
 	private String createPaymentFromInvoice(CommandInterpreter interpreter, Context context, Invoice invoice) throws ResourceException, ServiceException {
 
-		Delegator delegator = DelegatorFactory.getDelegator(null);
-
 		PaymentMethod paymentMethod = PaymentServices.getPaymentMethodParty(context, invoice.getPartyId().getID(), "CREDIT_CARD");
 		if (paymentMethod == null) {
 			interpreter.println("Payment method not found for party " + invoice.getPartyId().getID());
@@ -1019,7 +1008,7 @@ public class BizTestCommands extends BaseTestCommands {
 
 		ResourceWriter<Payment> paymentWriter = resourceManager.getResourceWriter(context, Payment.class);
 		Payment payment = paymentWriter.make(true);
-		payment.setAmount(InvoiceWorker.getInvoiceTotal(EntityUtils.toBizEntity(delegator, invoice)));
+		payment.setAmount(invoice.getTotal());
 		payment.setPartyIdTo(invoice.getPartyIdFrom());
 		payment.setPartyIdFrom(invoice.getPartyId());
 		payment.setPaymentTypeId(context.getFrame(PaymentType.class).createProxy("CUSTOMER_PAYMENT"));
