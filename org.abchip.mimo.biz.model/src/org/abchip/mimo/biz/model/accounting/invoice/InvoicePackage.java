@@ -26,6 +26,7 @@ import org.eclipse.emf.ecore.EReference;
  * <!-- end-user-doc -->
  * @see org.abchip.mimo.biz.model.accounting.invoice.InvoiceFactory
  * @model kind="package"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore invocationDelegates='org.abchip.mimo.core.base.invocation' settingDelegates='org.abchip.mimo.core.base.setting'"
  * @generated
  */
 public interface InvoicePackage extends EPackage {

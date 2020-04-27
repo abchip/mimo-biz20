@@ -9,6 +9,7 @@ package org.abchip.mimo.biz.service.accounting;
 
 import org.abchip.mimo.biz.service.BizServicePackage;
 
+import org.abchip.mimo.service.ServicePackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -594,6 +595,61 @@ public interface AccountingPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.accounting.impl.Invoice_GetTotalImpl <em>Invoice Get Total</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.accounting.impl.Invoice_GetTotalImpl
+	 * @see org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl#getInvoice_GetTotal()
+	 * @generated
+	 */
+	int INVOICE_GET_TOTAL = 8;
+
+	/**
+	 * The feature id for the '<em><b>Locale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INVOICE_GET_TOTAL__LOCALE = ServicePackage.SERVICE_METHOD_REQUEST__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INVOICE_GET_TOTAL__TENANT = ServicePackage.SERVICE_METHOD_REQUEST__TENANT;
+
+	/**
+	 * The feature id for the '<em><b>Context</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INVOICE_GET_TOTAL__CONTEXT = ServicePackage.SERVICE_METHOD_REQUEST__CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>Entity</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INVOICE_GET_TOTAL__ENTITY = ServicePackage.SERVICE_METHOD_REQUEST__ENTITY;
+
+	/**
+	 * The number of structural features of the '<em>Invoice Get Total</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INVOICE_GET_TOTAL_FEATURE_COUNT = ServicePackage.SERVICE_METHOD_REQUEST_FEATURE_COUNT + 0;
+
+	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.accounting.CreatePayment <em>Create Payment</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -696,6 +752,16 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getUpdatePaymentApplicationDefResponse();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.accounting.Invoice_GetTotal <em>Invoice Get Total</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Invoice Get Total</em>'.
+	 * @see org.abchip.mimo.biz.service.accounting.Invoice_GetTotal
+	 * @generated
+	 */
+	EClass getInvoice_GetTotal();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.accounting.SetInvoiceStatus <em>Set Invoice Status</em>}'.
@@ -896,6 +962,16 @@ public interface AccountingPackage extends EPackage {
 		 * @generated
 		 */
 		EClass UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE = eINSTANCE.getUpdatePaymentApplicationDefResponse();
+
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.accounting.impl.Invoice_GetTotalImpl <em>Invoice Get Total</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.accounting.impl.Invoice_GetTotalImpl
+		 * @see org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl#getInvoice_GetTotal()
+		 * @generated
+		 */
+		EClass INVOICE_GET_TOTAL = eINSTANCE.getInvoice_GetTotal();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.accounting.impl.SetInvoiceStatusImpl <em>Set Invoice Status</em>}' class.

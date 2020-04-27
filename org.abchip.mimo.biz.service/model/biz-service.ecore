@@ -56,6 +56,12 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="UpdatePaymentApplicationDefResponse"
         eSuperTypes="#//BizServiceResponse"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Invoice_GetTotal">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceMethodRequest">
+        <eTypeArguments eClassifier="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//accounting/invoice/Invoice"/>
+        <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
   </eSubpackages>
   <eSubpackages name="catalina" nsURI="http://www.abchip.org/mimo/biz/service/catalina"
       nsPrefix="biz-catalina"/>

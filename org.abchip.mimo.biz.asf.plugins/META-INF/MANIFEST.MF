@@ -24,6 +24,7 @@ Import-Package: javax.inject,
  org.osgi.service.http
 Export-Package: com.stripe,
  com.stripe.model,
+ org.abchip.mimo.biz.asf.plugins.accounting,
  org.abchip.mimo.biz.plugins,
  org.abchip.mimo.biz.plugins.application,
  org.abchip.mimo.biz.plugins.command,
@@ -33,5 +34,4 @@ Export-Package: com.stripe,
  org.abchip.mimo.biz.plugins.party,
  org.abchip.mimo.biz.plugins.paymentGateway,
  org.abchip.mimo.biz.plugins.product,
- org.abchip.mimo.biz.plugins.servlet,
- org.abchip.mimo.biz.plugins.userLogin
+ org.abchip.mimo.biz.plugins.servlet

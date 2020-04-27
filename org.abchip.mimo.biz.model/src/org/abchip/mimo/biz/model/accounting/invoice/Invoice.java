@@ -7,6 +7,7 @@
  */
 package org.abchip.mimo.biz.model.accounting.invoice;
 
+import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 import org.abchip.mimo.biz.BizEntityTyped;
@@ -464,6 +465,15 @@ public interface Invoice extends BizEntityTyped<InvoiceType> {
 	 * @generated
 	 */
 	void setStatusId(StatusItem value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true"
+	 *        annotation="org.abchip.mimo.core.base.invocation"
+	 * @generated
+	 */
+	BigDecimal getTotal();
 
 	/**
 	 * Returns the value of the '<em><b>Invoice Type Id</b></em>' reference.

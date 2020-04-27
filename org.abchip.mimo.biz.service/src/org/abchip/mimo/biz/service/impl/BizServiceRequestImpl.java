@@ -14,13 +14,7 @@ import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextDescription;
 import org.abchip.mimo.service.ServiceResponse;
 import org.abchip.mimo.service.impl.ServiceRequestImpl;
-import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.notify.NotificationChain;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EGenericType;
-import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.InternalEObject;
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc --> An implementation of the model object
@@ -35,14 +29,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * @generated
  */
 public abstract class BizServiceRequestImpl<V extends ServiceResponse> extends ServiceRequestImpl<V> implements BizServiceRequest<V> {
-	/**
-	 * The cached value of the '{@link #getUserLogin() <em>User Login</em>}' containment reference.
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @see #getUserLogin()
-	 * @generated
-	 * @ordered
-	 */
-	protected UserLogin userLogin;
 	/**
 	 * 
 	 */
@@ -69,135 +55,33 @@ public abstract class BizServiceRequestImpl<V extends ServiceResponse> extends S
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 3;
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return ESTATIC_FEATURE_COUNT;
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public UserLogin getUserLogin() {
-		if (userLogin != null && ((EObject)userLogin).eIsProxy()) {
-			InternalEObject oldUserLogin = (InternalEObject)userLogin;
-			userLogin = (UserLogin)eResolveProxy(oldUserLogin);
-			if (userLogin != oldUserLogin) {
-				InternalEObject newUserLogin = (InternalEObject)userLogin;
-				NotificationChain msgs = oldUserLogin.eInverseRemove(this, EOPPOSITE_FEATURE_BASE - BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN, null, null);
-				if (newUserLogin.eInternalContainer() == null) {
-					msgs = newUserLogin.eInverseAdd(this, EOPPOSITE_FEATURE_BASE - BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN, null, msgs);
-				}
-				if (msgs != null) msgs.dispatch();
-				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN, oldUserLogin, userLogin));
-			}
-		}
-		return userLogin;
+		return (UserLogin)eGet(BizServicePackage.Literals.BIZ_SERVICE_REQUEST__USER_LOGIN, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public UserLogin basicGetUserLogin() {
-		return userLogin;
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NotificationChain basicSetUserLogin(UserLogin newUserLogin, NotificationChain msgs) {
-		UserLogin oldUserLogin = userLogin;
-		userLogin = newUserLogin;
-		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN, oldUserLogin, newUserLogin);
-			if (msgs == null) msgs = notification; else msgs.add(notification);
-		}
-		return msgs;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public void setUserLogin(UserLogin newUserLogin) {
-		if (newUserLogin != userLogin) {
-			NotificationChain msgs = null;
-			if (userLogin != null)
-				msgs = ((InternalEObject)userLogin).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN, null, msgs);
-			if (newUserLogin != null)
-				msgs = ((InternalEObject)newUserLogin).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN, null, msgs);
-			msgs = basicSetUserLogin(newUserLogin, msgs);
-			if (msgs != null) msgs.dispatch();
-		}
-		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN, newUserLogin, newUserLogin));
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
-		switch (featureID) {
-			case BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN:
-				return basicSetUserLogin(null, msgs);
-		}
-		return super.eInverseRemove(otherEnd, featureID, msgs);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN:
-				if (resolve) return getUserLogin();
-				return basicGetUserLogin();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN:
-				setUserLogin((UserLogin)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void eUnset(int featureID) {
-		switch (featureID) {
-			case BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN:
-				setUserLogin((UserLogin)null);
-				return;
-		}
-		super.eUnset(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN:
-				return userLogin != null;
-		}
-		return super.eIsSet(featureID);
+		eSet(BizServicePackage.Literals.BIZ_SERVICE_REQUEST__USER_LOGIN, newUserLogin);
 	}
 
 	/**
@@ -207,33 +91,10 @@ public abstract class BizServiceRequestImpl<V extends ServiceResponse> extends S
 	 */
 	@Override
 	public void init(Context context, String tenant) {
-		if (isPrepared())
-			throw new UnsupportedOperationException("Request already prepared");
 
-		this.context = context;
-		this.tenant = tenant;
+		super.init(context, tenant);
 
 		ContextDescription contextDescription = context.getContextDescription();
-		this.locale = contextDescription.getLocale();
-		this.userLogin = context.createProxy(UserLogin.class, contextDescription.getUser());
+		this.setUserLogin(context.createProxy(UserLogin.class, contextDescription.getUser()));
 	}
-	
-	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
-	 * @generated NOT
-	 */
-	@Override
-	public Class<V> getResponse() {
-
-		EClass eClass = this.eClass();
-		EGenericType eGenericType = eClass.getEGenericSuperTypes().get(0);
-		eGenericType = eGenericType.getETypeArguments().get(0);
-
-		@SuppressWarnings("unchecked")
-		Class<V> klass = (Class<V>) eGenericType.getEClassifier().getInstanceClass();
-		
-		return klass;
-	}
-
 } // BizServiceRequestImpl

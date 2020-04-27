@@ -2546,6 +2546,8 @@ public class InvoicePackageImpl extends EPackageImpl implements InvoicePackage {
 		initEReference(getInvoice_StatusId(), theStatusPackage.getStatusItem(), null, "statusId", null, 0, 1, Invoice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getInvoice_StatusId().getEKeys().add(theStatusPackage.getStatusItem_StatusId());
 
+		addEOperation(invoiceEClass, ecorePackage.getEBigDecimal(), "getTotal", 1, 1, IS_UNIQUE, IS_ORDERED);
+
 		initEClass(invoiceAttributeEClass, InvoiceAttribute.class, "InvoiceAttribute", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getInvoiceAttribute_InvoiceId(), this.getInvoice(), null, "invoiceId", null, 1, 1, InvoiceAttribute.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getInvoiceAttribute_InvoiceId().getEKeys().add(this.getInvoice_InvoiceId());
@@ -2732,12 +2734,33 @@ public class InvoicePackageImpl extends EPackageImpl implements InvoicePackage {
 		initEAttribute(getInvoiceTypeAttr_Description(), ecorePackage.getEString(), "description", null, 0, 1, InvoiceTypeAttr.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create annotations
+		// http://www.eclipse.org/emf/2002/Ecore
+		createEcoreAnnotations();
 		// mimo-ent-frame
 		createMimoentframeAnnotations();
+		// org.abchip.mimo.core.base.invocation
+		createOrgAnnotations();
 		// mimo-ent-format
 		createMimoentformatAnnotations();
 		// mimo-ent-slot
 		createMimoentslotAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/emf/2002/Ecore</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createEcoreAnnotations() {
+		String source = "http://www.eclipse.org/emf/2002/Ecore";
+		addAnnotation
+		  (this,
+		   source,
+		   new String[] {
+			   "invocationDelegates", "org.abchip.mimo.core.base.invocation",
+			   "settingDelegates", "org.abchip.mimo.core.base.setting"
+		   });
 	}
 
 	/**
@@ -2817,6 +2840,21 @@ public class InvoicePackageImpl extends EPackageImpl implements InvoicePackage {
 		   new String[] {
 			   "title", "Invoice Type Attribute",
 			   "formula", "description"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>org.abchip.mimo.core.base.invocation</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createOrgAnnotations() {
+		String source = "org.abchip.mimo.core.base.invocation";
+		addAnnotation
+		  (invoiceEClass.getEOperations().get(0),
+		   source,
+		   new String[] {
 		   });
 	}
 

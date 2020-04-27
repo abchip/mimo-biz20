@@ -7,6 +7,8 @@
  */
 package org.abchip.mimo.biz.model.accounting.invoice.impl;
 
+import java.lang.reflect.InvocationTargetException;
+import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
@@ -24,12 +26,13 @@ import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.abchip.mimo.biz.model.service.schedule.RecurrenceInfo;
+import org.eclipse.emf.common.util.WrappedException;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EOperation;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Invoice</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object
+ * '<em><b>Invoice</b></em>'. <!-- end-user-doc -->
  * <p>
  * The following features are implemented:
  * </p>
@@ -58,13 +61,14 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invoice {
+
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	protected InvoiceImpl() {
@@ -72,8 +76,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -82,8 +85,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -92,8 +94,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -102,8 +103,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -112,8 +112,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -122,8 +121,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -132,8 +130,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -142,8 +139,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -152,8 +148,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -162,8 +157,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -172,8 +166,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -182,8 +175,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -193,8 +185,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -203,8 +194,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -213,8 +203,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -224,8 +213,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -234,8 +222,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -244,8 +231,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
@@ -255,8 +241,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -265,8 +250,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -275,8 +259,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -285,8 +268,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -295,8 +277,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -305,8 +286,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -315,8 +295,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -325,8 +304,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -335,8 +313,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -345,8 +322,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -355,8 +331,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -365,8 +340,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -375,8 +349,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -385,8 +358,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -395,8 +367,31 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
+	 * The cached invocation delegate for the '{@link #getTotal() <em>Get Total</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @see #getTotal()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final EOperation.Internal.InvocationDelegate GET_TOTAL__EINVOCATION_DELEGATE = ((EOperation.Internal)InvoicePackage.Literals.INVOICE.getEOperations().get(0)).getInvocationDelegate();
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public BigDecimal getTotal() {
+		try {
+			return (BigDecimal)GET_TOTAL__EINVOCATION_DELEGATE.dynamicInvoke(this, null);
+		}
+		catch (InvocationTargetException ite) {
+			throw new WrappedException(ite);
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -405,8 +400,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -415,8 +409,7 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
@@ -425,13 +418,11 @@ public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invo
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public void setInvoiceId(String newInvoiceId) {
 		eSet(InvoicePackage.Literals.INVOICE__INVOICE_ID, newInvoiceId);
 	}
-
-} //InvoiceImpl
+} // InvoiceImpl

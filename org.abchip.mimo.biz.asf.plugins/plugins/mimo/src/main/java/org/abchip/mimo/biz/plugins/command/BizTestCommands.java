@@ -188,6 +188,18 @@ public class BizTestCommands extends BaseTestCommands {
 		createOrder(interpreter, context, partyId);
 	}
 
+	public void _getInvoiceTot(CommandInterpreter interpreter) throws Exception {
+
+		Context context = this.getContext();
+
+		String invoiceId = nextArgument(interpreter);
+
+		Invoice invoice = this.resourceManager.getResourceReader(context, Invoice.class).lookup(invoiceId);
+		interpreter.print("From: " + invoice.getPartyIdFrom().getID() + "\n");
+		interpreter.print("To: " + invoice.getPartyId().getID() + "\n");
+		interpreter.print("Total: " + invoice.getTotal() + "\n");
+	}
+
 	public void _createInvoice(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();
@@ -516,8 +528,8 @@ public class BizTestCommands extends BaseTestCommands {
 		interpreter.println("New order created: " + orderHeader.getOrderId());
 	}
 
-	private void createOrderItem(CommandInterpreter interpreter, Context context, OrderHeader orderHeader, String itemSeqiD, String item, int quantity,
-			String shipGroupSeqId) throws ResourceException, ServiceException {
+	private void createOrderItem(CommandInterpreter interpreter, Context context, OrderHeader orderHeader, String itemSeqiD, String item, int quantity, String shipGroupSeqId)
+			throws ResourceException, ServiceException {
 
 		ResourceWriter<OrderItem> orderItemWriter = resourceManager.getResourceWriter(context, OrderItem.class);
 
@@ -607,11 +619,10 @@ public class BizTestCommands extends BaseTestCommands {
 		return invoice;
 	}
 
-	private void createInvoiceItem(CommandInterpreter interpreter, Context context, Invoice invoice, String item, int quantity, String itemType)
-			throws ResourceException, ServiceException {
-		
+	private void createInvoiceItem(CommandInterpreter interpreter, Context context, Invoice invoice, String item, int quantity, String itemType) throws ResourceException, ServiceException {
+
 		Delegator delegator = DelegatorFactory.getDelegator(null);
-		
+
 		ResourceWriter<InvoiceItem> invoiceItemWriter = resourceManager.getResourceWriter(context, InvoiceItem.class);
 
 		InvoiceItem invoiceItem = invoiceItemWriter.make();
@@ -760,7 +771,7 @@ public class BizTestCommands extends BaseTestCommands {
 	private String createRow(Context context, Agreement agreement, String text) throws ResourceException {
 
 		Delegator delegator = DelegatorFactory.getDelegator(null);
-		
+
 		AgreementItemType agreementType = context.createProxy(AgreementItemType.class, "AGREEMENT_PRICING_PR");
 		TermType termType = context.createProxy(TermType.class, "FIN_PAYMENT_FIXDAY");
 		InvoiceItemType invoiceItemType = context.createProxy(InvoiceItemType.class, "INV_DPROD_ITEM");
@@ -842,7 +853,7 @@ public class BizTestCommands extends BaseTestCommands {
 	private void renewalAgreement(CommandInterpreter interpreter, Context context, String agreementId) throws ResourceException, ServiceException {
 
 		Delegator delegator = DelegatorFactory.getDelegator(null);
-		
+
 		/*
 		 * il rinnovo del contratto avviene quando questo è ancora aperto (Agreement) ed
 		 * i termini della varie righe sono scaduti. verrà presa l'ultima riga e copiata
@@ -912,8 +923,7 @@ public class BizTestCommands extends BaseTestCommands {
 					productFilter = "agreementId = '" + agreement.getAgreementId() + "' AND agreementItemSeqId = '" + agreementItemSeqId + "'";
 					try (EntityIterator<AgreementProductAppl> agreementProducts = agreementProductApplReader.find(productFilter)) {
 						for (AgreementProductAppl agreementProduct : agreementProducts) {
-							createInvoiceItem(interpreter, context, invoiceEntity, agreementProduct.getProductId().getProductId(), 1,
-									agreementTermLast.getInvoiceItemTypeId().getID());
+							createInvoiceItem(interpreter, context, invoiceEntity, agreementProduct.getProductId().getProductId(), 1, agreementTermLast.getInvoiceItemTypeId().getID());
 						}
 					}
 
@@ -1001,7 +1011,7 @@ public class BizTestCommands extends BaseTestCommands {
 	private String createPaymentFromInvoice(CommandInterpreter interpreter, Context context, Invoice invoice) throws ResourceException, ServiceException {
 
 		Delegator delegator = DelegatorFactory.getDelegator(null);
-		
+
 		PaymentMethod paymentMethod = PaymentServices.getPaymentMethodParty(context, invoice.getPartyId().getID(), "CREDIT_CARD");
 		if (paymentMethod == null) {
 			interpreter.println("Payment method not found for party " + invoice.getPartyId().getID());

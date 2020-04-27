@@ -81,6 +81,15 @@ public interface AccountingFactory extends EFactory {
 	UpdatePaymentApplicationDefResponse createUpdatePaymentApplicationDefResponse();
 
 	/**
+	 * Returns a new object of class '<em>Invoice Get Total</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Invoice Get Total</em>'.
+	 * @generated
+	 */
+	Invoice_GetTotal createInvoice_GetTotal();
+
+	/**
 	 * Returns a new object of class '<em>Set Invoice Status</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

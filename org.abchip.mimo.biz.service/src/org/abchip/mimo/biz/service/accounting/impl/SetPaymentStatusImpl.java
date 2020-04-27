@@ -12,10 +12,7 @@ import org.abchip.mimo.biz.service.accounting.SetPaymentStatus;
 import org.abchip.mimo.biz.service.accounting.SetPaymentStatusResponse;
 
 import org.abchip.mimo.biz.service.impl.BizServiceRequestImpl;
-
-import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,42 +29,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * @generated
  */
 public class SetPaymentStatusImpl extends BizServiceRequestImpl<SetPaymentStatusResponse> implements SetPaymentStatus {
-	/**
-	 * The default value of the '{@link #getPaymentId() <em>Payment Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPaymentId()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String PAYMENT_ID_EDEFAULT = null;
-	/**
-	 * The cached value of the '{@link #getPaymentId() <em>Payment Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPaymentId()
-	 * @generated
-	 * @ordered
-	 */
-	protected String paymentId = PAYMENT_ID_EDEFAULT;
-	/**
-	 * The default value of the '{@link #getStatusId() <em>Status Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getStatusId()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String STATUS_ID_EDEFAULT = null;
-	/**
-	 * The cached value of the '{@link #getStatusId() <em>Status Id</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getStatusId()
-	 * @generated
-	 * @ordered
-	 */
-	protected String statusId = STATUS_ID_EDEFAULT;
 	/**
 	 * 
 	 */
@@ -99,7 +60,7 @@ public class SetPaymentStatusImpl extends BizServiceRequestImpl<SetPaymentStatus
 	 */
 	@Override
 	public String getPaymentId() {
-		return paymentId;
+		return (String)eGet(AccountingPackage.Literals.SET_PAYMENT_STATUS__PAYMENT_ID, true);
 	}
 
 	/**
@@ -109,10 +70,7 @@ public class SetPaymentStatusImpl extends BizServiceRequestImpl<SetPaymentStatus
 	 */
 	@Override
 	public void setPaymentId(String newPaymentId) {
-		String oldPaymentId = paymentId;
-		paymentId = newPaymentId;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AccountingPackage.SET_PAYMENT_STATUS__PAYMENT_ID, oldPaymentId, paymentId));
+		eSet(AccountingPackage.Literals.SET_PAYMENT_STATUS__PAYMENT_ID, newPaymentId);
 	}
 
 	/**
@@ -122,7 +80,7 @@ public class SetPaymentStatusImpl extends BizServiceRequestImpl<SetPaymentStatus
 	 */
 	@Override
 	public String getStatusId() {
-		return statusId;
+		return (String)eGet(AccountingPackage.Literals.SET_PAYMENT_STATUS__STATUS_ID, true);
 	}
 
 	/**
@@ -132,96 +90,7 @@ public class SetPaymentStatusImpl extends BizServiceRequestImpl<SetPaymentStatus
 	 */
 	@Override
 	public void setStatusId(String newStatusId) {
-		String oldStatusId = statusId;
-		statusId = newStatusId;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, AccountingPackage.SET_PAYMENT_STATUS__STATUS_ID, oldStatusId, statusId));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case AccountingPackage.SET_PAYMENT_STATUS__PAYMENT_ID:
-				return getPaymentId();
-			case AccountingPackage.SET_PAYMENT_STATUS__STATUS_ID:
-				return getStatusId();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case AccountingPackage.SET_PAYMENT_STATUS__PAYMENT_ID:
-				setPaymentId((String)newValue);
-				return;
-			case AccountingPackage.SET_PAYMENT_STATUS__STATUS_ID:
-				setStatusId((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void eUnset(int featureID) {
-		switch (featureID) {
-			case AccountingPackage.SET_PAYMENT_STATUS__PAYMENT_ID:
-				setPaymentId(PAYMENT_ID_EDEFAULT);
-				return;
-			case AccountingPackage.SET_PAYMENT_STATUS__STATUS_ID:
-				setStatusId(STATUS_ID_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case AccountingPackage.SET_PAYMENT_STATUS__PAYMENT_ID:
-				return PAYMENT_ID_EDEFAULT == null ? paymentId != null : !PAYMENT_ID_EDEFAULT.equals(paymentId);
-			case AccountingPackage.SET_PAYMENT_STATUS__STATUS_ID:
-				return STATUS_ID_EDEFAULT == null ? statusId != null : !STATUS_ID_EDEFAULT.equals(statusId);
-		}
-		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) return super.toString();
-
-		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (paymentId: ");
-		result.append(paymentId);
-		result.append(", statusId: ");
-		result.append(statusId);
-		result.append(')');
-		return result.toString();
+		eSet(AccountingPackage.Literals.SET_PAYMENT_STATUS__STATUS_ID, newStatusId);
 	}
 
 } //SetPaymentStatusImpl

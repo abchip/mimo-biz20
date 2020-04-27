@@ -40,6 +40,8 @@
 	<service-resource type="model" loader="main"
 		location="servicedef/product-services.xml" />
 	<service-resource type="model" loader="main"
+		location="servicedef/accounting-services.xml" />
+	<service-resource type="model" loader="main"
 		location="servicedef/edi-services.xml" />
 
 	<!-- <service-resource type="eca" loader="main" location="servicedef/secas.xml"/> 

@@ -13,12 +13,7 @@ import org.abchip.mimo.biz.service.impl.BizServiceResponseImpl;
 
 import org.abchip.mimo.biz.service.product.CalcTaxForDisplayResponse;
 import org.abchip.mimo.biz.service.product.ProductPackage;
-
-import org.eclipse.emf.common.notify.Notification;
-
 import org.eclipse.emf.ecore.EClass;
-
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -40,66 +35,6 @@ public class CalcTaxForDisplayResponseImpl extends BizServiceResponseImpl implem
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-
-	/**
-	 * The default value of the '{@link #getPriceWithTax() <em>Price With Tax</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPriceWithTax()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final BigDecimal PRICE_WITH_TAX_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getPriceWithTax() <em>Price With Tax</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPriceWithTax()
-	 * @generated
-	 * @ordered
-	 */
-	protected BigDecimal priceWithTax = PRICE_WITH_TAX_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getTaxPercentage() <em>Tax Percentage</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getTaxPercentage()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final BigDecimal TAX_PERCENTAGE_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getTaxPercentage() <em>Tax Percentage</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getTaxPercentage()
-	 * @generated
-	 * @ordered
-	 */
-	protected BigDecimal taxPercentage = TAX_PERCENTAGE_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getTaxTotal() <em>Tax Total</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getTaxTotal()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final BigDecimal TAX_TOTAL_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getTaxTotal() <em>Tax Total</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getTaxTotal()
-	 * @generated
-	 * @ordered
-	 */
-	protected BigDecimal taxTotal = TAX_TOTAL_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -127,7 +62,7 @@ public class CalcTaxForDisplayResponseImpl extends BizServiceResponseImpl implem
 	 */
 	@Override
 	public BigDecimal getPriceWithTax() {
-		return priceWithTax;
+		return (BigDecimal)eGet(ProductPackage.Literals.CALC_TAX_FOR_DISPLAY_RESPONSE__PRICE_WITH_TAX, true);
 	}
 
 	/**
@@ -137,10 +72,7 @@ public class CalcTaxForDisplayResponseImpl extends BizServiceResponseImpl implem
 	 */
 	@Override
 	public void setPriceWithTax(BigDecimal newPriceWithTax) {
-		BigDecimal oldPriceWithTax = priceWithTax;
-		priceWithTax = newPriceWithTax;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ProductPackage.CALC_TAX_FOR_DISPLAY_RESPONSE__PRICE_WITH_TAX, oldPriceWithTax, priceWithTax));
+		eSet(ProductPackage.Literals.CALC_TAX_FOR_DISPLAY_RESPONSE__PRICE_WITH_TAX, newPriceWithTax);
 	}
 
 	/**
@@ -150,7 +82,7 @@ public class CalcTaxForDisplayResponseImpl extends BizServiceResponseImpl implem
 	 */
 	@Override
 	public BigDecimal getTaxPercentage() {
-		return taxPercentage;
+		return (BigDecimal)eGet(ProductPackage.Literals.CALC_TAX_FOR_DISPLAY_RESPONSE__TAX_PERCENTAGE, true);
 	}
 
 	/**
@@ -160,10 +92,7 @@ public class CalcTaxForDisplayResponseImpl extends BizServiceResponseImpl implem
 	 */
 	@Override
 	public void setTaxPercentage(BigDecimal newTaxPercentage) {
-		BigDecimal oldTaxPercentage = taxPercentage;
-		taxPercentage = newTaxPercentage;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ProductPackage.CALC_TAX_FOR_DISPLAY_RESPONSE__TAX_PERCENTAGE, oldTaxPercentage, taxPercentage));
+		eSet(ProductPackage.Literals.CALC_TAX_FOR_DISPLAY_RESPONSE__TAX_PERCENTAGE, newTaxPercentage);
 	}
 
 	/**
@@ -173,7 +102,7 @@ public class CalcTaxForDisplayResponseImpl extends BizServiceResponseImpl implem
 	 */
 	@Override
 	public BigDecimal getTaxTotal() {
-		return taxTotal;
+		return (BigDecimal)eGet(ProductPackage.Literals.CALC_TAX_FOR_DISPLAY_RESPONSE__TAX_TOTAL, true);
 	}
 
 	/**
@@ -183,108 +112,7 @@ public class CalcTaxForDisplayResponseImpl extends BizServiceResponseImpl implem
 	 */
 	@Override
 	public void setTaxTotal(BigDecimal newTaxTotal) {
-		BigDecimal oldTaxTotal = taxTotal;
-		taxTotal = newTaxTotal;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ProductPackage.CALC_TAX_FOR_DISPLAY_RESPONSE__TAX_TOTAL, oldTaxTotal, taxTotal));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case ProductPackage.CALC_TAX_FOR_DISPLAY_RESPONSE__PRICE_WITH_TAX:
-				return getPriceWithTax();
-			case ProductPackage.CALC_TAX_FOR_DISPLAY_RESPONSE__TAX_PERCENTAGE:
-				return getTaxPercentage();
-			case ProductPackage.CALC_TAX_FOR_DISPLAY_RESPONSE__TAX_TOTAL:
-				return getTaxTotal();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case ProductPackage.CALC_TAX_FOR_DISPLAY_RESPONSE__PRICE_WITH_TAX:
-				setPriceWithTax((BigDecimal)newValue);
-				return;
-			case ProductPackage.CALC_TAX_FOR_DISPLAY_RESPONSE__TAX_PERCENTAGE:
-				setTaxPercentage((BigDecimal)newValue);
-				return;
-			case ProductPackage.CALC_TAX_FOR_DISPLAY_RESPONSE__TAX_TOTAL:
-				setTaxTotal((BigDecimal)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void eUnset(int featureID) {
-		switch (featureID) {
-			case ProductPackage.CALC_TAX_FOR_DISPLAY_RESPONSE__PRICE_WITH_TAX:
-				setPriceWithTax(PRICE_WITH_TAX_EDEFAULT);
-				return;
-			case ProductPackage.CALC_TAX_FOR_DISPLAY_RESPONSE__TAX_PERCENTAGE:
-				setTaxPercentage(TAX_PERCENTAGE_EDEFAULT);
-				return;
-			case ProductPackage.CALC_TAX_FOR_DISPLAY_RESPONSE__TAX_TOTAL:
-				setTaxTotal(TAX_TOTAL_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case ProductPackage.CALC_TAX_FOR_DISPLAY_RESPONSE__PRICE_WITH_TAX:
-				return PRICE_WITH_TAX_EDEFAULT == null ? priceWithTax != null : !PRICE_WITH_TAX_EDEFAULT.equals(priceWithTax);
-			case ProductPackage.CALC_TAX_FOR_DISPLAY_RESPONSE__TAX_PERCENTAGE:
-				return TAX_PERCENTAGE_EDEFAULT == null ? taxPercentage != null : !TAX_PERCENTAGE_EDEFAULT.equals(taxPercentage);
-			case ProductPackage.CALC_TAX_FOR_DISPLAY_RESPONSE__TAX_TOTAL:
-				return TAX_TOTAL_EDEFAULT == null ? taxTotal != null : !TAX_TOTAL_EDEFAULT.equals(taxTotal);
-		}
-		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) return super.toString();
-
-		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (priceWithTax: ");
-		result.append(priceWithTax);
-		result.append(", taxPercentage: ");
-		result.append(taxPercentage);
-		result.append(", taxTotal: ");
-		result.append(taxTotal);
-		result.append(')');
-		return result.toString();
+		eSet(ProductPackage.Literals.CALC_TAX_FOR_DISPLAY_RESPONSE__TAX_TOTAL, newTaxTotal);
 	}
 
 } //CalcTaxForDisplayResponseImpl

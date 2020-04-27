@@ -11,6 +11,7 @@ import org.abchip.mimo.MimoPackage;
 
 import org.abchip.mimo.biz.BizPackage;
 
+import org.abchip.mimo.biz.model.accounting.invoice.InvoicePackage;
 import org.abchip.mimo.biz.model.catalina.session.SessionPackage;
 
 import org.abchip.mimo.biz.model.common.CommonPackage;
@@ -131,6 +132,7 @@ import org.abchip.mimo.biz.service.accounting.AccountingFactory;
 import org.abchip.mimo.biz.service.accounting.AccountingPackage;
 import org.abchip.mimo.biz.service.accounting.CreatePayment;
 import org.abchip.mimo.biz.service.accounting.CreatePaymentResponse;
+import org.abchip.mimo.biz.service.accounting.Invoice_GetTotal;
 import org.abchip.mimo.biz.service.accounting.SetInvoiceStatus;
 import org.abchip.mimo.biz.service.accounting.SetInvoiceStatusResponse;
 import org.abchip.mimo.biz.service.accounting.SetPaymentStatus;
@@ -146,11 +148,11 @@ import org.abchip.mimo.biz.service.order.impl.OrderPackageImpl;
 
 import org.abchip.mimo.biz.service.product.impl.ProductPackageImpl;
 
+import org.abchip.mimo.service.ServicePackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
@@ -201,6 +203,13 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * @generated
 	 */
 	private EClass updatePaymentApplicationDefResponseEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass invoice_GetTotalEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -464,6 +473,16 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * @generated
 	 */
 	@Override
+	public EClass getInvoice_GetTotal() {
+		return invoice_GetTotalEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getSetInvoiceStatus() {
 		return setInvoiceStatusEClass;
 	}
@@ -592,6 +611,8 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 		createEAttribute(updatePaymentApplicationDefEClass, UPDATE_PAYMENT_APPLICATION_DEF__PAYMENT_ID);
 
 		updatePaymentApplicationDefResponseEClass = createEClass(UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE);
+
+		invoice_GetTotalEClass = createEClass(INVOICE_GET_TOTAL);
 	}
 
 	/**
@@ -619,6 +640,8 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 
 		// Obtain other dependent packages
 		BizServicePackage theBizServicePackage = (BizServicePackage)EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
+		ServicePackage theServicePackage = (ServicePackage)EPackage.Registry.INSTANCE.getEPackage(ServicePackage.eNS_URI);
+		InvoicePackage theInvoicePackage = (InvoicePackage)EPackage.Registry.INSTANCE.getEPackage(InvoicePackage.eNS_URI);
 
 		// Create type parameters
 
@@ -645,6 +668,12 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 		g1.getETypeArguments().add(g2);
 		updatePaymentApplicationDefEClass.getEGenericSuperTypes().add(g1);
 		updatePaymentApplicationDefResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
+		g1 = createEGenericType(theServicePackage.getServiceMethodRequest());
+		g2 = createEGenericType(theInvoicePackage.getInvoice());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEBigDecimal());
+		g1.getETypeArguments().add(g2);
+		invoice_GetTotalEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(createPaymentEClass, CreatePayment.class, "CreatePayment", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -672,6 +701,8 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 		initEAttribute(getUpdatePaymentApplicationDef_PaymentId(), ecorePackage.getEString(), "paymentId", null, 1, 1, UpdatePaymentApplicationDef.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(updatePaymentApplicationDefResponseEClass, UpdatePaymentApplicationDefResponse.class, "UpdatePaymentApplicationDefResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(invoice_GetTotalEClass, Invoice_GetTotal.class, "Invoice_GetTotal", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 	}
 
 } //AccountingPackageImpl

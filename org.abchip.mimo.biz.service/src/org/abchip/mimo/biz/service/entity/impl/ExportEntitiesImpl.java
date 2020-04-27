@@ -13,10 +13,7 @@ import org.abchip.mimo.biz.service.entity.EntityPackage;
 import org.abchip.mimo.biz.service.entity.ExportEntities;
 
 import org.abchip.mimo.biz.service.impl.BizServiceRequestImpl;
-
-import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,24 +29,6 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
  * @generated
  */
 public class ExportEntitiesImpl extends BizServiceRequestImpl<BizServiceResponse> implements ExportEntities {
-	/**
-	 * The default value of the '{@link #getPathTo() <em>Path To</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPathTo()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String PATH_TO_EDEFAULT = null;
-	/**
-	 * The cached value of the '{@link #getPathTo() <em>Path To</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPathTo()
-	 * @generated
-	 * @ordered
-	 */
-	protected String pathTo = PATH_TO_EDEFAULT;
 	/**
 	 * 
 	 */
@@ -81,7 +60,7 @@ public class ExportEntitiesImpl extends BizServiceRequestImpl<BizServiceResponse
 	 */
 	@Override
 	public String getPathTo() {
-		return pathTo;
+		return (String)eGet(EntityPackage.Literals.EXPORT_ENTITIES__PATH_TO, true);
 	}
 
 	/**
@@ -91,84 +70,7 @@ public class ExportEntitiesImpl extends BizServiceRequestImpl<BizServiceResponse
 	 */
 	@Override
 	public void setPathTo(String newPathTo) {
-		String oldPathTo = pathTo;
-		pathTo = newPathTo;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, EntityPackage.EXPORT_ENTITIES__PATH_TO, oldPathTo, pathTo));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Object eGet(int featureID, boolean resolve, boolean coreType) {
-		switch (featureID) {
-			case EntityPackage.EXPORT_ENTITIES__PATH_TO:
-				return getPathTo();
-		}
-		return super.eGet(featureID, resolve, coreType);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void eSet(int featureID, Object newValue) {
-		switch (featureID) {
-			case EntityPackage.EXPORT_ENTITIES__PATH_TO:
-				setPathTo((String)newValue);
-				return;
-		}
-		super.eSet(featureID, newValue);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void eUnset(int featureID) {
-		switch (featureID) {
-			case EntityPackage.EXPORT_ENTITIES__PATH_TO:
-				setPathTo(PATH_TO_EDEFAULT);
-				return;
-		}
-		super.eUnset(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public boolean eIsSet(int featureID) {
-		switch (featureID) {
-			case EntityPackage.EXPORT_ENTITIES__PATH_TO:
-				return PATH_TO_EDEFAULT == null ? pathTo != null : !PATH_TO_EDEFAULT.equals(pathTo);
-		}
-		return super.eIsSet(featureID);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String toString() {
-		if (eIsProxy()) return super.toString();
-
-		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (pathTo: ");
-		result.append(pathTo);
-		result.append(')');
-		return result.toString();
+		eSet(EntityPackage.Literals.EXPORT_ENTITIES__PATH_TO, newPathTo);
 	}
 
 } //ExportEntitiesImpl

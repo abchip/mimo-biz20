@@ -44,4 +44,21 @@ public class BizServiceResponseImpl extends ServiceResponseImpl implements BizSe
 		return BizServicePackage.Literals.BIZ_SERVICE_RESPONSE;
 	}
 
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 4;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return ESTATIC_FEATURE_COUNT;
+	}
+
 } //BizServiceResponseImpl

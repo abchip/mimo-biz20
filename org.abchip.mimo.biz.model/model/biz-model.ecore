@@ -1669,10 +1669,17 @@
     </eSubpackages>
     <eSubpackages name="invoice" nsURI="http://www.abchip.org/mimo/biz/model/accounting/invoice"
         nsPrefix="biz-invoice">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+        <details key="invocationDelegates" value="org.abchip.mimo.core.base.invocation"/>
+        <details key="settingDelegates" value="org.abchip.mimo.core.base.setting"/>
+      </eAnnotations>
       <eClassifiers xsi:type="ecore:EClass" name="Invoice">
         <eAnnotations source="mimo-ent-frame">
           <details key="formula" value="description"/>
         </eAnnotations>
+        <eOperations name="getTotal" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+          <eAnnotations source="org.abchip.mimo.core.base.invocation"/>
+        </eOperations>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="invoiceId" lowerBound="1"
             eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
             iD="true">

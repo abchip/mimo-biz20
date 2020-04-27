@@ -589,6 +589,7 @@
               ecoreFeature="ecore:EReference biz-model.ecore#//accounting/invoice/Invoice/roleTypeId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//accounting/invoice/Invoice/statusId"/>
+          <genOperations ecoreOperation="biz-model.ecore#//accounting/invoice/Invoice/getTotal"/>
         </genClasses>
         <genClasses ecoreClass="biz-model.ecore#//accounting/invoice/InvoiceAttribute">
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
