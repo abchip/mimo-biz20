@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.service.accounting;
 
-import org.abchip.mimo.biz.service.BizServiceResponse;
+import org.abchip.mimo.service.ServiceResponse;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +26,7 @@ import org.abchip.mimo.biz.service.BizServiceResponse;
  * @model
  * @generated
  */
-public interface SetInvoiceStatusResponse extends BizServiceResponse {
+public interface SetInvoiceStatusResponse extends ServiceResponse {
 
 	/**
 	 * Returns the value of the '<em><b>Invoice Type Id</b></em>' attribute.

@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.service.order;
 
-import org.abchip.mimo.biz.service.BizServiceResponse;
+import org.abchip.mimo.service.ServiceResponse;
 
 /**
  * <!-- begin-user-doc -->
@@ -19,5 +19,5 @@ import org.abchip.mimo.biz.service.BizServiceResponse;
  * @model
  * @generated
  */
-public interface ResetGrandTotalResponse extends BizServiceResponse {
+public interface ResetGrandTotalResponse extends ServiceResponse {
 } // ResetGrandTotalResponse

@@ -17,13 +17,13 @@
 	<version>1.0</version>
 
 	<service name="startEdiEngine" engine="java"
-		location="org.abchip.mimo.biz.plugins.edi.EdiServices" invoke="startEdiEngine">
+		location="org.abchip.mimo.biz.asf.plugins.edi.EdiServices" invoke="startEdiEngine">
 	</service>
 	<service name="stopEdiEngine" engine="java"
-		location="org.abchip.mimo.biz.plugins.edi.EdiServices" invoke="stopEdiEngine">
+		location="org.abchip.mimo.biz.asf.plugins.edi.EdiServices" invoke="stopEdiEngine">
 	</service>
 	<service name="transmitMessages" engine="java"
-		location="org.abchip.mimo.biz.plugins.edi.EdiServices"
+		location="org.abchip.mimo.biz.asf.plugins.edi.EdiServices"
 		invoke="transmitMessages">
 		<attribute name="messageType"
 			type="String" mode="IN"
@@ -31,21 +31,21 @@
 	</service>
 
 	<service name="createEdiFrameSetup" engine="java"
-		location="org.abchip.mimo.biz.plugins.edi.EdiServices"
+		location="org.abchip.mimo.biz.asf.plugins.edi.EdiServices"
 		invoke="createEdiFrameSetup">
 		<attribute name="entityInstance"
 			type="org.apache.ofbiz.entity.GenericValue" mode="IN"
 			optional="false" />
 	</service>
 	<service name="updateEdiFrameSetup" engine="java"
-		location="org.abchip.mimo.biz.plugins.edi.EdiServices"
+		location="org.abchip.mimo.biz.asf.plugins.edi.EdiServices"
 		invoke="updateEdiFrameSetup">
 		<attribute name="entityInstance"
 			type="org.apache.ofbiz.entity.GenericValue" mode="IN"
 			optional="false" />
 	</service>
 	<service name="deleteEdiFrameSetup" engine="java"
-		location="org.abchip.mimo.biz.plugins.edi.EdiServices"
+		location="org.abchip.mimo.biz.asf.plugins.edi.EdiServices"
 		invoke="deleteEdiFrameSetup">
 		<attribute name="entityInstance"
 			type="org.apache.ofbiz.entity.GenericValue" mode="IN"
@@ -53,21 +53,21 @@
 	</service>
 
 	<service name="createMessageType" engine="java"
-		location="org.abchip.mimo.biz.plugins.edi.EdiServices"
+		location="org.abchip.mimo.biz.asf.plugins.edi.EdiServices"
 		invoke="createMessageType">
 		<attribute name="entityInstance"
 			type="org.apache.ofbiz.entity.GenericValue" mode="IN"
 			optional="false" />
 	</service>
 	<service name="updateMessageType" engine="java"
-		location="org.abchip.mimo.biz.plugins.edi.EdiServices"
+		location="org.abchip.mimo.biz.asf.plugins.edi.EdiServices"
 		invoke="updateMessageType">
 		<attribute name="entityInstance"
 			type="org.apache.ofbiz.entity.GenericValue" mode="IN"
 			optional="false" />
 	</service>
 	<service name="deleteMessageType" engine="java"
-		location="org.abchip.mimo.biz.plugins.edi.EdiServices"
+		location="org.abchip.mimo.biz.asf.plugins.edi.EdiServices"
 		invoke="deleteMessageType">
 		<attribute name="entityInstance"
 			type="org.apache.ofbiz.entity.GenericValue" mode="IN"
@@ -75,21 +75,21 @@
 	</service>
 
 	<service name="createEdiEntity" engine="java"
-		location="org.abchip.mimo.biz.plugins.edi.EdiServices"
+		location="org.abchip.mimo.biz.asf.plugins.edi.EdiServices"
 		invoke="createEdiEntity">
 		<attribute name="entityInstance"
 			type="org.apache.ofbiz.entity.GenericValue" mode="IN"
 			optional="false" />
 	</service>
 	<service name="updateEdiEntity" engine="java"
-		location="org.abchip.mimo.biz.plugins.edi.EdiServices"
+		location="org.abchip.mimo.biz.asf.plugins.edi.EdiServices"
 		invoke="updateEdiEntity">
 		<attribute name="entityInstance"
 			type="org.apache.ofbiz.entity.GenericValue" mode="IN"
 			optional="false" />
 	</service>
 	<service name="deleteEdiEntity" engine="java"
-		location="org.abchip.mimo.biz.plugins.edi.EdiServices"
+		location="org.abchip.mimo.biz.asf.plugins.edi.EdiServices"
 		invoke="deleteEdiEntity">
 		<attribute name="entityInstance"
 			type="org.apache.ofbiz.entity.GenericValue" mode="IN"

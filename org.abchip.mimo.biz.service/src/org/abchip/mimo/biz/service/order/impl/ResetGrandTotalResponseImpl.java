@@ -7,11 +7,10 @@
  */
 package org.abchip.mimo.biz.service.order.impl;
 
-import org.abchip.mimo.biz.service.impl.BizServiceResponseImpl;
-
 import org.abchip.mimo.biz.service.order.OrderPackage;
 import org.abchip.mimo.biz.service.order.ResetGrandTotalResponse;
 
+import org.abchip.mimo.service.impl.ServiceResponseImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -21,7 +20,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ResetGrandTotalResponseImpl extends BizServiceResponseImpl implements ResetGrandTotalResponse {
+public class ResetGrandTotalResponseImpl extends ServiceResponseImpl implements ResetGrandTotalResponse {
 	/**
 	 * 
 	 */
@@ -44,6 +43,23 @@ public class ResetGrandTotalResponseImpl extends BizServiceResponseImpl implemen
 	@Override
 	protected EClass eStaticClass() {
 		return OrderPackage.Literals.RESET_GRAND_TOTAL_RESPONSE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 4;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 } //ResetGrandTotalResponseImpl

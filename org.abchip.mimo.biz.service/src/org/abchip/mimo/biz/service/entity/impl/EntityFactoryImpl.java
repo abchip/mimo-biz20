@@ -62,6 +62,7 @@ public class EntityFactoryImpl extends EFactoryImpl implements EntityFactory {
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case EntityPackage.EXPORT_ENTITIES: return (EObject)createExportEntities();
+			case EntityPackage.CONVERT_SEEDS: return (EObject)createConvertSeeds();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -76,6 +77,17 @@ public class EntityFactoryImpl extends EFactoryImpl implements EntityFactory {
 	public ExportEntities createExportEntities() {
 		ExportEntitiesImpl exportEntities = new ExportEntitiesImpl();
 		return exportEntities;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public ConvertSeeds createConvertSeeds() {
+		ConvertSeedsImpl convertSeeds = new ConvertSeedsImpl();
+		return convertSeeds;
 	}
 
 	/**

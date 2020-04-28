@@ -9,9 +9,7 @@ package org.abchip.mimo.biz.service.accounting.impl;
 
 import org.abchip.mimo.biz.service.accounting.AccountingPackage;
 import org.abchip.mimo.biz.service.accounting.SetPaymentStatusResponse;
-
-import org.abchip.mimo.biz.service.impl.BizServiceResponseImpl;
-
+import org.abchip.mimo.service.impl.ServiceResponseImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -21,7 +19,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class SetPaymentStatusResponseImpl extends BizServiceResponseImpl implements SetPaymentStatusResponse {
+public class SetPaymentStatusResponseImpl extends ServiceResponseImpl implements SetPaymentStatusResponse {
 	/**
 	 * 
 	 */
@@ -44,6 +42,23 @@ public class SetPaymentStatusResponseImpl extends BizServiceResponseImpl impleme
 	@Override
 	protected EClass eStaticClass() {
 		return AccountingPackage.Literals.SET_PAYMENT_STATUS_RESPONSE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 4;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 } //SetPaymentStatusResponseImpl

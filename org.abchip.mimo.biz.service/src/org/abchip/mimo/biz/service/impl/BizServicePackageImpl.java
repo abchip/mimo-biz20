@@ -129,7 +129,6 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.service.BizServiceFactory;
 import org.abchip.mimo.biz.service.BizServicePackage;
 import org.abchip.mimo.biz.service.BizServiceRequest;
-import org.abchip.mimo.biz.service.BizServiceResponse;
 import org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl;
 import org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl;
 import org.abchip.mimo.biz.service.order.impl.OrderPackageImpl;
@@ -158,13 +157,6 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 	 * @generated
 	 */
 	private EClass bizServiceRequestEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass bizServiceResponseEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -334,16 +326,6 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 	 * @generated
 	 */
 	@Override
-	public EClass getBizServiceResponse() {
-		return bizServiceResponseEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public BizServiceFactory getBizServiceFactory() {
 		return (BizServiceFactory)getEFactoryInstance();
 	}
@@ -369,8 +351,6 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 		// Create classes and their features
 		bizServiceRequestEClass = createEClass(BIZ_SERVICE_REQUEST);
 		createEReference(bizServiceRequestEClass, BIZ_SERVICE_REQUEST__USER_LOGIN);
-
-		bizServiceResponseEClass = createEClass(BIZ_SERVICE_RESPONSE);
 	}
 
 	/**
@@ -422,13 +402,10 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 		EGenericType g2 = createEGenericType(bizServiceRequestEClass_V);
 		g1.getETypeArguments().add(g2);
 		bizServiceRequestEClass.getEGenericSuperTypes().add(g1);
-		bizServiceResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(bizServiceRequestEClass, BizServiceRequest.class, "BizServiceRequest", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getBizServiceRequest_UserLogin(), theLoginPackage.getUserLogin(), null, "userLogin", null, 1, 1, BizServiceRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(bizServiceResponseEClass, BizServiceResponse.class, "BizServiceResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

@@ -128,6 +128,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.service.BizServicePackage;
 
 import org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl;
+import org.abchip.mimo.biz.service.entity.ConvertSeeds;
 import org.abchip.mimo.biz.service.entity.EntityFactory;
 import org.abchip.mimo.biz.service.entity.EntityPackage;
 import org.abchip.mimo.biz.service.entity.ExportEntities;
@@ -137,6 +138,7 @@ import org.abchip.mimo.biz.service.impl.BizServicePackageImpl;
 import org.abchip.mimo.biz.service.order.impl.OrderPackageImpl;
 import org.abchip.mimo.biz.service.product.impl.ProductPackageImpl;
 
+import org.abchip.mimo.service.ServicePackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EGenericType;
@@ -157,6 +159,13 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 	 * @generated
 	 */
 	private EClass exportEntitiesEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass convertSeedsEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -326,6 +335,26 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getConvertSeeds() {
+		return convertSeedsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getConvertSeeds_Readers() {
+		return (EAttribute)convertSeedsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EntityFactory getEntityFactory() {
 		return (EntityFactory)getEFactoryInstance();
 	}
@@ -351,6 +380,9 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		// Create classes and their features
 		exportEntitiesEClass = createEClass(EXPORT_ENTITIES);
 		createEAttribute(exportEntitiesEClass, EXPORT_ENTITIES__PATH_TO);
+
+		convertSeedsEClass = createEClass(CONVERT_SEEDS);
+		createEAttribute(convertSeedsEClass, CONVERT_SEEDS__READERS);
 	}
 
 	/**
@@ -378,6 +410,7 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 
 		// Obtain other dependent packages
 		BizServicePackage theBizServicePackage = (BizServicePackage)EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
+		ServicePackage theServicePackage = (ServicePackage)EPackage.Registry.INSTANCE.getEPackage(ServicePackage.eNS_URI);
 
 		// Create type parameters
 
@@ -385,13 +418,20 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 
 		// Add supertypes to classes
 		EGenericType g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
-		EGenericType g2 = createEGenericType(theBizServicePackage.getBizServiceResponse());
+		EGenericType g2 = createEGenericType(theServicePackage.getServiceResponse());
 		g1.getETypeArguments().add(g2);
 		exportEntitiesEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theServicePackage.getServiceRequest());
+		g2 = createEGenericType(theServicePackage.getServiceResponse());
+		g1.getETypeArguments().add(g2);
+		convertSeedsEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(exportEntitiesEClass, ExportEntities.class, "ExportEntities", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getExportEntities_PathTo(), ecorePackage.getEString(), "pathTo", null, 1, 1, ExportEntities.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(convertSeedsEClass, ConvertSeeds.class, "ConvertSeeds", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getConvertSeeds_Readers(), ecorePackage.getEString(), "readers", null, 1, 1, ConvertSeeds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 	}
 
 } //EntityPackageImpl

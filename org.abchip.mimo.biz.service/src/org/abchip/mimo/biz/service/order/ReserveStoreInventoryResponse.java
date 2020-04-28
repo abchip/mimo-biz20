@@ -8,7 +8,7 @@
 package org.abchip.mimo.biz.service.order;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.service.BizServiceResponse;
+import org.abchip.mimo.service.ServiceResponse;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +26,7 @@ import org.abchip.mimo.biz.service.BizServiceResponse;
  * @model
  * @generated
  */
-public interface ReserveStoreInventoryResponse extends BizServiceResponse {
+public interface ReserveStoreInventoryResponse extends ServiceResponse {
 
 	/**
 	 * Returns the value of the '<em><b>Quantity Not Reserved</b></em>' attribute.

@@ -20,7 +20,6 @@
       <genTypeParameters ecoreTypeParameter="biz-service.ecore#//BizServiceRequest/V"/>
       <genFeatures property="None" children="true" createChild="false" ecoreFeature="ecore:EReference biz-service.ecore#//BizServiceRequest/userLogin"/>
     </genClasses>
-    <genClasses image="false" ecoreClass="biz-service.ecore#//BizServiceResponse"/>
     <nestedGenPackages prefix="Accounting" basePackage="org.abchip.mimo.biz.service"
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//accounting">
       <genClasses ecoreClass="biz-service.ecore#//accounting/CreatePayment"/>
@@ -57,6 +56,9 @@
         adapterFactory="false" ecorePackage="biz-service.ecore#//entity">
       <genClasses ecoreClass="biz-service.ecore#//entity/ExportEntities">
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/ExportEntities/pathTo"/>
+      </genClasses>
+      <genClasses ecoreClass="biz-service.ecore#//entity/ConvertSeeds">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/ConvertSeeds/readers"/>
       </genClasses>
     </nestedGenPackages>
     <nestedGenPackages prefix="Humanres" basePackage="org.abchip.mimo.biz.service"

@@ -117,61 +117,6 @@ public interface BizServicePackage extends EPackage {
 	int BIZ_SERVICE_REQUEST_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
 
 	/**
-	 * The meta object id for the '{@link org.abchip.mimo.biz.service.impl.BizServiceResponseImpl <em>Response</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.abchip.mimo.biz.service.impl.BizServiceResponseImpl
-	 * @see org.abchip.mimo.biz.service.impl.BizServicePackageImpl#getBizServiceResponse()
-	 * @generated
-	 */
-	int BIZ_SERVICE_RESPONSE = 1;
-
-	/**
-	 * The feature id for the '<em><b>Error</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_SERVICE_RESPONSE__ERROR = ServicePackage.SERVICE_RESPONSE__ERROR;
-
-	/**
-	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_SERVICE_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
-
-	/**
-	 * The feature id for the '<em><b>Response Message</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_SERVICE_RESPONSE__RESPONSE_MESSAGE = ServicePackage.SERVICE_RESPONSE__RESPONSE_MESSAGE;
-
-	/**
-	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_SERVICE_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
-
-	/**
-	 * The number of structural features of the '<em>Response</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_SERVICE_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
-
-	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.BizServiceRequest <em>Request</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -191,16 +136,6 @@ public interface BizServicePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getBizServiceRequest_UserLogin();
-
-	/**
-	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.BizServiceResponse <em>Response</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Response</em>'.
-	 * @see org.abchip.mimo.biz.service.BizServiceResponse
-	 * @generated
-	 */
-	EClass getBizServiceResponse();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -241,16 +176,6 @@ public interface BizServicePackage extends EPackage {
 		 * @generated
 		 */
 		EReference BIZ_SERVICE_REQUEST__USER_LOGIN = eINSTANCE.getBizServiceRequest_UserLogin();
-
-		/**
-		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.impl.BizServiceResponseImpl <em>Response</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.abchip.mimo.biz.service.impl.BizServiceResponseImpl
-		 * @see org.abchip.mimo.biz.service.impl.BizServicePackageImpl#getBizServiceResponse()
-		 * @generated
-		 */
-		EClass BIZ_SERVICE_RESPONSE = eINSTANCE.getBizServiceResponse();
 
 	}
 

@@ -9,6 +9,7 @@ package org.abchip.mimo.biz.service.entity;
 
 import org.abchip.mimo.biz.service.BizServicePackage;
 
+import org.abchip.mimo.service.ServicePackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -127,6 +128,62 @@ public interface EntityPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.entity.impl.ConvertSeedsImpl <em>Convert Seeds</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.entity.impl.ConvertSeedsImpl
+	 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getConvertSeeds()
+	 * @generated
+	 */
+	int CONVERT_SEEDS = 1;
+
+	/**
+	 * The feature id for the '<em><b>Locale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONVERT_SEEDS__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONVERT_SEEDS__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
+
+	/**
+	 * The feature id for the '<em><b>Context</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONVERT_SEEDS__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>Readers</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONVERT_SEEDS__READERS = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Convert Seeds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONVERT_SEEDS_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
+
+
+	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.entity.ExportEntities <em>Export Entities</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -146,6 +203,27 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getExportEntities_PathTo();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.entity.ConvertSeeds <em>Convert Seeds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Convert Seeds</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.ConvertSeeds
+	 * @generated
+	 */
+	EClass getConvertSeeds();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.ConvertSeeds#getReaders <em>Readers</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Readers</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.ConvertSeeds#getReaders()
+	 * @see #getConvertSeeds()
+	 * @generated
+	 */
+	EAttribute getConvertSeeds_Readers();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -185,6 +263,22 @@ public interface EntityPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute EXPORT_ENTITIES__PATH_TO = eINSTANCE.getExportEntities_PathTo();
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.entity.impl.ConvertSeedsImpl <em>Convert Seeds</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.entity.impl.ConvertSeedsImpl
+		 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getConvertSeeds()
+		 * @generated
+		 */
+		EClass CONVERT_SEEDS = eINSTANCE.getConvertSeeds();
+		/**
+		 * The meta object literal for the '<em><b>Readers</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CONVERT_SEEDS__READERS = eINSTANCE.getConvertSeeds_Readers();
 
 	}
 

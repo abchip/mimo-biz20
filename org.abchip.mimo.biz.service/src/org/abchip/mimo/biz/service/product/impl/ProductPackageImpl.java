@@ -78,6 +78,7 @@ import org.abchip.mimo.biz.service.product.CalculateProductPrice;
 import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
 import org.abchip.mimo.biz.service.product.ProductFactory;
 import org.abchip.mimo.biz.service.product.ProductPackage;
+import org.abchip.mimo.service.ServicePackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EGenericType;
@@ -531,6 +532,7 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 
 		// Obtain other dependent packages
 		BizServicePackage theBizServicePackage = (BizServicePackage)EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
+		ServicePackage theServicePackage = (ServicePackage)EPackage.Registry.INSTANCE.getEPackage(ServicePackage.eNS_URI);
 		org.abchip.mimo.biz.model.product.product.ProductPackage theProductPackage_1 = (org.abchip.mimo.biz.model.product.product.ProductPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.model.product.product.ProductPackage.eNS_URI);
 		OrderPackage theOrderPackage = (OrderPackage)EPackage.Registry.INSTANCE.getEPackage(OrderPackage.eNS_URI);
 
@@ -543,12 +545,12 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		EGenericType g2 = createEGenericType(this.getCalcTaxForDisplayResponse());
 		g1.getETypeArguments().add(g2);
 		calcTaxForDisplayEClass.getEGenericSuperTypes().add(g1);
-		calcTaxForDisplayResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
+		calcTaxForDisplayResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
 		g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
 		g2 = createEGenericType(this.getCalculateProductPriceResponse());
 		g1.getETypeArguments().add(g2);
 		calculateProductPriceEClass.getEGenericSuperTypes().add(g1);
-		calculateProductPriceResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
+		calculateProductPriceResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(calcTaxForDisplayEClass, CalcTaxForDisplay.class, "CalcTaxForDisplay", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

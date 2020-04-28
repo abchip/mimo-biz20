@@ -143,6 +143,7 @@ import org.abchip.mimo.biz.service.order.ResetGrandTotal;
 import org.abchip.mimo.biz.service.order.ResetGrandTotalResponse;
 import org.abchip.mimo.biz.service.product.impl.ProductPackageImpl;
 
+import org.abchip.mimo.service.ServicePackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EGenericType;
@@ -666,6 +667,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 
 		// Obtain other dependent packages
 		BizServicePackage theBizServicePackage = (BizServicePackage)EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
+		ServicePackage theServicePackage = (ServicePackage)EPackage.Registry.INSTANCE.getEPackage(ServicePackage.eNS_URI);
 
 		// Create type parameters
 
@@ -676,17 +678,17 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		EGenericType g2 = createEGenericType(this.getChangeOrderStatusResponse());
 		g1.getETypeArguments().add(g2);
 		changeOrderStatusEClass.getEGenericSuperTypes().add(g1);
-		changeOrderStatusResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
+		changeOrderStatusResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
 		g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
 		g2 = createEGenericType(this.getReserveStoreInventoryResponse());
 		g1.getETypeArguments().add(g2);
 		reserveStoreInventoryEClass.getEGenericSuperTypes().add(g1);
-		reserveStoreInventoryResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
+		reserveStoreInventoryResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
 		g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
 		g2 = createEGenericType(this.getResetGrandTotalResponse());
 		g1.getETypeArguments().add(g2);
 		resetGrandTotalEClass.getEGenericSuperTypes().add(g1);
-		resetGrandTotalResponseEClass.getESuperTypes().add(theBizServicePackage.getBizServiceResponse());
+		resetGrandTotalResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(changeOrderStatusEClass, ChangeOrderStatus.class, "ChangeOrderStatus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

@@ -17,11 +17,18 @@
 	<version>1.0</version>
 
 	<service name="exportEntities" engine="java"
-		location="org.abchip.mimo.biz.plugins.entity.EntityServices"
+		location="org.abchip.mimo.biz.asf.plugins.entity.EntityServices"
 		invoke="exportEntities">
 		<description>Export OFBiz Entities</description>
 		<attribute name="pathTo" type="String" mode="IN"
 			optional="false" />
 	</service>
 
+	<service name="ConvertSeeds" engine="java"
+		location="org.abchip.mimo.biz.asf.plugins.entity.SeedServices"
+		invoke="convertSeeds">
+		<description>Convert OFBiz seeds to MIMO seeds</description>
+		<attribute name="reader" type="String" mode="IN"
+			optional="false" />
+	</service>
 </services>

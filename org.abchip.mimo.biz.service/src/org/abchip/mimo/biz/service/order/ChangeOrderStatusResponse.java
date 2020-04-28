@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.service.order;
 
 import java.math.BigDecimal;
-
-import org.abchip.mimo.biz.service.BizServiceResponse;
+import org.abchip.mimo.service.ServiceResponse;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +30,7 @@ import org.abchip.mimo.biz.service.BizServiceResponse;
  * @model
  * @generated
  */
-public interface ChangeOrderStatusResponse extends BizServiceResponse {
+public interface ChangeOrderStatusResponse extends ServiceResponse {
 	/**
 	 * Returns the value of the '<em><b>Grand Total</b></em>' attribute.
 	 * <!-- begin-user-doc -->

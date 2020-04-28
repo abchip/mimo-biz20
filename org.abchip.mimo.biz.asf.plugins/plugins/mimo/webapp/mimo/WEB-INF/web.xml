@@ -50,7 +50,7 @@
 
 	<servlet>
 		<servlet-name>HttpServiceServlet</servlet-name>
-		<servlet-class>org.abchip.mimo.biz.plugins.servlet.TomcatServiceServlet</servlet-class>
+		<servlet-class>org.abchip.mimo.biz.asf.plugins.TomcatServiceServlet</servlet-class>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
 </web-app>

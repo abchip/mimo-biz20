@@ -9,6 +9,7 @@ package org.abchip.mimo.biz.service.order;
 
 import org.abchip.mimo.biz.service.BizServicePackage;
 
+import org.abchip.mimo.service.ServicePackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -169,7 +170,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHANGE_ORDER_STATUS_RESPONSE__ERROR = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR;
+	int CHANGE_ORDER_STATUS_RESPONSE__ERROR = ServicePackage.SERVICE_RESPONSE__ERROR;
 
 	/**
 	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
@@ -178,7 +179,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHANGE_ORDER_STATUS_RESPONSE__ERROR_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR_MESSAGE;
+	int CHANGE_ORDER_STATUS_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Response Message</b></em>' attribute.
@@ -187,7 +188,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHANGE_ORDER_STATUS_RESPONSE__RESPONSE_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__RESPONSE_MESSAGE;
+	int CHANGE_ORDER_STATUS_RESPONSE__RESPONSE_MESSAGE = ServicePackage.SERVICE_RESPONSE__RESPONSE_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
@@ -196,7 +197,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHANGE_ORDER_STATUS_RESPONSE__SUCCESS_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__SUCCESS_MESSAGE;
+	int CHANGE_ORDER_STATUS_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Grand Total</b></em>' attribute.
@@ -205,7 +206,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHANGE_ORDER_STATUS_RESPONSE__GRAND_TOTAL = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 0;
+	int CHANGE_ORDER_STATUS_RESPONSE__GRAND_TOTAL = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Needs Inventory Issuance</b></em>' attribute.
@@ -214,7 +215,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHANGE_ORDER_STATUS_RESPONSE__NEEDS_INVENTORY_ISSUANCE = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 1;
+	int CHANGE_ORDER_STATUS_RESPONSE__NEEDS_INVENTORY_ISSUANCE = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Old Status Id</b></em>' attribute.
@@ -223,7 +224,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHANGE_ORDER_STATUS_RESPONSE__OLD_STATUS_ID = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 2;
+	int CHANGE_ORDER_STATUS_RESPONSE__OLD_STATUS_ID = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Order Status Id</b></em>' attribute.
@@ -232,7 +233,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHANGE_ORDER_STATUS_RESPONSE__ORDER_STATUS_ID = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 3;
+	int CHANGE_ORDER_STATUS_RESPONSE__ORDER_STATUS_ID = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Order Type Id</b></em>' attribute.
@@ -241,7 +242,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHANGE_ORDER_STATUS_RESPONSE__ORDER_TYPE_ID = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 4;
+	int CHANGE_ORDER_STATUS_RESPONSE__ORDER_TYPE_ID = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of structural features of the '<em>Change Order Status Response</em>' class.
@@ -250,7 +251,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHANGE_ORDER_STATUS_RESPONSE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 5;
+	int CHANGE_ORDER_STATUS_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 5;
 
 
 	/**
@@ -388,7 +389,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESERVE_STORE_INVENTORY_RESPONSE__ERROR = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR;
+	int RESERVE_STORE_INVENTORY_RESPONSE__ERROR = ServicePackage.SERVICE_RESPONSE__ERROR;
 
 	/**
 	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
@@ -397,7 +398,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESERVE_STORE_INVENTORY_RESPONSE__ERROR_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR_MESSAGE;
+	int RESERVE_STORE_INVENTORY_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Response Message</b></em>' attribute.
@@ -406,7 +407,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESERVE_STORE_INVENTORY_RESPONSE__RESPONSE_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__RESPONSE_MESSAGE;
+	int RESERVE_STORE_INVENTORY_RESPONSE__RESPONSE_MESSAGE = ServicePackage.SERVICE_RESPONSE__RESPONSE_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
@@ -415,7 +416,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESERVE_STORE_INVENTORY_RESPONSE__SUCCESS_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__SUCCESS_MESSAGE;
+	int RESERVE_STORE_INVENTORY_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Quantity Not Reserved</b></em>' attribute.
@@ -424,7 +425,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESERVE_STORE_INVENTORY_RESPONSE__QUANTITY_NOT_RESERVED = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 0;
+	int RESERVE_STORE_INVENTORY_RESPONSE__QUANTITY_NOT_RESERVED = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Reserve Store Inventory Response</em>' class.
@@ -433,7 +434,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESERVE_STORE_INVENTORY_RESPONSE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 1;
+	int RESERVE_STORE_INVENTORY_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 1;
 
 
 	/**
@@ -517,7 +518,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESET_GRAND_TOTAL_RESPONSE__ERROR = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR;
+	int RESET_GRAND_TOTAL_RESPONSE__ERROR = ServicePackage.SERVICE_RESPONSE__ERROR;
 
 	/**
 	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
@@ -526,7 +527,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESET_GRAND_TOTAL_RESPONSE__ERROR_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR_MESSAGE;
+	int RESET_GRAND_TOTAL_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Response Message</b></em>' attribute.
@@ -535,7 +536,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESET_GRAND_TOTAL_RESPONSE__RESPONSE_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__RESPONSE_MESSAGE;
+	int RESET_GRAND_TOTAL_RESPONSE__RESPONSE_MESSAGE = ServicePackage.SERVICE_RESPONSE__RESPONSE_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
@@ -544,7 +545,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESET_GRAND_TOTAL_RESPONSE__SUCCESS_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__SUCCESS_MESSAGE;
+	int RESET_GRAND_TOTAL_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
 
 	/**
 	 * The number of structural features of the '<em>Reset Grand Total Response</em>' class.
@@ -553,7 +554,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESET_GRAND_TOTAL_RESPONSE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 0;
+	int RESET_GRAND_TOTAL_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
 
 
 	/**

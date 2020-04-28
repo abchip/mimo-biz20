@@ -134,7 +134,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CREATE_PAYMENT_RESPONSE__ERROR = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR;
+	int CREATE_PAYMENT_RESPONSE__ERROR = ServicePackage.SERVICE_RESPONSE__ERROR;
 
 	/**
 	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
@@ -143,7 +143,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CREATE_PAYMENT_RESPONSE__ERROR_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR_MESSAGE;
+	int CREATE_PAYMENT_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Response Message</b></em>' attribute.
@@ -152,7 +152,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CREATE_PAYMENT_RESPONSE__RESPONSE_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__RESPONSE_MESSAGE;
+	int CREATE_PAYMENT_RESPONSE__RESPONSE_MESSAGE = ServicePackage.SERVICE_RESPONSE__RESPONSE_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
@@ -161,7 +161,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CREATE_PAYMENT_RESPONSE__SUCCESS_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__SUCCESS_MESSAGE;
+	int CREATE_PAYMENT_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
 
 	/**
 	 * The number of structural features of the '<em>Create Payment Response</em>' class.
@@ -170,7 +170,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CREATE_PAYMENT_RESPONSE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 0;
+	int CREATE_PAYMENT_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.service.accounting.impl.SetPaymentStatusImpl <em>Set Payment Status</em>}' class.
@@ -300,7 +300,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_INVOICE_STATUS_RESPONSE__ERROR = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR;
+	int SET_INVOICE_STATUS_RESPONSE__ERROR = ServicePackage.SERVICE_RESPONSE__ERROR;
 
 	/**
 	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
@@ -309,7 +309,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_INVOICE_STATUS_RESPONSE__ERROR_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR_MESSAGE;
+	int SET_INVOICE_STATUS_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Response Message</b></em>' attribute.
@@ -318,7 +318,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_INVOICE_STATUS_RESPONSE__RESPONSE_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__RESPONSE_MESSAGE;
+	int SET_INVOICE_STATUS_RESPONSE__RESPONSE_MESSAGE = ServicePackage.SERVICE_RESPONSE__RESPONSE_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
@@ -327,7 +327,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_INVOICE_STATUS_RESPONSE__SUCCESS_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__SUCCESS_MESSAGE;
+	int SET_INVOICE_STATUS_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Type Id</b></em>' attribute.
@@ -336,7 +336,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_INVOICE_STATUS_RESPONSE__INVOICE_TYPE_ID = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 0;
+	int SET_INVOICE_STATUS_RESPONSE__INVOICE_TYPE_ID = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Old Status Id</b></em>' attribute.
@@ -345,7 +345,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_INVOICE_STATUS_RESPONSE__OLD_STATUS_ID = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 1;
+	int SET_INVOICE_STATUS_RESPONSE__OLD_STATUS_ID = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Set Invoice Status Response</em>' class.
@@ -354,7 +354,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_INVOICE_STATUS_RESPONSE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 2;
+	int SET_INVOICE_STATUS_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Locale</b></em>' attribute.
@@ -426,7 +426,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_PAYMENT_STATUS_RESPONSE__ERROR = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR;
+	int SET_PAYMENT_STATUS_RESPONSE__ERROR = ServicePackage.SERVICE_RESPONSE__ERROR;
 
 	/**
 	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
@@ -435,7 +435,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_PAYMENT_STATUS_RESPONSE__ERROR_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR_MESSAGE;
+	int SET_PAYMENT_STATUS_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Response Message</b></em>' attribute.
@@ -444,7 +444,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_PAYMENT_STATUS_RESPONSE__RESPONSE_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__RESPONSE_MESSAGE;
+	int SET_PAYMENT_STATUS_RESPONSE__RESPONSE_MESSAGE = ServicePackage.SERVICE_RESPONSE__RESPONSE_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
@@ -453,7 +453,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_PAYMENT_STATUS_RESPONSE__SUCCESS_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__SUCCESS_MESSAGE;
+	int SET_PAYMENT_STATUS_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
 
 	/**
 	 * The number of structural features of the '<em>Set Payment Status Response</em>' class.
@@ -462,7 +462,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_PAYMENT_STATUS_RESPONSE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 0;
+	int SET_PAYMENT_STATUS_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
 
 
 	/**
@@ -555,7 +555,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE__ERROR = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR;
+	int UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE__ERROR = ServicePackage.SERVICE_RESPONSE__ERROR;
 
 	/**
 	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
@@ -564,7 +564,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE__ERROR_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR_MESSAGE;
+	int UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Response Message</b></em>' attribute.
@@ -573,7 +573,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE__RESPONSE_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__RESPONSE_MESSAGE;
+	int UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE__RESPONSE_MESSAGE = ServicePackage.SERVICE_RESPONSE__RESPONSE_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
@@ -582,7 +582,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE__SUCCESS_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__SUCCESS_MESSAGE;
+	int UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
 
 	/**
 	 * The number of structural features of the '<em>Update Payment Application Def Response</em>' class.
@@ -591,7 +591,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 0;
+	int UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
 
 
 	/**

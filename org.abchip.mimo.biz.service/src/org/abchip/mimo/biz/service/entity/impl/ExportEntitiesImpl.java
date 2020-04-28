@@ -7,12 +7,11 @@
  */
 package org.abchip.mimo.biz.service.entity.impl;
 
-import org.abchip.mimo.biz.service.BizServiceResponse;
-
 import org.abchip.mimo.biz.service.entity.EntityPackage;
 import org.abchip.mimo.biz.service.entity.ExportEntities;
 
 import org.abchip.mimo.biz.service.impl.BizServiceRequestImpl;
+import org.abchip.mimo.service.ServiceResponse;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -28,7 +27,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ExportEntitiesImpl extends BizServiceRequestImpl<BizServiceResponse> implements ExportEntities {
+public class ExportEntitiesImpl extends BizServiceRequestImpl<ServiceResponse> implements ExportEntities {
 	/**
 	 * 
 	 */

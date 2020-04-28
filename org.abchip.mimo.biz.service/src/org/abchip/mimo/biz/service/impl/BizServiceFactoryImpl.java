@@ -61,21 +61,9 @@ public class BizServiceFactoryImpl extends EFactoryImpl implements BizServiceFac
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case BizServicePackage.BIZ_SERVICE_RESPONSE: return (EObject)createBizServiceResponse();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public BizServiceResponse createBizServiceResponse() {
-		BizServiceResponseImpl bizServiceResponse = new BizServiceResponseImpl();
-		return bizServiceResponse;
 	}
 
 	/**

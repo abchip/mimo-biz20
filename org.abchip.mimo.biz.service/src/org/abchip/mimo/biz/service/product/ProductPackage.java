@@ -8,6 +8,7 @@
 package org.abchip.mimo.biz.service.product;
 
 import org.abchip.mimo.biz.service.BizServicePackage;
+import org.abchip.mimo.service.ServicePackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -207,7 +208,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALC_TAX_FOR_DISPLAY_RESPONSE__ERROR = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR;
+	int CALC_TAX_FOR_DISPLAY_RESPONSE__ERROR = ServicePackage.SERVICE_RESPONSE__ERROR;
 
 	/**
 	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
@@ -216,7 +217,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALC_TAX_FOR_DISPLAY_RESPONSE__ERROR_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR_MESSAGE;
+	int CALC_TAX_FOR_DISPLAY_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Response Message</b></em>' attribute.
@@ -225,7 +226,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALC_TAX_FOR_DISPLAY_RESPONSE__RESPONSE_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__RESPONSE_MESSAGE;
+	int CALC_TAX_FOR_DISPLAY_RESPONSE__RESPONSE_MESSAGE = ServicePackage.SERVICE_RESPONSE__RESPONSE_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
@@ -234,7 +235,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALC_TAX_FOR_DISPLAY_RESPONSE__SUCCESS_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__SUCCESS_MESSAGE;
+	int CALC_TAX_FOR_DISPLAY_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Price With Tax</b></em>' attribute.
@@ -243,7 +244,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALC_TAX_FOR_DISPLAY_RESPONSE__PRICE_WITH_TAX = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 0;
+	int CALC_TAX_FOR_DISPLAY_RESPONSE__PRICE_WITH_TAX = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Tax Percentage</b></em>' attribute.
@@ -252,7 +253,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALC_TAX_FOR_DISPLAY_RESPONSE__TAX_PERCENTAGE = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 1;
+	int CALC_TAX_FOR_DISPLAY_RESPONSE__TAX_PERCENTAGE = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Tax Total</b></em>' attribute.
@@ -261,7 +262,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALC_TAX_FOR_DISPLAY_RESPONSE__TAX_TOTAL = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 2;
+	int CALC_TAX_FOR_DISPLAY_RESPONSE__TAX_TOTAL = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 2;
 
 	/**
 	 * The number of structural features of the '<em>Calc Tax For Display Response</em>' class.
@@ -270,7 +271,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALC_TAX_FOR_DISPLAY_RESPONSE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 3;
+	int CALC_TAX_FOR_DISPLAY_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Locale</b></em>' attribute.
@@ -342,7 +343,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__ERROR = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR;
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__ERROR = ServicePackage.SERVICE_RESPONSE__ERROR;
 
 	/**
 	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
@@ -351,7 +352,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__ERROR_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__ERROR_MESSAGE;
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Response Message</b></em>' attribute.
@@ -360,7 +361,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__RESPONSE_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__RESPONSE_MESSAGE;
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__RESPONSE_MESSAGE = ServicePackage.SERVICE_RESPONSE__RESPONSE_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
@@ -369,7 +370,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__SUCCESS_MESSAGE = BizServicePackage.BIZ_SERVICE_RESPONSE__SUCCESS_MESSAGE;
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Valid Price Found</b></em>' attribute.
@@ -378,7 +379,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__VALID_PRICE_FOUND = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 0;
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__VALID_PRICE_FOUND = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Base Price</b></em>' attribute.
@@ -387,7 +388,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__BASE_PRICE = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 1;
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__BASE_PRICE = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>List Price</b></em>' attribute.
@@ -396,7 +397,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 2;
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Price Infos</b></em>' containment reference list.
@@ -405,7 +406,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 3;
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Calculate Product Price Response</em>' class.
@@ -414,7 +415,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_RESPONSE_FEATURE_COUNT + 4;
+	int CALCULATE_PRODUCT_PRICE_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 4;
 
 
 	/**

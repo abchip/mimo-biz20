@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.service.accounting;
 
-import org.abchip.mimo.biz.service.BizServiceResponse;
+import org.abchip.mimo.service.ServiceResponse;
 
 /**
  * <!-- begin-user-doc -->
@@ -19,5 +19,5 @@ import org.abchip.mimo.biz.service.BizServiceResponse;
  * @model
  * @generated
  */
-public interface UpdatePaymentApplicationDefResponse extends BizServiceResponse {
+public interface UpdatePaymentApplicationDefResponse extends ServiceResponse {
 } // UpdatePaymentApplicationDefResponse

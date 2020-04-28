@@ -10,7 +10,7 @@ package org.abchip.mimo.biz.service.product;
 import java.math.BigDecimal;
 import java.util.List;
 import org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo;
-import org.abchip.mimo.biz.service.BizServiceResponse;
+import org.abchip.mimo.service.ServiceResponse;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +31,7 @@ import org.abchip.mimo.biz.service.BizServiceResponse;
  * @model
  * @generated
  */
-public interface CalculateProductPriceResponse extends BizServiceResponse {
+public interface CalculateProductPriceResponse extends ServiceResponse {
 
 	/**
 	 * Returns the value of the '<em><b>Valid Price Found</b></em>' attribute.

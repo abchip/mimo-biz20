@@ -63,7 +63,7 @@
 
 <!-- 
 	<entity entity-name="EntitiesDescription"
-		package-name="org.abchip.mimo.biz.plugins.entity"
+		package-name="org.abchip.mimo.biz.asf.plugins.entity"
 		title="Entities formula description">
 		<field name="entityId" type="id-long"></field>
 		<field name="formula" type="description"></field>

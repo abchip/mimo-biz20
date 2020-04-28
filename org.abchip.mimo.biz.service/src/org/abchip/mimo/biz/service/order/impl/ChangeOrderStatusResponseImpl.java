@@ -8,11 +8,9 @@
 package org.abchip.mimo.biz.service.order.impl;
 
 import java.math.BigDecimal;
-
-import org.abchip.mimo.biz.service.impl.BizServiceResponseImpl;
-
 import org.abchip.mimo.biz.service.order.ChangeOrderStatusResponse;
 import org.abchip.mimo.biz.service.order.OrderPackage;
+import org.abchip.mimo.service.impl.ServiceResponseImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -32,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ChangeOrderStatusResponseImpl extends BizServiceResponseImpl implements ChangeOrderStatusResponse {
+public class ChangeOrderStatusResponseImpl extends ServiceResponseImpl implements ChangeOrderStatusResponse {
 	/**
 	 * 
 	 */
@@ -55,6 +53,23 @@ public class ChangeOrderStatusResponseImpl extends BizServiceResponseImpl implem
 	@Override
 	protected EClass eStaticClass() {
 		return OrderPackage.Literals.CHANGE_ORDER_STATUS_RESPONSE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 4;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	/**

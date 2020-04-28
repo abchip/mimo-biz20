@@ -10,9 +10,9 @@ package org.abchip.mimo.biz.service.product.impl;
 import java.math.BigDecimal;
 import java.util.List;
 import org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo;
-import org.abchip.mimo.biz.service.impl.BizServiceResponseImpl;
 import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
 import org.abchip.mimo.biz.service.product.ProductPackage;
+import org.abchip.mimo.service.impl.ServiceResponseImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -31,7 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class CalculateProductPriceResponseImpl extends BizServiceResponseImpl implements CalculateProductPriceResponse {
+public class CalculateProductPriceResponseImpl extends ServiceResponseImpl implements CalculateProductPriceResponse {
 	/**
 	 * 
 	 */
@@ -54,6 +54,23 @@ public class CalculateProductPriceResponseImpl extends BizServiceResponseImpl im
 	@Override
 	protected EClass eStaticClass() {
 		return ProductPackage.Literals.CALCULATE_PRODUCT_PRICE_RESPONSE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 4;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	/**
