@@ -17,7 +17,7 @@ import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 
-public class BizAuthenticationManagerImpl implements AuthenticationManager {
+public class AuthenticationManagerImpl implements AuthenticationManager {
 
 	@Inject
 	private Application application;

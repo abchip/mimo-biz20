@@ -62,14 +62,14 @@ public class BizSeedCommands extends BaseCommands {
 
 		Delegator delegator = DelegatorFactory.getDelegator(null);
 		try {
-			BizSeedCommands.exportReaderFiltered(interpreter, context, delegator, filterReaders);
+			exportReaderFiltered(interpreter, context, delegator, filterReaders);
 
 		} catch (Exception e) {
 			interpreter.printStackTrace(e);
 		}
 	}
 
-	public static void exportReaderFiltered(CommandInterpreter interpreter, Context context, Delegator delegator, String filterReaders) {
+	private void exportReaderFiltered(CommandInterpreter interpreter, Context context, Delegator delegator, String filterReaders) {
 		int c1 = 1;
 		List<String> readerNames = new LinkedList<String>();
 		if (filterReaders.indexOf(",") == -1) {

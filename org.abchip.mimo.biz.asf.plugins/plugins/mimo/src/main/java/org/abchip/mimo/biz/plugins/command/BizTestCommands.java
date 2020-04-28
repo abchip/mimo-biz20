@@ -61,7 +61,6 @@ import org.abchip.mimo.biz.model.product.product.ProductType;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
-import org.abchip.mimo.biz.plugins.entity.EntityUtils;
 import org.abchip.mimo.biz.plugins.paymentGateway.StripePaymentManager;
 import org.abchip.mimo.biz.service.accounting.SetInvoiceStatus;
 import org.abchip.mimo.biz.service.accounting.SetInvoiceStatusResponse;
@@ -88,10 +87,7 @@ import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceManager;
 import org.abchip.mimo.tester.base.BaseTestCommands;
-import org.apache.ofbiz.base.util.UtilFormatOut;
-import org.apache.ofbiz.entity.Delegator;
-import org.apache.ofbiz.entity.DelegatorFactory;
-import org.apache.ofbiz.entity.GenericValue;
+import org.abchip.mimo.util.Numbers;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
 
 import com.stripe.Stripe;
@@ -403,7 +399,7 @@ public class BizTestCommands extends BaseTestCommands {
 		orderItemShipGroupWriter.create(orderItemShipGroup, true);
 
 		// OrderItem
-		String itemSeqiD = UtilFormatOut.formatPaddedNumber(1, 5);
+		String itemSeqiD = Numbers.formatPaddedNumber(1, 5);
 
 		createOrderItem(interpreter, context, orderHeader, itemSeqiD, "Accounting", 1, shipGroupSeqId);
 		// seqItemId++;
@@ -560,7 +556,7 @@ public class BizTestCommands extends BaseTestCommands {
 		} else
 			interpreter.println("Prezzo non valido per articolo " + item);
 
-		orderItemWriter.create(orderItem, true);
+		orderItemWriter.create(orderItem);
 
 		// OrderStatus
 		ResourceWriter<OrderStatus> orderStatusWriter = resourceManager.getResourceWriter(context, OrderStatus.class);
@@ -569,7 +565,7 @@ public class BizTestCommands extends BaseTestCommands {
 		orderStatus.setOrderItemSeqId(itemSeqiD);
 		orderStatus.setStatusId(context.createProxy(StatusItem.class, "ITEM_CREATED"));
 		orderStatus.setStatusUserLogin(context.createProxy(UserLogin.class, USER_LOGIN_ID));
-		orderStatusWriter.create(orderStatus, true);
+		orderStatusWriter.create(orderStatus);
 
 		// OrderItemShipGroupAssoc
 		ResourceWriter<OrderItemShipGroupAssoc> orderItemShipGroupAssocWriter = resourceManager.getResourceWriter(context, OrderItemShipGroupAssoc.class);
@@ -578,7 +574,7 @@ public class BizTestCommands extends BaseTestCommands {
 		orderItemShipGroupAssoc.setOrderItemSeqId(itemSeqiD);
 		orderItemShipGroupAssoc.setShipGroupSeqId(shipGroupSeqId);
 		orderItemShipGroupAssoc.setQuantity(new BigDecimal(quantity));
-		orderItemShipGroupAssocWriter.create(orderItemShipGroupAssoc, true);
+		orderItemShipGroupAssocWriter.create(orderItemShipGroupAssoc);
 	}
 
 	private Invoice createInvoice(CommandInterpreter interpreter, Context context, String partyId, String description) throws ResourceException {
@@ -596,7 +592,7 @@ public class BizTestCommands extends BaseTestCommands {
 		invoice.setPartyIdFrom(partyFrom);
 		if (!description.isEmpty())
 			invoice.setDescription(description);
-		invoiceWriter.create(invoice, true);
+		invoiceWriter.create(invoice);
 
 		// InvoiceStatus
 		ResourceWriter<InvoiceStatus> invoiceStatusWriter = resourceManager.getResourceWriter(context, InvoiceStatus.class);
@@ -604,7 +600,7 @@ public class BizTestCommands extends BaseTestCommands {
 		invoiceStatus.setStatusId(context.createProxy(StatusItem.class, "INVOICE_IN_PROCESS"));
 		invoiceStatus.setInvoiceId(invoice);
 		invoiceStatus.setStatusDate(new Date());
-		invoiceStatusWriter.create(invoiceStatus, true);
+		invoiceStatusWriter.create(invoiceStatus);
 
 		// InvoiceContactMech
 		ResourceWriter<InvoiceContactMech> invoiceContactMechWriter = resourceManager.getResourceWriter(context, InvoiceContactMech.class);
@@ -619,18 +615,15 @@ public class BizTestCommands extends BaseTestCommands {
 
 	private void createInvoiceItem(CommandInterpreter interpreter, Context context, Invoice invoice, String item, int quantity, String itemType) throws ResourceException, ServiceException {
 
-		Delegator delegator = DelegatorFactory.getDelegator(null);
-
 		ResourceWriter<InvoiceItem> invoiceItemWriter = resourceManager.getResourceWriter(context, InvoiceItem.class);
 
 		InvoiceItem invoiceItem = invoiceItemWriter.make();
 		invoiceItem.setInvoiceId(invoice);
 
-		GenericValue invoiceItemValue = EntityUtils.toBizEntity(delegator, invoiceItem);
-		String invoiceItemSeqId = getNextSubSeqId(delegator, invoiceItemValue, "invoiceItemSeqId");
-		String saveInvoiceItemSeqId = invoiceItemSeqId;
-
-		invoiceItem.setInvoiceItemSeqId(invoiceItemSeqId);
+//		GenericValue invoiceItemValue = EntityUtils.toBizEntity(delegator, invoiceItem);
+//		String invoiceItemSeqId = getNextSubSeqId(delegator, invoiceItemValue, "invoiceItemSeqId");
+//		String saveInvoiceItemSeqId = invoiceItemSeqId;
+//		invoiceItem.setInvoiceItemSeqId(invoiceItemSeqId);
 		invoiceItem.setInvoiceItemTypeId(context.createProxy(InvoiceItemType.class, itemType));
 
 		ResourceReader<Product> productReader = resourceManager.getResourceReader(context, Product.class);
@@ -653,8 +646,11 @@ public class BizTestCommands extends BaseTestCommands {
 		} else
 			interpreter.println("Prezzo non valido per articolo " + item);
 
-		invoiceItemWriter.create(invoiceItem, true);
+		invoiceItemWriter.create(invoiceItem);
 
+		// 
+		String saveInvoiceItemSeqId = invoiceItem.getParentInvoiceItemSeqId();
+		
 		// check taxable
 		ResourceReader<ProductStore> productStoreReader = resourceManager.getResourceReader(context, ProductStore.class);
 		ProductStore productStore = productStoreReader.lookup(PRODUCT_STORE_ID);
@@ -699,10 +695,9 @@ public class BizTestCommands extends BaseTestCommands {
 		invoiceItem = invoiceItemWriter.make();
 		invoiceItem.setInvoiceId(invoice);
 
-		invoiceItemValue = EntityUtils.toBizEntity(delegator, invoiceItem);
-		invoiceItemSeqId = getNextSubSeqId(delegator, invoiceItemValue, "invoiceItemSeqId");
-
-		invoiceItem.setInvoiceItemSeqId(invoiceItemSeqId);
+//		invoiceItemValue = EntityUtils.toBizEntity(delegator, invoiceItem);
+//		invoiceItemSeqId = getNextSubSeqId(delegator, invoiceItemValue, "invoiceItemSeqId");
+//		invoiceItem.setInvoiceItemSeqId(invoiceItemSeqId);
 		invoiceItem.setInvoiceItemTypeId(context.createProxy(InvoiceItemType.class, "ITM_SALES_TAX"));
 
 		invoiceItem.setProductId(product);
@@ -721,7 +716,7 @@ public class BizTestCommands extends BaseTestCommands {
 			invoiceItem.setTaxAuthorityRateSeqId(taxAuthorityRateProduct);
 		}
 
-		invoiceItemWriter.create(invoiceItem, true);
+		invoiceItemWriter.create(invoiceItem);
 	}
 
 	private void createAgreement(CommandInterpreter interpreter, Context context, String partyId) throws ResourceException, ServiceException {
@@ -768,8 +763,6 @@ public class BizTestCommands extends BaseTestCommands {
 
 	private String createRow(Context context, Agreement agreement, String text) throws ResourceException {
 
-		Delegator delegator = DelegatorFactory.getDelegator(null);
-
 		AgreementItemType agreementType = context.createProxy(AgreementItemType.class, "AGREEMENT_PRICING_PR");
 		TermType termType = context.createProxy(TermType.class, "FIN_PAYMENT_FIXDAY");
 		InvoiceItemType invoiceItemType = context.createProxy(InvoiceItemType.class, "INV_DPROD_ITEM");
@@ -780,16 +773,15 @@ public class BizTestCommands extends BaseTestCommands {
 		AgreementItem agreementItem = agreementItemWriter.make();
 		agreementItem.setAgreementId(agreement);
 
-		GenericValue agreementItemValue = EntityUtils.toBizEntity(delegator, agreementItem);
-		String agreementItemSeqId = getNextSubSeqId(delegator, agreementItemValue, "agreementItemSeqId");
-
+//		GenericValue agreementItemValue = EntityUtils.toBizEntity(delegator, agreementItem);
+//		String agreementItemSeqId = getNextSubSeqId(delegator, agreementItemValue, "agreementItemSeqId");
 		// agreementItem.setAgreementItemSeqId("00001");
-		agreementItem.setAgreementItemSeqId(agreementItemSeqId);
+//		agreementItem.setAgreementItemSeqId(agreementItemSeqId);
 		agreementItem.setAgreementItemTypeId(agreementType);
 		agreementItem.setCurrencyUomId("EUR");
 		agreementItem.setAgreementText(text);
 		agreementItemWriter.create(agreementItem, true);
-
+		String agreementItemSeqId = agreementItem.getAgreementItemSeqId();
 		// AgreementTerm
 		ResourceWriter<AgreementTerm> agreementTermWriter = resourceManager.getResourceWriter(context, AgreementTerm.class);
 		AgreementTerm agreementTerm = agreementTermWriter.make(true);
@@ -812,10 +804,10 @@ public class BizTestCommands extends BaseTestCommands {
 		return agreementItemSeqId;
 	}
 
-	private String getNextSubSeqId(Delegator delegator, GenericValue genericValue, String fieldName) {
-		delegator.setNextSubSeqId(genericValue, fieldName, 5, 1);
-		return genericValue.getString(fieldName);
-	}
+//	private String getNextSubSeqId(Delegator delegator, GenericValue genericValue, String fieldName) {
+//		delegator.setNextSubSeqId(genericValue, fieldName, 5, 1);
+//		return genericValue.getString(fieldName);
+//	}
 
 	private void createRowProduct(CommandInterpreter interpreter, Context context, Agreement agreement, String item, String itemSeqId) throws ResourceException, ServiceException {
 
