@@ -8,75 +8,121 @@
  */
 package org.abchip.mimo.biz.base.command;
 
-import javax.inject.Inject;
-
-import org.abchip.mimo.biz.base.service.SeedServices;
 import org.abchip.mimo.biz.base.service.TenantServices;
-import org.abchip.mimo.biz.base.service.TenantServices.DBType;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
-import org.abchip.mimo.biz.model.party.party.PartyFactory;
 import org.abchip.mimo.biz.model.party.party.PartyType;
 import org.abchip.mimo.biz.model.party.party.Person;
+import org.abchip.mimo.biz.service.entity.DatabaseType;
+import org.abchip.mimo.biz.service.entity.LoadSeed;
+import org.abchip.mimo.biz.service.entity.LoadSeeds;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.base.cmd.BaseCommands;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
 
 public class TenantCommands extends BaseCommands {
 
-	@Inject
-	private ResourceManager resourceManager;
-
 	public void _createMaster(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();
 
-		SeedServices.loadSeeds(context, "seed", null, true);
-		SeedServices.loadSeed(context, "mimo", null, true);
-		SeedServices.loadSeed(context, "party", null, true);
-		SeedServices.loadSeed(context, "abchip-net", null, true);
-		SeedServices.loadSeed(context, "abchip-net-accounting", null, true);
-		SeedServices.loadSeed(context, "passport", null, true);
-		SeedServices.loadSeed(context, "edi", null, true);
+		{
+			LoadSeeds loadSeeds = context.getServiceManager().prepare(context, LoadSeeds.class);
+			loadSeeds.setSeedPattern("seed");
+			loadSeeds.setUpdate(true);
+			context.getServiceManager().execute(loadSeeds);
+		}
+		{
+			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			loadSeed.setSeedId("mimo");
+			loadSeed.setUpdate(true);
+			context.getServiceManager().execute(loadSeed);
+		}
+		{
+			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			loadSeed.setSeedId("party");
+			loadSeed.setUpdate(true);
+			context.getServiceManager().execute(loadSeed);
+		}
+		{
+			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			loadSeed.setSeedId("abchip-net");
+			loadSeed.setUpdate(true);
+			context.getServiceManager().execute(loadSeed);
+		}
+		{
+			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			loadSeed.setSeedId("abchip-net-accounting");
+			loadSeed.setUpdate(true);
+			context.getServiceManager().execute(loadSeed);
+		}
+		{
+			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			loadSeed.setSeedId("passport");
+			loadSeed.setUpdate(true);
+			context.getServiceManager().execute(loadSeed);
+		}
+		{
+			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			loadSeed.setSeedId("edi");
+			loadSeed.setUpdate(true);
+			context.getServiceManager().execute(loadSeed);
+		}
 	}
 
 	public void _createTenant(CommandInterpreter interpreter) throws Exception {
 
-		Context context = this.getContext();
-
-		// create db structure
-		// tenant seeds, depending on db type (AdminNewTenantData-Derby.xml,
-		// AdminUserLoginData.xml)
-
 		String tenantId = nextArgument(interpreter);
 		String tenantName = nextArgument(interpreter);
-		DBType dbType = DBType.valueOf(nextArgument(interpreter));
-		String partyId = nextArgument(interpreter);
+		DatabaseType dbType = DatabaseType.valueOf(nextArgument(interpreter));
+
+		Context context = this.getContext();
 
 		TenantServices.createTenant(context, tenantId, tenantName, dbType, false);
-		SeedServices.loadSeeds(context, "seed", tenantId, true);
-		SeedServices.loadSeed(context, "mimo", tenantId, true);
-		SeedServices.loadSeed(context, "party", tenantId, true);
-		SeedServices.loadSeed(context, "abchip-biz", tenantId, true);
+		{
+			LoadSeeds loadSeeds = context.getServiceManager().prepare(context, LoadSeeds.class);
+			loadSeeds.setSeedPattern("seed");
+			loadSeeds.setUpdate(true);
+			context.getServiceManager().execute(loadSeeds);
+		}
+		{
+			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			loadSeed.setSeedId("mimo");
+			loadSeed.setUpdate(true);
+			context.getServiceManager().execute(loadSeed);
+		}
+		{
+			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			loadSeed.setSeedId("party");
+			loadSeed.setUpdate(true);
+			context.getServiceManager().execute(loadSeed);
+		}
+		{
+			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			loadSeed.setSeedId("abchip-biz");
+			loadSeed.setUpdate(true);
+			context.getServiceManager().execute(loadSeed);
+		}
+
 		TenantServices.createUserTenant(context, tenantId, false);
 		// Mail
 
 		// Party
+		String partyId = nextArgument(interpreter);
 		if (partyId == null) {
-			ResourceWriter<Person> tenantPersonWriter = resourceManager.getResourceWriter(context, Person.class);
-			Person tenantPerson = PartyFactory.eINSTANCE.createPerson();
+			ResourceWriter<Person> personWriter = context.getResourceManager().getResourceWriter(context, Person.class);
+			Person tenantPerson = personWriter.make();
 			tenantPerson.setPartyId(tenantId);
 			tenantPerson.setStatusId(context.createProxy(StatusItem.class, "PARTY_ENABLED"));
 			tenantPerson.setPartyTypeId(context.createProxy(PartyType.class, "PERSON"));
 			tenantPerson.setFirstName("Tenant " + tenantId);
-			tenantPersonWriter.create(tenantPerson);
+			personWriter.create(tenantPerson);
 		}
 	}
 
 	public void _createTest(CommandInterpreter interpreter) throws Exception {
 
-		DBType dbType = DBType.valueOf(nextArgument(interpreter));
+		DatabaseType dbType = DatabaseType.valueOf(nextArgument(interpreter));
 		boolean update = Boolean.parseBoolean(nextArgument(interpreter));
 
 		Context context = this.getContext();
@@ -85,17 +131,43 @@ public class TenantCommands extends BaseCommands {
 		String tenantName = "Test";
 
 		TenantServices.createTenant(context, tenantId, tenantName, dbType, update);
-		SeedServices.loadSeeds(context, "seed", tenantId, update);
-		SeedServices.loadSeed(context, "mimo", tenantId, update);
-		SeedServices.loadSeed(context, "party", tenantId, update);
-		SeedServices.loadSeed(context, "abchip-tenantTest", tenantId, update);
-		SeedServices.loadSeed(context, "abchip-tenantTest-accounting", tenantId, update);
+		{
+			LoadSeeds loadSeeds = context.getServiceManager().prepare(context, LoadSeeds.class);
+			loadSeeds.setSeedPattern("seed");
+			loadSeeds.setUpdate(true);
+			context.getServiceManager().execute(loadSeeds);
+		}
+		{
+			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			loadSeed.setSeedId("mimo");
+			loadSeed.setUpdate(true);
+			context.getServiceManager().execute(loadSeed);
+		}
+		{
+			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			loadSeed.setSeedId("party");
+			loadSeed.setUpdate(true);
+			context.getServiceManager().execute(loadSeed);
+		}
+		{
+			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			loadSeed.setSeedId("abchip-tenantTest");
+			loadSeed.setUpdate(true);
+			context.getServiceManager().execute(loadSeed);
+		}
+		{
+			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			loadSeed.setSeedId("abchip-tenantTest-accounting");
+			loadSeed.setUpdate(true);
+			context.getServiceManager().execute(loadSeed);
+		}
+
 		TenantServices.createUserTenant(context, tenantId, update);
 	}
 
 	public void _createDemo(CommandInterpreter interpreter) throws Exception {
 
-		DBType dbType = DBType.valueOf(nextArgument(interpreter));
+		DatabaseType dbType = DatabaseType.valueOf(nextArgument(interpreter));
 		boolean update = Boolean.parseBoolean(nextArgument(interpreter));
 
 		Context context = this.getContext();
@@ -104,8 +176,19 @@ public class TenantCommands extends BaseCommands {
 		String tenantName = "Demo tenant";
 
 		TenantServices.createTenant(context, tenantId, tenantName, dbType, update);
-		SeedServices.loadSeeds(context, "seed", tenantId, update);
-		SeedServices.loadSeeds(context, "demo", tenantId, update);
+		{
+			LoadSeeds loadSeeds = context.getServiceManager().prepare(context, LoadSeeds.class);
+			loadSeeds.setSeedPattern("seed");
+			loadSeeds.setUpdate(true);
+			context.getServiceManager().execute(loadSeeds);
+		}
+		{
+			LoadSeeds loadSeeds = context.getServiceManager().prepare(context, LoadSeeds.class);
+			loadSeeds.setSeedPattern("demo");
+			loadSeeds.setUpdate(true);
+			context.getServiceManager().execute(loadSeeds);
+		}
+
 		TenantServices.createUserTenant(context, tenantId, update);
 	}
 

@@ -45,6 +45,33 @@ public interface EntityFactory extends EFactory {
 	ConvertSeeds createConvertSeeds();
 
 	/**
+	 * Returns a new object of class '<em>Create Tenant Master</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Create Tenant Master</em>'.
+	 * @generated
+	 */
+	CreateTenantMaster createCreateTenantMaster();
+
+	/**
+	 * Returns a new object of class '<em>Load Seed</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Load Seed</em>'.
+	 * @generated
+	 */
+	LoadSeed createLoadSeed();
+
+	/**
+	 * Returns a new object of class '<em>Load Seeds</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Load Seeds</em>'.
+	 * @generated
+	 */
+	LoadSeeds createLoadSeeds();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

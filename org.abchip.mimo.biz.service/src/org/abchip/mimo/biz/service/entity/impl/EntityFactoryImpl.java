@@ -10,6 +10,7 @@ package org.abchip.mimo.biz.service.entity.impl;
 import org.abchip.mimo.biz.service.entity.*;
 
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 
@@ -61,10 +62,43 @@ public class EntityFactoryImpl extends EFactoryImpl implements EntityFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case EntityPackage.EXPORT_ENTITIES: return (EObject)createExportEntities();
 			case EntityPackage.CONVERT_SEEDS: return (EObject)createConvertSeeds();
+			case EntityPackage.CREATE_TENANT_MASTER: return (EObject)createCreateTenantMaster();
+			case EntityPackage.EXPORT_ENTITIES: return (EObject)createExportEntities();
+			case EntityPackage.LOAD_SEED: return (EObject)createLoadSeed();
+			case EntityPackage.LOAD_SEEDS: return (EObject)createLoadSeeds();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Object createFromString(EDataType eDataType, String initialValue) {
+		switch (eDataType.getClassifierID()) {
+			case EntityPackage.DATABASE_TYPE:
+				return createDatabaseTypeFromString(eDataType, initialValue);
+			default:
+				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public String convertToString(EDataType eDataType, Object instanceValue) {
+		switch (eDataType.getClassifierID()) {
+			case EntityPackage.DATABASE_TYPE:
+				return convertDatabaseTypeToString(eDataType, instanceValue);
+			default:
+				throw new IllegalArgumentException("The datatype '" + eDataType.getName() + "' is not a valid classifier");
 		}
 	}
 
@@ -88,6 +122,59 @@ public class EntityFactoryImpl extends EFactoryImpl implements EntityFactory {
 	public ConvertSeeds createConvertSeeds() {
 		ConvertSeedsImpl convertSeeds = new ConvertSeedsImpl();
 		return convertSeeds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CreateTenantMaster createCreateTenantMaster() {
+		CreateTenantMasterImpl createTenantMaster = new CreateTenantMasterImpl();
+		return createTenantMaster;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public LoadSeed createLoadSeed() {
+		LoadSeedImpl loadSeed = new LoadSeedImpl();
+		return loadSeed;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public LoadSeeds createLoadSeeds() {
+		LoadSeedsImpl loadSeeds = new LoadSeedsImpl();
+		return loadSeeds;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public DatabaseType createDatabaseTypeFromString(EDataType eDataType, String initialValue) {
+		DatabaseType result = DatabaseType.get(initialValue);
+		if (result == null) throw new IllegalArgumentException("The value '" + initialValue + "' is not a valid enumerator of '" + eDataType.getName() + "'");
+		return result;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public String convertDatabaseTypeToString(EDataType eDataType, Object instanceValue) {
+		return instanceValue == null ? null : instanceValue.toString();
 	}
 
 	/**

@@ -129,18 +129,24 @@ import org.abchip.mimo.biz.service.BizServicePackage;
 
 import org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl;
 import org.abchip.mimo.biz.service.entity.ConvertSeeds;
+import org.abchip.mimo.biz.service.entity.CreateTenantMaster;
+import org.abchip.mimo.biz.service.entity.DatabaseType;
 import org.abchip.mimo.biz.service.entity.EntityFactory;
 import org.abchip.mimo.biz.service.entity.EntityPackage;
 import org.abchip.mimo.biz.service.entity.ExportEntities;
 
+import org.abchip.mimo.biz.service.entity.LoadSeed;
+import org.abchip.mimo.biz.service.entity.LoadSeeds;
 import org.abchip.mimo.biz.service.impl.BizServicePackageImpl;
 
 import org.abchip.mimo.biz.service.order.impl.OrderPackageImpl;
 import org.abchip.mimo.biz.service.product.impl.ProductPackageImpl;
 
+import org.abchip.mimo.java.JavaPackage;
 import org.abchip.mimo.service.ServicePackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 
@@ -166,6 +172,34 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 	 * @generated
 	 */
 	private EClass convertSeedsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass createTenantMasterEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass loadSeedEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass loadSeedsEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EEnum databaseTypeEEnum = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -355,6 +389,116 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getCreateTenantMaster() {
+		return createTenantMasterEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreateTenantMaster_Name() {
+		return (EAttribute)createTenantMasterEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreateTenantMaster_DbType() {
+		return (EAttribute)createTenantMasterEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreateTenantMaster_PartyId() {
+		return (EAttribute)createTenantMasterEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLoadSeed() {
+		return loadSeedEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLoadSeed_SeedId() {
+		return (EAttribute)loadSeedEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLoadSeed_Update() {
+		return (EAttribute)loadSeedEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getLoadSeeds() {
+		return loadSeedsEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLoadSeeds_SeedPattern() {
+		return (EAttribute)loadSeedsEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getLoadSeeds_Update() {
+		return (EAttribute)loadSeedsEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EEnum getDatabaseType() {
+		return databaseTypeEEnum;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EntityFactory getEntityFactory() {
 		return (EntityFactory)getEFactoryInstance();
 	}
@@ -378,11 +522,27 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		isCreated = true;
 
 		// Create classes and their features
+		convertSeedsEClass = createEClass(CONVERT_SEEDS);
+		createEAttribute(convertSeedsEClass, CONVERT_SEEDS__READERS);
+
+		createTenantMasterEClass = createEClass(CREATE_TENANT_MASTER);
+		createEAttribute(createTenantMasterEClass, CREATE_TENANT_MASTER__NAME);
+		createEAttribute(createTenantMasterEClass, CREATE_TENANT_MASTER__DB_TYPE);
+		createEAttribute(createTenantMasterEClass, CREATE_TENANT_MASTER__PARTY_ID);
+
 		exportEntitiesEClass = createEClass(EXPORT_ENTITIES);
 		createEAttribute(exportEntitiesEClass, EXPORT_ENTITIES__PATH_TO);
 
-		convertSeedsEClass = createEClass(CONVERT_SEEDS);
-		createEAttribute(convertSeedsEClass, CONVERT_SEEDS__READERS);
+		loadSeedEClass = createEClass(LOAD_SEED);
+		createEAttribute(loadSeedEClass, LOAD_SEED__SEED_ID);
+		createEAttribute(loadSeedEClass, LOAD_SEED__UPDATE);
+
+		loadSeedsEClass = createEClass(LOAD_SEEDS);
+		createEAttribute(loadSeedsEClass, LOAD_SEEDS__SEED_PATTERN);
+		createEAttribute(loadSeedsEClass, LOAD_SEEDS__UPDATE);
+
+		// Create enums
+		databaseTypeEEnum = createEEnum(DATABASE_TYPE);
 	}
 
 	/**
@@ -409,29 +569,72 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizServicePackage theBizServicePackage = (BizServicePackage)EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
 		ServicePackage theServicePackage = (ServicePackage)EPackage.Registry.INSTANCE.getEPackage(ServicePackage.eNS_URI);
+		JavaPackage theJavaPackage = (JavaPackage)EPackage.Registry.INSTANCE.getEPackage(JavaPackage.eNS_URI);
+		BizServicePackage theBizServicePackage = (BizServicePackage)EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
 
 		// Create type parameters
 
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
+		EGenericType g1 = createEGenericType(theServicePackage.getServiceRequest());
 		EGenericType g2 = createEGenericType(theServicePackage.getServiceResponse());
+		g1.getETypeArguments().add(g2);
+		convertSeedsEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theServicePackage.getServiceRequest());
+		g2 = createEGenericType(theServicePackage.getServiceResponse());
+		g1.getETypeArguments().add(g2);
+		createTenantMasterEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theJavaPackage.getJavaCallable());
+		g2 = createEGenericType(theServicePackage.getServiceResponse());
+		g1.getETypeArguments().add(g2);
+		createTenantMasterEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
+		g2 = createEGenericType(theServicePackage.getServiceResponse());
 		g1.getETypeArguments().add(g2);
 		exportEntitiesEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(theServicePackage.getServiceRequest());
 		g2 = createEGenericType(theServicePackage.getServiceResponse());
 		g1.getETypeArguments().add(g2);
-		convertSeedsEClass.getEGenericSuperTypes().add(g1);
+		loadSeedEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theJavaPackage.getJavaCallable());
+		g2 = createEGenericType(theServicePackage.getServiceResponse());
+		g1.getETypeArguments().add(g2);
+		loadSeedEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theServicePackage.getServiceRequest());
+		g2 = createEGenericType(theServicePackage.getServiceResponse());
+		g1.getETypeArguments().add(g2);
+		loadSeedsEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theJavaPackage.getJavaCallable());
+		g2 = createEGenericType(theServicePackage.getServiceResponse());
+		g1.getETypeArguments().add(g2);
+		loadSeedsEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters
+		initEClass(convertSeedsEClass, ConvertSeeds.class, "ConvertSeeds", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getConvertSeeds_Readers(), ecorePackage.getEString(), "readers", null, 1, 1, ConvertSeeds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(createTenantMasterEClass, CreateTenantMaster.class, "CreateTenantMaster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCreateTenantMaster_Name(), ecorePackage.getEString(), "name", null, 1, 1, CreateTenantMaster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreateTenantMaster_DbType(), this.getDatabaseType(), "dbType", null, 0, 1, CreateTenantMaster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreateTenantMaster_PartyId(), ecorePackage.getEString(), "partyId", null, 0, 1, CreateTenantMaster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		initEClass(exportEntitiesEClass, ExportEntities.class, "ExportEntities", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getExportEntities_PathTo(), ecorePackage.getEString(), "pathTo", null, 1, 1, ExportEntities.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(convertSeedsEClass, ConvertSeeds.class, "ConvertSeeds", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getConvertSeeds_Readers(), ecorePackage.getEString(), "readers", null, 1, 1, ConvertSeeds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(loadSeedEClass, LoadSeed.class, "LoadSeed", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getLoadSeed_SeedId(), ecorePackage.getEString(), "seedId", null, 1, 1, LoadSeed.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLoadSeed_Update(), ecorePackage.getEBoolean(), "update", null, 0, 1, LoadSeed.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(loadSeedsEClass, LoadSeeds.class, "LoadSeeds", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getLoadSeeds_SeedPattern(), ecorePackage.getEString(), "seedPattern", null, 1, 1, LoadSeeds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getLoadSeeds_Update(), ecorePackage.getEBoolean(), "update", null, 0, 1, LoadSeeds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		// Initialize enums and add enum literals
+		initEEnum(databaseTypeEEnum, DatabaseType.class, "DatabaseType");
+		addEEnumLiteral(databaseTypeEEnum, DatabaseType.DERBY);
+		addEEnumLiteral(databaseTypeEEnum, DatabaseType.POSTGRE_SQL);
 	}
 
 } //EntityPackageImpl

@@ -106,9 +106,9 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 
 	private <V extends ServiceResponse, R extends ServiceRequest<V>> V toResponse(R request, Map<String, Object> context) throws ServiceException {
 
+		V response = request.buildResponse();
+		
 		Frame<V> frame = resourceManager.getFrame(request.getContext(), request.getResponse());
-
-		V response = frame.createEntity();
 		for (Slot slot : frame.getSlots()) {
 			Object value = context.get(slot.getName());
 			if (value == null)

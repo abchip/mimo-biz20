@@ -54,11 +54,28 @@
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//content"/>
     <nestedGenPackages prefix="Entity" basePackage="org.abchip.mimo.biz.service" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz-service.ecore#//entity">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="biz-service.ecore#//entity/DatabaseType">
+        <genEnumLiterals ecoreEnumLiteral="biz-service.ecore#//entity/DatabaseType/Derby"/>
+        <genEnumLiterals ecoreEnumLiteral="biz-service.ecore#//entity/DatabaseType/PostgreSQL"/>
+      </genEnums>
+      <genClasses ecoreClass="biz-service.ecore#//entity/ConvertSeeds">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/ConvertSeeds/readers"/>
+      </genClasses>
+      <genClasses ecoreClass="biz-service.ecore#//entity/CreateTenantMaster">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/CreateTenantMaster/name"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/CreateTenantMaster/dbType"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/CreateTenantMaster/partyId"/>
+      </genClasses>
       <genClasses ecoreClass="biz-service.ecore#//entity/ExportEntities">
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/ExportEntities/pathTo"/>
       </genClasses>
-      <genClasses ecoreClass="biz-service.ecore#//entity/ConvertSeeds">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/ConvertSeeds/readers"/>
+      <genClasses ecoreClass="biz-service.ecore#//entity/LoadSeed">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/LoadSeed/seedId"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/LoadSeed/update"/>
+      </genClasses>
+      <genClasses ecoreClass="biz-service.ecore#//entity/LoadSeeds">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/LoadSeeds/seedPattern"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/LoadSeeds/update"/>
       </genClasses>
     </nestedGenPackages>
     <nestedGenPackages prefix="Humanres" basePackage="org.abchip.mimo.biz.service"

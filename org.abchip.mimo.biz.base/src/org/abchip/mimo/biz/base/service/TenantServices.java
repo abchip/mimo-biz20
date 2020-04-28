@@ -16,6 +16,7 @@ import org.abchip.mimo.biz.model.entity.tenant.TenantDomainName;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.security.securitygroup.SecurityGroup;
 import org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup;
+import org.abchip.mimo.biz.service.entity.DatabaseType;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
@@ -23,11 +24,7 @@ import org.abchip.mimo.resource.ResourceWriter;
 
 public class TenantServices {
 
-	public enum DBType {
-		D, P
-	}
-
-	public static void createTenant(Context context, String tenantId, String tenantName, DBType dbType, boolean update) throws ResourceException {
+	public static void createTenant(Context context, String tenantId, String tenantName, DatabaseType dbType, boolean update) throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		// Tenant
@@ -51,12 +48,12 @@ public class TenantServices {
 		tenantDataSource.setEntityGroupName("org.apache.ofbiz");
 
 		switch (dbType) {
-		case D:
+		case DERBY:
 			tenantDataSource.setJdbcUsername("ofbiz");
 			tenantDataSource.setJdbcPassword("ofbiz");
 			tenantDataSource.setJdbcUri("jdbc:derby:ofbiz_" + tenantId + ";create=true");
 			break;
-		case P:
+		case POSTGRE_SQL:
 			tenantDataSource.setJdbcUsername("ofbizuser_tenant");
 			tenantDataSource.setJdbcPassword("ofbiz@user");
 			tenantDataSource.setJdbcUri("jdbc:postgresql://127.0.0.1/ofbiz_" + tenantId);

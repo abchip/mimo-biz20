@@ -12,6 +12,7 @@ import org.abchip.mimo.biz.service.BizServicePackage;
 import org.abchip.mimo.service.ServicePackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EPackage;
 
 /**
@@ -70,7 +71,136 @@ public interface EntityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getExportEntities()
 	 * @generated
 	 */
-	int EXPORT_ENTITIES = 0;
+	int EXPORT_ENTITIES = 2;
+
+	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.entity.impl.ConvertSeedsImpl <em>Convert Seeds</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.entity.impl.ConvertSeedsImpl
+	 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getConvertSeeds()
+	 * @generated
+	 */
+	int CONVERT_SEEDS = 0;
+
+	/**
+	 * The feature id for the '<em><b>Locale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONVERT_SEEDS__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONVERT_SEEDS__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
+
+	/**
+	 * The feature id for the '<em><b>Context</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONVERT_SEEDS__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>Readers</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONVERT_SEEDS__READERS = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Convert Seeds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONVERT_SEEDS_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
+
+
+	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantMasterImpl <em>Create Tenant Master</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.entity.impl.CreateTenantMasterImpl
+	 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getCreateTenantMaster()
+	 * @generated
+	 */
+	int CREATE_TENANT_MASTER = 1;
+
+	/**
+	 * The feature id for the '<em><b>Locale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_MASTER__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_MASTER__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
+
+	/**
+	 * The feature id for the '<em><b>Context</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_MASTER__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_MASTER__NAME = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_MASTER__DB_TYPE = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_MASTER__PARTY_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Create Tenant Master</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_MASTER_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Locale</b></em>' attribute.
@@ -126,16 +256,15 @@ public interface EntityPackage extends EPackage {
 	 */
 	int EXPORT_ENTITIES_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 1;
 
-
 	/**
-	 * The meta object id for the '{@link org.abchip.mimo.biz.service.entity.impl.ConvertSeedsImpl <em>Convert Seeds</em>}' class.
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.entity.impl.LoadSeedImpl <em>Load Seed</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see org.abchip.mimo.biz.service.entity.impl.ConvertSeedsImpl
-	 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getConvertSeeds()
+	 * @see org.abchip.mimo.biz.service.entity.impl.LoadSeedImpl
+	 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getLoadSeed()
 	 * @generated
 	 */
-	int CONVERT_SEEDS = 1;
+	int LOAD_SEED = 3;
 
 	/**
 	 * The feature id for the '<em><b>Locale</b></em>' attribute.
@@ -144,7 +273,7 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONVERT_SEEDS__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
+	int LOAD_SEED__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
 
 	/**
 	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
@@ -153,7 +282,7 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONVERT_SEEDS__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
+	int LOAD_SEED__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
@@ -162,25 +291,109 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONVERT_SEEDS__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
+	int LOAD_SEED__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>Readers</b></em>' attribute.
+	 * The feature id for the '<em><b>Seed Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONVERT_SEEDS__READERS = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
+	int LOAD_SEED__SEED_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
 
 	/**
-	 * The number of structural features of the '<em>Convert Seeds</em>' class.
+	 * The feature id for the '<em><b>Update</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONVERT_SEEDS_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
+	int LOAD_SEED__UPDATE = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Load Seed</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOAD_SEED_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
+
+	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.entity.impl.LoadSeedsImpl <em>Load Seeds</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.entity.impl.LoadSeedsImpl
+	 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getLoadSeeds()
+	 * @generated
+	 */
+	int LOAD_SEEDS = 4;
+
+	/**
+	 * The feature id for the '<em><b>Locale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOAD_SEEDS__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOAD_SEEDS__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
+
+	/**
+	 * The feature id for the '<em><b>Context</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOAD_SEEDS__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>Seed Pattern</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOAD_SEEDS__SEED_PATTERN = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Update</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOAD_SEEDS__UPDATE = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Load Seeds</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LOAD_SEEDS_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
+
+
+	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.entity.DatabaseType <em>Database Type</em>}' enum.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.entity.DatabaseType
+	 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getDatabaseType()
+	 * @generated
+	 */
+	int DATABASE_TYPE = 5;
 
 
 	/**
@@ -224,6 +437,123 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getConvertSeeds_Readers();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.entity.CreateTenantMaster <em>Create Tenant Master</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Create Tenant Master</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.CreateTenantMaster
+	 * @generated
+	 */
+	EClass getCreateTenantMaster();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.CreateTenantMaster#getName <em>Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Name</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.CreateTenantMaster#getName()
+	 * @see #getCreateTenantMaster()
+	 * @generated
+	 */
+	EAttribute getCreateTenantMaster_Name();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.CreateTenantMaster#getDbType <em>Db Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Db Type</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.CreateTenantMaster#getDbType()
+	 * @see #getCreateTenantMaster()
+	 * @generated
+	 */
+	EAttribute getCreateTenantMaster_DbType();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.CreateTenantMaster#getPartyId <em>Party Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Party Id</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.CreateTenantMaster#getPartyId()
+	 * @see #getCreateTenantMaster()
+	 * @generated
+	 */
+	EAttribute getCreateTenantMaster_PartyId();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.entity.LoadSeed <em>Load Seed</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Load Seed</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.LoadSeed
+	 * @generated
+	 */
+	EClass getLoadSeed();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.LoadSeed#getSeedId <em>Seed Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Seed Id</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.LoadSeed#getSeedId()
+	 * @see #getLoadSeed()
+	 * @generated
+	 */
+	EAttribute getLoadSeed_SeedId();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.LoadSeed#isUpdate <em>Update</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Update</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.LoadSeed#isUpdate()
+	 * @see #getLoadSeed()
+	 * @generated
+	 */
+	EAttribute getLoadSeed_Update();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.entity.LoadSeeds <em>Load Seeds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Load Seeds</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.LoadSeeds
+	 * @generated
+	 */
+	EClass getLoadSeeds();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.LoadSeeds#getSeedPattern <em>Seed Pattern</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Seed Pattern</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.LoadSeeds#getSeedPattern()
+	 * @see #getLoadSeeds()
+	 * @generated
+	 */
+	EAttribute getLoadSeeds_SeedPattern();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.LoadSeeds#isUpdate <em>Update</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Update</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.LoadSeeds#isUpdate()
+	 * @see #getLoadSeeds()
+	 * @generated
+	 */
+	EAttribute getLoadSeeds_Update();
+
+	/**
+	 * Returns the meta object for enum '{@link org.abchip.mimo.biz.service.entity.DatabaseType <em>Database Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for enum '<em>Database Type</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.DatabaseType
+	 * @generated
+	 */
+	EEnum getDatabaseType();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -279,6 +609,91 @@ public interface EntityPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CONVERT_SEEDS__READERS = eINSTANCE.getConvertSeeds_Readers();
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantMasterImpl <em>Create Tenant Master</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.entity.impl.CreateTenantMasterImpl
+		 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getCreateTenantMaster()
+		 * @generated
+		 */
+		EClass CREATE_TENANT_MASTER = eINSTANCE.getCreateTenantMaster();
+		/**
+		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CREATE_TENANT_MASTER__NAME = eINSTANCE.getCreateTenantMaster_Name();
+		/**
+		 * The meta object literal for the '<em><b>Db Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CREATE_TENANT_MASTER__DB_TYPE = eINSTANCE.getCreateTenantMaster_DbType();
+		/**
+		 * The meta object literal for the '<em><b>Party Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CREATE_TENANT_MASTER__PARTY_ID = eINSTANCE.getCreateTenantMaster_PartyId();
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.entity.impl.LoadSeedImpl <em>Load Seed</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.entity.impl.LoadSeedImpl
+		 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getLoadSeed()
+		 * @generated
+		 */
+		EClass LOAD_SEED = eINSTANCE.getLoadSeed();
+		/**
+		 * The meta object literal for the '<em><b>Seed Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOAD_SEED__SEED_ID = eINSTANCE.getLoadSeed_SeedId();
+		/**
+		 * The meta object literal for the '<em><b>Update</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOAD_SEED__UPDATE = eINSTANCE.getLoadSeed_Update();
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.entity.impl.LoadSeedsImpl <em>Load Seeds</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.entity.impl.LoadSeedsImpl
+		 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getLoadSeeds()
+		 * @generated
+		 */
+		EClass LOAD_SEEDS = eINSTANCE.getLoadSeeds();
+		/**
+		 * The meta object literal for the '<em><b>Seed Pattern</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOAD_SEEDS__SEED_PATTERN = eINSTANCE.getLoadSeeds_SeedPattern();
+		/**
+		 * The meta object literal for the '<em><b>Update</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute LOAD_SEEDS__UPDATE = eINSTANCE.getLoadSeeds_Update();
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.entity.DatabaseType <em>Database Type</em>}' enum.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.entity.DatabaseType
+		 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getDatabaseType()
+		 * @generated
+		 */
+		EEnum DATABASE_TYPE = eINSTANCE.getDatabaseType();
 
 	}
 
