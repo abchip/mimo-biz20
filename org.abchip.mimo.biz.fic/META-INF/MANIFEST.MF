@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MIMO Biz Fic
+Bundle-SymbolicName: org.abchip.mimo.biz.fic
+Bundle-Version: 0.2.0.qualifier
+Bundle-Vendor: ABChip
+Automatic-Module-Name: org.abchip.mimo.biz.fic
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.abchip.mimo.core.base;bundle-version="0.2.0",
+ org.abchip.mimo.core.http;bundle-version="0.2.0",
+ org.abchip.mimo.biz.core;bundle-version="0.2.0",
+ org.abchip.mimo.biz.model;bundle-version="0.2.0",
+ org.abchip.mimo.biz.service;bundle-version="0.2.0",
+ org.abchip.mimo.biz.base;bundle-version="0.2.0",
+ com.fasterxml.jackson.core.jackson-core;bundle-version="2.9.9",
+ com.fasterxml.jackson.core.jackson-databind;bundle-version="2.9.93"
+Import-Package: javax.inject
+Export-Package: org.abchip.mimo.biz.fic

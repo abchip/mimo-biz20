@@ -77,32 +77,37 @@
         <eTypeArguments eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
       </eGenericSuperTypes>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="CreateTenant">
+    <eClassifiers xsi:type="ecore:EClass" name="CreateTenant" abstract="true">
+      <eOperations name="getTenantId" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eOperations name="getTenantName" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eOperations name="loadSeeds" eExceptions="ecore:EDataType ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceException"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="dbType" lowerBound="1"
+          eType="#//entity/DatabaseType"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="update" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
+        <eTypeArguments eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
+      </eGenericSuperTypes>
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//java/JavaCallable">
+        <eTypeArguments eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CreateTenantDemo" eSuperTypes="#//entity/CreateTenant"/>
+    <eClassifiers xsi:type="ecore:EClass" name="CreateTenantMaster">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
+        <eTypeArguments eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
+      </eGenericSuperTypes>
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//java/JavaCallable">
+        <eTypeArguments eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CreateTenantParty" eSuperTypes="#//entity/CreateTenant">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="tenantId" lowerBound="1"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="tenantName" lowerBound="1"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="dbType" eType="#//entity/DatabaseType"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="partyId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
-        <eTypeArguments eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
-      </eGenericSuperTypes>
-      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//java/JavaCallable">
-        <eTypeArguments eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
-      </eGenericSuperTypes>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="CreateTenantMaster">
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1"
-          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="dbType" eType="#//entity/DatabaseType"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="partyId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
-        <eTypeArguments eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
-      </eGenericSuperTypes>
-      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//java/JavaCallable">
-        <eTypeArguments eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
-      </eGenericSuperTypes>
-    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CreateTenantTest" eSuperTypes="#//entity/CreateTenant"/>
     <eClassifiers xsi:type="ecore:EEnum" name="DatabaseType">
       <eLiterals name="Derby" literal="D"/>
       <eLiterals name="PostgreSQL" literal="P"/>

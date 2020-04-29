@@ -12,14 +12,11 @@ Require-Bundle: org.abchip.mimo.core,
  org.abchip.mimo.biz.model,
  org.abchip.mimo.biz.service;bundle-version="0.2.0",
  org.abchip.mimo.core.base,
- org.eclipse.osgi,
- com.fasterxml.jackson.core.jackson-core,
- com.fasterxml.jackson.core.jackson-databind
+ org.eclipse.osgi
 Bundle-ClassPath: .,
  lib/poi-4.0.1.jar,
  lib/ez-vcard-0.9.10.jar
 Export-Package: org.abchip.mimo.biz.base,
- org.abchip.mimo.biz.base.command,
  org.abchip.mimo.biz.base.service,
  org.abchip.mimo.biz.base.servlet,
  org.apache.poi.hssf.usermodel,

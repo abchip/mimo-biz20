@@ -71,7 +71,7 @@ public interface EntityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getExportEntities()
 	 * @generated
 	 */
-	int EXPORT_ENTITIES = 2;
+	int EXPORT_ENTITIES = 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.service.entity.impl.ConvertSeedsImpl <em>Convert Seeds</em>}' class.
@@ -130,6 +130,134 @@ public interface EntityPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantImpl <em>Create Tenant</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.entity.impl.CreateTenantImpl
+	 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getCreateTenant()
+	 * @generated
+	 */
+	int CREATE_TENANT = 1;
+
+	/**
+	 * The feature id for the '<em><b>Locale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
+
+	/**
+	 * The feature id for the '<em><b>Context</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT__DB_TYPE = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Update</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT__UPDATE = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Create Tenant</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
+
+	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantDemoImpl <em>Create Tenant Demo</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.entity.impl.CreateTenantDemoImpl
+	 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getCreateTenantDemo()
+	 * @generated
+	 */
+	int CREATE_TENANT_DEMO = 2;
+
+	/**
+	 * The feature id for the '<em><b>Locale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_DEMO__LOCALE = CREATE_TENANT__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_DEMO__TENANT = CREATE_TENANT__TENANT;
+
+	/**
+	 * The feature id for the '<em><b>Context</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_DEMO__CONTEXT = CREATE_TENANT__CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_DEMO__DB_TYPE = CREATE_TENANT__DB_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Update</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_DEMO__UPDATE = CREATE_TENANT__UPDATE;
+
+	/**
+	 * The number of structural features of the '<em>Create Tenant Demo</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_DEMO_FEATURE_COUNT = CREATE_TENANT_FEATURE_COUNT + 0;
+
+	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantMasterImpl <em>Create Tenant Master</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -137,7 +265,7 @@ public interface EntityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getCreateTenantMaster()
 	 * @generated
 	 */
-	int CREATE_TENANT_MASTER = 1;
+	int CREATE_TENANT_MASTER = 3;
 
 	/**
 	 * The feature id for the '<em><b>Locale</b></em>' attribute.
@@ -167,13 +295,50 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT_MASTER__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>Name</b></em>' attribute.
+	 * The number of structural features of the '<em>Create Tenant Master</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CREATE_TENANT_MASTER__NAME = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
+	int CREATE_TENANT_MASTER_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantPartyImpl <em>Create Tenant Party</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.entity.impl.CreateTenantPartyImpl
+	 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getCreateTenantParty()
+	 * @generated
+	 */
+	int CREATE_TENANT_PARTY = 4;
+
+	/**
+	 * The feature id for the '<em><b>Locale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_PARTY__LOCALE = CREATE_TENANT__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_PARTY__TENANT = CREATE_TENANT__TENANT;
+
+	/**
+	 * The feature id for the '<em><b>Context</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_PARTY__CONTEXT = CREATE_TENANT__CONTEXT;
 
 	/**
 	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
@@ -182,7 +347,34 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CREATE_TENANT_MASTER__DB_TYPE = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
+	int CREATE_TENANT_PARTY__DB_TYPE = CREATE_TENANT__DB_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Update</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_PARTY__UPDATE = CREATE_TENANT__UPDATE;
+
+	/**
+	 * The feature id for the '<em><b>Tenant Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_PARTY__TENANT_ID = CREATE_TENANT_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Tenant Name</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_PARTY__TENANT_NAME = CREATE_TENANT_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
@@ -191,16 +383,80 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CREATE_TENANT_MASTER__PARTY_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
+	int CREATE_TENANT_PARTY__PARTY_ID = CREATE_TENANT_FEATURE_COUNT + 2;
 
 	/**
-	 * The number of structural features of the '<em>Create Tenant Master</em>' class.
+	 * The number of structural features of the '<em>Create Tenant Party</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CREATE_TENANT_MASTER_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 3;
+	int CREATE_TENANT_PARTY_FEATURE_COUNT = CREATE_TENANT_FEATURE_COUNT + 3;
+
+	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantTestImpl <em>Create Tenant Test</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.entity.impl.CreateTenantTestImpl
+	 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getCreateTenantTest()
+	 * @generated
+	 */
+	int CREATE_TENANT_TEST = 5;
+
+	/**
+	 * The feature id for the '<em><b>Locale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_TEST__LOCALE = CREATE_TENANT__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_TEST__TENANT = CREATE_TENANT__TENANT;
+
+	/**
+	 * The feature id for the '<em><b>Context</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_TEST__CONTEXT = CREATE_TENANT__CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_TEST__DB_TYPE = CREATE_TENANT__DB_TYPE;
+
+	/**
+	 * The feature id for the '<em><b>Update</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_TEST__UPDATE = CREATE_TENANT__UPDATE;
+
+	/**
+	 * The number of structural features of the '<em>Create Tenant Test</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_TEST_FEATURE_COUNT = CREATE_TENANT_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Locale</b></em>' attribute.
@@ -264,7 +520,7 @@ public interface EntityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getLoadSeed()
 	 * @generated
 	 */
-	int LOAD_SEED = 3;
+	int LOAD_SEED = 7;
 
 	/**
 	 * The feature id for the '<em><b>Locale</b></em>' attribute.
@@ -328,7 +584,7 @@ public interface EntityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getLoadSeeds()
 	 * @generated
 	 */
-	int LOAD_SEEDS = 4;
+	int LOAD_SEEDS = 8;
 
 	/**
 	 * The feature id for the '<em><b>Locale</b></em>' attribute.
@@ -393,7 +649,7 @@ public interface EntityPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getDatabaseType()
 	 * @generated
 	 */
-	int DATABASE_TYPE = 5;
+	int DATABASE_TYPE = 9;
 
 
 	/**
@@ -439,6 +695,48 @@ public interface EntityPackage extends EPackage {
 	EAttribute getConvertSeeds_Readers();
 
 	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.entity.CreateTenant <em>Create Tenant</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Create Tenant</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.CreateTenant
+	 * @generated
+	 */
+	EClass getCreateTenant();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.CreateTenant#getDbType <em>Db Type</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Db Type</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.CreateTenant#getDbType()
+	 * @see #getCreateTenant()
+	 * @generated
+	 */
+	EAttribute getCreateTenant_DbType();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.CreateTenant#isUpdate <em>Update</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Update</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.CreateTenant#isUpdate()
+	 * @see #getCreateTenant()
+	 * @generated
+	 */
+	EAttribute getCreateTenant_Update();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.entity.CreateTenantDemo <em>Create Tenant Demo</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Create Tenant Demo</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.CreateTenantDemo
+	 * @generated
+	 */
+	EClass getCreateTenantDemo();
+
+	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.entity.CreateTenantMaster <em>Create Tenant Master</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -449,37 +747,57 @@ public interface EntityPackage extends EPackage {
 	EClass getCreateTenantMaster();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.CreateTenantMaster#getName <em>Name</em>}'.
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.entity.CreateTenantParty <em>Create Tenant Party</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see org.abchip.mimo.biz.service.entity.CreateTenantMaster#getName()
-	 * @see #getCreateTenantMaster()
+	 * @return the meta object for class '<em>Create Tenant Party</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.CreateTenantParty
 	 * @generated
 	 */
-	EAttribute getCreateTenantMaster_Name();
+	EClass getCreateTenantParty();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.CreateTenantMaster#getDbType <em>Db Type</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.CreateTenantParty#getTenantId <em>Tenant Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Db Type</em>'.
-	 * @see org.abchip.mimo.biz.service.entity.CreateTenantMaster#getDbType()
-	 * @see #getCreateTenantMaster()
+	 * @return the meta object for the attribute '<em>Tenant Id</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.CreateTenantParty#getTenantId()
+	 * @see #getCreateTenantParty()
 	 * @generated
 	 */
-	EAttribute getCreateTenantMaster_DbType();
+	EAttribute getCreateTenantParty_TenantId();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.CreateTenantMaster#getPartyId <em>Party Id</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.CreateTenantParty#getTenantName <em>Tenant Name</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Tenant Name</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.CreateTenantParty#getTenantName()
+	 * @see #getCreateTenantParty()
+	 * @generated
+	 */
+	EAttribute getCreateTenantParty_TenantName();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.entity.CreateTenantParty#getPartyId <em>Party Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Party Id</em>'.
-	 * @see org.abchip.mimo.biz.service.entity.CreateTenantMaster#getPartyId()
-	 * @see #getCreateTenantMaster()
+	 * @see org.abchip.mimo.biz.service.entity.CreateTenantParty#getPartyId()
+	 * @see #getCreateTenantParty()
 	 * @generated
 	 */
-	EAttribute getCreateTenantMaster_PartyId();
+	EAttribute getCreateTenantParty_PartyId();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.entity.CreateTenantTest <em>Create Tenant Test</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Create Tenant Test</em>'.
+	 * @see org.abchip.mimo.biz.service.entity.CreateTenantTest
+	 * @generated
+	 */
+	EClass getCreateTenantTest();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.entity.LoadSeed <em>Load Seed</em>}'.
@@ -610,6 +928,38 @@ public interface EntityPackage extends EPackage {
 		 */
 		EAttribute CONVERT_SEEDS__READERS = eINSTANCE.getConvertSeeds_Readers();
 		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantImpl <em>Create Tenant</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.entity.impl.CreateTenantImpl
+		 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getCreateTenant()
+		 * @generated
+		 */
+		EClass CREATE_TENANT = eINSTANCE.getCreateTenant();
+		/**
+		 * The meta object literal for the '<em><b>Db Type</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CREATE_TENANT__DB_TYPE = eINSTANCE.getCreateTenant_DbType();
+		/**
+		 * The meta object literal for the '<em><b>Update</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CREATE_TENANT__UPDATE = eINSTANCE.getCreateTenant_Update();
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantDemoImpl <em>Create Tenant Demo</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.entity.impl.CreateTenantDemoImpl
+		 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getCreateTenantDemo()
+		 * @generated
+		 */
+		EClass CREATE_TENANT_DEMO = eINSTANCE.getCreateTenantDemo();
+		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantMasterImpl <em>Create Tenant Master</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -619,26 +969,44 @@ public interface EntityPackage extends EPackage {
 		 */
 		EClass CREATE_TENANT_MASTER = eINSTANCE.getCreateTenantMaster();
 		/**
-		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantPartyImpl <em>Create Tenant Party</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.entity.impl.CreateTenantPartyImpl
+		 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getCreateTenantParty()
 		 * @generated
 		 */
-		EAttribute CREATE_TENANT_MASTER__NAME = eINSTANCE.getCreateTenantMaster_Name();
+		EClass CREATE_TENANT_PARTY = eINSTANCE.getCreateTenantParty();
 		/**
-		 * The meta object literal for the '<em><b>Db Type</b></em>' attribute feature.
+		 * The meta object literal for the '<em><b>Tenant Id</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute CREATE_TENANT_MASTER__DB_TYPE = eINSTANCE.getCreateTenantMaster_DbType();
+		EAttribute CREATE_TENANT_PARTY__TENANT_ID = eINSTANCE.getCreateTenantParty_TenantId();
+		/**
+		 * The meta object literal for the '<em><b>Tenant Name</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CREATE_TENANT_PARTY__TENANT_NAME = eINSTANCE.getCreateTenantParty_TenantName();
 		/**
 		 * The meta object literal for the '<em><b>Party Id</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute CREATE_TENANT_MASTER__PARTY_ID = eINSTANCE.getCreateTenantMaster_PartyId();
+		EAttribute CREATE_TENANT_PARTY__PARTY_ID = eINSTANCE.getCreateTenantParty_PartyId();
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantTestImpl <em>Create Tenant Test</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.entity.impl.CreateTenantTestImpl
+		 * @see org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl#getCreateTenantTest()
+		 * @generated
+		 */
+		EClass CREATE_TENANT_TEST = eINSTANCE.getCreateTenantTest();
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.entity.impl.LoadSeedImpl <em>Load Seed</em>}' class.
 		 * <!-- begin-user-doc -->

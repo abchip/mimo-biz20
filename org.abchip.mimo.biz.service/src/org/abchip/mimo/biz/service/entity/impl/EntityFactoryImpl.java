@@ -63,7 +63,10 @@ public class EntityFactoryImpl extends EFactoryImpl implements EntityFactory {
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
 			case EntityPackage.CONVERT_SEEDS: return (EObject)createConvertSeeds();
+			case EntityPackage.CREATE_TENANT_DEMO: return (EObject)createCreateTenantDemo();
 			case EntityPackage.CREATE_TENANT_MASTER: return (EObject)createCreateTenantMaster();
+			case EntityPackage.CREATE_TENANT_PARTY: return (EObject)createCreateTenantParty();
+			case EntityPackage.CREATE_TENANT_TEST: return (EObject)createCreateTenantTest();
 			case EntityPackage.EXPORT_ENTITIES: return (EObject)createExportEntities();
 			case EntityPackage.LOAD_SEED: return (EObject)createLoadSeed();
 			case EntityPackage.LOAD_SEEDS: return (EObject)createLoadSeeds();
@@ -130,9 +133,42 @@ public class EntityFactoryImpl extends EFactoryImpl implements EntityFactory {
 	 * @generated
 	 */
 	@Override
+	public CreateTenantDemo createCreateTenantDemo() {
+		CreateTenantDemoImpl createTenantDemo = new CreateTenantDemoImpl();
+		return createTenantDemo;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public CreateTenantMaster createCreateTenantMaster() {
 		CreateTenantMasterImpl createTenantMaster = new CreateTenantMasterImpl();
 		return createTenantMaster;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CreateTenantParty createCreateTenantParty() {
+		CreateTenantPartyImpl createTenantParty = new CreateTenantPartyImpl();
+		return createTenantParty;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CreateTenantTest createCreateTenantTest() {
+		CreateTenantTestImpl createTenantTest = new CreateTenantTestImpl();
+		return createTenantTest;
 	}
 
 	/**

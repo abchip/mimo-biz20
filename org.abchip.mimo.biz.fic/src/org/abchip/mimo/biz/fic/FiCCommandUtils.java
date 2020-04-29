@@ -6,7 +6,7 @@
  *  http://www.eclipse.org/legal/epl-v10.html
  *
  */
-package org.abchip.mimo.biz.base.command;
+package org.abchip.mimo.biz.fic;
 
 import java.math.BigDecimal;
 import java.util.Date;

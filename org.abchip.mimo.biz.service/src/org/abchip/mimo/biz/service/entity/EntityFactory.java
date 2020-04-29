@@ -45,6 +45,15 @@ public interface EntityFactory extends EFactory {
 	ConvertSeeds createConvertSeeds();
 
 	/**
+	 * Returns a new object of class '<em>Create Tenant Demo</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Create Tenant Demo</em>'.
+	 * @generated
+	 */
+	CreateTenantDemo createCreateTenantDemo();
+
+	/**
 	 * Returns a new object of class '<em>Create Tenant Master</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -52,6 +61,24 @@ public interface EntityFactory extends EFactory {
 	 * @generated
 	 */
 	CreateTenantMaster createCreateTenantMaster();
+
+	/**
+	 * Returns a new object of class '<em>Create Tenant Party</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Create Tenant Party</em>'.
+	 * @generated
+	 */
+	CreateTenantParty createCreateTenantParty();
+
+	/**
+	 * Returns a new object of class '<em>Create Tenant Test</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Create Tenant Test</em>'.
+	 * @generated
+	 */
+	CreateTenantTest createCreateTenantTest();
 
 	/**
 	 * Returns a new object of class '<em>Load Seed</em>'.

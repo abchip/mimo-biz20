@@ -18,6 +18,7 @@ import org.abchip.mimo.MimoConstants;
 import org.abchip.mimo.application.Application;
 import org.abchip.mimo.biz.service.entity.EntityPackage;
 import org.abchip.mimo.biz.service.entity.LoadSeeds;
+import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityContainer;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.resource.ResourceManager;
@@ -125,7 +126,8 @@ public class LoadSeedsImpl extends ServiceRequestImpl<ServiceResponse> implement
 	public ServiceResponse call() throws Exception {
 
 		ServiceResponse response = this.buildResponse();
-
+		Context context = this.getContext();
+		
 		Bundle bundle = context.get(Application.class).getBundle();
 		Enumeration<URL> entries = bundle.findEntries(MimoConstants.SEEDS_PATH + "/" + this.getSeedPattern(), null, false);
 		List<URL> elements = Enumerations.sort(entries, new Comparator<URL>() {

@@ -129,7 +129,11 @@ import org.abchip.mimo.biz.service.BizServicePackage;
 
 import org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl;
 import org.abchip.mimo.biz.service.entity.ConvertSeeds;
+import org.abchip.mimo.biz.service.entity.CreateTenant;
+import org.abchip.mimo.biz.service.entity.CreateTenantDemo;
 import org.abchip.mimo.biz.service.entity.CreateTenantMaster;
+import org.abchip.mimo.biz.service.entity.CreateTenantParty;
+import org.abchip.mimo.biz.service.entity.CreateTenantTest;
 import org.abchip.mimo.biz.service.entity.DatabaseType;
 import org.abchip.mimo.biz.service.entity.EntityFactory;
 import org.abchip.mimo.biz.service.entity.EntityPackage;
@@ -148,6 +152,7 @@ import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EGenericType;
+import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
@@ -178,7 +183,35 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	private EClass createTenantEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass createTenantDemoEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	private EClass createTenantMasterEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass createTenantPartyEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass createTenantTestEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -389,6 +422,46 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getCreateTenant() {
+		return createTenantEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreateTenant_DbType() {
+		return (EAttribute)createTenantEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreateTenant_Update() {
+		return (EAttribute)createTenantEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCreateTenantDemo() {
+		return createTenantDemoEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getCreateTenantMaster() {
 		return createTenantMasterEClass;
 	}
@@ -399,8 +472,8 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getCreateTenantMaster_Name() {
-		return (EAttribute)createTenantMasterEClass.getEStructuralFeatures().get(0);
+	public EClass getCreateTenantParty() {
+		return createTenantPartyEClass;
 	}
 
 	/**
@@ -409,8 +482,8 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getCreateTenantMaster_DbType() {
-		return (EAttribute)createTenantMasterEClass.getEStructuralFeatures().get(1);
+	public EAttribute getCreateTenantParty_TenantId() {
+		return (EAttribute)createTenantPartyEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -419,8 +492,28 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getCreateTenantMaster_PartyId() {
-		return (EAttribute)createTenantMasterEClass.getEStructuralFeatures().get(2);
+	public EAttribute getCreateTenantParty_TenantName() {
+		return (EAttribute)createTenantPartyEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreateTenantParty_PartyId() {
+		return (EAttribute)createTenantPartyEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCreateTenantTest() {
+		return createTenantTestEClass;
 	}
 
 	/**
@@ -525,10 +618,20 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		convertSeedsEClass = createEClass(CONVERT_SEEDS);
 		createEAttribute(convertSeedsEClass, CONVERT_SEEDS__READERS);
 
+		createTenantEClass = createEClass(CREATE_TENANT);
+		createEAttribute(createTenantEClass, CREATE_TENANT__DB_TYPE);
+		createEAttribute(createTenantEClass, CREATE_TENANT__UPDATE);
+
+		createTenantDemoEClass = createEClass(CREATE_TENANT_DEMO);
+
 		createTenantMasterEClass = createEClass(CREATE_TENANT_MASTER);
-		createEAttribute(createTenantMasterEClass, CREATE_TENANT_MASTER__NAME);
-		createEAttribute(createTenantMasterEClass, CREATE_TENANT_MASTER__DB_TYPE);
-		createEAttribute(createTenantMasterEClass, CREATE_TENANT_MASTER__PARTY_ID);
+
+		createTenantPartyEClass = createEClass(CREATE_TENANT_PARTY);
+		createEAttribute(createTenantPartyEClass, CREATE_TENANT_PARTY__TENANT_ID);
+		createEAttribute(createTenantPartyEClass, CREATE_TENANT_PARTY__TENANT_NAME);
+		createEAttribute(createTenantPartyEClass, CREATE_TENANT_PARTY__PARTY_ID);
+
+		createTenantTestEClass = createEClass(CREATE_TENANT_TEST);
 
 		exportEntitiesEClass = createEClass(EXPORT_ENTITIES);
 		createEAttribute(exportEntitiesEClass, EXPORT_ENTITIES__PATH_TO);
@@ -585,11 +688,22 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		g1 = createEGenericType(theServicePackage.getServiceRequest());
 		g2 = createEGenericType(theServicePackage.getServiceResponse());
 		g1.getETypeArguments().add(g2);
+		createTenantEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theJavaPackage.getJavaCallable());
+		g2 = createEGenericType(theServicePackage.getServiceResponse());
+		g1.getETypeArguments().add(g2);
+		createTenantEClass.getEGenericSuperTypes().add(g1);
+		createTenantDemoEClass.getESuperTypes().add(this.getCreateTenant());
+		g1 = createEGenericType(theServicePackage.getServiceRequest());
+		g2 = createEGenericType(theServicePackage.getServiceResponse());
+		g1.getETypeArguments().add(g2);
 		createTenantMasterEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(theJavaPackage.getJavaCallable());
 		g2 = createEGenericType(theServicePackage.getServiceResponse());
 		g1.getETypeArguments().add(g2);
 		createTenantMasterEClass.getEGenericSuperTypes().add(g1);
+		createTenantPartyEClass.getESuperTypes().add(this.getCreateTenant());
+		createTenantTestEClass.getESuperTypes().add(this.getCreateTenant());
 		g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
 		g2 = createEGenericType(theServicePackage.getServiceResponse());
 		g1.getETypeArguments().add(g2);
@@ -615,10 +729,27 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		initEClass(convertSeedsEClass, ConvertSeeds.class, "ConvertSeeds", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getConvertSeeds_Readers(), ecorePackage.getEString(), "readers", null, 1, 1, ConvertSeeds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
+		initEClass(createTenantEClass, CreateTenant.class, "CreateTenant", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCreateTenant_DbType(), this.getDatabaseType(), "dbType", null, 1, 1, CreateTenant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreateTenant_Update(), ecorePackage.getEBoolean(), "update", null, 0, 1, CreateTenant.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		addEOperation(createTenantEClass, ecorePackage.getEString(), "getTenantId", 1, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(createTenantEClass, ecorePackage.getEString(), "getTenantName", 1, 1, IS_UNIQUE, IS_ORDERED);
+
+		EOperation op = addEOperation(createTenantEClass, null, "loadSeeds", 0, 1, IS_UNIQUE, IS_ORDERED);
+		addEException(op, theServicePackage.getServiceException());
+
+		initEClass(createTenantDemoEClass, CreateTenantDemo.class, "CreateTenantDemo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
 		initEClass(createTenantMasterEClass, CreateTenantMaster.class, "CreateTenantMaster", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getCreateTenantMaster_Name(), ecorePackage.getEString(), "name", null, 1, 1, CreateTenantMaster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCreateTenantMaster_DbType(), this.getDatabaseType(), "dbType", null, 0, 1, CreateTenantMaster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCreateTenantMaster_PartyId(), ecorePackage.getEString(), "partyId", null, 0, 1, CreateTenantMaster.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(createTenantPartyEClass, CreateTenantParty.class, "CreateTenantParty", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCreateTenantParty_TenantId(), ecorePackage.getEString(), "tenantId", null, 1, 1, CreateTenantParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreateTenantParty_TenantName(), ecorePackage.getEString(), "tenantName", null, 1, 1, CreateTenantParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreateTenantParty_PartyId(), ecorePackage.getEString(), "partyId", null, 0, 1, CreateTenantParty.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(createTenantTestEClass, CreateTenantTest.class, "CreateTenantTest", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(exportEntitiesEClass, ExportEntities.class, "ExportEntities", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getExportEntities_PathTo(), ecorePackage.getEString(), "pathTo", null, 1, 1, ExportEntities.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

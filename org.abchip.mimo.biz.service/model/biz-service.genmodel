@@ -61,11 +61,21 @@
       <genClasses ecoreClass="biz-service.ecore#//entity/ConvertSeeds">
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/ConvertSeeds/readers"/>
       </genClasses>
-      <genClasses ecoreClass="biz-service.ecore#//entity/CreateTenantMaster">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/CreateTenantMaster/name"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/CreateTenantMaster/dbType"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/CreateTenantMaster/partyId"/>
+      <genClasses ecoreClass="biz-service.ecore#//entity/CreateTenant">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/CreateTenant/dbType"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/CreateTenant/update"/>
+        <genOperations ecoreOperation="biz-service.ecore#//entity/CreateTenant/getTenantId"/>
+        <genOperations ecoreOperation="biz-service.ecore#//entity/CreateTenant/getTenantName"/>
+        <genOperations ecoreOperation="biz-service.ecore#//entity/CreateTenant/loadSeeds"/>
       </genClasses>
+      <genClasses ecoreClass="biz-service.ecore#//entity/CreateTenantDemo"/>
+      <genClasses ecoreClass="biz-service.ecore#//entity/CreateTenantMaster"/>
+      <genClasses ecoreClass="biz-service.ecore#//entity/CreateTenantParty">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/CreateTenantParty/tenantId"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/CreateTenantParty/tenantName"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/CreateTenantParty/partyId"/>
+      </genClasses>
+      <genClasses ecoreClass="biz-service.ecore#//entity/CreateTenantTest"/>
       <genClasses ecoreClass="biz-service.ecore#//entity/ExportEntities">
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/ExportEntities/pathTo"/>
       </genClasses>

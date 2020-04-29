@@ -8,9 +8,11 @@
 package org.abchip.mimo.biz.service.entity.impl;
 
 import org.abchip.mimo.biz.service.entity.CreateTenantMaster;
-import org.abchip.mimo.biz.service.entity.DatabaseType;
 import org.abchip.mimo.biz.service.entity.EntityPackage;
-
+import org.abchip.mimo.biz.service.entity.LoadSeed;
+import org.abchip.mimo.biz.service.entity.LoadSeeds;
+import org.abchip.mimo.context.Context;
+import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceResponse;
 
 import org.abchip.mimo.service.impl.ServiceRequestImpl;
@@ -21,14 +23,6 @@ import org.eclipse.emf.ecore.EClass;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Create Tenant Master</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * The following features are implemented:
- * </p>
- * <ul>
- *   <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantMasterImpl#getName <em>Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantMasterImpl#getDbType <em>Db Type</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantMasterImpl#getPartyId <em>Party Id</em>}</li>
- * </ul>
  *
  * @generated
  */
@@ -74,70 +68,56 @@ public class CreateTenantMasterImpl extends ServiceRequestImpl<ServiceResponse> 
 		return ESTATIC_FEATURE_COUNT;
 	}
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
-	public String getName() {
-		return (String)eGet(EntityPackage.Literals.CREATE_TENANT_MASTER__NAME, true);
-	}
+	public ServiceResponse call() throws ServiceException  {
 
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setName(String newName) {
-		eSet(EntityPackage.Literals.CREATE_TENANT_MASTER__NAME, newName);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public DatabaseType getDbType() {
-		return (DatabaseType)eGet(EntityPackage.Literals.CREATE_TENANT_MASTER__DB_TYPE, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setDbType(DatabaseType newDbType) {
-		eSet(EntityPackage.Literals.CREATE_TENANT_MASTER__DB_TYPE, newDbType);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public String getPartyId() {
-		return (String)eGet(EntityPackage.Literals.CREATE_TENANT_MASTER__PARTY_ID, true);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public void setPartyId(String newPartyId) {
-		eSet(EntityPackage.Literals.CREATE_TENANT_MASTER__PARTY_ID, newPartyId);
-	}
-
-	@Override
-	public ServiceResponse call() throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+		Context context = this.getContext();
+		ServiceResponse response = this.buildResponse();
+		
+		{
+			LoadSeeds loadSeeds = context.getServiceManager().prepare(context, LoadSeeds.class);
+			loadSeeds.setSeedPattern("seed");
+			loadSeeds.setUpdate(true);
+			context.getServiceManager().execute(loadSeeds);
+		}
+		{
+			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			loadSeed.setSeedId("mimo");
+			loadSeed.setUpdate(true);
+			context.getServiceManager().execute(loadSeed);
+		}
+		{
+			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			loadSeed.setSeedId("party");
+			loadSeed.setUpdate(true);
+			context.getServiceManager().execute(loadSeed);
+		}
+		{
+			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			loadSeed.setSeedId("abchip-net");
+			loadSeed.setUpdate(true);
+			context.getServiceManager().execute(loadSeed);
+		}
+		{
+			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			loadSeed.setSeedId("abchip-net-accounting");
+			loadSeed.setUpdate(true);
+			context.getServiceManager().execute(loadSeed);
+		}
+		{
+			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			loadSeed.setSeedId("passport");
+			loadSeed.setUpdate(true);
+			context.getServiceManager().execute(loadSeed);
+		}
+		{
+			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			loadSeed.setSeedId("edi");
+			loadSeed.setUpdate(true);
+			context.getServiceManager().execute(loadSeed);
+		}
+			
+		return response;
 	}
 
 } //CreateTenantMasterImpl

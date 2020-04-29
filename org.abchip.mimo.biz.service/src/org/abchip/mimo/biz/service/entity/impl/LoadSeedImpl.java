@@ -14,6 +14,7 @@ import org.abchip.mimo.MimoConstants;
 import org.abchip.mimo.application.Application;
 import org.abchip.mimo.biz.service.entity.EntityPackage;
 import org.abchip.mimo.biz.service.entity.LoadSeed;
+import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityContainer;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.resource.ResourceManager;
@@ -122,7 +123,8 @@ public class LoadSeedImpl extends ServiceRequestImpl<ServiceResponse> implements
 	public ServiceResponse call() throws Exception {
 
 		ServiceResponse response = this.buildResponse();
-
+		Context context = this.getContext();
+		
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 		Bundle bundle = context.get(Application.class).getBundle();
 
