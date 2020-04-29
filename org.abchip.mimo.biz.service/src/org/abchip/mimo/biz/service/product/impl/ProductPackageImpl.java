@@ -69,15 +69,20 @@ import org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.service.BizServicePackage;
 import org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl;
+import org.abchip.mimo.biz.service.common.impl.CommonPackageImpl;
 import org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl;
 import org.abchip.mimo.biz.service.impl.BizServicePackageImpl;
 import org.abchip.mimo.biz.service.order.impl.OrderPackageImpl;
+import org.abchip.mimo.biz.service.party.impl.PartyPackageImpl;
 import org.abchip.mimo.biz.service.product.CalcTaxForDisplay;
 import org.abchip.mimo.biz.service.product.CalcTaxForDisplayResponse;
 import org.abchip.mimo.biz.service.product.CalculateProductPrice;
 import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
+import org.abchip.mimo.biz.service.product.GetProductDefault;
+import org.abchip.mimo.biz.service.product.GetProductDefaultResponse;
 import org.abchip.mimo.biz.service.product.ProductFactory;
 import org.abchip.mimo.biz.service.product.ProductPackage;
+import org.abchip.mimo.java.JavaPackage;
 import org.abchip.mimo.service.ServicePackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -107,6 +112,20 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	 * @generated
 	 */
 	private EClass calculateProductPriceResponseEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass getProductDefaultEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass getProductDefaultResponseEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -237,24 +256,32 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		BizServicePackageImpl theBizServicePackage = (BizServicePackageImpl)(registeredPackage instanceof BizServicePackageImpl ? registeredPackage : BizServicePackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.accounting.AccountingPackage.eNS_URI);
 		AccountingPackageImpl theAccountingPackage_1 = (AccountingPackageImpl)(registeredPackage instanceof AccountingPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.accounting.AccountingPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.common.CommonPackage.eNS_URI);
+		CommonPackageImpl theCommonPackage_1 = (CommonPackageImpl)(registeredPackage instanceof CommonPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.common.CommonPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.entity.EntityPackage.eNS_URI);
 		EntityPackageImpl theEntityPackage_1 = (EntityPackageImpl)(registeredPackage instanceof EntityPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.entity.EntityPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.order.OrderPackage.eNS_URI);
 		OrderPackageImpl theOrderPackage_1 = (OrderPackageImpl)(registeredPackage instanceof OrderPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.order.OrderPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.party.PartyPackage.eNS_URI);
+		PartyPackageImpl thePartyPackage_1 = (PartyPackageImpl)(registeredPackage instanceof PartyPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.party.PartyPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theProductPackage.createPackageContents();
 		theBizServicePackage.createPackageContents();
 		theAccountingPackage_1.createPackageContents();
+		theCommonPackage_1.createPackageContents();
 		theEntityPackage_1.createPackageContents();
 		theOrderPackage_1.createPackageContents();
+		thePartyPackage_1.createPackageContents();
 
 		// Initialize created meta-data
 		theProductPackage.initializePackageContents();
 		theBizServicePackage.initializePackageContents();
 		theAccountingPackage_1.initializePackageContents();
+		theCommonPackage_1.initializePackageContents();
 		theEntityPackage_1.initializePackageContents();
 		theOrderPackage_1.initializePackageContents();
+		thePartyPackage_1.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theProductPackage.freeze();
@@ -342,6 +369,36 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	@Override
 	public EReference getCalculateProductPriceResponse_OrderItemPriceInfos() {
 		return (EReference)calculateProductPriceResponseEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getGetProductDefault() {
+		return getProductDefaultEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getGetProductDefaultResponse() {
+		return getProductDefaultResponseEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getGetProductDefaultResponse_FacilityPostalAddress() {
+		return (EReference)getProductDefaultResponseEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -505,6 +562,11 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		createEAttribute(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__BASE_PRICE);
 		createEAttribute(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__LIST_PRICE);
 		createEReference(calculateProductPriceResponseEClass, CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS);
+
+		getProductDefaultEClass = createEClass(GET_PRODUCT_DEFAULT);
+
+		getProductDefaultResponseEClass = createEClass(GET_PRODUCT_DEFAULT_RESPONSE);
+		createEReference(getProductDefaultResponseEClass, GET_PRODUCT_DEFAULT_RESPONSE__FACILITY_POSTAL_ADDRESS);
 	}
 
 	/**
@@ -535,6 +597,8 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		ServicePackage theServicePackage = (ServicePackage)EPackage.Registry.INSTANCE.getEPackage(ServicePackage.eNS_URI);
 		org.abchip.mimo.biz.model.product.product.ProductPackage theProductPackage_1 = (org.abchip.mimo.biz.model.product.product.ProductPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.model.product.product.ProductPackage.eNS_URI);
 		OrderPackage theOrderPackage = (OrderPackage)EPackage.Registry.INSTANCE.getEPackage(OrderPackage.eNS_URI);
+		JavaPackage theJavaPackage = (JavaPackage)EPackage.Registry.INSTANCE.getEPackage(JavaPackage.eNS_URI);
+		org.abchip.mimo.biz.model.party.contact.ContactPackage theContactPackage_1 = (org.abchip.mimo.biz.model.party.contact.ContactPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.model.party.contact.ContactPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -551,6 +615,15 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		g1.getETypeArguments().add(g2);
 		calculateProductPriceEClass.getEGenericSuperTypes().add(g1);
 		calculateProductPriceResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
+		g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
+		g2 = createEGenericType(this.getGetProductDefaultResponse());
+		g1.getETypeArguments().add(g2);
+		getProductDefaultEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theJavaPackage.getJavaCallable());
+		g2 = createEGenericType(this.getGetProductDefaultResponse());
+		g1.getETypeArguments().add(g2);
+		getProductDefaultEClass.getEGenericSuperTypes().add(g1);
+		getProductDefaultResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(calcTaxForDisplayEClass, CalcTaxForDisplay.class, "CalcTaxForDisplay", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -575,6 +648,11 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		initEAttribute(getCalculateProductPriceResponse_BasePrice(), ecorePackage.getEBigDecimal(), "basePrice", null, 1, 1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCalculateProductPriceResponse_ListPrice(), ecorePackage.getEBigDecimal(), "listPrice", null, 0, 1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getCalculateProductPriceResponse_OrderItemPriceInfos(), theOrderPackage.getOrderItemPriceInfo(), null, "orderItemPriceInfos", null, 0, -1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(getProductDefaultEClass, GetProductDefault.class, "GetProductDefault", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(getProductDefaultResponseEClass, GetProductDefaultResponse.class, "GetProductDefaultResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getGetProductDefaultResponse_FacilityPostalAddress(), theContactPackage_1.getPostalAddress(), null, "facilityPostalAddress", null, 1, 1, GetProductDefaultResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 	}
 
 } //ProductPackageImpl

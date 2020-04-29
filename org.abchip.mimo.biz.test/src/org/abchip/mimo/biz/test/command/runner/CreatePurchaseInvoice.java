@@ -13,9 +13,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-import org.abchip.mimo.biz.base.service.ContactMechServices;
-import org.abchip.mimo.biz.base.service.PartyServices;
-import org.abchip.mimo.biz.base.service.UomServices;
 import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem;
@@ -27,15 +24,23 @@ import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.party.contact.ContactMechPurposeType;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.price.ProductPrice;
+import org.abchip.mimo.biz.service.common.GetCommonDefault;
+import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
+import org.abchip.mimo.biz.service.party.GetPartyDefault;
+import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
+import org.abchip.mimo.service.ServiceManager;
 
 public class CreatePurchaseInvoice implements Callable<Long> {
 
 	Context context;
+	GetCommonDefaultResponse commonDefault;
+	GetPartyDefaultResponse partyDefault;
+
 	Party party;
 	List<ProductPrice> productPrices;
 
@@ -47,6 +52,14 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 
 	@Override
 	public Long call() throws Exception {
+
+		ServiceManager serviceManager = context.getServiceManager();
+		GetCommonDefault getCommonDefault = serviceManager.prepare(context, GetCommonDefault.class);
+		commonDefault = serviceManager.execute(getCommonDefault);
+
+		GetPartyDefault getPartyDefault = serviceManager.prepare(context, GetPartyDefault.class);
+		partyDefault = serviceManager.execute(getPartyDefault);
+
 		long time1 = System.currentTimeMillis();
 		createInvoice();
 		long time2 = System.currentTimeMillis();
@@ -56,11 +69,11 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 	private void createInvoice() throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
-		Party company = PartyServices.getCompany(context);
+		Party company = partyDefault.getOrganization();
 
 		// Invoice Header
 		ResourceWriter<Invoice> invoiceWriter = resourceManager.getResourceWriter(context, Invoice.class);
-		PartyAcctgPreference partyAcctgPreference = PartyServices.getPartyAcctgPreference(context);
+		PartyAcctgPreference partyAcctgPreference = partyDefault.getAccountingPreference();
 		Invoice invoice = invoiceWriter.make(true);
 		String invoiceId = invoice.getInvoiceId();
 		if (partyAcctgPreference != null && partyAcctgPreference.getInvoiceIdPrefix() != null) {
@@ -69,7 +82,7 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 		invoice.setInvoiceTypeId(context.createProxy(InvoiceType.class, "PURCHASE_INVOICE"));
 		invoice.setInvoiceDate(new Date());
 		invoice.setStatusId(context.createProxy(StatusItem.class, "INVOICE_IN_PROCESS"));
-		invoice.setCurrencyUomId(UomServices.getUom(context));
+		invoice.setCurrencyUomId(commonDefault.getCurrencyUom());
 		invoice.setPartyId(company);
 		invoice.setPartyIdFrom(party);
 		invoice.setDescription("Purchase invoice test for party " + party.getID());
@@ -88,7 +101,7 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 		InvoiceContactMech invoiceContactMech = invoiceContactMechWriter.make();
 		invoiceContactMech.setInvoiceId(invoice);
 		invoiceContactMech.setContactMechPurposeTypeId(context.createProxy(ContactMechPurposeType.class, "PAYMENT_LOCATION"));
-		invoiceContactMech.setContactMechId(ContactMechServices.getLatestPostaAddress(context, company.getID()));
+		invoiceContactMech.setContactMechId(company.getPostalAddress());
 		invoiceContactMechWriter.create(invoiceContactMech);
 
 		// Items

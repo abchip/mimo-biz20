@@ -10,9 +10,10 @@ package org.abchip.mimo.biz.test.command;
 
 import javax.inject.Inject;
 
-import org.abchip.mimo.biz.base.service.UomServices;
 import org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.biz.service.common.GetCommonDefault;
+import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
 import org.abchip.mimo.biz.service.entity.ExportEntities;
 import org.abchip.mimo.biz.service.product.CalculateProductPrice;
 import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
@@ -27,7 +28,7 @@ public class ServiceTestCommands extends BaseTestCommands {
 	private ServiceManager serviceManager;
 
 	public void _st_ecore(CommandInterpreter interpreter) throws Exception {
-		
+
 		ExportEntities request = serviceManager.prepare(this.getContext(), ExportEntities.class);
 		request.setPathTo(this.nextArgument(interpreter, "/home/mattia/ofbiz/"));
 		serviceManager.submit(request);
@@ -37,11 +38,14 @@ public class ServiceTestCommands extends BaseTestCommands {
 
 		Context context = this.getContext();
 
+		GetCommonDefault getCommonDefault = serviceManager.prepare(context, GetCommonDefault.class);
+		GetCommonDefaultResponse commonDefault = serviceManager.execute(getCommonDefault);
+
 		String product = this.nextArgument(interpreter, "Marketing");
 
 		CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
 		calculateProductPrice.setProduct(context.createProxy(Product.class, product));
-		calculateProductPrice.setCurrencyUomId(UomServices.getUom(context).getID());
+		calculateProductPrice.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
 
 		CalculateProductPriceResponse response = serviceManager.execute(calculateProductPrice);
 

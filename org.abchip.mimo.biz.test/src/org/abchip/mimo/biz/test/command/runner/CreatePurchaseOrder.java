@@ -13,9 +13,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-import org.abchip.mimo.biz.base.service.ContactMechServices;
-import org.abchip.mimo.biz.base.service.PartyServices;
-import org.abchip.mimo.biz.base.service.UomServices;
 import org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
@@ -40,15 +37,26 @@ import org.abchip.mimo.biz.model.product.store.ProductStore;
 import org.abchip.mimo.biz.model.product.supplier.SupplierProduct;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
+import org.abchip.mimo.biz.service.common.GetCommonDefault;
+import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
+import org.abchip.mimo.biz.service.party.GetPartyDefault;
+import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
+import org.abchip.mimo.biz.service.product.GetProductDefault;
+import org.abchip.mimo.biz.service.product.GetProductDefaultResponse;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
+import org.abchip.mimo.service.ServiceManager;
 
 public class CreatePurchaseOrder implements Callable<Long> {
 
 	Context context;
+	GetCommonDefaultResponse commonDefault;
+	GetPartyDefaultResponse partyDefault;
+	GetProductDefaultResponse productDefault;
+
 	Party party;
 	List<SupplierProduct> supplierProducts;
 
@@ -60,6 +68,17 @@ public class CreatePurchaseOrder implements Callable<Long> {
 
 	@Override
 	public Long call() throws Exception {
+
+		ServiceManager serviceManager = context.getServiceManager();
+		GetCommonDefault getCommonDefault = serviceManager.prepare(context, GetCommonDefault.class);
+		commonDefault = serviceManager.execute(getCommonDefault);
+
+		GetPartyDefault getPartyDefault = serviceManager.prepare(context, GetPartyDefault.class);
+		partyDefault = serviceManager.execute(getPartyDefault);
+
+		GetProductDefault getProductDefault = serviceManager.prepare(context, GetProductDefault.class);
+		productDefault = serviceManager.execute(getProductDefault);
+
 		long time1 = System.currentTimeMillis();
 		createOrder();
 		long time2 = System.currentTimeMillis();
@@ -70,7 +89,7 @@ public class CreatePurchaseOrder implements Callable<Long> {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		ProductStore productStore = StressTestUtils.getProductStore(context, resourceManager);
-		PartyAcctgPreference partyAcctgPreference = PartyServices.getPartyAcctgPreference(context);
+		PartyAcctgPreference partyAcctgPreference = partyDefault.getAccountingPreference();
 		UserLogin userLogin = context.createProxy(UserLogin.class, context.getContextDescription().getUser());
 
 		// Order Header
@@ -89,7 +108,7 @@ public class CreatePurchaseOrder implements Callable<Long> {
 		orderHeader.setOrderDate(new Date());
 		orderHeader.setEntryDate(new Date());
 		orderHeader.setStatusId(context.createProxy(StatusItem.class, "ORDER_CREATED"));
-		orderHeader.setCurrencyUom(UomServices.getUom(context));
+		orderHeader.setCurrencyUom(commonDefault.getCurrencyUom());
 		orderHeader.setInvoicePerShipment(Boolean.TRUE);
 		orderHeader.setCreatedBy(userLogin);
 		// orderHeader.setRemainingSubTotal(new BigDecimal(10));
@@ -105,8 +124,8 @@ public class CreatePurchaseOrder implements Callable<Long> {
 		orderStatusWriter.create(orderStatus);
 
 		// OrderContactMech
-		createContactMech(resourceManager, ContactMechServices.getLatestEmail(context, party.getID()), orderHeader, "ORDER_EMAIL");
-		createContactMech(resourceManager, ContactMechServices.getFacilityLatestPostaAddress(context, "WebStoreWarehouse"), orderHeader, "SHIPPING_LOCATION");
+		createContactMech(resourceManager, party.getEmail(), orderHeader, "ORDER_EMAIL");
+		createContactMech(resourceManager, productDefault.getFacilityPostalAddress(), orderHeader, "SHIPPING_LOCATION");
 
 		// OrderItemShipGroup
 		ResourceWriter<OrderItemShipGroup> orderItemShipGroupWriter = resourceManager.getResourceWriter(context, OrderItemShipGroup.class);
@@ -131,7 +150,7 @@ public class CreatePurchaseOrder implements Callable<Long> {
 		ResourceWriter<OrderRole> orderRoleWriter = resourceManager.getResourceWriter(context, OrderRole.class);
 		OrderRole orderRole = orderRoleWriter.make();
 		orderRole.setOrderId(orderHeader);
-		orderRole.setPartyId(PartyServices.getCompany(context));
+		orderRole.setPartyId(partyDefault.getOrganization());
 		orderRole.setRoleTypeId(context.createProxy(RoleType.class, "BILL_TO_CUSTOMER"));
 		orderRoleWriter.create(orderRole);
 

@@ -419,6 +419,125 @@ public interface ProductPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.product.impl.GetProductDefaultImpl <em>Get Product Default</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.product.impl.GetProductDefaultImpl
+	 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getGetProductDefault()
+	 * @generated
+	 */
+	int GET_PRODUCT_DEFAULT = 4;
+
+	/**
+	 * The feature id for the '<em><b>Locale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GET_PRODUCT_DEFAULT__LOCALE = BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GET_PRODUCT_DEFAULT__TENANT = BizServicePackage.BIZ_SERVICE_REQUEST__TENANT;
+
+	/**
+	 * The feature id for the '<em><b>Context</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GET_PRODUCT_DEFAULT__CONTEXT = BizServicePackage.BIZ_SERVICE_REQUEST__CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GET_PRODUCT_DEFAULT__USER_LOGIN = BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN;
+
+	/**
+	 * The number of structural features of the '<em>Get Product Default</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GET_PRODUCT_DEFAULT_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 0;
+
+	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.product.impl.GetProductDefaultResponseImpl <em>Get Product Default Response</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.product.impl.GetProductDefaultResponseImpl
+	 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getGetProductDefaultResponse()
+	 * @generated
+	 */
+	int GET_PRODUCT_DEFAULT_RESPONSE = 5;
+
+	/**
+	 * The feature id for the '<em><b>Error</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GET_PRODUCT_DEFAULT_RESPONSE__ERROR = ServicePackage.SERVICE_RESPONSE__ERROR;
+
+	/**
+	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GET_PRODUCT_DEFAULT_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Response Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GET_PRODUCT_DEFAULT_RESPONSE__RESPONSE_MESSAGE = ServicePackage.SERVICE_RESPONSE__RESPONSE_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GET_PRODUCT_DEFAULT_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Facility Postal Address</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GET_PRODUCT_DEFAULT_RESPONSE__FACILITY_POSTAL_ADDRESS = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Get Product Default Response</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GET_PRODUCT_DEFAULT_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 1;
+
+	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.product.CalculateProductPrice <em>Calculate Product Price</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -503,6 +622,37 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getCalculateProductPriceResponse_OrderItemPriceInfos();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.product.GetProductDefault <em>Get Product Default</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Get Product Default</em>'.
+	 * @see org.abchip.mimo.biz.service.product.GetProductDefault
+	 * @generated
+	 */
+	EClass getGetProductDefault();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.product.GetProductDefaultResponse <em>Get Product Default Response</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Get Product Default Response</em>'.
+	 * @see org.abchip.mimo.biz.service.product.GetProductDefaultResponse
+	 * @generated
+	 */
+	EClass getGetProductDefaultResponse();
+
+	/**
+	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.service.product.GetProductDefaultResponse#getFacilityPostalAddress <em>Facility Postal Address</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Facility Postal Address</em>'.
+	 * @see org.abchip.mimo.biz.service.product.GetProductDefaultResponse#getFacilityPostalAddress()
+	 * @see #getGetProductDefaultResponse()
+	 * @generated
+	 */
+	EReference getGetProductDefaultResponse_FacilityPostalAddress();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.product.CalcTaxForDisplay <em>Calc Tax For Display</em>}'.
@@ -712,6 +862,34 @@ public interface ProductPackage extends EPackage {
 		 * @generated
 		 */
 		EReference CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS = eINSTANCE.getCalculateProductPriceResponse_OrderItemPriceInfos();
+
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.product.impl.GetProductDefaultImpl <em>Get Product Default</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.product.impl.GetProductDefaultImpl
+		 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getGetProductDefault()
+		 * @generated
+		 */
+		EClass GET_PRODUCT_DEFAULT = eINSTANCE.getGetProductDefault();
+
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.product.impl.GetProductDefaultResponseImpl <em>Get Product Default Response</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.product.impl.GetProductDefaultResponseImpl
+		 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getGetProductDefaultResponse()
+		 * @generated
+		 */
+		EClass GET_PRODUCT_DEFAULT_RESPONSE = eINSTANCE.getGetProductDefaultResponse();
+
+		/**
+		 * The meta object literal for the '<em><b>Facility Postal Address</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GET_PRODUCT_DEFAULT_RESPONSE__FACILITY_POSTAL_ADDRESS = eINSTANCE.getGetProductDefaultResponse_FacilityPostalAddress();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.product.impl.CalcTaxForDisplayImpl <em>Calc Tax For Display</em>}' class.

@@ -4301,6 +4301,7 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//order/order/OrderHeader/visitId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//order/order/OrderHeader/webSiteId"/>
+          <genOperations ecoreOperation="biz-model.ecore#//order/order/OrderHeader/isApprovable"/>
         </genClasses>
         <genClasses ecoreClass="biz-model.ecore#//order/order/OrderHeaderNote">
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -6001,6 +6002,13 @@
               ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/statusId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/supplierProductFeatures"/>
+          <genOperations ecoreOperation="biz-model.ecore#//party/party/Party/getCreditCard"/>
+          <genOperations ecoreOperation="biz-model.ecore#//party/party/Party/getEmail"/>
+          <genOperations ecoreOperation="biz-model.ecore#//party/party/Party/getPaymentMethod">
+            <genParameters ecoreParameter="biz-model.ecore#//party/party/Party/getPaymentMethod/methodType"/>
+          </genOperations>
+          <genOperations ecoreOperation="biz-model.ecore#//party/party/Party/getPostalAddress"/>
+          <genOperations ecoreOperation="biz-model.ecore#//party/party/Party/getTelecomNumber"/>
         </genClasses>
         <genClasses ecoreClass="biz-model.ecore#//party/party/PartyAttribute">
           <genFeatures notify="false" createChild="false" propertySortChoices="true"

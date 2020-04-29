@@ -5,7 +5,7 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.service.impl;
+package org.abchip.mimo.biz.service.party.impl;
 
 import org.abchip.mimo.MimoPackage;
 
@@ -13,6 +13,7 @@ import org.abchip.mimo.biz.BizPackage;
 
 import org.abchip.mimo.biz.model.accounting.AccountingPackage;
 
+import org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage;
 import org.abchip.mimo.biz.model.catalina.session.SessionPackage;
 
 import org.abchip.mimo.biz.model.common.CommonPackage;
@@ -30,6 +31,7 @@ import org.abchip.mimo.biz.model.content.survey.SurveyPackage;
 import org.abchip.mimo.biz.model.content.website.WebsitePackage;
 
 import org.abchip.mimo.biz.model.entity.EntityPackage;
+
 import org.abchip.mimo.biz.model.humanres.ability.AbilityPackage;
 
 import org.abchip.mimo.biz.model.humanres.employment.EmploymentPackage;
@@ -71,8 +73,6 @@ import org.abchip.mimo.biz.model.order.return_.ReturnPackage;
 import org.abchip.mimo.biz.model.order.shoppingcart.ShoppingcartPackage;
 
 import org.abchip.mimo.biz.model.order.shoppinglist.ShoppinglistPackage;
-
-import org.abchip.mimo.biz.model.party.PartyPackage;
 
 import org.abchip.mimo.biz.model.passport.PassportPackage;
 
@@ -126,15 +126,26 @@ import org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage;
 
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 
-import org.abchip.mimo.biz.service.BizServiceFactory;
 import org.abchip.mimo.biz.service.BizServicePackage;
-import org.abchip.mimo.biz.service.BizServiceRequest;
+
 import org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl;
+
 import org.abchip.mimo.biz.service.common.impl.CommonPackageImpl;
+
 import org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl;
+
+import org.abchip.mimo.biz.service.impl.BizServicePackageImpl;
+
 import org.abchip.mimo.biz.service.order.impl.OrderPackageImpl;
-import org.abchip.mimo.biz.service.party.impl.PartyPackageImpl;
+
+import org.abchip.mimo.biz.service.party.GetPartyDefault;
+import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
+import org.abchip.mimo.biz.service.party.PartyFactory;
+import org.abchip.mimo.biz.service.party.PartyPackage;
+
 import org.abchip.mimo.biz.service.product.impl.ProductPackageImpl;
+
+import org.abchip.mimo.java.JavaPackage;
 
 import org.abchip.mimo.service.ServicePackage;
 
@@ -142,7 +153,6 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
-import org.eclipse.emf.ecore.ETypeParameter;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
@@ -152,13 +162,20 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
  * <!-- end-user-doc -->
  * @generated
  */
-public class BizServicePackageImpl extends EPackageImpl implements BizServicePackage {
+public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass bizServiceRequestEClass = null;
+	private EClass getPartyDefaultEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass getPartyDefaultResponseEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -171,12 +188,12 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see org.abchip.mimo.biz.service.BizServicePackage#eNS_URI
+	 * @see org.abchip.mimo.biz.service.party.PartyPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */
-	private BizServicePackageImpl() {
-		super(eNS_URI, BizServiceFactory.eINSTANCE);
+	private PartyPackageImpl() {
+		super(eNS_URI, PartyFactory.eINSTANCE);
 	}
 
 	/**
@@ -189,7 +206,7 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
 	 *
-	 * <p>This method is used to initialize {@link BizServicePackage#eINSTANCE} when that field is accessed.
+	 * <p>This method is used to initialize {@link PartyPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -198,12 +215,12 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 	 * @see #initializePackageContents()
 	 * @generated
 	 */
-	public static BizServicePackage init() {
-		if (isInited) return (BizServicePackage)EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
+	public static PartyPackage init() {
+		if (isInited) return (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
 
 		// Obtain or create and register package
-		Object registeredBizServicePackage = EPackage.Registry.INSTANCE.get(eNS_URI);
-		BizServicePackageImpl theBizServicePackage = registeredBizServicePackage instanceof BizServicePackageImpl ? (BizServicePackageImpl)registeredBizServicePackage : new BizServicePackageImpl();
+		Object registeredPartyPackage = EPackage.Registry.INSTANCE.get(eNS_URI);
+		PartyPackageImpl thePartyPackage = registeredPartyPackage instanceof PartyPackageImpl ? (PartyPackageImpl)registeredPartyPackage : new PartyPackageImpl();
 
 		isInited = true;
 
@@ -240,7 +257,7 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 		ReturnPackage.eINSTANCE.eClass();
 		ShoppingcartPackage.eINSTANCE.eClass();
 		ShoppinglistPackage.eINSTANCE.eClass();
-		PartyPackage.eINSTANCE.eClass();
+		org.abchip.mimo.biz.model.party.PartyPackage.eINSTANCE.eClass();
 		PassportPackage.eINSTANCE.eClass();
 		CatalogPackage.eINSTANCE.eClass();
 		CategoryPackage.eINSTANCE.eClass();
@@ -271,7 +288,9 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 		MimoPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.accounting.AccountingPackage.eNS_URI);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
+		BizServicePackageImpl theBizServicePackage = (BizServicePackageImpl)(registeredPackage instanceof BizServicePackageImpl ? registeredPackage : BizServicePackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.accounting.AccountingPackage.eNS_URI);
 		AccountingPackageImpl theAccountingPackage_1 = (AccountingPackageImpl)(registeredPackage instanceof AccountingPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.accounting.AccountingPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.common.CommonPackage.eNS_URI);
 		CommonPackageImpl theCommonPackage_1 = (CommonPackageImpl)(registeredPackage instanceof CommonPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.common.CommonPackage.eINSTANCE);
@@ -279,35 +298,33 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 		EntityPackageImpl theEntityPackage_1 = (EntityPackageImpl)(registeredPackage instanceof EntityPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.entity.EntityPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.order.OrderPackage.eNS_URI);
 		OrderPackageImpl theOrderPackage_1 = (OrderPackageImpl)(registeredPackage instanceof OrderPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.order.OrderPackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.party.PartyPackage.eNS_URI);
-		PartyPackageImpl thePartyPackage_1 = (PartyPackageImpl)(registeredPackage instanceof PartyPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.party.PartyPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.product.ProductPackage.eNS_URI);
 		ProductPackageImpl theProductPackage_1 = (ProductPackageImpl)(registeredPackage instanceof ProductPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.product.ProductPackage.eINSTANCE);
 
 		// Create package meta-data objects
+		thePartyPackage.createPackageContents();
 		theBizServicePackage.createPackageContents();
 		theAccountingPackage_1.createPackageContents();
 		theCommonPackage_1.createPackageContents();
 		theEntityPackage_1.createPackageContents();
 		theOrderPackage_1.createPackageContents();
-		thePartyPackage_1.createPackageContents();
 		theProductPackage_1.createPackageContents();
 
 		// Initialize created meta-data
+		thePartyPackage.initializePackageContents();
 		theBizServicePackage.initializePackageContents();
 		theAccountingPackage_1.initializePackageContents();
 		theCommonPackage_1.initializePackageContents();
 		theEntityPackage_1.initializePackageContents();
 		theOrderPackage_1.initializePackageContents();
-		thePartyPackage_1.initializePackageContents();
 		theProductPackage_1.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
-		theBizServicePackage.freeze();
+		thePartyPackage.freeze();
 
 		// Update the registry and return the package
-		EPackage.Registry.INSTANCE.put(BizServicePackage.eNS_URI, theBizServicePackage);
-		return theBizServicePackage;
+		EPackage.Registry.INSTANCE.put(PartyPackage.eNS_URI, thePartyPackage);
+		return thePartyPackage;
 	}
 
 	/**
@@ -316,8 +333,8 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 	 * @generated
 	 */
 	@Override
-	public EClass getBizServiceRequest() {
-		return bizServiceRequestEClass;
+	public EClass getGetPartyDefault() {
+		return getPartyDefaultEClass;
 	}
 
 	/**
@@ -326,8 +343,8 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 	 * @generated
 	 */
 	@Override
-	public EReference getBizServiceRequest_UserLogin() {
-		return (EReference)bizServiceRequestEClass.getEStructuralFeatures().get(0);
+	public EClass getGetPartyDefaultResponse() {
+		return getPartyDefaultResponseEClass;
 	}
 
 	/**
@@ -336,8 +353,28 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 	 * @generated
 	 */
 	@Override
-	public BizServiceFactory getBizServiceFactory() {
-		return (BizServiceFactory)getEFactoryInstance();
+	public EReference getGetPartyDefaultResponse_Organization() {
+		return (EReference)getPartyDefaultResponseEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getGetPartyDefaultResponse_AccountingPreference() {
+		return (EReference)getPartyDefaultResponseEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public PartyFactory getPartyFactory() {
+		return (PartyFactory)getEFactoryInstance();
 	}
 
 	/**
@@ -359,8 +396,11 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 		isCreated = true;
 
 		// Create classes and their features
-		bizServiceRequestEClass = createEClass(BIZ_SERVICE_REQUEST);
-		createEReference(bizServiceRequestEClass, BIZ_SERVICE_REQUEST__USER_LOGIN);
+		getPartyDefaultEClass = createEClass(GET_PARTY_DEFAULT);
+
+		getPartyDefaultResponseEClass = createEClass(GET_PARTY_DEFAULT_RESPONSE);
+		createEReference(getPartyDefaultResponseEClass, GET_PARTY_DEFAULT_RESPONSE__ORGANIZATION);
+		createEReference(getPartyDefaultResponseEClass, GET_PARTY_DEFAULT_RESPONSE__ACCOUNTING_PREFERENCE);
 	}
 
 	/**
@@ -387,42 +427,33 @@ public class BizServicePackageImpl extends EPackageImpl implements BizServicePac
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		org.abchip.mimo.biz.service.accounting.AccountingPackage theAccountingPackage_1 = (org.abchip.mimo.biz.service.accounting.AccountingPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.accounting.AccountingPackage.eNS_URI);
-		org.abchip.mimo.biz.service.common.CommonPackage theCommonPackage_1 = (org.abchip.mimo.biz.service.common.CommonPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.common.CommonPackage.eNS_URI);
-		org.abchip.mimo.biz.service.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.biz.service.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.entity.EntityPackage.eNS_URI);
-		org.abchip.mimo.biz.service.order.OrderPackage theOrderPackage_1 = (org.abchip.mimo.biz.service.order.OrderPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.order.OrderPackage.eNS_URI);
-		org.abchip.mimo.biz.service.party.PartyPackage thePartyPackage_1 = (org.abchip.mimo.biz.service.party.PartyPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.party.PartyPackage.eNS_URI);
-		org.abchip.mimo.biz.service.product.ProductPackage theProductPackage_1 = (org.abchip.mimo.biz.service.product.ProductPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.product.ProductPackage.eNS_URI);
+		BizServicePackage theBizServicePackage = (BizServicePackage)EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
+		JavaPackage theJavaPackage = (JavaPackage)EPackage.Registry.INSTANCE.getEPackage(JavaPackage.eNS_URI);
 		ServicePackage theServicePackage = (ServicePackage)EPackage.Registry.INSTANCE.getEPackage(ServicePackage.eNS_URI);
-		LoginPackage theLoginPackage = (LoginPackage)EPackage.Registry.INSTANCE.getEPackage(LoginPackage.eNS_URI);
-
-		// Add subpackages
-		getESubpackages().add(theAccountingPackage_1);
-		getESubpackages().add(theCommonPackage_1);
-		getESubpackages().add(theEntityPackage_1);
-		getESubpackages().add(theOrderPackage_1);
-		getESubpackages().add(thePartyPackage_1);
-		getESubpackages().add(theProductPackage_1);
+		org.abchip.mimo.biz.model.party.party.PartyPackage thePartyPackage_2 = (org.abchip.mimo.biz.model.party.party.PartyPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.model.party.party.PartyPackage.eNS_URI);
+		LedgerPackage theLedgerPackage = (LedgerPackage)EPackage.Registry.INSTANCE.getEPackage(LedgerPackage.eNS_URI);
 
 		// Create type parameters
-		ETypeParameter bizServiceRequestEClass_V = addETypeParameter(bizServiceRequestEClass, "V");
 
 		// Set bounds for type parameters
-		EGenericType g1 = createEGenericType(theServicePackage.getServiceResponse());
-		bizServiceRequestEClass_V.getEBounds().add(g1);
 
 		// Add supertypes to classes
-		g1 = createEGenericType(theServicePackage.getServiceRequest());
-		EGenericType g2 = createEGenericType(bizServiceRequestEClass_V);
+		EGenericType g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
+		EGenericType g2 = createEGenericType(this.getGetPartyDefaultResponse());
 		g1.getETypeArguments().add(g2);
-		bizServiceRequestEClass.getEGenericSuperTypes().add(g1);
+		getPartyDefaultEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theJavaPackage.getJavaCallable());
+		g2 = createEGenericType(this.getGetPartyDefaultResponse());
+		g1.getETypeArguments().add(g2);
+		getPartyDefaultEClass.getEGenericSuperTypes().add(g1);
+		getPartyDefaultResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
 
 		// Initialize classes and features; add operations and parameters
-		initEClass(bizServiceRequestEClass, BizServiceRequest.class, "BizServiceRequest", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getBizServiceRequest_UserLogin(), theLoginPackage.getUserLogin(), null, "userLogin", null, 1, 1, BizServiceRequest.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(getPartyDefaultEClass, GetPartyDefault.class, "GetPartyDefault", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
-		// Create resource
-		createResource(eNS_URI);
+		initEClass(getPartyDefaultResponseEClass, GetPartyDefaultResponse.class, "GetPartyDefaultResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getGetPartyDefaultResponse_Organization(), thePartyPackage_2.getParty(), null, "organization", null, 1, 1, GetPartyDefaultResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getGetPartyDefaultResponse_AccountingPreference(), theLedgerPackage.getPartyAcctgPreference(), null, "accountingPreference", null, 1, 1, GetPartyDefaultResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 	}
 
-} //BizServicePackageImpl
+} //PartyPackageImpl

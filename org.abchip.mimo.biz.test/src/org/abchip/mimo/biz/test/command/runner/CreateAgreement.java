@@ -13,8 +13,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-import org.abchip.mimo.biz.base.service.PartyServices;
-import org.abchip.mimo.biz.base.service.UomServices;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemType;
 import org.abchip.mimo.biz.model.party.agreement.Agreement;
 import org.abchip.mimo.biz.model.party.agreement.AgreementItem;
@@ -26,15 +24,23 @@ import org.abchip.mimo.biz.model.party.agreement.TermType;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.abchip.mimo.biz.model.product.price.ProductPrice;
+import org.abchip.mimo.biz.service.common.GetCommonDefault;
+import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
+import org.abchip.mimo.biz.service.party.GetPartyDefault;
+import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
+import org.abchip.mimo.service.ServiceManager;
 
 public class CreateAgreement implements Callable<Long> {
 
 	Context context;
+	GetCommonDefaultResponse commonDefault;
+	GetPartyDefaultResponse partyDefault;
+
 	Party party;
 	List<ProductPrice> productPrices;
 
@@ -46,6 +52,14 @@ public class CreateAgreement implements Callable<Long> {
 
 	@Override
 	public Long call() throws Exception {
+
+		ServiceManager serviceManager = context.getServiceManager();
+		GetCommonDefault getCommonDefault = serviceManager.prepare(context, GetCommonDefault.class);
+		commonDefault = serviceManager.execute(getCommonDefault);
+
+		GetPartyDefault getPartyDefault = serviceManager.prepare(context, GetPartyDefault.class);
+		partyDefault = serviceManager.execute(getPartyDefault);
+
 		long time1 = System.currentTimeMillis();
 		createAgreement();
 		long time2 = System.currentTimeMillis();
@@ -63,7 +77,7 @@ public class CreateAgreement implements Callable<Long> {
 		ResourceWriter<Agreement> agreementWriter = resourceManager.getResourceWriter(context, Agreement.class);
 
 		Agreement agreement = agreementWriter.make(true);
-		agreement.setPartyIdFrom(PartyServices.getCompany(context));
+		agreement.setPartyIdFrom(partyDefault.getOrganization());
 		agreement.setPartyIdTo(party);
 
 		agreement.setRoleTypeIdFrom(roleTypeFrom);
@@ -106,7 +120,7 @@ public class CreateAgreement implements Callable<Long> {
 		String agreementItemSeqId = StressTestUtils.formatPaddedNumber(1, 5);
 		agreementItem.setAgreementItemSeqId(agreementItemSeqId);
 		agreementItem.setAgreementItemTypeId(agreementType);
-		agreementItem.setCurrencyUomId(UomServices.getUom(context).getID());
+		agreementItem.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
 		agreementItem.setAgreementText("Agrement test opened in trial mode");
 		agreementItemWriter.create(agreementItem);
 

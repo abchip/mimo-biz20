@@ -11,11 +11,15 @@ Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Export-Package: org.abchip.mimo.biz.service,
  org.abchip.mimo.biz.service.accounting,
  org.abchip.mimo.biz.service.accounting.impl,
+ org.abchip.mimo.biz.service.common,
+ org.abchip.mimo.biz.service.common.impl,
  org.abchip.mimo.biz.service.entity,
  org.abchip.mimo.biz.service.entity.impl,
  org.abchip.mimo.biz.service.impl,
  org.abchip.mimo.biz.service.order,
  org.abchip.mimo.biz.service.order.impl,
+ org.abchip.mimo.biz.service.party,
+ org.abchip.mimo.biz.service.party.impl,
  org.abchip.mimo.biz.service.product,
  org.abchip.mimo.biz.service.product.impl
 Bundle-ActivationPolicy: lazy

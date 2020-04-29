@@ -13,7 +13,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-import org.abchip.mimo.biz.base.service.UomServices;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.product.facility.ProductFacility;
@@ -25,6 +24,8 @@ import org.abchip.mimo.biz.model.product.product.ProductType;
 import org.abchip.mimo.biz.model.product.store.ProductStoreGroup;
 import org.abchip.mimo.biz.model.product.supplier.SupplierPrefOrder;
 import org.abchip.mimo.biz.model.product.supplier.SupplierProduct;
+import org.abchip.mimo.biz.service.common.GetCommonDefault;
+import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityIterator;
@@ -32,10 +33,12 @@ import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.resource.ResourceWriter;
+import org.abchip.mimo.service.ServiceManager;
 
 public class CreateProduct implements Callable<Long> {
 
 	Context context;
+	GetCommonDefaultResponse commonDefault;
 
 	public CreateProduct(Context context) {
 		this.context = context;
@@ -43,6 +46,11 @@ public class CreateProduct implements Callable<Long> {
 
 	@Override
 	public Long call() throws Exception {
+
+		ServiceManager serviceManager = context.getServiceManager();
+		GetCommonDefault getCommonDefault = serviceManager.prepare(context, GetCommonDefault.class);
+		commonDefault = serviceManager.execute(getCommonDefault);
+
 		long time1 = System.currentTimeMillis();
 		createProduct();
 		long time2 = System.currentTimeMillis();
@@ -76,7 +84,7 @@ public class CreateProduct implements Callable<Long> {
 		productPrice.setFromDate(new Date());
 		productPrice.setProductPriceTypeId(context.createProxy(ProductPriceType.class, "DEFAULT_PRICE"));
 		productPrice.setProductPricePurposeId(context.createProxy(ProductPricePurpose.class, "PURCHASE"));
-		productPrice.setCurrencyUomId(UomServices.getUom(context));
+		productPrice.setCurrencyUomId(commonDefault.getCurrencyUom());
 		productPrice.setProductStoreGroupId(context.createProxy(ProductStoreGroup.class, "_NA_"));
 		productPriceWriter.create(productPrice);
 	}
@@ -109,7 +117,7 @@ public class CreateProduct implements Callable<Long> {
 			supplierProduct.setSupplierPrefOrderId(context.createProxy(SupplierPrefOrder.class, "10_MAIN_SUPPL"));
 			supplierProduct.setMinimumOrderQuantity(new BigDecimal(1));
 			supplierProduct.setLastPrice(new BigDecimal(1));
-			supplierProduct.setCurrencyUomId(UomServices.getUom(context));
+			supplierProduct.setCurrencyUomId(commonDefault.getCurrencyUom());
 			supplierProduct.setCanDropShip(false);
 			supplierProduct.setSupplierProductId(party.getID() + "-" + product.getID());
 			supplierProductWriter.create(supplierProduct);

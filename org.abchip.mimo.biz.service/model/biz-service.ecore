@@ -14,12 +14,12 @@
   </eClassifiers>
   <eSubpackages name="accounting" nsURI="http://www.abchip.org/mimo/biz/service/accounting"
       nsPrefix="biz-accounting">
-    <eClassifiers xsi:type="ecore:EClass" name="CreatePayment">
-      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
-        <eTypeArguments eClassifier="#//accounting/CreatePaymentResponse"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Invoice_GetTotal">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceMethodRequest">
+        <eTypeArguments eClassifier="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//accounting/invoice/Invoice"/>
+        <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
       </eGenericSuperTypes>
     </eClassifiers>
-    <eClassifiers xsi:type="ecore:EClass" name="CreatePaymentResponse" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
     <eClassifiers xsi:type="ecore:EClass" name="SetInvoiceStatus">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="invoiceId" lowerBound="1"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -55,17 +55,26 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="UpdatePaymentApplicationDefResponse"
         eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
-    <eClassifiers xsi:type="ecore:EClass" name="Invoice_GetTotal">
-      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceMethodRequest">
-        <eTypeArguments eClassifier="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//accounting/invoice/Invoice"/>
-        <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
-      </eGenericSuperTypes>
-    </eClassifiers>
   </eSubpackages>
   <eSubpackages name="catalina" nsURI="http://www.abchip.org/mimo/biz/service/catalina"
       nsPrefix="biz-catalina"/>
   <eSubpackages name="common" nsURI="http://www.abchip.org/mimo/biz/service/common"
-      nsPrefix="biz-common"/>
+      nsPrefix="biz-common">
+    <eClassifiers xsi:type="ecore:EClass" name="GetCommonDefault">
+      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
+        <eTypeArguments eClassifier="#//common/GetCommonDefaultResponse"/>
+      </eGenericSuperTypes>
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//java/JavaCallable">
+        <eTypeArguments eClassifier="#//common/GetCommonDefaultResponse"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="GetCommonDefaultResponse" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="currencyUom" lowerBound="1"
+          eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//common/uom/Uom"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="countryGeo" lowerBound="1"
+          eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//common/geo/Geo"/>
+    </eClassifiers>
+  </eSubpackages>
   <eSubpackages name="content" nsURI="http://www.abchip.org/mimo/biz/service/content"
       nsPrefix="biz-content"/>
   <eSubpackages name="entity" nsURI="http://www.abchip.org/mimo/biz/service/entity"
@@ -198,7 +207,22 @@
     <eClassifiers xsi:type="ecore:EClass" name="ResetGrandTotalResponse" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
   </eSubpackages>
   <eSubpackages name="party" nsURI="http://www.abchip.org/mimo/biz/service/party"
-      nsPrefix="biz-party"/>
+      nsPrefix="biz-party">
+    <eClassifiers xsi:type="ecore:EClass" name="GetPartyDefault">
+      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
+        <eTypeArguments eClassifier="#//party/GetPartyDefaultResponse"/>
+      </eGenericSuperTypes>
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//java/JavaCallable">
+        <eTypeArguments eClassifier="#//party/GetPartyDefaultResponse"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="GetPartyDefaultResponse" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="organization" lowerBound="1"
+          eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//party/party/Party"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="accountingPreference"
+          lowerBound="1" eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//accounting/ledger/PartyAcctgPreference"/>
+    </eClassifiers>
+  </eSubpackages>
   <eSubpackages name="passport" nsURI="http://www.abchip.org/mimo/biz/service/passport"
       nsPrefix="biz-passport"/>
   <eSubpackages name="product" nsURI="http://www.abchip.org/mimo/biz/service/product"
@@ -245,6 +269,18 @@
       <eStructuralFeatures xsi:type="ecore:EReference" name="orderItemPriceInfos"
           upperBound="-1" eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//order/order/OrderItemPriceInfo"
           containment="true"/>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="GetProductDefault">
+      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
+        <eTypeArguments eClassifier="#//product/GetProductDefaultResponse"/>
+      </eGenericSuperTypes>
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//java/JavaCallable">
+        <eTypeArguments eClassifier="#//product/GetProductDefaultResponse"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="GetProductDefaultResponse" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="facilityPostalAddress"
+          lowerBound="1" eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//party/contact/PostalAddress"/>
     </eClassifiers>
   </eSubpackages>
   <eSubpackages name="security" nsURI="http://www.abchip.org/mimo/biz/service/security"

@@ -13,8 +13,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-import org.abchip.mimo.biz.base.service.GeoServices;
-import org.abchip.mimo.biz.base.service.UomServices;
 import org.abchip.mimo.biz.model.accounting.tax.PartyTaxAuthInfo;
 import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
@@ -33,15 +31,19 @@ import org.abchip.mimo.biz.model.party.party.PartyRole;
 import org.abchip.mimo.biz.model.party.party.PartyType;
 import org.abchip.mimo.biz.model.party.party.Person;
 import org.abchip.mimo.biz.model.party.party.RoleType;
+import org.abchip.mimo.biz.service.common.GetCommonDefault;
+import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
+import org.abchip.mimo.service.ServiceManager;
 
 public class CreateParty implements Callable<Long> {
 
 	Context context;
+	GetCommonDefaultResponse commonDefault;
 
 	public CreateParty(Context context) {
 		this.context = context;
@@ -49,6 +51,11 @@ public class CreateParty implements Callable<Long> {
 
 	@Override
 	public Long call() throws Exception {
+
+		ServiceManager serviceManager = context.getServiceManager();
+		GetCommonDefault getCommonDefault = serviceManager.prepare(context, GetCommonDefault.class);
+		commonDefault = serviceManager.execute(getCommonDefault);
+
 		long time1 = System.currentTimeMillis();
 
 		createPartyGroup("CUSTOMER");
@@ -68,7 +75,7 @@ public class CreateParty implements Callable<Long> {
 		PartyGroup partyGroup = partyGroupWriter.make(true);
 		partyGroup.setStatusId(context.createProxy(StatusItem.class, "PARTY_ENABLED"));
 		partyGroup.setPartyTypeId(context.createProxy(PartyType.class, "PARTY_GROUP"));
-		partyGroup.setPreferredCurrencyUomId(UomServices.getUom(context));
+		partyGroup.setPreferredCurrencyUomId(commonDefault.getCurrencyUom());
 		// nome
 		partyGroup.setGroupName("Description Party " + role.toLowerCase() + " " + partyGroup.getID());
 		partyGroupWriter.create(partyGroup);
@@ -84,7 +91,7 @@ public class CreateParty implements Callable<Long> {
 		Person person = personWriter.make(true);
 		person.setStatusId(context.createProxy(StatusItem.class, "PARTY_ENABLED"));
 		person.setPartyTypeId(context.createProxy(PartyType.class, "PERSON"));
-		person.setPreferredCurrencyUomId(UomServices.getUom(context));
+		person.setPreferredCurrencyUomId(commonDefault.getCurrencyUom());
 		person.setFirstName("First name " + role.toLowerCase() + " " + person.getID());
 		person.setLastName("Last name " + role.toLowerCase() + " " + person.getID());
 		personWriter.create(person);
@@ -153,7 +160,7 @@ public class CreateParty implements Callable<Long> {
 		// indirizzo_cap
 		postalAddress.setPostalCode(StressTestUtils.generateRandomString(5, true));
 		postalAddress.setContactMechTypeId(context.createProxy(ContactMechType.class, "POSTAL_ADDRESS"));
-		postalAddress.setCountryGeoId(GeoServices.getGeo(context));
+		postalAddress.setCountryGeoId(commonDefault.getCountryGeo());
 		postalAddress.setStateProvinceGeoId(context.createProxy(Geo.class, "IT-RM"));
 		postalAddressWriter.create(postalAddress);
 		createPartyContactMech(context, resourceManager, party, postalAddress, Arrays.asList("GENERAL_LOCATION", "SHIPPING_LOCATION"));
@@ -180,7 +187,7 @@ public class CreateParty implements Callable<Long> {
 		PartyTaxAuthInfo partyTaxAuthInfo = partyTaxAuthInfoWriter.make();
 		partyTaxAuthInfo.setPartyId(party);
 		partyTaxAuthInfo.setFromDate(new Date());
-		partyTaxAuthInfo.setTaxAuthGeoId(GeoServices.getGeo(context).getID());
+		partyTaxAuthInfo.setTaxAuthGeoId(commonDefault.getCountryGeo().getID());
 		partyTaxAuthInfo.setTaxAuthPartyId("ITA_ADE");
 		partyTaxAuthInfo.setPartyTaxId("IT-" + StressTestUtils.generateRandomString(11, true));
 		partyTaxAuthInfo.setIsExempt(false);

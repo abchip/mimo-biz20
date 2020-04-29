@@ -27,24 +27,6 @@ public interface AccountingFactory extends EFactory {
 	AccountingFactory eINSTANCE = org.abchip.mimo.biz.service.accounting.impl.AccountingFactoryImpl.init();
 
 	/**
-	 * Returns a new object of class '<em>Create Payment</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Create Payment</em>'.
-	 * @generated
-	 */
-	CreatePayment createCreatePayment();
-
-	/**
-	 * Returns a new object of class '<em>Create Payment Response</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Create Payment Response</em>'.
-	 * @generated
-	 */
-	CreatePaymentResponse createCreatePaymentResponse();
-
-	/**
 	 * Returns a new object of class '<em>Set Payment Status</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

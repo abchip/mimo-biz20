@@ -128,6 +128,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.service.BizServicePackage;
 
 import org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl;
+import org.abchip.mimo.biz.service.common.impl.CommonPackageImpl;
 import org.abchip.mimo.biz.service.entity.ConvertSeeds;
 import org.abchip.mimo.biz.service.entity.CreateTenant;
 import org.abchip.mimo.biz.service.entity.CreateTenantDemo;
@@ -144,6 +145,7 @@ import org.abchip.mimo.biz.service.entity.LoadSeeds;
 import org.abchip.mimo.biz.service.impl.BizServicePackageImpl;
 
 import org.abchip.mimo.biz.service.order.impl.OrderPackageImpl;
+import org.abchip.mimo.biz.service.party.impl.PartyPackageImpl;
 import org.abchip.mimo.biz.service.product.impl.ProductPackageImpl;
 
 import org.abchip.mimo.java.JavaPackage;
@@ -349,8 +351,12 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		BizServicePackageImpl theBizServicePackage = (BizServicePackageImpl)(registeredPackage instanceof BizServicePackageImpl ? registeredPackage : BizServicePackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.accounting.AccountingPackage.eNS_URI);
 		AccountingPackageImpl theAccountingPackage_1 = (AccountingPackageImpl)(registeredPackage instanceof AccountingPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.accounting.AccountingPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.common.CommonPackage.eNS_URI);
+		CommonPackageImpl theCommonPackage_1 = (CommonPackageImpl)(registeredPackage instanceof CommonPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.common.CommonPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.order.OrderPackage.eNS_URI);
 		OrderPackageImpl theOrderPackage_1 = (OrderPackageImpl)(registeredPackage instanceof OrderPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.order.OrderPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.party.PartyPackage.eNS_URI);
+		PartyPackageImpl thePartyPackage_1 = (PartyPackageImpl)(registeredPackage instanceof PartyPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.party.PartyPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.product.ProductPackage.eNS_URI);
 		ProductPackageImpl theProductPackage_1 = (ProductPackageImpl)(registeredPackage instanceof ProductPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.product.ProductPackage.eINSTANCE);
 
@@ -358,14 +364,18 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		theEntityPackage.createPackageContents();
 		theBizServicePackage.createPackageContents();
 		theAccountingPackage_1.createPackageContents();
+		theCommonPackage_1.createPackageContents();
 		theOrderPackage_1.createPackageContents();
+		thePartyPackage_1.createPackageContents();
 		theProductPackage_1.createPackageContents();
 
 		// Initialize created meta-data
 		theEntityPackage.initializePackageContents();
 		theBizServicePackage.initializePackageContents();
 		theAccountingPackage_1.initializePackageContents();
+		theCommonPackage_1.initializePackageContents();
 		theOrderPackage_1.initializePackageContents();
+		thePartyPackage_1.initializePackageContents();
 		theProductPackage_1.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed

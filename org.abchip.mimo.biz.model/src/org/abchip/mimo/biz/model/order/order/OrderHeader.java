@@ -1042,7 +1042,8 @@ public interface OrderHeader extends BizEntityTyped<OrderType> {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated NOT
+	 * @model kind="operation" required="true"
+	 * @generated
 	 */
 	boolean isApprovable();
 

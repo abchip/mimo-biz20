@@ -45,6 +45,24 @@ public interface ProductFactory extends EFactory {
 	CalculateProductPriceResponse createCalculateProductPriceResponse();
 
 	/**
+	 * Returns a new object of class '<em>Get Product Default</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Get Product Default</em>'.
+	 * @generated
+	 */
+	GetProductDefault createGetProductDefault();
+
+	/**
+	 * Returns a new object of class '<em>Get Product Default Response</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Get Product Default Response</em>'.
+	 * @generated
+	 */
+	GetProductDefaultResponse createGetProductDefaultResponse();
+
+	/**
 	 * Returns a new object of class '<em>Calc Tax For Display</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

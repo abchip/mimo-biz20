@@ -13953,6 +13953,7 @@
         </eStructuralFeatures>
       </eClassifiers>
       <eClassifiers xsi:type="ecore:EClass" name="OrderHeader">
+        <eOperations name="isApprovable" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="orderId" lowerBound="1"
             eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
             iD="true">
@@ -19334,6 +19335,13 @@
         <eAnnotations source="mimo-ent-frame">
           <details key="formula" value="description"/>
         </eAnnotations>
+        <eOperations name="getCreditCard" lowerBound="1" eType="#//accounting/payment/CreditCard"/>
+        <eOperations name="getEmail" lowerBound="1" eType="#//party/contact/ContactMech"/>
+        <eOperations name="getPaymentMethod" lowerBound="1" eType="#//accounting/payment/PaymentMethod">
+          <eParameters name="methodType" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+        </eOperations>
+        <eOperations name="getPostalAddress" lowerBound="1" eType="#//party/contact/PostalAddress"/>
+        <eOperations name="getTelecomNumber" lowerBound="1" eType="#//party/contact/TelecomNumber"/>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="partyId" lowerBound="1"
             eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
             iD="true">

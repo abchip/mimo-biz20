@@ -775,8 +775,8 @@ public class OrderHeaderImpl extends BizEntityTypedImpl<OrderType> implements Or
 	}
 
 	/**
-	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated NOT
 	 */
 	@Override

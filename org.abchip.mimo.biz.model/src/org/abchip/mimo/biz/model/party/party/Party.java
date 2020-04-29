@@ -10,10 +10,15 @@ package org.abchip.mimo.biz.model.party.party;
 import java.util.Date;
 import java.util.List;
 import org.abchip.mimo.biz.BizEntityTyped;
+import org.abchip.mimo.biz.model.accounting.payment.CreditCard;
+import org.abchip.mimo.biz.model.accounting.payment.PaymentMethod;
 import org.abchip.mimo.biz.model.common.datasource.DataSource;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.humanres.ability.PartySkill;
+import org.abchip.mimo.biz.model.party.contact.ContactMech;
+import org.abchip.mimo.biz.model.party.contact.PostalAddress;
+import org.abchip.mimo.biz.model.party.contact.TelecomNumber;
 import org.abchip.mimo.biz.model.product.supplier.SupplierProductFeature;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 
@@ -436,6 +441,46 @@ public interface Party extends BizEntityTyped<PartyType> {
 	 * @generated
 	 */
 	List<SupplierProductFeature> getSupplierProductFeatures();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model required="true" methodTypeRequired="true"
+	 * @generated
+	 */
+	PaymentMethod getPaymentMethod(String methodType);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true"
+	 * @generated
+	 */
+	CreditCard getCreditCard();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true"
+	 * @generated
+	 */
+	PostalAddress getPostalAddress();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true"
+	 * @generated
+	 */
+	TelecomNumber getTelecomNumber();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true"
+	 * @generated
+	 */
+	ContactMech getEmail();
 
 	/**
 	 * Returns the value of the '<em><b>Party Type Id</b></em>' reference.

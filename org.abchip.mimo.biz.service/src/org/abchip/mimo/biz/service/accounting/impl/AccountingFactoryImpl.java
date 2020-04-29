@@ -61,40 +61,16 @@ public class AccountingFactoryImpl extends EFactoryImpl implements AccountingFac
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case AccountingPackage.CREATE_PAYMENT: return (EObject)createCreatePayment();
-			case AccountingPackage.CREATE_PAYMENT_RESPONSE: return (EObject)createCreatePaymentResponse();
+			case AccountingPackage.INVOICE_GET_TOTAL: return (EObject)createInvoice_GetTotal();
 			case AccountingPackage.SET_INVOICE_STATUS: return (EObject)createSetInvoiceStatus();
 			case AccountingPackage.SET_INVOICE_STATUS_RESPONSE: return (EObject)createSetInvoiceStatusResponse();
 			case AccountingPackage.SET_PAYMENT_STATUS: return (EObject)createSetPaymentStatus();
 			case AccountingPackage.SET_PAYMENT_STATUS_RESPONSE: return (EObject)createSetPaymentStatusResponse();
 			case AccountingPackage.UPDATE_PAYMENT_APPLICATION_DEF: return (EObject)createUpdatePaymentApplicationDef();
 			case AccountingPackage.UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE: return (EObject)createUpdatePaymentApplicationDefResponse();
-			case AccountingPackage.INVOICE_GET_TOTAL: return (EObject)createInvoice_GetTotal();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CreatePayment createCreatePayment() {
-		CreatePaymentImpl createPayment = new CreatePaymentImpl();
-		return createPayment;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CreatePaymentResponse createCreatePaymentResponse() {
-		CreatePaymentResponseImpl createPaymentResponse = new CreatePaymentResponseImpl();
-		return createPaymentResponse;
 	}
 
 	/**

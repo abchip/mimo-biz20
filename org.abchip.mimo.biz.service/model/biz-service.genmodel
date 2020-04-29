@@ -22,8 +22,7 @@
     </genClasses>
     <nestedGenPackages prefix="Accounting" basePackage="org.abchip.mimo.biz.service"
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//accounting">
-      <genClasses ecoreClass="biz-service.ecore#//accounting/CreatePayment"/>
-      <genClasses ecoreClass="biz-service.ecore#//accounting/CreatePaymentResponse"/>
+      <genClasses ecoreClass="biz-service.ecore#//accounting/Invoice_GetTotal"/>
       <genClasses ecoreClass="biz-service.ecore#//accounting/SetInvoiceStatus">
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//accounting/SetInvoiceStatus/invoiceId"/>
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//accounting/SetInvoiceStatus/paidDate"/>
@@ -44,12 +43,19 @@
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//accounting/UpdatePaymentApplicationDef/paymentId"/>
       </genClasses>
       <genClasses ecoreClass="biz-service.ecore#//accounting/UpdatePaymentApplicationDefResponse"/>
-      <genClasses ecoreClass="biz-service.ecore#//accounting/Invoice_GetTotal"/>
     </nestedGenPackages>
     <nestedGenPackages prefix="Catalina" basePackage="org.abchip.mimo.biz.service"
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//catalina"/>
     <nestedGenPackages prefix="Common" basePackage="org.abchip.mimo.biz.service" disposableProviderFactory="true"
-        adapterFactory="false" ecorePackage="biz-service.ecore#//common"/>
+        adapterFactory="false" ecorePackage="biz-service.ecore#//common">
+      <genClasses ecoreClass="biz-service.ecore#//common/GetCommonDefault"/>
+      <genClasses ecoreClass="biz-service.ecore#//common/GetCommonDefaultResponse">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference biz-service.ecore#//common/GetCommonDefaultResponse/currencyUom"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference biz-service.ecore#//common/GetCommonDefaultResponse/countryGeo"/>
+      </genClasses>
+    </nestedGenPackages>
     <nestedGenPackages prefix="Content" basePackage="org.abchip.mimo.biz.service"
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//content"/>
     <nestedGenPackages prefix="Entity" basePackage="org.abchip.mimo.biz.service" disposableProviderFactory="true"
@@ -127,7 +133,15 @@
       <genClasses ecoreClass="biz-service.ecore#//order/ResetGrandTotalResponse"/>
     </nestedGenPackages>
     <nestedGenPackages prefix="Party" basePackage="org.abchip.mimo.biz.service" disposableProviderFactory="true"
-        adapterFactory="false" ecorePackage="biz-service.ecore#//party"/>
+        adapterFactory="false" ecorePackage="biz-service.ecore#//party">
+      <genClasses ecoreClass="biz-service.ecore#//party/GetPartyDefault"/>
+      <genClasses ecoreClass="biz-service.ecore#//party/GetPartyDefaultResponse">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference biz-service.ecore#//party/GetPartyDefaultResponse/organization"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference biz-service.ecore#//party/GetPartyDefaultResponse/accountingPreference"/>
+      </genClasses>
+    </nestedGenPackages>
     <nestedGenPackages prefix="Passport" basePackage="org.abchip.mimo.biz.service"
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//passport"/>
     <nestedGenPackages prefix="Product" basePackage="org.abchip.mimo.biz.service"
@@ -155,6 +169,11 @@
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//product/CalculateProductPriceResponse/basePrice"/>
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//product/CalculateProductPriceResponse/listPrice"/>
         <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference biz-service.ecore#//product/CalculateProductPriceResponse/orderItemPriceInfos"/>
+      </genClasses>
+      <genClasses ecoreClass="biz-service.ecore#//product/GetProductDefault"/>
+      <genClasses ecoreClass="biz-service.ecore#//product/GetProductDefaultResponse">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference biz-service.ecore#//product/GetProductDefaultResponse/facilityPostalAddress"/>
       </genClasses>
     </nestedGenPackages>
     <nestedGenPackages prefix="Security" basePackage="org.abchip.mimo.biz.service"

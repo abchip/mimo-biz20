@@ -64,6 +64,8 @@ public class ProductFactoryImpl extends EFactoryImpl implements ProductFactory {
 			case ProductPackage.CALC_TAX_FOR_DISPLAY_RESPONSE: return (EObject)createCalcTaxForDisplayResponse();
 			case ProductPackage.CALCULATE_PRODUCT_PRICE: return (EObject)createCalculateProductPrice();
 			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE: return (EObject)createCalculateProductPriceResponse();
+			case ProductPackage.GET_PRODUCT_DEFAULT: return (EObject)createGetProductDefault();
+			case ProductPackage.GET_PRODUCT_DEFAULT_RESPONSE: return (EObject)createGetProductDefaultResponse();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -89,6 +91,28 @@ public class ProductFactoryImpl extends EFactoryImpl implements ProductFactory {
 	public CalculateProductPriceResponse createCalculateProductPriceResponse() {
 		CalculateProductPriceResponseImpl calculateProductPriceResponse = new CalculateProductPriceResponseImpl();
 		return calculateProductPriceResponse;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GetProductDefault createGetProductDefault() {
+		GetProductDefaultImpl getProductDefault = new GetProductDefaultImpl();
+		return getProductDefault;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GetProductDefaultResponse createGetProductDefaultResponse() {
+		GetProductDefaultResponseImpl getProductDefaultResponse = new GetProductDefaultResponseImpl();
+		return getProductDefaultResponse;
 	}
 
 	/**

@@ -10,11 +10,11 @@ package org.abchip.mimo.biz.test.party.runner;
 
 import javax.inject.Inject;
 
-import org.abchip.mimo.biz.base.service.ContactMechServices;
 import org.abchip.mimo.biz.model.party.contact.ContactFactory;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.abchip.mimo.biz.model.party.contact.PartyContactMech;
 import org.abchip.mimo.biz.model.party.contact.PostalAddress;
+import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.tester.Test;
 import org.abchip.mimo.tester.TestAsserter;
@@ -29,18 +29,17 @@ public class PartyContactMechTest {
 	@Inject
 	private TestRunner testRunner;
 
-	
 	@TestStarted
 	public void doTest() throws ResourceException {
 		String partyId = "Company";
 
 		PartyContactMech partyContactMech = ContactFactory.eINSTANCE.createPartyContactMech();
 		testAsserter.assertNotNull("Frame PartyContactMech creation", partyContactMech);
-		
-		PostalAddress postalAddress = ContactMechServices.getLatestPostaAddress(testRunner.getContext(), partyId);		
+
+		PostalAddress postalAddress = testRunner.getContext().createProxy(Party.class, partyId).getPostalAddress();
 		testAsserter.assertNotNull("PostalAddress '" + partyId + "' exist", postalAddress);
 
-		ContactMech eMail = ContactMechServices.getLatestEmail(testRunner.getContext(), partyId);
+		ContactMech eMail = testRunner.getContext().createProxy(Party.class, partyId).getEmail();
 		testAsserter.assertNotNull("Email '" + partyId + "' exist", eMail);
 	}
 }
