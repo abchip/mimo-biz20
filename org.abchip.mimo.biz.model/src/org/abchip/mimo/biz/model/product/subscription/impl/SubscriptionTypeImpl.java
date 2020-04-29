@@ -33,10 +33,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class SubscriptionTypeImpl extends BizEntityTypeImpl<Subscription> implements SubscriptionType {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -44,10 +44,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class EmplPositionImpl extends BizEntityTypedImpl<EmplPositionType> implements EmplPosition {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

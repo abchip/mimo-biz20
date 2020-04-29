@@ -35,10 +35,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class CalcTaxForDisplayImpl extends BizServiceRequestImpl<CalcTaxForDisplayResponse> implements CalcTaxForDisplay {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

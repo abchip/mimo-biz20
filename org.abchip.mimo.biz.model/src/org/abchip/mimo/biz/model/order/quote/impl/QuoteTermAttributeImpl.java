@@ -31,10 +31,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class QuoteTermAttributeImpl extends BizEntityImpl implements QuoteTermAttribute {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

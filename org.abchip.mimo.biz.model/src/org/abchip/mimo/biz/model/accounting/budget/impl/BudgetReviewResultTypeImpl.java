@@ -29,10 +29,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class BudgetReviewResultTypeImpl extends BizEntityImpl implements BudgetReviewResultType {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

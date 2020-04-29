@@ -59,10 +59,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class FacilityImpl extends BizEntityTypedImpl<FacilityType> implements Facility {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	
 	/**
 	 * <!-- begin-user-doc -->

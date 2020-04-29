@@ -27,10 +27,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class OrderBlacklistTypeImpl extends BizEntityImpl implements OrderBlacklistType {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

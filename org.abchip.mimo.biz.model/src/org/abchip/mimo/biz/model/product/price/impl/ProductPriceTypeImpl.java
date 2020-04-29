@@ -27,10 +27,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ProductPriceTypeImpl extends BizEntityImpl implements ProductPriceType {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

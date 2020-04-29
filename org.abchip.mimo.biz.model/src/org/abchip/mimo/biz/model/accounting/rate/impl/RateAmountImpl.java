@@ -45,10 +45,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class RateAmountImpl extends BizEntityImpl implements RateAmount {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

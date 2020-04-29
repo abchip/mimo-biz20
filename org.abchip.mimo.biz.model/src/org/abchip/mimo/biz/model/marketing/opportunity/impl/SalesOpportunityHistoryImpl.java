@@ -45,10 +45,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class SalesOpportunityHistoryImpl extends BizEntityImpl implements SalesOpportunityHistory {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

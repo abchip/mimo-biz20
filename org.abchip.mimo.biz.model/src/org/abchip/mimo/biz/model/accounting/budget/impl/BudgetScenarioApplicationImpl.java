@@ -36,10 +36,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class BudgetScenarioApplicationImpl extends BizEntityImpl implements BudgetScenarioApplication {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

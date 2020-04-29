@@ -28,10 +28,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class PortletCategoryImpl extends BizEntityImpl implements PortletCategory {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

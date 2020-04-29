@@ -29,10 +29,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ShippingDocumentImpl extends DocumentImpl implements ShippingDocument {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	
 	/**
 	 * <!-- begin-user-doc -->

@@ -45,10 +45,6 @@ import org.osgi.service.log.Logger;
 
 public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImpl<E> {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	private static final Logger LOGGER = Logs.getLogger(OFBizResourceImpl.class);
 

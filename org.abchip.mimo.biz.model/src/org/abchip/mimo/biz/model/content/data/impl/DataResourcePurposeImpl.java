@@ -29,10 +29,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class DataResourcePurposeImpl extends BizEntityImpl implements DataResourcePurpose {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	
 	/**
 	 * <!-- begin-user-doc -->

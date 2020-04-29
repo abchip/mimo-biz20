@@ -36,10 +36,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ReturnStatusImpl extends BizEntityImpl implements ReturnStatus {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

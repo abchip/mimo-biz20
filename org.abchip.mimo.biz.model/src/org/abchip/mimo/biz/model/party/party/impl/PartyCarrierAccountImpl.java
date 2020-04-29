@@ -33,10 +33,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class PartyCarrierAccountImpl extends BizEntityImpl implements PartyCarrierAccount {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

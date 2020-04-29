@@ -35,10 +35,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public abstract class BizEntityTypedImpl<T extends BizEntityType<?>> extends EntityTypedImpl<T> implements BizEntityTyped<T> {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

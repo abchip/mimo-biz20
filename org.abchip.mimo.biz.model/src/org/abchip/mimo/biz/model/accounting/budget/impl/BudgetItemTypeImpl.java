@@ -35,10 +35,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class BudgetItemTypeImpl extends BizEntityTypeImpl<BudgetItem> implements BudgetItemType {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

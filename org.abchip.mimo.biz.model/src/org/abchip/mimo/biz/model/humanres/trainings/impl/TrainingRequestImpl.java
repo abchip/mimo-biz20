@@ -26,10 +26,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class TrainingRequestImpl extends BizEntityImpl implements TrainingRequest {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -32,10 +32,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class WebSiteContactListImpl extends BizEntityImpl implements WebSiteContactList {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 
 	/**

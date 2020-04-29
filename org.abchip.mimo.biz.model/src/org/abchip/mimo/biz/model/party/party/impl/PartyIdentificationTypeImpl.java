@@ -31,10 +31,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class PartyIdentificationTypeImpl extends BizEntityTypeImpl<PartyIdentification> implements PartyIdentificationType {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

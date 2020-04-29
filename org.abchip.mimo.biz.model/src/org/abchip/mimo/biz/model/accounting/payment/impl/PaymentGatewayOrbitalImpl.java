@@ -41,10 +41,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class PaymentGatewayOrbitalImpl extends BizEntityImpl implements PaymentGatewayOrbital {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

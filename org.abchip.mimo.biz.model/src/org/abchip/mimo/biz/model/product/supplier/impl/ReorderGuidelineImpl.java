@@ -43,10 +43,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ReorderGuidelineImpl extends BizEntityImpl implements ReorderGuideline {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

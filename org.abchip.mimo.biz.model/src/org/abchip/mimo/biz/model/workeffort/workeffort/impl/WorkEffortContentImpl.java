@@ -35,10 +35,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class WorkEffortContentImpl extends BizEntityImpl implements WorkEffortContent {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

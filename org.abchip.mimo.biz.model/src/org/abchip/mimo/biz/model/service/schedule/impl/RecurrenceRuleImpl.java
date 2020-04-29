@@ -42,10 +42,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class RecurrenceRuleImpl extends BizEntityImpl implements RecurrenceRule {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -38,10 +38,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class DocumentImpl extends BizEntityTypedImpl<DocumentType> implements Document {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	
 	/**
 	 * <!-- begin-user-doc -->

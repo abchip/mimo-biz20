@@ -33,10 +33,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class CostComponentTypeImpl extends BizEntityTypeImpl<CostComponent> implements CostComponentType {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	
 	/**
 	 * <!-- begin-user-doc -->

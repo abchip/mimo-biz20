@@ -34,10 +34,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class DocumentTypeImpl extends BizEntityTypeImpl<Document> implements DocumentType {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	
 	/**
 	 * <!-- begin-user-doc -->

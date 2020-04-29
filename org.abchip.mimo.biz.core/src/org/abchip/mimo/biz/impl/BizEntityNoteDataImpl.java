@@ -34,10 +34,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public abstract class BizEntityNoteDataImpl extends BizEntityImpl implements BizEntityNoteData {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -31,10 +31,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class SecurityGroupImpl extends BizEntityImpl implements SecurityGroup {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 
 	/**

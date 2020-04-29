@@ -70,10 +70,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ContentImpl extends BizEntityTypedImpl<ContentType> implements Content {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	
 	/**
 	 * <!-- begin-user-doc -->

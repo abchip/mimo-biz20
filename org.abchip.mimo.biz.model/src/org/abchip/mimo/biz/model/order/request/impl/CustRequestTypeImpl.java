@@ -35,10 +35,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class CustRequestTypeImpl extends BizEntityTypeImpl<CustRequest> implements CustRequestType {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

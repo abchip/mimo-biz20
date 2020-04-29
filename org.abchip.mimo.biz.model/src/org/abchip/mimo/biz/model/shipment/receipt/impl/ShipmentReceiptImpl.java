@@ -50,10 +50,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ShipmentReceiptImpl extends BizEntityImpl implements ShipmentReceipt {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

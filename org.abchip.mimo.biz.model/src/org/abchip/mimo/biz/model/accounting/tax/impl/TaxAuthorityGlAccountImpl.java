@@ -32,10 +32,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class TaxAuthorityGlAccountImpl extends BizEntityImpl implements TaxAuthorityGlAccount {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

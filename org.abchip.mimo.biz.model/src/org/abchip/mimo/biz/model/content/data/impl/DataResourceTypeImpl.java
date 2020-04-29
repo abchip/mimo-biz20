@@ -34,10 +34,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class DataResourceTypeImpl extends BizEntityTypeImpl<DataResource> implements DataResourceType {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	
 	/**
 	 * <!-- begin-user-doc -->

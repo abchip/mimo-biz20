@@ -29,10 +29,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class SetPaymentStatusImpl extends BizServiceRequestImpl<SetPaymentStatusResponse> implements SetPaymentStatus {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

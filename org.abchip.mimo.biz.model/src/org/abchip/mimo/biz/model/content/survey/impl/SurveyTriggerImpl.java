@@ -33,10 +33,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class SurveyTriggerImpl extends BizEntityImpl implements SurveyTrigger {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	
 	/**
 	 * <!-- begin-user-doc -->

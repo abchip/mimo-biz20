@@ -30,10 +30,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class LinkedInUserImpl extends BizEntityImpl implements LinkedInUser {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -30,10 +30,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ReturnAdjustmentTypeImpl extends BizEntityTypeImpl<ReturnAdjustment> implements ReturnAdjustmentType {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

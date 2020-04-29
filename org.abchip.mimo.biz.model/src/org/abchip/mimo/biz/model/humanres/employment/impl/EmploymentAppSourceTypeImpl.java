@@ -30,10 +30,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class EmploymentAppSourceTypeImpl extends BizEntityTypeImpl<EmploymentApp> implements EmploymentAppSourceType {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

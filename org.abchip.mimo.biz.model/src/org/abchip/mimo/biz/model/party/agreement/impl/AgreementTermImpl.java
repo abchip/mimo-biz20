@@ -48,10 +48,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class AgreementTermImpl extends BizEntityTypedImpl<TermType> implements AgreementTerm {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

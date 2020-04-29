@@ -62,10 +62,6 @@ import org.eclipse.emf.ecore.EOperation;
  */
 public class InvoiceImpl extends BizEntityTypedImpl<InvoiceType> implements Invoice {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->

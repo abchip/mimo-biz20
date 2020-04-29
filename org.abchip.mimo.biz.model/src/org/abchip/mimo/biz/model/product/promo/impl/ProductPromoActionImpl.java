@@ -43,10 +43,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ProductPromoActionImpl extends BizEntityImpl implements ProductPromoAction {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

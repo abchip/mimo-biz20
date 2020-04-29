@@ -20,10 +20,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class UpdatePaymentApplicationDefResponseImpl extends ServiceResponseImpl implements UpdatePaymentApplicationDefResponse {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

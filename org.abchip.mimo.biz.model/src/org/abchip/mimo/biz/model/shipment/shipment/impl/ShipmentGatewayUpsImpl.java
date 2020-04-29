@@ -46,10 +46,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ShipmentGatewayUpsImpl extends ShipmentGatewayConfigImpl implements ShipmentGatewayUps {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

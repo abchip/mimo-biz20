@@ -28,10 +28,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class VisitorImpl extends BizEntityImpl implements Visitor {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

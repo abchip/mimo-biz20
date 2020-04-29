@@ -32,10 +32,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ContentMetaDataImpl extends BizEntityImpl implements ContentMetaData {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	
 	/**
 	 * <!-- begin-user-doc -->

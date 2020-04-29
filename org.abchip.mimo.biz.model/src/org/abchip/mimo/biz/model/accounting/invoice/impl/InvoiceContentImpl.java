@@ -36,10 +36,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class InvoiceContentImpl extends BizEntityTypedImpl<InvoiceContentType> implements InvoiceContent {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

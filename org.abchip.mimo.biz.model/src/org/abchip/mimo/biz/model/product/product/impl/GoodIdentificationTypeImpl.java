@@ -32,10 +32,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class GoodIdentificationTypeImpl extends BizEntityTypeImpl<GoodIdentification> implements GoodIdentificationType {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

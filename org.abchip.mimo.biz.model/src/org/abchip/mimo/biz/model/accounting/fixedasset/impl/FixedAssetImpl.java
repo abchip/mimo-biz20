@@ -72,10 +72,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class FixedAssetImpl extends BizEntityTypedImpl<FixedAssetType> implements FixedAsset {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

@@ -30,10 +30,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ShipmentGatewayConfigTypeImpl extends BizEntityTypeImpl<ShipmentGatewayConfig> implements ShipmentGatewayConfigType {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

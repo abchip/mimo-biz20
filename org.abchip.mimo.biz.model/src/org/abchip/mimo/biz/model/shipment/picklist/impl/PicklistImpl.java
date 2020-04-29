@@ -41,10 +41,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class PicklistImpl extends BizEntityImpl implements Picklist {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

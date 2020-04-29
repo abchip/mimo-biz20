@@ -61,10 +61,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ShipmentCostEstimateImpl extends BizEntityImpl implements ShipmentCostEstimate {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

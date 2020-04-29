@@ -34,10 +34,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class TechDataCalendarImpl extends BizEntityImpl implements TechDataCalendar {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

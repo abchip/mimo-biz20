@@ -27,10 +27,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class JobInterviewTypeImpl extends BizEntityImpl implements JobInterviewType {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

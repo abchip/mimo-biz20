@@ -30,10 +30,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class InventoryItemLabelTypeImpl extends BizEntityTypeImpl<InventoryItemLabel> implements InventoryItemLabelType {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	
 	/**
 	 * <!-- begin-user-doc -->

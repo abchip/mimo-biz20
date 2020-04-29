@@ -30,10 +30,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class AgreementTypeAttrImpl extends BizEntityImpl implements AgreementTypeAttr {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

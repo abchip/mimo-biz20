@@ -29,10 +29,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public abstract class BizServiceRequestImpl<V extends ServiceResponse> extends ServiceRequestImpl<V> implements BizServiceRequest<V> {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->

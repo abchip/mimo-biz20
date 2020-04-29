@@ -60,10 +60,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class RequirementImpl extends BizEntityTypedImpl<RequirementType> implements Requirement {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

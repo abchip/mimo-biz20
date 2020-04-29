@@ -38,10 +38,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class OrderTermImpl extends BizEntityImpl implements OrderTerm {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

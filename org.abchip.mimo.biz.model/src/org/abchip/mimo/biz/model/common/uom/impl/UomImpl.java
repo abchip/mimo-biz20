@@ -36,10 +36,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class UomImpl extends BizEntityTypedImpl<UomType> implements Uom {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

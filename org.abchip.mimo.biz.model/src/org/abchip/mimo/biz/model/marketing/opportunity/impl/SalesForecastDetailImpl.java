@@ -38,10 +38,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class SalesForecastDetailImpl extends BizEntityImpl implements SalesForecastDetail {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

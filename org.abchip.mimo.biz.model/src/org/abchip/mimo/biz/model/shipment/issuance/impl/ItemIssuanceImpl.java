@@ -45,10 +45,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ItemIssuanceImpl extends BizEntityImpl implements ItemIssuance {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

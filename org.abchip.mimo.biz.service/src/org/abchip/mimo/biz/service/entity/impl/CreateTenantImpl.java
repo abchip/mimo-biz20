@@ -41,10 +41,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceResponse> implements CreateTenant {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->

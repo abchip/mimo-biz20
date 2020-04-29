@@ -39,10 +39,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class CostComponentCalcImpl extends BizEntityImpl implements CostComponentCalc {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	
 	/**
 	 * <!-- begin-user-doc -->

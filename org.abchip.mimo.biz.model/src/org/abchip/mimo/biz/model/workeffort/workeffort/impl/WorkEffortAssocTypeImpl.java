@@ -33,10 +33,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class WorkEffortAssocTypeImpl extends BizEntityTypeImpl<WorkEffortAssoc> implements WorkEffortAssocType {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

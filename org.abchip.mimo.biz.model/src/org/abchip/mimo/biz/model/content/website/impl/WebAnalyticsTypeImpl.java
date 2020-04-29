@@ -30,10 +30,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class WebAnalyticsTypeImpl extends BizEntityTypeImpl<WebAnalyticsConfig> implements WebAnalyticsType {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	
 	/**
 	 * <!-- begin-user-doc -->

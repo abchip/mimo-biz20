@@ -30,10 +30,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ProductFeatureIactnTypeImpl extends BizEntityTypeImpl<ProductFeatureIactn> implements ProductFeatureIactnType {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	
 	/**
 	 * <!-- begin-user-doc -->

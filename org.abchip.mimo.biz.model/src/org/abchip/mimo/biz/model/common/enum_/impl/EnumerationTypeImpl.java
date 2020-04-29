@@ -31,10 +31,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class EnumerationTypeImpl extends BizEntityTypeImpl<Enumeration> implements EnumerationType {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

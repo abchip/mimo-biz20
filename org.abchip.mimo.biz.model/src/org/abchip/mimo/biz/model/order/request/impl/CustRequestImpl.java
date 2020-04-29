@@ -69,10 +69,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class CustRequestImpl extends BizEntityTypedImpl<CustRequestType> implements CustRequest {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

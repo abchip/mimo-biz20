@@ -31,10 +31,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class ContactMechAttributeImpl extends BizEntityImpl implements ContactMechAttribute {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

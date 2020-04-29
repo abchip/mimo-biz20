@@ -40,10 +40,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class GeoImpl extends BizEntityTypedImpl<GeoType> implements Geo {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

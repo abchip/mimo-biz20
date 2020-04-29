@@ -52,10 +52,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class ZipSalesTaxLookupImpl extends BizEntityImpl implements ZipSalesTaxLookup {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

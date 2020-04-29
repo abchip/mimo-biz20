@@ -41,10 +41,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ShipmentTimeEstimateImpl extends BizEntityImpl implements ShipmentTimeEstimate {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

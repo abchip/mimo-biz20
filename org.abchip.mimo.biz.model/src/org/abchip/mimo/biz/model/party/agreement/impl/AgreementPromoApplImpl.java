@@ -35,10 +35,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class AgreementPromoApplImpl extends BizEntityImpl implements AgreementPromoAppl {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

@@ -40,10 +40,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ServerHitBinImpl extends BizEntityImpl implements ServerHitBin {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

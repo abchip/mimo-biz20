@@ -73,10 +73,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class OrderAdjustmentImpl extends BizEntityTypedImpl<OrderAdjustmentType> implements OrderAdjustment {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

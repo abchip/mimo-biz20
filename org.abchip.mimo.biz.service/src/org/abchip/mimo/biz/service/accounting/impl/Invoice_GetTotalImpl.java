@@ -22,10 +22,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class Invoice_GetTotalImpl extends ServiceMethodRequestImpl<Invoice, BigDecimal> implements Invoice_GetTotal {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->

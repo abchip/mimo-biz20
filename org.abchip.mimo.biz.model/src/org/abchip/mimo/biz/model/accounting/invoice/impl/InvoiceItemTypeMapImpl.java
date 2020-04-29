@@ -31,10 +31,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class InvoiceItemTypeMapImpl extends BizEntityImpl implements InvoiceItemTypeMap {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

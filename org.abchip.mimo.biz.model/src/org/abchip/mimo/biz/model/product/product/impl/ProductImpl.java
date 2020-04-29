@@ -121,10 +121,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ProductImpl extends BizEntityTypedImpl<ProductType> implements Product {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

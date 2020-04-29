@@ -31,10 +31,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class FinAccountTypeAttrImpl extends BizEntityImpl implements FinAccountTypeAttr {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

@@ -21,10 +21,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ResetGrandTotalResponseImpl extends ServiceResponseImpl implements ResetGrandTotalResponse {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

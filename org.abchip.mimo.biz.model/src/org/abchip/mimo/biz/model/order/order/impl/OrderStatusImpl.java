@@ -39,10 +39,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class OrderStatusImpl extends BizEntityImpl implements OrderStatus {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

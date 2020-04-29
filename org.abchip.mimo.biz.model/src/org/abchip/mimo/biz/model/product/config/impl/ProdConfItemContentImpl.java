@@ -35,10 +35,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ProdConfItemContentImpl extends BizEntityTypedImpl<ProdConfItemContentType> implements ProdConfItemContent {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	
 	/**
 	 * <!-- begin-user-doc -->

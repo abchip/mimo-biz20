@@ -26,10 +26,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class CountryTeleCodeImpl extends CountryCodeImpl implements CountryTeleCode {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

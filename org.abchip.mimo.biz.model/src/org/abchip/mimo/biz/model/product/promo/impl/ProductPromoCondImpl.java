@@ -36,10 +36,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ProductPromoCondImpl extends BizEntityImpl implements ProductPromoCond {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -40,10 +40,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class PerfReviewImpl extends BizEntityImpl implements PerfReview {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -42,10 +42,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class InvoiceTermImpl extends BizEntityImpl implements InvoiceTerm {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

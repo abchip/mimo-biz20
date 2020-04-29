@@ -57,10 +57,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ReturnHeaderImpl extends BizEntityImpl implements ReturnHeader {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

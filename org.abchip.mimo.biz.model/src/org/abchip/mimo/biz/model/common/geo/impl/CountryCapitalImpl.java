@@ -26,10 +26,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class CountryCapitalImpl extends CountryCodeImpl implements CountryCapital {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

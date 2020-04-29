@@ -28,10 +28,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ProductMaintTypeImpl extends BizEntityImpl implements ProductMaintType {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

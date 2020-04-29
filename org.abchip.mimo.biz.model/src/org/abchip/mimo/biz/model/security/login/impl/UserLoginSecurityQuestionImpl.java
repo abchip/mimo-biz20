@@ -30,10 +30,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class UserLoginSecurityQuestionImpl extends BizEntityImpl implements UserLoginSecurityQuestion {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 
 	/**

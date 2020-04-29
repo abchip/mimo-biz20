@@ -40,10 +40,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class PaymentGatewaySagePayImpl extends BizEntityImpl implements PaymentGatewaySagePay {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

@@ -34,10 +34,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class DeductionImpl extends BizEntityTypedImpl<DeductionType> implements Deduction {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

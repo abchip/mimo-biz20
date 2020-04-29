@@ -51,10 +51,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class UserLoginImpl extends BizEntityImpl implements UserLogin {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 
 	/**

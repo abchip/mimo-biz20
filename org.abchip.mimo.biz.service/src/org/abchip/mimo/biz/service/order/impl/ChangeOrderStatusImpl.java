@@ -31,10 +31,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ChangeOrderStatusImpl extends BizServiceRequestImpl<ChangeOrderStatusResponse> implements ChangeOrderStatus {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

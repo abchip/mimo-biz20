@@ -43,10 +43,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class PartyBenefitImpl extends BizEntityTypedImpl<BenefitType> implements PartyBenefit {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -52,10 +52,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class MarketingCampaignImpl extends BizEntityImpl implements MarketingCampaign {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 
 	/**

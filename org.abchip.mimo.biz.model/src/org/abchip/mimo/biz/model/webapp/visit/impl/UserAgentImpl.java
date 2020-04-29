@@ -36,10 +36,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class UserAgentImpl extends BizEntityImpl implements UserAgent {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

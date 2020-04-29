@@ -30,10 +30,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class AcctgTransTypeAttrImpl extends BizEntityImpl implements AcctgTransTypeAttr {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

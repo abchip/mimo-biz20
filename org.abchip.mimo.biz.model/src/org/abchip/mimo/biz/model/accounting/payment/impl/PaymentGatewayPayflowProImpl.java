@@ -50,10 +50,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class PaymentGatewayPayflowProImpl extends BizEntityImpl implements PaymentGatewayPayflowPro {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

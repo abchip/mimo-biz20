@@ -47,10 +47,6 @@ import org.osgi.service.log.Logger;
  * @generated
  */
 public class LoadSeedsImpl extends ServiceRequestImpl<ServiceResponse> implements LoadSeeds {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	private static final Logger LOGGER = Logs.getLogger(LoadSeedsImpl.class);
 

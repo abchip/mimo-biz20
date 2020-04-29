@@ -40,10 +40,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ProductGroupOrderImpl extends BizEntityImpl implements ProductGroupOrder {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

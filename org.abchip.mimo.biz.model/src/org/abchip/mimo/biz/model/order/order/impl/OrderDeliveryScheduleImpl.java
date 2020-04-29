@@ -43,10 +43,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class OrderDeliveryScheduleImpl extends BizEntityImpl implements OrderDeliverySchedule {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

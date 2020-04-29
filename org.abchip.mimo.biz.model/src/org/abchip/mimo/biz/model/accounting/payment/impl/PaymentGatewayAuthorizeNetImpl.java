@@ -45,10 +45,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class PaymentGatewayAuthorizeNetImpl extends BizEntityImpl implements PaymentGatewayAuthorizeNet {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

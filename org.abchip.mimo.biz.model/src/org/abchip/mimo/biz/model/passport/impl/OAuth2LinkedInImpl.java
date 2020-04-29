@@ -36,10 +36,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class OAuth2LinkedInImpl extends BizEntityImpl implements OAuth2LinkedIn {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -58,10 +58,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class InvoiceItemImpl extends BizEntityTypedImpl<InvoiceItemType> implements InvoiceItem {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

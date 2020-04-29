@@ -44,10 +44,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class JobRequisitionImpl extends BizEntityImpl implements JobRequisition {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

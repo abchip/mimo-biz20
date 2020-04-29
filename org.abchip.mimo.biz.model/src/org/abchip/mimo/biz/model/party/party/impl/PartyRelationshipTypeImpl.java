@@ -35,10 +35,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class PartyRelationshipTypeImpl extends BizEntityTypeImpl<PartyRelationship> implements PartyRelationshipType {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

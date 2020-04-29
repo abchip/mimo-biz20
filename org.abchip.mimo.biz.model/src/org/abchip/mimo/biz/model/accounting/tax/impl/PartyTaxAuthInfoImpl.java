@@ -37,10 +37,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class PartyTaxAuthInfoImpl extends BizEntityImpl implements PartyTaxAuthInfo {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

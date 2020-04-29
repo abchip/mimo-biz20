@@ -43,10 +43,6 @@ import org.eclipse.emf.ecore.EClass;
  */
 public class InvoiceItemAssocImpl extends BizEntityTypedImpl<InvoiceItemAssocType> implements InvoiceItemAssoc {
 	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated

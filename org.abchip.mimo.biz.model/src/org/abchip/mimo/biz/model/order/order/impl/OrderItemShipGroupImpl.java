@@ -52,10 +52,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class OrderItemShipGroupImpl extends BizEntityImpl implements OrderItemShipGroup {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -37,10 +37,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class JobManagerLockImpl extends BizEntityImpl implements JobManagerLock {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

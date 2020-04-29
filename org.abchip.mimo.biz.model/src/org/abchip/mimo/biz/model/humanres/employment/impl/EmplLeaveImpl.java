@@ -39,10 +39,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class EmplLeaveImpl extends BizEntityTypedImpl<EmplLeaveType> implements EmplLeave {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

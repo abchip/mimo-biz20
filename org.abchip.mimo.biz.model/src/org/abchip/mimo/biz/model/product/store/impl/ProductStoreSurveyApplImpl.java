@@ -44,10 +44,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ProductStoreSurveyApplImpl extends BizEntityImpl implements ProductStoreSurveyAppl {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

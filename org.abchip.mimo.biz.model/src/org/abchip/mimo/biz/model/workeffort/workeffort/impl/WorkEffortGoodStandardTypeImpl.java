@@ -30,10 +30,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class WorkEffortGoodStandardTypeImpl extends BizEntityTypeImpl<WorkEffortGoodStandard> implements WorkEffortGoodStandardType {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

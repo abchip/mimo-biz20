@@ -60,10 +60,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class OrderPaymentPreferenceImpl extends BizEntityImpl implements OrderPaymentPreference {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

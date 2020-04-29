@@ -37,10 +37,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class InventoryItemStatusImpl extends BizEntityImpl implements InventoryItemStatus {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	
 	/**
 	 * <!-- begin-user-doc -->

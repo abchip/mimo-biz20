@@ -56,10 +56,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class QuoteImpl extends BizEntityTypedImpl<QuoteType> implements Quote {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	/**
 	 * <!-- begin-user-doc -->

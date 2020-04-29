@@ -30,10 +30,6 @@ import org.eclipse.emf.ecore.EClass;
  * @generated
  */
 public class ProductCategoryContentTypeImpl extends BizEntityTypeImpl<ProductCategoryContent> implements ProductCategoryContentType {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 	
 	/**
 	 * <!-- begin-user-doc -->
