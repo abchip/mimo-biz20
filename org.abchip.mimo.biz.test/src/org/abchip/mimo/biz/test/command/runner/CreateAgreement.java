@@ -23,31 +23,37 @@ import org.abchip.mimo.biz.model.party.agreement.AgreementType;
 import org.abchip.mimo.biz.model.party.agreement.TermType;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
-import org.abchip.mimo.biz.model.product.price.ProductPrice;
+import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.service.common.GetCommonDefault;
 import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
 import org.abchip.mimo.biz.service.party.GetPartyDefault;
 import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
+import org.abchip.mimo.biz.service.product.CalculateProductPrice;
+import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
+import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceManager;
+import org.abchip.mimo.util.Logs;
+import org.osgi.service.log.Logger;
 
 public class CreateAgreement implements Callable<Long> {
 
+	private static final Logger LOGGER = Logs.getLogger(CreateAgreement.class);
 	Context context;
 	GetCommonDefaultResponse commonDefault;
 	GetPartyDefaultResponse partyDefault;
 
 	Party party;
-	List<ProductPrice> productPrices;
+	List<Product> products;
 
-	public CreateAgreement(Context context, Party party, List<ProductPrice> productPrices) {
+	public CreateAgreement(Context context, Party party, List<Product> products) {
 		this.context = context;
 		this.party = party;
-		this.productPrices = productPrices;
+		this.products = products;
 	}
 
 	@Override
@@ -61,12 +67,12 @@ public class CreateAgreement implements Callable<Long> {
 		partyDefault = serviceManager.execute(getPartyDefault);
 
 		long time1 = System.currentTimeMillis();
-		createAgreement();
+		createAgreement(serviceManager);
 		long time2 = System.currentTimeMillis();
 		return time2 - time1;
 	}
 
-	private void createAgreement() throws ResourceException {
+	private void createAgreement(ServiceManager serviceManager) throws ResourceException, ServiceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		RoleType roleTypeFrom = context.createProxy(RoleType.class, "INTERNAL_ORGANIZATIO");
@@ -91,18 +97,32 @@ public class CreateAgreement implements Callable<Long> {
 		String agreementItemSeqId = createRow(resourceManager, agreement);
 
 		// row product
-		for (ProductPrice productPrice : this.productPrices)
-			createRowProduct(resourceManager, agreement, productPrice, agreementItemSeqId);
+		for (Product product : this.products)
+			createRowProduct(resourceManager, serviceManager, agreement, product, agreementItemSeqId);
 	}
 
-	private void createRowProduct(ResourceManager resourceManager, Agreement agreement, ProductPrice productPrice, String itemSeqId) throws ResourceException {
+	private void createRowProduct(ResourceManager resourceManager, ServiceManager serviceManager, Agreement agreement, Product product, String itemSeqId) throws ResourceException, ServiceException {
 		// AgreementProductAppl
 		ResourceWriter<AgreementProductAppl> agreementProductApplWriter = resourceManager.getResourceWriter(context, AgreementProductAppl.class);
 		AgreementProductAppl agreementProductAppl = agreementProductApplWriter.make();
 		agreementProductAppl.setAgreementId(agreement);
 		agreementProductAppl.setAgreementItemSeqId(itemSeqId);
-		agreementProductAppl.setProductId(productPrice.getProductId());
-		agreementProductAppl.setPrice(productPrice.getPrice());
+		agreementProductAppl.setProductId(product);
+		
+		// price calculation
+		CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
+		calculateProductPrice.setProduct(product);
+		calculateProductPrice.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
+
+		CalculateProductPriceResponse response = serviceManager.execute(calculateProductPrice);
+		if (response.isError())
+			LOGGER.info("Errore in recupero prezzo articolo " + product.getID());
+
+		if (response.isValidPriceFound()) {
+			agreementProductAppl.setPrice(response.getBasePrice());
+		} else
+			LOGGER.info("Prezzo non valido per articolo " + product.getID());
+		
 		agreementProductApplWriter.create(agreementProductAppl);
 	}
 

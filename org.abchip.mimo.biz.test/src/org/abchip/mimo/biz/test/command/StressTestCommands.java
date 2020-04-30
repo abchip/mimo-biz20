@@ -15,7 +15,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 import org.abchip.mimo.biz.model.party.party.Party;
-import org.abchip.mimo.biz.model.product.price.ProductPrice;
+import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.test.command.runner.CreateAgreement;
 import org.abchip.mimo.biz.test.command.runner.CreateInpsAgreement;
 import org.abchip.mimo.biz.test.command.runner.CreateParty;
@@ -131,13 +131,13 @@ public class StressTestCommands extends BaseTestCommands {
 			interpreter.println("Customer not present, launch command 'createTestBaseData'");
 			return;
 		}
-		List<ProductPrice> productPrices = StressTestUtils.getDigitalProductPrices(context);
+		List<Product> products = StressTestUtils.getDigitalProducts(context);
 
 		long time1 = System.currentTimeMillis();
 
 		ExecutorService executor = Executors.newFixedThreadPool(1);
 		for (Party party : parties)
-			executor.submit(new CreateSalesOrder(context, party, productPrices));
+			executor.submit(new CreateSalesOrder(context, party, products));
 
 		executor.shutdown();
 		executor.awaitTermination(1, TimeUnit.MINUTES);
@@ -153,13 +153,13 @@ public class StressTestCommands extends BaseTestCommands {
 			interpreter.println("Customer not present, launch command 'createTestBaseData'");
 			return;
 		}
-		List<ProductPrice> productPrices = StressTestUtils.getDigitalProductPrices(context);
+		List<Product> products = StressTestUtils.getDigitalProducts(context);
 
 		long time1 = System.currentTimeMillis();
 
 		ExecutorService executor = Executors.newFixedThreadPool(1);
 		for (Party party : parties)
-			executor.submit(new CreateSalesInvoice(context, party, productPrices));
+			executor.submit(new CreateSalesInvoice(context, party, products));
 
 		executor.shutdown();
 		executor.awaitTermination(1, TimeUnit.MINUTES);
@@ -195,13 +195,13 @@ public class StressTestCommands extends BaseTestCommands {
 			interpreter.println("Supplier not present, launch command 'createTestBaseData'");
 			return;
 		}
-		List<ProductPrice> productPrices = StressTestUtils.getDigitalProductPrices(context);
+		List<Product> products = StressTestUtils.getDigitalProducts(context);
 
 		long time1 = System.currentTimeMillis();
 
 		ExecutorService executor = Executors.newFixedThreadPool(1);
 		for (Party party : parties)
-			executor.submit(new CreatePurchaseInvoice(context, party, productPrices));
+			executor.submit(new CreatePurchaseInvoice(context, party, products));
 
 		executor.shutdown();
 		executor.awaitTermination(1, TimeUnit.MINUTES);
@@ -217,13 +217,13 @@ public class StressTestCommands extends BaseTestCommands {
 			interpreter.println("Customer not present, launch command 'createTestBaseData'");
 			return;
 		}
-		List<ProductPrice> productPrices = StressTestUtils.getDigitalProductPrices(context);
+		List<Product> products = StressTestUtils.getDigitalProducts(context);
 
 		long time1 = System.currentTimeMillis();
 
 		ExecutorService executor = Executors.newFixedThreadPool(1);
 		for (Party party : parties)
-			executor.submit(new CreateAgreement(context, party, productPrices));
+			executor.submit(new CreateAgreement(context, party, products));
 
 		executor.shutdown();
 		executor.awaitTermination(1, TimeUnit.MINUTES);

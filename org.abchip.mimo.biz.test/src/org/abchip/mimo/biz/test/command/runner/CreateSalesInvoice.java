@@ -25,31 +25,37 @@ import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.party.contact.ContactMechPurposeType;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
-import org.abchip.mimo.biz.model.product.price.ProductPrice;
+import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.service.common.GetCommonDefault;
 import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
 import org.abchip.mimo.biz.service.party.GetPartyDefault;
 import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
+import org.abchip.mimo.biz.service.product.CalculateProductPrice;
+import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
+import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceManager;
+import org.abchip.mimo.util.Logs;
+import org.osgi.service.log.Logger;
 
 public class CreateSalesInvoice implements Callable<Long> {
 
+	private static final Logger LOGGER = Logs.getLogger(CreateSalesInvoice.class);
 	Context context;
 	GetCommonDefaultResponse commonDefault;
 	GetPartyDefaultResponse partyDefault;
 
 	Party party;
-	List<ProductPrice> productPrices;
+	List<Product> products;
 
-	public CreateSalesInvoice(Context context, Party party, List<ProductPrice> productPrices) {
+	public CreateSalesInvoice(Context context, Party party, List<Product> products) {
 		this.context = context;
 		this.party = party;
-		this.productPrices = productPrices;
+		this.products = products;
 	}
 
 	@Override
@@ -63,12 +69,12 @@ public class CreateSalesInvoice implements Callable<Long> {
 		partyDefault = serviceManager.execute(getPartyDefault);
 
 		long time1 = System.currentTimeMillis();
-		createInvoice();
+		createInvoice(serviceManager);
 		long time2 = System.currentTimeMillis();
 		return time2 - time1;
 	}
 
-	private void createInvoice() throws ResourceException {
+	private void createInvoice(ServiceManager serviceManager) throws ResourceException, ServiceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		Party company = partyDefault.getOrganization();
@@ -142,24 +148,37 @@ public class CreateSalesInvoice implements Callable<Long> {
 
 		// Items
 		long i = 1;
-		for (ProductPrice productPrice : this.productPrices) {
-			createInvoiceItem(resourceManager, invoice, StressTestUtils.formatPaddedNumber(i++, 5), 1, productPrice);
+		for (Product product : this.products) {
+			createInvoiceItem(resourceManager, serviceManager, invoice, StressTestUtils.formatPaddedNumber(i++, 5), 1, product);
 		}
 	}
 
-	private void createInvoiceItem(ResourceManager resourceManager, Invoice invoice, String itemSeqiD, int quantity, ProductPrice productPrice) throws ResourceException {
+	private void createInvoiceItem(ResourceManager resourceManager, ServiceManager serviceManager, Invoice invoice, String itemSeqiD, int quantity, Product product) throws ResourceException, ServiceException {
 		ResourceWriter<InvoiceItem> invoiceItemWriter = resourceManager.getResourceWriter(context, InvoiceItem.class);
 
 		InvoiceItem invoiceItem = invoiceItemWriter.make();
 		invoiceItem.setInvoiceId(invoice);
 		invoiceItem.setInvoiceItemSeqId(itemSeqiD);
 		invoiceItem.setInvoiceItemTypeId(context.createProxy(InvoiceItemType.class, "INV_DPROD_ITEM"));
-		invoiceItem.setProductId(productPrice.getProductId());
-		invoiceItem.setDescription(productPrice.getProductId().getProductName());
+		invoiceItem.setProductId(product);
+		invoiceItem.setDescription(product.getProductName());
 		invoiceItem.setQuantity(new BigDecimal(quantity));
-		invoiceItem.setTaxableFlag(productPrice.getProductId().getTaxable());
-		invoiceItem.setAmount(productPrice.getPrice());
+		invoiceItem.setTaxableFlag(product.getTaxable());
+		
+		// price calculation
+		CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
+		calculateProductPrice.setProduct(product);
+		calculateProductPrice.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
 
+		CalculateProductPriceResponse productPrice = serviceManager.execute(calculateProductPrice);
+		if (productPrice.isError())
+			LOGGER.error("Errore in recupero prezzo articolo " + product.getID());
+
+		if (productPrice.isValidPriceFound()) {
+			invoiceItem.setAmount(productPrice.getBasePrice());
+		} else
+			LOGGER.error("Prezzo non valido per articolo " + product.getID());
+		
 		invoiceItemWriter.create(invoiceItem);
 
 		// TODO service calcTaxForDisplay to add new row tax BizTestCommand

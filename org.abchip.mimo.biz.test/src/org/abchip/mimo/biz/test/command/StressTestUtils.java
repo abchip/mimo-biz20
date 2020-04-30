@@ -15,7 +15,6 @@ import java.util.List;
 
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.PartyRole;
-import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.product.price.ProductPrice;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
@@ -31,39 +30,7 @@ public class StressTestUtils {
 
 	public static ProductStore getProductStore(Context context, ResourceManager resourceManager) throws ResourceException {
 		ResourceWriter<ProductStore> productStoreWriter = resourceManager.getResourceWriter(context, ProductStore.class);
-
-		ProductStore productStore = productStoreWriter.first();
-		if (productStore != null)
-			return productStore;
-
-		productStore = productStoreWriter.make(true);
-		productStore.setAllowPassword(false);
-		productStore.setAutoApproveInvoice(false);
-		productStore.setAutoOrderCcTryExp(false);
-		productStore.setAutoOrderCcTryLaterNsf(false);
-		productStore.setAutoOrderCcTryOtherCards(false);
-		productStore.setCheckInventory(false);
-		productStore.setInventoryFacilityId(context.createProxy(Facility.class, "WebStoreWarehouse"));
-		productStore.setIsDemoStore(false);
-		productStore.setOneInventoryFacility(false);
-		productStore.setPayToPartyId(context.createProxy(Party.class, "Company"));
-		productStore.setProdSearchExcludeVariants(false);
-		productStore.setProrateShipping(false);
-		productStore.setProrateTaxes(false);
-		productStore.setReqShipAddrForDigItems(false);
-		productStore.setReserveInventory(false);
-		productStore.setRetryFailedAuths(false);
-		productStore.setShipIfCaptureFails(false);
-		productStore.setShowCheckoutGiftOptions(false);
-		productStore.setShowPricesWithVatTax(true);
-		productStore.setStoreName("ABChip test store");
-		productStore.setTitle("Open For Commerce");
-		productStore.setVatTaxAuthGeoId("ITA");
-		productStore.setVatTaxAuthPartyId("ITA_ADE");
-		productStore.setVisualThemeId("EC_DEFAULT");
-		productStoreWriter.create(productStore, true);
-
-		return productStore;
+		return productStoreWriter.first();
 	}
 
 	public static ProductPrice getProductPrice(Context context, ResourceManager resourceManager, Product product) throws ResourceException {
@@ -126,26 +93,23 @@ public class StressTestUtils {
 		return customers;
 	}
 
-	public static List<ProductPrice> getDigitalProductPrices(Context context) throws ResourceException {
+	public static List<Product> getDigitalProducts(Context context) throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		ResourceReader<Product> productReader = resourceManager.getResourceReader(context, Product.class);
-		List<ProductPrice> productPrices = new ArrayList<ProductPrice>();
+		List<Product> productList = new ArrayList<Product>();
 
 		try (EntityIterator<Product> products = productReader.find()) {
 			for (Product product : products) {
 				if (!product.getProductTypeId().getID().equals("DIGITAL_GOOD"))
 					continue;
-				ProductPrice price = StressTestUtils.getProductPrice(context, resourceManager, product);
-				if (price == null)
-					continue;
-				productPrices.add(price);
+				productList.add(product);
 			}
 		}
 
-		return productPrices;
+		return productList;
 	}
-
+	
 	public static List<SupplierProduct> getSupplierProduct(Context context, Party party) throws ResourceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 

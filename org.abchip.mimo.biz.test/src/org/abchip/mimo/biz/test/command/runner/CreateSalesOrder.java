@@ -31,7 +31,7 @@ import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.abchip.mimo.biz.model.party.contact.ContactMechPurposeType;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
-import org.abchip.mimo.biz.model.product.price.ProductPrice;
+import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
@@ -39,26 +39,32 @@ import org.abchip.mimo.biz.service.common.GetCommonDefault;
 import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
 import org.abchip.mimo.biz.service.party.GetPartyDefault;
 import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
+import org.abchip.mimo.biz.service.product.CalculateProductPrice;
+import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
+import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceManager;
+import org.abchip.mimo.util.Logs;
+import org.osgi.service.log.Logger;
 
 public class CreateSalesOrder implements Callable<Long> {
 
+	private static final Logger LOGGER = Logs.getLogger(CreateSalesOrder.class);
 	Context context;
 	GetCommonDefaultResponse commonDefault;
 	GetPartyDefaultResponse partyDefault;
 
 	Party party;
-	List<ProductPrice> productPrices;
+	List<Product> products;
 
-	public CreateSalesOrder(Context context, Party party, List<ProductPrice> productPrices) {
+	public CreateSalesOrder(Context context, Party party, List<Product> products) {
 		this.context = context;
 		this.party = party;
-		this.productPrices = productPrices;
+		this.products = products;
 	}
 
 	@Override
@@ -72,12 +78,12 @@ public class CreateSalesOrder implements Callable<Long> {
 		partyDefault = serviceManager.execute(getPartyDefault);
 
 		long time1 = System.currentTimeMillis();
-		createOrder();
+		createOrder(serviceManager);
 		long time2 = System.currentTimeMillis();
 		return time2 - time1;
 	}
 
-	private void createOrder() throws ResourceException {
+	private void createOrder(ServiceManager serviceManager) throws ResourceException, ServiceException {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		ProductStore productStore = StressTestUtils.getProductStore(context, resourceManager);
@@ -133,8 +139,8 @@ public class CreateSalesOrder implements Callable<Long> {
 		// OrderItem
 		long i = 1;
 		long total = 0;
-		for (ProductPrice productPrice : this.productPrices) {
-			createOrderItem(resourceManager, orderHeader, StressTestUtils.formatPaddedNumber(i++, 5), shipGroupSeqId, 1, productPrice);
+		for (Product product : this.products) {
+			createOrderItem(resourceManager, serviceManager, orderHeader, StressTestUtils.formatPaddedNumber(i++, 5), shipGroupSeqId, 1, product);
 			total++;
 		}
 		// OrderRole
@@ -191,22 +197,35 @@ public class CreateSalesOrder implements Callable<Long> {
 
 	}
 
-	private void createOrderItem(ResourceManager resourceManager, OrderHeader orderHeader, String itemSeqiD, String shipGroupSeqId, int quantity, ProductPrice productPrice)
-			throws ResourceException {
+	private void createOrderItem(ResourceManager resourceManager, ServiceManager serviceManager, OrderHeader orderHeader, String itemSeqiD, String shipGroupSeqId, int quantity, Product product)
+			throws ResourceException, ServiceException {
 		ResourceWriter<OrderItem> orderItemWriter = resourceManager.getResourceWriter(context, OrderItem.class);
-
-		// TODO servizio calculateProductPrice
 
 		OrderItem orderItem = orderItemWriter.make();
 		orderItem.setOrderId(orderHeader);
 		orderItem.setOrderItemSeqId(itemSeqiD);
 		orderItem.setOrderItemTypeId(context.createProxy(OrderItemType.class, "PRODUCT_ORDER_ITEM"));
 		orderItem.setProdCatalogId("ABChipTest");
-		orderItem.setProductId(productPrice.getProductId());
-		orderItem.setItemDescription(productPrice.getProductId().getProductName());
+		orderItem.setProductId(product);
+		orderItem.setItemDescription(product.getProductName());
 		orderItem.setStatusId(context.createProxy(StatusItem.class, "ITEM_CREATED"));
 		orderItem.setQuantity(new BigDecimal(quantity));
-		orderItem.setUnitPrice(productPrice.getPrice());
+		
+		// price calculation
+		CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
+		calculateProductPrice.setProduct(product);
+		calculateProductPrice.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
+
+		CalculateProductPriceResponse response = serviceManager.execute(calculateProductPrice);
+		if (response.isError())
+			LOGGER.error("Errore in recupero prezzo articolo " + product.getID());
+
+		if (response.isValidPriceFound()) {
+			orderItem.setUnitListPrice(response.getListPrice());
+			orderItem.setUnitPrice(response.getBasePrice());
+		} else
+			LOGGER.error("Prezzo non valido per articolo " + product.getID());
+
 		orderItemWriter.create(orderItem);
 
 		// OrderStatus
