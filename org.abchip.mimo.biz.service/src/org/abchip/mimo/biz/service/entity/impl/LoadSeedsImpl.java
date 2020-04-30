@@ -40,10 +40,8 @@ import org.osgi.service.log.Logger;
  * The following features are implemented:
  * </p>
  * <ul>
- * <li>{@link org.abchip.mimo.biz.service.entity.impl.LoadSeedsImpl#getSeedPattern
- * <em>Seed Pattern</em>}</li>
- * <li>{@link org.abchip.mimo.biz.service.entity.impl.LoadSeedsImpl#isUpdate
- * <em>Update</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.entity.impl.LoadSeedsImpl#getSeedPattern <em>Seed Pattern</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.entity.impl.LoadSeedsImpl#isUpdate <em>Update</em>}</li>
  * </ul>
  *
  * @generated
@@ -54,7 +52,6 @@ public class LoadSeedsImpl extends ServiceRequestImpl<ServiceResponse> implement
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected LoadSeedsImpl() {
@@ -63,7 +60,6 @@ public class LoadSeedsImpl extends ServiceRequestImpl<ServiceResponse> implement
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -73,14 +69,12 @@ public class LoadSeedsImpl extends ServiceRequestImpl<ServiceResponse> implement
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected static final int ESTATIC_FEATURE_COUNT = 3;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -90,17 +84,15 @@ public class LoadSeedsImpl extends ServiceRequestImpl<ServiceResponse> implement
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public String getSeedPattern() {
-		return (String) eGet(EntityPackage.Literals.LOAD_SEEDS__SEED_PATTERN, true);
+		return (String)eGet(EntityPackage.Literals.LOAD_SEEDS__SEED_PATTERN, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -110,17 +102,15 @@ public class LoadSeedsImpl extends ServiceRequestImpl<ServiceResponse> implement
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean isUpdate() {
-		return (Boolean) eGet(EntityPackage.Literals.LOAD_SEEDS__UPDATE, true);
+		return (Boolean)eGet(EntityPackage.Literals.LOAD_SEEDS__UPDATE, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override

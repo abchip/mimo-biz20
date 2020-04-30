@@ -25,7 +25,6 @@ import org.eclipse.emf.ecore.EClass;
 public class GetPartyDefaultImpl extends BizServiceRequestImpl<GetPartyDefaultResponse> implements GetPartyDefault {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected GetPartyDefaultImpl() {
@@ -34,7 +33,6 @@ public class GetPartyDefaultImpl extends BizServiceRequestImpl<GetPartyDefaultRe
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
