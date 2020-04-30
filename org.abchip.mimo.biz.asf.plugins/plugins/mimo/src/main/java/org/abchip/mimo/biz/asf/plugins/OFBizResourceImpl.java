@@ -202,7 +202,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 				this.setInternalResource(entity);
 				EntityUtils.completeEntity(entity, genericValue);
 				if (proxy)
-					entity = frame.createProxy(entity.getID(), this.getTenant());
+					entity = this.createProxy(entity.getID());
 			}
 
 			TransactionUtil.commit(beganTransaction);
@@ -281,7 +281,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 				this.setInternalResource(entity);
 				EntityUtils.completeEntity(entity, genericValue);				
 				if (proxy)
-					entity = frame.createProxy(entity.getID(), this.getTenant());
+					entity = this.createProxy(entity.getID());
 
 				entities.add(entity);
 			}

@@ -120,8 +120,8 @@ public class CreateTenantPartyImpl extends CreateTenantImpl implements CreateTen
 			ResourceWriter<Person> personWriter = context.getResourceManager().getResourceWriter(context, Person.class, this.getTenantId());
 			Person tenantPerson = personWriter.make();
 			tenantPerson.setPartyId(this.getTenantId());
-			tenantPerson.setStatusId(context.getFrame(StatusItem.class).createProxy("PARTY_ENABLED", this.getTenant()));
-			tenantPerson.setPartyTypeId(context.getFrame(PartyType.class).createProxy("PERSON", this.getTenant()));
+			tenantPerson.setStatusId(context.createProxy(StatusItem.class, "PARTY_ENABLED", this.getTenant()));
+			tenantPerson.setPartyTypeId(context.createProxy(PartyType.class, "PERSON", this.getTenant()));
 			tenantPerson.setFirstName("Tenant " + this.getTenantId());
 			personWriter.create(tenantPerson);
 		}

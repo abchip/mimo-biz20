@@ -36,10 +36,10 @@ public class PartyContactMechTest {
 		PartyContactMech partyContactMech = ContactFactory.eINSTANCE.createPartyContactMech();
 		testAsserter.assertNotNull("Frame PartyContactMech creation", partyContactMech);
 
-		PostalAddress postalAddress = testRunner.getContext().getFrame(Party.class).createProxy(partyId, testRunner.getContext().getTenant()).getPostalAddress();
+		PostalAddress postalAddress = testRunner.getContext().createProxy(Party.class, partyId).getPostalAddress();
 		testAsserter.assertNotNull("PostalAddress '" + partyId + "' exist", postalAddress);
 
-		ContactMech eMail = testRunner.getContext().getFrame(Party.class).createProxy(partyId, testRunner.getContext().getTenant()).getEmail();
+		ContactMech eMail = testRunner.getContext().createProxy(Party.class, partyId).getEmail();
 		testAsserter.assertNotNull("Email '" + partyId + "' exist", eMail);
 	}
 }

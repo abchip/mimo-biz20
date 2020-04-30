@@ -44,7 +44,7 @@ public class ServiceTestCommands extends BaseTestCommands {
 		String product = this.nextArgument(interpreter, "Marketing");
 
 		CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
-		calculateProductPrice.setProduct(context.getFrame(Product.class).createProxy(product, context.getTenant()));
+		calculateProductPrice.setProduct(context.createProxy(Product.class, product));
 		calculateProductPrice.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
 
 		CalculateProductPriceResponse response = serviceManager.execute(calculateProductPrice);

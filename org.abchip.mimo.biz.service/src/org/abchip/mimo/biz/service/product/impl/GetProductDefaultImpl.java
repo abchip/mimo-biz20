@@ -62,7 +62,7 @@ public class GetProductDefaultImpl extends BizServiceRequestImpl<GetProductDefau
 				if (!contactMech.getContactMechTypeId().getContactMechTypeId().equals("POSTAL_ADDRESS"))
 					continue;
 
-				response.setFacilityPostalAddress(context.getFrame(PostalAddress.class).createProxy(facilityContactMech.getContactMechId().getContactMechId(), this.getTenant()));
+				response.setFacilityPostalAddress(context.createProxy(PostalAddress.class, facilityContactMech.getContactMechId().getContactMechId(), this.getTenant()));
 				break;
 			}
 		}

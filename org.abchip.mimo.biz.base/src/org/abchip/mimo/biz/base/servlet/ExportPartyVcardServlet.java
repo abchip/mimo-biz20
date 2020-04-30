@@ -134,7 +134,7 @@ public class ExportPartyVcardServlet extends BaseServlet {
 	}
 
 	private void writeLatestPostalAddress(Context context, VCard vcard, String partyId) throws ResourceException {
-		PostalAddress postalAddress = context.getFrame(Party.class).createProxy(partyId, context.getTenant()).getPostalAddress();
+		PostalAddress postalAddress = context.createProxy(Party.class, partyId).getPostalAddress();
 		if (postalAddress == null)
 			return;
 
@@ -157,7 +157,7 @@ public class ExportPartyVcardServlet extends BaseServlet {
 	}
 
 	private void writeLatestTelecomNumber(Context context, VCard vcard, String partyId) throws ResourceException {
-		TelecomNumber telecomNumber = context.getFrame(Party.class).createProxy(partyId, context.getTenant()).getTelecomNumber();
+		TelecomNumber telecomNumber = context.createProxy(Party.class, partyId).getTelecomNumber();
 		if (telecomNumber == null)
 			return;
 
@@ -173,7 +173,7 @@ public class ExportPartyVcardServlet extends BaseServlet {
 	}
 
 	private void writeLatestEmail(Context context, VCard vcard, String partyId) throws ResourceException {
-		ContactMech contactMech = context.getFrame(Party.class).createProxy(partyId, context.getTenant()).getEmail();
+		ContactMech contactMech = context.createProxy(Party.class, partyId).getEmail();
 		if (contactMech == null)
 			return;
 

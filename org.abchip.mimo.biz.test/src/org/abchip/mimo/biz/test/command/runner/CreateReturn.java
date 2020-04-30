@@ -61,8 +61,8 @@ public class CreateReturn implements Callable<Long> {
 		ResourceWriter<ReturnHeader> returnHeaderWriter = resourceManager.getResourceWriter(context, ReturnHeader.class);
 		ReturnHeader returnHeader = returnHeaderWriter.make(true);
 
-		returnHeader.setReturnHeaderTypeId(context.getFrame(ReturnHeaderType.class).createProxy("CUSTOMER_RETURN", context.getTenant()));
-		returnHeader.setStatusId(context.getFrame(StatusItem.class).createProxy("RETURN_REQUESTED", context.getTenant()));
+		returnHeader.setReturnHeaderTypeId(context.createProxy(ReturnHeaderType.class, "CUSTOMER_RETURN"));
+		returnHeader.setStatusId(context.createProxy(StatusItem.class, "RETURN_REQUESTED"));
 		returnHeader.setFromPartyId(party);
 		returnHeader.setToPartyId(partyDefault.getOrganization());
 		returnHeader.setCurrencyUomId(commonDefault.getCurrencyUom());

@@ -49,12 +49,12 @@ public class GetCommonDefaultImpl extends BizServiceRequestImpl<GetCommonDefault
 		GetCommonDefaultResponse response = this.buildResponse();
 
 		// currency
-		SystemProperty currencyProp = getContext().getFrame(SystemProperty.class).createProxy("general/currency.uom.id.default", this.getTenant());
-		response.setCurrencyUom(this.getContext().getFrame(Uom.class).createProxy(currencyProp.getSystemPropertyValue(), this.getTenant()));
+		SystemProperty currencyProp = getContext().createProxy(SystemProperty.class, "general/currency.uom.id.default", this.getTenant());
+		response.setCurrencyUom(getContext().createProxy(Uom.class, currencyProp.getSystemPropertyValue(), this.getTenant()));
 
 		// country
-		SystemProperty countryProp = getContext().getFrame(SystemProperty.class).createProxy("general/country.geo.id.default", this.getTenant());
-		response.setCountryGeo(this.getContext().getFrame(Geo.class).createProxy(countryProp.getSystemPropertyValue(), this.getTenant()));
+		SystemProperty countryProp = getContext().createProxy(SystemProperty.class, "general/country.geo.id.default", this.getTenant());
+		response.setCountryGeo(getContext().createProxy(Geo.class, countryProp.getSystemPropertyValue(), this.getTenant()));
 
 		return response;
 	}
