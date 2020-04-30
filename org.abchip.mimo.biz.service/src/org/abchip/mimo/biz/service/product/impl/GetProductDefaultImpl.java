@@ -58,7 +58,7 @@ public class GetProductDefaultImpl extends BizServiceRequestImpl<GetProductDefau
 
 		try (EntityIterator<FacilityContactMech> facilityContactMechs = facilityContactMechReader.find(filter, null, order)) {
 			for (FacilityContactMech facilityContactMech : facilityContactMechs) {
-				ContactMech contactMech = facilityContactMech.getContactMechId(); 
+				ContactMech contactMech = facilityContactMech.getContactMechId();
 				if (!contactMech.getContactMechTypeId().getContactMechTypeId().equals("POSTAL_ADDRESS"))
 					continue;
 
