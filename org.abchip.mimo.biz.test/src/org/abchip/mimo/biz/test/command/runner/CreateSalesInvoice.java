@@ -21,21 +21,34 @@ import org.abchip.mimo.biz.model.accounting.invoice.InvoiceRole;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceType;
 import org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference;
+import org.abchip.mimo.biz.model.accounting.payment.Payment;
+import org.abchip.mimo.biz.model.accounting.payment.PaymentMethod;
+import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType;
+import org.abchip.mimo.biz.model.accounting.payment.PaymentType;
+import org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct;
+import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.party.contact.ContactMechPurposeType;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.biz.model.product.store.ProductStore;
+import org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDef;
+import org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDefResponse;
 import org.abchip.mimo.biz.service.common.GetCommonDefault;
 import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
 import org.abchip.mimo.biz.service.party.GetPartyDefault;
 import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
+import org.abchip.mimo.biz.service.product.CalcTaxForDisplay;
+import org.abchip.mimo.biz.service.product.CalcTaxForDisplayResponse;
 import org.abchip.mimo.biz.service.product.CalculateProductPrice;
 import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
+import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
+import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceManager;
@@ -51,6 +64,7 @@ public class CreateSalesInvoice implements Callable<Long> {
 
 	Party party;
 	List<Product> products;
+	long i = 1;
 
 	public CreateSalesInvoice(Context context, Party party, List<Product> products) {
 		this.context = context;
@@ -147,18 +161,20 @@ public class CreateSalesInvoice implements Callable<Long> {
 		invoiceRoleWriter.create(invoiceRole);
 
 		// Items
-		long i = 1;
 		for (Product product : this.products) {
-			createInvoiceItem(resourceManager, serviceManager, invoice, StressTestUtils.formatPaddedNumber(i++, 5), 1, product);
+			createInvoiceItem(resourceManager, serviceManager, invoice, 1, product);
 		}
+		
+		// Payment
+		createPaymentFromInvoice(resourceManager, serviceManager, invoice);
 	}
 
-	private void createInvoiceItem(ResourceManager resourceManager, ServiceManager serviceManager, Invoice invoice, String itemSeqiD, int quantity, Product product) throws ResourceException, ServiceException {
+	private void createInvoiceItem(ResourceManager resourceManager, ServiceManager serviceManager, Invoice invoice, int quantity, Product product) throws ResourceException, ServiceException {
 		ResourceWriter<InvoiceItem> invoiceItemWriter = resourceManager.getResourceWriter(context, InvoiceItem.class);
 
 		InvoiceItem invoiceItem = invoiceItemWriter.make();
 		invoiceItem.setInvoiceId(invoice);
-		invoiceItem.setInvoiceItemSeqId(itemSeqiD);
+		invoiceItem.setInvoiceItemSeqId(StressTestUtils.formatPaddedNumber(i++, 5));
 		invoiceItem.setInvoiceItemTypeId(context.createProxy(InvoiceItemType.class, "INV_DPROD_ITEM"));
 		invoiceItem.setProductId(product);
 		invoiceItem.setDescription(product.getProductName());
@@ -181,6 +197,105 @@ public class CreateSalesInvoice implements Callable<Long> {
 		
 		invoiceItemWriter.create(invoiceItem);
 
-		// TODO service calcTaxForDisplay to add new row tax BizTestCommand
+		// check taxable
+		createTaxableRowItem(resourceManager, serviceManager, invoiceItem);
+	}
+
+	private String createPaymentFromInvoice(ResourceManager resourceManager, ServiceManager serviceManager, Invoice invoice)
+			throws ResourceException, ServiceException {
+
+		PaymentMethod paymentMethod = invoice.getPartyId().getPaymentMethod("CREDIT_CARD");
+		if (paymentMethod == null) {
+			LOGGER.error("Payment method not found for party " + invoice.getPartyId().getID());
+		}
+
+		ResourceWriter<Payment> paymentWriter = resourceManager.getResourceWriter(context, Payment.class);
+		Payment payment = paymentWriter.make(true);
+		payment.setAmount(invoice.getTotal());
+		payment.setPartyIdTo(invoice.getPartyIdFrom());
+		payment.setPartyIdFrom(invoice.getPartyId());
+		payment.setPaymentTypeId(context.createProxy(PaymentType.class, "CUSTOMER_PAYMENT"));
+		payment.setPaymentMethodTypeId(context.createProxy(PaymentMethodType.class, "CREDIT_CARD"));
+		payment.setCurrencyUomId(commonDefault.getCurrencyUom());
+		payment.setPaymentRefNum("Invoice number " + invoice.getID());
+
+		paymentWriter.create(payment);
+
+		// applicazione pagamento
+		UpdatePaymentApplicationDef updatePaymentApplicationDef = serviceManager.prepare(context, UpdatePaymentApplicationDef.class);
+		updatePaymentApplicationDef.setInvoiceId(invoice.getID());
+		updatePaymentApplicationDef.setPaymentId(payment.getID());
+		UpdatePaymentApplicationDefResponse response = serviceManager.execute(updatePaymentApplicationDef);
+		if (response.isError()) {
+			LOGGER.error("Error in payment application: " + payment.getID());
+			return payment.getID();
+		}
+
+		return payment.getID();
+	}
+	
+	private void createTaxableRowItem(ResourceManager resourceManager, ServiceManager serviceManager, InvoiceItem invoiceItemParent) throws ResourceException, ServiceException {
+		ResourceWriter<InvoiceItem> invoiceItemWriter = resourceManager.getResourceWriter(context, InvoiceItem.class);
+
+		String saveInvoiceItemSeqId = invoiceItemParent.getParentInvoiceItemSeqId();
+		ProductStore productStore = StressTestUtils.getProductStore(context, resourceManager);
+
+		String filterTaxAuth = "taxAuthPartyId = '" + productStore.getVatTaxAuthPartyId() + "' AND taxAuthGeoId = '" + productStore.getVatTaxAuthGeoId() + "'";
+
+		ResourceReader<TaxAuthorityRateProduct> taxAuthorityRateProductReader = resourceManager.getResourceReader(context, TaxAuthorityRateProduct.class);
+		String taxAuthPartyId = "";
+		String taxAuthGeoId = "";
+		String taxAuthorityRateSeqId = "";
+
+		try (EntityIterator<TaxAuthorityRateProduct> taxAuthorityRateProducts = taxAuthorityRateProductReader.find(filterTaxAuth, null, null, 1)) {
+			for (TaxAuthorityRateProduct taxAuthorityRateProduct : taxAuthorityRateProducts) {
+				taxAuthPartyId = taxAuthorityRateProduct.getTaxAuthPartyId();
+				taxAuthGeoId = taxAuthorityRateProduct.getTaxAuthGeoId();
+				taxAuthorityRateSeqId = taxAuthorityRateProduct.getTaxAuthorityRateSeqId();
+			}
+		}
+
+		if (taxAuthPartyId == null || taxAuthPartyId.isEmpty())
+			taxAuthPartyId = "ITA_ADE";
+
+		if (taxAuthGeoId == null || taxAuthGeoId.isEmpty())
+			taxAuthGeoId = commonDefault.getCountryGeo().getID();
+
+		CalcTaxForDisplay calcTaxForDisplay = serviceManager.prepare(context, CalcTaxForDisplay.class);
+		calcTaxForDisplay.setBasePrice(invoiceItemParent.getAmount());
+		calcTaxForDisplay.setProductId(invoiceItemParent.getProductId().getID());
+		calcTaxForDisplay.setProductStoreId(productStore.getID());
+		CalcTaxForDisplayResponse taxForDisplay = serviceManager.execute(calcTaxForDisplay);
+		if (taxForDisplay.isError()) {
+			LOGGER.error("Errore in recupero tasse per articolo " + invoiceItemParent.getProductId().getID());
+			return;
+		}
+
+		Party taxAutPartyId = context.createProxy(Party.class, taxAuthPartyId);
+		Geo taxAutGeo = context.createProxy(Geo.class, taxAuthGeoId);
+
+		InvoiceItem invoiceItem = invoiceItemWriter.make();
+		invoiceItem.setInvoiceId(invoiceItemParent.getInvoiceId());
+		invoiceItem.setInvoiceItemSeqId(StressTestUtils.formatPaddedNumber(i++, 5));
+
+		invoiceItem.setInvoiceItemTypeId(context.createProxy(InvoiceItemType.class, "ITM_SALES_TAX"));
+
+		invoiceItem.setProductId(invoiceItemParent.getProductId());
+
+		invoiceItem.setParentInvoiceId(invoiceItemParent.getID());
+		invoiceItem.setParentInvoiceItemSeqId(saveInvoiceItemSeqId);
+
+		invoiceItem.setQuantity(invoiceItemParent.getQuantity());
+		invoiceItem.setAmount((taxForDisplay.getTaxTotal()));
+
+		// TODO verify
+		invoiceItem.setTaxAuthPartyId(taxAutPartyId);
+		invoiceItem.setTaxAuthGeoId(taxAutGeo);
+		if (!taxAuthorityRateSeqId.isEmpty()) {
+			TaxAuthorityRateProduct taxAuthorityRateProduct = context.createProxy(TaxAuthorityRateProduct.class, taxAuthorityRateSeqId);
+			invoiceItem.setTaxAuthorityRateSeqId(taxAuthorityRateProduct);
+		}
+
+		invoiceItemWriter.create(invoiceItem);
 	}
 }

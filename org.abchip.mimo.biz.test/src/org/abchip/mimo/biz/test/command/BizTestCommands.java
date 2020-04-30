@@ -45,7 +45,6 @@ import org.abchip.mimo.biz.model.party.agreement.AgreementItem;
 import org.abchip.mimo.biz.model.party.agreement.AgreementItemType;
 import org.abchip.mimo.biz.model.party.agreement.AgreementProductAppl;
 import org.abchip.mimo.biz.model.party.agreement.AgreementTerm;
-import org.abchip.mimo.biz.model.party.agreement.AgreementType;
 import org.abchip.mimo.biz.model.party.agreement.TermType;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.abchip.mimo.biz.model.party.contact.ContactMechPurposeType;
@@ -53,7 +52,6 @@ import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.PartyRole;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.abchip.mimo.biz.model.product.product.Product;
-import org.abchip.mimo.biz.model.product.product.ProductType;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
@@ -120,19 +118,6 @@ public class BizTestCommands extends BaseTestCommands {
 		interpreter.println("Credit card number " + creditCard.getCardNumber());
 	}
 
-	public void _createAgreement(CommandInterpreter interpreter) throws Exception {
-		Context context = this.getContext();
-
-		GetCommonDefault getCommonDefault = serviceManager.prepare(context, GetCommonDefault.class);
-		GetCommonDefaultResponse commonDefault = serviceManager.execute(getCommonDefault);
-
-		GetPartyDefault getPartyDefault = serviceManager.prepare(context, GetPartyDefault.class);
-		GetPartyDefaultResponse partyDefault = serviceManager.execute(getPartyDefault);
-
-		String partyId = nextArgument(interpreter);
-		createAgreement(interpreter, context, commonDefault, partyDefault, partyId);
-	}
-
 	public void _renewalAgreement(CommandInterpreter interpreter) throws Exception {
 		Context context = this.getContext();
 
@@ -178,17 +163,6 @@ public class BizTestCommands extends BaseTestCommands {
 		interpreter.println("Agreement " + agreementId + " expired");
 	}
 
-	public void _createProduct(CommandInterpreter interpreter) throws Exception {
-		Context context = this.getContext();
-		String productId = nextArgument(interpreter);
-		ResourceWriter<Product> productWriter = resourceManager.getResourceWriter(context, Product.class);
-		Product product = productWriter.make();
-		product.setProductId(productId);
-		product.setInternalName(productId);
-		product.setProductTypeId(context.createProxy(ProductType.class, "DIGITAL_GOOD"));
-		productWriter.create(product, true);
-	}
-
 	public void _createOrder(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();
@@ -214,45 +188,6 @@ public class BizTestCommands extends BaseTestCommands {
 		interpreter.println("From: " + invoice.getPartyIdFrom().getID());
 		interpreter.println("To: " + invoice.getPartyId().getID());
 		interpreter.println("Total: " + invoice.getTotal());
-	}
-
-	public void _createInvoice(CommandInterpreter interpreter) throws Exception {
-
-		Context context = this.getContext();
-
-		GetCommonDefault getCommonDefault = serviceManager.prepare(context, GetCommonDefault.class);
-		GetCommonDefaultResponse commonDefault = serviceManager.execute(getCommonDefault);
-
-		GetPartyDefault getPartyDefault = serviceManager.prepare(context, GetPartyDefault.class);
-		GetPartyDefaultResponse partyDefault = serviceManager.execute(getPartyDefault);
-
-		String partyId = nextArgument(interpreter);
-
-		Invoice invoice = createInvoice(interpreter, context, commonDefault, partyDefault, partyId, "");
-
-		// InvoiceItem
-		createInvoiceItem(interpreter, context, commonDefault, invoice, "Accounting", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(interpreter, context, commonDefault, invoice, "Edi", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(interpreter, context, commonDefault, invoice, "Humanres", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(interpreter, context, commonDefault, invoice, "Manufacturing", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(interpreter, context, commonDefault, invoice, "Marketing", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(interpreter, context, commonDefault, invoice, "Modeling", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(interpreter, context, commonDefault, invoice, "Order", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(interpreter, context, commonDefault, invoice, "Party", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(interpreter, context, commonDefault, invoice, "Product", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(interpreter, context, commonDefault, invoice, "Shipment", 1, "INV_DPROD_ITEM");
-		createInvoiceItem(interpreter, context, commonDefault, invoice, "Workeffort", 1, "INV_DPROD_ITEM");
-
-		interpreter.println("Creata fattura numero " + invoice.getInvoiceId());
-		// Creazione pagamento
-		String paymentId = createPaymentFromInvoice(interpreter, context, commonDefault, invoice);
-		interpreter.println("Creato pagamento " + paymentId);
-
-		// Receive payment (PMNT_RECEIVED)
-
-		// if(setStatusPayment(context, paymentId, "PMNT_RECEIVED")) {
-		// setStatusPayment(context, paymentId, "PMNT_CONFIRMED");
-		// }
 	}
 
 	public void _approveOrder(CommandInterpreter interpreter) throws Exception {
@@ -751,49 +686,6 @@ public class BizTestCommands extends BaseTestCommands {
 		}
 
 		invoiceItemWriter.create(invoiceItem);
-	}
-
-	private void createAgreement(CommandInterpreter interpreter, Context context, GetCommonDefaultResponse commonDefault, GetPartyDefaultResponse partyDefault, String partyId)
-			throws ResourceException, ServiceException {
-
-		Party partyFrom = partyDefault.getOrganization();
-		Party partyTo = context.createProxy(Party.class, partyId);
-
-		RoleType roleTypeFrom = context.createProxy(RoleType.class, "INTERNAL_ORGANIZATIO");
-		RoleType roleTypeTo = context.createProxy(RoleType.class, "CUSTOMER");
-		AgreementType agreementType = context.createProxy(AgreementType.class, "SALES_AGREEMENT");
-
-		// Agreement
-		ResourceWriter<Agreement> agreementWriter = resourceManager.getResourceWriter(context, Agreement.class);
-
-		Agreement agreement = agreementWriter.make(true);
-
-		agreement.setPartyIdFrom(partyFrom);
-		agreement.setPartyIdTo(partyTo);
-
-		agreement.setRoleTypeIdFrom(roleTypeFrom);
-		agreement.setRoleTypeIdTo(roleTypeTo);
-		agreement.setAgreementTypeId(agreementType);
-		agreement.setAgreementDate(new Date());
-		agreement.setFromDate(new Date());
-		agreement.setDescription("Open new agreement for customer " + partyId);
-
-		agreementWriter.create(agreement, true);
-
-		String agreementItemSeqId = createRow(context, agreement, "Agrement opened in trial mode");
-
-		createRowProduct(interpreter, context, commonDefault, agreement, "Accounting", agreementItemSeqId);
-		createRowProduct(interpreter, context, commonDefault, agreement, "Edi", agreementItemSeqId);
-		createRowProduct(interpreter, context, commonDefault, agreement, "Humanres", agreementItemSeqId);
-		createRowProduct(interpreter, context, commonDefault, agreement, "Manufacturing", agreementItemSeqId);
-		createRowProduct(interpreter, context, commonDefault, agreement, "Marketing", agreementItemSeqId);
-		createRowProduct(interpreter, context, commonDefault, agreement, "Modeling", agreementItemSeqId);
-		createRowProduct(interpreter, context, commonDefault, agreement, "Order", agreementItemSeqId);
-		createRowProduct(interpreter, context, commonDefault, agreement, "Party", agreementItemSeqId);
-		createRowProduct(interpreter, context, commonDefault, agreement, "Product", agreementItemSeqId);
-		createRowProduct(interpreter, context, commonDefault, agreement, "Shipment", agreementItemSeqId);
-		createRowProduct(interpreter, context, commonDefault, agreement, "Workeffort", agreementItemSeqId);
-
 	}
 
 	private String createRow(Context context, Agreement agreement, String text) throws ResourceException {

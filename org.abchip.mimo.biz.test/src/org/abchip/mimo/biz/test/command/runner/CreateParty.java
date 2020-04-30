@@ -13,6 +13,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
 
+import org.abchip.mimo.biz.model.accounting.payment.CreditCard;
+import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType;
 import org.abchip.mimo.biz.model.accounting.tax.PartyTaxAuthInfo;
 import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
@@ -202,6 +204,27 @@ public class CreateParty implements Callable<Long> {
 		partyIdentification.setPartyIdentificationTypeId(context.createProxy(PartyIdentificationType.class, "VCARD_FN_ORIGIN"));
 		partyIdentification.setIdValue(StressTestUtils.generateRandomString(16, false));
 		partyIdentificationWriter.create(partyIdentification);
+		
+		// Credit card payment
+		if(role.equals("CUSTOMER")) {
+			// PaymentMethod
+			// CreditCard
+			ResourceWriter<CreditCard> creditCardWriter = resourceManager.getResourceWriter(context, CreditCard.class);
+			CreditCard creditCard = creditCardWriter.make(true);
+			creditCard.setPartyId(party);
+			creditCard.setPaymentMethodTypeId(context.createProxy(PaymentMethodType.class, "CREDIT_CARD"));
+			// CVC code	
+			creditCard.setDescription("123");
+			creditCard.setFromDate(new Date());
+			creditCard.setCardType("CCT_VISA");
+			creditCard.setCardNumber("4242424242424242");
+			creditCard.setExpireDate("12/2020");
+			creditCard.setCompanyNameOnCard("Customer " + party.getID());
+			creditCard.setFirstNameOnCard("First name");
+			creditCard.setLastNameOnCard("Last name");
+			creditCardWriter.create(creditCard);
+			// TODO EntityKeyStore
+		}
 	}
 
 	private void createPartyContactMech(Context context, ResourceManager resourceManager, Party party, ContactMech contactMech, List<String> purposeTypes) throws ResourceException {
