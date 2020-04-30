@@ -26,6 +26,7 @@ import org.eclipse.emf.ecore.EClass;
 public class GetCommonDefaultImpl extends BizServiceRequestImpl<GetCommonDefaultResponse> implements GetCommonDefault {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected GetCommonDefaultImpl() {
@@ -34,6 +35,7 @@ public class GetCommonDefaultImpl extends BizServiceRequestImpl<GetCommonDefault
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -47,12 +49,12 @@ public class GetCommonDefaultImpl extends BizServiceRequestImpl<GetCommonDefault
 		GetCommonDefaultResponse response = this.buildResponse();
 
 		// currency
-		SystemProperty currencyProp = getContext().createProxy(SystemProperty.class, "general/currency.uom.id.default");
-		response.setCurrencyUom(this.getContext().createProxy(Uom.class, currencyProp.getSystemPropertyValue()));
+		SystemProperty currencyProp = getContext().getFrame(SystemProperty.class).createProxy("general/currency.uom.id.default", this.getTenant());
+		response.setCurrencyUom(this.getContext().getFrame(Uom.class).createProxy(currencyProp.getSystemPropertyValue(), this.getTenant()));
 
 		// country
-		SystemProperty countryProp = getContext().createProxy(SystemProperty.class, "general/country.geo.id.default");
-		response.setCountryGeo(this.getContext().createProxy(Geo.class, countryProp.getSystemPropertyValue()));
+		SystemProperty countryProp = getContext().getFrame(SystemProperty.class).createProxy("general/country.geo.id.default", this.getTenant());
+		response.setCountryGeo(this.getContext().getFrame(Geo.class).createProxy(countryProp.getSystemPropertyValue(), this.getTenant()));
 
 		return response;
 	}

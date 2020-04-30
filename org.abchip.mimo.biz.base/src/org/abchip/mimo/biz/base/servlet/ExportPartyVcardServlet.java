@@ -21,7 +21,6 @@ import org.abchip.mimo.biz.model.party.party.PartyGroup;
 import org.abchip.mimo.biz.model.party.party.Person;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.http.servlet.BaseServlet;
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
@@ -39,12 +38,8 @@ public class ExportPartyVcardServlet extends BaseServlet {
 
 	private static final long serialVersionUID = 1L;
 
-	protected void execute(Context context, HttpServletRequest request, HttpServletResponse response) throws IOException {
-		_execute(context, request, response);
-	}
-
 	@SuppressWarnings("resource")
-	private <E extends EntityIdentifiable> void _execute(Context context, HttpServletRequest request, HttpServletResponse response) throws IOException {
+	protected void execute(Context context, HttpServletRequest request, HttpServletResponse response) throws IOException {
 
 		String partyId = request.getParameter("partyId");
 
@@ -139,7 +134,7 @@ public class ExportPartyVcardServlet extends BaseServlet {
 	}
 
 	private void writeLatestPostalAddress(Context context, VCard vcard, String partyId) throws ResourceException {
-		PostalAddress postalAddress = context.createProxy(Party.class, partyId).getPostalAddress();
+		PostalAddress postalAddress = context.getFrame(Party.class).createProxy(partyId, context.getTenant()).getPostalAddress();
 		if (postalAddress == null)
 			return;
 
@@ -162,7 +157,7 @@ public class ExportPartyVcardServlet extends BaseServlet {
 	}
 
 	private void writeLatestTelecomNumber(Context context, VCard vcard, String partyId) throws ResourceException {
-		TelecomNumber telecomNumber = context.createProxy(Party.class, partyId).getTelecomNumber();
+		TelecomNumber telecomNumber = context.getFrame(Party.class).createProxy(partyId, context.getTenant()).getTelecomNumber();
 		if (telecomNumber == null)
 			return;
 
@@ -178,7 +173,7 @@ public class ExportPartyVcardServlet extends BaseServlet {
 	}
 
 	private void writeLatestEmail(Context context, VCard vcard, String partyId) throws ResourceException {
-		ContactMech contactMech = context.createProxy(Party.class, partyId).getEmail();
+		ContactMech contactMech = context.getFrame(Party.class).createProxy(partyId, context.getTenant()).getEmail();
 		if (contactMech == null)
 			return;
 

@@ -91,6 +91,6 @@ public abstract class BizServiceRequestImpl<V extends ServiceResponse> extends S
 		super.init(context, tenant);
 
 		ContextDescription contextDescription = context.getContextDescription();
-		this.setUserLogin(context.createProxy(UserLogin.class, contextDescription.getUser()));
+		this.setUserLogin(context.getFrame(UserLogin.class).createProxy(contextDescription.getUser(), tenant));
 	}
 } // BizServiceRequestImpl

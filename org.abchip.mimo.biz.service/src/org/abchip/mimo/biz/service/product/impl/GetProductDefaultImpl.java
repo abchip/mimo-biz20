@@ -54,17 +54,15 @@ public class GetProductDefaultImpl extends BizServiceRequestImpl<GetProductDefau
 		String order = "-fromDate";
 
 		ResourceManager resourceManager = this.getContext().getResourceManager();
-		ResourceReader<FacilityContactMech> facilityContactMechReader = resourceManager.getResourceReader(context, FacilityContactMech.class);
+		ResourceReader<FacilityContactMech> facilityContactMechReader = resourceManager.getResourceReader(context, FacilityContactMech.class, this.getTenant());
 
 		try (EntityIterator<FacilityContactMech> facilityContactMechs = facilityContactMechReader.find(filter, null, order)) {
 			for (FacilityContactMech facilityContactMech : facilityContactMechs) {
-				ResourceReader<ContactMech> contactMechReader = resourceManager.getResourceReader(context, ContactMech.class);
-				ContactMech contactMech = contactMechReader.lookup(facilityContactMech.getContactMechId().getContactMechId());
-
+				ContactMech contactMech = facilityContactMech.getContactMechId(); 
 				if (!contactMech.getContactMechTypeId().getContactMechTypeId().equals("POSTAL_ADDRESS"))
 					continue;
 
-				response.setFacilityPostalAddress(context.createProxy(PostalAddress.class, contactMech.getContactMechId()));
+				response.setFacilityPostalAddress(context.getFrame(PostalAddress.class).createProxy(facilityContactMech.getContactMechId().getContactMechId(), this.getTenant()));
 				break;
 			}
 		}

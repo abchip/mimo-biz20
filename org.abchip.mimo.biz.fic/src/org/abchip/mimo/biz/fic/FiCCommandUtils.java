@@ -51,22 +51,22 @@ public class FiCCommandUtils {
 		TelecomNumber telecomNumber = ContactFactory.eINSTANCE.createTelecomNumber();
 		String contactMechId = Integer.toString(contactMechCounter.incrementAndGet());
 		telecomNumber.setContactMechId(contactMechId);
-		telecomNumber.setContactMechTypeId(context.createProxy(ContactMechType.class, contactMechType));
+		telecomNumber.setContactMechTypeId(context.getFrame(ContactMechType.class).createProxy(contactMechType, context.getTenant()));
 		telecomNumber.setContactNumber(telephone);
 		container.getContents().add(telecomNumber);
 
 		// PartyContactMech
 		PartyContactMech partyContactMech = ContactFactory.eINSTANCE.createPartyContactMech();
-		partyContactMech.setPartyId(context.createProxy(Party.class, partyId));
-		partyContactMech.setContactMechId(context.createProxy(ContactMech.class, contactMechId));
+		partyContactMech.setPartyId(context.getFrame(Party.class).createProxy(partyId, context.getTenant()));
+		partyContactMech.setContactMechId(context.getFrame(ContactMech.class).createProxy(contactMechId, context.getTenant()));
 		partyContactMech.setFromDate(new Date());
 		container.getContents().add(partyContactMech);
 
 		// PartyContactMechPurpose
 		PartyContactMechPurpose partyContactMechPurpose = ContactFactory.eINSTANCE.createPartyContactMechPurpose();
-		partyContactMechPurpose.setPartyId(context.createProxy(Party.class, partyId));
-		partyContactMechPurpose.setContactMechId(context.createProxy(ContactMech.class, contactMechId));
-		partyContactMechPurpose.setContactMechPurposeTypeId(context.createProxy(ContactMechPurposeType.class, contactMechPurposeType));
+		partyContactMechPurpose.setPartyId(context.getFrame(Party.class).createProxy(partyId, context.getTenant()));
+		partyContactMechPurpose.setContactMechId(context.getFrame(ContactMech.class).createProxy(contactMechId, context.getTenant()));
+		partyContactMechPurpose.setContactMechPurposeTypeId(context.getFrame(ContactMechPurposeType.class).createProxy(contactMechPurposeType, context.getTenant()));
 		partyContactMechPurpose.setFromDate(new Date());
 		container.getContents().add(partyContactMechPurpose);
 	}
@@ -79,21 +79,21 @@ public class FiCCommandUtils {
 		String contactMechId = Integer.toString(contactMechCounter.incrementAndGet());
 		contactMech.setContactMechId(contactMechId);
 		contactMech.setInfoString(email);
-		contactMech.setContactMechTypeId(context.createProxy(ContactMechType.class, contactMechType));
+		contactMech.setContactMechTypeId(context.getFrame(ContactMechType.class).createProxy(contactMechType, context.getTenant()));
 		container.getContents().add(contactMech);
 
 		// PartyContactMech
 		PartyContactMech partyContactMech = ContactFactory.eINSTANCE.createPartyContactMech();
-		partyContactMech.setPartyId(context.createProxy(Party.class, partyId));
-		partyContactMech.setContactMechId(context.createProxy(ContactMech.class, contactMechId));
+		partyContactMech.setPartyId(context.getFrame(Party.class).createProxy(partyId, context.getTenant()));
+		partyContactMech.setContactMechId(context.getFrame(ContactMech.class).createProxy(contactMechId, context.getTenant()));
 		partyContactMech.setFromDate(new Date());
 		container.getContents().add(partyContactMech);
 
 		// PartyContactMechPurpose
 		PartyContactMechPurpose partyContactMechPurpose = ContactFactory.eINSTANCE.createPartyContactMechPurpose();
-		partyContactMechPurpose.setPartyId(context.createProxy(Party.class, partyId));
-		partyContactMechPurpose.setContactMechId(context.createProxy(ContactMech.class, contactMechId));
-		partyContactMechPurpose.setContactMechPurposeTypeId(context.createProxy(ContactMechPurposeType.class, contactMechPurposeType));
+		partyContactMechPurpose.setPartyId(context.getFrame(Party.class).createProxy(partyId, context.getTenant()));
+		partyContactMechPurpose.setContactMechId(context.getFrame(ContactMech.class).createProxy(contactMechId, context.getTenant()));
+		partyContactMechPurpose.setContactMechPurposeTypeId(context.getFrame(ContactMechPurposeType.class).createProxy(contactMechPurposeType, context.getTenant()));
 		partyContactMechPurpose.setFromDate(new Date());
 		container.getContents().add(partyContactMechPurpose);
 	}
@@ -101,7 +101,7 @@ public class FiCCommandUtils {
 	public static void createTaxAuth(EntityContainer container, Context context, String partyId, String piva) {
 		// PartyTaxAuthInfo
 		PartyTaxAuthInfo partyTaxAuthInfo = TaxFactory.eINSTANCE.createPartyTaxAuthInfo();
-		partyTaxAuthInfo.setPartyId(context.createProxy(Party.class, partyId));
+		partyTaxAuthInfo.setPartyId(context.getFrame(Party.class).createProxy(partyId, context.getTenant()));
 		partyTaxAuthInfo.setFromDate(new Date());
 		partyTaxAuthInfo.setTaxAuthGeoId("ITA");
 		partyTaxAuthInfo.setTaxAuthPartyId("ITA_ADE");
@@ -112,8 +112,8 @@ public class FiCCommandUtils {
 	public static void createIdentificationCard(EntityContainer container, Context context, String partyId, String cf) {
 		// PartyTaxAuthInfo
 		PartyIdentification partyIdentification = PartyFactory.eINSTANCE.createPartyIdentification();
-		partyIdentification.setPartyId(context.createProxy(Party.class, partyId));
-		partyIdentification.setPartyIdentificationTypeId(context.createProxy(PartyIdentificationType.class, "VCARD_FN_ORIGIN"));
+		partyIdentification.setPartyId(context.getFrame(Party.class).createProxy(partyId, context.getTenant()));
+		partyIdentification.setPartyIdentificationTypeId(context.getFrame(PartyIdentificationType.class).createProxy("VCARD_FN_ORIGIN", context.getTenant()));
 		partyIdentification.setIdValue(cf);
 		container.getContents().add(partyIdentification);
 	}
@@ -121,9 +121,9 @@ public class FiCCommandUtils {
 	public static void createPartyGroup(EntityContainer container, Context context, String partyId, String id, String nome, String referente) {
 		PartyGroup partyGroup = PartyFactory.eINSTANCE.createPartyGroup();
 		partyGroup.setPartyId(partyId);
-		partyGroup.setStatusId(context.createProxy(StatusItem.class, "PARTY_ENABLED"));
-		partyGroup.setPartyTypeId(context.createProxy(PartyType.class, "PARTY_GROUP"));
-		partyGroup.setPreferredCurrencyUomId(context.createProxy(Uom.class, "EUR"));
+		partyGroup.setStatusId(context.getFrame(StatusItem.class).createProxy("PARTY_ENABLED", context.getTenant()));
+		partyGroup.setPartyTypeId(context.getFrame(PartyType.class).createProxy("PARTY_GROUP", context.getTenant()));
+		partyGroup.setPreferredCurrencyUomId(context.getFrame(Uom.class).createProxy("EUR", context.getTenant()));
 		// id
 		partyGroup.setExternalId(id);
 		// nome
@@ -139,8 +139,8 @@ public class FiCCommandUtils {
 	public static void createPartyRole(EntityContainer container, Context context, String partyId, String string) {
 		// PartyRole
 		PartyRole partyRole = PartyFactory.eINSTANCE.createPartyRole();
-		partyRole.setPartyId(context.createProxy(Party.class, partyId));
-		partyRole.setRoleTypeId(context.createProxy(RoleType.class, "CUSTOMER"));
+		partyRole.setPartyId(context.getFrame(Party.class).createProxy(partyId, context.getTenant()));
+		partyRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("CUSTOMER", context.getTenant()));
 		container.getContents().add(partyRole);
 	}
 
@@ -157,28 +157,28 @@ public class FiCCommandUtils {
 		postalAddress.setCity(indirizzo_citta);
 		// indirizzo_cap
 		postalAddress.setPostalCode(indirizzo_cap);
-		postalAddress.setContactMechTypeId(context.createProxy(ContactMechType.class, "POSTAL_ADDRESS"));
+		postalAddress.setContactMechTypeId(context.getFrame(ContactMechType.class).createProxy("POSTAL_ADDRESS", context.getTenant()));
 		// paese
 		if (indirizzo_paese.equals("Italia"))
-			postalAddress.setCountryGeoId(context.createProxy(Geo.class, "ITA"));
+			postalAddress.setCountryGeoId(context.getFrame(Geo.class).createProxy("ITA", context.getTenant()));
 		// indirizzo_provincia
-		postalAddress.setStateProvinceGeoId(context.createProxy(Geo.class, indirizzo_provincia));
+		postalAddress.setStateProvinceGeoId(context.getFrame(Geo.class).createProxy(indirizzo_provincia, context.getTenant()));
 		// indirizzo_extra
 		// TODO non so
 		container.getContents().add(postalAddress);
 
 		// PartyContactMech
 		PartyContactMech partyContactMech = ContactFactory.eINSTANCE.createPartyContactMech();
-		partyContactMech.setPartyId(context.createProxy(Party.class, partyId));
-		partyContactMech.setContactMechId(context.createProxy(ContactMech.class, contactMechId));
+		partyContactMech.setPartyId(context.getFrame(Party.class).createProxy(partyId, context.getTenant()));
+		partyContactMech.setContactMechId(context.getFrame(ContactMech.class).createProxy(contactMechId, context.getTenant()));
 		partyContactMech.setFromDate(new Date());
 		container.getContents().add(partyContactMech);
 
 		// PartyContactMechPurpose
 		PartyContactMechPurpose partyContactMechPurpose = ContactFactory.eINSTANCE.createPartyContactMechPurpose();
-		partyContactMechPurpose.setPartyId(context.createProxy(Party.class, partyId));
-		partyContactMechPurpose.setContactMechId(context.createProxy(ContactMech.class, contactMechId));
-		partyContactMechPurpose.setContactMechPurposeTypeId(context.createProxy(ContactMechPurposeType.class, "GENERAL_LOCATION"));
+		partyContactMechPurpose.setPartyId(context.getFrame(Party.class).createProxy(partyId, context.getTenant()));
+		partyContactMechPurpose.setContactMechId(context.getFrame(ContactMech.class).createProxy(contactMechId, context.getTenant()));
+		partyContactMechPurpose.setContactMechPurposeTypeId(context.getFrame(ContactMechPurposeType.class).createProxy("GENERAL_LOCATION", context.getTenant()));
 		partyContactMechPurpose.setFromDate(new Date());
 		container.getContents().add(partyContactMechPurpose);
 	}
@@ -202,13 +202,13 @@ public class FiCCommandUtils {
 	public static void createProductPrice(EntityContainer container, Context context, String nome, BigDecimal price, BigDecimal cost, boolean iva, String ivaValue, String ivaDescription) {
 		// ProductPrice
 		ProductPrice productPrice = PriceFactory.eINSTANCE.createProductPrice();
-		productPrice.setProductId(context.createProxy(Product.class, nome));
+		productPrice.setProductId(context.getFrame(Product.class).createProxy(nome, context.getTenant()));
 		productPrice.setFromDate(new Date());
 		productPrice.setPrice(price);
-		productPrice.setProductPriceTypeId(context.createProxy(ProductPriceType.class, "DEFAULT_PRICE"));
-		productPrice.setProductPricePurposeId(context.createProxy(ProductPricePurpose.class, "PURCHASE"));
-		productPrice.setCurrencyUomId(context.createProxy(Uom.class, "EUR"));
-		productPrice.setProductStoreGroupId(context.createProxy(ProductStoreGroup.class, "_NA_"));
+		productPrice.setProductPriceTypeId(context.getFrame(ProductPriceType.class).createProxy("DEFAULT_PRICE", context.getTenant()));
+		productPrice.setProductPricePurposeId(context.getFrame(ProductPricePurpose.class).createProxy("PURCHASE", context.getTenant()));
+		productPrice.setCurrencyUomId(context.getFrame(Uom.class).createProxy("EUR", context.getTenant()));
+		productPrice.setProductStoreGroupId(context.getFrame(ProductStoreGroup.class).createProxy("_NA_", context.getTenant()));
 		productPrice.setTaxInPrice(iva);
 		if (!ivaValue.equals("-1")) {
 			productPrice.setTaxAmount(new BigDecimal(ivaValue));

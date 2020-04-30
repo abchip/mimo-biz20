@@ -45,7 +45,6 @@ import org.osgi.service.log.Logger;
 
 public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImpl<E> {
 
-
 	private static final Logger LOGGER = Logs.getLogger(OFBizResourceImpl.class);
 
 	private Context context = null;
@@ -84,7 +83,8 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			beganTransaction = TransactionUtil.begin();
 
 			this.doCreate(entity.isa(), entity, update);
-
+			this.setInternalResource(entity);
+			
 			TransactionUtil.commit(beganTransaction);
 		} catch (GenericEntityException e) {
 			try {
@@ -176,8 +176,6 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 	@Override
 	public E read(String name, String fields, boolean proxy) throws ResourceException {
 
-		E entity = null;
-
 		DynamicViewEntity dynamicViewEntity = buildDynamicView(this.modelEntity);
 
 		EntityQuery eq = EntityQuery.use(delegator);
@@ -195,14 +193,16 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 		eq = eq.where(EntityCondition.makeCondition(primaryKey, EntityJoinOperator.AND));
 
+		E entity = frame.createEntity();
 		boolean beganTransaction = false;
 		try {
 			beganTransaction = TransactionUtil.begin();
 			GenericValue genericValue = eq.queryOne();
 			if (genericValue != null) {
-				entity = EntityUtils.toEntity(frame, genericValue);
+				this.setInternalResource(entity);
+				EntityUtils.completeEntity(entity, genericValue);
 				if (proxy)
-					entity = frame.createProxy(entity.getID());
+					entity = frame.createProxy(entity.getID(), this.getTenant());
 			}
 
 			TransactionUtil.commit(beganTransaction);
@@ -277,9 +277,11 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		try {
 			beganTransaction = TransactionUtil.begin();
 			for (GenericValue genericValue : eq.queryList()) {
-				E entity = EntityUtils.toEntity(frame, genericValue);
+				E entity = frame.createEntity();
+				this.setInternalResource(entity);
+				EntityUtils.completeEntity(entity, genericValue);				
 				if (proxy)
-					entity = frame.createProxy(entity.getID());
+					entity = frame.createProxy(entity.getID(), this.getTenant());
 
 				entities.add(entity);
 			}

@@ -97,8 +97,9 @@ public class SeedServices {
 		while (listEntityIt.hasNext()) {
 			GenericValue genericValue = listEntityIt.next();
 
-			EntityIdentifiable entityIdentifiable = null;
-			entityIdentifiable = EntityUtils.toEntity((Frame<EntityIdentifiable>) resourceManager.getFrame(context, genericValue.getEntityName()), genericValue);
+			Frame<EntityIdentifiable> frame = (Frame<EntityIdentifiable>) resourceManager.getFrame(context, genericValue.getEntityName());
+			EntityIdentifiable entityIdentifiable = frame.createEntity();
+			EntityUtils.completeEntity(entityIdentifiable, genericValue);
 			container.getContents().add(entityIdentifiable);
 		}
 		ResourceWriter<EntityContainer> entityWriter = resourceManager.getResourceWriter(context, EntityContainer.class);

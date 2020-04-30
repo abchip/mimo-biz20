@@ -144,7 +144,8 @@ public class EdiServices {
 		Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
-		EdiFrameSetup ediFrameSetup = EntityUtils.toEntity(context.getFrame(EdiFrameSetup.class), entityInstance);
+		EdiFrameSetup ediFrameSetup = context.getFrame(EdiFrameSetup.class).createEntity();
+		EntityUtils.completeEntity(ediFrameSetup, entityInstance);
 		EdiUtils.removeEdiEca(delegator, ediFrameSetup.getFrame());
 
 		ResourceReader<EdiFrameSetup> setupReader = resourceManager.getResourceReader(context, EdiFrameSetup.class, resource);
@@ -170,7 +171,8 @@ public class EdiServices {
 		Delegator delegator = ctx.getDelegator();
 		Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
 
-		MessageType<?> messageType = EntityUtils.toEntity(context.getFrame(MessageType.class), entityInstance);
+		MessageType<?> messageType = context.getFrame(MessageType.class).createEntity();
+		EntityUtils.completeEntity(messageType, entityInstance);
 
 		try {
 			long startTime = new java.util.Date().getTime();
@@ -200,7 +202,9 @@ public class EdiServices {
 		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		@SuppressWarnings("unchecked")
-		E entity = EntityUtils.toEntity((Frame<E>) resourceManager.getFrame(context, entityInstance.getEntityName()), entityInstance);
+		Frame<E> frame = (Frame<E>) resourceManager.getFrame(context, entityInstance.getEntityName());
+		E entity = frame.createEntity();
+		EntityUtils.completeEntity(entity, entityInstance);
 
 		EdiManager ediManager = context.get(EdiManager.class);
 		ediManager.writeMessage(context, entity, EntityEvent.get(operation.name()));

@@ -447,7 +447,7 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 		if (paymentMethod == null)
 			return null;
 
-		return this.getResource().getContext().createProxy(CreditCard.class, paymentMethod.getPaymentMethodId());
+		return this.getResource().getContext().getFrame(CreditCard.class).createProxy(paymentMethod.getPaymentMethodId(), this.getResource().getTenant());
 	}
 
 	/**
@@ -479,7 +479,7 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 					if (!contactMech.getContactMechTypeId().getContactMechTypeId().equals("POSTAL_ADDRESS"))
 						continue;
 
-					return context.createProxy(PostalAddress.class, contactMech.getContactMechId());
+					return context.getFrame(PostalAddress.class).createProxy(contactMech.getContactMechId(), this.getResource().getTenant());
 				}
 			}
 
@@ -515,7 +515,7 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 					if (!partyContactMech.getContactMechId().getContactMechTypeId().getContactMechTypeId().equals("TELECOM_NUMBER"))
 						continue;
 
-					return context.createProxy(TelecomNumber.class, partyContactMech.getContactMechId().getContactMechId());
+					return context.getFrame(TelecomNumber.class).createProxy(partyContactMech.getContactMechId().getContactMechId(), this.getResource().getTenant());
 				}
 			}
 

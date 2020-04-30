@@ -206,7 +206,7 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 		ResourceWriter<UserLoginSecurityGroup> userLoginSecurityGroupWriter = context.getResourceManager().getResourceWriter(context, UserLoginSecurityGroup.class, this.getTenantId());
 		UserLoginSecurityGroup userLoginSecurityGroup = userLoginSecurityGroupWriter.make();
 		userLoginSecurityGroup.setUserLoginId(userLogin);
-		userLoginSecurityGroup.setGroupId(context.createProxy(SecurityGroup.class, "SUPER"));
+		userLoginSecurityGroup.setGroupId(context.getFrame(SecurityGroup.class).createProxy("SUPER", this.getTenant()));
 		userLoginSecurityGroup.setFromDate(new Date());
 		userLoginSecurityGroupWriter.create(userLoginSecurityGroup, this.isUpdate());
 

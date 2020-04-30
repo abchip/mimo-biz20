@@ -59,10 +59,9 @@ public class EntityUtils {
 	}
 
 	// from ofbiz -> entity
-	public static <E extends EntityIdentifiable> E toEntity(Frame<E> frame, GenericValue genericValue) {
+	public static <E extends EntityIdentifiable> void completeEntity(E entity, GenericValue genericValue) {
 
-		E entity = frame.createEntity();
-
+		Frame<E> frame = entity.isa();
 		for (Entry<String, Object> entry : genericValue.getAllFields().entrySet()) {
 
 			Object value = entry.getValue();
@@ -77,8 +76,6 @@ public class EntityUtils {
 
 			frame.setValue(entity, slot.getName(), value);
 		}
-
-		return entity;
 	}
 
 	// from entity -> ofbiz

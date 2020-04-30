@@ -40,8 +40,10 @@ import org.osgi.service.log.Logger;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.service.entity.impl.LoadSeedsImpl#getSeedPattern <em>Seed Pattern</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.service.entity.impl.LoadSeedsImpl#isUpdate <em>Update</em>}</li>
+ * <li>{@link org.abchip.mimo.biz.service.entity.impl.LoadSeedsImpl#getSeedPattern
+ * <em>Seed Pattern</em>}</li>
+ * <li>{@link org.abchip.mimo.biz.service.entity.impl.LoadSeedsImpl#isUpdate
+ * <em>Update</em>}</li>
  * </ul>
  *
  * @generated
@@ -52,6 +54,7 @@ public class LoadSeedsImpl extends ServiceRequestImpl<ServiceResponse> implement
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected LoadSeedsImpl() {
@@ -60,6 +63,7 @@ public class LoadSeedsImpl extends ServiceRequestImpl<ServiceResponse> implement
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -69,12 +73,14 @@ public class LoadSeedsImpl extends ServiceRequestImpl<ServiceResponse> implement
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected static final int ESTATIC_FEATURE_COUNT = 3;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -84,15 +90,17 @@ public class LoadSeedsImpl extends ServiceRequestImpl<ServiceResponse> implement
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public String getSeedPattern() {
-		return (String)eGet(EntityPackage.Literals.LOAD_SEEDS__SEED_PATTERN, true);
+		return (String) eGet(EntityPackage.Literals.LOAD_SEEDS__SEED_PATTERN, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -102,15 +110,17 @@ public class LoadSeedsImpl extends ServiceRequestImpl<ServiceResponse> implement
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean isUpdate() {
-		return (Boolean)eGet(EntityPackage.Literals.LOAD_SEEDS__UPDATE, true);
+		return (Boolean) eGet(EntityPackage.Literals.LOAD_SEEDS__UPDATE, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -123,7 +133,7 @@ public class LoadSeedsImpl extends ServiceRequestImpl<ServiceResponse> implement
 
 		ServiceResponse response = this.buildResponse();
 		Context context = this.getContext();
-		
+
 		Bundle bundle = context.get(Application.class).getBundle();
 		Enumeration<URL> entries = bundle.findEntries(MimoConstants.SEEDS_PATH + "/" + this.getSeedPattern(), null, false);
 		List<URL> elements = Enumerations.sort(entries, new Comparator<URL>() {
@@ -133,8 +143,8 @@ public class LoadSeedsImpl extends ServiceRequestImpl<ServiceResponse> implement
 			}
 
 		});
-		
-		ResourceManager resourceManager = context.get(ResourceManager.class);		
+
+		ResourceManager resourceManager = context.get(ResourceManager.class);
 		for (URL seedUrl : elements) {
 			try (InputStream inputStream = seedUrl.openStream()) {
 
@@ -142,19 +152,19 @@ public class LoadSeedsImpl extends ServiceRequestImpl<ServiceResponse> implement
 				resource.load(inputStream, null);
 				if (resource.getContents().isEmpty())
 					continue;
-				
+
 				EntityContainer entityContainer = (EntityContainer) resource.getContents().get(0);
 
 				for (EntityIdentifiable entityIdentifiable : entityContainer.getContents()) {
 					try {
-						ResourceWriter<EntityIdentifiable> entityWriter = resourceManager.getResourceWriter(context, entityIdentifiable.isa());
+						ResourceWriter<EntityIdentifiable> entityWriter = resourceManager.getResourceWriter(context, entityIdentifiable.isa(), this.getTenant());
 						entityWriter.create(entityIdentifiable, this.isUpdate());
 					} catch (Exception e) {
 						LOGGER.error(e.getMessage());
 					}
 				}
 			} catch (IOException e) {
-				e.printStackTrace();
+				LOGGER.warn(e.getMessage());
 			}
 		}
 

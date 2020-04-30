@@ -115,7 +115,7 @@ public class BizTestCommands extends BaseTestCommands {
 	public void _getCreditCardParty(CommandInterpreter interpreter) throws Exception {
 		Context context = this.getContext();
 		String partyId = nextArgument(interpreter);
-		Party party = context.createProxy(Party.class, partyId);
+		Party party = context.getFrame(Party.class).createProxy(partyId, context.getTenant());
 		CreditCard creditCard = party.getCreditCard();
 		interpreter.println("Credit card number " + creditCard.getCardNumber());
 	}
@@ -185,7 +185,7 @@ public class BizTestCommands extends BaseTestCommands {
 		Product product = productWriter.make();
 		product.setProductId(productId);
 		product.setInternalName(productId);
-		product.setProductTypeId(context.createProxy(ProductType.class, "DIGITAL_GOOD"));
+		product.setProductTypeId(context.getFrame(ProductType.class).createProxy("DIGITAL_GOOD", context.getTenant()));
 		productWriter.create(product, true);
 	}
 
@@ -211,9 +211,9 @@ public class BizTestCommands extends BaseTestCommands {
 		String invoiceId = nextArgument(interpreter);
 
 		Invoice invoice = this.resourceManager.getResourceReader(context, Invoice.class).lookup(invoiceId);
-		interpreter.print("From: " + invoice.getPartyIdFrom().getID() + "\n");
-		interpreter.print("To: " + invoice.getPartyId().getID() + "\n");
-		interpreter.print("Total: " + invoice.getTotal() + "\n");
+		interpreter.println("From: " + invoice.getPartyIdFrom().getID());
+		interpreter.println("To: " + invoice.getPartyId().getID());
+		interpreter.println("Total: " + invoice.getTotal());
 	}
 
 	public void _createInvoice(CommandInterpreter interpreter) throws Exception {
@@ -372,7 +372,7 @@ public class BizTestCommands extends BaseTestCommands {
 	private void createOrder(CommandInterpreter interpreter, Context context, GetCommonDefaultResponse commonDefault, GetPartyDefaultResponse partyDefault, String partyId)
 			throws ResourceException, ServiceException {
 
-		Party party = context.createProxy(Party.class, partyId);
+		Party party = context.getFrame(Party.class).createProxy(partyId, context.getTenant());
 
 		ResourceReader<ProductStore> productStoreReader = resourceManager.getResourceReader(context, ProductStore.class);
 		ProductStore productStore = productStoreReader.lookup(PRODUCT_STORE_ID);
@@ -387,12 +387,12 @@ public class BizTestCommands extends BaseTestCommands {
 		if (productStore.getOrderNumberPrefix() != null)
 			orderHeader.setOrderId(productStore.getOrderNumberPrefix() + orderHeader.getOrderId());
 
-		orderHeader.setOrderTypeId(context.createProxy(OrderType.class, "SALES_ORDER"));
+		orderHeader.setOrderTypeId(context.getFrame(OrderType.class).createProxy("SALES_ORDER", context.getTenant()));
 		orderHeader.setProductStoreId(productStore);
-		orderHeader.setSalesChannelEnumId(context.createProxy(Enumeration.class, "UNKNWN_SALES_CHANNEL"));
+		orderHeader.setSalesChannelEnumId(context.getFrame(Enumeration.class).createProxy("UNKNWN_SALES_CHANNEL", context.getTenant()));
 		orderHeader.setOrderDate(new Date());
 		orderHeader.setEntryDate(new Date());
-		orderHeader.setStatusId(context.createProxy(StatusItem.class, "ORDER_CREATED"));
+		orderHeader.setStatusId(context.getFrame(StatusItem.class).createProxy("ORDER_CREATED", context.getTenant()));
 		orderHeader.setCurrencyUom(commonDefault.getCurrencyUom());
 		orderHeader.setInvoicePerShipment(Boolean.TRUE);
 		orderHeader.setCreatedBy(userLogin);
@@ -404,7 +404,7 @@ public class BizTestCommands extends BaseTestCommands {
 		ResourceWriter<OrderStatus> orderStatusWriter = resourceManager.getResourceWriter(context, OrderStatus.class);
 		OrderStatus orderStatus = orderStatusWriter.make(true);
 		orderStatus.setOrderId(orderHeader);
-		orderStatus.setStatusId(context.createProxy(StatusItem.class, "ORDER_CREATED"));
+		orderStatus.setStatusId(context.getFrame(StatusItem.class).createProxy("ORDER_CREATED", context.getTenant()));
 		orderStatus.setStatusUserLogin(userLogin);
 		orderStatusWriter.create(orderStatus, true);
 
@@ -412,8 +412,8 @@ public class BizTestCommands extends BaseTestCommands {
 		ResourceWriter<OrderContactMech> orderContactMechWriter = resourceManager.getResourceWriter(context, OrderContactMech.class);
 		OrderContactMech orderContactMech = orderContactMechWriter.make();
 		orderContactMech.setOrderId(orderHeader);
-		orderContactMech.setContactMechPurposeTypeId(context.createProxy(ContactMechPurposeType.class, "ORDER_EMAIL"));
-		orderContactMech.setContactMechId(context.createProxy(ContactMech.class, partyId));
+		orderContactMech.setContactMechPurposeTypeId(context.getFrame(ContactMechPurposeType.class).createProxy("ORDER_EMAIL", context.getTenant()));
+		orderContactMech.setContactMechId(context.getFrame(ContactMech.class).createProxy(partyId, context.getTenant()));
 		orderContactMechWriter.create(orderContactMech, true);
 
 		// OrderItemShipGroup
@@ -422,8 +422,8 @@ public class BizTestCommands extends BaseTestCommands {
 		OrderItemShipGroup orderItemShipGroup = orderItemShipGroupWriter.make();
 		orderItemShipGroup.setOrderId(orderHeader);
 		orderItemShipGroup.setShipGroupSeqId(shipGroupSeqId);
-		orderItemShipGroup.setShipmentMethodTypeId(context.createProxy(ShipmentMethodType.class, SHIPMENT_METHOD_TYPE_ID));
-		orderItemShipGroup.setCarrierPartyId(context.createProxy(Party.class, CARRIER_ID));
+		orderItemShipGroup.setShipmentMethodTypeId(context.getFrame(ShipmentMethodType.class).createProxy(SHIPMENT_METHOD_TYPE_ID, context.getTenant()));
+		orderItemShipGroup.setCarrierPartyId(context.getFrame(Party.class).createProxy(CARRIER_ID, context.getTenant()));
 		orderItemShipGroup.setCarrierRoleTypeId("CARRIER");
 		orderItemShipGroupWriter.create(orderItemShipGroup, true);
 
@@ -441,61 +441,61 @@ public class BizTestCommands extends BaseTestCommands {
 		OrderRole orderRole = orderRoleWriter.make();
 		orderRole.setOrderId(orderHeader);
 		orderRole.setPartyId(partyDefault.getOrganization());
-		orderRole.setRoleTypeId(context.createProxy(RoleType.class, "BILL_FROM_VENDOR"));
+		orderRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("BILL_FROM_VENDOR", context.getTenant()));
 		orderRoleWriter.create(orderRole, true);
 
 		// Party Role to partyId
 		ResourceWriter<PartyRole> partyRoleWriter = resourceManager.getResourceWriter(context, PartyRole.class);
 		PartyRole partyRole = partyRoleWriter.make();
 		partyRole.setPartyId(party);
-		partyRole.setRoleTypeId(context.createProxy(RoleType.class, "BILL_TO_CUSTOMER"));
+		partyRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("BILL_TO_CUSTOMER", context.getTenant()));
 		partyRoleWriter.create(partyRole, true);
 
 		orderRole = orderRoleWriter.make();
 		orderRole.setOrderId(orderHeader);
 		orderRole.setPartyId(party);
-		orderRole.setRoleTypeId(context.createProxy(RoleType.class, "BILL_TO_CUSTOMER"));
+		orderRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("BILL_TO_CUSTOMER", context.getTenant()));
 		orderRoleWriter.create(orderRole, true);
 
 		partyRole = partyRoleWriter.make();
 		partyRole.setPartyId(party);
-		partyRole.setRoleTypeId(context.createProxy(RoleType.class, "SHIP_TO_CUSTOMER"));
+		partyRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("SHIP_TO_CUSTOMER", context.getTenant()));
 		partyRoleWriter.create(partyRole, true);
 
 		orderRole = orderRoleWriter.make();
 		orderRole.setOrderId(orderHeader);
 		orderRole.setPartyId(party);
-		orderRole.setRoleTypeId(context.createProxy(RoleType.class, "SHIP_TO_CUSTOMER"));
+		orderRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("SHIP_TO_CUSTOMER", context.getTenant()));
 		orderRoleWriter.create(orderRole, true);
 
 		partyRole = partyRoleWriter.make();
 		partyRole.setPartyId(party);
-		partyRole.setRoleTypeId(context.createProxy(RoleType.class, "END_USER_CUSTOMER"));
+		partyRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("END_USER_CUSTOMER", context.getTenant()));
 		partyRoleWriter.create(partyRole, true);
 
 		orderRole = orderRoleWriter.make();
 		orderRole.setOrderId(orderHeader);
 		orderRole.setPartyId(party);
-		orderRole.setRoleTypeId(context.createProxy(RoleType.class, "END_USER_CUSTOMER"));
+		orderRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("END_USER_CUSTOMER", context.getTenant()));
 		orderRoleWriter.create(orderRole, true);
 
 		partyRole = partyRoleWriter.make();
 		partyRole.setPartyId(party);
-		partyRole.setRoleTypeId(context.createProxy(RoleType.class, "PLACING_CUSTOMER"));
+		partyRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("PLACING_CUSTOMER", context.getTenant()));
 		partyRoleWriter.create(partyRole, true);
 
 		orderRole = orderRoleWriter.make();
 		orderRole.setOrderId(orderHeader);
 		orderRole.setPartyId(party);
-		orderRole.setRoleTypeId(context.createProxy(RoleType.class, "PLACING_CUSTOMER"));
+		orderRole.setRoleTypeId(context.getFrame(RoleType.class).createProxy("PLACING_CUSTOMER", context.getTenant()));
 		orderRoleWriter.create(orderRole, true);
 
 		// OrderPaymentPreference
 		ResourceWriter<OrderPaymentPreference> orderPaymentPreferenceWriter = resourceManager.getResourceWriter(context, OrderPaymentPreference.class);
 		OrderPaymentPreference orderPaymentPreference = orderPaymentPreferenceWriter.make(true);
 		orderPaymentPreference.setOrderId(orderHeader);
-		orderPaymentPreference.setStatusId(context.createProxy(StatusItem.class, "PAYMENT_NOT_RECEIVED"));
-		orderPaymentPreference.setPaymentMethodTypeId(context.createProxy(PaymentMethodType.class, "EXT_COD"));
+		orderPaymentPreference.setStatusId(context.getFrame(StatusItem.class).createProxy("PAYMENT_NOT_RECEIVED", context.getTenant()));
+		orderPaymentPreference.setPaymentMethodTypeId(context.getFrame(PaymentMethodType.class).createProxy("EXT_COD", context.getTenant()));
 		orderPaymentPreferenceWriter.create(orderPaymentPreference, true);
 
 		// Inventory
@@ -559,14 +559,14 @@ public class BizTestCommands extends BaseTestCommands {
 		OrderItem orderItem = orderItemWriter.make();
 		orderItem.setOrderId(orderHeader);
 		orderItem.setOrderItemSeqId(itemSeqiD);
-		orderItem.setOrderItemTypeId(context.createProxy(OrderItemType.class, "PRODUCT_ORDER_ITEM"));
+		orderItem.setOrderItemTypeId(context.getFrame(OrderItemType.class).createProxy("PRODUCT_ORDER_ITEM", context.getTenant()));
 		orderItem.setProdCatalogId(PRODUCT_CATALOG_ID);
 
 		ResourceReader<Product> productReader = resourceManager.getResourceReader(context, Product.class);
 		Product product = productReader.lookup(item);
 		orderItem.setProductId(product);
 		orderItem.setItemDescription(product.getProductName());
-		orderItem.setStatusId(context.createProxy(StatusItem.class, "ITEM_CREATED"));
+		orderItem.setStatusId(context.getFrame(StatusItem.class).createProxy("ITEM_CREATED", context.getTenant()));
 		orderItem.setQuantity(new BigDecimal(quantity));
 		orderItem.setUnitPrice(new BigDecimal(10));
 
@@ -592,8 +592,8 @@ public class BizTestCommands extends BaseTestCommands {
 		OrderStatus orderStatus = orderStatusWriter.make(true);
 		orderStatus.setOrderId(orderHeader);
 		orderStatus.setOrderItemSeqId(itemSeqiD);
-		orderStatus.setStatusId(context.createProxy(StatusItem.class, "ITEM_CREATED"));
-		orderStatus.setStatusUserLogin(context.createProxy(UserLogin.class, USER_LOGIN_ID));
+		orderStatus.setStatusId(context.getFrame(StatusItem.class).createProxy("ITEM_CREATED", context.getTenant()));
+		orderStatus.setStatusUserLogin(context.getFrame(UserLogin.class).createProxy(USER_LOGIN_ID, context.getTenant()));
 		orderStatusWriter.create(orderStatus);
 
 		// OrderItemShipGroupAssoc
@@ -608,15 +608,15 @@ public class BizTestCommands extends BaseTestCommands {
 
 	private Invoice createInvoice(CommandInterpreter interpreter, Context context, GetCommonDefaultResponse commonDefault, GetPartyDefaultResponse partyDefault, String partyId,
 			String description) throws ResourceException {
-		Party party = context.createProxy(Party.class, partyId);
+		Party party = context.getFrame(Party.class).createProxy(partyId, context.getTenant());
 		Party partyFrom = partyDefault.getOrganization();
 
 		// Invoice Header
 		ResourceWriter<Invoice> invoiceWriter = resourceManager.getResourceWriter(context, Invoice.class);
 		Invoice invoice = invoiceWriter.make(true);
-		invoice.setInvoiceTypeId(context.createProxy(InvoiceType.class, "SALES_INVOICE"));
+		invoice.setInvoiceTypeId(context.getFrame(InvoiceType.class).createProxy("SALES_INVOICE", context.getTenant()));
 		invoice.setInvoiceDate(new Date());
-		invoice.setStatusId(context.createProxy(StatusItem.class, "INVOICE_IN_PROCESS"));
+		invoice.setStatusId(context.getFrame(StatusItem.class).createProxy("INVOICE_IN_PROCESS", context.getTenant()));
 		invoice.setCurrencyUomId(commonDefault.getCurrencyUom());
 		invoice.setPartyId(party);
 		invoice.setPartyIdFrom(partyFrom);
@@ -627,7 +627,7 @@ public class BizTestCommands extends BaseTestCommands {
 		// InvoiceStatus
 		ResourceWriter<InvoiceStatus> invoiceStatusWriter = resourceManager.getResourceWriter(context, InvoiceStatus.class);
 		InvoiceStatus invoiceStatus = invoiceStatusWriter.make();
-		invoiceStatus.setStatusId(context.createProxy(StatusItem.class, "INVOICE_IN_PROCESS"));
+		invoiceStatus.setStatusId(context.getFrame(StatusItem.class).createProxy("INVOICE_IN_PROCESS", context.getTenant()));
 		invoiceStatus.setInvoiceId(invoice);
 		invoiceStatus.setStatusDate(new Date());
 		invoiceStatusWriter.create(invoiceStatus);
@@ -636,7 +636,7 @@ public class BizTestCommands extends BaseTestCommands {
 		ResourceWriter<InvoiceContactMech> invoiceContactMechWriter = resourceManager.getResourceWriter(context, InvoiceContactMech.class);
 		InvoiceContactMech invoiceContactMech = invoiceContactMechWriter.make();
 		invoiceContactMech.setInvoiceId(invoice);
-		invoiceContactMech.setContactMechPurposeTypeId(context.createProxy(ContactMechPurposeType.class, "PAYMENT_LOCATION"));
+		invoiceContactMech.setContactMechPurposeTypeId(context.getFrame(ContactMechPurposeType.class).createProxy("PAYMENT_LOCATION", context.getTenant()));
 		invoiceContactMech.setContactMechId(party.getPostalAddress());
 		invoiceContactMechWriter.create(invoiceContactMech, true);
 
@@ -657,7 +657,7 @@ public class BizTestCommands extends BaseTestCommands {
 		// "invoiceItemSeqId");
 		// String saveInvoiceItemSeqId = invoiceItemSeqId;
 		// invoiceItem.setInvoiceItemSeqId(invoiceItemSeqId);
-		invoiceItem.setInvoiceItemTypeId(context.createProxy(InvoiceItemType.class, itemType));
+		invoiceItem.setInvoiceItemTypeId(context.getFrame(InvoiceItemType.class).createProxy(itemType, context.getTenant()));
 
 		ResourceReader<Product> productReader = resourceManager.getResourceReader(context, Product.class);
 		Product product = productReader.lookup(item);
@@ -719,8 +719,8 @@ public class BizTestCommands extends BaseTestCommands {
 			return;
 		}
 
-		Party taxAutPartyId = context.createProxy(Party.class, taxAuthPartyId);
-		Geo taxAutGeo = context.createProxy(Geo.class, taxAuthGeoId);
+		Party taxAutPartyId = context.getFrame(Party.class).createProxy(taxAuthPartyId, context.getTenant());
+		Geo taxAutGeo = context.getFrame(Geo.class).createProxy(taxAuthGeoId, context.getTenant());
 		// result.put("taxTotal", taxTotal);
 		// result.put("taxPercentage", taxPercentage);
 		// result.put("priceWithTax", priceWithTax);
@@ -732,7 +732,7 @@ public class BizTestCommands extends BaseTestCommands {
 		// invoiceItemSeqId = getNextSubSeqId(delegator, invoiceItemValue,
 		// "invoiceItemSeqId");
 		// invoiceItem.setInvoiceItemSeqId(invoiceItemSeqId);
-		invoiceItem.setInvoiceItemTypeId(context.createProxy(InvoiceItemType.class, "ITM_SALES_TAX"));
+		invoiceItem.setInvoiceItemTypeId(context.getFrame(InvoiceItemType.class).createProxy("ITM_SALES_TAX", context.getTenant()));
 
 		invoiceItem.setProductId(product);
 
@@ -746,7 +746,7 @@ public class BizTestCommands extends BaseTestCommands {
 		invoiceItem.setTaxAuthPartyId(taxAutPartyId);
 		invoiceItem.setTaxAuthGeoId(taxAutGeo);
 		if (!taxAuthorityRateSeqId.isEmpty()) {
-			TaxAuthorityRateProduct taxAuthorityRateProduct = context.createProxy(TaxAuthorityRateProduct.class, taxAuthorityRateSeqId);
+			TaxAuthorityRateProduct taxAuthorityRateProduct = context.getFrame(TaxAuthorityRateProduct.class).createProxy(taxAuthorityRateSeqId, context.getTenant());
 			invoiceItem.setTaxAuthorityRateSeqId(taxAuthorityRateProduct);
 		}
 
@@ -757,11 +757,11 @@ public class BizTestCommands extends BaseTestCommands {
 			throws ResourceException, ServiceException {
 
 		Party partyFrom = partyDefault.getOrganization();
-		Party partyTo = context.createProxy(Party.class, partyId);
+		Party partyTo = context.getFrame(Party.class).createProxy(partyId, context.getTenant());
 
-		RoleType roleTypeFrom = context.createProxy(RoleType.class, "INTERNAL_ORGANIZATIO");
-		RoleType roleTypeTo = context.createProxy(RoleType.class, "CUSTOMER");
-		AgreementType agreementType = context.createProxy(AgreementType.class, "SALES_AGREEMENT");
+		RoleType roleTypeFrom = context.getFrame(RoleType.class).createProxy("INTERNAL_ORGANIZATIO", context.getTenant());
+		RoleType roleTypeTo = context.getFrame(RoleType.class).createProxy("CUSTOMER", context.getTenant());
+		AgreementType agreementType = context.getFrame(AgreementType.class).createProxy("SALES_AGREEMENT", context.getTenant());
 
 		// Agreement
 		ResourceWriter<Agreement> agreementWriter = resourceManager.getResourceWriter(context, Agreement.class);
@@ -798,9 +798,9 @@ public class BizTestCommands extends BaseTestCommands {
 
 	private String createRow(Context context, Agreement agreement, String text) throws ResourceException {
 
-		AgreementItemType agreementType = context.createProxy(AgreementItemType.class, "AGREEMENT_PRICING_PR");
-		TermType termType = context.createProxy(TermType.class, "FIN_PAYMENT_FIXDAY");
-		InvoiceItemType invoiceItemType = context.createProxy(InvoiceItemType.class, "INV_DPROD_ITEM");
+		AgreementItemType agreementType = context.getFrame(AgreementItemType.class).createProxy("AGREEMENT_PRICING_PR", context.getTenant());
+		TermType termType = context.getFrame(TermType.class).createProxy("FIN_PAYMENT_FIXDAY", context.getTenant());
+		InvoiceItemType invoiceItemType = context.getFrame(InvoiceItemType.class).createProxy("INV_DPROD_ITEM", context.getTenant());
 
 		// AgreementItem
 		ResourceWriter<AgreementItem> agreementItemWriter = resourceManager.getResourceWriter(context, AgreementItem.class);
@@ -850,7 +850,7 @@ public class BizTestCommands extends BaseTestCommands {
 	private void createRowProduct(CommandInterpreter interpreter, Context context, GetCommonDefaultResponse commonDefault, Agreement agreement, String item, String itemSeqId)
 			throws ResourceException, ServiceException {
 
-		Product productItem = context.createProxy(Product.class, item);
+		Product productItem = context.getFrame(Product.class).createProxy(item, context.getTenant());
 
 		// AgreementProductAppl
 		ResourceWriter<AgreementProductAppl> agreementProductApplWriter = resourceManager.getResourceWriter(context, AgreementProductAppl.class);
@@ -1045,8 +1045,8 @@ public class BizTestCommands extends BaseTestCommands {
 		payment.setAmount(invoice.getTotal());
 		payment.setPartyIdTo(invoice.getPartyIdFrom());
 		payment.setPartyIdFrom(invoice.getPartyId());
-		payment.setPaymentTypeId(context.getFrame(PaymentType.class).createProxy("CUSTOMER_PAYMENT"));
-		payment.setPaymentMethodTypeId(context.getFrame(PaymentMethodType.class).createProxy("CREDIT_CARD"));
+		payment.setPaymentTypeId(context.getFrame(PaymentType.class).createProxy("CUSTOMER_PAYMENT", context.getTenant()));
+		payment.setPaymentMethodTypeId(context.getFrame(PaymentMethodType.class).createProxy("CREDIT_CARD", context.getTenant()));
 		payment.setCurrencyUomId(commonDefault.getCurrencyUom());
 		payment.setPaymentRefNum("Invoice number " + invoice.getID());
 

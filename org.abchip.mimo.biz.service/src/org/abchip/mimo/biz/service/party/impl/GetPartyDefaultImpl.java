@@ -25,6 +25,7 @@ import org.eclipse.emf.ecore.EClass;
 public class GetPartyDefaultImpl extends BizServiceRequestImpl<GetPartyDefaultResponse> implements GetPartyDefault {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected GetPartyDefaultImpl() {
@@ -33,6 +34,7 @@ public class GetPartyDefaultImpl extends BizServiceRequestImpl<GetPartyDefaultRe
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -46,11 +48,11 @@ public class GetPartyDefaultImpl extends BizServiceRequestImpl<GetPartyDefaultRe
 		GetPartyDefaultResponse response = this.buildResponse();
 
 		// party
-		SystemProperty currencyProp = getContext().createProxy(SystemProperty.class, "general/ORGANIZATION_PARTY");
-		response.setOrganization(this.getContext().createProxy(Party.class, currencyProp.getSystemPropertyValue()));
+		SystemProperty currencyProp = getContext().getFrame(SystemProperty.class).createProxy("general/ORGANIZATION_PARTY", this.getTenant());
+		response.setOrganization(this.getContext().getFrame(Party.class).createProxy(currencyProp.getSystemPropertyValue(), this.getTenant()));
 
 		// accounting preference
-		PartyAcctgPreference accountingPreference = getContext().createProxy(PartyAcctgPreference.class, response.getOrganization().getID());
+		PartyAcctgPreference accountingPreference = getContext().getFrame(PartyAcctgPreference.class).createProxy(response.getOrganization().getID(), this.getTenant());
 		response.setAccountingPreference(accountingPreference);
 
 		return response;
