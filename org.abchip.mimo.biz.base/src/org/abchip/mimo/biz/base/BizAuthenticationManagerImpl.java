@@ -14,15 +14,12 @@ import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextProvider;
 import org.abchip.mimo.context.ContextRoot;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 
 public class BizAuthenticationManagerImpl implements AuthenticationManager {
 
 	@Inject
 	private Application application;
-	@Inject
-	private ResourceManager resourceManager;
 
 	@Override
 	public boolean checkLogin(AuthenticationUserToken authentication, boolean create) {
@@ -46,7 +43,7 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 
 		UserLogin userLogin = null;
 		try {
-			ResourceReader<UserLogin> userLoginReader = resourceManager.getResourceReader(application.getContext(), UserLogin.class, authentication.getTenant());
+			ResourceReader<UserLogin> userLoginReader = application.getContext().getResourceManager().getResourceReader(UserLogin.class, authentication.getTenant());
 			userLogin = userLoginReader.lookup(authentication.getUser());
 		} catch (ResourceException e) {
 			throw new AuthenticationException(e);

@@ -21,7 +21,6 @@ import org.abchip.mimo.biz.service.party.GetPartyDefault;
 import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.service.ServiceManager;
 
@@ -55,10 +54,9 @@ public class CreateReturn implements Callable<Long> {
 	}
 
 	public void createReturn() throws ResourceException {
-		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		// Create ReturnHeader
-		ResourceWriter<ReturnHeader> returnHeaderWriter = resourceManager.getResourceWriter(context, ReturnHeader.class);
+		ResourceWriter<ReturnHeader> returnHeaderWriter = context.getResourceManager().getResourceWriter(ReturnHeader.class);
 		ReturnHeader returnHeader = returnHeaderWriter.make(true);
 
 		returnHeader.setReturnHeaderTypeId(context.createProxy(ReturnHeaderType.class, "CUSTOMER_RETURN"));

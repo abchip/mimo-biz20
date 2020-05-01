@@ -38,7 +38,6 @@ import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.service.ServiceManager;
 
@@ -70,10 +69,9 @@ public class CreateParty implements Callable<Long> {
 	}
 
 	public void createPartyGroup(String role) throws ResourceException {
-		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		// Create PartyGroup
-		ResourceWriter<PartyGroup> partyGroupWriter = resourceManager.getResourceWriter(context, PartyGroup.class);
+		ResourceWriter<PartyGroup> partyGroupWriter = context.getResourceManager().getResourceWriter(PartyGroup.class);
 		PartyGroup partyGroup = partyGroupWriter.make(true);
 		partyGroup.setStatusId(context.createProxy(StatusItem.class, "PARTY_ENABLED"));
 		partyGroup.setPartyTypeId(context.createProxy(PartyType.class, "PARTY_GROUP"));
@@ -82,14 +80,13 @@ public class CreateParty implements Callable<Long> {
 		partyGroup.setGroupName("Description Party " + role.toLowerCase() + " " + partyGroup.getID());
 		partyGroupWriter.create(partyGroup);
 
-		createRelated(resourceManager, partyGroup, role);
+		createRelated(partyGroup, role);
 	}
 
 	public void createPerson(String role) throws ResourceException {
-		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		// Create PartyGroup
-		ResourceWriter<Person> personWriter = resourceManager.getResourceWriter(context, Person.class);
+		ResourceWriter<Person> personWriter = context.getResourceManager().getResourceWriter(Person.class);
 		Person person = personWriter.make(true);
 		person.setStatusId(context.createProxy(StatusItem.class, "PARTY_ENABLED"));
 		person.setPartyTypeId(context.createProxy(PartyType.class, "PERSON"));
@@ -98,13 +95,13 @@ public class CreateParty implements Callable<Long> {
 		person.setLastName("Last name " + role.toLowerCase() + " " + person.getID());
 		personWriter.create(person);
 
-		createRelated(resourceManager, person, role);
+		createRelated(person, role);
 	}
 
-	private void createRelated(ResourceManager resourceManager, Party party, String role) throws ResourceException {
+	private void createRelated(Party party, String role) throws ResourceException {
 
 		// Base role
-		ResourceWriter<PartyRole> partyRoleWriter = resourceManager.getResourceWriter(context, PartyRole.class);
+		ResourceWriter<PartyRole> partyRoleWriter = context.getResourceManager().getResourceWriter(PartyRole.class);
 		PartyRole partyRole = partyRoleWriter.make();
 		partyRole.setPartyId(party);
 		partyRole.setRoleTypeId(context.createProxy(RoleType.class, role));
@@ -152,7 +149,7 @@ public class CreateParty implements Callable<Long> {
 
 		// Address
 		// PostaAddress
-		ResourceWriter<PostalAddress> postalAddressWriter = resourceManager.getResourceWriter(context, PostalAddress.class);
+		ResourceWriter<PostalAddress> postalAddressWriter = context.getResourceManager().getResourceWriter(PostalAddress.class);
 		PostalAddress postalAddress = postalAddressWriter.make(true);
 		postalAddress.setToName("Party " + party.getID());
 		// indirizzo_via
@@ -165,27 +162,27 @@ public class CreateParty implements Callable<Long> {
 		postalAddress.setCountryGeoId(commonDefault.getCountryGeo());
 		postalAddress.setStateProvinceGeoId(context.createProxy(Geo.class, "IT-RM"));
 		postalAddressWriter.create(postalAddress);
-		createPartyContactMech(context, resourceManager, party, postalAddress, Arrays.asList("GENERAL_LOCATION", "SHIPPING_LOCATION"));
+		createPartyContactMech(context, party, postalAddress, Arrays.asList("GENERAL_LOCATION", "SHIPPING_LOCATION"));
 
 		// Email
 		// ContactMech
-		ResourceWriter<ContactMech> contactMechWriter = resourceManager.getResourceWriter(context, ContactMech.class);
+		ResourceWriter<ContactMech> contactMechWriter = context.getResourceManager().getResourceWriter(ContactMech.class);
 		ContactMech contactMech = contactMechWriter.make(true);
 		contactMech.setInfoString("info" + party.getID() + "@gmail.com");
 		contactMech.setContactMechTypeId(context.createProxy(ContactMechType.class, "EMAIL_ADDRESS"));
 		contactMechWriter.create(contactMech);
-		createPartyContactMech(context, resourceManager, party, contactMech, Arrays.asList("PRIMARY_EMAIL"));
+		createPartyContactMech(context, party, contactMech, Arrays.asList("PRIMARY_EMAIL"));
 
 		// TelecomNumber
-		ResourceWriter<TelecomNumber> telecomNumberWriter = resourceManager.getResourceWriter(context, TelecomNumber.class);
+		ResourceWriter<TelecomNumber> telecomNumberWriter = context.getResourceManager().getResourceWriter(TelecomNumber.class);
 		TelecomNumber telecomNumber = telecomNumberWriter.make(true);
 		telecomNumber.setContactMechTypeId(context.createProxy(ContactMechType.class, "TELECOM_NUMBER"));
 		telecomNumber.setContactNumber(StressTestUtils.generateRandomString(3, true) + " " + StressTestUtils.generateRandomString(7, true));
 		telecomNumberWriter.create(telecomNumber);
-		createPartyContactMech(context, resourceManager, party, telecomNumber, Arrays.asList("PRIMARY_PHONE"));
+		createPartyContactMech(context, party, telecomNumber, Arrays.asList("PRIMARY_PHONE"));
 
 		// PartyTaxAuthInfo
-		ResourceWriter<PartyTaxAuthInfo> partyTaxAuthInfoWriter = resourceManager.getResourceWriter(context, PartyTaxAuthInfo.class);
+		ResourceWriter<PartyTaxAuthInfo> partyTaxAuthInfoWriter = context.getResourceManager().getResourceWriter(PartyTaxAuthInfo.class);
 		PartyTaxAuthInfo partyTaxAuthInfo = partyTaxAuthInfoWriter.make();
 		partyTaxAuthInfo.setPartyId(party);
 		partyTaxAuthInfo.setFromDate(new Date());
@@ -198,22 +195,22 @@ public class CreateParty implements Callable<Long> {
 		partyTaxAuthInfoWriter.create(partyTaxAuthInfo);
 
 		// PartyIdentification
-		ResourceWriter<PartyIdentification> partyIdentificationWriter = resourceManager.getResourceWriter(context, PartyIdentification.class);
+		ResourceWriter<PartyIdentification> partyIdentificationWriter = context.getResourceManager().getResourceWriter(PartyIdentification.class);
 		PartyIdentification partyIdentification = partyIdentificationWriter.make();
 		partyIdentification.setPartyId(party);
 		partyIdentification.setPartyIdentificationTypeId(context.createProxy(PartyIdentificationType.class, "VCARD_FN_ORIGIN"));
 		partyIdentification.setIdValue(StressTestUtils.generateRandomString(16, false));
 		partyIdentificationWriter.create(partyIdentification);
-		
+
 		// Credit card payment
-		if(role.equals("CUSTOMER")) {
+		if (role.equals("CUSTOMER")) {
 			// PaymentMethod
 			// CreditCard
-			ResourceWriter<CreditCard> creditCardWriter = resourceManager.getResourceWriter(context, CreditCard.class);
+			ResourceWriter<CreditCard> creditCardWriter = context.getResourceManager().getResourceWriter(CreditCard.class);
 			CreditCard creditCard = creditCardWriter.make(true);
 			creditCard.setPartyId(party);
 			creditCard.setPaymentMethodTypeId(context.createProxy(PaymentMethodType.class, "CREDIT_CARD"));
-			// CVC code	
+			// CVC code
 			creditCard.setDescription("123");
 			creditCard.setFromDate(new Date());
 			creditCard.setCardType("CCT_VISA");
@@ -227,10 +224,10 @@ public class CreateParty implements Callable<Long> {
 		}
 	}
 
-	private void createPartyContactMech(Context context, ResourceManager resourceManager, Party party, ContactMech contactMech, List<String> purposeTypes) throws ResourceException {
+	private void createPartyContactMech(Context context, Party party, ContactMech contactMech, List<String> purposeTypes) throws ResourceException {
 
 		// PartyContactMech
-		ResourceWriter<PartyContactMech> partyContactMechWriter = resourceManager.getResourceWriter(context, PartyContactMech.class);
+		ResourceWriter<PartyContactMech> partyContactMechWriter = context.getResourceManager().getResourceWriter(PartyContactMech.class);
 		PartyContactMech partyContactMech = partyContactMechWriter.make();
 		partyContactMech.setPartyId(party);
 		partyContactMech.setContactMechId(contactMech);
@@ -238,7 +235,7 @@ public class CreateParty implements Callable<Long> {
 		partyContactMechWriter.create(partyContactMech);
 
 		for (String type : purposeTypes) {
-			ResourceWriter<PartyContactMechPurpose> partyContactMechPurposeWriter = resourceManager.getResourceWriter(context, PartyContactMechPurpose.class);
+			ResourceWriter<PartyContactMechPurpose> partyContactMechPurposeWriter = context.getResourceManager().getResourceWriter(PartyContactMechPurpose.class);
 			PartyContactMechPurpose partyContactMechPurpose = partyContactMechPurposeWriter.make();
 			partyContactMechPurpose.setPartyId(party);
 			partyContactMechPurpose.setContactMechId(contactMech);

@@ -16,15 +16,12 @@ import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import javax.inject.Inject;
-
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.base.cmd.BaseCommands;
 import org.abchip.mimo.entity.EntityContainer;
 import org.abchip.mimo.entity.EntityFactory;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -41,9 +38,6 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 public class FiCCommands extends BaseCommands {
 	private static final String urlFiC = "https://api.fattureincloud.it:443/v1/";
 	private static final String body = "{\"api_uid\": \"673532\", \"api_key\": \"38319cbc95dddf6ff7d744491bd823e7\", \"pagina\": ?}";
-
-	@Inject
-	private ResourceManager resourceManager;
 
 	public <E extends EntityIdentifiable> void _importFicAll(CommandInterpreter interpreter) throws Exception {
 		importFicRegistry(interpreter);
@@ -186,7 +180,7 @@ public class FiCCommands extends BaseCommands {
 				break;
 		}
 		// Save container
-		ResourceWriter<EntityIdentifiable> entityWriter = resourceManager.getResourceWriter(context, "EntityContainer");
+		ResourceWriter<EntityIdentifiable> entityWriter = context.getResourceManager().getResourceWriter("EntityContainer");
 		entityWriter.create(container, true);
 	}
 
@@ -277,7 +271,7 @@ public class FiCCommands extends BaseCommands {
 				break;
 		}
 		// Save container
-		ResourceWriter<EntityIdentifiable> entityWriter = resourceManager.getResourceWriter(context, "EntityContainer");
+		ResourceWriter<EntityIdentifiable> entityWriter = context.getResourceManager().getResourceWriter("EntityContainer");
 		entityWriter.create(container, true);
 	}
 

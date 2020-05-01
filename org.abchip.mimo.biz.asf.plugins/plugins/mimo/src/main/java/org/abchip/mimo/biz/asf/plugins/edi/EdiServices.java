@@ -24,7 +24,6 @@ import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.util.Logs;
 import org.apache.ofbiz.entity.Delegator;
@@ -55,10 +54,9 @@ public class EdiServices {
 
 		Delegator delegator = ctx.getDelegator();
 		Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
-		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		ModelReader modelReader = delegator.getModelReader();
-		ResourceReader<EdiFrameSetup> setupReader = resourceManager.getResourceReader(context, EdiFrameSetup.class);
+		ResourceReader<EdiFrameSetup> setupReader = context.getResourceManager().getResourceReader(EdiFrameSetup.class);
 		try (EntityIterator<EdiFrameSetup> setups = setupReader.find()) {
 			for (EdiFrameSetup setup : setups) {
 				if (modelReader.getModelEntityNoCheck(setup.getFrame()) == null)
@@ -142,13 +140,12 @@ public class EdiServices {
 		String resource = delegator.getDelegatorTenantId();
 
 		Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
-		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		EdiFrameSetup ediFrameSetup = context.getFrame(EdiFrameSetup.class).createEntity();
 		EntityUtils.completeEntity(ediFrameSetup, entityInstance);
 		EdiUtils.removeEdiEca(delegator, ediFrameSetup.getFrame());
 
-		ResourceReader<EdiFrameSetup> setupReader = resourceManager.getResourceReader(context, EdiFrameSetup.class, resource);
+		ResourceReader<EdiFrameSetup> setupReader = context.getResourceManager().getResourceReader(EdiFrameSetup.class, resource);
 		try (EntityIterator<EdiFrameSetup> setups = setupReader.find()) {
 			for (EdiFrameSetup setup : setups) {
 				if (modelReader.getModelEntityNoCheck(setup.getFrame()) == null)
@@ -199,10 +196,9 @@ public class EdiServices {
 
 		Delegator delegator = ctx.getDelegator();
 		Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
-		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		@SuppressWarnings("unchecked")
-		Frame<E> frame = (Frame<E>) resourceManager.getFrame(context, entityInstance.getEntityName());
+		Frame<E> frame = (Frame<E>) context.getResourceManager().getFrame(entityInstance.getEntityName());
 		E entity = frame.createEntity();
 		EntityUtils.completeEntity(entity, entityInstance);
 

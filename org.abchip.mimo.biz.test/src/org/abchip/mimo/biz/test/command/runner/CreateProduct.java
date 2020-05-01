@@ -30,7 +30,6 @@ import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.service.ServiceManager;
@@ -63,9 +62,9 @@ public class CreateProduct implements Callable<Long> {
 	}
 
 	private void createSalesProduct() throws ResourceException {
-		ResourceManager resourceManager = context.get(ResourceManager.class);
+
 		// Product
-		ResourceWriter<Product> productWriter = resourceManager.getResourceWriter(context, Product.class);
+		ResourceWriter<Product> productWriter = context.getResourceManager().getResourceWriter(Product.class);
 		Product product = productWriter.make(true);
 		product.setInternalName(product.getID());
 		product.setProductName(product.getID() + " sales product");
@@ -76,7 +75,7 @@ public class CreateProduct implements Callable<Long> {
 		productWriter.create(product);
 
 		// ProductPrice
-		ResourceWriter<ProductPrice> productPriceWriter = resourceManager.getResourceWriter(context, ProductPrice.class);
+		ResourceWriter<ProductPrice> productPriceWriter = context.getResourceManager().getResourceWriter(ProductPrice.class);
 		ProductPrice productPrice = productPriceWriter.make();
 		productPrice.setProductId(product);
 		productPrice.setPrice(new BigDecimal(1));
@@ -90,9 +89,9 @@ public class CreateProduct implements Callable<Long> {
 	}
 
 	private void createPurchaseProduct() throws ResourceException {
-		ResourceManager resourceManager = context.get(ResourceManager.class);
+
 		// Product
-		ResourceWriter<Product> productWriter = resourceManager.getResourceWriter(context, Product.class);
+		ResourceWriter<Product> productWriter = context.getResourceManager().getResourceWriter(Product.class);
 		Product product = productWriter.make(true);
 		product.setInternalName(product.getID());
 		product.setProductName(product.getID() + " purchase product");
@@ -102,9 +101,9 @@ public class CreateProduct implements Callable<Long> {
 		product.setReturnable(true);
 		productWriter.create(product);
 
-		ResourceWriter<SupplierProduct> supplierProductWriter = resourceManager.getResourceWriter(context, SupplierProduct.class);
-		ResourceWriter<ProductFacility> productFacilityWriter = resourceManager.getResourceWriter(context, ProductFacility.class);
-		ResourceReader<Facility> facilityReader = resourceManager.getResourceReader(context, Facility.class);
+		ResourceWriter<SupplierProduct> supplierProductWriter = context.getResourceManager().getResourceWriter(SupplierProduct.class);
+		ResourceWriter<ProductFacility> productFacilityWriter = context.getResourceManager().getResourceWriter(ProductFacility.class);
+		ResourceReader<Facility> facilityReader = context.getResourceManager().getResourceReader(Facility.class);
 
 		// List of supplier
 		List<Party> parties = StressTestUtils.getEnabledSupplier(context);

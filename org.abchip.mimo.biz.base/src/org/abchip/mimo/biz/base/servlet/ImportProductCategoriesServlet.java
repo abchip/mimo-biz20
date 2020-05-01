@@ -10,7 +10,6 @@ package org.abchip.mimo.biz.base.servlet;
 
 import java.io.IOException;
 
-import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
@@ -22,7 +21,6 @@ import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.http.servlet.BaseServlet;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.util.Strings;
 import org.apache.poi.hssf.usermodel.HSSFCell;
@@ -35,9 +33,6 @@ public class ImportProductCategoriesServlet extends BaseServlet {
 
 	private static final long serialVersionUID = 1L;
 
-	@Inject
-	private ResourceManager resourceManager;
-
 	protected void execute(Context context, HttpServletRequest request, HttpServletResponse response) throws IOException {
 		_execute(context, request, response);
 	}
@@ -47,7 +42,7 @@ public class ImportProductCategoriesServlet extends BaseServlet {
 
 		try {
 
-			ResourceWriter<ProductCategory> productCategoryWriter = resourceManager.getResourceWriter(context, ProductCategory.class);
+			ResourceWriter<ProductCategory> productCategoryWriter = context.getResourceManager().getResourceWriter(ProductCategory.class);
 
 			for (Part filePart : parseRequest(request).values()) {
 				if (!filePart.getName().equals("upload"))

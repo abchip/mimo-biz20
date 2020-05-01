@@ -36,7 +36,6 @@ import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.Resource;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.util.Logs;
 import org.eclipse.emf.ecore.EClass;
@@ -419,12 +418,10 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 		}
 
 		Context context = resource.getContext();
-		ResourceManager resourceManager = context.get(ResourceManager.class);
-
 		try {
 			String filter = "partyId = \"" + this.getPartyId() + "\"  AND thruDate IS NULL and paymentMethodTypeId = \"" + methodType + "\"";
 			String order = "-fromDate";
-			ResourceReader<PaymentMethod> paymentMethodReader = resourceManager.getResourceReader(context, PaymentMethod.class);
+			ResourceReader<PaymentMethod> paymentMethodReader = context.getResourceManager().getResourceReader(PaymentMethod.class);
 			try (EntityIterator<PaymentMethod> paymentMethods = paymentMethodReader.find(filter, null, order)) {
 				for (PaymentMethod paymentMethod : paymentMethods) {
 					return paymentMethod;
@@ -464,16 +461,14 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 		}
 
 		Context context = resource.getContext();
-		ResourceManager resourceManager = context.get(ResourceManager.class);
-
 		try {
 			String filter = "partyId = \"" + this.getPartyId() + "\"  AND thruDate IS NULL";
 			String order = "-fromDate";
-			ResourceReader<PartyContactMech> partyContactMechReader = resourceManager.getResourceReader(context, PartyContactMech.class);
+			ResourceReader<PartyContactMech> partyContactMechReader = context.getResourceManager().getResourceReader(PartyContactMech.class);
 
 			try (EntityIterator<PartyContactMech> partyContactMechs = partyContactMechReader.find(filter, null, order)) {
 				for (PartyContactMech partyContactMech : partyContactMechs) {
-					ResourceReader<ContactMech> contactMechReader = resourceManager.getResourceReader(context, ContactMech.class);
+					ResourceReader<ContactMech> contactMechReader = context.getResourceManager().getResourceReader(ContactMech.class);
 					ContactMech contactMech = contactMechReader.lookup(partyContactMech.getContactMechId().getContactMechId());
 
 					if (!contactMech.getContactMechTypeId().getContactMechTypeId().equals("POSTAL_ADDRESS"))
@@ -503,12 +498,10 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 		}
 
 		Context context = resource.getContext();
-		ResourceManager resourceManager = context.get(ResourceManager.class);
-
 		try {
 			String filter = "partyId = \"" + this.getPartyId() + "\"  AND thruDate IS NULL";
 			String order = "-fromDate";
-			ResourceReader<PartyContactMech> partyContactMechReader = resourceManager.getResourceReader(context, PartyContactMech.class);
+			ResourceReader<PartyContactMech> partyContactMechReader = context.getResourceManager().getResourceReader(PartyContactMech.class);
 
 			try (EntityIterator<PartyContactMech> partyContactMechs = partyContactMechReader.find(filter, null, order)) {
 				for (PartyContactMech partyContactMech : partyContactMechs) {
@@ -541,12 +534,10 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 		}
 
 		Context context = resource.getContext();
-		ResourceManager resourceManager = context.get(ResourceManager.class);
-
 		try {
 			String filter = "partyId = \"" + this.getPartyId() + "\"  AND thruDate IS NULL";
 			String order = "-fromDate";
-			ResourceReader<PartyContactMech> partyContactMechReader = resourceManager.getResourceReader(context, PartyContactMech.class);
+			ResourceReader<PartyContactMech> partyContactMechReader = context.getResourceManager().getResourceReader(PartyContactMech.class);
 
 			try (EntityIterator<PartyContactMech> partyContactMechs = partyContactMechReader.find(filter, null, order)) {
 				for (PartyContactMech partyContactMech : partyContactMechs) {

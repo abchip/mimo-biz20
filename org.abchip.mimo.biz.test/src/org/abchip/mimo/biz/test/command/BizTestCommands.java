@@ -79,7 +79,6 @@ import org.abchip.mimo.biz.test.accounting.StripePaymentManager;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.service.ServiceException;
@@ -93,8 +92,6 @@ import com.stripe.model.PaymentIntent;
 
 public class BizTestCommands extends BaseTestCommands {
 
-	@Inject
-	private ResourceManager resourceManager;
 	@Inject
 	private ServiceManager serviceManager;
 
@@ -144,7 +141,7 @@ public class BizTestCommands extends BaseTestCommands {
 		}
 
 		// check
-		ResourceReader<Agreement> agreementReader = resourceManager.getResourceReader(context, Agreement.class);
+		ResourceReader<Agreement> agreementReader = context.getResourceManager().getResourceReader(Agreement.class);
 		Agreement agreementEntity = agreementReader.lookup(agreementId);
 		if (agreementEntity == null) {
 			interpreter.println("Invalid agreement!!!");
@@ -156,7 +153,7 @@ public class BizTestCommands extends BaseTestCommands {
 			return;
 		}
 
-		ResourceWriter<Agreement> agreementWriter = resourceManager.getResourceWriter(context, Agreement.class);
+		ResourceWriter<Agreement> agreementWriter = context.getResourceManager().getResourceWriter(Agreement.class);
 		agreementEntity.setThruDate(new Date());
 		agreementWriter.create(agreementEntity, true);
 
@@ -184,7 +181,7 @@ public class BizTestCommands extends BaseTestCommands {
 
 		String invoiceId = nextArgument(interpreter);
 
-		Invoice invoice = this.resourceManager.getResourceReader(context, Invoice.class).lookup(invoiceId);
+		Invoice invoice = context.getResourceManager().getResourceReader(Invoice.class).lookup(invoiceId);
 		interpreter.println("From: " + invoice.getPartyIdFrom().getID());
 		interpreter.println("To: " + invoice.getPartyId().getID());
 		interpreter.println("Total: " + invoice.getTotal());
@@ -202,7 +199,7 @@ public class BizTestCommands extends BaseTestCommands {
 		}
 
 		// check Order
-		ResourceReader<OrderHeader> orderHeaderReader = resourceManager.getResourceReader(context, OrderHeader.class);
+		ResourceReader<OrderHeader> orderHeaderReader = context.getResourceManager().getResourceReader(OrderHeader.class);
 		OrderHeader orderHeaderEntity = orderHeaderReader.lookup(orderId);
 		if (orderHeaderEntity == null) {
 			interpreter.println("Invalid order!!!");
@@ -240,7 +237,7 @@ public class BizTestCommands extends BaseTestCommands {
 		}
 
 		// check Order
-		ResourceReader<OrderHeader> orderHeaderReader = resourceManager.getResourceReader(context, OrderHeader.class);
+		ResourceReader<OrderHeader> orderHeaderReader = context.getResourceManager().getResourceReader(OrderHeader.class);
 		OrderHeader orderHeaderEntity = orderHeaderReader.lookup(orderId);
 		if (orderHeaderEntity == null) {
 			interpreter.println("Invalid order!!!");
@@ -278,7 +275,7 @@ public class BizTestCommands extends BaseTestCommands {
 		}
 
 		// check Order
-		ResourceReader<OrderHeader> orderHeaderReader = resourceManager.getResourceReader(context, OrderHeader.class);
+		ResourceReader<OrderHeader> orderHeaderReader = context.getResourceManager().getResourceReader(OrderHeader.class);
 		OrderHeader orderHeaderEntity = orderHeaderReader.lookup(orderId);
 		if (orderHeaderEntity == null) {
 			interpreter.println("Invalid order!!!");
@@ -309,14 +306,14 @@ public class BizTestCommands extends BaseTestCommands {
 
 		Party party = context.createProxy(Party.class, partyId);
 
-		ResourceReader<ProductStore> productStoreReader = resourceManager.getResourceReader(context, ProductStore.class);
+		ResourceReader<ProductStore> productStoreReader = context.getResourceManager().getResourceReader(ProductStore.class);
 		ProductStore productStore = productStoreReader.lookup(PRODUCT_STORE_ID);
 
-		ResourceReader<UserLogin> userLoginReader = resourceManager.getResourceReader(context, UserLogin.class);
+		ResourceReader<UserLogin> userLoginReader = context.getResourceManager().getResourceReader(UserLogin.class);
 		UserLogin userLogin = userLoginReader.lookup(USER_LOGIN_ID);
 
 		// Order Header
-		ResourceWriter<OrderHeader> orderHeaderWriter = resourceManager.getResourceWriter(context, OrderHeader.class);
+		ResourceWriter<OrderHeader> orderHeaderWriter = context.getResourceManager().getResourceWriter(OrderHeader.class);
 		OrderHeader orderHeader = orderHeaderWriter.make(true);
 
 		if (productStore.getOrderNumberPrefix() != null)
@@ -336,7 +333,7 @@ public class BizTestCommands extends BaseTestCommands {
 		orderHeaderWriter.create(orderHeader, true);
 
 		// OrderStatus
-		ResourceWriter<OrderStatus> orderStatusWriter = resourceManager.getResourceWriter(context, OrderStatus.class);
+		ResourceWriter<OrderStatus> orderStatusWriter = context.getResourceManager().getResourceWriter(OrderStatus.class);
 		OrderStatus orderStatus = orderStatusWriter.make(true);
 		orderStatus.setOrderId(orderHeader);
 		orderStatus.setStatusId(context.createProxy(StatusItem.class, "ORDER_CREATED"));
@@ -344,7 +341,7 @@ public class BizTestCommands extends BaseTestCommands {
 		orderStatusWriter.create(orderStatus, true);
 
 		// OrderContactMech
-		ResourceWriter<OrderContactMech> orderContactMechWriter = resourceManager.getResourceWriter(context, OrderContactMech.class);
+		ResourceWriter<OrderContactMech> orderContactMechWriter = context.getResourceManager().getResourceWriter(OrderContactMech.class);
 		OrderContactMech orderContactMech = orderContactMechWriter.make();
 		orderContactMech.setOrderId(orderHeader);
 		orderContactMech.setContactMechPurposeTypeId(context.createProxy(ContactMechPurposeType.class, "ORDER_EMAIL"));
@@ -352,7 +349,7 @@ public class BizTestCommands extends BaseTestCommands {
 		orderContactMechWriter.create(orderContactMech, true);
 
 		// OrderItemShipGroup
-		ResourceWriter<OrderItemShipGroup> orderItemShipGroupWriter = resourceManager.getResourceWriter(context, OrderItemShipGroup.class);
+		ResourceWriter<OrderItemShipGroup> orderItemShipGroupWriter = context.getResourceManager().getResourceWriter(OrderItemShipGroup.class);
 		String shipGroupSeqId = "00001";
 		OrderItemShipGroup orderItemShipGroup = orderItemShipGroupWriter.make();
 		orderItemShipGroup.setOrderId(orderHeader);
@@ -372,7 +369,7 @@ public class BizTestCommands extends BaseTestCommands {
 		// 20, shipGroupSeqId);
 
 		// OrderRole
-		ResourceWriter<OrderRole> orderRoleWriter = resourceManager.getResourceWriter(context, OrderRole.class);
+		ResourceWriter<OrderRole> orderRoleWriter = context.getResourceManager().getResourceWriter(OrderRole.class);
 		OrderRole orderRole = orderRoleWriter.make();
 		orderRole.setOrderId(orderHeader);
 		orderRole.setPartyId(partyDefault.getOrganization());
@@ -380,7 +377,7 @@ public class BizTestCommands extends BaseTestCommands {
 		orderRoleWriter.create(orderRole, true);
 
 		// Party Role to partyId
-		ResourceWriter<PartyRole> partyRoleWriter = resourceManager.getResourceWriter(context, PartyRole.class);
+		ResourceWriter<PartyRole> partyRoleWriter = context.getResourceManager().getResourceWriter(PartyRole.class);
 		PartyRole partyRole = partyRoleWriter.make();
 		partyRole.setPartyId(party);
 		partyRole.setRoleTypeId(context.createProxy(RoleType.class, "BILL_TO_CUSTOMER"));
@@ -426,7 +423,7 @@ public class BizTestCommands extends BaseTestCommands {
 		orderRoleWriter.create(orderRole, true);
 
 		// OrderPaymentPreference
-		ResourceWriter<OrderPaymentPreference> orderPaymentPreferenceWriter = resourceManager.getResourceWriter(context, OrderPaymentPreference.class);
+		ResourceWriter<OrderPaymentPreference> orderPaymentPreferenceWriter = context.getResourceManager().getResourceWriter(OrderPaymentPreference.class);
 		OrderPaymentPreference orderPaymentPreference = orderPaymentPreferenceWriter.make(true);
 		orderPaymentPreference.setOrderId(orderHeader);
 		orderPaymentPreference.setStatusId(context.createProxy(StatusItem.class, "PAYMENT_NOT_RECEIVED"));
@@ -434,8 +431,8 @@ public class BizTestCommands extends BaseTestCommands {
 		orderPaymentPreferenceWriter.create(orderPaymentPreference, true);
 
 		// Inventory
-		ResourceReader<OrderItemShipGroupAssoc> orderItemShipGroupAssocReader = resourceManager.getResourceReader(context, OrderItemShipGroupAssoc.class);
-		ResourceReader<OrderItem> orderItemReader = resourceManager.getResourceReader(context, OrderItem.class);
+		ResourceReader<OrderItemShipGroupAssoc> orderItemShipGroupAssocReader = context.getResourceManager().getResourceReader(OrderItemShipGroupAssoc.class);
+		ResourceReader<OrderItem> orderItemReader = context.getResourceManager().getResourceReader(OrderItem.class);
 
 		String filter = "orderId = \"" + orderHeader.getOrderId() + "\"";
 
@@ -489,7 +486,7 @@ public class BizTestCommands extends BaseTestCommands {
 	private void createOrderItem(CommandInterpreter interpreter, Context context, GetCommonDefaultResponse commonDefault, GetPartyDefaultResponse partyDefault, OrderHeader orderHeader,
 			String itemSeqiD, String item, int quantity, String shipGroupSeqId) throws ResourceException, ServiceException {
 
-		ResourceWriter<OrderItem> orderItemWriter = resourceManager.getResourceWriter(context, OrderItem.class);
+		ResourceWriter<OrderItem> orderItemWriter = context.getResourceManager().getResourceWriter(OrderItem.class);
 
 		OrderItem orderItem = orderItemWriter.make();
 		orderItem.setOrderId(orderHeader);
@@ -497,7 +494,7 @@ public class BizTestCommands extends BaseTestCommands {
 		orderItem.setOrderItemTypeId(context.createProxy(OrderItemType.class, "PRODUCT_ORDER_ITEM"));
 		orderItem.setProdCatalogId(PRODUCT_CATALOG_ID);
 
-		ResourceReader<Product> productReader = resourceManager.getResourceReader(context, Product.class);
+		ResourceReader<Product> productReader = context.getResourceManager().getResourceReader(Product.class);
 		Product product = productReader.lookup(item);
 		orderItem.setProductId(product);
 		orderItem.setItemDescription(product.getProductName());
@@ -523,7 +520,7 @@ public class BizTestCommands extends BaseTestCommands {
 		orderItemWriter.create(orderItem);
 
 		// OrderStatus
-		ResourceWriter<OrderStatus> orderStatusWriter = resourceManager.getResourceWriter(context, OrderStatus.class);
+		ResourceWriter<OrderStatus> orderStatusWriter = context.getResourceManager().getResourceWriter(OrderStatus.class);
 		OrderStatus orderStatus = orderStatusWriter.make(true);
 		orderStatus.setOrderId(orderHeader);
 		orderStatus.setOrderItemSeqId(itemSeqiD);
@@ -532,7 +529,7 @@ public class BizTestCommands extends BaseTestCommands {
 		orderStatusWriter.create(orderStatus);
 
 		// OrderItemShipGroupAssoc
-		ResourceWriter<OrderItemShipGroupAssoc> orderItemShipGroupAssocWriter = resourceManager.getResourceWriter(context, OrderItemShipGroupAssoc.class);
+		ResourceWriter<OrderItemShipGroupAssoc> orderItemShipGroupAssocWriter = context.getResourceManager().getResourceWriter(OrderItemShipGroupAssoc.class);
 		OrderItemShipGroupAssoc orderItemShipGroupAssoc = orderItemShipGroupAssocWriter.make();
 		orderItemShipGroupAssoc.setOrderId(orderHeader);
 		orderItemShipGroupAssoc.setOrderItemSeqId(itemSeqiD);
@@ -547,7 +544,7 @@ public class BizTestCommands extends BaseTestCommands {
 		Party partyFrom = partyDefault.getOrganization();
 
 		// Invoice Header
-		ResourceWriter<Invoice> invoiceWriter = resourceManager.getResourceWriter(context, Invoice.class);
+		ResourceWriter<Invoice> invoiceWriter = context.getResourceManager().getResourceWriter(Invoice.class);
 		Invoice invoice = invoiceWriter.make(true);
 		invoice.setInvoiceTypeId(context.createProxy(InvoiceType.class, "SALES_INVOICE"));
 		invoice.setInvoiceDate(new Date());
@@ -560,7 +557,7 @@ public class BizTestCommands extends BaseTestCommands {
 		invoiceWriter.create(invoice);
 
 		// InvoiceStatus
-		ResourceWriter<InvoiceStatus> invoiceStatusWriter = resourceManager.getResourceWriter(context, InvoiceStatus.class);
+		ResourceWriter<InvoiceStatus> invoiceStatusWriter = context.getResourceManager().getResourceWriter(InvoiceStatus.class);
 		InvoiceStatus invoiceStatus = invoiceStatusWriter.make();
 		invoiceStatus.setStatusId(context.createProxy(StatusItem.class, "INVOICE_IN_PROCESS"));
 		invoiceStatus.setInvoiceId(invoice);
@@ -568,7 +565,7 @@ public class BizTestCommands extends BaseTestCommands {
 		invoiceStatusWriter.create(invoiceStatus);
 
 		// InvoiceContactMech
-		ResourceWriter<InvoiceContactMech> invoiceContactMechWriter = resourceManager.getResourceWriter(context, InvoiceContactMech.class);
+		ResourceWriter<InvoiceContactMech> invoiceContactMechWriter = context.getResourceManager().getResourceWriter(InvoiceContactMech.class);
 		InvoiceContactMech invoiceContactMech = invoiceContactMechWriter.make();
 		invoiceContactMech.setInvoiceId(invoice);
 		invoiceContactMech.setContactMechPurposeTypeId(context.createProxy(ContactMechPurposeType.class, "PAYMENT_LOCATION"));
@@ -581,7 +578,7 @@ public class BizTestCommands extends BaseTestCommands {
 	private void createInvoiceItem(CommandInterpreter interpreter, Context context, GetCommonDefaultResponse commonDefault, Invoice invoice, String item, int quantity, String itemType)
 			throws ResourceException, ServiceException {
 
-		ResourceWriter<InvoiceItem> invoiceItemWriter = resourceManager.getResourceWriter(context, InvoiceItem.class);
+		ResourceWriter<InvoiceItem> invoiceItemWriter = context.getResourceManager().getResourceWriter(InvoiceItem.class);
 
 		InvoiceItem invoiceItem = invoiceItemWriter.make();
 		invoiceItem.setInvoiceId(invoice);
@@ -594,7 +591,7 @@ public class BizTestCommands extends BaseTestCommands {
 		// invoiceItem.setInvoiceItemSeqId(invoiceItemSeqId);
 		invoiceItem.setInvoiceItemTypeId(context.createProxy(InvoiceItemType.class, itemType));
 
-		ResourceReader<Product> productReader = resourceManager.getResourceReader(context, Product.class);
+		ResourceReader<Product> productReader = context.getResourceManager().getResourceReader(Product.class);
 		Product product = productReader.lookup(item);
 		invoiceItem.setProductId(product);
 		invoiceItem.setDescription(product.getProductName());
@@ -620,12 +617,12 @@ public class BizTestCommands extends BaseTestCommands {
 		String saveInvoiceItemSeqId = invoiceItem.getParentInvoiceItemSeqId();
 
 		// check taxable
-		ResourceReader<ProductStore> productStoreReader = resourceManager.getResourceReader(context, ProductStore.class);
+		ResourceReader<ProductStore> productStoreReader = context.getResourceManager().getResourceReader(ProductStore.class);
 		ProductStore productStore = productStoreReader.lookup(PRODUCT_STORE_ID);
 
 		String filterTaxAuth = "taxAuthPartyId = '" + productStore.getVatTaxAuthPartyId() + "' AND taxAuthGeoId = '" + productStore.getVatTaxAuthGeoId() + "'";
 
-		ResourceReader<TaxAuthorityRateProduct> taxAuthorityRateProductReader = resourceManager.getResourceReader(context, TaxAuthorityRateProduct.class);
+		ResourceReader<TaxAuthorityRateProduct> taxAuthorityRateProductReader = context.getResourceManager().getResourceReader(TaxAuthorityRateProduct.class);
 		String taxAuthPartyId = "";
 		String taxAuthGeoId = "";
 		String taxAuthorityRateSeqId = "";
@@ -695,7 +692,7 @@ public class BizTestCommands extends BaseTestCommands {
 		InvoiceItemType invoiceItemType = context.createProxy(InvoiceItemType.class, "INV_DPROD_ITEM");
 
 		// AgreementItem
-		ResourceWriter<AgreementItem> agreementItemWriter = resourceManager.getResourceWriter(context, AgreementItem.class);
+		ResourceWriter<AgreementItem> agreementItemWriter = context.getResourceManager().getResourceWriter(AgreementItem.class);
 
 		AgreementItem agreementItem = agreementItemWriter.make();
 		agreementItem.setAgreementId(agreement);
@@ -712,7 +709,7 @@ public class BizTestCommands extends BaseTestCommands {
 		agreementItemWriter.create(agreementItem, true);
 		String agreementItemSeqId = agreementItem.getAgreementItemSeqId();
 		// AgreementTerm
-		ResourceWriter<AgreementTerm> agreementTermWriter = resourceManager.getResourceWriter(context, AgreementTerm.class);
+		ResourceWriter<AgreementTerm> agreementTermWriter = context.getResourceManager().getResourceWriter(AgreementTerm.class);
 		AgreementTerm agreementTerm = agreementTermWriter.make(true);
 
 		agreementTerm.setTermTypeId(termType);
@@ -745,13 +742,13 @@ public class BizTestCommands extends BaseTestCommands {
 		Product productItem = context.createProxy(Product.class, item);
 
 		// AgreementProductAppl
-		ResourceWriter<AgreementProductAppl> agreementProductApplWriter = resourceManager.getResourceWriter(context, AgreementProductAppl.class);
+		ResourceWriter<AgreementProductAppl> agreementProductApplWriter = context.getResourceManager().getResourceWriter(AgreementProductAppl.class);
 		AgreementProductAppl agreementProductAppl = agreementProductApplWriter.make();
 		agreementProductAppl.setAgreementId(agreement);
 		agreementProductAppl.setAgreementItemSeqId(itemSeqId);
 		agreementProductAppl.setProductId(productItem);
 
-		ResourceReader<Product> productReader = resourceManager.getResourceReader(context, Product.class);
+		ResourceReader<Product> productReader = context.getResourceManager().getResourceReader(Product.class);
 		Product product = productReader.lookup(item);
 
 		// price calculation
@@ -789,11 +786,11 @@ public class BizTestCommands extends BaseTestCommands {
 		if (agreementId != null)
 			filter = filter + "AND agreementId = '" + agreementId + "'";
 
-		ResourceReader<Agreement> agreementReader = resourceManager.getResourceReader(context, Agreement.class);
+		ResourceReader<Agreement> agreementReader = context.getResourceManager().getResourceReader(Agreement.class);
 		// ResourceReader<AgreementItem> agreementItemReader =
-		// resourceManager.getResourceReader(context, AgreementItem.class);
-		ResourceReader<AgreementTerm> agreementTermReader = resourceManager.getResourceReader(context, AgreementTerm.class);
-		ResourceReader<AgreementProductAppl> agreementProductApplReader = resourceManager.getResourceReader(context, AgreementProductAppl.class);
+		// context.getResourceManager().getResourceReader(AgreementItem.class);
+		ResourceReader<AgreementTerm> agreementTermReader = context.getResourceManager().getResourceReader(AgreementTerm.class);
+		ResourceReader<AgreementProductAppl> agreementProductApplReader = context.getResourceManager().getResourceReader(AgreementProductAppl.class);
 
 		try (EntityIterator<Agreement> agreements = agreementReader.find(filter)) {
 			for (Agreement agreement : agreements) {
@@ -932,7 +929,7 @@ public class BizTestCommands extends BaseTestCommands {
 			interpreter.println("Payment method not found for party " + invoice.getPartyId().getID());
 		}
 
-		ResourceWriter<Payment> paymentWriter = resourceManager.getResourceWriter(context, Payment.class);
+		ResourceWriter<Payment> paymentWriter = context.getResourceManager().getResourceWriter(Payment.class);
 		Payment payment = paymentWriter.make(true);
 		payment.setAmount(invoice.getTotal());
 		payment.setPartyIdTo(invoice.getPartyIdFrom());

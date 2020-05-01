@@ -14,7 +14,6 @@ import org.abchip.mimo.biz.model.entity.tenant.Tenant;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.e4.E4Activator;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceManager;
 
 public class ContextUtils {
 
@@ -33,10 +32,7 @@ public class ContextUtils {
 		synchronized (E4Activator.getApplication()) {
 			context = contexts.get(tenantId);
 			if (context == null) {
-
-				ResourceManager resourceManager = E4Activator.getApplication().getContext().get(ResourceManager.class);
-
-				Tenant tenant = resourceManager.getResourceReader(E4Activator.getApplication().getContext(), Tenant.class).lookup(tenantId);
+				Tenant tenant = E4Activator.getApplication().getContext().getResourceManager().getResourceReader(Tenant.class).lookup(tenantId);
 				if (tenant == null)
 					return null;
 

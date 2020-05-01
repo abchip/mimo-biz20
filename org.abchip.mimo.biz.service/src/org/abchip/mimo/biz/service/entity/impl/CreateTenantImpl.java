@@ -141,21 +141,21 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 		ServiceResponse response = this.buildResponse();
 
 		// Tenant
-		ResourceWriter<Tenant> tenantWriter = context.getResourceManager().getResourceWriter(context, Tenant.class);
+		ResourceWriter<Tenant> tenantWriter = context.getResourceManager().getResourceWriter(Tenant.class);
 		Tenant tenant = tenantWriter.make();
 		tenant.setTenantId(this.getTenantId());
 		tenant.setTenantName(this.getTenantName());
 		tenantWriter.create(tenant, this.isUpdate());
 
 		// TenantDomainName
-		ResourceWriter<TenantDomainName> tenantDomainNameWriter = context.getResourceManager().getResourceWriter(context, TenantDomainName.class);
+		ResourceWriter<TenantDomainName> tenantDomainNameWriter = context.getResourceManager().getResourceWriter(TenantDomainName.class);
 		TenantDomainName tenantDomainName = tenantDomainNameWriter.make();
 		tenantDomainName.setTenantId(tenant);
 		tenantDomainName.setDomainName(this.getTenantId() + ".abchip.net");
 		tenantDomainNameWriter.create(tenantDomainName, this.isUpdate());
 
 		// TenantDataSource
-		ResourceWriter<TenantDataSource> tenantDataSourceWriter = context.getResourceManager().getResourceWriter(context, TenantDataSource.class);
+		ResourceWriter<TenantDataSource> tenantDataSourceWriter = context.getResourceManager().getResourceWriter(TenantDataSource.class);
 		TenantDataSource tenantDataSource = tenantDataSourceWriter.make();
 		tenantDataSource.setTenantId(tenant);
 		tenantDataSource.setEntityGroupName("org.apache.ofbiz");
@@ -180,7 +180,7 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 		 */
 
 		// UserLogin
-		ResourceWriter<UserLogin> userLogintWriter = context.getResourceManager().getResourceWriter(context, UserLogin.class, this.getTenantId());
+		ResourceWriter<UserLogin> userLogintWriter = context.getResourceManager().getResourceWriter(UserLogin.class, this.getTenantId());
 		UserLogin userLogin = userLogintWriter.make();
 		userLogin.setUserLoginId(this.getTenantId());
 		userLogin.setCurrentPassword("{SHA}47ca69ebb4bdc9ae0adec130880165d2cc05db1a");
@@ -203,7 +203,7 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 		this.loadSeeds();
 
 		// UserLoginSecurityGroup
-		ResourceWriter<UserLoginSecurityGroup> userLoginSecurityGroupWriter = context.getResourceManager().getResourceWriter(context, UserLoginSecurityGroup.class, this.getTenantId());
+		ResourceWriter<UserLoginSecurityGroup> userLoginSecurityGroupWriter = context.getResourceManager().getResourceWriter(UserLoginSecurityGroup.class, this.getTenantId());
 		UserLoginSecurityGroup userLoginSecurityGroup = userLoginSecurityGroupWriter.make();
 		userLoginSecurityGroup.setUserLoginId(userLogin);
 		userLoginSecurityGroup.setGroupId(context.createProxy(SecurityGroup.class, "SUPER", this.getTenant()));

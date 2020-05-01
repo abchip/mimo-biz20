@@ -21,7 +21,6 @@ import org.abchip.mimo.entity.EntityFactory;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.util.Logs;
 import org.apache.ofbiz.base.util.StringUtil;
@@ -86,7 +85,6 @@ public class SeedServices {
 
 	@SuppressWarnings({ "unchecked" })
 	private static void createContainer(Context context, String containerName, String folderName, List<GenericValue> listEntity, int counter) throws ResourceException {
-		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		String counterPad = org.apache.commons.lang.StringUtils.leftPad(Integer.toString(counter), 3, "0");
 		Iterator<GenericValue> listEntityIt = listEntity.iterator();
@@ -97,12 +95,12 @@ public class SeedServices {
 		while (listEntityIt.hasNext()) {
 			GenericValue genericValue = listEntityIt.next();
 
-			Frame<EntityIdentifiable> frame = (Frame<EntityIdentifiable>) resourceManager.getFrame(context, genericValue.getEntityName());
+			Frame<EntityIdentifiable> frame = (Frame<EntityIdentifiable>) context.getResourceManager().getFrame(genericValue.getEntityName());
 			EntityIdentifiable entityIdentifiable = frame.createEntity();
 			EntityUtils.completeEntity(entityIdentifiable, genericValue);
 			container.getContents().add(entityIdentifiable);
 		}
-		ResourceWriter<EntityContainer> entityWriter = resourceManager.getResourceWriter(context, EntityContainer.class);
+		ResourceWriter<EntityContainer> entityWriter = context.getResourceManager().getResourceWriter(EntityContainer.class);
 		entityWriter.create(container, true);
 	}
 }

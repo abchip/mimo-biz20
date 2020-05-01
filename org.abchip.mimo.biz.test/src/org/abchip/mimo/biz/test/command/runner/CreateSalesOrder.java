@@ -44,7 +44,6 @@ import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceManager;
@@ -84,14 +83,13 @@ public class CreateSalesOrder implements Callable<Long> {
 	}
 
 	private void createOrder(ServiceManager serviceManager) throws ResourceException, ServiceException {
-		ResourceManager resourceManager = context.get(ResourceManager.class);
 
-		ProductStore productStore = StressTestUtils.getProductStore(context, resourceManager);
+		ProductStore productStore = StressTestUtils.getProductStore(context);
 		PartyAcctgPreference partyAcctgPreference = partyDefault.getAccountingPreference();
 		UserLogin userLogin = context.createProxy(UserLogin.class, context.getContextDescription().getUser());
 
 		// Order Header
-		ResourceWriter<OrderHeader> orderHeaderWriter = resourceManager.getResourceWriter(context, OrderHeader.class);
+		ResourceWriter<OrderHeader> orderHeaderWriter = context.getResourceManager().getResourceWriter(OrderHeader.class);
 		OrderHeader orderHeader = orderHeaderWriter.make(true);
 		String orderId = orderHeader.getOrderId();
 		if (partyAcctgPreference != null && partyAcctgPreference.getOrderIdPrefix() != null) {
@@ -114,7 +112,7 @@ public class CreateSalesOrder implements Callable<Long> {
 		orderHeaderWriter.create(orderHeader);
 
 		// OrderStatus
-		ResourceWriter<OrderStatus> orderStatusWriter = resourceManager.getResourceWriter(context, OrderStatus.class);
+		ResourceWriter<OrderStatus> orderStatusWriter = context.getResourceManager().getResourceWriter(OrderStatus.class);
 		OrderStatus orderStatus = orderStatusWriter.make(true);
 		orderStatus.setOrderId(orderHeader);
 		orderStatus.setStatusId(context.createProxy(StatusItem.class, "ORDER_CREATED"));
@@ -122,11 +120,11 @@ public class CreateSalesOrder implements Callable<Long> {
 		orderStatusWriter.create(orderStatus);
 
 		// OrderContactMech
-		createContactMech(resourceManager, party.getEmail(), orderHeader, "ORDER_EMAIL");
-		createContactMech(resourceManager, party.getPostalAddress(), orderHeader, "SHIPPING_LOCATION");
+		createContactMech(party.getEmail(), orderHeader, "ORDER_EMAIL");
+		createContactMech(party.getPostalAddress(), orderHeader, "SHIPPING_LOCATION");
 
 		// OrderItemShipGroup
-		ResourceWriter<OrderItemShipGroup> orderItemShipGroupWriter = resourceManager.getResourceWriter(context, OrderItemShipGroup.class);
+		ResourceWriter<OrderItemShipGroup> orderItemShipGroupWriter = context.getResourceManager().getResourceWriter(OrderItemShipGroup.class);
 		String shipGroupSeqId = StressTestUtils.formatPaddedNumber(1, 5);
 		OrderItemShipGroup orderItemShipGroup = orderItemShipGroupWriter.make();
 		orderItemShipGroup.setOrderId(orderHeader);
@@ -140,11 +138,11 @@ public class CreateSalesOrder implements Callable<Long> {
 		long i = 1;
 		long total = 0;
 		for (Product product : this.products) {
-			createOrderItem(resourceManager, serviceManager, orderHeader, StressTestUtils.formatPaddedNumber(i++, 5), shipGroupSeqId, 1, product);
+			createOrderItem(serviceManager, orderHeader, StressTestUtils.formatPaddedNumber(i++, 5), shipGroupSeqId, 1, product);
 			total++;
 		}
 		// OrderRole
-		ResourceWriter<OrderRole> orderRoleWriter = resourceManager.getResourceWriter(context, OrderRole.class);
+		ResourceWriter<OrderRole> orderRoleWriter = context.getResourceManager().getResourceWriter(OrderRole.class);
 		OrderRole orderRole = orderRoleWriter.make();
 		orderRole.setOrderId(orderHeader);
 		orderRole.setPartyId(partyDefault.getOrganization());
@@ -176,7 +174,7 @@ public class CreateSalesOrder implements Callable<Long> {
 		orderRoleWriter.create(orderRole);
 
 		// OrderPaymentPreference
-		ResourceWriter<OrderPaymentPreference> orderPaymentPreferenceWriter = resourceManager.getResourceWriter(context, OrderPaymentPreference.class);
+		ResourceWriter<OrderPaymentPreference> orderPaymentPreferenceWriter = context.getResourceManager().getResourceWriter(OrderPaymentPreference.class);
 		OrderPaymentPreference orderPaymentPreference = orderPaymentPreferenceWriter.make(true);
 		orderPaymentPreference.setOrderId(orderHeader);
 		orderPaymentPreference.setStatusId(context.createProxy(StatusItem.class, "PAYMENT_NOT_RECEIVED"));
@@ -197,9 +195,9 @@ public class CreateSalesOrder implements Callable<Long> {
 
 	}
 
-	private void createOrderItem(ResourceManager resourceManager, ServiceManager serviceManager, OrderHeader orderHeader, String itemSeqiD, String shipGroupSeqId, int quantity, Product product)
+	private void createOrderItem(ServiceManager serviceManager, OrderHeader orderHeader, String itemSeqiD, String shipGroupSeqId, int quantity, Product product)
 			throws ResourceException, ServiceException {
-		ResourceWriter<OrderItem> orderItemWriter = resourceManager.getResourceWriter(context, OrderItem.class);
+		ResourceWriter<OrderItem> orderItemWriter = context.getResourceManager().getResourceWriter(OrderItem.class);
 
 		OrderItem orderItem = orderItemWriter.make();
 		orderItem.setOrderId(orderHeader);
@@ -210,7 +208,7 @@ public class CreateSalesOrder implements Callable<Long> {
 		orderItem.setItemDescription(product.getProductName());
 		orderItem.setStatusId(context.createProxy(StatusItem.class, "ITEM_CREATED"));
 		orderItem.setQuantity(new BigDecimal(quantity));
-		
+
 		// price calculation
 		CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
 		calculateProductPrice.setProduct(product);
@@ -229,7 +227,7 @@ public class CreateSalesOrder implements Callable<Long> {
 		orderItemWriter.create(orderItem);
 
 		// OrderStatus
-		ResourceWriter<OrderStatus> orderStatusWriter = resourceManager.getResourceWriter(context, OrderStatus.class);
+		ResourceWriter<OrderStatus> orderStatusWriter = context.getResourceManager().getResourceWriter(OrderStatus.class);
 		OrderStatus orderStatus = orderStatusWriter.make(true);
 		orderStatus.setOrderId(orderHeader);
 		orderStatus.setOrderItemSeqId(itemSeqiD);
@@ -238,7 +236,7 @@ public class CreateSalesOrder implements Callable<Long> {
 		orderStatusWriter.create(orderStatus);
 
 		// OrderItemShipGroupAssoc
-		ResourceWriter<OrderItemShipGroupAssoc> orderItemShipGroupAssocWriter = resourceManager.getResourceWriter(context, OrderItemShipGroupAssoc.class);
+		ResourceWriter<OrderItemShipGroupAssoc> orderItemShipGroupAssocWriter = context.getResourceManager().getResourceWriter(OrderItemShipGroupAssoc.class);
 		OrderItemShipGroupAssoc orderItemShipGroupAssoc = orderItemShipGroupAssocWriter.make();
 		orderItemShipGroupAssoc.setOrderId(orderHeader);
 		orderItemShipGroupAssoc.setOrderItemSeqId(itemSeqiD);
@@ -247,9 +245,9 @@ public class CreateSalesOrder implements Callable<Long> {
 		orderItemShipGroupAssocWriter.create(orderItemShipGroupAssoc);
 	}
 
-	private void createContactMech(ResourceManager resourceManager, ContactMech contactMech, OrderHeader orderHeader, String purposeType) throws ResourceException {
+	private void createContactMech(ContactMech contactMech, OrderHeader orderHeader, String purposeType) throws ResourceException {
 		if (contactMech != null) {
-			ResourceWriter<OrderContactMech> orderContactMechWriter = resourceManager.getResourceWriter(context, OrderContactMech.class);
+			ResourceWriter<OrderContactMech> orderContactMechWriter = context.getResourceManager().getResourceWriter(OrderContactMech.class);
 			OrderContactMech orderContactMech = orderContactMechWriter.make();
 			orderContactMech.setOrderId(orderHeader);
 			orderContactMech.setContactMechPurposeTypeId(context.createProxy(ContactMechPurposeType.class, purposeType));

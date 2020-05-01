@@ -12,12 +12,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Future;
 
-import javax.inject.Inject;
-
 import org.abchip.mimo.biz.asf.plugins.entity.EntityUtils;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceRequest;
 import org.abchip.mimo.service.ServiceResponse;
@@ -29,9 +26,6 @@ import org.apache.ofbiz.service.LocalDispatcher;
 import org.apache.ofbiz.service.ServiceContainer;
 
 public class OFBizServiceProviderImpl extends ServiceProviderImpl {
-
-	@Inject
-	private ResourceManager resourceManager;
 
 	@Override
 	public <V extends ServiceResponse, R extends ServiceRequest<V>> V execute(R request) throws ServiceException {
@@ -107,8 +101,8 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 	private <V extends ServiceResponse, R extends ServiceRequest<V>> V toResponse(R request, Map<String, Object> context) throws ServiceException {
 
 		V response = request.buildResponse();
-		
-		Frame<V> frame = resourceManager.getFrame(request.getContext(), request.getResponse());
+
+		Frame<V> frame = request.getContext().getResourceManager().getFrame(request.getResponse());
 		for (Slot slot : frame.getSlots()) {
 			Object value = context.get(slot.getName());
 			if (value == null)

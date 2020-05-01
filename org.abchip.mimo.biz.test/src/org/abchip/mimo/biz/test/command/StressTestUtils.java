@@ -22,19 +22,18 @@ import org.abchip.mimo.biz.model.product.supplier.SupplierProduct;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.resource.ResourceWriter;
 
 public class StressTestUtils {
 
-	public static ProductStore getProductStore(Context context, ResourceManager resourceManager) throws ResourceException {
-		ResourceWriter<ProductStore> productStoreWriter = resourceManager.getResourceWriter(context, ProductStore.class);
+	public static ProductStore getProductStore(Context context) throws ResourceException {
+		ResourceWriter<ProductStore> productStoreWriter = context.getResourceManager().getResourceWriter(ProductStore.class);
 		return productStoreWriter.first();
 	}
 
-	public static ProductPrice getProductPrice(Context context, ResourceManager resourceManager, Product product) throws ResourceException {
-		ResourceReader<ProductPrice> productPriceReader = resourceManager.getResourceReader(context, ProductPrice.class);
+	public static ProductPrice getProductPrice(Context context, Product product) throws ResourceException {
+		ResourceReader<ProductPrice> productPriceReader = context.getResourceManager().getResourceReader(ProductPrice.class);
 
 		String filter = "productId = \"" + product.getID() + "\"  AND thruDate IS NULL";
 		String order = "-fromDate";
@@ -44,8 +43,7 @@ public class StressTestUtils {
 	}
 
 	public static List<Party> getEnabledCustomers(Context context) throws ResourceException {
-		ResourceManager resourceManager = context.get(ResourceManager.class);
-		ResourceReader<Party> partyReader = resourceManager.getResourceReader(context, Party.class);
+		ResourceReader<Party> partyReader = context.getResourceManager().getResourceReader(Party.class);
 		ArrayList<Party> customers = new ArrayList<Party>();
 
 		try (EntityIterator<Party> parties = partyReader.find()) {
@@ -69,8 +67,8 @@ public class StressTestUtils {
 	}
 
 	public static List<Party> getEnabledSupplier(Context context) throws ResourceException {
-		ResourceManager resourceManager = context.get(ResourceManager.class);
-		ResourceReader<Party> partyReader = resourceManager.getResourceReader(context, Party.class);
+
+		ResourceReader<Party> partyReader = context.getResourceManager().getResourceReader(Party.class);
 		ArrayList<Party> customers = new ArrayList<Party>();
 
 		try (EntityIterator<Party> parties = partyReader.find()) {
@@ -94,9 +92,8 @@ public class StressTestUtils {
 	}
 
 	public static List<Product> getDigitalProducts(Context context) throws ResourceException {
-		ResourceManager resourceManager = context.get(ResourceManager.class);
 
-		ResourceReader<Product> productReader = resourceManager.getResourceReader(context, Product.class);
+		ResourceReader<Product> productReader = context.getResourceManager().getResourceReader(Product.class);
 		List<Product> productList = new ArrayList<Product>();
 
 		try (EntityIterator<Product> products = productReader.find()) {
@@ -109,11 +106,10 @@ public class StressTestUtils {
 
 		return productList;
 	}
-	
-	public static List<SupplierProduct> getSupplierProduct(Context context, Party party) throws ResourceException {
-		ResourceManager resourceManager = context.get(ResourceManager.class);
 
-		ResourceReader<SupplierProduct> supplierProductReader = resourceManager.getResourceReader(context, SupplierProduct.class);
+	public static List<SupplierProduct> getSupplierProduct(Context context, Party party) throws ResourceException {
+
+		ResourceReader<SupplierProduct> supplierProductReader = context.getResourceManager().getResourceReader(SupplierProduct.class);
 		List<SupplierProduct> supplierProduct = new ArrayList<SupplierProduct>();
 		String filter = "partyId = \"" + party.getID() + "\"";
 

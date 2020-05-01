@@ -19,7 +19,6 @@ import org.abchip.mimo.biz.model.party.agreement.TermType;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 
 public class CreateInpsAgreement implements Callable<Long> {
@@ -39,11 +38,11 @@ public class CreateInpsAgreement implements Callable<Long> {
 	}
 
 	private void createAgreement() throws ResourceException {
-		ResourceManager resourceManager = context.get(ResourceManager.class);
+
 		String fiscalCode = StressTestUtils.generateRandomString(16, false);
 
 		// Agreement
-		ResourceWriter<Agreement> agreementWriter = resourceManager.getResourceWriter(context, Agreement.class);
+		ResourceWriter<Agreement> agreementWriter = context.getResourceManager().getResourceWriter(Agreement.class);
 
 		Agreement agreement = agreementWriter.make(true);
 
@@ -53,21 +52,20 @@ public class CreateInpsAgreement implements Callable<Long> {
 		agreementWriter.create(agreement);
 
 		int row = 1;
-		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Codice fiscale: " + fiscalCode);
-		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5),
+		createRow(agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Codice fiscale: " + fiscalCode);
+		createRow(agreement, StressTestUtils.formatPaddedNumber(row++, 5),
 				"Telefono fisso: " + "0" + StressTestUtils.generateRandomString(2, true) + " " + StressTestUtils.generateRandomString(6, true));
-		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5),
+		createRow(agreement, StressTestUtils.formatPaddedNumber(row++, 5),
 				"Telefono cellulare: " + "3" + StressTestUtils.generateRandomString(2, true) + " " + StressTestUtils.generateRandomString(7, true));
-		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "E-mail: " + fiscalCode + "@gmail.com");
-		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5),
-				"Iban: " + "IT" + StressTestUtils.generateRandomString(2, true) + StressTestUtils.generateRandomString(1, false) + StressTestUtils.generateRandomString(5, true)
-						+ StressTestUtils.generateRandomString(5, true) + StressTestUtils.generateRandomString(12, true));
-		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Flag gestione separata: SI");
-		createRow(resourceManager, agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Flag dichiarazioni non mendaci: SI");
+		createRow(agreement, StressTestUtils.formatPaddedNumber(row++, 5), "E-mail: " + fiscalCode + "@gmail.com");
+		createRow(agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Iban: " + "IT" + StressTestUtils.generateRandomString(2, true) + StressTestUtils.generateRandomString(1, false)
+				+ StressTestUtils.generateRandomString(5, true) + StressTestUtils.generateRandomString(5, true) + StressTestUtils.generateRandomString(12, true));
+		createRow(agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Flag gestione separata: SI");
+		createRow(agreement, StressTestUtils.formatPaddedNumber(row++, 5), "Flag dichiarazioni non mendaci: SI");
 
 		// AgreementTerm
 		TermType termType = context.createProxy(TermType.class, "INDEMNIFICATION");
-		ResourceWriter<AgreementTerm> agreementTermWriter = resourceManager.getResourceWriter(context, AgreementTerm.class);
+		ResourceWriter<AgreementTerm> agreementTermWriter = context.getResourceManager().getResourceWriter(AgreementTerm.class);
 		AgreementTerm agreementTerm = agreementTermWriter.make(true);
 		agreementTerm.setTermTypeId(termType);
 		agreementTerm.setAgreementId(agreement);
@@ -84,9 +82,9 @@ public class CreateInpsAgreement implements Callable<Long> {
 		agreementTermWriter.create(agreementTerm);
 	}
 
-	private void createRow(ResourceManager resourceManager, Agreement agreement, String seqId, String text) throws ResourceException {
+	private void createRow(Agreement agreement, String seqId, String text) throws ResourceException {
 		// AgreementItem
-		ResourceWriter<AgreementItem> agreementItemWriter = resourceManager.getResourceWriter(context, AgreementItem.class);
+		ResourceWriter<AgreementItem> agreementItemWriter = context.getResourceManager().getResourceWriter(AgreementItem.class);
 		AgreementItem agreementItem = agreementItemWriter.make();
 		agreementItem.setAgreementId(agreement);
 		agreementItem.setAgreementItemSeqId(seqId);

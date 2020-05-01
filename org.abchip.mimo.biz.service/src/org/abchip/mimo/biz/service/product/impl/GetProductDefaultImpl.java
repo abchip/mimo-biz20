@@ -15,7 +15,6 @@ import org.abchip.mimo.biz.service.product.GetProductDefault;
 import org.abchip.mimo.biz.service.product.GetProductDefaultResponse;
 import org.abchip.mimo.biz.service.product.ProductPackage;
 import org.abchip.mimo.entity.EntityIterator;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 import org.eclipse.emf.ecore.EClass;
 
@@ -28,6 +27,7 @@ import org.eclipse.emf.ecore.EClass;
 public class GetProductDefaultImpl extends BizServiceRequestImpl<GetProductDefaultResponse> implements GetProductDefault {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected GetProductDefaultImpl() {
@@ -36,6 +36,7 @@ public class GetProductDefaultImpl extends BizServiceRequestImpl<GetProductDefau
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -51,8 +52,7 @@ public class GetProductDefaultImpl extends BizServiceRequestImpl<GetProductDefau
 		String filter = "facilityId = \"WebStoreWarehouse\"  AND thruDate IS NULL";
 		String order = "-fromDate";
 
-		ResourceManager resourceManager = this.getContext().getResourceManager();
-		ResourceReader<FacilityContactMech> facilityContactMechReader = resourceManager.getResourceReader(context, FacilityContactMech.class, this.getTenant());
+		ResourceReader<FacilityContactMech> facilityContactMechReader = context.getResourceManager().getResourceReader(FacilityContactMech.class, this.getTenant());
 
 		try (EntityIterator<FacilityContactMech> facilityContactMechs = facilityContactMechReader.find(filter, null, order)) {
 			for (FacilityContactMech facilityContactMech : facilityContactMechs) {

@@ -15,7 +15,6 @@ import org.abchip.mimo.biz.model.product.price.ProductPrice;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.model.product.product.ProductFactory;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.tester.Test;
 import org.abchip.mimo.tester.TestAsserter;
@@ -28,25 +27,23 @@ public class ProductTest {
 	@Inject
 	public transient TestAsserter testAsserter;
 	@Inject
-	private ResourceManager resourceManager;
-	@Inject
 	private TestRunner testRunner;
 
 	@TestStarted
 	public void doTest() throws ResourceException {
 		// Product
 		String productId = "ProductCanary";
-		
+
 		Product product = ProductFactory.eINSTANCE.createProduct();
 		testAsserter.assertNotNull("Frame Product creation", product);
-		ResourceReader<Product> productReader = resourceManager.getResourceReader(testRunner.getContext(), Product.class);
+		ResourceReader<Product> productReader = testRunner.getContext().getResourceManager().getResourceReader(Product.class);
 		testAsserter.assertNotNull("Product Reader", productReader);
-		
+
 		if (productReader != null) {
 			Product productTest = productReader.lookup(productId);
 			testAsserter.assertNotNull("Product '" + productId + "' exist", productTest);
-			
-			if(productTest != null) {
+
+			if (productTest != null) {
 				testAsserter.assertEquals("Product description", "ProductCanary description", productTest.getProductName());
 				testAsserter.assertEquals("Product type id", "DIGITAL_GOOD", productTest.getProductTypeId().getProductTypeId());
 			} else {
@@ -54,19 +51,19 @@ public class ProductTest {
 				testAsserter.assertEquals("Product type id", "DIGITAL_GOOD", "");
 			}
 		}
-		
+
 		// Price
 		ProductPrice productPrice = PriceFactory.eINSTANCE.createProductPrice();
 		testAsserter.assertNotNull("Frame ProductPrice creation", productPrice);
-		
-		ResourceReader<ProductPrice> productPriceReader = resourceManager.getResourceReader(testRunner.getContext(), ProductPrice.class);
+
+		ResourceReader<ProductPrice> productPriceReader = testRunner.getContext().getResourceManager().getResourceReader(ProductPrice.class);
 		testAsserter.assertNotNull("Product Reader", productPriceReader);
-		
+
 		if (productPriceReader != null) {
 			ProductPrice productPriceTest = productPriceReader.lookup(productId);
 			testAsserter.assertNotNull("ProductPrice '" + productId + "' exist", productPriceTest);
-			
-			if(productPriceTest != null) {
+
+			if (productPriceTest != null) {
 				testAsserter.assertEquals("ProductPrice price", "1.000", productPriceTest.getPrice().toString());
 				testAsserter.assertEquals("ProductPrice price", "PURCHASE", productPriceTest.getProductPricePurposeId().getProductPricePurposeId());
 			} else {

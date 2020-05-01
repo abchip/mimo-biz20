@@ -117,7 +117,7 @@ public class CreateTenantPartyImpl extends CreateTenantImpl implements CreateTen
 
 		// Party
 		if (this.getPartyId() == null) {
-			ResourceWriter<Person> personWriter = context.getResourceManager().getResourceWriter(context, Person.class, this.getTenantId());
+			ResourceWriter<Person> personWriter = context.getResourceManager().getResourceWriter(Person.class, this.getTenantId());
 			Person tenantPerson = personWriter.make();
 			tenantPerson.setPartyId(this.getTenantId());
 			tenantPerson.setStatusId(context.createProxy(StatusItem.class, "PARTY_ENABLED", this.getTenant()));

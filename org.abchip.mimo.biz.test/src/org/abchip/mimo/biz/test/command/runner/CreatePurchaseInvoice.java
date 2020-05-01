@@ -33,7 +33,6 @@ import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceManager;
@@ -73,12 +72,11 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 	}
 
 	private void createInvoice(ServiceManager serviceManager) throws ResourceException, ServiceException {
-		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		Party company = partyDefault.getOrganization();
 
 		// Invoice Header
-		ResourceWriter<Invoice> invoiceWriter = resourceManager.getResourceWriter(context, Invoice.class);
+		ResourceWriter<Invoice> invoiceWriter = context.getResourceManager().getResourceWriter(Invoice.class);
 		PartyAcctgPreference partyAcctgPreference = partyDefault.getAccountingPreference();
 		Invoice invoice = invoiceWriter.make(true);
 		String invoiceId = invoice.getInvoiceId();
@@ -95,7 +93,7 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 		invoiceWriter.create(invoice);
 
 		// InvoiceStatus
-		ResourceWriter<InvoiceStatus> invoiceStatusWriter = resourceManager.getResourceWriter(context, InvoiceStatus.class);
+		ResourceWriter<InvoiceStatus> invoiceStatusWriter = context.getResourceManager().getResourceWriter(InvoiceStatus.class);
 		InvoiceStatus invoiceStatus = invoiceStatusWriter.make();
 		invoiceStatus.setStatusId(context.createProxy(StatusItem.class, "INVOICE_IN_PROCESS"));
 		invoiceStatus.setInvoiceId(invoice);
@@ -103,7 +101,7 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 		invoiceStatusWriter.create(invoiceStatus);
 
 		// InvoiceContactMech
-		ResourceWriter<InvoiceContactMech> invoiceContactMechWriter = resourceManager.getResourceWriter(context, InvoiceContactMech.class);
+		ResourceWriter<InvoiceContactMech> invoiceContactMechWriter = context.getResourceManager().getResourceWriter(InvoiceContactMech.class);
 		InvoiceContactMech invoiceContactMech = invoiceContactMechWriter.make();
 		invoiceContactMech.setInvoiceId(invoice);
 		invoiceContactMech.setContactMechPurposeTypeId(context.createProxy(ContactMechPurposeType.class, "PAYMENT_LOCATION"));
@@ -113,12 +111,12 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 		// Items
 		long i = 1;
 		for (Product product : this.products) {
-			createInvoiceItem(resourceManager, serviceManager, invoice, StressTestUtils.formatPaddedNumber(i++, 5), 1, product);
+			createInvoiceItem(serviceManager, invoice, StressTestUtils.formatPaddedNumber(i++, 5), 1, product);
 		}
 	}
 
-	private void createInvoiceItem(ResourceManager resourceManager, ServiceManager serviceManager, Invoice invoice, String itemSeqiD, int quantity, Product product) throws ResourceException, ServiceException {
-		ResourceWriter<InvoiceItem> invoiceItemWriter = resourceManager.getResourceWriter(context, InvoiceItem.class);
+	private void createInvoiceItem(ServiceManager serviceManager, Invoice invoice, String itemSeqiD, int quantity, Product product) throws ResourceException, ServiceException {
+		ResourceWriter<InvoiceItem> invoiceItemWriter = context.getResourceManager().getResourceWriter(InvoiceItem.class);
 
 		InvoiceItem invoiceItem = invoiceItemWriter.make();
 		invoiceItem.setInvoiceId(invoice);
@@ -129,7 +127,7 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 		invoiceItem.setDescription(product.getProductName());
 		invoiceItem.setQuantity(new BigDecimal(quantity));
 		invoiceItem.setTaxableFlag(product.getTaxable());
-		
+
 		// price calculation
 		CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
 		calculateProductPrice.setProduct(product);

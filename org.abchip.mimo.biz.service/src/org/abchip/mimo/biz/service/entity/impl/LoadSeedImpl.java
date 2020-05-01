@@ -17,7 +17,6 @@ import org.abchip.mimo.biz.service.entity.LoadSeed;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityContainer;
 import org.abchip.mimo.entity.EntityIdentifiable;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.service.ServiceResponse;
 import org.abchip.mimo.service.impl.ServiceRequestImpl;
@@ -35,8 +34,10 @@ import org.osgi.service.log.Logger;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.service.entity.impl.LoadSeedImpl#getSeedId <em>Seed Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.service.entity.impl.LoadSeedImpl#isUpdate <em>Update</em>}</li>
+ * <li>{@link org.abchip.mimo.biz.service.entity.impl.LoadSeedImpl#getSeedId
+ * <em>Seed Id</em>}</li>
+ * <li>{@link org.abchip.mimo.biz.service.entity.impl.LoadSeedImpl#isUpdate
+ * <em>Update</em>}</li>
  * </ul>
  *
  * @generated
@@ -47,6 +48,7 @@ public class LoadSeedImpl extends ServiceRequestImpl<ServiceResponse> implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected LoadSeedImpl() {
@@ -55,6 +57,7 @@ public class LoadSeedImpl extends ServiceRequestImpl<ServiceResponse> implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -64,12 +67,14 @@ public class LoadSeedImpl extends ServiceRequestImpl<ServiceResponse> implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected static final int ESTATIC_FEATURE_COUNT = 3;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -79,15 +84,17 @@ public class LoadSeedImpl extends ServiceRequestImpl<ServiceResponse> implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public String getSeedId() {
-		return (String)eGet(EntityPackage.Literals.LOAD_SEED__SEED_ID, true);
+		return (String) eGet(EntityPackage.Literals.LOAD_SEED__SEED_ID, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -97,15 +104,17 @@ public class LoadSeedImpl extends ServiceRequestImpl<ServiceResponse> implements
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean isUpdate() {
-		return (Boolean)eGet(EntityPackage.Literals.LOAD_SEED__UPDATE, true);
+		return (Boolean) eGet(EntityPackage.Literals.LOAD_SEED__UPDATE, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -119,7 +128,6 @@ public class LoadSeedImpl extends ServiceRequestImpl<ServiceResponse> implements
 		ServiceResponse response = this.buildResponse();
 		Context context = this.getContext();
 
-		ResourceManager resourceManager = context.get(ResourceManager.class);
 		Bundle bundle = context.get(Application.class).getBundle();
 
 		URL seedUrl = bundle.getResource(MimoConstants.SEEDS_PATH + "/" + this.getSeedId() + ".xmi");
@@ -138,7 +146,7 @@ public class LoadSeedImpl extends ServiceRequestImpl<ServiceResponse> implements
 
 				for (EntityIdentifiable entityIdentifiable : entityContainer.getContents()) {
 					try {
-						ResourceWriter<EntityIdentifiable> entityWriter = resourceManager.getResourceWriter(context, entityIdentifiable.isa(), this.getTenant());
+						ResourceWriter<EntityIdentifiable> entityWriter = context.getResourceManager().getResourceWriter(entityIdentifiable.isa(), this.getTenant());
 						entityWriter.create(entityIdentifiable, this.isUpdate());
 					} catch (Exception e) {
 						LOGGER.error(e.getMessage());

@@ -22,7 +22,6 @@ import org.abchip.mimo.biz.model.party.party.Person;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.http.servlet.BaseServlet;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 
 import ezvcard.Ezvcard;
@@ -59,11 +58,9 @@ public class ExportPartyVcardServlet extends BaseServlet {
 
 	public VCard createVcardFromParty(Context context, String partyId) throws ResourceException {
 
-		ResourceManager resourceManager = context.get(ResourceManager.class);
-
-		ResourceReader<Party> partyReader = resourceManager.getResourceReader(context, Party.class);
-		ResourceReader<Person> personReader = resourceManager.getResourceReader(context, Person.class);
-		ResourceReader<PartyGroup> partyGroupReader = resourceManager.getResourceReader(context, PartyGroup.class);
+		ResourceReader<Party> partyReader = context.getResourceManager().getResourceReader(Party.class);
+		ResourceReader<Person> personReader = context.getResourceManager().getResourceReader(Person.class);
+		ResourceReader<PartyGroup> partyGroupReader = context.getResourceManager().getResourceReader(PartyGroup.class);
 		Party partyEntity = partyReader.lookup(partyId);
 
 		VCard vcard = new VCard();

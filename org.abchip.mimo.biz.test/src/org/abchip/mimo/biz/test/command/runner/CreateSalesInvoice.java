@@ -47,7 +47,6 @@ import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceManager;
 import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.service.ServiceException;
@@ -89,12 +88,11 @@ public class CreateSalesInvoice implements Callable<Long> {
 	}
 
 	private void createInvoice(ServiceManager serviceManager) throws ResourceException, ServiceException {
-		ResourceManager resourceManager = context.get(ResourceManager.class);
 
 		Party company = partyDefault.getOrganization();
 
 		// Invoice Header
-		ResourceWriter<Invoice> invoiceWriter = resourceManager.getResourceWriter(context, Invoice.class);
+		ResourceWriter<Invoice> invoiceWriter = context.getResourceManager().getResourceWriter(Invoice.class);
 		PartyAcctgPreference partyAcctgPreference = partyDefault.getAccountingPreference();
 
 		Invoice invoice = invoiceWriter.make(true);
@@ -113,7 +111,7 @@ public class CreateSalesInvoice implements Callable<Long> {
 		invoiceWriter.create(invoice);
 
 		// InvoiceStatus
-		ResourceWriter<InvoiceStatus> invoiceStatusWriter = resourceManager.getResourceWriter(context, InvoiceStatus.class);
+		ResourceWriter<InvoiceStatus> invoiceStatusWriter = context.getResourceManager().getResourceWriter(InvoiceStatus.class);
 		InvoiceStatus invoiceStatus = invoiceStatusWriter.make();
 		invoiceStatus.setStatusId(context.createProxy(StatusItem.class, "INVOICE_IN_PROCESS"));
 		invoiceStatus.setInvoiceId(invoice);
@@ -121,7 +119,7 @@ public class CreateSalesInvoice implements Callable<Long> {
 		invoiceStatusWriter.create(invoiceStatus);
 
 		// InvoiceContactMech
-		ResourceWriter<InvoiceContactMech> invoiceContactMechWriter = resourceManager.getResourceWriter(context, InvoiceContactMech.class);
+		ResourceWriter<InvoiceContactMech> invoiceContactMechWriter = context.getResourceManager().getResourceWriter(InvoiceContactMech.class);
 		InvoiceContactMech invoiceContactMech = invoiceContactMechWriter.make();
 		invoiceContactMech.setInvoiceId(invoice);
 		invoiceContactMech.setContactMechPurposeTypeId(context.createProxy(ContactMechPurposeType.class, "PAYMENT_LOCATION"));
@@ -129,7 +127,7 @@ public class CreateSalesInvoice implements Callable<Long> {
 		invoiceContactMechWriter.create(invoiceContactMech);
 
 		// Roles
-		ResourceWriter<InvoiceRole> invoiceRoleWriter = resourceManager.getResourceWriter(context, InvoiceRole.class);
+		ResourceWriter<InvoiceRole> invoiceRoleWriter = context.getResourceManager().getResourceWriter(InvoiceRole.class);
 		InvoiceRole invoiceRole = invoiceRoleWriter.make();
 		invoiceRole.setInvoiceId(invoice);
 		invoiceRole.setPartyId(company);
@@ -162,15 +160,15 @@ public class CreateSalesInvoice implements Callable<Long> {
 
 		// Items
 		for (Product product : this.products) {
-			createInvoiceItem(resourceManager, serviceManager, invoice, 1, product);
+			createInvoiceItem(serviceManager, invoice, 1, product);
 		}
-		
+
 		// Payment
-		createPaymentFromInvoice(resourceManager, serviceManager, invoice);
+		createPaymentFromInvoice(serviceManager, invoice);
 	}
 
-	private void createInvoiceItem(ResourceManager resourceManager, ServiceManager serviceManager, Invoice invoice, int quantity, Product product) throws ResourceException, ServiceException {
-		ResourceWriter<InvoiceItem> invoiceItemWriter = resourceManager.getResourceWriter(context, InvoiceItem.class);
+	private void createInvoiceItem(ServiceManager serviceManager, Invoice invoice, int quantity, Product product) throws ResourceException, ServiceException {
+		ResourceWriter<InvoiceItem> invoiceItemWriter = context.getResourceManager().getResourceWriter(InvoiceItem.class);
 
 		InvoiceItem invoiceItem = invoiceItemWriter.make();
 		invoiceItem.setInvoiceId(invoice);
@@ -180,7 +178,7 @@ public class CreateSalesInvoice implements Callable<Long> {
 		invoiceItem.setDescription(product.getProductName());
 		invoiceItem.setQuantity(new BigDecimal(quantity));
 		invoiceItem.setTaxableFlag(product.getTaxable());
-		
+
 		// price calculation
 		CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
 		calculateProductPrice.setProduct(product);
@@ -194,22 +192,21 @@ public class CreateSalesInvoice implements Callable<Long> {
 			invoiceItem.setAmount(productPrice.getBasePrice());
 		} else
 			LOGGER.error("Prezzo non valido per articolo " + product.getID());
-		
+
 		invoiceItemWriter.create(invoiceItem);
 
 		// check taxable
-		createTaxableRowItem(resourceManager, serviceManager, invoiceItem);
+		createTaxableRowItem(serviceManager, invoiceItem);
 	}
 
-	private String createPaymentFromInvoice(ResourceManager resourceManager, ServiceManager serviceManager, Invoice invoice)
-			throws ResourceException, ServiceException {
+	private String createPaymentFromInvoice(ServiceManager serviceManager, Invoice invoice) throws ResourceException, ServiceException {
 
 		PaymentMethod paymentMethod = invoice.getPartyId().getPaymentMethod("CREDIT_CARD");
 		if (paymentMethod == null) {
 			LOGGER.error("Payment method not found for party " + invoice.getPartyId().getID());
 		}
 
-		ResourceWriter<Payment> paymentWriter = resourceManager.getResourceWriter(context, Payment.class);
+		ResourceWriter<Payment> paymentWriter = context.getResourceManager().getResourceWriter(Payment.class);
 		Payment payment = paymentWriter.make(true);
 		payment.setAmount(invoice.getTotal());
 		payment.setPartyIdTo(invoice.getPartyIdFrom());
@@ -233,16 +230,16 @@ public class CreateSalesInvoice implements Callable<Long> {
 
 		return payment.getID();
 	}
-	
-	private void createTaxableRowItem(ResourceManager resourceManager, ServiceManager serviceManager, InvoiceItem invoiceItemParent) throws ResourceException, ServiceException {
-		ResourceWriter<InvoiceItem> invoiceItemWriter = resourceManager.getResourceWriter(context, InvoiceItem.class);
+
+	private void createTaxableRowItem(ServiceManager serviceManager, InvoiceItem invoiceItemParent) throws ResourceException, ServiceException {
+		ResourceWriter<InvoiceItem> invoiceItemWriter = context.getResourceManager().getResourceWriter(InvoiceItem.class);
 
 		String saveInvoiceItemSeqId = invoiceItemParent.getParentInvoiceItemSeqId();
-		ProductStore productStore = StressTestUtils.getProductStore(context, resourceManager);
+		ProductStore productStore = StressTestUtils.getProductStore(context);
 
 		String filterTaxAuth = "taxAuthPartyId = '" + productStore.getVatTaxAuthPartyId() + "' AND taxAuthGeoId = '" + productStore.getVatTaxAuthGeoId() + "'";
 
-		ResourceReader<TaxAuthorityRateProduct> taxAuthorityRateProductReader = resourceManager.getResourceReader(context, TaxAuthorityRateProduct.class);
+		ResourceReader<TaxAuthorityRateProduct> taxAuthorityRateProductReader = context.getResourceManager().getResourceReader(TaxAuthorityRateProduct.class);
 		String taxAuthPartyId = "";
 		String taxAuthGeoId = "";
 		String taxAuthorityRateSeqId = "";
