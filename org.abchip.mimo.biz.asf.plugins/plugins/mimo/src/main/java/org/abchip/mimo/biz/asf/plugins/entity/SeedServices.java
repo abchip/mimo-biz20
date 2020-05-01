@@ -17,9 +17,7 @@ import java.util.Map;
 import org.abchip.mimo.biz.asf.plugins.ContextUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityContainer;
-import org.abchip.mimo.entity.EntityFactory;
 import org.abchip.mimo.entity.EntityIdentifiable;
-import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.util.Logs;
@@ -83,24 +81,23 @@ public class SeedServices {
 		}
 	}
 
-	@SuppressWarnings({ "unchecked" })
 	private static void createContainer(Context context, String containerName, String folderName, List<GenericValue> listEntity, int counter) throws ResourceException {
 
 		String counterPad = org.apache.commons.lang.StringUtils.leftPad(Integer.toString(counter), 3, "0");
 		Iterator<GenericValue> listEntityIt = listEntity.iterator();
-		EntityContainer container = EntityFactory.eINSTANCE.createEntityContainer();
+
+		ResourceWriter<EntityContainer> entityWriter = context.getResourceManager().getResourceWriter(EntityContainer.class);
+		EntityContainer container = entityWriter.make();
 		containerName = counterPad + "_" + folderName + "_" + containerName.substring(0, containerName.lastIndexOf('.'));
 
 		container.setName(containerName);
 		while (listEntityIt.hasNext()) {
 			GenericValue genericValue = listEntityIt.next();
 
-			Frame<EntityIdentifiable> frame = (Frame<EntityIdentifiable>) context.getResourceManager().getFrame(genericValue.getEntityName());
-			EntityIdentifiable entityIdentifiable = frame.createEntity();
+			EntityIdentifiable entityIdentifiable = container.add(genericValue.getEntityName());
 			EntityUtils.completeEntity(entityIdentifiable, genericValue);
-			container.getContents().add(entityIdentifiable);
 		}
-		ResourceWriter<EntityContainer> entityWriter = context.getResourceManager().getResourceWriter(EntityContainer.class);
-		entityWriter.create(container, true);
+
+		entityWriter.create(container);
 	}
 }

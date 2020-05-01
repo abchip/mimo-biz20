@@ -22,7 +22,7 @@ import org.abchip.mimo.edi.entity.EntityEvent;
 import org.abchip.mimo.edi.message.MessageType;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityIterator;
-import org.abchip.mimo.entity.Frame;
+import org.abchip.mimo.resource.Resource;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.util.Logs;
@@ -130,8 +130,8 @@ public class EdiServices {
 
 	private static Map<String, Object> manageEdiFrameSetup(Operations operation, DispatchContext ctx, Map<String, Object> params) throws ResourceException {
 
-		GenericValue entityInstance = (GenericValue) params.get(VALUEATTR);
-		if (entityInstance == null) {
+		GenericValue ofbizEntity = (GenericValue) params.get(VALUEATTR);
+		if (ofbizEntity == null) {
 			return ServiceUtil.returnError("FrameSetup is null");
 		}
 
@@ -140,9 +140,9 @@ public class EdiServices {
 		String resource = delegator.getDelegatorTenantId();
 
 		Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
-
-		EdiFrameSetup ediFrameSetup = context.getFrame(EdiFrameSetup.class).createEntity();
-		EntityUtils.completeEntity(ediFrameSetup, entityInstance);
+		Resource<EdiFrameSetup> ediFrameSetupResource = context.getResourceManager().getResource(EdiFrameSetup.class);
+		EdiFrameSetup ediFrameSetup = ediFrameSetupResource.make();
+		EntityUtils.completeEntity(ediFrameSetup, ofbizEntity);
 		EdiUtils.removeEdiEca(delegator, ediFrameSetup.getFrame());
 
 		ResourceReader<EdiFrameSetup> setupReader = context.getResourceManager().getResourceReader(EdiFrameSetup.class, resource);
@@ -168,7 +168,9 @@ public class EdiServices {
 		Delegator delegator = ctx.getDelegator();
 		Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
 
-		MessageType<?> messageType = context.getFrame(MessageType.class).createEntity();
+		@SuppressWarnings("rawtypes")
+		Resource<MessageType> resource = context.getResourceManager().getResource(MessageType.class);
+		MessageType<?> messageType = resource.make();
 		EntityUtils.completeEntity(messageType, entityInstance);
 
 		try {
@@ -187,20 +189,18 @@ public class EdiServices {
 		}
 	}
 
-	private static <E extends EntityIdentifiable> Map<String, Object> manageEdiEntity(Operations operation, DispatchContext ctx, Map<String, Object> params)
-			throws DataInterchangeException, ResourceException {
+	private static Map<String, Object> manageEdiEntity(Operations operation, DispatchContext ctx, Map<String, Object> params) throws DataInterchangeException, ResourceException {
 
-		GenericValue entityInstance = (GenericValue) params.get(VALUEATTR);
-		if (entityInstance == null)
+		GenericValue ofbizEntity = (GenericValue) params.get(VALUEATTR);
+		if (ofbizEntity == null)
 			return ServiceUtil.returnError("Entity instance is null");
 
 		Delegator delegator = ctx.getDelegator();
 		Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
 
-		@SuppressWarnings("unchecked")
-		Frame<E> frame = (Frame<E>) context.getResourceManager().getFrame(entityInstance.getEntityName());
-		E entity = frame.createEntity();
-		EntityUtils.completeEntity(entity, entityInstance);
+		Resource<?> resource = context.getResourceManager().getResource(ofbizEntity.getEntityName());
+		EntityIdentifiable entity = resource.make();
+		EntityUtils.completeEntity(entity, ofbizEntity);
 
 		EdiManager ediManager = context.get(EdiManager.class);
 		ediManager.writeMessage(context, entity, EntityEvent.get(operation.name()));

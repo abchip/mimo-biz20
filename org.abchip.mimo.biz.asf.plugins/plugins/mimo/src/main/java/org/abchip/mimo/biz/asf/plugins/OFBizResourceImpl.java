@@ -193,7 +193,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 		eq = eq.where(EntityCondition.makeCondition(primaryKey, EntityJoinOperator.AND));
 
-		E entity = frame.createEntity();
+		E entity = make();
 		boolean beganTransaction = false;
 		try {
 			beganTransaction = TransactionUtil.begin();
@@ -277,7 +277,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		try {
 			beganTransaction = TransactionUtil.begin();
 			for (GenericValue genericValue : eq.queryList()) {
-				E entity = frame.createEntity();
+				E entity = make();
 				this.setInternalResource(entity);
 				EntityUtils.completeEntity(entity, genericValue);				
 				if (proxy)

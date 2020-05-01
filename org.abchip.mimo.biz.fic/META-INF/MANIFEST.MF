@@ -12,7 +12,7 @@ Require-Bundle: org.abchip.mimo.core.base;bundle-version="0.2.0",
  org.abchip.mimo.biz.model;bundle-version="0.2.0",
  org.abchip.mimo.biz.service;bundle-version="0.2.0",
  org.abchip.mimo.biz.base;bundle-version="0.2.0",
- com.fasterxml.jackson.core.jackson-core;bundle-version="2.9.9",
- com.fasterxml.jackson.core.jackson-databind;bundle-version="2.9.93"
+ com.fasterxml.jackson.core.jackson-databind;bundle-version="2.9.93",
+ com.fasterxml.jackson.core.jackson-core;bundle-version="2.9.9"
 Import-Package: javax.inject
 Export-Package: org.abchip.mimo.biz.fic
