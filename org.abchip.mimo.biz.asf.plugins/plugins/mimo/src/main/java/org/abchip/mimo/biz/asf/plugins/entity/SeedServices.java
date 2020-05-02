@@ -84,18 +84,18 @@ public class SeedServices {
 	private static void createContainer(Context context, String containerName, String folderName, List<GenericValue> listEntity, int counter) throws ResourceException {
 
 		String counterPad = org.apache.commons.lang.StringUtils.leftPad(Integer.toString(counter), 3, "0");
-		Iterator<GenericValue> listEntityIt = listEntity.iterator();
 
 		ResourceWriter<EntityContainer> entityWriter = context.getResourceManager().getResourceWriter(EntityContainer.class);
 		EntityContainer container = entityWriter.make();
 		containerName = counterPad + "_" + folderName + "_" + containerName.substring(0, containerName.lastIndexOf('.'));
-
 		container.setName(containerName);
-		while (listEntityIt.hasNext()) {
-			GenericValue genericValue = listEntityIt.next();
 
-			EntityIdentifiable entityIdentifiable = container.add(genericValue.getEntityName());
+		for (GenericValue genericValue : listEntity) {
+
+			EntityIdentifiable entityIdentifiable = context.getResourceManager().getResource(genericValue.getEntityName()).make();
 			EntityUtils.completeEntity(entityIdentifiable, genericValue);
+			
+			container.getContents().add(entityIdentifiable);
 		}
 
 		entityWriter.create(container);

@@ -39,7 +39,7 @@ public class EntityUtils {
 		return toBizEntity(delegator, entity.isa(), entity);
 	}
 
-	public static GenericValue toBizEntity(Delegator delegator, Frame<?> frame, EntityIdentifiable entity) {
+	public static <E extends EntityIdentifiable> GenericValue toBizEntity(Delegator delegator, Frame<E> frame, E entity) {
 
 		GenericValue genericValue = delegator.makeValue(frame.getName());
 

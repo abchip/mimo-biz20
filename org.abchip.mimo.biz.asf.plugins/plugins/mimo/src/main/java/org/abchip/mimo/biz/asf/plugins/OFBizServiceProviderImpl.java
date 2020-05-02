@@ -102,7 +102,8 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 
 		V response = request.buildResponse();
 
-		Frame<V> frame = request.getContext().getResourceManager().getFrame(request.getResponse());
+		@SuppressWarnings("unchecked")
+		Frame<V> frame = request.getContext().createProxy(Frame.class, request.getResponse().getSimpleName());
 		for (Slot slot : frame.getSlots()) {
 			Object value = context.get(slot.getName());
 			if (value == null)

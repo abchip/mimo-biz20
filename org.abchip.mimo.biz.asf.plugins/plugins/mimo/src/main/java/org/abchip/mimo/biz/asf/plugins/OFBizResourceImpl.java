@@ -22,6 +22,7 @@ import org.abchip.mimo.entity.Slot;
 import org.abchip.mimo.parser.sqlite.SQLiteLexer;
 import org.abchip.mimo.parser.sqlite.SQLiteParser;
 import org.abchip.mimo.resource.ResourceException;
+import org.abchip.mimo.resource.ResourceSet;
 import org.abchip.mimo.resource.impl.ResourceImpl;
 import org.abchip.mimo.util.Logs;
 import org.antlr.v4.runtime.ANTLRInputStream;
@@ -53,7 +54,9 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 	private ModelEntity modelEntity = null;
 
-	public OFBizResourceImpl(Context context, Frame<E> frame, Delegator delegator) {
+	public OFBizResourceImpl(ResourceSet resourceSet, Context context, Frame<E> frame, Delegator delegator) {
+		super(resourceSet);
+		
 		this.context = context;
 		this.frame = frame;
 		this.delegator = delegator;
@@ -77,61 +80,24 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 	@Override
 	public void create(E entity, boolean update) throws ResourceException {
+
+		if (this != entity.getResource()) {
+			LOGGER.error("Invalid resource destination ofbiz/{} origin {}", this.getFrame().getName(), entity.getResource());
+			return;
+		}
+
 		boolean beganTransaction = false;
 
 		try {
 			beganTransaction = TransactionUtil.begin();
 
 			this.doCreate(entity.isa(), entity, update);
-			this.setInternalResource(entity);
+			this.attach(entity);
 			
 			TransactionUtil.commit(beganTransaction);
 		} catch (GenericEntityException e) {
 			try {
 				String errMsg = "Failure in create operation for entity [" + this.getFrame().getName() + "/" + entity.getID() + "]: " + e.toString() + ". Rolling back transaction.";
-				TransactionUtil.rollback(beganTransaction, errMsg, e);
-			} catch (GenericTransactionException e1) {
-				LOGGER.warn(e1.getMessage());
-			}
-			throw new ResourceException(e);
-		}
-	}
-
-	@Override
-	public void update(E entity) throws ResourceException {
-		boolean beganTransaction = false;
-
-		try {
-			beganTransaction = TransactionUtil.begin();
-
-			this.doUpdate(entity.isa(), entity);
-
-			TransactionUtil.commit(beganTransaction);
-		} catch (GenericEntityException e) {
-			try {
-				String errMsg = "Failure in update operation for entity [" + this.getFrame().getName() + "/" + entity.getID() + "]: " + e.toString() + ". Rolling back transaction.";
-				TransactionUtil.rollback(beganTransaction, errMsg, e);
-			} catch (GenericTransactionException e1) {
-				LOGGER.warn(e1.getMessage());
-			}
-			throw new ResourceException(e);
-		}
-	}
-
-	@Override
-	public void delete(E entity) throws ResourceException {
-
-		boolean beganTransaction = false;
-
-		try {
-			beganTransaction = TransactionUtil.begin();
-
-			this.doDelete(entity.isa(), entity);
-
-			TransactionUtil.commit(beganTransaction);
-		} catch (GenericEntityException e) {
-			try {
-				String errMsg = "Failure in delete operation for entity [" + this.getFrame().getName() + "/" + entity.getID() + "]: " + e.toString() + ". Rolling back transaction.";
 				TransactionUtil.rollback(beganTransaction, errMsg, e);
 			} catch (GenericTransactionException e1) {
 				LOGGER.warn(e1.getMessage());
@@ -193,20 +159,38 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 		eq = eq.where(EntityCondition.makeCondition(primaryKey, EntityJoinOperator.AND));
 
-		E entity = make();
+		// SELECT
+		if (fields != null)
+			eq = eq.select(fields.split(","));
+		else if (proxy)
+			eq = eq.select(new HashSet<String>(this.modelEntity.getPkFieldNames()));
+
+		E entity = null;
+
 		boolean beganTransaction = false;
 		try {
 			beganTransaction = TransactionUtil.begin();
+
 			GenericValue genericValue = eq.queryOne();
 			if (genericValue != null) {
-				this.setInternalResource(entity);
-				EntityUtils.completeEntity(entity, genericValue);
-				if (proxy)
-					entity = this.createProxy(entity.getID());
+				if (proxy) {
+					String id = null;
+					for (String key : genericValue.getAllKeys()) {
+						if (id == null)
+							id = key;
+						else
+							id += "/" + key;
+					}
+					entity = this.createProxy(id);
+				} else {
+					entity = make();
+					EntityUtils.completeEntity(entity, genericValue);
+				}
 			}
 
 			TransactionUtil.commit(beganTransaction);
 		} catch (GenericEntityException e) {
+			entity = null;
 			try {
 				String errMsg = "Failure in read operation for entity [" + this.getFrame().getName() + "/" + name + "]: " + e.toString() + ". Rolling back transaction.";
 				TransactionUtil.rollback(beganTransaction, errMsg, e);
@@ -224,15 +208,19 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 		LOGGER.trace("Read frame {} filter {} fields {} order {} limit {} proxy {}", this.getFrame().getName(), filter, fields, order, limit, proxy);
 
+		EntityQuery eq = EntityQuery.use(delegator);
+
+		// SELECT
+		if (fields != null)
+			eq = eq.select(fields.split(","));
+		else if (proxy)
+			eq = eq.select(new HashSet<String>(this.modelEntity.getPkFieldNames()));
+
 		DynamicViewEntity dynamicViewEntity = buildDynamicView(this.modelEntity);
 
-		OFBizFilterAnalyzer analyzer = null;
 		if (filter != null && !filter.isEmpty()) {
-			analyzer = analyzeFilter(delegator, this.modelEntity.getEntityName(), filter);
-			filter = analyzer.getStringFilter();
-		}
+			OFBizFilterAnalyzer analyzer = analyzeFilter(delegator, this.modelEntity.getEntityName(), filter);
 
-		if (analyzer != null && analyzer.getListEntities().size() > 0) {
 			for (String linkedName : analyzer.getListEntities()) {
 				ModelEntity linkedEntity = delegator.getModelEntity(linkedName);
 				dynamicViewEntity.addMemberEntity(linkedEntity.getEntityName(), linkedEntity.getEntityName());
@@ -245,21 +233,15 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 				dynamicViewEntity.addViewLink(this.modelEntity.getEntityName(), linkedEntity.getEntityName(), Boolean.TRUE,
 						ModelKeyMap.makeKeyMapList(this.modelEntity.getFirstPkFieldName(), linkedEntity.getFirstPkFieldName()));
 			}
+
+			// WHERE
+			filter = analyzer.getStringFilter();
+			if (filter != null && !filter.isEmpty())
+				eq = eq.where(EntityCondition.makeConditionWhere(filter));
 		}
 
-		EntityQuery eq = EntityQuery.use(delegator);
-
-		// SELECT
-		if (fields != null)
-			eq = eq.select(fields.split(","));
-		else if (proxy)
-			eq = eq.select(new HashSet<String>(this.modelEntity.getPkFieldNames()));
 		// FROM
 		eq = eq.from(dynamicViewEntity);
-
-		// WHERE
-		if (filter != null && !filter.isEmpty())
-			eq = eq.where(EntityCondition.makeConditionWhere(filter));
 
 		// ORDER BY
 		if (order != null)
@@ -277,12 +259,20 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		try {
 			beganTransaction = TransactionUtil.begin();
 			for (GenericValue genericValue : eq.queryList()) {
-				E entity = make();
-				this.setInternalResource(entity);
-				EntityUtils.completeEntity(entity, genericValue);				
-				if (proxy)
-					entity = this.createProxy(entity.getID());
-
+				E entity = null;
+				if (proxy) {
+					String id = null;
+					for (String key : genericValue.getAllKeys()) {
+						if (id == null)
+							id = key;
+						else
+							id += "/" + key;
+					}
+					entity = this.createProxy(id);
+				} else {
+					entity = make();
+					EntityUtils.completeEntity(entity, genericValue);
+				}
 				entities.add(entity);
 			}
 			TransactionUtil.commit(beganTransaction);
@@ -301,12 +291,68 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		return entities;
 	}
 
-	private void doCreate(Frame<?> frame, EntityIdentifiable entity, boolean replace) throws GenericEntityException {
+	@Override
+	public void update(E entity) throws ResourceException {
+
+		if (this != entity.getResource()) {
+			LOGGER.error("Invalid resource destination ofbiz/{} origin {}", this.getFrame().getName(), entity.getResource());
+			return;
+		}
+
+		boolean beganTransaction = false;
+
+		try {
+			beganTransaction = TransactionUtil.begin();
+
+			this.doUpdate(entity.isa(), entity);
+
+			TransactionUtil.commit(beganTransaction);
+		} catch (GenericEntityException e) {
+			try {
+				String errMsg = "Failure in update operation for entity [" + this.getFrame().getName() + "/" + entity.getID() + "]: " + e.toString() + ". Rolling back transaction.";
+				TransactionUtil.rollback(beganTransaction, errMsg, e);
+			} catch (GenericTransactionException e1) {
+				LOGGER.warn(e1.getMessage());
+			}
+			throw new ResourceException(e);
+		}
+	}
+
+	@Override
+	public void delete(E entity) throws ResourceException {
+
+		if (this != entity.getResource()) {
+			LOGGER.error("Invalid resource destination ofbiz/{} origin {}", this.getFrame().getName(), entity.getResource());
+			return;
+		}
+
+		boolean beganTransaction = false;
+
+		try {
+			beganTransaction = TransactionUtil.begin();
+
+			this.doDelete(entity.isa(), entity);
+			this.detach(entity);
+			
+			TransactionUtil.commit(beganTransaction);
+		} catch (GenericEntityException e) {
+			try {
+				String errMsg = "Failure in delete operation for entity [" + this.getFrame().getName() + "/" + entity.getID() + "]: " + e.toString() + ". Rolling back transaction.";
+				TransactionUtil.rollback(beganTransaction, errMsg, e);
+			} catch (GenericTransactionException e1) {
+				LOGGER.warn(e1.getMessage());
+			}
+			throw new ResourceException(e);
+		}
+	}
+
+	private <K extends EntityIdentifiable> void doCreate(Frame<K> frame, K entity, boolean replace) throws GenericEntityException {
 
 		if (this.delegator.getModelReader().getModelEntityNoCheck(frame.getName()) == null)
 			return;
 
-		Frame<?> ako = frame.ako();
+		@SuppressWarnings("unchecked")
+		Frame<K> ako = (Frame<K>) frame.ako();
 		if (ako != null)
 			doCreate(ako, entity, replace);
 
@@ -317,40 +363,46 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			this.delegator.create(genericValue);
 	}
 
-	private void doDelete(Frame<?> frame, EntityIdentifiable entity) throws GenericEntityException {
-
-		GenericValue genericValue = EntityUtils.toBizEntity(this.delegator, frame, entity);
-		this.delegator.removeValue(genericValue);
-
-		if (frame.ako() != null)
-			doDelete(frame.ako(), entity);
-	}
-
-	private void doUpdate(Frame<?> frame, EntityIdentifiable entity) throws GenericEntityException {
+	private <K extends EntityIdentifiable> void doUpdate(Frame<K> frame, K entity) throws GenericEntityException {
 
 		if (this.delegator.getModelReader().getModelEntityNoCheck(frame.getName()) == null)
 			return;
 
-		if (frame.ako() != null)
-			doUpdate(frame.ako(), entity);
+		@SuppressWarnings("unchecked")
+		Frame<K> ako = (Frame<K>) frame.ako();
+		if (ako != null)
+			doUpdate(ako, entity);
 
 		GenericValue genericValue = EntityUtils.toBizEntity(this.delegator, frame, entity);
 		this.delegator.store(genericValue);
 	}
 
-	private OFBizFilterAnalyzer analyzeFilter(Delegator delegator, String frame, String filter) {
+	private <K extends EntityIdentifiable> void doDelete(Frame<K> frame, K entity) throws GenericEntityException {
 
-		ANTLRInputStream input = new ANTLRInputStream(filter);
-		SQLiteLexer SQLiteLexer = new SQLiteLexer(input);
-		CommonTokenStream tokens = new CommonTokenStream(SQLiteLexer);
-		SQLiteParser parser = new SQLiteParser(tokens);
+		if (this.delegator.getModelReader().getModelEntityNoCheck(frame.getName()) == null)
+			return;
 
-		ParseTree tree = parser.expr();
-		ParseTreeWalker walker = new ParseTreeWalker();
-		OFBizFilterAnalyzer analyzer = new OFBizFilterAnalyzer(delegator, frame);
-		walker.walk(analyzer, tree);
+		GenericValue genericValue = EntityUtils.toBizEntity(this.delegator, frame, entity);
+		this.delegator.removeValue(genericValue);
 
-		return analyzer;
+		@SuppressWarnings("unchecked")
+		Frame<K> ako = (Frame<K>) frame.ako();
+		if (ako != null)
+			doDelete(ako, entity);
+	}
+
+	private DynamicViewEntity buildDynamicView(ModelEntity modelEntity) {
+
+		DynamicViewEntity dynamicViewEntity = new DynamicViewEntity();
+		dynamicViewEntity.addMemberEntity(modelEntity.getEntityName(), modelEntity.getEntityName());
+		Iterator<ModelField> fieldIterator = modelEntity.getFieldsIterator();
+		while (fieldIterator.hasNext()) {
+			ModelField field = fieldIterator.next();
+			dynamicViewEntity.addAlias(modelEntity.getEntityName(), field.getName());
+		}
+		addSuperEntity(dynamicViewEntity, modelEntity);
+
+		return dynamicViewEntity;
 	}
 
 	private void addSuperEntity(DynamicViewEntity dynamicView, ModelEntity modelEntity) {
@@ -372,17 +424,18 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		addSuperEntity(dynamicView, modelSuperEntity);
 	}
 
-	private DynamicViewEntity buildDynamicView(ModelEntity modelEntity) {
+	private OFBizFilterAnalyzer analyzeFilter(Delegator delegator, String frame, String filter) {
 
-		DynamicViewEntity dynamicViewEntity = new DynamicViewEntity();
-		dynamicViewEntity.addMemberEntity(modelEntity.getEntityName(), modelEntity.getEntityName());
-		Iterator<ModelField> fieldIterator = modelEntity.getFieldsIterator();
-		while (fieldIterator.hasNext()) {
-			ModelField field = fieldIterator.next();
-			dynamicViewEntity.addAlias(modelEntity.getEntityName(), field.getName());
-		}
-		addSuperEntity(dynamicViewEntity, modelEntity);
+		ANTLRInputStream input = new ANTLRInputStream(filter);
+		SQLiteLexer SQLiteLexer = new SQLiteLexer(input);
+		CommonTokenStream tokens = new CommonTokenStream(SQLiteLexer);
+		SQLiteParser parser = new SQLiteParser(tokens);
 
-		return dynamicViewEntity;
+		ParseTree tree = parser.expr();
+		ParseTreeWalker walker = new ParseTreeWalker();
+		OFBizFilterAnalyzer analyzer = new OFBizFilterAnalyzer(delegator, frame);
+		walker.walk(analyzer, tree);
+
+		return analyzer;
 	}
 }

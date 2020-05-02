@@ -16,6 +16,7 @@ import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.resource.Resource;
 import org.abchip.mimo.resource.ResourceConfig;
 import org.abchip.mimo.resource.ResourceFactory;
+import org.abchip.mimo.resource.ResourceSet;
 import org.abchip.mimo.resource.impl.ResourceProviderImpl;
 import org.apache.ofbiz.entity.Delegator;
 import org.apache.ofbiz.entity.DelegatorFactory;
@@ -33,7 +34,7 @@ public class OFBizResourceProviderImpl extends ResourceProviderImpl {
 	}
 
 	@Override
-	public <E extends EntityIdentifiable> Resource<E> doGetResource(Context context, Frame<E> frame, String tenant) {
+	public <E extends EntityIdentifiable> Resource<E> doGetResource(ResourceSet resourceSet, Context context, Frame<E> frame, String tenant) {
 
 		Delegator delegator = null;
 		if (tenant != null) {
@@ -44,7 +45,7 @@ public class OFBizResourceProviderImpl extends ResourceProviderImpl {
 		if (delegator == null)
 			return null;
 
-		Resource<E> resource = new OFBizResourceImpl<E>(context, frame, delegator);
+		Resource<E> resource = new OFBizResourceImpl<E>(resourceSet, context, frame, delegator);
 		resource.setResourceConfig(this.resourceConfig);
 
 		return resource;
