@@ -22,7 +22,6 @@ import org.abchip.mimo.entity.Slot;
 import org.abchip.mimo.parser.sqlite.SQLiteLexer;
 import org.abchip.mimo.parser.sqlite.SQLiteParser;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceSet;
 import org.abchip.mimo.resource.impl.ResourceImpl;
 import org.abchip.mimo.util.Logs;
 import org.antlr.v4.runtime.ANTLRInputStream;
@@ -48,16 +47,14 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 	private static final Logger LOGGER = Logs.getLogger(OFBizResourceImpl.class);
 
-	private Context context = null;
 	private Frame<E> frame = null;
 	private Delegator delegator = null;
 
 	private ModelEntity modelEntity = null;
 
-	public OFBizResourceImpl(ResourceSet resourceSet, Context context, Frame<E> frame, Delegator delegator) {
-		super(resourceSet);
-		
-		this.context = context;
+	public OFBizResourceImpl(Context context, Frame<E> frame, Delegator delegator) {
+		super(context);
+
 		this.frame = frame;
 		this.delegator = delegator;
 		this.modelEntity = delegator.getModelEntity(frame.getName());
@@ -93,7 +90,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 			this.doCreate(entity.isa(), entity, update);
 			this.attach(entity);
-			
+
 			TransactionUtil.commit(beganTransaction);
 		} catch (GenericEntityException e) {
 			try {
@@ -333,7 +330,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 			this.doDelete(entity.isa(), entity);
 			this.detach(entity);
-			
+
 			TransactionUtil.commit(beganTransaction);
 		} catch (GenericEntityException e) {
 			try {
