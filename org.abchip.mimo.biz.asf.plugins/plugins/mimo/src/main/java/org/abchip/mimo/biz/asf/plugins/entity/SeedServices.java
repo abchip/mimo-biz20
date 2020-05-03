@@ -92,7 +92,7 @@ public class SeedServices {
 
 		for (GenericValue genericValue : listEntity) {
 
-			EntityIdentifiable entityIdentifiable = context.getResourceManager().getResource(genericValue.getEntityName()).make();
+			EntityIdentifiable entityIdentifiable = context.getResourceSet().getResource(genericValue.getEntityName()).make();
 			EntityUtils.completeEntity(entityIdentifiable, genericValue);
 			
 			container.getContents().add(entityIdentifiable);

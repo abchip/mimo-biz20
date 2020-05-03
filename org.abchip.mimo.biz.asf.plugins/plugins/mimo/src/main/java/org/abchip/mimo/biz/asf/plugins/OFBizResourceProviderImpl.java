@@ -33,11 +33,11 @@ public class OFBizResourceProviderImpl extends ResourceProviderImpl {
 	}
 
 	@Override
-	public <E extends EntityIdentifiable> Resource<E> doGetResource(ResourceSet resourceSet, String tenant, Frame<E> frame) {
+	public <E extends EntityIdentifiable> Resource<E> createResource(ResourceSet resourceSet, Frame<E> frame, String tenantId) {
 
 		Delegator delegator = null;
-		if (tenant != null) {
-			delegator = DelegatorFactory.getDelegator("default#" + tenant);
+		if (tenantId != null) {
+			delegator = DelegatorFactory.getDelegator("default#" + tenantId);
 		} else
 			delegator = DelegatorFactory.getDelegator(null);
 

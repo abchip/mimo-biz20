@@ -140,7 +140,7 @@ public class EdiServices {
 		String resource = delegator.getDelegatorTenantId();
 
 		Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
-		Resource<EdiFrameSetup> ediFrameSetupResource = context.getResourceManager().getResource(EdiFrameSetup.class);
+		Resource<EdiFrameSetup> ediFrameSetupResource = context.getResourceSet().getResource(EdiFrameSetup.class);
 		EdiFrameSetup ediFrameSetup = ediFrameSetupResource.make();
 		EntityUtils.completeEntity(ediFrameSetup, ofbizEntity);
 		EdiUtils.removeEdiEca(delegator, ediFrameSetup.getFrame());
@@ -169,7 +169,7 @@ public class EdiServices {
 		Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
 
 		@SuppressWarnings("rawtypes")
-		Resource<MessageType> resource = context.getResourceManager().getResource(MessageType.class);
+		Resource<MessageType> resource = context.getResourceSet().getResource(MessageType.class);
 		MessageType<?> messageType = resource.make();
 		EntityUtils.completeEntity(messageType, entityInstance);
 
@@ -198,7 +198,7 @@ public class EdiServices {
 		Delegator delegator = ctx.getDelegator();
 		Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
 
-		Resource<?> resource = context.getResourceManager().getResource(ofbizEntity.getEntityName());
+		Resource<?> resource = context.getResourceSet().getResource(ofbizEntity.getEntityName());
 		EntityIdentifiable entity = resource.make();
 		EntityUtils.completeEntity(entity, ofbizEntity);
 
