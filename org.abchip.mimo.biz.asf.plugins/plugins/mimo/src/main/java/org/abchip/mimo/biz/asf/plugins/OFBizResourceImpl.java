@@ -15,13 +15,13 @@ import java.util.List;
 
 import org.abchip.mimo.biz.asf.plugins.entity.EntityUtils;
 import org.abchip.mimo.biz.asf.plugins.entity.ModelUtils;
-import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
 import org.abchip.mimo.parser.sqlite.SQLiteLexer;
 import org.abchip.mimo.parser.sqlite.SQLiteParser;
 import org.abchip.mimo.resource.ResourceException;
+import org.abchip.mimo.resource.ResourceSet;
 import org.abchip.mimo.resource.impl.ResourceImpl;
 import org.abchip.mimo.util.Logs;
 import org.antlr.v4.runtime.ANTLRInputStream;
@@ -52,22 +52,12 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 	private ModelEntity modelEntity = null;
 
-	public OFBizResourceImpl(Context context, Frame<E> frame, Delegator delegator) {
-		super(context);
+	public OFBizResourceImpl(ResourceSet resourceSet, Delegator delegator, Frame<E> frame) {
+		super(resourceSet, delegator.getDelegatorTenantId());
 
 		this.frame = frame;
 		this.delegator = delegator;
 		this.modelEntity = delegator.getModelEntity(frame.getName());
-	}
-
-	@Override
-	public Context getContext() {
-		return this.context;
-	}
-
-	@Override
-	public String getTenant() {
-		return this.delegator.getDelegatorTenantId();
 	}
 
 	@Override
