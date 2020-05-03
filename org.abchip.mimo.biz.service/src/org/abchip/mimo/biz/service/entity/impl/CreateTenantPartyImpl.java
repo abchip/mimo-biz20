@@ -26,9 +26,12 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantPartyImpl#getTenantId <em>Tenant Id</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantPartyImpl#getTenantName <em>Tenant Name</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantPartyImpl#getPartyId <em>Party Id</em>}</li>
+ * <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantPartyImpl#getTenantId
+ * <em>Tenant Id</em>}</li>
+ * <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantPartyImpl#getTenantName
+ * <em>Tenant Name</em>}</li>
+ * <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantPartyImpl#getPartyId
+ * <em>Party Id</em>}</li>
  * </ul>
  *
  * @generated
@@ -37,6 +40,7 @@ public class CreateTenantPartyImpl extends CreateTenantImpl implements CreateTen
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected CreateTenantPartyImpl() {
@@ -45,6 +49,7 @@ public class CreateTenantPartyImpl extends CreateTenantImpl implements CreateTen
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -53,18 +58,18 @@ public class CreateTenantPartyImpl extends CreateTenantImpl implements CreateTen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public String getTenantId() {
-		return (String)eGet(EntityPackage.Literals.CREATE_TENANT_PARTY__TENANT_ID, true);
+		return (String) eGet(EntityPackage.Literals.CREATE_TENANT_PARTY__TENANT_ID, true);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -73,18 +78,18 @@ public class CreateTenantPartyImpl extends CreateTenantImpl implements CreateTen
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public String getTenantName() {
-		return (String)eGet(EntityPackage.Literals.CREATE_TENANT_PARTY__TENANT_NAME, true);
+		return (String) eGet(EntityPackage.Literals.CREATE_TENANT_PARTY__TENANT_NAME, true);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -94,15 +99,17 @@ public class CreateTenantPartyImpl extends CreateTenantImpl implements CreateTen
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public String getPartyId() {
-		return (String)eGet(EntityPackage.Literals.CREATE_TENANT_PARTY__PARTY_ID, true);
+		return (String) eGet(EntityPackage.Literals.CREATE_TENANT_PARTY__PARTY_ID, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -132,21 +139,21 @@ public class CreateTenantPartyImpl extends CreateTenantImpl implements CreateTen
 	@Override
 	public void loadSeeds() throws ServiceException {
 		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setTenant(this.getTenantId());
 			loadSeed.setSeedId("mimo");
 			loadSeed.setUpdate(true);
 			context.getServiceManager().execute(loadSeed);
 		}
 		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setTenant(this.getTenantId());
 			loadSeed.setSeedId("party");
 			loadSeed.setUpdate(true);
 			context.getServiceManager().execute(loadSeed);
 		}
 		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setTenant(this.getTenantId());
 			loadSeed.setSeedId("abchip-biz");
 			loadSeed.setUpdate(true);

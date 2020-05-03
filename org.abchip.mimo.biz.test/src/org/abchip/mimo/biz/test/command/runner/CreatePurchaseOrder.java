@@ -69,13 +69,13 @@ public class CreatePurchaseOrder implements Callable<Long> {
 	public Long call() throws Exception {
 
 		ServiceManager serviceManager = context.getServiceManager();
-		GetCommonDefault getCommonDefault = serviceManager.prepare(context, GetCommonDefault.class);
+		GetCommonDefault getCommonDefault = serviceManager.prepare(GetCommonDefault.class);
 		commonDefault = serviceManager.execute(getCommonDefault);
 
-		GetPartyDefault getPartyDefault = serviceManager.prepare(context, GetPartyDefault.class);
+		GetPartyDefault getPartyDefault = serviceManager.prepare(GetPartyDefault.class);
 		partyDefault = serviceManager.execute(getPartyDefault);
 
-		GetProductDefault getProductDefault = serviceManager.prepare(context, GetProductDefault.class);
+		GetProductDefault getProductDefault = serviceManager.prepare(GetProductDefault.class);
 		productDefault = serviceManager.execute(getProductDefault);
 
 		long time1 = System.currentTimeMillis();

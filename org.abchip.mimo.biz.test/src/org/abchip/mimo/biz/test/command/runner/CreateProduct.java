@@ -47,7 +47,7 @@ public class CreateProduct implements Callable<Long> {
 	public Long call() throws Exception {
 
 		ServiceManager serviceManager = context.getServiceManager();
-		GetCommonDefault getCommonDefault = serviceManager.prepare(context, GetCommonDefault.class);
+		GetCommonDefault getCommonDefault = serviceManager.prepare(GetCommonDefault.class);
 		commonDefault = serviceManager.execute(getCommonDefault);
 
 		long time1 = System.currentTimeMillis();

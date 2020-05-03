@@ -15,6 +15,7 @@ import java.util.Date;
 
 import javax.inject.Inject;
 
+import org.abchip.mimo.application.Application;
 import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem;
@@ -92,9 +93,6 @@ import com.stripe.model.PaymentIntent;
 
 public class BizTestCommands extends BaseTestCommands {
 
-	@Inject
-	private ServiceManager serviceManager;
-
 	private static final String USER_LOGIN_ID = "abchip";
 	private static final String ORDER_STATUS_APPROVED = "ORDER_APPROVED";
 	private static final String ORDER_STATUS_HOLD = "ORDER_HOLD";
@@ -107,6 +105,11 @@ public class BizTestCommands extends BaseTestCommands {
 	private static final String TAX_AUTH_PARTY_ID = "ITA_ADE";
 	private static final String TAX_AUTH_GEO_ID = "ITA";
 
+	@Inject
+	public BizTestCommands(Application application) {
+		super(application);
+	}
+
 	public void _getCreditCardParty(CommandInterpreter interpreter) throws Exception {
 		Context context = this.getContext();
 		String partyId = nextArgument(interpreter);
@@ -116,12 +119,14 @@ public class BizTestCommands extends BaseTestCommands {
 	}
 
 	public void _renewalAgreement(CommandInterpreter interpreter) throws Exception {
-		Context context = this.getContext();
 
-		GetCommonDefault getCommonDefault = serviceManager.prepare(context, GetCommonDefault.class);
+		Context context = this.getContext();
+		ServiceManager serviceManager = context.getServiceManager();
+
+		GetCommonDefault getCommonDefault = serviceManager.prepare(GetCommonDefault.class);
 		GetCommonDefaultResponse commonDefault = serviceManager.execute(getCommonDefault);
 
-		GetPartyDefault getPartyDefault = serviceManager.prepare(context, GetPartyDefault.class);
+		GetPartyDefault getPartyDefault = serviceManager.prepare(GetPartyDefault.class);
 		GetPartyDefaultResponse partyDefault = serviceManager.execute(getPartyDefault);
 
 		String agreementId = nextArgument(interpreter);
@@ -163,11 +168,12 @@ public class BizTestCommands extends BaseTestCommands {
 	public void _createOrder(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();
+		ServiceManager serviceManager = context.getServiceManager();
 
-		GetCommonDefault getCommonDefault = serviceManager.prepare(context, GetCommonDefault.class);
+		GetCommonDefault getCommonDefault = serviceManager.prepare(GetCommonDefault.class);
 		GetCommonDefaultResponse commonDefault = serviceManager.execute(getCommonDefault);
 
-		GetPartyDefault getPartyDefault = serviceManager.prepare(context, GetPartyDefault.class);
+		GetPartyDefault getPartyDefault = serviceManager.prepare(GetPartyDefault.class);
 		GetPartyDefaultResponse partyDefault = serviceManager.execute(getPartyDefault);
 
 		String partyId = nextArgument(interpreter);
@@ -190,6 +196,7 @@ public class BizTestCommands extends BaseTestCommands {
 	public void _approveOrder(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();
+		ServiceManager serviceManager = context.getServiceManager();
 
 		String orderId = nextArgument(interpreter);
 
@@ -211,7 +218,7 @@ public class BizTestCommands extends BaseTestCommands {
 			return;
 		}
 
-		ChangeOrderStatus changeOrderStatus = serviceManager.prepare(context, ChangeOrderStatus.class);
+		ChangeOrderStatus changeOrderStatus = serviceManager.prepare(ChangeOrderStatus.class);
 		changeOrderStatus.setOrderId(orderId);
 		changeOrderStatus.setStatusId(ORDER_STATUS_APPROVED);
 		changeOrderStatus.setSetItemStatus(true);
@@ -228,6 +235,7 @@ public class BizTestCommands extends BaseTestCommands {
 	public void _holdOrder(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();
+		ServiceManager serviceManager = context.getServiceManager();
 
 		String orderId = nextArgument(interpreter);
 
@@ -249,7 +257,7 @@ public class BizTestCommands extends BaseTestCommands {
 			return;
 		}
 
-		ChangeOrderStatus changeOrderStatus = serviceManager.prepare(context, ChangeOrderStatus.class);
+		ChangeOrderStatus changeOrderStatus = serviceManager.prepare(ChangeOrderStatus.class);
 		changeOrderStatus.setOrderId(orderId);
 		changeOrderStatus.setStatusId(ORDER_STATUS_HOLD);
 		changeOrderStatus.setSetItemStatus(true);
@@ -266,6 +274,7 @@ public class BizTestCommands extends BaseTestCommands {
 	public void _cancelOrder(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();
+		ServiceManager serviceManager = context.getServiceManager();
 
 		String orderId = nextArgument(interpreter);
 
@@ -287,7 +296,7 @@ public class BizTestCommands extends BaseTestCommands {
 			return;
 		}
 
-		ChangeOrderStatus changeOrderStatus = serviceManager.prepare(context, ChangeOrderStatus.class);
+		ChangeOrderStatus changeOrderStatus = serviceManager.prepare(ChangeOrderStatus.class);
 		changeOrderStatus.setOrderId(orderId);
 		changeOrderStatus.setStatusId(ORDER_STATUS_CANCELLED);
 		changeOrderStatus.setSetItemStatus(true);
@@ -303,6 +312,8 @@ public class BizTestCommands extends BaseTestCommands {
 
 	private void createOrder(CommandInterpreter interpreter, Context context, GetCommonDefaultResponse commonDefault, GetPartyDefaultResponse partyDefault, String partyId)
 			throws ResourceException, ServiceException {
+
+		ServiceManager serviceManager = context.getServiceManager();
 
 		Party party = context.createProxy(Party.class, partyId);
 
@@ -447,7 +458,7 @@ public class BizTestCommands extends BaseTestCommands {
 				OrderItem orderItem = orderItemReader.lookup(orderHeader.getOrderId() + "/" + orderItemShipGroupAssoc.getOrderItemSeqId());
 
 				// reserve the product
-				ReserveStoreInventory reserveStoreInventory = serviceManager.prepare(context, ReserveStoreInventory.class);
+				ReserveStoreInventory reserveStoreInventory = serviceManager.prepare(ReserveStoreInventory.class);
 				reserveStoreInventory.setProductStoreId(PRODUCT_STORE_ID);
 				reserveStoreInventory.setProductId(orderItem.getProductId().getProductId());
 				reserveStoreInventory.setOrderId(orderItem.getOrderId().getOrderId());
@@ -472,7 +483,7 @@ public class BizTestCommands extends BaseTestCommands {
 		}
 
 		// Update Total OrderHeader (OrderServices)
-		ResetGrandTotal resetGrandTotal = serviceManager.prepare(context, ResetGrandTotal.class);
+		ResetGrandTotal resetGrandTotal = serviceManager.prepare(ResetGrandTotal.class);
 		resetGrandTotal.setOrderId(orderHeader.getOrderId());
 		ResetGrandTotalResponse response = serviceManager.execute(resetGrandTotal);
 		if (response.isError()) {
@@ -485,6 +496,8 @@ public class BizTestCommands extends BaseTestCommands {
 
 	private void createOrderItem(CommandInterpreter interpreter, Context context, GetCommonDefaultResponse commonDefault, GetPartyDefaultResponse partyDefault, OrderHeader orderHeader,
 			String itemSeqiD, String item, int quantity, String shipGroupSeqId) throws ResourceException, ServiceException {
+
+		ServiceManager serviceManager = context.getServiceManager();
 
 		ResourceWriter<OrderItem> orderItemWriter = context.getResourceManager().getResourceWriter(OrderItem.class);
 
@@ -503,7 +516,7 @@ public class BizTestCommands extends BaseTestCommands {
 		orderItem.setUnitPrice(new BigDecimal(10));
 
 		// price calculation
-		CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
+		CalculateProductPrice calculateProductPrice = serviceManager.prepare(CalculateProductPrice.class);
 		calculateProductPrice.setProduct(product);
 		calculateProductPrice.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
 
@@ -578,6 +591,8 @@ public class BizTestCommands extends BaseTestCommands {
 	private void createInvoiceItem(CommandInterpreter interpreter, Context context, GetCommonDefaultResponse commonDefault, Invoice invoice, String item, int quantity, String itemType)
 			throws ResourceException, ServiceException {
 
+		ServiceManager serviceManager = context.getServiceManager();
+
 		ResourceWriter<InvoiceItem> invoiceItemWriter = context.getResourceManager().getResourceWriter(InvoiceItem.class);
 
 		InvoiceItem invoiceItem = invoiceItemWriter.make();
@@ -598,7 +613,7 @@ public class BizTestCommands extends BaseTestCommands {
 		invoiceItem.setQuantity(new BigDecimal(quantity));
 
 		// price calculation
-		CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
+		CalculateProductPrice calculateProductPrice = serviceManager.prepare(CalculateProductPrice.class);
 		calculateProductPrice.setProduct(product);
 		calculateProductPrice.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
 
@@ -641,7 +656,7 @@ public class BizTestCommands extends BaseTestCommands {
 		if (taxAuthGeoId == null || taxAuthGeoId.isEmpty())
 			taxAuthGeoId = TAX_AUTH_GEO_ID;
 
-		CalcTaxForDisplay calcTaxForDisplay = serviceManager.prepare(context, CalcTaxForDisplay.class);
+		CalcTaxForDisplay calcTaxForDisplay = serviceManager.prepare(CalcTaxForDisplay.class);
 		calcTaxForDisplay.setBasePrice(productPrice.getBasePrice());
 		calcTaxForDisplay.setProductId(item);
 		calcTaxForDisplay.setProductStoreId(PRODUCT_STORE_ID);
@@ -739,6 +754,8 @@ public class BizTestCommands extends BaseTestCommands {
 	private void createRowProduct(CommandInterpreter interpreter, Context context, GetCommonDefaultResponse commonDefault, Agreement agreement, String item, String itemSeqId)
 			throws ResourceException, ServiceException {
 
+		ServiceManager serviceManager = context.getServiceManager();
+
 		Product productItem = context.createProxy(Product.class, item);
 
 		// AgreementProductAppl
@@ -752,7 +769,7 @@ public class BizTestCommands extends BaseTestCommands {
 		Product product = productReader.lookup(item);
 
 		// price calculation
-		CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
+		CalculateProductPrice calculateProductPrice = serviceManager.prepare(CalculateProductPrice.class);
 		calculateProductPrice.setProduct(product);
 		calculateProductPrice.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
 
@@ -892,7 +909,9 @@ public class BizTestCommands extends BaseTestCommands {
 
 	private boolean setPaymentStatus(CommandInterpreter interpreter, Context context, String paymentId, String statusPaymentId) throws ResourceException, ServiceException {
 
-		SetPaymentStatus setPaymentStatus = serviceManager.prepare(context, SetPaymentStatus.class);
+		ServiceManager serviceManager = context.getServiceManager();
+
+		SetPaymentStatus setPaymentStatus = serviceManager.prepare(SetPaymentStatus.class);
 		setPaymentStatus.setPaymentId(paymentId);
 		setPaymentStatus.setStatusId(statusPaymentId);
 		SetPaymentStatusResponse response = serviceManager.execute(setPaymentStatus);
@@ -906,7 +925,9 @@ public class BizTestCommands extends BaseTestCommands {
 
 	private boolean setInvoiceStatus(CommandInterpreter interpreter, Context context, String invoiceId, String status) throws ResourceException, ServiceException {
 
-		SetInvoiceStatus setInvoiceStatus = serviceManager.prepare(context, SetInvoiceStatus.class);
+		ServiceManager serviceManager = context.getServiceManager();
+
+		SetInvoiceStatus setInvoiceStatus = serviceManager.prepare(SetInvoiceStatus.class);
 		setInvoiceStatus.setInvoiceId(invoiceId);
 		setInvoiceStatus.setStatusId(status);
 		setInvoiceStatus.setPaidDate(new Date());
@@ -923,6 +944,8 @@ public class BizTestCommands extends BaseTestCommands {
 
 	private String createPaymentFromInvoice(CommandInterpreter interpreter, Context context, GetCommonDefaultResponse commonDefault, Invoice invoice)
 			throws ResourceException, ServiceException {
+
+		ServiceManager serviceManager = context.getServiceManager();
 
 		PaymentMethod paymentMethod = invoice.getPartyId().getPaymentMethod("CREDIT_CARD");
 		if (paymentMethod == null) {
@@ -942,7 +965,7 @@ public class BizTestCommands extends BaseTestCommands {
 		paymentWriter.create(payment);
 
 		// applicazione pagamento
-		UpdatePaymentApplicationDef updatePaymentApplicationDef = serviceManager.prepare(context, UpdatePaymentApplicationDef.class);
+		UpdatePaymentApplicationDef updatePaymentApplicationDef = serviceManager.prepare(UpdatePaymentApplicationDef.class);
 		updatePaymentApplicationDef.setInvoiceId(invoice.getID());
 		updatePaymentApplicationDef.setPaymentId(payment.getID());
 		UpdatePaymentApplicationDefResponse response = serviceManager.execute(updatePaymentApplicationDef);

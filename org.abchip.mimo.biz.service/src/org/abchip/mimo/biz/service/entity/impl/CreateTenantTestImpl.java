@@ -25,6 +25,7 @@ public class CreateTenantTestImpl extends CreateTenantImpl implements CreateTena
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected CreateTenantTestImpl() {
@@ -33,6 +34,7 @@ public class CreateTenantTestImpl extends CreateTenantImpl implements CreateTena
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -61,28 +63,28 @@ public class CreateTenantTestImpl extends CreateTenantImpl implements CreateTena
 	@Override
 	public void loadSeeds() throws ServiceException {
 		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setTenant(this.getTenantId());
 			loadSeed.setSeedId("mimo");
 			loadSeed.setUpdate(true);
 			context.getServiceManager().execute(loadSeed);
 		}
 		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setTenant(this.getTenantId());
 			loadSeed.setSeedId("party");
 			loadSeed.setUpdate(true);
 			context.getServiceManager().execute(loadSeed);
 		}
 		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setTenant(this.getTenantId());
 			loadSeed.setSeedId("abchip-tenantTest");
 			loadSeed.setUpdate(true);
 			context.getServiceManager().execute(loadSeed);
 		}
 		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setTenant(this.getTenantId());
 			loadSeed.setSeedId("abchip-tenantTest-accounting");
 			loadSeed.setUpdate(true);

@@ -59,10 +59,10 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 	public Long call() throws Exception {
 
 		ServiceManager serviceManager = context.getServiceManager();
-		GetCommonDefault getCommonDefault = serviceManager.prepare(context, GetCommonDefault.class);
+		GetCommonDefault getCommonDefault = serviceManager.prepare(GetCommonDefault.class);
 		commonDefault = serviceManager.execute(getCommonDefault);
 
-		GetPartyDefault getPartyDefault = serviceManager.prepare(context, GetPartyDefault.class);
+		GetPartyDefault getPartyDefault = serviceManager.prepare(GetPartyDefault.class);
 		partyDefault = serviceManager.execute(getPartyDefault);
 
 		long time1 = System.currentTimeMillis();
@@ -129,7 +129,7 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 		invoiceItem.setTaxableFlag(product.getTaxable());
 
 		// price calculation
-		CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
+		CalculateProductPrice calculateProductPrice = serviceManager.prepare(CalculateProductPrice.class);
 		calculateProductPrice.setProduct(product);
 		calculateProductPrice.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
 

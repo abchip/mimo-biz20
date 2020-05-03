@@ -25,6 +25,7 @@ public class CreateTenantDemoImpl extends CreateTenantImpl implements CreateTena
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected CreateTenantDemoImpl() {
@@ -33,6 +34,7 @@ public class CreateTenantDemoImpl extends CreateTenantImpl implements CreateTena
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -61,7 +63,7 @@ public class CreateTenantDemoImpl extends CreateTenantImpl implements CreateTena
 	@Override
 	public void loadSeeds() throws ServiceException {
 		{
-			LoadSeeds loadSeeds = context.getServiceManager().prepare(context, LoadSeeds.class);
+			LoadSeeds loadSeeds = context.getServiceManager().prepare(LoadSeeds.class);
 			loadSeeds.setTenant(this.getTenantId());
 			loadSeeds.setSeedPattern("demo");
 			loadSeeds.setUpdate(true);

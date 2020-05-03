@@ -14,23 +14,20 @@ import org.abchip.mimo.biz.service.entity.LoadSeeds;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceResponse;
-
 import org.abchip.mimo.service.impl.ServiceRequestImpl;
-
 import org.eclipse.emf.ecore.EClass;
 
 /**
- * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Create Tenant Master</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object '<em><b>Create
+ * Tenant Master</b></em>'. <!-- end-user-doc -->
  *
  * @generated
  */
 public class CreateTenantMasterImpl extends ServiceRequestImpl<ServiceResponse> implements CreateTenantMaster {
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected CreateTenantMasterImpl() {
@@ -38,8 +35,8 @@ public class CreateTenantMasterImpl extends ServiceRequestImpl<ServiceResponse> 
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -48,15 +45,15 @@ public class CreateTenantMasterImpl extends ServiceRequestImpl<ServiceResponse> 
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected static final int ESTATIC_FEATURE_COUNT = 3;
 
 	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
+	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -65,55 +62,55 @@ public class CreateTenantMasterImpl extends ServiceRequestImpl<ServiceResponse> 
 	}
 
 	@Override
-	public ServiceResponse call() throws ServiceException  {
+	public ServiceResponse call() throws ServiceException {
 
 		Context context = this.getContext();
 		ServiceResponse response = this.buildResponse();
-		
+
 		{
-			LoadSeeds loadSeeds = context.getServiceManager().prepare(context, LoadSeeds.class);
+			LoadSeeds loadSeeds = context.getServiceManager().prepare(LoadSeeds.class);
 			loadSeeds.setSeedPattern("seed");
 			loadSeeds.setUpdate(true);
 			context.getServiceManager().execute(loadSeeds);
 		}
 		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setSeedId("mimo");
 			loadSeed.setUpdate(true);
 			context.getServiceManager().execute(loadSeed);
 		}
 		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setSeedId("party");
 			loadSeed.setUpdate(true);
 			context.getServiceManager().execute(loadSeed);
 		}
 		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setSeedId("abchip-net");
 			loadSeed.setUpdate(true);
 			context.getServiceManager().execute(loadSeed);
 		}
 		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setSeedId("abchip-net-accounting");
 			loadSeed.setUpdate(true);
 			context.getServiceManager().execute(loadSeed);
 		}
 		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setSeedId("passport");
 			loadSeed.setUpdate(true);
 			context.getServiceManager().execute(loadSeed);
 		}
 		{
-			LoadSeed loadSeed = context.getServiceManager().prepare(context, LoadSeed.class);
+			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setSeedId("edi");
 			loadSeed.setUpdate(true);
 			context.getServiceManager().execute(loadSeed);
 		}
-			
+
 		return response;
 	}
 
-} //CreateTenantMasterImpl
+} // CreateTenantMasterImpl

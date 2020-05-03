@@ -14,6 +14,9 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
+import javax.inject.Inject;
+
+import org.abchip.mimo.application.Application;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.test.command.runner.CreateAgreement;
@@ -30,6 +33,11 @@ import org.abchip.mimo.tester.base.BaseTestCommands;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
 
 public class StressTestCommands extends BaseTestCommands {
+
+	@Inject
+	public StressTestCommands(Application application) {
+		super(application);
+	}
 
 	public void _stressTest(CommandInterpreter interpreter) throws Exception {
 		try (ContextProvider context = login()) {

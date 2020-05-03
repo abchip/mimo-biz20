@@ -75,10 +75,10 @@ public class CreateSalesInvoice implements Callable<Long> {
 	public Long call() throws Exception {
 
 		ServiceManager serviceManager = context.getServiceManager();
-		GetCommonDefault getCommonDefault = serviceManager.prepare(context, GetCommonDefault.class);
+		GetCommonDefault getCommonDefault = serviceManager.prepare(GetCommonDefault.class);
 		commonDefault = serviceManager.execute(getCommonDefault);
 
-		GetPartyDefault getPartyDefault = serviceManager.prepare(context, GetPartyDefault.class);
+		GetPartyDefault getPartyDefault = serviceManager.prepare(GetPartyDefault.class);
 		partyDefault = serviceManager.execute(getPartyDefault);
 
 		long time1 = System.currentTimeMillis();
@@ -180,7 +180,7 @@ public class CreateSalesInvoice implements Callable<Long> {
 		invoiceItem.setTaxableFlag(product.getTaxable());
 
 		// price calculation
-		CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
+		CalculateProductPrice calculateProductPrice = serviceManager.prepare(CalculateProductPrice.class);
 		calculateProductPrice.setProduct(product);
 		calculateProductPrice.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
 
@@ -219,7 +219,7 @@ public class CreateSalesInvoice implements Callable<Long> {
 		paymentWriter.create(payment);
 
 		// applicazione pagamento
-		UpdatePaymentApplicationDef updatePaymentApplicationDef = serviceManager.prepare(context, UpdatePaymentApplicationDef.class);
+		UpdatePaymentApplicationDef updatePaymentApplicationDef = serviceManager.prepare(UpdatePaymentApplicationDef.class);
 		updatePaymentApplicationDef.setInvoiceId(invoice.getID());
 		updatePaymentApplicationDef.setPaymentId(payment.getID());
 		UpdatePaymentApplicationDefResponse response = serviceManager.execute(updatePaymentApplicationDef);
@@ -258,7 +258,7 @@ public class CreateSalesInvoice implements Callable<Long> {
 		if (taxAuthGeoId == null || taxAuthGeoId.isEmpty())
 			taxAuthGeoId = commonDefault.getCountryGeo().getID();
 
-		CalcTaxForDisplay calcTaxForDisplay = serviceManager.prepare(context, CalcTaxForDisplay.class);
+		CalcTaxForDisplay calcTaxForDisplay = serviceManager.prepare(CalcTaxForDisplay.class);
 		calcTaxForDisplay.setBasePrice(invoiceItemParent.getAmount());
 		calcTaxForDisplay.setProductId(invoiceItemParent.getProductId().getID());
 		calcTaxForDisplay.setProductStoreId(productStore.getID());

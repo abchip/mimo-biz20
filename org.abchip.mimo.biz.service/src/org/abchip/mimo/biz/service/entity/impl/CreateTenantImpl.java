@@ -34,8 +34,10 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantImpl#getDbType <em>Db Type</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantImpl#isUpdate <em>Update</em>}</li>
+ * <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantImpl#getDbType
+ * <em>Db Type</em>}</li>
+ * <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantImpl#isUpdate
+ * <em>Update</em>}</li>
  * </ul>
  *
  * @generated
@@ -44,6 +46,7 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected CreateTenantImpl() {
@@ -52,6 +55,7 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -61,12 +65,14 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected static final int ESTATIC_FEATURE_COUNT = 3;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -76,15 +82,17 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public DatabaseType getDbType() {
-		return (DatabaseType)eGet(EntityPackage.Literals.CREATE_TENANT__DB_TYPE, true);
+		return (DatabaseType) eGet(EntityPackage.Literals.CREATE_TENANT__DB_TYPE, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -94,15 +102,17 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean isUpdate() {
-		return (Boolean)eGet(EntityPackage.Literals.CREATE_TENANT__UPDATE, true);
+		return (Boolean) eGet(EntityPackage.Literals.CREATE_TENANT__UPDATE, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -192,7 +202,7 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 
 		// default seeds
 		{
-			LoadSeeds loadSeeds = context.getServiceManager().prepare(context, LoadSeeds.class);
+			LoadSeeds loadSeeds = context.getServiceManager().prepare(LoadSeeds.class);
 			loadSeeds.setTenant(this.getTenantId());
 			loadSeeds.setSeedPattern("seed");
 			loadSeeds.setUpdate(true);

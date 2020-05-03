@@ -10,6 +10,7 @@ package org.abchip.mimo.biz.test.command;
 
 import javax.inject.Inject;
 
+import org.abchip.mimo.application.Application;
 import org.abchip.mimo.biz.model.order.order.OrderItemPriceInfo;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.service.common.GetCommonDefault;
@@ -25,11 +26,16 @@ import org.eclipse.osgi.framework.console.CommandInterpreter;
 public class ServiceTestCommands extends BaseTestCommands {
 
 	@Inject
-	private ServiceManager serviceManager;
+	public ServiceTestCommands(Application application) {
+		super(application);
+	}
 
 	public void _st_ecore(CommandInterpreter interpreter) throws Exception {
 
-		ExportEntities request = serviceManager.prepare(this.getContext(), ExportEntities.class);
+		Context context = this.getContext();
+		ServiceManager serviceManager = context.getServiceManager();
+
+		ExportEntities request = serviceManager.prepare(ExportEntities.class);
 		request.setPathTo(this.nextArgument(interpreter, "/home/mattia/ofbiz/"));
 		serviceManager.submit(request);
 	}
@@ -37,13 +43,14 @@ public class ServiceTestCommands extends BaseTestCommands {
 	public void _st_product(CommandInterpreter interpreter) throws Exception {
 
 		Context context = this.getContext();
+		ServiceManager serviceManager = context.getServiceManager();
 
-		GetCommonDefault getCommonDefault = serviceManager.prepare(context, GetCommonDefault.class);
+		GetCommonDefault getCommonDefault = serviceManager.prepare(GetCommonDefault.class);
 		GetCommonDefaultResponse commonDefault = serviceManager.execute(getCommonDefault);
 
 		String product = this.nextArgument(interpreter, "Marketing");
 
-		CalculateProductPrice calculateProductPrice = serviceManager.prepare(context, CalculateProductPrice.class);
+		CalculateProductPrice calculateProductPrice = serviceManager.prepare(CalculateProductPrice.class);
 		calculateProductPrice.setProduct(context.createProxy(Product.class, product));
 		calculateProductPrice.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
 
