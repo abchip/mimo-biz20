@@ -27,7 +27,6 @@ import org.eclipse.emf.ecore.EClass;
 public class GetProductDefaultImpl extends BizServiceRequestImpl<GetProductDefaultResponse> implements GetProductDefault {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected GetProductDefaultImpl() {
@@ -36,7 +35,6 @@ public class GetProductDefaultImpl extends BizServiceRequestImpl<GetProductDefau
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override

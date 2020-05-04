@@ -12,7 +12,7 @@ import org.abchip.mimo.biz.model.party.party.PartyType;
 import org.abchip.mimo.biz.model.party.party.Person;
 import org.abchip.mimo.biz.service.entity.CreateTenantParty;
 import org.abchip.mimo.biz.service.entity.EntityPackage;
-import org.abchip.mimo.biz.service.entity.LoadSeed;
+import org.abchip.mimo.resource.LoadSeed;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.service.ServiceException;
@@ -26,12 +26,9 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
- * <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantPartyImpl#getTenantId
- * <em>Tenant Id</em>}</li>
- * <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantPartyImpl#getTenantName
- * <em>Tenant Name</em>}</li>
- * <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantPartyImpl#getPartyId
- * <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantPartyImpl#getTenantId <em>Tenant Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantPartyImpl#getTenantName <em>Tenant Name</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantPartyImpl#getPartyId <em>Party Id</em>}</li>
  * </ul>
  *
  * @generated
@@ -40,7 +37,6 @@ public class CreateTenantPartyImpl extends CreateTenantImpl implements CreateTen
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected CreateTenantPartyImpl() {
@@ -49,7 +45,6 @@ public class CreateTenantPartyImpl extends CreateTenantImpl implements CreateTen
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -59,17 +54,15 @@ public class CreateTenantPartyImpl extends CreateTenantImpl implements CreateTen
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public String getTenantId() {
-		return (String) eGet(EntityPackage.Literals.CREATE_TENANT_PARTY__TENANT_ID, true);
+		return (String)eGet(EntityPackage.Literals.CREATE_TENANT_PARTY__TENANT_ID, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -79,17 +72,15 @@ public class CreateTenantPartyImpl extends CreateTenantImpl implements CreateTen
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public String getTenantName() {
-		return (String) eGet(EntityPackage.Literals.CREATE_TENANT_PARTY__TENANT_NAME, true);
+		return (String)eGet(EntityPackage.Literals.CREATE_TENANT_PARTY__TENANT_NAME, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -99,17 +90,15 @@ public class CreateTenantPartyImpl extends CreateTenantImpl implements CreateTen
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public String getPartyId() {
-		return (String) eGet(EntityPackage.Literals.CREATE_TENANT_PARTY__PARTY_ID, true);
+		return (String)eGet(EntityPackage.Literals.CREATE_TENANT_PARTY__PARTY_ID, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override

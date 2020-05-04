@@ -85,14 +85,6 @@
       <genClasses ecoreClass="biz-service.ecore#//entity/ExportEntities">
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/ExportEntities/pathTo"/>
       </genClasses>
-      <genClasses ecoreClass="biz-service.ecore#//entity/LoadSeed">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/LoadSeed/seedId"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/LoadSeed/update"/>
-      </genClasses>
-      <genClasses ecoreClass="biz-service.ecore#//entity/LoadSeeds">
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/LoadSeeds/seedPattern"/>
-        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//entity/LoadSeeds/update"/>
-      </genClasses>
     </nestedGenPackages>
     <nestedGenPackages prefix="Humanres" basePackage="org.abchip.mimo.biz.service"
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//humanres"/>

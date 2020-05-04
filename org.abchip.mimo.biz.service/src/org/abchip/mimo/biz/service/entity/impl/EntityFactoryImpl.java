@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.service.entity.impl;
 
 import org.abchip.mimo.biz.service.entity.*;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EDataType;
 import org.eclipse.emf.ecore.EObject;
@@ -68,8 +67,6 @@ public class EntityFactoryImpl extends EFactoryImpl implements EntityFactory {
 			case EntityPackage.CREATE_TENANT_PARTY: return (EObject)createCreateTenantParty();
 			case EntityPackage.CREATE_TENANT_TEST: return (EObject)createCreateTenantTest();
 			case EntityPackage.EXPORT_ENTITIES: return (EObject)createExportEntities();
-			case EntityPackage.LOAD_SEED: return (EObject)createLoadSeed();
-			case EntityPackage.LOAD_SEEDS: return (EObject)createLoadSeeds();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -169,28 +166,6 @@ public class EntityFactoryImpl extends EFactoryImpl implements EntityFactory {
 	public CreateTenantTest createCreateTenantTest() {
 		CreateTenantTestImpl createTenantTest = new CreateTenantTestImpl();
 		return createTenantTest;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public LoadSeed createLoadSeed() {
-		LoadSeedImpl loadSeed = new LoadSeedImpl();
-		return loadSeed;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public LoadSeeds createLoadSeeds() {
-		LoadSeedsImpl loadSeeds = new LoadSeedsImpl();
-		return loadSeeds;
 	}
 
 	/**

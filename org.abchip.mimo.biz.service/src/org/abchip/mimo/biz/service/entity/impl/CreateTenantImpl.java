@@ -18,8 +18,8 @@ import org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup;
 import org.abchip.mimo.biz.service.entity.CreateTenant;
 import org.abchip.mimo.biz.service.entity.DatabaseType;
 import org.abchip.mimo.biz.service.entity.EntityPackage;
-import org.abchip.mimo.biz.service.entity.LoadSeeds;
 import org.abchip.mimo.context.Context;
+import org.abchip.mimo.resource.LoadSeeds;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.service.ServiceException;
@@ -34,10 +34,8 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
- * <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantImpl#getDbType
- * <em>Db Type</em>}</li>
- * <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantImpl#isUpdate
- * <em>Update</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantImpl#getDbType <em>Db Type</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.entity.impl.CreateTenantImpl#isUpdate <em>Update</em>}</li>
  * </ul>
  *
  * @generated
@@ -46,7 +44,6 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected CreateTenantImpl() {
@@ -55,7 +52,6 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -65,14 +61,12 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected static final int ESTATIC_FEATURE_COUNT = 3;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -82,17 +76,15 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public DatabaseType getDbType() {
-		return (DatabaseType) eGet(EntityPackage.Literals.CREATE_TENANT__DB_TYPE, true);
+		return (DatabaseType)eGet(EntityPackage.Literals.CREATE_TENANT__DB_TYPE, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -102,17 +94,15 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public boolean isUpdate() {
-		return (Boolean) eGet(EntityPackage.Literals.CREATE_TENANT__UPDATE, true);
+		return (Boolean)eGet(EntityPackage.Literals.CREATE_TENANT__UPDATE, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override

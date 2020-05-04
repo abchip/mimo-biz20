@@ -9,7 +9,7 @@ package org.abchip.mimo.biz.service.entity.impl;
 
 import org.abchip.mimo.biz.service.entity.CreateTenantDemo;
 import org.abchip.mimo.biz.service.entity.EntityPackage;
-import org.abchip.mimo.biz.service.entity.LoadSeeds;
+import org.abchip.mimo.resource.LoadSeeds;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceResponse;
@@ -25,7 +25,6 @@ public class CreateTenantDemoImpl extends CreateTenantImpl implements CreateTena
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected CreateTenantDemoImpl() {
@@ -34,7 +33,6 @@ public class CreateTenantDemoImpl extends CreateTenantImpl implements CreateTena
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override

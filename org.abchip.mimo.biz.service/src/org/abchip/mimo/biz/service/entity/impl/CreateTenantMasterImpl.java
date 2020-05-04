@@ -9,9 +9,9 @@ package org.abchip.mimo.biz.service.entity.impl;
 
 import org.abchip.mimo.biz.service.entity.CreateTenantMaster;
 import org.abchip.mimo.biz.service.entity.EntityPackage;
-import org.abchip.mimo.biz.service.entity.LoadSeed;
-import org.abchip.mimo.biz.service.entity.LoadSeeds;
 import org.abchip.mimo.context.Context;
+import org.abchip.mimo.resource.LoadSeed;
+import org.abchip.mimo.resource.LoadSeeds;
 import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceResponse;
 import org.abchip.mimo.service.impl.ServiceRequestImpl;
@@ -27,7 +27,6 @@ public class CreateTenantMasterImpl extends ServiceRequestImpl<ServiceResponse> 
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected CreateTenantMasterImpl() {
@@ -36,7 +35,6 @@ public class CreateTenantMasterImpl extends ServiceRequestImpl<ServiceResponse> 
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -46,14 +44,12 @@ public class CreateTenantMasterImpl extends ServiceRequestImpl<ServiceResponse> 
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected static final int ESTATIC_FEATURE_COUNT = 3;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override

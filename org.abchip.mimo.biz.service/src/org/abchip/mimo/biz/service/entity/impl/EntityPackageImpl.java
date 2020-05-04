@@ -139,9 +139,6 @@ import org.abchip.mimo.biz.service.entity.DatabaseType;
 import org.abchip.mimo.biz.service.entity.EntityFactory;
 import org.abchip.mimo.biz.service.entity.EntityPackage;
 import org.abchip.mimo.biz.service.entity.ExportEntities;
-
-import org.abchip.mimo.biz.service.entity.LoadSeed;
-import org.abchip.mimo.biz.service.entity.LoadSeeds;
 import org.abchip.mimo.biz.service.impl.BizServicePackageImpl;
 
 import org.abchip.mimo.biz.service.order.impl.OrderPackageImpl;
@@ -213,20 +210,6 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 	 * @generated
 	 */
 	private EClass createTenantTestEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass loadSeedEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass loadSeedsEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -531,66 +514,6 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getLoadSeed() {
-		return loadSeedEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getLoadSeed_SeedId() {
-		return (EAttribute)loadSeedEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getLoadSeed_Update() {
-		return (EAttribute)loadSeedEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getLoadSeeds() {
-		return loadSeedsEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getLoadSeeds_SeedPattern() {
-		return (EAttribute)loadSeedsEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getLoadSeeds_Update() {
-		return (EAttribute)loadSeedsEClass.getEStructuralFeatures().get(1);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EEnum getDatabaseType() {
 		return databaseTypeEEnum;
 	}
@@ -644,14 +567,6 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 
 		exportEntitiesEClass = createEClass(EXPORT_ENTITIES);
 		createEAttribute(exportEntitiesEClass, EXPORT_ENTITIES__PATH_TO);
-
-		loadSeedEClass = createEClass(LOAD_SEED);
-		createEAttribute(loadSeedEClass, LOAD_SEED__SEED_ID);
-		createEAttribute(loadSeedEClass, LOAD_SEED__UPDATE);
-
-		loadSeedsEClass = createEClass(LOAD_SEEDS);
-		createEAttribute(loadSeedsEClass, LOAD_SEEDS__SEED_PATTERN);
-		createEAttribute(loadSeedsEClass, LOAD_SEEDS__UPDATE);
 
 		// Create enums
 		databaseTypeEEnum = createEEnum(DATABASE_TYPE);
@@ -717,22 +632,6 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		g2 = createEGenericType(theServicePackage.getServiceResponse());
 		g1.getETypeArguments().add(g2);
 		exportEntitiesEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theServicePackage.getServiceRequest());
-		g2 = createEGenericType(theServicePackage.getServiceResponse());
-		g1.getETypeArguments().add(g2);
-		loadSeedEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theJavaPackage.getJavaCallable());
-		g2 = createEGenericType(theServicePackage.getServiceResponse());
-		g1.getETypeArguments().add(g2);
-		loadSeedEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theServicePackage.getServiceRequest());
-		g2 = createEGenericType(theServicePackage.getServiceResponse());
-		g1.getETypeArguments().add(g2);
-		loadSeedsEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theJavaPackage.getJavaCallable());
-		g2 = createEGenericType(theServicePackage.getServiceResponse());
-		g1.getETypeArguments().add(g2);
-		loadSeedsEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(convertSeedsEClass, ConvertSeeds.class, "ConvertSeeds", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -762,14 +661,6 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 
 		initEClass(exportEntitiesEClass, ExportEntities.class, "ExportEntities", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getExportEntities_PathTo(), ecorePackage.getEString(), "pathTo", null, 1, 1, ExportEntities.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(loadSeedEClass, LoadSeed.class, "LoadSeed", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getLoadSeed_SeedId(), ecorePackage.getEString(), "seedId", null, 1, 1, LoadSeed.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getLoadSeed_Update(), ecorePackage.getEBoolean(), "update", null, 0, 1, LoadSeed.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(loadSeedsEClass, LoadSeeds.class, "LoadSeeds", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getLoadSeeds_SeedPattern(), ecorePackage.getEString(), "seedPattern", null, 1, 1, LoadSeeds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getLoadSeeds_Update(), ecorePackage.getEBoolean(), "update", null, 0, 1, LoadSeeds.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Initialize enums and add enum literals
 		initEEnum(databaseTypeEEnum, DatabaseType.class, "DatabaseType");
