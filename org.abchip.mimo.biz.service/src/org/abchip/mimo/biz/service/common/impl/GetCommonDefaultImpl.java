@@ -14,7 +14,6 @@ import org.abchip.mimo.biz.service.common.CommonPackage;
 import org.abchip.mimo.biz.service.common.GetCommonDefault;
 import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
 import org.abchip.mimo.biz.service.impl.BizServiceRequestImpl;
-import org.abchip.mimo.resource.ResourceException;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -26,6 +25,7 @@ import org.eclipse.emf.ecore.EClass;
 public class GetCommonDefaultImpl extends BizServiceRequestImpl<GetCommonDefaultResponse> implements GetCommonDefault {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	protected GetCommonDefaultImpl() {
@@ -34,6 +34,7 @@ public class GetCommonDefaultImpl extends BizServiceRequestImpl<GetCommonDefault
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
+	 * 
 	 * @generated
 	 */
 	@Override
@@ -42,7 +43,7 @@ public class GetCommonDefaultImpl extends BizServiceRequestImpl<GetCommonDefault
 	}
 
 	@Override
-	public GetCommonDefaultResponse call() throws ResourceException {
+	public GetCommonDefaultResponse call() throws Exception {
 
 		GetCommonDefaultResponse response = this.buildResponse();
 
