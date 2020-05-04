@@ -28,6 +28,7 @@ import java.util.Set;
 import org.abchip.mimo.biz.BizPackage;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
+import org.abchip.mimo.util.Frames;
 import org.abchip.mimo.util.Logs;
 import org.abchip.mimo.util.Strings;
 import org.apache.ofbiz.entity.Delegator;
@@ -225,7 +226,7 @@ public class EntityServices {
 
 		for (String entityName : entityNames) {
 
-			if (EcoreUtils.findEClassifier(eWorkPackage, entityName) != null)
+			if (Frames.getEClassifier(eWorkPackage, entityName) != null)
 				continue;
 
 			EClass eClass = null;
@@ -234,11 +235,11 @@ public class EntityServices {
 
 			EClass typeEntity = null;
 			if (entityName.equals("StatusItem"))
-				typeEntity = EcoreUtils.findEClass(eWorkPackage, "StatusType");
+				typeEntity = Frames.getEClass(eWorkPackage, "StatusType");
 			else if (entityName.equals("OrderHeader"))
-				typeEntity = EcoreUtils.findEClass(eWorkPackage, "OrderType");
+				typeEntity = Frames.getEClass(eWorkPackage, "OrderType");
 			else
-				typeEntity = EcoreUtils.findEClass(eWorkPackage, entityName + "Type");
+				typeEntity = Frames.getEClass(eWorkPackage, entityName + "Type");
 
 			if (typeEntity == null && !modelEntity.getEntityName().endsWith("Attr") && !modelEntity.getEntityName().equals("PartyInvitationRoleAssoc")) {
 
@@ -249,9 +250,9 @@ public class EntityServices {
 						continue;
 
 					if (eClassRel != null)
-						eClassRel = EcoreUtils.findEClass(eWorkPackage.getESuperPackage(), modelRelation.getRelEntityName());
+						eClassRel = Frames.getEClass(eWorkPackage.getESuperPackage(), modelRelation.getRelEntityName());
 					else
-						eClassRel = EcoreUtils.findEClass(eWorkPackage.getESuperPackage(), modelRelation.getRelEntityName());
+						eClassRel = Frames.getEClass(eWorkPackage.getESuperPackage(), modelRelation.getRelEntityName());
 
 					if (eClassRel != null) {
 						EClass eSuperClass = eClassRel.getESuperTypes().get(0);
@@ -290,7 +291,7 @@ public class EntityServices {
 
 		for (String entityName : entityNames) {
 
-			EClass typeEntity = EcoreUtils.findEClass(eWorkPackage, entityName);
+			EClass typeEntity = Frames.getEClass(eWorkPackage, entityName);
 			if (typeEntity == null)
 				continue;
 
@@ -312,7 +313,7 @@ public class EntityServices {
 		// set superClass
 		for (String entityName : entityNames) {
 
-			EClass eClass = EcoreUtils.findEClass(bizPackage, entityName);
+			EClass eClass = Frames.getEClass(bizPackage, entityName);
 
 			// with attribute ID
 			EAttribute eClassAttributeID = eClass.getEIDAttribute();
@@ -323,7 +324,7 @@ public class EntityServices {
 			if (relationEntity == null)
 				continue;
 
-			EClass eClassRelation = EcoreUtils.findEClass(bizPackage, relationEntity);
+			EClass eClassRelation = Frames.getEClass(bizPackage, relationEntity);
 
 			// relation not found
 			if (eClassRelation == null) {
@@ -348,7 +349,7 @@ public class EntityServices {
 			if (modelEntity == null)
 				continue;
 
-			EClass eClass = EcoreUtils.findEClass(bizPackage, modelEntity.getEntityName());
+			EClass eClass = Frames.getEClass(bizPackage, modelEntity.getEntityName());
 			if (eClass == null)
 				continue;
 
@@ -373,7 +374,7 @@ public class EntityServices {
 			if (modelEntity == null)
 				continue;
 
-			EClass eClass = EcoreUtils.findEClass(bizPackage, modelEntity.getEntityName());
+			EClass eClass = Frames.getEClass(bizPackage, modelEntity.getEntityName());
 			if (eClass == null)
 				continue;
 
@@ -393,7 +394,7 @@ public class EntityServices {
 				if (modelRelation.isAutoRelation())
 					continue;
 
-				EClass eClassRef = EcoreUtils.findEClass(bizPackage, modelRelation.getRelEntityName());
+				EClass eClassRef = Frames.getEClass(bizPackage, modelRelation.getRelEntityName());
 				if (eClassRef == null) {
 					LOGGER.info("VIEW: " + entityName + " ->  " + modelRelation.getRelEntityName());
 					continue;
@@ -548,7 +549,7 @@ public class EntityServices {
 			if (modelEntity == null)
 				continue;
 
-			EClass eClass = EcoreUtils.findEClass(bizPackage, modelEntity.getEntityName());
+			EClass eClass = Frames.getEClass(bizPackage, modelEntity.getEntityName());
 			if (eClass == null)
 				continue;
 
@@ -585,13 +586,13 @@ public class EntityServices {
 				}
 
 				if (formField != null) {
-					EEnum eEnum = (EEnum) EcoreUtils.findEClassifier(bizPackage, Strings.firstToUpper(formField.getName()));
+					EEnum eEnum = Frames.getEEnum(bizPackage, Strings.firstToUpper(formField.getName()));
 					if (eEnum == null) {
 						eEnum = EcoreUtils.buildEnum(eClass.getEPackage().getESuperPackage(), context, formField);
 						if (eEnum != null)
 							eClass.getEPackage().getESuperPackage().getEClassifiers().add(eEnum);
 					} else {
-						EPackage ePackage = EcoreUtils.findEPackage(bizPackage, "common");
+						EPackage ePackage = Frames.getEPackage(bizPackage, "common");
 						ePackage.getEClassifiers().add(eEnum);
 					}
 
@@ -618,7 +619,7 @@ public class EntityServices {
 			if (modelEntity.getPksSize() > 1)
 				continue;
 
-			EClass eClass = EcoreUtils.findEClass(bizPackage, modelEntity.getEntityName());
+			EClass eClass = Frames.getEClass(bizPackage, modelEntity.getEntityName());
 			if (eClass == null)
 				continue;
 
@@ -691,7 +692,7 @@ public class EntityServices {
 				eReference.setName(eTypedName);
 
 				// type
-				EClass eClassRel = EcoreUtils.findEClass(bizPackage, modelRel.getEntityName());
+				EClass eClassRel = Frames.getEClass(bizPackage, modelRel.getEntityName());
 				eReference.setEType(eClassRel);
 
 				eReference.setDerived(true);
@@ -716,7 +717,7 @@ public class EntityServices {
 		// set superClass
 		for (String entityName : entityNames) {
 
-			EClass eClass = EcoreUtils.findEClass(bizPackage, entityName);
+			EClass eClass = Frames.getEClass(bizPackage, entityName);
 
 			List<EStructuralFeature> keys = new ArrayList<EStructuralFeature>();
 			List<EStructuralFeature> atts = new ArrayList<EStructuralFeature>();

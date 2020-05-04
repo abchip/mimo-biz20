@@ -36,7 +36,6 @@ import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EAnnotation;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EEnumLiteral;
 import org.eclipse.emf.ecore.EGenericType;
@@ -49,31 +48,18 @@ import org.osgi.service.log.Logger;
 public class EcoreUtils {
 
 	private static final Logger LOGGER = Logs.getLogger(EcoreUtils.class);
+
+	public static String packageToName(EPackage ePackage) {
+
+		StringBuffer sb = new StringBuffer();
+
+		URI uri = URI.createURI(ePackage.getNsURI());
+		sb.append("org.abchip.mimo");
+		sb.append(uri.path().replaceAll("\\/", "\\."));
+
+		return sb.toString();
+	}
 	
-	public static EClassifier findEClassifier(EPackage ePackage, String entityName) {
-
-		EClassifier eClassifier = ePackage.getEClassifier(entityName);
-		if (eClassifier != null)
-			return eClassifier;
-
-		for (EPackage eSubPackage : ePackage.getESubpackages()) {
-			eClassifier = findEClassifier(eSubPackage, entityName);
-			if (eClassifier != null)
-				return eClassifier;
-		}
-
-		return null;
-	}
-
-	public static EClass findEClass(EPackage ePackage, String entityName) {
-
-		EClassifier eClassifier = findEClassifier(ePackage, entityName);
-		if (eClassifier instanceof EClass)
-			return (EClass) eClassifier;
-
-		return null;
-	}
-
 	public static EPackage buildEPackage(EPackage eRootPackage, String packageName) {
 
 		EcoreFactory ecoreFactory = EcoreFactory.eINSTANCE;
@@ -86,17 +72,6 @@ public class EcoreUtils {
 		ePackage.setNsURI(eRootPackage.getNsURI() + "/" + packageName);
 
 		return ePackage;
-	}
-
-	public static String packageToName(EPackage ePackage) {
-
-		StringBuffer sb = new StringBuffer();
-
-		URI uri = URI.createURI(ePackage.getNsURI());
-		sb.append("org.abchip.mimo");
-		sb.append(uri.path().replaceAll("\\/", "\\."));
-
-		return sb.toString();
 	}
 
 	public static EClass buildEntityTypeEClass(Delegator delegator, List<ModelForm> forms, ModelEntity modelEntity) throws GenericEntityException {
@@ -465,21 +440,5 @@ public class EcoreUtils {
 			eAttribute.setEType(EcorePackage.eINSTANCE.getEString());
 			eAttribute.setDefaultValue(defaulValue);
 		}
-	}
-
-	public static EPackage findEPackage(EPackage root, String name) {
-
-		for (EPackage ePackage : root.getESubpackages()) {
-			if (ePackage.getName().equals(name))
-				return ePackage;
-		}
-
-		for (EPackage ePackage : root.getESubpackages()) {
-			ePackage = findEPackage(ePackage, name);
-			if (ePackage != null)
-				return ePackage;
-		}
-
-		return null;
 	}
 }
