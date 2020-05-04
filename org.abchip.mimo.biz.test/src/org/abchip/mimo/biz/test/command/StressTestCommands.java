@@ -40,7 +40,7 @@ public class StressTestCommands extends BaseTestCommands {
 	}
 
 	public void _stressTest(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login()) {
+		try (ContextProvider context = login(interpreter)) {
 			stressTestSalesOrder(interpreter, context.get());
 			stressTestSalesInvoice(interpreter, context.get());
 			stressTestPurchaseOrder(interpreter, context.get());
@@ -50,7 +50,7 @@ public class StressTestCommands extends BaseTestCommands {
 	}
 
 	public void _createTestBaseData(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login()) {
+		try (ContextProvider context = login(interpreter)) {
 			String reqNumber = nextArgument(interpreter);
 			long loops = 1;
 			if (reqNumber != null) {
@@ -64,31 +64,31 @@ public class StressTestCommands extends BaseTestCommands {
 	}
 
 	public void _stressTestSalesOrder(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login()) {
+		try (ContextProvider context = login(interpreter)) {
 			stressTestSalesOrder(interpreter, context.get());
 		}
 	}
 
 	public void _stressTestSalesInvoice(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login()) {
+		try (ContextProvider context = login(interpreter)) {
 			stressTestSalesInvoice(interpreter, context.get());
 		}
 	}
 
 	public void _stressTestPurchaseOrder(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login()) {
+		try (ContextProvider context = login(interpreter)) {
 			stressTestPurchaseOrder(interpreter, context.get());
 		}
 	}
 
 	public void _stressTestPurchaseInvoice(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login()) {
+		try (ContextProvider context = login(interpreter)) {
 			stressTestPurchaseInvoice(interpreter, context.get());
 		}
 	}
 
 	public void _stressTestAgreement(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login()) {
+		try (ContextProvider context = login(interpreter)) {
 			stressTestAgreement(interpreter, context.get());
 		}
 	}
@@ -249,7 +249,7 @@ public class StressTestCommands extends BaseTestCommands {
 			// open contexts
 			interpreter.print("Create " + poolSize + " connections.. ");
 			for (int i = 0; i < poolSize; i++)
-				contexts.add(login());
+				contexts.add(login(interpreter));
 			interpreter.println("done");
 
 			long time1 = System.currentTimeMillis();

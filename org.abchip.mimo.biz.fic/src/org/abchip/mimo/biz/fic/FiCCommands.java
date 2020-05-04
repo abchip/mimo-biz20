@@ -39,7 +39,7 @@ import org.eclipse.osgi.framework.console.CommandInterpreter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class FiCCommands extends BaseCommands {
-	
+
 	private static final String urlFiC = "https://api.fattureincloud.it:443/v1/";
 	private static final String body = "{\"api_uid\": \"673532\", \"api_key\": \"38319cbc95dddf6ff7d744491bd823e7\", \"pagina\": ?}";
 
@@ -47,7 +47,7 @@ public class FiCCommands extends BaseCommands {
 	public FiCCommands(Application application) {
 		super(application);
 	}
-	
+
 	public <E extends EntityIdentifiable> void _importFicAll(CommandInterpreter interpreter) throws Exception {
 		importFicRegistry(interpreter);
 		importFicProduct(interpreter);
@@ -62,7 +62,7 @@ public class FiCCommands extends BaseCommands {
 	}
 
 	private void importFicRegistry(CommandInterpreter interpreter) throws Exception {
-		Context context = this.getContext();
+		Context context = this.getContext(interpreter);
 		AtomicInteger partyCounter = new AtomicInteger(9999);
 		AtomicInteger contactMechCounter = new AtomicInteger(9999);
 
@@ -203,7 +203,7 @@ public class FiCCommands extends BaseCommands {
 		 * "Prodotto numero 1", "note": "", "magazzino": false }
 		 */
 
-		Context context = this.getContext();
+		Context context = this.getContext(interpreter);
 
 		EntityContainer container = EntityFactory.eINSTANCE.createEntityContainer();
 		container.setName("FiC_Product");

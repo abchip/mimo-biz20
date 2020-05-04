@@ -111,7 +111,7 @@ public class BizTestCommands extends BaseTestCommands {
 	}
 
 	public void _getCreditCardParty(CommandInterpreter interpreter) throws Exception {
-		Context context = this.getContext();
+		Context context = this.getContext(interpreter);
 		String partyId = nextArgument(interpreter);
 		Party party = context.createProxy(Party.class, partyId);
 		CreditCard creditCard = party.getCreditCard();
@@ -120,7 +120,7 @@ public class BizTestCommands extends BaseTestCommands {
 
 	public void _renewalAgreement(CommandInterpreter interpreter) throws Exception {
 
-		Context context = this.getContext();
+		Context context = this.getContext(interpreter);
 		ServiceManager serviceManager = context.getServiceManager();
 
 		GetCommonDefault getCommonDefault = serviceManager.prepare(GetCommonDefault.class);
@@ -136,7 +136,7 @@ public class BizTestCommands extends BaseTestCommands {
 
 	public void _expireAgreement(CommandInterpreter interpreter) throws Exception {
 
-		Context context = this.getContext();
+		Context context = this.getContext(interpreter);
 
 		String agreementId = nextArgument(interpreter);
 
@@ -167,7 +167,7 @@ public class BizTestCommands extends BaseTestCommands {
 
 	public void _createOrder(CommandInterpreter interpreter) throws Exception {
 
-		Context context = this.getContext();
+		Context context = this.getContext(interpreter);
 		ServiceManager serviceManager = context.getServiceManager();
 
 		GetCommonDefault getCommonDefault = serviceManager.prepare(GetCommonDefault.class);
@@ -183,7 +183,7 @@ public class BizTestCommands extends BaseTestCommands {
 
 	public void _getInvoiceTot(CommandInterpreter interpreter) throws Exception {
 
-		Context context = this.getContext();
+		Context context = this.getContext(interpreter);
 
 		String invoiceId = nextArgument(interpreter);
 
@@ -195,7 +195,7 @@ public class BizTestCommands extends BaseTestCommands {
 
 	public void _approveOrder(CommandInterpreter interpreter) throws Exception {
 
-		Context context = this.getContext();
+		Context context = this.getContext(interpreter);
 		ServiceManager serviceManager = context.getServiceManager();
 
 		String orderId = nextArgument(interpreter);
@@ -234,7 +234,7 @@ public class BizTestCommands extends BaseTestCommands {
 
 	public void _holdOrder(CommandInterpreter interpreter) throws Exception {
 
-		Context context = this.getContext();
+		Context context = this.getContext(interpreter);
 		ServiceManager serviceManager = context.getServiceManager();
 
 		String orderId = nextArgument(interpreter);
@@ -273,7 +273,7 @@ public class BizTestCommands extends BaseTestCommands {
 
 	public void _cancelOrder(CommandInterpreter interpreter) throws Exception {
 
-		Context context = this.getContext();
+		Context context = this.getContext(interpreter);
 		ServiceManager serviceManager = context.getServiceManager();
 
 		String orderId = nextArgument(interpreter);

@@ -32,7 +32,7 @@ public class ServiceTestCommands extends BaseTestCommands {
 
 	public void _st_ecore(CommandInterpreter interpreter) throws Exception {
 
-		Context context = this.getContext();
+		Context context = this.getContext(interpreter);
 		ServiceManager serviceManager = context.getServiceManager();
 
 		ExportEntities request = serviceManager.prepare(ExportEntities.class);
@@ -42,7 +42,7 @@ public class ServiceTestCommands extends BaseTestCommands {
 
 	public void _st_product(CommandInterpreter interpreter) throws Exception {
 
-		Context context = this.getContext();
+		Context context = this.getContext(interpreter);
 		ServiceManager serviceManager = context.getServiceManager();
 
 		GetCommonDefault getCommonDefault = serviceManager.prepare(GetCommonDefault.class);
