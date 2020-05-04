@@ -101,8 +101,8 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 		// first level non abstract
 		Frame<?> frame = this.frame;
-		while (frame.ako() != null && !frame.ako().isAbstract())
-			frame = frame.ako();
+		while (frame.getAko() != null && !frame.getAko().isAbstract())
+			frame = frame.getAko();
 
 		String nextSeq = null;
 
@@ -339,7 +339,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			return;
 
 		@SuppressWarnings("unchecked")
-		Frame<K> ako = (Frame<K>) frame.ako();
+		Frame<K> ako = (Frame<K>) frame.getAko();
 		if (ako != null)
 			doCreate(ako, entity, replace);
 
@@ -356,7 +356,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			return;
 
 		@SuppressWarnings("unchecked")
-		Frame<K> ako = (Frame<K>) frame.ako();
+		Frame<K> ako = (Frame<K>) frame.getAko();
 		if (ako != null)
 			doUpdate(ako, entity);
 
@@ -373,7 +373,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		this.delegator.removeValue(genericValue);
 
 		@SuppressWarnings("unchecked")
-		Frame<K> ako = (Frame<K>) frame.ako();
+		Frame<K> ako = (Frame<K>) frame.getAko();
 		if (ako != null)
 			doDelete(ako, entity);
 	}
