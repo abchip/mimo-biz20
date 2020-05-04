@@ -65,7 +65,7 @@ public class CreateTenantMasterImpl extends ServiceRequestImpl<ServiceResponse> 
 
 		{
 			LoadSeeds loadSeeds = context.getServiceManager().prepare(LoadSeeds.class);
-			loadSeeds.setSeedPattern("seed");
+			loadSeeds.setPattern("seed");
 			loadSeeds.setUpdate(true);
 			context.getServiceManager().execute(loadSeeds);
 		}

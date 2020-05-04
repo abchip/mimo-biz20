@@ -63,7 +63,7 @@ public class CreateTenantDemoImpl extends CreateTenantImpl implements CreateTena
 		{
 			LoadSeeds loadSeeds = context.getServiceManager().prepare(LoadSeeds.class);
 			loadSeeds.setTenant(this.getTenantId());
-			loadSeeds.setSeedPattern("demo");
+			loadSeeds.setPattern("demo");
 			loadSeeds.setUpdate(true);
 			context.getServiceManager().execute(loadSeeds);
 		}
