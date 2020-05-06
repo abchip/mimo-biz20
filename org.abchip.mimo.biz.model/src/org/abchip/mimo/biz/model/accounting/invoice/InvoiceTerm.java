@@ -9,8 +9,9 @@ package org.abchip.mimo.biz.model.accounting.invoice;
 
 import java.math.BigDecimal;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.agreement.TermType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +38,7 @@ import org.abchip.mimo.biz.model.party.agreement.TermType;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface InvoiceTerm extends BizEntity {
+public interface InvoiceTerm extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

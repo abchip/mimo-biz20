@@ -10,9 +10,10 @@ package org.abchip.mimo.biz.model.order.order;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.uom.Uom;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -40,7 +41,7 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
  * @model annotation="mimo-ent-frame title='The Order Delivery Schedule'"
  * @generated
  */
-public interface OrderDeliverySchedule extends BizEntity {
+public interface OrderDeliverySchedule extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Cartons</b></em>' attribute.
 	 * <!-- begin-user-doc -->

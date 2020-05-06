@@ -1470,7 +1470,7 @@ public class CommunicationPackageImpl extends EPackageImpl implements Communicat
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		ContentPackage theContentPackage = (ContentPackage)EPackage.Registry.INSTANCE.getEPackage(ContentPackage.eNS_URI);
 		org.abchip.mimo.biz.model.marketing.contact.ContactPackage theContactPackage = (org.abchip.mimo.biz.model.marketing.contact.ContactPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.model.marketing.contact.ContactPackage.eNS_URI);
 		ContactPackage theContactPackage_1 = (ContactPackage)EPackage.Registry.INSTANCE.getEPackage(ContactPackage.eNS_URI);
@@ -1485,25 +1485,37 @@ public class CommunicationPackageImpl extends EPackageImpl implements Communicat
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		commContentAssocTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		commEventContentAssocEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		commContentAssocTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		commContentAssocTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		commEventContentAssocEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		commEventContentAssocEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getCommunicationEventType());
 		g1.getETypeArguments().add(g2);
 		communicationEventEClass.getEGenericSuperTypes().add(g1);
-		communicationEventProductEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		communicationEventEClass.getEGenericSuperTypes().add(g1);
+		communicationEventProductEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		communicationEventProductEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getCommunicationEventPurpose());
 		g1.getETypeArguments().add(g2);
 		communicationEventPrpTypEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		communicationEventPrpTypEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		g2 = createEGenericType(this.getCommunicationEventPrpTyp());
 		g1.getETypeArguments().add(g2);
 		communicationEventPurposeEClass.getEGenericSuperTypes().add(g1);
-		communicationEventRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		communicationEventPurposeEClass.getEGenericSuperTypes().add(g1);
+		communicationEventRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		communicationEventRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getCommunicationEvent());
 		g1.getETypeArguments().add(g2);
+		communicationEventTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
 		communicationEventTypeEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters

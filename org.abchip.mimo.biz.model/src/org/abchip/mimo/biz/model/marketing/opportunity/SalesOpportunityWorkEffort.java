@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.marketing.opportunity;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
  * @model annotation="mimo-ent-frame title='Relates sales opportunities to their work efforts.'"
  * @generated
  */
-public interface SalesOpportunityWorkEffort extends BizEntity {
+public interface SalesOpportunityWorkEffort extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Sales Opportunity Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

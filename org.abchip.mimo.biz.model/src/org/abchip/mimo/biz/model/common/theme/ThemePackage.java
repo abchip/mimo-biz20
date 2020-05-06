@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.common.theme;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int VISUAL_THEME__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int VISUAL_THEME__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int VISUAL_THEME__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int VISUAL_THEME__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Visual Theme Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME__VISUAL_THEME_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int VISUAL_THEME__VISUAL_THEME_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int VISUAL_THEME__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Visual Theme Set Id</b></em>' reference.
@@ -132,7 +132,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME__VISUAL_THEME_SET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int VISUAL_THEME__VISUAL_THEME_SET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Visual Theme</em>' class.
@@ -141,7 +141,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int VISUAL_THEME_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.theme.impl.VisualThemeResourceImpl <em>Visual Theme Resource</em>}' class.
@@ -160,7 +160,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME_RESOURCE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int VISUAL_THEME_RESOURCE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -169,7 +169,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME_RESOURCE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int VISUAL_THEME_RESOURCE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -178,7 +178,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME_RESOURCE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int VISUAL_THEME_RESOURCE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -187,7 +187,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME_RESOURCE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int VISUAL_THEME_RESOURCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Visual Theme Id</b></em>' reference.
@@ -196,7 +196,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME_RESOURCE__VISUAL_THEME_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int VISUAL_THEME_RESOURCE__VISUAL_THEME_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Resource Type Enum Id</b></em>' reference.
@@ -205,7 +205,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME_RESOURCE__RESOURCE_TYPE_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int VISUAL_THEME_RESOURCE__RESOURCE_TYPE_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Id</b></em>' attribute.
@@ -214,7 +214,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME_RESOURCE__SEQUENCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int VISUAL_THEME_RESOURCE__SEQUENCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Resource Value</b></em>' attribute.
@@ -223,7 +223,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME_RESOURCE__RESOURCE_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int VISUAL_THEME_RESOURCE__RESOURCE_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Visual Theme Resource</em>' class.
@@ -232,7 +232,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME_RESOURCE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int VISUAL_THEME_RESOURCE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.theme.impl.VisualThemeSetImpl <em>Visual Theme Set</em>}' class.
@@ -251,7 +251,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME_SET__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int VISUAL_THEME_SET__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -260,7 +260,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME_SET__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int VISUAL_THEME_SET__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -269,7 +269,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME_SET__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int VISUAL_THEME_SET__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -278,7 +278,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME_SET__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int VISUAL_THEME_SET__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Visual Theme Set Id</b></em>' attribute.
@@ -287,7 +287,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME_SET__VISUAL_THEME_SET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int VISUAL_THEME_SET__VISUAL_THEME_SET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -296,7 +296,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME_SET__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int VISUAL_THEME_SET__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Visual Theme Set</em>' class.
@@ -305,7 +305,7 @@ public interface ThemePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISUAL_THEME_SET_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int VISUAL_THEME_SET_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 
 	/**

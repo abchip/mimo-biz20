@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.content.content;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +27,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Content Association Predicate' dictionary='ContentEntityLabels' formula='description'"
  * @generated
  */
-public interface ContentAssocPredicate extends BizEntity {
+public interface ContentAssocPredicate extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Content Assoc Predicate Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

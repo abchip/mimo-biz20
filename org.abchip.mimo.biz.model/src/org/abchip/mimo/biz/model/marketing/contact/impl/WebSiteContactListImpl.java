@@ -8,11 +8,13 @@
 package org.abchip.mimo.biz.model.marketing.contact.impl;
 
 import java.util.Date;
-import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.marketing.contact.ContactList;
 import org.abchip.mimo.biz.model.marketing.contact.ContactPackage;
 import org.abchip.mimo.biz.model.marketing.contact.WebSiteContactList;
 import org.abchip.mimo.biz.model.webapp.website.WebSite;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityPackage;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -23,6 +25,10 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.WebSiteContactListImpl#getCreatedStamp <em>Created Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.WebSiteContactListImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.WebSiteContactListImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.WebSiteContactListImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.WebSiteContactListImpl#getWebSiteId <em>Web Site Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.WebSiteContactListImpl#getContactListId <em>Contact List Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.WebSiteContactListImpl#getFromDate <em>From Date</em>}</li>
@@ -31,7 +37,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class WebSiteContactListImpl extends BizEntityImpl implements WebSiteContactList {
+public class WebSiteContactListImpl extends EntityIdentifiableImpl implements WebSiteContactList {
 
 
 	/**
@@ -51,6 +57,96 @@ public class WebSiteContactListImpl extends BizEntityImpl implements WebSiteCont
 	@Override
 	protected EClass eStaticClass() {
 		return ContactPackage.Literals.WEB_SITE_CONTACT_LIST;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return 0;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedStamp(Date newCreatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, newCreatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedTxStamp(Date newCreatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, newCreatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedStamp(Date newLastUpdatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, newLastUpdatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
 	}
 
 	/**
@@ -111,6 +207,44 @@ public class WebSiteContactListImpl extends BizEntityImpl implements WebSiteCont
 	@Override
 	public void setThruDate(Date newThruDate) {
 		eSet(ContactPackage.Literals.WEB_SITE_CONTACT_LIST__THRU_DATE, newThruDate);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (derivedFeatureID) {
+				case ContactPackage.WEB_SITE_CONTACT_LIST__CREATED_STAMP: return EntityPackage.ENTITY_INFO__CREATED_STAMP;
+				case ContactPackage.WEB_SITE_CONTACT_LIST__CREATED_TX_STAMP: return EntityPackage.ENTITY_INFO__CREATED_TX_STAMP;
+				case ContactPackage.WEB_SITE_CONTACT_LIST__LAST_UPDATED_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP;
+				case ContactPackage.WEB_SITE_CONTACT_LIST__LAST_UPDATED_TX_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (baseFeatureID) {
+				case EntityPackage.ENTITY_INFO__CREATED_STAMP: return ContactPackage.WEB_SITE_CONTACT_LIST__CREATED_STAMP;
+				case EntityPackage.ENTITY_INFO__CREATED_TX_STAMP: return ContactPackage.WEB_SITE_CONTACT_LIST__CREATED_TX_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP: return ContactPackage.WEB_SITE_CONTACT_LIST__LAST_UPDATED_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP: return ContactPackage.WEB_SITE_CONTACT_LIST__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
 	/**

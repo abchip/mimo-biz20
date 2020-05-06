@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.accounting.budget;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +32,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model
  * @generated
  */
-public interface BudgetRevisionImpact extends BizEntity {
+public interface BudgetRevisionImpact extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Budget Item Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

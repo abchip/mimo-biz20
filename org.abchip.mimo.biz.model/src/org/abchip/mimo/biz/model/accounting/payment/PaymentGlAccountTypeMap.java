@@ -7,9 +7,10 @@
  */
 package org.abchip.mimo.biz.model.accounting.payment;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccountType;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model annotation="mimo-ent-frame title='Maps PaymentTypes to GlAccountTypes, allowing user to configure payments and gl accounts'"
  * @generated
  */
-public interface PaymentGlAccountTypeMap extends BizEntity {
+public interface PaymentGlAccountTypeMap extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Organization Party Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

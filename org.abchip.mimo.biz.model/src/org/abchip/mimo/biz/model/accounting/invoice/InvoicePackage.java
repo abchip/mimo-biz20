@@ -8,6 +8,7 @@
 package org.abchip.mimo.biz.model.accounting.invoice;
 
 import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -79,7 +80,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int INVOICE__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -88,7 +89,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int INVOICE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -97,7 +98,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int INVOICE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -106,7 +107,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int INVOICE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id</b></em>' attribute.
@@ -115,7 +116,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__INVOICE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int INVOICE__INVOICE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Billing Account Id</b></em>' reference.
@@ -124,7 +125,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__BILLING_ACCOUNT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int INVOICE__BILLING_ACCOUNT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Contact Mech Id</b></em>' reference.
@@ -133,7 +134,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__CONTACT_MECH_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int INVOICE__CONTACT_MECH_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
@@ -142,7 +143,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__CURRENCY_UOM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int INVOICE__CURRENCY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -151,7 +152,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int INVOICE__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Due Date</b></em>' attribute.
@@ -160,7 +161,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__DUE_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int INVOICE__DUE_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Attributes</b></em>' reference list.
@@ -169,7 +170,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__INVOICE_ATTRIBUTES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int INVOICE__INVOICE_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Date</b></em>' attribute.
@@ -178,7 +179,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__INVOICE_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int INVOICE__INVOICE_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Items</b></em>' reference list.
@@ -187,7 +188,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__INVOICE_ITEMS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int INVOICE__INVOICE_ITEMS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Message</b></em>' attribute.
@@ -196,7 +197,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__INVOICE_MESSAGE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 9;
+	int INVOICE__INVOICE_MESSAGE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Notes</b></em>' reference list.
@@ -205,7 +206,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__INVOICE_NOTES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 10;
+	int INVOICE__INVOICE_NOTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Type Id</b></em>' reference.
@@ -214,7 +215,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__INVOICE_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 11;
+	int INVOICE__INVOICE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Paid Date</b></em>' attribute.
@@ -223,7 +224,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__PAID_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 12;
+	int INVOICE__PAID_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -232,7 +233,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__PARTY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 13;
+	int INVOICE__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Party Id From</b></em>' reference.
@@ -241,7 +242,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__PARTY_ID_FROM = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 14;
+	int INVOICE__PARTY_ID_FROM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Recurrence Info Id</b></em>' reference.
@@ -250,7 +251,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__RECURRENCE_INFO_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 15;
+	int INVOICE__RECURRENCE_INFO_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Reference Number</b></em>' attribute.
@@ -259,7 +260,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__REFERENCE_NUMBER = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 16;
+	int INVOICE__REFERENCE_NUMBER = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -268,7 +269,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 17;
+	int INVOICE__ROLE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -277,7 +278,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE__STATUS_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 18;
+	int INVOICE__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The number of structural features of the '<em>Invoice</em>' class.
@@ -286,7 +287,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 19;
+	int INVOICE_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceAttributeImpl <em>Attribute</em>}' class.
@@ -305,7 +306,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int INVOICE_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -314,7 +315,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int INVOICE_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -323,7 +324,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int INVOICE_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -332,7 +333,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int INVOICE_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id</b></em>' reference.
@@ -341,7 +342,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ATTRIBUTE__INVOICE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int INVOICE_ATTRIBUTE__INVOICE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -350,7 +351,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int INVOICE_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -359,7 +360,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int INVOICE_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -368,7 +369,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int INVOICE_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Attribute</em>' class.
@@ -377,7 +378,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int INVOICE_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContactMechImpl <em>Contact Mech</em>}' class.
@@ -396,7 +397,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTACT_MECH__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int INVOICE_CONTACT_MECH__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -405,7 +406,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTACT_MECH__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int INVOICE_CONTACT_MECH__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -414,7 +415,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTACT_MECH__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int INVOICE_CONTACT_MECH__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -423,7 +424,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTACT_MECH__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int INVOICE_CONTACT_MECH__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id</b></em>' reference.
@@ -432,7 +433,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTACT_MECH__INVOICE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int INVOICE_CONTACT_MECH__INVOICE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Contact Mech Id</b></em>' reference.
@@ -441,7 +442,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTACT_MECH__CONTACT_MECH_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int INVOICE_CONTACT_MECH__CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Contact Mech Purpose Type Id</b></em>' reference.
@@ -450,7 +451,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int INVOICE_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Contact Mech</em>' class.
@@ -459,7 +460,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTACT_MECH_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int INVOICE_CONTACT_MECH_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContentImpl <em>Content</em>}' class.
@@ -478,7 +479,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTENT__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int INVOICE_CONTENT__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -487,7 +488,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int INVOICE_CONTENT__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -496,7 +497,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int INVOICE_CONTENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -505,7 +506,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int INVOICE_CONTENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id</b></em>' reference.
@@ -514,7 +515,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTENT__INVOICE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int INVOICE_CONTENT__INVOICE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Content Id</b></em>' reference.
@@ -523,7 +524,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTENT__CONTENT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int INVOICE_CONTENT__CONTENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Content Type Id</b></em>' reference.
@@ -532,7 +533,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTENT__INVOICE_CONTENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int INVOICE_CONTENT__INVOICE_CONTENT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -541,7 +542,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTENT__FROM_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int INVOICE_CONTENT__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -550,7 +551,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTENT__THRU_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int INVOICE_CONTENT__THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Content</em>' class.
@@ -559,7 +560,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int INVOICE_CONTENT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceContentTypeImpl <em>Content Type</em>}' class.
@@ -578,7 +579,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTENT_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int INVOICE_CONTENT_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -587,7 +588,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTENT_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int INVOICE_CONTENT_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -596,7 +597,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTENT_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int INVOICE_CONTENT_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -605,7 +606,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTENT_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int INVOICE_CONTENT_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -614,7 +615,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTENT_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int INVOICE_CONTENT_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Content Type Id</b></em>' attribute.
@@ -623,7 +624,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTENT_TYPE__INVOICE_CONTENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int INVOICE_CONTENT_TYPE__INVOICE_CONTENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -632,7 +633,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTENT_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int INVOICE_CONTENT_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -641,7 +642,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTENT_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int INVOICE_CONTENT_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -650,7 +651,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTENT_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int INVOICE_CONTENT_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Content Type</em>' class.
@@ -659,7 +660,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_CONTENT_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int INVOICE_CONTENT_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemImpl <em>Item</em>}' class.
@@ -678,7 +679,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int INVOICE_ITEM__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -687,7 +688,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int INVOICE_ITEM__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -696,7 +697,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int INVOICE_ITEM__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -705,7 +706,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int INVOICE_ITEM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id</b></em>' reference.
@@ -714,7 +715,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__INVOICE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int INVOICE_ITEM__INVOICE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Seq Id</b></em>' attribute.
@@ -723,7 +724,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__INVOICE_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int INVOICE_ITEM__INVOICE_ITEM_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Amount</b></em>' attribute.
@@ -732,7 +733,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__AMOUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int INVOICE_ITEM__AMOUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -741,7 +742,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int INVOICE_ITEM__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Inventory Item Id</b></em>' reference.
@@ -750,7 +751,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__INVENTORY_ITEM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int INVOICE_ITEM__INVENTORY_ITEM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Type Id</b></em>' reference.
@@ -759,7 +760,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__INVOICE_ITEM_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int INVOICE_ITEM__INVOICE_ITEM_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Override Gl Account Id</b></em>' reference.
@@ -768,7 +769,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__OVERRIDE_GL_ACCOUNT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int INVOICE_ITEM__OVERRIDE_GL_ACCOUNT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Override Org Party Id</b></em>' reference.
@@ -777,7 +778,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__OVERRIDE_ORG_PARTY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int INVOICE_ITEM__OVERRIDE_ORG_PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Parent Invoice Id</b></em>' attribute.
@@ -786,7 +787,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__PARENT_INVOICE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int INVOICE_ITEM__PARENT_INVOICE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Parent Invoice Item Seq Id</b></em>' attribute.
@@ -795,7 +796,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__PARENT_INVOICE_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 9;
+	int INVOICE_ITEM__PARENT_INVOICE_ITEM_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Product Feature Id</b></em>' reference.
@@ -804,7 +805,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__PRODUCT_FEATURE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 10;
+	int INVOICE_ITEM__PRODUCT_FEATURE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -813,7 +814,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__PRODUCT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 11;
+	int INVOICE_ITEM__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -822,7 +823,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__QUANTITY = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 12;
+	int INVOICE_ITEM__QUANTITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Sales Opportunity Id</b></em>' reference.
@@ -831,7 +832,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__SALES_OPPORTUNITY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 13;
+	int INVOICE_ITEM__SALES_OPPORTUNITY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Geo Id</b></em>' reference.
@@ -840,7 +841,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__TAX_AUTH_GEO_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 14;
+	int INVOICE_ITEM__TAX_AUTH_GEO_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Party Id</b></em>' reference.
@@ -849,7 +850,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__TAX_AUTH_PARTY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 15;
+	int INVOICE_ITEM__TAX_AUTH_PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Tax Authority Rate Seq Id</b></em>' reference.
@@ -858,7 +859,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__TAX_AUTHORITY_RATE_SEQ_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 16;
+	int INVOICE_ITEM__TAX_AUTHORITY_RATE_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Taxable Flag</b></em>' attribute.
@@ -867,7 +868,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__TAXABLE_FLAG = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 17;
+	int INVOICE_ITEM__TAXABLE_FLAG = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Uom Id</b></em>' reference.
@@ -876,7 +877,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM__UOM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 18;
+	int INVOICE_ITEM__UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The number of structural features of the '<em>Item</em>' class.
@@ -885,7 +886,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 19;
+	int INVOICE_ITEM_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemAssocImpl <em>Item Assoc</em>}' class.
@@ -904,7 +905,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int INVOICE_ITEM_ASSOC__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -913,7 +914,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int INVOICE_ITEM_ASSOC__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -922,7 +923,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int INVOICE_ITEM_ASSOC__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -931,7 +932,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int INVOICE_ITEM_ASSOC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Assoc Type Id</b></em>' reference.
@@ -940,7 +941,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC__INVOICE_ITEM_ASSOC_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int INVOICE_ITEM_ASSOC__INVOICE_ITEM_ASSOC_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -949,7 +950,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC__FROM_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int INVOICE_ITEM_ASSOC__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id From</b></em>' attribute.
@@ -958,7 +959,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC__INVOICE_ID_FROM = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int INVOICE_ITEM_ASSOC__INVOICE_ID_FROM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id To</b></em>' attribute.
@@ -967,7 +968,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC__INVOICE_ID_TO = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int INVOICE_ITEM_ASSOC__INVOICE_ID_TO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Seq Id From</b></em>' attribute.
@@ -976,7 +977,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC__INVOICE_ITEM_SEQ_ID_FROM = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int INVOICE_ITEM_ASSOC__INVOICE_ITEM_SEQ_ID_FROM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Seq Id To</b></em>' attribute.
@@ -985,7 +986,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC__INVOICE_ITEM_SEQ_ID_TO = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int INVOICE_ITEM_ASSOC__INVOICE_ITEM_SEQ_ID_TO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Amount</b></em>' attribute.
@@ -994,7 +995,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC__AMOUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int INVOICE_ITEM_ASSOC__AMOUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Party Id From</b></em>' reference.
@@ -1003,7 +1004,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC__PARTY_ID_FROM = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int INVOICE_ITEM_ASSOC__PARTY_ID_FROM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Party Id To</b></em>' reference.
@@ -1012,7 +1013,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC__PARTY_ID_TO = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int INVOICE_ITEM_ASSOC__PARTY_ID_TO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -1021,7 +1022,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC__QUANTITY = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 9;
+	int INVOICE_ITEM_ASSOC__QUANTITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -1030,7 +1031,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC__THRU_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 10;
+	int INVOICE_ITEM_ASSOC__THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The number of structural features of the '<em>Item Assoc</em>' class.
@@ -1039,7 +1040,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 11;
+	int INVOICE_ITEM_ASSOC_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemAssocTypeImpl <em>Item Assoc Type</em>}' class.
@@ -1058,7 +1059,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int INVOICE_ITEM_ASSOC_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1067,7 +1068,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int INVOICE_ITEM_ASSOC_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1076,7 +1077,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int INVOICE_ITEM_ASSOC_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1085,7 +1086,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int INVOICE_ITEM_ASSOC_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1094,7 +1095,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int INVOICE_ITEM_ASSOC_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Assoc Type Id</b></em>' attribute.
@@ -1103,7 +1104,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC_TYPE__INVOICE_ITEM_ASSOC_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int INVOICE_ITEM_ASSOC_TYPE__INVOICE_ITEM_ASSOC_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1112,7 +1113,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int INVOICE_ITEM_ASSOC_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -1121,7 +1122,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int INVOICE_ITEM_ASSOC_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -1130,7 +1131,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int INVOICE_ITEM_ASSOC_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Item Assoc Type</em>' class.
@@ -1139,7 +1140,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ASSOC_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int INVOICE_ITEM_ASSOC_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemAttributeImpl <em>Item Attribute</em>}' class.
@@ -1158,7 +1159,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int INVOICE_ITEM_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1167,7 +1168,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int INVOICE_ITEM_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1176,7 +1177,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int INVOICE_ITEM_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1185,7 +1186,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int INVOICE_ITEM_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1194,7 +1195,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int INVOICE_ITEM_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id</b></em>' attribute.
@@ -1203,7 +1204,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ATTRIBUTE__INVOICE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int INVOICE_ITEM_ATTRIBUTE__INVOICE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Seq Id</b></em>' attribute.
@@ -1212,7 +1213,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ATTRIBUTE__INVOICE_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int INVOICE_ITEM_ATTRIBUTE__INVOICE_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -1221,7 +1222,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int INVOICE_ITEM_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -1230,7 +1231,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int INVOICE_ITEM_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Item Attribute</em>' class.
@@ -1239,7 +1240,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int INVOICE_ITEM_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeImpl <em>Item Type</em>}' class.
@@ -1258,7 +1259,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int INVOICE_ITEM_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1267,7 +1268,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int INVOICE_ITEM_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1276,7 +1277,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int INVOICE_ITEM_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1285,7 +1286,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int INVOICE_ITEM_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1294,7 +1295,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int INVOICE_ITEM_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Type Id</b></em>' attribute.
@@ -1303,7 +1304,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE__INVOICE_ITEM_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int INVOICE_ITEM_TYPE__INVOICE_ITEM_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Default Gl Account Id</b></em>' reference.
@@ -1312,7 +1313,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE__DEFAULT_GL_ACCOUNT_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int INVOICE_ITEM_TYPE__DEFAULT_GL_ACCOUNT_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1321,7 +1322,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int INVOICE_ITEM_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -1330,7 +1331,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int INVOICE_ITEM_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Type Attrs</b></em>' reference list.
@@ -1339,7 +1340,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE__INVOICE_ITEM_TYPE_ATTRS = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int INVOICE_ITEM_TYPE__INVOICE_ITEM_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Type Gl Accounts</b></em>' reference list.
@@ -1348,7 +1349,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE__INVOICE_ITEM_TYPE_GL_ACCOUNTS = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 5;
+	int INVOICE_ITEM_TYPE__INVOICE_ITEM_TYPE_GL_ACCOUNTS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -1357,7 +1358,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 6;
+	int INVOICE_ITEM_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Item Type</em>' class.
@@ -1366,7 +1367,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 7;
+	int INVOICE_ITEM_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeAttrImpl <em>Item Type Attr</em>}' class.
@@ -1385,7 +1386,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_ATTR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int INVOICE_ITEM_TYPE_ATTR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1394,7 +1395,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_ATTR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int INVOICE_ITEM_TYPE_ATTR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1403,7 +1404,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_ATTR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int INVOICE_ITEM_TYPE_ATTR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1412,7 +1413,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_ATTR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int INVOICE_ITEM_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Type Id</b></em>' reference.
@@ -1421,7 +1422,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_ATTR__INVOICE_ITEM_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int INVOICE_ITEM_TYPE_ATTR__INVOICE_ITEM_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1430,7 +1431,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_ATTR__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int INVOICE_ITEM_TYPE_ATTR__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1439,7 +1440,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_ATTR__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int INVOICE_ITEM_TYPE_ATTR__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Item Type Attr</em>' class.
@@ -1448,7 +1449,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_ATTR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int INVOICE_ITEM_TYPE_ATTR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeGlAccountImpl <em>Item Type Gl Account</em>}' class.
@@ -1467,7 +1468,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_GL_ACCOUNT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int INVOICE_ITEM_TYPE_GL_ACCOUNT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1476,7 +1477,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_GL_ACCOUNT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int INVOICE_ITEM_TYPE_GL_ACCOUNT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1485,7 +1486,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_GL_ACCOUNT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int INVOICE_ITEM_TYPE_GL_ACCOUNT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1494,7 +1495,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_GL_ACCOUNT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int INVOICE_ITEM_TYPE_GL_ACCOUNT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Type Id</b></em>' reference.
@@ -1503,7 +1504,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_GL_ACCOUNT__INVOICE_ITEM_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int INVOICE_ITEM_TYPE_GL_ACCOUNT__INVOICE_ITEM_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Organization Party Id</b></em>' reference.
@@ -1512,7 +1513,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int INVOICE_ITEM_TYPE_GL_ACCOUNT__ORGANIZATION_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Id</b></em>' reference.
@@ -1521,7 +1522,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_GL_ACCOUNT__GL_ACCOUNT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int INVOICE_ITEM_TYPE_GL_ACCOUNT__GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Item Type Gl Account</em>' class.
@@ -1530,7 +1531,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_GL_ACCOUNT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int INVOICE_ITEM_TYPE_GL_ACCOUNT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceItemTypeMapImpl <em>Item Type Map</em>}' class.
@@ -1549,7 +1550,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_MAP__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int INVOICE_ITEM_TYPE_MAP__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1558,7 +1559,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_MAP__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int INVOICE_ITEM_TYPE_MAP__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1567,7 +1568,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_MAP__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int INVOICE_ITEM_TYPE_MAP__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1576,7 +1577,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_MAP__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int INVOICE_ITEM_TYPE_MAP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Type Id</b></em>' reference.
@@ -1585,7 +1586,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_MAP__INVOICE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int INVOICE_ITEM_TYPE_MAP__INVOICE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Map Key</b></em>' attribute.
@@ -1594,7 +1595,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_MAP__INVOICE_ITEM_MAP_KEY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int INVOICE_ITEM_TYPE_MAP__INVOICE_ITEM_MAP_KEY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Type Id</b></em>' reference.
@@ -1603,7 +1604,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_MAP__INVOICE_ITEM_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int INVOICE_ITEM_TYPE_MAP__INVOICE_ITEM_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Item Type Map</em>' class.
@@ -1612,7 +1613,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ITEM_TYPE_MAP_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int INVOICE_ITEM_TYPE_MAP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceNoteImpl <em>Note</em>}' class.
@@ -1704,7 +1705,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ROLE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int INVOICE_ROLE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1713,7 +1714,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ROLE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int INVOICE_ROLE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1722,7 +1723,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ROLE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int INVOICE_ROLE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1731,7 +1732,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ROLE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int INVOICE_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id</b></em>' reference.
@@ -1740,7 +1741,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ROLE__INVOICE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int INVOICE_ROLE__INVOICE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -1749,7 +1750,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ROLE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int INVOICE_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -1758,7 +1759,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ROLE__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int INVOICE_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Datetime Performed</b></em>' attribute.
@@ -1767,7 +1768,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ROLE__DATETIME_PERFORMED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int INVOICE_ROLE__DATETIME_PERFORMED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Percentage</b></em>' attribute.
@@ -1776,7 +1777,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ROLE__PERCENTAGE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int INVOICE_ROLE__PERCENTAGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Role</em>' class.
@@ -1785,7 +1786,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_ROLE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int INVOICE_ROLE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceStatusImpl <em>Status</em>}' class.
@@ -1804,7 +1805,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_STATUS__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int INVOICE_STATUS__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1813,7 +1814,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_STATUS__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int INVOICE_STATUS__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1822,7 +1823,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_STATUS__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int INVOICE_STATUS__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1831,7 +1832,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_STATUS__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int INVOICE_STATUS__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -1840,7 +1841,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_STATUS__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int INVOICE_STATUS__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id</b></em>' reference.
@@ -1849,7 +1850,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_STATUS__INVOICE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int INVOICE_STATUS__INVOICE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Status Date</b></em>' attribute.
@@ -1858,7 +1859,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_STATUS__STATUS_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int INVOICE_STATUS__STATUS_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Change By User Login Id</b></em>' reference.
@@ -1867,7 +1868,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_STATUS__CHANGE_BY_USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int INVOICE_STATUS__CHANGE_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Status</em>' class.
@@ -1876,7 +1877,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_STATUS_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int INVOICE_STATUS_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceTermImpl <em>Term</em>}' class.
@@ -1895,7 +1896,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int INVOICE_TERM__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1904,7 +1905,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int INVOICE_TERM__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1913,7 +1914,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int INVOICE_TERM__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1922,7 +1923,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int INVOICE_TERM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Term Id</b></em>' attribute.
@@ -1931,7 +1932,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM__INVOICE_TERM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int INVOICE_TERM__INVOICE_TERM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1940,7 +1941,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int INVOICE_TERM__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id</b></em>' reference.
@@ -1949,7 +1950,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM__INVOICE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int INVOICE_TERM__INVOICE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Seq Id</b></em>' attribute.
@@ -1958,7 +1959,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM__INVOICE_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int INVOICE_TERM__INVOICE_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Term Attributes</b></em>' reference list.
@@ -1967,7 +1968,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM__INVOICE_TERM_ATTRIBUTES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int INVOICE_TERM__INVOICE_TERM_ATTRIBUTES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Term Days</b></em>' attribute.
@@ -1976,7 +1977,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM__TERM_DAYS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int INVOICE_TERM__TERM_DAYS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Term Type Id</b></em>' reference.
@@ -1985,7 +1986,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM__TERM_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int INVOICE_TERM__TERM_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Term Value</b></em>' attribute.
@@ -1994,7 +1995,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM__TERM_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int INVOICE_TERM__TERM_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Text Value</b></em>' attribute.
@@ -2003,7 +2004,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM__TEXT_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int INVOICE_TERM__TEXT_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Uom Id</b></em>' attribute.
@@ -2012,7 +2013,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM__UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int INVOICE_TERM__UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The number of structural features of the '<em>Term</em>' class.
@@ -2021,7 +2022,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int INVOICE_TERM_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceTermAttributeImpl <em>Term Attribute</em>}' class.
@@ -2040,7 +2041,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int INVOICE_TERM_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2049,7 +2050,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int INVOICE_TERM_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2058,7 +2059,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int INVOICE_TERM_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2067,7 +2068,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int INVOICE_TERM_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Term Id</b></em>' reference.
@@ -2076,7 +2077,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM_ATTRIBUTE__INVOICE_TERM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int INVOICE_TERM_ATTRIBUTE__INVOICE_TERM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -2085,7 +2086,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int INVOICE_TERM_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -2094,7 +2095,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int INVOICE_TERM_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -2103,7 +2104,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int INVOICE_TERM_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Term Attribute</em>' class.
@@ -2112,7 +2113,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TERM_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int INVOICE_TERM_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceTypeImpl <em>Type</em>}' class.
@@ -2131,7 +2132,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int INVOICE_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -2140,7 +2141,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int INVOICE_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2149,7 +2150,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int INVOICE_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2158,7 +2159,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int INVOICE_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2167,7 +2168,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int INVOICE_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Type Id</b></em>' attribute.
@@ -2176,7 +2177,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TYPE__INVOICE_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int INVOICE_TYPE__INVOICE_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -2185,7 +2186,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int INVOICE_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -2194,7 +2195,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int INVOICE_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Type Attrs</b></em>' reference list.
@@ -2203,7 +2204,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TYPE__INVOICE_TYPE_ATTRS = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int INVOICE_TYPE__INVOICE_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -2212,7 +2213,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int INVOICE_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -2221,7 +2222,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 5;
+	int INVOICE_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.invoice.impl.InvoiceTypeAttrImpl <em>Type Attr</em>}' class.
@@ -2240,7 +2241,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TYPE_ATTR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int INVOICE_TYPE_ATTR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2249,7 +2250,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TYPE_ATTR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int INVOICE_TYPE_ATTR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2258,7 +2259,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TYPE_ATTR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int INVOICE_TYPE_ATTR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2267,7 +2268,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TYPE_ATTR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int INVOICE_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Type Id</b></em>' reference.
@@ -2276,7 +2277,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TYPE_ATTR__INVOICE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int INVOICE_TYPE_ATTR__INVOICE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -2285,7 +2286,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TYPE_ATTR__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int INVOICE_TYPE_ATTR__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -2294,7 +2295,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TYPE_ATTR__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int INVOICE_TYPE_ATTR__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Type Attr</em>' class.
@@ -2303,7 +2304,7 @@ public interface InvoicePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int INVOICE_TYPE_ATTR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int INVOICE_TYPE_ATTR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 
 	/**

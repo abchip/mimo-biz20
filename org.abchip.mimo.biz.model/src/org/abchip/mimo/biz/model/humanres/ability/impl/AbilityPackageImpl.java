@@ -1790,7 +1790,7 @@ public class AbilityPackageImpl extends EPackageImpl implements AbilityPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
 		StatusPackage theStatusPackage = (StatusPackage)EPackage.Registry.INSTANCE.getEPackage(StatusPackage.eNS_URI);
 		ContentPackage theContentPackage = (ContentPackage)EPackage.Registry.INSTANCE.getEPackage(ContentPackage.eNS_URI);
@@ -1804,42 +1804,63 @@ public class AbilityPackageImpl extends EPackageImpl implements AbilityPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getPartyQualType());
 		g1.getETypeArguments().add(g2);
 		partyQualEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		partyQualEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getPartyQual());
 		g1.getETypeArguments().add(g2);
 		partyQualTypeEClass.getEGenericSuperTypes().add(g1);
-		partyResumeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		partyQualTypeEClass.getEGenericSuperTypes().add(g1);
+		partyResumeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		partyResumeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		g2 = createEGenericType(this.getSkillType());
 		g1.getETypeArguments().add(g2);
 		partySkillEClass.getEGenericSuperTypes().add(g1);
-		perfRatingTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		perfReviewEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		partySkillEClass.getEGenericSuperTypes().add(g1);
+		perfRatingTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		perfRatingTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		perfReviewEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		perfReviewEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		g2 = createEGenericType(this.getPerfReviewItemType());
 		g1.getETypeArguments().add(g2);
 		perfReviewItemEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		perfReviewItemEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getPerfReviewItem());
 		g1.getETypeArguments().add(g2);
 		perfReviewItemTypeEClass.getEGenericSuperTypes().add(g1);
-		performanceNoteEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		perfReviewItemTypeEClass.getEGenericSuperTypes().add(g1);
+		performanceNoteEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		performanceNoteEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		g2 = createEGenericType(this.getTrainingClassType());
 		g1.getETypeArguments().add(g2);
 		personTrainingEClass.getEGenericSuperTypes().add(g1);
-		responsibilityTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		personTrainingEClass.getEGenericSuperTypes().add(g1);
+		responsibilityTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		responsibilityTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getPartySkill());
 		g1.getETypeArguments().add(g2);
 		skillTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		skillTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getPersonTraining());
 		g1.getETypeArguments().add(g2);
+		trainingClassTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
 		trainingClassTypeEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters

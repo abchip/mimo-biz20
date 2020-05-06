@@ -1066,7 +1066,7 @@ public class SecuritygroupPackageImpl extends EPackageImpl implements Securitygr
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		LoginPackage theLoginPackage = (LoginPackage)EPackage.Registry.INSTANCE.getEPackage(LoginPackage.eNS_URI);
 
 		// Create type parameters
@@ -1074,12 +1074,18 @@ public class SecuritygroupPackageImpl extends EPackageImpl implements Securitygr
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		protectedViewEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		securityGroupEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		securityGroupPermissionEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		securityPermissionEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		tarpittedLoginViewEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		userLoginSecurityGroupEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		protectedViewEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		protectedViewEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		securityGroupEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		securityGroupEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		securityGroupPermissionEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		securityGroupPermissionEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		securityPermissionEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		securityPermissionEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		tarpittedLoginViewEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		tarpittedLoginViewEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		userLoginSecurityGroupEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		userLoginSecurityGroupEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(protectedViewEClass, ProtectedView.class, "ProtectedView", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

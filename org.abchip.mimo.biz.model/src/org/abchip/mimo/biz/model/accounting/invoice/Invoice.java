@@ -10,7 +10,6 @@ package org.abchip.mimo.biz.model.accounting.invoice;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.accounting.payment.BillingAccount;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.uom.Uom;
@@ -18,6 +17,8 @@ import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.abchip.mimo.biz.model.service.schedule.RecurrenceInfo;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,7 +54,7 @@ import org.abchip.mimo.biz.model.service.schedule.RecurrenceInfo;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface Invoice extends BizEntityTyped<InvoiceType> {
+public interface Invoice extends EntityTyped<InvoiceType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Billing Account Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

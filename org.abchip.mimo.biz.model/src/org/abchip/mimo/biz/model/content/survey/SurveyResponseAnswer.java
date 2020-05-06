@@ -10,8 +10,9 @@ package org.abchip.mimo.biz.model.content.survey;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.content.content.Content;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -46,7 +47,7 @@ import org.abchip.mimo.biz.model.content.content.Content;
  * @model
  * @generated
  */
-public interface SurveyResponseAnswer extends BizEntity {
+public interface SurveyResponseAnswer extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Amount Base</b></em>' attribute.
 	 * <!-- begin-user-doc -->

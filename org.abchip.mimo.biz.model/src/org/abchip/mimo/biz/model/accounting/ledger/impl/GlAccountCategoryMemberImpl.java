@@ -10,12 +10,13 @@ package org.abchip.mimo.biz.model.accounting.ledger.impl;
 import java.math.BigDecimal;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccountCategory;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccountCategoryMember;
 import org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityPackage;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -26,6 +27,10 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryMemberImpl#getCreatedStamp <em>Created Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryMemberImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryMemberImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryMemberImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryMemberImpl#getGlAccountId <em>Gl Account Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryMemberImpl#getGlAccountCategoryId <em>Gl Account Category Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryMemberImpl#getFromDate <em>From Date</em>}</li>
@@ -35,7 +40,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class GlAccountCategoryMemberImpl extends BizEntityImpl implements GlAccountCategoryMember {
+public class GlAccountCategoryMemberImpl extends EntityIdentifiableImpl implements GlAccountCategoryMember {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -53,6 +58,96 @@ public class GlAccountCategoryMemberImpl extends BizEntityImpl implements GlAcco
 	@Override
 	protected EClass eStaticClass() {
 		return LedgerPackage.Literals.GL_ACCOUNT_CATEGORY_MEMBER;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return 0;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedStamp(Date newCreatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, newCreatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedTxStamp(Date newCreatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, newCreatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedStamp(Date newLastUpdatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, newLastUpdatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
 	}
 
 	/**
@@ -113,6 +208,44 @@ public class GlAccountCategoryMemberImpl extends BizEntityImpl implements GlAcco
 	@Override
 	public void setThruDate(Date newThruDate) {
 		eSet(LedgerPackage.Literals.GL_ACCOUNT_CATEGORY_MEMBER__THRU_DATE, newThruDate);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (derivedFeatureID) {
+				case LedgerPackage.GL_ACCOUNT_CATEGORY_MEMBER__CREATED_STAMP: return EntityPackage.ENTITY_INFO__CREATED_STAMP;
+				case LedgerPackage.GL_ACCOUNT_CATEGORY_MEMBER__CREATED_TX_STAMP: return EntityPackage.ENTITY_INFO__CREATED_TX_STAMP;
+				case LedgerPackage.GL_ACCOUNT_CATEGORY_MEMBER__LAST_UPDATED_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP;
+				case LedgerPackage.GL_ACCOUNT_CATEGORY_MEMBER__LAST_UPDATED_TX_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (baseFeatureID) {
+				case EntityPackage.ENTITY_INFO__CREATED_STAMP: return LedgerPackage.GL_ACCOUNT_CATEGORY_MEMBER__CREATED_STAMP;
+				case EntityPackage.ENTITY_INFO__CREATED_TX_STAMP: return LedgerPackage.GL_ACCOUNT_CATEGORY_MEMBER__CREATED_TX_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP: return LedgerPackage.GL_ACCOUNT_CATEGORY_MEMBER__LAST_UPDATED_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP: return LedgerPackage.GL_ACCOUNT_CATEGORY_MEMBER__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
 	/**

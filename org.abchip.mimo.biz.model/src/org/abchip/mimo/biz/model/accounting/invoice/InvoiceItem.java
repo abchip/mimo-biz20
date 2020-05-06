@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.model.accounting.invoice;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct;
 import org.abchip.mimo.biz.model.common.geo.Geo;
@@ -18,6 +17,8 @@ import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.feature.ProductFeature;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItem;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,7 +54,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface InvoiceItem extends BizEntityTyped<InvoiceItemType> {
+public interface InvoiceItem extends EntityTyped<InvoiceItemType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->

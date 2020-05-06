@@ -9,7 +9,8 @@ package org.abchip.mimo.biz.model.content.content;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +35,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model
  * @generated
  */
-public interface ContentSearchResult extends BizEntity {
+public interface ContentSearchResult extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Content Search Result Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

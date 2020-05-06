@@ -8,12 +8,13 @@
 package org.abchip.mimo.biz.model.order.order;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.agreement.Agreement;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -50,7 +51,7 @@ import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
  * @model
  * @generated
  */
-public interface OrderItemShipGroup extends BizEntity {
+public interface OrderItemShipGroup extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Carrier Party Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

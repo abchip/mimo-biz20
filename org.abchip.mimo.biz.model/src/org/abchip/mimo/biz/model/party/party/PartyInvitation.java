@@ -9,8 +9,9 @@ package org.abchip.mimo.biz.model.party.party;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,7 +37,7 @@ import org.abchip.mimo.biz.model.common.status.StatusItem;
  * @model
  * @generated
  */
-public interface PartyInvitation extends BizEntity {
+public interface PartyInvitation extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Email Address</b></em>' attribute.
 	 * <!-- begin-user-doc -->

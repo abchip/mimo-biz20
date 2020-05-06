@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.security.securitygroup;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  * @model annotation="mimo-ent-frame help='Maps a UserLogin to a security group' title='Security Component - User Login Security Group'"
  * @generated
  */
-public interface UserLoginSecurityGroup extends BizEntity {
+public interface UserLoginSecurityGroup extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.marketing.segment;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SEGMENT_GROUP__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SEGMENT_GROUP__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SEGMENT_GROUP__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SEGMENT_GROUP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Segment Group Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP__SEGMENT_GROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SEGMENT_GROUP__SEGMENT_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SEGMENT_GROUP__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Id</b></em>' reference.
@@ -132,7 +132,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP__PRODUCT_STORE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SEGMENT_GROUP__PRODUCT_STORE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Segment Group Classifications</b></em>' reference list.
@@ -141,7 +141,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP__SEGMENT_GROUP_CLASSIFICATIONS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SEGMENT_GROUP__SEGMENT_GROUP_CLASSIFICATIONS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Segment Group Geos</b></em>' reference list.
@@ -150,7 +150,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP__SEGMENT_GROUP_GEOS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SEGMENT_GROUP__SEGMENT_GROUP_GEOS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Segment Group Type Id</b></em>' reference.
@@ -159,7 +159,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP__SEGMENT_GROUP_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int SEGMENT_GROUP__SEGMENT_GROUP_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Group</em>' class.
@@ -168,7 +168,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int SEGMENT_GROUP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupClassificationImpl <em>Group Classification</em>}' class.
@@ -187,7 +187,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_CLASSIFICATION__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SEGMENT_GROUP_CLASSIFICATION__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -196,7 +196,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_CLASSIFICATION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SEGMENT_GROUP_CLASSIFICATION__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -205,7 +205,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_CLASSIFICATION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SEGMENT_GROUP_CLASSIFICATION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -214,7 +214,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_CLASSIFICATION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SEGMENT_GROUP_CLASSIFICATION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Segment Group Id</b></em>' reference.
@@ -223,7 +223,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_CLASSIFICATION__SEGMENT_GROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SEGMENT_GROUP_CLASSIFICATION__SEGMENT_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Classification Group Id</b></em>' reference.
@@ -232,7 +232,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_CLASSIFICATION__PARTY_CLASSIFICATION_GROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SEGMENT_GROUP_CLASSIFICATION__PARTY_CLASSIFICATION_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Group Classification</em>' class.
@@ -241,7 +241,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_CLASSIFICATION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SEGMENT_GROUP_CLASSIFICATION_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupGeoImpl <em>Group Geo</em>}' class.
@@ -260,7 +260,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_GEO__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SEGMENT_GROUP_GEO__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -269,7 +269,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_GEO__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SEGMENT_GROUP_GEO__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -278,7 +278,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_GEO__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SEGMENT_GROUP_GEO__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -287,7 +287,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_GEO__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SEGMENT_GROUP_GEO__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Segment Group Id</b></em>' reference.
@@ -296,7 +296,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_GEO__SEGMENT_GROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SEGMENT_GROUP_GEO__SEGMENT_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Geo Id</b></em>' reference.
@@ -305,7 +305,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_GEO__GEO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SEGMENT_GROUP_GEO__GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Group Geo</em>' class.
@@ -314,7 +314,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_GEO_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SEGMENT_GROUP_GEO_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupRoleImpl <em>Group Role</em>}' class.
@@ -333,7 +333,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_ROLE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SEGMENT_GROUP_ROLE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -342,7 +342,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_ROLE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SEGMENT_GROUP_ROLE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -351,7 +351,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_ROLE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SEGMENT_GROUP_ROLE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -360,7 +360,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_ROLE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SEGMENT_GROUP_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Segment Group Id</b></em>' reference.
@@ -369,7 +369,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_ROLE__SEGMENT_GROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SEGMENT_GROUP_ROLE__SEGMENT_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -378,7 +378,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_ROLE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SEGMENT_GROUP_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -387,7 +387,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_ROLE__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SEGMENT_GROUP_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Group Role</em>' class.
@@ -396,7 +396,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_ROLE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SEGMENT_GROUP_ROLE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.segment.impl.SegmentGroupTypeImpl <em>Group Type</em>}' class.
@@ -415,7 +415,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SEGMENT_GROUP_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -424,7 +424,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SEGMENT_GROUP_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -433,7 +433,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SEGMENT_GROUP_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -442,7 +442,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SEGMENT_GROUP_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Segment Group Type Id</b></em>' attribute.
@@ -451,7 +451,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_TYPE__SEGMENT_GROUP_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SEGMENT_GROUP_TYPE__SEGMENT_GROUP_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -460,7 +460,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SEGMENT_GROUP_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Group Type</em>' class.
@@ -469,7 +469,7 @@ public interface SegmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEGMENT_GROUP_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SEGMENT_GROUP_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 
 	/**

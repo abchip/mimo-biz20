@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.cost;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int COST_COMPONENT__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int COST_COMPONENT__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int COST_COMPONENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int COST_COMPONENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cost Component Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__COST_COMPONENT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int COST_COMPONENT__COST_COMPONENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Cost</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__COST = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int COST_COMPONENT__COST = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Cost Component Attributes</b></em>' reference list.
@@ -132,7 +132,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__COST_COMPONENT_ATTRIBUTES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int COST_COMPONENT__COST_COMPONENT_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Cost Component Calc Id</b></em>' reference.
@@ -141,7 +141,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__COST_COMPONENT_CALC_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int COST_COMPONENT__COST_COMPONENT_CALC_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Cost Component Type Id</b></em>' reference.
@@ -150,7 +150,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__COST_COMPONENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int COST_COMPONENT__COST_COMPONENT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Cost Uom Id</b></em>' reference.
@@ -159,7 +159,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__COST_UOM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int COST_COMPONENT__COST_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
@@ -168,7 +168,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__FIXED_ASSET_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int COST_COMPONENT__FIXED_ASSET_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -177,7 +177,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__FROM_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int COST_COMPONENT__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Geo Id</b></em>' reference.
@@ -186,7 +186,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__GEO_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int COST_COMPONENT__GEO_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -195,7 +195,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__PARTY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 9;
+	int COST_COMPONENT__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Product Feature Id</b></em>' reference.
@@ -204,7 +204,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__PRODUCT_FEATURE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 10;
+	int COST_COMPONENT__PRODUCT_FEATURE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -213,7 +213,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__PRODUCT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 11;
+	int COST_COMPONENT__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -222,7 +222,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__THRU_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 12;
+	int COST_COMPONENT__THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -231,7 +231,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 13;
+	int COST_COMPONENT__WORK_EFFORT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The number of structural features of the '<em>Component</em>' class.
@@ -240,7 +240,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 14;
+	int COST_COMPONENT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentAttributeImpl <em>Component Attribute</em>}' class.
@@ -259,7 +259,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int COST_COMPONENT_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -268,7 +268,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int COST_COMPONENT_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -277,7 +277,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int COST_COMPONENT_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -286,7 +286,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int COST_COMPONENT_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cost Component Id</b></em>' reference.
@@ -295,7 +295,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_ATTRIBUTE__COST_COMPONENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int COST_COMPONENT_ATTRIBUTE__COST_COMPONENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -304,7 +304,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int COST_COMPONENT_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -313,7 +313,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int COST_COMPONENT_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -322,7 +322,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int COST_COMPONENT_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Component Attribute</em>' class.
@@ -331,7 +331,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int COST_COMPONENT_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentCalcImpl <em>Component Calc</em>}' class.
@@ -350,7 +350,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_CALC__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int COST_COMPONENT_CALC__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -359,7 +359,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_CALC__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int COST_COMPONENT_CALC__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -368,7 +368,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_CALC__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int COST_COMPONENT_CALC__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -377,7 +377,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_CALC__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int COST_COMPONENT_CALC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cost Component Calc Id</b></em>' attribute.
@@ -386,7 +386,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_CALC__COST_COMPONENT_CALC_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int COST_COMPONENT_CALC__COST_COMPONENT_CALC_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Cost Custom Method Id</b></em>' reference.
@@ -395,7 +395,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_CALC__COST_CUSTOM_METHOD_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int COST_COMPONENT_CALC__COST_CUSTOM_METHOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Cost Gl Account Type Id</b></em>' reference.
@@ -404,7 +404,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_CALC__COST_GL_ACCOUNT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int COST_COMPONENT_CALC__COST_GL_ACCOUNT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
@@ -413,7 +413,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_CALC__CURRENCY_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int COST_COMPONENT_CALC__CURRENCY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -422,7 +422,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_CALC__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int COST_COMPONENT_CALC__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Fixed Cost</b></em>' attribute.
@@ -431,7 +431,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_CALC__FIXED_COST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int COST_COMPONENT_CALC__FIXED_COST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Offsetting Gl Account Type Id</b></em>' reference.
@@ -440,7 +440,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_CALC__OFFSETTING_GL_ACCOUNT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int COST_COMPONENT_CALC__OFFSETTING_GL_ACCOUNT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Per Milli Second</b></em>' attribute.
@@ -449,7 +449,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_CALC__PER_MILLI_SECOND = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int COST_COMPONENT_CALC__PER_MILLI_SECOND = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Variable Cost</b></em>' attribute.
@@ -458,7 +458,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_CALC__VARIABLE_COST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int COST_COMPONENT_CALC__VARIABLE_COST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The number of structural features of the '<em>Component Calc</em>' class.
@@ -467,7 +467,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_CALC_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int COST_COMPONENT_CALC_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeImpl <em>Component Type</em>}' class.
@@ -486,7 +486,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int COST_COMPONENT_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -495,7 +495,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int COST_COMPONENT_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -504,7 +504,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int COST_COMPONENT_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -513,7 +513,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int COST_COMPONENT_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -522,7 +522,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int COST_COMPONENT_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cost Component Type Id</b></em>' attribute.
@@ -531,7 +531,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE__COST_COMPONENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int COST_COMPONENT_TYPE__COST_COMPONENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Cost Component Type Attrs</b></em>' reference list.
@@ -540,7 +540,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE__COST_COMPONENT_TYPE_ATTRS = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int COST_COMPONENT_TYPE__COST_COMPONENT_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -549,7 +549,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int COST_COMPONENT_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -558,7 +558,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int COST_COMPONENT_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -567,7 +567,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int COST_COMPONENT_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Component Type</em>' class.
@@ -576,7 +576,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 5;
+	int COST_COMPONENT_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.cost.impl.CostComponentTypeAttrImpl <em>Component Type Attr</em>}' class.
@@ -595,7 +595,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE_ATTR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int COST_COMPONENT_TYPE_ATTR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -604,7 +604,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE_ATTR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int COST_COMPONENT_TYPE_ATTR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -613,7 +613,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE_ATTR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int COST_COMPONENT_TYPE_ATTR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -622,7 +622,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE_ATTR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int COST_COMPONENT_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cost Component Type Id</b></em>' reference.
@@ -631,7 +631,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE_ATTR__COST_COMPONENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int COST_COMPONENT_TYPE_ATTR__COST_COMPONENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -640,7 +640,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE_ATTR__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int COST_COMPONENT_TYPE_ATTR__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -649,7 +649,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE_ATTR__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int COST_COMPONENT_TYPE_ATTR__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Component Type Attr</em>' class.
@@ -658,7 +658,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COST_COMPONENT_TYPE_ATTR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int COST_COMPONENT_TYPE_ATTR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.cost.impl.ProductCostComponentCalcImpl <em>Product Cost Component Calc</em>}' class.
@@ -677,7 +677,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_COST_COMPONENT_CALC__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_COST_COMPONENT_CALC__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -686,7 +686,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_COST_COMPONENT_CALC__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_COST_COMPONENT_CALC__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -695,7 +695,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_COST_COMPONENT_CALC__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_COST_COMPONENT_CALC__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -704,7 +704,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_COST_COMPONENT_CALC__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_COST_COMPONENT_CALC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -713,7 +713,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_COST_COMPONENT_CALC__PRODUCT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_COST_COMPONENT_CALC__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Cost Component Type Id</b></em>' reference.
@@ -722,7 +722,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -731,7 +731,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_COST_COMPONENT_CALC__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_COST_COMPONENT_CALC__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Cost Component Calc Id</b></em>' reference.
@@ -740,7 +740,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_CALC_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PRODUCT_COST_COMPONENT_CALC__COST_COMPONENT_CALC_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -749,7 +749,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_COST_COMPONENT_CALC__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PRODUCT_COST_COMPONENT_CALC__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -758,7 +758,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_COST_COMPONENT_CALC__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PRODUCT_COST_COMPONENT_CALC__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Product Cost Component Calc</em>' class.
@@ -767,7 +767,7 @@ public interface CostPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_COST_COMPONENT_CALC_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PRODUCT_COST_COMPONENT_CALC_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 
 	/**

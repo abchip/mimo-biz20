@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.webapp.website;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.content.content.Content;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.model.content.content.Content;
  * @model
  * @generated
  */
-public interface WebPage extends BizEntity {
+public interface WebPage extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Web Page Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

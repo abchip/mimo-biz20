@@ -1892,7 +1892,7 @@ public class OpportunityPackageImpl extends EPackageImpl implements OpportunityP
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		LoginPackage theLoginPackage = (LoginPackage)EPackage.Registry.INSTANCE.getEPackage(LoginPackage.eNS_URI);
 		UomPackage theUomPackage = (UomPackage)EPackage.Registry.INSTANCE.getEPackage(UomPackage.eNS_URI);
 		PeriodPackage thePeriodPackage = (PeriodPackage)EPackage.Registry.INSTANCE.getEPackage(PeriodPackage.eNS_URI);
@@ -1909,17 +1909,28 @@ public class OpportunityPackageImpl extends EPackageImpl implements OpportunityP
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		salesForecastEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		salesForecastDetailEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		salesForecastHistoryEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		salesOpportunityEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		salesOpportunityCompetitorEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		salesOpportunityHistoryEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		salesOpportunityQuoteEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		salesOpportunityRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		salesOpportunityStageEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		salesOpportunityTrckCodeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		salesOpportunityWorkEffortEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		salesForecastEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		salesForecastEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		salesForecastDetailEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		salesForecastDetailEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		salesForecastHistoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		salesForecastHistoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		salesOpportunityEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		salesOpportunityEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		salesOpportunityCompetitorEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		salesOpportunityCompetitorEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		salesOpportunityHistoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		salesOpportunityHistoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		salesOpportunityQuoteEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		salesOpportunityQuoteEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		salesOpportunityRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		salesOpportunityRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		salesOpportunityStageEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		salesOpportunityStageEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		salesOpportunityTrckCodeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		salesOpportunityTrckCodeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		salesOpportunityWorkEffortEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		salesOpportunityWorkEffortEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(salesForecastEClass, SalesForecast.class, "SalesForecast", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

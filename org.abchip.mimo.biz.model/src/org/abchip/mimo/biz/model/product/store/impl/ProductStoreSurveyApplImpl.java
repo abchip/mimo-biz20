@@ -8,8 +8,6 @@
 package org.abchip.mimo.biz.model.product.store.impl;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.content.survey.Survey;
 import org.abchip.mimo.biz.model.content.survey.SurveyApplType;
 import org.abchip.mimo.biz.model.product.category.ProductCategory;
@@ -17,6 +15,9 @@ import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
 import org.abchip.mimo.biz.model.product.store.ProductStoreSurveyAppl;
 import org.abchip.mimo.biz.model.product.store.StorePackage;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityPackage;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -27,6 +28,10 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getCreatedStamp <em>Created Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getProductStoreSurveyId <em>Product Store Survey Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getFromDate <em>From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreSurveyApplImpl#getGroupName <em>Group Name</em>}</li>
@@ -43,7 +48,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ProductStoreSurveyApplImpl extends BizEntityImpl implements ProductStoreSurveyAppl {
+public class ProductStoreSurveyApplImpl extends EntityIdentifiableImpl implements ProductStoreSurveyAppl {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -62,6 +67,96 @@ public class ProductStoreSurveyApplImpl extends BizEntityImpl implements Product
 	@Override
 	protected EClass eStaticClass() {
 		return StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return 0;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedStamp(Date newCreatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, newCreatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedTxStamp(Date newCreatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, newCreatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedStamp(Date newLastUpdatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, newLastUpdatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
 	}
 
 	/**
@@ -242,6 +337,44 @@ public class ProductStoreSurveyApplImpl extends BizEntityImpl implements Product
 	@Override
 	public void setThruDate(Date newThruDate) {
 		eSet(StorePackage.Literals.PRODUCT_STORE_SURVEY_APPL__THRU_DATE, newThruDate);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (derivedFeatureID) {
+				case StorePackage.PRODUCT_STORE_SURVEY_APPL__CREATED_STAMP: return EntityPackage.ENTITY_INFO__CREATED_STAMP;
+				case StorePackage.PRODUCT_STORE_SURVEY_APPL__CREATED_TX_STAMP: return EntityPackage.ENTITY_INFO__CREATED_TX_STAMP;
+				case StorePackage.PRODUCT_STORE_SURVEY_APPL__LAST_UPDATED_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP;
+				case StorePackage.PRODUCT_STORE_SURVEY_APPL__LAST_UPDATED_TX_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (baseFeatureID) {
+				case EntityPackage.ENTITY_INFO__CREATED_STAMP: return StorePackage.PRODUCT_STORE_SURVEY_APPL__CREATED_STAMP;
+				case EntityPackage.ENTITY_INFO__CREATED_TX_STAMP: return StorePackage.PRODUCT_STORE_SURVEY_APPL__CREATED_TX_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP: return StorePackage.PRODUCT_STORE_SURVEY_APPL__LAST_UPDATED_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP: return StorePackage.PRODUCT_STORE_SURVEY_APPL__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
 	/**

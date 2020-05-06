@@ -10,10 +10,11 @@ package org.abchip.mimo.biz.model.accounting.ledger;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +38,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * @model annotation="mimo-ent-frame help='Running tally of a product\'s average cost in a particular company and facility' title='Running tally of average cost'"
  * @generated
  */
-public interface ProductAverageCost extends BizEntityTyped<ProductAverageCostType> {
+public interface ProductAverageCost extends EntityTyped<ProductAverageCostType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Average Cost</b></em>' attribute.
 	 * <!-- begin-user-doc -->

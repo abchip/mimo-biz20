@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.accounting.budget;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int BUDGET__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int BUDGET__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int BUDGET__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int BUDGET__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Budget Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET__BUDGET_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int BUDGET__BUDGET_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Budget Attributes</b></em>' reference list.
@@ -123,7 +123,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET__BUDGET_ATTRIBUTES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int BUDGET__BUDGET_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Budget Items</b></em>' reference list.
@@ -132,7 +132,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET__BUDGET_ITEMS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int BUDGET__BUDGET_ITEMS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Budget Revisions</b></em>' reference list.
@@ -141,7 +141,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET__BUDGET_REVISIONS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int BUDGET__BUDGET_REVISIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Budget Statuss</b></em>' reference list.
@@ -150,7 +150,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET__BUDGET_STATUSS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int BUDGET__BUDGET_STATUSS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Budget Type Id</b></em>' reference.
@@ -159,7 +159,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET__BUDGET_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int BUDGET__BUDGET_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -168,7 +168,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET__COMMENTS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int BUDGET__COMMENTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Custom Time Period Id</b></em>' reference.
@@ -177,7 +177,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET__CUSTOM_TIME_PERIOD_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int BUDGET__CUSTOM_TIME_PERIOD_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Budget</em>' class.
@@ -186,7 +186,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int BUDGET_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetAttributeImpl <em>Attribute</em>}' class.
@@ -205,7 +205,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int BUDGET_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -214,7 +214,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int BUDGET_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -223,7 +223,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int BUDGET_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -232,7 +232,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int BUDGET_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Budget Id</b></em>' reference.
@@ -241,7 +241,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ATTRIBUTE__BUDGET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int BUDGET_ATTRIBUTE__BUDGET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -250,7 +250,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int BUDGET_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -259,7 +259,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int BUDGET_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -268,7 +268,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int BUDGET_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Attribute</em>' class.
@@ -277,7 +277,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int BUDGET_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemImpl <em>Item</em>}' class.
@@ -296,7 +296,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int BUDGET_ITEM__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -305,7 +305,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int BUDGET_ITEM__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -314,7 +314,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int BUDGET_ITEM__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -323,7 +323,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int BUDGET_ITEM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Budget Id</b></em>' reference.
@@ -332,7 +332,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM__BUDGET_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int BUDGET_ITEM__BUDGET_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Budget Item Seq Id</b></em>' attribute.
@@ -341,7 +341,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM__BUDGET_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int BUDGET_ITEM__BUDGET_ITEM_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Amount</b></em>' attribute.
@@ -350,7 +350,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM__AMOUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int BUDGET_ITEM__AMOUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Budget Item Type Id</b></em>' reference.
@@ -359,7 +359,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM__BUDGET_ITEM_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int BUDGET_ITEM__BUDGET_ITEM_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Justification</b></em>' attribute.
@@ -368,7 +368,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM__JUSTIFICATION = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int BUDGET_ITEM__JUSTIFICATION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Purpose</b></em>' attribute.
@@ -377,7 +377,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM__PURPOSE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int BUDGET_ITEM__PURPOSE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Item</em>' class.
@@ -386,7 +386,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int BUDGET_ITEM_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemAttributeImpl <em>Item Attribute</em>}' class.
@@ -405,7 +405,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int BUDGET_ITEM_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -414,7 +414,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int BUDGET_ITEM_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -423,7 +423,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int BUDGET_ITEM_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -432,7 +432,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int BUDGET_ITEM_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -441,7 +441,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int BUDGET_ITEM_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Budget Id</b></em>' attribute.
@@ -450,7 +450,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_ATTRIBUTE__BUDGET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int BUDGET_ITEM_ATTRIBUTE__BUDGET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Budget Item Seq Id</b></em>' attribute.
@@ -459,7 +459,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_ATTRIBUTE__BUDGET_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int BUDGET_ITEM_ATTRIBUTE__BUDGET_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -468,7 +468,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int BUDGET_ITEM_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -477,7 +477,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int BUDGET_ITEM_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Item Attribute</em>' class.
@@ -486,7 +486,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int BUDGET_ITEM_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemTypeImpl <em>Item Type</em>}' class.
@@ -505,7 +505,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int BUDGET_ITEM_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -514,7 +514,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int BUDGET_ITEM_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -523,7 +523,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int BUDGET_ITEM_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -532,7 +532,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int BUDGET_ITEM_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -541,7 +541,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int BUDGET_ITEM_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Budget Item Type Id</b></em>' attribute.
@@ -550,7 +550,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_TYPE__BUDGET_ITEM_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int BUDGET_ITEM_TYPE__BUDGET_ITEM_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Budget Item Type Attrs</b></em>' reference list.
@@ -559,7 +559,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_TYPE__BUDGET_ITEM_TYPE_ATTRS = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int BUDGET_ITEM_TYPE__BUDGET_ITEM_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -568,7 +568,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int BUDGET_ITEM_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -577,7 +577,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int BUDGET_ITEM_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -586,7 +586,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int BUDGET_ITEM_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Item Type</em>' class.
@@ -595,7 +595,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 5;
+	int BUDGET_ITEM_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetItemTypeAttrImpl <em>Item Type Attr</em>}' class.
@@ -614,7 +614,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_TYPE_ATTR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int BUDGET_ITEM_TYPE_ATTR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -623,7 +623,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_TYPE_ATTR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int BUDGET_ITEM_TYPE_ATTR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -632,7 +632,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_TYPE_ATTR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int BUDGET_ITEM_TYPE_ATTR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -641,7 +641,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_TYPE_ATTR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int BUDGET_ITEM_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Budget Item Type Id</b></em>' reference.
@@ -650,7 +650,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_TYPE_ATTR__BUDGET_ITEM_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int BUDGET_ITEM_TYPE_ATTR__BUDGET_ITEM_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -659,7 +659,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_TYPE_ATTR__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int BUDGET_ITEM_TYPE_ATTR__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -668,7 +668,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_TYPE_ATTR__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int BUDGET_ITEM_TYPE_ATTR__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Item Type Attr</em>' class.
@@ -677,7 +677,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ITEM_TYPE_ATTR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int BUDGET_ITEM_TYPE_ATTR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetReviewImpl <em>Review</em>}' class.
@@ -696,7 +696,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVIEW__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int BUDGET_REVIEW__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -705,7 +705,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVIEW__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int BUDGET_REVIEW__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -714,7 +714,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVIEW__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int BUDGET_REVIEW__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -723,7 +723,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVIEW__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int BUDGET_REVIEW__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Budget Id</b></em>' reference.
@@ -732,7 +732,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVIEW__BUDGET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int BUDGET_REVIEW__BUDGET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -741,7 +741,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVIEW__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int BUDGET_REVIEW__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Budget Review Result Type Id</b></em>' reference.
@@ -750,7 +750,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVIEW__BUDGET_REVIEW_RESULT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int BUDGET_REVIEW__BUDGET_REVIEW_RESULT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Budget Review Id</b></em>' attribute.
@@ -759,7 +759,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVIEW__BUDGET_REVIEW_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int BUDGET_REVIEW__BUDGET_REVIEW_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Review Date</b></em>' attribute.
@@ -768,7 +768,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVIEW__REVIEW_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int BUDGET_REVIEW__REVIEW_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Review</em>' class.
@@ -777,7 +777,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVIEW_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int BUDGET_REVIEW_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetReviewResultTypeImpl <em>Review Result Type</em>}' class.
@@ -796,7 +796,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVIEW_RESULT_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int BUDGET_REVIEW_RESULT_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -805,7 +805,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVIEW_RESULT_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int BUDGET_REVIEW_RESULT_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -814,7 +814,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVIEW_RESULT_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int BUDGET_REVIEW_RESULT_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -823,7 +823,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVIEW_RESULT_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int BUDGET_REVIEW_RESULT_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Budget Review Result Type Id</b></em>' attribute.
@@ -832,7 +832,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVIEW_RESULT_TYPE__BUDGET_REVIEW_RESULT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int BUDGET_REVIEW_RESULT_TYPE__BUDGET_REVIEW_RESULT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -841,7 +841,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVIEW_RESULT_TYPE__COMMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int BUDGET_REVIEW_RESULT_TYPE__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -850,7 +850,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVIEW_RESULT_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int BUDGET_REVIEW_RESULT_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Review Result Type</em>' class.
@@ -859,7 +859,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVIEW_RESULT_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int BUDGET_REVIEW_RESULT_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpl <em>Revision</em>}' class.
@@ -878,7 +878,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVISION__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int BUDGET_REVISION__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -887,7 +887,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVISION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int BUDGET_REVISION__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -896,7 +896,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVISION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int BUDGET_REVISION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -905,7 +905,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVISION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int BUDGET_REVISION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Budget Id</b></em>' reference.
@@ -914,7 +914,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVISION__BUDGET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int BUDGET_REVISION__BUDGET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Revision Seq Id</b></em>' attribute.
@@ -923,7 +923,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVISION__REVISION_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int BUDGET_REVISION__REVISION_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Date Revised</b></em>' attribute.
@@ -932,7 +932,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVISION__DATE_REVISED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int BUDGET_REVISION__DATE_REVISED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Revision</em>' class.
@@ -941,7 +941,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVISION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int BUDGET_REVISION_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRevisionImpactImpl <em>Revision Impact</em>}' class.
@@ -960,7 +960,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVISION_IMPACT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int BUDGET_REVISION_IMPACT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -969,7 +969,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVISION_IMPACT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int BUDGET_REVISION_IMPACT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -978,7 +978,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVISION_IMPACT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int BUDGET_REVISION_IMPACT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -987,7 +987,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVISION_IMPACT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int BUDGET_REVISION_IMPACT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Budget Id</b></em>' reference.
@@ -996,7 +996,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVISION_IMPACT__BUDGET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int BUDGET_REVISION_IMPACT__BUDGET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Budget Item Seq Id</b></em>' attribute.
@@ -1005,7 +1005,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVISION_IMPACT__BUDGET_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int BUDGET_REVISION_IMPACT__BUDGET_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Revision Seq Id</b></em>' attribute.
@@ -1014,7 +1014,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVISION_IMPACT__REVISION_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int BUDGET_REVISION_IMPACT__REVISION_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Add Delete Flag</b></em>' attribute.
@@ -1023,7 +1023,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVISION_IMPACT__ADD_DELETE_FLAG = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int BUDGET_REVISION_IMPACT__ADD_DELETE_FLAG = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Revised Amount</b></em>' attribute.
@@ -1032,7 +1032,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVISION_IMPACT__REVISED_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int BUDGET_REVISION_IMPACT__REVISED_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Revision Reason</b></em>' attribute.
@@ -1041,7 +1041,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVISION_IMPACT__REVISION_REASON = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int BUDGET_REVISION_IMPACT__REVISION_REASON = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Revision Impact</em>' class.
@@ -1050,7 +1050,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_REVISION_IMPACT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int BUDGET_REVISION_IMPACT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetRoleImpl <em>Role</em>}' class.
@@ -1069,7 +1069,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ROLE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int BUDGET_ROLE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1078,7 +1078,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ROLE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int BUDGET_ROLE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1087,7 +1087,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ROLE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int BUDGET_ROLE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1096,7 +1096,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ROLE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int BUDGET_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Budget Id</b></em>' reference.
@@ -1105,7 +1105,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ROLE__BUDGET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int BUDGET_ROLE__BUDGET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -1114,7 +1114,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ROLE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int BUDGET_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' attribute.
@@ -1123,7 +1123,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ROLE__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int BUDGET_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Role</em>' class.
@@ -1132,7 +1132,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_ROLE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int BUDGET_ROLE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioImpl <em>Scenario</em>}' class.
@@ -1151,7 +1151,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int BUDGET_SCENARIO__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1160,7 +1160,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int BUDGET_SCENARIO__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1169,7 +1169,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int BUDGET_SCENARIO__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1178,7 +1178,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int BUDGET_SCENARIO__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Budget Scenario Id</b></em>' attribute.
@@ -1187,7 +1187,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO__BUDGET_SCENARIO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int BUDGET_SCENARIO__BUDGET_SCENARIO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Budget Scenario Rules</b></em>' reference list.
@@ -1196,7 +1196,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO__BUDGET_SCENARIO_RULES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int BUDGET_SCENARIO__BUDGET_SCENARIO_RULES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1205,7 +1205,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int BUDGET_SCENARIO__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Scenario</em>' class.
@@ -1214,7 +1214,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int BUDGET_SCENARIO_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioApplicationImpl <em>Scenario Application</em>}' class.
@@ -1233,7 +1233,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_APPLICATION__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int BUDGET_SCENARIO_APPLICATION__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1242,7 +1242,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_APPLICATION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int BUDGET_SCENARIO_APPLICATION__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1251,7 +1251,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_APPLICATION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int BUDGET_SCENARIO_APPLICATION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1260,7 +1260,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_APPLICATION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int BUDGET_SCENARIO_APPLICATION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Budget Scenario Id</b></em>' reference.
@@ -1269,7 +1269,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_APPLICATION__BUDGET_SCENARIO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int BUDGET_SCENARIO_APPLICATION__BUDGET_SCENARIO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Budget Scenario Applic Id</b></em>' attribute.
@@ -1278,7 +1278,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_APPLICATION__BUDGET_SCENARIO_APPLIC_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int BUDGET_SCENARIO_APPLICATION__BUDGET_SCENARIO_APPLIC_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Amount Change</b></em>' attribute.
@@ -1287,7 +1287,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_APPLICATION__AMOUNT_CHANGE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int BUDGET_SCENARIO_APPLICATION__AMOUNT_CHANGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Budget Id</b></em>' reference.
@@ -1296,7 +1296,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_APPLICATION__BUDGET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int BUDGET_SCENARIO_APPLICATION__BUDGET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Budget Item Seq Id</b></em>' attribute.
@@ -1305,7 +1305,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_APPLICATION__BUDGET_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int BUDGET_SCENARIO_APPLICATION__BUDGET_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Percentage Change</b></em>' attribute.
@@ -1314,7 +1314,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_APPLICATION__PERCENTAGE_CHANGE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int BUDGET_SCENARIO_APPLICATION__PERCENTAGE_CHANGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Scenario Application</em>' class.
@@ -1323,7 +1323,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_APPLICATION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int BUDGET_SCENARIO_APPLICATION_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetScenarioRuleImpl <em>Scenario Rule</em>}' class.
@@ -1342,7 +1342,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_RULE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int BUDGET_SCENARIO_RULE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1351,7 +1351,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_RULE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int BUDGET_SCENARIO_RULE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1360,7 +1360,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_RULE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int BUDGET_SCENARIO_RULE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1369,7 +1369,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_RULE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int BUDGET_SCENARIO_RULE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Budget Scenario Id</b></em>' reference.
@@ -1378,7 +1378,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_RULE__BUDGET_SCENARIO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int BUDGET_SCENARIO_RULE__BUDGET_SCENARIO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Budget Item Type Id</b></em>' reference.
@@ -1387,7 +1387,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_RULE__BUDGET_ITEM_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int BUDGET_SCENARIO_RULE__BUDGET_ITEM_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Amount Change</b></em>' attribute.
@@ -1396,7 +1396,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_RULE__AMOUNT_CHANGE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int BUDGET_SCENARIO_RULE__AMOUNT_CHANGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Percentage Change</b></em>' attribute.
@@ -1405,7 +1405,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_RULE__PERCENTAGE_CHANGE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int BUDGET_SCENARIO_RULE__PERCENTAGE_CHANGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Scenario Rule</em>' class.
@@ -1414,7 +1414,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_SCENARIO_RULE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int BUDGET_SCENARIO_RULE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetStatusImpl <em>Status</em>}' class.
@@ -1433,7 +1433,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_STATUS__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int BUDGET_STATUS__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1442,7 +1442,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_STATUS__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int BUDGET_STATUS__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1451,7 +1451,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_STATUS__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int BUDGET_STATUS__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1460,7 +1460,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_STATUS__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int BUDGET_STATUS__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Budget Id</b></em>' reference.
@@ -1469,7 +1469,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_STATUS__BUDGET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int BUDGET_STATUS__BUDGET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -1478,7 +1478,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_STATUS__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int BUDGET_STATUS__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Change By User Login Id</b></em>' reference.
@@ -1487,7 +1487,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_STATUS__CHANGE_BY_USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int BUDGET_STATUS__CHANGE_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -1496,7 +1496,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_STATUS__COMMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int BUDGET_STATUS__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Status Date</b></em>' attribute.
@@ -1505,7 +1505,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_STATUS__STATUS_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int BUDGET_STATUS__STATUS_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Status</em>' class.
@@ -1514,7 +1514,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_STATUS_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int BUDGET_STATUS_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetTypeImpl <em>Type</em>}' class.
@@ -1533,7 +1533,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int BUDGET_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1542,7 +1542,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int BUDGET_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1551,7 +1551,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int BUDGET_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1560,7 +1560,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int BUDGET_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1569,7 +1569,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int BUDGET_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Budget Type Id</b></em>' attribute.
@@ -1578,7 +1578,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_TYPE__BUDGET_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int BUDGET_TYPE__BUDGET_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Budget Type Attrs</b></em>' reference list.
@@ -1587,7 +1587,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_TYPE__BUDGET_TYPE_ATTRS = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int BUDGET_TYPE__BUDGET_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1596,7 +1596,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int BUDGET_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -1605,7 +1605,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int BUDGET_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -1614,7 +1614,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int BUDGET_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -1623,7 +1623,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 5;
+	int BUDGET_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.budget.impl.BudgetTypeAttrImpl <em>Type Attr</em>}' class.
@@ -1642,7 +1642,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_TYPE_ATTR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int BUDGET_TYPE_ATTR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1651,7 +1651,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_TYPE_ATTR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int BUDGET_TYPE_ATTR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1660,7 +1660,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_TYPE_ATTR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int BUDGET_TYPE_ATTR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1669,7 +1669,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_TYPE_ATTR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int BUDGET_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Budget Type Id</b></em>' reference.
@@ -1678,7 +1678,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_TYPE_ATTR__BUDGET_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int BUDGET_TYPE_ATTR__BUDGET_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1687,7 +1687,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_TYPE_ATTR__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int BUDGET_TYPE_ATTR__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1696,7 +1696,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_TYPE_ATTR__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int BUDGET_TYPE_ATTR__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Type Attr</em>' class.
@@ -1705,7 +1705,7 @@ public interface BudgetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUDGET_TYPE_ATTR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int BUDGET_TYPE_ATTR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 
 	/**

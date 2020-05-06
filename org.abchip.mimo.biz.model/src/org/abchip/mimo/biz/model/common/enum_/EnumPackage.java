@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.common.enum_;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int ENUMERATION__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int ENUMERATION__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int ENUMERATION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int ENUMERATION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Enum Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION__ENUM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int ENUMERATION__ENUM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int ENUMERATION__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Enum Code</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION__ENUM_CODE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int ENUMERATION__ENUM_CODE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Enum Type Id</b></em>' reference.
@@ -141,7 +141,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION__ENUM_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int ENUMERATION__ENUM_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Id</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION__SEQUENCE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int ENUMERATION__SEQUENCE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>User Login Security Questions</b></em>' reference list.
@@ -159,7 +159,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION__USER_LOGIN_SECURITY_QUESTIONS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int ENUMERATION__USER_LOGIN_SECURITY_QUESTIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Enumeration</em>' class.
@@ -168,7 +168,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int ENUMERATION_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.enum_.impl.EnumerationTypeImpl <em>Enumeration Type</em>}' class.
@@ -187,7 +187,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int ENUMERATION_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -196,7 +196,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int ENUMERATION_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -205,7 +205,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int ENUMERATION_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -214,7 +214,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int ENUMERATION_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -223,7 +223,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int ENUMERATION_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Enum Type Id</b></em>' attribute.
@@ -232,7 +232,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION_TYPE__ENUM_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int ENUMERATION_TYPE__ENUM_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -241,7 +241,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int ENUMERATION_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -250,7 +250,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int ENUMERATION_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -259,7 +259,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int ENUMERATION_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Enumeration Type</em>' class.
@@ -268,7 +268,7 @@ public interface EnumPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENUMERATION_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int ENUMERATION_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 
 	/**

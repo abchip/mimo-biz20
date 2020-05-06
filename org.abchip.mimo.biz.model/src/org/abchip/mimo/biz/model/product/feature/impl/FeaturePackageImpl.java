@@ -1625,7 +1625,7 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		UomPackage theUomPackage = (UomPackage)EPackage.Registry.INSTANCE.getEPackage(UomPackage.eNS_URI);
 		ProductPackage theProductPackage = (ProductPackage)EPackage.Registry.INSTANCE.getEPackage(ProductPackage.eNS_URI);
 		CategoryPackage theCategoryPackage = (CategoryPackage)EPackage.Registry.INSTANCE.getEPackage(CategoryPackage.eNS_URI);
@@ -1636,36 +1636,55 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getProductFeatureType());
 		g1.getETypeArguments().add(g2);
 		productFeatureEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		productFeatureEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		g2 = createEGenericType(this.getProductFeatureApplType());
 		g1.getETypeArguments().add(g2);
 		productFeatureApplEClass.getEGenericSuperTypes().add(g1);
-		productFeatureApplAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		productFeatureApplEClass.getEGenericSuperTypes().add(g1);
+		productFeatureApplAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productFeatureApplAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getProductFeatureAppl());
 		g1.getETypeArguments().add(g2);
 		productFeatureApplTypeEClass.getEGenericSuperTypes().add(g1);
-		productFeatureCatGrpApplEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productFeatureCategoryEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productFeatureCategoryApplEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productFeatureDataResourceEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productFeatureGroupEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productFeatureGroupApplEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		productFeatureApplTypeEClass.getEGenericSuperTypes().add(g1);
+		productFeatureCatGrpApplEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productFeatureCatGrpApplEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productFeatureCategoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productFeatureCategoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productFeatureCategoryApplEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productFeatureCategoryApplEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productFeatureDataResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productFeatureDataResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productFeatureGroupEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productFeatureGroupEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productFeatureGroupApplEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productFeatureGroupApplEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		g2 = createEGenericType(this.getProductFeatureIactnType());
 		g1.getETypeArguments().add(g2);
 		productFeatureIactnEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		productFeatureIactnEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getProductFeatureIactn());
 		g1.getETypeArguments().add(g2);
 		productFeatureIactnTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		productFeatureIactnTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getProductFeature());
 		g1.getETypeArguments().add(g2);
+		productFeatureTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
 		productFeatureTypeEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters

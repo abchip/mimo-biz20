@@ -7,9 +7,10 @@
  */
 package org.abchip.mimo.biz.model.accounting.ledger;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.inventory.VarianceReason;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.model.product.inventory.VarianceReason;
  * @model annotation="mimo-ent-frame title='Defines GL Accounts for Inventory Variance Reasons'"
  * @generated
  */
-public interface VarianceReasonGlAccount extends BizEntity {
+public interface VarianceReasonGlAccount extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Organization Party Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

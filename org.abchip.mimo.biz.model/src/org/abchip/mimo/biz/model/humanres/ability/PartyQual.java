@@ -8,9 +8,10 @@
 package org.abchip.mimo.biz.model.humanres.ability;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,7 +36,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model annotation="mimo-ent-frame title='Party Qualification'"
  * @generated
  */
-public interface PartyQual extends BizEntityTyped<PartyQualType> {
+public interface PartyQual extends EntityTyped<PartyQualType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

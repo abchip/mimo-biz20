@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.marketing.opportunity;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.order.quote.Quote;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.model.order.quote.Quote;
  * @model annotation="mimo-ent-frame title='Relates sales opportunities to their quotes.'"
  * @generated
  */
-public interface SalesOpportunityQuote extends BizEntity {
+public interface SalesOpportunityQuote extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Quote Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

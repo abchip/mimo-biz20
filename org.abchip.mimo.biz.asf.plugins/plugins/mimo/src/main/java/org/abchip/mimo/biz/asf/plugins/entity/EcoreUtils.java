@@ -15,6 +15,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
 import org.abchip.mimo.util.Logs;
@@ -109,8 +110,10 @@ public class EcoreUtils {
 		setEntityCommon(delegator, modelEntity, eClass);
 
 		EGenericType eGenericType = ecoreFactory.createEGenericType();
-		eGenericType.setEClassifier(BizPackage.eINSTANCE.getBizEntityType());
+		eGenericType.setEClassifier(EntityPackage.eINSTANCE.getEntityType());
 		eClass.getEGenericSuperTypes().add(eGenericType);
+		
+		eClass.getESuperTypes().add(EntityPackage.eINSTANCE.getEntityInfo());
 
 		for (String fieldName : getOwnedAttributeNames(modelEntity)) {
 			ModelField modelField = modelEntity.getField(fieldName);
@@ -130,12 +133,14 @@ public class EcoreUtils {
 		setEntityCommon(delegator, modelEntity, eClass);
 
 		EGenericType eGenericType = ecoreFactory.createEGenericType();
-		eGenericType.setEClassifier(BizPackage.eINSTANCE.getBizEntityTyped());
+		eGenericType.setEClassifier(EntityPackage.eINSTANCE.getEntityTyped());
 		EGenericType eGenericType2 = ecoreFactory.createEGenericType();
 		eGenericType2.setEClassifier(entityType);
 		eGenericType.getETypeArguments().add(eGenericType2);
 		eClass.getEGenericSuperTypes().add(eGenericType);
 
+		eClass.getESuperTypes().add(EntityPackage.eINSTANCE.getEntityInfo());
+		
 		for (String fieldName : getOwnedAttributeNames(modelEntity)) {
 			ModelField modelField = modelEntity.getField(fieldName);
 
@@ -153,7 +158,8 @@ public class EcoreUtils {
 		EClass eClass = ecoreFactory.createEClass();
 		setEntityCommon(delegator, modelEntity, eClass);
 
-		eClass.getESuperTypes().add(BizPackage.eINSTANCE.getBizEntity());
+		eClass.getESuperTypes().add(EntityPackage.eINSTANCE.getEntityIdentifiable());
+		eClass.getESuperTypes().add(EntityPackage.eINSTANCE.getEntityInfo());
 
 		for (String fieldName : getOwnedAttributeNames(modelEntity)) {
 			ModelField modelField = modelEntity.getField(fieldName);
@@ -273,12 +279,14 @@ public class EcoreUtils {
 		Set<String> atts = new TreeSet<String>();
 
 		for (String attName : modelEntity.getPkFieldNames()) {
-			if (BizPackage.eINSTANCE.getBizEntity().getEStructuralFeature(attName) != null)
+			if (EntityPackage.eINSTANCE.getEntityIdentifiable().getEStructuralFeature(attName) != null)
 				continue;
 			atts.add(attName);
 		}
 		for (String attName : modelEntity.getNoPkFieldNames()) {
-			if (BizPackage.eINSTANCE.getBizEntity().getEStructuralFeature(attName) != null)
+			if (EntityPackage.eINSTANCE.getEntityIdentifiable().getEStructuralFeature(attName) != null)
+				continue;
+			if (EntityPackage.eINSTANCE.getEntityInfo().getEStructuralFeature(attName) != null)
 				continue;
 			atts.add(attName);
 		}

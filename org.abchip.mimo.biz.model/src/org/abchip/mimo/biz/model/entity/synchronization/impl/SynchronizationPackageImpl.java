@@ -1354,7 +1354,7 @@ public class SynchronizationPackageImpl extends EPackageImpl implements Synchron
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		GroupPackage theGroupPackage = (GroupPackage)EPackage.Registry.INSTANCE.getEPackage(GroupPackage.eNS_URI);
 
 		// Create type parameters
@@ -1362,11 +1362,16 @@ public class SynchronizationPackageImpl extends EPackageImpl implements Synchron
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		entitySyncEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		entitySyncHistoryEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		entitySyncIncludeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		entitySyncIncludeGroupEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		entitySyncRemoveEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		entitySyncEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		entitySyncEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		entitySyncHistoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		entitySyncHistoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		entitySyncIncludeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		entitySyncIncludeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		entitySyncIncludeGroupEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		entitySyncIncludeGroupEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		entitySyncRemoveEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		entitySyncRemoveEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(entitySyncEClass, EntitySync.class, "EntitySync", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

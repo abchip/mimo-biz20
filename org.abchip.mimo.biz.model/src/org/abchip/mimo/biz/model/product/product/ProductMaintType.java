@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.product.product;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame help='This is for both scheduled and unscheduled maintenance; use ProductMaint to track details for scheduled maintenance' title='Product Maintenance Type' dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface ProductMaintType extends BizEntity {
+public interface ProductMaintType extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

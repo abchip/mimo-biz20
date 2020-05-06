@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.passport;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.model.product.store.ProductStore;
  * @model annotation="mimo-ent-frame help='Data Model Enhancements For Passport' title='Third party logins for a specific product store'"
  * @generated
  */
-public interface ThirdPartyLogin extends BizEntity {
+public interface ThirdPartyLogin extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Product Store Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.order.return_;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.shipment.shipment.Shipment;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +32,7 @@ import org.abchip.mimo.biz.model.shipment.shipment.Shipment;
  * @model annotation="mimo-ent-frame title='Return Item And Shipment Association'"
  * @generated
  */
-public interface ReturnItemShipment extends BizEntity {
+public interface ReturnItemShipment extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Quantity</b></em>' attribute.
 	 * <!-- begin-user-doc -->

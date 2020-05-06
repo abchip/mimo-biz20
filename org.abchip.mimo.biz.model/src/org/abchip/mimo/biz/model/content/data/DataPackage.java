@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.content.data;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUDIO_DATA_RESOURCE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int AUDIO_DATA_RESOURCE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUDIO_DATA_RESOURCE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int AUDIO_DATA_RESOURCE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUDIO_DATA_RESOURCE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int AUDIO_DATA_RESOURCE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUDIO_DATA_RESOURCE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int AUDIO_DATA_RESOURCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUDIO_DATA_RESOURCE__DATA_RESOURCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int AUDIO_DATA_RESOURCE__DATA_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Audio Data</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUDIO_DATA_RESOURCE__AUDIO_DATA = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int AUDIO_DATA_RESOURCE__AUDIO_DATA = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Audio Data Resource</em>' class.
@@ -132,7 +132,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AUDIO_DATA_RESOURCE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int AUDIO_DATA_RESOURCE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.data.impl.CharacterSetImpl <em>Character Set</em>}' class.
@@ -151,7 +151,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTER_SET__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CHARACTER_SET__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -160,7 +160,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTER_SET__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CHARACTER_SET__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -169,7 +169,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTER_SET__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CHARACTER_SET__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -178,7 +178,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTER_SET__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CHARACTER_SET__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Character Set Id</b></em>' attribute.
@@ -187,7 +187,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTER_SET__CHARACTER_SET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CHARACTER_SET__CHARACTER_SET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -196,7 +196,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTER_SET__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CHARACTER_SET__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Character Set</em>' class.
@@ -205,7 +205,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHARACTER_SET_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CHARACTER_SET_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.data.impl.DataCategoryImpl <em>Category</em>}' class.
@@ -224,7 +224,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_CATEGORY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int DATA_CATEGORY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -233,7 +233,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_CATEGORY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int DATA_CATEGORY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -242,7 +242,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_CATEGORY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int DATA_CATEGORY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -251,7 +251,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_CATEGORY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int DATA_CATEGORY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Data Category Id</b></em>' attribute.
@@ -260,7 +260,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_CATEGORY__DATA_CATEGORY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int DATA_CATEGORY__DATA_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Category Name</b></em>' attribute.
@@ -269,7 +269,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_CATEGORY__CATEGORY_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int DATA_CATEGORY__CATEGORY_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Parent Category Id</b></em>' reference.
@@ -278,7 +278,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_CATEGORY__PARENT_CATEGORY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int DATA_CATEGORY__PARENT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Category</em>' class.
@@ -287,7 +287,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_CATEGORY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int DATA_CATEGORY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceImpl <em>Resource</em>}' class.
@@ -306,7 +306,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int DATA_RESOURCE__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -315,7 +315,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int DATA_RESOURCE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -324,7 +324,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int DATA_RESOURCE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -333,7 +333,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int DATA_RESOURCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Id</b></em>' attribute.
@@ -342,7 +342,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__DATA_RESOURCE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int DATA_RESOURCE__DATA_RESOURCE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Character Set Id</b></em>' reference.
@@ -351,7 +351,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__CHARACTER_SET_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int DATA_RESOURCE__CHARACTER_SET_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Created By User Login</b></em>' reference.
@@ -360,7 +360,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__CREATED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int DATA_RESOURCE__CREATED_BY_USER_LOGIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Created Date</b></em>' attribute.
@@ -369,7 +369,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__CREATED_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int DATA_RESOURCE__CREATED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Data Category Id</b></em>' reference.
@@ -378,7 +378,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__DATA_CATEGORY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int DATA_RESOURCE__DATA_CATEGORY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Attributes</b></em>' reference list.
@@ -387,7 +387,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__DATA_RESOURCE_ATTRIBUTES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int DATA_RESOURCE__DATA_RESOURCE_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Meta Datas</b></em>' reference list.
@@ -396,7 +396,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__DATA_RESOURCE_META_DATAS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int DATA_RESOURCE__DATA_RESOURCE_META_DATAS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Name</b></em>' attribute.
@@ -405,7 +405,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__DATA_RESOURCE_NAME = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int DATA_RESOURCE__DATA_RESOURCE_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Purposes</b></em>' reference list.
@@ -414,7 +414,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__DATA_RESOURCE_PURPOSES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int DATA_RESOURCE__DATA_RESOURCE_PURPOSES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Type Id</b></em>' reference.
@@ -423,7 +423,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__DATA_RESOURCE_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 9;
+	int DATA_RESOURCE__DATA_RESOURCE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Data Source Id</b></em>' reference.
@@ -432,7 +432,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__DATA_SOURCE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 10;
+	int DATA_RESOURCE__DATA_SOURCE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Data Template Type Id</b></em>' reference.
@@ -441,7 +441,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__DATA_TEMPLATE_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 11;
+	int DATA_RESOURCE__DATA_TEMPLATE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Is Public</b></em>' attribute.
@@ -450,7 +450,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__IS_PUBLIC = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 12;
+	int DATA_RESOURCE__IS_PUBLIC = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified By User Login</b></em>' reference.
@@ -459,7 +459,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__LAST_MODIFIED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 13;
+	int DATA_RESOURCE__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified Date</b></em>' attribute.
@@ -468,7 +468,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__LAST_MODIFIED_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 14;
+	int DATA_RESOURCE__LAST_MODIFIED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Locale String</b></em>' attribute.
@@ -477,7 +477,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__LOCALE_STRING = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 15;
+	int DATA_RESOURCE__LOCALE_STRING = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Mime Type Id</b></em>' reference.
@@ -486,7 +486,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__MIME_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 16;
+	int DATA_RESOURCE__MIME_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Object Info</b></em>' attribute.
@@ -495,7 +495,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__OBJECT_INFO = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 17;
+	int DATA_RESOURCE__OBJECT_INFO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Product Feature Data Resources</b></em>' reference list.
@@ -504,7 +504,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__PRODUCT_FEATURE_DATA_RESOURCES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 18;
+	int DATA_RESOURCE__PRODUCT_FEATURE_DATA_RESOURCES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Related Detail Id</b></em>' attribute.
@@ -513,7 +513,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__RELATED_DETAIL_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 19;
+	int DATA_RESOURCE__RELATED_DETAIL_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -522,7 +522,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__STATUS_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 20;
+	int DATA_RESOURCE__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Survey Id</b></em>' reference.
@@ -531,7 +531,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__SURVEY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 21;
+	int DATA_RESOURCE__SURVEY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Survey Response Id</b></em>' reference.
@@ -540,7 +540,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE__SURVEY_RESPONSE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 22;
+	int DATA_RESOURCE__SURVEY_RESPONSE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
 
 	/**
 	 * The number of structural features of the '<em>Resource</em>' class.
@@ -549,7 +549,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 23;
+	int DATA_RESOURCE_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceAttributeImpl <em>Resource Attribute</em>}' class.
@@ -568,7 +568,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int DATA_RESOURCE_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -577,7 +577,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int DATA_RESOURCE_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -586,7 +586,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int DATA_RESOURCE_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -595,7 +595,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int DATA_RESOURCE_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Id</b></em>' reference.
@@ -604,7 +604,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ATTRIBUTE__DATA_RESOURCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int DATA_RESOURCE_ATTRIBUTE__DATA_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -613,7 +613,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int DATA_RESOURCE_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -622,7 +622,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int DATA_RESOURCE_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -631,7 +631,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int DATA_RESOURCE_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Resource Attribute</em>' class.
@@ -640,7 +640,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int DATA_RESOURCE_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceMetaDataImpl <em>Resource Meta Data</em>}' class.
@@ -659,7 +659,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_META_DATA__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int DATA_RESOURCE_META_DATA__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -668,7 +668,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_META_DATA__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int DATA_RESOURCE_META_DATA__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -677,7 +677,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_META_DATA__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int DATA_RESOURCE_META_DATA__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -686,7 +686,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_META_DATA__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int DATA_RESOURCE_META_DATA__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Id</b></em>' reference.
@@ -695,7 +695,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_META_DATA__DATA_RESOURCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int DATA_RESOURCE_META_DATA__DATA_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Meta Data Predicate Id</b></em>' reference.
@@ -704,7 +704,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_META_DATA__META_DATA_PREDICATE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int DATA_RESOURCE_META_DATA__META_DATA_PREDICATE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Data Source Id</b></em>' reference.
@@ -713,7 +713,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_META_DATA__DATA_SOURCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int DATA_RESOURCE_META_DATA__DATA_SOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Meta Data Value</b></em>' attribute.
@@ -722,7 +722,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_META_DATA__META_DATA_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int DATA_RESOURCE_META_DATA__META_DATA_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Resource Meta Data</em>' class.
@@ -731,7 +731,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_META_DATA_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int DATA_RESOURCE_META_DATA_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.data.impl.DataResourcePurposeImpl <em>Resource Purpose</em>}' class.
@@ -750,7 +750,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_PURPOSE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int DATA_RESOURCE_PURPOSE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -759,7 +759,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_PURPOSE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int DATA_RESOURCE_PURPOSE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -768,7 +768,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_PURPOSE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int DATA_RESOURCE_PURPOSE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -777,7 +777,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_PURPOSE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int DATA_RESOURCE_PURPOSE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Id</b></em>' reference.
@@ -786,7 +786,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_PURPOSE__DATA_RESOURCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int DATA_RESOURCE_PURPOSE__DATA_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Content Purpose Type Id</b></em>' reference.
@@ -795,7 +795,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_PURPOSE__CONTENT_PURPOSE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int DATA_RESOURCE_PURPOSE__CONTENT_PURPOSE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Resource Purpose</em>' class.
@@ -804,7 +804,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_PURPOSE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int DATA_RESOURCE_PURPOSE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceRoleImpl <em>Resource Role</em>}' class.
@@ -823,7 +823,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ROLE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int DATA_RESOURCE_ROLE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -832,7 +832,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ROLE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int DATA_RESOURCE_ROLE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -841,7 +841,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ROLE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int DATA_RESOURCE_ROLE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -850,7 +850,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ROLE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int DATA_RESOURCE_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Id</b></em>' reference.
@@ -859,7 +859,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ROLE__DATA_RESOURCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int DATA_RESOURCE_ROLE__DATA_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -868,7 +868,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ROLE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int DATA_RESOURCE_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -877,7 +877,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ROLE__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int DATA_RESOURCE_ROLE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' attribute.
@@ -886,7 +886,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ROLE__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int DATA_RESOURCE_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -895,7 +895,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ROLE__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int DATA_RESOURCE_ROLE__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Resource Role</em>' class.
@@ -904,7 +904,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_ROLE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int DATA_RESOURCE_ROLE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceTypeImpl <em>Resource Type</em>}' class.
@@ -923,7 +923,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int DATA_RESOURCE_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -932,7 +932,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int DATA_RESOURCE_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -941,7 +941,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int DATA_RESOURCE_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -950,7 +950,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int DATA_RESOURCE_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -959,7 +959,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int DATA_RESOURCE_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Type Id</b></em>' attribute.
@@ -968,7 +968,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE__DATA_RESOURCE_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int DATA_RESOURCE_TYPE__DATA_RESOURCE_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Type Attrs</b></em>' reference list.
@@ -977,7 +977,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE__DATA_RESOURCE_TYPE_ATTRS = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int DATA_RESOURCE_TYPE__DATA_RESOURCE_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -986,7 +986,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int DATA_RESOURCE_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -995,7 +995,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int DATA_RESOURCE_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -1004,7 +1004,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int DATA_RESOURCE_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Resource Type</em>' class.
@@ -1013,7 +1013,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 5;
+	int DATA_RESOURCE_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.data.impl.DataResourceTypeAttrImpl <em>Resource Type Attr</em>}' class.
@@ -1032,7 +1032,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE_ATTR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int DATA_RESOURCE_TYPE_ATTR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1041,7 +1041,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE_ATTR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int DATA_RESOURCE_TYPE_ATTR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1050,7 +1050,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE_ATTR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int DATA_RESOURCE_TYPE_ATTR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1059,7 +1059,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE_ATTR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int DATA_RESOURCE_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Type Id</b></em>' reference.
@@ -1068,7 +1068,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE_ATTR__DATA_RESOURCE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int DATA_RESOURCE_TYPE_ATTR__DATA_RESOURCE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1077,7 +1077,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE_ATTR__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int DATA_RESOURCE_TYPE_ATTR__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1086,7 +1086,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE_ATTR__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int DATA_RESOURCE_TYPE_ATTR__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Resource Type Attr</em>' class.
@@ -1095,7 +1095,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_RESOURCE_TYPE_ATTR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int DATA_RESOURCE_TYPE_ATTR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.data.impl.DataTemplateTypeImpl <em>Template Type</em>}' class.
@@ -1114,7 +1114,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_TEMPLATE_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int DATA_TEMPLATE_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1123,7 +1123,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_TEMPLATE_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int DATA_TEMPLATE_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1132,7 +1132,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_TEMPLATE_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int DATA_TEMPLATE_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1141,7 +1141,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_TEMPLATE_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int DATA_TEMPLATE_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Data Template Type Id</b></em>' attribute.
@@ -1150,7 +1150,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_TEMPLATE_TYPE__DATA_TEMPLATE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int DATA_TEMPLATE_TYPE__DATA_TEMPLATE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1159,7 +1159,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_TEMPLATE_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int DATA_TEMPLATE_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Extension</b></em>' attribute.
@@ -1168,7 +1168,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_TEMPLATE_TYPE__EXTENSION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int DATA_TEMPLATE_TYPE__EXTENSION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Template Type</em>' class.
@@ -1177,7 +1177,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_TEMPLATE_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int DATA_TEMPLATE_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.data.impl.ElectronicTextImpl <em>Electronic Text</em>}' class.
@@ -1467,7 +1467,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FILE_EXTENSION__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int FILE_EXTENSION__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1476,7 +1476,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FILE_EXTENSION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int FILE_EXTENSION__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1485,7 +1485,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FILE_EXTENSION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int FILE_EXTENSION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1494,7 +1494,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FILE_EXTENSION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int FILE_EXTENSION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>File Extension Id</b></em>' attribute.
@@ -1503,7 +1503,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FILE_EXTENSION__FILE_EXTENSION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int FILE_EXTENSION__FILE_EXTENSION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Mime Type Id</b></em>' reference.
@@ -1512,7 +1512,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FILE_EXTENSION__MIME_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int FILE_EXTENSION__MIME_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>File Extension</em>' class.
@@ -1521,7 +1521,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FILE_EXTENSION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int FILE_EXTENSION_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.data.impl.ImageDataResourceImpl <em>Image Data Resource</em>}' class.
@@ -1540,7 +1540,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_DATA_RESOURCE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int IMAGE_DATA_RESOURCE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1549,7 +1549,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_DATA_RESOURCE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int IMAGE_DATA_RESOURCE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1558,7 +1558,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_DATA_RESOURCE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int IMAGE_DATA_RESOURCE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1567,7 +1567,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_DATA_RESOURCE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int IMAGE_DATA_RESOURCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Id</b></em>' attribute.
@@ -1576,7 +1576,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_DATA_RESOURCE__DATA_RESOURCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int IMAGE_DATA_RESOURCE__DATA_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Image Data</b></em>' attribute.
@@ -1585,7 +1585,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_DATA_RESOURCE__IMAGE_DATA = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int IMAGE_DATA_RESOURCE__IMAGE_DATA = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Image Data Resource</em>' class.
@@ -1594,7 +1594,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int IMAGE_DATA_RESOURCE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int IMAGE_DATA_RESOURCE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.data.impl.MetaDataPredicateImpl <em>Meta Data Predicate</em>}' class.
@@ -1613,7 +1613,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int META_DATA_PREDICATE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int META_DATA_PREDICATE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1622,7 +1622,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int META_DATA_PREDICATE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int META_DATA_PREDICATE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1631,7 +1631,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int META_DATA_PREDICATE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int META_DATA_PREDICATE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1640,7 +1640,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int META_DATA_PREDICATE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int META_DATA_PREDICATE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Meta Data Predicate Id</b></em>' attribute.
@@ -1649,7 +1649,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int META_DATA_PREDICATE__META_DATA_PREDICATE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int META_DATA_PREDICATE__META_DATA_PREDICATE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1658,7 +1658,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int META_DATA_PREDICATE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int META_DATA_PREDICATE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Meta Data Predicate</em>' class.
@@ -1667,7 +1667,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int META_DATA_PREDICATE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int META_DATA_PREDICATE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.data.impl.MimeTypeImpl <em>Mime Type</em>}' class.
@@ -1686,7 +1686,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MIME_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int MIME_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1695,7 +1695,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MIME_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int MIME_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1704,7 +1704,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MIME_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int MIME_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1713,7 +1713,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MIME_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int MIME_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Mime Type Id</b></em>' attribute.
@@ -1722,7 +1722,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MIME_TYPE__MIME_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int MIME_TYPE__MIME_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1731,7 +1731,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MIME_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int MIME_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Mime Type</em>' class.
@@ -1740,7 +1740,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MIME_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int MIME_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.data.impl.MimeTypeHtmlTemplateImpl <em>Mime Type Html Template</em>}' class.
@@ -1759,7 +1759,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MIME_TYPE_HTML_TEMPLATE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int MIME_TYPE_HTML_TEMPLATE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1768,7 +1768,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MIME_TYPE_HTML_TEMPLATE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int MIME_TYPE_HTML_TEMPLATE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1777,7 +1777,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MIME_TYPE_HTML_TEMPLATE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int MIME_TYPE_HTML_TEMPLATE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1786,7 +1786,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MIME_TYPE_HTML_TEMPLATE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int MIME_TYPE_HTML_TEMPLATE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Mime Type Id</b></em>' attribute.
@@ -1795,7 +1795,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MIME_TYPE_HTML_TEMPLATE__MIME_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int MIME_TYPE_HTML_TEMPLATE__MIME_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Template Location</b></em>' attribute.
@@ -1804,7 +1804,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MIME_TYPE_HTML_TEMPLATE__TEMPLATE_LOCATION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int MIME_TYPE_HTML_TEMPLATE__TEMPLATE_LOCATION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Mime Type Html Template</em>' class.
@@ -1813,7 +1813,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MIME_TYPE_HTML_TEMPLATE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int MIME_TYPE_HTML_TEMPLATE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.data.impl.OtherDataResourceImpl <em>Other Data Resource</em>}' class.
@@ -1832,7 +1832,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_DATA_RESOURCE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int OTHER_DATA_RESOURCE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1841,7 +1841,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_DATA_RESOURCE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int OTHER_DATA_RESOURCE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1850,7 +1850,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_DATA_RESOURCE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int OTHER_DATA_RESOURCE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1859,7 +1859,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_DATA_RESOURCE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int OTHER_DATA_RESOURCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Id</b></em>' attribute.
@@ -1868,7 +1868,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_DATA_RESOURCE__DATA_RESOURCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int OTHER_DATA_RESOURCE__DATA_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Content</b></em>' attribute.
@@ -1877,7 +1877,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_DATA_RESOURCE__DATA_RESOURCE_CONTENT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int OTHER_DATA_RESOURCE__DATA_RESOURCE_CONTENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Other Data Resource</em>' class.
@@ -1886,7 +1886,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OTHER_DATA_RESOURCE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int OTHER_DATA_RESOURCE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.data.impl.VideoDataResourceImpl <em>Video Data Resource</em>}' class.
@@ -1905,7 +1905,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VIDEO_DATA_RESOURCE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int VIDEO_DATA_RESOURCE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1914,7 +1914,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VIDEO_DATA_RESOURCE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int VIDEO_DATA_RESOURCE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1923,7 +1923,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VIDEO_DATA_RESOURCE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int VIDEO_DATA_RESOURCE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1932,7 +1932,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VIDEO_DATA_RESOURCE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int VIDEO_DATA_RESOURCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Data Resource Id</b></em>' attribute.
@@ -1941,7 +1941,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VIDEO_DATA_RESOURCE__DATA_RESOURCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int VIDEO_DATA_RESOURCE__DATA_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Video Data</b></em>' attribute.
@@ -1950,7 +1950,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VIDEO_DATA_RESOURCE__VIDEO_DATA = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int VIDEO_DATA_RESOURCE__VIDEO_DATA = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Video Data Resource</em>' class.
@@ -1959,7 +1959,7 @@ public interface DataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VIDEO_DATA_RESOURCE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int VIDEO_DATA_RESOURCE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 
 	/**

@@ -9,9 +9,10 @@ package org.abchip.mimo.biz.model.security.login;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.user.UserPreference;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -47,7 +48,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model
  * @generated
  */
-public interface UserLogin extends BizEntity {
+public interface UserLogin extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Current Password</b></em>' attribute.
 	 * <!-- begin-user-doc -->

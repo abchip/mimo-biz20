@@ -8,10 +8,11 @@
 package org.abchip.mimo.biz.model.product.promo;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.method.CustomMethod;
 import org.abchip.mimo.biz.model.order.order.OrderAdjustmentType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -40,7 +41,7 @@ import org.abchip.mimo.biz.model.order.order.OrderAdjustmentType;
  * @model annotation="mimo-ent-frame title='Product Promotion Action' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductPromoAction extends BizEntity {
+public interface ProductPromoAction extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->

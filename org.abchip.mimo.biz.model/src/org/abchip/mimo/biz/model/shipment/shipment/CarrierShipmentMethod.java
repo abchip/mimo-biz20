@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.shipment.shipment;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model
  * @generated
  */
-public interface CarrierShipmentMethod extends BizEntity {
+public interface CarrierShipmentMethod extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Carrier Service Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->

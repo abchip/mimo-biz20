@@ -1123,7 +1123,7 @@ public class CatalogPackageImpl extends EPackageImpl implements CatalogPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		CategoryPackage theCategoryPackage = (CategoryPackage)EPackage.Registry.INSTANCE.getEPackage(CategoryPackage.eNS_URI);
 		FacilityPackage theFacilityPackage = (FacilityPackage)EPackage.Registry.INSTANCE.getEPackage(FacilityPackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
@@ -1133,11 +1133,16 @@ public class CatalogPackageImpl extends EPackageImpl implements CatalogPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		prodCatalogEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		prodCatalogCategoryEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		prodCatalogCategoryTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		prodCatalogInvFacilityEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		prodCatalogRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		prodCatalogEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		prodCatalogEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		prodCatalogCategoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		prodCatalogCategoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		prodCatalogCategoryTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		prodCatalogCategoryTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		prodCatalogInvFacilityEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		prodCatalogInvFacilityEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		prodCatalogRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		prodCatalogRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(prodCatalogEClass, ProdCatalog.class, "ProdCatalog", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

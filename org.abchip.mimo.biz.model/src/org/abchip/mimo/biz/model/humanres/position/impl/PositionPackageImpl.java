@@ -1479,7 +1479,7 @@ public class PositionPackageImpl extends EPackageImpl implements PositionPackage
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
 		StatusPackage theStatusPackage = (StatusPackage)EPackage.Registry.INSTANCE.getEPackage(StatusPackage.eNS_URI);
 		AbilityPackage theAbilityPackage = (AbilityPackage)EPackage.Registry.INSTANCE.getEPackage(AbilityPackage.eNS_URI);
@@ -1490,21 +1490,32 @@ public class PositionPackageImpl extends EPackageImpl implements PositionPackage
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getEmplPositionType());
 		g1.getETypeArguments().add(g2);
 		emplPositionEClass.getEGenericSuperTypes().add(g1);
-		emplPositionClassTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		emplPositionFulfillmentEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		emplPositionReportingStructEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		emplPositionResponsibilityEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		emplPositionEClass.getEGenericSuperTypes().add(g1);
+		emplPositionClassTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		emplPositionClassTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		emplPositionFulfillmentEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		emplPositionFulfillmentEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		emplPositionReportingStructEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		emplPositionReportingStructEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		emplPositionResponsibilityEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		emplPositionResponsibilityEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getEmplPosition());
 		g1.getETypeArguments().add(g2);
 		emplPositionTypeEClass.getEGenericSuperTypes().add(g1);
-		emplPositionTypeClassEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		emplPositionTypeRateEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		validResponsibilityEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		emplPositionTypeEClass.getEGenericSuperTypes().add(g1);
+		emplPositionTypeClassEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		emplPositionTypeClassEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		emplPositionTypeRateEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		emplPositionTypeRateEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		validResponsibilityEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		validResponsibilityEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(emplPositionEClass, EmplPosition.class, "EmplPosition", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

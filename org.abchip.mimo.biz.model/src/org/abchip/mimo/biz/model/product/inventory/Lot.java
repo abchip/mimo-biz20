@@ -10,7 +10,8 @@ package org.abchip.mimo.biz.model.product.inventory;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +32,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface Lot extends BizEntity {
+public interface Lot extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Creation Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

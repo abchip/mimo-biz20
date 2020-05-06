@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.common.portal;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PORTAL_PAGE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PORTAL_PAGE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PORTAL_PAGE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PORTAL_PAGE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Portal Page Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE__PORTAL_PAGE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PORTAL_PAGE__PORTAL_PAGE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PORTAL_PAGE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Help Content Id</b></em>' reference.
@@ -132,7 +132,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE__HELP_CONTENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PORTAL_PAGE__HELP_CONTENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Original Portal Page Id</b></em>' attribute.
@@ -141,7 +141,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE__ORIGINAL_PORTAL_PAGE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PORTAL_PAGE__ORIGINAL_PORTAL_PAGE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Owner User Login Id</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE__OWNER_USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PORTAL_PAGE__OWNER_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Parent Portal Page Id</b></em>' reference.
@@ -159,7 +159,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE__PARENT_PORTAL_PAGE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PORTAL_PAGE__PARENT_PORTAL_PAGE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Portal Page Columns</b></em>' reference list.
@@ -168,7 +168,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE__PORTAL_PAGE_COLUMNS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PORTAL_PAGE__PORTAL_PAGE_COLUMNS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Portal Page Name</b></em>' attribute.
@@ -177,7 +177,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE__PORTAL_PAGE_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PORTAL_PAGE__PORTAL_PAGE_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Security Group Id</b></em>' reference.
@@ -186,7 +186,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE__SECURITY_GROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int PORTAL_PAGE__SECURITY_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -195,7 +195,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int PORTAL_PAGE__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The number of structural features of the '<em>Page</em>' class.
@@ -204,7 +204,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int PORTAL_PAGE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPageColumnImpl <em>Page Column</em>}' class.
@@ -223,7 +223,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE_COLUMN__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PORTAL_PAGE_COLUMN__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -232,7 +232,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE_COLUMN__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PORTAL_PAGE_COLUMN__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -241,7 +241,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE_COLUMN__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PORTAL_PAGE_COLUMN__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -250,7 +250,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE_COLUMN__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PORTAL_PAGE_COLUMN__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Portal Page Id</b></em>' reference.
@@ -259,7 +259,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE_COLUMN__PORTAL_PAGE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PORTAL_PAGE_COLUMN__PORTAL_PAGE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Column Seq Id</b></em>' attribute.
@@ -268,7 +268,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE_COLUMN__COLUMN_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PORTAL_PAGE_COLUMN__COLUMN_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Column Width Percentage</b></em>' attribute.
@@ -277,7 +277,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE_COLUMN__COLUMN_WIDTH_PERCENTAGE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PORTAL_PAGE_COLUMN__COLUMN_WIDTH_PERCENTAGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Column Width Pixels</b></em>' attribute.
@@ -286,7 +286,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE_COLUMN__COLUMN_WIDTH_PIXELS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PORTAL_PAGE_COLUMN__COLUMN_WIDTH_PIXELS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Page Column</em>' class.
@@ -295,7 +295,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE_COLUMN_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PORTAL_PAGE_COLUMN_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPagePortletImpl <em>Page Portlet</em>}' class.
@@ -314,7 +314,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE_PORTLET__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PORTAL_PAGE_PORTLET__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -323,7 +323,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE_PORTLET__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PORTAL_PAGE_PORTLET__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -332,7 +332,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE_PORTLET__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PORTAL_PAGE_PORTLET__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -341,7 +341,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE_PORTLET__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PORTAL_PAGE_PORTLET__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Portal Page Id</b></em>' reference.
@@ -350,7 +350,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE_PORTLET__PORTAL_PAGE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PORTAL_PAGE_PORTLET__PORTAL_PAGE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Portal Portlet Id</b></em>' reference.
@@ -359,7 +359,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE_PORTLET__PORTAL_PORTLET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PORTAL_PAGE_PORTLET__PORTAL_PORTLET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Portlet Seq Id</b></em>' attribute.
@@ -368,7 +368,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE_PORTLET__PORTLET_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PORTAL_PAGE_PORTLET__PORTLET_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Column Seq Id</b></em>' attribute.
@@ -377,7 +377,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE_PORTLET__COLUMN_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PORTAL_PAGE_PORTLET__COLUMN_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -386,7 +386,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE_PORTLET__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PORTAL_PAGE_PORTLET__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Page Portlet</em>' class.
@@ -395,7 +395,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PAGE_PORTLET_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PORTAL_PAGE_PORTLET_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.portal.impl.PortalPortletImpl <em>Portlet</em>}' class.
@@ -414,7 +414,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PORTLET__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PORTAL_PORTLET__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -423,7 +423,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PORTLET__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PORTAL_PORTLET__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -432,7 +432,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PORTLET__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PORTAL_PORTLET__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -441,7 +441,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PORTLET__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PORTAL_PORTLET__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Portal Portlet Id</b></em>' attribute.
@@ -450,7 +450,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PORTLET__PORTAL_PORTLET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PORTAL_PORTLET__PORTAL_PORTLET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -459,7 +459,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PORTLET__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PORTAL_PORTLET__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Edit Form Location</b></em>' attribute.
@@ -468,7 +468,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PORTLET__EDIT_FORM_LOCATION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PORTAL_PORTLET__EDIT_FORM_LOCATION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Edit Form Name</b></em>' attribute.
@@ -477,7 +477,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PORTLET__EDIT_FORM_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PORTAL_PORTLET__EDIT_FORM_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Portlet Name</b></em>' attribute.
@@ -486,7 +486,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PORTLET__PORTLET_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PORTAL_PORTLET__PORTLET_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Portlet Portlet Categories</b></em>' reference list.
@@ -495,7 +495,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PORTLET__PORTLET_PORTLET_CATEGORIES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PORTAL_PORTLET__PORTLET_PORTLET_CATEGORIES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Screen Location</b></em>' attribute.
@@ -504,7 +504,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PORTLET__SCREEN_LOCATION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PORTAL_PORTLET__SCREEN_LOCATION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Screen Name</b></em>' attribute.
@@ -513,7 +513,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PORTLET__SCREEN_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PORTAL_PORTLET__SCREEN_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Screenshot</b></em>' attribute.
@@ -522,7 +522,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PORTLET__SCREENSHOT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int PORTAL_PORTLET__SCREENSHOT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Security Main Action</b></em>' attribute.
@@ -531,7 +531,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PORTLET__SECURITY_MAIN_ACTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int PORTAL_PORTLET__SECURITY_MAIN_ACTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Security Service Name</b></em>' attribute.
@@ -540,7 +540,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PORTLET__SECURITY_SERVICE_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int PORTAL_PORTLET__SECURITY_SERVICE_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The number of structural features of the '<em>Portlet</em>' class.
@@ -549,7 +549,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTAL_PORTLET_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int PORTAL_PORTLET_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.portal.impl.PortletAttributeImpl <em>Portlet Attribute</em>}' class.
@@ -568,7 +568,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PORTLET_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -577,7 +577,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PORTLET_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -586,7 +586,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PORTLET_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -595,7 +595,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PORTLET_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Portal Portlet Id</b></em>' reference.
@@ -604,7 +604,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_ATTRIBUTE__PORTAL_PORTLET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PORTLET_ATTRIBUTE__PORTAL_PORTLET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -613,7 +613,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PORTLET_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Portal Page Id</b></em>' attribute.
@@ -622,7 +622,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_ATTRIBUTE__PORTAL_PAGE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PORTLET_ATTRIBUTE__PORTAL_PAGE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Portlet Seq Id</b></em>' attribute.
@@ -631,7 +631,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_ATTRIBUTE__PORTLET_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PORTLET_ATTRIBUTE__PORTLET_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -640,7 +640,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PORTLET_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Attr Type</b></em>' attribute.
@@ -649,7 +649,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_ATTRIBUTE__ATTR_TYPE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PORTLET_ATTRIBUTE__ATTR_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -658,7 +658,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PORTLET_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Portlet Attribute</em>' class.
@@ -667,7 +667,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PORTLET_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.portal.impl.PortletCategoryImpl <em>Portlet Category</em>}' class.
@@ -686,7 +686,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_CATEGORY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PORTLET_CATEGORY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -695,7 +695,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_CATEGORY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PORTLET_CATEGORY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -704,7 +704,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_CATEGORY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PORTLET_CATEGORY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -713,7 +713,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_CATEGORY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PORTLET_CATEGORY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Portlet Category Id</b></em>' attribute.
@@ -722,7 +722,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_CATEGORY__PORTLET_CATEGORY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PORTLET_CATEGORY__PORTLET_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -731,7 +731,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_CATEGORY__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PORTLET_CATEGORY__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Portlet Category</em>' class.
@@ -740,7 +740,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_CATEGORY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PORTLET_CATEGORY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.portal.impl.PortletPortletCategoryImpl <em>Portlet Portlet Category</em>}' class.
@@ -759,7 +759,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_PORTLET_CATEGORY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PORTLET_PORTLET_CATEGORY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -768,7 +768,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_PORTLET_CATEGORY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PORTLET_PORTLET_CATEGORY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -777,7 +777,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_PORTLET_CATEGORY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PORTLET_PORTLET_CATEGORY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -786,7 +786,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_PORTLET_CATEGORY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PORTLET_PORTLET_CATEGORY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Portal Portlet Id</b></em>' reference.
@@ -795,7 +795,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_PORTLET_CATEGORY__PORTAL_PORTLET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PORTLET_PORTLET_CATEGORY__PORTAL_PORTLET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Portlet Category Id</b></em>' reference.
@@ -804,7 +804,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_PORTLET_CATEGORY__PORTLET_CATEGORY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PORTLET_PORTLET_CATEGORY__PORTLET_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Portlet Portlet Category</em>' class.
@@ -813,7 +813,7 @@ public interface PortalPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PORTLET_PORTLET_CATEGORY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PORTLET_PORTLET_CATEGORY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 
 	/**

@@ -1749,7 +1749,7 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		LoginPackage theLoginPackage = (LoginPackage)EPackage.Registry.INSTANCE.getEPackage(LoginPackage.eNS_URI);
 		StatusPackage theStatusPackage = (StatusPackage)EPackage.Registry.INSTANCE.getEPackage(StatusPackage.eNS_URI);
 
@@ -1758,17 +1758,28 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		testEntityEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		testFieldTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		testingEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		testingCryptoEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		testingItemEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		testingNodeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		testingNodeMemberEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		testingRemoveAllEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		testingStatusEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		testingSubtypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		testingTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		testEntityEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		testEntityEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		testFieldTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		testFieldTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		testingEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		testingEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		testingCryptoEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		testingCryptoEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		testingItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		testingItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		testingNodeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		testingNodeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		testingNodeMemberEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		testingNodeMemberEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		testingRemoveAllEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		testingRemoveAllEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		testingStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		testingStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		testingSubtypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		testingSubtypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		testingTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		testingTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(testEntityEClass, TestEntity.class, "TestEntity", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

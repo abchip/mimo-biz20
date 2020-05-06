@@ -11,7 +11,6 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset;
 import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.common.uom.Uom;
@@ -19,6 +18,8 @@ import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.feature.ProductFeature;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -49,7 +50,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface CostComponent extends BizEntityTyped<CostComponentType> {
+public interface CostComponent extends EntityTyped<CostComponentType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Cost</b></em>' attribute.
 	 * <!-- begin-user-doc -->

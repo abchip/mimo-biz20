@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.common.datasource;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface DatasourcePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_SOURCE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int DATA_SOURCE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface DatasourcePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_SOURCE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int DATA_SOURCE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface DatasourcePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_SOURCE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int DATA_SOURCE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface DatasourcePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_SOURCE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int DATA_SOURCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Data Source Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface DatasourcePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_SOURCE__DATA_SOURCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int DATA_SOURCE__DATA_SOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Data Source Type Id</b></em>' reference.
@@ -123,7 +123,7 @@ public interface DatasourcePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_SOURCE__DATA_SOURCE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int DATA_SOURCE__DATA_SOURCE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface DatasourcePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_SOURCE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int DATA_SOURCE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Data Source</em>' class.
@@ -141,7 +141,7 @@ public interface DatasourcePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_SOURCE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int DATA_SOURCE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.datasource.impl.DataSourceTypeImpl <em>Data Source Type</em>}' class.
@@ -160,7 +160,7 @@ public interface DatasourcePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_SOURCE_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int DATA_SOURCE_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -169,7 +169,7 @@ public interface DatasourcePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_SOURCE_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int DATA_SOURCE_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -178,7 +178,7 @@ public interface DatasourcePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_SOURCE_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int DATA_SOURCE_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -187,7 +187,7 @@ public interface DatasourcePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_SOURCE_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int DATA_SOURCE_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Data Source Type Id</b></em>' attribute.
@@ -196,7 +196,7 @@ public interface DatasourcePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_SOURCE_TYPE__DATA_SOURCE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int DATA_SOURCE_TYPE__DATA_SOURCE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -205,7 +205,7 @@ public interface DatasourcePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_SOURCE_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int DATA_SOURCE_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Data Source Type</em>' class.
@@ -214,7 +214,7 @@ public interface DatasourcePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DATA_SOURCE_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int DATA_SOURCE_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 
 	/**

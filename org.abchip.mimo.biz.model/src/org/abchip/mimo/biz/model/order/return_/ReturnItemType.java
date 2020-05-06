@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.order.return_;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame help='ReturnItemType records the type of a ReturnItem' formula='description'"
  * @generated
  */
-public interface ReturnItemType extends BizEntity {
+public interface ReturnItemType extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

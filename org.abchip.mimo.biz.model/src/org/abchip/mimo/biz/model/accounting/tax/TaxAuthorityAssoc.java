@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.accounting.tax;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Tax Authority Association'"
  * @generated
  */
-public interface TaxAuthorityAssoc extends BizEntity {
+public interface TaxAuthorityAssoc extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

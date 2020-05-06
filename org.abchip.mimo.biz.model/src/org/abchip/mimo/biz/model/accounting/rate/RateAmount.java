@@ -10,12 +10,13 @@ package org.abchip.mimo.biz.model.accounting.rate;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.period.PeriodType;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.humanres.position.EmplPositionType;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -41,7 +42,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
  * @model
  * @generated
  */
-public interface RateAmount extends BizEntity {
+public interface RateAmount extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Empl Position Type Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

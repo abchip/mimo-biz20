@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.product.price;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.common.enum_.Enumeration;
  * @model annotation="mimo-ent-frame title='Product Price Condition' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductPriceCond extends BizEntity {
+public interface ProductPriceCond extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Cond Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->

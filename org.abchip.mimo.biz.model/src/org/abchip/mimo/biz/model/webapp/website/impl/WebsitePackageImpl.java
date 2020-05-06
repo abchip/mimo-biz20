@@ -986,7 +986,7 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		ContentPackage theContentPackage = (ContentPackage)EPackage.Registry.INSTANCE.getEPackage(ContentPackage.eNS_URI);
 		StorePackage theStorePackage = (StorePackage)EPackage.Registry.INSTANCE.getEPackage(StorePackage.eNS_URI);
 		ThemePackage theThemePackage = (ThemePackage)EPackage.Registry.INSTANCE.getEPackage(ThemePackage.eNS_URI);
@@ -997,8 +997,10 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		webPageEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		webSiteEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		webPageEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		webPageEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		webSiteEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		webSiteEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(webPageEClass, WebPage.class, "WebPage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

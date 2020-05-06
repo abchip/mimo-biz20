@@ -7,11 +7,14 @@
  */
 package org.abchip.mimo.biz.model.product.store.impl;
 
-import org.abchip.mimo.biz.impl.BizEntityImpl;
+import java.util.Date;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
 import org.abchip.mimo.biz.model.product.store.ProductStoreEmailSetting;
 import org.abchip.mimo.biz.model.product.store.StorePackage;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityPackage;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -22,6 +25,10 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreEmailSettingImpl#getCreatedStamp <em>Created Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreEmailSettingImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreEmailSettingImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreEmailSettingImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreEmailSettingImpl#getProductStoreId <em>Product Store Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreEmailSettingImpl#getEmailType <em>Email Type</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreEmailSettingImpl#getBccAddress <em>Bcc Address</em>}</li>
@@ -35,7 +42,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ProductStoreEmailSettingImpl extends BizEntityImpl implements ProductStoreEmailSetting {
+public class ProductStoreEmailSettingImpl extends EntityIdentifiableImpl implements ProductStoreEmailSetting {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -54,6 +61,96 @@ public class ProductStoreEmailSettingImpl extends BizEntityImpl implements Produ
 	@Override
 	protected EClass eStaticClass() {
 		return StorePackage.Literals.PRODUCT_STORE_EMAIL_SETTING;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return 0;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedStamp(Date newCreatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, newCreatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedTxStamp(Date newCreatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, newCreatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedStamp(Date newLastUpdatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, newLastUpdatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
 	}
 
 	/**
@@ -214,6 +311,44 @@ public class ProductStoreEmailSettingImpl extends BizEntityImpl implements Produ
 	@Override
 	public void setXslfoAttachScreenLocation(String newXslfoAttachScreenLocation) {
 		eSet(StorePackage.Literals.PRODUCT_STORE_EMAIL_SETTING__XSLFO_ATTACH_SCREEN_LOCATION, newXslfoAttachScreenLocation);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (derivedFeatureID) {
+				case StorePackage.PRODUCT_STORE_EMAIL_SETTING__CREATED_STAMP: return EntityPackage.ENTITY_INFO__CREATED_STAMP;
+				case StorePackage.PRODUCT_STORE_EMAIL_SETTING__CREATED_TX_STAMP: return EntityPackage.ENTITY_INFO__CREATED_TX_STAMP;
+				case StorePackage.PRODUCT_STORE_EMAIL_SETTING__LAST_UPDATED_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP;
+				case StorePackage.PRODUCT_STORE_EMAIL_SETTING__LAST_UPDATED_TX_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (baseFeatureID) {
+				case EntityPackage.ENTITY_INFO__CREATED_STAMP: return StorePackage.PRODUCT_STORE_EMAIL_SETTING__CREATED_STAMP;
+				case EntityPackage.ENTITY_INFO__CREATED_TX_STAMP: return StorePackage.PRODUCT_STORE_EMAIL_SETTING__CREATED_TX_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP: return StorePackage.PRODUCT_STORE_EMAIL_SETTING__LAST_UPDATED_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP: return StorePackage.PRODUCT_STORE_EMAIL_SETTING__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
 	/**

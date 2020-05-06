@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.workeffort.workeffort;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItem;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.model.product.inventory.InventoryItem;
  * @model
  * @generated
  */
-public interface WorkEffortInventoryProduced extends BizEntity {
+public interface WorkEffortInventoryProduced extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Inventory Item Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

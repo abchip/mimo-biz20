@@ -2656,7 +2656,7 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		GeoPackage theGeoPackage = (GeoPackage)EPackage.Registry.INSTANCE.getEPackage(GeoPackage.eNS_URI);
 		UomPackage theUomPackage = (UomPackage)EPackage.Registry.INSTANCE.getEPackage(UomPackage.eNS_URI);
 		InventoryPackage theInventoryPackage = (InventoryPackage)EPackage.Registry.INSTANCE.getEPackage(InventoryPackage.eNS_URI);
@@ -2673,37 +2673,64 @@ public class FacilityPackageImpl extends EPackageImpl implements FacilityPackage
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		containerEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		containerGeoPointEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		containerTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		containerEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		containerEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		containerGeoPointEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		containerGeoPointEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		containerTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		containerTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getFacilityType());
 		g1.getETypeArguments().add(g2);
 		facilityEClass.getEGenericSuperTypes().add(g1);
-		facilityAssocTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		facilityAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		facilityCalendarEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		facilityCalendarTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		facilityCarrierShipmentEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		facilityContactMechEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		facilityContactMechPurposeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		facilityContentEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		facilityGroupEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		facilityGroupMemberEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		facilityGroupRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		facilityGroupRollupEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		facilityGroupTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		facilityLocationEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		facilityLocationGeoPointEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		facilityPartyEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		facilityEClass.getEGenericSuperTypes().add(g1);
+		facilityAssocTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		facilityAssocTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		facilityAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		facilityAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		facilityCalendarEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		facilityCalendarEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		facilityCalendarTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		facilityCalendarTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		facilityCarrierShipmentEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		facilityCarrierShipmentEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		facilityContactMechEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		facilityContactMechEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		facilityContactMechPurposeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		facilityContactMechPurposeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		facilityContentEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		facilityContentEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		facilityGroupEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		facilityGroupEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		facilityGroupMemberEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		facilityGroupMemberEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		facilityGroupRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		facilityGroupRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		facilityGroupRollupEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		facilityGroupRollupEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		facilityGroupTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		facilityGroupTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		facilityLocationEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		facilityLocationEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		facilityLocationGeoPointEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		facilityLocationGeoPointEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		facilityPartyEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		facilityPartyEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getFacility());
 		g1.getETypeArguments().add(g2);
 		facilityTypeEClass.getEGenericSuperTypes().add(g1);
-		facilityTypeAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productFacilityEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productFacilityAssocEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productFacilityLocationEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		facilityTypeEClass.getEGenericSuperTypes().add(g1);
+		facilityTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		facilityTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productFacilityEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productFacilityEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productFacilityAssocEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productFacilityAssocEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productFacilityLocationEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productFacilityLocationEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(containerEClass, org.abchip.mimo.biz.model.product.facility.Container.class, "Container", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

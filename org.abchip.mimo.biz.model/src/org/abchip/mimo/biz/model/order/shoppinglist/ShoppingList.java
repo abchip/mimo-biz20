@@ -9,13 +9,14 @@ package org.abchip.mimo.biz.model.order.shoppinglist;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethod;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.promo.ProductPromoCode;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
 import org.abchip.mimo.biz.model.service.schedule.RecurrenceInfo;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -54,7 +55,7 @@ import org.abchip.mimo.biz.model.service.schedule.RecurrenceInfo;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface ShoppingList extends BizEntity {
+public interface ShoppingList extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Carrier Party Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

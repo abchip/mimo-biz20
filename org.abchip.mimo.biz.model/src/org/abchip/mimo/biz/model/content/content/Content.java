@@ -9,7 +9,6 @@ package org.abchip.mimo.biz.model.content.content;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.datasource.DataSource;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.method.CustomMethod;
@@ -18,6 +17,8 @@ import org.abchip.mimo.biz.model.content.data.CharacterSet;
 import org.abchip.mimo.biz.model.content.data.DataResource;
 import org.abchip.mimo.biz.model.content.data.MimeType;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -62,7 +63,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  * @model annotation="mimo-ent-frame dictionary='ContentEntityLabels' formula='description'"
  * @generated
  */
-public interface Content extends BizEntityTyped<ContentType> {
+public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Character Set Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

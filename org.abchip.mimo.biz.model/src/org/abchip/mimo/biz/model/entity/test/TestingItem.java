@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.entity.test;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model
  * @generated
  */
-public interface TestingItem extends BizEntity {
+public interface TestingItem extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Testing History</b></em>' attribute.
 	 * <!-- begin-user-doc -->

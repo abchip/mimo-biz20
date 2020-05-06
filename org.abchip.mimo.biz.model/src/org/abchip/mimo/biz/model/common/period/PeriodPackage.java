@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.common.period;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_TIME_PERIOD__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CUSTOM_TIME_PERIOD__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_TIME_PERIOD__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CUSTOM_TIME_PERIOD__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_TIME_PERIOD__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CUSTOM_TIME_PERIOD__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_TIME_PERIOD__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CUSTOM_TIME_PERIOD__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Custom Time Period Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_TIME_PERIOD__CUSTOM_TIME_PERIOD_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CUSTOM_TIME_PERIOD__CUSTOM_TIME_PERIOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_TIME_PERIOD__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CUSTOM_TIME_PERIOD__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Is Closed</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_TIME_PERIOD__IS_CLOSED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CUSTOM_TIME_PERIOD__IS_CLOSED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Organization Party Id</b></em>' reference.
@@ -141,7 +141,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_TIME_PERIOD__ORGANIZATION_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int CUSTOM_TIME_PERIOD__ORGANIZATION_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Parent Period Id</b></em>' reference.
@@ -150,7 +150,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_TIME_PERIOD__PARENT_PERIOD_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int CUSTOM_TIME_PERIOD__PARENT_PERIOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Period Name</b></em>' attribute.
@@ -159,7 +159,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_TIME_PERIOD__PERIOD_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int CUSTOM_TIME_PERIOD__PERIOD_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Period Num</b></em>' attribute.
@@ -168,7 +168,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_TIME_PERIOD__PERIOD_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int CUSTOM_TIME_PERIOD__PERIOD_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Period Type Id</b></em>' reference.
@@ -177,7 +177,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_TIME_PERIOD__PERIOD_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int CUSTOM_TIME_PERIOD__PERIOD_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -186,7 +186,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_TIME_PERIOD__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int CUSTOM_TIME_PERIOD__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The number of structural features of the '<em>Custom Time Period</em>' class.
@@ -195,7 +195,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_TIME_PERIOD_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int CUSTOM_TIME_PERIOD_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.period.impl.PeriodTypeImpl <em>Type</em>}' class.
@@ -214,7 +214,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERIOD_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PERIOD_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -223,7 +223,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERIOD_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PERIOD_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -232,7 +232,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERIOD_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PERIOD_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -241,7 +241,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERIOD_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PERIOD_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Period Type Id</b></em>' attribute.
@@ -250,7 +250,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERIOD_TYPE__PERIOD_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PERIOD_TYPE__PERIOD_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -259,7 +259,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERIOD_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PERIOD_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Period Length</b></em>' attribute.
@@ -268,7 +268,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERIOD_TYPE__PERIOD_LENGTH = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PERIOD_TYPE__PERIOD_LENGTH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Uom Id</b></em>' reference.
@@ -277,7 +277,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERIOD_TYPE__UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PERIOD_TYPE__UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -286,7 +286,7 @@ public interface PeriodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERIOD_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PERIOD_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 
 	/**

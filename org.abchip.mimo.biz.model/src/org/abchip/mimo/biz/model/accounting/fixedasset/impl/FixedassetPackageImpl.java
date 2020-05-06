@@ -2544,7 +2544,7 @@ public class FixedassetPackageImpl extends EPackageImpl implements FixedassetPac
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		OrderPackage theOrderPackage = (OrderPackage)EPackage.Registry.INSTANCE.getEPackage(OrderPackage.eNS_URI);
 		TechdataPackage theTechdataPackage = (TechdataPackage)EPackage.Registry.INSTANCE.getEPackage(TechdataPackage.eNS_URI);
 		EnumPackage theEnumPackage = (EnumPackage)EPackage.Registry.INSTANCE.getEPackage(EnumPackage.eNS_URI);
@@ -2563,39 +2563,64 @@ public class FixedassetPackageImpl extends EPackageImpl implements FixedassetPac
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		accommodationClassEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		accommodationMapEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		accommodationMapTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		accommodationClassEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		accommodationClassEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		accommodationMapEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		accommodationMapEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		accommodationMapTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		accommodationMapTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getFixedAssetType());
 		g1.getETypeArguments().add(g2);
 		fixedAssetEClass.getEGenericSuperTypes().add(g1);
-		fixedAssetAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		fixedAssetDepMethodEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		fixedAssetGeoPointEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		fixedAssetIdentEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		fixedAssetIdentTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		fixedAssetMaintEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		fixedAssetMaintOrderEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		fixedAssetMeterEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		fixedAssetProductEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		fixedAssetProductTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		fixedAssetRegistrationEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		fixedAssetEClass.getEGenericSuperTypes().add(g1);
+		fixedAssetAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		fixedAssetAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		fixedAssetDepMethodEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		fixedAssetDepMethodEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		fixedAssetGeoPointEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		fixedAssetGeoPointEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		fixedAssetIdentEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		fixedAssetIdentEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		fixedAssetIdentTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		fixedAssetIdentTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		fixedAssetMaintEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		fixedAssetMaintEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		fixedAssetMaintOrderEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		fixedAssetMaintOrderEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		fixedAssetMeterEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		fixedAssetMeterEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		fixedAssetProductEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		fixedAssetProductEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		fixedAssetProductTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		fixedAssetProductTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		fixedAssetRegistrationEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		fixedAssetRegistrationEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		g2 = createEGenericType(this.getFixedAssetStdCostType());
 		g1.getETypeArguments().add(g2);
 		fixedAssetStdCostEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		fixedAssetStdCostEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getFixedAssetStdCost());
 		g1.getETypeArguments().add(g2);
 		fixedAssetStdCostTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		fixedAssetStdCostTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getFixedAsset());
 		g1.getETypeArguments().add(g2);
 		fixedAssetTypeEClass.getEGenericSuperTypes().add(g1);
-		fixedAssetTypeAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		fixedAssetTypeGlAccountEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		partyFixedAssetAssignmentEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		fixedAssetTypeEClass.getEGenericSuperTypes().add(g1);
+		fixedAssetTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		fixedAssetTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		fixedAssetTypeGlAccountEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		fixedAssetTypeGlAccountEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		partyFixedAssetAssignmentEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		partyFixedAssetAssignmentEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(accommodationClassEClass, AccommodationClass.class, "AccommodationClass", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

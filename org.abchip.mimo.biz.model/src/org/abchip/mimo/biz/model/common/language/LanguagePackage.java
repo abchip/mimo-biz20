@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.common.language;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -77,7 +77,7 @@ public interface LanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STANDARD_LANGUAGE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int STANDARD_LANGUAGE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -86,7 +86,7 @@ public interface LanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STANDARD_LANGUAGE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int STANDARD_LANGUAGE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -95,7 +95,7 @@ public interface LanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STANDARD_LANGUAGE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int STANDARD_LANGUAGE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -104,7 +104,7 @@ public interface LanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STANDARD_LANGUAGE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int STANDARD_LANGUAGE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Standard Language Id</b></em>' attribute.
@@ -113,7 +113,7 @@ public interface LanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STANDARD_LANGUAGE__STANDARD_LANGUAGE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int STANDARD_LANGUAGE__STANDARD_LANGUAGE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Lang Charset</b></em>' attribute.
@@ -122,7 +122,7 @@ public interface LanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STANDARD_LANGUAGE__LANG_CHARSET = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int STANDARD_LANGUAGE__LANG_CHARSET = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Lang Code2</b></em>' attribute.
@@ -131,7 +131,7 @@ public interface LanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STANDARD_LANGUAGE__LANG_CODE2 = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int STANDARD_LANGUAGE__LANG_CODE2 = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Lang Code3b</b></em>' attribute.
@@ -140,7 +140,7 @@ public interface LanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STANDARD_LANGUAGE__LANG_CODE3B = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int STANDARD_LANGUAGE__LANG_CODE3B = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Lang Code3t</b></em>' attribute.
@@ -149,7 +149,7 @@ public interface LanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STANDARD_LANGUAGE__LANG_CODE3T = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int STANDARD_LANGUAGE__LANG_CODE3T = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Lang Family</b></em>' attribute.
@@ -158,7 +158,7 @@ public interface LanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STANDARD_LANGUAGE__LANG_FAMILY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int STANDARD_LANGUAGE__LANG_FAMILY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Lang Name</b></em>' attribute.
@@ -167,7 +167,7 @@ public interface LanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STANDARD_LANGUAGE__LANG_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int STANDARD_LANGUAGE__LANG_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Standard Language</em>' class.
@@ -176,7 +176,7 @@ public interface LanguagePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int STANDARD_LANGUAGE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int STANDARD_LANGUAGE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 
 	/**

@@ -7,7 +7,6 @@
  */
 package org.abchip.mimo.biz.model.entity;
 
-import org.abchip.mimo.biz.BizPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -77,7 +76,7 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JAVA_RESOURCE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int JAVA_RESOURCE__CREATED_STAMP = org.abchip.mimo.entity.EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -86,7 +85,7 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JAVA_RESOURCE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int JAVA_RESOURCE__CREATED_TX_STAMP = org.abchip.mimo.entity.EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -95,7 +94,7 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JAVA_RESOURCE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int JAVA_RESOURCE__LAST_UPDATED_STAMP = org.abchip.mimo.entity.EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -104,7 +103,7 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JAVA_RESOURCE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int JAVA_RESOURCE__LAST_UPDATED_TX_STAMP = org.abchip.mimo.entity.EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Resource Name</b></em>' attribute.
@@ -113,7 +112,7 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JAVA_RESOURCE__RESOURCE_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int JAVA_RESOURCE__RESOURCE_NAME = org.abchip.mimo.entity.EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Resource Value</b></em>' attribute.
@@ -122,7 +121,7 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JAVA_RESOURCE__RESOURCE_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int JAVA_RESOURCE__RESOURCE_VALUE = org.abchip.mimo.entity.EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Java Resource</em>' class.
@@ -131,7 +130,7 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JAVA_RESOURCE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int JAVA_RESOURCE_FEATURE_COUNT = org.abchip.mimo.entity.EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 
 	/**

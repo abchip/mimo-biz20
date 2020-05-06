@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.order.shoppinglist;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
  * @model
  * @generated
  */
-public interface ShoppingListWorkEffort extends BizEntity {
+public interface ShoppingListWorkEffort extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Shopping List Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

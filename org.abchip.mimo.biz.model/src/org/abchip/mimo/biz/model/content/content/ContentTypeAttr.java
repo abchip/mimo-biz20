@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.content.content;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Content Type Attribute' formula='description'"
  * @generated
  */
-public interface ContentTypeAttr extends BizEntity {
+public interface ContentTypeAttr extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Attr Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

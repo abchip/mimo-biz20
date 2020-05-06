@@ -8,9 +8,10 @@
 package org.abchip.mimo.biz.model.party.party;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +32,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  * @model annotation="mimo-ent-frame title='Tracks a history of the status of a Party'"
  * @generated
  */
-public interface PartyStatus extends BizEntity {
+public interface PartyStatus extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Change By User Login Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

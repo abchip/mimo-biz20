@@ -8,11 +8,12 @@
 package org.abchip.mimo.biz.model.accounting.ledger;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethod;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.method.CustomMethod;
 import org.abchip.mimo.biz.model.common.uom.Uom;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -52,7 +53,7 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
  * @model annotation="mimo-ent-frame title='Party (organization) accounting preferences'"
  * @generated
  */
-public interface PartyAcctgPreference extends BizEntity {
+public interface PartyAcctgPreference extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Base Currency Uom Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

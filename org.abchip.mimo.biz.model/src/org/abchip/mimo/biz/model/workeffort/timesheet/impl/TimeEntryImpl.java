@@ -8,8 +8,6 @@
 package org.abchip.mimo.biz.model.workeffort.timesheet.impl;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
 import org.abchip.mimo.biz.model.accounting.rate.RateType;
 import org.abchip.mimo.biz.model.party.party.Party;
@@ -17,6 +15,9 @@ import org.abchip.mimo.biz.model.workeffort.timesheet.TimeEntry;
 import org.abchip.mimo.biz.model.workeffort.timesheet.Timesheet;
 import org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityPackage;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -27,6 +28,10 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getCreatedStamp <em>Created Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getTimeEntryId <em>Time Entry Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimeEntryImpl#getFromDate <em>From Date</em>}</li>
@@ -42,7 +47,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class TimeEntryImpl extends BizEntityImpl implements TimeEntry {
+public class TimeEntryImpl extends EntityIdentifiableImpl implements TimeEntry {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -61,6 +66,96 @@ public class TimeEntryImpl extends BizEntityImpl implements TimeEntry {
 	@Override
 	protected EClass eStaticClass() {
 		return TimesheetPackage.Literals.TIME_ENTRY;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return 0;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedStamp(Date newCreatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, newCreatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedTxStamp(Date newCreatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, newCreatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedStamp(Date newLastUpdatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, newLastUpdatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
 	}
 
 	/**
@@ -281,6 +376,44 @@ public class TimeEntryImpl extends BizEntityImpl implements TimeEntry {
 	@Override
 	public void setWorkEffortId(WorkEffort newWorkEffortId) {
 		eSet(TimesheetPackage.Literals.TIME_ENTRY__WORK_EFFORT_ID, newWorkEffortId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (derivedFeatureID) {
+				case TimesheetPackage.TIME_ENTRY__CREATED_STAMP: return EntityPackage.ENTITY_INFO__CREATED_STAMP;
+				case TimesheetPackage.TIME_ENTRY__CREATED_TX_STAMP: return EntityPackage.ENTITY_INFO__CREATED_TX_STAMP;
+				case TimesheetPackage.TIME_ENTRY__LAST_UPDATED_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP;
+				case TimesheetPackage.TIME_ENTRY__LAST_UPDATED_TX_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (baseFeatureID) {
+				case EntityPackage.ENTITY_INFO__CREATED_STAMP: return TimesheetPackage.TIME_ENTRY__CREATED_STAMP;
+				case EntityPackage.ENTITY_INFO__CREATED_TX_STAMP: return TimesheetPackage.TIME_ENTRY__CREATED_TX_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP: return TimesheetPackage.TIME_ENTRY__LAST_UPDATED_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP: return TimesheetPackage.TIME_ENTRY__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
 } //TimeEntryImpl

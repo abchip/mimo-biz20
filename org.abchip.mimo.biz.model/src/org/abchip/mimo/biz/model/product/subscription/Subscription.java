@@ -9,7 +9,6 @@ package org.abchip.mimo.biz.model.product.subscription;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.order.order.OrderHeader;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
@@ -19,6 +18,8 @@ import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.abchip.mimo.biz.model.product.category.ProductCategory;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItem;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -72,7 +73,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface Subscription extends BizEntityTyped<SubscriptionType> {
+public interface Subscription extends EntityTyped<SubscriptionType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Available Time</b></em>' attribute.
 	 * <!-- begin-user-doc -->

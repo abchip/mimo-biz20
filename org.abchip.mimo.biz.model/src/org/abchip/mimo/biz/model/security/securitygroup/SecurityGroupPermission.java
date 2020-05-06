@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.security.securitygroup;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame help='Defines a permission available to a security group; there is no FK to SecurityPermission because we want to leave open the possibility of ad-hoc permissions, especially for the Entity Data Maintenance pages which have TONS of permissions' title='Security Component - Security Group Permission'"
  * @generated
  */
-public interface SecurityGroupPermission extends BizEntity {
+public interface SecurityGroupPermission extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -10,13 +10,14 @@ package org.abchip.mimo.biz.model.accounting.ledger;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.accounting.DebitCreditFlag;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItem;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -58,7 +59,7 @@ import org.abchip.mimo.biz.model.product.inventory.InventoryItem;
  * @model annotation="mimo-ent-frame title='Transaction Entry' formula='description'"
  * @generated
  */
-public interface AcctgTransEntry extends BizEntityTyped<AcctgTransEntryType> {
+public interface AcctgTransEntry extends EntityTyped<AcctgTransEntryType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Acctg Trans Entry Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

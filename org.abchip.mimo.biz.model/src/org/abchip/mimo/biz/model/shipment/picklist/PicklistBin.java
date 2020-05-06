@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.shipment.picklist;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.order.order.OrderHeader;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.order.order.OrderHeader;
  * @model annotation="mimo-ent-frame title='Picklist'"
  * @generated
  */
-public interface PicklistBin extends BizEntity {
+public interface PicklistBin extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Bin Location Number</b></em>' attribute.
 	 * <!-- begin-user-doc -->

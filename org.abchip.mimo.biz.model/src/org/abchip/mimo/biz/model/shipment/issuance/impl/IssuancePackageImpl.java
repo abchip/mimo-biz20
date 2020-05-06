@@ -920,7 +920,7 @@ public class IssuancePackageImpl extends EPackageImpl implements IssuancePackage
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		InventoryPackage theInventoryPackage = (InventoryPackage)EPackage.Registry.INSTANCE.getEPackage(InventoryPackage.eNS_URI);
 		LoginPackage theLoginPackage = (LoginPackage)EPackage.Registry.INSTANCE.getEPackage(LoginPackage.eNS_URI);
 		OrderPackage theOrderPackage = (OrderPackage)EPackage.Registry.INSTANCE.getEPackage(OrderPackage.eNS_URI);
@@ -932,8 +932,10 @@ public class IssuancePackageImpl extends EPackageImpl implements IssuancePackage
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		itemIssuanceEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		itemIssuanceRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		itemIssuanceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		itemIssuanceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		itemIssuanceRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		itemIssuanceRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(itemIssuanceEClass, ItemIssuance.class, "ItemIssuance", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

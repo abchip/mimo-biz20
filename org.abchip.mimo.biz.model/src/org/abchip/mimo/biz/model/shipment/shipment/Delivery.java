@@ -10,9 +10,10 @@ package org.abchip.mimo.biz.model.shipment.shipment;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset;
 import org.abchip.mimo.biz.model.product.facility.Facility;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -40,7 +41,7 @@ import org.abchip.mimo.biz.model.product.facility.Facility;
  * @model
  * @generated
  */
-public interface Delivery extends BizEntity {
+public interface Delivery extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Actual Arrival Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

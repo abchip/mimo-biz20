@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.order.requirement;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.order.request.CustRequest;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.model.order.request.CustRequest;
  * @model annotation="mimo-ent-frame title='Requirement Customer Request'"
  * @generated
  */
-public interface RequirementCustRequest extends BizEntity {
+public interface RequirementCustRequest extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Cust Request Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

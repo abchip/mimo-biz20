@@ -8,9 +8,10 @@
 package org.abchip.mimo.biz.model.shipment.picklist;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +35,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  * @model
  * @generated
  */
-public interface PicklistRole extends BizEntity {
+public interface PicklistRole extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Created By User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->

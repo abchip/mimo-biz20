@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.entity.tenant;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame help='Component Entity'"
  * @generated
  */
-public interface Component extends BizEntity {
+public interface Component extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Component Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

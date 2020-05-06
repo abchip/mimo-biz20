@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.party.party;
 
-import org.abchip.mimo.biz.BizEntityTyped;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntityTyped;
  * @model
  * @generated
  */
-public interface PartyIdentification extends BizEntityTyped<PartyIdentificationType> {
+public interface PartyIdentification extends EntityTyped<PartyIdentificationType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Id Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.order.request;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Customer Category Type' formula='description'"
  * @generated
  */
-public interface CustRequestCategory extends BizEntity {
+public interface CustRequestCategory extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Cust Request Category Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -1114,17 +1114,21 @@ public class TechdataPackageImpl extends EPackageImpl implements TechdataPackage
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 
 		// Create type parameters
 
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		techDataCalendarEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		techDataCalendarExcDayEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		techDataCalendarExcWeekEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		techDataCalendarWeekEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		techDataCalendarEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		techDataCalendarEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		techDataCalendarExcDayEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		techDataCalendarExcDayEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		techDataCalendarExcWeekEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		techDataCalendarExcWeekEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		techDataCalendarWeekEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		techDataCalendarWeekEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(techDataCalendarEClass, TechDataCalendar.class, "TechDataCalendar", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

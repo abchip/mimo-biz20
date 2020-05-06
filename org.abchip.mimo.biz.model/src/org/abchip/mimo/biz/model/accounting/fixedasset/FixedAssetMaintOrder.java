@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.accounting.fixedasset;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.order.order.OrderHeader;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.model.order.order.OrderHeader;
  * @model annotation="mimo-ent-frame title='Fixed Asset Maintance And Order'"
  * @generated
  */
-public interface FixedAssetMaintOrder extends BizEntity {
+public interface FixedAssetMaintOrder extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Maint Hist Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

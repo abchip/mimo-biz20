@@ -779,7 +779,7 @@ public class ReservationsPackageImpl extends EPackageImpl implements Reservation
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		FixedassetPackage theFixedassetPackage = (FixedassetPackage)EPackage.Registry.INSTANCE.getEPackage(FixedassetPackage.eNS_URI);
 
 		// Create type parameters
@@ -787,7 +787,8 @@ public class ReservationsPackageImpl extends EPackageImpl implements Reservation
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		accommodationSpotEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		accommodationSpotEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		accommodationSpotEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(accommodationSpotEClass, AccommodationSpot.class, "AccommodationSpot", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

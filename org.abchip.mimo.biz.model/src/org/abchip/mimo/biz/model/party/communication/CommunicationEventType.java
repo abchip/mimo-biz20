@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.party.communication;
 
-import org.abchip.mimo.biz.BizEntityType;
 import org.abchip.mimo.biz.model.party.contact.ContactMechType;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.party.contact.ContactMechType;
  * @model annotation="mimo-ent-frame dictionary='PartyEntityLabels' formula='description'"
  * @generated
  */
-public interface CommunicationEventType extends BizEntityType<CommunicationEvent> {
+public interface CommunicationEventType extends EntityType<CommunicationEvent>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Contact Mech Type Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

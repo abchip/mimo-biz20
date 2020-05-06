@@ -821,7 +821,7 @@ public class UserPackageImpl extends EPackageImpl implements UserPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		LoginPackage theLoginPackage = (LoginPackage)EPackage.Registry.INSTANCE.getEPackage(LoginPackage.eNS_URI);
 
 		// Create type parameters
@@ -829,8 +829,10 @@ public class UserPackageImpl extends EPackageImpl implements UserPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		userPrefGroupTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		userPreferenceEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		userPrefGroupTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		userPrefGroupTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		userPreferenceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		userPreferenceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(userPrefGroupTypeEClass, UserPrefGroupType.class, "UserPrefGroupType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

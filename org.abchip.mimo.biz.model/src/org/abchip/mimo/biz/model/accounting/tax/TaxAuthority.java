@@ -7,9 +7,10 @@
  */
 package org.abchip.mimo.biz.model.accounting.tax;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +32,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model
  * @generated
  */
-public interface TaxAuthority extends BizEntity {
+public interface TaxAuthority extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Include Tax In Price</b></em>' attribute.
 	 * <!-- begin-user-doc -->

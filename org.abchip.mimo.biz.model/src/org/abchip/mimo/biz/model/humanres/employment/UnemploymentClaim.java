@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.humanres.employment;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,7 +37,7 @@ import org.abchip.mimo.biz.model.common.status.StatusItem;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface UnemploymentClaim extends BizEntity {
+public interface UnemploymentClaim extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

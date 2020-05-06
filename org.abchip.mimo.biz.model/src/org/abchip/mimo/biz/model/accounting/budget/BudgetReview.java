@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.accounting.budget;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +32,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model
  * @generated
  */
-public interface BudgetReview extends BizEntity {
+public interface BudgetReview extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Budget Review Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

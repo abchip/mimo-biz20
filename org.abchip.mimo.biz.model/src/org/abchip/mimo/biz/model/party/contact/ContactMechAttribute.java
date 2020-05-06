@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.party.contact;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Contact Mechanism Attribute'"
  * @generated
  */
-public interface ContactMechAttribute extends BizEntity {
+public interface ContactMechAttribute extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Attr Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

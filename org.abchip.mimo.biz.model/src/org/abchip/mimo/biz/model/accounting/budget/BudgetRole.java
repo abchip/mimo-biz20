@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.accounting.budget;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model
  * @generated
  */
-public interface BudgetRole extends BizEntity {
+public interface BudgetRole extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

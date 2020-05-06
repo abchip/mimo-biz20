@@ -7,11 +7,14 @@
  */
 package org.abchip.mimo.biz.model.product.feature.impl;
 
-import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
+import java.util.Date;
 import org.abchip.mimo.biz.model.product.feature.FeaturePackage;
 import org.abchip.mimo.biz.model.product.feature.ProductFeature;
 import org.abchip.mimo.biz.model.product.feature.ProductFeatureIactn;
 import org.abchip.mimo.biz.model.product.feature.ProductFeatureIactnType;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityPackage;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -22,6 +25,10 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnImpl#getCreatedStamp <em>Created Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnImpl#getProductFeatureId <em>Product Feature Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnImpl#getProductFeatureIdTo <em>Product Feature Id To</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureIactnImpl#getProductFeatureIactnTypeId <em>Product Feature Iactn Type Id</em>}</li>
@@ -30,7 +37,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ProductFeatureIactnImpl extends BizEntityTypedImpl<ProductFeatureIactnType> implements ProductFeatureIactn {
+public class ProductFeatureIactnImpl extends EntityTypedImpl<ProductFeatureIactnType> implements ProductFeatureIactn {
 	
 	/**
 	 * <!-- begin-user-doc -->
@@ -57,6 +64,96 @@ public class ProductFeatureIactnImpl extends BizEntityTypedImpl<ProductFeatureIa
 	 * @generated
 	 */
 	@Override
+	protected int eStaticFeatureCount() {
+		return 0;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedStamp(Date newCreatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, newCreatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedTxStamp(Date newCreatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, newCreatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedStamp(Date newLastUpdatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, newLastUpdatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public String getProductId() {
 		return (String)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_IACTN__PRODUCT_ID, true);
 	}
@@ -69,6 +166,44 @@ public class ProductFeatureIactnImpl extends BizEntityTypedImpl<ProductFeatureIa
 	@Override
 	public void setProductId(String newProductId) {
 		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_IACTN__PRODUCT_ID, newProductId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (derivedFeatureID) {
+				case FeaturePackage.PRODUCT_FEATURE_IACTN__CREATED_STAMP: return EntityPackage.ENTITY_INFO__CREATED_STAMP;
+				case FeaturePackage.PRODUCT_FEATURE_IACTN__CREATED_TX_STAMP: return EntityPackage.ENTITY_INFO__CREATED_TX_STAMP;
+				case FeaturePackage.PRODUCT_FEATURE_IACTN__LAST_UPDATED_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP;
+				case FeaturePackage.PRODUCT_FEATURE_IACTN__LAST_UPDATED_TX_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (baseFeatureID) {
+				case EntityPackage.ENTITY_INFO__CREATED_STAMP: return FeaturePackage.PRODUCT_FEATURE_IACTN__CREATED_STAMP;
+				case EntityPackage.ENTITY_INFO__CREATED_TX_STAMP: return FeaturePackage.PRODUCT_FEATURE_IACTN__CREATED_TX_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP: return FeaturePackage.PRODUCT_FEATURE_IACTN__LAST_UPDATED_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP: return FeaturePackage.PRODUCT_FEATURE_IACTN__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
 	/**

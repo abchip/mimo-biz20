@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.party.contact;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame help='Holds hashes for email address verification'"
  * @generated
  */
-public interface EmailAddressVerification extends BizEntity {
+public interface EmailAddressVerification extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Email Address</b></em>' attribute.
 	 * <!-- begin-user-doc -->

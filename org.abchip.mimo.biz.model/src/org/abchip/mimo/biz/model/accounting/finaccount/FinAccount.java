@@ -11,11 +11,12 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethod;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -50,7 +51,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model annotation="mimo-ent-frame title='Financial Account'"
  * @generated
  */
-public interface FinAccount extends BizEntityTyped<FinAccountType> {
+public interface FinAccount extends EntityTyped<FinAccountType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Actual Balance</b></em>' attribute.
 	 * <!-- begin-user-doc -->

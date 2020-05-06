@@ -8,9 +8,10 @@
 package org.abchip.mimo.biz.model.entity.test;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  * @model annotation="mimo-ent-frame help='An entity for testing EntityStatus concept' title='Entity for testing EntityStatus concept'"
  * @generated
  */
-public interface TestingStatus extends BizEntity {
+public interface TestingStatus extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Change By User Login Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

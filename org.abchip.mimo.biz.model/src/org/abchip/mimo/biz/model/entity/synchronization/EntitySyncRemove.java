@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.entity.synchronization;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +27,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Entity Synchronization Remove'"
  * @generated
  */
-public interface EntitySyncRemove extends BizEntity {
+public interface EntitySyncRemove extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Entity Sync Remove Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

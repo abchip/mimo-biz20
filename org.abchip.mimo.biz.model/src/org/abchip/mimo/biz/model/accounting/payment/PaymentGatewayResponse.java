@@ -10,10 +10,11 @@ package org.abchip.mimo.biz.model.accounting.payment;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.order.order.OrderPaymentPreference;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -52,7 +53,7 @@ import org.abchip.mimo.biz.model.order.order.OrderPaymentPreference;
  * @model
  * @generated
  */
-public interface PaymentGatewayResponse extends BizEntity {
+public interface PaymentGatewayResponse extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Alt Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

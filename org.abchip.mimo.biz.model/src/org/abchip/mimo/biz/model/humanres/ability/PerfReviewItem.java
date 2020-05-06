@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.humanres.ability;
 
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model annotation="mimo-ent-frame title='Performance Review Item'"
  * @generated
  */
-public interface PerfReviewItem extends BizEntityTyped<PerfReviewItemType> {
+public interface PerfReviewItem extends EntityTyped<PerfReviewItemType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
 	 * <!-- begin-user-doc -->

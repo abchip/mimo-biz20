@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.common.uom;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int UOM__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int UOM__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int UOM__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int UOM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Uom Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM__UOM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int UOM__UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Abbreviation</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM__ABBREVIATION = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int UOM__ABBREVIATION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int UOM__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Main Uom Conversions</b></em>' reference list.
@@ -141,7 +141,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM__MAIN_UOM_CONVERSIONS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int UOM__MAIN_UOM_CONVERSIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Numeric Code</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM__NUMERIC_CODE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int UOM__NUMERIC_CODE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Uom Type Id</b></em>' reference.
@@ -159,7 +159,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM__UOM_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int UOM__UOM_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Uom</em>' class.
@@ -168,7 +168,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int UOM_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionImpl <em>Conversion</em>}' class.
@@ -187,7 +187,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int UOM_CONVERSION__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -196,7 +196,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int UOM_CONVERSION__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -205,7 +205,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int UOM_CONVERSION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -214,7 +214,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int UOM_CONVERSION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Uom Id</b></em>' reference.
@@ -223,7 +223,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION__UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int UOM_CONVERSION__UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Uom Id To</b></em>' reference.
@@ -232,7 +232,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION__UOM_ID_TO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int UOM_CONVERSION__UOM_ID_TO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Conversion Factor</b></em>' attribute.
@@ -241,7 +241,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION__CONVERSION_FACTOR = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int UOM_CONVERSION__CONVERSION_FACTOR = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Custom Method Id</b></em>' reference.
@@ -250,7 +250,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION__CUSTOM_METHOD_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int UOM_CONVERSION__CUSTOM_METHOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Decimal Scale</b></em>' attribute.
@@ -259,7 +259,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION__DECIMAL_SCALE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int UOM_CONVERSION__DECIMAL_SCALE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Rounding Mode</b></em>' attribute.
@@ -268,7 +268,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION__ROUNDING_MODE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int UOM_CONVERSION__ROUNDING_MODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Conversion</em>' class.
@@ -277,7 +277,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int UOM_CONVERSION_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionDatedImpl <em>Conversion Dated</em>}' class.
@@ -296,7 +296,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION_DATED__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int UOM_CONVERSION_DATED__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -305,7 +305,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION_DATED__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int UOM_CONVERSION_DATED__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -314,7 +314,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION_DATED__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int UOM_CONVERSION_DATED__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -323,7 +323,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION_DATED__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int UOM_CONVERSION_DATED__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Uom Id</b></em>' reference.
@@ -332,7 +332,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION_DATED__UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int UOM_CONVERSION_DATED__UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Uom Id To</b></em>' reference.
@@ -341,7 +341,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION_DATED__UOM_ID_TO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int UOM_CONVERSION_DATED__UOM_ID_TO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -350,7 +350,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION_DATED__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int UOM_CONVERSION_DATED__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Conversion Factor</b></em>' attribute.
@@ -359,7 +359,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION_DATED__CONVERSION_FACTOR = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int UOM_CONVERSION_DATED__CONVERSION_FACTOR = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Custom Method Id</b></em>' reference.
@@ -368,7 +368,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION_DATED__CUSTOM_METHOD_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int UOM_CONVERSION_DATED__CUSTOM_METHOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Decimal Scale</b></em>' attribute.
@@ -377,7 +377,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION_DATED__DECIMAL_SCALE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int UOM_CONVERSION_DATED__DECIMAL_SCALE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Purpose Enum Id</b></em>' reference.
@@ -386,7 +386,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION_DATED__PURPOSE_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int UOM_CONVERSION_DATED__PURPOSE_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Rounding Mode</b></em>' attribute.
@@ -395,7 +395,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION_DATED__ROUNDING_MODE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int UOM_CONVERSION_DATED__ROUNDING_MODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -404,7 +404,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION_DATED__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int UOM_CONVERSION_DATED__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The number of structural features of the '<em>Conversion Dated</em>' class.
@@ -413,7 +413,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_CONVERSION_DATED_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int UOM_CONVERSION_DATED_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.uom.impl.UomGroupImpl <em>Group</em>}' class.
@@ -432,7 +432,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_GROUP__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int UOM_GROUP__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -441,7 +441,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_GROUP__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int UOM_GROUP__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -450,7 +450,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_GROUP__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int UOM_GROUP__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -459,7 +459,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_GROUP__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int UOM_GROUP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Uom Id</b></em>' reference.
@@ -468,7 +468,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_GROUP__UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int UOM_GROUP__UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Uom Group Id</b></em>' attribute.
@@ -477,7 +477,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_GROUP__UOM_GROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int UOM_GROUP__UOM_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Group</em>' class.
@@ -486,7 +486,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_GROUP_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int UOM_GROUP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.uom.impl.UomTypeImpl <em>Type</em>}' class.
@@ -505,7 +505,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int UOM_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -514,7 +514,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int UOM_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -523,7 +523,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int UOM_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -532,7 +532,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int UOM_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -541,7 +541,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int UOM_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Uom Type Id</b></em>' attribute.
@@ -550,7 +550,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_TYPE__UOM_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int UOM_TYPE__UOM_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -559,7 +559,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int UOM_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -568,7 +568,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int UOM_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -577,7 +577,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int UOM_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -586,7 +586,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int UOM_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 
 	/**

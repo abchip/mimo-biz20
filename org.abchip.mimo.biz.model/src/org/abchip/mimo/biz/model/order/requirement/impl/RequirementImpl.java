@@ -10,8 +10,6 @@ package org.abchip.mimo.biz.model.order.requirement.impl;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
-
-import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.order.requirement.Requirement;
@@ -23,6 +21,9 @@ import org.abchip.mimo.biz.model.order.requirement.WorkRequirementFulfillment;
 import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.model.workeffort.workeffort.Deliverable;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityPackage;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -33,6 +34,10 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getCreatedStamp <em>Created Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getRequirementId <em>Requirement Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.requirement.impl.RequirementImpl#getCreatedDate <em>Created Date</em>}</li>
@@ -59,7 +64,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class RequirementImpl extends BizEntityTypedImpl<RequirementType> implements Requirement {
+public class RequirementImpl extends EntityTypedImpl<RequirementType> implements Requirement {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -78,6 +83,96 @@ public class RequirementImpl extends BizEntityTypedImpl<RequirementType> impleme
 	@Override
 	protected EClass eStaticClass() {
 		return RequirementPackage.Literals.REQUIREMENT;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return 0;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedStamp(Date newCreatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, newCreatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedTxStamp(Date newCreatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, newCreatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedStamp(Date newLastUpdatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, newLastUpdatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
 	}
 
 	/**
@@ -491,6 +586,44 @@ public class RequirementImpl extends BizEntityTypedImpl<RequirementType> impleme
 	@Override
 	public List<WorkRequirementFulfillment> getWorkRequirementFulfillments() {
 		return (List<WorkRequirementFulfillment>)eGet(RequirementPackage.Literals.REQUIREMENT__WORK_REQUIREMENT_FULFILLMENTS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (derivedFeatureID) {
+				case RequirementPackage.REQUIREMENT__CREATED_STAMP: return EntityPackage.ENTITY_INFO__CREATED_STAMP;
+				case RequirementPackage.REQUIREMENT__CREATED_TX_STAMP: return EntityPackage.ENTITY_INFO__CREATED_TX_STAMP;
+				case RequirementPackage.REQUIREMENT__LAST_UPDATED_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP;
+				case RequirementPackage.REQUIREMENT__LAST_UPDATED_TX_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (baseFeatureID) {
+				case EntityPackage.ENTITY_INFO__CREATED_STAMP: return RequirementPackage.REQUIREMENT__CREATED_STAMP;
+				case EntityPackage.ENTITY_INFO__CREATED_TX_STAMP: return RequirementPackage.REQUIREMENT__CREATED_TX_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP: return RequirementPackage.REQUIREMENT__LAST_UPDATED_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP: return RequirementPackage.REQUIREMENT__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
 } //RequirementImpl

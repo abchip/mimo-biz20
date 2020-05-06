@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.party.agreement;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model annotation="mimo-ent-frame title='Agreement Party Application'"
  * @generated
  */
-public interface AgreementPartyApplic extends BizEntity {
+public interface AgreementPartyApplic extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Agreement Item Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

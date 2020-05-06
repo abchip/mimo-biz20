@@ -9,7 +9,8 @@ package org.abchip.mimo.biz.model.workeffort.workeffort;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +35,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model
  * @generated
  */
-public interface WorkEffortSearchResult extends BizEntity {
+public interface WorkEffortSearchResult extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Num Results</b></em>' attribute.
 	 * <!-- begin-user-doc -->

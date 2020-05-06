@@ -1336,7 +1336,7 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		TaxPackage theTaxPackage = (TaxPackage)EPackage.Registry.INSTANCE.getEPackage(TaxPackage.eNS_URI);
 		DatasourcePackage theDatasourcePackage = (DatasourcePackage)EPackage.Registry.INSTANCE.getEPackage(DatasourcePackage.eNS_URI);
 		UomPackage theUomPackage = (UomPackage)EPackage.Registry.INSTANCE.getEPackage(UomPackage.eNS_URI);
@@ -1347,20 +1347,29 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		countryAddressFormatEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		countryAddressFormatEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		countryAddressFormatEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		countryCapitalEClass.getESuperTypes().add(this.getCountryCode());
-		countryCodeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		countryCodeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		countryCodeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		countryTeleCodeEClass.getESuperTypes().add(this.getCountryCode());
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getGeoType());
 		g1.getETypeArguments().add(g2);
 		geoEClass.getEGenericSuperTypes().add(g1);
-		geoAssocEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		geoAssocTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		geoPointEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		geoEClass.getEGenericSuperTypes().add(g1);
+		geoAssocEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		geoAssocEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		geoAssocTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		geoAssocTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		geoPointEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		geoPointEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getGeo());
 		g1.getETypeArguments().add(g2);
+		geoTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
 		geoTypeEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters

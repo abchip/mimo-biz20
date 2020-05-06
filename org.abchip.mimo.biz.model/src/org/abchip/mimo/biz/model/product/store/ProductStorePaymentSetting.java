@@ -7,11 +7,12 @@
  */
 package org.abchip.mimo.biz.model.product.store;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayConfig;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.method.CustomMethod;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,7 +37,7 @@ import org.abchip.mimo.biz.model.common.method.CustomMethod;
  * @model annotation="mimo-ent-frame title='Product Store Payment Settings' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductStorePaymentSetting extends BizEntity {
+public interface ProductStorePaymentSetting extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Apply To All Products</b></em>' attribute.
 	 * <!-- begin-user-doc -->

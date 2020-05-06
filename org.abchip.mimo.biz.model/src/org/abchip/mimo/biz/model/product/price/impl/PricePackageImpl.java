@@ -1930,7 +1930,7 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		UomPackage theUomPackage = (UomPackage)EPackage.Registry.INSTANCE.getEPackage(UomPackage.eNS_URI);
 		LoginPackage theLoginPackage = (LoginPackage)EPackage.Registry.INSTANCE.getEPackage(LoginPackage.eNS_URI);
 		ProductPackage theProductPackage = (ProductPackage)EPackage.Registry.INSTANCE.getEPackage(ProductPackage.eNS_URI);
@@ -1946,20 +1946,34 @@ public class PricePackageImpl extends EPackageImpl implements PricePackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		productFeaturePriceEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productPaymentMethodTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productPriceEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productPriceActionEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productPriceActionTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productPriceAutoNoticeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productPriceChangeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productPriceCondEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productPricePurposeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productPriceRuleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productPriceTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		quantityBreakEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		quantityBreakTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		saleTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		productFeaturePriceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productFeaturePriceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPaymentMethodTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPaymentMethodTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPriceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPriceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPriceActionEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPriceActionEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPriceActionTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPriceActionTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPriceAutoNoticeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPriceAutoNoticeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPriceChangeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPriceChangeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPriceCondEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPriceCondEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPricePurposeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPricePurposeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPriceRuleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPriceRuleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPriceTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPriceTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		quantityBreakEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		quantityBreakEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		quantityBreakTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		quantityBreakTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		saleTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		saleTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(productFeaturePriceEClass, ProductFeaturePrice.class, "ProductFeaturePrice", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

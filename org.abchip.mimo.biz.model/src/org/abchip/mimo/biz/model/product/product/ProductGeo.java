@@ -7,9 +7,10 @@
  */
 package org.abchip.mimo.biz.model.product.product;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.geo.Geo;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.common.geo.Geo;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface ProductGeo extends BizEntity {
+public interface ProductGeo extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

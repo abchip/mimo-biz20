@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.product.promo;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +27,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Product Promotion Email' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductPromoCodeEmail extends BizEntity {
+public interface ProductPromoCodeEmail extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Email Address</b></em>' attribute.
 	 * <!-- begin-user-doc -->

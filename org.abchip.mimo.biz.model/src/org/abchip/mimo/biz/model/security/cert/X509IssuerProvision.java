@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.security.cert;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Valid issuer data for authentication of x.509 certificates'"
  * @generated
  */
-public interface X509IssuerProvision extends BizEntity {
+public interface X509IssuerProvision extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Cert Provision Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

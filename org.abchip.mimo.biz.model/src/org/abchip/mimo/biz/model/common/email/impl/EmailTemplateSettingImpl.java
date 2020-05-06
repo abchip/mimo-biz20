@@ -7,10 +7,13 @@
  */
 package org.abchip.mimo.biz.model.common.email.impl;
 
-import org.abchip.mimo.biz.impl.BizEntityImpl;
+import java.util.Date;
 import org.abchip.mimo.biz.model.common.email.EmailPackage;
 import org.abchip.mimo.biz.model.common.email.EmailTemplateSetting;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityPackage;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -21,6 +24,10 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link org.abchip.mimo.biz.model.common.email.impl.EmailTemplateSettingImpl#getCreatedStamp <em>Created Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.email.impl.EmailTemplateSettingImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.email.impl.EmailTemplateSettingImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.email.impl.EmailTemplateSettingImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.email.impl.EmailTemplateSettingImpl#getEmailTemplateSettingId <em>Email Template Setting Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.email.impl.EmailTemplateSettingImpl#getBccAddress <em>Bcc Address</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.email.impl.EmailTemplateSettingImpl#getBodyScreenLocation <em>Body Screen Location</em>}</li>
@@ -35,7 +42,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class EmailTemplateSettingImpl extends BizEntityImpl implements EmailTemplateSetting {
+public class EmailTemplateSettingImpl extends EntityIdentifiableImpl implements EmailTemplateSetting {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -53,6 +60,96 @@ public class EmailTemplateSettingImpl extends BizEntityImpl implements EmailTemp
 	@Override
 	protected EClass eStaticClass() {
 		return EmailPackage.Literals.EMAIL_TEMPLATE_SETTING;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return 0;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedStamp(Date newCreatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, newCreatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedTxStamp(Date newCreatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, newCreatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedStamp(Date newLastUpdatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, newLastUpdatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
 	}
 
 	/**
@@ -253,6 +350,44 @@ public class EmailTemplateSettingImpl extends BizEntityImpl implements EmailTemp
 	@Override
 	public void setXslfoAttachScreenLocation(String newXslfoAttachScreenLocation) {
 		eSet(EmailPackage.Literals.EMAIL_TEMPLATE_SETTING__XSLFO_ATTACH_SCREEN_LOCATION, newXslfoAttachScreenLocation);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (derivedFeatureID) {
+				case EmailPackage.EMAIL_TEMPLATE_SETTING__CREATED_STAMP: return EntityPackage.ENTITY_INFO__CREATED_STAMP;
+				case EmailPackage.EMAIL_TEMPLATE_SETTING__CREATED_TX_STAMP: return EntityPackage.ENTITY_INFO__CREATED_TX_STAMP;
+				case EmailPackage.EMAIL_TEMPLATE_SETTING__LAST_UPDATED_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP;
+				case EmailPackage.EMAIL_TEMPLATE_SETTING__LAST_UPDATED_TX_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (baseFeatureID) {
+				case EntityPackage.ENTITY_INFO__CREATED_STAMP: return EmailPackage.EMAIL_TEMPLATE_SETTING__CREATED_STAMP;
+				case EntityPackage.ENTITY_INFO__CREATED_TX_STAMP: return EmailPackage.EMAIL_TEMPLATE_SETTING__CREATED_TX_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP: return EmailPackage.EMAIL_TEMPLATE_SETTING__LAST_UPDATED_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP: return EmailPackage.EMAIL_TEMPLATE_SETTING__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
 } //EmailTemplateSettingImpl

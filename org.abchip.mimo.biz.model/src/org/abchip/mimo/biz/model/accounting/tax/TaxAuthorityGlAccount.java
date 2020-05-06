@@ -7,9 +7,10 @@
  */
 package org.abchip.mimo.biz.model.accounting.tax;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model
  * @generated
  */
-public interface TaxAuthorityGlAccount extends BizEntity {
+public interface TaxAuthorityGlAccount extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Organization Party Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

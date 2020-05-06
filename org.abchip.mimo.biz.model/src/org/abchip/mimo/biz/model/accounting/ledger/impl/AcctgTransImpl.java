@@ -9,8 +9,6 @@ package org.abchip.mimo.biz.model.accounting.ledger.impl;
 
 import java.util.Date;
 import java.util.List;
-
-import org.abchip.mimo.biz.impl.BizEntityTypedImpl;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset;
 import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
@@ -30,6 +28,9 @@ import org.abchip.mimo.biz.model.product.inventory.PhysicalInventory;
 import org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt;
 import org.abchip.mimo.biz.model.shipment.shipment.Shipment;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityPackage;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -40,6 +41,10 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransImpl#getCreatedStamp <em>Created Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransImpl#getAcctgTransId <em>Acctg Trans Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransImpl#getAcctgTransAttributes <em>Acctg Trans Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransImpl#getAcctgTransEntries <em>Acctg Trans Entries</em>}</li>
@@ -74,7 +79,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class AcctgTransImpl extends BizEntityTypedImpl<AcctgTransType> implements AcctgTrans {
+public class AcctgTransImpl extends EntityTypedImpl<AcctgTransType> implements AcctgTrans {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -92,6 +97,96 @@ public class AcctgTransImpl extends BizEntityTypedImpl<AcctgTransType> implement
 	@Override
 	protected EClass eStaticClass() {
 		return LedgerPackage.Literals.ACCTG_TRANS;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return 0;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedStamp(Date newCreatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, newCreatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedTxStamp(Date newCreatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, newCreatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedStamp(Date newLastUpdatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, newLastUpdatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
 	}
 
 	/**
@@ -512,6 +607,44 @@ public class AcctgTransImpl extends BizEntityTypedImpl<AcctgTransType> implement
 	@Override
 	public void setWorkEffortId(WorkEffort newWorkEffortId) {
 		eSet(LedgerPackage.Literals.ACCTG_TRANS__WORK_EFFORT_ID, newWorkEffortId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (derivedFeatureID) {
+				case LedgerPackage.ACCTG_TRANS__CREATED_STAMP: return EntityPackage.ENTITY_INFO__CREATED_STAMP;
+				case LedgerPackage.ACCTG_TRANS__CREATED_TX_STAMP: return EntityPackage.ENTITY_INFO__CREATED_TX_STAMP;
+				case LedgerPackage.ACCTG_TRANS__LAST_UPDATED_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP;
+				case LedgerPackage.ACCTG_TRANS__LAST_UPDATED_TX_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (baseFeatureID) {
+				case EntityPackage.ENTITY_INFO__CREATED_STAMP: return LedgerPackage.ACCTG_TRANS__CREATED_STAMP;
+				case EntityPackage.ENTITY_INFO__CREATED_TX_STAMP: return LedgerPackage.ACCTG_TRANS__CREATED_TX_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP: return LedgerPackage.ACCTG_TRANS__LAST_UPDATED_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP: return LedgerPackage.ACCTG_TRANS__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
 	/**

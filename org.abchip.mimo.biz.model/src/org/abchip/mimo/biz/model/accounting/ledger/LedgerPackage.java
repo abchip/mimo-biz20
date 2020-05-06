@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.accounting.ledger;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int ACCTG_TRANS__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int ACCTG_TRANS__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int ACCTG_TRANS__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int ACCTG_TRANS__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Acctg Trans Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__ACCTG_TRANS_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int ACCTG_TRANS__ACCTG_TRANS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Acctg Trans Attributes</b></em>' reference list.
@@ -123,7 +123,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__ACCTG_TRANS_ATTRIBUTES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int ACCTG_TRANS__ACCTG_TRANS_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Acctg Trans Entries</b></em>' reference list.
@@ -132,7 +132,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__ACCTG_TRANS_ENTRIES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int ACCTG_TRANS__ACCTG_TRANS_ENTRIES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Acctg Trans Type Id</b></em>' reference.
@@ -141,7 +141,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__ACCTG_TRANS_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int ACCTG_TRANS__ACCTG_TRANS_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Created By User Login</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__CREATED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int ACCTG_TRANS__CREATED_BY_USER_LOGIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Created Date</b></em>' attribute.
@@ -159,7 +159,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__CREATED_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int ACCTG_TRANS__CREATED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -168,7 +168,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int ACCTG_TRANS__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Fin Account Trans Id</b></em>' reference.
@@ -177,7 +177,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__FIN_ACCOUNT_TRANS_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int ACCTG_TRANS__FIN_ACCOUNT_TRANS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
@@ -186,7 +186,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__FIXED_ASSET_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int ACCTG_TRANS__FIXED_ASSET_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Gl Fiscal Type Id</b></em>' reference.
@@ -195,7 +195,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__GL_FISCAL_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 9;
+	int ACCTG_TRANS__GL_FISCAL_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Gl Journal Id</b></em>' reference.
@@ -204,7 +204,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__GL_JOURNAL_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 10;
+	int ACCTG_TRANS__GL_JOURNAL_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Group Status Id</b></em>' reference.
@@ -213,7 +213,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__GROUP_STATUS_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 11;
+	int ACCTG_TRANS__GROUP_STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Inventory Item Id</b></em>' reference.
@@ -222,7 +222,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__INVENTORY_ITEM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 12;
+	int ACCTG_TRANS__INVENTORY_ITEM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id</b></em>' reference.
@@ -231,7 +231,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__INVOICE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 13;
+	int ACCTG_TRANS__INVOICE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Is Posted</b></em>' attribute.
@@ -240,7 +240,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__IS_POSTED = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 14;
+	int ACCTG_TRANS__IS_POSTED = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified By User Login</b></em>' attribute.
@@ -249,7 +249,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__LAST_MODIFIED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 15;
+	int ACCTG_TRANS__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified Date</b></em>' attribute.
@@ -258,7 +258,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__LAST_MODIFIED_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 16;
+	int ACCTG_TRANS__LAST_MODIFIED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -267,7 +267,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__PARTY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 17;
+	int ACCTG_TRANS__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Payment Id</b></em>' reference.
@@ -276,7 +276,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__PAYMENT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 18;
+	int ACCTG_TRANS__PAYMENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Physical Inventory Id</b></em>' reference.
@@ -285,7 +285,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__PHYSICAL_INVENTORY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 19;
+	int ACCTG_TRANS__PHYSICAL_INVENTORY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Posted Date</b></em>' attribute.
@@ -294,7 +294,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__POSTED_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 20;
+	int ACCTG_TRANS__POSTED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Receipt Id</b></em>' reference.
@@ -303,7 +303,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__RECEIPT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 21;
+	int ACCTG_TRANS__RECEIPT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -312,7 +312,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 22;
+	int ACCTG_TRANS__ROLE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Scheduled Posting Date</b></em>' attribute.
@@ -321,7 +321,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__SCHEDULED_POSTING_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 23;
+	int ACCTG_TRANS__SCHEDULED_POSTING_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Id</b></em>' reference.
@@ -330,7 +330,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__SHIPMENT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 24;
+	int ACCTG_TRANS__SHIPMENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Their Acctg Trans Id</b></em>' attribute.
@@ -339,7 +339,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__THEIR_ACCTG_TRANS_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 25;
+	int ACCTG_TRANS__THEIR_ACCTG_TRANS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Transaction Date</b></em>' attribute.
@@ -348,7 +348,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__TRANSACTION_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 26;
+	int ACCTG_TRANS__TRANSACTION_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Voucher Date</b></em>' attribute.
@@ -357,7 +357,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__VOUCHER_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 27;
+	int ACCTG_TRANS__VOUCHER_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Voucher Ref</b></em>' attribute.
@@ -366,7 +366,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__VOUCHER_REF = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 28;
+	int ACCTG_TRANS__VOUCHER_REF = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 32;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -375,7 +375,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 29;
+	int ACCTG_TRANS__WORK_EFFORT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 33;
 
 	/**
 	 * The number of structural features of the '<em>Acctg Trans</em>' class.
@@ -384,7 +384,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 30;
+	int ACCTG_TRANS_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 34;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransAttributeImpl <em>Acctg Trans Attribute</em>}' class.
@@ -403,7 +403,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int ACCTG_TRANS_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -412,7 +412,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int ACCTG_TRANS_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -421,7 +421,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int ACCTG_TRANS_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -430,7 +430,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int ACCTG_TRANS_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Acctg Trans Id</b></em>' reference.
@@ -439,7 +439,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ATTRIBUTE__ACCTG_TRANS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int ACCTG_TRANS_ATTRIBUTE__ACCTG_TRANS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -448,7 +448,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int ACCTG_TRANS_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -457,7 +457,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int ACCTG_TRANS_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -466,7 +466,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int ACCTG_TRANS_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Acctg Trans Attribute</em>' class.
@@ -475,7 +475,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int ACCTG_TRANS_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryImpl <em>Acctg Trans Entry</em>}' class.
@@ -494,7 +494,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int ACCTG_TRANS_ENTRY__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -503,7 +503,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int ACCTG_TRANS_ENTRY__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -512,7 +512,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int ACCTG_TRANS_ENTRY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -521,7 +521,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int ACCTG_TRANS_ENTRY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Acctg Trans Id</b></em>' reference.
@@ -530,7 +530,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__ACCTG_TRANS_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int ACCTG_TRANS_ENTRY__ACCTG_TRANS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Acctg Trans Entry Seq Id</b></em>' attribute.
@@ -539,7 +539,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__ACCTG_TRANS_ENTRY_SEQ_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int ACCTG_TRANS_ENTRY__ACCTG_TRANS_ENTRY_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Acctg Trans Entry Type Id</b></em>' reference.
@@ -548,7 +548,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__ACCTG_TRANS_ENTRY_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int ACCTG_TRANS_ENTRY__ACCTG_TRANS_ENTRY_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Amount</b></em>' attribute.
@@ -557,7 +557,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__AMOUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int ACCTG_TRANS_ENTRY__AMOUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
@@ -566,7 +566,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__CURRENCY_UOM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int ACCTG_TRANS_ENTRY__CURRENCY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Debit Credit Flag</b></em>' attribute.
@@ -575,7 +575,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__DEBIT_CREDIT_FLAG = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int ACCTG_TRANS_ENTRY__DEBIT_CREDIT_FLAG = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -584,7 +584,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int ACCTG_TRANS_ENTRY__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Due Date</b></em>' attribute.
@@ -593,7 +593,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__DUE_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int ACCTG_TRANS_ENTRY__DUE_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Id</b></em>' reference.
@@ -602,7 +602,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__GL_ACCOUNT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int ACCTG_TRANS_ENTRY__GL_ACCOUNT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Type Id</b></em>' reference.
@@ -611,7 +611,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__GL_ACCOUNT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 9;
+	int ACCTG_TRANS_ENTRY__GL_ACCOUNT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Group Id</b></em>' attribute.
@@ -620,7 +620,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__GROUP_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 10;
+	int ACCTG_TRANS_ENTRY__GROUP_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Inventory Item Id</b></em>' reference.
@@ -629,7 +629,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__INVENTORY_ITEM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 11;
+	int ACCTG_TRANS_ENTRY__INVENTORY_ITEM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Is Summary</b></em>' attribute.
@@ -638,7 +638,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__IS_SUMMARY = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 12;
+	int ACCTG_TRANS_ENTRY__IS_SUMMARY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Organization Party Id</b></em>' attribute.
@@ -647,7 +647,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__ORGANIZATION_PARTY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 13;
+	int ACCTG_TRANS_ENTRY__ORGANIZATION_PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Orig Amount</b></em>' attribute.
@@ -656,7 +656,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__ORIG_AMOUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 14;
+	int ACCTG_TRANS_ENTRY__ORIG_AMOUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Orig Currency Uom Id</b></em>' reference.
@@ -665,7 +665,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__ORIG_CURRENCY_UOM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 15;
+	int ACCTG_TRANS_ENTRY__ORIG_CURRENCY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -674,7 +674,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__PARTY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 16;
+	int ACCTG_TRANS_ENTRY__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' attribute.
@@ -683,7 +683,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__PRODUCT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 17;
+	int ACCTG_TRANS_ENTRY__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Reconcile Status Id</b></em>' reference.
@@ -692,7 +692,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__RECONCILE_STATUS_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 18;
+	int ACCTG_TRANS_ENTRY__RECONCILE_STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -701,7 +701,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 19;
+	int ACCTG_TRANS_ENTRY__ROLE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Settlement Term Id</b></em>' reference.
@@ -710,7 +710,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__SETTLEMENT_TERM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 20;
+	int ACCTG_TRANS_ENTRY__SETTLEMENT_TERM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Tax Id</b></em>' attribute.
@@ -719,7 +719,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__TAX_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 21;
+	int ACCTG_TRANS_ENTRY__TAX_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Their Party Id</b></em>' attribute.
@@ -728,7 +728,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__THEIR_PARTY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 22;
+	int ACCTG_TRANS_ENTRY__THEIR_PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Their Product Id</b></em>' attribute.
@@ -737,7 +737,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__THEIR_PRODUCT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 23;
+	int ACCTG_TRANS_ENTRY__THEIR_PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Voucher Ref</b></em>' attribute.
@@ -746,7 +746,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY__VOUCHER_REF = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 24;
+	int ACCTG_TRANS_ENTRY__VOUCHER_REF = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
 
 	/**
 	 * The number of structural features of the '<em>Acctg Trans Entry</em>' class.
@@ -755,7 +755,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 25;
+	int ACCTG_TRANS_ENTRY_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransEntryTypeImpl <em>Acctg Trans Entry Type</em>}' class.
@@ -774,7 +774,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int ACCTG_TRANS_ENTRY_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -783,7 +783,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int ACCTG_TRANS_ENTRY_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -792,7 +792,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int ACCTG_TRANS_ENTRY_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -801,7 +801,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int ACCTG_TRANS_ENTRY_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -810,7 +810,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int ACCTG_TRANS_ENTRY_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Acctg Trans Entry Type Id</b></em>' attribute.
@@ -819,7 +819,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY_TYPE__ACCTG_TRANS_ENTRY_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int ACCTG_TRANS_ENTRY_TYPE__ACCTG_TRANS_ENTRY_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -828,7 +828,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int ACCTG_TRANS_ENTRY_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -837,7 +837,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int ACCTG_TRANS_ENTRY_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -846,7 +846,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int ACCTG_TRANS_ENTRY_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Acctg Trans Entry Type</em>' class.
@@ -855,7 +855,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_ENTRY_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int ACCTG_TRANS_ENTRY_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransTypeImpl <em>Acctg Trans Type</em>}' class.
@@ -874,7 +874,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int ACCTG_TRANS_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -883,7 +883,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int ACCTG_TRANS_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -892,7 +892,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int ACCTG_TRANS_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -901,7 +901,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int ACCTG_TRANS_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -910,7 +910,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int ACCTG_TRANS_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Acctg Trans Type Id</b></em>' attribute.
@@ -919,7 +919,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_TYPE__ACCTG_TRANS_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int ACCTG_TRANS_TYPE__ACCTG_TRANS_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Acctg Trans Type Attrs</b></em>' reference list.
@@ -928,7 +928,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_TYPE__ACCTG_TRANS_TYPE_ATTRS = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int ACCTG_TRANS_TYPE__ACCTG_TRANS_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -937,7 +937,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int ACCTG_TRANS_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -946,7 +946,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int ACCTG_TRANS_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -955,7 +955,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int ACCTG_TRANS_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Acctg Trans Type</em>' class.
@@ -964,7 +964,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 5;
+	int ACCTG_TRANS_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.AcctgTransTypeAttrImpl <em>Acctg Trans Type Attr</em>}' class.
@@ -983,7 +983,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_TYPE_ATTR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int ACCTG_TRANS_TYPE_ATTR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -992,7 +992,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_TYPE_ATTR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int ACCTG_TRANS_TYPE_ATTR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1001,7 +1001,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_TYPE_ATTR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int ACCTG_TRANS_TYPE_ATTR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1010,7 +1010,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_TYPE_ATTR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int ACCTG_TRANS_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Acctg Trans Type Id</b></em>' reference.
@@ -1019,7 +1019,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_TYPE_ATTR__ACCTG_TRANS_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int ACCTG_TRANS_TYPE_ATTR__ACCTG_TRANS_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1028,7 +1028,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_TYPE_ATTR__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int ACCTG_TRANS_TYPE_ATTR__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1037,7 +1037,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_TYPE_ATTR__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int ACCTG_TRANS_TYPE_ATTR__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Acctg Trans Type Attr</em>' class.
@@ -1046,7 +1046,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCTG_TRANS_TYPE_ATTR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int ACCTG_TRANS_TYPE_ATTR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl <em>Gl Account</em>}' class.
@@ -1065,7 +1065,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int GL_ACCOUNT__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1074,7 +1074,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int GL_ACCOUNT__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1083,7 +1083,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int GL_ACCOUNT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1092,7 +1092,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int GL_ACCOUNT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Id</b></em>' attribute.
@@ -1101,7 +1101,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__GL_ACCOUNT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int GL_ACCOUNT__GL_ACCOUNT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Account Code</b></em>' attribute.
@@ -1110,7 +1110,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__ACCOUNT_CODE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int GL_ACCOUNT__ACCOUNT_CODE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Account Name</b></em>' attribute.
@@ -1119,7 +1119,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__ACCOUNT_NAME = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int GL_ACCOUNT__ACCOUNT_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1128,7 +1128,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int GL_ACCOUNT__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>External Id</b></em>' attribute.
@@ -1137,7 +1137,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__EXTERNAL_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int GL_ACCOUNT__EXTERNAL_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Class Id</b></em>' reference.
@@ -1146,7 +1146,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__GL_ACCOUNT_CLASS_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int GL_ACCOUNT__GL_ACCOUNT_CLASS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Group Members</b></em>' reference list.
@@ -1155,7 +1155,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__GL_ACCOUNT_GROUP_MEMBERS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int GL_ACCOUNT__GL_ACCOUNT_GROUP_MEMBERS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Organizations</b></em>' reference list.
@@ -1164,7 +1164,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__GL_ACCOUNT_ORGANIZATIONS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int GL_ACCOUNT__GL_ACCOUNT_ORGANIZATIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Type Id</b></em>' reference.
@@ -1173,7 +1173,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__GL_ACCOUNT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int GL_ACCOUNT__GL_ACCOUNT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Gl Resource Type Id</b></em>' reference.
@@ -1182,7 +1182,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__GL_RESOURCE_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 9;
+	int GL_ACCOUNT__GL_RESOURCE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Gl Xbrl Class Id</b></em>' reference.
@@ -1191,7 +1191,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__GL_XBRL_CLASS_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 10;
+	int GL_ACCOUNT__GL_XBRL_CLASS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Parent Gl Account Id</b></em>' reference.
@@ -1200,7 +1200,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__PARENT_GL_ACCOUNT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 11;
+	int GL_ACCOUNT__PARENT_GL_ACCOUNT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' attribute.
@@ -1209,7 +1209,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__PRODUCT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 12;
+	int GL_ACCOUNT__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The number of structural features of the '<em>Gl Account</em>' class.
@@ -1218,7 +1218,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 13;
+	int GL_ACCOUNT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryImpl <em>Gl Account Category</em>}' class.
@@ -1237,7 +1237,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int GL_ACCOUNT_CATEGORY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1246,7 +1246,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int GL_ACCOUNT_CATEGORY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1255,7 +1255,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int GL_ACCOUNT_CATEGORY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1264,7 +1264,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int GL_ACCOUNT_CATEGORY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Category Id</b></em>' attribute.
@@ -1273,7 +1273,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY__GL_ACCOUNT_CATEGORY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int GL_ACCOUNT_CATEGORY__GL_ACCOUNT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1282,7 +1282,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int GL_ACCOUNT_CATEGORY__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Category Type Id</b></em>' reference.
@@ -1291,7 +1291,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY__GL_ACCOUNT_CATEGORY_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int GL_ACCOUNT_CATEGORY__GL_ACCOUNT_CATEGORY_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Gl Account Category</em>' class.
@@ -1300,7 +1300,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int GL_ACCOUNT_CATEGORY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryMemberImpl <em>Gl Account Category Member</em>}' class.
@@ -1319,7 +1319,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY_MEMBER__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int GL_ACCOUNT_CATEGORY_MEMBER__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1328,7 +1328,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY_MEMBER__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int GL_ACCOUNT_CATEGORY_MEMBER__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1337,7 +1337,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY_MEMBER__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int GL_ACCOUNT_CATEGORY_MEMBER__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1346,7 +1346,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY_MEMBER__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int GL_ACCOUNT_CATEGORY_MEMBER__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Id</b></em>' reference.
@@ -1355,7 +1355,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY_MEMBER__GL_ACCOUNT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int GL_ACCOUNT_CATEGORY_MEMBER__GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Category Id</b></em>' reference.
@@ -1364,7 +1364,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY_MEMBER__GL_ACCOUNT_CATEGORY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int GL_ACCOUNT_CATEGORY_MEMBER__GL_ACCOUNT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1373,7 +1373,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY_MEMBER__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int GL_ACCOUNT_CATEGORY_MEMBER__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Amount Percentage</b></em>' attribute.
@@ -1382,7 +1382,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY_MEMBER__AMOUNT_PERCENTAGE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int GL_ACCOUNT_CATEGORY_MEMBER__AMOUNT_PERCENTAGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -1391,7 +1391,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY_MEMBER__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int GL_ACCOUNT_CATEGORY_MEMBER__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Gl Account Category Member</em>' class.
@@ -1400,7 +1400,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY_MEMBER_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int GL_ACCOUNT_CATEGORY_MEMBER_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryTypeImpl <em>Gl Account Category Type</em>}' class.
@@ -1419,7 +1419,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int GL_ACCOUNT_CATEGORY_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1428,7 +1428,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int GL_ACCOUNT_CATEGORY_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1437,7 +1437,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int GL_ACCOUNT_CATEGORY_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1446,7 +1446,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int GL_ACCOUNT_CATEGORY_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Category Type Id</b></em>' attribute.
@@ -1455,7 +1455,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY_TYPE__GL_ACCOUNT_CATEGORY_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int GL_ACCOUNT_CATEGORY_TYPE__GL_ACCOUNT_CATEGORY_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1464,7 +1464,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int GL_ACCOUNT_CATEGORY_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Gl Account Category Type</em>' class.
@@ -1473,7 +1473,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CATEGORY_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int GL_ACCOUNT_CATEGORY_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountClassImpl <em>Gl Account Class</em>}' class.
@@ -1492,7 +1492,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CLASS__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int GL_ACCOUNT_CLASS__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1501,7 +1501,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CLASS__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int GL_ACCOUNT_CLASS__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1510,7 +1510,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CLASS__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int GL_ACCOUNT_CLASS__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1519,7 +1519,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CLASS__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int GL_ACCOUNT_CLASS__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Class Id</b></em>' attribute.
@@ -1528,7 +1528,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CLASS__GL_ACCOUNT_CLASS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int GL_ACCOUNT_CLASS__GL_ACCOUNT_CLASS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1537,7 +1537,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CLASS__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int GL_ACCOUNT_CLASS__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Is Asset Class</b></em>' attribute.
@@ -1546,7 +1546,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CLASS__IS_ASSET_CLASS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int GL_ACCOUNT_CLASS__IS_ASSET_CLASS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Class Id</b></em>' reference.
@@ -1555,7 +1555,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CLASS__PARENT_CLASS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int GL_ACCOUNT_CLASS__PARENT_CLASS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -1564,7 +1564,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CLASS__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int GL_ACCOUNT_CLASS__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Gl Account Class</em>' class.
@@ -1573,7 +1573,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_CLASS_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int GL_ACCOUNT_CLASS_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountGroupImpl <em>Gl Account Group</em>}' class.
@@ -1592,7 +1592,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int GL_ACCOUNT_GROUP__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1601,7 +1601,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int GL_ACCOUNT_GROUP__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1610,7 +1610,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int GL_ACCOUNT_GROUP__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1619,7 +1619,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int GL_ACCOUNT_GROUP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Group Id</b></em>' attribute.
@@ -1628,7 +1628,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP__GL_ACCOUNT_GROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int GL_ACCOUNT_GROUP__GL_ACCOUNT_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1637,7 +1637,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int GL_ACCOUNT_GROUP__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Group Type Id</b></em>' reference.
@@ -1646,7 +1646,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP__GL_ACCOUNT_GROUP_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int GL_ACCOUNT_GROUP__GL_ACCOUNT_GROUP_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Gl Account Group</em>' class.
@@ -1655,7 +1655,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int GL_ACCOUNT_GROUP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountGroupMemberImpl <em>Gl Account Group Member</em>}' class.
@@ -1674,7 +1674,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP_MEMBER__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int GL_ACCOUNT_GROUP_MEMBER__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1683,7 +1683,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP_MEMBER__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int GL_ACCOUNT_GROUP_MEMBER__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1692,7 +1692,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP_MEMBER__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int GL_ACCOUNT_GROUP_MEMBER__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1701,7 +1701,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP_MEMBER__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int GL_ACCOUNT_GROUP_MEMBER__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Id</b></em>' reference.
@@ -1710,7 +1710,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP_MEMBER__GL_ACCOUNT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int GL_ACCOUNT_GROUP_MEMBER__GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Group Type Id</b></em>' reference.
@@ -1719,7 +1719,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP_MEMBER__GL_ACCOUNT_GROUP_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int GL_ACCOUNT_GROUP_MEMBER__GL_ACCOUNT_GROUP_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Group Id</b></em>' reference.
@@ -1728,7 +1728,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP_MEMBER__GL_ACCOUNT_GROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int GL_ACCOUNT_GROUP_MEMBER__GL_ACCOUNT_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Gl Account Group Member</em>' class.
@@ -1737,7 +1737,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP_MEMBER_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int GL_ACCOUNT_GROUP_MEMBER_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountGroupTypeImpl <em>Gl Account Group Type</em>}' class.
@@ -1756,7 +1756,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int GL_ACCOUNT_GROUP_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1765,7 +1765,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int GL_ACCOUNT_GROUP_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1774,7 +1774,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int GL_ACCOUNT_GROUP_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1783,7 +1783,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int GL_ACCOUNT_GROUP_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Group Type Id</b></em>' attribute.
@@ -1792,7 +1792,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP_TYPE__GL_ACCOUNT_GROUP_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int GL_ACCOUNT_GROUP_TYPE__GL_ACCOUNT_GROUP_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1801,7 +1801,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int GL_ACCOUNT_GROUP_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Gl Account Group Type</em>' class.
@@ -1810,7 +1810,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_GROUP_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int GL_ACCOUNT_GROUP_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountHistoryImpl <em>Gl Account History</em>}' class.
@@ -1829,7 +1829,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_HISTORY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int GL_ACCOUNT_HISTORY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1838,7 +1838,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_HISTORY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int GL_ACCOUNT_HISTORY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1847,7 +1847,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_HISTORY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int GL_ACCOUNT_HISTORY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1856,7 +1856,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_HISTORY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int GL_ACCOUNT_HISTORY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Id</b></em>' reference.
@@ -1865,7 +1865,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_HISTORY__GL_ACCOUNT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int GL_ACCOUNT_HISTORY__GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Organization Party Id</b></em>' reference.
@@ -1874,7 +1874,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_HISTORY__ORGANIZATION_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int GL_ACCOUNT_HISTORY__ORGANIZATION_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Custom Time Period Id</b></em>' reference.
@@ -1883,7 +1883,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_HISTORY__CUSTOM_TIME_PERIOD_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int GL_ACCOUNT_HISTORY__CUSTOM_TIME_PERIOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Ending Balance</b></em>' attribute.
@@ -1892,7 +1892,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_HISTORY__ENDING_BALANCE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int GL_ACCOUNT_HISTORY__ENDING_BALANCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Opening Balance</b></em>' attribute.
@@ -1901,7 +1901,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_HISTORY__OPENING_BALANCE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int GL_ACCOUNT_HISTORY__OPENING_BALANCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Posted Credits</b></em>' attribute.
@@ -1910,7 +1910,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_HISTORY__POSTED_CREDITS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int GL_ACCOUNT_HISTORY__POSTED_CREDITS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Posted Debits</b></em>' attribute.
@@ -1919,7 +1919,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_HISTORY__POSTED_DEBITS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int GL_ACCOUNT_HISTORY__POSTED_DEBITS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Gl Account History</em>' class.
@@ -1928,7 +1928,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_HISTORY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int GL_ACCOUNT_HISTORY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountOrganizationImpl <em>Gl Account Organization</em>}' class.
@@ -1947,7 +1947,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_ORGANIZATION__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int GL_ACCOUNT_ORGANIZATION__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1956,7 +1956,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_ORGANIZATION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int GL_ACCOUNT_ORGANIZATION__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1965,7 +1965,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_ORGANIZATION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int GL_ACCOUNT_ORGANIZATION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1974,7 +1974,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_ORGANIZATION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int GL_ACCOUNT_ORGANIZATION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Id</b></em>' reference.
@@ -1983,7 +1983,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_ORGANIZATION__GL_ACCOUNT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int GL_ACCOUNT_ORGANIZATION__GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Organization Party Id</b></em>' reference.
@@ -1992,7 +1992,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_ORGANIZATION__ORGANIZATION_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int GL_ACCOUNT_ORGANIZATION__ORGANIZATION_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -2001,7 +2001,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_ORGANIZATION__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int GL_ACCOUNT_ORGANIZATION__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -2010,7 +2010,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_ORGANIZATION__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int GL_ACCOUNT_ORGANIZATION__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -2019,7 +2019,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_ORGANIZATION__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int GL_ACCOUNT_ORGANIZATION__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Gl Account Organization</em>' class.
@@ -2028,7 +2028,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_ORGANIZATION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int GL_ACCOUNT_ORGANIZATION_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountRoleImpl <em>Gl Account Role</em>}' class.
@@ -2047,7 +2047,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_ROLE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int GL_ACCOUNT_ROLE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2056,7 +2056,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_ROLE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int GL_ACCOUNT_ROLE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2065,7 +2065,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_ROLE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int GL_ACCOUNT_ROLE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2074,7 +2074,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_ROLE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int GL_ACCOUNT_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Id</b></em>' reference.
@@ -2083,7 +2083,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_ROLE__GL_ACCOUNT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int GL_ACCOUNT_ROLE__GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -2092,7 +2092,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_ROLE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int GL_ACCOUNT_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -2101,7 +2101,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_ROLE__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int GL_ACCOUNT_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -2110,7 +2110,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_ROLE__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int GL_ACCOUNT_ROLE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -2119,7 +2119,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_ROLE__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int GL_ACCOUNT_ROLE__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Gl Account Role</em>' class.
@@ -2128,7 +2128,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_ROLE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int GL_ACCOUNT_ROLE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeImpl <em>Gl Account Type</em>}' class.
@@ -2147,7 +2147,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int GL_ACCOUNT_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -2156,7 +2156,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int GL_ACCOUNT_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2165,7 +2165,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int GL_ACCOUNT_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2174,7 +2174,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int GL_ACCOUNT_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2183,7 +2183,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int GL_ACCOUNT_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Type Id</b></em>' attribute.
@@ -2192,7 +2192,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_TYPE__GL_ACCOUNT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int GL_ACCOUNT_TYPE__GL_ACCOUNT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -2201,7 +2201,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int GL_ACCOUNT_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Type Defaults</b></em>' reference list.
@@ -2210,7 +2210,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_TYPE__GL_ACCOUNT_TYPE_DEFAULTS = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int GL_ACCOUNT_TYPE__GL_ACCOUNT_TYPE_DEFAULTS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -2219,7 +2219,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int GL_ACCOUNT_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -2228,7 +2228,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int GL_ACCOUNT_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Gl Account Type</em>' class.
@@ -2237,7 +2237,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 5;
+	int GL_ACCOUNT_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountTypeDefaultImpl <em>Gl Account Type Default</em>}' class.
@@ -2256,7 +2256,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_TYPE_DEFAULT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int GL_ACCOUNT_TYPE_DEFAULT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2265,7 +2265,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_TYPE_DEFAULT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int GL_ACCOUNT_TYPE_DEFAULT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2274,7 +2274,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_TYPE_DEFAULT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int GL_ACCOUNT_TYPE_DEFAULT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2283,7 +2283,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_TYPE_DEFAULT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int GL_ACCOUNT_TYPE_DEFAULT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Type Id</b></em>' reference.
@@ -2292,7 +2292,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_TYPE_DEFAULT__GL_ACCOUNT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int GL_ACCOUNT_TYPE_DEFAULT__GL_ACCOUNT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Organization Party Id</b></em>' reference.
@@ -2301,7 +2301,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_TYPE_DEFAULT__ORGANIZATION_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int GL_ACCOUNT_TYPE_DEFAULT__ORGANIZATION_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Id</b></em>' reference.
@@ -2310,7 +2310,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_TYPE_DEFAULT__GL_ACCOUNT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int GL_ACCOUNT_TYPE_DEFAULT__GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Gl Account Type Default</em>' class.
@@ -2319,7 +2319,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_TYPE_DEFAULT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int GL_ACCOUNT_TYPE_DEFAULT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlBudgetXrefImpl <em>Gl Budget Xref</em>}' class.
@@ -2338,7 +2338,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_BUDGET_XREF__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int GL_BUDGET_XREF__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2347,7 +2347,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_BUDGET_XREF__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int GL_BUDGET_XREF__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2356,7 +2356,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_BUDGET_XREF__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int GL_BUDGET_XREF__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2365,7 +2365,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_BUDGET_XREF__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int GL_BUDGET_XREF__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Id</b></em>' reference.
@@ -2374,7 +2374,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_BUDGET_XREF__GL_ACCOUNT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int GL_BUDGET_XREF__GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Budget Item Type Id</b></em>' reference.
@@ -2383,7 +2383,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_BUDGET_XREF__BUDGET_ITEM_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int GL_BUDGET_XREF__BUDGET_ITEM_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -2392,7 +2392,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_BUDGET_XREF__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int GL_BUDGET_XREF__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Allocation Percentage</b></em>' attribute.
@@ -2401,7 +2401,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_BUDGET_XREF__ALLOCATION_PERCENTAGE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int GL_BUDGET_XREF__ALLOCATION_PERCENTAGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -2410,7 +2410,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_BUDGET_XREF__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int GL_BUDGET_XREF__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Gl Budget Xref</em>' class.
@@ -2419,7 +2419,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_BUDGET_XREF_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int GL_BUDGET_XREF_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlFiscalTypeImpl <em>Gl Fiscal Type</em>}' class.
@@ -2438,7 +2438,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_FISCAL_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int GL_FISCAL_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2447,7 +2447,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_FISCAL_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int GL_FISCAL_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2456,7 +2456,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_FISCAL_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int GL_FISCAL_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2465,7 +2465,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_FISCAL_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int GL_FISCAL_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Gl Fiscal Type Id</b></em>' attribute.
@@ -2474,7 +2474,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_FISCAL_TYPE__GL_FISCAL_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int GL_FISCAL_TYPE__GL_FISCAL_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -2483,7 +2483,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_FISCAL_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int GL_FISCAL_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Gl Fiscal Type</em>' class.
@@ -2492,7 +2492,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_FISCAL_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int GL_FISCAL_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlJournalImpl <em>Gl Journal</em>}' class.
@@ -2511,7 +2511,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_JOURNAL__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int GL_JOURNAL__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2520,7 +2520,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_JOURNAL__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int GL_JOURNAL__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2529,7 +2529,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_JOURNAL__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int GL_JOURNAL__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2538,7 +2538,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_JOURNAL__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int GL_JOURNAL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Gl Journal Id</b></em>' attribute.
@@ -2547,7 +2547,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_JOURNAL__GL_JOURNAL_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int GL_JOURNAL__GL_JOURNAL_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Gl Journal Name</b></em>' attribute.
@@ -2556,7 +2556,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_JOURNAL__GL_JOURNAL_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int GL_JOURNAL__GL_JOURNAL_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Is Posted</b></em>' attribute.
@@ -2565,7 +2565,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_JOURNAL__IS_POSTED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int GL_JOURNAL__IS_POSTED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Organization Party Id</b></em>' reference.
@@ -2574,7 +2574,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_JOURNAL__ORGANIZATION_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int GL_JOURNAL__ORGANIZATION_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Posted Date</b></em>' attribute.
@@ -2583,7 +2583,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_JOURNAL__POSTED_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int GL_JOURNAL__POSTED_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Gl Journal</em>' class.
@@ -2592,7 +2592,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_JOURNAL_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int GL_JOURNAL_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationImpl <em>Gl Reconciliation</em>}' class.
@@ -2611,7 +2611,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int GL_RECONCILIATION__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2620,7 +2620,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int GL_RECONCILIATION__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2629,7 +2629,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int GL_RECONCILIATION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2638,7 +2638,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int GL_RECONCILIATION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Gl Reconciliation Id</b></em>' attribute.
@@ -2647,7 +2647,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION__GL_RECONCILIATION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int GL_RECONCILIATION__GL_RECONCILIATION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Created By User Login</b></em>' attribute.
@@ -2656,7 +2656,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION__CREATED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int GL_RECONCILIATION__CREATED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Created Date</b></em>' attribute.
@@ -2665,7 +2665,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION__CREATED_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int GL_RECONCILIATION__CREATED_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -2674,7 +2674,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int GL_RECONCILIATION__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Id</b></em>' reference.
@@ -2683,7 +2683,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION__GL_ACCOUNT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int GL_RECONCILIATION__GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Gl Reconciliation Name</b></em>' attribute.
@@ -2692,7 +2692,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION__GL_RECONCILIATION_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int GL_RECONCILIATION__GL_RECONCILIATION_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified By User Login</b></em>' attribute.
@@ -2701,7 +2701,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION__LAST_MODIFIED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int GL_RECONCILIATION__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified Date</b></em>' attribute.
@@ -2710,7 +2710,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION__LAST_MODIFIED_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int GL_RECONCILIATION__LAST_MODIFIED_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Opening Balance</b></em>' attribute.
@@ -2719,7 +2719,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION__OPENING_BALANCE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int GL_RECONCILIATION__OPENING_BALANCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Organization Party Id</b></em>' reference.
@@ -2728,7 +2728,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION__ORGANIZATION_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int GL_RECONCILIATION__ORGANIZATION_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Reconciled Balance</b></em>' attribute.
@@ -2737,7 +2737,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION__RECONCILED_BALANCE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int GL_RECONCILIATION__RECONCILED_BALANCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Reconciled Date</b></em>' attribute.
@@ -2746,7 +2746,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION__RECONCILED_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int GL_RECONCILIATION__RECONCILED_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -2755,7 +2755,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int GL_RECONCILIATION__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The number of structural features of the '<em>Gl Reconciliation</em>' class.
@@ -2764,7 +2764,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int GL_RECONCILIATION_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlReconciliationEntryImpl <em>Gl Reconciliation Entry</em>}' class.
@@ -2783,7 +2783,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION_ENTRY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int GL_RECONCILIATION_ENTRY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2792,7 +2792,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION_ENTRY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int GL_RECONCILIATION_ENTRY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2801,7 +2801,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION_ENTRY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int GL_RECONCILIATION_ENTRY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2810,7 +2810,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION_ENTRY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int GL_RECONCILIATION_ENTRY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Gl Reconciliation Id</b></em>' reference.
@@ -2819,7 +2819,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION_ENTRY__GL_RECONCILIATION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int GL_RECONCILIATION_ENTRY__GL_RECONCILIATION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Acctg Trans Id</b></em>' reference.
@@ -2828,7 +2828,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION_ENTRY__ACCTG_TRANS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int GL_RECONCILIATION_ENTRY__ACCTG_TRANS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Acctg Trans Entry Seq Id</b></em>' attribute.
@@ -2837,7 +2837,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION_ENTRY__ACCTG_TRANS_ENTRY_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int GL_RECONCILIATION_ENTRY__ACCTG_TRANS_ENTRY_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Reconciled Amount</b></em>' attribute.
@@ -2846,7 +2846,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION_ENTRY__RECONCILED_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int GL_RECONCILIATION_ENTRY__RECONCILED_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Gl Reconciliation Entry</em>' class.
@@ -2855,7 +2855,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RECONCILIATION_ENTRY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int GL_RECONCILIATION_ENTRY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlResourceTypeImpl <em>Gl Resource Type</em>}' class.
@@ -2874,7 +2874,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RESOURCE_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int GL_RESOURCE_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2883,7 +2883,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RESOURCE_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int GL_RESOURCE_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2892,7 +2892,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RESOURCE_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int GL_RESOURCE_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2901,7 +2901,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RESOURCE_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int GL_RESOURCE_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Gl Resource Type Id</b></em>' attribute.
@@ -2910,7 +2910,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RESOURCE_TYPE__GL_RESOURCE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int GL_RESOURCE_TYPE__GL_RESOURCE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -2919,7 +2919,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RESOURCE_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int GL_RESOURCE_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Gl Resource Type</em>' class.
@@ -2928,7 +2928,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_RESOURCE_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int GL_RESOURCE_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlXbrlClassImpl <em>Gl Xbrl Class</em>}' class.
@@ -2947,7 +2947,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_XBRL_CLASS__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int GL_XBRL_CLASS__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2956,7 +2956,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_XBRL_CLASS__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int GL_XBRL_CLASS__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2965,7 +2965,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_XBRL_CLASS__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int GL_XBRL_CLASS__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2974,7 +2974,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_XBRL_CLASS__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int GL_XBRL_CLASS__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Gl Xbrl Class Id</b></em>' attribute.
@@ -2983,7 +2983,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_XBRL_CLASS__GL_XBRL_CLASS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int GL_XBRL_CLASS__GL_XBRL_CLASS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -2992,7 +2992,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_XBRL_CLASS__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int GL_XBRL_CLASS__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Gl Xbrl Class</em>' class.
@@ -3001,7 +3001,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_XBRL_CLASS_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int GL_XBRL_CLASS_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyAcctgPreferenceImpl <em>Party Acctg Preference</em>}' class.
@@ -3020,7 +3020,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_ACCTG_PREFERENCE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3029,7 +3029,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_ACCTG_PREFERENCE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3038,7 +3038,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_ACCTG_PREFERENCE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3047,7 +3047,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_ACCTG_PREFERENCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
@@ -3056,7 +3056,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_ACCTG_PREFERENCE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Base Currency Uom Id</b></em>' reference.
@@ -3065,7 +3065,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__BASE_CURRENCY_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_ACCTG_PREFERENCE__BASE_CURRENCY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Cogs Method Id</b></em>' reference.
@@ -3074,7 +3074,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__COGS_METHOD_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_ACCTG_PREFERENCE__COGS_METHOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Enable Accounting</b></em>' attribute.
@@ -3083,7 +3083,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__ENABLE_ACCOUNTING = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PARTY_ACCTG_PREFERENCE__ENABLE_ACCOUNTING = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Error Gl Journal Id</b></em>' reference.
@@ -3092,7 +3092,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__ERROR_GL_JOURNAL_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PARTY_ACCTG_PREFERENCE__ERROR_GL_JOURNAL_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Fiscal Year Start Day</b></em>' attribute.
@@ -3101,7 +3101,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__FISCAL_YEAR_START_DAY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PARTY_ACCTG_PREFERENCE__FISCAL_YEAR_START_DAY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Fiscal Year Start Month</b></em>' attribute.
@@ -3110,7 +3110,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__FISCAL_YEAR_START_MONTH = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PARTY_ACCTG_PREFERENCE__FISCAL_YEAR_START_MONTH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id Prefix</b></em>' attribute.
@@ -3119,7 +3119,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__INVOICE_ID_PREFIX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PARTY_ACCTG_PREFERENCE__INVOICE_ID_PREFIX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Seq Cust Meth Id</b></em>' reference.
@@ -3128,7 +3128,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__INVOICE_SEQ_CUST_METH_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int PARTY_ACCTG_PREFERENCE__INVOICE_SEQ_CUST_METH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Last Invoice Number</b></em>' attribute.
@@ -3137,7 +3137,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__LAST_INVOICE_NUMBER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int PARTY_ACCTG_PREFERENCE__LAST_INVOICE_NUMBER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Last Invoice Restart Date</b></em>' attribute.
@@ -3146,7 +3146,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__LAST_INVOICE_RESTART_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int PARTY_ACCTG_PREFERENCE__LAST_INVOICE_RESTART_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Last Order Number</b></em>' attribute.
@@ -3155,7 +3155,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__LAST_ORDER_NUMBER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int PARTY_ACCTG_PREFERENCE__LAST_ORDER_NUMBER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Last Quote Number</b></em>' attribute.
@@ -3164,7 +3164,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__LAST_QUOTE_NUMBER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int PARTY_ACCTG_PREFERENCE__LAST_QUOTE_NUMBER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Old Invoice Sequence Enum Id</b></em>' reference.
@@ -3173,7 +3173,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__OLD_INVOICE_SEQUENCE_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int PARTY_ACCTG_PREFERENCE__OLD_INVOICE_SEQUENCE_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Old Order Sequence Enum Id</b></em>' reference.
@@ -3182,7 +3182,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__OLD_ORDER_SEQUENCE_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int PARTY_ACCTG_PREFERENCE__OLD_ORDER_SEQUENCE_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Old Quote Sequence Enum Id</b></em>' reference.
@@ -3191,7 +3191,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__OLD_QUOTE_SEQUENCE_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int PARTY_ACCTG_PREFERENCE__OLD_QUOTE_SEQUENCE_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Order Id Prefix</b></em>' attribute.
@@ -3200,7 +3200,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__ORDER_ID_PREFIX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int PARTY_ACCTG_PREFERENCE__ORDER_ID_PREFIX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Order Seq Cust Meth Id</b></em>' reference.
@@ -3209,7 +3209,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__ORDER_SEQ_CUST_METH_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 17;
+	int PARTY_ACCTG_PREFERENCE__ORDER_SEQ_CUST_METH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Quote Id Prefix</b></em>' attribute.
@@ -3218,7 +3218,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__QUOTE_ID_PREFIX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 18;
+	int PARTY_ACCTG_PREFERENCE__QUOTE_ID_PREFIX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Quote Seq Cust Meth Id</b></em>' reference.
@@ -3227,7 +3227,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__QUOTE_SEQ_CUST_METH_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 19;
+	int PARTY_ACCTG_PREFERENCE__QUOTE_SEQ_CUST_METH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Refund Payment Method Id</b></em>' reference.
@@ -3236,7 +3236,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__REFUND_PAYMENT_METHOD_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 20;
+	int PARTY_ACCTG_PREFERENCE__REFUND_PAYMENT_METHOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Tax Form Id</b></em>' reference.
@@ -3245,7 +3245,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__TAX_FORM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 21;
+	int PARTY_ACCTG_PREFERENCE__TAX_FORM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Use Invoice Id For Returns</b></em>' attribute.
@@ -3254,7 +3254,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE__USE_INVOICE_ID_FOR_RETURNS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 22;
+	int PARTY_ACCTG_PREFERENCE__USE_INVOICE_ID_FOR_RETURNS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 26;
 
 	/**
 	 * The number of structural features of the '<em>Party Acctg Preference</em>' class.
@@ -3263,7 +3263,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ACCTG_PREFERENCE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 23;
+	int PARTY_ACCTG_PREFERENCE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 27;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyGlAccountImpl <em>Party Gl Account</em>}' class.
@@ -3282,7 +3282,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_GL_ACCOUNT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_GL_ACCOUNT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3291,7 +3291,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_GL_ACCOUNT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_GL_ACCOUNT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3300,7 +3300,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_GL_ACCOUNT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_GL_ACCOUNT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3309,7 +3309,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_GL_ACCOUNT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_GL_ACCOUNT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Organization Party Id</b></em>' reference.
@@ -3318,7 +3318,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_GL_ACCOUNT__ORGANIZATION_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_GL_ACCOUNT__ORGANIZATION_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -3327,7 +3327,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_GL_ACCOUNT__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_GL_ACCOUNT__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -3336,7 +3336,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_GL_ACCOUNT__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_GL_ACCOUNT__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Type Id</b></em>' reference.
@@ -3345,7 +3345,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_GL_ACCOUNT__GL_ACCOUNT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PARTY_GL_ACCOUNT__GL_ACCOUNT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Id</b></em>' reference.
@@ -3354,7 +3354,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_GL_ACCOUNT__GL_ACCOUNT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PARTY_GL_ACCOUNT__GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Party Gl Account</em>' class.
@@ -3363,7 +3363,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_GL_ACCOUNT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PARTY_GL_ACCOUNT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.PartyPrefDocTypeTplImpl <em>Party Pref Doc Type Tpl</em>}' class.
@@ -3382,7 +3382,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PREF_DOC_TYPE_TPL__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_PREF_DOC_TYPE_TPL__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3391,7 +3391,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PREF_DOC_TYPE_TPL__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_PREF_DOC_TYPE_TPL__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3400,7 +3400,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PREF_DOC_TYPE_TPL__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_PREF_DOC_TYPE_TPL__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3409,7 +3409,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PREF_DOC_TYPE_TPL__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_PREF_DOC_TYPE_TPL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Pref Doc Type Tpl Id</b></em>' attribute.
@@ -3418,7 +3418,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PREF_DOC_TYPE_TPL__PARTY_PREF_DOC_TYPE_TPL_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_PREF_DOC_TYPE_TPL__PARTY_PREF_DOC_TYPE_TPL_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Custom Screen Id</b></em>' attribute.
@@ -3427,7 +3427,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PREF_DOC_TYPE_TPL__CUSTOM_SCREEN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_PREF_DOC_TYPE_TPL__CUSTOM_SCREEN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -3436,7 +3436,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PREF_DOC_TYPE_TPL__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_PREF_DOC_TYPE_TPL__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Type Id</b></em>' reference.
@@ -3445,7 +3445,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PREF_DOC_TYPE_TPL__INVOICE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PARTY_PREF_DOC_TYPE_TPL__INVOICE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Order Type Id</b></em>' reference.
@@ -3454,7 +3454,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PREF_DOC_TYPE_TPL__ORDER_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PARTY_PREF_DOC_TYPE_TPL__ORDER_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -3463,7 +3463,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PREF_DOC_TYPE_TPL__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PARTY_PREF_DOC_TYPE_TPL__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Quote Type Id</b></em>' reference.
@@ -3472,7 +3472,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PREF_DOC_TYPE_TPL__QUOTE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PARTY_PREF_DOC_TYPE_TPL__QUOTE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -3481,7 +3481,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PREF_DOC_TYPE_TPL__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PARTY_PREF_DOC_TYPE_TPL__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Party Pref Doc Type Tpl</em>' class.
@@ -3490,7 +3490,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PREF_DOC_TYPE_TPL_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int PARTY_PREF_DOC_TYPE_TPL_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostImpl <em>Product Average Cost</em>}' class.
@@ -3509,7 +3509,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int PRODUCT_AVERAGE_COST__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3518,7 +3518,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int PRODUCT_AVERAGE_COST__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3527,7 +3527,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int PRODUCT_AVERAGE_COST__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3536,7 +3536,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_AVERAGE_COST__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Average Cost Type Id</b></em>' reference.
@@ -3545,7 +3545,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST__PRODUCT_AVERAGE_COST_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int PRODUCT_AVERAGE_COST__PRODUCT_AVERAGE_COST_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Organization Party Id</b></em>' reference.
@@ -3554,7 +3554,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST__ORGANIZATION_PARTY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int PRODUCT_AVERAGE_COST__ORGANIZATION_PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -3563,7 +3563,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST__PRODUCT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int PRODUCT_AVERAGE_COST__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
@@ -3572,7 +3572,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST__FACILITY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int PRODUCT_AVERAGE_COST__FACILITY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -3581,7 +3581,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST__FROM_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int PRODUCT_AVERAGE_COST__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Average Cost</b></em>' attribute.
@@ -3590,7 +3590,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST__AVERAGE_COST = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int PRODUCT_AVERAGE_COST__AVERAGE_COST = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -3599,7 +3599,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST__THRU_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int PRODUCT_AVERAGE_COST__THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Product Average Cost</em>' class.
@@ -3608,7 +3608,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int PRODUCT_AVERAGE_COST_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.ProductAverageCostTypeImpl <em>Product Average Cost Type</em>}' class.
@@ -3627,7 +3627,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int PRODUCT_AVERAGE_COST_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -3636,7 +3636,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int PRODUCT_AVERAGE_COST_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3645,7 +3645,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int PRODUCT_AVERAGE_COST_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3654,7 +3654,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int PRODUCT_AVERAGE_COST_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3663,7 +3663,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_AVERAGE_COST_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Average Cost Type Id</b></em>' attribute.
@@ -3672,7 +3672,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST_TYPE__PRODUCT_AVERAGE_COST_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int PRODUCT_AVERAGE_COST_TYPE__PRODUCT_AVERAGE_COST_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -3681,7 +3681,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int PRODUCT_AVERAGE_COST_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -3690,7 +3690,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int PRODUCT_AVERAGE_COST_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -3699,7 +3699,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int PRODUCT_AVERAGE_COST_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Product Average Cost Type</em>' class.
@@ -3708,7 +3708,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_AVERAGE_COST_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int PRODUCT_AVERAGE_COST_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.SettlementTermImpl <em>Settlement Term</em>}' class.
@@ -3727,7 +3727,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SETTLEMENT_TERM__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SETTLEMENT_TERM__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3736,7 +3736,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SETTLEMENT_TERM__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SETTLEMENT_TERM__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3745,7 +3745,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SETTLEMENT_TERM__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SETTLEMENT_TERM__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3754,7 +3754,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SETTLEMENT_TERM__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SETTLEMENT_TERM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Settlement Term Id</b></em>' attribute.
@@ -3763,7 +3763,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SETTLEMENT_TERM__SETTLEMENT_TERM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SETTLEMENT_TERM__SETTLEMENT_TERM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Term Name</b></em>' attribute.
@@ -3772,7 +3772,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SETTLEMENT_TERM__TERM_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SETTLEMENT_TERM__TERM_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Term Value</b></em>' attribute.
@@ -3781,7 +3781,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SETTLEMENT_TERM__TERM_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SETTLEMENT_TERM__TERM_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Uom Id</b></em>' attribute.
@@ -3790,7 +3790,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SETTLEMENT_TERM__UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SETTLEMENT_TERM__UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Settlement Term</em>' class.
@@ -3799,7 +3799,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SETTLEMENT_TERM_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SETTLEMENT_TERM_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.VarianceReasonGlAccountImpl <em>Variance Reason Gl Account</em>}' class.
@@ -3818,7 +3818,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VARIANCE_REASON_GL_ACCOUNT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int VARIANCE_REASON_GL_ACCOUNT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3827,7 +3827,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VARIANCE_REASON_GL_ACCOUNT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int VARIANCE_REASON_GL_ACCOUNT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3836,7 +3836,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VARIANCE_REASON_GL_ACCOUNT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int VARIANCE_REASON_GL_ACCOUNT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3845,7 +3845,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VARIANCE_REASON_GL_ACCOUNT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int VARIANCE_REASON_GL_ACCOUNT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Variance Reason Id</b></em>' reference.
@@ -3854,7 +3854,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VARIANCE_REASON_GL_ACCOUNT__VARIANCE_REASON_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int VARIANCE_REASON_GL_ACCOUNT__VARIANCE_REASON_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Organization Party Id</b></em>' reference.
@@ -3863,7 +3863,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VARIANCE_REASON_GL_ACCOUNT__ORGANIZATION_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int VARIANCE_REASON_GL_ACCOUNT__ORGANIZATION_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Id</b></em>' reference.
@@ -3872,7 +3872,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VARIANCE_REASON_GL_ACCOUNT__GL_ACCOUNT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int VARIANCE_REASON_GL_ACCOUNT__GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Variance Reason Gl Account</em>' class.
@@ -3881,7 +3881,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VARIANCE_REASON_GL_ACCOUNT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int VARIANCE_REASON_GL_ACCOUNT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 
 	/**

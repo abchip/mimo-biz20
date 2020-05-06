@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.workeffort.workeffort;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
  * @model
  * @generated
  */
-public interface WorkEffortBilling extends BizEntity {
+public interface WorkEffortBilling extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Invoice Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

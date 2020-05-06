@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.product.category;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +38,7 @@ import org.abchip.mimo.biz.BizEntityTyped;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface ProductCategory extends BizEntityTyped<ProductCategoryType> {
+public interface ProductCategory extends EntityTyped<ProductCategoryType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Category Image Url</b></em>' attribute.
 	 * <!-- begin-user-doc -->

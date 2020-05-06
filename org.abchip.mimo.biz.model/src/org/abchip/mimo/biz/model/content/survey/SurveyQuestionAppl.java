@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.content.survey;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +38,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Survey Question Application'"
  * @generated
  */
-public interface SurveyQuestionAppl extends BizEntity {
+public interface SurveyQuestionAppl extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>External Field Ref</b></em>' attribute.
 	 * <!-- begin-user-doc -->

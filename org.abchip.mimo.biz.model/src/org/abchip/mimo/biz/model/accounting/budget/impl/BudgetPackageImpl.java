@@ -1892,7 +1892,7 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		PeriodPackage thePeriodPackage = (PeriodPackage)EPackage.Registry.INSTANCE.getEPackage(PeriodPackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
 		StatusPackage theStatusPackage = (StatusPackage)EPackage.Registry.INSTANCE.getEPackage(StatusPackage.eNS_URI);
@@ -1903,35 +1903,56 @@ public class BudgetPackageImpl extends EPackageImpl implements BudgetPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getBudgetType());
 		g1.getETypeArguments().add(g2);
 		budgetEClass.getEGenericSuperTypes().add(g1);
-		budgetAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		budgetEClass.getEGenericSuperTypes().add(g1);
+		budgetAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		budgetAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		g2 = createEGenericType(this.getBudgetItemType());
 		g1.getETypeArguments().add(g2);
 		budgetItemEClass.getEGenericSuperTypes().add(g1);
-		budgetItemAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		budgetItemEClass.getEGenericSuperTypes().add(g1);
+		budgetItemAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		budgetItemAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getBudgetItem());
 		g1.getETypeArguments().add(g2);
 		budgetItemTypeEClass.getEGenericSuperTypes().add(g1);
-		budgetItemTypeAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		budgetReviewEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		budgetReviewResultTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		budgetRevisionEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		budgetRevisionImpactEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		budgetRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		budgetScenarioEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		budgetScenarioApplicationEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		budgetScenarioRuleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		budgetStatusEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		budgetItemTypeEClass.getEGenericSuperTypes().add(g1);
+		budgetItemTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		budgetItemTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		budgetReviewEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		budgetReviewEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		budgetReviewResultTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		budgetReviewResultTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		budgetRevisionEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		budgetRevisionEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		budgetRevisionImpactEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		budgetRevisionImpactEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		budgetRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		budgetRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		budgetScenarioEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		budgetScenarioEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		budgetScenarioApplicationEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		budgetScenarioApplicationEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		budgetScenarioRuleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		budgetScenarioRuleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		budgetStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		budgetStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getBudget());
 		g1.getETypeArguments().add(g2);
 		budgetTypeEClass.getEGenericSuperTypes().add(g1);
-		budgetTypeAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		budgetTypeEClass.getEGenericSuperTypes().add(g1);
+		budgetTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		budgetTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(budgetEClass, Budget.class, "Budget", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

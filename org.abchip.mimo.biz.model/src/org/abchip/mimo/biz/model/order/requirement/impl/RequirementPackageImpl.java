@@ -1638,7 +1638,7 @@ public class RequirementPackageImpl extends EPackageImpl implements RequirementP
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		FeaturePackage theFeaturePackage = (FeaturePackage)EPackage.Registry.INSTANCE.getEPackage(FeaturePackage.eNS_URI);
 		OrderPackage theOrderPackage = (OrderPackage)EPackage.Registry.INSTANCE.getEPackage(OrderPackage.eNS_URI);
 		WorkeffortPackage theWorkeffortPackage = (WorkeffortPackage)EPackage.Registry.INSTANCE.getEPackage(WorkeffortPackage.eNS_URI);
@@ -1656,24 +1656,38 @@ public class RequirementPackageImpl extends EPackageImpl implements RequirementP
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		desiredFeatureEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		orderRequirementCommitmentEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		desiredFeatureEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		desiredFeatureEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		orderRequirementCommitmentEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		orderRequirementCommitmentEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getRequirementType());
 		g1.getETypeArguments().add(g2);
 		requirementEClass.getEGenericSuperTypes().add(g1);
-		requirementAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		requirementBudgetAllocationEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		requirementCustRequestEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		requirementRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		requirementStatusEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		requirementEClass.getEGenericSuperTypes().add(g1);
+		requirementAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		requirementAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		requirementBudgetAllocationEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		requirementBudgetAllocationEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		requirementCustRequestEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		requirementCustRequestEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		requirementRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		requirementRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		requirementStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		requirementStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getRequirement());
 		g1.getETypeArguments().add(g2);
 		requirementTypeEClass.getEGenericSuperTypes().add(g1);
-		requirementTypeAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		workReqFulfTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		workRequirementFulfillmentEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		requirementTypeEClass.getEGenericSuperTypes().add(g1);
+		requirementTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		requirementTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		workReqFulfTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		workReqFulfTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		workRequirementFulfillmentEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		workRequirementFulfillmentEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(desiredFeatureEClass, DesiredFeature.class, "DesiredFeature", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

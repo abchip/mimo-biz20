@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.entity.crypto;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -77,7 +77,7 @@ public interface CryptoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_KEY_STORE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int ENTITY_KEY_STORE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -86,7 +86,7 @@ public interface CryptoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_KEY_STORE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int ENTITY_KEY_STORE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -95,7 +95,7 @@ public interface CryptoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_KEY_STORE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int ENTITY_KEY_STORE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -104,7 +104,7 @@ public interface CryptoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_KEY_STORE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int ENTITY_KEY_STORE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Key Name</b></em>' attribute.
@@ -113,7 +113,7 @@ public interface CryptoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_KEY_STORE__KEY_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int ENTITY_KEY_STORE__KEY_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Key Text</b></em>' attribute.
@@ -122,7 +122,7 @@ public interface CryptoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_KEY_STORE__KEY_TEXT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int ENTITY_KEY_STORE__KEY_TEXT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Entity Key Store</em>' class.
@@ -131,7 +131,7 @@ public interface CryptoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_KEY_STORE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int ENTITY_KEY_STORE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 
 	/**

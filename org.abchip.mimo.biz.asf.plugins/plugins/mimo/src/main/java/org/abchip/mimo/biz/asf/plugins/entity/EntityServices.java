@@ -25,7 +25,7 @@ import java.util.Map.Entry;
 import java.util.Queue;
 import java.util.Set;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
 import org.abchip.mimo.util.Frames;
@@ -132,7 +132,7 @@ public class EntityServices {
 			EPackage dstEPackage = dstEClass.getEPackage();
 			for (EAnnotation srcEAnnotation : srcEPackage.getEAnnotations()) {
 				EAnnotation dstEAnnotation = dstEPackage.getEAnnotation(srcEAnnotation.getSource());
-				if(dstEAnnotation == null) {
+				if (dstEAnnotation == null) {
 					dstEAnnotation = EcoreUtils.copy(srcEAnnotation);
 					dstEPackage.getEAnnotations().add(dstEAnnotation);
 				}
@@ -285,7 +285,7 @@ public class EntityServices {
 
 					if (eClassRel != null) {
 						EClass eSuperClass = eClassRel.getESuperTypes().get(0);
-						if (eSuperClass.equals(BizPackage.eINSTANCE.getBizEntityType())) {
+						if (eSuperClass.equals(EntityPackage.eINSTANCE.getEntityType())) {
 							typeEntity = eClassRel;
 							break;
 						} else
@@ -325,14 +325,15 @@ public class EntityServices {
 				continue;
 
 			EClass eSuperClass = typeEntity.getESuperTypes().get(0);
-			if (!eSuperClass.equals(BizPackage.eINSTANCE.getBizEntityType()))
+			if (!eSuperClass.equals(EntityPackage.eINSTANCE.getEntityType()))
 				continue;
 
 			if (typeEntity.getEGenericSuperTypes().get(0).getETypeArguments().isEmpty()) {
 				LOGGER.info("TYPE: " + typeEntity.getName());
 				typeEntity.getEGenericSuperTypes().clear();
 				typeEntity.getESuperTypes().clear();
-				typeEntity.getESuperTypes().add(BizPackage.eINSTANCE.getBizEntity());
+				typeEntity.getESuperTypes().add(EntityPackage.eINSTANCE.getEntityIdentifiable());
+				typeEntity.getESuperTypes().add(EntityPackage.eINSTANCE.getEntityInfo());
 			}
 		}
 	}
@@ -820,7 +821,7 @@ public class EntityServices {
 				line = line.replaceFirst("ecore:EClass biz-model.ecore#//", "#//");
 				line = line.replaceFirst("biz-model.ecore#//", "#//");
 				line = line.replaceFirst("http://www.abchip.org/mimo/biz#//", "../../org.abchip.mimo.biz.core/model/biz.ecore#//");
-				line = line.replaceFirst("http://www.abchip.org/mimo#//", "../../org.abchip.mimo.core/model/mimo.ecore#//");
+				line = line.replaceAll("http://www.abchip.org/mimo#//", "../../org.abchip.mimo.core/model/mimo.ecore#//");
 
 				// from original model
 				int p = line.indexOf("ecore:EClass http://www.abchip.org/mimo/biz/model/");

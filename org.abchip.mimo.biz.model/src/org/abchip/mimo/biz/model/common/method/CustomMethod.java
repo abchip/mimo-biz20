@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.common.method;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +32,7 @@ import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetDepMethod;
  * @model annotation="mimo-ent-frame dictionary='CommonEntityLabels' formula='description'"
  * @generated
  */
-public interface CustomMethod extends BizEntityTyped<CustomMethodType> {
+public interface CustomMethod extends EntityTyped<CustomMethodType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Custom Method Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

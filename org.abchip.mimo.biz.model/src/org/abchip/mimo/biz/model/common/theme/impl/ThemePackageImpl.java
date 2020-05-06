@@ -863,7 +863,7 @@ public class ThemePackageImpl extends EPackageImpl implements ThemePackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		EnumPackage theEnumPackage = (EnumPackage)EPackage.Registry.INSTANCE.getEPackage(EnumPackage.eNS_URI);
 
 		// Create type parameters
@@ -871,9 +871,12 @@ public class ThemePackageImpl extends EPackageImpl implements ThemePackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		visualThemeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		visualThemeResourceEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		visualThemeSetEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		visualThemeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		visualThemeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		visualThemeResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		visualThemeResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		visualThemeSetEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		visualThemeSetEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(visualThemeEClass, VisualTheme.class, "VisualTheme", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

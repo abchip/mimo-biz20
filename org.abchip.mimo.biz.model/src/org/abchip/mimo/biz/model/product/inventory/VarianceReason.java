@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.product.inventory;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.ledger.VarianceReasonGlAccount;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.model.accounting.ledger.VarianceReasonGlAccount;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface VarianceReason extends BizEntity {
+public interface VarianceReason extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

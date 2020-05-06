@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.entity.sequence;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -77,7 +77,7 @@ public interface SequencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEQUENCE_VALUE_ITEM__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SEQUENCE_VALUE_ITEM__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -86,7 +86,7 @@ public interface SequencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEQUENCE_VALUE_ITEM__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SEQUENCE_VALUE_ITEM__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -95,7 +95,7 @@ public interface SequencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEQUENCE_VALUE_ITEM__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SEQUENCE_VALUE_ITEM__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -104,7 +104,7 @@ public interface SequencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEQUENCE_VALUE_ITEM__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SEQUENCE_VALUE_ITEM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Seq Name</b></em>' attribute.
@@ -113,7 +113,7 @@ public interface SequencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEQUENCE_VALUE_ITEM__SEQ_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SEQUENCE_VALUE_ITEM__SEQ_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Seq Id</b></em>' attribute.
@@ -122,7 +122,7 @@ public interface SequencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEQUENCE_VALUE_ITEM__SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SEQUENCE_VALUE_ITEM__SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Policy</b></em>' attribute.
@@ -131,7 +131,7 @@ public interface SequencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEQUENCE_VALUE_ITEM__SEQUENCE_POLICY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SEQUENCE_VALUE_ITEM__SEQUENCE_POLICY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Value Item</em>' class.
@@ -140,7 +140,7 @@ public interface SequencePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SEQUENCE_VALUE_ITEM_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SEQUENCE_VALUE_ITEM_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 
 	/**

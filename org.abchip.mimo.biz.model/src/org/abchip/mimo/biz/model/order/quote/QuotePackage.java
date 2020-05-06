@@ -8,6 +8,7 @@
 package org.abchip.mimo.biz.model.order.quote;
 
 import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +79,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int QUOTE__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +88,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int QUOTE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +97,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int QUOTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +106,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int QUOTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Quote Id</b></em>' attribute.
@@ -114,7 +115,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__QUOTE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int QUOTE__QUOTE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
@@ -123,7 +124,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__CURRENCY_UOM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int QUOTE__CURRENCY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -132,7 +133,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int QUOTE__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Issue Date</b></em>' attribute.
@@ -141,7 +142,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__ISSUE_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int QUOTE__ISSUE_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -150,7 +151,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__PARTY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int QUOTE__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Id</b></em>' reference.
@@ -159,7 +160,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__PRODUCT_STORE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int QUOTE__PRODUCT_STORE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Quote Attributes</b></em>' reference list.
@@ -168,7 +169,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__QUOTE_ATTRIBUTES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int QUOTE__QUOTE_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Quote Coefficients</b></em>' reference list.
@@ -177,7 +178,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__QUOTE_COEFFICIENTS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int QUOTE__QUOTE_COEFFICIENTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Quote Items</b></em>' reference list.
@@ -186,7 +187,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__QUOTE_ITEMS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int QUOTE__QUOTE_ITEMS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Quote Name</b></em>' attribute.
@@ -195,7 +196,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__QUOTE_NAME = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 9;
+	int QUOTE__QUOTE_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Quote Notes</b></em>' reference list.
@@ -204,7 +205,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__QUOTE_NOTES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 10;
+	int QUOTE__QUOTE_NOTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Quote Type Id</b></em>' reference.
@@ -213,7 +214,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__QUOTE_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 11;
+	int QUOTE__QUOTE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Quote Work Efforts</b></em>' reference list.
@@ -222,7 +223,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__QUOTE_WORK_EFFORTS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 12;
+	int QUOTE__QUOTE_WORK_EFFORTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Sales Channel Enum Id</b></em>' reference.
@@ -231,7 +232,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__SALES_CHANNEL_ENUM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 13;
+	int QUOTE__SALES_CHANNEL_ENUM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -240,7 +241,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__STATUS_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 14;
+	int QUOTE__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Valid From Date</b></em>' attribute.
@@ -249,7 +250,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__VALID_FROM_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 15;
+	int QUOTE__VALID_FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Valid Thru Date</b></em>' attribute.
@@ -258,7 +259,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE__VALID_THRU_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 16;
+	int QUOTE__VALID_THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The number of structural features of the '<em>Quote</em>' class.
@@ -267,7 +268,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 17;
+	int QUOTE_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl <em>Adjustment</em>}' class.
@@ -286,7 +287,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int QUOTE_ADJUSTMENT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -295,7 +296,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int QUOTE_ADJUSTMENT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -304,7 +305,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int QUOTE_ADJUSTMENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -313,7 +314,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int QUOTE_ADJUSTMENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Quote Adjustment Id</b></em>' attribute.
@@ -322,7 +323,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__QUOTE_ADJUSTMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int QUOTE_ADJUSTMENT__QUOTE_ADJUSTMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Amount</b></em>' attribute.
@@ -331,7 +332,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int QUOTE_ADJUSTMENT__AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -340,7 +341,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__COMMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int QUOTE_ADJUSTMENT__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Corresponding Product Id</b></em>' attribute.
@@ -349,7 +350,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__CORRESPONDING_PRODUCT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int QUOTE_ADJUSTMENT__CORRESPONDING_PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Created By User Login</b></em>' reference.
@@ -358,7 +359,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__CREATED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int QUOTE_ADJUSTMENT__CREATED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Created Date</b></em>' attribute.
@@ -367,7 +368,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__CREATED_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int QUOTE_ADJUSTMENT__CREATED_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Customer Reference Id</b></em>' attribute.
@@ -376,7 +377,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__CUSTOMER_REFERENCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int QUOTE_ADJUSTMENT__CUSTOMER_REFERENCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -385,7 +386,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int QUOTE_ADJUSTMENT__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Exempt Amount</b></em>' attribute.
@@ -394,7 +395,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__EXEMPT_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int QUOTE_ADJUSTMENT__EXEMPT_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Include In Shipping</b></em>' attribute.
@@ -403,7 +404,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__INCLUDE_IN_SHIPPING = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int QUOTE_ADJUSTMENT__INCLUDE_IN_SHIPPING = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Include In Tax</b></em>' attribute.
@@ -412,7 +413,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__INCLUDE_IN_TAX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int QUOTE_ADJUSTMENT__INCLUDE_IN_TAX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified By User Login</b></em>' attribute.
@@ -421,7 +422,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__LAST_MODIFIED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int QUOTE_ADJUSTMENT__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified Date</b></em>' attribute.
@@ -430,7 +431,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__LAST_MODIFIED_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int QUOTE_ADJUSTMENT__LAST_MODIFIED_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Override Gl Account Id</b></em>' reference.
@@ -439,7 +440,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__OVERRIDE_GL_ACCOUNT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int QUOTE_ADJUSTMENT__OVERRIDE_GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Primary Geo Id</b></em>' reference.
@@ -448,7 +449,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__PRIMARY_GEO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int QUOTE_ADJUSTMENT__PRIMARY_GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Product Feature Id</b></em>' attribute.
@@ -457,7 +458,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__PRODUCT_FEATURE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int QUOTE_ADJUSTMENT__PRODUCT_FEATURE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Action Seq Id</b></em>' attribute.
@@ -466,7 +467,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__PRODUCT_PROMO_ACTION_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int QUOTE_ADJUSTMENT__PRODUCT_PROMO_ACTION_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Id</b></em>' reference.
@@ -475,7 +476,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__PRODUCT_PROMO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 17;
+	int QUOTE_ADJUSTMENT__PRODUCT_PROMO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Rule Id</b></em>' attribute.
@@ -484,7 +485,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__PRODUCT_PROMO_RULE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 18;
+	int QUOTE_ADJUSTMENT__PRODUCT_PROMO_RULE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Quote Adjustment Type Id</b></em>' reference.
@@ -493,7 +494,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__QUOTE_ADJUSTMENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 19;
+	int QUOTE_ADJUSTMENT__QUOTE_ADJUSTMENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Quote Id</b></em>' reference.
@@ -502,7 +503,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__QUOTE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 20;
+	int QUOTE_ADJUSTMENT__QUOTE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Quote Item Seq Id</b></em>' attribute.
@@ -511,7 +512,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__QUOTE_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 21;
+	int QUOTE_ADJUSTMENT__QUOTE_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Secondary Geo Id</b></em>' reference.
@@ -520,7 +521,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__SECONDARY_GEO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 22;
+	int QUOTE_ADJUSTMENT__SECONDARY_GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Source Percentage</b></em>' attribute.
@@ -529,7 +530,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__SOURCE_PERCENTAGE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 23;
+	int QUOTE_ADJUSTMENT__SOURCE_PERCENTAGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Source Reference Id</b></em>' attribute.
@@ -538,7 +539,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__SOURCE_REFERENCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 24;
+	int QUOTE_ADJUSTMENT__SOURCE_REFERENCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Geo Id</b></em>' attribute.
@@ -547,7 +548,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__TAX_AUTH_GEO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 25;
+	int QUOTE_ADJUSTMENT__TAX_AUTH_GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Party Id</b></em>' attribute.
@@ -556,7 +557,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT__TAX_AUTH_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 26;
+	int QUOTE_ADJUSTMENT__TAX_AUTH_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 30;
 
 	/**
 	 * The number of structural features of the '<em>Adjustment</em>' class.
@@ -565,7 +566,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ADJUSTMENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 27;
+	int QUOTE_ADJUSTMENT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 31;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAttributeImpl <em>Attribute</em>}' class.
@@ -584,7 +585,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int QUOTE_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -593,7 +594,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int QUOTE_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -602,7 +603,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int QUOTE_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -611,7 +612,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int QUOTE_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Quote Id</b></em>' reference.
@@ -620,7 +621,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ATTRIBUTE__QUOTE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int QUOTE_ATTRIBUTE__QUOTE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -629,7 +630,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int QUOTE_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -638,7 +639,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int QUOTE_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -647,7 +648,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int QUOTE_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Attribute</em>' class.
@@ -656,7 +657,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int QUOTE_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteCoefficientImpl <em>Coefficient</em>}' class.
@@ -675,7 +676,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_COEFFICIENT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int QUOTE_COEFFICIENT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -684,7 +685,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_COEFFICIENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int QUOTE_COEFFICIENT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -693,7 +694,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_COEFFICIENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int QUOTE_COEFFICIENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -702,7 +703,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_COEFFICIENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int QUOTE_COEFFICIENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Quote Id</b></em>' reference.
@@ -711,7 +712,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_COEFFICIENT__QUOTE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int QUOTE_COEFFICIENT__QUOTE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Coeff Name</b></em>' attribute.
@@ -720,7 +721,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_COEFFICIENT__COEFF_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int QUOTE_COEFFICIENT__COEFF_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Coeff Value</b></em>' attribute.
@@ -729,7 +730,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_COEFFICIENT__COEFF_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int QUOTE_COEFFICIENT__COEFF_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Coefficient</em>' class.
@@ -738,7 +739,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_COEFFICIENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int QUOTE_COEFFICIENT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteItemImpl <em>Item</em>}' class.
@@ -757,7 +758,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int QUOTE_ITEM__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -766,7 +767,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int QUOTE_ITEM__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -775,7 +776,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int QUOTE_ITEM__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -784,7 +785,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int QUOTE_ITEM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Quote Id</b></em>' reference.
@@ -793,7 +794,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__QUOTE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int QUOTE_ITEM__QUOTE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Quote Item Seq Id</b></em>' attribute.
@@ -802,7 +803,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__QUOTE_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int QUOTE_ITEM__QUOTE_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -811,7 +812,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__COMMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int QUOTE_ITEM__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Config Id</b></em>' attribute.
@@ -820,7 +821,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__CONFIG_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int QUOTE_ITEM__CONFIG_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Id</b></em>' reference.
@@ -829,7 +830,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__CUST_REQUEST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int QUOTE_ITEM__CUST_REQUEST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Item Seq Id</b></em>' attribute.
@@ -838,7 +839,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__CUST_REQUEST_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int QUOTE_ITEM__CUST_REQUEST_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Deliverable Type Id</b></em>' reference.
@@ -847,7 +848,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__DELIVERABLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int QUOTE_ITEM__DELIVERABLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Delivery Date</b></em>' attribute.
@@ -856,7 +857,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__ESTIMATED_DELIVERY_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int QUOTE_ITEM__ESTIMATED_DELIVERY_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Is Promo</b></em>' attribute.
@@ -865,7 +866,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__IS_PROMO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int QUOTE_ITEM__IS_PROMO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Lead Time Days</b></em>' attribute.
@@ -874,7 +875,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__LEAD_TIME_DAYS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int QUOTE_ITEM__LEAD_TIME_DAYS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Product Feature Id</b></em>' reference.
@@ -883,7 +884,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__PRODUCT_FEATURE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int QUOTE_ITEM__PRODUCT_FEATURE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -892,7 +893,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__PRODUCT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int QUOTE_ITEM__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -901,7 +902,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__QUANTITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int QUOTE_ITEM__QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Quote Unit Price</b></em>' attribute.
@@ -910,7 +911,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__QUOTE_UNIT_PRICE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int QUOTE_ITEM__QUOTE_UNIT_PRICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Reserv Length</b></em>' attribute.
@@ -919,7 +920,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__RESERV_LENGTH = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int QUOTE_ITEM__RESERV_LENGTH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Reserv Persons</b></em>' attribute.
@@ -928,7 +929,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__RESERV_PERSONS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int QUOTE_ITEM__RESERV_PERSONS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Reserv Start</b></em>' attribute.
@@ -937,7 +938,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__RESERV_START = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int QUOTE_ITEM__RESERV_START = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Selected Amount</b></em>' attribute.
@@ -946,7 +947,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__SELECTED_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 17;
+	int QUOTE_ITEM__SELECTED_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Skill Type Id</b></em>' reference.
@@ -955,7 +956,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__SKILL_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 18;
+	int QUOTE_ITEM__SKILL_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Uom Id</b></em>' reference.
@@ -964,7 +965,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 19;
+	int QUOTE_ITEM__UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -973,7 +974,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 20;
+	int QUOTE_ITEM__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 24;
 
 	/**
 	 * The number of structural features of the '<em>Item</em>' class.
@@ -982,7 +983,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ITEM_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 21;
+	int QUOTE_ITEM_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 25;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteNoteImpl <em>Note</em>}' class.
@@ -1074,7 +1075,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ROLE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int QUOTE_ROLE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1083,7 +1084,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ROLE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int QUOTE_ROLE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1092,7 +1093,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ROLE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int QUOTE_ROLE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1101,7 +1102,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ROLE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int QUOTE_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Quote Id</b></em>' reference.
@@ -1110,7 +1111,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ROLE__QUOTE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int QUOTE_ROLE__QUOTE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -1119,7 +1120,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ROLE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int QUOTE_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -1128,7 +1129,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ROLE__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int QUOTE_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1137,7 +1138,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ROLE__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int QUOTE_ROLE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -1146,7 +1147,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ROLE__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int QUOTE_ROLE__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Role</em>' class.
@@ -1155,7 +1156,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_ROLE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int QUOTE_ROLE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTermImpl <em>Term</em>}' class.
@@ -1174,7 +1175,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int QUOTE_TERM__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1183,7 +1184,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int QUOTE_TERM__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1192,7 +1193,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int QUOTE_TERM__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1201,7 +1202,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int QUOTE_TERM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Quote Id</b></em>' reference.
@@ -1210,7 +1211,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM__QUOTE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int QUOTE_TERM__QUOTE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Term Type Id</b></em>' reference.
@@ -1219,7 +1220,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM__TERM_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int QUOTE_TERM__TERM_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Quote Item Seq Id</b></em>' attribute.
@@ -1228,7 +1229,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM__QUOTE_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int QUOTE_TERM__QUOTE_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1237,7 +1238,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int QUOTE_TERM__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Term Days</b></em>' attribute.
@@ -1246,7 +1247,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM__TERM_DAYS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int QUOTE_TERM__TERM_DAYS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Term Value</b></em>' attribute.
@@ -1255,7 +1256,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM__TERM_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int QUOTE_TERM__TERM_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Text Value</b></em>' attribute.
@@ -1264,7 +1265,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM__TEXT_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int QUOTE_TERM__TEXT_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Uom Id</b></em>' attribute.
@@ -1273,7 +1274,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM__UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int QUOTE_TERM__UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Term</em>' class.
@@ -1282,7 +1283,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int QUOTE_TERM_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTermAttributeImpl <em>Term Attribute</em>}' class.
@@ -1301,7 +1302,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int QUOTE_TERM_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1310,7 +1311,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int QUOTE_TERM_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1319,7 +1320,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int QUOTE_TERM_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1328,7 +1329,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int QUOTE_TERM_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1337,7 +1338,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int QUOTE_TERM_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Quote Id</b></em>' attribute.
@@ -1346,7 +1347,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM_ATTRIBUTE__QUOTE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int QUOTE_TERM_ATTRIBUTE__QUOTE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Quote Item Seq Id</b></em>' attribute.
@@ -1355,7 +1356,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM_ATTRIBUTE__QUOTE_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int QUOTE_TERM_ATTRIBUTE__QUOTE_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Term Type Id</b></em>' attribute.
@@ -1364,7 +1365,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM_ATTRIBUTE__TERM_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int QUOTE_TERM_ATTRIBUTE__TERM_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -1373,7 +1374,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int QUOTE_TERM_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -1382,7 +1383,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int QUOTE_TERM_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Term Attribute</em>' class.
@@ -1391,7 +1392,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TERM_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int QUOTE_TERM_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeImpl <em>Type</em>}' class.
@@ -1410,7 +1411,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int QUOTE_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1419,7 +1420,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int QUOTE_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1428,7 +1429,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int QUOTE_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1437,7 +1438,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int QUOTE_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1446,7 +1447,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int QUOTE_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Quote Type Id</b></em>' attribute.
@@ -1455,7 +1456,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TYPE__QUOTE_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int QUOTE_TYPE__QUOTE_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1464,7 +1465,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int QUOTE_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -1473,7 +1474,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int QUOTE_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -1482,7 +1483,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int QUOTE_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Quote Type Attrs</b></em>' reference list.
@@ -1491,7 +1492,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TYPE__QUOTE_TYPE_ATTRS = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int QUOTE_TYPE__QUOTE_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -1500,7 +1501,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 5;
+	int QUOTE_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteTypeAttrImpl <em>Type Attr</em>}' class.
@@ -1519,7 +1520,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TYPE_ATTR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int QUOTE_TYPE_ATTR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1528,7 +1529,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TYPE_ATTR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int QUOTE_TYPE_ATTR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1537,7 +1538,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TYPE_ATTR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int QUOTE_TYPE_ATTR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1546,7 +1547,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TYPE_ATTR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int QUOTE_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Quote Type Id</b></em>' reference.
@@ -1555,7 +1556,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TYPE_ATTR__QUOTE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int QUOTE_TYPE_ATTR__QUOTE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1564,7 +1565,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TYPE_ATTR__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int QUOTE_TYPE_ATTR__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1573,7 +1574,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TYPE_ATTR__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int QUOTE_TYPE_ATTR__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Type Attr</em>' class.
@@ -1582,7 +1583,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_TYPE_ATTR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int QUOTE_TYPE_ATTR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteWorkEffortImpl <em>Work Effort</em>}' class.
@@ -1601,7 +1602,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_WORK_EFFORT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int QUOTE_WORK_EFFORT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1610,7 +1611,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_WORK_EFFORT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int QUOTE_WORK_EFFORT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1619,7 +1620,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_WORK_EFFORT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int QUOTE_WORK_EFFORT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1628,7 +1629,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_WORK_EFFORT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int QUOTE_WORK_EFFORT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Quote Id</b></em>' reference.
@@ -1637,7 +1638,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_WORK_EFFORT__QUOTE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int QUOTE_WORK_EFFORT__QUOTE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -1646,7 +1647,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_WORK_EFFORT__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int QUOTE_WORK_EFFORT__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort</em>' class.
@@ -1655,7 +1656,7 @@ public interface QuotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int QUOTE_WORK_EFFORT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int QUOTE_WORK_EFFORT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 
 	/**

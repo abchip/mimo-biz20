@@ -9,7 +9,8 @@ package org.abchip.mimo.biz.model.content.document;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +35,7 @@ import org.abchip.mimo.biz.BizEntityTyped;
  * @model
  * @generated
  */
-public interface Document extends BizEntityTyped<DocumentType> {
+public interface Document extends EntityTyped<DocumentType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
 	 * <!-- begin-user-doc -->

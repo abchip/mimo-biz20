@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.order.request;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityType;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model annotation="mimo-ent-frame title='Customer Request Type' dictionary='OrderEntityLabels' formula='description'"
  * @generated
  */
-public interface CustRequestType extends BizEntityType<CustRequest> {
+public interface CustRequestType extends EntityType<CustRequest>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Cust Request Type Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

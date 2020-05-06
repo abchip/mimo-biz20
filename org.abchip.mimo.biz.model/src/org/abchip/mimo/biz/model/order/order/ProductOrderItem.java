@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.order.order;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * @model
  * @generated
  */
-public interface ProductOrderItem extends BizEntity {
+public interface ProductOrderItem extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Engagement Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

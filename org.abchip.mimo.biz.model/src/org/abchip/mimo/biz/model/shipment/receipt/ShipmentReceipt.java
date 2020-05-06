@@ -10,12 +10,13 @@ package org.abchip.mimo.biz.model.shipment.receipt;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.order.order.OrderHeader;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItem;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.shipment.shipment.Shipment;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -48,7 +49,7 @@ import org.abchip.mimo.biz.model.shipment.shipment.Shipment;
  * @model
  * @generated
  */
-public interface ShipmentReceipt extends BizEntity {
+public interface ShipmentReceipt extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Datetime Received</b></em>' attribute.
 	 * <!-- begin-user-doc -->

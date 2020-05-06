@@ -10,9 +10,10 @@ package org.abchip.mimo.biz.model.workeffort.workeffort;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +38,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * @model
  * @generated
  */
-public interface WorkEffortGoodStandard extends BizEntityTyped<WorkEffortGoodStandardType> {
+public interface WorkEffortGoodStandard extends EntityTyped<WorkEffortGoodStandardType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Estimated Cost</b></em>' attribute.
 	 * <!-- begin-user-doc -->

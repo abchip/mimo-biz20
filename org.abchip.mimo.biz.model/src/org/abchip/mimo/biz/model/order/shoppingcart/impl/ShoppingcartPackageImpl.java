@@ -878,7 +878,7 @@ public class ShoppingcartPackageImpl extends EPackageImpl implements Shoppingcar
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		CatalogPackage theCatalogPackage = (CatalogPackage)EPackage.Registry.INSTANCE.getEPackage(CatalogPackage.eNS_URI);
 		ProductPackage theProductPackage = (ProductPackage)EPackage.Registry.INSTANCE.getEPackage(ProductPackage.eNS_URI);
 
@@ -887,7 +887,8 @@ public class ShoppingcartPackageImpl extends EPackageImpl implements Shoppingcar
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		cartAbandonedLineEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		cartAbandonedLineEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		cartAbandonedLineEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(cartAbandonedLineEClass, CartAbandonedLine.class, "CartAbandonedLine", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

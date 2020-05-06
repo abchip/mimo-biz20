@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.order.order;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Order Item Package Association'"
  * @generated
  */
-public interface OrderItemShipGroupAssoc extends BizEntity {
+public interface OrderItemShipGroupAssoc extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Cancel Quantity</b></em>' attribute.
 	 * <!-- begin-user-doc -->

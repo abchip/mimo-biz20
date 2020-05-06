@@ -1771,24 +1771,35 @@ public class VisitPackageImpl extends EPackageImpl implements VisitPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 
 		// Create type parameters
 
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		browserTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		platformTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		protocolTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		serverHitEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		serverHitBinEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		serverHitTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		userAgentEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		userAgentMethodTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		userAgentTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		visitEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		visitorEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		browserTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		browserTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		platformTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		platformTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		protocolTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		protocolTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		serverHitEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		serverHitEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		serverHitBinEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		serverHitBinEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		serverHitTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		serverHitTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		userAgentEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		userAgentEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		userAgentMethodTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		userAgentMethodTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		userAgentTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		userAgentTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		visitEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		visitEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		visitorEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		visitorEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(browserTypeEClass, BrowserType.class, "BrowserType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

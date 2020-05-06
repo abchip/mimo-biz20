@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.marketing.tracking;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaign;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,7 +46,7 @@ import org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaign;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface TrackingCode extends BizEntity {
+public interface TrackingCode extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Billable Lifetime</b></em>' attribute.
 	 * <!-- begin-user-doc -->

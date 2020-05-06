@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.content.content;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityType;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.BizEntityType;
  * @model annotation="mimo-ent-frame dictionary='ContentEntityLabels' formula='description'"
  * @generated
  */
-public interface ContentType extends BizEntityType<Content> {
+public interface ContentType extends EntityType<Content>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Content Type Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

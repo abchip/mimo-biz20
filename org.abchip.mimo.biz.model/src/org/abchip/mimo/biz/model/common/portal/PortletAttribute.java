@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.common.portal;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +32,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Allows to set different attribute values for each instance of the same portlet'"
  * @generated
  */
-public interface PortletAttribute extends BizEntity {
+public interface PortletAttribute extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Attr Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -8,9 +8,10 @@
 package org.abchip.mimo.biz.model.content.content;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.datasource.DataSource;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +43,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  * @model annotation="mimo-ent-frame title='Content Association'"
  * @generated
  */
-public interface ContentAssoc extends BizEntity {
+public interface ContentAssoc extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Content Assoc Predicate Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

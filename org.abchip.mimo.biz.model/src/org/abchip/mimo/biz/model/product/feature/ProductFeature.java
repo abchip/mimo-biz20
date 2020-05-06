@@ -9,8 +9,9 @@ package org.abchip.mimo.biz.model.product.feature;
 
 import java.math.BigDecimal;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.uom.Uom;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,7 +39,7 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface ProductFeature extends BizEntityTyped<ProductFeatureType> {
+public interface ProductFeature extends EntityTyped<ProductFeatureType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Abbrev</b></em>' attribute.
 	 * <!-- begin-user-doc -->

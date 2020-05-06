@@ -7,9 +7,10 @@
  */
 package org.abchip.mimo.biz.model.product.store;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
  * @model annotation="mimo-ent-frame help='Used to define Carrier-ShipmentMethod combinations that a vendor related to the store will accept (for multi-vendor stores)' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductStoreVendorShipment extends BizEntity {
+public interface ProductStoreVendorShipment extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Carrier Party Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

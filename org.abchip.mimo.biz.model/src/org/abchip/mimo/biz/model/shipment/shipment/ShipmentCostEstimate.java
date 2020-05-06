@@ -8,13 +8,14 @@
 package org.abchip.mimo.biz.model.shipment.shipment;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.abchip.mimo.biz.model.product.price.QuantityBreak;
 import org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -59,7 +60,7 @@ import org.abchip.mimo.biz.model.product.store.ProductStoreShipmentMeth;
  * @model
  * @generated
  */
-public interface ShipmentCostEstimate extends BizEntity {
+public interface ShipmentCostEstimate extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Carrier Party Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

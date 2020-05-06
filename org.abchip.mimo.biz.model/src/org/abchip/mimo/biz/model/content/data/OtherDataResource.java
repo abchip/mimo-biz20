@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.content.data;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +27,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Other Data Object'"
  * @generated
  */
-public interface OtherDataResource extends BizEntity {
+public interface OtherDataResource extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Data Resource Content</b></em>' attribute.
 	 * <!-- begin-user-doc -->

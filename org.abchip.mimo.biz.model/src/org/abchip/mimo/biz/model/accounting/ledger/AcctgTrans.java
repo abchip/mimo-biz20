@@ -9,7 +9,6 @@ package org.abchip.mimo.biz.model.accounting.ledger;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset;
 import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
@@ -22,6 +21,8 @@ import org.abchip.mimo.biz.model.product.inventory.PhysicalInventory;
 import org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt;
 import org.abchip.mimo.biz.model.shipment.shipment.Shipment;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -68,7 +69,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
  * @model annotation="mimo-ent-frame title='Accounting Transaction' formula='description'"
  * @generated
  */
-public interface AcctgTrans extends BizEntityTyped<AcctgTransType> {
+public interface AcctgTrans extends EntityTyped<AcctgTransType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Created By User Login</b></em>' attribute.
 	 * <!-- begin-user-doc -->

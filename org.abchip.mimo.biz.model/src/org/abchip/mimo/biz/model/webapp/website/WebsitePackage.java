@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.webapp.website;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_PAGE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WEB_PAGE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_PAGE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WEB_PAGE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_PAGE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WEB_PAGE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_PAGE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WEB_PAGE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Web Page Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_PAGE__WEB_PAGE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WEB_PAGE__WEB_PAGE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Content Id</b></em>' reference.
@@ -123,7 +123,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_PAGE__CONTENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WEB_PAGE__CONTENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Page Name</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_PAGE__PAGE_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WEB_PAGE__PAGE_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Web Site Id</b></em>' reference.
@@ -141,7 +141,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_PAGE__WEB_SITE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WEB_PAGE__WEB_SITE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Web Page</em>' class.
@@ -150,7 +150,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_PAGE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WEB_PAGE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl <em>Web Site</em>}' class.
@@ -169,7 +169,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WEB_SITE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -178,7 +178,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WEB_SITE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -187,7 +187,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WEB_SITE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -196,7 +196,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WEB_SITE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Web Site Id</b></em>' attribute.
@@ -205,7 +205,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__WEB_SITE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WEB_SITE__WEB_SITE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Allow Product Store Change</b></em>' attribute.
@@ -214,7 +214,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__ALLOW_PRODUCT_STORE_CHANGE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WEB_SITE__ALLOW_PRODUCT_STORE_CHANGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Cookie Domain</b></em>' attribute.
@@ -223,7 +223,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__COOKIE_DOMAIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WEB_SITE__COOKIE_DOMAIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Display Maintenance Page</b></em>' attribute.
@@ -232,7 +232,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__DISPLAY_MAINTENANCE_PAGE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WEB_SITE__DISPLAY_MAINTENANCE_PAGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Enable Https</b></em>' attribute.
@@ -241,7 +241,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__ENABLE_HTTPS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WEB_SITE__ENABLE_HTTPS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Hosted Path Alias</b></em>' attribute.
@@ -250,7 +250,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__HOSTED_PATH_ALIAS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int WEB_SITE__HOSTED_PATH_ALIAS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Http Host</b></em>' attribute.
@@ -259,7 +259,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__HTTP_HOST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int WEB_SITE__HTTP_HOST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Http Port</b></em>' attribute.
@@ -268,7 +268,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__HTTP_PORT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int WEB_SITE__HTTP_PORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Https Host</b></em>' attribute.
@@ -277,7 +277,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__HTTPS_HOST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int WEB_SITE__HTTPS_HOST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Https Port</b></em>' attribute.
@@ -286,7 +286,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__HTTPS_PORT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int WEB_SITE__HTTPS_PORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Is Default</b></em>' attribute.
@@ -295,7 +295,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__IS_DEFAULT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int WEB_SITE__IS_DEFAULT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Id</b></em>' reference.
@@ -304,7 +304,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__PRODUCT_STORE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int WEB_SITE__PRODUCT_STORE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Secure Content Prefix</b></em>' attribute.
@@ -313,7 +313,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__SECURE_CONTENT_PREFIX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int WEB_SITE__SECURE_CONTENT_PREFIX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Site Name</b></em>' attribute.
@@ -322,7 +322,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__SITE_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int WEB_SITE__SITE_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Standard Content Prefix</b></em>' attribute.
@@ -331,7 +331,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__STANDARD_CONTENT_PREFIX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int WEB_SITE__STANDARD_CONTENT_PREFIX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Visual Theme Set Id</b></em>' reference.
@@ -340,7 +340,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__VISUAL_THEME_SET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int WEB_SITE__VISUAL_THEME_SET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Web Analytics Configs</b></em>' reference list.
@@ -349,7 +349,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__WEB_ANALYTICS_CONFIGS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int WEB_SITE__WEB_ANALYTICS_CONFIGS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Webapp Path</b></em>' attribute.
@@ -358,7 +358,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__WEBAPP_PATH = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 17;
+	int WEB_SITE__WEBAPP_PATH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
 
 	/**
 	 * The number of structural features of the '<em>Web Site</em>' class.
@@ -367,7 +367,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 18;
+	int WEB_SITE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
 
 
 	/**

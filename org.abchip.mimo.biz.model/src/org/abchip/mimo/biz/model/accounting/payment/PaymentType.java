@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.accounting.payment;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityType;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +32,7 @@ import org.abchip.mimo.biz.BizEntityType;
  * @model annotation="mimo-ent-frame dictionary='AccountingEntityLabels' formula='description'"
  * @generated
  */
-public interface PaymentType extends BizEntityType<Payment> {
+public interface PaymentType extends EntityType<Payment>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

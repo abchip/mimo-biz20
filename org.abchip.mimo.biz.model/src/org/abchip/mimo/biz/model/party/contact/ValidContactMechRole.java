@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.party.contact;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.party.RoleType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.model.party.party.RoleType;
  * @model annotation="mimo-ent-frame title='Valid Contact Mechanism Role'"
  * @generated
  */
-public interface ValidContactMechRole extends BizEntity {
+public interface ValidContactMechRole extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Role Type Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

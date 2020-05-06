@@ -10,9 +10,10 @@ package org.abchip.mimo.biz.model.marketing.opportunity;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -41,7 +42,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  * @model annotation="mimo-ent-frame title='Tracks a history of sales opportunity information' formula='description'"
  * @generated
  */
-public interface SalesOpportunityHistory extends BizEntity {
+public interface SalesOpportunityHistory extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Change Note</b></em>' attribute.
 	 * <!-- begin-user-doc -->

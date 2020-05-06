@@ -7,9 +7,10 @@
  */
 package org.abchip.mimo.biz.model.product.promo;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.product.category.ProductCategory;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +35,7 @@ import org.abchip.mimo.biz.model.product.category.ProductCategory;
  * @model annotation="mimo-ent-frame title='Product Promotion Category' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductPromoCategory extends BizEntity {
+public interface ProductPromoCategory extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>And Group Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

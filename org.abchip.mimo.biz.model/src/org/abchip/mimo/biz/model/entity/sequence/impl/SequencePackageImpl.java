@@ -756,14 +756,15 @@ public class SequencePackageImpl extends EPackageImpl implements SequencePackage
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 
 		// Create type parameters
 
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		sequenceValueItemEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		sequenceValueItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		sequenceValueItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(sequenceValueItemEClass, SequenceValueItem.class, "SequenceValueItem", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

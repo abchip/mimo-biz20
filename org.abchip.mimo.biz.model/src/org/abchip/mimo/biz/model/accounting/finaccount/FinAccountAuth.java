@@ -10,7 +10,8 @@ package org.abchip.mimo.biz.model.accounting.finaccount;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +35,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Financial Account Authorizations record'"
  * @generated
  */
-public interface FinAccountAuth extends BizEntity {
+public interface FinAccountAuth extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->

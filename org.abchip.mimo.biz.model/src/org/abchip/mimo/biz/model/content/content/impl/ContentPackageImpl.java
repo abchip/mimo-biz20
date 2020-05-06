@@ -2405,7 +2405,7 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		DataPackage theDataPackage = (DataPackage)EPackage.Registry.INSTANCE.getEPackage(DataPackage.eNS_URI);
 		LoginPackage theLoginPackage = (LoginPackage)EPackage.Registry.INSTANCE.getEPackage(LoginPackage.eNS_URI);
 		MethodPackage theMethodPackage = (MethodPackage)EPackage.Registry.INSTANCE.getEPackage(MethodPackage.eNS_URI);
@@ -2419,31 +2419,52 @@ public class ContentPackageImpl extends EPackageImpl implements ContentPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getContentType());
 		g1.getETypeArguments().add(g2);
 		contentEClass.getEGenericSuperTypes().add(g1);
-		contentApprovalEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contentAssocEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contentAssocPredicateEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contentAssocTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contentAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contentKeywordEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contentMetaDataEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contentOperationEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contentPurposeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contentPurposeOperationEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contentPurposeTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contentRevisionEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contentRevisionItemEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contentRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contentSearchConstraintEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contentSearchResultEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		contentEClass.getEGenericSuperTypes().add(g1);
+		contentApprovalEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contentApprovalEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contentAssocEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contentAssocEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contentAssocPredicateEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contentAssocPredicateEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contentAssocTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contentAssocTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contentAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contentAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contentKeywordEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contentKeywordEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contentMetaDataEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contentMetaDataEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contentOperationEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contentOperationEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contentPurposeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contentPurposeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contentPurposeOperationEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contentPurposeOperationEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contentPurposeTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contentPurposeTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contentRevisionEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contentRevisionEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contentRevisionItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contentRevisionItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contentRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contentRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contentSearchConstraintEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contentSearchConstraintEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contentSearchResultEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contentSearchResultEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getContent());
 		g1.getETypeArguments().add(g2);
 		contentTypeEClass.getEGenericSuperTypes().add(g1);
-		contentTypeAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		contentTypeEClass.getEGenericSuperTypes().add(g1);
+		contentTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contentTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(contentEClass, Content.class, "Content", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

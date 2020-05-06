@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.shipment.receipt;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REJECTION_REASON__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int REJECTION_REASON__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REJECTION_REASON__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int REJECTION_REASON__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REJECTION_REASON__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int REJECTION_REASON__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REJECTION_REASON__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int REJECTION_REASON__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Rejection Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REJECTION_REASON__REJECTION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int REJECTION_REASON__REJECTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REJECTION_REASON__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int REJECTION_REASON__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Rejection Reason</em>' class.
@@ -132,7 +132,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int REJECTION_REASON_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int REJECTION_REASON_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptImpl <em>Shipment Receipt</em>}' class.
@@ -151,7 +151,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SHIPMENT_RECEIPT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -160,7 +160,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SHIPMENT_RECEIPT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -169,7 +169,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SHIPMENT_RECEIPT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -178,7 +178,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_RECEIPT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Receipt Id</b></em>' attribute.
@@ -187,7 +187,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__RECEIPT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SHIPMENT_RECEIPT__RECEIPT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Datetime Received</b></em>' attribute.
@@ -196,7 +196,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__DATETIME_RECEIVED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SHIPMENT_RECEIPT__DATETIME_RECEIVED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Inventory Item Id</b></em>' reference.
@@ -205,7 +205,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__INVENTORY_ITEM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SHIPMENT_RECEIPT__INVENTORY_ITEM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Item Description</b></em>' attribute.
@@ -214,7 +214,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__ITEM_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SHIPMENT_RECEIPT__ITEM_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Order Id</b></em>' reference.
@@ -223,7 +223,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__ORDER_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SHIPMENT_RECEIPT__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -232,7 +232,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__ORDER_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int SHIPMENT_RECEIPT__ORDER_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -241,7 +241,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__PRODUCT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int SHIPMENT_RECEIPT__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Quantity Accepted</b></em>' attribute.
@@ -250,7 +250,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__QUANTITY_ACCEPTED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int SHIPMENT_RECEIPT__QUANTITY_ACCEPTED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Quantity Rejected</b></em>' attribute.
@@ -259,7 +259,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__QUANTITY_REJECTED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int SHIPMENT_RECEIPT__QUANTITY_REJECTED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Received By User Login Id</b></em>' reference.
@@ -268,7 +268,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__RECEIVED_BY_USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int SHIPMENT_RECEIPT__RECEIVED_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Rejection Id</b></em>' reference.
@@ -277,7 +277,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__REJECTION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int SHIPMENT_RECEIPT__REJECTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Return Id</b></em>' attribute.
@@ -286,7 +286,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__RETURN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int SHIPMENT_RECEIPT__RETURN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Return Item Seq Id</b></em>' attribute.
@@ -295,7 +295,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__RETURN_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int SHIPMENT_RECEIPT__RETURN_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Id</b></em>' reference.
@@ -304,7 +304,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__SHIPMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int SHIPMENT_RECEIPT__SHIPMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Item Seq Id</b></em>' attribute.
@@ -313,7 +313,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__SHIPMENT_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int SHIPMENT_RECEIPT__SHIPMENT_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Package Seq Id</b></em>' attribute.
@@ -322,7 +322,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT__SHIPMENT_PACKAGE_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int SHIPMENT_RECEIPT__SHIPMENT_PACKAGE_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Receipt</em>' class.
@@ -331,7 +331,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int SHIPMENT_RECEIPT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.receipt.impl.ShipmentReceiptRoleImpl <em>Shipment Receipt Role</em>}' class.
@@ -350,7 +350,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT_ROLE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SHIPMENT_RECEIPT_ROLE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -359,7 +359,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT_ROLE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SHIPMENT_RECEIPT_ROLE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -368,7 +368,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT_ROLE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SHIPMENT_RECEIPT_ROLE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -377,7 +377,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT_ROLE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_RECEIPT_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Receipt Id</b></em>' reference.
@@ -386,7 +386,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT_ROLE__RECEIPT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SHIPMENT_RECEIPT_ROLE__RECEIPT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -395,7 +395,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT_ROLE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SHIPMENT_RECEIPT_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' attribute.
@@ -404,7 +404,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT_ROLE__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SHIPMENT_RECEIPT_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Receipt Role</em>' class.
@@ -413,7 +413,7 @@ public interface ReceiptPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_RECEIPT_ROLE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SHIPMENT_RECEIPT_ROLE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 
 	/**

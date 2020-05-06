@@ -25,7 +25,6 @@ import org.eclipse.emf.ecore.EClass;
 public class GetCommonDefaultImpl extends BizServiceRequestImpl<GetCommonDefaultResponse> implements GetCommonDefault {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected GetCommonDefaultImpl() {
@@ -34,7 +33,6 @@ public class GetCommonDefaultImpl extends BizServiceRequestImpl<GetCommonDefault
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override

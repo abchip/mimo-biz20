@@ -59,7 +59,7 @@ public interface CalculateProductPrice extends BizServiceRequest<CalculateProduc
 	 * @return the value of the '<em>Currency Uom Id</em>' attribute.
 	 * @see #setCurrencyUomId(String)
 	 * @see org.abchip.mimo.biz.service.product.ProductPackage#getCalculateProductPrice_CurrencyUomId()
-	 * @model default="@general/currency.uom.id.default"
+	 * @model default="@general/currency.uom.id.default" required="true"
 	 * @generated
 	 */
 	String getCurrencyUomId();

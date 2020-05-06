@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.product.price;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductPriceAction extends BizEntity {
+public interface ProductPriceAction extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->

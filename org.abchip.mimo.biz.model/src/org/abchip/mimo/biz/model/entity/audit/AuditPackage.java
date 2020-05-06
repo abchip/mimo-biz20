@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.entity.audit;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -77,7 +77,7 @@ public interface AuditPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_AUDIT_LOG__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int ENTITY_AUDIT_LOG__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -86,7 +86,7 @@ public interface AuditPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_AUDIT_LOG__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int ENTITY_AUDIT_LOG__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -95,7 +95,7 @@ public interface AuditPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_AUDIT_LOG__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int ENTITY_AUDIT_LOG__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -104,7 +104,7 @@ public interface AuditPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_AUDIT_LOG__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int ENTITY_AUDIT_LOG__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Audit History Seq Id</b></em>' attribute.
@@ -113,7 +113,7 @@ public interface AuditPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_AUDIT_LOG__AUDIT_HISTORY_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int ENTITY_AUDIT_LOG__AUDIT_HISTORY_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Changed By Info</b></em>' attribute.
@@ -122,7 +122,7 @@ public interface AuditPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_AUDIT_LOG__CHANGED_BY_INFO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int ENTITY_AUDIT_LOG__CHANGED_BY_INFO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Changed Date</b></em>' attribute.
@@ -131,7 +131,7 @@ public interface AuditPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_AUDIT_LOG__CHANGED_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int ENTITY_AUDIT_LOG__CHANGED_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Changed Entity Name</b></em>' attribute.
@@ -140,7 +140,7 @@ public interface AuditPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_AUDIT_LOG__CHANGED_ENTITY_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int ENTITY_AUDIT_LOG__CHANGED_ENTITY_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Changed Field Name</b></em>' attribute.
@@ -149,7 +149,7 @@ public interface AuditPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_AUDIT_LOG__CHANGED_FIELD_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int ENTITY_AUDIT_LOG__CHANGED_FIELD_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Changed Session Info</b></em>' attribute.
@@ -158,7 +158,7 @@ public interface AuditPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_AUDIT_LOG__CHANGED_SESSION_INFO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int ENTITY_AUDIT_LOG__CHANGED_SESSION_INFO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>New Value Text</b></em>' attribute.
@@ -167,7 +167,7 @@ public interface AuditPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_AUDIT_LOG__NEW_VALUE_TEXT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int ENTITY_AUDIT_LOG__NEW_VALUE_TEXT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Old Value Text</b></em>' attribute.
@@ -176,7 +176,7 @@ public interface AuditPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_AUDIT_LOG__OLD_VALUE_TEXT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int ENTITY_AUDIT_LOG__OLD_VALUE_TEXT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Pk Combined Value Text</b></em>' attribute.
@@ -185,7 +185,7 @@ public interface AuditPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_AUDIT_LOG__PK_COMBINED_VALUE_TEXT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int ENTITY_AUDIT_LOG__PK_COMBINED_VALUE_TEXT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The number of structural features of the '<em>Entity Audit Log</em>' class.
@@ -194,7 +194,7 @@ public interface AuditPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_AUDIT_LOG_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int ENTITY_AUDIT_LOG_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 
 	/**

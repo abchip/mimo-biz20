@@ -8,6 +8,7 @@
 package org.abchip.mimo.biz.model.marketing.campaign;
 
 import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +79,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int MARKETING_CAMPAIGN__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +88,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int MARKETING_CAMPAIGN__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +97,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int MARKETING_CAMPAIGN__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +106,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int MARKETING_CAMPAIGN__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Marketing Campaign Id</b></em>' attribute.
@@ -114,7 +115,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__MARKETING_CAMPAIGN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int MARKETING_CAMPAIGN__MARKETING_CAMPAIGN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Actual Cost</b></em>' attribute.
@@ -123,7 +124,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__ACTUAL_COST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int MARKETING_CAMPAIGN__ACTUAL_COST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Budgeted Cost</b></em>' attribute.
@@ -132,7 +133,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__BUDGETED_COST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int MARKETING_CAMPAIGN__BUDGETED_COST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Campaign Name</b></em>' attribute.
@@ -141,7 +142,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__CAMPAIGN_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int MARKETING_CAMPAIGN__CAMPAIGN_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Campaign Summary</b></em>' attribute.
@@ -150,7 +151,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__CAMPAIGN_SUMMARY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int MARKETING_CAMPAIGN__CAMPAIGN_SUMMARY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Converted Leads</b></em>' attribute.
@@ -159,7 +160,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__CONVERTED_LEADS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int MARKETING_CAMPAIGN__CONVERTED_LEADS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Created By User Login</b></em>' attribute.
@@ -168,7 +169,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__CREATED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int MARKETING_CAMPAIGN__CREATED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
@@ -177,7 +178,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__CURRENCY_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int MARKETING_CAMPAIGN__CURRENCY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Cost</b></em>' attribute.
@@ -186,7 +187,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__ESTIMATED_COST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int MARKETING_CAMPAIGN__ESTIMATED_COST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Expected Response Percent</b></em>' attribute.
@@ -195,7 +196,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__EXPECTED_RESPONSE_PERCENT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int MARKETING_CAMPAIGN__EXPECTED_RESPONSE_PERCENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Expected Revenue</b></em>' attribute.
@@ -204,7 +205,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__EXPECTED_REVENUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int MARKETING_CAMPAIGN__EXPECTED_REVENUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -213,7 +214,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int MARKETING_CAMPAIGN__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Is Active</b></em>' attribute.
@@ -222,7 +223,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__IS_ACTIVE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int MARKETING_CAMPAIGN__IS_ACTIVE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified By User Login</b></em>' attribute.
@@ -231,7 +232,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__LAST_MODIFIED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int MARKETING_CAMPAIGN__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Marketing Campaign Notes</b></em>' reference list.
@@ -240,7 +241,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__MARKETING_CAMPAIGN_NOTES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int MARKETING_CAMPAIGN__MARKETING_CAMPAIGN_NOTES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Num Sent</b></em>' attribute.
@@ -249,7 +250,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__NUM_SENT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int MARKETING_CAMPAIGN__NUM_SENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Parent Campaign Id</b></em>' reference.
@@ -258,7 +259,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__PARENT_CAMPAIGN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int MARKETING_CAMPAIGN__PARENT_CAMPAIGN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Start Date</b></em>' attribute.
@@ -267,7 +268,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__START_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 17;
+	int MARKETING_CAMPAIGN__START_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -276,7 +277,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 18;
+	int MARKETING_CAMPAIGN__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -285,7 +286,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 19;
+	int MARKETING_CAMPAIGN__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 23;
 
 	/**
 	 * The number of structural features of the '<em>Marketing Campaign</em>' class.
@@ -294,7 +295,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 20;
+	int MARKETING_CAMPAIGN_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 24;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignNoteImpl <em>Marketing Campaign Note</em>}' class.
@@ -386,7 +387,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_PRICE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int MARKETING_CAMPAIGN_PRICE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -395,7 +396,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_PRICE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int MARKETING_CAMPAIGN_PRICE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -404,7 +405,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_PRICE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int MARKETING_CAMPAIGN_PRICE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -413,7 +414,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_PRICE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int MARKETING_CAMPAIGN_PRICE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Marketing Campaign Id</b></em>' reference.
@@ -422,7 +423,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_PRICE__MARKETING_CAMPAIGN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int MARKETING_CAMPAIGN_PRICE__MARKETING_CAMPAIGN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Product Price Rule Id</b></em>' reference.
@@ -431,7 +432,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_PRICE__PRODUCT_PRICE_RULE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int MARKETING_CAMPAIGN_PRICE__PRODUCT_PRICE_RULE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -440,7 +441,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_PRICE__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int MARKETING_CAMPAIGN_PRICE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -449,7 +450,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_PRICE__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int MARKETING_CAMPAIGN_PRICE__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Marketing Campaign Price</em>' class.
@@ -458,7 +459,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_PRICE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int MARKETING_CAMPAIGN_PRICE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignPromoImpl <em>Marketing Campaign Promo</em>}' class.
@@ -477,7 +478,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_PROMO__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int MARKETING_CAMPAIGN_PROMO__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -486,7 +487,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_PROMO__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int MARKETING_CAMPAIGN_PROMO__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -495,7 +496,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_PROMO__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int MARKETING_CAMPAIGN_PROMO__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -504,7 +505,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_PROMO__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int MARKETING_CAMPAIGN_PROMO__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Marketing Campaign Id</b></em>' reference.
@@ -513,7 +514,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_PROMO__MARKETING_CAMPAIGN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int MARKETING_CAMPAIGN_PROMO__MARKETING_CAMPAIGN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Id</b></em>' reference.
@@ -522,7 +523,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_PROMO__PRODUCT_PROMO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int MARKETING_CAMPAIGN_PROMO__PRODUCT_PROMO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -531,7 +532,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_PROMO__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int MARKETING_CAMPAIGN_PROMO__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -540,7 +541,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_PROMO__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int MARKETING_CAMPAIGN_PROMO__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Marketing Campaign Promo</em>' class.
@@ -549,7 +550,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_PROMO_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int MARKETING_CAMPAIGN_PROMO_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignRoleImpl <em>Marketing Campaign Role</em>}' class.
@@ -568,7 +569,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_ROLE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int MARKETING_CAMPAIGN_ROLE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -577,7 +578,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_ROLE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int MARKETING_CAMPAIGN_ROLE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -586,7 +587,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_ROLE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int MARKETING_CAMPAIGN_ROLE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -595,7 +596,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_ROLE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int MARKETING_CAMPAIGN_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Marketing Campaign Id</b></em>' reference.
@@ -604,7 +605,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_ROLE__MARKETING_CAMPAIGN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int MARKETING_CAMPAIGN_ROLE__MARKETING_CAMPAIGN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -613,7 +614,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_ROLE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int MARKETING_CAMPAIGN_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -622,7 +623,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_ROLE__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int MARKETING_CAMPAIGN_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -631,7 +632,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_ROLE__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int MARKETING_CAMPAIGN_ROLE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -640,7 +641,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_ROLE__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int MARKETING_CAMPAIGN_ROLE__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Marketing Campaign Role</em>' class.
@@ -649,7 +650,7 @@ public interface CampaignPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MARKETING_CAMPAIGN_ROLE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int MARKETING_CAMPAIGN_ROLE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 
 	/**

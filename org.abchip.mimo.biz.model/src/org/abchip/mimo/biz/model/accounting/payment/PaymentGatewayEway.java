@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.accounting.payment;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='eWay Payment Gateway Configuration'"
  * @generated
  */
-public interface PaymentGatewayEway extends BizEntity {
+public interface PaymentGatewayEway extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Customer Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

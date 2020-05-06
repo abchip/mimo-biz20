@@ -10,8 +10,9 @@ package org.abchip.mimo.biz.model.accounting.ledger;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.budget.BudgetItemType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +34,7 @@ import org.abchip.mimo.biz.model.accounting.budget.BudgetItemType;
  * @model annotation="mimo-ent-frame title='General Ledger Budget Cross Reference'"
  * @generated
  */
-public interface GlBudgetXref extends BizEntity {
+public interface GlBudgetXref extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Allocation Percentage</b></em>' attribute.
 	 * <!-- begin-user-doc -->

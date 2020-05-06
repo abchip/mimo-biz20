@@ -10,9 +10,10 @@ package org.abchip.mimo.biz.model.product.inventory;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +35,7 @@ import org.abchip.mimo.biz.model.product.store.ProductStore;
  * @model annotation="mimo-ent-frame title='Inventory Item Temporary Reservation' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface InventoryItemTempRes extends BizEntity {
+public interface InventoryItemTempRes extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

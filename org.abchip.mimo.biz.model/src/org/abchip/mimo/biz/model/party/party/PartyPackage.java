@@ -8,6 +8,7 @@
 package org.abchip.mimo.biz.model.party.party;
 
 import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +79,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDRESS_MATCH_MAP__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int ADDRESS_MATCH_MAP__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +88,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDRESS_MATCH_MAP__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int ADDRESS_MATCH_MAP__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +97,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDRESS_MATCH_MAP__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int ADDRESS_MATCH_MAP__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +106,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDRESS_MATCH_MAP__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int ADDRESS_MATCH_MAP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Map Key</b></em>' attribute.
@@ -114,7 +115,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDRESS_MATCH_MAP__MAP_KEY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int ADDRESS_MATCH_MAP__MAP_KEY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Map Value</b></em>' attribute.
@@ -123,7 +124,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDRESS_MATCH_MAP__MAP_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int ADDRESS_MATCH_MAP__MAP_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -132,7 +133,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDRESS_MATCH_MAP__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int ADDRESS_MATCH_MAP__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Address Match Map</em>' class.
@@ -141,7 +142,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDRESS_MATCH_MAP_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int ADDRESS_MATCH_MAP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.AffiliateImpl <em>Affiliate</em>}' class.
@@ -160,7 +161,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AFFILIATE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int AFFILIATE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -169,7 +170,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AFFILIATE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int AFFILIATE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -178,7 +179,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AFFILIATE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int AFFILIATE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -187,7 +188,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AFFILIATE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int AFFILIATE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
@@ -196,7 +197,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AFFILIATE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int AFFILIATE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Affiliate Description</b></em>' attribute.
@@ -205,7 +206,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AFFILIATE__AFFILIATE_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int AFFILIATE__AFFILIATE_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Affiliate Name</b></em>' attribute.
@@ -214,7 +215,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AFFILIATE__AFFILIATE_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int AFFILIATE__AFFILIATE_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Date Time Approved</b></em>' attribute.
@@ -223,7 +224,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AFFILIATE__DATE_TIME_APPROVED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int AFFILIATE__DATE_TIME_APPROVED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Date Time Created</b></em>' attribute.
@@ -232,7 +233,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AFFILIATE__DATE_TIME_CREATED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int AFFILIATE__DATE_TIME_CREATED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Site Page Views</b></em>' attribute.
@@ -241,7 +242,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AFFILIATE__SITE_PAGE_VIEWS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int AFFILIATE__SITE_PAGE_VIEWS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Site Type</b></em>' attribute.
@@ -250,7 +251,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AFFILIATE__SITE_TYPE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int AFFILIATE__SITE_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Site Visitors</b></em>' attribute.
@@ -259,7 +260,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AFFILIATE__SITE_VISITORS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int AFFILIATE__SITE_VISITORS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Year Established</b></em>' attribute.
@@ -268,7 +269,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AFFILIATE__YEAR_ESTABLISHED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int AFFILIATE__YEAR_ESTABLISHED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The number of structural features of the '<em>Affiliate</em>' class.
@@ -277,7 +278,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AFFILIATE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int AFFILIATE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl <em>Party</em>}' class.
@@ -296,7 +297,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int PARTY__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -305,7 +306,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int PARTY__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -314,7 +315,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int PARTY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -323,7 +324,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int PARTY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
@@ -332,7 +333,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int PARTY__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Created By User Login</b></em>' reference.
@@ -341,7 +342,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__CREATED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int PARTY__CREATED_BY_USER_LOGIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Created Date</b></em>' attribute.
@@ -350,7 +351,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__CREATED_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int PARTY__CREATED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Data Source Id</b></em>' reference.
@@ -359,7 +360,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__DATA_SOURCE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int PARTY__DATA_SOURCE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -368,7 +369,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int PARTY__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>External Id</b></em>' attribute.
@@ -377,7 +378,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__EXTERNAL_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int PARTY__EXTERNAL_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Is Unread</b></em>' attribute.
@@ -386,7 +387,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__IS_UNREAD = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int PARTY__IS_UNREAD = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified By User Login</b></em>' reference.
@@ -395,7 +396,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__LAST_MODIFIED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int PARTY__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified Date</b></em>' attribute.
@@ -404,7 +405,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__LAST_MODIFIED_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int PARTY__LAST_MODIFIED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Party Attributes</b></em>' reference list.
@@ -413,7 +414,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_ATTRIBUTES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 9;
+	int PARTY__PARTY_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Party Identifications</b></em>' reference list.
@@ -422,7 +423,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_IDENTIFICATIONS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 10;
+	int PARTY__PARTY_IDENTIFICATIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Party Name Histories</b></em>' reference list.
@@ -431,7 +432,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_NAME_HISTORIES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 11;
+	int PARTY__PARTY_NAME_HISTORIES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Party Notes</b></em>' reference list.
@@ -440,7 +441,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_NOTES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 12;
+	int PARTY__PARTY_NOTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Party Profile Defaults</b></em>' reference list.
@@ -449,7 +450,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_PROFILE_DEFAULTS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 13;
+	int PARTY__PARTY_PROFILE_DEFAULTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Party Roles</b></em>' reference list.
@@ -458,7 +459,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_ROLES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 14;
+	int PARTY__PARTY_ROLES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Party Skills</b></em>' reference list.
@@ -467,7 +468,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_SKILLS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 15;
+	int PARTY__PARTY_SKILLS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Party Type Id</b></em>' reference.
@@ -476,7 +477,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 16;
+	int PARTY__PARTY_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Preferred Currency Uom Id</b></em>' reference.
@@ -485,7 +486,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PREFERRED_CURRENCY_UOM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 17;
+	int PARTY__PREFERRED_CURRENCY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -494,7 +495,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__STATUS_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 18;
+	int PARTY__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Supplier Product Features</b></em>' reference list.
@@ -503,7 +504,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__SUPPLIER_PRODUCT_FEATURES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 19;
+	int PARTY__SUPPLIER_PRODUCT_FEATURES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
 	 * The number of structural features of the '<em>Party</em>' class.
@@ -512,7 +513,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 20;
+	int PARTY_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyAttributeImpl <em>Attribute</em>}' class.
@@ -531,7 +532,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -540,7 +541,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -549,7 +550,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -558,7 +559,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -567,7 +568,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ATTRIBUTE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_ATTRIBUTE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -576,7 +577,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -585,7 +586,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -594,7 +595,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PARTY_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Attribute</em>' class.
@@ -603,7 +604,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PARTY_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyCarrierAccountImpl <em>Carrier Account</em>}' class.
@@ -622,7 +623,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CARRIER_ACCOUNT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_CARRIER_ACCOUNT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -631,7 +632,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CARRIER_ACCOUNT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_CARRIER_ACCOUNT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -640,7 +641,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CARRIER_ACCOUNT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_CARRIER_ACCOUNT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -649,7 +650,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CARRIER_ACCOUNT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_CARRIER_ACCOUNT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -658,7 +659,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CARRIER_ACCOUNT__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_CARRIER_ACCOUNT__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Carrier Party Id</b></em>' reference.
@@ -667,7 +668,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CARRIER_ACCOUNT__CARRIER_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_CARRIER_ACCOUNT__CARRIER_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -676,7 +677,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CARRIER_ACCOUNT__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_CARRIER_ACCOUNT__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Account Number</b></em>' attribute.
@@ -685,7 +686,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CARRIER_ACCOUNT__ACCOUNT_NUMBER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PARTY_CARRIER_ACCOUNT__ACCOUNT_NUMBER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -694,7 +695,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CARRIER_ACCOUNT__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PARTY_CARRIER_ACCOUNT__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Carrier Account</em>' class.
@@ -703,7 +704,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CARRIER_ACCOUNT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PARTY_CARRIER_ACCOUNT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationImpl <em>Classification</em>}' class.
@@ -722,7 +723,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int PARTY_CLASSIFICATION__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -731,7 +732,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int PARTY_CLASSIFICATION__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -740,7 +741,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int PARTY_CLASSIFICATION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -749,7 +750,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int PARTY_CLASSIFICATION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -758,7 +759,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION__PARTY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int PARTY_CLASSIFICATION__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Classification Group Id</b></em>' reference.
@@ -767,7 +768,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION__PARTY_CLASSIFICATION_GROUP_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int PARTY_CLASSIFICATION__PARTY_CLASSIFICATION_GROUP_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -776,7 +777,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION__FROM_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int PARTY_CLASSIFICATION__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -785,7 +786,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION__THRU_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int PARTY_CLASSIFICATION__THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Classification</em>' class.
@@ -794,7 +795,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int PARTY_CLASSIFICATION_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationGroupImpl <em>Classification Group</em>}' class.
@@ -813,7 +814,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_GROUP__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_CLASSIFICATION_GROUP__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -822,7 +823,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_GROUP__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_CLASSIFICATION_GROUP__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -831,7 +832,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_GROUP__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_CLASSIFICATION_GROUP__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -840,7 +841,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_GROUP__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_CLASSIFICATION_GROUP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Classification Group Id</b></em>' attribute.
@@ -849,7 +850,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_GROUP__PARTY_CLASSIFICATION_GROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_CLASSIFICATION_GROUP__PARTY_CLASSIFICATION_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -858,7 +859,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_GROUP__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_CLASSIFICATION_GROUP__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Parent Group Id</b></em>' reference.
@@ -867,7 +868,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_GROUP__PARENT_GROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_CLASSIFICATION_GROUP__PARENT_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Party Classification Type Id</b></em>' reference.
@@ -876,7 +877,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_GROUP__PARTY_CLASSIFICATION_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PARTY_CLASSIFICATION_GROUP__PARTY_CLASSIFICATION_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Classification Group</em>' class.
@@ -885,7 +886,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_GROUP_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PARTY_CLASSIFICATION_GROUP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyClassificationTypeImpl <em>Classification Type</em>}' class.
@@ -904,7 +905,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int PARTY_CLASSIFICATION_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -913,7 +914,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int PARTY_CLASSIFICATION_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -922,7 +923,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int PARTY_CLASSIFICATION_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -931,7 +932,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int PARTY_CLASSIFICATION_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -940,7 +941,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int PARTY_CLASSIFICATION_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Classification Type Id</b></em>' attribute.
@@ -949,7 +950,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_TYPE__PARTY_CLASSIFICATION_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int PARTY_CLASSIFICATION_TYPE__PARTY_CLASSIFICATION_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -958,7 +959,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int PARTY_CLASSIFICATION_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -967,7 +968,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int PARTY_CLASSIFICATION_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -976,7 +977,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int PARTY_CLASSIFICATION_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Classification Type</em>' class.
@@ -985,7 +986,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CLASSIFICATION_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int PARTY_CLASSIFICATION_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyContentImpl <em>Content</em>}' class.
@@ -1004,7 +1005,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CONTENT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_CONTENT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1013,7 +1014,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CONTENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_CONTENT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1022,7 +1023,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CONTENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_CONTENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1031,7 +1032,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CONTENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_CONTENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -1040,7 +1041,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CONTENT__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_CONTENT__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Content Id</b></em>' reference.
@@ -1049,7 +1050,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CONTENT__CONTENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_CONTENT__CONTENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Party Content Type Id</b></em>' reference.
@@ -1058,7 +1059,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CONTENT__PARTY_CONTENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_CONTENT__PARTY_CONTENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1067,7 +1068,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CONTENT__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PARTY_CONTENT__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -1076,7 +1077,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CONTENT__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PARTY_CONTENT__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Content</em>' class.
@@ -1085,7 +1086,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CONTENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PARTY_CONTENT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyContentTypeImpl <em>Content Type</em>}' class.
@@ -1104,7 +1105,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CONTENT_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_CONTENT_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1113,7 +1114,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CONTENT_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_CONTENT_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1122,7 +1123,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CONTENT_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_CONTENT_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1131,7 +1132,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CONTENT_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_CONTENT_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Content Type Id</b></em>' attribute.
@@ -1140,7 +1141,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CONTENT_TYPE__PARTY_CONTENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_CONTENT_TYPE__PARTY_CONTENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1149,7 +1150,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CONTENT_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_CONTENT_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -1158,7 +1159,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CONTENT_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_CONTENT_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Content Type</em>' class.
@@ -1167,7 +1168,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_CONTENT_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PARTY_CONTENT_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyDataSourceImpl <em>Data Source</em>}' class.
@@ -1186,7 +1187,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_DATA_SOURCE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_DATA_SOURCE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1195,7 +1196,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_DATA_SOURCE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_DATA_SOURCE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1204,7 +1205,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_DATA_SOURCE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_DATA_SOURCE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1213,7 +1214,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_DATA_SOURCE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_DATA_SOURCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -1222,7 +1223,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_DATA_SOURCE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_DATA_SOURCE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Data Source Id</b></em>' reference.
@@ -1231,7 +1232,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_DATA_SOURCE__DATA_SOURCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_DATA_SOURCE__DATA_SOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1240,7 +1241,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_DATA_SOURCE__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_DATA_SOURCE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -1249,7 +1250,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_DATA_SOURCE__COMMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PARTY_DATA_SOURCE__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Is Create</b></em>' attribute.
@@ -1258,7 +1259,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_DATA_SOURCE__IS_CREATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PARTY_DATA_SOURCE__IS_CREATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Visit Id</b></em>' attribute.
@@ -1267,7 +1268,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_DATA_SOURCE__VISIT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PARTY_DATA_SOURCE__VISIT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Data Source</em>' class.
@@ -1276,7 +1277,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_DATA_SOURCE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PARTY_DATA_SOURCE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyGeoPointImpl <em>Geo Point</em>}' class.
@@ -1295,7 +1296,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_GEO_POINT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_GEO_POINT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1304,7 +1305,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_GEO_POINT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_GEO_POINT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1313,7 +1314,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_GEO_POINT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_GEO_POINT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1322,7 +1323,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_GEO_POINT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_GEO_POINT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -1331,7 +1332,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_GEO_POINT__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_GEO_POINT__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Geo Point Id</b></em>' reference.
@@ -1340,7 +1341,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_GEO_POINT__GEO_POINT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_GEO_POINT__GEO_POINT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1349,7 +1350,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_GEO_POINT__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_GEO_POINT__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -1358,7 +1359,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_GEO_POINT__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PARTY_GEO_POINT__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Geo Point</em>' class.
@@ -1367,7 +1368,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_GEO_POINT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PARTY_GEO_POINT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyGroupImpl <em>Group</em>}' class.
@@ -1693,7 +1694,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ICS_AVS_OVERRIDE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_ICS_AVS_OVERRIDE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1702,7 +1703,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ICS_AVS_OVERRIDE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_ICS_AVS_OVERRIDE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1711,7 +1712,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ICS_AVS_OVERRIDE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_ICS_AVS_OVERRIDE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1720,7 +1721,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ICS_AVS_OVERRIDE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_ICS_AVS_OVERRIDE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
@@ -1729,7 +1730,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ICS_AVS_OVERRIDE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_ICS_AVS_OVERRIDE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Avs Decline String</b></em>' attribute.
@@ -1738,7 +1739,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ICS_AVS_OVERRIDE__AVS_DECLINE_STRING = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_ICS_AVS_OVERRIDE__AVS_DECLINE_STRING = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Ics Avs Override</em>' class.
@@ -1747,7 +1748,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ICS_AVS_OVERRIDE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_ICS_AVS_OVERRIDE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyIdentificationImpl <em>Identification</em>}' class.
@@ -1766,7 +1767,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_IDENTIFICATION__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int PARTY_IDENTIFICATION__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1775,7 +1776,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_IDENTIFICATION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int PARTY_IDENTIFICATION__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1784,7 +1785,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_IDENTIFICATION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int PARTY_IDENTIFICATION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1793,7 +1794,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_IDENTIFICATION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int PARTY_IDENTIFICATION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Identification Type Id</b></em>' reference.
@@ -1802,7 +1803,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_IDENTIFICATION__PARTY_IDENTIFICATION_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int PARTY_IDENTIFICATION__PARTY_IDENTIFICATION_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -1811,7 +1812,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_IDENTIFICATION__PARTY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int PARTY_IDENTIFICATION__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Id Value</b></em>' attribute.
@@ -1820,7 +1821,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_IDENTIFICATION__ID_VALUE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int PARTY_IDENTIFICATION__ID_VALUE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Identification</em>' class.
@@ -1829,7 +1830,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_IDENTIFICATION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int PARTY_IDENTIFICATION_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyIdentificationTypeImpl <em>Identification Type</em>}' class.
@@ -1848,7 +1849,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_IDENTIFICATION_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int PARTY_IDENTIFICATION_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1857,7 +1858,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_IDENTIFICATION_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int PARTY_IDENTIFICATION_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1866,7 +1867,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_IDENTIFICATION_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int PARTY_IDENTIFICATION_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1875,7 +1876,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_IDENTIFICATION_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int PARTY_IDENTIFICATION_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1884,7 +1885,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_IDENTIFICATION_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int PARTY_IDENTIFICATION_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Identification Type Id</b></em>' attribute.
@@ -1893,7 +1894,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_IDENTIFICATION_TYPE__PARTY_IDENTIFICATION_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int PARTY_IDENTIFICATION_TYPE__PARTY_IDENTIFICATION_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1902,7 +1903,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_IDENTIFICATION_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int PARTY_IDENTIFICATION_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -1911,7 +1912,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_IDENTIFICATION_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int PARTY_IDENTIFICATION_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -1920,7 +1921,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_IDENTIFICATION_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int PARTY_IDENTIFICATION_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Identification Type</em>' class.
@@ -1929,7 +1930,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_IDENTIFICATION_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int PARTY_IDENTIFICATION_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationImpl <em>Invitation</em>}' class.
@@ -1948,7 +1949,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_INVITATION__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1957,7 +1958,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_INVITATION__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1966,7 +1967,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_INVITATION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1975,7 +1976,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_INVITATION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Invitation Id</b></em>' attribute.
@@ -1984,7 +1985,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION__PARTY_INVITATION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_INVITATION__PARTY_INVITATION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Email Address</b></em>' attribute.
@@ -1993,7 +1994,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION__EMAIL_ADDRESS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_INVITATION__EMAIL_ADDRESS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Last Invite Date</b></em>' attribute.
@@ -2002,7 +2003,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION__LAST_INVITE_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_INVITATION__LAST_INVITE_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
@@ -2011,7 +2012,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PARTY_INVITATION__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Party Id From</b></em>' reference.
@@ -2020,7 +2021,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION__PARTY_ID_FROM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PARTY_INVITATION__PARTY_ID_FROM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Party Invitation Group Assocs</b></em>' reference list.
@@ -2029,7 +2030,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION__PARTY_INVITATION_GROUP_ASSOCS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PARTY_INVITATION__PARTY_INVITATION_GROUP_ASSOCS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Party Invitation Role Assocs</b></em>' reference list.
@@ -2038,7 +2039,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION__PARTY_INVITATION_ROLE_ASSOCS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PARTY_INVITATION__PARTY_INVITATION_ROLE_ASSOCS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -2047,7 +2048,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PARTY_INVITATION__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>To Name</b></em>' attribute.
@@ -2056,7 +2057,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION__TO_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int PARTY_INVITATION__TO_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The number of structural features of the '<em>Invitation</em>' class.
@@ -2065,7 +2066,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int PARTY_INVITATION_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationGroupAssocImpl <em>Invitation Group Assoc</em>}' class.
@@ -2084,7 +2085,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION_GROUP_ASSOC__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_INVITATION_GROUP_ASSOC__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2093,7 +2094,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION_GROUP_ASSOC__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_INVITATION_GROUP_ASSOC__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2102,7 +2103,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION_GROUP_ASSOC__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_INVITATION_GROUP_ASSOC__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2111,7 +2112,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION_GROUP_ASSOC__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_INVITATION_GROUP_ASSOC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Id To</b></em>' reference.
@@ -2120,7 +2121,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION_GROUP_ASSOC__PARTY_ID_TO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_INVITATION_GROUP_ASSOC__PARTY_ID_TO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Invitation Id</b></em>' reference.
@@ -2129,7 +2130,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION_GROUP_ASSOC__PARTY_INVITATION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_INVITATION_GROUP_ASSOC__PARTY_INVITATION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Invitation Group Assoc</em>' class.
@@ -2138,7 +2139,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION_GROUP_ASSOC_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_INVITATION_GROUP_ASSOC_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyInvitationRoleAssocImpl <em>Invitation Role Assoc</em>}' class.
@@ -2157,7 +2158,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION_ROLE_ASSOC__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_INVITATION_ROLE_ASSOC__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2166,7 +2167,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION_ROLE_ASSOC__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_INVITATION_ROLE_ASSOC__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2175,7 +2176,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION_ROLE_ASSOC__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_INVITATION_ROLE_ASSOC__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2184,7 +2185,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION_ROLE_ASSOC__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_INVITATION_ROLE_ASSOC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -2193,7 +2194,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION_ROLE_ASSOC__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_INVITATION_ROLE_ASSOC__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Invitation Id</b></em>' reference.
@@ -2202,7 +2203,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION_ROLE_ASSOC__PARTY_INVITATION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_INVITATION_ROLE_ASSOC__PARTY_INVITATION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Invitation Role Assoc</em>' class.
@@ -2211,7 +2212,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_INVITATION_ROLE_ASSOC_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_INVITATION_ROLE_ASSOC_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyNameHistoryImpl <em>Name History</em>}' class.
@@ -2230,7 +2231,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NAME_HISTORY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_NAME_HISTORY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2239,7 +2240,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NAME_HISTORY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_NAME_HISTORY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2248,7 +2249,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NAME_HISTORY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_NAME_HISTORY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2257,7 +2258,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NAME_HISTORY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_NAME_HISTORY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -2266,7 +2267,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NAME_HISTORY__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_NAME_HISTORY__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Change Date</b></em>' attribute.
@@ -2275,7 +2276,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NAME_HISTORY__CHANGE_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_NAME_HISTORY__CHANGE_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>First Name</b></em>' attribute.
@@ -2284,7 +2285,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NAME_HISTORY__FIRST_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_NAME_HISTORY__FIRST_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Group Name</b></em>' attribute.
@@ -2293,7 +2294,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NAME_HISTORY__GROUP_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PARTY_NAME_HISTORY__GROUP_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Last Name</b></em>' attribute.
@@ -2302,7 +2303,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NAME_HISTORY__LAST_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PARTY_NAME_HISTORY__LAST_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Middle Name</b></em>' attribute.
@@ -2311,7 +2312,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NAME_HISTORY__MIDDLE_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PARTY_NAME_HISTORY__MIDDLE_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Personal Title</b></em>' attribute.
@@ -2320,7 +2321,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NAME_HISTORY__PERSONAL_TITLE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PARTY_NAME_HISTORY__PERSONAL_TITLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Suffix</b></em>' attribute.
@@ -2329,7 +2330,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NAME_HISTORY__SUFFIX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PARTY_NAME_HISTORY__SUFFIX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Name History</em>' class.
@@ -2338,7 +2339,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NAME_HISTORY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int PARTY_NAME_HISTORY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyNoteImpl <em>Note</em>}' class.
@@ -2430,7 +2431,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PROFILE_DEFAULT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_PROFILE_DEFAULT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2439,7 +2440,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PROFILE_DEFAULT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_PROFILE_DEFAULT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2448,7 +2449,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PROFILE_DEFAULT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_PROFILE_DEFAULT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2457,7 +2458,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PROFILE_DEFAULT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_PROFILE_DEFAULT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -2466,7 +2467,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PROFILE_DEFAULT__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_PROFILE_DEFAULT__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Id</b></em>' reference.
@@ -2475,7 +2476,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PROFILE_DEFAULT__PRODUCT_STORE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_PROFILE_DEFAULT__PRODUCT_STORE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Default Bill Addr</b></em>' attribute.
@@ -2484,7 +2485,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PROFILE_DEFAULT__DEFAULT_BILL_ADDR = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_PROFILE_DEFAULT__DEFAULT_BILL_ADDR = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Default Pay Meth</b></em>' attribute.
@@ -2493,7 +2494,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PROFILE_DEFAULT__DEFAULT_PAY_METH = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PARTY_PROFILE_DEFAULT__DEFAULT_PAY_METH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Default Ship Addr</b></em>' attribute.
@@ -2502,7 +2503,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PROFILE_DEFAULT__DEFAULT_SHIP_ADDR = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PARTY_PROFILE_DEFAULT__DEFAULT_SHIP_ADDR = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Default Ship Meth</b></em>' attribute.
@@ -2511,7 +2512,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PROFILE_DEFAULT__DEFAULT_SHIP_METH = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PARTY_PROFILE_DEFAULT__DEFAULT_SHIP_METH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Profile Default</em>' class.
@@ -2520,7 +2521,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_PROFILE_DEFAULT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PARTY_PROFILE_DEFAULT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipImpl <em>Relationship</em>}' class.
@@ -2539,7 +2540,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int PARTY_RELATIONSHIP__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2548,7 +2549,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int PARTY_RELATIONSHIP__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2557,7 +2558,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int PARTY_RELATIONSHIP__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2566,7 +2567,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int PARTY_RELATIONSHIP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Id From</b></em>' reference.
@@ -2575,7 +2576,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP__PARTY_ID_FROM = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int PARTY_RELATIONSHIP__PARTY_ID_FROM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id To</b></em>' reference.
@@ -2584,7 +2585,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP__PARTY_ID_TO = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int PARTY_RELATIONSHIP__PARTY_ID_TO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id From</b></em>' reference.
@@ -2593,7 +2594,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP__ROLE_TYPE_ID_FROM = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int PARTY_RELATIONSHIP__ROLE_TYPE_ID_FROM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id To</b></em>' reference.
@@ -2602,7 +2603,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP__ROLE_TYPE_ID_TO = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int PARTY_RELATIONSHIP__ROLE_TYPE_ID_TO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -2611,7 +2612,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP__FROM_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int PARTY_RELATIONSHIP__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -2620,7 +2621,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP__COMMENTS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int PARTY_RELATIONSHIP__COMMENTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Party Relationship Type Id</b></em>' reference.
@@ -2629,7 +2630,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP__PARTY_RELATIONSHIP_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int PARTY_RELATIONSHIP__PARTY_RELATIONSHIP_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Permissions Enum Id</b></em>' attribute.
@@ -2638,7 +2639,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP__PERMISSIONS_ENUM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int PARTY_RELATIONSHIP__PERMISSIONS_ENUM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Position Title</b></em>' attribute.
@@ -2647,7 +2648,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP__POSITION_TITLE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int PARTY_RELATIONSHIP__POSITION_TITLE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Priority Type Id</b></em>' reference.
@@ -2656,7 +2657,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP__PRIORITY_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 9;
+	int PARTY_RELATIONSHIP__PRIORITY_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Relationship Name</b></em>' attribute.
@@ -2665,7 +2666,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP__RELATIONSHIP_NAME = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 10;
+	int PARTY_RELATIONSHIP__RELATIONSHIP_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Security Group Id</b></em>' reference.
@@ -2674,7 +2675,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP__SECURITY_GROUP_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 11;
+	int PARTY_RELATIONSHIP__SECURITY_GROUP_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -2683,7 +2684,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP__STATUS_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 12;
+	int PARTY_RELATIONSHIP__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -2692,7 +2693,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP__THRU_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 13;
+	int PARTY_RELATIONSHIP__THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The number of structural features of the '<em>Relationship</em>' class.
@@ -2701,7 +2702,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 14;
+	int PARTY_RELATIONSHIP_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyRelationshipTypeImpl <em>Relationship Type</em>}' class.
@@ -2720,7 +2721,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int PARTY_RELATIONSHIP_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -2729,7 +2730,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int PARTY_RELATIONSHIP_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2738,7 +2739,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int PARTY_RELATIONSHIP_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2747,7 +2748,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int PARTY_RELATIONSHIP_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2756,7 +2757,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int PARTY_RELATIONSHIP_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Relationship Type Id</b></em>' attribute.
@@ -2765,7 +2766,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP_TYPE__PARTY_RELATIONSHIP_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int PARTY_RELATIONSHIP_TYPE__PARTY_RELATIONSHIP_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -2774,7 +2775,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int PARTY_RELATIONSHIP_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -2783,7 +2784,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int PARTY_RELATIONSHIP_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -2792,7 +2793,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int PARTY_RELATIONSHIP_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Party Relationship Name</b></em>' attribute.
@@ -2801,7 +2802,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP_TYPE__PARTY_RELATIONSHIP_NAME = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int PARTY_RELATIONSHIP_TYPE__PARTY_RELATIONSHIP_NAME = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id Valid From</b></em>' reference.
@@ -2810,7 +2811,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP_TYPE__ROLE_TYPE_ID_VALID_FROM = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 5;
+	int PARTY_RELATIONSHIP_TYPE__ROLE_TYPE_ID_VALID_FROM = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id Valid To</b></em>' reference.
@@ -2819,7 +2820,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP_TYPE__ROLE_TYPE_ID_VALID_TO = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 6;
+	int PARTY_RELATIONSHIP_TYPE__ROLE_TYPE_ID_VALID_TO = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Relationship Type</em>' class.
@@ -2828,7 +2829,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_RELATIONSHIP_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 7;
+	int PARTY_RELATIONSHIP_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyRoleImpl <em>Role</em>}' class.
@@ -2847,7 +2848,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ROLE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_ROLE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2856,7 +2857,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ROLE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_ROLE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2865,7 +2866,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ROLE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_ROLE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2874,7 +2875,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ROLE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -2883,7 +2884,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ROLE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -2892,7 +2893,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ROLE__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Role</em>' class.
@@ -2901,7 +2902,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_ROLE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_ROLE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyStatusImpl <em>Status</em>}' class.
@@ -2920,7 +2921,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_STATUS__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_STATUS__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2929,7 +2930,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_STATUS__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_STATUS__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2938,7 +2939,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_STATUS__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_STATUS__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2947,7 +2948,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_STATUS__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_STATUS__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -2956,7 +2957,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_STATUS__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_STATUS__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -2965,7 +2966,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_STATUS__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_STATUS__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Status Date</b></em>' attribute.
@@ -2974,7 +2975,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_STATUS__STATUS_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_STATUS__STATUS_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Change By User Login Id</b></em>' reference.
@@ -2983,7 +2984,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_STATUS__CHANGE_BY_USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PARTY_STATUS__CHANGE_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Status</em>' class.
@@ -2992,7 +2993,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_STATUS_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PARTY_STATUS_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeImpl <em>Type</em>}' class.
@@ -3011,7 +3012,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int PARTY_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -3020,7 +3021,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int PARTY_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3029,7 +3030,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int PARTY_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3038,7 +3039,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int PARTY_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3047,7 +3048,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int PARTY_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Type Id</b></em>' attribute.
@@ -3056,7 +3057,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TYPE__PARTY_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int PARTY_TYPE__PARTY_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -3065,7 +3066,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int PARTY_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -3074,7 +3075,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int PARTY_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -3083,7 +3084,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int PARTY_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Party Type Attrs</b></em>' reference list.
@@ -3092,7 +3093,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TYPE__PARTY_TYPE_ATTRS = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int PARTY_TYPE__PARTY_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -3101,7 +3102,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 5;
+	int PARTY_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyTypeAttrImpl <em>Type Attr</em>}' class.
@@ -3120,7 +3121,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TYPE_ATTR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_TYPE_ATTR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3129,7 +3130,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TYPE_ATTR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_TYPE_ATTR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3138,7 +3139,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TYPE_ATTR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_TYPE_ATTR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3147,7 +3148,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TYPE_ATTR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Type Id</b></em>' reference.
@@ -3156,7 +3157,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TYPE_ATTR__PARTY_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_TYPE_ATTR__PARTY_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -3165,7 +3166,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TYPE_ATTR__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_TYPE_ATTR__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -3174,7 +3175,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TYPE_ATTR__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_TYPE_ATTR__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Type Attr</em>' class.
@@ -3183,7 +3184,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TYPE_ATTR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PARTY_TYPE_ATTR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PersonImpl <em>Person</em>}' class.
@@ -3716,7 +3717,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIORITY_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRIORITY_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3725,7 +3726,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIORITY_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRIORITY_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3734,7 +3735,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIORITY_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRIORITY_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3743,7 +3744,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIORITY_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRIORITY_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Priority Type Id</b></em>' attribute.
@@ -3752,7 +3753,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIORITY_TYPE__PRIORITY_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRIORITY_TYPE__PRIORITY_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -3761,7 +3762,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIORITY_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRIORITY_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Priority Type</em>' class.
@@ -3770,7 +3771,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRIORITY_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRIORITY_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.RoleTypeImpl <em>Role Type</em>}' class.
@@ -3789,7 +3790,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int ROLE_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3798,7 +3799,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int ROLE_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3807,7 +3808,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int ROLE_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3816,7 +3817,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int ROLE_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' attribute.
@@ -3825,7 +3826,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_TYPE__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int ROLE_TYPE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -3834,7 +3835,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int ROLE_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -3843,7 +3844,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int ROLE_TYPE__HAS_TABLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -3852,7 +3853,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int ROLE_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Attrs</b></em>' reference list.
@@ -3861,7 +3862,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_TYPE__ROLE_TYPE_ATTRS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int ROLE_TYPE__ROLE_TYPE_ATTRS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Valid Contact Mech Roles</b></em>' reference list.
@@ -3870,7 +3871,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_TYPE__VALID_CONTACT_MECH_ROLES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int ROLE_TYPE__VALID_CONTACT_MECH_ROLES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Role Type</em>' class.
@@ -3879,7 +3880,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int ROLE_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.RoleTypeAttrImpl <em>Role Type Attr</em>}' class.
@@ -3898,7 +3899,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_TYPE_ATTR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int ROLE_TYPE_ATTR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3907,7 +3908,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_TYPE_ATTR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int ROLE_TYPE_ATTR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3916,7 +3917,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_TYPE_ATTR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int ROLE_TYPE_ATTR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3925,7 +3926,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_TYPE_ATTR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int ROLE_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -3934,7 +3935,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_TYPE_ATTR__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int ROLE_TYPE_ATTR__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -3943,7 +3944,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_TYPE_ATTR__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int ROLE_TYPE_ATTR__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -3952,7 +3953,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_TYPE_ATTR__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int ROLE_TYPE_ATTR__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Role Type Attr</em>' class.
@@ -3961,7 +3962,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ROLE_TYPE_ATTR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int ROLE_TYPE_ATTR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.VendorImpl <em>Vendor</em>}' class.
@@ -3980,7 +3981,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VENDOR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int VENDOR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3989,7 +3990,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VENDOR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int VENDOR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3998,7 +3999,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VENDOR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int VENDOR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -4007,7 +4008,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VENDOR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int VENDOR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
@@ -4016,7 +4017,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VENDOR__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int VENDOR__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Manifest Company Name</b></em>' attribute.
@@ -4025,7 +4026,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VENDOR__MANIFEST_COMPANY_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int VENDOR__MANIFEST_COMPANY_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Manifest Company Title</b></em>' attribute.
@@ -4034,7 +4035,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VENDOR__MANIFEST_COMPANY_TITLE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int VENDOR__MANIFEST_COMPANY_TITLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Manifest Logo Url</b></em>' attribute.
@@ -4043,7 +4044,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VENDOR__MANIFEST_LOGO_URL = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int VENDOR__MANIFEST_LOGO_URL = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Manifest Policies</b></em>' attribute.
@@ -4052,7 +4053,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VENDOR__MANIFEST_POLICIES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int VENDOR__MANIFEST_POLICIES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Vendor</em>' class.
@@ -4061,7 +4062,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VENDOR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int VENDOR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.WebSiteRoleImpl <em>Web Site Role</em>}' class.
@@ -4080,7 +4081,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_ROLE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WEB_SITE_ROLE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -4089,7 +4090,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_ROLE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WEB_SITE_ROLE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -4098,7 +4099,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_ROLE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WEB_SITE_ROLE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -4107,7 +4108,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_ROLE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WEB_SITE_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -4116,7 +4117,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_ROLE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WEB_SITE_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -4125,7 +4126,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_ROLE__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WEB_SITE_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Web Site Id</b></em>' reference.
@@ -4134,7 +4135,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_ROLE__WEB_SITE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WEB_SITE_ROLE__WEB_SITE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -4143,7 +4144,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_ROLE__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WEB_SITE_ROLE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -4152,7 +4153,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_ROLE__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WEB_SITE_ROLE__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -4161,7 +4162,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_ROLE__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int WEB_SITE_ROLE__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Web Site Role</em>' class.
@@ -4170,7 +4171,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_ROLE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int WEB_SITE_ROLE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 
 	/**

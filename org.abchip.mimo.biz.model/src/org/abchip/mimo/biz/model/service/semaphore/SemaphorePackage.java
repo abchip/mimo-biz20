@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.service.semaphore;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -77,7 +77,7 @@ public interface SemaphorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_SEMAPHORE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SERVICE_SEMAPHORE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -86,7 +86,7 @@ public interface SemaphorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_SEMAPHORE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SERVICE_SEMAPHORE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -95,7 +95,7 @@ public interface SemaphorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_SEMAPHORE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SERVICE_SEMAPHORE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -104,7 +104,7 @@ public interface SemaphorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_SEMAPHORE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SERVICE_SEMAPHORE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Service Name</b></em>' attribute.
@@ -113,7 +113,7 @@ public interface SemaphorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_SEMAPHORE__SERVICE_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SERVICE_SEMAPHORE__SERVICE_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Lock Thread</b></em>' attribute.
@@ -122,7 +122,7 @@ public interface SemaphorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_SEMAPHORE__LOCK_THREAD = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SERVICE_SEMAPHORE__LOCK_THREAD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Lock Time</b></em>' attribute.
@@ -131,7 +131,7 @@ public interface SemaphorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_SEMAPHORE__LOCK_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SERVICE_SEMAPHORE__LOCK_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Locked By Instance Id</b></em>' attribute.
@@ -140,7 +140,7 @@ public interface SemaphorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_SEMAPHORE__LOCKED_BY_INSTANCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SERVICE_SEMAPHORE__LOCKED_BY_INSTANCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Service Semaphore</em>' class.
@@ -149,7 +149,7 @@ public interface SemaphorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVICE_SEMAPHORE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SERVICE_SEMAPHORE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 
 	/**

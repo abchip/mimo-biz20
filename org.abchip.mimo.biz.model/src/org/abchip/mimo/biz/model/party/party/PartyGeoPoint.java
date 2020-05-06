@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.party.party;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.geo.GeoPoint;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.common.geo.GeoPoint;
  * @model annotation="mimo-ent-frame title='Party Geo Location with history'"
  * @generated
  */
-public interface PartyGeoPoint extends BizEntity {
+public interface PartyGeoPoint extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

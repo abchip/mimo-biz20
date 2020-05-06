@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.accounting.payment;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame help='Payment Group Member'"
  * @generated
  */
-public interface PaymentGroupMember extends BizEntity {
+public interface PaymentGroupMember extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

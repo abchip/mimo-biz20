@@ -1787,7 +1787,7 @@ public class SubscriptionPackageImpl extends EPackageImpl implements Subscriptio
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		ProductPackage theProductPackage = (ProductPackage)EPackage.Registry.INSTANCE.getEPackage(ProductPackage.eNS_URI);
 		UomPackage theUomPackage = (UomPackage)EPackage.Registry.INSTANCE.getEPackage(UomPackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
@@ -1805,21 +1805,32 @@ public class SubscriptionPackageImpl extends EPackageImpl implements Subscriptio
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		productSubscriptionResourceEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		productSubscriptionResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productSubscriptionResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getSubscriptionType());
 		g1.getETypeArguments().add(g2);
 		subscriptionEClass.getEGenericSuperTypes().add(g1);
-		subscriptionActivityEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		subscriptionAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		subscriptionCommEventEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		subscriptionFulfillmentPieceEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		subscriptionResourceEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		subscriptionEClass.getEGenericSuperTypes().add(g1);
+		subscriptionActivityEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		subscriptionActivityEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		subscriptionAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		subscriptionAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		subscriptionCommEventEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		subscriptionCommEventEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		subscriptionFulfillmentPieceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		subscriptionFulfillmentPieceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		subscriptionResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		subscriptionResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getSubscription());
 		g1.getETypeArguments().add(g2);
 		subscriptionTypeEClass.getEGenericSuperTypes().add(g1);
-		subscriptionTypeAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		subscriptionTypeEClass.getEGenericSuperTypes().add(g1);
+		subscriptionTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		subscriptionTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(productSubscriptionResourceEClass, ProductSubscriptionResource.class, "ProductSubscriptionResource", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

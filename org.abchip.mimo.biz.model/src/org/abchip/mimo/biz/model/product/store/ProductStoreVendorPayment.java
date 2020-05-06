@@ -7,10 +7,11 @@
  */
 package org.abchip.mimo.biz.model.product.store;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +32,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model annotation="mimo-ent-frame help='Used to define payments that a vendor related to the store will accept (for multi-vendor stores)' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductStoreVendorPayment extends BizEntity {
+public interface ProductStoreVendorPayment extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Credit Card Enum Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

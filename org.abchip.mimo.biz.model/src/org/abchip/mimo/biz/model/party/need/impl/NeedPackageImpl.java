@@ -887,7 +887,7 @@ public class NeedPackageImpl extends EPackageImpl implements NeedPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
 		CommunicationPackage theCommunicationPackage = (CommunicationPackage)EPackage.Registry.INSTANCE.getEPackage(CommunicationPackage.eNS_URI);
 		CategoryPackage theCategoryPackage = (CategoryPackage)EPackage.Registry.INSTANCE.getEPackage(CategoryPackage.eNS_URI);
@@ -898,8 +898,10 @@ public class NeedPackageImpl extends EPackageImpl implements NeedPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		needTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		partyNeedEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		needTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		needTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		partyNeedEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		partyNeedEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(needTypeEClass, NeedType.class, "NeedType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

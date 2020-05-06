@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.accounting.invoice;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityType;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +34,7 @@ import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
  * @model annotation="mimo-ent-frame dictionary='AccountingEntityLabels' formula='description'"
  * @generated
  */
-public interface InvoiceItemType extends BizEntityType<InvoiceItem> {
+public interface InvoiceItemType extends EntityType<InvoiceItem>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Default Gl Account Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

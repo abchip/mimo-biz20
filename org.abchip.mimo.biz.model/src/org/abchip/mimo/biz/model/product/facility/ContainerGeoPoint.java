@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.product.facility;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.geo.GeoPoint;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.common.geo.GeoPoint;
  * @model annotation="mimo-ent-frame title='Container Geo Location with history' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ContainerGeoPoint extends BizEntity {
+public interface ContainerGeoPoint extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

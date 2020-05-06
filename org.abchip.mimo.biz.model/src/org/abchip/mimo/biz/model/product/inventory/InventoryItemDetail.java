@@ -10,11 +10,12 @@ package org.abchip.mimo.biz.model.product.inventory;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance;
 import org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,7 +54,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface InventoryItemDetail extends BizEntity {
+public interface InventoryItemDetail extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Accounting Quantity Diff</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -1866,7 +1866,7 @@ public class DataPackageImpl extends EPackageImpl implements DataPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		LoginPackage theLoginPackage = (LoginPackage)EPackage.Registry.INSTANCE.getEPackage(LoginPackage.eNS_URI);
 		DatasourcePackage theDatasourcePackage = (DatasourcePackage)EPackage.Registry.INSTANCE.getEPackage(DatasourcePackage.eNS_URI);
 		FeaturePackage theFeaturePackage = (FeaturePackage)EPackage.Registry.INSTANCE.getEPackage(FeaturePackage.eNS_URI);
@@ -1880,31 +1880,51 @@ public class DataPackageImpl extends EPackageImpl implements DataPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		audioDataResourceEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		characterSetEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		dataCategoryEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		audioDataResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		audioDataResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		characterSetEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		characterSetEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		dataCategoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		dataCategoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getDataResourceType());
 		g1.getETypeArguments().add(g2);
 		dataResourceEClass.getEGenericSuperTypes().add(g1);
-		dataResourceAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		dataResourceMetaDataEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		dataResourcePurposeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		dataResourceRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		dataResourceEClass.getEGenericSuperTypes().add(g1);
+		dataResourceAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		dataResourceAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		dataResourceMetaDataEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		dataResourceMetaDataEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		dataResourcePurposeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		dataResourcePurposeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		dataResourceRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		dataResourceRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getDataResource());
 		g1.getETypeArguments().add(g2);
 		dataResourceTypeEClass.getEGenericSuperTypes().add(g1);
-		dataResourceTypeAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		dataTemplateTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		dataResourceTypeEClass.getEGenericSuperTypes().add(g1);
+		dataResourceTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		dataResourceTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		dataTemplateTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		dataTemplateTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		electronicTextEClass.getESuperTypes().add(this.getDataResource());
-		fileExtensionEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		imageDataResourceEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		metaDataPredicateEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		mimeTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		mimeTypeHtmlTemplateEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		otherDataResourceEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		videoDataResourceEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		fileExtensionEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		fileExtensionEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		imageDataResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		imageDataResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		metaDataPredicateEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		metaDataPredicateEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		mimeTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		mimeTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		mimeTypeHtmlTemplateEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		mimeTypeHtmlTemplateEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		otherDataResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		otherDataResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		videoDataResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		videoDataResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(audioDataResourceEClass, AudioDataResource.class, "AudioDataResource", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

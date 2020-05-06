@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.shipment.shipment;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.feature.ProductFeature;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.model.product.feature.ProductFeature;
  * @model
  * @generated
  */
-public interface ShipmentItemFeature extends BizEntity {
+public interface ShipmentItemFeature extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Product Feature Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

@@ -7,9 +7,10 @@
  */
 package org.abchip.mimo.biz.model.order.order;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.model.party.party.RoleType;
  * @model
  * @generated
  */
-public interface OrderRole extends BizEntity {
+public interface OrderRole extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

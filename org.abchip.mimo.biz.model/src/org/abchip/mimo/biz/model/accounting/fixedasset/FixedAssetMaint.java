@@ -8,13 +8,14 @@
 package org.abchip.mimo.biz.model.accounting.fixedasset;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.order.order.OrderHeader;
 import org.abchip.mimo.biz.model.product.product.ProductMaintType;
 import org.abchip.mimo.biz.model.product.product.ProductMeterType;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -41,7 +42,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
  * @model annotation="mimo-ent-frame title='Fixed Asset Maintenance'"
  * @generated
  */
-public interface FixedAssetMaint extends BizEntity {
+public interface FixedAssetMaint extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Interval Meter Type Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.accounting.payment;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.AuthMode;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,7 +37,7 @@ import org.abchip.mimo.biz.model.accounting.AuthMode;
  * @model annotation="mimo-ent-frame title='RBS WorldPay Payment Gateway Config'"
  * @generated
  */
-public interface PaymentGatewayWorldPay extends BizEntity {
+public interface PaymentGatewayWorldPay extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Auth Mode</b></em>' attribute.
 	 * The literals are from the enumeration {@link org.abchip.mimo.biz.model.accounting.AuthMode}.

@@ -10,8 +10,8 @@ package org.abchip.mimo.biz.model.entity.test;
 import java.math.BigDecimal;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -56,7 +56,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Test file for write'"
  * @generated
  */
-public interface TestEntity extends BizEntity {
+public interface TestEntity extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Field Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

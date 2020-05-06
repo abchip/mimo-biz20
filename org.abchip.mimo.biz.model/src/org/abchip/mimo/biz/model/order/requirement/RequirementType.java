@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.order.requirement;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityType;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.BizEntityType;
  * @model annotation="mimo-ent-frame dictionary='OrderEntityLabels' formula='description'"
  * @generated
  */
-public interface RequirementType extends BizEntityType<Requirement> {
+public interface RequirementType extends EntityType<Requirement>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.order.return_;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame help='Mapping between productTypeId and returnItemTypeId for product order items, orderItemTypeId and returnItemTypeId for other\n          order items, or orderAdjustmentTypeId and returnAdjustmentTypeId.  Separate mappings for different types of returns (customer vs. vendor)'"
  * @generated
  */
-public interface ReturnItemTypeMap extends BizEntity {
+public interface ReturnItemTypeMap extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Return Header Type Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

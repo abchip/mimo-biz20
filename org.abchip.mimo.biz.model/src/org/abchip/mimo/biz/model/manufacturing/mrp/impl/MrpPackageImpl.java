@@ -865,7 +865,7 @@ public class MrpPackageImpl extends EPackageImpl implements MrpPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		ProductPackage theProductPackage = (ProductPackage)EPackage.Registry.INSTANCE.getEPackage(ProductPackage.eNS_URI);
 		FacilityPackage theFacilityPackage = (FacilityPackage)EPackage.Registry.INSTANCE.getEPackage(FacilityPackage.eNS_URI);
 
@@ -874,8 +874,10 @@ public class MrpPackageImpl extends EPackageImpl implements MrpPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		mrpEventEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		mrpEventTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		mrpEventEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		mrpEventEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		mrpEventTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		mrpEventTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(mrpEventEClass, MrpEvent.class, "MrpEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

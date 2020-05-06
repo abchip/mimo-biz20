@@ -1847,7 +1847,7 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		UomPackage theUomPackage = (UomPackage)EPackage.Registry.INSTANCE.getEPackage(UomPackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
 		LedgerPackage theLedgerPackage = (LedgerPackage)EPackage.Registry.INSTANCE.getEPackage(LedgerPackage.eNS_URI);
@@ -1861,30 +1861,46 @@ public class FinaccountPackageImpl extends EPackageImpl implements FinaccountPac
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getFinAccountType());
 		g1.getETypeArguments().add(g2);
 		finAccountEClass.getEGenericSuperTypes().add(g1);
-		finAccountAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		finAccountAuthEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		finAccountRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		finAccountStatusEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		finAccountEClass.getEGenericSuperTypes().add(g1);
+		finAccountAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		finAccountAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		finAccountAuthEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		finAccountAuthEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		finAccountRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		finAccountRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		finAccountStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		finAccountStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		g2 = createEGenericType(this.getFinAccountTransType());
 		g1.getETypeArguments().add(g2);
 		finAccountTransEClass.getEGenericSuperTypes().add(g1);
-		finAccountTransAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		finAccountTransEClass.getEGenericSuperTypes().add(g1);
+		finAccountTransAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		finAccountTransAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getFinAccountTrans());
 		g1.getETypeArguments().add(g2);
 		finAccountTransTypeEClass.getEGenericSuperTypes().add(g1);
-		finAccountTransTypeAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		finAccountTransTypeEClass.getEGenericSuperTypes().add(g1);
+		finAccountTransTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		finAccountTransTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getFinAccount());
 		g1.getETypeArguments().add(g2);
 		finAccountTypeEClass.getEGenericSuperTypes().add(g1);
-		finAccountTypeAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		finAccountTypeGlAccountEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		finAccountTypeEClass.getEGenericSuperTypes().add(g1);
+		finAccountTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		finAccountTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		finAccountTypeGlAccountEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		finAccountTypeGlAccountEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(finAccountEClass, FinAccount.class, "FinAccount", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

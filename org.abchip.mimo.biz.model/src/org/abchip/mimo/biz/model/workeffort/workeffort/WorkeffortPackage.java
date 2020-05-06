@@ -8,6 +8,7 @@
 package org.abchip.mimo.biz.model.workeffort.workeffort;
 
 import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +79,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int APPLICATION_SANDBOX__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int APPLICATION_SANDBOX__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +88,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int APPLICATION_SANDBOX__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int APPLICATION_SANDBOX__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +97,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int APPLICATION_SANDBOX__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int APPLICATION_SANDBOX__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +106,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int APPLICATION_SANDBOX__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int APPLICATION_SANDBOX__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Application Id</b></em>' attribute.
@@ -114,7 +115,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int APPLICATION_SANDBOX__APPLICATION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int APPLICATION_SANDBOX__APPLICATION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -123,7 +124,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int APPLICATION_SANDBOX__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int APPLICATION_SANDBOX__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
@@ -132,7 +133,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int APPLICATION_SANDBOX__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int APPLICATION_SANDBOX__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' attribute.
@@ -141,7 +142,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int APPLICATION_SANDBOX__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int APPLICATION_SANDBOX__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Runtime Data Id</b></em>' reference.
@@ -150,7 +151,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int APPLICATION_SANDBOX__RUNTIME_DATA_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int APPLICATION_SANDBOX__RUNTIME_DATA_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' attribute.
@@ -159,7 +160,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int APPLICATION_SANDBOX__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int APPLICATION_SANDBOX__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Application Sandbox</em>' class.
@@ -168,7 +169,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int APPLICATION_SANDBOX_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int APPLICATION_SANDBOX_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.CommunicationEventWorkEffImpl <em>Communication Event Work Eff</em>}' class.
@@ -187,7 +188,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_WORK_EFF__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int COMMUNICATION_EVENT_WORK_EFF__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -196,7 +197,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_WORK_EFF__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int COMMUNICATION_EVENT_WORK_EFF__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -205,7 +206,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_WORK_EFF__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int COMMUNICATION_EVENT_WORK_EFF__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -214,7 +215,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_WORK_EFF__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int COMMUNICATION_EVENT_WORK_EFF__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -223,7 +224,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_WORK_EFF__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int COMMUNICATION_EVENT_WORK_EFF__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Communication Event Id</b></em>' reference.
@@ -232,7 +233,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_WORK_EFF__COMMUNICATION_EVENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int COMMUNICATION_EVENT_WORK_EFF__COMMUNICATION_EVENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -241,7 +242,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_WORK_EFF__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int COMMUNICATION_EVENT_WORK_EFF__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Communication Event Work Eff</em>' class.
@@ -250,7 +251,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMMUNICATION_EVENT_WORK_EFF_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int COMMUNICATION_EVENT_WORK_EFF_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.DeliverableImpl <em>Deliverable</em>}' class.
@@ -269,7 +270,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERABLE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int DELIVERABLE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -278,7 +279,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERABLE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int DELIVERABLE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -287,7 +288,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERABLE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int DELIVERABLE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -296,7 +297,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERABLE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int DELIVERABLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Deliverable Id</b></em>' attribute.
@@ -305,7 +306,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERABLE__DELIVERABLE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int DELIVERABLE__DELIVERABLE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Deliverable Name</b></em>' attribute.
@@ -314,7 +315,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERABLE__DELIVERABLE_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int DELIVERABLE__DELIVERABLE_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Deliverable Type Id</b></em>' reference.
@@ -323,7 +324,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERABLE__DELIVERABLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int DELIVERABLE__DELIVERABLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -332,7 +333,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERABLE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int DELIVERABLE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Deliverable</em>' class.
@@ -341,7 +342,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERABLE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int DELIVERABLE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.DeliverableTypeImpl <em>Deliverable Type</em>}' class.
@@ -360,7 +361,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERABLE_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int DELIVERABLE_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -369,7 +370,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERABLE_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int DELIVERABLE_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -378,7 +379,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERABLE_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int DELIVERABLE_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -387,7 +388,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERABLE_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int DELIVERABLE_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Deliverable Type Id</b></em>' attribute.
@@ -396,7 +397,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERABLE_TYPE__DELIVERABLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int DELIVERABLE_TYPE__DELIVERABLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -405,7 +406,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERABLE_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int DELIVERABLE_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Deliverable Type</em>' class.
@@ -414,7 +415,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERABLE_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int DELIVERABLE_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl <em>Work Effort</em>}' class.
@@ -433,7 +434,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int WORK_EFFORT__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -442,7 +443,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int WORK_EFFORT__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -451,7 +452,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int WORK_EFFORT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -460,7 +461,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' attribute.
@@ -469,7 +470,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int WORK_EFFORT__WORK_EFFORT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Accommodation Map Id</b></em>' reference.
@@ -478,7 +479,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__ACCOMMODATION_MAP_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int WORK_EFFORT__ACCOMMODATION_MAP_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Accommodation Spot Id</b></em>' reference.
@@ -487,7 +488,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__ACCOMMODATION_SPOT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int WORK_EFFORT__ACCOMMODATION_SPOT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Actual Completion Date</b></em>' attribute.
@@ -496,7 +497,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__ACTUAL_COMPLETION_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int WORK_EFFORT__ACTUAL_COMPLETION_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Actual Milli Seconds</b></em>' attribute.
@@ -505,7 +506,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__ACTUAL_MILLI_SECONDS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int WORK_EFFORT__ACTUAL_MILLI_SECONDS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Actual Setup Millis</b></em>' attribute.
@@ -514,7 +515,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__ACTUAL_SETUP_MILLIS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int WORK_EFFORT__ACTUAL_SETUP_MILLIS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Actual Start Date</b></em>' attribute.
@@ -523,7 +524,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__ACTUAL_START_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int WORK_EFFORT__ACTUAL_START_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Communication Event Work Effs</b></em>' reference list.
@@ -532,7 +533,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__COMMUNICATION_EVENT_WORK_EFFS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int WORK_EFFORT__COMMUNICATION_EVENT_WORK_EFFS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Created By User Login</b></em>' attribute.
@@ -541,7 +542,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__CREATED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int WORK_EFFORT__CREATED_BY_USER_LOGIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Created Date</b></em>' attribute.
@@ -550,7 +551,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__CREATED_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 9;
+	int WORK_EFFORT__CREATED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Current Status Id</b></em>' reference.
@@ -559,7 +560,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__CURRENT_STATUS_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 10;
+	int WORK_EFFORT__CURRENT_STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -568,7 +569,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 11;
+	int WORK_EFFORT__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Estimate Calc Method</b></em>' reference.
@@ -577,7 +578,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__ESTIMATE_CALC_METHOD = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 12;
+	int WORK_EFFORT__ESTIMATE_CALC_METHOD = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Completion Date</b></em>' attribute.
@@ -586,7 +587,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__ESTIMATED_COMPLETION_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 13;
+	int WORK_EFFORT__ESTIMATED_COMPLETION_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Milli Seconds</b></em>' attribute.
@@ -595,7 +596,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__ESTIMATED_MILLI_SECONDS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 14;
+	int WORK_EFFORT__ESTIMATED_MILLI_SECONDS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Setup Millis</b></em>' attribute.
@@ -604,7 +605,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__ESTIMATED_SETUP_MILLIS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 15;
+	int WORK_EFFORT__ESTIMATED_SETUP_MILLIS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Start Date</b></em>' attribute.
@@ -613,7 +614,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__ESTIMATED_START_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 16;
+	int WORK_EFFORT__ESTIMATED_START_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
@@ -622,7 +623,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__FACILITY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 17;
+	int WORK_EFFORT__FACILITY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
@@ -631,7 +632,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__FIXED_ASSET_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 18;
+	int WORK_EFFORT__FIXED_ASSET_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Info Url</b></em>' attribute.
@@ -640,7 +641,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__INFO_URL = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 19;
+	int WORK_EFFORT__INFO_URL = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified By User Login</b></em>' attribute.
@@ -649,7 +650,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__LAST_MODIFIED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 20;
+	int WORK_EFFORT__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified Date</b></em>' attribute.
@@ -658,7 +659,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__LAST_MODIFIED_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 21;
+	int WORK_EFFORT__LAST_MODIFIED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Last Status Update</b></em>' attribute.
@@ -667,7 +668,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__LAST_STATUS_UPDATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 22;
+	int WORK_EFFORT__LAST_STATUS_UPDATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Location Desc</b></em>' attribute.
@@ -676,7 +677,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__LOCATION_DESC = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 23;
+	int WORK_EFFORT__LOCATION_DESC = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Money Uom Id</b></em>' reference.
@@ -685,7 +686,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__MONEY_UOM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 24;
+	int WORK_EFFORT__MONEY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Note Id</b></em>' reference.
@@ -694,7 +695,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__NOTE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 25;
+	int WORK_EFFORT__NOTE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Percent Complete</b></em>' attribute.
@@ -703,7 +704,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__PERCENT_COMPLETE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 26;
+	int WORK_EFFORT__PERCENT_COMPLETE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Priority</b></em>' attribute.
@@ -712,7 +713,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__PRIORITY = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 27;
+	int WORK_EFFORT__PRIORITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Quantity Produced</b></em>' attribute.
@@ -721,7 +722,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__QUANTITY_PRODUCED = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 28;
+	int WORK_EFFORT__QUANTITY_PRODUCED = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 32;
 
 	/**
 	 * The feature id for the '<em><b>Quantity Rejected</b></em>' attribute.
@@ -730,7 +731,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__QUANTITY_REJECTED = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 29;
+	int WORK_EFFORT__QUANTITY_REJECTED = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 33;
 
 	/**
 	 * The feature id for the '<em><b>Quantity To Produce</b></em>' attribute.
@@ -739,7 +740,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__QUANTITY_TO_PRODUCE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 30;
+	int WORK_EFFORT__QUANTITY_TO_PRODUCE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 34;
 
 	/**
 	 * The feature id for the '<em><b>Recurrence Info Id</b></em>' reference.
@@ -748,7 +749,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__RECURRENCE_INFO_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 31;
+	int WORK_EFFORT__RECURRENCE_INFO_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 35;
 
 	/**
 	 * The feature id for the '<em><b>Reserv2nd PP Perc</b></em>' attribute.
@@ -757,7 +758,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__RESERV2ND_PP_PERC = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 32;
+	int WORK_EFFORT__RESERV2ND_PP_PERC = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 36;
 
 	/**
 	 * The feature id for the '<em><b>Reserv Nth PP Perc</b></em>' attribute.
@@ -766,7 +767,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__RESERV_NTH_PP_PERC = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 33;
+	int WORK_EFFORT__RESERV_NTH_PP_PERC = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 37;
 
 	/**
 	 * The feature id for the '<em><b>Reserv Persons</b></em>' attribute.
@@ -775,7 +776,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__RESERV_PERSONS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 34;
+	int WORK_EFFORT__RESERV_PERSONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 38;
 
 	/**
 	 * The feature id for the '<em><b>Revision Number</b></em>' attribute.
@@ -784,7 +785,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__REVISION_NUMBER = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 35;
+	int WORK_EFFORT__REVISION_NUMBER = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 39;
 
 	/**
 	 * The feature id for the '<em><b>Runtime Data Id</b></em>' reference.
@@ -793,7 +794,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__RUNTIME_DATA_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 36;
+	int WORK_EFFORT__RUNTIME_DATA_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 40;
 
 	/**
 	 * The feature id for the '<em><b>Scope Enum Id</b></em>' reference.
@@ -802,7 +803,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__SCOPE_ENUM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 37;
+	int WORK_EFFORT__SCOPE_ENUM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 41;
 
 	/**
 	 * The feature id for the '<em><b>Send Notification Email</b></em>' attribute.
@@ -811,7 +812,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__SEND_NOTIFICATION_EMAIL = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 38;
+	int WORK_EFFORT__SEND_NOTIFICATION_EMAIL = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 42;
 
 	/**
 	 * The feature id for the '<em><b>Service Loader Name</b></em>' attribute.
@@ -820,7 +821,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__SERVICE_LOADER_NAME = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 39;
+	int WORK_EFFORT__SERVICE_LOADER_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 43;
 
 	/**
 	 * The feature id for the '<em><b>Show As Enum Id</b></em>' attribute.
@@ -829,7 +830,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__SHOW_AS_ENUM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 40;
+	int WORK_EFFORT__SHOW_AS_ENUM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 44;
 
 	/**
 	 * The feature id for the '<em><b>Source Reference Id</b></em>' attribute.
@@ -838,7 +839,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__SOURCE_REFERENCE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 41;
+	int WORK_EFFORT__SOURCE_REFERENCE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 45;
 
 	/**
 	 * The feature id for the '<em><b>Special Terms</b></em>' attribute.
@@ -847,7 +848,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__SPECIAL_TERMS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 42;
+	int WORK_EFFORT__SPECIAL_TERMS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 46;
 
 	/**
 	 * The feature id for the '<em><b>Temp Expr Id</b></em>' reference.
@@ -856,7 +857,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__TEMP_EXPR_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 43;
+	int WORK_EFFORT__TEMP_EXPR_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 47;
 
 	/**
 	 * The feature id for the '<em><b>Time Transparency</b></em>' attribute.
@@ -865,7 +866,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__TIME_TRANSPARENCY = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 44;
+	int WORK_EFFORT__TIME_TRANSPARENCY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 48;
 
 	/**
 	 * The feature id for the '<em><b>Total Milli Seconds Allowed</b></em>' attribute.
@@ -874,7 +875,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__TOTAL_MILLI_SECONDS_ALLOWED = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 45;
+	int WORK_EFFORT__TOTAL_MILLI_SECONDS_ALLOWED = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 49;
 
 	/**
 	 * The feature id for the '<em><b>Total Money Allowed</b></em>' attribute.
@@ -883,7 +884,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__TOTAL_MONEY_ALLOWED = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 46;
+	int WORK_EFFORT__TOTAL_MONEY_ALLOWED = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 50;
 
 	/**
 	 * The feature id for the '<em><b>Universal Id</b></em>' attribute.
@@ -892,7 +893,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__UNIVERSAL_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 47;
+	int WORK_EFFORT__UNIVERSAL_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 51;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Attributes</b></em>' reference list.
@@ -901,7 +902,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_ATTRIBUTES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 48;
+	int WORK_EFFORT__WORK_EFFORT_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 52;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Deliverable Prods</b></em>' reference list.
@@ -910,7 +911,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_DELIVERABLE_PRODS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 49;
+	int WORK_EFFORT__WORK_EFFORT_DELIVERABLE_PRODS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 53;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Event Reminders</b></em>' reference list.
@@ -919,7 +920,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_EVENT_REMINDERS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 50;
+	int WORK_EFFORT__WORK_EFFORT_EVENT_REMINDERS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 54;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Fixed Asset Stds</b></em>' reference list.
@@ -928,7 +929,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_FIXED_ASSET_STDS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 51;
+	int WORK_EFFORT__WORK_EFFORT_FIXED_ASSET_STDS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 55;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Inventory Assigns</b></em>' reference list.
@@ -937,7 +938,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_INVENTORY_ASSIGNS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 52;
+	int WORK_EFFORT__WORK_EFFORT_INVENTORY_ASSIGNS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 56;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Inventory Produceds</b></em>' reference list.
@@ -946,7 +947,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_INVENTORY_PRODUCEDS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 53;
+	int WORK_EFFORT__WORK_EFFORT_INVENTORY_PRODUCEDS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 57;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Keywords</b></em>' reference list.
@@ -955,7 +956,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_KEYWORDS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 54;
+	int WORK_EFFORT__WORK_EFFORT_KEYWORDS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 58;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Name</b></em>' attribute.
@@ -964,7 +965,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_NAME = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 55;
+	int WORK_EFFORT__WORK_EFFORT_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 59;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Notes</b></em>' reference list.
@@ -973,7 +974,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_NOTES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 56;
+	int WORK_EFFORT__WORK_EFFORT_NOTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 60;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Parent Id</b></em>' reference.
@@ -982,7 +983,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_PARENT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 57;
+	int WORK_EFFORT__WORK_EFFORT_PARENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 61;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Purpose Type Id</b></em>' reference.
@@ -991,7 +992,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_PURPOSE_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 58;
+	int WORK_EFFORT__WORK_EFFORT_PURPOSE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 62;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Skill Standards</b></em>' reference list.
@@ -1000,7 +1001,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_SKILL_STANDARDS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 59;
+	int WORK_EFFORT__WORK_EFFORT_SKILL_STANDARDS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 63;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Type Id</b></em>' reference.
@@ -1009,7 +1010,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 60;
+	int WORK_EFFORT__WORK_EFFORT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 64;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort</em>' class.
@@ -1018,7 +1019,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 61;
+	int WORK_EFFORT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 65;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocImpl <em>Work Effort Assoc</em>}' class.
@@ -1037,7 +1038,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int WORK_EFFORT_ASSOC__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1046,7 +1047,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int WORK_EFFORT_ASSOC__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1055,7 +1056,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_ASSOC__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1064,7 +1065,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_ASSOC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Assoc Type Id</b></em>' reference.
@@ -1073,7 +1074,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC__WORK_EFFORT_ASSOC_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int WORK_EFFORT_ASSOC__WORK_EFFORT_ASSOC_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id From</b></em>' reference.
@@ -1082,7 +1083,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC__WORK_EFFORT_ID_FROM = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int WORK_EFFORT_ASSOC__WORK_EFFORT_ID_FROM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id To</b></em>' reference.
@@ -1091,7 +1092,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC__WORK_EFFORT_ID_TO = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int WORK_EFFORT_ASSOC__WORK_EFFORT_ID_TO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1100,7 +1101,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC__FROM_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int WORK_EFFORT_ASSOC__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -1109,7 +1110,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int WORK_EFFORT_ASSOC__SEQUENCE_NUM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -1118,7 +1119,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC__THRU_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int WORK_EFFORT_ASSOC__THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Assoc</em>' class.
@@ -1127,7 +1128,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int WORK_EFFORT_ASSOC_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocAttributeImpl <em>Work Effort Assoc Attribute</em>}' class.
@@ -1146,7 +1147,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_ASSOC_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1155,7 +1156,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_ASSOC_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1164,7 +1165,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_ASSOC_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1173,7 +1174,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_ASSOC_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1182,7 +1183,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_ASSOC_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Assoc Type Id</b></em>' attribute.
@@ -1191,7 +1192,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_ATTRIBUTE__WORK_EFFORT_ASSOC_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_ASSOC_ATTRIBUTE__WORK_EFFORT_ASSOC_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id From</b></em>' attribute.
@@ -1200,7 +1201,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_ATTRIBUTE__WORK_EFFORT_ID_FROM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_ASSOC_ATTRIBUTE__WORK_EFFORT_ID_FROM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id To</b></em>' attribute.
@@ -1209,7 +1210,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_ATTRIBUTE__WORK_EFFORT_ID_TO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_ASSOC_ATTRIBUTE__WORK_EFFORT_ID_TO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -1218,7 +1219,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WORK_EFFORT_ASSOC_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -1227,7 +1228,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int WORK_EFFORT_ASSOC_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1236,7 +1237,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_ATTRIBUTE__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int WORK_EFFORT_ASSOC_ATTRIBUTE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Assoc Attribute</em>' class.
@@ -1245,7 +1246,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int WORK_EFFORT_ASSOC_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocTypeImpl <em>Work Effort Assoc Type</em>}' class.
@@ -1264,7 +1265,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int WORK_EFFORT_ASSOC_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1273,7 +1274,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int WORK_EFFORT_ASSOC_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1282,7 +1283,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int WORK_EFFORT_ASSOC_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1291,7 +1292,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_ASSOC_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1300,7 +1301,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_ASSOC_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Assoc Type Id</b></em>' attribute.
@@ -1309,7 +1310,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE__WORK_EFFORT_ASSOC_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int WORK_EFFORT_ASSOC_TYPE__WORK_EFFORT_ASSOC_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1318,7 +1319,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int WORK_EFFORT_ASSOC_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -1327,7 +1328,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int WORK_EFFORT_ASSOC_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -1336,7 +1337,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int WORK_EFFORT_ASSOC_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Assoc Type Attrs</b></em>' reference list.
@@ -1345,7 +1346,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE__WORK_EFFORT_ASSOC_TYPE_ATTRS = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_ASSOC_TYPE__WORK_EFFORT_ASSOC_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Assoc Type</em>' class.
@@ -1354,7 +1355,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 5;
+	int WORK_EFFORT_ASSOC_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocTypeAttrImpl <em>Work Effort Assoc Type Attr</em>}' class.
@@ -1373,7 +1374,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE_ATTR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_ASSOC_TYPE_ATTR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1382,7 +1383,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE_ATTR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_ASSOC_TYPE_ATTR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1391,7 +1392,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE_ATTR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_ASSOC_TYPE_ATTR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1400,7 +1401,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE_ATTR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_ASSOC_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Assoc Type Id</b></em>' reference.
@@ -1409,7 +1410,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE_ATTR__WORK_EFFORT_ASSOC_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_ASSOC_TYPE_ATTR__WORK_EFFORT_ASSOC_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1418,7 +1419,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE_ATTR__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_ASSOC_TYPE_ATTR__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1427,7 +1428,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE_ATTR__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_ASSOC_TYPE_ATTR__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Assoc Type Attr</em>' class.
@@ -1436,7 +1437,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ASSOC_TYPE_ATTR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_ASSOC_TYPE_ATTR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAttributeImpl <em>Work Effort Attribute</em>}' class.
@@ -1455,7 +1456,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1464,7 +1465,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1473,7 +1474,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1482,7 +1483,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -1491,7 +1492,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ATTRIBUTE__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_ATTRIBUTE__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1500,7 +1501,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -1509,7 +1510,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -1518,7 +1519,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Attribute</em>' class.
@@ -1527,7 +1528,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WORK_EFFORT_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortBillingImpl <em>Work Effort Billing</em>}' class.
@@ -1546,7 +1547,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_BILLING__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_BILLING__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1555,7 +1556,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_BILLING__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_BILLING__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1564,7 +1565,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_BILLING__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_BILLING__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1573,7 +1574,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_BILLING__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_BILLING__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -1582,7 +1583,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_BILLING__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_BILLING__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id</b></em>' reference.
@@ -1591,7 +1592,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_BILLING__INVOICE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_BILLING__INVOICE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Seq Id</b></em>' attribute.
@@ -1600,7 +1601,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_BILLING__INVOICE_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_BILLING__INVOICE_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Percentage</b></em>' attribute.
@@ -1609,7 +1610,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_BILLING__PERCENTAGE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_BILLING__PERCENTAGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Billing</em>' class.
@@ -1618,7 +1619,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_BILLING_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WORK_EFFORT_BILLING_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContactMechImpl <em>Work Effort Contact Mech</em>}' class.
@@ -1637,7 +1638,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTACT_MECH__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_CONTACT_MECH__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1646,7 +1647,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTACT_MECH__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_CONTACT_MECH__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1655,7 +1656,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTACT_MECH__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_CONTACT_MECH__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1664,7 +1665,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTACT_MECH__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_CONTACT_MECH__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -1673,7 +1674,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTACT_MECH__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_CONTACT_MECH__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Contact Mech Id</b></em>' reference.
@@ -1682,7 +1683,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTACT_MECH__CONTACT_MECH_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_CONTACT_MECH__CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1691,7 +1692,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTACT_MECH__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_CONTACT_MECH__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -1700,7 +1701,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTACT_MECH__COMMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_CONTACT_MECH__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -1709,7 +1710,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTACT_MECH__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WORK_EFFORT_CONTACT_MECH__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Contact Mech</em>' class.
@@ -1718,7 +1719,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTACT_MECH_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int WORK_EFFORT_CONTACT_MECH_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContentImpl <em>Work Effort Content</em>}' class.
@@ -1737,7 +1738,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_CONTENT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1746,7 +1747,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_CONTENT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1755,7 +1756,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_CONTENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1764,7 +1765,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_CONTENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -1773,7 +1774,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_CONTENT__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Content Id</b></em>' reference.
@@ -1782,7 +1783,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT__CONTENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_CONTENT__CONTENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Content Type Id</b></em>' reference.
@@ -1791,7 +1792,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT__WORK_EFFORT_CONTENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_CONTENT__WORK_EFFORT_CONTENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1800,7 +1801,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_CONTENT__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -1809,7 +1810,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WORK_EFFORT_CONTENT__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Content</em>' class.
@@ -1818,7 +1819,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int WORK_EFFORT_CONTENT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortContentTypeImpl <em>Work Effort Content Type</em>}' class.
@@ -1837,7 +1838,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_CONTENT_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1846,7 +1847,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_CONTENT_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1855,7 +1856,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_CONTENT_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1864,7 +1865,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_CONTENT_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Content Type Id</b></em>' attribute.
@@ -1873,7 +1874,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT_TYPE__WORK_EFFORT_CONTENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_CONTENT_TYPE__WORK_EFFORT_CONTENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1882,7 +1883,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_CONTENT_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -1891,7 +1892,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_CONTENT_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Content Type</em>' class.
@@ -1900,7 +1901,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_CONTENT_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_CONTENT_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortCostCalcImpl <em>Work Effort Cost Calc</em>}' class.
@@ -1919,7 +1920,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_COST_CALC__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_COST_CALC__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1928,7 +1929,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_COST_CALC__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_COST_CALC__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1937,7 +1938,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_COST_CALC__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_COST_CALC__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1946,7 +1947,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_COST_CALC__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_COST_CALC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -1955,7 +1956,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_COST_CALC__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_COST_CALC__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Cost Component Type Id</b></em>' reference.
@@ -1964,7 +1965,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_COST_CALC__COST_COMPONENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_COST_CALC__COST_COMPONENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1973,7 +1974,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_COST_CALC__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_COST_CALC__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Cost Component Calc Id</b></em>' reference.
@@ -1982,7 +1983,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_COST_CALC__COST_COMPONENT_CALC_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_COST_CALC__COST_COMPONENT_CALC_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -1991,7 +1992,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_COST_CALC__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WORK_EFFORT_COST_CALC__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Cost Calc</em>' class.
@@ -2000,7 +2001,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_COST_CALC_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int WORK_EFFORT_COST_CALC_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortDeliverableProdImpl <em>Work Effort Deliverable Prod</em>}' class.
@@ -2019,7 +2020,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_DELIVERABLE_PROD__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_DELIVERABLE_PROD__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2028,7 +2029,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_DELIVERABLE_PROD__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_DELIVERABLE_PROD__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2037,7 +2038,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_DELIVERABLE_PROD__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_DELIVERABLE_PROD__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2046,7 +2047,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_DELIVERABLE_PROD__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_DELIVERABLE_PROD__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -2055,7 +2056,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_DELIVERABLE_PROD__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_DELIVERABLE_PROD__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Deliverable Id</b></em>' reference.
@@ -2064,7 +2065,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_DELIVERABLE_PROD__DELIVERABLE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_DELIVERABLE_PROD__DELIVERABLE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Deliverable Prod</em>' class.
@@ -2073,7 +2074,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_DELIVERABLE_PROD_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_DELIVERABLE_PROD_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortEventReminderImpl <em>Work Effort Event Reminder</em>}' class.
@@ -2092,7 +2093,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_EVENT_REMINDER__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_EVENT_REMINDER__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2101,7 +2102,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_EVENT_REMINDER__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_EVENT_REMINDER__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2110,7 +2111,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_EVENT_REMINDER__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_EVENT_REMINDER__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2119,7 +2120,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_EVENT_REMINDER__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_EVENT_REMINDER__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -2128,7 +2129,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_EVENT_REMINDER__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_EVENT_REMINDER__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Id</b></em>' attribute.
@@ -2137,7 +2138,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_EVENT_REMINDER__SEQUENCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_EVENT_REMINDER__SEQUENCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Contact Mech Id</b></em>' reference.
@@ -2146,7 +2147,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_EVENT_REMINDER__CONTACT_MECH_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_EVENT_REMINDER__CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Current Count</b></em>' attribute.
@@ -2155,7 +2156,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_EVENT_REMINDER__CURRENT_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_EVENT_REMINDER__CURRENT_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Locale Id</b></em>' attribute.
@@ -2164,7 +2165,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_EVENT_REMINDER__LOCALE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WORK_EFFORT_EVENT_REMINDER__LOCALE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -2173,7 +2174,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_EVENT_REMINDER__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int WORK_EFFORT_EVENT_REMINDER__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Reminder Date Time</b></em>' attribute.
@@ -2182,7 +2183,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_EVENT_REMINDER__REMINDER_DATE_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int WORK_EFFORT_EVENT_REMINDER__REMINDER_DATE_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Reminder Offset</b></em>' attribute.
@@ -2191,7 +2192,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_EVENT_REMINDER__REMINDER_OFFSET = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int WORK_EFFORT_EVENT_REMINDER__REMINDER_OFFSET = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Count</b></em>' attribute.
@@ -2200,7 +2201,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_EVENT_REMINDER__REPEAT_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int WORK_EFFORT_EVENT_REMINDER__REPEAT_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Repeat Interval</b></em>' attribute.
@@ -2209,7 +2210,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_EVENT_REMINDER__REPEAT_INTERVAL = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int WORK_EFFORT_EVENT_REMINDER__REPEAT_INTERVAL = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Time Zone Id</b></em>' attribute.
@@ -2218,7 +2219,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_EVENT_REMINDER__TIME_ZONE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int WORK_EFFORT_EVENT_REMINDER__TIME_ZONE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Event Reminder</em>' class.
@@ -2227,7 +2228,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_EVENT_REMINDER_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int WORK_EFFORT_EVENT_REMINDER_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortFixedAssetAssignImpl <em>Work Effort Fixed Asset Assign</em>}' class.
@@ -2246,7 +2247,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_ASSIGN__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_FIXED_ASSET_ASSIGN__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2255,7 +2256,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_ASSIGN__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_FIXED_ASSET_ASSIGN__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2264,7 +2265,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_ASSIGN__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_FIXED_ASSET_ASSIGN__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2273,7 +2274,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_ASSIGN__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_FIXED_ASSET_ASSIGN__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -2282,7 +2283,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_ASSIGN__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_FIXED_ASSET_ASSIGN__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
@@ -2291,7 +2292,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_ASSIGN__FIXED_ASSET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_FIXED_ASSET_ASSIGN__FIXED_ASSET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -2300,7 +2301,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_ASSIGN__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_FIXED_ASSET_ASSIGN__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Allocated Cost</b></em>' attribute.
@@ -2309,7 +2310,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_ASSIGN__ALLOCATED_COST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_FIXED_ASSET_ASSIGN__ALLOCATED_COST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Availability Status Id</b></em>' reference.
@@ -2318,7 +2319,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_ASSIGN__AVAILABILITY_STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WORK_EFFORT_FIXED_ASSET_ASSIGN__AVAILABILITY_STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -2327,7 +2328,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_ASSIGN__COMMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int WORK_EFFORT_FIXED_ASSET_ASSIGN__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -2336,7 +2337,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_ASSIGN__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int WORK_EFFORT_FIXED_ASSET_ASSIGN__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -2345,7 +2346,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_ASSIGN__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int WORK_EFFORT_FIXED_ASSET_ASSIGN__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Fixed Asset Assign</em>' class.
@@ -2354,7 +2355,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_ASSIGN_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int WORK_EFFORT_FIXED_ASSET_ASSIGN_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortFixedAssetStdImpl <em>Work Effort Fixed Asset Std</em>}' class.
@@ -2373,7 +2374,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_STD__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_FIXED_ASSET_STD__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2382,7 +2383,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_STD__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_FIXED_ASSET_STD__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2391,7 +2392,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_STD__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_FIXED_ASSET_STD__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2400,7 +2401,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_STD__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_FIXED_ASSET_STD__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -2409,7 +2410,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_STD__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_FIXED_ASSET_STD__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Fixed Asset Type Id</b></em>' reference.
@@ -2418,7 +2419,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_STD__FIXED_ASSET_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_FIXED_ASSET_STD__FIXED_ASSET_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Cost</b></em>' attribute.
@@ -2427,7 +2428,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_STD__ESTIMATED_COST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_FIXED_ASSET_STD__ESTIMATED_COST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Duration</b></em>' attribute.
@@ -2436,7 +2437,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_STD__ESTIMATED_DURATION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_FIXED_ASSET_STD__ESTIMATED_DURATION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Quantity</b></em>' attribute.
@@ -2445,7 +2446,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_STD__ESTIMATED_QUANTITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WORK_EFFORT_FIXED_ASSET_STD__ESTIMATED_QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Fixed Asset Std</em>' class.
@@ -2454,7 +2455,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FIXED_ASSET_STD_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int WORK_EFFORT_FIXED_ASSET_STD_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardImpl <em>Work Effort Good Standard</em>}' class.
@@ -2473,7 +2474,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int WORK_EFFORT_GOOD_STANDARD__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2482,7 +2483,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int WORK_EFFORT_GOOD_STANDARD__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2491,7 +2492,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_GOOD_STANDARD__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2500,7 +2501,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_GOOD_STANDARD__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -2509,7 +2510,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int WORK_EFFORT_GOOD_STANDARD__WORK_EFFORT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Good Std Type Id</b></em>' reference.
@@ -2518,7 +2519,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD__WORK_EFFORT_GOOD_STD_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int WORK_EFFORT_GOOD_STANDARD__WORK_EFFORT_GOOD_STD_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -2527,7 +2528,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD__PRODUCT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int WORK_EFFORT_GOOD_STANDARD__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -2536,7 +2537,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD__FROM_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int WORK_EFFORT_GOOD_STANDARD__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Cost</b></em>' attribute.
@@ -2545,7 +2546,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD__ESTIMATED_COST = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int WORK_EFFORT_GOOD_STANDARD__ESTIMATED_COST = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Quantity</b></em>' attribute.
@@ -2554,7 +2555,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD__ESTIMATED_QUANTITY = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int WORK_EFFORT_GOOD_STANDARD__ESTIMATED_QUANTITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -2563,7 +2564,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD__STATUS_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int WORK_EFFORT_GOOD_STANDARD__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -2572,7 +2573,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD__THRU_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int WORK_EFFORT_GOOD_STANDARD__THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Good Standard</em>' class.
@@ -2581,7 +2582,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int WORK_EFFORT_GOOD_STANDARD_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortGoodStandardTypeImpl <em>Work Effort Good Standard Type</em>}' class.
@@ -2600,7 +2601,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int WORK_EFFORT_GOOD_STANDARD_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -2609,7 +2610,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int WORK_EFFORT_GOOD_STANDARD_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2618,7 +2619,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int WORK_EFFORT_GOOD_STANDARD_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2627,7 +2628,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_GOOD_STANDARD_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2636,7 +2637,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_GOOD_STANDARD_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Good Std Type Id</b></em>' attribute.
@@ -2645,7 +2646,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD_TYPE__WORK_EFFORT_GOOD_STD_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int WORK_EFFORT_GOOD_STANDARD_TYPE__WORK_EFFORT_GOOD_STD_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -2654,7 +2655,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int WORK_EFFORT_GOOD_STANDARD_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -2663,7 +2664,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int WORK_EFFORT_GOOD_STANDARD_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -2672,7 +2673,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int WORK_EFFORT_GOOD_STANDARD_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Good Standard Type</em>' class.
@@ -2681,7 +2682,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_GOOD_STANDARD_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_GOOD_STANDARD_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortIcalDataImpl <em>Work Effort Ical Data</em>}' class.
@@ -2700,7 +2701,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ICAL_DATA__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_ICAL_DATA__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2709,7 +2710,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ICAL_DATA__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_ICAL_DATA__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2718,7 +2719,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ICAL_DATA__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_ICAL_DATA__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2727,7 +2728,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ICAL_DATA__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_ICAL_DATA__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' attribute.
@@ -2736,7 +2737,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ICAL_DATA__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_ICAL_DATA__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Ical Data</b></em>' attribute.
@@ -2745,7 +2746,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ICAL_DATA__ICAL_DATA = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_ICAL_DATA__ICAL_DATA = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Ical Data</em>' class.
@@ -2754,7 +2755,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_ICAL_DATA_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_ICAL_DATA_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortInventoryAssignImpl <em>Work Effort Inventory Assign</em>}' class.
@@ -2773,7 +2774,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_ASSIGN__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_INVENTORY_ASSIGN__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2782,7 +2783,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_ASSIGN__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_INVENTORY_ASSIGN__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2791,7 +2792,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_ASSIGN__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_INVENTORY_ASSIGN__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2800,7 +2801,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_ASSIGN__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_INVENTORY_ASSIGN__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -2809,7 +2810,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_ASSIGN__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_INVENTORY_ASSIGN__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Inventory Item Id</b></em>' reference.
@@ -2818,7 +2819,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_ASSIGN__INVENTORY_ITEM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_INVENTORY_ASSIGN__INVENTORY_ITEM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -2827,7 +2828,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_ASSIGN__QUANTITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_INVENTORY_ASSIGN__QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -2836,7 +2837,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_ASSIGN__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_INVENTORY_ASSIGN__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Inventory Assign</em>' class.
@@ -2845,7 +2846,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_ASSIGN_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WORK_EFFORT_INVENTORY_ASSIGN_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortInventoryProducedImpl <em>Work Effort Inventory Produced</em>}' class.
@@ -2864,7 +2865,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_PRODUCED__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_INVENTORY_PRODUCED__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2873,7 +2874,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_PRODUCED__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_INVENTORY_PRODUCED__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2882,7 +2883,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_PRODUCED__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_INVENTORY_PRODUCED__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2891,7 +2892,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_PRODUCED__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_INVENTORY_PRODUCED__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -2900,7 +2901,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_PRODUCED__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_INVENTORY_PRODUCED__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Inventory Item Id</b></em>' reference.
@@ -2909,7 +2910,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_PRODUCED__INVENTORY_ITEM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_INVENTORY_PRODUCED__INVENTORY_ITEM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Inventory Produced</em>' class.
@@ -2918,7 +2919,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_INVENTORY_PRODUCED_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_INVENTORY_PRODUCED_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortKeywordImpl <em>Work Effort Keyword</em>}' class.
@@ -2937,7 +2938,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_KEYWORD__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_KEYWORD__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2946,7 +2947,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_KEYWORD__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_KEYWORD__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2955,7 +2956,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_KEYWORD__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_KEYWORD__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2964,7 +2965,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_KEYWORD__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_KEYWORD__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -2973,7 +2974,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_KEYWORD__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_KEYWORD__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Keyword</b></em>' attribute.
@@ -2982,7 +2983,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_KEYWORD__KEYWORD = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_KEYWORD__KEYWORD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Relevancy Weight</b></em>' attribute.
@@ -2991,7 +2992,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_KEYWORD__RELEVANCY_WEIGHT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_KEYWORD__RELEVANCY_WEIGHT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Keyword</em>' class.
@@ -3000,7 +3001,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_KEYWORD_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_KEYWORD_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortNoteImpl <em>Work Effort Note</em>}' class.
@@ -3101,7 +3102,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3110,7 +3111,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3119,7 +3120,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3128,7 +3129,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -3137,7 +3138,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -3146,7 +3147,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -3155,7 +3156,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -3164,7 +3165,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Assigned By User Login Id</b></em>' reference.
@@ -3173,7 +3174,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__ASSIGNED_BY_USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__ASSIGNED_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Availability Status Id</b></em>' reference.
@@ -3182,7 +3183,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__AVAILABILITY_STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__AVAILABILITY_STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -3191,7 +3192,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__COMMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Delegate Reason Enum Id</b></em>' reference.
@@ -3200,7 +3201,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__DELEGATE_REASON_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__DELEGATE_REASON_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Expectation Enum Id</b></em>' reference.
@@ -3209,7 +3210,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__EXPECTATION_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__EXPECTATION_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
@@ -3218,7 +3219,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__FACILITY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Must Rsvp</b></em>' attribute.
@@ -3227,7 +3228,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__MUST_RSVP = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__MUST_RSVP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Status Date Time</b></em>' attribute.
@@ -3236,7 +3237,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__STATUS_DATE_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__STATUS_DATE_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -3245,7 +3246,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -3254,7 +3255,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int WORK_EFFORT_PARTY_ASSIGNMENT__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Party Assignment</em>' class.
@@ -3263,7 +3264,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PARTY_ASSIGNMENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int WORK_EFFORT_PARTY_ASSIGNMENT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortPurposeTypeImpl <em>Work Effort Purpose Type</em>}' class.
@@ -3282,7 +3283,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PURPOSE_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_PURPOSE_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3291,7 +3292,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PURPOSE_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_PURPOSE_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3300,7 +3301,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PURPOSE_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_PURPOSE_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3309,7 +3310,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PURPOSE_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_PURPOSE_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Purpose Type Id</b></em>' attribute.
@@ -3318,7 +3319,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PURPOSE_TYPE__WORK_EFFORT_PURPOSE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_PURPOSE_TYPE__WORK_EFFORT_PURPOSE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -3327,7 +3328,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PURPOSE_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_PURPOSE_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -3336,7 +3337,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PURPOSE_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_PURPOSE_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Purpose Type</em>' class.
@@ -3345,7 +3346,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_PURPOSE_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_PURPOSE_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortReviewImpl <em>Work Effort Review</em>}' class.
@@ -3364,7 +3365,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_REVIEW__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_REVIEW__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3373,7 +3374,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_REVIEW__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_REVIEW__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3382,7 +3383,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_REVIEW__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_REVIEW__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3391,7 +3392,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_REVIEW__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_REVIEW__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -3400,7 +3401,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_REVIEW__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_REVIEW__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>User Login Id</b></em>' reference.
@@ -3409,7 +3410,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_REVIEW__USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_REVIEW__USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Review Date</b></em>' attribute.
@@ -3418,7 +3419,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_REVIEW__REVIEW_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_REVIEW__REVIEW_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Posted Anonymous</b></em>' attribute.
@@ -3427,7 +3428,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_REVIEW__POSTED_ANONYMOUS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_REVIEW__POSTED_ANONYMOUS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Rating</b></em>' attribute.
@@ -3436,7 +3437,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_REVIEW__RATING = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WORK_EFFORT_REVIEW__RATING = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Review Text</b></em>' attribute.
@@ -3445,7 +3446,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_REVIEW__REVIEW_TEXT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int WORK_EFFORT_REVIEW__REVIEW_TEXT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -3454,7 +3455,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_REVIEW__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int WORK_EFFORT_REVIEW__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Review</em>' class.
@@ -3463,7 +3464,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_REVIEW_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int WORK_EFFORT_REVIEW_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSearchConstraintImpl <em>Work Effort Search Constraint</em>}' class.
@@ -3482,7 +3483,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_CONSTRAINT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_SEARCH_CONSTRAINT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3491,7 +3492,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_CONSTRAINT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_SEARCH_CONSTRAINT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3500,7 +3501,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_CONSTRAINT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_SEARCH_CONSTRAINT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3509,7 +3510,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_CONSTRAINT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_SEARCH_CONSTRAINT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Search Result Id</b></em>' reference.
@@ -3518,7 +3519,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_CONSTRAINT__WORK_EFFORT_SEARCH_RESULT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_SEARCH_CONSTRAINT__WORK_EFFORT_SEARCH_RESULT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Constraint Seq Id</b></em>' attribute.
@@ -3527,7 +3528,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_CONSTRAINT__CONSTRAINT_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_SEARCH_CONSTRAINT__CONSTRAINT_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Any Prefix</b></em>' attribute.
@@ -3536,7 +3537,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_CONSTRAINT__ANY_PREFIX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_SEARCH_CONSTRAINT__ANY_PREFIX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Any Suffix</b></em>' attribute.
@@ -3545,7 +3546,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_CONSTRAINT__ANY_SUFFIX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_SEARCH_CONSTRAINT__ANY_SUFFIX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Constraint Name</b></em>' attribute.
@@ -3554,7 +3555,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_CONSTRAINT__CONSTRAINT_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WORK_EFFORT_SEARCH_CONSTRAINT__CONSTRAINT_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>High Value</b></em>' attribute.
@@ -3563,7 +3564,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_CONSTRAINT__HIGH_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int WORK_EFFORT_SEARCH_CONSTRAINT__HIGH_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Include Sub Work Efforts</b></em>' attribute.
@@ -3572,7 +3573,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_CONSTRAINT__INCLUDE_SUB_WORK_EFFORTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int WORK_EFFORT_SEARCH_CONSTRAINT__INCLUDE_SUB_WORK_EFFORTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Info String</b></em>' attribute.
@@ -3581,7 +3582,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_CONSTRAINT__INFO_STRING = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int WORK_EFFORT_SEARCH_CONSTRAINT__INFO_STRING = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Is And</b></em>' attribute.
@@ -3590,7 +3591,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_CONSTRAINT__IS_AND = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int WORK_EFFORT_SEARCH_CONSTRAINT__IS_AND = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Low Value</b></em>' attribute.
@@ -3599,7 +3600,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_CONSTRAINT__LOW_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int WORK_EFFORT_SEARCH_CONSTRAINT__LOW_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Remove Stems</b></em>' attribute.
@@ -3608,7 +3609,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_CONSTRAINT__REMOVE_STEMS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int WORK_EFFORT_SEARCH_CONSTRAINT__REMOVE_STEMS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Search Constraint</em>' class.
@@ -3617,7 +3618,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_CONSTRAINT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int WORK_EFFORT_SEARCH_CONSTRAINT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSearchResultImpl <em>Work Effort Search Result</em>}' class.
@@ -3636,7 +3637,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_RESULT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_SEARCH_RESULT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3645,7 +3646,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_RESULT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_SEARCH_RESULT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3654,7 +3655,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_RESULT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_SEARCH_RESULT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3663,7 +3664,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_RESULT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_SEARCH_RESULT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Search Result Id</b></em>' attribute.
@@ -3672,7 +3673,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_RESULT__WORK_EFFORT_SEARCH_RESULT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_SEARCH_RESULT__WORK_EFFORT_SEARCH_RESULT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Is Ascending</b></em>' attribute.
@@ -3681,7 +3682,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_RESULT__IS_ASCENDING = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_SEARCH_RESULT__IS_ASCENDING = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Num Results</b></em>' attribute.
@@ -3690,7 +3691,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_RESULT__NUM_RESULTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_SEARCH_RESULT__NUM_RESULTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Order By Name</b></em>' attribute.
@@ -3699,7 +3700,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_RESULT__ORDER_BY_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_SEARCH_RESULT__ORDER_BY_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Search Date</b></em>' attribute.
@@ -3708,7 +3709,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_RESULT__SEARCH_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WORK_EFFORT_SEARCH_RESULT__SEARCH_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Seconds Total</b></em>' attribute.
@@ -3717,7 +3718,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_RESULT__SECONDS_TOTAL = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int WORK_EFFORT_SEARCH_RESULT__SECONDS_TOTAL = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Visit Id</b></em>' attribute.
@@ -3726,7 +3727,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_RESULT__VISIT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int WORK_EFFORT_SEARCH_RESULT__VISIT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Search Constraints</b></em>' reference list.
@@ -3735,7 +3736,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_RESULT__WORK_EFFORT_SEARCH_CONSTRAINTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int WORK_EFFORT_SEARCH_RESULT__WORK_EFFORT_SEARCH_CONSTRAINTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Search Result</em>' class.
@@ -3744,7 +3745,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SEARCH_RESULT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int WORK_EFFORT_SEARCH_RESULT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSkillStandardImpl <em>Work Effort Skill Standard</em>}' class.
@@ -3763,7 +3764,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SKILL_STANDARD__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_SKILL_STANDARD__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3772,7 +3773,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SKILL_STANDARD__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_SKILL_STANDARD__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3781,7 +3782,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SKILL_STANDARD__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_SKILL_STANDARD__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3790,7 +3791,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SKILL_STANDARD__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_SKILL_STANDARD__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -3799,7 +3800,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SKILL_STANDARD__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_SKILL_STANDARD__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Skill Type Id</b></em>' reference.
@@ -3808,7 +3809,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SKILL_STANDARD__SKILL_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_SKILL_STANDARD__SKILL_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Cost</b></em>' attribute.
@@ -3817,7 +3818,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SKILL_STANDARD__ESTIMATED_COST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_SKILL_STANDARD__ESTIMATED_COST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Duration</b></em>' attribute.
@@ -3826,7 +3827,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SKILL_STANDARD__ESTIMATED_DURATION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_SKILL_STANDARD__ESTIMATED_DURATION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Num People</b></em>' attribute.
@@ -3835,7 +3836,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SKILL_STANDARD__ESTIMATED_NUM_PEOPLE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WORK_EFFORT_SKILL_STANDARD__ESTIMATED_NUM_PEOPLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Skill Standard</em>' class.
@@ -3844,7 +3845,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SKILL_STANDARD_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int WORK_EFFORT_SKILL_STANDARD_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortStatusImpl <em>Work Effort Status</em>}' class.
@@ -3863,7 +3864,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_STATUS__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_STATUS__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3872,7 +3873,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_STATUS__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_STATUS__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3881,7 +3882,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_STATUS__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_STATUS__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3890,7 +3891,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_STATUS__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_STATUS__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -3899,7 +3900,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_STATUS__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_STATUS__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -3908,7 +3909,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_STATUS__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_STATUS__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Status Datetime</b></em>' attribute.
@@ -3917,7 +3918,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_STATUS__STATUS_DATETIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_STATUS__STATUS_DATETIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Reason</b></em>' attribute.
@@ -3926,7 +3927,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_STATUS__REASON = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_STATUS__REASON = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Set By User Login</b></em>' reference.
@@ -3935,7 +3936,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_STATUS__SET_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WORK_EFFORT_STATUS__SET_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Status</em>' class.
@@ -3944,7 +3945,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_STATUS_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int WORK_EFFORT_STATUS_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortSurveyApplImpl <em>Work Effort Survey Appl</em>}' class.
@@ -3963,7 +3964,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SURVEY_APPL__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_SURVEY_APPL__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3972,7 +3973,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SURVEY_APPL__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_SURVEY_APPL__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3981,7 +3982,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SURVEY_APPL__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_SURVEY_APPL__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3990,7 +3991,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SURVEY_APPL__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_SURVEY_APPL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Survey Id</b></em>' reference.
@@ -3999,7 +4000,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SURVEY_APPL__SURVEY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_SURVEY_APPL__SURVEY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -4008,7 +4009,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SURVEY_APPL__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_SURVEY_APPL__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -4017,7 +4018,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SURVEY_APPL__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_SURVEY_APPL__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -4026,7 +4027,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SURVEY_APPL__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_SURVEY_APPL__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Survey Appl</em>' class.
@@ -4035,7 +4036,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_SURVEY_APPL_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WORK_EFFORT_SURVEY_APPL_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTransBoxImpl <em>Work Effort Trans Box</em>}' class.
@@ -4054,7 +4055,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TRANS_BOX__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_TRANS_BOX__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -4063,7 +4064,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TRANS_BOX__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_TRANS_BOX__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -4072,7 +4073,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TRANS_BOX__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_TRANS_BOX__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -4081,7 +4082,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TRANS_BOX__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_TRANS_BOX__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Process Work Effort Id</b></em>' reference.
@@ -4090,7 +4091,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TRANS_BOX__PROCESS_WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_TRANS_BOX__PROCESS_WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>To Activity Id</b></em>' attribute.
@@ -4099,7 +4100,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TRANS_BOX__TO_ACTIVITY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_TRANS_BOX__TO_ACTIVITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Transition Id</b></em>' attribute.
@@ -4108,7 +4109,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TRANS_BOX__TRANSITION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_TRANS_BOX__TRANSITION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Trans Box</em>' class.
@@ -4117,7 +4118,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TRANS_BOX_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_TRANS_BOX_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTypeImpl <em>Work Effort Type</em>}' class.
@@ -4136,7 +4137,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int WORK_EFFORT_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -4145,7 +4146,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int WORK_EFFORT_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -4154,7 +4155,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int WORK_EFFORT_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -4163,7 +4164,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -4172,7 +4173,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Type Id</b></em>' attribute.
@@ -4181,7 +4182,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE__WORK_EFFORT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int WORK_EFFORT_TYPE__WORK_EFFORT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -4190,7 +4191,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int WORK_EFFORT_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -4199,7 +4200,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int WORK_EFFORT_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -4208,7 +4209,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int WORK_EFFORT_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Type Attrs</b></em>' reference list.
@@ -4217,7 +4218,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE__WORK_EFFORT_TYPE_ATTRS = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int WORK_EFFORT_TYPE__WORK_EFFORT_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Type</em>' class.
@@ -4226,7 +4227,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 5;
+	int WORK_EFFORT_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortTypeAttrImpl <em>Work Effort Type Attr</em>}' class.
@@ -4245,7 +4246,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE_ATTR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WORK_EFFORT_TYPE_ATTR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -4254,7 +4255,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE_ATTR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WORK_EFFORT_TYPE_ATTR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -4263,7 +4264,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE_ATTR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WORK_EFFORT_TYPE_ATTR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -4272,7 +4273,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE_ATTR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WORK_EFFORT_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Type Id</b></em>' reference.
@@ -4281,7 +4282,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE_ATTR__WORK_EFFORT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WORK_EFFORT_TYPE_ATTR__WORK_EFFORT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -4290,7 +4291,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE_ATTR__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WORK_EFFORT_TYPE_ATTR__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -4299,7 +4300,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE_ATTR__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WORK_EFFORT_TYPE_ATTR__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Type Attr</em>' class.
@@ -4308,7 +4309,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_TYPE_ATTR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WORK_EFFORT_TYPE_ATTR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 
 	/**

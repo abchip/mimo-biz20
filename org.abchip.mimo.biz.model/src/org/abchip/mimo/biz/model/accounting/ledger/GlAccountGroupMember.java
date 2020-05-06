@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.accounting.ledger;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='General Ledger Account Group Member'"
  * @generated
  */
-public interface GlAccountGroupMember extends BizEntity {
+public interface GlAccountGroupMember extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Gl Account Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

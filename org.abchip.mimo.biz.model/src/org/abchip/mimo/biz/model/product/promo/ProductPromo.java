@@ -11,9 +11,10 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -46,7 +47,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  * @model annotation="mimo-ent-frame title='Product Promotion' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductPromo extends BizEntity {
+public interface ProductPromo extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Billback Factor</b></em>' attribute.
 	 * <!-- begin-user-doc -->

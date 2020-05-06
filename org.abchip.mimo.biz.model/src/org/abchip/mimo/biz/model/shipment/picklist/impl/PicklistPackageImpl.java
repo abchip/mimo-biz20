@@ -1167,7 +1167,7 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		FacilityPackage theFacilityPackage = (FacilityPackage)EPackage.Registry.INSTANCE.getEPackage(FacilityPackage.eNS_URI);
 		Shipment_Package theShipment_Package = (Shipment_Package)EPackage.Registry.INSTANCE.getEPackage(Shipment_Package.eNS_URI);
 		StatusPackage theStatusPackage = (StatusPackage)EPackage.Registry.INSTANCE.getEPackage(StatusPackage.eNS_URI);
@@ -1181,11 +1181,16 @@ public class PicklistPackageImpl extends EPackageImpl implements PicklistPackage
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		picklistEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		picklistBinEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		picklistItemEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		picklistRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		picklistStatusHistoryEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		picklistEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		picklistEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		picklistBinEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		picklistBinEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		picklistItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		picklistItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		picklistRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		picklistRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		picklistStatusHistoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		picklistStatusHistoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(picklistEClass, Picklist.class, "Picklist", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

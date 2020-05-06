@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.order.request;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Customer Request Attribute'"
  * @generated
  */
-public interface CustRequestAttribute extends BizEntity {
+public interface CustRequestAttribute extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Attr Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

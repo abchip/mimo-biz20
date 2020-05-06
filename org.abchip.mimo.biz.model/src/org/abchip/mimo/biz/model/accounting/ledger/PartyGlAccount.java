@@ -7,9 +7,10 @@
  */
 package org.abchip.mimo.biz.model.accounting.ledger;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +32,7 @@ import org.abchip.mimo.biz.model.party.party.RoleType;
  * @model
  * @generated
  */
-public interface PartyGlAccount extends BizEntity {
+public interface PartyGlAccount extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Organization Party Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

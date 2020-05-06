@@ -8,6 +8,8 @@
 package org.abchip.mimo.biz;
 
 import java.util.Date;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +34,7 @@ import java.util.Date;
  * @model abstract="true"
  * @generated
  */
-public interface BizEntityNoteData extends BizEntity {
+public interface BizEntityNoteData extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Note Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

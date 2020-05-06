@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.common.uom;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +27,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Unit Of Measure Group' dictionary='CommonEntityLabels'"
  * @generated
  */
-public interface UomGroup extends BizEntity {
+public interface UomGroup extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Uom Group Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

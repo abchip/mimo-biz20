@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.party.agreement;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * @model annotation="mimo-ent-frame title='Agreement Product Application'"
  * @generated
  */
-public interface AgreementProductAppl extends BizEntity {
+public interface AgreementProductAppl extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Agreement Item Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

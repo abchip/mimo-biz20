@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.accounting.payment;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.ProcessMode;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,7 +37,7 @@ import org.abchip.mimo.biz.model.accounting.ProcessMode;
  * @model annotation="mimo-ent-frame title='Clear Commerce Payment Gateway Config'"
  * @generated
  */
-public interface PaymentGatewayClearCommerce extends BizEntity {
+public interface PaymentGatewayClearCommerce extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Client Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

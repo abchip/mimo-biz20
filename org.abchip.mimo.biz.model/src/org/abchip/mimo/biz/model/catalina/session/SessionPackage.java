@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.catalina.session;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -77,7 +77,7 @@ public interface SessionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CATALINA_SESSION__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CATALINA_SESSION__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -86,7 +86,7 @@ public interface SessionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CATALINA_SESSION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CATALINA_SESSION__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -95,7 +95,7 @@ public interface SessionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CATALINA_SESSION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CATALINA_SESSION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -104,7 +104,7 @@ public interface SessionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CATALINA_SESSION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CATALINA_SESSION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Session Id</b></em>' attribute.
@@ -113,7 +113,7 @@ public interface SessionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CATALINA_SESSION__SESSION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CATALINA_SESSION__SESSION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Is Valid</b></em>' attribute.
@@ -122,7 +122,7 @@ public interface SessionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CATALINA_SESSION__IS_VALID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CATALINA_SESSION__IS_VALID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Last Accessed</b></em>' attribute.
@@ -131,7 +131,7 @@ public interface SessionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CATALINA_SESSION__LAST_ACCESSED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CATALINA_SESSION__LAST_ACCESSED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Max Idle</b></em>' attribute.
@@ -140,7 +140,7 @@ public interface SessionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CATALINA_SESSION__MAX_IDLE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int CATALINA_SESSION__MAX_IDLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Session Info</b></em>' attribute.
@@ -149,7 +149,7 @@ public interface SessionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CATALINA_SESSION__SESSION_INFO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int CATALINA_SESSION__SESSION_INFO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Session Size</b></em>' attribute.
@@ -158,7 +158,7 @@ public interface SessionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CATALINA_SESSION__SESSION_SIZE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int CATALINA_SESSION__SESSION_SIZE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Catalina Session</em>' class.
@@ -167,7 +167,7 @@ public interface SessionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CATALINA_SESSION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int CATALINA_SESSION_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 
 	/**

@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.common.uom;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.method.CustomMethod;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +32,7 @@ import org.abchip.mimo.biz.model.common.method.CustomMethod;
  * @model annotation="mimo-ent-frame title='Unit Of Measure Conversion Type'"
  * @generated
  */
-public interface UomConversion extends BizEntity {
+public interface UomConversion extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Conversion Factor</b></em>' attribute.
 	 * <!-- begin-user-doc -->

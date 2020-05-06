@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.party.agreement;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.promo.ProductPromo;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.model.product.promo.ProductPromo;
  * @model annotation="mimo-ent-frame title='Agreement Promo Applicability'"
  * @generated
  */
-public interface AgreementPromoAppl extends BizEntity {
+public interface AgreementPromoAppl extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Agreement Item Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

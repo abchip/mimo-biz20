@@ -8,10 +8,11 @@
 package org.abchip.mimo.biz.model.humanres.recruitment;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.Gender;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.humanres.ability.SkillType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +43,7 @@ import org.abchip.mimo.biz.model.humanres.ability.SkillType;
  * @model annotation="mimo-ent-frame title='Entity for storing data about recruitment'"
  * @generated
  */
-public interface JobRequisition extends BizEntity {
+public interface JobRequisition extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Age</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.content.data;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityType;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.BizEntityType;
  * @model annotation="mimo-ent-frame title='Data Object Type' dictionary='ContentEntityLabels' formula='description'"
  * @generated
  */
-public interface DataResourceType extends BizEntityType<DataResource> {
+public interface DataResourceType extends EntityType<DataResource>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Data Resource Type Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

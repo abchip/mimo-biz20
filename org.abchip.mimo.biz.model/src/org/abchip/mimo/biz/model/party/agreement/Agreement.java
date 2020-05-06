@@ -9,10 +9,11 @@ package org.abchip.mimo.biz.model.party.agreement;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,7 +44,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface Agreement extends BizEntityTyped<AgreementType> {
+public interface Agreement extends EntityTyped<AgreementType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Agreement Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

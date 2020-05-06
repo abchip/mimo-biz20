@@ -11,12 +11,13 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.geo.GeoPoint;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItemType;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -54,7 +55,7 @@ import org.abchip.mimo.biz.model.product.store.ProductStore;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface Facility extends BizEntityTyped<FacilityType> {
+public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Closed Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

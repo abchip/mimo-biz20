@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.common.note;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface NotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NOTE_DATA__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int NOTE_DATA__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface NotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NOTE_DATA__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int NOTE_DATA__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface NotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NOTE_DATA__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int NOTE_DATA__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface NotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NOTE_DATA__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int NOTE_DATA__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Note Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface NotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NOTE_DATA__NOTE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int NOTE_DATA__NOTE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>More Info Item Id</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface NotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NOTE_DATA__MORE_INFO_ITEM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int NOTE_DATA__MORE_INFO_ITEM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>More Info Item Name</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface NotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NOTE_DATA__MORE_INFO_ITEM_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int NOTE_DATA__MORE_INFO_ITEM_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>More Info Url</b></em>' attribute.
@@ -141,7 +141,7 @@ public interface NotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NOTE_DATA__MORE_INFO_URL = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int NOTE_DATA__MORE_INFO_URL = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Note Date Time</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface NotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NOTE_DATA__NOTE_DATE_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int NOTE_DATA__NOTE_DATE_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Note Info</b></em>' attribute.
@@ -159,7 +159,7 @@ public interface NotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NOTE_DATA__NOTE_INFO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int NOTE_DATA__NOTE_INFO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Note Name</b></em>' attribute.
@@ -168,7 +168,7 @@ public interface NotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NOTE_DATA__NOTE_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int NOTE_DATA__NOTE_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Note Party</b></em>' reference.
@@ -177,7 +177,7 @@ public interface NotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NOTE_DATA__NOTE_PARTY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int NOTE_DATA__NOTE_PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Data</em>' class.
@@ -186,7 +186,7 @@ public interface NotePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NOTE_DATA_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int NOTE_DATA_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 
 	/**

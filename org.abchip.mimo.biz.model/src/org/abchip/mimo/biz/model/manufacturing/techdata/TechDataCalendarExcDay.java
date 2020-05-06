@@ -10,7 +10,8 @@ package org.abchip.mimo.biz.model.manufacturing.techdata;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame help='Used to defined some days which differ from the normal day definition in the weekId associated in the calendar.' title='Calendar Exception Day' formula='description'"
  * @generated
  */
-public interface TechDataCalendarExcDay extends BizEntity {
+public interface TechDataCalendarExcDay extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Calendar Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

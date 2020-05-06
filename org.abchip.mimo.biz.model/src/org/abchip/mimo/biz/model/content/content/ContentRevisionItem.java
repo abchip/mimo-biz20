@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.content.content;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.content.data.DataResource;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.content.data.DataResource;
  * @model annotation="mimo-ent-frame title='Content Revision'"
  * @generated
  */
-public interface ContentRevisionItem extends BizEntity {
+public interface ContentRevisionItem extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Content Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

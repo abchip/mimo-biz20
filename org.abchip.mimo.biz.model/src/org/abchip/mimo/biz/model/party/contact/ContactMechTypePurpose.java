@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.party.contact;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +27,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame help='Defines which ContactMechPurposeType entites apply to which ContactMechType' title='Contact Mechanism Type Purpose'"
  * @generated
  */
-public interface ContactMechTypePurpose extends BizEntity {
+public interface ContactMechTypePurpose extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Contact Mech Type Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

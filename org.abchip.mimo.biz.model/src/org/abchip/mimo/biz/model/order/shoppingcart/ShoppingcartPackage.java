@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.order.shoppingcart;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface ShoppingcartPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CART_ABANDONED_LINE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface ShoppingcartPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CART_ABANDONED_LINE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface ShoppingcartPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CART_ABANDONED_LINE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface ShoppingcartPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CART_ABANDONED_LINE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cart Abandoned Line Seq Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface ShoppingcartPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE__CART_ABANDONED_LINE_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CART_ABANDONED_LINE__CART_ABANDONED_LINE_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Visit Id</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface ShoppingcartPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE__VISIT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CART_ABANDONED_LINE__VISIT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Config Id</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface ShoppingcartPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE__CONFIG_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CART_ABANDONED_LINE__CONFIG_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Prod Catalog Id</b></em>' reference.
@@ -141,7 +141,7 @@ public interface ShoppingcartPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE__PROD_CATALOG_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int CART_ABANDONED_LINE__PROD_CATALOG_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -150,7 +150,7 @@ public interface ShoppingcartPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE__PRODUCT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int CART_ABANDONED_LINE__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -159,7 +159,7 @@ public interface ShoppingcartPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE__QUANTITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int CART_ABANDONED_LINE__QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Reserv2nd PP Perc</b></em>' attribute.
@@ -168,7 +168,7 @@ public interface ShoppingcartPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE__RESERV2ND_PP_PERC = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int CART_ABANDONED_LINE__RESERV2ND_PP_PERC = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Reserv Length</b></em>' attribute.
@@ -177,7 +177,7 @@ public interface ShoppingcartPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE__RESERV_LENGTH = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int CART_ABANDONED_LINE__RESERV_LENGTH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Reserv Nth PP Perc</b></em>' attribute.
@@ -186,7 +186,7 @@ public interface ShoppingcartPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE__RESERV_NTH_PP_PERC = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int CART_ABANDONED_LINE__RESERV_NTH_PP_PERC = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Reserv Persons</b></em>' attribute.
@@ -195,7 +195,7 @@ public interface ShoppingcartPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE__RESERV_PERSONS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int CART_ABANDONED_LINE__RESERV_PERSONS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Reserv Start</b></em>' attribute.
@@ -204,7 +204,7 @@ public interface ShoppingcartPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE__RESERV_START = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int CART_ABANDONED_LINE__RESERV_START = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Total With Adjustments</b></em>' attribute.
@@ -213,7 +213,7 @@ public interface ShoppingcartPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE__TOTAL_WITH_ADJUSTMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int CART_ABANDONED_LINE__TOTAL_WITH_ADJUSTMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Unit Price</b></em>' attribute.
@@ -222,7 +222,7 @@ public interface ShoppingcartPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE__UNIT_PRICE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int CART_ABANDONED_LINE__UNIT_PRICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Was Reserved</b></em>' attribute.
@@ -231,7 +231,7 @@ public interface ShoppingcartPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE__WAS_RESERVED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int CART_ABANDONED_LINE__WAS_RESERVED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The number of structural features of the '<em>Cart Abandoned Line</em>' class.
@@ -240,7 +240,7 @@ public interface ShoppingcartPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CART_ABANDONED_LINE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int CART_ABANDONED_LINE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 
 	/**

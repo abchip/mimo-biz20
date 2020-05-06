@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.party.agreement;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +32,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model
  * @generated
  */
-public interface Addendum extends BizEntity {
+public interface Addendum extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Addendum Creation Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

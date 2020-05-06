@@ -1233,7 +1233,7 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		org.abchip.mimo.biz.model.party.contact.ContactPackage theContactPackage_1 = (org.abchip.mimo.biz.model.party.contact.ContactPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.model.party.contact.ContactPackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
 		PaymentPackage thePaymentPackage = (PaymentPackage)EPackage.Registry.INSTANCE.getEPackage(PaymentPackage.eNS_URI);
@@ -1249,11 +1249,16 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		shoppingListEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		shoppingListItemEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		shoppingListItemSurveyEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		shoppingListTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		shoppingListWorkEffortEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		shoppingListEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		shoppingListEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		shoppingListItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		shoppingListItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		shoppingListItemSurveyEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		shoppingListItemSurveyEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		shoppingListTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		shoppingListTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		shoppingListWorkEffortEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		shoppingListWorkEffortEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(shoppingListEClass, ShoppingList.class, "ShoppingList", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

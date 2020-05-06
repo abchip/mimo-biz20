@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.accounting.ledger;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model annotation="mimo-ent-frame title='GL Account Organization'"
  * @generated
  */
-public interface GlAccountTypeDefault extends BizEntity {
+public interface GlAccountTypeDefault extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Organization Party Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

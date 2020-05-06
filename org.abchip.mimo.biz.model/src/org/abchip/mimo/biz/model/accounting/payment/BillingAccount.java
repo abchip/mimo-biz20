@@ -10,9 +10,10 @@ package org.abchip.mimo.biz.model.accounting.payment;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +38,7 @@ import org.abchip.mimo.biz.model.party.contact.ContactMech;
  * @model annotation="mimo-ent-frame help='A BillingAccount Payment Method' formula='description'"
  * @generated
  */
-public interface BillingAccount extends BizEntity {
+public interface BillingAccount extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Account Currency Uom Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.shipment.shipment;
 
-import org.abchip.mimo.biz.BizPackage;
 import org.abchip.mimo.biz.model.content.document.DocumentPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -79,7 +79,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CARRIER_SHIPMENT_BOX_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CARRIER_SHIPMENT_BOX_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -88,7 +88,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CARRIER_SHIPMENT_BOX_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CARRIER_SHIPMENT_BOX_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -97,7 +97,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CARRIER_SHIPMENT_BOX_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CARRIER_SHIPMENT_BOX_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -106,7 +106,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CARRIER_SHIPMENT_BOX_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CARRIER_SHIPMENT_BOX_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Box Type Id</b></em>' reference.
@@ -115,7 +115,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CARRIER_SHIPMENT_BOX_TYPE__SHIPMENT_BOX_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CARRIER_SHIPMENT_BOX_TYPE__SHIPMENT_BOX_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -124,7 +124,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CARRIER_SHIPMENT_BOX_TYPE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CARRIER_SHIPMENT_BOX_TYPE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Oversize Code</b></em>' attribute.
@@ -133,7 +133,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CARRIER_SHIPMENT_BOX_TYPE__OVERSIZE_CODE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CARRIER_SHIPMENT_BOX_TYPE__OVERSIZE_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Packaging Type Code</b></em>' attribute.
@@ -142,7 +142,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CARRIER_SHIPMENT_BOX_TYPE__PACKAGING_TYPE_CODE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int CARRIER_SHIPMENT_BOX_TYPE__PACKAGING_TYPE_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Carrier Shipment Box Type</em>' class.
@@ -151,7 +151,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CARRIER_SHIPMENT_BOX_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int CARRIER_SHIPMENT_BOX_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.CarrierShipmentMethodImpl <em>Carrier Shipment Method</em>}' class.
@@ -170,7 +170,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CARRIER_SHIPMENT_METHOD__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CARRIER_SHIPMENT_METHOD__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -179,7 +179,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CARRIER_SHIPMENT_METHOD__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CARRIER_SHIPMENT_METHOD__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -188,7 +188,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CARRIER_SHIPMENT_METHOD__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CARRIER_SHIPMENT_METHOD__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -197,7 +197,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CARRIER_SHIPMENT_METHOD__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CARRIER_SHIPMENT_METHOD__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Method Type Id</b></em>' reference.
@@ -206,7 +206,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CARRIER_SHIPMENT_METHOD__SHIPMENT_METHOD_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CARRIER_SHIPMENT_METHOD__SHIPMENT_METHOD_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -215,7 +215,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CARRIER_SHIPMENT_METHOD__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CARRIER_SHIPMENT_METHOD__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' attribute.
@@ -224,7 +224,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CARRIER_SHIPMENT_METHOD__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CARRIER_SHIPMENT_METHOD__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Carrier Service Code</b></em>' attribute.
@@ -233,7 +233,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CARRIER_SHIPMENT_METHOD__CARRIER_SERVICE_CODE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int CARRIER_SHIPMENT_METHOD__CARRIER_SERVICE_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Number</b></em>' attribute.
@@ -242,7 +242,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CARRIER_SHIPMENT_METHOD__SEQUENCE_NUMBER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int CARRIER_SHIPMENT_METHOD__SEQUENCE_NUMBER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Carrier Shipment Method</em>' class.
@@ -251,7 +251,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CARRIER_SHIPMENT_METHOD_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int CARRIER_SHIPMENT_METHOD_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.DeliveryImpl <em>Delivery</em>}' class.
@@ -270,7 +270,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int DELIVERY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -279,7 +279,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int DELIVERY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -288,7 +288,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int DELIVERY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -297,7 +297,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int DELIVERY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Delivery Id</b></em>' attribute.
@@ -306,7 +306,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERY__DELIVERY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int DELIVERY__DELIVERY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Actual Arrival Date</b></em>' attribute.
@@ -315,7 +315,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERY__ACTUAL_ARRIVAL_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int DELIVERY__ACTUAL_ARRIVAL_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Actual Start Date</b></em>' attribute.
@@ -324,7 +324,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERY__ACTUAL_START_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int DELIVERY__ACTUAL_START_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Dest Facility Id</b></em>' reference.
@@ -333,7 +333,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERY__DEST_FACILITY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int DELIVERY__DEST_FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>End Mileage</b></em>' attribute.
@@ -342,7 +342,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERY__END_MILEAGE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int DELIVERY__END_MILEAGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Arrival Date</b></em>' attribute.
@@ -351,7 +351,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERY__ESTIMATED_ARRIVAL_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int DELIVERY__ESTIMATED_ARRIVAL_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Start Date</b></em>' attribute.
@@ -360,7 +360,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERY__ESTIMATED_START_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int DELIVERY__ESTIMATED_START_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
@@ -369,7 +369,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERY__FIXED_ASSET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int DELIVERY__FIXED_ASSET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Fuel Used</b></em>' attribute.
@@ -378,7 +378,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERY__FUEL_USED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int DELIVERY__FUEL_USED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Origin Facility Id</b></em>' reference.
@@ -387,7 +387,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERY__ORIGIN_FACILITY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int DELIVERY__ORIGIN_FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Start Mileage</b></em>' attribute.
@@ -396,7 +396,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERY__START_MILEAGE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int DELIVERY__START_MILEAGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The number of structural features of the '<em>Delivery</em>' class.
@@ -405,7 +405,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DELIVERY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int DELIVERY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentImpl <em>Shipment</em>}' class.
@@ -424,7 +424,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int SHIPMENT__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -433,7 +433,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int SHIPMENT__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -442,7 +442,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int SHIPMENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -451,7 +451,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Id</b></em>' attribute.
@@ -460,7 +460,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__SHIPMENT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int SHIPMENT__SHIPMENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Additional Shipping Charge</b></em>' attribute.
@@ -469,7 +469,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__ADDITIONAL_SHIPPING_CHARGE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int SHIPMENT__ADDITIONAL_SHIPPING_CHARGE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Addtl Shipping Charge Desc</b></em>' attribute.
@@ -478,7 +478,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__ADDTL_SHIPPING_CHARGE_DESC = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int SHIPMENT__ADDTL_SHIPPING_CHARGE_DESC = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Created By User Login</b></em>' attribute.
@@ -487,7 +487,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__CREATED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int SHIPMENT__CREATED_BY_USER_LOGIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Created Date</b></em>' attribute.
@@ -496,7 +496,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__CREATED_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int SHIPMENT__CREATED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
@@ -505,7 +505,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__CURRENCY_UOM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int SHIPMENT__CURRENCY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Destination Contact Mech Id</b></em>' reference.
@@ -514,7 +514,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__DESTINATION_CONTACT_MECH_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int SHIPMENT__DESTINATION_CONTACT_MECH_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Destination Facility Id</b></em>' reference.
@@ -523,7 +523,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__DESTINATION_FACILITY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int SHIPMENT__DESTINATION_FACILITY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Destination Telecom Number Id</b></em>' reference.
@@ -532,7 +532,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__DESTINATION_TELECOM_NUMBER_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int SHIPMENT__DESTINATION_TELECOM_NUMBER_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Arrival Date</b></em>' attribute.
@@ -541,7 +541,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__ESTIMATED_ARRIVAL_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 9;
+	int SHIPMENT__ESTIMATED_ARRIVAL_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Arrival Work Eff Id</b></em>' reference.
@@ -550,7 +550,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__ESTIMATED_ARRIVAL_WORK_EFF_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 10;
+	int SHIPMENT__ESTIMATED_ARRIVAL_WORK_EFF_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Ready Date</b></em>' attribute.
@@ -559,7 +559,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__ESTIMATED_READY_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 11;
+	int SHIPMENT__ESTIMATED_READY_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Ship Cost</b></em>' attribute.
@@ -568,7 +568,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__ESTIMATED_SHIP_COST = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 12;
+	int SHIPMENT__ESTIMATED_SHIP_COST = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Ship Date</b></em>' attribute.
@@ -577,7 +577,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__ESTIMATED_SHIP_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 13;
+	int SHIPMENT__ESTIMATED_SHIP_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Ship Work Eff Id</b></em>' reference.
@@ -586,7 +586,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__ESTIMATED_SHIP_WORK_EFF_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 14;
+	int SHIPMENT__ESTIMATED_SHIP_WORK_EFF_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Handling Instructions</b></em>' attribute.
@@ -595,7 +595,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__HANDLING_INSTRUCTIONS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 15;
+	int SHIPMENT__HANDLING_INSTRUCTIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified By User Login</b></em>' attribute.
@@ -604,7 +604,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__LAST_MODIFIED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 16;
+	int SHIPMENT__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified Date</b></em>' attribute.
@@ -613,7 +613,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__LAST_MODIFIED_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 17;
+	int SHIPMENT__LAST_MODIFIED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Latest Cancel Date</b></em>' attribute.
@@ -622,7 +622,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__LATEST_CANCEL_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 18;
+	int SHIPMENT__LATEST_CANCEL_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Origin Contact Mech Id</b></em>' reference.
@@ -631,7 +631,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__ORIGIN_CONTACT_MECH_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 19;
+	int SHIPMENT__ORIGIN_CONTACT_MECH_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Origin Facility Id</b></em>' reference.
@@ -640,7 +640,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__ORIGIN_FACILITY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 20;
+	int SHIPMENT__ORIGIN_FACILITY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Origin Telecom Number Id</b></em>' reference.
@@ -649,7 +649,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__ORIGIN_TELECOM_NUMBER_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 21;
+	int SHIPMENT__ORIGIN_TELECOM_NUMBER_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Party Id From</b></em>' reference.
@@ -658,7 +658,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__PARTY_ID_FROM = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 22;
+	int SHIPMENT__PARTY_ID_FROM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Party Id To</b></em>' reference.
@@ -667,7 +667,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__PARTY_ID_TO = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 23;
+	int SHIPMENT__PARTY_ID_TO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Picklist Bin Id</b></em>' reference.
@@ -676,7 +676,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__PICKLIST_BIN_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 24;
+	int SHIPMENT__PICKLIST_BIN_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Primary Order Id</b></em>' reference.
@@ -685,7 +685,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__PRIMARY_ORDER_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 25;
+	int SHIPMENT__PRIMARY_ORDER_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Primary Return Id</b></em>' reference.
@@ -694,7 +694,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__PRIMARY_RETURN_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 26;
+	int SHIPMENT__PRIMARY_RETURN_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Primary Ship Group Seq Id</b></em>' attribute.
@@ -703,7 +703,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__PRIMARY_SHIP_GROUP_SEQ_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 27;
+	int SHIPMENT__PRIMARY_SHIP_GROUP_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Attributes</b></em>' reference list.
@@ -712,7 +712,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__SHIPMENT_ATTRIBUTES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 28;
+	int SHIPMENT__SHIPMENT_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 32;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Contact Mechs</b></em>' reference list.
@@ -721,7 +721,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__SHIPMENT_CONTACT_MECHS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 29;
+	int SHIPMENT__SHIPMENT_CONTACT_MECHS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 33;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Items</b></em>' reference list.
@@ -730,7 +730,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__SHIPMENT_ITEMS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 30;
+	int SHIPMENT__SHIPMENT_ITEMS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 34;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Packages</b></em>' reference list.
@@ -739,7 +739,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__SHIPMENT_PACKAGES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 31;
+	int SHIPMENT__SHIPMENT_PACKAGES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 35;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Route Segments</b></em>' reference list.
@@ -748,7 +748,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__SHIPMENT_ROUTE_SEGMENTS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 32;
+	int SHIPMENT__SHIPMENT_ROUTE_SEGMENTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 36;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Type Id</b></em>' reference.
@@ -757,7 +757,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__SHIPMENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 33;
+	int SHIPMENT__SHIPMENT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 37;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -766,7 +766,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT__STATUS_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 34;
+	int SHIPMENT__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 38;
 
 	/**
 	 * The number of structural features of the '<em>Shipment</em>' class.
@@ -775,7 +775,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 35;
+	int SHIPMENT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 39;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentAttributeImpl <em>Shipment Attribute</em>}' class.
@@ -794,7 +794,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SHIPMENT_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -803,7 +803,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SHIPMENT_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -812,7 +812,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SHIPMENT_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -821,7 +821,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Id</b></em>' reference.
@@ -830,7 +830,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ATTRIBUTE__SHIPMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SHIPMENT_ATTRIBUTE__SHIPMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -839,7 +839,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SHIPMENT_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -848,7 +848,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SHIPMENT_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -857,7 +857,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SHIPMENT_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Attribute</em>' class.
@@ -866,7 +866,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SHIPMENT_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentBoxTypeImpl <em>Shipment Box Type</em>}' class.
@@ -885,7 +885,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_BOX_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SHIPMENT_BOX_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -894,7 +894,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_BOX_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SHIPMENT_BOX_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -903,7 +903,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_BOX_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SHIPMENT_BOX_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -912,7 +912,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_BOX_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_BOX_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Box Type Id</b></em>' attribute.
@@ -921,7 +921,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_BOX_TYPE__SHIPMENT_BOX_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SHIPMENT_BOX_TYPE__SHIPMENT_BOX_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Box Height</b></em>' attribute.
@@ -930,7 +930,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_BOX_TYPE__BOX_HEIGHT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SHIPMENT_BOX_TYPE__BOX_HEIGHT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Box Length</b></em>' attribute.
@@ -939,7 +939,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_BOX_TYPE__BOX_LENGTH = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SHIPMENT_BOX_TYPE__BOX_LENGTH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Box Weight</b></em>' attribute.
@@ -948,7 +948,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_BOX_TYPE__BOX_WEIGHT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SHIPMENT_BOX_TYPE__BOX_WEIGHT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Box Width</b></em>' attribute.
@@ -957,7 +957,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_BOX_TYPE__BOX_WIDTH = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SHIPMENT_BOX_TYPE__BOX_WIDTH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Carrier Shipment Box Types</b></em>' reference list.
@@ -966,7 +966,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_BOX_TYPE__CARRIER_SHIPMENT_BOX_TYPES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int SHIPMENT_BOX_TYPE__CARRIER_SHIPMENT_BOX_TYPES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -975,7 +975,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_BOX_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int SHIPMENT_BOX_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Dimension Uom Id</b></em>' reference.
@@ -984,7 +984,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_BOX_TYPE__DIMENSION_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int SHIPMENT_BOX_TYPE__DIMENSION_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Weight Uom Id</b></em>' reference.
@@ -993,7 +993,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_BOX_TYPE__WEIGHT_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int SHIPMENT_BOX_TYPE__WEIGHT_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Box Type</em>' class.
@@ -1002,7 +1002,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_BOX_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int SHIPMENT_BOX_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentContactMechImpl <em>Shipment Contact Mech</em>}' class.
@@ -1021,7 +1021,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_CONTACT_MECH__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SHIPMENT_CONTACT_MECH__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1030,7 +1030,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_CONTACT_MECH__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SHIPMENT_CONTACT_MECH__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1039,7 +1039,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_CONTACT_MECH__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SHIPMENT_CONTACT_MECH__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1048,7 +1048,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_CONTACT_MECH__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_CONTACT_MECH__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Id</b></em>' reference.
@@ -1057,7 +1057,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_CONTACT_MECH__SHIPMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SHIPMENT_CONTACT_MECH__SHIPMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Contact Mech Type Id</b></em>' reference.
@@ -1066,7 +1066,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_CONTACT_MECH__SHIPMENT_CONTACT_MECH_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SHIPMENT_CONTACT_MECH__SHIPMENT_CONTACT_MECH_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Contact Mech Id</b></em>' reference.
@@ -1075,7 +1075,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_CONTACT_MECH__CONTACT_MECH_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SHIPMENT_CONTACT_MECH__CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Contact Mech</em>' class.
@@ -1084,7 +1084,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_CONTACT_MECH_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SHIPMENT_CONTACT_MECH_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentContactMechTypeImpl <em>Shipment Contact Mech Type</em>}' class.
@@ -1103,7 +1103,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_CONTACT_MECH_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SHIPMENT_CONTACT_MECH_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1112,7 +1112,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_CONTACT_MECH_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SHIPMENT_CONTACT_MECH_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1121,7 +1121,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_CONTACT_MECH_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SHIPMENT_CONTACT_MECH_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1130,7 +1130,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_CONTACT_MECH_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_CONTACT_MECH_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Contact Mech Type Id</b></em>' attribute.
@@ -1139,7 +1139,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_CONTACT_MECH_TYPE__SHIPMENT_CONTACT_MECH_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SHIPMENT_CONTACT_MECH_TYPE__SHIPMENT_CONTACT_MECH_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1148,7 +1148,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_CONTACT_MECH_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SHIPMENT_CONTACT_MECH_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Contact Mech Type</em>' class.
@@ -1157,7 +1157,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_CONTACT_MECH_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SHIPMENT_CONTACT_MECH_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentCostEstimateImpl <em>Shipment Cost Estimate</em>}' class.
@@ -1176,7 +1176,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SHIPMENT_COST_ESTIMATE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1185,7 +1185,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SHIPMENT_COST_ESTIMATE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1194,7 +1194,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SHIPMENT_COST_ESTIMATE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1203,7 +1203,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_COST_ESTIMATE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Cost Estimate Id</b></em>' attribute.
@@ -1212,7 +1212,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__SHIPMENT_COST_ESTIMATE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SHIPMENT_COST_ESTIMATE__SHIPMENT_COST_ESTIMATE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Carrier Party Id</b></em>' attribute.
@@ -1221,7 +1221,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__CARRIER_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SHIPMENT_COST_ESTIMATE__CARRIER_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Carrier Role Type Id</b></em>' attribute.
@@ -1230,7 +1230,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__CARRIER_ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SHIPMENT_COST_ESTIMATE__CARRIER_ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Feature Percent</b></em>' attribute.
@@ -1239,7 +1239,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__FEATURE_PERCENT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SHIPMENT_COST_ESTIMATE__FEATURE_PERCENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Feature Price</b></em>' attribute.
@@ -1248,7 +1248,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__FEATURE_PRICE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SHIPMENT_COST_ESTIMATE__FEATURE_PRICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Geo Id From</b></em>' reference.
@@ -1257,7 +1257,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__GEO_ID_FROM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int SHIPMENT_COST_ESTIMATE__GEO_ID_FROM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Geo Id To</b></em>' reference.
@@ -1266,7 +1266,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__GEO_ID_TO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int SHIPMENT_COST_ESTIMATE__GEO_ID_TO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Order Flat Price</b></em>' attribute.
@@ -1275,7 +1275,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__ORDER_FLAT_PRICE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int SHIPMENT_COST_ESTIMATE__ORDER_FLAT_PRICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Flat Price</b></em>' attribute.
@@ -1284,7 +1284,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__ORDER_ITEM_FLAT_PRICE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int SHIPMENT_COST_ESTIMATE__ORDER_ITEM_FLAT_PRICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Order Price Percent</b></em>' attribute.
@@ -1293,7 +1293,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__ORDER_PRICE_PERCENT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int SHIPMENT_COST_ESTIMATE__ORDER_PRICE_PERCENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Oversize Price</b></em>' attribute.
@@ -1302,7 +1302,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__OVERSIZE_PRICE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int SHIPMENT_COST_ESTIMATE__OVERSIZE_PRICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Oversize Unit</b></em>' attribute.
@@ -1311,7 +1311,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__OVERSIZE_UNIT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int SHIPMENT_COST_ESTIMATE__OVERSIZE_UNIT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -1320,7 +1320,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int SHIPMENT_COST_ESTIMATE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Price Break Id</b></em>' reference.
@@ -1329,7 +1329,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__PRICE_BREAK_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int SHIPMENT_COST_ESTIMATE__PRICE_BREAK_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Price Unit Price</b></em>' attribute.
@@ -1338,7 +1338,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__PRICE_UNIT_PRICE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int SHIPMENT_COST_ESTIMATE__PRICE_UNIT_PRICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Price Uom Id</b></em>' reference.
@@ -1347,7 +1347,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__PRICE_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int SHIPMENT_COST_ESTIMATE__PRICE_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Product Feature Group Id</b></em>' attribute.
@@ -1356,7 +1356,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__PRODUCT_FEATURE_GROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int SHIPMENT_COST_ESTIMATE__PRODUCT_FEATURE_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Id</b></em>' attribute.
@@ -1365,7 +1365,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__PRODUCT_STORE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 17;
+	int SHIPMENT_COST_ESTIMATE__PRODUCT_STORE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Ship Meth Id</b></em>' reference.
@@ -1374,7 +1374,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__PRODUCT_STORE_SHIP_METH_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 18;
+	int SHIPMENT_COST_ESTIMATE__PRODUCT_STORE_SHIP_METH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Quantity Break Id</b></em>' reference.
@@ -1383,7 +1383,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__QUANTITY_BREAK_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 19;
+	int SHIPMENT_COST_ESTIMATE__QUANTITY_BREAK_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Quantity Unit Price</b></em>' attribute.
@@ -1392,7 +1392,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__QUANTITY_UNIT_PRICE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 20;
+	int SHIPMENT_COST_ESTIMATE__QUANTITY_UNIT_PRICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Quantity Uom Id</b></em>' reference.
@@ -1401,7 +1401,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__QUANTITY_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 21;
+	int SHIPMENT_COST_ESTIMATE__QUANTITY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -1410,7 +1410,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 22;
+	int SHIPMENT_COST_ESTIMATE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Method Type Id</b></em>' attribute.
@@ -1419,7 +1419,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__SHIPMENT_METHOD_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 23;
+	int SHIPMENT_COST_ESTIMATE__SHIPMENT_METHOD_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Shipping Price Percent</b></em>' attribute.
@@ -1428,7 +1428,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__SHIPPING_PRICE_PERCENT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 24;
+	int SHIPMENT_COST_ESTIMATE__SHIPPING_PRICE_PERCENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Weight Break Id</b></em>' reference.
@@ -1437,7 +1437,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__WEIGHT_BREAK_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 25;
+	int SHIPMENT_COST_ESTIMATE__WEIGHT_BREAK_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Weight Unit Price</b></em>' attribute.
@@ -1446,7 +1446,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__WEIGHT_UNIT_PRICE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 26;
+	int SHIPMENT_COST_ESTIMATE__WEIGHT_UNIT_PRICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Weight Uom Id</b></em>' reference.
@@ -1455,7 +1455,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE__WEIGHT_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 27;
+	int SHIPMENT_COST_ESTIMATE__WEIGHT_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 31;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Cost Estimate</em>' class.
@@ -1464,7 +1464,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_COST_ESTIMATE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 28;
+	int SHIPMENT_COST_ESTIMATE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 32;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentGatewayConfigImpl <em>Shipment Gateway Config</em>}' class.
@@ -1483,7 +1483,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_GATEWAY_CONFIG__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int SHIPMENT_GATEWAY_CONFIG__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1492,7 +1492,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_GATEWAY_CONFIG__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int SHIPMENT_GATEWAY_CONFIG__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1501,7 +1501,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_GATEWAY_CONFIG__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int SHIPMENT_GATEWAY_CONFIG__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1510,7 +1510,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_GATEWAY_CONFIG__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_GATEWAY_CONFIG__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Gateway Config Id</b></em>' attribute.
@@ -1519,7 +1519,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_GATEWAY_CONFIG__SHIPMENT_GATEWAY_CONFIG_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int SHIPMENT_GATEWAY_CONFIG__SHIPMENT_GATEWAY_CONFIG_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1528,7 +1528,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_GATEWAY_CONFIG__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int SHIPMENT_GATEWAY_CONFIG__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Gateway Conf Type Id</b></em>' reference.
@@ -1537,7 +1537,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_GATEWAY_CONFIG__SHIPMENT_GATEWAY_CONF_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int SHIPMENT_GATEWAY_CONFIG__SHIPMENT_GATEWAY_CONF_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Gateway Config</em>' class.
@@ -1546,7 +1546,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_GATEWAY_CONFIG_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int SHIPMENT_GATEWAY_CONFIG_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentGatewayConfigTypeImpl <em>Shipment Gateway Config Type</em>}' class.
@@ -1565,7 +1565,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_GATEWAY_CONFIG_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int SHIPMENT_GATEWAY_CONFIG_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1574,7 +1574,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_GATEWAY_CONFIG_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int SHIPMENT_GATEWAY_CONFIG_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1583,7 +1583,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_GATEWAY_CONFIG_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int SHIPMENT_GATEWAY_CONFIG_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1592,7 +1592,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_GATEWAY_CONFIG_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int SHIPMENT_GATEWAY_CONFIG_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1601,7 +1601,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_GATEWAY_CONFIG_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_GATEWAY_CONFIG_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Gateway Conf Type Id</b></em>' attribute.
@@ -1610,7 +1610,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_GATEWAY_CONFIG_TYPE__SHIPMENT_GATEWAY_CONF_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int SHIPMENT_GATEWAY_CONFIG_TYPE__SHIPMENT_GATEWAY_CONF_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1619,7 +1619,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_GATEWAY_CONFIG_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int SHIPMENT_GATEWAY_CONFIG_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -1628,7 +1628,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_GATEWAY_CONFIG_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int SHIPMENT_GATEWAY_CONFIG_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -1637,7 +1637,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_GATEWAY_CONFIG_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int SHIPMENT_GATEWAY_CONFIG_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Gateway Config Type</em>' class.
@@ -1646,7 +1646,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_GATEWAY_CONFIG_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int SHIPMENT_GATEWAY_CONFIG_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentGatewayDhlImpl <em>Shipment Gateway Dhl</em>}' class.
@@ -2443,7 +2443,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SHIPMENT_ITEM__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2452,7 +2452,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SHIPMENT_ITEM__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2461,7 +2461,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SHIPMENT_ITEM__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2470,7 +2470,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_ITEM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Id</b></em>' reference.
@@ -2479,7 +2479,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM__SHIPMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SHIPMENT_ITEM__SHIPMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Item Seq Id</b></em>' attribute.
@@ -2488,7 +2488,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM__SHIPMENT_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SHIPMENT_ITEM__SHIPMENT_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -2497,7 +2497,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM__PRODUCT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SHIPMENT_ITEM__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -2506,7 +2506,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM__QUANTITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SHIPMENT_ITEM__QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Content Description</b></em>' attribute.
@@ -2515,7 +2515,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM__SHIPMENT_CONTENT_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SHIPMENT_ITEM__SHIPMENT_CONTENT_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Item</em>' class.
@@ -2524,7 +2524,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int SHIPMENT_ITEM_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentItemBillingImpl <em>Shipment Item Billing</em>}' class.
@@ -2543,7 +2543,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM_BILLING__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SHIPMENT_ITEM_BILLING__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2552,7 +2552,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM_BILLING__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SHIPMENT_ITEM_BILLING__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2561,7 +2561,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM_BILLING__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SHIPMENT_ITEM_BILLING__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2570,7 +2570,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM_BILLING__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_ITEM_BILLING__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Id</b></em>' reference.
@@ -2579,7 +2579,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM_BILLING__SHIPMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SHIPMENT_ITEM_BILLING__SHIPMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id</b></em>' reference.
@@ -2588,7 +2588,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM_BILLING__INVOICE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SHIPMENT_ITEM_BILLING__INVOICE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Seq Id</b></em>' attribute.
@@ -2597,7 +2597,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM_BILLING__INVOICE_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SHIPMENT_ITEM_BILLING__INVOICE_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Item Seq Id</b></em>' attribute.
@@ -2606,7 +2606,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM_BILLING__SHIPMENT_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SHIPMENT_ITEM_BILLING__SHIPMENT_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Item Billing</em>' class.
@@ -2615,7 +2615,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM_BILLING_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SHIPMENT_ITEM_BILLING_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentItemFeatureImpl <em>Shipment Item Feature</em>}' class.
@@ -2634,7 +2634,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM_FEATURE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SHIPMENT_ITEM_FEATURE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2643,7 +2643,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM_FEATURE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SHIPMENT_ITEM_FEATURE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2652,7 +2652,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM_FEATURE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SHIPMENT_ITEM_FEATURE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2661,7 +2661,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM_FEATURE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_ITEM_FEATURE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Id</b></em>' reference.
@@ -2670,7 +2670,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM_FEATURE__SHIPMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SHIPMENT_ITEM_FEATURE__SHIPMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Product Feature Id</b></em>' reference.
@@ -2679,7 +2679,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM_FEATURE__PRODUCT_FEATURE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SHIPMENT_ITEM_FEATURE__PRODUCT_FEATURE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Item Seq Id</b></em>' attribute.
@@ -2688,7 +2688,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM_FEATURE__SHIPMENT_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SHIPMENT_ITEM_FEATURE__SHIPMENT_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Item Feature</em>' class.
@@ -2697,7 +2697,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ITEM_FEATURE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SHIPMENT_ITEM_FEATURE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentMethodTypeImpl <em>Shipment Method Type</em>}' class.
@@ -2716,7 +2716,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_METHOD_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SHIPMENT_METHOD_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2725,7 +2725,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_METHOD_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SHIPMENT_METHOD_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2734,7 +2734,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_METHOD_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SHIPMENT_METHOD_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2743,7 +2743,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_METHOD_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_METHOD_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Method Type Id</b></em>' attribute.
@@ -2752,7 +2752,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_METHOD_TYPE__SHIPMENT_METHOD_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SHIPMENT_METHOD_TYPE__SHIPMENT_METHOD_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -2761,7 +2761,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_METHOD_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SHIPMENT_METHOD_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -2770,7 +2770,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_METHOD_TYPE__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SHIPMENT_METHOD_TYPE__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Method Type</em>' class.
@@ -2779,7 +2779,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_METHOD_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SHIPMENT_METHOD_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageImpl <em>Shipment Package</em>}' class.
@@ -2798,7 +2798,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SHIPMENT_PACKAGE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2807,7 +2807,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SHIPMENT_PACKAGE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2816,7 +2816,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SHIPMENT_PACKAGE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2825,7 +2825,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_PACKAGE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Id</b></em>' reference.
@@ -2834,7 +2834,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE__SHIPMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SHIPMENT_PACKAGE__SHIPMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Package Seq Id</b></em>' attribute.
@@ -2843,7 +2843,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE__SHIPMENT_PACKAGE_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SHIPMENT_PACKAGE__SHIPMENT_PACKAGE_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Box Height</b></em>' attribute.
@@ -2852,7 +2852,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE__BOX_HEIGHT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SHIPMENT_PACKAGE__BOX_HEIGHT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Box Length</b></em>' attribute.
@@ -2861,7 +2861,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE__BOX_LENGTH = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SHIPMENT_PACKAGE__BOX_LENGTH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Box Width</b></em>' attribute.
@@ -2870,7 +2870,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE__BOX_WIDTH = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SHIPMENT_PACKAGE__BOX_WIDTH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Date Created</b></em>' attribute.
@@ -2879,7 +2879,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE__DATE_CREATED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int SHIPMENT_PACKAGE__DATE_CREATED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Dimension Uom Id</b></em>' reference.
@@ -2888,7 +2888,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE__DIMENSION_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int SHIPMENT_PACKAGE__DIMENSION_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Insured Value</b></em>' attribute.
@@ -2897,7 +2897,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE__INSURED_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int SHIPMENT_PACKAGE__INSURED_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Box Type Id</b></em>' reference.
@@ -2906,7 +2906,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE__SHIPMENT_BOX_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int SHIPMENT_PACKAGE__SHIPMENT_BOX_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Weight</b></em>' attribute.
@@ -2915,7 +2915,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE__WEIGHT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int SHIPMENT_PACKAGE__WEIGHT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Weight Uom Id</b></em>' reference.
@@ -2924,7 +2924,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE__WEIGHT_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int SHIPMENT_PACKAGE__WEIGHT_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Package</em>' class.
@@ -2933,7 +2933,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int SHIPMENT_PACKAGE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageContentImpl <em>Shipment Package Content</em>}' class.
@@ -2952,7 +2952,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_CONTENT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SHIPMENT_PACKAGE_CONTENT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2961,7 +2961,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_CONTENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SHIPMENT_PACKAGE_CONTENT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2970,7 +2970,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_CONTENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SHIPMENT_PACKAGE_CONTENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2979,7 +2979,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_CONTENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_PACKAGE_CONTENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Id</b></em>' reference.
@@ -2988,7 +2988,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_CONTENT__SHIPMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SHIPMENT_PACKAGE_CONTENT__SHIPMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Item Seq Id</b></em>' attribute.
@@ -2997,7 +2997,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_CONTENT__SHIPMENT_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SHIPMENT_PACKAGE_CONTENT__SHIPMENT_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Package Seq Id</b></em>' attribute.
@@ -3006,7 +3006,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_CONTENT__SHIPMENT_PACKAGE_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SHIPMENT_PACKAGE_CONTENT__SHIPMENT_PACKAGE_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -3015,7 +3015,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_CONTENT__QUANTITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SHIPMENT_PACKAGE_CONTENT__QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Sub Product Id</b></em>' reference.
@@ -3024,7 +3024,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_CONTENT__SUB_PRODUCT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SHIPMENT_PACKAGE_CONTENT__SUB_PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Sub Product Quantity</b></em>' attribute.
@@ -3033,7 +3033,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_CONTENT__SUB_PRODUCT_QUANTITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int SHIPMENT_PACKAGE_CONTENT__SUB_PRODUCT_QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Package Content</em>' class.
@@ -3042,7 +3042,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_CONTENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int SHIPMENT_PACKAGE_CONTENT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentPackageRouteSegImpl <em>Shipment Package Route Seg</em>}' class.
@@ -3061,7 +3061,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SHIPMENT_PACKAGE_ROUTE_SEG__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3070,7 +3070,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SHIPMENT_PACKAGE_ROUTE_SEG__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3079,7 +3079,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SHIPMENT_PACKAGE_ROUTE_SEG__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3088,7 +3088,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_PACKAGE_ROUTE_SEG__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Id</b></em>' reference.
@@ -3097,7 +3097,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG__SHIPMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SHIPMENT_PACKAGE_ROUTE_SEG__SHIPMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Package Seq Id</b></em>' attribute.
@@ -3106,7 +3106,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG__SHIPMENT_PACKAGE_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SHIPMENT_PACKAGE_ROUTE_SEG__SHIPMENT_PACKAGE_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Route Segment Id</b></em>' attribute.
@@ -3115,7 +3115,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG__SHIPMENT_ROUTE_SEGMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SHIPMENT_PACKAGE_ROUTE_SEG__SHIPMENT_ROUTE_SEGMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Box Number</b></em>' attribute.
@@ -3124,7 +3124,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG__BOX_NUMBER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SHIPMENT_PACKAGE_ROUTE_SEG__BOX_NUMBER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Cod Amount</b></em>' attribute.
@@ -3133,7 +3133,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG__COD_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SHIPMENT_PACKAGE_ROUTE_SEG__COD_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
@@ -3142,7 +3142,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG__CURRENCY_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int SHIPMENT_PACKAGE_ROUTE_SEG__CURRENCY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Insured Amount</b></em>' attribute.
@@ -3151,7 +3151,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG__INSURED_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int SHIPMENT_PACKAGE_ROUTE_SEG__INSURED_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>International Invoice</b></em>' attribute.
@@ -3160,7 +3160,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG__INTERNATIONAL_INVOICE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int SHIPMENT_PACKAGE_ROUTE_SEG__INTERNATIONAL_INVOICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Label Html</b></em>' attribute.
@@ -3169,7 +3169,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG__LABEL_HTML = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int SHIPMENT_PACKAGE_ROUTE_SEG__LABEL_HTML = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Label Image</b></em>' attribute.
@@ -3178,7 +3178,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG__LABEL_IMAGE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int SHIPMENT_PACKAGE_ROUTE_SEG__LABEL_IMAGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Label Intl Sign Image</b></em>' attribute.
@@ -3187,7 +3187,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG__LABEL_INTL_SIGN_IMAGE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int SHIPMENT_PACKAGE_ROUTE_SEG__LABEL_INTL_SIGN_IMAGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Label Printed</b></em>' attribute.
@@ -3196,7 +3196,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG__LABEL_PRINTED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int SHIPMENT_PACKAGE_ROUTE_SEG__LABEL_PRINTED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Package Other Cost</b></em>' attribute.
@@ -3205,7 +3205,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG__PACKAGE_OTHER_COST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int SHIPMENT_PACKAGE_ROUTE_SEG__PACKAGE_OTHER_COST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Package Service Cost</b></em>' attribute.
@@ -3214,7 +3214,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG__PACKAGE_SERVICE_COST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int SHIPMENT_PACKAGE_ROUTE_SEG__PACKAGE_SERVICE_COST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Package Transport Cost</b></em>' attribute.
@@ -3223,7 +3223,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG__PACKAGE_TRANSPORT_COST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int SHIPMENT_PACKAGE_ROUTE_SEG__PACKAGE_TRANSPORT_COST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Tracking Code</b></em>' attribute.
@@ -3232,7 +3232,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG__TRACKING_CODE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int SHIPMENT_PACKAGE_ROUTE_SEG__TRACKING_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Package Route Seg</em>' class.
@@ -3241,7 +3241,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_PACKAGE_ROUTE_SEG_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int SHIPMENT_PACKAGE_ROUTE_SEG_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentRouteSegmentImpl <em>Shipment Route Segment</em>}' class.
@@ -3260,7 +3260,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SHIPMENT_ROUTE_SEGMENT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3269,7 +3269,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SHIPMENT_ROUTE_SEGMENT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3278,7 +3278,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SHIPMENT_ROUTE_SEGMENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3287,7 +3287,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_ROUTE_SEGMENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Id</b></em>' reference.
@@ -3296,7 +3296,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__SHIPMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SHIPMENT_ROUTE_SEGMENT__SHIPMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Route Segment Id</b></em>' attribute.
@@ -3305,7 +3305,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__SHIPMENT_ROUTE_SEGMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SHIPMENT_ROUTE_SEGMENT__SHIPMENT_ROUTE_SEGMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Actual Arrival Date</b></em>' attribute.
@@ -3314,7 +3314,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__ACTUAL_ARRIVAL_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SHIPMENT_ROUTE_SEGMENT__ACTUAL_ARRIVAL_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Actual Cost</b></em>' attribute.
@@ -3323,7 +3323,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__ACTUAL_COST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SHIPMENT_ROUTE_SEGMENT__ACTUAL_COST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Actual Other Cost</b></em>' attribute.
@@ -3332,7 +3332,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__ACTUAL_OTHER_COST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SHIPMENT_ROUTE_SEGMENT__ACTUAL_OTHER_COST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Actual Service Cost</b></em>' attribute.
@@ -3341,7 +3341,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__ACTUAL_SERVICE_COST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int SHIPMENT_ROUTE_SEGMENT__ACTUAL_SERVICE_COST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Actual Start Date</b></em>' attribute.
@@ -3350,7 +3350,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__ACTUAL_START_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int SHIPMENT_ROUTE_SEGMENT__ACTUAL_START_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Actual Transport Cost</b></em>' attribute.
@@ -3359,7 +3359,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__ACTUAL_TRANSPORT_COST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int SHIPMENT_ROUTE_SEGMENT__ACTUAL_TRANSPORT_COST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Billing Weight</b></em>' attribute.
@@ -3368,7 +3368,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__BILLING_WEIGHT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int SHIPMENT_ROUTE_SEGMENT__BILLING_WEIGHT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Billing Weight Uom Id</b></em>' reference.
@@ -3377,7 +3377,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__BILLING_WEIGHT_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int SHIPMENT_ROUTE_SEGMENT__BILLING_WEIGHT_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Carrier Delivery Zone</b></em>' attribute.
@@ -3386,7 +3386,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__CARRIER_DELIVERY_ZONE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int SHIPMENT_ROUTE_SEGMENT__CARRIER_DELIVERY_ZONE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Carrier Party Id</b></em>' reference.
@@ -3395,7 +3395,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__CARRIER_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int SHIPMENT_ROUTE_SEGMENT__CARRIER_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Carrier Restriction Codes</b></em>' attribute.
@@ -3404,7 +3404,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__CARRIER_RESTRICTION_CODES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int SHIPMENT_ROUTE_SEGMENT__CARRIER_RESTRICTION_CODES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Carrier Restriction Desc</b></em>' attribute.
@@ -3413,7 +3413,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__CARRIER_RESTRICTION_DESC = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int SHIPMENT_ROUTE_SEGMENT__CARRIER_RESTRICTION_DESC = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Carrier Service Status Id</b></em>' reference.
@@ -3422,7 +3422,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__CARRIER_SERVICE_STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int SHIPMENT_ROUTE_SEGMENT__CARRIER_SERVICE_STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
@@ -3431,7 +3431,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__CURRENCY_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int SHIPMENT_ROUTE_SEGMENT__CURRENCY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Delivery Id</b></em>' reference.
@@ -3440,7 +3440,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__DELIVERY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int SHIPMENT_ROUTE_SEGMENT__DELIVERY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Dest Contact Mech Id</b></em>' reference.
@@ -3449,7 +3449,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__DEST_CONTACT_MECH_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 17;
+	int SHIPMENT_ROUTE_SEGMENT__DEST_CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Dest Facility Id</b></em>' reference.
@@ -3458,7 +3458,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__DEST_FACILITY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 18;
+	int SHIPMENT_ROUTE_SEGMENT__DEST_FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Dest Telecom Number Id</b></em>' reference.
@@ -3467,7 +3467,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__DEST_TELECOM_NUMBER_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 19;
+	int SHIPMENT_ROUTE_SEGMENT__DEST_TELECOM_NUMBER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Arrival Date</b></em>' attribute.
@@ -3476,7 +3476,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__ESTIMATED_ARRIVAL_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 20;
+	int SHIPMENT_ROUTE_SEGMENT__ESTIMATED_ARRIVAL_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Start Date</b></em>' attribute.
@@ -3485,7 +3485,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__ESTIMATED_START_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 21;
+	int SHIPMENT_ROUTE_SEGMENT__ESTIMATED_START_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Home Delivery Date</b></em>' attribute.
@@ -3494,7 +3494,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__HOME_DELIVERY_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 22;
+	int SHIPMENT_ROUTE_SEGMENT__HOME_DELIVERY_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Home Delivery Type</b></em>' attribute.
@@ -3503,7 +3503,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__HOME_DELIVERY_TYPE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 23;
+	int SHIPMENT_ROUTE_SEGMENT__HOME_DELIVERY_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Date</b></em>' attribute.
@@ -3512,7 +3512,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__LAST_UPDATED_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 24;
+	int SHIPMENT_ROUTE_SEGMENT__LAST_UPDATED_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Origin Contact Mech Id</b></em>' reference.
@@ -3521,7 +3521,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__ORIGIN_CONTACT_MECH_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 25;
+	int SHIPMENT_ROUTE_SEGMENT__ORIGIN_CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Origin Facility Id</b></em>' reference.
@@ -3530,7 +3530,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__ORIGIN_FACILITY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 26;
+	int SHIPMENT_ROUTE_SEGMENT__ORIGIN_FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Origin Telecom Number Id</b></em>' reference.
@@ -3539,7 +3539,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__ORIGIN_TELECOM_NUMBER_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 27;
+	int SHIPMENT_ROUTE_SEGMENT__ORIGIN_TELECOM_NUMBER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Method Type Id</b></em>' reference.
@@ -3548,7 +3548,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__SHIPMENT_METHOD_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 28;
+	int SHIPMENT_ROUTE_SEGMENT__SHIPMENT_METHOD_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 32;
 
 	/**
 	 * The feature id for the '<em><b>Third Party Account Number</b></em>' attribute.
@@ -3557,7 +3557,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__THIRD_PARTY_ACCOUNT_NUMBER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 29;
+	int SHIPMENT_ROUTE_SEGMENT__THIRD_PARTY_ACCOUNT_NUMBER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 33;
 
 	/**
 	 * The feature id for the '<em><b>Third Party Country Geo Code</b></em>' attribute.
@@ -3566,7 +3566,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__THIRD_PARTY_COUNTRY_GEO_CODE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 30;
+	int SHIPMENT_ROUTE_SEGMENT__THIRD_PARTY_COUNTRY_GEO_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 34;
 
 	/**
 	 * The feature id for the '<em><b>Third Party Postal Code</b></em>' attribute.
@@ -3575,7 +3575,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__THIRD_PARTY_POSTAL_CODE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 31;
+	int SHIPMENT_ROUTE_SEGMENT__THIRD_PARTY_POSTAL_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 35;
 
 	/**
 	 * The feature id for the '<em><b>Tracking Digest</b></em>' attribute.
@@ -3584,7 +3584,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__TRACKING_DIGEST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 32;
+	int SHIPMENT_ROUTE_SEGMENT__TRACKING_DIGEST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 36;
 
 	/**
 	 * The feature id for the '<em><b>Tracking Id Number</b></em>' attribute.
@@ -3593,7 +3593,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__TRACKING_ID_NUMBER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 33;
+	int SHIPMENT_ROUTE_SEGMENT__TRACKING_ID_NUMBER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 37;
 
 	/**
 	 * The feature id for the '<em><b>Updated By User Login Id</b></em>' attribute.
@@ -3602,7 +3602,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__UPDATED_BY_USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 34;
+	int SHIPMENT_ROUTE_SEGMENT__UPDATED_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 38;
 
 	/**
 	 * The feature id for the '<em><b>Ups High Value Report</b></em>' attribute.
@@ -3611,7 +3611,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT__UPS_HIGH_VALUE_REPORT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 35;
+	int SHIPMENT_ROUTE_SEGMENT__UPS_HIGH_VALUE_REPORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 39;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Route Segment</em>' class.
@@ -3620,7 +3620,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_ROUTE_SEGMENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 36;
+	int SHIPMENT_ROUTE_SEGMENT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 40;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentStatusImpl <em>Shipment Status</em>}' class.
@@ -3639,7 +3639,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_STATUS__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SHIPMENT_STATUS__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3648,7 +3648,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_STATUS__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SHIPMENT_STATUS__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3657,7 +3657,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_STATUS__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SHIPMENT_STATUS__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3666,7 +3666,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_STATUS__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_STATUS__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -3675,7 +3675,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_STATUS__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SHIPMENT_STATUS__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Id</b></em>' reference.
@@ -3684,7 +3684,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_STATUS__SHIPMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SHIPMENT_STATUS__SHIPMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Change By User Login Id</b></em>' reference.
@@ -3693,7 +3693,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_STATUS__CHANGE_BY_USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SHIPMENT_STATUS__CHANGE_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Status Date</b></em>' attribute.
@@ -3702,7 +3702,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_STATUS__STATUS_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SHIPMENT_STATUS__STATUS_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Status</em>' class.
@@ -3711,7 +3711,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_STATUS_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SHIPMENT_STATUS_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTimeEstimateImpl <em>Shipment Time Estimate</em>}' class.
@@ -3730,7 +3730,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TIME_ESTIMATE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SHIPMENT_TIME_ESTIMATE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3739,7 +3739,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TIME_ESTIMATE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SHIPMENT_TIME_ESTIMATE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3748,7 +3748,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TIME_ESTIMATE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SHIPMENT_TIME_ESTIMATE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3757,7 +3757,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TIME_ESTIMATE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_TIME_ESTIMATE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Geo Id To</b></em>' reference.
@@ -3766,7 +3766,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TIME_ESTIMATE__GEO_ID_TO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SHIPMENT_TIME_ESTIMATE__GEO_ID_TO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Geo Id From</b></em>' reference.
@@ -3775,7 +3775,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TIME_ESTIMATE__GEO_ID_FROM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SHIPMENT_TIME_ESTIMATE__GEO_ID_FROM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -3784,7 +3784,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TIME_ESTIMATE__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SHIPMENT_TIME_ESTIMATE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
@@ -3793,7 +3793,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TIME_ESTIMATE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SHIPMENT_TIME_ESTIMATE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' attribute.
@@ -3802,7 +3802,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TIME_ESTIMATE__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SHIPMENT_TIME_ESTIMATE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Method Type Id</b></em>' attribute.
@@ -3811,7 +3811,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TIME_ESTIMATE__SHIPMENT_METHOD_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int SHIPMENT_TIME_ESTIMATE__SHIPMENT_METHOD_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Lead Time</b></em>' attribute.
@@ -3820,7 +3820,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TIME_ESTIMATE__LEAD_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int SHIPMENT_TIME_ESTIMATE__LEAD_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Lead Time Uom Id</b></em>' reference.
@@ -3829,7 +3829,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TIME_ESTIMATE__LEAD_TIME_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int SHIPMENT_TIME_ESTIMATE__LEAD_TIME_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Number</b></em>' attribute.
@@ -3838,7 +3838,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TIME_ESTIMATE__SEQUENCE_NUMBER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int SHIPMENT_TIME_ESTIMATE__SEQUENCE_NUMBER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -3847,7 +3847,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TIME_ESTIMATE__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int SHIPMENT_TIME_ESTIMATE__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Time Estimate</em>' class.
@@ -3856,7 +3856,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TIME_ESTIMATE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int SHIPMENT_TIME_ESTIMATE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTypeImpl <em>Shipment Type</em>}' class.
@@ -3875,7 +3875,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int SHIPMENT_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -3884,7 +3884,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int SHIPMENT_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3893,7 +3893,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int SHIPMENT_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -3902,7 +3902,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int SHIPMENT_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -3911,7 +3911,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Type Id</b></em>' attribute.
@@ -3920,7 +3920,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TYPE__SHIPMENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int SHIPMENT_TYPE__SHIPMENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -3929,7 +3929,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int SHIPMENT_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -3938,7 +3938,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int SHIPMENT_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -3947,7 +3947,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int SHIPMENT_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Type Attrs</b></em>' reference list.
@@ -3956,7 +3956,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TYPE__SHIPMENT_TYPE_ATTRS = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int SHIPMENT_TYPE__SHIPMENT_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Type</em>' class.
@@ -3965,7 +3965,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 5;
+	int SHIPMENT_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShipmentTypeAttrImpl <em>Shipment Type Attr</em>}' class.
@@ -3984,7 +3984,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TYPE_ATTR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SHIPMENT_TYPE_ATTR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -3993,7 +3993,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TYPE_ATTR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SHIPMENT_TYPE_ATTR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -4002,7 +4002,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TYPE_ATTR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SHIPMENT_TYPE_ATTR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -4011,7 +4011,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TYPE_ATTR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SHIPMENT_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Type Id</b></em>' reference.
@@ -4020,7 +4020,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TYPE_ATTR__SHIPMENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SHIPMENT_TYPE_ATTR__SHIPMENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -4029,7 +4029,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TYPE_ATTR__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SHIPMENT_TYPE_ATTR__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -4038,7 +4038,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TYPE_ATTR__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SHIPMENT_TYPE_ATTR__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Shipment Type Attr</em>' class.
@@ -4047,7 +4047,7 @@ public interface Shipment_Package extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SHIPMENT_TYPE_ATTR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SHIPMENT_TYPE_ATTR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.shipment.impl.ShippingDocumentImpl <em>Shipping Document</em>}' class.

@@ -9,7 +9,6 @@ package org.abchip.mimo.biz.model.party.party;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.accounting.payment.CreditCard;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethod;
 import org.abchip.mimo.biz.model.common.datasource.DataSource;
@@ -21,6 +20,8 @@ import org.abchip.mimo.biz.model.party.contact.PostalAddress;
 import org.abchip.mimo.biz.model.party.contact.TelecomNumber;
 import org.abchip.mimo.biz.model.product.supplier.SupplierProductFeature;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -57,7 +58,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface Party extends BizEntityTyped<PartyType> {
+public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Created By User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->

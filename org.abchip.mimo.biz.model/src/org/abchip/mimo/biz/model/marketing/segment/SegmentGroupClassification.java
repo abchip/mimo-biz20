@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.marketing.segment;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.party.PartyClassificationGroup;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.model.party.party.PartyClassificationGroup;
  * @model
  * @generated
  */
-public interface SegmentGroupClassification extends BizEntity {
+public interface SegmentGroupClassification extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Party Classification Group Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

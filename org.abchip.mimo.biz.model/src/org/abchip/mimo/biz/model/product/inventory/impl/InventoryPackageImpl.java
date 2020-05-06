@@ -2314,7 +2314,7 @@ public class InventoryPackageImpl extends EPackageImpl implements InventoryPacka
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		FacilityPackage theFacilityPackage = (FacilityPackage)EPackage.Registry.INSTANCE.getEPackage(FacilityPackage.eNS_URI);
 		UomPackage theUomPackage = (UomPackage)EPackage.Registry.INSTANCE.getEPackage(UomPackage.eNS_URI);
 		FixedassetPackage theFixedassetPackage = (FixedassetPackage)EPackage.Registry.INSTANCE.getEPackage(FixedassetPackage.eNS_URI);
@@ -2334,33 +2334,52 @@ public class InventoryPackageImpl extends EPackageImpl implements InventoryPacka
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getInventoryItemType());
 		g1.getETypeArguments().add(g2);
 		inventoryItemEClass.getEGenericSuperTypes().add(g1);
-		inventoryItemAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		inventoryItemDetailEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		inventoryItemEClass.getEGenericSuperTypes().add(g1);
+		inventoryItemAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		inventoryItemAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		inventoryItemDetailEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		inventoryItemDetailEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		g2 = createEGenericType(this.getInventoryItemLabelType());
 		g1.getETypeArguments().add(g2);
 		inventoryItemLabelEClass.getEGenericSuperTypes().add(g1);
-		inventoryItemLabelApplEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		inventoryItemLabelEClass.getEGenericSuperTypes().add(g1);
+		inventoryItemLabelApplEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		inventoryItemLabelApplEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getInventoryItemLabel());
 		g1.getETypeArguments().add(g2);
 		inventoryItemLabelTypeEClass.getEGenericSuperTypes().add(g1);
-		inventoryItemStatusEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		inventoryItemTempResEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		inventoryItemLabelTypeEClass.getEGenericSuperTypes().add(g1);
+		inventoryItemStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		inventoryItemStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		inventoryItemTempResEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		inventoryItemTempResEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getInventoryItem());
 		g1.getETypeArguments().add(g2);
 		inventoryItemTypeEClass.getEGenericSuperTypes().add(g1);
-		inventoryItemTypeAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		inventoryItemVarianceEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		inventoryTransferEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		lotEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		physicalInventoryEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		varianceReasonEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		inventoryItemTypeEClass.getEGenericSuperTypes().add(g1);
+		inventoryItemTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		inventoryItemTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		inventoryItemVarianceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		inventoryItemVarianceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		inventoryTransferEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		inventoryTransferEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		lotEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		lotEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		physicalInventoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		physicalInventoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		varianceReasonEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		varianceReasonEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(inventoryItemEClass, InventoryItem.class, "InventoryItem", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

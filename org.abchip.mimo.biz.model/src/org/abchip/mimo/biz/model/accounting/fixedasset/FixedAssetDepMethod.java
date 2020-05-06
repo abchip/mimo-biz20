@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.accounting.fixedasset;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.method.CustomMethod;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.common.method.CustomMethod;
  * @model annotation="mimo-ent-frame title='Fixed Asset Depreciation Method'"
  * @generated
  */
-public interface FixedAssetDepMethod extends BizEntity {
+public interface FixedAssetDepMethod extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Depreciation Custom Method Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.workeffort.workeffort;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +32,7 @@ import org.abchip.mimo.biz.BizEntityTyped;
  * @model annotation="mimo-ent-frame title='Work Effort Association'"
  * @generated
  */
-public interface WorkEffortAssoc extends BizEntityTyped<WorkEffortAssocType> {
+public interface WorkEffortAssoc extends EntityTyped<WorkEffortAssocType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -8,9 +8,10 @@
 package org.abchip.mimo.biz.model.shipment.picklist;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  * @model
  * @generated
  */
-public interface PicklistStatusHistory extends BizEntity {
+public interface PicklistStatusHistory extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Change Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

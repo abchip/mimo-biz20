@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.security.securitygroup;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame help='Defines views protected from data leakage' title='Security Component - Protected View'"
  * @generated
  */
-public interface ProtectedView extends BizEntity {
+public interface ProtectedView extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Group Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

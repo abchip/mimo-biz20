@@ -8,10 +8,11 @@
 package org.abchip.mimo.biz.model.product.store;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccountType;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.content.survey.Survey;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,7 +44,7 @@ import org.abchip.mimo.biz.model.content.survey.Survey;
  * @model annotation="mimo-ent-frame title='Allows financial account, such as gift certificate or calling cards, to be configured at store level' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductStoreFinActSetting extends BizEntity {
+public interface ProductStoreFinActSetting extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Account Code Length</b></em>' attribute.
 	 * <!-- begin-user-doc -->

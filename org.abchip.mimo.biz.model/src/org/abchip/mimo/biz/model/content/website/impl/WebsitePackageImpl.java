@@ -1188,7 +1188,7 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		org.abchip.mimo.biz.model.webapp.website.WebsitePackage theWebsitePackage_1 = (org.abchip.mimo.biz.model.webapp.website.WebsitePackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.model.webapp.website.WebsitePackage.eNS_URI);
 		ContentPackage theContentPackage = (ContentPackage)EPackage.Registry.INSTANCE.getEPackage(ContentPackage.eNS_URI);
 
@@ -1197,24 +1197,34 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getWebAnalyticsType());
 		g1.getETypeArguments().add(g2);
 		webAnalyticsConfigEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		webAnalyticsConfigEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getWebAnalyticsConfig());
 		g1.getETypeArguments().add(g2);
 		webAnalyticsTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		webAnalyticsTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		g2 = createEGenericType(this.getWebSiteContentType());
 		g1.getETypeArguments().add(g2);
 		webSiteContentEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		webSiteContentEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getWebSiteContent());
 		g1.getETypeArguments().add(g2);
 		webSiteContentTypeEClass.getEGenericSuperTypes().add(g1);
-		webSitePathAliasEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		webSitePublishPointEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		webSiteContentTypeEClass.getEGenericSuperTypes().add(g1);
+		webSitePathAliasEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		webSitePathAliasEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		webSitePublishPointEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		webSitePublishPointEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(webAnalyticsConfigEClass, WebAnalyticsConfig.class, "WebAnalyticsConfig", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

@@ -9,10 +9,11 @@ package org.abchip.mimo.biz.model.shipment.picklist;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,7 +39,7 @@ import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface Picklist extends BizEntity {
+public interface Picklist extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Created By User Login</b></em>' attribute.
 	 * <!-- begin-user-doc -->

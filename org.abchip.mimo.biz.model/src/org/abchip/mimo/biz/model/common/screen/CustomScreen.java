@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.common.screen;
 
-import org.abchip.mimo.biz.BizEntityTyped;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.BizEntityTyped;
  * @model annotation="mimo-ent-frame dictionary='CommonEntityLabels' formula='description'"
  * @generated
  */
-public interface CustomScreen extends BizEntityTyped<CustomScreenType> {
+public interface CustomScreen extends EntityTyped<CustomScreenType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Custom Screen Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

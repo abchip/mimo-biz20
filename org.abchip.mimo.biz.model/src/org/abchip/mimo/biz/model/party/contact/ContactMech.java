@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.party.contact;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.BizEntityTyped;
  * @model annotation="mimo-ent-frame title='Contact Mechanism'"
  * @generated
  */
-public interface ContactMech extends BizEntityTyped<ContactMechType> {
+public interface ContactMech extends EntityTyped<ContactMechType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Info String</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.content.website;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +35,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model
  * @generated
  */
-public interface WebSitePublishPoint extends BizEntity {
+public interface WebSitePublishPoint extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>About Content Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

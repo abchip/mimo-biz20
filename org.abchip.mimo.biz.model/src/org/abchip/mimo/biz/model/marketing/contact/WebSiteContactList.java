@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.marketing.contact;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.webapp.website.WebSite;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.webapp.website.WebSite;
  * @model
  * @generated
  */
-public interface WebSiteContactList extends BizEntity {
+public interface WebSiteContactList extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Contact List Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

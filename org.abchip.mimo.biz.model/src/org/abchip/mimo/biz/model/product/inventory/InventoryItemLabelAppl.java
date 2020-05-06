@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.product.inventory;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Inventory Item Label Applicability' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface InventoryItemLabelAppl extends BizEntity {
+public interface InventoryItemLabelAppl extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Sequence Num</b></em>' attribute.
 	 * <!-- begin-user-doc -->

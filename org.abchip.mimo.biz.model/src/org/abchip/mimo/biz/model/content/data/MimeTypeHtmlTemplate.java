@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.content.data;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +27,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Mime Text Template' dictionary='ContentEntityLabels'"
  * @generated
  */
-public interface MimeTypeHtmlTemplate extends BizEntity {
+public interface MimeTypeHtmlTemplate extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Mime Type Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

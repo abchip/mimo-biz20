@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.entity.synchronization;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Entity Synchronization Include'"
  * @generated
  */
-public interface EntitySyncInclude extends BizEntity {
+public interface EntitySyncInclude extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Appl Enum Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

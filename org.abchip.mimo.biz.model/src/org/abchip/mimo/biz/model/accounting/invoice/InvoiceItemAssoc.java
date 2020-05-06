@@ -10,8 +10,9 @@ package org.abchip.mimo.biz.model.accounting.invoice;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -39,7 +40,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model annotation="mimo-ent-frame title='Invoice Item Association'"
  * @generated
  */
-public interface InvoiceItemAssoc extends BizEntityTyped<InvoiceItemAssocType> {
+public interface InvoiceItemAssoc extends EntityTyped<InvoiceItemAssocType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->

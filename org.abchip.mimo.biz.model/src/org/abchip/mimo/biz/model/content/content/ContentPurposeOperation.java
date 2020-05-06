@@ -7,10 +7,11 @@
  */
 package org.abchip.mimo.biz.model.content.content;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.party.party.RoleType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.model.party.party.RoleType;
  * @model annotation="mimo-ent-frame title='Content Purpose'"
  * @generated
  */
-public interface ContentPurposeOperation extends BizEntity {
+public interface ContentPurposeOperation extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Content Operation Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

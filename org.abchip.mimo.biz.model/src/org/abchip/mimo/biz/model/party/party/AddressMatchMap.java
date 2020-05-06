@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.party.party;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Address Matching Map'"
  * @generated
  */
-public interface AddressMatchMap extends BizEntity {
+public interface AddressMatchMap extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Map Key</b></em>' attribute.
 	 * <!-- begin-user-doc -->

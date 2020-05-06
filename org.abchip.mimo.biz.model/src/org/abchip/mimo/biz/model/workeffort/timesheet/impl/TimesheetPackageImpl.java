@@ -1006,7 +1006,7 @@ public class TimesheetPackageImpl extends EPackageImpl implements TimesheetPacka
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		InvoicePackage theInvoicePackage = (InvoicePackage)EPackage.Registry.INSTANCE.getEPackage(InvoicePackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
 		RatePackage theRatePackage = (RatePackage)EPackage.Registry.INSTANCE.getEPackage(RatePackage.eNS_URI);
@@ -1019,9 +1019,12 @@ public class TimesheetPackageImpl extends EPackageImpl implements TimesheetPacka
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		timeEntryEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		timesheetEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		timesheetRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		timeEntryEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		timeEntryEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		timesheetEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		timesheetEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		timesheetRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		timesheetRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(timeEntryEClass, TimeEntry.class, "TimeEntry", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

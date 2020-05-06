@@ -10,7 +10,8 @@ package org.abchip.mimo.biz.model.accounting.ledger;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='General Ledger Account Category Member'"
  * @generated
  */
-public interface GlAccountCategoryMember extends BizEntity {
+public interface GlAccountCategoryMember extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Amount Percentage</b></em>' attribute.
 	 * <!-- begin-user-doc -->

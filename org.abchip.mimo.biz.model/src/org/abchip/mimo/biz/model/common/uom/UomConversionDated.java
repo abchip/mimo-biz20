@@ -8,9 +8,10 @@
 package org.abchip.mimo.biz.model.common.uom;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.method.CustomMethod;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,7 +37,7 @@ import org.abchip.mimo.biz.model.common.method.CustomMethod;
  * @model annotation="mimo-ent-frame title='Unit Of Measure Conversion Entity for those Units of Measure whose conversion values change over time (ie, currencies)'"
  * @generated
  */
-public interface UomConversionDated extends BizEntity {
+public interface UomConversionDated extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Conversion Factor</b></em>' attribute.
 	 * <!-- begin-user-doc -->

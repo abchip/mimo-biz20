@@ -8,9 +8,10 @@
 package org.abchip.mimo.biz.model.product.category;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +34,7 @@ import org.abchip.mimo.biz.model.party.party.RoleType;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductCategoryRole extends BizEntity {
+public interface ProductCategoryRole extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.common.uom;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +32,7 @@ import org.abchip.mimo.biz.BizEntityTyped;
  * @model annotation="mimo-ent-frame title='Unit Of Measure' dictionary='CommonEntityLabels' formula='description'"
  * @generated
  */
-public interface Uom extends BizEntityTyped<UomType> {
+public interface Uom extends EntityTyped<UomType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Abbreviation</b></em>' attribute.
 	 * <!-- begin-user-doc -->

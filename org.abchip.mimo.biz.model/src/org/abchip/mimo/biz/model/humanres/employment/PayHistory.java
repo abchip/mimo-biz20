@@ -10,8 +10,9 @@ package org.abchip.mimo.biz.model.humanres.employment;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.period.PeriodType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -40,7 +41,7 @@ import org.abchip.mimo.biz.model.common.period.PeriodType;
  * @model
  * @generated
  */
-public interface PayHistory extends BizEntity {
+public interface PayHistory extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Empl From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.workeffort.workeffort;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Work Effort Association Attribute'"
  * @generated
  */
-public interface WorkEffortAssocAttribute extends BizEntity {
+public interface WorkEffortAssocAttribute extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Attr Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

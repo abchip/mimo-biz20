@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.accounting.rate;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +27,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame dictionary='AccountingEntityLabels' formula='description'"
  * @generated
  */
-public interface RateType extends BizEntity {
+public interface RateType extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.humanres.ability;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model
  * @generated
  */
-public interface PartySkill extends BizEntityTyped<SkillType> {
+public interface PartySkill extends EntityTyped<SkillType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.common.keyword;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.model.common.enum_.Enumeration;
  * @model
  * @generated
  */
-public interface KeywordThesaurus extends BizEntity {
+public interface KeywordThesaurus extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Alternate Keyword</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.humanres.ability;
 
-import org.abchip.mimo.biz.BizEntityType;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.BizEntityType;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface TrainingClassType extends BizEntityType<PersonTraining> {
+public interface TrainingClassType extends EntityType<PersonTraining>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

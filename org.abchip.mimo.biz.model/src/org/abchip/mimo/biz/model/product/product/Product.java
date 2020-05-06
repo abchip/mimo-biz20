@@ -11,7 +11,6 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.common.uom.Uom;
@@ -23,6 +22,8 @@ import org.abchip.mimo.biz.model.product.facility.ProductFacility;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItemType;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentBoxType;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -115,7 +116,7 @@ import org.abchip.mimo.biz.model.shipment.shipment.ShipmentBoxType;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface Product extends BizEntityTyped<ProductType> {
+public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Amount Uom Type Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

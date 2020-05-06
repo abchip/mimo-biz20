@@ -10,9 +10,10 @@ package org.abchip.mimo.biz.model.accounting.fixedasset;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,7 +39,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * @model annotation="mimo-ent-frame title='Fixed Asset Product Representation'"
  * @generated
  */
-public interface FixedAssetProduct extends BizEntity {
+public interface FixedAssetProduct extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
 	 * <!-- begin-user-doc -->

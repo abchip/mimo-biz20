@@ -7,9 +7,10 @@
  */
 package org.abchip.mimo.biz.model.content.content;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.datasource.DataSource;
 import org.abchip.mimo.biz.model.content.data.MetaDataPredicate;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.content.data.MetaDataPredicate;
  * @model annotation="mimo-ent-frame title='Content Meta-Data Predicate'"
  * @generated
  */
-public interface ContentMetaData extends BizEntity {
+public interface ContentMetaData extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

@@ -10,13 +10,14 @@ package org.abchip.mimo.biz.model.shipment.shipment;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.abchip.mimo.biz.model.party.contact.TelecomNumber;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.facility.Facility;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -69,7 +70,7 @@ import org.abchip.mimo.biz.model.product.facility.Facility;
  * @model
  * @generated
  */
-public interface ShipmentRouteSegment extends BizEntity {
+public interface ShipmentRouteSegment extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Actual Arrival Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

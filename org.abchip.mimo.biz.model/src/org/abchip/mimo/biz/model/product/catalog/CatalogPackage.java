@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.catalog;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PROD_CATALOG__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PROD_CATALOG__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PROD_CATALOG__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PROD_CATALOG__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Prod Catalog Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG__PROD_CATALOG_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PROD_CATALOG__PROD_CATALOG_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Catalog Name</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG__CATALOG_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PROD_CATALOG__CATALOG_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Content Path Prefix</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG__CONTENT_PATH_PREFIX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PROD_CATALOG__CONTENT_PATH_PREFIX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Header Logo</b></em>' attribute.
@@ -141,7 +141,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG__HEADER_LOGO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PROD_CATALOG__HEADER_LOGO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Purchase Allow Perm Reqd</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG__PURCHASE_ALLOW_PERM_REQD = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PROD_CATALOG__PURCHASE_ALLOW_PERM_REQD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Style Sheet</b></em>' attribute.
@@ -159,7 +159,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG__STYLE_SHEET = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PROD_CATALOG__STYLE_SHEET = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Template Path Prefix</b></em>' attribute.
@@ -168,7 +168,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG__TEMPLATE_PATH_PREFIX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PROD_CATALOG__TEMPLATE_PATH_PREFIX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Use Quick Add</b></em>' attribute.
@@ -177,7 +177,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG__USE_QUICK_ADD = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PROD_CATALOG__USE_QUICK_ADD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>View Allow Perm Reqd</b></em>' attribute.
@@ -186,7 +186,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG__VIEW_ALLOW_PERM_REQD = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int PROD_CATALOG__VIEW_ALLOW_PERM_REQD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The number of structural features of the '<em>Prod Catalog</em>' class.
@@ -195,7 +195,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int PROD_CATALOG_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogCategoryImpl <em>Prod Catalog Category</em>}' class.
@@ -214,7 +214,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PROD_CATALOG_CATEGORY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -223,7 +223,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PROD_CATALOG_CATEGORY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -232,7 +232,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PROD_CATALOG_CATEGORY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -241,7 +241,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PROD_CATALOG_CATEGORY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Prod Catalog Id</b></em>' reference.
@@ -250,7 +250,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY__PROD_CATALOG_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PROD_CATALOG_CATEGORY__PROD_CATALOG_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
@@ -259,7 +259,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY__PRODUCT_CATEGORY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PROD_CATALOG_CATEGORY__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Prod Catalog Category Type Id</b></em>' reference.
@@ -268,7 +268,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY__PROD_CATALOG_CATEGORY_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PROD_CATALOG_CATEGORY__PROD_CATALOG_CATEGORY_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -277,7 +277,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PROD_CATALOG_CATEGORY__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -286,7 +286,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PROD_CATALOG_CATEGORY__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -295,7 +295,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PROD_CATALOG_CATEGORY__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Prod Catalog Category</em>' class.
@@ -304,7 +304,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PROD_CATALOG_CATEGORY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogCategoryTypeImpl <em>Prod Catalog Category Type</em>}' class.
@@ -323,7 +323,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PROD_CATALOG_CATEGORY_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -332,7 +332,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PROD_CATALOG_CATEGORY_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -341,7 +341,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PROD_CATALOG_CATEGORY_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -350,7 +350,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PROD_CATALOG_CATEGORY_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Prod Catalog Category Type Id</b></em>' attribute.
@@ -359,7 +359,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY_TYPE__PROD_CATALOG_CATEGORY_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PROD_CATALOG_CATEGORY_TYPE__PROD_CATALOG_CATEGORY_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -368,7 +368,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PROD_CATALOG_CATEGORY_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -377,7 +377,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PROD_CATALOG_CATEGORY_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Prod Catalog Category Type</em>' class.
@@ -386,7 +386,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_CATEGORY_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PROD_CATALOG_CATEGORY_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogInvFacilityImpl <em>Prod Catalog Inv Facility</em>}' class.
@@ -405,7 +405,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_INV_FACILITY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PROD_CATALOG_INV_FACILITY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -414,7 +414,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_INV_FACILITY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PROD_CATALOG_INV_FACILITY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -423,7 +423,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_INV_FACILITY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PROD_CATALOG_INV_FACILITY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -432,7 +432,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_INV_FACILITY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PROD_CATALOG_INV_FACILITY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Prod Catalog Id</b></em>' reference.
@@ -441,7 +441,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_INV_FACILITY__PROD_CATALOG_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PROD_CATALOG_INV_FACILITY__PROD_CATALOG_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
@@ -450,7 +450,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_INV_FACILITY__FACILITY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PROD_CATALOG_INV_FACILITY__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -459,7 +459,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_INV_FACILITY__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PROD_CATALOG_INV_FACILITY__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -468,7 +468,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_INV_FACILITY__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PROD_CATALOG_INV_FACILITY__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -477,7 +477,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_INV_FACILITY__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PROD_CATALOG_INV_FACILITY__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Prod Catalog Inv Facility</em>' class.
@@ -486,7 +486,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_INV_FACILITY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PROD_CATALOG_INV_FACILITY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogRoleImpl <em>Prod Catalog Role</em>}' class.
@@ -505,7 +505,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_ROLE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PROD_CATALOG_ROLE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -514,7 +514,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_ROLE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PROD_CATALOG_ROLE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -523,7 +523,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_ROLE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PROD_CATALOG_ROLE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -532,7 +532,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_ROLE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PROD_CATALOG_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -541,7 +541,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_ROLE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PROD_CATALOG_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -550,7 +550,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_ROLE__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PROD_CATALOG_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Prod Catalog Id</b></em>' reference.
@@ -559,7 +559,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_ROLE__PROD_CATALOG_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PROD_CATALOG_ROLE__PROD_CATALOG_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -568,7 +568,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_ROLE__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PROD_CATALOG_ROLE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -577,7 +577,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_ROLE__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PROD_CATALOG_ROLE__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -586,7 +586,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_ROLE__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PROD_CATALOG_ROLE__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Prod Catalog Role</em>' class.
@@ -595,7 +595,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_ROLE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PROD_CATALOG_ROLE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 
 	/**

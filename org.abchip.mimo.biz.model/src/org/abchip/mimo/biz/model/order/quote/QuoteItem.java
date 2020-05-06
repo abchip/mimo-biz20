@@ -10,7 +10,6 @@ package org.abchip.mimo.biz.model.order.quote;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.humanres.ability.SkillType;
 import org.abchip.mimo.biz.model.order.request.CustRequest;
@@ -18,6 +17,8 @@ import org.abchip.mimo.biz.model.product.feature.ProductFeature;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.model.workeffort.workeffort.DeliverableType;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -55,7 +56,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
  * @model
  * @generated
  */
-public interface QuoteItem extends BizEntity {
+public interface QuoteItem extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
 	 * <!-- begin-user-doc -->

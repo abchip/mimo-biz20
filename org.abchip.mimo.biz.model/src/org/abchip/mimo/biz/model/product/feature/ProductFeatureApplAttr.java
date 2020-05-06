@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.product.feature;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +32,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * @model annotation="mimo-ent-frame title='Product Feature Applicability Attribute' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductFeatureApplAttr extends BizEntity {
+public interface ProductFeatureApplAttr extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Attr Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

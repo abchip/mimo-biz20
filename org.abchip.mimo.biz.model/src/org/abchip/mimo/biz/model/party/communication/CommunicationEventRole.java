@@ -7,11 +7,12 @@
  */
 package org.abchip.mimo.biz.model.party.communication;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +34,7 @@ import org.abchip.mimo.biz.model.party.party.RoleType;
  * @model annotation="mimo-ent-frame title='Communication Event Role Entity showing all participants of the communication event.'"
  * @generated
  */
-public interface CommunicationEventRole extends BizEntity {
+public interface CommunicationEventRole extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Contact Mech Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

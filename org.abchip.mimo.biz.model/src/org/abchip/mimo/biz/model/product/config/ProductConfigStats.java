@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.product.config;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * @model annotation="mimo-ent-frame title='Product Configurations Stats' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductConfigStats extends BizEntity {
+public interface ProductConfigStats extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Config Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

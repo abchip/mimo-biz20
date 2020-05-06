@@ -1837,7 +1837,7 @@ public class PromoPackageImpl extends EPackageImpl implements PromoPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		LoginPackage theLoginPackage = (LoginPackage)EPackage.Registry.INSTANCE.getEPackage(LoginPackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
 		MethodPackage theMethodPackage = (MethodPackage)EPackage.Registry.INSTANCE.getEPackage(MethodPackage.eNS_URI);
@@ -1852,17 +1852,28 @@ public class PromoPackageImpl extends EPackageImpl implements PromoPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		productPromoEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productPromoActionEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productPromoCategoryEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productPromoCodeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productPromoCodeEmailEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productPromoCodePartyEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productPromoCondEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productPromoContentEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productPromoProductEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productPromoRuleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productPromoUseEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		productPromoEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPromoEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPromoActionEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPromoActionEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPromoCategoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPromoCategoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPromoCodeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPromoCodeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPromoCodeEmailEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPromoCodeEmailEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPromoCodePartyEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPromoCodePartyEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPromoCondEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPromoCondEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPromoContentEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPromoContentEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPromoProductEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPromoProductEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPromoRuleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPromoRuleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productPromoUseEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productPromoUseEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(productPromoEClass, ProductPromo.class, "ProductPromo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

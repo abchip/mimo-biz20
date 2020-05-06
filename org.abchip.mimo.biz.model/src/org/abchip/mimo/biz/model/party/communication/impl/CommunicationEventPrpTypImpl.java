@@ -7,11 +7,14 @@
  */
 package org.abchip.mimo.biz.model.party.communication.impl;
 
+import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.impl.BizEntityTypeImpl;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEventPrpTyp;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEventPurpose;
 import org.abchip.mimo.biz.model.party.communication.CommunicationPackage;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityPackage;
+import org.abchip.mimo.entity.impl.EntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -22,6 +25,10 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPrpTypImpl#getCreatedStamp <em>Created Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPrpTypImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPrpTypImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPrpTypImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPrpTypImpl#getCommunicationEventPrpTypId <em>Communication Event Prp Typ Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPrpTypImpl#getCommunicationEventPurposes <em>Communication Event Purposes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.communication.impl.CommunicationEventPrpTypImpl#getDescription <em>Description</em>}</li>
@@ -31,7 +38,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class CommunicationEventPrpTypImpl extends BizEntityTypeImpl<CommunicationEventPurpose> implements CommunicationEventPrpTyp {
+public class CommunicationEventPrpTypImpl extends EntityTypeImpl<CommunicationEventPurpose> implements CommunicationEventPrpTyp {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -49,6 +56,103 @@ public class CommunicationEventPrpTypImpl extends BizEntityTypeImpl<Communicatio
 	@Override
 	protected EClass eStaticClass() {
 		return CommunicationPackage.Literals.COMMUNICATION_EVENT_PRP_TYP;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 1;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return ESTATIC_FEATURE_COUNT;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedStamp(Date newCreatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, newCreatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedTxStamp(Date newCreatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, newCreatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedStamp(Date newLastUpdatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, newLastUpdatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
 	}
 
 	/**
@@ -109,6 +213,44 @@ public class CommunicationEventPrpTypImpl extends BizEntityTypeImpl<Communicatio
 	@Override
 	public void setParentTypeId(CommunicationEventPrpTyp newParentTypeId) {
 		eSet(CommunicationPackage.Literals.COMMUNICATION_EVENT_PRP_TYP__PARENT_TYPE_ID, newParentTypeId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (derivedFeatureID) {
+				case CommunicationPackage.COMMUNICATION_EVENT_PRP_TYP__CREATED_STAMP: return EntityPackage.ENTITY_INFO__CREATED_STAMP;
+				case CommunicationPackage.COMMUNICATION_EVENT_PRP_TYP__CREATED_TX_STAMP: return EntityPackage.ENTITY_INFO__CREATED_TX_STAMP;
+				case CommunicationPackage.COMMUNICATION_EVENT_PRP_TYP__LAST_UPDATED_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP;
+				case CommunicationPackage.COMMUNICATION_EVENT_PRP_TYP__LAST_UPDATED_TX_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (baseFeatureID) {
+				case EntityPackage.ENTITY_INFO__CREATED_STAMP: return CommunicationPackage.COMMUNICATION_EVENT_PRP_TYP__CREATED_STAMP;
+				case EntityPackage.ENTITY_INFO__CREATED_TX_STAMP: return CommunicationPackage.COMMUNICATION_EVENT_PRP_TYP__CREATED_TX_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP: return CommunicationPackage.COMMUNICATION_EVENT_PRP_TYP__LAST_UPDATED_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP: return CommunicationPackage.COMMUNICATION_EVENT_PRP_TYP__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
 	/**

@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.workeffort.workeffort;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,7 +36,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='WorkEffort Search Result Constraint'"
  * @generated
  */
-public interface WorkEffortSearchConstraint extends BizEntity {
+public interface WorkEffortSearchConstraint extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Constraint Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

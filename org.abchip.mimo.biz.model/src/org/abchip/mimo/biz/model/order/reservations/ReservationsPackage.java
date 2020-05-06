@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.order.reservations;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface ReservationsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCOMMODATION_SPOT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int ACCOMMODATION_SPOT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface ReservationsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCOMMODATION_SPOT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int ACCOMMODATION_SPOT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface ReservationsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCOMMODATION_SPOT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int ACCOMMODATION_SPOT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface ReservationsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCOMMODATION_SPOT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int ACCOMMODATION_SPOT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Accommodation Spot Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface ReservationsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCOMMODATION_SPOT__ACCOMMODATION_SPOT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int ACCOMMODATION_SPOT__ACCOMMODATION_SPOT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Accommodation Class Id</b></em>' reference.
@@ -123,7 +123,7 @@ public interface ReservationsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCOMMODATION_SPOT__ACCOMMODATION_CLASS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int ACCOMMODATION_SPOT__ACCOMMODATION_CLASS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface ReservationsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCOMMODATION_SPOT__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int ACCOMMODATION_SPOT__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Fixed Asset Id</b></em>' reference.
@@ -141,7 +141,7 @@ public interface ReservationsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCOMMODATION_SPOT__FIXED_ASSET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int ACCOMMODATION_SPOT__FIXED_ASSET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Number Of Spaces</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface ReservationsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCOMMODATION_SPOT__NUMBER_OF_SPACES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int ACCOMMODATION_SPOT__NUMBER_OF_SPACES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Accommodation Spot</em>' class.
@@ -159,7 +159,7 @@ public interface ReservationsPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ACCOMMODATION_SPOT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int ACCOMMODATION_SPOT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 
 	/**

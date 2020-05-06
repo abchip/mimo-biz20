@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.product.inventory;
 
-import org.abchip.mimo.biz.BizEntityTyped;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntityTyped;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface InventoryItemLabel extends BizEntityTyped<InventoryItemLabelType> {
+public interface InventoryItemLabel extends EntityTyped<InventoryItemLabelType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

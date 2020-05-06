@@ -10,7 +10,8 @@ package org.abchip.mimo.biz.model.entity.test;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,7 +39,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame help='An entity for testing the field data types' title='Entity for testing the field data types'"
  * @generated
  */
-public interface TestFieldType extends BizEntity {
+public interface TestFieldType extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Blob Field</b></em>' attribute.
 	 * <!-- begin-user-doc -->

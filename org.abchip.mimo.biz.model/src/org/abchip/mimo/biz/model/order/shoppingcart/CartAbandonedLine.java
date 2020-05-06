@@ -10,9 +10,10 @@ package org.abchip.mimo.biz.model.order.shoppingcart;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.catalog.ProdCatalog;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,7 +44,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * @model annotation="mimo-ent-frame title='Order Abandoned Line'"
  * @generated
  */
-public interface CartAbandonedLine extends BizEntity {
+public interface CartAbandonedLine extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Cart Abandoned Line Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

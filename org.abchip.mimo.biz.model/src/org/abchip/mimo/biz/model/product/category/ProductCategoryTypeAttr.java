@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.product.category;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Product Category Type Attribute' dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface ProductCategoryTypeAttr extends BizEntity {
+public interface ProductCategoryTypeAttr extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

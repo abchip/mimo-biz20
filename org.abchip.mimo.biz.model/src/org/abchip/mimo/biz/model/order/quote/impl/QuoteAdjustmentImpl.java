@@ -10,8 +10,6 @@ package org.abchip.mimo.biz.model.order.quote.impl;
 import java.math.BigDecimal;
 
 import java.util.Date;
-
-import org.abchip.mimo.biz.impl.BizEntityImpl;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.order.order.OrderAdjustmentType;
@@ -20,6 +18,9 @@ import org.abchip.mimo.biz.model.order.quote.QuoteAdjustment;
 import org.abchip.mimo.biz.model.order.quote.QuotePackage;
 import org.abchip.mimo.biz.model.product.promo.ProductPromo;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityPackage;
+import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -30,6 +31,10 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getCreatedStamp <em>Created Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getCreatedTxStamp <em>Created Tx Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getQuoteAdjustmentId <em>Quote Adjustment Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getAmount <em>Amount</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.quote.impl.QuoteAdjustmentImpl#getComments <em>Comments</em>}</li>
@@ -61,7 +66,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class QuoteAdjustmentImpl extends BizEntityImpl implements QuoteAdjustment {
+public class QuoteAdjustmentImpl extends EntityIdentifiableImpl implements QuoteAdjustment {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -80,6 +85,96 @@ public class QuoteAdjustmentImpl extends BizEntityImpl implements QuoteAdjustmen
 	@Override
 	protected EClass eStaticClass() {
 		return QuotePackage.Literals.QUOTE_ADJUSTMENT;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return 0;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedStamp(Date newCreatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_STAMP, newCreatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getCreatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setCreatedTxStamp(Date newCreatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__CREATED_TX_STAMP, newCreatedTxStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedStamp(Date newLastUpdatedStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_STAMP, newLastUpdatedStamp);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Date getLastUpdatedTxStamp() {
+		return (Date)eGet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public void setLastUpdatedTxStamp(Date newLastUpdatedTxStamp) {
+		eSet(EntityPackage.Literals.ENTITY_INFO__LAST_UPDATED_TX_STAMP, newLastUpdatedTxStamp);
 	}
 
 	/**
@@ -620,6 +715,44 @@ public class QuoteAdjustmentImpl extends BizEntityImpl implements QuoteAdjustmen
 	@Override
 	public void setTaxAuthPartyId(String newTaxAuthPartyId) {
 		eSet(QuotePackage.Literals.QUOTE_ADJUSTMENT__TAX_AUTH_PARTY_ID, newTaxAuthPartyId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eBaseStructuralFeatureID(int derivedFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (derivedFeatureID) {
+				case QuotePackage.QUOTE_ADJUSTMENT__CREATED_STAMP: return EntityPackage.ENTITY_INFO__CREATED_STAMP;
+				case QuotePackage.QUOTE_ADJUSTMENT__CREATED_TX_STAMP: return EntityPackage.ENTITY_INFO__CREATED_TX_STAMP;
+				case QuotePackage.QUOTE_ADJUSTMENT__LAST_UPDATED_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP;
+				case QuotePackage.QUOTE_ADJUSTMENT__LAST_UPDATED_TX_STAMP: return EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eBaseStructuralFeatureID(derivedFeatureID, baseClass);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public int eDerivedStructuralFeatureID(int baseFeatureID, Class<?> baseClass) {
+		if (baseClass == EntityInfo.class) {
+			switch (baseFeatureID) {
+				case EntityPackage.ENTITY_INFO__CREATED_STAMP: return QuotePackage.QUOTE_ADJUSTMENT__CREATED_STAMP;
+				case EntityPackage.ENTITY_INFO__CREATED_TX_STAMP: return QuotePackage.QUOTE_ADJUSTMENT__CREATED_TX_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_STAMP: return QuotePackage.QUOTE_ADJUSTMENT__LAST_UPDATED_STAMP;
+				case EntityPackage.ENTITY_INFO__LAST_UPDATED_TX_STAMP: return QuotePackage.QUOTE_ADJUSTMENT__LAST_UPDATED_TX_STAMP;
+				default: return -1;
+			}
+		}
+		return super.eDerivedStructuralFeatureID(baseFeatureID, baseClass);
 	}
 
 } //QuoteAdjustmentImpl

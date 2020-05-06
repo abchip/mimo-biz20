@@ -11,8 +11,9 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemType;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,7 +44,7 @@ import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemType;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface AgreementTerm extends BizEntityTyped<TermType> {
+public interface AgreementTerm extends EntityTyped<TermType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Agreement Item Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

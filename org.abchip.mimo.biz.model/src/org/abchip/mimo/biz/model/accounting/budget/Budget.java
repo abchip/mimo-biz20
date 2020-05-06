@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.accounting.budget;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.period.CustomTimePeriod;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +35,7 @@ import org.abchip.mimo.biz.model.common.period.CustomTimePeriod;
  * @model
  * @generated
  */
-public interface Budget extends BizEntityTyped<BudgetType> {
+public interface Budget extends EntityTyped<BudgetType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
 	 * <!-- begin-user-doc -->

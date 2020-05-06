@@ -7,9 +7,10 @@
  */
 package org.abchip.mimo.biz.model.product.promo;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * @model annotation="mimo-ent-frame title='Product Promotion Category' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductPromoProduct extends BizEntity {
+public interface ProductPromoProduct extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Product Promo Action Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

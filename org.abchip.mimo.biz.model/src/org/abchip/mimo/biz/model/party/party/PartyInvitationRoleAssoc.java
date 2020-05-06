@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.party.party;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +27,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model
  * @generated
  */
-public interface PartyInvitationRoleAssoc extends BizEntity {
+public interface PartyInvitationRoleAssoc extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Role Type Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

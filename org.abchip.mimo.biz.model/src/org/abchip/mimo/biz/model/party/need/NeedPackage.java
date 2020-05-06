@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.party.need;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEED_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int NEED_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEED_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int NEED_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEED_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int NEED_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEED_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int NEED_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Need Type Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEED_TYPE__NEED_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int NEED_TYPE__NEED_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEED_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int NEED_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -132,7 +132,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int NEED_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int NEED_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.need.impl.PartyNeedImpl <em>Party Need</em>}' class.
@@ -151,7 +151,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_NEED__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -160,7 +160,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_NEED__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -169,7 +169,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_NEED__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -178,7 +178,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_NEED__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -187,7 +187,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_NEED__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -196,7 +196,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_NEED__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Party Need Id</b></em>' attribute.
@@ -205,7 +205,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__PARTY_NEED_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_NEED__PARTY_NEED_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Communication Event Id</b></em>' reference.
@@ -214,7 +214,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__COMMUNICATION_EVENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PARTY_NEED__COMMUNICATION_EVENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Datetime Recorded</b></em>' attribute.
@@ -223,7 +223,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__DATETIME_RECORDED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PARTY_NEED__DATETIME_RECORDED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -232,7 +232,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PARTY_NEED__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Need Type Id</b></em>' reference.
@@ -241,7 +241,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__NEED_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PARTY_NEED__NEED_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Party Type Id</b></em>' reference.
@@ -250,7 +250,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__PARTY_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PARTY_NEED__PARTY_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
@@ -259,7 +259,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__PRODUCT_CATEGORY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int PARTY_NEED__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -268,7 +268,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__PRODUCT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int PARTY_NEED__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Visit Id</b></em>' attribute.
@@ -277,7 +277,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED__VISIT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int PARTY_NEED__VISIT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The number of structural features of the '<em>Party Need</em>' class.
@@ -286,7 +286,7 @@ public interface NeedPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_NEED_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int PARTY_NEED_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 
 	/**

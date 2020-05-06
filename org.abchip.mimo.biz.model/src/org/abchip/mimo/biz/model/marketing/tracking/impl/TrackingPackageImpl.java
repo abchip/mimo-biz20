@@ -1255,7 +1255,7 @@ public class TrackingPackageImpl extends EPackageImpl implements TrackingPackage
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		CampaignPackage theCampaignPackage = (CampaignPackage)EPackage.Registry.INSTANCE.getEPackage(CampaignPackage.eNS_URI);
 		OrderPackage theOrderPackage = (OrderPackage)EPackage.Registry.INSTANCE.getEPackage(OrderPackage.eNS_URI);
 		ReturnPackage theReturnPackage = (ReturnPackage)EPackage.Registry.INSTANCE.getEPackage(ReturnPackage.eNS_URI);
@@ -1266,11 +1266,16 @@ public class TrackingPackageImpl extends EPackageImpl implements TrackingPackage
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		trackingCodeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		trackingCodeOrderEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		trackingCodeOrderReturnEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		trackingCodeTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		trackingCodeVisitEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		trackingCodeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		trackingCodeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		trackingCodeOrderEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		trackingCodeOrderEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		trackingCodeOrderReturnEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		trackingCodeOrderReturnEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		trackingCodeTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		trackingCodeTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		trackingCodeVisitEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		trackingCodeVisitEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(trackingCodeEClass, TrackingCode.class, "TrackingCode", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.order.requirement;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.order.order.OrderHeader;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.order.order.OrderHeader;
  * @model
  * @generated
  */
-public interface OrderRequirementCommitment extends BizEntity {
+public interface OrderRequirementCommitment extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Order Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

@@ -8,11 +8,12 @@
 package org.abchip.mimo.biz.model.workeffort.timesheet;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
 import org.abchip.mimo.biz.model.accounting.rate.RateType;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -40,7 +41,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
  * @model
  * @generated
  */
-public interface TimeEntry extends BizEntity {
+public interface TimeEntry extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
 	 * <!-- begin-user-doc -->

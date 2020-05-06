@@ -8,9 +8,10 @@
 package org.abchip.mimo.biz.model.accounting.ledger;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.period.CustomTimePeriod;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +35,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model
  * @generated
  */
-public interface GlAccountHistory extends BizEntity {
+public interface GlAccountHistory extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Custom Time Period Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

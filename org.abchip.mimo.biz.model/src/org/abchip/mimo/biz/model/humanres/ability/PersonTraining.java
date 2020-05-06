@@ -8,11 +8,12 @@
 package org.abchip.mimo.biz.model.humanres.ability;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.humanres.trainings.TrainingRequest;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.Person;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,7 +39,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
  * @model
  * @generated
  */
-public interface PersonTraining extends BizEntityTyped<TrainingClassType> {
+public interface PersonTraining extends EntityTyped<TrainingClassType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Approval Status</b></em>' attribute.
 	 * <!-- begin-user-doc -->

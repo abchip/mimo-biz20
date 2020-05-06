@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.model.product.store;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.uom.Uom;
@@ -17,6 +16,8 @@ import org.abchip.mimo.biz.model.passport.OAuth2GitHub;
 import org.abchip.mimo.biz.model.passport.OAuth2Google;
 import org.abchip.mimo.biz.model.passport.OAuth2LinkedIn;
 import org.abchip.mimo.biz.model.product.facility.Facility;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -119,7 +120,7 @@ import org.abchip.mimo.biz.model.product.facility.Facility;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductStore extends BizEntity {
+public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Auth Declined Message</b></em>' attribute.
 	 * <!-- begin-user-doc -->

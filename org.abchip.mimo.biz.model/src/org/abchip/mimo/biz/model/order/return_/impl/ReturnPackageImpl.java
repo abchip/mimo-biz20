@@ -2248,7 +2248,7 @@ public class ReturnPackageImpl extends EPackageImpl implements ReturnPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		CommunicationPackage theCommunicationPackage = (CommunicationPackage)EPackage.Registry.INSTANCE.getEPackage(CommunicationPackage.eNS_URI);
 		LoginPackage theLoginPackage = (LoginPackage)EPackage.Registry.INSTANCE.getEPackage(LoginPackage.eNS_URI);
 		OrderPackage theOrderPackage = (OrderPackage)EPackage.Registry.INSTANCE.getEPackage(OrderPackage.eNS_URI);
@@ -2273,27 +2273,44 @@ public class ReturnPackageImpl extends EPackageImpl implements ReturnPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		communicationEventReturnEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		communicationEventReturnEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		communicationEventReturnEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getReturnAdjustmentType());
 		g1.getETypeArguments().add(g2);
 		returnAdjustmentEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		returnAdjustmentEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getReturnAdjustment());
 		g1.getETypeArguments().add(g2);
 		returnAdjustmentTypeEClass.getEGenericSuperTypes().add(g1);
-		returnContactMechEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		returnHeaderEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		returnHeaderTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		returnItemEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		returnItemBillingEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		returnItemResponseEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		returnItemShipmentEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		returnItemTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		returnItemTypeMapEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		returnReasonEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		returnStatusEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		returnTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		returnAdjustmentTypeEClass.getEGenericSuperTypes().add(g1);
+		returnContactMechEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		returnContactMechEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		returnHeaderEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		returnHeaderEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		returnHeaderTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		returnHeaderTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		returnItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		returnItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		returnItemBillingEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		returnItemBillingEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		returnItemResponseEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		returnItemResponseEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		returnItemShipmentEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		returnItemShipmentEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		returnItemTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		returnItemTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		returnItemTypeMapEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		returnItemTypeMapEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		returnReasonEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		returnReasonEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		returnStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		returnStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		returnTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		returnTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(communicationEventReturnEClass, CommunicationEventReturn.class, "CommunicationEventReturn", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

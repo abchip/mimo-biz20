@@ -7,9 +7,10 @@
  */
 package org.abchip.mimo.biz.model.product.facility;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.geo.GeoPoint;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,7 +36,7 @@ import org.abchip.mimo.biz.model.common.geo.GeoPoint;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface FacilityLocation extends BizEntity {
+public interface FacilityLocation extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Aisle Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

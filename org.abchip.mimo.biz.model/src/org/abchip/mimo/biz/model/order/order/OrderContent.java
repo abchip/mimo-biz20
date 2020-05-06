@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.order.order;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.content.content.Content;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.model.content.content.Content;
  * @model annotation="mimo-ent-frame title='Order Data Object'"
  * @generated
  */
-public interface OrderContent extends BizEntityTyped<OrderContentType> {
+public interface OrderContent extends EntityTyped<OrderContentType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

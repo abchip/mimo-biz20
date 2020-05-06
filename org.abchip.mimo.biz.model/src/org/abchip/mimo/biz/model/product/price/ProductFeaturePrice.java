@@ -10,9 +10,10 @@ package org.abchip.mimo.biz.model.product.price;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -39,7 +40,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductFeaturePrice extends BizEntity {
+public interface ProductFeaturePrice extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Created By User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->

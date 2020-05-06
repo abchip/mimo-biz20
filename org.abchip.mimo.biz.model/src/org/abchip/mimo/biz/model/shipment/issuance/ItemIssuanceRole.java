@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.shipment.issuance;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model
  * @generated
  */
-public interface ItemIssuanceRole extends BizEntity {
+public interface ItemIssuanceRole extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Item Issuance Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

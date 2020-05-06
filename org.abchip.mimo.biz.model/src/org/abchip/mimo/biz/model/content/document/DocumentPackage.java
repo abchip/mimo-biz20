@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.content.document;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int DOCUMENT__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int DOCUMENT__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int DOCUMENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int DOCUMENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Document Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT__DOCUMENT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int DOCUMENT__DOCUMENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT__COMMENTS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int DOCUMENT__COMMENTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Date Created</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT__DATE_CREATED = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int DOCUMENT__DATE_CREATED = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Document Attributes</b></em>' reference list.
@@ -141,7 +141,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT__DOCUMENT_ATTRIBUTES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int DOCUMENT__DOCUMENT_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Document Location</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT__DOCUMENT_LOCATION = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int DOCUMENT__DOCUMENT_LOCATION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Document Text</b></em>' attribute.
@@ -159,7 +159,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT__DOCUMENT_TEXT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int DOCUMENT__DOCUMENT_TEXT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Document Type Id</b></em>' reference.
@@ -168,7 +168,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT__DOCUMENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int DOCUMENT__DOCUMENT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Image Data</b></em>' attribute.
@@ -177,7 +177,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT__IMAGE_DATA = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int DOCUMENT__IMAGE_DATA = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Document</em>' class.
@@ -186,7 +186,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int DOCUMENT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.document.impl.DocumentAttributeImpl <em>Attribute</em>}' class.
@@ -205,7 +205,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int DOCUMENT_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -214,7 +214,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int DOCUMENT_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -223,7 +223,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int DOCUMENT_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -232,7 +232,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int DOCUMENT_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Document Id</b></em>' reference.
@@ -241,7 +241,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_ATTRIBUTE__DOCUMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int DOCUMENT_ATTRIBUTE__DOCUMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -250,7 +250,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int DOCUMENT_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -259,7 +259,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int DOCUMENT_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -268,7 +268,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int DOCUMENT_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Attribute</em>' class.
@@ -277,7 +277,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int DOCUMENT_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.document.impl.DocumentTypeImpl <em>Type</em>}' class.
@@ -296,7 +296,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int DOCUMENT_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -305,7 +305,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int DOCUMENT_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -314,7 +314,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int DOCUMENT_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -323,7 +323,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int DOCUMENT_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -332,7 +332,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int DOCUMENT_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Document Type Id</b></em>' attribute.
@@ -341,7 +341,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_TYPE__DOCUMENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int DOCUMENT_TYPE__DOCUMENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -350,7 +350,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int DOCUMENT_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Document Type Attrs</b></em>' reference list.
@@ -359,7 +359,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_TYPE__DOCUMENT_TYPE_ATTRS = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int DOCUMENT_TYPE__DOCUMENT_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -368,7 +368,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int DOCUMENT_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -377,7 +377,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int DOCUMENT_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -386,7 +386,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 5;
+	int DOCUMENT_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.document.impl.DocumentTypeAttrImpl <em>Type Attr</em>}' class.
@@ -405,7 +405,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_TYPE_ATTR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int DOCUMENT_TYPE_ATTR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -414,7 +414,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_TYPE_ATTR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int DOCUMENT_TYPE_ATTR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -423,7 +423,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_TYPE_ATTR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int DOCUMENT_TYPE_ATTR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -432,7 +432,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_TYPE_ATTR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int DOCUMENT_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Document Type Id</b></em>' reference.
@@ -441,7 +441,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_TYPE_ATTR__DOCUMENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int DOCUMENT_TYPE_ATTR__DOCUMENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -450,7 +450,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_TYPE_ATTR__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int DOCUMENT_TYPE_ATTR__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -459,7 +459,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_TYPE_ATTR__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int DOCUMENT_TYPE_ATTR__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Type Attr</em>' class.
@@ -468,7 +468,7 @@ public interface DocumentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int DOCUMENT_TYPE_ATTR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int DOCUMENT_TYPE_ATTR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 
 	/**

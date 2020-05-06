@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.humanres.recruitment;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_INTERVIEW__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int JOB_INTERVIEW__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_INTERVIEW__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int JOB_INTERVIEW__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_INTERVIEW__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int JOB_INTERVIEW__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_INTERVIEW__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int JOB_INTERVIEW__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Job Interview Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_INTERVIEW__JOB_INTERVIEW_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int JOB_INTERVIEW__JOB_INTERVIEW_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Grade Secured Enum Id</b></em>' reference.
@@ -123,7 +123,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_INTERVIEW__GRADE_SECURED_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int JOB_INTERVIEW__GRADE_SECURED_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Job Interview Date</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_INTERVIEW__JOB_INTERVIEW_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int JOB_INTERVIEW__JOB_INTERVIEW_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Job Interview Result</b></em>' attribute.
@@ -141,7 +141,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_INTERVIEW__JOB_INTERVIEW_RESULT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int JOB_INTERVIEW__JOB_INTERVIEW_RESULT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Job Interview Type Id</b></em>' reference.
@@ -150,7 +150,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_INTERVIEW__JOB_INTERVIEW_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int JOB_INTERVIEW__JOB_INTERVIEW_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Job Interviewee Party Id</b></em>' reference.
@@ -159,7 +159,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_INTERVIEW__JOB_INTERVIEWEE_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int JOB_INTERVIEW__JOB_INTERVIEWEE_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Job Interviewer Party Id</b></em>' reference.
@@ -168,7 +168,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_INTERVIEW__JOB_INTERVIEWER_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int JOB_INTERVIEW__JOB_INTERVIEWER_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Job Requisition Id</b></em>' reference.
@@ -177,7 +177,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_INTERVIEW__JOB_REQUISITION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int JOB_INTERVIEW__JOB_REQUISITION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Job Interview</em>' class.
@@ -186,7 +186,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_INTERVIEW_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int JOB_INTERVIEW_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobInterviewTypeImpl <em>Job Interview Type</em>}' class.
@@ -205,7 +205,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_INTERVIEW_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int JOB_INTERVIEW_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -214,7 +214,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_INTERVIEW_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int JOB_INTERVIEW_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -223,7 +223,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_INTERVIEW_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int JOB_INTERVIEW_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -232,7 +232,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_INTERVIEW_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int JOB_INTERVIEW_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Job Interview Type Id</b></em>' attribute.
@@ -241,7 +241,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_INTERVIEW_TYPE__JOB_INTERVIEW_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int JOB_INTERVIEW_TYPE__JOB_INTERVIEW_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -250,7 +250,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_INTERVIEW_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int JOB_INTERVIEW_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Job Interview Type</em>' class.
@@ -259,7 +259,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_INTERVIEW_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int JOB_INTERVIEW_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.humanres.recruitment.impl.JobRequisitionImpl <em>Job Requisition</em>}' class.
@@ -278,7 +278,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_REQUISITION__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int JOB_REQUISITION__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -287,7 +287,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_REQUISITION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int JOB_REQUISITION__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -296,7 +296,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_REQUISITION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int JOB_REQUISITION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -305,7 +305,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_REQUISITION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int JOB_REQUISITION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Job Requisition Id</b></em>' attribute.
@@ -314,7 +314,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_REQUISITION__JOB_REQUISITION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int JOB_REQUISITION__JOB_REQUISITION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Age</b></em>' attribute.
@@ -323,7 +323,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_REQUISITION__AGE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int JOB_REQUISITION__AGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Duration Months</b></em>' attribute.
@@ -332,7 +332,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_REQUISITION__DURATION_MONTHS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int JOB_REQUISITION__DURATION_MONTHS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Exam Type Enum Id</b></em>' reference.
@@ -341,7 +341,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_REQUISITION__EXAM_TYPE_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int JOB_REQUISITION__EXAM_TYPE_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Experience Months</b></em>' attribute.
@@ -350,7 +350,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_REQUISITION__EXPERIENCE_MONTHS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int JOB_REQUISITION__EXPERIENCE_MONTHS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Experience Years</b></em>' attribute.
@@ -359,7 +359,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_REQUISITION__EXPERIENCE_YEARS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int JOB_REQUISITION__EXPERIENCE_YEARS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Gender</b></em>' attribute.
@@ -368,7 +368,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_REQUISITION__GENDER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int JOB_REQUISITION__GENDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Job Location</b></em>' attribute.
@@ -377,7 +377,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_REQUISITION__JOB_LOCATION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int JOB_REQUISITION__JOB_LOCATION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Job Posting Type Enum Id</b></em>' reference.
@@ -386,7 +386,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_REQUISITION__JOB_POSTING_TYPE_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int JOB_REQUISITION__JOB_POSTING_TYPE_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Job Requisition Date</b></em>' attribute.
@@ -395,7 +395,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_REQUISITION__JOB_REQUISITION_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int JOB_REQUISITION__JOB_REQUISITION_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>No Of Resources</b></em>' attribute.
@@ -404,7 +404,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_REQUISITION__NO_OF_RESOURCES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int JOB_REQUISITION__NO_OF_RESOURCES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Qualification</b></em>' attribute.
@@ -413,7 +413,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_REQUISITION__QUALIFICATION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int JOB_REQUISITION__QUALIFICATION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Required On Date</b></em>' attribute.
@@ -422,7 +422,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_REQUISITION__REQUIRED_ON_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int JOB_REQUISITION__REQUIRED_ON_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Skill Type Id</b></em>' reference.
@@ -431,7 +431,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_REQUISITION__SKILL_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int JOB_REQUISITION__SKILL_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The number of structural features of the '<em>Job Requisition</em>' class.
@@ -440,7 +440,7 @@ public interface RecruitmentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int JOB_REQUISITION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int JOB_REQUISITION_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 
 	/**

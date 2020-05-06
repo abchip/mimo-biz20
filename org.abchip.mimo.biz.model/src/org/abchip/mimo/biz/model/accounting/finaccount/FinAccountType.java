@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.accounting.finaccount;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityType;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +35,7 @@ import org.abchip.mimo.biz.model.common.enum_.Enumeration;
  * @model annotation="mimo-ent-frame title='Financial Account Type' dictionary='AccountingEntityLabels' formula='description'"
  * @generated
  */
-public interface FinAccountType extends BizEntityType<FinAccount> {
+public interface FinAccountType extends EntityType<FinAccount>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

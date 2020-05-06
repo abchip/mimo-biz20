@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.common.geo;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='ISO Country Code'"
  * @generated
  */
-public interface CountryCode extends BizEntity {
+public interface CountryCode extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Country Abbr</b></em>' attribute.
 	 * <!-- begin-user-doc -->

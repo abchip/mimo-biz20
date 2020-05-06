@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.common.theme;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.model.common.enum_.Enumeration;
  * @model annotation="mimo-ent-frame help='The VisualThemeResource entity contains visual theme\n          resources. Each visual theme can have any number of resources.' title='Contains All Visual Theme Resources'"
  * @generated
  */
-public interface VisualThemeResource extends BizEntity {
+public interface VisualThemeResource extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Resource Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->

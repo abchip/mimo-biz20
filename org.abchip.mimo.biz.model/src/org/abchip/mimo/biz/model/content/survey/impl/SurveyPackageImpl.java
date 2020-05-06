@@ -1998,7 +1998,7 @@ public class SurveyPackageImpl extends EPackageImpl implements SurveyPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		GeoPackage theGeoPackage = (GeoPackage)EPackage.Registry.INSTANCE.getEPackage(GeoPackage.eNS_URI);
 		OrderPackage theOrderPackage = (OrderPackage)EPackage.Registry.INSTANCE.getEPackage(OrderPackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
@@ -2010,19 +2010,32 @@ public class SurveyPackageImpl extends EPackageImpl implements SurveyPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		surveyEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		surveyApplTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		surveyMultiRespEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		surveyMultiRespColumnEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		surveyPageEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		surveyQuestionEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		surveyQuestionApplEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		surveyQuestionCategoryEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		surveyQuestionOptionEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		surveyQuestionTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		surveyResponseEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		surveyResponseAnswerEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		surveyTriggerEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		surveyEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		surveyEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		surveyApplTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		surveyApplTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		surveyMultiRespEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		surveyMultiRespEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		surveyMultiRespColumnEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		surveyMultiRespColumnEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		surveyPageEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		surveyPageEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		surveyQuestionEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		surveyQuestionEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		surveyQuestionApplEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		surveyQuestionApplEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		surveyQuestionCategoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		surveyQuestionCategoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		surveyQuestionOptionEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		surveyQuestionOptionEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		surveyQuestionTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		surveyQuestionTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		surveyResponseEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		surveyResponseEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		surveyResponseAnswerEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		surveyResponseAnswerEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		surveyTriggerEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		surveyTriggerEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(surveyEClass, Survey.class, "Survey", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

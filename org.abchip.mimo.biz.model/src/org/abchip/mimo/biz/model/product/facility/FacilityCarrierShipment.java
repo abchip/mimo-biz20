@@ -7,9 +7,10 @@
  */
 package org.abchip.mimo.biz.model.product.facility;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
  * @model annotation="mimo-ent-frame title='Facility Role Type' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface FacilityCarrierShipment extends BizEntity {
+public interface FacilityCarrierShipment extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

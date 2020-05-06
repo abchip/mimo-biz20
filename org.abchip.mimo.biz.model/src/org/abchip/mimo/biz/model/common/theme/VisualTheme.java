@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.common.theme;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame help='The VisualTheme entity contains one entry per visual theme.' title='Defines a Visual Theme' dictionary='CommonEntityLabels' formula='description'"
  * @generated
  */
-public interface VisualTheme extends BizEntity {
+public interface VisualTheme extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

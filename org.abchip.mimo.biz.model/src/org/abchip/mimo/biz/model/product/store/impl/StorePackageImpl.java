@@ -3418,7 +3418,7 @@ public class StorePackageImpl extends EPackageImpl implements StorePackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		UomPackage theUomPackage = (UomPackage)EPackage.Registry.INSTANCE.getEPackage(UomPackage.eNS_URI);
 		EnumPackage theEnumPackage = (EnumPackage)EPackage.Registry.INSTANCE.getEPackage(EnumPackage.eNS_URI);
 		StatusPackage theStatusPackage = (StatusPackage)EPackage.Registry.INSTANCE.getEPackage(StatusPackage.eNS_URI);
@@ -3441,24 +3441,42 @@ public class StorePackageImpl extends EPackageImpl implements StorePackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		productStoreEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productStoreCatalogEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productStoreEmailSettingEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productStoreFacilityEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productStoreFinActSettingEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productStoreGroupEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productStoreGroupMemberEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productStoreGroupRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productStoreGroupRollupEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productStoreGroupTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productStoreKeywordOvrdEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productStorePaymentSettingEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productStorePromoApplEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productStoreRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productStoreShipmentMethEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productStoreSurveyApplEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productStoreVendorPaymentEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productStoreVendorShipmentEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		productStoreEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productStoreEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productStoreCatalogEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productStoreCatalogEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productStoreEmailSettingEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productStoreEmailSettingEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productStoreFacilityEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productStoreFacilityEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productStoreFinActSettingEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productStoreFinActSettingEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productStoreGroupEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productStoreGroupEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productStoreGroupMemberEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productStoreGroupMemberEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productStoreGroupRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productStoreGroupRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productStoreGroupRollupEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productStoreGroupRollupEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productStoreGroupTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productStoreGroupTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productStoreKeywordOvrdEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productStoreKeywordOvrdEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productStorePaymentSettingEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productStorePaymentSettingEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productStorePromoApplEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productStorePromoApplEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productStoreRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productStoreRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productStoreShipmentMethEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productStoreShipmentMethEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productStoreSurveyApplEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productStoreSurveyApplEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productStoreVendorPaymentEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productStoreVendorPaymentEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productStoreVendorShipmentEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productStoreVendorShipmentEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(productStoreEClass, ProductStore.class, "ProductStore", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

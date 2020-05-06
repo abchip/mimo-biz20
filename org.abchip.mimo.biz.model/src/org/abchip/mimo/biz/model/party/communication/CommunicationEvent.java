@@ -8,7 +8,6 @@
 package org.abchip.mimo.biz.model.party.communication;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.content.data.MimeType;
@@ -17,6 +16,8 @@ import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.abchip.mimo.biz.model.party.contact.ContactMechType;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -60,7 +61,7 @@ import org.abchip.mimo.biz.model.party.party.RoleType;
  * @model
  * @generated
  */
-public interface CommunicationEvent extends BizEntityTyped<CommunicationEventType> {
+public interface CommunicationEvent extends EntityTyped<CommunicationEventType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Bcc String</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.webapp.visit;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BROWSER_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int BROWSER_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BROWSER_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int BROWSER_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BROWSER_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int BROWSER_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BROWSER_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int BROWSER_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Browser Type Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BROWSER_TYPE__BROWSER_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int BROWSER_TYPE__BROWSER_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Browser Name</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BROWSER_TYPE__BROWSER_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int BROWSER_TYPE__BROWSER_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Browser Version</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BROWSER_TYPE__BROWSER_VERSION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int BROWSER_TYPE__BROWSER_VERSION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Browser Type</em>' class.
@@ -141,7 +141,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BROWSER_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int BROWSER_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.webapp.visit.impl.PlatformTypeImpl <em>Platform Type</em>}' class.
@@ -160,7 +160,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLATFORM_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PLATFORM_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -169,7 +169,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLATFORM_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PLATFORM_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -178,7 +178,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLATFORM_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PLATFORM_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -187,7 +187,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLATFORM_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PLATFORM_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Platform Type Id</b></em>' attribute.
@@ -196,7 +196,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLATFORM_TYPE__PLATFORM_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PLATFORM_TYPE__PLATFORM_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Platform Name</b></em>' attribute.
@@ -205,7 +205,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLATFORM_TYPE__PLATFORM_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PLATFORM_TYPE__PLATFORM_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Platform Version</b></em>' attribute.
@@ -214,7 +214,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLATFORM_TYPE__PLATFORM_VERSION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PLATFORM_TYPE__PLATFORM_VERSION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Platform Type</em>' class.
@@ -223,7 +223,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PLATFORM_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PLATFORM_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.webapp.visit.impl.ProtocolTypeImpl <em>Protocol Type</em>}' class.
@@ -242,7 +242,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROTOCOL_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PROTOCOL_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -251,7 +251,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROTOCOL_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PROTOCOL_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -260,7 +260,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROTOCOL_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PROTOCOL_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -269,7 +269,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROTOCOL_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PROTOCOL_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Protocol Type Id</b></em>' attribute.
@@ -278,7 +278,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROTOCOL_TYPE__PROTOCOL_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PROTOCOL_TYPE__PROTOCOL_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Protocol Name</b></em>' attribute.
@@ -287,7 +287,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROTOCOL_TYPE__PROTOCOL_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PROTOCOL_TYPE__PROTOCOL_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Protocol Type</em>' class.
@@ -296,7 +296,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROTOCOL_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PROTOCOL_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitImpl <em>Server Hit</em>}' class.
@@ -315,7 +315,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SERVER_HIT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -324,7 +324,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SERVER_HIT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -333,7 +333,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SERVER_HIT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -342,7 +342,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SERVER_HIT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Hit Type Id</b></em>' reference.
@@ -351,7 +351,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT__HIT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SERVER_HIT__HIT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Visit Id</b></em>' reference.
@@ -360,7 +360,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT__VISIT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SERVER_HIT__VISIT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Content Id</b></em>' attribute.
@@ -369,7 +369,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT__CONTENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SERVER_HIT__CONTENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Hit Start Date Time</b></em>' attribute.
@@ -378,7 +378,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT__HIT_START_DATE_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SERVER_HIT__HIT_START_DATE_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Id By Ip Contact Mech Id</b></em>' attribute.
@@ -387,7 +387,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT__ID_BY_IP_CONTACT_MECH_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SERVER_HIT__ID_BY_IP_CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Internal Content Id</b></em>' attribute.
@@ -396,7 +396,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT__INTERNAL_CONTENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int SERVER_HIT__INTERNAL_CONTENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Num Of Bytes</b></em>' attribute.
@@ -405,7 +405,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT__NUM_OF_BYTES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int SERVER_HIT__NUM_OF_BYTES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
@@ -414,7 +414,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int SERVER_HIT__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Ref By Web Contact Mech Id</b></em>' attribute.
@@ -423,7 +423,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT__REF_BY_WEB_CONTACT_MECH_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int SERVER_HIT__REF_BY_WEB_CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Referrer Url</b></em>' attribute.
@@ -432,7 +432,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT__REFERRER_URL = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int SERVER_HIT__REFERRER_URL = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Request Url</b></em>' attribute.
@@ -441,7 +441,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT__REQUEST_URL = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int SERVER_HIT__REQUEST_URL = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Running Time Millis</b></em>' attribute.
@@ -450,7 +450,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT__RUNNING_TIME_MILLIS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int SERVER_HIT__RUNNING_TIME_MILLIS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Server Host Name</b></em>' attribute.
@@ -459,7 +459,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT__SERVER_HOST_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int SERVER_HIT__SERVER_HOST_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Server Ip Address</b></em>' attribute.
@@ -468,7 +468,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT__SERVER_IP_ADDRESS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int SERVER_HIT__SERVER_IP_ADDRESS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' attribute.
@@ -477,7 +477,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int SERVER_HIT__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>User Login Id</b></em>' attribute.
@@ -486,7 +486,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT__USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int SERVER_HIT__USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The number of structural features of the '<em>Server Hit</em>' class.
@@ -495,7 +495,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int SERVER_HIT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitBinImpl <em>Server Hit Bin</em>}' class.
@@ -514,7 +514,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_BIN__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SERVER_HIT_BIN__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -523,7 +523,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_BIN__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SERVER_HIT_BIN__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -532,7 +532,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_BIN__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SERVER_HIT_BIN__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -541,7 +541,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_BIN__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SERVER_HIT_BIN__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Server Hit Bin Id</b></em>' attribute.
@@ -550,7 +550,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_BIN__SERVER_HIT_BIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SERVER_HIT_BIN__SERVER_HIT_BIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Bin End Date Time</b></em>' attribute.
@@ -559,7 +559,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_BIN__BIN_END_DATE_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SERVER_HIT_BIN__BIN_END_DATE_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Bin Start Date Time</b></em>' attribute.
@@ -568,7 +568,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_BIN__BIN_START_DATE_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SERVER_HIT_BIN__BIN_START_DATE_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Content Id</b></em>' attribute.
@@ -577,7 +577,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_BIN__CONTENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SERVER_HIT_BIN__CONTENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Hit Type Id</b></em>' reference.
@@ -586,7 +586,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_BIN__HIT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SERVER_HIT_BIN__HIT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Internal Content Id</b></em>' attribute.
@@ -595,7 +595,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_BIN__INTERNAL_CONTENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int SERVER_HIT_BIN__INTERNAL_CONTENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Max Time Millis</b></em>' attribute.
@@ -604,7 +604,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_BIN__MAX_TIME_MILLIS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int SERVER_HIT_BIN__MAX_TIME_MILLIS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Min Time Millis</b></em>' attribute.
@@ -613,7 +613,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_BIN__MIN_TIME_MILLIS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int SERVER_HIT_BIN__MIN_TIME_MILLIS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Number Hits</b></em>' attribute.
@@ -622,7 +622,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_BIN__NUMBER_HITS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int SERVER_HIT_BIN__NUMBER_HITS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Server Host Name</b></em>' attribute.
@@ -631,7 +631,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_BIN__SERVER_HOST_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int SERVER_HIT_BIN__SERVER_HOST_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Server Ip Address</b></em>' attribute.
@@ -640,7 +640,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_BIN__SERVER_IP_ADDRESS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int SERVER_HIT_BIN__SERVER_IP_ADDRESS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Total Time Millis</b></em>' attribute.
@@ -649,7 +649,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_BIN__TOTAL_TIME_MILLIS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int SERVER_HIT_BIN__TOTAL_TIME_MILLIS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The number of structural features of the '<em>Server Hit Bin</em>' class.
@@ -658,7 +658,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_BIN_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int SERVER_HIT_BIN_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.webapp.visit.impl.ServerHitTypeImpl <em>Server Hit Type</em>}' class.
@@ -677,7 +677,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SERVER_HIT_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -686,7 +686,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SERVER_HIT_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -695,7 +695,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SERVER_HIT_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -704,7 +704,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SERVER_HIT_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Hit Type Id</b></em>' attribute.
@@ -713,7 +713,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_TYPE__HIT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SERVER_HIT_TYPE__HIT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -722,7 +722,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SERVER_HIT_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Server Hit Type</em>' class.
@@ -731,7 +731,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SERVER_HIT_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SERVER_HIT_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.webapp.visit.impl.UserAgentImpl <em>User Agent</em>}' class.
@@ -750,7 +750,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int USER_AGENT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -759,7 +759,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int USER_AGENT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -768,7 +768,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int USER_AGENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -777,7 +777,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int USER_AGENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>User Agent Id</b></em>' attribute.
@@ -786,7 +786,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT__USER_AGENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int USER_AGENT__USER_AGENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Browser Type Id</b></em>' reference.
@@ -795,7 +795,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT__BROWSER_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int USER_AGENT__BROWSER_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Platform Type Id</b></em>' reference.
@@ -804,7 +804,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT__PLATFORM_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int USER_AGENT__PLATFORM_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Protocol Type Id</b></em>' reference.
@@ -813,7 +813,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT__PROTOCOL_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int USER_AGENT__PROTOCOL_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>User Agent Method Type Id</b></em>' reference.
@@ -822,7 +822,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT__USER_AGENT_METHOD_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int USER_AGENT__USER_AGENT_METHOD_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>User Agent Type Id</b></em>' reference.
@@ -831,7 +831,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT__USER_AGENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int USER_AGENT__USER_AGENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>User Agent</em>' class.
@@ -840,7 +840,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int USER_AGENT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.webapp.visit.impl.UserAgentMethodTypeImpl <em>User Agent Method Type</em>}' class.
@@ -859,7 +859,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT_METHOD_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int USER_AGENT_METHOD_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -868,7 +868,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT_METHOD_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int USER_AGENT_METHOD_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -877,7 +877,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT_METHOD_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int USER_AGENT_METHOD_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -886,7 +886,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT_METHOD_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int USER_AGENT_METHOD_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>User Agent Method Type Id</b></em>' attribute.
@@ -895,7 +895,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT_METHOD_TYPE__USER_AGENT_METHOD_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int USER_AGENT_METHOD_TYPE__USER_AGENT_METHOD_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -904,7 +904,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT_METHOD_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int USER_AGENT_METHOD_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>User Agent Method Type</em>' class.
@@ -913,7 +913,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT_METHOD_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int USER_AGENT_METHOD_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.webapp.visit.impl.UserAgentTypeImpl <em>User Agent Type</em>}' class.
@@ -932,7 +932,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int USER_AGENT_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -941,7 +941,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int USER_AGENT_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -950,7 +950,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int USER_AGENT_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -959,7 +959,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int USER_AGENT_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>User Agent Type Id</b></em>' attribute.
@@ -968,7 +968,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT_TYPE__USER_AGENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int USER_AGENT_TYPE__USER_AGENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -977,7 +977,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int USER_AGENT_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>User Agent Type</em>' class.
@@ -986,7 +986,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_AGENT_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int USER_AGENT_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.webapp.visit.impl.VisitImpl <em>Visit</em>}' class.
@@ -1005,7 +1005,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int VISIT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1014,7 +1014,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int VISIT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1023,7 +1023,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int VISIT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1032,7 +1032,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int VISIT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Visit Id</b></em>' attribute.
@@ -1041,7 +1041,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__VISIT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int VISIT__VISIT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Client Host Name</b></em>' attribute.
@@ -1050,7 +1050,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__CLIENT_HOST_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int VISIT__CLIENT_HOST_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Client Ip Address</b></em>' attribute.
@@ -1059,7 +1059,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__CLIENT_IP_ADDRESS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int VISIT__CLIENT_IP_ADDRESS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Client Ip Country Geo Id</b></em>' attribute.
@@ -1068,7 +1068,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__CLIENT_IP_COUNTRY_GEO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int VISIT__CLIENT_IP_COUNTRY_GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Client Ip Isp Name</b></em>' attribute.
@@ -1077,7 +1077,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__CLIENT_IP_ISP_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int VISIT__CLIENT_IP_ISP_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Client Ip Postal Code</b></em>' attribute.
@@ -1086,7 +1086,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__CLIENT_IP_POSTAL_CODE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int VISIT__CLIENT_IP_POSTAL_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Client Ip State Prov Geo Id</b></em>' attribute.
@@ -1095,7 +1095,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__CLIENT_IP_STATE_PROV_GEO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int VISIT__CLIENT_IP_STATE_PROV_GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Client User</b></em>' attribute.
@@ -1104,7 +1104,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__CLIENT_USER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int VISIT__CLIENT_USER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Contact Mech Id</b></em>' attribute.
@@ -1113,7 +1113,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__CONTACT_MECH_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int VISIT__CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Cookie</b></em>' attribute.
@@ -1122,7 +1122,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__COOKIE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int VISIT__COOKIE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1131,7 +1131,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int VISIT__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Initial Locale</b></em>' attribute.
@@ -1140,7 +1140,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__INITIAL_LOCALE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int VISIT__INITIAL_LOCALE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Initial Referrer</b></em>' attribute.
@@ -1149,7 +1149,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__INITIAL_REFERRER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int VISIT__INITIAL_REFERRER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Initial Request</b></em>' attribute.
@@ -1158,7 +1158,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__INITIAL_REQUEST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int VISIT__INITIAL_REQUEST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Initial User Agent</b></em>' attribute.
@@ -1167,7 +1167,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__INITIAL_USER_AGENT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int VISIT__INITIAL_USER_AGENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
@@ -1176,7 +1176,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int VISIT__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' attribute.
@@ -1185,7 +1185,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int VISIT__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Server Host Name</b></em>' attribute.
@@ -1194,7 +1194,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__SERVER_HOST_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 17;
+	int VISIT__SERVER_HOST_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Server Ip Address</b></em>' attribute.
@@ -1203,7 +1203,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__SERVER_IP_ADDRESS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 18;
+	int VISIT__SERVER_IP_ADDRESS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Session Id</b></em>' attribute.
@@ -1212,7 +1212,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__SESSION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 19;
+	int VISIT__SESSION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -1221,7 +1221,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 20;
+	int VISIT__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>User Agent Id</b></em>' reference.
@@ -1230,7 +1230,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__USER_AGENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 21;
+	int VISIT__USER_AGENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>User Created</b></em>' attribute.
@@ -1239,7 +1239,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__USER_CREATED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 22;
+	int VISIT__USER_CREATED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>User Login Id</b></em>' attribute.
@@ -1248,7 +1248,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 23;
+	int VISIT__USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Visitor Id</b></em>' reference.
@@ -1257,7 +1257,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__VISITOR_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 24;
+	int VISIT__VISITOR_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Webapp Name</b></em>' attribute.
@@ -1266,7 +1266,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT__WEBAPP_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 25;
+	int VISIT__WEBAPP_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 29;
 
 	/**
 	 * The number of structural features of the '<em>Visit</em>' class.
@@ -1275,7 +1275,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISIT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 26;
+	int VISIT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 30;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.webapp.visit.impl.VisitorImpl <em>Visitor</em>}' class.
@@ -1294,7 +1294,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISITOR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int VISITOR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1303,7 +1303,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISITOR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int VISITOR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1312,7 +1312,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISITOR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int VISITOR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1321,7 +1321,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISITOR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int VISITOR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Visitor Id</b></em>' attribute.
@@ -1330,7 +1330,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISITOR__VISITOR_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int VISITOR__VISITOR_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
@@ -1339,7 +1339,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISITOR__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int VISITOR__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>User Login Id</b></em>' attribute.
@@ -1348,7 +1348,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISITOR__USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int VISITOR__USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Visitor</em>' class.
@@ -1357,7 +1357,7 @@ public interface VisitPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VISITOR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int VISITOR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 
 	/**

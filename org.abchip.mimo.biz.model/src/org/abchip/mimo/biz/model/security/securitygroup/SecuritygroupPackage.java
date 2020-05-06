@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.security.securitygroup;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROTECTED_VIEW__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PROTECTED_VIEW__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROTECTED_VIEW__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PROTECTED_VIEW__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROTECTED_VIEW__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PROTECTED_VIEW__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROTECTED_VIEW__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PROTECTED_VIEW__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Group Id</b></em>' reference.
@@ -114,7 +114,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROTECTED_VIEW__GROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PROTECTED_VIEW__GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>View Name Id</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROTECTED_VIEW__VIEW_NAME_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PROTECTED_VIEW__VIEW_NAME_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Max Hits</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROTECTED_VIEW__MAX_HITS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PROTECTED_VIEW__MAX_HITS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Max Hits Duration</b></em>' attribute.
@@ -141,7 +141,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROTECTED_VIEW__MAX_HITS_DURATION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PROTECTED_VIEW__MAX_HITS_DURATION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Tarpit Duration</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROTECTED_VIEW__TARPIT_DURATION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PROTECTED_VIEW__TARPIT_DURATION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Protected View</em>' class.
@@ -159,7 +159,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROTECTED_VIEW_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PROTECTED_VIEW_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.security.securitygroup.impl.SecurityGroupImpl <em>Security Group</em>}' class.
@@ -178,7 +178,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SECURITY_GROUP__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -187,7 +187,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SECURITY_GROUP__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -196,7 +196,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SECURITY_GROUP__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -205,7 +205,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SECURITY_GROUP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Group Id</b></em>' attribute.
@@ -214,7 +214,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP__GROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SECURITY_GROUP__GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -223,7 +223,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SECURITY_GROUP__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Group Name</b></em>' attribute.
@@ -232,7 +232,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP__GROUP_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SECURITY_GROUP__GROUP_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Protected Views</b></em>' reference list.
@@ -241,7 +241,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP__PROTECTED_VIEWS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SECURITY_GROUP__PROTECTED_VIEWS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Security Group</em>' class.
@@ -250,7 +250,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SECURITY_GROUP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.security.securitygroup.impl.SecurityGroupPermissionImpl <em>Security Group Permission</em>}' class.
@@ -269,7 +269,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP_PERMISSION__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SECURITY_GROUP_PERMISSION__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -278,7 +278,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP_PERMISSION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SECURITY_GROUP_PERMISSION__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -287,7 +287,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP_PERMISSION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SECURITY_GROUP_PERMISSION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -296,7 +296,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP_PERMISSION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SECURITY_GROUP_PERMISSION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Group Id</b></em>' reference.
@@ -305,7 +305,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP_PERMISSION__GROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SECURITY_GROUP_PERMISSION__GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Permission Id</b></em>' reference.
@@ -314,7 +314,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP_PERMISSION__PERMISSION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SECURITY_GROUP_PERMISSION__PERMISSION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -323,7 +323,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP_PERMISSION__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SECURITY_GROUP_PERMISSION__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -332,7 +332,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP_PERMISSION__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SECURITY_GROUP_PERMISSION__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Security Group Permission</em>' class.
@@ -341,7 +341,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP_PERMISSION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SECURITY_GROUP_PERMISSION_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.security.securitygroup.impl.SecurityPermissionImpl <em>Security Permission</em>}' class.
@@ -360,7 +360,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_PERMISSION__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SECURITY_PERMISSION__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -369,7 +369,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_PERMISSION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SECURITY_PERMISSION__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -378,7 +378,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_PERMISSION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SECURITY_PERMISSION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -387,7 +387,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_PERMISSION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SECURITY_PERMISSION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Permission Id</b></em>' attribute.
@@ -396,7 +396,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_PERMISSION__PERMISSION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SECURITY_PERMISSION__PERMISSION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -405,7 +405,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_PERMISSION__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SECURITY_PERMISSION__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Security Permission</em>' class.
@@ -414,7 +414,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_PERMISSION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SECURITY_PERMISSION_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.security.securitygroup.impl.TarpittedLoginViewImpl <em>Tarpitted Login View</em>}' class.
@@ -433,7 +433,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TARPITTED_LOGIN_VIEW__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TARPITTED_LOGIN_VIEW__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -442,7 +442,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TARPITTED_LOGIN_VIEW__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TARPITTED_LOGIN_VIEW__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -451,7 +451,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TARPITTED_LOGIN_VIEW__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TARPITTED_LOGIN_VIEW__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -460,7 +460,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TARPITTED_LOGIN_VIEW__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TARPITTED_LOGIN_VIEW__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>User Login Id</b></em>' attribute.
@@ -469,7 +469,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TARPITTED_LOGIN_VIEW__USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TARPITTED_LOGIN_VIEW__USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>View Name Id</b></em>' attribute.
@@ -478,7 +478,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TARPITTED_LOGIN_VIEW__VIEW_NAME_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TARPITTED_LOGIN_VIEW__VIEW_NAME_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Tarpit Release Date Time</b></em>' attribute.
@@ -487,7 +487,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TARPITTED_LOGIN_VIEW__TARPIT_RELEASE_DATE_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TARPITTED_LOGIN_VIEW__TARPIT_RELEASE_DATE_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Tarpitted Login View</em>' class.
@@ -496,7 +496,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TARPITTED_LOGIN_VIEW_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TARPITTED_LOGIN_VIEW_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.security.securitygroup.impl.UserLoginSecurityGroupImpl <em>User Login Security Group</em>}' class.
@@ -515,7 +515,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN_SECURITY_GROUP__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int USER_LOGIN_SECURITY_GROUP__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -524,7 +524,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN_SECURITY_GROUP__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int USER_LOGIN_SECURITY_GROUP__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -533,7 +533,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN_SECURITY_GROUP__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int USER_LOGIN_SECURITY_GROUP__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -542,7 +542,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN_SECURITY_GROUP__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int USER_LOGIN_SECURITY_GROUP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>User Login Id</b></em>' reference.
@@ -551,7 +551,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN_SECURITY_GROUP__USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int USER_LOGIN_SECURITY_GROUP__USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Group Id</b></em>' reference.
@@ -560,7 +560,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN_SECURITY_GROUP__GROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int USER_LOGIN_SECURITY_GROUP__GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -569,7 +569,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN_SECURITY_GROUP__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int USER_LOGIN_SECURITY_GROUP__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -578,7 +578,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN_SECURITY_GROUP__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int USER_LOGIN_SECURITY_GROUP__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>User Login Security Group</em>' class.
@@ -587,7 +587,7 @@ public interface SecuritygroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN_SECURITY_GROUP_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int USER_LOGIN_SECURITY_GROUP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 
 	/**

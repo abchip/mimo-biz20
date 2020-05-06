@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.workeffort.workeffort;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +32,7 @@ import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetType;
  * @model annotation="mimo-ent-frame title='Work Effort Fixed Asset Standard'"
  * @generated
  */
-public interface WorkEffortFixedAssetStd extends BizEntity {
+public interface WorkEffortFixedAssetStd extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Estimated Cost</b></em>' attribute.
 	 * <!-- begin-user-doc -->

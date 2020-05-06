@@ -1863,7 +1863,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
 		GeoPackage theGeoPackage = (GeoPackage)EPackage.Registry.INSTANCE.getEPackage(GeoPackage.eNS_URI);
 
@@ -1872,27 +1872,41 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getContactMechType());
 		g1.getETypeArguments().add(g2);
 		contactMechEClass.getEGenericSuperTypes().add(g1);
-		contactMechAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contactMechLinkEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contactMechPurposeTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		contactMechEClass.getEGenericSuperTypes().add(g1);
+		contactMechAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contactMechAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contactMechLinkEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contactMechLinkEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contactMechPurposeTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contactMechPurposeTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getContactMech());
 		g1.getETypeArguments().add(g2);
 		contactMechTypeEClass.getEGenericSuperTypes().add(g1);
-		contactMechTypeAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contactMechTypePurposeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		emailAddressVerificationEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		contactMechTypeEClass.getEGenericSuperTypes().add(g1);
+		contactMechTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contactMechTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contactMechTypePurposeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contactMechTypePurposeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		emailAddressVerificationEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		emailAddressVerificationEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		ftpAddressEClass.getESuperTypes().add(this.getContactMech());
-		partyContactMechEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		partyContactMechPurposeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		partyContactMechEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		partyContactMechEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		partyContactMechPurposeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		partyContactMechPurposeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		postalAddressEClass.getESuperTypes().add(this.getContactMech());
-		postalAddressBoundaryEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		postalAddressBoundaryEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		postalAddressBoundaryEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		telecomNumberEClass.getESuperTypes().add(this.getContactMech());
-		validContactMechRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		validContactMechRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		validContactMechRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(contactMechEClass, ContactMech.class, "ContactMech", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

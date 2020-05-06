@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.manufacturing.mrp;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +27,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame dictionary='ManufacturingEntityLabels' formula='description'"
  * @generated
  */
-public interface MrpEventType extends BizEntity {
+public interface MrpEventType extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Mrp Event Type Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

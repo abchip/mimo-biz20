@@ -1028,7 +1028,7 @@ public class RecruitmentPackageImpl extends EPackageImpl implements RecruitmentP
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		EnumPackage theEnumPackage = (EnumPackage)EPackage.Registry.INSTANCE.getEPackage(EnumPackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
 		CommonPackage theCommonPackage = (CommonPackage)EPackage.Registry.INSTANCE.getEPackage(CommonPackage.eNS_URI);
@@ -1039,9 +1039,12 @@ public class RecruitmentPackageImpl extends EPackageImpl implements RecruitmentP
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		jobInterviewEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		jobInterviewTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		jobRequisitionEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		jobInterviewEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		jobInterviewEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		jobInterviewTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		jobInterviewTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		jobRequisitionEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		jobRequisitionEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(jobInterviewEClass, JobInterview.class, "JobInterview", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

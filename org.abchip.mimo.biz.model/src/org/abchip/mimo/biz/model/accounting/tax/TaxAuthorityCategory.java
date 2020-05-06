@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.accounting.tax;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.category.ProductCategory;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.model.product.category.ProductCategory;
  * @model annotation="mimo-ent-frame title='Tax Authority Product Category'"
  * @generated
  */
-public interface TaxAuthorityCategory extends BizEntity {
+public interface TaxAuthorityCategory extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Product Category Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.order.order;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.product.ProductGroupOrder;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.model.product.product.ProductGroupOrder;
  * @model
  * @generated
  */
-public interface OrderItemGroupOrder extends BizEntity {
+public interface OrderItemGroupOrder extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Group Order Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

@@ -10,8 +10,9 @@ package org.abchip.mimo.biz.model.accounting.fixedasset;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.product.ProductMeterType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,7 +36,7 @@ import org.abchip.mimo.biz.model.product.product.ProductMeterType;
  * @model
  * @generated
  */
-public interface FixedAssetMeter extends BizEntity {
+public interface FixedAssetMeter extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Fixed Asset Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -7,10 +7,11 @@
  */
 package org.abchip.mimo.biz.model.product.supplier;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.feature.ProductFeature;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.model.product.feature.ProductFeature;
  * @model annotation="mimo-ent-frame title='Supplier-specific product feature information' dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface SupplierProductFeature extends BizEntity {
+public interface SupplierProductFeature extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

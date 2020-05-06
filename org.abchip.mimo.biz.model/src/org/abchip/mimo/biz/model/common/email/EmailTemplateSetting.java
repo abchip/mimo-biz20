@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.common.email;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,7 +36,7 @@ import org.abchip.mimo.biz.model.common.enum_.Enumeration;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface EmailTemplateSetting extends BizEntity {
+public interface EmailTemplateSetting extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Bcc Address</b></em>' attribute.
 	 * <!-- begin-user-doc -->

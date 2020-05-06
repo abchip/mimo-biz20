@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.party.agreement;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +35,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Agreement Employment Application'"
  * @generated
  */
-public interface AgreementEmploymentAppl extends BizEntity {
+public interface AgreementEmploymentAppl extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Agreement Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

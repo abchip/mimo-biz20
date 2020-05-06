@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.accounting.ledger;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,7 +39,7 @@ import org.abchip.mimo.biz.BizEntityTyped;
  * @model annotation="mimo-ent-frame title='General Ledger Account' formula='description'"
  * @generated
  */
-public interface GlAccount extends BizEntityTyped<GlAccountType> {
+public interface GlAccount extends EntityTyped<GlAccountType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Account Code</b></em>' attribute.
 	 * <!-- begin-user-doc -->

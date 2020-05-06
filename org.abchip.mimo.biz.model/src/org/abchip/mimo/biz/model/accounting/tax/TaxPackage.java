@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.accounting.tax;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TAX_AUTH_INFO__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PARTY_TAX_AUTH_INFO__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TAX_AUTH_INFO__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PARTY_TAX_AUTH_INFO__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TAX_AUTH_INFO__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PARTY_TAX_AUTH_INFO__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TAX_AUTH_INFO__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PARTY_TAX_AUTH_INFO__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -114,7 +114,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TAX_AUTH_INFO__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PARTY_TAX_AUTH_INFO__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TAX_AUTH_INFO__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PARTY_TAX_AUTH_INFO__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Geo Id</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TAX_AUTH_INFO__TAX_AUTH_GEO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PARTY_TAX_AUTH_INFO__TAX_AUTH_GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Party Id</b></em>' attribute.
@@ -141,7 +141,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TAX_AUTH_INFO__TAX_AUTH_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PARTY_TAX_AUTH_INFO__TAX_AUTH_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Is Exempt</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TAX_AUTH_INFO__IS_EXEMPT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PARTY_TAX_AUTH_INFO__IS_EXEMPT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Is Nexus</b></em>' attribute.
@@ -159,7 +159,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TAX_AUTH_INFO__IS_NEXUS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PARTY_TAX_AUTH_INFO__IS_NEXUS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Party Tax Id</b></em>' attribute.
@@ -168,7 +168,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TAX_AUTH_INFO__PARTY_TAX_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PARTY_TAX_AUTH_INFO__PARTY_TAX_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -177,7 +177,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TAX_AUTH_INFO__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PARTY_TAX_AUTH_INFO__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Party Tax Auth Info</em>' class.
@@ -186,7 +186,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_TAX_AUTH_INFO_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int PARTY_TAX_AUTH_INFO_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityImpl <em>Authority</em>}' class.
@@ -205,7 +205,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TAX_AUTHORITY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -214,7 +214,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TAX_AUTHORITY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -223,7 +223,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TAX_AUTHORITY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -232,7 +232,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TAX_AUTHORITY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Geo Id</b></em>' reference.
@@ -241,7 +241,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY__TAX_AUTH_GEO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TAX_AUTHORITY__TAX_AUTH_GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Party Id</b></em>' reference.
@@ -250,7 +250,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY__TAX_AUTH_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TAX_AUTHORITY__TAX_AUTH_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Include Tax In Price</b></em>' attribute.
@@ -259,7 +259,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY__INCLUDE_TAX_IN_PRICE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TAX_AUTHORITY__INCLUDE_TAX_IN_PRICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Require Tax Id For Exemption</b></em>' attribute.
@@ -268,7 +268,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY__REQUIRE_TAX_ID_FOR_EXEMPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TAX_AUTHORITY__REQUIRE_TAX_ID_FOR_EXEMPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Tax Id Format Pattern</b></em>' attribute.
@@ -277,7 +277,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY__TAX_ID_FORMAT_PATTERN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TAX_AUTHORITY__TAX_ID_FORMAT_PATTERN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Authority</em>' class.
@@ -286,7 +286,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int TAX_AUTHORITY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityAssocImpl <em>Authority Assoc</em>}' class.
@@ -305,7 +305,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_ASSOC__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TAX_AUTHORITY_ASSOC__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -314,7 +314,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_ASSOC__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TAX_AUTHORITY_ASSOC__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -323,7 +323,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_ASSOC__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TAX_AUTHORITY_ASSOC__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -332,7 +332,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_ASSOC__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TAX_AUTHORITY_ASSOC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -341,7 +341,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_ASSOC__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TAX_AUTHORITY_ASSOC__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Geo Id</b></em>' attribute.
@@ -350,7 +350,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_ASSOC__TAX_AUTH_GEO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TAX_AUTHORITY_ASSOC__TAX_AUTH_GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Party Id</b></em>' attribute.
@@ -359,7 +359,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_ASSOC__TAX_AUTH_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TAX_AUTHORITY_ASSOC__TAX_AUTH_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>To Tax Auth Geo Id</b></em>' attribute.
@@ -368,7 +368,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_ASSOC__TO_TAX_AUTH_GEO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TAX_AUTHORITY_ASSOC__TO_TAX_AUTH_GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>To Tax Auth Party Id</b></em>' attribute.
@@ -377,7 +377,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_ASSOC__TO_TAX_AUTH_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TAX_AUTHORITY_ASSOC__TO_TAX_AUTH_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Tax Authority Assoc Type Id</b></em>' reference.
@@ -386,7 +386,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_ASSOC__TAX_AUTHORITY_ASSOC_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int TAX_AUTHORITY_ASSOC__TAX_AUTHORITY_ASSOC_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -395,7 +395,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_ASSOC__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int TAX_AUTHORITY_ASSOC__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Authority Assoc</em>' class.
@@ -404,7 +404,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_ASSOC_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int TAX_AUTHORITY_ASSOC_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityAssocTypeImpl <em>Authority Assoc Type</em>}' class.
@@ -423,7 +423,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_ASSOC_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TAX_AUTHORITY_ASSOC_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -432,7 +432,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_ASSOC_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TAX_AUTHORITY_ASSOC_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -441,7 +441,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_ASSOC_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TAX_AUTHORITY_ASSOC_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -450,7 +450,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_ASSOC_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TAX_AUTHORITY_ASSOC_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Tax Authority Assoc Type Id</b></em>' attribute.
@@ -459,7 +459,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_ASSOC_TYPE__TAX_AUTHORITY_ASSOC_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TAX_AUTHORITY_ASSOC_TYPE__TAX_AUTHORITY_ASSOC_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -468,7 +468,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_ASSOC_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TAX_AUTHORITY_ASSOC_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Authority Assoc Type</em>' class.
@@ -477,7 +477,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_ASSOC_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TAX_AUTHORITY_ASSOC_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityCategoryImpl <em>Authority Category</em>}' class.
@@ -496,7 +496,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_CATEGORY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TAX_AUTHORITY_CATEGORY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -505,7 +505,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_CATEGORY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TAX_AUTHORITY_CATEGORY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -514,7 +514,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_CATEGORY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TAX_AUTHORITY_CATEGORY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -523,7 +523,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_CATEGORY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TAX_AUTHORITY_CATEGORY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
@@ -532,7 +532,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_CATEGORY__PRODUCT_CATEGORY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TAX_AUTHORITY_CATEGORY__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Geo Id</b></em>' attribute.
@@ -541,7 +541,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_CATEGORY__TAX_AUTH_GEO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TAX_AUTHORITY_CATEGORY__TAX_AUTH_GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Party Id</b></em>' attribute.
@@ -550,7 +550,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_CATEGORY__TAX_AUTH_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TAX_AUTHORITY_CATEGORY__TAX_AUTH_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Authority Category</em>' class.
@@ -559,7 +559,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_CATEGORY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TAX_AUTHORITY_CATEGORY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityGlAccountImpl <em>Authority Gl Account</em>}' class.
@@ -578,7 +578,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_GL_ACCOUNT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TAX_AUTHORITY_GL_ACCOUNT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -587,7 +587,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_GL_ACCOUNT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TAX_AUTHORITY_GL_ACCOUNT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -596,7 +596,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_GL_ACCOUNT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TAX_AUTHORITY_GL_ACCOUNT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -605,7 +605,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_GL_ACCOUNT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TAX_AUTHORITY_GL_ACCOUNT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Organization Party Id</b></em>' reference.
@@ -614,7 +614,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_GL_ACCOUNT__ORGANIZATION_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TAX_AUTHORITY_GL_ACCOUNT__ORGANIZATION_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Geo Id</b></em>' attribute.
@@ -623,7 +623,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_GL_ACCOUNT__TAX_AUTH_GEO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TAX_AUTHORITY_GL_ACCOUNT__TAX_AUTH_GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Party Id</b></em>' attribute.
@@ -632,7 +632,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_GL_ACCOUNT__TAX_AUTH_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TAX_AUTHORITY_GL_ACCOUNT__TAX_AUTH_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Id</b></em>' reference.
@@ -641,7 +641,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_GL_ACCOUNT__GL_ACCOUNT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TAX_AUTHORITY_GL_ACCOUNT__GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Authority Gl Account</em>' class.
@@ -650,7 +650,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_GL_ACCOUNT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TAX_AUTHORITY_GL_ACCOUNT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityRateProductImpl <em>Authority Rate Product</em>}' class.
@@ -669,7 +669,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TAX_AUTHORITY_RATE_PRODUCT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -678,7 +678,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TAX_AUTHORITY_RATE_PRODUCT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -687,7 +687,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TAX_AUTHORITY_RATE_PRODUCT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -696,7 +696,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TAX_AUTHORITY_RATE_PRODUCT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Tax Authority Rate Seq Id</b></em>' attribute.
@@ -705,7 +705,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTHORITY_RATE_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTHORITY_RATE_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -714,7 +714,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TAX_AUTHORITY_RATE_PRODUCT__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -723,7 +723,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TAX_AUTHORITY_RATE_PRODUCT__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Is Tax In Shipping Price</b></em>' attribute.
@@ -732,7 +732,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__IS_TAX_IN_SHIPPING_PRICE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TAX_AUTHORITY_RATE_PRODUCT__IS_TAX_IN_SHIPPING_PRICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Min Item Price</b></em>' attribute.
@@ -741,7 +741,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__MIN_ITEM_PRICE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TAX_AUTHORITY_RATE_PRODUCT__MIN_ITEM_PRICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Min Purchase</b></em>' attribute.
@@ -750,7 +750,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__MIN_PURCHASE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int TAX_AUTHORITY_RATE_PRODUCT__MIN_PURCHASE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
@@ -759,7 +759,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_CATEGORY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Id</b></em>' reference.
@@ -768,7 +768,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_STORE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int TAX_AUTHORITY_RATE_PRODUCT__PRODUCT_STORE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Geo Id</b></em>' attribute.
@@ -777,7 +777,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTH_GEO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTH_GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Tax Auth Party Id</b></em>' attribute.
@@ -786,7 +786,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTH_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTH_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Tax Authority Rate Type Id</b></em>' reference.
@@ -795,7 +795,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTHORITY_RATE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int TAX_AUTHORITY_RATE_PRODUCT__TAX_AUTHORITY_RATE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Tax Percentage</b></em>' attribute.
@@ -804,7 +804,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__TAX_PERCENTAGE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int TAX_AUTHORITY_RATE_PRODUCT__TAX_PERCENTAGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Tax Promotions</b></em>' attribute.
@@ -813,7 +813,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__TAX_PROMOTIONS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int TAX_AUTHORITY_RATE_PRODUCT__TAX_PROMOTIONS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Tax Shipping</b></em>' attribute.
@@ -822,7 +822,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__TAX_SHIPPING = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int TAX_AUTHORITY_RATE_PRODUCT__TAX_SHIPPING = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -831,7 +831,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int TAX_AUTHORITY_RATE_PRODUCT__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Title Transfer Enum Id</b></em>' attribute.
@@ -840,7 +840,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT__TITLE_TRANSFER_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int TAX_AUTHORITY_RATE_PRODUCT__TITLE_TRANSFER_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The number of structural features of the '<em>Authority Rate Product</em>' class.
@@ -849,7 +849,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_PRODUCT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int TAX_AUTHORITY_RATE_PRODUCT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.tax.impl.TaxAuthorityRateTypeImpl <em>Authority Rate Type</em>}' class.
@@ -868,7 +868,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TAX_AUTHORITY_RATE_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -877,7 +877,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TAX_AUTHORITY_RATE_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -886,7 +886,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TAX_AUTHORITY_RATE_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -895,7 +895,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TAX_AUTHORITY_RATE_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Tax Authority Rate Type Id</b></em>' attribute.
@@ -904,7 +904,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_TYPE__TAX_AUTHORITY_RATE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TAX_AUTHORITY_RATE_TYPE__TAX_AUTHORITY_RATE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -913,7 +913,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TAX_AUTHORITY_RATE_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Authority Rate Type</em>' class.
@@ -922,7 +922,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TAX_AUTHORITY_RATE_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TAX_AUTHORITY_RATE_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.tax.impl.ZipSalesRuleLookupImpl <em>Zip Sales Rule Lookup</em>}' class.
@@ -941,7 +941,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_RULE_LOOKUP__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int ZIP_SALES_RULE_LOOKUP__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -950,7 +950,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_RULE_LOOKUP__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int ZIP_SALES_RULE_LOOKUP__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -959,7 +959,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_RULE_LOOKUP__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int ZIP_SALES_RULE_LOOKUP__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -968,7 +968,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_RULE_LOOKUP__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int ZIP_SALES_RULE_LOOKUP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>City</b></em>' attribute.
@@ -977,7 +977,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_RULE_LOOKUP__CITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int ZIP_SALES_RULE_LOOKUP__CITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>County</b></em>' attribute.
@@ -986,7 +986,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_RULE_LOOKUP__COUNTY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int ZIP_SALES_RULE_LOOKUP__COUNTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -995,7 +995,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_RULE_LOOKUP__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int ZIP_SALES_RULE_LOOKUP__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>State Code</b></em>' attribute.
@@ -1004,7 +1004,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_RULE_LOOKUP__STATE_CODE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int ZIP_SALES_RULE_LOOKUP__STATE_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Id Code</b></em>' attribute.
@@ -1013,7 +1013,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_RULE_LOOKUP__ID_CODE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int ZIP_SALES_RULE_LOOKUP__ID_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Ship Cond</b></em>' attribute.
@@ -1022,7 +1022,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_RULE_LOOKUP__SHIP_COND = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int ZIP_SALES_RULE_LOOKUP__SHIP_COND = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Taxable</b></em>' attribute.
@@ -1031,7 +1031,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_RULE_LOOKUP__TAXABLE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int ZIP_SALES_RULE_LOOKUP__TAXABLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Zip Sales Rule Lookup</em>' class.
@@ -1040,7 +1040,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_RULE_LOOKUP_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int ZIP_SALES_RULE_LOOKUP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.tax.impl.ZipSalesTaxLookupImpl <em>Zip Sales Tax Lookup</em>}' class.
@@ -1059,7 +1059,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int ZIP_SALES_TAX_LOOKUP__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1068,7 +1068,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int ZIP_SALES_TAX_LOOKUP__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1077,7 +1077,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int ZIP_SALES_TAX_LOOKUP__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1086,7 +1086,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int ZIP_SALES_TAX_LOOKUP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>City</b></em>' attribute.
@@ -1095,7 +1095,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__CITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int ZIP_SALES_TAX_LOOKUP__CITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>County</b></em>' attribute.
@@ -1104,7 +1104,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__COUNTY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int ZIP_SALES_TAX_LOOKUP__COUNTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1113,7 +1113,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int ZIP_SALES_TAX_LOOKUP__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>State Code</b></em>' attribute.
@@ -1122,7 +1122,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__STATE_CODE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int ZIP_SALES_TAX_LOOKUP__STATE_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Zip Code</b></em>' attribute.
@@ -1131,7 +1131,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__ZIP_CODE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int ZIP_SALES_TAX_LOOKUP__ZIP_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>City Local Sales Tax</b></em>' attribute.
@@ -1140,7 +1140,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__CITY_LOCAL_SALES_TAX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int ZIP_SALES_TAX_LOOKUP__CITY_LOCAL_SALES_TAX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>City Local Use Tax</b></em>' attribute.
@@ -1149,7 +1149,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__CITY_LOCAL_USE_TAX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int ZIP_SALES_TAX_LOOKUP__CITY_LOCAL_USE_TAX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>City Sales Tax</b></em>' attribute.
@@ -1158,7 +1158,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__CITY_SALES_TAX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int ZIP_SALES_TAX_LOOKUP__CITY_SALES_TAX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>City Use Tax</b></em>' attribute.
@@ -1167,7 +1167,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__CITY_USE_TAX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int ZIP_SALES_TAX_LOOKUP__CITY_USE_TAX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Combo Sales Tax</b></em>' attribute.
@@ -1176,7 +1176,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__COMBO_SALES_TAX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int ZIP_SALES_TAX_LOOKUP__COMBO_SALES_TAX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Combo Use Tax</b></em>' attribute.
@@ -1185,7 +1185,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__COMBO_USE_TAX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int ZIP_SALES_TAX_LOOKUP__COMBO_USE_TAX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>County Default</b></em>' attribute.
@@ -1194,7 +1194,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__COUNTY_DEFAULT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int ZIP_SALES_TAX_LOOKUP__COUNTY_DEFAULT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>County Fips</b></em>' attribute.
@@ -1203,7 +1203,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__COUNTY_FIPS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int ZIP_SALES_TAX_LOOKUP__COUNTY_FIPS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>County Local Sales Tax</b></em>' attribute.
@@ -1212,7 +1212,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__COUNTY_LOCAL_SALES_TAX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int ZIP_SALES_TAX_LOOKUP__COUNTY_LOCAL_SALES_TAX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>County Local Use Tax</b></em>' attribute.
@@ -1221,7 +1221,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__COUNTY_LOCAL_USE_TAX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int ZIP_SALES_TAX_LOOKUP__COUNTY_LOCAL_USE_TAX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>County Sales Tax</b></em>' attribute.
@@ -1230,7 +1230,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__COUNTY_SALES_TAX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int ZIP_SALES_TAX_LOOKUP__COUNTY_SALES_TAX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>County Use Tax</b></em>' attribute.
@@ -1239,7 +1239,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__COUNTY_USE_TAX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int ZIP_SALES_TAX_LOOKUP__COUNTY_USE_TAX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>General Default</b></em>' attribute.
@@ -1248,7 +1248,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__GENERAL_DEFAULT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 17;
+	int ZIP_SALES_TAX_LOOKUP__GENERAL_DEFAULT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Geo Code</b></em>' attribute.
@@ -1257,7 +1257,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__GEO_CODE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 18;
+	int ZIP_SALES_TAX_LOOKUP__GEO_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Inside City</b></em>' attribute.
@@ -1266,7 +1266,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__INSIDE_CITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 19;
+	int ZIP_SALES_TAX_LOOKUP__INSIDE_CITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>State Sales Tax</b></em>' attribute.
@@ -1275,7 +1275,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__STATE_SALES_TAX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 20;
+	int ZIP_SALES_TAX_LOOKUP__STATE_SALES_TAX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>State Use Tax</b></em>' attribute.
@@ -1284,7 +1284,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP__STATE_USE_TAX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 21;
+	int ZIP_SALES_TAX_LOOKUP__STATE_USE_TAX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 25;
 
 	/**
 	 * The number of structural features of the '<em>Zip Sales Tax Lookup</em>' class.
@@ -1293,7 +1293,7 @@ public interface TaxPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ZIP_SALES_TAX_LOOKUP_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 22;
+	int ZIP_SALES_TAX_LOOKUP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 26;
 
 
 	/**

@@ -10,11 +10,12 @@ package org.abchip.mimo.biz.model.accounting.payment;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.content.survey.SurveyResponse;
 import org.abchip.mimo.biz.model.order.order.OrderHeader;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,7 +46,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model annotation="mimo-ent-frame title='Gift Card Fulfillment History'"
  * @generated
  */
-public interface GiftCardFulfillment extends BizEntity {
+public interface GiftCardFulfillment extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->

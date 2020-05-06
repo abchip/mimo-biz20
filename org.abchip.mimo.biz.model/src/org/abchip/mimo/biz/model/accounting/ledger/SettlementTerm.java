@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.accounting.ledger;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model
  * @generated
  */
-public interface SettlementTerm extends BizEntity {
+public interface SettlementTerm extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Term Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

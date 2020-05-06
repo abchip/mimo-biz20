@@ -10,10 +10,11 @@ package org.abchip.mimo.biz.model.product.product;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.method.CustomMethod;
 import org.abchip.mimo.biz.model.service.schedule.RecurrenceInfo;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,7 +44,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
  * @model annotation="mimo-ent-frame title='Product Association' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductAssoc extends BizEntityTyped<ProductAssocType> {
+public interface ProductAssoc extends EntityTyped<ProductAssocType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Estimate Calc Method</b></em>' reference.
 	 * <!-- begin-user-doc -->

@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.shipment.picklist;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PICKLIST__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PICKLIST__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PICKLIST__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PICKLIST__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Picklist Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST__PICKLIST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PICKLIST__PICKLIST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Created By User Login</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST__CREATED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PICKLIST__CREATED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PICKLIST__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
@@ -141,7 +141,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST__FACILITY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PICKLIST__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified By User Login</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST__LAST_MODIFIED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PICKLIST__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Picklist Date</b></em>' attribute.
@@ -159,7 +159,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST__PICKLIST_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PICKLIST__PICKLIST_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Picklist Status Histories</b></em>' reference list.
@@ -168,7 +168,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST__PICKLIST_STATUS_HISTORIES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PICKLIST__PICKLIST_STATUS_HISTORIES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Shipment Method Type Id</b></em>' reference.
@@ -177,7 +177,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST__SHIPMENT_METHOD_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PICKLIST__SHIPMENT_METHOD_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -186,7 +186,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int PICKLIST__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The number of structural features of the '<em>Picklist</em>' class.
@@ -195,7 +195,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int PICKLIST_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistBinImpl <em>Bin</em>}' class.
@@ -214,7 +214,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_BIN__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PICKLIST_BIN__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -223,7 +223,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_BIN__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PICKLIST_BIN__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -232,7 +232,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_BIN__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PICKLIST_BIN__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -241,7 +241,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_BIN__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PICKLIST_BIN__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Picklist Bin Id</b></em>' attribute.
@@ -250,7 +250,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_BIN__PICKLIST_BIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PICKLIST_BIN__PICKLIST_BIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Bin Location Number</b></em>' attribute.
@@ -259,7 +259,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_BIN__BIN_LOCATION_NUMBER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PICKLIST_BIN__BIN_LOCATION_NUMBER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Picklist Id</b></em>' reference.
@@ -268,7 +268,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_BIN__PICKLIST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PICKLIST_BIN__PICKLIST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Primary Order Id</b></em>' reference.
@@ -277,7 +277,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_BIN__PRIMARY_ORDER_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PICKLIST_BIN__PRIMARY_ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Primary Ship Group Seq Id</b></em>' attribute.
@@ -286,7 +286,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_BIN__PRIMARY_SHIP_GROUP_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PICKLIST_BIN__PRIMARY_SHIP_GROUP_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Bin</em>' class.
@@ -295,7 +295,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_BIN_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PICKLIST_BIN_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistItemImpl <em>Item</em>}' class.
@@ -314,7 +314,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ITEM__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PICKLIST_ITEM__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -323,7 +323,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ITEM__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PICKLIST_ITEM__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -332,7 +332,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ITEM__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PICKLIST_ITEM__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -341,7 +341,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ITEM__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PICKLIST_ITEM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Picklist Bin Id</b></em>' reference.
@@ -350,7 +350,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ITEM__PICKLIST_BIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PICKLIST_ITEM__PICKLIST_BIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Order Id</b></em>' reference.
@@ -359,7 +359,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ITEM__ORDER_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PICKLIST_ITEM__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Inventory Item Id</b></em>' reference.
@@ -368,7 +368,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ITEM__INVENTORY_ITEM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PICKLIST_ITEM__INVENTORY_ITEM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -377,7 +377,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ITEM__ORDER_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PICKLIST_ITEM__ORDER_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Ship Group Seq Id</b></em>' attribute.
@@ -386,7 +386,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ITEM__SHIP_GROUP_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PICKLIST_ITEM__SHIP_GROUP_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Item Status Id</b></em>' reference.
@@ -395,7 +395,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ITEM__ITEM_STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PICKLIST_ITEM__ITEM_STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -404,7 +404,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ITEM__QUANTITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PICKLIST_ITEM__QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Item</em>' class.
@@ -413,7 +413,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ITEM_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PICKLIST_ITEM_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistRoleImpl <em>Role</em>}' class.
@@ -432,7 +432,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ROLE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PICKLIST_ROLE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -441,7 +441,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ROLE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PICKLIST_ROLE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -450,7 +450,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ROLE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PICKLIST_ROLE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -459,7 +459,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ROLE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PICKLIST_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Picklist Id</b></em>' reference.
@@ -468,7 +468,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ROLE__PICKLIST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PICKLIST_ROLE__PICKLIST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -477,7 +477,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ROLE__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PICKLIST_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -486,7 +486,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ROLE__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PICKLIST_ROLE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
@@ -495,7 +495,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ROLE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PICKLIST_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Created By User Login</b></em>' reference.
@@ -504,7 +504,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ROLE__CREATED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PICKLIST_ROLE__CREATED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified By User Login</b></em>' reference.
@@ -513,7 +513,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ROLE__LAST_MODIFIED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PICKLIST_ROLE__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -522,7 +522,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ROLE__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PICKLIST_ROLE__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Role</em>' class.
@@ -531,7 +531,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_ROLE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PICKLIST_ROLE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.shipment.picklist.impl.PicklistStatusHistoryImpl <em>Status History</em>}' class.
@@ -550,7 +550,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_STATUS_HISTORY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PICKLIST_STATUS_HISTORY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -559,7 +559,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_STATUS_HISTORY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PICKLIST_STATUS_HISTORY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -568,7 +568,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_STATUS_HISTORY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PICKLIST_STATUS_HISTORY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -577,7 +577,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_STATUS_HISTORY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PICKLIST_STATUS_HISTORY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Picklist Id</b></em>' reference.
@@ -586,7 +586,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_STATUS_HISTORY__PICKLIST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PICKLIST_STATUS_HISTORY__PICKLIST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Change Date</b></em>' attribute.
@@ -595,7 +595,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_STATUS_HISTORY__CHANGE_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PICKLIST_STATUS_HISTORY__CHANGE_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Change User Login Id</b></em>' reference.
@@ -604,7 +604,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_STATUS_HISTORY__CHANGE_USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PICKLIST_STATUS_HISTORY__CHANGE_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -613,7 +613,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_STATUS_HISTORY__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PICKLIST_STATUS_HISTORY__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Status Id To</b></em>' reference.
@@ -622,7 +622,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_STATUS_HISTORY__STATUS_ID_TO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PICKLIST_STATUS_HISTORY__STATUS_ID_TO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Status History</em>' class.
@@ -631,7 +631,7 @@ public interface PicklistPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PICKLIST_STATUS_HISTORY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PICKLIST_STATUS_HISTORY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 
 	/**

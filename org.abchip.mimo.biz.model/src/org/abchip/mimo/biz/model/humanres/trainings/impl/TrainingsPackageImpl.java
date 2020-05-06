@@ -734,14 +734,15 @@ public class TrainingsPackageImpl extends EPackageImpl implements TrainingsPacka
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 
 		// Create type parameters
 
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		trainingRequestEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		trainingRequestEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		trainingRequestEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(trainingRequestEClass, TrainingRequest.class, "TrainingRequest", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

@@ -8,9 +8,10 @@
 package org.abchip.mimo.biz.model.humanres.employment;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,7 +36,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model annotation="mimo-ent-frame title='Employee Leave' formula='description'"
  * @generated
  */
-public interface EmplLeave extends BizEntityTyped<EmplLeaveType> {
+public interface EmplLeave extends EntityTyped<EmplLeaveType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Approver Party Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

@@ -8,11 +8,12 @@
 package org.abchip.mimo.biz.model.product.inventory;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.product.facility.Container;
 import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +43,7 @@ import org.abchip.mimo.biz.model.shipment.issuance.ItemIssuance;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface InventoryTransfer extends BizEntity {
+public interface InventoryTransfer extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
 	 * <!-- begin-user-doc -->

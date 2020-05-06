@@ -8,9 +8,10 @@
 package org.abchip.mimo.biz.model.order.return_;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
 import org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +35,7 @@ import org.abchip.mimo.biz.model.shipment.receipt.ShipmentReceipt;
  * @model annotation="mimo-ent-frame title='Records the quantity and amount returned to an inventory item from a return item.'"
  * @generated
  */
-public interface ReturnItemBilling extends BizEntity {
+public interface ReturnItemBilling extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->

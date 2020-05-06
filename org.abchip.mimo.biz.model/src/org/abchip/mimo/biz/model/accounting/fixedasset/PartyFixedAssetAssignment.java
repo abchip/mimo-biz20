@@ -8,10 +8,11 @@
 package org.abchip.mimo.biz.model.accounting.fixedasset;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,7 +37,7 @@ import org.abchip.mimo.biz.model.party.party.RoleType;
  * @model
  * @generated
  */
-public interface PartyFixedAssetAssignment extends BizEntity {
+public interface PartyFixedAssetAssignment extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Allocated Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

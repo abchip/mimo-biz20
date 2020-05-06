@@ -10,9 +10,10 @@ package org.abchip.mimo.biz.model.shipment.shipment;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.common.uom.Uom;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -39,7 +40,7 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
  * @model annotation="mimo-ent-frame title='Shipment Time Estimation Entity'"
  * @generated
  */
-public interface ShipmentTimeEstimate extends BizEntity {
+public interface ShipmentTimeEstimate extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

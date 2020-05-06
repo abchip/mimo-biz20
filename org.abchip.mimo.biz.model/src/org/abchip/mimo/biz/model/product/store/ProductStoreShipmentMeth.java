@@ -8,12 +8,13 @@
 package org.abchip.mimo.biz.model.product.store;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.common.method.CustomMethod;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentGatewayConfig;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -58,7 +59,7 @@ import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
  * @model annotation="mimo-ent-frame title='Product Store Carrier Shipment Method' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductStoreShipmentMeth extends BizEntity {
+public interface ProductStoreShipmentMeth extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Allowance Percent</b></em>' attribute.
 	 * <!-- begin-user-doc -->

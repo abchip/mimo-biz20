@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.product.config;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.content.content.Content;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +32,7 @@ import org.abchip.mimo.biz.model.content.content.Content;
  * @model annotation="mimo-ent-frame title='Product Configuration Question Data Object' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProdConfItemContent extends BizEntityTyped<ProdConfItemContentType> {
+public interface ProdConfItemContent extends EntityTyped<ProdConfItemContentType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

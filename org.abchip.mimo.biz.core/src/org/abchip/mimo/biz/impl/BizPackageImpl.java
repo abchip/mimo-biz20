@@ -10,11 +10,8 @@ package org.abchip.mimo.biz.impl;
 import org.abchip.mimo.MimoPackage;
 import org.abchip.mimo.application.ApplicationPackage;
 import org.abchip.mimo.biz.BizComponent;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.BizEntityNote;
 import org.abchip.mimo.biz.BizEntityNoteData;
-import org.abchip.mimo.biz.BizEntityType;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.BizFactory;
 import org.abchip.mimo.biz.BizModule;
 import org.abchip.mimo.biz.BizPackage;
@@ -23,11 +20,8 @@ import org.eclipse.emf.common.util.URI;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
-import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
-import org.eclipse.emf.ecore.ETypeParameter;
-
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
@@ -56,28 +50,7 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass bizEntityEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	private EClass bizEntityNoteEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass bizEntityTypedEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass bizEntityTypeEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -226,16 +199,6 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 	 * @generated
 	 */
 	@Override
-	public EClass getBizEntity() {
-		return bizEntityEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
 	public EClass getBizEntityNote() {
 		return bizEntityNoteEClass;
 	}
@@ -248,26 +211,6 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 	@Override
 	public EAttribute getBizEntityNote_NoteId() {
 		return (EAttribute)bizEntityNoteEClass.getEStructuralFeatures().get(0);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getBizEntityTyped() {
-		return bizEntityTypedEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getBizEntityType() {
-		return bizEntityTypeEClass;
 	}
 
 	/**
@@ -394,8 +337,6 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 		createEReference(bizComponentEClass, BIZ_COMPONENT__BIZ_MODULES);
 		createEAttribute(bizComponentEClass, BIZ_COMPONENT__MODULES_DIR);
 
-		bizEntityEClass = createEClass(BIZ_ENTITY);
-
 		bizEntityNoteEClass = createEClass(BIZ_ENTITY_NOTE);
 		createEAttribute(bizEntityNoteEClass, BIZ_ENTITY_NOTE__NOTE_ID);
 
@@ -412,10 +353,6 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 		bizModuleEClass = createEClass(BIZ_MODULE);
 		createEAttribute(bizModuleEClass, BIZ_MODULE__NAME);
 		createEAttribute(bizModuleEClass, BIZ_MODULE__STATUS);
-
-		bizEntityTypedEClass = createEClass(BIZ_ENTITY_TYPED);
-
-		bizEntityTypeEClass = createEClass(BIZ_ENTITY_TYPE);
 	}
 
 	/**
@@ -446,46 +383,22 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 		EntityPackage theEntityPackage = (EntityPackage)EPackage.Registry.INSTANCE.getEPackage(EntityPackage.eNS_URI);
 
 		// Create type parameters
-		ETypeParameter bizEntityTypedEClass_T = addETypeParameter(bizEntityTypedEClass, "T");
-		ETypeParameter bizEntityTypeEClass_E = addETypeParameter(bizEntityTypeEClass, "E");
 
 		// Set bounds for type parameters
-		EGenericType g1 = createEGenericType(this.getBizEntityType());
-		EGenericType g2 = createEGenericType();
-		g1.getETypeArguments().add(g2);
-		bizEntityTypedEClass_T.getEBounds().add(g1);
-		g1 = createEGenericType(this.getBizEntityTyped());
-		g2 = createEGenericType();
-		g1.getETypeArguments().add(g2);
-		bizEntityTypeEClass_E.getEBounds().add(g1);
 
 		// Add supertypes to classes
 		bizComponentEClass.getESuperTypes().add(theApplicationPackage.getApplicationComponent());
-		bizEntityEClass.getESuperTypes().add(theEntityPackage.getEntityIdentifiable());
-		bizEntityEClass.getESuperTypes().add(theEntityPackage.getEntityInfo());
-		bizEntityNoteEClass.getESuperTypes().add(this.getBizEntity());
-		bizEntityNoteDataEClass.getESuperTypes().add(this.getBizEntity());
+		bizEntityNoteEClass.getESuperTypes().add(theEntityPackage.getEntityIdentifiable());
+		bizEntityNoteEClass.getESuperTypes().add(theEntityPackage.getEntityInfo());
+		bizEntityNoteDataEClass.getESuperTypes().add(theEntityPackage.getEntityIdentifiable());
+		bizEntityNoteDataEClass.getESuperTypes().add(theEntityPackage.getEntityInfo());
 		bizModuleEClass.getESuperTypes().add(theEntityPackage.getEntity());
-		g1 = createEGenericType(theEntityPackage.getEntityTyped());
-		g2 = createEGenericType(bizEntityTypedEClass_T);
-		g1.getETypeArguments().add(g2);
-		bizEntityTypedEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(this.getBizEntity());
-		bizEntityTypedEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theEntityPackage.getEntityType());
-		g2 = createEGenericType(bizEntityTypeEClass_E);
-		g1.getETypeArguments().add(g2);
-		bizEntityTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(this.getBizEntity());
-		bizEntityTypeEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(bizComponentEClass, BizComponent.class, "BizComponent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getBizComponent_Plugin(), ecorePackage.getEString(), "plugin", null, 1, 1, BizComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getBizComponent_BizModules(), this.getBizModule(), null, "bizModules", null, 0, -1, BizComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBizComponent_ModulesDir(), ecorePackage.getEString(), "modulesDir", null, 0, 1, BizComponent.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(bizEntityEClass, BizEntity.class, "BizEntity", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(bizEntityNoteEClass, BizEntityNote.class, "BizEntityNote", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getBizEntityNote_NoteId(), ecorePackage.getEString(), "noteId", null, 1, 1, BizEntityNote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -503,10 +416,6 @@ public class BizPackageImpl extends EPackageImpl implements BizPackage {
 		initEClass(bizModuleEClass, BizModule.class, "BizModule", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getBizModule_Name(), ecorePackage.getEString(), "name", null, 0, 1, BizModule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getBizModule_Status(), theApplicationPackage.getModuleStatus(), "status", "ACT", 1, 1, BizModule.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-
-		initEClass(bizEntityTypedEClass, BizEntityTyped.class, "BizEntityTyped", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-
-		initEClass(bizEntityTypeEClass, BizEntityType.class, "BizEntityType", IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

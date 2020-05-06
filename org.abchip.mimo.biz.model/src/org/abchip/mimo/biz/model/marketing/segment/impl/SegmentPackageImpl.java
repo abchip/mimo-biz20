@@ -969,7 +969,7 @@ public class SegmentPackageImpl extends EPackageImpl implements SegmentPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		StorePackage theStorePackage = (StorePackage)EPackage.Registry.INSTANCE.getEPackage(StorePackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
 		GeoPackage theGeoPackage = (GeoPackage)EPackage.Registry.INSTANCE.getEPackage(GeoPackage.eNS_URI);
@@ -979,11 +979,16 @@ public class SegmentPackageImpl extends EPackageImpl implements SegmentPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		segmentGroupEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		segmentGroupClassificationEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		segmentGroupGeoEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		segmentGroupRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		segmentGroupTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		segmentGroupEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		segmentGroupEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		segmentGroupClassificationEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		segmentGroupClassificationEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		segmentGroupGeoEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		segmentGroupGeoEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		segmentGroupRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		segmentGroupRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		segmentGroupTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		segmentGroupTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(segmentGroupEClass, SegmentGroup.class, "SegmentGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

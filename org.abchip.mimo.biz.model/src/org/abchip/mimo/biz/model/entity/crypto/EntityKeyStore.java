@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.entity.crypto;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +27,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model
  * @generated
  */
-public interface EntityKeyStore extends BizEntity {
+public interface EntityKeyStore extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Key Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

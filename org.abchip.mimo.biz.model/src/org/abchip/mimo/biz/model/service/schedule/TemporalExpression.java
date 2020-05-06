@@ -9,7 +9,8 @@ package org.abchip.mimo.biz.model.service.schedule;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,7 +37,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface TemporalExpression extends BizEntity {
+public interface TemporalExpression extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Temp Expr Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

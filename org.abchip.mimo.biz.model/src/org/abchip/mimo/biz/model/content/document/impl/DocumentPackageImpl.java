@@ -1005,23 +1005,29 @@ public class DocumentPackageImpl extends EPackageImpl implements DocumentPackage
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 
 		// Create type parameters
 
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getDocumentType());
 		g1.getETypeArguments().add(g2);
 		documentEClass.getEGenericSuperTypes().add(g1);
-		documentAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		documentEClass.getEGenericSuperTypes().add(g1);
+		documentAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		documentAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getDocument());
 		g1.getETypeArguments().add(g2);
 		documentTypeEClass.getEGenericSuperTypes().add(g1);
-		documentTypeAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		documentTypeEClass.getEGenericSuperTypes().add(g1);
+		documentTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		documentTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(documentEClass, Document.class, "Document", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

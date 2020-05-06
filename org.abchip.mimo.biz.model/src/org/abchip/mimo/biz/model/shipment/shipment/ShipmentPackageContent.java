@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.shipment.shipment;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * @model
  * @generated
  */
-public interface ShipmentPackageContent extends BizEntity {
+public interface ShipmentPackageContent extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Quantity</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.accounting.payment;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.budget.Budget;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.accounting.budget.Budget;
  * @model
  * @generated
  */
-public interface PaymentBudgetAllocation extends BizEntity {
+public interface PaymentBudgetAllocation extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.shipment.shipment;
 
-import org.abchip.mimo.biz.BizEntityTyped;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntityTyped;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface ShipmentGatewayConfig extends BizEntityTyped<ShipmentGatewayConfigType> {
+public interface ShipmentGatewayConfig extends EntityTyped<ShipmentGatewayConfigType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

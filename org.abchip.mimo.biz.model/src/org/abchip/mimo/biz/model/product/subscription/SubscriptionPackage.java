@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.subscription;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -114,7 +114,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__PRODUCT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Subscription Resource Id</b></em>' reference.
@@ -123,7 +123,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__SUBSCRIPTION_RESOURCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__SUBSCRIPTION_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Automatic Extend</b></em>' attribute.
@@ -141,7 +141,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__AUTOMATIC_EXTEND = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__AUTOMATIC_EXTEND = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Available Time</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__AVAILABLE_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__AVAILABLE_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Available Time Uom Id</b></em>' reference.
@@ -159,7 +159,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__AVAILABLE_TIME_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__AVAILABLE_TIME_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Cancl Autm Ext Time</b></em>' attribute.
@@ -168,7 +168,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__CANCL_AUTM_EXT_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__CANCL_AUTM_EXT_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Cancl Autm Ext Time Uom Id</b></em>' reference.
@@ -177,7 +177,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__CANCL_AUTM_EXT_TIME_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__CANCL_AUTM_EXT_TIME_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Grace Period On Expiry</b></em>' attribute.
@@ -186,7 +186,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__GRACE_PERIOD_ON_EXPIRY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__GRACE_PERIOD_ON_EXPIRY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Grace Period On Expiry Uom Id</b></em>' reference.
@@ -195,7 +195,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__GRACE_PERIOD_ON_EXPIRY_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__GRACE_PERIOD_ON_EXPIRY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Max Life Time</b></em>' attribute.
@@ -204,7 +204,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__MAX_LIFE_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__MAX_LIFE_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Max Life Time Uom Id</b></em>' reference.
@@ -213,7 +213,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__MAX_LIFE_TIME_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__MAX_LIFE_TIME_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Purchase From Date</b></em>' attribute.
@@ -222,7 +222,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__PURCHASE_FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__PURCHASE_FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Purchase Thru Date</b></em>' attribute.
@@ -231,7 +231,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__PURCHASE_THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__PURCHASE_THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -240,7 +240,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Use Count Limit</b></em>' attribute.
@@ -249,7 +249,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__USE_COUNT_LIMIT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__USE_COUNT_LIMIT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Use Role Type Id</b></em>' reference.
@@ -258,7 +258,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__USE_ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__USE_ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Use Time</b></em>' attribute.
@@ -267,7 +267,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__USE_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 17;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__USE_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Use Time Uom Id</b></em>' reference.
@@ -276,7 +276,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE__USE_TIME_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 18;
+	int PRODUCT_SUBSCRIPTION_RESOURCE__USE_TIME_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
 
 	/**
 	 * The number of structural features of the '<em>Product Subscription Resource</em>' class.
@@ -285,7 +285,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_SUBSCRIPTION_RESOURCE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 19;
+	int PRODUCT_SUBSCRIPTION_RESOURCE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 23;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionImpl <em>Subscription</em>}' class.
@@ -304,7 +304,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int SUBSCRIPTION__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -313,7 +313,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int SUBSCRIPTION__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -322,7 +322,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int SUBSCRIPTION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -331,7 +331,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int SUBSCRIPTION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Subscription Id</b></em>' attribute.
@@ -340,7 +340,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__SUBSCRIPTION_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int SUBSCRIPTION__SUBSCRIPTION_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Automatic Extend</b></em>' attribute.
@@ -349,7 +349,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__AUTOMATIC_EXTEND = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int SUBSCRIPTION__AUTOMATIC_EXTEND = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Available Time</b></em>' attribute.
@@ -358,7 +358,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__AVAILABLE_TIME = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int SUBSCRIPTION__AVAILABLE_TIME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Available Time Uom Id</b></em>' reference.
@@ -367,7 +367,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__AVAILABLE_TIME_UOM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int SUBSCRIPTION__AVAILABLE_TIME_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Cancl Autm Ext Time</b></em>' attribute.
@@ -376,7 +376,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__CANCL_AUTM_EXT_TIME = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int SUBSCRIPTION__CANCL_AUTM_EXT_TIME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Cancl Autm Ext Time Uom Id</b></em>' reference.
@@ -385,7 +385,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__CANCL_AUTM_EXT_TIME_UOM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int SUBSCRIPTION__CANCL_AUTM_EXT_TIME_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Communication Event Id</b></em>' attribute.
@@ -394,7 +394,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__COMMUNICATION_EVENT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int SUBSCRIPTION__COMMUNICATION_EVENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Contact Mech Id</b></em>' reference.
@@ -403,7 +403,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__CONTACT_MECH_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int SUBSCRIPTION__CONTACT_MECH_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -412,7 +412,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int SUBSCRIPTION__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Expiration Completed Date</b></em>' attribute.
@@ -421,7 +421,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__EXPIRATION_COMPLETED_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 9;
+	int SUBSCRIPTION__EXPIRATION_COMPLETED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>External Subscription Id</b></em>' attribute.
@@ -430,7 +430,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__EXTERNAL_SUBSCRIPTION_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 10;
+	int SUBSCRIPTION__EXTERNAL_SUBSCRIPTION_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -439,7 +439,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__FROM_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 11;
+	int SUBSCRIPTION__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Grace Period On Expiry</b></em>' attribute.
@@ -448,7 +448,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__GRACE_PERIOD_ON_EXPIRY = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 12;
+	int SUBSCRIPTION__GRACE_PERIOD_ON_EXPIRY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Grace Period On Expiry Uom Id</b></em>' reference.
@@ -457,7 +457,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__GRACE_PERIOD_ON_EXPIRY_UOM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 13;
+	int SUBSCRIPTION__GRACE_PERIOD_ON_EXPIRY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Inventory Item Id</b></em>' reference.
@@ -466,7 +466,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__INVENTORY_ITEM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 14;
+	int SUBSCRIPTION__INVENTORY_ITEM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Max Life Time</b></em>' attribute.
@@ -475,7 +475,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__MAX_LIFE_TIME = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 15;
+	int SUBSCRIPTION__MAX_LIFE_TIME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Max Life Time Uom Id</b></em>' reference.
@@ -484,7 +484,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__MAX_LIFE_TIME_UOM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 16;
+	int SUBSCRIPTION__MAX_LIFE_TIME_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Need Type Id</b></em>' reference.
@@ -493,7 +493,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__NEED_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 17;
+	int SUBSCRIPTION__NEED_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Order Id</b></em>' reference.
@@ -502,7 +502,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__ORDER_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 18;
+	int SUBSCRIPTION__ORDER_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -511,7 +511,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__ORDER_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 19;
+	int SUBSCRIPTION__ORDER_ITEM_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Originated From Party Id</b></em>' reference.
@@ -520,7 +520,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__ORIGINATED_FROM_PARTY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 20;
+	int SUBSCRIPTION__ORIGINATED_FROM_PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Originated From Role Type Id</b></em>' reference.
@@ -529,7 +529,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__ORIGINATED_FROM_ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 21;
+	int SUBSCRIPTION__ORIGINATED_FROM_ROLE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -538,7 +538,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__PARTY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 22;
+	int SUBSCRIPTION__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Party Need Id</b></em>' attribute.
@@ -547,7 +547,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__PARTY_NEED_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 23;
+	int SUBSCRIPTION__PARTY_NEED_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
@@ -556,7 +556,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__PRODUCT_CATEGORY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 24;
+	int SUBSCRIPTION__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -565,7 +565,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__PRODUCT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 25;
+	int SUBSCRIPTION__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Purchase From Date</b></em>' attribute.
@@ -574,7 +574,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__PURCHASE_FROM_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 26;
+	int SUBSCRIPTION__PURCHASE_FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Purchase Thru Date</b></em>' attribute.
@@ -583,7 +583,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__PURCHASE_THRU_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 27;
+	int SUBSCRIPTION__PURCHASE_THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -592,7 +592,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 28;
+	int SUBSCRIPTION__ROLE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 32;
 
 	/**
 	 * The feature id for the '<em><b>Subscription Attributes</b></em>' reference list.
@@ -601,7 +601,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__SUBSCRIPTION_ATTRIBUTES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 29;
+	int SUBSCRIPTION__SUBSCRIPTION_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 33;
 
 	/**
 	 * The feature id for the '<em><b>Subscription Comm Events</b></em>' reference list.
@@ -610,7 +610,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__SUBSCRIPTION_COMM_EVENTS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 30;
+	int SUBSCRIPTION__SUBSCRIPTION_COMM_EVENTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 34;
 
 	/**
 	 * The feature id for the '<em><b>Subscription Resource Id</b></em>' reference.
@@ -619,7 +619,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__SUBSCRIPTION_RESOURCE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 31;
+	int SUBSCRIPTION__SUBSCRIPTION_RESOURCE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 35;
 
 	/**
 	 * The feature id for the '<em><b>Subscription Type Id</b></em>' reference.
@@ -628,7 +628,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__SUBSCRIPTION_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 32;
+	int SUBSCRIPTION__SUBSCRIPTION_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 36;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -637,7 +637,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__THRU_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 33;
+	int SUBSCRIPTION__THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 37;
 
 	/**
 	 * The feature id for the '<em><b>Use Count Limit</b></em>' attribute.
@@ -646,7 +646,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__USE_COUNT_LIMIT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 34;
+	int SUBSCRIPTION__USE_COUNT_LIMIT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 38;
 
 	/**
 	 * The feature id for the '<em><b>Use Time</b></em>' attribute.
@@ -655,7 +655,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__USE_TIME = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 35;
+	int SUBSCRIPTION__USE_TIME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 39;
 
 	/**
 	 * The feature id for the '<em><b>Use Time Uom Id</b></em>' reference.
@@ -664,7 +664,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION__USE_TIME_UOM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 36;
+	int SUBSCRIPTION__USE_TIME_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 40;
 
 	/**
 	 * The number of structural features of the '<em>Subscription</em>' class.
@@ -673,7 +673,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 37;
+	int SUBSCRIPTION_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 41;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionActivityImpl <em>Activity</em>}' class.
@@ -692,7 +692,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_ACTIVITY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SUBSCRIPTION_ACTIVITY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -701,7 +701,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_ACTIVITY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SUBSCRIPTION_ACTIVITY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -710,7 +710,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_ACTIVITY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SUBSCRIPTION_ACTIVITY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -719,7 +719,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_ACTIVITY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SUBSCRIPTION_ACTIVITY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Subscription Activity Id</b></em>' attribute.
@@ -728,7 +728,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_ACTIVITY__SUBSCRIPTION_ACTIVITY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SUBSCRIPTION_ACTIVITY__SUBSCRIPTION_ACTIVITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -737,7 +737,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_ACTIVITY__COMMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SUBSCRIPTION_ACTIVITY__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Date Sent</b></em>' attribute.
@@ -746,7 +746,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_ACTIVITY__DATE_SENT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SUBSCRIPTION_ACTIVITY__DATE_SENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Subscription Fulfillment Pieces</b></em>' reference list.
@@ -755,7 +755,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_ACTIVITY__SUBSCRIPTION_FULFILLMENT_PIECES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SUBSCRIPTION_ACTIVITY__SUBSCRIPTION_FULFILLMENT_PIECES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Activity</em>' class.
@@ -764,7 +764,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_ACTIVITY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SUBSCRIPTION_ACTIVITY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionAttributeImpl <em>Attribute</em>}' class.
@@ -783,7 +783,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SUBSCRIPTION_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -792,7 +792,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SUBSCRIPTION_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -801,7 +801,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SUBSCRIPTION_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -810,7 +810,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SUBSCRIPTION_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Subscription Id</b></em>' reference.
@@ -819,7 +819,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_ATTRIBUTE__SUBSCRIPTION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SUBSCRIPTION_ATTRIBUTE__SUBSCRIPTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -828,7 +828,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SUBSCRIPTION_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -837,7 +837,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SUBSCRIPTION_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -846,7 +846,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SUBSCRIPTION_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Attribute</em>' class.
@@ -855,7 +855,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SUBSCRIPTION_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionCommEventImpl <em>Comm Event</em>}' class.
@@ -874,7 +874,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_COMM_EVENT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SUBSCRIPTION_COMM_EVENT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -883,7 +883,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_COMM_EVENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SUBSCRIPTION_COMM_EVENT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -892,7 +892,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_COMM_EVENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SUBSCRIPTION_COMM_EVENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -901,7 +901,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_COMM_EVENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SUBSCRIPTION_COMM_EVENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Communication Event Id</b></em>' reference.
@@ -910,7 +910,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_COMM_EVENT__COMMUNICATION_EVENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SUBSCRIPTION_COMM_EVENT__COMMUNICATION_EVENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Subscription Id</b></em>' reference.
@@ -919,7 +919,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_COMM_EVENT__SUBSCRIPTION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SUBSCRIPTION_COMM_EVENT__SUBSCRIPTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Comm Event</em>' class.
@@ -928,7 +928,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_COMM_EVENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SUBSCRIPTION_COMM_EVENT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionFulfillmentPieceImpl <em>Fulfillment Piece</em>}' class.
@@ -947,7 +947,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_FULFILLMENT_PIECE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SUBSCRIPTION_FULFILLMENT_PIECE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -956,7 +956,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_FULFILLMENT_PIECE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SUBSCRIPTION_FULFILLMENT_PIECE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -965,7 +965,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_FULFILLMENT_PIECE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SUBSCRIPTION_FULFILLMENT_PIECE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -974,7 +974,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_FULFILLMENT_PIECE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SUBSCRIPTION_FULFILLMENT_PIECE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Subscription Id</b></em>' reference.
@@ -983,7 +983,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_FULFILLMENT_PIECE__SUBSCRIPTION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SUBSCRIPTION_FULFILLMENT_PIECE__SUBSCRIPTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Subscription Activity Id</b></em>' reference.
@@ -992,7 +992,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_FULFILLMENT_PIECE__SUBSCRIPTION_ACTIVITY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SUBSCRIPTION_FULFILLMENT_PIECE__SUBSCRIPTION_ACTIVITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Fulfillment Piece</em>' class.
@@ -1001,7 +1001,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_FULFILLMENT_PIECE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SUBSCRIPTION_FULFILLMENT_PIECE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionResourceImpl <em>Resource</em>}' class.
@@ -1020,7 +1020,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_RESOURCE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SUBSCRIPTION_RESOURCE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1029,7 +1029,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_RESOURCE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SUBSCRIPTION_RESOURCE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1038,7 +1038,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_RESOURCE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SUBSCRIPTION_RESOURCE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1047,7 +1047,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_RESOURCE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SUBSCRIPTION_RESOURCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Subscription Resource Id</b></em>' attribute.
@@ -1056,7 +1056,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_RESOURCE__SUBSCRIPTION_RESOURCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SUBSCRIPTION_RESOURCE__SUBSCRIPTION_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Content Id</b></em>' reference.
@@ -1065,7 +1065,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_RESOURCE__CONTENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SUBSCRIPTION_RESOURCE__CONTENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1074,7 +1074,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_RESOURCE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SUBSCRIPTION_RESOURCE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Resource Id</b></em>' reference.
@@ -1083,7 +1083,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_RESOURCE__PARENT_RESOURCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SUBSCRIPTION_RESOURCE__PARENT_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Service Name On Expiry</b></em>' attribute.
@@ -1092,7 +1092,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_RESOURCE__SERVICE_NAME_ON_EXPIRY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SUBSCRIPTION_RESOURCE__SERVICE_NAME_ON_EXPIRY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Web Site Id</b></em>' reference.
@@ -1101,7 +1101,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_RESOURCE__WEB_SITE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int SUBSCRIPTION_RESOURCE__WEB_SITE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Resource</em>' class.
@@ -1110,7 +1110,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_RESOURCE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int SUBSCRIPTION_RESOURCE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionTypeImpl <em>Type</em>}' class.
@@ -1129,7 +1129,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int SUBSCRIPTION_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1138,7 +1138,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int SUBSCRIPTION_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1147,7 +1147,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int SUBSCRIPTION_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1156,7 +1156,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int SUBSCRIPTION_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1165,7 +1165,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int SUBSCRIPTION_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Subscription Type Id</b></em>' attribute.
@@ -1174,7 +1174,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE__SUBSCRIPTION_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int SUBSCRIPTION_TYPE__SUBSCRIPTION_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1183,7 +1183,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int SUBSCRIPTION_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -1192,7 +1192,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int SUBSCRIPTION_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -1201,7 +1201,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int SUBSCRIPTION_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Subscription Type Attrs</b></em>' reference list.
@@ -1210,7 +1210,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE__SUBSCRIPTION_TYPE_ATTRS = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int SUBSCRIPTION_TYPE__SUBSCRIPTION_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -1219,7 +1219,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 5;
+	int SUBSCRIPTION_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.subscription.impl.SubscriptionTypeAttrImpl <em>Type Attr</em>}' class.
@@ -1238,7 +1238,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE_ATTR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SUBSCRIPTION_TYPE_ATTR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1247,7 +1247,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE_ATTR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SUBSCRIPTION_TYPE_ATTR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1256,7 +1256,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE_ATTR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SUBSCRIPTION_TYPE_ATTR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1265,7 +1265,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE_ATTR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SUBSCRIPTION_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Subscription Type Id</b></em>' reference.
@@ -1274,7 +1274,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE_ATTR__SUBSCRIPTION_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SUBSCRIPTION_TYPE_ATTR__SUBSCRIPTION_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1283,7 +1283,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE_ATTR__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SUBSCRIPTION_TYPE_ATTR__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1292,7 +1292,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE_ATTR__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SUBSCRIPTION_TYPE_ATTR__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Type Attr</em>' class.
@@ -1301,7 +1301,7 @@ public interface SubscriptionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUBSCRIPTION_TYPE_ATTR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SUBSCRIPTION_TYPE_ATTR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 
 	/**

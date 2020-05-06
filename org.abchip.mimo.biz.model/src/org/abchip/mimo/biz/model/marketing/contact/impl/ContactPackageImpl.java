@@ -1297,7 +1297,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		org.abchip.mimo.biz.model.party.contact.ContactPackage theContactPackage_1 = (org.abchip.mimo.biz.model.party.contact.ContactPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.model.party.contact.ContactPackage.eNS_URI);
 		LoginPackage theLoginPackage = (LoginPackage)EPackage.Registry.INSTANCE.getEPackage(LoginPackage.eNS_URI);
 		CampaignPackage theCampaignPackage = (CampaignPackage)EPackage.Registry.INSTANCE.getEPackage(CampaignPackage.eNS_URI);
@@ -1311,12 +1311,18 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		contactListEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contactListCommStatusEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contactListPartyEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contactListPartyStatusEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		contactListTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		webSiteContactListEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		contactListEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contactListEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contactListCommStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contactListCommStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contactListPartyEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contactListPartyEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contactListPartyStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contactListPartyStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		contactListTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		contactListTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		webSiteContactListEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		webSiteContactListEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(contactListEClass, ContactList.class, "ContactList", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.order.shoppinglist;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.content.survey.SurveyResponse;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.model.content.survey.SurveyResponse;
  * @model annotation="mimo-ent-frame title='Shopping List Item'"
  * @generated
  */
-public interface ShoppingListItemSurvey extends BizEntity {
+public interface ShoppingListItemSurvey extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Shopping List Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

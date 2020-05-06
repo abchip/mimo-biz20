@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.common.geo;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame dictionary='CommonEntityLabels'"
  * @generated
  */
-public interface CountryAddressFormat extends BizEntity {
+public interface CountryAddressFormat extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Address Format</b></em>' attribute.
 	 * <!-- begin-user-doc -->

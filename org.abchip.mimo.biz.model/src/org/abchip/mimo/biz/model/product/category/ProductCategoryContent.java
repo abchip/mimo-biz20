@@ -10,8 +10,9 @@ package org.abchip.mimo.biz.model.product.category;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.content.content.Content;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +38,7 @@ import org.abchip.mimo.biz.model.content.content.Content;
  * @model annotation="mimo-ent-frame title='Product Category Data Object' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductCategoryContent extends BizEntityTyped<ProductCategoryContentType> {
+public interface ProductCategoryContent extends EntityTyped<ProductCategoryContentType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.product.feature;
 
-import org.abchip.mimo.biz.BizEntityType;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.BizEntityType;
  * @model annotation="mimo-ent-frame title='Product Feature Interaction Type' dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface ProductFeatureIactnType extends BizEntityType<ProductFeatureIactn> {
+public interface ProductFeatureIactnType extends EntityType<ProductFeatureIactn>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

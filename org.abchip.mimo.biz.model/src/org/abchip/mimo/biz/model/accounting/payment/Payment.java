@@ -11,7 +11,6 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
@@ -19,6 +18,8 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.order.order.OrderPaymentPreference;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -55,7 +56,7 @@ import org.abchip.mimo.biz.model.party.party.RoleType;
  * @model
  * @generated
  */
-public interface Payment extends BizEntityTyped<PaymentType> {
+public interface Payment extends EntityTyped<PaymentType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Actual Currency Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.shipment.shipment;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.uom.Uom;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +43,7 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
  * @model annotation="mimo-ent-frame title='Shipment Package Route Segment'"
  * @generated
  */
-public interface ShipmentPackageRouteSeg extends BizEntity {
+public interface ShipmentPackageRouteSeg extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Box Number</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -752,7 +752,7 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		SynchronizationPackage theSynchronizationPackage = (SynchronizationPackage)EPackage.Registry.INSTANCE.getEPackage(SynchronizationPackage.eNS_URI);
 		TenantPackage theTenantPackage = (TenantPackage)EPackage.Registry.INSTANCE.getEPackage(TenantPackage.eNS_URI);
 		TestPackage theTestPackage = (TestPackage)EPackage.Registry.INSTANCE.getEPackage(TestPackage.eNS_URI);
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 
 		// Add subpackages
 		getESubpackages().add(theAuditPackage);
@@ -768,7 +768,8 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		javaResourceEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		javaResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		javaResourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(javaResourceEClass, JavaResource.class, "JavaResource", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

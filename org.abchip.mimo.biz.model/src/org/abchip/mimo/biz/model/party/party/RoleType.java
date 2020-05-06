@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.party.party;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.contact.ValidContactMechRole;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.model.party.contact.ValidContactMechRole;
  * @model annotation="mimo-ent-frame dictionary='PartyEntityLabels' formula='description'"
  * @generated
  */
-public interface RoleType extends BizEntity {
+public interface RoleType extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.product.feature;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.content.data.DataResource;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.model.content.data.DataResource;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductFeatureDataResource extends BizEntity {
+public interface ProductFeatureDataResource extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Data Resource Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.common.geo;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.accounting.tax.TaxAuthority;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,7 +36,7 @@ import org.abchip.mimo.biz.model.accounting.tax.TaxAuthority;
  * @model annotation="mimo-ent-frame title='Geographic Boundary' dictionary='CommonEntityLabels'"
  * @generated
  */
-public interface Geo extends BizEntityTyped<GeoType> {
+public interface Geo extends EntityTyped<GeoType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Abbreviation</b></em>' attribute.
 	 * <!-- begin-user-doc -->

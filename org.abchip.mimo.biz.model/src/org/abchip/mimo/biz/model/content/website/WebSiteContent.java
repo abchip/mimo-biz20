@@ -8,9 +8,10 @@
 package org.abchip.mimo.biz.model.content.website;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.content.content.Content;
 import org.abchip.mimo.biz.model.webapp.website.WebSite;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.model.webapp.website.WebSite;
  * @model annotation="mimo-ent-frame title='Web Site Content Associations'"
  * @generated
  */
-public interface WebSiteContent extends BizEntityTyped<WebSiteContentType> {
+public interface WebSiteContent extends EntityTyped<WebSiteContentType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

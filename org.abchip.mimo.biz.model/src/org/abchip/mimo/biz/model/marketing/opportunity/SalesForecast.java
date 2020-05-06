@@ -9,11 +9,12 @@ package org.abchip.mimo.biz.model.marketing.opportunity;
 
 import java.math.BigDecimal;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.period.CustomTimePeriod;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -46,7 +47,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  * @model annotation="mimo-ent-frame title='Stores sales forecast data for sales opportunities.'"
  * @generated
  */
-public interface SalesForecast extends BizEntity {
+public interface SalesForecast extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Best Case Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->

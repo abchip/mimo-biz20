@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.accounting.finaccount;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Financial Account Transaction Type Attribute' formula='description'"
  * @generated
  */
-public interface FinAccountTransTypeAttr extends BizEntity {
+public interface FinAccountTransTypeAttr extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

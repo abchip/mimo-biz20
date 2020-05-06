@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.marketing.contact;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CONTACT_LIST__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CONTACT_LIST__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CONTACT_LIST__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CONTACT_LIST__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Contact List Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__CONTACT_LIST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CONTACT_LIST__CONTACT_LIST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__COMMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CONTACT_LIST__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Contact List Name</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__CONTACT_LIST_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CONTACT_LIST__CONTACT_LIST_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Contact List Type Id</b></em>' reference.
@@ -141,7 +141,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__CONTACT_LIST_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int CONTACT_LIST__CONTACT_LIST_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Contact Mech Type Id</b></em>' reference.
@@ -150,7 +150,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__CONTACT_MECH_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int CONTACT_LIST__CONTACT_MECH_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Created By User Login</b></em>' reference.
@@ -159,7 +159,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__CREATED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int CONTACT_LIST__CREATED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -168,7 +168,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int CONTACT_LIST__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Is Public</b></em>' attribute.
@@ -177,7 +177,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__IS_PUBLIC = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int CONTACT_LIST__IS_PUBLIC = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified By User Login</b></em>' reference.
@@ -186,7 +186,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__LAST_MODIFIED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int CONTACT_LIST__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Marketing Campaign Id</b></em>' reference.
@@ -195,7 +195,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__MARKETING_CAMPAIGN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int CONTACT_LIST__MARKETING_CAMPAIGN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Opt Out Screen</b></em>' attribute.
@@ -204,7 +204,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__OPT_OUT_SCREEN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int CONTACT_LIST__OPT_OUT_SCREEN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Owner Party Id</b></em>' reference.
@@ -213,7 +213,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__OWNER_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int CONTACT_LIST__OWNER_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Single Use</b></em>' attribute.
@@ -222,7 +222,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__SINGLE_USE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int CONTACT_LIST__SINGLE_USE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Verify Email From</b></em>' attribute.
@@ -231,7 +231,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__VERIFY_EMAIL_FROM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int CONTACT_LIST__VERIFY_EMAIL_FROM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Verify Email Screen</b></em>' attribute.
@@ -240,7 +240,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__VERIFY_EMAIL_SCREEN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int CONTACT_LIST__VERIFY_EMAIL_SCREEN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Verify Email Subject</b></em>' attribute.
@@ -249,7 +249,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__VERIFY_EMAIL_SUBJECT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int CONTACT_LIST__VERIFY_EMAIL_SUBJECT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Verify Email Web Site Id</b></em>' attribute.
@@ -258,7 +258,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__VERIFY_EMAIL_WEB_SITE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int CONTACT_LIST__VERIFY_EMAIL_WEB_SITE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The number of structural features of the '<em>List</em>' class.
@@ -267,7 +267,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 17;
+	int CONTACT_LIST_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListCommStatusImpl <em>List Comm Status</em>}' class.
@@ -286,7 +286,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_COMM_STATUS__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CONTACT_LIST_COMM_STATUS__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -295,7 +295,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_COMM_STATUS__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CONTACT_LIST_COMM_STATUS__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -304,7 +304,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_COMM_STATUS__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CONTACT_LIST_COMM_STATUS__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -313,7 +313,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_COMM_STATUS__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CONTACT_LIST_COMM_STATUS__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Contact List Id</b></em>' reference.
@@ -322,7 +322,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_COMM_STATUS__CONTACT_LIST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CONTACT_LIST_COMM_STATUS__CONTACT_LIST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Communication Event Id</b></em>' reference.
@@ -331,7 +331,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_COMM_STATUS__COMMUNICATION_EVENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CONTACT_LIST_COMM_STATUS__COMMUNICATION_EVENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Contact Mech Id</b></em>' reference.
@@ -340,7 +340,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_COMM_STATUS__CONTACT_MECH_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CONTACT_LIST_COMM_STATUS__CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Change By User Login Id</b></em>' reference.
@@ -349,7 +349,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_COMM_STATUS__CHANGE_BY_USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int CONTACT_LIST_COMM_STATUS__CHANGE_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Message Id</b></em>' attribute.
@@ -358,7 +358,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_COMM_STATUS__MESSAGE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int CONTACT_LIST_COMM_STATUS__MESSAGE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -367,7 +367,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_COMM_STATUS__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int CONTACT_LIST_COMM_STATUS__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -376,7 +376,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_COMM_STATUS__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int CONTACT_LIST_COMM_STATUS__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>List Comm Status</em>' class.
@@ -385,7 +385,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_COMM_STATUS_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int CONTACT_LIST_COMM_STATUS_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListPartyImpl <em>List Party</em>}' class.
@@ -404,7 +404,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CONTACT_LIST_PARTY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -413,7 +413,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CONTACT_LIST_PARTY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -422,7 +422,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CONTACT_LIST_PARTY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -431,7 +431,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CONTACT_LIST_PARTY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Contact List Id</b></em>' reference.
@@ -440,7 +440,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY__CONTACT_LIST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CONTACT_LIST_PARTY__CONTACT_LIST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -449,7 +449,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CONTACT_LIST_PARTY__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -458,7 +458,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CONTACT_LIST_PARTY__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Preferred Contact Mech Id</b></em>' reference.
@@ -467,7 +467,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY__PREFERRED_CONTACT_MECH_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int CONTACT_LIST_PARTY__PREFERRED_CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -476,7 +476,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int CONTACT_LIST_PARTY__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -485,7 +485,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int CONTACT_LIST_PARTY__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>List Party</em>' class.
@@ -494,7 +494,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int CONTACT_LIST_PARTY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListPartyStatusImpl <em>List Party Status</em>}' class.
@@ -513,7 +513,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY_STATUS__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CONTACT_LIST_PARTY_STATUS__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -522,7 +522,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY_STATUS__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CONTACT_LIST_PARTY_STATUS__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -531,7 +531,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY_STATUS__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CONTACT_LIST_PARTY_STATUS__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -540,7 +540,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY_STATUS__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CONTACT_LIST_PARTY_STATUS__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Contact List Id</b></em>' attribute.
@@ -549,7 +549,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY_STATUS__CONTACT_LIST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CONTACT_LIST_PARTY_STATUS__CONTACT_LIST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -558,7 +558,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY_STATUS__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CONTACT_LIST_PARTY_STATUS__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
@@ -567,7 +567,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY_STATUS__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CONTACT_LIST_PARTY_STATUS__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Status Date</b></em>' attribute.
@@ -576,7 +576,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY_STATUS__STATUS_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int CONTACT_LIST_PARTY_STATUS__STATUS_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Opt In Verify Code</b></em>' attribute.
@@ -585,7 +585,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY_STATUS__OPT_IN_VERIFY_CODE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int CONTACT_LIST_PARTY_STATUS__OPT_IN_VERIFY_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Set By User Login Id</b></em>' attribute.
@@ -594,7 +594,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY_STATUS__SET_BY_USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int CONTACT_LIST_PARTY_STATUS__SET_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' attribute.
@@ -603,7 +603,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY_STATUS__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int CONTACT_LIST_PARTY_STATUS__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>List Party Status</em>' class.
@@ -612,7 +612,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_PARTY_STATUS_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int CONTACT_LIST_PARTY_STATUS_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListTypeImpl <em>List Type</em>}' class.
@@ -631,7 +631,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CONTACT_LIST_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -640,7 +640,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CONTACT_LIST_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -649,7 +649,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CONTACT_LIST_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -658,7 +658,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CONTACT_LIST_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Contact List Type Id</b></em>' attribute.
@@ -667,7 +667,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_TYPE__CONTACT_LIST_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CONTACT_LIST_TYPE__CONTACT_LIST_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -676,7 +676,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CONTACT_LIST_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>List Type</em>' class.
@@ -685,7 +685,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CONTACT_LIST_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.contact.impl.WebSiteContactListImpl <em>Web Site Contact List</em>}' class.
@@ -704,7 +704,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_CONTACT_LIST__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int WEB_SITE_CONTACT_LIST__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -713,7 +713,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_CONTACT_LIST__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int WEB_SITE_CONTACT_LIST__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -722,7 +722,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_CONTACT_LIST__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int WEB_SITE_CONTACT_LIST__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -731,7 +731,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_CONTACT_LIST__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int WEB_SITE_CONTACT_LIST__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Web Site Id</b></em>' reference.
@@ -740,7 +740,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_CONTACT_LIST__WEB_SITE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int WEB_SITE_CONTACT_LIST__WEB_SITE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Contact List Id</b></em>' reference.
@@ -749,7 +749,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_CONTACT_LIST__CONTACT_LIST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int WEB_SITE_CONTACT_LIST__CONTACT_LIST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -758,7 +758,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_CONTACT_LIST__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int WEB_SITE_CONTACT_LIST__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -767,7 +767,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_CONTACT_LIST__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int WEB_SITE_CONTACT_LIST__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Web Site Contact List</em>' class.
@@ -776,7 +776,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_CONTACT_LIST_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int WEB_SITE_CONTACT_LIST_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 
 	/**

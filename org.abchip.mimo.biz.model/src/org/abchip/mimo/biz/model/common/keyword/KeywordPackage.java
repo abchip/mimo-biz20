@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.common.keyword;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface KeywordPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int KEYWORD_THESAURUS__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int KEYWORD_THESAURUS__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface KeywordPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int KEYWORD_THESAURUS__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int KEYWORD_THESAURUS__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface KeywordPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int KEYWORD_THESAURUS__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int KEYWORD_THESAURUS__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface KeywordPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int KEYWORD_THESAURUS__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int KEYWORD_THESAURUS__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Alternate Keyword</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface KeywordPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int KEYWORD_THESAURUS__ALTERNATE_KEYWORD = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int KEYWORD_THESAURUS__ALTERNATE_KEYWORD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Entered Keyword</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface KeywordPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int KEYWORD_THESAURUS__ENTERED_KEYWORD = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int KEYWORD_THESAURUS__ENTERED_KEYWORD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Relationship Enum Id</b></em>' reference.
@@ -132,7 +132,7 @@ public interface KeywordPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int KEYWORD_THESAURUS__RELATIONSHIP_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int KEYWORD_THESAURUS__RELATIONSHIP_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Thesaurus</em>' class.
@@ -141,7 +141,7 @@ public interface KeywordPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int KEYWORD_THESAURUS_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int KEYWORD_THESAURUS_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 
 	/**

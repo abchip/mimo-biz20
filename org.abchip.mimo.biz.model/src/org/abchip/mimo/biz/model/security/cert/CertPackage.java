@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.security.cert;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -77,7 +77,7 @@ public interface CertPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int X509_ISSUER_PROVISION__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int X509_ISSUER_PROVISION__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -86,7 +86,7 @@ public interface CertPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int X509_ISSUER_PROVISION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int X509_ISSUER_PROVISION__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -95,7 +95,7 @@ public interface CertPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int X509_ISSUER_PROVISION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int X509_ISSUER_PROVISION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -104,7 +104,7 @@ public interface CertPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int X509_ISSUER_PROVISION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int X509_ISSUER_PROVISION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cert Provision Id</b></em>' attribute.
@@ -113,7 +113,7 @@ public interface CertPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int X509_ISSUER_PROVISION__CERT_PROVISION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int X509_ISSUER_PROVISION__CERT_PROVISION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>City Locality</b></em>' attribute.
@@ -122,7 +122,7 @@ public interface CertPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int X509_ISSUER_PROVISION__CITY_LOCALITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int X509_ISSUER_PROVISION__CITY_LOCALITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Common Name</b></em>' attribute.
@@ -131,7 +131,7 @@ public interface CertPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int X509_ISSUER_PROVISION__COMMON_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int X509_ISSUER_PROVISION__COMMON_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Country</b></em>' attribute.
@@ -140,7 +140,7 @@ public interface CertPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int X509_ISSUER_PROVISION__COUNTRY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int X509_ISSUER_PROVISION__COUNTRY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Organization Name</b></em>' attribute.
@@ -149,7 +149,7 @@ public interface CertPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int X509_ISSUER_PROVISION__ORGANIZATION_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int X509_ISSUER_PROVISION__ORGANIZATION_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Organizational Unit</b></em>' attribute.
@@ -158,7 +158,7 @@ public interface CertPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int X509_ISSUER_PROVISION__ORGANIZATIONAL_UNIT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int X509_ISSUER_PROVISION__ORGANIZATIONAL_UNIT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Serial Number</b></em>' attribute.
@@ -167,7 +167,7 @@ public interface CertPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int X509_ISSUER_PROVISION__SERIAL_NUMBER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int X509_ISSUER_PROVISION__SERIAL_NUMBER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>State Province</b></em>' attribute.
@@ -176,7 +176,7 @@ public interface CertPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int X509_ISSUER_PROVISION__STATE_PROVINCE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int X509_ISSUER_PROVISION__STATE_PROVINCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>X509 Issuer Provision</em>' class.
@@ -185,7 +185,7 @@ public interface CertPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int X509_ISSUER_PROVISION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int X509_ISSUER_PROVISION_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 
 	/**

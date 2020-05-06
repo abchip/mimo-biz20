@@ -1297,7 +1297,7 @@ public class SupplierPackageImpl extends EPackageImpl implements SupplierPackage
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		CategoryPackage theCategoryPackage = (CategoryPackage)EPackage.Registry.INSTANCE.getEPackage(CategoryPackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
 		FacilityPackage theFacilityPackage = (FacilityPackage)EPackage.Registry.INSTANCE.getEPackage(FacilityPackage.eNS_URI);
@@ -1311,12 +1311,18 @@ public class SupplierPackageImpl extends EPackageImpl implements SupplierPackage
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		marketInterestEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		reorderGuidelineEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		supplierPrefOrderEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		supplierProductEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		supplierProductFeatureEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		supplierRatingTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		marketInterestEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		marketInterestEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		reorderGuidelineEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		reorderGuidelineEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		supplierPrefOrderEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		supplierPrefOrderEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		supplierProductEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		supplierProductEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		supplierProductFeatureEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		supplierProductFeatureEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		supplierRatingTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		supplierRatingTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(marketInterestEClass, MarketInterest.class, "MarketInterest", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

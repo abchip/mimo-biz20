@@ -8,9 +8,10 @@
 package org.abchip.mimo.biz.model.product.catalog;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +34,7 @@ import org.abchip.mimo.biz.model.party.party.RoleType;
  * @model annotation="mimo-ent-frame title='ProdCatalog Role Association' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProdCatalogRole extends BizEntity {
+public interface ProdCatalogRole extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -8,9 +8,10 @@
 package org.abchip.mimo.biz.model.workeffort.workeffort;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.cost.CostComponentCalc;
 import org.abchip.mimo.biz.model.product.cost.CostComponentType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.model.product.cost.CostComponentType;
  * @model annotation="mimo-ent-frame title='Work Effort Cost Calculation'"
  * @generated
  */
-public interface WorkEffortCostCalc extends BizEntity {
+public interface WorkEffortCostCalc extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Cost Component Calc Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

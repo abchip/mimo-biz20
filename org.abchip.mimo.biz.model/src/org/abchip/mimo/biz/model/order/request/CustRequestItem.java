@@ -10,9 +10,10 @@ package org.abchip.mimo.biz.model.order.request;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -46,7 +47,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * @model annotation="mimo-ent-frame title='Customer Request Item' formula='description'"
  * @generated
  */
-public interface CustRequestItem extends BizEntity {
+public interface CustRequestItem extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Config Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

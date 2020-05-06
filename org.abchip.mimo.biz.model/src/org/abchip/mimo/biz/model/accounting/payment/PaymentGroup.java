@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.accounting.payment;
 
-import org.abchip.mimo.biz.BizEntityTyped;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntityTyped;
  * @model annotation="mimo-ent-frame help='Payment Group'"
  * @generated
  */
-public interface PaymentGroup extends BizEntityTyped<PaymentGroupType> {
+public interface PaymentGroup extends EntityTyped<PaymentGroupType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Payment Group Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

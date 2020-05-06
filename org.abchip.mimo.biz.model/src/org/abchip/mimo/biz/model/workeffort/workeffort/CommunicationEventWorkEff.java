@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.workeffort.workeffort;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEvent;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.model.party.communication.CommunicationEvent;
  * @model annotation="mimo-ent-frame title='Communication Event Work Effort' formula='description'"
  * @generated
  */
-public interface CommunicationEventWorkEff extends BizEntity {
+public interface CommunicationEventWorkEff extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Communication Event Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

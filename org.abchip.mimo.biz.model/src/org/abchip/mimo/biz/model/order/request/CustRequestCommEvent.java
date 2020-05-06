@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.order.request;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEvent;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.model.party.communication.CommunicationEvent;
  * @model annotation="mimo-ent-frame title='Customer Request Communication Event'"
  * @generated
  */
-public interface CustRequestCommEvent extends BizEntity {
+public interface CustRequestCommEvent extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Communication Event Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

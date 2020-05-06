@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.entity.synchronization;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.entity.group.EntityGroup;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.model.entity.group.EntityGroup;
  * @model annotation="mimo-ent-frame title='Entity Synchronization Include Entity Group'"
  * @generated
  */
-public interface EntitySyncIncludeGroup extends BizEntity {
+public interface EntitySyncIncludeGroup extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Entity Group Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

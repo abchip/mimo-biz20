@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.workeffort.workeffort;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +27,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Work Effort iCalendar Data'"
  * @generated
  */
-public interface WorkEffortIcalData extends BizEntity {
+public interface WorkEffortIcalData extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Ical Data</b></em>' attribute.
 	 * <!-- begin-user-doc -->

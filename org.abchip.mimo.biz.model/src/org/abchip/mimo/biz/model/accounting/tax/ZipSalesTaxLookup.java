@@ -10,7 +10,8 @@ package org.abchip.mimo.biz.model.accounting.tax;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -49,7 +50,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model
  * @generated
  */
-public interface ZipSalesTaxLookup extends BizEntity {
+public interface ZipSalesTaxLookup extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>City</b></em>' attribute.
 	 * <!-- begin-user-doc -->

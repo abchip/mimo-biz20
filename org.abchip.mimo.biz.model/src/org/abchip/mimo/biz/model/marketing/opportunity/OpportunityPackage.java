@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.marketing.opportunity;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SALES_FORECAST__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SALES_FORECAST__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SALES_FORECAST__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SALES_FORECAST__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Sales Forecast Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__SALES_FORECAST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SALES_FORECAST__SALES_FORECAST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Best Case Amount</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__BEST_CASE_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SALES_FORECAST__BEST_CASE_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Closed Amount</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__CLOSED_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SALES_FORECAST__CLOSED_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Created By User Login Id</b></em>' reference.
@@ -141,7 +141,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__CREATED_BY_USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SALES_FORECAST__CREATED_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
@@ -150,7 +150,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__CURRENCY_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SALES_FORECAST__CURRENCY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Custom Time Period Id</b></em>' reference.
@@ -159,7 +159,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__CUSTOM_TIME_PERIOD_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int SALES_FORECAST__CUSTOM_TIME_PERIOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Forecast Amount</b></em>' attribute.
@@ -168,7 +168,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__FORECAST_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int SALES_FORECAST__FORECAST_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Internal Party Id</b></em>' reference.
@@ -177,7 +177,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__INTERNAL_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int SALES_FORECAST__INTERNAL_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Modified By User Login Id</b></em>' reference.
@@ -186,7 +186,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__MODIFIED_BY_USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int SALES_FORECAST__MODIFIED_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Organization Party Id</b></em>' reference.
@@ -195,7 +195,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__ORGANIZATION_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int SALES_FORECAST__ORGANIZATION_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Parent Sales Forecast Id</b></em>' reference.
@@ -204,7 +204,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__PARENT_SALES_FORECAST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int SALES_FORECAST__PARENT_SALES_FORECAST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Percent Of Quota Closed</b></em>' attribute.
@@ -213,7 +213,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__PERCENT_OF_QUOTA_CLOSED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int SALES_FORECAST__PERCENT_OF_QUOTA_CLOSED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Percent Of Quota Forecast</b></em>' attribute.
@@ -222,7 +222,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__PERCENT_OF_QUOTA_FORECAST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int SALES_FORECAST__PERCENT_OF_QUOTA_FORECAST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Pipeline Amount</b></em>' attribute.
@@ -231,7 +231,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__PIPELINE_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int SALES_FORECAST__PIPELINE_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Quota Amount</b></em>' attribute.
@@ -240,7 +240,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__QUOTA_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int SALES_FORECAST__QUOTA_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Sales Forecast Details</b></em>' reference list.
@@ -249,7 +249,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST__SALES_FORECAST_DETAILS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int SALES_FORECAST__SALES_FORECAST_DETAILS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The number of structural features of the '<em>Sales Forecast</em>' class.
@@ -258,7 +258,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int SALES_FORECAST_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastDetailImpl <em>Sales Forecast Detail</em>}' class.
@@ -277,7 +277,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_DETAIL__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SALES_FORECAST_DETAIL__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -286,7 +286,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_DETAIL__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SALES_FORECAST_DETAIL__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -295,7 +295,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_DETAIL__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SALES_FORECAST_DETAIL__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -304,7 +304,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_DETAIL__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SALES_FORECAST_DETAIL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Sales Forecast Id</b></em>' reference.
@@ -313,7 +313,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_DETAIL__SALES_FORECAST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SALES_FORECAST_DETAIL__SALES_FORECAST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Sales Forecast Detail Id</b></em>' attribute.
@@ -322,7 +322,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_DETAIL__SALES_FORECAST_DETAIL_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SALES_FORECAST_DETAIL__SALES_FORECAST_DETAIL_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Amount</b></em>' attribute.
@@ -331,7 +331,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_DETAIL__AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SALES_FORECAST_DETAIL__AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
@@ -340,7 +340,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_DETAIL__PRODUCT_CATEGORY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SALES_FORECAST_DETAIL__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -349,7 +349,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_DETAIL__PRODUCT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SALES_FORECAST_DETAIL__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -358,7 +358,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_DETAIL__QUANTITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int SALES_FORECAST_DETAIL__QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Quantity Uom Id</b></em>' reference.
@@ -367,7 +367,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_DETAIL__QUANTITY_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int SALES_FORECAST_DETAIL__QUANTITY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Sales Forecast Detail</em>' class.
@@ -376,7 +376,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_DETAIL_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int SALES_FORECAST_DETAIL_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesForecastHistoryImpl <em>Sales Forecast History</em>}' class.
@@ -395,7 +395,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SALES_FORECAST_HISTORY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -404,7 +404,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SALES_FORECAST_HISTORY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -413,7 +413,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SALES_FORECAST_HISTORY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -422,7 +422,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SALES_FORECAST_HISTORY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Sales Forecast History Id</b></em>' attribute.
@@ -431,7 +431,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__SALES_FORECAST_HISTORY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SALES_FORECAST_HISTORY__SALES_FORECAST_HISTORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Best Case Amount</b></em>' attribute.
@@ -440,7 +440,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__BEST_CASE_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SALES_FORECAST_HISTORY__BEST_CASE_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Change Note</b></em>' attribute.
@@ -449,7 +449,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__CHANGE_NOTE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SALES_FORECAST_HISTORY__CHANGE_NOTE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Closed Amount</b></em>' attribute.
@@ -458,7 +458,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__CLOSED_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SALES_FORECAST_HISTORY__CLOSED_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
@@ -467,7 +467,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__CURRENCY_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SALES_FORECAST_HISTORY__CURRENCY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Custom Time Period Id</b></em>' reference.
@@ -476,7 +476,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__CUSTOM_TIME_PERIOD_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int SALES_FORECAST_HISTORY__CUSTOM_TIME_PERIOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Forecast Amount</b></em>' attribute.
@@ -485,7 +485,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__FORECAST_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int SALES_FORECAST_HISTORY__FORECAST_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Internal Party Id</b></em>' reference.
@@ -494,7 +494,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__INTERNAL_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int SALES_FORECAST_HISTORY__INTERNAL_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Modified By User Login Id</b></em>' reference.
@@ -503,7 +503,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__MODIFIED_BY_USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int SALES_FORECAST_HISTORY__MODIFIED_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Modified Timestamp</b></em>' attribute.
@@ -512,7 +512,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__MODIFIED_TIMESTAMP = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int SALES_FORECAST_HISTORY__MODIFIED_TIMESTAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Organization Party Id</b></em>' reference.
@@ -521,7 +521,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__ORGANIZATION_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int SALES_FORECAST_HISTORY__ORGANIZATION_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Parent Sales Forecast Id</b></em>' attribute.
@@ -530,7 +530,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__PARENT_SALES_FORECAST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int SALES_FORECAST_HISTORY__PARENT_SALES_FORECAST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Percent Of Quota Closed</b></em>' attribute.
@@ -539,7 +539,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__PERCENT_OF_QUOTA_CLOSED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int SALES_FORECAST_HISTORY__PERCENT_OF_QUOTA_CLOSED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Percent Of Quota Forecast</b></em>' attribute.
@@ -548,7 +548,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__PERCENT_OF_QUOTA_FORECAST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int SALES_FORECAST_HISTORY__PERCENT_OF_QUOTA_FORECAST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Quota Amount</b></em>' attribute.
@@ -557,7 +557,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__QUOTA_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int SALES_FORECAST_HISTORY__QUOTA_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Sales Forecast Id</b></em>' reference.
@@ -566,7 +566,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY__SALES_FORECAST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int SALES_FORECAST_HISTORY__SALES_FORECAST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The number of structural features of the '<em>Sales Forecast History</em>' class.
@@ -575,7 +575,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_FORECAST_HISTORY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int SALES_FORECAST_HISTORY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityImpl <em>Sales Opportunity</em>}' class.
@@ -594,7 +594,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SALES_OPPORTUNITY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -603,7 +603,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SALES_OPPORTUNITY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -612,7 +612,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SALES_OPPORTUNITY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -621,7 +621,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SALES_OPPORTUNITY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Sales Opportunity Id</b></em>' attribute.
@@ -630,7 +630,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__SALES_OPPORTUNITY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SALES_OPPORTUNITY__SALES_OPPORTUNITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Created By User Login</b></em>' reference.
@@ -639,7 +639,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__CREATED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SALES_OPPORTUNITY__CREATED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
@@ -648,7 +648,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__CURRENCY_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SALES_OPPORTUNITY__CURRENCY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Data Source Id</b></em>' attribute.
@@ -657,7 +657,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__DATA_SOURCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SALES_OPPORTUNITY__DATA_SOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -666,7 +666,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SALES_OPPORTUNITY__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Amount</b></em>' attribute.
@@ -675,7 +675,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__ESTIMATED_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int SALES_OPPORTUNITY__ESTIMATED_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Close Date</b></em>' attribute.
@@ -684,7 +684,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__ESTIMATED_CLOSE_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int SALES_OPPORTUNITY__ESTIMATED_CLOSE_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Probability</b></em>' attribute.
@@ -693,7 +693,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__ESTIMATED_PROBABILITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int SALES_OPPORTUNITY__ESTIMATED_PROBABILITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Marketing Campaign Id</b></em>' reference.
@@ -702,7 +702,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__MARKETING_CAMPAIGN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int SALES_OPPORTUNITY__MARKETING_CAMPAIGN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Next Step</b></em>' attribute.
@@ -711,7 +711,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__NEXT_STEP = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int SALES_OPPORTUNITY__NEXT_STEP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Next Step Date</b></em>' attribute.
@@ -720,7 +720,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__NEXT_STEP_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int SALES_OPPORTUNITY__NEXT_STEP_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Opportunity Name</b></em>' attribute.
@@ -729,7 +729,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__OPPORTUNITY_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int SALES_OPPORTUNITY__OPPORTUNITY_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Opportunity Stage Id</b></em>' reference.
@@ -738,7 +738,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__OPPORTUNITY_STAGE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int SALES_OPPORTUNITY__OPPORTUNITY_STAGE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Sales Opportunity Competitors</b></em>' reference list.
@@ -747,7 +747,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__SALES_OPPORTUNITY_COMPETITORS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int SALES_OPPORTUNITY__SALES_OPPORTUNITY_COMPETITORS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Sales Opportunity Quotes</b></em>' reference list.
@@ -756,7 +756,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__SALES_OPPORTUNITY_QUOTES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int SALES_OPPORTUNITY__SALES_OPPORTUNITY_QUOTES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Sales Opportunity Trck Codes</b></em>' reference list.
@@ -765,7 +765,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__SALES_OPPORTUNITY_TRCK_CODES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int SALES_OPPORTUNITY__SALES_OPPORTUNITY_TRCK_CODES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Sales Opportunity Work Efforts</b></em>' reference list.
@@ -774,7 +774,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__SALES_OPPORTUNITY_WORK_EFFORTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int SALES_OPPORTUNITY__SALES_OPPORTUNITY_WORK_EFFORTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Type Enum Id</b></em>' reference.
@@ -783,7 +783,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY__TYPE_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 17;
+	int SALES_OPPORTUNITY__TYPE_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
 
 	/**
 	 * The number of structural features of the '<em>Sales Opportunity</em>' class.
@@ -792,7 +792,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 18;
+	int SALES_OPPORTUNITY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityCompetitorImpl <em>Sales Opportunity Competitor</em>}' class.
@@ -811,7 +811,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_COMPETITOR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SALES_OPPORTUNITY_COMPETITOR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -820,7 +820,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_COMPETITOR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SALES_OPPORTUNITY_COMPETITOR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -829,7 +829,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_COMPETITOR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SALES_OPPORTUNITY_COMPETITOR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -838,7 +838,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_COMPETITOR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SALES_OPPORTUNITY_COMPETITOR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Sales Opportunity Id</b></em>' reference.
@@ -847,7 +847,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_COMPETITOR__SALES_OPPORTUNITY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SALES_OPPORTUNITY_COMPETITOR__SALES_OPPORTUNITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Competitor Party Id</b></em>' attribute.
@@ -856,7 +856,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_COMPETITOR__COMPETITOR_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SALES_OPPORTUNITY_COMPETITOR__COMPETITOR_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Position Enum Id</b></em>' attribute.
@@ -865,7 +865,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_COMPETITOR__POSITION_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SALES_OPPORTUNITY_COMPETITOR__POSITION_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Strengths</b></em>' attribute.
@@ -874,7 +874,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_COMPETITOR__STRENGTHS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SALES_OPPORTUNITY_COMPETITOR__STRENGTHS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Weaknesses</b></em>' attribute.
@@ -883,7 +883,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_COMPETITOR__WEAKNESSES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SALES_OPPORTUNITY_COMPETITOR__WEAKNESSES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Sales Opportunity Competitor</em>' class.
@@ -892,7 +892,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_COMPETITOR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int SALES_OPPORTUNITY_COMPETITOR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityHistoryImpl <em>Sales Opportunity History</em>}' class.
@@ -911,7 +911,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_HISTORY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SALES_OPPORTUNITY_HISTORY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -920,7 +920,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_HISTORY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SALES_OPPORTUNITY_HISTORY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -929,7 +929,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_HISTORY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SALES_OPPORTUNITY_HISTORY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -938,7 +938,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_HISTORY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SALES_OPPORTUNITY_HISTORY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Sales Opportunity History Id</b></em>' attribute.
@@ -947,7 +947,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_HISTORY__SALES_OPPORTUNITY_HISTORY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SALES_OPPORTUNITY_HISTORY__SALES_OPPORTUNITY_HISTORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Change Note</b></em>' attribute.
@@ -956,7 +956,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_HISTORY__CHANGE_NOTE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SALES_OPPORTUNITY_HISTORY__CHANGE_NOTE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
@@ -965,7 +965,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_HISTORY__CURRENCY_UOM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SALES_OPPORTUNITY_HISTORY__CURRENCY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -974,7 +974,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_HISTORY__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SALES_OPPORTUNITY_HISTORY__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Amount</b></em>' attribute.
@@ -983,7 +983,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_HISTORY__ESTIMATED_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SALES_OPPORTUNITY_HISTORY__ESTIMATED_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Close Date</b></em>' attribute.
@@ -992,7 +992,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_HISTORY__ESTIMATED_CLOSE_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int SALES_OPPORTUNITY_HISTORY__ESTIMATED_CLOSE_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Probability</b></em>' attribute.
@@ -1001,7 +1001,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_HISTORY__ESTIMATED_PROBABILITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int SALES_OPPORTUNITY_HISTORY__ESTIMATED_PROBABILITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Modified By User Login</b></em>' reference.
@@ -1010,7 +1010,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_HISTORY__MODIFIED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int SALES_OPPORTUNITY_HISTORY__MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Modified Timestamp</b></em>' attribute.
@@ -1019,7 +1019,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_HISTORY__MODIFIED_TIMESTAMP = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int SALES_OPPORTUNITY_HISTORY__MODIFIED_TIMESTAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Next Step</b></em>' attribute.
@@ -1028,7 +1028,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_HISTORY__NEXT_STEP = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int SALES_OPPORTUNITY_HISTORY__NEXT_STEP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Opportunity Stage Id</b></em>' reference.
@@ -1037,7 +1037,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_HISTORY__OPPORTUNITY_STAGE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int SALES_OPPORTUNITY_HISTORY__OPPORTUNITY_STAGE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Sales Opportunity Id</b></em>' reference.
@@ -1046,7 +1046,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_HISTORY__SALES_OPPORTUNITY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int SALES_OPPORTUNITY_HISTORY__SALES_OPPORTUNITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The number of structural features of the '<em>Sales Opportunity History</em>' class.
@@ -1055,7 +1055,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_HISTORY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int SALES_OPPORTUNITY_HISTORY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityQuoteImpl <em>Sales Opportunity Quote</em>}' class.
@@ -1074,7 +1074,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_QUOTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SALES_OPPORTUNITY_QUOTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1083,7 +1083,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_QUOTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SALES_OPPORTUNITY_QUOTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1092,7 +1092,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_QUOTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SALES_OPPORTUNITY_QUOTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1101,7 +1101,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_QUOTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SALES_OPPORTUNITY_QUOTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Sales Opportunity Id</b></em>' reference.
@@ -1110,7 +1110,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_QUOTE__SALES_OPPORTUNITY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SALES_OPPORTUNITY_QUOTE__SALES_OPPORTUNITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Quote Id</b></em>' reference.
@@ -1119,7 +1119,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_QUOTE__QUOTE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SALES_OPPORTUNITY_QUOTE__QUOTE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Sales Opportunity Quote</em>' class.
@@ -1128,7 +1128,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_QUOTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SALES_OPPORTUNITY_QUOTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityRoleImpl <em>Sales Opportunity Role</em>}' class.
@@ -1147,7 +1147,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_ROLE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SALES_OPPORTUNITY_ROLE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1156,7 +1156,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_ROLE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SALES_OPPORTUNITY_ROLE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1165,7 +1165,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_ROLE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SALES_OPPORTUNITY_ROLE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1174,7 +1174,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_ROLE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SALES_OPPORTUNITY_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Sales Opportunity Id</b></em>' reference.
@@ -1183,7 +1183,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_ROLE__SALES_OPPORTUNITY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SALES_OPPORTUNITY_ROLE__SALES_OPPORTUNITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -1192,7 +1192,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_ROLE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SALES_OPPORTUNITY_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -1201,7 +1201,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_ROLE__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SALES_OPPORTUNITY_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Sales Opportunity Role</em>' class.
@@ -1210,7 +1210,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_ROLE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SALES_OPPORTUNITY_ROLE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityStageImpl <em>Sales Opportunity Stage</em>}' class.
@@ -1229,7 +1229,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_STAGE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SALES_OPPORTUNITY_STAGE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1238,7 +1238,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_STAGE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SALES_OPPORTUNITY_STAGE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1247,7 +1247,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_STAGE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SALES_OPPORTUNITY_STAGE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1256,7 +1256,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_STAGE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SALES_OPPORTUNITY_STAGE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Opportunity Stage Id</b></em>' attribute.
@@ -1265,7 +1265,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_STAGE__OPPORTUNITY_STAGE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SALES_OPPORTUNITY_STAGE__OPPORTUNITY_STAGE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Default Probability</b></em>' attribute.
@@ -1274,7 +1274,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_STAGE__DEFAULT_PROBABILITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SALES_OPPORTUNITY_STAGE__DEFAULT_PROBABILITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1283,7 +1283,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_STAGE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SALES_OPPORTUNITY_STAGE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -1292,7 +1292,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_STAGE__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SALES_OPPORTUNITY_STAGE__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Sales Opportunity Stage</em>' class.
@@ -1301,7 +1301,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_STAGE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SALES_OPPORTUNITY_STAGE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityTrckCodeImpl <em>Sales Opportunity Trck Code</em>}' class.
@@ -1320,7 +1320,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_TRCK_CODE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SALES_OPPORTUNITY_TRCK_CODE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1329,7 +1329,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_TRCK_CODE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SALES_OPPORTUNITY_TRCK_CODE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1338,7 +1338,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_TRCK_CODE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SALES_OPPORTUNITY_TRCK_CODE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1347,7 +1347,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_TRCK_CODE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SALES_OPPORTUNITY_TRCK_CODE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Sales Opportunity Id</b></em>' reference.
@@ -1356,7 +1356,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_TRCK_CODE__SALES_OPPORTUNITY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SALES_OPPORTUNITY_TRCK_CODE__SALES_OPPORTUNITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Tracking Code Id</b></em>' attribute.
@@ -1365,7 +1365,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_TRCK_CODE__TRACKING_CODE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SALES_OPPORTUNITY_TRCK_CODE__TRACKING_CODE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Received Date</b></em>' attribute.
@@ -1374,7 +1374,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_TRCK_CODE__RECEIVED_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SALES_OPPORTUNITY_TRCK_CODE__RECEIVED_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Sales Opportunity Trck Code</em>' class.
@@ -1383,7 +1383,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_TRCK_CODE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SALES_OPPORTUNITY_TRCK_CODE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.opportunity.impl.SalesOpportunityWorkEffortImpl <em>Sales Opportunity Work Effort</em>}' class.
@@ -1402,7 +1402,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_WORK_EFFORT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SALES_OPPORTUNITY_WORK_EFFORT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1411,7 +1411,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_WORK_EFFORT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SALES_OPPORTUNITY_WORK_EFFORT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1420,7 +1420,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_WORK_EFFORT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SALES_OPPORTUNITY_WORK_EFFORT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1429,7 +1429,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_WORK_EFFORT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SALES_OPPORTUNITY_WORK_EFFORT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Sales Opportunity Id</b></em>' reference.
@@ -1438,7 +1438,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_WORK_EFFORT__SALES_OPPORTUNITY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SALES_OPPORTUNITY_WORK_EFFORT__SALES_OPPORTUNITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -1447,7 +1447,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_WORK_EFFORT__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SALES_OPPORTUNITY_WORK_EFFORT__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Sales Opportunity Work Effort</em>' class.
@@ -1456,7 +1456,7 @@ public interface OpportunityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SALES_OPPORTUNITY_WORK_EFFORT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SALES_OPPORTUNITY_WORK_EFFORT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 
 	/**

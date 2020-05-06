@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.order.request;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
  * @model
  * @generated
  */
-public interface CustRequestItemWorkEffort extends BizEntity {
+public interface CustRequestItemWorkEffort extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Cust Request Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

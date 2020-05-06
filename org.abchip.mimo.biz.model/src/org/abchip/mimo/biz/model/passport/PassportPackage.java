@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.passport;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GIT_HUB_USER__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int GIT_HUB_USER__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GIT_HUB_USER__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int GIT_HUB_USER__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GIT_HUB_USER__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int GIT_HUB_USER__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GIT_HUB_USER__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int GIT_HUB_USER__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Git Hub User Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GIT_HUB_USER__GIT_HUB_USER_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int GIT_HUB_USER__GIT_HUB_USER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Access Token</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GIT_HUB_USER__ACCESS_TOKEN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int GIT_HUB_USER__ACCESS_TOKEN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Env Prefix</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GIT_HUB_USER__ENV_PREFIX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int GIT_HUB_USER__ENV_PREFIX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Id</b></em>' reference.
@@ -141,7 +141,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GIT_HUB_USER__PRODUCT_STORE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int GIT_HUB_USER__PRODUCT_STORE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Token Type</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GIT_HUB_USER__TOKEN_TYPE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int GIT_HUB_USER__TOKEN_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Git Hub User</em>' class.
@@ -159,7 +159,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GIT_HUB_USER_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int GIT_HUB_USER_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.passport.impl.GoogleUserImpl <em>Google User</em>}' class.
@@ -178,7 +178,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GOOGLE_USER__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int GOOGLE_USER__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -187,7 +187,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GOOGLE_USER__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int GOOGLE_USER__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -196,7 +196,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GOOGLE_USER__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int GOOGLE_USER__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -205,7 +205,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GOOGLE_USER__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int GOOGLE_USER__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Google User Id</b></em>' attribute.
@@ -214,7 +214,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GOOGLE_USER__GOOGLE_USER_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int GOOGLE_USER__GOOGLE_USER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Access Token</b></em>' attribute.
@@ -223,7 +223,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GOOGLE_USER__ACCESS_TOKEN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int GOOGLE_USER__ACCESS_TOKEN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Env Prefix</b></em>' attribute.
@@ -232,7 +232,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GOOGLE_USER__ENV_PREFIX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int GOOGLE_USER__ENV_PREFIX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Id</b></em>' reference.
@@ -241,7 +241,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GOOGLE_USER__PRODUCT_STORE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int GOOGLE_USER__PRODUCT_STORE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Token Type</b></em>' attribute.
@@ -250,7 +250,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GOOGLE_USER__TOKEN_TYPE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int GOOGLE_USER__TOKEN_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Google User</em>' class.
@@ -259,7 +259,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GOOGLE_USER_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int GOOGLE_USER_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.passport.impl.LinkedInUserImpl <em>Linked In User</em>}' class.
@@ -278,7 +278,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINKED_IN_USER__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int LINKED_IN_USER__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -287,7 +287,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINKED_IN_USER__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int LINKED_IN_USER__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -296,7 +296,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINKED_IN_USER__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int LINKED_IN_USER__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -305,7 +305,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINKED_IN_USER__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int LINKED_IN_USER__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Linked In User Id</b></em>' attribute.
@@ -314,7 +314,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINKED_IN_USER__LINKED_IN_USER_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int LINKED_IN_USER__LINKED_IN_USER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Access Token</b></em>' attribute.
@@ -323,7 +323,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINKED_IN_USER__ACCESS_TOKEN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int LINKED_IN_USER__ACCESS_TOKEN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Env Prefix</b></em>' attribute.
@@ -332,7 +332,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINKED_IN_USER__ENV_PREFIX = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int LINKED_IN_USER__ENV_PREFIX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Id</b></em>' reference.
@@ -341,7 +341,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINKED_IN_USER__PRODUCT_STORE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int LINKED_IN_USER__PRODUCT_STORE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Linked In User</em>' class.
@@ -350,7 +350,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LINKED_IN_USER_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int LINKED_IN_USER_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GitHubImpl <em>OAuth2 Git Hub</em>}' class.
@@ -369,7 +369,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GIT_HUB__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int OAUTH2_GIT_HUB__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -378,7 +378,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GIT_HUB__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int OAUTH2_GIT_HUB__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -387,7 +387,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GIT_HUB__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int OAUTH2_GIT_HUB__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -396,7 +396,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GIT_HUB__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int OAUTH2_GIT_HUB__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Id</b></em>' reference.
@@ -405,7 +405,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GIT_HUB__PRODUCT_STORE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int OAUTH2_GIT_HUB__PRODUCT_STORE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -414,7 +414,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GIT_HUB__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int OAUTH2_GIT_HUB__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Client Id</b></em>' attribute.
@@ -423,7 +423,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GIT_HUB__CLIENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int OAUTH2_GIT_HUB__CLIENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Client Secret</b></em>' attribute.
@@ -432,7 +432,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GIT_HUB__CLIENT_SECRET = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int OAUTH2_GIT_HUB__CLIENT_SECRET = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Icon Url</b></em>' attribute.
@@ -441,7 +441,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GIT_HUB__ICON_URL = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int OAUTH2_GIT_HUB__ICON_URL = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Local Redirect Uri</b></em>' attribute.
@@ -450,7 +450,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GIT_HUB__LOCAL_REDIRECT_URI = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int OAUTH2_GIT_HUB__LOCAL_REDIRECT_URI = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Return Url</b></em>' attribute.
@@ -459,7 +459,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GIT_HUB__RETURN_URL = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int OAUTH2_GIT_HUB__RETURN_URL = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -468,7 +468,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GIT_HUB__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int OAUTH2_GIT_HUB__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>OAuth2 Git Hub</em>' class.
@@ -477,7 +477,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GIT_HUB_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int OAUTH2_GIT_HUB_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.passport.impl.OAuth2GoogleImpl <em>OAuth2 Google</em>}' class.
@@ -496,7 +496,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GOOGLE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int OAUTH2_GOOGLE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -505,7 +505,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GOOGLE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int OAUTH2_GOOGLE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -514,7 +514,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GOOGLE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int OAUTH2_GOOGLE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -523,7 +523,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GOOGLE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int OAUTH2_GOOGLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Id</b></em>' reference.
@@ -532,7 +532,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GOOGLE__PRODUCT_STORE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int OAUTH2_GOOGLE__PRODUCT_STORE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -541,7 +541,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GOOGLE__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int OAUTH2_GOOGLE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Client Id</b></em>' attribute.
@@ -550,7 +550,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GOOGLE__CLIENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int OAUTH2_GOOGLE__CLIENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Client Secret</b></em>' attribute.
@@ -559,7 +559,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GOOGLE__CLIENT_SECRET = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int OAUTH2_GOOGLE__CLIENT_SECRET = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Icon Url</b></em>' attribute.
@@ -568,7 +568,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GOOGLE__ICON_URL = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int OAUTH2_GOOGLE__ICON_URL = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Local Redirect Uri</b></em>' attribute.
@@ -577,7 +577,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GOOGLE__LOCAL_REDIRECT_URI = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int OAUTH2_GOOGLE__LOCAL_REDIRECT_URI = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Return Url</b></em>' attribute.
@@ -586,7 +586,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GOOGLE__RETURN_URL = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int OAUTH2_GOOGLE__RETURN_URL = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -595,7 +595,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GOOGLE__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int OAUTH2_GOOGLE__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>OAuth2 Google</em>' class.
@@ -604,7 +604,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_GOOGLE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int OAUTH2_GOOGLE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.passport.impl.OAuth2LinkedInImpl <em>OAuth2 Linked In</em>}' class.
@@ -623,7 +623,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_LINKED_IN__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int OAUTH2_LINKED_IN__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -632,7 +632,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_LINKED_IN__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int OAUTH2_LINKED_IN__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -641,7 +641,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_LINKED_IN__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int OAUTH2_LINKED_IN__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -650,7 +650,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_LINKED_IN__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int OAUTH2_LINKED_IN__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Id</b></em>' reference.
@@ -659,7 +659,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_LINKED_IN__PRODUCT_STORE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int OAUTH2_LINKED_IN__PRODUCT_STORE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -668,7 +668,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_LINKED_IN__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int OAUTH2_LINKED_IN__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Api Key</b></em>' attribute.
@@ -677,7 +677,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_LINKED_IN__API_KEY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int OAUTH2_LINKED_IN__API_KEY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Icon Url</b></em>' attribute.
@@ -686,7 +686,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_LINKED_IN__ICON_URL = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int OAUTH2_LINKED_IN__ICON_URL = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Live Return Url</b></em>' attribute.
@@ -695,7 +695,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_LINKED_IN__LIVE_RETURN_URL = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int OAUTH2_LINKED_IN__LIVE_RETURN_URL = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Local Redirect Uri</b></em>' attribute.
@@ -704,7 +704,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_LINKED_IN__LOCAL_REDIRECT_URI = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int OAUTH2_LINKED_IN__LOCAL_REDIRECT_URI = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Secret Key</b></em>' attribute.
@@ -713,7 +713,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_LINKED_IN__SECRET_KEY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int OAUTH2_LINKED_IN__SECRET_KEY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Test Return Url</b></em>' attribute.
@@ -722,7 +722,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_LINKED_IN__TEST_RETURN_URL = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int OAUTH2_LINKED_IN__TEST_RETURN_URL = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -731,7 +731,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_LINKED_IN__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int OAUTH2_LINKED_IN__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The number of structural features of the '<em>OAuth2 Linked In</em>' class.
@@ -740,7 +740,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OAUTH2_LINKED_IN_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int OAUTH2_LINKED_IN_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.passport.impl.ThirdPartyLoginImpl <em>Third Party Login</em>}' class.
@@ -759,7 +759,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int THIRD_PARTY_LOGIN__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int THIRD_PARTY_LOGIN__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -768,7 +768,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int THIRD_PARTY_LOGIN__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int THIRD_PARTY_LOGIN__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -777,7 +777,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int THIRD_PARTY_LOGIN__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int THIRD_PARTY_LOGIN__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -786,7 +786,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int THIRD_PARTY_LOGIN__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int THIRD_PARTY_LOGIN__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Id</b></em>' reference.
@@ -795,7 +795,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int THIRD_PARTY_LOGIN__PRODUCT_STORE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int THIRD_PARTY_LOGIN__PRODUCT_STORE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -804,7 +804,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int THIRD_PARTY_LOGIN__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int THIRD_PARTY_LOGIN__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Login Meth Type Id</b></em>' attribute.
@@ -813,7 +813,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int THIRD_PARTY_LOGIN__LOGIN_METH_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int THIRD_PARTY_LOGIN__LOGIN_METH_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Login Provider Id</b></em>' attribute.
@@ -822,7 +822,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int THIRD_PARTY_LOGIN__LOGIN_PROVIDER_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int THIRD_PARTY_LOGIN__LOGIN_PROVIDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -831,7 +831,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int THIRD_PARTY_LOGIN__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int THIRD_PARTY_LOGIN__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -840,7 +840,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int THIRD_PARTY_LOGIN__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int THIRD_PARTY_LOGIN__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Third Party Login</em>' class.
@@ -849,7 +849,7 @@ public interface PassportPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int THIRD_PARTY_LOGIN_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int THIRD_PARTY_LOGIN_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 
 	/**

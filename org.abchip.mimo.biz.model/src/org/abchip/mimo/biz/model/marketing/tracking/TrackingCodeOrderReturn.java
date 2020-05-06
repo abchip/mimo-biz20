@@ -8,9 +8,10 @@
 package org.abchip.mimo.biz.model.marketing.tracking;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.order.order.OrderHeader;
 import org.abchip.mimo.biz.model.order.return_.ReturnHeader;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,7 +37,7 @@ import org.abchip.mimo.biz.model.order.return_.ReturnHeader;
  * @model annotation="mimo-ent-frame title='Tracking Code And Order Return'"
  * @generated
  */
-public interface TrackingCodeOrderReturn extends BizEntity {
+public interface TrackingCodeOrderReturn extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Affiliate Referred Time Stamp</b></em>' attribute.
 	 * <!-- begin-user-doc -->

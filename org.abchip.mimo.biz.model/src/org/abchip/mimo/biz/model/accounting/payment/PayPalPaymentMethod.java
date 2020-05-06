@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.accounting.payment;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +35,7 @@ import org.abchip.mimo.biz.model.party.contact.ContactMech;
  * @model annotation="mimo-ent-frame help='PayPal Payment Method Details'"
  * @generated
  */
-public interface PayPalPaymentMethod extends BizEntity {
+public interface PayPalPaymentMethod extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Contact Mech Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

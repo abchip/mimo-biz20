@@ -11,7 +11,6 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.accounting.fixedasset.AccommodationMap;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
@@ -24,6 +23,8 @@ import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.service.schedule.RecurrenceInfo;
 import org.abchip.mimo.biz.model.service.schedule.RuntimeData;
 import org.abchip.mimo.biz.model.service.schedule.TemporalExpression;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -101,7 +102,7 @@ import org.abchip.mimo.biz.model.service.schedule.TemporalExpression;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface WorkEffort extends BizEntityTyped<WorkEffortType> {
+public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Accommodation Map Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

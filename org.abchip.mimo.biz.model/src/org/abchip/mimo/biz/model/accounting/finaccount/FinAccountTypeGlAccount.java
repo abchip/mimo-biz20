@@ -7,9 +7,10 @@
  */
 package org.abchip.mimo.biz.model.accounting.finaccount;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model annotation="mimo-ent-frame title='Financial Account Type GL Account'"
  * @generated
  */
-public interface FinAccountTypeGlAccount extends BizEntity {
+public interface FinAccountTypeGlAccount extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Gl Account Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.accounting.payment;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Billing Account Term Attribute'"
  * @generated
  */
-public interface BillingAccountTermAttr extends BizEntity {
+public interface BillingAccountTermAttr extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Attr Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

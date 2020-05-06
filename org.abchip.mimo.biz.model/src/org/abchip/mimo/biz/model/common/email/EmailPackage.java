@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.common.email;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface EmailPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMAIL_TEMPLATE_SETTING__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int EMAIL_TEMPLATE_SETTING__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface EmailPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMAIL_TEMPLATE_SETTING__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int EMAIL_TEMPLATE_SETTING__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface EmailPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMAIL_TEMPLATE_SETTING__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int EMAIL_TEMPLATE_SETTING__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface EmailPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMAIL_TEMPLATE_SETTING__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int EMAIL_TEMPLATE_SETTING__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Email Template Setting Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface EmailPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMAIL_TEMPLATE_SETTING__EMAIL_TEMPLATE_SETTING_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int EMAIL_TEMPLATE_SETTING__EMAIL_TEMPLATE_SETTING_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Bcc Address</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface EmailPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMAIL_TEMPLATE_SETTING__BCC_ADDRESS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int EMAIL_TEMPLATE_SETTING__BCC_ADDRESS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Body Screen Location</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface EmailPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMAIL_TEMPLATE_SETTING__BODY_SCREEN_LOCATION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int EMAIL_TEMPLATE_SETTING__BODY_SCREEN_LOCATION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Cc Address</b></em>' attribute.
@@ -141,7 +141,7 @@ public interface EmailPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMAIL_TEMPLATE_SETTING__CC_ADDRESS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int EMAIL_TEMPLATE_SETTING__CC_ADDRESS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Content Type</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface EmailPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMAIL_TEMPLATE_SETTING__CONTENT_TYPE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int EMAIL_TEMPLATE_SETTING__CONTENT_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -159,7 +159,7 @@ public interface EmailPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMAIL_TEMPLATE_SETTING__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int EMAIL_TEMPLATE_SETTING__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Email Type</b></em>' reference.
@@ -168,7 +168,7 @@ public interface EmailPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMAIL_TEMPLATE_SETTING__EMAIL_TYPE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int EMAIL_TEMPLATE_SETTING__EMAIL_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>From Address</b></em>' attribute.
@@ -177,7 +177,7 @@ public interface EmailPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMAIL_TEMPLATE_SETTING__FROM_ADDRESS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int EMAIL_TEMPLATE_SETTING__FROM_ADDRESS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Subject</b></em>' attribute.
@@ -186,7 +186,7 @@ public interface EmailPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMAIL_TEMPLATE_SETTING__SUBJECT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int EMAIL_TEMPLATE_SETTING__SUBJECT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Xslfo Attach Screen Location</b></em>' attribute.
@@ -195,7 +195,7 @@ public interface EmailPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMAIL_TEMPLATE_SETTING__XSLFO_ATTACH_SCREEN_LOCATION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int EMAIL_TEMPLATE_SETTING__XSLFO_ATTACH_SCREEN_LOCATION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The number of structural features of the '<em>Template Setting</em>' class.
@@ -204,7 +204,7 @@ public interface EmailPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMAIL_TEMPLATE_SETTING_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int EMAIL_TEMPLATE_SETTING_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 
 	/**

@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.workeffort.timesheet;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIME_ENTRY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TIME_ENTRY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIME_ENTRY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TIME_ENTRY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIME_ENTRY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TIME_ENTRY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIME_ENTRY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TIME_ENTRY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Time Entry Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIME_ENTRY__TIME_ENTRY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TIME_ENTRY__TIME_ENTRY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIME_ENTRY__COMMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TIME_ENTRY__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIME_ENTRY__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TIME_ENTRY__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Hours</b></em>' attribute.
@@ -141,7 +141,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIME_ENTRY__HOURS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TIME_ENTRY__HOURS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id</b></em>' reference.
@@ -150,7 +150,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIME_ENTRY__INVOICE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TIME_ENTRY__INVOICE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Seq Id</b></em>' attribute.
@@ -159,7 +159,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIME_ENTRY__INVOICE_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int TIME_ENTRY__INVOICE_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -168,7 +168,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIME_ENTRY__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int TIME_ENTRY__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Rate Type Id</b></em>' reference.
@@ -177,7 +177,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIME_ENTRY__RATE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int TIME_ENTRY__RATE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -186,7 +186,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIME_ENTRY__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int TIME_ENTRY__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Timesheet Id</b></em>' reference.
@@ -195,7 +195,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIME_ENTRY__TIMESHEET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int TIME_ENTRY__TIMESHEET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -204,7 +204,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIME_ENTRY__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int TIME_ENTRY__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The number of structural features of the '<em>Time Entry</em>' class.
@@ -213,7 +213,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIME_ENTRY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int TIME_ENTRY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimesheetImpl <em>Timesheet</em>}' class.
@@ -232,7 +232,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TIMESHEET__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -241,7 +241,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TIMESHEET__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -250,7 +250,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TIMESHEET__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -259,7 +259,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TIMESHEET__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Timesheet Id</b></em>' attribute.
@@ -268,7 +268,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET__TIMESHEET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TIMESHEET__TIMESHEET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Approved By User Login Id</b></em>' reference.
@@ -277,7 +277,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET__APPROVED_BY_USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TIMESHEET__APPROVED_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Client Party Id</b></em>' reference.
@@ -286,7 +286,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET__CLIENT_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TIMESHEET__CLIENT_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -295,7 +295,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET__COMMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TIMESHEET__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -304,7 +304,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TIMESHEET__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -313,7 +313,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int TIMESHEET__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -322,7 +322,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int TIMESHEET__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -331,7 +331,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int TIMESHEET__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Timesheet</em>' class.
@@ -340,7 +340,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int TIMESHEET_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimesheetRoleImpl <em>Role</em>}' class.
@@ -359,7 +359,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET_ROLE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TIMESHEET_ROLE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -368,7 +368,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET_ROLE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TIMESHEET_ROLE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -377,7 +377,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET_ROLE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TIMESHEET_ROLE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -386,7 +386,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET_ROLE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TIMESHEET_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Timesheet Id</b></em>' reference.
@@ -395,7 +395,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET_ROLE__TIMESHEET_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TIMESHEET_ROLE__TIMESHEET_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -404,7 +404,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET_ROLE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TIMESHEET_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -413,7 +413,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET_ROLE__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TIMESHEET_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Role</em>' class.
@@ -422,7 +422,7 @@ public interface TimesheetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TIMESHEET_ROLE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TIMESHEET_ROLE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 
 	/**

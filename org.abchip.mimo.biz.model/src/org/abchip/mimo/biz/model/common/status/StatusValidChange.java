@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.common.status;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame dictionary='CommonEntityLabels'"
  * @generated
  */
-public interface StatusValidChange extends BizEntity {
+public interface StatusValidChange extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Condition Expression</b></em>' attribute.
 	 * <!-- begin-user-doc -->

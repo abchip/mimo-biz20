@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.order.requirement;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.feature.ProductFeature;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.model.product.feature.ProductFeature;
  * @model
  * @generated
  */
-public interface DesiredFeature extends BizEntity {
+public interface DesiredFeature extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Desired Feature Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

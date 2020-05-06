@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.common.property;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -77,7 +77,7 @@ public interface PropertyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SYSTEM_PROPERTY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int SYSTEM_PROPERTY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -86,7 +86,7 @@ public interface PropertyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SYSTEM_PROPERTY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int SYSTEM_PROPERTY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -95,7 +95,7 @@ public interface PropertyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SYSTEM_PROPERTY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int SYSTEM_PROPERTY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -104,7 +104,7 @@ public interface PropertyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SYSTEM_PROPERTY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int SYSTEM_PROPERTY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>System Property Id</b></em>' attribute.
@@ -113,7 +113,7 @@ public interface PropertyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SYSTEM_PROPERTY__SYSTEM_PROPERTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int SYSTEM_PROPERTY__SYSTEM_PROPERTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>System Resource Id</b></em>' attribute.
@@ -122,7 +122,7 @@ public interface PropertyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SYSTEM_PROPERTY__SYSTEM_RESOURCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int SYSTEM_PROPERTY__SYSTEM_RESOURCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -131,7 +131,7 @@ public interface PropertyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SYSTEM_PROPERTY__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int SYSTEM_PROPERTY__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>System Property Value</b></em>' attribute.
@@ -140,7 +140,7 @@ public interface PropertyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SYSTEM_PROPERTY__SYSTEM_PROPERTY_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int SYSTEM_PROPERTY__SYSTEM_PROPERTY_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>System Property</em>' class.
@@ -149,7 +149,7 @@ public interface PropertyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SYSTEM_PROPERTY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int SYSTEM_PROPERTY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 
 	/**

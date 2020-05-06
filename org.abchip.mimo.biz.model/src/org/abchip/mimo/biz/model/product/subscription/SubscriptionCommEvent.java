@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.product.subscription;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEvent;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.model.party.communication.CommunicationEvent;
  * @model annotation="mimo-ent-frame title='Subscription Communication Event' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface SubscriptionCommEvent extends BizEntity {
+public interface SubscriptionCommEvent extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Communication Event Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

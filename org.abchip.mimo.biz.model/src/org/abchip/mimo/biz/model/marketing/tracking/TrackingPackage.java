@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.marketing.tracking;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TRACKING_CODE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TRACKING_CODE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TRACKING_CODE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TRACKING_CODE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Tracking Code Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__TRACKING_CODE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TRACKING_CODE__TRACKING_CODE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Billable Lifetime</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__BILLABLE_LIFETIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TRACKING_CODE__BILLABLE_LIFETIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__COMMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TRACKING_CODE__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Created By User Login</b></em>' attribute.
@@ -141,7 +141,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__CREATED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TRACKING_CODE__CREATED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Created Date</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__CREATED_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TRACKING_CODE__CREATED_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -159,7 +159,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int TRACKING_CODE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -168,7 +168,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int TRACKING_CODE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Group Id</b></em>' attribute.
@@ -177,7 +177,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__GROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int TRACKING_CODE__GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified By User Login</b></em>' attribute.
@@ -186,7 +186,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__LAST_MODIFIED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int TRACKING_CODE__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified Date</b></em>' attribute.
@@ -195,7 +195,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__LAST_MODIFIED_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int TRACKING_CODE__LAST_MODIFIED_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Marketing Campaign Id</b></em>' reference.
@@ -204,7 +204,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__MARKETING_CAMPAIGN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int TRACKING_CODE__MARKETING_CAMPAIGN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Override Css</b></em>' attribute.
@@ -213,7 +213,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__OVERRIDE_CSS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int TRACKING_CODE__OVERRIDE_CSS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Override Logo</b></em>' attribute.
@@ -222,7 +222,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__OVERRIDE_LOGO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int TRACKING_CODE__OVERRIDE_LOGO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Prod Catalog Id</b></em>' attribute.
@@ -231,7 +231,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__PROD_CATALOG_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int TRACKING_CODE__PROD_CATALOG_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Redirect Url</b></em>' attribute.
@@ -240,7 +240,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__REDIRECT_URL = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int TRACKING_CODE__REDIRECT_URL = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Subgroup Id</b></em>' attribute.
@@ -249,7 +249,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__SUBGROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int TRACKING_CODE__SUBGROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -258,7 +258,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int TRACKING_CODE__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Trackable Lifetime</b></em>' attribute.
@@ -267,7 +267,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__TRACKABLE_LIFETIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 17;
+	int TRACKING_CODE__TRACKABLE_LIFETIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Tracking Code Type Id</b></em>' reference.
@@ -276,7 +276,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE__TRACKING_CODE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 18;
+	int TRACKING_CODE__TRACKING_CODE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
 
 	/**
 	 * The number of structural features of the '<em>Code</em>' class.
@@ -285,7 +285,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 19;
+	int TRACKING_CODE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 23;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderImpl <em>Code Order</em>}' class.
@@ -304,7 +304,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TRACKING_CODE_ORDER__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -313,7 +313,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TRACKING_CODE_ORDER__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -322,7 +322,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TRACKING_CODE_ORDER__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -331,7 +331,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TRACKING_CODE_ORDER__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Order Id</b></em>' reference.
@@ -340,7 +340,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER__ORDER_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TRACKING_CODE_ORDER__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Tracking Code Type Id</b></em>' reference.
@@ -349,7 +349,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER__TRACKING_CODE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TRACKING_CODE_ORDER__TRACKING_CODE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Affiliate Referred Time Stamp</b></em>' attribute.
@@ -358,7 +358,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER__AFFILIATE_REFERRED_TIME_STAMP = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TRACKING_CODE_ORDER__AFFILIATE_REFERRED_TIME_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Has Exported</b></em>' attribute.
@@ -367,7 +367,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER__HAS_EXPORTED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TRACKING_CODE_ORDER__HAS_EXPORTED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Is Billable</b></em>' attribute.
@@ -376,7 +376,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER__IS_BILLABLE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TRACKING_CODE_ORDER__IS_BILLABLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Site Id</b></em>' attribute.
@@ -385,7 +385,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER__SITE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int TRACKING_CODE_ORDER__SITE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Tracking Code Id</b></em>' reference.
@@ -394,7 +394,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER__TRACKING_CODE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int TRACKING_CODE_ORDER__TRACKING_CODE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Code Order</em>' class.
@@ -403,7 +403,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int TRACKING_CODE_ORDER_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderReturnImpl <em>Code Order Return</em>}' class.
@@ -422,7 +422,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER_RETURN__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TRACKING_CODE_ORDER_RETURN__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -431,7 +431,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER_RETURN__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TRACKING_CODE_ORDER_RETURN__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -440,7 +440,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER_RETURN__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TRACKING_CODE_ORDER_RETURN__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -449,7 +449,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER_RETURN__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TRACKING_CODE_ORDER_RETURN__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Return Id</b></em>' reference.
@@ -458,7 +458,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER_RETURN__RETURN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TRACKING_CODE_ORDER_RETURN__RETURN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Order Id</b></em>' reference.
@@ -467,7 +467,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER_RETURN__ORDER_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TRACKING_CODE_ORDER_RETURN__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Tracking Code Type Id</b></em>' reference.
@@ -476,7 +476,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER_RETURN__TRACKING_CODE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TRACKING_CODE_ORDER_RETURN__TRACKING_CODE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Affiliate Referred Time Stamp</b></em>' attribute.
@@ -485,7 +485,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER_RETURN__AFFILIATE_REFERRED_TIME_STAMP = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TRACKING_CODE_ORDER_RETURN__AFFILIATE_REFERRED_TIME_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Has Exported</b></em>' attribute.
@@ -494,7 +494,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER_RETURN__HAS_EXPORTED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TRACKING_CODE_ORDER_RETURN__HAS_EXPORTED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Is Billable</b></em>' attribute.
@@ -503,7 +503,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER_RETURN__IS_BILLABLE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int TRACKING_CODE_ORDER_RETURN__IS_BILLABLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -512,7 +512,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER_RETURN__ORDER_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int TRACKING_CODE_ORDER_RETURN__ORDER_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Site Id</b></em>' attribute.
@@ -521,7 +521,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER_RETURN__SITE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int TRACKING_CODE_ORDER_RETURN__SITE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Tracking Code Id</b></em>' reference.
@@ -530,7 +530,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER_RETURN__TRACKING_CODE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int TRACKING_CODE_ORDER_RETURN__TRACKING_CODE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The number of structural features of the '<em>Code Order Return</em>' class.
@@ -539,7 +539,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_ORDER_RETURN_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int TRACKING_CODE_ORDER_RETURN_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeTypeImpl <em>Code Type</em>}' class.
@@ -558,7 +558,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TRACKING_CODE_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -567,7 +567,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TRACKING_CODE_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -576,7 +576,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TRACKING_CODE_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -585,7 +585,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TRACKING_CODE_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Tracking Code Type Id</b></em>' attribute.
@@ -594,7 +594,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_TYPE__TRACKING_CODE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TRACKING_CODE_TYPE__TRACKING_CODE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -603,7 +603,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TRACKING_CODE_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Code Type</em>' class.
@@ -612,7 +612,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TRACKING_CODE_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeVisitImpl <em>Code Visit</em>}' class.
@@ -631,7 +631,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_VISIT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TRACKING_CODE_VISIT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -640,7 +640,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_VISIT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TRACKING_CODE_VISIT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -649,7 +649,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_VISIT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TRACKING_CODE_VISIT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -658,7 +658,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_VISIT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TRACKING_CODE_VISIT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Tracking Code Id</b></em>' reference.
@@ -667,7 +667,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_VISIT__TRACKING_CODE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TRACKING_CODE_VISIT__TRACKING_CODE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -676,7 +676,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_VISIT__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TRACKING_CODE_VISIT__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Visit Id</b></em>' attribute.
@@ -685,7 +685,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_VISIT__VISIT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TRACKING_CODE_VISIT__VISIT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Source Enum Id</b></em>' reference.
@@ -694,7 +694,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_VISIT__SOURCE_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TRACKING_CODE_VISIT__SOURCE_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Code Visit</em>' class.
@@ -703,7 +703,7 @@ public interface TrackingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_VISIT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TRACKING_CODE_VISIT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 
 	/**

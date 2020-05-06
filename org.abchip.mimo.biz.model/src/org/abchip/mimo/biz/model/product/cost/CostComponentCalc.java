@@ -8,10 +8,11 @@
 package org.abchip.mimo.biz.model.product.cost;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccountType;
 import org.abchip.mimo.biz.model.common.method.CustomMethod;
 import org.abchip.mimo.biz.model.common.uom.Uom;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +38,7 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
  * @model annotation="mimo-ent-frame title='Cost Component Calculation' dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface CostComponentCalc extends BizEntity {
+public interface CostComponentCalc extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Cost Custom Method Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

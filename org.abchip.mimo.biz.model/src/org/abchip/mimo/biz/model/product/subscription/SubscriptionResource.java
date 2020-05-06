@@ -7,9 +7,10 @@
  */
 package org.abchip.mimo.biz.model.product.subscription;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.content.content.Content;
 import org.abchip.mimo.biz.model.webapp.website.WebSite;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.model.webapp.website.WebSite;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface SubscriptionResource extends BizEntity {
+public interface SubscriptionResource extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

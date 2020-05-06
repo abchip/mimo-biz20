@@ -11,12 +11,13 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.model.workeffort.workeffort.Deliverable;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -55,7 +56,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.Deliverable;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface Requirement extends BizEntityTyped<RequirementType> {
+public interface Requirement extends EntityTyped<RequirementType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Created By User Login</b></em>' attribute.
 	 * <!-- begin-user-doc -->

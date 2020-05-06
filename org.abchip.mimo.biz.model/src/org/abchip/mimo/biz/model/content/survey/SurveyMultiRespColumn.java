@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.content.survey;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Survey Multi-Response Group Column/Category'"
  * @generated
  */
-public interface SurveyMultiRespColumn extends BizEntity {
+public interface SurveyMultiRespColumn extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Column Title</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -1614,7 +1614,7 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		EnumPackage theEnumPackage = (EnumPackage)EPackage.Registry.INSTANCE.getEPackage(EnumPackage.eNS_URI);
 		LoginPackage theLoginPackage = (LoginPackage)EPackage.Registry.INSTANCE.getEPackage(LoginPackage.eNS_URI);
 		StatusPackage theStatusPackage = (StatusPackage)EPackage.Registry.INSTANCE.getEPackage(StatusPackage.eNS_URI);
@@ -1624,13 +1624,20 @@ public class SchedulePackageImpl extends EPackageImpl implements SchedulePackage
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		jobManagerLockEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		jobSandboxEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		recurrenceInfoEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		recurrenceRuleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		runtimeDataEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		temporalExpressionEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		temporalExpressionAssocEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		jobManagerLockEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		jobManagerLockEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		jobSandboxEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		jobSandboxEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		recurrenceInfoEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		recurrenceInfoEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		recurrenceRuleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		recurrenceRuleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		runtimeDataEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		runtimeDataEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		temporalExpressionEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		temporalExpressionEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		temporalExpressionAssocEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		temporalExpressionAssocEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(jobManagerLockEClass, JobManagerLock.class, "JobManagerLock", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

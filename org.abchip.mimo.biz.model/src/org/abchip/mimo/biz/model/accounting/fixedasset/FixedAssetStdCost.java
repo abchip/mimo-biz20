@@ -10,8 +10,9 @@ package org.abchip.mimo.biz.model.accounting.fixedasset;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.uom.Uom;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +35,7 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
  * @model annotation="mimo-ent-frame title='Fixed Asset Standard Cost'"
  * @generated
  */
-public interface FixedAssetStdCost extends BizEntityTyped<FixedAssetStdCostType> {
+public interface FixedAssetStdCost extends EntityTyped<FixedAssetStdCostType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->

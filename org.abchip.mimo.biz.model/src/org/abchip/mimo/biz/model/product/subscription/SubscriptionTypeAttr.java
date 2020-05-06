@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.product.subscription;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Subscription Type Attribute' dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface SubscriptionTypeAttr extends BizEntity {
+public interface SubscriptionTypeAttr extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

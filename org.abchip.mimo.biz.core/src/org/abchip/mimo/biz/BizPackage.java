@@ -179,62 +179,7 @@ public interface BizPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizModule()
 	 * @generated
 	 */
-	int BIZ_MODULE = 4;
-
-	/**
-	 * The meta object id for the '{@link org.abchip.mimo.biz.impl.BizEntityImpl <em>Entity</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.abchip.mimo.biz.impl.BizEntityImpl
-	 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntity()
-	 * @generated
-	 */
-	int BIZ_ENTITY = 1;
-
-	/**
-	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_ENTITY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_ENTITY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_ENTITY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_ENTITY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
-
-	/**
-	 * The number of structural features of the '<em>Entity</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_ENTITY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int BIZ_MODULE = 3;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.impl.BizEntityNoteImpl <em>Entity Note</em>}' class.
@@ -244,7 +189,7 @@ public interface BizPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntityNote()
 	 * @generated
 	 */
-	int BIZ_ENTITY_NOTE = 2;
+	int BIZ_ENTITY_NOTE = 1;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -253,7 +198,7 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_ENTITY_NOTE__CREATED_STAMP = BIZ_ENTITY__CREATED_STAMP;
+	int BIZ_ENTITY_NOTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -262,7 +207,7 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_ENTITY_NOTE__CREATED_TX_STAMP = BIZ_ENTITY__CREATED_TX_STAMP;
+	int BIZ_ENTITY_NOTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -271,7 +216,7 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_ENTITY_NOTE__LAST_UPDATED_STAMP = BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int BIZ_ENTITY_NOTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -280,7 +225,7 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_ENTITY_NOTE__LAST_UPDATED_TX_STAMP = BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int BIZ_ENTITY_NOTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Note Id</b></em>' attribute.
@@ -289,7 +234,7 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_ENTITY_NOTE__NOTE_ID = BIZ_ENTITY_FEATURE_COUNT + 0;
+	int BIZ_ENTITY_NOTE__NOTE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of structural features of the '<em>Entity Note</em>' class.
@@ -298,27 +243,7 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_ENTITY_NOTE_FEATURE_COUNT = BIZ_ENTITY_FEATURE_COUNT + 1;
-
-	/**
-	 * The meta object id for the '{@link org.abchip.mimo.biz.impl.BizEntityTypedImpl <em>Entity Typed</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.abchip.mimo.biz.impl.BizEntityTypedImpl
-	 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntityTyped()
-	 * @generated
-	 */
-	int BIZ_ENTITY_TYPED = 5;
-
-	/**
-	 * The meta object id for the '{@link org.abchip.mimo.biz.impl.BizEntityTypeImpl <em>Entity Type</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.abchip.mimo.biz.impl.BizEntityTypeImpl
-	 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntityType()
-	 * @generated
-	 */
-	int BIZ_ENTITY_TYPE = 6;
+	int BIZ_ENTITY_NOTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.impl.BizEntityNoteDataImpl <em>Entity Note Data</em>}' class.
@@ -328,7 +253,7 @@ public interface BizPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntityNoteData()
 	 * @generated
 	 */
-	int BIZ_ENTITY_NOTE_DATA = 3;
+	int BIZ_ENTITY_NOTE_DATA = 2;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -337,7 +262,7 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_ENTITY_NOTE_DATA__CREATED_STAMP = BIZ_ENTITY__CREATED_STAMP;
+	int BIZ_ENTITY_NOTE_DATA__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -346,7 +271,7 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_ENTITY_NOTE_DATA__CREATED_TX_STAMP = BIZ_ENTITY__CREATED_TX_STAMP;
+	int BIZ_ENTITY_NOTE_DATA__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -355,7 +280,7 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_ENTITY_NOTE_DATA__LAST_UPDATED_STAMP = BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int BIZ_ENTITY_NOTE_DATA__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -364,7 +289,7 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_ENTITY_NOTE_DATA__LAST_UPDATED_TX_STAMP = BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int BIZ_ENTITY_NOTE_DATA__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Note Id</b></em>' attribute.
@@ -373,7 +298,7 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_ENTITY_NOTE_DATA__NOTE_ID = BIZ_ENTITY_FEATURE_COUNT + 0;
+	int BIZ_ENTITY_NOTE_DATA__NOTE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>More Info Item Id</b></em>' attribute.
@@ -382,7 +307,7 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_ENTITY_NOTE_DATA__MORE_INFO_ITEM_ID = BIZ_ENTITY_FEATURE_COUNT + 1;
+	int BIZ_ENTITY_NOTE_DATA__MORE_INFO_ITEM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>More Info Item Name</b></em>' attribute.
@@ -391,7 +316,7 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_ENTITY_NOTE_DATA__MORE_INFO_ITEM_NAME = BIZ_ENTITY_FEATURE_COUNT + 2;
+	int BIZ_ENTITY_NOTE_DATA__MORE_INFO_ITEM_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>More Info Url</b></em>' attribute.
@@ -400,7 +325,7 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_ENTITY_NOTE_DATA__MORE_INFO_URL = BIZ_ENTITY_FEATURE_COUNT + 3;
+	int BIZ_ENTITY_NOTE_DATA__MORE_INFO_URL = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Note Date Time</b></em>' attribute.
@@ -409,7 +334,7 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_ENTITY_NOTE_DATA__NOTE_DATE_TIME = BIZ_ENTITY_FEATURE_COUNT + 4;
+	int BIZ_ENTITY_NOTE_DATA__NOTE_DATE_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Note Info</b></em>' attribute.
@@ -418,7 +343,7 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_ENTITY_NOTE_DATA__NOTE_INFO = BIZ_ENTITY_FEATURE_COUNT + 5;
+	int BIZ_ENTITY_NOTE_DATA__NOTE_INFO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Note Name</b></em>' attribute.
@@ -427,7 +352,7 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_ENTITY_NOTE_DATA__NOTE_NAME = BIZ_ENTITY_FEATURE_COUNT + 6;
+	int BIZ_ENTITY_NOTE_DATA__NOTE_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Note Party</b></em>' attribute.
@@ -436,7 +361,7 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_ENTITY_NOTE_DATA__NOTE_PARTY = BIZ_ENTITY_FEATURE_COUNT + 7;
+	int BIZ_ENTITY_NOTE_DATA__NOTE_PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Entity Note Data</em>' class.
@@ -445,7 +370,7 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BIZ_ENTITY_NOTE_DATA_FEATURE_COUNT = BIZ_ENTITY_FEATURE_COUNT + 8;
+	int BIZ_ENTITY_NOTE_DATA_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -473,105 +398,6 @@ public interface BizPackage extends EPackage {
 	 * @ordered
 	 */
 	int BIZ_MODULE_FEATURE_COUNT = EntityPackage.ENTITY_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_ENTITY_TYPED__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_ENTITY_TYPED__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
-
-	/**
-	 * The number of structural features of the '<em>Entity Typed</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_ENTITY_TYPED_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>Slots</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_ENTITY_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
-
-	/**
-	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_ENTITY_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_ENTITY_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
-
-	/**
-	 * The number of structural features of the '<em>Entity Type</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BIZ_ENTITY_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.BizComponent <em>Component</em>}'.
@@ -649,16 +475,6 @@ public interface BizPackage extends EPackage {
 	EAttribute getBizModule_Status();
 
 	/**
-	 * Returns the meta object for class '{@link org.abchip.mimo.biz.BizEntity <em>Entity</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Entity</em>'.
-	 * @see org.abchip.mimo.biz.BizEntity
-	 * @generated
-	 */
-	EClass getBizEntity();
-
-	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.BizEntityNote <em>Entity Note</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -678,26 +494,6 @@ public interface BizPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getBizEntityNote_NoteId();
-
-	/**
-	 * Returns the meta object for class '{@link org.abchip.mimo.biz.BizEntityTyped <em>Entity Typed</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Entity Typed</em>'.
-	 * @see org.abchip.mimo.biz.BizEntityTyped
-	 * @generated
-	 */
-	EClass getBizEntityTyped();
-
-	/**
-	 * Returns the meta object for class '{@link org.abchip.mimo.biz.BizEntityType <em>Entity Type</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Entity Type</em>'.
-	 * @see org.abchip.mimo.biz.BizEntityType
-	 * @generated
-	 */
-	EClass getBizEntityType();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.BizEntityNoteData <em>Entity Note Data</em>}'.
@@ -880,16 +676,6 @@ public interface BizPackage extends EPackage {
 		EAttribute BIZ_MODULE__STATUS = eINSTANCE.getBizModule_Status();
 
 		/**
-		 * The meta object literal for the '{@link org.abchip.mimo.biz.impl.BizEntityImpl <em>Entity</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.abchip.mimo.biz.impl.BizEntityImpl
-		 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntity()
-		 * @generated
-		 */
-		EClass BIZ_ENTITY = eINSTANCE.getBizEntity();
-
-		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.impl.BizEntityNoteImpl <em>Entity Note</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -906,26 +692,6 @@ public interface BizPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute BIZ_ENTITY_NOTE__NOTE_ID = eINSTANCE.getBizEntityNote_NoteId();
-
-		/**
-		 * The meta object literal for the '{@link org.abchip.mimo.biz.impl.BizEntityTypedImpl <em>Entity Typed</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.abchip.mimo.biz.impl.BizEntityTypedImpl
-		 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntityTyped()
-		 * @generated
-		 */
-		EClass BIZ_ENTITY_TYPED = eINSTANCE.getBizEntityTyped();
-
-		/**
-		 * The meta object literal for the '{@link org.abchip.mimo.biz.impl.BizEntityTypeImpl <em>Entity Type</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.abchip.mimo.biz.impl.BizEntityTypeImpl
-		 * @see org.abchip.mimo.biz.impl.BizPackageImpl#getBizEntityType()
-		 * @generated
-		 */
-		EClass BIZ_ENTITY_TYPE = eINSTANCE.getBizEntityType();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.impl.BizEntityNoteDataImpl <em>Entity Note Data</em>}' class.

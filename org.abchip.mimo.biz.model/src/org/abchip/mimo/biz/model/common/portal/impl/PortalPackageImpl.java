@@ -1295,7 +1295,7 @@ public class PortalPackageImpl extends EPackageImpl implements PortalPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		ContentPackage theContentPackage = (ContentPackage)EPackage.Registry.INSTANCE.getEPackage(ContentPackage.eNS_URI);
 		SecuritygroupPackage theSecuritygroupPackage = (SecuritygroupPackage)EPackage.Registry.INSTANCE.getEPackage(SecuritygroupPackage.eNS_URI);
 
@@ -1304,13 +1304,20 @@ public class PortalPackageImpl extends EPackageImpl implements PortalPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		portalPageEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		portalPageColumnEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		portalPagePortletEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		portalPortletEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		portletAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		portletCategoryEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		portletPortletCategoryEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		portalPageEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		portalPageEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		portalPageColumnEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		portalPageColumnEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		portalPagePortletEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		portalPagePortletEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		portalPortletEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		portalPortletEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		portletAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		portletAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		portletCategoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		portletCategoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		portletPortletCategoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		portletPortletCategoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(portalPageEClass, PortalPage.class, "PortalPage", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

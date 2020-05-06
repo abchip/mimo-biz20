@@ -11,7 +11,6 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.uom.Uom;
@@ -19,6 +18,8 @@ import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.facility.Container;
 import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -67,7 +68,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface InventoryItem extends BizEntityTyped<InventoryItemType> {
+public interface InventoryItem extends EntityTyped<InventoryItemType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Accounting Quantity Total</b></em>' attribute.
 	 * <!-- begin-user-doc -->

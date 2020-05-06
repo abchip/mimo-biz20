@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.party.party;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.webapp.website.WebSite;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.model.webapp.website.WebSite;
  * @model annotation="mimo-ent-frame title='WebSite Role Association'"
  * @generated
  */
-public interface WebSiteRole extends BizEntity {
+public interface WebSiteRole extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

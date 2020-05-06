@@ -10,8 +10,9 @@ package org.abchip.mimo.biz.model.product.feature;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,7 +37,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * @model annotation="mimo-ent-frame title='Product Feature Applicability' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductFeatureAppl extends BizEntityTyped<ProductFeatureApplType> {
+public interface ProductFeatureAppl extends EntityTyped<ProductFeatureApplType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->

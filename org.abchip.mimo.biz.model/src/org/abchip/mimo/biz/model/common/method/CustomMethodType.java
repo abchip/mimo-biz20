@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.common.method;
 
-import org.abchip.mimo.biz.BizEntityType;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.BizEntityType;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface CustomMethodType extends BizEntityType<CustomMethod> {
+public interface CustomMethodType extends EntityType<CustomMethod>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

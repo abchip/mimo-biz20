@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.party.agreement;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDENDUM__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int ADDENDUM__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDENDUM__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int ADDENDUM__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDENDUM__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int ADDENDUM__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDENDUM__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int ADDENDUM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Addendum Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDENDUM__ADDENDUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int ADDENDUM__ADDENDUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Addendum Creation Date</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDENDUM__ADDENDUM_CREATION_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int ADDENDUM__ADDENDUM_CREATION_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Addendum Effective Date</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDENDUM__ADDENDUM_EFFECTIVE_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int ADDENDUM__ADDENDUM_EFFECTIVE_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Addendum Text</b></em>' attribute.
@@ -141,7 +141,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDENDUM__ADDENDUM_TEXT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int ADDENDUM__ADDENDUM_TEXT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
@@ -150,7 +150,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDENDUM__AGREEMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int ADDENDUM__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -159,7 +159,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDENDUM__AGREEMENT_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int ADDENDUM__AGREEMENT_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Addendum</em>' class.
@@ -168,7 +168,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDENDUM_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int ADDENDUM_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementImpl <em>Agreement</em>}' class.
@@ -187,7 +187,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int AGREEMENT__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -196,7 +196,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int AGREEMENT__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -205,7 +205,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int AGREEMENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -214,7 +214,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int AGREEMENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Id</b></em>' attribute.
@@ -223,7 +223,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT__AGREEMENT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int AGREEMENT__AGREEMENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Attributes</b></em>' reference list.
@@ -232,7 +232,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT__AGREEMENT_ATTRIBUTES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int AGREEMENT__AGREEMENT_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Date</b></em>' attribute.
@@ -241,7 +241,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT__AGREEMENT_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int AGREEMENT__AGREEMENT_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Items</b></em>' reference list.
@@ -250,7 +250,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT__AGREEMENT_ITEMS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int AGREEMENT__AGREEMENT_ITEMS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Type Id</b></em>' reference.
@@ -259,7 +259,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT__AGREEMENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int AGREEMENT__AGREEMENT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -268,7 +268,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int AGREEMENT__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -277,7 +277,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT__FROM_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int AGREEMENT__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Party Id From</b></em>' reference.
@@ -286,7 +286,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT__PARTY_ID_FROM = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int AGREEMENT__PARTY_ID_FROM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Party Id To</b></em>' reference.
@@ -295,7 +295,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT__PARTY_ID_TO = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int AGREEMENT__PARTY_ID_TO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -304,7 +304,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT__PRODUCT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 9;
+	int AGREEMENT__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id From</b></em>' reference.
@@ -313,7 +313,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT__ROLE_TYPE_ID_FROM = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 10;
+	int AGREEMENT__ROLE_TYPE_ID_FROM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id To</b></em>' reference.
@@ -322,7 +322,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT__ROLE_TYPE_ID_TO = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 11;
+	int AGREEMENT__ROLE_TYPE_ID_TO = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Text Data</b></em>' attribute.
@@ -331,7 +331,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT__TEXT_DATA = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 12;
+	int AGREEMENT__TEXT_DATA = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -340,7 +340,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT__THRU_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 13;
+	int AGREEMENT__THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The number of structural features of the '<em>Agreement</em>' class.
@@ -349,7 +349,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 14;
+	int AGREEMENT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementAttributeImpl <em>Attribute</em>}' class.
@@ -368,7 +368,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int AGREEMENT_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -377,7 +377,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int AGREEMENT_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -386,7 +386,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int AGREEMENT_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -395,7 +395,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int AGREEMENT_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
@@ -404,7 +404,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ATTRIBUTE__AGREEMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int AGREEMENT_ATTRIBUTE__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -413,7 +413,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int AGREEMENT_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -422,7 +422,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int AGREEMENT_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -431,7 +431,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int AGREEMENT_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Attribute</em>' class.
@@ -440,7 +440,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int AGREEMENT_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementContentImpl <em>Content</em>}' class.
@@ -459,7 +459,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int AGREEMENT_CONTENT__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -468,7 +468,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int AGREEMENT_CONTENT__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -477,7 +477,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int AGREEMENT_CONTENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -486,7 +486,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int AGREEMENT_CONTENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
@@ -495,7 +495,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT__AGREEMENT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int AGREEMENT_CONTENT__AGREEMENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Content Id</b></em>' reference.
@@ -504,7 +504,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT__CONTENT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int AGREEMENT_CONTENT__CONTENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Content Type Id</b></em>' reference.
@@ -513,7 +513,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT__AGREEMENT_CONTENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int AGREEMENT_CONTENT__AGREEMENT_CONTENT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -522,7 +522,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT__AGREEMENT_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int AGREEMENT_CONTENT__AGREEMENT_ITEM_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -531,7 +531,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT__FROM_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int AGREEMENT_CONTENT__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -540,7 +540,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT__THRU_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int AGREEMENT_CONTENT__THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Content</em>' class.
@@ -549,7 +549,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int AGREEMENT_CONTENT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementContentTypeImpl <em>Content Type</em>}' class.
@@ -568,7 +568,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int AGREEMENT_CONTENT_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -577,7 +577,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int AGREEMENT_CONTENT_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -586,7 +586,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int AGREEMENT_CONTENT_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -595,7 +595,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int AGREEMENT_CONTENT_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -604,7 +604,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int AGREEMENT_CONTENT_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Content Type Id</b></em>' attribute.
@@ -613,7 +613,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT_TYPE__AGREEMENT_CONTENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int AGREEMENT_CONTENT_TYPE__AGREEMENT_CONTENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -622,7 +622,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int AGREEMENT_CONTENT_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -631,7 +631,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int AGREEMENT_CONTENT_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -640,7 +640,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int AGREEMENT_CONTENT_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Content Type</em>' class.
@@ -649,7 +649,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_CONTENT_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int AGREEMENT_CONTENT_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementEmploymentApplImpl <em>Employment Appl</em>}' class.
@@ -668,7 +668,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_EMPLOYMENT_APPL__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int AGREEMENT_EMPLOYMENT_APPL__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -677,7 +677,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_EMPLOYMENT_APPL__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int AGREEMENT_EMPLOYMENT_APPL__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -686,7 +686,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_EMPLOYMENT_APPL__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int AGREEMENT_EMPLOYMENT_APPL__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -695,7 +695,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_EMPLOYMENT_APPL__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int AGREEMENT_EMPLOYMENT_APPL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Id</b></em>' attribute.
@@ -704,7 +704,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_EMPLOYMENT_APPL__AGREEMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int AGREEMENT_EMPLOYMENT_APPL__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -713,7 +713,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_EMPLOYMENT_APPL__AGREEMENT_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int AGREEMENT_EMPLOYMENT_APPL__AGREEMENT_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -722,7 +722,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_EMPLOYMENT_APPL__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int AGREEMENT_EMPLOYMENT_APPL__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Party Id From</b></em>' attribute.
@@ -731,7 +731,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_EMPLOYMENT_APPL__PARTY_ID_FROM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int AGREEMENT_EMPLOYMENT_APPL__PARTY_ID_FROM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Party Id To</b></em>' attribute.
@@ -740,7 +740,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_EMPLOYMENT_APPL__PARTY_ID_TO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int AGREEMENT_EMPLOYMENT_APPL__PARTY_ID_TO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id From</b></em>' attribute.
@@ -749,7 +749,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_EMPLOYMENT_APPL__ROLE_TYPE_ID_FROM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int AGREEMENT_EMPLOYMENT_APPL__ROLE_TYPE_ID_FROM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id To</b></em>' attribute.
@@ -758,7 +758,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_EMPLOYMENT_APPL__ROLE_TYPE_ID_TO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int AGREEMENT_EMPLOYMENT_APPL__ROLE_TYPE_ID_TO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Date</b></em>' attribute.
@@ -767,7 +767,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_EMPLOYMENT_APPL__AGREEMENT_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int AGREEMENT_EMPLOYMENT_APPL__AGREEMENT_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -776,7 +776,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_EMPLOYMENT_APPL__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int AGREEMENT_EMPLOYMENT_APPL__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The number of structural features of the '<em>Employment Appl</em>' class.
@@ -785,7 +785,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_EMPLOYMENT_APPL_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int AGREEMENT_EMPLOYMENT_APPL_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementFacilityApplImpl <em>Facility Appl</em>}' class.
@@ -804,7 +804,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_FACILITY_APPL__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int AGREEMENT_FACILITY_APPL__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -813,7 +813,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_FACILITY_APPL__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int AGREEMENT_FACILITY_APPL__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -822,7 +822,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_FACILITY_APPL__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int AGREEMENT_FACILITY_APPL__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -831,7 +831,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_FACILITY_APPL__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int AGREEMENT_FACILITY_APPL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
@@ -840,7 +840,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_FACILITY_APPL__AGREEMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int AGREEMENT_FACILITY_APPL__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
@@ -849,7 +849,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_FACILITY_APPL__FACILITY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int AGREEMENT_FACILITY_APPL__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -858,7 +858,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_FACILITY_APPL__AGREEMENT_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int AGREEMENT_FACILITY_APPL__AGREEMENT_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Facility Appl</em>' class.
@@ -867,7 +867,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_FACILITY_APPL_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int AGREEMENT_FACILITY_APPL_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementGeographicalApplicImpl <em>Geographical Applic</em>}' class.
@@ -886,7 +886,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_GEOGRAPHICAL_APPLIC__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int AGREEMENT_GEOGRAPHICAL_APPLIC__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -895,7 +895,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_GEOGRAPHICAL_APPLIC__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int AGREEMENT_GEOGRAPHICAL_APPLIC__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -904,7 +904,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_GEOGRAPHICAL_APPLIC__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int AGREEMENT_GEOGRAPHICAL_APPLIC__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -913,7 +913,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_GEOGRAPHICAL_APPLIC__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int AGREEMENT_GEOGRAPHICAL_APPLIC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
@@ -922,7 +922,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_GEOGRAPHICAL_APPLIC__AGREEMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int AGREEMENT_GEOGRAPHICAL_APPLIC__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Geo Id</b></em>' reference.
@@ -931,7 +931,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_GEOGRAPHICAL_APPLIC__GEO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int AGREEMENT_GEOGRAPHICAL_APPLIC__GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -940,7 +940,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_GEOGRAPHICAL_APPLIC__AGREEMENT_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int AGREEMENT_GEOGRAPHICAL_APPLIC__AGREEMENT_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Geographical Applic</em>' class.
@@ -949,7 +949,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_GEOGRAPHICAL_APPLIC_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int AGREEMENT_GEOGRAPHICAL_APPLIC_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementItemImpl <em>Item</em>}' class.
@@ -968,7 +968,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int AGREEMENT_ITEM__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -977,7 +977,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int AGREEMENT_ITEM__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -986,7 +986,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int AGREEMENT_ITEM__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -995,7 +995,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int AGREEMENT_ITEM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
@@ -1004,7 +1004,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM__AGREEMENT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int AGREEMENT_ITEM__AGREEMENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -1013,7 +1013,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM__AGREEMENT_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int AGREEMENT_ITEM__AGREEMENT_ITEM_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Image</b></em>' attribute.
@@ -1022,7 +1022,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM__AGREEMENT_IMAGE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int AGREEMENT_ITEM__AGREEMENT_IMAGE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Type Id</b></em>' reference.
@@ -1031,7 +1031,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM__AGREEMENT_ITEM_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int AGREEMENT_ITEM__AGREEMENT_ITEM_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Text</b></em>' attribute.
@@ -1040,7 +1040,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM__AGREEMENT_TEXT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int AGREEMENT_ITEM__AGREEMENT_TEXT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Currency Uom Id</b></em>' attribute.
@@ -1049,7 +1049,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM__CURRENCY_UOM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int AGREEMENT_ITEM__CURRENCY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Item</em>' class.
@@ -1058,7 +1058,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int AGREEMENT_ITEM_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementItemAttributeImpl <em>Item Attribute</em>}' class.
@@ -1077,7 +1077,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int AGREEMENT_ITEM_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1086,7 +1086,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int AGREEMENT_ITEM_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1095,7 +1095,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int AGREEMENT_ITEM_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1104,7 +1104,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int AGREEMENT_ITEM_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Id</b></em>' attribute.
@@ -1113,7 +1113,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_ATTRIBUTE__AGREEMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int AGREEMENT_ITEM_ATTRIBUTE__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -1122,7 +1122,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_ATTRIBUTE__AGREEMENT_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int AGREEMENT_ITEM_ATTRIBUTE__AGREEMENT_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1131,7 +1131,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int AGREEMENT_ITEM_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -1140,7 +1140,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int AGREEMENT_ITEM_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -1149,7 +1149,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int AGREEMENT_ITEM_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Item Attribute</em>' class.
@@ -1158,7 +1158,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int AGREEMENT_ITEM_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementItemTypeImpl <em>Item Type</em>}' class.
@@ -1177,7 +1177,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int AGREEMENT_ITEM_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1186,7 +1186,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int AGREEMENT_ITEM_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1195,7 +1195,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int AGREEMENT_ITEM_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1204,7 +1204,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int AGREEMENT_ITEM_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1213,7 +1213,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int AGREEMENT_ITEM_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Type Id</b></em>' attribute.
@@ -1222,7 +1222,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE__AGREEMENT_ITEM_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int AGREEMENT_ITEM_TYPE__AGREEMENT_ITEM_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Type Attrs</b></em>' reference list.
@@ -1231,7 +1231,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE__AGREEMENT_ITEM_TYPE_ATTRS = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int AGREEMENT_ITEM_TYPE__AGREEMENT_ITEM_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1240,7 +1240,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int AGREEMENT_ITEM_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -1249,7 +1249,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int AGREEMENT_ITEM_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -1258,7 +1258,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int AGREEMENT_ITEM_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Item Type</em>' class.
@@ -1267,7 +1267,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 5;
+	int AGREEMENT_ITEM_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementItemTypeAttrImpl <em>Item Type Attr</em>}' class.
@@ -1286,7 +1286,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE_ATTR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int AGREEMENT_ITEM_TYPE_ATTR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1295,7 +1295,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE_ATTR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int AGREEMENT_ITEM_TYPE_ATTR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1304,7 +1304,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE_ATTR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int AGREEMENT_ITEM_TYPE_ATTR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1313,7 +1313,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE_ATTR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int AGREEMENT_ITEM_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Type Id</b></em>' reference.
@@ -1322,7 +1322,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE_ATTR__AGREEMENT_ITEM_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int AGREEMENT_ITEM_TYPE_ATTR__AGREEMENT_ITEM_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1331,7 +1331,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE_ATTR__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int AGREEMENT_ITEM_TYPE_ATTR__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1340,7 +1340,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE_ATTR__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int AGREEMENT_ITEM_TYPE_ATTR__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Item Type Attr</em>' class.
@@ -1349,7 +1349,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ITEM_TYPE_ATTR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int AGREEMENT_ITEM_TYPE_ATTR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementPartyApplicImpl <em>Party Applic</em>}' class.
@@ -1368,7 +1368,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PARTY_APPLIC__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int AGREEMENT_PARTY_APPLIC__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1377,7 +1377,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PARTY_APPLIC__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int AGREEMENT_PARTY_APPLIC__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1386,7 +1386,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PARTY_APPLIC__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int AGREEMENT_PARTY_APPLIC__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1395,7 +1395,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PARTY_APPLIC__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int AGREEMENT_PARTY_APPLIC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
@@ -1404,7 +1404,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PARTY_APPLIC__AGREEMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int AGREEMENT_PARTY_APPLIC__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -1413,7 +1413,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PARTY_APPLIC__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int AGREEMENT_PARTY_APPLIC__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -1422,7 +1422,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PARTY_APPLIC__AGREEMENT_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int AGREEMENT_PARTY_APPLIC__AGREEMENT_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Party Applic</em>' class.
@@ -1431,7 +1431,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PARTY_APPLIC_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int AGREEMENT_PARTY_APPLIC_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementProductApplImpl <em>Product Appl</em>}' class.
@@ -1450,7 +1450,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PRODUCT_APPL__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int AGREEMENT_PRODUCT_APPL__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1459,7 +1459,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PRODUCT_APPL__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int AGREEMENT_PRODUCT_APPL__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1468,7 +1468,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PRODUCT_APPL__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int AGREEMENT_PRODUCT_APPL__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1477,7 +1477,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PRODUCT_APPL__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int AGREEMENT_PRODUCT_APPL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
@@ -1486,7 +1486,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PRODUCT_APPL__AGREEMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int AGREEMENT_PRODUCT_APPL__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -1495,7 +1495,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PRODUCT_APPL__PRODUCT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int AGREEMENT_PRODUCT_APPL__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -1504,7 +1504,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PRODUCT_APPL__AGREEMENT_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int AGREEMENT_PRODUCT_APPL__AGREEMENT_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Price</b></em>' attribute.
@@ -1513,7 +1513,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PRODUCT_APPL__PRICE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int AGREEMENT_PRODUCT_APPL__PRICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Product Appl</em>' class.
@@ -1522,7 +1522,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PRODUCT_APPL_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int AGREEMENT_PRODUCT_APPL_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementPromoApplImpl <em>Promo Appl</em>}' class.
@@ -1541,7 +1541,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PROMO_APPL__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int AGREEMENT_PROMO_APPL__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1550,7 +1550,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PROMO_APPL__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int AGREEMENT_PROMO_APPL__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1559,7 +1559,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PROMO_APPL__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int AGREEMENT_PROMO_APPL__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1568,7 +1568,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PROMO_APPL__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int AGREEMENT_PROMO_APPL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Id</b></em>' reference.
@@ -1577,7 +1577,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PROMO_APPL__PRODUCT_PROMO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int AGREEMENT_PROMO_APPL__PRODUCT_PROMO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
@@ -1586,7 +1586,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PROMO_APPL__AGREEMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int AGREEMENT_PROMO_APPL__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -1595,7 +1595,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PROMO_APPL__AGREEMENT_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int AGREEMENT_PROMO_APPL__AGREEMENT_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1604,7 +1604,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PROMO_APPL__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int AGREEMENT_PROMO_APPL__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -1613,7 +1613,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PROMO_APPL__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int AGREEMENT_PROMO_APPL__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -1622,7 +1622,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PROMO_APPL__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int AGREEMENT_PROMO_APPL__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Promo Appl</em>' class.
@@ -1631,7 +1631,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_PROMO_APPL_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int AGREEMENT_PROMO_APPL_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementRoleImpl <em>Role</em>}' class.
@@ -1650,7 +1650,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ROLE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int AGREEMENT_ROLE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1659,7 +1659,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ROLE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int AGREEMENT_ROLE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1668,7 +1668,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ROLE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int AGREEMENT_ROLE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1677,7 +1677,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ROLE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int AGREEMENT_ROLE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
@@ -1686,7 +1686,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ROLE__AGREEMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int AGREEMENT_ROLE__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -1695,7 +1695,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ROLE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int AGREEMENT_ROLE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -1704,7 +1704,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ROLE__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int AGREEMENT_ROLE__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Role</em>' class.
@@ -1713,7 +1713,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_ROLE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int AGREEMENT_ROLE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermImpl <em>Term</em>}' class.
@@ -1732,7 +1732,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int AGREEMENT_TERM__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1741,7 +1741,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int AGREEMENT_TERM__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1750,7 +1750,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int AGREEMENT_TERM__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1759,7 +1759,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int AGREEMENT_TERM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Term Id</b></em>' attribute.
@@ -1768,7 +1768,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__AGREEMENT_TERM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int AGREEMENT_TERM__AGREEMENT_TERM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
@@ -1777,7 +1777,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__AGREEMENT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int AGREEMENT_TERM__AGREEMENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -1786,7 +1786,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__AGREEMENT_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int AGREEMENT_TERM__AGREEMENT_ITEM_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Term Attributes</b></em>' reference list.
@@ -1795,7 +1795,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__AGREEMENT_TERM_ATTRIBUTES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int AGREEMENT_TERM__AGREEMENT_TERM_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1804,7 +1804,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int AGREEMENT_TERM__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1813,7 +1813,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__FROM_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int AGREEMENT_TERM__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Item Type Id</b></em>' reference.
@@ -1822,7 +1822,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__INVOICE_ITEM_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int AGREEMENT_TERM__INVOICE_ITEM_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Max Quantity</b></em>' attribute.
@@ -1831,7 +1831,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__MAX_QUANTITY = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int AGREEMENT_TERM__MAX_QUANTITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Min Quantity</b></em>' attribute.
@@ -1840,7 +1840,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__MIN_QUANTITY = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int AGREEMENT_TERM__MIN_QUANTITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Term Days</b></em>' attribute.
@@ -1849,7 +1849,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__TERM_DAYS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 9;
+	int AGREEMENT_TERM__TERM_DAYS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Term Type Id</b></em>' reference.
@@ -1858,7 +1858,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__TERM_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 10;
+	int AGREEMENT_TERM__TERM_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Term Value</b></em>' attribute.
@@ -1867,7 +1867,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__TERM_VALUE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 11;
+	int AGREEMENT_TERM__TERM_VALUE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Text Value</b></em>' attribute.
@@ -1876,7 +1876,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__TEXT_VALUE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 12;
+	int AGREEMENT_TERM__TEXT_VALUE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -1885,7 +1885,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM__THRU_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 13;
+	int AGREEMENT_TERM__THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The number of structural features of the '<em>Term</em>' class.
@@ -1894,7 +1894,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 14;
+	int AGREEMENT_TERM_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTermAttributeImpl <em>Term Attribute</em>}' class.
@@ -1913,7 +1913,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int AGREEMENT_TERM_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1922,7 +1922,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int AGREEMENT_TERM_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1931,7 +1931,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int AGREEMENT_TERM_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1940,7 +1940,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int AGREEMENT_TERM_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Term Id</b></em>' reference.
@@ -1949,7 +1949,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM_ATTRIBUTE__AGREEMENT_TERM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int AGREEMENT_TERM_ATTRIBUTE__AGREEMENT_TERM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1958,7 +1958,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int AGREEMENT_TERM_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -1967,7 +1967,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int AGREEMENT_TERM_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -1976,7 +1976,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int AGREEMENT_TERM_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Term Attribute</em>' class.
@@ -1985,7 +1985,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TERM_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int AGREEMENT_TERM_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeImpl <em>Type</em>}' class.
@@ -2004,7 +2004,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int AGREEMENT_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -2013,7 +2013,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int AGREEMENT_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2022,7 +2022,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int AGREEMENT_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2031,7 +2031,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int AGREEMENT_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2040,7 +2040,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int AGREEMENT_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Type Id</b></em>' attribute.
@@ -2049,7 +2049,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE__AGREEMENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int AGREEMENT_TYPE__AGREEMENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Type Attrs</b></em>' reference list.
@@ -2058,7 +2058,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE__AGREEMENT_TYPE_ATTRS = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int AGREEMENT_TYPE__AGREEMENT_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -2067,7 +2067,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int AGREEMENT_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -2076,7 +2076,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int AGREEMENT_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -2085,7 +2085,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int AGREEMENT_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Type</em>' class.
@@ -2094,7 +2094,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 5;
+	int AGREEMENT_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementTypeAttrImpl <em>Type Attr</em>}' class.
@@ -2113,7 +2113,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE_ATTR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int AGREEMENT_TYPE_ATTR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2122,7 +2122,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE_ATTR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int AGREEMENT_TYPE_ATTR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2131,7 +2131,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE_ATTR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int AGREEMENT_TYPE_ATTR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2140,7 +2140,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE_ATTR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int AGREEMENT_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Type Id</b></em>' reference.
@@ -2149,7 +2149,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE_ATTR__AGREEMENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int AGREEMENT_TYPE_ATTR__AGREEMENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -2158,7 +2158,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE_ATTR__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int AGREEMENT_TYPE_ATTR__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -2167,7 +2167,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE_ATTR__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int AGREEMENT_TYPE_ATTR__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Type Attr</em>' class.
@@ -2176,7 +2176,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_TYPE_ATTR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int AGREEMENT_TYPE_ATTR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.AgreementWorkEffortApplicImpl <em>Work Effort Applic</em>}' class.
@@ -2195,7 +2195,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_WORK_EFFORT_APPLIC__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int AGREEMENT_WORK_EFFORT_APPLIC__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2204,7 +2204,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_WORK_EFFORT_APPLIC__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int AGREEMENT_WORK_EFFORT_APPLIC__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2213,7 +2213,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_WORK_EFFORT_APPLIC__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int AGREEMENT_WORK_EFFORT_APPLIC__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2222,7 +2222,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_WORK_EFFORT_APPLIC__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int AGREEMENT_WORK_EFFORT_APPLIC__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Id</b></em>' reference.
@@ -2231,7 +2231,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_WORK_EFFORT_APPLIC__AGREEMENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int AGREEMENT_WORK_EFFORT_APPLIC__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -2240,7 +2240,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_WORK_EFFORT_APPLIC__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int AGREEMENT_WORK_EFFORT_APPLIC__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -2249,7 +2249,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_WORK_EFFORT_APPLIC__AGREEMENT_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int AGREEMENT_WORK_EFFORT_APPLIC__AGREEMENT_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort Applic</em>' class.
@@ -2258,7 +2258,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int AGREEMENT_WORK_EFFORT_APPLIC_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int AGREEMENT_WORK_EFFORT_APPLIC_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.TermTypeImpl <em>Term Type</em>}' class.
@@ -2277,7 +2277,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int TERM_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -2286,7 +2286,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int TERM_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2295,7 +2295,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int TERM_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2304,7 +2304,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int TERM_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2313,7 +2313,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int TERM_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Term Type Id</b></em>' attribute.
@@ -2322,7 +2322,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE__TERM_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int TERM_TYPE__TERM_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -2331,7 +2331,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int TERM_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -2340,7 +2340,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int TERM_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -2349,7 +2349,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int TERM_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Term Type Attrs</b></em>' reference list.
@@ -2358,7 +2358,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE__TERM_TYPE_ATTRS = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int TERM_TYPE__TERM_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Term Type</em>' class.
@@ -2367,7 +2367,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 5;
+	int TERM_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.agreement.impl.TermTypeAttrImpl <em>Term Type Attr</em>}' class.
@@ -2386,7 +2386,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE_ATTR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TERM_TYPE_ATTR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -2395,7 +2395,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE_ATTR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TERM_TYPE_ATTR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -2404,7 +2404,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE_ATTR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TERM_TYPE_ATTR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -2413,7 +2413,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE_ATTR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TERM_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Term Type Id</b></em>' reference.
@@ -2422,7 +2422,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE_ATTR__TERM_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TERM_TYPE_ATTR__TERM_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -2431,7 +2431,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE_ATTR__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TERM_TYPE_ATTR__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -2440,7 +2440,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE_ATTR__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TERM_TYPE_ATTR__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Term Type Attr</em>' class.
@@ -2449,7 +2449,7 @@ public interface AgreementPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TERM_TYPE_ATTR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TERM_TYPE_ATTR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 
 	/**

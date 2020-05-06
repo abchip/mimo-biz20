@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.party.agreement;
 
-import org.abchip.mimo.biz.BizEntityTyped;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.BizEntityTyped;
  * @model
  * @generated
  */
-public interface AgreementItem extends BizEntityTyped<AgreementItemType> {
+public interface AgreementItem extends EntityTyped<AgreementItemType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Agreement Image</b></em>' attribute.
 	 * <!-- begin-user-doc -->

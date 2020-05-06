@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.entity.tenant;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMPONENT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int COMPONENT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMPONENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int COMPONENT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMPONENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int COMPONENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMPONENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int COMPONENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Component Name</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMPONENT__COMPONENT_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int COMPONENT__COMPONENT_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Root Location</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMPONENT__ROOT_LOCATION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int COMPONENT__ROOT_LOCATION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Tenant Components</b></em>' reference list.
@@ -132,7 +132,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMPONENT__TENANT_COMPONENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int COMPONENT__TENANT_COMPONENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Component</em>' class.
@@ -141,7 +141,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int COMPONENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int COMPONENT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantImpl <em>Tenant</em>}' class.
@@ -160,7 +160,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TENANT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -169,7 +169,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TENANT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -178,7 +178,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TENANT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -187,7 +187,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TENANT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Tenant Id</b></em>' attribute.
@@ -196,7 +196,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT__TENANT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TENANT__TENANT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Disabled</b></em>' attribute.
@@ -205,7 +205,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT__DISABLED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TENANT__DISABLED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Initial Path</b></em>' attribute.
@@ -214,7 +214,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT__INITIAL_PATH = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TENANT__INITIAL_PATH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Tenant Data Sources</b></em>' reference list.
@@ -223,7 +223,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT__TENANT_DATA_SOURCES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TENANT__TENANT_DATA_SOURCES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Tenant Name</b></em>' attribute.
@@ -232,7 +232,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT__TENANT_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TENANT__TENANT_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Tenant</em>' class.
@@ -241,7 +241,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int TENANT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantComponentImpl <em>Component</em>}' class.
@@ -260,7 +260,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_COMPONENT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TENANT_COMPONENT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -269,7 +269,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_COMPONENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TENANT_COMPONENT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -278,7 +278,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_COMPONENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TENANT_COMPONENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -287,7 +287,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_COMPONENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TENANT_COMPONENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Tenant Id</b></em>' reference.
@@ -296,7 +296,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_COMPONENT__TENANT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TENANT_COMPONENT__TENANT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Component Name</b></em>' reference.
@@ -305,7 +305,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_COMPONENT__COMPONENT_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TENANT_COMPONENT__COMPONENT_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -314,7 +314,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_COMPONENT__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TENANT_COMPONENT__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Component</em>' class.
@@ -323,7 +323,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_COMPONENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TENANT_COMPONENT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantDataSourceImpl <em>Data Source</em>}' class.
@@ -342,7 +342,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_DATA_SOURCE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TENANT_DATA_SOURCE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -351,7 +351,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_DATA_SOURCE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TENANT_DATA_SOURCE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -360,7 +360,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_DATA_SOURCE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TENANT_DATA_SOURCE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -369,7 +369,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_DATA_SOURCE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TENANT_DATA_SOURCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Tenant Id</b></em>' reference.
@@ -378,7 +378,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_DATA_SOURCE__TENANT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TENANT_DATA_SOURCE__TENANT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Entity Group Name</b></em>' attribute.
@@ -387,7 +387,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_DATA_SOURCE__ENTITY_GROUP_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TENANT_DATA_SOURCE__ENTITY_GROUP_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Jdbc Password</b></em>' attribute.
@@ -396,7 +396,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_DATA_SOURCE__JDBC_PASSWORD = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TENANT_DATA_SOURCE__JDBC_PASSWORD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Jdbc Uri</b></em>' attribute.
@@ -405,7 +405,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_DATA_SOURCE__JDBC_URI = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TENANT_DATA_SOURCE__JDBC_URI = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Jdbc Username</b></em>' attribute.
@@ -414,7 +414,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_DATA_SOURCE__JDBC_USERNAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TENANT_DATA_SOURCE__JDBC_USERNAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Data Source</em>' class.
@@ -423,7 +423,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_DATA_SOURCE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int TENANT_DATA_SOURCE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantDomainNameImpl <em>Domain Name</em>}' class.
@@ -442,7 +442,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_DOMAIN_NAME__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TENANT_DOMAIN_NAME__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -451,7 +451,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_DOMAIN_NAME__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TENANT_DOMAIN_NAME__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -460,7 +460,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_DOMAIN_NAME__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TENANT_DOMAIN_NAME__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -469,7 +469,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_DOMAIN_NAME__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TENANT_DOMAIN_NAME__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Domain Name</b></em>' attribute.
@@ -478,7 +478,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_DOMAIN_NAME__DOMAIN_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TENANT_DOMAIN_NAME__DOMAIN_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Tenant Id</b></em>' reference.
@@ -487,7 +487,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_DOMAIN_NAME__TENANT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TENANT_DOMAIN_NAME__TENANT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Domain Name</em>' class.
@@ -496,7 +496,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_DOMAIN_NAME_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TENANT_DOMAIN_NAME_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantKeyEncryptingKeyImpl <em>Key Encrypting Key</em>}' class.
@@ -515,7 +515,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_KEY_ENCRYPTING_KEY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TENANT_KEY_ENCRYPTING_KEY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -524,7 +524,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_KEY_ENCRYPTING_KEY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TENANT_KEY_ENCRYPTING_KEY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -533,7 +533,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_KEY_ENCRYPTING_KEY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TENANT_KEY_ENCRYPTING_KEY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -542,7 +542,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_KEY_ENCRYPTING_KEY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TENANT_KEY_ENCRYPTING_KEY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Tenant Id</b></em>' attribute.
@@ -551,7 +551,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_KEY_ENCRYPTING_KEY__TENANT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TENANT_KEY_ENCRYPTING_KEY__TENANT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Kek Text</b></em>' attribute.
@@ -560,7 +560,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_KEY_ENCRYPTING_KEY__KEK_TEXT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TENANT_KEY_ENCRYPTING_KEY__KEK_TEXT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Key Encrypting Key</em>' class.
@@ -569,7 +569,7 @@ public interface TenantPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TENANT_KEY_ENCRYPTING_KEY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TENANT_KEY_ENCRYPTING_KEY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 
 	/**

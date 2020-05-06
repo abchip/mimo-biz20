@@ -1339,7 +1339,7 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		StorePackage theStorePackage = (StorePackage)EPackage.Registry.INSTANCE.getEPackage(StorePackage.eNS_URI);
 
 		// Create type parameters
@@ -1347,13 +1347,20 @@ public class PassportPackageImpl extends EPackageImpl implements PassportPackage
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		gitHubUserEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		googleUserEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		linkedInUserEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		oAuth2GitHubEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		oAuth2GoogleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		oAuth2LinkedInEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		thirdPartyLoginEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		gitHubUserEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		gitHubUserEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		googleUserEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		googleUserEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		linkedInUserEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		linkedInUserEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		oAuth2GitHubEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		oAuth2GitHubEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		oAuth2GoogleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		oAuth2GoogleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		oAuth2LinkedInEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		oAuth2LinkedInEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		thirdPartyLoginEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		thirdPartyLoginEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(gitHubUserEClass, GitHubUser.class, "GitHubUser", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

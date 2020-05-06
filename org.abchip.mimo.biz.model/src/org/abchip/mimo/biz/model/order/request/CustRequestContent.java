@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.order.request;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.content.content.Content;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.content.content.Content;
  * @model annotation="mimo-ent-frame title='Customer Request Content'"
  * @generated
  */
-public interface CustRequestContent extends BizEntity {
+public interface CustRequestContent extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

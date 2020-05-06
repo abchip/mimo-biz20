@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.service.schedule;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,7 +36,7 @@ import org.abchip.mimo.biz.model.common.enum_.Enumeration;
  * @model annotation="mimo-ent-frame title='Lock Job Manager Scheduler'"
  * @generated
  */
-public interface JobManagerLock extends BizEntity {
+public interface JobManagerLock extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Instance Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

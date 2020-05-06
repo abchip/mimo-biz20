@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.entity.test;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model
  * @generated
  */
-public interface TestingCrypto extends BizEntity {
+public interface TestingCrypto extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Encrypted Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->

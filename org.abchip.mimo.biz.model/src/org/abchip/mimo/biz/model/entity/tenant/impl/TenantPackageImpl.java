@@ -1044,19 +1044,25 @@ public class TenantPackageImpl extends EPackageImpl implements TenantPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 
 		// Create type parameters
 
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		componentEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		tenantEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		tenantComponentEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		tenantDataSourceEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		tenantDomainNameEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		tenantKeyEncryptingKeyEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		componentEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		componentEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		tenantEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		tenantEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		tenantComponentEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		tenantComponentEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		tenantDataSourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		tenantDataSourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		tenantDomainNameEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		tenantDomainNameEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		tenantKeyEncryptingKeyEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		tenantKeyEncryptingKeyEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(componentEClass, Component.class, "Component", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

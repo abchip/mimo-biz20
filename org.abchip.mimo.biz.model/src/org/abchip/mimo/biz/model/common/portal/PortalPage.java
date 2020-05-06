@@ -8,9 +8,10 @@
 package org.abchip.mimo.biz.model.common.portal;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.content.content.Content;
 import org.abchip.mimo.biz.model.security.securitygroup.SecurityGroup;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +38,7 @@ import org.abchip.mimo.biz.model.security.securitygroup.SecurityGroup;
  * @model annotation="mimo-ent-frame dictionary='CommonPortalEntityLabels' formula='description'"
  * @generated
  */
-public interface PortalPage extends BizEntity {
+public interface PortalPage extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

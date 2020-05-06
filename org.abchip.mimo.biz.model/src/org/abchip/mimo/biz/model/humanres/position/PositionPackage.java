@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.humanres.position;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int EMPL_POSITION__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int EMPL_POSITION__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int EMPL_POSITION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int EMPL_POSITION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Empl Position Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION__EMPL_POSITION_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int EMPL_POSITION__EMPL_POSITION_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Actual From Date</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION__ACTUAL_FROM_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int EMPL_POSITION__ACTUAL_FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Actual Thru Date</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION__ACTUAL_THRU_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int EMPL_POSITION__ACTUAL_THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Budget Id</b></em>' attribute.
@@ -141,7 +141,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION__BUDGET_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int EMPL_POSITION__BUDGET_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Budget Item Seq Id</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION__BUDGET_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int EMPL_POSITION__BUDGET_ITEM_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Empl Position Type Id</b></em>' reference.
@@ -159,7 +159,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION__EMPL_POSITION_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int EMPL_POSITION__EMPL_POSITION_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Estimated From Date</b></em>' attribute.
@@ -168,7 +168,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION__ESTIMATED_FROM_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int EMPL_POSITION__ESTIMATED_FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Estimated Thru Date</b></em>' attribute.
@@ -177,7 +177,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION__ESTIMATED_THRU_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int EMPL_POSITION__ESTIMATED_THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Exempt Flag</b></em>' attribute.
@@ -186,7 +186,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION__EXEMPT_FLAG = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int EMPL_POSITION__EXEMPT_FLAG = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Fulltime Flag</b></em>' attribute.
@@ -195,7 +195,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION__FULLTIME_FLAG = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 9;
+	int EMPL_POSITION__FULLTIME_FLAG = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -204,7 +204,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION__PARTY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 10;
+	int EMPL_POSITION__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Salary Flag</b></em>' attribute.
@@ -213,7 +213,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION__SALARY_FLAG = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 11;
+	int EMPL_POSITION__SALARY_FLAG = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -222,7 +222,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION__STATUS_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 12;
+	int EMPL_POSITION__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Temporary Flag</b></em>' attribute.
@@ -231,7 +231,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION__TEMPORARY_FLAG = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 13;
+	int EMPL_POSITION__TEMPORARY_FLAG = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The number of structural features of the '<em>Empl Position</em>' class.
@@ -240,7 +240,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 14;
+	int EMPL_POSITION_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionClassTypeImpl <em>Empl Position Class Type</em>}' class.
@@ -259,7 +259,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_CLASS_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int EMPL_POSITION_CLASS_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -268,7 +268,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_CLASS_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int EMPL_POSITION_CLASS_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -277,7 +277,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_CLASS_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int EMPL_POSITION_CLASS_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -286,7 +286,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_CLASS_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int EMPL_POSITION_CLASS_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Empl Position Class Type Id</b></em>' attribute.
@@ -295,7 +295,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_CLASS_TYPE__EMPL_POSITION_CLASS_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int EMPL_POSITION_CLASS_TYPE__EMPL_POSITION_CLASS_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -304,7 +304,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_CLASS_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int EMPL_POSITION_CLASS_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -313,7 +313,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_CLASS_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int EMPL_POSITION_CLASS_TYPE__HAS_TABLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -322,7 +322,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_CLASS_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int EMPL_POSITION_CLASS_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Empl Position Class Type</em>' class.
@@ -331,7 +331,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_CLASS_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int EMPL_POSITION_CLASS_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionFulfillmentImpl <em>Empl Position Fulfillment</em>}' class.
@@ -350,7 +350,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_FULFILLMENT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int EMPL_POSITION_FULFILLMENT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -359,7 +359,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_FULFILLMENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int EMPL_POSITION_FULFILLMENT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -368,7 +368,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_FULFILLMENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int EMPL_POSITION_FULFILLMENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -377,7 +377,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_FULFILLMENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int EMPL_POSITION_FULFILLMENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Empl Position Id</b></em>' reference.
@@ -386,7 +386,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_FULFILLMENT__EMPL_POSITION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int EMPL_POSITION_FULFILLMENT__EMPL_POSITION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -395,7 +395,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_FULFILLMENT__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int EMPL_POSITION_FULFILLMENT__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -404,7 +404,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_FULFILLMENT__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int EMPL_POSITION_FULFILLMENT__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -413,7 +413,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_FULFILLMENT__COMMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int EMPL_POSITION_FULFILLMENT__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -422,7 +422,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_FULFILLMENT__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int EMPL_POSITION_FULFILLMENT__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Empl Position Fulfillment</em>' class.
@@ -431,7 +431,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_FULFILLMENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int EMPL_POSITION_FULFILLMENT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionReportingStructImpl <em>Empl Position Reporting Struct</em>}' class.
@@ -450,7 +450,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_REPORTING_STRUCT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int EMPL_POSITION_REPORTING_STRUCT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -459,7 +459,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_REPORTING_STRUCT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int EMPL_POSITION_REPORTING_STRUCT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -468,7 +468,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_REPORTING_STRUCT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int EMPL_POSITION_REPORTING_STRUCT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -477,7 +477,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_REPORTING_STRUCT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int EMPL_POSITION_REPORTING_STRUCT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Empl Position Id Reporting To</b></em>' reference.
@@ -486,7 +486,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_REPORTING_STRUCT__EMPL_POSITION_ID_REPORTING_TO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int EMPL_POSITION_REPORTING_STRUCT__EMPL_POSITION_ID_REPORTING_TO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Empl Position Id Managed By</b></em>' reference.
@@ -495,7 +495,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_REPORTING_STRUCT__EMPL_POSITION_ID_MANAGED_BY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int EMPL_POSITION_REPORTING_STRUCT__EMPL_POSITION_ID_MANAGED_BY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -504,7 +504,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_REPORTING_STRUCT__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int EMPL_POSITION_REPORTING_STRUCT__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -513,7 +513,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_REPORTING_STRUCT__COMMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int EMPL_POSITION_REPORTING_STRUCT__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Primary Flag</b></em>' attribute.
@@ -522,7 +522,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_REPORTING_STRUCT__PRIMARY_FLAG = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int EMPL_POSITION_REPORTING_STRUCT__PRIMARY_FLAG = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -531,7 +531,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_REPORTING_STRUCT__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int EMPL_POSITION_REPORTING_STRUCT__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Empl Position Reporting Struct</em>' class.
@@ -540,7 +540,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_REPORTING_STRUCT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int EMPL_POSITION_REPORTING_STRUCT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionResponsibilityImpl <em>Empl Position Responsibility</em>}' class.
@@ -559,7 +559,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_RESPONSIBILITY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int EMPL_POSITION_RESPONSIBILITY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -568,7 +568,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_RESPONSIBILITY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int EMPL_POSITION_RESPONSIBILITY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -577,7 +577,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_RESPONSIBILITY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int EMPL_POSITION_RESPONSIBILITY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -586,7 +586,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_RESPONSIBILITY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int EMPL_POSITION_RESPONSIBILITY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Empl Position Id</b></em>' reference.
@@ -595,7 +595,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_RESPONSIBILITY__EMPL_POSITION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int EMPL_POSITION_RESPONSIBILITY__EMPL_POSITION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Responsibility Type Id</b></em>' reference.
@@ -604,7 +604,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_RESPONSIBILITY__RESPONSIBILITY_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int EMPL_POSITION_RESPONSIBILITY__RESPONSIBILITY_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -613,7 +613,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_RESPONSIBILITY__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int EMPL_POSITION_RESPONSIBILITY__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -622,7 +622,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_RESPONSIBILITY__COMMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int EMPL_POSITION_RESPONSIBILITY__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -631,7 +631,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_RESPONSIBILITY__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int EMPL_POSITION_RESPONSIBILITY__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Empl Position Responsibility</em>' class.
@@ -640,7 +640,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_RESPONSIBILITY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int EMPL_POSITION_RESPONSIBILITY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeImpl <em>Empl Position Type</em>}' class.
@@ -659,7 +659,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int EMPL_POSITION_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -668,7 +668,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int EMPL_POSITION_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -677,7 +677,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int EMPL_POSITION_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -686,7 +686,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int EMPL_POSITION_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -695,7 +695,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int EMPL_POSITION_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Empl Position Type Id</b></em>' attribute.
@@ -704,7 +704,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE__EMPL_POSITION_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int EMPL_POSITION_TYPE__EMPL_POSITION_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -713,7 +713,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int EMPL_POSITION_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -722,7 +722,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int EMPL_POSITION_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -731,7 +731,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int EMPL_POSITION_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Empl Position Type</em>' class.
@@ -740,7 +740,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int EMPL_POSITION_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeClassImpl <em>Empl Position Type Class</em>}' class.
@@ -759,7 +759,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_CLASS__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int EMPL_POSITION_TYPE_CLASS__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -768,7 +768,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_CLASS__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int EMPL_POSITION_TYPE_CLASS__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -777,7 +777,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_CLASS__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int EMPL_POSITION_TYPE_CLASS__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -786,7 +786,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_CLASS__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int EMPL_POSITION_TYPE_CLASS__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Empl Position Type Id</b></em>' reference.
@@ -795,7 +795,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_CLASS__EMPL_POSITION_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int EMPL_POSITION_TYPE_CLASS__EMPL_POSITION_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Empl Position Class Type Id</b></em>' reference.
@@ -804,7 +804,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_CLASS__EMPL_POSITION_CLASS_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int EMPL_POSITION_TYPE_CLASS__EMPL_POSITION_CLASS_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -813,7 +813,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_CLASS__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int EMPL_POSITION_TYPE_CLASS__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Standard Hours Per Week</b></em>' attribute.
@@ -822,7 +822,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_CLASS__STANDARD_HOURS_PER_WEEK = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int EMPL_POSITION_TYPE_CLASS__STANDARD_HOURS_PER_WEEK = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -831,7 +831,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_CLASS__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int EMPL_POSITION_TYPE_CLASS__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Empl Position Type Class</em>' class.
@@ -840,7 +840,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_CLASS_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int EMPL_POSITION_TYPE_CLASS_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeRateImpl <em>Empl Position Type Rate</em>}' class.
@@ -859,7 +859,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_RATE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int EMPL_POSITION_TYPE_RATE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -868,7 +868,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_RATE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int EMPL_POSITION_TYPE_RATE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -877,7 +877,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_RATE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int EMPL_POSITION_TYPE_RATE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -886,7 +886,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_RATE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int EMPL_POSITION_TYPE_RATE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Empl Position Type Id</b></em>' reference.
@@ -895,7 +895,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_RATE__EMPL_POSITION_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int EMPL_POSITION_TYPE_RATE__EMPL_POSITION_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Rate Type Id</b></em>' reference.
@@ -904,7 +904,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_RATE__RATE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int EMPL_POSITION_TYPE_RATE__RATE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -913,7 +913,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_RATE__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int EMPL_POSITION_TYPE_RATE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Pay Grade Id</b></em>' attribute.
@@ -922,7 +922,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_RATE__PAY_GRADE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int EMPL_POSITION_TYPE_RATE__PAY_GRADE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Salary Step Seq Id</b></em>' attribute.
@@ -931,7 +931,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_RATE__SALARY_STEP_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int EMPL_POSITION_TYPE_RATE__SALARY_STEP_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -940,7 +940,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_RATE__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int EMPL_POSITION_TYPE_RATE__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Empl Position Type Rate</em>' class.
@@ -949,7 +949,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EMPL_POSITION_TYPE_RATE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int EMPL_POSITION_TYPE_RATE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.humanres.position.impl.ValidResponsibilityImpl <em>Valid Responsibility</em>}' class.
@@ -968,7 +968,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALID_RESPONSIBILITY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int VALID_RESPONSIBILITY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -977,7 +977,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALID_RESPONSIBILITY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int VALID_RESPONSIBILITY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -986,7 +986,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALID_RESPONSIBILITY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int VALID_RESPONSIBILITY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -995,7 +995,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALID_RESPONSIBILITY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int VALID_RESPONSIBILITY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Empl Position Type Id</b></em>' reference.
@@ -1004,7 +1004,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALID_RESPONSIBILITY__EMPL_POSITION_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int VALID_RESPONSIBILITY__EMPL_POSITION_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Responsibility Type Id</b></em>' reference.
@@ -1013,7 +1013,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALID_RESPONSIBILITY__RESPONSIBILITY_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int VALID_RESPONSIBILITY__RESPONSIBILITY_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1022,7 +1022,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALID_RESPONSIBILITY__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int VALID_RESPONSIBILITY__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -1031,7 +1031,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALID_RESPONSIBILITY__COMMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int VALID_RESPONSIBILITY__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -1040,7 +1040,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALID_RESPONSIBILITY__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int VALID_RESPONSIBILITY__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Valid Responsibility</em>' class.
@@ -1049,7 +1049,7 @@ public interface PositionPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int VALID_RESPONSIBILITY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int VALID_RESPONSIBILITY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 
 	/**

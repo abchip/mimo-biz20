@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.party.party;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +32,7 @@ import org.abchip.mimo.biz.model.product.store.ProductStore;
  * @model annotation="mimo-ent-frame title='Party Profile Defaults'"
  * @generated
  */
-public interface PartyProfileDefault extends BizEntity {
+public interface PartyProfileDefault extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Default Bill Addr</b></em>' attribute.
 	 * <!-- begin-user-doc -->

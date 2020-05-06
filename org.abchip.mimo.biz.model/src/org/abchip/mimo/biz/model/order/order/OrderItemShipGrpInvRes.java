@@ -10,8 +10,9 @@ package org.abchip.mimo.biz.model.order.order;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItem;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +43,7 @@ import org.abchip.mimo.biz.model.product.inventory.InventoryItem;
  * @model annotation="mimo-ent-frame title='Order Item Inventory Reservation'"
  * @generated
  */
-public interface OrderItemShipGrpInvRes extends BizEntity {
+public interface OrderItemShipGrpInvRes extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Created Datetime</b></em>' attribute.
 	 * <!-- begin-user-doc -->

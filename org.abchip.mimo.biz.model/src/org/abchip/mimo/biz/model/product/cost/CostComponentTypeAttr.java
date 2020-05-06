@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.product.cost;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Cost Component Type Attribute' dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface CostComponentTypeAttr extends BizEntity {
+public interface CostComponentTypeAttr extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

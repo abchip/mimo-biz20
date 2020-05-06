@@ -8,9 +8,10 @@
 package org.abchip.mimo.biz.model.humanres.position;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -41,7 +42,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model
  * @generated
  */
-public interface EmplPosition extends BizEntityTyped<EmplPositionType> {
+public interface EmplPosition extends EntityTyped<EmplPositionType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Actual From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

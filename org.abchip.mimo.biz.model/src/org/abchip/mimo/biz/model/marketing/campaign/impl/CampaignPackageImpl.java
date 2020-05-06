@@ -1178,9 +1178,10 @@ public class CampaignPackageImpl extends EPackageImpl implements CampaignPackage
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		UomPackage theUomPackage = (UomPackage)EPackage.Registry.INSTANCE.getEPackage(UomPackage.eNS_URI);
 		StatusPackage theStatusPackage = (StatusPackage)EPackage.Registry.INSTANCE.getEPackage(StatusPackage.eNS_URI);
+		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
 		PricePackage thePricePackage = (PricePackage)EPackage.Registry.INSTANCE.getEPackage(PricePackage.eNS_URI);
 		PromoPackage thePromoPackage = (PromoPackage)EPackage.Registry.INSTANCE.getEPackage(PromoPackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
@@ -1190,11 +1191,15 @@ public class CampaignPackageImpl extends EPackageImpl implements CampaignPackage
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		marketingCampaignEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		marketingCampaignEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		marketingCampaignEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		marketingCampaignNoteEClass.getESuperTypes().add(theBizPackage.getBizEntityNote());
-		marketingCampaignPriceEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		marketingCampaignPromoEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		marketingCampaignRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		marketingCampaignPriceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		marketingCampaignPriceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		marketingCampaignPromoEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		marketingCampaignPromoEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		marketingCampaignRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		marketingCampaignRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(marketingCampaignEClass, MarketingCampaign.class, "MarketingCampaign", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

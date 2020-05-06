@@ -11,9 +11,10 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.uom.Uom;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -50,7 +51,7 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
  * @model
  * @generated
  */
-public interface MarketingCampaign extends BizEntity {
+public interface MarketingCampaign extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Actual Cost</b></em>' attribute.
 	 * <!-- begin-user-doc -->

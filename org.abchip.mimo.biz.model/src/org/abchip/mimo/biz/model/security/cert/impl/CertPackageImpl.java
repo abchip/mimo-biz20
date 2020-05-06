@@ -811,14 +811,15 @@ public class CertPackageImpl extends EPackageImpl implements CertPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 
 		// Create type parameters
 
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		x509IssuerProvisionEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		x509IssuerProvisionEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		x509IssuerProvisionEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(x509IssuerProvisionEClass, X509IssuerProvision.class, "X509IssuerProvision", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

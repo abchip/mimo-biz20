@@ -9,12 +9,13 @@ package org.abchip.mimo.biz.model.order.quote;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -48,7 +49,7 @@ import org.abchip.mimo.biz.model.product.store.ProductStore;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface Quote extends BizEntityTyped<QuoteType> {
+public interface Quote extends EntityTyped<QuoteType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Currency Uom Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

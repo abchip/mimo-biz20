@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.passport;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.product.store.ProductStore;
  * @model annotation="mimo-ent-frame help='Data Model Enhancements For Passport' title='Store GitHub access token for user'"
  * @generated
  */
-public interface GoogleUser extends BizEntity {
+public interface GoogleUser extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Google User Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

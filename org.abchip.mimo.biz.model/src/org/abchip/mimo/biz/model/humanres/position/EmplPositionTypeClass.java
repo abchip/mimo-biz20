@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.humanres.position;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model
  * @generated
  */
-public interface EmplPositionTypeClass extends BizEntity {
+public interface EmplPositionTypeClass extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Empl Position Class Type Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

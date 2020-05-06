@@ -2059,7 +2059,7 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		UomPackage theUomPackage = (UomPackage)EPackage.Registry.INSTANCE.getEPackage(UomPackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
 		org.abchip.mimo.biz.model.party.contact.ContactPackage theContactPackage_1 = (org.abchip.mimo.biz.model.party.contact.ContactPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.model.party.contact.ContactPackage.eNS_URI);
@@ -2069,6 +2069,7 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 		CommunicationPackage theCommunicationPackage = (CommunicationPackage)EPackage.Registry.INSTANCE.getEPackage(CommunicationPackage.eNS_URI);
 		ContentPackage theContentPackage = (ContentPackage)EPackage.Registry.INSTANCE.getEPackage(ContentPackage.eNS_URI);
 		ProductPackage theProductPackage = (ProductPackage)EPackage.Registry.INSTANCE.getEPackage(ProductPackage.eNS_URI);
+		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
 		WorkeffortPackage theWorkeffortPackage = (WorkeffortPackage)EPackage.Registry.INSTANCE.getEPackage(WorkeffortPackage.eNS_URI);
 		LoginPackage theLoginPackage = (LoginPackage)EPackage.Registry.INSTANCE.getEPackage(LoginPackage.eNS_URI);
 
@@ -2077,28 +2078,44 @@ public class RequestPackageImpl extends EPackageImpl implements RequestPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getCustRequestType());
 		g1.getETypeArguments().add(g2);
 		custRequestEClass.getEGenericSuperTypes().add(g1);
-		custRequestAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		custRequestCategoryEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		custRequestCommEventEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		custRequestContentEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		custRequestItemEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		custRequestEClass.getEGenericSuperTypes().add(g1);
+		custRequestAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		custRequestAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		custRequestCategoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		custRequestCategoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		custRequestCommEventEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		custRequestCommEventEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		custRequestContentEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		custRequestContentEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		custRequestItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		custRequestItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		custRequestItemNoteEClass.getESuperTypes().add(theBizPackage.getBizEntityNote());
-		custRequestItemWorkEffortEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		custRequestItemWorkEffortEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		custRequestItemWorkEffortEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		custRequestNoteEClass.getESuperTypes().add(theBizPackage.getBizEntityNote());
-		custRequestPartyEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		custRequestResolutionEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		custRequestStatusEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		custRequestPartyEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		custRequestPartyEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		custRequestResolutionEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		custRequestResolutionEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		custRequestStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		custRequestStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getCustRequest());
 		g1.getETypeArguments().add(g2);
 		custRequestTypeEClass.getEGenericSuperTypes().add(g1);
-		custRequestTypeAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		custRequestWorkEffortEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		respondingPartyEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		custRequestTypeEClass.getEGenericSuperTypes().add(g1);
+		custRequestTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		custRequestTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		custRequestWorkEffortEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		custRequestWorkEffortEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		respondingPartyEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		respondingPartyEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(custRequestEClass, CustRequest.class, "CustRequest", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

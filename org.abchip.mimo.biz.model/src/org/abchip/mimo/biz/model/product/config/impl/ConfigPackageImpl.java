@@ -1554,7 +1554,7 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		ContentPackage theContentPackage = (ContentPackage)EPackage.Registry.INSTANCE.getEPackage(ContentPackage.eNS_URI);
 		ProductPackage theProductPackage = (ProductPackage)EPackage.Registry.INSTANCE.getEPackage(ProductPackage.eNS_URI);
 
@@ -1563,22 +1563,34 @@ public class ConfigPackageImpl extends EPackageImpl implements ConfigPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		configOptionProductOptionEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		configOptionProductOptionEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		configOptionProductOptionEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getProdConfItemContentType());
 		g1.getETypeArguments().add(g2);
 		prodConfItemContentEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		prodConfItemContentEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getProdConfItemContent());
 		g1.getETypeArguments().add(g2);
 		prodConfItemContentTypeEClass.getEGenericSuperTypes().add(g1);
-		productConfigEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productConfigConfigEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productConfigItemEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productConfigOptionEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productConfigOptionIactnEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productConfigProductEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productConfigStatsEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		prodConfItemContentTypeEClass.getEGenericSuperTypes().add(g1);
+		productConfigEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productConfigEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productConfigConfigEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productConfigConfigEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productConfigItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productConfigItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productConfigOptionEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productConfigOptionEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productConfigOptionIactnEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productConfigOptionIactnEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productConfigProductEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productConfigProductEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productConfigStatsEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productConfigStatsEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(configOptionProductOptionEClass, ConfigOptionProductOption.class, "ConfigOptionProductOption", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

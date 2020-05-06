@@ -10,9 +10,10 @@ package org.abchip.mimo.biz.model.accounting.ledger;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +43,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model annotation="mimo-ent-frame title='General Ledger Reconciliation' formula='description'"
  * @generated
  */
-public interface GlReconciliation extends BizEntity {
+public interface GlReconciliation extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Created By User Login</b></em>' attribute.
 	 * <!-- begin-user-doc -->

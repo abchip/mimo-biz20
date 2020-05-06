@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.party.party;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +35,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Affiliate Party'"
  * @generated
  */
-public interface Affiliate extends BizEntity {
+public interface Affiliate extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Affiliate Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.marketing.opportunity;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Describes stages of a sales opportunity with associated probability factors.' formula='description'"
  * @generated
  */
-public interface SalesOpportunityStage extends BizEntity {
+public interface SalesOpportunityStage extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Default Probability</b></em>' attribute.
 	 * <!-- begin-user-doc -->

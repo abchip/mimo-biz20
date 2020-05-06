@@ -2447,7 +2447,7 @@ public class InvoicePackageImpl extends EPackageImpl implements InvoicePackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		PaymentPackage thePaymentPackage = (PaymentPackage)EPackage.Registry.INSTANCE.getEPackage(PaymentPackage.eNS_URI);
 		org.abchip.mimo.biz.model.party.contact.ContactPackage theContactPackage_1 = (org.abchip.mimo.biz.model.party.contact.ContactPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.model.party.contact.ContactPackage.eNS_URI);
 		UomPackage theUomPackage = (UomPackage)EPackage.Registry.INSTANCE.getEPackage(UomPackage.eNS_URI);
@@ -2462,6 +2462,7 @@ public class InvoicePackageImpl extends EPackageImpl implements InvoicePackage {
 		OpportunityPackage theOpportunityPackage = (OpportunityPackage)EPackage.Registry.INSTANCE.getEPackage(OpportunityPackage.eNS_URI);
 		GeoPackage theGeoPackage = (GeoPackage)EPackage.Registry.INSTANCE.getEPackage(GeoPackage.eNS_URI);
 		TaxPackage theTaxPackage = (TaxPackage)EPackage.Registry.INSTANCE.getEPackage(TaxPackage.eNS_URI);
+		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
 		LoginPackage theLoginPackage = (LoginPackage)EPackage.Registry.INSTANCE.getEPackage(LoginPackage.eNS_URI);
 		AgreementPackage theAgreementPackage = (AgreementPackage)EPackage.Registry.INSTANCE.getEPackage(AgreementPackage.eNS_URI);
 
@@ -2470,50 +2471,77 @@ public class InvoicePackageImpl extends EPackageImpl implements InvoicePackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getInvoiceType());
 		g1.getETypeArguments().add(g2);
 		invoiceEClass.getEGenericSuperTypes().add(g1);
-		invoiceAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		invoiceContactMechEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		invoiceEClass.getEGenericSuperTypes().add(g1);
+		invoiceAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		invoiceAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		invoiceContactMechEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		invoiceContactMechEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		g2 = createEGenericType(this.getInvoiceContentType());
 		g1.getETypeArguments().add(g2);
 		invoiceContentEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		invoiceContentEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getInvoiceContent());
 		g1.getETypeArguments().add(g2);
 		invoiceContentTypeEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		invoiceContentTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		g2 = createEGenericType(this.getInvoiceItemType());
 		g1.getETypeArguments().add(g2);
 		invoiceItemEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		invoiceItemEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		g2 = createEGenericType(this.getInvoiceItemAssocType());
 		g1.getETypeArguments().add(g2);
 		invoiceItemAssocEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		invoiceItemAssocEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getInvoiceItemAssoc());
 		g1.getETypeArguments().add(g2);
 		invoiceItemAssocTypeEClass.getEGenericSuperTypes().add(g1);
-		invoiceItemAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		invoiceItemAssocTypeEClass.getEGenericSuperTypes().add(g1);
+		invoiceItemAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		invoiceItemAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getInvoiceItem());
 		g1.getETypeArguments().add(g2);
 		invoiceItemTypeEClass.getEGenericSuperTypes().add(g1);
-		invoiceItemTypeAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		invoiceItemTypeGlAccountEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		invoiceItemTypeMapEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		invoiceItemTypeEClass.getEGenericSuperTypes().add(g1);
+		invoiceItemTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		invoiceItemTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		invoiceItemTypeGlAccountEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		invoiceItemTypeGlAccountEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		invoiceItemTypeMapEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		invoiceItemTypeMapEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		invoiceNoteEClass.getESuperTypes().add(theBizPackage.getBizEntityNote());
-		invoiceRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		invoiceStatusEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		invoiceTermEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		invoiceTermAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		invoiceRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		invoiceRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		invoiceStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		invoiceStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		invoiceTermEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		invoiceTermEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		invoiceTermAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		invoiceTermAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getInvoice());
 		g1.getETypeArguments().add(g2);
 		invoiceTypeEClass.getEGenericSuperTypes().add(g1);
-		invoiceTypeAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		invoiceTypeEClass.getEGenericSuperTypes().add(g1);
+		invoiceTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		invoiceTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(invoiceEClass, Invoice.class, "Invoice", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

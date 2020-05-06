@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.product.promo;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model annotation="mimo-ent-frame title='Product Promotion Party' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductPromoCodeParty extends BizEntity {
+public interface ProductPromoCodeParty extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Party Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

@@ -8,11 +8,12 @@
 package org.abchip.mimo.biz.model.accounting.ledger;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceType;
 import org.abchip.mimo.biz.model.order.order.OrderType;
 import org.abchip.mimo.biz.model.order.quote.QuoteType;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +38,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model annotation="mimo-ent-frame title='Party (organization) preferences for document type template'"
  * @generated
  */
-public interface PartyPrefDocTypeTpl extends BizEntity {
+public interface PartyPrefDocTypeTpl extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Custom Screen Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

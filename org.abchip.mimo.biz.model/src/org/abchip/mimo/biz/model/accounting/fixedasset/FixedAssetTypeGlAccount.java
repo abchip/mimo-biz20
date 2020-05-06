@@ -7,9 +7,10 @@
  */
 package org.abchip.mimo.biz.model.accounting.fixedasset;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +35,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
  * @model annotation="mimo-ent-frame title='Gl Account Mapping For Fixed Asset Or Fixed Asset Types'"
  * @generated
  */
-public interface FixedAssetTypeGlAccount extends BizEntity {
+public interface FixedAssetTypeGlAccount extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Acc Dep Gl Account Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

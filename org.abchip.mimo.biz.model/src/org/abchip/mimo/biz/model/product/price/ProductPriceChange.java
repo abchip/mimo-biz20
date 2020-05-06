@@ -10,8 +10,9 @@ package org.abchip.mimo.biz.model.product.price;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -40,7 +41,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  * @model annotation="mimo-ent-frame title='Product Price Change History' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductPriceChange extends BizEntity {
+public interface ProductPriceChange extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Changed By User Login</b></em>' reference.
 	 * <!-- begin-user-doc -->

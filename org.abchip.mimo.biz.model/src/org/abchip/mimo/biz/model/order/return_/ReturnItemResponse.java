@@ -10,12 +10,13 @@ package org.abchip.mimo.biz.model.order.return_;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.finaccount.FinAccountTrans;
 import org.abchip.mimo.biz.model.accounting.payment.BillingAccount;
 import org.abchip.mimo.biz.model.accounting.payment.Payment;
 import org.abchip.mimo.biz.model.order.order.OrderHeader;
 import org.abchip.mimo.biz.model.order.order.OrderPaymentPreference;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -40,7 +41,7 @@ import org.abchip.mimo.biz.model.order.order.OrderPaymentPreference;
  * @model annotation="mimo-ent-frame help='Records what was done with a return: whether a replacement order, a payment, or a billing account credit was issued' title='The Return Item Response'"
  * @generated
  */
-public interface ReturnItemResponse extends BizEntity {
+public interface ReturnItemResponse extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Billing Account Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

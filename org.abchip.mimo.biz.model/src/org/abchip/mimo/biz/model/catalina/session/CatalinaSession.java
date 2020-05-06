@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.catalina.session;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Catalina Session Store'"
  * @generated
  */
-public interface CatalinaSession extends BizEntity {
+public interface CatalinaSession extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Session Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

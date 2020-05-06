@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.manufacturing.techdata;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame help='Used to defined some weeks which differ from the normal week defined in the calendar.' title='Calendar Exception Week' formula='description'"
  * @generated
  */
-public interface TechDataCalendarExcWeek extends BizEntity {
+public interface TechDataCalendarExcWeek extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Calendar Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

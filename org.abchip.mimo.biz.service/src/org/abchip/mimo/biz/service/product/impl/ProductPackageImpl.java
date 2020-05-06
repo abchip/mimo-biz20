@@ -641,7 +641,7 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 
 		initEClass(calculateProductPriceEClass, CalculateProductPrice.class, "CalculateProductPrice", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCalculateProductPrice_Product(), theProductPackage_1.getProduct(), null, "product", null, 1, 1, CalculateProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCalculateProductPrice_CurrencyUomId(), ecorePackage.getEString(), "currencyUomId", "@general/currency.uom.id.default", 0, 1, CalculateProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCalculateProductPrice_CurrencyUomId(), ecorePackage.getEString(), "currencyUomId", "@general/currency.uom.id.default", 1, 1, CalculateProductPrice.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(calculateProductPriceResponseEClass, CalculateProductPriceResponse.class, "CalculateProductPriceResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getCalculateProductPriceResponse_ValidPriceFound(), ecorePackage.getEBoolean(), "validPriceFound", null, 1, 1, CalculateProductPriceResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

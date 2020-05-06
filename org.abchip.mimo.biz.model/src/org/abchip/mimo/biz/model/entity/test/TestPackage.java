@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.entity.test;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TEST_ENTITY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TEST_ENTITY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TEST_ENTITY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TEST_ENTITY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Field Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TEST_ENTITY__FIELD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Field Blob</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_BLOB = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TEST_ENTITY__FIELD_BLOB = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Field Byte Array</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_BYTE_ARRAY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TEST_ENTITY__FIELD_BYTE_ARRAY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Field Comment</b></em>' attribute.
@@ -141,7 +141,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_COMMENT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TEST_ENTITY__FIELD_COMMENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Field Credit Card Date</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_CREDIT_CARD_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TEST_ENTITY__FIELD_CREDIT_CARD_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Field Credit Card Number</b></em>' attribute.
@@ -159,7 +159,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_CREDIT_CARD_NUMBER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int TEST_ENTITY__FIELD_CREDIT_CARD_NUMBER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Field Currency Amount</b></em>' attribute.
@@ -168,7 +168,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_CURRENCY_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int TEST_ENTITY__FIELD_CURRENCY_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Field Currency Precise</b></em>' attribute.
@@ -177,7 +177,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_CURRENCY_PRECISE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int TEST_ENTITY__FIELD_CURRENCY_PRECISE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Field Date</b></em>' attribute.
@@ -186,7 +186,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int TEST_ENTITY__FIELD_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Field Date Time</b></em>' attribute.
@@ -195,7 +195,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_DATE_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int TEST_ENTITY__FIELD_DATE_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Field Description</b></em>' attribute.
@@ -204,7 +204,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int TEST_ENTITY__FIELD_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Field Email</b></em>' attribute.
@@ -213,7 +213,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_EMAIL = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int TEST_ENTITY__FIELD_EMAIL = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Field Fixed Point</b></em>' attribute.
@@ -222,7 +222,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_FIXED_POINT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int TEST_ENTITY__FIELD_FIXED_POINT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Field Floating Point</b></em>' attribute.
@@ -231,7 +231,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_FLOATING_POINT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int TEST_ENTITY__FIELD_FLOATING_POINT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Field Id Long</b></em>' attribute.
@@ -240,7 +240,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_ID_LONG = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int TEST_ENTITY__FIELD_ID_LONG = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Field Id Vlong</b></em>' attribute.
@@ -249,7 +249,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_ID_VLONG = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int TEST_ENTITY__FIELD_ID_VLONG = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Field Indicator</b></em>' attribute.
@@ -258,7 +258,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_INDICATOR = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int TEST_ENTITY__FIELD_INDICATOR = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Field Long Varchar</b></em>' attribute.
@@ -267,7 +267,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_LONG_VARCHAR = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 17;
+	int TEST_ENTITY__FIELD_LONG_VARCHAR = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Field Name</b></em>' attribute.
@@ -276,7 +276,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 18;
+	int TEST_ENTITY__FIELD_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Field Numeric</b></em>' attribute.
@@ -285,7 +285,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_NUMERIC = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 19;
+	int TEST_ENTITY__FIELD_NUMERIC = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Field Object</b></em>' attribute.
@@ -294,7 +294,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_OBJECT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 20;
+	int TEST_ENTITY__FIELD_OBJECT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Field Short Varchar</b></em>' attribute.
@@ -303,7 +303,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_SHORT_VARCHAR = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 21;
+	int TEST_ENTITY__FIELD_SHORT_VARCHAR = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Field Tel Number</b></em>' attribute.
@@ -312,7 +312,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_TEL_NUMBER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 22;
+	int TEST_ENTITY__FIELD_TEL_NUMBER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Field Time</b></em>' attribute.
@@ -321,7 +321,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 23;
+	int TEST_ENTITY__FIELD_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Field Url</b></em>' attribute.
@@ -330,7 +330,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_URL = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 24;
+	int TEST_ENTITY__FIELD_URL = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Field Value</b></em>' attribute.
@@ -339,7 +339,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 25;
+	int TEST_ENTITY__FIELD_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Field Very Long</b></em>' attribute.
@@ -348,7 +348,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_VERY_LONG = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 26;
+	int TEST_ENTITY__FIELD_VERY_LONG = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Field Very Short</b></em>' attribute.
@@ -357,7 +357,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY__FIELD_VERY_SHORT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 27;
+	int TEST_ENTITY__FIELD_VERY_SHORT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 31;
 
 	/**
 	 * The number of structural features of the '<em>Entity</em>' class.
@@ -366,7 +366,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_ENTITY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 28;
+	int TEST_ENTITY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 32;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.entity.test.impl.TestFieldTypeImpl <em>Field Type</em>}' class.
@@ -385,7 +385,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_FIELD_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TEST_FIELD_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -394,7 +394,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_FIELD_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TEST_FIELD_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -403,7 +403,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_FIELD_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TEST_FIELD_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -412,7 +412,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_FIELD_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TEST_FIELD_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Test Field Type Id</b></em>' attribute.
@@ -421,7 +421,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_FIELD_TYPE__TEST_FIELD_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TEST_FIELD_TYPE__TEST_FIELD_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Blob Field</b></em>' attribute.
@@ -430,7 +430,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_FIELD_TYPE__BLOB_FIELD = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TEST_FIELD_TYPE__BLOB_FIELD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Byte Array Field</b></em>' attribute.
@@ -439,7 +439,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_FIELD_TYPE__BYTE_ARRAY_FIELD = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TEST_FIELD_TYPE__BYTE_ARRAY_FIELD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Clob Field</b></em>' attribute.
@@ -448,7 +448,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_FIELD_TYPE__CLOB_FIELD = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TEST_FIELD_TYPE__CLOB_FIELD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Date Field</b></em>' attribute.
@@ -457,7 +457,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_FIELD_TYPE__DATE_FIELD = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TEST_FIELD_TYPE__DATE_FIELD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Date Time Field</b></em>' attribute.
@@ -466,7 +466,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_FIELD_TYPE__DATE_TIME_FIELD = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int TEST_FIELD_TYPE__DATE_TIME_FIELD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Fixed Point Field</b></em>' attribute.
@@ -475,7 +475,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_FIELD_TYPE__FIXED_POINT_FIELD = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int TEST_FIELD_TYPE__FIXED_POINT_FIELD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Floating Point Field</b></em>' attribute.
@@ -484,7 +484,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_FIELD_TYPE__FLOATING_POINT_FIELD = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int TEST_FIELD_TYPE__FLOATING_POINT_FIELD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Numeric Field</b></em>' attribute.
@@ -493,7 +493,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_FIELD_TYPE__NUMERIC_FIELD = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int TEST_FIELD_TYPE__NUMERIC_FIELD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Object Field</b></em>' attribute.
@@ -502,7 +502,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_FIELD_TYPE__OBJECT_FIELD = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int TEST_FIELD_TYPE__OBJECT_FIELD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Time Field</b></em>' attribute.
@@ -511,7 +511,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_FIELD_TYPE__TIME_FIELD = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int TEST_FIELD_TYPE__TIME_FIELD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The number of structural features of the '<em>Field Type</em>' class.
@@ -520,7 +520,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TEST_FIELD_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int TEST_FIELD_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.entity.test.impl.TestingImpl <em>Testing</em>}' class.
@@ -539,7 +539,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TESTING__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -548,7 +548,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TESTING__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -557,7 +557,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TESTING__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -566,7 +566,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TESTING__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Testing Id</b></em>' attribute.
@@ -575,7 +575,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING__TESTING_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TESTING__TESTING_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -584,7 +584,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING__COMMENTS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TESTING__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -593,7 +593,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TESTING__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Testing Date</b></em>' attribute.
@@ -602,7 +602,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING__TESTING_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TESTING__TESTING_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Testing Items</b></em>' reference list.
@@ -611,7 +611,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING__TESTING_ITEMS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TESTING__TESTING_ITEMS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Testing Name</b></em>' attribute.
@@ -620,7 +620,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING__TESTING_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int TESTING__TESTING_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Testing Size</b></em>' attribute.
@@ -629,7 +629,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING__TESTING_SIZE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int TESTING__TESTING_SIZE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Testing Type Id</b></em>' reference.
@@ -638,7 +638,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING__TESTING_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int TESTING__TESTING_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Testing</em>' class.
@@ -647,7 +647,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int TESTING_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.entity.test.impl.TestingCryptoImpl <em>Testing Crypto</em>}' class.
@@ -666,7 +666,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_CRYPTO__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TESTING_CRYPTO__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -675,7 +675,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_CRYPTO__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TESTING_CRYPTO__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -684,7 +684,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_CRYPTO__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TESTING_CRYPTO__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -693,7 +693,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_CRYPTO__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TESTING_CRYPTO__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Testing Crypto Id</b></em>' attribute.
@@ -702,7 +702,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_CRYPTO__TESTING_CRYPTO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TESTING_CRYPTO__TESTING_CRYPTO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Encrypted Value</b></em>' attribute.
@@ -711,7 +711,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_CRYPTO__ENCRYPTED_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TESTING_CRYPTO__ENCRYPTED_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Salted Encrypted Value</b></em>' attribute.
@@ -720,7 +720,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_CRYPTO__SALTED_ENCRYPTED_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TESTING_CRYPTO__SALTED_ENCRYPTED_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Testing Crypto Type Id</b></em>' attribute.
@@ -729,7 +729,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_CRYPTO__TESTING_CRYPTO_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TESTING_CRYPTO__TESTING_CRYPTO_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Unencrypted Value</b></em>' attribute.
@@ -738,7 +738,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_CRYPTO__UNENCRYPTED_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TESTING_CRYPTO__UNENCRYPTED_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Testing Crypto</em>' class.
@@ -747,7 +747,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_CRYPTO_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int TESTING_CRYPTO_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.entity.test.impl.TestingItemImpl <em>Testing Item</em>}' class.
@@ -766,7 +766,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_ITEM__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TESTING_ITEM__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -775,7 +775,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_ITEM__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TESTING_ITEM__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -784,7 +784,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_ITEM__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TESTING_ITEM__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -793,7 +793,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_ITEM__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TESTING_ITEM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Testing Id</b></em>' reference.
@@ -802,7 +802,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_ITEM__TESTING_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TESTING_ITEM__TESTING_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Testing Seq Id</b></em>' attribute.
@@ -811,7 +811,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_ITEM__TESTING_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TESTING_ITEM__TESTING_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Testing History</b></em>' attribute.
@@ -820,7 +820,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_ITEM__TESTING_HISTORY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TESTING_ITEM__TESTING_HISTORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Testing Item</em>' class.
@@ -829,7 +829,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_ITEM_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TESTING_ITEM_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeImpl <em>Testing Node</em>}' class.
@@ -848,7 +848,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TESTING_NODE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -857,7 +857,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TESTING_NODE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -866,7 +866,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TESTING_NODE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -875,7 +875,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TESTING_NODE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Testing Node Id</b></em>' attribute.
@@ -884,7 +884,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE__TESTING_NODE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TESTING_NODE__TESTING_NODE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -893,7 +893,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TESTING_NODE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Primary Parent Node Id</b></em>' reference.
@@ -902,7 +902,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE__PRIMARY_PARENT_NODE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TESTING_NODE__PRIMARY_PARENT_NODE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Testing Node</em>' class.
@@ -911,7 +911,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TESTING_NODE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeMemberImpl <em>Testing Node Member</em>}' class.
@@ -930,7 +930,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE_MEMBER__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TESTING_NODE_MEMBER__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -939,7 +939,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE_MEMBER__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TESTING_NODE_MEMBER__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -948,7 +948,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE_MEMBER__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TESTING_NODE_MEMBER__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -957,7 +957,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE_MEMBER__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TESTING_NODE_MEMBER__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Testing Id</b></em>' reference.
@@ -966,7 +966,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE_MEMBER__TESTING_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TESTING_NODE_MEMBER__TESTING_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Testing Node Id</b></em>' reference.
@@ -975,7 +975,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE_MEMBER__TESTING_NODE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TESTING_NODE_MEMBER__TESTING_NODE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -984,7 +984,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE_MEMBER__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TESTING_NODE_MEMBER__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Extend From Date</b></em>' attribute.
@@ -993,7 +993,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE_MEMBER__EXTEND_FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TESTING_NODE_MEMBER__EXTEND_FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Extend Thru Date</b></em>' attribute.
@@ -1002,7 +1002,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE_MEMBER__EXTEND_THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TESTING_NODE_MEMBER__EXTEND_THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -1011,7 +1011,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE_MEMBER__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int TESTING_NODE_MEMBER__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Testing Node Member</em>' class.
@@ -1020,7 +1020,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE_MEMBER_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int TESTING_NODE_MEMBER_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.entity.test.impl.TestingRemoveAllImpl <em>Testing Remove All</em>}' class.
@@ -1039,7 +1039,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_REMOVE_ALL__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TESTING_REMOVE_ALL__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1048,7 +1048,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_REMOVE_ALL__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TESTING_REMOVE_ALL__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1057,7 +1057,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_REMOVE_ALL__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TESTING_REMOVE_ALL__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1066,7 +1066,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_REMOVE_ALL__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TESTING_REMOVE_ALL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Testing Remove All Id</b></em>' attribute.
@@ -1075,7 +1075,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_REMOVE_ALL__TESTING_REMOVE_ALL_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TESTING_REMOVE_ALL__TESTING_REMOVE_ALL_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1084,7 +1084,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_REMOVE_ALL__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TESTING_REMOVE_ALL__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Testing Remove All</em>' class.
@@ -1093,7 +1093,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_REMOVE_ALL_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TESTING_REMOVE_ALL_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.entity.test.impl.TestingStatusImpl <em>Testing Status</em>}' class.
@@ -1112,7 +1112,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_STATUS__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TESTING_STATUS__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1121,7 +1121,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_STATUS__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TESTING_STATUS__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1130,7 +1130,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_STATUS__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TESTING_STATUS__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1139,7 +1139,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_STATUS__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TESTING_STATUS__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Testing Status Id</b></em>' attribute.
@@ -1148,7 +1148,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_STATUS__TESTING_STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TESTING_STATUS__TESTING_STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Change By User Login Id</b></em>' reference.
@@ -1157,7 +1157,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_STATUS__CHANGE_BY_USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TESTING_STATUS__CHANGE_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Status Date</b></em>' attribute.
@@ -1166,7 +1166,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_STATUS__STATUS_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TESTING_STATUS__STATUS_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -1175,7 +1175,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_STATUS__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TESTING_STATUS__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Testing Id</b></em>' attribute.
@@ -1184,7 +1184,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_STATUS__TESTING_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TESTING_STATUS__TESTING_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Testing Status</em>' class.
@@ -1193,7 +1193,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_STATUS_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int TESTING_STATUS_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.entity.test.impl.TestingSubtypeImpl <em>Testing Subtype</em>}' class.
@@ -1212,7 +1212,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_SUBTYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TESTING_SUBTYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1221,7 +1221,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_SUBTYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TESTING_SUBTYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1230,7 +1230,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_SUBTYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TESTING_SUBTYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1239,7 +1239,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_SUBTYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TESTING_SUBTYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Testing Type Id</b></em>' attribute.
@@ -1248,7 +1248,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_SUBTYPE__TESTING_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TESTING_SUBTYPE__TESTING_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Subtype Description</b></em>' attribute.
@@ -1257,7 +1257,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_SUBTYPE__SUBTYPE_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TESTING_SUBTYPE__SUBTYPE_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Testing Subtype</em>' class.
@@ -1266,7 +1266,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_SUBTYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TESTING_SUBTYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.entity.test.impl.TestingTypeImpl <em>Testing Type</em>}' class.
@@ -1285,7 +1285,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TESTING_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1294,7 +1294,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TESTING_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1303,7 +1303,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TESTING_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1312,7 +1312,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TESTING_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Testing Type Id</b></em>' attribute.
@@ -1321,7 +1321,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_TYPE__TESTING_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TESTING_TYPE__TESTING_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1330,7 +1330,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TESTING_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Testing Type</em>' class.
@@ -1339,7 +1339,7 @@ public interface TestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TESTING_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 
 	/**

@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.manufacturing.bom;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface BomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_MANUFACTURING_RULE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_MANUFACTURING_RULE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface BomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_MANUFACTURING_RULE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_MANUFACTURING_RULE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface BomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_MANUFACTURING_RULE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_MANUFACTURING_RULE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface BomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_MANUFACTURING_RULE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_MANUFACTURING_RULE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Rule Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface BomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_MANUFACTURING_RULE__RULE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_MANUFACTURING_RULE__RULE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface BomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_MANUFACTURING_RULE__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_MANUFACTURING_RULE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface BomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_MANUFACTURING_RULE__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_MANUFACTURING_RULE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Product Feature</b></em>' reference.
@@ -141,7 +141,7 @@ public interface BomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_MANUFACTURING_RULE__PRODUCT_FEATURE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PRODUCT_MANUFACTURING_RULE__PRODUCT_FEATURE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -150,7 +150,7 @@ public interface BomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_MANUFACTURING_RULE__PRODUCT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PRODUCT_MANUFACTURING_RULE__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Product Id For</b></em>' reference.
@@ -159,7 +159,7 @@ public interface BomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_MANUFACTURING_RULE__PRODUCT_ID_FOR = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PRODUCT_MANUFACTURING_RULE__PRODUCT_ID_FOR = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Product Id In</b></em>' reference.
@@ -168,7 +168,7 @@ public interface BomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_MANUFACTURING_RULE__PRODUCT_ID_IN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PRODUCT_MANUFACTURING_RULE__PRODUCT_ID_IN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Product Id In Subst</b></em>' reference.
@@ -177,7 +177,7 @@ public interface BomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_MANUFACTURING_RULE__PRODUCT_ID_IN_SUBST = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PRODUCT_MANUFACTURING_RULE__PRODUCT_ID_IN_SUBST = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -186,7 +186,7 @@ public interface BomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_MANUFACTURING_RULE__QUANTITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int PRODUCT_MANUFACTURING_RULE__QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Rule Operator</b></em>' attribute.
@@ -195,7 +195,7 @@ public interface BomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_MANUFACTURING_RULE__RULE_OPERATOR = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int PRODUCT_MANUFACTURING_RULE__RULE_OPERATOR = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Rule Seq Id</b></em>' attribute.
@@ -204,7 +204,7 @@ public interface BomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_MANUFACTURING_RULE__RULE_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int PRODUCT_MANUFACTURING_RULE__RULE_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -213,7 +213,7 @@ public interface BomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_MANUFACTURING_RULE__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int PRODUCT_MANUFACTURING_RULE__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The number of structural features of the '<em>Product Manufacturing Rule</em>' class.
@@ -222,7 +222,7 @@ public interface BomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_MANUFACTURING_RULE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int PRODUCT_MANUFACTURING_RULE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 
 	/**

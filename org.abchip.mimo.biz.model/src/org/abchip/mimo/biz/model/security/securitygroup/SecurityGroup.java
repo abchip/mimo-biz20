@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.security.securitygroup;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Security Component - Security Group' dictionary='SecurityEntityLabels' formula='description'"
  * @generated
  */
-public interface SecurityGroup extends BizEntity {
+public interface SecurityGroup extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

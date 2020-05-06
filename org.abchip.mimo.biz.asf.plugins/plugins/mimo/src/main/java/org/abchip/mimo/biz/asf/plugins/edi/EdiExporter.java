@@ -141,8 +141,10 @@ public class EdiExporter {
 		// fields
 		for (EAttribute eAttribute : eClass.getEAllAttributes()) {
 
-			if (BizPackage.eINSTANCE.getBizEntity().getEStructuralFeature(eAttribute.getName()) != null)
+			if (org.abchip.mimo.entity.EntityPackage.eINSTANCE.getEntityIdentifiable().getEStructuralFeature(eAttribute.getName()) != null)
 				continue;
+//			if (org.abchip.mimo.entity.EntityPackage.eINSTANCE.getEntityInfo().getEStructuralFeature(eAttribute.getName()) != null)
+//				continue;
 
 			if (!eSuper.isAbstract()) {
 				if (eSuper.getEAllAttributes().contains(eAttribute) && !eAttribute.isID())
@@ -211,7 +213,7 @@ public class EdiExporter {
 		// relations
 		for (EReference eReference : eClass.getEAllReferences()) {
 
-			if (BizPackage.eINSTANCE.getBizEntity().getEStructuralFeature(eReference.getName()) != null)
+			if (org.abchip.mimo.entity.EntityPackage.eINSTANCE.getEntityIdentifiable().getEStructuralFeature(eReference.getName()) != null)
 				continue;
 
 			if (!eSuper.isAbstract()) {

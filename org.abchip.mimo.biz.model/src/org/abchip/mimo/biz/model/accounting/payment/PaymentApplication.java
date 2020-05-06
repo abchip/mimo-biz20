@@ -8,10 +8,11 @@
 package org.abchip.mimo.biz.model.accounting.payment;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.common.geo.Geo;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +38,7 @@ import org.abchip.mimo.biz.model.common.geo.Geo;
  * @model
  * @generated
  */
-public interface PaymentApplication extends BizEntity {
+public interface PaymentApplication extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Amount Applied</b></em>' attribute.
 	 * <!-- begin-user-doc -->

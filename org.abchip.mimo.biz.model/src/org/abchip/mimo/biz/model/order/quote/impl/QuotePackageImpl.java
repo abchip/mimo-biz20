@@ -2067,7 +2067,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		UomPackage theUomPackage = (UomPackage)EPackage.Registry.INSTANCE.getEPackage(UomPackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
 		StorePackage theStorePackage = (StorePackage)EPackage.Registry.INSTANCE.getEPackage(StorePackage.eNS_URI);
@@ -2083,6 +2083,7 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		FeaturePackage theFeaturePackage = (FeaturePackage)EPackage.Registry.INSTANCE.getEPackage(FeaturePackage.eNS_URI);
 		ProductPackage theProductPackage = (ProductPackage)EPackage.Registry.INSTANCE.getEPackage(ProductPackage.eNS_URI);
 		AbilityPackage theAbilityPackage = (AbilityPackage)EPackage.Registry.INSTANCE.getEPackage(AbilityPackage.eNS_URI);
+		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
 		AgreementPackage theAgreementPackage = (AgreementPackage)EPackage.Registry.INSTANCE.getEPackage(AgreementPackage.eNS_URI);
 
 		// Create type parameters
@@ -2090,24 +2091,37 @@ public class QuotePackageImpl extends EPackageImpl implements QuotePackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getQuoteType());
 		g1.getETypeArguments().add(g2);
 		quoteEClass.getEGenericSuperTypes().add(g1);
-		quoteAdjustmentEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		quoteAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		quoteCoefficientEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		quoteItemEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		quoteEClass.getEGenericSuperTypes().add(g1);
+		quoteAdjustmentEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		quoteAdjustmentEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		quoteAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		quoteAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		quoteCoefficientEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		quoteCoefficientEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		quoteItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		quoteItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		quoteNoteEClass.getESuperTypes().add(theBizPackage.getBizEntityNote());
-		quoteRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		quoteTermEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		quoteTermAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		quoteRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		quoteRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		quoteTermEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		quoteTermEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		quoteTermAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		quoteTermAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getQuote());
 		g1.getETypeArguments().add(g2);
 		quoteTypeEClass.getEGenericSuperTypes().add(g1);
-		quoteTypeAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		quoteWorkEffortEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		quoteTypeEClass.getEGenericSuperTypes().add(g1);
+		quoteTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		quoteTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		quoteWorkEffortEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		quoteWorkEffortEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(quoteEClass, Quote.class, "Quote", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

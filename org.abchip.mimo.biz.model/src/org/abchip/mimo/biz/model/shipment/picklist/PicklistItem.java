@@ -8,10 +8,11 @@
 package org.abchip.mimo.biz.model.shipment.picklist;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.order.order.OrderHeader;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItem;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,7 +36,7 @@ import org.abchip.mimo.biz.model.product.inventory.InventoryItem;
  * @model annotation="mimo-ent-frame title='Picklist'"
  * @generated
  */
-public interface PicklistItem extends BizEntity {
+public interface PicklistItem extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Inventory Item Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

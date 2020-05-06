@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.marketing.segment;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.geo.Geo;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.model.common.geo.Geo;
  * @model
  * @generated
  */
-public interface SegmentGroupGeo extends BizEntity {
+public interface SegmentGroupGeo extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Geo Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

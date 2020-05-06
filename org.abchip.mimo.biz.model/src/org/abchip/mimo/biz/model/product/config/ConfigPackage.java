@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.config;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONFIG_OPTION_PRODUCT_OPTION__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CONFIG_OPTION_PRODUCT_OPTION__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONFIG_OPTION_PRODUCT_OPTION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CONFIG_OPTION_PRODUCT_OPTION__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONFIG_OPTION_PRODUCT_OPTION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CONFIG_OPTION_PRODUCT_OPTION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONFIG_OPTION_PRODUCT_OPTION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CONFIG_OPTION_PRODUCT_OPTION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Config Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONFIG_OPTION_PRODUCT_OPTION__CONFIG_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CONFIG_OPTION_PRODUCT_OPTION__CONFIG_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Config Item Id</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONFIG_OPTION_PRODUCT_OPTION__CONFIG_ITEM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CONFIG_OPTION_PRODUCT_OPTION__CONFIG_ITEM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Config Option Id</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONFIG_OPTION_PRODUCT_OPTION__CONFIG_OPTION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CONFIG_OPTION_PRODUCT_OPTION__CONFIG_OPTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' attribute.
@@ -141,7 +141,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONFIG_OPTION_PRODUCT_OPTION__PRODUCT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int CONFIG_OPTION_PRODUCT_OPTION__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -150,7 +150,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONFIG_OPTION_PRODUCT_OPTION__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int CONFIG_OPTION_PRODUCT_OPTION__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -159,7 +159,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONFIG_OPTION_PRODUCT_OPTION__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int CONFIG_OPTION_PRODUCT_OPTION__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Product Option Id</b></em>' attribute.
@@ -168,7 +168,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONFIG_OPTION_PRODUCT_OPTION__PRODUCT_OPTION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int CONFIG_OPTION_PRODUCT_OPTION__PRODUCT_OPTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Option Product Option</em>' class.
@@ -177,7 +177,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONFIG_OPTION_PRODUCT_OPTION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int CONFIG_OPTION_PRODUCT_OPTION_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentImpl <em>Prod Conf Item Content</em>}' class.
@@ -196,7 +196,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CONF_ITEM_CONTENT__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int PROD_CONF_ITEM_CONTENT__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -205,7 +205,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CONF_ITEM_CONTENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int PROD_CONF_ITEM_CONTENT__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -214,7 +214,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CONF_ITEM_CONTENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int PROD_CONF_ITEM_CONTENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -223,7 +223,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CONF_ITEM_CONTENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int PROD_CONF_ITEM_CONTENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Config Item Id</b></em>' reference.
@@ -232,7 +232,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CONF_ITEM_CONTENT__CONFIG_ITEM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int PROD_CONF_ITEM_CONTENT__CONFIG_ITEM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Content Id</b></em>' reference.
@@ -241,7 +241,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CONF_ITEM_CONTENT__CONTENT_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int PROD_CONF_ITEM_CONTENT__CONTENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Conf Item Content Type Id</b></em>' reference.
@@ -250,7 +250,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CONF_ITEM_CONTENT__CONF_ITEM_CONTENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int PROD_CONF_ITEM_CONTENT__CONF_ITEM_CONTENT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -259,7 +259,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CONF_ITEM_CONTENT__FROM_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int PROD_CONF_ITEM_CONTENT__FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -268,7 +268,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CONF_ITEM_CONTENT__THRU_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int PROD_CONF_ITEM_CONTENT__THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Prod Conf Item Content</em>' class.
@@ -277,7 +277,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CONF_ITEM_CONTENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int PROD_CONF_ITEM_CONTENT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.config.impl.ProdConfItemContentTypeImpl <em>Prod Conf Item Content Type</em>}' class.
@@ -296,7 +296,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CONF_ITEM_CONTENT_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int PROD_CONF_ITEM_CONTENT_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -305,7 +305,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CONF_ITEM_CONTENT_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int PROD_CONF_ITEM_CONTENT_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -314,7 +314,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CONF_ITEM_CONTENT_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int PROD_CONF_ITEM_CONTENT_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -323,7 +323,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CONF_ITEM_CONTENT_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int PROD_CONF_ITEM_CONTENT_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -332,7 +332,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CONF_ITEM_CONTENT_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int PROD_CONF_ITEM_CONTENT_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Conf Item Content Type Id</b></em>' attribute.
@@ -341,7 +341,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CONF_ITEM_CONTENT_TYPE__CONF_ITEM_CONTENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int PROD_CONF_ITEM_CONTENT_TYPE__CONF_ITEM_CONTENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -350,7 +350,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CONF_ITEM_CONTENT_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int PROD_CONF_ITEM_CONTENT_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -359,7 +359,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CONF_ITEM_CONTENT_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int PROD_CONF_ITEM_CONTENT_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -368,7 +368,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CONF_ITEM_CONTENT_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int PROD_CONF_ITEM_CONTENT_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Prod Conf Item Content Type</em>' class.
@@ -377,7 +377,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CONF_ITEM_CONTENT_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int PROD_CONF_ITEM_CONTENT_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigImpl <em>Product Config</em>}' class.
@@ -396,7 +396,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_CONFIG__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -405,7 +405,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_CONFIG__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -414,7 +414,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_CONFIG__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -423,7 +423,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_CONFIG__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -432,7 +432,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG__PRODUCT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_CONFIG__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Config Item Id</b></em>' reference.
@@ -441,7 +441,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG__CONFIG_ITEM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_CONFIG__CONFIG_ITEM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -450,7 +450,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_CONFIG__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -459,7 +459,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PRODUCT_CONFIG__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Config Type Id</b></em>' attribute.
@@ -468,7 +468,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG__CONFIG_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PRODUCT_CONFIG__CONFIG_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Default Config Option Id</b></em>' attribute.
@@ -477,7 +477,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG__DEFAULT_CONFIG_OPTION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PRODUCT_CONFIG__DEFAULT_CONFIG_OPTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -486,7 +486,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PRODUCT_CONFIG__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Is Mandatory</b></em>' attribute.
@@ -495,7 +495,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG__IS_MANDATORY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PRODUCT_CONFIG__IS_MANDATORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Long Description</b></em>' attribute.
@@ -504,7 +504,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG__LONG_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int PRODUCT_CONFIG__LONG_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -513,7 +513,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int PRODUCT_CONFIG__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The number of structural features of the '<em>Product Config</em>' class.
@@ -522,7 +522,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int PRODUCT_CONFIG_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigConfigImpl <em>Product Config Config</em>}' class.
@@ -541,7 +541,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_CONFIG__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_CONFIG_CONFIG__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -550,7 +550,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_CONFIG__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_CONFIG_CONFIG__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -559,7 +559,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_CONFIG__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_CONFIG_CONFIG__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -568,7 +568,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_CONFIG__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_CONFIG_CONFIG__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Config Item Id</b></em>' reference.
@@ -577,7 +577,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_CONFIG__CONFIG_ITEM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_CONFIG_CONFIG__CONFIG_ITEM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Config Id</b></em>' attribute.
@@ -586,7 +586,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_CONFIG__CONFIG_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_CONFIG_CONFIG__CONFIG_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Config Option Id</b></em>' attribute.
@@ -595,7 +595,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_CONFIG__CONFIG_OPTION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_CONFIG_CONFIG__CONFIG_OPTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -604,7 +604,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_CONFIG__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PRODUCT_CONFIG_CONFIG__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -613,7 +613,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_CONFIG__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PRODUCT_CONFIG_CONFIG__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Product Config Config</em>' class.
@@ -622,7 +622,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_CONFIG_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PRODUCT_CONFIG_CONFIG_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigItemImpl <em>Product Config Item</em>}' class.
@@ -641,7 +641,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_ITEM__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_CONFIG_ITEM__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -650,7 +650,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_ITEM__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_CONFIG_ITEM__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -659,7 +659,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_ITEM__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_CONFIG_ITEM__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -668,7 +668,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_ITEM__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_CONFIG_ITEM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Config Item Id</b></em>' attribute.
@@ -677,7 +677,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_ITEM__CONFIG_ITEM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_CONFIG_ITEM__CONFIG_ITEM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Config Item Name</b></em>' attribute.
@@ -686,7 +686,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_ITEM__CONFIG_ITEM_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_CONFIG_ITEM__CONFIG_ITEM_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Config Item Product Config Options</b></em>' reference list.
@@ -695,7 +695,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_ITEM__CONFIG_ITEM_PRODUCT_CONFIG_OPTIONS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_CONFIG_ITEM__CONFIG_ITEM_PRODUCT_CONFIG_OPTIONS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Config Item Type Id</b></em>' attribute.
@@ -704,7 +704,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_ITEM__CONFIG_ITEM_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PRODUCT_CONFIG_ITEM__CONFIG_ITEM_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -713,7 +713,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_ITEM__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PRODUCT_CONFIG_ITEM__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Image Url</b></em>' attribute.
@@ -722,7 +722,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_ITEM__IMAGE_URL = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PRODUCT_CONFIG_ITEM__IMAGE_URL = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Long Description</b></em>' attribute.
@@ -731,7 +731,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_ITEM__LONG_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PRODUCT_CONFIG_ITEM__LONG_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Product Config Item</em>' class.
@@ -740,7 +740,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_ITEM_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PRODUCT_CONFIG_ITEM_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigOptionImpl <em>Product Config Option</em>}' class.
@@ -759,7 +759,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_CONFIG_OPTION__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -768,7 +768,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_CONFIG_OPTION__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -777,7 +777,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_CONFIG_OPTION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -786,7 +786,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_CONFIG_OPTION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Config Item Id</b></em>' reference.
@@ -795,7 +795,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION__CONFIG_ITEM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_CONFIG_OPTION__CONFIG_ITEM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Config Option Id</b></em>' attribute.
@@ -804,7 +804,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION__CONFIG_OPTION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_CONFIG_OPTION__CONFIG_OPTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Config Option Name</b></em>' attribute.
@@ -813,7 +813,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION__CONFIG_OPTION_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_CONFIG_OPTION__CONFIG_OPTION_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -822,7 +822,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PRODUCT_CONFIG_OPTION__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -831,7 +831,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PRODUCT_CONFIG_OPTION__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Product Config Option</em>' class.
@@ -840,7 +840,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PRODUCT_CONFIG_OPTION_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigOptionIactnImpl <em>Product Config Option Iactn</em>}' class.
@@ -859,7 +859,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION_IACTN__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_CONFIG_OPTION_IACTN__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -868,7 +868,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION_IACTN__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_CONFIG_OPTION_IACTN__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -877,7 +877,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION_IACTN__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_CONFIG_OPTION_IACTN__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -886,7 +886,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION_IACTN__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_CONFIG_OPTION_IACTN__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Config Item Id</b></em>' reference.
@@ -895,7 +895,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION_IACTN__CONFIG_ITEM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_CONFIG_OPTION_IACTN__CONFIG_ITEM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Config Item Id To</b></em>' reference.
@@ -904,7 +904,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION_IACTN__CONFIG_ITEM_ID_TO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_CONFIG_OPTION_IACTN__CONFIG_ITEM_ID_TO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Config Option Id</b></em>' attribute.
@@ -913,7 +913,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION_IACTN__CONFIG_OPTION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_CONFIG_OPTION_IACTN__CONFIG_OPTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Config Option Id To</b></em>' attribute.
@@ -922,7 +922,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION_IACTN__CONFIG_OPTION_ID_TO = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PRODUCT_CONFIG_OPTION_IACTN__CONFIG_OPTION_ID_TO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -931,7 +931,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION_IACTN__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PRODUCT_CONFIG_OPTION_IACTN__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Config Iactn Type Id</b></em>' attribute.
@@ -940,7 +940,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION_IACTN__CONFIG_IACTN_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PRODUCT_CONFIG_OPTION_IACTN__CONFIG_IACTN_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -949,7 +949,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION_IACTN__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PRODUCT_CONFIG_OPTION_IACTN__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Product Config Option Iactn</em>' class.
@@ -958,7 +958,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_OPTION_IACTN_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PRODUCT_CONFIG_OPTION_IACTN_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigProductImpl <em>Product Config Product</em>}' class.
@@ -977,7 +977,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_PRODUCT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_CONFIG_PRODUCT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -986,7 +986,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_PRODUCT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_CONFIG_PRODUCT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -995,7 +995,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_PRODUCT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_CONFIG_PRODUCT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1004,7 +1004,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_PRODUCT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_CONFIG_PRODUCT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Config Item Id</b></em>' reference.
@@ -1013,7 +1013,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_PRODUCT__CONFIG_ITEM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_CONFIG_PRODUCT__CONFIG_ITEM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -1022,7 +1022,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_PRODUCT__PRODUCT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_CONFIG_PRODUCT__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Config Option Id</b></em>' attribute.
@@ -1031,7 +1031,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_PRODUCT__CONFIG_OPTION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_CONFIG_PRODUCT__CONFIG_OPTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -1040,7 +1040,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_PRODUCT__QUANTITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PRODUCT_CONFIG_PRODUCT__QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -1049,7 +1049,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_PRODUCT__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PRODUCT_CONFIG_PRODUCT__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Product Config Product</em>' class.
@@ -1058,7 +1058,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_PRODUCT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PRODUCT_CONFIG_PRODUCT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.config.impl.ProductConfigStatsImpl <em>Product Config Stats</em>}' class.
@@ -1077,7 +1077,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_STATS__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_CONFIG_STATS__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1086,7 +1086,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_STATS__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_CONFIG_STATS__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1095,7 +1095,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_STATS__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_CONFIG_STATS__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1104,7 +1104,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_STATS__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_CONFIG_STATS__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -1113,7 +1113,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_STATS__PRODUCT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_CONFIG_STATS__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Config Id</b></em>' attribute.
@@ -1122,7 +1122,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_STATS__CONFIG_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_CONFIG_STATS__CONFIG_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Config Type Id</b></em>' attribute.
@@ -1131,7 +1131,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_STATS__CONFIG_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_CONFIG_STATS__CONFIG_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Num Of Confs</b></em>' attribute.
@@ -1140,7 +1140,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_STATS__NUM_OF_CONFS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PRODUCT_CONFIG_STATS__NUM_OF_CONFS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Product Config Stats</em>' class.
@@ -1149,7 +1149,7 @@ public interface ConfigPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CONFIG_STATS_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PRODUCT_CONFIG_STATS_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 
 	/**

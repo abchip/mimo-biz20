@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.content.data;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.datasource.DataSource;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.model.common.datasource.DataSource;
  * @model annotation="mimo-ent-frame title='Data Resource Meta-Data Predicate'"
  * @generated
  */
-public interface DataResourceMetaData extends BizEntity {
+public interface DataResourceMetaData extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Data Resource Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

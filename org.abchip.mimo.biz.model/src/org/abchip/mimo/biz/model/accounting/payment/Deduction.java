@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.accounting.payment;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntityTyped;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.BizEntityTyped;
  * @model
  * @generated
  */
-public interface Deduction extends BizEntityTyped<DeductionType> {
+public interface Deduction extends EntityTyped<DeductionType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->

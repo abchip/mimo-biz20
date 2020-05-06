@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.accounting.payment;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,7 +44,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Authorize Dot Net Payment Gateway Configuration'"
  * @generated
  */
-public interface PaymentGatewayAuthorizeNet extends BizEntity {
+public interface PaymentGatewayAuthorizeNet extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Api Version</b></em>' attribute.
 	 * <!-- begin-user-doc -->

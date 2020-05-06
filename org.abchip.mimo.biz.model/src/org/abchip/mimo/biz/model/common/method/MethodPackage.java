@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.common.method;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface MethodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_METHOD__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int CUSTOM_METHOD__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface MethodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_METHOD__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int CUSTOM_METHOD__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface MethodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_METHOD__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int CUSTOM_METHOD__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface MethodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_METHOD__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int CUSTOM_METHOD__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Custom Method Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface MethodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_METHOD__CUSTOM_METHOD_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int CUSTOM_METHOD__CUSTOM_METHOD_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Custom Method Name</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface MethodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_METHOD__CUSTOM_METHOD_NAME = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int CUSTOM_METHOD__CUSTOM_METHOD_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Custom Method Type Id</b></em>' reference.
@@ -132,7 +132,7 @@ public interface MethodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_METHOD__CUSTOM_METHOD_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int CUSTOM_METHOD__CUSTOM_METHOD_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -141,7 +141,7 @@ public interface MethodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_METHOD__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int CUSTOM_METHOD__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Fixed Asset Dep Methods</b></em>' reference list.
@@ -150,7 +150,7 @@ public interface MethodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_METHOD__FIXED_ASSET_DEP_METHODS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int CUSTOM_METHOD__FIXED_ASSET_DEP_METHODS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Custom Method</em>' class.
@@ -159,7 +159,7 @@ public interface MethodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_METHOD_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int CUSTOM_METHOD_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.method.impl.CustomMethodTypeImpl <em>Custom Method Type</em>}' class.
@@ -178,7 +178,7 @@ public interface MethodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_METHOD_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int CUSTOM_METHOD_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -187,7 +187,7 @@ public interface MethodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_METHOD_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int CUSTOM_METHOD_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -196,7 +196,7 @@ public interface MethodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_METHOD_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int CUSTOM_METHOD_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -205,7 +205,7 @@ public interface MethodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_METHOD_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int CUSTOM_METHOD_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -214,7 +214,7 @@ public interface MethodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_METHOD_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int CUSTOM_METHOD_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Custom Method Type Id</b></em>' attribute.
@@ -223,7 +223,7 @@ public interface MethodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_METHOD_TYPE__CUSTOM_METHOD_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int CUSTOM_METHOD_TYPE__CUSTOM_METHOD_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -232,7 +232,7 @@ public interface MethodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_METHOD_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int CUSTOM_METHOD_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -241,7 +241,7 @@ public interface MethodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_METHOD_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int CUSTOM_METHOD_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -250,7 +250,7 @@ public interface MethodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_METHOD_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int CUSTOM_METHOD_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Custom Method Type</em>' class.
@@ -259,7 +259,7 @@ public interface MethodPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUSTOM_METHOD_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int CUSTOM_METHOD_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 
 	/**

@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.manufacturing.techdata;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TECH_DATA_CALENDAR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TECH_DATA_CALENDAR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TECH_DATA_CALENDAR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TECH_DATA_CALENDAR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Calendar Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR__CALENDAR_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TECH_DATA_CALENDAR__CALENDAR_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Calendar Week Id</b></em>' reference.
@@ -123,7 +123,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR__CALENDAR_WEEK_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TECH_DATA_CALENDAR__CALENDAR_WEEK_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TECH_DATA_CALENDAR__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Tech Data Calendar Exc Daies</b></em>' reference list.
@@ -141,7 +141,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR__TECH_DATA_CALENDAR_EXC_DAIES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TECH_DATA_CALENDAR__TECH_DATA_CALENDAR_EXC_DAIES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Tech Data Calendar Exc Weeks</b></em>' reference list.
@@ -150,7 +150,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR__TECH_DATA_CALENDAR_EXC_WEEKS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TECH_DATA_CALENDAR__TECH_DATA_CALENDAR_EXC_WEEKS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Tech Data Calendar</em>' class.
@@ -159,7 +159,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int TECH_DATA_CALENDAR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarExcDayImpl <em>Tech Data Calendar Exc Day</em>}' class.
@@ -178,7 +178,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_DAY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TECH_DATA_CALENDAR_EXC_DAY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -187,7 +187,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_DAY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TECH_DATA_CALENDAR_EXC_DAY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -196,7 +196,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_DAY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TECH_DATA_CALENDAR_EXC_DAY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -205,7 +205,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_DAY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TECH_DATA_CALENDAR_EXC_DAY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Calendar Id</b></em>' reference.
@@ -214,7 +214,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_DAY__CALENDAR_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TECH_DATA_CALENDAR_EXC_DAY__CALENDAR_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Exception Date Start Time</b></em>' attribute.
@@ -223,7 +223,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_DAY__EXCEPTION_DATE_START_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TECH_DATA_CALENDAR_EXC_DAY__EXCEPTION_DATE_START_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -232,7 +232,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_DAY__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TECH_DATA_CALENDAR_EXC_DAY__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Exception Capacity</b></em>' attribute.
@@ -241,7 +241,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_DAY__EXCEPTION_CAPACITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TECH_DATA_CALENDAR_EXC_DAY__EXCEPTION_CAPACITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Used Capacity</b></em>' attribute.
@@ -250,7 +250,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_DAY__USED_CAPACITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TECH_DATA_CALENDAR_EXC_DAY__USED_CAPACITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Tech Data Calendar Exc Day</em>' class.
@@ -259,7 +259,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_DAY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int TECH_DATA_CALENDAR_EXC_DAY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarExcWeekImpl <em>Tech Data Calendar Exc Week</em>}' class.
@@ -278,7 +278,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_WEEK__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TECH_DATA_CALENDAR_EXC_WEEK__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -287,7 +287,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_WEEK__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TECH_DATA_CALENDAR_EXC_WEEK__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -296,7 +296,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_WEEK__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TECH_DATA_CALENDAR_EXC_WEEK__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -305,7 +305,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_WEEK__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TECH_DATA_CALENDAR_EXC_WEEK__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Calendar Id</b></em>' reference.
@@ -314,7 +314,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Exception Date Start</b></em>' attribute.
@@ -323,7 +323,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_WEEK__EXCEPTION_DATE_START = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TECH_DATA_CALENDAR_EXC_WEEK__EXCEPTION_DATE_START = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Calendar Week Id</b></em>' reference.
@@ -332,7 +332,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR_WEEK_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TECH_DATA_CALENDAR_EXC_WEEK__CALENDAR_WEEK_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -341,7 +341,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_WEEK__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TECH_DATA_CALENDAR_EXC_WEEK__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Tech Data Calendar Exc Week</em>' class.
@@ -350,7 +350,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_EXC_WEEK_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TECH_DATA_CALENDAR_EXC_WEEK_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.manufacturing.techdata.impl.TechDataCalendarWeekImpl <em>Tech Data Calendar Week</em>}' class.
@@ -369,7 +369,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int TECH_DATA_CALENDAR_WEEK__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -378,7 +378,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int TECH_DATA_CALENDAR_WEEK__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -387,7 +387,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int TECH_DATA_CALENDAR_WEEK__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -396,7 +396,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int TECH_DATA_CALENDAR_WEEK__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Calendar Week Id</b></em>' attribute.
@@ -405,7 +405,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK__CALENDAR_WEEK_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int TECH_DATA_CALENDAR_WEEK__CALENDAR_WEEK_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -414,7 +414,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int TECH_DATA_CALENDAR_WEEK__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Friday Capacity</b></em>' attribute.
@@ -423,7 +423,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK__FRIDAY_CAPACITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int TECH_DATA_CALENDAR_WEEK__FRIDAY_CAPACITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Friday Start Time</b></em>' attribute.
@@ -432,7 +432,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK__FRIDAY_START_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int TECH_DATA_CALENDAR_WEEK__FRIDAY_START_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Monday Capacity</b></em>' attribute.
@@ -441,7 +441,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK__MONDAY_CAPACITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int TECH_DATA_CALENDAR_WEEK__MONDAY_CAPACITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Monday Start Time</b></em>' attribute.
@@ -450,7 +450,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK__MONDAY_START_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int TECH_DATA_CALENDAR_WEEK__MONDAY_START_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Saturday Capacity</b></em>' attribute.
@@ -459,7 +459,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK__SATURDAY_CAPACITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int TECH_DATA_CALENDAR_WEEK__SATURDAY_CAPACITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Saturday Start Time</b></em>' attribute.
@@ -468,7 +468,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK__SATURDAY_START_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int TECH_DATA_CALENDAR_WEEK__SATURDAY_START_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Sunday Capacity</b></em>' attribute.
@@ -477,7 +477,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK__SUNDAY_CAPACITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int TECH_DATA_CALENDAR_WEEK__SUNDAY_CAPACITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Sunday Start Time</b></em>' attribute.
@@ -486,7 +486,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK__SUNDAY_START_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int TECH_DATA_CALENDAR_WEEK__SUNDAY_START_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Thursday Capacity</b></em>' attribute.
@@ -495,7 +495,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK__THURSDAY_CAPACITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int TECH_DATA_CALENDAR_WEEK__THURSDAY_CAPACITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Thursday Start Time</b></em>' attribute.
@@ -504,7 +504,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK__THURSDAY_START_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int TECH_DATA_CALENDAR_WEEK__THURSDAY_START_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Tuesday Capacity</b></em>' attribute.
@@ -513,7 +513,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK__TUESDAY_CAPACITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int TECH_DATA_CALENDAR_WEEK__TUESDAY_CAPACITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Tuesday Start Time</b></em>' attribute.
@@ -522,7 +522,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK__TUESDAY_START_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int TECH_DATA_CALENDAR_WEEK__TUESDAY_START_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Wednesday Capacity</b></em>' attribute.
@@ -531,7 +531,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK__WEDNESDAY_CAPACITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int TECH_DATA_CALENDAR_WEEK__WEDNESDAY_CAPACITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Wednesday Start Time</b></em>' attribute.
@@ -540,7 +540,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK__WEDNESDAY_START_TIME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int TECH_DATA_CALENDAR_WEEK__WEDNESDAY_START_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The number of structural features of the '<em>Tech Data Calendar Week</em>' class.
@@ -549,7 +549,7 @@ public interface TechdataPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int TECH_DATA_CALENDAR_WEEK_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int TECH_DATA_CALENDAR_WEEK_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 
 	/**

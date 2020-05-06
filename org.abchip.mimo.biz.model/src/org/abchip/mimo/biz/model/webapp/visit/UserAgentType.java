@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.webapp.visit;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +27,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface UserAgentType extends BizEntity {
+public interface UserAgentType extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>User Agent Type Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

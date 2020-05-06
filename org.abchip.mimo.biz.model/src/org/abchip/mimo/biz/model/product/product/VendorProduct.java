@@ -7,9 +7,10 @@
  */
 package org.abchip.mimo.biz.model.product.product;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.store.ProductStoreGroup;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.model.product.store.ProductStoreGroup;
  * @model annotation="mimo-ent-frame help='For information related to a specific vendor and product, especially for multi-vendor stores. The ProductStoreGroup is to be used much like in ProductPrice.' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface VendorProduct extends BizEntity {
+public interface VendorProduct extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Product Store Group Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

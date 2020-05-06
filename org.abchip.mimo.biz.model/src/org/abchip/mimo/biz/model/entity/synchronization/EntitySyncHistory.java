@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.entity.synchronization;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -51,7 +52,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Entity Synchronization History'"
  * @generated
  */
-public interface EntitySyncHistory extends BizEntity {
+public interface EntitySyncHistory extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Beginning Synch Time</b></em>' attribute.
 	 * <!-- begin-user-doc -->

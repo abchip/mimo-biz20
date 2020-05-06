@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.manufacturing.techdata;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame help='Used to defined the availability of the machines, this entity define the Id and the week definition.\n      The Id is used in the exception calendar table as reference' title='Calendar' dictionary='ManufacturingEntityLabels' formula='description'"
  * @generated
  */
-public interface TechDataCalendar extends BizEntity {
+public interface TechDataCalendar extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Calendar Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

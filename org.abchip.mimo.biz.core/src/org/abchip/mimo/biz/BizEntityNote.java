@@ -7,6 +7,9 @@
  */
 package org.abchip.mimo.biz;
 
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
+
 
 /**
  * <!-- begin-user-doc -->
@@ -24,7 +27,7 @@ package org.abchip.mimo.biz;
  * @model abstract="true"
  * @generated
  */
-public interface BizEntityNote extends BizEntity {
+public interface BizEntityNote extends EntityIdentifiable, EntityInfo {
 
 	/**
 	 * Returns the value of the '<em><b>Note Id</b></em>' attribute.

@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.common.geo;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Geographic Boundary Association'"
  * @generated
  */
-public interface GeoAssoc extends BizEntity {
+public interface GeoAssoc extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Geo Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

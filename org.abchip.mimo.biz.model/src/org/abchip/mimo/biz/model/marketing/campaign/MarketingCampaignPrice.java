@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.marketing.campaign;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.price.ProductPriceRule;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +31,7 @@ import org.abchip.mimo.biz.model.product.price.ProductPriceRule;
  * @model
  * @generated
  */
-public interface MarketingCampaignPrice extends BizEntity {
+public interface MarketingCampaignPrice extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

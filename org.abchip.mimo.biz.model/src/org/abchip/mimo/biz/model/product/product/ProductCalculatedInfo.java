@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.product.product;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductCalculatedInfo extends BizEntity {
+public interface ProductCalculatedInfo extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Average Customer Rating</b></em>' attribute.
 	 * <!-- begin-user-doc -->

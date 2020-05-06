@@ -9,13 +9,14 @@ package org.abchip.mimo.biz.model.content.data;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.datasource.DataSource;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.content.survey.Survey;
 import org.abchip.mimo.biz.model.content.survey.SurveyResponse;
 import org.abchip.mimo.biz.model.product.feature.ProductFeatureDataResource;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -55,7 +56,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  * @model annotation="mimo-ent-frame title='Data Object'"
  * @generated
  */
-public interface DataResource extends BizEntityTyped<DataResourceType> {
+public interface DataResource extends EntityTyped<DataResourceType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Character Set Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

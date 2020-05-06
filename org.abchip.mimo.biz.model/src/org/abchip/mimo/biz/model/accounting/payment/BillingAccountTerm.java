@@ -9,9 +9,10 @@ package org.abchip.mimo.biz.model.accounting.payment;
 
 import java.math.BigDecimal;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.party.agreement.TermType;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,7 +36,7 @@ import org.abchip.mimo.biz.model.party.agreement.TermType;
  * @model
  * @generated
  */
-public interface BillingAccountTerm extends BizEntity {
+public interface BillingAccountTerm extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Term Days</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.entity.group;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface GroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_GROUP__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int ENTITY_GROUP__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface GroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_GROUP__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int ENTITY_GROUP__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface GroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_GROUP__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int ENTITY_GROUP__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface GroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_GROUP__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int ENTITY_GROUP__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Entity Group Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface GroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_GROUP__ENTITY_GROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int ENTITY_GROUP__ENTITY_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Entity Group Entries</b></em>' reference list.
@@ -123,7 +123,7 @@ public interface GroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_GROUP__ENTITY_GROUP_ENTRIES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int ENTITY_GROUP__ENTITY_GROUP_ENTRIES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Entity Group Name</b></em>' attribute.
@@ -132,7 +132,7 @@ public interface GroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_GROUP__ENTITY_GROUP_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int ENTITY_GROUP__ENTITY_GROUP_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Entity Group</em>' class.
@@ -141,7 +141,7 @@ public interface GroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_GROUP_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int ENTITY_GROUP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.entity.group.impl.EntityGroupEntryImpl <em>Entity Group Entry</em>}' class.
@@ -160,7 +160,7 @@ public interface GroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_GROUP_ENTRY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int ENTITY_GROUP_ENTRY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -169,7 +169,7 @@ public interface GroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_GROUP_ENTRY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int ENTITY_GROUP_ENTRY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -178,7 +178,7 @@ public interface GroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_GROUP_ENTRY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int ENTITY_GROUP_ENTRY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -187,7 +187,7 @@ public interface GroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_GROUP_ENTRY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int ENTITY_GROUP_ENTRY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Entity Group Id</b></em>' reference.
@@ -196,7 +196,7 @@ public interface GroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_GROUP_ENTRY__ENTITY_GROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int ENTITY_GROUP_ENTRY__ENTITY_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Entity Or Package</b></em>' attribute.
@@ -205,7 +205,7 @@ public interface GroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_GROUP_ENTRY__ENTITY_OR_PACKAGE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int ENTITY_GROUP_ENTRY__ENTITY_OR_PACKAGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Appl Enum Id</b></em>' attribute.
@@ -214,7 +214,7 @@ public interface GroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_GROUP_ENTRY__APPL_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int ENTITY_GROUP_ENTRY__APPL_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Entity Group Entry</em>' class.
@@ -223,7 +223,7 @@ public interface GroupPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ENTITY_GROUP_ENTRY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int ENTITY_GROUP_ENTRY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 
 	/**

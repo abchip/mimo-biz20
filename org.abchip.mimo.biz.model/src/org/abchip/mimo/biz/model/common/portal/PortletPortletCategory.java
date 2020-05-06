@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.common.portal;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +27,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Defines Portlets included into Categories'"
  * @generated
  */
-public interface PortletPortletCategory extends BizEntity {
+public interface PortletPortletCategory extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Portal Portlet Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

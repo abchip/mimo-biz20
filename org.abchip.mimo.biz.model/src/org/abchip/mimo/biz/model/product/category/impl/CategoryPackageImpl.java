@@ -1717,7 +1717,7 @@ public class CategoryPackageImpl extends EPackageImpl implements CategoryPackage
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		ContentPackage theContentPackage = (ContentPackage)EPackage.Registry.INSTANCE.getEPackage(ContentPackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
 		LedgerPackage theLedgerPackage = (LedgerPackage)EPackage.Registry.INSTANCE.getEPackage(LedgerPackage.eNS_URI);
@@ -1729,29 +1729,44 @@ public class CategoryPackageImpl extends EPackageImpl implements CategoryPackage
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getProductCategoryType());
 		g1.getETypeArguments().add(g2);
 		productCategoryEClass.getEGenericSuperTypes().add(g1);
-		productCategoryAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		productCategoryEClass.getEGenericSuperTypes().add(g1);
+		productCategoryAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productCategoryAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		g2 = createEGenericType(this.getProductCategoryContentType());
 		g1.getETypeArguments().add(g2);
 		productCategoryContentEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		productCategoryContentEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getProductCategoryContent());
 		g1.getETypeArguments().add(g2);
 		productCategoryContentTypeEClass.getEGenericSuperTypes().add(g1);
-		productCategoryGlAccountEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productCategoryLinkEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productCategoryMemberEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productCategoryRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productCategoryRollupEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		productCategoryContentTypeEClass.getEGenericSuperTypes().add(g1);
+		productCategoryGlAccountEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productCategoryGlAccountEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productCategoryLinkEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productCategoryLinkEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productCategoryMemberEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productCategoryMemberEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productCategoryRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productCategoryRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productCategoryRollupEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productCategoryRollupEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getProductCategory());
 		g1.getETypeArguments().add(g2);
 		productCategoryTypeEClass.getEGenericSuperTypes().add(g1);
-		productCategoryTypeAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		productCategoryTypeEClass.getEGenericSuperTypes().add(g1);
+		productCategoryTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productCategoryTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(productCategoryEClass, ProductCategory.class, "ProductCategory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.party.communication;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * @model
  * @generated
  */
-public interface CommunicationEventProduct extends BizEntity {
+public interface CommunicationEventProduct extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Product Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

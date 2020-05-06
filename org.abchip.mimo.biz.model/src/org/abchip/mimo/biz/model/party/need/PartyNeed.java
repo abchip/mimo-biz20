@@ -8,13 +8,14 @@
 package org.abchip.mimo.biz.model.party.need;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEvent;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.PartyType;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.abchip.mimo.biz.model.product.category.ProductCategory;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +43,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface PartyNeed extends BizEntity {
+public interface PartyNeed extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Datetime Recorded</b></em>' attribute.
 	 * <!-- begin-user-doc -->

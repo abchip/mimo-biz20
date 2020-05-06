@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.party.agreement;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.content.content.Content;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.model.content.content.Content;
  * @model
  * @generated
  */
-public interface AgreementContent extends BizEntityTyped<AgreementContentType> {
+public interface AgreementContent extends EntityTyped<AgreementContentType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Agreement Item Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

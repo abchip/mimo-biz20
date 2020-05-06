@@ -7,8 +7,9 @@
  */
 package org.abchip.mimo.biz.model.security.login;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.model.common.enum_.Enumeration;
  * @model
  * @generated
  */
-public interface UserLoginSecurityQuestion extends BizEntity {
+public interface UserLoginSecurityQuestion extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Question Enum Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

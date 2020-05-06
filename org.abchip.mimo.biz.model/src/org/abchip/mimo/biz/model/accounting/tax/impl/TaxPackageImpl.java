@@ -1740,7 +1740,7 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
 		GeoPackage theGeoPackage = (GeoPackage)EPackage.Registry.INSTANCE.getEPackage(GeoPackage.eNS_URI);
 		CategoryPackage theCategoryPackage = (CategoryPackage)EPackage.Registry.INSTANCE.getEPackage(CategoryPackage.eNS_URI);
@@ -1752,16 +1752,26 @@ public class TaxPackageImpl extends EPackageImpl implements TaxPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		partyTaxAuthInfoEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		taxAuthorityEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		taxAuthorityAssocEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		taxAuthorityAssocTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		taxAuthorityCategoryEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		taxAuthorityGlAccountEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		taxAuthorityRateProductEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		taxAuthorityRateTypeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		zipSalesRuleLookupEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		zipSalesTaxLookupEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		partyTaxAuthInfoEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		partyTaxAuthInfoEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		taxAuthorityEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		taxAuthorityEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		taxAuthorityAssocEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		taxAuthorityAssocEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		taxAuthorityAssocTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		taxAuthorityAssocTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		taxAuthorityCategoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		taxAuthorityCategoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		taxAuthorityGlAccountEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		taxAuthorityGlAccountEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		taxAuthorityRateProductEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		taxAuthorityRateProductEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		taxAuthorityRateTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		taxAuthorityRateTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		zipSalesRuleLookupEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		zipSalesRuleLookupEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		zipSalesTaxLookupEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		zipSalesTaxLookupEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(partyTaxAuthInfoEClass, PartyTaxAuthInfo.class, "PartyTaxAuthInfo", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

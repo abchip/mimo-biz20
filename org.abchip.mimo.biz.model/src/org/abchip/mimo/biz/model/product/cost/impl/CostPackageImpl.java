@@ -1276,7 +1276,7 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		UomPackage theUomPackage = (UomPackage)EPackage.Registry.INSTANCE.getEPackage(UomPackage.eNS_URI);
 		FixedassetPackage theFixedassetPackage = (FixedassetPackage)EPackage.Registry.INSTANCE.getEPackage(FixedassetPackage.eNS_URI);
 		GeoPackage theGeoPackage = (GeoPackage)EPackage.Registry.INSTANCE.getEPackage(GeoPackage.eNS_URI);
@@ -1292,18 +1292,26 @@ public class CostPackageImpl extends EPackageImpl implements CostPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getCostComponentType());
 		g1.getETypeArguments().add(g2);
 		costComponentEClass.getEGenericSuperTypes().add(g1);
-		costComponentAttributeEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		costComponentCalcEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		costComponentEClass.getEGenericSuperTypes().add(g1);
+		costComponentAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		costComponentAttributeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		costComponentCalcEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		costComponentCalcEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getCostComponent());
 		g1.getETypeArguments().add(g2);
 		costComponentTypeEClass.getEGenericSuperTypes().add(g1);
-		costComponentTypeAttrEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		productCostComponentCalcEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		costComponentTypeEClass.getEGenericSuperTypes().add(g1);
+		costComponentTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		costComponentTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		productCostComponentCalcEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		productCostComponentCalcEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(costComponentEClass, CostComponent.class, "CostComponent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

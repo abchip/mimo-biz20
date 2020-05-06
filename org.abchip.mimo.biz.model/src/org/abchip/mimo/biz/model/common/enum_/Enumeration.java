@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.common.enum_;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.model.security.login.UserLoginSecurityQuestion;
  * @model annotation="mimo-ent-frame dictionary='CommonEntityLabels' formula='description'"
  * @generated
  */
-public interface Enumeration extends BizEntityTyped<EnumerationType> {
+public interface Enumeration extends EntityTyped<EnumerationType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

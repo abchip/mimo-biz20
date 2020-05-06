@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.common.portal;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +29,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Defines a Portal Page'"
  * @generated
  */
-public interface PortalPageColumn extends BizEntity {
+public interface PortalPageColumn extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Column Seq Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

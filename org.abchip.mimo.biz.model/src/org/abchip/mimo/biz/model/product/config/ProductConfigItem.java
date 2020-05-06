@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.product.config;
 
 import java.util.List;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +33,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Product Configuration Question' dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface ProductConfigItem extends BizEntity {
+public interface ProductConfigItem extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Config Item Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

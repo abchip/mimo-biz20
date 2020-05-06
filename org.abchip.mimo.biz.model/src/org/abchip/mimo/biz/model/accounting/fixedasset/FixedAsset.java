@@ -11,7 +11,6 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.manufacturing.techdata.TechDataCalendar;
@@ -20,6 +19,8 @@ import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -65,7 +66,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * @model
  * @generated
  */
-public interface FixedAsset extends BizEntityTyped<FixedAssetType> {
+public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Acquire Order Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

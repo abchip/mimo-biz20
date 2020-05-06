@@ -7,12 +7,13 @@
  */
 package org.abchip.mimo.biz.model.marketing.contact;
 
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEvent;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -36,7 +37,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  * @model annotation="mimo-ent-frame title='Contact List'"
  * @generated
  */
-public interface ContactListCommStatus extends BizEntity {
+public interface ContactListCommStatus extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Change By User Login Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

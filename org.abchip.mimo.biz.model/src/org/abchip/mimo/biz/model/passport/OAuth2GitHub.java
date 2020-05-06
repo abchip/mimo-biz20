@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.passport;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -34,7 +35,7 @@ import org.abchip.mimo.biz.model.product.store.ProductStore;
  * @model annotation="mimo-ent-frame help='Data Model Enhancements For Passport' title='GitHub OAuth Login Config'"
  * @generated
  */
-public interface OAuth2GitHub extends BizEntity {
+public interface OAuth2GitHub extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Product Store Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

@@ -11,7 +11,6 @@ import java.math.BigDecimal;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.accounting.payment.BillingAccount;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
@@ -23,6 +22,8 @@ import org.abchip.mimo.biz.model.product.promo.ProductPromoUse;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.webapp.website.WebSite;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -80,7 +81,7 @@ import org.abchip.mimo.biz.model.webapp.website.WebSite;
  * @model
  * @generated
  */
-public interface OrderHeader extends BizEntityTyped<OrderType> {
+public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Agreement Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

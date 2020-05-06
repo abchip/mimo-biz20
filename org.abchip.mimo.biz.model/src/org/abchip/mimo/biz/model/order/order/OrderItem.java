@@ -10,7 +10,6 @@ package org.abchip.mimo.biz.model.order.order;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.uom.Uom;
@@ -18,6 +17,8 @@ import org.abchip.mimo.biz.model.marketing.opportunity.SalesOpportunity;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItem;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -81,7 +82,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  * @model
  * @generated
  */
-public interface OrderItem extends BizEntityTyped<OrderItemType> {
+public interface OrderItem extends EntityTyped<OrderItemType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Auto Cancel Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

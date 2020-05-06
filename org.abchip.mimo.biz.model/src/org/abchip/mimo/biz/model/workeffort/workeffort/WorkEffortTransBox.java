@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.workeffort.workeffort;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +28,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame title='Work Effort Transition Box'"
  * @generated
  */
-public interface WorkEffortTransBox extends BizEntity {
+public interface WorkEffortTransBox extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Process Work Effort Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

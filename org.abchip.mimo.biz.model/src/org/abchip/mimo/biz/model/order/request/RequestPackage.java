@@ -8,6 +8,7 @@
 package org.abchip.mimo.biz.model.order.request;
 
 import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +79,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_STAMP;
+	int CUST_REQUEST__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +88,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__CREATED_TX_STAMP;
+	int CUST_REQUEST__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +97,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_STAMP;
+	int CUST_REQUEST__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +106,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPED__LAST_UPDATED_TX_STAMP;
+	int CUST_REQUEST__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Id</b></em>' attribute.
@@ -114,7 +115,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__CUST_REQUEST_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 0;
+	int CUST_REQUEST__CUST_REQUEST_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Closed Date Time</b></em>' attribute.
@@ -123,7 +124,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__CLOSED_DATE_TIME = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 1;
+	int CUST_REQUEST__CLOSED_DATE_TIME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Created By User Login</b></em>' attribute.
@@ -132,7 +133,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__CREATED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 2;
+	int CUST_REQUEST__CREATED_BY_USER_LOGIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Created Date</b></em>' attribute.
@@ -141,7 +142,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__CREATED_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 3;
+	int CUST_REQUEST__CREATED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
@@ -150,7 +151,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__CURRENCY_UOM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 4;
+	int CUST_REQUEST__CURRENCY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Attributes</b></em>' reference list.
@@ -159,7 +160,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__CUST_REQUEST_ATTRIBUTES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 5;
+	int CUST_REQUEST__CUST_REQUEST_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Category Id</b></em>' reference.
@@ -168,7 +169,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__CUST_REQUEST_CATEGORY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 6;
+	int CUST_REQUEST__CUST_REQUEST_CATEGORY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Comm Events</b></em>' reference list.
@@ -177,7 +178,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__CUST_REQUEST_COMM_EVENTS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 7;
+	int CUST_REQUEST__CUST_REQUEST_COMM_EVENTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Date</b></em>' attribute.
@@ -186,7 +187,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__CUST_REQUEST_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 8;
+	int CUST_REQUEST__CUST_REQUEST_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Items</b></em>' reference list.
@@ -195,7 +196,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__CUST_REQUEST_ITEMS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 9;
+	int CUST_REQUEST__CUST_REQUEST_ITEMS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Name</b></em>' attribute.
@@ -204,7 +205,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__CUST_REQUEST_NAME = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 10;
+	int CUST_REQUEST__CUST_REQUEST_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Notes</b></em>' reference list.
@@ -213,7 +214,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__CUST_REQUEST_NOTES = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 11;
+	int CUST_REQUEST__CUST_REQUEST_NOTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Type Id</b></em>' reference.
@@ -222,7 +223,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__CUST_REQUEST_TYPE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 12;
+	int CUST_REQUEST__CUST_REQUEST_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Work Efforts</b></em>' reference list.
@@ -231,7 +232,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__CUST_REQUEST_WORK_EFFORTS = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 13;
+	int CUST_REQUEST__CUST_REQUEST_WORK_EFFORTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -240,7 +241,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 14;
+	int CUST_REQUEST__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>From Party Id</b></em>' reference.
@@ -249,7 +250,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__FROM_PARTY_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 15;
+	int CUST_REQUEST__FROM_PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Fulfill Contact Mech Id</b></em>' reference.
@@ -258,7 +259,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__FULFILL_CONTACT_MECH_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 16;
+	int CUST_REQUEST__FULFILL_CONTACT_MECH_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Internal Comment</b></em>' attribute.
@@ -267,7 +268,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__INTERNAL_COMMENT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 17;
+	int CUST_REQUEST__INTERNAL_COMMENT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified By User Login</b></em>' attribute.
@@ -276,7 +277,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__LAST_MODIFIED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 18;
+	int CUST_REQUEST__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified Date</b></em>' attribute.
@@ -285,7 +286,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__LAST_MODIFIED_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 19;
+	int CUST_REQUEST__LAST_MODIFIED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Maximum Amount Uom Id</b></em>' reference.
@@ -294,7 +295,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__MAXIMUM_AMOUNT_UOM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 20;
+	int CUST_REQUEST__MAXIMUM_AMOUNT_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Open Date Time</b></em>' attribute.
@@ -303,7 +304,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__OPEN_DATE_TIME = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 21;
+	int CUST_REQUEST__OPEN_DATE_TIME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Priority</b></em>' attribute.
@@ -312,7 +313,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__PRIORITY = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 22;
+	int CUST_REQUEST__PRIORITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Id</b></em>' reference.
@@ -321,7 +322,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__PRODUCT_STORE_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 23;
+	int CUST_REQUEST__PRODUCT_STORE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Reason</b></em>' attribute.
@@ -330,7 +331,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__REASON = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 24;
+	int CUST_REQUEST__REASON = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Response Required Date</b></em>' attribute.
@@ -339,7 +340,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__RESPONSE_REQUIRED_DATE = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 25;
+	int CUST_REQUEST__RESPONSE_REQUIRED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Sales Channel Enum Id</b></em>' reference.
@@ -348,7 +349,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__SALES_CHANNEL_ENUM_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 26;
+	int CUST_REQUEST__SALES_CHANNEL_ENUM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -357,7 +358,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST__STATUS_ID = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 27;
+	int CUST_REQUEST__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
 
 	/**
 	 * The number of structural features of the '<em>Cust Request</em>' class.
@@ -366,7 +367,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPED_FEATURE_COUNT + 28;
+	int CUST_REQUEST_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 32;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestAttributeImpl <em>Cust Request Attribute</em>}' class.
@@ -385,7 +386,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ATTRIBUTE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CUST_REQUEST_ATTRIBUTE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -394,7 +395,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ATTRIBUTE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CUST_REQUEST_ATTRIBUTE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -403,7 +404,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ATTRIBUTE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CUST_REQUEST_ATTRIBUTE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -412,7 +413,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ATTRIBUTE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CUST_REQUEST_ATTRIBUTE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Id</b></em>' reference.
@@ -421,7 +422,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ATTRIBUTE__CUST_REQUEST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CUST_REQUEST_ATTRIBUTE__CUST_REQUEST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -430,7 +431,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ATTRIBUTE__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CUST_REQUEST_ATTRIBUTE__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Attr Description</b></em>' attribute.
@@ -439,7 +440,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ATTRIBUTE__ATTR_DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CUST_REQUEST_ATTRIBUTE__ATTR_DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Attr Value</b></em>' attribute.
@@ -448,7 +449,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ATTRIBUTE__ATTR_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int CUST_REQUEST_ATTRIBUTE__ATTR_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Cust Request Attribute</em>' class.
@@ -457,7 +458,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ATTRIBUTE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int CUST_REQUEST_ATTRIBUTE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestCategoryImpl <em>Cust Request Category</em>}' class.
@@ -476,7 +477,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_CATEGORY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CUST_REQUEST_CATEGORY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -485,7 +486,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_CATEGORY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CUST_REQUEST_CATEGORY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -494,7 +495,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_CATEGORY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CUST_REQUEST_CATEGORY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -503,7 +504,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_CATEGORY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CUST_REQUEST_CATEGORY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Category Id</b></em>' attribute.
@@ -512,7 +513,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_CATEGORY__CUST_REQUEST_CATEGORY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CUST_REQUEST_CATEGORY__CUST_REQUEST_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Type Id</b></em>' reference.
@@ -521,7 +522,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_CATEGORY__CUST_REQUEST_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CUST_REQUEST_CATEGORY__CUST_REQUEST_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -530,7 +531,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_CATEGORY__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CUST_REQUEST_CATEGORY__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Cust Request Category</em>' class.
@@ -539,7 +540,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_CATEGORY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int CUST_REQUEST_CATEGORY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestCommEventImpl <em>Cust Request Comm Event</em>}' class.
@@ -558,7 +559,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_COMM_EVENT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CUST_REQUEST_COMM_EVENT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -567,7 +568,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_COMM_EVENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CUST_REQUEST_COMM_EVENT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -576,7 +577,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_COMM_EVENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CUST_REQUEST_COMM_EVENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -585,7 +586,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_COMM_EVENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CUST_REQUEST_COMM_EVENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Id</b></em>' reference.
@@ -594,7 +595,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_COMM_EVENT__CUST_REQUEST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CUST_REQUEST_COMM_EVENT__CUST_REQUEST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Communication Event Id</b></em>' reference.
@@ -603,7 +604,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_COMM_EVENT__COMMUNICATION_EVENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CUST_REQUEST_COMM_EVENT__COMMUNICATION_EVENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Cust Request Comm Event</em>' class.
@@ -612,7 +613,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_COMM_EVENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CUST_REQUEST_COMM_EVENT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestContentImpl <em>Cust Request Content</em>}' class.
@@ -631,7 +632,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_CONTENT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CUST_REQUEST_CONTENT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -640,7 +641,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_CONTENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CUST_REQUEST_CONTENT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -649,7 +650,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_CONTENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CUST_REQUEST_CONTENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -658,7 +659,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_CONTENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CUST_REQUEST_CONTENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Id</b></em>' reference.
@@ -667,7 +668,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_CONTENT__CUST_REQUEST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CUST_REQUEST_CONTENT__CUST_REQUEST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Content Id</b></em>' reference.
@@ -676,7 +677,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_CONTENT__CONTENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CUST_REQUEST_CONTENT__CONTENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -685,7 +686,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_CONTENT__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CUST_REQUEST_CONTENT__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -694,7 +695,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_CONTENT__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int CUST_REQUEST_CONTENT__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Cust Request Content</em>' class.
@@ -703,7 +704,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_CONTENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int CUST_REQUEST_CONTENT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemImpl <em>Cust Request Item</em>}' class.
@@ -722,7 +723,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CUST_REQUEST_ITEM__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -731,7 +732,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CUST_REQUEST_ITEM__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -740,7 +741,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CUST_REQUEST_ITEM__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -749,7 +750,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CUST_REQUEST_ITEM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Id</b></em>' reference.
@@ -758,7 +759,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__CUST_REQUEST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CUST_REQUEST_ITEM__CUST_REQUEST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Item Seq Id</b></em>' attribute.
@@ -767,7 +768,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__CUST_REQUEST_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CUST_REQUEST_ITEM__CUST_REQUEST_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Config Id</b></em>' attribute.
@@ -776,7 +777,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__CONFIG_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CUST_REQUEST_ITEM__CONFIG_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Resolution Id</b></em>' reference.
@@ -785,7 +786,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__CUST_REQUEST_RESOLUTION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int CUST_REQUEST_ITEM__CUST_REQUEST_RESOLUTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -794,7 +795,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int CUST_REQUEST_ITEM__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Maximum Amount</b></em>' attribute.
@@ -803,7 +804,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__MAXIMUM_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int CUST_REQUEST_ITEM__MAXIMUM_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Priority</b></em>' attribute.
@@ -812,7 +813,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__PRIORITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int CUST_REQUEST_ITEM__PRIORITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -821,7 +822,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__PRODUCT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int CUST_REQUEST_ITEM__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -830,7 +831,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__QUANTITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int CUST_REQUEST_ITEM__QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Required By Date</b></em>' attribute.
@@ -839,7 +840,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__REQUIRED_BY_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int CUST_REQUEST_ITEM__REQUIRED_BY_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Reserv Length</b></em>' attribute.
@@ -848,7 +849,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__RESERV_LENGTH = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int CUST_REQUEST_ITEM__RESERV_LENGTH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Reserv Persons</b></em>' attribute.
@@ -857,7 +858,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__RESERV_PERSONS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int CUST_REQUEST_ITEM__RESERV_PERSONS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Reserv Start</b></em>' attribute.
@@ -866,7 +867,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__RESERV_START = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int CUST_REQUEST_ITEM__RESERV_START = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Selected Amount</b></em>' attribute.
@@ -875,7 +876,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__SELECTED_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int CUST_REQUEST_ITEM__SELECTED_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Sequence Num</b></em>' attribute.
@@ -884,7 +885,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__SEQUENCE_NUM = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int CUST_REQUEST_ITEM__SEQUENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -893,7 +894,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int CUST_REQUEST_ITEM__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Story</b></em>' attribute.
@@ -902,7 +903,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM__STORY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int CUST_REQUEST_ITEM__STORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The number of structural features of the '<em>Cust Request Item</em>' class.
@@ -911,7 +912,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 17;
+	int CUST_REQUEST_ITEM_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestItemNoteImpl <em>Cust Request Item Note</em>}' class.
@@ -1012,7 +1013,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM_WORK_EFFORT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CUST_REQUEST_ITEM_WORK_EFFORT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1021,7 +1022,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM_WORK_EFFORT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CUST_REQUEST_ITEM_WORK_EFFORT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1030,7 +1031,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM_WORK_EFFORT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CUST_REQUEST_ITEM_WORK_EFFORT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1039,7 +1040,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM_WORK_EFFORT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CUST_REQUEST_ITEM_WORK_EFFORT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Id</b></em>' reference.
@@ -1048,7 +1049,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM_WORK_EFFORT__CUST_REQUEST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CUST_REQUEST_ITEM_WORK_EFFORT__CUST_REQUEST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -1057,7 +1058,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM_WORK_EFFORT__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CUST_REQUEST_ITEM_WORK_EFFORT__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Item Seq Id</b></em>' attribute.
@@ -1066,7 +1067,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM_WORK_EFFORT__CUST_REQUEST_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CUST_REQUEST_ITEM_WORK_EFFORT__CUST_REQUEST_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Cust Request Item Work Effort</em>' class.
@@ -1075,7 +1076,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_ITEM_WORK_EFFORT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int CUST_REQUEST_ITEM_WORK_EFFORT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestNoteImpl <em>Cust Request Note</em>}' class.
@@ -1167,7 +1168,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_PARTY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CUST_REQUEST_PARTY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1176,7 +1177,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_PARTY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CUST_REQUEST_PARTY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1185,7 +1186,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_PARTY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CUST_REQUEST_PARTY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1194,7 +1195,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_PARTY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CUST_REQUEST_PARTY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Id</b></em>' reference.
@@ -1203,7 +1204,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_PARTY__CUST_REQUEST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CUST_REQUEST_PARTY__CUST_REQUEST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -1212,7 +1213,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_PARTY__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CUST_REQUEST_PARTY__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -1221,7 +1222,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_PARTY__ROLE_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CUST_REQUEST_PARTY__ROLE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1230,7 +1231,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_PARTY__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int CUST_REQUEST_PARTY__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -1239,7 +1240,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_PARTY__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int CUST_REQUEST_PARTY__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Cust Request Party</em>' class.
@@ -1248,7 +1249,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_PARTY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int CUST_REQUEST_PARTY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestResolutionImpl <em>Cust Request Resolution</em>}' class.
@@ -1267,7 +1268,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_RESOLUTION__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CUST_REQUEST_RESOLUTION__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1276,7 +1277,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_RESOLUTION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CUST_REQUEST_RESOLUTION__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1285,7 +1286,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_RESOLUTION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CUST_REQUEST_RESOLUTION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1294,7 +1295,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_RESOLUTION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CUST_REQUEST_RESOLUTION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Resolution Id</b></em>' attribute.
@@ -1303,7 +1304,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_RESOLUTION__CUST_REQUEST_RESOLUTION_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CUST_REQUEST_RESOLUTION__CUST_REQUEST_RESOLUTION_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Type Id</b></em>' reference.
@@ -1312,7 +1313,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_RESOLUTION__CUST_REQUEST_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CUST_REQUEST_RESOLUTION__CUST_REQUEST_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1321,7 +1322,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_RESOLUTION__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CUST_REQUEST_RESOLUTION__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Cust Request Resolution</em>' class.
@@ -1330,7 +1331,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_RESOLUTION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int CUST_REQUEST_RESOLUTION_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestStatusImpl <em>Cust Request Status</em>}' class.
@@ -1349,7 +1350,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_STATUS__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CUST_REQUEST_STATUS__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1358,7 +1359,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_STATUS__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CUST_REQUEST_STATUS__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1367,7 +1368,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_STATUS__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CUST_REQUEST_STATUS__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1376,7 +1377,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_STATUS__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CUST_REQUEST_STATUS__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Status Id</b></em>' attribute.
@@ -1385,7 +1386,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_STATUS__CUST_REQUEST_STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CUST_REQUEST_STATUS__CUST_REQUEST_STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Change By User Login Id</b></em>' reference.
@@ -1394,7 +1395,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_STATUS__CHANGE_BY_USER_LOGIN_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CUST_REQUEST_STATUS__CHANGE_BY_USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Id</b></em>' reference.
@@ -1403,7 +1404,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_STATUS__CUST_REQUEST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CUST_REQUEST_STATUS__CUST_REQUEST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Item Seq Id</b></em>' attribute.
@@ -1412,7 +1413,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_STATUS__CUST_REQUEST_ITEM_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int CUST_REQUEST_STATUS__CUST_REQUEST_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Status Date</b></em>' attribute.
@@ -1421,7 +1422,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_STATUS__STATUS_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int CUST_REQUEST_STATUS__STATUS_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -1430,7 +1431,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_STATUS__STATUS_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int CUST_REQUEST_STATUS__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Cust Request Status</em>' class.
@@ -1439,7 +1440,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_STATUS_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int CUST_REQUEST_STATUS_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestTypeImpl <em>Cust Request Type</em>}' class.
@@ -1458,7 +1459,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_TYPE__SLOTS = BizPackage.BIZ_ENTITY_TYPE__SLOTS;
+	int CUST_REQUEST_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
 
 	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
@@ -1467,7 +1468,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_TYPE__CREATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_STAMP;
+	int CUST_REQUEST_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1476,7 +1477,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_TYPE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__CREATED_TX_STAMP;
+	int CUST_REQUEST_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1485,7 +1486,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_TYPE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_STAMP;
+	int CUST_REQUEST_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1494,7 +1495,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_TYPE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY_TYPE__LAST_UPDATED_TX_STAMP;
+	int CUST_REQUEST_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Type Id</b></em>' attribute.
@@ -1503,7 +1504,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_TYPE__CUST_REQUEST_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 0;
+	int CUST_REQUEST_TYPE__CUST_REQUEST_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Type Attrs</b></em>' reference list.
@@ -1512,7 +1513,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_TYPE__CUST_REQUEST_TYPE_ATTRS = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 1;
+	int CUST_REQUEST_TYPE__CUST_REQUEST_TYPE_ATTRS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1521,7 +1522,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_TYPE__DESCRIPTION = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 2;
+	int CUST_REQUEST_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Has Table</b></em>' attribute.
@@ -1530,7 +1531,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_TYPE__HAS_TABLE = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 3;
+	int CUST_REQUEST_TYPE__HAS_TABLE = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -1539,7 +1540,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_TYPE__PARENT_TYPE_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 4;
+	int CUST_REQUEST_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -1548,7 +1549,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_TYPE__PARTY_ID = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 5;
+	int CUST_REQUEST_TYPE__PARTY_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Cust Request Type</em>' class.
@@ -1557,7 +1558,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_TYPE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_TYPE_FEATURE_COUNT + 6;
+	int CUST_REQUEST_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestTypeAttrImpl <em>Cust Request Type Attr</em>}' class.
@@ -1576,7 +1577,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_TYPE_ATTR__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CUST_REQUEST_TYPE_ATTR__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1585,7 +1586,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_TYPE_ATTR__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CUST_REQUEST_TYPE_ATTR__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1594,7 +1595,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_TYPE_ATTR__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CUST_REQUEST_TYPE_ATTR__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1603,7 +1604,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_TYPE_ATTR__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CUST_REQUEST_TYPE_ATTR__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Type Id</b></em>' reference.
@@ -1612,7 +1613,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_TYPE_ATTR__CUST_REQUEST_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CUST_REQUEST_TYPE_ATTR__CUST_REQUEST_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Attr Name</b></em>' attribute.
@@ -1621,7 +1622,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_TYPE_ATTR__ATTR_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CUST_REQUEST_TYPE_ATTR__ATTR_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1630,7 +1631,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_TYPE_ATTR__DESCRIPTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CUST_REQUEST_TYPE_ATTR__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Cust Request Type Attr</em>' class.
@@ -1639,7 +1640,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_TYPE_ATTR_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int CUST_REQUEST_TYPE_ATTR_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestWorkEffortImpl <em>Cust Request Work Effort</em>}' class.
@@ -1658,7 +1659,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_WORK_EFFORT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int CUST_REQUEST_WORK_EFFORT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1667,7 +1668,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_WORK_EFFORT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int CUST_REQUEST_WORK_EFFORT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1676,7 +1677,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_WORK_EFFORT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int CUST_REQUEST_WORK_EFFORT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1685,7 +1686,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_WORK_EFFORT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int CUST_REQUEST_WORK_EFFORT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Id</b></em>' reference.
@@ -1694,7 +1695,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_WORK_EFFORT__CUST_REQUEST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int CUST_REQUEST_WORK_EFFORT__CUST_REQUEST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Id</b></em>' reference.
@@ -1703,7 +1704,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_WORK_EFFORT__WORK_EFFORT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int CUST_REQUEST_WORK_EFFORT__WORK_EFFORT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Cust Request Work Effort</em>' class.
@@ -1712,7 +1713,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CUST_REQUEST_WORK_EFFORT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int CUST_REQUEST_WORK_EFFORT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.request.impl.RespondingPartyImpl <em>Responding Party</em>}' class.
@@ -1731,7 +1732,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPONDING_PARTY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int RESPONDING_PARTY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1740,7 +1741,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPONDING_PARTY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int RESPONDING_PARTY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1749,7 +1750,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPONDING_PARTY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int RESPONDING_PARTY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1758,7 +1759,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPONDING_PARTY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int RESPONDING_PARTY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Cust Request Id</b></em>' reference.
@@ -1767,7 +1768,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPONDING_PARTY__CUST_REQUEST_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int RESPONDING_PARTY__CUST_REQUEST_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -1776,7 +1777,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPONDING_PARTY__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int RESPONDING_PARTY__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Responding Party Seq Id</b></em>' attribute.
@@ -1785,7 +1786,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPONDING_PARTY__RESPONDING_PARTY_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int RESPONDING_PARTY__RESPONDING_PARTY_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Contact Mech Id</b></em>' reference.
@@ -1794,7 +1795,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPONDING_PARTY__CONTACT_MECH_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int RESPONDING_PARTY__CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Date Sent</b></em>' attribute.
@@ -1803,7 +1804,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPONDING_PARTY__DATE_SENT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int RESPONDING_PARTY__DATE_SENT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Responding Party</em>' class.
@@ -1812,7 +1813,7 @@ public interface RequestPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESPONDING_PARTY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int RESPONDING_PARTY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 
 	/**

@@ -8,8 +8,9 @@
 package org.abchip.mimo.biz.model.product.catalog;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.facility.Facility;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +32,7 @@ import org.abchip.mimo.biz.model.product.facility.Facility;
  * @model annotation="mimo-ent-frame title='Product Catalog Inventory Facility Applicability' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProdCatalogInvFacility extends BizEntity {
+public interface ProdCatalogInvFacility extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Facility Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

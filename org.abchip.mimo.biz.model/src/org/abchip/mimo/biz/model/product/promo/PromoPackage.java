@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.promo;
 
-import org.abchip.mimo.biz.BizPackage;
+import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -78,7 +78,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_PROMO__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +87,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_PROMO__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +96,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_PROMO__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +105,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_PROMO__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Id</b></em>' attribute.
@@ -114,7 +114,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO__PRODUCT_PROMO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_PROMO__PRODUCT_PROMO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Billback Factor</b></em>' attribute.
@@ -123,7 +123,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO__BILLBACK_FACTOR = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_PROMO__BILLBACK_FACTOR = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Created By User Login</b></em>' reference.
@@ -132,7 +132,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO__CREATED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_PROMO__CREATED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Created Date</b></em>' attribute.
@@ -141,7 +141,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO__CREATED_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PRODUCT_PROMO__CREATED_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified By User Login</b></em>' reference.
@@ -150,7 +150,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO__LAST_MODIFIED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PRODUCT_PROMO__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified Date</b></em>' attribute.
@@ -159,7 +159,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO__LAST_MODIFIED_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PRODUCT_PROMO__LAST_MODIFIED_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Override Org Party Id</b></em>' reference.
@@ -168,7 +168,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO__OVERRIDE_ORG_PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PRODUCT_PROMO__OVERRIDE_ORG_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Rules</b></em>' reference list.
@@ -177,7 +177,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO__PRODUCT_PROMO_RULES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PRODUCT_PROMO__PRODUCT_PROMO_RULES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Promo Name</b></em>' attribute.
@@ -186,7 +186,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO__PROMO_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int PRODUCT_PROMO__PROMO_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Promo Text</b></em>' attribute.
@@ -195,7 +195,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO__PROMO_TEXT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int PRODUCT_PROMO__PROMO_TEXT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Require Code</b></em>' attribute.
@@ -204,7 +204,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO__REQUIRE_CODE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int PRODUCT_PROMO__REQUIRE_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Show To Customer</b></em>' attribute.
@@ -213,7 +213,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO__SHOW_TO_CUSTOMER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int PRODUCT_PROMO__SHOW_TO_CUSTOMER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Use Limit Per Customer</b></em>' attribute.
@@ -222,7 +222,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO__USE_LIMIT_PER_CUSTOMER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int PRODUCT_PROMO__USE_LIMIT_PER_CUSTOMER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Use Limit Per Order</b></em>' attribute.
@@ -231,7 +231,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO__USE_LIMIT_PER_ORDER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int PRODUCT_PROMO__USE_LIMIT_PER_ORDER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Use Limit Per Promotion</b></em>' attribute.
@@ -240,7 +240,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO__USE_LIMIT_PER_PROMOTION = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int PRODUCT_PROMO__USE_LIMIT_PER_PROMOTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>User Entered</b></em>' attribute.
@@ -249,7 +249,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO__USER_ENTERED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 15;
+	int PRODUCT_PROMO__USER_ENTERED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The number of structural features of the '<em>Product Promo</em>' class.
@@ -258,7 +258,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 16;
+	int PRODUCT_PROMO_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoActionImpl <em>Product Promo Action</em>}' class.
@@ -277,7 +277,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_ACTION__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_PROMO_ACTION__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -286,7 +286,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_ACTION__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_PROMO_ACTION__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -295,7 +295,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_ACTION__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_PROMO_ACTION__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -304,7 +304,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_ACTION__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_PROMO_ACTION__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Id</b></em>' reference.
@@ -313,7 +313,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_ACTION__PRODUCT_PROMO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_PROMO_ACTION__PRODUCT_PROMO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Action Seq Id</b></em>' attribute.
@@ -322,7 +322,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_ACTION__PRODUCT_PROMO_ACTION_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_PROMO_ACTION__PRODUCT_PROMO_ACTION_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Rule Id</b></em>' attribute.
@@ -331,7 +331,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_ACTION__PRODUCT_PROMO_RULE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_PROMO_ACTION__PRODUCT_PROMO_RULE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Amount</b></em>' attribute.
@@ -340,7 +340,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_ACTION__AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PRODUCT_PROMO_ACTION__AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Custom Method Id</b></em>' reference.
@@ -349,7 +349,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_ACTION__CUSTOM_METHOD_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PRODUCT_PROMO_ACTION__CUSTOM_METHOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Order Adjustment Type Id</b></em>' reference.
@@ -358,7 +358,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_ACTION__ORDER_ADJUSTMENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PRODUCT_PROMO_ACTION__ORDER_ADJUSTMENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
@@ -367,7 +367,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_ACTION__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PRODUCT_PROMO_ACTION__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' attribute.
@@ -376,7 +376,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_ACTION__PRODUCT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PRODUCT_PROMO_ACTION__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Action Enum Id</b></em>' reference.
@@ -385,7 +385,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_ACTION__PRODUCT_PROMO_ACTION_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int PRODUCT_PROMO_ACTION__PRODUCT_PROMO_ACTION_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -394,7 +394,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_ACTION__QUANTITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int PRODUCT_PROMO_ACTION__QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Service Name</b></em>' attribute.
@@ -403,7 +403,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_ACTION__SERVICE_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int PRODUCT_PROMO_ACTION__SERVICE_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Use Cart Quantity</b></em>' attribute.
@@ -412,7 +412,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_ACTION__USE_CART_QUANTITY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int PRODUCT_PROMO_ACTION__USE_CART_QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The number of structural features of the '<em>Product Promo Action</em>' class.
@@ -421,7 +421,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_ACTION_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int PRODUCT_PROMO_ACTION_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCategoryImpl <em>Product Promo Category</em>}' class.
@@ -440,7 +440,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CATEGORY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_PROMO_CATEGORY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -449,7 +449,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CATEGORY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_PROMO_CATEGORY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -458,7 +458,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CATEGORY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_PROMO_CATEGORY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -467,7 +467,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CATEGORY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_PROMO_CATEGORY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Id</b></em>' reference.
@@ -476,7 +476,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CATEGORY__PRODUCT_PROMO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_PROMO_CATEGORY__PRODUCT_PROMO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Product Category Id</b></em>' reference.
@@ -485,7 +485,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CATEGORY__PRODUCT_CATEGORY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_PROMO_CATEGORY__PRODUCT_CATEGORY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>And Group Id</b></em>' attribute.
@@ -494,7 +494,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CATEGORY__AND_GROUP_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_PROMO_CATEGORY__AND_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Action Seq Id</b></em>' attribute.
@@ -503,7 +503,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CATEGORY__PRODUCT_PROMO_ACTION_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PRODUCT_PROMO_CATEGORY__PRODUCT_PROMO_ACTION_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Cond Seq Id</b></em>' attribute.
@@ -512,7 +512,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CATEGORY__PRODUCT_PROMO_COND_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PRODUCT_PROMO_CATEGORY__PRODUCT_PROMO_COND_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Rule Id</b></em>' attribute.
@@ -521,7 +521,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CATEGORY__PRODUCT_PROMO_RULE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PRODUCT_PROMO_CATEGORY__PRODUCT_PROMO_RULE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Include Sub Categories</b></em>' attribute.
@@ -530,7 +530,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CATEGORY__INCLUDE_SUB_CATEGORIES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PRODUCT_PROMO_CATEGORY__INCLUDE_SUB_CATEGORIES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Appl Enum Id</b></em>' reference.
@@ -539,7 +539,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CATEGORY__PRODUCT_PROMO_APPL_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PRODUCT_PROMO_CATEGORY__PRODUCT_PROMO_APPL_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Product Promo Category</em>' class.
@@ -548,7 +548,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CATEGORY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int PRODUCT_PROMO_CATEGORY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodeImpl <em>Product Promo Code</em>}' class.
@@ -567,7 +567,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_PROMO_CODE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -576,7 +576,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_PROMO_CODE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -585,7 +585,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_PROMO_CODE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -594,7 +594,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_PROMO_CODE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Code Id</b></em>' attribute.
@@ -603,7 +603,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE__PRODUCT_PROMO_CODE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_PROMO_CODE__PRODUCT_PROMO_CODE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Created By User Login</b></em>' reference.
@@ -612,7 +612,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE__CREATED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_PROMO_CODE__CREATED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Created Date</b></em>' attribute.
@@ -621,7 +621,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE__CREATED_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_PROMO_CODE__CREATED_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -630,7 +630,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PRODUCT_PROMO_CODE__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified By User Login</b></em>' reference.
@@ -639,7 +639,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE__LAST_MODIFIED_BY_USER_LOGIN = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PRODUCT_PROMO_CODE__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified Date</b></em>' attribute.
@@ -648,7 +648,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE__LAST_MODIFIED_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PRODUCT_PROMO_CODE__LAST_MODIFIED_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Code Emails</b></em>' reference list.
@@ -657,7 +657,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE__PRODUCT_PROMO_CODE_EMAILS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PRODUCT_PROMO_CODE__PRODUCT_PROMO_CODE_EMAILS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Code Parties</b></em>' reference list.
@@ -666,7 +666,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE__PRODUCT_PROMO_CODE_PARTIES = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PRODUCT_PROMO_CODE__PRODUCT_PROMO_CODE_PARTIES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Id</b></em>' reference.
@@ -675,7 +675,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE__PRODUCT_PROMO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int PRODUCT_PROMO_CODE__PRODUCT_PROMO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Require Email Or Party</b></em>' attribute.
@@ -684,7 +684,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE__REQUIRE_EMAIL_OR_PARTY = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 9;
+	int PRODUCT_PROMO_CODE__REQUIRE_EMAIL_OR_PARTY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -693,7 +693,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 10;
+	int PRODUCT_PROMO_CODE__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Use Limit Per Code</b></em>' attribute.
@@ -702,7 +702,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE__USE_LIMIT_PER_CODE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 11;
+	int PRODUCT_PROMO_CODE__USE_LIMIT_PER_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Use Limit Per Customer</b></em>' attribute.
@@ -711,7 +711,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE__USE_LIMIT_PER_CUSTOMER = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 12;
+	int PRODUCT_PROMO_CODE__USE_LIMIT_PER_CUSTOMER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>User Entered</b></em>' attribute.
@@ -720,7 +720,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE__USER_ENTERED = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 13;
+	int PRODUCT_PROMO_CODE__USER_ENTERED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The number of structural features of the '<em>Product Promo Code</em>' class.
@@ -729,7 +729,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 14;
+	int PRODUCT_PROMO_CODE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodeEmailImpl <em>Product Promo Code Email</em>}' class.
@@ -748,7 +748,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE_EMAIL__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_PROMO_CODE_EMAIL__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -757,7 +757,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE_EMAIL__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_PROMO_CODE_EMAIL__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -766,7 +766,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE_EMAIL__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_PROMO_CODE_EMAIL__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -775,7 +775,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE_EMAIL__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_PROMO_CODE_EMAIL__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Code Id</b></em>' reference.
@@ -784,7 +784,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE_EMAIL__PRODUCT_PROMO_CODE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_PROMO_CODE_EMAIL__PRODUCT_PROMO_CODE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Email Address</b></em>' attribute.
@@ -793,7 +793,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE_EMAIL__EMAIL_ADDRESS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_PROMO_CODE_EMAIL__EMAIL_ADDRESS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Product Promo Code Email</em>' class.
@@ -802,7 +802,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE_EMAIL_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_PROMO_CODE_EMAIL_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCodePartyImpl <em>Product Promo Code Party</em>}' class.
@@ -821,7 +821,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE_PARTY__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_PROMO_CODE_PARTY__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -830,7 +830,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE_PARTY__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_PROMO_CODE_PARTY__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -839,7 +839,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE_PARTY__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_PROMO_CODE_PARTY__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -848,7 +848,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE_PARTY__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_PROMO_CODE_PARTY__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Code Id</b></em>' reference.
@@ -857,7 +857,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE_PARTY__PRODUCT_PROMO_CODE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_PROMO_CODE_PARTY__PRODUCT_PROMO_CODE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -866,7 +866,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE_PARTY__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_PROMO_CODE_PARTY__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Product Promo Code Party</em>' class.
@@ -875,7 +875,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CODE_PARTY_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_PROMO_CODE_PARTY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoCondImpl <em>Product Promo Cond</em>}' class.
@@ -894,7 +894,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_COND__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_PROMO_COND__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -903,7 +903,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_COND__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_PROMO_COND__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -912,7 +912,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_COND__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_PROMO_COND__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -921,7 +921,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_COND__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_PROMO_COND__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Id</b></em>' reference.
@@ -930,7 +930,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_COND__PRODUCT_PROMO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_PROMO_COND__PRODUCT_PROMO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Cond Seq Id</b></em>' attribute.
@@ -939,7 +939,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_COND__PRODUCT_PROMO_COND_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_PROMO_COND__PRODUCT_PROMO_COND_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Rule Id</b></em>' attribute.
@@ -948,7 +948,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_COND__PRODUCT_PROMO_RULE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_PROMO_COND__PRODUCT_PROMO_RULE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Cond Value</b></em>' attribute.
@@ -957,7 +957,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_COND__COND_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PRODUCT_PROMO_COND__COND_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Custom Method Id</b></em>' reference.
@@ -966,7 +966,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_COND__CUSTOM_METHOD_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PRODUCT_PROMO_COND__CUSTOM_METHOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Input Param Enum Id</b></em>' reference.
@@ -975,7 +975,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_COND__INPUT_PARAM_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PRODUCT_PROMO_COND__INPUT_PARAM_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Operator Enum Id</b></em>' reference.
@@ -984,7 +984,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_COND__OPERATOR_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PRODUCT_PROMO_COND__OPERATOR_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Other Value</b></em>' attribute.
@@ -993,7 +993,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_COND__OTHER_VALUE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PRODUCT_PROMO_COND__OTHER_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The number of structural features of the '<em>Product Promo Cond</em>' class.
@@ -1002,7 +1002,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_COND_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 8;
+	int PRODUCT_PROMO_COND_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoContentImpl <em>Product Promo Content</em>}' class.
@@ -1021,7 +1021,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CONTENT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_PROMO_CONTENT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1030,7 +1030,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CONTENT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_PROMO_CONTENT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1039,7 +1039,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CONTENT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_PROMO_CONTENT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1048,7 +1048,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CONTENT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_PROMO_CONTENT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Id</b></em>' reference.
@@ -1057,7 +1057,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CONTENT__PRODUCT_PROMO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_PROMO_CONTENT__PRODUCT_PROMO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Content Id</b></em>' reference.
@@ -1066,7 +1066,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CONTENT__CONTENT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_PROMO_CONTENT__CONTENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Content Type Id</b></em>' reference.
@@ -1075,7 +1075,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CONTENT__PRODUCT_PROMO_CONTENT_TYPE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_PROMO_CONTENT__PRODUCT_PROMO_CONTENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>From Date</b></em>' attribute.
@@ -1084,7 +1084,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CONTENT__FROM_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PRODUCT_PROMO_CONTENT__FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Thru Date</b></em>' attribute.
@@ -1093,7 +1093,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CONTENT__THRU_DATE = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PRODUCT_PROMO_CONTENT__THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Product Promo Content</em>' class.
@@ -1102,7 +1102,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_CONTENT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PRODUCT_PROMO_CONTENT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoProductImpl <em>Product Promo Product</em>}' class.
@@ -1121,7 +1121,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_PRODUCT__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_PROMO_PRODUCT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1130,7 +1130,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_PRODUCT__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_PROMO_PRODUCT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1139,7 +1139,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_PRODUCT__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_PROMO_PRODUCT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1148,7 +1148,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_PRODUCT__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_PROMO_PRODUCT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Id</b></em>' reference.
@@ -1157,7 +1157,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_PRODUCT__PRODUCT_PROMO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_PROMO_PRODUCT__PRODUCT_PROMO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -1166,7 +1166,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_PRODUCT__PRODUCT_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_PROMO_PRODUCT__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Action Seq Id</b></em>' attribute.
@@ -1175,7 +1175,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_PRODUCT__PRODUCT_PROMO_ACTION_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_PROMO_PRODUCT__PRODUCT_PROMO_ACTION_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Cond Seq Id</b></em>' attribute.
@@ -1184,7 +1184,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_PRODUCT__PRODUCT_PROMO_COND_SEQ_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PRODUCT_PROMO_PRODUCT__PRODUCT_PROMO_COND_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Rule Id</b></em>' attribute.
@@ -1193,7 +1193,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_PRODUCT__PRODUCT_PROMO_RULE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PRODUCT_PROMO_PRODUCT__PRODUCT_PROMO_RULE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Appl Enum Id</b></em>' reference.
@@ -1202,7 +1202,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_PRODUCT__PRODUCT_PROMO_APPL_ENUM_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PRODUCT_PROMO_PRODUCT__PRODUCT_PROMO_APPL_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Product Promo Product</em>' class.
@@ -1211,7 +1211,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_PRODUCT_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PRODUCT_PROMO_PRODUCT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoRuleImpl <em>Product Promo Rule</em>}' class.
@@ -1230,7 +1230,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_RULE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_PROMO_RULE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1239,7 +1239,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_RULE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_PROMO_RULE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1248,7 +1248,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_RULE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_PROMO_RULE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1257,7 +1257,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_RULE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_PROMO_RULE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Id</b></em>' reference.
@@ -1266,7 +1266,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_RULE__PRODUCT_PROMO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_PROMO_RULE__PRODUCT_PROMO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Rule Id</b></em>' attribute.
@@ -1275,7 +1275,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_RULE__PRODUCT_PROMO_RULE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_PROMO_RULE__PRODUCT_PROMO_RULE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Rule Name</b></em>' attribute.
@@ -1284,7 +1284,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_RULE__RULE_NAME = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_PROMO_RULE__RULE_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Product Promo Rule</em>' class.
@@ -1293,7 +1293,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_RULE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PRODUCT_PROMO_RULE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.promo.impl.ProductPromoUseImpl <em>Product Promo Use</em>}' class.
@@ -1312,7 +1312,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_USE__CREATED_STAMP = BizPackage.BIZ_ENTITY__CREATED_STAMP;
+	int PRODUCT_PROMO_USE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1321,7 +1321,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_USE__CREATED_TX_STAMP = BizPackage.BIZ_ENTITY__CREATED_TX_STAMP;
+	int PRODUCT_PROMO_USE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1330,7 +1330,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_USE__LAST_UPDATED_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_STAMP;
+	int PRODUCT_PROMO_USE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1339,7 +1339,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_USE__LAST_UPDATED_TX_STAMP = BizPackage.BIZ_ENTITY__LAST_UPDATED_TX_STAMP;
+	int PRODUCT_PROMO_USE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Order Id</b></em>' reference.
@@ -1348,7 +1348,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_USE__ORDER_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 0;
+	int PRODUCT_PROMO_USE__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Promo Sequence Id</b></em>' attribute.
@@ -1357,7 +1357,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_USE__PROMO_SEQUENCE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 1;
+	int PRODUCT_PROMO_USE__PROMO_SEQUENCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -1366,7 +1366,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_USE__PARTY_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 2;
+	int PRODUCT_PROMO_USE__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Code Id</b></em>' reference.
@@ -1375,7 +1375,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_USE__PRODUCT_PROMO_CODE_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 3;
+	int PRODUCT_PROMO_USE__PRODUCT_PROMO_CODE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Product Promo Id</b></em>' reference.
@@ -1384,7 +1384,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_USE__PRODUCT_PROMO_ID = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 4;
+	int PRODUCT_PROMO_USE__PRODUCT_PROMO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Quantity Left In Actions</b></em>' attribute.
@@ -1393,7 +1393,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_USE__QUANTITY_LEFT_IN_ACTIONS = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 5;
+	int PRODUCT_PROMO_USE__QUANTITY_LEFT_IN_ACTIONS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Total Discount Amount</b></em>' attribute.
@@ -1402,7 +1402,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_USE__TOTAL_DISCOUNT_AMOUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 6;
+	int PRODUCT_PROMO_USE__TOTAL_DISCOUNT_AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Product Promo Use</em>' class.
@@ -1411,7 +1411,7 @@ public interface PromoPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_PROMO_USE_FEATURE_COUNT = BizPackage.BIZ_ENTITY_FEATURE_COUNT + 7;
+	int PRODUCT_PROMO_USE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 
 	/**

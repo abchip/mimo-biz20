@@ -8,9 +8,10 @@
 package org.abchip.mimo.biz.model.party.party;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.security.securitygroup.SecurityGroup;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -41,7 +42,7 @@ import org.abchip.mimo.biz.model.security.securitygroup.SecurityGroup;
  * @model
  * @generated
  */
-public interface PartyRelationship extends BizEntityTyped<PartyRelationshipType> {
+public interface PartyRelationship extends EntityTyped<PartyRelationshipType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
 	 * <!-- begin-user-doc -->

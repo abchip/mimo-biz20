@@ -10,13 +10,14 @@ package org.abchip.mimo.biz.model.order.return_;
 import java.math.BigDecimal;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntityTyped;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
 import org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct;
 import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.order.order.OrderAdjustment;
 import org.abchip.mimo.biz.model.product.promo.ProductPromo;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -64,7 +65,7 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
  * @model annotation="mimo-ent-frame help='Tax, shipping, and promotional adjustments which are carried over from the order to the return.\n        Note that both includeInTax and includeInShipping should default to true, except in the case where this adjustment is a tax or shipping adjustment\n        then should be ignored.' formula='description'"
  * @generated
  */
-public interface ReturnAdjustment extends BizEntityTyped<ReturnAdjustmentType> {
+public interface ReturnAdjustment extends EntityTyped<ReturnAdjustmentType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Amount</b></em>' attribute.
 	 * <!-- begin-user-doc -->

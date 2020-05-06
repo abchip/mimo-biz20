@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.entity.tenant;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +30,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model annotation="mimo-ent-frame help='There should be one record for each tenant and each group-map for the active delegator.\n            The jdbc fields will override the datasource -&gt; inline-jdbc values for the per-tenant delegator.'"
  * @generated
  */
-public interface TenantDataSource extends BizEntity {
+public interface TenantDataSource extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Entity Group Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -8,7 +8,8 @@
 package org.abchip.mimo.biz.model.webapp.visit;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +38,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model
  * @generated
  */
-public interface ServerHitBin extends BizEntity {
+public interface ServerHitBin extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Server Hit Bin Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

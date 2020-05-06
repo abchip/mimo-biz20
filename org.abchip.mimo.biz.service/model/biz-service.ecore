@@ -232,7 +232,8 @@
       <eStructuralFeatures xsi:type="ecore:EReference" name="product" lowerBound="1"
           eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//product/product/Product"
           containment="true"/>
-      <eStructuralFeatures xsi:type="ecore:EAttribute" name="currencyUomId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="currencyUomId" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
           defaultValueLiteral="@general/currency.uom.id.default"/>
       <eGenericSuperTypes eClassifier="#//BizServiceRequest">
         <eTypeArguments eClassifier="#//product/CalculateProductPriceResponse"/>

@@ -995,7 +995,7 @@ public class ReceiptPackageImpl extends EPackageImpl implements ReceiptPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		InventoryPackage theInventoryPackage = (InventoryPackage)EPackage.Registry.INSTANCE.getEPackage(InventoryPackage.eNS_URI);
 		OrderPackage theOrderPackage = (OrderPackage)EPackage.Registry.INSTANCE.getEPackage(OrderPackage.eNS_URI);
 		ProductPackage theProductPackage = (ProductPackage)EPackage.Registry.INSTANCE.getEPackage(ProductPackage.eNS_URI);
@@ -1008,9 +1008,12 @@ public class ReceiptPackageImpl extends EPackageImpl implements ReceiptPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		rejectionReasonEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		shipmentReceiptEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		shipmentReceiptRoleEClass.getESuperTypes().add(theBizPackage.getBizEntity());
+		rejectionReasonEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		rejectionReasonEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		shipmentReceiptEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		shipmentReceiptEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		shipmentReceiptRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		shipmentReceiptRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(rejectionReasonEClass, RejectionReason.class, "RejectionReason", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

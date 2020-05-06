@@ -7,7 +7,8 @@
  */
 package org.abchip.mimo.biz.model.humanres.trainings;
 
-import org.abchip.mimo.biz.BizEntity;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +26,7 @@ import org.abchip.mimo.biz.BizEntity;
  * @model
  * @generated
  */
-public interface TrainingRequest extends BizEntity {
+public interface TrainingRequest extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Training Request Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

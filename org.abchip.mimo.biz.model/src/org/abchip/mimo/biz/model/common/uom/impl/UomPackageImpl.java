@@ -1102,7 +1102,7 @@ public class UomPackageImpl extends EPackageImpl implements UomPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizPackage theBizPackage = (BizPackage)EPackage.Registry.INSTANCE.getEPackage(BizPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		MethodPackage theMethodPackage = (MethodPackage)EPackage.Registry.INSTANCE.getEPackage(MethodPackage.eNS_URI);
 		EnumPackage theEnumPackage = (EnumPackage)EPackage.Registry.INSTANCE.getEPackage(EnumPackage.eNS_URI);
 
@@ -1111,16 +1111,23 @@ public class UomPackageImpl extends EPackageImpl implements UomPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theBizPackage.getBizEntityTyped());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
 		EGenericType g2 = createEGenericType(this.getUomType());
 		g1.getETypeArguments().add(g2);
 		uomEClass.getEGenericSuperTypes().add(g1);
-		uomConversionEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		uomConversionDatedEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		uomGroupEClass.getESuperTypes().add(theBizPackage.getBizEntity());
-		g1 = createEGenericType(theBizPackage.getBizEntityType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		uomEClass.getEGenericSuperTypes().add(g1);
+		uomConversionEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		uomConversionEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		uomConversionDatedEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		uomConversionDatedEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		uomGroupEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
+		uomGroupEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
 		g2 = createEGenericType(this.getUom());
 		g1.getETypeArguments().add(g2);
+		uomTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
 		uomTypeEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters

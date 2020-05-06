@@ -8,9 +8,10 @@
 package org.abchip.mimo.biz.model.manufacturing.bom;
 
 import java.util.Date;
-import org.abchip.mimo.biz.BizEntity;
 import org.abchip.mimo.biz.model.product.feature.ProductFeature;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityInfo;
 
 /**
  * <!-- begin-user-doc -->
@@ -39,7 +40,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
  * @model annotation="mimo-ent-frame title='Product To Part Rule' formula='description'"
  * @generated
  */
-public interface ProductManufacturingRule extends BizEntity {
+public interface ProductManufacturingRule extends EntityIdentifiable, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Rule Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
