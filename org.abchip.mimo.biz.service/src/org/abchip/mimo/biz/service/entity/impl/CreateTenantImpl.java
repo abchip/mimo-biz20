@@ -195,7 +195,7 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 			LoadSeeds loadSeeds = context.getServiceManager().prepare(LoadSeeds.class);
 			loadSeeds.setTenant(this.getTenantId());
 			loadSeeds.setPattern("seed");
-			loadSeeds.setUpdate(true);
+			loadSeeds.setUpdate(this.isUpdate());
 			context.getServiceManager().execute(loadSeeds);
 		}
 

@@ -119,7 +119,7 @@ public class CreateTenantPartyImpl extends CreateTenantImpl implements CreateTen
 			tenantPerson.setStatusId(context.createProxy(StatusItem.class, "PARTY_ENABLED", this.getTenant()));
 			tenantPerson.setPartyTypeId(context.createProxy(PartyType.class, "PERSON", this.getTenant()));
 			tenantPerson.setFirstName("Tenant " + this.getTenantId());
-			personWriter.create(tenantPerson);
+			personWriter.create(tenantPerson, this.isUpdate());
 		}
 
 		return response;
@@ -131,21 +131,21 @@ public class CreateTenantPartyImpl extends CreateTenantImpl implements CreateTen
 			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setTenant(this.getTenantId());
 			loadSeed.setSeedId("mimo");
-			loadSeed.setUpdate(true);
+			loadSeed.setUpdate(this.isUpdate());
 			context.getServiceManager().execute(loadSeed);
 		}
 		{
 			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setTenant(this.getTenantId());
 			loadSeed.setSeedId("party");
-			loadSeed.setUpdate(true);
+			loadSeed.setUpdate(this.isUpdate());
 			context.getServiceManager().execute(loadSeed);
 		}
 		{
 			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setTenant(this.getTenantId());
 			loadSeed.setSeedId("abchip-biz");
-			loadSeed.setUpdate(true);
+			loadSeed.setUpdate(this.isUpdate());
 			context.getServiceManager().execute(loadSeed);
 		}
 	}

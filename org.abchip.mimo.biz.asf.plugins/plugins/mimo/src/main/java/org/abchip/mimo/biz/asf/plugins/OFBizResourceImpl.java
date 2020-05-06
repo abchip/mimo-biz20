@@ -68,7 +68,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 	@Override
 	public void create(E entity, boolean update) throws ResourceException {
 
-		if (this != entity.getResource()) {
+		if (entity.getResource() != null && this != entity.getResource()) {
 			LOGGER.error("Invalid resource destination ofbiz/{} origin {}", this.getFrame().getName(), entity.getResource());
 			return;
 		}
@@ -79,7 +79,8 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			beganTransaction = TransactionUtil.begin();
 
 			this.doCreate(entity.isa(), entity, update);
-			this.attach(entity);
+			if (entity.getResource() == null)
+				this.attach(entity);
 
 			TransactionUtil.commit(beganTransaction);
 		} catch (GenericEntityException e) {

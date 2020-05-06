@@ -64,21 +64,21 @@ public class CreateTenantTestImpl extends CreateTenantImpl implements CreateTena
 			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setTenant(this.getTenantId());
 			loadSeed.setSeedId("mimo");
-			loadSeed.setUpdate(true);
+			loadSeed.setUpdate(this.isUpdate());
 			context.getServiceManager().execute(loadSeed);
 		}
 		{
 			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setTenant(this.getTenantId());
 			loadSeed.setSeedId("party");
-			loadSeed.setUpdate(true);
+			loadSeed.setUpdate(this.isUpdate());
 			context.getServiceManager().execute(loadSeed);
 		}
 		{
 			LoadSeed loadSeed = context.getServiceManager().prepare(LoadSeed.class);
 			loadSeed.setTenant(this.getTenantId());
 			loadSeed.setSeedId("abchip-tenantTest");
-			loadSeed.setUpdate(true);
+			loadSeed.setUpdate(this.isUpdate());
 			context.getServiceManager().execute(loadSeed);
 		}
 		{
