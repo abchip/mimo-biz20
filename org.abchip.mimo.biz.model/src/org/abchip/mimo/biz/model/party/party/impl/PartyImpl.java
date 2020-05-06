@@ -48,46 +48,26 @@ import org.osgi.service.log.Logger;
  * The following features are implemented:
  * </p>
  * <ul>
- * <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyId
- * <em>Party Id</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getCreatedByUserLogin
- * <em>Created By User Login</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getCreatedDate
- * <em>Created Date</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getDataSourceId
- * <em>Data Source Id</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getDescription
- * <em>Description</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getExternalId
- * <em>External Id</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getIsUnread
- * <em>Is Unread</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getLastModifiedByUserLogin
- * <em>Last Modified By User Login</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getLastModifiedDate
- * <em>Last Modified Date</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyAttributes
- * <em>Party Attributes</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyIdentifications
- * <em>Party Identifications</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyNameHistories
- * <em>Party Name Histories</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyNotes
- * <em>Party Notes</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyProfileDefaults
- * <em>Party Profile Defaults</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyRoles
- * <em>Party Roles</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartySkills
- * <em>Party Skills</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyTypeId
- * <em>Party Type Id</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPreferredCurrencyUomId
- * <em>Preferred Currency Uom Id</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getStatusId
- * <em>Status Id</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getSupplierProductFeatures
- * <em>Supplier Product Features</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getCreatedDate <em>Created Date</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getDataSourceId <em>Data Source Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getDescription <em>Description</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getExternalId <em>External Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getIsUnread <em>Is Unread</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyAttributes <em>Party Attributes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyIdentifications <em>Party Identifications</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyNameHistories <em>Party Name Histories</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyNotes <em>Party Notes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyProfileDefaults <em>Party Profile Defaults</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyRoles <em>Party Roles</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartySkills <em>Party Skills</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyTypeId <em>Party Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPreferredCurrencyUomId <em>Preferred Currency Uom Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getStatusId <em>Status Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getSupplierProductFeatures <em>Supplier Product Features</em>}</li>
  * </ul>
  *
  * @generated
@@ -98,7 +78,6 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected PartyImpl() {
@@ -107,7 +86,6 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -117,17 +95,15 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public UserLogin getCreatedByUserLogin() {
-		return (UserLogin) eGet(PartyPackage.Literals.PARTY__CREATED_BY_USER_LOGIN, true);
+		return (UserLogin)eGet(PartyPackage.Literals.PARTY__CREATED_BY_USER_LOGIN, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -137,17 +113,15 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public Date getCreatedDate() {
-		return (Date) eGet(PartyPackage.Literals.PARTY__CREATED_DATE, true);
+		return (Date)eGet(PartyPackage.Literals.PARTY__CREATED_DATE, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -157,17 +131,15 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public DataSource getDataSourceId() {
-		return (DataSource) eGet(PartyPackage.Literals.PARTY__DATA_SOURCE_ID, true);
+		return (DataSource)eGet(PartyPackage.Literals.PARTY__DATA_SOURCE_ID, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -177,17 +149,15 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public String getDescription() {
-		return (String) eGet(PartyPackage.Literals.PARTY__DESCRIPTION, true);
+		return (String)eGet(PartyPackage.Literals.PARTY__DESCRIPTION, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -197,17 +167,15 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public String getExternalId() {
-		return (String) eGet(PartyPackage.Literals.PARTY__EXTERNAL_ID, true);
+		return (String)eGet(PartyPackage.Literals.PARTY__EXTERNAL_ID, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -217,17 +185,15 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public Boolean getIsUnread() {
-		return (Boolean) eGet(PartyPackage.Literals.PARTY__IS_UNREAD, true);
+		return (Boolean)eGet(PartyPackage.Literals.PARTY__IS_UNREAD, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -237,17 +203,15 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public UserLogin getLastModifiedByUserLogin() {
-		return (UserLogin) eGet(PartyPackage.Literals.PARTY__LAST_MODIFIED_BY_USER_LOGIN, true);
+		return (UserLogin)eGet(PartyPackage.Literals.PARTY__LAST_MODIFIED_BY_USER_LOGIN, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -257,17 +221,15 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public Date getLastModifiedDate() {
-		return (Date) eGet(PartyPackage.Literals.PARTY__LAST_MODIFIED_DATE, true);
+		return (Date)eGet(PartyPackage.Literals.PARTY__LAST_MODIFIED_DATE, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -277,94 +239,85 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<PartyAttribute> getPartyAttributes() {
-		return (List<PartyAttribute>) eGet(PartyPackage.Literals.PARTY__PARTY_ATTRIBUTES, true);
+		return (List<PartyAttribute>)eGet(PartyPackage.Literals.PARTY__PARTY_ATTRIBUTES, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<PartyIdentification> getPartyIdentifications() {
-		return (List<PartyIdentification>) eGet(PartyPackage.Literals.PARTY__PARTY_IDENTIFICATIONS, true);
+		return (List<PartyIdentification>)eGet(PartyPackage.Literals.PARTY__PARTY_IDENTIFICATIONS, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<PartyNameHistory> getPartyNameHistories() {
-		return (List<PartyNameHistory>) eGet(PartyPackage.Literals.PARTY__PARTY_NAME_HISTORIES, true);
+		return (List<PartyNameHistory>)eGet(PartyPackage.Literals.PARTY__PARTY_NAME_HISTORIES, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<PartyNote> getPartyNotes() {
-		return (List<PartyNote>) eGet(PartyPackage.Literals.PARTY__PARTY_NOTES, true);
+		return (List<PartyNote>)eGet(PartyPackage.Literals.PARTY__PARTY_NOTES, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<PartyProfileDefault> getPartyProfileDefaults() {
-		return (List<PartyProfileDefault>) eGet(PartyPackage.Literals.PARTY__PARTY_PROFILE_DEFAULTS, true);
+		return (List<PartyProfileDefault>)eGet(PartyPackage.Literals.PARTY__PARTY_PROFILE_DEFAULTS, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<PartyRole> getPartyRoles() {
-		return (List<PartyRole>) eGet(PartyPackage.Literals.PARTY__PARTY_ROLES, true);
+		return (List<PartyRole>)eGet(PartyPackage.Literals.PARTY__PARTY_ROLES, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<PartySkill> getPartySkills() {
-		return (List<PartySkill>) eGet(PartyPackage.Literals.PARTY__PARTY_SKILLS, true);
+		return (List<PartySkill>)eGet(PartyPackage.Literals.PARTY__PARTY_SKILLS, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public Uom getPreferredCurrencyUomId() {
-		return (Uom) eGet(PartyPackage.Literals.PARTY__PREFERRED_CURRENCY_UOM_ID, true);
+		return (Uom)eGet(PartyPackage.Literals.PARTY__PREFERRED_CURRENCY_UOM_ID, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -374,17 +327,15 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public StatusItem getStatusId() {
-		return (StatusItem) eGet(PartyPackage.Literals.PARTY__STATUS_ID, true);
+		return (StatusItem)eGet(PartyPackage.Literals.PARTY__STATUS_ID, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -394,13 +345,12 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<SupplierProductFeature> getSupplierProductFeatures() {
-		return (List<SupplierProductFeature>) eGet(PartyPackage.Literals.PARTY__SUPPLIER_PRODUCT_FEATURES, true);
+		return (List<SupplierProductFeature>)eGet(PartyPackage.Literals.PARTY__SUPPLIER_PRODUCT_FEATURES, true);
 	}
 
 	/**
@@ -557,17 +507,15 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public PartyType getPartyTypeId() {
-		return (PartyType) eGet(PartyPackage.Literals.PARTY__PARTY_TYPE_ID, true);
+		return (PartyType)eGet(PartyPackage.Literals.PARTY__PARTY_TYPE_ID, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -577,17 +525,15 @@ public class PartyImpl extends BizEntityTypedImpl<PartyType> implements Party {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public String getPartyId() {
-		return (String) eGet(PartyPackage.Literals.PARTY__PARTY_ID, true);
+		return (String)eGet(PartyPackage.Literals.PARTY__PARTY_ID, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override

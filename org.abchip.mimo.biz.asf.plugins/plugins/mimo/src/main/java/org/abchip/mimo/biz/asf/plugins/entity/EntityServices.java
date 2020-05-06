@@ -51,6 +51,7 @@ import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EGenericType;
+import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 import org.eclipse.emf.ecore.EStructuralFeature;
@@ -70,35 +71,77 @@ public class EntityServices {
 		Delegator delegator = dctx.getDelegator();
 		ModelReader modelReader = delegator.getModelReader();
 
-		List<ModelForm> forms = FormUtils.loadEntityForms(dctx, modelReader);
-
 		try {
-
-			EPackage bizPackage = buildBizPackage(delegator, forms);
-
+			List<ModelForm> forms = FormUtils.loadEntityForms(dctx, modelReader);
 			Set<String> entityNames = ModelUtils.findEntityNames(modelReader, null);
 
+			EPackage bizPackage = buildBizPackage(delegator, forms);
 			setFrameSuper(delegator, bizPackage, entityNames);
-
 			setTextable(modelReader, bizPackage, entityNames);
-
 			setReferences(modelReader, bizPackage, entityNames);
-
 			setIndicators(bizPackage, context, modelReader, entityNames, forms);
-
 			addRoutes(delegator, forms, bizPackage, entityNames);
-
 			reorderFeatures(bizPackage, entityNames);
 
-			writePackage(bizPackage, context);
+			if (setVariations(Frames.getEClassifiers(), bizPackage))
+				LOGGER.warn("Differences found on model");
 
-			Map<String, Object> resultMap = ServiceUtil.returnSuccess("OK");
+			bizPackage = writePackage(bizPackage, context);
 
-			return resultMap;
-		} catch (GenericEntityException e) {
+			return ServiceUtil.returnSuccess("OK");
+		} catch (Exception e) {
 			Map<String, Object> resultMap = ServiceUtil.returnError(e.getMessage());
 			return resultMap;
 		}
+	}
+
+	private static boolean setVariations(Map<String, EClassifier> bizModels, EPackage newEPackage) {
+
+		boolean result = false;
+
+		for (EClassifier eClassifier : newEPackage.getEClassifiers()) {
+			if (setEClassifierVariations(bizModels, eClassifier))
+				result = true;
+		}
+
+		for (EPackage ePackage : newEPackage.getESubpackages()) {
+			if (setVariations(bizModels, ePackage))
+				result = true;
+		}
+
+		return result;
+	}
+
+	private static boolean setEClassifierVariations(Map<String, EClassifier> srcEClassifiers, EClassifier dstEClassifier) {
+
+		EClassifier srcEClassifier = srcEClassifiers.get(dstEClassifier.getName());
+		if (srcEClassifier == null) {
+			LOGGER.info("New classifier " + dstEClassifier);
+			return false;
+		}
+
+		if (!(srcEClassifier instanceof EClass))
+			return false;
+
+		EClass dstEClass = (EClass) dstEClassifier;
+		EClass srcEClass = (EClass) srcEClassifier;
+
+		boolean result = false;
+		for (EOperation srcEOperation : srcEClass.getEOperations()) {
+			EPackage srcEPackage = srcEClass.getEPackage();
+			EPackage dstEPackage = dstEClass.getEPackage();
+			for (EAnnotation srcEAnnotation : srcEPackage.getEAnnotations()) {
+				EAnnotation dstEAnnotation = dstEPackage.getEAnnotation(srcEAnnotation.getSource());
+				if(dstEAnnotation == null) {
+					dstEAnnotation = EcoreUtils.copy(srcEAnnotation);
+					dstEPackage.getEAnnotations().add(dstEAnnotation);
+				}
+			}
+			dstEClass.getEOperations().add(EcoreUtils.copy(srcEOperation));
+			result = true;
+		}
+
+		return result;
 	}
 
 	private static EPackage buildBizPackage(Delegator delegator, List<ModelForm> forms) throws GenericEntityException {
@@ -158,7 +201,7 @@ public class EntityServices {
 		String moduleUri = sb.toString();
 
 		// root package
-		EPackage modulePackage = findESubPackage(bizPackage, packageTokens[3]);
+		EPackage modulePackage = Frames.getEPackage(bizPackage, packageTokens[3], false);
 		if (modulePackage == null) {
 			modulePackage = EcoreUtils.buildEPackage(bizPackage, packageTokens[3]);
 			bizPackage.getESubpackages().add(modulePackage);
@@ -175,20 +218,6 @@ public class EntityServices {
 		}
 
 		return workPackage;
-	}
-
-	private static EPackage findESubPackage(EPackage relativePackage, String subPackageName) {
-
-		EPackage ePackage = null;
-
-		for (EPackage ePack : relativePackage.getESubpackages()) {
-			if (ePack.getName().equals(subPackageName)) {
-				ePackage = ePack;
-				break;
-			}
-		}
-
-		return ePackage;
 	}
 
 	private static void loadTypes(Delegator delegator, List<ModelForm> forms, EPackage eWorkPackage, Set<String> entityNames) throws GenericEntityException {
@@ -592,7 +621,7 @@ public class EntityServices {
 						if (eEnum != null)
 							eClass.getEPackage().getESuperPackage().getEClassifiers().add(eEnum);
 					} else {
-						EPackage ePackage = Frames.getEPackage(bizPackage, "common");
+						EPackage ePackage = Frames.getEPackage(bizPackage, "common", true);
 						ePackage.getEClassifiers().add(eEnum);
 					}
 
@@ -756,7 +785,7 @@ public class EntityServices {
 		}
 	}
 
-	private static void writePackage(EPackage bizPackage, Map<String, Object> context) {
+	private static EPackage writePackage(EPackage bizPackage, Map<String, Object> context) throws Exception {
 
 		ResourceSet resourceSet = new ResourceSetImpl();
 		resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("ecore", new EcoreResourceFactoryImpl());
@@ -771,9 +800,12 @@ public class EntityServices {
 			resource.save(fos, null);
 
 			replaceFileReferences(file);
-		} catch (IOException e) {
-			LOGGER.error(e.getMessage());
 		}
+
+		resource = resourceSet.getResource(URI.createFileURI(file.getAbsolutePath()), true);
+		bizPackage = (EPackage) resource.getContents().get(0);
+		return bizPackage;
+
 	}
 
 	private static void replaceFileReferences(File file) throws IOException {
@@ -789,6 +821,13 @@ public class EntityServices {
 				line = line.replaceFirst("biz-model.ecore#//", "#//");
 				line = line.replaceFirst("http://www.abchip.org/mimo/biz#//", "../../org.abchip.mimo.biz.core/model/biz.ecore#//");
 				line = line.replaceFirst("http://www.abchip.org/mimo#//", "../../org.abchip.mimo.core/model/mimo.ecore#//");
+
+				// from original model
+				int p = line.indexOf("ecore:EClass http://www.abchip.org/mimo/biz/model/");
+				if (p != -1) {
+					line = line.replaceFirst("ecore:EClass http://www.abchip.org/mimo/biz/model/", "#//");
+					line = line.substring(0, p + 3) + line.substring(p + 3).replaceFirst("#//", "/");
+				}
 
 				stringBuilder.append(line);
 				stringBuilder.append(ls);

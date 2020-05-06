@@ -40,14 +40,41 @@ import org.eclipse.emf.ecore.EEnum;
 import org.eclipse.emf.ecore.EEnumLiteral;
 import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EModelElement;
+import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EcoreFactory;
 import org.eclipse.emf.ecore.EcorePackage;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.osgi.service.log.Logger;
 
 public class EcoreUtils {
 
 	private static final Logger LOGGER = Logs.getLogger(EcoreUtils.class);
+
+	public static EAnnotation copy(EAnnotation eAnnotation) {
+		return EcoreUtil.copy(eAnnotation);
+	}
+
+	public static EOperation copy(EOperation eOperation) {
+
+		return EcoreUtil.copy(eOperation);
+
+		/*
+		 * EOperation result = EcoreFactory.eINSTANCE.createEOperation();
+		 * 
+		 * result.setEGenericType(eOperation.getEGenericType());
+		 * result.setEType(eOperation.getEType());
+		 * result.setLowerBound(eOperation.getLowerBound());
+		 * result.setName(eOperation.getName());
+		 * result.setOrdered(eOperation.isOrdered());
+		 * result.setUnique(eOperation.isUnique());
+		 * result.setUpperBound(eOperation.getUpperBound());
+		 * result.getEAnnotations().addAll(EcoreUtil.copyAll(eOperation.getEAnnotations(
+		 * )));
+		 * 
+		 * return result;
+		 */
+	}
 
 	public static String packageToName(EPackage ePackage) {
 
@@ -59,7 +86,7 @@ public class EcoreUtils {
 
 		return sb.toString();
 	}
-	
+
 	public static EPackage buildEPackage(EPackage eRootPackage, String packageName) {
 
 		EcoreFactory ecoreFactory = EcoreFactory.eINSTANCE;
@@ -265,7 +292,7 @@ public class EcoreUtils {
 
 		EAttribute eAttribute = ecoreFactory.createEAttribute();
 		eAttribute.setName(modelField.getName());
-		
+
 		if (modelField.getIsPk()) {
 			if (modelField.getModelEntity().getPksSize() == 1)
 				eAttribute.setID(true);
@@ -287,8 +314,9 @@ public class EcoreUtils {
 
 			// TODO
 			if (modelField.getDescription().trim().toLowerCase().contains("calculated")) {
-//				System.out.println(modelField.getModelEntity().getEntityName() + "." + modelField.getName());
-//				System.out.println(modelField.getDescription());
+				// System.out.println(modelField.getModelEntity().getEntityName() + "." +
+				// modelField.getName());
+				// System.out.println(modelField.getDescription());
 			}
 		}
 

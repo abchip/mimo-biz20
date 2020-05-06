@@ -8,7 +8,6 @@
  */
 package org.abchip.mimo.biz.asf.plugins.entity;
 
-import java.io.IOException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -233,7 +232,7 @@ public class FormUtils {
 		return enumType;
 	}
 
-	public static List<ModelForm> loadEntityForms(DispatchContext dctx, ModelReader modelReader) {
+	public static List<ModelForm> loadEntityForms(DispatchContext dctx, ModelReader modelReader) throws Exception {
 
 		List<ModelForm> forms = new ArrayList<ModelForm>();
 
@@ -250,7 +249,7 @@ public class FormUtils {
 		return forms;
 	}
 
-	private static void loadEntityForms(ComponentConfig componentConfig, Path root, List<ModelForm> forms, ModelReader modelReader, DispatchContext dctx) {
+	private static void loadEntityForms(ComponentConfig componentConfig, Path root, List<ModelForm> forms, ModelReader modelReader, DispatchContext dctx) throws Exception {
 
 		String componentName = componentConfig.getGlobalName();
 		String rootComponentPath = componentConfig.getRootLocation();
@@ -277,8 +276,6 @@ public class FormUtils {
 					}
 				}
 			}
-		} catch (IOException e) {
-			throw new RuntimeException(e);
 		}
 	}
 }

@@ -22,16 +22,11 @@ import org.eclipse.emf.ecore.EClass;
  * The following features are implemented:
  * </p>
  * <ul>
- * <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantImpl#getTenantId
- * <em>Tenant Id</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantImpl#getDisabled
- * <em>Disabled</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantImpl#getInitialPath
- * <em>Initial Path</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantImpl#getTenantDataSources
- * <em>Tenant Data Sources</em>}</li>
- * <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantImpl#getTenantName
- * <em>Tenant Name</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantImpl#getTenantId <em>Tenant Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantImpl#getDisabled <em>Disabled</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantImpl#getInitialPath <em>Initial Path</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantImpl#getTenantDataSources <em>Tenant Data Sources</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.tenant.impl.TenantImpl#getTenantName <em>Tenant Name</em>}</li>
  * </ul>
  *
  * @generated
@@ -40,7 +35,6 @@ public class TenantImpl extends BizEntityImpl implements Tenant {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	protected TenantImpl() {
@@ -49,7 +43,6 @@ public class TenantImpl extends BizEntityImpl implements Tenant {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -59,17 +52,15 @@ public class TenantImpl extends BizEntityImpl implements Tenant {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public String getInitialPath() {
-		return (String) eGet(TenantPackage.Literals.TENANT__INITIAL_PATH, true);
+		return (String)eGet(TenantPackage.Literals.TENANT__INITIAL_PATH, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -79,28 +70,25 @@ public class TenantImpl extends BizEntityImpl implements Tenant {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<TenantDataSource> getTenantDataSources() {
-		return (List<TenantDataSource>) eGet(TenantPackage.Literals.TENANT__TENANT_DATA_SOURCES, true);
+		return (List<TenantDataSource>)eGet(TenantPackage.Literals.TENANT__TENANT_DATA_SOURCES, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public String getTenantId() {
-		return (String) eGet(TenantPackage.Literals.TENANT__TENANT_ID, true);
+		return (String)eGet(TenantPackage.Literals.TENANT__TENANT_ID, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -110,17 +98,15 @@ public class TenantImpl extends BizEntityImpl implements Tenant {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public Boolean getDisabled() {
-		return (Boolean) eGet(TenantPackage.Literals.TENANT__DISABLED, true);
+		return (Boolean)eGet(TenantPackage.Literals.TENANT__DISABLED, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
@@ -130,17 +116,15 @@ public class TenantImpl extends BizEntityImpl implements Tenant {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
 	public String getTenantName() {
-		return (String) eGet(TenantPackage.Literals.TENANT__TENANT_NAME, true);
+		return (String)eGet(TenantPackage.Literals.TENANT__TENANT_NAME, true);
 	}
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
 	 * @generated
 	 */
 	@Override
