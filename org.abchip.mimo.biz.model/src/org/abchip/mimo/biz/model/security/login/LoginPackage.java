@@ -7,6 +7,7 @@
  */
 package org.abchip.mimo.biz.model.security.login;
 
+import org.abchip.mimo.context.ContextPackage;
 import org.abchip.mimo.entity.EntityPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -78,7 +79,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
+	int USER_LOGIN__CREATED_STAMP = ContextPackage.USER_PROFILE__CREATED_STAMP;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +88,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
+	int USER_LOGIN__CREATED_TX_STAMP = ContextPackage.USER_PROFILE__CREATED_TX_STAMP;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +97,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
+	int USER_LOGIN__LAST_UPDATED_STAMP = ContextPackage.USER_PROFILE__LAST_UPDATED_STAMP;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +106,25 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
+	int USER_LOGIN__LAST_UPDATED_TX_STAMP = ContextPackage.USER_PROFILE__LAST_UPDATED_TX_STAMP;
+
+	/**
+	 * The feature id for the '<em><b>Job Description Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_LOGIN__JOB_DESCRIPTION_ID = ContextPackage.USER_PROFILE__JOB_DESCRIPTION_ID;
+
+	/**
+	 * The feature id for the '<em><b>User Class</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_LOGIN__USER_CLASS = ContextPackage.USER_PROFILE__USER_CLASS;
 
 	/**
 	 * The feature id for the '<em><b>User Login Id</b></em>' attribute.
@@ -114,7 +133,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int USER_LOGIN__USER_LOGIN_ID = ContextPackage.USER_PROFILE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Current Password</b></em>' attribute.
@@ -123,7 +142,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__CURRENT_PASSWORD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int USER_LOGIN__CURRENT_PASSWORD = ContextPackage.USER_PROFILE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Disabled By</b></em>' attribute.
@@ -132,7 +151,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__DISABLED_BY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int USER_LOGIN__DISABLED_BY = ContextPackage.USER_PROFILE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Disabled Date Time</b></em>' attribute.
@@ -141,7 +160,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__DISABLED_DATE_TIME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int USER_LOGIN__DISABLED_DATE_TIME = ContextPackage.USER_PROFILE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Enabled</b></em>' attribute.
@@ -150,7 +169,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__ENABLED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int USER_LOGIN__ENABLED = ContextPackage.USER_PROFILE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>External Auth Id</b></em>' attribute.
@@ -159,7 +178,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__EXTERNAL_AUTH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int USER_LOGIN__EXTERNAL_AUTH_ID = ContextPackage.USER_PROFILE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Has Logged Out</b></em>' attribute.
@@ -168,7 +187,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__HAS_LOGGED_OUT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
+	int USER_LOGIN__HAS_LOGGED_OUT = ContextPackage.USER_PROFILE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Is System</b></em>' attribute.
@@ -177,7 +196,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__IS_SYSTEM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int USER_LOGIN__IS_SYSTEM = ContextPackage.USER_PROFILE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Last Currency Uom</b></em>' attribute.
@@ -186,7 +205,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__LAST_CURRENCY_UOM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
+	int USER_LOGIN__LAST_CURRENCY_UOM = ContextPackage.USER_PROFILE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Last Locale</b></em>' attribute.
@@ -195,7 +214,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__LAST_LOCALE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
+	int USER_LOGIN__LAST_LOCALE = ContextPackage.USER_PROFILE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Last Time Zone</b></em>' attribute.
@@ -204,7 +223,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__LAST_TIME_ZONE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
+	int USER_LOGIN__LAST_TIME_ZONE = ContextPackage.USER_PROFILE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -213,7 +232,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
+	int USER_LOGIN__PARTY_ID = ContextPackage.USER_PROFILE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Password Hint</b></em>' attribute.
@@ -222,7 +241,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__PASSWORD_HINT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
+	int USER_LOGIN__PASSWORD_HINT = ContextPackage.USER_PROFILE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Require Password Change</b></em>' attribute.
@@ -231,7 +250,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__REQUIRE_PASSWORD_CHANGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
+	int USER_LOGIN__REQUIRE_PASSWORD_CHANGE = ContextPackage.USER_PROFILE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Successive Failed Logins</b></em>' attribute.
@@ -240,7 +259,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__SUCCESSIVE_FAILED_LOGINS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
+	int USER_LOGIN__SUCCESSIVE_FAILED_LOGINS = ContextPackage.USER_PROFILE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>User Ldap Dn</b></em>' attribute.
@@ -249,7 +268,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__USER_LDAP_DN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
+	int USER_LOGIN__USER_LDAP_DN = ContextPackage.USER_PROFILE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>User Login Histories</b></em>' reference list.
@@ -258,7 +277,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__USER_LOGIN_HISTORIES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
+	int USER_LOGIN__USER_LOGIN_HISTORIES = ContextPackage.USER_PROFILE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>User Login Password Histories</b></em>' reference list.
@@ -267,7 +286,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__USER_LOGIN_PASSWORD_HISTORIES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
+	int USER_LOGIN__USER_LOGIN_PASSWORD_HISTORIES = ContextPackage.USER_PROFILE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>User Preferences</b></em>' reference list.
@@ -276,7 +295,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__USER_PREFERENCES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
+	int USER_LOGIN__USER_PREFERENCES = ContextPackage.USER_PROFILE_FEATURE_COUNT + 18;
 
 	/**
 	 * The number of structural features of the '<em>User Login</em>' class.
@@ -285,7 +304,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 23;
+	int USER_LOGIN_FEATURE_COUNT = ContextPackage.USER_PROFILE_FEATURE_COUNT + 19;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl <em>User Login History</em>}' class.

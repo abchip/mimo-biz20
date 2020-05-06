@@ -7,7 +7,6 @@
  */
 package org.abchip.mimo.biz.service.product;
 
-import org.abchip.mimo.biz.service.BizServicePackage;
 import org.abchip.mimo.service.ServicePackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -99,7 +98,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALC_TAX_FOR_DISPLAY__LOCALE = BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE;
+	int CALC_TAX_FOR_DISPLAY__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
 
 	/**
 	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
@@ -108,7 +107,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALC_TAX_FOR_DISPLAY__TENANT = BizServicePackage.BIZ_SERVICE_REQUEST__TENANT;
+	int CALC_TAX_FOR_DISPLAY__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
@@ -117,16 +116,16 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALC_TAX_FOR_DISPLAY__CONTEXT = BizServicePackage.BIZ_SERVICE_REQUEST__CONTEXT;
+	int CALC_TAX_FOR_DISPLAY__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CALC_TAX_FOR_DISPLAY__USER_LOGIN = BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN;
+	int CALC_TAX_FOR_DISPLAY__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Base Price</b></em>' attribute.
@@ -135,7 +134,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALC_TAX_FOR_DISPLAY__BASE_PRICE = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 0;
+	int CALC_TAX_FOR_DISPLAY__BASE_PRICE = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Bill To Party Id</b></em>' attribute.
@@ -144,7 +143,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALC_TAX_FOR_DISPLAY__BILL_TO_PARTY_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 1;
+	int CALC_TAX_FOR_DISPLAY__BILL_TO_PARTY_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' attribute.
@@ -153,7 +152,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALC_TAX_FOR_DISPLAY__PRODUCT_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 2;
+	int CALC_TAX_FOR_DISPLAY__PRODUCT_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Id</b></em>' attribute.
@@ -162,7 +161,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALC_TAX_FOR_DISPLAY__PRODUCT_STORE_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 3;
+	int CALC_TAX_FOR_DISPLAY__PRODUCT_STORE_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -171,7 +170,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALC_TAX_FOR_DISPLAY__QUANTITY = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 4;
+	int CALC_TAX_FOR_DISPLAY__QUANTITY = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Shipping Price</b></em>' attribute.
@@ -180,7 +179,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALC_TAX_FOR_DISPLAY__SHIPPING_PRICE = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 5;
+	int CALC_TAX_FOR_DISPLAY__SHIPPING_PRICE = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Calc Tax For Display</em>' class.
@@ -189,7 +188,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALC_TAX_FOR_DISPLAY_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 6;
+	int CALC_TAX_FOR_DISPLAY_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.service.product.impl.CalcTaxForDisplayResponseImpl <em>Calc Tax For Display Response</em>}' class.
@@ -280,7 +279,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE__LOCALE = BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE;
+	int CALCULATE_PRODUCT_PRICE__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
 
 	/**
 	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
@@ -289,7 +288,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE__TENANT = BizServicePackage.BIZ_SERVICE_REQUEST__TENANT;
+	int CALCULATE_PRODUCT_PRICE__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
@@ -298,16 +297,16 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE__CONTEXT = BizServicePackage.BIZ_SERVICE_REQUEST__CONTEXT;
+	int CALCULATE_PRODUCT_PRICE__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE__USER_LOGIN = BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN;
+	int CALCULATE_PRODUCT_PRICE__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Product</b></em>' containment reference.
@@ -316,7 +315,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE__PRODUCT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 0;
+	int CALCULATE_PRODUCT_PRICE__PRODUCT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Currency Uom Id</b></em>' attribute.
@@ -325,7 +324,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE__CURRENCY_UOM_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 1;
+	int CALCULATE_PRODUCT_PRICE__CURRENCY_UOM_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Calculate Product Price</em>' class.
@@ -334,7 +333,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CALCULATE_PRODUCT_PRICE_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 2;
+	int CALCULATE_PRODUCT_PRICE_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Error</b></em>' attribute.
@@ -435,7 +434,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GET_PRODUCT_DEFAULT__LOCALE = BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE;
+	int GET_PRODUCT_DEFAULT__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
 
 	/**
 	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
@@ -444,7 +443,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GET_PRODUCT_DEFAULT__TENANT = BizServicePackage.BIZ_SERVICE_REQUEST__TENANT;
+	int GET_PRODUCT_DEFAULT__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
@@ -453,16 +452,16 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GET_PRODUCT_DEFAULT__CONTEXT = BizServicePackage.BIZ_SERVICE_REQUEST__CONTEXT;
+	int GET_PRODUCT_DEFAULT__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GET_PRODUCT_DEFAULT__USER_LOGIN = BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN;
+	int GET_PRODUCT_DEFAULT__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
 
 	/**
 	 * The number of structural features of the '<em>Get Product Default</em>' class.
@@ -471,7 +470,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GET_PRODUCT_DEFAULT_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 0;
+	int GET_PRODUCT_DEFAULT_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.service.product.impl.GetProductDefaultResponseImpl <em>Get Product Default Response</em>}' class.

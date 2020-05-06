@@ -125,17 +125,11 @@ import org.abchip.mimo.biz.model.webapp.visit.VisitPackage;
 import org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage;
 
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
-
-import org.abchip.mimo.biz.service.BizServicePackage;
-
 import org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl;
 
 import org.abchip.mimo.biz.service.common.impl.CommonPackageImpl;
 
 import org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl;
-
-import org.abchip.mimo.biz.service.impl.BizServicePackageImpl;
-
 import org.abchip.mimo.biz.service.order.impl.OrderPackageImpl;
 
 import org.abchip.mimo.biz.service.party.GetPartyDefault;
@@ -287,9 +281,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		MimoPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
-		BizServicePackageImpl theBizServicePackage = (BizServicePackageImpl)(registeredPackage instanceof BizServicePackageImpl ? registeredPackage : BizServicePackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.accounting.AccountingPackage.eNS_URI);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.accounting.AccountingPackage.eNS_URI);
 		AccountingPackageImpl theAccountingPackage_1 = (AccountingPackageImpl)(registeredPackage instanceof AccountingPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.accounting.AccountingPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.common.CommonPackage.eNS_URI);
 		CommonPackageImpl theCommonPackage_1 = (CommonPackageImpl)(registeredPackage instanceof CommonPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.common.CommonPackage.eINSTANCE);
@@ -302,7 +294,6 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 
 		// Create package meta-data objects
 		thePartyPackage.createPackageContents();
-		theBizServicePackage.createPackageContents();
 		theAccountingPackage_1.createPackageContents();
 		theCommonPackage_1.createPackageContents();
 		theEntityPackage_1.createPackageContents();
@@ -311,7 +302,6 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 
 		// Initialize created meta-data
 		thePartyPackage.initializePackageContents();
-		theBizServicePackage.initializePackageContents();
 		theAccountingPackage_1.initializePackageContents();
 		theCommonPackage_1.initializePackageContents();
 		theEntityPackage_1.initializePackageContents();
@@ -426,9 +416,8 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizServicePackage theBizServicePackage = (BizServicePackage)EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
-		JavaPackage theJavaPackage = (JavaPackage)EPackage.Registry.INSTANCE.getEPackage(JavaPackage.eNS_URI);
 		ServicePackage theServicePackage = (ServicePackage)EPackage.Registry.INSTANCE.getEPackage(ServicePackage.eNS_URI);
+		JavaPackage theJavaPackage = (JavaPackage)EPackage.Registry.INSTANCE.getEPackage(JavaPackage.eNS_URI);
 		org.abchip.mimo.biz.model.party.party.PartyPackage thePartyPackage_2 = (org.abchip.mimo.biz.model.party.party.PartyPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.model.party.party.PartyPackage.eNS_URI);
 		LedgerPackage theLedgerPackage = (LedgerPackage)EPackage.Registry.INSTANCE.getEPackage(LedgerPackage.eNS_URI);
 
@@ -437,7 +426,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
+		EGenericType g1 = createEGenericType(theServicePackage.getServiceRequest());
 		EGenericType g2 = createEGenericType(this.getGetPartyDefaultResponse());
 		g1.getETypeArguments().add(g2);
 		getPartyDefaultEClass.getEGenericSuperTypes().add(g1);
@@ -453,6 +442,9 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		initEClass(getPartyDefaultResponseEClass, GetPartyDefaultResponse.class, "GetPartyDefaultResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getGetPartyDefaultResponse_Organization(), thePartyPackage_2.getParty(), null, "organization", null, 1, 1, GetPartyDefaultResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getGetPartyDefaultResponse_AccountingPreference(), theLedgerPackage.getPartyAcctgPreference(), null, "accountingPreference", null, 1, 1, GetPartyDefaultResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		// Create resource
+		createResource(eNS_URI);
 	}
 
 } //PartyPackageImpl

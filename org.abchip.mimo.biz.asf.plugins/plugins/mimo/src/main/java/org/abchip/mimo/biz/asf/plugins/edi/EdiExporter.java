@@ -12,7 +12,6 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
-import org.abchip.mimo.biz.BizPackage;
 import org.abchip.mimo.biz.asf.plugins.entity.EcoreUtils;
 import org.abchip.mimo.edi.entity.EntityPackage;
 import org.abchip.mimo.edi.message.MessagePackage;
@@ -143,8 +142,10 @@ public class EdiExporter {
 
 			if (org.abchip.mimo.entity.EntityPackage.eINSTANCE.getEntityIdentifiable().getEStructuralFeature(eAttribute.getName()) != null)
 				continue;
-//			if (org.abchip.mimo.entity.EntityPackage.eINSTANCE.getEntityInfo().getEStructuralFeature(eAttribute.getName()) != null)
-//				continue;
+			// if
+			// (org.abchip.mimo.entity.EntityPackage.eINSTANCE.getEntityInfo().getEStructuralFeature(eAttribute.getName())
+			// != null)
+			// continue;
 
 			if (!eSuper.isAbstract()) {
 				if (eSuper.getEAllAttributes().contains(eAttribute) && !eAttribute.isID())

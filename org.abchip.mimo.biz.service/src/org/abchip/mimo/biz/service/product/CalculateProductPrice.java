@@ -8,7 +8,7 @@
 package org.abchip.mimo.biz.service.product;
 
 import org.abchip.mimo.biz.model.product.product.Product;
-import org.abchip.mimo.biz.service.BizServiceRequest;
+import org.abchip.mimo.service.ServiceRequest;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +27,7 @@ import org.abchip.mimo.biz.service.BizServiceRequest;
  * @model
  * @generated
  */
-public interface CalculateProductPrice extends BizServiceRequest<CalculateProductPriceResponse> {
+public interface CalculateProductPrice extends ServiceRequest<CalculateProductPriceResponse> {
 
 	/**
 	 * Returns the value of the '<em><b>Product</b></em>' containment reference.

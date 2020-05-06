@@ -125,9 +125,6 @@ import org.abchip.mimo.biz.model.webapp.visit.VisitPackage;
 import org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage;
 
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
-
-import org.abchip.mimo.biz.service.BizServicePackage;
-
 import org.abchip.mimo.biz.service.accounting.AccountingFactory;
 import org.abchip.mimo.biz.service.accounting.AccountingPackage;
 import org.abchip.mimo.biz.service.accounting.Invoice_GetTotal;
@@ -140,9 +137,6 @@ import org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDef;
 import org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDefResponse;
 import org.abchip.mimo.biz.service.common.impl.CommonPackageImpl;
 import org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl;
-
-import org.abchip.mimo.biz.service.impl.BizServicePackageImpl;
-
 import org.abchip.mimo.biz.service.order.impl.OrderPackageImpl;
 
 import org.abchip.mimo.biz.service.party.impl.PartyPackageImpl;
@@ -321,9 +315,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 		MimoPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
-		BizServicePackageImpl theBizServicePackage = (BizServicePackageImpl)(registeredPackage instanceof BizServicePackageImpl ? registeredPackage : BizServicePackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.common.CommonPackage.eNS_URI);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.common.CommonPackage.eNS_URI);
 		CommonPackageImpl theCommonPackage_1 = (CommonPackageImpl)(registeredPackage instanceof CommonPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.common.CommonPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.entity.EntityPackage.eNS_URI);
 		EntityPackageImpl theEntityPackage_1 = (EntityPackageImpl)(registeredPackage instanceof EntityPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.entity.EntityPackage.eINSTANCE);
@@ -336,7 +328,6 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 
 		// Create package meta-data objects
 		theAccountingPackage.createPackageContents();
-		theBizServicePackage.createPackageContents();
 		theCommonPackage_1.createPackageContents();
 		theEntityPackage_1.createPackageContents();
 		theOrderPackage_1.createPackageContents();
@@ -345,7 +336,6 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 
 		// Initialize created meta-data
 		theAccountingPackage.initializePackageContents();
-		theBizServicePackage.initializePackageContents();
 		theCommonPackage_1.initializePackageContents();
 		theEntityPackage_1.initializePackageContents();
 		theOrderPackage_1.initializePackageContents();
@@ -610,7 +600,6 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 		// Obtain other dependent packages
 		ServicePackage theServicePackage = (ServicePackage)EPackage.Registry.INSTANCE.getEPackage(ServicePackage.eNS_URI);
 		InvoicePackage theInvoicePackage = (InvoicePackage)EPackage.Registry.INSTANCE.getEPackage(InvoicePackage.eNS_URI);
-		BizServicePackage theBizServicePackage = (BizServicePackage)EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
 
 		// Create type parameters
 
@@ -623,17 +612,17 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 		g2 = createEGenericType(ecorePackage.getEBigDecimal());
 		g1.getETypeArguments().add(g2);
 		invoice_GetTotalEClass.getEGenericSuperTypes().add(g1);
-		g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
+		g1 = createEGenericType(theServicePackage.getServiceRequest());
 		g2 = createEGenericType(this.getSetInvoiceStatusResponse());
 		g1.getETypeArguments().add(g2);
 		setInvoiceStatusEClass.getEGenericSuperTypes().add(g1);
 		setInvoiceStatusResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
-		g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
+		g1 = createEGenericType(theServicePackage.getServiceRequest());
 		g2 = createEGenericType(this.getSetPaymentStatusResponse());
 		g1.getETypeArguments().add(g2);
 		setPaymentStatusEClass.getEGenericSuperTypes().add(g1);
 		setPaymentStatusResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
-		g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
+		g1 = createEGenericType(theServicePackage.getServiceRequest());
 		g2 = createEGenericType(this.getUpdatePaymentApplicationDefResponse());
 		g1.getETypeArguments().add(g2);
 		updatePaymentApplicationDefEClass.getEGenericSuperTypes().add(g1);
@@ -663,6 +652,9 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 		initEAttribute(getUpdatePaymentApplicationDef_PaymentId(), ecorePackage.getEString(), "paymentId", null, 1, 1, UpdatePaymentApplicationDef.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(updatePaymentApplicationDefResponseEClass, UpdatePaymentApplicationDefResponse.class, "UpdatePaymentApplicationDefResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		// Create resource
+		createResource(eNS_URI);
 	}
 
 } //AccountingPackageImpl

@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.service.entity;
 
-import org.abchip.mimo.biz.service.BizServiceRequest;
+import org.abchip.mimo.service.ServiceRequest;
 import org.abchip.mimo.service.ServiceResponse;
 
 /**
@@ -26,7 +26,7 @@ import org.abchip.mimo.service.ServiceResponse;
  * @model
  * @generated
  */
-public interface ExportEntities extends BizServiceRequest<ServiceResponse> {
+public interface ExportEntities extends ServiceRequest<ServiceResponse> {
 
 	/**
 	 * Returns the value of the '<em><b>Path To</b></em>' attribute.

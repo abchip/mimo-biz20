@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.service.product;
 
 import java.math.BigDecimal;
-
-import org.abchip.mimo.biz.service.BizServiceRequest;
+import org.abchip.mimo.service.ServiceRequest;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +31,7 @@ import org.abchip.mimo.biz.service.BizServiceRequest;
  * @model
  * @generated
  */
-public interface CalcTaxForDisplay extends BizServiceRequest<CalcTaxForDisplayResponse> {
+public interface CalcTaxForDisplay extends ServiceRequest<CalcTaxForDisplayResponse> {
 	/**
 	 * Returns the value of the '<em><b>Base Price</b></em>' attribute.
 	 * <!-- begin-user-doc -->

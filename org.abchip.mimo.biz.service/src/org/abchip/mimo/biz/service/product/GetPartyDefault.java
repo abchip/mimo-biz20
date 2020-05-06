@@ -9,17 +9,17 @@ package org.abchip.mimo.biz.service.product;
 
 import java.util.concurrent.Callable;
 
-import org.abchip.mimo.biz.service.BizServiceRequest;
+import org.abchip.mimo.service.ServiceRequest;
 
 /**
- * <!-- begin-user-doc -->
- * A representation of the model object '<em><b>Get Party Default</b></em>'.
- * <!-- end-user-doc -->
+ * <!-- begin-user-doc --> A representation of the model object '<em><b>Get
+ * Party Default</b></em>'. <!-- end-user-doc -->
  *
  *
  * @see org.abchip.mimo.biz.service.product.ProductPackage#getGetPartyDefault()
- * @model superTypes="org.abchip.mimo.biz.service.BizServiceRequest&lt;org.abchip.mimo.biz.service.product.GetPartyDefaultResponse&gt; org.abchip.mimo.java.JavaCallable&lt;org.abchip.mimo.biz.service.product.GetPartyDefaultResponse&gt;"
+ * @model superTypes="org.abchip.mimo.biz.service.BizServiceRequest&lt;org.abchip.mimo.biz.service.product.GetPartyDefaultResponse&gt;
+ *        org.abchip.mimo.java.JavaCallable&lt;org.abchip.mimo.biz.service.product.GetPartyDefaultResponse&gt;"
  * @generated
  */
-public interface GetPartyDefault extends BizServiceRequest<GetPartyDefaultResponse>, Callable<GetPartyDefaultResponse> {
+public interface GetPartyDefault extends ServiceRequest<GetPartyDefaultResponse>, Callable<GetPartyDefaultResponse> {
 } // GetPartyDefault

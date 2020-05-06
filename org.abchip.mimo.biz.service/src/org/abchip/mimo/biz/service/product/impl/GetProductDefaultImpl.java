@@ -10,12 +10,12 @@ package org.abchip.mimo.biz.service.product.impl;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.abchip.mimo.biz.model.party.contact.PostalAddress;
 import org.abchip.mimo.biz.model.product.facility.FacilityContactMech;
-import org.abchip.mimo.biz.service.impl.BizServiceRequestImpl;
 import org.abchip.mimo.biz.service.product.GetProductDefault;
 import org.abchip.mimo.biz.service.product.GetProductDefaultResponse;
 import org.abchip.mimo.biz.service.product.ProductPackage;
 import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceReader;
+import org.abchip.mimo.service.impl.ServiceRequestImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -24,7 +24,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class GetProductDefaultImpl extends BizServiceRequestImpl<GetProductDefaultResponse> implements GetProductDefault {
+public class GetProductDefaultImpl extends ServiceRequestImpl<GetProductDefaultResponse> implements GetProductDefault {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
@@ -40,6 +40,23 @@ public class GetProductDefaultImpl extends BizServiceRequestImpl<GetProductDefau
 	@Override
 	protected EClass eStaticClass() {
 		return ProductPackage.Literals.GET_PRODUCT_DEFAULT;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 4;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	@Override

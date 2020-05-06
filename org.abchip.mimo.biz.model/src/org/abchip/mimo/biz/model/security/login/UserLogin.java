@@ -11,8 +11,7 @@ import java.util.Date;
 import java.util.List;
 import org.abchip.mimo.biz.model.common.user.UserPreference;
 import org.abchip.mimo.biz.model.party.party.Party;
-import org.abchip.mimo.entity.EntityIdentifiable;
-import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.context.UserProfile;
 
 /**
  * <!-- begin-user-doc -->
@@ -48,7 +47,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model
  * @generated
  */
-public interface UserLogin extends EntityIdentifiable, EntityInfo {
+public interface UserLogin extends UserProfile {
 	/**
 	 * Returns the value of the '<em><b>Current Password</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -10,10 +10,10 @@ package org.abchip.mimo.biz.service.party.impl;
 import org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference;
 import org.abchip.mimo.biz.model.common.property.SystemProperty;
 import org.abchip.mimo.biz.model.party.party.Party;
-import org.abchip.mimo.biz.service.impl.BizServiceRequestImpl;
 import org.abchip.mimo.biz.service.party.GetPartyDefault;
 import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
 import org.abchip.mimo.biz.service.party.PartyPackage;
+import org.abchip.mimo.service.impl.ServiceRequestImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -22,7 +22,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class GetPartyDefaultImpl extends BizServiceRequestImpl<GetPartyDefaultResponse> implements GetPartyDefault {
+public class GetPartyDefaultImpl extends ServiceRequestImpl<GetPartyDefaultResponse> implements GetPartyDefault {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
@@ -38,6 +38,23 @@ public class GetPartyDefaultImpl extends BizServiceRequestImpl<GetPartyDefaultRe
 	@Override
 	protected EClass eStaticClass() {
 		return PartyPackage.Literals.GET_PARTY_DEFAULT;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 4;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	@Override

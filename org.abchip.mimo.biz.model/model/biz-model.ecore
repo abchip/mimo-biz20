@@ -27821,7 +27821,7 @@
     </eSubpackages>
     <eSubpackages name="login" nsURI="http://www.abchip.org/mimo/biz/model/security/login"
         nsPrefix="biz-login">
-      <eClassifiers xsi:type="ecore:EClass" name="UserLogin" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityIdentifiable ../../org.abchip.mimo.core/model/mimo.ecore#//entity/EntityInfo">
+      <eClassifiers xsi:type="ecore:EClass" name="UserLogin" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//context/UserProfile">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="userLoginId" lowerBound="1"
             eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
             iD="true">

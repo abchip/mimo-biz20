@@ -1,17 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="service" nsURI="http://www.abchip.org/mimo/biz/service" nsPrefix="biz-service">
-  <eClassifiers xsi:type="ecore:EClass" name="BizServiceRequest" abstract="true">
-    <eTypeParameters name="V">
-      <eBounds eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
-    </eTypeParameters>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="userLogin" lowerBound="1"
-        eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//security/login/UserLogin"
-        containment="true"/>
-    <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
-      <eTypeArguments eTypeParameter="#//BizServiceRequest/V"/>
-    </eGenericSuperTypes>
-  </eClassifiers>
   <eSubpackages name="accounting" nsURI="http://www.abchip.org/mimo/biz/service/accounting"
       nsPrefix="biz-accounting">
     <eClassifiers xsi:type="ecore:EClass" name="Invoice_GetTotal">
@@ -27,7 +16,7 @@
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="statusDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="statusId" lowerBound="1"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
         <eTypeArguments eClassifier="#//accounting/SetInvoiceStatusResponse"/>
       </eGenericSuperTypes>
     </eClassifiers>
@@ -40,7 +29,7 @@
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="statusId" lowerBound="1"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
         <eTypeArguments eClassifier="#//accounting/SetPaymentStatusResponse"/>
       </eGenericSuperTypes>
     </eClassifiers>
@@ -49,7 +38,7 @@
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="invoiceId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="paymentId" lowerBound="1"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
         <eTypeArguments eClassifier="#//accounting/UpdatePaymentApplicationDefResponse"/>
       </eGenericSuperTypes>
     </eClassifiers>
@@ -61,7 +50,7 @@
   <eSubpackages name="common" nsURI="http://www.abchip.org/mimo/biz/service/common"
       nsPrefix="biz-common">
     <eClassifiers xsi:type="ecore:EClass" name="GetCommonDefault">
-      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
         <eTypeArguments eClassifier="#//common/GetCommonDefaultResponse"/>
       </eGenericSuperTypes>
       <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//java/JavaCallable">
@@ -124,7 +113,7 @@
     <eClassifiers xsi:type="ecore:EClass" name="ExportEntities">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="pathTo" lowerBound="1"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
         <eTypeArguments eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
       </eGenericSuperTypes>
     </eClassifiers>
@@ -144,7 +133,7 @@
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="setItemStatus" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="statusId" lowerBound="1"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
         <eTypeArguments eClassifier="#//order/ChangeOrderStatusResponse"/>
       </eGenericSuperTypes>
     </eClassifiers>
@@ -168,7 +157,7 @@
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="quantity" lowerBound="1"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="shipGroupSeqId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
         <eTypeArguments eClassifier="#//order/ReserveStoreInventoryResponse"/>
       </eGenericSuperTypes>
     </eClassifiers>
@@ -178,7 +167,7 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="ResetGrandTotal">
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="orderId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
         <eTypeArguments eClassifier="#//order/ResetGrandTotalResponse"/>
       </eGenericSuperTypes>
     </eClassifiers>
@@ -187,7 +176,7 @@
   <eSubpackages name="party" nsURI="http://www.abchip.org/mimo/biz/service/party"
       nsPrefix="biz-party">
     <eClassifiers xsi:type="ecore:EClass" name="GetPartyDefault">
-      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
         <eTypeArguments eClassifier="#//party/GetPartyDefaultResponse"/>
       </eGenericSuperTypes>
       <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//java/JavaCallable">
@@ -216,7 +205,7 @@
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="quantity" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="shippingPrice" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
-      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
         <eTypeArguments eClassifier="#//product/CalcTaxForDisplayResponse"/>
       </eGenericSuperTypes>
     </eClassifiers>
@@ -235,7 +224,7 @@
       <eStructuralFeatures xsi:type="ecore:EAttribute" name="currencyUomId" lowerBound="1"
           eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
           defaultValueLiteral="@general/currency.uom.id.default"/>
-      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
         <eTypeArguments eClassifier="#//product/CalculateProductPriceResponse"/>
       </eGenericSuperTypes>
     </eClassifiers>
@@ -250,7 +239,7 @@
           containment="true"/>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="GetProductDefault">
-      <eGenericSuperTypes eClassifier="#//BizServiceRequest">
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
         <eTypeArguments eClassifier="#//product/GetProductDefaultResponse"/>
       </eGenericSuperTypes>
       <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//java/JavaCallable">

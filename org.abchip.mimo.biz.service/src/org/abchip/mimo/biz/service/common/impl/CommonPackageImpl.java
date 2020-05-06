@@ -126,9 +126,6 @@ import org.abchip.mimo.biz.model.webapp.visit.VisitPackage;
 import org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage;
 
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
-
-import org.abchip.mimo.biz.service.BizServicePackage;
-
 import org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl;
 
 import org.abchip.mimo.biz.service.common.CommonFactory;
@@ -137,9 +134,6 @@ import org.abchip.mimo.biz.service.common.GetCommonDefault;
 import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
 
 import org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl;
-
-import org.abchip.mimo.biz.service.impl.BizServicePackageImpl;
-
 import org.abchip.mimo.biz.service.order.impl.OrderPackageImpl;
 
 import org.abchip.mimo.biz.service.party.impl.PartyPackageImpl;
@@ -286,9 +280,7 @@ public class CommonPackageImpl extends EPackageImpl implements CommonPackage {
 		MimoPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
-		BizServicePackageImpl theBizServicePackage = (BizServicePackageImpl)(registeredPackage instanceof BizServicePackageImpl ? registeredPackage : BizServicePackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.accounting.AccountingPackage.eNS_URI);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.accounting.AccountingPackage.eNS_URI);
 		AccountingPackageImpl theAccountingPackage_1 = (AccountingPackageImpl)(registeredPackage instanceof AccountingPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.accounting.AccountingPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.entity.EntityPackage.eNS_URI);
 		EntityPackageImpl theEntityPackage_1 = (EntityPackageImpl)(registeredPackage instanceof EntityPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.entity.EntityPackage.eINSTANCE);
@@ -301,7 +293,6 @@ public class CommonPackageImpl extends EPackageImpl implements CommonPackage {
 
 		// Create package meta-data objects
 		theCommonPackage.createPackageContents();
-		theBizServicePackage.createPackageContents();
 		theAccountingPackage_1.createPackageContents();
 		theEntityPackage_1.createPackageContents();
 		theOrderPackage_1.createPackageContents();
@@ -310,7 +301,6 @@ public class CommonPackageImpl extends EPackageImpl implements CommonPackage {
 
 		// Initialize created meta-data
 		theCommonPackage.initializePackageContents();
-		theBizServicePackage.initializePackageContents();
 		theAccountingPackage_1.initializePackageContents();
 		theEntityPackage_1.initializePackageContents();
 		theOrderPackage_1.initializePackageContents();
@@ -425,9 +415,8 @@ public class CommonPackageImpl extends EPackageImpl implements CommonPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizServicePackage theBizServicePackage = (BizServicePackage)EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
-		JavaPackage theJavaPackage = (JavaPackage)EPackage.Registry.INSTANCE.getEPackage(JavaPackage.eNS_URI);
 		ServicePackage theServicePackage = (ServicePackage)EPackage.Registry.INSTANCE.getEPackage(ServicePackage.eNS_URI);
+		JavaPackage theJavaPackage = (JavaPackage)EPackage.Registry.INSTANCE.getEPackage(JavaPackage.eNS_URI);
 		UomPackage theUomPackage = (UomPackage)EPackage.Registry.INSTANCE.getEPackage(UomPackage.eNS_URI);
 		GeoPackage theGeoPackage = (GeoPackage)EPackage.Registry.INSTANCE.getEPackage(GeoPackage.eNS_URI);
 
@@ -436,7 +425,7 @@ public class CommonPackageImpl extends EPackageImpl implements CommonPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
+		EGenericType g1 = createEGenericType(theServicePackage.getServiceRequest());
 		EGenericType g2 = createEGenericType(this.getGetCommonDefaultResponse());
 		g1.getETypeArguments().add(g2);
 		getCommonDefaultEClass.getEGenericSuperTypes().add(g1);
@@ -452,6 +441,9 @@ public class CommonPackageImpl extends EPackageImpl implements CommonPackage {
 		initEClass(getCommonDefaultResponseEClass, GetCommonDefaultResponse.class, "GetCommonDefaultResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getGetCommonDefaultResponse_CurrencyUom(), theUomPackage.getUom(), null, "currencyUom", null, 1, 1, GetCommonDefaultResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getGetCommonDefaultResponse_CountryGeo(), theGeoPackage.getGeo(), null, "countryGeo", null, 1, 1, GetCommonDefaultResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		// Create resource
+		createResource(eNS_URI);
 	}
 
 } //CommonPackageImpl

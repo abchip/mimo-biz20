@@ -7,8 +7,6 @@
  */
 package org.abchip.mimo.biz.service.order;
 
-import org.abchip.mimo.biz.service.BizServicePackage;
-
 import org.abchip.mimo.service.ServicePackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -79,7 +77,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHANGE_ORDER_STATUS__LOCALE = BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE;
+	int CHANGE_ORDER_STATUS__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
 
 	/**
 	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
@@ -88,7 +86,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHANGE_ORDER_STATUS__TENANT = BizServicePackage.BIZ_SERVICE_REQUEST__TENANT;
+	int CHANGE_ORDER_STATUS__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
@@ -97,16 +95,16 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHANGE_ORDER_STATUS__CONTEXT = BizServicePackage.BIZ_SERVICE_REQUEST__CONTEXT;
+	int CHANGE_ORDER_STATUS__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CHANGE_ORDER_STATUS__USER_LOGIN = BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN;
+	int CHANGE_ORDER_STATUS__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Change Reason</b></em>' attribute.
@@ -115,7 +113,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHANGE_ORDER_STATUS__CHANGE_REASON = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 0;
+	int CHANGE_ORDER_STATUS__CHANGE_REASON = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Order Id</b></em>' attribute.
@@ -124,7 +122,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHANGE_ORDER_STATUS__ORDER_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 1;
+	int CHANGE_ORDER_STATUS__ORDER_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Set Item Status</b></em>' attribute.
@@ -133,7 +131,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHANGE_ORDER_STATUS__SET_ITEM_STATUS = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 2;
+	int CHANGE_ORDER_STATUS__SET_ITEM_STATUS = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' attribute.
@@ -142,7 +140,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHANGE_ORDER_STATUS__STATUS_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 3;
+	int CHANGE_ORDER_STATUS__STATUS_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Change Order Status</em>' class.
@@ -151,7 +149,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CHANGE_ORDER_STATUS_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 4;
+	int CHANGE_ORDER_STATUS_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 4;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.service.order.impl.ChangeOrderStatusResponseImpl <em>Change Order Status Response</em>}' class.
@@ -271,7 +269,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESERVE_STORE_INVENTORY__LOCALE = BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE;
+	int RESERVE_STORE_INVENTORY__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
 
 	/**
 	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
@@ -280,7 +278,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESERVE_STORE_INVENTORY__TENANT = BizServicePackage.BIZ_SERVICE_REQUEST__TENANT;
+	int RESERVE_STORE_INVENTORY__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
@@ -289,16 +287,16 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESERVE_STORE_INVENTORY__CONTEXT = BizServicePackage.BIZ_SERVICE_REQUEST__CONTEXT;
+	int RESERVE_STORE_INVENTORY__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RESERVE_STORE_INVENTORY__USER_LOGIN = BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN;
+	int RESERVE_STORE_INVENTORY__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Facility Id</b></em>' attribute.
@@ -307,7 +305,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESERVE_STORE_INVENTORY__FACILITY_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 0;
+	int RESERVE_STORE_INVENTORY__FACILITY_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Order Id</b></em>' attribute.
@@ -316,7 +314,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESERVE_STORE_INVENTORY__ORDER_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 1;
+	int RESERVE_STORE_INVENTORY__ORDER_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -325,7 +323,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESERVE_STORE_INVENTORY__ORDER_ITEM_SEQ_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 2;
+	int RESERVE_STORE_INVENTORY__ORDER_ITEM_SEQ_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' attribute.
@@ -334,7 +332,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESERVE_STORE_INVENTORY__PRODUCT_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 3;
+	int RESERVE_STORE_INVENTORY__PRODUCT_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Id</b></em>' attribute.
@@ -343,7 +341,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESERVE_STORE_INVENTORY__PRODUCT_STORE_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 4;
+	int RESERVE_STORE_INVENTORY__PRODUCT_STORE_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
@@ -352,7 +350,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESERVE_STORE_INVENTORY__QUANTITY = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 5;
+	int RESERVE_STORE_INVENTORY__QUANTITY = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Ship Group Seq Id</b></em>' attribute.
@@ -361,7 +359,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESERVE_STORE_INVENTORY__SHIP_GROUP_SEQ_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 6;
+	int RESERVE_STORE_INVENTORY__SHIP_GROUP_SEQ_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Reserve Store Inventory</em>' class.
@@ -370,7 +368,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESERVE_STORE_INVENTORY_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 7;
+	int RESERVE_STORE_INVENTORY_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.service.order.impl.ReserveStoreInventoryResponseImpl <em>Reserve Store Inventory Response</em>}' class.
@@ -454,7 +452,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESET_GRAND_TOTAL__LOCALE = BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE;
+	int RESET_GRAND_TOTAL__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
 
 	/**
 	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
@@ -463,7 +461,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESET_GRAND_TOTAL__TENANT = BizServicePackage.BIZ_SERVICE_REQUEST__TENANT;
+	int RESET_GRAND_TOTAL__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
@@ -472,16 +470,16 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESET_GRAND_TOTAL__CONTEXT = BizServicePackage.BIZ_SERVICE_REQUEST__CONTEXT;
+	int RESET_GRAND_TOTAL__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RESET_GRAND_TOTAL__USER_LOGIN = BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN;
+	int RESET_GRAND_TOTAL__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Order Id</b></em>' attribute.
@@ -490,7 +488,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESET_GRAND_TOTAL__ORDER_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 0;
+	int RESET_GRAND_TOTAL__ORDER_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Reset Grand Total</em>' class.
@@ -499,7 +497,7 @@ public interface OrderPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RESET_GRAND_TOTAL_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 1;
+	int RESET_GRAND_TOTAL_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.service.order.impl.ResetGrandTotalResponseImpl <em>Reset Grand Total Response</em>}' class.

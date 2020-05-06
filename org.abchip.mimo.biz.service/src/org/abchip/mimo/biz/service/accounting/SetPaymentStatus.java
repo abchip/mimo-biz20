@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.service.accounting;
 
-import org.abchip.mimo.biz.service.BizServiceRequest;
+import org.abchip.mimo.service.ServiceRequest;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +26,7 @@ import org.abchip.mimo.biz.service.BizServiceRequest;
  * @model
  * @generated
  */
-public interface SetPaymentStatus extends BizServiceRequest<SetPaymentStatusResponse> {
+public interface SetPaymentStatus extends ServiceRequest<SetPaymentStatusResponse> {
 
 	/**
 	 * Returns the value of the '<em><b>Payment Id</b></em>' attribute.

@@ -7,8 +7,6 @@
  */
 package org.abchip.mimo.biz.service.common;
 
-import org.abchip.mimo.biz.service.BizServicePackage;
-
 import org.abchip.mimo.service.ServicePackage;
 
 import org.eclipse.emf.ecore.EClass;
@@ -80,7 +78,7 @@ public interface CommonPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GET_COMMON_DEFAULT__LOCALE = BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE;
+	int GET_COMMON_DEFAULT__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
 
 	/**
 	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
@@ -89,7 +87,7 @@ public interface CommonPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GET_COMMON_DEFAULT__TENANT = BizServicePackage.BIZ_SERVICE_REQUEST__TENANT;
+	int GET_COMMON_DEFAULT__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
@@ -98,16 +96,16 @@ public interface CommonPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GET_COMMON_DEFAULT__CONTEXT = BizServicePackage.BIZ_SERVICE_REQUEST__CONTEXT;
+	int GET_COMMON_DEFAULT__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GET_COMMON_DEFAULT__USER_LOGIN = BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN;
+	int GET_COMMON_DEFAULT__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
 
 	/**
 	 * The number of structural features of the '<em>Get Common Default</em>' class.
@@ -116,7 +114,7 @@ public interface CommonPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GET_COMMON_DEFAULT_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 0;
+	int GET_COMMON_DEFAULT_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.service.common.impl.GetCommonDefaultResponseImpl <em>Get Common Default Response</em>}' class.

@@ -8,10 +8,10 @@
 package org.abchip.mimo.biz.service.product.impl;
 
 import org.abchip.mimo.biz.model.product.product.Product;
-import org.abchip.mimo.biz.service.impl.BizServiceRequestImpl;
 import org.abchip.mimo.biz.service.product.CalculateProductPrice;
 import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
 import org.abchip.mimo.biz.service.product.ProductPackage;
+import org.abchip.mimo.service.impl.ServiceRequestImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -28,7 +28,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class CalculateProductPriceImpl extends BizServiceRequestImpl<CalculateProductPriceResponse> implements CalculateProductPrice {
+public class CalculateProductPriceImpl extends ServiceRequestImpl<CalculateProductPriceResponse> implements CalculateProductPrice {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -47,6 +47,23 @@ public class CalculateProductPriceImpl extends BizServiceRequestImpl<CalculatePr
 	@Override
 	protected EClass eStaticClass() {
 		return ProductPackage.Literals.CALCULATE_PRODUCT_PRICE;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 4;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	/**

@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.service.order;
 
-import org.abchip.mimo.biz.service.BizServiceRequest;
+import org.abchip.mimo.service.ServiceRequest;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +28,7 @@ import org.abchip.mimo.biz.service.BizServiceRequest;
  * @model
  * @generated
  */
-public interface ChangeOrderStatus extends BizServiceRequest<ChangeOrderStatusResponse> {
+public interface ChangeOrderStatus extends ServiceRequest<ChangeOrderStatusResponse> {
 	/**
 	 * Returns the value of the '<em><b>Change Reason</b></em>' attribute.
 	 * <!-- begin-user-doc -->

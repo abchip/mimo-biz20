@@ -8,7 +8,7 @@
 package org.abchip.mimo.biz.service.common;
 
 import java.util.concurrent.Callable;
-import org.abchip.mimo.biz.service.BizServiceRequest;
+import org.abchip.mimo.service.ServiceRequest;
 
 /**
  * <!-- begin-user-doc -->
@@ -17,8 +17,8 @@ import org.abchip.mimo.biz.service.BizServiceRequest;
  *
  *
  * @see org.abchip.mimo.biz.service.common.CommonPackage#getGetCommonDefault()
- * @model superTypes="org.abchip.mimo.biz.service.BizServiceRequest&lt;org.abchip.mimo.biz.service.common.GetCommonDefaultResponse&gt; org.abchip.mimo.java.JavaCallable&lt;org.abchip.mimo.biz.service.common.GetCommonDefaultResponse&gt;"
+ * @model superTypes="org.abchip.mimo.service.ServiceRequest&lt;org.abchip.mimo.biz.service.common.GetCommonDefaultResponse&gt; org.abchip.mimo.java.JavaCallable&lt;org.abchip.mimo.biz.service.common.GetCommonDefaultResponse&gt;"
  * @generated
  */
-public interface GetCommonDefault extends BizServiceRequest<GetCommonDefaultResponse>, Callable<GetCommonDefaultResponse> {
+public interface GetCommonDefault extends ServiceRequest<GetCommonDefaultResponse>, Callable<GetCommonDefaultResponse> {
 } // GetCommonDefault

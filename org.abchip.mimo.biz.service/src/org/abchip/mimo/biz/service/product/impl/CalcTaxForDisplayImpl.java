@@ -8,12 +8,10 @@
 package org.abchip.mimo.biz.service.product.impl;
 
 import java.math.BigDecimal;
-
-import org.abchip.mimo.biz.service.impl.BizServiceRequestImpl;
-
 import org.abchip.mimo.biz.service.product.CalcTaxForDisplay;
 import org.abchip.mimo.biz.service.product.CalcTaxForDisplayResponse;
 import org.abchip.mimo.biz.service.product.ProductPackage;
+import org.abchip.mimo.service.impl.ServiceRequestImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -34,7 +32,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class CalcTaxForDisplayImpl extends BizServiceRequestImpl<CalcTaxForDisplayResponse> implements CalcTaxForDisplay {
+public class CalcTaxForDisplayImpl extends ServiceRequestImpl<CalcTaxForDisplayResponse> implements CalcTaxForDisplay {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -53,6 +51,23 @@ public class CalcTaxForDisplayImpl extends BizServiceRequestImpl<CalcTaxForDispl
 	@Override
 	protected EClass eStaticClass() {
 		return ProductPackage.Literals.CALC_TAX_FOR_DISPLAY;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 4;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	/**

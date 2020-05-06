@@ -13,7 +13,7 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.service.common.CommonPackage;
 import org.abchip.mimo.biz.service.common.GetCommonDefault;
 import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
-import org.abchip.mimo.biz.service.impl.BizServiceRequestImpl;
+import org.abchip.mimo.service.impl.ServiceRequestImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -22,7 +22,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class GetCommonDefaultImpl extends BizServiceRequestImpl<GetCommonDefaultResponse> implements GetCommonDefault {
+public class GetCommonDefaultImpl extends ServiceRequestImpl<GetCommonDefaultResponse> implements GetCommonDefault {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
@@ -38,6 +38,23 @@ public class GetCommonDefaultImpl extends BizServiceRequestImpl<GetCommonDefault
 	@Override
 	protected EClass eStaticClass() {
 		return CommonPackage.Literals.GET_COMMON_DEFAULT;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 4;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	@Override

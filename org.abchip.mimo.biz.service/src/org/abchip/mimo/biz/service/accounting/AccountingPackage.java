@@ -7,8 +7,6 @@
  */
 package org.abchip.mimo.biz.service.accounting;
 
-import org.abchip.mimo.biz.service.BizServicePackage;
-
 import org.abchip.mimo.service.ServicePackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -160,6 +158,15 @@ public interface AccountingPackage extends EPackage {
 	int INVOICE_GET_TOTAL__CONTEXT = ServicePackage.SERVICE_METHOD_REQUEST__CONTEXT;
 
 	/**
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int INVOICE_GET_TOTAL__USER_PROFILE = ServicePackage.SERVICE_METHOD_REQUEST__USER_PROFILE;
+
+	/**
 	 * The feature id for the '<em><b>Entity</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -184,7 +191,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_INVOICE_STATUS__LOCALE = BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE;
+	int SET_INVOICE_STATUS__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
 
 	/**
 	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
@@ -193,7 +200,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_INVOICE_STATUS__TENANT = BizServicePackage.BIZ_SERVICE_REQUEST__TENANT;
+	int SET_INVOICE_STATUS__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
@@ -202,16 +209,16 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_INVOICE_STATUS__CONTEXT = BizServicePackage.BIZ_SERVICE_REQUEST__CONTEXT;
+	int SET_INVOICE_STATUS__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SET_INVOICE_STATUS__USER_LOGIN = BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN;
+	int SET_INVOICE_STATUS__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id</b></em>' attribute.
@@ -220,7 +227,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_INVOICE_STATUS__INVOICE_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 0;
+	int SET_INVOICE_STATUS__INVOICE_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Paid Date</b></em>' attribute.
@@ -229,7 +236,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_INVOICE_STATUS__PAID_DATE = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 1;
+	int SET_INVOICE_STATUS__PAID_DATE = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Status Date</b></em>' attribute.
@@ -238,7 +245,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_INVOICE_STATUS__STATUS_DATE = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 2;
+	int SET_INVOICE_STATUS__STATUS_DATE = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' attribute.
@@ -247,7 +254,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_INVOICE_STATUS__STATUS_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 3;
+	int SET_INVOICE_STATUS__STATUS_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Set Invoice Status</em>' class.
@@ -256,7 +263,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_INVOICE_STATUS_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 4;
+	int SET_INVOICE_STATUS_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Error</b></em>' attribute.
@@ -328,7 +335,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_PAYMENT_STATUS__LOCALE = BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE;
+	int SET_PAYMENT_STATUS__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
 
 	/**
 	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
@@ -337,7 +344,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_PAYMENT_STATUS__TENANT = BizServicePackage.BIZ_SERVICE_REQUEST__TENANT;
+	int SET_PAYMENT_STATUS__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
@@ -346,16 +353,16 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_PAYMENT_STATUS__CONTEXT = BizServicePackage.BIZ_SERVICE_REQUEST__CONTEXT;
+	int SET_PAYMENT_STATUS__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SET_PAYMENT_STATUS__USER_LOGIN = BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN;
+	int SET_PAYMENT_STATUS__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Payment Id</b></em>' attribute.
@@ -364,7 +371,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_PAYMENT_STATUS__PAYMENT_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 0;
+	int SET_PAYMENT_STATUS__PAYMENT_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' attribute.
@@ -373,7 +380,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_PAYMENT_STATUS__STATUS_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 1;
+	int SET_PAYMENT_STATUS__STATUS_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Set Payment Status</em>' class.
@@ -382,7 +389,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SET_PAYMENT_STATUS_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 2;
+	int SET_PAYMENT_STATUS_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Error</b></em>' attribute.
@@ -436,7 +443,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UPDATE_PAYMENT_APPLICATION_DEF__LOCALE = BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE;
+	int UPDATE_PAYMENT_APPLICATION_DEF__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
 
 	/**
 	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
@@ -445,7 +452,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UPDATE_PAYMENT_APPLICATION_DEF__TENANT = BizServicePackage.BIZ_SERVICE_REQUEST__TENANT;
+	int UPDATE_PAYMENT_APPLICATION_DEF__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
@@ -454,16 +461,16 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UPDATE_PAYMENT_APPLICATION_DEF__CONTEXT = BizServicePackage.BIZ_SERVICE_REQUEST__CONTEXT;
+	int UPDATE_PAYMENT_APPLICATION_DEF__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UPDATE_PAYMENT_APPLICATION_DEF__USER_LOGIN = BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN;
+	int UPDATE_PAYMENT_APPLICATION_DEF__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Invoice Id</b></em>' attribute.
@@ -472,7 +479,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UPDATE_PAYMENT_APPLICATION_DEF__INVOICE_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 0;
+	int UPDATE_PAYMENT_APPLICATION_DEF__INVOICE_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Payment Id</b></em>' attribute.
@@ -481,7 +488,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UPDATE_PAYMENT_APPLICATION_DEF__PAYMENT_ID = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 1;
+	int UPDATE_PAYMENT_APPLICATION_DEF__PAYMENT_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
 
 	/**
 	 * The number of structural features of the '<em>Update Payment Application Def</em>' class.
@@ -490,7 +497,7 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UPDATE_PAYMENT_APPLICATION_DEF_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 2;
+	int UPDATE_PAYMENT_APPLICATION_DEF_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Error</b></em>' attribute.

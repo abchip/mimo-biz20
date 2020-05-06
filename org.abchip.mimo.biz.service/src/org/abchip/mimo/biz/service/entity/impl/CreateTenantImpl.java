@@ -63,7 +63,7 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 3;
+	protected static final int ESTATIC_FEATURE_COUNT = 4;
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->

@@ -11,8 +11,7 @@ import java.util.Date;
 import org.abchip.mimo.biz.service.accounting.AccountingPackage;
 import org.abchip.mimo.biz.service.accounting.SetInvoiceStatus;
 import org.abchip.mimo.biz.service.accounting.SetInvoiceStatusResponse;
-
-import org.abchip.mimo.biz.service.impl.BizServiceRequestImpl;
+import org.abchip.mimo.service.impl.ServiceRequestImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -31,7 +30,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class SetInvoiceStatusImpl extends BizServiceRequestImpl<SetInvoiceStatusResponse> implements SetInvoiceStatus {
+public class SetInvoiceStatusImpl extends ServiceRequestImpl<SetInvoiceStatusResponse> implements SetInvoiceStatus {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -50,6 +49,23 @@ public class SetInvoiceStatusImpl extends BizServiceRequestImpl<SetInvoiceStatus
 	@Override
 	protected EClass eStaticClass() {
 		return AccountingPackage.Literals.SET_INVOICE_STATUS;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 4;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	/**

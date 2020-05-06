@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.service.party;
 
 import java.util.concurrent.Callable;
-
-import org.abchip.mimo.biz.service.BizServiceRequest;
+import org.abchip.mimo.service.ServiceRequest;
 
 /**
  * <!-- begin-user-doc -->
@@ -18,8 +17,8 @@ import org.abchip.mimo.biz.service.BizServiceRequest;
  *
  *
  * @see org.abchip.mimo.biz.service.party.PartyPackage#getGetPartyDefault()
- * @model superTypes="org.abchip.mimo.biz.service.BizServiceRequest&lt;org.abchip.mimo.biz.service.party.GetPartyDefaultResponse&gt; org.abchip.mimo.java.JavaCallable&lt;org.abchip.mimo.biz.service.party.GetPartyDefaultResponse&gt;"
+ * @model superTypes="org.abchip.mimo.service.ServiceRequest&lt;org.abchip.mimo.biz.service.party.GetPartyDefaultResponse&gt; org.abchip.mimo.java.JavaCallable&lt;org.abchip.mimo.biz.service.party.GetPartyDefaultResponse&gt;"
  * @generated
  */
-public interface GetPartyDefault extends BizServiceRequest<GetPartyDefaultResponse>, Callable<GetPartyDefaultResponse> {
+public interface GetPartyDefault extends ServiceRequest<GetPartyDefaultResponse>, Callable<GetPartyDefaultResponse> {
 } // GetPartyDefault

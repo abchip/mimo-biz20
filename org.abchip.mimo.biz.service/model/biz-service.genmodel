@@ -16,10 +16,6 @@
   <foreignModel>biz-service.ecore</foreignModel>
   <genPackages prefix="BizService" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
       adapterFactory="false" ecorePackage="biz-service.ecore#/">
-    <genClasses image="false" ecoreClass="biz-service.ecore#//BizServiceRequest">
-      <genTypeParameters ecoreTypeParameter="biz-service.ecore#//BizServiceRequest/V"/>
-      <genFeatures property="None" children="true" createChild="false" ecoreFeature="ecore:EReference biz-service.ecore#//BizServiceRequest/userLogin"/>
-    </genClasses>
     <nestedGenPackages prefix="Accounting" basePackage="org.abchip.mimo.biz.service"
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//accounting">
       <genClasses ecoreClass="biz-service.ecore#//accounting/Invoice_GetTotal"/>

@@ -8,7 +8,7 @@
 package org.abchip.mimo.biz.service.accounting;
 
 import java.util.Date;
-import org.abchip.mimo.biz.service.BizServiceRequest;
+import org.abchip.mimo.service.ServiceRequest;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +29,7 @@ import org.abchip.mimo.biz.service.BizServiceRequest;
  * @model
  * @generated
  */
-public interface SetInvoiceStatus extends BizServiceRequest<SetInvoiceStatusResponse> {
+public interface SetInvoiceStatus extends ServiceRequest<SetInvoiceStatusResponse> {
 
 	/**
 	 * Returns the value of the '<em><b>Invoice Id</b></em>' attribute.

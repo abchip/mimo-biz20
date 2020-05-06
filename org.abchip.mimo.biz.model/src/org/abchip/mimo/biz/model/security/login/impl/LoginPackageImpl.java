@@ -198,6 +198,7 @@ import org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage;
 import org.abchip.mimo.biz.model.workeffort.timesheet.impl.TimesheetPackageImpl;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkeffortPackageImpl;
+import org.abchip.mimo.context.ContextPackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
@@ -1211,9 +1212,10 @@ public class LoginPackageImpl extends EPackageImpl implements LoginPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
+		ContextPackage theContextPackage = (ContextPackage)EPackage.Registry.INSTANCE.getEPackage(ContextPackage.eNS_URI);
 		PartyPackage thePartyPackage_1 = (PartyPackage)EPackage.Registry.INSTANCE.getEPackage(PartyPackage.eNS_URI);
 		UserPackage theUserPackage = (UserPackage)EPackage.Registry.INSTANCE.getEPackage(UserPackage.eNS_URI);
+		org.abchip.mimo.entity.EntityPackage theEntityPackage_1 = (org.abchip.mimo.entity.EntityPackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.entity.EntityPackage.eNS_URI);
 		EnumPackage theEnumPackage = (EnumPackage)EPackage.Registry.INSTANCE.getEPackage(EnumPackage.eNS_URI);
 
 		// Create type parameters
@@ -1221,8 +1223,7 @@ public class LoginPackageImpl extends EPackageImpl implements LoginPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		userLoginEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		userLoginEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		userLoginEClass.getESuperTypes().add(theContextPackage.getUserProfile());
 		userLoginHistoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		userLoginHistoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		userLoginPasswordHistoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());

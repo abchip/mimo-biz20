@@ -8,8 +8,7 @@
 package org.abchip.mimo.biz.service.product;
 
 import java.util.concurrent.Callable;
-
-import org.abchip.mimo.biz.service.BizServiceRequest;
+import org.abchip.mimo.service.ServiceRequest;
 
 /**
  * <!-- begin-user-doc -->
@@ -18,8 +17,8 @@ import org.abchip.mimo.biz.service.BizServiceRequest;
  *
  *
  * @see org.abchip.mimo.biz.service.product.ProductPackage#getGetProductDefault()
- * @model superTypes="org.abchip.mimo.biz.service.BizServiceRequest&lt;org.abchip.mimo.biz.service.product.GetProductDefaultResponse&gt; org.abchip.mimo.java.JavaCallable&lt;org.abchip.mimo.biz.service.product.GetProductDefaultResponse&gt;"
+ * @model superTypes="org.abchip.mimo.service.ServiceRequest&lt;org.abchip.mimo.biz.service.product.GetProductDefaultResponse&gt; org.abchip.mimo.java.JavaCallable&lt;org.abchip.mimo.biz.service.product.GetProductDefaultResponse&gt;"
  * @generated
  */
-public interface GetProductDefault extends BizServiceRequest<GetProductDefaultResponse>, Callable<GetProductDefaultResponse> {
+public interface GetProductDefault extends ServiceRequest<GetProductDefaultResponse>, Callable<GetProductDefaultResponse> {
 } // GetProductDefault

@@ -124,9 +124,6 @@ import org.abchip.mimo.biz.model.webapp.visit.VisitPackage;
 import org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage;
 
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
-
-import org.abchip.mimo.biz.service.BizServicePackage;
-
 import org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl;
 import org.abchip.mimo.biz.service.common.impl.CommonPackageImpl;
 import org.abchip.mimo.biz.service.entity.ConvertSeeds;
@@ -139,8 +136,6 @@ import org.abchip.mimo.biz.service.entity.DatabaseType;
 import org.abchip.mimo.biz.service.entity.EntityFactory;
 import org.abchip.mimo.biz.service.entity.EntityPackage;
 import org.abchip.mimo.biz.service.entity.ExportEntities;
-import org.abchip.mimo.biz.service.impl.BizServicePackageImpl;
-
 import org.abchip.mimo.biz.service.order.impl.OrderPackageImpl;
 import org.abchip.mimo.biz.service.party.impl.PartyPackageImpl;
 import org.abchip.mimo.biz.service.product.impl.ProductPackageImpl;
@@ -329,9 +324,7 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		MimoPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
-		BizServicePackageImpl theBizServicePackage = (BizServicePackageImpl)(registeredPackage instanceof BizServicePackageImpl ? registeredPackage : BizServicePackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.accounting.AccountingPackage.eNS_URI);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.accounting.AccountingPackage.eNS_URI);
 		AccountingPackageImpl theAccountingPackage_1 = (AccountingPackageImpl)(registeredPackage instanceof AccountingPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.accounting.AccountingPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.common.CommonPackage.eNS_URI);
 		CommonPackageImpl theCommonPackage_1 = (CommonPackageImpl)(registeredPackage instanceof CommonPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.common.CommonPackage.eINSTANCE);
@@ -344,7 +337,6 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 
 		// Create package meta-data objects
 		theEntityPackage.createPackageContents();
-		theBizServicePackage.createPackageContents();
 		theAccountingPackage_1.createPackageContents();
 		theCommonPackage_1.createPackageContents();
 		theOrderPackage_1.createPackageContents();
@@ -353,7 +345,6 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 
 		// Initialize created meta-data
 		theEntityPackage.initializePackageContents();
-		theBizServicePackage.initializePackageContents();
 		theAccountingPackage_1.initializePackageContents();
 		theCommonPackage_1.initializePackageContents();
 		theOrderPackage_1.initializePackageContents();
@@ -598,7 +589,6 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		// Obtain other dependent packages
 		ServicePackage theServicePackage = (ServicePackage)EPackage.Registry.INSTANCE.getEPackage(ServicePackage.eNS_URI);
 		JavaPackage theJavaPackage = (JavaPackage)EPackage.Registry.INSTANCE.getEPackage(JavaPackage.eNS_URI);
-		BizServicePackage theBizServicePackage = (BizServicePackage)EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
 
 		// Create type parameters
 
@@ -628,7 +618,7 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		createTenantMasterEClass.getEGenericSuperTypes().add(g1);
 		createTenantPartyEClass.getESuperTypes().add(this.getCreateTenant());
 		createTenantTestEClass.getESuperTypes().add(this.getCreateTenant());
-		g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
+		g1 = createEGenericType(theServicePackage.getServiceRequest());
 		g2 = createEGenericType(theServicePackage.getServiceResponse());
 		g1.getETypeArguments().add(g2);
 		exportEntitiesEClass.getEGenericSuperTypes().add(g1);
@@ -666,6 +656,9 @@ public class EntityPackageImpl extends EPackageImpl implements EntityPackage {
 		initEEnum(databaseTypeEEnum, DatabaseType.class, "DatabaseType");
 		addEEnumLiteral(databaseTypeEEnum, DatabaseType.DERBY);
 		addEEnumLiteral(databaseTypeEEnum, DatabaseType.POSTGRE_SQL);
+
+		// Create resource
+		createResource(eNS_URI);
 	}
 
 } //EntityPackageImpl

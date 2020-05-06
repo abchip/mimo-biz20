@@ -9,9 +9,8 @@ package org.abchip.mimo.biz.service.entity.impl;
 
 import org.abchip.mimo.biz.service.entity.EntityPackage;
 import org.abchip.mimo.biz.service.entity.ExportEntities;
-
-import org.abchip.mimo.biz.service.impl.BizServiceRequestImpl;
 import org.abchip.mimo.service.ServiceResponse;
+import org.abchip.mimo.service.impl.ServiceRequestImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -27,7 +26,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ExportEntitiesImpl extends BizServiceRequestImpl<ServiceResponse> implements ExportEntities {
+public class ExportEntitiesImpl extends ServiceRequestImpl<ServiceResponse> implements ExportEntities {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -46,6 +45,23 @@ public class ExportEntitiesImpl extends BizServiceRequestImpl<ServiceResponse> i
 	@Override
 	protected EClass eStaticClass() {
 		return EntityPackage.Literals.EXPORT_ENTITIES;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 4;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	/**

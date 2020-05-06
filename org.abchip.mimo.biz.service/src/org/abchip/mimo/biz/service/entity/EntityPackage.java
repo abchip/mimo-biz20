@@ -7,8 +7,6 @@
  */
 package org.abchip.mimo.biz.service.entity;
 
-import org.abchip.mimo.biz.service.BizServicePackage;
-
 import org.abchip.mimo.service.ServicePackage;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -111,6 +109,15 @@ public interface EntityPackage extends EPackage {
 	int CONVERT_SEEDS__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONVERT_SEEDS__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
+
+	/**
 	 * The feature id for the '<em><b>Readers</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -165,6 +172,15 @@ public interface EntityPackage extends EPackage {
 	 * @ordered
 	 */
 	int CREATE_TENANT__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
@@ -231,6 +247,15 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT_DEMO__CONTEXT = CREATE_TENANT__CONTEXT;
 
 	/**
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_DEMO__USER_PROFILE = CREATE_TENANT__USER_PROFILE;
+
+	/**
 	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -295,6 +320,15 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT_MASTER__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_MASTER__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
+
+	/**
 	 * The number of structural features of the '<em>Create Tenant Master</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -339,6 +373,15 @@ public interface EntityPackage extends EPackage {
 	 * @ordered
 	 */
 	int CREATE_TENANT_PARTY__CONTEXT = CREATE_TENANT__CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_PARTY__USER_PROFILE = CREATE_TENANT__USER_PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
@@ -432,6 +475,15 @@ public interface EntityPackage extends EPackage {
 	int CREATE_TENANT_TEST__CONTEXT = CREATE_TENANT__CONTEXT;
 
 	/**
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CREATE_TENANT_TEST__USER_PROFILE = CREATE_TENANT__USER_PROFILE;
+
+	/**
 	 * The feature id for the '<em><b>Db Type</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -465,7 +517,7 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXPORT_ENTITIES__LOCALE = BizServicePackage.BIZ_SERVICE_REQUEST__LOCALE;
+	int EXPORT_ENTITIES__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
 
 	/**
 	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
@@ -474,7 +526,7 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXPORT_ENTITIES__TENANT = BizServicePackage.BIZ_SERVICE_REQUEST__TENANT;
+	int EXPORT_ENTITIES__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
 
 	/**
 	 * The feature id for the '<em><b>Context</b></em>' reference.
@@ -483,16 +535,16 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXPORT_ENTITIES__CONTEXT = BizServicePackage.BIZ_SERVICE_REQUEST__CONTEXT;
+	int EXPORT_ENTITIES__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
 
 	/**
-	 * The feature id for the '<em><b>User Login</b></em>' containment reference.
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int EXPORT_ENTITIES__USER_LOGIN = BizServicePackage.BIZ_SERVICE_REQUEST__USER_LOGIN;
+	int EXPORT_ENTITIES__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
 
 	/**
 	 * The feature id for the '<em><b>Path To</b></em>' attribute.
@@ -501,7 +553,7 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXPORT_ENTITIES__PATH_TO = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 0;
+	int EXPORT_ENTITIES__PATH_TO = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
 
 	/**
 	 * The number of structural features of the '<em>Export Entities</em>' class.
@@ -510,7 +562,7 @@ public interface EntityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int EXPORT_ENTITIES_FEATURE_COUNT = BizServicePackage.BIZ_SERVICE_REQUEST_FEATURE_COUNT + 1;
+	int EXPORT_ENTITIES_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.service.entity.DatabaseType <em>Database Type</em>}' enum.

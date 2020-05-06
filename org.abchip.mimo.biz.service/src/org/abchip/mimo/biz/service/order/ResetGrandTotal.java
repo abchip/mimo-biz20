@@ -7,7 +7,7 @@
  */
 package org.abchip.mimo.biz.service.order;
 
-import org.abchip.mimo.biz.service.BizServiceRequest;
+import org.abchip.mimo.service.ServiceRequest;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +25,7 @@ import org.abchip.mimo.biz.service.BizServiceRequest;
  * @model
  * @generated
  */
-public interface ResetGrandTotal extends BizServiceRequest<ResetGrandTotalResponse> {
+public interface ResetGrandTotal extends ServiceRequest<ResetGrandTotalResponse> {
 	/**
 	 * Returns the value of the '<em><b>Order Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

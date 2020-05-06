@@ -13,12 +13,15 @@ import java.util.Map;
 import java.util.concurrent.Future;
 
 import org.abchip.mimo.biz.asf.plugins.entity.EntityUtils;
+import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.context.UserProfile;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
 import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceRequest;
 import org.abchip.mimo.service.ServiceResponse;
 import org.abchip.mimo.service.impl.ServiceProviderImpl;
+import org.abchip.mimo.util.Strings;
 import org.apache.ofbiz.entity.Delegator;
 import org.apache.ofbiz.entity.DelegatorFactory;
 import org.apache.ofbiz.service.GenericServiceException;
@@ -91,8 +94,14 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 
 			Object value = frame.getValue(request, slot.getName(), false, false);
 			value = EntityUtils.toBizValue(delegator, slot, value);
-			if (value != null)
-				context.put(slot.getName(), value);
+			if (value != null) {
+
+				// mapping UserProfile -> UserLogin
+				if (UserProfile.class.getSimpleName().equals(Strings.firstToUpper(slot.getName())))
+					context.put(Strings.firstToLower(UserLogin.class.getSimpleName()), value);
+				else
+					context.put(slot.getName(), value);
+			}
 		}
 
 		return context;

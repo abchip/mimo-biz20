@@ -7,11 +7,10 @@
  */
 package org.abchip.mimo.biz.service.order.impl;
 
-import org.abchip.mimo.biz.service.impl.BizServiceRequestImpl;
-
 import org.abchip.mimo.biz.service.order.ChangeOrderStatus;
 import org.abchip.mimo.biz.service.order.ChangeOrderStatusResponse;
 import org.abchip.mimo.biz.service.order.OrderPackage;
+import org.abchip.mimo.service.impl.ServiceRequestImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -30,7 +29,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ChangeOrderStatusImpl extends BizServiceRequestImpl<ChangeOrderStatusResponse> implements ChangeOrderStatus {
+public class ChangeOrderStatusImpl extends ServiceRequestImpl<ChangeOrderStatusResponse> implements ChangeOrderStatus {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -49,6 +48,23 @@ public class ChangeOrderStatusImpl extends BizServiceRequestImpl<ChangeOrderStat
 	@Override
 	protected EClass eStaticClass() {
 		return OrderPackage.Literals.CHANGE_ORDER_STATUS;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 4;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	protected int eStaticFeatureCount() {
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	/**

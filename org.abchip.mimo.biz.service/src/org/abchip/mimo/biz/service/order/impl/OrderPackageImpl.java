@@ -124,15 +124,9 @@ import org.abchip.mimo.biz.model.webapp.visit.VisitPackage;
 import org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage;
 
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
-
-import org.abchip.mimo.biz.service.BizServicePackage;
-
 import org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl;
 import org.abchip.mimo.biz.service.common.impl.CommonPackageImpl;
 import org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl;
-
-import org.abchip.mimo.biz.service.impl.BizServicePackageImpl;
-
 import org.abchip.mimo.biz.service.order.ChangeOrderStatus;
 import org.abchip.mimo.biz.service.order.ChangeOrderStatusResponse;
 import org.abchip.mimo.biz.service.order.OrderFactory;
@@ -312,9 +306,7 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		MimoPackage.eINSTANCE.eClass();
 
 		// Obtain or create and register interdependencies
-		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
-		BizServicePackageImpl theBizServicePackage = (BizServicePackageImpl)(registeredPackage instanceof BizServicePackageImpl ? registeredPackage : BizServicePackage.eINSTANCE);
-		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.accounting.AccountingPackage.eNS_URI);
+		Object registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.accounting.AccountingPackage.eNS_URI);
 		AccountingPackageImpl theAccountingPackage_1 = (AccountingPackageImpl)(registeredPackage instanceof AccountingPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.accounting.AccountingPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.common.CommonPackage.eNS_URI);
 		CommonPackageImpl theCommonPackage_1 = (CommonPackageImpl)(registeredPackage instanceof CommonPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.common.CommonPackage.eINSTANCE);
@@ -327,7 +319,6 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 
 		// Create package meta-data objects
 		theOrderPackage.createPackageContents();
-		theBizServicePackage.createPackageContents();
 		theAccountingPackage_1.createPackageContents();
 		theCommonPackage_1.createPackageContents();
 		theEntityPackage_1.createPackageContents();
@@ -336,7 +327,6 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 
 		// Initialize created meta-data
 		theOrderPackage.initializePackageContents();
-		theBizServicePackage.initializePackageContents();
 		theAccountingPackage_1.initializePackageContents();
 		theCommonPackage_1.initializePackageContents();
 		theEntityPackage_1.initializePackageContents();
@@ -675,7 +665,6 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		BizServicePackage theBizServicePackage = (BizServicePackage)EPackage.Registry.INSTANCE.getEPackage(BizServicePackage.eNS_URI);
 		ServicePackage theServicePackage = (ServicePackage)EPackage.Registry.INSTANCE.getEPackage(ServicePackage.eNS_URI);
 
 		// Create type parameters
@@ -683,17 +672,17 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		EGenericType g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
+		EGenericType g1 = createEGenericType(theServicePackage.getServiceRequest());
 		EGenericType g2 = createEGenericType(this.getChangeOrderStatusResponse());
 		g1.getETypeArguments().add(g2);
 		changeOrderStatusEClass.getEGenericSuperTypes().add(g1);
 		changeOrderStatusResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
-		g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
+		g1 = createEGenericType(theServicePackage.getServiceRequest());
 		g2 = createEGenericType(this.getReserveStoreInventoryResponse());
 		g1.getETypeArguments().add(g2);
 		reserveStoreInventoryEClass.getEGenericSuperTypes().add(g1);
 		reserveStoreInventoryResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
-		g1 = createEGenericType(theBizServicePackage.getBizServiceRequest());
+		g1 = createEGenericType(theServicePackage.getServiceRequest());
 		g2 = createEGenericType(this.getResetGrandTotalResponse());
 		g1.getETypeArguments().add(g2);
 		resetGrandTotalEClass.getEGenericSuperTypes().add(g1);
@@ -729,6 +718,9 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		initEAttribute(getResetGrandTotal_OrderId(), ecorePackage.getEString(), "orderId", null, 0, 1, ResetGrandTotal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(resetGrandTotalResponseEClass, ResetGrandTotalResponse.class, "ResetGrandTotalResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		// Create resource
+		createResource(eNS_URI);
 	}
 
 } //OrderPackageImpl

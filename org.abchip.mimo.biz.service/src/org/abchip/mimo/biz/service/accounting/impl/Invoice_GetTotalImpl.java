@@ -45,7 +45,7 @@ public class Invoice_GetTotalImpl extends ServiceMethodRequestImpl<Invoice, BigD
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 4;
+	protected static final int ESTATIC_FEATURE_COUNT = 5;
 
 	/**
 	 * <!-- begin-user-doc -->

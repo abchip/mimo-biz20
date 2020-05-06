@@ -8,7 +8,7 @@
 package org.abchip.mimo.biz.service.order;
 
 import java.math.BigDecimal;
-import org.abchip.mimo.biz.service.BizServiceRequest;
+import org.abchip.mimo.service.ServiceRequest;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +32,7 @@ import org.abchip.mimo.biz.service.BizServiceRequest;
  * @model
  * @generated
  */
-public interface ReserveStoreInventory extends BizServiceRequest<ReserveStoreInventoryResponse> {
+public interface ReserveStoreInventory extends ServiceRequest<ReserveStoreInventoryResponse> {
 
 	/**
 	 * Returns the value of the '<em><b>Facility Id</b></em>' attribute.
