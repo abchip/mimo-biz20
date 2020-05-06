@@ -52,6 +52,10 @@ public class EcoreUtils {
 
 	private static final Logger LOGGER = Logs.getLogger(EcoreUtils.class);
 
+	public static EClass copy(EClass eClass) {
+		return EcoreUtil.copy(eClass);
+	}
+
 	public static EAnnotation copy(EAnnotation eAnnotation) {
 		return EcoreUtil.copy(eAnnotation);
 	}

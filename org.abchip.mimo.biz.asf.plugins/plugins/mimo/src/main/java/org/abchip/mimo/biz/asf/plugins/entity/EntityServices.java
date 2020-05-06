@@ -59,6 +59,7 @@ import org.eclipse.emf.ecore.EcoreFactory;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
 import org.osgi.service.log.Logger;
 
@@ -125,6 +126,15 @@ public class EntityServices {
 
 		EClass dstEClass = (EClass) dstEClassifier;
 		EClass srcEClass = (EClass) srcEClassifier;
+
+		if (!srcEClass.getESuperTypes().get(0).getName().equals(dstEClass.getESuperTypes().get(0).getName())) {
+			LOGGER.info("Class {} override super {}", dstEClassifier.getName(), EcoreUtil.getURI(srcEClass.getESuperTypes().get(0)));
+
+			dstEClass.getESuperTypes().clear();
+			for (EClass srcSuperEClass : srcEClass.getESuperTypes()) {
+				dstEClass.getESuperTypes().add(srcSuperEClass);
+			}
+		}
 
 		boolean result = false;
 		for (EOperation srcEOperation : srcEClass.getEOperations()) {
