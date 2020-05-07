@@ -9,6 +9,7 @@
 package org.abchip.mimo.biz.test.command.runner;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -37,13 +38,21 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
 import org.abchip.mimo.biz.service.common.GetCommonDefault;
 import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
+import org.abchip.mimo.biz.service.order.ReserveStoreInventory;
+import org.abchip.mimo.biz.service.order.ReserveStoreInventoryResponse;
+import org.abchip.mimo.biz.service.order.ResetGrandTotal;
+import org.abchip.mimo.biz.service.order.ResetGrandTotalResponse;
 import org.abchip.mimo.biz.service.party.GetPartyDefault;
 import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
+import org.abchip.mimo.biz.service.product.CalcTax;
+import org.abchip.mimo.biz.service.product.CalcTaxResponse;
 import org.abchip.mimo.biz.service.product.CalculateProductPrice;
 import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
+import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceException;
+import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceManager;
@@ -59,6 +68,12 @@ public class CreateSalesOrder implements Callable<Long> {
 
 	Party party;
 	List<Product> products;
+	
+	List<BigDecimal> amountList = new ArrayList<BigDecimal>();
+	List<BigDecimal> priceList = new ArrayList<BigDecimal>();
+	List<Product> productList = new ArrayList<Product>();
+	List<BigDecimal> quantityList = new ArrayList<BigDecimal>();
+	List<BigDecimal> shippingList = new ArrayList<BigDecimal>();
 
 	public CreateSalesOrder(Context context, Party party, List<Product> products) {
 		this.context = context;
@@ -136,10 +151,8 @@ public class CreateSalesOrder implements Callable<Long> {
 
 		// OrderItem
 		long i = 1;
-		long total = 0;
 		for (Product product : this.products) {
 			createOrderItem(serviceManager, orderHeader, StressTestUtils.formatPaddedNumber(i++, 5), shipGroupSeqId, 1, product);
-			total++;
 		}
 		// OrderRole
 		ResourceWriter<OrderRole> orderRoleWriter = context.getResourceManager().getResourceWriter(OrderRole.class);
@@ -181,18 +194,67 @@ public class CreateSalesOrder implements Callable<Long> {
 		orderPaymentPreference.setPaymentMethodTypeId(context.createProxy(PaymentMethodType.class, "EXT_COD"));
 		orderPaymentPreferenceWriter.create(orderPaymentPreference);
 
+		// Ricalcolo tasse
+		CalcTax calcTax = serviceManager.prepare(CalcTax.class);
+		calcTax.setProductStoreId(orderHeader.getProductStoreId().getID());
+		calcTax.setPayToPartyId(partyDefault.getOrganization().getID());
+		calcTax.setBillToPartyId(party.getID());
+		calcTax.getItemAmountList().addAll(amountList);
+		calcTax.getItemPriceList().addAll(priceList);
+		calcTax.getItemProductList().addAll(productList);
+		calcTax.getItemQuantityList().addAll(quantityList);
+		calcTax.getItemShippingList().addAll(shippingList);
+		calcTax.setOrderShippingAmount(new BigDecimal(0));
+		calcTax.setShippingAddress(party.getPostalAddress());
+		calcTax.setOrderPromotionsAmount(new BigDecimal(0));
+				
+		CalcTaxResponse calcTaxResponse = serviceManager.execute(calcTax);
+		if (calcTaxResponse.isError()) {
+			LOGGER.error("Errore in ricalcolo tasse");
+		}
+
+		// Update Total OrderHeader
+		ResetGrandTotal resetGrandTotal = serviceManager.prepare(ResetGrandTotal.class);
+		resetGrandTotal.setOrderId(orderHeader.getOrderId());
+		ResetGrandTotalResponse grandTotalresponse = serviceManager.execute(resetGrandTotal);
+		if (grandTotalresponse.isError()) {
+			LOGGER.error("Errore in aggiornamento testata documento");
+		}
+		
 		// Inventory
-		//
-		// TODO qui richiamare il servizio calcTax per aggiungere l'iva all'ordine
-		// (OrderAdjustment) che poi sarà trasferita nella fattura
-		//
+		ResourceReader<OrderItemShipGroupAssoc> orderItemShipGroupAssocReader = context.getResourceManager().getResourceReader(OrderItemShipGroupAssoc.class);
+		ResourceReader<OrderItem> orderItemReader = context.getResourceManager().getResourceReader(OrderItem.class);
+		String filter = "orderId = \"" + orderHeader.getOrderId() + "\"";
 
-		// TODO richiamare il servizio reserveStoreInventory per finalizzare l'ordine
 
-		// TODO chiamare il servizio resetGrandTotal
-		orderHeader.setGrandTotal(new BigDecimal(total));
-		orderHeaderWriter.update(orderHeader);
+		try (EntityIterator<OrderItemShipGroupAssoc> orderItemShipGroupAssocs = orderItemShipGroupAssocReader.find(filter)) {
+			for (OrderItemShipGroupAssoc orderItemShipGroupAssoc : orderItemShipGroupAssocs) {
 
+				OrderItem orderItem = orderItemReader.lookup(orderHeader.getOrderId() + "/" + orderItemShipGroupAssoc.getOrderItemSeqId());
+
+				// reserve the product
+				ReserveStoreInventory reserveStoreInventory = serviceManager.prepare(ReserveStoreInventory.class);
+				reserveStoreInventory.setProductStoreId(orderHeader.getProductStoreId().getID());
+				reserveStoreInventory.setProductId(orderItem.getProductId().getProductId());
+				reserveStoreInventory.setOrderId(orderItem.getOrderId().getOrderId());
+				reserveStoreInventory.setOrderItemSeqId(orderItem.getOrderItemSeqId());
+				reserveStoreInventory.setShipGroupSeqId(orderItemShipGroupAssoc.getShipGroupSeqId());
+				// verificare da dove prenderlo
+				reserveStoreInventory.setFacilityId(null);
+				// use the quantity from the orderItemShipGroupAssoc, NOT the orderItem, these
+				// are reserved by item-group assoc
+				reserveStoreInventory.setQuantity(orderItemShipGroupAssoc.getQuantity());
+
+				ReserveStoreInventoryResponse inventoryResponse = serviceManager.execute(reserveStoreInventory);
+
+				if (inventoryResponse.isError()) {
+					String invErrMsg = "The product ";
+					invErrMsg += orderItem.getProductId();
+					invErrMsg += " with ID " + orderItem.getProductId() + " is no longer in stock. Please try reducing the quantity or removing the product from this order.";
+					LOGGER.error(invErrMsg);
+				}
+			}
+		}
 	}
 
 	private void createOrderItem(ServiceManager serviceManager, OrderHeader orderHeader, String itemSeqiD, String shipGroupSeqId, int quantity, Product product)
@@ -243,6 +305,12 @@ public class CreateSalesOrder implements Callable<Long> {
 		orderItemShipGroupAssoc.setShipGroupSeqId(shipGroupSeqId);
 		orderItemShipGroupAssoc.setQuantity(new BigDecimal(quantity));
 		orderItemShipGroupAssocWriter.create(orderItemShipGroupAssoc);
+		
+		amountList.add(orderItem.getQuantity());
+		priceList.add(orderItem.getUnitPrice());
+		productList.add(product);
+		quantityList.add(orderItem.getQuantity());
+		shippingList.add(new BigDecimal(0));
 	}
 
 	private void createContactMech(ContactMech contactMech, OrderHeader orderHeader, String purposeType) throws ResourceException {

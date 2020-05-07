@@ -66,6 +66,8 @@ public class ProductFactoryImpl extends EFactoryImpl implements ProductFactory {
 			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE: return (EObject)createCalculateProductPriceResponse();
 			case ProductPackage.GET_PRODUCT_DEFAULT: return (EObject)createGetProductDefault();
 			case ProductPackage.GET_PRODUCT_DEFAULT_RESPONSE: return (EObject)createGetProductDefaultResponse();
+			case ProductPackage.CALC_TAX: return (EObject)createCalcTax();
+			case ProductPackage.CALC_TAX_RESPONSE: return (EObject)createCalcTaxResponse();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -113,6 +115,28 @@ public class ProductFactoryImpl extends EFactoryImpl implements ProductFactory {
 	public GetProductDefaultResponse createGetProductDefaultResponse() {
 		GetProductDefaultResponseImpl getProductDefaultResponse = new GetProductDefaultResponseImpl();
 		return getProductDefaultResponse;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CalcTax createCalcTax() {
+		CalcTaxImpl calcTax = new CalcTaxImpl();
+		return calcTax;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CalcTaxResponse createCalcTaxResponse() {
+		CalcTaxResponseImpl calcTaxResponse = new CalcTaxResponseImpl();
+		return calcTaxResponse;
 	}
 
 	/**

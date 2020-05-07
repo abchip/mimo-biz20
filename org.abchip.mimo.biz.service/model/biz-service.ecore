@@ -250,6 +250,37 @@
       <eStructuralFeatures xsi:type="ecore:EReference" name="facilityPostalAddress"
           lowerBound="1" eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//party/contact/PostalAddress"/>
     </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CalcTax">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="billToPartyId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="facilityId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="itemAmountList" lowerBound="1"
+          upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="itemPriceList" lowerBound="1"
+          upperBound="-1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="itemProductList" lowerBound="1"
+          upperBound="-1" eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//product/product/Product"
+          containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="itemQuantityList" upperBound="-1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="itemShippingList" upperBound="-1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="orderShippingAmount"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="payToPartyId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="productStoreId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EReference" name="shippingAddress" eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//party/contact/PostalAddress"
+          containment="true"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="orderPromotionsAmount"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
+        <eTypeArguments eClassifier="#//product/CalcTaxResponse"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CalcTaxResponse" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse">
+      <eStructuralFeatures xsi:type="ecore:EReference" name="orderAdjustments" upperBound="-1"
+          eType="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//order/order/OrderAdjustment"
+          containment="true"/>
+    </eClassifiers>
   </eSubpackages>
   <eSubpackages name="security" nsURI="http://www.abchip.org/mimo/biz/service/security"
       nsPrefix="biz-security"/>

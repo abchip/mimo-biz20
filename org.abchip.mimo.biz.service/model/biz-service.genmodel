@@ -163,6 +163,23 @@
         <genFeatures notify="false" createChild="false" propertySortChoices="true"
             ecoreFeature="ecore:EReference biz-service.ecore#//product/GetProductDefaultResponse/facilityPostalAddress"/>
       </genClasses>
+      <genClasses ecoreClass="biz-service.ecore#//product/CalcTax">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//product/CalcTax/billToPartyId"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//product/CalcTax/facilityId"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//product/CalcTax/itemAmountList"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//product/CalcTax/itemPriceList"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference biz-service.ecore#//product/CalcTax/itemProductList"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//product/CalcTax/itemQuantityList"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//product/CalcTax/itemShippingList"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//product/CalcTax/orderShippingAmount"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//product/CalcTax/payToPartyId"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//product/CalcTax/productStoreId"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference biz-service.ecore#//product/CalcTax/shippingAddress"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//product/CalcTax/orderPromotionsAmount"/>
+      </genClasses>
+      <genClasses ecoreClass="biz-service.ecore#//product/CalcTaxResponse">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference biz-service.ecore#//product/CalcTaxResponse/orderAdjustments"/>
+      </genClasses>
     </nestedGenPackages>
     <nestedGenPackages prefix="Security" basePackage="org.abchip.mimo.biz.service"
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//security"/>

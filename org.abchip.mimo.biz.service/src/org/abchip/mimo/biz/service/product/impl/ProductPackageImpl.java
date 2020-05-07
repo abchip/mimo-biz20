@@ -72,8 +72,10 @@ import org.abchip.mimo.biz.service.common.impl.CommonPackageImpl;
 import org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl;
 import org.abchip.mimo.biz.service.order.impl.OrderPackageImpl;
 import org.abchip.mimo.biz.service.party.impl.PartyPackageImpl;
+import org.abchip.mimo.biz.service.product.CalcTax;
 import org.abchip.mimo.biz.service.product.CalcTaxForDisplay;
 import org.abchip.mimo.biz.service.product.CalcTaxForDisplayResponse;
+import org.abchip.mimo.biz.service.product.CalcTaxResponse;
 import org.abchip.mimo.biz.service.product.CalculateProductPrice;
 import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
 import org.abchip.mimo.biz.service.product.GetProductDefault;
@@ -124,6 +126,20 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	 * @generated
 	 */
 	private EClass getProductDefaultResponseEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass calcTaxEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass calcTaxResponseEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -401,6 +417,156 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getCalcTax() {
+		return calcTaxEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCalcTax_BillToPartyId() {
+		return (EAttribute)calcTaxEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCalcTax_FacilityId() {
+		return (EAttribute)calcTaxEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCalcTax_ItemAmountList() {
+		return (EAttribute)calcTaxEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCalcTax_ItemPriceList() {
+		return (EAttribute)calcTaxEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCalcTax_ItemProductList() {
+		return (EReference)calcTaxEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCalcTax_ItemQuantityList() {
+		return (EAttribute)calcTaxEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCalcTax_ItemShippingList() {
+		return (EAttribute)calcTaxEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCalcTax_OrderShippingAmount() {
+		return (EAttribute)calcTaxEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCalcTax_PayToPartyId() {
+		return (EAttribute)calcTaxEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCalcTax_ProductStoreId() {
+		return (EAttribute)calcTaxEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCalcTax_ShippingAddress() {
+		return (EReference)calcTaxEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCalcTax_OrderPromotionsAmount() {
+		return (EAttribute)calcTaxEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCalcTaxResponse() {
+		return calcTaxResponseEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getCalcTaxResponse_OrderAdjustments() {
+		return (EReference)calcTaxResponseEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getCalcTaxForDisplay() {
 		return calcTaxForDisplayEClass;
 	}
@@ -561,6 +727,23 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 
 		getProductDefaultResponseEClass = createEClass(GET_PRODUCT_DEFAULT_RESPONSE);
 		createEReference(getProductDefaultResponseEClass, GET_PRODUCT_DEFAULT_RESPONSE__FACILITY_POSTAL_ADDRESS);
+
+		calcTaxEClass = createEClass(CALC_TAX);
+		createEAttribute(calcTaxEClass, CALC_TAX__BILL_TO_PARTY_ID);
+		createEAttribute(calcTaxEClass, CALC_TAX__FACILITY_ID);
+		createEAttribute(calcTaxEClass, CALC_TAX__ITEM_AMOUNT_LIST);
+		createEAttribute(calcTaxEClass, CALC_TAX__ITEM_PRICE_LIST);
+		createEReference(calcTaxEClass, CALC_TAX__ITEM_PRODUCT_LIST);
+		createEAttribute(calcTaxEClass, CALC_TAX__ITEM_QUANTITY_LIST);
+		createEAttribute(calcTaxEClass, CALC_TAX__ITEM_SHIPPING_LIST);
+		createEAttribute(calcTaxEClass, CALC_TAX__ORDER_SHIPPING_AMOUNT);
+		createEAttribute(calcTaxEClass, CALC_TAX__PAY_TO_PARTY_ID);
+		createEAttribute(calcTaxEClass, CALC_TAX__PRODUCT_STORE_ID);
+		createEReference(calcTaxEClass, CALC_TAX__SHIPPING_ADDRESS);
+		createEAttribute(calcTaxEClass, CALC_TAX__ORDER_PROMOTIONS_AMOUNT);
+
+		calcTaxResponseEClass = createEClass(CALC_TAX_RESPONSE);
+		createEReference(calcTaxResponseEClass, CALC_TAX_RESPONSE__ORDER_ADJUSTMENTS);
 	}
 
 	/**
@@ -617,6 +800,11 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 		g1.getETypeArguments().add(g2);
 		getProductDefaultEClass.getEGenericSuperTypes().add(g1);
 		getProductDefaultResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
+		g1 = createEGenericType(theServicePackage.getServiceRequest());
+		g2 = createEGenericType(this.getCalcTaxResponse());
+		g1.getETypeArguments().add(g2);
+		calcTaxEClass.getEGenericSuperTypes().add(g1);
+		calcTaxResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(calcTaxForDisplayEClass, CalcTaxForDisplay.class, "CalcTaxForDisplay", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -646,6 +834,23 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 
 		initEClass(getProductDefaultResponseEClass, GetProductDefaultResponse.class, "GetProductDefaultResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getGetProductDefaultResponse_FacilityPostalAddress(), theContactPackage_1.getPostalAddress(), null, "facilityPostalAddress", null, 1, 1, GetProductDefaultResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(calcTaxEClass, CalcTax.class, "CalcTax", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCalcTax_BillToPartyId(), ecorePackage.getEString(), "billToPartyId", null, 0, 1, CalcTax.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCalcTax_FacilityId(), ecorePackage.getEString(), "facilityId", null, 0, 1, CalcTax.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCalcTax_ItemAmountList(), ecorePackage.getEBigDecimal(), "itemAmountList", null, 1, -1, CalcTax.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCalcTax_ItemPriceList(), ecorePackage.getEBigDecimal(), "itemPriceList", null, 1, -1, CalcTax.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCalcTax_ItemProductList(), theProductPackage_1.getProduct(), null, "itemProductList", null, 1, -1, CalcTax.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCalcTax_ItemQuantityList(), ecorePackage.getEBigDecimal(), "itemQuantityList", null, 0, -1, CalcTax.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCalcTax_ItemShippingList(), ecorePackage.getEBigDecimal(), "itemShippingList", null, 0, -1, CalcTax.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCalcTax_OrderShippingAmount(), ecorePackage.getEBigDecimal(), "orderShippingAmount", null, 0, 1, CalcTax.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCalcTax_PayToPartyId(), ecorePackage.getEString(), "payToPartyId", null, 0, 1, CalcTax.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCalcTax_ProductStoreId(), ecorePackage.getEString(), "productStoreId", null, 0, 1, CalcTax.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCalcTax_ShippingAddress(), theContactPackage_1.getPostalAddress(), null, "shippingAddress", null, 0, 1, CalcTax.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCalcTax_OrderPromotionsAmount(), ecorePackage.getEBigDecimal(), "orderPromotionsAmount", null, 0, 1, CalcTax.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(calcTaxResponseEClass, CalcTaxResponse.class, "CalcTaxResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEReference(getCalcTaxResponse_OrderAdjustments(), theOrderPackage.getOrderAdjustment(), null, "orderAdjustments", null, 0, -1, CalcTaxResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
