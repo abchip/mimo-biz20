@@ -1,6 +1,7 @@
 package org.abchip.mimo.biz.test.accounting;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -14,22 +15,22 @@ public class StripePaymentManager {
 	
 	public static final String API_KEY = "sk_test_9HACrndqWGPN3Ox1hYNfuJQO00z4GR7fOI";
 	
-	public static PaymentIntent createPaymentIntent(String paymentType, BigDecimal amount, String currency, String description) {
-		PaymentIntent paymentIntent = null;
-		
-		try {
-			List<Object> paymentMethodTypes = new ArrayList<>();
-			paymentMethodTypes.add(paymentType);
+	public static PaymentIntent createPaymentIntent(String paymentType, BigDecimal amount, String currency, String description) throws StripeException {
+		List<Object> paymentMethodTypes = new ArrayList<>();
+		paymentMethodTypes.add(paymentType);
+		Map<String, Object> paymentParams = new HashMap<>();
 
-			Map<String, Object> paymentParams = new HashMap<>();
-			paymentParams.put("amount", amount);
-			paymentParams.put("currency", currency);
-			paymentParams.put("payment_method_types", paymentMethodTypes);
-			paymentParams.put("description", description);
-			paymentIntent = PaymentIntent.create(paymentParams);
-		} catch (StripeException e) {
-			e.printStackTrace();
-		}
+		// per l'amount bisogna passare un integer
+		amount = amount.setScale(2, RoundingMode.HALF_UP);
+		String amountString = amount.toString();
+		amountString = amountString.replace(".", "");
+		amountString = amountString.replace(",", "");
+		
+		paymentParams.put("amount", Integer.parseInt(amountString));
+		paymentParams.put("currency", currency);
+		paymentParams.put("payment_method_types", paymentMethodTypes);
+		paymentParams.put("description", description);
+		PaymentIntent paymentIntent = PaymentIntent.create(paymentParams);
 		
 		return paymentIntent;
 	}

@@ -36,12 +36,12 @@ public class CancelOrder implements Callable<Long> {
 	public Long call() throws Exception {
 		ServiceManager serviceManager = context.getServiceManager();
 		long time1 = System.currentTimeMillis();
-		approveOrder(serviceManager);
+		cancelOrder(serviceManager);
 		long time2 = System.currentTimeMillis();
 		return time2 - time1;
 	}
 
-	private void approveOrder(ServiceManager serviceManager) throws ResourceException, ServiceException {
+	private void cancelOrder(ServiceManager serviceManager) throws ResourceException, ServiceException {
 		if (orderId == null) {
 			LOGGER.error("Invalid order!!!");
 			return;

@@ -212,6 +212,7 @@ public class CreateSalesOrder implements Callable<Long> {
 		if (calcTaxResponse.isError()) {
 			LOGGER.error("Errore in ricalcolo tasse");
 		}
+		// TODO a questo punto con i campi di ritorno devo scrivere OrderAdjustment
 
 		// Update Total OrderHeader
 		ResetGrandTotal resetGrandTotal = serviceManager.prepare(ResetGrandTotal.class);

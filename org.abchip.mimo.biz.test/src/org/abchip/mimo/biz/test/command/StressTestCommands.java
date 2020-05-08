@@ -29,7 +29,9 @@ import org.abchip.mimo.biz.test.command.runner.CreatePurchaseInvoice;
 import org.abchip.mimo.biz.test.command.runner.CreatePurchaseOrder;
 import org.abchip.mimo.biz.test.command.runner.CreateSalesInvoice;
 import org.abchip.mimo.biz.test.command.runner.CreateSalesOrder;
+import org.abchip.mimo.biz.test.command.runner.ExpireAgreement;
 import org.abchip.mimo.biz.test.command.runner.HoldOrder;
+import org.abchip.mimo.biz.test.command.runner.RenewalAgreement;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextProvider;
 import org.abchip.mimo.tester.base.BaseTestCommands;
@@ -96,6 +98,24 @@ public class StressTestCommands extends BaseTestCommands {
 		}
 	}
 
+	public void _stressTestRenewalAgreement(CommandInterpreter interpreter) throws Exception {
+		try (ContextProvider context = login(interpreter)) {
+			stressTestRenewalAgreement(interpreter, context.get());
+		}
+	}
+
+	public void _stressTestExpireAgreement(CommandInterpreter interpreter) throws Exception {
+		try (ContextProvider context = login(interpreter)) {
+			long time1 = System.currentTimeMillis();
+			ExecutorService executor = Executors.newFixedThreadPool(1);
+			executor.submit(new ExpireAgreement(context.get(), nextArgument(interpreter)));
+			executor.shutdown();
+			executor.awaitTermination(1, TimeUnit.MINUTES);
+			long time2 = System.currentTimeMillis();
+			interpreter.println("Total time execution StressTestExpireAgreement: " + (time2 - time1));
+		}
+	}
+	
 	public void _stressTestApproveOrder(CommandInterpreter interpreter) throws Exception {
 		try (ContextProvider context = login(interpreter)) {
 			long time1 = System.currentTimeMillis();
@@ -277,6 +297,18 @@ public class StressTestCommands extends BaseTestCommands {
 
 		long time2 = System.currentTimeMillis();
 		interpreter.println("Total time execution StressTestAgreement: " + (time2 - time1));
+	}
+
+	private void stressTestRenewalAgreement(CommandInterpreter interpreter, Context context) throws Exception {
+
+		long time1 = System.currentTimeMillis();
+		ExecutorService executor = Executors.newFixedThreadPool(1);
+		executor.submit(new RenewalAgreement(context, nextArgument(interpreter)));
+		executor.shutdown();
+		executor.awaitTermination(1, TimeUnit.MINUTES);
+
+		long time2 = System.currentTimeMillis();
+		interpreter.println("Total time execution StressTestRenewalAgreement: " + (time2 - time1));
 	}
 
 	@SuppressWarnings("resource")
