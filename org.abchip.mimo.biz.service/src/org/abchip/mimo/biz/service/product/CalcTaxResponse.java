@@ -23,6 +23,7 @@ import org.abchip.mimo.service.ServiceResponse;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.service.product.CalcTaxResponse#getOrderAdjustments <em>Order Adjustments</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.product.CalcTaxResponse#getItemAdjustments <em>Item Adjustments</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.service.product.ProductPackage#getCalcTaxResponse()
@@ -41,5 +42,17 @@ public interface CalcTaxResponse extends ServiceResponse {
 	 * @generated
 	 */
 	List<OrderAdjustment> getOrderAdjustments();
+
+	/**
+	 * Returns the value of the '<em><b>Item Adjustments</b></em>' reference list.
+	 * The list contents are of type {@link java.util.List}<code>&lt;org.abchip.mimo.biz.model.order.order.OrderAdjustment&gt;</code>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Item Adjustments</em>' reference list.
+	 * @see org.abchip.mimo.biz.service.product.ProductPackage#getCalcTaxResponse_ItemAdjustments()
+	 * @model type="org.abchip.mimo.java.JavaList&lt;org.abchip.mimo.biz.model.order.order.OrderAdjustment&gt;" required="true"
+	 * @generated
+	 */
+	List<List<OrderAdjustment>> getItemAdjustments();
 
 } // CalcTaxResponse

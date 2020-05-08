@@ -567,6 +567,16 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getCalcTaxResponse_ItemAdjustments() {
+		return (EReference)calcTaxResponseEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getCalcTaxForDisplay() {
 		return calcTaxForDisplayEClass;
 	}
@@ -744,6 +754,7 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 
 		calcTaxResponseEClass = createEClass(CALC_TAX_RESPONSE);
 		createEReference(calcTaxResponseEClass, CALC_TAX_RESPONSE__ORDER_ADJUSTMENTS);
+		createEReference(calcTaxResponseEClass, CALC_TAX_RESPONSE__ITEM_ADJUSTMENTS);
 	}
 
 	/**
@@ -851,6 +862,10 @@ public class ProductPackageImpl extends EPackageImpl implements ProductPackage {
 
 		initEClass(calcTaxResponseEClass, CalcTaxResponse.class, "CalcTaxResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getCalcTaxResponse_OrderAdjustments(), theOrderPackage.getOrderAdjustment(), null, "orderAdjustments", null, 0, -1, CalcTaxResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		g1 = createEGenericType(theJavaPackage.getJavaList());
+		g2 = createEGenericType(theOrderPackage.getOrderAdjustment());
+		g1.getETypeArguments().add(g2);
+		initEReference(getCalcTaxResponse_ItemAdjustments(), g1, null, "itemAdjustments", null, 1, -1, CalcTaxResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

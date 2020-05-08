@@ -27,6 +27,7 @@ import org.eclipse.emf.ecore.EClass;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.service.product.impl.CalcTaxResponseImpl#getOrderAdjustments <em>Order Adjustments</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.service.product.impl.CalcTaxResponseImpl#getItemAdjustments <em>Item Adjustments</em>}</li>
  * </ul>
  *
  * @generated
@@ -77,6 +78,17 @@ public class CalcTaxResponseImpl extends ServiceResponseImpl implements CalcTaxR
 	@Override
 	public List<OrderAdjustment> getOrderAdjustments() {
 		return (List<OrderAdjustment>)eGet(ProductPackage.Literals.CALC_TAX_RESPONSE__ORDER_ADJUSTMENTS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<List<OrderAdjustment>> getItemAdjustments() {
+		return (List<List<OrderAdjustment>>)eGet(ProductPackage.Literals.CALC_TAX_RESPONSE__ITEM_ADJUSTMENTS, true);
 	}
 
 } //CalcTaxResponseImpl

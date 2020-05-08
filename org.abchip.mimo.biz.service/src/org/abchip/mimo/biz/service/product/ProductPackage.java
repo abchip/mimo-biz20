@@ -755,13 +755,22 @@ public interface ProductPackage extends EPackage {
 	int CALC_TAX_RESPONSE__ORDER_ADJUSTMENTS = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
 
 	/**
+	 * The feature id for the '<em><b>Item Adjustments</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALC_TAX_RESPONSE__ITEM_ADJUSTMENTS = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 1;
+
+	/**
 	 * The number of structural features of the '<em>Calc Tax Response</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CALC_TAX_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 1;
+	int CALC_TAX_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 2;
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.product.CalculateProductPrice <em>Calculate Product Price</em>}'.
@@ -1042,6 +1051,17 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getCalcTaxResponse_OrderAdjustments();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.service.product.CalcTaxResponse#getItemAdjustments <em>Item Adjustments</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Item Adjustments</em>'.
+	 * @see org.abchip.mimo.biz.service.product.CalcTaxResponse#getItemAdjustments()
+	 * @see #getCalcTaxResponse()
+	 * @generated
+	 */
+	EReference getCalcTaxResponse_ItemAdjustments();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.product.CalcTaxForDisplay <em>Calc Tax For Display</em>}'.
@@ -1403,6 +1423,14 @@ public interface ProductPackage extends EPackage {
 		 * @generated
 		 */
 		EReference CALC_TAX_RESPONSE__ORDER_ADJUSTMENTS = eINSTANCE.getCalcTaxResponse_OrderAdjustments();
+
+		/**
+		 * The meta object literal for the '<em><b>Item Adjustments</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CALC_TAX_RESPONSE__ITEM_ADJUSTMENTS = eINSTANCE.getCalcTaxResponse_ItemAdjustments();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.product.impl.CalcTaxForDisplayImpl <em>Calc Tax For Display</em>}' class.
