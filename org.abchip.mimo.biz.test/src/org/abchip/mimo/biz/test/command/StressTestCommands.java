@@ -165,7 +165,7 @@ public class StressTestCommands extends BaseTestCommands {
 			Stripe.apiKey = StripePaymentManager.API_KEY;
 
 			String description = "Payment invoice nr. 10000 - customer SPARTACO";
-			PaymentIntent intent = StripePaymentManager.createPaymentIntent("card", new BigDecimal(10), "EUR", description);
+			PaymentIntent intent = StripePaymentManager.createPaymentIntent("card", new BigDecimal(100), "EUR", description);
 			PaymentMethod paymentMethod = StripePaymentManager.createPaymentCardMethod("4242424242424242", 1, 2021, "123");
 			PaymentIntent confirm = StripePaymentManager.confirm(intent.getId(), paymentMethod.getId());
 			interpreter.println("Transaction " + confirm.getId() + " " + confirm.getStatus());
