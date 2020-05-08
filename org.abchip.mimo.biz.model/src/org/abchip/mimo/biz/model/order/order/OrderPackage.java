@@ -7328,11 +7328,11 @@ public interface OrderPackage extends EPackage {
 	EAttribute getOrderHeader_PickSheetPrintedDate();
 
 	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#isPriority <em>Priority</em>}'.
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getPriority <em>Priority</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Priority</em>'.
-	 * @see org.abchip.mimo.biz.model.order.order.OrderHeader#isPriority()
+	 * @see org.abchip.mimo.biz.model.order.order.OrderHeader#getPriority()
 	 * @see #getOrderHeader()
 	 * @generated
 	 */

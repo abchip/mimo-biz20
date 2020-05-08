@@ -300,6 +300,9 @@ public class EcoreUtils {
 
 	public static EAttribute buildAttribute(Delegator delegator, List<ModelForm> forms, ModelField modelField) {
 
+		if(modelField.getName().equals("priority"))
+			"".toString();
+		
 		EcoreFactory ecoreFactory = EcoreFactory.eINSTANCE;
 
 		EAttribute eAttribute = ecoreFactory.createEAttribute();

@@ -63,7 +63,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getOrderTypeId <em>Order Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getOriginFacilityId <em>Origin Facility Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getPickSheetPrintedDate <em>Pick Sheet Printed Date</em>}</li>
- *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#isPriority <em>Priority</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getPriority <em>Priority</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getProductPromoUses <em>Product Promo Uses</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getProductStoreId <em>Product Store Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getRemainingSubTotal <em>Remaining Sub Total</em>}</li>
@@ -750,29 +750,25 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Priority</b></em>' attribute.
 	 * <!-- begin-user-doc -->
-	 * <p>
-	 * If the meaning of the '<em>Priority</em>' attribute isn't clear,
-	 * there really should be more of a description here...
-	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Priority</em>' attribute.
-	 * @see #setPriority(boolean)
+	 * @see #setPriority(char)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_Priority()
 	 * @model required="true"
 	 *        annotation="mimo-ent-slot help='Sets priority for Inventory Reservation'"
 	 * @generated
 	 */
-	boolean isPriority();
+	char getPriority();
 
 	/**
-	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#isPriority <em>Priority</em>}' attribute.
+	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getPriority <em>Priority</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Priority</em>' attribute.
-	 * @see #isPriority()
+	 * @see #getPriority()
 	 * @generated
 	 */
-	void setPriority(boolean value);
+	void setPriority(char value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Promo Uses</b></em>' reference list.

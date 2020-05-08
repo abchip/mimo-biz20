@@ -40,7 +40,6 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 			context = dispatcher.runSync(request.getServiceName(), context);
 
 			V response = toResponse(request, context);
-
 			return response;
 		} catch (GenericServiceException e) {
 			throw new ServiceException(e);
@@ -118,9 +117,8 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 			if (value == null)
 				continue;
 
-			value = EntityUtils.toValue(slot, value);
-
 			try {
+				value = EntityUtils.toValue(slot, value);
 				frame.setValue(response, slot.getName(), value);
 			} catch (Exception e) {
 				throw new ServiceException(e);
