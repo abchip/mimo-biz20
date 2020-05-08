@@ -155,12 +155,12 @@ public class CreateParty implements Callable<Long> {
 		// indirizzo_via
 		postalAddress.setAddress1("via Party " + party.getID());
 		// indirizzo_città
-		postalAddress.setCity("indirizzo Party " + party.getID());
+		postalAddress.setCity("Milano");
 		// indirizzo_cap
-		postalAddress.setPostalCode(StressTestUtils.generateRandomString(5, true));
+		postalAddress.setPostalCode("20100");
 		postalAddress.setContactMechTypeId(context.createProxy(ContactMechType.class, "POSTAL_ADDRESS"));
 		postalAddress.setCountryGeoId(commonDefault.getCountryGeo());
-		postalAddress.setStateProvinceGeoId(context.createProxy(Geo.class, "IT-RM"));
+		postalAddress.setStateProvinceGeoId(context.createProxy(Geo.class, "IT-MI"));
 		postalAddressWriter.create(postalAddress);
 		createPartyContactMech(context, party, postalAddress, Arrays.asList("GENERAL_LOCATION", "SHIPPING_LOCATION"));
 

@@ -1048,4 +1048,20 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 */
 	boolean isApprovable();
 
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true"
+	 * @generated
+	 */
+	boolean isCancellable();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation" required="true"
+	 * @generated
+	 */
+	boolean isHoldable();
+
 } // OrderHeader

@@ -6040,6 +6040,10 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 
 		addEOperation(orderHeaderEClass, ecorePackage.getEBoolean(), "isApprovable", 1, 1, IS_UNIQUE, IS_ORDERED);
 
+		addEOperation(orderHeaderEClass, ecorePackage.getEBoolean(), "isCancellable", 1, 1, IS_UNIQUE, IS_ORDERED);
+
+		addEOperation(orderHeaderEClass, ecorePackage.getEBoolean(), "isHoldable", 1, 1, IS_UNIQUE, IS_ORDERED);
+
 		initEClass(orderHeaderNoteEClass, OrderHeaderNote.class, "OrderHeaderNote", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getOrderHeaderNote_OrderId(), this.getOrderHeader(), null, "orderId", null, 1, 1, OrderHeaderNote.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getOrderHeaderNote_OrderId().getEKeys().add(this.getOrderHeader_OrderId());

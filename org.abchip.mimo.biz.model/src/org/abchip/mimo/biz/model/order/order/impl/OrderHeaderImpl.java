@@ -891,6 +891,44 @@ public class OrderHeaderImpl extends EntityTypedImpl<OrderType> implements Order
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	@Override
+	public boolean isCancellable() {
+
+		if (!eIsSet(OrderPackage.ORDER_HEADER__STATUS_ID))
+			return false;
+
+		OrderStatus statusId = (OrderStatus) eGet(OrderPackage.ORDER_HEADER__STATUS_ID, false, true);
+
+		if (statusId.getID().equals("ORDER_CANCELLED") || statusId.getID().equals("ORDER_COMPLETED"))
+			return false;
+		else
+			return true;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated NOT
+	 */
+	@Override
+	public boolean isHoldable() {
+		
+		if (!eIsSet(OrderPackage.ORDER_HEADER__STATUS_ID))
+			return false;
+
+		OrderStatus statusId = (OrderStatus) eGet(OrderPackage.ORDER_HEADER__STATUS_ID, false, true);
+
+		if (statusId.getID().equals("ORDER_APPROVED"))
+			return true;
+		else
+			return false;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override

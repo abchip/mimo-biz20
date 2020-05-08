@@ -28,34 +28,18 @@ import org.abchip.mimo.biz.model.accounting.payment.PaymentMethod;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentType;
 import org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct;
-import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
-import org.abchip.mimo.biz.model.order.order.OrderContactMech;
-import org.abchip.mimo.biz.model.order.order.OrderHeader;
-import org.abchip.mimo.biz.model.order.order.OrderItem;
-import org.abchip.mimo.biz.model.order.order.OrderItemShipGroup;
-import org.abchip.mimo.biz.model.order.order.OrderItemShipGroupAssoc;
-import org.abchip.mimo.biz.model.order.order.OrderItemType;
-import org.abchip.mimo.biz.model.order.order.OrderPaymentPreference;
-import org.abchip.mimo.biz.model.order.order.OrderRole;
-import org.abchip.mimo.biz.model.order.order.OrderStatus;
-import org.abchip.mimo.biz.model.order.order.OrderType;
 import org.abchip.mimo.biz.model.party.agreement.Agreement;
 import org.abchip.mimo.biz.model.party.agreement.AgreementItem;
 import org.abchip.mimo.biz.model.party.agreement.AgreementItemType;
 import org.abchip.mimo.biz.model.party.agreement.AgreementProductAppl;
 import org.abchip.mimo.biz.model.party.agreement.AgreementTerm;
 import org.abchip.mimo.biz.model.party.agreement.TermType;
-import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.abchip.mimo.biz.model.party.contact.ContactMechPurposeType;
 import org.abchip.mimo.biz.model.party.party.Party;
-import org.abchip.mimo.biz.model.party.party.PartyRole;
-import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
-import org.abchip.mimo.biz.model.security.login.UserLogin;
-import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
 import org.abchip.mimo.biz.service.accounting.SetInvoiceStatus;
 import org.abchip.mimo.biz.service.accounting.SetInvoiceStatusResponse;
 import org.abchip.mimo.biz.service.accounting.SetPaymentStatus;
@@ -64,12 +48,6 @@ import org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDef;
 import org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDefResponse;
 import org.abchip.mimo.biz.service.common.GetCommonDefault;
 import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
-import org.abchip.mimo.biz.service.order.ChangeOrderStatus;
-import org.abchip.mimo.biz.service.order.ChangeOrderStatusResponse;
-import org.abchip.mimo.biz.service.order.ReserveStoreInventory;
-import org.abchip.mimo.biz.service.order.ReserveStoreInventoryResponse;
-import org.abchip.mimo.biz.service.order.ResetGrandTotal;
-import org.abchip.mimo.biz.service.order.ResetGrandTotalResponse;
 import org.abchip.mimo.biz.service.party.GetPartyDefault;
 import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
 import org.abchip.mimo.biz.service.product.CalcTaxForDisplay;
@@ -85,7 +63,6 @@ import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceManager;
 import org.abchip.mimo.tester.base.BaseTestCommands;
-import org.abchip.mimo.util.Numbers;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
 
 import com.stripe.Stripe;
@@ -93,14 +70,7 @@ import com.stripe.model.PaymentIntent;
 
 public class BizTestCommands extends BaseTestCommands {
 
-	private static final String USER_LOGIN_ID = "abchip";
-	private static final String ORDER_STATUS_APPROVED = "ORDER_APPROVED";
-	private static final String ORDER_STATUS_HOLD = "ORDER_HOLD";
-	private static final String ORDER_STATUS_CANCELLED = "ORDER_CANCELLED";
 	private static final String PRODUCT_STORE_ID = "8000";
-	private static final String SHIPMENT_METHOD_TYPE_ID = "NO_SHIPPING";
-	private static final String CARRIER_ID = "_NA_";
-	private static final String PRODUCT_CATALOG_ID = "ABChipCatalog";
 
 	private static final String TAX_AUTH_PARTY_ID = "ITA_ADE";
 	private static final String TAX_AUTH_GEO_ID = "ITA";
@@ -108,14 +78,6 @@ public class BizTestCommands extends BaseTestCommands {
 	@Inject
 	public BizTestCommands(Application application) {
 		super(application);
-	}
-
-	public void _getCreditCardParty(CommandInterpreter interpreter) throws Exception {
-		Context context = this.getContext(interpreter);
-		String partyId = nextArgument(interpreter);
-		Party party = context.createProxy(Party.class, partyId);
-		CreditCard creditCard = party.getCreditCard();
-		interpreter.println("Credit card number " + creditCard.getCardNumber());
 	}
 
 	public void _renewalAgreement(CommandInterpreter interpreter) throws Exception {
@@ -163,392 +125,6 @@ public class BizTestCommands extends BaseTestCommands {
 		agreementWriter.create(agreementEntity, true);
 
 		interpreter.println("Agreement " + agreementId + " expired");
-	}
-
-	public void _createOrder(CommandInterpreter interpreter) throws Exception {
-
-		Context context = this.getContext(interpreter);
-		ServiceManager serviceManager = context.getServiceManager();
-
-		GetCommonDefault getCommonDefault = serviceManager.prepare(GetCommonDefault.class);
-		GetCommonDefaultResponse commonDefault = serviceManager.execute(getCommonDefault);
-
-		GetPartyDefault getPartyDefault = serviceManager.prepare(GetPartyDefault.class);
-		GetPartyDefaultResponse partyDefault = serviceManager.execute(getPartyDefault);
-
-		String partyId = nextArgument(interpreter);
-
-		createOrder(interpreter, context, commonDefault, partyDefault, partyId);
-	}
-
-	public void _getInvoiceTot(CommandInterpreter interpreter) throws Exception {
-
-		Context context = this.getContext(interpreter);
-
-		String invoiceId = nextArgument(interpreter);
-
-		Invoice invoice = context.getResourceManager().getResourceReader(Invoice.class).lookup(invoiceId);
-		interpreter.println("From: " + invoice.getPartyIdFrom().getID());
-		interpreter.println("To: " + invoice.getPartyId().getID());
-		interpreter.println("Total: " + invoice.getTotal());
-	}
-
-	public void _approveOrder(CommandInterpreter interpreter) throws Exception {
-
-		Context context = this.getContext(interpreter);
-		ServiceManager serviceManager = context.getServiceManager();
-
-		String orderId = nextArgument(interpreter);
-
-		if (orderId == null) {
-			interpreter.println("Invalid order!!!");
-			return;
-		}
-
-		// check Order
-		ResourceReader<OrderHeader> orderHeaderReader = context.getResourceManager().getResourceReader(OrderHeader.class);
-		OrderHeader orderHeaderEntity = orderHeaderReader.lookup(orderId);
-		if (orderHeaderEntity == null) {
-			interpreter.println("Invalid order!!!");
-			return;
-		}
-
-		if (!orderHeaderEntity.isApprovable()) {
-			interpreter.println("Approve order " + orderId + " not possible!!!");
-			return;
-		}
-
-		ChangeOrderStatus changeOrderStatus = serviceManager.prepare(ChangeOrderStatus.class);
-		changeOrderStatus.setOrderId(orderId);
-		changeOrderStatus.setStatusId(ORDER_STATUS_APPROVED);
-		changeOrderStatus.setSetItemStatus(true);
-		ChangeOrderStatusResponse response = serviceManager.execute(changeOrderStatus);
-
-		if (response.isError()) {
-			interpreter.println("Error in set status");
-			return;
-		}
-
-		interpreter.println("Order " + orderId + " approved");
-	}
-
-	public void _holdOrder(CommandInterpreter interpreter) throws Exception {
-
-		Context context = this.getContext(interpreter);
-		ServiceManager serviceManager = context.getServiceManager();
-
-		String orderId = nextArgument(interpreter);
-
-		if (orderId == null) {
-			interpreter.println("Invalid order!!!");
-			return;
-		}
-
-		// check Order
-		ResourceReader<OrderHeader> orderHeaderReader = context.getResourceManager().getResourceReader(OrderHeader.class);
-		OrderHeader orderHeaderEntity = orderHeaderReader.lookup(orderId);
-		if (orderHeaderEntity == null) {
-			interpreter.println("Invalid order!!!");
-			return;
-		}
-
-		if (!orderHeaderEntity.getStatusId().getStatusId().equals("ORDER_APPROVED")) {
-			interpreter.println("Hold order " + orderId + " not possible!!!");
-			return;
-		}
-
-		ChangeOrderStatus changeOrderStatus = serviceManager.prepare(ChangeOrderStatus.class);
-		changeOrderStatus.setOrderId(orderId);
-		changeOrderStatus.setStatusId(ORDER_STATUS_HOLD);
-		changeOrderStatus.setSetItemStatus(true);
-		ChangeOrderStatusResponse response = serviceManager.execute(changeOrderStatus);
-
-		if (response.isError()) {
-			interpreter.println("Error in set status");
-			return;
-		}
-
-		interpreter.println("Order " + orderId + " holded");
-	}
-
-	public void _cancelOrder(CommandInterpreter interpreter) throws Exception {
-
-		Context context = this.getContext(interpreter);
-		ServiceManager serviceManager = context.getServiceManager();
-
-		String orderId = nextArgument(interpreter);
-
-		if (orderId == null) {
-			interpreter.println("Invalid order!!!");
-			return;
-		}
-
-		// check Order
-		ResourceReader<OrderHeader> orderHeaderReader = context.getResourceManager().getResourceReader(OrderHeader.class);
-		OrderHeader orderHeaderEntity = orderHeaderReader.lookup(orderId);
-		if (orderHeaderEntity == null) {
-			interpreter.println("Invalid order!!!");
-			return;
-		}
-
-		if (!orderHeaderEntity.getStatusId().getStatusId().equals("ORDER_CANCELLED") && !orderHeaderEntity.getStatusId().getStatusId().equals("ORDER_COMPLETED")) {
-			interpreter.println("Delete order " + orderId + " not possible!!!");
-			return;
-		}
-
-		ChangeOrderStatus changeOrderStatus = serviceManager.prepare(ChangeOrderStatus.class);
-		changeOrderStatus.setOrderId(orderId);
-		changeOrderStatus.setStatusId(ORDER_STATUS_CANCELLED);
-		changeOrderStatus.setSetItemStatus(true);
-		ChangeOrderStatusResponse response = serviceManager.execute(changeOrderStatus);
-
-		if (response.isError()) {
-			interpreter.println("Error in set status");
-			return;
-		}
-
-		interpreter.println("Order " + orderId + " deleted");
-	}
-
-	private void createOrder(CommandInterpreter interpreter, Context context, GetCommonDefaultResponse commonDefault, GetPartyDefaultResponse partyDefault, String partyId)
-			throws ResourceException, ServiceException {
-
-		ServiceManager serviceManager = context.getServiceManager();
-
-		Party party = context.createProxy(Party.class, partyId);
-
-		ResourceReader<ProductStore> productStoreReader = context.getResourceManager().getResourceReader(ProductStore.class);
-		ProductStore productStore = productStoreReader.lookup(PRODUCT_STORE_ID);
-
-		ResourceReader<UserLogin> userLoginReader = context.getResourceManager().getResourceReader(UserLogin.class);
-		UserLogin userLogin = userLoginReader.lookup(USER_LOGIN_ID);
-
-		// Order Header
-		ResourceWriter<OrderHeader> orderHeaderWriter = context.getResourceManager().getResourceWriter(OrderHeader.class);
-		OrderHeader orderHeader = orderHeaderWriter.make(true);
-
-		if (productStore.getOrderNumberPrefix() != null)
-			orderHeader.setOrderId(productStore.getOrderNumberPrefix() + orderHeader.getOrderId());
-
-		orderHeader.setOrderTypeId(context.createProxy(OrderType.class, "SALES_ORDER"));
-		orderHeader.setProductStoreId(productStore);
-		orderHeader.setSalesChannelEnumId(context.createProxy(Enumeration.class, "UNKNWN_SALES_CHANNEL"));
-		orderHeader.setOrderDate(new Date());
-		orderHeader.setEntryDate(new Date());
-		orderHeader.setStatusId(context.createProxy(StatusItem.class, "ORDER_CREATED"));
-		orderHeader.setCurrencyUom(commonDefault.getCurrencyUom());
-		orderHeader.setInvoicePerShipment(Boolean.TRUE);
-		orderHeader.setCreatedBy(userLogin);
-		// orderHeader.setRemainingSubTotal(new BigDecimal(10));
-		// orderHeader.setGrandTotal(new BigDecimal(10));
-		orderHeaderWriter.create(orderHeader, true);
-
-		// OrderStatus
-		ResourceWriter<OrderStatus> orderStatusWriter = context.getResourceManager().getResourceWriter(OrderStatus.class);
-		OrderStatus orderStatus = orderStatusWriter.make(true);
-		orderStatus.setOrderId(orderHeader);
-		orderStatus.setStatusId(context.createProxy(StatusItem.class, "ORDER_CREATED"));
-		orderStatus.setStatusUserLogin(userLogin);
-		orderStatusWriter.create(orderStatus, true);
-
-		// OrderContactMech
-		ResourceWriter<OrderContactMech> orderContactMechWriter = context.getResourceManager().getResourceWriter(OrderContactMech.class);
-		OrderContactMech orderContactMech = orderContactMechWriter.make();
-		orderContactMech.setOrderId(orderHeader);
-		orderContactMech.setContactMechPurposeTypeId(context.createProxy(ContactMechPurposeType.class, "ORDER_EMAIL"));
-		orderContactMech.setContactMechId(context.createProxy(ContactMech.class, partyId));
-		orderContactMechWriter.create(orderContactMech, true);
-
-		// OrderItemShipGroup
-		ResourceWriter<OrderItemShipGroup> orderItemShipGroupWriter = context.getResourceManager().getResourceWriter(OrderItemShipGroup.class);
-		String shipGroupSeqId = "00001";
-		OrderItemShipGroup orderItemShipGroup = orderItemShipGroupWriter.make();
-		orderItemShipGroup.setOrderId(orderHeader);
-		orderItemShipGroup.setShipGroupSeqId(shipGroupSeqId);
-		orderItemShipGroup.setShipmentMethodTypeId(context.createProxy(ShipmentMethodType.class, SHIPMENT_METHOD_TYPE_ID));
-		orderItemShipGroup.setCarrierPartyId(context.createProxy(Party.class, CARRIER_ID));
-		orderItemShipGroup.setCarrierRoleTypeId("CARRIER");
-		orderItemShipGroupWriter.create(orderItemShipGroup, true);
-
-		// OrderItem
-		String itemSeqiD = Numbers.formatPaddedNumber(1, 5);
-
-		createOrderItem(interpreter, context, commonDefault, partyDefault, orderHeader, itemSeqiD, "Accounting", 1, shipGroupSeqId);
-		// seqItemId++;
-		// itemSeqiD = UtilFormatOut.formatPaddedNumber(seqItemId, 5);
-		// createOrderItem(orderId, itemSeqiD, "TESTFLOW-ITEM-2",
-		// 20, shipGroupSeqId);
-
-		// OrderRole
-		ResourceWriter<OrderRole> orderRoleWriter = context.getResourceManager().getResourceWriter(OrderRole.class);
-		OrderRole orderRole = orderRoleWriter.make();
-		orderRole.setOrderId(orderHeader);
-		orderRole.setPartyId(partyDefault.getOrganization());
-		orderRole.setRoleTypeId(context.createProxy(RoleType.class, "BILL_FROM_VENDOR"));
-		orderRoleWriter.create(orderRole, true);
-
-		// Party Role to partyId
-		ResourceWriter<PartyRole> partyRoleWriter = context.getResourceManager().getResourceWriter(PartyRole.class);
-		PartyRole partyRole = partyRoleWriter.make();
-		partyRole.setPartyId(party);
-		partyRole.setRoleTypeId(context.createProxy(RoleType.class, "BILL_TO_CUSTOMER"));
-		partyRoleWriter.create(partyRole, true);
-
-		orderRole = orderRoleWriter.make();
-		orderRole.setOrderId(orderHeader);
-		orderRole.setPartyId(party);
-		orderRole.setRoleTypeId(context.createProxy(RoleType.class, "BILL_TO_CUSTOMER"));
-		orderRoleWriter.create(orderRole, true);
-
-		partyRole = partyRoleWriter.make();
-		partyRole.setPartyId(party);
-		partyRole.setRoleTypeId(context.createProxy(RoleType.class, "SHIP_TO_CUSTOMER"));
-		partyRoleWriter.create(partyRole, true);
-
-		orderRole = orderRoleWriter.make();
-		orderRole.setOrderId(orderHeader);
-		orderRole.setPartyId(party);
-		orderRole.setRoleTypeId(context.createProxy(RoleType.class, "SHIP_TO_CUSTOMER"));
-		orderRoleWriter.create(orderRole, true);
-
-		partyRole = partyRoleWriter.make();
-		partyRole.setPartyId(party);
-		partyRole.setRoleTypeId(context.createProxy(RoleType.class, "END_USER_CUSTOMER"));
-		partyRoleWriter.create(partyRole, true);
-
-		orderRole = orderRoleWriter.make();
-		orderRole.setOrderId(orderHeader);
-		orderRole.setPartyId(party);
-		orderRole.setRoleTypeId(context.createProxy(RoleType.class, "END_USER_CUSTOMER"));
-		orderRoleWriter.create(orderRole, true);
-
-		partyRole = partyRoleWriter.make();
-		partyRole.setPartyId(party);
-		partyRole.setRoleTypeId(context.createProxy(RoleType.class, "PLACING_CUSTOMER"));
-		partyRoleWriter.create(partyRole, true);
-
-		orderRole = orderRoleWriter.make();
-		orderRole.setOrderId(orderHeader);
-		orderRole.setPartyId(party);
-		orderRole.setRoleTypeId(context.createProxy(RoleType.class, "PLACING_CUSTOMER"));
-		orderRoleWriter.create(orderRole, true);
-
-		// OrderPaymentPreference
-		ResourceWriter<OrderPaymentPreference> orderPaymentPreferenceWriter = context.getResourceManager().getResourceWriter(OrderPaymentPreference.class);
-		OrderPaymentPreference orderPaymentPreference = orderPaymentPreferenceWriter.make(true);
-		orderPaymentPreference.setOrderId(orderHeader);
-		orderPaymentPreference.setStatusId(context.createProxy(StatusItem.class, "PAYMENT_NOT_RECEIVED"));
-		orderPaymentPreference.setPaymentMethodTypeId(context.createProxy(PaymentMethodType.class, "EXT_COD"));
-		orderPaymentPreferenceWriter.create(orderPaymentPreference, true);
-
-		// Inventory
-		ResourceReader<OrderItemShipGroupAssoc> orderItemShipGroupAssocReader = context.getResourceManager().getResourceReader(OrderItemShipGroupAssoc.class);
-		ResourceReader<OrderItem> orderItemReader = context.getResourceManager().getResourceReader(OrderItem.class);
-
-		String filter = "orderId = \"" + orderHeader.getOrderId() + "\"";
-
-		//
-		// TODO qui richiamare il servizio calcTax per aggiungere l'iva all'ordine
-		// (OrderAdjustment) che poi sarà trasferita nella fattura
-		//
-
-		try (EntityIterator<OrderItemShipGroupAssoc> orderItemShipGroupAssocs = orderItemShipGroupAssocReader.find(filter)) {
-			for (OrderItemShipGroupAssoc orderItemShipGroupAssoc : orderItemShipGroupAssocs) {
-
-				OrderItem orderItem = orderItemReader.lookup(orderHeader.getOrderId() + "/" + orderItemShipGroupAssoc.getOrderItemSeqId());
-
-				// reserve the product
-				ReserveStoreInventory reserveStoreInventory = serviceManager.prepare(ReserveStoreInventory.class);
-				reserveStoreInventory.setProductStoreId(PRODUCT_STORE_ID);
-				reserveStoreInventory.setProductId(orderItem.getProductId().getProductId());
-				reserveStoreInventory.setOrderId(orderItem.getOrderId().getOrderId());
-				reserveStoreInventory.setOrderItemSeqId(orderItem.getOrderItemSeqId());
-				reserveStoreInventory.setShipGroupSeqId(orderItemShipGroupAssoc.getShipGroupSeqId());
-				// verificare da dove prenderlo
-				reserveStoreInventory.setFacilityId(null);
-				// use the quantity from the orderItemShipGroupAssoc, NOT the orderItem, these
-				// are reserved by item-group assoc
-				reserveStoreInventory.setQuantity(orderItemShipGroupAssoc.getQuantity());
-
-				ReserveStoreInventoryResponse response = serviceManager.execute(reserveStoreInventory);
-
-				if (response.isError()) {
-					String invErrMsg = "The product ";
-					invErrMsg += orderItem.getProductId();
-					invErrMsg += " with ID " + orderItem.getProductId() + " is no longer in stock. Please try reducing the quantity or removing the product from this order.";
-					interpreter.println(invErrMsg);
-				}
-
-			}
-		}
-
-		// Update Total OrderHeader (OrderServices)
-		ResetGrandTotal resetGrandTotal = serviceManager.prepare(ResetGrandTotal.class);
-		resetGrandTotal.setOrderId(orderHeader.getOrderId());
-		ResetGrandTotalResponse response = serviceManager.execute(resetGrandTotal);
-		if (response.isError()) {
-			interpreter.println("Errore in aggiornamento testata documento");
-			return;
-		}
-
-		interpreter.println("New order created: " + orderHeader.getOrderId());
-	}
-
-	private void createOrderItem(CommandInterpreter interpreter, Context context, GetCommonDefaultResponse commonDefault, GetPartyDefaultResponse partyDefault, OrderHeader orderHeader,
-			String itemSeqiD, String item, int quantity, String shipGroupSeqId) throws ResourceException, ServiceException {
-
-		ServiceManager serviceManager = context.getServiceManager();
-
-		ResourceWriter<OrderItem> orderItemWriter = context.getResourceManager().getResourceWriter(OrderItem.class);
-
-		OrderItem orderItem = orderItemWriter.make();
-		orderItem.setOrderId(orderHeader);
-		orderItem.setOrderItemSeqId(itemSeqiD);
-		orderItem.setOrderItemTypeId(context.createProxy(OrderItemType.class, "PRODUCT_ORDER_ITEM"));
-		orderItem.setProdCatalogId(PRODUCT_CATALOG_ID);
-
-		ResourceReader<Product> productReader = context.getResourceManager().getResourceReader(Product.class);
-		Product product = productReader.lookup(item);
-		orderItem.setProductId(product);
-		orderItem.setItemDescription(product.getProductName());
-		orderItem.setStatusId(context.createProxy(StatusItem.class, "ITEM_CREATED"));
-		orderItem.setQuantity(new BigDecimal(quantity));
-		orderItem.setUnitPrice(new BigDecimal(10));
-
-		// price calculation
-		CalculateProductPrice calculateProductPrice = serviceManager.prepare(CalculateProductPrice.class);
-		calculateProductPrice.setProduct(product);
-		calculateProductPrice.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
-
-		CalculateProductPriceResponse response = serviceManager.execute(calculateProductPrice);
-		if (response.isError())
-			interpreter.println("Errore in recupero prezzo articolo " + item);
-
-		if (response.isValidPriceFound()) {
-			orderItem.setUnitListPrice(response.getListPrice());
-			orderItem.setUnitPrice(response.getBasePrice());
-		} else
-			interpreter.println("Prezzo non valido per articolo " + item);
-
-		orderItemWriter.create(orderItem);
-
-		// OrderStatus
-		ResourceWriter<OrderStatus> orderStatusWriter = context.getResourceManager().getResourceWriter(OrderStatus.class);
-		OrderStatus orderStatus = orderStatusWriter.make(true);
-		orderStatus.setOrderId(orderHeader);
-		orderStatus.setOrderItemSeqId(itemSeqiD);
-		orderStatus.setStatusId(context.createProxy(StatusItem.class, "ITEM_CREATED"));
-		orderStatus.setStatusUserLogin(context.createProxy(UserLogin.class, USER_LOGIN_ID));
-		orderStatusWriter.create(orderStatus);
-
-		// OrderItemShipGroupAssoc
-		ResourceWriter<OrderItemShipGroupAssoc> orderItemShipGroupAssocWriter = context.getResourceManager().getResourceWriter(OrderItemShipGroupAssoc.class);
-		OrderItemShipGroupAssoc orderItemShipGroupAssoc = orderItemShipGroupAssocWriter.make();
-		orderItemShipGroupAssoc.setOrderId(orderHeader);
-		orderItemShipGroupAssoc.setOrderItemSeqId(itemSeqiD);
-		orderItemShipGroupAssoc.setShipGroupSeqId(shipGroupSeqId);
-		orderItemShipGroupAssoc.setQuantity(new BigDecimal(quantity));
-		orderItemShipGroupAssocWriter.create(orderItemShipGroupAssoc);
 	}
 
 	private Invoice createInvoice(CommandInterpreter interpreter, Context context, GetCommonDefaultResponse commonDefault, GetPartyDefaultResponse partyDefault, String partyId,

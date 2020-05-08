@@ -77,9 +77,23 @@ public class EntityUtils {
 			frame.setValue(entity, slot.getName(), value);
 		}
 	}
-
+	
 	// from entity -> ofbiz
 	public static Object toBizValue(Delegator delegator, Slot slot, Object value) {
+		if (slot.getCardinality().isMultiple()) {
+			List<Object> bizValues = new ArrayList<Object>();
+			if (value instanceof Collection<?>) {
+				Collection<?> values = (Collection<?>) value;
+				for (Object object : values)
+					bizValues.add(toSingleBizValue(delegator, slot, object));
+			} else
+				bizValues.add(toSingleBizValue(delegator, slot, value));
+			return bizValues;
+		} else
+			return toSingleBizValue(delegator, slot, value);
+	}
+
+	public static Object toSingleBizValue(Delegator delegator, Slot slot, Object value) {
 
 		Object bizValue = null;
 		if (value == null) {

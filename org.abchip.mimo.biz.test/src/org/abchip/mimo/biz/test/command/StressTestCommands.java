@@ -19,6 +19,8 @@ import javax.inject.Inject;
 import org.abchip.mimo.application.Application;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.biz.test.command.runner.ApproveOrder;
+import org.abchip.mimo.biz.test.command.runner.CancelOrder;
 import org.abchip.mimo.biz.test.command.runner.CreateAgreement;
 import org.abchip.mimo.biz.test.command.runner.CreateInpsAgreement;
 import org.abchip.mimo.biz.test.command.runner.CreateParty;
@@ -27,6 +29,7 @@ import org.abchip.mimo.biz.test.command.runner.CreatePurchaseInvoice;
 import org.abchip.mimo.biz.test.command.runner.CreatePurchaseOrder;
 import org.abchip.mimo.biz.test.command.runner.CreateSalesInvoice;
 import org.abchip.mimo.biz.test.command.runner.CreateSalesOrder;
+import org.abchip.mimo.biz.test.command.runner.HoldOrder;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextProvider;
 import org.abchip.mimo.tester.base.BaseTestCommands;
@@ -93,6 +96,42 @@ public class StressTestCommands extends BaseTestCommands {
 		}
 	}
 
+	public void _stressTestApproveOrder(CommandInterpreter interpreter) throws Exception {
+		try (ContextProvider context = login(interpreter)) {
+			long time1 = System.currentTimeMillis();
+			ExecutorService executor = Executors.newFixedThreadPool(1);
+			executor.submit(new ApproveOrder(context.get(), nextArgument(interpreter)));
+			executor.shutdown();
+			executor.awaitTermination(1, TimeUnit.MINUTES);
+			long time2 = System.currentTimeMillis();
+			interpreter.println("Total time execution StressTestApproveOrder: " + (time2 - time1));
+		}
+	}
+
+	public void _stressTestCancelOrder(CommandInterpreter interpreter) throws Exception {
+		try (ContextProvider context = login(interpreter)) {
+			long time1 = System.currentTimeMillis();
+			ExecutorService executor = Executors.newFixedThreadPool(1);
+			executor.submit(new CancelOrder(context.get(), nextArgument(interpreter)));
+			executor.shutdown();
+			executor.awaitTermination(1, TimeUnit.MINUTES);
+			long time2 = System.currentTimeMillis();
+			interpreter.println("Total time execution StressTestCancelOrder: " + (time2 - time1));
+		}
+	}
+
+	public void _stressTestHoldOrder(CommandInterpreter interpreter) throws Exception {
+		try (ContextProvider context = login(interpreter)) {
+			long time1 = System.currentTimeMillis();
+			ExecutorService executor = Executors.newFixedThreadPool(1);
+			executor.submit(new HoldOrder(context.get(), nextArgument(interpreter)));
+			executor.shutdown();
+			executor.awaitTermination(1, TimeUnit.MINUTES);
+			long time2 = System.currentTimeMillis();
+			interpreter.println("Total time execution StressTestHoldOrder: " + (time2 - time1));
+		}
+	}
+	
 	public void _st_Inps(CommandInterpreter interpreter) throws Exception {
 
 		String reqNumber = nextArgument(interpreter);

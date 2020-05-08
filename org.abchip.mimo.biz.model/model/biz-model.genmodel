@@ -4302,6 +4302,8 @@
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//order/order/OrderHeader/webSiteId"/>
           <genOperations ecoreOperation="biz-model.ecore#//order/order/OrderHeader/isApprovable"/>
+          <genOperations ecoreOperation="biz-model.ecore#//order/order/OrderHeader/isCancellable"/>
+          <genOperations ecoreOperation="biz-model.ecore#//order/order/OrderHeader/isHoldable"/>
         </genClasses>
         <genClasses ecoreClass="biz-model.ecore#//order/order/OrderHeaderNote">
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
