@@ -8,6 +8,7 @@
  */
 package org.abchip.mimo.biz.test.command;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -19,6 +20,7 @@ import javax.inject.Inject;
 import org.abchip.mimo.application.Application;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.biz.test.accounting.StripePaymentManager;
 import org.abchip.mimo.biz.test.command.runner.ApproveOrder;
 import org.abchip.mimo.biz.test.command.runner.CancelOrder;
 import org.abchip.mimo.biz.test.command.runner.CreateAgreement;
@@ -36,6 +38,10 @@ import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextProvider;
 import org.abchip.mimo.tester.base.BaseTestCommands;
 import org.eclipse.osgi.framework.console.CommandInterpreter;
+
+import com.stripe.Stripe;
+import com.stripe.model.PaymentIntent;
+import com.stripe.model.PaymentMethod;
 
 public class StressTestCommands extends BaseTestCommands {
 
@@ -151,6 +157,25 @@ public class StressTestCommands extends BaseTestCommands {
 			interpreter.println("Total time execution StressTestHoldOrder: " + (time2 - time1));
 		}
 	}
+
+	public void _stressTestStripe(CommandInterpreter interpreter) throws Exception {
+		try (ContextProvider context = login(interpreter)) {
+			
+			long time1 = System.currentTimeMillis();
+			Stripe.apiKey = StripePaymentManager.API_KEY;
+
+			String description = "Payment invoice nr. 10000 - customer SPARTACO";
+			PaymentIntent intent = StripePaymentManager.createPaymentIntent("card", new BigDecimal(10), "EUR", description);
+			PaymentMethod paymentMethod = StripePaymentManager.createPaymentCardMethod("4242424242424242", 1, 2021, "123");
+			PaymentIntent confirm = StripePaymentManager.confirm(intent.getId(), paymentMethod.getId());
+			interpreter.println("Transaction " + confirm.getId() + " " + confirm.getStatus());
+
+			long time2 = System.currentTimeMillis();
+			interpreter.println("Total time execution StressTestStripe: " + (time2 - time1));
+		}
+	}
+	
+	
 	
 	public void _st_Inps(CommandInterpreter interpreter) throws Exception {
 
