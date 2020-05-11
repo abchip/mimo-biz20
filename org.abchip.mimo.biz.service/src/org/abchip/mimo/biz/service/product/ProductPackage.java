@@ -201,15 +201,6 @@ public interface ProductPackage extends EPackage {
 	int CALC_TAX_FOR_DISPLAY_RESPONSE = 1;
 
 	/**
-	 * The feature id for the '<em><b>Error</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX_FOR_DISPLAY_RESPONSE__ERROR = ServicePackage.SERVICE_RESPONSE__ERROR;
-
-	/**
 	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -334,15 +325,6 @@ public interface ProductPackage extends EPackage {
 	 * @ordered
 	 */
 	int CALCULATE_PRODUCT_PRICE_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Error</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALCULATE_PRODUCT_PRICE_RESPONSE__ERROR = ServicePackage.SERVICE_RESPONSE__ERROR;
 
 	/**
 	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
@@ -481,15 +463,6 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 */
 	int GET_PRODUCT_DEFAULT_RESPONSE = 5;
-
-	/**
-	 * The feature id for the '<em><b>Error</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GET_PRODUCT_DEFAULT_RESPONSE__ERROR = ServicePackage.SERVICE_RESPONSE__ERROR;
 
 	/**
 	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
@@ -708,15 +681,6 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 */
 	int CALC_TAX_RESPONSE = 7;
-
-	/**
-	 * The feature id for the '<em><b>Error</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX_RESPONSE__ERROR = ServicePackage.SERVICE_RESPONSE__ERROR;
 
 	/**
 	 * The feature id for the '<em><b>Error Message</b></em>' attribute.

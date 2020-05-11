@@ -57,7 +57,7 @@ public class CalcTaxResponseImpl extends ServiceResponseImpl implements CalcTaxR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 4;
+	protected static final int ESTATIC_FEATURE_COUNT = 3;
 
 	/**
 	 * <!-- begin-user-doc -->

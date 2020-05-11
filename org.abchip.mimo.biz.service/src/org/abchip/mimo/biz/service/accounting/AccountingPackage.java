@@ -266,15 +266,6 @@ public interface AccountingPackage extends EPackage {
 	int SET_INVOICE_STATUS_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 4;
 
 	/**
-	 * The feature id for the '<em><b>Error</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_INVOICE_STATUS_RESPONSE__ERROR = ServicePackage.SERVICE_RESPONSE__ERROR;
-
-	/**
 	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -392,15 +383,6 @@ public interface AccountingPackage extends EPackage {
 	int SET_PAYMENT_STATUS_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
 
 	/**
-	 * The feature id for the '<em><b>Error</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int SET_PAYMENT_STATUS_RESPONSE__ERROR = ServicePackage.SERVICE_RESPONSE__ERROR;
-
-	/**
 	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -498,15 +480,6 @@ public interface AccountingPackage extends EPackage {
 	 * @ordered
 	 */
 	int UPDATE_PAYMENT_APPLICATION_DEF_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Error</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE__ERROR = ServicePackage.SERVICE_RESPONSE__ERROR;
 
 	/**
 	 * The feature id for the '<em><b>Error Message</b></em>' attribute.

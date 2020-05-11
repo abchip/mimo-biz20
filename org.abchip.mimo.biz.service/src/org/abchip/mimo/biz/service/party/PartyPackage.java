@@ -127,15 +127,6 @@ public interface PartyPackage extends EPackage {
 	int GET_PARTY_DEFAULT_RESPONSE = 1;
 
 	/**
-	 * The feature id for the '<em><b>Error</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int GET_PARTY_DEFAULT_RESPONSE__ERROR = ServicePackage.SERVICE_RESPONSE__ERROR;
-
-	/**
 	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

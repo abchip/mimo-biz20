@@ -75,7 +75,7 @@ public class RenewalAgreement implements Callable<Long> {
 	Context context;
 	GetCommonDefaultResponse commonDefault;
 	GetPartyDefaultResponse partyDefault;
-	
+
 	String agreementId;
 	long invoiceSeq = 1;
 
@@ -146,10 +146,9 @@ public class RenewalAgreement implements Callable<Long> {
 
 				// Eseguo rinnovo dall'ultima riga;
 				if (open == 0 && close > 0) {
-					
+
 					String agreementItemSeqId = getNewSeqId(agreementTermLast.getAgreementItemSeqId());
-					
-					
+
 					createRow(agreement, "Renewal agreement", agreementItemSeqId);
 
 					// Leggo i prodotti dalla riga precedente
@@ -208,7 +207,7 @@ public class RenewalAgreement implements Callable<Long> {
 			}
 		}
 	}
-	
+
 	private void createRow(Agreement agreement, String text, String agreementItemSeqId) throws ResourceException {
 
 		AgreementItemType agreementType = context.createProxy(AgreementItemType.class, "AGREEMENT_PRICING_PR");
@@ -245,8 +244,7 @@ public class RenewalAgreement implements Callable<Long> {
 		agreementTermWriter.create(agreementTerm);
 	}
 
-	private void createRowProduct(Agreement agreement, Product product, String itemSeqId)
-			throws ResourceException, ServiceException {
+	private void createRowProduct(Agreement agreement, Product product, String itemSeqId) throws ResourceException, ServiceException {
 
 		ServiceManager serviceManager = context.getServiceManager();
 
@@ -263,8 +261,8 @@ public class RenewalAgreement implements Callable<Long> {
 		calculateProductPrice.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
 
 		CalculateProductPriceResponse response = serviceManager.execute(calculateProductPrice);
-		if (response.isError())
-			LOGGER.error("Errore in recupero prezzo articolo " + product.getID());
+		if (response.onError())
+			LOGGER.error(response.getErrorMessage());
 
 		if (response.isValidPriceFound()) {
 			agreementProductAppl.setPrice(response.getBasePrice());
@@ -311,9 +309,8 @@ public class RenewalAgreement implements Callable<Long> {
 
 		return invoice;
 	}
-	
-	private void createInvoiceItem(Invoice invoice, Product product, int quantity, String itemType)
-			throws ResourceException, ServiceException {
+
+	private void createInvoiceItem(Invoice invoice, Product product, int quantity, String itemType) throws ResourceException, ServiceException {
 		ServiceManager serviceManager = context.getServiceManager();
 
 		ResourceWriter<InvoiceItem> invoiceItemWriter = context.getResourceManager().getResourceWriter(InvoiceItem.class);
@@ -331,8 +328,8 @@ public class RenewalAgreement implements Callable<Long> {
 		calculateProductPrice.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
 
 		CalculateProductPriceResponse productPrice = serviceManager.execute(calculateProductPrice);
-		if (productPrice.isError())
-			LOGGER.error("Errore in recupero prezzo articolo " + product.getID());
+		if (productPrice.onError())
+			LOGGER.error(productPrice.getErrorMessage());
 
 		if (productPrice.isValidPriceFound()) {
 			invoiceItem.setAmount(productPrice.getBasePrice());
@@ -375,8 +372,8 @@ public class RenewalAgreement implements Callable<Long> {
 		calcTaxForDisplay.setProductId(product.getID());
 		calcTaxForDisplay.setProductStoreId(productStore.getID());
 		CalcTaxForDisplayResponse taxForDisplay = serviceManager.execute(calcTaxForDisplay);
-		if (taxForDisplay.isError()) {
-			LOGGER.error("Errore in recupero tasse per articolo " + product.getID());
+		if (taxForDisplay.onError()) {
+			LOGGER.error(taxForDisplay.getErrorMessage());
 			return;
 		}
 
@@ -402,9 +399,8 @@ public class RenewalAgreement implements Callable<Long> {
 
 		invoiceItemWriter.create(invoiceItem);
 	}
-	
-	private String createPaymentFromInvoice(Invoice invoice)
-			throws ResourceException, ServiceException {
+
+	private String createPaymentFromInvoice(Invoice invoice) throws ResourceException, ServiceException {
 
 		ServiceManager serviceManager = context.getServiceManager();
 
@@ -430,15 +426,15 @@ public class RenewalAgreement implements Callable<Long> {
 		updatePaymentApplicationDef.setInvoiceId(invoice.getID());
 		updatePaymentApplicationDef.setPaymentId(payment.getID());
 		UpdatePaymentApplicationDefResponse response = serviceManager.execute(updatePaymentApplicationDef);
-		if (response.isError()) {
-			LOGGER.error("Error in payment application: " + payment.getID());
+		if (response.onError()) {
+			LOGGER.error(response.getErrorMessage());
 			return payment.getID();
 		}
 		LOGGER.info("Pagamento applicato");
 
 		return payment.getID();
 	}
-	
+
 	private boolean setPaymentStatus(String paymentId, String statusPaymentId) throws ResourceException, ServiceException {
 
 		ServiceManager serviceManager = context.getServiceManager();
@@ -447,8 +443,8 @@ public class RenewalAgreement implements Callable<Long> {
 		setPaymentStatus.setPaymentId(paymentId);
 		setPaymentStatus.setStatusId(statusPaymentId);
 		SetPaymentStatusResponse response = serviceManager.execute(setPaymentStatus);
-		if (response.isError()) {
-			LOGGER.error("Error in receive payment");
+		if (response.onError()) {
+			LOGGER.error(response.getErrorMessage());
 			return false;
 		}
 
@@ -465,14 +461,14 @@ public class RenewalAgreement implements Callable<Long> {
 		setInvoiceStatus.setStatusDate(new Date());
 
 		SetInvoiceStatusResponse response = serviceManager.execute(setInvoiceStatus);
-		if (response.isError()) {
-			LOGGER.error("Error in approve invoice");
+		if (response.onError()) {
+			LOGGER.error(response.getErrorMessage());
 			return false;
 		}
 
 		return true;
 	}
-	
+
 	private String getNewSeqId(String agreementItemSeqId) {
 		int i = Integer.parseInt(agreementItemSeqId);
 		i++;

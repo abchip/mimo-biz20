@@ -45,7 +45,7 @@ public class SetPaymentStatusResponseImpl extends ServiceResponseImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 4;
+	protected static final int ESTATIC_FEATURE_COUNT = 3;
 
 	/**
 	 * <!-- begin-user-doc -->

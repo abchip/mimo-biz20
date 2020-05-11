@@ -185,8 +185,8 @@ public class CreateSalesInvoice implements Callable<Long> {
 		calculateProductPrice.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
 
 		CalculateProductPriceResponse productPrice = serviceManager.execute(calculateProductPrice);
-		if (productPrice.isError())
-			LOGGER.error("Errore in recupero prezzo articolo " + product.getID());
+		if (productPrice.onError())
+			LOGGER.error(productPrice.getErrorMessage());
 
 		if (productPrice.isValidPriceFound()) {
 			invoiceItem.setAmount(productPrice.getBasePrice());
@@ -223,8 +223,8 @@ public class CreateSalesInvoice implements Callable<Long> {
 		updatePaymentApplicationDef.setInvoiceId(invoice.getID());
 		updatePaymentApplicationDef.setPaymentId(payment.getID());
 		UpdatePaymentApplicationDefResponse response = serviceManager.execute(updatePaymentApplicationDef);
-		if (response.isError()) {
-			LOGGER.error("Error in payment application: " + payment.getID());
+		if (response.onError()) {
+			LOGGER.error(response.getErrorMessage());
 			return payment.getID();
 		}
 
@@ -263,8 +263,8 @@ public class CreateSalesInvoice implements Callable<Long> {
 		calcTaxForDisplay.setProductId(invoiceItemParent.getProductId().getID());
 		calcTaxForDisplay.setProductStoreId(productStore.getID());
 		CalcTaxForDisplayResponse taxForDisplay = serviceManager.execute(calcTaxForDisplay);
-		if (taxForDisplay.isError()) {
-			LOGGER.error("Errore in recupero tasse per articolo " + invoiceItemParent.getProductId().getID());
+		if (taxForDisplay.onError()) {
+			LOGGER.error(taxForDisplay.getErrorMessage());
 			return;
 		}
 

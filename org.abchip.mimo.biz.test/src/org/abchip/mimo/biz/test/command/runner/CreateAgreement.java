@@ -113,8 +113,8 @@ public class CreateAgreement implements Callable<Long> {
 		calculateProductPrice.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
 
 		CalculateProductPriceResponse response = serviceManager.execute(calculateProductPrice);
-		if (response.isError())
-			LOGGER.info("Errore in recupero prezzo articolo " + product.getID());
+		if (response.onError())
+			LOGGER.info(response.getErrorMessage());
 
 		if (response.isValidPriceFound()) {
 			agreementProductAppl.setPrice(response.getBasePrice());

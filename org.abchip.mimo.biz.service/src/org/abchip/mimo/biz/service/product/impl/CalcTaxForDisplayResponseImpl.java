@@ -54,7 +54,7 @@ public class CalcTaxForDisplayResponseImpl extends ServiceResponseImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final int ESTATIC_FEATURE_COUNT = 4;
+	protected static final int ESTATIC_FEATURE_COUNT = 3;
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -134,8 +134,8 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 		calculateProductPrice.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
 
 		CalculateProductPriceResponse productPrice = serviceManager.execute(calculateProductPrice);
-		if (productPrice.isError())
-			LOGGER.error("Errore in recupero prezzo articolo " + product.getID());
+		if (productPrice.onError())
+			LOGGER.error(productPrice.getErrorMessage());
 
 		if (productPrice.isValidPriceFound()) {
 			invoiceItem.setAmount(productPrice.getBasePrice());

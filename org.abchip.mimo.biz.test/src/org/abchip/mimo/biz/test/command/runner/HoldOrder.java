@@ -66,8 +66,8 @@ public class HoldOrder implements Callable<Long> {
 		changeOrderStatus.setSetItemStatus(true);
 		ChangeOrderStatusResponse response = serviceManager.execute(changeOrderStatus);
 
-		if (response.isError()) {
-			LOGGER.error("Error in set status");
+		if (response.onError()) {
+			LOGGER.error(response.getErrorMessage());
 			return;
 		}
 

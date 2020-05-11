@@ -191,8 +191,8 @@ public class CreatePurchaseOrder implements Callable<Long> {
 		ResetGrandTotal resetGrandTotal = serviceManager.prepare(ResetGrandTotal.class);
 		resetGrandTotal.setOrderId(orderHeader.getOrderId());
 		ResetGrandTotalResponse grandTotalresponse = serviceManager.execute(resetGrandTotal);
-		if (grandTotalresponse.isError()) {
-			LOGGER.error("Errore in aggiornamento testata documento");
+		if (grandTotalresponse.onError()) {
+			LOGGER.error(grandTotalresponse.getErrorMessage());
 		}
 	}
 

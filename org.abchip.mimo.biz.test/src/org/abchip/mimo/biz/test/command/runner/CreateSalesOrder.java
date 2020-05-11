@@ -66,7 +66,7 @@ public class CreateSalesOrder implements Callable<Long> {
 
 	Party party;
 	List<Product> products;
-	
+
 	List<BigDecimal> amountList = new ArrayList<BigDecimal>();
 	List<BigDecimal> priceList = new ArrayList<BigDecimal>();
 	List<Product> productList = new ArrayList<Product>();
@@ -195,40 +195,37 @@ public class CreateSalesOrder implements Callable<Long> {
 
 		// Ricalcolo tasse
 		/*
-		CalcTax calcTax = serviceManager.prepare(CalcTax.class);
-		calcTax.setProductStoreId(orderHeader.getProductStoreId().getID());
-		calcTax.setPayToPartyId(partyDefault.getOrganization().getID());
-		calcTax.setBillToPartyId(party.getID());
-		calcTax.getItemAmountList().addAll(amountList);
-		calcTax.getItemPriceList().addAll(priceList);
-		calcTax.getItemProductList().addAll(productList);
-		calcTax.getItemQuantityList().addAll(quantityList);
-		calcTax.getItemShippingList().addAll(shippingList);
-		calcTax.setOrderShippingAmount(new BigDecimal(0));
-		calcTax.setShippingAddress(party.getPostalAddress());
-		calcTax.setOrderPromotionsAmount(new BigDecimal(0));
-				
-		CalcTaxResponse calcTaxResponse = serviceManager.execute(calcTax);
-		if (calcTaxResponse.isError()) {
-			LOGGER.error("Errore in ricalcolo tasse");
-		}
-		// TODO a questo punto con i campi di ritorno devo scrivere OrderAdjustment
-
+		 * CalcTax calcTax = serviceManager.prepare(CalcTax.class);
+		 * calcTax.setProductStoreId(orderHeader.getProductStoreId().getID());
+		 * calcTax.setPayToPartyId(partyDefault.getOrganization().getID());
+		 * calcTax.setBillToPartyId(party.getID());
+		 * calcTax.getItemAmountList().addAll(amountList);
+		 * calcTax.getItemPriceList().addAll(priceList);
+		 * calcTax.getItemProductList().addAll(productList);
+		 * calcTax.getItemQuantityList().addAll(quantityList);
+		 * calcTax.getItemShippingList().addAll(shippingList);
+		 * calcTax.setOrderShippingAmount(new BigDecimal(0));
+		 * calcTax.setShippingAddress(party.getPostalAddress());
+		 * calcTax.setOrderPromotionsAmount(new BigDecimal(0));
+		 * 
+		 * CalcTaxResponse calcTaxResponse = serviceManager.execute(calcTax); if
+		 * (calcTaxResponse.isError()) { LOGGER.error("Errore in ricalcolo tasse"); } //
+		 * TODO a questo punto con i campi di ritorno devo scrivere OrderAdjustment
+		 * 
 		 */
 
 		// Update Total OrderHeader
 		ResetGrandTotal resetGrandTotal = serviceManager.prepare(ResetGrandTotal.class);
 		resetGrandTotal.setOrderId(orderHeader.getOrderId());
 		ResetGrandTotalResponse grandTotalresponse = serviceManager.execute(resetGrandTotal);
-		if (grandTotalresponse.isError()) {
-			LOGGER.error("Errore in aggiornamento testata documento");
+		if (grandTotalresponse.onError()) {
+			LOGGER.error(grandTotalresponse.getErrorMessage());
 		}
-		
+
 		// Inventory
 		ResourceReader<OrderItemShipGroupAssoc> orderItemShipGroupAssocReader = context.getResourceManager().getResourceReader(OrderItemShipGroupAssoc.class);
 		ResourceReader<OrderItem> orderItemReader = context.getResourceManager().getResourceReader(OrderItem.class);
 		String filter = "orderId = \"" + orderHeader.getOrderId() + "\"";
-
 
 		try (EntityIterator<OrderItemShipGroupAssoc> orderItemShipGroupAssocs = orderItemShipGroupAssocReader.find(filter)) {
 			for (OrderItemShipGroupAssoc orderItemShipGroupAssoc : orderItemShipGroupAssocs) {
@@ -251,7 +248,7 @@ public class CreateSalesOrder implements Callable<Long> {
 
 				ReserveStoreInventoryResponse inventoryResponse = serviceManager.execute(reserveStoreInventory);
 
-				if (inventoryResponse.isError()) {
+				if (inventoryResponse.onError()) {
 					String invErrMsg = "The product ";
 					invErrMsg += orderItem.getProductId();
 					invErrMsg += " with ID " + orderItem.getProductId() + " is no longer in stock. Please try reducing the quantity or removing the product from this order.";
@@ -281,8 +278,8 @@ public class CreateSalesOrder implements Callable<Long> {
 		calculateProductPrice.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
 
 		CalculateProductPriceResponse response = serviceManager.execute(calculateProductPrice);
-		if (response.isError())
-			LOGGER.error("Errore in recupero prezzo articolo " + product.getID());
+		if (response.onError())
+			LOGGER.error(response.getErrorMessage());
 
 		if (response.isValidPriceFound()) {
 			orderItem.setUnitListPrice(response.getListPrice());
@@ -309,7 +306,7 @@ public class CreateSalesOrder implements Callable<Long> {
 		orderItemShipGroupAssoc.setShipGroupSeqId(shipGroupSeqId);
 		orderItemShipGroupAssoc.setQuantity(new BigDecimal(quantity));
 		orderItemShipGroupAssocWriter.create(orderItemShipGroupAssoc);
-		
+
 		amountList.add(orderItem.getQuantity());
 		priceList.add(orderItem.getUnitPrice());
 		productList.add(product);
