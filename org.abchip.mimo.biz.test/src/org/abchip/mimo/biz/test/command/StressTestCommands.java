@@ -168,8 +168,6 @@ public class StressTestCommands extends BaseTestCommands {
 		}
 	}
 	
-	
-	
 	public void _st_Inps(CommandInterpreter interpreter) throws Exception {
 
 		long loops = nextArgument(interpreter, 100).longValue();

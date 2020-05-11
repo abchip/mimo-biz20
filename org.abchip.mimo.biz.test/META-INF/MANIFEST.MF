@@ -13,12 +13,14 @@ Require-Bundle: org.abchip.mimo.core.base,
  org.abchip.mimo.tester,
  org.abchip.mimo.tester.base,
  org.eclipse.osgi
-Export-Package: org.abchip.mimo.biz.test.command,
+Export-Package: org.abchip.mimo.biz.test.accounting,
+ org.abchip.mimo.biz.test.command,
  org.abchip.mimo.biz.test.command.runner,
  org.abchip.mimo.biz.test.party,
  org.abchip.mimo.biz.test.party.runner,
  org.abchip.mimo.biz.test.product,
  org.abchip.mimo.biz.test.product.runner
 Bundle-ClassPath: .,
- lib/stripe-java-17.0.0.jar
+ lib/stripe-java-19.9.0.jar,
+ lib/gson-2.8.5.jar
 Import-Package: javax.inject
