@@ -77,7 +77,7 @@ public class EntityUtils {
 			frame.setValue(entity, slot.getName(), value);
 		}
 	}
-	
+
 	// from entity -> ofbiz
 	public static Object toBizValue(Delegator delegator, Slot slot, Object value) {
 		if (slot.getCardinality().isMultiple()) {
@@ -188,11 +188,14 @@ public class EntityUtils {
 
 			break;
 		case ENTITY:
-			EntityIdentifiable entityIdentifiable = (EntityIdentifiable) value;
-			if (slot.isContainment()) {
-				bizValue = EntityUtils.toBizEntity(delegator, entityIdentifiable);
+			if (value instanceof EntityIdentifiable) {
+				EntityIdentifiable entityIdentifiable = (EntityIdentifiable) value;
+				if (slot.isContainment()) {
+					bizValue = EntityUtils.toBizEntity(delegator, entityIdentifiable);
+				} else
+					bizValue = entityIdentifiable.getID();
 			} else
-				bizValue = entityIdentifiable.getID();
+				bizValue = value.toString();
 			break;
 		case ENUM:
 			Enumerator enumerator = (Enumerator) value;
