@@ -14125,7 +14125,7 @@
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="priority" lowerBound="1"
-            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EChar">
+            eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-slot">
             <details key="help" value="Sets priority for Inventory Reservation"/>
           </eAnnotations>

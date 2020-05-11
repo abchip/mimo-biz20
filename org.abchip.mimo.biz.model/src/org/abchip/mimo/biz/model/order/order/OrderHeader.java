@@ -752,13 +752,13 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Priority</em>' attribute.
-	 * @see #setPriority(char)
+	 * @see #setPriority(String)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_Priority()
 	 * @model required="true"
 	 *        annotation="mimo-ent-slot help='Sets priority for Inventory Reservation'"
 	 * @generated
 	 */
-	char getPriority();
+	String getPriority();
 
 	/**
 	 * Sets the value of the '{@link org.abchip.mimo.biz.model.order.order.OrderHeader#getPriority <em>Priority</em>}' attribute.
@@ -768,7 +768,7 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * @see #getPriority()
 	 * @generated
 	 */
-	void setPriority(char value);
+	void setPriority(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Product Promo Uses</b></em>' reference list.

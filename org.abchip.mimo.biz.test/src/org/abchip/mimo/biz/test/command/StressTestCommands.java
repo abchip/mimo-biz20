@@ -50,26 +50,9 @@ public class StressTestCommands extends BaseTestCommands {
 		super(application);
 	}
 
-	public void _stressTest(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login(interpreter)) {
-			stressTestSalesOrder(interpreter, context.get());
-			stressTestSalesInvoice(interpreter, context.get());
-			stressTestPurchaseOrder(interpreter, context.get());
-			stressTestPurchaseInvoice(interpreter, context.get());
-			stressTestAgreement(interpreter, context.get());
-		}
-	}
-
 	public void _createTestBaseData(CommandInterpreter interpreter) throws Exception {
 		try (ContextProvider context = login(interpreter)) {
-			String reqNumber = nextArgument(interpreter);
-			long loops = 1;
-			if (reqNumber != null) {
-				try {
-					loops = Long.parseLong(reqNumber);
-				} catch (NumberFormatException e) {
-				}
-			}
+			long loops = nextArgument(interpreter, 1).longValue();
 			createTestBaseData(interpreter, context.get(), loops);
 		}
 	}
@@ -77,6 +60,16 @@ public class StressTestCommands extends BaseTestCommands {
 	public void _stressTestSalesOrder(CommandInterpreter interpreter) throws Exception {
 		try (ContextProvider context = login(interpreter)) {
 			stressTestSalesOrder(interpreter, context.get());
+		}
+	}
+
+	public void _stressTest(CommandInterpreter interpreter) throws Exception {
+		try (ContextProvider context = login(interpreter)) {
+			stressTestSalesOrder(interpreter, context.get());
+			stressTestSalesInvoice(interpreter, context.get());
+			stressTestPurchaseOrder(interpreter, context.get());
+			stressTestPurchaseInvoice(interpreter, context.get());
+			stressTestAgreement(interpreter, context.get());
 		}
 	}
 
@@ -179,22 +172,9 @@ public class StressTestCommands extends BaseTestCommands {
 	
 	public void _st_Inps(CommandInterpreter interpreter) throws Exception {
 
-		String reqNumber = nextArgument(interpreter);
-		String poolNumber = nextArgument(interpreter);
-		long loops = 100;
-		int poolSize = 2;
-		if (reqNumber != null) {
-			try {
-				loops = Long.parseLong(reqNumber);
-			} catch (NumberFormatException e) {
-			}
-		}
-		if (poolNumber != null) {
-			try {
-				poolSize = Integer.parseInt(poolNumber);
-			} catch (NumberFormatException e) {
-			}
-		}
+		long loops = nextArgument(interpreter, 100).longValue();
+		int poolSize = nextArgument(interpreter, 2).intValue();
+		
 		interpreter.println("Execution Stress Test Inps loops: " + loops + " and " + " poolSize: " + poolSize);
 		stressTestInps(interpreter, loops, poolSize);
 	}
