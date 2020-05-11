@@ -44,8 +44,6 @@ import org.abchip.mimo.biz.service.order.ResetGrandTotal;
 import org.abchip.mimo.biz.service.order.ResetGrandTotalResponse;
 import org.abchip.mimo.biz.service.party.GetPartyDefault;
 import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
-import org.abchip.mimo.biz.service.product.CalcTax;
-import org.abchip.mimo.biz.service.product.CalcTaxResponse;
 import org.abchip.mimo.biz.service.product.CalculateProductPrice;
 import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
@@ -121,6 +119,7 @@ public class CreateSalesOrder implements Callable<Long> {
 		orderHeader.setStatusId(context.createProxy(StatusItem.class, "ORDER_CREATED"));
 		orderHeader.setCurrencyUom(commonDefault.getCurrencyUom());
 		orderHeader.setInvoicePerShipment(Boolean.TRUE);
+		orderHeader.setPriority("2");
 		orderHeader.setCreatedBy(userLogin);
 		// orderHeader.setRemainingSubTotal(new BigDecimal(10));
 		// orderHeader.setGrandTotal(new BigDecimal(10));
@@ -195,6 +194,7 @@ public class CreateSalesOrder implements Callable<Long> {
 		orderPaymentPreferenceWriter.create(orderPaymentPreference);
 
 		// Ricalcolo tasse
+		/*
 		CalcTax calcTax = serviceManager.prepare(CalcTax.class);
 		calcTax.setProductStoreId(orderHeader.getProductStoreId().getID());
 		calcTax.setPayToPartyId(partyDefault.getOrganization().getID());
@@ -214,6 +214,8 @@ public class CreateSalesOrder implements Callable<Long> {
 		}
 		// TODO a questo punto con i campi di ritorno devo scrivere OrderAdjustment
 
+		 */
+
 		// Update Total OrderHeader
 		ResetGrandTotal resetGrandTotal = serviceManager.prepare(ResetGrandTotal.class);
 		resetGrandTotal.setOrderId(orderHeader.getOrderId());
@@ -231,6 +233,7 @@ public class CreateSalesOrder implements Callable<Long> {
 		try (EntityIterator<OrderItemShipGroupAssoc> orderItemShipGroupAssocs = orderItemShipGroupAssocReader.find(filter)) {
 			for (OrderItemShipGroupAssoc orderItemShipGroupAssoc : orderItemShipGroupAssocs) {
 
+				// TODO verificare perchè non va
 				OrderItem orderItem = orderItemReader.lookup(orderHeader.getOrderId() + "/" + orderItemShipGroupAssoc.getOrderItemSeqId());
 
 				// reserve the product

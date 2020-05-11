@@ -39,6 +39,8 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
 import org.abchip.mimo.biz.service.common.GetCommonDefault;
 import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
+import org.abchip.mimo.biz.service.order.ResetGrandTotal;
+import org.abchip.mimo.biz.service.order.ResetGrandTotalResponse;
 import org.abchip.mimo.biz.service.party.GetPartyDefault;
 import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
 import org.abchip.mimo.biz.service.product.GetProductDefault;
@@ -47,10 +49,14 @@ import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceWriter;
+import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceManager;
+import org.abchip.mimo.util.Logs;
+import org.osgi.service.log.Logger;
 
 public class CreatePurchaseOrder implements Callable<Long> {
 
+	private static final Logger LOGGER = Logs.getLogger(CreatePurchaseOrder.class);
 	Context context;
 	GetCommonDefaultResponse commonDefault;
 	GetPartyDefaultResponse partyDefault;
@@ -79,12 +85,12 @@ public class CreatePurchaseOrder implements Callable<Long> {
 		productDefault = serviceManager.execute(getProductDefault);
 
 		long time1 = System.currentTimeMillis();
-		createOrder();
+		createOrder(serviceManager);
 		long time2 = System.currentTimeMillis();
 		return time2 - time1;
 	}
 
-	private void createOrder() throws ResourceException {
+	private void createOrder(ServiceManager serviceManager) throws ResourceException, ServiceException {
 
 		ProductStore productStore = StressTestUtils.getProductStore(context);
 		PartyAcctgPreference partyAcctgPreference = partyDefault.getAccountingPreference();
@@ -108,6 +114,7 @@ public class CreatePurchaseOrder implements Callable<Long> {
 		orderHeader.setStatusId(context.createProxy(StatusItem.class, "ORDER_CREATED"));
 		orderHeader.setCurrencyUom(commonDefault.getCurrencyUom());
 		orderHeader.setInvoicePerShipment(Boolean.TRUE);
+		orderHeader.setPriority("2");
 		orderHeader.setCreatedBy(userLogin);
 		// orderHeader.setRemainingSubTotal(new BigDecimal(10));
 		// orderHeader.setGrandTotal(new BigDecimal(10));
@@ -139,10 +146,8 @@ public class CreatePurchaseOrder implements Callable<Long> {
 
 		// OrderItem
 		long i = 1;
-		long total = 0;
 		for (SupplierProduct supplierProduct : this.supplierProducts) {
 			createOrderItem(orderHeader, StressTestUtils.formatPaddedNumber(i++, 5), shipGroupSeqId, 1, supplierProduct);
-			total++;
 		}
 		// OrderRole
 		ResourceWriter<OrderRole> orderRoleWriter = context.getResourceManager().getResourceWriter(OrderRole.class);
@@ -182,9 +187,13 @@ public class CreatePurchaseOrder implements Callable<Long> {
 		//
 		// TODO qui richiamare il servizio calcTax per aggiungere l'iva all'ordine
 
-		// TODO chiamare il servizio resetGrandTotal
-		orderHeader.setGrandTotal(new BigDecimal(total));
-		orderHeaderWriter.update(orderHeader);
+		// Update Total OrderHeader
+		ResetGrandTotal resetGrandTotal = serviceManager.prepare(ResetGrandTotal.class);
+		resetGrandTotal.setOrderId(orderHeader.getOrderId());
+		ResetGrandTotalResponse grandTotalresponse = serviceManager.execute(resetGrandTotal);
+		if (grandTotalresponse.isError()) {
+			LOGGER.error("Errore in aggiornamento testata documento");
+		}
 	}
 
 	private void createOrderItem(OrderHeader orderHeader, String itemSeqiD, String shipGroupSeqId, int quantity, SupplierProduct supplierProduct) throws ResourceException {
