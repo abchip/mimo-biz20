@@ -43,6 +43,7 @@ import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EModelElement;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
+import org.eclipse.emf.ecore.EStructuralFeature;
 import org.eclipse.emf.ecore.EcoreFactory;
 import org.eclipse.emf.ecore.EcorePackage;
 import org.eclipse.emf.ecore.util.EcoreUtil;
@@ -58,6 +59,10 @@ public class EcoreUtils {
 
 	public static EAnnotation copy(EAnnotation eAnnotation) {
 		return EcoreUtil.copy(eAnnotation);
+	}
+
+	public static EStructuralFeature copy(EStructuralFeature eFeature) {
+		return EcoreUtil.copy(eFeature);
 	}
 
 	public static EOperation copy(EOperation eOperation) {
@@ -299,9 +304,6 @@ public class EcoreUtils {
 	}
 
 	public static EAttribute buildAttribute(Delegator delegator, List<ModelForm> forms, ModelField modelField) {
-
-		if(modelField.getName().equals("priority"))
-			"".toString();
 		
 		EcoreFactory ecoreFactory = EcoreFactory.eINSTANCE;
 

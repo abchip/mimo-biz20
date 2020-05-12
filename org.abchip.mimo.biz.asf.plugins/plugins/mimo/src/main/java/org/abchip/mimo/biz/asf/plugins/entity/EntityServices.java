@@ -82,11 +82,12 @@ public class EntityServices {
 			setReferences(modelReader, bizPackage, entityNames);
 			setIndicators(bizPackage, context, modelReader, entityNames, forms);
 			addRoutes(delegator, forms, bizPackage, entityNames);
-			reorderFeatures(bizPackage, entityNames);
 
 			if (setVariations(Frames.getEClassifiers(), bizPackage))
 				LOGGER.warn("Differences found on model");
 
+			reorderFeatures(bizPackage, entityNames);
+			
 			bizPackage = writePackage(bizPackage, context);
 
 			return ServiceUtil.returnSuccess("OK");
@@ -127,19 +128,48 @@ public class EntityServices {
 		EClass dstEClass = (EClass) dstEClassifier;
 		EClass srcEClass = (EClass) srcEClassifier;
 
+		boolean result = false;
+
+		// super class
 		if (!srcEClass.getESuperTypes().get(0).getName().equals(dstEClass.getESuperTypes().get(0).getName())) {
 			LOGGER.info("Class {} override super {}", dstEClassifier.getName(), EcoreUtil.getURI(srcEClass.getESuperTypes().get(0)));
 
+			result = true;
+
+			// remove previous
 			dstEClass.getESuperTypes().clear();
-			for (EClass srcSuperEClass : srcEClass.getESuperTypes()) {
+			
+			// copy source
+			for (EClass srcSuperEClass : srcEClass.getESuperTypes())
 				dstEClass.getESuperTypes().add(srcSuperEClass);
-			}
 		}
 
-		boolean result = false;
+		// features
+		for (EStructuralFeature srcEFeature : srcEClass.getEStructuralFeatures()) {
+			EAnnotation srcEAnnotation = srcEFeature.getEAnnotation(Slot.NS_PREFIX_SLOT);
+			if (srcEAnnotation == null)
+				continue;
+
+			String srcEValue = srcEAnnotation.getDetails().get("generated");
+			if (srcEValue == null || Boolean.parseBoolean(srcEValue))
+				continue;
+
+			EStructuralFeature dstEFeature = dstEClass.getEStructuralFeature(srcEFeature.getName());
+			
+			// remove previous
+			if(dstEFeature != null)
+				dstEClass.getEStructuralFeatures().remove(dstEFeature);
+			
+			dstEClass.getEStructuralFeatures().add(EcoreUtils.copy(srcEFeature));
+			result = true;
+		}
+
+		// operations
 		for (EOperation srcEOperation : srcEClass.getEOperations()) {
 			EPackage srcEPackage = srcEClass.getEPackage();
 			EPackage dstEPackage = dstEClass.getEPackage();
+			
+			// copy annotation to destination package
 			for (EAnnotation srcEAnnotation : srcEPackage.getEAnnotations()) {
 				EAnnotation dstEAnnotation = dstEPackage.getEAnnotation(srcEAnnotation.getSource());
 				if (dstEAnnotation == null) {
@@ -147,6 +177,8 @@ public class EntityServices {
 					dstEPackage.getEAnnotations().add(dstEAnnotation);
 				}
 			}
+			
+			// copy source
 			dstEClass.getEOperations().add(EcoreUtils.copy(srcEOperation));
 			result = true;
 		}
@@ -760,7 +792,7 @@ public class EntityServices {
 			EClass eClass = Frames.getEClass(bizPackage, entityName);
 
 			List<EStructuralFeature> keys = new ArrayList<EStructuralFeature>();
-			List<EStructuralFeature> atts = new ArrayList<EStructuralFeature>();
+			List<EStructuralFeature> features = new ArrayList<EStructuralFeature>();
 
 			for (EStructuralFeature eStructuralFeature : eClass.getEStructuralFeatures()) {
 				if (eStructuralFeature instanceof EAttribute && ((EAttribute) eStructuralFeature).isID()) {
@@ -770,7 +802,7 @@ public class EntityServices {
 				if (EcoreUtils.getAnnotationValue(eStructuralFeature, Slot.NS_PREFIX_SLOT, "key") != null)
 					keys.add(eStructuralFeature);
 				else
-					atts.add(eStructuralFeature);
+					features.add(eStructuralFeature);
 			}
 
 			Collections.sort(keys, new Comparator<EStructuralFeature>() {
@@ -783,7 +815,7 @@ public class EntityServices {
 				}
 			});
 
-			Collections.sort(atts, new Comparator<EStructuralFeature>() {
+			Collections.sort(features, new Comparator<EStructuralFeature>() {
 				@Override
 				public int compare(EStructuralFeature o1, EStructuralFeature o2) {
 					return o1.getName().compareTo(o2.getName());
@@ -792,7 +824,7 @@ public class EntityServices {
 
 			eClass.getEStructuralFeatures().clear();
 			eClass.getEStructuralFeatures().addAll(keys);
-			eClass.getEStructuralFeatures().addAll(atts);
+			eClass.getEStructuralFeatures().addAll(features);
 		}
 	}
 
