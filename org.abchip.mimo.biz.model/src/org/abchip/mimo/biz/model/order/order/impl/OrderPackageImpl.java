@@ -6653,7 +6653,8 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		  (getOrderHeader_Priority(),
 		   source,
 		   new String[] {
-			   "help", "Sets priority for Inventory Reservation"
+			   "help", "Sets priority for Inventory Reservation",
+			   "generated", "false"
 		   });
 		addAnnotation
 		  (getOrderHeaderNote_OrderId(),

@@ -21,6 +21,7 @@ import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.util.Logs;
+import org.apache.ofbiz.base.util.GeneralException;
 import org.apache.ofbiz.base.util.StringUtil;
 import org.apache.ofbiz.entity.Delegator;
 import org.apache.ofbiz.entity.GenericValue;
@@ -93,8 +94,12 @@ public class SeedServices {
 		for (GenericValue genericValue : listEntity) {
 
 			EntityIdentifiable entityIdentifiable = context.getResourceSet().getResource(genericValue.getEntityName()).make();
-			EntityUtils.completeEntity(entityIdentifiable, genericValue);
-			
+			try {
+				EntityUtils.completeEntity(entityIdentifiable, genericValue);
+			} catch (GeneralException e) {
+				throw new ResourceException(e);
+			}
+
 			container.getContents().add(entityIdentifiable);
 		}
 

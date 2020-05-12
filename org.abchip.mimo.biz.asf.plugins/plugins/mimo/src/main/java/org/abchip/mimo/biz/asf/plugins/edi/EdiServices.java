@@ -26,6 +26,7 @@ import org.abchip.mimo.resource.Resource;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.util.Logs;
+import org.apache.ofbiz.base.util.GeneralException;
 import org.apache.ofbiz.entity.Delegator;
 import org.apache.ofbiz.entity.GenericEntityException;
 import org.apache.ofbiz.entity.GenericValue;
@@ -142,7 +143,11 @@ public class EdiServices {
 		Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
 		Resource<EdiFrameSetup> ediFrameSetupResource = context.getResourceSet().getResource(EdiFrameSetup.class);
 		EdiFrameSetup ediFrameSetup = ediFrameSetupResource.make();
-		EntityUtils.completeEntity(ediFrameSetup, ofbizEntity);
+		try {
+			EntityUtils.completeEntity(ediFrameSetup, ofbizEntity);
+		} catch (GeneralException e) {
+			throw new ResourceException(e);
+		}
 		EdiUtils.removeEdiEca(delegator, ediFrameSetup.getFrame());
 
 		ResourceReader<EdiFrameSetup> setupReader = context.getResourceManager().getResourceReader(EdiFrameSetup.class, resource);
@@ -171,7 +176,11 @@ public class EdiServices {
 		@SuppressWarnings("rawtypes")
 		Resource<MessageType> resource = context.getResourceSet().getResource(MessageType.class);
 		MessageType<?> messageType = resource.make();
-		EntityUtils.completeEntity(messageType, entityInstance);
+		try {
+			EntityUtils.completeEntity(messageType, entityInstance);
+		} catch (GeneralException e) {
+			throw new ResourceException(e);
+		}
 
 		try {
 			long startTime = new java.util.Date().getTime();
@@ -200,7 +209,11 @@ public class EdiServices {
 
 		Resource<?> resource = context.getResourceSet().getResource(ofbizEntity.getEntityName());
 		EntityIdentifiable entity = resource.make();
-		EntityUtils.completeEntity(entity, ofbizEntity);
+		try {
+			EntityUtils.completeEntity(entity, ofbizEntity);
+		} catch (GeneralException e) {
+			throw new ResourceException(e);
+		}
 
 		EdiManager ediManager = context.get(EdiManager.class);
 		ediManager.writeMessage(context, entity, EntityEvent.get(operation.name()));

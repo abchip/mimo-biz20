@@ -218,7 +218,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			}
 
 			TransactionUtil.commit(beganTransaction);
-		} catch (GenericEntityException e) {
+		} catch (GeneralException e) {
 			entity = null;
 			try {
 				String errMsg = "Failure in read operation for entity [" + this.getFrame().getName() + "/" + name + "]: " + e.toString() + ". Rolling back transaction.";
@@ -305,7 +305,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 				entities.add(entity);
 			}
 			TransactionUtil.commit(beganTransaction);
-		} catch (GenericEntityException e) {
+		} catch (GeneralException e) {
 			try {
 				String errMsg = "Failure in read operation for entity [" + this.getFrame().getName() + "]: " + e.toString() + ". Rolling back transaction.";
 				TransactionUtil.rollback(beganTransaction, errMsg, e);

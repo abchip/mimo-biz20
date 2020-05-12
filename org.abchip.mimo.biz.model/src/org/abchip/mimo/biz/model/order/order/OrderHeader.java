@@ -755,7 +755,7 @@ public interface OrderHeader extends EntityTyped<OrderType>, EntityInfo {
 	 * @see #setPriority(String)
 	 * @see org.abchip.mimo.biz.model.order.order.OrderPackage#getOrderHeader_Priority()
 	 * @model required="true"
-	 *        annotation="mimo-ent-slot help='Sets priority for Inventory Reservation'"
+	 *        annotation="mimo-ent-slot help='Sets priority for Inventory Reservation' generated='false'"
 	 * @generated
 	 */
 	String getPriority();

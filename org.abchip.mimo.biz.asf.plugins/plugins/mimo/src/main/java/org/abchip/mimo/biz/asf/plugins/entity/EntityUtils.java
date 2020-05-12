@@ -58,25 +58,6 @@ public class EntityUtils {
 		return genericValue;
 	}
 
-	// from ofbiz -> entity
-	public static <E extends EntityIdentifiable> void completeEntity(E entity, GenericValue genericValue) {
-
-		Frame<E> frame = entity.isa();
-		for (Entry<String, Object> entry : genericValue.getAllFields().entrySet()) {
-
-			Object value = entry.getValue();
-			if (UtilValidate.isEmpty(value))
-				continue;
-
-			Slot slot = frame.getSlot(entry.getKey());
-			if (slot == null)
-				continue;
-
-			value = toValue(slot, value);
-
-			frame.setValue(entity, slot.getName(), value);
-		}
-	}
 
 	// from entity -> ofbiz
 	public static Object toBizValue(String javaType, Slot slot, Object value) throws GeneralException {
@@ -104,7 +85,27 @@ public class EntityUtils {
 	}
 
 	// from ofbiz -> entity
-	public static Object toValue(Slot slot, Object bizValue) {
+	public static <E extends EntityIdentifiable> void completeEntity(E entity, GenericValue genericValue) throws GeneralException {
+
+		Frame<E> frame = entity.isa();
+		for (Entry<String, Object> entry : genericValue.getAllFields().entrySet()) {
+
+			Object value = entry.getValue();
+			if (UtilValidate.isEmpty(value))
+				continue;
+
+			Slot slot = frame.getSlot(entry.getKey());
+			if (slot == null)
+				continue;
+
+			value = toValue(slot, value);
+
+			frame.setValue(entity, slot.getName(), value);
+		}
+	}
+	
+	// from ofbiz -> entity
+	public static Object toValue(Slot slot, Object bizValue) throws GeneralException {
 
 		if (slot.getCardinality().isMultiple()) {
 			List<Object> values = new ArrayList<Object>();
@@ -119,35 +120,7 @@ public class EntityUtils {
 			return toSingleValue(slot, bizValue);
 	}
 
-	private static Object toSingleValue(Slot slot, Object bizValue) {
-
-		Object value = bizValue;
-
-		switch (slot.getDataType()) {
-		case BINARY:
-			break;
-		case BOOLEAN:
-			if (bizValue.toString().equals("Y"))
-				value = Boolean.TRUE;
-			else if (bizValue.toString().equals("N"))
-				value = Boolean.FALSE;
-			else if (bizValue.toString().trim().isEmpty())
-				value = null;
-			break;
-		case DATE_TIME:
-			break;
-		case ENTITY:
-			break;
-		case ENUM:
-			break;
-		case IDENTITY:
-			break;
-		case NUMERIC:
-			break;
-		case STRING:
-			break;
-		}
-
-		return value;
+	private static Object toSingleValue(Slot slot, Object bizValue) throws GeneralException {
+		return ObjectType.simpleTypeConvert(bizValue, slot.getDataDef().getJavaClass().getName(), null, null);
 	}
 }

@@ -14128,6 +14128,7 @@
             eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
           <eAnnotations source="mimo-ent-slot">
             <details key="help" value="Sets priority for Inventory Reservation"/>
+            <details key="generated" value="false"/>
           </eAnnotations>
         </eStructuralFeatures>
         <eStructuralFeatures xsi:type="ecore:EReference" name="productPromoUses" upperBound="-1"

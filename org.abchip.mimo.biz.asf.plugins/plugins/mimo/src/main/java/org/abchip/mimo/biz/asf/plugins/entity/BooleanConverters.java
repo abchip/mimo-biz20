@@ -18,6 +18,8 @@
  *******************************************************************************/
 package org.abchip.mimo.biz.asf.plugins.entity;
 
+import java.util.Locale;
+
 import org.apache.ofbiz.base.conversion.AbstractConverter;
 import org.apache.ofbiz.base.conversion.ConversionException;
 import org.apache.ofbiz.base.conversion.ConverterLoader;
@@ -42,6 +44,21 @@ public class BooleanConverters implements ConverterLoader {
 				return "N";
 			else
 				return null;
+		}
+	}
+
+	public static class StringToBoolean extends AbstractConverter<String, Boolean> {
+		public StringToBoolean() {
+			super(String.class, Boolean.class);
+		}
+
+		public Boolean convert(String obj) throws ConversionException {
+			if ("TRUE".equals(obj.trim().toUpperCase(Locale.getDefault())))
+				return true;
+			else if ("Y".equals(obj.trim().toUpperCase(Locale.getDefault())))
+				return true;
+			else
+				return false;
 		}
 	}
 
