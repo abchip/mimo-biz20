@@ -8,40 +8,38 @@
  */
 package org.abchip.mimo.biz.asf.plugins.entity;
 
-import java.math.BigDecimal;
-import java.sql.Timestamp;
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Date;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map.Entry;
 
-import org.abchip.mimo.biz.asf.plugins.OFBizConstants;
-import org.abchip.mimo.data.DatetimeDef;
-import org.abchip.mimo.data.NumericDef;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
+import org.apache.ofbiz.base.util.GeneralException;
+import org.apache.ofbiz.base.util.ObjectType;
 import org.apache.ofbiz.base.util.UtilValidate;
 import org.apache.ofbiz.entity.Delegator;
 import org.apache.ofbiz.entity.GenericValue;
+import org.apache.ofbiz.entity.model.ModelEntity;
 import org.apache.ofbiz.entity.model.ModelField;
-import org.eclipse.emf.common.util.Enumerator;
+import org.apache.ofbiz.entity.model.ModelFieldType;
+import org.apache.ofbiz.entity.model.ModelFieldTypeReader;
 
 public class EntityUtils {
 
 	// from entity -> ofbiz
-	public static GenericValue toBizEntity(Delegator delegator, EntityIdentifiable entity) {
+	public static GenericValue toBizEntity(Delegator delegator, EntityIdentifiable entity) throws GeneralException {
 		return toBizEntity(delegator, entity.isa(), entity);
 	}
 
-	public static <E extends EntityIdentifiable> GenericValue toBizEntity(Delegator delegator, Frame<E> frame, E entity) {
+	public static <E extends EntityIdentifiable> GenericValue toBizEntity(Delegator delegator, Frame<E> frame, E entity) throws GeneralException {
 
-		GenericValue genericValue = delegator.makeValue(frame.getName());
+		ModelEntity modelEntity = delegator.getModelEntity(frame.getName());
+		ModelFieldTypeReader modelHelper = delegator.getModelFieldTypeReader(modelEntity);
+		
+		GenericValue genericValue = GenericValue.create(modelEntity);
 
 		Iterator<ModelField> fieldIterator = genericValue.getModelEntity().getFieldsIterator();
 		while (fieldIterator.hasNext()) {
@@ -50,8 +48,10 @@ public class EntityUtils {
 			Object value = frame.getValue(entity, field.getName(), false, false);
 			if (UtilValidate.isEmpty(value))
 				continue;
+			
 
-			value = toBizValue(delegator, frame.getSlot(field.getName()), value);
+			ModelFieldType type = modelHelper.getModelFieldType(field.getType());
+			value = toBizValue(type.getJavaType(), frame.getSlot(field.getName()), value);
 			genericValue.set(field.getName(), value);
 		}
 
@@ -79,196 +79,28 @@ public class EntityUtils {
 	}
 
 	// from entity -> ofbiz
-	public static Object toBizValue(Delegator delegator, Slot slot, Object value) {
+	public static Object toBizValue(String javaType, Slot slot, Object value) throws GeneralException {
 		if (slot.getCardinality().isMultiple()) {
 			List<Object> bizValues = new ArrayList<Object>();
 			if (value instanceof Collection<?>) {
 				Collection<?> values = (Collection<?>) value;
 				for (Object object : values)
-					bizValues.add(toSingleBizValue(delegator, slot, object));
+					bizValues.add(toSingleBizValue(javaType, object));
 			} else
-				bizValues.add(toSingleBizValue(delegator, slot, value));
+				bizValues.add(toSingleBizValue(javaType, value));
 			return bizValues;
 		} else
-			return toSingleBizValue(delegator, slot, value);
+			return toSingleBizValue(javaType, value);
 	}
 
-	public static Object toSingleBizValue(Delegator delegator, Slot slot, Object value) {
+	private static Object toSingleBizValue(String javaType, Object value) throws GeneralException {
+		if (value instanceof EntityIdentifiable)
+			"".toString();
 
-		Object bizValue = null;
-		if (value == null) {
-			switch (slot.getDataType()) {
-			case BINARY:
-				break;
-			case BOOLEAN:
-				break;
-			case DATE_TIME:
-				if (slot.getName().equals("fromDate")) {
-					DateFormat dateFormat = new SimpleDateFormat(OFBizConstants.TIMESTAMP_FORMAT);
-					bizValue = dateFormat.format(new Date());
-				}
-				break;
-			case ENTITY:
-				break;
-			case ENUM:
-				break;
-			case IDENTITY:
-				break;
-			case NUMERIC:
-				break;
-			case STRING:
-				break;
-			}
-		}
+		if (value instanceof Boolean && String.class.getSimpleName().equals(javaType))
+			"".toString();
 
-		if (value == null)
-			return null;
-
-		switch (slot.getDataType()) {
-		case BINARY:
-			bizValue = value;
-			break;
-		case BOOLEAN:
-			bizValue = Boolean.parseBoolean(value.toString());
-			break;
-		case DATE_TIME:
-			DatetimeDef datetimeDef = (DatetimeDef) slot.getDataDef();
-			switch (datetimeDef.getType()) {
-			case DATE:
-				if (value instanceof Date) {
-					bizValue = value;
-				} else {
-					DateFormat dateFormat = new SimpleDateFormat(OFBizConstants.DATE_FORMAT);
-					try {
-						bizValue = dateFormat.parse(value.toString());
-					} catch (ParseException e) {
-					}
-				}
-				break;
-			case DATE_TIME:
-				if (value instanceof Date) {
-					bizValue = value;
-				} else {
-					DateFormat dateFormat = new SimpleDateFormat(OFBizConstants.DATETIME_FORMAT);
-					try {
-						bizValue = dateFormat.parse(value.toString());
-					} catch (ParseException e) {
-					}
-				}
-				break;
-			case TIME:
-				if (value instanceof Date) {
-					bizValue = value;
-				} else {
-					DateFormat dateFormat = new SimpleDateFormat(OFBizConstants.TIME_FORMAT);
-					try {
-						bizValue = dateFormat.parse(value.toString());
-					} catch (ParseException e) {
-					}
-				}
-				break;
-			case TIME_STAMP:
-				if (value instanceof Timestamp) {
-					bizValue = value;
-				} else if (value instanceof Date) {
-					Date date = (Date) value;
-					java.sql.Timestamp sqlDate = new java.sql.Timestamp(date.getTime());
-					bizValue = sqlDate;
-				} else {
-					DateFormat dateFormat = new SimpleDateFormat(OFBizConstants.TIMESTAMP_FORMAT);
-					try {
-						java.sql.Timestamp sqlDate = new java.sql.Timestamp(dateFormat.parse(value.toString()).getTime());
-						bizValue = sqlDate;
-					} catch (ParseException e) {
-					}
-
-				}
-				break;
-			}
-
-			break;
-		case ENTITY:
-			if (value instanceof EntityIdentifiable) {
-				EntityIdentifiable entityIdentifiable = (EntityIdentifiable) value;
-				if (slot.isContainment()) {
-					bizValue = EntityUtils.toBizEntity(delegator, entityIdentifiable);
-				} else
-					bizValue = entityIdentifiable.getID();
-			} else
-				bizValue = value.toString();
-			break;
-		case ENUM:
-			Enumerator enumerator = (Enumerator) value;
-			bizValue = enumerator.getLiteral();
-			break;
-		case IDENTITY:
-		case NUMERIC:
-			NumericDef numericDef = (NumericDef) slot.getDataDef();
-			switch (numericDef.getType()) {
-			case BIG_DECIMAL:
-				if (value instanceof Number) {
-					bizValue = value;
-				} else {
-					bizValue = new BigDecimal(value.toString());
-				}
-				break;
-			case BYTE:
-				if (value instanceof Byte) {
-					bizValue = value;
-				} else {
-					bizValue = Byte.parseByte(value.toString());
-				}
-				break;
-			case DOUBLE:
-				if (value instanceof Double) {
-					bizValue = value;
-				} else {
-					bizValue = Double.parseDouble(value.toString());
-				}
-				break;
-			case FLOAT:
-				if (value instanceof Float) {
-					bizValue = value;
-				} else {
-					bizValue = Float.parseFloat(value.toString());
-				}
-				break;
-			case INTEGER:
-				if (value instanceof Integer) {
-					bizValue = value;
-				} else {
-					bizValue = Integer.parseInt(value.toString());
-				}
-				break;
-			case LONG:
-				if (value instanceof Long) {
-					bizValue = value;
-				} else {
-					bizValue = Long.parseLong(value.toString());
-				}
-				break;
-			case SHORT:
-				if (value instanceof Short) {
-					bizValue = value;
-				} else {
-					bizValue = Short.parseShort(value.toString());
-				}
-				break;
-			}
-			break;
-		case STRING:
-			if (value instanceof String) {
-				bizValue = value;
-			} else {
-				bizValue = value.toString();
-			}
-			break;
-		}
-
-		if (bizValue == null)
-			throw new RuntimeException("Unexpected condition: ois8d6h59w498r794");
-
-		return bizValue;
+		return ObjectType.simpleTypeConvert(value, javaType, null, null);
 	}
 
 	// from ofbiz -> entity

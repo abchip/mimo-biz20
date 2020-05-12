@@ -32,6 +32,7 @@ import org.antlr.v4.runtime.ANTLRInputStream;
 import org.antlr.v4.runtime.CommonTokenStream;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.antlr.v4.runtime.tree.ParseTreeWalker;
+import org.apache.ofbiz.base.util.GeneralException;
 import org.apache.ofbiz.entity.Delegator;
 import org.apache.ofbiz.entity.GenericEntityException;
 import org.apache.ofbiz.entity.GenericPK;
@@ -41,12 +42,15 @@ import org.apache.ofbiz.entity.condition.EntityJoinOperator;
 import org.apache.ofbiz.entity.model.DynamicViewEntity;
 import org.apache.ofbiz.entity.model.ModelEntity;
 import org.apache.ofbiz.entity.model.ModelField;
+import org.apache.ofbiz.entity.model.ModelFieldType;
+import org.apache.ofbiz.entity.model.ModelFieldTypeReader;
 import org.apache.ofbiz.entity.model.ModelKeyMap;
 import org.apache.ofbiz.entity.transaction.GenericTransactionException;
 import org.apache.ofbiz.entity.transaction.TransactionUtil;
 import org.apache.ofbiz.entity.util.EntityQuery;
 import org.apache.ofbiz.service.GenericServiceException;
 import org.apache.ofbiz.service.LocalDispatcher;
+import org.apache.ofbiz.service.ModelParam;
 import org.apache.ofbiz.service.ModelService;
 import org.apache.ofbiz.service.ServiceContainer;
 import org.apache.ofbiz.service.ServiceUtil;
@@ -60,6 +64,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 	private Delegator delegator = null;
 	private LocalDispatcher dispatcher = null;
 	private ModelEntity modelEntity = null;
+	private ModelFieldTypeReader modelHelper;
 
 	public OFBizResourceImpl(ResourceSet resourceSet, Delegator delegator, Frame<E> frame) {
 		super(resourceSet, delegator.getDelegatorTenantId());
@@ -68,6 +73,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		this.delegator = delegator;
 		this.dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
 		this.modelEntity = delegator.getModelEntity(frame.getName());
+		this.modelHelper = delegator.getModelFieldTypeReader(modelEntity);
 	}
 
 	@Override
@@ -94,7 +100,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 					throw new ResourceException(ServiceUtil.getErrorMessage(context));
 
 				return;
-			} catch (GenericServiceException e) {
+			} catch (GeneralException e) {
 				throw new ResourceException(e);
 			}
 		} catch (GenericServiceException e) {
@@ -111,7 +117,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 				this.attach(entity);
 
 			TransactionUtil.commit(beganTransaction);
-		} catch (GenericEntityException e) {
+		} catch (GeneralException e) {
 			try {
 				String errMsg = "Failure in create operation for entity [" + this.getFrame().getName() + "/" + entity.getID() + "]: " + e.toString() + ". Rolling back transaction.";
 				TransactionUtil.rollback(beganTransaction, errMsg, e);
@@ -164,12 +170,19 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		eq = eq.from(dynamicViewEntity);
 
 		GenericPK primaryKey = GenericPK.create(modelEntity);
+		List<ModelField> pkFields = modelEntity.getPkFields();
 		String[] keys = name.split("/");
 		int i = 0;
 		for (String key : keys) {
-			Slot slot = this.getFrame().getSlot(this.modelEntity.getPkFieldNames().get(i));
-			Object value = EntityUtils.toBizValue(delegator, slot, key);
-			primaryKey.set(slot.getName(), value);
+			ModelField pkField = pkFields.get(i);
+			ModelFieldType type = modelHelper.getModelFieldType(pkField.getType());
+			Slot slot = this.getFrame().getSlot(pkField.getName());
+			try {
+				Object value = EntityUtils.toBizValue(type.getJavaType(), slot, key);
+				primaryKey.set(slot.getName(), value);
+			} catch (GeneralException e) {
+				throw new ResourceException(e);
+			}
 			i++;
 		}
 
@@ -326,7 +339,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 					throw new ResourceException(ServiceUtil.getErrorMessage(context));
 
 				return;
-			} catch (GenericServiceException e) {
+			} catch (GeneralException e) {
 				throw new ResourceException(e);
 			}
 		} catch (GenericServiceException e) {
@@ -341,7 +354,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			this.doUpdate(entity.isa(), entity);
 
 			TransactionUtil.commit(beganTransaction);
-		} catch (GenericEntityException e) {
+		} catch (GeneralException e) {
 			try {
 				String errMsg = "Failure in update operation for entity [" + this.getFrame().getName() + "/" + entity.getID() + "]: " + e.toString() + ". Rolling back transaction.";
 				TransactionUtil.rollback(beganTransaction, errMsg, e);
@@ -360,7 +373,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			return;
 		}
 		String serviceName = "delete" + this.getFrame().getName();
-		try {		
+		try {
 			ModelService modelService = dispatcher.getDispatchContext().getModelService(serviceName);
 
 			try {
@@ -370,13 +383,13 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 					throw new ResourceException(ServiceUtil.getErrorMessage(context));
 
 				return;
-			} catch (GenericServiceException e) {
+			} catch (GeneralException e) {
 				throw new ResourceException(e);
 			}
 		} catch (GenericServiceException e) {
 			// service not found
 		}
-		
+
 		boolean beganTransaction = false;
 
 		try {
@@ -386,7 +399,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			this.detach(entity);
 
 			TransactionUtil.commit(beganTransaction);
-		} catch (GenericEntityException e) {
+		} catch (GeneralException e) {
 			try {
 				String errMsg = "Failure in delete operation for entity [" + this.getFrame().getName() + "/" + entity.getID() + "]: " + e.toString() + ". Rolling back transaction.";
 				TransactionUtil.rollback(beganTransaction, errMsg, e);
@@ -397,7 +410,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		}
 	}
 
-	private <K extends EntityIdentifiable> void doCreate(Frame<K> frame, K entity, boolean replace) throws GenericEntityException {
+	private <K extends EntityIdentifiable> void doCreate(Frame<K> frame, K entity, boolean replace) throws GeneralException {
 
 		if (this.delegator.getModelReader().getModelEntityNoCheck(frame.getName()) == null)
 			return;
@@ -414,7 +427,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			this.delegator.create(genericValue);
 	}
 
-	private <K extends EntityIdentifiable> void doUpdate(Frame<K> frame, K entity) throws GenericEntityException {
+	private <K extends EntityIdentifiable> void doUpdate(Frame<K> frame, K entity) throws GeneralException {
 
 		if (this.delegator.getModelReader().getModelEntityNoCheck(frame.getName()) == null)
 			return;
@@ -428,7 +441,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		this.delegator.store(genericValue);
 	}
 
-	private <K extends EntityIdentifiable> void doDelete(Frame<K> frame, K entity) throws GenericEntityException {
+	private <K extends EntityIdentifiable> void doDelete(Frame<K> frame, K entity) throws GeneralException {
 
 		if (this.delegator.getModelReader().getModelEntityNoCheck(frame.getName()) == null)
 			return;
@@ -490,7 +503,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		return analyzer;
 	}
 
-	private Map<String, Object> toBizContext(ModelService service, E entity) {
+	private Map<String, Object> toBizContext(ModelService service, E entity) throws GeneralException {
 
 		Map<String, Object> context = new HashMap<String, Object>();
 		ContextDescription contextDescription = this.getContext().getContextDescription();
@@ -501,13 +514,16 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			if (slot.isTransient())
 				continue;
 
-			if (service.getParam(slot.getName()) == null)
+			ModelParam modelParam = service.getParam(slot.getName());
+			if (modelParam == null)
 				continue;
 
 			Object value = getFrame().getValue(entity, slot.getName(), false, false);
-			value = EntityUtils.toBizValue(delegator, slot, value);
-			if (value != null)
-				context.put(slot.getName(), value);
+			value = EntityUtils.toBizValue(modelParam.getType(), slot, value);
+			if (value == null)
+				continue;
+
+			context.put(slot.getName(), value);
 		}
 
 		return context;

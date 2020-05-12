@@ -15,6 +15,9 @@
 # specific language governing permissions and limitations
 # under the License.
 
+org.abchip.mimo.biz.asf.plugins.entity.BooleanConverters
+org.abchip.mimo.biz.asf.plugins.entity.EntityConverters
+
 org.apache.ofbiz.entity.util.Converters
 org.apache.ofbiz.base.conversion.BooleanConverters
 org.apache.ofbiz.base.conversion.CollectionConverters

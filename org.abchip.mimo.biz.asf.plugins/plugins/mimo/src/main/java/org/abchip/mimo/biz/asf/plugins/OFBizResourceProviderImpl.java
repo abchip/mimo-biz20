@@ -14,6 +14,7 @@ import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.resource.Resource;
 import org.abchip.mimo.resource.ResourceConfig;
+import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceFactory;
 import org.abchip.mimo.resource.ResourceSet;
 import org.abchip.mimo.resource.impl.ResourceProviderImpl;
@@ -33,7 +34,7 @@ public class OFBizResourceProviderImpl extends ResourceProviderImpl {
 	}
 
 	@Override
-	public <E extends EntityIdentifiable> Resource<E> createResource(ResourceSet resourceSet, Frame<E> frame, String tenantId) {
+	public <E extends EntityIdentifiable> Resource<E> createResource(ResourceSet resourceSet, Frame<E> frame, String tenantId) throws ResourceException {
 
 		Delegator delegator = null;
 		if (tenantId != null) {

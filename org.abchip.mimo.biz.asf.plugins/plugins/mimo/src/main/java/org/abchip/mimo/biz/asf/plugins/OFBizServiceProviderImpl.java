@@ -13,19 +13,18 @@ import java.util.Map;
 import java.util.concurrent.Future;
 
 import org.abchip.mimo.biz.asf.plugins.entity.EntityUtils;
-import org.abchip.mimo.biz.model.security.login.UserLogin;
-import org.abchip.mimo.context.UserProfile;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
 import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceRequest;
 import org.abchip.mimo.service.ServiceResponse;
 import org.abchip.mimo.service.impl.ServiceProviderImpl;
-import org.abchip.mimo.util.Strings;
+import org.apache.ofbiz.base.util.GeneralException;
 import org.apache.ofbiz.entity.Delegator;
 import org.apache.ofbiz.entity.DelegatorFactory;
-import org.apache.ofbiz.service.GenericServiceException;
 import org.apache.ofbiz.service.LocalDispatcher;
+import org.apache.ofbiz.service.ModelParam;
+import org.apache.ofbiz.service.ModelService;
 import org.apache.ofbiz.service.ServiceContainer;
 import org.apache.ofbiz.service.ServiceUtil;
 
@@ -37,12 +36,13 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 		LocalDispatcher dispatcher = getLocalDispatcher(request);
 
 		try {
-			Map<String, Object> context = toBizContext(dispatcher.getDelegator(), request);
+			ModelService modelService = dispatcher.getDispatchContext().getModelService(request.getServiceName());
+			Map<String, Object> context = toBizContext(dispatcher.getDelegator(), modelService, request);
 			context = dispatcher.runSync(request.getServiceName(), context);
 
 			V response = toResponse(request, context);
 			return response;
-		} catch (GenericServiceException e) {
+		} catch (GeneralException e) {
 			throw new ServiceException(e);
 		}
 	}
@@ -53,11 +53,12 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 		LocalDispatcher dispatcher = getLocalDispatcher(request);
 
 		try {
-			Map<String, Object> context = toBizContext(dispatcher.getDelegator(), request);
+			ModelService modelService = dispatcher.getDispatchContext().getModelService(request.getServiceName());
+			Map<String, Object> context = toBizContext(dispatcher.getDelegator(), modelService, request);
 			dispatcher.runAsync(request.getServiceName(), context);
 
 			return null;
-		} catch (GenericServiceException e) {
+		} catch (GeneralException e) {
 			throw new ServiceException(e);
 		}
 	}
@@ -82,26 +83,27 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 		return dispatcher;
 	}
 
-	private Map<String, Object> toBizContext(Delegator delegator, ServiceRequest<?> request) {
+	private Map<String, Object> toBizContext(Delegator delegator, ModelService modelService, ServiceRequest<?> request) throws GeneralException {
 
 		Map<String, Object> context = new HashMap<String, Object>();
+		context.put("userLogin", EntityUtils.toBizEntity(delegator, request.getUserProfile()));
+		context.put("locale", request.getLocale());
 
 		Frame<ServiceRequest<?>> frame = request.isa();
-
 		for (Slot slot : frame.getSlots()) {
 			if (slot.isTransient())
 				continue;
 
-			Object value = frame.getValue(request, slot.getName(), false, false);
-			value = EntityUtils.toBizValue(delegator, slot, value);
-			if (value != null) {
+			ModelParam modelParam = modelService.getParam(slot.getName());
+			if (modelParam == null)
+				continue;
 
-				// mapping UserProfile -> UserLogin
-				if (UserProfile.class.getSimpleName().equals(Strings.firstToUpper(slot.getName())))
-					context.put(Strings.firstToLower(UserLogin.class.getSimpleName()), value);
-				else
-					context.put(slot.getName(), value);
-			}
+			Object value = frame.getValue(request, slot.getName(), false, false);
+			value = EntityUtils.toBizValue(modelParam.getType(), slot, value);
+			if (value == null)
+				continue;
+
+			context.put(slot.getName(), value);
 		}
 
 		return context;
