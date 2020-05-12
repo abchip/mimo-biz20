@@ -9,12 +9,16 @@
 package org.abchip.mimo.biz.asf.plugins;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 import org.abchip.mimo.biz.asf.plugins.entity.EntityUtils;
 import org.abchip.mimo.biz.asf.plugins.entity.ModelUtils;
+import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.context.ContextDescription;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
@@ -41,6 +45,11 @@ import org.apache.ofbiz.entity.model.ModelKeyMap;
 import org.apache.ofbiz.entity.transaction.GenericTransactionException;
 import org.apache.ofbiz.entity.transaction.TransactionUtil;
 import org.apache.ofbiz.entity.util.EntityQuery;
+import org.apache.ofbiz.service.GenericServiceException;
+import org.apache.ofbiz.service.LocalDispatcher;
+import org.apache.ofbiz.service.ModelService;
+import org.apache.ofbiz.service.ServiceContainer;
+import org.apache.ofbiz.service.ServiceUtil;
 import org.osgi.service.log.Logger;
 
 public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImpl<E> {
@@ -49,7 +58,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 	private Frame<E> frame = null;
 	private Delegator delegator = null;
-
+	private LocalDispatcher dispatcher = null;
 	private ModelEntity modelEntity = null;
 
 	public OFBizResourceImpl(ResourceSet resourceSet, Delegator delegator, Frame<E> frame) {
@@ -57,6 +66,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 		this.frame = frame;
 		this.delegator = delegator;
+		this.dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
 		this.modelEntity = delegator.getModelEntity(frame.getName());
 	}
 
@@ -71,6 +81,24 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		if (entity.getResource() != null && this != entity.getResource()) {
 			LOGGER.error("Invalid resource destination ofbiz/{} origin {}", this.getFrame().getName(), entity.getResource());
 			return;
+		}
+
+		String serviceName = "create" + this.getFrame().getName();
+		try {
+			ModelService modelService = dispatcher.getDispatchContext().getModelService(serviceName);
+
+			try {
+				Map<String, Object> context = toBizContext(modelService, entity);
+				context = dispatcher.runSync(serviceName, context);
+				if (ServiceUtil.isError(context))
+					throw new ResourceException(ServiceUtil.getErrorMessage(context));
+
+				return;
+			} catch (GenericServiceException e) {
+				throw new ResourceException(e);
+			}
+		} catch (GenericServiceException e) {
+			// service not found
 		}
 
 		boolean beganTransaction = false;
@@ -287,6 +315,24 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			return;
 		}
 
+		String serviceName = "update" + this.getFrame().getName();
+		try {
+			ModelService modelService = dispatcher.getDispatchContext().getModelService(serviceName);
+
+			try {
+				Map<String, Object> context = toBizContext(modelService, entity);
+				context = dispatcher.runSync(serviceName, context);
+				if (ServiceUtil.isError(context))
+					throw new ResourceException(ServiceUtil.getErrorMessage(context));
+
+				return;
+			} catch (GenericServiceException e) {
+				throw new ResourceException(e);
+			}
+		} catch (GenericServiceException e) {
+			// service not found
+		}
+
 		boolean beganTransaction = false;
 
 		try {
@@ -313,7 +359,24 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			LOGGER.error("Invalid resource destination ofbiz/{} origin {}", this.getFrame().getName(), entity.getResource());
 			return;
 		}
+		String serviceName = "delete" + this.getFrame().getName();
+		try {		
+			ModelService modelService = dispatcher.getDispatchContext().getModelService(serviceName);
 
+			try {
+				Map<String, Object> context = toBizContext(modelService, entity);
+				context = dispatcher.runSync(serviceName, context);
+				if (ServiceUtil.isError(context))
+					throw new ResourceException(ServiceUtil.getErrorMessage(context));
+
+				return;
+			} catch (GenericServiceException e) {
+				throw new ResourceException(e);
+			}
+		} catch (GenericServiceException e) {
+			// service not found
+		}
+		
 		boolean beganTransaction = false;
 
 		try {
@@ -425,5 +488,28 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		walker.walk(analyzer, tree);
 
 		return analyzer;
+	}
+
+	private Map<String, Object> toBizContext(ModelService service, E entity) {
+
+		Map<String, Object> context = new HashMap<String, Object>();
+		ContextDescription contextDescription = this.getContext().getContextDescription();
+		context.put("userLogin", EntityUtils.toBizEntity(delegator, this.getContext().createProxy(UserLogin.class, contextDescription.getUser())));
+		context.put("locale", contextDescription.getLocale());
+
+		for (Slot slot : getFrame().getSlots()) {
+			if (slot.isTransient())
+				continue;
+
+			if (service.getParam(slot.getName()) == null)
+				continue;
+
+			Object value = getFrame().getValue(entity, slot.getName(), false, false);
+			value = EntityUtils.toBizValue(delegator, slot, value);
+			if (value != null)
+				context.put(slot.getName(), value);
+		}
+
+		return context;
 	}
 }

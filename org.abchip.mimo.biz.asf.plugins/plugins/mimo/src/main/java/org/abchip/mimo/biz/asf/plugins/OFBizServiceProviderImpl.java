@@ -27,6 +27,7 @@ import org.apache.ofbiz.entity.DelegatorFactory;
 import org.apache.ofbiz.service.GenericServiceException;
 import org.apache.ofbiz.service.LocalDispatcher;
 import org.apache.ofbiz.service.ServiceContainer;
+import org.apache.ofbiz.service.ServiceUtil;
 
 public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 
@@ -109,9 +110,12 @@ public class OFBizServiceProviderImpl extends ServiceProviderImpl {
 	private <V extends ServiceResponse, R extends ServiceRequest<V>> V toResponse(R request, Map<String, Object> context) throws ServiceException {
 
 		V response = request.buildResponse();
+		if (ServiceUtil.isError(context)) {
+			response.setErrorMessage(ServiceUtil.getErrorMessage(context));
+			return response;
+		}
 
-		@SuppressWarnings("unchecked")
-		Frame<V> frame = request.getContext().createProxy(Frame.class, request.getResponse().getSimpleName());
+		Frame<V> frame = response.isa();
 		for (Slot slot : frame.getSlots()) {
 			Object value = context.get(slot.getName());
 			if (value == null)
