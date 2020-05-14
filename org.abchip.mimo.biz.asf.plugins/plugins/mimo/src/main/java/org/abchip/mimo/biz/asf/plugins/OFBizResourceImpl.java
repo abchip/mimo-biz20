@@ -386,8 +386,6 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 				if (ServiceUtil.isError(context))
 					throw new ResourceException(ServiceUtil.getErrorMessage(context));
 
-				completeEntity(service, entity, context);
-
 				return;
 			} catch (GeneralException e) {
 				throw new ResourceException(e);
