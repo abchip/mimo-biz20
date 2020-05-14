@@ -91,14 +91,16 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 		String serviceName = "create" + this.getFrame().getName();
 		try {
-			ModelService modelService = dispatcher.getDispatchContext().getModelService(serviceName);
+			ModelService service = dispatcher.getDispatchContext().getModelService(serviceName);
 
 			try {
-				Map<String, Object> context = toBizContext(modelService, entity);
+				Map<String, Object> context = toBizContext(service, entity);
 				context = dispatcher.runSync(serviceName, context);
 				if (ServiceUtil.isError(context))
 					throw new ResourceException(ServiceUtil.getErrorMessage(context));
 
+				completeEntity(service, entity, context);
+				
 				return;
 			} catch (GeneralException e) {
 				throw new ResourceException(e);
@@ -330,14 +332,16 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 		String serviceName = "update" + this.getFrame().getName();
 		try {
-			ModelService modelService = dispatcher.getDispatchContext().getModelService(serviceName);
+			ModelService service = dispatcher.getDispatchContext().getModelService(serviceName);
 
 			try {
-				Map<String, Object> context = toBizContext(modelService, entity);
+				Map<String, Object> context = toBizContext(service, entity);
 				context = dispatcher.runSync(serviceName, context);
 				if (ServiceUtil.isError(context))
 					throw new ResourceException(ServiceUtil.getErrorMessage(context));
 
+				completeEntity(service, entity, context);
+				
 				return;
 			} catch (GeneralException e) {
 				throw new ResourceException(e);
@@ -374,14 +378,16 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		}
 		String serviceName = "delete" + this.getFrame().getName();
 		try {
-			ModelService modelService = dispatcher.getDispatchContext().getModelService(serviceName);
+			ModelService service = dispatcher.getDispatchContext().getModelService(serviceName);
 
 			try {
-				Map<String, Object> context = toBizContext(modelService, entity);
+				Map<String, Object> context = toBizContext(service, entity);
 				context = dispatcher.runSync(serviceName, context);
 				if (ServiceUtil.isError(context))
 					throw new ResourceException(ServiceUtil.getErrorMessage(context));
 
+				completeEntity(service, entity, context);
+				
 				return;
 			} catch (GeneralException e) {
 				throw new ResourceException(e);
@@ -527,5 +533,25 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		}
 
 		return context;
+	}
+	
+	private void completeEntity(ModelService service, E entity, Map<String, Object> context) {
+		
+		Frame<E> frame = entity.isa();
+		for(String paramName: service.getOutParamNames()) {
+			Slot slot = frame.getSlot(paramName);
+			if(slot == null) {
+				LOGGER.warn("Unknown output parameter {} for entity {}", paramName, frame.getName());
+				continue;
+			}
+			
+			Object paramValue = context.get(paramName);
+			if(paramValue == null) {
+				LOGGER.warn("Null output parameter {} for entity {}", paramName, frame.getName());
+				continue;
+			}
+			
+			frame.setValue(entity, slot.getName(), paramValue);
+		}
 	}
 }
