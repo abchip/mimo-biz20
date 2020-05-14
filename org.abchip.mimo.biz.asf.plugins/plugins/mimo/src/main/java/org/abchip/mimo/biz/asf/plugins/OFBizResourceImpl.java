@@ -100,7 +100,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 					throw new ResourceException(ServiceUtil.getErrorMessage(context));
 
 				completeEntity(service, entity, context);
-				
+
 				return;
 			} catch (GeneralException e) {
 				throw new ResourceException(e);
@@ -341,7 +341,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 					throw new ResourceException(ServiceUtil.getErrorMessage(context));
 
 				completeEntity(service, entity, context);
-				
+
 				return;
 			} catch (GeneralException e) {
 				throw new ResourceException(e);
@@ -387,7 +387,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 					throw new ResourceException(ServiceUtil.getErrorMessage(context));
 
 				completeEntity(service, entity, context);
-				
+
 				return;
 			} catch (GeneralException e) {
 				throw new ResourceException(e);
@@ -534,23 +534,33 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 		return context;
 	}
-	
+
 	private void completeEntity(ModelService service, E entity, Map<String, Object> context) {
-		
+
 		Frame<E> frame = entity.isa();
-		for(String paramName: service.getOutParamNames()) {
-			Slot slot = frame.getSlot(paramName);
-			if(slot == null) {
-				LOGGER.warn("Unknown output parameter {} for entity {}", paramName, frame.getName());
+		for (ModelParam modelParam : service.getModelParamList()) {
+			if (!modelParam.isOut())
+				continue;
+			if (modelParam.internal)
+				continue;
+
+			if (!frame.getName().equals(modelParam.getEntityName()))
+				continue;
+			if (modelParam.getFieldName() == null)
+				continue;
+
+			Slot slot = frame.getSlot(modelParam.getName());
+			if (slot == null) {
+				LOGGER.warn("Unknown output parameter {} for entity {}", modelParam.getName(), frame.getName());
 				continue;
 			}
-			
-			Object paramValue = context.get(paramName);
-			if(paramValue == null) {
-				LOGGER.warn("Null output parameter {} for entity {}", paramName, frame.getName());
+
+			Object paramValue = context.get(modelParam.getName());
+			if (paramValue == null && !modelParam.isOptional()) {
+				LOGGER.warn("Null output parameter {} for entity {}", modelParam.getName(), frame.getName());
 				continue;
 			}
-			
+
 			frame.setValue(entity, slot.getName(), paramValue);
 		}
 	}
