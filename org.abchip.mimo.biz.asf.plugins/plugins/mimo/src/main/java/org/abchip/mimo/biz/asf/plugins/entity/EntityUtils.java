@@ -14,6 +14,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map.Entry;
 
+import org.abchip.mimo.data.DataType;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
@@ -71,13 +72,14 @@ public class EntityUtils {
 	}
 
 	private static Object toSingleBizValue(String javaType, Object value) throws GeneralException {
-		if (value instanceof EntityIdentifiable)
-			"".toString();
 
-		if (value instanceof Boolean && String.class.getSimpleName().equals(javaType))
-			"".toString();
-
-		return ObjectType.simpleTypeConvert(value, javaType, null, null);
+		if (value instanceof Boolean && String.class.getSimpleName().equals(javaType)) {
+			if (value == Boolean.TRUE)
+				return "Y";
+			else
+				return "N";
+		} else
+			return ObjectType.simpleTypeConvert(value, javaType, null, null);
 	}
 
 	// from ofbiz -> entity
@@ -117,6 +119,14 @@ public class EntityUtils {
 	}
 
 	private static Object toSingleValue(Slot slot, Object bizValue) throws GeneralException {
-		return ObjectType.simpleTypeConvert(bizValue, slot.getDataDef().getJavaClass().getName(), null, null);
+
+		if (bizValue instanceof String && slot.getDataType().equals(DataType.BOOLEAN)) {
+			if (bizValue.toString().equalsIgnoreCase("Y"))
+				return true;
+			else
+				return false;
+
+		} else
+			return ObjectType.simpleTypeConvert(bizValue, slot.getDataDef().getJavaClass().getName(), null, null);
 	}
 }
