@@ -171,6 +171,15 @@ public interface OrderPackage extends EPackage {
 	int CHANGE_ORDER_STATUS_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
 
 	/**
+	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CHANGE_ORDER_STATUS_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
+
+	/**
 	 * The feature id for the '<em><b>Grand Total</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -363,6 +372,15 @@ public interface OrderPackage extends EPackage {
 	int RESERVE_STORE_INVENTORY_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
 
 	/**
+	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESERVE_STORE_INVENTORY_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
+
+	/**
 	 * The feature id for the '<em><b>Quantity Not Reserved</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -465,6 +483,15 @@ public interface OrderPackage extends EPackage {
 	int RESET_GRAND_TOTAL_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
 
 	/**
+	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RESET_GRAND_TOTAL_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
+
+	/**
 	 * The number of structural features of the '<em>Reset Grand Total Response</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -472,6 +499,117 @@ public interface OrderPackage extends EPackage {
 	 * @ordered
 	 */
 	int RESET_GRAND_TOTAL_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
+
+
+	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.order.impl.RecalcTaxTotalResponseImpl <em>Recalc Tax Total Response</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.order.impl.RecalcTaxTotalResponseImpl
+	 * @see org.abchip.mimo.biz.service.order.impl.OrderPackageImpl#getRecalcTaxTotalResponse()
+	 * @generated
+	 */
+	int RECALC_TAX_TOTAL_RESPONSE = 7;
+
+	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.order.impl.RecalcTaxTotalImpl <em>Recalc Tax Total</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.order.impl.RecalcTaxTotalImpl
+	 * @see org.abchip.mimo.biz.service.order.impl.OrderPackageImpl#getRecalcTaxTotal()
+	 * @generated
+	 */
+	int RECALC_TAX_TOTAL = 6;
+
+	/**
+	 * The feature id for the '<em><b>Locale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECALC_TAX_TOTAL__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECALC_TAX_TOTAL__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
+
+	/**
+	 * The feature id for the '<em><b>Context</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECALC_TAX_TOTAL__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECALC_TAX_TOTAL__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
+
+	/**
+	 * The feature id for the '<em><b>Order Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECALC_TAX_TOTAL__ORDER_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECALC_TAX_TOTAL__ORDER_ITEM_SEQ_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>Recalc Tax Total</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECALC_TAX_TOTAL_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECALC_TAX_TOTAL_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECALC_TAX_TOTAL_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
+
+	/**
+	 * The number of structural features of the '<em>Recalc Tax Total Response</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RECALC_TAX_TOTAL_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
 
 
 	/**
@@ -733,6 +871,48 @@ public interface OrderPackage extends EPackage {
 	EClass getResetGrandTotalResponse();
 
 	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.order.RecalcTaxTotal <em>Recalc Tax Total</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Recalc Tax Total</em>'.
+	 * @see org.abchip.mimo.biz.service.order.RecalcTaxTotal
+	 * @generated
+	 */
+	EClass getRecalcTaxTotal();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.order.RecalcTaxTotal#getOrderId <em>Order Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Order Id</em>'.
+	 * @see org.abchip.mimo.biz.service.order.RecalcTaxTotal#getOrderId()
+	 * @see #getRecalcTaxTotal()
+	 * @generated
+	 */
+	EAttribute getRecalcTaxTotal_OrderId();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.order.RecalcTaxTotal#getOrderItemSeqId <em>Order Item Seq Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Order Item Seq Id</em>'.
+	 * @see org.abchip.mimo.biz.service.order.RecalcTaxTotal#getOrderItemSeqId()
+	 * @see #getRecalcTaxTotal()
+	 * @generated
+	 */
+	EAttribute getRecalcTaxTotal_OrderItemSeqId();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.order.RecalcTaxTotalResponse <em>Recalc Tax Total Response</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Recalc Tax Total Response</em>'.
+	 * @see org.abchip.mimo.biz.service.order.RecalcTaxTotalResponse
+	 * @generated
+	 */
+	EClass getRecalcTaxTotalResponse();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -957,6 +1137,42 @@ public interface OrderPackage extends EPackage {
 		 * @generated
 		 */
 		EClass RESET_GRAND_TOTAL_RESPONSE = eINSTANCE.getResetGrandTotalResponse();
+
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.order.impl.RecalcTaxTotalImpl <em>Recalc Tax Total</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.order.impl.RecalcTaxTotalImpl
+		 * @see org.abchip.mimo.biz.service.order.impl.OrderPackageImpl#getRecalcTaxTotal()
+		 * @generated
+		 */
+		EClass RECALC_TAX_TOTAL = eINSTANCE.getRecalcTaxTotal();
+
+		/**
+		 * The meta object literal for the '<em><b>Order Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RECALC_TAX_TOTAL__ORDER_ID = eINSTANCE.getRecalcTaxTotal_OrderId();
+
+		/**
+		 * The meta object literal for the '<em><b>Order Item Seq Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute RECALC_TAX_TOTAL__ORDER_ITEM_SEQ_ID = eINSTANCE.getRecalcTaxTotal_OrderItemSeqId();
+
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.order.impl.RecalcTaxTotalResponseImpl <em>Recalc Tax Total Response</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.order.impl.RecalcTaxTotalResponseImpl
+		 * @see org.abchip.mimo.biz.service.order.impl.OrderPackageImpl#getRecalcTaxTotalResponse()
+		 * @generated
+		 */
+		EClass RECALC_TAX_TOTAL_RESPONSE = eINSTANCE.getRecalcTaxTotalResponse();
 
 	}
 

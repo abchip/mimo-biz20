@@ -132,6 +132,8 @@ import org.abchip.mimo.biz.service.order.ChangeOrderStatusResponse;
 import org.abchip.mimo.biz.service.order.OrderFactory;
 import org.abchip.mimo.biz.service.order.OrderPackage;
 
+import org.abchip.mimo.biz.service.order.RecalcTaxTotal;
+import org.abchip.mimo.biz.service.order.RecalcTaxTotalResponse;
 import org.abchip.mimo.biz.service.order.ReserveStoreInventory;
 import org.abchip.mimo.biz.service.order.ReserveStoreInventoryResponse;
 import org.abchip.mimo.biz.service.order.ResetGrandTotal;
@@ -194,6 +196,20 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	private EClass resetGrandTotalResponseEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass recalcTaxTotalEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass recalcTaxTotalResponseEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -587,6 +603,46 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getRecalcTaxTotal() {
+		return recalcTaxTotalEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRecalcTaxTotal_OrderId() {
+		return (EAttribute)recalcTaxTotalEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getRecalcTaxTotal_OrderItemSeqId() {
+		return (EAttribute)recalcTaxTotalEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getRecalcTaxTotalResponse() {
+		return recalcTaxTotalResponseEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public OrderFactory getOrderFactory() {
 		return (OrderFactory)getEFactoryInstance();
 	}
@@ -639,6 +695,12 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		createEAttribute(resetGrandTotalEClass, RESET_GRAND_TOTAL__ORDER_ID);
 
 		resetGrandTotalResponseEClass = createEClass(RESET_GRAND_TOTAL_RESPONSE);
+
+		recalcTaxTotalEClass = createEClass(RECALC_TAX_TOTAL);
+		createEAttribute(recalcTaxTotalEClass, RECALC_TAX_TOTAL__ORDER_ID);
+		createEAttribute(recalcTaxTotalEClass, RECALC_TAX_TOTAL__ORDER_ITEM_SEQ_ID);
+
+		recalcTaxTotalResponseEClass = createEClass(RECALC_TAX_TOTAL_RESPONSE);
 	}
 
 	/**
@@ -687,6 +749,11 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		g1.getETypeArguments().add(g2);
 		resetGrandTotalEClass.getEGenericSuperTypes().add(g1);
 		resetGrandTotalResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
+		g1 = createEGenericType(theServicePackage.getServiceRequest());
+		g2 = createEGenericType(this.getRecalcTaxTotalResponse());
+		g1.getETypeArguments().add(g2);
+		recalcTaxTotalEClass.getEGenericSuperTypes().add(g1);
+		recalcTaxTotalResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(changeOrderStatusEClass, ChangeOrderStatus.class, "ChangeOrderStatus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -718,6 +785,12 @@ public class OrderPackageImpl extends EPackageImpl implements OrderPackage {
 		initEAttribute(getResetGrandTotal_OrderId(), ecorePackage.getEString(), "orderId", null, 0, 1, ResetGrandTotal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(resetGrandTotalResponseEClass, ResetGrandTotalResponse.class, "ResetGrandTotalResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(recalcTaxTotalEClass, RecalcTaxTotal.class, "RecalcTaxTotal", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getRecalcTaxTotal_OrderId(), ecorePackage.getEString(), "orderId", null, 0, 1, RecalcTaxTotal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getRecalcTaxTotal_OrderItemSeqId(), ecorePackage.getEString(), "orderItemSeqId", null, 0, 1, RecalcTaxTotal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(recalcTaxTotalResponseEClass, RecalcTaxTotalResponse.class, "RecalcTaxTotalResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

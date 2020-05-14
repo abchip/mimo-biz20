@@ -210,6 +210,15 @@ public interface ProductPackage extends EPackage {
 	int CALC_TAX_FOR_DISPLAY_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
 
 	/**
+	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALC_TAX_FOR_DISPLAY_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
+
+	/**
 	 * The feature id for the '<em><b>Price With Tax</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -316,6 +325,15 @@ public interface ProductPackage extends EPackage {
 	 * @ordered
 	 */
 	int CALCULATE_PRODUCT_PRICE_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PRODUCT_PRICE_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Valid Price Found</b></em>' attribute.
@@ -436,6 +454,15 @@ public interface ProductPackage extends EPackage {
 	 * @ordered
 	 */
 	int GET_PRODUCT_DEFAULT_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GET_PRODUCT_DEFAULT_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Facility Postal Address</b></em>' reference.
@@ -636,6 +663,15 @@ public interface ProductPackage extends EPackage {
 	 * @ordered
 	 */
 	int CALC_TAX_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALC_TAX_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
 
 	/**
 	 * The feature id for the '<em><b>Order Adjustments</b></em>' containment reference list.

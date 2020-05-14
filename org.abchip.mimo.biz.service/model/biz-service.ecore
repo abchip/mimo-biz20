@@ -172,6 +172,14 @@
       </eGenericSuperTypes>
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="ResetGrandTotalResponse" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
+    <eClassifiers xsi:type="ecore:EClass" name="RecalcTaxTotal">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="orderId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="orderItemSeqId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
+        <eTypeArguments eClassifier="#//order/RecalcTaxTotalResponse"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="RecalcTaxTotalResponse" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
   </eSubpackages>
   <eSubpackages name="party" nsURI="http://www.abchip.org/mimo/biz/service/party"
       nsPrefix="biz-party">

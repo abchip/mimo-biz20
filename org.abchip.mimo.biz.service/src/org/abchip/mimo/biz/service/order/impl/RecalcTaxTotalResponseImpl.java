@@ -5,28 +5,29 @@
  * which accompanies this distribution, and is available at
  * http://www.eclipse.org/legal/epl-v10.html
  */
-package org.abchip.mimo.biz.service.accounting.impl;
+package org.abchip.mimo.biz.service.order.impl;
 
-import org.abchip.mimo.biz.service.accounting.AccountingPackage;
-import org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDefResponse;
+import org.abchip.mimo.biz.service.order.OrderPackage;
+import org.abchip.mimo.biz.service.order.RecalcTaxTotalResponse;
+
 import org.abchip.mimo.service.impl.ServiceResponseImpl;
+
 import org.eclipse.emf.ecore.EClass;
 
 /**
  * <!-- begin-user-doc -->
- * An implementation of the model object '<em><b>Update Payment Application Def Response</b></em>'.
+ * An implementation of the model object '<em><b>Recalc Tax Total Response</b></em>'.
  * <!-- end-user-doc -->
  *
  * @generated
  */
-public class UpdatePaymentApplicationDefResponseImpl extends ServiceResponseImpl implements UpdatePaymentApplicationDefResponse {
-
+public class RecalcTaxTotalResponseImpl extends ServiceResponseImpl implements RecalcTaxTotalResponse {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected UpdatePaymentApplicationDefResponseImpl() {
+	protected RecalcTaxTotalResponseImpl() {
 		super();
 	}
 
@@ -37,7 +38,7 @@ public class UpdatePaymentApplicationDefResponseImpl extends ServiceResponseImpl
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AccountingPackage.Literals.UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE;
+		return OrderPackage.Literals.RECALC_TAX_TOTAL_RESPONSE;
 	}
 
 	/**
@@ -57,4 +58,4 @@ public class UpdatePaymentApplicationDefResponseImpl extends ServiceResponseImpl
 		return ESTATIC_FEATURE_COUNT;
 	}
 
-} //UpdatePaymentApplicationDefResponseImpl
+} //RecalcTaxTotalResponseImpl

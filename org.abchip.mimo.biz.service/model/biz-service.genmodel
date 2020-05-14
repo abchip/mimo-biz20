@@ -119,6 +119,11 @@
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//order/ResetGrandTotal/orderId"/>
       </genClasses>
       <genClasses ecoreClass="biz-service.ecore#//order/ResetGrandTotalResponse"/>
+      <genClasses ecoreClass="biz-service.ecore#//order/RecalcTaxTotal">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//order/RecalcTaxTotal/orderId"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//order/RecalcTaxTotal/orderItemSeqId"/>
+      </genClasses>
+      <genClasses ecoreClass="biz-service.ecore#//order/RecalcTaxTotalResponse"/>
     </nestedGenPackages>
     <nestedGenPackages prefix="Party" basePackage="org.abchip.mimo.biz.service" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz-service.ecore#//party">

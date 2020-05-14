@@ -67,6 +67,8 @@ public class OrderFactoryImpl extends EFactoryImpl implements OrderFactory {
 			case OrderPackage.RESERVE_STORE_INVENTORY_RESPONSE: return (EObject)createReserveStoreInventoryResponse();
 			case OrderPackage.RESET_GRAND_TOTAL: return (EObject)createResetGrandTotal();
 			case OrderPackage.RESET_GRAND_TOTAL_RESPONSE: return (EObject)createResetGrandTotalResponse();
+			case OrderPackage.RECALC_TAX_TOTAL: return (EObject)createRecalcTaxTotal();
+			case OrderPackage.RECALC_TAX_TOTAL_RESPONSE: return (EObject)createRecalcTaxTotalResponse();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -136,6 +138,28 @@ public class OrderFactoryImpl extends EFactoryImpl implements OrderFactory {
 	public ResetGrandTotalResponse createResetGrandTotalResponse() {
 		ResetGrandTotalResponseImpl resetGrandTotalResponse = new ResetGrandTotalResponseImpl();
 		return resetGrandTotalResponse;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RecalcTaxTotal createRecalcTaxTotal() {
+		RecalcTaxTotalImpl recalcTaxTotal = new RecalcTaxTotalImpl();
+		return recalcTaxTotal;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public RecalcTaxTotalResponse createRecalcTaxTotalResponse() {
+		RecalcTaxTotalResponseImpl recalcTaxTotalResponse = new RecalcTaxTotalResponseImpl();
+		return recalcTaxTotalResponse;
 	}
 
 	/**

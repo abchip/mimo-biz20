@@ -81,6 +81,24 @@ public interface OrderFactory extends EFactory {
 	ResetGrandTotalResponse createResetGrandTotalResponse();
 
 	/**
+	 * Returns a new object of class '<em>Recalc Tax Total</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Recalc Tax Total</em>'.
+	 * @generated
+	 */
+	RecalcTaxTotal createRecalcTaxTotal();
+
+	/**
+	 * Returns a new object of class '<em>Recalc Tax Total Response</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Recalc Tax Total Response</em>'.
+	 * @generated
+	 */
+	RecalcTaxTotalResponse createRecalcTaxTotalResponse();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
