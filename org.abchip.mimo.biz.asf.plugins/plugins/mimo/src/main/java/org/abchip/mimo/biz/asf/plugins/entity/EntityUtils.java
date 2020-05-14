@@ -22,7 +22,6 @@ import org.apache.ofbiz.base.util.ObjectType;
 import org.apache.ofbiz.base.util.UtilValidate;
 import org.apache.ofbiz.entity.Delegator;
 import org.apache.ofbiz.entity.GenericValue;
-import org.apache.ofbiz.entity.model.ModelEntity;
 import org.apache.ofbiz.entity.model.ModelField;
 import org.apache.ofbiz.entity.model.ModelFieldType;
 import org.apache.ofbiz.entity.model.ModelFieldTypeReader;
@@ -36,10 +35,9 @@ public class EntityUtils {
 
 	public static <E extends EntityIdentifiable> GenericValue toBizEntity(Delegator delegator, Frame<E> frame, E entity) throws GeneralException {
 
-		ModelEntity modelEntity = delegator.getModelEntity(frame.getName());
-		ModelFieldTypeReader modelHelper = delegator.getModelFieldTypeReader(modelEntity);
-		
-		GenericValue genericValue = GenericValue.create(modelEntity);
+		GenericValue genericValue = delegator.makeValue(frame.getName());
+
+		ModelFieldTypeReader modelHelper = delegator.getModelFieldTypeReader(genericValue.getModelEntity());
 
 		Iterator<ModelField> fieldIterator = genericValue.getModelEntity().getFieldsIterator();
 		while (fieldIterator.hasNext()) {
@@ -48,7 +46,6 @@ public class EntityUtils {
 			Object value = frame.getValue(entity, field.getName(), false, false);
 			if (UtilValidate.isEmpty(value))
 				continue;
-			
 
 			ModelFieldType type = modelHelper.getModelFieldType(field.getType());
 			value = toBizValue(type.getJavaType(), frame.getSlot(field.getName()), value);
@@ -57,7 +54,6 @@ public class EntityUtils {
 
 		return genericValue;
 	}
-
 
 	// from entity -> ofbiz
 	public static Object toBizValue(String javaType, Slot slot, Object value) throws GeneralException {
@@ -103,7 +99,7 @@ public class EntityUtils {
 			frame.setValue(entity, slot.getName(), value);
 		}
 	}
-	
+
 	// from ofbiz -> entity
 	public static Object toValue(Slot slot, Object bizValue) throws GeneralException {
 
