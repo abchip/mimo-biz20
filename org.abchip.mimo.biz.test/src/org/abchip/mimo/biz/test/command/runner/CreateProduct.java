@@ -65,10 +65,11 @@ public class CreateProduct implements Callable<Long> {
 
 		// Product
 		ResourceWriter<Product> productWriter = context.getResourceManager().getResourceWriter(Product.class);
-		Product product = productWriter.make(true);
-		product.setInternalName(product.getID());
-		product.setProductName(product.getID() + " sales product");
-		product.setDescription("Sales product " + product.getID());
+		Product product = productWriter.make();
+		String name = StressTestUtils.generateRandomString(20, false);
+		product.setInternalName(name);
+		product.setProductName(name + " sales product");
+		product.setDescription("Sales product");
 		product.setProductTypeId(context.createProxy(ProductType.class, "DIGITAL_GOOD"));
 		product.setTaxable(true);
 		product.setReturnable(true);
@@ -92,10 +93,11 @@ public class CreateProduct implements Callable<Long> {
 
 		// Product
 		ResourceWriter<Product> productWriter = context.getResourceManager().getResourceWriter(Product.class);
-		Product product = productWriter.make(true);
-		product.setInternalName(product.getID());
-		product.setProductName(product.getID() + " purchase product");
-		product.setDescription("Purchase product " + product.getID());
+		Product product = productWriter.make();
+		String name = StressTestUtils.generateRandomString(20, false);
+		product.setInternalName(name);
+		product.setProductName(name + " purchase product");
+		product.setDescription("Purchase product");
 		product.setProductTypeId(context.createProxy(ProductType.class, "FINISHED_GOOD"));
 		product.setTaxable(true);
 		product.setReturnable(true);

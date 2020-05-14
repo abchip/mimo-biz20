@@ -30,8 +30,8 @@ import org.abchip.mimo.biz.service.party.GetPartyDefault;
 import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
 import org.abchip.mimo.biz.service.product.CalculateProductPrice;
 import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
-import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
+import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.service.ServiceException;
@@ -80,7 +80,7 @@ public class CreateAgreement implements Callable<Long> {
 		// Agreement
 		ResourceWriter<Agreement> agreementWriter = context.getResourceManager().getResourceWriter(Agreement.class);
 
-		Agreement agreement = agreementWriter.make(true);
+		Agreement agreement = agreementWriter.make();
 		agreement.setPartyIdFrom(partyDefault.getOrganization());
 		agreement.setPartyIdTo(party);
 
@@ -135,16 +135,25 @@ public class CreateAgreement implements Callable<Long> {
 
 		AgreementItem agreementItem = agreementItemWriter.make();
 		agreementItem.setAgreementId(agreement);
-		String agreementItemSeqId = StressTestUtils.formatPaddedNumber(1, 5);
-		agreementItem.setAgreementItemSeqId(agreementItemSeqId);
 		agreementItem.setAgreementItemTypeId(agreementType);
 		agreementItem.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
 		agreementItem.setAgreementText("Agrement test opened in trial mode");
 		agreementItemWriter.create(agreementItem);
 
+		// get seq id
+		String filter = "agreementId = \"" + agreement.getAgreementId() + "\"";
+		String order = "-agreementItemSeqId";
+		String agreementItemSeqId = "";
+				
+		try (EntityIterator<AgreementItem> agreementItems = agreementItemWriter.find(filter, null, order, 1)) {
+			for (AgreementItem agreementItemRecord : agreementItems) {
+				agreementItemSeqId = agreementItemRecord.getAgreementItemSeqId();
+			}
+		}
+		
 		// AgreementTerm
 		ResourceWriter<AgreementTerm> agreementTermWriter = context.getResourceManager().getResourceWriter(AgreementTerm.class);
-		AgreementTerm agreementTerm = agreementTermWriter.make(true);
+		AgreementTerm agreementTerm = agreementTermWriter.make();
 
 		agreementTerm.setTermTypeId(termType);
 		agreementTerm.setAgreementId(agreement);
