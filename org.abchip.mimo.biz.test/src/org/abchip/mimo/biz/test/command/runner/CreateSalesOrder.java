@@ -9,12 +9,10 @@
 package org.abchip.mimo.biz.test.command.runner;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-import org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
@@ -38,6 +36,8 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
 import org.abchip.mimo.biz.service.common.GetCommonDefault;
 import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
+import org.abchip.mimo.biz.service.order.RecalcTaxTotal;
+import org.abchip.mimo.biz.service.order.RecalcTaxTotalResponse;
 import org.abchip.mimo.biz.service.order.ReserveStoreInventory;
 import org.abchip.mimo.biz.service.order.ReserveStoreInventoryResponse;
 import org.abchip.mimo.biz.service.order.ResetGrandTotal;
@@ -67,12 +67,6 @@ public class CreateSalesOrder implements Callable<Long> {
 	Party party;
 	List<Product> products;
 
-	List<BigDecimal> amountList = new ArrayList<BigDecimal>();
-	List<BigDecimal> priceList = new ArrayList<BigDecimal>();
-	List<Product> productList = new ArrayList<Product>();
-	List<BigDecimal> quantityList = new ArrayList<BigDecimal>();
-	List<BigDecimal> shippingList = new ArrayList<BigDecimal>();
-
 	public CreateSalesOrder(Context context, Party party, List<Product> products) {
 		this.context = context;
 		this.party = party;
@@ -98,18 +92,18 @@ public class CreateSalesOrder implements Callable<Long> {
 	private void createOrder(ServiceManager serviceManager) throws ResourceException, ServiceException {
 
 		ProductStore productStore = StressTestUtils.getProductStore(context);
-		PartyAcctgPreference partyAcctgPreference = partyDefault.getAccountingPreference();
+//		PartyAcctgPreference partyAcctgPreference = partyDefault.getAccountingPreference();
 		UserLogin userLogin = context.createProxy(UserLogin.class, context.getContextDescription().getUser());
 
 		// Order Header
 		ResourceWriter<OrderHeader> orderHeaderWriter = context.getResourceManager().getResourceWriter(OrderHeader.class);
-		OrderHeader orderHeader = orderHeaderWriter.make(true);
-		String orderId = orderHeader.getOrderId();
-		if (partyAcctgPreference != null && partyAcctgPreference.getOrderIdPrefix() != null) {
-			orderHeader.setOrderId(partyAcctgPreference.getOrderIdPrefix() + orderId);
-		}
-		if (productStore.getOrderNumberPrefix() != null)
-			orderHeader.setOrderId(productStore.getOrderNumberPrefix() + orderId);
+		OrderHeader orderHeader = orderHeaderWriter.make();
+//		String orderId = orderHeader.getOrderId();
+//		if (partyAcctgPreference != null && partyAcctgPreference.getOrderIdPrefix() != null) {
+//			orderHeader.setOrderId(partyAcctgPreference.getOrderIdPrefix() + orderId);
+//		}
+//		if (productStore.getOrderNumberPrefix() != null)
+//			orderHeader.setOrderId(productStore.getOrderNumberPrefix() + orderId);
 
 		orderHeader.setOrderTypeId(context.createProxy(OrderType.class, "SALES_ORDER"));
 		orderHeader.setProductStoreId(productStore);
@@ -139,19 +133,19 @@ public class CreateSalesOrder implements Callable<Long> {
 
 		// OrderItemShipGroup
 		ResourceWriter<OrderItemShipGroup> orderItemShipGroupWriter = context.getResourceManager().getResourceWriter(OrderItemShipGroup.class);
-		String shipGroupSeqId = StressTestUtils.formatPaddedNumber(1, 5);
 		OrderItemShipGroup orderItemShipGroup = orderItemShipGroupWriter.make();
 		orderItemShipGroup.setOrderId(orderHeader);
-		orderItemShipGroup.setShipGroupSeqId(shipGroupSeqId);
 		orderItemShipGroup.setShipmentMethodTypeId(context.createProxy(ShipmentMethodType.class, "NO_SHIPPING"));
 		orderItemShipGroup.setCarrierPartyId(context.createProxy(Party.class, "_NA_"));
 		orderItemShipGroup.setCarrierRoleTypeId("CARRIER");
+		orderItemShipGroup.setContactMechId(party.getPostalAddress());
 		orderItemShipGroupWriter.create(orderItemShipGroup);
-
+		
+		
 		// OrderItem
 		long i = 1;
 		for (Product product : this.products) {
-			createOrderItem(serviceManager, orderHeader, StressTestUtils.formatPaddedNumber(i++, 5), shipGroupSeqId, 1, product);
+			createOrderItem(serviceManager, orderHeader, StressTestUtils.formatPaddedNumber(i++, 5), orderItemShipGroup.getShipGroupSeqId(), 1, product);
 		}
 		// OrderRole
 		ResourceWriter<OrderRole> orderRoleWriter = context.getResourceManager().getResourceWriter(OrderRole.class);
@@ -187,32 +181,19 @@ public class CreateSalesOrder implements Callable<Long> {
 
 		// OrderPaymentPreference
 		ResourceWriter<OrderPaymentPreference> orderPaymentPreferenceWriter = context.getResourceManager().getResourceWriter(OrderPaymentPreference.class);
-		OrderPaymentPreference orderPaymentPreference = orderPaymentPreferenceWriter.make(true);
+		OrderPaymentPreference orderPaymentPreference = orderPaymentPreferenceWriter.make();
 		orderPaymentPreference.setOrderId(orderHeader);
 		orderPaymentPreference.setStatusId(context.createProxy(StatusItem.class, "PAYMENT_NOT_RECEIVED"));
 		orderPaymentPreference.setPaymentMethodTypeId(context.createProxy(PaymentMethodType.class, "EXT_COD"));
 		orderPaymentPreferenceWriter.create(orderPaymentPreference);
 
-		// Ricalcolo tasse
-		/*
-		 * CalcTax calcTax = serviceManager.prepare(CalcTax.class);
-		 * calcTax.setProductStoreId(orderHeader.getProductStoreId().getID());
-		 * calcTax.setPayToPartyId(partyDefault.getOrganization().getID());
-		 * calcTax.setBillToPartyId(party.getID());
-		 * calcTax.getItemAmountList().addAll(amountList);
-		 * calcTax.getItemPriceList().addAll(priceList);
-		 * calcTax.getItemProductList().addAll(productList);
-		 * calcTax.getItemQuantityList().addAll(quantityList);
-		 * calcTax.getItemShippingList().addAll(shippingList);
-		 * calcTax.setOrderShippingAmount(new BigDecimal(0));
-		 * calcTax.setShippingAddress(party.getPostalAddress());
-		 * calcTax.setOrderPromotionsAmount(new BigDecimal(0));
-		 * 
-		 * CalcTaxResponse calcTaxResponse = serviceManager.execute(calcTax); if
-		 * (calcTaxResponse.isError()) { LOGGER.error("Errore in ricalcolo tasse"); } //
-		 * TODO a questo punto con i campi di ritorno devo scrivere OrderAdjustment
-		 * 
-		 */
+		// Ricalcolo tasse servizio recalcTaxTotal
+		RecalcTaxTotal recalcTaxTotal = serviceManager.prepare(RecalcTaxTotal.class);
+		recalcTaxTotal.setOrderId(orderHeader.getOrderId());
+		RecalcTaxTotalResponse recalcTaxTotalresponse = serviceManager.execute(recalcTaxTotal);
+		if (recalcTaxTotalresponse.onError()) {
+			LOGGER.error(recalcTaxTotalresponse.getErrorMessage());
+		}
 
 		// Update Total OrderHeader
 		ResetGrandTotal resetGrandTotal = serviceManager.prepare(ResetGrandTotal.class);
@@ -230,7 +211,6 @@ public class CreateSalesOrder implements Callable<Long> {
 		try (EntityIterator<OrderItemShipGroupAssoc> orderItemShipGroupAssocs = orderItemShipGroupAssocReader.find(filter)) {
 			for (OrderItemShipGroupAssoc orderItemShipGroupAssoc : orderItemShipGroupAssocs) {
 
-				// TODO verificare perchè non va
 				OrderItem orderItem = orderItemReader.lookup(orderHeader.getOrderId() + "/" + orderItemShipGroupAssoc.getOrderItemSeqId());
 
 				// reserve the product
@@ -306,12 +286,6 @@ public class CreateSalesOrder implements Callable<Long> {
 		orderItemShipGroupAssoc.setShipGroupSeqId(shipGroupSeqId);
 		orderItemShipGroupAssoc.setQuantity(new BigDecimal(quantity));
 		orderItemShipGroupAssocWriter.create(orderItemShipGroupAssoc);
-
-		amountList.add(orderItem.getQuantity());
-		priceList.add(orderItem.getUnitPrice());
-		productList.add(product);
-		quantityList.add(orderItem.getQuantity());
-		shippingList.add(new BigDecimal(0));
 	}
 
 	private void createContactMech(ContactMech contactMech, OrderHeader orderHeader, String purposeType) throws ResourceException {
