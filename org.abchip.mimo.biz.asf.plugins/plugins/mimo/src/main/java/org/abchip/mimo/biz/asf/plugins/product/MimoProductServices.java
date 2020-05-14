@@ -35,7 +35,7 @@ import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 
-public class ProductServices {
+public class MimoProductServices {
 
 	public static Map<String, Object> importProduct(DispatchContext ctx, Map<String, ? extends Object> context) {
 		LocalDispatcher dispatcher = ctx.getDispatcher();

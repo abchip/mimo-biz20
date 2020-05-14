@@ -24,8 +24,8 @@ under the License.
     <vendor></vendor>
     <version>1.0</version>
 
-	<service name="deleteProduct" engine="java"
-		location="org.abchip.mimo.biz.asf.plugins.product.ProductServices" invoke="deleteProduct">
+	<service name="mimoDeleteProduct" engine="java"
+		location="org.abchip.mimo.biz.asf.plugins.product.MimoProductServices" invoke="deleteProduct">
 		<description>Delete product custom and relation</description>
         <attribute name="productId" type="String" mode="IN" optional="false"/>
 	</service>

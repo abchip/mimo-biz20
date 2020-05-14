@@ -24,14 +24,14 @@ under the License.
     <vendor></vendor>
     <version>1.0</version>
 
-	<service name="deleteParty" engine="java"
-		location="org.abchip.mimo.biz.asf.plugins.party.PartyServices" invoke="deleteParty">
+	<service name="mimoDeleteParty" engine="java"
+		location="org.abchip.mimo.biz.asf.plugins.party.MimoPartyServices" invoke="deleteParty">
 		<description>Delete party customer and relation</description>
         <attribute name="partyId" type="String" mode="IN" optional="false"/>
 	</service>	
 
-	<service name="deletePartyGroup" engine="java"
-		location="org.abchip.mimo.biz.asf.plugins.party.PartyServices" invoke="deletePartyGroup">
+	<service name="mimoDeletePartyGroup" engine="java"
+		location="org.abchip.mimo.biz.asf.plugins.party.MimoPartyServices" invoke="deletePartyGroup">
 		<description>Delete party group and relation</description>
         <attribute name="partyId" type="String" mode="IN" optional="false"/>
 	</service>
