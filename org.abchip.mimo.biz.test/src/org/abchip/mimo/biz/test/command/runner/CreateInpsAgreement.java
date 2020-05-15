@@ -44,7 +44,7 @@ public class CreateInpsAgreement implements Callable<Long> {
 		// Agreement
 		ResourceWriter<Agreement> agreementWriter = context.getResourceManager().getResourceWriter(Agreement.class);
 
-		Agreement agreement = agreementWriter.make(true);
+		Agreement agreement = agreementWriter.make();
 
 		agreement.setAgreementDate(new Date());
 		agreement.setFromDate(new Date());

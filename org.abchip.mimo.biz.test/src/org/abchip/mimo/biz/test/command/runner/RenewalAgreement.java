@@ -18,16 +18,12 @@ import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemType;
-import org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceType;
-import org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference;
 import org.abchip.mimo.biz.model.accounting.payment.CreditCard;
 import org.abchip.mimo.biz.model.accounting.payment.Payment;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethod;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentType;
-import org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct;
-import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.party.agreement.Agreement;
 import org.abchip.mimo.biz.model.party.agreement.AgreementItem;
@@ -38,7 +34,8 @@ import org.abchip.mimo.biz.model.party.agreement.TermType;
 import org.abchip.mimo.biz.model.party.contact.ContactMechPurposeType;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.product.Product;
-import org.abchip.mimo.biz.model.product.store.ProductStore;
+import org.abchip.mimo.biz.service.accounting.Addtax;
+import org.abchip.mimo.biz.service.accounting.AddtaxResponse;
 import org.abchip.mimo.biz.service.accounting.SetInvoiceStatus;
 import org.abchip.mimo.biz.service.accounting.SetInvoiceStatusResponse;
 import org.abchip.mimo.biz.service.accounting.SetPaymentStatus;
@@ -49,12 +46,9 @@ import org.abchip.mimo.biz.service.common.GetCommonDefault;
 import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
 import org.abchip.mimo.biz.service.party.GetPartyDefault;
 import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
-import org.abchip.mimo.biz.service.product.CalcTaxForDisplay;
-import org.abchip.mimo.biz.service.product.CalcTaxForDisplayResponse;
 import org.abchip.mimo.biz.service.product.CalculateProductPrice;
 import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
 import org.abchip.mimo.biz.test.accounting.StripePaymentManager;
-import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceException;
@@ -77,7 +71,6 @@ public class RenewalAgreement implements Callable<Long> {
 	GetPartyDefaultResponse partyDefault;
 
 	String agreementId;
-	long invoiceSeq = 1;
 
 	public RenewalAgreement(Context context, String agreementId) {
 		this.context = context;
@@ -117,15 +110,12 @@ public class RenewalAgreement implements Callable<Long> {
 			filter = filter + "AND agreementId = '" + agreementId + "'";
 
 		ResourceReader<Agreement> agreementReader = context.getResourceManager().getResourceReader(Agreement.class);
-		// ResourceReader<AgreementItem> agreementItemReader =
-		// context.getResourceManager().getResourceReader(AgreementItem.class);
 		ResourceReader<AgreementTerm> agreementTermReader = context.getResourceManager().getResourceReader(AgreementTerm.class);
 		ResourceReader<AgreementProductAppl> agreementProductApplReader = context.getResourceManager().getResourceReader(AgreementProductAppl.class);
 
 		try (EntityIterator<Agreement> agreements = agreementReader.find(filter)) {
 			for (Agreement agreement : agreements) {
 				LOGGER.info("Verify agreement " + agreement.getAgreementId());
-
 				String termFilter = "agreementId = '" + agreement.getAgreementId() + "'";
 
 				int open = 0;
@@ -147,28 +137,31 @@ public class RenewalAgreement implements Callable<Long> {
 				// Eseguo rinnovo dall'ultima riga;
 				if (open == 0 && close > 0) {
 
-					String agreementItemSeqId = getNewSeqId(agreementTermLast.getAgreementItemSeqId());
-
-					createRow(agreement, "Renewal agreement", agreementItemSeqId);
-
+					AgreementItem agreementItem = createRow(agreement, "Renewal agreement");
 					// Leggo i prodotti dalla riga precedente
 					String productFilter = "agreementId = '" + agreement.getAgreementId() + "' AND agreementItemSeqId = '" + agreementTermLast.getAgreementItemSeqId() + "'";
 
 					try (EntityIterator<AgreementProductAppl> agreementProducts = agreementProductApplReader.find(productFilter)) {
 						for (AgreementProductAppl agreementProduct : agreementProducts) {
-							createRowProduct(agreement, agreementProduct.getProductId(), agreementItemSeqId);
+							createRowProduct(agreement, agreementProduct.getProductId(), agreementItem.getAgreementItemSeqId());
+						}
+					}
+					// Creo la fattura dalla nuova riga
+					Invoice invoice = createInvoice(agreement.getPartyIdTo(), "Agreement renewal - reference " + agreement.getID() + "/" + agreementItem.getAgreementItemSeqId());
+					// leggo la riga appena creata
+					productFilter = "agreementId = '" + agreement.getAgreementId() + "' AND agreementItemSeqId = '" + agreementItem.getAgreementItemSeqId() + "'";
+					try (EntityIterator<AgreementProductAppl> agreementProducts = agreementProductApplReader.find(productFilter)) {
+						for (AgreementProductAppl agreementProduct : agreementProducts) {
+							createInvoiceItem(invoice, agreementProduct, 1, agreementTermLast.getInvoiceItemTypeId().getID());
 						}
 					}
 
-					// Creo la fattura dalla nuova riga
-					Invoice invoice = createInvoice(agreement.getPartyIdTo(), "Agreement renewal - reference " + agreement.getID() + "/" + agreementItemSeqId);
-
-					// leggo la riga appena creata
-					productFilter = "agreementId = '" + agreement.getAgreementId() + "' AND agreementItemSeqId = '" + agreementItemSeqId + "'";
-					try (EntityIterator<AgreementProductAppl> agreementProducts = agreementProductApplReader.find(productFilter)) {
-						for (AgreementProductAppl agreementProduct : agreementProducts) {
-							createInvoiceItem(invoice, agreementProduct.getProductId(), 1, agreementTermLast.getInvoiceItemTypeId().getID());
-						}
+					// Add tax
+					Addtax addtax = serviceManager.prepare(Addtax.class);
+					addtax.setInvoiceId(invoice.getID());
+					AddtaxResponse addTaxresponse = serviceManager.execute(addtax);
+					if (addTaxresponse.onError()) {
+						LOGGER.error(addTaxresponse.getErrorMessage());
 					}
 
 					LOGGER.info("Creata fattura numero " + invoice.getInvoiceId());
@@ -208,7 +201,7 @@ public class RenewalAgreement implements Callable<Long> {
 		}
 	}
 
-	private void createRow(Agreement agreement, String text, String agreementItemSeqId) throws ResourceException {
+	private AgreementItem createRow(Agreement agreement, String text) throws ResourceException {
 
 		AgreementItemType agreementType = context.createProxy(AgreementItemType.class, "AGREEMENT_PRICING_PR");
 		TermType termType = context.createProxy(TermType.class, "FIN_PAYMENT_FIXDAY");
@@ -219,35 +212,35 @@ public class RenewalAgreement implements Callable<Long> {
 
 		AgreementItem agreementItem = agreementItemWriter.make();
 		agreementItem.setAgreementId(agreement);
-		agreementItem.setAgreementItemSeqId(agreementItemSeqId);
 		agreementItem.setAgreementItemTypeId(agreementType);
 		agreementItem.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
 		agreementItem.setAgreementText(text);
 		agreementItemWriter.create(agreementItem);
 		// AgreementTerm
 		ResourceWriter<AgreementTerm> agreementTermWriter = context.getResourceManager().getResourceWriter(AgreementTerm.class);
-		AgreementTerm agreementTerm = agreementTermWriter.make(true);
+		AgreementTerm agreementTerm = agreementTermWriter.make();
 
 		agreementTerm.setTermTypeId(termType);
 		agreementTerm.setAgreementId(agreement);
-		agreementTerm.setAgreementItemSeqId(agreementItemSeqId);
+		agreementTerm.setAgreementItemSeqId(agreementItem.getAgreementItemSeqId());
 		agreementTerm.setInvoiceItemTypeId(invoiceItemType);
 		Date date1 = new Date();
 
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(date1);
-		cal.add(Calendar.MONTH, 1);
+//		cal.add(Calendar.MONTH, 1);
+		cal.add(Calendar.MINUTE, 1);
 		Date date2 = cal.getTime();
 		agreementTerm.setFromDate(date1);
 		agreementTerm.setThruDate(date2);
 		// agreementTerm.setDescription();
 		agreementTermWriter.create(agreementTerm);
+		
+		return agreementItem;
 	}
 
 	private void createRowProduct(Agreement agreement, Product product, String itemSeqId) throws ResourceException, ServiceException {
-
 		ServiceManager serviceManager = context.getServiceManager();
-
 		// AgreementProductAppl
 		ResourceWriter<AgreementProductAppl> agreementProductApplWriter = context.getResourceManager().getResourceWriter(AgreementProductAppl.class);
 		AgreementProductAppl agreementProductAppl = agreementProductApplWriter.make();
@@ -275,12 +268,7 @@ public class RenewalAgreement implements Callable<Long> {
 	private Invoice createInvoice(Party party, String description) throws ResourceException {
 		// Invoice Header
 		ResourceWriter<Invoice> invoiceWriter = context.getResourceManager().getResourceWriter(Invoice.class);
-		PartyAcctgPreference partyAcctgPreference = partyDefault.getAccountingPreference();
-		Invoice invoice = invoiceWriter.make(true);
-		String invoiceId = invoice.getInvoiceId();
-		if (partyAcctgPreference != null && partyAcctgPreference.getInvoiceIdPrefix() != null) {
-			invoice.setInvoiceId(partyAcctgPreference.getInvoiceIdPrefix() + invoiceId);
-		}
+		Invoice invoice = invoiceWriter.make();
 		invoice.setInvoiceTypeId(context.createProxy(InvoiceType.class, "SALES_INVOICE"));
 		invoice.setInvoiceDate(new Date());
 		invoice.setStatusId(context.createProxy(StatusItem.class, "INVOICE_IN_PROCESS"));
@@ -290,14 +278,6 @@ public class RenewalAgreement implements Callable<Long> {
 		if (!description.isEmpty())
 			invoice.setDescription(description);
 		invoiceWriter.create(invoice);
-
-		// InvoiceStatus
-		ResourceWriter<InvoiceStatus> invoiceStatusWriter = context.getResourceManager().getResourceWriter(InvoiceStatus.class);
-		InvoiceStatus invoiceStatus = invoiceStatusWriter.make();
-		invoiceStatus.setStatusId(context.createProxy(StatusItem.class, "INVOICE_IN_PROCESS"));
-		invoiceStatus.setInvoiceId(invoice);
-		invoiceStatus.setStatusDate(new Date());
-		invoiceStatusWriter.create(invoiceStatus);
 
 		// InvoiceContactMech
 		ResourceWriter<InvoiceContactMech> invoiceContactMechWriter = context.getResourceManager().getResourceWriter(InvoiceContactMech.class);
@@ -310,93 +290,15 @@ public class RenewalAgreement implements Callable<Long> {
 		return invoice;
 	}
 
-	private void createInvoiceItem(Invoice invoice, Product product, int quantity, String itemType) throws ResourceException, ServiceException {
-		ServiceManager serviceManager = context.getServiceManager();
-
+	private void createInvoiceItem(Invoice invoice, AgreementProductAppl agreementProductAppl, int quantity, String itemType) throws ResourceException, ServiceException {
 		ResourceWriter<InvoiceItem> invoiceItemWriter = context.getResourceManager().getResourceWriter(InvoiceItem.class);
 		InvoiceItem invoiceItem = invoiceItemWriter.make();
 		invoiceItem.setInvoiceId(invoice);
-		invoiceItem.setInvoiceItemSeqId(StressTestUtils.formatPaddedNumber(invoiceSeq++, 5));
 		invoiceItem.setInvoiceItemTypeId(context.createProxy(InvoiceItemType.class, itemType));
-		invoiceItem.setProductId(product);
-		invoiceItem.setDescription(product.getProductName());
+		invoiceItem.setProductId(agreementProductAppl.getProductId());
+		invoiceItem.setDescription(agreementProductAppl.getProductId().getProductName());
 		invoiceItem.setQuantity(new BigDecimal(quantity));
-
-		// price calculation
-		CalculateProductPrice calculateProductPrice = serviceManager.prepare(CalculateProductPrice.class);
-		calculateProductPrice.setProduct(product);
-		calculateProductPrice.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
-
-		CalculateProductPriceResponse productPrice = serviceManager.execute(calculateProductPrice);
-		if (productPrice.onError())
-			LOGGER.error(productPrice.getErrorMessage());
-
-		if (productPrice.isValidPriceFound()) {
-			invoiceItem.setAmount(productPrice.getBasePrice());
-		} else
-			LOGGER.warn("Prezzo non valido per articolo " + product.getID());
-
-		invoiceItemWriter.create(invoiceItem);
-
-		//
-		String saveInvoiceItemSeqId = invoiceItem.getInvoiceItemSeqId();
-
-		// check taxable
-		ProductStore productStore = StressTestUtils.getProductStore(context);
-
-		String filterTaxAuth = "taxAuthPartyId = '" + productStore.getVatTaxAuthPartyId() + "' AND taxAuthGeoId = '" + productStore.getVatTaxAuthGeoId() + "'";
-
-		ResourceReader<TaxAuthorityRateProduct> taxAuthorityRateProductReader = context.getResourceManager().getResourceReader(TaxAuthorityRateProduct.class);
-		String taxAuthPartyId = "";
-		String taxAuthGeoId = "";
-		String taxAuthorityRateSeqId = "";
-
-		TaxAuthorityRateProduct taxAuthorityRateProductRec = null;
-		try (EntityIterator<TaxAuthorityRateProduct> taxAuthorityRateProducts = taxAuthorityRateProductReader.find(filterTaxAuth, null, null, 1)) {
-			for (TaxAuthorityRateProduct taxAuthorityRateProduct : taxAuthorityRateProducts) {
-				taxAuthPartyId = taxAuthorityRateProduct.getTaxAuthPartyId();
-				taxAuthGeoId = taxAuthorityRateProduct.getTaxAuthGeoId();
-				taxAuthorityRateSeqId = taxAuthorityRateProduct.getTaxAuthorityRateSeqId();
-				taxAuthorityRateProductRec = taxAuthorityRateProduct;
-			}
-		}
-
-		if (taxAuthPartyId == null || taxAuthPartyId.isEmpty())
-			taxAuthPartyId = "ITA-ADE";
-
-		if (taxAuthGeoId == null || taxAuthGeoId.isEmpty())
-			taxAuthGeoId = commonDefault.getCountryGeo().getID();
-
-		CalcTaxForDisplay calcTaxForDisplay = serviceManager.prepare(CalcTaxForDisplay.class);
-		calcTaxForDisplay.setBasePrice(productPrice.getBasePrice());
-		calcTaxForDisplay.setProductId(product.getID());
-		calcTaxForDisplay.setProductStoreId(productStore.getID());
-		CalcTaxForDisplayResponse taxForDisplay = serviceManager.execute(calcTaxForDisplay);
-		if (taxForDisplay.onError()) {
-			LOGGER.error(taxForDisplay.getErrorMessage());
-			return;
-		}
-
-		Party taxAutPartyId = context.createProxy(Party.class, taxAuthPartyId);
-		Geo taxAutGeo = context.createProxy(Geo.class, taxAuthGeoId);
-
-		invoiceItem = invoiceItemWriter.make();
-		invoiceItem.setInvoiceId(invoice);
-		invoiceItem.setInvoiceItemSeqId(StressTestUtils.formatPaddedNumber(invoiceSeq++, 5));
-		invoiceItem.setInvoiceItemTypeId(context.createProxy(InvoiceItemType.class, "ITM_SALES_TAX"));
-		invoiceItem.setProductId(product);
-		invoiceItem.setParentInvoiceId(invoice.getID());
-		invoiceItem.setParentInvoiceItemSeqId(saveInvoiceItemSeqId);
-		invoiceItem.setQuantity(new BigDecimal(quantity));
-		invoiceItem.setAmount((taxForDisplay.getTaxTotal()));
-
-		// TODO verify
-		invoiceItem.setTaxAuthPartyId(taxAutPartyId);
-		invoiceItem.setTaxAuthGeoId(taxAutGeo);
-		if (!taxAuthorityRateSeqId.isEmpty()) {
-			invoiceItem.setTaxAuthorityRateSeqId(taxAuthorityRateProductRec);
-		}
-
+		invoiceItem.setAmount(agreementProductAppl.getPrice());
 		invoiceItemWriter.create(invoiceItem);
 	}
 
@@ -410,12 +312,13 @@ public class RenewalAgreement implements Callable<Long> {
 		}
 
 		ResourceWriter<Payment> paymentWriter = context.getResourceManager().getResourceWriter(Payment.class);
-		Payment payment = paymentWriter.make(true);
+		Payment payment = paymentWriter.make();
 		payment.setAmount(invoice.getTotal());
 		payment.setPartyIdTo(invoice.getPartyIdFrom());
 		payment.setPartyIdFrom(invoice.getPartyId());
 		payment.setPaymentTypeId(context.createProxy(PaymentType.class, "CUSTOMER_PAYMENT"));
 		payment.setPaymentMethodTypeId(context.createProxy(PaymentMethodType.class, "CREDIT_CARD"));
+		payment.setPaymentMethodId(paymentMethod);
 		payment.setCurrencyUomId(commonDefault.getCurrencyUom());
 		payment.setPaymentRefNum("Invoice number " + invoice.getID());
 
@@ -467,11 +370,5 @@ public class RenewalAgreement implements Callable<Long> {
 		}
 
 		return true;
-	}
-
-	private String getNewSeqId(String agreementItemSeqId) {
-		int i = Integer.parseInt(agreementItemSeqId);
-		i++;
-		return StressTestUtils.formatPaddedNumber(i, 5);
 	}
 }

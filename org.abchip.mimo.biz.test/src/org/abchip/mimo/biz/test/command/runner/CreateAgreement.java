@@ -163,7 +163,8 @@ public class CreateAgreement implements Callable<Long> {
 
 		Calendar cal = Calendar.getInstance();
 		cal.setTime(date1);
-		cal.add(Calendar.MONTH, 1);
+//		cal.add(Calendar.MONTH, 1);
+		cal.add(Calendar.MINUTE, 1);
 		Date date2 = cal.getTime();
 		agreementTerm.setFromDate(date1);
 		agreementTerm.setThruDate(date2);
