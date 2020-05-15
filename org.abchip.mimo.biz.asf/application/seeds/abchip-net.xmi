@@ -617,8 +617,6 @@
       taxAuthPartyId="ITA_ADE"
       taxPercentage="22"
       taxPromotions="true">
-    <productStoreId
-        href="seed-initial.xmi#8000"/>
     <taxAuthorityRateTypeId
         href="seed-initial.xmi#SALES_TAX"/>
   </contents>
