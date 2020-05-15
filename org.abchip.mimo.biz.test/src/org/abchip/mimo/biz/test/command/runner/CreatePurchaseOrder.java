@@ -13,7 +13,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-import org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
@@ -39,10 +38,14 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentMethodType;
 import org.abchip.mimo.biz.service.common.GetCommonDefault;
 import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
+import org.abchip.mimo.biz.service.order.RecalcTaxTotal;
+import org.abchip.mimo.biz.service.order.RecalcTaxTotalResponse;
 import org.abchip.mimo.biz.service.order.ResetGrandTotal;
 import org.abchip.mimo.biz.service.order.ResetGrandTotalResponse;
 import org.abchip.mimo.biz.service.party.GetPartyDefault;
 import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
+import org.abchip.mimo.biz.service.product.CalculatePurchasePrice;
+import org.abchip.mimo.biz.service.product.CalculatePurchasePriceResponse;
 import org.abchip.mimo.biz.service.product.GetProductDefault;
 import org.abchip.mimo.biz.service.product.GetProductDefaultResponse;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
@@ -91,21 +94,12 @@ public class CreatePurchaseOrder implements Callable<Long> {
 	}
 
 	private void createOrder(ServiceManager serviceManager) throws ResourceException, ServiceException {
-
 		ProductStore productStore = StressTestUtils.getProductStore(context);
-		PartyAcctgPreference partyAcctgPreference = partyDefault.getAccountingPreference();
 		UserLogin userLogin = context.createProxy(UserLogin.class, context.getContextDescription().getUser());
 
 		// Order Header
 		ResourceWriter<OrderHeader> orderHeaderWriter = context.getResourceManager().getResourceWriter(OrderHeader.class);
-		OrderHeader orderHeader = orderHeaderWriter.make(true);
-		String orderId = orderHeader.getOrderId();
-		if (partyAcctgPreference != null && partyAcctgPreference.getOrderIdPrefix() != null) {
-			orderHeader.setOrderId(partyAcctgPreference.getOrderIdPrefix() + orderId);
-		}
-		if (productStore.getOrderNumberPrefix() != null)
-			orderHeader.setOrderId(productStore.getOrderNumberPrefix() + orderId);
-
+		OrderHeader orderHeader = orderHeaderWriter.make();
 		orderHeader.setOrderTypeId(context.createProxy(OrderType.class, "PURCHASE_ORDER"));
 		orderHeader.setProductStoreId(productStore);
 		orderHeader.setSalesChannelEnumId(context.createProxy(Enumeration.class, "UNKNWN_SALES_CHANNEL"));
@@ -134,20 +128,20 @@ public class CreatePurchaseOrder implements Callable<Long> {
 
 		// OrderItemShipGroup
 		ResourceWriter<OrderItemShipGroup> orderItemShipGroupWriter = context.getResourceManager().getResourceWriter(OrderItemShipGroup.class);
-		String shipGroupSeqId = StressTestUtils.formatPaddedNumber(1, 5);
 		OrderItemShipGroup orderItemShipGroup = orderItemShipGroupWriter.make();
 		orderItemShipGroup.setOrderId(orderHeader);
-		orderItemShipGroup.setShipGroupSeqId(shipGroupSeqId);
 		orderItemShipGroup.setShipmentMethodTypeId(context.createProxy(ShipmentMethodType.class, "STANDARD"));
 		orderItemShipGroup.setCarrierPartyId(context.createProxy(Party.class, "_NA_"));
 		orderItemShipGroup.setCarrierRoleTypeId("CARRIER");
 		orderItemShipGroup.setFacilityId(context.createProxy(Facility.class, "WebStoreWarehouse"));
+		orderItemShipGroup.setContactMechId(partyDefault.getOrganization().getPostalAddress());
+
 		orderItemShipGroupWriter.create(orderItemShipGroup);
 
 		// OrderItem
 		long i = 1;
 		for (SupplierProduct supplierProduct : this.supplierProducts) {
-			createOrderItem(orderHeader, StressTestUtils.formatPaddedNumber(i++, 5), shipGroupSeqId, 1, supplierProduct);
+			createOrderItem(serviceManager, orderHeader, StressTestUtils.formatPaddedNumber(i++, 5), orderItemShipGroup.getShipGroupSeqId(), 1, supplierProduct);
 		}
 		// OrderRole
 		ResourceWriter<OrderRole> orderRoleWriter = context.getResourceManager().getResourceWriter(OrderRole.class);
@@ -177,15 +171,19 @@ public class CreatePurchaseOrder implements Callable<Long> {
 
 		// OrderPaymentPreference
 		ResourceWriter<OrderPaymentPreference> orderPaymentPreferenceWriter = context.getResourceManager().getResourceWriter(OrderPaymentPreference.class);
-		OrderPaymentPreference orderPaymentPreference = orderPaymentPreferenceWriter.make(true);
+		OrderPaymentPreference orderPaymentPreference = orderPaymentPreferenceWriter.make();
 		orderPaymentPreference.setOrderId(orderHeader);
 		orderPaymentPreference.setStatusId(context.createProxy(StatusItem.class, "PAYMENT_NOT_RECEIVED"));
 		orderPaymentPreference.setPaymentMethodTypeId(context.createProxy(PaymentMethodType.class, "EXT_COD"));
 		orderPaymentPreferenceWriter.create(orderPaymentPreference);
 
-		// Inventory
-		//
-		// TODO qui richiamare il servizio calcTax per aggiungere l'iva all'ordine
+		// Ricalcolo tasse servizio recalcTaxTotal
+		RecalcTaxTotal recalcTaxTotal = serviceManager.prepare(RecalcTaxTotal.class);
+		recalcTaxTotal.setOrderId(orderHeader.getOrderId());
+		RecalcTaxTotalResponse recalcTaxTotalresponse = serviceManager.execute(recalcTaxTotal);
+		if (recalcTaxTotalresponse.onError()) {
+			LOGGER.error(recalcTaxTotalresponse.getErrorMessage());
+		}
 
 		// Update Total OrderHeader
 		ResetGrandTotal resetGrandTotal = serviceManager.prepare(ResetGrandTotal.class);
@@ -196,7 +194,7 @@ public class CreatePurchaseOrder implements Callable<Long> {
 		}
 	}
 
-	private void createOrderItem(OrderHeader orderHeader, String itemSeqiD, String shipGroupSeqId, int quantity, SupplierProduct supplierProduct) throws ResourceException {
+	private void createOrderItem(ServiceManager serviceManager, OrderHeader orderHeader, String itemSeqiD, String shipGroupSeqId, int quantity, SupplierProduct supplierProduct) throws ResourceException, ServiceException {
 		ResourceWriter<OrderItem> orderItemWriter = context.getResourceManager().getResourceWriter(OrderItem.class);
 
 		// TODO utilizzare Servizio calculatePurchasePrice per calcolo prezzo
@@ -213,7 +211,24 @@ public class CreatePurchaseOrder implements Callable<Long> {
 		orderItem.setItemDescription(supplierProduct.getProductId().getProductName());
 		orderItem.setStatusId(context.createProxy(StatusItem.class, "ITEM_CREATED"));
 		orderItem.setQuantity(new BigDecimal(quantity));
-		orderItem.setUnitPrice(supplierProduct.getLastPrice());
+		
+		// price calculation
+		CalculatePurchasePrice calculatePurchasePrice = serviceManager.prepare(CalculatePurchasePrice.class);
+		calculatePurchasePrice.setProduct(orderItem.getProductId());
+		calculatePurchasePrice.setCurrencyUomId(commonDefault.getCurrencyUom().getID());
+		calculatePurchasePrice.setPartyId(party.getID());
+		calculatePurchasePrice.setQuantity(orderItem.getQuantity());
+		calculatePurchasePrice.setAgreementId(orderHeader.getAgreementId());
+
+		CalculatePurchasePriceResponse response = serviceManager.execute(calculatePurchasePrice);
+		if (response.onError())
+			LOGGER.error(response.getErrorMessage());
+
+		if (response.isValidPriceFound()) {
+			orderItem.setUnitPrice(response.getPrice());
+		} else
+			LOGGER.error("Prezzo non valido per articolo " + orderItem.getProductId());
+		
 		orderItemWriter.create(orderItem);
 
 		// OrderStatus

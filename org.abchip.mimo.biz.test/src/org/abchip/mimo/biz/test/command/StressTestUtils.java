@@ -15,7 +15,6 @@ import java.util.List;
 
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.PartyRole;
-import org.abchip.mimo.biz.model.product.price.ProductPrice;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
 import org.abchip.mimo.biz.model.product.supplier.SupplierProduct;
@@ -30,16 +29,6 @@ public class StressTestUtils {
 	public static ProductStore getProductStore(Context context) throws ResourceException {
 		ResourceWriter<ProductStore> productStoreWriter = context.getResourceManager().getResourceWriter(ProductStore.class);
 		return productStoreWriter.first();
-	}
-
-	public static ProductPrice getProductPrice(Context context, Product product) throws ResourceException {
-		ResourceReader<ProductPrice> productPriceReader = context.getResourceManager().getResourceReader(ProductPrice.class);
-
-		String filter = "productId = \"" + product.getID() + "\"  AND thruDate IS NULL";
-		String order = "-fromDate";
-		try (EntityIterator<ProductPrice> list = productPriceReader.find(filter, null, order)) {
-			return list.next();
-		}
 	}
 
 	public static List<Party> getEnabledCustomers(Context context) throws ResourceException {
