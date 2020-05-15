@@ -45,6 +45,24 @@ public interface ProductFactory extends EFactory {
 	CalculateProductPriceResponse createCalculateProductPriceResponse();
 
 	/**
+	 * Returns a new object of class '<em>Calculate Purchase Price</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Calculate Purchase Price</em>'.
+	 * @generated
+	 */
+	CalculatePurchasePrice createCalculatePurchasePrice();
+
+	/**
+	 * Returns a new object of class '<em>Calculate Purchase Price Response</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Calculate Purchase Price Response</em>'.
+	 * @generated
+	 */
+	CalculatePurchasePriceResponse createCalculatePurchasePriceResponse();
+
+	/**
 	 * Returns a new object of class '<em>Get Product Default</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -61,24 +79,6 @@ public interface ProductFactory extends EFactory {
 	 * @generated
 	 */
 	GetProductDefaultResponse createGetProductDefaultResponse();
-
-	/**
-	 * Returns a new object of class '<em>Calc Tax</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Calc Tax</em>'.
-	 * @generated
-	 */
-	CalcTax createCalcTax();
-
-	/**
-	 * Returns a new object of class '<em>Calc Tax Response</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Calc Tax Response</em>'.
-	 * @generated
-	 */
-	CalcTaxResponse createCalcTaxResponse();
 
 	/**
 	 * Returns a new object of class '<em>Calc Tax For Display</em>'.

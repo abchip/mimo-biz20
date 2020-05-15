@@ -382,6 +382,170 @@ public interface ProductPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.product.impl.CalculatePurchasePriceImpl <em>Calculate Purchase Price</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.product.impl.CalculatePurchasePriceImpl
+	 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getCalculatePurchasePrice()
+	 * @generated
+	 */
+	int CALCULATE_PURCHASE_PRICE = 4;
+
+	/**
+	 * The feature id for the '<em><b>Locale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PURCHASE_PRICE__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PURCHASE_PRICE__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
+
+	/**
+	 * The feature id for the '<em><b>Context</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PURCHASE_PRICE__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PURCHASE_PRICE__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
+
+	/**
+	 * The feature id for the '<em><b>Agreement Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PURCHASE_PRICE__AGREEMENT_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Currency Uom Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PURCHASE_PRICE__CURRENCY_UOM_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Party Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PURCHASE_PRICE__PARTY_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
+
+	/**
+	 * The feature id for the '<em><b>Product</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PURCHASE_PRICE__PRODUCT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Quantity</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PURCHASE_PRICE__QUANTITY = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 4;
+
+	/**
+	 * The number of structural features of the '<em>Calculate Purchase Price</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PURCHASE_PRICE_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 5;
+
+	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.product.impl.CalculatePurchasePriceResponseImpl <em>Calculate Purchase Price Response</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.product.impl.CalculatePurchasePriceResponseImpl
+	 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getCalculatePurchasePriceResponse()
+	 * @generated
+	 */
+	int CALCULATE_PURCHASE_PRICE_RESPONSE = 5;
+
+	/**
+	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PURCHASE_PRICE_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PURCHASE_PRICE_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Valid Price Found</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PURCHASE_PRICE_RESPONSE__VALID_PRICE_FOUND = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Price</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PURCHASE_PRICE_RESPONSE__PRICE = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 1;
+
+	/**
+	 * The feature id for the '<em><b>Order Item Price Infos</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PURCHASE_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 2;
+
+	/**
+	 * The number of structural features of the '<em>Calculate Purchase Price Response</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CALCULATE_PURCHASE_PRICE_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 3;
+
+	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.service.product.impl.GetProductDefaultImpl <em>Get Product Default</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -389,7 +553,7 @@ public interface ProductPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getGetProductDefault()
 	 * @generated
 	 */
-	int GET_PRODUCT_DEFAULT = 4;
+	int GET_PRODUCT_DEFAULT = 6;
 
 	/**
 	 * The feature id for the '<em><b>Locale</b></em>' attribute.
@@ -444,7 +608,7 @@ public interface ProductPackage extends EPackage {
 	 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getGetProductDefaultResponse()
 	 * @generated
 	 */
-	int GET_PRODUCT_DEFAULT_RESPONSE = 5;
+	int GET_PRODUCT_DEFAULT_RESPONSE = 7;
 
 	/**
 	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
@@ -481,224 +645,6 @@ public interface ProductPackage extends EPackage {
 	 * @ordered
 	 */
 	int GET_PRODUCT_DEFAULT_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 1;
-
-	/**
-	 * The meta object id for the '{@link org.abchip.mimo.biz.service.product.impl.CalcTaxImpl <em>Calc Tax</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.abchip.mimo.biz.service.product.impl.CalcTaxImpl
-	 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getCalcTax()
-	 * @generated
-	 */
-	int CALC_TAX = 6;
-
-	/**
-	 * The feature id for the '<em><b>Locale</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
-
-	/**
-	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
-
-	/**
-	 * The feature id for the '<em><b>Context</b></em>' reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
-
-	/**
-	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
-
-	/**
-	 * The feature id for the '<em><b>Bill To Party Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX__BILL_TO_PARTY_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Facility Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX__FACILITY_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
-
-	/**
-	 * The feature id for the '<em><b>Item Amount List</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX__ITEM_AMOUNT_LIST = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 2;
-
-	/**
-	 * The feature id for the '<em><b>Item Price List</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX__ITEM_PRICE_LIST = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 3;
-
-	/**
-	 * The feature id for the '<em><b>Item Product List</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX__ITEM_PRODUCT_LIST = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>Item Quantity List</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX__ITEM_QUANTITY_LIST = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 5;
-
-	/**
-	 * The feature id for the '<em><b>Item Shipping List</b></em>' attribute list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX__ITEM_SHIPPING_LIST = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 6;
-
-	/**
-	 * The feature id for the '<em><b>Order Shipping Amount</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX__ORDER_SHIPPING_AMOUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 7;
-
-	/**
-	 * The feature id for the '<em><b>Pay To Party Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX__PAY_TO_PARTY_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 8;
-
-	/**
-	 * The feature id for the '<em><b>Product Store Id</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX__PRODUCT_STORE_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 9;
-
-	/**
-	 * The feature id for the '<em><b>Shipping Address</b></em>' containment reference.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX__SHIPPING_ADDRESS = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 10;
-
-	/**
-	 * The feature id for the '<em><b>Order Promotions Amount</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX__ORDER_PROMOTIONS_AMOUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 11;
-
-	/**
-	 * The number of structural features of the '<em>Calc Tax</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 12;
-
-	/**
-	 * The meta object id for the '{@link org.abchip.mimo.biz.service.product.impl.CalcTaxResponseImpl <em>Calc Tax Response</em>}' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see org.abchip.mimo.biz.service.product.impl.CalcTaxResponseImpl
-	 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getCalcTaxResponse()
-	 * @generated
-	 */
-	int CALC_TAX_RESPONSE = 7;
-
-	/**
-	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
-
-	/**
-	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
-
-	/**
-	 * The feature id for the '<em><b>Order Adjustments</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX_RESPONSE__ORDER_ADJUSTMENTS = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
-
-	/**
-	 * The feature id for the '<em><b>Item Adjustments</b></em>' reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX_RESPONSE__ITEM_ADJUSTMENTS = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 1;
-
-	/**
-	 * The number of structural features of the '<em>Calc Tax Response</em>' class.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int CALC_TAX_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 2;
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.product.CalculateProductPrice <em>Calculate Product Price</em>}'.
@@ -787,6 +733,114 @@ public interface ProductPackage extends EPackage {
 	EReference getCalculateProductPriceResponse_OrderItemPriceInfos();
 
 	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.product.CalculatePurchasePrice <em>Calculate Purchase Price</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Calculate Purchase Price</em>'.
+	 * @see org.abchip.mimo.biz.service.product.CalculatePurchasePrice
+	 * @generated
+	 */
+	EClass getCalculatePurchasePrice();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.product.CalculatePurchasePrice#getAgreementId <em>Agreement Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Agreement Id</em>'.
+	 * @see org.abchip.mimo.biz.service.product.CalculatePurchasePrice#getAgreementId()
+	 * @see #getCalculatePurchasePrice()
+	 * @generated
+	 */
+	EAttribute getCalculatePurchasePrice_AgreementId();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.product.CalculatePurchasePrice#getCurrencyUomId <em>Currency Uom Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Currency Uom Id</em>'.
+	 * @see org.abchip.mimo.biz.service.product.CalculatePurchasePrice#getCurrencyUomId()
+	 * @see #getCalculatePurchasePrice()
+	 * @generated
+	 */
+	EAttribute getCalculatePurchasePrice_CurrencyUomId();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.product.CalculatePurchasePrice#getPartyId <em>Party Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Party Id</em>'.
+	 * @see org.abchip.mimo.biz.service.product.CalculatePurchasePrice#getPartyId()
+	 * @see #getCalculatePurchasePrice()
+	 * @generated
+	 */
+	EAttribute getCalculatePurchasePrice_PartyId();
+
+	/**
+	 * Returns the meta object for the containment reference '{@link org.abchip.mimo.biz.service.product.CalculatePurchasePrice#getProduct <em>Product</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference '<em>Product</em>'.
+	 * @see org.abchip.mimo.biz.service.product.CalculatePurchasePrice#getProduct()
+	 * @see #getCalculatePurchasePrice()
+	 * @generated
+	 */
+	EReference getCalculatePurchasePrice_Product();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.product.CalculatePurchasePrice#getQuantity <em>Quantity</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Quantity</em>'.
+	 * @see org.abchip.mimo.biz.service.product.CalculatePurchasePrice#getQuantity()
+	 * @see #getCalculatePurchasePrice()
+	 * @generated
+	 */
+	EAttribute getCalculatePurchasePrice_Quantity();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.product.CalculatePurchasePriceResponse <em>Calculate Purchase Price Response</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Calculate Purchase Price Response</em>'.
+	 * @see org.abchip.mimo.biz.service.product.CalculatePurchasePriceResponse
+	 * @generated
+	 */
+	EClass getCalculatePurchasePriceResponse();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.product.CalculatePurchasePriceResponse#isValidPriceFound <em>Valid Price Found</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Valid Price Found</em>'.
+	 * @see org.abchip.mimo.biz.service.product.CalculatePurchasePriceResponse#isValidPriceFound()
+	 * @see #getCalculatePurchasePriceResponse()
+	 * @generated
+	 */
+	EAttribute getCalculatePurchasePriceResponse_ValidPriceFound();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.product.CalculatePurchasePriceResponse#getPrice <em>Price</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Price</em>'.
+	 * @see org.abchip.mimo.biz.service.product.CalculatePurchasePriceResponse#getPrice()
+	 * @see #getCalculatePurchasePriceResponse()
+	 * @generated
+	 */
+	EAttribute getCalculatePurchasePriceResponse_Price();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link org.abchip.mimo.biz.service.product.CalculatePurchasePriceResponse#getOrderItemPriceInfos <em>Order Item Price Infos</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Order Item Price Infos</em>'.
+	 * @see org.abchip.mimo.biz.service.product.CalculatePurchasePriceResponse#getOrderItemPriceInfos()
+	 * @see #getCalculatePurchasePriceResponse()
+	 * @generated
+	 */
+	EReference getCalculatePurchasePriceResponse_OrderItemPriceInfos();
+
+	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.product.GetProductDefault <em>Get Product Default</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -816,180 +870,6 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getGetProductDefaultResponse_FacilityPostalAddress();
-
-	/**
-	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.product.CalcTax <em>Calc Tax</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Calc Tax</em>'.
-	 * @see org.abchip.mimo.biz.service.product.CalcTax
-	 * @generated
-	 */
-	EClass getCalcTax();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.product.CalcTax#getBillToPartyId <em>Bill To Party Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Bill To Party Id</em>'.
-	 * @see org.abchip.mimo.biz.service.product.CalcTax#getBillToPartyId()
-	 * @see #getCalcTax()
-	 * @generated
-	 */
-	EAttribute getCalcTax_BillToPartyId();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.product.CalcTax#getFacilityId <em>Facility Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Facility Id</em>'.
-	 * @see org.abchip.mimo.biz.service.product.CalcTax#getFacilityId()
-	 * @see #getCalcTax()
-	 * @generated
-	 */
-	EAttribute getCalcTax_FacilityId();
-
-	/**
-	 * Returns the meta object for the attribute list '{@link org.abchip.mimo.biz.service.product.CalcTax#getItemAmountList <em>Item Amount List</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Item Amount List</em>'.
-	 * @see org.abchip.mimo.biz.service.product.CalcTax#getItemAmountList()
-	 * @see #getCalcTax()
-	 * @generated
-	 */
-	EAttribute getCalcTax_ItemAmountList();
-
-	/**
-	 * Returns the meta object for the attribute list '{@link org.abchip.mimo.biz.service.product.CalcTax#getItemPriceList <em>Item Price List</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Item Price List</em>'.
-	 * @see org.abchip.mimo.biz.service.product.CalcTax#getItemPriceList()
-	 * @see #getCalcTax()
-	 * @generated
-	 */
-	EAttribute getCalcTax_ItemPriceList();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.abchip.mimo.biz.service.product.CalcTax#getItemProductList <em>Item Product List</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Item Product List</em>'.
-	 * @see org.abchip.mimo.biz.service.product.CalcTax#getItemProductList()
-	 * @see #getCalcTax()
-	 * @generated
-	 */
-	EReference getCalcTax_ItemProductList();
-
-	/**
-	 * Returns the meta object for the attribute list '{@link org.abchip.mimo.biz.service.product.CalcTax#getItemQuantityList <em>Item Quantity List</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Item Quantity List</em>'.
-	 * @see org.abchip.mimo.biz.service.product.CalcTax#getItemQuantityList()
-	 * @see #getCalcTax()
-	 * @generated
-	 */
-	EAttribute getCalcTax_ItemQuantityList();
-
-	/**
-	 * Returns the meta object for the attribute list '{@link org.abchip.mimo.biz.service.product.CalcTax#getItemShippingList <em>Item Shipping List</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Item Shipping List</em>'.
-	 * @see org.abchip.mimo.biz.service.product.CalcTax#getItemShippingList()
-	 * @see #getCalcTax()
-	 * @generated
-	 */
-	EAttribute getCalcTax_ItemShippingList();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.product.CalcTax#getOrderShippingAmount <em>Order Shipping Amount</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Order Shipping Amount</em>'.
-	 * @see org.abchip.mimo.biz.service.product.CalcTax#getOrderShippingAmount()
-	 * @see #getCalcTax()
-	 * @generated
-	 */
-	EAttribute getCalcTax_OrderShippingAmount();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.product.CalcTax#getPayToPartyId <em>Pay To Party Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Pay To Party Id</em>'.
-	 * @see org.abchip.mimo.biz.service.product.CalcTax#getPayToPartyId()
-	 * @see #getCalcTax()
-	 * @generated
-	 */
-	EAttribute getCalcTax_PayToPartyId();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.product.CalcTax#getProductStoreId <em>Product Store Id</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Product Store Id</em>'.
-	 * @see org.abchip.mimo.biz.service.product.CalcTax#getProductStoreId()
-	 * @see #getCalcTax()
-	 * @generated
-	 */
-	EAttribute getCalcTax_ProductStoreId();
-
-	/**
-	 * Returns the meta object for the containment reference '{@link org.abchip.mimo.biz.service.product.CalcTax#getShippingAddress <em>Shipping Address</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference '<em>Shipping Address</em>'.
-	 * @see org.abchip.mimo.biz.service.product.CalcTax#getShippingAddress()
-	 * @see #getCalcTax()
-	 * @generated
-	 */
-	EReference getCalcTax_ShippingAddress();
-
-	/**
-	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.product.CalcTax#getOrderPromotionsAmount <em>Order Promotions Amount</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Order Promotions Amount</em>'.
-	 * @see org.abchip.mimo.biz.service.product.CalcTax#getOrderPromotionsAmount()
-	 * @see #getCalcTax()
-	 * @generated
-	 */
-	EAttribute getCalcTax_OrderPromotionsAmount();
-
-	/**
-	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.product.CalcTaxResponse <em>Calc Tax Response</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Calc Tax Response</em>'.
-	 * @see org.abchip.mimo.biz.service.product.CalcTaxResponse
-	 * @generated
-	 */
-	EClass getCalcTaxResponse();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link org.abchip.mimo.biz.service.product.CalcTaxResponse#getOrderAdjustments <em>Order Adjustments</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Order Adjustments</em>'.
-	 * @see org.abchip.mimo.biz.service.product.CalcTaxResponse#getOrderAdjustments()
-	 * @see #getCalcTaxResponse()
-	 * @generated
-	 */
-	EReference getCalcTaxResponse_OrderAdjustments();
-
-	/**
-	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.service.product.CalcTaxResponse#getItemAdjustments <em>Item Adjustments</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference list '<em>Item Adjustments</em>'.
-	 * @see org.abchip.mimo.biz.service.product.CalcTaxResponse#getItemAdjustments()
-	 * @see #getCalcTaxResponse()
-	 * @generated
-	 */
-	EReference getCalcTaxResponse_ItemAdjustments();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.product.CalcTaxForDisplay <em>Calc Tax For Display</em>}'.
@@ -1201,6 +1081,90 @@ public interface ProductPackage extends EPackage {
 		EReference CALCULATE_PRODUCT_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS = eINSTANCE.getCalculateProductPriceResponse_OrderItemPriceInfos();
 
 		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.product.impl.CalculatePurchasePriceImpl <em>Calculate Purchase Price</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.product.impl.CalculatePurchasePriceImpl
+		 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getCalculatePurchasePrice()
+		 * @generated
+		 */
+		EClass CALCULATE_PURCHASE_PRICE = eINSTANCE.getCalculatePurchasePrice();
+
+		/**
+		 * The meta object literal for the '<em><b>Agreement Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CALCULATE_PURCHASE_PRICE__AGREEMENT_ID = eINSTANCE.getCalculatePurchasePrice_AgreementId();
+
+		/**
+		 * The meta object literal for the '<em><b>Currency Uom Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CALCULATE_PURCHASE_PRICE__CURRENCY_UOM_ID = eINSTANCE.getCalculatePurchasePrice_CurrencyUomId();
+
+		/**
+		 * The meta object literal for the '<em><b>Party Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CALCULATE_PURCHASE_PRICE__PARTY_ID = eINSTANCE.getCalculatePurchasePrice_PartyId();
+
+		/**
+		 * The meta object literal for the '<em><b>Product</b></em>' containment reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CALCULATE_PURCHASE_PRICE__PRODUCT = eINSTANCE.getCalculatePurchasePrice_Product();
+
+		/**
+		 * The meta object literal for the '<em><b>Quantity</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CALCULATE_PURCHASE_PRICE__QUANTITY = eINSTANCE.getCalculatePurchasePrice_Quantity();
+
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.product.impl.CalculatePurchasePriceResponseImpl <em>Calculate Purchase Price Response</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.product.impl.CalculatePurchasePriceResponseImpl
+		 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getCalculatePurchasePriceResponse()
+		 * @generated
+		 */
+		EClass CALCULATE_PURCHASE_PRICE_RESPONSE = eINSTANCE.getCalculatePurchasePriceResponse();
+
+		/**
+		 * The meta object literal for the '<em><b>Valid Price Found</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CALCULATE_PURCHASE_PRICE_RESPONSE__VALID_PRICE_FOUND = eINSTANCE.getCalculatePurchasePriceResponse_ValidPriceFound();
+
+		/**
+		 * The meta object literal for the '<em><b>Price</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CALCULATE_PURCHASE_PRICE_RESPONSE__PRICE = eINSTANCE.getCalculatePurchasePriceResponse_Price();
+
+		/**
+		 * The meta object literal for the '<em><b>Order Item Price Infos</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CALCULATE_PURCHASE_PRICE_RESPONSE__ORDER_ITEM_PRICE_INFOS = eINSTANCE.getCalculatePurchasePriceResponse_OrderItemPriceInfos();
+
+		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.product.impl.GetProductDefaultImpl <em>Get Product Default</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1227,138 +1191,6 @@ public interface ProductPackage extends EPackage {
 		 * @generated
 		 */
 		EReference GET_PRODUCT_DEFAULT_RESPONSE__FACILITY_POSTAL_ADDRESS = eINSTANCE.getGetProductDefaultResponse_FacilityPostalAddress();
-
-		/**
-		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.product.impl.CalcTaxImpl <em>Calc Tax</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.abchip.mimo.biz.service.product.impl.CalcTaxImpl
-		 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getCalcTax()
-		 * @generated
-		 */
-		EClass CALC_TAX = eINSTANCE.getCalcTax();
-
-		/**
-		 * The meta object literal for the '<em><b>Bill To Party Id</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute CALC_TAX__BILL_TO_PARTY_ID = eINSTANCE.getCalcTax_BillToPartyId();
-
-		/**
-		 * The meta object literal for the '<em><b>Facility Id</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute CALC_TAX__FACILITY_ID = eINSTANCE.getCalcTax_FacilityId();
-
-		/**
-		 * The meta object literal for the '<em><b>Item Amount List</b></em>' attribute list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute CALC_TAX__ITEM_AMOUNT_LIST = eINSTANCE.getCalcTax_ItemAmountList();
-
-		/**
-		 * The meta object literal for the '<em><b>Item Price List</b></em>' attribute list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute CALC_TAX__ITEM_PRICE_LIST = eINSTANCE.getCalcTax_ItemPriceList();
-
-		/**
-		 * The meta object literal for the '<em><b>Item Product List</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CALC_TAX__ITEM_PRODUCT_LIST = eINSTANCE.getCalcTax_ItemProductList();
-
-		/**
-		 * The meta object literal for the '<em><b>Item Quantity List</b></em>' attribute list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute CALC_TAX__ITEM_QUANTITY_LIST = eINSTANCE.getCalcTax_ItemQuantityList();
-
-		/**
-		 * The meta object literal for the '<em><b>Item Shipping List</b></em>' attribute list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute CALC_TAX__ITEM_SHIPPING_LIST = eINSTANCE.getCalcTax_ItemShippingList();
-
-		/**
-		 * The meta object literal for the '<em><b>Order Shipping Amount</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute CALC_TAX__ORDER_SHIPPING_AMOUNT = eINSTANCE.getCalcTax_OrderShippingAmount();
-
-		/**
-		 * The meta object literal for the '<em><b>Pay To Party Id</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute CALC_TAX__PAY_TO_PARTY_ID = eINSTANCE.getCalcTax_PayToPartyId();
-
-		/**
-		 * The meta object literal for the '<em><b>Product Store Id</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute CALC_TAX__PRODUCT_STORE_ID = eINSTANCE.getCalcTax_ProductStoreId();
-
-		/**
-		 * The meta object literal for the '<em><b>Shipping Address</b></em>' containment reference feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CALC_TAX__SHIPPING_ADDRESS = eINSTANCE.getCalcTax_ShippingAddress();
-
-		/**
-		 * The meta object literal for the '<em><b>Order Promotions Amount</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute CALC_TAX__ORDER_PROMOTIONS_AMOUNT = eINSTANCE.getCalcTax_OrderPromotionsAmount();
-
-		/**
-		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.product.impl.CalcTaxResponseImpl <em>Calc Tax Response</em>}' class.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @see org.abchip.mimo.biz.service.product.impl.CalcTaxResponseImpl
-		 * @see org.abchip.mimo.biz.service.product.impl.ProductPackageImpl#getCalcTaxResponse()
-		 * @generated
-		 */
-		EClass CALC_TAX_RESPONSE = eINSTANCE.getCalcTaxResponse();
-
-		/**
-		 * The meta object literal for the '<em><b>Order Adjustments</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CALC_TAX_RESPONSE__ORDER_ADJUSTMENTS = eINSTANCE.getCalcTaxResponse_OrderAdjustments();
-
-		/**
-		 * The meta object literal for the '<em><b>Item Adjustments</b></em>' reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference CALC_TAX_RESPONSE__ITEM_ADJUSTMENTS = eINSTANCE.getCalcTaxResponse_ItemAdjustments();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.product.impl.CalcTaxForDisplayImpl <em>Calc Tax For Display</em>}' class.

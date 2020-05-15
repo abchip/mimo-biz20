@@ -64,10 +64,10 @@ public class ProductFactoryImpl extends EFactoryImpl implements ProductFactory {
 			case ProductPackage.CALC_TAX_FOR_DISPLAY_RESPONSE: return (EObject)createCalcTaxForDisplayResponse();
 			case ProductPackage.CALCULATE_PRODUCT_PRICE: return (EObject)createCalculateProductPrice();
 			case ProductPackage.CALCULATE_PRODUCT_PRICE_RESPONSE: return (EObject)createCalculateProductPriceResponse();
+			case ProductPackage.CALCULATE_PURCHASE_PRICE: return (EObject)createCalculatePurchasePrice();
+			case ProductPackage.CALCULATE_PURCHASE_PRICE_RESPONSE: return (EObject)createCalculatePurchasePriceResponse();
 			case ProductPackage.GET_PRODUCT_DEFAULT: return (EObject)createGetProductDefault();
 			case ProductPackage.GET_PRODUCT_DEFAULT_RESPONSE: return (EObject)createGetProductDefaultResponse();
-			case ProductPackage.CALC_TAX: return (EObject)createCalcTax();
-			case ProductPackage.CALC_TAX_RESPONSE: return (EObject)createCalcTaxResponse();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -101,6 +101,28 @@ public class ProductFactoryImpl extends EFactoryImpl implements ProductFactory {
 	 * @generated
 	 */
 	@Override
+	public CalculatePurchasePrice createCalculatePurchasePrice() {
+		CalculatePurchasePriceImpl calculatePurchasePrice = new CalculatePurchasePriceImpl();
+		return calculatePurchasePrice;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CalculatePurchasePriceResponse createCalculatePurchasePriceResponse() {
+		CalculatePurchasePriceResponseImpl calculatePurchasePriceResponse = new CalculatePurchasePriceResponseImpl();
+		return calculatePurchasePriceResponse;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public GetProductDefault createGetProductDefault() {
 		GetProductDefaultImpl getProductDefault = new GetProductDefaultImpl();
 		return getProductDefault;
@@ -115,28 +137,6 @@ public class ProductFactoryImpl extends EFactoryImpl implements ProductFactory {
 	public GetProductDefaultResponse createGetProductDefaultResponse() {
 		GetProductDefaultResponseImpl getProductDefaultResponse = new GetProductDefaultResponseImpl();
 		return getProductDefaultResponse;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CalcTax createCalcTax() {
-		CalcTaxImpl calcTax = new CalcTaxImpl();
-		return calcTax;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public CalcTaxResponse createCalcTaxResponse() {
-		CalcTaxResponseImpl calcTaxResponse = new CalcTaxResponseImpl();
-		return calcTaxResponse;
 	}
 
 	/**
