@@ -52,12 +52,6 @@ public class StressTestCommands extends BaseTestCommands {
 		}
 	}
 
-	public void _stressTestSalesOrder(CommandInterpreter interpreter) throws Exception {
-		try (ContextProvider context = login(interpreter)) {
-			stressTestSalesOrder(interpreter, context.get());
-		}
-	}
-
 	public void _stressTest(CommandInterpreter interpreter) throws Exception {
 		try (ContextProvider context = login(interpreter)) {
 			stressTestSalesOrder(interpreter, context.get());
@@ -65,6 +59,12 @@ public class StressTestCommands extends BaseTestCommands {
 			stressTestPurchaseOrder(interpreter, context.get());
 			stressTestPurchaseInvoice(interpreter, context.get());
 			stressTestAgreement(interpreter, context.get());
+		}
+	}
+
+	public void _stressTestSalesOrder(CommandInterpreter interpreter) throws Exception {
+		try (ContextProvider context = login(interpreter)) {
+			stressTestSalesOrder(interpreter, context.get());
 		}
 	}
 

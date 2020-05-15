@@ -18,6 +18,7 @@ import org.abchip.mimo.biz.asf.plugins.ContextUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityContainer;
 import org.abchip.mimo.entity.EntityIdentifiable;
+import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.util.Logs;
@@ -37,11 +38,20 @@ public class SeedServices {
 	public static Map<String, Object> convertSeeds(DispatchContext dctx, Map<String, Object> params) {
 
 		String filterReaders = (String) params.get("readers");
-
+		
 		Delegator delegator = dctx.getDelegator();
 
 		try {
 			Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
+
+			// remove containers
+			ResourceWriter<EntityContainer> entityWriter = context.getResourceManager().getResourceWriter(EntityContainer.class);
+			try (EntityIterator<EntityContainer> conatinerIterator = entityWriter.find()) {
+				while (conatinerIterator.hasNext()) {
+					entityWriter.delete(conatinerIterator.next());
+				}
+			}
+			
 			exportReaderFiltered(context, delegator, filterReaders);
 		} catch (Exception e) {
 			return ServiceUtil.returnError(e.getMessage());
@@ -89,10 +99,12 @@ public class SeedServices {
 		ResourceWriter<EntityContainer> entityWriter = context.getResourceManager().getResourceWriter(EntityContainer.class);
 		EntityContainer container = entityWriter.make();
 		containerName = counterPad + "_" + folderName + "_" + containerName.substring(0, containerName.lastIndexOf('.'));
+		LOGGER.info("Container name: " + containerName);
 		container.setName(containerName);
 
 		for (GenericValue genericValue : listEntity) {
-
+			LOGGER.info("\t Genericvalue: " + genericValue.getEntityName());
+			
 			EntityIdentifiable entityIdentifiable = context.getResourceSet().getResource(genericValue.getEntityName()).make();
 			try {
 				EntityUtils.completeEntity(entityIdentifiable, genericValue);
