@@ -18,9 +18,7 @@ import org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemType;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceRole;
-import org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceType;
-import org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference;
 import org.abchip.mimo.biz.model.accounting.payment.Payment;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethod;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType;
@@ -33,6 +31,8 @@ import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
+import org.abchip.mimo.biz.service.accounting.Addtax;
+import org.abchip.mimo.biz.service.accounting.AddtaxResponse;
 import org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDef;
 import org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDefResponse;
 import org.abchip.mimo.biz.service.common.GetCommonDefault;
@@ -63,7 +63,6 @@ public class CreateSalesInvoice implements Callable<Long> {
 
 	Party party;
 	List<Product> products;
-	long i = 1;
 
 	public CreateSalesInvoice(Context context, Party party, List<Product> products) {
 		this.context = context;
@@ -93,14 +92,8 @@ public class CreateSalesInvoice implements Callable<Long> {
 
 		// Invoice Header
 		ResourceWriter<Invoice> invoiceWriter = context.getResourceManager().getResourceWriter(Invoice.class);
-		PartyAcctgPreference partyAcctgPreference = partyDefault.getAccountingPreference();
 
-		Invoice invoice = invoiceWriter.make(true);
-		String invoiceId = invoice.getInvoiceId();
-		if (partyAcctgPreference != null && partyAcctgPreference.getInvoiceIdPrefix() != null) {
-			invoice.setInvoiceId(partyAcctgPreference.getInvoiceIdPrefix() + invoiceId);
-		}
-
+		Invoice invoice = invoiceWriter.make();
 		invoice.setInvoiceTypeId(context.createProxy(InvoiceType.class, "SALES_INVOICE"));
 		invoice.setInvoiceDate(new Date());
 		invoice.setStatusId(context.createProxy(StatusItem.class, "INVOICE_IN_PROCESS"));
@@ -109,14 +102,6 @@ public class CreateSalesInvoice implements Callable<Long> {
 		invoice.setPartyIdFrom(company);
 		invoice.setDescription("Sales invoice test for party " + party.getID());
 		invoiceWriter.create(invoice);
-
-		// InvoiceStatus
-		ResourceWriter<InvoiceStatus> invoiceStatusWriter = context.getResourceManager().getResourceWriter(InvoiceStatus.class);
-		InvoiceStatus invoiceStatus = invoiceStatusWriter.make();
-		invoiceStatus.setStatusId(context.createProxy(StatusItem.class, "INVOICE_IN_PROCESS"));
-		invoiceStatus.setInvoiceId(invoice);
-		invoiceStatus.setStatusDate(new Date());
-		invoiceStatusWriter.create(invoiceStatus);
 
 		// InvoiceContactMech
 		ResourceWriter<InvoiceContactMech> invoiceContactMechWriter = context.getResourceManager().getResourceWriter(InvoiceContactMech.class);
@@ -163,6 +148,14 @@ public class CreateSalesInvoice implements Callable<Long> {
 			createInvoiceItem(serviceManager, invoice, 1, product);
 		}
 
+		// Add tax
+		Addtax addtax = serviceManager.prepare(Addtax.class);
+		addtax.setInvoiceId(invoice.getID());
+		AddtaxResponse addTaxresponse = serviceManager.execute(addtax);
+		if (addTaxresponse.onError()) {
+			LOGGER.error(addTaxresponse.getErrorMessage());
+		}
+		
 		// Payment
 		createPaymentFromInvoice(serviceManager, invoice);
 	}
@@ -172,7 +165,6 @@ public class CreateSalesInvoice implements Callable<Long> {
 
 		InvoiceItem invoiceItem = invoiceItemWriter.make();
 		invoiceItem.setInvoiceId(invoice);
-		invoiceItem.setInvoiceItemSeqId(StressTestUtils.formatPaddedNumber(i++, 5));
 		invoiceItem.setInvoiceItemTypeId(context.createProxy(InvoiceItemType.class, "INV_DPROD_ITEM"));
 		invoiceItem.setProductId(product);
 		invoiceItem.setDescription(product.getProductName());
@@ -196,7 +188,7 @@ public class CreateSalesInvoice implements Callable<Long> {
 		invoiceItemWriter.create(invoiceItem);
 
 		// check taxable
-		createTaxableRowItem(serviceManager, invoiceItem);
+//		createTaxableRowItem(serviceManager, invoiceItem);
 	}
 
 	private String createPaymentFromInvoice(ServiceManager serviceManager, Invoice invoice) throws ResourceException, ServiceException {
@@ -207,7 +199,7 @@ public class CreateSalesInvoice implements Callable<Long> {
 		}
 
 		ResourceWriter<Payment> paymentWriter = context.getResourceManager().getResourceWriter(Payment.class);
-		Payment payment = paymentWriter.make(true);
+		Payment payment = paymentWriter.make();
 		payment.setAmount(invoice.getTotal());
 		payment.setPartyIdTo(invoice.getPartyIdFrom());
 		payment.setPartyIdFrom(invoice.getPartyId());
@@ -227,10 +219,10 @@ public class CreateSalesInvoice implements Callable<Long> {
 			LOGGER.error(response.getErrorMessage());
 			return payment.getID();
 		}
-
 		return payment.getID();
 	}
 
+	@SuppressWarnings("unused")
 	private void createTaxableRowItem(ServiceManager serviceManager, InvoiceItem invoiceItemParent) throws ResourceException, ServiceException {
 		ResourceWriter<InvoiceItem> invoiceItemWriter = context.getResourceManager().getResourceWriter(InvoiceItem.class);
 
@@ -273,7 +265,6 @@ public class CreateSalesInvoice implements Callable<Long> {
 
 		InvoiceItem invoiceItem = invoiceItemWriter.make();
 		invoiceItem.setInvoiceId(invoiceItemParent.getInvoiceId());
-		invoiceItem.setInvoiceItemSeqId(StressTestUtils.formatPaddedNumber(i++, 5));
 
 		invoiceItem.setInvoiceItemTypeId(context.createProxy(InvoiceItemType.class, "ITM_SALES_TAX"));
 
