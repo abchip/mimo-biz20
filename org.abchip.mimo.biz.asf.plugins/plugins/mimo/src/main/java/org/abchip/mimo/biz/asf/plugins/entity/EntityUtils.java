@@ -15,6 +15,7 @@ import java.util.List;
 import java.util.Map.Entry;
 
 import org.abchip.mimo.data.DataType;
+import org.abchip.mimo.data.EnumDef;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
@@ -26,6 +27,8 @@ import org.apache.ofbiz.entity.GenericValue;
 import org.apache.ofbiz.entity.model.ModelField;
 import org.apache.ofbiz.entity.model.ModelFieldType;
 import org.apache.ofbiz.entity.model.ModelFieldTypeReader;
+import org.eclipse.emf.common.util.Enumerator;
+import org.eclipse.emf.ecore.util.EcoreUtil;
 
 public class EntityUtils {
 
@@ -78,6 +81,8 @@ public class EntityUtils {
 				return "Y";
 			else
 				return "N";
+		} else if (value instanceof Enumerator && String.class.getSimpleName().equals(javaType)) {
+			return ((Enumerator) value).getLiteral();
 		} else
 			return ObjectType.simpleTypeConvert(value, javaType, null, null);
 	}
@@ -126,6 +131,9 @@ public class EntityUtils {
 			else
 				return false;
 
+		} else if (bizValue instanceof String && slot.getDataType().equals(DataType.ENUM)) {
+			EnumDef<?> enumDef = (EnumDef<?>) slot.getDataDef();
+			return EcoreUtil.createFromString(enumDef.getEnum(), bizValue.toString());
 		} else
 			return ObjectType.simpleTypeConvert(bizValue, slot.getDataDef().getJavaClass().getName(), null, null);
 	}
