@@ -17,20 +17,19 @@ import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemType;
-import org.abchip.mimo.biz.model.accounting.invoice.InvoiceStatus;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceType;
-import org.abchip.mimo.biz.model.accounting.ledger.PartyAcctgPreference;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.party.contact.ContactMechPurposeType;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.product.Product;
+import org.abchip.mimo.biz.service.accounting.Addtax;
+import org.abchip.mimo.biz.service.accounting.AddtaxResponse;
 import org.abchip.mimo.biz.service.common.GetCommonDefault;
 import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
 import org.abchip.mimo.biz.service.party.GetPartyDefault;
 import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
 import org.abchip.mimo.biz.service.product.CalculateProductPrice;
 import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
-import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceWriter;
@@ -77,12 +76,7 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 
 		// Invoice Header
 		ResourceWriter<Invoice> invoiceWriter = context.getResourceManager().getResourceWriter(Invoice.class);
-		PartyAcctgPreference partyAcctgPreference = partyDefault.getAccountingPreference();
-		Invoice invoice = invoiceWriter.make(true);
-		String invoiceId = invoice.getInvoiceId();
-		if (partyAcctgPreference != null && partyAcctgPreference.getInvoiceIdPrefix() != null) {
-			invoice.setInvoiceId(partyAcctgPreference.getInvoiceIdPrefix() + invoiceId);
-		}
+		Invoice invoice = invoiceWriter.make();
 		invoice.setInvoiceTypeId(context.createProxy(InvoiceType.class, "PURCHASE_INVOICE"));
 		invoice.setInvoiceDate(new Date());
 		invoice.setStatusId(context.createProxy(StatusItem.class, "INVOICE_IN_PROCESS"));
@@ -91,14 +85,6 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 		invoice.setPartyIdFrom(party);
 		invoice.setDescription("Purchase invoice test for party " + party.getID());
 		invoiceWriter.create(invoice);
-
-		// InvoiceStatus
-		ResourceWriter<InvoiceStatus> invoiceStatusWriter = context.getResourceManager().getResourceWriter(InvoiceStatus.class);
-		InvoiceStatus invoiceStatus = invoiceStatusWriter.make();
-		invoiceStatus.setStatusId(context.createProxy(StatusItem.class, "INVOICE_IN_PROCESS"));
-		invoiceStatus.setInvoiceId(invoice);
-		invoiceStatus.setStatusDate(new Date());
-		invoiceStatusWriter.create(invoiceStatus);
 
 		// InvoiceContactMech
 		ResourceWriter<InvoiceContactMech> invoiceContactMechWriter = context.getResourceManager().getResourceWriter(InvoiceContactMech.class);
@@ -109,20 +95,26 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 		invoiceContactMechWriter.create(invoiceContactMech);
 
 		// Items
-		long i = 1;
 		for (Product product : this.products) {
-			createInvoiceItem(serviceManager, invoice, StressTestUtils.formatPaddedNumber(i++, 5), 1, product);
+			createInvoiceItem(serviceManager, invoice, 1, product);
 		}
+		
+		// Add tax
+		Addtax addtax = serviceManager.prepare(Addtax.class);
+		addtax.setInvoiceId(invoice.getID());
+		AddtaxResponse addTaxresponse = serviceManager.execute(addtax);
+		if (addTaxresponse.onError()) {
+			LOGGER.error(addTaxresponse.getErrorMessage());
+		}
+
 	}
 
-	private void createInvoiceItem(ServiceManager serviceManager, Invoice invoice, String itemSeqiD, int quantity, Product product) throws ResourceException, ServiceException {
+	private void createInvoiceItem(ServiceManager serviceManager, Invoice invoice, int quantity, Product product) throws ResourceException, ServiceException {
 		ResourceWriter<InvoiceItem> invoiceItemWriter = context.getResourceManager().getResourceWriter(InvoiceItem.class);
 
 		InvoiceItem invoiceItem = invoiceItemWriter.make();
 		invoiceItem.setInvoiceId(invoice);
-		invoiceItem.setInvoiceItemSeqId(itemSeqiD);
 		invoiceItem.setInvoiceItemTypeId(context.createProxy(InvoiceItemType.class, "INV_DPROD_ITEM"));
-
 		invoiceItem.setProductId(product);
 		invoiceItem.setDescription(product.getProductName());
 		invoiceItem.setQuantity(new BigDecimal(quantity));
@@ -143,7 +135,5 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 			LOGGER.error("Prezzo non valido per articolo " + product.getID());
 
 		invoiceItemWriter.create(invoiceItem);
-
-		// TODO service calcTaxForDisplay to add new row tax BizTestCommand
 	}
 }

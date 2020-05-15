@@ -23,14 +23,11 @@ import org.abchip.mimo.biz.model.accounting.payment.Payment;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethod;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentType;
-import org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityRateProduct;
-import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.party.contact.ContactMechPurposeType;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.abchip.mimo.biz.model.product.product.Product;
-import org.abchip.mimo.biz.model.product.store.ProductStore;
 import org.abchip.mimo.biz.service.accounting.Addtax;
 import org.abchip.mimo.biz.service.accounting.AddtaxResponse;
 import org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDef;
@@ -39,15 +36,10 @@ import org.abchip.mimo.biz.service.common.GetCommonDefault;
 import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
 import org.abchip.mimo.biz.service.party.GetPartyDefault;
 import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
-import org.abchip.mimo.biz.service.product.CalcTaxForDisplay;
-import org.abchip.mimo.biz.service.product.CalcTaxForDisplayResponse;
 import org.abchip.mimo.biz.service.product.CalculateProductPrice;
 import org.abchip.mimo.biz.service.product.CalculateProductPriceResponse;
-import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
-import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceManager;
@@ -186,9 +178,6 @@ public class CreateSalesInvoice implements Callable<Long> {
 			LOGGER.error("Prezzo non valido per articolo " + product.getID());
 
 		invoiceItemWriter.create(invoiceItem);
-
-		// check taxable
-//		createTaxableRowItem(serviceManager, invoiceItem);
 	}
 
 	private String createPaymentFromInvoice(ServiceManager serviceManager, Invoice invoice) throws ResourceException, ServiceException {
@@ -220,70 +209,5 @@ public class CreateSalesInvoice implements Callable<Long> {
 			return payment.getID();
 		}
 		return payment.getID();
-	}
-
-	@SuppressWarnings("unused")
-	private void createTaxableRowItem(ServiceManager serviceManager, InvoiceItem invoiceItemParent) throws ResourceException, ServiceException {
-		ResourceWriter<InvoiceItem> invoiceItemWriter = context.getResourceManager().getResourceWriter(InvoiceItem.class);
-
-		String saveInvoiceItemSeqId = invoiceItemParent.getParentInvoiceItemSeqId();
-		ProductStore productStore = StressTestUtils.getProductStore(context);
-
-		String filterTaxAuth = "taxAuthPartyId = '" + productStore.getVatTaxAuthPartyId() + "' AND taxAuthGeoId = '" + productStore.getVatTaxAuthGeoId() + "'";
-
-		ResourceReader<TaxAuthorityRateProduct> taxAuthorityRateProductReader = context.getResourceManager().getResourceReader(TaxAuthorityRateProduct.class);
-		String taxAuthPartyId = "";
-		String taxAuthGeoId = "";
-		String taxAuthorityRateSeqId = "";
-
-		try (EntityIterator<TaxAuthorityRateProduct> taxAuthorityRateProducts = taxAuthorityRateProductReader.find(filterTaxAuth, null, null, 1)) {
-			for (TaxAuthorityRateProduct taxAuthorityRateProduct : taxAuthorityRateProducts) {
-				taxAuthPartyId = taxAuthorityRateProduct.getTaxAuthPartyId();
-				taxAuthGeoId = taxAuthorityRateProduct.getTaxAuthGeoId();
-				taxAuthorityRateSeqId = taxAuthorityRateProduct.getTaxAuthorityRateSeqId();
-			}
-		}
-
-		if (taxAuthPartyId == null || taxAuthPartyId.isEmpty())
-			taxAuthPartyId = "ITA_ADE";
-
-		if (taxAuthGeoId == null || taxAuthGeoId.isEmpty())
-			taxAuthGeoId = commonDefault.getCountryGeo().getID();
-
-		CalcTaxForDisplay calcTaxForDisplay = serviceManager.prepare(CalcTaxForDisplay.class);
-		calcTaxForDisplay.setBasePrice(invoiceItemParent.getAmount());
-		calcTaxForDisplay.setProductId(invoiceItemParent.getProductId().getID());
-		calcTaxForDisplay.setProductStoreId(productStore.getID());
-		CalcTaxForDisplayResponse taxForDisplay = serviceManager.execute(calcTaxForDisplay);
-		if (taxForDisplay.onError()) {
-			LOGGER.error(taxForDisplay.getErrorMessage());
-			return;
-		}
-
-		Party taxAutPartyId = context.createProxy(Party.class, taxAuthPartyId);
-		Geo taxAutGeo = context.createProxy(Geo.class, taxAuthGeoId);
-
-		InvoiceItem invoiceItem = invoiceItemWriter.make();
-		invoiceItem.setInvoiceId(invoiceItemParent.getInvoiceId());
-
-		invoiceItem.setInvoiceItemTypeId(context.createProxy(InvoiceItemType.class, "ITM_SALES_TAX"));
-
-		invoiceItem.setProductId(invoiceItemParent.getProductId());
-
-		invoiceItem.setParentInvoiceId(invoiceItemParent.getID());
-		invoiceItem.setParentInvoiceItemSeqId(saveInvoiceItemSeqId);
-
-		invoiceItem.setQuantity(invoiceItemParent.getQuantity());
-		invoiceItem.setAmount((taxForDisplay.getTaxTotal()));
-
-		// TODO verify
-		invoiceItem.setTaxAuthPartyId(taxAutPartyId);
-		invoiceItem.setTaxAuthGeoId(taxAutGeo);
-		if (!taxAuthorityRateSeqId.isEmpty()) {
-			TaxAuthorityRateProduct taxAuthorityRateProduct = context.createProxy(TaxAuthorityRateProduct.class, taxAuthorityRateSeqId);
-			invoiceItem.setTaxAuthorityRateSeqId(taxAuthorityRateProduct);
-		}
-
-		invoiceItemWriter.create(invoiceItem);
 	}
 }
