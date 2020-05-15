@@ -39,6 +39,10 @@
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//accounting/UpdatePaymentApplicationDef/paymentId"/>
       </genClasses>
       <genClasses ecoreClass="biz-service.ecore#//accounting/UpdatePaymentApplicationDefResponse"/>
+      <genClasses ecoreClass="biz-service.ecore#//accounting/Addtax">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//accounting/Addtax/invoiceId"/>
+      </genClasses>
+      <genClasses ecoreClass="biz-service.ecore#//accounting/AddtaxResponse"/>
     </nestedGenPackages>
     <nestedGenPackages prefix="Catalina" basePackage="org.abchip.mimo.biz.service"
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//catalina"/>

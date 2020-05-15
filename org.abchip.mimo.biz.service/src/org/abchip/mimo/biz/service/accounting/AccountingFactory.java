@@ -63,6 +63,24 @@ public interface AccountingFactory extends EFactory {
 	UpdatePaymentApplicationDefResponse createUpdatePaymentApplicationDefResponse();
 
 	/**
+	 * Returns a new object of class '<em>Addtax</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Addtax</em>'.
+	 * @generated
+	 */
+	Addtax createAddtax();
+
+	/**
+	 * Returns a new object of class '<em>Addtax Response</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Addtax Response</em>'.
+	 * @generated
+	 */
+	AddtaxResponse createAddtaxResponse();
+
+	/**
 	 * Returns a new object of class '<em>Invoice Get Total</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

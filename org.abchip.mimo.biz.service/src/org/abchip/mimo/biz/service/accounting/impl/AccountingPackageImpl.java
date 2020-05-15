@@ -127,6 +127,8 @@ import org.abchip.mimo.biz.model.workeffort.timesheet.TimesheetPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.service.accounting.AccountingFactory;
 import org.abchip.mimo.biz.service.accounting.AccountingPackage;
+import org.abchip.mimo.biz.service.accounting.Addtax;
+import org.abchip.mimo.biz.service.accounting.AddtaxResponse;
 import org.abchip.mimo.biz.service.accounting.Invoice_GetTotal;
 import org.abchip.mimo.biz.service.accounting.SetInvoiceStatus;
 import org.abchip.mimo.biz.service.accounting.SetInvoiceStatusResponse;
@@ -182,6 +184,20 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * @generated
 	 */
 	private EClass updatePaymentApplicationDefResponseEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass addtaxEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass addtaxResponseEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -436,6 +452,36 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * @generated
 	 */
 	@Override
+	public EClass getAddtax() {
+		return addtaxEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getAddtax_InvoiceId() {
+		return (EAttribute)addtaxEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getAddtaxResponse() {
+		return addtaxResponseEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getInvoice_GetTotal() {
 		return invoice_GetTotalEClass;
 	}
@@ -572,6 +618,11 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 		createEAttribute(updatePaymentApplicationDefEClass, UPDATE_PAYMENT_APPLICATION_DEF__PAYMENT_ID);
 
 		updatePaymentApplicationDefResponseEClass = createEClass(UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE);
+
+		addtaxEClass = createEClass(ADDTAX);
+		createEAttribute(addtaxEClass, ADDTAX__INVOICE_ID);
+
+		addtaxResponseEClass = createEClass(ADDTAX_RESPONSE);
 	}
 
 	/**
@@ -627,6 +678,11 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 		g1.getETypeArguments().add(g2);
 		updatePaymentApplicationDefEClass.getEGenericSuperTypes().add(g1);
 		updatePaymentApplicationDefResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
+		g1 = createEGenericType(theServicePackage.getServiceRequest());
+		g2 = createEGenericType(this.getAddtaxResponse());
+		g1.getETypeArguments().add(g2);
+		addtaxEClass.getEGenericSuperTypes().add(g1);
+		addtaxResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(invoice_GetTotalEClass, Invoice_GetTotal.class, "Invoice_GetTotal", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -652,6 +708,11 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 		initEAttribute(getUpdatePaymentApplicationDef_PaymentId(), ecorePackage.getEString(), "paymentId", null, 1, 1, UpdatePaymentApplicationDef.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(updatePaymentApplicationDefResponseEClass, UpdatePaymentApplicationDefResponse.class, "UpdatePaymentApplicationDefResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(addtaxEClass, Addtax.class, "Addtax", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getAddtax_InvoiceId(), ecorePackage.getEString(), "invoiceId", null, 1, 1, Addtax.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(addtaxResponseEClass, AddtaxResponse.class, "AddtaxResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		// Create resource
 		createResource(eNS_URI);

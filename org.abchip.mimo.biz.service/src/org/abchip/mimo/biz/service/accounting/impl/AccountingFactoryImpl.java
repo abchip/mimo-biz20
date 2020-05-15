@@ -68,6 +68,8 @@ public class AccountingFactoryImpl extends EFactoryImpl implements AccountingFac
 			case AccountingPackage.SET_PAYMENT_STATUS_RESPONSE: return (EObject)createSetPaymentStatusResponse();
 			case AccountingPackage.UPDATE_PAYMENT_APPLICATION_DEF: return (EObject)createUpdatePaymentApplicationDef();
 			case AccountingPackage.UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE: return (EObject)createUpdatePaymentApplicationDefResponse();
+			case AccountingPackage.ADDTAX: return (EObject)createAddtax();
+			case AccountingPackage.ADDTAX_RESPONSE: return (EObject)createAddtaxResponse();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -115,6 +117,28 @@ public class AccountingFactoryImpl extends EFactoryImpl implements AccountingFac
 	public UpdatePaymentApplicationDefResponse createUpdatePaymentApplicationDefResponse() {
 		UpdatePaymentApplicationDefResponseImpl updatePaymentApplicationDefResponse = new UpdatePaymentApplicationDefResponseImpl();
 		return updatePaymentApplicationDefResponse;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public Addtax createAddtax() {
+		AddtaxImpl addtax = new AddtaxImpl();
+		return addtax;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public AddtaxResponse createAddtaxResponse() {
+		AddtaxResponseImpl addtaxResponse = new AddtaxResponseImpl();
+		return addtaxResponse;
 	}
 
 	/**

@@ -491,6 +491,107 @@ public interface AccountingPackage extends EPackage {
 	int UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
 
 	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.accounting.impl.AddtaxImpl <em>Addtax</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.accounting.impl.AddtaxImpl
+	 * @see org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl#getAddtax()
+	 * @generated
+	 */
+	int ADDTAX = 7;
+
+	/**
+	 * The feature id for the '<em><b>Locale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADDTAX__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADDTAX__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
+
+	/**
+	 * The feature id for the '<em><b>Context</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADDTAX__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADDTAX__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
+
+	/**
+	 * The feature id for the '<em><b>Invoice Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADDTAX__INVOICE_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>Addtax</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADDTAX_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
+
+	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.accounting.impl.AddtaxResponseImpl <em>Addtax Response</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.accounting.impl.AddtaxResponseImpl
+	 * @see org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl#getAddtaxResponse()
+	 * @generated
+	 */
+	int ADDTAX_RESPONSE = 8;
+
+	/**
+	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADDTAX_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADDTAX_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
+
+	/**
+	 * The number of structural features of the '<em>Addtax Response</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADDTAX_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
+
+	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.accounting.SetPaymentStatus <em>Set Payment Status</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -573,6 +674,37 @@ public interface AccountingPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getUpdatePaymentApplicationDefResponse();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.accounting.Addtax <em>Addtax</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Addtax</em>'.
+	 * @see org.abchip.mimo.biz.service.accounting.Addtax
+	 * @generated
+	 */
+	EClass getAddtax();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.accounting.Addtax#getInvoiceId <em>Invoice Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Invoice Id</em>'.
+	 * @see org.abchip.mimo.biz.service.accounting.Addtax#getInvoiceId()
+	 * @see #getAddtax()
+	 * @generated
+	 */
+	EAttribute getAddtax_InvoiceId();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.accounting.AddtaxResponse <em>Addtax Response</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>Addtax Response</em>'.
+	 * @see org.abchip.mimo.biz.service.accounting.AddtaxResponse
+	 * @generated
+	 */
+	EClass getAddtaxResponse();
 
 	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.accounting.Invoice_GetTotal <em>Invoice Get Total</em>}'.
@@ -763,6 +895,34 @@ public interface AccountingPackage extends EPackage {
 		 * @generated
 		 */
 		EClass UPDATE_PAYMENT_APPLICATION_DEF_RESPONSE = eINSTANCE.getUpdatePaymentApplicationDefResponse();
+
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.accounting.impl.AddtaxImpl <em>Addtax</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.accounting.impl.AddtaxImpl
+		 * @see org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl#getAddtax()
+		 * @generated
+		 */
+		EClass ADDTAX = eINSTANCE.getAddtax();
+
+		/**
+		 * The meta object literal for the '<em><b>Invoice Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ADDTAX__INVOICE_ID = eINSTANCE.getAddtax_InvoiceId();
+
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.accounting.impl.AddtaxResponseImpl <em>Addtax Response</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.accounting.impl.AddtaxResponseImpl
+		 * @see org.abchip.mimo.biz.service.accounting.impl.AccountingPackageImpl#getAddtaxResponse()
+		 * @generated
+		 */
+		EClass ADDTAX_RESPONSE = eINSTANCE.getAddtaxResponse();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.accounting.impl.Invoice_GetTotalImpl <em>Invoice Get Total</em>}' class.

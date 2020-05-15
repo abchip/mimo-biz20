@@ -44,6 +44,14 @@
     </eClassifiers>
     <eClassifiers xsi:type="ecore:EClass" name="UpdatePaymentApplicationDefResponse"
         eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
+    <eClassifiers xsi:type="ecore:EClass" name="Addtax">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="invoiceId" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
+        <eTypeArguments eClassifier="#//accounting/AddtaxResponse"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="AddtaxResponse" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
   </eSubpackages>
   <eSubpackages name="catalina" nsURI="http://www.abchip.org/mimo/biz/service/catalina"
       nsPrefix="biz-catalina"/>
