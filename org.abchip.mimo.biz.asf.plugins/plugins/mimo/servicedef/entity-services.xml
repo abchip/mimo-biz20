@@ -24,11 +24,11 @@
 			optional="false" />
 	</service>
 
-	<service name="ConvertSeeds" engine="java"
+	<service name="convertSeeds" engine="java"
 		location="org.abchip.mimo.biz.asf.plugins.entity.SeedServices"
 		invoke="convertSeeds">
 		<description>Convert OFBiz seeds to MIMO seeds</description>
-		<attribute name="reader" type="String" mode="IN"
+		<attribute name="readers" type="String" mode="IN"
 			optional="false" />
 	</service>
 </services>
