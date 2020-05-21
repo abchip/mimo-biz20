@@ -9,8 +9,6 @@
 package org.abchip.mimo.biz.asf.plugins.entity;
 
 import java.net.URL;
-import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -19,6 +17,7 @@ import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityContainer;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityIterator;
+import org.abchip.mimo.resource.Resource;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.util.Logs;
@@ -38,7 +37,7 @@ public class SeedServices {
 	public static Map<String, Object> convertSeeds(DispatchContext dctx, Map<String, Object> params) {
 
 		String filterReaders = (String) params.get("readers");
-		
+
 		Delegator delegator = dctx.getDelegator();
 
 		try {
@@ -51,7 +50,7 @@ public class SeedServices {
 					entityWriter.delete(conatinerIterator.next());
 				}
 			}
-			
+
 			exportReaderFiltered(context, delegator, filterReaders);
 		} catch (Exception e) {
 			return ServiceUtil.returnError(e.getMessage());
@@ -61,20 +60,13 @@ public class SeedServices {
 	}
 
 	private static void exportReaderFiltered(Context context, Delegator delegator, String filterReaders) {
-		int c1 = 1;
-		List<String> readerNames = new LinkedList<String>();
-		if (!filterReaders.contains(",")) {
-			readerNames.add(filterReaders);
-		} else {
-			readerNames = StringUtil.split(filterReaders, ",");
-		}
-		String helperName = delegator.getGroupHelperName("org.apache.ofbiz");
-		List<URL> urlList = EntityDataLoader.getUrlList(helperName, readerNames);
 
-		Iterator<URL> urlListIt = urlList.iterator();
-		URL url = null;
-		while (urlListIt.hasNext()) {
-			url = urlListIt.next();
+		String helperName = delegator.getGroupHelperName("org.apache.ofbiz");
+
+		List<URL> urlList = EntityDataLoader.getUrlList(helperName, StringUtil.split(filterReaders, ","));
+
+		for (int i = 0; i < urlList.size(); i++) {
+			URL url = urlList.get(i);
 
 			if (url.toString().endsWith("RainbowStoneThemeData.xml"))
 				continue;
@@ -85,7 +77,7 @@ public class SeedServices {
 				String[] segments = url.getPath().split("/");
 				String containerName = segments[segments.length - 1];
 				String folderName = segments[segments.length - 3];
-				createContainer(context, containerName, folderName, listEntity, c1++);
+				createContainer(context, containerName, folderName, listEntity, i + 1);
 			} catch (Exception e) {
 				LOGGER.warn(e.getMessage());
 			}
@@ -104,14 +96,16 @@ public class SeedServices {
 
 		for (GenericValue genericValue : listEntity) {
 			LOGGER.info("\t Genericvalue: " + genericValue.getEntityName());
-			
-			EntityIdentifiable entityIdentifiable = context.getResourceSet().getResource(genericValue.getEntityName()).make();
+
+			Resource<EntityIdentifiable> resource = context.getResourceSet().getResource(genericValue.getEntityName());
+			EntityIdentifiable entityIdentifiable = resource.make();
 			try {
 				EntityUtils.completeEntity(entityIdentifiable, genericValue);
 			} catch (GeneralException e) {
 				throw new ResourceException(e);
 			}
 
+			resource.detach(entityIdentifiable);
 			container.getContents().add(entityIdentifiable);
 		}
 
