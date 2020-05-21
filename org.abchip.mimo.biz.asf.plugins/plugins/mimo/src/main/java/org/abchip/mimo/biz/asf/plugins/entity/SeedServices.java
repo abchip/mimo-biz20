@@ -65,9 +65,8 @@ public class SeedServices {
 
 		List<URL> urlList = EntityDataLoader.getUrlList(helperName, StringUtil.split(filterReaders, ","));
 
-		for (int i = 0; i < urlList.size(); i++) {
-			URL url = urlList.get(i);
-
+		int i = 1;
+		for (URL url : urlList) {
 			if (url.toString().endsWith("RainbowStoneThemeData.xml"))
 				continue;
 
@@ -77,7 +76,7 @@ public class SeedServices {
 				String[] segments = url.getPath().split("/");
 				String containerName = segments[segments.length - 1];
 				String folderName = segments[segments.length - 3];
-				createContainer(context, containerName, folderName, listEntity, i + 1);
+				createContainer(context, containerName, folderName, listEntity, i++);
 			} catch (Exception e) {
 				LOGGER.warn(e.getMessage());
 			}
