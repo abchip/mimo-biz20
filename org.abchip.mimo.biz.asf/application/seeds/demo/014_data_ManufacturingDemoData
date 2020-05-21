@@ -37,7 +37,7 @@
   <contents xsi:type="biz-method:CustomMethod" customMethodId="6002" customMethodName="linearComponentFormula" description="Bom formula for linear components">
     <customMethodTypeId href="CustomMethodType#BOM_FORMULA"/>
   </contents>
-  <contents xsi:type="biz-techdata:TechDataCalendarWeek" calendarWeekId="DEMO_WEEK" description="Demo calendar week of 8hours/days 5days/week starting at 8h30 from monday to friday" fridayCapacity="2.88E7" mondayCapacity="2.88E7" thursdayCapacity="2.88E7" tuesdayCapacity="2.88E7" wednesdayCapacity="2.88E7"/>
+  <contents xsi:type="biz-techdata:TechDataCalendarWeek" calendarWeekId="DEMO_WEEK" description="Demo calendar week of 8hours/days 5days/week starting at 8h30 from monday to friday" fridayCapacity="2.88E7" fridayStartTime="1970-01-01T08:30:00.000+0100" mondayCapacity="2.88E7" mondayStartTime="1970-01-01T08:30:00.000+0100" thursdayCapacity="2.88E7" thursdayStartTime="1970-01-01T08:30:00.000+0100" tuesdayCapacity="2.88E7" tuesdayStartTime="1970-01-01T08:30:00.000+0100" wednesdayCapacity="2.88E7" wednesdayStartTime="1970-01-01T08:30:00.000+0100"/>
   <contents xsi:type="biz-techdata:TechDataCalendar" calendarId="DEMO_CALENDAR" description="Demo Workcenter Calendar">
     <calendarWeekId href="TechDataCalendarWeek#DEMO_WEEK"/>
   </contents>
@@ -76,7 +76,7 @@
     <fixedAssetId href="FixedAsset#DEMO_FOOD"/>
     <geoPointId href="GeoPoint#9000"/>
   </contents>
-  <contents xsi:type="biz-fixedasset:FixedAsset" fixedAssetId="DEMO_PROD_EQUIPMT_1" fixedAssetName="Demo Production Equipment One" purchaseCost="1000" purchaseCostUomId="USD" salvageValue="50">
+  <contents xsi:type="biz-fixedasset:FixedAsset" fixedAssetId="DEMO_PROD_EQUIPMT_1" dateAcquired="2005-01-01T00:01:00.000+0100" expectedEndOfLife="2010-01-01T00:00:00.000+0100" fixedAssetName="Demo Production Equipment One" purchaseCost="1000" purchaseCostUomId="USD" salvageValue="50">
     <calendarId href="TechDataCalendar#DEMO_CALENDAR"/>
     <fixedAssetTypeId href="FixedAssetType#PRODUCTION_EQUIPMENT"/>
   </contents>
@@ -84,7 +84,7 @@
     <fixedAssetId href="FixedAsset#DEMO_PROD_EQUIPMT_1"/>
     <geoPointId href="GeoPoint#9000"/>
   </contents>
-  <contents xsi:type="biz-fixedasset:FixedAsset" fixedAssetId="DEMO_PROD_EQUIPMT_2" fixedAssetName="Demo Production Equipment Two" purchaseCost="1000" purchaseCostUomId="USD" salvageValue="50">
+  <contents xsi:type="biz-fixedasset:FixedAsset" fixedAssetId="DEMO_PROD_EQUIPMT_2" dateAcquired="2005-01-01T00:01:00.000+0100" expectedEndOfLife="2010-01-01T00:00:00.000+0100" fixedAssetName="Demo Production Equipment Two" purchaseCost="1000" purchaseCostUomId="USD" salvageValue="50">
     <calendarId href="TechDataCalendar#DEMO_CALENDAR"/>
     <fixedAssetTypeId href="FixedAssetType#PRODUCTION_EQUIPMENT"/>
   </contents>

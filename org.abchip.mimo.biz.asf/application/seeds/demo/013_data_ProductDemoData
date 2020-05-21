@@ -160,25 +160,25 @@
     <geoPointId href="GeoPoint#9000"/>
     <ownerPartyId href="Party#Company"/>
   </contents>
-  <contents xsi:type="biz-facility:Facility" facilityId="RegionalWarehouse1" defaultDaysToShip="25" description="Warehouse exclusively for the Web Store " facilityName="Regional Warehouse1">
+  <contents xsi:type="biz-facility:Facility" facilityId="RegionalWarehouse1" defaultDaysToShip="25" description="Warehouse exclusively for the Web Store " facilityLevel="1" facilityName="Regional Warehouse1">
     <defaultInventoryItemTypeId href="InventoryItemType#NON_SERIAL_INV_ITEM"/>
     <defaultWeightUomId href="Uom#WT_lb"/>
     <facilityTypeId href="FacilityType#WAREHOUSE"/>
     <ownerPartyId href="Party#Company"/>
   </contents>
-  <contents xsi:type="biz-facility:Facility" facilityId="RegionalWarehouse2" defaultDaysToShip="25" description="Warehouse exclusively for the Web Store " facilityName="Regional Warehouse2">
+  <contents xsi:type="biz-facility:Facility" facilityId="RegionalWarehouse2" defaultDaysToShip="25" description="Warehouse exclusively for the Web Store " facilityLevel="1" facilityName="Regional Warehouse2">
     <defaultInventoryItemTypeId href="InventoryItemType#NON_SERIAL_INV_ITEM"/>
     <defaultWeightUomId href="Uom#WT_lb"/>
     <facilityTypeId href="FacilityType#WAREHOUSE"/>
     <ownerPartyId href="Party#Company"/>
   </contents>
-  <contents xsi:type="biz-facility:Facility" facilityId="StoreWarehouse1" defaultDaysToShip="25" description="Warehouse exclusively for the Web Store " facilityName="Store Warehouse1">
+  <contents xsi:type="biz-facility:Facility" facilityId="StoreWarehouse1" defaultDaysToShip="25" description="Warehouse exclusively for the Web Store " facilityLevel="2" facilityName="Store Warehouse1">
     <defaultInventoryItemTypeId href="InventoryItemType#NON_SERIAL_INV_ITEM"/>
     <defaultWeightUomId href="Uom#WT_lb"/>
     <facilityTypeId href="FacilityType#WAREHOUSE"/>
     <ownerPartyId href="Party#Company"/>
   </contents>
-  <contents xsi:type="biz-facility:Facility" facilityId="StoreWarehouse2" defaultDaysToShip="25" description="Warehouse exclusively for the Web Store " facilityName="Store Warehouse2">
+  <contents xsi:type="biz-facility:Facility" facilityId="StoreWarehouse2" defaultDaysToShip="25" description="Warehouse exclusively for the Web Store " facilityLevel="2" facilityName="Store Warehouse2">
     <defaultInventoryItemTypeId href="InventoryItemType#NON_SERIAL_INV_ITEM"/>
     <defaultWeightUomId href="Uom#WT_lb"/>
     <facilityTypeId href="FacilityType#WAREHOUSE"/>

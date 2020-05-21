@@ -5089,31 +5089,31 @@
     <organizationPartyId href="Party#Company"/>
     <glAccountId href="GlAccount#625000"/>
   </contents>
-  <contents xsi:type="biz-period:CustomTimePeriod" customTimePeriodId="6010" fromDate="2010-01-01T00:00:00.000+0100" periodName="2010" periodNum="1" thruDate="2011-01-01T23:59:59.000+0100">
+  <contents xsi:type="biz-period:CustomTimePeriod" customTimePeriodId="6010" fromDate="2010-01-01T00:00:00.000+0100" isClosed="false" periodName="2010" periodNum="1" thruDate="2011-01-01T23:59:59.000+0100">
     <organizationPartyId href="Party#Company"/>
     <periodTypeId href="PeriodType#FISCAL_YEAR"/>
   </contents>
-  <contents xsi:type="biz-period:CustomTimePeriod" customTimePeriodId="6011" fromDate="2010-01-01T00:00:00.000+0100" periodName="2010/Q1" periodNum="2" thruDate="2010-04-01T23:59:59.000+0200">
+  <contents xsi:type="biz-period:CustomTimePeriod" customTimePeriodId="6011" fromDate="2010-01-01T00:00:00.000+0100" isClosed="false" periodName="2010/Q1" periodNum="2" thruDate="2010-04-01T23:59:59.000+0200">
     <organizationPartyId href="Party#Company"/>
     <parentPeriodId href="CustomTimePeriod#6010"/>
     <periodTypeId href="PeriodType#FISCAL_QUARTER"/>
   </contents>
-  <contents xsi:type="biz-period:CustomTimePeriod" customTimePeriodId="6012" fromDate="2010-04-01T00:00:00.000+0200" periodName="2010/Q2" periodNum="3" thruDate="2010-07-01T23:59:59.000+0200">
+  <contents xsi:type="biz-period:CustomTimePeriod" customTimePeriodId="6012" fromDate="2010-04-01T00:00:00.000+0200" isClosed="false" periodName="2010/Q2" periodNum="3" thruDate="2010-07-01T23:59:59.000+0200">
     <organizationPartyId href="Party#Company"/>
     <parentPeriodId href="CustomTimePeriod#6010"/>
     <periodTypeId href="PeriodType#FISCAL_QUARTER"/>
   </contents>
-  <contents xsi:type="biz-period:CustomTimePeriod" customTimePeriodId="6013" fromDate="2010-07-01T00:00:00.000+0200" periodName="2010/Q3" periodNum="4" thruDate="2010-10-01T23:59:59.000+0200">
+  <contents xsi:type="biz-period:CustomTimePeriod" customTimePeriodId="6013" fromDate="2010-07-01T00:00:00.000+0200" isClosed="false" periodName="2010/Q3" periodNum="4" thruDate="2010-10-01T23:59:59.000+0200">
     <organizationPartyId href="Party#Company"/>
     <parentPeriodId href="CustomTimePeriod#6010"/>
     <periodTypeId href="PeriodType#FISCAL_QUARTER"/>
   </contents>
-  <contents xsi:type="biz-period:CustomTimePeriod" customTimePeriodId="6014" fromDate="2010-10-01T00:00:00.000+0200" periodName="2010/Q4" periodNum="5" thruDate="2011-01-01T23:59:59.000+0100">
+  <contents xsi:type="biz-period:CustomTimePeriod" customTimePeriodId="6014" fromDate="2010-10-01T00:00:00.000+0200" isClosed="false" periodName="2010/Q4" periodNum="5" thruDate="2011-01-01T23:59:59.000+0100">
     <organizationPartyId href="Party#Company"/>
     <parentPeriodId href="CustomTimePeriod#6010"/>
     <periodTypeId href="PeriodType#FISCAL_QUARTER"/>
   </contents>
-  <contents xsi:type="biz-period:CustomTimePeriod" customTimePeriodId="6015" fromDate="2011-01-01T00:00:00.000+0100" periodName="2011-2030" periodNum="1" thruDate="2030-01-01T23:59:59.000+0100">
+  <contents xsi:type="biz-period:CustomTimePeriod" customTimePeriodId="6015" fromDate="2011-01-01T00:00:00.000+0100" isClosed="false" periodName="2011-2030" periodNum="1" thruDate="2030-01-01T23:59:59.000+0100">
     <organizationPartyId href="Party#Company"/>
     <periodTypeId href="PeriodType#FISCAL_YEAR"/>
   </contents>
@@ -5259,7 +5259,7 @@
     <countryGeoId href="Geo#USA"/>
     <stateProvinceGeoId href="Geo#CA"/>
   </contents>
-  <contents xsi:type="biz-contact:PartyContactMech" fromDate="2000-01-01T00:00:00.000+0100">
+  <contents xsi:type="biz-contact:PartyContactMech" fromDate="2000-01-01T00:00:00.000+0100" allowSolicitation="false">
     <partyId href="Party#CA_BOE"/>
     <contactMechId href="ContactMech#CA_BOE_0"/>
   </contents>
@@ -5288,7 +5288,7 @@
     <countryGeoId href="Geo#USA"/>
     <stateProvinceGeoId href="Geo#NY"/>
   </contents>
-  <contents xsi:type="biz-contact:PartyContactMech" fromDate="2000-01-01T00:00:00.000+0100">
+  <contents xsi:type="biz-contact:PartyContactMech" fromDate="2000-01-01T00:00:00.000+0100" allowSolicitation="false">
     <partyId href="Party#NY_DTF"/>
     <contactMechId href="ContactMech#NY_DTF_0"/>
   </contents>
@@ -7514,7 +7514,7 @@
     <fixedAssetId href="FixedAsset#DEMO_FORKLIFT_02"/>
     <geoPointId href="GeoPoint#9000"/>
   </contents>
-  <contents xsi:type="biz-fixedasset:FixedAsset" fixedAssetId="DEMO_VEHICLE_01" fixedAssetName="Company Pickup Truck" purchaseCost="45000" purchaseCostUomId="USD">
+  <contents xsi:type="biz-fixedasset:FixedAsset" fixedAssetId="DEMO_VEHICLE_01" dateAcquired="2009-01-01T00:00:00.000+0100" expectedEndOfLife="2015-12-31T00:00:00.000+0100" fixedAssetName="Company Pickup Truck" purchaseCost="45000" purchaseCostUomId="USD">
     <fixedAssetTypeId href="FixedAssetType#VEHICLE"/>
     <instanceOfProductId href="Product#COMPANY_VEHICLE"/>
     <partyId href="Party#Company"/>
