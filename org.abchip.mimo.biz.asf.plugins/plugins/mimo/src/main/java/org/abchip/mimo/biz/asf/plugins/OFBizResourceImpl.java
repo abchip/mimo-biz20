@@ -205,13 +205,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			GenericValue genericValue = eq.queryOne();
 			if (genericValue != null) {
 				if (proxy) {
-					String id = null;
-					for (String key : genericValue.getAllKeys()) {
-						if (id == null)
-							id = key;
-						else
-							id += "/" + key;
-					}
+					String id = getPkSlashValueString(genericValue);
 					entity = this.createProxy(id);
 				} else {
 					entity = make();
@@ -292,13 +286,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			for (GenericValue genericValue : eq.queryList()) {
 				E entity = null;
 				if (proxy) {
-					String id = null;
-					for (String key : genericValue.getAllKeys()) {
-						if (id == null)
-							id = key;
-						else
-							id += "/" + key;
-					}
+					String id = getPkSlashValueString(genericValue);
 					entity = this.createProxy(id);
 				} else {
 					entity = make();
@@ -562,4 +550,15 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			frame.setValue(entity, slot.getName(), paramValue);
 		}
 	}
+	
+    private String getPkSlashValueString(GenericValue genericValue) {
+        StringBuilder sb = new StringBuilder();
+        for (ModelField curPk: genericValue.getModelEntity().getPkFieldsUnmodifiable()) {
+            if (sb.length() > 0) {
+                sb.append("/");
+            }
+            sb.append(genericValue.get(curPk.getName()));
+        }
+        return sb.toString();
+    }
 }
