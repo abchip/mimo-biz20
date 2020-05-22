@@ -201,8 +201,8 @@
       xsi:type="biz-passport:OAuth2Google"
       productStoreId="8000"
       fromDate="2019-01-01T00:00:00.000+0100"
-      clientId="262790254072-naqsq0evi08qif55onm8hii1mk8c9aj9.apps.googleusercontent.com"
-      clientSecret="M1yBy5SI9T7plv_gfdhY6XA6"
+      clientId="522507914775-e194696ik4llnfmv1q1lch1ojsoqb8lb.apps.googleusercontent.com"
+      clientSecret="BruAdo0FcydQj4wD01aEphXK"
       iconUrl="/images/google.png"
       localRedirectUri="/ui/service/googleRedirect"
       returnUrl="http://localhost:7080/ui/service/googleResponse"/>
