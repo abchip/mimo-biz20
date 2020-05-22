@@ -16,7 +16,7 @@
 	<vendor></vendor>
 	<version>1.0</version>
 
-	<service name="Invoice_GetTotal" engine="java"
+	<service name="GetTotalInvoice" engine="java"
 		location="org.abchip.mimo.biz.asf.plugins.accounting.InvoiceServices"
 		invoke="getTotal">
 		<attribute name="entity"
