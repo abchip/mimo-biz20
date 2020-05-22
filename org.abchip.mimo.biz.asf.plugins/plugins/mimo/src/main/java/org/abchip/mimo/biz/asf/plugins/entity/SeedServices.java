@@ -20,6 +20,7 @@ import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.Resource;
 import org.abchip.mimo.resource.ResourceException;
+import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.util.Logs;
 import org.apache.ofbiz.base.util.GeneralException;
@@ -45,12 +46,13 @@ public class SeedServices {
 			Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
 
 			// remove containers
-			Delete<EntityContainer> delete = context.getServiceManager().prepare(Delete.class);
-			
-			ResourceWriter<EntityContainer> entityWriter = context.getResourceManager().getResourceWriter(EntityContainer.class);
+			Delete<EntityContainer> delete = context.getServiceManager().prepare(Delete.class, EntityContainer.class);
+
+			ResourceReader<EntityContainer> entityWriter = context.getResourceManager().getResourceReader(EntityContainer.class);
 			try (EntityIterator<EntityContainer> conatinerIterator = entityWriter.find()) {
 				while (conatinerIterator.hasNext()) {
-					entityWriter.delete(conatinerIterator.next());
+					delete.setEntity(conatinerIterator.next());
+					context.getServiceManager().execute(delete);
 				}
 			}
 
