@@ -185,18 +185,18 @@
       clientId="19d1197012536a245706"
       clientSecret="ae7fcc0e1bc17b608c4ec093d83c3248ae35c461"
       iconUrl="/images/github.png"
-      localRedirectUri="/biz/service/gitHubRedirect"
-      returnUrl="http://localhost:8080/biz/service/gitHubResponse"/>
+      localRedirectUri="/ui/service/gitHubRedirect"
+      returnUrl="http://localhost:7080/ui/service/gitHubResponse"/>
   <contents
       xsi:type="biz-passport:OAuth2LinkedIn"
       productStoreId="8000"
       fromDate="2019-01-01T00:00:00.000+0100"
       apiKey="86zhfjvwavq62d"
       iconUrl="/images/linkedin.png"
-      liveReturnUrl="http://localhost:8080/biz/service/linkedInResponse"
-      localRedirectUri="/biz/service/linkedInRedirect"
+      liveReturnUrl="http://localhost:7080/ui/service/linkedInResponse"
+      localRedirectUri="/ui/service/linkedInRedirect"
       secretKey="8FwzUQuTB5fCId9t"
-      testReturnUrl="http://localhost:8080/biz/service/linkedInResponse"/>
+      testReturnUrl="http://localhost:7080/ui/service/linkedInResponse"/>
   <contents
       xsi:type="biz-passport:OAuth2Google"
       productStoreId="8000"
@@ -204,8 +204,8 @@
       clientId="262790254072-naqsq0evi08qif55onm8hii1mk8c9aj9.apps.googleusercontent.com"
       clientSecret="M1yBy5SI9T7plv_gfdhY6XA6"
       iconUrl="/images/google.png"
-      localRedirectUri="/biz/service/googleRedirect"
-      returnUrl="http://localhost:8080/biz/service/googleResponse"/>
+      localRedirectUri="/ui/service/googleRedirect"
+      returnUrl="http://localhost:7080/ui/service/googleResponse"/>
   <contents
       xsi:type="biz-login:UserLogin"
       userLoginId="abchip"
