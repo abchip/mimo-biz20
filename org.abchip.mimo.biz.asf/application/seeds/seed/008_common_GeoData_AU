@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-geo="http://www.abchip.org/mimo/biz/model/common/geo" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/common/geo http://www.abchip.org/mimo/biz#//common/geo http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="008_common_GeoData_AU">
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-geo="http://www.abchip.org/mimo/biz/model/common/geo" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/common/geo http://www.abchip.org/mimo/biz/model/common#//geo http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="008_common_GeoData_AU">
   <contents xsi:type="biz-geo:Geo" geoId="AU-ACT" abbreviation="ACT" geoCode="ACT" geoName="Australian Capital Territory">
     <geoTypeId href="GeoType#TERRITORY"/>
   </contents>

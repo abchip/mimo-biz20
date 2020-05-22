@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-login="http://www.abchip.org/mimo/biz/model/security/login" xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/model/security/securitygroup" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/biz/model/security/login http://www.abchip.org/mimo/biz#//login http://www.abchip.org/mimo/biz/model/security/securitygroup http://www.abchip.org/mimo/biz#//securitygroup http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="001_security_SecurityPermissionSeedData">
+<mimo-ent:EntityContainer xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:biz-login="http://www.abchip.org/mimo/biz/model/security/login" xmlns:biz-securitygroup="http://www.abchip.org/mimo/biz/model/security/securitygroup" xmlns:mimo-ent="http://www.abchip.org/mimo/entity" xsi:schemaLocation="http://www.abchip.org/mimo/entity http://www.abchip.org/mimo#//entity" name="001_security_SecurityPermissionSeedData">
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="access" description="Base ACCESS permission"/>
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="create" description="Base CREATE permission"/>
   <contents xsi:type="biz-securitygroup:SecurityPermission" permissionId="read" description="Base READ permission"/>
@@ -11,12 +11,12 @@
     <groupId href="SecurityGroup#SUPER"/>
     <permissionId href="SecurityPermission#OFBTOOLS_VIEW"/>
   </contents>
-  <contents xsi:type="biz-login:UserLogin" userLoginId="system" isSystem="true"/>
+  <contents xsi:type="biz-login:UserLogin" userLoginId="system" enabled="false" isSystem="true"/>
   <contents xsi:type="biz-securitygroup:UserLoginSecurityGroup" fromDate="2001-01-01T12:00:00.000+0100">
     <userLoginId href="UserLogin#system"/>
     <groupId href="SecurityGroup#SUPER"/>
   </contents>
-  <contents xsi:type="biz-login:UserLogin" userLoginId="anonymous"/>
+  <contents xsi:type="biz-login:UserLogin" userLoginId="anonymous" enabled="false"/>
   <contents xsi:type="biz-securitygroup:SecurityGroupPermission" fromDate="2001-05-13T12:00:00.000+0200">
     <groupId href="SecurityGroup#SUPER"/>
     <permissionId href="SecurityPermission#access"/>

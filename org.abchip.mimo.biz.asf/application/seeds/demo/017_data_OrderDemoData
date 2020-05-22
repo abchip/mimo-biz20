@@ -578,7 +578,7 @@
     <facilityId href="Facility#StoreWarehouse2"/>
     <locationTypeEnumId href="Enumeration#FLT_PICKLOC"/>
   </contents>
-  <contents xsi:type="biz-store:ProductStore" productStoreId="9000" authDeclinedMessage="There has been a problem with your method of payment. Please try a different method or call customer service." authErrorMessage="Problem connecting to payment processor; we will continue to retry and notify you by email." authFraudMessage="Your order has been rejected and your account has been disabled due to fraud." balanceResOnOrderCreation="true" companyName="Open For Business" daysToCancelNonPay="30" defaultLocaleString="en_US" orderNumberPrefix="WS" showOutOfStockProducts="true" storeCreditValidDays="90" storeName="OFBiz E-Commerce Store" subtitle="Part of the Apache OFBiz Family of Open Source Software" title="Open For Commerce" visualThemeId="EC_DEFAULT">
+  <contents xsi:type="biz-store:ProductStore" productStoreId="9000" authDeclinedMessage="There has been a problem with your method of payment. Please try a different method or call customer service." authErrorMessage="Problem connecting to payment processor; we will continue to retry and notify you by email." authFraudMessage="Your order has been rejected and your account has been disabled due to fraud." balanceResOnOrderCreation="true" companyName="Open For Business" daysToCancelNonPay="30" defaultLocaleString="en_US" orderNumberPrefix="WS" reqReturnInventoryReceive="false" showOutOfStockProducts="true" storeCreditValidDays="90" storeName="OFBiz E-Commerce Store" subtitle="Part of the Apache OFBiz Family of Open Source Software" title="Open For Commerce" visualThemeId="EC_DEFAULT">
     <defaultCurrencyUomId href="Uom#USD"/>
     <defaultSalesChannelEnumId href="Enumeration#WEB_SALES_CHANNEL"/>
     <digitalItemApprovedStatus href="StatusItem#ITEM_APPROVED"/>
@@ -2333,7 +2333,7 @@
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="GZ-NEWS-1MO" autoCreateKeywords="true" createdDate="2001-05-13T12:00:00.000+0200" description="A 1 month subscription to the Gizmo Newsletter: can be used immediately after purchase." internalName="Gizmo Newsletter 1 Month Subscription" lastModifiedDate="2001-05-13T12:00:00.000+0200" longDescription="This newsletter will give you regular updates on the wonderful world of Gizmos!" productName="Gizmo Newsletter 1 Month" taxable="true">
+  <contents xsi:type="biz-product:Product" productId="GZ-NEWS-1MO" autoCreateKeywords="true" chargeShipping="false" createdDate="2001-05-13T12:00:00.000+0200" description="A 1 month subscription to the Gizmo Newsletter: can be used immediately after purchase." internalName="Gizmo Newsletter 1 Month Subscription" lastModifiedDate="2001-05-13T12:00:00.000+0200" longDescription="This newsletter will give you regular updates on the wonderful world of Gizmos!" productName="Gizmo Newsletter 1 Month" taxable="true">
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
     <primaryProductCategoryId href="ProductCategory#101"/>
@@ -2390,7 +2390,7 @@
     <contentId href="Content#GZ-NEWS-1MO-ALT"/>
     <productContentTypeId href="ProductContentType#ALTERNATIVE_URL"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="GZ-DIG" autoCreateKeywords="true" createdDate="2001-05-13T12:00:00.000+0200" description="A digital gizmo: can be downloaded immediately after purchase." internalName="Digital Gizmo" lastModifiedDate="2001-05-13T12:00:00.000+0200" longDescription="This gizmo is part of an exciting new breed that needs no corporeal form: it is all digital! Buy and download it now!" productName="Digital Gizmo" taxable="true">
+  <contents xsi:type="biz-product:Product" productId="GZ-DIG" autoCreateKeywords="true" chargeShipping="false" createdDate="2001-05-13T12:00:00.000+0200" description="A digital gizmo: can be downloaded immediately after purchase." internalName="Digital Gizmo" lastModifiedDate="2001-05-13T12:00:00.000+0200" longDescription="This gizmo is part of an exciting new breed that needs no corporeal form: it is all digital! Buy and download it now!" productName="Digital Gizmo" taxable="true">
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
     <primaryProductCategoryId href="ProductCategory#101"/>
@@ -2455,7 +2455,7 @@
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="GZ-BASKET" autoCreateKeywords="true" chargeShipping="true" description="Auto-Assembled Gizmo Basket.  Automatically assembled each time it's ordered." internalName="Auto-Assembled Gizmo Basket" longDescription="Auto-Assembled Gizmo Basket.  This item will be automatically assembled with production runs every time it's ordered, and the inventory counts for it are based on the quantity available and on hand for the component items." productName="Gizmo Basket" taxable="true">
+  <contents xsi:type="biz-product:Product" productId="GZ-BASKET" autoCreateKeywords="true" chargeShipping="true" description="Auto-Assembled Gizmo Basket.  Automatically assembled each time it's ordered." internalName="Auto-Assembled Gizmo Basket" longDescription="Auto-Assembled Gizmo Basket.  This item will be automatically assembled with production runs every time it's ordered, and the inventory counts for it are based on the quantity available and on hand for the component items." productName="Gizmo Basket" requireInventory="false" taxable="true">
     <productTypeId href="ProductType#MARKETING_PKG_AUTO"/>
   </contents>
   <contents xsi:type="biz-price:ProductPrice" fromDate="2001-05-13T12:00:00.000+0200" price="150">
@@ -2578,7 +2578,7 @@
     <productCategoryId href="ProductCategory#SERV-001"/>
     <parentProductCategoryId href="ProductCategory#CATALOG1"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="SV-1000" autoCreateKeywords="true" createdDate="2008-12-02T12:00:00.000+0100" description="Service type product for demonstration use" internalName="Service type product" lastModifiedDate="2008-12-02T12:00:00.000+0100" productName="Service product" taxable="true">
+  <contents xsi:type="biz-product:Product" productId="SV-1000" autoCreateKeywords="true" chargeShipping="false" createdDate="2008-12-02T12:00:00.000+0100" description="Service type product for demonstration use" internalName="Service type product" lastModifiedDate="2008-12-02T12:00:00.000+0100" productName="Service product" taxable="true">
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
     <primaryProductCategoryId href="ProductCategory#SERV-001"/>
@@ -2659,7 +2659,7 @@
     <contentId href="Content#SV-1000-ALT"/>
     <productContentTypeId href="ProductContentType#ALTERNATIVE_URL"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="SV-1001" autoCreateKeywords="true" createdDate="2008-12-02T12:00:00.000+0100" description="Service type product which is received to- and shipped from inventory for demonstration use" internalName="Service type product which is received to- and shipped from inventory" lastModifiedDate="2008-12-02T12:00:00.000+0100" productName="Laundry service" taxable="true">
+  <contents xsi:type="biz-product:Product" productId="SV-1001" autoCreateKeywords="true" chargeShipping="false" createdDate="2008-12-02T12:00:00.000+0100" description="Service type product which is received to- and shipped from inventory for demonstration use" internalName="Service type product which is received to- and shipped from inventory" lastModifiedDate="2008-12-02T12:00:00.000+0100" productName="Laundry service" taxable="true">
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
     <primaryProductCategoryId href="ProductCategory#SERV-001"/>
@@ -2710,7 +2710,7 @@
     <contentId href="Content#SV-1001-ALT"/>
     <productContentTypeId href="ProductContentType#ALTERNATIVE_URL"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="DS-1000" autoCreateKeywords="true" description="product shipped from drop shipment and with agreement to resolve the purchase price" internalName="drop ship" productName="Drop ship product" taxable="true">
+  <contents xsi:type="biz-product:Product" productId="DS-1000" autoCreateKeywords="true" chargeShipping="false" description="product shipped from drop shipment and with agreement to resolve the purchase price" internalName="drop ship" productName="Drop ship product" taxable="true">
     <primaryProductCategoryId href="ProductCategory#PROMOTIONS"/>
     <productTypeId href="ProductType#FINISHED_GOOD"/>
     <requirementMethodEnumId href="Enumeration#PRODRQM_DS"/>
@@ -2767,7 +2767,7 @@
     <agreementId href="Agreement#DS-1000-PURCH"/>
     <productId href="Product#DS-1000"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="CFSV1001" autoCreateKeywords="true" createdDate="2008-12-02T12:00:00.000+0100" description="The configurable product type which is received to- and shipped from inventory for demonstration use" internalName="The configurable product type which is received to- and shipped from inventory" lastModifiedDate="2008-12-02T12:00:00.000+0100" productName="Scanning book service" taxable="true">
+  <contents xsi:type="biz-product:Product" productId="CFSV1001" autoCreateKeywords="true" chargeShipping="false" createdDate="2008-12-02T12:00:00.000+0100" description="The configurable product type which is received to- and shipped from inventory for demonstration use" internalName="The configurable product type which is received to- and shipped from inventory" lastModifiedDate="2008-12-02T12:00:00.000+0100" productName="Scanning book service" taxable="true">
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
     <primaryProductCategoryId href="ProductCategory#SERV-001"/>
@@ -2777,17 +2777,17 @@
     <createdByUserLogin href="UserLogin#admin"/>
     <productTypeId href="ProductType#SERVICE_PRODUCT"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="SCAN-EC" createdDate="2003-11-20T13:48:19.105+0100" description="Economy Scanning type" internalName="Economy Scanning type" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Economy Scanning type">
+  <contents xsi:type="biz-product:Product" productId="SCAN-EC" chargeShipping="false" createdDate="2003-11-20T13:48:19.105+0100" description="Economy Scanning type" includeInPromotions="false" internalName="Economy Scanning type" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Economy Scanning type" returnable="false" taxable="false">
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
     <productTypeId href="ProductType#SERVICE_PRODUCT"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="SCAN-ST" createdDate="2003-11-20T13:48:19.105+0100" description="Standard Scanning type" internalName="Standard Scanning type" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Standard Scanning type">
+  <contents xsi:type="biz-product:Product" productId="SCAN-ST" chargeShipping="false" createdDate="2003-11-20T13:48:19.105+0100" description="Standard Scanning type" includeInPromotions="false" internalName="Standard Scanning type" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Standard Scanning type" returnable="false" taxable="false">
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
     <productTypeId href="ProductType#SERVICE_PRODUCT"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="SCAN-SU" createdDate="2003-11-20T13:48:19.105+0100" description="Superfine Scanning type" internalName="Superfine Scanning type" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Superfine Scanning type">
+  <contents xsi:type="biz-product:Product" productId="SCAN-SU" chargeShipping="false" createdDate="2003-11-20T13:48:19.105+0100" description="Superfine Scanning type" includeInPromotions="false" internalName="Superfine Scanning type" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Superfine Scanning type" returnable="false" taxable="false">
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
     <productTypeId href="ProductType#SERVICE_PRODUCT"/>
@@ -3962,6 +3962,42 @@
     <productId href="Product#GZ-8544"/>
     <facilityId href="Facility#StoreWarehouse2"/>
   </contents>
+  <contents xsi:type="biz-facility:ProductFacilityAssoc" fromDate="2001-01-01T12:00:00.000+0100" sequenceNum="1" transitTime="3">
+    <productId href="Product#GZ-8544"/>
+    <facilityId href="Facility#StoreWarehouse1"/>
+    <facilityIdTo href="Facility#RegionalWarehouse1"/>
+    <facilityAssocTypeId href="FacilityAssocType#BACKUP_WAREHOUSE"/>
+  </contents>
+  <contents xsi:type="biz-facility:ProductFacilityAssoc" fromDate="2001-01-01T12:00:00.000+0100" sequenceNum="1" transitTime="3">
+    <productId href="Product#GZ-8544"/>
+    <facilityId href="Facility#RegionalWarehouse1"/>
+    <facilityIdTo href="Facility#WebStoreWarehouse"/>
+    <facilityAssocTypeId href="FacilityAssocType#BACKUP_WAREHOUSE"/>
+  </contents>
+  <contents xsi:type="biz-facility:ProductFacilityAssoc" fromDate="2001-01-01T12:00:00.000+0100" sequenceNum="1">
+    <productId href="Product#GZ-8544"/>
+    <facilityId href="Facility#StoreWarehouse1"/>
+    <facilityIdTo href="Facility#WebStoreWarehouse"/>
+    <facilityAssocTypeId href="FacilityAssocType#BACKUP_WAREHOUSE"/>
+  </contents>
+  <contents xsi:type="biz-facility:ProductFacilityAssoc" fromDate="2001-01-01T12:00:00.000+0100" sequenceNum="1">
+    <productId href="Product#GZ-8544"/>
+    <facilityId href="Facility#StoreWarehouse2"/>
+    <facilityIdTo href="Facility#RegionalWarehouse2"/>
+    <facilityAssocTypeId href="FacilityAssocType#BACKUP_WAREHOUSE"/>
+  </contents>
+  <contents xsi:type="biz-facility:ProductFacilityAssoc" fromDate="2001-01-01T12:00:00.000+0100" sequenceNum="1" transitTime="3">
+    <productId href="Product#GZ-8544"/>
+    <facilityId href="Facility#RegionalWarehouse2"/>
+    <facilityIdTo href="Facility#WebStoreWarehouse"/>
+    <facilityAssocTypeId href="FacilityAssocType#BACKUP_WAREHOUSE"/>
+  </contents>
+  <contents xsi:type="biz-facility:ProductFacilityAssoc" fromDate="2001-01-01T12:00:00.000+0100" sequenceNum="1" transitTime="3">
+    <productId href="Product#GZ-8544"/>
+    <facilityId href="Facility#StoreWarehouse2"/>
+    <facilityIdTo href="Facility#WebStoreWarehouse"/>
+    <facilityAssocTypeId href="FacilityAssocType#BACKUP_WAREHOUSE"/>
+  </contents>
   <contents xsi:type="biz-inventory:InventoryItem" inventoryItemId="9000" datetimeReceived="2008-08-01T08:00:00.000+0200" locationSeqId="TLTLTLUL01" unitCost="2.5">
     <currencyUomId href="Uom#USD"/>
     <facilityId href="Facility#WebStoreWarehouse"/>
@@ -4388,12 +4424,12 @@
     <productCategoryId href="ProductCategory#201"/>
     <productPromoApplEnumId href="Enumeration#PPPA_EXCLUDE"/>
   </contents>
-  <contents xsi:type="biz-promo:ProductPromoCategory" andGroupId="_NA_" productPromoActionSeqId="_NA_" productPromoCondSeqId="_NA_" productPromoRuleId="_NA_">
+  <contents xsi:type="biz-promo:ProductPromoCategory" andGroupId="_NA_" productPromoActionSeqId="_NA_" productPromoCondSeqId="_NA_" productPromoRuleId="_NA_" includeSubCategories="false">
     <productPromoId href="ProductPromo#9013"/>
     <productCategoryId href="ProductCategory#20111"/>
     <productPromoApplEnumId href="Enumeration#PPPA_ALWAYS"/>
   </contents>
-  <contents xsi:type="biz-promo:ProductPromoCategory" andGroupId="_NA_" productPromoActionSeqId="_NA_" productPromoCondSeqId="_NA_" productPromoRuleId="_NA_">
+  <contents xsi:type="biz-promo:ProductPromoCategory" andGroupId="_NA_" productPromoActionSeqId="_NA_" productPromoCondSeqId="_NA_" productPromoRuleId="_NA_" includeSubCategories="false">
     <productPromoId href="ProductPromo#9016"/>
     <productCategoryId href="ProductCategory#101"/>
     <productPromoApplEnumId href="Enumeration#PPPA_INCLUDE"/>
@@ -4532,7 +4568,7 @@
     <orderAdjustmentTypeId href="OrderAdjustmentType#PROMOTION_ADJUSTMENT"/>
     <productPromoActionEnumId href="Enumeration#PROMO_PROD_SPPRC"/>
   </contents>
-  <contents xsi:type="biz-promo:ProductPromoCategory" andGroupId="_NA_" productPromoActionSeqId="01" productPromoCondSeqId="_NA_" productPromoRuleId="01">
+  <contents xsi:type="biz-promo:ProductPromoCategory" andGroupId="_NA_" productPromoActionSeqId="01" productPromoCondSeqId="_NA_" productPromoRuleId="01" includeSubCategories="false">
     <productPromoId href="ProductPromo#9021"/>
     <productCategoryId href="ProductCategory#PROMOTIONS"/>
     <productPromoApplEnumId href="Enumeration#PPPA_INCLUDE"/>
@@ -4582,65 +4618,65 @@
   <contents xsi:type="biz-category:ProductCategory" productCategoryId="GC-103">
     <productCategoryTypeId href="ProductCategoryType#GIFT_CARD_CATEGORY"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="GC-002" createdDate="2003-11-20T13:48:19.105+0100" description="Add more money to your card!" internalName="Gift Card Reload" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Reload" requireAmount="true">
+  <contents xsi:type="biz-product:Product" productId="GC-002" chargeShipping="false" createdDate="2003-11-20T13:48:19.105+0100" description="Add more money to your card!" includeInPromotions="false" internalName="Gift Card Reload" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Reload" requireAmount="true" returnable="false" taxable="false">
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
     <primaryProductCategoryId href="ProductCategory#GC-102"/>
     <productTypeId href="ProductType#DIGITAL_GOOD"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="GC-001" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" internalName="Gift Card Activation" isVirtual="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation">
+  <contents xsi:type="biz-product:Product" productId="GC-001" chargeShipping="false" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" includeInPromotions="false" internalName="Gift Card Activation" isVirtual="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation" returnable="false" taxable="false">
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
     <primaryProductCategoryId href="ProductCategory#GC-101"/>
     <productTypeId href="ProductType#DIGITAL_GOOD"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="GC-001-C10" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" internalName="Gift Card Activation" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation">
+  <contents xsi:type="biz-product:Product" productId="GC-001-C10" chargeShipping="false" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" includeInPromotions="false" internalName="Gift Card Activation" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation" returnable="false" taxable="false">
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
     <productTypeId href="ProductType#DIGITAL_GOOD"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="GC-001-C100" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" internalName="Gift Card Activation" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation">
+  <contents xsi:type="biz-product:Product" productId="GC-001-C100" chargeShipping="false" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" includeInPromotions="false" internalName="Gift Card Activation" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation" returnable="false" taxable="false">
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
     <productTypeId href="ProductType#DIGITAL_GOOD"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="GC-001-C25" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" internalName="Gift Card Activation" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation">
+  <contents xsi:type="biz-product:Product" productId="GC-001-C25" chargeShipping="false" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" includeInPromotions="false" internalName="Gift Card Activation" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation" returnable="false" taxable="false">
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
     <productTypeId href="ProductType#DIGITAL_GOOD"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="GC-001-C50" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" internalName="Gift Card Activation" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation">
+  <contents xsi:type="biz-product:Product" productId="GC-001-C50" chargeShipping="false" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" includeInPromotions="false" internalName="Gift Card Activation" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation" returnable="false" taxable="false">
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
     <productTypeId href="ProductType#DIGITAL_GOOD"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="GC-001-CO" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" internalName="Gift Card Activation" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation" requireAmount="true">
+  <contents xsi:type="biz-product:Product" productId="GC-001-CO" chargeShipping="false" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" includeInPromotions="false" internalName="Gift Card Activation" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation" requireAmount="true" returnable="false" taxable="false">
     <amountUomTypeId href="UomType#CURRENCY_MEASURE"/>
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
     <productTypeId href="ProductType#DIGITAL_GOOD"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="GC-001-H10" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" internalName="Gift Card Activation" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation">
+  <contents xsi:type="biz-product:Product" productId="GC-001-H10" chargeShipping="false" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" includeInPromotions="false" internalName="Gift Card Activation" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation" returnable="false" taxable="false">
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
     <productTypeId href="ProductType#DIGITAL_GOOD"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="GC-001-H100" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" internalName="Gift Card Activation" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation">
+  <contents xsi:type="biz-product:Product" productId="GC-001-H100" chargeShipping="false" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" includeInPromotions="false" internalName="Gift Card Activation" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation" returnable="false" taxable="false">
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
     <productTypeId href="ProductType#DIGITAL_GOOD"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="GC-001-H25" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" internalName="Gift Card Activation" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation">
+  <contents xsi:type="biz-product:Product" productId="GC-001-H25" chargeShipping="false" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" includeInPromotions="false" internalName="Gift Card Activation" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation" returnable="false" taxable="false">
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
     <productTypeId href="ProductType#DIGITAL_GOOD"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="GC-001-H50" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" internalName="Gift Card Activation" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation">
+  <contents xsi:type="biz-product:Product" productId="GC-001-H50" chargeShipping="false" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" includeInPromotions="false" internalName="Gift Card Activation" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation" returnable="false" taxable="false">
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
     <productTypeId href="ProductType#DIGITAL_GOOD"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="GC-001-HO" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" internalName="Gift Card Activation" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation" requireAmount="true">
+  <contents xsi:type="biz-product:Product" productId="GC-001-HO" chargeShipping="false" createdDate="2003-11-20T13:48:19.105+0100" description="Give the perfect gift!" includeInPromotions="false" internalName="Gift Card Activation" isVariant="true" lastModifiedDate="2003-11-20T13:48:19.105+0100" productName="Gift Card Activation" requireAmount="true" returnable="false" taxable="false">
     <amountUomTypeId href="UomType#CURRENCY_MEASURE"/>
     <createdByUserLogin href="UserLogin#admin"/>
     <lastModifiedByUserLogin href="UserLogin#admin"/>
@@ -6060,7 +6096,7 @@
     <contentId href="Content#WG-1111-BX4-ALT"/>
     <productContentTypeId href="ProductContentType#ALTERNATIVE_URL"/>
   </contents>
-  <contents xsi:type="biz-product:Product" productId="RentalShip" autoCreateKeywords="true" createdDate="2011-09-01T12:00:00.000+0200" description="The Product For Test Rental of an asset which is shipped from and returned to inventory" internalName="Rental Shipping" productName="Rental Shipping" reservMaxPersons="1" taxable="true">
+  <contents xsi:type="biz-product:Product" productId="RentalShip" autoCreateKeywords="true" chargeShipping="false" createdDate="2011-09-01T12:00:00.000+0200" description="The Product For Test Rental of an asset which is shipped from and returned to inventory" internalName="Rental Shipping" productName="Rental Shipping" reservMaxPersons="1" taxable="true">
     <createdByUserLogin href="UserLogin#admin"/>
     <primaryProductCategoryId href="ProductCategory#201"/>
     <productTypeId href="ProductType#ASSET_USAGE_OUT_IN"/>
@@ -7490,7 +7526,7 @@
   <contents xsi:type="biz-tax:PartyTaxAuthInfo" fromDate="2001-05-13T00:00:00.000+0200" taxAuthGeoId="FRA" taxAuthPartyId="FRA_TA" isExempt="false" partyTaxId="FR-12345678901">
     <partyId href="Party#FrenchCustomer"/>
   </contents>
-  <contents xsi:type="biz-order:OrderHeader" orderId="DEMO10090" entryDate="2008-04-23T16:49:27.392+0200" grandTotal="50.85" invoicePerShipment="true" orderDate="2008-04-23T16:49:27.392+0200" remainingSubTotal="38.40" visitId="10002">
+  <contents xsi:type="biz-order:OrderHeader" orderId="DEMO10090" entryDate="2008-04-23T16:49:27.392+0200" grandTotal="50.85" invoicePerShipment="true" orderDate="2008-04-23T16:49:27.392+0200" priority="2" remainingSubTotal="38.40" visitId="10002">
     <createdBy href="UserLogin#admin"/>
     <currencyUom href="Uom#USD"/>
     <orderTypeId href="OrderType#SALES_ORDER"/>
@@ -7498,7 +7534,7 @@
     <salesChannelEnumId href="Enumeration#WEB_SALES_CHANNEL"/>
     <statusId href="StatusItem#ORDER_APPROVED"/>
   </contents>
-  <contents xsi:type="biz-order:OrderItem" orderItemSeqId="00001" itemDescription="Round Gizmo" prodCatalogId="DemoCatalog" quantity="2.0" selectedAmount="0.0" unitListPrice="48.0" unitPrice="38.4">
+  <contents xsi:type="biz-order:OrderItem" orderItemSeqId="00001" isModifiedPrice="false" isPromo="false" itemDescription="Round Gizmo" prodCatalogId="DemoCatalog" quantity="2.0" selectedAmount="0.0" unitListPrice="48.0" unitPrice="38.4">
     <orderId href="OrderHeader#DEMO10090"/>
     <orderItemTypeId href="OrderItemType#PRODUCT_ORDER_ITEM"/>
     <productId href="Product#GZ-2644"/>
@@ -7545,7 +7581,7 @@
     <partyId href="Party#DemoCustomer"/>
     <roleTypeId href="RoleType#SHIP_TO_CUSTOMER"/>
   </contents>
-  <contents xsi:type="biz-order:OrderItemShipGroup" shipGroupSeqId="00001" carrierRoleTypeId="CARRIER">
+  <contents xsi:type="biz-order:OrderItemShipGroup" shipGroupSeqId="00001" carrierRoleTypeId="CARRIER" isGift="false" maySplit="false">
     <orderId href="OrderHeader#DEMO10090"/>
     <carrierPartyId href="Party#UPS"/>
     <contactMechId href="ContactMech#9015"/>
@@ -7569,7 +7605,7 @@
     <orderAdjustmentTypeId href="OrderAdjustmentType#SHIPPING_CHARGES"/>
     <orderId href="OrderHeader#DEMO10090"/>
   </contents>
-  <contents xsi:type="biz-order:OrderPaymentPreference" orderPaymentPreferenceId="9000" createdDate="2008-04-23T16:49:27.966+0200" maxAmount="50.85" processAttempt="1">
+  <contents xsi:type="biz-order:OrderPaymentPreference" orderPaymentPreferenceId="9000" createdDate="2008-04-23T16:49:27.966+0200" maxAmount="50.85" needsNsfRetry="false" overflowFlag="false" presentFlag="false" processAttempt="1" swipedFlag="false">
     <createdByUserLogin href="UserLogin#admin"/>
     <orderId href="OrderHeader#DEMO10090"/>
     <paymentMethodId href="PaymentMethod#9015"/>
@@ -7650,7 +7686,7 @@
     <salesChannelEnumId href="Enumeration#UNKNWN_SALES_CHANNEL"/>
     <statusId href="StatusItem#ORDER_CREATED"/>
   </contents>
-  <contents xsi:type="biz-order:OrderItem" orderItemSeqId="00001" itemDescription="GZ-2644-5 Round Gizmo" prodCatalogId="DemoCatalog" quantity="5.0" selectedAmount="0.0" unitListPrice="0.0" unitPrice="21.6">
+  <contents xsi:type="biz-order:OrderItem" orderItemSeqId="00001" isModifiedPrice="false" isPromo="false" itemDescription="GZ-2644-5 Round Gizmo" prodCatalogId="DemoCatalog" quantity="5.0" selectedAmount="0.0" unitListPrice="0.0" unitPrice="21.6">
     <orderId href="OrderHeader#DEMO10091"/>
     <orderItemTypeId href="OrderItemType#PRODUCT_ORDER_ITEM"/>
     <productId href="Product#GZ-2644"/>
@@ -7682,7 +7718,7 @@
     <partyId href="Party#DemoSupplier"/>
     <roleTypeId href="RoleType#SUPPLIER_AGENT"/>
   </contents>
-  <contents xsi:type="biz-order:OrderItemShipGroup" shipGroupSeqId="00001" carrierRoleTypeId="CARRIER">
+  <contents xsi:type="biz-order:OrderItemShipGroup" shipGroupSeqId="00001" carrierRoleTypeId="CARRIER" isGift="false" maySplit="false">
     <orderId href="OrderHeader#DEMO10091"/>
     <carrierPartyId href="Party#_NA_"/>
     <contactMechId href="ContactMech#9200"/>
@@ -7728,13 +7764,13 @@
     <orderId href="OrderHeader#DEMO10091"/>
     <shipmentId href="Shipment#9999"/>
   </contents>
-  <contents xsi:type="biz-order:OrderHeader" orderId="Demo1001" entryDate="2009-08-13T17:45:50.419+0200" grandTotal="48.00" orderDate="2009-08-13T17:45:50.419+0200" orderName="Demo Purchase Order " remainingSubTotal="48.00">
+  <contents xsi:type="biz-order:OrderHeader" orderId="Demo1001" entryDate="2009-08-13T17:45:50.419+0200" grandTotal="48.00" orderDate="2009-08-13T17:45:50.419+0200" orderName="Demo Purchase Order " priority="2" remainingSubTotal="48.00">
     <currencyUom href="Uom#USD"/>
     <orderTypeId href="OrderType#PURCHASE_ORDER"/>
     <salesChannelEnumId href="Enumeration#UNKNWN_SALES_CHANNEL"/>
     <statusId href="StatusItem#ORDER_COMPLETED"/>
   </contents>
-  <contents xsi:type="biz-order:OrderItem" orderItemSeqId="00001" estimatedDeliveryDate="2009-08-13T17:43:53.000+0200" itemDescription="GZ-2644-0 Round Gizmo" prodCatalogId="DemoCatalog" quantity="2.000000" selectedAmount="0.000000" unitListPrice="0.00" unitPrice="24.00">
+  <contents xsi:type="biz-order:OrderItem" orderItemSeqId="00001" estimatedDeliveryDate="2009-08-13T17:43:53.000+0200" isModifiedPrice="false" isPromo="false" itemDescription="GZ-2644-0 Round Gizmo" prodCatalogId="DemoCatalog" quantity="2.000000" selectedAmount="0.000000" unitListPrice="0.00" unitPrice="24.00">
     <orderId href="OrderHeader#Demo1001"/>
     <orderItemTypeId href="OrderItemType#PRODUCT_ORDER_ITEM"/>
     <productId href="Product#GZ-2644"/>
@@ -7763,7 +7799,7 @@
     <partyId href="Party#DemoSupplier"/>
     <roleTypeId href="RoleType#SUPPLIER_AGENT"/>
   </contents>
-  <contents xsi:type="biz-order:OrderItemShipGroup" shipGroupSeqId="00001" carrierRoleTypeId="CARRIER" estimatedDeliveryDate="2009-08-13T17:43:53.000+0200">
+  <contents xsi:type="biz-order:OrderItemShipGroup" shipGroupSeqId="00001" carrierRoleTypeId="CARRIER" estimatedDeliveryDate="2009-08-13T17:43:53.000+0200" isGift="false" maySplit="false">
     <orderId href="OrderHeader#Demo1001"/>
     <carrierPartyId href="Party#_NA_"/>
     <contactMechId href="ContactMech#9200"/>
@@ -7944,7 +7980,7 @@
     <reconcileStatusId href="StatusItem#AES_NOT_RECONCILED"/>
     <roleTypeId href="RoleType#BILL_FROM_VENDOR"/>
   </contents>
-  <contents xsi:type="biz-order:OrderHeader" orderId="Demo1002" entryDate="2009-08-17T14:23:49.475+0200" grandTotal="127.09" orderDate="2009-08-17T14:23:49.475+0200" orderName="Demo Sales Order" remainingSubTotal="107.98" visitId="10000">
+  <contents xsi:type="biz-order:OrderHeader" orderId="Demo1002" entryDate="2009-08-17T14:23:49.475+0200" grandTotal="127.09" orderDate="2009-08-17T14:23:49.475+0200" orderName="Demo Sales Order" priority="2" remainingSubTotal="107.98" visitId="10000">
     <createdBy href="UserLogin#admin"/>
     <currencyUom href="Uom#USD"/>
     <orderTypeId href="OrderType#SALES_ORDER"/>
@@ -7952,13 +7988,13 @@
     <salesChannelEnumId href="Enumeration#WEB_SALES_CHANNEL"/>
     <statusId href="StatusItem#ORDER_COMPLETED"/>
   </contents>
-  <contents xsi:type="biz-order:OrderItem" orderItemSeqId="00001" itemDescription="Micro Chrome Widget" prodCatalogId="DemoCatalog" quantity="2.000000" selectedAmount="0.000000" unitListPrice="60.00" unitPrice="59.99">
+  <contents xsi:type="biz-order:OrderItem" orderItemSeqId="00001" isModifiedPrice="false" isPromo="false" itemDescription="Micro Chrome Widget" prodCatalogId="DemoCatalog" quantity="2.000000" selectedAmount="0.000000" unitListPrice="60.00" unitPrice="59.99">
     <orderId href="OrderHeader#Demo1002"/>
     <orderItemTypeId href="OrderItemType#PRODUCT_ORDER_ITEM"/>
     <productId href="Product#WG-1111"/>
     <statusId href="StatusItem#ITEM_COMPLETED"/>
   </contents>
-  <contents xsi:type="biz-order:OrderItem" orderItemSeqId="00004" isPromo="true" itemDescription="Micro Chrome Widget" quantity="1.000000" selectedAmount="0.000000" unitListPrice="60.00" unitPrice="59.99">
+  <contents xsi:type="biz-order:OrderItem" orderItemSeqId="00004" isModifiedPrice="false" isPromo="true" itemDescription="Micro Chrome Widget" quantity="1.000000" selectedAmount="0.000000" unitListPrice="60.00" unitPrice="59.99">
     <orderId href="OrderHeader#Demo1002"/>
     <orderItemTypeId href="OrderItemType#PRODUCT_ORDER_ITEM"/>
     <productId href="Product#WG-1111"/>
@@ -8001,7 +8037,7 @@
     <partyId href="Party#DemoCustomer"/>
     <roleTypeId href="RoleType#SHIP_TO_CUSTOMER"/>
   </contents>
-  <contents xsi:type="biz-order:OrderItemShipGroup" shipGroupSeqId="00001" carrierRoleTypeId="CARRIER">
+  <contents xsi:type="biz-order:OrderItemShipGroup" shipGroupSeqId="00001" carrierRoleTypeId="CARRIER" isGift="false" maySplit="false">
     <orderId href="OrderHeader#Demo1002"/>
     <carrierPartyId href="Party#UPS"/>
     <contactMechId href="ContactMech#9015"/>
@@ -8056,7 +8092,7 @@
     <primaryGeoId href="Geo#_NA_"/>
     <taxAuthorityRateSeqId href="TaxAuthorityRateProduct#9000"/>
   </contents>
-  <contents xsi:type="biz-order:OrderPaymentPreference" orderPaymentPreferenceId="9001" createdDate="2009-08-17T14:56:44.573+0200" maxAmount="127.09" processAttempt="1">
+  <contents xsi:type="biz-order:OrderPaymentPreference" orderPaymentPreferenceId="9001" createdDate="2009-08-17T14:56:44.573+0200" maxAmount="127.09" needsNsfRetry="false" overflowFlag="false" presentFlag="false" processAttempt="1" swipedFlag="false">
     <orderId href="OrderHeader#Demo1002"/>
     <paymentMethodId href="PaymentMethod#9015"/>
     <paymentMethodTypeId href="PaymentMethodType#CREDIT_CARD"/>
