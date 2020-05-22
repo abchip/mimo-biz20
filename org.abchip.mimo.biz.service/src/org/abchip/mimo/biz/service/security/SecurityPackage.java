@@ -209,6 +209,126 @@ public interface SecurityPackage extends EPackage {
 
 
 	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.security.impl.UserCredentialFromExternalIdImpl <em>User Credential From External Id</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.security.impl.UserCredentialFromExternalIdImpl
+	 * @see org.abchip.mimo.biz.service.security.impl.SecurityPackageImpl#getUserCredentialFromExternalId()
+	 * @generated
+	 */
+	int USER_CREDENTIAL_FROM_EXTERNAL_ID = 2;
+
+	/**
+	 * The feature id for the '<em><b>Locale</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_CREDENTIAL_FROM_EXTERNAL_ID__LOCALE = ServicePackage.SERVICE_REQUEST__LOCALE;
+
+	/**
+	 * The feature id for the '<em><b>Tenant</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_CREDENTIAL_FROM_EXTERNAL_ID__TENANT = ServicePackage.SERVICE_REQUEST__TENANT;
+
+	/**
+	 * The feature id for the '<em><b>Context</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_CREDENTIAL_FROM_EXTERNAL_ID__CONTEXT = ServicePackage.SERVICE_REQUEST__CONTEXT;
+
+	/**
+	 * The feature id for the '<em><b>User Profile</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_CREDENTIAL_FROM_EXTERNAL_ID__USER_PROFILE = ServicePackage.SERVICE_REQUEST__USER_PROFILE;
+
+	/**
+	 * The feature id for the '<em><b>User Id</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_CREDENTIAL_FROM_EXTERNAL_ID__USER_ID = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 0;
+
+	/**
+	 * The number of structural features of the '<em>User Credential From External Id</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_CREDENTIAL_FROM_EXTERNAL_ID_FEATURE_COUNT = ServicePackage.SERVICE_REQUEST_FEATURE_COUNT + 1;
+
+	/**
+	 * The meta object id for the '{@link org.abchip.mimo.biz.service.security.impl.UserCredentialFromExternalIdResponseImpl <em>User Credential From External Id Response</em>}' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see org.abchip.mimo.biz.service.security.impl.UserCredentialFromExternalIdResponseImpl
+	 * @see org.abchip.mimo.biz.service.security.impl.SecurityPackageImpl#getUserCredentialFromExternalIdResponse()
+	 * @generated
+	 */
+	int USER_CREDENTIAL_FROM_EXTERNAL_ID_RESPONSE = 3;
+
+	/**
+	 * The feature id for the '<em><b>Error Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_CREDENTIAL_FROM_EXTERNAL_ID_RESPONSE__ERROR_MESSAGE = ServicePackage.SERVICE_RESPONSE__ERROR_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>Success Message</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_CREDENTIAL_FROM_EXTERNAL_ID_RESPONSE__SUCCESS_MESSAGE = ServicePackage.SERVICE_RESPONSE__SUCCESS_MESSAGE;
+
+	/**
+	 * The feature id for the '<em><b>User</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_CREDENTIAL_FROM_EXTERNAL_ID_RESPONSE__USER = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 0;
+
+	/**
+	 * The feature id for the '<em><b>Password</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_CREDENTIAL_FROM_EXTERNAL_ID_RESPONSE__PASSWORD = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 1;
+
+	/**
+	 * The number of structural features of the '<em>User Credential From External Id Response</em>' class.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_CREDENTIAL_FROM_EXTERNAL_ID_RESPONSE_FEATURE_COUNT = ServicePackage.SERVICE_RESPONSE_FEATURE_COUNT + 2;
+
+
+	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.security.CheckExternalLoginUser <em>Check External Login User</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -293,6 +413,59 @@ public interface SecurityPackage extends EPackage {
 	 * @generated
 	 */
 	EClass getCheckExternalLoginUserResponse();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.security.UserCredentialFromExternalId <em>User Credential From External Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>User Credential From External Id</em>'.
+	 * @see org.abchip.mimo.biz.service.security.UserCredentialFromExternalId
+	 * @generated
+	 */
+	EClass getUserCredentialFromExternalId();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.security.UserCredentialFromExternalId#getUserId <em>User Id</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>User Id</em>'.
+	 * @see org.abchip.mimo.biz.service.security.UserCredentialFromExternalId#getUserId()
+	 * @see #getUserCredentialFromExternalId()
+	 * @generated
+	 */
+	EAttribute getUserCredentialFromExternalId_UserId();
+
+	/**
+	 * Returns the meta object for class '{@link org.abchip.mimo.biz.service.security.UserCredentialFromExternalIdResponse <em>User Credential From External Id Response</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for class '<em>User Credential From External Id Response</em>'.
+	 * @see org.abchip.mimo.biz.service.security.UserCredentialFromExternalIdResponse
+	 * @generated
+	 */
+	EClass getUserCredentialFromExternalIdResponse();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.security.UserCredentialFromExternalIdResponse#getUser <em>User</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>User</em>'.
+	 * @see org.abchip.mimo.biz.service.security.UserCredentialFromExternalIdResponse#getUser()
+	 * @see #getUserCredentialFromExternalIdResponse()
+	 * @generated
+	 */
+	EAttribute getUserCredentialFromExternalIdResponse_User();
+
+	/**
+	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.service.security.UserCredentialFromExternalIdResponse#getPassword <em>Password</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Password</em>'.
+	 * @see org.abchip.mimo.biz.service.security.UserCredentialFromExternalIdResponse#getPassword()
+	 * @see #getUserCredentialFromExternalIdResponse()
+	 * @generated
+	 */
+	EAttribute getUserCredentialFromExternalIdResponse_Password();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -383,6 +556,50 @@ public interface SecurityPackage extends EPackage {
 		 * @generated
 		 */
 		EClass CHECK_EXTERNAL_LOGIN_USER_RESPONSE = eINSTANCE.getCheckExternalLoginUserResponse();
+
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.security.impl.UserCredentialFromExternalIdImpl <em>User Credential From External Id</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.security.impl.UserCredentialFromExternalIdImpl
+		 * @see org.abchip.mimo.biz.service.security.impl.SecurityPackageImpl#getUserCredentialFromExternalId()
+		 * @generated
+		 */
+		EClass USER_CREDENTIAL_FROM_EXTERNAL_ID = eINSTANCE.getUserCredentialFromExternalId();
+
+		/**
+		 * The meta object literal for the '<em><b>User Id</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_CREDENTIAL_FROM_EXTERNAL_ID__USER_ID = eINSTANCE.getUserCredentialFromExternalId_UserId();
+
+		/**
+		 * The meta object literal for the '{@link org.abchip.mimo.biz.service.security.impl.UserCredentialFromExternalIdResponseImpl <em>User Credential From External Id Response</em>}' class.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @see org.abchip.mimo.biz.service.security.impl.UserCredentialFromExternalIdResponseImpl
+		 * @see org.abchip.mimo.biz.service.security.impl.SecurityPackageImpl#getUserCredentialFromExternalIdResponse()
+		 * @generated
+		 */
+		EClass USER_CREDENTIAL_FROM_EXTERNAL_ID_RESPONSE = eINSTANCE.getUserCredentialFromExternalIdResponse();
+
+		/**
+		 * The meta object literal for the '<em><b>User</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_CREDENTIAL_FROM_EXTERNAL_ID_RESPONSE__USER = eINSTANCE.getUserCredentialFromExternalIdResponse_User();
+
+		/**
+		 * The meta object literal for the '<em><b>Password</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute USER_CREDENTIAL_FROM_EXTERNAL_ID_RESPONSE__PASSWORD = eINSTANCE.getUserCredentialFromExternalIdResponse_Password();
 
 	}
 

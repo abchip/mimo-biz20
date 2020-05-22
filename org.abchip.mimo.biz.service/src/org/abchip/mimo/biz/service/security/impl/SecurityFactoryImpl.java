@@ -63,6 +63,8 @@ public class SecurityFactoryImpl extends EFactoryImpl implements SecurityFactory
 		switch (eClass.getClassifierID()) {
 			case SecurityPackage.CHECK_EXTERNAL_LOGIN_USER: return (EObject)createCheckExternalLoginUser();
 			case SecurityPackage.CHECK_EXTERNAL_LOGIN_USER_RESPONSE: return (EObject)createCheckExternalLoginUserResponse();
+			case SecurityPackage.USER_CREDENTIAL_FROM_EXTERNAL_ID: return (EObject)createUserCredentialFromExternalId();
+			case SecurityPackage.USER_CREDENTIAL_FROM_EXTERNAL_ID_RESPONSE: return (EObject)createUserCredentialFromExternalIdResponse();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -88,6 +90,28 @@ public class SecurityFactoryImpl extends EFactoryImpl implements SecurityFactory
 	public CheckExternalLoginUserResponse createCheckExternalLoginUserResponse() {
 		CheckExternalLoginUserResponseImpl checkExternalLoginUserResponse = new CheckExternalLoginUserResponseImpl();
 		return checkExternalLoginUserResponse;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UserCredentialFromExternalId createUserCredentialFromExternalId() {
+		UserCredentialFromExternalIdImpl userCredentialFromExternalId = new UserCredentialFromExternalIdImpl();
+		return userCredentialFromExternalId;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public UserCredentialFromExternalIdResponse createUserCredentialFromExternalIdResponse() {
+		UserCredentialFromExternalIdResponseImpl userCredentialFromExternalIdResponse = new UserCredentialFromExternalIdResponseImpl();
+		return userCredentialFromExternalIdResponse;
 	}
 
 	/**

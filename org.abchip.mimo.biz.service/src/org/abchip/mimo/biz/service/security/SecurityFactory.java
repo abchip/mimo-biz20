@@ -45,6 +45,24 @@ public interface SecurityFactory extends EFactory {
 	CheckExternalLoginUserResponse createCheckExternalLoginUserResponse();
 
 	/**
+	 * Returns a new object of class '<em>User Credential From External Id</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>User Credential From External Id</em>'.
+	 * @generated
+	 */
+	UserCredentialFromExternalId createUserCredentialFromExternalId();
+
+	/**
+	 * Returns a new object of class '<em>User Credential From External Id Response</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>User Credential From External Id Response</em>'.
+	 * @generated
+	 */
+	UserCredentialFromExternalIdResponse createUserCredentialFromExternalIdResponse();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

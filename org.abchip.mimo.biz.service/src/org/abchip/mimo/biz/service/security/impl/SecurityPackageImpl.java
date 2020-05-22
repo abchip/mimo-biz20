@@ -144,6 +144,8 @@ import org.abchip.mimo.biz.service.security.CheckExternalLoginUserResponse;
 import org.abchip.mimo.biz.service.security.SecurityFactory;
 import org.abchip.mimo.biz.service.security.SecurityPackage;
 
+import org.abchip.mimo.biz.service.security.UserCredentialFromExternalId;
+import org.abchip.mimo.biz.service.security.UserCredentialFromExternalIdResponse;
 import org.abchip.mimo.service.ServicePackage;
 
 import org.eclipse.emf.ecore.EAttribute;
@@ -173,6 +175,20 @@ public class SecurityPackageImpl extends EPackageImpl implements SecurityPackage
 	 * @generated
 	 */
 	private EClass checkExternalLoginUserResponseEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass userCredentialFromExternalIdEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass userCredentialFromExternalIdResponseEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -410,6 +426,56 @@ public class SecurityPackageImpl extends EPackageImpl implements SecurityPackage
 	 * @generated
 	 */
 	@Override
+	public EClass getUserCredentialFromExternalId() {
+		return userCredentialFromExternalIdEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserCredentialFromExternalId_UserId() {
+		return (EAttribute)userCredentialFromExternalIdEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getUserCredentialFromExternalIdResponse() {
+		return userCredentialFromExternalIdResponseEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserCredentialFromExternalIdResponse_User() {
+		return (EAttribute)userCredentialFromExternalIdResponseEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getUserCredentialFromExternalIdResponse_Password() {
+		return (EAttribute)userCredentialFromExternalIdResponseEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public SecurityFactory getSecurityFactory() {
 		return (SecurityFactory)getEFactoryInstance();
 	}
@@ -442,6 +508,13 @@ public class SecurityPackageImpl extends EPackageImpl implements SecurityPackage
 		createEAttribute(checkExternalLoginUserEClass, CHECK_EXTERNAL_LOGIN_USER__USER_ID);
 
 		checkExternalLoginUserResponseEClass = createEClass(CHECK_EXTERNAL_LOGIN_USER_RESPONSE);
+
+		userCredentialFromExternalIdEClass = createEClass(USER_CREDENTIAL_FROM_EXTERNAL_ID);
+		createEAttribute(userCredentialFromExternalIdEClass, USER_CREDENTIAL_FROM_EXTERNAL_ID__USER_ID);
+
+		userCredentialFromExternalIdResponseEClass = createEClass(USER_CREDENTIAL_FROM_EXTERNAL_ID_RESPONSE);
+		createEAttribute(userCredentialFromExternalIdResponseEClass, USER_CREDENTIAL_FROM_EXTERNAL_ID_RESPONSE__USER);
+		createEAttribute(userCredentialFromExternalIdResponseEClass, USER_CREDENTIAL_FROM_EXTERNAL_ID_RESPONSE__PASSWORD);
 	}
 
 	/**
@@ -480,6 +553,11 @@ public class SecurityPackageImpl extends EPackageImpl implements SecurityPackage
 		g1.getETypeArguments().add(g2);
 		checkExternalLoginUserEClass.getEGenericSuperTypes().add(g1);
 		checkExternalLoginUserResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
+		g1 = createEGenericType(theServicePackage.getServiceRequest());
+		g2 = createEGenericType(this.getUserCredentialFromExternalIdResponse());
+		g1.getETypeArguments().add(g2);
+		userCredentialFromExternalIdEClass.getEGenericSuperTypes().add(g1);
+		userCredentialFromExternalIdResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(checkExternalLoginUserEClass, CheckExternalLoginUser.class, "CheckExternalLoginUser", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -491,6 +569,13 @@ public class SecurityPackageImpl extends EPackageImpl implements SecurityPackage
 		initEAttribute(getCheckExternalLoginUser_UserId(), ecorePackage.getEString(), "userId", "@general/currency.uom.id.default", 1, 1, CheckExternalLoginUser.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(checkExternalLoginUserResponseEClass, CheckExternalLoginUserResponse.class, "CheckExternalLoginUserResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+		initEClass(userCredentialFromExternalIdEClass, UserCredentialFromExternalId.class, "UserCredentialFromExternalId", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getUserCredentialFromExternalId_UserId(), ecorePackage.getEString(), "userId", "@general/currency.uom.id.default", 1, 1, UserCredentialFromExternalId.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(userCredentialFromExternalIdResponseEClass, UserCredentialFromExternalIdResponse.class, "UserCredentialFromExternalIdResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getUserCredentialFromExternalIdResponse_User(), ecorePackage.getEString(), "user", "@general/currency.uom.id.default", 1, 1, UserCredentialFromExternalIdResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserCredentialFromExternalIdResponse_Password(), ecorePackage.getEString(), "password", "@general/currency.uom.id.default", 1, 1, UserCredentialFromExternalIdResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

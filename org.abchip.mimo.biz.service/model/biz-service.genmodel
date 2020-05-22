@@ -224,6 +224,13 @@
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//security/CheckExternalLoginUser/userId"/>
       </genClasses>
       <genClasses ecoreClass="biz-service.ecore#//security/CheckExternalLoginUserResponse"/>
+      <genClasses ecoreClass="biz-service.ecore#//security/UserCredentialFromExternalId">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//security/UserCredentialFromExternalId/userId"/>
+      </genClasses>
+      <genClasses ecoreClass="biz-service.ecore#//security/UserCredentialFromExternalIdResponse">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//security/UserCredentialFromExternalIdResponse/user"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//security/UserCredentialFromExternalIdResponse/password"/>
+      </genClasses>
     </nestedGenPackages>
     <nestedGenPackages prefix="Service" basePackage="org.abchip.mimo.biz.service"
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//service"/>
