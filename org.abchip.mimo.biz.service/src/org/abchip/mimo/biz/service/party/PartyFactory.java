@@ -45,6 +45,42 @@ public interface PartyFactory extends EFactory {
 	GetPartyDefaultResponse createGetPartyDefaultResponse();
 
 	/**
+	 * Returns a new object of class '<em>Create Party Contact Mech</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Create Party Contact Mech</em>'.
+	 * @generated
+	 */
+	CreatePartyContactMech createCreatePartyContactMech();
+
+	/**
+	 * Returns a new object of class '<em>Create Party Contact Mech Response</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Create Party Contact Mech Response</em>'.
+	 * @generated
+	 */
+	CreatePartyContactMechResponse createCreatePartyContactMechResponse();
+
+	/**
+	 * Returns a new object of class '<em>Create Party Contact Mech Purpose</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Create Party Contact Mech Purpose</em>'.
+	 * @generated
+	 */
+	CreatePartyContactMechPurpose createCreatePartyContactMechPurpose();
+
+	/**
+	 * Returns a new object of class '<em>Create Party Contact Mech Purpose Response</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Create Party Contact Mech Purpose Response</em>'.
+	 * @generated
+	 */
+	CreatePartyContactMechPurposeResponse createCreatePartyContactMechPurposeResponse();
+
+	/**
 	 * Returns the package supported by this factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

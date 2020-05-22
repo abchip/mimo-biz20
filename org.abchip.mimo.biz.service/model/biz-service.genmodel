@@ -11,7 +11,7 @@
     featureDelegation="Reflective" containmentProxies="true" suppressNotification="true"
     complianceLevel="8.0" copyrightFields="false" editPluginID="org.abchip.mimo.biz.service.edit"
     editorPluginID="org.abchip.mimo.biz.service.editor" testsPluginID="org.abchip.mimo.biz.service.tests"
-    language="EN" usedGenPackages="../../org.abchip.mimo.biz.core/model/biz.genmodel#//biz ../../org.abchip.mimo.biz.model/model/biz-model.genmodel#//model ../../org.abchip.mimo.core/model/mimo.genmodel#//mimo"
+    language="EN" usedGenPackages="../../org.abchip.mimo.biz.core/model/biz.genmodel#//biz ../../org.abchip.mimo.biz.model/model/biz-model.genmodel#//model ../../org.abchip.mimo.core/model/mimo.genmodel#/0/mimo"
     importOrganizing="true">
   <foreignModel>biz-service.ecore</foreignModel>
   <genPackages prefix="BizService" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
@@ -131,6 +131,34 @@
     </nestedGenPackages>
     <nestedGenPackages prefix="Party" basePackage="org.abchip.mimo.biz.service" disposableProviderFactory="true"
         adapterFactory="false" ecorePackage="biz-service.ecore#//party">
+      <genClasses ecoreClass="biz-service.ecore#//party/CreatePartyContactMech">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//party/CreatePartyContactMech/allowSolicitation"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//party/CreatePartyContactMech/comments"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//party/CreatePartyContactMech/contactMechId"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//party/CreatePartyContactMech/contactMechPurposeTypeId"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//party/CreatePartyContactMech/contactMechTypeId"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//party/CreatePartyContactMech/extension"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//party/CreatePartyContactMech/fromDate"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//party/CreatePartyContactMech/infoString"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//party/CreatePartyContactMech/monthsWithContactMech"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//party/CreatePartyContactMech/partyId"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//party/CreatePartyContactMech/roleTypeId"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//party/CreatePartyContactMech/thruDate"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//party/CreatePartyContactMech/verified"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//party/CreatePartyContactMech/yearsWithContactMech"/>
+      </genClasses>
+      <genClasses ecoreClass="biz-service.ecore#//party/CreatePartyContactMechResponse">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//party/CreatePartyContactMechResponse/contactMechId"/>
+      </genClasses>
+      <genClasses ecoreClass="biz-service.ecore#//party/CreatePartyContactMechPurpose">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//party/CreatePartyContactMechPurpose/contactMechId"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//party/CreatePartyContactMechPurpose/contactMechPurposeTypeId"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//party/CreatePartyContactMechPurpose/fromDate"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//party/CreatePartyContactMechPurpose/partyId"/>
+      </genClasses>
+      <genClasses ecoreClass="biz-service.ecore#//party/CreatePartyContactMechPurposeResponse">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//party/CreatePartyContactMechPurposeResponse/fromDate"/>
+      </genClasses>
       <genClasses ecoreClass="biz-service.ecore#//party/GetPartyDefault"/>
       <genClasses ecoreClass="biz-service.ecore#//party/GetPartyDefaultResponse">
         <genFeatures notify="false" createChild="false" propertySortChoices="true"

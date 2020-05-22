@@ -61,6 +61,10 @@ public class PartyFactoryImpl extends EFactoryImpl implements PartyFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
+			case PartyPackage.CREATE_PARTY_CONTACT_MECH: return (EObject)createCreatePartyContactMech();
+			case PartyPackage.CREATE_PARTY_CONTACT_MECH_RESPONSE: return (EObject)createCreatePartyContactMechResponse();
+			case PartyPackage.CREATE_PARTY_CONTACT_MECH_PURPOSE: return (EObject)createCreatePartyContactMechPurpose();
+			case PartyPackage.CREATE_PARTY_CONTACT_MECH_PURPOSE_RESPONSE: return (EObject)createCreatePartyContactMechPurposeResponse();
 			case PartyPackage.GET_PARTY_DEFAULT: return (EObject)createGetPartyDefault();
 			case PartyPackage.GET_PARTY_DEFAULT_RESPONSE: return (EObject)createGetPartyDefaultResponse();
 			default:
@@ -88,6 +92,50 @@ public class PartyFactoryImpl extends EFactoryImpl implements PartyFactory {
 	public GetPartyDefaultResponse createGetPartyDefaultResponse() {
 		GetPartyDefaultResponseImpl getPartyDefaultResponse = new GetPartyDefaultResponseImpl();
 		return getPartyDefaultResponse;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CreatePartyContactMech createCreatePartyContactMech() {
+		CreatePartyContactMechImpl createPartyContactMech = new CreatePartyContactMechImpl();
+		return createPartyContactMech;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CreatePartyContactMechResponse createCreatePartyContactMechResponse() {
+		CreatePartyContactMechResponseImpl createPartyContactMechResponse = new CreatePartyContactMechResponseImpl();
+		return createPartyContactMechResponse;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CreatePartyContactMechPurpose createCreatePartyContactMechPurpose() {
+		CreatePartyContactMechPurposeImpl createPartyContactMechPurpose = new CreatePartyContactMechPurposeImpl();
+		return createPartyContactMechPurpose;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public CreatePartyContactMechPurposeResponse createCreatePartyContactMechPurposeResponse() {
+		CreatePartyContactMechPurposeResponseImpl createPartyContactMechPurposeResponse = new CreatePartyContactMechPurposeResponseImpl();
+		return createPartyContactMechPurposeResponse;
 	}
 
 	/**

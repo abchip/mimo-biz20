@@ -132,6 +132,10 @@ import org.abchip.mimo.biz.service.common.impl.CommonPackageImpl;
 import org.abchip.mimo.biz.service.entity.impl.EntityPackageImpl;
 import org.abchip.mimo.biz.service.order.impl.OrderPackageImpl;
 
+import org.abchip.mimo.biz.service.party.CreatePartyContactMech;
+import org.abchip.mimo.biz.service.party.CreatePartyContactMechPurpose;
+import org.abchip.mimo.biz.service.party.CreatePartyContactMechPurposeResponse;
+import org.abchip.mimo.biz.service.party.CreatePartyContactMechResponse;
 import org.abchip.mimo.biz.service.party.GetPartyDefault;
 import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
 import org.abchip.mimo.biz.service.party.PartyFactory;
@@ -142,6 +146,7 @@ import org.abchip.mimo.java.JavaPackage;
 
 import org.abchip.mimo.service.ServicePackage;
 
+import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
@@ -169,6 +174,34 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	private EClass getPartyDefaultResponseEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass createPartyContactMechEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass createPartyContactMechResponseEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass createPartyContactMechPurposeEClass = null;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass createPartyContactMechPurposeResponseEClass = null;
 
 	/**
 	 * Creates an instance of the model <b>Package</b>, registered with
@@ -362,6 +395,246 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 	 * @generated
 	 */
 	@Override
+	public EClass getCreatePartyContactMech() {
+		return createPartyContactMechEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreatePartyContactMech_AllowSolicitation() {
+		return (EAttribute)createPartyContactMechEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreatePartyContactMech_Comments() {
+		return (EAttribute)createPartyContactMechEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreatePartyContactMech_ContactMechId() {
+		return (EAttribute)createPartyContactMechEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreatePartyContactMech_ContactMechPurposeTypeId() {
+		return (EAttribute)createPartyContactMechEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreatePartyContactMech_ContactMechTypeId() {
+		return (EAttribute)createPartyContactMechEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreatePartyContactMech_Extension() {
+		return (EAttribute)createPartyContactMechEClass.getEStructuralFeatures().get(5);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreatePartyContactMech_FromDate() {
+		return (EAttribute)createPartyContactMechEClass.getEStructuralFeatures().get(6);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreatePartyContactMech_InfoString() {
+		return (EAttribute)createPartyContactMechEClass.getEStructuralFeatures().get(7);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreatePartyContactMech_MonthsWithContactMech() {
+		return (EAttribute)createPartyContactMechEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreatePartyContactMech_PartyId() {
+		return (EAttribute)createPartyContactMechEClass.getEStructuralFeatures().get(9);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreatePartyContactMech_RoleTypeId() {
+		return (EAttribute)createPartyContactMechEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreatePartyContactMech_ThruDate() {
+		return (EAttribute)createPartyContactMechEClass.getEStructuralFeatures().get(11);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreatePartyContactMech_Verified() {
+		return (EAttribute)createPartyContactMechEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreatePartyContactMech_YearsWithContactMech() {
+		return (EAttribute)createPartyContactMechEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCreatePartyContactMechResponse() {
+		return createPartyContactMechResponseEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreatePartyContactMechResponse_ContactMechId() {
+		return (EAttribute)createPartyContactMechResponseEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCreatePartyContactMechPurpose() {
+		return createPartyContactMechPurposeEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreatePartyContactMechPurpose_ContactMechId() {
+		return (EAttribute)createPartyContactMechPurposeEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreatePartyContactMechPurpose_ContactMechPurposeTypeId() {
+		return (EAttribute)createPartyContactMechPurposeEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreatePartyContactMechPurpose_FromDate() {
+		return (EAttribute)createPartyContactMechPurposeEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreatePartyContactMechPurpose_PartyId() {
+		return (EAttribute)createPartyContactMechPurposeEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EClass getCreatePartyContactMechPurposeResponse() {
+		return createPartyContactMechPurposeResponseEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getCreatePartyContactMechPurposeResponse_FromDate() {
+		return (EAttribute)createPartyContactMechPurposeResponseEClass.getEStructuralFeatures().get(0);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public PartyFactory getPartyFactory() {
 		return (PartyFactory)getEFactoryInstance();
 	}
@@ -385,6 +658,34 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		isCreated = true;
 
 		// Create classes and their features
+		createPartyContactMechEClass = createEClass(CREATE_PARTY_CONTACT_MECH);
+		createEAttribute(createPartyContactMechEClass, CREATE_PARTY_CONTACT_MECH__ALLOW_SOLICITATION);
+		createEAttribute(createPartyContactMechEClass, CREATE_PARTY_CONTACT_MECH__COMMENTS);
+		createEAttribute(createPartyContactMechEClass, CREATE_PARTY_CONTACT_MECH__CONTACT_MECH_ID);
+		createEAttribute(createPartyContactMechEClass, CREATE_PARTY_CONTACT_MECH__CONTACT_MECH_PURPOSE_TYPE_ID);
+		createEAttribute(createPartyContactMechEClass, CREATE_PARTY_CONTACT_MECH__CONTACT_MECH_TYPE_ID);
+		createEAttribute(createPartyContactMechEClass, CREATE_PARTY_CONTACT_MECH__EXTENSION);
+		createEAttribute(createPartyContactMechEClass, CREATE_PARTY_CONTACT_MECH__FROM_DATE);
+		createEAttribute(createPartyContactMechEClass, CREATE_PARTY_CONTACT_MECH__INFO_STRING);
+		createEAttribute(createPartyContactMechEClass, CREATE_PARTY_CONTACT_MECH__MONTHS_WITH_CONTACT_MECH);
+		createEAttribute(createPartyContactMechEClass, CREATE_PARTY_CONTACT_MECH__PARTY_ID);
+		createEAttribute(createPartyContactMechEClass, CREATE_PARTY_CONTACT_MECH__ROLE_TYPE_ID);
+		createEAttribute(createPartyContactMechEClass, CREATE_PARTY_CONTACT_MECH__THRU_DATE);
+		createEAttribute(createPartyContactMechEClass, CREATE_PARTY_CONTACT_MECH__VERIFIED);
+		createEAttribute(createPartyContactMechEClass, CREATE_PARTY_CONTACT_MECH__YEARS_WITH_CONTACT_MECH);
+
+		createPartyContactMechResponseEClass = createEClass(CREATE_PARTY_CONTACT_MECH_RESPONSE);
+		createEAttribute(createPartyContactMechResponseEClass, CREATE_PARTY_CONTACT_MECH_RESPONSE__CONTACT_MECH_ID);
+
+		createPartyContactMechPurposeEClass = createEClass(CREATE_PARTY_CONTACT_MECH_PURPOSE);
+		createEAttribute(createPartyContactMechPurposeEClass, CREATE_PARTY_CONTACT_MECH_PURPOSE__CONTACT_MECH_ID);
+		createEAttribute(createPartyContactMechPurposeEClass, CREATE_PARTY_CONTACT_MECH_PURPOSE__CONTACT_MECH_PURPOSE_TYPE_ID);
+		createEAttribute(createPartyContactMechPurposeEClass, CREATE_PARTY_CONTACT_MECH_PURPOSE__FROM_DATE);
+		createEAttribute(createPartyContactMechPurposeEClass, CREATE_PARTY_CONTACT_MECH_PURPOSE__PARTY_ID);
+
+		createPartyContactMechPurposeResponseEClass = createEClass(CREATE_PARTY_CONTACT_MECH_PURPOSE_RESPONSE);
+		createEAttribute(createPartyContactMechPurposeResponseEClass, CREATE_PARTY_CONTACT_MECH_PURPOSE_RESPONSE__FROM_DATE);
+
 		getPartyDefaultEClass = createEClass(GET_PARTY_DEFAULT);
 
 		getPartyDefaultResponseEClass = createEClass(GET_PARTY_DEFAULT_RESPONSE);
@@ -427,7 +728,17 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 
 		// Add supertypes to classes
 		EGenericType g1 = createEGenericType(theServicePackage.getServiceRequest());
-		EGenericType g2 = createEGenericType(this.getGetPartyDefaultResponse());
+		EGenericType g2 = createEGenericType(this.getCreatePartyContactMechResponse());
+		g1.getETypeArguments().add(g2);
+		createPartyContactMechEClass.getEGenericSuperTypes().add(g1);
+		createPartyContactMechResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
+		g1 = createEGenericType(theServicePackage.getServiceRequest());
+		g2 = createEGenericType(this.getCreatePartyContactMechPurposeResponse());
+		g1.getETypeArguments().add(g2);
+		createPartyContactMechPurposeEClass.getEGenericSuperTypes().add(g1);
+		createPartyContactMechPurposeResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
+		g1 = createEGenericType(theServicePackage.getServiceRequest());
+		g2 = createEGenericType(this.getGetPartyDefaultResponse());
 		g1.getETypeArguments().add(g2);
 		getPartyDefaultEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(theJavaPackage.getJavaCallable());
@@ -437,6 +748,34 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		getPartyDefaultResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
 
 		// Initialize classes and features; add operations and parameters
+		initEClass(createPartyContactMechEClass, CreatePartyContactMech.class, "CreatePartyContactMech", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCreatePartyContactMech_AllowSolicitation(), ecorePackage.getEString(), "allowSolicitation", null, 0, 1, CreatePartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreatePartyContactMech_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, CreatePartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreatePartyContactMech_ContactMechId(), ecorePackage.getEString(), "contactMechId", null, 0, 1, CreatePartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreatePartyContactMech_ContactMechPurposeTypeId(), ecorePackage.getEString(), "contactMechPurposeTypeId", null, 0, 1, CreatePartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreatePartyContactMech_ContactMechTypeId(), ecorePackage.getEString(), "contactMechTypeId", null, 1, 1, CreatePartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreatePartyContactMech_Extension(), ecorePackage.getEString(), "extension", null, 0, 1, CreatePartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreatePartyContactMech_FromDate(), ecorePackage.getEDate(), "fromDate", null, 0, 1, CreatePartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreatePartyContactMech_InfoString(), ecorePackage.getEString(), "infoString", null, 0, 1, CreatePartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreatePartyContactMech_MonthsWithContactMech(), ecorePackage.getELong(), "monthsWithContactMech", null, 0, 1, CreatePartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreatePartyContactMech_PartyId(), ecorePackage.getEString(), "partyId", null, 0, 1, CreatePartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreatePartyContactMech_RoleTypeId(), ecorePackage.getEString(), "roleTypeId", null, 0, 1, CreatePartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreatePartyContactMech_ThruDate(), ecorePackage.getEDate(), "thruDate", null, 0, 1, CreatePartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreatePartyContactMech_Verified(), ecorePackage.getEString(), "verified", null, 0, 1, CreatePartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreatePartyContactMech_YearsWithContactMech(), ecorePackage.getELong(), "yearsWithContactMech", null, 0, 1, CreatePartyContactMech.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(createPartyContactMechResponseEClass, CreatePartyContactMechResponse.class, "CreatePartyContactMechResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCreatePartyContactMechResponse_ContactMechId(), ecorePackage.getEString(), "contactMechId", null, 0, 1, CreatePartyContactMechResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(createPartyContactMechPurposeEClass, CreatePartyContactMechPurpose.class, "CreatePartyContactMechPurpose", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCreatePartyContactMechPurpose_ContactMechId(), ecorePackage.getEString(), "contactMechId", null, 1, 1, CreatePartyContactMechPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreatePartyContactMechPurpose_ContactMechPurposeTypeId(), ecorePackage.getEString(), "contactMechPurposeTypeId", null, 1, 1, CreatePartyContactMechPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreatePartyContactMechPurpose_FromDate(), ecorePackage.getEDate(), "fromDate", null, 1, 1, CreatePartyContactMechPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCreatePartyContactMechPurpose_PartyId(), ecorePackage.getEString(), "partyId", null, 0, 1, CreatePartyContactMechPurpose.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
+		initEClass(createPartyContactMechPurposeResponseEClass, CreatePartyContactMechPurposeResponse.class, "CreatePartyContactMechPurposeResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getCreatePartyContactMechPurposeResponse_FromDate(), ecorePackage.getEDate(), "fromDate", null, 0, 1, CreatePartyContactMechPurposeResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+
 		initEClass(getPartyDefaultEClass, GetPartyDefault.class, "GetPartyDefault", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(getPartyDefaultResponseEClass, GetPartyDefaultResponse.class, "GetPartyDefaultResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
