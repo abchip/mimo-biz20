@@ -14,6 +14,7 @@ import java.util.Map;
 
 import org.abchip.mimo.biz.asf.plugins.ContextUtils;
 import org.abchip.mimo.context.Context;
+import org.abchip.mimo.entity.Delete;
 import org.abchip.mimo.entity.EntityContainer;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityIterator;
@@ -44,6 +45,8 @@ public class SeedServices {
 			Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
 
 			// remove containers
+			Delete<EntityContainer> delete = context.getServiceManager().prepare(Delete.class);
+			
 			ResourceWriter<EntityContainer> entityWriter = context.getResourceManager().getResourceWriter(EntityContainer.class);
 			try (EntityIterator<EntityContainer> conatinerIterator = entityWriter.find()) {
 				while (conatinerIterator.hasNext()) {

@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 
 import org.abchip.mimo.biz.model.accounting.invoice.Invoice;
 import org.abchip.mimo.biz.service.accounting.AccountingPackage;
-import org.abchip.mimo.biz.service.accounting.Invoice_GetTotal;
+import org.abchip.mimo.biz.service.accounting.GetTotalInvoice;
 import org.abchip.mimo.service.impl.ServiceMethodRequestImpl;
 import org.eclipse.emf.ecore.EClass;
 
@@ -21,13 +21,13 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class Invoice_GetTotalImpl extends ServiceMethodRequestImpl<Invoice, BigDecimal> implements Invoice_GetTotal {
+public class GetTotalInvoiceImpl extends ServiceMethodRequestImpl<Invoice, BigDecimal> implements GetTotalInvoice {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected Invoice_GetTotalImpl() {
+	protected GetTotalInvoiceImpl() {
 		super();
 	}
 
@@ -37,7 +37,7 @@ public class Invoice_GetTotalImpl extends ServiceMethodRequestImpl<Invoice, BigD
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return AccountingPackage.Literals.INVOICE_GET_TOTAL;
+		return AccountingPackage.Literals.GET_TOTAL_INVOICE;
 	}
 
 	/**
@@ -68,4 +68,4 @@ public class Invoice_GetTotalImpl extends ServiceMethodRequestImpl<Invoice, BigD
 		super.setEntity(newEntity);
 	}
 
-} // Invoice_GetTotalImpl
+} // GetTotalInvoiceImpl

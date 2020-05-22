@@ -61,7 +61,7 @@ public class AccountingFactoryImpl extends EFactoryImpl implements AccountingFac
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case AccountingPackage.INVOICE_GET_TOTAL: return (EObject)createInvoice_GetTotal();
+			case AccountingPackage.GET_TOTAL_INVOICE: return (EObject)createGetTotalInvoice();
 			case AccountingPackage.SET_INVOICE_STATUS: return (EObject)createSetInvoiceStatus();
 			case AccountingPackage.SET_INVOICE_STATUS_RESPONSE: return (EObject)createSetInvoiceStatusResponse();
 			case AccountingPackage.SET_PAYMENT_STATUS: return (EObject)createSetPaymentStatus();
@@ -73,6 +73,17 @@ public class AccountingFactoryImpl extends EFactoryImpl implements AccountingFac
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public GetTotalInvoice createGetTotalInvoice() {
+		GetTotalInvoiceImpl getTotalInvoice = new GetTotalInvoiceImpl();
+		return getTotalInvoice;
 	}
 
 	/**
@@ -139,17 +150,6 @@ public class AccountingFactoryImpl extends EFactoryImpl implements AccountingFac
 	public AddtaxResponse createAddtaxResponse() {
 		AddtaxResponseImpl addtaxResponse = new AddtaxResponseImpl();
 		return addtaxResponse;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public Invoice_GetTotal createInvoice_GetTotal() {
-		Invoice_GetTotalImpl invoice_GetTotal = new Invoice_GetTotalImpl();
-		return invoice_GetTotal;
 	}
 
 	/**

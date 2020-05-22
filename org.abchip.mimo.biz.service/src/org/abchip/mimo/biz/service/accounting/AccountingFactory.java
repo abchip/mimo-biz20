@@ -27,6 +27,15 @@ public interface AccountingFactory extends EFactory {
 	AccountingFactory eINSTANCE = org.abchip.mimo.biz.service.accounting.impl.AccountingFactoryImpl.init();
 
 	/**
+	 * Returns a new object of class '<em>Get Total Invoice</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return a new object of class '<em>Get Total Invoice</em>'.
+	 * @generated
+	 */
+	GetTotalInvoice createGetTotalInvoice();
+
+	/**
 	 * Returns a new object of class '<em>Set Payment Status</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -79,15 +88,6 @@ public interface AccountingFactory extends EFactory {
 	 * @generated
 	 */
 	AddtaxResponse createAddtaxResponse();
-
-	/**
-	 * Returns a new object of class '<em>Invoice Get Total</em>'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Invoice Get Total</em>'.
-	 * @generated
-	 */
-	Invoice_GetTotal createInvoice_GetTotal();
 
 	/**
 	 * Returns a new object of class '<em>Set Invoice Status</em>'.

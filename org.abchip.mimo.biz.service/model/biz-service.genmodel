@@ -18,7 +18,7 @@
       adapterFactory="false" ecorePackage="biz-service.ecore#/">
     <nestedGenPackages prefix="Accounting" basePackage="org.abchip.mimo.biz.service"
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//accounting">
-      <genClasses ecoreClass="biz-service.ecore#//accounting/Invoice_GetTotal"/>
+      <genClasses ecoreClass="biz-service.ecore#//accounting/GetTotalInvoice"/>
       <genClasses ecoreClass="biz-service.ecore#//accounting/SetInvoiceStatus">
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//accounting/SetInvoiceStatus/invoiceId"/>
         <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//accounting/SetInvoiceStatus/paidDate"/>

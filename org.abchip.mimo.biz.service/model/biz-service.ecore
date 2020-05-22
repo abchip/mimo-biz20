@@ -3,7 +3,7 @@
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="service" nsURI="http://www.abchip.org/mimo/biz/service" nsPrefix="biz-service">
   <eSubpackages name="accounting" nsURI="http://www.abchip.org/mimo/biz/service/accounting"
       nsPrefix="biz-accounting">
-    <eClassifiers xsi:type="ecore:EClass" name="Invoice_GetTotal">
+    <eClassifiers xsi:type="ecore:EClass" name="GetTotalInvoice">
       <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceMethodRequest">
         <eTypeArguments eClassifier="ecore:EClass ../../org.abchip.mimo.biz.model/model/biz-model.ecore#//accounting/invoice/Invoice"/>
         <eTypeArguments eClassifier="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal"/>

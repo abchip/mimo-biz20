@@ -129,7 +129,7 @@ import org.abchip.mimo.biz.service.accounting.AccountingFactory;
 import org.abchip.mimo.biz.service.accounting.AccountingPackage;
 import org.abchip.mimo.biz.service.accounting.Addtax;
 import org.abchip.mimo.biz.service.accounting.AddtaxResponse;
-import org.abchip.mimo.biz.service.accounting.Invoice_GetTotal;
+import org.abchip.mimo.biz.service.accounting.GetTotalInvoice;
 import org.abchip.mimo.biz.service.accounting.SetInvoiceStatus;
 import org.abchip.mimo.biz.service.accounting.SetInvoiceStatusResponse;
 import org.abchip.mimo.biz.service.accounting.SetPaymentStatus;
@@ -157,6 +157,13 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
  * @generated
  */
 public class AccountingPackageImpl extends EPackageImpl implements AccountingPackage {
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	private EClass getTotalInvoiceEClass = null;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -198,13 +205,6 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * @generated
 	 */
 	private EClass addtaxResponseEClass = null;
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	private EClass invoice_GetTotalEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -372,6 +372,16 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	 * @generated
 	 */
 	@Override
+	public EClass getGetTotalInvoice() {
+		return getTotalInvoiceEClass;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getSetPaymentStatus() {
 		return setPaymentStatusEClass;
 	}
@@ -474,16 +484,6 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 	@Override
 	public EClass getAddtaxResponse() {
 		return addtaxResponseEClass;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EClass getInvoice_GetTotal() {
-		return invoice_GetTotalEClass;
 	}
 
 	/**
@@ -595,7 +595,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 		isCreated = true;
 
 		// Create classes and their features
-		invoice_GetTotalEClass = createEClass(INVOICE_GET_TOTAL);
+		getTotalInvoiceEClass = createEClass(GET_TOTAL_INVOICE);
 
 		setInvoiceStatusEClass = createEClass(SET_INVOICE_STATUS);
 		createEAttribute(setInvoiceStatusEClass, SET_INVOICE_STATUS__INVOICE_ID);
@@ -662,7 +662,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 		g1.getETypeArguments().add(g2);
 		g2 = createEGenericType(ecorePackage.getEBigDecimal());
 		g1.getETypeArguments().add(g2);
-		invoice_GetTotalEClass.getEGenericSuperTypes().add(g1);
+		getTotalInvoiceEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(theServicePackage.getServiceRequest());
 		g2 = createEGenericType(this.getSetInvoiceStatusResponse());
 		g1.getETypeArguments().add(g2);
@@ -685,7 +685,7 @@ public class AccountingPackageImpl extends EPackageImpl implements AccountingPac
 		addtaxResponseEClass.getESuperTypes().add(theServicePackage.getServiceResponse());
 
 		// Initialize classes and features; add operations and parameters
-		initEClass(invoice_GetTotalEClass, Invoice_GetTotal.class, "Invoice_GetTotal", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEClass(getTotalInvoiceEClass, GetTotalInvoice.class, "GetTotalInvoice", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(setInvoiceStatusEClass, SetInvoiceStatus.class, "SetInvoiceStatus", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSetInvoiceStatus_InvoiceId(), ecorePackage.getEString(), "invoiceId", null, 1, 1, SetInvoiceStatus.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

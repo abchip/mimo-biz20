@@ -17,10 +17,10 @@ import org.abchip.mimo.service.ServiceMethodRequest;
  * <!-- end-user-doc -->
  *
  *
- * @see org.abchip.mimo.biz.service.accounting.AccountingPackage#getInvoice_GetTotal()
+ * @see org.abchip.mimo.biz.service.accounting.AccountingPackage#getGetTotalInvoice()
  * @model superTypes="org.abchip.mimo.service.ServiceMethodRequest&lt;org.abchip.mimo.biz.model.accounting.invoice.Invoice, org.eclipse.emf.ecore.EBigDecimal&gt;"
  * @generated
  */
-public interface Invoice_GetTotal extends ServiceMethodRequest<Invoice, BigDecimal> {
+public interface GetTotalInvoice extends ServiceMethodRequest<Invoice, BigDecimal> {
 
-} // Invoice_GetTotal
+} // GetTotalInvoice
