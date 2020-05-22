@@ -19,10 +19,7 @@ import org.abchip.mimo.biz.model.accounting.tax.PartyTaxAuthInfo;
 import org.abchip.mimo.biz.model.common.geo.Geo;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
-import org.abchip.mimo.biz.model.party.contact.ContactMechPurposeType;
 import org.abchip.mimo.biz.model.party.contact.ContactMechType;
-import org.abchip.mimo.biz.model.party.contact.PartyContactMech;
-import org.abchip.mimo.biz.model.party.contact.PartyContactMechPurpose;
 import org.abchip.mimo.biz.model.party.contact.PostalAddress;
 import org.abchip.mimo.biz.model.party.contact.TelecomNumber;
 import org.abchip.mimo.biz.model.party.party.Party;
@@ -35,14 +32,22 @@ import org.abchip.mimo.biz.model.party.party.Person;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.abchip.mimo.biz.service.common.GetCommonDefault;
 import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
+import org.abchip.mimo.biz.service.party.CreatePartyContactMech;
+import org.abchip.mimo.biz.service.party.CreatePartyContactMechPurpose;
+import org.abchip.mimo.biz.service.party.CreatePartyContactMechPurposeResponse;
+import org.abchip.mimo.biz.service.party.CreatePartyContactMechResponse;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceWriter;
+import org.abchip.mimo.service.ServiceException;
 import org.abchip.mimo.service.ServiceManager;
+import org.abchip.mimo.util.Logs;
+import org.osgi.service.log.Logger;
 
 public class CreateParty implements Callable<Long> {
 
+	private static final Logger LOGGER = Logs.getLogger(CreateParty.class);
 	Context context;
 	GetCommonDefaultResponse commonDefault;
 
@@ -59,16 +64,16 @@ public class CreateParty implements Callable<Long> {
 
 		long time1 = System.currentTimeMillis();
 
-		createPartyGroup("CUSTOMER");
-		createPerson("CUSTOMER");
-		createPartyGroup("SUPPLIER");
-		createPerson("SUPPLIER");
+		createPartyGroup(serviceManager, "CUSTOMER");
+		createPerson(serviceManager, "CUSTOMER");
+		createPartyGroup(serviceManager, "SUPPLIER");
+		createPerson(serviceManager, "SUPPLIER");
 
 		long time2 = System.currentTimeMillis();
 		return time2 - time1;
 	}
 
-	public void createPartyGroup(String role) throws ResourceException {
+	public void createPartyGroup(ServiceManager serviceManager, String role) throws ResourceException, ServiceException {
 
 		// Create PartyGroup
 		ResourceWriter<PartyGroup> partyGroupWriter = context.getResourceManager().getResourceWriter(PartyGroup.class);
@@ -80,10 +85,11 @@ public class CreateParty implements Callable<Long> {
 		partyGroup.setGroupName("Description Party " + role.toLowerCase());
 		partyGroupWriter.create(partyGroup);
 
-		createRelated(partyGroup, role);
+		createRelated(serviceManager, partyGroup, role);
+		LOGGER.info("Create PartyGroup " + role + " " + partyGroup.getID());
 	}
 
-	public void createPerson(String role) throws ResourceException {
+	public void createPerson(ServiceManager serviceManager, String role) throws ResourceException, ServiceException {
 
 		// Create Person
 		ResourceWriter<Person> personWriter = context.getResourceManager().getResourceWriter(Person.class);
@@ -91,14 +97,15 @@ public class CreateParty implements Callable<Long> {
 		person.setStatusId(context.createProxy(StatusItem.class, "PARTY_ENABLED"));
 		person.setPartyTypeId(context.createProxy(PartyType.class, "PERSON"));
 		person.setPreferredCurrencyUomId(commonDefault.getCurrencyUom());
-		person.setFirstName("First name " + role.toLowerCase() + " " + person.getID());
-		person.setLastName("Last name " + role.toLowerCase() + " " + person.getID());
+		person.setFirstName("First name " + role.toLowerCase());
+		person.setLastName("Last name " + role.toLowerCase());
 		personWriter.create(person);
 
-		createRelated(person, role);
+		createRelated(serviceManager, person, role);
+		LOGGER.info("Create Person " + role + " " + person.getID());
 	}
 
-	private void createRelated(Party party, String role) throws ResourceException {
+	private void createRelated(ServiceManager serviceManager, Party party, String role) throws ResourceException, ServiceException {
 
 		// Base role
 		ResourceWriter<PartyRole> partyRoleWriter = context.getResourceManager().getResourceWriter(PartyRole.class);
@@ -162,7 +169,7 @@ public class CreateParty implements Callable<Long> {
 		postalAddress.setCountryGeoId(commonDefault.getCountryGeo());
 		postalAddress.setStateProvinceGeoId(context.createProxy(Geo.class, "IT-MI"));
 		postalAddressWriter.create(postalAddress);
-		createPartyContactMech(context, party, postalAddress, Arrays.asList("GENERAL_LOCATION", "SHIPPING_LOCATION"));
+		createPartyContactMech(serviceManager, party, postalAddress, Arrays.asList("GENERAL_LOCATION", "SHIPPING_LOCATION"));
 
 		// Email
 		// ContactMech
@@ -171,7 +178,7 @@ public class CreateParty implements Callable<Long> {
 		contactMech.setInfoString("info" + party.getID() + "@gmail.com");
 		contactMech.setContactMechTypeId(context.createProxy(ContactMechType.class, "EMAIL_ADDRESS"));
 		contactMechWriter.create(contactMech);
-		createPartyContactMech(context, party, contactMech, Arrays.asList("PRIMARY_EMAIL"));
+		createPartyContactMech(serviceManager, party, contactMech, Arrays.asList("PRIMARY_EMAIL"));
 
 		// TelecomNumber
 		ResourceWriter<TelecomNumber> telecomNumberWriter = context.getResourceManager().getResourceWriter(TelecomNumber.class);
@@ -179,7 +186,7 @@ public class CreateParty implements Callable<Long> {
 		telecomNumber.setContactMechTypeId(context.createProxy(ContactMechType.class, "TELECOM_NUMBER"));
 		telecomNumber.setContactNumber(StressTestUtils.generateRandomString(3, true) + " " + StressTestUtils.generateRandomString(7, true));
 		telecomNumberWriter.create(telecomNumber);
-		createPartyContactMech(context, party, telecomNumber, Arrays.asList("PRIMARY_PHONE"));
+		createPartyContactMech(serviceManager, party, telecomNumber, Arrays.asList("PRIMARY_PHONE"));
 
 		// PartyTaxAuthInfo
 		ResourceWriter<PartyTaxAuthInfo> partyTaxAuthInfoWriter = context.getResourceManager().getResourceWriter(PartyTaxAuthInfo.class);
@@ -224,24 +231,41 @@ public class CreateParty implements Callable<Long> {
 		}
 	}
 
-	private void createPartyContactMech(Context context, Party party, ContactMech contactMech, List<String> purposeTypes) throws ResourceException {
+	private void createPartyContactMech(ServiceManager serviceManager, Party party, ContactMech contactMech, List<String> purposeTypes) throws ResourceException, ServiceException {
 
 		// PartyContactMech
-		ResourceWriter<PartyContactMech> partyContactMechWriter = context.getResourceManager().getResourceWriter(PartyContactMech.class);
-		PartyContactMech partyContactMech = partyContactMechWriter.make();
-		partyContactMech.setPartyId(party);
-		partyContactMech.setContactMechId(contactMech);
-		partyContactMech.setFromDate(new Date());
-		partyContactMechWriter.create(partyContactMech);
-
+		CreatePartyContactMech createPartyContactMech = serviceManager.prepare(CreatePartyContactMech.class);
+		if(purposeTypes.size()==1) {
+			createPartyContactMech.setPartyId(party.getID());
+			createPartyContactMech.setContactMechId(contactMech.getID());
+			createPartyContactMech.setContactMechTypeId(contactMech.getContactMechTypeId().getID());
+			createPartyContactMech.setContactMechPurposeTypeId(purposeTypes.get(0));
+			createPartyContactMech.setFromDate(new Date());
+			CreatePartyContactMechResponse response = serviceManager.execute(createPartyContactMech);
+			if (response.onError())
+				LOGGER.error(response.getErrorMessage());
+			return;
+		} else {
+			createPartyContactMech.setPartyId(party.getID());
+			createPartyContactMech.setContactMechId(contactMech.getID());
+			createPartyContactMech.setContactMechTypeId(contactMech.getContactMechTypeId().getID());
+			createPartyContactMech.setFromDate(new Date());
+			CreatePartyContactMechResponse response = serviceManager.execute(createPartyContactMech);
+			if (response.onError())
+				LOGGER.error(response.getErrorMessage());
+		}
+			
+		// PartyContactMechPurpose
 		for (String type : purposeTypes) {
-			ResourceWriter<PartyContactMechPurpose> partyContactMechPurposeWriter = context.getResourceManager().getResourceWriter(PartyContactMechPurpose.class);
-			PartyContactMechPurpose partyContactMechPurpose = partyContactMechPurposeWriter.make();
-			partyContactMechPurpose.setPartyId(party);
-			partyContactMechPurpose.setContactMechId(contactMech);
-			partyContactMechPurpose.setContactMechPurposeTypeId(context.createProxy(ContactMechPurposeType.class, type));
-			partyContactMechPurpose.setFromDate(new Date());
-			partyContactMechPurposeWriter.create(partyContactMechPurpose);
+			CreatePartyContactMechPurpose createPartyContactMechPurpose = serviceManager.prepare(CreatePartyContactMechPurpose.class);
+			createPartyContactMechPurpose.setContactMechId(contactMech.getID());
+			createPartyContactMechPurpose.setContactMechPurposeTypeId(type);
+			createPartyContactMechPurpose.setFromDate(new Date());
+			createPartyContactMechPurpose.setPartyId(party.getID());
+
+			CreatePartyContactMechPurposeResponse responsePurpose = serviceManager.execute(createPartyContactMechPurpose);
+			if (responsePurpose.onError())
+				LOGGER.error(responsePurpose.getErrorMessage());
 		}
 	}
 }
