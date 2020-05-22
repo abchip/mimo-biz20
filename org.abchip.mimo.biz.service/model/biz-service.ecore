@@ -337,7 +337,32 @@
     </eClassifiers>
   </eSubpackages>
   <eSubpackages name="security" nsURI="http://www.abchip.org/mimo/biz/service/security"
-      nsPrefix="biz-security"/>
+      nsPrefix="biz-security">
+    <eClassifiers xsi:type="ecore:EClass" name="CheckExternalLoginUser">
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="accessToken" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+          defaultValueLiteral="@general/currency.uom.id.default"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="email" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+          defaultValueLiteral="@general/currency.uom.id.default"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="firstName" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+          defaultValueLiteral="@general/currency.uom.id.default"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="lastName" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+          defaultValueLiteral="@general/currency.uom.id.default"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="provider" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+          defaultValueLiteral="@general/currency.uom.id.default"/>
+      <eStructuralFeatures xsi:type="ecore:EAttribute" name="userId" lowerBound="1"
+          eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+          defaultValueLiteral="@general/currency.uom.id.default"/>
+      <eGenericSuperTypes eClassifier="ecore:EClass ../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceRequest">
+        <eTypeArguments eClassifier="#//security/CheckExternalLoginUserResponse"/>
+      </eGenericSuperTypes>
+    </eClassifiers>
+    <eClassifiers xsi:type="ecore:EClass" name="CheckExternalLoginUserResponse" eSuperTypes="../../org.abchip.mimo.core/model/mimo.ecore#//service/ServiceResponse"/>
+  </eSubpackages>
   <eSubpackages name="service" nsURI="http://www.abchip.org/mimo/biz/service/service"
       nsPrefix="biz-service"/>
   <eSubpackages name="shipment" nsURI="http://www.abchip.org/mimo/biz/service/shipment"

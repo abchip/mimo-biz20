@@ -11,7 +11,7 @@
     featureDelegation="Reflective" containmentProxies="true" suppressNotification="true"
     complianceLevel="8.0" copyrightFields="false" editPluginID="org.abchip.mimo.biz.service.edit"
     editorPluginID="org.abchip.mimo.biz.service.editor" testsPluginID="org.abchip.mimo.biz.service.tests"
-    language="EN" usedGenPackages="../../org.abchip.mimo.biz.core/model/biz.genmodel#//biz ../../org.abchip.mimo.biz.model/model/biz-model.genmodel#//model ../../org.abchip.mimo.core/model/mimo.genmodel#/0/mimo"
+    language="EN" usedGenPackages="../../org.abchip.mimo.biz.core/model/biz.genmodel#//biz ../../org.abchip.mimo.biz.model/model/biz-model.genmodel#//model ../../org.abchip.mimo.core/model/mimo.genmodel#//mimo"
     importOrganizing="true">
   <foreignModel>biz-service.ecore</foreignModel>
   <genPackages prefix="BizService" basePackage="org.abchip.mimo.biz" disposableProviderFactory="true"
@@ -214,7 +214,17 @@
       </genClasses>
     </nestedGenPackages>
     <nestedGenPackages prefix="Security" basePackage="org.abchip.mimo.biz.service"
-        disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//security"/>
+        disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//security">
+      <genClasses ecoreClass="biz-service.ecore#//security/CheckExternalLoginUser">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//security/CheckExternalLoginUser/accessToken"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//security/CheckExternalLoginUser/email"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//security/CheckExternalLoginUser/firstName"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//security/CheckExternalLoginUser/lastName"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//security/CheckExternalLoginUser/provider"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-service.ecore#//security/CheckExternalLoginUser/userId"/>
+      </genClasses>
+      <genClasses ecoreClass="biz-service.ecore#//security/CheckExternalLoginUserResponse"/>
+    </nestedGenPackages>
     <nestedGenPackages prefix="Service" basePackage="org.abchip.mimo.biz.service"
         disposableProviderFactory="true" adapterFactory="false" ecorePackage="biz-service.ecore#//service"/>
     <nestedGenPackages prefix="Shipment" basePackage="org.abchip.mimo.biz.model."

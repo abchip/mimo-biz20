@@ -19,7 +19,9 @@ Export-Package: org.abchip.mimo.biz.service.accounting,
  org.abchip.mimo.biz.service.party,
  org.abchip.mimo.biz.service.party.impl,
  org.abchip.mimo.biz.service.product,
- org.abchip.mimo.biz.service.product.impl
+ org.abchip.mimo.biz.service.product.impl,
+ org.abchip.mimo.biz.service.security,
+ org.abchip.mimo.biz.service.security.impl
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,

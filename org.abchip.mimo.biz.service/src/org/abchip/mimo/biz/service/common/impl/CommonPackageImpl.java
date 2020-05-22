@@ -138,6 +138,8 @@ import org.abchip.mimo.biz.service.order.impl.OrderPackageImpl;
 
 import org.abchip.mimo.biz.service.party.impl.PartyPackageImpl;
 import org.abchip.mimo.biz.service.product.impl.ProductPackageImpl;
+import org.abchip.mimo.biz.service.security.SecurityPackage;
+import org.abchip.mimo.biz.service.security.impl.SecurityPackageImpl;
 import org.abchip.mimo.java.JavaPackage;
 import org.abchip.mimo.service.ServicePackage;
 
@@ -290,6 +292,8 @@ public class CommonPackageImpl extends EPackageImpl implements CommonPackage {
 		PartyPackageImpl thePartyPackage_1 = (PartyPackageImpl)(registeredPackage instanceof PartyPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.party.PartyPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.product.ProductPackage.eNS_URI);
 		ProductPackageImpl theProductPackage_1 = (ProductPackageImpl)(registeredPackage instanceof ProductPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.product.ProductPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(SecurityPackage.eNS_URI);
+		SecurityPackageImpl theSecurityPackage = (SecurityPackageImpl)(registeredPackage instanceof SecurityPackageImpl ? registeredPackage : SecurityPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		theCommonPackage.createPackageContents();
@@ -298,6 +302,7 @@ public class CommonPackageImpl extends EPackageImpl implements CommonPackage {
 		theOrderPackage_1.createPackageContents();
 		thePartyPackage_1.createPackageContents();
 		theProductPackage_1.createPackageContents();
+		theSecurityPackage.createPackageContents();
 
 		// Initialize created meta-data
 		theCommonPackage.initializePackageContents();
@@ -306,6 +311,7 @@ public class CommonPackageImpl extends EPackageImpl implements CommonPackage {
 		theOrderPackage_1.initializePackageContents();
 		thePartyPackage_1.initializePackageContents();
 		theProductPackage_1.initializePackageContents();
+		theSecurityPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		theCommonPackage.freeze();

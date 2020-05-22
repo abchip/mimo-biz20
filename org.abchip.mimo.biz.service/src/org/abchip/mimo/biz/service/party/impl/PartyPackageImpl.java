@@ -142,6 +142,8 @@ import org.abchip.mimo.biz.service.party.PartyFactory;
 import org.abchip.mimo.biz.service.party.PartyPackage;
 
 import org.abchip.mimo.biz.service.product.impl.ProductPackageImpl;
+import org.abchip.mimo.biz.service.security.SecurityPackage;
+import org.abchip.mimo.biz.service.security.impl.SecurityPackageImpl;
 import org.abchip.mimo.java.JavaPackage;
 
 import org.abchip.mimo.service.ServicePackage;
@@ -324,6 +326,8 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		OrderPackageImpl theOrderPackage_1 = (OrderPackageImpl)(registeredPackage instanceof OrderPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.order.OrderPackage.eINSTANCE);
 		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.service.product.ProductPackage.eNS_URI);
 		ProductPackageImpl theProductPackage_1 = (ProductPackageImpl)(registeredPackage instanceof ProductPackageImpl ? registeredPackage : org.abchip.mimo.biz.service.product.ProductPackage.eINSTANCE);
+		registeredPackage = EPackage.Registry.INSTANCE.getEPackage(SecurityPackage.eNS_URI);
+		SecurityPackageImpl theSecurityPackage = (SecurityPackageImpl)(registeredPackage instanceof SecurityPackageImpl ? registeredPackage : SecurityPackage.eINSTANCE);
 
 		// Create package meta-data objects
 		thePartyPackage.createPackageContents();
@@ -332,6 +336,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		theEntityPackage_1.createPackageContents();
 		theOrderPackage_1.createPackageContents();
 		theProductPackage_1.createPackageContents();
+		theSecurityPackage.createPackageContents();
 
 		// Initialize created meta-data
 		thePartyPackage.initializePackageContents();
@@ -340,6 +345,7 @@ public class PartyPackageImpl extends EPackageImpl implements PartyPackage {
 		theEntityPackage_1.initializePackageContents();
 		theOrderPackage_1.initializePackageContents();
 		theProductPackage_1.initializePackageContents();
+		theSecurityPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
 		thePartyPackage.freeze();
