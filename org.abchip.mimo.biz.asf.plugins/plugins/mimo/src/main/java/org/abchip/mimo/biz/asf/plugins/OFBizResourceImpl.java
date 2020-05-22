@@ -530,12 +530,16 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			if (modelParam.internal)
 				continue;
 
-			if (!frame.getName().equals(modelParam.getEntityName()))
-				continue;
-			if (modelParam.getFieldName() == null)
-				continue;
-
-			Slot slot = frame.getSlot(modelParam.getFieldName());
+//			if (!frame.getName().equals(modelParam.getEntityName()))
+//				continue;
+//			if (modelParam.getFieldName() == null)
+//				continue;
+			Slot slot = null;
+			if(modelParam.getFieldName() == null || modelParam.getFieldName().isEmpty()) {
+				slot = frame.getSlot(modelParam.getName());
+			} else {
+				slot = frame.getSlot(modelParam.getFieldName());
+			}
 			if (slot == null) {
 				LOGGER.warn("Unknown output parameter {} for entity {}", modelParam.getName(), frame.getName());
 				continue;
