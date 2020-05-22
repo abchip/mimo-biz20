@@ -42,8 +42,54 @@ public class UserLoginServices {
     public static final String github_envPrefix = UtilProperties.getPropertyValue("gitHubAuth.properties", "github.env.prefix", "test");
     public static final String linkedin_envPrefix = UtilProperties.getPropertyValue("linkedInAuth.properties", "linkedin.env.prefix", "test");
 
+    public static Map<String, Object> checkExternalLoginUser(DispatchContext ctx, Map<String, ? extends Object> context) {
+        Map<String, Object> results = ServiceUtil.returnSuccess();
+
+    	switch ((String) context.get("provider")) {
+		case "GitHub":
+			results = checkLoginGitHubUser(ctx, context);
+			break;
+		case "Google":
+			results = checkLoginGoogleUser(ctx, context);
+			break;
+		case "Linkedin":
+			results = checkLoginLinkedInUser(ctx, context);
+			break;
+		}
+    	
+        return results;
+    }
+
+    public static Map<String, Object> userCredentialFromExternalId(DispatchContext ctx, Map<String, ? extends Object> context) {
+    	Delegator delegator = ctx.getDelegator();
+
+        String userId = (String) context.get("userId");
+        String user = "";
+        String password = "";
+        try {
+            GenericValue userLogin = EntityQuery.use(delegator).from("UserLogin").where("externalAuthId", userId).queryFirst();
+            if (UtilValidate.isEmpty(userLogin)) {
+            	return ServiceUtil.returnError("Error in retrieve userLogin");
+            }
+
+            String autoPassword = RandomStringUtils.randomAlphanumeric(EntityUtilProperties.getPropertyAsInteger("security", "password.length.min", 5));
+            boolean useEncryption = "true".equals(UtilProperties.getPropertyValue("security", "password.encrypt"));
+            userLogin.set("currentPassword", useEncryption ? HashCrypt.digestHash(LoginServices.getHashType(), null, autoPassword) : autoPassword);
+            userLogin.store();
+            user =  userLogin.getString("userLoginId");
+            password = autoPassword;
+        } catch (GenericEntityException e) {
+            Debug.logError(e.getMessage(), module);
+        	return ServiceUtil.returnError(e.getMessage());
+        }
     
-    public static Map<String, Object> checkLoginGoogleUser(DispatchContext ctx, Map<String, ? extends Object> context) {
+        Map<String, Object> results = ServiceUtil.returnSuccess();
+        results.put("user", user);
+        results.put("password", password);
+        return results;
+    }
+    
+    private static Map<String, Object> checkLoginGoogleUser(DispatchContext ctx, Map<String, ? extends Object> context) {
     	
     	Delegator delegator = ctx.getDelegator();
         String productStoreId = getProductStore(delegator);
@@ -109,7 +155,7 @@ public class UserLoginServices {
         return results;
     }
     
-    public static Map<String, Object> checkLoginGitHubUser(DispatchContext ctx, Map<String, ? extends Object> context) {
+    private static Map<String, Object> checkLoginGitHubUser(DispatchContext ctx, Map<String, ? extends Object> context) {
     	Delegator delegator = ctx.getDelegator();
         String productStoreId = getProductStore(delegator);
         if(productStoreId == null) 
@@ -175,7 +221,7 @@ public class UserLoginServices {
         return results;
     }
 
-    public static Map<String, Object> checkLoginLinkedInUser(DispatchContext ctx, Map<String, ? extends Object> context) {
+    private static Map<String, Object> checkLoginLinkedInUser(DispatchContext ctx, Map<String, ? extends Object> context) {
 
     	Delegator delegator = ctx.getDelegator();
         String productStoreId = getProductStore(delegator);
@@ -242,34 +288,7 @@ public class UserLoginServices {
         return results;
     }
 
-    public static Map<String, Object> getUserCredentialFromExternalId(DispatchContext ctx, Map<String, ? extends Object> context) {
-    	Delegator delegator = ctx.getDelegator();
-
-        String userId = (String) context.get("userId");
-        String user = "";
-        String password = "";
-        try {
-            GenericValue userLogin = EntityQuery.use(delegator).from("UserLogin").where("externalAuthId", userId).queryFirst();
-            if (UtilValidate.isEmpty(userLogin)) {
-            	return ServiceUtil.returnError("Error in retrieve userLogin");
-            }
-
-            String autoPassword = RandomStringUtils.randomAlphanumeric(EntityUtilProperties.getPropertyAsInteger("security", "password.length.min", 5));
-            boolean useEncryption = "true".equals(UtilProperties.getPropertyValue("security", "password.encrypt"));
-            userLogin.set("currentPassword", useEncryption ? HashCrypt.digestHash(LoginServices.getHashType(), null, autoPassword) : autoPassword);
-            userLogin.store();
-            user =  userLogin.getString("userLoginId");
-            password = autoPassword;
-        } catch (GenericEntityException e) {
-            Debug.logError(e.getMessage(), module);
-        	return ServiceUtil.returnError(e.getMessage());
-        }
     
-        Map<String, Object> results = ServiceUtil.returnSuccess();
-        results.put("user", user);
-        results.put("password", password);
-        return results;
-    }
     private static String createGitHubUser(DispatchContext ctx, Map<String, ? extends Object> userMap) throws AuthenticatorException {
     	Delegator delegator = ctx.getDelegator();
         LocalDispatcher dispatcher = ctx.getDispatcher();

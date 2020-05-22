@@ -24,9 +24,10 @@ under the License.
     <vendor></vendor>
     <version>1.0</version>
 
-	<service name="checkLoginGitHubUser" engine="java"
-		location="org.abchip.mimo.biz.asf.plugins.security.UserLoginServices" invoke="checkLoginGitHubUser">
-		<description>Check GitHub login</description>
+	<service name="checkExternalLoginUser" engine="java"
+		location="org.abchip.mimo.biz.asf.plugins.security.UserLoginServices" invoke="checkExternalLoginUser">
+		<description>Check external OAUTH2 login</description>
+        <attribute name="provider" type="String" mode="IN" optional="false"/>
         <attribute name="accessToken" type="String" mode="IN" optional="false"/>
         <attribute name="userId" type="String" mode="IN" optional="false"/>
         <attribute name="firstName" type="String" mode="IN" optional="false"/>
@@ -34,29 +35,9 @@ under the License.
         <attribute name="email" type="String" mode="IN" optional="false"/>
 	</service>
 
-	<service name="checkLoginGoogleUser" engine="java"
-		location="org.abchip.mimo.biz.asf.plugins.security.UserLoginServices" invoke="checkLoginGoogleUser">
-		<description>Check Google login</description>
-        <attribute name="accessToken" type="String" mode="IN" optional="false"/>
-        <attribute name="userId" type="String" mode="IN" optional="false"/>
-        <attribute name="firstName" type="String" mode="IN" optional="false"/>
-        <attribute name="lastName" type="String" mode="IN" optional="false"/>
-        <attribute name="email" type="String" mode="IN" optional="false"/>
-	</service>
-
-	<service name="checkLoginLinkedInUser" engine="java"
-		location="org.abchip.mimo.biz.asf.plugins.security.UserLoginServices" invoke="checkLoginLinkedInUser">
-		<description>Check LinkedIn login</description>
-        <attribute name="accessToken" type="String" mode="IN" optional="false"/>
-        <attribute name="userId" type="String" mode="IN" optional="false"/>
-        <attribute name="firstName" type="String" mode="IN" optional="false"/>
-        <attribute name="lastName" type="String" mode="IN" optional="false"/>
-        <attribute name="email" type="String" mode="IN" optional="false"/>
-	</service>
-
-	<service name="getUserCredentialFromExternalId" engine="java"
-		location="org.abchip.mimo.biz.asf.plugins.security.UserLoginServices" invoke="getUserCredentialFromExternalId">
-		<description>Check google login</description>
+	<service name="userCredentialFromExternalId" engine="java"
+		location="org.abchip.mimo.biz.asf.plugins.security.UserLoginServices" invoke="userCredentialFromExternalId">
+		<description>Get user and password for OAUTH2 external login</description>
         <attribute name="userId" type="String" mode="IN" optional="false"/>
 		<attribute name="user" type="String" mode="OUT" optional="false"/>
 		<attribute name="password" type="String" mode="OUT" optional="false"/>
