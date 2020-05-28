@@ -28,13 +28,13 @@ import org.abchip.mimo.service.ServiceRequest;
 public interface UserCredentialFromExternalId extends ServiceRequest<UserCredentialFromExternalIdResponse> {
 	/**
 	 * Returns the value of the '<em><b>User Id</b></em>' attribute.
-	 * The default value is <code>"@general/currency.uom.id.default"</code>.
+	 * The default value is <code>""</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>User Id</em>' attribute.
 	 * @see #setUserId(String)
 	 * @see org.abchip.mimo.biz.service.security.SecurityPackage#getUserCredentialFromExternalId_UserId()
-	 * @model default="@general/currency.uom.id.default" required="true"
+	 * @model default="" required="true"
 	 * @generated
 	 */
 	String getUserId();

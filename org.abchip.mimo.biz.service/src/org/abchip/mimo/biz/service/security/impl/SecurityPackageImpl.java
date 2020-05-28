@@ -561,17 +561,17 @@ public class SecurityPackageImpl extends EPackageImpl implements SecurityPackage
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(checkExternalLoginUserEClass, CheckExternalLoginUser.class, "CheckExternalLoginUser", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getCheckExternalLoginUser_AccessToken(), ecorePackage.getEString(), "accessToken", "@general/currency.uom.id.default", 1, 1, CheckExternalLoginUser.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCheckExternalLoginUser_Email(), ecorePackage.getEString(), "email", "@general/currency.uom.id.default", 1, 1, CheckExternalLoginUser.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCheckExternalLoginUser_FirstName(), ecorePackage.getEString(), "firstName", "@general/currency.uom.id.default", 1, 1, CheckExternalLoginUser.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCheckExternalLoginUser_LastName(), ecorePackage.getEString(), "lastName", "@general/currency.uom.id.default", 1, 1, CheckExternalLoginUser.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCheckExternalLoginUser_Provider(), ecorePackage.getEString(), "provider", "@general/currency.uom.id.default", 1, 1, CheckExternalLoginUser.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getCheckExternalLoginUser_UserId(), ecorePackage.getEString(), "userId", "@general/currency.uom.id.default", 1, 1, CheckExternalLoginUser.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCheckExternalLoginUser_AccessToken(), ecorePackage.getEString(), "accessToken", "", 1, 1, CheckExternalLoginUser.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCheckExternalLoginUser_Email(), ecorePackage.getEString(), "email", "", 1, 1, CheckExternalLoginUser.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCheckExternalLoginUser_FirstName(), ecorePackage.getEString(), "firstName", "", 1, 1, CheckExternalLoginUser.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCheckExternalLoginUser_LastName(), ecorePackage.getEString(), "lastName", "", 1, 1, CheckExternalLoginUser.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCheckExternalLoginUser_Provider(), ecorePackage.getEString(), "provider", "", 1, 1, CheckExternalLoginUser.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getCheckExternalLoginUser_UserId(), ecorePackage.getEString(), "userId", "", 1, 1, CheckExternalLoginUser.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(checkExternalLoginUserResponseEClass, CheckExternalLoginUserResponse.class, "CheckExternalLoginUserResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		initEClass(userCredentialFromExternalIdEClass, UserCredentialFromExternalId.class, "UserCredentialFromExternalId", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getUserCredentialFromExternalId_UserId(), ecorePackage.getEString(), "userId", "@general/currency.uom.id.default", 1, 1, UserCredentialFromExternalId.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getUserCredentialFromExternalId_UserId(), ecorePackage.getEString(), "userId", "", 1, 1, UserCredentialFromExternalId.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(userCredentialFromExternalIdResponseEClass, UserCredentialFromExternalIdResponse.class, "UserCredentialFromExternalIdResponse", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getUserCredentialFromExternalIdResponse_User(), ecorePackage.getEString(), "user", "@general/currency.uom.id.default", 1, 1, UserCredentialFromExternalIdResponse.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

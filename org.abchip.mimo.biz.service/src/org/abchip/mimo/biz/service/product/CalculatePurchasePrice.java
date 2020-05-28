@@ -36,13 +36,13 @@ import org.abchip.mimo.service.ServiceRequest;
 public interface CalculatePurchasePrice extends ServiceRequest<CalculatePurchasePriceResponse> {
 	/**
 	 * Returns the value of the '<em><b>Agreement Id</b></em>' attribute.
-	 * The default value is <code>"@general/currency.uom.id.default"</code>.
+	 * The default value is <code>""</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Agreement Id</em>' attribute.
 	 * @see #setAgreementId(String)
 	 * @see org.abchip.mimo.biz.service.product.ProductPackage#getCalculatePurchasePrice_AgreementId()
-	 * @model default="@general/currency.uom.id.default" required="true"
+	 * @model default="" required="true"
 	 * @generated
 	 */
 	String getAgreementId();
@@ -82,13 +82,13 @@ public interface CalculatePurchasePrice extends ServiceRequest<CalculatePurchase
 
 	/**
 	 * Returns the value of the '<em><b>Party Id</b></em>' attribute.
-	 * The default value is <code>"@general/currency.uom.id.default"</code>.
+	 * The default value is <code>""</code>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Party Id</em>' attribute.
 	 * @see #setPartyId(String)
 	 * @see org.abchip.mimo.biz.service.product.ProductPackage#getCalculatePurchasePrice_PartyId()
-	 * @model default="@general/currency.uom.id.default" required="true"
+	 * @model default="" required="true"
 	 * @generated
 	 */
 	String getPartyId();
