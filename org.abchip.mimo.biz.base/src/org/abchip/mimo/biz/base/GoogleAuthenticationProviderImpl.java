@@ -8,21 +8,21 @@
  */
 package org.abchip.mimo.biz.base;
 
-import java.net.URLEncoder;
 import java.util.UUID;
 
 import org.abchip.mimo.authentication.AuthenticationException;
-import org.abchip.mimo.authentication.impl.AuthenticationProviderImpl;
+import org.abchip.mimo.authentication.AuthenticationProvider;
 import org.abchip.mimo.biz.model.passport.OAuth2Google;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.ResourceReader;
 import org.apache.http.client.utils.URIBuilder;
 
-public class GoogleAuthenticationProviderImpl extends AuthenticationProviderImpl {
+public class GoogleAuthenticationProviderImpl implements AuthenticationProvider {
 
 	public static final String AUTHORIZE_URI = "https://accounts.google.com/o/oauth2/auth";
-	public static final String DEFAULT_SCOPE = "openid%20email%20profile";
+	public static final String DEFAULT_SCOPE = "openid email profile";
 
+	@Override
 	public String getRedirectLocation(Context context) throws AuthenticationException {
 
 		try {
@@ -35,7 +35,7 @@ public class GoogleAuthenticationProviderImpl extends AuthenticationProviderImpl
 
 			URIBuilder uri = new URIBuilder(AUTHORIZE_URI);
 			uri.addParameter("client_id", oauth2Google.getClientId());
-			uri.addParameter("redirect_uri", URLEncoder.encode(oauth2Google.getReturnUrl(), "UTF8"));
+			uri.addParameter("redirect_uri", oauth2Google.getReturnUrl());
 			uri.addParameter("response_type", "code");
 			uri.addParameter("scope", DEFAULT_SCOPE);
 			uri.addParameter("nonce", UUID.randomUUID().toString());
