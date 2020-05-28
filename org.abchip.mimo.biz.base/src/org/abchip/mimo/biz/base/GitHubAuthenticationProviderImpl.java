@@ -11,6 +11,7 @@ package org.abchip.mimo.biz.base;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URLEncoder;
 import java.util.HashMap;
 
 import org.abchip.mimo.authentication.AuthenticationException;
@@ -55,7 +56,7 @@ public class GitHubAuthenticationProviderImpl implements AuthenticationProvider 
 
 			URIBuilder uri = new URIBuilder(AUTHORIZE_URI);
 			uri.addParameter("client_id", oauth2GitHub.getClientId());
-			uri.addParameter("redirect_uri", oauth2GitHub.getReturnUrl());
+			uri.addParameter("redirect_uri", URLEncoder.encode(oauth2GitHub.getReturnUrl(), "UTF8"));
 			uri.addParameter("response_type", "code");
 			uri.addParameter("scope", DEFAULT_SCOPE);
 			uri.addParameter("state", contextId);
