@@ -72,7 +72,7 @@ public class GoogleAuthenticationProviderImpl implements AuthenticationProvider 
 	public AuthenticationUserToken checkAccessToken(Context context, String authorizationCode) throws AuthenticationException {
 
 		if (Strings.isEmpty(authorizationCode))
-			throw new AuthenticationException("Google failed fo get authorization code");
+			throw new AuthenticationException("Google failed to get authorization code");
 
 		String accessToken = null;
 		String idToken = null;

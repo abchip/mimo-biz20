@@ -11,7 +11,6 @@ package org.abchip.mimo.biz.base;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.net.URLEncoder;
 import java.util.HashMap;
 
 import org.abchip.mimo.authentication.AuthenticationException;
@@ -56,8 +55,8 @@ public class GitHubAuthenticationProviderImpl implements AuthenticationProvider 
 
 			URIBuilder uri = new URIBuilder(AUTHORIZE_URI);
 			uri.addParameter("client_id", oauth2GitHub.getClientId());
-			uri.addParameter("redirect_uri", URLEncoder.encode(oauth2GitHub.getReturnUrl(), "UTF8"));
-			uri.addParameter("response_type", "code");
+			uri.addParameter("redirect_uri", oauth2GitHub.getReturnUrl());
+			// uri.addParameter("response_type", "code");
 			uri.addParameter("scope", DEFAULT_SCOPE);
 			uri.addParameter("state", contextId);
 
@@ -71,7 +70,7 @@ public class GitHubAuthenticationProviderImpl implements AuthenticationProvider 
 	public AuthenticationUserToken checkAccessToken(Context context, String authorizationCode) throws AuthenticationException {
 
 		if (Strings.isEmpty(authorizationCode))
-			throw new AuthenticationException("GitHub failed fo get authorization code");
+			throw new AuthenticationException("GitHub failed to get authorization code");
 
 		String accessToken = null;
 		String idToken = null;
@@ -95,7 +94,7 @@ public class GitHubAuthenticationProviderImpl implements AuthenticationProvider 
 				if (postResponse.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
 					HashMap<?, ?> userMap = new ObjectMapper().readValue(responseString, HashMap.class);
 					accessToken = (String) userMap.get("access_token");
-					idToken = (String) userMap.get("id_token");
+					idToken = (String) userMap.get("token_type");
 					// Debug.logInfo("Generated Access Token : " + accessToken, module);
 				} else {
 					throw new AuthenticationException("GitHub get OAuth2 access token error");
@@ -112,5 +111,6 @@ public class GitHubAuthenticationProviderImpl implements AuthenticationProvider 
 		authenticationUserToken.setProvider("GitHub");
 
 		return authenticationUserToken;
+		
 	}
 }
