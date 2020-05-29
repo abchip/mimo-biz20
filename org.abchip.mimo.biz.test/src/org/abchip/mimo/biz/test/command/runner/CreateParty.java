@@ -36,8 +36,11 @@ import org.abchip.mimo.biz.service.party.CreatePartyContactMech;
 import org.abchip.mimo.biz.service.party.CreatePartyContactMechPurpose;
 import org.abchip.mimo.biz.service.party.CreatePartyContactMechPurposeResponse;
 import org.abchip.mimo.biz.service.party.CreatePartyContactMechResponse;
+import org.abchip.mimo.biz.service.party.GetPartyDefault;
+import org.abchip.mimo.biz.service.party.GetPartyDefaultResponse;
 import org.abchip.mimo.biz.test.command.StressTestUtils;
 import org.abchip.mimo.context.Context;
+import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.service.ServiceException;
@@ -50,6 +53,7 @@ public class CreateParty implements Callable<Long> {
 	private static final Logger LOGGER = Logs.getLogger(CreateParty.class);
 	Context context;
 	GetCommonDefaultResponse commonDefault;
+	GetPartyDefaultResponse partyDefault;
 
 	public CreateParty(Context context) {
 		this.context = context;
@@ -62,16 +66,21 @@ public class CreateParty implements Callable<Long> {
 		GetCommonDefault getCommonDefault = serviceManager.prepare(GetCommonDefault.class);
 		commonDefault = serviceManager.execute(getCommonDefault);
 
+		GetPartyDefault getPartyDefault = serviceManager.prepare(GetPartyDefault.class);
+		partyDefault = serviceManager.execute(getPartyDefault);
+
 		long time1 = System.currentTimeMillis();
 
 		createPartyGroup(serviceManager, "CUSTOMER");
 		createPerson(serviceManager, "CUSTOMER");
 		createPartyGroup(serviceManager, "SUPPLIER");
 		createPerson(serviceManager, "SUPPLIER");
+		createPaymentForCompany();
 
 		long time2 = System.currentTimeMillis();
 		return time2 - time1;
 	}
+
 
 	public void createPartyGroup(ServiceManager serviceManager, String role) throws ResourceException, ServiceException {
 
@@ -267,5 +276,38 @@ public class CreateParty implements Callable<Long> {
 			if (responsePurpose.onError())
 				LOGGER.error(responsePurpose.getErrorMessage());
 		}
+	}
+	
+	private void createPaymentForCompany() throws ResourceException {
+		// PaymentMethod
+		// CreditCard
+		ResourceWriter<CreditCard> creditCardWriter = context.getResourceManager().getResourceWriter(CreditCard.class);
+		
+		// Search credit card company 
+		String filter = "partyId = \"" + partyDefault.getOrganization().getID() + "\" and paymentMethodTypeId = \"CREDIT_CARD\"" ;
+		CreditCard creditCard = null;
+				
+		try (EntityIterator<CreditCard> cards = creditCardWriter.find(filter, null, null, 1)) {
+			for (CreditCard card : cards) {
+				creditCard = card;
+			}
+		}
+		
+		if(creditCard != null)
+			return;
+
+		creditCard = creditCardWriter.make();
+		creditCard.setPartyId(partyDefault.getOrganization());
+		creditCard.setPaymentMethodTypeId(context.createProxy(PaymentMethodType.class, "CREDIT_CARD"));
+		// CVC code
+		creditCard.setDescription("123");
+		creditCard.setFromDate(new Date());
+		creditCard.setCardType("CCT_MASTERCARD");
+		creditCard.setCardNumber("5555555555554444");
+		creditCard.setExpireDate("12/2030");
+		creditCard.setCompanyNameOnCard("Company credit card");
+		creditCard.setFirstNameOnCard("First name");
+		creditCard.setLastNameOnCard("Last name");
+		creditCardWriter.create(creditCard);
 	}
 }

@@ -23,6 +23,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.test.command.runner.ApproveOrder;
 import org.abchip.mimo.biz.test.command.runner.CancelOrder;
 import org.abchip.mimo.biz.test.command.runner.CreateAgreement;
+import org.abchip.mimo.biz.test.command.runner.CreateCustomerReturnInvoice;
 import org.abchip.mimo.biz.test.command.runner.CreateInpsAgreement;
 import org.abchip.mimo.biz.test.command.runner.CreateParty;
 import org.abchip.mimo.biz.test.command.runner.CreateProduct;
@@ -58,6 +59,7 @@ public class StressTestCommands extends BaseTestCommands {
 			stressTestSalesInvoice(interpreter, context.get());
 			stressTestPurchaseOrder(interpreter, context.get());
 			stressTestPurchaseInvoice(interpreter, context.get());
+			stressTestCustomerReturnInvoice(interpreter, context.get());
 			stressTestAgreement(interpreter, context.get());
 		}
 	}
@@ -86,6 +88,12 @@ public class StressTestCommands extends BaseTestCommands {
 		}
 	}
 
+	public void _stressTestCustomerReturnInvoice(CommandInterpreter interpreter) throws Exception {
+		try (ContextProvider context = login(interpreter)) {
+			stressTestCustomerReturnInvoice(interpreter, context.get());
+		}
+	}
+	
 	public void _stressTestAgreement(CommandInterpreter interpreter) throws Exception {
 		try (ContextProvider context = login(interpreter)) {
 			stressTestAgreement(interpreter, context.get());
@@ -268,6 +276,26 @@ public class StressTestCommands extends BaseTestCommands {
 		interpreter.println("Total time execution StressTestPurchaseInvoice: " + (time2 - time1));
 	}
 
+	private void stressTestCustomerReturnInvoice(CommandInterpreter interpreter, Context context) throws Exception {
+
+		List<Party> parties = StressTestUtils.getEnabledCustomers(context);
+		if (parties.isEmpty()) {
+			interpreter.println("Customer not present, launch command 'createTestBaseData'");
+			return;
+		}
+		long time1 = System.currentTimeMillis();
+
+		ExecutorService executor = Executors.newFixedThreadPool(1);
+		for (Party party : parties)
+			executor.submit(new CreateCustomerReturnInvoice(context, party));
+
+		executor.shutdown();
+		executor.awaitTermination(1, TimeUnit.MINUTES);
+
+		long time2 = System.currentTimeMillis();
+		interpreter.println("Total time execution StressTestCustomerReturnInvoice: " + (time2 - time1));
+	}
+	
 	private void stressTestAgreement(CommandInterpreter interpreter, Context context) throws Exception {
 
 		List<Party> parties = StressTestUtils.getEnabledCustomers(context);

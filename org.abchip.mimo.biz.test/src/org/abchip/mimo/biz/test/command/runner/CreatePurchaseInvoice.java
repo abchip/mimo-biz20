@@ -18,12 +18,18 @@ import org.abchip.mimo.biz.model.accounting.invoice.InvoiceContactMech;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItem;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceItemType;
 import org.abchip.mimo.biz.model.accounting.invoice.InvoiceType;
+import org.abchip.mimo.biz.model.accounting.payment.Payment;
+import org.abchip.mimo.biz.model.accounting.payment.PaymentMethod;
+import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType;
+import org.abchip.mimo.biz.model.accounting.payment.PaymentType;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.party.contact.ContactMechPurposeType;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.service.accounting.Addtax;
 import org.abchip.mimo.biz.service.accounting.AddtaxResponse;
+import org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDef;
+import org.abchip.mimo.biz.service.accounting.UpdatePaymentApplicationDefResponse;
 import org.abchip.mimo.biz.service.common.GetCommonDefault;
 import org.abchip.mimo.biz.service.common.GetCommonDefaultResponse;
 import org.abchip.mimo.biz.service.party.GetPartyDefault;
@@ -107,6 +113,8 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 			LOGGER.error(addTaxresponse.getErrorMessage());
 		}
 
+		// Payment
+		createPaymentFromInvoice(serviceManager, invoice);
 	}
 
 	private void createInvoiceItem(ServiceManager serviceManager, Invoice invoice, int quantity, Product product) throws ResourceException, ServiceException {
@@ -135,5 +143,38 @@ public class CreatePurchaseInvoice implements Callable<Long> {
 			LOGGER.error("Prezzo non valido per articolo " + product.getID());
 
 		invoiceItemWriter.create(invoiceItem);
+	}
+	
+	private String createPaymentFromInvoice(ServiceManager serviceManager, Invoice invoice) throws ResourceException, ServiceException {
+
+		PaymentMethod paymentMethod = invoice.getPartyId().getPaymentMethod("CREDIT_CARD");
+		if (paymentMethod == null) {
+			LOGGER.error("Payment method not found for party " + invoice.getPartyId().getID());
+		}
+
+		ResourceWriter<Payment> paymentWriter = context.getResourceManager().getResourceWriter(Payment.class);
+		Payment payment = paymentWriter.make();
+		payment.setAmount(invoice.getTotal());
+		payment.setPartyIdTo(invoice.getPartyIdFrom());
+		payment.setPartyIdFrom(invoice.getPartyId());
+		payment.setPaymentTypeId(context.createProxy(PaymentType.class, "VENDOR_PAYMENT"));
+		payment.setPaymentMethodTypeId(context.createProxy(PaymentMethodType.class, "CREDIT_CARD"));
+		if(paymentMethod != null)
+			payment.setPaymentMethodId(paymentMethod);
+		payment.setCurrencyUomId(commonDefault.getCurrencyUom());
+		payment.setPaymentRefNum("Invoice number " + invoice.getID());
+
+		paymentWriter.create(payment);
+
+		// applicazione pagamento
+		UpdatePaymentApplicationDef updatePaymentApplicationDef = serviceManager.prepare(UpdatePaymentApplicationDef.class);
+		updatePaymentApplicationDef.setInvoiceId(invoice.getID());
+		updatePaymentApplicationDef.setPaymentId(payment.getID());
+		UpdatePaymentApplicationDefResponse response = serviceManager.execute(updatePaymentApplicationDef);
+		if (response.onError()) {
+			LOGGER.error(response.getErrorMessage());
+			return payment.getID();
+		}
+		return payment.getID();
 	}
 }
