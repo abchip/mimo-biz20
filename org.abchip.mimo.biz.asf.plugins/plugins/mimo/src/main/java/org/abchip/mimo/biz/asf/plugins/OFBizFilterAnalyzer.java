@@ -59,7 +59,8 @@ public class OFBizFilterAnalyzer extends SQLiteBaseListener {
 		case SQLiteLexer.IDENTIFIER:
 			ModelField modelField = ModelUtils.getModelField(delegator, frame, token.getText());
 			if (modelField != null)
-				text = frame.trim() + "." + modelField.getColName();
+//				text = frame.trim() + "." + modelField.getColName();
+				text = modelField.getModelEntity().getEntityName() + "." + modelField.getColName();
 			else {
 				ModelRelation modelRelation = ModelUtils.getModelRelation(delegator, frame, token.getText());
 				if (modelRelation != null)
