@@ -1413,6 +1413,4 @@ Export-Package: bsh,
  org.terracotta.quartz.wrappers,
  org.xmlpull.v1
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
-Require-Bundle: com.fasterxml.jackson.core.jackson-databind;bundle-version="2.9.93",
- com.fasterxml.jackson.core.jackson-annotations;bundle-version="2.9.9",
- com.fasterxml.jackson.core.jackson-core;bundle-version="2.9.9"
+Require-Bundle: org.abchip.mimo.core.http;bundle-version="0.2.0"
