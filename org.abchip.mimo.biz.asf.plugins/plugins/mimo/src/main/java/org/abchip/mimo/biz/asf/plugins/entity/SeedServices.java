@@ -14,13 +14,11 @@ import java.util.Map;
 
 import org.abchip.mimo.biz.asf.plugins.ContextUtils;
 import org.abchip.mimo.context.Context;
-import org.abchip.mimo.entity.Delete;
 import org.abchip.mimo.entity.EntityContainer;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityIterator;
 import org.abchip.mimo.resource.Resource;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceReader;
 import org.abchip.mimo.resource.ResourceWriter;
 import org.abchip.mimo.util.Logs;
 import org.apache.ofbiz.base.util.GeneralException;
@@ -45,15 +43,12 @@ public class SeedServices {
 		try {
 			Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
 
-			// remove containers
-			Delete<EntityContainer> delete = context.getServiceManager().prepare(Delete.class, EntityContainer.class);
+			ResourceWriter<EntityContainer> entityWriter = context.getResourceManager().getResourceWriter(EntityContainer.class);
 
-			ResourceReader<EntityContainer> entityWriter = context.getResourceManager().getResourceReader(EntityContainer.class);
+			// remove containers
 			try (EntityIterator<EntityContainer> conatinerIterator = entityWriter.find()) {
-				while (conatinerIterator.hasNext()) {
-					delete.setEntity(conatinerIterator.next());
-					context.getServiceManager().execute(delete);
-				}
+				while (conatinerIterator.hasNext())
+					entityWriter.delete(conatinerIterator.next());
 			}
 
 			exportReaderFiltered(context, delegator, filterReaders);
