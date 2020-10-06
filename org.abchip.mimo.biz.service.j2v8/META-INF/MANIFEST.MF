@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: MIMO Biz Service J2V8
+Bundle-SymbolicName: org.abchip.mimo.biz.service.j2v8
+Bundle-Version: 0.2.0.qualifier
+Bundle-Vendor: ABChip
+Automatic-Module-Name: org.abchip.mimo.biz.service.j2v8
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Require-Bundle: org.abchip.mimo.biz.service;bundle-version="0.2.0"
+Bundle-ClassPath: .,
+ lib/j2v8_linux_x86_64-4.8.0.jar
