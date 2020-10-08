@@ -8,6 +8,7 @@
  */
 package org.abchip.mimo.biz.service.j2v8;
 
+import com.eclipsesource.v8.NodeJS;
 import com.eclipsesource.v8.V8;
 import com.eclipsesource.v8.V8Array;
 import com.eclipsesource.v8.V8Object;
@@ -15,7 +16,11 @@ import com.eclipsesource.v8.V8Object;
 public class T {
 
 	public static void main(String[] args) {
-		V8 runtime = V8.createV8Runtime();
+
+		NodeJS nodeJs = NodeJS.createNodeJS();
+		System.out.println(nodeJs.getNodeVersion());		
+		V8 runtime = nodeJs.getRuntime();
+		
 		int result = runtime.executeIntegerScript("" + "var hello = 'hello, ';\n" + "var world = 'world!';\n" + "hello.concat(world).length;\n");
 		System.out.println(result);
 		
@@ -54,7 +59,8 @@ public class T {
 		player2.release();
 		players.release();
 		
-		hockeyTeam.release();		  
-		runtime.release();
+		hockeyTeam.release();
+		
+		nodeJs.release();
 	}
 }
