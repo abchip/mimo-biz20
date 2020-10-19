@@ -9,12 +9,15 @@
 package org.abchip.mimo.biz.asf.plugins;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 import org.abchip.mimo.biz.asf.plugins.entity.EntityUtils;
 import org.abchip.mimo.biz.asf.plugins.entity.ModelUtils;
+import org.abchip.mimo.context.ContextDescription;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.entity.Slot;
@@ -44,6 +47,12 @@ import org.apache.ofbiz.entity.model.ModelKeyMap;
 import org.apache.ofbiz.entity.transaction.GenericTransactionException;
 import org.apache.ofbiz.entity.transaction.TransactionUtil;
 import org.apache.ofbiz.entity.util.EntityQuery;
+import org.apache.ofbiz.service.GenericServiceException;
+import org.apache.ofbiz.service.LocalDispatcher;
+import org.apache.ofbiz.service.ModelParam;
+import org.apache.ofbiz.service.ModelService;
+import org.apache.ofbiz.service.ServiceContainer;
+import org.apache.ofbiz.service.ServiceUtil;
 import org.osgi.service.log.Logger;
 
 public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImpl<E> {
@@ -52,14 +61,20 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 	private Frame<E> frame = null;
 	private Delegator delegator = null;
+	private boolean useService;
+
+	private LocalDispatcher dispatcher = null;
 	private ModelEntity modelEntity = null;
 	private ModelFieldTypeReader modelHelper;
 
-	public OFBizResourceImpl(ResourceSet resourceSet, Delegator delegator, Frame<E> frame) {
+	public OFBizResourceImpl(ResourceSet resourceSet, Delegator delegator, Frame<E> frame, boolean useService) {
 		super(resourceSet, delegator.getDelegatorTenantId());
 
 		this.frame = frame;
 		this.delegator = delegator;
+		this.useService = useService;
+
+		this.dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
 		this.modelEntity = delegator.getModelEntity(frame.getName());
 		this.modelHelper = delegator.getModelFieldTypeReader(modelEntity);
 	}
@@ -75,6 +90,28 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		if (entity.getResource() != null && this != entity.getResource()) {
 			LOGGER.error("Invalid resource destination ofbiz/{} origin {}", this.getFrame().getName(), entity.getResource());
 			return;
+		}
+
+		if (useService) {
+			String serviceName = "create" + this.getFrame().getName();
+			try {
+				ModelService service = dispatcher.getDispatchContext().getModelService(serviceName);
+
+				try {
+					Map<String, Object> context = toBizContext(service, entity);
+					context = dispatcher.runSync(serviceName, context);
+					if (ServiceUtil.isError(context))
+						throw new ResourceException(ServiceUtil.getErrorMessage(context));
+
+					completeEntity(service, entity, context);
+
+					return;
+				} catch (GeneralException e) {
+					throw new ResourceException(e);
+				}
+			} catch (GenericServiceException e) {
+				// service not found
+			}
 		}
 
 		boolean beganTransaction = false;
@@ -286,6 +323,28 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			return;
 		}
 
+		if (useService) {
+			String serviceName = "update" + this.getFrame().getName();
+			try {
+				ModelService service = dispatcher.getDispatchContext().getModelService(serviceName);
+
+				try {
+					Map<String, Object> context = toBizContext(service, entity);
+					context = dispatcher.runSync(serviceName, context);
+					if (ServiceUtil.isError(context))
+						throw new ResourceException(ServiceUtil.getErrorMessage(context));
+
+					completeEntity(service, entity, context);
+
+					return;
+				} catch (GeneralException e) {
+					throw new ResourceException(e);
+				}
+			} catch (GenericServiceException e) {
+				// service not found
+			}
+		}
+
 		boolean beganTransaction = false;
 
 		try {
@@ -311,6 +370,26 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		if (this != entity.getResource()) {
 			LOGGER.error("Invalid resource destination ofbiz/{} origin {}", this.getFrame().getName(), entity.getResource());
 			return;
+		}
+
+		if (useService) {
+			String serviceName = "delete" + this.getFrame().getName();
+			try {
+				ModelService service = dispatcher.getDispatchContext().getModelService(serviceName);
+
+				try {
+					Map<String, Object> context = toBizContext(service, entity);
+					context = dispatcher.runSync(serviceName, context);
+					if (ServiceUtil.isError(context))
+						throw new ResourceException(ServiceUtil.getErrorMessage(context));
+
+					return;
+				} catch (GeneralException e) {
+					throw new ResourceException(e);
+				}
+			} catch (GenericServiceException e) {
+				// service not found
+			}
 		}
 
 		boolean beganTransaction = false;
@@ -424,6 +503,71 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		walker.walk(analyzer, tree);
 
 		return analyzer;
+	}
+
+	private Map<String, Object> toBizContext(ModelService service, E entity) throws GeneralException {
+
+		Map<String, Object> context = new HashMap<String, Object>();
+		ContextDescription contextDescription = this.getContext().getContextDescription();
+		context.put("login.username", contextDescription.getUser());
+
+		// context.put("userLogin", EntityUtils.toBizEntity(delegator,
+		// this.getContext().createProxy(UserLogin.class,
+		// contextDescription.getUser())));
+
+		context.put("locale", contextDescription.getLocale());
+
+		for (Slot slot : getFrame().getSlots()) {
+			if (slot.isTransient())
+				continue;
+
+			ModelParam modelParam = service.getParam(slot.getName());
+			if (modelParam == null)
+				continue;
+
+			Object value = getFrame().getValue(entity, slot.getName(), false, false);
+			value = EntityUtils.toBizValue(modelParam.getType(), slot, value);
+			if (value == null)
+				continue;
+
+			context.put(slot.getName(), value);
+		}
+
+		return context;
+	}
+
+	private void completeEntity(ModelService service, E entity, Map<String, Object> context) {
+
+		Frame<E> frame = entity.isa();
+		for (ModelParam modelParam : service.getModelParamList()) {
+			if (!modelParam.isOut())
+				continue;
+			if (modelParam.internal)
+				continue;
+
+			// if (!frame.getName().equals(modelParam.getEntityName()))
+			// continue;
+			// if (modelParam.getFieldName() == null)
+			// continue;
+			Slot slot = null;
+			if (modelParam.getFieldName() == null || modelParam.getFieldName().isEmpty()) {
+				slot = frame.getSlot(modelParam.getName());
+			} else {
+				slot = frame.getSlot(modelParam.getFieldName());
+			}
+			if (slot == null) {
+				LOGGER.warn("Unknown output parameter {} for entity {}", modelParam.getName(), frame.getName());
+				continue;
+			}
+
+			Object paramValue = context.get(modelParam.getName());
+			if (paramValue == null && !modelParam.isOptional()) {
+				LOGGER.warn("Null output parameter {} for entity {}", modelParam.getName(), frame.getName());
+				continue;
+			}
+
+			frame.setValue(entity, slot.getName(), paramValue);
+		}
 	}
 
 	private String getPkSlashValueString(GenericValue genericValue) {
