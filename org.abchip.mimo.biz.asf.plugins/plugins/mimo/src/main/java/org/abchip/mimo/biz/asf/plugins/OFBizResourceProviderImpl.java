@@ -45,7 +45,7 @@ public class OFBizResourceProviderImpl extends ResourceProviderImpl {
 		if (delegator == null)
 			return null;
 
-		Resource<E> resource = new OFBizResourceImpl<E>(resourceSet, delegator, frame, true);
+		Resource<E> resource = new OFBizResourceImpl<E>(resourceSet, delegator, frame);
 		resource.setResourceConfig(this.resourceConfig);
 
 		return resource;

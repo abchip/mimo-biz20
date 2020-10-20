@@ -35,7 +35,7 @@ public class OFBizAuthenticator implements Authenticator {
 		try {
 			Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
 			ResourceSet resourceSet = context.getResourceSet();
-			this.userLoginResource = new OFBizResourceImpl<UserLogin>(resourceSet, delegator, context.getFrame(UserLogin.class), false);
+			this.userLoginResource = new OFBizResourceImpl<UserLogin>(resourceSet, delegator, context.getFrame(UserLogin.class));
 
 		} catch (ResourceException e) {
 			LOGGER.warn(e.getMessage());
@@ -63,7 +63,7 @@ public class OFBizAuthenticator implements Authenticator {
 				userLogin = userLoginResource.make();
 				userLogin.setEnabled(true);
 				userLogin.setUserLoginId(username);
-				userLoginResource.create(userLogin, false);
+				userLoginResource.create(userLogin, false, true);
 			}
 		} catch (ResourceException e) {
 			LOGGER.warn(e.getMessage());
