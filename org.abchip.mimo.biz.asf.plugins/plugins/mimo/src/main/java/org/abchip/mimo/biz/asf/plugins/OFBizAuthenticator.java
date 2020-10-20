@@ -10,7 +10,6 @@ package org.abchip.mimo.biz.asf.plugins;
 
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.context.Context;
-import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.resource.Resource;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceSet;
@@ -24,17 +23,15 @@ import org.osgi.service.log.Logger;
 public class OFBizAuthenticator implements Authenticator {
 
 	private static final Logger LOGGER = Logs.getLogger(OFBizAuthenticator.class);
-	
-	private LocalDispatcher dispatcher;
+
 	private Delegator delegator;
 
 	private Resource<UserLogin> userLoginResource;
-	
+
 	@Override
 	public void initialize(LocalDispatcher dispatcher) {
-		this.dispatcher = dispatcher;
 		this.delegator = dispatcher.getDelegator();
-		
+
 		try {
 			Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
 			ResourceSet resourceSet = context.getResourceSet();
@@ -61,8 +58,8 @@ public class OFBizAuthenticator implements Authenticator {
 	public void syncUser(String username) throws AuthenticatorException {
 
 		try {
-			UserLogin userLogin = userLoginResource.read(username, null, false);
-			if(userLogin == null) {
+			UserLogin userLogin = userLoginResource.lookup(username, null, false);
+			if (userLogin == null) {
 				userLogin = userLoginResource.make();
 				userLogin.setEnabled(true);
 				userLogin.setUserLoginId(username);
@@ -96,6 +93,6 @@ public class OFBizAuthenticator implements Authenticator {
 
 	@Override
 	public boolean isEnabled() {
-		return true;
+		return false;
 	}
 }

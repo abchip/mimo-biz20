@@ -10,6 +10,7 @@ package org.abchip.mimo.biz.asf.plugins;
 
 import java.util.WeakHashMap;
 
+import org.abchip.mimo.application.Application;
 import org.abchip.mimo.biz.model.entity.tenant.Tenant;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.e4.E4Activator;
@@ -29,10 +30,11 @@ public class ContextUtils {
 		if (context != null)
 			return context;
 
-		synchronized (E4Activator.getApplication()) {
+		Application application = E4Activator.getApplication();
+		synchronized (application) {
 			context = contexts.get(tenantId);
 			if (context == null) {
-				Tenant tenant = E4Activator.getApplication().getContext().getResourceManager().getResourceReader(Tenant.class).lookup(tenantId);
+				Tenant tenant = application.getContext().getResourceManager().getResourceReader(Tenant.class).lookup(tenantId);
 				if (tenant == null)
 					return null;
 

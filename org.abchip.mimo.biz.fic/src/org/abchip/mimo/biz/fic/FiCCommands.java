@@ -189,7 +189,7 @@ public class FiCCommands extends BaseCommands {
 				break;
 		}
 		// Save container
-		ResourceWriter<EntityIdentifiable> entityWriter = context.getResourceManager().getResourceWriter("EntityContainer");
+		ResourceWriter<EntityContainer> entityWriter = context.getResourceManager().getResourceWriter(EntityContainer.class);
 		entityWriter.create(container, true);
 	}
 
@@ -280,7 +280,7 @@ public class FiCCommands extends BaseCommands {
 				break;
 		}
 		// Save container
-		ResourceWriter<EntityIdentifiable> entityWriter = context.getResourceManager().getResourceWriter("EntityContainer");
+		ResourceWriter<EntityContainer> entityWriter = context.getResourceManager().getResourceWriter(EntityContainer.class);
 		entityWriter.create(container, true);
 	}
 

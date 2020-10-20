@@ -169,7 +169,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 	}
 
 	@Override
-	public E read(String name, String fields, boolean proxy) throws ResourceException {
+	public E lookup(String name, String fields, boolean proxy) throws ResourceException {
 
 		DynamicViewEntity dynamicViewEntity = buildDynamicView(this.modelEntity);
 
@@ -234,7 +234,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 	}
 
 	@Override
-	public List<E> read(String filter, String fields, String order, int limit, boolean proxy) throws ResourceException {
+	public List<E> find(String filter, String fields, String order, int limit, boolean proxy) throws ResourceException {
 
 		LOGGER.trace("Read frame {} filter {} fields {} order {} limit {} proxy {}", this.getFrame().getName(), filter, fields, order, limit, proxy);
 
@@ -509,12 +509,8 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 		Map<String, Object> context = new HashMap<String, Object>();
 		ContextDescription contextDescription = this.getContext().getContextDescription();
-		context.put("login.username", contextDescription.getUser());
-
-		// context.put("userLogin", EntityUtils.toBizEntity(delegator,
-		// this.getContext().createProxy(UserLogin.class,
-		// contextDescription.getUser())));
-
+//		context.put("userLogin", EntityUtils.toBizEntity(delegator, contextDescription.getUser()));
+		context.put("login.username", contextDescription.getUser());	
 		context.put("locale", contextDescription.getLocale());
 
 		for (Slot slot : getFrame().getSlots()) {

@@ -85,6 +85,7 @@ public class BizAuthenticationManagerImpl implements AuthenticationManager {
 			return null;
 
 		ContextProvider contextUser = contextRoot.createChildContext(contextId);
+		contextUser.get().getContextDescription().setUser(application.getContextDescription().getUser());
 		contextUser.get().getContextDescription().setTenant(authentication.getTenant());
 		return contextUser;
 	}
