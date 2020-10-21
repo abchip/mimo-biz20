@@ -18,8 +18,6 @@ import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceFactory;
 import org.abchip.mimo.resource.ResourceSet;
 import org.abchip.mimo.resource.impl.ResourceProviderImpl;
-import org.apache.ofbiz.entity.Delegator;
-import org.apache.ofbiz.entity.DelegatorFactory;
 
 public class OFBizResourceProviderImpl extends ResourceProviderImpl {
 
@@ -36,16 +34,7 @@ public class OFBizResourceProviderImpl extends ResourceProviderImpl {
 	@Override
 	public <E extends EntityIdentifiable> Resource<E> createResource(ResourceSet resourceSet, Frame<E> frame, String tenantId) throws ResourceException {
 
-		Delegator delegator = null;
-		if (tenantId != null) {
-			delegator = DelegatorFactory.getDelegator("default#" + tenantId);
-		} else
-			delegator = DelegatorFactory.getDelegator(null);
-
-		if (delegator == null)
-			return null;
-
-		Resource<E> resource = new OFBizResourceImpl<E>(resourceSet, delegator, frame);
+		Resource<E> resource = new OFBizResourceImpl<E>(resourceSet, tenantId, frame);
 		resource.setResourceConfig(this.resourceConfig);
 
 		return resource;

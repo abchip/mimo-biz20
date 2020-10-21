@@ -119,6 +119,7 @@ public class CreateTenantPartyImpl extends CreateTenantImpl implements CreateTen
 			tenantPerson.setStatusId(context.createProxy(StatusItem.class, "PARTY_ENABLED", this.getTenant()));
 			tenantPerson.setPartyTypeId(context.createProxy(PartyType.class, "PERSON", this.getTenant()));
 			tenantPerson.setFirstName("Tenant " + this.getTenantId());
+			tenantPerson.setLastName(this.getTenantName());
 			personWriter.create(tenantPerson, this.isUpdate());
 		}
 

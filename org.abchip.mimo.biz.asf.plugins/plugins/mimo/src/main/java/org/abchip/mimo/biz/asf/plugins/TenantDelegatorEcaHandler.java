@@ -15,7 +15,6 @@ import java.util.Map;
 import org.abchip.mimo.biz.asf.plugins.edi.EdiServices;
 import org.abchip.mimo.biz.asf.plugins.edi.EdiUtils;
 import org.apache.ofbiz.entity.Delegator;
-import org.apache.ofbiz.entity.GenericEntityException;
 import org.apache.ofbiz.entityext.eca.DelegatorEcaHandler;
 import org.apache.ofbiz.entityext.eca.EntityEcaRule;
 import org.apache.ofbiz.entityext.eca.EntityEcaUtil;
@@ -27,7 +26,7 @@ public class TenantDelegatorEcaHandler extends DelegatorEcaHandler {
 	public TenantDelegatorEcaHandler() {
 		super();
 	}
-	
+
 	@Override
 	public Map<String, List<EntityEcaRule>> getEntityEventMap(String entityName) {
 
@@ -39,15 +38,10 @@ public class TenantDelegatorEcaHandler extends DelegatorEcaHandler {
 			ecaValues.putAll(entityMap);
 
 		// tenant cache
-		try {
-			Map<String, Map<String, List<EntityEcaRule>>> ecaCache = EntityEcaUtil.getEntityEcaCache(EdiUtils.getEcaCache(this.getDispatchContext().getDelegator()));
-			Map<String, List<EntityEcaRule>> tempEntity = ecaCache.get(entityName);
-			if (tempEntity != null)
-				ecaValues.putAll(tempEntity);
-
-		} catch (GenericEntityException e) {
-			e.printStackTrace();
-		}
+		Map<String, Map<String, List<EntityEcaRule>>> ecaCache = EntityEcaUtil.getEntityEcaCache(EdiUtils.getEcaCache(this.delegator));
+		Map<String, List<EntityEcaRule>> tempEntity = ecaCache.get(entityName);
+		if (tempEntity != null)
+			ecaValues.putAll(tempEntity);
 
 		return ecaValues;
 	}
@@ -61,9 +55,10 @@ public class TenantDelegatorEcaHandler extends DelegatorEcaHandler {
 			return;
 
 		try {
-			LocalDispatcher dispatcher = this.getDispatchContext().getDispatcher();
+			// LocalDispatcher dispatcher = this.getDispatchContext().getDispatcher();
+			LocalDispatcher dispatcher = ContextUtils.getLocalDispatcher(delegator);
 			dispatcher.runAsync(EdiServices.Services.startEdiEngine.name(), null, false);
-		} catch (GenericServiceException | GenericEntityException e) {
+		} catch (GenericServiceException e) {
 			e.printStackTrace();
 		}
 	}

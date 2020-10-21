@@ -17,6 +17,7 @@ import java.util.Map;
 
 import org.abchip.mimo.biz.asf.plugins.entity.EntityUtils;
 import org.abchip.mimo.biz.asf.plugins.entity.ModelUtils;
+import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.context.ContextDescription;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.Frame;
@@ -51,7 +52,6 @@ import org.apache.ofbiz.service.GenericServiceException;
 import org.apache.ofbiz.service.LocalDispatcher;
 import org.apache.ofbiz.service.ModelParam;
 import org.apache.ofbiz.service.ModelService;
-import org.apache.ofbiz.service.ServiceContainer;
 import org.apache.ofbiz.service.ServiceUtil;
 import org.osgi.service.log.Logger;
 
@@ -59,20 +59,22 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 	private static final Logger LOGGER = Logs.getLogger(OFBizResourceImpl.class);
 
+	private String tenantId = null;
 	private Frame<E> frame = null;
-	private Delegator delegator = null;
 
-	private LocalDispatcher dispatcher = null;
 	private ModelEntity modelEntity = null;
 	private ModelFieldTypeReader modelHelper;
 
-	public OFBizResourceImpl(ResourceSet resourceSet, Delegator delegator, Frame<E> frame) {
-		super(resourceSet, delegator.getDelegatorTenantId());
+	private GenericValue userLogin = null;
 
+	public OFBizResourceImpl(ResourceSet resourceSet, String tenantId, Frame<E> frame) {
+		super(resourceSet, tenantId);
+
+		this.tenantId = tenantId;
 		this.frame = frame;
-		this.delegator = delegator;
 
-		this.dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorName(), delegator);
+		Delegator delegator = ContextUtils.getDelegator(tenantId, false);
+
 		this.modelEntity = delegator.getModelEntity(frame.getName());
 		this.modelHelper = delegator.getModelFieldTypeReader(modelEntity);
 	}
@@ -90,13 +92,16 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			return;
 		}
 
+		Delegator delegator = ContextUtils.getDelegator(tenantId, raw);
+
 		if (!raw) {
+			LocalDispatcher dispatcher = ContextUtils.getLocalDispatcher(delegator);
 			String serviceName = "create" + this.getFrame().getName();
 			try {
 				ModelService service = dispatcher.getDispatchContext().getModelService(serviceName);
 
 				try {
-					Map<String, Object> context = toBizContext(service, entity);
+					Map<String, Object> context = toBizContext(delegator, service, entity);
 					context = dispatcher.runSync(serviceName, context);
 					if (ServiceUtil.isError(context))
 						throw new ResourceException(ServiceUtil.getErrorMessage(context));
@@ -117,7 +122,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		try {
 			beganTransaction = TransactionUtil.begin();
 
-			this.doCreate(entity.isa(), entity, update);
+			this.doCreate(delegator, entity.isa(), entity, update);
 			if (entity.getResource() == null)
 				this.attach(entity);
 
@@ -151,7 +156,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		try {
 			beganTransaction = TransactionUtil.begin();
 
-			nextSeq = this.delegator.getNextSeqId(frame.getName());
+			nextSeq = ContextUtils.getDelegator(tenantId, false).getNextSeqId(frame.getName());
 
 			TransactionUtil.commit(beganTransaction);
 		} catch (GenericEntityException e) {
@@ -169,7 +174,9 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 	@Override
 	public E lookup(String name, String fields, boolean proxy) throws ResourceException {
 
-		DynamicViewEntity dynamicViewEntity = buildDynamicView(this.modelEntity);
+		Delegator delegator = ContextUtils.getDelegator(tenantId, false);
+
+		DynamicViewEntity dynamicViewEntity = buildDynamicView(delegator, this.modelEntity);
 
 		EntityQuery eq = EntityQuery.use(delegator);
 		eq = eq.from(dynamicViewEntity);
@@ -236,6 +243,8 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 		LOGGER.trace("Read frame {} filter {} fields {} order {} limit {} proxy {}", this.getFrame().getName(), filter, fields, order, limit, proxy);
 
+		Delegator delegator = ContextUtils.getDelegator(tenantId, false);
+
 		EntityQuery eq = EntityQuery.use(delegator);
 
 		// SELECT
@@ -244,7 +253,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		else if (proxy)
 			eq = eq.select(new HashSet<String>(this.modelEntity.getPkFieldNames()));
 
-		DynamicViewEntity dynamicViewEntity = buildDynamicView(this.modelEntity);
+		DynamicViewEntity dynamicViewEntity = buildDynamicView(delegator, this.modelEntity);
 
 		if (filter != null && !filter.isEmpty()) {
 			OFBizFilterAnalyzer analyzer = analyzeFilter(delegator, this.modelEntity.getEntityName(), filter);
@@ -321,12 +330,15 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			return;
 		}
 
+		Delegator delegator = ContextUtils.getDelegator(tenantId, false);
+
 		String serviceName = "update" + this.getFrame().getName();
 		try {
+			LocalDispatcher dispatcher = ContextUtils.getLocalDispatcher(delegator);
 			ModelService service = dispatcher.getDispatchContext().getModelService(serviceName);
 
 			try {
-				Map<String, Object> context = toBizContext(service, entity);
+				Map<String, Object> context = toBizContext(delegator, service, entity);
 				context = dispatcher.runSync(serviceName, context);
 				if (ServiceUtil.isError(context))
 					throw new ResourceException(ServiceUtil.getErrorMessage(context));
@@ -346,7 +358,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		try {
 			beganTransaction = TransactionUtil.begin();
 
-			this.doUpdate(entity.isa(), entity);
+			doUpdate(delegator, entity.isa(), entity);
 
 			TransactionUtil.commit(beganTransaction);
 		} catch (GeneralException e) {
@@ -368,12 +380,15 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			return;
 		}
 
+		Delegator delegator = ContextUtils.getDelegator(tenantId, false);
+
 		String serviceName = "delete" + this.getFrame().getName();
 		try {
+			LocalDispatcher dispatcher = ContextUtils.getLocalDispatcher(delegator);
 			ModelService service = dispatcher.getDispatchContext().getModelService(serviceName);
 
 			try {
-				Map<String, Object> context = toBizContext(service, entity);
+				Map<String, Object> context = toBizContext(delegator, service, entity);
 				context = dispatcher.runSync(serviceName, context);
 				if (ServiceUtil.isError(context))
 					throw new ResourceException(ServiceUtil.getErrorMessage(context));
@@ -391,7 +406,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		try {
 			beganTransaction = TransactionUtil.begin();
 
-			this.doDelete(entity.isa(), entity);
+			this.doDelete(delegator, entity.isa(), entity);
 			this.detach(entity);
 
 			TransactionUtil.commit(beganTransaction);
@@ -406,52 +421,52 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		}
 	}
 
-	private <K extends EntityIdentifiable> void doCreate(Frame<K> frame, K entity, boolean replace) throws GeneralException {
+	private <K extends EntityIdentifiable> void doCreate(Delegator delegator, Frame<K> frame, K entity, boolean replace) throws GeneralException {
 
-		if (this.delegator.getModelReader().getModelEntityNoCheck(frame.getName()) == null)
+		if (delegator.getModelReader().getModelEntityNoCheck(frame.getName()) == null)
 			return;
 
 		@SuppressWarnings("unchecked")
 		Frame<K> ako = (Frame<K>) frame.getAko();
 		if (ako != null)
-			doCreate(ako, entity, replace);
+			doCreate(delegator, ako, entity, replace);
 
-		GenericValue genericValue = EntityUtils.toBizEntity(this.delegator, frame, entity);
+		GenericValue genericValue = EntityUtils.toBizEntity(delegator, frame, entity);
 		if (replace)
-			this.delegator.createOrStore(genericValue);
+			delegator.createOrStore(genericValue);
 		else
-			this.delegator.create(genericValue);
+			delegator.create(genericValue);
 	}
 
-	private <K extends EntityIdentifiable> void doUpdate(Frame<K> frame, K entity) throws GeneralException {
+	private <K extends EntityIdentifiable> void doUpdate(Delegator delegator, Frame<K> frame, K entity) throws GeneralException {
 
-		if (this.delegator.getModelReader().getModelEntityNoCheck(frame.getName()) == null)
+		if (delegator.getModelReader().getModelEntityNoCheck(frame.getName()) == null)
 			return;
 
 		@SuppressWarnings("unchecked")
 		Frame<K> ako = (Frame<K>) frame.getAko();
 		if (ako != null)
-			doUpdate(ako, entity);
+			doUpdate(delegator, ako, entity);
 
-		GenericValue genericValue = EntityUtils.toBizEntity(this.delegator, frame, entity);
-		this.delegator.store(genericValue);
+		GenericValue genericValue = EntityUtils.toBizEntity(delegator, frame, entity);
+		delegator.store(genericValue);
 	}
 
-	private <K extends EntityIdentifiable> void doDelete(Frame<K> frame, K entity) throws GeneralException {
+	private <K extends EntityIdentifiable> void doDelete(Delegator delegator, Frame<K> frame, K entity) throws GeneralException {
 
-		if (this.delegator.getModelReader().getModelEntityNoCheck(frame.getName()) == null)
+		if (delegator.getModelReader().getModelEntityNoCheck(frame.getName()) == null)
 			return;
 
-		GenericValue genericValue = EntityUtils.toBizEntity(this.delegator, frame, entity);
-		this.delegator.removeValue(genericValue);
+		GenericValue genericValue = EntityUtils.toBizEntity(delegator, frame, entity);
+		delegator.removeValue(genericValue);
 
 		@SuppressWarnings("unchecked")
 		Frame<K> ako = (Frame<K>) frame.getAko();
 		if (ako != null)
-			doDelete(ako, entity);
+			doDelete(delegator, ako, entity);
 	}
 
-	private DynamicViewEntity buildDynamicView(ModelEntity modelEntity) {
+	private DynamicViewEntity buildDynamicView(Delegator delegator, ModelEntity modelEntity) {
 
 		DynamicViewEntity dynamicViewEntity = new DynamicViewEntity();
 		dynamicViewEntity.addMemberEntity(modelEntity.getEntityName(), modelEntity.getEntityName());
@@ -460,12 +475,12 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			ModelField field = fieldIterator.next();
 			dynamicViewEntity.addAlias(modelEntity.getEntityName(), field.getName());
 		}
-		addSuperEntity(dynamicViewEntity, modelEntity);
+		addSuperEntity(delegator, dynamicViewEntity, modelEntity);
 
 		return dynamicViewEntity;
 	}
 
-	private void addSuperEntity(DynamicViewEntity dynamicView, ModelEntity modelEntity) {
+	private void addSuperEntity(Delegator delegator, DynamicViewEntity dynamicView, ModelEntity modelEntity) {
 
 		String superEntity = ModelUtils.getSuperEntity(delegator, modelEntity.getEntityName());
 		if (superEntity == null)
@@ -481,7 +496,7 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		}
 		dynamicView.addViewLink(modelEntity.getEntityName(), superEntity, Boolean.TRUE, ModelKeyMap.makeKeyMapList(modelEntity.getFirstPkFieldName(), modelSuperEntity.getFirstPkFieldName()));
 
-		addSuperEntity(dynamicView, modelSuperEntity);
+		addSuperEntity(delegator, dynamicView, modelSuperEntity);
 	}
 
 	private OFBizFilterAnalyzer analyzeFilter(Delegator delegator, String frame, String filter) {
@@ -499,13 +514,12 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 		return analyzer;
 	}
 
-	private Map<String, Object> toBizContext(ModelService service, E entity) throws GeneralException {
+	private Map<String, Object> toBizContext(Delegator delegator, ModelService service, E entity) throws GeneralException {
 
 		Map<String, Object> context = new HashMap<String, Object>();
 		ContextDescription contextDescription = this.getContext().getContextDescription();
-		// context.put("userLogin", EntityUtils.toBizEntity(delegator,
-		// contextDescription.getUser()));
-		context.put("login.username", contextDescription.getUser());
+
+		context.put("userLogin", getUserLogin(delegator));
 		context.put("locale", contextDescription.getLocale());
 
 		for (Slot slot : getFrame().getSlots()) {
@@ -570,5 +584,12 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 			sb.append(genericValue.get(curPk.getName()));
 		}
 		return sb.toString();
+	}
+
+	private GenericValue getUserLogin(Delegator delegator) throws GeneralException {
+		if (this.userLogin == null)
+			this.userLogin = EntityUtils.toBizEntity(delegator, this.getContext().createProxy(UserLogin.class, this.getContext().getContextDescription().getUser()));
+
+		return userLogin;
 	}
 }

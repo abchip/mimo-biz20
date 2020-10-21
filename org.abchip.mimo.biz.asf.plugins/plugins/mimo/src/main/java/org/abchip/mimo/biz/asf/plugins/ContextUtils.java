@@ -15,6 +15,10 @@ import org.abchip.mimo.biz.model.entity.tenant.Tenant;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.core.e4.E4Activator;
 import org.abchip.mimo.resource.ResourceException;
+import org.apache.ofbiz.entity.Delegator;
+import org.apache.ofbiz.entity.DelegatorFactory;
+import org.apache.ofbiz.service.LocalDispatcher;
+import org.apache.ofbiz.service.ServiceContainer;
 
 public class ContextUtils {
 
@@ -46,5 +50,25 @@ public class ContextUtils {
 		}
 
 		return context;
+	}
+
+	public static Delegator getDelegator(String tenantId, boolean raw) {
+
+		String delegatorName = "default";
+		if (raw)
+			delegatorName = delegatorName + "-no-eca";
+
+		Delegator delegator = null;
+		if (tenantId != null)
+			delegatorName = delegatorName + "#" + tenantId;
+
+		delegator = DelegatorFactory.getDelegator(delegatorName);
+
+		return delegator;
+	}
+
+	public static LocalDispatcher getLocalDispatcher(Delegator delegator) {
+		LocalDispatcher dispatcher = ServiceContainer.getLocalDispatcher(delegator.getDelegatorBaseName(), delegator);
+		return dispatcher;
 	}
 }

@@ -188,7 +188,7 @@ public abstract class CreateTenantImpl extends ServiceRequestImpl<ServiceRespons
 		userLogin.setEnabled(true);
 		userLogin.setHasLoggedOut(false);
 		userLogin.setRequirePasswordChange(false);
-		userLogintWriter.create(userLogin, this.isUpdate());
+		userLogintWriter.create(userLogin, this.isUpdate(), true);
 
 		// default seeds
 		{
