@@ -10,13 +10,13 @@ package org.abchip.mimo.biz.asf.plugins;
 
 import javax.annotation.PostConstruct;
 
+import org.abchip.mimo.context.Context;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.Frame;
 import org.abchip.mimo.resource.Resource;
 import org.abchip.mimo.resource.ResourceConfig;
 import org.abchip.mimo.resource.ResourceException;
 import org.abchip.mimo.resource.ResourceFactory;
-import org.abchip.mimo.resource.ResourceSet;
 import org.abchip.mimo.resource.impl.ResourceProviderImpl;
 
 public class OFBizResourceProviderImpl extends ResourceProviderImpl {
@@ -32,9 +32,9 @@ public class OFBizResourceProviderImpl extends ResourceProviderImpl {
 	}
 
 	@Override
-	public <E extends EntityIdentifiable> Resource<E> createResource(ResourceSet resourceSet, Frame<E> frame, String tenantId) throws ResourceException {
+	public <E extends EntityIdentifiable> Resource<E> createResource(Context context, Frame<E> frame, String tenantId) throws ResourceException {
 
-		Resource<E> resource = new OFBizResourceImpl<E>(resourceSet, tenantId, frame);
+		Resource<E> resource = new OFBizResourceImpl<E>(context, tenantId, frame);
 		resource.setResourceConfig(this.resourceConfig);
 
 		return resource;

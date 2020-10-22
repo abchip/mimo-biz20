@@ -18,6 +18,7 @@ import java.util.Map;
 import org.abchip.mimo.biz.asf.plugins.entity.EntityUtils;
 import org.abchip.mimo.biz.asf.plugins.entity.ModelUtils;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
+import org.abchip.mimo.context.Context;
 import org.abchip.mimo.context.ContextDescription;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.Frame;
@@ -25,7 +26,6 @@ import org.abchip.mimo.entity.Slot;
 import org.abchip.mimo.parser.sqlite.SQLiteLexer;
 import org.abchip.mimo.parser.sqlite.SQLiteParser;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceSet;
 import org.abchip.mimo.resource.impl.ResourceImpl;
 import org.abchip.mimo.util.Logs;
 import org.antlr.v4.runtime.ANTLRInputStream;
@@ -67,8 +67,8 @@ public class OFBizResourceImpl<E extends EntityIdentifiable> extends ResourceImp
 
 	private GenericValue userLogin = null;
 
-	public OFBizResourceImpl(ResourceSet resourceSet, String tenantId, Frame<E> frame) {
-		super(resourceSet, tenantId);
+	public OFBizResourceImpl(Context context, String tenantId, Frame<E> frame) {
+		super(context, tenantId);
 
 		this.tenantId = tenantId;
 		this.frame = frame;

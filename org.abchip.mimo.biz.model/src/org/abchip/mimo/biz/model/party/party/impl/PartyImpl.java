@@ -489,7 +489,13 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 		if (paymentMethod == null)
 			return null;
 
-		return this.getResource().getContext().createProxy(CreditCard.class, paymentMethod.getPaymentMethodId());
+		Resource<Party> resource = this.getResource();
+		if (resource == null) {
+			LOGGER.warn("Invalid resource");
+			return null;
+		}
+
+		return resource.getContext().createProxy(CreditCard.class, paymentMethod.getPaymentMethodId());
 	}
 
 	/**

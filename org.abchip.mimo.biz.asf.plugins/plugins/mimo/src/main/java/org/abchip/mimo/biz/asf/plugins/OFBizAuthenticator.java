@@ -12,7 +12,6 @@ import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.context.Context;
 import org.abchip.mimo.resource.Resource;
 import org.abchip.mimo.resource.ResourceException;
-import org.abchip.mimo.resource.ResourceSet;
 import org.abchip.mimo.util.Logs;
 import org.apache.ofbiz.common.authentication.api.Authenticator;
 import org.apache.ofbiz.common.authentication.api.AuthenticatorException;
@@ -34,8 +33,7 @@ public class OFBizAuthenticator implements Authenticator {
 
 		try {
 			Context context = ContextUtils.getOrCreateContext(delegator.getDelegatorTenantId());
-			ResourceSet resourceSet = context.getResourceSet();
-			this.userLoginResource = new OFBizResourceImpl<UserLogin>(resourceSet, delegator.getDelegatorTenantId(), context.getFrame(UserLogin.class));
+			this.userLoginResource = new OFBizResourceImpl<UserLogin>(context, delegator.getDelegatorTenantId(), context.getFrame(UserLogin.class));
 
 		} catch (ResourceException e) {
 			LOGGER.warn(e.getMessage());
