@@ -87,7 +87,7 @@ public class EntityServices {
 				LOGGER.warn("Differences found on model");
 
 			reorderFeatures(bizPackage, entityNames);
-			
+
 			bizPackage = writePackage(bizPackage, context);
 
 			return ServiceUtil.returnSuccess("OK");
@@ -138,7 +138,7 @@ public class EntityServices {
 
 			// remove previous
 			dstEClass.getESuperTypes().clear();
-			
+
 			// copy source
 			for (EClass srcSuperEClass : srcEClass.getESuperTypes())
 				dstEClass.getESuperTypes().add(srcSuperEClass);
@@ -155,11 +155,11 @@ public class EntityServices {
 				continue;
 
 			EStructuralFeature dstEFeature = dstEClass.getEStructuralFeature(srcEFeature.getName());
-			
+
 			// remove previous
-			if(dstEFeature != null)
+			if (dstEFeature != null)
 				dstEClass.getEStructuralFeatures().remove(dstEFeature);
-			
+
 			dstEClass.getEStructuralFeatures().add(EcoreUtils.copy(srcEFeature));
 			result = true;
 		}
@@ -168,7 +168,7 @@ public class EntityServices {
 		for (EOperation srcEOperation : srcEClass.getEOperations()) {
 			EPackage srcEPackage = srcEClass.getEPackage();
 			EPackage dstEPackage = dstEClass.getEPackage();
-			
+
 			// copy annotation to destination package
 			for (EAnnotation srcEAnnotation : srcEPackage.getEAnnotations()) {
 				EAnnotation dstEAnnotation = dstEPackage.getEAnnotation(srcEAnnotation.getSource());
@@ -177,7 +177,7 @@ public class EntityServices {
 					dstEPackage.getEAnnotations().add(dstEAnnotation);
 				}
 			}
-			
+
 			// copy source
 			dstEClass.getEOperations().add(EcoreUtils.copy(srcEOperation));
 			result = true;
@@ -714,27 +714,39 @@ public class EntityServices {
 				if (modelRelation.getKeyMaps().size() > 1)
 					continue;
 
+				// check destination entity
+				ModelEntity modelRelEntity = delegator.getModelReader().getModelEntityNoCheck(modelRelation.getRelEntityName());
+				if (modelRelEntity == null)
+					continue;
+
+				if (modelRelEntity instanceof ModelViewEntity)
+					continue;
+
 				ModelKeyMap modelKeyMap = modelRelation.getKeyMaps().get(0);
 
 				// check auto-relation
 				if (!modelKeyMap.getFieldName().equals(modelEntity.getFirstPkFieldName()))
 					continue;
 
-				// check destination entity
-				ModelEntity modelRel = delegator.getModelReader().getModelEntityNoCheck(modelRelation.getRelEntityName());
-				if (modelRel == null)
+				// pk not to pk
+				if (!modelKeyMap.getRelFieldName().equals(modelRelEntity.getFirstPkFieldName()))
 					continue;
 
-				if (modelRel instanceof ModelViewEntity)
-					continue;
-
-				// TODO date management
-				if (modelRel.getPksSize() > 2)
-					continue;
-
-				ModelField modelFieldRel = modelRel.getField(modelKeyMap.getRelFieldName());
+				ModelField modelFieldRel = modelRelEntity.getField(modelKeyMap.getRelFieldName());
 				if (modelFieldRel == null)
 					continue;
+
+				String relationType = null;
+				if (modelRelEntity.getPksSize() > 2) {
+					if (modelRelEntity.getPksSize() == 3 && modelRelEntity.getPkFieldNames().get(2).equals("fromDate")) {
+						relationType = "fromDate";
+					} else {
+						if (!modelRelEntity.getPkFieldNames().get(1).contains("Seq"))
+							relationType = "sequenced";
+						else
+							continue;
+					}
+				}
 
 				String relationName = modelRelation.getCombinedName();
 
@@ -749,7 +761,6 @@ public class EntityServices {
 						defined = true;
 						break;
 					}
-
 				}
 				if (defined)
 					continue;
@@ -764,21 +775,18 @@ public class EntityServices {
 				eReference.setName(eTypedName);
 
 				// type
-				EClass eClassRel = Frames.getEClass(bizPackage, modelRel.getEntityName());
+				EClass eClassRel = Frames.getEClass(bizPackage, modelRelEntity.getEntityName());
 				eReference.setEType(eClassRel);
 
 				eReference.setDerived(true);
 
-				// pk not to pk
-				if (!modelKeyMap.getRelFieldName().equals(modelRel.getFirstPkFieldName())) {
-					// eReference.getEKeys().add((EAttribute)
-					// eClassRel.getEStructuralFeature(modelKeyMap.getRelFieldName()));
-					continue;
-				}
-
 				// cardinality
 				eReference.setUpperBound(-1);
 
+				if(relationType != null) {
+					EcoreUtils.addAnnotationKey(eReference, Slot.NS_PREFIX_SLOT, "type", relationType);
+				}
+				
 				eClass.getEStructuralFeatures().add(eReference);
 			}
 		}

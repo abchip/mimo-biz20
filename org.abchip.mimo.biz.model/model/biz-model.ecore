@@ -18864,7 +18864,7 @@
     </eSubpackages>
     <eSubpackages name="contact" nsURI="http://www.abchip.org/mimo/biz/model/party/contact"
         nsPrefix="biz-contact">
-      <eClassifiers xsi:type="ecore:EClass" name="ContactMech">
+      <eClassifiers xsi:type="ecore:EClass" name="ContactMech" abstract="true">
         <eAnnotations source="mimo-ent-frame">
           <details key="title" value="Contact Mechanism"/>
         </eAnnotations>
