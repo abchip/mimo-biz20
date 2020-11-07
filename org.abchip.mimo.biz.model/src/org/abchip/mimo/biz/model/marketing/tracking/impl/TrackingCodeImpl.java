@@ -16,7 +16,7 @@ import org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeVisit;
 import org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -55,7 +55,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class TrackingCodeImpl extends EntityIdentifiableImpl implements TrackingCode {
+public class TrackingCodeImpl extends EntityTypedImpl<TrackingCodeType> implements TrackingCode {
 
 	/**
 	 * <!-- begin-user-doc -->

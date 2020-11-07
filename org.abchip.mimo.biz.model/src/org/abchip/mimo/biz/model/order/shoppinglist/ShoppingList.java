@@ -15,8 +15,8 @@ import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.promo.ProductPromoCode;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
 import org.abchip.mimo.biz.model.service.schedule.RecurrenceInfo;
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -55,7 +55,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface ShoppingList extends EntityIdentifiable, EntityInfo {
+public interface ShoppingList extends EntityTyped<ShoppingListType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Carrier Party Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

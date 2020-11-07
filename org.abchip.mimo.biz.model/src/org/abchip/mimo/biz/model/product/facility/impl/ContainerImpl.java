@@ -15,7 +15,7 @@ import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.product.facility.FacilityPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -39,7 +39,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ContainerImpl extends EntityIdentifiableImpl implements org.abchip.mimo.biz.model.product.facility.Container {
+public class ContainerImpl extends EntityTypedImpl<ContainerType> implements org.abchip.mimo.biz.model.product.facility.Container {
 	
 	/**
 	 * <!-- begin-user-doc -->

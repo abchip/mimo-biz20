@@ -17,7 +17,7 @@ import org.abchip.mimo.biz.model.product.price.ProductPriceType;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -46,7 +46,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ProductFeaturePriceImpl extends EntityIdentifiableImpl implements ProductFeaturePrice {
+public class ProductFeaturePriceImpl extends EntityTypedImpl<ProductPriceType> implements ProductFeaturePrice {
 
 	/**
 	 * <!-- begin-user-doc -->

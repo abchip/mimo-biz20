@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.common.geo;
 
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +27,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame title='Geographic Boundary Association' dictionary='CommonEntityLabels' formula='description'"
  * @generated
  */
-public interface GeoAssocType extends EntityIdentifiable, EntityInfo {
+public interface GeoAssocType extends EntityType<CountryAddressFormat>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

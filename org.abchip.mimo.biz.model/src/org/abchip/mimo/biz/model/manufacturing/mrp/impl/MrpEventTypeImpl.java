@@ -8,11 +8,12 @@
 package org.abchip.mimo.biz.model.manufacturing.mrp.impl;
 
 import java.util.Date;
+import org.abchip.mimo.biz.model.manufacturing.mrp.MrpEvent;
 import org.abchip.mimo.biz.model.manufacturing.mrp.MrpEventType;
 import org.abchip.mimo.biz.model.manufacturing.mrp.MrpPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -33,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class MrpEventTypeImpl extends EntityIdentifiableImpl implements MrpEventType {
+public class MrpEventTypeImpl extends EntityTypeImpl<MrpEvent> implements MrpEventType {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,9 +60,16 @@ public class MrpEventTypeImpl extends EntityIdentifiableImpl implements MrpEvent
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 1;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return 0;
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	/**

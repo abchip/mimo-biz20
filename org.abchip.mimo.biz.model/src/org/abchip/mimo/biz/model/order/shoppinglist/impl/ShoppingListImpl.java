@@ -22,7 +22,7 @@ import org.abchip.mimo.biz.model.product.store.ProductStore;
 import org.abchip.mimo.biz.model.service.schedule.RecurrenceInfo;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -63,7 +63,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ShoppingListImpl extends EntityIdentifiableImpl implements ShoppingList {
+public class ShoppingListImpl extends EntityTypedImpl<ShoppingListType> implements ShoppingList {
 
 	/**
 	 * <!-- begin-user-doc -->

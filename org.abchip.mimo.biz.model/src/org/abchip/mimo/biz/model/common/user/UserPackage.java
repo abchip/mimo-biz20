@@ -72,13 +72,22 @@ public interface UserPackage extends EPackage {
 	int USER_PREF_GROUP_TYPE = 0;
 
 	/**
+	 * The feature id for the '<em><b>Slots</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_PREF_GROUP_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
+
+	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER_PREF_GROUP_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
+	int USER_PREF_GROUP_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -87,7 +96,7 @@ public interface UserPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_PREF_GROUP_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
+	int USER_PREF_GROUP_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -96,7 +105,7 @@ public interface UserPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_PREF_GROUP_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
+	int USER_PREF_GROUP_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -105,7 +114,7 @@ public interface UserPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_PREF_GROUP_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
+	int USER_PREF_GROUP_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>User Pref Group Type Id</b></em>' attribute.
@@ -114,7 +123,7 @@ public interface UserPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_PREF_GROUP_TYPE__USER_PREF_GROUP_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int USER_PREF_GROUP_TYPE__USER_PREF_GROUP_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -123,7 +132,7 @@ public interface UserPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_PREF_GROUP_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int USER_PREF_GROUP_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Pref Group Type</em>' class.
@@ -132,7 +141,7 @@ public interface UserPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_PREF_GROUP_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int USER_PREF_GROUP_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.user.impl.UserPreferenceImpl <em>Preference</em>}' class.
@@ -151,7 +160,7 @@ public interface UserPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_PREFERENCE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
+	int USER_PREFERENCE__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -160,7 +169,7 @@ public interface UserPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_PREFERENCE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
+	int USER_PREFERENCE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -169,7 +178,7 @@ public interface UserPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_PREFERENCE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
+	int USER_PREFERENCE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -178,7 +187,7 @@ public interface UserPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_PREFERENCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
+	int USER_PREFERENCE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>User Login Id</b></em>' reference.
@@ -187,7 +196,7 @@ public interface UserPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_PREFERENCE__USER_LOGIN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int USER_PREFERENCE__USER_LOGIN_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>User Pref Type Id</b></em>' attribute.
@@ -196,7 +205,7 @@ public interface UserPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_PREFERENCE__USER_PREF_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int USER_PREFERENCE__USER_PREF_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>User Pref Data Type</b></em>' attribute.
@@ -205,7 +214,7 @@ public interface UserPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_PREFERENCE__USER_PREF_DATA_TYPE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int USER_PREFERENCE__USER_PREF_DATA_TYPE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>User Pref Group Type Id</b></em>' reference.
@@ -214,7 +223,7 @@ public interface UserPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_PREFERENCE__USER_PREF_GROUP_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int USER_PREFERENCE__USER_PREF_GROUP_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>User Pref Value</b></em>' attribute.
@@ -223,7 +232,7 @@ public interface UserPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_PREFERENCE__USER_PREF_VALUE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int USER_PREFERENCE__USER_PREF_VALUE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Preference</em>' class.
@@ -232,7 +241,7 @@ public interface UserPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_PREFERENCE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int USER_PREFERENCE_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 
 	/**

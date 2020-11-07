@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.product.catalog;
 
 import java.util.Date;
 import org.abchip.mimo.biz.model.product.category.ProductCategory;
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +33,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame title='Catalog Category Association' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProdCatalogCategory extends EntityIdentifiable, EntityInfo {
+public interface ProdCatalogCategory extends EntityTyped<ProdCatalogCategoryType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

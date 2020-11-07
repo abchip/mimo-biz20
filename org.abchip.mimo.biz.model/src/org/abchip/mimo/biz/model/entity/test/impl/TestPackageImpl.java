@@ -206,6 +206,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkeffortPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.EReference;
@@ -1773,8 +1774,12 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 		testEntityEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		testFieldTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		testFieldTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		testingEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		testingEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		EGenericType g2 = createEGenericType(this.getTestingType());
+		g1.getETypeArguments().add(g2);
+		testingEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		testingEClass.getEGenericSuperTypes().add(g1);
 		testingCryptoEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		testingCryptoEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		testingItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
@@ -1789,8 +1794,12 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 		testingStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		testingSubtypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		testingSubtypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		testingTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		testingTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
+		g2 = createEGenericType(this.getTesting());
+		g1.getETypeArguments().add(g2);
+		testingTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		testingTypeEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(testEntityEClass, TestEntity.class, "TestEntity", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

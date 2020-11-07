@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.product.facility;
 
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +27,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame title='Define associations between facilities' dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface FacilityAssocType extends EntityIdentifiable, EntityInfo {
+public interface FacilityAssocType extends EntityType<ProductFacilityAssoc>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Facility Assoc Type Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -1485,12 +1485,20 @@ public class CommunicationPackageImpl extends EPackageImpl implements Communicat
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		commContentAssocTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		commContentAssocTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		commEventContentAssocEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		commEventContentAssocEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
-		EGenericType g2 = createEGenericType(this.getCommunicationEventType());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityType());
+		EGenericType g2 = createEGenericType(this.getCommEventContentAssoc());
+		g1.getETypeArguments().add(g2);
+		commContentAssocTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		commContentAssocTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		g2 = createEGenericType(this.getCommContentAssocType());
+		g1.getETypeArguments().add(g2);
+		commEventContentAssocEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		commEventContentAssocEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		g2 = createEGenericType(this.getCommunicationEventType());
 		g1.getETypeArguments().add(g2);
 		communicationEventEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());

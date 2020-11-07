@@ -201,6 +201,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkeffortPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.EReference;
@@ -1322,16 +1323,24 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		contactListEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		contactListEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		EGenericType g2 = createEGenericType(this.getContactListType());
+		g1.getETypeArguments().add(g2);
+		contactListEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		contactListEClass.getEGenericSuperTypes().add(g1);
 		contactListCommStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		contactListCommStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		contactListPartyEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		contactListPartyEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		contactListPartyStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		contactListPartyStatusEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		contactListTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		contactListTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
+		g2 = createEGenericType(this.getContactList());
+		g1.getETypeArguments().add(g2);
+		contactListTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		contactListTypeEClass.getEGenericSuperTypes().add(g1);
 		webSiteContactListEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		webSiteContactListEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 

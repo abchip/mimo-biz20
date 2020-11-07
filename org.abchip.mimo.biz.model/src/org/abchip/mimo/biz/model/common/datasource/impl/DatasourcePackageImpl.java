@@ -197,6 +197,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkeffortPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.EReference;
@@ -806,10 +807,18 @@ public class DatasourcePackageImpl extends EPackageImpl implements DatasourcePac
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		dataSourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		dataSourceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		dataSourceTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		dataSourceTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		EGenericType g2 = createEGenericType(this.getDataSourceType());
+		g1.getETypeArguments().add(g2);
+		dataSourceEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		dataSourceEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
+		g2 = createEGenericType(this.getDataSource());
+		g1.getETypeArguments().add(g2);
+		dataSourceTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		dataSourceTypeEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(dataSourceEClass, DataSource.class, "DataSource", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

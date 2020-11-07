@@ -15,7 +15,7 @@ import org.abchip.mimo.biz.model.shipment.shipment.ShipmentContactMechType;
 import org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -37,7 +37,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ShipmentContactMechImpl extends EntityIdentifiableImpl implements ShipmentContactMech {
+public class ShipmentContactMechImpl extends EntityTypedImpl<ShipmentContactMechType> implements ShipmentContactMech {
 
 	/**
 	 * <!-- begin-user-doc -->

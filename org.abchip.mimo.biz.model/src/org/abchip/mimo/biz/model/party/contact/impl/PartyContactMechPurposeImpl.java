@@ -15,7 +15,7 @@ import org.abchip.mimo.biz.model.party.contact.PartyContactMechPurpose;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -39,7 +39,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class PartyContactMechPurposeImpl extends EntityIdentifiableImpl implements PartyContactMechPurpose {
+public class PartyContactMechPurposeImpl extends EntityTypedImpl<ContactMechPurposeType> implements PartyContactMechPurpose {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

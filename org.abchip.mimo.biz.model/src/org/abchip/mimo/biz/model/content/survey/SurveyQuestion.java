@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.content.survey;
 
 import java.util.List;
 import org.abchip.mimo.biz.model.common.geo.Geo;
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +37,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface SurveyQuestion extends EntityIdentifiable, EntityInfo {
+public interface SurveyQuestion extends EntityTyped<SurveyQuestionType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

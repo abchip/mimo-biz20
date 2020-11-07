@@ -667,7 +667,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
+	int RETURN_HEADER__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -676,7 +676,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
+	int RETURN_HEADER__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -685,7 +685,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
+	int RETURN_HEADER__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -694,7 +694,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
+	int RETURN_HEADER__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Return Id</b></em>' attribute.
@@ -703,7 +703,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__RETURN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int RETURN_HEADER__RETURN_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Billing Account Id</b></em>' reference.
@@ -712,7 +712,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__BILLING_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int RETURN_HEADER__BILLING_ACCOUNT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Communication Event Returns</b></em>' reference list.
@@ -721,7 +721,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__COMMUNICATION_EVENT_RETURNS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int RETURN_HEADER__COMMUNICATION_EVENT_RETURNS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Created By</b></em>' reference.
@@ -730,7 +730,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__CREATED_BY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int RETURN_HEADER__CREATED_BY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
@@ -739,7 +739,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__CURRENCY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int RETURN_HEADER__CURRENCY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Destination Facility Id</b></em>' reference.
@@ -748,7 +748,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__DESTINATION_FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int RETURN_HEADER__DESTINATION_FACILITY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Entry Date</b></em>' attribute.
@@ -757,7 +757,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__ENTRY_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
+	int RETURN_HEADER__ENTRY_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Fin Account Id</b></em>' reference.
@@ -766,7 +766,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__FIN_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int RETURN_HEADER__FIN_ACCOUNT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>From Party Id</b></em>' reference.
@@ -775,7 +775,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__FROM_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
+	int RETURN_HEADER__FROM_PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Needs Inventory Receive</b></em>' attribute.
@@ -784,7 +784,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__NEEDS_INVENTORY_RECEIVE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
+	int RETURN_HEADER__NEEDS_INVENTORY_RECEIVE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Origin Contact Mech Id</b></em>' reference.
@@ -793,7 +793,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__ORIGIN_CONTACT_MECH_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
+	int RETURN_HEADER__ORIGIN_CONTACT_MECH_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Payment Method Id</b></em>' reference.
@@ -802,7 +802,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__PAYMENT_METHOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
+	int RETURN_HEADER__PAYMENT_METHOD_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Return Header Type Id</b></em>' reference.
@@ -811,7 +811,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__RETURN_HEADER_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
+	int RETURN_HEADER__RETURN_HEADER_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Return Items</b></em>' reference list.
@@ -820,7 +820,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__RETURN_ITEMS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
+	int RETURN_HEADER__RETURN_ITEMS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -829,7 +829,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
+	int RETURN_HEADER__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Supplier Rma Id</b></em>' attribute.
@@ -838,7 +838,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__SUPPLIER_RMA_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
+	int RETURN_HEADER__SUPPLIER_RMA_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>To Party Id</b></em>' reference.
@@ -847,7 +847,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER__TO_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
+	int RETURN_HEADER__TO_PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The number of structural features of the '<em>Header</em>' class.
@@ -856,7 +856,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
+	int RETURN_HEADER_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnHeaderTypeImpl <em>Header Type</em>}' class.
@@ -869,13 +869,22 @@ public interface ReturnPackage extends EPackage {
 	int RETURN_HEADER_TYPE = 5;
 
 	/**
+	 * The feature id for the '<em><b>Slots</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RETURN_HEADER_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
+
+	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
+	int RETURN_HEADER_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -884,7 +893,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
+	int RETURN_HEADER_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -893,7 +902,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
+	int RETURN_HEADER_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -902,7 +911,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
+	int RETURN_HEADER_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Return Header Type Id</b></em>' attribute.
@@ -911,7 +920,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER_TYPE__RETURN_HEADER_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int RETURN_HEADER_TYPE__RETURN_HEADER_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -920,7 +929,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int RETURN_HEADER_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -929,7 +938,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int RETURN_HEADER_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Header Type</em>' class.
@@ -938,7 +947,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_HEADER_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int RETURN_HEADER_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemImpl <em>Item</em>}' class.
@@ -957,7 +966,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
+	int RETURN_ITEM__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -966,7 +975,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
+	int RETURN_ITEM__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -975,7 +984,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
+	int RETURN_ITEM__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -984,7 +993,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
+	int RETURN_ITEM__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Return Id</b></em>' reference.
@@ -993,7 +1002,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM__RETURN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int RETURN_ITEM__RETURN_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Return Item Seq Id</b></em>' attribute.
@@ -1002,7 +1011,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM__RETURN_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int RETURN_ITEM__RETURN_ITEM_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1011,7 +1020,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int RETURN_ITEM__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Expected Item Status</b></em>' reference.
@@ -1020,7 +1029,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM__EXPECTED_ITEM_STATUS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int RETURN_ITEM__EXPECTED_ITEM_STATUS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Order Id</b></em>' reference.
@@ -1029,7 +1038,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM__ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int RETURN_ITEM__ORDER_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Order Item Seq Id</b></em>' attribute.
@@ -1038,7 +1047,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM__ORDER_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int RETURN_ITEM__ORDER_ITEM_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -1047,7 +1056,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
+	int RETURN_ITEM__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Received Quantity</b></em>' attribute.
@@ -1056,7 +1065,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM__RECEIVED_QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int RETURN_ITEM__RECEIVED_QUANTITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Return Item Response Id</b></em>' reference.
@@ -1065,7 +1074,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM__RETURN_ITEM_RESPONSE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
+	int RETURN_ITEM__RETURN_ITEM_RESPONSE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Return Item Type Id</b></em>' reference.
@@ -1074,7 +1083,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM__RETURN_ITEM_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
+	int RETURN_ITEM__RETURN_ITEM_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Return Price</b></em>' attribute.
@@ -1083,7 +1092,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM__RETURN_PRICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
+	int RETURN_ITEM__RETURN_PRICE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Return Quantity</b></em>' attribute.
@@ -1092,7 +1101,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM__RETURN_QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
+	int RETURN_ITEM__RETURN_QUANTITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Return Reason Id</b></em>' reference.
@@ -1101,7 +1110,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM__RETURN_REASON_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
+	int RETURN_ITEM__RETURN_REASON_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Return Type Id</b></em>' reference.
@@ -1110,7 +1119,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM__RETURN_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
+	int RETURN_ITEM__RETURN_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -1119,7 +1128,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM__STATUS_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
+	int RETURN_ITEM__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The number of structural features of the '<em>Item</em>' class.
@@ -1128,7 +1137,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
+	int RETURN_ITEM_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemBillingImpl <em>Item Billing</em>}' class.
@@ -1486,13 +1495,22 @@ public interface ReturnPackage extends EPackage {
 	int RETURN_ITEM_TYPE = 10;
 
 	/**
+	 * The feature id for the '<em><b>Slots</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int RETURN_ITEM_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
+
+	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
+	int RETURN_ITEM_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -1501,7 +1519,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
+	int RETURN_ITEM_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -1510,7 +1528,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
+	int RETURN_ITEM_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -1519,7 +1537,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
+	int RETURN_ITEM_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Return Item Type Id</b></em>' attribute.
@@ -1528,7 +1546,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM_TYPE__RETURN_ITEM_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int RETURN_ITEM_TYPE__RETURN_ITEM_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -1537,7 +1555,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int RETURN_ITEM_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Parent Type Id</b></em>' reference.
@@ -1546,7 +1564,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int RETURN_ITEM_TYPE__PARENT_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The number of structural features of the '<em>Item Type</em>' class.
@@ -1555,7 +1573,7 @@ public interface ReturnPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int RETURN_ITEM_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int RETURN_ITEM_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.order.return_.impl.ReturnItemTypeMapImpl <em>Item Type Map</em>}' class.

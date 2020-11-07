@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.workeffort.workeffort;
 
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +29,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface Deliverable extends EntityIdentifiable, EntityInfo {
+public interface Deliverable extends EntityTyped<DeliverableType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Deliverable Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

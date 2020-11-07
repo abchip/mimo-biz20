@@ -14,7 +14,7 @@ import org.abchip.mimo.biz.model.accounting.rate.RateType;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -39,7 +39,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class PartyRateImpl extends EntityIdentifiableImpl implements PartyRate {
+public class PartyRateImpl extends EntityTypedImpl<RateType> implements PartyRate {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

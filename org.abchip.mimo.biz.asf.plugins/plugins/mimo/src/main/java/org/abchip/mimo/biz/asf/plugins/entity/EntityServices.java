@@ -131,17 +131,19 @@ public class EntityServices {
 		boolean result = false;
 
 		// super class
-		if (!srcEClass.getESuperTypes().get(0).getName().equals(dstEClass.getESuperTypes().get(0).getName())) {
-			LOGGER.info("Class {} override super {}", dstEClassifier.getName(), EcoreUtil.getURI(srcEClass.getESuperTypes().get(0)));
+		if (!srcEClass.getESuperTypes().get(0).equals(EntityPackage.eINSTANCE.getEntityIdentifiable())) {
+			if (!srcEClass.getESuperTypes().get(0).getName().equals(dstEClass.getESuperTypes().get(0).getName())) {
+				LOGGER.info("Class {} override super {}", dstEClassifier.getName(), EcoreUtil.getURI(srcEClass.getESuperTypes().get(0)));
 
-			result = true;
+				result = true;
 
-			// remove previous
-			dstEClass.getESuperTypes().clear();
+				// remove previous
+				dstEClass.getESuperTypes().clear();
 
-			// copy source
-			for (EClass srcSuperEClass : srcEClass.getESuperTypes())
-				dstEClass.getESuperTypes().add(srcSuperEClass);
+				// copy source
+				for (EClass srcSuperEClass : srcEClass.getESuperTypes())
+					dstEClass.getESuperTypes().add(srcSuperEClass);
+			}
 		}
 
 		// features
@@ -267,8 +269,10 @@ public class EntityServices {
 		// type
 		for (String entityName : entityNames) {
 			ModelEntity modelEntity = delegator.getModelEntity(entityName);
-			if (modelEntity.getField("hasTable") == null)
-				continue;
+			if (modelEntity.getField("hasTable") == null) {
+				if (!entityName.endsWith("Type"))
+					continue;
+			}
 
 			EClass eClass = EcoreUtils.buildEntityTypeEClass(delegator, forms, modelEntity);
 			eWorkPackage.getEClassifiers().add(eClass);
@@ -744,8 +748,7 @@ public class EntityServices {
 						if (modelRelEntity.getPkFieldNames().get(1).contains("Seq")) {
 							relationType = "sequenced";
 							continue;
-						}
-						else
+						} else
 							continue;
 					}
 				}
@@ -785,10 +788,10 @@ public class EntityServices {
 				// cardinality
 				eReference.setUpperBound(-1);
 
-				if(relationType != null) {
+				if (relationType != null) {
 					EcoreUtils.addAnnotationKey(eReference, Slot.NS_PREFIX_SLOT, "type", relationType);
 				}
-				
+
 				eClass.getEStructuralFeatures().add(eReference);
 			}
 		}

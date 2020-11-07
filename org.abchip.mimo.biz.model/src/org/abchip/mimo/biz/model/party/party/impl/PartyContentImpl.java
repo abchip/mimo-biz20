@@ -15,7 +15,7 @@ import org.abchip.mimo.biz.model.party.party.PartyContentType;
 import org.abchip.mimo.biz.model.party.party.PartyPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -39,7 +39,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class PartyContentImpl extends EntityIdentifiableImpl implements PartyContent {
+public class PartyContentImpl extends EntityTypedImpl<PartyContentType> implements PartyContent {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

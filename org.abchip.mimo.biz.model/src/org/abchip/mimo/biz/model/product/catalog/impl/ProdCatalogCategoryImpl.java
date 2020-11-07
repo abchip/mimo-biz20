@@ -15,7 +15,7 @@ import org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategoryType;
 import org.abchip.mimo.biz.model.product.category.ProductCategory;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -40,7 +40,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ProdCatalogCategoryImpl extends EntityIdentifiableImpl implements ProdCatalogCategory {
+public class ProdCatalogCategoryImpl extends EntityTypedImpl<ProdCatalogCategoryType> implements ProdCatalogCategory {
 	
 	/**
 	 * <!-- begin-user-doc -->

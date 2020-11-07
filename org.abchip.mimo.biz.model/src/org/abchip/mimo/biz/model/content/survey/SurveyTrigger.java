@@ -8,8 +8,8 @@
 package org.abchip.mimo.biz.model.content.survey;
 
 import java.util.Date;
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +30,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model
  * @generated
  */
-public interface SurveyTrigger extends EntityIdentifiable, EntityInfo {
+public interface SurveyTrigger extends EntityTyped<SurveyApplType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>From Date</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.party.contact;
 
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +27,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame title='Contact Mechanism Purpose Type' dictionary='PartyEntityLabels' formula='description'"
  * @generated
  */
-public interface ContactMechPurposeType extends EntityIdentifiable, EntityInfo {
+public interface ContactMechPurposeType extends EntityType<PartyContactMechPurpose>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

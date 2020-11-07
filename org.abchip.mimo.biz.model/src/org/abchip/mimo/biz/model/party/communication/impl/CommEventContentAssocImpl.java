@@ -15,7 +15,7 @@ import org.abchip.mimo.biz.model.party.communication.CommunicationEvent;
 import org.abchip.mimo.biz.model.party.communication.CommunicationPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -40,7 +40,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class CommEventContentAssocImpl extends EntityIdentifiableImpl implements CommEventContentAssoc {
+public class CommEventContentAssocImpl extends EntityTypedImpl<CommContentAssocType> implements CommEventContentAssoc {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

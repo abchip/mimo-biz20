@@ -13,7 +13,7 @@ import org.abchip.mimo.biz.model.common.datasource.DataSourceType;
 import org.abchip.mimo.biz.model.common.datasource.DatasourcePackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -35,7 +35,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class DataSourceImpl extends EntityIdentifiableImpl implements DataSource {
+public class DataSourceImpl extends EntityTypedImpl<DataSourceType> implements DataSource {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

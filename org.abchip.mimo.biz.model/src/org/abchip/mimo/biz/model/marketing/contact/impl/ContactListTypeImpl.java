@@ -8,11 +8,12 @@
 package org.abchip.mimo.biz.model.marketing.contact.impl;
 
 import java.util.Date;
+import org.abchip.mimo.biz.model.marketing.contact.ContactList;
 import org.abchip.mimo.biz.model.marketing.contact.ContactListType;
 import org.abchip.mimo.biz.model.marketing.contact.ContactPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -33,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ContactListTypeImpl extends EntityIdentifiableImpl implements ContactListType {
+public class ContactListTypeImpl extends EntityTypeImpl<ContactList> implements ContactListType {
 
 
 	/**
@@ -60,9 +61,16 @@ public class ContactListTypeImpl extends EntityIdentifiableImpl implements Conta
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 1;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return 0;
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	/**

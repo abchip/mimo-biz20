@@ -14,7 +14,7 @@ import org.abchip.mimo.biz.model.content.content.ContentPurpose;
 import org.abchip.mimo.biz.model.content.content.ContentPurposeType;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -36,7 +36,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ContentPurposeImpl extends EntityIdentifiableImpl implements ContentPurpose {
+public class ContentPurposeImpl extends EntityTypedImpl<ContentPurposeType> implements ContentPurpose {
 	
 	/**
 	 * <!-- begin-user-doc -->

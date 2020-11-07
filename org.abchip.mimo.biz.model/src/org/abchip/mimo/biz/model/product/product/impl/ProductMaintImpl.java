@@ -19,7 +19,7 @@ import org.abchip.mimo.biz.model.product.product.ProductPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -47,7 +47,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ProductMaintImpl extends EntityIdentifiableImpl implements ProductMaint {
+public class ProductMaintImpl extends EntityTypedImpl<ProductMaintType> implements ProductMaint {
 
 	/**
 	 * <!-- begin-user-doc -->

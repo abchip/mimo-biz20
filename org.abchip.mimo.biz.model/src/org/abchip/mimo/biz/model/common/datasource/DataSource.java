@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.common.datasource;
 
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +28,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame dictionary='CommonEntityLabels' formula='description'"
  * @generated
  */
-public interface DataSource extends EntityIdentifiable, EntityInfo {
+public interface DataSource extends EntityTyped<DataSourceType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Data Source Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

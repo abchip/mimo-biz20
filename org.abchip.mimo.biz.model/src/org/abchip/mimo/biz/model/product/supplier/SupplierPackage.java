@@ -387,7 +387,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
+	int SUPPLIER_PRODUCT__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -396,7 +396,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
+	int SUPPLIER_PRODUCT__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -405,7 +405,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
+	int SUPPLIER_PRODUCT__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -414,7 +414,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
+	int SUPPLIER_PRODUCT__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' reference.
@@ -423,7 +423,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SUPPLIER_PRODUCT__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -432,7 +432,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int SUPPLIER_PRODUCT__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
@@ -441,7 +441,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__CURRENCY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int SUPPLIER_PRODUCT__CURRENCY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Available From Date</b></em>' attribute.
@@ -450,7 +450,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__AVAILABLE_FROM_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int SUPPLIER_PRODUCT__AVAILABLE_FROM_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Minimum Order Quantity</b></em>' attribute.
@@ -459,7 +459,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__MINIMUM_ORDER_QUANTITY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int SUPPLIER_PRODUCT__MINIMUM_ORDER_QUANTITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Id</b></em>' attribute.
@@ -468,7 +468,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__AGREEMENT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int SUPPLIER_PRODUCT__AGREEMENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Agreement Item Seq Id</b></em>' attribute.
@@ -477,7 +477,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__AGREEMENT_ITEM_SEQ_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
+	int SUPPLIER_PRODUCT__AGREEMENT_ITEM_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Available Thru Date</b></em>' attribute.
@@ -486,7 +486,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__AVAILABLE_THRU_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int SUPPLIER_PRODUCT__AVAILABLE_THRU_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Can Drop Ship</b></em>' attribute.
@@ -495,7 +495,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__CAN_DROP_SHIP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
+	int SUPPLIER_PRODUCT__CAN_DROP_SHIP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Comments</b></em>' attribute.
@@ -504,7 +504,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__COMMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
+	int SUPPLIER_PRODUCT__COMMENTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Last Price</b></em>' attribute.
@@ -513,7 +513,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__LAST_PRICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
+	int SUPPLIER_PRODUCT__LAST_PRICE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Order Qty Increments</b></em>' attribute.
@@ -522,7 +522,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__ORDER_QTY_INCREMENTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
+	int SUPPLIER_PRODUCT__ORDER_QTY_INCREMENTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Quantity Uom Id</b></em>' reference.
@@ -531,7 +531,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__QUANTITY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
+	int SUPPLIER_PRODUCT__QUANTITY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Shipping Price</b></em>' attribute.
@@ -540,7 +540,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__SHIPPING_PRICE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
+	int SUPPLIER_PRODUCT__SHIPPING_PRICE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Standard Lead Time Days</b></em>' attribute.
@@ -549,7 +549,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__STANDARD_LEAD_TIME_DAYS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
+	int SUPPLIER_PRODUCT__STANDARD_LEAD_TIME_DAYS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Supplier Pref Order Id</b></em>' reference.
@@ -558,7 +558,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__SUPPLIER_PREF_ORDER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
+	int SUPPLIER_PRODUCT__SUPPLIER_PREF_ORDER_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Supplier Product Id</b></em>' attribute.
@@ -567,7 +567,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__SUPPLIER_PRODUCT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
+	int SUPPLIER_PRODUCT__SUPPLIER_PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Supplier Product Name</b></em>' attribute.
@@ -576,7 +576,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__SUPPLIER_PRODUCT_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
+	int SUPPLIER_PRODUCT__SUPPLIER_PRODUCT_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Supplier Rating Type Id</b></em>' reference.
@@ -585,7 +585,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__SUPPLIER_RATING_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
+	int SUPPLIER_PRODUCT__SUPPLIER_RATING_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Units Included</b></em>' attribute.
@@ -594,7 +594,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT__UNITS_INCLUDED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 23;
+	int SUPPLIER_PRODUCT__UNITS_INCLUDED = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
 	 * The number of structural features of the '<em>Product</em>' class.
@@ -603,7 +603,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_PRODUCT_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 24;
+	int SUPPLIER_PRODUCT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.supplier.impl.SupplierProductFeatureImpl <em>Product Feature</em>}' class.
@@ -716,13 +716,22 @@ public interface SupplierPackage extends EPackage {
 	int SUPPLIER_RATING_TYPE = 5;
 
 	/**
+	 * The feature id for the '<em><b>Slots</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SUPPLIER_RATING_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
+
+	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_RATING_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
+	int SUPPLIER_RATING_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -731,7 +740,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_RATING_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
+	int SUPPLIER_RATING_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -740,7 +749,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_RATING_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
+	int SUPPLIER_RATING_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -749,7 +758,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_RATING_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
+	int SUPPLIER_RATING_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Supplier Rating Type Id</b></em>' attribute.
@@ -758,7 +767,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_RATING_TYPE__SUPPLIER_RATING_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int SUPPLIER_RATING_TYPE__SUPPLIER_RATING_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -767,7 +776,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_RATING_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int SUPPLIER_RATING_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The number of structural features of the '<em>Rating Type</em>' class.
@@ -776,7 +785,7 @@ public interface SupplierPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUPPLIER_RATING_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int SUPPLIER_RATING_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 
 	/**

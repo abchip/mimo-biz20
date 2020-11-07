@@ -197,6 +197,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkeffortPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.EReference;
@@ -830,10 +831,18 @@ public class PreferencePackageImpl extends EPackageImpl implements PreferencePac
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		webPreferenceTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		webPreferenceTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		webUserPreferenceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		webUserPreferenceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityType());
+		EGenericType g2 = createEGenericType(this.getWebUserPreference());
+		g1.getETypeArguments().add(g2);
+		webPreferenceTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		webPreferenceTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		g2 = createEGenericType(this.getWebPreferenceType());
+		g1.getETypeArguments().add(g2);
+		webUserPreferenceEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		webUserPreferenceEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(webPreferenceTypeEClass, WebPreferenceType.class, "WebPreferenceType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

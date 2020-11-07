@@ -198,6 +198,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkeffortPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.EReference;
@@ -1039,10 +1040,18 @@ public class RecruitmentPackageImpl extends EPackageImpl implements RecruitmentP
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		jobInterviewEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		jobInterviewEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		jobInterviewTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		jobInterviewTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		EGenericType g2 = createEGenericType(this.getJobInterviewType());
+		g1.getETypeArguments().add(g2);
+		jobInterviewEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		jobInterviewEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
+		g2 = createEGenericType(this.getJobInterview());
+		g1.getETypeArguments().add(g2);
+		jobInterviewTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		jobInterviewTypeEClass.getEGenericSuperTypes().add(g1);
 		jobRequisitionEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		jobRequisitionEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 

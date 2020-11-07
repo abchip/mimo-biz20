@@ -200,6 +200,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkeffortPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.EReference;
@@ -1277,14 +1278,22 @@ public class TrackingPackageImpl extends EPackageImpl implements TrackingPackage
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		trackingCodeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		trackingCodeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		EGenericType g2 = createEGenericType(this.getTrackingCodeType());
+		g1.getETypeArguments().add(g2);
+		trackingCodeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		trackingCodeEClass.getEGenericSuperTypes().add(g1);
 		trackingCodeOrderEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		trackingCodeOrderEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		trackingCodeOrderReturnEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		trackingCodeOrderReturnEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		trackingCodeTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		trackingCodeTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
+		g2 = createEGenericType(this.getTrackingCode());
+		g1.getETypeArguments().add(g2);
+		trackingCodeTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		trackingCodeTypeEClass.getEGenericSuperTypes().add(g1);
 		trackingCodeVisitEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		trackingCodeVisitEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 

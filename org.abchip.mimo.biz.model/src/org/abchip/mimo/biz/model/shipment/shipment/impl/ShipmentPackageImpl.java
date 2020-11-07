@@ -19,7 +19,7 @@ import org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package;
 
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -49,7 +49,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ShipmentPackageImpl extends EntityIdentifiableImpl implements ShipmentPackage {
+public class ShipmentPackageImpl extends EntityTypedImpl<ShipmentBoxType> implements ShipmentPackage {
 
 	/**
 	 * <!-- begin-user-doc -->

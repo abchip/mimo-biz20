@@ -15,7 +15,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContentType;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -39,7 +39,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class WorkEffortContentImpl extends EntityIdentifiableImpl implements WorkEffortContent {
+public class WorkEffortContentImpl extends EntityTypedImpl<WorkEffortContentType> implements WorkEffortContent {
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -15,7 +15,7 @@ import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -43,7 +43,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class MrpEventImpl extends EntityIdentifiableImpl implements MrpEvent {
+public class MrpEventImpl extends EntityTypedImpl<MrpEventType> implements MrpEvent {
 
 	/**
 	 * <!-- begin-user-doc -->

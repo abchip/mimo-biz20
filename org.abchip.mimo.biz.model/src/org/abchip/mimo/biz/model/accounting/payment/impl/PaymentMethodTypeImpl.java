@@ -10,12 +10,13 @@ package org.abchip.mimo.biz.model.accounting.payment.impl;
 import java.util.Date;
 import java.util.List;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
+import org.abchip.mimo.biz.model.accounting.payment.PaymentGatewayResponse;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodType;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethodTypeGlAccount;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -38,7 +39,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class PaymentMethodTypeImpl extends EntityIdentifiableImpl implements PaymentMethodType {
+public class PaymentMethodTypeImpl extends EntityTypeImpl<PaymentGatewayResponse> implements PaymentMethodType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -63,9 +64,16 @@ public class PaymentMethodTypeImpl extends EntityIdentifiableImpl implements Pay
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 1;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return 0;
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	/**

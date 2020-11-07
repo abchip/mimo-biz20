@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.workeffort.workeffort;
 
 import java.util.Date;
 import org.abchip.mimo.biz.model.content.content.Content;
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -32,7 +32,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model
  * @generated
  */
-public interface WorkEffortContent extends EntityIdentifiable, EntityInfo {
+public interface WorkEffortContent extends EntityTyped<WorkEffortContentType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

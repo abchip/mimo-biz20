@@ -9,8 +9,8 @@ package org.abchip.mimo.biz.model.entity.test;
 
 import java.util.Date;
 import java.util.List;
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,7 +35,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface Testing extends EntityIdentifiable, EntityInfo {
+public interface Testing extends EntityTyped<TestingType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Comments</b></em>' attribute.
 	 * <!-- begin-user-doc -->

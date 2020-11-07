@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.content.content;
 
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +28,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model
  * @generated
  */
-public interface ContentPurpose extends EntityIdentifiable, EntityInfo {
+public interface ContentPurpose extends EntityTyped<ContentPurposeType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Content Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

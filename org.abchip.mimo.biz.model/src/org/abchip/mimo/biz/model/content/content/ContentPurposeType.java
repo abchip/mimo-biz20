@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.content.content;
 
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +27,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame dictionary='ContentEntityLabels' formula='description'"
  * @generated
  */
-public interface ContentPurposeType extends EntityIdentifiable, EntityInfo {
+public interface ContentPurposeType extends EntityType<ContentPurpose>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Content Purpose Type Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

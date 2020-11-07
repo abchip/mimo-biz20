@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.entity.test;
 
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +27,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame title='Testing Entity Type' formula='description'"
  * @generated
  */
-public interface TestingType extends EntityIdentifiable, EntityInfo {
+public interface TestingType extends EntityType<Testing>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

@@ -8,11 +8,12 @@
 package org.abchip.mimo.biz.model.accounting.ledger.impl;
 
 import java.util.Date;
+import org.abchip.mimo.biz.model.accounting.ledger.GlAccountGroup;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccountGroupType;
 import org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -33,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class GlAccountGroupTypeImpl extends EntityIdentifiableImpl implements GlAccountGroupType {
+public class GlAccountGroupTypeImpl extends EntityTypeImpl<GlAccountGroup> implements GlAccountGroupType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -58,9 +59,16 @@ public class GlAccountGroupTypeImpl extends EntityIdentifiableImpl implements Gl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 1;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return 0;
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	/**

@@ -10,9 +10,10 @@ package org.abchip.mimo.biz.model.content.survey.impl;
 import java.util.Date;
 import org.abchip.mimo.biz.model.content.survey.SurveyApplType;
 import org.abchip.mimo.biz.model.content.survey.SurveyPackage;
+import org.abchip.mimo.biz.model.content.survey.SurveyTrigger;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -33,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class SurveyApplTypeImpl extends EntityIdentifiableImpl implements SurveyApplType {
+public class SurveyApplTypeImpl extends EntityTypeImpl<SurveyTrigger> implements SurveyApplType {
 	
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,9 +60,16 @@ public class SurveyApplTypeImpl extends EntityIdentifiableImpl implements Survey
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 1;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return 0;
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	/**

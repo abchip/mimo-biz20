@@ -197,6 +197,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkeffortPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.EReference;
@@ -829,10 +830,18 @@ public class UserPackageImpl extends EPackageImpl implements UserPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		userPrefGroupTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		userPrefGroupTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		userPreferenceEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		userPreferenceEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityType());
+		EGenericType g2 = createEGenericType(this.getUserPreference());
+		g1.getETypeArguments().add(g2);
+		userPrefGroupTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		userPrefGroupTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		g2 = createEGenericType(this.getUserPrefGroupType());
+		g1.getETypeArguments().add(g2);
+		userPreferenceEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		userPreferenceEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(userPrefGroupTypeEClass, UserPrefGroupType.class, "UserPrefGroupType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

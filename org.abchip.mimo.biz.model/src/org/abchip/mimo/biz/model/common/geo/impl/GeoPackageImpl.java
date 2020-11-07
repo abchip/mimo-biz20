@@ -1347,22 +1347,30 @@ public class GeoPackageImpl extends EPackageImpl implements GeoPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		countryAddressFormatEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		countryAddressFormatEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		EGenericType g2 = createEGenericType(this.getGeoAssocType());
+		g1.getETypeArguments().add(g2);
+		countryAddressFormatEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		countryAddressFormatEClass.getEGenericSuperTypes().add(g1);
 		countryCapitalEClass.getESuperTypes().add(this.getCountryCode());
 		countryCodeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		countryCodeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		countryTeleCodeEClass.getESuperTypes().add(this.getCountryCode());
-		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
-		EGenericType g2 = createEGenericType(this.getGeoType());
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		g2 = createEGenericType(this.getGeoType());
 		g1.getETypeArguments().add(g2);
 		geoEClass.getEGenericSuperTypes().add(g1);
 		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
 		geoEClass.getEGenericSuperTypes().add(g1);
 		geoAssocEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		geoAssocEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		geoAssocTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		geoAssocTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
+		g2 = createEGenericType(this.getCountryAddressFormat());
+		g1.getETypeArguments().add(g2);
+		geoAssocTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		geoAssocTypeEClass.getEGenericSuperTypes().add(g1);
 		geoPointEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		geoPointEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		g1 = createEGenericType(theEntityPackage_1.getEntityType());

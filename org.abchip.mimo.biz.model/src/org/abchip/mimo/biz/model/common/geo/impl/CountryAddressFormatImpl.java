@@ -13,7 +13,7 @@ import org.abchip.mimo.biz.model.common.geo.GeoAssocType;
 import org.abchip.mimo.biz.model.common.geo.GeoPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -40,7 +40,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class CountryAddressFormatImpl extends EntityIdentifiableImpl implements CountryAddressFormat {
+public class CountryAddressFormatImpl extends EntityTypedImpl<GeoAssocType> implements CountryAddressFormat {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

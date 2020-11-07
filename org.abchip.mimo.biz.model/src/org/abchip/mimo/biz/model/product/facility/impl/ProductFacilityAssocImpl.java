@@ -17,7 +17,7 @@ import org.abchip.mimo.biz.model.product.product.Product;
 
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -44,7 +44,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ProductFacilityAssocImpl extends EntityIdentifiableImpl implements ProductFacilityAssoc {
+public class ProductFacilityAssocImpl extends EntityTypedImpl<FacilityAssocType> implements ProductFacilityAssoc {
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -14,8 +14,8 @@ import org.abchip.mimo.biz.model.party.party.PartyType;
 import org.abchip.mimo.biz.model.party.party.RoleType;
 import org.abchip.mimo.biz.model.product.category.ProductCategory;
 import org.abchip.mimo.biz.model.product.product.Product;
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,7 +43,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame formula='description'"
  * @generated
  */
-public interface PartyNeed extends EntityIdentifiable, EntityInfo {
+public interface PartyNeed extends EntityTyped<NeedType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Datetime Recorded</b></em>' attribute.
 	 * <!-- begin-user-doc -->

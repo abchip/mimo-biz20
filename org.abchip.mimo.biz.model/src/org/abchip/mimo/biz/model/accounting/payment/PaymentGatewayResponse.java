@@ -13,8 +13,8 @@ import java.util.Date;
 import org.abchip.mimo.biz.model.common.enum_.Enumeration;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.order.order.OrderPaymentPreference;
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,7 +53,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model
  * @generated
  */
-public interface PaymentGatewayResponse extends EntityIdentifiable, EntityInfo {
+public interface PaymentGatewayResponse extends EntityTyped<PaymentMethodType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Alt Reference</b></em>' attribute.
 	 * <!-- begin-user-doc -->

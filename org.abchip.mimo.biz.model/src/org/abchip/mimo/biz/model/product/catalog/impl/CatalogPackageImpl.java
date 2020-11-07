@@ -200,6 +200,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkeffortPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.EReference;
@@ -1146,10 +1147,18 @@ public class CatalogPackageImpl extends EPackageImpl implements CatalogPackage {
 		// Add supertypes to classes
 		prodCatalogEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		prodCatalogEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		prodCatalogCategoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		prodCatalogCategoryEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		prodCatalogCategoryTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		prodCatalogCategoryTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		EGenericType g2 = createEGenericType(this.getProdCatalogCategoryType());
+		g1.getETypeArguments().add(g2);
+		prodCatalogCategoryEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		prodCatalogCategoryEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
+		g2 = createEGenericType(this.getProdCatalogCategory());
+		g1.getETypeArguments().add(g2);
+		prodCatalogCategoryTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		prodCatalogCategoryTypeEClass.getEGenericSuperTypes().add(g1);
 		prodCatalogInvFacilityEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		prodCatalogInvFacilityEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		prodCatalogRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());

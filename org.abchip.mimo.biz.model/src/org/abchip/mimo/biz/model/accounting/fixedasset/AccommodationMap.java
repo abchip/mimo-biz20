@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.accounting.fixedasset;
 
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +30,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model
  * @generated
  */
-public interface AccommodationMap extends EntityIdentifiable, EntityInfo {
+public interface AccommodationMap extends EntityTyped<AccommodationMapType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Accommodation Map Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

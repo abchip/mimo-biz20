@@ -8,11 +8,12 @@
 package org.abchip.mimo.biz.model.marketing.segment.impl;
 
 import java.util.Date;
+import org.abchip.mimo.biz.model.marketing.segment.SegmentGroup;
 import org.abchip.mimo.biz.model.marketing.segment.SegmentGroupType;
 import org.abchip.mimo.biz.model.marketing.segment.SegmentPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -33,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class SegmentGroupTypeImpl extends EntityIdentifiableImpl implements SegmentGroupType {
+public class SegmentGroupTypeImpl extends EntityTypeImpl<SegmentGroup> implements SegmentGroupType {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,9 +60,16 @@ public class SegmentGroupTypeImpl extends EntityIdentifiableImpl implements Segm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 1;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return 0;
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	/**

@@ -14,7 +14,7 @@ import org.abchip.mimo.biz.model.webapp.visit.Visit;
 import org.abchip.mimo.biz.model.webapp.visit.VisitPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -49,7 +49,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ServerHitImpl extends EntityIdentifiableImpl implements ServerHit {
+public class ServerHitImpl extends EntityTypedImpl<ServerHitType> implements ServerHit {
 
 	/**
 	 * <!-- begin-user-doc -->

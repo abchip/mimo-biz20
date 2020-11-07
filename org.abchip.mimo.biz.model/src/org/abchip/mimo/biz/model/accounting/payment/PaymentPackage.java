@@ -4365,7 +4365,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
+	int PAYMENT_GATEWAY_RESPONSE__CREATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -4374,7 +4374,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
+	int PAYMENT_GATEWAY_RESPONSE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -4383,7 +4383,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
+	int PAYMENT_GATEWAY_RESPONSE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -4392,7 +4392,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
+	int PAYMENT_GATEWAY_RESPONSE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Payment Gateway Response Id</b></em>' attribute.
@@ -4401,7 +4401,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__PAYMENT_GATEWAY_RESPONSE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PAYMENT_GATEWAY_RESPONSE__PAYMENT_GATEWAY_RESPONSE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Alt Reference</b></em>' attribute.
@@ -4410,7 +4410,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__ALT_REFERENCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PAYMENT_GATEWAY_RESPONSE__ALT_REFERENCE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Amount</b></em>' attribute.
@@ -4419,7 +4419,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__AMOUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int PAYMENT_GATEWAY_RESPONSE__AMOUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Currency Uom Id</b></em>' reference.
@@ -4428,7 +4428,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__CURRENCY_UOM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int PAYMENT_GATEWAY_RESPONSE__CURRENCY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Gateway Avs Result</b></em>' attribute.
@@ -4437,7 +4437,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__GATEWAY_AVS_RESULT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int PAYMENT_GATEWAY_RESPONSE__GATEWAY_AVS_RESULT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Gateway Code</b></em>' attribute.
@@ -4446,7 +4446,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__GATEWAY_CODE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int PAYMENT_GATEWAY_RESPONSE__GATEWAY_CODE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Gateway Cv Result</b></em>' attribute.
@@ -4455,7 +4455,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__GATEWAY_CV_RESULT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
+	int PAYMENT_GATEWAY_RESPONSE__GATEWAY_CV_RESULT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Gateway Flag</b></em>' attribute.
@@ -4464,7 +4464,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__GATEWAY_FLAG = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int PAYMENT_GATEWAY_RESPONSE__GATEWAY_FLAG = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Gateway Message</b></em>' attribute.
@@ -4473,7 +4473,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__GATEWAY_MESSAGE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
+	int PAYMENT_GATEWAY_RESPONSE__GATEWAY_MESSAGE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Gateway Score Result</b></em>' attribute.
@@ -4482,7 +4482,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__GATEWAY_SCORE_RESULT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
+	int PAYMENT_GATEWAY_RESPONSE__GATEWAY_SCORE_RESULT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Order Payment Preference Id</b></em>' reference.
@@ -4491,7 +4491,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__ORDER_PAYMENT_PREFERENCE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
+	int PAYMENT_GATEWAY_RESPONSE__ORDER_PAYMENT_PREFERENCE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Payment Method Id</b></em>' reference.
@@ -4500,7 +4500,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__PAYMENT_METHOD_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
+	int PAYMENT_GATEWAY_RESPONSE__PAYMENT_METHOD_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Payment Method Type Id</b></em>' reference.
@@ -4509,7 +4509,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__PAYMENT_METHOD_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
+	int PAYMENT_GATEWAY_RESPONSE__PAYMENT_METHOD_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Payment Service Type Enum Id</b></em>' reference.
@@ -4518,7 +4518,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__PAYMENT_SERVICE_TYPE_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
+	int PAYMENT_GATEWAY_RESPONSE__PAYMENT_SERVICE_TYPE_ENUM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Reference Num</b></em>' attribute.
@@ -4527,7 +4527,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__REFERENCE_NUM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
+	int PAYMENT_GATEWAY_RESPONSE__REFERENCE_NUM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Result Bad Card Number</b></em>' attribute.
@@ -4536,7 +4536,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__RESULT_BAD_CARD_NUMBER = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
+	int PAYMENT_GATEWAY_RESPONSE__RESULT_BAD_CARD_NUMBER = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Result Bad Expire</b></em>' attribute.
@@ -4545,7 +4545,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__RESULT_BAD_EXPIRE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
+	int PAYMENT_GATEWAY_RESPONSE__RESULT_BAD_EXPIRE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Result Declined</b></em>' attribute.
@@ -4554,7 +4554,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__RESULT_DECLINED = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
+	int PAYMENT_GATEWAY_RESPONSE__RESULT_DECLINED = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Result Nsf</b></em>' attribute.
@@ -4563,7 +4563,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__RESULT_NSF = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
+	int PAYMENT_GATEWAY_RESPONSE__RESULT_NSF = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Sub Reference</b></em>' attribute.
@@ -4572,7 +4572,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__SUB_REFERENCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 23;
+	int PAYMENT_GATEWAY_RESPONSE__SUB_REFERENCE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Trans Code Enum Id</b></em>' reference.
@@ -4581,7 +4581,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__TRANS_CODE_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 24;
+	int PAYMENT_GATEWAY_RESPONSE__TRANS_CODE_ENUM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Transaction Date</b></em>' attribute.
@@ -4590,7 +4590,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE__TRANSACTION_DATE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 25;
+	int PAYMENT_GATEWAY_RESPONSE__TRANSACTION_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
 
 	/**
 	 * The number of structural features of the '<em>Gateway Response</em>' class.
@@ -4599,7 +4599,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GATEWAY_RESPONSE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 26;
+	int PAYMENT_GATEWAY_RESPONSE_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGatewaySagePayImpl <em>Gateway Sage Pay</em>}' class.
@@ -5429,13 +5429,22 @@ public interface PaymentPackage extends EPackage {
 	int PAYMENT_METHOD_TYPE = 38;
 
 	/**
+	 * The feature id for the '<em><b>Slots</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PAYMENT_METHOD_TYPE__SLOTS = EntityPackage.ENTITY_TYPE__SLOTS;
+
+	/**
 	 * The feature id for the '<em><b>Created Stamp</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_METHOD_TYPE__CREATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 0;
+	int PAYMENT_METHOD_TYPE__CREATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 0;
 
 	/**
 	 * The feature id for the '<em><b>Created Tx Stamp</b></em>' attribute.
@@ -5444,7 +5453,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_METHOD_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 1;
+	int PAYMENT_METHOD_TYPE__CREATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Stamp</b></em>' attribute.
@@ -5453,7 +5462,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_METHOD_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 2;
+	int PAYMENT_METHOD_TYPE__LAST_UPDATED_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Last Updated Tx Stamp</b></em>' attribute.
@@ -5462,7 +5471,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_METHOD_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 3;
+	int PAYMENT_METHOD_TYPE__LAST_UPDATED_TX_STAMP = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 3;
 
 	/**
 	 * The feature id for the '<em><b>Payment Method Type Id</b></em>' attribute.
@@ -5471,7 +5480,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_METHOD_TYPE__PAYMENT_METHOD_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
+	int PAYMENT_METHOD_TYPE__PAYMENT_METHOD_TYPE_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 4;
 
 	/**
 	 * The feature id for the '<em><b>Default Gl Account Id</b></em>' reference.
@@ -5480,7 +5489,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_METHOD_TYPE__DEFAULT_GL_ACCOUNT_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PAYMENT_METHOD_TYPE__DEFAULT_GL_ACCOUNT_ID = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 5;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -5489,7 +5498,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_METHOD_TYPE__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int PAYMENT_METHOD_TYPE__DESCRIPTION = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Payment Method Type Gl Accounts</b></em>' reference list.
@@ -5498,7 +5507,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_METHOD_TYPE__PAYMENT_METHOD_TYPE_GL_ACCOUNTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int PAYMENT_METHOD_TYPE__PAYMENT_METHOD_TYPE_GL_ACCOUNTS = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Method Type</em>' class.
@@ -5507,7 +5516,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_METHOD_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int PAYMENT_METHOD_TYPE_FEATURE_COUNT = EntityPackage.ENTITY_TYPE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentMethodTypeGlAccountImpl <em>Method Type Gl Account</em>}' class.

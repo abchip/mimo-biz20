@@ -198,6 +198,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkeffortPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.EReference;
@@ -963,12 +964,20 @@ public class RatePackageImpl extends EPackageImpl implements RatePackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		partyRateEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		partyRateEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		EGenericType g2 = createEGenericType(this.getRateType());
+		g1.getETypeArguments().add(g2);
+		partyRateEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		partyRateEClass.getEGenericSuperTypes().add(g1);
 		rateAmountEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		rateAmountEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		rateTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		rateTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
+		g2 = createEGenericType(this.getPartyRate());
+		g1.getETypeArguments().add(g2);
+		rateTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		rateTypeEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(partyRateEClass, PartyRate.class, "PartyRate", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

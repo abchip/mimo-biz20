@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.content.survey;
 
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +27,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame title='Survey Application Type' dictionary='ContentEntityLabels' formula='description'"
  * @generated
  */
-public interface SurveyApplType extends EntityIdentifiable, EntityInfo {
+public interface SurveyApplType extends EntityType<SurveyTrigger>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

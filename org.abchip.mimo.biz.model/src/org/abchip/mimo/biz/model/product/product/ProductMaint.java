@@ -10,8 +10,8 @@ package org.abchip.mimo.biz.model.product.product;
 import java.math.BigDecimal;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -37,7 +37,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame help='This is used to specify the details for scheduled maintenance.' title='Product Maintenance' dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface ProductMaint extends EntityIdentifiable, EntityInfo {
+public interface ProductMaint extends EntityTyped<ProductMaintType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Interval Quantity</b></em>' attribute.
 	 * <!-- begin-user-doc -->

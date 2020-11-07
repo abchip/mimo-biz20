@@ -8,8 +8,8 @@
 package org.abchip.mimo.biz.model.product.facility;
 
 import java.util.Date;
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +31,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels'"
  * @generated
  */
-public interface FacilityCalendar extends EntityIdentifiable, EntityInfo {
+public interface FacilityCalendar extends EntityTyped<FacilityCalendarType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Calendar Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->

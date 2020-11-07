@@ -8,11 +8,12 @@
 package org.abchip.mimo.biz.model.content.content.impl;
 
 import java.util.Date;
+import org.abchip.mimo.biz.model.content.content.ContentAssoc;
 import org.abchip.mimo.biz.model.content.content.ContentAssocType;
 import org.abchip.mimo.biz.model.content.content.ContentPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -33,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ContentAssocTypeImpl extends EntityIdentifiableImpl implements ContentAssocType {
+public class ContentAssocTypeImpl extends EntityTypeImpl<ContentAssoc> implements ContentAssocType {
 	
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,9 +60,16 @@ public class ContentAssocTypeImpl extends EntityIdentifiableImpl implements Cont
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 1;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return 0;
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	/**

@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.common.user;
 
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +27,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame help='The UserPrefGroupType entity contains one entry per preference\n          group type.' title='Defines a group of User Preferences' formula='description'"
  * @generated
  */
-public interface UserPrefGroupType extends EntityIdentifiable, EntityInfo {
+public interface UserPrefGroupType extends EntityType<UserPreference>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

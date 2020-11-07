@@ -13,7 +13,7 @@ import org.abchip.mimo.biz.model.accounting.tax.TaxAuthorityAssocType;
 import org.abchip.mimo.biz.model.accounting.tax.TaxPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -39,7 +39,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class TaxAuthorityAssocImpl extends EntityIdentifiableImpl implements TaxAuthorityAssoc {
+public class TaxAuthorityAssocImpl extends EntityTypedImpl<TaxAuthorityAssocType> implements TaxAuthorityAssoc {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

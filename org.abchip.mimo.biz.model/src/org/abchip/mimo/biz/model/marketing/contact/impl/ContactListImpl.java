@@ -19,7 +19,7 @@ import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -56,7 +56,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ContactListImpl extends EntityIdentifiableImpl implements ContactList {
+public class ContactListImpl extends EntityTypedImpl<ContactListType> implements ContactList {
 
 	/**
 	 * <!-- begin-user-doc -->

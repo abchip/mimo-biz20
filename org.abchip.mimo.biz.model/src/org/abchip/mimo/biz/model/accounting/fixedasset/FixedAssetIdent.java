@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.accounting.fixedasset;
 
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +28,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame title='Fixed Asset Identification'"
  * @generated
  */
-public interface FixedAssetIdent extends EntityIdentifiable, EntityInfo {
+public interface FixedAssetIdent extends EntityTyped<FixedAssetIdentType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Id Value</b></em>' attribute.
 	 * <!-- begin-user-doc -->

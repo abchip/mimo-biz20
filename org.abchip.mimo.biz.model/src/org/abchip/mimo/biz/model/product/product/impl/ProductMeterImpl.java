@@ -15,7 +15,7 @@ import org.abchip.mimo.biz.model.product.product.ProductMeterType;
 import org.abchip.mimo.biz.model.product.product.ProductPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -38,7 +38,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ProductMeterImpl extends EntityIdentifiableImpl implements ProductMeter {
+public class ProductMeterImpl extends EntityTypedImpl<ProductMeterType> implements ProductMeter {
 
 	/**
 	 * <!-- begin-user-doc -->

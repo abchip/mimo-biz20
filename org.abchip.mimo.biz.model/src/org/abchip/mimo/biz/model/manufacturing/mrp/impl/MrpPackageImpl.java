@@ -197,6 +197,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkeffortPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.EReference;
@@ -874,10 +875,18 @@ public class MrpPackageImpl extends EPackageImpl implements MrpPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		mrpEventEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		mrpEventEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		mrpEventTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		mrpEventTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		EGenericType g2 = createEGenericType(this.getMrpEventType());
+		g1.getETypeArguments().add(g2);
+		mrpEventEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		mrpEventEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
+		g2 = createEGenericType(this.getMrpEvent());
+		g1.getETypeArguments().add(g2);
+		mrpEventTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		mrpEventTypeEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(mrpEventEClass, MrpEvent.class, "MrpEvent", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

@@ -8,11 +8,12 @@
 package org.abchip.mimo.biz.model.webapp.visit.impl;
 
 import java.util.Date;
+import org.abchip.mimo.biz.model.webapp.visit.UserAgent;
 import org.abchip.mimo.biz.model.webapp.visit.UserAgentType;
 import org.abchip.mimo.biz.model.webapp.visit.VisitPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -33,7 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class UserAgentTypeImpl extends EntityIdentifiableImpl implements UserAgentType {
+public class UserAgentTypeImpl extends EntityTypeImpl<UserAgent> implements UserAgentType {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,9 +60,16 @@ public class UserAgentTypeImpl extends EntityIdentifiableImpl implements UserAge
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 1;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return 0;
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	/**

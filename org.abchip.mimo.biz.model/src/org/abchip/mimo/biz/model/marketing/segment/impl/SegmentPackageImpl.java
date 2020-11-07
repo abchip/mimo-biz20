@@ -200,6 +200,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkeffortPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.EReference;
@@ -979,16 +980,24 @@ public class SegmentPackageImpl extends EPackageImpl implements SegmentPackage {
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		segmentGroupEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		segmentGroupEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		EGenericType g2 = createEGenericType(this.getSegmentGroupType());
+		g1.getETypeArguments().add(g2);
+		segmentGroupEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		segmentGroupEClass.getEGenericSuperTypes().add(g1);
 		segmentGroupClassificationEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		segmentGroupClassificationEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		segmentGroupGeoEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		segmentGroupGeoEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		segmentGroupRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		segmentGroupRoleEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		segmentGroupTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		segmentGroupTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
+		g2 = createEGenericType(this.getSegmentGroup());
+		g1.getETypeArguments().add(g2);
+		segmentGroupTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		segmentGroupTypeEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(segmentGroupEClass, SegmentGroup.class, "SegmentGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

@@ -17,7 +17,7 @@ import org.abchip.mimo.biz.model.content.content.ContentPackage;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypedImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -51,7 +51,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ContentAssocImpl extends EntityIdentifiableImpl implements ContentAssoc {
+public class ContentAssocImpl extends EntityTypedImpl<ContentAssocType> implements ContentAssoc {
 	
 	/**
 	 * <!-- begin-user-doc -->

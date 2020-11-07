@@ -12,7 +12,7 @@ import org.abchip.mimo.biz.model.product.facility.ContainerType;
 import org.abchip.mimo.biz.model.product.facility.FacilityPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ContainerTypeImpl extends EntityIdentifiableImpl implements ContainerType {
+public class ContainerTypeImpl extends EntityTypeImpl<org.abchip.mimo.biz.model.product.facility.Container> implements ContainerType {
 	
 	/**
 	 * <!-- begin-user-doc -->
@@ -59,9 +59,16 @@ public class ContainerTypeImpl extends EntityIdentifiableImpl implements Contain
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 1;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return 0;
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	/**

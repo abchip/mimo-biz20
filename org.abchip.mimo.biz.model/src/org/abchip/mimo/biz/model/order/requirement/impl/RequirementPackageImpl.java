@@ -1684,10 +1684,18 @@ public class RequirementPackageImpl extends EPackageImpl implements RequirementP
 		requirementTypeEClass.getEGenericSuperTypes().add(g1);
 		requirementTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		requirementTypeAttrEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		workReqFulfTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		workReqFulfTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		workRequirementFulfillmentEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		workRequirementFulfillmentEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
+		g2 = createEGenericType(this.getWorkRequirementFulfillment());
+		g1.getETypeArguments().add(g2);
+		workReqFulfTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		workReqFulfTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		g2 = createEGenericType(this.getWorkReqFulfType());
+		g1.getETypeArguments().add(g2);
+		workRequirementFulfillmentEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		workRequirementFulfillmentEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(desiredFeatureEClass, DesiredFeature.class, "DesiredFeature", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

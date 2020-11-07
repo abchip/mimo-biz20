@@ -8,8 +8,8 @@
 package org.abchip.mimo.biz.model.product.product;
 
 import org.abchip.mimo.biz.model.common.uom.Uom;
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +29,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame dictionary='ProductEntityLabels' formula='description'"
  * @generated
  */
-public interface ProductMeterType extends EntityIdentifiable, EntityInfo {
+public interface ProductMeterType extends EntityType<ProductMeter>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Default Uom Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

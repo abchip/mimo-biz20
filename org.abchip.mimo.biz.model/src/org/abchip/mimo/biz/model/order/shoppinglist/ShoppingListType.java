@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.order.shoppinglist;
 
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +27,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame dictionary='OrderEntityLabels' formula='description'"
  * @generated
  */
-public interface ShoppingListType extends EntityIdentifiable, EntityInfo {
+public interface ShoppingListType extends EntityType<ShoppingList>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

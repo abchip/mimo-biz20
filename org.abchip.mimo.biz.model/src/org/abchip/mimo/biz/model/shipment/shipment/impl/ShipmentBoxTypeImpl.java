@@ -13,10 +13,11 @@ import java.util.List;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.shipment.shipment.CarrierShipmentBoxType;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentBoxType;
+import org.abchip.mimo.biz.model.shipment.shipment.ShipmentPackage;
 import org.abchip.mimo.biz.model.shipment.shipment.Shipment_Package;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -44,7 +45,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ShipmentBoxTypeImpl extends EntityIdentifiableImpl implements ShipmentBoxType {
+public class ShipmentBoxTypeImpl extends EntityTypeImpl<ShipmentPackage> implements ShipmentBoxType {
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -70,9 +71,16 @@ public class ShipmentBoxTypeImpl extends EntityIdentifiableImpl implements Shipm
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 1;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return 0;
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	/**

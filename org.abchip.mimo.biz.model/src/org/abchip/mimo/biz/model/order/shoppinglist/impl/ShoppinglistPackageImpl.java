@@ -200,6 +200,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkeffortPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.EReference;
@@ -1249,14 +1250,22 @@ public class ShoppinglistPackageImpl extends EPackageImpl implements Shoppinglis
 		// Set bounds for type parameters
 
 		// Add supertypes to classes
-		shoppingListEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		shoppingListEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		EGenericType g2 = createEGenericType(this.getShoppingListType());
+		g1.getETypeArguments().add(g2);
+		shoppingListEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		shoppingListEClass.getEGenericSuperTypes().add(g1);
 		shoppingListItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		shoppingListItemEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		shoppingListItemSurveyEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		shoppingListItemSurveyEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		shoppingListTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		shoppingListTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
+		g2 = createEGenericType(this.getShoppingList());
+		g1.getETypeArguments().add(g2);
+		shoppingListTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		shoppingListTypeEClass.getEGenericSuperTypes().add(g1);
 		shoppingListWorkEffortEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		shoppingListWorkEffortEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 

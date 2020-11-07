@@ -7,8 +7,8 @@
  */
 package org.abchip.mimo.biz.model.humanres.recruitment;
 
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityType;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +27,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model annotation="mimo-ent-frame title='Entity for storing data about Interview Types' formula='description'"
  * @generated
  */
-public interface JobInterviewType extends EntityIdentifiable, EntityInfo {
+public interface JobInterviewType extends EntityType<JobInterview>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->

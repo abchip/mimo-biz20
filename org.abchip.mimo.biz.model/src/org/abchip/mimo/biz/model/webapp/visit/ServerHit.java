@@ -8,8 +8,8 @@
 package org.abchip.mimo.biz.model.webapp.visit;
 
 import java.util.Date;
-import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
+import org.abchip.mimo.entity.EntityTyped;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +42,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * @model
  * @generated
  */
-public interface ServerHit extends EntityIdentifiable, EntityInfo {
+public interface ServerHit extends EntityTyped<ServerHitType>, EntityInfo {
 	/**
 	 * Returns the value of the '<em><b>Visit Id</b></em>' reference.
 	 * <!-- begin-user-doc -->

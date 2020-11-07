@@ -9,10 +9,11 @@ package org.abchip.mimo.biz.model.product.catalog.impl;
 
 import java.util.Date;
 import org.abchip.mimo.biz.model.product.catalog.CatalogPackage;
+import org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategory;
 import org.abchip.mimo.biz.model.product.catalog.ProdCatalogCategoryType;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
-import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
+import org.abchip.mimo.entity.impl.EntityTypeImpl;
 import org.eclipse.emf.ecore.EClass;
 
 /**
@@ -34,7 +35,7 @@ import org.eclipse.emf.ecore.EClass;
  *
  * @generated
  */
-public class ProdCatalogCategoryTypeImpl extends EntityIdentifiableImpl implements ProdCatalogCategoryType {
+public class ProdCatalogCategoryTypeImpl extends EntityTypeImpl<ProdCatalogCategory> implements ProdCatalogCategoryType {
 	
 	/**
 	 * <!-- begin-user-doc -->
@@ -60,9 +61,16 @@ public class ProdCatalogCategoryTypeImpl extends EntityIdentifiableImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	protected static final int ESTATIC_FEATURE_COUNT = 1;
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	protected int eStaticFeatureCount() {
-		return 0;
+		return ESTATIC_FEATURE_COUNT;
 	}
 
 	/**

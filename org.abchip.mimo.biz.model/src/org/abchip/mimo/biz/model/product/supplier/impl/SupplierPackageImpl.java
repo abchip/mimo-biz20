@@ -201,6 +201,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkeffortPackageImpl;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.EReference;
@@ -1317,12 +1318,20 @@ public class SupplierPackageImpl extends EPackageImpl implements SupplierPackage
 		reorderGuidelineEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
 		supplierPrefOrderEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		supplierPrefOrderEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		supplierProductEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		supplierProductEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		EGenericType g1 = createEGenericType(theEntityPackage_1.getEntityTyped());
+		EGenericType g2 = createEGenericType(this.getSupplierRatingType());
+		g1.getETypeArguments().add(g2);
+		supplierProductEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		supplierProductEClass.getEGenericSuperTypes().add(g1);
 		supplierProductFeatureEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
 		supplierProductFeatureEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
-		supplierRatingTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityIdentifiable());
-		supplierRatingTypeEClass.getESuperTypes().add(theEntityPackage_1.getEntityInfo());
+		g1 = createEGenericType(theEntityPackage_1.getEntityType());
+		g2 = createEGenericType(this.getSupplierProduct());
+		g1.getETypeArguments().add(g2);
+		supplierRatingTypeEClass.getEGenericSuperTypes().add(g1);
+		g1 = createEGenericType(theEntityPackage_1.getEntityInfo());
+		supplierRatingTypeEClass.getEGenericSuperTypes().add(g1);
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(marketInterestEClass, MarketInterest.class, "MarketInterest", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
