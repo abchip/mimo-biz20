@@ -11,6 +11,7 @@ import java.util.Date;
 import java.util.List;
 import org.abchip.mimo.biz.model.common.user.UserPreference;
 import org.abchip.mimo.biz.model.party.party.Party;
+import org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup;
 import org.abchip.mimo.context.UserProfile;
 
 /**
@@ -40,6 +41,7 @@ import org.abchip.mimo.context.UserProfile;
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLogin#getUserLdapDn <em>User Ldap Dn</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLogin#getUserLoginHistories <em>User Login Histories</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLogin#getUserLoginPasswordHistories <em>User Login Password Histories</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLogin#getUserLoginSecurityGroups <em>User Login Security Groups</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.UserLogin#getUserPreferences <em>User Preferences</em>}</li>
  * </ul>
  *
@@ -459,6 +461,19 @@ public interface UserLogin extends UserProfile {
 	 * @generated
 	 */
 	List<UserLoginPasswordHistory> getUserLoginPasswordHistories();
+
+	/**
+	 * Returns the value of the '<em><b>User Login Security Groups</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>User Login Security Groups</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.security.login.LoginPackage#getUserLogin_UserLoginSecurityGroups()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<UserLoginSecurityGroup> getUserLoginSecurityGroups();
 
 	/**
 	 * Returns the value of the '<em><b>User Preferences</b></em>' reference list.

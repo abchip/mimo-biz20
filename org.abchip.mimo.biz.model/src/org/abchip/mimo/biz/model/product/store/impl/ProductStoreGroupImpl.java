@@ -8,7 +8,9 @@
 package org.abchip.mimo.biz.model.product.store.impl;
 
 import java.util.Date;
+import java.util.List;
 import org.abchip.mimo.biz.model.product.store.ProductStoreGroup;
+import org.abchip.mimo.biz.model.product.store.ProductStoreGroupRollup;
 import org.abchip.mimo.biz.model.product.store.ProductStoreGroupType;
 import org.abchip.mimo.biz.model.product.store.StorePackage;
 import org.abchip.mimo.entity.EntityInfo;
@@ -29,6 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupImpl#getProductStoreGroupId <em>Product Store Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupImpl#getCurrentProductStoreGroupRollups <em>Current Product Store Group Rollups</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupImpl#getPrimaryParentGroupId <em>Primary Parent Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupImpl#getProductStoreGroupName <em>Product Store Group Name</em>}</li>
@@ -284,6 +287,17 @@ public class ProductStoreGroupImpl extends EntityIdentifiableImpl implements Pro
 	@Override
 	public void setProductStoreGroupId(String newProductStoreGroupId) {
 		eSet(StorePackage.Literals.PRODUCT_STORE_GROUP__PRODUCT_STORE_GROUP_ID, newProductStoreGroupId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ProductStoreGroupRollup> getCurrentProductStoreGroupRollups() {
+		return (List<ProductStoreGroupRollup>)eGet(StorePackage.Literals.PRODUCT_STORE_GROUP__CURRENT_PRODUCT_STORE_GROUP_ROLLUPS, true);
 	}
 
 } //ProductStoreGroupImpl

@@ -8,7 +8,9 @@
 package org.abchip.mimo.biz.model.accounting.payment.impl;
 
 import java.util.Date;
+import java.util.List;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentGroup;
+import org.abchip.mimo.biz.model.accounting.payment.PaymentGroupMember;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentGroupType;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentPackage;
 import org.abchip.mimo.entity.EntityInfo;
@@ -29,6 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupImpl#getPaymentGroupId <em>Payment Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupImpl#getPaymentGroupMembers <em>Payment Group Members</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupImpl#getPaymentGroupName <em>Payment Group Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupImpl#getPaymentGroupTypeId <em>Payment Group Type Id</em>}</li>
  * </ul>
@@ -241,6 +244,17 @@ public class PaymentGroupImpl extends EntityTypedImpl<PaymentGroupType> implemen
 	@Override
 	public void setPaymentGroupId(String newPaymentGroupId) {
 		eSet(PaymentPackage.Literals.PAYMENT_GROUP__PAYMENT_GROUP_ID, newPaymentGroupId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<PaymentGroupMember> getPaymentGroupMembers() {
+		return (List<PaymentGroupMember>)eGet(PaymentPackage.Literals.PAYMENT_GROUP__PAYMENT_GROUP_MEMBERS, true);
 	}
 
 } //PaymentGroupImpl

@@ -744,7 +744,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getContactList_ContactListTypeId() {
+	public EReference getContactList_ContactListParties() {
 		return (EReference)contactListEClass.getEStructuralFeatures().get(3);
 	}
 
@@ -754,7 +754,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getContactList_ContactMechTypeId() {
+	public EReference getContactList_ContactListTypeId() {
 		return (EReference)contactListEClass.getEStructuralFeatures().get(4);
 	}
 
@@ -764,7 +764,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getContactList_CreatedByUserLogin() {
+	public EReference getContactList_ContactMechTypeId() {
 		return (EReference)contactListEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -774,8 +774,8 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getContactList_Description() {
-		return (EAttribute)contactListEClass.getEStructuralFeatures().get(6);
+	public EReference getContactList_CreatedByUserLogin() {
+		return (EReference)contactListEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -784,7 +784,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getContactList_IsPublic() {
+	public EAttribute getContactList_Description() {
 		return (EAttribute)contactListEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -794,8 +794,8 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getContactList_LastModifiedByUserLogin() {
-		return (EReference)contactListEClass.getEStructuralFeatures().get(8);
+	public EAttribute getContactList_IsPublic() {
+		return (EAttribute)contactListEClass.getEStructuralFeatures().get(8);
 	}
 
 	/**
@@ -804,7 +804,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getContactList_MarketingCampaignId() {
+	public EReference getContactList_LastModifiedByUserLogin() {
 		return (EReference)contactListEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -814,8 +814,18 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getContactList_MarketingCampaignId() {
+		return (EReference)contactListEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getContactList_OptOutScreen() {
-		return (EAttribute)contactListEClass.getEStructuralFeatures().get(10);
+		return (EAttribute)contactListEClass.getEStructuralFeatures().get(11);
 	}
 
 	/**
@@ -825,7 +835,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 */
 	@Override
 	public EReference getContactList_OwnerPartyId() {
-		return (EReference)contactListEClass.getEStructuralFeatures().get(11);
+		return (EReference)contactListEClass.getEStructuralFeatures().get(12);
 	}
 
 	/**
@@ -835,16 +845,6 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 */
 	@Override
 	public EAttribute getContactList_SingleUse() {
-		return (EAttribute)contactListEClass.getEStructuralFeatures().get(12);
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	@Override
-	public EAttribute getContactList_VerifyEmailFrom() {
 		return (EAttribute)contactListEClass.getEStructuralFeatures().get(13);
 	}
 
@@ -854,7 +854,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getContactList_VerifyEmailScreen() {
+	public EAttribute getContactList_VerifyEmailFrom() {
 		return (EAttribute)contactListEClass.getEStructuralFeatures().get(14);
 	}
 
@@ -864,7 +864,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getContactList_VerifyEmailSubject() {
+	public EAttribute getContactList_VerifyEmailScreen() {
 		return (EAttribute)contactListEClass.getEStructuralFeatures().get(15);
 	}
 
@@ -874,8 +874,18 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getContactList_VerifyEmailWebSiteId() {
+	public EAttribute getContactList_VerifyEmailSubject() {
 		return (EAttribute)contactListEClass.getEStructuralFeatures().get(16);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getContactList_VerifyEmailWebSiteId() {
+		return (EAttribute)contactListEClass.getEStructuralFeatures().get(17);
 	}
 
 	/**
@@ -1221,6 +1231,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		createEAttribute(contactListEClass, CONTACT_LIST__CONTACT_LIST_ID);
 		createEAttribute(contactListEClass, CONTACT_LIST__COMMENTS);
 		createEAttribute(contactListEClass, CONTACT_LIST__CONTACT_LIST_NAME);
+		createEReference(contactListEClass, CONTACT_LIST__CONTACT_LIST_PARTIES);
 		createEReference(contactListEClass, CONTACT_LIST__CONTACT_LIST_TYPE_ID);
 		createEReference(contactListEClass, CONTACT_LIST__CONTACT_MECH_TYPE_ID);
 		createEReference(contactListEClass, CONTACT_LIST__CREATED_BY_USER_LOGIN);
@@ -1329,6 +1340,7 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 		initEAttribute(getContactList_ContactListId(), ecorePackage.getEString(), "contactListId", null, 1, 1, ContactList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContactList_Comments(), ecorePackage.getEString(), "comments", null, 0, 1, ContactList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getContactList_ContactListName(), ecorePackage.getEString(), "contactListName", null, 0, 1, ContactList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getContactList_ContactListParties(), this.getContactListParty(), null, "contactListParties", null, 0, -1, ContactList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getContactList_ContactListTypeId(), this.getContactListType(), null, "contactListTypeId", null, 0, 1, ContactList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getContactList_ContactListTypeId().getEKeys().add(this.getContactListType_ContactListTypeId());
 		initEReference(getContactList_ContactMechTypeId(), theContactPackage_1.getContactMechType(), null, "contactMechTypeId", null, 0, 1, ContactList.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1559,6 +1571,12 @@ public class ContactPackageImpl extends EPackageImpl implements ContactPackage {
 	 */
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
+		addAnnotation
+		  (getContactList_ContactListParties(),
+		   source,
+		   new String[] {
+			   "type", "fromDate"
+		   });
 		addAnnotation
 		  (getContactList_SingleUse(),
 		   source,

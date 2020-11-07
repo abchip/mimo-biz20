@@ -905,13 +905,22 @@ public interface TestPackage extends EPackage {
 	int TESTING_NODE__PRIMARY_PARENT_NODE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
+	 * The feature id for the '<em><b>Testing Node Members</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TESTING_NODE__TESTING_NODE_MEMBERS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+
+	/**
 	 * The number of structural features of the '<em>Testing Node</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TESTING_NODE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int TESTING_NODE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeMemberImpl <em>Testing Node Member</em>}' class.
@@ -2041,6 +2050,17 @@ public interface TestPackage extends EPackage {
 	EReference getTestingNode_PrimaryParentNodeId();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.entity.test.TestingNode#getTestingNodeMembers <em>Testing Node Members</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Testing Node Members</em>'.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestingNode#getTestingNodeMembers()
+	 * @see #getTestingNode()
+	 * @generated
+	 */
+	EReference getTestingNode_TestingNodeMembers();
+
+	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.entity.test.TestingNodeMember <em>Testing Node Member</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2822,6 +2842,14 @@ public interface TestPackage extends EPackage {
 		 * @generated
 		 */
 		EReference TESTING_NODE__PRIMARY_PARENT_NODE_ID = eINSTANCE.getTestingNode_PrimaryParentNodeId();
+
+		/**
+		 * The meta object literal for the '<em><b>Testing Node Members</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TESTING_NODE__TESTING_NODE_MEMBERS = eINSTANCE.getTestingNode_TestingNodeMembers();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeMemberImpl <em>Testing Node Member</em>}' class.

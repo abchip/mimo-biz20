@@ -7,6 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.store;
 
+import java.util.List;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
 
@@ -20,6 +21,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroup#getProductStoreGroupId <em>Product Store Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroup#getCurrentProductStoreGroupRollups <em>Current Product Store Group Rollups</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroup#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroup#getPrimaryParentGroupId <em>Primary Parent Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroup#getProductStoreGroupName <em>Product Store Group Name</em>}</li>
@@ -161,5 +163,18 @@ public interface ProductStoreGroup extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setProductStoreGroupId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Current Product Store Group Rollups</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.store.ProductStoreGroupRollup}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Current Product Store Group Rollups</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStoreGroup_CurrentProductStoreGroupRollups()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ProductStoreGroupRollup> getCurrentProductStoreGroupRollups();
 
 } // ProductStoreGroup

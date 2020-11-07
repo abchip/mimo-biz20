@@ -8,9 +8,11 @@
 package org.abchip.mimo.biz.model.marketing.tracking.impl;
 
 import java.util.Date;
+import java.util.List;
 import org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaign;
 import org.abchip.mimo.biz.model.marketing.tracking.TrackingCode;
 import org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeType;
+import org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeVisit;
 import org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
@@ -48,6 +50,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeImpl#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeImpl#getTrackableLifetime <em>Trackable Lifetime</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeImpl#getTrackingCodeTypeId <em>Tracking Code Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeImpl#getTrackingCodeVisits <em>Tracking Code Visits</em>}</li>
  * </ul>
  *
  * @generated
@@ -541,6 +544,17 @@ public class TrackingCodeImpl extends EntityIdentifiableImpl implements Tracking
 	@Override
 	public void setTrackingCodeTypeId(TrackingCodeType newTrackingCodeTypeId) {
 		eSet(TrackingPackage.Literals.TRACKING_CODE__TRACKING_CODE_TYPE_ID, newTrackingCodeTypeId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<TrackingCodeVisit> getTrackingCodeVisits() {
+		return (List<TrackingCodeVisit>)eGet(TrackingPackage.Literals.TRACKING_CODE__TRACKING_CODE_VISITS, true);
 	}
 
 	/**

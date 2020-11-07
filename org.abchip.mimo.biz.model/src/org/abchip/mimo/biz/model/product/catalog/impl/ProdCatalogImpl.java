@@ -8,8 +8,10 @@
 package org.abchip.mimo.biz.model.product.catalog.impl;
 
 import java.util.Date;
+import java.util.List;
 import org.abchip.mimo.biz.model.product.catalog.CatalogPackage;
 import org.abchip.mimo.biz.model.product.catalog.ProdCatalog;
+import org.abchip.mimo.biz.model.product.catalog.ProdCatalogInvFacility;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
 import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
@@ -31,6 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogImpl#getCatalogName <em>Catalog Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogImpl#getContentPathPrefix <em>Content Path Prefix</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogImpl#getHeaderLogo <em>Header Logo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogImpl#getProdCatalogInvFacilities <em>Prod Catalog Inv Facilities</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogImpl#isPurchaseAllowPermReqd <em>Purchase Allow Perm Reqd</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogImpl#getStyleSheet <em>Style Sheet</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogImpl#getTemplatePathPrefix <em>Template Path Prefix</em>}</li>
@@ -209,6 +212,17 @@ public class ProdCatalogImpl extends EntityIdentifiableImpl implements ProdCatal
 	@Override
 	public void setHeaderLogo(String newHeaderLogo) {
 		eSet(CatalogPackage.Literals.PROD_CATALOG__HEADER_LOGO, newHeaderLogo);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ProdCatalogInvFacility> getProdCatalogInvFacilities() {
+		return (List<ProdCatalogInvFacility>)eGet(CatalogPackage.Literals.PROD_CATALOG__PROD_CATALOG_INV_FACILITIES, true);
 	}
 
 	/**

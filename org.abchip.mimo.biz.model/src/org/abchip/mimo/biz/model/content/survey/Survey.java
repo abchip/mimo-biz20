@@ -32,6 +32,8 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.Survey#getSurveyMultiResps <em>Survey Multi Resps</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.Survey#getSurveyName <em>Survey Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.Survey#getSurveyPages <em>Survey Pages</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.Survey#getSurveyQuestionAppls <em>Survey Question Appls</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.Survey#getSurveyTriggers <em>Survey Triggers</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurvey()
@@ -335,5 +337,31 @@ public interface Survey extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	List<SurveyPage> getSurveyPages();
+
+	/**
+	 * Returns the value of the '<em><b>Survey Question Appls</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Survey Question Appls</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurvey_SurveyQuestionAppls()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<SurveyQuestionAppl> getSurveyQuestionAppls();
+
+	/**
+	 * Returns the value of the '<em><b>Survey Triggers</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.content.survey.SurveyTrigger}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Survey Triggers</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.content.survey.SurveyPackage#getSurvey_SurveyTriggers()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<SurveyTrigger> getSurveyTriggers();
 
 } // Survey

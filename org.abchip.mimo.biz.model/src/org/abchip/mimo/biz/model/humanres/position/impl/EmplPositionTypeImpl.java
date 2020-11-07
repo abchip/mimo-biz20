@@ -8,9 +8,13 @@
 package org.abchip.mimo.biz.model.humanres.position.impl;
 
 import java.util.Date;
+import java.util.List;
 import org.abchip.mimo.biz.model.humanres.position.EmplPosition;
 import org.abchip.mimo.biz.model.humanres.position.EmplPositionType;
+import org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeClass;
+import org.abchip.mimo.biz.model.humanres.position.EmplPositionTypeRate;
 import org.abchip.mimo.biz.model.humanres.position.PositionPackage;
+import org.abchip.mimo.biz.model.humanres.position.ValidResponsibility;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
 import org.abchip.mimo.entity.impl.EntityTypeImpl;
@@ -30,8 +34,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeImpl#getEmplPositionTypeId <em>Empl Position Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeImpl#getDescription <em>Description</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeImpl#getEmplPositionTypeClasses <em>Empl Position Type Classes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeImpl#getEmplPositionTypeRates <em>Empl Position Type Rates</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeImpl#isHasTable <em>Has Table</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeImpl#getParentTypeId <em>Parent Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionTypeImpl#getValidResponsibilities <em>Valid Responsibilities</em>}</li>
  * </ul>
  *
  * @generated
@@ -179,6 +186,28 @@ public class EmplPositionTypeImpl extends EntityTypeImpl<EmplPosition> implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<EmplPositionTypeClass> getEmplPositionTypeClasses() {
+		return (List<EmplPositionTypeClass>)eGet(PositionPackage.Literals.EMPL_POSITION_TYPE__EMPL_POSITION_TYPE_CLASSES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<EmplPositionTypeRate> getEmplPositionTypeRates() {
+		return (List<EmplPositionTypeRate>)eGet(PositionPackage.Literals.EMPL_POSITION_TYPE__EMPL_POSITION_TYPE_RATES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public boolean isHasTable() {
 		return (Boolean)eGet(PositionPackage.Literals.EMPL_POSITION_TYPE__HAS_TABLE, true);
@@ -232,6 +261,17 @@ public class EmplPositionTypeImpl extends EntityTypeImpl<EmplPosition> implement
 	@Override
 	public void setParentTypeId(EmplPositionType newParentTypeId) {
 		eSet(PositionPackage.Literals.EMPL_POSITION_TYPE__PARENT_TYPE_ID, newParentTypeId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ValidResponsibility> getValidResponsibilities() {
+		return (List<ValidResponsibility>)eGet(PositionPackage.Literals.EMPL_POSITION_TYPE__VALID_RESPONSIBILITIES, true);
 	}
 
 	/**

@@ -890,6 +890,26 @@ public class SurveyPackageImpl extends EPackageImpl implements SurveyPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getSurvey_SurveyQuestionAppls() {
+		return (EReference)surveyEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getSurvey_SurveyTriggers() {
+		return (EReference)surveyEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getSurveyApplType() {
 		return surveyApplTypeEClass;
 	}
@@ -1866,6 +1886,8 @@ public class SurveyPackageImpl extends EPackageImpl implements SurveyPackage {
 		createEReference(surveyEClass, SURVEY__SURVEY_MULTI_RESPS);
 		createEAttribute(surveyEClass, SURVEY__SURVEY_NAME);
 		createEReference(surveyEClass, SURVEY__SURVEY_PAGES);
+		createEReference(surveyEClass, SURVEY__SURVEY_QUESTION_APPLS);
+		createEReference(surveyEClass, SURVEY__SURVEY_TRIGGERS);
 
 		surveyApplTypeEClass = createEClass(SURVEY_APPL_TYPE);
 		createEAttribute(surveyApplTypeEClass, SURVEY_APPL_TYPE__SURVEY_APPL_TYPE_ID);
@@ -2051,6 +2073,8 @@ public class SurveyPackageImpl extends EPackageImpl implements SurveyPackage {
 		initEReference(getSurvey_SurveyMultiResps(), this.getSurveyMultiResp(), null, "surveyMultiResps", null, 0, -1, Survey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSurvey_SurveyName(), ecorePackage.getEString(), "surveyName", null, 0, 1, Survey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getSurvey_SurveyPages(), this.getSurveyPage(), null, "surveyPages", null, 0, -1, Survey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEReference(getSurvey_SurveyQuestionAppls(), this.getSurveyQuestionAppl(), null, "surveyQuestionAppls", null, 0, -1, Survey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEReference(getSurvey_SurveyTriggers(), this.getSurveyTrigger(), null, "surveyTriggers", null, 0, -1, Survey.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(surveyApplTypeEClass, SurveyApplType.class, "SurveyApplType", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getSurveyApplType_SurveyApplTypeId(), ecorePackage.getEString(), "surveyApplTypeId", null, 1, 1, SurveyApplType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2640,6 +2664,18 @@ public class SurveyPackageImpl extends EPackageImpl implements SurveyPackage {
 		   source,
 		   new String[] {
 			   "help", "Allow response to the survey without login?"
+		   });
+		addAnnotation
+		  (getSurvey_SurveyQuestionAppls(),
+		   source,
+		   new String[] {
+			   "type", "fromDate"
+		   });
+		addAnnotation
+		  (getSurvey_SurveyTriggers(),
+		   source,
+		   new String[] {
+			   "type", "fromDate"
 		   });
 		addAnnotation
 		  (getSurveyMultiResp_SurveyId(),

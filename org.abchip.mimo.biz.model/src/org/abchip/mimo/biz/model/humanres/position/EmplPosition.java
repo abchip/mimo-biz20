@@ -8,6 +8,7 @@
 package org.abchip.mimo.biz.model.humanres.position;
 
 import java.util.Date;
+import java.util.List;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.entity.EntityInfo;
@@ -27,12 +28,15 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getActualThruDate <em>Actual Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getBudgetId <em>Budget Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getBudgetItemSeqId <em>Budget Item Seq Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getEmplPositionFulfillments <em>Empl Position Fulfillments</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getEmplPositionResponsibilities <em>Empl Position Responsibilities</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getEmplPositionTypeId <em>Empl Position Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getEstimatedFromDate <em>Estimated From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getEstimatedThruDate <em>Estimated Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#isExemptFlag <em>Exempt Flag</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#isFulltimeFlag <em>Fulltime Flag</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getReportingToEmplPositionReportingStructs <em>Reporting To Empl Position Reporting Structs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#isSalaryFlag <em>Salary Flag</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#getStatusId <em>Status Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.EmplPosition#isTemporaryFlag <em>Temporary Flag</em>}</li>
@@ -146,6 +150,32 @@ public interface EmplPosition extends EntityTyped<EmplPositionType>, EntityInfo 
 	 * @generated
 	 */
 	void setBudgetItemSeqId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Empl Position Fulfillments</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.humanres.position.EmplPositionFulfillment}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Empl Position Fulfillments</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPosition_EmplPositionFulfillments()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<EmplPositionFulfillment> getEmplPositionFulfillments();
+
+	/**
+	 * Returns the value of the '<em><b>Empl Position Responsibilities</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.humanres.position.EmplPositionResponsibility}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Empl Position Responsibilities</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPosition_EmplPositionResponsibilities()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<EmplPositionResponsibility> getEmplPositionResponsibilities();
 
 	/**
 	 * Returns the value of the '<em><b>Empl Position Id</b></em>' attribute.
@@ -329,6 +359,19 @@ public interface EmplPosition extends EntityTyped<EmplPositionType>, EntityInfo 
 	 * @generated
 	 */
 	void setPartyId(Party value);
+
+	/**
+	 * Returns the value of the '<em><b>Reporting To Empl Position Reporting Structs</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.humanres.position.EmplPositionReportingStruct}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Reporting To Empl Position Reporting Structs</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.humanres.position.PositionPackage#getEmplPosition_ReportingToEmplPositionReportingStructs()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<EmplPositionReportingStruct> getReportingToEmplPositionReportingStructs();
 
 	/**
 	 * Returns the value of the '<em><b>Salary Flag</b></em>' attribute.

@@ -24,6 +24,7 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.SecurityGroup#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.SecurityGroup#getGroupName <em>Group Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.SecurityGroup#getProtectedViews <em>Protected Views</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.SecurityGroup#getSecurityGroupPermissions <em>Security Group Permissions</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage#getSecurityGroup()
@@ -125,5 +126,18 @@ public interface SecurityGroup extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	List<ProtectedView> getProtectedViews();
+
+	/**
+	 * Returns the value of the '<em><b>Security Group Permissions</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.security.securitygroup.SecurityGroupPermission}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Security Group Permissions</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage#getSecurityGroup_SecurityGroupPermissions()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<SecurityGroupPermission> getSecurityGroupPermissions();
 
 } // SecurityGroup

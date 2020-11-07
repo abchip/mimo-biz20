@@ -896,6 +896,16 @@ public class TrackingPackageImpl extends EPackageImpl implements TrackingPackage
 	 * @generated
 	 */
 	@Override
+	public EReference getTrackingCode_TrackingCodeVisits() {
+		return (EReference)trackingCodeEClass.getEStructuralFeatures().get(19);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getTrackingCodeOrder() {
 		return trackingCodeOrderEClass;
 	}
@@ -1199,6 +1209,7 @@ public class TrackingPackageImpl extends EPackageImpl implements TrackingPackage
 		createEAttribute(trackingCodeEClass, TRACKING_CODE__THRU_DATE);
 		createEAttribute(trackingCodeEClass, TRACKING_CODE__TRACKABLE_LIFETIME);
 		createEReference(trackingCodeEClass, TRACKING_CODE__TRACKING_CODE_TYPE_ID);
+		createEReference(trackingCodeEClass, TRACKING_CODE__TRACKING_CODE_VISITS);
 
 		trackingCodeOrderEClass = createEClass(TRACKING_CODE_ORDER);
 		createEReference(trackingCodeOrderEClass, TRACKING_CODE_ORDER__ORDER_ID);
@@ -1300,6 +1311,7 @@ public class TrackingPackageImpl extends EPackageImpl implements TrackingPackage
 		initEAttribute(getTrackingCode_TrackableLifetime(), ecorePackage.getELong(), "trackableLifetime", null, 0, 1, TrackingCode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getTrackingCode_TrackingCodeTypeId(), this.getTrackingCodeType(), null, "trackingCodeTypeId", null, 0, 1, TrackingCode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getTrackingCode_TrackingCodeTypeId().getEKeys().add(this.getTrackingCodeType_TrackingCodeTypeId());
+		initEReference(getTrackingCode_TrackingCodeVisits(), this.getTrackingCodeVisit(), null, "trackingCodeVisits", null, 0, -1, TrackingCode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(trackingCodeOrderEClass, TrackingCodeOrder.class, "TrackingCodeOrder", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getTrackingCodeOrder_OrderId(), theOrderPackage.getOrderHeader(), null, "orderId", null, 1, 1, TrackingCodeOrder.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1521,6 +1533,12 @@ public class TrackingPackageImpl extends EPackageImpl implements TrackingPackage
 	 */
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
+		addAnnotation
+		  (getTrackingCode_TrackingCodeVisits(),
+		   source,
+		   new String[] {
+			   "type", "fromDate"
+		   });
 		addAnnotation
 		  (getTrackingCodeOrder_OrderId(),
 		   source,

@@ -746,8 +746,8 @@ public class CatalogPackageImpl extends EPackageImpl implements CatalogPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getProdCatalog_PurchaseAllowPermReqd() {
-		return (EAttribute)prodCatalogEClass.getEStructuralFeatures().get(4);
+	public EReference getProdCatalog_ProdCatalogInvFacilities() {
+		return (EReference)prodCatalogEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -756,7 +756,7 @@ public class CatalogPackageImpl extends EPackageImpl implements CatalogPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getProdCatalog_StyleSheet() {
+	public EAttribute getProdCatalog_PurchaseAllowPermReqd() {
 		return (EAttribute)prodCatalogEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -766,7 +766,7 @@ public class CatalogPackageImpl extends EPackageImpl implements CatalogPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getProdCatalog_TemplatePathPrefix() {
+	public EAttribute getProdCatalog_StyleSheet() {
 		return (EAttribute)prodCatalogEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -776,7 +776,7 @@ public class CatalogPackageImpl extends EPackageImpl implements CatalogPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getProdCatalog_UseQuickAdd() {
+	public EAttribute getProdCatalog_TemplatePathPrefix() {
 		return (EAttribute)prodCatalogEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -786,8 +786,18 @@ public class CatalogPackageImpl extends EPackageImpl implements CatalogPackage {
 	 * @generated
 	 */
 	@Override
-	public EAttribute getProdCatalog_ViewAllowPermReqd() {
+	public EAttribute getProdCatalog_UseQuickAdd() {
 		return (EAttribute)prodCatalogEClass.getEStructuralFeatures().get(8);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EAttribute getProdCatalog_ViewAllowPermReqd() {
+		return (EAttribute)prodCatalogEClass.getEStructuralFeatures().get(9);
 	}
 
 	/**
@@ -1064,6 +1074,7 @@ public class CatalogPackageImpl extends EPackageImpl implements CatalogPackage {
 		createEAttribute(prodCatalogEClass, PROD_CATALOG__CATALOG_NAME);
 		createEAttribute(prodCatalogEClass, PROD_CATALOG__CONTENT_PATH_PREFIX);
 		createEAttribute(prodCatalogEClass, PROD_CATALOG__HEADER_LOGO);
+		createEReference(prodCatalogEClass, PROD_CATALOG__PROD_CATALOG_INV_FACILITIES);
 		createEAttribute(prodCatalogEClass, PROD_CATALOG__PURCHASE_ALLOW_PERM_REQD);
 		createEAttribute(prodCatalogEClass, PROD_CATALOG__STYLE_SHEET);
 		createEAttribute(prodCatalogEClass, PROD_CATALOG__TEMPLATE_PATH_PREFIX);
@@ -1150,6 +1161,7 @@ public class CatalogPackageImpl extends EPackageImpl implements CatalogPackage {
 		initEAttribute(getProdCatalog_CatalogName(), ecorePackage.getEString(), "catalogName", null, 0, 1, ProdCatalog.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProdCatalog_ContentPathPrefix(), ecorePackage.getEString(), "contentPathPrefix", null, 0, 1, ProdCatalog.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProdCatalog_HeaderLogo(), ecorePackage.getEString(), "headerLogo", null, 0, 1, ProdCatalog.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProdCatalog_ProdCatalogInvFacilities(), this.getProdCatalogInvFacility(), null, "prodCatalogInvFacilities", null, 0, -1, ProdCatalog.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProdCatalog_PurchaseAllowPermReqd(), ecorePackage.getEBoolean(), "purchaseAllowPermReqd", null, 1, 1, ProdCatalog.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProdCatalog_StyleSheet(), ecorePackage.getEString(), "styleSheet", null, 0, 1, ProdCatalog.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProdCatalog_TemplatePathPrefix(), ecorePackage.getEString(), "templatePathPrefix", null, 0, 1, ProdCatalog.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1292,6 +1304,12 @@ public class CatalogPackageImpl extends EPackageImpl implements CatalogPackage {
 	 */
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
+		addAnnotation
+		  (getProdCatalog_ProdCatalogInvFacilities(),
+		   source,
+		   new String[] {
+			   "type", "fromDate"
+		   });
 		addAnnotation
 		  (getProdCatalogCategory_ProdCatalogId(),
 		   source,

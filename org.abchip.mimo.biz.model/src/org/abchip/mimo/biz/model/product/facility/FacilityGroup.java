@@ -7,6 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.facility;
 
+import java.util.List;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
 
@@ -20,6 +21,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getFacilityGroupId <em>Facility Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getCurrentFacilityGroupRollups <em>Current Facility Group Rollups</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getFacilityGroupName <em>Facility Group Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getFacilityGroupTypeId <em>Facility Group Type Id</em>}</li>
@@ -161,5 +163,18 @@ public interface FacilityGroup extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setFacilityGroupId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Current Facility Group Rollups</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Current Facility Group Rollups</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacilityGroup_CurrentFacilityGroupRollups()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<FacilityGroupRollup> getCurrentFacilityGroupRollups();
 
 } // FacilityGroup

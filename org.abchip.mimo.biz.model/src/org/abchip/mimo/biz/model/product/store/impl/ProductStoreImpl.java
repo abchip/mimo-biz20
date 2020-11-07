@@ -18,9 +18,14 @@ import org.abchip.mimo.biz.model.passport.OAuth2Google;
 import org.abchip.mimo.biz.model.passport.OAuth2LinkedIn;
 import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
+import org.abchip.mimo.biz.model.product.store.ProductStoreCatalog;
 import org.abchip.mimo.biz.model.product.store.ProductStoreEmailSetting;
+import org.abchip.mimo.biz.model.product.store.ProductStoreFacility;
 import org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting;
 import org.abchip.mimo.biz.model.product.store.ProductStoreGroup;
+import org.abchip.mimo.biz.model.product.store.ProductStoreGroupMember;
+import org.abchip.mimo.biz.model.product.store.ProductStoreKeywordOvrd;
+import org.abchip.mimo.biz.model.product.store.ProductStorePromoAppl;
 import org.abchip.mimo.biz.model.product.store.StorePackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
@@ -95,8 +100,13 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getPayToPartyId <em>Pay To Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getPrimaryStoreGroupId <em>Primary Store Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isProdSearchExcludeVariants <em>Prod Search Exclude Variants</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getProductStoreCatalogs <em>Product Store Catalogs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getProductStoreEmailSettings <em>Product Store Email Settings</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getProductStoreFacilities <em>Product Store Facilities</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getProductStoreFinActSettings <em>Product Store Fin Act Settings</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getProductStoreGroupMembers <em>Product Store Group Members</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getProductStoreKeywordOvrds <em>Product Store Keyword Ovrds</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getProductStorePromoAppls <em>Product Store Promo Appls</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isProrateShipping <em>Prorate Shipping</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#isProrateTaxes <em>Prorate Taxes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreImpl#getReqReturnInventoryReceive <em>Req Return Inventory Receive</em>}</li>
@@ -1818,6 +1828,17 @@ public class ProductStoreImpl extends EntityIdentifiableImpl implements ProductS
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
+	public List<ProductStoreCatalog> getProductStoreCatalogs() {
+		return (List<ProductStoreCatalog>)eGet(StorePackage.Literals.PRODUCT_STORE__PRODUCT_STORE_CATALOGS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
 	public List<ProductStoreEmailSetting> getProductStoreEmailSettings() {
 		return (List<ProductStoreEmailSetting>)eGet(StorePackage.Literals.PRODUCT_STORE__PRODUCT_STORE_EMAIL_SETTINGS, true);
 	}
@@ -1829,8 +1850,52 @@ public class ProductStoreImpl extends EntityIdentifiableImpl implements ProductS
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
+	public List<ProductStoreFacility> getProductStoreFacilities() {
+		return (List<ProductStoreFacility>)eGet(StorePackage.Literals.PRODUCT_STORE__PRODUCT_STORE_FACILITIES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
 	public List<ProductStoreFinActSetting> getProductStoreFinActSettings() {
 		return (List<ProductStoreFinActSetting>)eGet(StorePackage.Literals.PRODUCT_STORE__PRODUCT_STORE_FIN_ACT_SETTINGS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ProductStoreGroupMember> getProductStoreGroupMembers() {
+		return (List<ProductStoreGroupMember>)eGet(StorePackage.Literals.PRODUCT_STORE__PRODUCT_STORE_GROUP_MEMBERS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ProductStoreKeywordOvrd> getProductStoreKeywordOvrds() {
+		return (List<ProductStoreKeywordOvrd>)eGet(StorePackage.Literals.PRODUCT_STORE__PRODUCT_STORE_KEYWORD_OVRDS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ProductStorePromoAppl> getProductStorePromoAppls() {
+		return (List<ProductStorePromoAppl>)eGet(StorePackage.Literals.PRODUCT_STORE__PRODUCT_STORE_PROMO_APPLS, true);
 	}
 
 	/**

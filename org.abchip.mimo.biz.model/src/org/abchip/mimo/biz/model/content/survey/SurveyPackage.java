@@ -216,13 +216,31 @@ public interface SurveyPackage extends EPackage {
 	int SURVEY__SURVEY_PAGES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
+	 * The feature id for the '<em><b>Survey Question Appls</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SURVEY__SURVEY_QUESTION_APPLS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
+
+	/**
+	 * The feature id for the '<em><b>Survey Triggers</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SURVEY__SURVEY_TRIGGERS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
+
+	/**
 	 * The number of structural features of the '<em>Survey</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SURVEY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
+	int SURVEY_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyApplTypeImpl <em>Appl Type</em>}' class.
@@ -1766,6 +1784,28 @@ public interface SurveyPackage extends EPackage {
 	EReference getSurvey_SurveyPages();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.content.survey.Survey#getSurveyQuestionAppls <em>Survey Question Appls</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Survey Question Appls</em>'.
+	 * @see org.abchip.mimo.biz.model.content.survey.Survey#getSurveyQuestionAppls()
+	 * @see #getSurvey()
+	 * @generated
+	 */
+	EReference getSurvey_SurveyQuestionAppls();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.content.survey.Survey#getSurveyTriggers <em>Survey Triggers</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Survey Triggers</em>'.
+	 * @see org.abchip.mimo.biz.model.content.survey.Survey#getSurveyTriggers()
+	 * @see #getSurvey()
+	 * @generated
+	 */
+	EReference getSurvey_SurveyTriggers();
+
+	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.content.survey.SurveyApplType <em>Appl Type</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2914,6 +2954,22 @@ public interface SurveyPackage extends EPackage {
 		 * @generated
 		 */
 		EReference SURVEY__SURVEY_PAGES = eINSTANCE.getSurvey_SurveyPages();
+
+		/**
+		 * The meta object literal for the '<em><b>Survey Question Appls</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SURVEY__SURVEY_QUESTION_APPLS = eINSTANCE.getSurvey_SurveyQuestionAppls();
+
+		/**
+		 * The meta object literal for the '<em><b>Survey Triggers</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SURVEY__SURVEY_TRIGGERS = eINSTANCE.getSurvey_SurveyTriggers();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyApplTypeImpl <em>Appl Type</em>}' class.

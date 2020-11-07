@@ -11,6 +11,8 @@ import java.util.Date;
 import java.util.List;
 import org.abchip.mimo.biz.model.common.theme.VisualThemeSet;
 import org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig;
+import org.abchip.mimo.biz.model.content.website.WebSitePathAlias;
+import org.abchip.mimo.biz.model.marketing.contact.WebSiteContactList;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
 import org.abchip.mimo.biz.model.webapp.website.WebSite;
 import org.abchip.mimo.biz.model.webapp.website.WebsitePackage;
@@ -48,6 +50,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getStandardContentPrefix <em>Standard Content Prefix</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getVisualThemeSetId <em>Visual Theme Set Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getWebAnalyticsConfigs <em>Web Analytics Configs</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getWebSiteContactLists <em>Web Site Contact Lists</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getWebSitePathAliass <em>Web Site Path Aliass</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.impl.WebSiteImpl#getWebappPath <em>Webapp Path</em>}</li>
  * </ul>
  *
@@ -493,6 +497,28 @@ public class WebSiteImpl extends EntityIdentifiableImpl implements WebSite {
 	@Override
 	public List<WebAnalyticsConfig> getWebAnalyticsConfigs() {
 		return (List<WebAnalyticsConfig>)eGet(WebsitePackage.Literals.WEB_SITE__WEB_ANALYTICS_CONFIGS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<WebSiteContactList> getWebSiteContactLists() {
+		return (List<WebSiteContactList>)eGet(WebsitePackage.Literals.WEB_SITE__WEB_SITE_CONTACT_LISTS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<WebSitePathAlias> getWebSitePathAliass() {
+		return (List<WebSitePathAlias>)eGet(WebsitePackage.Literals.WEB_SITE__WEB_SITE_PATH_ALIASS, true);
 	}
 
 	/**

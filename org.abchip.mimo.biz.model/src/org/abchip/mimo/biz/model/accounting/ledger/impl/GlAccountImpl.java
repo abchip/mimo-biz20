@@ -10,10 +10,12 @@ package org.abchip.mimo.biz.model.accounting.ledger.impl;
 import java.util.Date;
 import java.util.List;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccount;
+import org.abchip.mimo.biz.model.accounting.ledger.GlAccountCategoryMember;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccountClass;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccountGroupMember;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccountOrganization;
 import org.abchip.mimo.biz.model.accounting.ledger.GlAccountType;
+import org.abchip.mimo.biz.model.accounting.ledger.GlBudgetXref;
 import org.abchip.mimo.biz.model.accounting.ledger.GlResourceType;
 import org.abchip.mimo.biz.model.accounting.ledger.GlXbrlClass;
 import org.abchip.mimo.biz.model.accounting.ledger.LedgerPackage;
@@ -39,10 +41,12 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getAccountName <em>Account Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getExternalId <em>External Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getGlAccountCategoryMembers <em>Gl Account Category Members</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getGlAccountClassId <em>Gl Account Class Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getGlAccountGroupMembers <em>Gl Account Group Members</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getGlAccountOrganizations <em>Gl Account Organizations</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getGlAccountTypeId <em>Gl Account Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getGlBudgetXrefs <em>Gl Budget Xrefs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getGlResourceTypeId <em>Gl Resource Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getGlXbrlClassId <em>Gl Xbrl Class Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountImpl#getParentGlAccountId <em>Parent Gl Account Id</em>}</li>
@@ -246,6 +250,17 @@ public class GlAccountImpl extends EntityTypedImpl<GlAccountType> implements GlA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<GlAccountCategoryMember> getGlAccountCategoryMembers() {
+		return (List<GlAccountCategoryMember>)eGet(LedgerPackage.Literals.GL_ACCOUNT__GL_ACCOUNT_CATEGORY_MEMBERS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public String getProductId() {
 		return (String)eGet(LedgerPackage.Literals.GL_ACCOUNT__PRODUCT_ID, true);
@@ -317,6 +332,17 @@ public class GlAccountImpl extends EntityTypedImpl<GlAccountType> implements GlA
 	@Override
 	public void setGlAccountTypeId(GlAccountType newGlAccountTypeId) {
 		eSet(LedgerPackage.Literals.GL_ACCOUNT__GL_ACCOUNT_TYPE_ID, newGlAccountTypeId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<GlBudgetXref> getGlBudgetXrefs() {
+		return (List<GlBudgetXref>)eGet(LedgerPackage.Literals.GL_ACCOUNT__GL_BUDGET_XREFS, true);
 	}
 
 	/**

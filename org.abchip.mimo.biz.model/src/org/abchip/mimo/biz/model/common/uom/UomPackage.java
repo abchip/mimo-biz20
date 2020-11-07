@@ -126,13 +126,22 @@ public interface UomPackage extends EPackage {
 	int UOM__ABBREVIATION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
 
 	/**
+	 * The feature id for the '<em><b>Dated Main Uom Conversion Dateds</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int UOM__DATED_MAIN_UOM_CONVERSION_DATEDS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+
+	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int UOM__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int UOM__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Main Uom Conversions</b></em>' reference list.
@@ -141,7 +150,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM__MAIN_UOM_CONVERSIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int UOM__MAIN_UOM_CONVERSIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Numeric Code</b></em>' attribute.
@@ -150,7 +159,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM__NUMERIC_CODE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int UOM__NUMERIC_CODE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Uom Type Id</b></em>' reference.
@@ -159,7 +168,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM__UOM_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int UOM__UOM_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The number of structural features of the '<em>Uom</em>' class.
@@ -168,7 +177,7 @@ public interface UomPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int UOM_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
+	int UOM_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.common.uom.impl.UomConversionImpl <em>Conversion</em>}' class.
@@ -622,6 +631,17 @@ public interface UomPackage extends EPackage {
 	EAttribute getUom_Abbreviation();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.common.uom.Uom#getDatedMainUomConversionDateds <em>Dated Main Uom Conversion Dateds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Dated Main Uom Conversion Dateds</em>'.
+	 * @see org.abchip.mimo.biz.model.common.uom.Uom#getDatedMainUomConversionDateds()
+	 * @see #getUom()
+	 * @generated
+	 */
+	EReference getUom_DatedMainUomConversionDateds();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.common.uom.Uom#getDescription <em>Description</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -983,6 +1003,14 @@ public interface UomPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute UOM__ABBREVIATION = eINSTANCE.getUom_Abbreviation();
+
+		/**
+		 * The meta object literal for the '<em><b>Dated Main Uom Conversion Dateds</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference UOM__DATED_MAIN_UOM_CONVERSION_DATEDS = eINSTANCE.getUom_DatedMainUomConversionDateds();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.

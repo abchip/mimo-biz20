@@ -668,13 +668,22 @@ public interface ProductPackage extends EPackage {
 	int PRODUCT__PRODUCT_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 44;
 
 	/**
+	 * The feature id for the '<em><b>Product Cost Component Calcs</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT__PRODUCT_COST_COMPONENT_CALCS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 45;
+
+	/**
 	 * The feature id for the '<em><b>Product Depth</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__PRODUCT_DEPTH = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 45;
+	int PRODUCT__PRODUCT_DEPTH = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 46;
 
 	/**
 	 * The feature id for the '<em><b>Product Diameter</b></em>' attribute.
@@ -683,7 +692,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__PRODUCT_DIAMETER = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 46;
+	int PRODUCT__PRODUCT_DIAMETER = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 47;
 
 	/**
 	 * The feature id for the '<em><b>Product Facilities</b></em>' reference list.
@@ -692,7 +701,16 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__PRODUCT_FACILITIES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 47;
+	int PRODUCT__PRODUCT_FACILITIES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 48;
+
+	/**
+	 * The feature id for the '<em><b>Product Feature Appls</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT__PRODUCT_FEATURE_APPLS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 49;
 
 	/**
 	 * The feature id for the '<em><b>Product Geos</b></em>' reference list.
@@ -701,7 +719,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__PRODUCT_GEOS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 48;
+	int PRODUCT__PRODUCT_GEOS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 50;
 
 	/**
 	 * The feature id for the '<em><b>Product Height</b></em>' attribute.
@@ -710,7 +728,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__PRODUCT_HEIGHT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 49;
+	int PRODUCT__PRODUCT_HEIGHT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 51;
 
 	/**
 	 * The feature id for the '<em><b>Product Maints</b></em>' reference list.
@@ -719,7 +737,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__PRODUCT_MAINTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 50;
+	int PRODUCT__PRODUCT_MAINTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 52;
 
 	/**
 	 * The feature id for the '<em><b>Product Meters</b></em>' reference list.
@@ -728,7 +746,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__PRODUCT_METERS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 51;
+	int PRODUCT__PRODUCT_METERS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 53;
 
 	/**
 	 * The feature id for the '<em><b>Product Name</b></em>' attribute.
@@ -737,7 +755,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__PRODUCT_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 52;
+	int PRODUCT__PRODUCT_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 54;
 
 	/**
 	 * The feature id for the '<em><b>Product Rating</b></em>' attribute.
@@ -746,7 +764,16 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__PRODUCT_RATING = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 53;
+	int PRODUCT__PRODUCT_RATING = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 55;
+
+	/**
+	 * The feature id for the '<em><b>Product Subscription Resources</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT__PRODUCT_SUBSCRIPTION_RESOURCES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 56;
 
 	/**
 	 * The feature id for the '<em><b>Product Type Id</b></em>' reference.
@@ -755,7 +782,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__PRODUCT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 54;
+	int PRODUCT__PRODUCT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 57;
 
 	/**
 	 * The feature id for the '<em><b>Product Weight</b></em>' attribute.
@@ -764,7 +791,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__PRODUCT_WEIGHT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 55;
+	int PRODUCT__PRODUCT_WEIGHT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 58;
 
 	/**
 	 * The feature id for the '<em><b>Product Width</b></em>' attribute.
@@ -773,7 +800,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__PRODUCT_WIDTH = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 56;
+	int PRODUCT__PRODUCT_WIDTH = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 59;
 
 	/**
 	 * The feature id for the '<em><b>Quantity Included</b></em>' attribute.
@@ -782,7 +809,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__QUANTITY_INCLUDED = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 57;
+	int PRODUCT__QUANTITY_INCLUDED = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 60;
 
 	/**
 	 * The feature id for the '<em><b>Quantity Uom Id</b></em>' reference.
@@ -791,7 +818,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__QUANTITY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 58;
+	int PRODUCT__QUANTITY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 61;
 
 	/**
 	 * The feature id for the '<em><b>Rating Type Enum</b></em>' reference.
@@ -800,7 +827,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__RATING_TYPE_ENUM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 59;
+	int PRODUCT__RATING_TYPE_ENUM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 62;
 
 	/**
 	 * The feature id for the '<em><b>Release Date</b></em>' attribute.
@@ -809,7 +836,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__RELEASE_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 60;
+	int PRODUCT__RELEASE_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 63;
 
 	/**
 	 * The feature id for the '<em><b>Require Amount</b></em>' attribute.
@@ -818,7 +845,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__REQUIRE_AMOUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 61;
+	int PRODUCT__REQUIRE_AMOUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 64;
 
 	/**
 	 * The feature id for the '<em><b>Require Inventory</b></em>' attribute.
@@ -827,7 +854,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__REQUIRE_INVENTORY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 62;
+	int PRODUCT__REQUIRE_INVENTORY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 65;
 
 	/**
 	 * The feature id for the '<em><b>Requirement Method Enum Id</b></em>' reference.
@@ -836,7 +863,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__REQUIREMENT_METHOD_ENUM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 63;
+	int PRODUCT__REQUIREMENT_METHOD_ENUM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 66;
 
 	/**
 	 * The feature id for the '<em><b>Reserv2nd PP Perc</b></em>' attribute.
@@ -845,7 +872,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__RESERV2ND_PP_PERC = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 64;
+	int PRODUCT__RESERV2ND_PP_PERC = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 67;
 
 	/**
 	 * The feature id for the '<em><b>Reserv Max Persons</b></em>' attribute.
@@ -854,7 +881,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__RESERV_MAX_PERSONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 65;
+	int PRODUCT__RESERV_MAX_PERSONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 68;
 
 	/**
 	 * The feature id for the '<em><b>Reserv Nth PP Perc</b></em>' attribute.
@@ -863,7 +890,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__RESERV_NTH_PP_PERC = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 66;
+	int PRODUCT__RESERV_NTH_PP_PERC = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 69;
 
 	/**
 	 * The feature id for the '<em><b>Returnable</b></em>' attribute.
@@ -872,7 +899,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__RETURNABLE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 67;
+	int PRODUCT__RETURNABLE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 70;
 
 	/**
 	 * The feature id for the '<em><b>Sales Disc When Not Avail</b></em>' attribute.
@@ -881,7 +908,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__SALES_DISC_WHEN_NOT_AVAIL = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 68;
+	int PRODUCT__SALES_DISC_WHEN_NOT_AVAIL = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 71;
 
 	/**
 	 * The feature id for the '<em><b>Sales Discontinuation Date</b></em>' attribute.
@@ -890,7 +917,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__SALES_DISCONTINUATION_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 69;
+	int PRODUCT__SALES_DISCONTINUATION_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 72;
 
 	/**
 	 * The feature id for the '<em><b>Shipping Depth</b></em>' attribute.
@@ -899,7 +926,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__SHIPPING_DEPTH = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 70;
+	int PRODUCT__SHIPPING_DEPTH = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 73;
 
 	/**
 	 * The feature id for the '<em><b>Shipping Height</b></em>' attribute.
@@ -908,7 +935,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__SHIPPING_HEIGHT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 71;
+	int PRODUCT__SHIPPING_HEIGHT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 74;
 
 	/**
 	 * The feature id for the '<em><b>Shipping Weight</b></em>' attribute.
@@ -917,7 +944,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__SHIPPING_WEIGHT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 72;
+	int PRODUCT__SHIPPING_WEIGHT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 75;
 
 	/**
 	 * The feature id for the '<em><b>Shipping Width</b></em>' attribute.
@@ -926,7 +953,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__SHIPPING_WIDTH = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 73;
+	int PRODUCT__SHIPPING_WIDTH = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 76;
 
 	/**
 	 * The feature id for the '<em><b>Small Image Url</b></em>' attribute.
@@ -935,7 +962,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__SMALL_IMAGE_URL = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 74;
+	int PRODUCT__SMALL_IMAGE_URL = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 77;
 
 	/**
 	 * The feature id for the '<em><b>Support Discontinuation Date</b></em>' attribute.
@@ -944,7 +971,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__SUPPORT_DISCONTINUATION_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 75;
+	int PRODUCT__SUPPORT_DISCONTINUATION_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 78;
 
 	/**
 	 * The feature id for the '<em><b>Taxable</b></em>' attribute.
@@ -953,7 +980,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__TAXABLE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 76;
+	int PRODUCT__TAXABLE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 79;
 
 	/**
 	 * The feature id for the '<em><b>Virtual Variant Method Enum</b></em>' reference.
@@ -962,7 +989,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__VIRTUAL_VARIANT_METHOD_ENUM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 77;
+	int PRODUCT__VIRTUAL_VARIANT_METHOD_ENUM = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 80;
 
 	/**
 	 * The feature id for the '<em><b>Weight Uom Id</b></em>' reference.
@@ -971,7 +998,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__WEIGHT_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 78;
+	int PRODUCT__WEIGHT_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 81;
 
 	/**
 	 * The feature id for the '<em><b>Width Uom Id</b></em>' reference.
@@ -980,7 +1007,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT__WIDTH_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 79;
+	int PRODUCT__WIDTH_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 82;
 
 	/**
 	 * The number of structural features of the '<em>Product</em>' class.
@@ -989,7 +1016,7 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 80;
+	int PRODUCT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 83;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.product.impl.ProductAssocImpl <em>Assoc</em>}' class.
@@ -3914,6 +3941,17 @@ public interface ProductPackage extends EPackage {
 	EReference getProduct_ProductAttributes();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.product.Product#getProductCostComponentCalcs <em>Product Cost Component Calcs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Product Cost Component Calcs</em>'.
+	 * @see org.abchip.mimo.biz.model.product.product.Product#getProductCostComponentCalcs()
+	 * @see #getProduct()
+	 * @generated
+	 */
+	EReference getProduct_ProductCostComponentCalcs();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.product.Product#getProductDepth <em>Product Depth</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3945,6 +3983,17 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getProduct_ProductFacilities();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.product.Product#getProductFeatureAppls <em>Product Feature Appls</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Product Feature Appls</em>'.
+	 * @see org.abchip.mimo.biz.model.product.product.Product#getProductFeatureAppls()
+	 * @see #getProduct()
+	 * @generated
+	 */
+	EReference getProduct_ProductFeatureAppls();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.product.Product#getProductGeos <em>Product Geos</em>}'.
@@ -4011,6 +4060,17 @@ public interface ProductPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getProduct_ProductRating();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.product.Product#getProductSubscriptionResources <em>Product Subscription Resources</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Product Subscription Resources</em>'.
+	 * @see org.abchip.mimo.biz.model.product.product.Product#getProductSubscriptionResources()
+	 * @see #getProduct()
+	 * @generated
+	 */
+	EReference getProduct_ProductSubscriptionResources();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.product.Product#getProductTypeId <em>Product Type Id</em>}'.
@@ -6383,6 +6443,14 @@ public interface ProductPackage extends EPackage {
 		EReference PRODUCT__PRODUCT_ATTRIBUTES = eINSTANCE.getProduct_ProductAttributes();
 
 		/**
+		 * The meta object literal for the '<em><b>Product Cost Component Calcs</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT__PRODUCT_COST_COMPONENT_CALCS = eINSTANCE.getProduct_ProductCostComponentCalcs();
+
+		/**
 		 * The meta object literal for the '<em><b>Product Depth</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -6405,6 +6473,14 @@ public interface ProductPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PRODUCT__PRODUCT_FACILITIES = eINSTANCE.getProduct_ProductFacilities();
+
+		/**
+		 * The meta object literal for the '<em><b>Product Feature Appls</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT__PRODUCT_FEATURE_APPLS = eINSTANCE.getProduct_ProductFeatureAppls();
 
 		/**
 		 * The meta object literal for the '<em><b>Product Geos</b></em>' reference list feature.
@@ -6453,6 +6529,14 @@ public interface ProductPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PRODUCT__PRODUCT_RATING = eINSTANCE.getProduct_ProductRating();
+
+		/**
+		 * The meta object literal for the '<em><b>Product Subscription Resources</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT__PRODUCT_SUBSCRIPTION_RESOURCES = eINSTANCE.getProduct_ProductSubscriptionResources();
 
 		/**
 		 * The meta object literal for the '<em><b>Product Type Id</b></em>' reference feature.

@@ -17,9 +17,12 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.common.uom.UomType;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEventProduct;
 import org.abchip.mimo.biz.model.product.category.ProductCategory;
+import org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc;
 import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.product.facility.ProductFacility;
+import org.abchip.mimo.biz.model.product.feature.ProductFeatureAppl;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItemType;
+import org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentBoxType;
 import org.abchip.mimo.entity.EntityInfo;
@@ -75,15 +78,18 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getPriceDetailText <em>Price Detail Text</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getPrimaryProductCategoryId <em>Primary Product Category Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductAttributes <em>Product Attributes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductCostComponentCalcs <em>Product Cost Component Calcs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductDepth <em>Product Depth</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductDiameter <em>Product Diameter</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductFacilities <em>Product Facilities</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductFeatureAppls <em>Product Feature Appls</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductGeos <em>Product Geos</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductHeight <em>Product Height</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductMaints <em>Product Maints</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductMeters <em>Product Meters</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductName <em>Product Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductRating <em>Product Rating</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductSubscriptionResources <em>Product Subscription Resources</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductTypeId <em>Product Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductWeight <em>Product Weight</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.Product#getProductWidth <em>Product Width</em>}</li>
@@ -1099,6 +1105,19 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	List<ProductFacility> getProductFacilities();
 
 	/**
+	 * Returns the value of the '<em><b>Product Feature Appls</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.feature.ProductFeatureAppl}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Feature Appls</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductFeatureAppls()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ProductFeatureAppl> getProductFeatureAppls();
+
+	/**
 	 * Returns the value of the '<em><b>Product Geos</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.product.ProductGeo}.
 	 * <!-- begin-user-doc -->
@@ -1223,6 +1242,19 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @generated
 	 */
 	void setProductRating(BigDecimal value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Subscription Resources</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Subscription Resources</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductSubscriptionResources()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ProductSubscriptionResource> getProductSubscriptionResources();
 
 	/**
 	 * Returns the value of the '<em><b>Product Weight</b></em>' attribute.
@@ -1928,6 +1960,19 @@ public interface Product extends EntityTyped<ProductType>, EntityInfo {
 	 * @generated
 	 */
 	List<ProductAttribute> getProductAttributes();
+
+	/**
+	 * Returns the value of the '<em><b>Product Cost Component Calcs</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Cost Component Calcs</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.product.ProductPackage#getProduct_ProductCostComponentCalcs()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ProductCostComponentCalc> getProductCostComponentCalcs();
 
 	/**
 	 * Returns the value of the '<em><b>Facility Id</b></em>' reference.

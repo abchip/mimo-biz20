@@ -1140,13 +1140,22 @@ public interface LedgerPackage extends EPackage {
 	int GL_ACCOUNT__EXTERNAL_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
+	 * The feature id for the '<em><b>Gl Account Category Members</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GL_ACCOUNT__GL_ACCOUNT_CATEGORY_MEMBERS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+
+	/**
 	 * The feature id for the '<em><b>Gl Account Class Id</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__GL_ACCOUNT_CLASS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int GL_ACCOUNT__GL_ACCOUNT_CLASS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Group Members</b></em>' reference list.
@@ -1155,7 +1164,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__GL_ACCOUNT_GROUP_MEMBERS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
+	int GL_ACCOUNT__GL_ACCOUNT_GROUP_MEMBERS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Organizations</b></em>' reference list.
@@ -1164,7 +1173,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__GL_ACCOUNT_ORGANIZATIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
+	int GL_ACCOUNT__GL_ACCOUNT_ORGANIZATIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Gl Account Type Id</b></em>' reference.
@@ -1173,7 +1182,16 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__GL_ACCOUNT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
+	int GL_ACCOUNT__GL_ACCOUNT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
+
+	/**
+	 * The feature id for the '<em><b>Gl Budget Xrefs</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int GL_ACCOUNT__GL_BUDGET_XREFS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Gl Resource Type Id</b></em>' reference.
@@ -1182,7 +1200,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__GL_RESOURCE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
+	int GL_ACCOUNT__GL_RESOURCE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Gl Xbrl Class Id</b></em>' reference.
@@ -1191,7 +1209,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__GL_XBRL_CLASS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
+	int GL_ACCOUNT__GL_XBRL_CLASS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Parent Gl Account Id</b></em>' reference.
@@ -1200,7 +1218,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__PARENT_GL_ACCOUNT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
+	int GL_ACCOUNT__PARENT_GL_ACCOUNT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Product Id</b></em>' attribute.
@@ -1209,7 +1227,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
+	int GL_ACCOUNT__PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The number of structural features of the '<em>Gl Account</em>' class.
@@ -1218,7 +1236,7 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int GL_ACCOUNT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
+	int GL_ACCOUNT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.ledger.impl.GlAccountCategoryImpl <em>Gl Account Category</em>}' class.
@@ -4791,6 +4809,17 @@ public interface LedgerPackage extends EPackage {
 	EAttribute getGlAccount_ExternalId();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlAccountCategoryMembers <em>Gl Account Category Members</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Gl Account Category Members</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlAccountCategoryMembers()
+	 * @see #getGlAccount()
+	 * @generated
+	 */
+	EReference getGlAccount_GlAccountCategoryMembers();
+
+	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlAccountClassId <em>Gl Account Class Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4833,6 +4862,17 @@ public interface LedgerPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getGlAccount_GlAccountTypeId();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlBudgetXrefs <em>Gl Budget Xrefs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Gl Budget Xrefs</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlBudgetXrefs()
+	 * @see #getGlAccount()
+	 * @generated
+	 */
+	EReference getGlAccount_GlBudgetXrefs();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.ledger.GlAccount#getGlResourceTypeId <em>Gl Resource Type Id</em>}'.
@@ -7324,6 +7364,14 @@ public interface LedgerPackage extends EPackage {
 		EAttribute GL_ACCOUNT__EXTERNAL_ID = eINSTANCE.getGlAccount_ExternalId();
 
 		/**
+		 * The meta object literal for the '<em><b>Gl Account Category Members</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GL_ACCOUNT__GL_ACCOUNT_CATEGORY_MEMBERS = eINSTANCE.getGlAccount_GlAccountCategoryMembers();
+
+		/**
 		 * The meta object literal for the '<em><b>Gl Account Class Id</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -7354,6 +7402,14 @@ public interface LedgerPackage extends EPackage {
 		 * @generated
 		 */
 		EReference GL_ACCOUNT__GL_ACCOUNT_TYPE_ID = eINSTANCE.getGlAccount_GlAccountTypeId();
+
+		/**
+		 * The meta object literal for the '<em><b>Gl Budget Xrefs</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference GL_ACCOUNT__GL_BUDGET_XREFS = eINSTANCE.getGlAccount_GlBudgetXrefs();
 
 		/**
 		 * The meta object literal for the '<em><b>Gl Resource Type Id</b></em>' reference feature.

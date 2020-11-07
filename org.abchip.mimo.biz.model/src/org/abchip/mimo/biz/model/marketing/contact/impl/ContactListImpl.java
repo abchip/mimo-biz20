@@ -8,8 +8,10 @@
 package org.abchip.mimo.biz.model.marketing.contact.impl;
 
 import java.util.Date;
+import java.util.List;
 import org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaign;
 import org.abchip.mimo.biz.model.marketing.contact.ContactList;
+import org.abchip.mimo.biz.model.marketing.contact.ContactListParty;
 import org.abchip.mimo.biz.model.marketing.contact.ContactListType;
 import org.abchip.mimo.biz.model.marketing.contact.ContactPackage;
 import org.abchip.mimo.biz.model.party.contact.ContactMechType;
@@ -35,6 +37,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getContactListId <em>Contact List Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getContactListName <em>Contact List Name</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getContactListParties <em>Contact List Parties</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getContactListTypeId <em>Contact List Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getContactMechTypeId <em>Contact Mech Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListImpl#getCreatedByUserLogin <em>Created By User Login</em>}</li>
@@ -222,6 +225,17 @@ public class ContactListImpl extends EntityIdentifiableImpl implements ContactLi
 	@Override
 	public void setContactListName(String newContactListName) {
 		eSet(ContactPackage.Literals.CONTACT_LIST__CONTACT_LIST_NAME, newContactListName);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ContactListParty> getContactListParties() {
+		return (List<ContactListParty>)eGet(ContactPackage.Literals.CONTACT_LIST__CONTACT_LIST_PARTIES, true);
 	}
 
 	/**

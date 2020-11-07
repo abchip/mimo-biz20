@@ -10,6 +10,8 @@ package org.abchip.mimo.biz.model.webapp.website;
 import java.util.List;
 import org.abchip.mimo.biz.model.common.theme.VisualThemeSet;
 import org.abchip.mimo.biz.model.content.website.WebAnalyticsConfig;
+import org.abchip.mimo.biz.model.content.website.WebSitePathAlias;
+import org.abchip.mimo.biz.model.marketing.contact.WebSiteContactList;
 import org.abchip.mimo.biz.model.product.store.ProductStore;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
@@ -40,6 +42,8 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getStandardContentPrefix <em>Standard Content Prefix</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getVisualThemeSetId <em>Visual Theme Set Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getWebAnalyticsConfigs <em>Web Analytics Configs</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getWebSiteContactLists <em>Web Site Contact Lists</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getWebSitePathAliass <em>Web Site Path Aliass</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getWebappPath <em>Webapp Path</em>}</li>
  * </ul>
  *
@@ -480,6 +484,32 @@ public interface WebSite extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	List<WebAnalyticsConfig> getWebAnalyticsConfigs();
+
+	/**
+	 * Returns the value of the '<em><b>Web Site Contact Lists</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.marketing.contact.WebSiteContactList}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Web Site Contact Lists</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebSite_WebSiteContactLists()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<WebSiteContactList> getWebSiteContactLists();
+
+	/**
+	 * Returns the value of the '<em><b>Web Site Path Aliass</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.content.website.WebSitePathAlias}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Web Site Path Aliass</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.webapp.website.WebsitePackage#getWebSite_WebSitePathAliass()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<WebSitePathAlias> getWebSitePathAliass();
 
 	/**
 	 * Returns the value of the '<em><b>Webapp Path</b></em>' attribute.

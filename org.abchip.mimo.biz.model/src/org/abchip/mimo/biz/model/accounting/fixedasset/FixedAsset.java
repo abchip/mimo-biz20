@@ -43,10 +43,12 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getDepreciation <em>Depreciation</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getExpectedEndOfLife <em>Expected End Of Life</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetAttributes <em>Fixed Asset Attributes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetGeoPoints <em>Fixed Asset Geo Points</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetIdents <em>Fixed Asset Idents</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetMaints <em>Fixed Asset Maints</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetName <em>Fixed Asset Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetRegistrations <em>Fixed Asset Registrations</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetStdCosts <em>Fixed Asset Std Costs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetTypeId <em>Fixed Asset Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getInstanceOfProductId <em>Instance Of Product Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getLocatedAtFacilityId <em>Located At Facility Id</em>}</li>
@@ -344,6 +346,19 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	List<FixedAssetAttribute> getFixedAssetAttributes();
 
 	/**
+	 * Returns the value of the '<em><b>Fixed Asset Geo Points</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetGeoPoint}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Fixed Asset Geo Points</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_FixedAssetGeoPoints()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<FixedAssetGeoPoint> getFixedAssetGeoPoints();
+
+	/**
 	 * Returns the value of the '<em><b>Fixed Asset Idents</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetIdent}.
 	 * <!-- begin-user-doc -->
@@ -416,6 +431,19 @@ public interface FixedAsset extends EntityTyped<FixedAssetType>, EntityInfo {
 	 * @generated
 	 */
 	List<FixedAssetRegistration> getFixedAssetRegistrations();
+
+	/**
+	 * Returns the value of the '<em><b>Fixed Asset Std Costs</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAssetStdCost}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Fixed Asset Std Costs</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedassetPackage#getFixedAsset_FixedAssetStdCosts()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<FixedAssetStdCost> getFixedAssetStdCosts();
 
 	/**
 	 * Returns the value of the '<em><b>Instance Of Product Id</b></em>' reference.

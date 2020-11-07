@@ -727,8 +727,18 @@ public class UomPackageImpl extends EPackageImpl implements UomPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getUom_DatedMainUomConversionDateds() {
+		return (EReference)uomEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getUom_Description() {
-		return (EAttribute)uomEClass.getEStructuralFeatures().get(2);
+		return (EAttribute)uomEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -738,7 +748,7 @@ public class UomPackageImpl extends EPackageImpl implements UomPackage {
 	 */
 	@Override
 	public EReference getUom_MainUomConversions() {
-		return (EReference)uomEClass.getEStructuralFeatures().get(3);
+		return (EReference)uomEClass.getEStructuralFeatures().get(4);
 	}
 
 	/**
@@ -748,7 +758,7 @@ public class UomPackageImpl extends EPackageImpl implements UomPackage {
 	 */
 	@Override
 	public EAttribute getUom_NumericCode() {
-		return (EAttribute)uomEClass.getEStructuralFeatures().get(4);
+		return (EAttribute)uomEClass.getEStructuralFeatures().get(5);
 	}
 
 	/**
@@ -758,7 +768,7 @@ public class UomPackageImpl extends EPackageImpl implements UomPackage {
 	 */
 	@Override
 	public EReference getUom_UomTypeId() {
-		return (EReference)uomEClass.getEStructuralFeatures().get(5);
+		return (EReference)uomEClass.getEStructuralFeatures().get(6);
 	}
 
 	/**
@@ -1043,6 +1053,7 @@ public class UomPackageImpl extends EPackageImpl implements UomPackage {
 		uomEClass = createEClass(UOM);
 		createEAttribute(uomEClass, UOM__UOM_ID);
 		createEAttribute(uomEClass, UOM__ABBREVIATION);
+		createEReference(uomEClass, UOM__DATED_MAIN_UOM_CONVERSION_DATEDS);
 		createEAttribute(uomEClass, UOM__DESCRIPTION);
 		createEReference(uomEClass, UOM__MAIN_UOM_CONVERSIONS);
 		createEAttribute(uomEClass, UOM__NUMERIC_CODE);
@@ -1134,6 +1145,7 @@ public class UomPackageImpl extends EPackageImpl implements UomPackage {
 		initEClass(uomEClass, Uom.class, "Uom", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getUom_UomId(), ecorePackage.getEString(), "uomId", null, 1, 1, Uom.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getUom_Abbreviation(), ecorePackage.getEString(), "abbreviation", null, 0, 1, Uom.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getUom_DatedMainUomConversionDateds(), this.getUomConversionDated(), null, "datedMainUomConversionDateds", null, 0, -1, Uom.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getUom_Description(), ecorePackage.getEString(), "description", null, 0, 1, Uom.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getUom_MainUomConversions(), this.getUomConversion(), null, "mainUomConversions", null, 0, -1, Uom.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getUom_NumericCode(), ecorePackage.getELong(), "numericCode", null, 0, 1, Uom.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -1319,6 +1331,12 @@ public class UomPackageImpl extends EPackageImpl implements UomPackage {
 	 */
 	protected void createMimoentslotAnnotations() {
 		String source = "mimo-ent-slot";
+		addAnnotation
+		  (getUom_DatedMainUomConversionDateds(),
+		   source,
+		   new String[] {
+			   "type", "fromDate"
+		   });
 		addAnnotation
 		  (getUomConversion_UomId(),
 		   source,

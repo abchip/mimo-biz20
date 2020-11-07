@@ -117,13 +117,22 @@ public interface FacilityPackage extends EPackage {
 	int CONTAINER__CONTAINER_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
+	 * The feature id for the '<em><b>Container Geo Points</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTAINER__CONTAINER_GEO_POINTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+
+	/**
 	 * The feature id for the '<em><b>Container Type Id</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINER__CONTAINER_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int CONTAINER__CONTAINER_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -132,7 +141,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINER__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int CONTAINER__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Facility Id</b></em>' reference.
@@ -141,7 +150,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINER__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int CONTAINER__FACILITY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The number of structural features of the '<em>Container</em>' class.
@@ -150,7 +159,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTAINER_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int CONTAINER_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerGeoPointImpl <em>Container Geo Point</em>}' class.
@@ -435,13 +444,40 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY__FACILITY_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
+	 * The feature id for the '<em><b>Facility Contact Mechs</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACILITY__FACILITY_CONTACT_MECHS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
+
+	/**
+	 * The feature id for the '<em><b>Facility Contents</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACILITY__FACILITY_CONTENTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
+
+	/**
+	 * The feature id for the '<em><b>Facility Group Members</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACILITY__FACILITY_GROUP_MEMBERS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
+
+	/**
 	 * The feature id for the '<em><b>Facility Level</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__FACILITY_LEVEL = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
+	int FACILITY__FACILITY_LEVEL = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Facility Locations</b></em>' reference list.
@@ -450,7 +486,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__FACILITY_LOCATIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
+	int FACILITY__FACILITY_LOCATIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Facility Name</b></em>' attribute.
@@ -459,7 +495,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__FACILITY_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
+	int FACILITY__FACILITY_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Facility Size</b></em>' attribute.
@@ -468,7 +504,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__FACILITY_SIZE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
+	int FACILITY__FACILITY_SIZE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Facility Size Uom Id</b></em>' reference.
@@ -477,7 +513,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__FACILITY_SIZE_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
+	int FACILITY__FACILITY_SIZE_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Facility Type Id</b></em>' reference.
@@ -486,7 +522,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__FACILITY_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
+	int FACILITY__FACILITY_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Geo Point Id</b></em>' reference.
@@ -495,7 +531,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__GEO_POINT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
+	int FACILITY__GEO_POINT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Old Square Footage</b></em>' attribute.
@@ -504,7 +540,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__OLD_SQUARE_FOOTAGE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
+	int FACILITY__OLD_SQUARE_FOOTAGE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Opened Date</b></em>' attribute.
@@ -513,7 +549,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__OPENED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
+	int FACILITY__OPENED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Owner Party Id</b></em>' reference.
@@ -522,7 +558,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__OWNER_PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
+	int FACILITY__OWNER_PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Parent Facility Id</b></em>' reference.
@@ -531,7 +567,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__PARENT_FACILITY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
+	int FACILITY__PARENT_FACILITY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Primary Facility Group Id</b></em>' reference.
@@ -540,7 +576,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__PRIMARY_FACILITY_GROUP_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
+	int FACILITY__PRIMARY_FACILITY_GROUP_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Id</b></em>' reference.
@@ -549,7 +585,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY__PRODUCT_STORE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
+	int FACILITY__PRODUCT_STORE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
 
 	/**
 	 * The number of structural features of the '<em>Facility</em>' class.
@@ -558,7 +594,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
+	int FACILITY_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityAssocTypeImpl <em>Assoc Type</em>}' class.
@@ -1353,13 +1389,22 @@ public interface FacilityPackage extends EPackage {
 	int FACILITY_GROUP__FACILITY_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
+	 * The feature id for the '<em><b>Current Facility Group Rollups</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FACILITY_GROUP__CURRENT_FACILITY_GROUP_ROLLUPS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+
+	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_GROUP__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int FACILITY_GROUP__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Facility Group Name</b></em>' attribute.
@@ -1368,7 +1413,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_GROUP__FACILITY_GROUP_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int FACILITY_GROUP__FACILITY_GROUP_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Facility Group Type Id</b></em>' reference.
@@ -1377,7 +1422,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_GROUP__FACILITY_GROUP_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int FACILITY_GROUP__FACILITY_GROUP_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Primary Parent Group Id</b></em>' reference.
@@ -1386,7 +1431,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_GROUP__PRIMARY_PARENT_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int FACILITY_GROUP__PRIMARY_PARENT_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Group</em>' class.
@@ -1395,7 +1440,7 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FACILITY_GROUP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int FACILITY_GROUP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupMemberImpl <em>Group Member</em>}' class.
@@ -2656,6 +2701,17 @@ public interface FacilityPackage extends EPackage {
 	EAttribute getContainer_ContainerId();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.facility.Container#getContainerGeoPoints <em>Container Geo Points</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Container Geo Points</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.Container#getContainerGeoPoints()
+	 * @see #getContainer()
+	 * @generated
+	 */
+	EReference getContainer_ContainerGeoPoints();
+
+	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.facility.Container#getContainerTypeId <em>Container Type Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2871,6 +2927,39 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getFacility_FacilityAttributes();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityContactMechs <em>Facility Contact Mechs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Facility Contact Mechs</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getFacilityContactMechs()
+	 * @see #getFacility()
+	 * @generated
+	 */
+	EReference getFacility_FacilityContactMechs();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityContents <em>Facility Contents</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Facility Contents</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getFacilityContents()
+	 * @see #getFacility()
+	 * @generated
+	 */
+	EReference getFacility_FacilityContents();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityGroupMembers <em>Facility Group Members</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Facility Group Members</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.Facility#getFacilityGroupMembers()
+	 * @see #getFacility()
+	 * @generated
+	 */
+	EReference getFacility_FacilityGroupMembers();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityLevel <em>Facility Level</em>}'.
@@ -3478,6 +3567,17 @@ public interface FacilityPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getFacilityGroup_FacilityGroupId();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getCurrentFacilityGroupRollups <em>Current Facility Group Rollups</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Current Facility Group Rollups</em>'.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityGroup#getCurrentFacilityGroupRollups()
+	 * @see #getFacilityGroup()
+	 * @generated
+	 */
+	EReference getFacilityGroup_CurrentFacilityGroupRollups();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.facility.FacilityGroup#getDescription <em>Description</em>}'.
@@ -4377,6 +4477,14 @@ public interface FacilityPackage extends EPackage {
 		EAttribute CONTAINER__CONTAINER_ID = eINSTANCE.getContainer_ContainerId();
 
 		/**
+		 * The meta object literal for the '<em><b>Container Geo Points</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONTAINER__CONTAINER_GEO_POINTS = eINSTANCE.getContainer_ContainerGeoPoints();
+
+		/**
 		 * The meta object literal for the '<em><b>Container Type Id</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -4541,6 +4649,30 @@ public interface FacilityPackage extends EPackage {
 		 * @generated
 		 */
 		EReference FACILITY__FACILITY_ATTRIBUTES = eINSTANCE.getFacility_FacilityAttributes();
+
+		/**
+		 * The meta object literal for the '<em><b>Facility Contact Mechs</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FACILITY__FACILITY_CONTACT_MECHS = eINSTANCE.getFacility_FacilityContactMechs();
+
+		/**
+		 * The meta object literal for the '<em><b>Facility Contents</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FACILITY__FACILITY_CONTENTS = eINSTANCE.getFacility_FacilityContents();
+
+		/**
+		 * The meta object literal for the '<em><b>Facility Group Members</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FACILITY__FACILITY_GROUP_MEMBERS = eINSTANCE.getFacility_FacilityGroupMembers();
 
 		/**
 		 * The meta object literal for the '<em><b>Facility Level</b></em>' attribute feature.
@@ -5007,6 +5139,14 @@ public interface FacilityPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute FACILITY_GROUP__FACILITY_GROUP_ID = eINSTANCE.getFacilityGroup_FacilityGroupId();
+
+		/**
+		 * The meta object literal for the '<em><b>Current Facility Group Rollups</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FACILITY_GROUP__CURRENT_FACILITY_GROUP_ROLLUPS = eINSTANCE.getFacilityGroup_CurrentFacilityGroupRollups();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.

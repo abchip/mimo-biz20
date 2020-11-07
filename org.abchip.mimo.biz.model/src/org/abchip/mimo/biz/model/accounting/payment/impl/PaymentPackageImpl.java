@@ -4501,8 +4501,18 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getPaymentGroup_PaymentGroupMembers() {
+		return (EReference)paymentGroupEClass.getEStructuralFeatures().get(1);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getPaymentGroup_PaymentGroupName() {
-		return (EAttribute)paymentGroupEClass.getEStructuralFeatures().get(1);
+		return (EAttribute)paymentGroupEClass.getEStructuralFeatures().get(2);
 	}
 
 	/**
@@ -4512,7 +4522,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 	 */
 	@Override
 	public EReference getPaymentGroup_PaymentGroupTypeId() {
-		return (EReference)paymentGroupEClass.getEStructuralFeatures().get(2);
+		return (EReference)paymentGroupEClass.getEStructuralFeatures().get(3);
 	}
 
 	/**
@@ -5468,6 +5478,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 
 		paymentGroupEClass = createEClass(PAYMENT_GROUP);
 		createEAttribute(paymentGroupEClass, PAYMENT_GROUP__PAYMENT_GROUP_ID);
+		createEReference(paymentGroupEClass, PAYMENT_GROUP__PAYMENT_GROUP_MEMBERS);
 		createEAttribute(paymentGroupEClass, PAYMENT_GROUP__PAYMENT_GROUP_NAME);
 		createEReference(paymentGroupEClass, PAYMENT_GROUP__PAYMENT_GROUP_TYPE_ID);
 
@@ -6148,6 +6159,7 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 
 		initEClass(paymentGroupEClass, PaymentGroup.class, "PaymentGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getPaymentGroup_PaymentGroupId(), ecorePackage.getEString(), "paymentGroupId", null, 1, 1, PaymentGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getPaymentGroup_PaymentGroupMembers(), this.getPaymentGroupMember(), null, "paymentGroupMembers", null, 0, -1, PaymentGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getPaymentGroup_PaymentGroupName(), ecorePackage.getEString(), "paymentGroupName", null, 0, 1, PaymentGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getPaymentGroup_PaymentGroupTypeId(), this.getPaymentGroupType(), null, "paymentGroupTypeId", null, 0, 1, PaymentGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getPaymentGroup_PaymentGroupTypeId().getEKeys().add(this.getPaymentGroupType_PaymentGroupTypeId());
@@ -8842,6 +8854,12 @@ public class PaymentPackageImpl extends EPackageImpl implements PaymentPackage {
 		   source,
 		   new String[] {
 			   "key", "true"
+		   });
+		addAnnotation
+		  (getPaymentGroup_PaymentGroupMembers(),
+		   source,
+		   new String[] {
+			   "type", "fromDate"
 		   });
 		addAnnotation
 		  (getPaymentGroupMember_PaymentGroupId(),

@@ -7,6 +7,7 @@
  */
 package org.abchip.mimo.biz.model.entity.test;
 
+import java.util.List;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
 
@@ -22,6 +23,7 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.TestingNode#getTestingNodeId <em>Testing Node Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.TestingNode#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.TestingNode#getPrimaryParentNodeId <em>Primary Parent Node Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.test.TestingNode#getTestingNodeMembers <em>Testing Node Members</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTestingNode()
@@ -80,6 +82,19 @@ public interface TestingNode extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setPrimaryParentNodeId(TestingNode value);
+
+	/**
+	 * Returns the value of the '<em><b>Testing Node Members</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.entity.test.TestingNodeMember}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Testing Node Members</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.entity.test.TestPackage#getTestingNode_TestingNodeMembers()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<TestingNodeMember> getTestingNodeMembers();
 
 	/**
 	 * Returns the value of the '<em><b>Testing Node Id</b></em>' attribute.

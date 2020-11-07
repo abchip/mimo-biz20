@@ -16,6 +16,7 @@ import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.content.data.CharacterSet;
 import org.abchip.mimo.biz.model.content.data.DataResource;
 import org.abchip.mimo.biz.model.content.data.MimeType;
+import org.abchip.mimo.biz.model.party.communication.CommEventContentAssoc;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityTyped;
@@ -47,6 +48,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getDataSourceId <em>Data Source Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getDecoratorContentId <em>Decorator Content Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getDescription <em>Description</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getFromCommEventContentAssocs <em>From Comm Event Content Assocs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getInstanceOfContentId <em>Instance Of Content Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.Content#getLastModifiedDate <em>Last Modified Date</em>}</li>
@@ -482,6 +484,19 @@ public interface Content extends EntityTyped<ContentType>, EntityInfo {
 	 * @generated
 	 */
 	void setDescription(String value);
+
+	/**
+	 * Returns the value of the '<em><b>From Comm Event Content Assocs</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.communication.CommEventContentAssoc}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>From Comm Event Content Assocs</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.content.content.ContentPackage#getContent_FromCommEventContentAssocs()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<CommEventContentAssoc> getFromCommEventContentAssocs();
 
 	/**
 	 * Returns the value of the '<em><b>Instance Of Content Id</b></em>' reference.

@@ -16,6 +16,7 @@ import org.abchip.mimo.biz.model.order.request.CustRequest;
 import org.abchip.mimo.biz.model.order.request.CustRequestAttribute;
 import org.abchip.mimo.biz.model.order.request.CustRequestCategory;
 import org.abchip.mimo.biz.model.order.request.CustRequestCommEvent;
+import org.abchip.mimo.biz.model.order.request.CustRequestContent;
 import org.abchip.mimo.biz.model.order.request.CustRequestItem;
 import org.abchip.mimo.biz.model.order.request.CustRequestNote;
 import org.abchip.mimo.biz.model.order.request.CustRequestType;
@@ -49,6 +50,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCustRequestAttributes <em>Cust Request Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCustRequestCategoryId <em>Cust Request Category Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCustRequestCommEvents <em>Cust Request Comm Events</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCustRequestContents <em>Cust Request Contents</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCustRequestDate <em>Cust Request Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCustRequestItems <em>Cust Request Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.impl.CustRequestImpl#getCustRequestName <em>Cust Request Name</em>}</li>
@@ -304,6 +306,17 @@ public class CustRequestImpl extends EntityTypedImpl<CustRequestType> implements
 	@Override
 	public List<CustRequestCommEvent> getCustRequestCommEvents() {
 		return (List<CustRequestCommEvent>)eGet(RequestPackage.Literals.CUST_REQUEST__CUST_REQUEST_COMM_EVENTS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<CustRequestContent> getCustRequestContents() {
+		return (List<CustRequestContent>)eGet(RequestPackage.Literals.CUST_REQUEST__CUST_REQUEST_CONTENTS, true);
 	}
 
 	/**

@@ -11,6 +11,7 @@ import java.util.Date;
 import java.util.List;
 import org.abchip.mimo.biz.model.security.securitygroup.ProtectedView;
 import org.abchip.mimo.biz.model.security.securitygroup.SecurityGroup;
+import org.abchip.mimo.biz.model.security.securitygroup.SecurityGroupPermission;
 import org.abchip.mimo.biz.model.security.securitygroup.SecuritygroupPackage;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
@@ -33,6 +34,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.SecurityGroupImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.SecurityGroupImpl#getGroupName <em>Group Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.SecurityGroupImpl#getProtectedViews <em>Protected Views</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.securitygroup.impl.SecurityGroupImpl#getSecurityGroupPermissions <em>Security Group Permissions</em>}</li>
  * </ul>
  *
  * @generated
@@ -218,6 +220,17 @@ public class SecurityGroupImpl extends EntityIdentifiableImpl implements Securit
 	@Override
 	public List<ProtectedView> getProtectedViews() {
 		return (List<ProtectedView>)eGet(SecuritygroupPackage.Literals.SECURITY_GROUP__PROTECTED_VIEWS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<SecurityGroupPermission> getSecurityGroupPermissions() {
+		return (List<SecurityGroupPermission>)eGet(SecuritygroupPackage.Literals.SECURITY_GROUP__SECURITY_GROUP_PERMISSIONS, true);
 	}
 
 	/**

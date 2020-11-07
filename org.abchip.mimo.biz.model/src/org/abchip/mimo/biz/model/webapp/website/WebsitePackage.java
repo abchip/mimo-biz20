@@ -352,13 +352,31 @@ public interface WebsitePackage extends EPackage {
 	int WEB_SITE__WEB_ANALYTICS_CONFIGS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
+	 * The feature id for the '<em><b>Web Site Contact Lists</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WEB_SITE__WEB_SITE_CONTACT_LISTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
+
+	/**
+	 * The feature id for the '<em><b>Web Site Path Aliass</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WEB_SITE__WEB_SITE_PATH_ALIASS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
+
+	/**
 	 * The feature id for the '<em><b>Webapp Path</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE__WEBAPP_PATH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
+	int WEB_SITE__WEBAPP_PATH = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 23;
 
 	/**
 	 * The number of structural features of the '<em>Web Site</em>' class.
@@ -367,7 +385,7 @@ public interface WebsitePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WEB_SITE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
+	int WEB_SITE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 24;
 
 
 	/**
@@ -622,6 +640,28 @@ public interface WebsitePackage extends EPackage {
 	EReference getWebSite_WebAnalyticsConfigs();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getWebSiteContactLists <em>Web Site Contact Lists</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Web Site Contact Lists</em>'.
+	 * @see org.abchip.mimo.biz.model.webapp.website.WebSite#getWebSiteContactLists()
+	 * @see #getWebSite()
+	 * @generated
+	 */
+	EReference getWebSite_WebSiteContactLists();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getWebSitePathAliass <em>Web Site Path Aliass</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Web Site Path Aliass</em>'.
+	 * @see org.abchip.mimo.biz.model.webapp.website.WebSite#getWebSitePathAliass()
+	 * @see #getWebSite()
+	 * @generated
+	 */
+	EReference getWebSite_WebSitePathAliass();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.webapp.website.WebSite#getWebappPath <em>Webapp Path</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -841,6 +881,22 @@ public interface WebsitePackage extends EPackage {
 		 * @generated
 		 */
 		EReference WEB_SITE__WEB_ANALYTICS_CONFIGS = eINSTANCE.getWebSite_WebAnalyticsConfigs();
+
+		/**
+		 * The meta object literal for the '<em><b>Web Site Contact Lists</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference WEB_SITE__WEB_SITE_CONTACT_LISTS = eINSTANCE.getWebSite_WebSiteContactLists();
+
+		/**
+		 * The meta object literal for the '<em><b>Web Site Path Aliass</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference WEB_SITE__WEB_SITE_PATH_ALIASS = eINSTANCE.getWebSite_WebSitePathAliass();
 
 		/**
 		 * The meta object literal for the '<em><b>Webapp Path</b></em>' attribute feature.

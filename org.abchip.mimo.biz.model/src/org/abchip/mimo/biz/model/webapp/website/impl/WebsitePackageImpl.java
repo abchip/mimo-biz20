@@ -902,8 +902,28 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getWebSite_WebSiteContactLists() {
+		return (EReference)webSiteEClass.getEStructuralFeatures().get(17);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getWebSite_WebSitePathAliass() {
+		return (EReference)webSiteEClass.getEStructuralFeatures().get(18);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getWebSite_WebappPath() {
-		return (EAttribute)webSiteEClass.getEStructuralFeatures().get(17);
+		return (EAttribute)webSiteEClass.getEStructuralFeatures().get(19);
 	}
 
 	/**
@@ -959,6 +979,8 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 		createEAttribute(webSiteEClass, WEB_SITE__STANDARD_CONTENT_PREFIX);
 		createEReference(webSiteEClass, WEB_SITE__VISUAL_THEME_SET_ID);
 		createEReference(webSiteEClass, WEB_SITE__WEB_ANALYTICS_CONFIGS);
+		createEReference(webSiteEClass, WEB_SITE__WEB_SITE_CONTACT_LISTS);
+		createEReference(webSiteEClass, WEB_SITE__WEB_SITE_PATH_ALIASS);
 		createEAttribute(webSiteEClass, WEB_SITE__WEBAPP_PATH);
 	}
 
@@ -991,6 +1013,7 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 		StorePackage theStorePackage = (StorePackage)EPackage.Registry.INSTANCE.getEPackage(StorePackage.eNS_URI);
 		ThemePackage theThemePackage = (ThemePackage)EPackage.Registry.INSTANCE.getEPackage(ThemePackage.eNS_URI);
 		org.abchip.mimo.biz.model.content.website.WebsitePackage theWebsitePackage_1 = (org.abchip.mimo.biz.model.content.website.WebsitePackage)EPackage.Registry.INSTANCE.getEPackage(org.abchip.mimo.biz.model.content.website.WebsitePackage.eNS_URI);
+		ContactPackage theContactPackage = (ContactPackage)EPackage.Registry.INSTANCE.getEPackage(ContactPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -1031,6 +1054,8 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 		initEReference(getWebSite_VisualThemeSetId(), theThemePackage.getVisualThemeSet(), null, "visualThemeSetId", null, 0, 1, WebSite.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getWebSite_VisualThemeSetId().getEKeys().add(theThemePackage.getVisualThemeSet_VisualThemeSetId());
 		initEReference(getWebSite_WebAnalyticsConfigs(), theWebsitePackage_1.getWebAnalyticsConfig(), null, "webAnalyticsConfigs", null, 0, -1, WebSite.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEReference(getWebSite_WebSiteContactLists(), theContactPackage.getWebSiteContactList(), null, "webSiteContactLists", null, 0, -1, WebSite.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEReference(getWebSite_WebSitePathAliass(), theWebsitePackage_1.getWebSitePathAlias(), null, "webSitePathAliass", null, 0, -1, WebSite.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEAttribute(getWebSite_WebappPath(), ecorePackage.getEString(), "webappPath", null, 0, 1, WebSite.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
@@ -1162,6 +1187,18 @@ public class WebsitePackageImpl extends EPackageImpl implements WebsitePackage {
 		   source,
 		   new String[] {
 			   "help", "If Y then it is default WebSite"
+		   });
+		addAnnotation
+		  (getWebSite_WebSiteContactLists(),
+		   source,
+		   new String[] {
+			   "type", "fromDate"
+		   });
+		addAnnotation
+		  (getWebSite_WebSitePathAliass(),
+		   source,
+		   new String[] {
+			   "type", "fromDate"
 		   });
 		addAnnotation
 		  (getWebSite_WebappPath(),

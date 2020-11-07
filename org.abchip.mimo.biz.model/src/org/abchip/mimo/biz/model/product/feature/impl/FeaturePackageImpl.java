@@ -1281,6 +1281,16 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getProductFeatureGroup_ProductFeatureGroupAppls() {
+		return (EReference)productFeatureGroupEClass.getEStructuralFeatures().get(2);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getProductFeatureGroupAppl() {
 		return productFeatureGroupApplEClass;
 	}
@@ -1574,6 +1584,7 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 		productFeatureGroupEClass = createEClass(PRODUCT_FEATURE_GROUP);
 		createEAttribute(productFeatureGroupEClass, PRODUCT_FEATURE_GROUP__PRODUCT_FEATURE_GROUP_ID);
 		createEAttribute(productFeatureGroupEClass, PRODUCT_FEATURE_GROUP__DESCRIPTION);
+		createEReference(productFeatureGroupEClass, PRODUCT_FEATURE_GROUP__PRODUCT_FEATURE_GROUP_APPLS);
 
 		productFeatureGroupApplEClass = createEClass(PRODUCT_FEATURE_GROUP_APPL);
 		createEReference(productFeatureGroupApplEClass, PRODUCT_FEATURE_GROUP_APPL__PRODUCT_FEATURE_GROUP_ID);
@@ -1764,6 +1775,7 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 		initEClass(productFeatureGroupEClass, ProductFeatureGroup.class, "ProductFeatureGroup", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getProductFeatureGroup_ProductFeatureGroupId(), ecorePackage.getEString(), "productFeatureGroupId", null, 1, 1, ProductFeatureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getProductFeatureGroup_Description(), ecorePackage.getEString(), "description", null, 0, 1, ProductFeatureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getProductFeatureGroup_ProductFeatureGroupAppls(), this.getProductFeatureGroupAppl(), null, "productFeatureGroupAppls", null, 0, -1, ProductFeatureGroup.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(productFeatureGroupApplEClass, ProductFeatureGroupAppl.class, "ProductFeatureGroupAppl", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getProductFeatureGroupAppl_ProductFeatureGroupId(), this.getProductFeatureGroup(), null, "productFeatureGroupId", null, 1, 1, ProductFeatureGroupAppl.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2173,6 +2185,12 @@ public class FeaturePackageImpl extends EPackageImpl implements FeaturePackage {
 		   source,
 		   new String[] {
 			   "key", "true"
+		   });
+		addAnnotation
+		  (getProductFeatureGroup_ProductFeatureGroupAppls(),
+		   source,
+		   new String[] {
+			   "type", "fromDate"
 		   });
 		addAnnotation
 		  (getProductFeatureGroupAppl_ProductFeatureGroupId(),

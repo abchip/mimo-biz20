@@ -944,13 +944,22 @@ public interface FeaturePackage extends EPackage {
 	int PRODUCT_FEATURE_GROUP__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
 
 	/**
+	 * The feature id for the '<em><b>Product Feature Group Appls</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_FEATURE_GROUP__PRODUCT_FEATURE_GROUP_APPLS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+
+	/**
 	 * The number of structural features of the '<em>Product Feature Group</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_FEATURE_GROUP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int PRODUCT_FEATURE_GROUP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureGroupApplImpl <em>Product Feature Group Appl</em>}' class.
@@ -1908,6 +1917,17 @@ public interface FeaturePackage extends EPackage {
 	EAttribute getProductFeatureGroup_Description();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroup#getProductFeatureGroupAppls <em>Product Feature Group Appls</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Product Feature Group Appls</em>'.
+	 * @see org.abchip.mimo.biz.model.product.feature.ProductFeatureGroup#getProductFeatureGroupAppls()
+	 * @see #getProductFeatureGroup()
+	 * @generated
+	 */
+	EReference getProductFeatureGroup_ProductFeatureGroupAppls();
+
+	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl <em>Product Feature Group Appl</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2589,6 +2609,14 @@ public interface FeaturePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PRODUCT_FEATURE_GROUP__DESCRIPTION = eINSTANCE.getProductFeatureGroup_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>Product Feature Group Appls</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_FEATURE_GROUP__PRODUCT_FEATURE_GROUP_APPLS = eINSTANCE.getProductFeatureGroup_ProductFeatureGroupAppls();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureGroupApplImpl <em>Product Feature Group Appl</em>}' class.

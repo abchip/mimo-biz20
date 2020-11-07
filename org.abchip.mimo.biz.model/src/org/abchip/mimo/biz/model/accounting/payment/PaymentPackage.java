@@ -5183,13 +5183,22 @@ public interface PaymentPackage extends EPackage {
 	int PAYMENT_GROUP__PAYMENT_GROUP_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 4;
 
 	/**
+	 * The feature id for the '<em><b>Payment Group Members</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PAYMENT_GROUP__PAYMENT_GROUP_MEMBERS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+
+	/**
 	 * The feature id for the '<em><b>Payment Group Name</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GROUP__PAYMENT_GROUP_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 5;
+	int PAYMENT_GROUP__PAYMENT_GROUP_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Payment Group Type Id</b></em>' reference.
@@ -5198,7 +5207,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GROUP__PAYMENT_GROUP_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
+	int PAYMENT_GROUP__PAYMENT_GROUP_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
 
 	/**
 	 * The number of structural features of the '<em>Group</em>' class.
@@ -5207,7 +5216,7 @@ public interface PaymentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PAYMENT_GROUP_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int PAYMENT_GROUP_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.payment.impl.PaymentGroupMemberImpl <em>Group Member</em>}' class.
@@ -9771,6 +9780,17 @@ public interface PaymentPackage extends EPackage {
 	EAttribute getPaymentGroup_PaymentGroupId();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGroup#getPaymentGroupMembers <em>Payment Group Members</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Payment Group Members</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentGroup#getPaymentGroupMembers()
+	 * @see #getPaymentGroup()
+	 * @generated
+	 */
+	EReference getPaymentGroup_PaymentGroupMembers();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGroup#getPaymentGroupName <em>Payment Group Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -13269,6 +13289,14 @@ public interface PaymentPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PAYMENT_GROUP__PAYMENT_GROUP_ID = eINSTANCE.getPaymentGroup_PaymentGroupId();
+
+		/**
+		 * The meta object literal for the '<em><b>Payment Group Members</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PAYMENT_GROUP__PAYMENT_GROUP_MEMBERS = eINSTANCE.getPaymentGroup_PaymentGroupMembers();
 
 		/**
 		 * The meta object literal for the '<em><b>Payment Group Name</b></em>' attribute feature.

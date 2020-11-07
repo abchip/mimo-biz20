@@ -13,6 +13,8 @@ import org.abchip.mimo.biz.model.content.survey.Survey;
 import org.abchip.mimo.biz.model.content.survey.SurveyMultiResp;
 import org.abchip.mimo.biz.model.content.survey.SurveyPackage;
 import org.abchip.mimo.biz.model.content.survey.SurveyPage;
+import org.abchip.mimo.biz.model.content.survey.SurveyQuestionAppl;
+import org.abchip.mimo.biz.model.content.survey.SurveyTrigger;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
 import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
@@ -42,6 +44,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyImpl#getSurveyMultiResps <em>Survey Multi Resps</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyImpl#getSurveyName <em>Survey Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyImpl#getSurveyPages <em>Survey Pages</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyImpl#getSurveyQuestionAppls <em>Survey Question Appls</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.survey.impl.SurveyImpl#getSurveyTriggers <em>Survey Triggers</em>}</li>
  * </ul>
  *
  * @generated
@@ -377,6 +381,28 @@ public class SurveyImpl extends EntityIdentifiableImpl implements Survey {
 	@Override
 	public List<SurveyPage> getSurveyPages() {
 		return (List<SurveyPage>)eGet(SurveyPackage.Literals.SURVEY__SURVEY_PAGES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<SurveyQuestionAppl> getSurveyQuestionAppls() {
+		return (List<SurveyQuestionAppl>)eGet(SurveyPackage.Literals.SURVEY__SURVEY_QUESTION_APPLS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<SurveyTrigger> getSurveyTriggers() {
+		return (List<SurveyTrigger>)eGet(SurveyPackage.Literals.SURVEY__SURVEY_TRIGGERS, true);
 	}
 
 	/**

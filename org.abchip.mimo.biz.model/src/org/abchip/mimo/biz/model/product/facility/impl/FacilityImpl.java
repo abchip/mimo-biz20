@@ -15,7 +15,10 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.product.facility.FacilityAttribute;
+import org.abchip.mimo.biz.model.product.facility.FacilityContactMech;
+import org.abchip.mimo.biz.model.product.facility.FacilityContent;
 import org.abchip.mimo.biz.model.product.facility.FacilityGroup;
+import org.abchip.mimo.biz.model.product.facility.FacilityGroupMember;
 import org.abchip.mimo.biz.model.product.facility.FacilityLocation;
 import org.abchip.mimo.biz.model.product.facility.FacilityPackage;
 import org.abchip.mimo.biz.model.product.facility.FacilityType;
@@ -46,6 +49,9 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getDefaultWeightUomId <em>Default Weight Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilityAttributes <em>Facility Attributes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilityContactMechs <em>Facility Contact Mechs</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilityContents <em>Facility Contents</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilityGroupMembers <em>Facility Group Members</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilityLevel <em>Facility Level</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilityLocations <em>Facility Locations</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityImpl#getFacilityName <em>Facility Name</em>}</li>
@@ -303,6 +309,39 @@ public class FacilityImpl extends EntityTypedImpl<FacilityType> implements Facil
 	@Override
 	public List<FacilityAttribute> getFacilityAttributes() {
 		return (List<FacilityAttribute>)eGet(FacilityPackage.Literals.FACILITY__FACILITY_ATTRIBUTES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<FacilityContactMech> getFacilityContactMechs() {
+		return (List<FacilityContactMech>)eGet(FacilityPackage.Literals.FACILITY__FACILITY_CONTACT_MECHS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<FacilityContent> getFacilityContents() {
+		return (List<FacilityContent>)eGet(FacilityPackage.Literals.FACILITY__FACILITY_CONTENTS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<FacilityGroupMember> getFacilityGroupMembers() {
+		return (List<FacilityGroupMember>)eGet(FacilityPackage.Literals.FACILITY__FACILITY_GROUP_MEMBERS, true);
 	}
 
 	/**

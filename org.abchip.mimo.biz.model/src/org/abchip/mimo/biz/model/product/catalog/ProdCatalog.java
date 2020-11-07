@@ -7,6 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.catalog;
 
+import java.util.List;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
 
@@ -23,6 +24,7 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalog#getCatalogName <em>Catalog Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalog#getContentPathPrefix <em>Content Path Prefix</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalog#getHeaderLogo <em>Header Logo</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalog#getProdCatalogInvFacilities <em>Prod Catalog Inv Facilities</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalog#isPurchaseAllowPermReqd <em>Purchase Allow Perm Reqd</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalog#getStyleSheet <em>Style Sheet</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalog#getTemplatePathPrefix <em>Template Path Prefix</em>}</li>
@@ -112,6 +114,19 @@ public interface ProdCatalog extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setHeaderLogo(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Prod Catalog Inv Facilities</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.catalog.ProdCatalogInvFacility}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Prod Catalog Inv Facilities</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.catalog.CatalogPackage#getProdCatalog_ProdCatalogInvFacilities()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ProdCatalogInvFacility> getProdCatalogInvFacilities();
 
 	/**
 	 * Returns the value of the '<em><b>Purchase Allow Perm Reqd</b></em>' attribute.

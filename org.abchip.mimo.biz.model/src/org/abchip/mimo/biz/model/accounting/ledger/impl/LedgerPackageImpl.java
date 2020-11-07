@@ -1751,7 +1751,7 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGlAccount_GlAccountClassId() {
+	public EReference getGlAccount_GlAccountCategoryMembers() {
 		return (EReference)glAccountEClass.getEStructuralFeatures().get(5);
 	}
 
@@ -1761,7 +1761,7 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGlAccount_GlAccountGroupMembers() {
+	public EReference getGlAccount_GlAccountClassId() {
 		return (EReference)glAccountEClass.getEStructuralFeatures().get(6);
 	}
 
@@ -1771,7 +1771,7 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGlAccount_GlAccountOrganizations() {
+	public EReference getGlAccount_GlAccountGroupMembers() {
 		return (EReference)glAccountEClass.getEStructuralFeatures().get(7);
 	}
 
@@ -1781,7 +1781,7 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGlAccount_GlAccountTypeId() {
+	public EReference getGlAccount_GlAccountOrganizations() {
 		return (EReference)glAccountEClass.getEStructuralFeatures().get(8);
 	}
 
@@ -1791,7 +1791,7 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGlAccount_GlResourceTypeId() {
+	public EReference getGlAccount_GlAccountTypeId() {
 		return (EReference)glAccountEClass.getEStructuralFeatures().get(9);
 	}
 
@@ -1801,7 +1801,7 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGlAccount_GlXbrlClassId() {
+	public EReference getGlAccount_GlBudgetXrefs() {
 		return (EReference)glAccountEClass.getEStructuralFeatures().get(10);
 	}
 
@@ -1811,7 +1811,7 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 	 * @generated
 	 */
 	@Override
-	public EReference getGlAccount_ParentGlAccountId() {
+	public EReference getGlAccount_GlResourceTypeId() {
 		return (EReference)glAccountEClass.getEStructuralFeatures().get(11);
 	}
 
@@ -1821,8 +1821,28 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getGlAccount_GlXbrlClassId() {
+		return (EReference)glAccountEClass.getEStructuralFeatures().get(12);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getGlAccount_ParentGlAccountId() {
+		return (EReference)glAccountEClass.getEStructuralFeatures().get(13);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EAttribute getGlAccount_ProductId() {
-		return (EAttribute)glAccountEClass.getEStructuralFeatures().get(12);
+		return (EAttribute)glAccountEClass.getEStructuralFeatures().get(14);
 	}
 
 	/**
@@ -3553,10 +3573,12 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 		createEAttribute(glAccountEClass, GL_ACCOUNT__ACCOUNT_NAME);
 		createEAttribute(glAccountEClass, GL_ACCOUNT__DESCRIPTION);
 		createEAttribute(glAccountEClass, GL_ACCOUNT__EXTERNAL_ID);
+		createEReference(glAccountEClass, GL_ACCOUNT__GL_ACCOUNT_CATEGORY_MEMBERS);
 		createEReference(glAccountEClass, GL_ACCOUNT__GL_ACCOUNT_CLASS_ID);
 		createEReference(glAccountEClass, GL_ACCOUNT__GL_ACCOUNT_GROUP_MEMBERS);
 		createEReference(glAccountEClass, GL_ACCOUNT__GL_ACCOUNT_ORGANIZATIONS);
 		createEReference(glAccountEClass, GL_ACCOUNT__GL_ACCOUNT_TYPE_ID);
+		createEReference(glAccountEClass, GL_ACCOUNT__GL_BUDGET_XREFS);
 		createEReference(glAccountEClass, GL_ACCOUNT__GL_RESOURCE_TYPE_ID);
 		createEReference(glAccountEClass, GL_ACCOUNT__GL_XBRL_CLASS_ID);
 		createEReference(glAccountEClass, GL_ACCOUNT__PARENT_GL_ACCOUNT_ID);
@@ -4020,12 +4042,14 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 		initEAttribute(getGlAccount_AccountName(), ecorePackage.getEString(), "accountName", null, 0, 1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGlAccount_Description(), ecorePackage.getEString(), "description", null, 0, 1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGlAccount_ExternalId(), ecorePackage.getEString(), "externalId", null, 0, 1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getGlAccount_GlAccountCategoryMembers(), this.getGlAccountCategoryMember(), null, "glAccountCategoryMembers", null, 0, -1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getGlAccount_GlAccountClassId(), this.getGlAccountClass(), null, "glAccountClassId", null, 0, 1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getGlAccount_GlAccountClassId().getEKeys().add(this.getGlAccountClass_GlAccountClassId());
 		initEReference(getGlAccount_GlAccountGroupMembers(), this.getGlAccountGroupMember(), null, "glAccountGroupMembers", null, 0, -1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getGlAccount_GlAccountOrganizations(), this.getGlAccountOrganization(), null, "glAccountOrganizations", null, 0, -1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getGlAccount_GlAccountTypeId(), this.getGlAccountType(), null, "glAccountTypeId", null, 0, 1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getGlAccount_GlAccountTypeId().getEKeys().add(this.getGlAccountType_GlAccountTypeId());
+		initEReference(getGlAccount_GlBudgetXrefs(), this.getGlBudgetXref(), null, "glBudgetXrefs", null, 0, -1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getGlAccount_GlResourceTypeId(), this.getGlResourceType(), null, "glResourceTypeId", null, 0, 1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getGlAccount_GlResourceTypeId().getEKeys().add(this.getGlResourceType_GlResourceTypeId());
 		initEReference(getGlAccount_GlXbrlClassId(), this.getGlXbrlClass(), null, "glXbrlClassId", null, 0, 1, GlAccount.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -5094,6 +5118,18 @@ public class LedgerPackageImpl extends EPackageImpl implements LedgerPackage {
 		   source,
 		   new String[] {
 			   "help", "id of the account in an external system where the accounts are imported/exported"
+		   });
+		addAnnotation
+		  (getGlAccount_GlAccountCategoryMembers(),
+		   source,
+		   new String[] {
+			   "type", "fromDate"
+		   });
+		addAnnotation
+		  (getGlAccount_GlBudgetXrefs(),
+		   source,
+		   new String[] {
+			   "type", "fromDate"
 		   });
 		addAnnotation
 		  (getGlAccountCategoryMember_GlAccountId(),

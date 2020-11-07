@@ -11,11 +11,17 @@ import java.util.Date;
 import java.util.List;
 import org.abchip.mimo.biz.model.accounting.payment.CreditCard;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethod;
+import org.abchip.mimo.biz.model.accounting.rate.PartyRate;
 import org.abchip.mimo.biz.model.common.datasource.DataSource;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.uom.Uom;
+import org.abchip.mimo.biz.model.humanres.ability.PartyQual;
 import org.abchip.mimo.biz.model.humanres.ability.PartySkill;
+import org.abchip.mimo.biz.model.humanres.ability.PerformanceNote;
+import org.abchip.mimo.biz.model.humanres.ability.PersonTraining;
+import org.abchip.mimo.biz.model.humanres.employment.EmplLeave;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
+import org.abchip.mimo.biz.model.party.contact.PartyContactMech;
 import org.abchip.mimo.biz.model.party.contact.PostalAddress;
 import org.abchip.mimo.biz.model.party.contact.TelecomNumber;
 import org.abchip.mimo.biz.model.product.supplier.SupplierProductFeature;
@@ -37,18 +43,28 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getCreatedDate <em>Created Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getDataSourceId <em>Data Source Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getDescription <em>Description</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getEmplLeaves <em>Empl Leaves</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getExternalId <em>External Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getIsUnread <em>Is Unread</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getLastModifiedDate <em>Last Modified Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyAttributes <em>Party Attributes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyCarrierAccounts <em>Party Carrier Accounts</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyClassifications <em>Party Classifications</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyContactMechs <em>Party Contact Mechs</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyDataSources <em>Party Data Sources</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyGeoPoints <em>Party Geo Points</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyIdentifications <em>Party Identifications</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyNameHistories <em>Party Name Histories</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyNotes <em>Party Notes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyProfileDefaults <em>Party Profile Defaults</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyQuals <em>Party Quals</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyRates <em>Party Rates</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyRoles <em>Party Roles</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartySkills <em>Party Skills</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPartyTypeId <em>Party Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPerformanceNotes <em>Performance Notes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPersonTrainings <em>Person Trainings</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getPreferredCurrencyUomId <em>Preferred Currency Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getStatusId <em>Status Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.Party#getSupplierProductFeatures <em>Supplier Product Features</em>}</li>
@@ -162,6 +178,19 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * @generated
 	 */
 	void setDescription(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Empl Leaves</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.humanres.employment.EmplLeave}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Empl Leaves</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_EmplLeaves()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<EmplLeave> getEmplLeaves();
 
 	/**
 	 * Returns the value of the '<em><b>External Id</b></em>' attribute.
@@ -280,6 +309,71 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	List<PartyAttribute> getPartyAttributes();
 
 	/**
+	 * Returns the value of the '<em><b>Party Carrier Accounts</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.party.PartyCarrierAccount}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party Carrier Accounts</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyCarrierAccounts()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<PartyCarrierAccount> getPartyCarrierAccounts();
+
+	/**
+	 * Returns the value of the '<em><b>Party Classifications</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.party.PartyClassification}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party Classifications</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyClassifications()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<PartyClassification> getPartyClassifications();
+
+	/**
+	 * Returns the value of the '<em><b>Party Contact Mechs</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.contact.PartyContactMech}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party Contact Mechs</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyContactMechs()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<PartyContactMech> getPartyContactMechs();
+
+	/**
+	 * Returns the value of the '<em><b>Party Data Sources</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.party.PartyDataSource}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party Data Sources</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyDataSources()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<PartyDataSource> getPartyDataSources();
+
+	/**
+	 * Returns the value of the '<em><b>Party Geo Points</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.party.PartyGeoPoint}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party Geo Points</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyGeoPoints()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<PartyGeoPoint> getPartyGeoPoints();
+
+	/**
 	 * Returns the value of the '<em><b>Party Identifications</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.party.party.PartyIdentification}.
 	 * <!-- begin-user-doc -->
@@ -342,6 +436,32 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * @generated
 	 */
 	List<PartyProfileDefault> getPartyProfileDefaults();
+
+	/**
+	 * Returns the value of the '<em><b>Party Quals</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.humanres.ability.PartyQual}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party Quals</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyQuals()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<PartyQual> getPartyQuals();
+
+	/**
+	 * Returns the value of the '<em><b>Party Rates</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.rate.PartyRate}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Party Rates</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PartyRates()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<PartyRate> getPartyRates();
 
 	/**
 	 * Returns the value of the '<em><b>Party Roles</b></em>' reference list.
@@ -508,6 +628,32 @@ public interface Party extends EntityTyped<PartyType>, EntityInfo {
 	 * @generated
 	 */
 	void setPartyTypeId(PartyType value);
+
+	/**
+	 * Returns the value of the '<em><b>Performance Notes</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.humanres.ability.PerformanceNote}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Performance Notes</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PerformanceNotes()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<PerformanceNote> getPerformanceNotes();
+
+	/**
+	 * Returns the value of the '<em><b>Person Trainings</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.humanres.ability.PersonTraining}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Person Trainings</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.party.party.PartyPackage#getParty_PersonTrainings()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<PersonTraining> getPersonTrainings();
 
 	/**
 	 * Returns the value of the '<em><b>Party Id</b></em>' attribute.

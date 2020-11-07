@@ -1643,7 +1643,7 @@ public class WorkeffortPackageImpl extends EPackageImpl implements WorkeffortPac
 	 * @generated
 	 */
 	@Override
-	public EReference getWorkEffort_WorkEffortDeliverableProds() {
+	public EReference getWorkEffort_WorkEffortContactMechs() {
 		return (EReference)workEffortEClass.getEStructuralFeatures().get(49);
 	}
 
@@ -1653,7 +1653,7 @@ public class WorkeffortPackageImpl extends EPackageImpl implements WorkeffortPac
 	 * @generated
 	 */
 	@Override
-	public EReference getWorkEffort_WorkEffortEventReminders() {
+	public EReference getWorkEffort_WorkEffortCostCalcs() {
 		return (EReference)workEffortEClass.getEStructuralFeatures().get(50);
 	}
 
@@ -1663,7 +1663,7 @@ public class WorkeffortPackageImpl extends EPackageImpl implements WorkeffortPac
 	 * @generated
 	 */
 	@Override
-	public EReference getWorkEffort_WorkEffortFixedAssetStds() {
+	public EReference getWorkEffort_WorkEffortDeliverableProds() {
 		return (EReference)workEffortEClass.getEStructuralFeatures().get(51);
 	}
 
@@ -1673,7 +1673,7 @@ public class WorkeffortPackageImpl extends EPackageImpl implements WorkeffortPac
 	 * @generated
 	 */
 	@Override
-	public EReference getWorkEffort_WorkEffortInventoryAssigns() {
+	public EReference getWorkEffort_WorkEffortEventReminders() {
 		return (EReference)workEffortEClass.getEStructuralFeatures().get(52);
 	}
 
@@ -1683,7 +1683,7 @@ public class WorkeffortPackageImpl extends EPackageImpl implements WorkeffortPac
 	 * @generated
 	 */
 	@Override
-	public EReference getWorkEffort_WorkEffortInventoryProduceds() {
+	public EReference getWorkEffort_WorkEffortFixedAssetAssigns() {
 		return (EReference)workEffortEClass.getEStructuralFeatures().get(53);
 	}
 
@@ -1693,7 +1693,7 @@ public class WorkeffortPackageImpl extends EPackageImpl implements WorkeffortPac
 	 * @generated
 	 */
 	@Override
-	public EReference getWorkEffort_WorkEffortKeywords() {
+	public EReference getWorkEffort_WorkEffortFixedAssetStds() {
 		return (EReference)workEffortEClass.getEStructuralFeatures().get(54);
 	}
 
@@ -1703,8 +1703,8 @@ public class WorkeffortPackageImpl extends EPackageImpl implements WorkeffortPac
 	 * @generated
 	 */
 	@Override
-	public EAttribute getWorkEffort_WorkEffortName() {
-		return (EAttribute)workEffortEClass.getEStructuralFeatures().get(55);
+	public EReference getWorkEffort_WorkEffortInventoryAssigns() {
+		return (EReference)workEffortEClass.getEStructuralFeatures().get(55);
 	}
 
 	/**
@@ -1713,7 +1713,7 @@ public class WorkeffortPackageImpl extends EPackageImpl implements WorkeffortPac
 	 * @generated
 	 */
 	@Override
-	public EReference getWorkEffort_WorkEffortNotes() {
+	public EReference getWorkEffort_WorkEffortInventoryProduceds() {
 		return (EReference)workEffortEClass.getEStructuralFeatures().get(56);
 	}
 
@@ -1723,7 +1723,7 @@ public class WorkeffortPackageImpl extends EPackageImpl implements WorkeffortPac
 	 * @generated
 	 */
 	@Override
-	public EReference getWorkEffort_WorkEffortParentId() {
+	public EReference getWorkEffort_WorkEffortKeywords() {
 		return (EReference)workEffortEClass.getEStructuralFeatures().get(57);
 	}
 
@@ -1733,8 +1733,8 @@ public class WorkeffortPackageImpl extends EPackageImpl implements WorkeffortPac
 	 * @generated
 	 */
 	@Override
-	public EReference getWorkEffort_WorkEffortPurposeTypeId() {
-		return (EReference)workEffortEClass.getEStructuralFeatures().get(58);
+	public EAttribute getWorkEffort_WorkEffortName() {
+		return (EAttribute)workEffortEClass.getEStructuralFeatures().get(58);
 	}
 
 	/**
@@ -1743,7 +1743,7 @@ public class WorkeffortPackageImpl extends EPackageImpl implements WorkeffortPac
 	 * @generated
 	 */
 	@Override
-	public EReference getWorkEffort_WorkEffortSkillStandards() {
+	public EReference getWorkEffort_WorkEffortNotes() {
 		return (EReference)workEffortEClass.getEStructuralFeatures().get(59);
 	}
 
@@ -1753,8 +1753,48 @@ public class WorkeffortPackageImpl extends EPackageImpl implements WorkeffortPac
 	 * @generated
 	 */
 	@Override
-	public EReference getWorkEffort_WorkEffortTypeId() {
+	public EReference getWorkEffort_WorkEffortParentId() {
 		return (EReference)workEffortEClass.getEStructuralFeatures().get(60);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getWorkEffort_WorkEffortPurposeTypeId() {
+		return (EReference)workEffortEClass.getEStructuralFeatures().get(61);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getWorkEffort_WorkEffortSkillStandards() {
+		return (EReference)workEffortEClass.getEStructuralFeatures().get(62);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getWorkEffort_WorkEffortSurveyAppls() {
+		return (EReference)workEffortEClass.getEStructuralFeatures().get(63);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public EReference getWorkEffort_WorkEffortTypeId() {
+		return (EReference)workEffortEClass.getEStructuralFeatures().get(64);
 	}
 
 	/**
@@ -3839,8 +3879,11 @@ public class WorkeffortPackageImpl extends EPackageImpl implements WorkeffortPac
 		createEAttribute(workEffortEClass, WORK_EFFORT__TOTAL_MONEY_ALLOWED);
 		createEAttribute(workEffortEClass, WORK_EFFORT__UNIVERSAL_ID);
 		createEReference(workEffortEClass, WORK_EFFORT__WORK_EFFORT_ATTRIBUTES);
+		createEReference(workEffortEClass, WORK_EFFORT__WORK_EFFORT_CONTACT_MECHS);
+		createEReference(workEffortEClass, WORK_EFFORT__WORK_EFFORT_COST_CALCS);
 		createEReference(workEffortEClass, WORK_EFFORT__WORK_EFFORT_DELIVERABLE_PRODS);
 		createEReference(workEffortEClass, WORK_EFFORT__WORK_EFFORT_EVENT_REMINDERS);
+		createEReference(workEffortEClass, WORK_EFFORT__WORK_EFFORT_FIXED_ASSET_ASSIGNS);
 		createEReference(workEffortEClass, WORK_EFFORT__WORK_EFFORT_FIXED_ASSET_STDS);
 		createEReference(workEffortEClass, WORK_EFFORT__WORK_EFFORT_INVENTORY_ASSIGNS);
 		createEReference(workEffortEClass, WORK_EFFORT__WORK_EFFORT_INVENTORY_PRODUCEDS);
@@ -3850,6 +3893,7 @@ public class WorkeffortPackageImpl extends EPackageImpl implements WorkeffortPac
 		createEReference(workEffortEClass, WORK_EFFORT__WORK_EFFORT_PARENT_ID);
 		createEReference(workEffortEClass, WORK_EFFORT__WORK_EFFORT_PURPOSE_TYPE_ID);
 		createEReference(workEffortEClass, WORK_EFFORT__WORK_EFFORT_SKILL_STANDARDS);
+		createEReference(workEffortEClass, WORK_EFFORT__WORK_EFFORT_SURVEY_APPLS);
 		createEReference(workEffortEClass, WORK_EFFORT__WORK_EFFORT_TYPE_ID);
 
 		workEffortAssocEClass = createEClass(WORK_EFFORT_ASSOC);
@@ -4323,8 +4367,11 @@ public class WorkeffortPackageImpl extends EPackageImpl implements WorkeffortPac
 		initEAttribute(getWorkEffort_TotalMoneyAllowed(), ecorePackage.getEBigDecimal(), "totalMoneyAllowed", null, 0, 1, WorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getWorkEffort_UniversalId(), ecorePackage.getEString(), "universalId", null, 0, 1, WorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getWorkEffort_WorkEffortAttributes(), this.getWorkEffortAttribute(), null, "workEffortAttributes", null, 0, -1, WorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEReference(getWorkEffort_WorkEffortContactMechs(), this.getWorkEffortContactMech(), null, "workEffortContactMechs", null, 0, -1, WorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEReference(getWorkEffort_WorkEffortCostCalcs(), this.getWorkEffortCostCalc(), null, "workEffortCostCalcs", null, 0, -1, WorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getWorkEffort_WorkEffortDeliverableProds(), this.getWorkEffortDeliverableProd(), null, "workEffortDeliverableProds", null, 0, -1, WorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getWorkEffort_WorkEffortEventReminders(), this.getWorkEffortEventReminder(), null, "workEffortEventReminders", null, 0, -1, WorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEReference(getWorkEffort_WorkEffortFixedAssetAssigns(), this.getWorkEffortFixedAssetAssign(), null, "workEffortFixedAssetAssigns", null, 0, -1, WorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getWorkEffort_WorkEffortFixedAssetStds(), this.getWorkEffortFixedAssetStd(), null, "workEffortFixedAssetStds", null, 0, -1, WorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getWorkEffort_WorkEffortInventoryAssigns(), this.getWorkEffortInventoryAssign(), null, "workEffortInventoryAssigns", null, 0, -1, WorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getWorkEffort_WorkEffortInventoryProduceds(), this.getWorkEffortInventoryProduced(), null, "workEffortInventoryProduceds", null, 0, -1, WorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
@@ -4336,6 +4383,7 @@ public class WorkeffortPackageImpl extends EPackageImpl implements WorkeffortPac
 		initEReference(getWorkEffort_WorkEffortPurposeTypeId(), this.getWorkEffortPurposeType(), null, "workEffortPurposeTypeId", null, 0, 1, WorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getWorkEffort_WorkEffortPurposeTypeId().getEKeys().add(this.getWorkEffortPurposeType_WorkEffortPurposeTypeId());
 		initEReference(getWorkEffort_WorkEffortSkillStandards(), this.getWorkEffortSkillStandard(), null, "workEffortSkillStandards", null, 0, -1, WorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
+		initEReference(getWorkEffort_WorkEffortSurveyAppls(), this.getWorkEffortSurveyAppl(), null, "workEffortSurveyAppls", null, 0, -1, WorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 		initEReference(getWorkEffort_WorkEffortTypeId(), this.getWorkEffortType(), null, "workEffortTypeId", null, 0, 1, WorkEffort.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getWorkEffort_WorkEffortTypeId().getEKeys().add(this.getWorkEffortType_WorkEffortTypeId());
 
@@ -5267,10 +5315,34 @@ public class WorkeffortPackageImpl extends EPackageImpl implements WorkeffortPac
 			   "help", "Deprecated - use the availabilityStatusId field in the assignment entities instead"
 		   });
 		addAnnotation
+		  (getWorkEffort_WorkEffortContactMechs(),
+		   source,
+		   new String[] {
+			   "type", "fromDate"
+		   });
+		addAnnotation
+		  (getWorkEffort_WorkEffortCostCalcs(),
+		   source,
+		   new String[] {
+			   "type", "fromDate"
+		   });
+		addAnnotation
+		  (getWorkEffort_WorkEffortFixedAssetAssigns(),
+		   source,
+		   new String[] {
+			   "type", "fromDate"
+		   });
+		addAnnotation
 		  (getWorkEffort_WorkEffortParentId(),
 		   source,
 		   new String[] {
 			   "help", "The primary parent (or the like); it should be one of the parent WorkEfforts already setup in WorkEffortAssoc"
+		   });
+		addAnnotation
+		  (getWorkEffort_WorkEffortSurveyAppls(),
+		   source,
+		   new String[] {
+			   "type", "fromDate"
 		   });
 		addAnnotation
 		  (getWorkEffortAssoc_WorkEffortAssocTypeId(),

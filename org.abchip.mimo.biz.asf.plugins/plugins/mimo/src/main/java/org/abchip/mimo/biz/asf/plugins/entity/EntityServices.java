@@ -741,8 +741,10 @@ public class EntityServices {
 					if (modelRelEntity.getPksSize() == 3 && modelRelEntity.getPkFieldNames().get(2).equals("fromDate")) {
 						relationType = "fromDate";
 					} else {
-						if (!modelRelEntity.getPkFieldNames().get(1).contains("Seq"))
+						if (modelRelEntity.getPkFieldNames().get(1).contains("Seq")) {
 							relationType = "sequenced";
+							continue;
+						}
 						else
 							continue;
 					}

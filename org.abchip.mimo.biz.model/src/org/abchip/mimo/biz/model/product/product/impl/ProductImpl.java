@@ -16,8 +16,10 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.common.uom.UomType;
 import org.abchip.mimo.biz.model.party.communication.CommunicationEventProduct;
 import org.abchip.mimo.biz.model.product.category.ProductCategory;
+import org.abchip.mimo.biz.model.product.cost.ProductCostComponentCalc;
 import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.product.facility.ProductFacility;
+import org.abchip.mimo.biz.model.product.feature.ProductFeatureAppl;
 import org.abchip.mimo.biz.model.product.inventory.InventoryItemType;
 import org.abchip.mimo.biz.model.product.product.Product;
 import org.abchip.mimo.biz.model.product.product.ProductAttribute;
@@ -26,6 +28,7 @@ import org.abchip.mimo.biz.model.product.product.ProductMaint;
 import org.abchip.mimo.biz.model.product.product.ProductMeter;
 import org.abchip.mimo.biz.model.product.product.ProductPackage;
 import org.abchip.mimo.biz.model.product.product.ProductType;
+import org.abchip.mimo.biz.model.product.subscription.ProductSubscriptionResource;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.shipment.shipment.ShipmentBoxType;
 import org.abchip.mimo.entity.EntityInfo;
@@ -86,15 +89,18 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getPriceDetailText <em>Price Detail Text</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getPrimaryProductCategoryId <em>Primary Product Category Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductAttributes <em>Product Attributes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductCostComponentCalcs <em>Product Cost Component Calcs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductDepth <em>Product Depth</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductDiameter <em>Product Diameter</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductFacilities <em>Product Facilities</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductFeatureAppls <em>Product Feature Appls</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductGeos <em>Product Geos</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductHeight <em>Product Height</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductMaints <em>Product Maints</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductMeters <em>Product Meters</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductName <em>Product Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductRating <em>Product Rating</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductSubscriptionResources <em>Product Subscription Resources</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductTypeId <em>Product Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductWeight <em>Product Weight</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.product.impl.ProductImpl#getProductWidth <em>Product Width</em>}</li>
@@ -1005,6 +1011,17 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
+	public List<ProductFeatureAppl> getProductFeatureAppls() {
+		return (List<ProductFeatureAppl>)eGet(ProductPackage.Literals.PRODUCT__PRODUCT_FEATURE_APPLS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
 	public List<ProductGeo> getProductGeos() {
 		return (List<ProductGeo>)eGet(ProductPackage.Literals.PRODUCT__PRODUCT_GEOS, true);
 	}
@@ -1089,6 +1106,17 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	@Override
 	public void setProductRating(BigDecimal newProductRating) {
 		eSet(ProductPackage.Literals.PRODUCT__PRODUCT_RATING, newProductRating);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ProductSubscriptionResource> getProductSubscriptionResources() {
+		return (List<ProductSubscriptionResource>)eGet(ProductPackage.Literals.PRODUCT__PRODUCT_SUBSCRIPTION_RESOURCES, true);
 	}
 
 	/**
@@ -1678,6 +1706,17 @@ public class ProductImpl extends EntityTypedImpl<ProductType> implements Product
 	@Override
 	public List<ProductAttribute> getProductAttributes() {
 		return (List<ProductAttribute>)eGet(ProductPackage.Literals.PRODUCT__PRODUCT_ATTRIBUTES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ProductCostComponentCalc> getProductCostComponentCalcs() {
+		return (List<ProductCostComponentCalc>)eGet(ProductPackage.Literals.PRODUCT__PRODUCT_COST_COMPONENT_CALCS, true);
 	}
 
 	/**

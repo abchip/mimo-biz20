@@ -7,6 +7,7 @@
  */
 package org.abchip.mimo.biz.model.marketing.contact;
 
+import java.util.List;
 import org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaign;
 import org.abchip.mimo.biz.model.party.contact.ContactMechType;
 import org.abchip.mimo.biz.model.party.party.Party;
@@ -26,6 +27,7 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getContactListId <em>Contact List Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getComments <em>Comments</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getContactListName <em>Contact List Name</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getContactListParties <em>Contact List Parties</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getContactListTypeId <em>Contact List Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getContactMechTypeId <em>Contact Mech Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getCreatedByUserLogin <em>Created By User Login</em>}</li>
@@ -125,6 +127,19 @@ public interface ContactList extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setContactListName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Contact List Parties</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.marketing.contact.ContactListParty}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Contact List Parties</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactPackage#getContactList_ContactListParties()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ContactListParty> getContactListParties();
 
 	/**
 	 * Returns the value of the '<em><b>Contact List Type Id</b></em>' reference.

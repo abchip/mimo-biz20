@@ -361,12 +361,16 @@
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//accounting/fixedasset/FixedAsset/fixedAssetAttributes"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//accounting/fixedasset/FixedAsset/fixedAssetGeoPoints"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//accounting/fixedasset/FixedAsset/fixedAssetIdents"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//accounting/fixedasset/FixedAsset/fixedAssetMaints"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//accounting/fixedasset/FixedAsset/fixedAssetName"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//accounting/fixedasset/FixedAsset/fixedAssetRegistrations"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//accounting/fixedasset/FixedAsset/fixedAssetStdCosts"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//accounting/fixedasset/FixedAsset/fixedAssetTypeId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -906,6 +910,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//accounting/ledger/GlAccount/description"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//accounting/ledger/GlAccount/externalId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//accounting/ledger/GlAccount/glAccountCategoryMembers"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//accounting/ledger/GlAccount/glAccountClassId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//accounting/ledger/GlAccount/glAccountGroupMembers"/>
@@ -913,6 +919,8 @@
               ecoreFeature="ecore:EReference biz-model.ecore#//accounting/ledger/GlAccount/glAccountOrganizations"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//accounting/ledger/GlAccount/glAccountTypeId"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//accounting/ledger/GlAccount/glBudgetXrefs"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//accounting/ledger/GlAccount/glResourceTypeId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -1614,6 +1622,8 @@
         </genClasses>
         <genClasses ecoreClass="biz-model.ecore#//accounting/payment/PaymentGroup">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//accounting/payment/PaymentGroup/paymentGroupId"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//accounting/payment/PaymentGroup/paymentGroupMembers"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//accounting/payment/PaymentGroup/paymentGroupName"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//accounting/payment/PaymentGroup/paymentGroupTypeId"/>
@@ -2212,6 +2222,8 @@
         <genClasses ecoreClass="biz-model.ecore#//common/uom/Uom">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//common/uom/Uom/uomId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//common/uom/Uom/abbreviation"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//common/uom/Uom/datedMainUomConversionDateds"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//common/uom/Uom/description"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//common/uom/Uom/mainUomConversions"/>
@@ -2310,6 +2322,8 @@
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//content/content/Content/decoratorContentId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//content/content/Content/description"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//content/content/Content/fromCommEventContentAssocs"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//content/content/Content/instanceOfContentId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -2702,6 +2716,10 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//content/survey/Survey/surveyName"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//content/survey/Survey/surveyPages"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//content/survey/Survey/surveyQuestionAppls"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//content/survey/Survey/surveyTriggers"/>
         </genClasses>
         <genClasses ecoreClass="biz-model.ecore#//content/survey/SurveyApplType">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//content/survey/SurveyApplType/surveyApplTypeId"/>
@@ -3123,6 +3141,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//entity/test/TestingNode/description"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//entity/test/TestingNode/primaryParentNodeId"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//entity/test/TestingNode/testingNodeMembers"/>
         </genClasses>
         <genClasses ecoreClass="biz-model.ecore#//entity/test/TestingNodeMember">
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -3471,6 +3491,10 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//humanres/position/EmplPosition/budgetId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//humanres/position/EmplPosition/budgetItemSeqId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//humanres/position/EmplPosition/emplPositionFulfillments"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//humanres/position/EmplPosition/emplPositionResponsibilities"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//humanres/position/EmplPosition/emplPositionTypeId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//humanres/position/EmplPosition/estimatedFromDate"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//humanres/position/EmplPosition/estimatedThruDate"/>
@@ -3478,6 +3502,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//humanres/position/EmplPosition/fulltimeFlag"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//humanres/position/EmplPosition/partyId"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//humanres/position/EmplPosition/reportingToEmplPositionReportingStructs"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//humanres/position/EmplPosition/salaryFlag"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//humanres/position/EmplPosition/statusId"/>
@@ -3521,9 +3547,15 @@
         <genClasses ecoreClass="biz-model.ecore#//humanres/position/EmplPositionType">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//humanres/position/EmplPositionType/emplPositionTypeId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//humanres/position/EmplPositionType/description"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//humanres/position/EmplPositionType/emplPositionTypeClasses"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//humanres/position/EmplPositionType/emplPositionTypeRates"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//humanres/position/EmplPositionType/hasTable"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//humanres/position/EmplPositionType/parentTypeId"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//humanres/position/EmplPositionType/validResponsibilities"/>
         </genClasses>
         <genClasses ecoreClass="biz-model.ecore#//humanres/position/EmplPositionTypeClass">
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -3717,6 +3749,10 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//marketing/campaign/MarketingCampaign/lastModifiedByUserLogin"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//marketing/campaign/MarketingCampaign/marketingCampaignNotes"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//marketing/campaign/MarketingCampaign/marketingCampaignPrices"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//marketing/campaign/MarketingCampaign/marketingCampaignPromos"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//marketing/campaign/MarketingCampaign/numSent"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//marketing/campaign/MarketingCampaign/parentCampaignId"/>
@@ -3762,6 +3798,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//marketing/contact/ContactList/contactListId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//marketing/contact/ContactList/comments"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//marketing/contact/ContactList/contactListName"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//marketing/contact/ContactList/contactListParties"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//marketing/contact/ContactList/contactListTypeId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -4048,6 +4086,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//marketing/tracking/TrackingCode/trackableLifetime"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//marketing/tracking/TrackingCode/trackingCodeTypeId"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//marketing/tracking/TrackingCode/trackingCodeVisits"/>
         </genClasses>
         <genClasses ecoreClass="biz-model.ecore#//marketing/tracking/TrackingCodeOrder">
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -4878,6 +4918,8 @@
               ecoreFeature="ecore:EReference biz-model.ecore#//order/request/CustRequest/custRequestCategoryId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//order/request/CustRequest/custRequestCommEvents"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//order/request/CustRequest/custRequestContents"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//order/request/CustRequest/custRequestDate"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//order/request/CustRequest/custRequestItems"/>
@@ -5977,6 +6019,8 @@
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/dataSourceId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//party/party/Party/description"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/emplLeaves"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//party/party/Party/externalId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//party/party/Party/isUnread"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -5984,6 +6028,16 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//party/party/Party/lastModifiedDate"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/partyAttributes"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/partyCarrierAccounts"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/partyClassifications"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/partyContactMechs"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/partyDataSources"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/partyGeoPoints"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/partyIdentifications"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -5993,11 +6047,19 @@
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/partyProfileDefaults"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/partyQuals"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/partyRates"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/partyRoles"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/partySkills"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/partyTypeId"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/performanceNotes"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/personTrainings"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//party/party/Party/preferredCurrencyUomId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -6385,6 +6447,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/catalog/ProdCatalog/catalogName"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/catalog/ProdCatalog/contentPathPrefix"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/catalog/ProdCatalog/headerLogo"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/catalog/ProdCatalog/prodCatalogInvFacilities"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/catalog/ProdCatalog/purchaseAllowPermReqd"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/catalog/ProdCatalog/styleSheet"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/catalog/ProdCatalog/templatePathPrefix"/>
@@ -6435,17 +6499,29 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/category/ProductCategory/productCategoryId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/category/ProductCategory/categoryImageUrl"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/category/ProductCategory/categoryName"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/category/ProductCategory/currentProductCategoryRollups"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/category/ProductCategory/description"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/category/ProductCategory/detailScreen"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/category/ProductCategory/linkOneImageUrl"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/category/ProductCategory/linkTwoImageUrl"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/category/ProductCategory/longDescription"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/category/ProductCategory/marketInterests"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//product/category/ProductCategory/primaryParentCategoryId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//product/category/ProductCategory/productCategoryAttributes"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/category/ProductCategory/productCategoryLinks"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/category/ProductCategory/productCategoryMembers"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//product/category/ProductCategory/productCategoryTypeId"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/category/ProductCategory/productFeatureCatGrpAppls"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/category/ProductCategory/productFeatureCategoryAppls"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/category/ProductCategory/showInSelect"/>
         </genClasses>
         <genClasses ecoreClass="biz-model.ecore#//product/category/ProductCategoryAttribute">
@@ -6728,6 +6804,8 @@
         <genClasses ecoreClass="biz-model.ecore#//product/facility/Container">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/facility/Container/containerId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/facility/Container/containerGeoPoints"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//product/facility/Container/containerTypeId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/facility/Container/description"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -6758,6 +6836,12 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/facility/Facility/description"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//product/facility/Facility/facilityAttributes"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/facility/Facility/facilityContactMechs"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/facility/Facility/facilityContents"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/facility/Facility/facilityGroupMembers"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/facility/Facility/facilityLevel"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//product/facility/Facility/facilityLocations"/>
@@ -6844,6 +6928,8 @@
         </genClasses>
         <genClasses ecoreClass="biz-model.ecore#//product/facility/FacilityGroup">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/facility/FacilityGroup/facilityGroupId"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/facility/FacilityGroup/currentFacilityGroupRollups"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/facility/FacilityGroup/description"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/facility/FacilityGroup/facilityGroupName"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -7045,6 +7131,8 @@
         <genClasses ecoreClass="biz-model.ecore#//product/feature/ProductFeatureGroup">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/feature/ProductFeatureGroup/productFeatureGroupId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/feature/ProductFeatureGroup/description"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/feature/ProductFeatureGroup/productFeatureGroupAppls"/>
         </genClasses>
         <genClasses ecoreClass="biz-model.ecore#//product/feature/ProductFeatureGroupAppl">
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -7494,10 +7582,14 @@
               ecoreFeature="ecore:EReference biz-model.ecore#//product/product/Product/primaryProductCategoryId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//product/product/Product/productAttributes"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/product/Product/productCostComponentCalcs"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/product/Product/productDepth"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/product/Product/productDiameter"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//product/product/Product/productFacilities"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/product/Product/productFeatureAppls"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//product/product/Product/productGeos"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/product/Product/productHeight"/>
@@ -7507,6 +7599,8 @@
               ecoreFeature="ecore:EReference biz-model.ecore#//product/product/Product/productMeters"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/product/Product/productName"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/product/Product/productRating"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/product/Product/productSubscriptionResources"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//product/product/Product/productTypeId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/product/Product/productWeight"/>
@@ -7983,9 +8077,19 @@
               ecoreFeature="ecore:EReference biz-model.ecore#//product/store/ProductStore/primaryStoreGroupId"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/store/ProductStore/prodSearchExcludeVariants"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/store/ProductStore/productStoreCatalogs"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//product/store/ProductStore/productStoreEmailSettings"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/store/ProductStore/productStoreFacilities"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//product/store/ProductStore/productStoreFinActSettings"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/store/ProductStore/productStoreGroupMembers"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/store/ProductStore/productStoreKeywordOvrds"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/store/ProductStore/productStorePromoAppls"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/store/ProductStore/prorateShipping"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/store/ProductStore/prorateTaxes"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/store/ProductStore/reqReturnInventoryReceive"/>
@@ -8072,6 +8176,8 @@
         </genClasses>
         <genClasses ecoreClass="biz-model.ecore#//product/store/ProductStoreGroup">
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/store/ProductStoreGroup/productStoreGroupId"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//product/store/ProductStoreGroup/currentProductStoreGroupRollups"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//product/store/ProductStoreGroup/description"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//product/store/ProductStoreGroup/primaryParentGroupId"/>
@@ -8487,6 +8593,8 @@
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//security/login/UserLogin/userLoginPasswordHistories"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//security/login/UserLogin/userLoginSecurityGroups"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//security/login/UserLogin/userPreferences"/>
         </genClasses>
         <genClasses ecoreClass="biz-model.ecore#//security/login/UserLoginHistory">
@@ -8538,6 +8646,8 @@
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//security/securitygroup/SecurityGroup/groupName"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//security/securitygroup/SecurityGroup/protectedViews"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//security/securitygroup/SecurityGroup/securityGroupPermissions"/>
         </genClasses>
         <genClasses ecoreClass="biz-model.ecore#//security/securitygroup/SecurityGroupPermission">
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -9373,6 +9483,10 @@
               ecoreFeature="ecore:EReference biz-model.ecore#//webapp/website/WebSite/visualThemeSetId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//webapp/website/WebSite/webAnalyticsConfigs"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//webapp/website/WebSite/webSiteContactLists"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//webapp/website/WebSite/webSitePathAliass"/>
           <genFeatures createChild="false" ecoreFeature="ecore:EAttribute biz-model.ecore#//webapp/website/WebSite/webappPath"/>
         </genClasses>
       </nestedGenPackages>
@@ -9516,9 +9630,15 @@
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//workeffort/workeffort/WorkEffort/workEffortAttributes"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//workeffort/workeffort/WorkEffort/workEffortContactMechs"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//workeffort/workeffort/WorkEffort/workEffortCostCalcs"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//workeffort/workeffort/WorkEffort/workEffortDeliverableProds"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//workeffort/workeffort/WorkEffort/workEffortEventReminders"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//workeffort/workeffort/WorkEffort/workEffortFixedAssetAssigns"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//workeffort/workeffort/WorkEffort/workEffortFixedAssetStds"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
@@ -9536,6 +9656,8 @@
               ecoreFeature="ecore:EReference biz-model.ecore#//workeffort/workeffort/WorkEffort/workEffortPurposeTypeId"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//workeffort/workeffort/WorkEffort/workEffortSkillStandards"/>
+          <genFeatures notify="false" createChild="false" propertySortChoices="true"
+              ecoreFeature="ecore:EReference biz-model.ecore#//workeffort/workeffort/WorkEffort/workEffortSurveyAppls"/>
           <genFeatures notify="false" createChild="false" propertySortChoices="true"
               ecoreFeature="ecore:EReference biz-model.ecore#//workeffort/workeffort/WorkEffort/workEffortTypeId"/>
         </genClasses>

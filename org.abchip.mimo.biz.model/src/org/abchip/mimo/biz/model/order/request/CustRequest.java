@@ -35,6 +35,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestAttributes <em>Cust Request Attributes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestCategoryId <em>Cust Request Category Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestCommEvents <em>Cust Request Comm Events</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestContents <em>Cust Request Contents</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestDate <em>Cust Request Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestItems <em>Cust Request Items</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.order.request.CustRequest#getCustRequestName <em>Cust Request Name</em>}</li>
@@ -223,6 +224,19 @@ public interface CustRequest extends EntityTyped<CustRequestType>, EntityInfo {
 	 * @generated
 	 */
 	List<CustRequestCommEvent> getCustRequestCommEvents();
+
+	/**
+	 * Returns the value of the '<em><b>Cust Request Contents</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.order.request.CustRequestContent}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Cust Request Contents</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.order.request.RequestPackage#getCustRequest_CustRequestContents()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<CustRequestContent> getCustRequestContents();
 
 	/**
 	 * Returns the value of the '<em><b>Cust Request Date</b></em>' attribute.

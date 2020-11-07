@@ -22,6 +22,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.Uom#getUomId <em>Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.Uom#getAbbreviation <em>Abbreviation</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.uom.Uom#getDatedMainUomConversionDateds <em>Dated Main Uom Conversion Dateds</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.Uom#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.Uom#getMainUomConversions <em>Main Uom Conversions</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.Uom#getNumericCode <em>Numeric Code</em>}</li>
@@ -58,6 +59,19 @@ public interface Uom extends EntityTyped<UomType>, EntityInfo {
 	 * @generated
 	 */
 	void setAbbreviation(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Dated Main Uom Conversion Dateds</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.common.uom.UomConversionDated}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Dated Main Uom Conversion Dateds</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.common.uom.UomPackage#getUom_DatedMainUomConversionDateds()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<UomConversionDated> getDatedMainUomConversionDateds();
 
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.

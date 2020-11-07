@@ -372,13 +372,22 @@ public interface PartyPackage extends EPackage {
 	int PARTY__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
+	 * The feature id for the '<em><b>Empl Leaves</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY__EMPL_LEAVES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+
+	/**
 	 * The feature id for the '<em><b>External Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__EXTERNAL_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int PARTY__EXTERNAL_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Is Unread</b></em>' attribute.
@@ -387,7 +396,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__IS_UNREAD = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
+	int PARTY__IS_UNREAD = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified By User Login</b></em>' reference.
@@ -396,7 +405,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
+	int PARTY__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified Date</b></em>' attribute.
@@ -405,7 +414,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__LAST_MODIFIED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
+	int PARTY__LAST_MODIFIED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Party Attributes</b></em>' reference list.
@@ -414,7 +423,52 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
+	int PARTY__PARTY_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
+
+	/**
+	 * The feature id for the '<em><b>Party Carrier Accounts</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY__PARTY_CARRIER_ACCOUNTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
+
+	/**
+	 * The feature id for the '<em><b>Party Classifications</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY__PARTY_CLASSIFICATIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
+
+	/**
+	 * The feature id for the '<em><b>Party Contact Mechs</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY__PARTY_CONTACT_MECHS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
+
+	/**
+	 * The feature id for the '<em><b>Party Data Sources</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY__PARTY_DATA_SOURCES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
+
+	/**
+	 * The feature id for the '<em><b>Party Geo Points</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY__PARTY_GEO_POINTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Party Identifications</b></em>' reference list.
@@ -423,7 +477,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_IDENTIFICATIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
+	int PARTY__PARTY_IDENTIFICATIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Party Name Histories</b></em>' reference list.
@@ -432,7 +486,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_NAME_HISTORIES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
+	int PARTY__PARTY_NAME_HISTORIES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Party Notes</b></em>' reference list.
@@ -441,7 +495,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_NOTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
+	int PARTY__PARTY_NOTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Party Profile Defaults</b></em>' reference list.
@@ -450,7 +504,25 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_PROFILE_DEFAULTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
+	int PARTY__PARTY_PROFILE_DEFAULTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
+
+	/**
+	 * The feature id for the '<em><b>Party Quals</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY__PARTY_QUALS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
+
+	/**
+	 * The feature id for the '<em><b>Party Rates</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY__PARTY_RATES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Party Roles</b></em>' reference list.
@@ -459,7 +531,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_ROLES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
+	int PARTY__PARTY_ROLES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Party Skills</b></em>' reference list.
@@ -468,7 +540,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_SKILLS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
+	int PARTY__PARTY_SKILLS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Party Type Id</b></em>' reference.
@@ -477,7 +549,25 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PARTY_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
+	int PARTY__PARTY_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
+
+	/**
+	 * The feature id for the '<em><b>Performance Notes</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY__PERFORMANCE_NOTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
+
+	/**
+	 * The feature id for the '<em><b>Person Trainings</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY__PERSON_TRAININGS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Preferred Currency Uom Id</b></em>' reference.
@@ -486,7 +576,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__PREFERRED_CURRENCY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
+	int PARTY__PREFERRED_CURRENCY_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -495,7 +585,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
+	int PARTY__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 32;
 
 	/**
 	 * The feature id for the '<em><b>Supplier Product Features</b></em>' reference list.
@@ -504,7 +594,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY__SUPPLIER_PRODUCT_FEATURES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
+	int PARTY__SUPPLIER_PRODUCT_FEATURES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 33;
 
 	/**
 	 * The number of structural features of the '<em>Party</em>' class.
@@ -513,7 +603,7 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PARTY_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
+	int PARTY_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 34;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.party.party.impl.PartyAttributeImpl <em>Attribute</em>}' class.
@@ -1462,6 +1552,15 @@ public interface PartyPackage extends EPackage {
 	int PARTY_GROUP__DESCRIPTION = PARTY__DESCRIPTION;
 
 	/**
+	 * The feature id for the '<em><b>Empl Leaves</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_GROUP__EMPL_LEAVES = PARTY__EMPL_LEAVES;
+
+	/**
 	 * The feature id for the '<em><b>External Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1507,6 +1606,51 @@ public interface PartyPackage extends EPackage {
 	int PARTY_GROUP__PARTY_ATTRIBUTES = PARTY__PARTY_ATTRIBUTES;
 
 	/**
+	 * The feature id for the '<em><b>Party Carrier Accounts</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_GROUP__PARTY_CARRIER_ACCOUNTS = PARTY__PARTY_CARRIER_ACCOUNTS;
+
+	/**
+	 * The feature id for the '<em><b>Party Classifications</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_GROUP__PARTY_CLASSIFICATIONS = PARTY__PARTY_CLASSIFICATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Party Contact Mechs</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_GROUP__PARTY_CONTACT_MECHS = PARTY__PARTY_CONTACT_MECHS;
+
+	/**
+	 * The feature id for the '<em><b>Party Data Sources</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_GROUP__PARTY_DATA_SOURCES = PARTY__PARTY_DATA_SOURCES;
+
+	/**
+	 * The feature id for the '<em><b>Party Geo Points</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_GROUP__PARTY_GEO_POINTS = PARTY__PARTY_GEO_POINTS;
+
+	/**
 	 * The feature id for the '<em><b>Party Identifications</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1543,6 +1687,24 @@ public interface PartyPackage extends EPackage {
 	int PARTY_GROUP__PARTY_PROFILE_DEFAULTS = PARTY__PARTY_PROFILE_DEFAULTS;
 
 	/**
+	 * The feature id for the '<em><b>Party Quals</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_GROUP__PARTY_QUALS = PARTY__PARTY_QUALS;
+
+	/**
+	 * The feature id for the '<em><b>Party Rates</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_GROUP__PARTY_RATES = PARTY__PARTY_RATES;
+
+	/**
 	 * The feature id for the '<em><b>Party Roles</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1568,6 +1730,24 @@ public interface PartyPackage extends EPackage {
 	 * @ordered
 	 */
 	int PARTY_GROUP__PARTY_TYPE_ID = PARTY__PARTY_TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Performance Notes</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_GROUP__PERFORMANCE_NOTES = PARTY__PERFORMANCE_NOTES;
+
+	/**
+	 * The feature id for the '<em><b>Person Trainings</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PARTY_GROUP__PERSON_TRAININGS = PARTY__PERSON_TRAININGS;
 
 	/**
 	 * The feature id for the '<em><b>Preferred Currency Uom Id</b></em>' reference.
@@ -3278,6 +3458,15 @@ public interface PartyPackage extends EPackage {
 	int PERSON__DESCRIPTION = PARTY__DESCRIPTION;
 
 	/**
+	 * The feature id for the '<em><b>Empl Leaves</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__EMPL_LEAVES = PARTY__EMPL_LEAVES;
+
+	/**
 	 * The feature id for the '<em><b>External Id</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3323,6 +3512,51 @@ public interface PartyPackage extends EPackage {
 	int PERSON__PARTY_ATTRIBUTES = PARTY__PARTY_ATTRIBUTES;
 
 	/**
+	 * The feature id for the '<em><b>Party Carrier Accounts</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__PARTY_CARRIER_ACCOUNTS = PARTY__PARTY_CARRIER_ACCOUNTS;
+
+	/**
+	 * The feature id for the '<em><b>Party Classifications</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__PARTY_CLASSIFICATIONS = PARTY__PARTY_CLASSIFICATIONS;
+
+	/**
+	 * The feature id for the '<em><b>Party Contact Mechs</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__PARTY_CONTACT_MECHS = PARTY__PARTY_CONTACT_MECHS;
+
+	/**
+	 * The feature id for the '<em><b>Party Data Sources</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__PARTY_DATA_SOURCES = PARTY__PARTY_DATA_SOURCES;
+
+	/**
+	 * The feature id for the '<em><b>Party Geo Points</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__PARTY_GEO_POINTS = PARTY__PARTY_GEO_POINTS;
+
+	/**
 	 * The feature id for the '<em><b>Party Identifications</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3359,6 +3593,24 @@ public interface PartyPackage extends EPackage {
 	int PERSON__PARTY_PROFILE_DEFAULTS = PARTY__PARTY_PROFILE_DEFAULTS;
 
 	/**
+	 * The feature id for the '<em><b>Party Quals</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__PARTY_QUALS = PARTY__PARTY_QUALS;
+
+	/**
+	 * The feature id for the '<em><b>Party Rates</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__PARTY_RATES = PARTY__PARTY_RATES;
+
+	/**
 	 * The feature id for the '<em><b>Party Roles</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3384,6 +3636,24 @@ public interface PartyPackage extends EPackage {
 	 * @ordered
 	 */
 	int PERSON__PARTY_TYPE_ID = PARTY__PARTY_TYPE_ID;
+
+	/**
+	 * The feature id for the '<em><b>Performance Notes</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__PERFORMANCE_NOTES = PARTY__PERFORMANCE_NOTES;
+
+	/**
+	 * The feature id for the '<em><b>Person Trainings</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__PERSON_TRAININGS = PARTY__PERSON_TRAININGS;
 
 	/**
 	 * The feature id for the '<em><b>Preferred Currency Uom Id</b></em>' reference.
@@ -4392,6 +4662,17 @@ public interface PartyPackage extends EPackage {
 	EAttribute getParty_Description();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.party.party.Party#getEmplLeaves <em>Empl Leaves</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Empl Leaves</em>'.
+	 * @see org.abchip.mimo.biz.model.party.party.Party#getEmplLeaves()
+	 * @see #getParty()
+	 * @generated
+	 */
+	EReference getParty_EmplLeaves();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.party.party.Party#getExternalId <em>External Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4447,6 +4728,61 @@ public interface PartyPackage extends EPackage {
 	EReference getParty_PartyAttributes();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.party.party.Party#getPartyCarrierAccounts <em>Party Carrier Accounts</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Party Carrier Accounts</em>'.
+	 * @see org.abchip.mimo.biz.model.party.party.Party#getPartyCarrierAccounts()
+	 * @see #getParty()
+	 * @generated
+	 */
+	EReference getParty_PartyCarrierAccounts();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.party.party.Party#getPartyClassifications <em>Party Classifications</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Party Classifications</em>'.
+	 * @see org.abchip.mimo.biz.model.party.party.Party#getPartyClassifications()
+	 * @see #getParty()
+	 * @generated
+	 */
+	EReference getParty_PartyClassifications();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.party.party.Party#getPartyContactMechs <em>Party Contact Mechs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Party Contact Mechs</em>'.
+	 * @see org.abchip.mimo.biz.model.party.party.Party#getPartyContactMechs()
+	 * @see #getParty()
+	 * @generated
+	 */
+	EReference getParty_PartyContactMechs();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.party.party.Party#getPartyDataSources <em>Party Data Sources</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Party Data Sources</em>'.
+	 * @see org.abchip.mimo.biz.model.party.party.Party#getPartyDataSources()
+	 * @see #getParty()
+	 * @generated
+	 */
+	EReference getParty_PartyDataSources();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.party.party.Party#getPartyGeoPoints <em>Party Geo Points</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Party Geo Points</em>'.
+	 * @see org.abchip.mimo.biz.model.party.party.Party#getPartyGeoPoints()
+	 * @see #getParty()
+	 * @generated
+	 */
+	EReference getParty_PartyGeoPoints();
+
+	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.party.party.Party#getPartyIdentifications <em>Party Identifications</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4491,6 +4827,28 @@ public interface PartyPackage extends EPackage {
 	EReference getParty_PartyProfileDefaults();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.party.party.Party#getPartyQuals <em>Party Quals</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Party Quals</em>'.
+	 * @see org.abchip.mimo.biz.model.party.party.Party#getPartyQuals()
+	 * @see #getParty()
+	 * @generated
+	 */
+	EReference getParty_PartyQuals();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.party.party.Party#getPartyRates <em>Party Rates</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Party Rates</em>'.
+	 * @see org.abchip.mimo.biz.model.party.party.Party#getPartyRates()
+	 * @see #getParty()
+	 * @generated
+	 */
+	EReference getParty_PartyRates();
+
+	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.party.party.Party#getPartyRoles <em>Party Roles</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -4522,6 +4880,28 @@ public interface PartyPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getParty_PartyTypeId();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.party.party.Party#getPerformanceNotes <em>Performance Notes</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Performance Notes</em>'.
+	 * @see org.abchip.mimo.biz.model.party.party.Party#getPerformanceNotes()
+	 * @see #getParty()
+	 * @generated
+	 */
+	EReference getParty_PerformanceNotes();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.party.party.Party#getPersonTrainings <em>Person Trainings</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Person Trainings</em>'.
+	 * @see org.abchip.mimo.biz.model.party.party.Party#getPersonTrainings()
+	 * @see #getParty()
+	 * @generated
+	 */
+	EReference getParty_PersonTrainings();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.party.party.Party#getPreferredCurrencyUomId <em>Preferred Currency Uom Id</em>}'.
@@ -6947,6 +7327,14 @@ public interface PartyPackage extends EPackage {
 		EAttribute PARTY__DESCRIPTION = eINSTANCE.getParty_Description();
 
 		/**
+		 * The meta object literal for the '<em><b>Empl Leaves</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PARTY__EMPL_LEAVES = eINSTANCE.getParty_EmplLeaves();
+
+		/**
 		 * The meta object literal for the '<em><b>External Id</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -6987,6 +7375,46 @@ public interface PartyPackage extends EPackage {
 		EReference PARTY__PARTY_ATTRIBUTES = eINSTANCE.getParty_PartyAttributes();
 
 		/**
+		 * The meta object literal for the '<em><b>Party Carrier Accounts</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PARTY__PARTY_CARRIER_ACCOUNTS = eINSTANCE.getParty_PartyCarrierAccounts();
+
+		/**
+		 * The meta object literal for the '<em><b>Party Classifications</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PARTY__PARTY_CLASSIFICATIONS = eINSTANCE.getParty_PartyClassifications();
+
+		/**
+		 * The meta object literal for the '<em><b>Party Contact Mechs</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PARTY__PARTY_CONTACT_MECHS = eINSTANCE.getParty_PartyContactMechs();
+
+		/**
+		 * The meta object literal for the '<em><b>Party Data Sources</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PARTY__PARTY_DATA_SOURCES = eINSTANCE.getParty_PartyDataSources();
+
+		/**
+		 * The meta object literal for the '<em><b>Party Geo Points</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PARTY__PARTY_GEO_POINTS = eINSTANCE.getParty_PartyGeoPoints();
+
+		/**
 		 * The meta object literal for the '<em><b>Party Identifications</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -7019,6 +7447,22 @@ public interface PartyPackage extends EPackage {
 		EReference PARTY__PARTY_PROFILE_DEFAULTS = eINSTANCE.getParty_PartyProfileDefaults();
 
 		/**
+		 * The meta object literal for the '<em><b>Party Quals</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PARTY__PARTY_QUALS = eINSTANCE.getParty_PartyQuals();
+
+		/**
+		 * The meta object literal for the '<em><b>Party Rates</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PARTY__PARTY_RATES = eINSTANCE.getParty_PartyRates();
+
+		/**
 		 * The meta object literal for the '<em><b>Party Roles</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -7041,6 +7485,22 @@ public interface PartyPackage extends EPackage {
 		 * @generated
 		 */
 		EReference PARTY__PARTY_TYPE_ID = eINSTANCE.getParty_PartyTypeId();
+
+		/**
+		 * The meta object literal for the '<em><b>Performance Notes</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PARTY__PERFORMANCE_NOTES = eINSTANCE.getParty_PerformanceNotes();
+
+		/**
+		 * The meta object literal for the '<em><b>Person Trainings</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PARTY__PERSON_TRAININGS = eINSTANCE.getParty_PersonTrainings();
 
 		/**
 		 * The meta object literal for the '<em><b>Preferred Currency Uom Id</b></em>' reference feature.

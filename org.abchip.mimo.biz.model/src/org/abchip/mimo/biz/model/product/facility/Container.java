@@ -7,6 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.facility;
 
+import java.util.List;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
 
@@ -20,6 +21,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Container#getContainerId <em>Container Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.Container#getContainerGeoPoints <em>Container Geo Points</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Container#getContainerTypeId <em>Container Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Container#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Container#getFacilityId <em>Facility Id</em>}</li>
@@ -134,5 +136,18 @@ public interface Container extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setContainerId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Container Geo Points</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Container Geo Points</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getContainer_ContainerGeoPoints()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ContainerGeoPoint> getContainerGeoPoints();
 
 } // Container

@@ -40,6 +40,8 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaign#isIsActive <em>Is Active</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaign#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaign#getMarketingCampaignNotes <em>Marketing Campaign Notes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaign#getMarketingCampaignPrices <em>Marketing Campaign Prices</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaign#getMarketingCampaignPromos <em>Marketing Campaign Promos</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaign#getNumSent <em>Num Sent</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaign#getParentCampaignId <em>Parent Campaign Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaign#getStartDate <em>Start Date</em>}</li>
@@ -405,6 +407,32 @@ public interface MarketingCampaign extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	List<MarketingCampaignNote> getMarketingCampaignNotes();
+
+	/**
+	 * Returns the value of the '<em><b>Marketing Campaign Prices</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignPrice}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Marketing Campaign Prices</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage#getMarketingCampaign_MarketingCampaignPrices()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<MarketingCampaignPrice> getMarketingCampaignPrices();
+
+	/**
+	 * Returns the value of the '<em><b>Marketing Campaign Promos</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignPromo}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Marketing Campaign Promos</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage#getMarketingCampaign_MarketingCampaignPromos()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<MarketingCampaignPromo> getMarketingCampaignPromos();
 
 	/**
 	 * Returns the value of the '<em><b>Marketing Campaign Id</b></em>' attribute.

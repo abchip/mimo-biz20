@@ -135,13 +135,22 @@ public interface CategoryPackage extends EPackage {
 	int PRODUCT_CATEGORY__CATEGORY_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 6;
 
 	/**
+	 * The feature id for the '<em><b>Current Product Category Rollups</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_CATEGORY__CURRENT_PRODUCT_CATEGORY_ROLLUPS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+
+	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 7;
+	int PRODUCT_CATEGORY__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Detail Screen</b></em>' attribute.
@@ -150,7 +159,7 @@ public interface CategoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY__DETAIL_SCREEN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 8;
+	int PRODUCT_CATEGORY__DETAIL_SCREEN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Link One Image Url</b></em>' attribute.
@@ -159,7 +168,7 @@ public interface CategoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY__LINK_ONE_IMAGE_URL = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 9;
+	int PRODUCT_CATEGORY__LINK_ONE_IMAGE_URL = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Link Two Image Url</b></em>' attribute.
@@ -168,7 +177,7 @@ public interface CategoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY__LINK_TWO_IMAGE_URL = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 10;
+	int PRODUCT_CATEGORY__LINK_TWO_IMAGE_URL = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Long Description</b></em>' attribute.
@@ -177,7 +186,16 @@ public interface CategoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY__LONG_DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 11;
+	int PRODUCT_CATEGORY__LONG_DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
+
+	/**
+	 * The feature id for the '<em><b>Market Interests</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_CATEGORY__MARKET_INTERESTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Primary Parent Category Id</b></em>' reference.
@@ -186,7 +204,7 @@ public interface CategoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY__PRIMARY_PARENT_CATEGORY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 12;
+	int PRODUCT_CATEGORY__PRIMARY_PARENT_CATEGORY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Product Category Attributes</b></em>' reference list.
@@ -195,7 +213,25 @@ public interface CategoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY__PRODUCT_CATEGORY_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 13;
+	int PRODUCT_CATEGORY__PRODUCT_CATEGORY_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
+
+	/**
+	 * The feature id for the '<em><b>Product Category Links</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_CATEGORY__PRODUCT_CATEGORY_LINKS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
+
+	/**
+	 * The feature id for the '<em><b>Product Category Members</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_CATEGORY__PRODUCT_CATEGORY_MEMBERS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Product Category Type Id</b></em>' reference.
@@ -204,7 +240,25 @@ public interface CategoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY__PRODUCT_CATEGORY_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 14;
+	int PRODUCT_CATEGORY__PRODUCT_CATEGORY_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
+
+	/**
+	 * The feature id for the '<em><b>Product Feature Cat Grp Appls</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_CATEGORY__PRODUCT_FEATURE_CAT_GRP_APPLS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
+
+	/**
+	 * The feature id for the '<em><b>Product Feature Category Appls</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_CATEGORY__PRODUCT_FEATURE_CATEGORY_APPLS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Show In Select</b></em>' attribute.
@@ -213,7 +267,7 @@ public interface CategoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY__SHOW_IN_SELECT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
+	int PRODUCT_CATEGORY__SHOW_IN_SELECT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The number of structural features of the '<em>Product Category</em>' class.
@@ -222,7 +276,7 @@ public interface CategoryPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_CATEGORY_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
+	int PRODUCT_CATEGORY_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.category.impl.ProductCategoryAttributeImpl <em>Product Category Attribute</em>}' class.
@@ -1377,6 +1431,17 @@ public interface CategoryPackage extends EPackage {
 	EAttribute getProductCategory_CategoryName();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getCurrentProductCategoryRollups <em>Current Product Category Rollups</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Current Product Category Rollups</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategory#getCurrentProductCategoryRollups()
+	 * @see #getProductCategory()
+	 * @generated
+	 */
+	EReference getProductCategory_CurrentProductCategoryRollups();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getDescription <em>Description</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1432,6 +1497,17 @@ public interface CategoryPackage extends EPackage {
 	EAttribute getProductCategory_LongDescription();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getMarketInterests <em>Market Interests</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Market Interests</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategory#getMarketInterests()
+	 * @see #getProductCategory()
+	 * @generated
+	 */
+	EReference getProductCategory_MarketInterests();
+
+	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getPrimaryParentCategoryId <em>Primary Parent Category Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1454,6 +1530,28 @@ public interface CategoryPackage extends EPackage {
 	EReference getProductCategory_ProductCategoryAttributes();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getProductCategoryLinks <em>Product Category Links</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Product Category Links</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategory#getProductCategoryLinks()
+	 * @see #getProductCategory()
+	 * @generated
+	 */
+	EReference getProductCategory_ProductCategoryLinks();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getProductCategoryMembers <em>Product Category Members</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Product Category Members</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategory#getProductCategoryMembers()
+	 * @see #getProductCategory()
+	 * @generated
+	 */
+	EReference getProductCategory_ProductCategoryMembers();
+
+	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getProductCategoryTypeId <em>Product Category Type Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1463,6 +1561,28 @@ public interface CategoryPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getProductCategory_ProductCategoryTypeId();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getProductFeatureCatGrpAppls <em>Product Feature Cat Grp Appls</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Product Feature Cat Grp Appls</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategory#getProductFeatureCatGrpAppls()
+	 * @see #getProductCategory()
+	 * @generated
+	 */
+	EReference getProductCategory_ProductFeatureCatGrpAppls();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getProductFeatureCategoryAppls <em>Product Feature Category Appls</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Product Feature Category Appls</em>'.
+	 * @see org.abchip.mimo.biz.model.product.category.ProductCategory#getProductFeatureCategoryAppls()
+	 * @see #getProductCategory()
+	 * @generated
+	 */
+	EReference getProductCategory_ProductFeatureCategoryAppls();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getShowInSelect <em>Show In Select</em>}'.
@@ -2292,6 +2412,14 @@ public interface CategoryPackage extends EPackage {
 		EAttribute PRODUCT_CATEGORY__CATEGORY_NAME = eINSTANCE.getProductCategory_CategoryName();
 
 		/**
+		 * The meta object literal for the '<em><b>Current Product Category Rollups</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_CATEGORY__CURRENT_PRODUCT_CATEGORY_ROLLUPS = eINSTANCE.getProductCategory_CurrentProductCategoryRollups();
+
+		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2332,6 +2460,14 @@ public interface CategoryPackage extends EPackage {
 		EAttribute PRODUCT_CATEGORY__LONG_DESCRIPTION = eINSTANCE.getProductCategory_LongDescription();
 
 		/**
+		 * The meta object literal for the '<em><b>Market Interests</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_CATEGORY__MARKET_INTERESTS = eINSTANCE.getProductCategory_MarketInterests();
+
+		/**
 		 * The meta object literal for the '<em><b>Primary Parent Category Id</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -2348,12 +2484,44 @@ public interface CategoryPackage extends EPackage {
 		EReference PRODUCT_CATEGORY__PRODUCT_CATEGORY_ATTRIBUTES = eINSTANCE.getProductCategory_ProductCategoryAttributes();
 
 		/**
+		 * The meta object literal for the '<em><b>Product Category Links</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_CATEGORY__PRODUCT_CATEGORY_LINKS = eINSTANCE.getProductCategory_ProductCategoryLinks();
+
+		/**
+		 * The meta object literal for the '<em><b>Product Category Members</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_CATEGORY__PRODUCT_CATEGORY_MEMBERS = eINSTANCE.getProductCategory_ProductCategoryMembers();
+
+		/**
 		 * The meta object literal for the '<em><b>Product Category Type Id</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference PRODUCT_CATEGORY__PRODUCT_CATEGORY_TYPE_ID = eINSTANCE.getProductCategory_ProductCategoryTypeId();
+
+		/**
+		 * The meta object literal for the '<em><b>Product Feature Cat Grp Appls</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_CATEGORY__PRODUCT_FEATURE_CAT_GRP_APPLS = eINSTANCE.getProductCategory_ProductFeatureCatGrpAppls();
+
+		/**
+		 * The meta object literal for the '<em><b>Product Feature Category Appls</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_CATEGORY__PRODUCT_FEATURE_CATEGORY_APPLS = eINSTANCE.getProductCategory_ProductFeatureCategoryAppls();
 
 		/**
 		 * The meta object literal for the '<em><b>Show In Select</b></em>' attribute feature.

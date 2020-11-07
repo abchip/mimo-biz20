@@ -11,16 +11,25 @@ import java.util.Date;
 import java.util.List;
 import org.abchip.mimo.biz.model.accounting.payment.CreditCard;
 import org.abchip.mimo.biz.model.accounting.payment.PaymentMethod;
+import org.abchip.mimo.biz.model.accounting.rate.PartyRate;
 import org.abchip.mimo.biz.model.common.datasource.DataSource;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.common.uom.Uom;
+import org.abchip.mimo.biz.model.humanres.ability.PartyQual;
 import org.abchip.mimo.biz.model.humanres.ability.PartySkill;
+import org.abchip.mimo.biz.model.humanres.ability.PerformanceNote;
+import org.abchip.mimo.biz.model.humanres.ability.PersonTraining;
+import org.abchip.mimo.biz.model.humanres.employment.EmplLeave;
 import org.abchip.mimo.biz.model.party.contact.ContactMech;
 import org.abchip.mimo.biz.model.party.contact.PartyContactMech;
 import org.abchip.mimo.biz.model.party.contact.PostalAddress;
 import org.abchip.mimo.biz.model.party.contact.TelecomNumber;
 import org.abchip.mimo.biz.model.party.party.Party;
 import org.abchip.mimo.biz.model.party.party.PartyAttribute;
+import org.abchip.mimo.biz.model.party.party.PartyCarrierAccount;
+import org.abchip.mimo.biz.model.party.party.PartyClassification;
+import org.abchip.mimo.biz.model.party.party.PartyDataSource;
+import org.abchip.mimo.biz.model.party.party.PartyGeoPoint;
 import org.abchip.mimo.biz.model.party.party.PartyIdentification;
 import org.abchip.mimo.biz.model.party.party.PartyNameHistory;
 import org.abchip.mimo.biz.model.party.party.PartyNote;
@@ -58,18 +67,28 @@ import org.osgi.service.log.Logger;
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getCreatedDate <em>Created Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getDataSourceId <em>Data Source Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getDescription <em>Description</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getEmplLeaves <em>Empl Leaves</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getExternalId <em>External Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getIsUnread <em>Is Unread</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyAttributes <em>Party Attributes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyCarrierAccounts <em>Party Carrier Accounts</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyClassifications <em>Party Classifications</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyContactMechs <em>Party Contact Mechs</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyDataSources <em>Party Data Sources</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyGeoPoints <em>Party Geo Points</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyIdentifications <em>Party Identifications</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyNameHistories <em>Party Name Histories</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyNotes <em>Party Notes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyProfileDefaults <em>Party Profile Defaults</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyQuals <em>Party Quals</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyRates <em>Party Rates</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyRoles <em>Party Roles</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartySkills <em>Party Skills</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPartyTypeId <em>Party Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPerformanceNotes <em>Performance Notes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPersonTrainings <em>Person Trainings</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getPreferredCurrencyUomId <em>Preferred Currency Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getStatusId <em>Status Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.party.party.impl.PartyImpl#getSupplierProductFeatures <em>Supplier Product Features</em>}</li>
@@ -261,6 +280,17 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 	}
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<EmplLeave> getEmplLeaves() {
+		return (List<EmplLeave>)eGet(PartyPackage.Literals.PARTY__EMPL_LEAVES, true);
+	}
+
+	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -343,6 +373,61 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 	}
 
 	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<PartyCarrierAccount> getPartyCarrierAccounts() {
+		return (List<PartyCarrierAccount>)eGet(PartyPackage.Literals.PARTY__PARTY_CARRIER_ACCOUNTS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<PartyClassification> getPartyClassifications() {
+		return (List<PartyClassification>)eGet(PartyPackage.Literals.PARTY__PARTY_CLASSIFICATIONS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<PartyContactMech> getPartyContactMechs() {
+		return (List<PartyContactMech>)eGet(PartyPackage.Literals.PARTY__PARTY_CONTACT_MECHS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<PartyDataSource> getPartyDataSources() {
+		return (List<PartyDataSource>)eGet(PartyPackage.Literals.PARTY__PARTY_DATA_SOURCES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<PartyGeoPoint> getPartyGeoPoints() {
+		return (List<PartyGeoPoint>)eGet(PartyPackage.Literals.PARTY__PARTY_GEO_POINTS, true);
+	}
+
+	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
 	 * @generated
 	 */
@@ -380,6 +465,28 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 	@Override
 	public List<PartyProfileDefault> getPartyProfileDefaults() {
 		return (List<PartyProfileDefault>)eGet(PartyPackage.Literals.PARTY__PARTY_PROFILE_DEFAULTS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<PartyQual> getPartyQuals() {
+		return (List<PartyQual>)eGet(PartyPackage.Literals.PARTY__PARTY_QUALS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<PartyRate> getPartyRates() {
+		return (List<PartyRate>)eGet(PartyPackage.Literals.PARTY__PARTY_RATES, true);
 	}
 
 	/**
@@ -660,6 +767,28 @@ public class PartyImpl extends EntityTypedImpl<PartyType> implements Party {
 	@Override
 	public void setPartyTypeId(PartyType newPartyTypeId) {
 		eSet(PartyPackage.Literals.PARTY__PARTY_TYPE_ID, newPartyTypeId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<PerformanceNote> getPerformanceNotes() {
+		return (List<PerformanceNote>)eGet(PartyPackage.Literals.PARTY__PERFORMANCE_NOTES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<PersonTraining> getPersonTrainings() {
+		return (List<PersonTraining>)eGet(PartyPackage.Literals.PARTY__PERSON_TRAININGS, true);
 	}
 
 	/**

@@ -7,6 +7,7 @@
  */
 package org.abchip.mimo.biz.model.accounting.payment;
 
+import java.util.List;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityTyped;
 
@@ -20,6 +21,7 @@ import org.abchip.mimo.entity.EntityTyped;
  * </p>
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGroup#getPaymentGroupId <em>Payment Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGroup#getPaymentGroupMembers <em>Payment Group Members</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGroup#getPaymentGroupName <em>Payment Group Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.accounting.payment.PaymentGroup#getPaymentGroupTypeId <em>Payment Group Type Id</em>}</li>
  * </ul>
@@ -107,5 +109,18 @@ public interface PaymentGroup extends EntityTyped<PaymentGroupType>, EntityInfo 
 	 * @generated
 	 */
 	void setPaymentGroupId(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Payment Group Members</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.accounting.payment.PaymentGroupMember}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Payment Group Members</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.accounting.payment.PaymentPackage#getPaymentGroup_PaymentGroupMembers()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<PaymentGroupMember> getPaymentGroupMembers();
 
 } // PaymentGroup

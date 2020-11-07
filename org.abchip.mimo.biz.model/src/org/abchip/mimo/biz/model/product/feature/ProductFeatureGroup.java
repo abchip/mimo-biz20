@@ -7,6 +7,7 @@
  */
 package org.abchip.mimo.biz.model.product.feature;
 
+import java.util.List;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
 
@@ -21,6 +22,7 @@ import org.abchip.mimo.entity.EntityInfo;
  * <ul>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroup#getProductFeatureGroupId <em>Product Feature Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroup#getDescription <em>Description</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroup#getProductFeatureGroupAppls <em>Product Feature Group Appls</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureGroup()
@@ -53,6 +55,19 @@ public interface ProductFeatureGroup extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setDescription(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Feature Group Appls</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Feature Group Appls</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.feature.FeaturePackage#getProductFeatureGroup_ProductFeatureGroupAppls()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ProductFeatureGroupAppl> getProductFeatureGroupAppls();
 
 	/**
 	 * Returns the value of the '<em><b>Product Feature Group Id</b></em>' attribute.

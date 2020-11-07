@@ -270,13 +270,22 @@ public interface ContentPackage extends EPackage {
 	int CONTENT__DESCRIPTION = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
+	 * The feature id for the '<em><b>From Comm Event Content Assocs</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTENT__FROM_COMM_EVENT_CONTENT_ASSOCS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
+
+	/**
 	 * The feature id for the '<em><b>Instance Of Content Id</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONTENT__INSTANCE_OF_CONTENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
+	int CONTENT__INSTANCE_OF_CONTENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified By User Login</b></em>' reference.
@@ -285,7 +294,7 @@ public interface ContentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTENT__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
+	int CONTENT__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified Date</b></em>' attribute.
@@ -294,7 +303,7 @@ public interface ContentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTENT__LAST_MODIFIED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
+	int CONTENT__LAST_MODIFIED_DATE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Locale String</b></em>' attribute.
@@ -303,7 +312,7 @@ public interface ContentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTENT__LOCALE_STRING = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
+	int CONTENT__LOCALE_STRING = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Mime Type Id</b></em>' reference.
@@ -312,7 +321,7 @@ public interface ContentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTENT__MIME_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
+	int CONTENT__MIME_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Owner Content Id</b></em>' reference.
@@ -321,7 +330,7 @@ public interface ContentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTENT__OWNER_CONTENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
+	int CONTENT__OWNER_CONTENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Privilege Enum Id</b></em>' reference.
@@ -330,7 +339,7 @@ public interface ContentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTENT__PRIVILEGE_ENUM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
+	int CONTENT__PRIVILEGE_ENUM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Service Name</b></em>' attribute.
@@ -339,7 +348,7 @@ public interface ContentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTENT__SERVICE_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
+	int CONTENT__SERVICE_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Status Id</b></em>' reference.
@@ -348,7 +357,7 @@ public interface ContentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTENT__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
+	int CONTENT__STATUS_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Template Data Resource Id</b></em>' reference.
@@ -357,7 +366,7 @@ public interface ContentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTENT__TEMPLATE_DATA_RESOURCE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
+	int CONTENT__TEMPLATE_DATA_RESOURCE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 32;
 
 	/**
 	 * The number of structural features of the '<em>Content</em>' class.
@@ -366,7 +375,7 @@ public interface ContentPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTENT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 32;
+	int CONTENT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 33;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.content.content.impl.ContentApprovalImpl <em>Approval</em>}' class.
@@ -2405,6 +2414,17 @@ public interface ContentPackage extends EPackage {
 	EAttribute getContent_Description();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.content.content.Content#getFromCommEventContentAssocs <em>From Comm Event Content Assocs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>From Comm Event Content Assocs</em>'.
+	 * @see org.abchip.mimo.biz.model.content.content.Content#getFromCommEventContentAssocs()
+	 * @see #getContent()
+	 * @generated
+	 */
+	EReference getContent_FromCommEventContentAssocs();
+
+	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.content.content.Content#getInstanceOfContentId <em>Instance Of Content Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3881,6 +3901,14 @@ public interface ContentPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CONTENT__DESCRIPTION = eINSTANCE.getContent_Description();
+
+		/**
+		 * The meta object literal for the '<em><b>From Comm Event Content Assocs</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONTENT__FROM_COMM_EVENT_CONTENT_ASSOCS = eINSTANCE.getContent_FromCommEventContentAssocs();
 
 		/**
 		 * The meta object literal for the '<em><b>Instance Of Content Id</b></em>' reference feature.

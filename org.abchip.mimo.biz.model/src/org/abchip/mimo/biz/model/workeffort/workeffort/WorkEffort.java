@@ -84,8 +84,11 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getTotalMoneyAllowed <em>Total Money Allowed</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getUniversalId <em>Universal Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortAttributes <em>Work Effort Attributes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortContactMechs <em>Work Effort Contact Mechs</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortCostCalcs <em>Work Effort Cost Calcs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortDeliverableProds <em>Work Effort Deliverable Prods</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortEventReminders <em>Work Effort Event Reminders</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortFixedAssetAssigns <em>Work Effort Fixed Asset Assigns</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortFixedAssetStds <em>Work Effort Fixed Asset Stds</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortInventoryAssigns <em>Work Effort Inventory Assigns</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortInventoryProduceds <em>Work Effort Inventory Produceds</em>}</li>
@@ -95,6 +98,7 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortParentId <em>Work Effort Parent Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortPurposeTypeId <em>Work Effort Purpose Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortSkillStandards <em>Work Effort Skill Standards</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortSurveyAppls <em>Work Effort Survey Appls</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortTypeId <em>Work Effort Type Id</em>}</li>
  * </ul>
  *
@@ -1338,6 +1342,32 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	List<WorkEffortAttribute> getWorkEffortAttributes();
 
 	/**
+	 * Returns the value of the '<em><b>Work Effort Contact Mechs</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContactMech}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Work Effort Contact Mechs</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_WorkEffortContactMechs()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<WorkEffortContactMech> getWorkEffortContactMechs();
+
+	/**
+	 * Returns the value of the '<em><b>Work Effort Cost Calcs</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortCostCalc}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Work Effort Cost Calcs</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_WorkEffortCostCalcs()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<WorkEffortCostCalc> getWorkEffortCostCalcs();
+
+	/**
 	 * Returns the value of the '<em><b>Work Effort Deliverable Prods</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortDeliverableProd}.
 	 * <!-- begin-user-doc -->
@@ -1368,6 +1398,19 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @generated
 	 */
 	List<WorkEffortEventReminder> getWorkEffortEventReminders();
+
+	/**
+	 * Returns the value of the '<em><b>Work Effort Fixed Asset Assigns</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Work Effort Fixed Asset Assigns</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_WorkEffortFixedAssetAssigns()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<WorkEffortFixedAssetAssign> getWorkEffortFixedAssetAssigns();
 
 	/**
 	 * Returns the value of the '<em><b>Work Effort Fixed Asset Stds</b></em>' reference list.
@@ -1570,6 +1613,19 @@ public interface WorkEffort extends EntityTyped<WorkEffortType>, EntityInfo {
 	 * @generated
 	 */
 	List<WorkEffortSkillStandard> getWorkEffortSkillStandards();
+
+	/**
+	 * Returns the value of the '<em><b>Work Effort Survey Appls</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSurveyAppl}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Work Effort Survey Appls</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage#getWorkEffort_WorkEffortSurveyAppls()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<WorkEffortSurveyAppl> getWorkEffortSurveyAppls();
 
 	/**
 	 * Returns the value of the '<em><b>Work Effort Type Id</b></em>' reference.

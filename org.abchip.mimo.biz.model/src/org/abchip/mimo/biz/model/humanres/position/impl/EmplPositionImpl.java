@@ -8,8 +8,12 @@
 package org.abchip.mimo.biz.model.humanres.position.impl;
 
 import java.util.Date;
+import java.util.List;
 import org.abchip.mimo.biz.model.common.status.StatusItem;
 import org.abchip.mimo.biz.model.humanres.position.EmplPosition;
+import org.abchip.mimo.biz.model.humanres.position.EmplPositionFulfillment;
+import org.abchip.mimo.biz.model.humanres.position.EmplPositionReportingStruct;
+import org.abchip.mimo.biz.model.humanres.position.EmplPositionResponsibility;
 import org.abchip.mimo.biz.model.humanres.position.EmplPositionType;
 import org.abchip.mimo.biz.model.humanres.position.PositionPackage;
 import org.abchip.mimo.biz.model.party.party.Party;
@@ -35,12 +39,15 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getActualThruDate <em>Actual Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getBudgetId <em>Budget Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getBudgetItemSeqId <em>Budget Item Seq Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getEmplPositionFulfillments <em>Empl Position Fulfillments</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getEmplPositionResponsibilities <em>Empl Position Responsibilities</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getEmplPositionTypeId <em>Empl Position Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getEstimatedFromDate <em>Estimated From Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getEstimatedThruDate <em>Estimated Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#isExemptFlag <em>Exempt Flag</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#isFulltimeFlag <em>Fulltime Flag</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getPartyId <em>Party Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getReportingToEmplPositionReportingStructs <em>Reporting To Empl Position Reporting Structs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#isSalaryFlag <em>Salary Flag</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#getStatusId <em>Status Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.humanres.position.impl.EmplPositionImpl#isTemporaryFlag <em>Temporary Flag</em>}</li>
@@ -244,6 +251,28 @@ public class EmplPositionImpl extends EntityTypedImpl<EmplPositionType> implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<EmplPositionFulfillment> getEmplPositionFulfillments() {
+		return (List<EmplPositionFulfillment>)eGet(PositionPackage.Literals.EMPL_POSITION__EMPL_POSITION_FULFILLMENTS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<EmplPositionResponsibility> getEmplPositionResponsibilities() {
+		return (List<EmplPositionResponsibility>)eGet(PositionPackage.Literals.EMPL_POSITION__EMPL_POSITION_RESPONSIBILITIES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public String getEmplPositionId() {
 		return (String)eGet(PositionPackage.Literals.EMPL_POSITION__EMPL_POSITION_ID, true);
@@ -377,6 +406,17 @@ public class EmplPositionImpl extends EntityTypedImpl<EmplPositionType> implemen
 	@Override
 	public void setPartyId(Party newPartyId) {
 		eSet(PositionPackage.Literals.EMPL_POSITION__PARTY_ID, newPartyId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<EmplPositionReportingStruct> getReportingToEmplPositionReportingStructs() {
+		return (List<EmplPositionReportingStruct>)eGet(PositionPackage.Literals.EMPL_POSITION__REPORTING_TO_EMPL_POSITION_REPORTING_STRUCTS, true);
 	}
 
 	/**

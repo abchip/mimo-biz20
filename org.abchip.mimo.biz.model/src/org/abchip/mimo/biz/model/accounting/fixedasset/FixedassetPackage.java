@@ -471,13 +471,22 @@ public interface FixedassetPackage extends EPackage {
 	int FIXED_ASSET__FIXED_ASSET_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 15;
 
 	/**
+	 * The feature id for the '<em><b>Fixed Asset Geo Points</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FIXED_ASSET__FIXED_ASSET_GEO_POINTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
+
+	/**
 	 * The feature id for the '<em><b>Fixed Asset Idents</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__FIXED_ASSET_IDENTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 16;
+	int FIXED_ASSET__FIXED_ASSET_IDENTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Fixed Asset Maints</b></em>' reference list.
@@ -486,7 +495,7 @@ public interface FixedassetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__FIXED_ASSET_MAINTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 17;
+	int FIXED_ASSET__FIXED_ASSET_MAINTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Fixed Asset Name</b></em>' attribute.
@@ -495,7 +504,7 @@ public interface FixedassetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__FIXED_ASSET_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 18;
+	int FIXED_ASSET__FIXED_ASSET_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Fixed Asset Registrations</b></em>' reference list.
@@ -504,7 +513,16 @@ public interface FixedassetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__FIXED_ASSET_REGISTRATIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 19;
+	int FIXED_ASSET__FIXED_ASSET_REGISTRATIONS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
+
+	/**
+	 * The feature id for the '<em><b>Fixed Asset Std Costs</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FIXED_ASSET__FIXED_ASSET_STD_COSTS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
 
 	/**
 	 * The feature id for the '<em><b>Fixed Asset Type Id</b></em>' reference.
@@ -513,7 +531,7 @@ public interface FixedassetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__FIXED_ASSET_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 20;
+	int FIXED_ASSET__FIXED_ASSET_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
 
 	/**
 	 * The feature id for the '<em><b>Instance Of Product Id</b></em>' reference.
@@ -522,7 +540,7 @@ public interface FixedassetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__INSTANCE_OF_PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 21;
+	int FIXED_ASSET__INSTANCE_OF_PRODUCT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
 
 	/**
 	 * The feature id for the '<em><b>Located At Facility Id</b></em>' reference.
@@ -531,7 +549,7 @@ public interface FixedassetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__LOCATED_AT_FACILITY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 22;
+	int FIXED_ASSET__LOCATED_AT_FACILITY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
 
 	/**
 	 * The feature id for the '<em><b>Located At Location Seq Id</b></em>' attribute.
@@ -540,7 +558,7 @@ public interface FixedassetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__LOCATED_AT_LOCATION_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 23;
+	int FIXED_ASSET__LOCATED_AT_LOCATION_SEQ_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
 
 	/**
 	 * The feature id for the '<em><b>Parent Fixed Asset Id</b></em>' reference.
@@ -549,7 +567,7 @@ public interface FixedassetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__PARENT_FIXED_ASSET_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 24;
+	int FIXED_ASSET__PARENT_FIXED_ASSET_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
 
 	/**
 	 * The feature id for the '<em><b>Party Id</b></em>' reference.
@@ -558,7 +576,7 @@ public interface FixedassetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 25;
+	int FIXED_ASSET__PARTY_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
 
 	/**
 	 * The feature id for the '<em><b>Production Capacity</b></em>' attribute.
@@ -567,7 +585,7 @@ public interface FixedassetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__PRODUCTION_CAPACITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 26;
+	int FIXED_ASSET__PRODUCTION_CAPACITY = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
 
 	/**
 	 * The feature id for the '<em><b>Purchase Cost</b></em>' attribute.
@@ -576,7 +594,7 @@ public interface FixedassetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__PURCHASE_COST = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 27;
+	int FIXED_ASSET__PURCHASE_COST = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
 
 	/**
 	 * The feature id for the '<em><b>Purchase Cost Uom Id</b></em>' attribute.
@@ -585,7 +603,7 @@ public interface FixedassetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__PURCHASE_COST_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 28;
+	int FIXED_ASSET__PURCHASE_COST_UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
 
 	/**
 	 * The feature id for the '<em><b>Role Type Id</b></em>' reference.
@@ -594,7 +612,7 @@ public interface FixedassetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__ROLE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 29;
+	int FIXED_ASSET__ROLE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
 
 	/**
 	 * The feature id for the '<em><b>Salvage Value</b></em>' attribute.
@@ -603,7 +621,7 @@ public interface FixedassetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__SALVAGE_VALUE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 30;
+	int FIXED_ASSET__SALVAGE_VALUE = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 32;
 
 	/**
 	 * The feature id for the '<em><b>Serial Number</b></em>' attribute.
@@ -612,7 +630,7 @@ public interface FixedassetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__SERIAL_NUMBER = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 31;
+	int FIXED_ASSET__SERIAL_NUMBER = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 33;
 
 	/**
 	 * The feature id for the '<em><b>Uom Id</b></em>' reference.
@@ -621,7 +639,7 @@ public interface FixedassetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET__UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 32;
+	int FIXED_ASSET__UOM_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 34;
 
 	/**
 	 * The number of structural features of the '<em>Fixed Asset</em>' class.
@@ -630,7 +648,7 @@ public interface FixedassetPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int FIXED_ASSET_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 33;
+	int FIXED_ASSET_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 35;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.accounting.fixedasset.impl.FixedAssetAttributeImpl <em>Fixed Asset Attribute</em>}' class.
@@ -2679,6 +2697,17 @@ public interface FixedassetPackage extends EPackage {
 	EReference getFixedAsset_FixedAssetAttributes();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetGeoPoints <em>Fixed Asset Geo Points</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Fixed Asset Geo Points</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetGeoPoints()
+	 * @see #getFixedAsset()
+	 * @generated
+	 */
+	EReference getFixedAsset_FixedAssetGeoPoints();
+
+	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetIdents <em>Fixed Asset Idents</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -2721,6 +2750,17 @@ public interface FixedassetPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getFixedAsset_FixedAssetRegistrations();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetStdCosts <em>Fixed Asset Std Costs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Fixed Asset Std Costs</em>'.
+	 * @see org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetStdCosts()
+	 * @see #getFixedAsset()
+	 * @generated
+	 */
+	EReference getFixedAsset_FixedAssetStdCosts();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.accounting.fixedasset.FixedAsset#getFixedAssetTypeId <em>Fixed Asset Type Id</em>}'.
@@ -4264,6 +4304,14 @@ public interface FixedassetPackage extends EPackage {
 		EReference FIXED_ASSET__FIXED_ASSET_ATTRIBUTES = eINSTANCE.getFixedAsset_FixedAssetAttributes();
 
 		/**
+		 * The meta object literal for the '<em><b>Fixed Asset Geo Points</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FIXED_ASSET__FIXED_ASSET_GEO_POINTS = eINSTANCE.getFixedAsset_FixedAssetGeoPoints();
+
+		/**
 		 * The meta object literal for the '<em><b>Fixed Asset Idents</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -4294,6 +4342,14 @@ public interface FixedassetPackage extends EPackage {
 		 * @generated
 		 */
 		EReference FIXED_ASSET__FIXED_ASSET_REGISTRATIONS = eINSTANCE.getFixedAsset_FixedAssetRegistrations();
+
+		/**
+		 * The meta object literal for the '<em><b>Fixed Asset Std Costs</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference FIXED_ASSET__FIXED_ASSET_STD_COSTS = eINSTANCE.getFixedAsset_FixedAssetStdCosts();
 
 		/**
 		 * The meta object literal for the '<em><b>Fixed Asset Type Id</b></em>' reference feature.

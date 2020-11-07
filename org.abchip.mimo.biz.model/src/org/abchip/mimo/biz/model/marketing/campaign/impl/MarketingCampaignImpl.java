@@ -15,6 +15,8 @@ import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.marketing.campaign.CampaignPackage;
 import org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaign;
 import org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignNote;
+import org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignPrice;
+import org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaignPromo;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
 import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
@@ -47,6 +49,8 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#isIsActive <em>Is Active</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getMarketingCampaignNotes <em>Marketing Campaign Notes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getMarketingCampaignPrices <em>Marketing Campaign Prices</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getMarketingCampaignPromos <em>Marketing Campaign Promos</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getNumSent <em>Num Sent</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getParentCampaignId <em>Parent Campaign Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.campaign.impl.MarketingCampaignImpl#getStartDate <em>Start Date</em>}</li>
@@ -437,6 +441,28 @@ public class MarketingCampaignImpl extends EntityIdentifiableImpl implements Mar
 	@Override
 	public List<MarketingCampaignNote> getMarketingCampaignNotes() {
 		return (List<MarketingCampaignNote>)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN__MARKETING_CAMPAIGN_NOTES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<MarketingCampaignPrice> getMarketingCampaignPrices() {
+		return (List<MarketingCampaignPrice>)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN__MARKETING_CAMPAIGN_PRICES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<MarketingCampaignPromo> getMarketingCampaignPromos() {
+		return (List<MarketingCampaignPromo>)eGet(CampaignPackage.Literals.MARKETING_CAMPAIGN__MARKETING_CAMPAIGN_PROMOS, true);
 	}
 
 	/**

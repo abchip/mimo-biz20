@@ -289,13 +289,22 @@ public interface LoginPackage extends EPackage {
 	int USER_LOGIN__USER_LOGIN_PASSWORD_HISTORIES = ContextPackage.USER_PROFILE_FEATURE_COUNT + 17;
 
 	/**
+	 * The feature id for the '<em><b>User Login Security Groups</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER_LOGIN__USER_LOGIN_SECURITY_GROUPS = ContextPackage.USER_PROFILE_FEATURE_COUNT + 18;
+
+	/**
 	 * The feature id for the '<em><b>User Preferences</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN__USER_PREFERENCES = ContextPackage.USER_PROFILE_FEATURE_COUNT + 18;
+	int USER_LOGIN__USER_PREFERENCES = ContextPackage.USER_PROFILE_FEATURE_COUNT + 19;
 
 	/**
 	 * The number of structural features of the '<em>User Login</em>' class.
@@ -304,7 +313,7 @@ public interface LoginPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int USER_LOGIN_FEATURE_COUNT = ContextPackage.USER_PROFILE_FEATURE_COUNT + 19;
+	int USER_LOGIN_FEATURE_COUNT = ContextPackage.USER_PROFILE_FEATURE_COUNT + 20;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginHistoryImpl <em>User Login History</em>}' class.
@@ -898,6 +907,17 @@ public interface LoginPackage extends EPackage {
 	EReference getUserLogin_UserLoginPasswordHistories();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.security.login.UserLogin#getUserLoginSecurityGroups <em>User Login Security Groups</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>User Login Security Groups</em>'.
+	 * @see org.abchip.mimo.biz.model.security.login.UserLogin#getUserLoginSecurityGroups()
+	 * @see #getUserLogin()
+	 * @generated
+	 */
+	EReference getUserLogin_UserLoginSecurityGroups();
+
+	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.security.login.UserLogin#getUserPreferences <em>User Preferences</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1321,6 +1341,14 @@ public interface LoginPackage extends EPackage {
 		 * @generated
 		 */
 		EReference USER_LOGIN__USER_LOGIN_PASSWORD_HISTORIES = eINSTANCE.getUserLogin_UserLoginPasswordHistories();
+
+		/**
+		 * The meta object literal for the '<em><b>User Login Security Groups</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference USER_LOGIN__USER_LOGIN_SECURITY_GROUPS = eINSTANCE.getUserLogin_UserLoginSecurityGroups();
 
 		/**
 		 * The meta object literal for the '<em><b>User Preferences</b></em>' reference list feature.

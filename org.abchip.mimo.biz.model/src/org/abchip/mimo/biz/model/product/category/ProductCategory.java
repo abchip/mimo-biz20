@@ -8,6 +8,9 @@
 package org.abchip.mimo.biz.model.product.category;
 
 import java.util.List;
+import org.abchip.mimo.biz.model.product.feature.ProductFeatureCatGrpAppl;
+import org.abchip.mimo.biz.model.product.feature.ProductFeatureCategoryAppl;
+import org.abchip.mimo.biz.model.product.supplier.MarketInterest;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityTyped;
 
@@ -23,14 +26,20 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getProductCategoryId <em>Product Category Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getCategoryImageUrl <em>Category Image Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getCategoryName <em>Category Name</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getCurrentProductCategoryRollups <em>Current Product Category Rollups</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getDetailScreen <em>Detail Screen</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getLinkOneImageUrl <em>Link One Image Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getLinkTwoImageUrl <em>Link Two Image Url</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getLongDescription <em>Long Description</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getMarketInterests <em>Market Interests</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getPrimaryParentCategoryId <em>Primary Parent Category Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getProductCategoryAttributes <em>Product Category Attributes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getProductCategoryLinks <em>Product Category Links</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getProductCategoryMembers <em>Product Category Members</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getProductCategoryTypeId <em>Product Category Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getProductFeatureCatGrpAppls <em>Product Feature Cat Grp Appls</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getProductFeatureCategoryAppls <em>Product Feature Category Appls</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.category.ProductCategory#getShowInSelect <em>Show In Select</em>}</li>
  * </ul>
  *
@@ -90,6 +99,19 @@ public interface ProductCategory extends EntityTyped<ProductCategoryType>, Entit
 	 * @generated
 	 */
 	void setCategoryName(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Current Product Category Rollups</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.category.ProductCategoryRollup}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Current Product Category Rollups</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_CurrentProductCategoryRollups()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ProductCategoryRollup> getCurrentProductCategoryRollups();
 
 	/**
 	 * Returns the value of the '<em><b>Description</b></em>' attribute.
@@ -222,6 +244,19 @@ public interface ProductCategory extends EntityTyped<ProductCategoryType>, Entit
 	void setLongDescription(String value);
 
 	/**
+	 * Returns the value of the '<em><b>Market Interests</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.supplier.MarketInterest}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Market Interests</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_MarketInterests()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<MarketInterest> getMarketInterests();
+
+	/**
 	 * Returns the value of the '<em><b>Product Category Type Id</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <p>
@@ -246,6 +281,32 @@ public interface ProductCategory extends EntityTyped<ProductCategoryType>, Entit
 	 * @generated
 	 */
 	void setProductCategoryTypeId(ProductCategoryType value);
+
+	/**
+	 * Returns the value of the '<em><b>Product Feature Cat Grp Appls</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCatGrpAppl}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Feature Cat Grp Appls</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_ProductFeatureCatGrpAppls()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ProductFeatureCatGrpAppl> getProductFeatureCatGrpAppls();
+
+	/**
+	 * Returns the value of the '<em><b>Product Feature Category Appls</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.feature.ProductFeatureCategoryAppl}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Feature Category Appls</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_ProductFeatureCategoryAppls()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ProductFeatureCategoryAppl> getProductFeatureCategoryAppls();
 
 	/**
 	 * Returns the value of the '<em><b>Show In Select</b></em>' attribute.
@@ -310,6 +371,32 @@ public interface ProductCategory extends EntityTyped<ProductCategoryType>, Entit
 	 * @generated
 	 */
 	List<ProductCategoryAttribute> getProductCategoryAttributes();
+
+	/**
+	 * Returns the value of the '<em><b>Product Category Links</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.category.ProductCategoryLink}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Category Links</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_ProductCategoryLinks()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ProductCategoryLink> getProductCategoryLinks();
+
+	/**
+	 * Returns the value of the '<em><b>Product Category Members</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.category.ProductCategoryMember}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Category Members</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.category.CategoryPackage#getProductCategory_ProductCategoryMembers()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ProductCategoryMember> getProductCategoryMembers();
 
 	/**
 	 * Returns the value of the '<em><b>Product Category Id</b></em>' attribute.

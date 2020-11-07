@@ -612,13 +612,31 @@ public interface StorePackage extends EPackage {
 	int PRODUCT_STORE__PROD_SEARCH_EXCLUDE_VARIANTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 59;
 
 	/**
+	 * The feature id for the '<em><b>Product Store Catalogs</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_STORE__PRODUCT_STORE_CATALOGS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 60;
+
+	/**
 	 * The feature id for the '<em><b>Product Store Email Settings</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__PRODUCT_STORE_EMAIL_SETTINGS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 60;
+	int PRODUCT_STORE__PRODUCT_STORE_EMAIL_SETTINGS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 61;
+
+	/**
+	 * The feature id for the '<em><b>Product Store Facilities</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_STORE__PRODUCT_STORE_FACILITIES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 62;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Fin Act Settings</b></em>' reference list.
@@ -627,7 +645,34 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__PRODUCT_STORE_FIN_ACT_SETTINGS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 61;
+	int PRODUCT_STORE__PRODUCT_STORE_FIN_ACT_SETTINGS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 63;
+
+	/**
+	 * The feature id for the '<em><b>Product Store Group Members</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_STORE__PRODUCT_STORE_GROUP_MEMBERS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 64;
+
+	/**
+	 * The feature id for the '<em><b>Product Store Keyword Ovrds</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_STORE__PRODUCT_STORE_KEYWORD_OVRDS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 65;
+
+	/**
+	 * The feature id for the '<em><b>Product Store Promo Appls</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_STORE__PRODUCT_STORE_PROMO_APPLS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 66;
 
 	/**
 	 * The feature id for the '<em><b>Prorate Shipping</b></em>' attribute.
@@ -636,7 +681,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__PRORATE_SHIPPING = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 62;
+	int PRODUCT_STORE__PRORATE_SHIPPING = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 67;
 
 	/**
 	 * The feature id for the '<em><b>Prorate Taxes</b></em>' attribute.
@@ -645,7 +690,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__PRORATE_TAXES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 63;
+	int PRODUCT_STORE__PRORATE_TAXES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 68;
 
 	/**
 	 * The feature id for the '<em><b>Req Return Inventory Receive</b></em>' attribute.
@@ -654,7 +699,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__REQ_RETURN_INVENTORY_RECEIVE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 64;
+	int PRODUCT_STORE__REQ_RETURN_INVENTORY_RECEIVE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 69;
 
 	/**
 	 * The feature id for the '<em><b>Req Ship Addr For Dig Items</b></em>' attribute.
@@ -663,7 +708,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__REQ_SHIP_ADDR_FOR_DIG_ITEMS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 65;
+	int PRODUCT_STORE__REQ_SHIP_ADDR_FOR_DIG_ITEMS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 70;
 
 	/**
 	 * The feature id for the '<em><b>Require Customer Role</b></em>' attribute.
@@ -672,7 +717,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__REQUIRE_CUSTOMER_ROLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 66;
+	int PRODUCT_STORE__REQUIRE_CUSTOMER_ROLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 71;
 
 	/**
 	 * The feature id for the '<em><b>Require Inventory</b></em>' attribute.
@@ -681,7 +726,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__REQUIRE_INVENTORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 67;
+	int PRODUCT_STORE__REQUIRE_INVENTORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 72;
 
 	/**
 	 * The feature id for the '<em><b>Requirement Method Enum Id</b></em>' reference.
@@ -690,7 +735,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__REQUIREMENT_METHOD_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 68;
+	int PRODUCT_STORE__REQUIREMENT_METHOD_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 73;
 
 	/**
 	 * The feature id for the '<em><b>Reserve Inventory</b></em>' attribute.
@@ -699,7 +744,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__RESERVE_INVENTORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 69;
+	int PRODUCT_STORE__RESERVE_INVENTORY = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 74;
 
 	/**
 	 * The feature id for the '<em><b>Reserve Order Enum Id</b></em>' reference.
@@ -708,7 +753,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__RESERVE_ORDER_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 70;
+	int PRODUCT_STORE__RESERVE_ORDER_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 75;
 
 	/**
 	 * The feature id for the '<em><b>Retry Failed Auths</b></em>' attribute.
@@ -717,7 +762,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__RETRY_FAILED_AUTHS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 71;
+	int PRODUCT_STORE__RETRY_FAILED_AUTHS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 76;
 
 	/**
 	 * The feature id for the '<em><b>Select Payment Type Per Item</b></em>' attribute.
@@ -726,7 +771,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__SELECT_PAYMENT_TYPE_PER_ITEM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 72;
+	int PRODUCT_STORE__SELECT_PAYMENT_TYPE_PER_ITEM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 77;
 
 	/**
 	 * The feature id for the '<em><b>Set Owner Upon Issuance</b></em>' attribute.
@@ -735,7 +780,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__SET_OWNER_UPON_ISSUANCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 73;
+	int PRODUCT_STORE__SET_OWNER_UPON_ISSUANCE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 78;
 
 	/**
 	 * The feature id for the '<em><b>Ship If Capture Fails</b></em>' attribute.
@@ -744,7 +789,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__SHIP_IF_CAPTURE_FAILS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 74;
+	int PRODUCT_STORE__SHIP_IF_CAPTURE_FAILS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 79;
 
 	/**
 	 * The feature id for the '<em><b>Show Checkout Gift Options</b></em>' attribute.
@@ -753,7 +798,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__SHOW_CHECKOUT_GIFT_OPTIONS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 75;
+	int PRODUCT_STORE__SHOW_CHECKOUT_GIFT_OPTIONS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 80;
 
 	/**
 	 * The feature id for the '<em><b>Show Out Of Stock Products</b></em>' attribute.
@@ -762,7 +807,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__SHOW_OUT_OF_STOCK_PRODUCTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 76;
+	int PRODUCT_STORE__SHOW_OUT_OF_STOCK_PRODUCTS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 81;
 
 	/**
 	 * The feature id for the '<em><b>Show Prices With Vat Tax</b></em>' attribute.
@@ -771,7 +816,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__SHOW_PRICES_WITH_VAT_TAX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 77;
+	int PRODUCT_STORE__SHOW_PRICES_WITH_VAT_TAX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 82;
 
 	/**
 	 * The feature id for the '<em><b>Show Tax Is Exempt</b></em>' attribute.
@@ -780,7 +825,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__SHOW_TAX_IS_EXEMPT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 78;
+	int PRODUCT_STORE__SHOW_TAX_IS_EXEMPT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 83;
 
 	/**
 	 * The feature id for the '<em><b>Split Pay Pref Per Shp Grp</b></em>' attribute.
@@ -789,7 +834,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__SPLIT_PAY_PREF_PER_SHP_GRP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 79;
+	int PRODUCT_STORE__SPLIT_PAY_PREF_PER_SHP_GRP = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 84;
 
 	/**
 	 * The feature id for the '<em><b>Store Credit Account Enum Id</b></em>' reference.
@@ -798,7 +843,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__STORE_CREDIT_ACCOUNT_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 80;
+	int PRODUCT_STORE__STORE_CREDIT_ACCOUNT_ENUM_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 85;
 
 	/**
 	 * The feature id for the '<em><b>Store Credit Valid Days</b></em>' attribute.
@@ -807,7 +852,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__STORE_CREDIT_VALID_DAYS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 81;
+	int PRODUCT_STORE__STORE_CREDIT_VALID_DAYS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 86;
 
 	/**
 	 * The feature id for the '<em><b>Store Name</b></em>' attribute.
@@ -816,7 +861,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__STORE_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 82;
+	int PRODUCT_STORE__STORE_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 87;
 
 	/**
 	 * The feature id for the '<em><b>Subtitle</b></em>' attribute.
@@ -825,7 +870,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__SUBTITLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 83;
+	int PRODUCT_STORE__SUBTITLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 88;
 
 	/**
 	 * The feature id for the '<em><b>Title</b></em>' attribute.
@@ -834,7 +879,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__TITLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 84;
+	int PRODUCT_STORE__TITLE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 89;
 
 	/**
 	 * The feature id for the '<em><b>Use Primary Email Username</b></em>' attribute.
@@ -843,7 +888,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__USE_PRIMARY_EMAIL_USERNAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 85;
+	int PRODUCT_STORE__USE_PRIMARY_EMAIL_USERNAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 90;
 
 	/**
 	 * The feature id for the '<em><b>Vat Tax Auth Geo Id</b></em>' attribute.
@@ -852,7 +897,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__VAT_TAX_AUTH_GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 86;
+	int PRODUCT_STORE__VAT_TAX_AUTH_GEO_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 91;
 
 	/**
 	 * The feature id for the '<em><b>Vat Tax Auth Party Id</b></em>' attribute.
@@ -861,7 +906,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__VAT_TAX_AUTH_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 87;
+	int PRODUCT_STORE__VAT_TAX_AUTH_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 92;
 
 	/**
 	 * The feature id for the '<em><b>View Cart On Add</b></em>' attribute.
@@ -870,7 +915,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__VIEW_CART_ON_ADD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 88;
+	int PRODUCT_STORE__VIEW_CART_ON_ADD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 93;
 
 	/**
 	 * The feature id for the '<em><b>Visual Theme Id</b></em>' attribute.
@@ -879,7 +924,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE__VISUAL_THEME_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 89;
+	int PRODUCT_STORE__VISUAL_THEME_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 94;
 
 	/**
 	 * The number of structural features of the '<em>Product Store</em>' class.
@@ -888,7 +933,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 90;
+	int PRODUCT_STORE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 95;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreCatalogImpl <em>Product Store Catalog</em>}' class.
@@ -1472,13 +1517,22 @@ public interface StorePackage extends EPackage {
 	int PRODUCT_STORE_GROUP__PRODUCT_STORE_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 4;
 
 	/**
+	 * The feature id for the '<em><b>Current Product Store Group Rollups</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PRODUCT_STORE_GROUP__CURRENT_PRODUCT_STORE_GROUP_ROLLUPS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+
+	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE_GROUP__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 5;
+	int PRODUCT_STORE_GROUP__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
 	 * The feature id for the '<em><b>Primary Parent Group Id</b></em>' reference.
@@ -1487,7 +1541,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE_GROUP__PRIMARY_PARENT_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
+	int PRODUCT_STORE_GROUP__PRIMARY_PARENT_GROUP_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Group Name</b></em>' attribute.
@@ -1496,7 +1550,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE_GROUP__PRODUCT_STORE_GROUP_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int PRODUCT_STORE_GROUP__PRODUCT_STORE_GROUP_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Product Store Group Type Id</b></em>' reference.
@@ -1505,7 +1559,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE_GROUP__PRODUCT_STORE_GROUP_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int PRODUCT_STORE_GROUP__PRODUCT_STORE_GROUP_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The number of structural features of the '<em>Product Store Group</em>' class.
@@ -1514,7 +1568,7 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PRODUCT_STORE_GROUP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int PRODUCT_STORE_GROUP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.store.impl.ProductStoreGroupMemberImpl <em>Product Store Group Member</em>}' class.
@@ -3605,6 +3659,17 @@ public interface StorePackage extends EPackage {
 	EAttribute getProductStore_ProdSearchExcludeVariants();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getProductStoreCatalogs <em>Product Store Catalogs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Product Store Catalogs</em>'.
+	 * @see org.abchip.mimo.biz.model.product.store.ProductStore#getProductStoreCatalogs()
+	 * @see #getProductStore()
+	 * @generated
+	 */
+	EReference getProductStore_ProductStoreCatalogs();
+
+	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getProductStoreEmailSettings <em>Product Store Email Settings</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3616,6 +3681,17 @@ public interface StorePackage extends EPackage {
 	EReference getProductStore_ProductStoreEmailSettings();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getProductStoreFacilities <em>Product Store Facilities</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Product Store Facilities</em>'.
+	 * @see org.abchip.mimo.biz.model.product.store.ProductStore#getProductStoreFacilities()
+	 * @see #getProductStore()
+	 * @generated
+	 */
+	EReference getProductStore_ProductStoreFacilities();
+
+	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getProductStoreFinActSettings <em>Product Store Fin Act Settings</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -3625,6 +3701,39 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 */
 	EReference getProductStore_ProductStoreFinActSettings();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getProductStoreGroupMembers <em>Product Store Group Members</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Product Store Group Members</em>'.
+	 * @see org.abchip.mimo.biz.model.product.store.ProductStore#getProductStoreGroupMembers()
+	 * @see #getProductStore()
+	 * @generated
+	 */
+	EReference getProductStore_ProductStoreGroupMembers();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getProductStoreKeywordOvrds <em>Product Store Keyword Ovrds</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Product Store Keyword Ovrds</em>'.
+	 * @see org.abchip.mimo.biz.model.product.store.ProductStore#getProductStoreKeywordOvrds()
+	 * @see #getProductStore()
+	 * @generated
+	 */
+	EReference getProductStore_ProductStoreKeywordOvrds();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.store.ProductStore#getProductStorePromoAppls <em>Product Store Promo Appls</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Product Store Promo Appls</em>'.
+	 * @see org.abchip.mimo.biz.model.product.store.ProductStore#getProductStorePromoAppls()
+	 * @see #getProductStore()
+	 * @generated
+	 */
+	EReference getProductStore_ProductStorePromoAppls();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.store.ProductStore#isProrateShipping <em>Prorate Shipping</em>}'.
@@ -4368,6 +4477,17 @@ public interface StorePackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getProductStoreGroup_ProductStoreGroupId();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroup#getCurrentProductStoreGroupRollups <em>Current Product Store Group Rollups</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Current Product Store Group Rollups</em>'.
+	 * @see org.abchip.mimo.biz.model.product.store.ProductStoreGroup#getCurrentProductStoreGroupRollups()
+	 * @see #getProductStoreGroup()
+	 * @generated
+	 */
+	EReference getProductStoreGroup_CurrentProductStoreGroupRollups();
 
 	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.store.ProductStoreGroup#getDescription <em>Description</em>}'.
@@ -5993,6 +6113,14 @@ public interface StorePackage extends EPackage {
 		EAttribute PRODUCT_STORE__PROD_SEARCH_EXCLUDE_VARIANTS = eINSTANCE.getProductStore_ProdSearchExcludeVariants();
 
 		/**
+		 * The meta object literal for the '<em><b>Product Store Catalogs</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_STORE__PRODUCT_STORE_CATALOGS = eINSTANCE.getProductStore_ProductStoreCatalogs();
+
+		/**
 		 * The meta object literal for the '<em><b>Product Store Email Settings</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -6001,12 +6129,44 @@ public interface StorePackage extends EPackage {
 		EReference PRODUCT_STORE__PRODUCT_STORE_EMAIL_SETTINGS = eINSTANCE.getProductStore_ProductStoreEmailSettings();
 
 		/**
+		 * The meta object literal for the '<em><b>Product Store Facilities</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_STORE__PRODUCT_STORE_FACILITIES = eINSTANCE.getProductStore_ProductStoreFacilities();
+
+		/**
 		 * The meta object literal for the '<em><b>Product Store Fin Act Settings</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
 		EReference PRODUCT_STORE__PRODUCT_STORE_FIN_ACT_SETTINGS = eINSTANCE.getProductStore_ProductStoreFinActSettings();
+
+		/**
+		 * The meta object literal for the '<em><b>Product Store Group Members</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_STORE__PRODUCT_STORE_GROUP_MEMBERS = eINSTANCE.getProductStore_ProductStoreGroupMembers();
+
+		/**
+		 * The meta object literal for the '<em><b>Product Store Keyword Ovrds</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_STORE__PRODUCT_STORE_KEYWORD_OVRDS = eINSTANCE.getProductStore_ProductStoreKeywordOvrds();
+
+		/**
+		 * The meta object literal for the '<em><b>Product Store Promo Appls</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_STORE__PRODUCT_STORE_PROMO_APPLS = eINSTANCE.getProductStore_ProductStorePromoAppls();
 
 		/**
 		 * The meta object literal for the '<em><b>Prorate Shipping</b></em>' attribute feature.
@@ -6561,6 +6721,14 @@ public interface StorePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PRODUCT_STORE_GROUP__PRODUCT_STORE_GROUP_ID = eINSTANCE.getProductStoreGroup_ProductStoreGroupId();
+
+		/**
+		 * The meta object literal for the '<em><b>Current Product Store Group Rollups</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PRODUCT_STORE_GROUP__CURRENT_PRODUCT_STORE_GROUP_ROLLUPS = eINSTANCE.getProductStoreGroup_CurrentProductStoreGroupRollups();
 
 		/**
 		 * The meta object literal for the '<em><b>Description</b></em>' attribute feature.

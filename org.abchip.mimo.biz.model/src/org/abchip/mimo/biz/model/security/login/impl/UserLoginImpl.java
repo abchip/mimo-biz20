@@ -15,6 +15,7 @@ import org.abchip.mimo.biz.model.security.login.LoginPackage;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.biz.model.security.login.UserLoginHistory;
 import org.abchip.mimo.biz.model.security.login.UserLoginPasswordHistory;
+import org.abchip.mimo.biz.model.security.securitygroup.UserLoginSecurityGroup;
 import org.abchip.mimo.context.impl.UserProfileImpl;
 import org.eclipse.emf.ecore.EClass;
 
@@ -44,6 +45,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getUserLdapDn <em>User Ldap Dn</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getUserLoginHistories <em>User Login Histories</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getUserLoginPasswordHistories <em>User Login Password Histories</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getUserLoginSecurityGroups <em>User Login Security Groups</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.security.login.impl.UserLoginImpl#getUserPreferences <em>User Preferences</em>}</li>
  * </ul>
  *
@@ -408,6 +410,17 @@ public class UserLoginImpl extends UserProfileImpl implements UserLogin {
 	@Override
 	public List<UserLoginPasswordHistory> getUserLoginPasswordHistories() {
 		return (List<UserLoginPasswordHistory>)eGet(LoginPackage.Literals.USER_LOGIN__USER_LOGIN_PASSWORD_HISTORIES, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<UserLoginSecurityGroup> getUserLoginSecurityGroups() {
+		return (List<UserLoginSecurityGroup>)eGet(LoginPackage.Literals.USER_LOGIN__USER_LOGIN_SECURITY_GROUPS, true);
 	}
 
 	/**

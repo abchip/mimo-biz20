@@ -8,7 +8,9 @@
 package org.abchip.mimo.biz.model.product.facility.impl;
 
 import java.util.Date;
+import java.util.List;
 import org.abchip.mimo.biz.model.product.facility.FacilityGroup;
+import org.abchip.mimo.biz.model.product.facility.FacilityGroupRollup;
 import org.abchip.mimo.biz.model.product.facility.FacilityGroupType;
 import org.abchip.mimo.biz.model.product.facility.FacilityPackage;
 import org.abchip.mimo.entity.EntityInfo;
@@ -29,6 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupImpl#getFacilityGroupId <em>Facility Group Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupImpl#getCurrentFacilityGroupRollups <em>Current Facility Group Rollups</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupImpl#getFacilityGroupName <em>Facility Group Name</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.FacilityGroupImpl#getFacilityGroupTypeId <em>Facility Group Type Id</em>}</li>
@@ -284,6 +287,17 @@ public class FacilityGroupImpl extends EntityIdentifiableImpl implements Facilit
 	@Override
 	public void setFacilityGroupId(String newFacilityGroupId) {
 		eSet(FacilityPackage.Literals.FACILITY_GROUP__FACILITY_GROUP_ID, newFacilityGroupId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<FacilityGroupRollup> getCurrentFacilityGroupRollups() {
+		return (List<FacilityGroupRollup>)eGet(FacilityPackage.Literals.FACILITY_GROUP__CURRENT_FACILITY_GROUP_ROLLUPS, true);
 	}
 
 } //FacilityGroupImpl

@@ -8,8 +8,10 @@
 package org.abchip.mimo.biz.model.product.feature.impl;
 
 import java.util.Date;
+import java.util.List;
 import org.abchip.mimo.biz.model.product.feature.FeaturePackage;
 import org.abchip.mimo.biz.model.product.feature.ProductFeatureGroup;
+import org.abchip.mimo.biz.model.product.feature.ProductFeatureGroupAppl;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
 import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
@@ -29,6 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureGroupImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureGroupImpl#getProductFeatureGroupId <em>Product Feature Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureGroupImpl#getDescription <em>Description</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.feature.impl.ProductFeatureGroupImpl#getProductFeatureGroupAppls <em>Product Feature Group Appls</em>}</li>
  * </ul>
  *
  * @generated
@@ -162,6 +165,17 @@ public class ProductFeatureGroupImpl extends EntityIdentifiableImpl implements P
 	@Override
 	public void setDescription(String newDescription) {
 		eSet(FeaturePackage.Literals.PRODUCT_FEATURE_GROUP__DESCRIPTION, newDescription);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ProductFeatureGroupAppl> getProductFeatureGroupAppls() {
+		return (List<ProductFeatureGroupAppl>)eGet(FeaturePackage.Literals.PRODUCT_FEATURE_GROUP__PRODUCT_FEATURE_GROUP_APPLS, true);
 	}
 
 	/**

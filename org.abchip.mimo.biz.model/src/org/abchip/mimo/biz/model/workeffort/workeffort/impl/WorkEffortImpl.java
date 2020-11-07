@@ -25,8 +25,11 @@ import org.abchip.mimo.biz.model.service.schedule.TemporalExpression;
 import org.abchip.mimo.biz.model.workeffort.workeffort.CommunicationEventWorkEff;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortAttribute;
+import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortContactMech;
+import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortCostCalc;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortDeliverableProd;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortEventReminder;
+import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetAssign;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortFixedAssetStd;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryAssign;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortInventoryProduced;
@@ -34,6 +37,7 @@ import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortKeyword;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortNote;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortPurposeType;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSkillStandard;
+import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortSurveyAppl;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffortType;
 import org.abchip.mimo.biz.model.workeffort.workeffort.WorkeffortPackage;
 import org.abchip.mimo.entity.EntityInfo;
@@ -102,8 +106,11 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getTotalMoneyAllowed <em>Total Money Allowed</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getUniversalId <em>Universal Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortAttributes <em>Work Effort Attributes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortContactMechs <em>Work Effort Contact Mechs</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortCostCalcs <em>Work Effort Cost Calcs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortDeliverableProds <em>Work Effort Deliverable Prods</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortEventReminders <em>Work Effort Event Reminders</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortFixedAssetAssigns <em>Work Effort Fixed Asset Assigns</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortFixedAssetStds <em>Work Effort Fixed Asset Stds</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortInventoryAssigns <em>Work Effort Inventory Assigns</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortInventoryProduceds <em>Work Effort Inventory Produceds</em>}</li>
@@ -113,6 +120,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortParentId <em>Work Effort Parent Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortPurposeTypeId <em>Work Effort Purpose Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortSkillStandards <em>Work Effort Skill Standards</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortSurveyAppls <em>Work Effort Survey Appls</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortImpl#getWorkEffortTypeId <em>Work Effort Type Id</em>}</li>
  * </ul>
  *
@@ -1178,6 +1186,28 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
+	public List<WorkEffortContactMech> getWorkEffortContactMechs() {
+		return (List<WorkEffortContactMech>)eGet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_CONTACT_MECHS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<WorkEffortCostCalc> getWorkEffortCostCalcs() {
+		return (List<WorkEffortCostCalc>)eGet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_COST_CALCS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
 	public List<WorkEffortDeliverableProd> getWorkEffortDeliverableProds() {
 		return (List<WorkEffortDeliverableProd>)eGet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_DELIVERABLE_PRODS, true);
 	}
@@ -1191,6 +1221,17 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	@Override
 	public List<WorkEffortEventReminder> getWorkEffortEventReminders() {
 		return (List<WorkEffortEventReminder>)eGet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_EVENT_REMINDERS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<WorkEffortFixedAssetAssign> getWorkEffortFixedAssetAssigns() {
+		return (List<WorkEffortFixedAssetAssign>)eGet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_FIXED_ASSET_ASSIGNS, true);
 	}
 
 	/**
@@ -1337,6 +1378,17 @@ public class WorkEffortImpl extends EntityTypedImpl<WorkEffortType> implements W
 	@Override
 	public List<WorkEffortSkillStandard> getWorkEffortSkillStandards() {
 		return (List<WorkEffortSkillStandard>)eGet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_SKILL_STANDARDS, true);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<WorkEffortSurveyAppl> getWorkEffortSurveyAppls() {
+		return (List<WorkEffortSurveyAppl>)eGet(WorkeffortPackage.Literals.WORK_EFFORT__WORK_EFFORT_SURVEY_APPLS, true);
 	}
 
 	/**

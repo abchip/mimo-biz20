@@ -905,13 +905,31 @@ public interface WorkeffortPackage extends EPackage {
 	int WORK_EFFORT__WORK_EFFORT_ATTRIBUTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 52;
 
 	/**
+	 * The feature id for the '<em><b>Work Effort Contact Mechs</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_EFFORT__WORK_EFFORT_CONTACT_MECHS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 53;
+
+	/**
+	 * The feature id for the '<em><b>Work Effort Cost Calcs</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_EFFORT__WORK_EFFORT_COST_CALCS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 54;
+
+	/**
 	 * The feature id for the '<em><b>Work Effort Deliverable Prods</b></em>' reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_DELIVERABLE_PRODS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 53;
+	int WORK_EFFORT__WORK_EFFORT_DELIVERABLE_PRODS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 55;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Event Reminders</b></em>' reference list.
@@ -920,7 +938,16 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_EVENT_REMINDERS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 54;
+	int WORK_EFFORT__WORK_EFFORT_EVENT_REMINDERS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 56;
+
+	/**
+	 * The feature id for the '<em><b>Work Effort Fixed Asset Assigns</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_EFFORT__WORK_EFFORT_FIXED_ASSET_ASSIGNS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 57;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Fixed Asset Stds</b></em>' reference list.
@@ -929,7 +956,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_FIXED_ASSET_STDS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 55;
+	int WORK_EFFORT__WORK_EFFORT_FIXED_ASSET_STDS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 58;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Inventory Assigns</b></em>' reference list.
@@ -938,7 +965,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_INVENTORY_ASSIGNS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 56;
+	int WORK_EFFORT__WORK_EFFORT_INVENTORY_ASSIGNS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 59;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Inventory Produceds</b></em>' reference list.
@@ -947,7 +974,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_INVENTORY_PRODUCEDS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 57;
+	int WORK_EFFORT__WORK_EFFORT_INVENTORY_PRODUCEDS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 60;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Keywords</b></em>' reference list.
@@ -956,7 +983,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_KEYWORDS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 58;
+	int WORK_EFFORT__WORK_EFFORT_KEYWORDS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 61;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Name</b></em>' attribute.
@@ -965,7 +992,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 59;
+	int WORK_EFFORT__WORK_EFFORT_NAME = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 62;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Notes</b></em>' reference list.
@@ -974,7 +1001,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_NOTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 60;
+	int WORK_EFFORT__WORK_EFFORT_NOTES = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 63;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Parent Id</b></em>' reference.
@@ -983,7 +1010,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_PARENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 61;
+	int WORK_EFFORT__WORK_EFFORT_PARENT_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 64;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Purpose Type Id</b></em>' reference.
@@ -992,7 +1019,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_PURPOSE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 62;
+	int WORK_EFFORT__WORK_EFFORT_PURPOSE_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 65;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Skill Standards</b></em>' reference list.
@@ -1001,7 +1028,16 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_SKILL_STANDARDS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 63;
+	int WORK_EFFORT__WORK_EFFORT_SKILL_STANDARDS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 66;
+
+	/**
+	 * The feature id for the '<em><b>Work Effort Survey Appls</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int WORK_EFFORT__WORK_EFFORT_SURVEY_APPLS = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 67;
 
 	/**
 	 * The feature id for the '<em><b>Work Effort Type Id</b></em>' reference.
@@ -1010,7 +1046,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT__WORK_EFFORT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 64;
+	int WORK_EFFORT__WORK_EFFORT_TYPE_ID = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 68;
 
 	/**
 	 * The number of structural features of the '<em>Work Effort</em>' class.
@@ -1019,7 +1055,7 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int WORK_EFFORT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 65;
+	int WORK_EFFORT_FEATURE_COUNT = EntityPackage.ENTITY_TYPED_FEATURE_COUNT + 69;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.workeffort.workeffort.impl.WorkEffortAssocImpl <em>Work Effort Assoc</em>}' class.
@@ -5067,6 +5103,28 @@ public interface WorkeffortPackage extends EPackage {
 	EReference getWorkEffort_WorkEffortAttributes();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortContactMechs <em>Work Effort Contact Mechs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Work Effort Contact Mechs</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortContactMechs()
+	 * @see #getWorkEffort()
+	 * @generated
+	 */
+	EReference getWorkEffort_WorkEffortContactMechs();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortCostCalcs <em>Work Effort Cost Calcs</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Work Effort Cost Calcs</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortCostCalcs()
+	 * @see #getWorkEffort()
+	 * @generated
+	 */
+	EReference getWorkEffort_WorkEffortCostCalcs();
+
+	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortDeliverableProds <em>Work Effort Deliverable Prods</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5087,6 +5145,17 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getWorkEffort_WorkEffortEventReminders();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortFixedAssetAssigns <em>Work Effort Fixed Asset Assigns</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Work Effort Fixed Asset Assigns</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortFixedAssetAssigns()
+	 * @see #getWorkEffort()
+	 * @generated
+	 */
+	EReference getWorkEffort_WorkEffortFixedAssetAssigns();
 
 	/**
 	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortFixedAssetStds <em>Work Effort Fixed Asset Stds</em>}'.
@@ -5186,6 +5255,17 @@ public interface WorkeffortPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getWorkEffort_WorkEffortSkillStandards();
+
+	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortSurveyAppls <em>Work Effort Survey Appls</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Work Effort Survey Appls</em>'.
+	 * @see org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortSurveyAppls()
+	 * @see #getWorkEffort()
+	 * @generated
+	 */
+	EReference getWorkEffort_WorkEffortSurveyAppls();
 
 	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.workeffort.workeffort.WorkEffort#getWorkEffortTypeId <em>Work Effort Type Id</em>}'.
@@ -7929,6 +8009,22 @@ public interface WorkeffortPackage extends EPackage {
 		EReference WORK_EFFORT__WORK_EFFORT_ATTRIBUTES = eINSTANCE.getWorkEffort_WorkEffortAttributes();
 
 		/**
+		 * The meta object literal for the '<em><b>Work Effort Contact Mechs</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference WORK_EFFORT__WORK_EFFORT_CONTACT_MECHS = eINSTANCE.getWorkEffort_WorkEffortContactMechs();
+
+		/**
+		 * The meta object literal for the '<em><b>Work Effort Cost Calcs</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference WORK_EFFORT__WORK_EFFORT_COST_CALCS = eINSTANCE.getWorkEffort_WorkEffortCostCalcs();
+
+		/**
 		 * The meta object literal for the '<em><b>Work Effort Deliverable Prods</b></em>' reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -7943,6 +8039,14 @@ public interface WorkeffortPackage extends EPackage {
 		 * @generated
 		 */
 		EReference WORK_EFFORT__WORK_EFFORT_EVENT_REMINDERS = eINSTANCE.getWorkEffort_WorkEffortEventReminders();
+
+		/**
+		 * The meta object literal for the '<em><b>Work Effort Fixed Asset Assigns</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference WORK_EFFORT__WORK_EFFORT_FIXED_ASSET_ASSIGNS = eINSTANCE.getWorkEffort_WorkEffortFixedAssetAssigns();
 
 		/**
 		 * The meta object literal for the '<em><b>Work Effort Fixed Asset Stds</b></em>' reference list feature.
@@ -8015,6 +8119,14 @@ public interface WorkeffortPackage extends EPackage {
 		 * @generated
 		 */
 		EReference WORK_EFFORT__WORK_EFFORT_SKILL_STANDARDS = eINSTANCE.getWorkEffort_WorkEffortSkillStandards();
+
+		/**
+		 * The meta object literal for the '<em><b>Work Effort Survey Appls</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference WORK_EFFORT__WORK_EFFORT_SURVEY_APPLS = eINSTANCE.getWorkEffort_WorkEffortSurveyAppls();
 
 		/**
 		 * The meta object literal for the '<em><b>Work Effort Type Id</b></em>' reference feature.

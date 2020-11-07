@@ -8,8 +8,10 @@
 package org.abchip.mimo.biz.model.entity.test.impl;
 
 import java.util.Date;
+import java.util.List;
 import org.abchip.mimo.biz.model.entity.test.TestPackage;
 import org.abchip.mimo.biz.model.entity.test.TestingNode;
+import org.abchip.mimo.biz.model.entity.test.TestingNodeMember;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
 import org.abchip.mimo.entity.impl.EntityIdentifiableImpl;
@@ -30,6 +32,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeImpl#getTestingNodeId <em>Testing Node Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeImpl#getPrimaryParentNodeId <em>Primary Parent Node Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.entity.test.impl.TestingNodeImpl#getTestingNodeMembers <em>Testing Node Members</em>}</li>
  * </ul>
  *
  * @generated
@@ -182,6 +185,17 @@ public class TestingNodeImpl extends EntityIdentifiableImpl implements TestingNo
 	@Override
 	public void setPrimaryParentNodeId(TestingNode newPrimaryParentNodeId) {
 		eSet(TestPackage.Literals.TESTING_NODE__PRIMARY_PARENT_NODE_ID, newPrimaryParentNodeId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<TestingNodeMember> getTestingNodeMembers() {
+		return (List<TestingNodeMember>)eGet(TestPackage.Literals.TESTING_NODE__TESTING_NODE_MEMBERS, true);
 	}
 
 	/**

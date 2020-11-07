@@ -135,13 +135,22 @@ public interface ContactPackage extends EPackage {
 	int CONTACT_LIST__CONTACT_LIST_NAME = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 6;
 
 	/**
+	 * The feature id for the '<em><b>Contact List Parties</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CONTACT_LIST__CONTACT_LIST_PARTIES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+
+	/**
 	 * The feature id for the '<em><b>Contact List Type Id</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__CONTACT_LIST_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
+	int CONTACT_LIST__CONTACT_LIST_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
 
 	/**
 	 * The feature id for the '<em><b>Contact Mech Type Id</b></em>' reference.
@@ -150,7 +159,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__CONTACT_MECH_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int CONTACT_LIST__CONTACT_MECH_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Created By User Login</b></em>' reference.
@@ -159,7 +168,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__CREATED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int CONTACT_LIST__CREATED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Description</b></em>' attribute.
@@ -168,7 +177,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
+	int CONTACT_LIST__DESCRIPTION = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Is Public</b></em>' attribute.
@@ -177,7 +186,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__IS_PUBLIC = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int CONTACT_LIST__IS_PUBLIC = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>Last Modified By User Login</b></em>' reference.
@@ -186,7 +195,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
+	int CONTACT_LIST__LAST_MODIFIED_BY_USER_LOGIN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The feature id for the '<em><b>Marketing Campaign Id</b></em>' reference.
@@ -195,7 +204,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__MARKETING_CAMPAIGN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
+	int CONTACT_LIST__MARKETING_CAMPAIGN_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The feature id for the '<em><b>Opt Out Screen</b></em>' attribute.
@@ -204,7 +213,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__OPT_OUT_SCREEN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
+	int CONTACT_LIST__OPT_OUT_SCREEN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
 
 	/**
 	 * The feature id for the '<em><b>Owner Party Id</b></em>' reference.
@@ -213,7 +222,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__OWNER_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 15;
+	int CONTACT_LIST__OWNER_PARTY_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
 
 	/**
 	 * The feature id for the '<em><b>Single Use</b></em>' attribute.
@@ -222,7 +231,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__SINGLE_USE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 16;
+	int CONTACT_LIST__SINGLE_USE = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
 
 	/**
 	 * The feature id for the '<em><b>Verify Email From</b></em>' attribute.
@@ -231,7 +240,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__VERIFY_EMAIL_FROM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 17;
+	int CONTACT_LIST__VERIFY_EMAIL_FROM = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
 
 	/**
 	 * The feature id for the '<em><b>Verify Email Screen</b></em>' attribute.
@@ -240,7 +249,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__VERIFY_EMAIL_SCREEN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 18;
+	int CONTACT_LIST__VERIFY_EMAIL_SCREEN = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
 
 	/**
 	 * The feature id for the '<em><b>Verify Email Subject</b></em>' attribute.
@@ -249,7 +258,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__VERIFY_EMAIL_SUBJECT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 19;
+	int CONTACT_LIST__VERIFY_EMAIL_SUBJECT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
 
 	/**
 	 * The feature id for the '<em><b>Verify Email Web Site Id</b></em>' attribute.
@@ -258,7 +267,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST__VERIFY_EMAIL_WEB_SITE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 20;
+	int CONTACT_LIST__VERIFY_EMAIL_WEB_SITE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
 
 	/**
 	 * The number of structural features of the '<em>List</em>' class.
@@ -267,7 +276,7 @@ public interface ContactPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CONTACT_LIST_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 21;
+	int CONTACT_LIST_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.contact.impl.ContactListCommStatusImpl <em>List Comm Status</em>}' class.
@@ -823,6 +832,17 @@ public interface ContactPackage extends EPackage {
 	EAttribute getContactList_ContactListName();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getContactListParties <em>Contact List Parties</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Contact List Parties</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.contact.ContactList#getContactListParties()
+	 * @see #getContactList()
+	 * @generated
+	 */
+	EReference getContactList_ContactListParties();
+
+	/**
 	 * Returns the meta object for the reference '{@link org.abchip.mimo.biz.model.marketing.contact.ContactList#getContactListTypeId <em>Contact List Type Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1367,6 +1387,14 @@ public interface ContactPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CONTACT_LIST__CONTACT_LIST_NAME = eINSTANCE.getContactList_ContactListName();
+
+		/**
+		 * The meta object literal for the '<em><b>Contact List Parties</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference CONTACT_LIST__CONTACT_LIST_PARTIES = eINSTANCE.getContactList_ContactListParties();
 
 		/**
 		 * The meta object literal for the '<em><b>Contact List Type Id</b></em>' reference feature.

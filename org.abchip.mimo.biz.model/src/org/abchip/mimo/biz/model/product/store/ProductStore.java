@@ -84,8 +84,13 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getPayToPartyId <em>Pay To Party Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getPrimaryStoreGroupId <em>Primary Store Group Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isProdSearchExcludeVariants <em>Prod Search Exclude Variants</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getProductStoreCatalogs <em>Product Store Catalogs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getProductStoreEmailSettings <em>Product Store Email Settings</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getProductStoreFacilities <em>Product Store Facilities</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getProductStoreFinActSettings <em>Product Store Fin Act Settings</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getProductStoreGroupMembers <em>Product Store Group Members</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getProductStoreKeywordOvrds <em>Product Store Keyword Ovrds</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getProductStorePromoAppls <em>Product Store Promo Appls</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isProrateShipping <em>Prorate Shipping</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#isProrateTaxes <em>Prorate Taxes</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.store.ProductStore#getReqReturnInventoryReceive <em>Req Return Inventory Receive</em>}</li>
@@ -2142,6 +2147,19 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	void setProdSearchExcludeVariants(boolean value);
 
 	/**
+	 * Returns the value of the '<em><b>Product Store Catalogs</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.store.ProductStoreCatalog}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Store Catalogs</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ProductStoreCatalogs()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ProductStoreCatalog> getProductStoreCatalogs();
+
+	/**
 	 * Returns the value of the '<em><b>Product Store Email Settings</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.store.ProductStoreEmailSetting}.
 	 * <!-- begin-user-doc -->
@@ -2158,6 +2176,19 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	List<ProductStoreEmailSetting> getProductStoreEmailSettings();
 
 	/**
+	 * Returns the value of the '<em><b>Product Store Facilities</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.store.ProductStoreFacility}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Store Facilities</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ProductStoreFacilities()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ProductStoreFacility> getProductStoreFacilities();
+
+	/**
 	 * Returns the value of the '<em><b>Product Store Fin Act Settings</b></em>' reference list.
 	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.store.ProductStoreFinActSetting}.
 	 * <!-- begin-user-doc -->
@@ -2172,6 +2203,45 @@ public interface ProductStore extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	List<ProductStoreFinActSetting> getProductStoreFinActSettings();
+
+	/**
+	 * Returns the value of the '<em><b>Product Store Group Members</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.store.ProductStoreGroupMember}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Store Group Members</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ProductStoreGroupMembers()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ProductStoreGroupMember> getProductStoreGroupMembers();
+
+	/**
+	 * Returns the value of the '<em><b>Product Store Keyword Ovrds</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.store.ProductStoreKeywordOvrd}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Store Keyword Ovrds</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ProductStoreKeywordOvrds()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ProductStoreKeywordOvrd> getProductStoreKeywordOvrds();
+
+	/**
+	 * Returns the value of the '<em><b>Product Store Promo Appls</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.store.ProductStorePromoAppl}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Product Store Promo Appls</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.store.StorePackage#getProductStore_ProductStorePromoAppls()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<ProductStorePromoAppl> getProductStorePromoAppls();
 
 	/**
 	 * Returns the value of the '<em><b>Inventory Facility Id</b></em>' reference.

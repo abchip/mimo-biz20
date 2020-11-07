@@ -24,6 +24,7 @@ import org.abchip.mimo.biz.model.content.content.ContentType;
 import org.abchip.mimo.biz.model.content.data.CharacterSet;
 import org.abchip.mimo.biz.model.content.data.DataResource;
 import org.abchip.mimo.biz.model.content.data.MimeType;
+import org.abchip.mimo.biz.model.party.communication.CommEventContentAssoc;
 import org.abchip.mimo.biz.model.security.login.UserLogin;
 import org.abchip.mimo.entity.EntityInfo;
 import org.abchip.mimo.entity.EntityPackage;
@@ -60,6 +61,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getDataSourceId <em>Data Source Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getDecoratorContentId <em>Decorator Content Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getDescription <em>Description</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getFromCommEventContentAssocs <em>From Comm Event Content Assocs</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getInstanceOfContentId <em>Instance Of Content Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getLastModifiedByUserLogin <em>Last Modified By User Login</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.content.content.impl.ContentImpl#getLastModifiedDate <em>Last Modified Date</em>}</li>
@@ -498,6 +500,17 @@ public class ContentImpl extends EntityTypedImpl<ContentType> implements Content
 	@Override
 	public void setDescription(String newDescription) {
 		eSet(ContentPackage.Literals.CONTENT__DESCRIPTION, newDescription);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<CommEventContentAssoc> getFromCommEventContentAssocs() {
+		return (List<CommEventContentAssoc>)eGet(ContentPackage.Literals.CONTENT__FROM_COMM_EVENT_CONTENT_ASSOCS, true);
 	}
 
 	/**

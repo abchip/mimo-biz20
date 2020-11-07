@@ -244,13 +244,22 @@ public interface SecuritygroupPackage extends EPackage {
 	int SECURITY_GROUP__PROTECTED_VIEWS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
+	 * The feature id for the '<em><b>Security Group Permissions</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SECURITY_GROUP__SECURITY_GROUP_PERMISSIONS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+
+	/**
 	 * The number of structural features of the '<em>Security Group</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SECURITY_GROUP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int SECURITY_GROUP_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.security.securitygroup.impl.SecurityGroupPermissionImpl <em>Security Group Permission</em>}' class.
@@ -710,6 +719,17 @@ public interface SecuritygroupPackage extends EPackage {
 	EReference getSecurityGroup_ProtectedViews();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.security.securitygroup.SecurityGroup#getSecurityGroupPermissions <em>Security Group Permissions</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Security Group Permissions</em>'.
+	 * @see org.abchip.mimo.biz.model.security.securitygroup.SecurityGroup#getSecurityGroupPermissions()
+	 * @see #getSecurityGroup()
+	 * @generated
+	 */
+	EReference getSecurityGroup_SecurityGroupPermissions();
+
+	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.security.securitygroup.SecurityGroupPermission <em>Security Group Permission</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1005,6 +1025,14 @@ public interface SecuritygroupPackage extends EPackage {
 		 * @generated
 		 */
 		EReference SECURITY_GROUP__PROTECTED_VIEWS = eINSTANCE.getSecurityGroup_ProtectedViews();
+
+		/**
+		 * The meta object literal for the '<em><b>Security Group Permissions</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference SECURITY_GROUP__SECURITY_GROUP_PERMISSIONS = eINSTANCE.getSecurityGroup_SecurityGroupPermissions();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.security.securitygroup.impl.SecurityGroupPermissionImpl <em>Security Group Permission</em>}' class.

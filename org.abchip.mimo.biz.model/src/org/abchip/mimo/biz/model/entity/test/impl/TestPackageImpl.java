@@ -1384,6 +1384,16 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 	 * @generated
 	 */
 	@Override
+	public EReference getTestingNode_TestingNodeMembers() {
+		return (EReference)testingNodeEClass.getEStructuralFeatures().get(3);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public EClass getTestingNodeMember() {
 		return testingNodeMemberEClass;
 	}
@@ -1696,6 +1706,7 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 		createEAttribute(testingNodeEClass, TESTING_NODE__TESTING_NODE_ID);
 		createEAttribute(testingNodeEClass, TESTING_NODE__DESCRIPTION);
 		createEReference(testingNodeEClass, TESTING_NODE__PRIMARY_PARENT_NODE_ID);
+		createEReference(testingNodeEClass, TESTING_NODE__TESTING_NODE_MEMBERS);
 
 		testingNodeMemberEClass = createEClass(TESTING_NODE_MEMBER);
 		createEReference(testingNodeMemberEClass, TESTING_NODE_MEMBER__TESTING_ID);
@@ -1854,6 +1865,7 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 		initEAttribute(getTestingNode_Description(), ecorePackage.getEString(), "description", null, 0, 1, TestingNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getTestingNode_PrimaryParentNodeId(), this.getTestingNode(), null, "primaryParentNodeId", null, 0, 1, TestingNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		getTestingNode_PrimaryParentNodeId().getEKeys().add(this.getTestingNode_TestingNodeId());
+		initEReference(getTestingNode_TestingNodeMembers(), this.getTestingNodeMember(), null, "testingNodeMembers", null, 0, -1, TestingNode.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, IS_DERIVED, IS_ORDERED);
 
 		initEClass(testingNodeMemberEClass, TestingNodeMember.class, "TestingNodeMember", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getTestingNodeMember_TestingId(), this.getTesting(), null, "testingId", null, 1, 1, TestingNodeMember.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -2211,6 +2223,12 @@ public class TestPackageImpl extends EPackageImpl implements TestPackage {
 		   source,
 		   new String[] {
 			   "key", "true"
+		   });
+		addAnnotation
+		  (getTestingNode_TestingNodeMembers(),
+		   source,
+		   new String[] {
+			   "type", "fromDate"
 		   });
 		addAnnotation
 		  (getTestingNodeMember_TestingId(),

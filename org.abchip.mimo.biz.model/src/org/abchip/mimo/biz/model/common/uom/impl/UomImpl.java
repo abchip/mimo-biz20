@@ -11,6 +11,7 @@ import java.util.Date;
 import java.util.List;
 import org.abchip.mimo.biz.model.common.uom.Uom;
 import org.abchip.mimo.biz.model.common.uom.UomConversion;
+import org.abchip.mimo.biz.model.common.uom.UomConversionDated;
 import org.abchip.mimo.biz.model.common.uom.UomPackage;
 import org.abchip.mimo.biz.model.common.uom.UomType;
 import org.abchip.mimo.entity.EntityInfo;
@@ -32,6 +33,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomImpl#getUomId <em>Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomImpl#getAbbreviation <em>Abbreviation</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomImpl#getDatedMainUomConversionDateds <em>Dated Main Uom Conversion Dateds</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomImpl#getMainUomConversions <em>Main Uom Conversions</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.common.uom.impl.UomImpl#getNumericCode <em>Numeric Code</em>}</li>
@@ -168,6 +170,17 @@ public class UomImpl extends EntityTypedImpl<UomType> implements Uom {
 	@Override
 	public void setAbbreviation(String newAbbreviation) {
 		eSet(UomPackage.Literals.UOM__ABBREVIATION, newAbbreviation);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<UomConversionDated> getDatedMainUomConversionDateds() {
+		return (List<UomConversionDated>)eGet(UomPackage.Literals.UOM__DATED_MAIN_UOM_CONVERSION_DATEDS, true);
 	}
 
 	/**

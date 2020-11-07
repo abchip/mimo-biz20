@@ -8,6 +8,8 @@
 package org.abchip.mimo.biz.model.product.facility.impl;
 
 import java.util.Date;
+import java.util.List;
+import org.abchip.mimo.biz.model.product.facility.ContainerGeoPoint;
 import org.abchip.mimo.biz.model.product.facility.ContainerType;
 import org.abchip.mimo.biz.model.product.facility.Facility;
 import org.abchip.mimo.biz.model.product.facility.FacilityPackage;
@@ -29,6 +31,7 @@ import org.eclipse.emf.ecore.EClass;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerImpl#getLastUpdatedStamp <em>Last Updated Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerImpl#getLastUpdatedTxStamp <em>Last Updated Tx Stamp</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerImpl#getContainerId <em>Container Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerImpl#getContainerGeoPoints <em>Container Geo Points</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerImpl#getContainerTypeId <em>Container Type Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerImpl#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.impl.ContainerImpl#getFacilityId <em>Facility Id</em>}</li>
@@ -263,6 +266,17 @@ public class ContainerImpl extends EntityIdentifiableImpl implements org.abchip.
 	@Override
 	public void setContainerId(String newContainerId) {
 		eSet(FacilityPackage.Literals.CONTAINER__CONTAINER_ID, newContainerId);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<ContainerGeoPoint> getContainerGeoPoints() {
+		return (List<ContainerGeoPoint>)eGet(FacilityPackage.Literals.CONTAINER__CONTAINER_GEO_POINTS, true);
 	}
 
 } //ContainerImpl

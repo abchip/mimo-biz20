@@ -8,6 +8,7 @@
 package org.abchip.mimo.biz.model.marketing.tracking;
 
 import java.util.Date;
+import java.util.List;
 import org.abchip.mimo.biz.model.marketing.campaign.MarketingCampaign;
 import org.abchip.mimo.entity.EntityIdentifiable;
 import org.abchip.mimo.entity.EntityInfo;
@@ -40,6 +41,7 @@ import org.abchip.mimo.entity.EntityInfo;
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getThruDate <em>Thru Date</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getTrackableLifetime <em>Trackable Lifetime</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getTrackingCodeTypeId <em>Tracking Code Type Id</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getTrackingCodeVisits <em>Tracking Code Visits</em>}</li>
  * </ul>
  *
  * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCode()
@@ -541,5 +543,18 @@ public interface TrackingCode extends EntityIdentifiable, EntityInfo {
 	 * @generated
 	 */
 	void setTrackingCodeTypeId(TrackingCodeType value);
+
+	/**
+	 * Returns the value of the '<em><b>Tracking Code Visits</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeVisit}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Tracking Code Visits</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingPackage#getTrackingCode_TrackingCodeVisits()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<TrackingCodeVisit> getTrackingCodeVisits();
 
 } // TrackingCode

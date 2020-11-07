@@ -144,13 +144,22 @@ public interface CatalogPackage extends EPackage {
 	int PROD_CATALOG__HEADER_LOGO = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 7;
 
 	/**
+	 * The feature id for the '<em><b>Prod Catalog Inv Facilities</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PROD_CATALOG__PROD_CATALOG_INV_FACILITIES = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+
+	/**
 	 * The feature id for the '<em><b>Purchase Allow Perm Reqd</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG__PURCHASE_ALLOW_PERM_REQD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 8;
+	int PROD_CATALOG__PURCHASE_ALLOW_PERM_REQD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
 
 	/**
 	 * The feature id for the '<em><b>Style Sheet</b></em>' attribute.
@@ -159,7 +168,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG__STYLE_SHEET = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 9;
+	int PROD_CATALOG__STYLE_SHEET = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
 
 	/**
 	 * The feature id for the '<em><b>Template Path Prefix</b></em>' attribute.
@@ -168,7 +177,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG__TEMPLATE_PATH_PREFIX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 10;
+	int PROD_CATALOG__TEMPLATE_PATH_PREFIX = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
 
 	/**
 	 * The feature id for the '<em><b>Use Quick Add</b></em>' attribute.
@@ -177,7 +186,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG__USE_QUICK_ADD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 11;
+	int PROD_CATALOG__USE_QUICK_ADD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
 
 	/**
 	 * The feature id for the '<em><b>View Allow Perm Reqd</b></em>' attribute.
@@ -186,7 +195,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG__VIEW_ALLOW_PERM_REQD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 12;
+	int PROD_CATALOG__VIEW_ALLOW_PERM_REQD = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
 
 	/**
 	 * The number of structural features of the '<em>Prod Catalog</em>' class.
@@ -195,7 +204,7 @@ public interface CatalogPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROD_CATALOG_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 13;
+	int PROD_CATALOG_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 14;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.product.catalog.impl.ProdCatalogCategoryImpl <em>Prod Catalog Category</em>}' class.
@@ -653,6 +662,17 @@ public interface CatalogPackage extends EPackage {
 	EAttribute getProdCatalog_HeaderLogo();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalog#getProdCatalogInvFacilities <em>Prod Catalog Inv Facilities</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Prod Catalog Inv Facilities</em>'.
+	 * @see org.abchip.mimo.biz.model.product.catalog.ProdCatalog#getProdCatalogInvFacilities()
+	 * @see #getProdCatalog()
+	 * @generated
+	 */
+	EReference getProdCatalog_ProdCatalogInvFacilities();
+
+	/**
 	 * Returns the meta object for the attribute '{@link org.abchip.mimo.biz.model.product.catalog.ProdCatalog#isPurchaseAllowPermReqd <em>Purchase Allow Perm Reqd</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1030,6 +1050,14 @@ public interface CatalogPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PROD_CATALOG__HEADER_LOGO = eINSTANCE.getProdCatalog_HeaderLogo();
+
+		/**
+		 * The meta object literal for the '<em><b>Prod Catalog Inv Facilities</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PROD_CATALOG__PROD_CATALOG_INV_FACILITIES = eINSTANCE.getProdCatalog_ProdCatalogInvFacilities();
 
 		/**
 		 * The meta object literal for the '<em><b>Purchase Allow Perm Reqd</b></em>' attribute feature.

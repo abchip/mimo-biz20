@@ -36,6 +36,9 @@ import org.abchip.mimo.entity.EntityTyped;
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getDefaultWeightUomId <em>Default Weight Uom Id</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getDescription <em>Description</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityAttributes <em>Facility Attributes</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityContactMechs <em>Facility Contact Mechs</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityContents <em>Facility Contents</em>}</li>
+ *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityGroupMembers <em>Facility Group Members</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityLevel <em>Facility Level</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityLocations <em>Facility Locations</em>}</li>
  *   <li>{@link org.abchip.mimo.biz.model.product.facility.Facility#getFacilityName <em>Facility Name</em>}</li>
@@ -229,6 +232,45 @@ public interface Facility extends EntityTyped<FacilityType>, EntityInfo {
 	 * @generated
 	 */
 	List<FacilityAttribute> getFacilityAttributes();
+
+	/**
+	 * Returns the value of the '<em><b>Facility Contact Mechs</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.facility.FacilityContactMech}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Facility Contact Mechs</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_FacilityContactMechs()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<FacilityContactMech> getFacilityContactMechs();
+
+	/**
+	 * Returns the value of the '<em><b>Facility Contents</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.facility.FacilityContent}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Facility Contents</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_FacilityContents()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<FacilityContent> getFacilityContents();
+
+	/**
+	 * Returns the value of the '<em><b>Facility Group Members</b></em>' reference list.
+	 * The list contents are of type {@link org.abchip.mimo.biz.model.product.facility.FacilityGroupMember}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Facility Group Members</em>' reference list.
+	 * @see org.abchip.mimo.biz.model.product.facility.FacilityPackage#getFacility_FacilityGroupMembers()
+	 * @model derived="true"
+	 *        annotation="mimo-ent-slot type='fromDate'"
+	 * @generated
+	 */
+	List<FacilityGroupMember> getFacilityGroupMembers();
 
 	/**
 	 * Returns the value of the '<em><b>Facility Level</b></em>' attribute.

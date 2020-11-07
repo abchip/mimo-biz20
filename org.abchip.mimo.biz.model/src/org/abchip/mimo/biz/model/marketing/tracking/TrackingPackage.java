@@ -279,13 +279,22 @@ public interface TrackingPackage extends EPackage {
 	int TRACKING_CODE__TRACKING_CODE_TYPE_ID = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 22;
 
 	/**
+	 * The feature id for the '<em><b>Tracking Code Visits</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int TRACKING_CODE__TRACKING_CODE_VISITS = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 23;
+
+	/**
 	 * The number of structural features of the '<em>Code</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int TRACKING_CODE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 23;
+	int TRACKING_CODE_FEATURE_COUNT = EntityPackage.ENTITY_IDENTIFIABLE_FEATURE_COUNT + 24;
 
 	/**
 	 * The meta object id for the '{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderImpl <em>Code Order</em>}' class.
@@ -926,6 +935,17 @@ public interface TrackingPackage extends EPackage {
 	EReference getTrackingCode_TrackingCodeTypeId();
 
 	/**
+	 * Returns the meta object for the reference list '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getTrackingCodeVisits <em>Tracking Code Visits</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Tracking Code Visits</em>'.
+	 * @see org.abchip.mimo.biz.model.marketing.tracking.TrackingCode#getTrackingCodeVisits()
+	 * @see #getTrackingCode()
+	 * @generated
+	 */
+	EReference getTrackingCode_TrackingCodeVisits();
+
+	/**
 	 * Returns the meta object for class '{@link org.abchip.mimo.biz.model.marketing.tracking.TrackingCodeOrder <em>Code Order</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1390,6 +1410,14 @@ public interface TrackingPackage extends EPackage {
 		 * @generated
 		 */
 		EReference TRACKING_CODE__TRACKING_CODE_TYPE_ID = eINSTANCE.getTrackingCode_TrackingCodeTypeId();
+
+		/**
+		 * The meta object literal for the '<em><b>Tracking Code Visits</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference TRACKING_CODE__TRACKING_CODE_VISITS = eINSTANCE.getTrackingCode_TrackingCodeVisits();
 
 		/**
 		 * The meta object literal for the '{@link org.abchip.mimo.biz.model.marketing.tracking.impl.TrackingCodeOrderImpl <em>Code Order</em>}' class.
